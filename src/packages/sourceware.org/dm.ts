@@ -1,31 +1,24 @@
 /**
- * **device-mapper** - pkgx package
+ * **dm** - Package from pantry: sourceware.org/dm
  *
  * @domain `sourceware.org/dm`
- * @version `2.3.32` (10 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +sourceware.org/dm -- $SHELL -i`
- * @aliases `device-mapper`
+ * @install `launchpad install sourceware.org/dm`
  * @dependencies `pagure.io/libaio^0.3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.devicemapper
- * // Or access via domain
- * const samePkg = pantry.sourcewareorgdm
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sourcewareorgdm
  * console.log(pkg.name)        // "dm"
- * console.log(pkg.versions[0]) // "2.3.32" (latest)
+ * console.log(pkg.description) // "Package from pantry: sourceware.org/dm"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sourceware-org/dm.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const devicemapperPackage = {
+export const sourcewareorgdmPackage = {
   /**
    * The display name of this package.
    */
@@ -37,15 +30,12 @@ export const devicemapperPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sourceware.org/dm/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: sourceware.org/dm' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +sourceware.org/dm -- $SHELL -i' as const,
+  installCommand: 'launchpad install sourceware.org/dm' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,29 +45,10 @@ export const devicemapperPackage = {
   dependencies: [
     'pagure.io/libaio^0.3',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.3.32',
-    '2.3.31',
-    '2.3.30',
-    '2.3.29',
-    '2.3.28',
-    '2.3.27',
-    '2.3.26',
-    '2.3.25',
-    '2.3.24',
-    '2.3.22',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'device-mapper',
-  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sourceware.org/dm/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type DevicemapperPackage = typeof devicemapperPackage
+export type SourcewareorgdmPackage = typeof sourcewareorgdmPackage

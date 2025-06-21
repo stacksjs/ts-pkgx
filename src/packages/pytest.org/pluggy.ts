@@ -1,11 +1,9 @@
 /**
- * **pluggy** - A minimalist production ready plugin system
+ * **pluggy** - Package from pantry: pytest.org/pluggy
  *
  * @domain `pytest.org/pluggy`
- * @version `1.6.0` (3 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +pytest.org/pluggy -- $SHELL -i`
+ * @install `launchpad install pytest.org/pluggy`
  * @dependencies `python.org^3.12`
  *
  * @example
@@ -14,8 +12,7 @@
  *
  * const pkg = pantry.pytestorgpluggy
  * console.log(pkg.name)        // "pluggy"
- * console.log(pkg.description) // "A minimalist production ready plugin system"
- * console.log(pkg.versions[0]) // "1.6.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: pytest.org/pluggy"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pytest-org/pluggy.md
@@ -33,15 +30,12 @@ export const pytestorgpluggyPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A minimalist production ready plugin system' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pytest.org/pluggy/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: pytest.org/pluggy' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pytest.org/pluggy -- $SHELL -i' as const,
+  installCommand: 'launchpad install pytest.org/pluggy' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -51,16 +45,10 @@ export const pytestorgpluggyPackage = {
   dependencies: [
     'python.org^3.12',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.6.0',
-    '1.5.0',
-    '1.4.0',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pytest.org/pluggy/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type PytestorgpluggyPackage = typeof pytestorgpluggyPackage

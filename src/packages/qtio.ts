@@ -1,12 +1,9 @@
 /**
- * **qt.io** - pkgx package
+ * **qt.io** - Package from pantry: qt.io
  *
  * @domain `qt.io`
- * @programs `balsam`, `canbusutil`, `lconvert`, `lprodump`, `lrelease`, ... (+38 more)
- * @version `5.15.10` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +qt.io -- $SHELL -i`
+ * @install `launchpad install qt.io`
  * @dependencies `freetype.org`, `gnome.org/glib`, `libjpeg-turbo.org`, ... (+37 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -15,8 +12,7 @@
  *
  * const pkg = pantry.qtio
  * console.log(pkg.name)        // "qt.io"
- * console.log(pkg.programs)    // ["balsam", "canbusutil", ...]
- * console.log(pkg.versions[0]) // "5.15.10" (latest)
+ * console.log(pkg.description) // "Package from pantry: qt.io"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/qt-io.md
@@ -34,64 +30,13 @@ export const qtioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/qt.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: qt.io' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +qt.io -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'balsam',
-    'canbusutil',
-    'lconvert',
-    'lprodump',
-    'lrelease',
-    'lrelease-pro',
-    'lupdate',
-    'lupdate-pro',
-    'meshdebug',
-    'moc',
-    'qcollectiongenerator',
-    'qdbus',
-    'qdbuscpp2xml',
-    'qdbusxml2cpp',
-    'qdistancefieldgenerator',
-    'qhelpgenerator',
-    'qlalr',
-    'qmake',
-    'qmlcachegen',
-    'qmleasing',
-    'qmlformat',
-    'qmlimportscanner',
-    'qmllint',
-    'qmlmin',
-    'qmlplugindump',
-    'qmlpreview',
-    'qmlprofiler',
-    'qmlscene',
-    'qmltestrunner',
-    'qmltime',
-    'qmltyperegistrar',
-    'qscxmlc',
-    'qtattributionsscanner',
-    'qtdiag',
-    'qtpaths',
-    'qtplugininfo',
-    'qvkgen',
-    'rcc',
-    'repc',
-    'tracegen',
-    'uic',
-    'xmlpatterns',
-    'xmlpatternsvalidator',
-  ] as const,
+  installCommand: 'launchpad install qt.io' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -140,14 +85,10 @@ export const qtioPackage = {
     'linux:freedesktop.org/xcb-util-wm',
     'linux:facebook.com/zstd',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '5.15.10',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/qt.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type QtioPackage = typeof qtioPackage

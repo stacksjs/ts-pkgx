@@ -1,33 +1,23 @@
 /**
- * **restic** - Fast, efficient and secure backup program
+ * **restic** - Package from pantry: restic.net/restic
  *
  * @domain `restic.net/restic`
- * @programs `restic`
- * @version `0.18.0` (9 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install restic`
- * @name `restic`
+ * @install `launchpad install restic.net/restic`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.restic
- * // Or access via domain
- * const samePkg = pantry.resticnetrestic
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.resticnetrestic
  * console.log(pkg.name)        // "restic"
- * console.log(pkg.description) // "Fast, efficient and secure backup program"
- * console.log(pkg.programs)    // ["restic"]
- * console.log(pkg.versions[0]) // "0.18.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: restic.net/restic"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/restic-net/restic.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const resticPackage = {
+export const resticnetresticPackage = {
   /**
    * The display name of this package.
    */
@@ -39,44 +29,19 @@ export const resticPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Fast, efficient and secure backup program' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/restic.net/restic/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: restic.net/restic' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install restic' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'restic',
-  ] as const,
+  installCommand: 'launchpad install restic.net/restic' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.18.0',
-    '0.17.3',
-    '0.17.2',
-    '0.17.1',
-    '0.17.0',
-    '0.16.5',
-    '0.16.4',
-    '0.16.3',
-    '0.16.2',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/restic.net/restic/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type ResticPackage = typeof resticPackage
+export type ResticnetresticPackage = typeof resticnetresticPackage

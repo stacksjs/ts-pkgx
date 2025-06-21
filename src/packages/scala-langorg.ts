@@ -1,12 +1,9 @@
 /**
- * **scala-lang.org** - The Scala 3 compiler, also known as Dotty.
+ * **scala-lang.org** - Package from pantry: scala-lang.org
  *
  * @domain `scala-lang.org`
- * @programs `scalac`, `scala`, `scala-cli`, `sbtn`, `amm`
- * @version `3.7.1` (9 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +scala-lang.org -- $SHELL -i`
+ * @install `launchpad install scala-lang.org`
  * @dependencies `openjdk.org`
  *
  * @example
@@ -15,9 +12,7 @@
  *
  * const pkg = pantry.scalalangorg
  * console.log(pkg.name)        // "scala-lang.org"
- * console.log(pkg.description) // "The Scala 3 compiler, also known as Dotty."
- * console.log(pkg.programs)    // ["scalac", "scala", ...]
- * console.log(pkg.versions[0]) // "3.7.1" (latest)
+ * console.log(pkg.description) // "Package from pantry: scala-lang.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/scala-lang-org.md
@@ -35,26 +30,13 @@ export const scalalangorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'The Scala 3 compiler, also known as Dotty.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/scala-lang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: scala-lang.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +scala-lang.org -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'scalac',
-    'scala',
-    'scala-cli',
-    'sbtn',
-    'amm',
-  ] as const,
+  installCommand: 'launchpad install scala-lang.org' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -63,22 +45,10 @@ export const scalalangorgPackage = {
   dependencies: [
     'openjdk.org',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.7.1',
-    '3.7.0',
-    '3.6.4',
-    '3.6.3',
-    '3.6.2',
-    '3.5.2',
-    '3.5.1',
-    '3.3.6',
-    '3.3.5',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/scala-lang.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type ScalalangorgPackage = typeof scalalangorgPackage

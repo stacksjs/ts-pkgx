@@ -1,33 +1,24 @@
 /**
- * **tb** - pkgx package
+ * **tinybird.co** - Package from pantry: tinybird.co
  *
  * @domain `tinybird.co`
- * @programs `tb`
- * @version `5.20.0` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install tb`
- * @aliases `tb`
+ * @install `launchpad install tinybird.co`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.tb
- * // Or access via domain
- * const samePkg = pantry.tinybirdco
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.tinybirdco
  * console.log(pkg.name)        // "tinybird.co"
- * console.log(pkg.programs)    // ["tb"]
- * console.log(pkg.versions[0]) // "5.20.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: tinybird.co"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tinybird-co.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tbPackage = {
+export const tinybirdcoPackage = {
   /**
    * The display name of this package.
    */
@@ -39,22 +30,13 @@ export const tbPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tinybird.co/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: tinybird.co' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tb' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'tb',
-  ] as const,
+  installCommand: 'launchpad install tinybird.co' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -63,20 +45,10 @@ export const tbPackage = {
   dependencies: [
     'pkgx.sh^1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '5.20.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'tb',
-  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tinybird.co/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type TbPackage = typeof tbPackage
+export type TinybirdcoPackage = typeof tinybirdcoPackage

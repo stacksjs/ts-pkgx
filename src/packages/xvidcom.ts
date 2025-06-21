@@ -1,11 +1,9 @@
 /**
- * **xvid.com** - pkgx package
+ * **xvid.com** - Package from pantry: xvid.com
  *
  * @domain `xvid.com`
- * @version `1.3.7` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +xvid.com -- $SHELL -i`
+ * @install `launchpad install xvid.com`
  *
  * @example
  * ```typescript
@@ -13,7 +11,7 @@
  *
  * const pkg = pantry.xvidcom
  * console.log(pkg.name)        // "xvid.com"
- * console.log(pkg.versions[0]) // "1.3.7" (latest)
+ * console.log(pkg.description) // "Package from pantry: xvid.com"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/xvid-com.md
@@ -31,26 +29,19 @@ export const xvidcomPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/xvid.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: xvid.com' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +xvid.com -- $SHELL -i' as const,
+  installCommand: 'launchpad install xvid.com' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.3.7',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/xvid.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type XvidcomPackage = typeof xvidcomPackage

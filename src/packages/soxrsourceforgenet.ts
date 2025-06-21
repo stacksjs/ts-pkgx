@@ -1,11 +1,9 @@
 /**
- * **soxr.sourceforge.net** - pkgx package
+ * **soxr.sourceforge.net** - Package from pantry: soxr.sourceforge.net
  *
  * @domain `soxr.sourceforge.net`
- * @version `0.1.3` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +soxr.sourceforge.net -- $SHELL -i`
+ * @install `launchpad install soxr.sourceforge.net`
  *
  * @example
  * ```typescript
@@ -13,7 +11,7 @@
  *
  * const pkg = pantry.soxrsourceforgenet
  * console.log(pkg.name)        // "soxr.sourceforge.net"
- * console.log(pkg.versions[0]) // "0.1.3" (latest)
+ * console.log(pkg.description) // "Package from pantry: soxr.sourceforge.net"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/soxr-sourceforge-net.md
@@ -31,26 +29,19 @@ export const soxrsourceforgenetPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/soxr.sourceforge.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: soxr.sourceforge.net' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +soxr.sourceforge.net -- $SHELL -i' as const,
+  installCommand: 'launchpad install soxr.sourceforge.net' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.1.3',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/soxr.sourceforge.net/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type SoxrsourceforgenetPackage = typeof soxrsourceforgenetPackage

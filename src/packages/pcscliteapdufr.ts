@@ -1,33 +1,24 @@
 /**
- * **pcscd** - pkgx package
+ * **pcsclite.apdu.fr** - Package from pantry: pcsclite.apdu.fr
  *
  * @domain `pcsclite.apdu.fr`
- * @programs `pcscd`
- * @version `2.3.3` (13 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install pcscd`
- * @aliases `pcscd`, `pcsc-lite`
+ * @install `launchpad install pcsclite.apdu.fr`
  * @dependencies `libusb.info^1`, `linux:systemd.io^254 # libudev` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pcscd
- * // Or access via domain
- * const samePkg = pantry.pcscliteapdufr
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pcscliteapdufr
  * console.log(pkg.name)        // "pcsclite.apdu.fr"
- * console.log(pkg.programs)    // ["pcscd"]
- * console.log(pkg.versions[0]) // "2.3.3" (latest)
+ * console.log(pkg.description) // "Package from pantry: pcsclite.apdu.fr"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pcsclite-apdu-fr.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pcscdPackage = {
+export const pcscliteapdufrPackage = {
   /**
    * The display name of this package.
    */
@@ -39,22 +30,13 @@ export const pcscdPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pcsclite.apdu.fr/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: pcsclite.apdu.fr' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pcscd' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'pcscd',
-  ] as const,
+  installCommand: 'launchpad install pcsclite.apdu.fr' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -65,33 +47,10 @@ export const pcscdPackage = {
     'libusb.info^1',
     'linux:systemd.io^254 # libudev',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.3.3',
-    '2.3.2',
-    '2.3.1',
-    '2.3.0',
-    '2.2.3',
-    '2.2.2',
-    '2.2.1',
-    '2.2.0',
-    '2.1.0',
-    '2.0.3',
-    '2.0.2',
-    '2.0.1',
-    '2.0.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'pcscd',
-    'pcsc-lite',
-  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pcsclite.apdu.fr/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type PcscdPackage = typeof pcscdPackage
+export type PcscliteapdufrPackage = typeof pcscliteapdufrPackage

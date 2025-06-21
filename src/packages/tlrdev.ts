@@ -1,34 +1,24 @@
 /**
- * **teller** - Cloud native secrets management for developers - never leave your command line for secrets.
+ * **tlr.dev** - Package from pantry: tlr.dev
  *
  * @domain `tlr.dev`
- * @programs `teller`
- * @version `2.0.7` (5 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install teller`
- * @aliases `teller`
+ * @install `launchpad install tlr.dev`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.teller
- * // Or access via domain
- * const samePkg = pantry.tlrdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.tlrdev
  * console.log(pkg.name)        // "tlr.dev"
- * console.log(pkg.description) // "Cloud native secrets management for developers ..."
- * console.log(pkg.programs)    // ["teller"]
- * console.log(pkg.versions[0]) // "2.0.7" (latest)
+ * console.log(pkg.description) // "Package from pantry: tlr.dev"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tlr-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tellerPackage = {
+export const tlrdevPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,13 @@ export const tellerPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Cloud native secrets management for developers - never leave your command line for secrets.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tlr.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/SpectralOps/teller' as const,
+  description: 'Package from pantry: tlr.dev' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install teller' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'teller',
-  ] as const,
+  installCommand: 'launchpad install tlr.dev' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,24 +45,10 @@ export const tellerPackage = {
   dependencies: [
     'openssl.org^1.1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.0.7',
-    '2.0.6',
-    '2.0.5',
-    '2.0.4',
-    '1.5.6',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'teller',
-  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tlr.dev/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type TellerPackage = typeof tellerPackage
+export type TlrdevPackage = typeof tlrdevPackage

@@ -1,32 +1,24 @@
 /**
- * **python-click** - Python composable command line interface toolkit
+ * **click** - Package from pantry: palletsprojects.com/click
  *
  * @domain `palletsprojects.com/click`
- * @version `8.2.1` (4 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +palletsprojects.com/click -- $SHELL -i`
- * @aliases `python-click`
+ * @install `launchpad install palletsprojects.com/click`
  * @dependencies `python.org>=3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pythonclick
- * // Or access via domain
- * const samePkg = pantry.palletsprojectscomclick
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.palletsprojectscomclick
  * console.log(pkg.name)        // "click"
- * console.log(pkg.description) // "Python composable command line interface toolkit"
- * console.log(pkg.versions[0]) // "8.2.1" (latest)
+ * console.log(pkg.description) // "Package from pantry: palletsprojects.com/click"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/palletsprojects-com/click.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pythonclickPackage = {
+export const palletsprojectscomclickPackage = {
   /**
    * The display name of this package.
    */
@@ -38,15 +30,12 @@ export const pythonclickPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Python composable command line interface toolkit' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/palletsprojects.com/click/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pallets/click' as const,
+  description: 'Package from pantry: palletsprojects.com/click' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +palletsprojects.com/click -- $SHELL -i' as const,
+  installCommand: 'launchpad install palletsprojects.com/click' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -56,23 +45,10 @@ export const pythonclickPackage = {
   dependencies: [
     'python.org>=3.11',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '8.2.1',
-    '8.2.0',
-    '8.1.8',
-    '8.1.7',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'python-click',
-  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/palletsprojects.com/click/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type PythonclickPackage = typeof pythonclickPackage
+export type PalletsprojectscomclickPackage = typeof palletsprojectscomclickPackage

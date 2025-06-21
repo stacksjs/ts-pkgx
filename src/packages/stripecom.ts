@@ -1,33 +1,23 @@
 /**
- * **stripe** - A command-line tool for Stripe
+ * **stripe.com** - Package from pantry: stripe.com
  *
  * @domain `stripe.com`
- * @programs `stripe`
- * @version `1.27.0` (51 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install stripe`
- * @aliases `stripe`
+ * @install `launchpad install stripe.com`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.stripe
- * // Or access via domain
- * const samePkg = pantry.stripecom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.stripecom
  * console.log(pkg.name)        // "stripe.com"
- * console.log(pkg.description) // "A command-line tool for Stripe"
- * console.log(pkg.programs)    // ["stripe"]
- * console.log(pkg.versions[0]) // "1.27.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: stripe.com"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/stripe-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const stripePackage = {
+export const stripecomPackage = {
   /**
    * The display name of this package.
    */
@@ -39,88 +29,19 @@ export const stripePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A command-line tool for Stripe' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/stripe.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: stripe.com' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install stripe' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'stripe',
-  ] as const,
+  installCommand: 'launchpad install stripe.com' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.27.0',
-    '1.26.1',
-    '1.26.0',
-    '1.25.1',
-    '1.25.0',
-    '1.24.0',
-    '1.23.10',
-    '1.23.9',
-    '1.23.8',
-    '1.23.7',
-    '1.23.6',
-    '1.23.5',
-    '1.23.4',
-    '1.23.3',
-    '1.23.2',
-    '1.23.1',
-    '1.23.0',
-    '1.22.0',
-    '1.21.11',
-    '1.21.10',
-    '1.21.9',
-    '1.21.8',
-    '1.21.7',
-    '1.21.6',
-    '1.21.5',
-    '1.21.3',
-    '1.21.2',
-    '1.21.1',
-    '1.21.0',
-    '1.20.0',
-    '1.19.5',
-    '1.19.4',
-    '1.19.3',
-    '1.19.2',
-    '1.19.1',
-    '1.19.0',
-    '1.18.0',
-    '1.17.2',
-    '1.17.1',
-    '1.17.0',
-    '1.16.0',
-    '1.15.0',
-    '1.14.7',
-    '1.14.6',
-    '1.14.5',
-    '1.14.4',
-    '1.14.3',
-    '1.14.2',
-    '1.14.1',
-    '1.14.0',
-    '1.13.12',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'stripe',
-  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/stripe.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type StripePackage = typeof stripePackage
+export type StripecomPackage = typeof stripecomPackage

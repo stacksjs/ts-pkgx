@@ -1,12 +1,9 @@
 /**
- * **plocate.sesse.net** - pkgx package
+ * **plocate.sesse.net** - Package from pantry: plocate.sesse.net
  *
  * @domain `plocate.sesse.net`
- * @programs `plocate`, `plocate-build`, `updatedb`
- * @version `1.1.23` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +plocate.sesse.net -- $SHELL -i`
+ * @install `launchpad install plocate.sesse.net`
  * @dependencies `facebook.com/zstd@1`, `gnu.org/gcc/libstdcxx@14`
  *
  * @example
@@ -15,8 +12,7 @@
  *
  * const pkg = pantry.plocatesessenet
  * console.log(pkg.name)        // "plocate.sesse.net"
- * console.log(pkg.programs)    // ["plocate", "plocate-build", ...]
- * console.log(pkg.versions[0]) // "1.1.23" (latest)
+ * console.log(pkg.description) // "Package from pantry: plocate.sesse.net"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/plocate-sesse-net.md
@@ -34,24 +30,13 @@ export const plocatesessenetPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/plocate.sesse.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: plocate.sesse.net' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +plocate.sesse.net -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'plocate',
-    'plocate-build',
-    'updatedb',
-  ] as const,
+  installCommand: 'launchpad install plocate.sesse.net' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -61,15 +46,10 @@ export const plocatesessenetPackage = {
     'facebook.com/zstd@1',
     'gnu.org/gcc/libstdcxx@14',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.1.23',
-    '1.1.22',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/plocate.sesse.net/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type PlocatesessenetPackage = typeof plocatesessenetPackage

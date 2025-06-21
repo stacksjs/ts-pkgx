@@ -1,12 +1,9 @@
 /**
- * **tcl-lang.org** - Tool Command Language
+ * **tcl-lang.org** - Package from pantry: tcl-lang.org
  *
  * @domain `tcl-lang.org`
- * @programs `tclsh`, `wish`, `critcl`
- * @version `9.0.1` (6 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +tcl-lang.org -- $SHELL -i`
+ * @install `launchpad install tcl-lang.org`
  * @dependencies `openssl.org^1.1`, `zlib.net^1.3`, `freetype.org^2`, ... (+3 more)
  *
  * @example
@@ -15,9 +12,7 @@
  *
  * const pkg = pantry.tcllangorg
  * console.log(pkg.name)        // "tcl-lang.org"
- * console.log(pkg.description) // "Tool Command Language"
- * console.log(pkg.programs)    // ["tclsh", "wish", ...]
- * console.log(pkg.versions[0]) // "9.0.1" (latest)
+ * console.log(pkg.description) // "Package from pantry: tcl-lang.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tcl-lang-org.md
@@ -35,24 +30,13 @@ export const tcllangorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Tool Command Language' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tcl-lang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: tcl-lang.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +tcl-lang.org -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'tclsh',
-    'wish',
-    'critcl',
-  ] as const,
+  installCommand: 'launchpad install tcl-lang.org' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -66,19 +50,10 @@ export const tcllangorgPackage = {
     'x.org/x11=1.8.11',
     'x.org/exts^1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '9.0.1',
-    '9.0.0',
-    '8.6.16',
-    '8.6.15',
-    '8.6.14',
-    '8.6.13',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tcl-lang.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type TcllangorgPackage = typeof tcllangorgPackage

@@ -1,11 +1,9 @@
 /**
- * **distlib** - A low-level library which implements some Python packaging  standards (PEPs) and which could be used by third-party packaging tools to achieve interoperability.
+ * **distlib** - Package from pantry: pypa.io/distlib
  *
  * @domain `pypa.io/distlib`
- * @version `0.3.6` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +pypa.io/distlib -- $SHELL -i`
+ * @install `launchpad install pypa.io/distlib`
  * @dependencies `python.org>=3.11`
  *
  * @example
@@ -14,8 +12,7 @@
  *
  * const pkg = pantry.pypaiodistlib
  * console.log(pkg.name)        // "distlib"
- * console.log(pkg.description) // "A low-level library which implements some Pytho..."
- * console.log(pkg.versions[0]) // "0.3.6" (latest)
+ * console.log(pkg.description) // "Package from pantry: pypa.io/distlib"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pypa-io/distlib.md
@@ -33,15 +30,12 @@ export const pypaiodistlibPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A low-level library which implements some Python packaging  standards (PEPs) and which could be used by third-party packaging tools to achieve interoperability.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pypa.io/distlib/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pypa/distlib' as const,
+  description: 'Package from pantry: pypa.io/distlib' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pypa.io/distlib -- $SHELL -i' as const,
+  installCommand: 'launchpad install pypa.io/distlib' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -51,14 +45,10 @@ export const pypaiodistlibPackage = {
   dependencies: [
     'python.org>=3.11',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.3.6',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pypa.io/distlib/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type PypaiodistlibPackage = typeof pypaiodistlibPackage

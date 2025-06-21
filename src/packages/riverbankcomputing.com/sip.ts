@@ -1,34 +1,24 @@
 /**
- * **sip** - Tool to create Python bindings for C and C++ libraries
+ * **sip** - Package from pantry: riverbankcomputing.com/sip
  *
  * @domain `riverbankcomputing.com/sip`
- * @programs `sip-install`, `sip-build`, `sip-distinfo`, `sip-module`, `sip-sdist`, ... (+1 more)
- * @version `6.8.3` (6 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +riverbankcomputing.com/sip -- $SHELL -i`
- * @name `sip`
+ * @install `launchpad install riverbankcomputing.com/sip`
  * @dependencies `python.org~3.11`, `llvm.org<17 # needs gcc to sip-install`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sip
- * // Or access via domain
- * const samePkg = pantry.riverbankcomputingcomsip
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.riverbankcomputingcomsip
  * console.log(pkg.name)        // "sip"
- * console.log(pkg.description) // "Tool to create Python bindings for C and C++ li..."
- * console.log(pkg.programs)    // ["sip-install", "sip-build", ...]
- * console.log(pkg.versions[0]) // "6.8.3" (latest)
+ * console.log(pkg.description) // "Package from pantry: riverbankcomputing.com/sip"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/riverbankcomputing-com/sip.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sipPackage = {
+export const riverbankcomputingcomsipPackage = {
   /**
    * The display name of this package.
    */
@@ -40,27 +30,13 @@ export const sipPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Tool to create Python bindings for C and C++ libraries' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/riverbankcomputing.com/sip/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: riverbankcomputing.com/sip' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +riverbankcomputing.com/sip -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'sip-install',
-    'sip-build',
-    'sip-distinfo',
-    'sip-module',
-    'sip-sdist',
-    'sip-wheel',
-  ] as const,
+  installCommand: 'launchpad install riverbankcomputing.com/sip' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -70,23 +46,10 @@ export const sipPackage = {
     'python.org~3.11',
     'llvm.org<17 # needs gcc to sip-install',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '6.8.3',
-    '6.8.2',
-    '6.8.1',
-    '6.8.0',
-    '6.7.11',
-    '6.7.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/riverbankcomputing.com/sip/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type SipPackage = typeof sipPackage
+export type RiverbankcomputingcomsipPackage = typeof riverbankcomputingcomsipPackage

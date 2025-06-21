@@ -1,11 +1,9 @@
 /**
- * **xshmfence** - pkgx package
+ * **xshmfence** - Package from pantry: x.org/xshmfence
  *
  * @domain `x.org/xshmfence`
- * @version `1.3.3` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/xshmfence -- $SHELL -i`
+ * @install `launchpad install x.org/xshmfence`
  * @dependencies `x.org/protocol`
  *
  * @example
@@ -14,7 +12,7 @@
  *
  * const pkg = pantry.xorgxshmfence
  * console.log(pkg.name)        // "xshmfence"
- * console.log(pkg.versions[0]) // "1.3.3" (latest)
+ * console.log(pkg.description) // "Package from pantry: x.org/xshmfence"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xshmfence.md
@@ -32,15 +30,12 @@ export const xorgxshmfencePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xshmfence/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: x.org/xshmfence' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/xshmfence -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/xshmfence' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -50,15 +45,10 @@ export const xorgxshmfencePackage = {
   dependencies: [
     'x.org/protocol',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.3.3',
-    '1.3.2',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xshmfence/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type XorgxshmfencePackage = typeof xorgxshmfencePackage

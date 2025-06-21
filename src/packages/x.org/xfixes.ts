@@ -1,11 +1,9 @@
 /**
- * **xfixes** - pkgx package
+ * **xfixes** - Package from pantry: x.org/xfixes
  *
  * @domain `x.org/xfixes`
- * @version `6.0.1` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/xfixes -- $SHELL -i`
+ * @install `launchpad install x.org/xfixes`
  * @dependencies `x.org/x11`, `x.org/protocol`
  *
  * @example
@@ -14,7 +12,7 @@
  *
  * const pkg = pantry.xorgxfixes
  * console.log(pkg.name)        // "xfixes"
- * console.log(pkg.versions[0]) // "6.0.1" (latest)
+ * console.log(pkg.description) // "Package from pantry: x.org/xfixes"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xfixes.md
@@ -32,15 +30,12 @@ export const xorgxfixesPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xfixes/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: x.org/xfixes' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/xfixes -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/xfixes' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -51,14 +46,10 @@ export const xorgxfixesPackage = {
     'x.org/x11',
     'x.org/protocol',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '6.0.1',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xfixes/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type XorgxfixesPackage = typeof xorgxfixesPackage

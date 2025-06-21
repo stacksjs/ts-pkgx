@@ -1,11 +1,9 @@
 /**
- * **xtst** - pkgx package
+ * **xtst** - Package from pantry: x.org/xtst
  *
  * @domain `x.org/xtst`
- * @version `1.2.5` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/xtst -- $SHELL -i`
+ * @install `launchpad install x.org/xtst`
  * @dependencies `x.org/xi`, `x.org/protocol`
  *
  * @example
@@ -14,7 +12,7 @@
  *
  * const pkg = pantry.xorgxtst
  * console.log(pkg.name)        // "xtst"
- * console.log(pkg.versions[0]) // "1.2.5" (latest)
+ * console.log(pkg.description) // "Package from pantry: x.org/xtst"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xtst.md
@@ -32,15 +30,12 @@ export const xorgxtstPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xtst/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: x.org/xtst' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/xtst -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/xtst' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -51,15 +46,10 @@ export const xorgxtstPackage = {
     'x.org/xi',
     'x.org/protocol',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.2.5',
-    '1.2.4',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xtst/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type XorgxtstPackage = typeof xorgxtstPackage

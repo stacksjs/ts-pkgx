@@ -1,11 +1,9 @@
 /**
- * **libsass** - A C/C++ implementation of a Sass compiler
+ * **libsass** - Package from pantry: sass-lang.com/libsass
  *
  * @domain `sass-lang.com/libsass`
- * @version `3.6.6` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +sass-lang.com/libsass -- $SHELL -i`
+ * @install `launchpad install sass-lang.com/libsass`
  *
  * @example
  * ```typescript
@@ -13,8 +11,7 @@
  *
  * const pkg = pantry.sasslangcomlibsass
  * console.log(pkg.name)        // "libsass"
- * console.log(pkg.description) // "A C/C++ implementation of a Sass compiler"
- * console.log(pkg.versions[0]) // "3.6.6" (latest)
+ * console.log(pkg.description) // "Package from pantry: sass-lang.com/libsass"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sass-lang-com/libsass.md
@@ -32,27 +29,19 @@ export const sasslangcomlibsassPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A C/C++ implementation of a Sass compiler' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sass-lang.com/libsass/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: sass-lang.com/libsass' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +sass-lang.com/libsass -- $SHELL -i' as const,
+  installCommand: 'launchpad install sass-lang.com/libsass' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.6.6',
-    '3.6.5',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sass-lang.com/libsass/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type SasslangcomlibsassPackage = typeof sasslangcomlibsassPackage

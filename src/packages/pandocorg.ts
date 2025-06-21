@@ -1,34 +1,24 @@
 /**
- * **pandoc** - Swiss-army knife of markup format conversion
+ * **pandoc.org** - Package from pantry: pandoc.org
  *
  * @domain `pandoc.org`
- * @programs `pandoc`
- * @version `3.7.0.2` (31 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install pandoc`
- * @aliases `pandoc`
+ * @install `launchpad install pandoc.org`
  * @dependencies `gnu.org/gmp@6`, `zlib.net@1`, `sourceware.org/libffi@3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pandoc
- * // Or access via domain
- * const samePkg = pantry.pandocorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pandocorg
  * console.log(pkg.name)        // "pandoc.org"
- * console.log(pkg.description) // "Swiss-army knife of markup format conversion"
- * console.log(pkg.programs)    // ["pandoc"]
- * console.log(pkg.versions[0]) // "3.7.0.2" (latest)
+ * console.log(pkg.description) // "Package from pantry: pandoc.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pandoc-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pandocPackage = {
+export const pandocorgPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,13 @@ export const pandocPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Swiss-army knife of markup format conversion' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pandoc.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: pandoc.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pandoc' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'pandoc',
-  ] as const,
+  installCommand: 'launchpad install pandoc.org' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -66,50 +47,10 @@ export const pandocPackage = {
     'zlib.net@1',
     'sourceware.org/libffi@3',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.7.0.2',
-    '3.7.0.1',
-    '3.7.0',
-    '3.6.4',
-    '3.6.3',
-    '3.6.2',
-    '3.6.1',
-    '3.6.0',
-    '3.5.0',
-    '3.4.0',
-    '3.3.0',
-    '3.2.1',
-    '3.2.0',
-    '3.1.13',
-    '3.1.9',
-    '3.1.8',
-    '3.1.7',
-    '3.1.6.2',
-    '3.1.6',
-    '3.1.5',
-    '3.1.4',
-    '3.1.3',
-    '3.1.2',
-    '3.1.12.3',
-    '3.1.12.2',
-    '3.1.12.1',
-    '3.1.12',
-    '3.1.11.1',
-    '3.1.11',
-    '3.1.10',
-    '2.19.2',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'pandoc',
-  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pandoc.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type PandocPackage = typeof pandocPackage
+export type PandocorgPackage = typeof pandocorgPackage

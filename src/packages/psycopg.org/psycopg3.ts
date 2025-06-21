@@ -1,11 +1,9 @@
 /**
- * **psycopg3** - New generation PostgreSQL database adapter for the Python programming language
+ * **psycopg3** - Package from pantry: psycopg.org/psycopg3
  *
  * @domain `psycopg.org/psycopg3`
- * @version `3.2.9` (8 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +psycopg.org/psycopg3 -- $SHELL -i`
+ * @install `launchpad install psycopg.org/psycopg3`
  * @dependencies `python.org~3.11`, `postgresql.org`
  *
  * @example
@@ -14,8 +12,7 @@
  *
  * const pkg = pantry.psycopgorgpsycopg3
  * console.log(pkg.name)        // "psycopg3"
- * console.log(pkg.description) // "New generation PostgreSQL database adapter for ..."
- * console.log(pkg.versions[0]) // "3.2.9" (latest)
+ * console.log(pkg.description) // "Package from pantry: psycopg.org/psycopg3"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/psycopg-org/psycopg3.md
@@ -33,15 +30,12 @@ export const psycopgorgpsycopg3Package = {
   /**
    * Brief description of what this package does.
    */
-  description: 'New generation PostgreSQL database adapter for the Python programming language' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/psycopg.org/psycopg3/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/psycopg/psycopg' as const,
+  description: 'Package from pantry: psycopg.org/psycopg3' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +psycopg.org/psycopg3 -- $SHELL -i' as const,
+  installCommand: 'launchpad install psycopg.org/psycopg3' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -52,21 +46,10 @@ export const psycopgorgpsycopg3Package = {
     'python.org~3.11',
     'postgresql.org',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.2.9',
-    '3.2.8',
-    '3.2.7',
-    '3.2.6',
-    '3.2.5',
-    '3.2.4',
-    '3.2.3',
-    '3.2.2',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/psycopg.org/psycopg3/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type Psycopgorgpsycopg3Package = typeof psycopgorgpsycopg3Package

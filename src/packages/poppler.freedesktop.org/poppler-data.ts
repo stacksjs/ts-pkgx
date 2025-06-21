@@ -1,11 +1,9 @@
 /**
- * **poppler-data** - pkgx package
+ * **poppler-data** - Package from pantry: poppler.freedesktop.org/poppler-data
  *
  * @domain `poppler.freedesktop.org/poppler-data`
- * @version `0.4.12` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +poppler.freedesktop.org/poppler-data -- $SHELL -i`
+ * @install `launchpad install poppler.freedesktop.org/poppler-data`
  *
  * @example
  * ```typescript
@@ -13,7 +11,7 @@
  *
  * const pkg = pantry.popplerfreedesktoporgpopplerdata
  * console.log(pkg.name)        // "poppler-data"
- * console.log(pkg.versions[0]) // "0.4.12" (latest)
+ * console.log(pkg.description) // "Package from pantry: poppler.freedesktop.org/po..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/poppler-freedesktop-org/poppler-data.md
@@ -31,26 +29,19 @@ export const popplerfreedesktoporgpopplerdataPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/poppler.freedesktop.org/poppler-data/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: poppler.freedesktop.org/poppler-data' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +poppler.freedesktop.org/poppler-data -- $SHELL -i' as const,
+  installCommand: 'launchpad install poppler.freedesktop.org/poppler-data' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.4.12',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/poppler.freedesktop.org/poppler-data/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type PopplerfreedesktoporgpopplerdataPackage = typeof popplerfreedesktoporgpopplerdataPackage

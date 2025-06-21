@@ -1,34 +1,24 @@
 /**
- * **pcre2** - Perl compatible regular expressions library with a new API
+ * **v2** - Package from pantry: pcre.org/v2
  *
  * @domain `pcre.org/v2`
- * @programs `pcre2-config`, `pcre2grep`, `pcre2test`
- * @version `10.44.0` (3 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +pcre.org/v2 -- $SHELL -i`
- * @aliases `pcre2`
+ * @install `launchpad install pcre.org/v2`
  * @dependencies `sourceware.org/bzip2@1`, `zlib.net@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pcre2
- * // Or access via domain
- * const samePkg = pantry.pcreorgv2
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pcreorgv2
  * console.log(pkg.name)        // "v2"
- * console.log(pkg.description) // "Perl compatible regular expressions library wit..."
- * console.log(pkg.programs)    // ["pcre2-config", "pcre2grep", ...]
- * console.log(pkg.versions[0]) // "10.44.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: pcre.org/v2"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pcre-org/v2.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pcre2Package = {
+export const pcreorgv2Package = {
   /**
    * The display name of this package.
    */
@@ -40,24 +30,13 @@ export const pcre2Package = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Perl compatible regular expressions library with a new API' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pcre.org/v2/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: pcre.org/v2' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pcre.org/v2 -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'pcre2-config',
-    'pcre2grep',
-    'pcre2test',
-  ] as const,
+  installCommand: 'launchpad install pcre.org/v2' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -67,22 +46,10 @@ export const pcre2Package = {
     'sourceware.org/bzip2@1',
     'zlib.net@1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '10.44.0',
-    '10.43.0',
-    '10.42.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'pcre2',
-  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pcre.org/v2/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type Pcre2Package = typeof pcre2Package
+export type Pcreorgv2Package = typeof pcreorgv2Package

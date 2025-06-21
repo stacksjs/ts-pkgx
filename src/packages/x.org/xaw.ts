@@ -1,11 +1,9 @@
 /**
- * **xaw** - pkgx package
+ * **xaw** - Package from pantry: x.org/xaw
  *
  * @domain `x.org/xaw`
- * @version `1.0.16` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/xaw -- $SHELL -i`
+ * @install `launchpad install x.org/xaw`
  * @dependencies `x.org/x11`, `x.org/exts`, `x.org/xmu`, ... (+2 more)
  *
  * @example
@@ -14,7 +12,7 @@
  *
  * const pkg = pantry.xorgxaw
  * console.log(pkg.name)        // "xaw"
- * console.log(pkg.versions[0]) // "1.0.16" (latest)
+ * console.log(pkg.description) // "Package from pantry: x.org/xaw"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xaw.md
@@ -32,15 +30,12 @@ export const xorgxawPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xaw/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: x.org/xaw' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/xaw -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/xaw' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -54,15 +49,10 @@ export const xorgxawPackage = {
     'x.org/xt',
     'x.org/xpm',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.0.16',
-    '1.0.15',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xaw/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type XorgxawPackage = typeof xorgxawPackage

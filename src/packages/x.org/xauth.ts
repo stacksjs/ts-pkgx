@@ -1,34 +1,24 @@
 /**
- * **xauth** - X.Org Applications: xauth
+ * **xauth** - Package from pantry: x.org/xauth
  *
  * @domain `x.org/xauth`
- * @programs `xauth`
- * @version `1.1.4` (3 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install xauth`
- * @name `xauth`
+ * @install `launchpad install x.org/xauth`
  * @dependencies `x.org/x11`, `x.org/exts`, `x.org/xau`, ... (+3 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.xauth
- * // Or access via domain
- * const samePkg = pantry.xorgxauth
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.xorgxauth
  * console.log(pkg.name)        // "xauth"
- * console.log(pkg.description) // "X.Org Applications: xauth"
- * console.log(pkg.programs)    // ["xauth"]
- * console.log(pkg.versions[0]) // "1.1.4" (latest)
+ * console.log(pkg.description) // "Package from pantry: x.org/xauth"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xauth.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xauthPackage = {
+export const xorgxauthPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,13 @@ export const xauthPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'X.Org Applications: xauth' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xauth/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: x.org/xauth' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install xauth' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'xauth',
-  ] as const,
+  installCommand: 'launchpad install x.org/xauth' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -70,20 +51,10 @@ export const xauthPackage = {
     'linux:x.org/xcb',
     'linux:x.org/xdmcp',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.1.4',
-    '1.1.3',
-    '1.1.2',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xauth/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type XauthPackage = typeof xauthPackage
+export type XorgxauthPackage = typeof xorgxauthPackage

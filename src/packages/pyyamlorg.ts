@@ -1,11 +1,9 @@
 /**
- * **pyyaml.org** - Canonical source repository for LibYAML
+ * **pyyaml.org** - Package from pantry: pyyaml.org
  *
  * @domain `pyyaml.org`
- * @version `0.2.5` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +pyyaml.org -- $SHELL -i`
+ * @install `launchpad install pyyaml.org`
  *
  * @example
  * ```typescript
@@ -13,8 +11,7 @@
  *
  * const pkg = pantry.pyyamlorg
  * console.log(pkg.name)        // "pyyaml.org"
- * console.log(pkg.description) // "Canonical source repository for LibYAML"
- * console.log(pkg.versions[0]) // "0.2.5" (latest)
+ * console.log(pkg.description) // "Package from pantry: pyyaml.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pyyaml-org.md
@@ -32,26 +29,19 @@ export const pyyamlorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Canonical source repository for LibYAML' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pyyaml.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: pyyaml.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pyyaml.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install pyyaml.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.2.5',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pyyaml.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type PyyamlorgPackage = typeof pyyamlorgPackage

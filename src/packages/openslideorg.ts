@@ -1,34 +1,24 @@
 /**
- * **openslide** - C library to read whole-slide images (a.k.a. virtual slides)
+ * **openslide.org** - Package from pantry: openslide.org
  *
  * @domain `openslide.org`
- * @programs `openslide-quickhash1sum`, `openslide-show-properties`, `openslide-write-png`
- * @version `4.0.0` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +openslide.org -- $SHELL -i`
- * @aliases `openslide`
+ * @install `launchpad install openslide.org`
  * @dependencies `cairographics.org`, `gnome.org/gdk-pixbuf`, `gnome.org/glib`, ... (+6 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.openslide
- * // Or access via domain
- * const samePkg = pantry.openslideorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.openslideorg
  * console.log(pkg.name)        // "openslide.org"
- * console.log(pkg.description) // "C library to read whole-slide images (a.k.a. vi..."
- * console.log(pkg.programs)    // ["openslide-quickhash1sum", "openslide-show-properties", ...]
- * console.log(pkg.versions[0]) // "4.0.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: openslide.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openslide-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const openslidePackage = {
+export const openslideorgPackage = {
   /**
    * The display name of this package.
    */
@@ -40,24 +30,13 @@ export const openslidePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'C library to read whole-slide images (a.k.a. virtual slides)' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openslide.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: openslide.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +openslide.org -- $SHELL -i' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'openslide-quickhash1sum',
-    'openslide-show-properties',
-    'openslide-write-png',
-  ] as const,
+  installCommand: 'launchpad install openslide.org' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -74,21 +53,10 @@ export const openslidePackage = {
     'openjpeg.org',
     'sqlite.org',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '4.0.0',
-    '3.4.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'openslide',
-  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openslide.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type OpenslidePackage = typeof openslidePackage
+export type OpenslideorgPackage = typeof openslideorgPackage

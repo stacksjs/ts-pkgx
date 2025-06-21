@@ -1,11 +1,9 @@
 /**
- * **xxf86vm** - pkgx package
+ * **xxf86vm** - Package from pantry: x.org/xxf86vm
  *
  * @domain `x.org/xxf86vm`
- * @version `1.1.6` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/xxf86vm -- $SHELL -i`
+ * @install `launchpad install x.org/xxf86vm`
  * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/exts`
  *
  * @example
@@ -14,7 +12,7 @@
  *
  * const pkg = pantry.xorgxxf86vm
  * console.log(pkg.name)        // "xxf86vm"
- * console.log(pkg.versions[0]) // "1.1.6" (latest)
+ * console.log(pkg.description) // "Package from pantry: x.org/xxf86vm"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xxf86vm.md
@@ -32,15 +30,12 @@ export const xorgxxf86vmPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xxf86vm/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: x.org/xxf86vm' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/xxf86vm -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/xxf86vm' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -52,15 +47,10 @@ export const xorgxxf86vmPackage = {
     'x.org/protocol',
     'x.org/exts',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.1.6',
-    '1.1.5',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xxf86vm/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type Xorgxxf86vmPackage = typeof xorgxxf86vmPackage

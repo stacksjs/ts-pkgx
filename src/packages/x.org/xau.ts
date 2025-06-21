@@ -1,11 +1,9 @@
 /**
- * **xau** - pkgx package
+ * **xau** - Package from pantry: x.org/xau
  *
  * @domain `x.org/xau`
- * @version `1.0.12` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/xau -- $SHELL -i`
+ * @install `launchpad install x.org/xau`
  * @dependencies `x.org/util-macros`, `x.org/protocol`
  *
  * @example
@@ -14,7 +12,7 @@
  *
  * const pkg = pantry.xorgxau
  * console.log(pkg.name)        // "xau"
- * console.log(pkg.versions[0]) // "1.0.12" (latest)
+ * console.log(pkg.description) // "Package from pantry: x.org/xau"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xau.md
@@ -32,15 +30,12 @@ export const xorgxauPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xau/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: x.org/xau' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/xau -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/xau' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -51,15 +46,10 @@ export const xorgxauPackage = {
     'x.org/util-macros',
     'x.org/protocol',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.0.12',
-    '1.0.11',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xau/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type XorgxauPackage = typeof xorgxauPackage

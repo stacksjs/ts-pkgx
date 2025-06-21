@@ -1,11 +1,9 @@
 /**
- * **libpsl** - C library for the Public Suffix List
+ * **libpsl** - Package from pantry: rockdaboot.github.io/libpsl
  *
  * @domain `rockdaboot.github.io/libpsl`
- * @version `0.21.5` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +rockdaboot.github.io/libpsl -- $SHELL -i`
+ * @install `launchpad install rockdaboot.github.io/libpsl`
  * @dependencies `unicode.org^71`
  *
  * @example
@@ -14,8 +12,7 @@
  *
  * const pkg = pantry.rockdabootgithubiolibpsl
  * console.log(pkg.name)        // "libpsl"
- * console.log(pkg.description) // "C library for the Public Suffix List"
- * console.log(pkg.versions[0]) // "0.21.5" (latest)
+ * console.log(pkg.description) // "Package from pantry: rockdaboot.github.io/libpsl"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rockdaboot-github-io/libpsl.md
@@ -33,15 +30,12 @@ export const rockdabootgithubiolibpslPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'C library for the Public Suffix List' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rockdaboot.github.io/libpsl/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: rockdaboot.github.io/libpsl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +rockdaboot.github.io/libpsl -- $SHELL -i' as const,
+  installCommand: 'launchpad install rockdaboot.github.io/libpsl' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -51,15 +45,10 @@ export const rockdabootgithubiolibpslPackage = {
   dependencies: [
     'unicode.org^71',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.21.5',
-    '0.21.2',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rockdaboot.github.io/libpsl/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type RockdabootgithubiolibpslPackage = typeof rockdabootgithubiolibpslPackage

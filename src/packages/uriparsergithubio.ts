@@ -1,33 +1,23 @@
 /**
- * **uriparse** - :hocho: Strictly RFC 3986 compliant URI parsing and handling library written in C89; moved from SourceForge to GitHub
+ * **uriparser.github.io** - Package from pantry: uriparser.github.io
  *
  * @domain `uriparser.github.io`
- * @programs `uriparse`
- * @version `0.9.8` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install uriparse`
- * @aliases `uriparse`
+ * @install `launchpad install uriparser.github.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.uriparse
- * // Or access via domain
- * const samePkg = pantry.uriparsergithubio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.uriparsergithubio
  * console.log(pkg.name)        // "uriparser.github.io"
- * console.log(pkg.description) // ":hocho: Strictly RFC 3986 compliant URI parsing..."
- * console.log(pkg.programs)    // ["uriparse"]
- * console.log(pkg.versions[0]) // "0.9.8" (latest)
+ * console.log(pkg.description) // "Package from pantry: uriparser.github.io"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/uriparser-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const uriparsePackage = {
+export const uriparsergithubioPackage = {
   /**
    * The display name of this package.
    */
@@ -39,39 +29,19 @@ export const uriparsePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: ':hocho: Strictly RFC 3986 compliant URI parsing and handling library written in C89; moved from SourceForge to GitHub' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/uriparser.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: uriparser.github.io' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install uriparse' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'uriparse',
-  ] as const,
+  installCommand: 'launchpad install uriparser.github.io' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.9.8',
-    '0.9.7',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'uriparse',
-  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/uriparser.github.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type UriparsePackage = typeof uriparsePackage
+export type UriparsergithubioPackage = typeof uriparsergithubioPackage

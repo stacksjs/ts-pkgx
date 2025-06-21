@@ -1,11 +1,9 @@
 /**
- * **xcb** - pkgx package
+ * **xcb** - Package from pantry: x.org/xcb
  *
  * @domain `x.org/xcb`
- * @version `1.17.0` (4 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/xcb -- $SHELL -i`
+ * @install `launchpad install x.org/xcb`
  * @dependencies `x.org/xau^1`, `x.org/xdmcp^1`
  *
  * @example
@@ -14,7 +12,7 @@
  *
  * const pkg = pantry.xorgxcb
  * console.log(pkg.name)        // "xcb"
- * console.log(pkg.versions[0]) // "1.17.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: x.org/xcb"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xcb.md
@@ -32,15 +30,12 @@ export const xorgxcbPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xcb/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: x.org/xcb' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/xcb -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/xcb' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -51,17 +46,10 @@ export const xorgxcbPackage = {
     'x.org/xau^1',
     'x.org/xdmcp^1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.17.0',
-    '1.16.1',
-    '1.16.0',
-    '1.15.0',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xcb/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type XorgxcbPackage = typeof xorgxcbPackage

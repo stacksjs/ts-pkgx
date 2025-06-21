@@ -1,34 +1,24 @@
 /**
- * **s3cmd** - Official s3cmd repo -- Command line tool for managing S3 compatible storage services (including Amazon S3 and CloudFront).
+ * **s3tools.org** - Package from pantry: s3tools.org
  *
  * @domain `s3tools.org`
- * @programs `s3cmd`
- * @version `2.4.0` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install s3cmd`
- * @aliases `s3cmd`
+ * @install `launchpad install s3tools.org`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.s3cmd
- * // Or access via domain
- * const samePkg = pantry.s3toolsorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.s3toolsorg
  * console.log(pkg.name)        // "s3tools.org"
- * console.log(pkg.description) // "Official s3cmd repo -- Command line tool for ma..."
- * console.log(pkg.programs)    // ["s3cmd"]
- * console.log(pkg.versions[0]) // "2.4.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: s3tools.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/s3tools-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const s3cmdPackage = {
+export const s3toolsorgPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,13 @@ export const s3cmdPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Official s3cmd repo -- Command line tool for managing S3 compatible storage services (including Amazon S3 and CloudFront).' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/s3tools.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: s3tools.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install s3cmd' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    's3cmd',
-  ] as const,
+  installCommand: 'launchpad install s3tools.org' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,21 +45,10 @@ export const s3cmdPackage = {
   dependencies: [
     'python.org>=3<3.12',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.4.0',
-    '2.3.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    's3cmd',
-  ] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/s3tools.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type S3cmdPackage = typeof s3cmdPackage
+export type S3toolsorgPackage = typeof s3toolsorgPackage

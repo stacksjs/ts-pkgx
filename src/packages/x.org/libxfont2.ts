@@ -1,11 +1,9 @@
 /**
- * **libxfont2** - pkgx package
+ * **libxfont2** - Package from pantry: x.org/libxfont2
  *
  * @domain `x.org/libxfont2`
- * @version `2.0.7` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/libxfont2 -- $SHELL -i`
+ * @install `launchpad install x.org/libxfont2`
  * @dependencies `x.org/x11^1`, `x.org/exts`, `x.org/protocol`, ... (+4 more)
  *
  * @example
@@ -14,7 +12,7 @@
  *
  * const pkg = pantry.xorglibxfont2
  * console.log(pkg.name)        // "libxfont2"
- * console.log(pkg.versions[0]) // "2.0.7" (latest)
+ * console.log(pkg.description) // "Package from pantry: x.org/libxfont2"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/libxfont2.md
@@ -32,15 +30,12 @@ export const xorglibxfont2Package = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/libxfont2/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: x.org/libxfont2' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/libxfont2 -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/libxfont2' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -56,14 +51,10 @@ export const xorglibxfont2Package = {
     'zlib.net',
     'x.org/libfontenc',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.0.7',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/libxfont2/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type Xorglibxfont2Package = typeof xorglibxfont2Package

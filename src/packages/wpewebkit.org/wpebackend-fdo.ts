@@ -1,11 +1,9 @@
 /**
- * **wpebackend-fdo** - pkgx package
+ * **wpebackend-fdo** - Package from pantry: wpewebkit.org/wpebackend-fdo
  *
  * @domain `wpewebkit.org/wpebackend-fdo`
- * @version `1.16.0` (4 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install +wpewebkit.org/wpebackend-fdo -- $SHELL -i`
+ * @install `launchpad install wpewebkit.org/wpebackend-fdo`
  * @dependencies `gnome.org/glib`, `github.com/anholt/libepoxy`, `wpewebkit.org/libwpe`, ... (+2 more)
  *
  * @example
@@ -14,7 +12,7 @@
  *
  * const pkg = pantry.wpewebkitorgwpebackendfdo
  * console.log(pkg.name)        // "wpebackend-fdo"
- * console.log(pkg.versions[0]) // "1.16.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: wpewebkit.org/wpebackend-fdo"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/wpewebkit-org/wpebackend-fdo.md
@@ -32,15 +30,12 @@ export const wpewebkitorgwpebackendfdoPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wpewebkit.org/wpebackend-fdo/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: wpewebkit.org/wpebackend-fdo' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +wpewebkit.org/wpebackend-fdo -- $SHELL -i' as const,
+  installCommand: 'launchpad install wpewebkit.org/wpebackend-fdo' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -54,17 +49,10 @@ export const wpewebkitorgwpebackendfdoPackage = {
     'mesa3d.org',
     'wayland.freedesktop.org',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.16.0',
-    '1.14.4',
-    '1.14.3',
-    '1.14.2',
-  ] as const,
-  aliases: [] as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wpewebkit.org/wpebackend-fdo/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type WpewebkitorgwpebackendfdoPackage = typeof wpewebkitorgwpebackendfdoPackage
