@@ -1435,7 +1435,7 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
         // Create safe filename for package link in catalog (must match generatePackagePages logic)
         // Find the domain variable name by converting domain back to var name
         const domainVarName = convertDomainToVarName(domain)
-        let safeCatalogFilename = domainVarName
+        let safeCatalogFilename = domainVarName.toLowerCase()
         if (/^\d/.test(safeCatalogFilename)) {
           safeCatalogFilename = `pkg-${safeCatalogFilename}`
         }
@@ -1565,7 +1565,8 @@ async function generatePackagePages(outputDir: string, sourcePackagesDir?: strin
 
     try {
       // Use domain variable name as filename (no alias-based naming to avoid duplicates)
-      let safeFilename = domainVarName
+      // Ensure consistent lowercase naming
+      let safeFilename = domainVarName.toLowerCase()
 
       // If filename starts with a number, prepend with 'pkg-'
       if (/^\d/.test(safeFilename)) {
@@ -1877,7 +1878,7 @@ ${categoryName === 'Programming Languages'
         .replace(/\s+/g, ' ') // Replace multiple whitespace/newlines with single space
 
       // Create safe filename for package link
-      let safePackageFilename = domainVarName
+      let safePackageFilename = domainVarName.toLowerCase()
       if (/^\d/.test(safePackageFilename)) {
         safePackageFilename = `pkg-${safePackageFilename}`
       }
