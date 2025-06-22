@@ -1,6 +1,6 @@
 # System Administration
 
-*6 packages in this category*
+*5 packages in this category*
 
 Packages related to system administration.
 
@@ -13,16 +13,6 @@ Improved top (interactive process viewer)
 **Programs**: htop
 
 **Install**: `launchpad install htop`
-
----
-
-### [openssh.com](../packages/opensshcom.md)
-
-Premier connectivity tool for secure remote login with the SSH protocol
-
-**Programs**: scp, sftp, slogin, ssh, ssh-add, ssh-agent, ssh-keygen, ssh-keyscan, sshd
-
-**Install**: `launchpad install openssh.com`
 
 ---
 

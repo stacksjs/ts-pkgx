@@ -1,57 +1,51 @@
-# joshuto
+# tbb
 
-> ranger-like terminal file manager written in Rust
+> oneAPI Threading Building Blocks (oneTBB)
 
 ## Package Information
 
-- **Domain**: `crates.io/joshuto`
-- **Name**: `joshuto`
+- **Domain**: `github.com/oneapi-src/oneTBB`
+- **Name**: `tbb`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/joshuto/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/oneapi-src/oneTBB/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install joshuto
+launchpad install tbb
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `joshuto`
+*No programs specified*
 
 ## Available Versions
 
 <details>
-<summary>Show all 2 versions</summary>
+<summary>Show all 6 versions</summary>
 
-- `0.9.9`, `0.9.8`
+- `2022.1.0`, `2022.0.0`, `2021.13.0`, `2021.12.0`, `2021.11.0`
+- `2021.10.0`
 
 </details>
 
-**Latest Version**: `0.9.9`
+**Latest Version**: `2022.1.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) joshuto -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/oneapi-src/oneTBB@2022.1.0 -- $SHELL -i
 ```
 
 ## Dependencies
 
 This package depends on:
 
-- `libgit2.org@1`
-
-## Related Packages
-
-These packages work well with joshuto:
-
-- `github.com/junegunn/fzf`
-- `crates.io/zoxide`
+- `python.org~3.11`
 
 ## Usage Examples
 
@@ -59,7 +53,7 @@ These packages work well with joshuto:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.crates_io_joshuto
+const pkg = pantry.oneTBB
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -68,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/joshuto/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/oneapi-src/oneTBB/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

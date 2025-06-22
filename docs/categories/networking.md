@@ -1,6 +1,6 @@
 # Networking
 
-*10 packages in this category*
+*9 packages in this category*
 
 Network tools, protocols, and communication software.
 
@@ -53,16 +53,6 @@ Port scanning utility for large networks
 **Programs**: nmap, ncat, nping
 
 **Install**: `launchpad install nmap.org`
-
----
-
-### [openssh.com](../packages/opensshcom.md)
-
-Premier connectivity tool for secure remote login with the SSH protocol
-
-**Programs**: scp, sftp, slogin, ssh, ssh-add, ssh-agent, ssh-keygen, ssh-keyscan, sshd
-
-**Install**: `launchpad install openssh.com`
 
 ---
 

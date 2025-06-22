@@ -41,6 +41,12 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) resticprofile -- $SHELL -i
 ```
 
+## Related Packages
+
+These packages work well with resticprofile:
+
+- `restic.net/restic`
+
 ## Usage Examples
 
 ```typescript

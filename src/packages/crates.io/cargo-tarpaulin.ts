@@ -8,6 +8,7 @@
  *
  * @install `launchpad install cargo-tarpaulin`
  * @name `cargo-tarpaulin`
+ * @companions `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -55,7 +56,13 @@ export const cargotarpaulinPackage = {
   programs: [
     'cargo-tarpaulin',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'rust-lang.org/cargo',
+  ] as const,
   dependencies: [] as const,
   /**
    * Available versions from newest to oldest.

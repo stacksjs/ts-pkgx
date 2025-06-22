@@ -1,57 +1,44 @@
-# joshuto
+# xcparse
 
-> ranger-like terminal file manager written in Rust
+> Command line tool & Swift framework for parsing Xcode 11+ xcresult
 
 ## Package Information
 
-- **Domain**: `crates.io/joshuto`
-- **Name**: `joshuto`
+- **Domain**: `github.com/ChargePoint/xcparse`
+- **Name**: `xcparse`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/joshuto/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ChargePoint/xcparse/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install joshuto
+launchpad install xcparse
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `joshuto`
+- `xcparse`
 
 ## Available Versions
 
 <details>
 <summary>Show all 2 versions</summary>
 
-- `0.9.9`, `0.9.8`
+- `2.3.2`, `2.3.1`
 
 </details>
 
-**Latest Version**: `0.9.9`
+**Latest Version**: `2.3.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) joshuto -- $SHELL -i
+sh <(curl https://pkgx.sh) xcparse -- $SHELL -i
 ```
-
-## Dependencies
-
-This package depends on:
-
-- `libgit2.org@1`
-
-## Related Packages
-
-These packages work well with joshuto:
-
-- `github.com/junegunn/fzf`
-- `crates.io/zoxide`
 
 ## Usage Examples
 
@@ -59,7 +46,7 @@ These packages work well with joshuto:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.crates_io_joshuto
+const pkg = pantry.github_com_ChargePoint_xcparse
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -68,7 +55,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/joshuto/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ChargePoint/xcparse/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

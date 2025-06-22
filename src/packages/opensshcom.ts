@@ -34,7 +34,7 @@ export const opensshcomPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Premier connectivity tool for secure remote login with the SSH protocol' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openssh.com/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

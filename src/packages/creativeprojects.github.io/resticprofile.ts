@@ -8,6 +8,7 @@
  *
  * @install `launchpad install resticprofile`
  * @name `resticprofile`
+ * @companions `restic.net/restic`
  *
  * @example
  * ```typescript
@@ -55,7 +56,13 @@ export const resticprofilePackage = {
   programs: [
     'resticprofile',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'restic.net/restic',
+  ] as const,
   dependencies: [] as const,
   /**
    * Available versions from newest to oldest.

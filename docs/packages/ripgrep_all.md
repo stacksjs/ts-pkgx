@@ -43,6 +43,13 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +crates.io/ripgrep-all@0.10.9 -- $SHELL -i
 ```
 
+## Related Packages
+
+These packages work well with rga:
+
+- `crates.io/ripgrep`
+- `github.com/junegunn/fzf`
+
 ## Usage Examples
 
 ```typescript

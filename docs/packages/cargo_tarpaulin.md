@@ -41,6 +41,12 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) cargo-tarpaulin -- $SHELL -i
 ```
 
+## Related Packages
+
+These packages work well with cargo-tarpaulin:
+
+- `rust-lang.org/cargo`
+
 ## Usage Examples
 
 ```typescript
