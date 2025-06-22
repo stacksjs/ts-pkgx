@@ -2300,6 +2300,9 @@ These packages work well with ${pkg.name || domain}:
         })
       }
 
+      // Determine the correct path to package catalog based on folder structure
+      const packageCatalogPath = domain.includes('.') ? '../../package-catalog.md' : '../package-catalog.md'
+
       // Add usage examples
       content += `\n## Usage Examples
 
@@ -2318,7 +2321,7 @@ console.log(\`Programs: \${pkg.programs.join(', ')}\`)
 
 - [Package Source](${pkg.packageYmlUrl || `https://github.com/pkgxdev/pantry/tree/main/projects/${domain}/package.yml`})
 - [Homepage](${pkg.homepageUrl || '#'})
-- [Back to Package Catalog](${domain.includes('.') ? '../../package-catalog.md' : '../package-catalog.md'})
+- [Back to Package Catalog](${packageCatalogPath})
 
 ---
 
