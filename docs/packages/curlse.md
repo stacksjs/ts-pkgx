@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +curl.se -- $SHELL -i
+launchpad install curl
 ```
 
 ## Programs
@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `curl`
 - `curl-config`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `curl`
 
 ## Available Versions
 

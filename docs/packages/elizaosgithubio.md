@@ -1,11 +1,11 @@
-# elizaOS.github.io
+# elizaOS
 
 > Autonomous agents for everyone
 
 ## Package Information
 
-- **Domain**: `elizaOSgithub.io`
-- **Name**: `elizaOS.github.io`
+- **Domain**: `elizaOS.github.io`
+- **Name**: `elizaOS`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/elizaOS.github.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install elizaOSgithub.io
+launchpad install eliza
 ```
 
 ## Programs
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `eliza`
-- `elizaOS`
 
 ## Available Versions
 
@@ -46,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +elizaOSgithub.io@1.0.11 -- $SHELL -i
+sh <(curl https://pkgx.sh) eliza -- $SHELL -i
 ```
 
 ## Dependencies
@@ -60,9 +59,9 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with elizaOS.github.io:
+These packages work well with elizaOS:
 
-- [`git-scm.org`](gitscmorg.md) - Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.
+- `git-scm.org`
 - [`ffmpeg.org`](ffmpegorg.md) - Play, record, convert, and stream audio and video
 
 ## Usage Examples
@@ -71,7 +70,7 @@ These packages work well with elizaOS.github.io:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.elizaosgithubio
+const pkg = pantry.elizaOSgithubio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

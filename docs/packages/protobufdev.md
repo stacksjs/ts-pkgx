@@ -1,11 +1,11 @@
-# protobuf.dev
+# Protocol Buffers
 
 > Protocol Buffers - Google's data interchange format
 
 ## Package Information
 
 - **Domain**: `protobuf.dev`
-- **Name**: `protobuf.dev`
+- **Name**: `Protocol Buffers`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/protobuf.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install protobuf.dev
+launchpad install protoc
 ```
 
 ## Programs
@@ -51,7 +51,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +protobuf.dev@31.1.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) protoc -- $SHELL -i
 ```
 
 ## Dependencies

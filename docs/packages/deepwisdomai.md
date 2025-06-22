@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) metagpt
+launchpad install metagpt
 ```
 
 ## Programs
@@ -46,7 +46,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +deepwisdom.ai@0.8.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) metagpt -- $SHELL -i
 ```
 
 ## Dependencies
@@ -54,7 +54,7 @@ sh <(curl https://pkgx.sh) +deepwisdom.ai@0.8.2 -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
-- `git-scm.org^2`
+- `git-scm.org^2 # v0.7.0 requires it`
 
 ## Usage Examples
 

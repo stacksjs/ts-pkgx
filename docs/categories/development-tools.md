@@ -32,7 +32,7 @@ The official Vim repository
 
 **Programs**: vim, vi
 
-**Install**: `launchpad install vim.org`
+**Install**: `launchpad install vi`
 
 ---
 

@@ -1,11 +1,11 @@
-# surya
+# Surya
 
 > OCR, layout analysis, reading order, table recognition in 90+ languages
 
 ## Package Information
 
 - **Domain**: `github.com/VikParuchuri/surya`
-- **Name**: `surya`
+- **Name**: `Surya`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/VikParuchuri/surya/package.yml)
 
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `surya_detect`
-- `Surya`
 
 ## Available Versions
 
@@ -56,7 +55,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/VikParuchuri/surya@0.14.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) surya_detect -- $SHELL -i
 ```
 
 ## Dependencies
@@ -74,7 +73,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.Surya
+const pkg = pantry.surya
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

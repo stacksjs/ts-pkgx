@@ -1,11 +1,11 @@
-# seaweedfs.com
+# SeaweedFS
 
 > SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for billions of files! Blob store has O(1) disk seek, cloud tiering. Filer supports Cloud Drive, cross-DC active-active replication, Kubernetes, POSIX FUSE mount, S3 API, S3 Gateway, Hadoop, WebDAV, encryption, Erasure Coding.
 
 ## Package Information
 
 - **Domain**: `seaweedfs.com`
-- **Name**: `seaweedfs.com`
+- **Name**: `SeaweedFS`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/seaweedfs.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install seaweedfs.com
+launchpad install weed
 ```
 
 ## Programs
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `weed`
-- `SeaweedFS`
 
 ## Available Versions
 
@@ -46,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +seaweedfs.com@3.91.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) weed -- $SHELL -i
 ```
 
 ## Usage Examples

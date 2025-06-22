@@ -52,7 +52,7 @@ the package manager for JavaScript
 
 **Programs**: npm, npx
 
-**Install**: `launchpad install npmjs.com`
+**Install**: `launchpad install npm`
 
 ---
 

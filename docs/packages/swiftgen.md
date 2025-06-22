@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) swiftgen -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.swiftgen
+const pkg = pantry.SwiftGen
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

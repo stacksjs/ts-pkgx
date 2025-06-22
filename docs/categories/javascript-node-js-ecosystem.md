@@ -32,7 +32,7 @@ The 1.x line is frozen - features and bugfixes now happen on https://github.com/
 
 **Programs**: yarn, yarnpkg
 
-**Install**: `launchpad install classic.yarnpkg.com`
+**Install**: `launchpad install yarn`
 
 ---
 
@@ -82,7 +82,7 @@ the package manager for JavaScript
 
 **Programs**: npm, npx
 
-**Install**: `launchpad install npmjs.com`
+**Install**: `launchpad install npm`
 
 ---
 

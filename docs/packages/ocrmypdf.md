@@ -60,7 +60,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.ocrmypdf
+const pkg = pantry.OCRmyPDF
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

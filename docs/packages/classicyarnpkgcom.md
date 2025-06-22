@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `classicyarnpkg.com`
+- **Domain**: `classic.yarnpkg.com`
 - **Name**: `classic.yarnpkg.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/classic.yarnpkg.com/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +classic.yarnpkg.com
+launchpad install yarn
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +classic.yarnpkg.com -- $SHELL -i
+sh <(curl https://pkgx.sh) +classic.yarnpkg.com@1.22.22 -- $SHELL -i
 ```
 
 ## Dependencies

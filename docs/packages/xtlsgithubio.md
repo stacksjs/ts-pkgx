@@ -1,11 +1,11 @@
-# xtls.github.io
+# xray-core
 
 > Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
 
 ## Package Information
 
-- **Domain**: `xtlsgithub.io`
-- **Name**: `xtls.github.io`
+- **Domain**: `xtls.github.io`
+- **Name**: `xray-core`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xtls.github.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install xtlsgithub.io
+launchpad install xray
 ```
 
 ## Programs
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `xray`
-- `xray-core`
 
 ## Available Versions
 
@@ -50,7 +49,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +xtlsgithub.io@25.6.8 -- $SHELL -i
+sh <(curl https://pkgx.sh) xray -- $SHELL -i
 ```
 
 ## Usage Examples

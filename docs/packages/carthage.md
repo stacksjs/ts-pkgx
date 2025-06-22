@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) carthage -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.carthage
+const pkg = pantry.Carthage
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

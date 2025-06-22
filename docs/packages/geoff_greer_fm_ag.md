@@ -1,11 +1,11 @@
-# ag
+# The Silver Searcher
 
 > A code-searching tool similar to ack, but faster.
 
 ## Package Information
 
 - **Domain**: `geoff.greer.fm/ag`
-- **Name**: `ag`
+- **Name**: `The Silver Searcher`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/geoff.greer.fm/ag/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install ag
 ## Programs
 
 This package provides the following executable programs:
+
+- `ag`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `ag`
 
@@ -37,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +geoff.greer.fm/ag@2.2.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) ag -- $SHELL -i
 ```
 
 ## Dependencies

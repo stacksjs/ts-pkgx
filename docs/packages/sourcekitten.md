@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) sourcekitten -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.sourcekitten
+const pkg = pantry.SourceKitten
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

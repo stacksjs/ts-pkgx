@@ -1204,6 +1204,47 @@ function shouldExcludePackage(pkg: PkgxPackage): boolean {
 }
 
 /**
+ * Generate the appropriate install command for a package
+ */
+function generateInstallCommand(pkg: PkgxPackage): string {
+  // If there's a launchpadInstallCommand, use it but normalize the package name
+  if (pkg.launchpadInstallCommand) {
+    // Check if the command contains uppercase letters that should be lowercase
+    const match = pkg.launchpadInstallCommand.match(/launchpad install (.+)/)
+    if (match) {
+      const packageName = match[1]
+      // If the package has aliases, prefer the shortest one (usually the most common name)
+      if (pkg.aliases && pkg.aliases.length > 0) {
+        const sortedAliases = [...pkg.aliases].sort((a, b) => a.length - b.length)
+        return `launchpad install ${sortedAliases[0]}`
+      }
+      // If the package name is the same as an alias but with different case, use lowercase
+      if (pkg.aliases && pkg.aliases.some(alias => alias.toLowerCase() === packageName.toLowerCase())) {
+        return `launchpad install ${packageName.toLowerCase()}`
+      }
+      // Otherwise use the command as-is
+      return pkg.launchpadInstallCommand
+    }
+  }
+
+  // If there's an installCommand, use it
+  if (pkg.installCommand) {
+    return pkg.installCommand
+  }
+
+  // Generate install command using the best available name
+  let installName = pkg.domain
+
+  // If the package has aliases, prefer the shortest one (usually the most common name)
+  if (pkg.aliases && pkg.aliases.length > 0) {
+    const sortedAliases = [...pkg.aliases].sort((a, b) => a.length - b.length)
+    installName = sortedAliases[0]
+  }
+
+  return `launchpad install ${installName}`
+}
+
+/**
  * Generate package catalog with proper categorization
  */
 async function generatePackageCatalog(outputDir: string, packagesDir?: string): Promise<string> {
@@ -1313,8 +1354,13 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
           description = `${description.substring(0, 97)}...`
         }
 
-        // Create install command
-        const installCmd = `\`pkgx ${pkg.name || domain}\``
+        // Create install command using the best available name
+        let installName = pkg.name || domain
+        if (pkg.aliases && pkg.aliases.length > 0) {
+          const sortedAliases = [...pkg.aliases].sort((a, b) => a.length - b.length)
+          installName = sortedAliases[0]
+        }
+        const installCmd = `\`pkgx ${installName}\``
 
         // Create safe filename for package link in catalog
         let safeCatalogFilename = domain
@@ -1426,22 +1472,25 @@ async function generatePackagePages(outputDir: string, sourcePackagesDir?: strin
 
   const generatedFiles: string[] = []
 
+  // Track processed domains to avoid duplicates
+  const processedDomains = new Set<string>()
+
   for (const [domainVarName, pkg] of Object.entries(pantry)) {
     // Skip packages with placeholder data
     if (shouldExcludePackage(pkg)) {
       console.log(`Skipping package page for ${pkg.domain || domainVarName} (placeholder data)`)
       continue
     }
-    try {
-      // Determine the filename - prefer primary alias over domain variable name
-      let safeFilename = domainVarName
 
-      // If the package has aliases, use the shortest one as the primary filename
-      if (pkg.aliases && pkg.aliases.length > 0) {
-        // Sort aliases by length and use the shortest one
-        const sortedAliases = [...pkg.aliases].sort((a, b) => a.length - b.length)
-        safeFilename = sortedAliases[0]
-      }
+    // Skip if we've already processed this domain (prevents duplicates from aliases)
+    if (processedDomains.has(pkg.domain)) {
+      continue
+    }
+    processedDomains.add(pkg.domain)
+
+    try {
+      // Use domain variable name as filename (no alias-based naming to avoid duplicates)
+      let safeFilename = domainVarName
 
       // If filename starts with a number, prepend with 'pkg-'
       if (/^\d/.test(safeFilename)) {
@@ -1478,7 +1527,7 @@ async function generatePackagePages(outputDir: string, sourcePackagesDir?: strin
 
 \`\`\`bash
 # Install with launchpad
-${pkg.launchpadInstallCommand || pkg.installCommand || `launchpad install ${domain}`}
+${generateInstallCommand(pkg)}
 \`\`\`
 
 ## Programs
@@ -1694,7 +1743,7 @@ ${description}
   : ''}
 **Programs**: ${pkg.programs && pkg.programs.length > 0 ? pkg.programs.map((p: string) => p.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')).join(', ') : 'None specified'}
 
-**Install**: \`${pkg.launchpadInstallCommand || pkg.installCommand || `launchpad install ${domain}`}\`
+**Install**: \`${generateInstallCommand(pkg)}\`
 
 ---
 

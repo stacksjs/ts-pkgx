@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) mint -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.mint
+const pkg = pantry.Mint
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

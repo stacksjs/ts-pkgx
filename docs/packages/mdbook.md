@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) mdbook -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.mdbook
+const pkg = pantry.mdBook
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

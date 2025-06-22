@@ -12,7 +12,7 @@ A command line tool and library for transferring data with URL syntax, supportin
 
 **Programs**: curl, curl-config
 
-**Install**: `launchpad install cURL`
+**Install**: `launchpad install curl`
 
 ---
 

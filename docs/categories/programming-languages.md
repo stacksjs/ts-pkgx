@@ -52,7 +52,7 @@ The Go programming language
 
 **Programs**: go, gofmt
 
-**Install**: `launchpad install go.dev`
+**Install**: `launchpad install go`
 
 ---
 
@@ -122,7 +122,7 @@ General-purpose scripting language
 
 **Programs**: pear, pecl, phar, php, php-cgi, php-config, phpdbg, phpize
 
-**Install**: `launchpad install php.net`
+**Install**: `launchpad install php`
 
 ---
 
@@ -132,7 +132,7 @@ The Python programming language
 
 **Programs**: python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace;
 
-**Install**: `launchpad install python`
+**Install**: `launchpad install py`
 
 ---
 
@@ -142,7 +142,7 @@ The Python programming language
 
 **Programs**: python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace;
 
-**Install**: `launchpad install python`
+**Install**: `launchpad install py`
 
 ---
 
