@@ -1,11 +1,11 @@
-# xpra
+# xpra.org
 
 > Persistent remote applications for X11; screen sharing for X11, MacOS and MSWindows.
 
 ## Package Information
 
-- **Domain**: `xpra`
-- **Name**: `xpra`
+- **Domain**: `xpra.org`
+- **Name**: `xpra.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xpra.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) xpra
+launchpad install xpra
 ```
 
 ## Programs
@@ -31,20 +31,20 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `6.3.0`, `6.2.5`, `6.2.4`, `6.2.3`, `6.2.2`
-- `6.2.1`, `6.2.0`, `6.1.3`, `6.1.2`
+- `6.3.1`, `6.3.0`, `6.2.5`, `6.2.4`, `6.2.3`
+- `6.2.2`, `6.2.1`, `6.2.0`, `6.1.3`, `6.1.2`
 
 </details>
 
-**Latest Version**: `6.3.0`
+**Latest Version**: `6.3.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx xpra@6.3.0
+sh <(curl https://pkgx.sh) +xpra.org@6.3.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -60,26 +60,6 @@ This package depends on:
 - `freedesktop.org/pkg-config~0.29`
 - `gnome.org/PyGObject`
 - `gnome.org/glib`
-- `x.org/x11`
-- `x.org/protocol`
-- `x.org/exts`
-- `x.org/xkbfile`
-- `x.org/xdamage`
-- `x.org/xrandr`
-- `x.org/xcomposite`
-- `x.org/xtst`
-- `x.org/libxres`
-- `x.org/xfixes`
-- `videolan.org/x264`
-- `webmproject.org/libvpx`
-- `github.com/AOMediaCodec/libavif`
-- `github.com/Cyan4973/xxHash`
-- `gtk.org/gtk3`
-- `gnome.org/gobject-introspection`
-- `harfbuzz.org`
-- `gnome.org/gdk-pixbuf`
-- `gnome.org/atk`
-- `gnome.org/pango`
 
 ## Usage Examples
 

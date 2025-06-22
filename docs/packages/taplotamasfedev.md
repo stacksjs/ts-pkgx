@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install taplo
+launchpad install taplotamasfe.dev
 ```
 
 ## Programs

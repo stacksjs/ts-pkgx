@@ -1,11 +1,11 @@
-# pwsh
+# PowerShell
 
 > PowerShell for every system!
 
 ## Package Information
 
-- **Domain**: `pw.sh`
-- **Name**: `pwsh`
+- **Domain**: `microsoft.com/PowerShell`
+- **Name**: `PowerShell`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/PowerShell/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) pwsh
+launchpad install pwsh
 ```
 
 ## Programs
@@ -26,7 +26,7 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `PowerShell`
+- `pwsh`
 
 ## Available Versions
 
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pw.sh@7.5.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +microsoft.com/PowerShell@7.5.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -52,8 +52,7 @@ sh <(curl https://pkgx.sh) +pw.sh@7.5.1 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1.1`
-- `linuxunicode.org^71`
-- `unicode.org^71`
+- `linux:unicode.org^71`
 
 ## Usage Examples
 

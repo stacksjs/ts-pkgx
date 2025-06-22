@@ -1,11 +1,11 @@
-# ninja
+# ninja-build.org
 
 > Small build system for use with gyp or CMake
 
 ## Package Information
 
-- **Domain**: `ninja`
-- **Name**: `ninja`
+- **Domain**: `ninja-build.org`
+- **Name**: `ninja-build.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ninja-build.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) ninja
+launchpad install ninja
 ```
 
 ## Programs
@@ -31,19 +31,19 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `1.12.1`, `1.12.0`, `1.11.1`, `1.11.0`
+- `1.13.0`, `1.12.1`, `1.12.0`, `1.11.1`, `1.11.0`
 
 </details>
 
-**Latest Version**: `1.12.1`
+**Latest Version**: `1.13.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx ninja@1.12.1
+sh <(curl https://pkgx.sh) +ninja-build.org@1.13.0 -- $SHELL -i
 ```
 
 ## Usage Examples

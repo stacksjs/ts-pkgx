@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cephadm`
+- **Domain**: `ceph.com/cephadm`
 - **Name**: `cephadm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ceph.com/cephadm/package.yml)
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) cephadm
+launchpad install cephadm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `cephadm`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `cephadm`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx cephadm@20.3.0
+sh <(curl https://pkgx.sh) cephadm -- $SHELL -i
 ```
 
 ## Dependencies

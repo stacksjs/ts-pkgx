@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install direnv
+launchpad install direnv.net
 ```
 
 ## Programs

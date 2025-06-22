@@ -1,11 +1,11 @@
-# gnuplot
+# gnuplot.info
 
 > Command-driven, interactive function plotting
 
 ## Package Information
 
-- **Domain**: `gnuplot`
-- **Name**: `gnuplot`
+- **Domain**: `gnuplot.info`
+- **Name**: `gnuplot.info`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnuplot.info/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) gnuplot
+launchpad install gnuplot
 ```
 
 ## Programs
@@ -31,20 +31,20 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `6.0.2`, `6.0.1`, `6.0.0`, `5.4.10`, `5.4.9`
-- `5.4.8`, `5.4.7`, `5.4.6`
+- `6.0.3`, `6.0.2`, `6.0.1`, `6.0.0`, `5.4.10`
+- `5.4.9`, `5.4.8`, `5.4.7`, `5.4.6`
 
 </details>
 
-**Latest Version**: `6.0.2`
+**Latest Version**: `6.0.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx gnuplot@6.0.2
+sh <(curl https://pkgx.sh) +gnuplot.info@6.0.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -55,8 +55,7 @@ This package depends on:
 - `lua.org`
 - `gnome.org/pango`
 - `gnu.org/readline`
-- `linuxgithub.com/AOMediaCodec/libavif^0.11`
-- `github.com/AOMediaCodec/libavif^0.11`
+- `linux:github.com/AOMediaCodec/libavif^0.11`
 
 ## Usage Examples
 

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install proj
+launchpad install proj.org
 ```
 
 ## Programs

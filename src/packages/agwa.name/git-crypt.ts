@@ -76,6 +76,8 @@ export const gitcryptPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-crypt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-crypt' as const,
 }
 
 export type GitcryptPackage = typeof gitcryptPackage

@@ -82,6 +82,8 @@ export const carapacePackage = {
   aliases: [
     'carapace',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) carapace -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install carapace' as const,
 }
 
 export type CarapacePackage = typeof carapacePackage

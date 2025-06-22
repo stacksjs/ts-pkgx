@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +hunspell.github.io -- $SHELL -i
+launchpad install hunspellgithub.io
 ```
 
 ## Programs

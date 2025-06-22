@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install xmlwf
+launchpad install libexpatgithub.io
 ```
 
 ## Programs

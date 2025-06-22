@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +caskreadthedocs.io@0.9.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) cask -- $SHELL -i
 ```
 
 ## Dependencies

@@ -6,7 +6,7 @@
  * @version `3.12.1` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +aomedia.googlesource.com/aom -- $SHELL -i`
+ * @install `launchpad install aom`
  * @name `aom`
  *
  * @example
@@ -47,7 +47,7 @@ export const aomPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +aomedia.googlesource.com/aom -- $SHELL -i' as const,
+  installCommand: 'launchpad install aom' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,6 +84,8 @@ export const aomPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +aomedia.googlesource.com/aom -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install aom' as const,
 }
 
 export type AomPackage = typeof aomPackage

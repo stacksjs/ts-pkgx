@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install xc
+launchpad install xcfile.dev
 ```
 
 ## Programs

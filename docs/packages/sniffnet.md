@@ -1,11 +1,11 @@
-# sniffnet
+# sniffnet.net
 
 > Cross-platform application to monitor your network traffic
 
 ## Package Information
 
-- **Domain**: `sniff.net`
-- **Name**: `sniffnet`
+- **Domain**: `sniffnet.net`
+- **Name**: `sniffnet.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sniffnet.net/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) sniffnet
+launchpad install sniffnet
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `sniffnet`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `sniffnet`
 
@@ -37,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +sniff.net@1.3.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +sniffnet.net@1.3.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -46,9 +52,8 @@ This package depends on:
 
 - `openssl.org@1`
 - `tcpdump.org@1`
-- `linuxalsa-project.org/alsa-lib@1freedesktop.org/fontconfig@2`
-- `alsa-project.org/alsa-lib@1`
-- `freedesktop.org/fontconfig@2`
+- `linux:alsa-project.org/alsa-lib@1`
+- `linux:freedesktop.org/fontconfig@2`
 
 ## Usage Examples
 

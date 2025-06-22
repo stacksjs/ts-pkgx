@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `xcodeproj`
+- **Domain**: `cocoapods.org/xcodeproj`
 - **Name**: `xcodeproj`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cocoapods.org/xcodeproj/package.yml)
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) xcodeproj
+launchpad install xcodeproj
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `xcodeproj`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `xcodeproj`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx xcodeproj@1.27.0
+sh <(curl https://pkgx.sh) +cocoapods.org/xcodeproj@1.27.0 -- $SHELL -i
 ```
 
 ## Dependencies

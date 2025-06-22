@@ -1,11 +1,11 @@
-# mun
+# mun-lang.org
 
 > Source code for the Mun language and runtime.
 
 ## Package Information
 
-- **Domain**: `mun`
-- **Name**: `mun`
+- **Domain**: `mun-lang.org`
+- **Name**: `mun-lang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mun-lang.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) mun
+launchpad install mun
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx mun@0.5.0
+sh <(curl https://pkgx.sh) +mun-lang.org@0.5.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -56,9 +56,9 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with mun:
+These packages work well with mun-lang.org:
 
-- `llvm.org`
+- [`llvm.org`](llvmorg.md) - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
 
 ## Usage Examples
 

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install talosctl
+launchpad install talos.dev
 ```
 
 ## Programs

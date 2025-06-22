@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install mako-render
+launchpad install makotemplates.org
 ```
 
 ## Programs

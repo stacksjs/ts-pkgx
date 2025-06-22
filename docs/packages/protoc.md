@@ -1,66 +1,58 @@
-# Protocol Buffers
+# protobuf-c
 
-> Protocol Buffers - Google's data interchange format
+> Protocol Buffers implementation in C
 
 ## Package Information
 
-- **Domain**: `protoc`
-- **Name**: `Protocol Buffers`
+- **Domain**: `github.com/protobuf-c/protobuf-c`
+- **Name**: `protobuf-c`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/protobuf.dev/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/protobuf-c/protobuf-c/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) protoc
+launchpad install +github.com/protobuf-c/protobuf-c -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `protoc`
+- `protoc-c`
+- `protoc-gen-c`
 
 ## Aliases
 
 This package can also be accessed using these aliases:
 
 - `protoc`
-- `protocol buffers`
 
 ## Available Versions
 
 <details>
-<summary>Show all 43 versions</summary>
+<summary>Show all 3 versions</summary>
 
-- `31.1.0`, `31.0.0`, `30.2.0`, `30.1.0`, `30.0.0`
-- `29.5.0`, `29.4.0`, `29.3.0`, `29.2.0`, `29.1.0`
-- `29.0.0`, `28.3.0`, `28.2.0`, `28.1.0`, `28.0.0`
-- `27.5.0`, `27.4.0`, `27.3.0`, `27.2.0`, `27.1.0`
-- `27.0.0`, `26.1.0`, `26.0.0`, `25.8.0`, `25.7.0`
-- `25.6.0`, `25.5.0`, `25.4.0`, `25.3.0`, `25.2.0`
-- `25.1.0`, `25.0.0`, `24.4.0`, `24.3.0`, `24.2.0`
-- `24.1.0`, `23.4.0`, `23.3.0`, `23.2.0`, `23.1.0`
-- `23.0.0`, `22.5.0`, `21.12.0`
+- `1.5.2`, `1.5.1`, `1.5.0`
 
 </details>
 
-**Latest Version**: `31.1.0`
+**Latest Version**: `1.5.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx Protocol Buffers@31.1.0
+sh <(curl https://pkgx.sh) +github.com/protobuf-c/protobuf-c@1.5.2 -- $SHELL -i
 ```
 
 ## Dependencies
 
 This package depends on:
 
-- `zlib.net^1`
-- `abseil.io`
+- `protobuf.dev^25.1`
+- `abseil.io^20250127`
 
 ## Usage Examples
 
@@ -68,7 +60,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.protoc
+const pkg = pantry.protobuf-c
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -77,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/protobuf.dev/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/protobuf-c/protobuf-c/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install dagger
+launchpad install dagger.io
 ```
 
 ## Programs

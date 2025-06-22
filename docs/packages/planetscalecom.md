@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pscale
+launchpad install planetscale.com
 ```
 
 ## Programs

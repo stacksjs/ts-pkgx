@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +rucio.cern.ch/rucio-client -- $SHELL -i
+launchpad install ruc.io/client
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libsodium.org -- $SHELL -i
+launchpad install libsodium.org
 ```
 
 ## Programs

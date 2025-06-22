@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install terraform
+launchpad install terraform.io
 ```
 
 ## Programs

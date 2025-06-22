@@ -80,6 +80,8 @@ export const chromedriverPackage = {
   aliases: [
     'chromedriver',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) chromedriver -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install chromedriver' as const,
 }
 
 export type ChromedriverPackage = typeof chromedriverPackage

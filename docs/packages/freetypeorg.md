@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +freetype.org -- $SHELL -i
+launchpad install freetype.org
 ```
 
 ## Programs

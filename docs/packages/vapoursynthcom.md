@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install vspipe
+launchpad install vapoursynth.com
 ```
 
 ## Programs

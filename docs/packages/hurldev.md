@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +hurl.dev -- $SHELL -i
+launchpad install hurl.dev
 ```
 
 ## Programs

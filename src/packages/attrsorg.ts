@@ -5,7 +5,7 @@
  * @version `25.3.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +attrs.org -- $SHELL -i`
+ * @install `launchpad install attrs.org`
  * @homepage https://www.attrs.org/
  * @dependencies `python.org~3.11`
  *
@@ -42,7 +42,7 @@ export const attrsorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +attrs.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install attrs.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -66,6 +66,8 @@ export const attrsorgPackage = {
     '23.2.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +attrs.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install attrs.org' as const,
 }
 
 export type AttrsorgPackage = typeof attrsorgPackage

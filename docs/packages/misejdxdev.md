@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mise.jdx.dev -- $SHELL -i
+launchpad install misejdx.dev
 ```
 
 ## Programs

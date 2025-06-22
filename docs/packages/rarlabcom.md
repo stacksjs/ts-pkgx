@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install unrar
+launchpad install rarlab.com
 ```
 
 ## Programs

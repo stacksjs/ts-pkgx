@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +elfutils.org -- $SHELL -i
+launchpad install elfutils.org
 ```
 
 ## Programs

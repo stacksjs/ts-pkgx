@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `netpbmsourceforge.net`
+- **Domain**: `netpbm.sourceforge.net`
 - **Name**: `netpbm.sourceforge.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/netpbm.sourceforge.net/package.yml)
@@ -352,7 +352,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +netpbmsourceforge.net@10.86.46 -- $SHELL -i
+sh <(curl https://pkgx.sh) +netpbm.sourceforge.net@10.86.46 -- $SHELL -i
 ```
 
 ## Dependencies

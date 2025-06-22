@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +groonga.org -- $SHELL -i
+launchpad install groonga.org
 ```
 
 ## Programs

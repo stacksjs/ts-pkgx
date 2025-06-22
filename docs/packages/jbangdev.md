@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install jbang
+launchpad install jbang.dev
 ```
 
 ## Programs

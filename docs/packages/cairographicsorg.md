@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +cairographics.org@1.18.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) cairo-trace -- $SHELL -i
 ```
 
 ## Dependencies

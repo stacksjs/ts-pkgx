@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +qemu.org -- $SHELL -i
+launchpad install qemu.org
 ```
 
 ## Programs

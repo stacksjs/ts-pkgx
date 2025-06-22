@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install dprint
+launchpad install dprint.dev
 ```
 
 ## Programs

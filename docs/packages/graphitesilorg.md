@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install gr2fonttest
+launchpad install graphitesil.org
 ```
 
 ## Programs

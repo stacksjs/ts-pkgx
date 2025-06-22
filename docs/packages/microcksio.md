@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install microcks-cli
+launchpad install microcks.io
 ```
 
 ## Programs

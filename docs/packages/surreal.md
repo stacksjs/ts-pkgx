@@ -1,11 +1,11 @@
-# surreal
+# surrealdb.com
 
 > A scalable, distributed, collaborative, document-graph database, for the realtime web
 
 ## Package Information
 
-- **Domain**: `surreal`
-- **Name**: `surreal`
+- **Domain**: `surrealdb.com`
+- **Name**: `surrealdb.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/surrealdb.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) surreal
+launchpad install surreal
 ```
 
 ## Programs
@@ -31,17 +31,18 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 41 versions</summary>
+<summary>Show all 47 versions</summary>
 
-- `2023.9.1`, `2.3.3`, `2.3.2`, `2.3.1`, `2.3.0`
-- `2.2.3`, `2.2.2`, `2.2.1`, `2.2.0`, `2.1.5`
-- `2.1.4`, `2.1.3`, `2.1.2`, `2.1.1`, `2.1.0`
-- `2.0.5`, `2.0.4`, `2.0.3`, `2.0.2`, `2.0.1`
-- `2.0.0`, `1.5.6`, `1.5.5`, `1.5.4`, `1.5.3`
-- `1.5.2`, `1.5.1`, `1.5.0`, `1.4.2`, `1.4.0`
-- `1.3.1`, `1.3.0`, `1.2.2`, `1.2.1`, `1.2.0`
-- `1.1.1`, `1.1.0`, `1.0.2`, `1.0.1`, `1.0.0`
-- `0.0.0`
+- `2023.9.1`, `2.3.5`, `2.3.4`, `2.3.3`, `2.3.2`
+- `2.3.1`, `2.3.0`, `2.2.5`, `2.2.4`, `2.2.3`
+- `2.2.2`, `2.2.1`, `2.2.0`, `2.1.7`, `2.1.6`
+- `2.1.5`, `2.1.4`, `2.1.3`, `2.1.2`, `2.1.1`
+- `2.1.0`, `2.0.5`, `2.0.4`, `2.0.3`, `2.0.2`
+- `2.0.1`, `2.0.0`, `1.5.6`, `1.5.5`, `1.5.4`
+- `1.5.3`, `1.5.2`, `1.5.1`, `1.5.0`, `1.4.2`
+- `1.4.0`, `1.3.1`, `1.3.0`, `1.2.2`, `1.2.1`
+- `1.2.0`, `1.1.1`, `1.1.0`, `1.0.2`, `1.0.1`
+- `1.0.0`, `0.0.0`
 
 </details>
 
@@ -51,7 +52,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx surreal@2023.9.1
+sh <(curl https://pkgx.sh) +surrealdb.com@2023.9.1 -- $SHELL -i
 ```
 
 ## Dependencies

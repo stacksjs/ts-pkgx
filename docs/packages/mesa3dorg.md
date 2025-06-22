@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mesa3d.org -- $SHELL -i
+launchpad install mesa3d.org
 ```
 
 ## Programs

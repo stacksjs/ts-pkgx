@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install nomad
+launchpad install nomadproject.io
 ```
 
 ## Programs

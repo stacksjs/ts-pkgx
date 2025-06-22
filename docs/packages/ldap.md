@@ -1,11 +1,11 @@
-# ldap
+# openldap.org
 
 > Open source suite of directory software
 
 ## Package Information
 
-- **Domain**: `ldap`
-- **Name**: `ldap`
+- **Domain**: `openldap.org`
+- **Name**: `openldap.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openldap.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +openldap.org -- $SHELL -i
+launchpad install +openldap.org -- $SHELL -i
 ```
 
 ## Programs
@@ -35,7 +35,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+openldap.org -- $SHELL -i`
 - `ldap`
 
 ## Available Versions
@@ -55,7 +54,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx ldap@2.6.10
+sh <(curl https://pkgx.sh) +openldap.org@2.6.10 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,8 +62,7 @@ pkgx ldap@2.6.10
 This package depends on:
 
 - `openssl.org^1.1`
-- `linuxgithub.com/util-linux/util-linux`
-- `github.com/util-linux/util-linux`
+- `linux:github.com/util-linux/util-linux`
 
 ## Usage Examples
 

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install git2
+launchpad install libgit2.org
 ```
 
 ## Programs

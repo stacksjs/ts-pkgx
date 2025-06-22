@@ -5,7 +5,7 @@
  * @version `20250512.1.0` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +abseil.io -- $SHELL -i`
+ * @install `launchpad install abseil.io`
  *
  * @example
  * ```typescript
@@ -40,7 +40,7 @@ export const abseilioPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +abseil.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install abseil.io' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -69,6 +69,8 @@ export const abseilioPackage = {
     '20220623.2.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +abseil.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install abseil.io' as const,
 }
 
 export type AbseilioPackage = typeof abseilioPackage

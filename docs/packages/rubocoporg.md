@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install rubocop
+launchpad install rubocop.org
 ```
 
 ## Programs

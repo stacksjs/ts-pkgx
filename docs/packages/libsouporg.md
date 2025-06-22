@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libsoup.org -- $SHELL -i
+launchpad install libsoup.org
 ```
 
 ## Programs

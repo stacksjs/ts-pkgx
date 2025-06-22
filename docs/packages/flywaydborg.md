@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install flyway
+launchpad install flywaydb.org
 ```
 
 ## Programs

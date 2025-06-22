@@ -1,11 +1,11 @@
-# luajit
+# luajit.org
 
 > Mirror of the LuaJIT git repository
 
 ## Package Information
 
-- **Domain**: `luajit`
-- **Name**: `luajit`
+- **Domain**: `luajit.org`
+- **Name**: `luajit.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/luajit.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +luajit.org -- $SHELL -i
+launchpad install +luajit.org -- $SHELL -i
 ```
 
 ## Programs
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+luajit.org -- $SHELL -i`
 - `luajit`
 
 ## Available Versions
@@ -45,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx luajit@2.1.0
+sh <(curl https://pkgx.sh) +luajit.org@2.1.0 -- $SHELL -i
 ```
 
 ## Usage Examples

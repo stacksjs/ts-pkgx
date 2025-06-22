@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install jless
+launchpad install jless.io
 ```
 
 ## Programs

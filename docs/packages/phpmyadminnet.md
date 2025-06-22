@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +phpmyadmin.net -- $SHELL -i
+launchpad install phpmyadmin.net
 ```
 
 ## Programs

@@ -6,7 +6,7 @@
  * @version `2.4.63` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +apache.org/httpd -- $SHELL -i`
+ * @install `launchpad install apache.org/httpd`
  * @dependencies `apache.org/apr>=1.3.0`, `apache.org/apr-util>=1.3.0`, `github.com/google/brotli`, ... (+6 more)
  *
  * @example
@@ -43,7 +43,7 @@ export const apacheorghttpdPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +apache.org/httpd -- $SHELL -i' as const,
+  installCommand: 'launchpad install apache.org/httpd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -93,6 +93,8 @@ export const apacheorghttpdPackage = {
     '2.4.57',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/httpd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install apache.org/httpd' as const,
 }
 
 export type ApacheorghttpdPackage = typeof apacheorghttpdPackage

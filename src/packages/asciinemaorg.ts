@@ -78,6 +78,8 @@ export const asciinemaPackage = {
   aliases: [
     'asciinema',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) asciinema -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install asciinema' as const,
 }
 
 export type AsciinemaPackage = typeof asciinemaPackage

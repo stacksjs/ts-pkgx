@@ -110,6 +110,8 @@ export const gitqlPackage = {
   aliases: [
     'gitql',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gitql -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gitql' as const,
 }
 
 export type GitqlPackage = typeof gitqlPackage

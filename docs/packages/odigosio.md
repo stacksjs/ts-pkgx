@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install odigos
+launchpad install odigos.io
 ```
 
 ## Programs

@@ -5,7 +5,7 @@
  * @version `1.28.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +cairographics.org/pycairo -- $SHELL -i`
+ * @install `launchpad install +cairographics.org/pycairo`
  * @dependencies `cairographics.org`
  *
  * @example
@@ -41,7 +41,7 @@ export const cairographicsorgpycairoPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +cairographics.org/pycairo -- $SHELL -i' as const,
+  installCommand: 'launchpad install +cairographics.org/pycairo' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -65,6 +65,8 @@ export const cairographicsorgpycairoPackage = {
     '1.24.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cairographics.org/pycairo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install +cairographics.org/pycairo' as const,
 }
 
 export type CairographicsorgpycairoPackage = typeof cairographicsorgpycairoPackage

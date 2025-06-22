@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install sftpgo
+launchpad install sftpgo.com
 ```
 
 ## Programs

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `macfusegithub.io`
+- **Domain**: `macfuse.github.io`
 - **Name**: `macfuse.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/macfuse.github.io/package.yml)
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +macfusegithub.io@4.10.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +macfuse.github.io@4.10.2 -- $SHELL -i
 ```
 
 ## Usage Examples

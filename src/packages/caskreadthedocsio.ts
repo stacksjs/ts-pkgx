@@ -80,6 +80,8 @@ export const caskPackage = {
   aliases: [
     'cask',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cask -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cask' as const,
 }
 
 export type CaskPackage = typeof caskPackage

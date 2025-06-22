@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install dgraph
+launchpad install dgraph.io
 ```
 
 ## Programs

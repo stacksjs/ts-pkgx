@@ -104,6 +104,8 @@ export const streamlinkPackage = {
   aliases: [
     'streamlink',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) streamlink -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install streamlink' as const,
 }
 
 export type StreamlinkPackage = typeof streamlinkPackage

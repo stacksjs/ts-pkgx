@@ -78,6 +78,8 @@ export const bcryptPackage = {
   aliases: [
     'bcrypt',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bcrypt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bcrypt' as const,
 }
 
 export type BcryptPackage = typeof bcryptPackage

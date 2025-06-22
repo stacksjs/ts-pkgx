@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +ansible.com -- $SHELL -i
+launchpad install ansible
 ```
 
 ## Programs

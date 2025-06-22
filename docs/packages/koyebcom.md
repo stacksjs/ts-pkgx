@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install koyeb
+launchpad install koyeb.com
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install nx
+launchpad install nx.dev
 ```
 
 ## Programs

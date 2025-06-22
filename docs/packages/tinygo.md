@@ -1,11 +1,11 @@
-# tinygo
+# tinygo.org
 
 > Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM.
 
 ## Package Information
 
-- **Domain**: `tinygo`
-- **Name**: `tinygo`
+- **Domain**: `tinygo.org`
+- **Name**: `tinygo.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tinygo.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) tinygo
+launchpad install tinygo
 ```
 
 ## Programs
@@ -31,20 +31,20 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `0.37.0`, `0.36.0`, `0.35.0`, `0.34.0`, `0.33.0`
-- `0.32.0`, `0.31.2`
+- `0.38.0`, `0.37.0`, `0.36.0`, `0.35.0`, `0.34.0`
+- `0.33.0`, `0.32.0`, `0.31.2`
 
 </details>
 
-**Latest Version**: `0.37.0`
+**Latest Version**: `0.38.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx tinygo@0.37.0
+sh <(curl https://pkgx.sh) +tinygo.org@0.38.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -55,9 +55,9 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with tinygo:
+These packages work well with tinygo.org:
 
-- `llvm.org`
+- [`llvm.org`](llvmorg.md) - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
 
 ## Usage Examples
 

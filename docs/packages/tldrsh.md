@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install tldr
+launchpad install tldr.sh
 ```
 
 ## Programs

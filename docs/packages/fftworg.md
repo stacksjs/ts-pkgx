@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +fftw.org -- $SHELL -i
+launchpad install fftw.org
 ```
 
 ## Programs

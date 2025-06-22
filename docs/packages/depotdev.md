@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install depot
+launchpad install depot.dev
 ```
 
 ## Programs

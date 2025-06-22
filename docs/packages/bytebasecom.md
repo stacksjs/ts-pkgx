@@ -49,7 +49,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +bytebase.com@3.7.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) bytebase -- $SHELL -i
 ```
 
 ## Dependencies

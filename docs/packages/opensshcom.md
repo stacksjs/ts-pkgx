@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +openssh.com -- $SHELL -i
+launchpad install openssh.com
 ```
 
 ## Programs

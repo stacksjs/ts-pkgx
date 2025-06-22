@@ -88,6 +88,8 @@ export const arduinocliPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) arduino-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install arduino-cli' as const,
 }
 
 export type ArduinocliPackage = typeof arduinocliPackage

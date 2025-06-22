@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pixi
+launchpad install prefix.dev
 ```
 
 ## Programs

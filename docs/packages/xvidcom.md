@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +xvid.com -- $SHELL -i
+launchpad install xvid.com
 ```
 
 ## Programs

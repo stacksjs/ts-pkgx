@@ -5,7 +5,7 @@
  * @version `2025.6.15` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +certifi.io/python-certifi -- $SHELL -i`
+ * @install `launchpad install +certifi.io/python-certifi`
  * @dependencies `python.org~3.11`
  *
  * @example
@@ -41,7 +41,7 @@ export const certifiiopythoncertifiPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +certifi.io/python-certifi -- $SHELL -i' as const,
+  installCommand: 'launchpad install +certifi.io/python-certifi' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -66,6 +66,8 @@ export const certifiiopythoncertifiPackage = {
     '2024.2.2',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +certifi.io/python-certifi -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install +certifi.io/python-certifi' as const,
 }
 
 export type CertifiiopythoncertifiPackage = typeof certifiiopythoncertifiPackage

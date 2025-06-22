@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install s3cmd
+launchpad install s3tools.org
 ```
 
 ## Programs

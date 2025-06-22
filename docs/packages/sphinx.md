@@ -1,11 +1,11 @@
-# sphinx
+# sphinx-doc.org
 
 > Tool to create intelligent and beautiful documentation
 
 ## Package Information
 
-- **Domain**: `sphinx`
-- **Name**: `sphinx`
+- **Domain**: `sphinx-doc.org`
+- **Name**: `sphinx-doc.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sphinx-doc.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +sphinx-doc.org -- $SHELL -i
+launchpad install +sphinx-doc.org -- $SHELL -i
 ```
 
 ## Programs
@@ -29,7 +29,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+sphinx-doc.org -- $SHELL -i`
 - `sphinx`
 
 ## Available Versions
@@ -55,7 +54,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx sphinx@8.2.3
+sh <(curl https://pkgx.sh) +sphinx-doc.org@8.2.3 -- $SHELL -i
 ```
 
 ## Dependencies

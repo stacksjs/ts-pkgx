@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +grpc.io -- $SHELL -i
+launchpad install grpc.io
 ```
 
 ## Programs

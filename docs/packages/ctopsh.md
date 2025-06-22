@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install ctop
+launchpad install ctop.sh
 ```
 
 ## Programs

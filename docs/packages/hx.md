@@ -1,11 +1,11 @@
-# hx
+# helix-editor.com
 
 > A post-modern modal text editor.
 
 ## Package Information
 
-- **Domain**: `hx`
-- **Name**: `hx`
+- **Domain**: `helix-editor.com`
+- **Name**: `helix-editor.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/helix-editor.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) hx
+launchpad install hx
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx hx@25.1.1
+sh <(curl https://pkgx.sh) +helix-editor.com@25.1.1 -- $SHELL -i
 ```
 
 ## Usage Examples

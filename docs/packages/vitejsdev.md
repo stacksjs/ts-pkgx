@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install vite
+launchpad install vitejs.dev
 ```
 
 ## Programs

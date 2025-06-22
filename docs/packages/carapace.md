@@ -1,11 +1,11 @@
-# carapace
+# carapace.sh
 
 > Multi-shell multi-command argument completer
 
 ## Package Information
 
-- **Domain**: `carapace`
-- **Name**: `carapace`
+- **Domain**: `carapace.sh`
+- **Name**: `carapace.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/carapace.sh/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) carapace
+launchpad install carapace
 ```
 
 ## Programs
@@ -31,21 +31,21 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 11 versions</summary>
+<summary>Show all 12 versions</summary>
 
-- `1.3.2`, `1.3.1`, `1.3.0`, `1.2.1`, `1.2.0`
-- `1.1.1`, `1.1.0`, `1.0.7`, `1.0.6`, `1.0.5`
-- `1.0.4`
+- `1.3.3`, `1.3.2`, `1.3.1`, `1.3.0`, `1.2.1`
+- `1.2.0`, `1.1.1`, `1.1.0`, `1.0.7`, `1.0.6`
+- `1.0.5`, `1.0.4`
 
 </details>
 
-**Latest Version**: `1.3.2`
+**Latest Version**: `1.3.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx carapace@1.3.2
+sh <(curl https://pkgx.sh) carapace -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -6,7 +6,7 @@
  * @version `1.4.1` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +apptainer.org -- $SHELL -i`
+ * @install `launchpad install apptainer.org`
  * @dependencies `github.com/seccomp/libseccomp@2`, `curl.se/ca-certs`
  * @companions `github.com/plougher/squashfs-tools`
  *
@@ -44,7 +44,7 @@ export const apptainerorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +apptainer.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install apptainer.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,6 +82,8 @@ export const apptainerorgPackage = {
     '1.3.3',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apptainer.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install apptainer.org' as const,
 }
 
 export type ApptainerorgPackage = typeof apptainerorgPackage

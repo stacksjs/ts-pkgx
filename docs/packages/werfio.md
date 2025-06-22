@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install werf
+launchpad install werf.io
 ```
 
 ## Programs

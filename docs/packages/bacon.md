@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `bacon`
+- **Domain**: `dystroy.org/bacon`
 - **Name**: `bacon`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dystroy.org/bacon/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) bacon
+launchpad install bacon
 ```
 
 ## Programs
@@ -22,37 +22,30 @@ This package provides the following executable programs:
 
 - `bacon`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `bacon`
-
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `3.14.0`, `3.13.0`, `3.12.0`, `3.11.0`, `3.10.0`
-- `3.9.1`, `3.9.0`, `3.8.0`
+- `3.16.0`, `3.15.0`, `3.14.0`, `3.13.0`, `3.12.0`
+- `3.11.0`, `3.10.0`, `3.9.1`, `3.9.0`, `3.8.0`
 
 </details>
 
-**Latest Version**: `3.14.0`
+**Latest Version**: `3.16.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx bacon@3.14.0
+sh <(curl https://pkgx.sh) +dystroy.org/bacon@3.16.0 -- $SHELL -i
 ```
 
 ## Dependencies
 
 This package depends on:
 
-- `linuxalsa-project.org/alsa-lib`
-- `alsa-project.org/alsa-lib`
+- `linux:alsa-project.org/alsa-lib`
 
 ## Usage Examples
 

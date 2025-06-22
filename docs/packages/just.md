@@ -1,11 +1,11 @@
-# just
+# just.systems
 
 > Handy way to save and run project-specific commands
 
 ## Package Information
 
-- **Domain**: `just`
-- **Name**: `just`
+- **Domain**: `just.systems`
+- **Name**: `just.systems`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/just.systems/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) just
+launchpad install just
 ```
 
 ## Programs
@@ -50,7 +50,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx just@1.40.0
+sh <(curl https://pkgx.sh) +just.systems@1.40.0 -- $SHELL -i
 ```
 
 ## Usage Examples

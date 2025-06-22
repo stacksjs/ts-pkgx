@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install litecli
+launchpad install litecli.com
 ```
 
 ## Programs

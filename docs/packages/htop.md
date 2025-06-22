@@ -1,11 +1,11 @@
-# htop
+# htop.dev
 
 > Improved top (interactive process viewer)
 
 ## Package Information
 
-- **Domain**: `htop`
-- **Name**: `htop`
+- **Domain**: `htop.dev`
+- **Name**: `htop.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/htop.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) htop
+launchpad install htop
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx htop@3.4.1
+sh <(curl https://pkgx.sh) +htop.dev@3.4.1 -- $SHELL -i
 ```
 
 ## Dependencies

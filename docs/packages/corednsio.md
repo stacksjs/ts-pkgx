@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install coredns
+launchpad install coredns.io
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +giflib.sourceforge.io -- $SHELL -i
+launchpad install giflibsourceforge.io
 ```
 
 ## Programs

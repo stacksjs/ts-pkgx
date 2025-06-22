@@ -1,11 +1,11 @@
-# argbash
+# argbash.dev
 
 > Bash argument parsing code generator
 
 ## Package Information
 
-- **Domain**: `argba.sh`
-- **Name**: `argbash`
+- **Domain**: `argbash.dev`
+- **Name**: `argbash.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/argbash.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +argbash.dev -- $SHELL -i
+launchpad install argbash
 ```
 
 ## Programs
@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `argbash`
 - `argbash-init`
 - `argbash-1to2`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `argbash`
 
 ## Available Versions
 
@@ -39,7 +45,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +argba.sh@2.11.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +argbash.dev@2.11.0 -- $SHELL -i
 ```
 
 ## Dependencies

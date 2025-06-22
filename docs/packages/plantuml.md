@@ -1,11 +1,11 @@
-# plantuml
+# plantuml.com
 
 > Generate diagrams from textual description
 
 ## Package Information
 
-- **Domain**: `plantuml`
-- **Name**: `plantuml`
+- **Domain**: `plantuml.com`
+- **Name**: `plantuml.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/plantuml.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) plantuml
+launchpad install plantuml
 ```
 
 ## Programs
@@ -31,22 +31,22 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 16 versions</summary>
+<summary>Show all 17 versions</summary>
 
-- `1.2025.2`, `1.2025.1`, `1.2025.0`, `1.2024.8`, `1.2024.7`
-- `1.2024.6`, `1.2024.5`, `1.2024.4`, `1.2024.3`, `1.2024.2`
-- `1.2024.1`, `1.2024.0`, `1.2023.13`, `1.2023.12`, `1.2023.11`
-- `1.2023.10`
+- `1.2025.3`, `1.2025.2`, `1.2025.1`, `1.2025.0`, `1.2024.8`
+- `1.2024.7`, `1.2024.6`, `1.2024.5`, `1.2024.4`, `1.2024.3`
+- `1.2024.2`, `1.2024.1`, `1.2024.0`, `1.2023.13`, `1.2023.12`
+- `1.2023.11`, `1.2023.10`
 
 </details>
 
-**Latest Version**: `1.2025.2`
+**Latest Version**: `1.2025.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx plantuml@1.2025.2
+sh <(curl https://pkgx.sh) +plantuml.com@1.2025.3 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -74,6 +74,8 @@ export const telnetPackage = {
   aliases: [
     'telnet',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) telnet -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install telnet' as const,
 }
 
 export type TelnetPackage = typeof telnetPackage

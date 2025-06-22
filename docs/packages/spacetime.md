@@ -1,11 +1,11 @@
-# spacetime
+# spacetimedb.com
 
 > Multiplayer at the speed of light
 
 ## Package Information
 
-- **Domain**: `spacetime`
-- **Name**: `spacetime`
+- **Domain**: `spacetimedb.com`
+- **Name**: `spacetimedb.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/spacetimedb.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) spacetime
+launchpad install spacetime
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx spacetime@2023.12.8
+sh <(curl https://pkgx.sh) +spacetimedb.com@2023.12.8 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +etcd.io -- $SHELL -i
+launchpad install etcd.io
 ```
 
 ## Programs

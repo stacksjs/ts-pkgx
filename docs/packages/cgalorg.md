@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +cgal.org -- $SHELL -i
+launchpad install +cgal.org
 ```
 
 ## Programs

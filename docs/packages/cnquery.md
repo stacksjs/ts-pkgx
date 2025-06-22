@@ -1,11 +1,11 @@
-# cnquery
+# cnquery.io
 
 > open source, cloud-native, graph-based asset inventory
 
 ## Package Information
 
-- **Domain**: `cnquery`
-- **Name**: `cnquery`
+- **Domain**: `cnquery.io`
+- **Name**: `cnquery.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cnquery.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) cnquery
+launchpad install cnquery
 ```
 
 ## Programs
@@ -31,8 +31,9 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 143 versions</summary>
+<summary>Show all 148 versions</summary>
 
+- `11.59.0`, `11.58.0`, `11.57.2`, `11.57.1`, `11.57.0`
 - `11.56.0`, `11.55.0`, `11.54.0`, `11.53.2`, `11.53.1`
 - `11.53.0`, `11.52.0`, `11.51.2`, `11.51.1`, `11.51.0`
 - `11.50.0`, `11.49.0`, `11.48.0`, `11.47.1`, `11.47.0`
@@ -65,13 +66,13 @@ This package can also be accessed using these aliases:
 
 </details>
 
-**Latest Version**: `11.56.0`
+**Latest Version**: `11.59.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx cnquery@11.56.0
+sh <(curl https://pkgx.sh) +cnquery.io@11.59.0 -- $SHELL -i
 ```
 
 ## Usage Examples

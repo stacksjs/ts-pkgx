@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install oh-my-posh
+launchpad install ohmyposh.dev
 ```
 
 ## Programs

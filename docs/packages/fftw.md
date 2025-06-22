@@ -1,11 +1,11 @@
-# fftw
+# fftw.org
 
 > C routines to compute the Discrete Fourier Transform
 
 ## Package Information
 
-- **Domain**: `fftw`
-- **Name**: `fftw`
+- **Domain**: `fftw.org`
+- **Name**: `fftw.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fftw.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +fftw.org -- $SHELL -i
+launchpad install +fftw.org -- $SHELL -i
 ```
 
 ## Programs
@@ -29,7 +29,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+fftw.org -- $SHELL -i`
 - `fftw`
 
 ## Available Versions
@@ -47,7 +46,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx fftw@3.3.10
+sh <(curl https://pkgx.sh) +fftw.org@3.3.10 -- $SHELL -i
 ```
 
 ## Dependencies

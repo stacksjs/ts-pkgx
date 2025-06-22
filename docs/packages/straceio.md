@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install strace
+launchpad install strace.io
 ```
 
 ## Programs

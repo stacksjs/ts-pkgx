@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install rebar3
+launchpad install rebar3.org
 ```
 
 ## Programs

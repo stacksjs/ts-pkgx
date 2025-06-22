@@ -1,11 +1,11 @@
-# stripe
+# stripe.com
 
 > A command-line tool for Stripe
 
 ## Package Information
 
-- **Domain**: `stripe`
-- **Name**: `stripe`
+- **Domain**: `stripe.com`
+- **Name**: `stripe.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/stripe.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) stripe
+launchpad install stripe
 ```
 
 ## Programs
@@ -53,7 +53,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx stripe@1.27.0
+sh <(curl https://pkgx.sh) +stripe.com@1.27.0 -- $SHELL -i
 ```
 
 ## Usage Examples

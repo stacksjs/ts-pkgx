@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libcxxllvm.org`
+- **Domain**: `libcxx.llvm.org`
 - **Name**: `libcxx.llvm.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libcxx.llvm.org/package.yml)
@@ -45,7 +45,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +libcxxllvm.org@20.1.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) +libcxx.llvm.org@20.1.7 -- $SHELL -i
 ```
 
 ## Usage Examples

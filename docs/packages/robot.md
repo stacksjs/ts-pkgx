@@ -1,11 +1,11 @@
-# robot
+# robotframework.org
 
 > Generic automation framework for acceptance testing and RPA
 
 ## Package Information
 
-- **Domain**: `robot`
-- **Name**: `robot`
+- **Domain**: `robotframework.org`
+- **Name**: `robotframework.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/robotframework.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) robot
+launchpad install robot
 ```
 
 ## Programs
@@ -31,19 +31,19 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 2 versions</summary>
+<summary>Show all 3 versions</summary>
 
-- `7.3.0`, `7.2.2`
+- `7.3.1`, `7.3.0`, `7.2.2`
 
 </details>
 
-**Latest Version**: `7.3.0`
+**Latest Version**: `7.3.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx robot@7.3.0
+sh <(curl https://pkgx.sh) +robotframework.org@7.3.1 -- $SHELL -i
 ```
 
 ## Dependencies

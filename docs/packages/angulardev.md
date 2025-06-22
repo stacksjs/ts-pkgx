@@ -64,7 +64,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +angular.dev@20.0.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) ng -- $SHELL -i
 ```
 
 ## Dependencies

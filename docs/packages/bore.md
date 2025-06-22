@@ -1,11 +1,11 @@
-# bore
+# bore.pub
 
 > Modern, simple TCP tunnel in Rust that exposes local ports to a remote server
 
 ## Package Information
 
-- **Domain**: `bore`
-- **Name**: `bore`
+- **Domain**: `bore.pub`
+- **Name**: `bore.pub`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bore.pub/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) bore
+launchpad install bore
 ```
 
 ## Programs
@@ -31,19 +31,19 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `0.5.3`, `0.5.2`, `0.5.1`, `0.5.0`
+- `0.6.0`, `0.5.3`, `0.5.2`, `0.5.1`, `0.5.0`
 
 </details>
 
-**Latest Version**: `0.5.3`
+**Latest Version**: `0.6.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx bore@0.5.3
+sh <(curl https://pkgx.sh) bore -- $SHELL -i
 ```
 
 ## Usage Examples

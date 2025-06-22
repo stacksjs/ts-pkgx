@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +plocate.sesse.net -- $SHELL -i
+launchpad install plocatesesse.net
 ```
 
 ## Programs

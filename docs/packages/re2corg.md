@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install re2c
+launchpad install re2c.org
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +bitcoin.org -- $SHELL -i
+launchpad install +bitcoin.org
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install xpra
+launchpad install xpra.org
 ```
 
 ## Programs

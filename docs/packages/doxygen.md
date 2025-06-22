@@ -1,11 +1,11 @@
-# doxygen
+# doxygen.nl
 
 > Generate documentation for several programming languages
 
 ## Package Information
 
-- **Domain**: `doxygen`
-- **Name**: `doxygen`
+- **Domain**: `doxygen.nl`
+- **Name**: `doxygen.nl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/doxygen.nl/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) doxygen
+launchpad install doxygen
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx doxygen@1.14.0
+sh <(curl https://pkgx.sh) +doxygen.nl@1.14.0 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +beyondgrep.com@3.9.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) ack -- $SHELL -i
 ```
 
 ## Dependencies

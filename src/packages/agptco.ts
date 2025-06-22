@@ -88,6 +88,8 @@ export const autogptPackage = {
   aliases: [
     'auto-gpt',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) auto-gpt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install auto-gpt' as const,
 }
 
 export type AutogptPackage = typeof autogptPackage

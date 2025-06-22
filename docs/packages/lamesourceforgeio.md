@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install lame
+launchpad install lamesourceforge.io
 ```
 
 ## Programs

@@ -45,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +buildpacks.io@0.38.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) pack -- $SHELL -i
 ```
 
 ## Usage Examples

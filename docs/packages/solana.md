@@ -1,11 +1,11 @@
-# solana
+# solana.com
 
 > Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces.
 
 ## Package Information
 
-- **Domain**: `solana`
-- **Name**: `solana`
+- **Domain**: `solana.com`
+- **Name**: `solana.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/solana.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +solana.com -- $SHELL -i
+launchpad install +solana.com -- $SHELL -i
 ```
 
 ## Programs
@@ -35,7 +35,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+solana.com -- $SHELL -i`
 - `solana`
 
 ## Available Versions
@@ -69,7 +68,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx solana@1.18.26
+sh <(curl https://pkgx.sh) +solana.com@1.18.26 -- $SHELL -i
 ```
 
 ## Dependencies

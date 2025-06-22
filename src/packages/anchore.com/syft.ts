@@ -109,6 +109,8 @@ export const syftPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) syft -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install syft' as const,
 }
 
 export type SyftPackage = typeof syftPackage

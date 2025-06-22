@@ -1,11 +1,11 @@
-# lame
+# lame.sourceforge.io
 
 > High quality MPEG Audio Layer III (MP3) encoder
 
 ## Package Information
 
-- **Domain**: `lame`
-- **Name**: `lame`
+- **Domain**: `lame.sourceforge.io`
+- **Name**: `lame.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lame.sourceforge.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) lame
+launchpad install lame
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx lame@3.100.0
+sh <(curl https://pkgx.sh) +lame.sourceforge.io@3.100.0 -- $SHELL -i
 ```
 
 ## Usage Examples

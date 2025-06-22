@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +mandoc.bsd.lv -- $SHELL -i
+launchpad install +mandoc.bsd.lv -- $SHELL -i
 ```
 
 ## Programs

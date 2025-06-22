@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pkgx
+launchpad install pkgx.sh
 ```
 
 ## Programs

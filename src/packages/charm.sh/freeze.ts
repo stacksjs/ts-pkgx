@@ -73,6 +73,8 @@ export const freezePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) freeze -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freeze' as const,
 }
 
 export type FreezePackage = typeof freezePackage

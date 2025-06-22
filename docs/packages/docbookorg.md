@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +docbook.org -- $SHELL -i
+launchpad install docbook.org
 ```
 
 ## Programs

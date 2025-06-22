@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install jumppad
+launchpad install jumppad.dev
 ```
 
 ## Programs

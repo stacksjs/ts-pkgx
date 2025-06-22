@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install kluctl
+launchpad install kluctl.io
 ```
 
 ## Programs

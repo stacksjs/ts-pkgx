@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libisl.sourceforge.io -- $SHELL -i
+launchpad install libislsourceforge.io
 ```
 
 ## Programs

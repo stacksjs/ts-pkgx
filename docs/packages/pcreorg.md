@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +pcre.org -- $SHELL -i
+launchpad install pcre.org
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install gm
+launchpad install graphicsmagick.org
 ```
 
 ## Programs

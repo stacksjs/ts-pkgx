@@ -1,11 +1,11 @@
-# node
+# nodejs.org
 
 > Platform built on V8 to build network applications
 
 ## Package Information
 
-- **Domain**: `node`
-- **Name**: `node`
+- **Domain**: `nodejs.org`
+- **Name**: `nodejs.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nodejs.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) node
+launchpad install node
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `node`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `node`
 
@@ -64,7 +70,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +node@24.2.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) node -- $SHELL -i
 ```
 
 ## Dependencies
@@ -74,12 +80,11 @@ This package depends on:
 - `unicode.org^71`
 - `openssl.org@1.1`
 - `zlib.net@1`
-- `linuxgnu.org/gcc/libstdcxx`
-- `gnu.org/gcc/libstdcxx`
+- `linux:gnu.org/gcc/libstdcxx`
 
 ## Related Packages
 
-These packages work well with node:
+These packages work well with nodejs.org:
 
 - [`npmjs.com`](npmjscom.md) - the package manager for JavaScript
 

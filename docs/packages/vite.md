@@ -1,11 +1,11 @@
-# vite
+# vitejs.dev
 
 > Next generation frontend tooling. It's fast!
 
 ## Package Information
 
-- **Domain**: `vite`
-- **Name**: `vite`
+- **Domain**: `vitejs.dev`
+- **Name**: `vitejs.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vitejs.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) vite
+launchpad install vite
 ```
 
 ## Programs
@@ -62,7 +62,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx vite@6.3.5
+sh <(curl https://pkgx.sh) +vitejs.dev@6.3.5 -- $SHELL -i
 ```
 
 ## Dependencies

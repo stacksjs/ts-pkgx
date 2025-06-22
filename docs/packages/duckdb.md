@@ -1,11 +1,11 @@
-# duckdb
+# duckdb.org
 
 > DuckDB is an analytical in-process SQL database management system
 
 ## Package Information
 
-- **Domain**: `duckdb`
-- **Name**: `duckdb`
+- **Domain**: `duckdb.org`
+- **Name**: `duckdb.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/duckdb.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) duckdb
+launchpad install duckdb
 ```
 
 ## Programs
@@ -31,22 +31,22 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 19 versions</summary>
+<summary>Show all 20 versions</summary>
 
-- `1.3.0`, `1.2.2`, `1.2.1`, `1.2.0`, `1.1.3`
-- `1.1.2`, `1.1.1`, `1.1.0`, `1.0.0`, `0.10.3`
-- `0.10.2`, `0.10.1`, `0.10.0`, `0.9.2`, `0.9.1`
-- `0.9.0`, `0.8.1`, `0.8.0`, `0.7.1`
+- `1.3.1`, `1.3.0`, `1.2.2`, `1.2.1`, `1.2.0`
+- `1.1.3`, `1.1.2`, `1.1.1`, `1.1.0`, `1.0.0`
+- `0.10.3`, `0.10.2`, `0.10.1`, `0.10.0`, `0.9.2`
+- `0.9.1`, `0.9.0`, `0.8.1`, `0.8.0`, `0.7.1`
 
 </details>
 
-**Latest Version**: `1.3.0`
+**Latest Version**: `1.3.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx duckdb@1.3.0
+sh <(curl https://pkgx.sh) +duckdb.org@1.3.1 -- $SHELL -i
 ```
 
 ## Usage Examples

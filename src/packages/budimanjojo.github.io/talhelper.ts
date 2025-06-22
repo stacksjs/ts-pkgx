@@ -117,6 +117,8 @@ export const talhelperPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) talhelper -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install talhelper' as const,
 }
 
 export type TalhelperPackage = typeof talhelperPackage

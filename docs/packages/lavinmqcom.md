@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +lavinmq.com -- $SHELL -i
+launchpad install lavinmq.com
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install mz
+launchpad install materialize.com
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install lz4
+launchpad install lz4.org
 ```
 
 ## Programs

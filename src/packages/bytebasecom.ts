@@ -116,6 +116,8 @@ export const bytebasePackage = {
   aliases: [
     'bytebase',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bytebase -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bytebase' as const,
 }
 
 export type BytebasePackage = typeof bytebasePackage

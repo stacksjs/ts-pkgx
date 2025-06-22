@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +musl.libc.org -- $SHELL -i
+launchpad install musllibc.org
 ```
 
 ## Programs

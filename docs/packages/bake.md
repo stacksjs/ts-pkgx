@@ -1,11 +1,11 @@
-# bake
+# bake-rs
 
 > Simple and easy to use "script runner" written in Rust.
 
 ## Package Information
 
-- **Domain**: `bake`
-- **Name**: `bake`
+- **Domain**: `crates.io/bake-rs`
+- **Name**: `bake-rs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/bake-rs/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) bake
+launchpad install bake
 ```
 
 ## Programs
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `bake`
-- `bake-rs`
 
 ## Available Versions
 
@@ -44,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx bake@1.2.0
+sh <(curl https://pkgx.sh) +crates.io/bake-rs@1.2.0 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -1,11 +1,11 @@
-# xkbcli
+# xkbcommon.org
 
 > keymap handling library for toolkits and window systems
 
 ## Package Information
 
-- **Domain**: `xkbcli`
-- **Name**: `xkbcli`
+- **Domain**: `xkbcommon.org`
+- **Name**: `xkbcommon.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xkbcommon.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) xkbcli
+launchpad install xkbcli
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx xkbcli@1.10.0
+sh <(curl https://pkgx.sh) +xkbcommon.org@1.10.0 -- $SHELL -i
 ```
 
 ## Dependencies

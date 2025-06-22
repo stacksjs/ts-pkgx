@@ -78,6 +78,8 @@ export const changiePackage = {
   aliases: [
     'changie',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) changie -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install changie' as const,
 }
 
 export type ChangiePackage = typeof changiePackage

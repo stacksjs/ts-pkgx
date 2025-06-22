@@ -1,11 +1,11 @@
-# asciidoctor
+# asciidoctor.org
 
 > :gem: A fast, open source text processor and publishing toolchain, written in Ruby, for converting AsciiDoc content to HTML 5, DocBook 5, and other formats.
 
 ## Package Information
 
-- **Domain**: `asciidoctor`
-- **Name**: `asciidoctor`
+- **Domain**: `asciidoctor.org`
+- **Name**: `asciidoctor.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/asciidoctor.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) asciidoctor
+launchpad install asciidoctor
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx asciidoctor@2.0.23
+sh <(curl https://pkgx.sh) asciidoctor -- $SHELL -i
 ```
 
 ## Dependencies

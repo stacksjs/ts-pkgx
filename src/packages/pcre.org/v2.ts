@@ -6,7 +6,7 @@
  * @version `10.44.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +pcre.org/v2 -- $SHELL -i`
+ * @install `launchpad install pcre2`
  * @aliases `pcre2`
  * @dependencies `sourceware.org/bzip2@1`, `zlib.net@1`
  *
@@ -48,7 +48,7 @@ export const pcre2Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pcre.org/v2 -- $SHELL -i' as const,
+  installCommand: 'launchpad install pcre2' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -83,6 +83,8 @@ export const pcre2Package = {
   aliases: [
     'pcre2',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pcre.org/v2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pcre2' as const,
 }
 
 export type Pcre2Package = typeof pcre2Package

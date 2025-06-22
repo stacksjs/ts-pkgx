@@ -1,11 +1,11 @@
-# nomad
+# nomadproject.io
 
 > Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.
 
 ## Package Information
 
-- **Domain**: `nomad`
-- **Name**: `nomad`
+- **Domain**: `nomadproject.io`
+- **Name**: `nomadproject.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nomadproject.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) nomad
+launchpad install nomad
 ```
 
 ## Programs
@@ -31,21 +31,21 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 13 versions</summary>
+<summary>Show all 14 versions</summary>
 
-- `1.10.1`, `1.10.0`, `1.9.7`, `1.9.6`, `1.9.5`
-- `1.9.4`, `1.9.3`, `1.9.2`, `1.9.1`, `1.9.0`
-- `1.8.4`, `1.8.3`, `1.8.2`
+- `1.10.2`, `1.10.1`, `1.10.0`, `1.9.7`, `1.9.6`
+- `1.9.5`, `1.9.4`, `1.9.3`, `1.9.2`, `1.9.1`
+- `1.9.0`, `1.8.4`, `1.8.3`, `1.8.2`
 
 </details>
 
-**Latest Version**: `1.10.1`
+**Latest Version**: `1.10.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx nomad@1.10.1
+sh <(curl https://pkgx.sh) +nomadproject.io@1.10.2 -- $SHELL -i
 ```
 
 ## Usage Examples

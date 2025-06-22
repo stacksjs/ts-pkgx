@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +dart.dev -- $SHELL -i
+launchpad install dart.dev
 ```
 
 ## Programs

@@ -1,19 +1,19 @@
-# yarn
+# classic.yarnpkg.com
 
-> 📦🐈 Active development trunk for Yarn ⚒
+> The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
 
 ## Package Information
 
-- **Domain**: `yarn`
-- **Name**: `yarn`
+- **Domain**: `classic.yarnpkg.com`
+- **Name**: `classic.yarnpkg.com`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/yarnpkg.com/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/classic.yarnpkg.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i
+launchpad install +classic.yarnpkg.com
 ```
 
 ## Programs
@@ -27,39 +27,31 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+yarnpkg.com -- $SHELL -i`
 - `yarn`
 
 ## Available Versions
 
 <details>
-<summary>Show all 39 versions</summary>
+<summary>Show all 4 versions</summary>
 
-- `4.9.1`, `4.9.0`, `4.8.1`, `4.8.0`, `4.7.0`
-- `4.6.0`, `4.5.3`, `4.5.2`, `4.5.1`, `4.5.0`
-- `4.4.1`, `4.4.0`, `4.3.1`, `4.3.0`, `4.2.2`
-- `4.2.1`, `4.2.0`, `4.1.1`, `4.1.0`, `4.0.2`
-- `4.0.1`, `4.0.0`, `3.8.7`, `3.8.6`, `3.8.5`
-- `3.8.4`, `3.8.3`, `3.8.2`, `3.8.1`, `3.8.0`
-- `3.7.0`, `3.6.4`, `3.6.3`, `3.6.2`, `3.6.1`
-- `3.6.0`, `3.5.1`, `3.5.0`, `3.4.1`
+- `1.22.22`, `1.22.21`, `1.22.20`, `1.22.19`
 
 </details>
 
-**Latest Version**: `4.9.1`
+**Latest Version**: `1.22.22`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx yarn@4.9.1
+sh <(curl https://pkgx.sh) +classic.yarnpkg.com@1.22.22 -- $SHELL -i
 ```
 
 ## Dependencies
 
 This package depends on:
 
-- `nodejs.org`
+- `nodejs.org>=5`
 
 ## Usage Examples
 
@@ -76,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/yarnpkg.com/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/classic.yarnpkg.com/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

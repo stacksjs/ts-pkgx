@@ -1,11 +1,11 @@
-# zig
+# ziglang.org
 
 > General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
 
 ## Package Information
 
-- **Domain**: `zig`
-- **Name**: `zig`
+- **Domain**: `ziglang.org`
+- **Name**: `ziglang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ziglang.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) zig
+launchpad install zig
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `zig`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `zig`
 
@@ -38,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +zig@0.14.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +ziglang.org@0.14.1 -- $SHELL -i
 ```
 
 ## Usage Examples

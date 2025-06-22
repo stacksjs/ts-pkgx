@@ -51,7 +51,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +arkade.dev@0.11.39 -- $SHELL -i
+sh <(curl https://pkgx.sh) arkade -- $SHELL -i
 ```
 
 ## Usage Examples

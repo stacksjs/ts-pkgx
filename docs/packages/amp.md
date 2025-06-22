@@ -1,11 +1,11 @@
-# amp
+# amp.rs
 
 > A complete text editor for your terminal.
 
 ## Package Information
 
-- **Domain**: `amp`
-- **Name**: `amp`
+- **Domain**: `amp.rs`
+- **Name**: `amp.rs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/amp.rs/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) amp
+launchpad install amp
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx amp@0.7.1
+sh <(curl https://pkgx.sh) amp -- $SHELL -i
 ```
 
 ## Dependencies
@@ -52,8 +52,7 @@ This package depends on:
 
 - `zlib.net@1`
 - `libgit2.org@1`
-- `linuxopenssl.org@1.1`
-- `openssl.org@1.1`
+- `linux:openssl.org@1.1`
 
 ## Usage Examples
 

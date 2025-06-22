@@ -1,11 +1,11 @@
-# nano
+# nano-editor.org
 
 > Free (GNU) replacement for the Pico text editor
 
 ## Package Information
 
-- **Domain**: `nano`
-- **Name**: `nano`
+- **Domain**: `nano-editor.org`
+- **Name**: `nano-editor.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nano-editor.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) nano
+launchpad install nano
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx nano@8.0.0
+sh <(curl https://pkgx.sh) +nano-editor.org@8.0.0 -- $SHELL -i
 ```
 
 ## Dependencies

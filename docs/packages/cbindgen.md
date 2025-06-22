@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `cbindgen`
+- **Domain**: `mozilla.org/cbindgen`
 - **Name**: `cbindgen`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mozilla.org/cbindgen/package.yml)
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) cbindgen
+launchpad install cbindgen
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `cbindgen`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `cbindgen`
 
@@ -43,15 +37,14 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx cbindgen@0.29.0
+sh <(curl https://pkgx.sh) +mozilla.org/cbindgen@0.29.0 -- $SHELL -i
 ```
 
 ## Dependencies
 
 This package depends on:
 
-- `linuxllvm.org`
-- `llvm.org`
+- `linux:llvm.org`
 
 ## Usage Examples
 

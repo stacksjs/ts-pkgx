@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install fluentci
+launchpad install fluentci.io
 ```
 
 ## Programs

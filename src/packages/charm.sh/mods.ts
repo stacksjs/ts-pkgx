@@ -83,6 +83,8 @@ export const modsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mods -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mods' as const,
 }
 
 export type ModsPackage = typeof modsPackage

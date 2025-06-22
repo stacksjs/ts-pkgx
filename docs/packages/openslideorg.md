@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +openslide.org -- $SHELL -i
+launchpad install openslide.org
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +rsync.samba.org -- $SHELL -i
+launchpad install rsyncsamba.org
 ```
 
 ## Programs

@@ -106,6 +106,8 @@ export const samPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sam -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sam' as const,
 }
 
 export type SamPackage = typeof samPackage

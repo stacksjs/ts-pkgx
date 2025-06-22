@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install kube-linter
+launchpad install kubelinter.io
 ```
 
 ## Programs

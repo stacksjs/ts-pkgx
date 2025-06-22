@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `liblqrwikidot.com`
+- **Domain**: `liblqr.wikidot.com`
 - **Name**: `liblqr.wikidot.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/liblqr.wikidot.com/package.yml)
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +liblqrwikidot.com@0.4.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) +liblqr.wikidot.com@0.4.3 -- $SHELL -i
 ```
 
 ## Dependencies

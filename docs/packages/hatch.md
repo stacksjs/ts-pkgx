@@ -1,11 +1,11 @@
-# hatch
+# hatch.pypa.io
 
 > Modern, extensible Python project management
 
 ## Package Information
 
-- **Domain**: `hatch`
-- **Name**: `hatch`
+- **Domain**: `hatch.pypa.io`
+- **Name**: `hatch.pypa.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hatch.pypa.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) hatch
+launchpad install hatch
 ```
 
 ## Programs
@@ -46,7 +46,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx hatch@1.14.1
+sh <(curl https://pkgx.sh) +hatch.pypa.io@1.14.1 -- $SHELL -i
 ```
 
 ## Dependencies

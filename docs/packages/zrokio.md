@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +zrok.io -- $SHELL -i
+launchpad install zrok.io
 ```
 
 ## Programs

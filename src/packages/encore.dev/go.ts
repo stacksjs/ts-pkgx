@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install encore-go`
- * @aliases `encore-go`
+ * @name `encore-go`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.encorego
  * // Or access via domain
  * const samePkg = pantry.encoredevgo
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "go"
+ * console.log(pkg.name)        // "encore-go"
  * console.log(pkg.description) // "Encore's rolling fork of Go with added automati..."
  * console.log(pkg.programs)    // ["encore-go"]
  * console.log(pkg.versions[0]) // "1.23.0" (latest)
@@ -32,7 +32,7 @@ export const encoregoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'go' as const,
+  name: 'encore-go' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -82,9 +82,9 @@ export const encoregoPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'encore-go',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) encore-go -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install encore-go' as const,
 }
 
 export type EncoregoPackage = typeof encoregoPackage

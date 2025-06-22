@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nex`
+- **Domain**: `github.com/blynn/nex`
 - **Name**: `nex`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/blynn/nex/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) nex
+launchpad install nex
 ```
 
 ## Programs
@@ -21,13 +21,6 @@ sh <(curl https://pkgx.sh) nex
 This package provides the following executable programs:
 
 - `nex`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `nex`
-- `blynn/nex`
 
 ## Available Versions
 
@@ -44,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx nex@2021.3.30
+sh <(curl https://pkgx.sh) +github.com/blynn/nex@2021.3.30 -- $SHELL -i
 ```
 
 ## Usage Examples

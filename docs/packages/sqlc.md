@@ -1,11 +1,11 @@
-# sqlc
+# sqlc.dev
 
 > Generate type-safe code from SQL
 
 ## Package Information
 
-- **Domain**: `sqlc`
-- **Name**: `sqlc`
+- **Domain**: `sqlc.dev`
+- **Name**: `sqlc.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sqlc.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) sqlc
+launchpad install sqlc
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx sqlc@1.29.0
+sh <(curl https://pkgx.sh) +sqlc.dev@1.29.0 -- $SHELL -i
 ```
 
 ## Usage Examples

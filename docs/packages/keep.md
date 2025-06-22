@@ -1,11 +1,11 @@
-# keep
+# keephq.dev
 
 > The open-source AIOps and alert management platform
 
 ## Package Information
 
-- **Domain**: `keep`
-- **Name**: `keep`
+- **Domain**: `keephq.dev`
+- **Name**: `keephq.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/keephq.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) keep
+launchpad install keep
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx keep@0.0.0
+sh <(curl https://pkgx.sh) +keephq.dev@0.0.0 -- $SHELL -i
 ```
 
 ## Dependencies

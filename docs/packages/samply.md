@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `samply`
+- **Domain**: `crates.io/samply`
 - **Name**: `samply`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/samply/package.yml)
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) samply
+launchpad install samply
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `samply`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `samply`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx samply@0.13.1
+sh <(curl https://pkgx.sh) +crates.io/samply@0.13.1 -- $SHELL -i
 ```
 
 ## Usage Examples

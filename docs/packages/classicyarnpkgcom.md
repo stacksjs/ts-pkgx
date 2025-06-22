@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +classic.yarnpkg.com -- $SHELL -i
+launchpad install +classic.yarnpkg.com
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +classicyarnpkg.com@1.22.22 -- $SHELL -i
+sh <(curl https://pkgx.sh) +classic.yarnpkg.com -- $SHELL -i
 ```
 
 ## Dependencies

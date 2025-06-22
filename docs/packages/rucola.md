@@ -1,11 +1,11 @@
-# rucola
+# rucola-notes
 
 > Terminal-based markdown note manager.
 
 ## Package Information
 
-- **Domain**: `rucola`
-- **Name**: `rucola`
+- **Domain**: `crates.io/rucola-notes`
+- **Name**: `rucola-notes`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rucola-notes/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) rucola
+launchpad install rucola
 ```
 
 ## Programs
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `rucola`
-- `rucola-notes`
 
 ## Available Versions
 
@@ -44,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx rucola@0.5.0
+sh <(curl https://pkgx.sh) +crates.io/rucola-notes@0.5.0 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -555,6 +555,8 @@ export const checkovPackage = {
   aliases: [
     'checkov',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) checkov -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install checkov' as const,
 }
 
 export type CheckovPackage = typeof checkovPackage

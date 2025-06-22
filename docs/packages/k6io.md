@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install k6
+launchpad install k6.io
 ```
 
 ## Programs

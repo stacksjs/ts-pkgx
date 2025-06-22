@@ -85,6 +85,8 @@ export const gumPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gum -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gum' as const,
 }
 
 export type GumPackage = typeof gumPackage

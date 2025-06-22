@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install scons
+launchpad install scons.org
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install sshx
+launchpad install sshx.io
 ```
 
 ## Programs

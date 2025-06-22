@@ -1,11 +1,11 @@
-# unbound
+# unbound.net
 
 > Unbound is a validating, recursive, and caching DNS resolver.
 
 ## Package Information
 
-- **Domain**: `unbound`
-- **Name**: `unbound`
+- **Domain**: `unbound.net`
+- **Name**: `unbound.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/unbound.net/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +unbound.net -- $SHELL -i
+launchpad install +unbound.net -- $SHELL -i
 ```
 
 ## Programs
@@ -31,7 +31,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+unbound.net -- $SHELL -i`
 - `unbound`
 
 ## Available Versions
@@ -51,7 +50,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx unbound@1.23.0
+sh <(curl https://pkgx.sh) +unbound.net@1.23.0 -- $SHELL -i
 ```
 
 ## Dependencies

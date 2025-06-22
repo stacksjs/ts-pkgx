@@ -1,11 +1,11 @@
-# lz4
+# lz4.org
 
 > Extremely Fast Compression algorithm
 
 ## Package Information
 
-- **Domain**: `lz4`
-- **Name**: `lz4`
+- **Domain**: `lz4.org`
+- **Name**: `lz4.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lz4.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) lz4
+launchpad install lz4
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx lz4@1.10.0
+sh <(curl https://pkgx.sh) +lz4.org@1.10.0 -- $SHELL -i
 ```
 
 ## Usage Examples

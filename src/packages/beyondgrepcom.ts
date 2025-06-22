@@ -83,6 +83,8 @@ export const ackPackage = {
   aliases: [
     'ack',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ack -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ack' as const,
 }
 
 export type AckPackage = typeof ackPackage

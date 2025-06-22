@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install interpreter
+launchpad install openinterpreter.com
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install tsc
+launchpad install typescriptlang.org
 ```
 
 ## Programs

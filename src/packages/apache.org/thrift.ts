@@ -81,6 +81,8 @@ export const thriftPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) thrift -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install thrift' as const,
 }
 
 export type ThriftPackage = typeof thriftPackage

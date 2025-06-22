@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install steampipe
+launchpad install steampipe.io
 ```
 
 ## Programs

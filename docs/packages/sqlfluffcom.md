@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install sqlfluff
+launchpad install sqlfluff.com
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +bittensor.com -- $SHELL -i
+launchpad install +bittensor.com
 ```
 
 ## Programs

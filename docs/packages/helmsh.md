@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install helm
+launchpad install helm.sh
 ```
 
 ## Programs

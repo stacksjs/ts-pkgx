@@ -1,6 +1,6 @@
 # JavaScript & Node.js Ecosystem
 
-*10 packages in this category*
+*11 packages in this category*
 
 Packages related to javascript & node.js ecosystem.
 
@@ -22,17 +22,17 @@ Incredibly fast JavaScript runtime, bundler, test runner, and package manager â€
 
 **Programs**: bun, bunx
 
-**Install**: `launchpad install +bun.sh -- $SHELL -i`
+**Install**: `launchpad install bun`
 
 ---
 
-### [classicyarnpkg.com](../packages/classicyarnpkgcom.md) (classic.yarnpkg.com, yarn)
+### [classic.yarnpkg.com](../packages/classicyarnpkgcom.md) (yarn)
 
 The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
 
 **Programs**: yarn, yarnpkg
 
-**Install**: `launchpad install +classic.yarnpkg.com -- $SHELL -i`
+**Install**: `launchpad install +classic.yarnpkg.com`
 
 ---
 
@@ -57,6 +57,16 @@ Flutter makes it easy and fast to build beautiful apps for mobile and beyond
 ---
 
 ### [nodejs.org](../packages/nodejsorg.md) (node)
+
+Platform built on V8 to build network applications
+
+**Programs**: node
+
+**Install**: `launchpad install node`
+
+---
+
+### [nodejs.org](../packages/node.md) (node)
 
 Platform built on V8 to build network applications
 

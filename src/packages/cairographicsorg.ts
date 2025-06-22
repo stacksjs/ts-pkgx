@@ -91,6 +91,8 @@ export const cairotracePackage = {
   aliases: [
     'cairo-trace',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cairo-trace -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cairo-trace' as const,
 }
 
 export type CairotracePackage = typeof cairotracePackage

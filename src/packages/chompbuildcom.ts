@@ -78,6 +78,8 @@ export const chompPackage = {
   aliases: [
     'chomp',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) chomp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install chomp' as const,
 }
 
 export type ChompPackage = typeof chompPackage

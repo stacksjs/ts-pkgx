@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install daytona
+launchpad install daytona.io
 ```
 
 ## Programs

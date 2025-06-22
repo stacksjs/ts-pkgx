@@ -1,11 +1,11 @@
-# istioctl
+# istio.io
 
 > Connect, secure, control, and observe services.
 
 ## Package Information
 
-- **Domain**: `istioctl`
-- **Name**: `istioctl`
+- **Domain**: `istio.io`
+- **Name**: `istio.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/istio.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) istioctl
+launchpad install istioctl
 ```
 
 ## Programs
@@ -31,27 +31,27 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 41 versions</summary>
+<summary>Show all 42 versions</summary>
 
-- `1.26.1`, `1.26.0`, `1.25.3`, `1.25.2`, `1.25.1`
-- `1.25.0`, `1.24.6`, `1.24.4`, `1.24.3`, `1.24.2`
-- `1.24.1`, `1.24.0`, `1.23.6`, `1.23.5`, `1.23.4`
-- `1.23.3`, `1.23.2`, `1.23.1`, `1.23.0`, `1.22.8`
-- `1.22.7`, `1.22.6`, `1.22.5`, `1.22.4`, `1.22.3`
-- `1.22.2`, `1.22.1`, `1.22.0`, `1.21.6`, `1.21.5`
-- `1.21.4`, `1.21.3`, `1.21.2`, `1.21.1`, `1.21.0`
-- `1.20.8`, `1.20.7`, `1.20.6`, `1.20.5`, `1.19.10`
-- `1.19.9`
+- `1.26.2`, `1.26.1`, `1.26.0`, `1.25.3`, `1.25.2`
+- `1.25.1`, `1.25.0`, `1.24.6`, `1.24.4`, `1.24.3`
+- `1.24.2`, `1.24.1`, `1.24.0`, `1.23.6`, `1.23.5`
+- `1.23.4`, `1.23.3`, `1.23.2`, `1.23.1`, `1.23.0`
+- `1.22.8`, `1.22.7`, `1.22.6`, `1.22.5`, `1.22.4`
+- `1.22.3`, `1.22.2`, `1.22.1`, `1.22.0`, `1.21.6`
+- `1.21.5`, `1.21.4`, `1.21.3`, `1.21.2`, `1.21.1`
+- `1.21.0`, `1.20.8`, `1.20.7`, `1.20.6`, `1.20.5`
+- `1.19.10`, `1.19.9`
 
 </details>
 
-**Latest Version**: `1.26.1`
+**Latest Version**: `1.26.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx istioctl@1.26.1
+sh <(curl https://pkgx.sh) +istio.io@1.26.2 -- $SHELL -i
 ```
 
 ## Usage Examples

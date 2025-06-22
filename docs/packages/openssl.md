@@ -1,11 +1,11 @@
-# OpenSSL
+# openssl.org
 
 > TLS/SSL and crypto library with QUIC APIs
 
 ## Package Information
 
-- **Domain**: `openssl`
-- **Name**: `OpenSSL`
+- **Domain**: `openssl.org`
+- **Name**: `openssl.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openssl.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +openssl.org -- $SHELL -i
+launchpad install +openssl.org -- $SHELL -i
 ```
 
 ## Programs
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+openssl.org -- $SHELL -i`
 - `OpenSSL`
 
 ## Available Versions
@@ -50,7 +49,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx OpenSSL@3.5.0
+sh <(curl https://pkgx.sh) +openssl.org@3.5.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +64,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.openssl
+const pkg = pantry.OpenSSL
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

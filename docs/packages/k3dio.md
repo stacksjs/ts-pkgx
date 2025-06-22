@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install k3d
+launchpad install k3d.io
 ```
 
 ## Programs

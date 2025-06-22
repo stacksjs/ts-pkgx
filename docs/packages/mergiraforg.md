@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install mergiraf
+launchpad install mergiraf.org
 ```
 
 ## Programs

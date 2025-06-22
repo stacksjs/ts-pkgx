@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install teller
+launchpad install tlr.dev
 ```
 
 ## Programs

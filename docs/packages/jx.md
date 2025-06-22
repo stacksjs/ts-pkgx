@@ -1,11 +1,11 @@
-# Jenkins X
+# jenkins-x.io
 
 > Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton
 
 ## Package Information
 
-- **Domain**: `jx`
-- **Name**: `Jenkins X`
+- **Domain**: `jenkins-x.io`
+- **Name**: `jenkins-x.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jenkins-x.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) jx
+launchpad install jx
 ```
 
 ## Programs
@@ -28,34 +28,34 @@ This package can also be accessed using these aliases:
 
 - `jx`
 - `Jenkins X`
-- `jenkins x`
 
 ## Available Versions
 
 <details>
-<summary>Show all 55 versions</summary>
+<summary>Show all 58 versions</summary>
 
-- `3.11.81`, `3.11.78`, `3.11.77`, `3.11.76`, `3.11.75`
-- `3.11.74`, `3.11.71`, `3.11.70`, `3.11.69`, `3.11.66`
-- `3.11.65`, `3.11.63`, `3.11.56`, `3.11.52`, `3.11.49`
-- `3.11.48`, `3.11.45`, `3.11.44`, `3.11.41`, `3.11.39`
-- `3.11.38`, `3.11.27`, `3.11.26`, `3.11.25`, `3.11.24`
-- `3.11.21`, `3.11.17`, `3.11.14`, `3.11.11`, `3.11.10`
-- `3.11.8`, `3.11.7`, `3.11.5`, `3.11.4`, `3.11.2`
-- `3.11.1`, `3.11.0`, `3.10.182`, `3.10.181`, `3.10.180`
-- `3.10.178`, `3.10.177`, `3.10.176`, `3.10.172`, `3.10.170`
-- `3.10.169`, `3.10.167`, `3.10.166`, `3.10.161`, `3.10.160`
-- `3.10.158`, `3.10.157`, `3.10.156`, `3.10.155`, `3.10.154`
+- `3.11.92`, `3.11.90`, `3.11.87`, `3.11.81`, `3.11.78`
+- `3.11.77`, `3.11.76`, `3.11.75`, `3.11.74`, `3.11.71`
+- `3.11.70`, `3.11.69`, `3.11.66`, `3.11.65`, `3.11.63`
+- `3.11.56`, `3.11.52`, `3.11.49`, `3.11.48`, `3.11.45`
+- `3.11.44`, `3.11.41`, `3.11.39`, `3.11.38`, `3.11.27`
+- `3.11.26`, `3.11.25`, `3.11.24`, `3.11.21`, `3.11.17`
+- `3.11.14`, `3.11.11`, `3.11.10`, `3.11.8`, `3.11.7`
+- `3.11.5`, `3.11.4`, `3.11.2`, `3.11.1`, `3.11.0`
+- `3.10.182`, `3.10.181`, `3.10.180`, `3.10.178`, `3.10.177`
+- `3.10.176`, `3.10.172`, `3.10.170`, `3.10.169`, `3.10.167`
+- `3.10.166`, `3.10.161`, `3.10.160`, `3.10.158`, `3.10.157`
+- `3.10.156`, `3.10.155`, `3.10.154`
 
 </details>
 
-**Latest Version**: `3.11.81`
+**Latest Version**: `3.11.92`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx Jenkins X@3.11.81
+sh <(curl https://pkgx.sh) +jenkins-x.io@3.11.92 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -64,7 +64,7 @@ pkgx Jenkins X@3.11.81
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.jx
+const pkg = pantry.Jenkins X
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

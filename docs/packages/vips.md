@@ -1,11 +1,11 @@
-# vips
+# libvips.org
 
 > A fast image processing library with low memory needs.
 
 ## Package Information
 
-- **Domain**: `vips`
-- **Name**: `vips`
+- **Domain**: `libvips.org`
+- **Name**: `libvips.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libvips.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +libvips.org -- $SHELL -i
+launchpad install +libvips.org -- $SHELL -i
 ```
 
 ## Programs
@@ -30,26 +30,25 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+libvips.org -- $SHELL -i`
 - `vips`
 
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `8.16.1`, `8.16.0`, `8.15.5`, `8.15.3`, `8.15.2`
-- `8.15.1`, `8.15.0`, `8.14.5`
+- `8.17.0`, `8.16.1`, `8.16.0`, `8.15.5`, `8.15.3`
+- `8.15.2`, `8.15.1`, `8.15.0`, `8.14.5`
 
 </details>
 
-**Latest Version**: `8.16.1`
+**Latest Version**: `8.17.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx vips@8.16.1
+sh <(curl https://pkgx.sh) +libvips.org@8.17.0 -- $SHELL -i
 ```
 
 ## Dependencies

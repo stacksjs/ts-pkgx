@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libexifgithub.io`
+- **Domain**: `libexif.github.io`
 - **Name**: `libexif.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libexif.github.io/package.yml)
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +libexifgithub.io@0.6.25 -- $SHELL -i
+sh <(curl https://pkgx.sh) +libexif.github.io@0.6.25 -- $SHELL -i
 ```
 
 ## Dependencies

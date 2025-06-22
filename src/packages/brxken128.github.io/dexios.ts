@@ -69,6 +69,8 @@ export const dexiosPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dexios -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dexios' as const,
 }
 
 export type DexiosPackage = typeof dexiosPackage

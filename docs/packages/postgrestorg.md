@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install postgrest
+launchpad install postgrest.org
 ```
 
 ## Programs

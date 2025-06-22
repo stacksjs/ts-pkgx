@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `mas`
+- **Domain**: `github.com/mas-cli/mas`
 - **Name**: `mas`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mas-cli/mas/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) mas
+launchpad install mas
 ```
 
 ## Programs
@@ -21,13 +21,6 @@ sh <(curl https://pkgx.sh) mas
 This package provides the following executable programs:
 
 - `mas`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `mas`
-- `mas-cli/mas`
 
 ## Available Versions
 
@@ -45,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx mas@2.2.2
+sh <(curl https://pkgx.sh) +github.com/mas-cli/mas@2.2.2 -- $SHELL -i
 ```
 
 ## Usage Examples

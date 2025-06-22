@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libvips.org -- $SHELL -i
+launchpad install libvips.org
 ```
 
 ## Programs

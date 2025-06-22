@@ -1,11 +1,11 @@
-# rtmpdump
+# rtmpdump.mplayerhq.hu
 
 > Tool for downloading RTMP streaming media
 
 ## Package Information
 
-- **Domain**: `rtmpdump`
-- **Name**: `rtmpdump`
+- **Domain**: `rtmpdump.mplayerhq.hu`
+- **Name**: `rtmpdump.mplayerhq.hu`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rtmpdump.mplayerhq.hu/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +rtmpdump.mplayerhq.hu -- $SHELL -i
+launchpad install +rtmpdump.mplayerhq.hu -- $SHELL -i
 ```
 
 ## Programs
@@ -29,7 +29,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+rtmpdump.mplayerhq.hu -- $SHELL -i`
 - `rtmpdump`
 
 ## Available Versions
@@ -47,7 +46,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx rtmpdump@2.3.0
+sh <(curl https://pkgx.sh) +rtmpdump.mplayerhq.hu@2.3.0 -- $SHELL -i
 ```
 
 ## Dependencies

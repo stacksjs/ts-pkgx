@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +libusb.info -- $SHELL -i
+launchpad install +libusb.info -- $SHELL -i
 ```
 
 ## Programs

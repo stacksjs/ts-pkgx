@@ -1,11 +1,11 @@
-# skaffold
+# skaffold.dev
 
 > Easy and Repeatable Kubernetes Development
 
 ## Package Information
 
-- **Domain**: `skaffold`
-- **Name**: `skaffold`
+- **Domain**: `skaffold.dev`
+- **Name**: `skaffold.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/skaffold.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) skaffold
+launchpad install skaffold
 ```
 
 ## Programs
@@ -31,21 +31,21 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 14 versions</summary>
+<summary>Show all 15 versions</summary>
 
-- `2.16.0`, `2.15.0`, `2.14.2`, `2.14.1`, `2.14.0`
-- `2.13.2`, `2.13.0`, `2.12.0`, `2.11.1`, `2.11.0`
-- `2.10.1`, `2.10.0`, `2.9.0`, `2.8.0`
+- `2.16.1`, `2.16.0`, `2.15.0`, `2.14.2`, `2.14.1`
+- `2.14.0`, `2.13.2`, `2.13.0`, `2.12.0`, `2.11.1`
+- `2.11.0`, `2.10.1`, `2.10.0`, `2.9.0`, `2.8.0`
 
 </details>
 
-**Latest Version**: `2.16.0`
+**Latest Version**: `2.16.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx skaffold@2.16.0
+sh <(curl https://pkgx.sh) +skaffold.dev@2.16.1 -- $SHELL -i
 ```
 
 ## Usage Examples

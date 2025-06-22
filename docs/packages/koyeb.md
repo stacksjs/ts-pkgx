@@ -1,11 +1,11 @@
-# koyeb
+# koyeb.com
 
 > Koyeb cli
 
 ## Package Information
 
-- **Domain**: `koyeb`
-- **Name**: `koyeb`
+- **Domain**: `koyeb.com`
+- **Name**: `koyeb.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/koyeb.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) koyeb
+launchpad install koyeb
 ```
 
 ## Programs
@@ -50,7 +50,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx koyeb@5.5.1
+sh <(curl https://pkgx.sh) +koyeb.com@5.5.1 -- $SHELL -i
 ```
 
 ## Usage Examples

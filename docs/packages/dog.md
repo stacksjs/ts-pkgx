@@ -1,11 +1,11 @@
-# dog
+# dns.lookup.dog
 
 > A command-line DNS client.
 
 ## Package Information
 
-- **Domain**: `dog`
-- **Name**: `dog`
+- **Domain**: `dns.lookup.dog`
+- **Name**: `dns.lookup.dog`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dns.lookup.dog/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) dog
+launchpad install dog
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx dog@0.1.0
+sh <(curl https://pkgx.sh) +dns.lookup.dog@0.1.0 -- $SHELL -i
 ```
 
 ## Dependencies

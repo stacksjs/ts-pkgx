@@ -111,6 +111,8 @@ export const trivyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) trivy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install trivy' as const,
 }
 
 export type TrivyPackage = typeof trivyPackage

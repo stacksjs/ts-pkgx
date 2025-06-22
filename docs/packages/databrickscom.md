@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install databricks
+launchpad install databricks.com
 ```
 
 ## Programs

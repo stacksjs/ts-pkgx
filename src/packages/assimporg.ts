@@ -86,6 +86,8 @@ export const assimpPackage = {
   aliases: [
     'assimp',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) assimp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install assimp' as const,
 }
 
 export type AssimpPackage = typeof assimpPackage

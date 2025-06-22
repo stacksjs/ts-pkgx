@@ -82,6 +82,8 @@ export const aria2cPackage = {
   aliases: [
     'aria2c',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aria2c -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install aria2c' as const,
 }
 
 export type Aria2cPackage = typeof aria2cPackage

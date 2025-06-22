@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pcap-config
+launchpad install tcpdump.org
 ```
 
 ## Programs

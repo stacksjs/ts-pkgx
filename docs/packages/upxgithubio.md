@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install upx
+launchpad install upxgithub.io
 ```
 
 ## Programs

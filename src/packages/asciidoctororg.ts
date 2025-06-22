@@ -84,6 +84,8 @@ export const asciidoctorPackage = {
   aliases: [
     'asciidoctor',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) asciidoctor -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install asciidoctor' as const,
 }
 
 export type AsciidoctorPackage = typeof asciidoctorPackage

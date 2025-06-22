@@ -78,6 +78,8 @@ export const skatePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) skate -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install skate' as const,
 }
 
 export type SkatePackage = typeof skatePackage

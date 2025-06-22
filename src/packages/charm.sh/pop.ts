@@ -70,6 +70,8 @@ export const popPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pop -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pop' as const,
 }
 
 export type PopPackage = typeof popPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install duk
+launchpad install duktape.org
 ```
 
 ## Programs

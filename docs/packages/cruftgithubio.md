@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install cruft
+launchpad install cruftgithub.io
 ```
 
 ## Programs

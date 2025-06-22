@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +luajit.org -- $SHELL -i
+launchpad install luajit.org
 ```
 
 ## Programs

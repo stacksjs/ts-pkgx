@@ -98,6 +98,8 @@ export const ansiblelintPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ansible-lint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ansible-lint' as const,
 }
 
 export type AnsiblelintPackage = typeof ansiblelintPackage

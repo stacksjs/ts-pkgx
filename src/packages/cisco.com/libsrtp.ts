@@ -5,7 +5,7 @@
  * @version `2.7.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +cisco.com/libsrtp -- $SHELL -i`
+ * @install `launchpad install +cisco.com/libsrtp`
  * @dependencies `openssl.org~1`
  *
  * @example
@@ -41,7 +41,7 @@ export const ciscocomlibsrtpPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +cisco.com/libsrtp -- $SHELL -i' as const,
+  installCommand: 'launchpad install +cisco.com/libsrtp' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,6 +61,8 @@ export const ciscocomlibsrtpPackage = {
     '2.5.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cisco.com/libsrtp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install +cisco.com/libsrtp' as const,
 }
 
 export type CiscocomlibsrtpPackage = typeof ciscocomlibsrtpPackage

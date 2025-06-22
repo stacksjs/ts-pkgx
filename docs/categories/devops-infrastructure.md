@@ -12,7 +12,7 @@ Ansible is a radically simple IT automation platform that makes your application
 
 **Programs**: ansible, ansible-config, ansible-connection, ansible-console, ansible-doc, ansible-galaxy, ansible-inventory, ansible-playbook, ansible-pull, ansible-test, ansible-vault
 
-**Install**: `launchpad install +ansible.com -- $SHELL -i`
+**Install**: `launchpad install ansible`
 
 ---
 

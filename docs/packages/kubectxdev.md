@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +kubectx.dev -- $SHELL -i
+launchpad install kubectx.dev
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +opensearch.org -- $SHELL -i
+launchpad install opensearch.org
 ```
 
 ## Programs

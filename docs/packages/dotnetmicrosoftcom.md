@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install dotnet
+launchpad install dotnetmicrosoft.com
 ```
 
 ## Programs

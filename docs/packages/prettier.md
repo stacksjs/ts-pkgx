@@ -1,11 +1,11 @@
-# prettier
+# prettier.io
 
 > Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 
 ## Package Information
 
-- **Domain**: `prettier`
-- **Name**: `prettier`
+- **Domain**: `prettier.io`
+- **Name**: `prettier.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/prettier.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) prettier
+launchpad install prettier
 ```
 
 ## Programs
@@ -45,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx prettier@3.5.3
+sh <(curl https://pkgx.sh) +prettier.io@3.5.3 -- $SHELL -i
 ```
 
 ## Dependencies

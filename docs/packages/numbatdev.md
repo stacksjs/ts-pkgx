@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install numbat
+launchpad install numbat.dev
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install plantuml
+launchpad install plantuml.com
 ```
 
 ## Programs

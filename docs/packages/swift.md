@@ -1,11 +1,11 @@
-# swift
+# swift.org
 
 > The Swift Programming Language
 
 ## Package Information
 
-- **Domain**: `swift`
-- **Name**: `swift`
+- **Domain**: `swift.org`
+- **Name**: `swift.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/swift.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +swift.org -- $SHELL -i
+launchpad install +swift.org -- $SHELL -i
 ```
 
 ## Programs
@@ -47,6 +47,12 @@ This package provides the following executable programs:
 - `swift-test`
 - `swiftc`
 
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `swift`
+
 ## Available Versions
 
 <details>
@@ -63,21 +69,20 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +swift@6.1.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +swift.org@6.1.2 -- $SHELL -i
 ```
 
 ## Dependencies
 
 This package depends on:
 
-- `linuxgnu.org/gccgnu.org/binutilsgnupg.org^2gnome.org/libxml2libgit2.org~1.7curl.sesqlite.org^3`
-- `gnu.org/gcc`
-- `gnu.org/binutils`
-- `gnupg.org^2`
-- `gnome.org/libxml2`
-- `libgit2.org~1.7`
-- `curl.se`
-- `sqlite.org^3`
+- `linux:gnu.org/gcc`
+- `linux:gnu.org/binutils`
+- `linux:gnupg.org^2`
+- `linux:gnome.org/libxml2`
+- `linux:libgit2.org~1.7 # links to libgit2.so.1.7`
+- `linux:curl.se`
+- `linux:sqlite.org^3`
 
 ## Usage Examples
 

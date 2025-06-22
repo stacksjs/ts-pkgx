@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +sourceforge.net/net-tools -- $SHELL -i
+launchpad install .net/tools
 ```
 
 ## Programs
@@ -24,12 +24,6 @@ This package provides the following executable programs:
 - `ifconfig`
 - `netstat`
 - `route`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `sourceforge.net/net-tools`
 
 ## Available Versions
 

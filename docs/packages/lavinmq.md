@@ -1,11 +1,11 @@
-# lavinmq
+# lavinmq.com
 
 > Lightweight and fast AMQP (0-9-1) server
 
 ## Package Information
 
-- **Domain**: `lavinmq`
-- **Name**: `lavinmq`
+- **Domain**: `lavinmq.com`
+- **Name**: `lavinmq.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lavinmq.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +lavinmq.com -- $SHELL -i
+launchpad install +lavinmq.com -- $SHELL -i
 ```
 
 ## Programs
@@ -28,26 +28,25 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+lavinmq.com -- $SHELL -i`
 - `lavinmq`
 
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `2.3.0`, `2.2.0`, `2.1.0`, `2.0.2`, `2.0.1`
-- `2.0.0`, `1.3.1`
+- `2.4.0`, `2.3.0`, `2.2.0`, `2.1.0`, `2.0.2`
+- `2.0.1`, `2.0.0`, `1.3.1`
 
 </details>
 
-**Latest Version**: `2.3.0`
+**Latest Version**: `2.4.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx lavinmq@2.3.0
+sh <(curl https://pkgx.sh) +lavinmq.com@2.4.0 -- $SHELL -i
 ```
 
 ## Dependencies

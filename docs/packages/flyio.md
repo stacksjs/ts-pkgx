@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +fly.io -- $SHELL -i
+launchpad install fly.io
 ```
 
 ## Programs

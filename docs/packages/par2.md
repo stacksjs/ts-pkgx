@@ -1,11 +1,11 @@
-# par2
+# par2cmdline
 
 > Parchive: Parity Archive Volume Set for data recovery
 
 ## Package Information
 
-- **Domain**: `par2`
-- **Name**: `par2`
+- **Domain**: `github.com/Parchive/par2cmdline`
+- **Name**: `par2cmdline`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Parchive/par2cmdline/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +github.com/Parchive/par2cmdline -- $SHELL -i
+launchpad install +github.com/Parchive/par2cmdline -- $SHELL -i
 ```
 
 ## Programs
@@ -30,7 +30,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `par2`
-- `Parchive/par2cmdline`
 
 ## Available Versions
 
@@ -47,7 +46,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx par2@1.0.0
+sh <(curl https://pkgx.sh) +github.com/Parchive/par2cmdline@1.0.0 -- $SHELL -i
 ```
 
 ## Usage Examples

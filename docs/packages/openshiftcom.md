@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install oc
+launchpad install openshift.com
 ```
 
 ## Programs

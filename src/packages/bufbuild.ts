@@ -113,6 +113,8 @@ export const bufPackage = {
   aliases: [
     'buf',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) buf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install buf' as const,
 }
 
 export type BufPackage = typeof bufPackage

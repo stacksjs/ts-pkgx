@@ -1,11 +1,11 @@
-# upx
+# upx.github.io
 
 > UPX - the Ultimate Packer for eXecutables
 
 ## Package Information
 
-- **Domain**: `upx`
-- **Name**: `upx`
+- **Domain**: `upx.github.io`
+- **Name**: `upx.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/upx.github.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) upx
+launchpad install upx
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx upx@5.0.1
+sh <(curl https://pkgx.sh) +upx.github.io@5.0.1 -- $SHELL -i
 ```
 
 ## Dependencies

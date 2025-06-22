@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install watchexec
+launchpad install watchexecgithub.io
 ```
 
 ## Programs

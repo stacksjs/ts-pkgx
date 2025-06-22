@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install gqlgen
+launchpad install gqlgen.com
 ```
 
 ## Programs

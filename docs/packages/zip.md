@@ -1,66 +1,53 @@
 # zip
 
-> A C library for reading, creating, and modifying zip archives.
+> Compression and file packaging/archive utility
 
 ## Package Information
 
-- **Domain**: `zip`
+- **Domain**: `info-zip.org/zip`
 - **Name**: `zip`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libzip.org/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/info-zip.org/zip/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +libzip.org -- $SHELL -i
+launchpad install +info-zip.org/zip -- $SHELL -i
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `zipcmp`
-- `zipmerge`
-- `ziptool`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `+libzip.org -- $SHELL -i`
 - `zip`
+- `zipcloak`
+- `zipnote`
+- `zipsplit`
 
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 1 versions</summary>
 
-- `1.11.4`, `1.11.3`, `1.11.2`, `1.11.1`, `1.10.1`
-- `1.10.0`, `1.9.2`
+- `3.0.0`
 
 </details>
 
-**Latest Version**: `1.11.4`
+**Latest Version**: `3.0.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx zip@1.11.4
+sh <(curl https://pkgx.sh) +info-zip.org/zip@3.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
 
 This package depends on:
 
-- `facebook.com/zstd>=1.5.0`
-- `darwinsourceware.org/bzip2>=1.0.8tukaani.org/xz>=5.2.7zlib.net>=1.2.13`
-- `sourceware.org/bzip2>=1.0.8`
-- `tukaani.org/xz>=5.2.7`
-- `zlib.net>=1.2.13`
-- `linuxopenssl.org^1.1`
-- `openssl.org^1.1`
+- `sourceware.org/bzip2`
 
 ## Usage Examples
 
@@ -77,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libzip.org/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/info-zip.org/zip/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

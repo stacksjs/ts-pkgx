@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ba.sh`
+- **Domain**: `gnu.org/bash`
 - **Name**: `bash`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/bash/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +gnu.org/bash -- $SHELL -i
+launchpad install +gnu.org/bash -- $SHELL -i
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +ba.sh@5.2.37 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnu.org/bash@5.2.37 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install squawk
+launchpad install squawkhq.com
 ```
 
 ## Programs

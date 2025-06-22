@@ -1,11 +1,11 @@
-# pack
+# buildpacks.io
 
 > CLI for building apps using Cloud Native Buildpacks
 
 ## Package Information
 
-- **Domain**: `pack`
-- **Name**: `pack`
+- **Domain**: `buildpacks.io`
+- **Name**: `buildpacks.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/buildpacks.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) pack
+launchpad install pack
 ```
 
 ## Programs
@@ -31,21 +31,21 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 12 versions</summary>
+<summary>Show all 14 versions</summary>
 
-- `0.37.0`, `0.36.4`, `0.36.3`, `0.36.2`, `0.36.1`
-- `0.36.0`, `0.35.1`, `0.35.0`, `0.34.2`, `0.34.1`
-- `0.34.0`, `0.33.2`
+- `0.38.1`, `0.38.0`, `0.37.0`, `0.36.4`, `0.36.3`
+- `0.36.2`, `0.36.1`, `0.36.0`, `0.35.1`, `0.35.0`
+- `0.34.2`, `0.34.1`, `0.34.0`, `0.33.2`
 
 </details>
 
-**Latest Version**: `0.37.0`
+**Latest Version**: `0.38.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx pack@0.37.0
+sh <(curl https://pkgx.sh) pack -- $SHELL -i
 ```
 
 ## Usage Examples

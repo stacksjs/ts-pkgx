@@ -1,11 +1,11 @@
-# LocalAI
+# localai.io
 
 > :robot: The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. Drop-in replacement for OpenAI,  running on consumer-grade hardware. No GPU required. Runs gguf, transformers, diffusers and many more models architectures. Features: Generate Text, Audio, Video, Images, Voice Cloning, Distributed, P2P inference
 
 ## Package Information
 
-- **Domain**: `localai`
-- **Name**: `LocalAI`
+- **Domain**: `localai.io`
+- **Name**: `localai.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/localai.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) local-ai
+launchpad install local-ai
 ```
 
 ## Programs
@@ -51,19 +51,18 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx LocalAI@2.26.0
+sh <(curl https://pkgx.sh) +localai.io@2.26.0 -- $SHELL -i
 ```
 
 ## Dependencies
 
 This package depends on:
 
-- `darwinopenmp.llvm.org@18`
-- `openmp.llvm.org@18`
+- `darwin:openmp.llvm.org@18`
 
 ## Related Packages
 
-These packages work well with LocalAI:
+These packages work well with localai.io:
 
 - `linux`
 
@@ -73,7 +72,7 @@ These packages work well with LocalAI:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.localai
+const pkg = pantry.LocalAI
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

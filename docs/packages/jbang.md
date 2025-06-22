@@ -1,11 +1,11 @@
-# jbang
+# jbang.dev
 
 > Unleash the power of Java - JBang Lets Students, Educators and Professional Developers create, edit and run self-contained source-only Java programs with unprecedented ease.
 
 ## Package Information
 
-- **Domain**: `jbang`
-- **Name**: `jbang`
+- **Domain**: `jbang.dev`
+- **Name**: `jbang.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jbang.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) jbang
+launchpad install jbang
 ```
 
 ## Programs
@@ -31,22 +31,23 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 20 versions</summary>
+<summary>Show all 22 versions</summary>
 
-- `0.126.1`, `0.126.0`, `0.125.1`, `0.125.0`, `0.124.0`
-- `0.123.0`, `0.122.0`, `0.121.0`, `0.120.4`, `0.119.0`
-- `0.118.0`, `0.117.1`, `0.117.0`, `0.116.0`, `0.115.0`
-- `0.114.0`, `0.113.0`, `0.112.4`, `0.111.0`, `0.110.1`
+- `0.126.3`, `0.126.2`, `0.126.1`, `0.126.0`, `0.125.1`
+- `0.125.0`, `0.124.0`, `0.123.0`, `0.122.0`, `0.121.0`
+- `0.120.4`, `0.119.0`, `0.118.0`, `0.117.1`, `0.117.0`
+- `0.116.0`, `0.115.0`, `0.114.0`, `0.113.0`, `0.112.4`
+- `0.111.0`, `0.110.1`
 
 </details>
 
-**Latest Version**: `0.126.1`
+**Latest Version**: `0.126.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx jbang@0.126.1
+sh <(curl https://pkgx.sh) +jbang.dev@0.126.3 -- $SHELL -i
 ```
 
 ## Dependencies

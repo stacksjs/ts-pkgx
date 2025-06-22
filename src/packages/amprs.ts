@@ -81,6 +81,8 @@ export const ampPackage = {
   aliases: [
     'amp',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) amp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install amp' as const,
 }
 
 export type AmpPackage = typeof ampPackage

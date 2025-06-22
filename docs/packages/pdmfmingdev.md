@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pdm
+launchpad install pdmfming.dev
 ```
 
 ## Programs

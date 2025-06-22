@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install nixpacks
+launchpad install nixpacks.com
 ```
 
 ## Programs

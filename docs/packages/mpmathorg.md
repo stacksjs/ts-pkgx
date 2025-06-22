@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mpmath.org -- $SHELL -i
+launchpad install mpmath.org
 ```
 
 ## Programs

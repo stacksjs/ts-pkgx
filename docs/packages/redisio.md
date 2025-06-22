@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +redis.io -- $SHELL -i
+launchpad install redis.io
 ```
 
 ## Programs

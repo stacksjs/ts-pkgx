@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +openexr.com -- $SHELL -i
+launchpad install openexr.com
 ```
 
 ## Programs

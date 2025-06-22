@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install nu
+launchpad install nushell.sh
 ```
 
 ## Programs

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `usque`
+- **Domain**: `github.com/Diniboy1123/usque`
 - **Name**: `usque`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Diniboy1123/usque/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) usque
+launchpad install usque
 ```
 
 ## Programs
@@ -22,29 +22,23 @@ This package provides the following executable programs:
 
 - `usque`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `usque`
-- `Diniboy1123/usque`
-
 ## Available Versions
 
 <details>
-<summary>Show all 3 versions</summary>
+<summary>Show all 7 versions</summary>
 
-- `1.1.1`, `1.1.0`, `1.0.4`
+- `1.4.0`, `1.3.0`, `1.2.1`, `1.2.0`, `1.1.1`
+- `1.1.0`, `1.0.4`
 
 </details>
 
-**Latest Version**: `1.1.1`
+**Latest Version**: `1.4.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx usque@1.1.1
+sh <(curl https://pkgx.sh) +github.com/Diniboy1123/usque@1.4.0 -- $SHELL -i
 ```
 
 ## Usage Examples

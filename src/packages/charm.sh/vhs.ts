@@ -90,6 +90,8 @@ export const vhsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vhs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vhs' as const,
 }
 
 export type VhsPackage = typeof vhsPackage

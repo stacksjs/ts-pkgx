@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install vcluster
+launchpad install vcluster.com
 ```
 
 ## Programs

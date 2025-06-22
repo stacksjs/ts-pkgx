@@ -1,11 +1,11 @@
-# cgal
+# cgal.org
 
 > The public CGAL repository, see the README below
 
 ## Package Information
 
-- **Domain**: `cgal`
-- **Name**: `cgal`
+- **Domain**: `cgal.org`
+- **Name**: `cgal.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cgal.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +cgal.org -- $SHELL -i
+launchpad install +cgal.org
 ```
 
 ## Programs
@@ -28,7 +28,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+cgal.org -- $SHELL -i`
 - `cgal`
 
 ## Available Versions
@@ -46,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx cgal@6.0.1
+sh <(curl https://pkgx.sh) +cgal.org@6.0.1 -- $SHELL -i
 ```
 
 ## Dependencies

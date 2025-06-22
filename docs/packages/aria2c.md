@@ -1,11 +1,11 @@
-# aria2c
+# aria2.github.io
 
 > aria2 is a lightweight multi-protocol & multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.
 
 ## Package Information
 
-- **Domain**: `aria2c`
-- **Name**: `aria2c`
+- **Domain**: `aria2.github.io`
+- **Name**: `aria2.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aria2.github.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) aria2c
+launchpad install aria2c
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx aria2c@1.37.0
+sh <(curl https://pkgx.sh) aria2c -- $SHELL -i
 ```
 
 ## Dependencies

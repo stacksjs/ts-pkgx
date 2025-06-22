@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install geos-config
+launchpad install libgeos.org
 ```
 
 ## Programs

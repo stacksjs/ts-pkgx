@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `envchain`
+- **Domain**: `github.com/sorah/envchain`
 - **Name**: `envchain`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/sorah/envchain/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) envchain
+launchpad install envchain
 ```
 
 ## Programs
@@ -21,13 +21,6 @@ sh <(curl https://pkgx.sh) envchain
 This package provides the following executable programs:
 
 - `envchain`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `envchain`
-- `sorah/envchain`
 
 ## Available Versions
 
@@ -44,16 +37,15 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx envchain@1.1.0
+sh <(curl https://pkgx.sh) +github.com/sorah/envchain@1.1.0 -- $SHELL -i
 ```
 
 ## Dependencies
 
 This package depends on:
 
-- `linuxgnu.org/readlinegnome.org/libsecret`
-- `gnu.org/readline`
-- `gnome.org/libsecret`
+- `linux:gnu.org/readline`
+- `linux:gnome.org/libsecret`
 
 ## Usage Examples
 

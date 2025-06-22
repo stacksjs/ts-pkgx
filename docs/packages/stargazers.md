@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `stargazers`
+- **Domain**: `github.com/spencerkimball/stargazers`
 - **Name**: `stargazers`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/spencerkimball/stargazers/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) stargazers
+launchpad install stargazers
 ```
 
 ## Programs
@@ -21,13 +21,6 @@ sh <(curl https://pkgx.sh) stargazers
 This package provides the following executable programs:
 
 - `stargazers`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `stargazers`
-- `spencerkimball/stargazers`
 
 ## Available Versions
 
@@ -44,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx stargazers@0.0.0
+sh <(curl https://pkgx.sh) +github.com/spencerkimball/stargazers@0.0.0 -- $SHELL -i
 ```
 
 ## Usage Examples

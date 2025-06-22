@@ -1,11 +1,11 @@
-# ipfs
+# ipfs.tech
 
 > Peer-to-peer hypermedia protocol
 
 ## Package Information
 
-- **Domain**: `ipfs`
-- **Name**: `ipfs`
+- **Domain**: `ipfs.tech`
+- **Name**: `ipfs.tech`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ipfs.tech/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) ipfs
+launchpad install ipfs
 ```
 
 ## Programs
@@ -48,7 +48,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx ipfs@0.35.0
+sh <(curl https://pkgx.sh) +ipfs.tech@0.35.0 -- $SHELL -i
 ```
 
 ## Usage Examples

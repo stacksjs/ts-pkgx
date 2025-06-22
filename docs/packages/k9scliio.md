@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install k9s
+launchpad install k9scli.io
 ```
 
 ## Programs

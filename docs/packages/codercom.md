@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install coder
+launchpad install coder.com
 ```
 
 ## Programs

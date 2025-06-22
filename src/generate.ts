@@ -32,6 +32,8 @@ interface PkgxPackage {
   homepageUrl: string
   githubUrl: string
   installCommand: string
+  pkgxInstallCommand: string
+  launchpadInstallCommand: string
   programs: readonly string[]
   companions: readonly string[]
   dependencies: readonly string[]
@@ -42,10 +44,26 @@ interface PkgxPackage {
 
 async function importPantry(packagesDir?: string): Promise<Record<string, PkgxPackage>> {
   try {
-    const pantryData: Record<string, PkgxPackage> = {}
-
-    // Use provided packages directory or default to current working directory
+    // Use the generated index file to get the correct alias mapping
     const targetPackagesDir = packagesDir || path.join(process.cwd(), 'src', 'packages')
+    const indexPath = path.join(targetPackagesDir, 'index.ts')
+
+    if (fs.existsSync(indexPath)) {
+      console.log('Using generated index file for package mapping...')
+
+      // Import the generated pantry object
+      const indexModule = await import(path.resolve(indexPath))
+      const pantry = indexModule.pantry || indexModule.packages
+
+      if (pantry) {
+        console.log(`Successfully loaded ${Object.keys(pantry).length} packages from index`)
+        return pantry
+      }
+    }
+
+    // Fallback to direct file reading if index doesn't exist
+    console.log('Index file not found, falling back to direct file reading...')
+    const pantryData: Record<string, PkgxPackage> = {}
 
     // Check if packages directory exists
     if (!fs.existsSync(targetPackagesDir)) {
@@ -87,7 +105,8 @@ async function importPantry(packagesDir?: string): Promise<Record<string, PkgxPa
     // Read each package file and extract the package data
     for (const file of packageFiles) {
       try {
-        const filePath = path.join(targetPackagesDir, file)
+        // If file is already an absolute path, use it directly; otherwise join with targetPackagesDir
+        const filePath = path.isAbsolute(file) ? file : path.join(targetPackagesDir, file)
         const content = fs.readFileSync(filePath, 'utf-8')
         const moduleName = path.basename(file, '.ts')
         const domain = guessOriginalDomain(moduleName)
@@ -177,6 +196,8 @@ function extractPackageDataFromFile(content: string, domain: string): PkgxPackag
     const homepageUrl = extractString('homepageUrl') || ''
     const githubUrl = extractString('githubUrl') || ''
     const installCommand = extractString('installCommand') || ''
+    const pkgxInstallCommand = extractString('pkgxInstallCommand') || `sh <(curl https://pkgx.sh) +${domain} -- $SHELL -i`
+    const launchpadInstallCommand = extractString('launchpadInstallCommand') || `launchpad install ${domain}`
     const fullPath = extractString('fullPath') || domain
 
     const programs = extractArray('programs')
@@ -193,6 +214,8 @@ function extractPackageDataFromFile(content: string, domain: string): PkgxPackag
       homepageUrl,
       githubUrl,
       installCommand,
+      pkgxInstallCommand,
+      launchpadInstallCommand,
       programs,
       companions,
       dependencies,
@@ -745,6 +768,67 @@ export const packages: Packages = pantry
         }
       }
 
+      // Add alias properties by reading from aliases.ts and extracting from package files
+      const allAliases = await extractAllAliases(targetPackagesDir)
+
+      // Create a mapping from domain to import alias for quick lookup
+      const domainToImportAlias = new Map<string, string>()
+
+      // Re-scan files to build domain mapping
+      for (const file of sortedFiles) {
+        try {
+          const content = fs.readFileSync(file, 'utf-8')
+          const domainMatch = content.match(/domain:\s*['"]([^'"]*)['"]\s*as const/)
+          const domain = domainMatch ? domainMatch[1] : ''
+
+          if (domain) {
+            const moduleName = path.basename(file, '.ts')
+            const { packageVarName } = getActualExportNames(moduleName, targetPackagesDir, file)
+
+            // Find the import alias used for this package
+            let importAlias = packageVarName
+            let counter = 1
+            while (usedImportNames.has(importAlias) && importAlias !== packageVarName) {
+              importAlias = `${packageVarName}${counter}`
+              counter++
+            }
+
+            domainToImportAlias.set(domain, importAlias)
+          }
+        }
+        catch (error) {
+          console.error(`Error processing file for alias mapping ${file}:`, error)
+        }
+      }
+
+      // Add alias properties (allow overriding existing properties)
+      for (const [alias, targetDomain] of Object.entries(allAliases)) {
+        const importAlias = domainToImportAlias.get(targetDomain)
+
+        if (importAlias) {
+          // Quote property names that start with numbers or contain special chars
+          const quotedAlias = /^\d/.test(alias) || !/^[a-z_$][\w$]*$/i.test(alias)
+            ? `'${alias}'`
+            : alias
+
+          // If alias already exists, we need to override it
+          if (usedPropertyNames.has(alias)) {
+            // Remove the existing property from interface and pantry declarations
+            // Use more robust regex patterns that match the entire line
+            const escapedAlias = quotedAlias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+            const interfaceLineRegex = new RegExp(`^\\s*${escapedAlias}:\\s*typeof\\s+\\w+\\s*$`, 'gm')
+            const pantryLineRegex = new RegExp(`^\\s*${escapedAlias}:\\s*\\w+,\\s*$`, 'gm')
+
+            interfaceDecl = interfaceDecl.replace(interfaceLineRegex, '')
+            pantryDecl = pantryDecl.replace(pantryLineRegex, '')
+          }
+
+          interfaceDecl += `  ${quotedAlias}: typeof ${importAlias}\n`
+          pantryDecl += `  ${quotedAlias}: ${importAlias},\n`
+          usedPropertyNames.add(alias)
+        }
+      }
+
       interfaceDecl += '}\n\n'
       pantryDecl += '}\n\n'
 
@@ -912,10 +996,6 @@ async function extractAllAliases(packagesDir?: string): Promise<Record<string, s
       }
 
       if (domain === 'aws.amazon.com/cdk') {
-        if (!allAliases.cdk) {
-          allAliases.cdk = domain
-          console.log(`Added AWS CDK alias: cdk -> ${domain}`)
-        }
         if (!allAliases['aws/cdk']) {
           allAliases['aws/cdk'] = domain
           console.log(`Added AWS CDK path alias: aws/cdk -> ${domain}`)
@@ -929,7 +1009,7 @@ async function extractAllAliases(packagesDir?: string): Promise<Record<string, s
     }
   }
 
-  // Add alias overrides from the configuration
+  // Add alias overrides from the configuration - these take precedence over auto-generated aliases
   const aliasOverrides = getAllAliasOverrides()
   for (const [alias, domain] of Object.entries(aliasOverrides)) {
     if (!allAliases[alias]) {
@@ -937,7 +1017,10 @@ async function extractAllAliases(packagesDir?: string): Promise<Record<string, s
       console.log(`Added alias override: ${alias} -> ${domain}`)
     }
     else {
-      console.log(`Skipped alias override ${alias} -> ${domain} (already exists as ${allAliases[alias]})`)
+      // Force override existing aliases with the configured overrides
+      const previousDomain = allAliases[alias]
+      allAliases[alias] = domain
+      console.log(`Overrode alias ${alias}: ${previousDomain} -> ${domain}`)
     }
   }
 
@@ -1350,8 +1433,15 @@ async function generatePackagePages(outputDir: string, sourcePackagesDir?: strin
       continue
     }
     try {
-      // Create a safe filename that doesn't start with numbers or contain spaces
+      // Determine the filename - prefer primary alias over domain variable name
       let safeFilename = domainVarName
+
+      // If the package has aliases, use the shortest one as the primary filename
+      if (pkg.aliases && pkg.aliases.length > 0) {
+        // Sort aliases by length and use the shortest one
+        const sortedAliases = [...pkg.aliases].sort((a, b) => a.length - b.length)
+        safeFilename = sortedAliases[0]
+      }
 
       // If filename starts with a number, prepend with 'pkg-'
       if (/^\d/.test(safeFilename)) {
@@ -1388,7 +1478,7 @@ async function generatePackagePages(outputDir: string, sourcePackagesDir?: strin
 
 \`\`\`bash
 # Install with launchpad
-${pkg.installCommand || `sh <(curl https://pkgx.sh) +${domain} -- $SHELL -i`}
+${pkg.launchpadInstallCommand || pkg.installCommand || `launchpad install ${domain}`}
 \`\`\`
 
 ## Programs
@@ -1446,7 +1536,7 @@ This package can also be accessed using these aliases:
 
 \`\`\`bash
 # Install specific version
-sh <(curl https://pkgx.sh) +${domain}@${pkg.versions[0]} -- $SHELL -i
+${pkg.pkgxInstallCommand ? pkg.pkgxInstallCommand.replace(`+${domain}`, `+${domain}@${pkg.versions[0]}`) : `sh <(curl https://pkgx.sh) +${domain}@${pkg.versions[0]} -- $SHELL -i`}
 \`\`\`
 `
       }
@@ -1604,7 +1694,7 @@ ${description}
   : ''}
 **Programs**: ${pkg.programs && pkg.programs.length > 0 ? pkg.programs.map((p: string) => p.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')).join(', ') : 'None specified'}
 
-**Install**: \`${pkg.installCommand || `sh <(curl https://pkgx.sh) +${domain} -- $SHELL -i`}\`
+**Install**: \`${pkg.launchpadInstallCommand || pkg.installCommand || `launchpad install ${domain}`}\`
 
 ---
 

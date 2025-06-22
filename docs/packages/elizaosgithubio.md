@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install eliza
+launchpad install elizaOSgithub.io
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +solana.com -- $SHELL -i
+launchpad install solana.com
 ```
 
 ## Programs

@@ -1,11 +1,11 @@
-# nixpacks
+# nixpacks.com
 
 > App source + Nix packages + Docker = Image
 
 ## Package Information
 
-- **Domain**: `nixpacks`
-- **Name**: `nixpacks`
+- **Domain**: `nixpacks.com`
+- **Name**: `nixpacks.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nixpacks.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) nixpacks
+launchpad install nixpacks
 ```
 
 ## Programs
@@ -49,7 +49,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx nixpacks@1.39.0
+sh <(curl https://pkgx.sh) +nixpacks.com@1.39.0 -- $SHELL -i
 ```
 
 ## Usage Examples

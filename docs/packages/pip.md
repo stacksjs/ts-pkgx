@@ -1,11 +1,11 @@
-# pip
+# pip.pypa.io
 
 > The Python package installer
 
 ## Package Information
 
-- **Domain**: `pip`
-- **Name**: `pip`
+- **Domain**: `pip.pypa.io`
+- **Name**: `pip.pypa.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pip.pypa.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +pip.pypa.io -- $SHELL -i
+launchpad install +pip.pypa.io -- $SHELL -i
 ```
 
 ## Programs
@@ -30,7 +30,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+pip.pypa.io -- $SHELL -i`
 - `pip`
 
 ## Available Versions
@@ -53,7 +52,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx pip@25.1.1
+sh <(curl https://pkgx.sh) +pip.pypa.io@25.1.1 -- $SHELL -i
 ```
 
 ## Dependencies

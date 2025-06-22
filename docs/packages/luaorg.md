@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +lua.org -- $SHELL -i
+launchpad install lua.org
 ```
 
 ## Programs

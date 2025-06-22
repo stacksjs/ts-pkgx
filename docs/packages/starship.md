@@ -1,11 +1,11 @@
-# starship
+# starship.rs
 
 > ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
 ## Package Information
 
-- **Domain**: `starship`
-- **Name**: `starship`
+- **Domain**: `starship.rs`
+- **Name**: `starship.rs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/starship.rs/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) starship
+launchpad install starship
 ```
 
 ## Programs
@@ -47,7 +47,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx starship@1.23.0
+sh <(curl https://pkgx.sh) +starship.rs@1.23.0 -- $SHELL -i
 ```
 
 ## Usage Examples

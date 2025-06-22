@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install nvim
+launchpad install neovim.io
 ```
 
 ## Programs

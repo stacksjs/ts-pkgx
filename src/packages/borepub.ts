@@ -75,6 +75,8 @@ export const borePackage = {
   aliases: [
     'bore',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bore -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bore' as const,
 }
 
 export type BorePackage = typeof borePackage

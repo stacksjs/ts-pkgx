@@ -1,11 +1,11 @@
-# curlie
+# curlie.io
 
 > The power of curl, the ease of use of httpie.
 
 ## Package Information
 
-- **Domain**: `curlie`
-- **Name**: `curlie`
+- **Domain**: `curlie.io`
+- **Name**: `curlie.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/curlie.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) curlie
+launchpad install curlie
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx curlie@1.8.2
+sh <(curl https://pkgx.sh) +curlie.io@1.8.2 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -52,7 +52,7 @@ pkgx curlie@1.8.2
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.curlie
+const pkg = pantry.curlie_io
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

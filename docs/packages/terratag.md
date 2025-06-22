@@ -1,11 +1,11 @@
-# terratag
+# terratag.io
 
 > Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags across their entire set of AWS, Azure, and GCP resources
 
 ## Package Information
 
-- **Domain**: `terratag`
-- **Name**: `terratag`
+- **Domain**: `terratag.io`
+- **Name**: `terratag.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/terratag.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) terratag
+launchpad install terratag
 ```
 
 ## Programs
@@ -46,7 +46,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx terratag@0.7.2
+sh <(curl https://pkgx.sh) +terratag.io@0.7.2 -- $SHELL -i
 ```
 
 ## Dependencies

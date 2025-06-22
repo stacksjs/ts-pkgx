@@ -1,11 +1,11 @@
-# alembic
+# alembic.sqlalchemy.org
 
 > A database migrations tool for SQLAlchemy.
 
 ## Package Information
 
-- **Domain**: `alembic`
-- **Name**: `alembic`
+- **Domain**: `alembic.sqlalchemy.org`
+- **Name**: `alembic.sqlalchemy.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/alembic.sqlalchemy.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) alembic
+launchpad install alembic
 ```
 
 ## Programs
@@ -31,20 +31,20 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `1.16.1`, `1.16.0`, `1.15.2`, `1.15.1`, `1.14.1`
-- `1.14.0`, `1.13.3`, `1.13.2`
+- `1.16.2`, `1.16.1`, `1.16.0`, `1.15.2`, `1.15.1`
+- `1.14.1`, `1.14.0`, `1.13.3`, `1.13.2`
 
 </details>
 
-**Latest Version**: `1.16.1`
+**Latest Version**: `1.16.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx alembic@1.16.1
+sh <(curl https://pkgx.sh) alembic -- $SHELL -i
 ```
 
 ## Dependencies

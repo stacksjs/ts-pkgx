@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install shellcheck
+launchpad install shellcheck.net
 ```
 
 ## Programs

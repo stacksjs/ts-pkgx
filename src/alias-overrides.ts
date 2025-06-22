@@ -69,6 +69,12 @@ export const ALIAS_OVERRIDES: AliasOverride[] = [
     domain: 'bun.sh',
     aliases: ['bun'],
   },
+
+  // AWS Tools
+  {
+    domain: 'aws.amazon.com/cdk',
+    aliases: ['cdk', 'aws/cdk'],
+  },
 ]
 
 /**

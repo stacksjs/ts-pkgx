@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install hjson
+launchpad install hjsongithub.io
 ```
 
 ## Programs

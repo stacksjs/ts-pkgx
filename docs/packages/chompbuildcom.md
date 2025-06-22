@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +chompbuild.com@0.2.23 -- $SHELL -i
+sh <(curl https://pkgx.sh) chomp -- $SHELL -i
 ```
 
 ## Dependencies

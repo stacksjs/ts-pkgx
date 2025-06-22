@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install vale
+launchpad install vale.sh
 ```
 
 ## Programs

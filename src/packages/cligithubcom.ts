@@ -148,6 +148,8 @@ export const ghPackage = {
   aliases: [
     'gh',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gh' as const,
 }
 
 export type GhPackage = typeof ghPackage

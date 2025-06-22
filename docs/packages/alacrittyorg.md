@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +alacritty.org@0.15.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) alacritty -- $SHELL -i
 ```
 
 ## Dependencies

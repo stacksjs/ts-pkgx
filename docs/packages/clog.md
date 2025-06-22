@@ -1,11 +1,11 @@
-# clog
+# clog-tool.github.io
 
 > Colorized pattern-matching log tail utility
 
 ## Package Information
 
-- **Domain**: `clog`
-- **Name**: `clog`
+- **Domain**: `clog-tool.github.io`
+- **Name**: `clog-tool.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/clog-tool.github.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) clog
+launchpad install clog
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx clog@0.9.3
+sh <(curl https://pkgx.sh) +clog-tool.github.io@0.9.3 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -194,6 +194,8 @@ export const argocdPackage = {
     'argocd',
     'argo-cd',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) argocd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install argocd' as const,
 }
 
 export type ArgocdPackage = typeof argocdPackage

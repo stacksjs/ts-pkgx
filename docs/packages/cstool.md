@@ -1,11 +1,11 @@
-# cstool
+# capstone-engine.org
 
 > Capstone disassembly/disassembler framework for ARM, ARM64 (ARMv8), Alpha, BPF, Ethereum VM, HPPA, LoongArch, M68K, M680X, Mips, MOS65XX, PPC, RISC-V(rv32G/rv64G), SH, Sparc, SystemZ, TMS320C64X, TriCore, Webassembly, XCore and X86.
 
 ## Package Information
 
-- **Domain**: `cstool`
-- **Name**: `cstool`
+- **Domain**: `capstone-engine.org`
+- **Name**: `capstone-engine.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/capstone-engine.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) cstool
+launchpad install cstool
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx cstool@5.0.6
+sh <(curl https://pkgx.sh) cstool -- $SHELL -i
 ```
 
 ## Usage Examples

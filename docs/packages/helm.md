@@ -1,11 +1,11 @@
-# helm
+# helm.sh
 
 > The Kubernetes Package Manager
 
 ## Package Information
 
-- **Domain**: `helm`
-- **Name**: `helm`
+- **Domain**: `helm.sh`
+- **Name**: `helm.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/helm.sh/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) helm
+launchpad install helm
 ```
 
 ## Programs
@@ -31,25 +31,25 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 32 versions</summary>
+<summary>Show all 34 versions</summary>
 
-- `3.18.1`, `3.18.0`, `3.17.3`, `3.17.2`, `3.17.1`
-- `3.17.0`, `3.16.4`, `3.16.3`, `3.16.2`, `3.16.1`
-- `3.16.0`, `3.15.4`, `3.15.3`, `3.15.2`, `3.15.1`
-- `3.15.0`, `3.14.4`, `3.14.3`, `3.14.2`, `3.14.1`
-- `3.14.0`, `3.13.3`, `3.13.2`, `3.13.1`, `3.13.0`
-- `3.12.3`, `3.12.2`, `3.12.1`, `3.12.0`, `3.11.3`
-- `3.11.2`, `3.11.1`
+- `3.18.3`, `3.18.2`, `3.18.1`, `3.18.0`, `3.17.3`
+- `3.17.2`, `3.17.1`, `3.17.0`, `3.16.4`, `3.16.3`
+- `3.16.2`, `3.16.1`, `3.16.0`, `3.15.4`, `3.15.3`
+- `3.15.2`, `3.15.1`, `3.15.0`, `3.14.4`, `3.14.3`
+- `3.14.2`, `3.14.1`, `3.14.0`, `3.13.3`, `3.13.2`
+- `3.13.1`, `3.13.0`, `3.12.3`, `3.12.2`, `3.12.1`
+- `3.12.0`, `3.11.3`, `3.11.2`, `3.11.1`
 
 </details>
 
-**Latest Version**: `3.18.1`
+**Latest Version**: `3.18.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx helm@3.18.1
+sh <(curl https://pkgx.sh) +helm.sh@3.18.3 -- $SHELL -i
 ```
 
 ## Usage Examples

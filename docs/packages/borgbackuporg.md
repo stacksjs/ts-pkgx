@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +borgbackup.org -- $SHELL -i
+launchpad install +borgbackup.org
 ```
 
 ## Programs

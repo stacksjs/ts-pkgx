@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install cog
+launchpad install cocogitto.io
 ```
 
 ## Programs

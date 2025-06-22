@@ -1,11 +1,11 @@
-# composer
+# getcomposer.org
 
 > Dependency Manager for PHP
 
 ## Package Information
 
-- **Domain**: `composer`
-- **Name**: `composer`
+- **Domain**: `getcomposer.org`
+- **Name**: `getcomposer.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getcomposer.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +getcomposer.org -- $SHELL -i
+launchpad install +getcomposer.org -- $SHELL -i
 ```
 
 ## Programs
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+getcomposer.org -- $SHELL -i`
 - `composer`
 
 ## Available Versions
@@ -50,7 +49,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx composer@2.8.9
+sh <(curl https://pkgx.sh) +getcomposer.org@2.8.9 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -80,6 +80,8 @@ export const caddyPackage = {
   aliases: [
     'caddy',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) caddy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install caddy' as const,
 }
 
 export type CaddyPackage = typeof caddyPackage

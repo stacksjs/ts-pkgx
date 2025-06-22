@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install flipt
+launchpad install flipt.io
 ```
 
 ## Programs

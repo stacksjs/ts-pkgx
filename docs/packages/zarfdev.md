@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install zarf
+launchpad install zarf.dev
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install spacetime
+launchpad install spacetimedb.com
 ```
 
 ## Programs

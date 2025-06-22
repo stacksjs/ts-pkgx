@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +spawn.link -- $SHELL -i
+launchpad install +spawn.link -- $SHELL -i
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install stripe
+launchpad install stripe.com
 ```
 
 ## Programs

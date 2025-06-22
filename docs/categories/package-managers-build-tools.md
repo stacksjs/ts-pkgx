@@ -26,7 +26,7 @@ Open-source build automation tool based on the Groovy and Kotlin DSL
 
 ---
 
-### [mavenapache.org](../packages/mavenapacheorg.md) (maven.apache.org, mvn)
+### [maven.apache.org](../packages/mavenapacheorg.md) (mvn)
 
 Java-based project management
 
@@ -56,23 +56,23 @@ the package manager for JavaScript
 
 ---
 
-### [pipenvpypa.io](../packages/pipenvpypaio.md) (pipenv.pypa.io, pipenv)
-
-Python Development Workflow for Humans.
-
-**Programs**: pipenv
-
-**Install**: `launchpad install pipenv`
-
----
-
-### [pippypa.io](../packages/pippypaio.md) (pip.pypa.io, pip)
+### [pip.pypa.io](../packages/pippypaio.md) (pip)
 
 The Python package installer
 
 **Programs**: pip, pip3.8, pip3.9, pip3.10, pip3.11
 
 **Install**: `launchpad install +pip.pypa.io -- $SHELL -i`
+
+---
+
+### [pipenv.pypa.io](../packages/pipenvpypaio.md) (pipenv)
+
+Python Development Workflow for Humans.
+
+**Programs**: pipenv
+
+**Install**: `launchpad install pipenv`
 
 ---
 

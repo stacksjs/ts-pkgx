@@ -1,11 +1,11 @@
-# biome
+# biomejs.dev
 
 > A toolchain for web projects, aimed to provide functionalities to maintain them. Biome offers formatter and linter, usable via CLI and LSP.
 
 ## Package Information
 
-- **Domain**: `biome`
-- **Name**: `biome`
+- **Domain**: `biomejs.dev`
+- **Name**: `biomejs.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/biomejs.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) biome
+launchpad install biome
 ```
 
 ## Programs
@@ -48,7 +48,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx biome@1.9.4
+sh <(curl https://pkgx.sh) biome -- $SHELL -i
 ```
 
 ## Usage Examples

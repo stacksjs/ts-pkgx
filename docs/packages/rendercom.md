@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install render
+launchpad install render.com
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install volta
+launchpad install volta.sh
 ```
 
 ## Programs

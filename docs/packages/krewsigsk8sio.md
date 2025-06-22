@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install kubectl-krew
+launchpad install krewsigsk8s.io
 ```
 
 ## Programs

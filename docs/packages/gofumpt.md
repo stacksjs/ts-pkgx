@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gofumpt`
+- **Domain**: `mvdan.cc/gofumpt`
 - **Name**: `gofumpt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mvdan.cc/gofumpt/package.yml)
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) gofumpt
+launchpad install gofumpt
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `gofumpt`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `gofumpt`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx gofumpt@0.8.0
+sh <(curl https://pkgx.sh) +mvdan.cc/gofumpt@0.8.0 -- $SHELL -i
 ```
 
 ## Usage Examples

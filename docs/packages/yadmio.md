@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install yadm
+launchpad install yadm.io
 ```
 
 ## Programs

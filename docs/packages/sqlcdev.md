@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install sqlc
+launchpad install sqlc.dev
 ```
 
 ## Programs

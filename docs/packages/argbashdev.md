@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +argbash.dev -- $SHELL -i
+launchpad install argbash
 ```
 
 ## Programs

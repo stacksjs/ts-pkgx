@@ -96,6 +96,8 @@ export const certbotPackage = {
   aliases: [
     'certbot',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) certbot -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install certbot' as const,
 }
 
 export type CertbotPackage = typeof certbotPackage

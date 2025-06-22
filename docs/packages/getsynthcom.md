@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install synth
+launchpad install getsynth.com
 ```
 
 ## Programs

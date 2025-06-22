@@ -1,11 +1,11 @@
-# wasmer
+# wasmer.io
 
 > 🚀 Fast, secure, lightweight containers based on WebAssembly
 
 ## Package Information
 
-- **Domain**: `wasmer`
-- **Name**: `wasmer`
+- **Domain**: `wasmer.io`
+- **Name**: `wasmer.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wasmer.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) wasmer
+launchpad install wasmer
 ```
 
 ## Programs
@@ -47,7 +47,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx wasmer@6.0.1
+sh <(curl https://pkgx.sh) +wasmer.io@6.0.1 -- $SHELL -i
 ```
 
 ## Usage Examples

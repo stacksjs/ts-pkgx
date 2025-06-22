@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `libgdgithub.io`
+- **Domain**: `libgd.github.io`
 - **Name**: `libgd.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libgd.github.io/package.yml)
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +libgdgithub.io@2.3.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) +libgd.github.io@2.3.3 -- $SHELL -i
 ```
 
 ## Dependencies

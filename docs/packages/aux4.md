@@ -1,11 +1,11 @@
-# aux4
+# aux4.io
 
 > elevate your imagination
 
 ## Package Information
 
-- **Domain**: `aux4`
-- **Name**: `aux4`
+- **Domain**: `aux4.io`
+- **Name**: `aux4.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aux4.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) aux4
+launchpad install aux4
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx aux4@5.0.14
+sh <(curl https://pkgx.sh) aux4 -- $SHELL -i
 ```
 
 ## Usage Examples

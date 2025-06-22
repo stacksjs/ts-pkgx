@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install snyk
+launchpad install snyk.io
 ```
 
 ## Programs

@@ -1,11 +1,11 @@
-# kubebuilder
+# kubebuilder.io
 
 > Kubebuilder - SDK for building Kubernetes APIs using CRDs
 
 ## Package Information
 
-- **Domain**: `kubebuilder`
-- **Name**: `kubebuilder`
+- **Domain**: `kubebuilder.io`
+- **Name**: `kubebuilder.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kubebuilder.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) kubebuilder
+launchpad install kubebuilder
 ```
 
 ## Programs
@@ -46,7 +46,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx kubebuilder@4.6.0
+sh <(curl https://pkgx.sh) +kubebuilder.io@4.6.0 -- $SHELL -i
 ```
 
 ## Usage Examples

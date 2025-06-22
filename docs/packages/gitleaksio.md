@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install gitleaks
+launchpad install gitleaks.io
 ```
 
 ## Programs

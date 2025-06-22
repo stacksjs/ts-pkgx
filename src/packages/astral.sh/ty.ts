@@ -84,6 +84,8 @@ export const tyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ty -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ty' as const,
 }
 
 export type TyPackage = typeof tyPackage

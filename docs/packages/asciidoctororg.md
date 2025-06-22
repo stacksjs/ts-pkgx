@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +asciidoctor.org@2.0.23 -- $SHELL -i
+sh <(curl https://pkgx.sh) asciidoctor -- $SHELL -i
 ```
 
 ## Dependencies

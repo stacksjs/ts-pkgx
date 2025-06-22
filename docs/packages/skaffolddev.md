@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install skaffold
+launchpad install skaffold.dev
 ```
 
 ## Programs

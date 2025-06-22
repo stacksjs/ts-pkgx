@@ -5,7 +5,7 @@
  * @version `9.7.0` (63 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +bittensor.com -- $SHELL -i`
+ * @install `launchpad install +bittensor.com`
  * @aliases `Bittensor`
  * @dependencies `pkgx.sh^1`, `openssl.org^1.1`
  *
@@ -46,7 +46,7 @@ export const bittensorPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +bittensor.com -- $SHELL -i' as const,
+  installCommand: 'launchpad install +bittensor.com' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -133,6 +133,8 @@ export const bittensorPackage = {
   aliases: [
     'Bittensor',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install +bittensor.com' as const,
 }
 
 export type BittensorPackage = typeof bittensorPackage

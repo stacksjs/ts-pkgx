@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +openjpeg.org -- $SHELL -i
+launchpad install openjpeg.org
 ```
 
 ## Programs

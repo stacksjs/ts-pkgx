@@ -6,7 +6,7 @@
  * @version `2.11.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +argbash.dev -- $SHELL -i`
+ * @install `launchpad install argbash`
  * @aliases `argbash`
  * @dependencies `gnu.org/bash>=3`, `gnu.org/autoconf`
  *
@@ -48,7 +48,7 @@ export const argbashPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +argbash.dev -- $SHELL -i' as const,
+  installCommand: 'launchpad install argbash' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,6 +82,8 @@ export const argbashPackage = {
   aliases: [
     'argbash',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +argbash.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install argbash' as const,
 }
 
 export type ArgbashPackage = typeof argbashPackage

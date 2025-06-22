@@ -1,11 +1,11 @@
-# velero
+# velero.io
 
 > Backup and migrate Kubernetes applications and their persistent volumes
 
 ## Package Information
 
-- **Domain**: `velero`
-- **Name**: `velero`
+- **Domain**: `velero.io`
+- **Name**: `velero.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/velero.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) velero
+launchpad install velero
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx velero@1.16.1
+sh <(curl https://pkgx.sh) +velero.io@1.16.1 -- $SHELL -i
 ```
 
 ## Usage Examples

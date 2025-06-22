@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install jbig2dec
+launchpad install jbig2dec.com
 ```
 
 ## Programs

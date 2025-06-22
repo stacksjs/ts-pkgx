@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +getcomposer.org -- $SHELL -i
+launchpad install getcomposer.org
 ```
 
 ## Programs

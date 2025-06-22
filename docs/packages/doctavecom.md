@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install doctave
+launchpad install doctave.com
 ```
 
 ## Programs

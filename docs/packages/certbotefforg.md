@@ -46,7 +46,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +certboteff.org@4.1.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) certbot -- $SHELL -i
 ```
 
 ## Dependencies

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +swift.org -- $SHELL -i
+launchpad install swift.org
 ```
 
 ## Programs

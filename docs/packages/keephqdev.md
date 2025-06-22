@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install keep
+launchpad install keephq.dev
 ```
 
 ## Programs

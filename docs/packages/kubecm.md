@@ -1,11 +1,11 @@
-# kubecm
+# kubecm.cloud
 
 > Manage your kubeconfig more easily.
 
 ## Package Information
 
-- **Domain**: `kubecm`
-- **Name**: `kubecm`
+- **Domain**: `kubecm.cloud`
+- **Name**: `kubecm.cloud`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kubecm.cloud/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) kubecm
+launchpad install kubecm
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx kubecm@0.33.0
+sh <(curl https://pkgx.sh) +kubecm.cloud@0.33.0 -- $SHELL -i
 ```
 
 ## Usage Examples

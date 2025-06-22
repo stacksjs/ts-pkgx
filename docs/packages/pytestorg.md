@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pytest
+launchpad install pytest.org
 ```
 
 ## Programs

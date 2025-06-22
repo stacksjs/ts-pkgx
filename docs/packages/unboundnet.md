@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +unbound.net -- $SHELL -i
+launchpad install unbound.net
 ```
 
 ## Programs

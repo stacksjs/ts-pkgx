@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install xray
+launchpad install xtlsgithub.io
 ```
 
 ## Programs

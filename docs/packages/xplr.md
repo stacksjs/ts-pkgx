@@ -1,11 +1,11 @@
-# xplr
+# xplr.dev
 
 > A hackable, minimal, fast TUI file explorer
 
 ## Package Information
 
-- **Domain**: `xplr`
-- **Name**: `xplr`
+- **Domain**: `xplr.dev`
+- **Name**: `xplr.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xplr.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) xplr
+launchpad install xplr
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx xplr@1.0.0
+sh <(curl https://pkgx.sh) +xplr.dev@1.0.0 -- $SHELL -i
 ```
 
 ## Usage Examples

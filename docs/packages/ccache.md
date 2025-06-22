@@ -1,11 +1,11 @@
-# ccache
+# ccache.dev
 
 > Object-file caching compiler wrapper
 
 ## Package Information
 
-- **Domain**: `ccache`
-- **Name**: `ccache`
+- **Domain**: `ccache.dev`
+- **Name**: `ccache.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ccache.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) ccache
+launchpad install ccache
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx ccache@4.11.3
+sh <(curl https://pkgx.sh) ccache -- $SHELL -i
 ```
 
 ## Dependencies

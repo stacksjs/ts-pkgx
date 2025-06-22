@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install gradle
+launchpad install gradle.org
 ```
 
 ## Programs

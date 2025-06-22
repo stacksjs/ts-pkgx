@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install jetp
+launchpad install jetporch.com
 ```
 
 ## Programs

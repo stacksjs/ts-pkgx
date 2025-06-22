@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pinniped
+launchpad install pinniped.dev
 ```
 
 ## Programs

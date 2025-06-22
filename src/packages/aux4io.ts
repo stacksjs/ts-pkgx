@@ -76,6 +76,8 @@ export const aux4Package = {
   aliases: [
     'aux4',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aux4 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install aux4' as const,
 }
 
 export type Aux4Package = typeof aux4Package

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `freeglutsourceforge.io`
+- **Domain**: `freeglut.sourceforge.io`
 - **Name**: `freeglut.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freeglut.sourceforge.io/package.yml)
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +freeglutsourceforge.io@3.6.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +freeglut.sourceforge.io@3.6.0 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +liburcu.org -- $SHELL -i
+launchpad install liburcu.org
 ```
 
 ## Programs

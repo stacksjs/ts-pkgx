@@ -76,6 +76,8 @@ export const s4cmdPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) s4cmd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install s4cmd' as const,
 }
 
 export type S4cmdPackage = typeof s4cmdPackage

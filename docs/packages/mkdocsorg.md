@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install mkdocs
+launchpad install mkdocs.org
 ```
 
 ## Programs

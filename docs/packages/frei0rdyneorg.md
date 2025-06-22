@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +frei0r.dyne.org -- $SHELL -i
+launchpad install frei0rdyne.org
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +jemalloc.net -- $SHELL -i
+launchpad install jemalloc.net
 ```
 
 ## Programs

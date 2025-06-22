@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +jsonnet.org -- $SHELL -i
+launchpad install jsonnet.org
 ```
 
 ## Programs

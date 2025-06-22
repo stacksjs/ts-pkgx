@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +valkey.io -- $SHELL -i
+launchpad install valkey.io
 ```
 
 ## Programs

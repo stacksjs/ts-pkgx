@@ -1,11 +1,11 @@
-# gr2fonttest
+# graphite.sil.org
 
 > Graphite is a "smart font" system developed specifically to handle the complexities of lesser-known languages of the world.
 
 ## Package Information
 
-- **Domain**: `gr2fonttest`
-- **Name**: `gr2fonttest`
+- **Domain**: `graphite.sil.org`
+- **Name**: `graphite.sil.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/graphite.sil.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) gr2fonttest
+launchpad install gr2fonttest
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx gr2fonttest@1.3.14
+sh <(curl https://pkgx.sh) +graphite.sil.org@1.3.14 -- $SHELL -i
 ```
 
 ## Usage Examples

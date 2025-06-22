@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install tinygo
+launchpad install tinygo.org
 ```
 
 ## Programs

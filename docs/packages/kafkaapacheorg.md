@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `kafkaapache.org`
+- **Domain**: `kafka.apache.org`
 - **Name**: `kafka.apache.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kafka.apache.org/package.yml)
@@ -78,7 +78,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +kafkaapache.org@4.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +kafka.apache.org@4.0.0 -- $SHELL -i
 ```
 
 ## Dependencies

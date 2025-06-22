@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install atlantis
+launchpad install runatlantis.io
 ```
 
 ## Programs

@@ -74,6 +74,8 @@ export const glowPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) glow -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install glow' as const,
 }
 
 export type GlowPackage = typeof glowPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install idevicedate
+launchpad install libimobiledevice.org
 ```
 
 ## Programs

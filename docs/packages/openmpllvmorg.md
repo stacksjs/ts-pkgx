@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +openmp.llvm.org -- $SHELL -i
+launchpad install openmpllvm.org
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +openldap.org -- $SHELL -i
+launchpad install openldap.org
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +cmocka.org -- $SHELL -i
+launchpad install cmocka.org
 ```
 
 ## Programs

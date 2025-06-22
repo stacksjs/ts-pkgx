@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +aspell.net -- $SHELL -i
+launchpad install aspell.net
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +ijg.org -- $SHELL -i
+launchpad install ijg.org
 ```
 
 ## Programs

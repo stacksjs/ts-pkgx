@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install openvpn
+launchpad install openvpn.net
 ```
 
 ## Programs

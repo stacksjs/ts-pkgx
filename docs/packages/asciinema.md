@@ -1,11 +1,11 @@
-# asciinema
+# asciinema.org
 
 > Record and share terminal sessions
 
 ## Package Information
 
-- **Domain**: `asciinema`
-- **Name**: `asciinema`
+- **Domain**: `asciinema.org`
+- **Name**: `asciinema.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/asciinema.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) asciinema
+launchpad install asciinema
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx asciinema@2.4.0
+sh <(curl https://pkgx.sh) asciinema -- $SHELL -i
 ```
 
 ## Dependencies

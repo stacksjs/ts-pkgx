@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install protoc
+launchpad install protobuf.dev
 ```
 
 ## Programs

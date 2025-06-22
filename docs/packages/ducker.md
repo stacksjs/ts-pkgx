@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ducker`
+- **Domain**: `crates.io/ducker`
 - **Name**: `ducker`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/ducker/package.yml)
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) ducker
+launchpad install ducker
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `ducker`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `ducker`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx ducker@0.3.0
+sh <(curl https://pkgx.sh) +crates.io/ducker@0.3.0 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install wasmer
+launchpad install wasmer.io
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install wait4x
+launchpad install wait4x.dev
 ```
 
 ## Programs

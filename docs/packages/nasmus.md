@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +nasm.us -- $SHELL -i
+launchpad install +nasm.us -- $SHELL -i
 ```
 
 ## Programs

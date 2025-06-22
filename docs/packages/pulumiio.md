@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +pulumi.io -- $SHELL -i
+launchpad install pulumi.io
 ```
 
 ## Programs

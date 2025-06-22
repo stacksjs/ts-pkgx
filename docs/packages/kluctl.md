@@ -1,11 +1,11 @@
-# kluctl
+# kluctl.io
 
 > The missing glue to put together large Kubernetes deployments, composed of multiple smaller parts (Helm/Kustomize/...)  in a manageable and unified way.
 
 ## Package Information
 
-- **Domain**: `kluctl`
-- **Name**: `kluctl`
+- **Domain**: `kluctl.io`
+- **Name**: `kluctl.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kluctl.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) kluctl
+launchpad install kluctl
 ```
 
 ## Programs
@@ -45,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx kluctl@2.26.0
+sh <(curl https://pkgx.sh) +kluctl.io@2.26.0 -- $SHELL -i
 ```
 
 ## Usage Examples

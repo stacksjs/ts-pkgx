@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install ots
+launchpad install otssniptt.com
 ```
 
 ## Programs

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `sam`
+- **Domain**: `aws.amazon.com/sam`
 - **Name**: `sam`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aws.amazon.com/sam/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) sam
+launchpad install sam
 ```
 
 ## Programs
@@ -22,33 +22,28 @@ This package provides the following executable programs:
 
 - `sam`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `sam`
-
 ## Available Versions
 
 <details>
-<summary>Show all 29 versions</summary>
+<summary>Show all 31 versions</summary>
 
-- `1.139.0`, `1.138.0`, `1.137.1`, `1.137.0`, `1.136.0`
-- `1.135.0`, `1.134.0`, `1.133.0`, `1.132.0`, `1.131.0`
-- `1.130.0`, `1.129.0`, `1.128.0`, `1.127.0`, `1.126.0`
-- `1.125.0`, `1.124.0`, `1.123.0`, `1.122.0`, `1.121.0`
-- `1.120.0`, `1.119.0`, `1.118.0`, `1.117.0`, `1.116.0`
-- `1.115.0`, `1.114.0`, `1.113.0`, `1.112.0`
+- `1.141.0`, `1.140.0`, `1.139.0`, `1.138.0`, `1.137.1`
+- `1.137.0`, `1.136.0`, `1.135.0`, `1.134.0`, `1.133.0`
+- `1.132.0`, `1.131.0`, `1.130.0`, `1.129.0`, `1.128.0`
+- `1.127.0`, `1.126.0`, `1.125.0`, `1.124.0`, `1.123.0`
+- `1.122.0`, `1.121.0`, `1.120.0`, `1.119.0`, `1.118.0`
+- `1.117.0`, `1.116.0`, `1.115.0`, `1.114.0`, `1.113.0`
+- `1.112.0`
 
 </details>
 
-**Latest Version**: `1.139.0`
+**Latest Version**: `1.141.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx sam@1.139.0
+sh <(curl https://pkgx.sh) sam -- $SHELL -i
 ```
 
 ## Dependencies

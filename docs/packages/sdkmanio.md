@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install sdkman-init.sh
+launchpad install sdkman.io
 ```
 
 ## Programs

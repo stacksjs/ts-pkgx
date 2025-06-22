@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pixlet
+launchpad install tidbyt.com
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install julia
+launchpad install julialang.org
 ```
 
 ## Programs

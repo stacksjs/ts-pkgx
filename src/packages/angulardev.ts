@@ -186,6 +186,8 @@ export const ngPackage = {
   aliases: [
     'ng',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ng -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ng' as const,
 }
 
 export type NgPackage = typeof ngPackage

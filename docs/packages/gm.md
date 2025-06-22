@@ -1,11 +1,11 @@
-# gm
+# graphicsmagick.org
 
 > Image processing tools collection
 
 ## Package Information
 
-- **Domain**: `gm`
-- **Name**: `gm`
+- **Domain**: `graphicsmagick.org`
+- **Name**: `graphicsmagick.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/graphicsmagick.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) gm
+launchpad install gm
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx gm@1.3.45
+sh <(curl https://pkgx.sh) +graphicsmagick.org@1.3.45 -- $SHELL -i
 ```
 
 ## Dependencies

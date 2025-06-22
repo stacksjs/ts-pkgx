@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `create2crunch`
+- **Domain**: `github.com/0age/create2crunch`
 - **Name**: `create2crunch`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/0age/create2crunch/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) create2crunch
+launchpad install create2crunch
 ```
 
 ## Programs
@@ -21,13 +21,6 @@ sh <(curl https://pkgx.sh) create2crunch
 This package provides the following executable programs:
 
 - `create2crunch`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `create2crunch`
-- `0age/create2crunch`
 
 ## Available Versions
 
@@ -44,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx create2crunch@2024.12.23
+sh <(curl https://pkgx.sh) +github.com/0age/create2crunch@2024.12.23 -- $SHELL -i
 ```
 
 ## Usage Examples

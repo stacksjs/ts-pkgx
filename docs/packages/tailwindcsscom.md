@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install tailwindcss
+launchpad install tailwindcss.com
 ```
 
 ## Programs

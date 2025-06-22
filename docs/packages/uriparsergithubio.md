@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install uriparse
+launchpad install uriparsergithub.io
 ```
 
 ## Programs

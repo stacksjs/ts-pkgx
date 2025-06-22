@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `autos.sh`
+- **Domain**: `harding.motd.ca/autossh`
 - **Name**: `autossh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/harding.motd.ca/autossh/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) autossh
+launchpad install autossh
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +autos.sh@1.4f -- $SHELL -i
+sh <(curl https://pkgx.sh) +harding.motd.ca/autossh@1.4f -- $SHELL -i
 ```
 
 ## Dependencies

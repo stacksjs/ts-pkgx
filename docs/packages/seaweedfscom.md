@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install weed
+launchpad install seaweedfs.com
 ```
 
 ## Programs

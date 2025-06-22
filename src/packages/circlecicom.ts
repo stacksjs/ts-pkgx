@@ -127,6 +127,8 @@ export const circleciPackage = {
   aliases: [
     'circleci',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) circleci -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install circleci' as const,
 }
 
 export type CircleciPackage = typeof circleciPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install prettier
+launchpad install prettier.io
 ```
 
 ## Programs

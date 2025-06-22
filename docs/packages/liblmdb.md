@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `liblmdb`
+- **Domain**: `openldap.org/liblmdb`
 - **Name**: `liblmdb`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openldap.org/liblmdb/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +openldap.org/liblmdb -- $SHELL -i
+launchpad install +openldap.org/liblmdb -- $SHELL -i
 ```
 
 ## Programs
@@ -24,12 +24,6 @@ This package provides the following executable programs:
 - `mdb_dump`
 - `mdb_load`
 - `mdb_stat`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `liblmdb`
 
 ## Available Versions
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx liblmdb@0.9.33
+sh <(curl https://pkgx.sh) +openldap.org/liblmdb@0.9.33 -- $SHELL -i
 ```
 
 ## Usage Examples

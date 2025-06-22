@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install sops
+launchpad install getsops.io
 ```
 
 ## Programs

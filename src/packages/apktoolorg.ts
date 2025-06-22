@@ -81,6 +81,8 @@ export const apktoolPackage = {
   aliases: [
     'apktool',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) apktool -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install apktool' as const,
 }
 
 export type ApktoolPackage = typeof apktoolPackage

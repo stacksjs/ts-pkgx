@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `vers.io`
+- **Domain**: `crates.io/versio`
 - **Name**: `versio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/versio/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) versio
+launchpad install versio
 ```
 
 ## Programs
@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 2 versions</summary>
+<summary>Show all 3 versions</summary>
 
-- `0.8.3`, `0.7.6`
+- `0.8.5`, `0.8.3`, `0.7.6`
 
 </details>
 
-**Latest Version**: `0.8.3`
+**Latest Version**: `0.8.5`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +vers.io@0.8.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/versio@0.8.5 -- $SHELL -i
 ```
 
 ## Dependencies

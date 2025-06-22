@@ -86,6 +86,8 @@ export const alembicPackage = {
   aliases: [
     'alembic',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) alembic -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install alembic' as const,
 }
 
 export type AlembicPackage = typeof alembicPackage

@@ -45,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +carapace.sh@1.3.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) carapace -- $SHELL -i
 ```
 
 ## Usage Examples

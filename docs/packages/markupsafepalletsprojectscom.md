@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `markupsafepalletsprojects.com`
+- **Domain**: `markupsafe.palletsprojects.com`
 - **Name**: `markupsafe.palletsprojects.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/markupsafe.palletsprojects.com/package.yml)
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +markupsafepalletsprojects.com@3.0.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +markupsafe.palletsprojects.com@3.0.2 -- $SHELL -i
 ```
 
 ## Dependencies

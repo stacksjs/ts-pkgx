@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install conftest
+launchpad install conftest.dev
 ```
 
 ## Programs

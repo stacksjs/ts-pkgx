@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install logdy
+launchpad install logdy.dev
 ```
 
 ## Programs

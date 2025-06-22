@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install velero
+launchpad install velero.io
 ```
 
 ## Programs

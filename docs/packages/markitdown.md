@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `markitdown`
+- **Domain**: `microsoft.com/markitdown`
 - **Name**: `markitdown`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/markitdown/package.yml)
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) markitdown
+launchpad install markitdown
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `markitdown`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `markitdown`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx markitdown@0.0.1.3
+sh <(curl https://pkgx.sh) +microsoft.com/markitdown@0.0.1.3 -- $SHELL -i
 ```
 
 ## Dependencies

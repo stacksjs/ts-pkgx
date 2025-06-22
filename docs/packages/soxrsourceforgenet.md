@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +soxr.sourceforge.net -- $SHELL -i
+launchpad install soxrsourceforge.net
 ```
 
 ## Programs

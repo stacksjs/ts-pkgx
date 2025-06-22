@@ -1,11 +1,11 @@
-# dhall
+# dhall-lang.org
 
 > Interpreter for the Dhall language
 
 ## Package Information
 
-- **Domain**: `dhall`
-- **Name**: `dhall`
+- **Domain**: `dhall-lang.org`
+- **Name**: `dhall-lang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dhall-lang.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) dhall
+launchpad install dhall
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx dhall@1.42.2
+sh <(curl https://pkgx.sh) +dhall-lang.org@1.42.2 -- $SHELL -i
 ```
 
 ## Dependencies

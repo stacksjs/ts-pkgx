@@ -99,6 +99,8 @@ export const bashlyPackage = {
   aliases: [
     'bashly',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bashly -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bashly' as const,
 }
 
 export type BashlyPackage = typeof bashlyPackage

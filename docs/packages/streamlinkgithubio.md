@@ -46,7 +46,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +streamlinkgithub.io@7.4.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) streamlink -- $SHELL -i
 ```
 
 ## Dependencies

@@ -154,6 +154,8 @@ export const ruffPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ruff -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ruff' as const,
 }
 
 export type RuffPackage = typeof ruffPackage

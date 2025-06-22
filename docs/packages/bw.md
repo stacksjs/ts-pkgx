@@ -1,11 +1,11 @@
-# bw
+# bitwarden.com
 
 > Secure and free password manager for all of your devices
 
 ## Package Information
 
-- **Domain**: `bw`
-- **Name**: `bw`
+- **Domain**: `bitwarden.com`
+- **Name**: `bitwarden.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bitwarden.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) bw
+launchpad install bw
 ```
 
 ## Programs
@@ -47,7 +47,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx bw@2025.4.0
+sh <(curl https://pkgx.sh) bw -- $SHELL -i
 ```
 
 ## Dependencies

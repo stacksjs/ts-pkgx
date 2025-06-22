@@ -1,11 +1,11 @@
-# trip
+# trippy.cli.rs
 
 > Network diagnostic tool, inspired by mtr
 
 ## Package Information
 
-- **Domain**: `trip`
-- **Name**: `trip`
+- **Domain**: `trippy.cli.rs`
+- **Name**: `trippy.cli.rs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/trippy.cli.rs/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) trip
+launchpad install trip
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx trip@0.13.0
+sh <(curl https://pkgx.sh) +trippy.cli.rs@0.13.0 -- $SHELL -i
 ```
 
 ## Usage Examples

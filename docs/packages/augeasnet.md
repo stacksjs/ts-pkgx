@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +augeas.net -- $SHELL -i
+launchpad install augeas.net
 ```
 
 ## Programs

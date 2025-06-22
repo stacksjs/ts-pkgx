@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +qt.io -- $SHELL -i
+launchpad install qt.io
 ```
 
 ## Programs

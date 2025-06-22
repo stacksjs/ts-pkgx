@@ -1,11 +1,11 @@
-# vspipe
+# vapoursynth.com
 
 > A video processing framework with simplicity in mind
 
 ## Package Information
 
-- **Domain**: `vspipe`
-- **Name**: `vspipe`
+- **Domain**: `vapoursynth.com`
+- **Name**: `vapoursynth.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vapoursynth.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) vspipe
+launchpad install vspipe
 ```
 
 ## Programs
@@ -31,20 +31,20 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `71.0.0`, `70.0.0`, `69.0.0`, `68.0.0`, `67.0.0`
-- `66.0.0`, `65.0.0`, `64.0.0`
+- `72.0.0`, `71.0.0`, `70.0.0`, `69.0.0`, `68.0.0`
+- `67.0.0`, `66.0.0`, `65.0.0`, `64.0.0`
 
 </details>
 
-**Latest Version**: `71.0.0`
+**Latest Version**: `72.0.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx vspipe@71.0.0
+sh <(curl https://pkgx.sh) +vapoursynth.com@72.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -53,8 +53,7 @@ This package depends on:
 
 - `python.org~3.11`
 - `github.com/sekrit-twc/zimg`
-- `linuxgnu.org/gcc/libstdcxx`
-- `gnu.org/gcc/libstdcxx`
+- `linux:gnu.org/gcc/libstdcxx`
 
 ## Usage Examples
 

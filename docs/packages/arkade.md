@@ -1,11 +1,11 @@
-# Arkade
+# arkade.dev
 
 > Open Source Marketplace For Developer Tools
 
 ## Package Information
 
-- **Domain**: `arkade`
-- **Name**: `Arkade`
+- **Domain**: `arkade.dev`
+- **Name**: `arkade.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/arkade.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) arkade
+launchpad install arkade
 ```
 
 ## Programs
@@ -51,7 +51,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx Arkade@0.11.39
+sh <(curl https://pkgx.sh) arkade -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -60,7 +60,7 @@ pkgx Arkade@0.11.39
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.arkade
+const pkg = pantry.Arkade
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

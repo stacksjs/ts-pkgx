@@ -1,11 +1,11 @@
-# Vanna
+# vanna.ai
 
 > 🤖 Chat with your SQL database 📊. Accurate Text-to-SQL Generation via LLMs using RAG 🔄.
 
 ## Package Information
 
-- **Domain**: `vanna`
-- **Name**: `Vanna`
+- **Domain**: `vanna.ai`
+- **Name**: `vanna.ai`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vanna.ai/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +vanna.ai -- $SHELL -i
+launchpad install +vanna.ai -- $SHELL -i
 ```
 
 ## Programs
@@ -26,7 +26,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+vanna.ai -- $SHELL -i`
 - `Vanna`
 
 ## Available Versions
@@ -52,7 +51,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx Vanna@0.7.9
+sh <(curl https://pkgx.sh) +vanna.ai@0.7.9 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -60,8 +59,7 @@ pkgx Vanna@0.7.9
 This package depends on:
 
 - `python.org~3.12`
-- `linuxopenmp.llvm.org@17`
-- `openmp.llvm.org@17`
+- `linux:openmp.llvm.org^17 # needed by chromadb`
 
 ## Usage Examples
 
@@ -69,7 +67,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.vanna
+const pkg = pantry.Vanna
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

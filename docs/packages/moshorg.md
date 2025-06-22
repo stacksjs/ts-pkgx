@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mosh.org -- $SHELL -i
+launchpad install mosh.org
 ```
 
 ## Programs

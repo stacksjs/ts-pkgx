@@ -58,7 +58,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +cligithub.com@2.74.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) gh -- $SHELL -i
 ```
 
 ## Usage Examples

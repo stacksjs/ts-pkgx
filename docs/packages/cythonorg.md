@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install cython
+launchpad install cython.org
 ```
 
 ## Programs

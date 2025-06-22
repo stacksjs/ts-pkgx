@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install sniffnet
+launchpad install sniffnet.net
 ```
 
 ## Programs

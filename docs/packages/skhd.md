@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `skhd`
+- **Domain**: `github.com/koekeishiya/skhd`
 - **Name**: `skhd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/koekeishiya/skhd/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) skhd
+launchpad install skhd
 ```
 
 ## Programs
@@ -21,13 +21,6 @@ sh <(curl https://pkgx.sh) skhd
 This package provides the following executable programs:
 
 - `skhd`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `skhd`
-- `koekeishiya/skhd`
 
 ## Available Versions
 
@@ -44,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx skhd@0.3.9
+sh <(curl https://pkgx.sh) +github.com/koekeishiya/skhd@0.3.9 -- $SHELL -i
 ```
 
 ## Usage Examples

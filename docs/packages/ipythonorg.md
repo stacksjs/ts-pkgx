@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +ipython.org -- $SHELL -i
+launchpad install ipython.org
 ```
 
 ## Programs

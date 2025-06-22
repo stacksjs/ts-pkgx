@@ -101,6 +101,8 @@ export const bwPackage = {
   aliases: [
     'bw',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bw -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bw' as const,
 }
 
 export type BwPackage = typeof bwPackage

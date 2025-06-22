@@ -4,16 +4,16 @@
 
 ## Package Information
 
-- **Domain**: `s3cmd`
+- **Domain**: `s3tools.org/s3cmd`
 - **Name**: `s3cmd`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/s3tools.org/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/s3tools.org/s3cmd/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) s3cmd
+launchpad install s3cmd
 ```
 
 ## Programs
@@ -22,18 +22,12 @@ This package provides the following executable programs:
 
 - `s3cmd`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `s3cmd`
-
 ## Available Versions
 
 <details>
-<summary>Show all 2 versions</summary>
+<summary>Show all 1 versions</summary>
 
-- `2.4.0`, `2.3.0`
+- `2.4.0`
 
 </details>
 
@@ -43,14 +37,14 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx s3cmd@2.4.0
+sh <(curl https://pkgx.sh) +s3tools.org/s3cmd@2.4.0 -- $SHELL -i
 ```
 
 ## Dependencies
 
 This package depends on:
 
-- `python.org>=3<3.12`
+- `pkgx.sh^1`
 
 ## Usage Examples
 
@@ -67,7 +61,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/s3tools.org/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/s3tools.org/s3cmd/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

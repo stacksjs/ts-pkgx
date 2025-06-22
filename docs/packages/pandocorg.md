@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pandoc
+launchpad install pandoc.org
 ```
 
 ## Programs

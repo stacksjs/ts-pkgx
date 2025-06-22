@@ -1,11 +1,11 @@
-# xmlwf
+# libexpat.github.io
 
 > :herb: Fast streaming XML parser written in C99 with >90% test coverage; moved from SourceForge to GitHub
 
 ## Package Information
 
-- **Domain**: `xmlwf`
-- **Name**: `xmlwf`
+- **Domain**: `libexpat.github.io`
+- **Name**: `libexpat.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libexpat.github.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) xmlwf
+launchpad install xmlwf
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx xmlwf@2.7.1
+sh <(curl https://pkgx.sh) +libexpat.github.io@2.7.1 -- $SHELL -i
 ```
 
 ## Usage Examples

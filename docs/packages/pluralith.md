@@ -1,11 +1,11 @@
-# pluralith
+# pluralith.com
 
 > A tool for Terraform state visualisation and automated generation of infrastructure documentation
 
 ## Package Information
 
-- **Domain**: `pluralith`
-- **Name**: `pluralith`
+- **Domain**: `pluralith.com`
+- **Name**: `pluralith.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pluralith.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) pluralith
+launchpad install pluralith
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx pluralith@0.2.2
+sh <(curl https://pkgx.sh) +pluralith.com@0.2.2 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ox`
+- **Domain**: `crates.io/ox`
 - **Name**: `ox`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/ox/package.yml)
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) ox
+launchpad install ox
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `ox`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `ox`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx ox@0.7.7
+sh <(curl https://pkgx.sh) +crates.io/ox@0.7.7 -- $SHELL -i
 ```
 
 ## Usage Examples

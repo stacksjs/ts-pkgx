@@ -1008,6 +1008,8 @@ export const awsPackage = {
     'aws',
     'aws/cli',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aws -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install aws' as const,
 }
 
 export type AwsPackage = typeof awsPackage

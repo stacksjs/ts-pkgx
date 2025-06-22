@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pipenv
+launchpad install pipenvpypa.io
 ```
 
 ## Programs

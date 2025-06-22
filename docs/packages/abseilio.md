@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +abseil.io -- $SHELL -i
+launchpad install abseil.io
 ```
 
 ## Programs

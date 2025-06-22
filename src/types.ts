@@ -34,7 +34,21 @@ export interface PkgxPackage {
   packageYmlUrl?: string
   homepageUrl?: string
   githubUrl?: string
+  /**
+   * Command to install this package using launchpad (default install command)
+   * @example launchpad install domain
+   */
   installCommand: string
+  /**
+   * Command to install this package using pkgx
+   * @example sh <(curl https://pkgx.sh) +domain -- $SHELL -i
+   */
+  pkgxInstallCommand: string
+  /**
+   * Command to install this package using launchpad
+   * @example launchpad install domain
+   */
+  launchpadInstallCommand: string
   programs: string[]
   companions: string[]
   dependencies: string[]

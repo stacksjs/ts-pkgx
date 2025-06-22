@@ -1,11 +1,11 @@
-# maturin
+# maturin.rs
 
 > Build and publish crates with pyo3, cffi and uniffi bindings as well as rust binaries as python packages
 
 ## Package Information
 
-- **Domain**: `maturin`
-- **Name**: `maturin`
+- **Domain**: `maturin.rs`
+- **Name**: `maturin.rs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/maturin.rs/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) maturin
+launchpad install maturin
 ```
 
 ## Programs
@@ -31,22 +31,22 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 19 versions</summary>
+<summary>Show all 20 versions</summary>
 
-- `1.8.6`, `1.8.5`, `1.8.3`, `1.8.2`, `1.8.1`
-- `1.8.0`, `1.7.8`, `1.7.7`, `1.7.6`, `1.7.5`
-- `1.7.4`, `1.7.3`, `1.7.2`, `1.7.1`, `1.7.0`
-- `1.6.0`, `1.5.1`, `1.5.0`, `1.4.0`
+- `1.8.7`, `1.8.6`, `1.8.5`, `1.8.3`, `1.8.2`
+- `1.8.1`, `1.8.0`, `1.7.8`, `1.7.7`, `1.7.6`
+- `1.7.5`, `1.7.4`, `1.7.3`, `1.7.2`, `1.7.1`
+- `1.7.0`, `1.6.0`, `1.5.1`, `1.5.0`, `1.4.0`
 
 </details>
 
-**Latest Version**: `1.8.6`
+**Latest Version**: `1.8.7`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx maturin@1.8.6
+sh <(curl https://pkgx.sh) +maturin.rs@1.8.7 -- $SHELL -i
 ```
 
 ## Usage Examples

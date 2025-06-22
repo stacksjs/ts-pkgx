@@ -1,11 +1,11 @@
-# julia
+# julialang.org
 
 > The Julia Programming Language
 
 ## Package Information
 
-- **Domain**: `julia`
-- **Name**: `julia`
+- **Domain**: `julialang.org`
+- **Name**: `julialang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/julialang.org/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) julia
+launchpad install julia
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `julia`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `julia`
 
@@ -40,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +julia@1.11.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) +julialang.org@1.11.5 -- $SHELL -i
 ```
 
 ## Usage Examples

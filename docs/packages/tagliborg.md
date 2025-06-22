@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install taglib-config
+launchpad install taglib.org
 ```
 
 ## Programs

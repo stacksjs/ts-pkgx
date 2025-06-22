@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gtssourceforge.net`
+- **Domain**: `gts.sourceforge.net`
 - **Name**: `gts.sourceforge.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gts.sourceforge.net/package.yml)
@@ -45,7 +45,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gtssourceforge.net@0.7.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gts.sourceforge.net@0.7.6 -- $SHELL -i
 ```
 
 ## Dependencies

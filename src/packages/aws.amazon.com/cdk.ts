@@ -240,6 +240,8 @@ export const cdkPackage = {
   aliases: [
     'aws/cdk',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cdk -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cdk' as const,
 }
 
 export type CdkPackage = typeof cdkPackage

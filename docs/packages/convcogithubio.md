@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install convco
+launchpad install convcogithub.io
 ```
 
 ## Programs

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ruby`
+- **Domain**: `ruby-lang.org`
 - **Name**: `ruby-lang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ruby-lang.org/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +ruby-lang.org -- $SHELL -i
+launchpad install +ruby-lang.org -- $SHELL -i
 ```
 
 ## Programs
@@ -31,7 +31,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+ruby-lang.org -- $SHELL -i`
 - `ruby`
 
 ## Available Versions
@@ -57,7 +56,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx ruby-lang.org@3.4.4
+sh <(curl https://pkgx.sh) +ruby-lang.org@3.4.4 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -72,7 +71,7 @@ This package depends on:
 
 These packages work well with ruby-lang.org:
 
-- `rubygems.org`
+- [`rubygems.org`](rubygemsorg.md) - Powerful, clean, object-oriented scripting language
 
 ## Usage Examples
 

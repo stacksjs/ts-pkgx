@@ -76,6 +76,8 @@ export const aserverPackage = {
   aliases: [
     'aserver',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aserver -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install aserver' as const,
 }
 
 export type AserverPackage = typeof aserverPackage

@@ -1,11 +1,11 @@
-# exiftool
+# exiftool.org
 
 > Perl lib for reading and writing EXIF metadata
 
 ## Package Information
 
-- **Domain**: `exiftool`
-- **Name**: `exiftool`
+- **Domain**: `exiftool.org`
+- **Name**: `exiftool.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/exiftool.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) exiftool
+launchpad install exiftool
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx exiftool@13.30.0
+sh <(curl https://pkgx.sh) +exiftool.org@13.30.0 -- $SHELL -i
 ```
 
 ## Dependencies

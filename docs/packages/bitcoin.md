@@ -1,11 +1,11 @@
-# bitcoin
+# bitcoin.org
 
 > Decentralized, peer to peer payment network
 
 ## Package Information
 
-- **Domain**: `bitcoin`
-- **Name**: `bitcoin`
+- **Domain**: `bitcoin.org`
+- **Name**: `bitcoin.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bitcoin.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +bitcoin.org -- $SHELL -i
+launchpad install +bitcoin.org
 ```
 
 ## Programs
@@ -30,7 +30,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+bitcoin.org -- $SHELL -i`
 - `bitcoin`
 
 ## Available Versions
@@ -51,7 +50,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx bitcoin@29.0.0
+sh <(curl https://pkgx.sh) +bitcoin.org@29.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,8 +62,7 @@ This package depends on:
 - `libevent.org^2`
 - `zeromq.org^4`
 - `sqlite.org^3`
-- `linuxgnu.org/gcc/libstdcxx`
-- `gnu.org/gcc/libstdcxx`
+- `linux:gnu.org/gcc/libstdcxx`
 
 ## Usage Examples
 

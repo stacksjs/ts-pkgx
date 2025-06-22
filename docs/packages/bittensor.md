@@ -1,11 +1,11 @@
-# Bittensor
+# bittensor.com
 
 > Internet-scale Neural Networks
 
 ## Package Information
 
-- **Domain**: `bittensor`
-- **Name**: `Bittensor`
+- **Domain**: `bittensor.com`
+- **Name**: `bittensor.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bittensor.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i
+launchpad install +bittensor.com
 ```
 
 ## Programs
@@ -26,7 +26,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+bittensor.com -- $SHELL -i`
 - `Bittensor`
 
 ## Available Versions
@@ -56,7 +55,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx Bittensor@9.7.0
+sh <(curl https://pkgx.sh) +bittensor.com@9.7.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -72,7 +71,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.bittensor
+const pkg = pantry.Bittensor
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

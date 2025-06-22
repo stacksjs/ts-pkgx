@@ -908,8 +908,8 @@ export async function fetchPantryPackage(
         // Get primary data from the page - using the MUI classes
         const nameElement = document.querySelector('h2.MuiTypography-h2')
 
-        // Get the name (which might be an alias)
-        const name = nameElement ? nameElement.childNodes[0].textContent?.trim() || '' : ''
+        // Get the display name from h2 (which might be generic)
+        const displayName = nameElement ? nameElement.childNodes[0].textContent?.trim() || '' : ''
 
         // Extract domain from span inside the h2
         const domainElement = document.querySelector('h2.MuiTypography-h2 span')
@@ -917,8 +917,8 @@ export async function fetchPantryPackage(
           ? domainElement.textContent?.trim().replace(/[()]/g, '') || ''
           : window.location.pathname.split('/pkgs/')[1]?.replace(/\/$/, '') || ''
 
-        // Check for possible alias (e.g., "bun" for "bun.sh")
-        const possibleAlias = name.toLowerCase()
+        // Determine the actual package name (will be refined later)
+        let name = displayName
 
         // Get description
         const description = getTextContent('h5.MuiTypography-h5:not(:has(+ ul))')
@@ -961,6 +961,29 @@ export async function fetchPantryPackage(
         const companions = getItemsBelowHeading('Companions')
         const dependencies = getItemsBelowHeading('Dependencies')
         const versions = getItemsBelowHeading('Versions')
+
+        // Refine the package name based on programs and install command
+        // For packages where the display name is generic or doesn't match the actual package,
+        // try to extract the real name from the install command or programs list
+        if (programs.length > 0 && displayName && displayName.length <= 3) {
+          // For very short names like "go", prefer the program name
+          name = programs[0]
+        }
+
+        // If the install command suggests a different name, use that
+        if (installCommand) {
+          const installMatch = installCommand.match(/sh\s*<\(curl[^)]+\)\s+(\+)?(\S+)/)
+          if (installMatch && installMatch[2]) {
+            const installName = installMatch[2].trim()
+            // If the install name is different from display name and looks more specific, use it
+            if (installName !== displayName && installName.includes('-') && programs.includes(installName)) {
+              name = installName
+            }
+          }
+        }
+
+        // Check for possible alias (e.g., "bun" for "bun.sh") - after name refinement
+        const possibleAlias = name.toLowerCase()
 
         // Extract aliases from the install command
         const aliases: string[] = []
@@ -1072,6 +1095,7 @@ export async function fetchPantryPackage(
         const [parentDomain, subPath] = originalName.split('/')
 
         // If we have a nested path, ensure proper domain and name are set
+        // Only override the name if it's actually empty, not if it was refined to something meaningful
         if (!packageInfo.name || packageInfo.name === '') {
           // Use the subPath as the name if name is empty
           packageInfo.name = subPath
@@ -1275,25 +1299,98 @@ export async function fetchPantryPackage(
       // Ensure we have values for required fields
       packageInfo.name = packageInfo.name || originalName
       packageInfo.domain = packageInfo.domain || fullDomainName
-      packageInfo.installCommand = packageInfo.installCommand || `launchpad install ${originalName}`
       packageInfo.programs = packageInfo.programs || []
       packageInfo.companions = packageInfo.companions || []
       packageInfo.dependencies = packageInfo.dependencies || []
       packageInfo.versions = packageInfo.versions || []
 
-      // Transform install commands from pkgx format to launchpad format
-      if (packageInfo.installCommand) {
-        if (packageInfo.installCommand.startsWith('pkgx ')) {
-          const packageNameFromCommand = packageInfo.installCommand.replace('pkgx ', '')
-          packageInfo.installCommand = `launchpad install ${packageNameFromCommand}`
+      // Generate both install commands
+      const generateInstallCommands = (pkgName: string, domain: string) => {
+        // Use the actual install command from the page if available
+        let pkgxCommand = `sh <(curl https://pkgx.sh) +${domain} -- $SHELL -i`
+        let launchpadName = pkgName
+
+        // Extract the actual package name from the install command on the page
+        if (packageInfo.installCommand) {
+          // Handle both formats: "sh <(curl https://pkgx.sh) +domain" and "sh <(curl https://pkgx.sh) alias"
+          const installMatch = packageInfo.installCommand.match(/sh\s*<\(curl[^)]+\)\s+(\+)?(\S+)/)
+          if (installMatch && installMatch[2]) {
+            const hasPlus = installMatch[1] === '+'
+            const extractedName = installMatch[2].trim()
+
+            if (hasPlus) {
+              // If the install command uses +domain format, prefer a simple alias for launchpad
+              pkgxCommand = `sh <(curl https://pkgx.sh) +${extractedName} -- $SHELL -i`
+              // Try to find a simple alias, otherwise use the domain
+              if (packageInfo.aliases && packageInfo.aliases.length > 0) {
+                const simpleAlias = packageInfo.aliases.find((alias: string) =>
+                  !alias.includes('.') && !alias.includes('/') && !alias.includes(' ')
+                  && alias.length > 0 && alias.length < 20,
+                )
+                launchpadName = simpleAlias || extractedName
+              }
+              else {
+                launchpadName = extractedName
+              }
+            }
+            else {
+              // If the install command already uses a simple alias, use it for both
+              pkgxCommand = `sh <(curl https://pkgx.sh) ${extractedName} -- $SHELL -i`
+              launchpadName = extractedName
+            }
+          }
         }
-        else if (packageInfo.installCommand.includes('sh <(curl https://pkgx.sh)')) {
+
+        // If we have aliases and no package name was extracted, use the first simple alias
+        if (launchpadName === pkgName && packageInfo.aliases && packageInfo.aliases.length > 0) {
+          const simpleAlias = packageInfo.aliases.find((alias: string) =>
+            !alias.includes('.') && !alias.includes('/') && !alias.includes(' ')
+            && alias.length > 0 && alias.length < 20,
+          )
+          if (simpleAlias) {
+            launchpadName = simpleAlias
+          }
+        }
+
+        const launchpadCommand = `launchpad install ${launchpadName}`
+
+        return { pkgxCommand, launchpadCommand }
+      }
+
+      const { pkgxCommand, launchpadCommand } = generateInstallCommands(originalName, fullDomainName)
+
+      // Set the new install command fields
+      packageInfo.pkgxInstallCommand = pkgxCommand
+      packageInfo.launchpadInstallCommand = launchpadCommand
+
+      // Set installCommand to launchpad (our default)
+      packageInfo.installCommand = launchpadCommand
+
+      // Handle legacy install commands if they exist and transform them
+      if (packageInfo.installCommand && packageInfo.installCommand !== launchpadCommand) {
+        const legacyCommand = packageInfo.installCommand
+
+        if (legacyCommand.startsWith('pkgx ')) {
+          const packageNameFromCommand = legacyCommand.replace('pkgx ', '')
+          packageInfo.launchpadInstallCommand = `launchpad install ${packageNameFromCommand}`
+          packageInfo.installCommand = packageInfo.launchpadInstallCommand
+        }
+        else if (legacyCommand.includes('sh <(curl https://pkgx.sh)')) {
           // Handle the older sh <(curl) format: "sh <(curl https://pkgx.sh) packagename"
-          const match = packageInfo.installCommand.match(/sh\s*<\(curl[^)]+\)\s+(\S.*)$/)
+          const match = legacyCommand.match(/sh\s*<\(curl[^)]+\)\s+(\S.*)$/)
           if (match && match[1]) {
             const packageNameFromCommand = match[1].trim()
-            packageInfo.installCommand = `launchpad install ${packageNameFromCommand}`
+            // Extract just the package name without + and shell args
+            const cleanPackageName = packageNameFromCommand.replace(/^\+/, '').replace(/\s+--.*$/, '')
+            packageInfo.launchpadInstallCommand = `launchpad install ${cleanPackageName}`
+            packageInfo.installCommand = packageInfo.launchpadInstallCommand
+            packageInfo.pkgxInstallCommand = legacyCommand
           }
+        }
+        else if (legacyCommand.startsWith('launchpad install')) {
+          // Already a launchpad command, keep it
+          packageInfo.launchpadInstallCommand = legacyCommand
+          packageInfo.installCommand = legacyCommand
         }
       }
 
@@ -1886,6 +1983,8 @@ function createMinimalPackageInfo(
     homepageUrl: '',
     githubUrl: '',
     installCommand: `launchpad install ${packageName}`,
+    pkgxInstallCommand: `sh <(curl https://pkgx.sh) +${packageName} -- $SHELL -i`,
+    launchpadInstallCommand: `launchpad install ${packageName}`,
     programs: [],
     companions: [],
     dependencies: [],
@@ -2127,7 +2226,9 @@ export async function fetchAndSavePackage(
                   packageYmlUrl: `https://github.com/pkgxdev/pantry/tree/main/projects/${packageName}/package.yml`,
                   homepageUrl: '',
                   githubUrl: '',
-                  installCommand: `pkgx ${packageName}`,
+                  installCommand: `launchpad install ${packageName}`,
+                  pkgxInstallCommand: `sh <(curl https://pkgx.sh) +${packageName} -- $SHELL -i`,
+                  launchpadInstallCommand: `launchpad install ${packageName}`,
                   programs: [],
                   companions: [],
                   dependencies: [],
@@ -2756,7 +2857,9 @@ export async function fetchPantryPackageWithMetadata(
           ? pantryInfo.companions
           : webData.packageInfo.companions,
         domain: pantryInfo.domain || webData.packageInfo.domain,
-        name: pantryInfo.name || webData.packageInfo.name,
+        // For name, prefer web data (which extracts actual program names) over pantry data (which uses generic path segments)
+        // Only use pantry name if web data doesn't have a name
+        name: webData.packageInfo.name || pantryInfo.name || packageName.split('/').pop() || packageName,
         // Use pantry URLs if available, otherwise fallback to web data
         homepageUrl: pantryInfo.homepageUrl || webData.packageInfo.homepageUrl,
         githubUrl: pantryInfo.githubUrl || webData.packageInfo.githubUrl,
@@ -2779,6 +2882,8 @@ export async function fetchPantryPackageWithMetadata(
         domain: pantryInfo.domain || packageName,
         description: `Package from pantry: ${packageName}`,
         installCommand: `launchpad install ${packageName}`,
+        pkgxInstallCommand: `sh <(curl https://pkgx.sh) +${packageName} -- $SHELL -i`,
+        launchpadInstallCommand: `launchpad install ${packageName}`,
         programs: [],
         companions: pantryInfo.companions || [],
         dependencies: pantryInfo.dependencies || [],

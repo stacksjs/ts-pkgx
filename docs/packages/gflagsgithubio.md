@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `gflagsgithub.io`
+- **Domain**: `gflags.github.io`
 - **Name**: `gflags.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gflags.github.io/package.yml)
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gflagsgithub.io@2.2.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gflags.github.io@2.2.2 -- $SHELL -i
 ```
 
 ## Usage Examples

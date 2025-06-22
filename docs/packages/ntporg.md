@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +ntp.org -- $SHELL -i
+launchpad install ntp.org
 ```
 
 ## Programs

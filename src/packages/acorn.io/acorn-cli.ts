@@ -73,6 +73,8 @@ export const acornPackage = {
   aliases: [
     'acorn',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) acorn -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install acorn' as const,
 }
 
 export type AcornPackage = typeof acornPackage

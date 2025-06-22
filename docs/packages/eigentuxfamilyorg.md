@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +eigen.tuxfamily.org -- $SHELL -i
+launchpad install eigentuxfamily.org
 ```
 
 ## Programs

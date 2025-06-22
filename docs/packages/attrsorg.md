@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +attrs.org -- $SHELL -i
+launchpad install attrs.org
 ```
 
 ## Programs

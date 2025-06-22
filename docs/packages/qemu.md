@@ -1,11 +1,11 @@
-# qemu
+# qemu.org
 
 > Generic machine emulator and virtualizer
 
 ## Package Information
 
-- **Domain**: `qemu`
-- **Name**: `qemu`
+- **Domain**: `qemu.org`
+- **Name**: `qemu.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/qemu.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +qemu.org -- $SHELL -i
+launchpad install +qemu.org -- $SHELL -i
 ```
 
 ## Programs
@@ -59,7 +59,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+qemu.org -- $SHELL -i`
 - `qemu`
 
 ## Available Versions
@@ -87,7 +86,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx qemu@10.0.2
+sh <(curl https://pkgx.sh) +qemu.org@10.0.2 -- $SHELL -i
 ```
 
 ## Dependencies

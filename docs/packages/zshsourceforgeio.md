@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install zsh
+launchpad install zshsourceforge.io
 ```
 
 ## Programs

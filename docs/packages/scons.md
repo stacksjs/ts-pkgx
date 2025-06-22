@@ -1,11 +1,11 @@
-# scons
+# scons.org
 
 > Substitute for classic 'make' tool with autoconf/automake functionality
 
 ## Package Information
 
-- **Domain**: `scons`
-- **Name**: `scons`
+- **Domain**: `scons.org`
+- **Name**: `scons.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/scons.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) scons
+launchpad install scons
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx scons@4.9.1
+sh <(curl https://pkgx.sh) +scons.org@4.9.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -52,8 +52,7 @@ pkgx scons@4.9.1
 This package depends on:
 
 - `python.org~3.11`
-- `linuxgnu.org/gcc>=10`
-- `gnu.org/gcc>=10`
+- `linux:gnu.org/gcc>=10`
 
 ## Usage Examples
 

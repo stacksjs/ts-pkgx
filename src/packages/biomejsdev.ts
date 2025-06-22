@@ -98,6 +98,8 @@ export const biomePackage = {
   aliases: [
     'biome',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) biome -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install biome' as const,
 }
 
 export type BiomePackage = typeof biomePackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install invoke
+launchpad install pyinvoke.org
 ```
 
 ## Programs

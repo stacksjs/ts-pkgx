@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `pkgm`
+- **Domain**: `pkgx.sh/pkgm`
 - **Name**: `pkgm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/pkgm/package.yml)
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) pkgm
+launchpad install pkgm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `pkgm`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pkgm`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx pkgm@0.11.1
+sh <(curl https://pkgx.sh) +pkgx.sh/pkgm@0.11.1 -- $SHELL -i
 ```
 
 ## Dependencies

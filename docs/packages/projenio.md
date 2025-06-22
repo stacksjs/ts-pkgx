@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install projen
+launchpad install projen.io
 ```
 
 ## Programs

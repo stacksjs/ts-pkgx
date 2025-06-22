@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install tofu
+launchpad install opentofu.org
 ```
 
 ## Programs

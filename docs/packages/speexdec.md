@@ -1,11 +1,11 @@
-# speexdec
+# speex.org
 
 > Audio codec designed for speech
 
 ## Package Information
 
-- **Domain**: `speexdec`
-- **Name**: `speexdec`
+- **Domain**: `speex.org`
+- **Name**: `speex.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/speex.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) speexdec
+launchpad install speexdec
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx speexdec@1.2.1
+sh <(curl https://pkgx.sh) +speex.org@1.2.1 -- $SHELL -i
 ```
 
 ## Dependencies

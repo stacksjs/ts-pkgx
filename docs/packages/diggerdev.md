@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install digger
+launchpad install digger.dev
 ```
 
 ## Programs

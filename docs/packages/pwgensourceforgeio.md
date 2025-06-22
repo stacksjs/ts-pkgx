@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pwgen
+launchpad install pwgensourceforge.io
 ```
 
 ## Programs

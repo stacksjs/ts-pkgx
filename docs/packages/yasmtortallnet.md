@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install yasm
+launchpad install yasmtortall.net
 ```
 
 ## Programs

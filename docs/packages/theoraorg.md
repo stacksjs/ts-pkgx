@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +theora.org -- $SHELL -i
+launchpad install theora.org
 ```
 
 ## Programs

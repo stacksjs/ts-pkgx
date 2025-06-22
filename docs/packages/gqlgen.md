@@ -1,11 +1,11 @@
-# gqlgen
+# gqlgen.com
 
 > go generate based graphql server library
 
 ## Package Information
 
-- **Domain**: `gqlgen`
-- **Name**: `gqlgen`
+- **Domain**: `gqlgen.com`
+- **Name**: `gqlgen.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gqlgen.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) gqlgen
+launchpad install gqlgen
 ```
 
 ## Programs
@@ -31,26 +31,26 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 37 versions</summary>
+<summary>Show all 39 versions</summary>
 
-- `0.17.73`, `0.17.72`, `0.17.71`, `0.17.70`, `0.17.69`
-- `0.17.68`, `0.17.67`, `0.17.66`, `0.17.65`, `0.17.64`
-- `0.17.63`, `0.17.62`, `0.17.61`, `0.17.60`, `0.17.59`
-- `0.17.58`, `0.17.57`, `0.17.56`, `0.17.55`, `0.17.54`
-- `0.17.53`, `0.17.52`, `0.17.51`, `0.17.50`, `0.17.49`
-- `0.17.48`, `0.17.47`, `0.17.46`, `0.17.45`, `0.17.44`
-- `0.17.43`, `0.17.42`, `0.17.41`, `0.17.40`, `0.17.39`
-- `0.17.38`, `0.17.37`
+- `0.17.75`, `0.17.74`, `0.17.73`, `0.17.72`, `0.17.71`
+- `0.17.70`, `0.17.69`, `0.17.68`, `0.17.67`, `0.17.66`
+- `0.17.65`, `0.17.64`, `0.17.63`, `0.17.62`, `0.17.61`
+- `0.17.60`, `0.17.59`, `0.17.58`, `0.17.57`, `0.17.56`
+- `0.17.55`, `0.17.54`, `0.17.53`, `0.17.52`, `0.17.51`
+- `0.17.50`, `0.17.49`, `0.17.48`, `0.17.47`, `0.17.46`
+- `0.17.45`, `0.17.44`, `0.17.43`, `0.17.42`, `0.17.41`
+- `0.17.40`, `0.17.39`, `0.17.38`, `0.17.37`
 
 </details>
 
-**Latest Version**: `0.17.73`
+**Latest Version**: `0.17.75`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx gqlgen@0.17.73
+sh <(curl https://pkgx.sh) +gqlgen.com@0.17.75 -- $SHELL -i
 ```
 
 ## Usage Examples

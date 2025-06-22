@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `aichat`
+- **Domain**: `crates.io/aichat`
 - **Name**: `aichat`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/aichat/package.yml)
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) aichat
+launchpad install aichat
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `aichat`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `aichat`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx aichat@0.29.0
+sh <(curl https://pkgx.sh) +crates.io/aichat@0.29.0 -- $SHELL -i
 ```
 
 ## Usage Examples

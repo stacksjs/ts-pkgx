@@ -6,7 +6,7 @@
  * @version `1.14.5` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +apache.org/subversion -- $SHELL -i`
+ * @install `launchpad install svn`
  * @aliases `svn`
  * @dependencies `gnu.org/gettext^0.21`, `lz4.org^1`, `openssl.org^1.1`, ... (+7 more)
  *
@@ -48,7 +48,7 @@ export const svnPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +apache.org/subversion -- $SHELL -i' as const,
+  installCommand: 'launchpad install svn' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -100,6 +100,8 @@ export const svnPackage = {
   aliases: [
     'svn',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/subversion -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install svn' as const,
 }
 
 export type SvnPackage = typeof svnPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install terratag
+launchpad install terratag.io
 ```
 
 ## Programs

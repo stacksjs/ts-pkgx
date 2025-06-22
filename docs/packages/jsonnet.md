@@ -1,11 +1,11 @@
-# jsonnet
+# jsonnet.org
 
 > Jsonnet - The data templating language
 
 ## Package Information
 
-- **Domain**: `json.net`
-- **Name**: `jsonnet`
+- **Domain**: `jsonnet.org`
+- **Name**: `jsonnet.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jsonnet.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +jsonnet.org -- $SHELL -i
+launchpad install +jsonnet.org -- $SHELL -i
 ```
 
 ## Programs
@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `jsonnet`
 - `jsonnetfmt`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `jsonnet`
 
 ## Available Versions
 
@@ -38,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +json.net@0.21.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +jsonnet.org@0.21.0 -- $SHELL -i
 ```
 
 ## Usage Examples

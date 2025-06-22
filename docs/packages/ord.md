@@ -1,11 +1,11 @@
-# ord
+# ordinals.com
 
 > Index, block explorer, and command-line wallet
 
 ## Package Information
 
-- **Domain**: `ord`
-- **Name**: `ord`
+- **Domain**: `ordinals.com`
+- **Name**: `ordinals.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ordinals.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) ord
+launchpad install ord
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx ord@0.6.1
+sh <(curl https://pkgx.sh) +ordinals.com@0.6.1 -- $SHELL -i
 ```
 
 ## Usage Examples

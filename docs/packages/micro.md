@@ -1,11 +1,11 @@
-# micro
+# micro-editor.github.io
 
 > A modern and intuitive terminal-based text editor
 
 ## Package Information
 
-- **Domain**: `micro`
-- **Name**: `micro`
+- **Domain**: `micro-editor.github.io`
+- **Name**: `micro-editor.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/micro-editor.github.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) micro
+launchpad install micro
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx micro@2.0.14
+sh <(curl https://pkgx.sh) +micro-editor.github.io@2.0.14 -- $SHELL -i
 ```
 
 ## Usage Examples

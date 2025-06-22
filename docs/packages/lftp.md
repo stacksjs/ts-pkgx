@@ -1,11 +1,11 @@
-# lftp
+# lftp.yar.ru
 
 > sophisticated command line file transfer program (ftp, http, sftp, fish, torrent)
 
 ## Package Information
 
-- **Domain**: `lftp`
-- **Name**: `lftp`
+- **Domain**: `lftp.yar.ru`
+- **Name**: `lftp.yar.ru`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lftp.yar.ru/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +lftp.yar.ru -- $SHELL -i
+launchpad install +lftp.yar.ru -- $SHELL -i
 ```
 
 ## Programs
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+lftp.yar.ru -- $SHELL -i`
 - `lftp`
 
 ## Available Versions
@@ -45,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx lftp@4.9.3
+sh <(curl https://pkgx.sh) +lftp.yar.ru@4.9.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -59,8 +58,7 @@ This package depends on:
 - `zlib.net`
 - `invisible-island.net/ncurses`
 - `libexpat.github.io`
-- `linuxgnu.org/gcc/libstdcxx@14`
-- `gnu.org/gcc/libstdcxx@14`
+- `linux:gnu.org/gcc/libstdcxx@14`
 
 ## Usage Examples
 

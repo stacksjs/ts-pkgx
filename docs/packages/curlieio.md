@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install curlie
+launchpad install curlie.io
 ```
 
 ## Programs

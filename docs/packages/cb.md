@@ -1,11 +1,11 @@
-# cb
+# getclipboard.app
 
 > 😎🏖️🐬 Your new, 𝙧𝙞𝙙𝙤𝙣𝙠𝙪𝙡𝙞𝙘𝙞𝙤𝙪𝙨𝙡𝙮 smart clipboard manager
 
 ## Package Information
 
-- **Domain**: `cb`
-- **Name**: `cb`
+- **Domain**: `getclipboard.app`
+- **Name**: `getclipboard.app`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getclipboard.app/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) cb
+launchpad install cb
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx cb@0.9.1
+sh <(curl https://pkgx.sh) +getclipboard.app@0.9.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -51,11 +51,10 @@ pkgx cb@0.9.1
 This package depends on:
 
 - `openssl.org^1.1`
-- `linuxalsa-project.org/alsa-lib@1x.org/x11@1wayland.freedesktop.org@1gnu.org/gcc/libstdcxx@14`
-- `alsa-project.org/alsa-lib@1`
-- `x.org/x11@1`
-- `wayland.freedesktop.org@1`
-- `gnu.org/gcc/libstdcxx@14`
+- `linux:alsa-project.org/alsa-lib@1`
+- `linux:x.org/x11@1`
+- `linux:wayland.freedesktop.org@1`
+- `linux:gnu.org/gcc/libstdcxx@14`
 
 ## Usage Examples
 

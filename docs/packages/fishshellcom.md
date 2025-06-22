@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +fishshell.com -- $SHELL -i
+launchpad install fishshell.com
 ```
 
 ## Programs

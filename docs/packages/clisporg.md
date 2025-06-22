@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install clisp
+launchpad install clisp.org
 ```
 
 ## Programs

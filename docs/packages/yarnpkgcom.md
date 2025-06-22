@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +yarnpkg.com -- $SHELL -i
+launchpad install yarnpkg.com
 ```
 
 ## Programs

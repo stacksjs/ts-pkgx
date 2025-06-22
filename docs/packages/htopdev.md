@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install htop
+launchpad install htop.dev
 ```
 
 ## Programs

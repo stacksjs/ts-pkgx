@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install laravel
+launchpad install laravel.com
 ```
 
 ## Programs

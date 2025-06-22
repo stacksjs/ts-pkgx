@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install opa
+launchpad install openpolicyagent.org
 ```
 
 ## Programs

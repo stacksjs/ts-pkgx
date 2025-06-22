@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install d2
+launchpad install d2lang.com
 ```
 
 ## Programs

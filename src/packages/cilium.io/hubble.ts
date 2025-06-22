@@ -83,6 +83,8 @@ export const hubblePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hubble -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hubble' as const,
 }
 
 export type HubblePackage = typeof hubblePackage

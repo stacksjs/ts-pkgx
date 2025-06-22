@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `lp.org`
+- **Domain**: `github.com/blacktop/lporg`
 - **Name**: `lporg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/blacktop/lporg/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) lporg
+launchpad install lporg
 ```
 
 ## Programs
@@ -21,12 +21,6 @@ sh <(curl https://pkgx.sh) lporg
 This package provides the following executable programs:
 
 - `lporg`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `blacktop/lporg`
 
 ## Available Versions
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +lp.org@20.4.32 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/blacktop/lporg@20.4.32 -- $SHELL -i
 ```
 
 ## Usage Examples

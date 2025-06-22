@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install deno
+launchpad install deno.land
 ```
 
 ## Programs

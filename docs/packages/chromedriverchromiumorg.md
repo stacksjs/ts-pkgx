@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +chromedriverchromium.org@114.0.5735.90 -- $SHELL -i
+sh <(curl https://pkgx.sh) chromedriver -- $SHELL -i
 ```
 
 ## Dependencies

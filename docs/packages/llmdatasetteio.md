@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install llm
+launchpad install llmdatasette.io
 ```
 
 ## Programs

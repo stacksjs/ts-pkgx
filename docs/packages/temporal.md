@@ -1,11 +1,11 @@
-# temporal
+# temporal.io
 
 > Command-line interface for running Temporal Server and interacting with Workflows, Activities, Namespaces, and other parts of Temporal
 
 ## Package Information
 
-- **Domain**: `temporal`
-- **Name**: `temporal`
+- **Domain**: `temporal.io`
+- **Name**: `temporal.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/temporal.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) temporal
+launchpad install temporal
 ```
 
 ## Programs
@@ -45,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx temporal@1.3.0
+sh <(curl https://pkgx.sh) +temporal.io@1.3.0 -- $SHELL -i
 ```
 
 ## Usage Examples

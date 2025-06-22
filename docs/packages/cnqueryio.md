@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install cnquery
+launchpad install cnquery.io
 ```
 
 ## Programs

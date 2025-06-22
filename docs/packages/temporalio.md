@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install temporal
+launchpad install temporal.io
 ```
 
 ## Programs

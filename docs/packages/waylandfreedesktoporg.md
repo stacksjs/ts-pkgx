@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install wayland-scanner
+launchpad install waylandfreedesktop.org
 ```
 
 ## Programs
@@ -32,20 +32,20 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `1.23.92`, `1.23.91`, `1.23.1`, `1.23.0`, `1.22.93`
-- `1.22.92`, `1.22.91`, `1.22.0`
+- `1.23.93`, `1.23.92`, `1.23.91`, `1.23.1`, `1.23.0`
+- `1.22.93`, `1.22.92`, `1.22.91`, `1.22.0`
 
 </details>
 
-**Latest Version**: `1.23.92`
+**Latest Version**: `1.23.93`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +waylandfreedesktop.org@1.23.92 -- $SHELL -i
+sh <(curl https://pkgx.sh) +waylandfreedesktop.org@1.23.93 -- $SHELL -i
 ```
 
 ## Dependencies

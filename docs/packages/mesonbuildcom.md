@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install meson
+launchpad install mesonbuild.com
 ```
 
 ## Programs

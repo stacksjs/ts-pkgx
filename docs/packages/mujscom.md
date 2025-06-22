@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mujs.com -- $SHELL -i
+launchpad install mujs.com
 ```
 
 ## Programs

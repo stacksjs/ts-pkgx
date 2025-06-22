@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install sentry-cli
+launchpad install sentry.io
 ```
 
 ## Programs

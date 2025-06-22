@@ -87,6 +87,8 @@ export const amberPackage = {
   aliases: [
     'amber',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) amber -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install amber' as const,
 }
 
 export type AmberPackage = typeof amberPackage

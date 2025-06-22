@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `periphery`
+- **Domain**: `github.com/peripheryapp/periphery`
 - **Name**: `periphery`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/peripheryapp/periphery/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) periphery
+launchpad install periphery
 ```
 
 ## Programs
@@ -21,13 +21,6 @@ sh <(curl https://pkgx.sh) periphery
 This package provides the following executable programs:
 
 - `periphery`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `periphery`
-- `peripheryapp/periphery`
 
 ## Available Versions
 
@@ -45,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx periphery@3.1.0
+sh <(curl https://pkgx.sh) +github.com/peripheryapp/periphery@3.1.0 -- $SHELL -i
 ```
 
 ## Dependencies

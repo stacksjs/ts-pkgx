@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `qsv`
+- **Domain**: `crates.io/qsv`
 - **Name**: `qsv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/qsv/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) qsv
+launchpad install qsv
 ```
 
 ## Programs
@@ -22,36 +22,29 @@ This package provides the following executable programs:
 
 - `qsv`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `qsv`
-
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `5.0.3`, `4.0.0`, `3.3.0`, `3.2.0`
+- `5.1.0`, `5.0.3`, `4.0.0`, `3.3.0`, `3.2.0`
 
 </details>
 
-**Latest Version**: `5.0.3`
+**Latest Version**: `5.1.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx qsv@5.0.3
+sh <(curl https://pkgx.sh) +crates.io/qsv@5.1.0 -- $SHELL -i
 ```
 
 ## Dependencies
 
 This package depends on:
 
-- `linuxwayland.freedesktop.org`
-- `wayland.freedesktop.org`
+- `linux:wayland.freedesktop.org`
 
 ## Usage Examples
 

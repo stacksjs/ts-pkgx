@@ -1,11 +1,11 @@
-# templ
+# templ.guide
 
 > A language for writing HTML user interfaces in Go.
 
 ## Package Information
 
-- **Domain**: `templ`
-- **Name**: `templ`
+- **Domain**: `templ.guide`
+- **Name**: `templ.guide`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/templ.guide/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) templ
+launchpad install templ
 ```
 
 ## Programs
@@ -31,23 +31,24 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 25 versions</summary>
+<summary>Show all 27 versions</summary>
 
-- `0.3.887`, `0.3.865`, `0.3.857`, `0.3.856`, `0.3.850`
-- `0.3.833`, `0.3.819`, `0.2.793`, `0.2.778`, `0.2.771`
-- `0.2.747`, `0.2.742`, `0.2.731`, `0.2.707`, `0.2.697`
-- `0.2.680`, `0.2.663`, `0.2.648`, `0.2.646`, `0.2.639`
-- `0.2.598`, `0.2.543`, `0.2.513`, `0.2.501`, `0.2.476`
+- `0.3.898`, `0.3.894`, `0.3.887`, `0.3.865`, `0.3.857`
+- `0.3.856`, `0.3.850`, `0.3.833`, `0.3.819`, `0.2.793`
+- `0.2.778`, `0.2.771`, `0.2.747`, `0.2.742`, `0.2.731`
+- `0.2.707`, `0.2.697`, `0.2.680`, `0.2.663`, `0.2.648`
+- `0.2.646`, `0.2.639`, `0.2.598`, `0.2.543`, `0.2.513`
+- `0.2.501`, `0.2.476`
 
 </details>
 
-**Latest Version**: `0.3.887`
+**Latest Version**: `0.3.898`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx templ@0.3.887
+sh <(curl https://pkgx.sh) +templ.guide@0.3.898 -- $SHELL -i
 ```
 
 ## Usage Examples

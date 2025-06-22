@@ -1,11 +1,11 @@
-# dotnet
+# dotnet.microsoft.com
 
 > Home of .NET's Virtual Monolithic Repository which includes all the code needed to build the .NET SDK from source
 
 ## Package Information
 
-- **Domain**: `dot.net`
-- **Name**: `dotnet`
+- **Domain**: `dotnet.microsoft.com`
+- **Name**: `dotnet.microsoft.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dotnet.microsoft.com/package.yml)
 
@@ -13,12 +13,18 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) dotnet
+launchpad install dotnet
 ```
 
 ## Programs
 
 This package provides the following executable programs:
+
+- `dotnet`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `dotnet`
 
@@ -43,16 +49,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +dot.net@9.0.202 -- $SHELL -i
+sh <(curl https://pkgx.sh) +dotnet.microsoft.com@9.0.202 -- $SHELL -i
 ```
 
 ## Dependencies
 
 This package depends on:
 
-- `linuxunicode.org^71openssl.org`
-- `unicode.org^71`
-- `openssl.org`
+- `linux:unicode.org^71`
+- `linux:openssl.org`
 
 ## Usage Examples
 

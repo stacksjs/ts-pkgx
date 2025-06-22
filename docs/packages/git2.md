@@ -1,11 +1,11 @@
-# git2
+# libgit2.org
 
 > A cross-platform, linkable library implementation of Git that you can use in your application.
 
 ## Package Information
 
-- **Domain**: `git2`
-- **Name**: `git2`
+- **Domain**: `libgit2.org`
+- **Name**: `libgit2.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libgit2.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) git2
+launchpad install git2
 ```
 
 ## Programs
@@ -31,21 +31,21 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 11 versions</summary>
+<summary>Show all 12 versions</summary>
 
-- `1.9.0`, `1.8.4`, `1.8.3`, `1.8.2`, `1.8.1`
-- `1.8.0`, `1.7.2`, `1.7.1`, `1.7.0`, `1.6.5`
-- `1.6.4`
+- `1.9.1`, `1.9.0`, `1.8.4`, `1.8.3`, `1.8.2`
+- `1.8.1`, `1.8.0`, `1.7.2`, `1.7.1`, `1.7.0`
+- `1.6.5`, `1.6.4`
 
 </details>
 
-**Latest Version**: `1.9.0`
+**Latest Version**: `1.9.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx git2@1.9.0
+sh <(curl https://pkgx.sh) +libgit2.org@1.9.1 -- $SHELL -i
 ```
 
 ## Dependencies

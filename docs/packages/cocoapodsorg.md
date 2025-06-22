@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pod
+launchpad install cocoapods.org
 ```
 
 ## Programs

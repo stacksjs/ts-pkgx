@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `openpmixgithub.io`
+- **Domain**: `openpmix.github.io`
 - **Name**: `openpmix.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openpmix.github.io/package.yml)
@@ -46,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +openpmixgithub.io@6.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +openpmix.github.io@6.0.0 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -1,11 +1,11 @@
-# tesseract
+# tesseract-ocr.github.io
 
 > Tesseract Open Source OCR Engine (main repository)
 
 ## Package Information
 
-- **Domain**: `tesseract`
-- **Name**: `tesseract`
+- **Domain**: `tesseract-ocr.github.io`
+- **Name**: `tesseract-ocr.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tesseract-ocr.github.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) tesseract
+launchpad install tesseract
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx tesseract@5.5.1
+sh <(curl https://pkgx.sh) +tesseract-ocr.github.io@5.5.1 -- $SHELL -i
 ```
 
 ## Dependencies

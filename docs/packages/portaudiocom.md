@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +portaudio.com -- $SHELL -i
+launchpad install portaudio.com
 ```
 
 ## Programs

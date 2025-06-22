@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnutls.org -- $SHELL -i
+launchpad install gnutls.org
 ```
 
 ## Programs

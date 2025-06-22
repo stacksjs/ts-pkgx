@@ -226,6 +226,8 @@ export const nodePackage = {
   aliases: [
     'node',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) node -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install node' as const,
 }
 
 export type NodePackage = typeof nodePackage

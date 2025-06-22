@@ -104,6 +104,8 @@ export const cedarPackage = {
   aliases: [
     'cedar',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cedar -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cedar' as const,
 }
 
 export type CedarPackage = typeof cedarPackage

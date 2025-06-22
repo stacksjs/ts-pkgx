@@ -1,11 +1,11 @@
-# srt
+# srtalliance.org
 
 > Secure, Reliable, Transport
 
 ## Package Information
 
-- **Domain**: `srt`
-- **Name**: `srt`
+- **Domain**: `srtalliance.org`
+- **Name**: `srtalliance.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/srtalliance.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +srtalliance.org -- $SHELL -i
+launchpad install +srtalliance.org -- $SHELL -i
 ```
 
 ## Programs
@@ -29,7 +29,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+srtalliance.org -- $SHELL -i`
 - `srt`
 
 ## Available Versions
@@ -47,7 +46,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx srt@1.5.4
+sh <(curl https://pkgx.sh) +srtalliance.org@1.5.4 -- $SHELL -i
 ```
 
 ## Dependencies

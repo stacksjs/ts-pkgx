@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ty`
+- **Domain**: `astral.sh/ty`
 - **Name**: `ty`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/astral.sh/ty/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) ty
+launchpad install ty
 ```
 
 ## Programs
@@ -22,28 +22,23 @@ This package provides the following executable programs:
 
 - `ty`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ty`
-
 ## Available Versions
 
 <details>
-<summary>Show all 1 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `0.0.0.8`
+- `0.0.1.8`, `0.0.1.7`, `0.0.1.6`, `0.0.1.5`, `0.0.1.4`
+- `0.0.1.3`, `0.0.1.2`, `0.0.1.1`, `0.0.0.8`
 
 </details>
 
-**Latest Version**: `0.0.0.8`
+**Latest Version**: `0.0.1.8`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx ty@0.0.0.8
+sh <(curl https://pkgx.sh) ty -- $SHELL -i
 ```
 
 ## Dependencies

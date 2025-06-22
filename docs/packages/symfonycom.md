@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install symfony
+launchpad install symfony.com
 ```
 
 ## Programs

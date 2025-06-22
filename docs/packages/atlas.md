@@ -1,11 +1,11 @@
-# atlas
+# atlasgo.io
 
 > Manage your database schema as code
 
 ## Package Information
 
-- **Domain**: `atlas`
-- **Name**: `atlas`
+- **Domain**: `atlasgo.io`
+- **Name**: `atlasgo.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/atlasgo.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) atlas
+launchpad install atlas
 ```
 
 ## Programs
@@ -31,23 +31,23 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 21 versions</summary>
+<summary>Show all 22 versions</summary>
 
-- `0.34.0`, `0.33.0`, `0.32.0`, `0.31.0`, `0.30.0`
-- `0.29.0`, `0.28.0`, `0.27.0`, `0.26.0`, `0.25.0`
-- `0.24.0`, `0.23.0`, `0.22.0`, `0.21.0`, `0.20.0`
-- `0.19.0`, `0.18.0`, `0.17.0`, `0.16.0`, `0.15.0`
-- `0.14.0`
+- `0.35.0`, `0.34.0`, `0.33.0`, `0.32.0`, `0.31.0`
+- `0.30.0`, `0.29.0`, `0.28.0`, `0.27.0`, `0.26.0`
+- `0.25.0`, `0.24.0`, `0.23.0`, `0.22.0`, `0.21.0`
+- `0.20.0`, `0.19.0`, `0.18.0`, `0.17.0`, `0.16.0`
+- `0.15.0`, `0.14.0`
 
 </details>
 
-**Latest Version**: `0.34.0`
+**Latest Version**: `0.35.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx atlas@0.34.0
+sh <(curl https://pkgx.sh) atlas -- $SHELL -i
 ```
 
 ## Usage Examples

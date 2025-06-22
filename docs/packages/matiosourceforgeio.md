@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install matdump
+launchpad install matiosourceforge.io
 ```
 
 ## Programs

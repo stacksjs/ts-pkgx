@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install mitmproxy
+launchpad install mitmproxy.org
 ```
 
 ## Programs

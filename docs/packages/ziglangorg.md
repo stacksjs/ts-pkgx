@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install zig
+launchpad install ziglang.org
 ```
 
 ## Programs

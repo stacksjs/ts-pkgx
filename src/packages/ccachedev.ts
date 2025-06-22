@@ -88,6 +88,8 @@ export const ccachePackage = {
   aliases: [
     'ccache',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ccache -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ccache' as const,
 }
 
 export type CcachePackage = typeof ccachePackage

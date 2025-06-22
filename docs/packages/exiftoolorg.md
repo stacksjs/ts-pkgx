@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install exiftool
+launchpad install exiftool.org
 ```
 
 ## Programs

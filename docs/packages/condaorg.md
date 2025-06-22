@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install conda
+launchpad install conda.org
 ```
 
 ## Programs

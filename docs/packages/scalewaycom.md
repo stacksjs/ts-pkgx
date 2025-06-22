@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install scw
+launchpad install scaleway.com
 ```
 
 ## Programs

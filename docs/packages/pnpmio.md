@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +pnpm.io -- $SHELL -i
+launchpad install pnpm.io
 ```
 
 ## Programs

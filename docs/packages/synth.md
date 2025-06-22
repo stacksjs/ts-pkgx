@@ -1,11 +1,11 @@
-# synth
+# getsynth.com
 
 > The Declarative Data Generator
 
 ## Package Information
 
-- **Domain**: `synth`
-- **Name**: `synth`
+- **Domain**: `getsynth.com`
+- **Name**: `getsynth.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getsynth.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) synth
+launchpad install synth
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx synth@0.6.9
+sh <(curl https://pkgx.sh) +getsynth.com@0.6.9 -- $SHELL -i
 ```
 
 ## Usage Examples

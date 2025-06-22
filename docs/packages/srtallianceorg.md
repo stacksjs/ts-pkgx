@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +srtalliance.org -- $SHELL -i
+launchpad install srtalliance.org
 ```
 
 ## Programs

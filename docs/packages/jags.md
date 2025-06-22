@@ -1,11 +1,11 @@
-# jags
+# mcmc-jags.sourceforge.io
 
 > Just Another Gibbs Sampler for Bayesian MCMC simulation
 
 ## Package Information
 
-- **Domain**: `jags`
-- **Name**: `jags`
+- **Domain**: `mcmc-jags.sourceforge.io`
+- **Name**: `mcmc-jags.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mcmc-jags.sourceforge.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) jags
+launchpad install jags
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx jags@4.3.2
+sh <(curl https://pkgx.sh) +mcmc-jags.sourceforge.io@4.3.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -51,8 +51,7 @@ pkgx jags@4.3.2
 This package depends on:
 
 - `gnu.org/gcc`
-- `linuxnetlib.org/lapack^3`
-- `netlib.org/lapack^3`
+- `linux:netlib.org/lapack^3`
 
 ## Usage Examples
 

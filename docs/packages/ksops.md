@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ksops`
+- **Domain**: `viaduct.ai/ksops`
 - **Name**: `ksops`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/viaduct.ai/ksops/package.yml)
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) ksops
+launchpad install ksops
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `ksops`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `ksops`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx ksops@4.3.3
+sh <(curl https://pkgx.sh) +viaduct.ai/ksops@4.3.3 -- $SHELL -i
 ```
 
 ## Usage Examples

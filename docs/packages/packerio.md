@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install packer
+launchpad install packer.io
 ```
 
 ## Programs

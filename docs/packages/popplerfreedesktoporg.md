@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +poppler.freedesktop.org -- $SHELL -i
+launchpad install popplerfreedesktop.org
 ```
 
 ## Programs

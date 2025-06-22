@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `glewsourceforge.io`
+- **Domain**: `glew.sourceforge.io`
 - **Name**: `glew.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/glew.sourceforge.io/package.yml)
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +glewsourceforge.io@2.2.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +glew.sourceforge.io@2.2.0 -- $SHELL -i
 ```
 
 ## Usage Examples

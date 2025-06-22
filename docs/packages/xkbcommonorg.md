@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install xkbcli
+launchpad install xkbcommon.org
 ```
 
 ## Programs

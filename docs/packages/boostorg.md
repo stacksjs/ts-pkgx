@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +boost.org -- $SHELL -i
+launchpad install +boost.org
 ```
 
 ## Programs

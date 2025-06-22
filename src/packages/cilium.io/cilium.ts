@@ -93,6 +93,8 @@ export const ciliumPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cilium -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cilium' as const,
 }
 
 export type CiliumPackage = typeof ciliumPackage

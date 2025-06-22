@@ -1,11 +1,11 @@
-# typst
+# typst.app
 
 > A new markup-based typesetting system that is powerful and easy to learn.
 
 ## Package Information
 
-- **Domain**: `typst`
-- **Name**: `typst`
+- **Domain**: `typst.app`
+- **Name**: `typst.app`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/typst.app/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) typst
+launchpad install typst
 ```
 
 ## Programs
@@ -45,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx typst@0.13.1
+sh <(curl https://pkgx.sh) +typst.app@0.13.1 -- $SHELL -i
 ```
 
 ## Dependencies

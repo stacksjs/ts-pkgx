@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install elvish
+launchpad install elv.sh
 ```
 
 ## Programs

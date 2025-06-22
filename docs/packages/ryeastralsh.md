@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install rye
+launchpad install ryeastral.sh
 ```
 
 ## Programs

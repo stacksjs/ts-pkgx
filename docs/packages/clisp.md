@@ -1,11 +1,11 @@
-# clisp
+# clisp.org
 
 > GNU CLISP, a Common Lisp implementation
 
 ## Package Information
 
-- **Domain**: `clisp`
-- **Name**: `clisp`
+- **Domain**: `clisp.org`
+- **Name**: `clisp.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/clisp.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) clisp
+launchpad install clisp
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx clisp@2.49.92
+sh <(curl https://pkgx.sh) +clisp.org@2.49.92 -- $SHELL -i
 ```
 
 ## Dependencies

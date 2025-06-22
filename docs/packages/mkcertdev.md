@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install mkcert
+launchpad install mkcert.dev
 ```
 
 ## Programs

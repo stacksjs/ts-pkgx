@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install itstool
+launchpad install itstool.org
 ```
 
 ## Programs

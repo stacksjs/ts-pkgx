@@ -108,6 +108,8 @@ export const arkadePackage = {
     'arkade',
     'Arkade',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) arkade -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install arkade' as const,
 }
 
 export type ArkadePackage = typeof arkadePackage

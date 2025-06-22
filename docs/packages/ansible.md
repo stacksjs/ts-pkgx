@@ -1,11 +1,11 @@
-# ansible
+# ansible.com
 
 > Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.
 
 ## Package Information
 
-- **Domain**: `ansible`
-- **Name**: `ansible`
+- **Domain**: `ansible.com`
+- **Name**: `ansible.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ansible.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +ansible.com -- $SHELL -i
+launchpad install ansible
 ```
 
 ## Programs
@@ -36,7 +36,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+ansible.com -- $SHELL -i`
 - `ansible`
 
 ## Available Versions
@@ -67,7 +66,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx ansible@2.18.6
+sh <(curl https://pkgx.sh) +ansible.com@2.18.6 -- $SHELL -i
 ```
 
 ## Dependencies

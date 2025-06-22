@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install kubebuilder
+launchpad install kubebuilder.io
 ```
 
 ## Programs

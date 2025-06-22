@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install local-ai
+launchpad install localai.io
 ```
 
 ## Programs

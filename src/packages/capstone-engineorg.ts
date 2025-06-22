@@ -77,6 +77,8 @@ export const cstoolPackage = {
   aliases: [
     'cstool',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cstool -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cstool' as const,
 }
 
 export type CstoolPackage = typeof cstoolPackage

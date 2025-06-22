@@ -1,11 +1,11 @@
-# mz
+# materialize.com
 
 > Real-time Data Integration and Transformation: use SQL to transform, deliver, and act on fast-changing data.
 
 ## Package Information
 
-- **Domain**: `mz`
-- **Name**: `mz`
+- **Domain**: `materialize.com`
+- **Name**: `materialize.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/materialize.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) mz
+launchpad install mz
 ```
 
 ## Programs
@@ -51,7 +51,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx mz@0.112.2
+sh <(curl https://pkgx.sh) +materialize.com@0.112.2 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -1,11 +1,11 @@
-# bytebase
+# bytebase.com
 
 > World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engineering teams. The GitHub/GitLab for database DevSecOps.
 
 ## Package Information
 
-- **Domain**: `bytebase`
-- **Name**: `bytebase`
+- **Domain**: `bytebase.com`
+- **Name**: `bytebase.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bytebase.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) bytebase
+launchpad install bytebase
 ```
 
 ## Programs
@@ -31,24 +31,25 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 30 versions</summary>
+<summary>Show all 32 versions</summary>
 
-- `3.6.2`, `3.6.1`, `3.6.0`, `3.5.2`, `3.5.1`
-- `3.5.0`, `3.4.1`, `3.4.0`, `3.3.1`, `3.3.0`
-- `3.2.0`, `3.1.2`, `3.1.1`, `3.1.0`, `3.0.1`
-- `3.0.0`, `2.23.1`, `2.23.0`, `2.22.3`, `2.22.2`
-- `2.22.1`, `2.22.0`, `2.21.0`, `2.20.0`, `2.19.0`
-- `2.18.0`, `2.17.0`, `2.16.0`, `2.15.0`, `2.14.1`
+- `3.7.1`, `3.7.0`, `3.6.2`, `3.6.1`, `3.6.0`
+- `3.5.2`, `3.5.1`, `3.5.0`, `3.4.1`, `3.4.0`
+- `3.3.1`, `3.3.0`, `3.2.0`, `3.1.2`, `3.1.1`
+- `3.1.0`, `3.0.1`, `3.0.0`, `2.23.1`, `2.23.0`
+- `2.22.3`, `2.22.2`, `2.22.1`, `2.22.0`, `2.21.0`
+- `2.20.0`, `2.19.0`, `2.18.0`, `2.17.0`, `2.16.0`
+- `2.15.0`, `2.14.1`
 
 </details>
 
-**Latest Version**: `3.6.2`
+**Latest Version**: `3.7.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx bytebase@3.6.2
+sh <(curl https://pkgx.sh) bytebase -- $SHELL -i
 ```
 
 ## Dependencies
@@ -59,9 +60,9 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with bytebase:
+These packages work well with bytebase.com:
 
-- `postgresql.org`
+- [`postgresql.org`](postgresqlorg.md) - Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
 
 ## Usage Examples
 

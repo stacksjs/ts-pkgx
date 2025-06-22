@@ -50,7 +50,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +appium.io@2.19.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) appium -- $SHELL -i
 ```
 
 ## Dependencies

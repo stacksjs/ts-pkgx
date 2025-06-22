@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nnn`
+- **Domain**: `github.com/jarun/nnn`
 - **Name**: `nnn`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jarun/nnn/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) nnn
+launchpad install nnn
 ```
 
 ## Programs
@@ -21,13 +21,6 @@ sh <(curl https://pkgx.sh) nnn
 This package provides the following executable programs:
 
 - `nnn`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `nnn`
-- `jarun/nnn`
 
 ## Available Versions
 
@@ -44,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx nnn@5.1.0
+sh <(curl https://pkgx.sh) +github.com/jarun/nnn@5.1.0 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install heroku
+launchpad install heroku.com
 ```
 
 ## Programs

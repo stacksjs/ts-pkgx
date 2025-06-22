@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +apktool.org@2.11.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) apktool -- $SHELL -i
 ```
 
 ## Dependencies

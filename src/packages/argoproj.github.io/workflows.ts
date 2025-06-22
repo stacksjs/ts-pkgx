@@ -106,6 +106,8 @@ export const argoPackage = {
     'argo',
     'argo-workflows',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) argo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install argo' as const,
 }
 
 export type ArgoPackage = typeof argoPackage

@@ -93,6 +93,8 @@ export const spicedbPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) spicedb -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install spicedb' as const,
 }
 
 export type SpicedbPackage = typeof spicedbPackage

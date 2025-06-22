@@ -105,6 +105,8 @@ export const roverPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rover -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rover' as const,
 }
 
 export type RoverPackage = typeof roverPackage

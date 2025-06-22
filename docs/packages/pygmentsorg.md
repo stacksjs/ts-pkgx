@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pygmentize
+launchpad install pygments.org
 ```
 
 ## Programs
@@ -31,20 +31,20 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `2.19.1`, `2.19.0`, `2.18.0`, `2.17.2`, `2.17.1`
-- `2.17.0`, `2.15.0`, `2.14.0`
+- `2.19.2`, `2.19.1`, `2.19.0`, `2.18.0`, `2.17.2`
+- `2.17.1`, `2.17.0`, `2.15.0`, `2.14.0`
 
 </details>
 
-**Latest Version**: `2.19.1`
+**Latest Version**: `2.19.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pygments.org@2.19.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +pygments.org@2.19.2 -- $SHELL -i
 ```
 
 ## Dependencies

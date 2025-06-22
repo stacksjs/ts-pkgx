@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install virtualenv
+launchpad install virtualenvpypa.io
 ```
 
 ## Programs

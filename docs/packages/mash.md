@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `ma.sh`
+- **Domain**: `pkgx.sh/mash`
 - **Name**: `mash`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/mash/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) mash
+launchpad install mash
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +ma.sh@0.4.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +pkgx.sh/mash@0.4.0 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nuclei`
+- **Domain**: `projectdiscovery.io/nuclei`
 - **Name**: `nuclei`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/projectdiscovery.io/nuclei/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) nuclei
+launchpad install nuclei
 ```
 
 ## Programs
@@ -22,28 +22,22 @@ This package provides the following executable programs:
 
 - `nuclei`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `nuclei`
-
 ## Available Versions
 
 <details>
-<summary>Show all 3 versions</summary>
+<summary>Show all 4 versions</summary>
 
-- `3.4.4`, `3.4.3`, `3.4.2`
+- `3.4.5`, `3.4.4`, `3.4.3`, `3.4.2`
 
 </details>
 
-**Latest Version**: `3.4.4`
+**Latest Version**: `3.4.5`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx nuclei@3.4.4
+sh <(curl https://pkgx.sh) +projectdiscovery.io/nuclei@3.4.5 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `.dev`
+- **Domain**: `pkgx.sh/dev`
 - **Name**: `dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/dev/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) dev
+launchpad install dev
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +.dev@1.8.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +pkgx.sh/dev@1.8.1 -- $SHELL -i
 ```
 
 ## Dependencies

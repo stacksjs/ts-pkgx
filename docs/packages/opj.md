@@ -1,11 +1,11 @@
-# opj
+# openjpeg.org
 
 > Official repository of the OpenJPEG project
 
 ## Package Information
 
-- **Domain**: `opj`
-- **Name**: `opj`
+- **Domain**: `openjpeg.org`
+- **Name**: `openjpeg.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openjpeg.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +openjpeg.org -- $SHELL -i
+launchpad install +openjpeg.org -- $SHELL -i
 ```
 
 ## Programs
@@ -28,7 +28,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+openjpeg.org -- $SHELL -i`
 - `opj`
 
 ## Available Versions
@@ -46,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx opj@2.5.3
+sh <(curl https://pkgx.sh) +openjpeg.org@2.5.3 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -1,11 +1,11 @@
-# pulumi
+# pulumi.io
 
 > Pulumi - Infrastructure as Code in any programming language 🚀
 
 ## Package Information
 
-- **Domain**: `pulumi`
-- **Name**: `pulumi`
+- **Domain**: `pulumi.io`
+- **Name**: `pulumi.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pulumi.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +pulumi.io -- $SHELL -i
+launchpad install +pulumi.io -- $SHELL -i
 ```
 
 ## Programs
@@ -38,14 +38,14 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+pulumi.io -- $SHELL -i`
 - `pulumi`
 
 ## Available Versions
 
 <details>
-<summary>Show all 136 versions</summary>
+<summary>Show all 141 versions</summary>
 
+- `3.178.0`, `3.177.0`, `3.176.0`, `3.175.0`, `3.174.0`
 - `3.173.0`, `3.172.0`, `3.171.0`, `3.170.0`, `3.169.0`
 - `3.168.0`, `3.167.0`, `3.166.0`, `3.165.0`, `3.163.0`
 - `3.162.0`, `3.161.0`, `3.158.0`, `3.157.0`, `3.156.0`
@@ -77,13 +77,13 @@ This package can also be accessed using these aliases:
 
 </details>
 
-**Latest Version**: `3.173.0`
+**Latest Version**: `3.178.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx pulumi@3.173.0
+sh <(curl https://pkgx.sh) +pulumi.io@3.178.0 -- $SHELL -i
 ```
 
 ## Dependencies

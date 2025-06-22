@@ -47,7 +47,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +atlasgo.io@0.35.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) atlas -- $SHELL -i
 ```
 
 ## Usage Examples

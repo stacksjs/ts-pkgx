@@ -92,6 +92,8 @@ export const atlasPackage = {
   aliases: [
     'atlas',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) atlas -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install atlas' as const,
 }
 
 export type AtlasPackage = typeof atlasPackage

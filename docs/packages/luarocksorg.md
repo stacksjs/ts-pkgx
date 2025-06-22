@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +luarocks.org -- $SHELL -i
+launchpad install luarocks.org
 ```
 
 ## Programs

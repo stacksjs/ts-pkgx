@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install rio
+launchpad install rioterm.com
 ```
 
 ## Programs
@@ -31,19 +31,19 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `0.2.19`, `0.2.18`, `0.2.17`, `0.2.16`
+- `0.2.20`, `0.2.19`, `0.2.18`, `0.2.17`, `0.2.16`
 
 </details>
 
-**Latest Version**: `0.2.19`
+**Latest Version**: `0.2.20`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +rioterm.com@0.2.19 -- $SHELL -i
+sh <(curl https://pkgx.sh) +rioterm.com@0.2.20 -- $SHELL -i
 ```
 
 ## Usage Examples

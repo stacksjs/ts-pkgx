@@ -1,11 +1,11 @@
-# sftpgo
+# sftpgo.com
 
 > Full-featured and highly configurable SFTP, HTTP/S, FTP/S and WebDAV server - S3, Google Cloud Storage, Azure Blob
 
 ## Package Information
 
-- **Domain**: `sftpgo`
-- **Name**: `sftpgo`
+- **Domain**: `sftpgo.com`
+- **Name**: `sftpgo.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sftpgo.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) sftpgo
+launchpad install sftpgo
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx sftpgo@2.6.6
+sh <(curl https://pkgx.sh) +sftpgo.com@2.6.6 -- $SHELL -i
 ```
 
 ## Usage Examples

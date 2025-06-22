@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install robot
+launchpad install robotframework.org
 ```
 
 ## Programs

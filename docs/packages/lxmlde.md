@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +lxml.de -- $SHELL -i
+launchpad install +lxml.de -- $SHELL -i
 ```
 
 ## Programs

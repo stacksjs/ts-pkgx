@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install sqlite3
+launchpad install sqlite.org
 ```
 
 ## Programs

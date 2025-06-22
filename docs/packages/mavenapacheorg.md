@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +maven.apache.org -- $SHELL -i
+launchpad install mavenapache.org
 ```
 
 ## Programs

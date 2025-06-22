@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install raccoin
+launchpad install raccoin.org
 ```
 
 ## Programs

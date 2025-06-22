@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +pixman.org -- $SHELL -i
+launchpad install pixman.org
 ```
 
 ## Programs

@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `starpls`
+- **Domain**: `github.com/withered-magic/starpls`
 - **Name**: `starpls`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/withered-magic/starpls/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) starpls
+launchpad install starpls
 ```
 
 ## Programs
@@ -21,13 +21,6 @@ sh <(curl https://pkgx.sh) starpls
 This package provides the following executable programs:
 
 - `starpls`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `starpls`
-- `withered-magic/starpls`
 
 ## Available Versions
 
@@ -44,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx starpls@0.1.21
+sh <(curl https://pkgx.sh) +github.com/withered-magic/starpls@0.1.21 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +python.org -- $SHELL -i
+launchpad install python.org
 ```
 
 ## Programs

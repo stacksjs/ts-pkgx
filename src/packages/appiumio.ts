@@ -116,6 +116,8 @@ export const appiumPackage = {
   aliases: [
     'appium',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) appium -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install appium' as const,
 }
 
 export type AppiumPackage = typeof appiumPackage

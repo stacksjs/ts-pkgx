@@ -1,11 +1,11 @@
-# vamp
+# vamp-plugins.org
 
 > Audio processing plugin system sdk
 
 ## Package Information
 
-- **Domain**: `vamp`
-- **Name**: `vamp`
+- **Domain**: `vamp-plugins.org`
+- **Name**: `vamp-plugins.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vamp-plugins.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +vamp-plugins.org -- $SHELL -i
+launchpad install +vamp-plugins.org -- $SHELL -i
 ```
 
 ## Programs
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `+vamp-plugins.org -- $SHELL -i`
 - `vamp`
 
 ## Available Versions
@@ -45,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx vamp@2.10.0
+sh <(curl https://pkgx.sh) +vamp-plugins.org@2.10.0 -- $SHELL -i
 ```
 
 ## Dependencies

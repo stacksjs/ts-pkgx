@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install flit
+launchpad install flitpypa.io
 ```
 
 ## Programs

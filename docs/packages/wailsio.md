@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install wails
+launchpad install wails.io
 ```
 
 ## Programs

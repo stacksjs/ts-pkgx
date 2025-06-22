@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install kind
+launchpad install kindsigsk8s.io
 ```
 
 ## Programs

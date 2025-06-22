@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install ktlint
+launchpad install ktlintgithub.io
 ```
 
 ## Programs

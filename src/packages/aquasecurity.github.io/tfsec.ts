@@ -77,6 +77,8 @@ export const tfsecPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tfsec -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tfsec' as const,
 }
 
 export type TfsecPackage = typeof tfsecPackage

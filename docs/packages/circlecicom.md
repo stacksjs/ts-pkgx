@@ -54,7 +54,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +circleci.com@0.1.32367 -- $SHELL -i
+sh <(curl https://pkgx.sh) circleci -- $SHELL -i
 ```
 
 ## Usage Examples

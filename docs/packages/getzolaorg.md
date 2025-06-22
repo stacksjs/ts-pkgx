@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install zola
+launchpad install getzola.org
 ```
 
 ## Programs

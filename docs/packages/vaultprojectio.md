@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install vault
+launchpad install vaultproject.io
 ```
 
 ## Programs

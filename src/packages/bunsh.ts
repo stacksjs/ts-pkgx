@@ -6,7 +6,7 @@
  * @version `1.2.17` (121 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +bun.sh -- $SHELL -i`
+ * @install `launchpad install bun`
  * @aliases `bun`
  *
  * @example
@@ -47,7 +47,7 @@ export const bunPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +bun.sh -- $SHELL -i' as const,
+  installCommand: 'launchpad install bun' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -192,6 +192,8 @@ export const bunPackage = {
   aliases: [
     'bun',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +bun.sh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bun' as const,
 }
 
 export type BunPackage = typeof bunPackage

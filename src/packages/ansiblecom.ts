@@ -6,7 +6,7 @@
  * @version `2.18.6` (69 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +ansible.com -- $SHELL -i`
+ * @install `launchpad install ansible`
  * @aliases `ansible`
  * @dependencies `pkgx.sh@1`
  *
@@ -48,7 +48,7 @@ export const ansiblePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +ansible.com -- $SHELL -i' as const,
+  installCommand: 'launchpad install ansible' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -156,6 +156,8 @@ export const ansiblePackage = {
   aliases: [
     'ansible',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ansible.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ansible' as const,
 }
 
 export type AnsiblePackage = typeof ansiblePackage

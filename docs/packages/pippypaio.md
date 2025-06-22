@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +pip.pypa.io -- $SHELL -i
+launchpad install pippypa.io
 ```
 
 ## Programs

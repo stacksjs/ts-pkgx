@@ -146,6 +146,8 @@ export const chezmoiPackage = {
   aliases: [
     'chezmoi',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) chezmoi -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install chezmoi' as const,
 }
 
 export type ChezmoiPackage = typeof chezmoiPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +apptainer.org -- $SHELL -i
+launchpad install apptainer.org
 ```
 
 ## Programs

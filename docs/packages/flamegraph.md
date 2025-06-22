@@ -1,11 +1,11 @@
-# crates.io/flamegraph
+# flamegraph
 
 > Easy flamegraphs for Rust projects and everything else, without Perl or pipes <3
 
 ## Package Information
 
-- **Domain**: `flamegraph`
-- **Name**: `crates.io/flamegraph`
+- **Domain**: `crates.io/flamegraph`
+- **Name**: `flamegraph`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/flamegraph/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +crates.io/flamegraph -- $SHELL -i
+launchpad install +crates.io/flamegraph -- $SHELL -i
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `flamegraph`
 - `cargo-flamegraph`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `flamegraph`
 
 ## Available Versions
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx crates.io/flamegraph@0.6.8
+sh <(curl https://pkgx.sh) +crates.io/flamegraph@0.6.8 -- $SHELL -i
 ```
 
 ## Usage Examples

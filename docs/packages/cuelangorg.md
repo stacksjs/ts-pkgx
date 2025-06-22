@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install cue
+launchpad install cuelang.org
 ```
 
 ## Programs

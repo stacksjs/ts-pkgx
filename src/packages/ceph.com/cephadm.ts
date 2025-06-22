@@ -84,6 +84,8 @@ export const cephadmPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cephadm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cephadm' as const,
 }
 
 export type CephadmPackage = typeof cephadmPackage

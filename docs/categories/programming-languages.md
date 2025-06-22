@@ -1,6 +1,6 @@
 # Programming Languages
 
-*15 packages in this category*
+*18 packages in this category*
 
 Popular programming languages and their runtimes available through pkgx.
 
@@ -33,6 +33,16 @@ Programming language for highly scalable real-time systems
 **Programs**: ct_run, dialyzer, epmd, erl, erlc, escript, run_erl, to_erl, typer
 
 **Install**: `launchpad install +erlang.org -- $SHELL -i`
+
+---
+
+### [gleam.run](../packages/gleamrun.md) (gleam)
+
+⭐️ A friendly language for building type-safe, scalable systems!
+
+**Programs**: gleam
+
+**Install**: `launchpad install gleam`
 
 ---
 
@@ -86,6 +96,16 @@ Platform built on V8 to build network applications
 
 ---
 
+### [nodejs.org](../packages/node.md) (node)
+
+Platform built on V8 to build network applications
+
+**Programs**: node
+
+**Install**: `launchpad install node`
+
+---
+
 ### [perl.org](../packages/perlorg.md)
 
 Highly capable, feature-rich programming language
@@ -107,6 +127,16 @@ General-purpose scripting language
 ---
 
 ### [python.org](../packages/pythonorg.md) (python, py)
+
+The Python programming language
+
+**Programs**: python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace;
+
+**Install**: `launchpad install +python.org -- $SHELL -i`
+
+---
+
+### [python.org](../packages/python.md) (python, py)
 
 The Python programming language
 

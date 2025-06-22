@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install uplift
+launchpad install upliftci.dev
 ```
 
 ## Programs

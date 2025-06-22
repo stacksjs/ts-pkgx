@@ -6,7 +6,7 @@
  * @version `1.14.1` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +augeas.net -- $SHELL -i`
+ * @install `launchpad install augeas.net`
  * @dependencies `gnu.org/readline`, `gnome.org/libxml2`
  *
  * @example
@@ -43,7 +43,7 @@ export const augeasnetPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +augeas.net -- $SHELL -i' as const,
+  installCommand: 'launchpad install augeas.net' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,6 +73,8 @@ export const augeasnetPackage = {
     '1.14.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +augeas.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install augeas.net' as const,
 }
 
 export type AugeasnetPackage = typeof augeasnetPackage

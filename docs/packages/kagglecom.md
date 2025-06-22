@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install kaggle
+launchpad install kaggle.com
 ```
 
 ## Programs

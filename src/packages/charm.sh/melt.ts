@@ -72,6 +72,8 @@ export const meltPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) melt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install melt' as const,
 }
 
 export type MeltPackage = typeof meltPackage

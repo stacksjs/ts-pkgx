@@ -5,7 +5,7 @@
  * @version `0.98.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +blake2.net/libb2 -- $SHELL -i`
+ * @install `launchpad install +blake2.net/libb2`
  *
  * @example
  * ```typescript
@@ -40,7 +40,7 @@ export const blake2netlibb2Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +blake2.net/libb2 -- $SHELL -i' as const,
+  installCommand: 'launchpad install +blake2.net/libb2' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -52,6 +52,8 @@ export const blake2netlibb2Package = {
     '0.98.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +blake2.net/libb2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install +blake2.net/libb2' as const,
 }
 
 export type Blake2netlibb2Package = typeof blake2netlibb2Package

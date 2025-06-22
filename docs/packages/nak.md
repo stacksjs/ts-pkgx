@@ -4,7 +4,7 @@
 
 ## Package Information
 
-- **Domain**: `nak`
+- **Domain**: `github.com/fiatjaf/nak`
 - **Name**: `nak`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/fiatjaf/nak/package.yml)
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) nak
+launchpad install nak
 ```
 
 ## Programs
@@ -22,32 +22,25 @@ This package provides the following executable programs:
 
 - `nak`
 
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `nak`
-- `fiatjaf/nak`
-
 ## Available Versions
 
 <details>
-<summary>Show all 17 versions</summary>
+<summary>Show all 18 versions</summary>
 
-- `0.14.2`, `0.14.1`, `0.14.0`, `0.13.2`, `0.13.1`
-- `0.13.0`, `0.12.6`, `0.12.0`, `0.11.4`, `0.11.3`
-- `0.11.2`, `0.11.0`, `0.10.1`, `0.10.0`, `0.9.1`
-- `0.9.0`, `0.8.0`
+- `0.14.3`, `0.14.2`, `0.14.1`, `0.14.0`, `0.13.2`
+- `0.13.1`, `0.13.0`, `0.12.6`, `0.12.0`, `0.11.4`
+- `0.11.3`, `0.11.2`, `0.11.0`, `0.10.1`, `0.10.0`
+- `0.9.1`, `0.9.0`, `0.8.0`
 
 </details>
 
-**Latest Version**: `0.14.2`
+**Latest Version**: `0.14.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-pkgx nak@0.14.2
+sh <(curl https://pkgx.sh) +github.com/fiatjaf/nak@0.14.3 -- $SHELL -i
 ```
 
 ## Usage Examples

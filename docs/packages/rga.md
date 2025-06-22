@@ -1,11 +1,11 @@
-# rga
+# ripgrep-all
 
 > rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
 
 ## Package Information
 
-- **Domain**: `rga`
-- **Name**: `rga`
+- **Domain**: `crates.io/ripgrep-all`
+- **Name**: `ripgrep-all`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/ripgrep-all/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +crates.io/ripgrep-all -- $SHELL -i
+launchpad install +crates.io/ripgrep-all -- $SHELL -i
 ```
 
 ## Programs
@@ -30,7 +30,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `rga`
-- `ripgrep-all`
 
 ## Available Versions
 
@@ -47,12 +46,12 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-pkgx rga@0.10.9
+sh <(curl https://pkgx.sh) +crates.io/ripgrep-all@0.10.9 -- $SHELL -i
 ```
 
 ## Related Packages
 
-These packages work well with rga:
+These packages work well with ripgrep-all:
 
 - `crates.io/ripgrep`
 - `github.com/junegunn/fzf`

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +podman.io -- $SHELL -i
+launchpad install podman.io
 ```
 
 ## Programs

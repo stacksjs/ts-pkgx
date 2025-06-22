@@ -83,6 +83,8 @@ export const alacrittyPackage = {
   aliases: [
     'alacritty',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) alacritty -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install alacritty' as const,
 }
 
 export type AlacrittyPackage = typeof alacrittyPackage

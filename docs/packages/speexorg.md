@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install speexdec
+launchpad install speex.org
 ```
 
 ## Programs

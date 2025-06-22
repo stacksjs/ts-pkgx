@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +ccache.dev@4.11.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) ccache -- $SHELL -i
 ```
 
 ## Dependencies
