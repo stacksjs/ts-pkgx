@@ -132,6 +132,16 @@ export default withPwa(
     themeConfig: {
       search: {
         provider: 'local',
+        options: {
+          // Optimize search index to reduce memory usage
+          miniSearch: {
+            searchOptions: {
+              fuzzy: 0.1, // Reduce fuzzy search complexity
+              prefix: true,
+              boost: { title: 4, text: 2, titles: 1 },
+            },
+          },
+        },
       },
       logo: {
         light: './images/logo-transparent.svg',

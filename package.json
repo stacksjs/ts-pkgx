@@ -70,7 +70,7 @@
     "release:dry-run": "bun scripts/bump-version.ts --dry-run",
     "test": "rm -rf dist/ && bun test",
     "dev:docs": "bun vitepress dev docs",
-    "build:docs": "bun vitepress build docs",
+    "build:docs": "NODE_OPTIONS=\"--max-old-space-size=8192\" bun vitepress build docs",
     "preview:docs": "bun vitepress preview docs",
     "typecheck": "bun tsc --noEmit",
     "pkgx:fetch": "bun bin/cli.ts fetch",

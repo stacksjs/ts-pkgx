@@ -9,10 +9,17 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   build: {
     assetsDir: 'assets',
+    chunkSizeWarningLimit: 1000, // Increase chunk size warning limit
     rollupOptions: {
       output: {
         assetFileNames: 'assets/[name].[hash][extname]',
+        manualChunks: {
+          // Split large chunks to reduce memory usage
+          'search-index': ['@vitepress/theme'],
+        },
       },
+      // Optimize memory usage during build
+      maxParallelFileOps: 2, // Reduce parallel operations to conserve memory
     },
   },
 
