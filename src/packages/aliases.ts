@@ -243,7 +243,6 @@ export const aliases: Record<string, string> = {
   'driftctl': 'snyk.io/driftctl',
   'drill': 'crates.io/drill',
   'dssim': 'kornel.ski/dssim',
-  'dua': 'crates.io/dua',
   'duck': 'sagiegurari.github.io/duckscript',
   'duckdb': 'duckdb.org',
   'ducker': 'crates.io/ducker',

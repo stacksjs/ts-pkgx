@@ -164,7 +164,7 @@ import { diskusPackage } from './crates.io/diskus'
 import { docuumPackage } from './crates.io/docuum'
 import { drillPackage } from './crates.io/drill'
 import { dustPackage } from './crates.io/du-dust'
-import { duaPackage } from './crates.io/dua'
+import { cratesioduaPackage } from './crates.io/dua'
 import { duckerPackage } from './crates.io/ducker'
 import { ebPackage } from './crates.io/eb'
 import { eurekaPackage } from './crates.io/eureka'
@@ -1915,8 +1915,8 @@ export interface Pantry {
   crates_io_drill: typeof drillPackage
   du_dust: typeof dustPackage
   crates_io_du_dust: typeof dustPackage
-
-  crates_io_dua: typeof duaPackage
+  dua: typeof cratesioduaPackage
+  crates_io_dua: typeof cratesioduaPackage
 
   crates_io_ducker: typeof duckerPackage
   eb: typeof ebPackage
@@ -4863,7 +4863,6 @@ export interface Pantry {
   ddh: typeof ddhPackage
   wordl: typeof wordlPackage
   jnv: typeof jnvPackage
-  dua: typeof duaPackage
   silicon: typeof siliconPackage
   pik: typeof pikPackage
   lighthouse: typeof lighthousePackage
@@ -6219,8 +6218,8 @@ export const pantry: Pantry = {
   crates_io_drill: drillPackage,
   du_dust: dustPackage,
   crates_io_du_dust: dustPackage,
-
-  crates_io_dua: duaPackage,
+  dua: cratesioduaPackage,
+  crates_io_dua: cratesioduaPackage,
 
   crates_io_ducker: duckerPackage,
   eb: ebPackage,
@@ -9167,7 +9166,6 @@ export const pantry: Pantry = {
   ddh: ddhPackage,
   wordl: wordlPackage,
   jnv: jnvPackage,
-  dua: duaPackage,
   silicon: siliconPackage,
   pik: pikPackage,
   lighthouse: lighthousePackage,

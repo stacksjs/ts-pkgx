@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 3466+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 3464+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 3466
+- **Total Packages**: 3464
 - **Categories**: 13
-- **Last Updated**: 2025-06-22T08:30:06.460Z
+- **Last Updated**: 2025-06-22T09:27:44.367Z
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [CLI Tools & Utilities](#cli-tools-utilities) (2 packages)
 - [Web Servers & Proxies](#web-servers-proxies) (2 packages)
 - [Testing & Quality Assurance](#testing-quality-assurance) (1 packages)
-- [Other Utilities](#other-utilities) (3405 packages)
+- [Other Utilities](#other-utilities) (3403 packages)
 
 ## Programming Languages
 
@@ -180,7 +180,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Other Utilities
 
-*3405 packages in this category*
+*3403 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -679,7 +679,6 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[crates_io_docuum](./packages/crates_io_docuum.md)** () | Docuum performs least recently used (LRU) eviction of Docker images. 🗑️ | docuum | 0.25.0 (+3) | `pkgx docuum` |
 | **[crates_io_drill](./packages/crates_io_drill.md)** () | Drill is an HTTP load testing application written in Rust | drill | 0.8.3 (+0) | `pkgx drill` |
 | **[crates_io_du_dust](./packages/crates_io_du_dust.md)** () | A more intuitive version of du in rust | dust | 1.2.1 (+5) | `pkgx dust` |
-| **[crates_io_dua](./packages/crates_io_dua.md)** () | View disk space usage and delete unwanted data, fast. | dua | 2.30.1 (+25) | `pkgx dua` |
 | **[crates_io_ducker](./packages/crates_io_ducker.md)** () | A slightly quackers Docker TUI based on k9s 🦆 | ducker | 0.3.0 (+0) | `pkgx ducker` |
 | **[crates_io_eb](./packages/crates_io_eb.md)** () | Client for Amazon Elastic Beanstalk web service | eb | 0.5.0 (+0) | `pkgx eb` |
 | **[crates_io_eureka](./packages/crates_io_eureka.md)** () | 💡 CLI tool to input and store your ideas without leaving the terminal | eureka | 2.0.0 (+0) | `pkgx eureka` |
@@ -931,7 +930,6 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[drill](./packages/drill.md)** () | Drill is an HTTP load testing application written in Rust | drill | 0.8.3 (+0) | `pkgx drill` |
 | **[dssim](./packages/dssim.md)** () | Image similarity comparison simulating human perception (multiscale SSIM in Rust) | dssim | 3.4.0 (+1) | `pkgx dssim` |
 | **[du_dust](./packages/du_dust.md)** () | A more intuitive version of du in rust | dust | 1.2.1 (+5) | `pkgx dust` |
-| **[dua](./packages/dua.md)** () | View disk space usage and delete unwanted data, fast. | dua | 2.30.1 (+25) | `pkgx dua` |
 | **[duck](./packages/duck.md)** (duck) | Simple, extendable and embeddable scripting language. | duck | 0.11.1 (+4) | `pkgx duck` |
 | **[duckdb](./packages/duckdb.md)** () | DuckDB is an analytical in-process SQL database management system | duckdb | 1.3.1 (+19) | `pkgx duckdb` |
 | **[duckdb_org](./packages/duckdb_org.md)** () | DuckDB is an analytical in-process SQL database management system | duckdb | 1.3.1 (+19) | `pkgx duckdb` |

@@ -1,38 +1,30 @@
 /**
- * **dua** - View disk space usage and delete unwanted data, fast.
+ * **crates.io/dua** - pkgx package
  *
  * @domain `crates.io/dua`
- * @programs `dua`
  * @version `2.30.1` (26 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install dua`
- * @name `dua`
+ * @install `launchpad install crates.io/dua`
  * @dependencies `zlib.net^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dua
- * // Or access via domain
- * const samePkg = pantry.cratesiodua
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "dua"
- * console.log(pkg.description) // "View disk space usage and delete unwanted data,..."
- * console.log(pkg.programs)    // ["dua"]
+ * const pkg = pantry.cratesiodua
+ * console.log(pkg.name)        // "crates.io/dua"
  * console.log(pkg.versions[0]) // "2.30.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/dua.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const duaPackage = {
+export const cratesioduaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dua' as const,
+  name: 'crates.io/dua' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +32,7 @@ export const duaPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'View disk space usage and delete unwanted data, fast.' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/dua/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
@@ -48,14 +40,8 @@ export const duaPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install dua' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'dua',
-  ] as const,
+  installCommand: 'launchpad install crates.io/dua' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -96,13 +82,9 @@ export const duaPackage = {
     '2.19.1',
     '2.19.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dua -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install dua' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/dua -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/dua' as const,
 }
 
-export type DuaPackage = typeof duaPackage
+export type CratesioduaPackage = typeof cratesioduaPackage
