@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-06-22T20:35:40.159Z
+- **Last Updated**: 2025-06-22T20:46:15.564Z
 
 ## Table of Contents
 
@@ -198,7 +198,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[htop.dev](./packages/htopdev.md)** () | Improved top (interactive process viewer) | htop | 3.4.1 (+4) | `pkgx htop` |
 | **[ohmyposh.dev](./packages/ohmyposhdev.md)** () | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.9.0 (+290) | `pkgx oh-my-posh` |
 | **[starship.rs](./packages/starshiprs.md)** () | ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell! | starship | 1.23.0 (+20) | `pkgx starship` |
-| **[tree-sitter.github.io](./packages/treesittergithubio.md)** () | Parser generator tool and incremental parsing library | tree-sitter | 0.25.6 (+27) | `pkgx tree-sitter` |
+| **[tree-sitter.github.io](./packages/tree_sittergithubio.md)** () | Parser generator tool and incremental parsing library | tree-sitter | 0.25.6 (+27) | `pkgx tree-sitter` |
 | **[zsh.sourceforge.io](./packages/zshsourceforgeio.md)** () | UNIX shell (command interpreter) | zsh | 5.9.0 (+0) | `pkgx zsh` |
 
 ## Networking
@@ -241,8 +241,8 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[libvips.org](./packages/libvipsorg.md)** () | A fast image processing library with low memory needs. | vips, vipsedit, vipsheader, ... (+2) | 8.17.0 (+8) | `pkgx vips` |
 | **[mpv.io](./packages/mpvio.md)** () | Media player based on MPlayer and mplayer2 | mpv | 0.40.0 (+2) | `pkgx mpv` |
 | **[streamlink.github.io](./packages/streamlinkgithubio.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 7.4.0 (+19) | `pkgx streamlink` |
-| **[youtube-dl.org](./packages/youtubedlorg.md)** () | Command-line program to download videos from YouTube.com and other video sites | youtube-dl | 2023.8.4 (+1) | `pkgx youtube-dl` |
-| **[yt-dlp.org](./packages/ytdlporg.md)** () | A feature-rich command-line audio/video downloader | yt-dlp | 2025.6.9 (+46) | `pkgx yt-dlp` |
+| **[youtube-dl.org](./packages/youtube_dlorg.md)** () | Command-line program to download videos from YouTube.com and other video sites | youtube-dl | 2023.8.4 (+1) | `pkgx youtube-dl` |
+| **[yt-dlp.org](./packages/yt_dlporg.md)** () | A feature-rich command-line audio/video downloader | yt-dlp | 2025.6.9 (+46) | `pkgx yt-dlp` |
 
 ## Graphics Libraries
 
@@ -321,7 +321,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[asciidoctor.org](./packages/asciidoctororg.md)** () | :gem: A fast, open source text processor and publishing toolchain, written in Ruby, for convertin... | asciidoctor | 2.0.23 (+5) | `pkgx asciidoctor` |
 | **[mkdocs.org](./packages/mkdocsorg.md)** () | Project documentation with Markdown. | mkdocs | 1.6.1 (+2) | `pkgx mkdocs` |
 | **[pandoc.org](./packages/pandocorg.md)** () | Swiss-army knife of markup format conversion | pandoc | 3.7.0.2 (+30) | `pkgx pandoc` |
-| **[tectonic-typesetting.github.io](./packages/tectonictypesettinggithubio.md)** () | A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive. | tectonic | 0.15.0 (+5) | `pkgx tectonic` |
+| **[tectonic-typesetting.github.io](./packages/tectonic_typesettinggithubio.md)** () | A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive. | tectonic | 0.15.0 (+5) | `pkgx tectonic` |
 | **[typst.app](./packages/typstapp.md)** () | A new markup-based typesetting system that is powerful and easy to learn. | typst | 0.13.1 (+13) | `pkgx typst` |
 
 ## System Administration

@@ -1772,7 +1772,7 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
     content += '| Package | Description | Programs | Versions | Install |\n'
     content += '|---------|-------------|----------|----------|----------|\n'
 
-    for (const { pkg } of validPackages) {
+    for (const { domainVarName, pkg } of validPackages) {
       try {
         const domain = pkg.domain || pkg.fullPath || 'unknown'
 
@@ -1820,8 +1820,7 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
         const installCmd = `\`pkgx ${installName}\``
 
         // Create safe filename for package link in catalog (must match generatePackagePages logic)
-        // Find the domain variable name by converting domain back to var name
-        const domainVarName = convertDomainToVarName(domain)
+        // Use the actual domainVarName that was used to create the file, not a converted one
         let safeCatalogFilename = domainVarName.toLowerCase()
         if (/^\d/.test(safeCatalogFilename)) {
           safeCatalogFilename = `pkg-${safeCatalogFilename}`
