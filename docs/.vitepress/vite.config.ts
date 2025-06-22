@@ -36,6 +36,10 @@ export default defineConfig({
       'vue',
       '@vue/runtime-core',
     ],
+    alias: {
+      // Fix mark.js internal import resolution
+      'mark.js/src/lib/mark': 'mark.js/src/lib/mark.js',
+    },
   },
 
   plugins: [
