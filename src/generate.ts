@@ -120,7 +120,7 @@ async function importPantry(packagesDir?: string): Promise<Record<string, PkgxPa
         }
       }
       catch (error) {
-        console.error(`Error reading package file ${file}:`, error)
+        console.error(`Error processing file ${file}:`, error)
       }
     }
 
@@ -1207,6 +1207,33 @@ function shouldExcludePackage(pkg: PkgxPackage): boolean {
  * Generate the appropriate install command for a package
  */
 function generateInstallCommand(pkg: PkgxPackage): string {
+  // Helper function to resolve template variables with actual version values
+  const resolveTemplateVars = (text: string) => {
+    if (!pkg.versions || pkg.versions.length === 0) {
+      // No version data available, escape template variables to prevent Vue errors
+      return text.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')
+    }
+
+    const latestVersion = pkg.versions[0]
+    const versionParts = latestVersion.split('.')
+    const major = versionParts[0] || ''
+    const minor = versionParts[1] || ''
+    const patch = versionParts[2] || ''
+
+    // Create marketing version (major.minor, e.g., "2.1" from "2.1.0")
+    const marketing = minor ? `${major}.${minor}` : major
+
+    return text
+      .replace(/\{\{\s*version\.marketing\s*\}\}/g, marketing)
+      .replace(/\{\{\s*version\.major\s*\}\}/g, major)
+      .replace(/\{\{\s*version\.minor\s*\}\}/g, minor)
+      .replace(/\{\{\s*version\.patch\s*\}\}/g, patch)
+      .replace(/\{\{\s*version\.raw\s*\}\}/g, latestVersion)
+      .replace(/\{\{\s*version\s*\}\}/g, latestVersion)
+      // Escape any remaining incomplete template variables to prevent Vue errors
+      .replace(/\{\{(?![^}]*\}\})/g, '&lbrace;&lbrace;')
+  }
+
   // If there's a launchpadInstallCommand, use it but normalize the package name
   if (pkg.launchpadInstallCommand) {
     // Check if the command contains uppercase letters that should be lowercase
@@ -1216,22 +1243,22 @@ function generateInstallCommand(pkg: PkgxPackage): string {
       // If the package has aliases, prefer the shortest one (usually the most common name)
       if (pkg.aliases && pkg.aliases.length > 0) {
         const sortedAliases = [...pkg.aliases].sort((a, b) => a.length - b.length)
-        const escapedAlias = sortedAliases[0].replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
-        return `launchpad install ${escapedAlias}`
+        const resolvedAlias = resolveTemplateVars(sortedAliases[0])
+        return `launchpad install ${resolvedAlias}`
       }
       // If the package name is the same as an alias but with different case, use lowercase
       if (pkg.aliases && pkg.aliases.some(alias => alias.toLowerCase() === packageName.toLowerCase())) {
-        const escapedName = packageName.toLowerCase().replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
-        return `launchpad install ${escapedName}`
+        const resolvedName = resolveTemplateVars(packageName.toLowerCase())
+        return `launchpad install ${resolvedName}`
       }
-      // Otherwise use the command as-is but escape template variables
-      return pkg.launchpadInstallCommand.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
+      // Otherwise use the command as-is but resolve template variables
+      return resolveTemplateVars(pkg.launchpadInstallCommand)
     }
   }
 
-  // If there's an installCommand, use it but escape template variables
+  // If there's an installCommand, use it but resolve template variables
   if (pkg.installCommand) {
-    return pkg.installCommand.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
+    return resolveTemplateVars(pkg.installCommand)
   }
 
   // Generate install command using the best available name
@@ -1243,8 +1270,8 @@ function generateInstallCommand(pkg: PkgxPackage): string {
     installName = sortedAliases[0]
   }
 
-  // Escape template variables for VitePress
-  installName = installName.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
+  // Resolve template variables with actual values
+  installName = resolveTemplateVars(installName)
 
   return `launchpad install ${installName}`
 }
@@ -1330,28 +1357,43 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
   content += '\n'
 
   // Generate sections for each category
-  for (const [category, domains] of Object.entries(categories)) {
-    const validDomains = domains.filter(domain => domainToPackage.has(domain)).sort()
+  for (const [categoryName, domainVarNames] of Object.entries(categories)) {
+    // Convert domain variable names back to actual domains and get valid packages
+    const packagesMap = new Map<string, { domainVarName: string, pkg: PkgxPackage }>()
 
-    if (validDomains.length === 0)
+    // First pass: collect all packages and deduplicate by domain
+    domainVarNames.forEach((domainVarName) => {
+      const pkg = pantry[domainVarName]
+      if (pkg && !shouldExcludePackage(pkg)) {
+        const domain = pkg.domain || pkg.fullPath || 'unknown'
+        // Only keep the first occurrence of each domain (prefer shorter variable names)
+        if (!packagesMap.has(domain) || domainVarName.length < packagesMap.get(domain)!.domainVarName.length) {
+          packagesMap.set(domain, { domainVarName, pkg })
+        }
+      }
+    })
+
+    // Convert to array and sort
+    const validPackages = Array.from(packagesMap.values())
+      .sort((a, b) => (a.pkg.domain || a.domainVarName).localeCompare(b.pkg.domain || b.domainVarName))
+
+    if (validPackages.length === 0)
       continue
 
-    content += `## ${category}\n\n`
-    content += `*${validDomains.length} packages in this category*\n\n`
+    content += `## ${categoryName}\n\n`
+    content += `*${validPackages.length} packages in this category*\n\n`
     content += '| Package | Description | Programs | Versions | Install |\n'
     content += '|---------|-------------|----------|----------|----------|\n'
 
-    for (const domain of validDomains) {
+    for (const { pkg } of validPackages) {
       try {
-        const pkg = domainToPackage.get(domain)
-        if (!pkg)
-          continue
+        const domain = pkg.domain || pkg.fullPath || 'unknown'
 
         // Format aliases and escape template variables for VitePress
-        const aliases = pkg.aliases ? ` (${pkg.aliases.map(a => a.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')).join(', ')})` : ''
+        const aliases = pkg.aliases ? ` (${pkg.aliases.map(a => a.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')).join(', ')})` : ''
 
         // Limit programs display and escape template variables for VitePress
-        let programs = pkg.programs.slice(0, 3).map((p: string) => p.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')).join(', ')
+        let programs = pkg.programs.slice(0, 3).map((p: string) => p.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')).join(', ')
         if (pkg.programs.length > 3) {
           programs += `, ... (+${pkg.programs.length - 3})`
         }
@@ -1364,8 +1406,16 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
         const latestVersion = pkg.versions?.[0] || 'latest'
         const versionInfo = versionCount > 0 ? `${latestVersion} (+${versionCount - 1})` : 'latest'
 
-        // Escape pipe characters for markdown table
-        let description = pkg.description.replace(/\|/g, '\\|')
+        // Escape special characters for markdown table and Vue template syntax
+        let description = pkg.description
+          .replace(/\s+/g, ' ') // Replace multiple whitespace/newlines with single space
+          .replace(/\{\{/g, '&lbrace;&lbrace;')
+          .replace(/\}\}/g, '&rbrace;&rbrace;') // Template variables (complete and incomplete)
+          .replace(/'/g, '&#39;') // Single quotes
+          .replace(/"/g, '&quot;') // Double quotes
+          .replace(/</g, '&lt;') // Less than
+          .replace(/>/g, '&gt;') // Greater than
+          .replace(/\|/g, '\\|') // Pipe characters for markdown
 
         // Limit description length for table readability
         if (description.length > 100) {
@@ -1379,7 +1429,7 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
           installName = sortedAliases[0]
         }
         // Escape template variables for VitePress using v-pre (including incomplete ones)
-        installName = installName.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
+        installName = installName.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')
         const installCmd = `\`pkgx ${installName}\``
 
         // Create safe filename for package link in catalog (must match generatePackagePages logic)
@@ -1392,8 +1442,11 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
         safeCatalogFilename = safeCatalogFilename.replace(/[^\w-]/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '')
 
         content += `| **[${domain}](./packages/${safeCatalogFilename}.md)**${aliases} | ${description} | ${programs} | ${versionInfo} | ${installCmd} |\n`
+          .replace(/\r?\n/g, ' ') // Ensure entire table row is on one line
+          .replace(/\s+/g, ' ') // Collapse multiple spaces
       }
       catch (error) {
+        const domain = pkg.domain || pkg.fullPath || 'unknown'
         console.error(`Error processing ${domain}:`, error)
         content += `| **${domain}** | Error retrieving package information | - | - | - |\n`
       }
@@ -1534,17 +1587,45 @@ async function generatePackagePages(outputDir: string, sourcePackagesDir?: strin
       const domain = pkg.domain || pkg.fullPath || domainVarName
       const description = pkg.description || ''
 
-      // Escape template variables for VitePress
-      const escapedName = (pkg.name || domain).replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
+      // Resolve template variables with actual version values, fallback to escaping if resolution fails
+      const resolveTemplateVars = (text: string) => {
+        if (!pkg.versions || pkg.versions.length === 0) {
+          // No version data available, escape template variables to prevent Vue errors
+          return text.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')
+        }
 
-      let content = `# ${escapedName}
+        const latestVersion = pkg.versions[0]
+        const versionParts = latestVersion.split('.')
+        const major = versionParts[0] || ''
+        const minor = versionParts[1] || ''
+        const patch = versionParts[2] || ''
 
->${description ? ` ${description}` : ''}
+        // Create marketing version (major.minor, e.g., "2.1" from "2.1.0")
+        const marketing = minor ? `${major}.${minor}` : major
+
+        return text
+          .replace(/\{\{\s*version\.marketing\s*\}\}/g, marketing)
+          .replace(/\{\{\s*version\.major\s*\}\}/g, major)
+          .replace(/\{\{\s*version\.minor\s*\}\}/g, minor)
+          .replace(/\{\{\s*version\.patch\s*\}\}/g, patch)
+          .replace(/\{\{\s*version\.raw\s*\}\}/g, latestVersion)
+          .replace(/\{\{\s*version\s*\}\}/g, latestVersion)
+          // Escape any remaining incomplete template variables to prevent Vue errors
+          .replace(/\{\{(?![^}]*\}\})/g, '&lbrace;&lbrace;')
+      }
+
+      const resolvedName = resolveTemplateVars(pkg.name || domain)
+      const resolvedDescription = resolveTemplateVars(description)
+        .replace(/\s+/g, ' ') // Replace multiple whitespace/newlines with single space
+
+      let content = `# ${resolvedName}
+
+>${resolvedDescription ? ` ${resolvedDescription}` : ''}
 
 ## Package Information
 
 - **Domain**: \`${domain}\`
-- **Name**: \`${escapedName}\`
+- **Name**: \`${resolvedName}\`
 - **Homepage**: ${pkg.homepageUrl || 'Not specified'}
 - **Source**: [View on GitHub](${pkg.packageYmlUrl || `https://github.com/pkgxdev/pantry/tree/main/projects/${domain}/package.yml`})
 
@@ -1563,9 +1644,9 @@ This package provides the following executable programs:
 
       if (pkg.programs && pkg.programs.length > 0) {
         pkg.programs.forEach((program: string) => {
-          // Escape template variables for VitePress
-          const escapedProgram = program.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
-          content += `- \`${escapedProgram}\`\n`
+          // Resolve template variables with actual version values
+          const resolvedProgram = resolveTemplateVars(program)
+          content += `- \`${resolvedProgram}\`\n`
         })
       }
       else {
@@ -1580,8 +1661,9 @@ This package can also be accessed using these aliases:
 
 `
         pkg.aliases.forEach((alias) => {
-          const escapedAlias = alias.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
-          content += `- \`${escapedAlias}\`\n`
+          // Resolve template variables with actual version values
+          const resolvedAlias = resolveTemplateVars(alias)
+          content += `- \`${resolvedAlias}\`\n`
         })
       }
 
@@ -1611,7 +1693,7 @@ This package can also be accessed using these aliases:
 
 \`\`\`bash
 # Install specific version
-${pkg.pkgxInstallCommand ? pkg.pkgxInstallCommand.replace(`+${domain}`, `+${domain}@${pkg.versions[0]}`).replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>') : `sh <(curl https://pkgx.sh) +${domain}@${pkg.versions[0]} -- $SHELL -i`}
+${pkg.pkgxInstallCommand ? resolveTemplateVars(pkg.pkgxInstallCommand.replace(`+${domain}`, `+${domain}@${pkg.versions[0]}`)) : `sh <(curl https://pkgx.sh) +${domain}@${pkg.versions[0]} -- $SHELL -i`}
 \`\`\`
 `
       }
@@ -1707,13 +1789,22 @@ async function generateCategoryPages(outputDir: string, packagesDir?: string): P
 
   for (const [categoryName, domainVarNames] of Object.entries(categories)) {
     // Convert domain variable names back to actual domains and get valid packages
-    const validPackages = domainVarNames
-      .map((domainVarName) => {
-        const pkg = pantry[domainVarName]
-        return pkg ? { domainVarName, pkg } : null
-      })
-      .filter((item): item is { domainVarName: string, pkg: PkgxPackage } => item !== null)
-      .filter(({ pkg }) => !shouldExcludePackage(pkg)) // Exclude packages with placeholder data
+    const packagesMap = new Map<string, { domainVarName: string, pkg: PkgxPackage }>()
+
+    // First pass: collect all packages and deduplicate by domain
+    domainVarNames.forEach((domainVarName) => {
+      const pkg = pantry[domainVarName]
+      if (pkg && !shouldExcludePackage(pkg)) {
+        const domain = pkg.domain || pkg.fullPath || 'unknown'
+        // Only keep the first occurrence of each domain (prefer domain-based variable names over aliases)
+        if (!packagesMap.has(domain) || domainVarName.length > packagesMap.get(domain)!.domainVarName.length) {
+          packagesMap.set(domain, { domainVarName, pkg })
+        }
+      }
+    })
+
+    // Convert to array and sort
+    const validPackages = Array.from(packagesMap.values())
       .sort((a, b) => (a.pkg.domain || a.domainVarName).localeCompare(b.pkg.domain || b.domainVarName))
 
     if (validPackages.length === 0)
@@ -1742,6 +1833,33 @@ ${categoryName === 'Programming Languages'
     validPackages.forEach(({ domainVarName, pkg }) => {
       const domain = pkg.domain || pkg.fullPath || 'unknown'
 
+      // Helper function to resolve template variables with actual version values
+      const resolveTemplateVars = (text: string) => {
+        if (!pkg.versions || pkg.versions.length === 0) {
+          // No version data available, escape template variables to prevent Vue errors
+          return text.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')
+        }
+
+        const latestVersion = pkg.versions[0]
+        const versionParts = latestVersion.split('.')
+        const major = versionParts[0] || ''
+        const minor = versionParts[1] || ''
+        const patch = versionParts[2] || ''
+
+        // Create marketing version (major.minor, e.g., "2.1" from "2.1.0")
+        const marketing = minor ? `${major}.${minor}` : major
+
+        return text
+          .replace(/\{\{\s*version\.marketing\s*\}\}/g, marketing)
+          .replace(/\{\{\s*version\.major\s*\}\}/g, major)
+          .replace(/\{\{\s*version\.minor\s*\}\}/g, minor)
+          .replace(/\{\{\s*version\.patch\s*\}\}/g, patch)
+          .replace(/\{\{\s*version\.raw\s*\}\}/g, latestVersion)
+          .replace(/\{\{\s*version\s*\}\}/g, latestVersion)
+          // Escape any remaining incomplete template variables to prevent Vue errors
+          .replace(/\{\{(?![^}]*\}\})/g, '&lbrace;&lbrace;')
+      }
+
       // Build the display text with package name and aliases
       const displayItems = []
       if (pkg.name && pkg.name !== domain) {
@@ -1754,6 +1872,10 @@ ${categoryName === 'Programming Languages'
 
       const description = pkg.description || ''
 
+      // Resolve template variables with actual version values
+      const resolvedDescription = resolveTemplateVars(description)
+        .replace(/\s+/g, ' ') // Replace multiple whitespace/newlines with single space
+
       // Create safe filename for package link
       let safePackageFilename = domainVarName
       if (/^\d/.test(safePackageFilename)) {
@@ -1762,12 +1884,12 @@ ${categoryName === 'Programming Languages'
       safePackageFilename = safePackageFilename.replace(/[^\w-]/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '')
 
       content += `### [${domain}](../packages/${safePackageFilename}.md)${nameAndAliases}
-${description
+${resolvedDescription
   ? `
-${description}
+${resolvedDescription}
 `
   : ''}
-**Programs**: ${pkg.programs && pkg.programs.length > 0 ? pkg.programs.map((p: string) => p.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')).join(', ') : 'None specified'}
+**Programs**: ${pkg.programs && pkg.programs.length > 0 ? pkg.programs.map((p: string) => resolveTemplateVars(p)).join(', ') : 'None specified'}
 
 **Install**: \`${generateInstallCommand(pkg)}\`
 

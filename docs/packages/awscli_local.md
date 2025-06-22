@@ -1,6 +1,6 @@
 # awslocal
 
-> 💲  "awslocal" - Thin wrapper around the "aws" command line interface for use with LocalStack
+> 💲 "awslocal" - Thin wrapper around the "aws" command line interface for use with LocalStack
 
 ## Package Information
 

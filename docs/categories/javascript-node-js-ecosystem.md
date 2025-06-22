@@ -1,6 +1,6 @@
 # JavaScript & Node.js Ecosystem
 
-*11 packages in this category*
+*10 packages in this category*
 
 Packages related to javascript & node.js ecosystem.
 
@@ -57,16 +57,6 @@ Flutter makes it easy and fast to build beautiful apps for mobile and beyond
 ---
 
 ### [nodejs.org](../packages/nodejsorg.md) (node)
-
-Platform built on V8 to build network applications
-
-**Programs**: node
-
-**Install**: `launchpad install node`
-
----
-
-### [nodejs.org](../packages/node.md) (node)
 
 Platform built on V8 to build network applications
 

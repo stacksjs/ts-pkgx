@@ -1,6 +1,6 @@
 # starship
 
-> ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+> ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
 ## Package Information
 

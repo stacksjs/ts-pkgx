@@ -1,6 +1,6 @@
 # po4a.org
 
-> Maintain the translations of your documentation with ease  (PO for anything)
+> Maintain the translations of your documentation with ease (PO for anything)
 
 ## Package Information
 

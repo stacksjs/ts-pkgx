@@ -1,6 +1,6 @@
 # yq
 
-> yq is a portable command-line YAML, JSON, XML, CSV, TOML  and properties processor
+> yq is a portable command-line YAML, JSON, XML, CSV, TOML and properties processor
 
 ## Package Information
 

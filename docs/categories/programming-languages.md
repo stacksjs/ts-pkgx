@@ -1,6 +1,6 @@
 # Programming Languages
 
-*18 packages in this category*
+*16 packages in this category*
 
 Popular programming languages and their runtimes available through pkgx.
 
@@ -60,7 +60,7 @@ The Go programming language
 
 Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).
 
-**Programs**: ghc, ghc-<span v-pre>{{version.marketing}}</span>, ghc-<span v-pre>{{version}}</span>, ghc-pkg, ghc-pkg-<span v-pre>{{version.marketing}}</span>, ghc-pkg-<span v-pre>{{version}}</span>, ghci, ghci-<span v-pre>{{version.marketing}}</span>, ghci-<span v-pre>{{version}}</span>, ghcup, haddock, haddock-<span v-pre>{{version.marketing}}</span>, haddock-<span v-pre>{{version}}</span>, hp2ps, hp2ps-<span v-pre>{{version.marketing}}</span>, hp2ps-<span v-pre>{{version}}</span>, hpc, hpc-<span v-pre>{{version.marketing}}</span>, hpc-<span v-pre>{{version}}</span>, hsc2hs, hsc2hs-<span v-pre>{{version.marketing}}</span>, hsc2hs-<span v-pre>{{version}}</span>, runghc, runghc-<span v-pre>{{version.marketing}}</span>, runghc-<span v-pre>{{version}}</span>, runhaskell, runhaskell-<span v-pre>{{version.marketing}}</span>, runhaskell-<span v-pre>{{version}}</span>
+**Programs**: ghc, ghc-9.12, ghc-9.12.2, ghc-pkg, ghc-pkg-9.12, ghc-pkg-9.12.2, ghci, ghci-9.12, ghci-9.12.2, ghcup, haddock, haddock-9.12, haddock-9.12.2, hp2ps, hp2ps-9.12, hp2ps-9.12.2, hpc, hpc-9.12, hpc-9.12.2, hsc2hs, hsc2hs-9.12, hsc2hs-9.12.2, runghc, runghc-9.12, runghc-9.12.2, runhaskell, runhaskell-9.12, runhaskell-9.12.2
 
 **Install**: `launchpad install haskell.org`
 
@@ -96,16 +96,6 @@ Platform built on V8 to build network applications
 
 ---
 
-### [nodejs.org](../packages/node.md) (node)
-
-Platform built on V8 to build network applications
-
-**Programs**: node
-
-**Install**: `launchpad install node`
-
----
-
 ### [perl.org](../packages/perlorg.md)
 
 Highly capable, feature-rich programming language
@@ -130,17 +120,7 @@ General-purpose scripting language
 
 The Python programming language
 
-**Programs**: python, python<span v-pre>{{ version.major }}</span>, python<span v-pre>{{ version.marketing }}</span>
-
-**Install**: `launchpad install py`
-
----
-
-### [python.org](../packages/python.md) (python, py)
-
-The Python programming language
-
-**Programs**: python, python<span v-pre>{{ version.major }}</span>, python<span v-pre>{{ version.marketing }}</span>
+**Programs**: python, python3, python3.13
 
 **Install**: `launchpad install py`
 

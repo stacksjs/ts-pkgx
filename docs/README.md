@@ -5,8 +5,8 @@ Welcome to the ts-pkgx documentation! This directory contains comprehensive docu
 ## 📚 Documentation Structure
 
 - **[Package Catalog](./package-catalog.md)** - Complete catalog of all 866+ packages organized by category
-- **[Individual Package Pages](./packages/)** - Detailed documentation for each package
-- **[Category Pages](./categories/)** - Packages grouped by functionality
+- **[Individual Package Pages](./package-catalog.md#packages)** - Detailed documentation for each package
+- **[Category Pages](./package-catalog.md#categories)** - Packages grouped by functionality
 - **[API Reference](./api-reference.md)** - TypeScript API documentation
 - **[CLI Reference](./cli-reference.md)** - Command-line interface documentation
 

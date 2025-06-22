@@ -1,6 +1,6 @@
 # pypa.io/distlib
 
-> A low-level library which implements some Python packaging  standards (PEPs) and which could be used by third-party packaging tools to achieve interoperability.
+> A low-level library which implements some Python packaging standards (PEPs) and which could be used by third-party packaging tools to achieve interoperability.
 
 ## Package Information
 

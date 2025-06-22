@@ -21,33 +21,33 @@ launchpad install haskell.org
 This package provides the following executable programs:
 
 - `ghc`
-- `ghc-<span v-pre>{{version.marketing}}</span>`
-- `ghc-<span v-pre>{{version}}</span>`
+- `ghc-9.12`
+- `ghc-9.12.2`
 - `ghc-pkg`
-- `ghc-pkg-<span v-pre>{{version.marketing}}</span>`
-- `ghc-pkg-<span v-pre>{{version}}</span>`
+- `ghc-pkg-9.12`
+- `ghc-pkg-9.12.2`
 - `ghci`
-- `ghci-<span v-pre>{{version.marketing}}</span>`
-- `ghci-<span v-pre>{{version}}</span>`
+- `ghci-9.12`
+- `ghci-9.12.2`
 - `ghcup`
 - `haddock`
-- `haddock-<span v-pre>{{version.marketing}}</span>`
-- `haddock-<span v-pre>{{version}}</span>`
+- `haddock-9.12`
+- `haddock-9.12.2`
 - `hp2ps`
-- `hp2ps-<span v-pre>{{version.marketing}}</span>`
-- `hp2ps-<span v-pre>{{version}}</span>`
+- `hp2ps-9.12`
+- `hp2ps-9.12.2`
 - `hpc`
-- `hpc-<span v-pre>{{version.marketing}}</span>`
-- `hpc-<span v-pre>{{version}}</span>`
+- `hpc-9.12`
+- `hpc-9.12.2`
 - `hsc2hs`
-- `hsc2hs-<span v-pre>{{version.marketing}}</span>`
-- `hsc2hs-<span v-pre>{{version}}</span>`
+- `hsc2hs-9.12`
+- `hsc2hs-9.12.2`
 - `runghc`
-- `runghc-<span v-pre>{{version.marketing}}</span>`
-- `runghc-<span v-pre>{{version}}</span>`
+- `runghc-9.12`
+- `runghc-9.12.2`
 - `runhaskell`
-- `runhaskell-<span v-pre>{{version.marketing}}</span>`
-- `runhaskell-<span v-pre>{{version}}</span>`
+- `runhaskell-9.12`
+- `runhaskell-9.12.2`
 
 ## Available Versions
 

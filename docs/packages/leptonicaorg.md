@@ -1,6 +1,6 @@
 # leptonica.org
 
-> Leptonica is an open source library containing software that is broadly useful for image processing and image analysis applications. The official github repository for Leptonica is: danbloomberg/leptonica.  See leptonica.org for more documentation.
+> Leptonica is an open source library containing software that is broadly useful for image processing and image analysis applications. The official github repository for Leptonica is: danbloomberg/leptonica. See leptonica.org for more documentation.
 
 ## Package Information
 

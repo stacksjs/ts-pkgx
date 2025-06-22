@@ -61,7 +61,7 @@ This package depends on:
 
 These packages work well with podman:
 
-- [`openssh.com`](opensshcom.md) - 
+- [`openssh.com`](opensshcom.md) - Premier connectivity tool for secure remote login with the SSH protocol
 
 ## Usage Examples
 

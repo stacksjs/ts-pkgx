@@ -1,6 +1,6 @@
 # neofetch
 
-> 🖼️  A command-line system information tool written in bash 3.2+
+> 🖼️ A command-line system information tool written in bash 3.2+
 
 ## Package Information
 
