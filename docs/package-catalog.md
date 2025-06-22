@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 3466
 - **Categories**: 13
-- **Last Updated**: 2025-06-22T11:26:51.572Z
+- **Last Updated**: 2025-06-22T13:34:36.543Z
 
 ## Table of Contents
 
@@ -192,7 +192,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[GPT Engineer](./packages/GPT-Engineer.md)** () | Platform to experiment with the AI Software Engineer. Terminal based. NOTE: Very different from h... | gpte, gpt-engineer | 0.3.1 (+14) | `pkgx GPT Engineer` |
 | **[GQL](./packages/GQL.md)** () | GitQL is a extensible SQL-like query language and SDK to perform queries on various data sources ... | gitql | 0.39.0 (+32) | `pkgx gitql` |
 | **[Jenkins X](./packages/Jenkins-X.md)** (jx) | Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests usin... | jx | 3.11.92 (+57) | `pkgx jx` |
-| **[LLaMA.cpp](./packages/LLaMA.cpp.md)** () | LLM inference in C/C++ | llama-cli, llama.cpp, convert.py | 5734.0.0 (+2742) | `pkgx LLaMA.cpp` |
+| **[LLaMA.cpp](./packages/LLaMA.cpp.md)** () | LLM inference in C/C++ | llama-cli, llama.cpp, convert.py | 5735.0.0 (+2743) | `pkgx LLaMA.cpp` |
 | **[LibTomMath](./packages/LibTomMath.md)** () | LibTomMath is a free open source portable number theoretic multiple-precision integer library wri... | - | 1.3.0 (+1) | `pkgx LibTomMath` |
 | **[LicensePlist](./packages/LicensePlist.md)** () | A license list generator of all your dependencies for iOS applications | license-plist | 3.27.1 (+3) | `pkgx license-plist` |
 | **[MariaDB](./packages/MariaDB.md)** () | MariaDB server is a community developed fork of MySQL server. Started by core members of the orig... | aria_chk, aria_dump_log, aria_ftdump, ... (+81) | 12.0.1 (+25) | `pkgx MariaDB` |
@@ -1338,7 +1338,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[github_com_fastfloat_fast_float](./packages/github_com_fastfloat_fast_float.md)** () | Fast and exact implementation of the C++ from_chars functions for number types: 4x to 10x faster ... | - | 8.0.2 (+6) | `pkgx fast_float` |
 | **[github_com_fiatjaf_nak](./packages/github_com_fiatjaf_nak.md)** () | a command line tool for doing all things nostr | nak | 0.14.3 (+17) | `pkgx nak` |
 | **[github_com_gabime_spdlog](./packages/github_com_gabime_spdlog.md)** () | Fast C++ logging library. | - | 1.15.3 (+7) | `pkgx github.com/gabime/spdlog` |
-| **[github_com_ggerganov_llama_cpp](./packages/github_com_ggerganov_llama_cpp.md)** () | LLM inference in C/C++ | llama-cli, llama.cpp, convert.py | 5734.0.0 (+2742) | `pkgx LLaMA.cpp` |
+| **[github_com_ggerganov_llama_cpp](./packages/github_com_ggerganov_llama_cpp.md)** () | LLM inference in C/C++ | llama-cli, llama.cpp, convert.py | 5735.0.0 (+2743) | `pkgx LLaMA.cpp` |
 | **[github_com_ggerganov_whisper_cpp](./packages/github_com_ggerganov_whisper_cpp.md)** () | Port of OpenAI's Whisper model in C/C++ | whisper.cpp, whisper-cli | 1.7.5 (+16) | `pkgx whisper` |
 | **[github_com_giampaolo_psutil](./packages/github_com_giampaolo_psutil.md)** () | Cross-platform lib for process and system monitoring in Python | - | 7.0.0 (+4) | `pkgx github.com/giampaolo/psutil` |
 | **[github_com_git_chglog](./packages/github_com_git_chglog.md)** () | CHANGELOG generator implemented in Go (Golang). | git-chglog | 0.15.4 (+0) | `pkgx git-chglog` |
@@ -2182,7 +2182,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[liteclicom](./packages/liteclicom.md)** () | CLI for SQLite Databases with auto-completion and syntax highlighting | litecli | 1.15.0 (+14) | `pkgx litecli` |
 | **[littlecms_com](./packages/littlecms_com.md)** () | A free, open source, CMM engine. It provides fast transforms between ICC profiles. | jpgicc, linkicc, psicc, ... (+2) | 2.17.0 (+3) | `pkgx littlecms.com` |
 | **[littlecmscom](./packages/littlecmscom.md)** () | A free, open source, CMM engine. It provides fast transforms between ICC profiles. | jpgicc, linkicc, psicc, ... (+2) | 2.17.0 (+3) | `pkgx littlecms.com` |
-| **[llama_cpp](./packages/llama_cpp.md)** () | LLM inference in C/C++ | llama-cli, llama.cpp, convert.py | 5734.0.0 (+2742) | `pkgx LLaMA.cpp` |
+| **[llama_cpp](./packages/llama_cpp.md)** () | LLM inference in C/C++ | llama-cli, llama.cpp, convert.py | 5735.0.0 (+2743) | `pkgx LLaMA.cpp` |
 | **[llm](./packages/llm.md)** () | Access large language models from the command-line | llm | 0.26.0 (+29) | `pkgx llm` |
 | **[llm_datasette_io](./packages/llm_datasette_io.md)** () | Access large language models from the command-line | llm | 0.26.0 (+29) | `pkgx llm` |
 | **[llmdatasetteio](./packages/llmdatasetteio.md)** () | Access large language models from the command-line | llm | 0.26.0 (+29) | `pkgx llm` |
