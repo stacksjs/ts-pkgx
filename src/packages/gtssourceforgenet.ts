@@ -1,10 +1,7 @@
 /**
- * **gts.sourceforge.net** - GNU triangulated surface library
+ * **gts.sourceforge.net** - Package from pantry: gts.sourceforge.net
  *
  * @domain `gts.sourceforge.net`
- * @programs `delaunay`, `gts2dxf`, `gts2oogl`, `gts2stl`, `gtscheck`, ... (+4 more)
- * @version `0.7.6` (1 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install gts.sourceforge.net`
  * @dependencies `gnome.org/glib>=2.4.0`
@@ -15,9 +12,7 @@
  *
  * const pkg = pantry.gtssourceforgenet
  * console.log(pkg.name)        // "gts.sourceforge.net"
- * console.log(pkg.description) // "GNU triangulated surface library"
- * console.log(pkg.programs)    // ["delaunay", "gts2dxf", ...]
- * console.log(pkg.versions[0]) // "0.7.6" (latest)
+ * console.log(pkg.description) // "Package from pantry: gts.sourceforge.net"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gts-sourceforge-net.md
@@ -35,30 +30,15 @@ export const gtssourceforgenetPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'GNU triangulated surface library' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gts.sourceforge.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: gts.sourceforge.net' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gts.sourceforge.net' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'delaunay',
-    'gts2dxf',
-    'gts2oogl',
-    'gts2stl',
-    'gtscheck',
-    'gtscompare',
-    'gtstemplate',
-    'stl2gts',
-    'transform',
-  ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gts.sourceforge.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gts.sourceforge.net' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -67,16 +47,10 @@ export const gtssourceforgenetPackage = {
   dependencies: [
     'gnome.org/glib>=2.4.0',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.7.6',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gts.sourceforge.net -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gts.sourceforge.net' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gts.sourceforge.net/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type GtssourceforgenetPackage = typeof gtssourceforgenetPackage

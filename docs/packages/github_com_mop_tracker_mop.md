@@ -1,6 +1,6 @@
 # mop
 
-> Stock market tracker for hackers.
+> Package from pantry: github.com/mop-tracker/mop
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install mop
+launchpad install github.com/mop-tracker/mop
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mop`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2023.3.30`
-
-</details>
-
-**Latest Version**: `2023.3.30`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) mop -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

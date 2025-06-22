@@ -1,6 +1,6 @@
 # open-mpi.org
 
-> Open MPI main development repository
+> Package from pantry: open-mpi.org
 
 ## Package Information
 
@@ -20,37 +20,7 @@ launchpad install open-mpi.org
 
 This package provides the following executable programs:
 
-- `mpic++`
-- `mpiCC`
-- `mpicc`
-- `mpicxx`
-- `mpiexec`
-- `mpif77`
-- `mpif90`
-- `mpifort`
-- `mpirun`
-- `ompi_info`
-- `opal_wrapper`
-
-## Available Versions
-
-<details>
-<summary>Show all 11 versions</summary>
-
-- `5.0.8`, `5.0.7`, `5.0.6`, `5.0.5`, `5.0.4`
-- `5.0.3`, `5.0.2`, `5.0.1`, `4.1.8`, `4.1.7`
-- `4.1.5`
-
-</details>
-
-**Latest Version**: `5.0.8`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +open-mpi.org@5.0.8 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

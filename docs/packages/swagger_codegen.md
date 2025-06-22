@@ -1,6 +1,6 @@
 # swagger-codegen
 
-> swagger-codegen contains a template-driven engine to generate documentation, API clients and server stubs in different languages by parsing your OpenAPI / Swagger definition.
+> Package from pantry: swagger.io/swagger-codegen
 
 ## Package Information
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install swagger-codegen
+launchpad install swagger.io/swagger-codegen
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `swagger-codegen`
-
-## Available Versions
-
-<details>
-<summary>Show all 20 versions</summary>
-
-- `3.0.68`, `3.0.67`, `3.0.66`, `3.0.65`, `3.0.64`
-- `3.0.63`, `3.0.62`, `3.0.61`, `3.0.60`, `3.0.59`
-- `3.0.58`, `3.0.57`, `3.0.56`, `3.0.55`, `3.0.54`
-- `2.4.45`, `2.4.44`, `2.4.43`, `2.4.42`, `2.4.41`
-
-</details>
-
-**Latest Version**: `3.0.68`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) swagger-codegen -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

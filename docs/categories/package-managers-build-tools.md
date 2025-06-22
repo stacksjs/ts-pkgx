@@ -16,93 +16,93 @@ Mirror of CMake upstream repository
 
 ---
 
-### [gradle.org](../packages/gradleorg.md) (gradle)
+### [gradle.org](../packages/gradleorg.md)
 
-Open-source build automation tool based on the Groovy and Kotlin DSL
+Package from pantry: gradle.org
 
-**Programs**: gradle
+**Programs**: None specified
 
-**Install**: `launchpad install gradle`
-
----
-
-### [maven.apache.org](../packages/mavenapacheorg.md) (mvn)
-
-Java-based project management
-
-**Programs**: mvn, mvnDebug, mvnyjp
-
-**Install**: `launchpad install mvn`
+**Install**: `launchpad install gradle.org`
 
 ---
 
-### [mesonbuild.com](../packages/mesonbuildcom.md) (meson)
+### [maven.apache.org](../packages/mavenapacheorg.md)
 
-Fast and user friendly build system
+Package from pantry: maven.apache.org
 
-**Programs**: meson
+**Programs**: None specified
 
-**Install**: `launchpad install meson`
-
----
-
-### [npmjs.com](../packages/npmjscom.md) (npm)
-
-the package manager for JavaScript
-
-**Programs**: npm, npx
-
-**Install**: `launchpad install npm`
+**Install**: `launchpad install maven.apache.org`
 
 ---
 
-### [pip.pypa.io](../packages/pippypaio.md) (pip)
+### [mesonbuild.com](../packages/mesonbuildcom.md)
 
-The Python package installer
+Package from pantry: mesonbuild.com
 
-**Programs**: pip, pip3.8, pip3.9, pip3.10, pip3.11
+**Programs**: None specified
 
-**Install**: `launchpad install pip`
-
----
-
-### [pipenv.pypa.io](../packages/pipenvpypaio.md) (pipenv)
-
-Python Development Workflow for Humans.
-
-**Programs**: pipenv
-
-**Install**: `launchpad install pipenv`
+**Install**: `launchpad install mesonbuild.com`
 
 ---
 
-### [pnpm.io](../packages/pnpmio.md) (pnpm)
+### [npmjs.com](../packages/npmjscom.md)
 
-Fast, disk space efficient package manager
+Package from pantry: npmjs.com
 
-**Programs**: pnpm, pnpx
+**Programs**: None specified
 
-**Install**: `launchpad install pnpm`
+**Install**: `launchpad install npmjs.com`
+
+---
+
+### [pip.pypa.io](../packages/pippypaio.md)
+
+Package from pantry: pip.pypa.io
+
+**Programs**: None specified
+
+**Install**: `launchpad install pip.pypa.io`
+
+---
+
+### [pipenv.pypa.io](../packages/pipenvpypaio.md)
+
+Package from pantry: pipenv.pypa.io
+
+**Programs**: None specified
+
+**Install**: `launchpad install pipenv.pypa.io`
+
+---
+
+### [pnpm.io](../packages/pnpmio.md)
+
+Package from pantry: pnpm.io
+
+**Programs**: None specified
+
+**Install**: `launchpad install pnpm.io`
 
 ---
 
 ### [rubygems.org](../packages/rubygemsorg.md)
 
-Powerful, clean, object-oriented scripting language
+Package from pantry: rubygems.org
 
-**Programs**: bundle, bundler, gem
+**Programs**: None specified
 
 **Install**: `launchpad install rubygems.org`
 
 ---
 
-### [yarnpkg.com](../packages/yarnpkgcom.md) (yarn)
+### [yarnpkg.com](../packages/yarnpkgcom.md)
 
-📦🐈 Active development trunk for Yarn ⚒
+Package from pantry: yarnpkg.com
 
-**Programs**: yarn, yarnpkg
+**Programs**: None specified
 
-**Install**: `launchpad install yarn`
+**Install**: `launchpad install yarnpkg.com`
 
 ---
 

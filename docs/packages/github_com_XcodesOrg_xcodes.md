@@ -1,6 +1,6 @@
 # xcodes
 
-> The best command-line tool to install and switch between multiple versions of Xcode.
+> Package from pantry: github.com/XcodesOrg/xcodes
 
 ## Package Information
 
@@ -13,38 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install xcodes
+launchpad install github.com/XcodesOrg/xcodes
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `xcodes`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `1.6.2`, `1.6.1`, `1.6.0`, `1.5.0`, `1.4.1`
-
-</details>
-
-**Latest Version**: `1.6.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) xcodes -- $SHELL -i
-```
-
-## Related Packages
-
-These packages work well with xcodes:
-
-- [`aria2.github.io`](aria2githubio.md) - aria2 is a lightweight multi-protocol & multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.
+*No programs specified*
 
 ## Usage Examples
 

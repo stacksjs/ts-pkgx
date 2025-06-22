@@ -1,33 +1,23 @@
 /**
- * **conform** - Policy enforcement for your pipelines.
+ * **conform** - Package from pantry: github.com/siderolabs/conform
  *
  * @domain `github.com/siderolabs/conform`
- * @programs `conform`
- * @version `2022.10.25` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install conform`
- * @name `conform`
+ * @install `launchpad install github.com/siderolabs/conform`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.conform
- * // Or access via domain
- * const samePkg = pantry.githubcomsiderolabsconform
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomsiderolabsconform
  * console.log(pkg.name)        // "conform"
- * console.log(pkg.description) // "Policy enforcement for your pipelines."
- * console.log(pkg.programs)    // ["conform"]
- * console.log(pkg.versions[0]) // "2022.10.25" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/siderolabs/conform"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/siderolabs/conform.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const conformPackage = {
+export const githubcomsiderolabsconformPackage = {
   /**
    * The display name of this package.
    */
@@ -39,38 +29,21 @@ export const conformPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Policy enforcement for your pipelines.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/siderolabs/conform/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/siderolabs/conform' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install conform' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'conform',
-  ] as const,
+  installCommand: 'launchpad install github.com/siderolabs/conform' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/siderolabs/conform -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/siderolabs/conform' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2022.10.25',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) conform -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install conform' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/siderolabs/conform/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type ConformPackage = typeof conformPackage
+export type GithubcomsiderolabsconformPackage = typeof githubcomsiderolabsconformPackage

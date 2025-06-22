@@ -1,34 +1,24 @@
 /**
- * **git-gone** - Cleanup stale Git branches of pull requests
+ * **git-gone** - Package from pantry: crates.io/git-gone
  *
  * @domain `crates.io/git-gone`
- * @programs `git-gone`
- * @version `1.2.5` (7 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install git-gone`
- * @name `git-gone`
+ * @install `launchpad install crates.io/git-gone`
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gitgone
- * // Or access via domain
- * const samePkg = pantry.cratesiogitgone
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiogitgone
  * console.log(pkg.name)        // "git-gone"
- * console.log(pkg.description) // "Cleanup stale Git branches of pull requests"
- * console.log(pkg.programs)    // ["git-gone"]
- * console.log(pkg.versions[0]) // "1.2.5" (latest)
+ * console.log(pkg.description) // "Package from pantry: crates.io/git-gone"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/git-gone.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitgonePackage = {
+export const cratesiogitgonePackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const gitgonePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Cleanup stale Git branches of pull requests' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/git-gone/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: crates.io/git-gone' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install git-gone' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'git-gone',
-  ] as const,
+  installCommand: 'launchpad install crates.io/git-gone' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/git-gone -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/git-gone' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,26 +47,10 @@ export const gitgonePackage = {
   dependencies: [
     'libgit2.org~1.7 # links to libgit2.so.1.7',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.2.5',
-    '1.2.4',
-    '1.2.2',
-    '1.2.0',
-    '1.1.1',
-    '1.1.0',
-    '1.0.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-gone -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install git-gone' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/git-gone/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type GitgonePackage = typeof gitgonePackage
+export type CratesiogitgonePackage = typeof cratesiogitgonePackage

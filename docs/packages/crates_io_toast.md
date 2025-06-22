@@ -1,6 +1,6 @@
 # toast
 
-> Containerize your development and continuous integration environments. 🥂
+> Package from pantry: crates.io/toast
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install toast
+launchpad install crates.io/toast
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `toast`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `0.47.7`, `0.47.6`, `0.47.5`
-
-</details>
-
-**Latest Version**: `0.47.7`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) toast -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

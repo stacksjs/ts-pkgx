@@ -1,6 +1,6 @@
 # nasm.us
 
-> A cross-platform x86 assembler with an Intel-like syntax
+> Package from pantry: nasm.us
 
 ## Package Information
 
@@ -20,26 +20,7 @@ launchpad install nasm.us
 
 This package provides the following executable programs:
 
-- `nasm`
-- `ndisasm`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `2.16.3`, `2.16.2`, `2.15.5`
-
-</details>
-
-**Latest Version**: `2.16.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +nasm.us@2.16.3 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

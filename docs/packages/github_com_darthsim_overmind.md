@@ -1,6 +1,6 @@
 # overmind
 
-> Process manager for Procfile-based applications and tmux
+> Package from pantry: github.com/darthsim/overmind
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install overmind
+launchpad install github.com/darthsim/overmind
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `overmind`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `2.5.1`, `2.5.0`, `2.4.0`
-
-</details>
-
-**Latest Version**: `2.5.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) overmind -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

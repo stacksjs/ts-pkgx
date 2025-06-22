@@ -1,6 +1,6 @@
 # gtk3
 
-> Toolkit for creating graphical user interfaces
+> Package from pantry: gtk.org/gtk3
 
 ## Package Information
 
@@ -13,41 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gtk3
+launchpad install gtk.org/gtk3
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gtk-builder-tool`
-- `gtk-encode-symbolic-svg`
-- `gtk-launch`
-- `gtk-query-immodules-3.0`
-- `gtk-query-settings`
-- `gtk-update-icon-cache`
-- `gtk3-demo`
-- `gtk3-demo-application`
-- `gtk3-icon-browser`
-- `gtk3-widget-factory`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `3.24.38`
-
-</details>
-
-**Latest Version**: `3.24.38`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gtk.org/gtk3@3.24.38 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

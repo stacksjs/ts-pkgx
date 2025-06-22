@@ -1,11 +1,11 @@
-# jetp
+# jetporch.com
 
-> Read-only mirror: see https://www.jetporch.com/community/sourcehut
+> Package from pantry: jetporch.com
 
 ## Package Information
 
 - **Domain**: `jetporch.com`
-- **Name**: `jetp`
+- **Name**: `jetporch.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jetporch.com/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install jetp
+launchpad install jetporch.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `jetp`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.0.1`
-
-</details>
-
-**Latest Version**: `0.0.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) jetp -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

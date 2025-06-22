@@ -1,6 +1,6 @@
 # scc
 
-> Sloc, Cloc and Code: scc is a very fast accurate code counter with complexity calculations and COCOMO estimates written in pure Go
+> Package from pantry: github.com/boyter/scc
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install scc
+launchpad install github.com/boyter/scc
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `scc`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `3.5.0`, `3.4.0`, `3.3.5`, `3.3.4`, `3.3.3`
-- `3.3.2`, `3.3.1`, `3.3.0`, `3.2.0`, `3.1.0`
-
-</details>
-
-**Latest Version**: `3.5.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) scc -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

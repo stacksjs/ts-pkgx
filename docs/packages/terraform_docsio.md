@@ -1,11 +1,11 @@
-# terraform-docs
+# terraform-docs.io
 
-> Generate documentation from Terraform modules in various output formats
+> Package from pantry: terraform-docs.io
 
 ## Package Information
 
 - **Domain**: `terraform-docs.io`
-- **Name**: `terraform-docs`
+- **Name**: `terraform-docs.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/terraform-docs.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install terraform-docs
+launchpad install terraform-docs.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `terraform-docs`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `0.20.0`, `0.19.0`, `0.18.0`, `0.17.0`, `0.16.0`
-
-</details>
-
-**Latest Version**: `0.20.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) terraform-docs -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

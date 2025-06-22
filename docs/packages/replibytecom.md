@@ -1,11 +1,11 @@
-# replibyte
+# replibyte.com
 
-> Seed your development database with real data ⚡️
+> Package from pantry: replibyte.com
 
 ## Package Information
 
 - **Domain**: `replibyte.com`
-- **Name**: `replibyte`
+- **Name**: `replibyte.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/replibyte.com/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install replibyte
+launchpad install replibyte.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `replibyte`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.10.0`
-
-</details>
-
-**Latest Version**: `0.10.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) replibyte -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

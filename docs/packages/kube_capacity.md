@@ -1,6 +1,6 @@
 # kube-capacity
 
-> A simple CLI that provides an overview of the resource requests, limits, and utilization in a Kubernetes cluster
+> Package from pantry: github.com/robscott/kube-capacity
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install kube-capacity
+launchpad install github.com/robscott/kube-capacity
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `kube-capacity`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.8.0`
-
-</details>
-
-**Latest Version**: `0.8.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) kube-capacity -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

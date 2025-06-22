@@ -1,11 +1,11 @@
-# teller
+# tlr.dev
 
-> Cloud native secrets management for developers - never leave your command line for secrets.
+> Package from pantry: tlr.dev
 
 ## Package Information
 
 - **Domain**: `tlr.dev`
-- **Name**: `teller`
+- **Name**: `tlr.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tlr.dev/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install teller
+launchpad install tlr.dev
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `teller`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `2.0.7`, `2.0.6`, `2.0.5`, `2.0.4`, `1.5.6`
-
-</details>
-
-**Latest Version**: `2.0.7`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) teller -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -1,6 +1,6 @@
 # pango
 
-> Framework for layout and rendering of i18n text
+> Package from pantry: gnome.org/pango
 
 ## Package Information
 
@@ -13,36 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install pango
+launchpad install gnome.org/pango
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pango-list`
-- `pango-segmentation`
-- `pango-view`
-
-## Available Versions
-
-<details>
-<summary>Show all 13 versions</summary>
-
-- `1.56.3`, `1.56.2`, `1.56.1`, `1.56.0`, `1.55.5`
-- `1.55.0`, `1.54.0`, `1.52.2`, `1.52.1`, `1.52.0`
-- `1.51.2`, `1.50.14`, `1.50.9`
-
-</details>
-
-**Latest Version**: `1.56.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnome.org/pango@1.56.3 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

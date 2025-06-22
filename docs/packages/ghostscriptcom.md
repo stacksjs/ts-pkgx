@@ -1,6 +1,6 @@
 # ghostscript.com
 
-> This is purely for downloads, please check the website for full information
+> Package from pantry: ghostscript.com
 
 ## Package Information
 
@@ -20,58 +20,7 @@ launchpad install ghostscript.com
 
 This package provides the following executable programs:
 
-- `dvipdf`
-- `eps2eps`
-- `gpcl6`
-- `gpcl6c`
-- `gpdlc`
-- `gs`
-- `gsbj`
-- `gsc`
-- `gsdj`
-- `gsdj500`
-- `gslj`
-- `gslp`
-- `gsnd`
-- `gsx`
-- `gxps`
-- `gxpsc`
-- `lprsetup.sh`
-- `pdf2dsc`
-- `pdf2ps`
-- `pf2afm`
-- `pfbtopfa`
-- `pphs`
-- `printafm`
-- `ps2ascii`
-- `ps2epsi`
-- `ps2pdf`
-- `ps2pdf12`
-- `ps2pdf13`
-- `ps2pdf14`
-- `ps2pdfwr`
-- `ps2ps`
-- `ps2ps2`
-- `unix-lpr.sh`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `10.5.1`, `10.4.0`, `10.3.1`, `10.3.0`, `10.2.1`
-- `10.2.0`, `10.1.2`
-
-</details>
-
-**Latest Version**: `10.5.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +ghostscript.com@10.5.1 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

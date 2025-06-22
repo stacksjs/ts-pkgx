@@ -1,11 +1,11 @@
-# ctags
+# ctags.io
 
-> A maintained ctags implementation
+> Package from pantry: ctags.io
 
 ## Package Information
 
 - **Domain**: `ctags.io`
-- **Name**: `ctags`
+- **Name**: `ctags.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ctags.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ctags
+launchpad install ctags.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ctags`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `6.2.0`, `6.1.0`
-
-</details>
-
-**Latest Version**: `6.2.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ctags -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

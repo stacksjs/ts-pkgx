@@ -1,6 +1,6 @@
 # ios-deploy
 
-> Install and debug iPhone apps from the command line, without using Xcode
+> Package from pantry: github.com/ios-control/ios-deploy
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ios-deploy
+launchpad install github.com/ios-control/ios-deploy
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ios-deploy`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.12.2`
-
-</details>
-
-**Latest Version**: `1.12.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ios-deploy -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

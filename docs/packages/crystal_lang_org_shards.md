@@ -1,6 +1,6 @@
 # shards
 
-> Fast and statically typed, compiled language with Ruby-like syntax
+> Package from pantry: crystal-lang.org/shards
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install shards
+launchpad install crystal-lang.org/shards
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `shards`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `0.19.1`, `0.19.0`, `0.18.0`, `0.17.4`, `0.17.3`
-
-</details>
-
-**Latest Version**: `0.19.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) shards -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

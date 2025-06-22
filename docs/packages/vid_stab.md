@@ -1,11 +1,11 @@
-# public.hronopik.de/vid.stab
+# vid.stab
 
-> Video stabilization library
+> Package from pantry: public.hronopik.de/vid.stab
 
 ## Package Information
 
 - **Domain**: `public.hronopik.de/vid.stab`
-- **Name**: `public.hronopik.de/vid.stab`
+- **Name**: `vid.stab`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/public.hronopik.de/vid.stab/package.yml)
 
@@ -21,24 +21,6 @@ launchpad install public.hronopik.de/vid.stab
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.1.1`
-
-</details>
-
-**Latest Version**: `1.1.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +public.hronopik.de/vid.stab@1.1.1 -- $SHELL -i
-```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # tine
 
-> TINE a data pipeline runner.
+> Package from pantry: github.com/OutOfBedlam/tine
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install tine
+launchpad install github.com/OutOfBedlam/tine
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `tine`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `0.0.7`, `0.0.6`, `0.0.5`, `0.0.4`, `0.0.3`
-- `0.0.2`
-
-</details>
-
-**Latest Version**: `0.0.7`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) tine -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

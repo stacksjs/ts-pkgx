@@ -1,6 +1,6 @@
 # cbindgen
 
-> A project for generating C bindings from Rust code
+> Package from pantry: mozilla.org/cbindgen
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install cbindgen
+launchpad install mozilla.org/cbindgen
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cbindgen`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.29.0`, `0.28.0`, `0.27.0`, `0.26.0`
-
-</details>
-
-**Latest Version**: `0.29.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) cbindgen -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

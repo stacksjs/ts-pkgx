@@ -1,6 +1,6 @@
 # rust-kanban
 
-> A kanban board for the terminal built with ❤️ in Rust
+> Package from pantry: crates.io/rust-kanban
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install rust-kanban
+launchpad install crates.io/rust-kanban
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `rust-kanban`
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `0.10.5`, `0.10.4`, `0.10.3`, `0.10.2`, `0.10.1`
-- `0.10.0`, `0.9.7`, `0.9.6`
-
-</details>
-
-**Latest Version**: `0.10.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) rust-kanban -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

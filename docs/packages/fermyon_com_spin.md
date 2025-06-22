@@ -1,6 +1,6 @@
 # spin
 
-> Spin is the open source developer tool for building and running serverless applications powered by WebAssembly.
+> Package from pantry: fermyon.com/spin
 
 ## Package Information
 
@@ -13,41 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install spin
+launchpad install fermyon.com/spin
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `spin`
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `3.3.1`, `3.3.0`, `3.2.0`, `3.1.2`, `3.1.1`
-- `3.1.0`, `3.0.0`, `2.7.0`
-
-</details>
-
-**Latest Version**: `3.3.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) spin -- $SHELL -i
-```
-
-## Related Packages
-
-These packages work well with spin:
-
-- `rust-lang.org`
-- `rust-lang.org/cargo`
-- `git-scm.org`
+*No programs specified*
 
 ## Usage Examples
 

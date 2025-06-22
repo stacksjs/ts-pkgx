@@ -1,6 +1,6 @@
 # xcparse
 
-> Command line tool & Swift framework for parsing Xcode 11+ xcresult
+> Package from pantry: github.com/ChargePoint/xcparse
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install xcparse
+launchpad install github.com/ChargePoint/xcparse
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `xcparse`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `2.3.2`, `2.3.1`
-
-</details>
-
-**Latest Version**: `2.3.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) xcparse -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

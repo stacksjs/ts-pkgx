@@ -1,6 +1,6 @@
 # poppler-qt5
 
-> PDF rendering library (based on the xpdf-3.0 code base)
+> Package from pantry: freedesktop.org/poppler-qt5
 
 ## Package Information
 
@@ -13,48 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install poppler-qt5
+launchpad install freedesktop.org/poppler-qt5
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pdfattach`
-- `pdfdetach`
-- `pdffonts`
-- `pdfimages`
-- `pdfinfo`
-- `pdfseparate`
-- `pdfsig`
-- `pdftocairo`
-- `pdftohtml`
-- `pdftoppm`
-- `pdftops`
-- `pdftotext`
-- `pdfunite`
-
-## Available Versions
-
-<details>
-<summary>Show all 21 versions</summary>
-
-- `25.6.0`, `25.5.0`, `25.4.0`, `25.3.0`, `25.2.0`
-- `25.1.0`, `24.12.0`, `24.11.0`, `24.10.0`, `24.9.0`
-- `24.8.0`, `24.7.0`, `24.6.1`, `24.6.0`, `24.5.0`
-- `24.4.0`, `24.3.0`, `24.2.0`, `24.1.0`, `23.12.0`
-- `23.11.0`
-
-</details>
-
-**Latest Version**: `25.6.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +freedesktop.org/poppler-qt5@25.6.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

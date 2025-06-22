@@ -1,11 +1,11 @@
-# rebar3
+# rebar3.org
 
-> Erlang build tool that makes it easy to compile and test Erlang applications and releases.
+> Package from pantry: rebar3.org
 
 ## Package Information
 
 - **Domain**: `rebar3.org`
-- **Name**: `rebar3`
+- **Name**: `rebar3.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rebar3.org/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install rebar3
+launchpad install rebar3.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `rebar3`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `3.25.0`, `3.24.0`, `3.23.0`
-
-</details>
-
-**Latest Version**: `3.25.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) rebar3 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

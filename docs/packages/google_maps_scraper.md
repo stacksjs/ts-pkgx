@@ -1,6 +1,6 @@
 # google-maps-scraper
 
-> scrape data  data from Google Maps. Extracts data such as the name, address, phone number, website URL, rating,  reviews number, latitude and longitude, reviews,email and more for each place
+> Package from pantry: github.com/gosom/google-maps-scraper
 
 ## Package Information
 
@@ -13,39 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install google-maps-scraper
+launchpad install github.com/gosom/google-maps-scraper
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `google-maps-scraper`
-
-## Available Versions
-
-<details>
-<summary>Show all 39 versions</summary>
-
-- `1.8.1`, `1.8.0`, `1.7.14`, `1.7.13`, `1.7.12`
-- `1.7.10`, `1.7.9`, `1.7.8`, `1.7.7`, `1.7.6`
-- `1.7.5`, `1.7.4`, `1.7.3`, `1.7.2`, `1.7.1`
-- `1.7.0`, `1.6.1`, `1.6.0`, `1.5.3`, `1.5.2`
-- `1.5.1`, `1.5.0`, `1.4.2`, `1.4.1`, `1.4.0`
-- `1.3.6`, `1.3.5`, `1.3.3`, `1.3.2`, `1.3.1`
-- `1.3.0`, `1.2.4`, `1.2.3`, `1.2.2`, `1.2.1`
-- `1.2.0`, `1.1.3`, `1.1.2`, `1.1.0`
-
-</details>
-
-**Latest Version**: `1.8.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) google-maps-scraper -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

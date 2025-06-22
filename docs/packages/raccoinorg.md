@@ -1,11 +1,11 @@
-# raccoin
+# raccoin.org
 
-> Crypto Portfolio and Tax Reporting Tool
+> Package from pantry: raccoin.org
 
 ## Package Information
 
 - **Domain**: `raccoin.org`
-- **Name**: `raccoin`
+- **Name**: `raccoin.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/raccoin.org/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install raccoin
+launchpad install raccoin.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `raccoin`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.2.0`, `0.1.0`
-
-</details>
-
-**Latest Version**: `0.2.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) raccoin -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

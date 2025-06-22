@@ -1,6 +1,6 @@
 # text-generation-webui
 
-> A Gradio web UI for Large Language Models with support for multiple inference backends.
+> Package from pantry: github.com/oobabooga/text-generation-webui
 
 ## Package Information
 
@@ -13,39 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install text-generation-webui
+launchpad install github.com/oobabooga/text-generation-webui
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `text-generation-webui`
-
-## Available Versions
-
-<details>
-<summary>Show all 36 versions</summary>
-
-- `3.6.1`, `3.6.0`, `3.5.0`, `3.4.1`, `3.4.0`
-- `3.3.2`, `3.3.1`, `3.3.0`, `3.2.0`, `3.1.0`
-- `3.0.0`, `2.8.1`, `2.8.0`, `2.7.0`, `2.6.0`
-- `2.5.0`, `2.4.0`, `2.3.0`, `2.2.0`, `2.1.0`
-- `2.0.0`, `1.16.0`, `1.15.0`, `1.14.0`, `1.13.0`
-- `1.12.0`, `1.11.0`, `1.10.1`, `1.10.0`, `1.9.1`
-- `1.9.0`, `1.8.0`, `1.7.0`, `1.6.1`, `1.6.0`
-- `1.5.0`
-
-</details>
-
-**Latest Version**: `3.6.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) text-generation-webui -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

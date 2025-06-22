@@ -1,6 +1,6 @@
 # tcl-lang.org
 
-> Tool Command Language
+> Package from pantry: tcl-lang.org
 
 ## Package Information
 
@@ -20,28 +20,7 @@ launchpad install tcl-lang.org
 
 This package provides the following executable programs:
 
-- `tclsh`
-- `wish`
-- `critcl`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `9.0.1`, `9.0.0`, `8.6.16`, `8.6.15`, `8.6.14`
-- `8.6.13`
-
-</details>
-
-**Latest Version**: `9.0.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +tcl-lang.org@9.0.1 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

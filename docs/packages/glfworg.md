@@ -1,6 +1,6 @@
 # glfw.org
 
-> A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input
+> Package from pantry: glfw.org
 
 ## Package Information
 
@@ -21,24 +21,6 @@ launchpad install glfw.org
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `3.4.0`, `3.3.10`, `3.3.9`
-
-</details>
-
-**Latest Version**: `3.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +glfw.org@3.4.0 -- $SHELL -i
-```
 
 ## Dependencies
 

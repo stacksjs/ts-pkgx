@@ -1,6 +1,6 @@
 # wget
 
-> Internet file retriever
+> Package from pantry: gnu.org/wget
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install wget
+launchpad install gnu.org/wget
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `wget`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.25.0`, `1.24.5`, `1.21.4`, `1.21.3`
-
-</details>
-
-**Latest Version**: `1.25.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) wget -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

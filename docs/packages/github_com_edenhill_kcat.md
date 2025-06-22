@@ -1,6 +1,6 @@
 # kcat
 
-> Generic command line non-JVM Apache Kafka producer and consumer
+> Package from pantry: github.com/edenhill/kcat
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install kcat
+launchpad install github.com/edenhill/kcat
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `kcat`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.7.0`
-
-</details>
-
-**Latest Version**: `1.7.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) kcat -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

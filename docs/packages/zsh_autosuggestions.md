@@ -1,11 +1,11 @@
-# github.com/zsh-users/zsh-autosuggestions
+# zsh-autosuggestions
 
-> Fish-like autosuggestions for zsh
+> Package from pantry: github.com/zsh-users/zsh-autosuggestions
 
 ## Package Information
 
 - **Domain**: `github.com/zsh-users/zsh-autosuggestions`
-- **Name**: `github.com/zsh-users/zsh-autosuggestions`
+- **Name**: `zsh-autosuggestions`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zsh-users/zsh-autosuggestions/package.yml)
 
@@ -21,24 +21,6 @@ launchpad install github.com/zsh-users/zsh-autosuggestions
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.7.1`, `0.7.0`
-
-</details>
-
-**Latest Version**: `0.7.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/zsh-users/zsh-autosuggestions@0.7.1 -- $SHELL -i
-```
 
 ## Usage Examples
 

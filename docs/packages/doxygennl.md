@@ -1,11 +1,11 @@
-# doxygen
+# doxygen.nl
 
-> Generate documentation for several programming languages
+> Package from pantry: doxygen.nl
 
 ## Package Information
 
 - **Domain**: `doxygen.nl`
-- **Name**: `doxygen`
+- **Name**: `doxygen.nl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/doxygen.nl/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install doxygen
+launchpad install doxygen.nl
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `doxygen`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `1.14.0`, `1.13.2`, `1.13.1`, `1.13.0`, `1.12.0`
-- `1.11.0`, `1.10.0`, `1.9.8`, `1.9.7`, `1.9.6`
-
-</details>
-
-**Latest Version**: `1.14.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) doxygen -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

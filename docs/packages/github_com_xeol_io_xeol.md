@@ -1,6 +1,6 @@
 # xeol
 
-> A scanner for end-of-life (EOL) software and dependencies in container images, filesystems, and SBOMs
+> Package from pantry: github.com/xeol-io/xeol
 
 ## Package Information
 
@@ -13,36 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install xeol
+launchpad install github.com/xeol-io/xeol
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `xeol`
-
-## Available Versions
-
-<details>
-<summary>Show all 21 versions</summary>
-
-- `0.10.8`, `0.10.7`, `0.10.6`, `0.10.5`, `0.10.4`
-- `0.10.3`, `0.10.2`, `0.10.1`, `0.10.0`, `0.9.15`
-- `0.9.14`, `0.9.13`, `0.9.12`, `0.9.11`, `0.9.10`
-- `0.9.9`, `0.9.8`, `0.9.7`, `0.9.6`, `0.9.5`
-- `0.9.4`
-
-</details>
-
-**Latest Version**: `0.10.8`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) xeol -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

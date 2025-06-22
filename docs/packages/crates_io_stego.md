@@ -1,6 +1,6 @@
 # stego
 
-> 🦕 stego is a steganographic swiss army knife.
+> Package from pantry: crates.io/stego
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install stego
+launchpad install crates.io/stego
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `stego`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2019.10.22`
-
-</details>
-
-**Latest Version**: `2019.10.22`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) stego -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

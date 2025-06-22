@@ -1,11 +1,11 @@
-# jumppad
+# jumppad.dev
 
-> Modern cloud native development environments
+> Package from pantry: jumppad.dev
 
 ## Package Information
 
 - **Domain**: `jumppad.dev`
-- **Name**: `jumppad`
+- **Name**: `jumppad.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jumppad.dev/package.yml)
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install jumppad
+launchpad install jumppad.dev
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `jumppad`
-
-## Available Versions
-
-<details>
-<summary>Show all 20 versions</summary>
-
-- `0.20.1`, `0.20.0`, `0.19.0`, `0.18.1`, `0.18.0`
-- `0.17.1`, `0.17.0`, `0.16.1`, `0.16.0`, `0.15.0`
-- `0.14.0`, `0.13.3`, `0.13.2`, `0.13.1`, `0.13.0`
-- `0.12.1`, `0.12.0`, `0.11.2`, `0.11.1`, `0.11.0`
-
-</details>
-
-**Latest Version**: `0.20.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) jumppad -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# github.com/essembeh/gnome-extensions-cli
+# gnome-extensions-cli
 
-> Command line tool to manage your Gnome Shell extensions
+> Package from pantry: github.com/essembeh/gnome-extensions-cli
 
 ## Package Information
 
 - **Domain**: `github.com/essembeh/gnome-extensions-cli`
-- **Name**: `github.com/essembeh/gnome-extensions-cli`
+- **Name**: `gnome-extensions-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/essembeh/gnome-extensions-cli/package.yml)
 
@@ -20,27 +20,7 @@ launchpad install github.com/essembeh/gnome-extensions-cli
 
 This package provides the following executable programs:
 
-- `gnome-extensions-cli`
-- `gext`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `0.10.6`, `0.10.5`, `0.10.4`, `0.10.3`, `0.10.2`
-- `0.10.1`
-
-</details>
-
-**Latest Version**: `0.10.6`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/essembeh/gnome-extensions-cli@0.10.6 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

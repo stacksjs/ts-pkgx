@@ -1,6 +1,6 @@
 # glauth
 
-> A lightweight LDAP server for development, home use, or CI
+> Package from pantry: github.com/glauth/glauth
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install glauth
+launchpad install github.com/glauth/glauth
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `glauth`
-- `glauth-setup`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.4.0`
-
-</details>
-
-**Latest Version**: `2.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/glauth/glauth@2.4.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

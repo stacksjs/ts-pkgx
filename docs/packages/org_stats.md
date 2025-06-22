@@ -1,6 +1,6 @@
 # org-stats
 
-> Get the contributor stats summary from all repos of any given organization
+> Package from pantry: github.com/caarlos0/org-stats
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install org-stats
+launchpad install github.com/caarlos0/org-stats
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `org-stats`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.12.2`, `1.12.1`, `1.12.0`, `1.11.2`
-
-</details>
-
-**Latest Version**: `1.12.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) org-stats -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

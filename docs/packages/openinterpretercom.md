@@ -1,11 +1,11 @@
-# open-interpreter
+# openinterpreter.com
 
-> A natural language interface for computers
+> Package from pantry: openinterpreter.com
 
 ## Package Information
 
 - **Domain**: `openinterpreter.com`
-- **Name**: `open-interpreter`
+- **Name**: `openinterpreter.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openinterpreter.com/package.yml)
 
@@ -13,42 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install interpreter
+launchpad install openinterpreter.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `interpreter`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `interpreter`
-
-## Available Versions
-
-<details>
-<summary>Show all 22 versions</summary>
-
-- `0.4.0`, `0.2.1`, `0.2.0`, `0.1.18`, `0.1.17`
-- `0.1.16`, `0.1.15`, `0.1.14`, `0.1.13`, `0.1.12`
-- `0.1.11`, `0.1.9`, `0.1.8`, `0.1.7`, `0.1.6`
-- `0.1.5`, `0.1.4`, `0.1.3`, `0.1.2`, `0.1.1`
-- `0.1.0`, `0.0.297`
-
-</details>
-
-**Latest Version**: `0.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) interpreter -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

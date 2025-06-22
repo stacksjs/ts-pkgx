@@ -1,6 +1,6 @@
 # bruce
 
-> Basic Runtime for Uniform Compute Environments
+> Package from pantry: github.com/brucedom/bruce
 
 ## Package Information
 
@@ -13,38 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install bruce
+launchpad install github.com/brucedom/bruce
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `bruce`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.4.8`, `1.2.8`
-
-</details>
-
-**Latest Version**: `1.4.8`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) bruce -- $SHELL -i
-```
-
-## Related Packages
-
-These packages work well with bruce:
-
-- `linux`
+*No programs specified*
 
 ## Usage Examples
 

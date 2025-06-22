@@ -1,38 +1,28 @@
 /**
- * **encore-go** - Encore's rolling fork of Go with added automatic tracing & instrumentation
+ * **go** - Package from pantry: encore.dev/go
  *
  * @domain `encore.dev/go`
- * @programs `encore-go`
- * @version `1.23.0` (8 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install encore-go`
- * @name `encore-go`
+ * @install `launchpad install encore.dev/go`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.encorego
- * // Or access via domain
- * const samePkg = pantry.encoredevgo
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "encore-go"
- * console.log(pkg.description) // "Encore's rolling fork of Go with added automati..."
- * console.log(pkg.programs)    // ["encore-go"]
- * console.log(pkg.versions[0]) // "1.23.0" (latest)
+ * const pkg = pantry.encoredevgo
+ * console.log(pkg.name)        // "go"
+ * console.log(pkg.description) // "Package from pantry: encore.dev/go"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/encore-dev/go.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const encoregoPackage = {
+export const encoredevgoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'encore-go' as const,
+  name: 'go' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,22 +30,15 @@ export const encoregoPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Encore\'s rolling fork of Go with added automatic tracing & instrumentation' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/encore.dev/go/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: encore.dev/go' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install encore-go' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'encore-go',
-  ] as const,
+  installCommand: 'launchpad install encore.dev/go' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +encore.dev/go -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install encore.dev/go' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,27 +47,10 @@ export const encoregoPackage = {
   dependencies: [
     'curl.se/ca-certs',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.23.0',
-    '1.22.5',
-    '1.22.0',
-    '1.21.6',
-    '1.21.5',
-    '1.21.4',
-    '1.21.3',
-    '1.21.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) encore-go -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install encore-go' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/encore.dev/go/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type EncoregoPackage = typeof encoregoPackage
+export type EncoredevgoPackage = typeof encoredevgoPackage

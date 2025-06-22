@@ -1,11 +1,11 @@
-# litecli
+# litecli.com
 
-> CLI for SQLite Databases with auto-completion and syntax highlighting
+> Package from pantry: litecli.com
 
 ## Package Information
 
 - **Domain**: `litecli.com`
-- **Name**: `litecli`
+- **Name**: `litecli.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/litecli.com/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install litecli
+launchpad install litecli.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `litecli`
-
-## Available Versions
-
-<details>
-<summary>Show all 15 versions</summary>
-
-- `1.15.0`, `1.14.4`, `1.14.3`, `1.14.2`, `1.14.1`
-- `1.14.0`, `1.13.2`, `1.13.0`, `1.12.4`, `1.12.3`
-- `1.12.2`, `1.11.1`, `1.11.0`, `1.10.1`, `1.10.0`
-
-</details>
-
-**Latest Version**: `1.15.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) litecli -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -1,33 +1,23 @@
 /**
- * **ny** - 🗽 Fast, Proxy Package Manager for JavaScript
+ * **ny** - Package from pantry: github.com/krzkaczor/ny
  *
  * @domain `github.com/krzkaczor/ny`
- * @programs `ny`
- * @version `0.2.0` (3 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install ny`
- * @name `ny`
+ * @install `launchpad install github.com/krzkaczor/ny`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ny
- * // Or access via domain
- * const samePkg = pantry.githubcomkrzkaczorny
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomkrzkaczorny
  * console.log(pkg.name)        // "ny"
- * console.log(pkg.description) // "🗽 Fast, Proxy Package Manager for JavaScript"
- * console.log(pkg.programs)    // ["ny"]
- * console.log(pkg.versions[0]) // "0.2.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/krzkaczor/ny"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/krzkaczor/ny.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nyPackage = {
+export const githubcomkrzkaczornyPackage = {
   /**
    * The display name of this package.
    */
@@ -39,40 +29,21 @@ export const nyPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '🗽 Fast, Proxy Package Manager for JavaScript' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/krzkaczor/ny/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/krzkaczor/ny' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ny' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'ny',
-  ] as const,
+  installCommand: 'launchpad install github.com/krzkaczor/ny' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/krzkaczor/ny -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/krzkaczor/ny' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.2.0',
-    '0.1.2',
-    '0.1.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ny -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ny' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/krzkaczor/ny/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type NyPackage = typeof nyPackage
+export type GithubcomkrzkaczornyPackage = typeof githubcomkrzkaczornyPackage

@@ -1,6 +1,6 @@
 # gimme-aws-creds
 
-> A CLI that utilizes Okta IdP via SAML to acquire temporary AWS credentials
+> Package from pantry: nike.com/gimme-aws-creds
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gimme-aws-creds
+launchpad install nike.com/gimme-aws-creds
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gimme-aws-creds`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `2.8.2`, `2.8.1.1`, `2.8.1`, `2.8.0`
-
-</details>
-
-**Latest Version**: `2.8.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) gimme-aws-creds -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -1,33 +1,23 @@
 /**
- * **fblog** - Small command-line JSON Log viewer
+ * **fblog** - Package from pantry: crates.io/fblog
  *
  * @domain `crates.io/fblog`
- * @programs `fblog`
- * @version `4.14.0` (12 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install fblog`
- * @name `fblog`
+ * @install `launchpad install crates.io/fblog`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.fblog
- * // Or access via domain
- * const samePkg = pantry.cratesiofblog
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiofblog
  * console.log(pkg.name)        // "fblog"
- * console.log(pkg.description) // "Small command-line JSON Log viewer"
- * console.log(pkg.programs)    // ["fblog"]
- * console.log(pkg.versions[0]) // "4.14.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: crates.io/fblog"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/fblog.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fblogPackage = {
+export const cratesiofblogPackage = {
   /**
    * The display name of this package.
    */
@@ -39,49 +29,21 @@ export const fblogPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Small command-line JSON Log viewer' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/fblog/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: crates.io/fblog' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install fblog' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'fblog',
-  ] as const,
+  installCommand: 'launchpad install crates.io/fblog' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/fblog -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/fblog' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '4.14.0',
-    '4.13.1',
-    '4.13.0',
-    '4.12.0',
-    '4.11.0',
-    '4.10.0',
-    '4.9.0',
-    '4.8.0',
-    '4.7.0',
-    '4.6.0',
-    '4.5.0',
-    '4.4.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fblog -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install fblog' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/fblog/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type FblogPackage = typeof fblogPackage
+export type CratesiofblogPackage = typeof cratesiofblogPackage

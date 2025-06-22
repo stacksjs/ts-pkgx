@@ -1,6 +1,6 @@
 # swig.org
 
-> SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.
+> Package from pantry: swig.org
 
 ## Package Information
 
@@ -20,26 +20,7 @@ launchpad install swig.org
 
 This package provides the following executable programs:
 
-- `swig`
-- `ccache-swig`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `4.3.1`, `4.3.0`, `4.2.1`, `4.2.0`, `4.1.1`
-
-</details>
-
-**Latest Version**: `4.3.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +swig.org@4.3.1 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

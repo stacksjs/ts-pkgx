@@ -1,11 +1,11 @@
-# elizaOS
+# elizaOS.github.io
 
-> Autonomous agents for everyone
+> Package from pantry: elizaOS.github.io
 
 ## Package Information
 
 - **Domain**: `elizaOS.github.io`
-- **Name**: `elizaOS`
+- **Name**: `elizaOS.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/elizaOS.github.io/package.yml)
 
@@ -13,40 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install eliza
+launchpad install elizaOS.github.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `eliza`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `eliza`
-
-## Available Versions
-
-<details>
-<summary>Show all 13 versions</summary>
-
-- `1.0.11`, `1.0.10`, `1.0.9`, `1.0.8`, `1.0.7`
-- `1.0.6`, `1.0.5`, `0.25.19`, `0.25.9`, `0.25.8`
-- `0.1.9`, `0.1.8.1`, `0.1.7`
-
-</details>
-
-**Latest Version**: `1.0.11`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) eliza -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -56,13 +30,6 @@ This package depends on:
 - `nodejs.org~23.3`
 - `pnpm.io`
 - `bun.sh^1.2 # since 1.0.5`
-
-## Related Packages
-
-These packages work well with elizaOS:
-
-- `git-scm.org`
-- [`ffmpeg.org`](ffmpegorg.md) - Play, record, convert, and stream audio and video
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # swift-create-xcframework
 
-> A simple Command Line Tool to create XCFrameworks by wrapping xcodebuild.
+> Package from pantry: github.com/unsignedapps/swift-create-xcframework
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install swift-create-xcframework
+launchpad install github.com/unsignedapps/swift-create-xcframework
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `swift-create-xcframework`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.3.0`
-
-</details>
-
-**Latest Version**: `2.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) swift-create-xcframework -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

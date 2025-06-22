@@ -1,6 +1,6 @@
 # xsv
 
-> A fast CSV command line toolkit written in Rust.
+> Package from pantry: github.com/burntsushi/xsv
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install xsv
+launchpad install github.com/burntsushi/xsv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `xsv`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.13.0`
-
-</details>
-
-**Latest Version**: `0.13.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) xsv -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

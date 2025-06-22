@@ -1,6 +1,6 @@
 # dssim
 
-> Image similarity comparison simulating human perception (multiscale SSIM in Rust)
+> Package from pantry: kornel.ski/dssim
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install dssim
+launchpad install kornel.ski/dssim
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `dssim`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `3.4.0`, `3.2.3`
-
-</details>
-
-**Latest Version**: `3.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) dssim -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

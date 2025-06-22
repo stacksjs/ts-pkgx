@@ -1,11 +1,11 @@
-# modernc.org/goyacc
+# goyacc
 
-> Parser Generator for Go
+> Package from pantry: modernc.org/goyacc
 
 ## Package Information
 
 - **Domain**: `modernc.org/goyacc`
-- **Name**: `modernc.org/goyacc`
+- **Name**: `goyacc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/modernc.org/goyacc/package.yml)
 
@@ -13,38 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install goyacc
+launchpad install modernc.org/goyacc
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `goyacc`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `goyacc`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.0.3`
-
-</details>
-
-**Latest Version**: `1.0.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) goyacc -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

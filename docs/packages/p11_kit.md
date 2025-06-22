@@ -1,11 +1,11 @@
-# freedesktop.org/p11-kit
+# p11-kit
 
-> Provides a way to load and enumerate PKCS#11 modules.
+> Package from pantry: freedesktop.org/p11-kit
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/p11-kit`
-- **Name**: `freedesktop.org/p11-kit`
+- **Name**: `p11-kit`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/p11-kit/package.yml)
 
@@ -20,27 +20,7 @@ launchpad install freedesktop.org/p11-kit
 
 This package provides the following executable programs:
 
-- `p11-kit`
-- `trust`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `0.25.5`, `0.25.4`, `0.25.3`, `0.25.2`, `0.25.1`
-- `0.25.0`, `0.24.1`
-
-</details>
-
-**Latest Version**: `0.25.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +freedesktop.org/p11-kit@0.25.5 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

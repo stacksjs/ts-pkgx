@@ -1,34 +1,24 @@
 /**
- * **counterfeiter** - A tool for generating self-contained, type-safe test doubles in go
+ * **counterfeiter** - Package from pantry: github.com/maxbrunsfeld/counterfeiter
  *
  * @domain `github.com/maxbrunsfeld/counterfeiter`
- * @programs `counterfeiter`
- * @version `6.11.2` (10 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install counterfeiter`
- * @name `counterfeiter`
+ * @install `launchpad install github.com/maxbrunsfeld/counterfeiter`
  * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.counterfeiter
- * // Or access via domain
- * const samePkg = pantry.githubcommaxbrunsfeldcounterfeiter
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcommaxbrunsfeldcounterfeiter
  * console.log(pkg.name)        // "counterfeiter"
- * console.log(pkg.description) // "A tool for generating self-contained, type-safe..."
- * console.log(pkg.programs)    // ["counterfeiter"]
- * console.log(pkg.versions[0]) // "6.11.2" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/maxbrunsfeld/co..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/maxbrunsfeld/counterfeiter.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const counterfeiterPackage = {
+export const githubcommaxbrunsfeldcounterfeiterPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const counterfeiterPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A tool for generating self-contained, type-safe test doubles in go' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/maxbrunsfeld/counterfeiter/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/maxbrunsfeld/counterfeiter' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install counterfeiter' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'counterfeiter',
-  ] as const,
+  installCommand: 'launchpad install github.com/maxbrunsfeld/counterfeiter' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/maxbrunsfeld/counterfeiter -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/maxbrunsfeld/counterfeiter' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,29 +47,10 @@ export const counterfeiterPackage = {
   dependencies: [
     'go.dev',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '6.11.2',
-    '6.11.1',
-    '6.11.0',
-    '6.10.0',
-    '6.9.0',
-    '6.8.1',
-    '6.8.0',
-    '6.7.0',
-    '6.6.2',
-    '6.6.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) counterfeiter -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install counterfeiter' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/maxbrunsfeld/counterfeiter/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type CounterfeiterPackage = typeof counterfeiterPackage
+export type GithubcommaxbrunsfeldcounterfeiterPackage = typeof githubcommaxbrunsfeldcounterfeiterPackage

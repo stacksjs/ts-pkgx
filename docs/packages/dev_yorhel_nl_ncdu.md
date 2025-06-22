@@ -1,6 +1,6 @@
 # ncdu
 
-> NCurses Disk Usage
+> Package from pantry: dev.yorhel.nl/ncdu
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ncdu
+launchpad install dev.yorhel.nl/ncdu
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ncdu`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `1.22.0`, `1.21.0`, `1.20.0`, `1.19.0`, `1.18.1`
-
-</details>
-
-**Latest Version**: `1.22.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ncdu -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

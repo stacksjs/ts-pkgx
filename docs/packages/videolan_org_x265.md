@@ -1,6 +1,6 @@
 # x265
 
-> H.265/HEVC encoder
+> Package from pantry: videolan.org/x265
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install x265
+launchpad install videolan.org/x265
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `x265`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `4.1.0`, `3.2.1`
-
-</details>
-
-**Latest Version**: `4.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) x265 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

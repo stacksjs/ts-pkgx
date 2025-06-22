@@ -1,11 +1,11 @@
-# tilt
+# tilt.dev
 
-> Define your dev environment as code. For microservice apps on Kubernetes.
+> Package from pantry: tilt.dev
 
 ## Package Information
 
 - **Domain**: `tilt.dev`
-- **Name**: `tilt`
+- **Name**: `tilt.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tilt.dev/package.yml)
 
@@ -13,36 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install tilt
+launchpad install tilt.dev
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `tilt`
-
-## Available Versions
-
-<details>
-<summary>Show all 24 versions</summary>
-
-- `0.35.0`, `0.34.5`, `0.34.4`, `0.34.3`, `0.34.2`
-- `0.34.1`, `0.34.0`, `0.33.22`, `0.33.21`, `0.33.20`
-- `0.33.19`, `0.33.18`, `0.33.17`, `0.33.16`, `0.33.15`
-- `0.33.14`, `0.33.13`, `0.33.12`, `0.33.11`, `0.33.10`
-- `0.33.9`, `0.33.8`, `0.33.7`, `0.33.6`
-
-</details>
-
-**Latest Version**: `0.35.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) tilt -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

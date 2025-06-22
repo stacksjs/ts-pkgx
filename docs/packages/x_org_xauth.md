@@ -1,6 +1,6 @@
 # xauth
 
-> X.Org Applications: xauth
+> Package from pantry: x.org/xauth
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install xauth
+launchpad install x.org/xauth
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `xauth`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `1.1.4`, `1.1.3`, `1.1.2`
-
-</details>
-
-**Latest Version**: `1.1.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) xauth -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

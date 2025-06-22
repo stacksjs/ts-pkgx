@@ -1,34 +1,24 @@
 /**
- * **ethaddrgen** - Custom Ethereum vanity address generator made in Rust
+ * **ethaddrgen** - Package from pantry: github.com/Limeth/ethaddrgen
  *
  * @domain `github.com/Limeth/ethaddrgen`
- * @programs `ethaddrgen`
- * @version `1.0.7` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install ethaddrgen`
- * @name `ethaddrgen`
+ * @install `launchpad install github.com/Limeth/ethaddrgen`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ethaddrgen
- * // Or access via domain
- * const samePkg = pantry.githubcomlimethethaddrgen
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomlimethethaddrgen
  * console.log(pkg.name)        // "ethaddrgen"
- * console.log(pkg.description) // "Custom Ethereum vanity address generator made i..."
- * console.log(pkg.programs)    // ["ethaddrgen"]
- * console.log(pkg.versions[0]) // "1.0.7" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/Limeth/ethaddrgen"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/Limeth/ethaddrgen.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ethaddrgenPackage = {
+export const githubcomlimethethaddrgenPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const ethaddrgenPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Custom Ethereum vanity address generator made in Rust' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Limeth/ethaddrgen/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/Limeth/ethaddrgen' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ethaddrgen' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'ethaddrgen',
-  ] as const,
+  installCommand: 'launchpad install github.com/Limeth/ethaddrgen' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/Limeth/ethaddrgen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/Limeth/ethaddrgen' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,20 +47,10 @@ export const ethaddrgenPackage = {
   dependencies: [
     'openssl.org^1.1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.0.7',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ethaddrgen -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ethaddrgen' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Limeth/ethaddrgen/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type EthaddrgenPackage = typeof ethaddrgenPackage
+export type GithubcomlimethethaddrgenPackage = typeof githubcomlimethethaddrgenPackage

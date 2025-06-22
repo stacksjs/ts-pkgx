@@ -1,6 +1,6 @@
 # bpb
 
-> boats's personal barricade
+> Package from pantry: crates.io/bpb
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install bpb
+launchpad install crates.io/bpb
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `bpb`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.1.0`
-
-</details>
-
-**Latest Version**: `1.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) bpb -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

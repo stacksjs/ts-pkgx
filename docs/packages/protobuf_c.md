@@ -1,11 +1,11 @@
-# protoc
+# protobuf-c
 
-> Protocol Buffers implementation in C
+> Package from pantry: github.com/protobuf-c/protobuf-c
 
 ## Package Information
 
 - **Domain**: `github.com/protobuf-c/protobuf-c`
-- **Name**: `protoc`
+- **Name**: `protobuf-c`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/protobuf-c/protobuf-c/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install protoc
+launchpad install github.com/protobuf-c/protobuf-c
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `protoc-c`
-- `protoc-gen-c`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `1.5.2`, `1.5.1`, `1.5.0`
-
-</details>
-
-**Latest Version**: `1.5.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/protobuf-c/protobuf-c@1.5.2 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

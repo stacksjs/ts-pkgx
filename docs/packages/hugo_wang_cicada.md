@@ -1,6 +1,6 @@
 # cicada
 
-> An old-school bash-like Unix shell written in Rust
+> Package from pantry: hugo.wang/cicada
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install cicada
+launchpad install hugo.wang/cicada
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cicada`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `1.1.2`, `1.1.1`, `1.0.3`, `1.0.2`, `1.0.1`
-- `1.0.0`, `0.9.41`, `0.9.40`, `0.9.39`, `0.9.38`
-
-</details>
-
-**Latest Version**: `1.1.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) cicada -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

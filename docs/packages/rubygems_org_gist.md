@@ -1,6 +1,6 @@
 # gist
 
-> Potentially the best command line gister.
+> Package from pantry: rubygems.org/gist
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gist
+launchpad install rubygems.org/gist
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gist`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `6.0.0`
-
-</details>
-
-**Latest Version**: `6.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) gist -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

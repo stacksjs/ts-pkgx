@@ -1,11 +1,11 @@
-# SquashFS-Tools
+# squashfs-tools
 
-> tools to create and extract Squashfs filesystems
+> Package from pantry: github.com/plougher/squashfs-tools
 
 ## Package Information
 
 - **Domain**: `github.com/plougher/squashfs-tools`
-- **Name**: `SquashFS-Tools`
+- **Name**: `squashfs-tools`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/plougher/squashfs-tools/package.yml)
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install SquashFS-Tools
+launchpad install github.com/plougher/squashfs-tools
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mksquashfs`
-- `unsquashfs`
-- `sqfscat`
-- `sqfstar`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `4.7.0`, `4.6.1`
-
-</details>
-
-**Latest Version**: `4.7.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/plougher/squashfs-tools@4.7.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

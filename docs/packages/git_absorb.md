@@ -1,6 +1,6 @@
 # git-absorb
 
-> git commit --fixup, but automatic
+> Package from pantry: crates.io/git-absorb
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install git-absorb
+launchpad install crates.io/git-absorb
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `git-absorb`
-
-## Available Versions
-
-<details>
-<summary>Show all 9 versions</summary>
-
-- `0.8.0`, `0.7.0`, `0.6.17`, `0.6.16`, `0.6.15`
-- `0.6.13`, `0.6.12`, `0.6.11`, `0.6.10`
-
-</details>
-
-**Latest Version**: `0.8.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) git-absorb -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

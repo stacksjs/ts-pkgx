@@ -1,6 +1,6 @@
 # libspng.org
 
-> Simple, modern libpng alternative
+> Package from pantry: libspng.org
 
 ## Package Information
 
@@ -21,24 +21,6 @@ launchpad install libspng.org
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.5.0`
-
-</details>
-
-**Latest Version**: `0.5.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +libspng.org@0.5.0 -- $SHELL -i
-```
 
 ## Dependencies
 

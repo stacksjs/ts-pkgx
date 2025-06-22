@@ -1,6 +1,6 @@
 # black
 
-> The uncompromising Python code formatter
+> Package from pantry: github.com/psf/black
 
 ## Package Information
 
@@ -13,36 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install black
+launchpad install github.com/psf/black
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `black`
-- `blackd`
-
-## Available Versions
-
-<details>
-<summary>Show all 19 versions</summary>
-
-- `25.1.0`, `24.10.0`, `24.8.0`, `24.4.2`, `24.4.1`
-- `24.4.0`, `24.3.0`, `24.2.0`, `24.1.1`, `24.1.0`
-- `23.12.1`, `23.12.0`, `23.11.0`, `23.10.1`, `23.10.0`
-- `23.9.1`, `23.9.0`, `23.7.0`, `23.3.0`
-
-</details>
-
-**Latest Version**: `25.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/psf/black@25.1.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

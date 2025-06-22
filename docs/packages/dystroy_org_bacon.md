@@ -1,6 +1,6 @@
 # bacon
 
-> Background rust code check
+> Package from pantry: dystroy.org/bacon
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install bacon
+launchpad install dystroy.org/bacon
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `bacon`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `3.16.0`, `3.15.0`, `3.14.0`, `3.13.0`, `3.12.0`
-- `3.11.0`, `3.10.0`, `3.9.1`, `3.9.0`, `3.8.0`
-
-</details>
-
-**Latest Version**: `3.16.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) bacon -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

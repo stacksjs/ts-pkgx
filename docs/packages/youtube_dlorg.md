@@ -1,11 +1,11 @@
-# youtube-dl
+# youtube-dl.org
 
-> Command-line program to download videos from YouTube.com and other video sites
+> Package from pantry: youtube-dl.org
 
 ## Package Information
 
 - **Domain**: `youtube-dl.org`
-- **Name**: `youtube-dl`
+- **Name**: `youtube-dl.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/youtube-dl.org/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install youtube-dl
+launchpad install youtube-dl.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `youtube-dl`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `2023.8.4`, `2021.12.17`
-
-</details>
-
-**Latest Version**: `2023.8.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) youtube-dl -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

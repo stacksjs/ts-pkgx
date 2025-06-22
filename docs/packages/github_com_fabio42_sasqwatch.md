@@ -1,6 +1,6 @@
 # sasqwatch
 
-> A modern take on the classic watch command
+> Package from pantry: github.com/fabio42/sasqwatch
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install sasqwatch
+launchpad install github.com/fabio42/sasqwatch
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `sasqwatch`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `0.2.5`, `0.2.4`, `0.2.3`, `0.2.2`, `0.2.1`
-- `0.2.0`, `0.1.3`
-
-</details>
-
-**Latest Version**: `0.2.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) sasqwatch -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

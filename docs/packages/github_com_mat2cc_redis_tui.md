@@ -1,6 +1,6 @@
 # redis_tui
 
-> Redis terminal application
+> Package from pantry: github.com/mat2cc/redis_tui
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install redis_tui
+launchpad install github.com/mat2cc/redis_tui
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `redis_tui`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `0.2.4`, `0.2.3`, `0.2.2`, `0.2.1`, `0.2.0`
-- `0.1.0`
-
-</details>
-
-**Latest Version**: `0.2.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) redis_tui -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

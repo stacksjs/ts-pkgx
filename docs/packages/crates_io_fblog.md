@@ -1,6 +1,6 @@
 # fblog
 
-> Small command-line JSON Log viewer
+> Package from pantry: crates.io/fblog
 
 ## Package Information
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install fblog
+launchpad install crates.io/fblog
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `fblog`
-
-## Available Versions
-
-<details>
-<summary>Show all 12 versions</summary>
-
-- `4.14.0`, `4.13.1`, `4.13.0`, `4.12.0`, `4.11.0`
-- `4.10.0`, `4.9.0`, `4.8.0`, `4.7.0`, `4.6.0`
-- `4.5.0`, `4.4.0`
-
-</details>
-
-**Latest Version**: `4.14.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) fblog -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

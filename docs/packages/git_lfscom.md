@@ -1,11 +1,11 @@
-# git-lfs
+# git-lfs.com
 
-> Git extension for versioning large files
+> Package from pantry: git-lfs.com
 
 ## Package Information
 
 - **Domain**: `git-lfs.com`
-- **Name**: `git-lfs`
+- **Name**: `git-lfs.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/git-lfs.com/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install git-lfs
+launchpad install git-lfs.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `git-lfs`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `3.6.1`, `3.6.0`, `3.5.1`, `3.4.1`, `3.4.0`
-- `3.3.0`
-
-</details>
-
-**Latest Version**: `3.6.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) git-lfs -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

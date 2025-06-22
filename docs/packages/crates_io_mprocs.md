@@ -1,6 +1,6 @@
 # mprocs
 
-> Run multiple commands in parallel
+> Package from pantry: crates.io/mprocs
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install mprocs
+launchpad install crates.io/mprocs
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mprocs`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `0.7.3`, `0.7.2`, `0.7.1`, `0.7.0`, `0.6.4`
-
-</details>
-
-**Latest Version**: `0.7.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) mprocs -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

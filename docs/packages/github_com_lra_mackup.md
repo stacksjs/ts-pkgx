@@ -1,6 +1,6 @@
 # mackup
 
-> Keep your application settings in sync (OS X/Linux)
+> Package from pantry: github.com/lra/mackup
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install mackup
+launchpad install github.com/lra/mackup
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mackup`
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `0.8.43`, `0.8.42`, `0.8.41`, `0.8.40`, `0.8.39`
-- `0.8.38`, `0.8.37`, `0.8.36`
-
-</details>
-
-**Latest Version**: `0.8.43`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) mackup -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

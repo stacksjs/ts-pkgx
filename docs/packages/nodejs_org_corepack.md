@@ -1,6 +1,6 @@
 # corepack
 
-> Platform built on V8 to build network applications
+> Package from pantry: nodejs.org/corepack
 
 ## Package Information
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install corepack
+launchpad install nodejs.org/corepack
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `corepack`
-
-## Available Versions
-
-<details>
-<summary>Show all 12 versions</summary>
-
-- `0.33.0`, `0.32.0`, `0.31.0`, `0.30.0`, `0.29.4`
-- `0.29.3`, `0.29.2`, `0.28.2`, `0.28.1`, `0.28.0`
-- `0.27.0`, `0.26.0`
-
-</details>
-
-**Latest Version**: `0.33.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) corepack -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

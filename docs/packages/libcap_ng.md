@@ -1,6 +1,6 @@
 # libcap-ng
 
-> Libcap-ng is a library for Linux that makes using posix capabilities easy.
+> Package from pantry: people.redhat.com/sgrubb/libcap-ng
 
 ## Package Information
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install libcap-ng
+launchpad install people.redhat.com/sgrubb/libcap-ng
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `captest`
-- `filecap`
-- `netcap`
-- `pscap`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `0.8.5`, `0.8.4`, `0.8.3`
-
-</details>
-
-**Latest Version**: `0.8.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +people.redhat.com/sgrubb/libcap-ng@0.8.5 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

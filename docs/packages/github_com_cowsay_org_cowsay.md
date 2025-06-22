@@ -1,6 +1,6 @@
 # cowsay
 
-> apjanke's fork of the classic cowsay project
+> Package from pantry: github.com/cowsay-org/cowsay
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install cowsay
+launchpad install github.com/cowsay-org/cowsay
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cowsay`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `3.8.4`, `3.8.3`, `3.8.2`, `3.8.1`, `3.8.0`
-- `3.7.0`
-
-</details>
-
-**Latest Version**: `3.8.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) cowsay -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

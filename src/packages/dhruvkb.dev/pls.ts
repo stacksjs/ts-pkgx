@@ -1,34 +1,24 @@
 /**
- * **pls** - pls is a prettier and powerful ls(1) for the pros.
+ * **pls** - Package from pantry: dhruvkb.dev/pls
  *
  * @domain `dhruvkb.dev/pls`
- * @programs `pls`
- * @version `2023.12.22` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install pls`
- * @name `pls`
+ * @install `launchpad install dhruvkb.dev/pls`
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pls
- * // Or access via domain
- * const samePkg = pantry.dhruvkbdevpls
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.dhruvkbdevpls
  * console.log(pkg.name)        // "pls"
- * console.log(pkg.description) // "pls is a prettier and powerful ls(1) for the pros."
- * console.log(pkg.programs)    // ["pls"]
- * console.log(pkg.versions[0]) // "2023.12.22" (latest)
+ * console.log(pkg.description) // "Package from pantry: dhruvkb.dev/pls"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/dhruvkb-dev/pls.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const plsPackage = {
+export const dhruvkbdevplsPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const plsPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'pls is a prettier and powerful ls(1) for the pros.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dhruvkb.dev/pls/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: dhruvkb.dev/pls' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pls' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'pls',
-  ] as const,
+  installCommand: 'launchpad install dhruvkb.dev/pls' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +dhruvkb.dev/pls -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dhruvkb.dev/pls' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,20 +47,10 @@ export const plsPackage = {
   dependencies: [
     'libgit2.org~1.7 # links to libgit2.so.1.7',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2023.12.22',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pls -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pls' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dhruvkb.dev/pls/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type PlsPackage = typeof plsPackage
+export type DhruvkbdevplsPackage = typeof dhruvkbdevplsPackage

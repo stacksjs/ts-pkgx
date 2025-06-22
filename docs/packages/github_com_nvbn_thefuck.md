@@ -1,6 +1,6 @@
 # thefuck
 
-> Magnificent app which corrects your previous console command.
+> Package from pantry: github.com/nvbn/thefuck
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install thefuck
+launchpad install github.com/nvbn/thefuck
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `thefuck`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `3.32.0`
-
-</details>
-
-**Latest Version**: `3.32.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) thefuck -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -1,11 +1,11 @@
-# shellcheck
+# shellcheck.net
 
-> ShellCheck, a static analysis tool for shell scripts
+> Package from pantry: shellcheck.net
 
 ## Package Information
 
 - **Domain**: `shellcheck.net`
-- **Name**: `shellcheck`
+- **Name**: `shellcheck.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/shellcheck.net/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install shellcheck
+launchpad install shellcheck.net
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `shellcheck`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `0.10.0`, `0.9.0`, `0.8.0`
-
-</details>
-
-**Latest Version**: `0.10.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) shellcheck -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

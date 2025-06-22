@@ -1,6 +1,6 @@
 # diskonaut
 
-> Terminal visual disk space navigator
+> Package from pantry: crates.io/diskonaut
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install diskonaut
+launchpad install crates.io/diskonaut
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `diskonaut`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.11.0`
-
-</details>
-
-**Latest Version**: `0.11.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) diskonaut -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

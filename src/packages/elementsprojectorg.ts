@@ -1,10 +1,7 @@
 /**
- * **elementsproject.org** - Open Source implementation of advanced blockchain features extending the Bitcoin protocol
+ * **elementsproject.org** - Package from pantry: elementsproject.org
  *
  * @domain `elementsproject.org`
- * @programs `bench_bitcoin`, `elements-cli`, `elements-tx`, `elements-util`, `elements-wallet`, ... (+2 more)
- * @version `23.3.0` (9 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install elementsproject.org`
  * @dependencies `boost.org^1.64`, `libevent.org`, `oracle.com/berkeley-db`
@@ -15,9 +12,7 @@
  *
  * const pkg = pantry.elementsprojectorg
  * console.log(pkg.name)        // "elementsproject.org"
- * console.log(pkg.description) // "Open Source implementation of advanced blockcha..."
- * console.log(pkg.programs)    // ["bench_bitcoin", "elements-cli", ...]
- * console.log(pkg.versions[0]) // "23.3.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: elementsproject.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/elementsproject-org.md
@@ -35,28 +30,15 @@ export const elementsprojectorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Open Source implementation of advanced blockchain features extending the Bitcoin protocol' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/elementsproject.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: elementsproject.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install elementsproject.org' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'bench_bitcoin',
-    'elements-cli',
-    'elements-tx',
-    'elements-util',
-    'elements-wallet',
-    'elementsd',
-    'test_bitcoin',
-  ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +elementsproject.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install elementsproject.org' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -67,24 +49,10 @@ export const elementsprojectorgPackage = {
     'libevent.org',
     'oracle.com/berkeley-db',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '23.3.0',
-    '23.2.7',
-    '23.2.6',
-    '23.2.5',
-    '23.2.4',
-    '23.2.3',
-    '23.2.2',
-    '23.2.1',
-    '22.1.1',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +elementsproject.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install elementsproject.org' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/elementsproject.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type ElementsprojectorgPackage = typeof elementsprojectorgPackage

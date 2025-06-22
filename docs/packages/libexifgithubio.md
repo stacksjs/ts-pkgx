@@ -1,6 +1,6 @@
 # libexif.github.io
 
-> A library for parsing, editing, and saving EXIF data
+> Package from pantry: libexif.github.io
 
 ## Package Information
 
@@ -21,24 +21,6 @@ launchpad install libexif.github.io
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.6.25`, `0.6.24`
-
-</details>
-
-**Latest Version**: `0.6.25`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +libexif.github.io@0.6.25 -- $SHELL -i
-```
 
 ## Dependencies
 

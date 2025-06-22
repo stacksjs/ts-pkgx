@@ -1,6 +1,6 @@
 # portfolio_rs
 
-> A command line tool for managing financial investment portfolios.
+> Package from pantry: crates.io/portfolio_rs
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install portfolio_rs
+launchpad install crates.io/portfolio_rs
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `portfolio_rs`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `0.2.1`, `0.2.0`, `0.1.12`, `0.1.11`, `0.1.10`
-- `0.1.9`, `0.1.8`
-
-</details>
-
-**Latest Version**: `0.2.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) portfolio_rs -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # gollum
 
-> An n:m message multiplexer written in Go
+> Package from pantry: github.com/gollum/gollum
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gollum
+launchpad install github.com/gollum/gollum
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gollum`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `6.1.0`, `6.0.1`, `6.0.0`, `5.3.2`
-
-</details>
-
-**Latest Version**: `6.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) gollum -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

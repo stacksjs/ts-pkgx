@@ -1,34 +1,24 @@
 /**
- * **licensor** - write licenses to stdout
+ * **licensor** - Package from pantry: crates.io/licensor
  *
  * @domain `crates.io/licensor`
- * @programs `licensor`
- * @version `2.1.0` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install licensor`
- * @name `licensor`
+ * @install `launchpad install crates.io/licensor`
  * @dependencies `zlib.net^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.licensor
- * // Or access via domain
- * const samePkg = pantry.cratesiolicensor
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiolicensor
  * console.log(pkg.name)        // "licensor"
- * console.log(pkg.description) // "write licenses to stdout"
- * console.log(pkg.programs)    // ["licensor"]
- * console.log(pkg.versions[0]) // "2.1.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: crates.io/licensor"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/licensor.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const licensorPackage = {
+export const cratesiolicensorPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const licensorPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'write licenses to stdout' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/licensor/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: crates.io/licensor' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install licensor' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'licensor',
-  ] as const,
+  installCommand: 'launchpad install crates.io/licensor' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/licensor -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/licensor' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,21 +47,10 @@ export const licensorPackage = {
   dependencies: [
     'zlib.net^1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.1.0',
-    '2.0.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) licensor -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install licensor' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/licensor/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type LicensorPackage = typeof licensorPackage
+export type CratesiolicensorPackage = typeof cratesiolicensorPackage

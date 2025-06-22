@@ -1,6 +1,6 @@
 # libssh2.org
 
-> the SSH library
+> Package from pantry: libssh2.org
 
 ## Package Information
 
@@ -21,24 +21,6 @@ launchpad install libssh2.org
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `1.11.1`, `1.11.0`, `1.10.0`
-
-</details>
-
-**Latest Version**: `1.11.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +libssh2.org@1.11.1 -- $SHELL -i
-```
 
 ## Dependencies
 

@@ -1,11 +1,11 @@
-# flit
+# flit.pypa.io
 
-> Simplified packaging of Python modules
+> Package from pantry: flit.pypa.io
 
 ## Package Information
 
 - **Domain**: `flit.pypa.io`
-- **Name**: `flit`
+- **Name**: `flit.pypa.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/flit.pypa.io/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install flit
+launchpad install flit.pypa.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `flit`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `3.12.0`, `3.11.0`, `3.10.1`, `3.10.0`, `3.9.0`
-- `3.8.0`
-
-</details>
-
-**Latest Version**: `3.12.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) flit -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

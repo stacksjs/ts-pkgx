@@ -1,11 +1,11 @@
-# check_if_email_exists
+# check-if-email-exists-cli
 
-> Check if an email address exists without sending any email, written in Rust. Comes with a ⚙️ HTTP backend.
+> Package from pantry: reacher.email/check-if-email-exists-cli
 
 ## Package Information
 
 - **Domain**: `reacher.email/check-if-email-exists-cli`
-- **Name**: `check_if_email_exists`
+- **Name**: `check-if-email-exists-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/reacher.email/check-if-email-exists-cli/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install check_if_email_exists
+launchpad install reacher.email/check-if-email-exists-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `check_if_email_exists`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `0.11.5`, `0.11.4`, `0.11.3`, `0.11.2`, `0.11.1`
-- `0.11.0`, `0.10.1`, `0.10.0`, `0.9.1`, `0.9.0`
-
-</details>
-
-**Latest Version**: `0.11.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) check_if_email_exists -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

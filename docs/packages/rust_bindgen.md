@@ -1,11 +1,11 @@
-# bindgen
+# rust-bindgen
 
-> Automatically generates Rust FFI bindings to C (and some C++) libraries.
+> Package from pantry: rust-lang.org/rust-bindgen
 
 ## Package Information
 
 - **Domain**: `rust-lang.org/rust-bindgen`
-- **Name**: `bindgen`
+- **Name**: `rust-bindgen`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.org/rust-bindgen/package.yml)
 
@@ -13,44 +13,20 @@
 
 ```bash
 # Install with launchpad
-launchpad install bindgen
+launchpad install rust-lang.org/rust-bindgen
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `bindgen`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.72.0`, `0.71.1`, `0.71.0`, `0.70.1`
-
-</details>
-
-**Latest Version**: `0.72.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) bindgen -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
 This package depends on:
 
 - `linux:llvm.org`
-
-## Related Packages
-
-These packages work well with bindgen:
-
-- `rust-lang.org`
 
 ## Usage Examples
 

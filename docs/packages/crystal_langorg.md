@@ -1,11 +1,11 @@
-# crystal
+# crystal-lang.org
 
-> Fast and statically typed, compiled language with Ruby-like syntax
+> Package from pantry: crystal-lang.org
 
 ## Package Information
 
 - **Domain**: `crystal-lang.org`
-- **Name**: `crystal`
+- **Name**: `crystal-lang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crystal-lang.org/package.yml)
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install crystal
+launchpad install crystal-lang.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `crystal`
-
-## Available Versions
-
-<details>
-<summary>Show all 19 versions</summary>
-
-- `1.16.3`, `1.16.2`, `1.16.1`, `1.16.0`, `1.15.1`
-- `1.15.0`, `1.14.1`, `1.14.0`, `1.13.3`, `1.13.2`
-- `1.13.1`, `1.13.0`, `1.12.2`, `1.12.1`, `1.12.0`
-- `1.11.2`, `1.11.1`, `1.11.0`, `1.10.1`
-
-</details>
-
-**Latest Version**: `1.16.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) crystal -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -57,12 +36,6 @@ This package depends on:
 - `freedesktop.org/pkg-config^0`
 - `sourceware.org/libffi^3`
 - `invisible-island.net/ncurses^6`
-
-## Related Packages
-
-These packages work well with crystal:
-
-- `crystal-lang.org/shards`
 
 ## Usage Examples
 

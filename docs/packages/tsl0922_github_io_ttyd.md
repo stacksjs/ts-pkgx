@@ -1,6 +1,6 @@
 # ttyd
 
-> Command-line tool for sharing terminal over the web
+> Package from pantry: tsl0922.github.io/ttyd
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ttyd
+launchpad install tsl0922.github.io/ttyd
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ttyd`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `1.7.7`, `1.7.6`, `1.7.5`, `1.7.4`, `1.7.2`
-
-</details>
-
-**Latest Version**: `1.7.7`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ttyd -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -1,34 +1,24 @@
 /**
- * **protoc-gen-jsonschema** - Protobuf to JSON-Schema compiler
+ * **protoc-gen-jsonschema** - Package from pantry: github.com/chrusty/protoc-gen-jsonschema
  *
  * @domain `github.com/chrusty/protoc-gen-jsonschema`
- * @programs `protoc-gen-jsonschema`
- * @version `1.4.1` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install protoc-gen-jsonschema`
- * @name `protoc-gen-jsonschema`
+ * @install `launchpad install github.com/chrusty/protoc-gen-jsonschema`
  * @dependencies `protobuf.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.protocgenjsonschema
- * // Or access via domain
- * const samePkg = pantry.githubcomchrustyprotocgenjsonschema
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomchrustyprotocgenjsonschema
  * console.log(pkg.name)        // "protoc-gen-jsonschema"
- * console.log(pkg.description) // "Protobuf to JSON-Schema compiler"
- * console.log(pkg.programs)    // ["protoc-gen-jsonschema"]
- * console.log(pkg.versions[0]) // "1.4.1" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/chrusty/protoc-..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/chrusty/protoc-gen-jsonschema.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const protocgenjsonschemaPackage = {
+export const githubcomchrustyprotocgenjsonschemaPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const protocgenjsonschemaPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Protobuf to JSON-Schema compiler' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/chrusty/protoc-gen-jsonschema/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/chrusty/protoc-gen-jsonschema' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install protoc-gen-jsonschema' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'protoc-gen-jsonschema',
-  ] as const,
+  installCommand: 'launchpad install github.com/chrusty/protoc-gen-jsonschema' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/chrusty/protoc-gen-jsonschema -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/chrusty/protoc-gen-jsonschema' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,20 +47,10 @@ export const protocgenjsonschemaPackage = {
   dependencies: [
     'protobuf.dev',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.4.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) protoc-gen-jsonschema -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install protoc-gen-jsonschema' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/chrusty/protoc-gen-jsonschema/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type ProtocgenjsonschemaPackage = typeof protocgenjsonschemaPackage
+export type GithubcomchrustyprotocgenjsonschemaPackage = typeof githubcomchrustyprotocgenjsonschemaPackage

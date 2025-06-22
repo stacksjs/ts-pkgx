@@ -26,63 +26,63 @@ Consul is a distributed, highly available, and data center aware solution to con
 
 ---
 
-### [helm.sh](../packages/helmsh.md) (helm)
+### [helm.sh](../packages/helmsh.md)
 
-The Kubernetes Package Manager
+Package from pantry: helm.sh
 
-**Programs**: helm
+**Programs**: None specified
 
-**Install**: `launchpad install helm`
-
----
-
-### [istio.io](../packages/istioio.md) (istioctl)
-
-Connect, secure, control, and observe services.
-
-**Programs**: istioctl
-
-**Install**: `launchpad install istioctl`
+**Install**: `launchpad install helm.sh`
 
 ---
 
-### [nomadproject.io](../packages/nomadprojectio.md) (nomad)
+### [istio.io](../packages/istioio.md)
 
-Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.
+Package from pantry: istio.io
 
-**Programs**: nomad
+**Programs**: None specified
 
-**Install**: `launchpad install nomad`
-
----
-
-### [podman.io](../packages/podmanio.md) (podman)
-
-Podman: A tool for managing OCI containers and pods.
-
-**Programs**: podman, podman-remote, podman-mac-helper
-
-**Install**: `launchpad install podman`
+**Install**: `launchpad install istio.io`
 
 ---
 
-### [terraform.io](../packages/terraformio.md) (terraform)
+### [nomadproject.io](../packages/nomadprojectio.md)
 
-Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.
+Package from pantry: nomadproject.io
 
-**Programs**: terraform
+**Programs**: None specified
 
-**Install**: `launchpad install terraform`
+**Install**: `launchpad install nomadproject.io`
 
 ---
 
-### [traefik.io](../packages/traefikio.md) (traefik)
+### [podman.io](../packages/podmanio.md)
 
-The Cloud Native Application Proxy
+Package from pantry: podman.io
 
-**Programs**: traefik
+**Programs**: None specified
 
-**Install**: `launchpad install traefik`
+**Install**: `launchpad install podman.io`
+
+---
+
+### [terraform.io](../packages/terraformio.md)
+
+Package from pantry: terraform.io
+
+**Programs**: None specified
+
+**Install**: `launchpad install terraform.io`
+
+---
+
+### [traefik.io](../packages/traefikio.md)
+
+Package from pantry: traefik.io
+
+**Programs**: None specified
+
+**Install**: `launchpad install traefik.io`
 
 ---
 

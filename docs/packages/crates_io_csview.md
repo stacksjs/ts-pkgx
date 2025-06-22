@@ -1,6 +1,6 @@
 # csview
 
-> 📠 Pretty and fast csv viewer for cli with cjk/emoji support.
+> Package from pantry: crates.io/csview
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install csview
+launchpad install crates.io/csview
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `csview`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `1.3.4`, `1.3.3`, `1.3.2`, `1.3.1`, `1.3.0`
-- `1.2.4`, `1.2.2`
-
-</details>
-
-**Latest Version**: `1.3.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) csview -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

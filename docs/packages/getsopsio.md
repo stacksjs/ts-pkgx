@@ -1,11 +1,11 @@
-# sops
+# getsops.io
 
-> Simple and flexible tool for managing secrets
+> Package from pantry: getsops.io
 
 ## Package Information
 
 - **Domain**: `getsops.io`
-- **Name**: `sops`
+- **Name**: `getsops.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getsops.io/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install sops
+launchpad install getsops.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `sops`
-
-## Available Versions
-
-<details>
-<summary>Show all 9 versions</summary>
-
-- `3.10.2`, `3.10.1`, `3.10.0`, `3.9.4`, `3.9.3`
-- `3.9.2`, `3.9.1`, `3.9.0`, `3.8.1`
-
-</details>
-
-**Latest Version**: `3.10.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) sops -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

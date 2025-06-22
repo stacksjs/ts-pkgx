@@ -1,6 +1,6 @@
 # pls
 
-> pls is a prettier and powerful ls(1) for the pros.
+> Package from pantry: dhruvkb.dev/pls
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install pls
+launchpad install dhruvkb.dev/pls
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pls`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2023.12.22`
-
-</details>
-
-**Latest Version**: `2023.12.22`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) pls -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

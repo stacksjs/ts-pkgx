@@ -1,6 +1,6 @@
 # tidy-viewer
 
-> 📺(tv) Tidy Viewer is a cross-platform CLI csv pretty printer that uses column styling to maximize viewer enjoyment.
+> Package from pantry: crates.io/tidy-viewer
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install tidy-viewer
+launchpad install crates.io/tidy-viewer
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `tidy-viewer`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.5.2`
-
-</details>
-
-**Latest Version**: `1.5.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) tidy-viewer -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

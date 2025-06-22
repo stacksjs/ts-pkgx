@@ -1,6 +1,6 @@
 # duf
 
-> Disk Usage/Free Utility - a better 'df' alternative
+> Package from pantry: github.com/muesli/duf
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install duf
+launchpad install github.com/muesli/duf
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `duf`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.8.1`
-
-</details>
-
-**Latest Version**: `0.8.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) duf -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

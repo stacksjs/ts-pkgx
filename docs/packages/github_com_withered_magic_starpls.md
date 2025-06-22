@@ -1,6 +1,6 @@
 # starpls
 
-> An LSP implementation for Starlark, the configuration language used by Bazel and Buck2.
+> Package from pantry: github.com/withered-magic/starpls
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install starpls
+launchpad install github.com/withered-magic/starpls
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `starpls`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.1.21`
-
-</details>
-
-**Latest Version**: `0.1.21`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) starpls -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

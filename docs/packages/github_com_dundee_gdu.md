@@ -1,6 +1,6 @@
 # gdu
 
-> Fast disk usage analyzer with console interface written in Go
+> Package from pantry: github.com/dundee/gdu
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gdu
+launchpad install github.com/dundee/gdu
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gdu`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `5.31.0`, `5.30.1`, `5.30.0`, `5.29.0`
-
-</details>
-
-**Latest Version**: `5.31.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) gdu -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

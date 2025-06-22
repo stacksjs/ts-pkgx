@@ -1,11 +1,11 @@
-# jinja2
+# jinja2-cli
 
-> CLI for the Jinja2 templating language
+> Package from pantry: github.com/mattrobenolt/jinja2-cli
 
 ## Package Information
 
 - **Domain**: `github.com/mattrobenolt/jinja2-cli`
-- **Name**: `jinja2`
+- **Name**: `jinja2-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mattrobenolt/jinja2-cli/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install jinja2
+launchpad install github.com/mattrobenolt/jinja2-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `jinja2`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.8.2`
-
-</details>
-
-**Latest Version**: `0.8.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) jinja2 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

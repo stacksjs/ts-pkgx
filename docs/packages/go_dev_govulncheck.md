@@ -1,6 +1,6 @@
 # govulncheck
 
-> [mirror] the database client and tools for the Go vulnerability database
+> Package from pantry: go.dev/govulncheck
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install govulncheck
+launchpad install go.dev/govulncheck
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `govulncheck`
-
-## Available Versions
-
-<details>
-<summary>Show all 9 versions</summary>
-
-- `1.1.4`, `1.1.3`, `1.1.2`, `1.1.1`, `1.1.0`
-- `1.0.4`, `1.0.3`, `1.0.2`, `1.0.1`
-
-</details>
-
-**Latest Version**: `1.1.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) govulncheck -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

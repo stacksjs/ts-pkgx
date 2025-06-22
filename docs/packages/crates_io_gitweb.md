@@ -1,6 +1,6 @@
 # gitweb
 
-> 🌲 Open the current remote repository in your browser
+> Package from pantry: crates.io/gitweb
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gitweb
+launchpad install crates.io/gitweb
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gitweb`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.3.5`
-
-</details>
-
-**Latest Version**: `0.3.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) gitweb -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

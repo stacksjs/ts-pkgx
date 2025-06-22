@@ -1,6 +1,6 @@
 # neofetch
 
-> 🖼️  A command-line system information tool written in bash 3.2+
+> Package from pantry: github.com/dylanaraps/neofetch
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install neofetch
+launchpad install github.com/dylanaraps/neofetch
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `neofetch`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `7.1.0`
-
-</details>
-
-**Latest Version**: `7.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) neofetch -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

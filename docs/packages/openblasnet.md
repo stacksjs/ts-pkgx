@@ -1,6 +1,6 @@
 # openblas.net
 
-> OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version.
+> Package from pantry: openblas.net
 
 ## Package Information
 
@@ -21,25 +21,6 @@ launchpad install openblas.net
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `0.3.30`, `0.3.29`, `0.3.28`, `0.3.27`, `0.3.26`
-- `0.3.25`, `0.3.24`, `0.3.23`
-
-</details>
-
-**Latest Version**: `0.3.30`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +openblas.net@0.3.30 -- $SHELL -i
-```
 
 ## Usage Examples
 

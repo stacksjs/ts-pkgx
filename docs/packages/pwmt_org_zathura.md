@@ -1,6 +1,6 @@
 # zathura
 
-> Document viewer
+> Package from pantry: pwmt.org/zathura
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install zathura
+launchpad install pwmt.org/zathura
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `zathura`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `0.5.11`, `0.5.10`, `0.5.9`, `0.5.8`, `0.5.7`
-- `0.5.6`
-
-</details>
-
-**Latest Version**: `0.5.11`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) zathura -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

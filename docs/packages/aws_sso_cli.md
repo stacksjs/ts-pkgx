@@ -1,11 +1,11 @@
-# aws-sso
+# aws-sso-cli
 
-> A powerful tool for using AWS Identity Center for the CLI and web console.
+> Package from pantry: github.com/synfinatic/aws-sso-cli
 
 ## Package Information
 
 - **Domain**: `github.com/synfinatic/aws-sso-cli`
-- **Name**: `aws-sso`
+- **Name**: `aws-sso-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/synfinatic/aws-sso-cli/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install aws-sso
+launchpad install github.com/synfinatic/aws-sso-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `aws-sso`
-
-## Available Versions
-
-<details>
-<summary>Show all 15 versions</summary>
-
-- `2.0.3`, `2.0.2`, `2.0.1`, `2.0.0`, `1.17.0`
-- `1.16.1`, `1.16.0`, `1.15.1`, `1.15.0`, `1.14.3`
-- `1.14.2`, `1.14.1`, `1.14.0`, `1.13.1`, `1.13.0`
-
-</details>
-
-**Latest Version**: `2.0.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) aws-sso -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

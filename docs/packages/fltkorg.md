@@ -1,6 +1,6 @@
 # fltk.org
 
-> FLTK - Fast Light Tool Kit - https://github.com/fltk/fltk - cross platform GUI development
+> Package from pantry: fltk.org
 
 ## Package Information
 
@@ -20,27 +20,7 @@ launchpad install fltk.org
 
 This package provides the following executable programs:
 
-- `fluid`
-- `fltk-config`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `1.4.3`, `1.4.2`, `1.4.1`, `1.3.11`, `1.3.10`
-- `1.3.9`
-
-</details>
-
-**Latest Version**: `1.4.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +fltk.org@1.4.3 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

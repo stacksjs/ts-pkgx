@@ -1,11 +1,11 @@
-# gnu.org/source-highlight
+# source-highlight
 
-> Source-code syntax highlighter
+> Package from pantry: gnu.org/source-highlight
 
 ## Package Information
 
 - **Domain**: `gnu.org/source-highlight`
-- **Name**: `gnu.org/source-highlight`
+- **Name**: `source-highlight`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/source-highlight/package.yml)
 
@@ -20,27 +20,7 @@ launchpad install gnu.org/source-highlight
 
 This package provides the following executable programs:
 
-- `check-regexp`
-- `source-highlight`
-- `source-highlight-settings`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `3.1.9`
-
-</details>
-
-**Latest Version**: `3.1.9`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/source-highlight@3.1.9 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

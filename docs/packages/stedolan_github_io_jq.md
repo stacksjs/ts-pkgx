@@ -1,6 +1,6 @@
 # jq
 
-> Lightweight and flexible command-line JSON processor
+> Package from pantry: stedolan.github.io/jq
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install jq
+launchpad install stedolan.github.io/jq
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `jq`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.8.0`, `1.7.1`, `1.7.0`, `1.6.0`
-
-</details>
-
-**Latest Version**: `1.8.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) jq -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

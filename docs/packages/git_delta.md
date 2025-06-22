@@ -1,11 +1,11 @@
-# delta
+# git-delta
 
-> A syntax-highlighting pager for git, diff, grep, and blame output
+> Package from pantry: crates.io/git-delta
 
 ## Package Information
 
 - **Domain**: `crates.io/git-delta`
-- **Name**: `delta`
+- **Name**: `git-delta`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/git-delta/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install delta
+launchpad install crates.io/git-delta
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `delta`
-
-## Available Versions
-
-<details>
-<summary>Show all 11 versions</summary>
-
-- `0.18.2`, `0.18.1`, `0.18.0`, `0.17.0`, `0.16.5`
-- `0.16.4`, `0.16.3`, `0.16.2`, `0.16.1`, `0.16.0`
-- `0.15.1`
-
-</details>
-
-**Latest Version**: `0.18.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) delta -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

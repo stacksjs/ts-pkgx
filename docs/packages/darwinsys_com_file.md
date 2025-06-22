@@ -1,6 +1,6 @@
 # file
 
-> Read-only mirror of file CVS repository, updated every half hour. NOTE: do not make pull requests here, nor comment any commits, submit them usual way to bug tracker or to the mailing list. Maintainer(s) are not tracking  this git mirror.
+> Package from pantry: darwinsys.com/file
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install file
+launchpad install darwinsys.com/file
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `file`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `5.46.0`, `5.45.0`, `5.43.0`
-
-</details>
-
-**Latest Version**: `5.46.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) file -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

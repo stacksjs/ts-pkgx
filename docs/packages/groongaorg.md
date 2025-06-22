@@ -1,11 +1,11 @@
-# groonga
+# groonga.org
 
-> An embeddable fulltext search engine. Groonga is the successor project to Senna.
+> Package from pantry: groonga.org
 
 ## Package Information
 
 - **Domain**: `groonga.org`
-- **Name**: `groonga`
+- **Name**: `groonga.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/groonga.org/package.yml)
 
@@ -13,38 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install groonga
+launchpad install groonga.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `groonga`
-- `groonga-suggest-create-dataset`
-
-## Available Versions
-
-<details>
-<summary>Show all 27 versions</summary>
-
-- `15.1.1`, `15.0.9`, `15.0.4`, `15.0.3`, `15.0.2`
-- `15.0.1`, `15.0.0`, `14.1.3`, `14.1.2`, `14.1.1`
-- `14.1.0`, `14.0.9`, `14.0.8`, `14.0.7`, `14.0.6`
-- `14.0.5`, `14.0.4`, `14.0.3`, `14.0.2`, `14.0.1`
-- `14.0.0`, `13.1.1`, `13.1.0`, `13.0.9`, `13.0.8`
-- `13.0.7`, `13.0.6`
-
-</details>
-
-**Latest Version**: `15.1.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +groonga.org@15.1.1 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -36,83 +36,83 @@ The 1.x line is frozen - features and bugfixes now happen on https://github.com/
 
 ---
 
-### [deno.land](../packages/denoland.md) (deno)
+### [deno.land](../packages/denoland.md)
 
-A modern runtime for JavaScript and TypeScript.
+Package from pantry: deno.land
 
-**Programs**: deno
+**Programs**: None specified
 
-**Install**: `launchpad install deno`
+**Install**: `launchpad install deno.land`
 
 ---
 
 ### [flutter.dev](../packages/flutterdev.md)
 
-Flutter makes it easy and fast to build beautiful apps for mobile and beyond
+Package from pantry: flutter.dev
 
-**Programs**: flutter, dart
+**Programs**: None specified
 
 **Install**: `launchpad install flutter.dev`
 
 ---
 
-### [nodejs.org](../packages/nodejsorg.md) (node)
+### [nodejs.org](../packages/nodejsorg.md)
 
-Platform built on V8 to build network applications
+Package from pantry: nodejs.org
 
-**Programs**: node
+**Programs**: None specified
 
-**Install**: `launchpad install node`
-
----
-
-### [nodejs.org](../packages/node.md) (node)
-
-Platform built on V8 to build network applications
-
-**Programs**: node
-
-**Install**: `launchpad install node`
+**Install**: `launchpad install nodejs.org`
 
 ---
 
-### [npmjs.com](../packages/npmjscom.md) (npm)
+### [nodejs.org](../packages/node.md)
 
-the package manager for JavaScript
+Package from pantry: nodejs.org
 
-**Programs**: npm, npx
+**Programs**: None specified
 
-**Install**: `launchpad install npm`
-
----
-
-### [pnpm.io](../packages/pnpmio.md) (pnpm)
-
-Fast, disk space efficient package manager
-
-**Programs**: pnpm, pnpx
-
-**Install**: `launchpad install pnpm`
+**Install**: `launchpad install nodejs.org`
 
 ---
 
-### [vitejs.dev](../packages/vitejsdev.md) (vite)
+### [npmjs.com](../packages/npmjscom.md)
 
-Next generation frontend tooling. It's fast!
+Package from pantry: npmjs.com
 
-**Programs**: vite
+**Programs**: None specified
 
-**Install**: `launchpad install vite`
+**Install**: `launchpad install npmjs.com`
 
 ---
 
-### [yarnpkg.com](../packages/yarnpkgcom.md) (yarn)
+### [pnpm.io](../packages/pnpmio.md)
 
-📦🐈 Active development trunk for Yarn ⚒
+Package from pantry: pnpm.io
 
-**Programs**: yarn, yarnpkg
+**Programs**: None specified
 
-**Install**: `launchpad install yarn`
+**Install**: `launchpad install pnpm.io`
+
+---
+
+### [vitejs.dev](../packages/vitejsdev.md)
+
+Package from pantry: vitejs.dev
+
+**Programs**: None specified
+
+**Install**: `launchpad install vitejs.dev`
+
+---
+
+### [yarnpkg.com](../packages/yarnpkgcom.md)
+
+Package from pantry: yarnpkg.com
+
+**Programs**: None specified
+
+**Install**: `launchpad install yarnpkg.com`
 
 ---
 

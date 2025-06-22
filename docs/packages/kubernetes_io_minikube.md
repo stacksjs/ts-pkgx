@@ -1,6 +1,6 @@
 # minikube
 
-> Run a Kubernetes cluster locally
+> Package from pantry: kubernetes.io/minikube
 
 ## Package Information
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install minikube
+launchpad install kubernetes.io/minikube
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `minikube`
-
-## Available Versions
-
-<details>
-<summary>Show all 12 versions</summary>
-
-- `1.36.0`, `1.35.0`, `1.34.0`, `1.33.1`, `1.33.0`
-- `1.32.0`, `1.31.2`, `1.31.1`, `1.31.0`, `1.30.1`
-- `1.30.0`, `1.29.0`
-
-</details>
-
-**Latest Version**: `1.36.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) minikube -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

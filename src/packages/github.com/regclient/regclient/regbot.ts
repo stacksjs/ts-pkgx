@@ -1,34 +1,24 @@
 /**
- * **regbot** - Docker and OCI Registry Client in Go and tooling using those libraries.
+ * **regbot** - Package from pantry: github.com/regclient/regclient/regbot
  *
  * @domain `github.com/regclient/regclient/regbot`
- * @programs `regbot`
- * @version `0.8.3` (15 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install regbot`
- * @name `regbot`
+ * @install `launchpad install github.com/regclient/regclient/regbot`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.regbot
- * // Or access via domain
- * const samePkg = pantry.githubcomregclientregclientregbot
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomregclientregclientregbot
  * console.log(pkg.name)        // "regbot"
- * console.log(pkg.description) // "Docker and OCI Registry Client in Go and toolin..."
- * console.log(pkg.programs)    // ["regbot"]
- * console.log(pkg.versions[0]) // "0.8.3" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/regclient/regcl..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/regclient/regclient/regbot.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const regbotPackage = {
+export const githubcomregclientregclientregbotPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const regbotPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Docker and OCI Registry Client in Go and tooling using those libraries.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/regclient/regclient/regbot/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/regclient/regclient' as const,
+  description: 'Package from pantry: github.com/regclient/regclient/regbot' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install regbot' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'regbot',
-  ] as const,
+  installCommand: 'launchpad install github.com/regclient/regclient/regbot' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/regclient/regclient/regbot -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/regclient/regclient/regbot' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,34 +47,10 @@ export const regbotPackage = {
   dependencies: [
     'curl.se/ca-certs',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.8.3',
-    '0.8.2',
-    '0.8.1',
-    '0.8.0',
-    '0.7.2',
-    '0.7.1',
-    '0.7.0',
-    '0.6.1',
-    '0.6.0',
-    '0.5.7',
-    '0.5.6',
-    '0.5.5',
-    '0.5.4',
-    '0.5.3',
-    '0.5.2',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) regbot -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install regbot' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/regclient/regclient/regbot/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type RegbotPackage = typeof regbotPackage
+export type GithubcomregclientregclientregbotPackage = typeof githubcomregclientregclientregbotPackage

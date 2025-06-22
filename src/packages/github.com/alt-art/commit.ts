@@ -1,33 +1,23 @@
 /**
- * **commit** - Command-line tool to guide your template commit messages anywhere, anytime
+ * **commit** - Package from pantry: github.com/alt-art/commit
  *
  * @domain `github.com/alt-art/commit`
- * @programs `commit`
- * @version `0.7.0` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install commit`
- * @name `commit`
+ * @install `launchpad install github.com/alt-art/commit`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.commit
- * // Or access via domain
- * const samePkg = pantry.githubcomaltartcommit
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomaltartcommit
  * console.log(pkg.name)        // "commit"
- * console.log(pkg.description) // "Command-line tool to guide your template commit..."
- * console.log(pkg.programs)    // ["commit"]
- * console.log(pkg.versions[0]) // "0.7.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/alt-art/commit"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/alt-art/commit.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const commitPackage = {
+export const githubcomaltartcommitPackage = {
   /**
    * The display name of this package.
    */
@@ -39,39 +29,21 @@ export const commitPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Command-line tool to guide your template commit messages anywhere, anytime' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/alt-art/commit/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/alt-art/commit' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install commit' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'commit',
-  ] as const,
+  installCommand: 'launchpad install github.com/alt-art/commit' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/alt-art/commit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/alt-art/commit' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.7.0',
-    '0.6.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) commit -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install commit' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/alt-art/commit/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type CommitPackage = typeof commitPackage
+export type GithubcomaltartcommitPackage = typeof githubcomaltartcommitPackage

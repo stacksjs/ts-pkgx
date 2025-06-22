@@ -1,6 +1,6 @@
 # graphviz.org
 
-> Graph visualization software from AT&T and Bell Labs
+> Package from pantry: graphviz.org
 
 ## Package Information
 
@@ -20,61 +20,7 @@ launchpad install graphviz.org
 
 This package provides the following executable programs:
 
-- `acyclic`
-- `bcomps`
-- `ccomps`
-- `circo`
-- `cluster`
-- `dijkstra`
-- `dot`
-- `dot2gxl`
-- `dot_builtins`
-- `edgepaint`
-- `fdp`
-- `gc`
-- `gml2gv`
-- `graphml2gv`
-- `gv2gml`
-- `gv2gxl`
-- `gvcolor`
-- `gvgen`
-- `gvmap`
-- `gvmap.sh`
-- `gvpack`
-- `gvpr`
-- `gxl2dot`
-- `gxl2gv`
-- `mm2gv`
-- `neato`
-- `nop`
-- `osage`
-- `patchwork`
-- `prune`
-- `sccmap`
-- `sfdp`
-- `tred`
-- `twopi`
-- `unflatten`
-
-## Available Versions
-
-<details>
-<summary>Show all 13 versions</summary>
-
-- `13.0.1`, `13.0.0`, `12.2.1`, `12.2.0`, `12.1.2`
-- `12.1.1`, `12.1.0`, `12.0.0`, `11.0.0`, `10.0.1`
-- `9.0.0`, `8.1.0`, `7.1.0`
-
-</details>
-
-**Latest Version**: `13.0.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +graphviz.org@13.0.1 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

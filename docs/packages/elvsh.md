@@ -1,11 +1,11 @@
-# elvish
+# elv.sh
 
-> Powerful scripting language & versatile interactive shell
+> Package from pantry: elv.sh
 
 ## Package Information
 
 - **Domain**: `elv.sh`
-- **Name**: `elvish`
+- **Name**: `elv.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/elv.sh/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install elvish
+launchpad install elv.sh
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `elvish`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.21.0`, `0.20.1`, `0.20.0`, `0.19.2`
-
-</details>
-
-**Latest Version**: `0.21.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) elvish -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

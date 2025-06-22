@@ -1,6 +1,6 @@
 # spotify_player
 
-> A Spotify player in the terminal with full feature parity
+> Package from pantry: crates.io/spotify_player
 
 ## Package Information
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install spotify_player
+launchpad install crates.io/spotify_player
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `spotify_player`
-
-## Available Versions
-
-<details>
-<summary>Show all 14 versions</summary>
-
-- `0.20.5`, `0.20.4`, `0.20.3`, `0.20.2`, `0.20.1`
-- `0.20.0`, `0.19.1`, `0.18.2`, `0.18.1`, `0.18.0`
-- `0.17.2`, `0.17.1`, `0.17.0`, `0.0.0`
-
-</details>
-
-**Latest Version**: `0.20.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) spotify_player -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

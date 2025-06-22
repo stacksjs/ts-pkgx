@@ -1,11 +1,11 @@
-# soldeer
+# soldeer.xyz
 
-> Solidity Package Manager written in rust and integrated into Foundry (forge soldeer ...)
+> Package from pantry: soldeer.xyz
 
 ## Package Information
 
 - **Domain**: `soldeer.xyz`
-- **Name**: `soldeer`
+- **Name**: `soldeer.xyz`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/soldeer.xyz/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install soldeer
+launchpad install soldeer.xyz
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `soldeer`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `0.5.4`, `0.5.3`, `0.5.2`
-
-</details>
-
-**Latest Version**: `0.5.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) soldeer -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

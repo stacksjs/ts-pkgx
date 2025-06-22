@@ -1,11 +1,11 @@
-# mosh
+# mosh.org
 
-> Remote terminal application
+> Package from pantry: mosh.org
 
 ## Package Information
 
 - **Domain**: `mosh.org`
-- **Name**: `mosh`
+- **Name**: `mosh.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mosh.org/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install mosh
+launchpad install mosh.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mosh-client`
-- `mosh-server`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.4.0`
-
-</details>
-
-**Latest Version**: `1.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +mosh.org@1.4.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

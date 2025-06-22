@@ -1,6 +1,6 @@
 # git-tidy
 
-> Tidy up stale git branches.
+> Package from pantry: crates.io/git-tidy
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install git-tidy
+launchpad install crates.io/git-tidy
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `git-tidy`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.0.1`
-
-</details>
-
-**Latest Version**: `2.0.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) git-tidy -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

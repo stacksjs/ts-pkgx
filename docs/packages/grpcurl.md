@@ -1,6 +1,6 @@
 # grpcurl
 
-> Like cURL, but for gRPC: Command-line tool for interacting with gRPC servers
+> Package from pantry: fullstory.com/grpcurl
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install grpcurl
+launchpad install fullstory.com/grpcurl
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `grpcurl`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `1.9.3`, `1.9.2`, `1.9.1`, `1.9.0`, `1.8.9`
-
-</details>
-
-**Latest Version**: `1.9.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) grpcurl -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

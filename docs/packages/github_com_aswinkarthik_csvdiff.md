@@ -1,6 +1,6 @@
 # csvdiff
 
-> A fast diff tool for comparing csv files
+> Package from pantry: github.com/aswinkarthik/csvdiff
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install csvdiff
+launchpad install github.com/aswinkarthik/csvdiff
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `csvdiff`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.4.0`
-
-</details>
-
-**Latest Version**: `1.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) csvdiff -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

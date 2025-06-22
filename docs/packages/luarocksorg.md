@@ -1,11 +1,11 @@
-# luarocks
+# luarocks.org
 
-> LuaRocks is the package manager for the Lua programming language.
+> Package from pantry: luarocks.org
 
 ## Package Information
 
 - **Domain**: `luarocks.org`
-- **Name**: `luarocks`
+- **Name**: `luarocks.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/luarocks.org/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install luarocks
+launchpad install luarocks.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `luarocks`
-- `luarocks-admin`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `3.12.1`, `3.12.0`, `3.11.1`, `3.11.0`, `3.10.0`
-- `3.9.2`
-
-</details>
-
-**Latest Version**: `3.12.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +luarocks.org@3.12.1 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

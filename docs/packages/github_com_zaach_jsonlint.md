@@ -1,6 +1,6 @@
 # jsonlint
 
-> A JSON parser and validator with a CLI.
+> Package from pantry: github.com/zaach/jsonlint
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install jsonlint
+launchpad install github.com/zaach/jsonlint
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `jsonlint`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.6.0`
-
-</details>
-
-**Latest Version**: `1.6.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) jsonlint -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

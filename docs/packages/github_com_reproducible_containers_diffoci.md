@@ -1,6 +1,6 @@
 # diffoci
 
-> diff for Docker and OCI container images
+> Package from pantry: github.com/reproducible-containers/diffoci
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install diffoci
+launchpad install github.com/reproducible-containers/diffoci
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `diffoci`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `0.1.6`, `0.1.5`, `0.1.4`
-
-</details>
-
-**Latest Version**: `0.1.6`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) diffoci -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

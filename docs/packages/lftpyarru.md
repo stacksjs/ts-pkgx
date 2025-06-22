@@ -1,11 +1,11 @@
-# lftp
+# lftp.yar.ru
 
-> sophisticated command line file transfer program (ftp, http, sftp, fish, torrent)
+> Package from pantry: lftp.yar.ru
 
 ## Package Information
 
 - **Domain**: `lftp.yar.ru`
-- **Name**: `lftp`
+- **Name**: `lftp.yar.ru`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lftp.yar.ru/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install lftp
+launchpad install lftp.yar.ru
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `lftp`
-- `lftpget`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `4.9.3`, `4.9.2`, `4.9.1`
-
-</details>
-
-**Latest Version**: `4.9.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +lftp.yar.ru@4.9.3 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -1,6 +1,6 @@
 # libyang
 
-> YANG data modeling language library
+> Package from pantry: github.com/cesnet/libyang
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install libyang
+launchpad install github.com/cesnet/libyang
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `yanglint`
-- `yangre`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `3.12.2`, `3.7.8`, `3.4.2`, `3.1.0`, `2.1.148`
-
-</details>
-
-**Latest Version**: `3.12.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/cesnet/libyang@3.12.2 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

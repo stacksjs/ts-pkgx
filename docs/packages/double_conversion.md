@@ -1,11 +1,11 @@
-# google.com/double-conversion
+# double-conversion
 
-> Efficient binary-decimal and decimal-binary conversion routines for IEEE doubles.
+> Package from pantry: google.com/double-conversion
 
 ## Package Information
 
 - **Domain**: `google.com/double-conversion`
-- **Name**: `google.com/double-conversion`
+- **Name**: `double-conversion`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/double-conversion/package.yml)
 
@@ -21,24 +21,6 @@ launchpad install google.com/double-conversion
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `3.3.1`, `3.3.0`, `3.2.1`
-
-</details>
-
-**Latest Version**: `3.3.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +google.com/double-conversion@3.3.1 -- $SHELL -i
-```
 
 ## Usage Examples
 

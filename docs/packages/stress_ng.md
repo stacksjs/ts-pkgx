@@ -1,6 +1,6 @@
 # stress-ng
 
-> This is the stress-ng upstream project git repository.  stress-ng will stress test a computer system in various selectable ways. It was designed to exercise various physical subsystems of a computer as well as the various operating system kernel interfaces.
+> Package from pantry: github.com/ColinIanKing/stress-ng
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install stress-ng
+launchpad install github.com/ColinIanKing/stress-ng
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `stress-ng`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.19.1`
-
-</details>
-
-**Latest Version**: `0.19.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) stress-ng -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

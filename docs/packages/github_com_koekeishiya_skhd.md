@@ -1,6 +1,6 @@
 # skhd
 
-> Simple hotkey daemon for macOS
+> Package from pantry: github.com/koekeishiya/skhd
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install skhd
+launchpad install github.com/koekeishiya/skhd
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `skhd`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.3.9`
-
-</details>
-
-**Latest Version**: `0.3.9`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) skhd -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # enc
 
-> 🔑🔒 A modern and friendly CLI alternative to GnuPG: generate and download keys, encrypt, decrypt, and sign text and files, and more.
+> Package from pantry: github.com/life4/enc
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install enc
+launchpad install github.com/life4/enc
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `enc`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `1.1.4`, `1.1.3`, `1.1.2`
-
-</details>
-
-**Latest Version**: `1.1.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) enc -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

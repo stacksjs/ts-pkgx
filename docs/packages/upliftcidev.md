@@ -1,11 +1,11 @@
-# uplift
+# upliftci.dev
 
-> Semantic versioning the easy way. Powered by Conventional Commits. Built for use with CI.
+> Package from pantry: upliftci.dev
 
 ## Package Information
 
 - **Domain**: `upliftci.dev`
-- **Name**: `uplift`
+- **Name**: `upliftci.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/upliftci.dev/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install uplift
+launchpad install upliftci.dev
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `uplift`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `2.25.0`, `2.24.1`, `2.24.0`, `2.23.0`, `2.22.0`
-
-</details>
-
-**Latest Version**: `2.25.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) uplift -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

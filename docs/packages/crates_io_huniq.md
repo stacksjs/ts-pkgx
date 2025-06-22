@@ -1,6 +1,6 @@
 # huniq
 
-> Filter out duplicates on the command line. Replacement for `sort | uniq` optimized for speed (10x faster) when sorting is not needed.
+> Package from pantry: crates.io/huniq
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install huniq
+launchpad install crates.io/huniq
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `huniq`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2022.12.10`
-
-</details>
-
-**Latest Version**: `2022.12.10`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) huniq -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # cookiecutter
 
-> A cross-platform command-line utility that creates projects from cookiecutters (project templates), e.g. Python package projects, C projects.
+> Package from pantry: github.com/cookiecutter/cookiecutter
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install cookiecutter
+launchpad install github.com/cookiecutter/cookiecutter
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cookiecutter`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.6.0`
-
-</details>
-
-**Latest Version**: `2.6.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) cookiecutter -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -1,6 +1,6 @@
 # envchain
 
-> Environment variables meet macOS Keychain and gnome-keyring <3
+> Package from pantry: github.com/sorah/envchain
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install envchain
+launchpad install github.com/sorah/envchain
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `envchain`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.1.0`
-
-</details>
-
-**Latest Version**: `1.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) envchain -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

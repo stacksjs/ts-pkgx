@@ -1,6 +1,6 @@
 # container-structure-test
 
-> validate the structure of your container images
+> Package from pantry: github.com/GoogleContainerTools/container-structure-test
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install container-structure-test
+launchpad install github.com/GoogleContainerTools/container-structure-test
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `container-structure-test`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `1.19.3`, `1.19.2`, `1.19.1`
-
-</details>
-
-**Latest Version**: `1.19.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) container-structure-test -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

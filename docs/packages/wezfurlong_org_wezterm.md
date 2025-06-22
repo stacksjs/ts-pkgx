@@ -1,6 +1,6 @@
 # wezterm
 
-> A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
+> Package from pantry: wezfurlong.org/wezterm
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install wezterm
+launchpad install wezfurlong.org/wezterm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `wezterm`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2024.2.3`
-
-</details>
-
-**Latest Version**: `2024.2.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) wezterm -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

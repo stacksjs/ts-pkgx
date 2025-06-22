@@ -1,11 +1,11 @@
-# docker-credential-ecr-login
+# amazon-ecr-credential-helper
 
-> Automatically gets credentials for Amazon ECR on docker push/docker pull
+> Package from pantry: github.com/awslabs/amazon-ecr-credential-helper
 
 ## Package Information
 
 - **Domain**: `github.com/awslabs/amazon-ecr-credential-helper`
-- **Name**: `docker-credential-ecr-login`
+- **Name**: `amazon-ecr-credential-helper`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/awslabs/amazon-ecr-credential-helper/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install docker-credential-ecr-login
+launchpad install github.com/awslabs/amazon-ecr-credential-helper
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `docker-credential-ecr-login`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `0.10.0`, `0.9.1`, `0.9.0`, `0.8.0`, `0.7.1`
-
-</details>
-
-**Latest Version**: `0.10.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) docker-credential-ecr-login -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

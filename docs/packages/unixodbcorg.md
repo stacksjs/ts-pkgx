@@ -1,6 +1,6 @@
 # unixodbc.org
 
-> The unixODBC Project goals are to develop and promote unixODBC to be the definitive standard for ODBC on non MS Windows platforms.
+> Package from pantry: unixodbc.org
 
 ## Package Information
 
@@ -20,30 +20,7 @@ launchpad install unixodbc.org
 
 This package provides the following executable programs:
 
-- `dltest`
-- `isql`
-- `iusql`
-- `odbc_config`
-- `odbcinst`
-- `slencheck`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `2.3.12`, `2.3.11`
-
-</details>
-
-**Latest Version**: `2.3.12`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +unixodbc.org@2.3.12 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

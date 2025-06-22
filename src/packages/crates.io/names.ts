@@ -1,33 +1,23 @@
 /**
- * **names** - Random name generator for Rust
+ * **names** - Package from pantry: crates.io/names
  *
  * @domain `crates.io/names`
- * @programs `names`
- * @version `0.14.0` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install names`
- * @name `names`
+ * @install `launchpad install crates.io/names`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.names
- * // Or access via domain
- * const samePkg = pantry.cratesionames
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesionames
  * console.log(pkg.name)        // "names"
- * console.log(pkg.description) // "Random name generator for Rust"
- * console.log(pkg.programs)    // ["names"]
- * console.log(pkg.versions[0]) // "0.14.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: crates.io/names"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/names.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const namesPackage = {
+export const cratesionamesPackage = {
   /**
    * The display name of this package.
    */
@@ -39,38 +29,21 @@ export const namesPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Random name generator for Rust' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/names/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: crates.io/names' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install names' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'names',
-  ] as const,
+  installCommand: 'launchpad install crates.io/names' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/names -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/names' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.14.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) names -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install names' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/names/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type NamesPackage = typeof namesPackage
+export type CratesionamesPackage = typeof cratesionamesPackage

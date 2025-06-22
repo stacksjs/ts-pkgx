@@ -1,6 +1,6 @@
 # testscript
 
-> Selected Go-internal packages factored out from the standard library
+> Package from pantry: go.dev/testscript
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install testscript
+launchpad install go.dev/testscript
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `testscript`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.14.1`, `1.14.0`, `1.13.1`, `1.12.0`
-
-</details>
-
-**Latest Version**: `1.14.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) testscript -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # duckscript
 
-> Simple, extendable and embeddable scripting language.
+> Package from pantry: sagiegurari.github.io/duckscript
 
 ## Package Information
 
@@ -13,38 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install duck
+launchpad install sagiegurari.github.io/duckscript
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `duck`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `duck`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `0.11.1`, `0.11.0`, `0.10.0`, `0.9.4`, `0.9.3`
-
-</details>
-
-**Latest Version**: `0.11.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) duck -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

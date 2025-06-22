@@ -1,6 +1,6 @@
 # yj
 
-> CLI - Convert between YAML, TOML, JSON, and HCL. Preserves map order.
+> Package from pantry: github.com/sclevine/yj
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install yj
+launchpad install github.com/sclevine/yj
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `yj`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `5.1.0`
-
-</details>
-
-**Latest Version**: `5.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) yj -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

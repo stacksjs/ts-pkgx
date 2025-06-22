@@ -1,6 +1,6 @@
 # complexity
 
-> A command line tool to identify complex code
+> Package from pantry: github.com/thoughtbot/complexity
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install complexity
+launchpad install github.com/thoughtbot/complexity
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `complexity`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.4.2`
-
-</details>
-
-**Latest Version**: `0.4.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) complexity -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

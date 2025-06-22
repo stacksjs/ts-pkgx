@@ -1,6 +1,6 @@
 # blueutil
 
-> CLI for bluetooth on OSX: power, discoverable state, list, inquire devices, connect, info, …
+> Package from pantry: github.com/toy/blueutil
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install blueutil
+launchpad install github.com/toy/blueutil
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `blueutil`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `2.12.0`, `2.11.0`, `2.10.0`, `2.9.1`
-
-</details>
-
-**Latest Version**: `2.12.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) blueutil -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

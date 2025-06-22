@@ -1,11 +1,11 @@
-# tmate
+# tmate.io
 
-> Instant Terminal Sharing
+> Package from pantry: tmate.io
 
 ## Package Information
 
 - **Domain**: `tmate.io`
-- **Name**: `tmate`
+- **Name**: `tmate.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tmate.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install tmate
+launchpad install tmate.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `tmate`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.4.0`
-
-</details>
-
-**Latest Version**: `2.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) tmate -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

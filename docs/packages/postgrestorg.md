@@ -1,11 +1,11 @@
-# postgrest
+# postgrest.org
 
-> Serves a fully RESTful API from any existing PostgreSQL database
+> Package from pantry: postgrest.org
 
 ## Package Information
 
 - **Domain**: `postgrest.org`
-- **Name**: `postgrest`
+- **Name**: `postgrest.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/postgrest.org/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install postgrest
+launchpad install postgrest.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `postgrest`
-
-## Available Versions
-
-<details>
-<summary>Show all 15 versions</summary>
-
-- `13.0.4`, `13.0.3`, `13.0.2`, `13.0.1`, `13.0.0`
-- `12.2.12`, `12.2.11`, `12.2.10`, `12.2.9`, `12.2.8`
-- `12.2.7`, `12.2.6`, `12.2.5`, `12.2.4`, `12.2.3`
-
-</details>
-
-**Latest Version**: `13.0.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) postgrest -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

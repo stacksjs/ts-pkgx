@@ -1,6 +1,6 @@
 # unxip
 
-> A fast Xcode unarchiver
+> Package from pantry: github.com/saagarjha/unxip
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install unxip
+launchpad install github.com/saagarjha/unxip
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `unxip`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `3.1.0`, `3.0.0`, `2.2.0`, `2.1.0`
-
-</details>
-
-**Latest Version**: `3.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) unxip -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # ghq
 
-> Remote repository management made easy
+> Package from pantry: github.com/x-motemen/ghq
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ghq
+launchpad install github.com/x-motemen/ghq
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ghq`
-
-## Available Versions
-
-<details>
-<summary>Show all 9 versions</summary>
-
-- `1.8.0`, `1.7.1`, `1.7.0`, `1.6.3`, `1.6.2`
-- `1.6.1`, `1.6.0`, `1.5.0`, `1.4.2`
-
-</details>
-
-**Latest Version**: `1.8.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ghq -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # cryptography.io
 
-> cryptography is a package designed to expose cryptographic primitives and recipes to Python developers.
+> Package from pantry: cryptography.io
 
 ## Package Information
 
@@ -21,28 +21,6 @@ launchpad install cryptography.io
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 21 versions</summary>
-
-- `45.0.4`, `45.0.3`, `45.0.2`, `45.0.1`, `45.0.0`
-- `44.0.3`, `44.0.2`, `44.0.1`, `44.0.0`, `43.0.3`
-- `43.0.2`, `43.0.1`, `43.0.0`, `42.0.8`, `42.0.7`
-- `42.0.6`, `42.0.5`, `42.0.4`, `42.0.3`, `42.0.2`
-- `42.0.1`
-
-</details>
-
-**Latest Version**: `45.0.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +cryptography.io@45.0.4 -- $SHELL -i
-```
 
 ## Dependencies
 

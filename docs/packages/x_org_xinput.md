@@ -1,6 +1,6 @@
 # xinput
 
-> Utility to configure and test X input devices
+> Package from pantry: x.org/xinput
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install xinput
+launchpad install x.org/xinput
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `xinput`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.6.4`
-
-</details>
-
-**Latest Version**: `1.6.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) xinput -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

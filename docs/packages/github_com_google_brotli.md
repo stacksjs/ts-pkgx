@@ -1,6 +1,6 @@
 # brotli
 
-> Generic-purpose lossless compression algorithm by Google
+> Package from pantry: github.com/google/brotli
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install brotli
+launchpad install github.com/google/brotli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `brotli`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.1.0`, `1.0.9`
-
-</details>
-
-**Latest Version**: `1.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) brotli -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

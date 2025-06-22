@@ -1,6 +1,6 @@
 # jasper
 
-> Official Repository for the JasPer Image Coding Toolkit
+> Package from pantry: github.com/jasper-software/jasper
 
 ## Package Information
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install jasper
+launchpad install github.com/jasper-software/jasper
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `jasper`
-
-## Available Versions
-
-<details>
-<summary>Show all 11 versions</summary>
-
-- `4.2.5`, `4.2.4`, `4.2.3`, `4.2.2`, `4.2.1`
-- `4.2.0`, `4.1.2`, `4.1.1`, `4.1.0`, `4.0.1`
-- `4.0.0`
-
-</details>
-
-**Latest Version**: `4.2.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) jasper -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

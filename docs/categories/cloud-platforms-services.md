@@ -6,33 +6,33 @@ Packages related to cloud platforms & services.
 
 ## Packages
 
-### [fly.io](../packages/flyio.md) (fly)
+### [fly.io](../packages/flyio.md)
 
-Command line tools for fly.io services
+Package from pantry: fly.io
 
-**Programs**: fly, flyctl
+**Programs**: None specified
 
-**Install**: `launchpad install fly`
-
----
-
-### [heroku.com](../packages/herokucom.md) (heroku)
-
-CLI for Heroku
-
-**Programs**: heroku
-
-**Install**: `launchpad install heroku`
+**Install**: `launchpad install fly.io`
 
 ---
 
-### [railway.app](../packages/railwayapp.md) (railway)
+### [heroku.com](../packages/herokucom.md)
 
-Develop and deploy code with zero configuration
+Package from pantry: heroku.com
 
-**Programs**: railway
+**Programs**: None specified
 
-**Install**: `launchpad install railway`
+**Install**: `launchpad install heroku.com`
+
+---
+
+### [railway.app](../packages/railwayapp.md)
+
+Package from pantry: railway.app
+
+**Programs**: None specified
+
+**Install**: `launchpad install railway.app`
 
 ---
 

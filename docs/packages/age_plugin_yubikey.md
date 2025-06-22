@@ -1,6 +1,6 @@
 # age-plugin-yubikey
 
-> Plugin for encrypting files with age and PIV tokens such as YubiKeys
+> Package from pantry: github.com/str4d/age-plugin-yubikey
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install age-plugin-yubikey
+launchpad install github.com/str4d/age-plugin-yubikey
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `age-plugin-yubikey`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.5.0`, `0.4.0`
-
-</details>
-
-**Latest Version**: `0.5.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) age-plugin-yubikey -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

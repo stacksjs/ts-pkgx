@@ -1,6 +1,6 @@
 # exa
 
-> A modern replacement for ‘ls’.
+> Package from pantry: crates.io/exa
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install exa
+launchpad install crates.io/exa
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `exa`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.10.1`
-
-</details>
-
-**Latest Version**: `0.10.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) exa -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -1,11 +1,11 @@
-# spirv
+# SPIRV-Tools
 
-> API and commands for processing SPIR-V modules
+> Package from pantry: khronos.org/SPIRV-Tools
 
 ## Package Information
 
 - **Domain**: `khronos.org/SPIRV-Tools`
-- **Name**: `spirv`
+- **Name**: `SPIRV-Tools`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/khronos.org/SPIRV-Tools/package.yml)
 
@@ -13,41 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install spirv
+launchpad install khronos.org/SPIRV-Tools
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `spirv-as`
-- `spirv-cfg`
-- `spirv-dis`
-- `spirv-lesspipe.sh`
-- `spirv-link`
-- `spirv-lint`
-- `spirv-objdump`
-- `spirv-opt`
-- `spirv-reduce`
-- `spirv-val`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `2025.1.0`, `2024.3.0`, `2024.2.0`, `2024.1.0`
-
-</details>
-
-**Latest Version**: `2025.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +khronos.org/SPIRV-Tools@2025.1.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # po4a.org
 
-> Maintain the translations of your documentation with ease  (PO for anything)
+> Package from pantry: po4a.org
 
 ## Package Information
 
@@ -20,32 +20,7 @@ launchpad install po4a.org
 
 This package provides the following executable programs:
 
-- `msguntypot`
-- `po4a`
-- `po4a-display-man`
-- `po4a-display-pod`
-- `po4a-gettextize`
-- `po4a-normalize`
-- `po4a-updatepo`
-- `podselect`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `0.73.0`, `0.72.0`, `0.71.0`, `0.70.0`, `0.69.0`
-
-</details>
-
-**Latest Version**: `0.73.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +po4a.org@0.73.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

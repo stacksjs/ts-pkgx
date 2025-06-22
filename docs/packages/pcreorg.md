@@ -1,11 +1,11 @@
-# pcre
+# pcre.org
 
-> Perl compatible regular expressions library
+> Package from pantry: pcre.org
 
 ## Package Information
 
 - **Domain**: `pcre.org`
-- **Name**: `pcre`
+- **Name**: `pcre.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pcre.org/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install pcre
+launchpad install pcre.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pcre-config`
-- `pcregrep`
-- `pcretest`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `8.45.0`
-
-</details>
-
-**Latest Version**: `8.45.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +pcre.org@8.45.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

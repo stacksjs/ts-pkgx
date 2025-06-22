@@ -1,6 +1,6 @@
 # nmap.org
 
-> Port scanning utility for large networks
+> Package from pantry: nmap.org
 
 ## Package Information
 
@@ -20,27 +20,7 @@ launchpad install nmap.org
 
 This package provides the following executable programs:
 
-- `nmap`
-- `ncat`
-- `nping`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `7.97.0`, `7.96.0`, `7.95.0`, `7.94.0`, `7.93.0`
-
-</details>
-
-**Latest Version**: `7.97.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +nmap.org@7.97.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

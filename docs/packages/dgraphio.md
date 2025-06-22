@@ -1,11 +1,11 @@
-# dgraph
+# dgraph.io
 
-> high-performance graph database for real-time use cases
+> Package from pantry: dgraph.io
 
 ## Package Information
 
 - **Domain**: `dgraph.io`
-- **Name**: `dgraph`
+- **Name**: `dgraph.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dgraph.io/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install dgraph
+launchpad install dgraph.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `dgraph`
-
-## Available Versions
-
-<details>
-<summary>Show all 11 versions</summary>
-
-- `24.1.3`, `24.1.2`, `24.1.1`, `24.1.0`, `24.0.5`
-- `24.0.4`, `24.0.2`, `24.0.1`, `24.0.0`, `23.1.1`
-- `23.1.0`
-
-</details>
-
-**Latest Version**: `24.1.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) dgraph -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

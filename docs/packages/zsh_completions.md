@@ -1,11 +1,11 @@
-# github.com/zsh-users/zsh-completions
+# zsh-completions
 
-> Additional completion definitions for Zsh.
+> Package from pantry: github.com/zsh-users/zsh-completions
 
 ## Package Information
 
 - **Domain**: `github.com/zsh-users/zsh-completions`
-- **Name**: `github.com/zsh-users/zsh-completions`
+- **Name**: `zsh-completions`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zsh-users/zsh-completions/package.yml)
 
@@ -21,24 +21,6 @@ launchpad install github.com/zsh-users/zsh-completions
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.35.0`
-
-</details>
-
-**Latest Version**: `0.35.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/zsh-users/zsh-completions@0.35.0 -- $SHELL -i
-```
 
 ## Dependencies
 

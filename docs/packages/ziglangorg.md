@@ -1,11 +1,11 @@
-# zig
+# ziglang.org
 
-> General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
+> Package from pantry: ziglang.org
 
 ## Package Information
 
 - **Domain**: `ziglang.org`
-- **Name**: `zig`
+- **Name**: `ziglang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ziglang.org/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install zig
+launchpad install ziglang.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `zig`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `0.14.1`, `0.14.0`, `0.13.0`, `0.12.1`, `0.12.0`
-- `0.11.0`, `0.10.1`
-
-</details>
-
-**Latest Version**: `0.14.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) zig -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

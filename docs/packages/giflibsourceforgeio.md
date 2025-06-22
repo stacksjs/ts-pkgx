@@ -1,11 +1,11 @@
-# gif2rgb
+# giflib.sourceforge.io
 
-> Library and utilities for processing GIFs
+> Package from pantry: giflib.sourceforge.io
 
 ## Package Information
 
 - **Domain**: `giflib.sourceforge.io`
-- **Name**: `gif2rgb`
+- **Name**: `giflib.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/giflib.sourceforge.io/package.yml)
 
@@ -13,37 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gif2rgb
+launchpad install giflib.sourceforge.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gif2rgb`
-- `gifbuild`
-- `gifclrmp`
-- `giffix`
-- `giftext`
-- `giftool`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `5.2.2`, `5.2.1`
-
-</details>
-
-**Latest Version**: `5.2.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +giflib.sourceforge.io@5.2.2 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

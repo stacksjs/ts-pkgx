@@ -1,11 +1,11 @@
-# re2c
+# re2c.org
 
-> Lexer generator for C, C++, D, Go, Haskell, Java, JS, OCaml, Python, Rust, V and Zig.
+> Package from pantry: re2c.org
 
 ## Package Information
 
 - **Domain**: `re2c.org`
-- **Name**: `re2c`
+- **Name**: `re2c.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/re2c.org/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install re2c
+launchpad install re2c.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `re2c`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `4.2.0`, `4.1.0`, `4.0.2`, `4.0.1`, `4.0.0`
-- `3.1.0`, `3.0.0`
-
-</details>
-
-**Latest Version**: `4.2.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) re2c -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # keyring
 
-> Easy way to access the system keyring service from python
+> Package from pantry: github.com/jaraco/keyring
 
 ## Package Information
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install keyring
+launchpad install github.com/jaraco/keyring
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `keyring`
-
-## Available Versions
-
-<details>
-<summary>Show all 12 versions</summary>
-
-- `25.6.0`, `25.5.0`, `25.4.1`, `25.4.0`, `25.3.0`
-- `25.2.1`, `25.2.0`, `25.1.0`, `25.0.1`, `25.0.0`
-- `24.3.1`, `24.3.0`
-
-</details>
-
-**Latest Version**: `25.6.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) keyring -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

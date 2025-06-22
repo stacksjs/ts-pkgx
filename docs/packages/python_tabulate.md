@@ -1,11 +1,11 @@
-# tabulate
+# python-tabulate
 
-> Pretty-print tabular data in Python, a library and a command-line utility. Repository migrated from bitbucket.org/astanin/python-tabulate.
+> Package from pantry: github.com/astanin/python-tabulate
 
 ## Package Information
 
 - **Domain**: `github.com/astanin/python-tabulate`
-- **Name**: `tabulate`
+- **Name**: `python-tabulate`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/astanin/python-tabulate/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install tabulate
+launchpad install github.com/astanin/python-tabulate
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `tabulate`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.9.0`
-
-</details>
-
-**Latest Version**: `0.9.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) tabulate -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

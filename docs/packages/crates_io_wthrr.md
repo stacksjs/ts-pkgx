@@ -1,6 +1,6 @@
 # wthrr
 
-> 🌞 🦀 🌙 Weather companion for the terminal. Rust app.
+> Package from pantry: crates.io/wthrr
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install wthrr
+launchpad install crates.io/wthrr
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `wthrr`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.2.1`, `1.2.0`
-
-</details>
-
-**Latest Version**: `1.2.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) wthrr -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

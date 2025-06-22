@@ -1,6 +1,6 @@
 # tokesura
 
-> CLI and Library for working with Hasura JWTs
+> Package from pantry: github.com/kevinmichaelchen/tokesura
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install tokesura
+launchpad install github.com/kevinmichaelchen/tokesura
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `tokesura`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.0.1`
-
-</details>
-
-**Latest Version**: `0.0.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) tokesura -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

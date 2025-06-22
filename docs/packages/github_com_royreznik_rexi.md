@@ -1,6 +1,6 @@
 # rexi
 
-> Terminal UI for Regex Testing
+> Package from pantry: github.com/royreznik/rexi
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install rexi
+launchpad install github.com/royreznik/rexi
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `rexi`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.2.0`, `1.1.4`, `1.1.3`, `1.1.2`
-
-</details>
-
-**Latest Version**: `1.2.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) rexi -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
