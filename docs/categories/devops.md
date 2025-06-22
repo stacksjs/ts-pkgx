@@ -1,6 +1,6 @@
-# DevOps & Infrastructure
+# DevOps
 
-*8 packages in this category*
+*11 packages in this category*
 
 Tools for deployment, orchestration, and infrastructure management.
 
@@ -36,13 +36,23 @@ The Kubernetes Package Manager
 
 ---
 
-### [istio.io](../packages/istioio.md) (istioctl)
+### [jenkins.io](../packages/jenkinsio.md) (jenkins-lts)
 
-Connect, secure, control, and observe services.
+Extendable open source continuous integration server
 
-**Programs**: istioctl
+**Programs**: jenkins-lts, jenkins-lts-cli
 
-**Install**: `launchpad install istioctl`
+**Install**: `launchpad install jenkins.io`
+
+---
+
+### [k3d.io](../packages/k3dio.md) (k3d)
+
+Little helper to run CNCF's k3s in Docker
+
+**Programs**: k3d
+
+**Install**: `launchpad install k3d`
 
 ---
 
@@ -53,6 +63,16 @@ Nomad is an easy-to-use, flexible, and performant workload orchestrator that can
 **Programs**: nomad
 
 **Install**: `launchpad install nomad`
+
+---
+
+### [packer.io](../packages/packerio.md) (packer)
+
+Packer is a tool for creating identical machine images for multiple platforms from a single source configuration.
+
+**Programs**: packer
+
+**Install**: `launchpad install packer`
 
 ---
 
@@ -76,13 +96,23 @@ Terraform enables you to safely and predictably create, change, and improve infr
 
 ---
 
-### [traefik.io](../packages/traefikio.md) (traefik)
+### [terragrunt.gruntwork.io](../packages/terragruntgruntworkio.md) (terragrunt)
 
-The Cloud Native Application Proxy
+Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTofu/Terraform to scale.
 
-**Programs**: traefik
+**Programs**: terragrunt
 
-**Install**: `launchpad install traefik`
+**Install**: `launchpad install terragrunt`
+
+---
+
+### [vaultproject.io](../packages/vaultprojectio.md) (vault)
+
+A tool for secrets management, encryption as a service, and privileged access management
+
+**Programs**: vault
+
+**Install**: `launchpad install vault`
 
 ---
 

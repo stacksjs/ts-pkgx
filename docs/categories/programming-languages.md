@@ -1,30 +1,10 @@
 # Programming Languages
 
-*16 packages in this category*
+*14 packages in this category*
 
 Popular programming languages and their runtimes available through pkgx.
 
 ## Packages
-
-### [dart.dev](../packages/dartdev.md) (dart)
-
-The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more.
-
-**Programs**: dart, dartaotruntime
-
-**Install**: `launchpad install dart`
-
----
-
-### [deno.land](../packages/denoland.md) (deno)
-
-A modern runtime for JavaScript and TypeScript.
-
-**Programs**: deno
-
-**Install**: `launchpad install deno`
-
----
 
 ### [erlang.org](../packages/erlangorg.md)
 
@@ -33,16 +13,6 @@ Programming language for highly scalable real-time systems
 **Programs**: ct_run, dialyzer, epmd, erl, erlc, escript, run_erl, to_erl, typer
 
 **Install**: `launchpad install erlang.org`
-
----
-
-### [gleam.run](../packages/gleamrun.md) (gleam)
-
-⭐️ A friendly language for building type-safe, scalable systems!
-
-**Programs**: gleam
-
-**Install**: `launchpad install gleam`
 
 ---
 
@@ -83,6 +53,26 @@ Statically typed programming language for the JVM
 **Programs**: kapt, kotlin, kotlinc, kotlinc-js, kotlinc-jvm
 
 **Install**: `launchpad install kotlinlang.org`
+
+---
+
+### [lua.org](../packages/luaorg.md) (lua)
+
+Powerful, lightweight programming language
+
+**Programs**: lua, luac
+
+**Install**: `launchpad install lua`
+
+---
+
+### [luajit.org](../packages/luajitorg.md) (luajit)
+
+Mirror of the LuaJIT git repository
+
+**Programs**: luajit, luajit-2.1.
+
+**Install**: `launchpad install luajit`
 
 ---
 
@@ -136,23 +126,13 @@ The Swift Programming Language
 
 ---
 
-### [typescriptlang.org](../packages/typescriptlangorg.md) (tsc)
+### [tinygo.org](../packages/tinygoorg.md) (tinygo)
 
-TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
+Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM.
 
-**Programs**: tsc
+**Programs**: tinygo
 
-**Install**: `launchpad install tsc`
-
----
-
-### [vlang.io](../packages/vlangio.md) (v)
-
-Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
-
-**Programs**: v
-
-**Install**: `launchpad install v`
+**Install**: `launchpad install tinygo`
 
 ---
 

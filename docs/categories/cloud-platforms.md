@@ -1,8 +1,8 @@
-# Cloud Platforms & Services
+# Cloud Platforms
 
-*3 packages in this category*
+*5 packages in this category*
 
-Packages related to cloud platforms & services.
+Packages related to cloud platforms.
 
 ## Packages
 
@@ -26,6 +26,16 @@ CLI for Heroku
 
 ---
 
+### [planetscale.com](../packages/planetscalecom.md) (pscale)
+
+The CLI for PlanetScale Database
+
+**Programs**: pscale
+
+**Install**: `launchpad install pscale`
+
+---
+
 ### [railway.app](../packages/railwayapp.md) (railway)
 
 Develop and deploy code with zero configuration
@@ -33,6 +43,16 @@ Develop and deploy code with zero configuration
 **Programs**: railway
 
 **Install**: `launchpad install railway`
+
+---
+
+### [render.com](../packages/rendercom.md) (render)
+
+Command-line interface for Render
+
+**Programs**: render
+
+**Install**: `launchpad install render`
 
 ---
 

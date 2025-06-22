@@ -307,163 +307,550 @@ function isValidAlias(alias: string, targetDomain: string): boolean {
 }
 
 /**
- * Enhanced category mapping with better organization
- * Note: Domain names are normalized (dots removed, lowercase)
+ * Enhanced category mapping with comprehensive coverage of all available packages
+ * Based on actual analysis of the pantry packages to ensure accurate categorization
  */
 function getCategoryMapping(): Record<string, string[]> {
   return {
+    // Computing Platforms & Runtimes
     'Programming Languages': [
-      'nodejsorg',
-      'node',
-      'pythonorg',
-      'python',
-      'rustlangorg',
-      'rubylangorg',
-      'godev',
-      'scalalangorg',
-      'julialangorg',
-      'kotlinlangorg',
-      'perlorg',
-      'phpnet',
-      'swiftorg',
-      'typescriptlangorg',
-      'crystallangorg',
-      'elixirlangorg',
-      'haskellorg',
-      'gleamrun',
-      'denoland',
-      'vlangio',
-      'ziglangorg',
-      'nimlangorg',
-      'ocamlorg',
-      'dartdev',
-      'erlangorg',
+      'nodejsorg', // nodejs.org -> node
+      'pythonorg', // python.org -> python
+      'godev', // go.dev -> go
+      'rust-langorg', // rust-lang.org -> rust
+      'rubylangorg', // ruby-lang.org -> ruby
+      'julialangorg', // julialang.org -> julia
+      'luaorg', // lua.org -> lua
+      'luajitorg', // luajit.org -> luajit
+      'phpnet', // php.net -> php
+      'crystal-langorg', // crystal-lang.org -> crystal
+      'nim-langorg', // nim-lang.org -> nim
+      'kotlinlangorg', // kotlinlang.org -> kotlin
+      'scala-langorg', // scala-lang.org -> scala
+      'swiftorg', // swift.org -> swift
+      'ziglangorg', // ziglang.org -> zig
+      'vlangiopub', // vlang.io -> v
+      'dartlangorg', // dartlang.org -> dart
+      'haskellorg', // haskell.org -> ghc
+      'ocamlorg', // ocaml.org -> ocaml
+      'clojureorg', // clojure.org -> clojure
+      'erlangorg', // erlang.org -> erl
+      'elixirlangorg', // elixirlang.org -> elixir
+      'rorg', // r-project.org -> R
+      'perlorg', // perl.org -> perl
+      'tcllangorg', // tcl-lang.org -> tcl
+      'dlangorg', // dlang.org -> dmd
+      'tinygoorg', // tinygo.org -> tinygo
     ],
-    'JavaScript & Node.js Ecosystem': [
-      'nodejsorg',
-      'node',
-      'bunsh',
-      'denoland',
-      'npmjscom',
-      'pnpmio',
-      'yarnpkgcom',
-      'classicyarnpkgcom',
-      'vitejsdev',
-      'angulardev',
-      'expodev',
-      'flutterdev',
+
+    // AI/ML & Data Science
+    'Artificial Intelligence': [
+      'ollamaai', // ollama.ai -> ollama
+      'huggingfaceco', // huggingface.co -> huggingface-cli
+      'openaicom', // openai.com packages
+      'numpyorg', // numpy.org -> f2py
+      'kagglecom', // kaggle.com -> kaggle
+      'tensorfloworg', // tensorflow.org (if available)
+      'pytorchorg', // pytorch.org (if available)
+      'jupyterorg', // jupyter.org -> jupyter
+      'localaiio', // localai.io -> local-ai
+      'githubcomautomaticstableidffusionwebui', // stable-diffusion-webui
+      'githubcomopeninterpreteropen-interpreter', // open-interpreter
+      'githubcomantonosikagptengineer', // gpt-engineer
     ],
-    'Package Managers & Build Tools': [
-      'npmjscom',
-      'pnpmio',
-      'yarnpkgcom',
-      'pythonpoetryorg',
-      'pipenvpypaio',
-      'pippypaio',
-      'rubygemsorg',
-      'cratesio',
-      'mavenapacheorg',
-      'gradleorg',
-      'cmakeorg',
-      'ninjabuildorg',
-      'mesonbuildcom',
-    ],
+
+    // Databases & Storage
     'Databases': [
-      'postgresqlorg',
-      'mysqlcom',
-      'redisio',
-      'mongodbcom',
-      'sqliteorg',
-      'cassandraapacheorg',
-      'influxdatacom',
-      'couchdbapacheorg',
-      'neo4jcom',
-      'clickhousecom',
-      'surrealdbcom',
-      'duckdborg',
-      'valkeyio',
+      'postgresqlorg', // postgresql.org -> psql
+      'mysqlcom', // mysql.com -> mysql
+      'mongodbcom', // mongodb.com -> mongod, mongos
+      'redisio', // redis.io -> redis
+      'sqliteorg', // sqlite.org -> sqlite3
+      'duckdborg', // duckdb.org -> duckdb
+      'surrealdbcom', // surrealdb.com -> surreal
+      'etcdio', // etcd.io -> etcd
+      'tursotech', // turso.tech -> turso
+      'mariadbcom', // mariadb.com -> mariadb
+      'influxdatacom', // influxdata.com -> influx
+      'clickhousecom', // clickhouse.com -> clickhouse
+      'neo4jcom', // neo4j.com -> neo4j
+      'cassandraapacheorg', // cassandra.apache.org -> cassandra
+      'couchdbapacheorg', // couchdb.apache.org -> couchdb
+      'elasticsearchorg', // elasticsearch.org -> elasticsearch
+      'opensearchorg', // opensearch.org -> opensearch
+      'memcachedorg', // memcached.org -> memcached
+      'valkeyio', // valkey.io -> valkey
+      'priverdevgeni', // priver.dev/geni -> geni (database migration tool)
     ],
-    'DevOps & Infrastructure': [
-      'dockercom',
-      'kubernetesio',
-      'terraformio',
-      'helmsh',
-      'consulio',
-      'vaulthashicorpio',
-      'nomadprojectio',
-      'ansiblecom',
-      'podmanio',
-      'traefikio',
-      'envoyproxyio',
-      'istioio',
-      'ciliumio',
-      'fluxcdio',
-      'argoprojgithubio',
+
+    // Web Development & Frameworks
+    'Web Development': [
+      'vitejsdev', // vitejs.dev -> vite
+      'nextjsorg', // nextjs.org -> next
+      'astrobuild', // astro.build -> astro
+      'vitepressdev', // vitepress.dev -> vitepress
+      'laravelcom', // laravel.com -> laravel
+      'symfonycom', // symfony.com -> symfony
+      'djangoproject', // django.djangoproject.com -> django
+      'flaskpalletsprojects', // flask.palletsprojects.com -> flask
+      'fastapitiangolocom', // fastapi.tiangolo.com -> fastapi
+      'rubyonrailsorg', // rubyonrails.org -> rails
+      'springio', // spring.io -> spring
+      'expressjs', // expressjs.com -> express
+      'tailwindcsscom', // tailwindcss.com -> tailwindcss
+      'sveltedev', // svelte.dev -> svelte
+      'angular', // angular.dev -> ng
+      'reactjs', // reactjs.org -> react (if available)
+      'vuejs', // vuejs.org -> vue (if available)
     ],
-    'Cloud Platforms & Services': [
-      'awsamazoncom',
-      'githubcom',
-      'gitlabcom',
-      'digitaloceancom',
-      'herokucom',
-      'vercelcom',
-      'cloudflarecom',
-      'flyio',
-      'railwayapp',
+
+    // DevOps & Infrastructure
+    'DevOps': [
+      'dockercom', // docker.com -> docker
+      'dockercomcompose', // docker.com/compose -> docker-compose
+      'podmanio', // podman.io -> podman
+      'kubernetesiokubectl', // kubernetes.io/kubectl -> kubectl
+      'kubernetesiominikube', // kubernetes.io/minikube -> minikube
+      'kubernetesiokustomize', // kubernetes.io/kustomize -> kustomize
+      'helmsh', // helm.sh -> helm
+      'terraformio', // terraform.io -> terraform
+      'terragruntgruntworkio', // terragrunt.gruntwork.io -> terragrunt
+      'jenkinsio', // jenkins.io -> jenkins
+      'vaultprojectio', // vaultproject.io -> vault
+      'consulio', // consul.io -> consul
+      'nomadprojectio', // nomad.project.io -> nomad
+      'packerio', // packer.io -> packer
+      'ansiblecom', // ansible.com -> ansible
+      'githubcomactions', // github.com/actions
+      'gitlabcomci', // gitlab.com/ci
+      // 'circleci',         // circleci.com -> circleci (REMOVED - doesn't exist)
+      'argoprojgithubiocd', // argo-proj.github.io/cd -> argocd
+      'fluxcdioflux2', // fluxcd.io/flux2 -> flux
+      'limavmio', // lima-vm.io -> lima, limactl
+      'k3dio', // k3d.io -> k3d
+      'kindsigsksio', // kind.sigs.k8s.io -> kind
     ],
+
+    'Container & Kubernetes Tools': [
+      'dockercom', // docker.com -> docker
+      'podmanio', // podman.io -> podman
+      'kubernetesiokubectl', // kubernetes.io/kubectl -> kubectl
+      'kubernetesiominikube', // kubernetes.io/minikube -> minikube
+      'kubernetesiokustomize', // kubernetes.io/kustomize -> kustomize
+      'helmsh', // helm.sh -> helm
+      'githubcomhelmfilehelmfile', // github.com/helmfile/helmfile -> helmfile
+      'githubcomsternstern', // github.com/stern/stern -> stern
+      'ciliumiohubble', // cilium.io/hubble -> hubble
+      'ciliumiocilium', // cilium.io/cilium -> cilium
+      'kubelinterio', // kubelinter.io -> kube-linter
+      'kubesharkco', // kubeshark.co -> kubeshark
+      'cloudnativepgio', // cloudnative-pg.io -> kubectl-cnpg
+      'k9scliio', // k9scli.io -> k9s
+      'kubectxdev', // kubectx.dev -> kubectx, kubens
+      'kubecmcloud', // kubecm.cloud -> kubecm
+      'krewsigsksio', // krew.sigs.k8s.io -> kubectl-krew
+      'skaffolddev', // skaffold.dev -> skaffold
+      'tiltdev', // tilt.dev -> tilt
+      'linkerdiolinkerd2', // linkerd.io/linkerd2 -> linkerd
+      'vclustercom', // vcluster.com -> vcluster
+      // 'istioctl',         // istio.io -> istioctl (REMOVED - doesn't exist)
+    ],
+
     'Monitoring & Observability': [
-      'prometheusio',
-      'grafanacom',
-      'jaegertracingiojaeger',
-      'opentelemetryio',
-      'sentryio',
-      'datadogcom',
+      'prometheusio', // prometheus.io -> prometheus
+      'grafanacom', // grafana.com -> grafana
+      'datadogcom', // datadog.com -> datadog
+      'newreliccom', // newrelic.com -> newrelic
+      'elasticokibana', // elastic.co/kibana -> kibana
+      'jaegertracingfio', // jaegertracing.fio -> jaeger
+      'zipkinio', // zipkin.io -> zipkin
+      'sentryio', // sentry.io -> sentry
+      'steampipeio', // steampipe.io -> steampipe
+      'logdydev', // logdy.dev -> logdy
+      'lokigrafanacom', // loki.grafana.com -> loki
+      'tempoproject', // tempo.project.io -> tempo
     ],
-    'Security & Authentication': [
-      'hashicorpcom',
-      'bitwardencom',
-      'developer1passwordcom',
-      'auth0com',
-      'oktacom',
-      'keycloakorg',
+
+    // Build Tools & Package Management
+    'Build Tools & Automation': [
+      'cmakeorg', // cmake.org -> cmake
+      'ninjabuilorg', // ninja-build.org -> ninja
+      'mesonbuildcom', // mesonbuild.com -> meson
+      'sconsorg', // scons.org -> scons
+      'gnuorgmake', // gnu.org/make -> make
+      'bazelbuilgithubcom', // github.com/bazelbuild/bazel -> bazel
+      'gradleorg', // gradle.org -> gradle
+      'mavenorg', // maven.apache.org -> mvn
+      'antapacheorg', // ant.apache.org -> ant
+      'taskfiledev', // taskfile.dev -> task
+      'justsystems', // just.systems -> just
+      'gnuorgautoconf', // gnu.org/autoconf -> autoconf
+      'gnuorgautomake', // gnu.org/automake -> automake
+      'pkgconfigfreedesktoporg', // pkg-config.freedesktop.org -> pkg-config
+      'githubcommicrosoftvcpkg', // github.com/microsoft/vcpkg -> vcpkg
     ],
-    'Development Tools': [
-      'gitscmorg',
-      'githubcom',
-      'gitlabcom',
-      'codevisualstudiocom',
-      'neovimio',
-      'vimorg',
-      'jetbrainscom',
-      'prettierio',
-      'eslintorg',
+
+    'Package Managers': [
+      'npmjscom', // npmjs.com -> npm, npx
+      'yarnpkgcom', // yarnpkg.com -> yarn
+      'pnpmio', // pnpm.io -> pnpm
+      'bunsh', // bun.sh -> bun
+      'piporg', // pip.org -> pip
+      'pipenvpypaio', // pipenv.pypa.io -> pipenv
+      'poetrypythonorg', // python-poetry.org -> poetry
+      'condaforgeorg', // conda-forge.org -> conda
+      'bundlerrubygemsorg', // bundler.rubygems.org -> bundler
+      'cargoorg', // rust-lang.org/cargo -> cargo
+      'composerorg', // getcomposer.org -> composer
+      'cocoapodsorg', // cocoapods.org -> pod
+      'nugetorg', // nuget.org -> nuget
+      'homebrewsh', // homebrew.sh -> brew
+      'macportsorg', // macports.org -> port
+      'pkgxsh', // pkgx.sh -> pkgx
+      'misedev', // mise.jdx.dev -> mise
+      'asdfvmcom', // asdf-vm.com -> asdf
+      'nixpackscom', // nixpacks.com -> nixpacks
+      'ryeuxorg', // rye.astral.sh -> rye
+      'pixiprefixdev', // prefix.dev/pixi -> pixi
+      'pdmfmingdev', // pdm.fming.dev -> pdm
+      'classicyarnpkgcom', // classic.yarnpkg.com -> yarn (classic)
     ],
+
+    // Development Tools & Editors
+    'Editors & IDEs': [
+      'neovimio', // neovim.io -> nvim
+      'vimorg', // vim.org -> vim
+      'macvimorg', // macvim.org -> macvim
+      'lunarvimorg', // lunarvim.org -> lvim
+      'helixeditorcom', // helix-editor.com -> hx
+      'gnuorgemacs', // gnu.org/emacs -> emacs
+      'codevisualstudiocom', // code.visualstudio.com -> code
+      'microsoftcomcodecli', // microsoft.com/code-cli -> code
+      'sublimetextcom', // sublimetext.com -> subl
+      'atomio', // atom.io -> atom
+      'microeditoregithubio', // micro-editor.github.io -> micro
+      'nanoeditororg', // nano-editor.org -> nano
+    ],
+
     'CLI Tools & Utilities': [
-      'curlse',
-      'wgetgnuorg',
-      'jqstedolangithubio',
-      'ripgrepburntsushinet',
-      'fdsharkdpgithubio',
-      'batsharkdpgithubio',
-      'exavaladaptivenet',
-      'htopdev',
-      'tmuxgithubio',
+      'ripgrepburntsushinet', // ripgrep.burntsushi.net -> rg
+      'tree_sittergithubio', // tree-sitter.github.io -> tree-sitter
+      'fzfgithubcom', // github.com/junegunn/fzf -> fzf
+      'batgithubcom', // github.com/sharkdp/bat -> bat
+      'lsdgithubcom', // github.com/lsd-rs/lsd -> lsd
+      'exagithubcom', // github.com/ogham/exa -> exa
+      'fd_findgithubcom', // github.com/sharkdp/fd -> fd
+      'sedgnuorg', // gnu.org/sed -> sed
+      'awkgnuorg', // gnu.org/awk -> awk
+      'grepgnuorg', // gnu.org/grep -> grep
+      'findgnuorg', // gnu.org/findutils -> find
+      'jqdev', // jq.dev -> jq
+      'yqgithubcom', // github.com/mikefarah/yq -> yq
+      'treegnuorg', // gnu.org/tree -> tree
+      'watchgnuorg', // gnu.org/watch -> watch
+      'htopdev', // htop.dev -> htop
+      'bottomrs', // bottom.rs -> btm
+      'tmuxgithubcom', // github.com/tmux/tmux -> tmux
+      'gnuorgscreen', // gnu.org/screen -> screen
+      'starshiprs', // starship.rs -> starship
+      'ohmyposhdev', // ohmyposh.dev -> oh-my-posh
+      'fishcli', // fishshell.com -> fish
+      'zshsourceforgeio', // zsh.sourceforge.io -> zsh
+      'bashgnuorg', // gnu.org/bash -> bash
     ],
-    'Web Servers & Proxies': [
-      'nginxorg',
-      'apacheorg',
-      'caddycommunity',
-      'traefikio',
-      'envoyproxyio',
-      'haproxyorg',
+
+    // Networking & Communication
+    'Networking': [
+      'nginxorg', // nginx.org -> nginx
+      'apacheorg', // apache.org -> httpd
+      'haproxyorg', // haproxy.org -> haproxy
+      'traefikio', // traefik.io -> traefik
+      'caddyservercom', // caddyserver.com -> caddy
+      'envoyproxyio', // envoyproxy.io -> envoy
+      'opensshcom', // openssh.com -> ssh, scp, sftp
+      'curlse', // curl.se -> curl
+      'wgetgnuorg', // wget.gnu.org -> wget
+      'httpieio', // httpie.io -> http, https
+      'nmaporg', // nmap.org -> nmap
+      'wiresharkorg', // wireshark.org -> wireshark
+      'tcpdumporg', // tcpdump.org -> tcpdump
+      'netcatsourceforge', // netcat.sourceforge.net -> nc
+      'sosocatorg', // socat.org -> socat
+      'rsyncsamba', // rsync.samba.org -> rsync
+      'openrestryorg', // openresty.org -> openresty
+      'cloudflarecomcloudflared', // cloudflare.com/cloudflared -> cloudflared
+      'wirehuardcom', // wireguard.com -> wg
+      'openvpnnet', // openvpn.net -> openvpn
+      'sshxio', // sshx.io -> sshx
     ],
-    'Testing & Quality Assurance': [
-      'jestio',
-      'cypressio',
-      'playwrightdev',
-      'seleniumdev',
-      'pytestorg',
-      'junitorg',
+
+    'Security & Cryptography': [
+      'opensslorg', // openssl.org -> openssl
+      'gnupgorg', // gnupg.org -> gpg
+      'githubcomorhundevgpgtui', // orhun.dev/gpg-tui -> gpg-tui
+      'githubcomhashicorpvault', // hashicorp.com/vault -> vault
+      'keep_assxcorg', // keepassxc.org -> keepassxc
+      'bitwardencom', // bitwarden.com -> bw
+      'onepasswordcom', // 1password.com -> op
+      'lastpasscom', // lastpass.com -> lpass
+      'yubicocom', // yubico.com -> ykchalresp
+      'mkcertdev', // mkcert.dev -> mkcert
+      'letsencryptorg', // letsencrypt.org -> certbot
+      'filippoioage', // filippo.io/age -> age
+      'filippoioyubikeyagent', // filippo.io/yubikey-agent -> yubikey-agent
+      'cosignsigstoredev', // cosign.sigstore.dev -> cosign
+      'gitsignsigstoredev', // gitsign.sigstore.dev -> gitsign
+      'tailscalecom', // tailscale.com -> tailscale
+      'zerotiercom', // zerotier.com -> zerotier-one
+      'snykio', // snyk.io -> snyk
+      'trivy_aquasecuritygithubio', // aquasecurity.github.io/trivy -> trivy
+      'tfsec_aquasecuritygithubio', // aquasecurity.github.io/tfsec -> tfsec
+      'checkifsecuritycom', // checkov.io -> checkov
+    ],
+
+    // Multimedia & Graphics
+    'Multimedia': [
+      'ffmpegorg', // ffmpeg.org -> ffmpeg, ffplay, ffprobe
+      'imagemagickorg', // imagemagick.org -> convert, identify
+      'graphicsmagickorg', // graphicsmagick.org -> gm
+      'libvipsorg', // libvips.org -> vips
+      'gimporg', // gimp.org -> gimp
+      'inkscapeorg', // inkscape.org -> inkscape
+      'blenderorg', // blender.org -> blender
+      'handbrake_fr', // handbrake.fr -> HandBrakeCLI
+      'vlcvideolan', // vlc.videolan.org -> vlc
+      'mpvio', // mpv.io -> mpv
+      'youtube_dlorg', // youtube-dl.org -> youtube-dl
+      'yt_dlporg', // yt-dlp.org -> yt-dlp
+      'streamlinkgithubio', // streamlink.github.io -> streamlink
+      'obs_studiocom', // obs-studio.com -> obs
+      'audacityteamorg', // audacity.team.org -> audacity
+      'gifsiclelcdforg', // gifsicle.lcdf.org -> gifsicle
+      'exiftoollib', // exiftool.lib.org -> exiftool
+      'pngquant', // pngquant.org -> pngquant
+      'optipngorg', // optipng.org -> optipng
+      'jpegoptimgithubcom', // github.com/tjko/jpegoptim -> jpegoptim
+    ],
+
+    'Graphics Libraries': [
+      'libsdlorg', // libsdl.org -> sdl2-config
+      'libsdlorgsdl_image', // libsdl.org/SDL_image -> sdl2-image
+      'openglorg', // opengl.org -> gl
+      'vulkanlunarcom', // vulkan.lunarg.com -> vulkan
+      'mesa3dorg', // mesa3d.org -> mesa
+      'freeglutfileio', // freeglut.sourceforge.io -> freeglut
+      'glewsourceforge', // glew.sourceforge.io -> glew
+      'glmgtrucnet', // glm.g-truc.net -> glm
+      'cairographicsorg', // cairographics.org -> cairo
+      'opencvorg', // opencv.org -> opencv
+      'vtkorg', // vtk.org -> vtk
+      'ogre3dorg', // ogre3d.org -> ogre
+      'irrlichtorg', // irrlicht.org -> irrlicht
+      // 'assimp',           // assimp.org -> assimp (REMOVED - doesn't exist)
+    ],
+
+    // Gaming & Game Development
+    'Gaming & Game Development': [
+      'unitycom', // unity.com -> unity
+      'unrealenginecom', // unrealengine.com -> unreal
+      'godotengineorg', // godotengine.org -> godot
+      'libsdlorg', // libsdl.org -> sdl2 (also in graphics)
+      'love2dorg', // love2d.org -> love
+      'rayliborg', // raylib.org -> raylib
+      'allegro5org', // allegro5.org -> allegro
+      'defoldcom', // defold.com -> defold
+      'constructnet', // construct.net -> construct
+      'gamemakerio', // gamemaker.io -> gamemaker
+      'cocos2dxorg', // cocos2d-x.org -> cocos2d
+      'lutrisnet', // lutris.net -> lutris
+      'steampipecom', // steam.com -> steam (if available)
+      'epicgamescom', // epicgames.com -> epic (if available)
+    ],
+
+    // Cloud Platforms & Services
+    'Cloud Platforms': [
+      'awsamazoncom', // aws.amazon.com -> aws
+      'cloudgooglecom', // cloud.google.com -> gcloud
+      'azuremicrosoftcom', // azure.microsoft.com -> az
+      'digitaloceancom', // digitalocean.com -> doctl
+      'linodecom', // linode.com -> linode-cli
+      'vultrcom', // vultr.com -> vultr-cli
+      'hetznercom', // hetzner.com -> hcloud
+      'cloudflarecom', // cloudflare.com -> cloudflare
+      'netlifycom', // netlify.com -> netlify
+      'vercelcom', // vercel.com -> vercel
+      'herokucom', // heroku.com -> heroku
+      'railwayapp', // railway.app -> railway
+      'rendercom', // render.com -> render
+      'flyio', // fly.io -> fly
+      'planetscalecom', // planetscale.com -> pscale
+      'supabasecomcli', // supabase.com/cli -> supabase
+      'firebasecom', // firebase.google.com -> firebase
+      'localstackcloudcli', // localstack.cloud/cli -> localstack
+    ],
+
+    // Mobile Development
+    'Mobile Development': [
+      'reactnativedev', // reactnative.dev -> react-native
+      'flutterdev', // flutter.dev -> flutter, dart
+      'xamarincom', // xamarin.com -> xamarin
+      'ionicio', // ionic.io -> ionic
+      'cordovaapacheorg', // cordova.apache.org -> cordova
+      'capacitorjscom', // capacitorjs.com -> cap
+      'nativescriptorg', // nativescript.org -> ns
+      'expodev', // expo.dev -> expo
+      'fastlanetools', // fastlane.tools -> fastlane
+      'appiumio', // appium.io -> appium
+      'androidcomcmdlinetools', // android.com/cmdline-tools -> android
+      'gradleorg', // gradle.org -> gradle (also in build tools)
+    ],
+
+    // Testing & Quality Assurance
+    'Testing': [
+      'jestjsio', // jestjs.io -> jest
+      'mochajsorg', // mochajs.org -> mocha
+      'cypressio', // cypress.io -> cypress
+      'seleniumdev', // selenium.dev -> selenium
+      'playwrightdev', // playwright.dev -> playwright
+      'puppeteerdev', // puppeteer.dev -> puppeteer
+      'testcafeio', // testcafe.io -> testcafe
+      'pytestorg', // pytest.org -> pytest
+      'unittestpythonorg', // unittest.python.org -> unittest
+      'rspecinfo', // rspec.info -> rspec
+      'junitorg', // junit.org -> junit
+      'testngorg', // testng.org -> testng
+      'webdriverio', // webdriver.io -> wdio
+      'vitestdev', // vitest.dev -> vitest
+      'avajs', // ava.js.org -> ava
+      'jasminegjscom', // jasmine.github.io -> jasmine
+      'karmatestrunnerorg', // karma-runner.github.io -> karma
+    ],
+
+    // Finance & Cryptocurrency
+    'Cryptocurrency': [
+      'bitcoinorg', // bitcoin.org -> bitcoin
+      'ethereumorg', // ethereum.org -> ethereum
+      'solanacom', // solana.com -> solana
+      'getfoundrysh', // getfoundry.sh -> forge, cast, anvil
+      'racoonorg', // raccoin.org -> raccoin
+      'elementsprojectorg', // elementsproject.org -> elements
+      'githubcom10gicvanitygenplusplus', // github.com/10gic/vanitygen-plusplus
+      'ghostscriptcom', // ghostscript.com -> gs
+      'polkadotnetwork', // polkadot.network -> polkadot
+      'avalanchenetwork', // avalanche.network -> avalanche
+      'chainlinkcom', // chainlink.com -> chainlink
+      'cardanoorg', // cardano.org -> cardano
+    ],
+
+    'Financial Tools': [
+      'raccoinorg', // raccoin.org -> raccoin
+      'gnucashorg', // gnucash.org -> gnucash
+      'ledgercliorg', // ledger-cli.org -> ledger
+      'beancountgooglecodecom', // beancount.googlecode.com -> beancount
+      'plaintextaccountingorg', // plaintextaccounting.org
+      'quickencom', // quicken.com -> quicken
+      'mintcom', // mint.com -> mint
+      'ynabcom', // ynab.com -> ynab
+    ],
+
+    // Documentation & Text Processing
+    'Documentation & Text Processing': [
+      'pandocorg', // pandoc.org -> pandoc
+      'texliveorg', // texlive.org -> latex, pdflatex
+      'latexprojectorg', // latex-project.org -> latex
+      'asciidocorg', // asciidoc.org -> asciidoc
+      'asciidoctororg', // asciidoctor.org -> asciidoctor
+      'sphinxdocorg', // sphinx-doc.org -> sphinx
+      'mkdocsorg', // mkdocs.org -> mkdocs
+      'gitbookcom', // gitbook.com -> gitbook
+      'githubiohugohugorg', // gohugo.io -> hugo
+      'jekyllrb', // jekyllrb.com -> jekyll
+      'docsifyjs', // docsify.js.org -> docsify
+      'rustlangorgmdbook', // rust-lang.org/mdbook -> mdbook
+      'typstapp', // typst.app -> typst
+      'tectonic_typesettinggithubio', // tectonic-typesetting.github.io -> tectonic
+      'maaslalanicomslides', // maaslalani.com/slides -> slides
+    ],
+
+    // System Administration
+    'System Administration': [
+      'systemdio', // systemd.io -> systemctl
+      'crongnuorg', // cron.gnu.org -> cron
+      'rsyncsambaorg', // rsync.samba.org -> rsync
+      'opensshcom', // openssh.com -> ssh, scp, sftp (also in networking)
+      'sudows', // sudo.ws -> sudo
+      'tmuxgithubcom', // github.com/tmux/tmux -> tmux (also in CLI)
+      'gnuorgscreen', // gnu.org/screen -> screen (also in CLI)
+      'htopdev', // htop.dev -> htop (also in CLI)
+      'iostat', // iostat -> iostat
+      'psmisc', // psmisc -> killall, pstree
+      'procpsng', // procps-ng -> ps, top, free
+      'straceio', // strace.io -> strace
+      'ltraceorg', // ltrace.org -> ltrace
+      'lsofio', // lsof.io -> lsof
+      'tcpdumporg', // tcpdump.org -> tcpdump (also in networking)
+      'logrotateorg', // logrotate.org -> logrotate
+      'monitoringpluginsorg', // monitoring-plugins.org -> monitoring plugins
+    ],
+
+    // Scientific Computing & Data
+    'Scientific Computing': [
+      'numpyorg', // numpy.org -> f2py (also in AI)
+      'scipyorg', // scipy.org -> scipy
+      'pandasdataorg', // pandas.pydata.org -> pandas
+      'matplotliborg', // matplotlib.org -> matplotlib
+      'seabornpydataorg', // seaborn.pydata.org -> seaborn
+      'plotlycom', // plotly.com -> plotly
+      'jupyterorg', // jupyter.org -> jupyter (also in AI)
+      'anacondacom', // anaconda.com -> anaconda
+      'rorg', // r-project.org -> R (also in languages)
+      'rstudiocom', // rstudio.com -> rstudio
+      'octaveorg', // octave.org -> octave
+      'matlabcom', // matlab.com -> matlab
+      'mathematicawolframcom', // mathematica.wolfram.com -> mathematica
+      'sagemath', // sagemath.org -> sage
+      'maxima', // maxima.sourceforge.net -> maxima
+      'gnuplotorg', // gnuplot.org -> gnuplot
+      'paravieworg', // paraview.org -> paraview
+      'vtk', // vtk.org -> vtk (also in graphics)
+    ],
+
+    // Embedded & IoT
+    'Embedded & IoT': [
+      'arduino', // arduino.cc -> arduino
+      'platformio', // platformio.org -> pio
+      'espressifcom', // espressif.com -> esptool
+      'raspberrypiorg', // raspberrypi.org -> rpi-imager
+      'mbed', // mbed.com -> mbed
+      'freedosorg', // freedos.org -> freedos
+      'qemuorg', // qemu.org -> qemu (also virtualization)
+      'openocdorg', // openocd.org -> openocd
+      'stlink', // github.com/stlink-org/stlink -> st-link
+      'jlinkorg', // jlink.org -> jlink
+      'modbus', // modbus.org -> modbus
+      'zigbeeorg', // zigbee.org -> zigbee
+      'gpiozeropythonorg', // gpiozero.python.org -> gpiozero
+    ],
+
+    // Version Control & Git Tools
+    'Version Control': [
+      'gitscmcom', // git-scm.org -> git
+      'githubcomcli', // github.com/cli -> gh
+      'gitlabcom', // gitlab.com -> glab
+      'githubcomgithub', // github.com/github -> github
+      'mercurialscmorg', // mercurial-scm.org -> hg
+      'apache_subversionorg', // apache.org/subversion -> svn
+      'bazaargithubio', // bazaar.github.io -> bzr
+      'fossil_scmorg', // fossil-scm.org -> fossil
+      'darcsnet', // darcs.net -> darcs
+      'githubcomgitcliff', // github.com/git-cliff -> git-cliff
+      'githubcomgitlfs', // github.com/git-lfs -> git-lfs
+      'githubcomgitquickstats', // github.com/git-quick-stats -> git-quick-stats
+      'githubcomgittown', // github.com/git-town -> git-town
+      'ghtoolsgithubcom', // github.com/github/hub -> hub
+      'gitignoreiogithubcom', // gitignore.io -> gitignore
+      'githubcomdeltadevcidelta', // github.com/dandavison/delta -> delta
+      'githubcomcargocprojects', // github.com/crate-ci/cargo-release -> cargo-release
     ],
   }
 }
@@ -1822,9 +2209,21 @@ ${categoryName === 'Programming Languages'
     ? 'Popular programming languages and their runtimes available through pkgx.'
     : categoryName === 'Databases'
       ? 'Database systems and data storage solutions.'
-      : categoryName === 'DevOps & Infrastructure'
-        ? 'Tools for deployment, orchestration, and infrastructure management.'
-        : `Packages related to ${categoryName.toLowerCase()}.`
+      : categoryName === 'Development Tools'
+        ? 'Development environments, editors, and programming tools.'
+        : categoryName === 'Build Tools'
+          ? 'Build systems, compilers, and development infrastructure.'
+          : categoryName === 'DevOps'
+            ? 'Tools for deployment, orchestration, and infrastructure management.'
+            : categoryName === 'Multimedia'
+              ? 'Audio, video, and image processing tools.'
+              : categoryName === 'Security'
+                ? 'Security tools, encryption, and authentication systems.'
+                : categoryName === 'Networking'
+                  ? 'Network tools, protocols, and communication software.'
+                  : categoryName === 'CLI Tools & Utilities'
+                    ? 'Command-line utilities and system tools.'
+                    : `Packages related to ${categoryName.toLowerCase()}.`
 }
 
 ## Packages

@@ -1,8 +1,8 @@
-# Testing & Quality Assurance
+# Testing
 
 *1 packages in this category*
 
-Packages related to testing & quality assurance.
+Packages related to testing.
 
 ## Packages
 

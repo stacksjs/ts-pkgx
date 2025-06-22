@@ -1,6 +1,6 @@
 # Databases
 
-*8 packages in this category*
+*11 packages in this category*
 
 Database systems and data storage solutions.
 
@@ -13,6 +13,16 @@ DuckDB is an analytical in-process SQL database management system
 **Programs**: duckdb
 
 **Install**: `launchpad install duckdb`
+
+---
+
+### [etcd.io](../packages/etcdio.md) (etcd)
+
+Distributed reliable key-value store for the most critical data of a distributed system
+
+**Programs**: etcd, etcdctl
+
+**Install**: `launchpad install etcd`
 
 ---
 
@@ -33,6 +43,16 @@ MySQL Server, the world's most popular open source database, and MySQL Cluster, 
 **Programs**: mysql_client_test, my_print_defaults, myisam_ftdump, myisamchk, myisamlog, myisampack, mysql, mysql_config, mysql_config_editor, mysql_keyring_encryption_test, mysql_migrate_keyring, mysql_secure_installation, mysql_tzinfo_to_sql, mysqladmin, mysqlbinlog, mysqlcheck, mysqld, mysqld_multi, mysqld_safe, mysqldump, mysqldumpslow, mysqlimport, mysqlrouter, mysqlrouter_keyring, mysqlrouter_passwd, mysqlrouter_plugin_info, mysqlshow, mysqlslap, mysqltest, mysqltest_safe_process, mysqlxtest
 
 **Install**: `launchpad install mysql.com`
+
+---
+
+### [opensearch.org](../packages/opensearchorg.md) (opensearch)
+
+🔎 Open source distributed and RESTful search engine.
+
+**Programs**: opensearch, opensearch-keystore, opensearch-plugin, opensearch-shard
+
+**Install**: `launchpad install opensearch`
 
 ---
 
@@ -73,6 +93,16 @@ A scalable, distributed, collaborative, document-graph database, for the realtim
 **Programs**: surreal
 
 **Install**: `launchpad install surreal`
+
+---
+
+### [turso.tech](../packages/tursotech.md) (turso)
+
+Command line interface to Turso.
+
+**Programs**: turso
+
+**Install**: `launchpad install turso`
 
 ---
 

@@ -1,20 +1,10 @@
 # CLI Tools & Utilities
 
-*2 packages in this category*
+*5 packages in this category*
 
-Packages related to cli tools & utilities.
+Command-line utilities and system tools.
 
 ## Packages
-
-### [curl.se](../packages/curlse.md) (cURL, curl)
-
-A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features
-
-**Programs**: curl, curl-config
-
-**Install**: `launchpad install curl`
-
----
 
 ### [htop.dev](../packages/htopdev.md) (htop)
 
@@ -23,6 +13,46 @@ Improved top (interactive process viewer)
 **Programs**: htop
 
 **Install**: `launchpad install htop`
+
+---
+
+### [ohmyposh.dev](../packages/ohmyposhdev.md) (oh-my-posh)
+
+The most customisable and low-latency cross platform/shell prompt renderer
+
+**Programs**: oh-my-posh
+
+**Install**: `launchpad install oh-my-posh`
+
+---
+
+### [starship.rs](../packages/starshiprs.md) (starship)
+
+☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+
+**Programs**: starship
+
+**Install**: `launchpad install starship`
+
+---
+
+### [tree-sitter.github.io](../packages/tree_sittergithubio.md) (tree-sitter)
+
+Parser generator tool and incremental parsing library
+
+**Programs**: tree-sitter
+
+**Install**: `launchpad install tree-sitter`
+
+---
+
+### [zsh.sourceforge.io](../packages/zshsourceforgeio.md) (zsh)
+
+UNIX shell (command interpreter)
+
+**Programs**: zsh
+
+**Install**: `launchpad install zsh`
 
 ---
 

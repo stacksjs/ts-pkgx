@@ -1,10 +1,40 @@
 # Development Tools
 
-*3 packages in this category*
+*6 packages in this category*
 
-Packages related to development tools.
+Development environments, editors, and programming tools.
 
 ## Packages
+
+### [cmake.org](../packages/cmakeorg.md)
+
+Mirror of CMake upstream repository
+
+**Programs**: cmake, ccmake, cpack, ctest
+
+**Install**: `launchpad install cmake.org`
+
+---
+
+### [doxygen.nl](../packages/doxygennl.md) (doxygen)
+
+Generate documentation for several programming languages
+
+**Programs**: doxygen
+
+**Install**: `launchpad install doxygen`
+
+---
+
+### [mesonbuild.com](../packages/mesonbuildcom.md) (meson)
+
+Fast and user friendly build system
+
+**Programs**: meson
+
+**Install**: `launchpad install meson`
+
+---
 
 ### [neovim.io](../packages/neovimio.md) (nvim)
 
