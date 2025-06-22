@@ -13,9 +13,17 @@ export default defineConfig({
     rollupOptions: {
       output: {
         assetFileNames: 'assets/[name].[hash][extname]',
-        manualChunks: {
-          // Split large chunks to reduce memory usage
-          'search-index': ['@vitepress/theme'],
+        manualChunks: (id) => {
+          // Split large vendor chunks to reduce memory usage
+          if (id.includes('node_modules')) {
+            if (id.includes('vue')) {
+              return 'vue-vendor'
+            }
+            if (id.includes('vitepress')) {
+              return 'vitepress-vendor'
+            }
+            return 'vendor'
+          }
         },
       },
       // Optimize memory usage during build
