@@ -25,15 +25,15 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 14 versions</summary>
+<summary>Show all 15 versions</summary>
 
-- `0.20.5`, `0.20.4`, `0.20.3`, `0.20.2`, `0.20.1`
-- `0.20.0`, `0.19.1`, `0.18.2`, `0.18.1`, `0.18.0`
-- `0.17.2`, `0.17.1`, `0.17.0`, `0.0.0`
+- `0.20.6`, `0.20.5`, `0.20.4`, `0.20.3`, `0.20.2`
+- `0.20.1`, `0.20.0`, `0.19.1`, `0.18.2`, `0.18.1`
+- `0.18.0`, `0.17.2`, `0.17.1`, `0.17.0`, `0.0.0`
 
 </details>
 
-**Latest Version**: `0.20.5`
+**Latest Version**: `0.20.6`
 
 ### Install Specific Version
 
