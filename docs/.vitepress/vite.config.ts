@@ -13,21 +13,21 @@ export default defineConfig({
     rollupOptions: {
       output: {
         assetFileNames: 'assets/[name].[hash][extname]',
-        manualChunks: (id) => {
-          // Split large vendor chunks to reduce memory usage
-          if (id.includes('node_modules')) {
-            if (id.includes('vue')) {
-              return 'vue-vendor'
-            }
-            if (id.includes('vitepress')) {
-              return 'vitepress-vendor'
-            }
-            return 'vendor'
-          }
-        },
+        // Disable manual chunks to avoid VitePress module resolution issues
+        // manualChunks: (id) => {
+        //   if (id.includes('node_modules')) {
+        //     if (id.includes('vue')) {
+        //       return 'vue-vendor'
+        //     }
+        //     if (id.includes('vitepress')) {
+        //       return 'vitepress-vendor'
+        //     }
+        //     return 'vendor'
+        //   }
+        // },
       },
       // Optimize memory usage during build
-      maxParallelFileOps: 2, // Reduce parallel operations to conserve memory
+      maxParallelFileOps: 1, // Further reduce parallel operations to conserve memory
     },
   },
 
