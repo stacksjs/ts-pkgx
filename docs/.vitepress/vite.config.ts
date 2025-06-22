@@ -36,6 +36,10 @@ export default defineConfig({
       'vue',
       '@vue/runtime-core',
     ],
+    alias: {
+      // Fix mark.js module resolution issues
+      'mark.js': 'mark.js/dist/mark.min.js',
+    },
   },
 
   plugins: [
@@ -70,6 +74,9 @@ export default defineConfig({
     exclude: [
       // 'vue',
       'body-scroll-lock',
+    ],
+    include: [
+      'mark.js',
     ],
   },
 })
