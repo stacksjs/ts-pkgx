@@ -1828,9 +1828,11 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
         }
         safeCatalogFilename = safeCatalogFilename.replace(/[^\w-]/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '')
 
-        content += `| **[${domain}](./packages/${safeCatalogFilename}.md)**${aliases} | ${description} | ${programs} | ${versionInfo} | ${installCmd} |\n`
+        // Build the table row, ensuring no newlines within the row
+        const tableRow = `| **[${domain}](./packages/${safeCatalogFilename}.md)**${aliases} | ${description} | ${programs} | ${versionInfo} | ${installCmd} |`
           .replace(/\r?\n/g, ' ') // Ensure entire table row is on one line
           .replace(/\s+/g, ' ') // Collapse multiple spaces
+        content += `${tableRow}\n`
       }
       catch (error) {
         const domain = pkg.domain || pkg.fullPath || 'unknown'
