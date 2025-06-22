@@ -1,11 +1,11 @@
-# apu-{{ version.major }}-config
+# apu-<span v-pre>{{ version.major }}</span>-config
 
 > Mirror of Apache Portable Runtime util
 
 ## Package Information
 
 - **Domain**: `apache.org/apr-util`
-- **Name**: `apu-{{ version.major }}-config`
+- **Name**: `apu-<span v-pre>{{ version.major }}</span>-config`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/apr-util/package.yml)
 
@@ -20,7 +20,7 @@ launchpad install apu-{{
 
 This package provides the following executable programs:
 
-- `apu-&lbrace;&lbrace; version.major &rbrace;&rbrace;-config`
+- `apu-<span v-pre>{{ version.major }}</span>-config`
 
 ## Aliases
 

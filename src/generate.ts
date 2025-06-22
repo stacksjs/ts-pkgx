@@ -1216,20 +1216,22 @@ function generateInstallCommand(pkg: PkgxPackage): string {
       // If the package has aliases, prefer the shortest one (usually the most common name)
       if (pkg.aliases && pkg.aliases.length > 0) {
         const sortedAliases = [...pkg.aliases].sort((a, b) => a.length - b.length)
-        return `launchpad install ${sortedAliases[0]}`
+        const escapedAlias = sortedAliases[0].replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
+        return `launchpad install ${escapedAlias}`
       }
       // If the package name is the same as an alias but with different case, use lowercase
       if (pkg.aliases && pkg.aliases.some(alias => alias.toLowerCase() === packageName.toLowerCase())) {
-        return `launchpad install ${packageName.toLowerCase()}`
+        const escapedName = packageName.toLowerCase().replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
+        return `launchpad install ${escapedName}`
       }
-      // Otherwise use the command as-is
-      return pkg.launchpadInstallCommand
+      // Otherwise use the command as-is but escape template variables
+      return pkg.launchpadInstallCommand.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
     }
   }
 
-  // If there's an installCommand, use it
+  // If there's an installCommand, use it but escape template variables
   if (pkg.installCommand) {
-    return pkg.installCommand
+    return pkg.installCommand.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
   }
 
   // Generate install command using the best available name
@@ -1240,6 +1242,9 @@ function generateInstallCommand(pkg: PkgxPackage): string {
     const sortedAliases = [...pkg.aliases].sort((a, b) => a.length - b.length)
     installName = sortedAliases[0]
   }
+
+  // Escape template variables for VitePress
+  installName = installName.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
 
   return `launchpad install ${installName}`
 }
@@ -1268,15 +1273,28 @@ async function generatePackageCatalog(outputDir: string, packagesDir?: string): 
 
   console.log(`Filtered out ${excludedCount} packages with placeholder data`)
 
+  // Track processed domains to avoid duplicates
+  const processedDomains = new Set<string>()
+
+  // Create a domain-to-package mapping to avoid duplicates
+  const domainToPackage = new Map<string, PkgxPackage>()
+  for (const [_key, pkg] of Object.entries(validPantry)) {
+    const domain = pkg.domain
+    if (!processedDomains.has(domain)) {
+      domainToPackage.set(domain, pkg)
+      processedDomains.add(domain)
+    }
+  }
+
   // Track categorized packages
   const categorizedDomains = new Set<string>()
   Object.values(categories).forEach((domains) => {
     domains.forEach(domain => categorizedDomains.add(domain))
   })
 
-  // Add uncategorized packages to Utilities (only valid packages)
+  // Add uncategorized packages to Utilities (only valid unique domains)
   const uncategorizedPackages: string[] = []
-  Object.keys(validPantry).forEach((domain) => {
+  domainToPackage.forEach((pkg, domain) => {
     if (!categorizedDomains.has(domain)) {
       uncategorizedPackages.push(domain)
     }
@@ -1288,13 +1306,13 @@ async function generatePackageCatalog(outputDir: string, packagesDir?: string): 
 
   let content = `# Package Catalog
 
-This comprehensive catalog lists all ${Object.keys(validPantry).length}+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all ${domainToPackage.size}+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using \`getPackage(name)\` or directly via \`pantry.domain\`.
 
 ## Quick Stats
 
-- **Total Packages**: ${Object.keys(validPantry).length}
+- **Total Packages**: ${domainToPackage.size}
 - **Categories**: ${Object.keys(categories).length}
 - **Last Updated**: ${new Date().toISOString()}
 
@@ -1305,7 +1323,7 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
   // Generate table of contents
   Object.keys(categories).forEach((category) => {
     const slug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-')
-    const count = categories[category].filter(domain => validPantry[domain]).length
+    const count = categories[category].filter(domain => domainToPackage.has(domain)).length
     content += `- [${category}](#${slug}) (${count} packages)\n`
   })
 
@@ -1313,7 +1331,7 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
 
   // Generate sections for each category
   for (const [category, domains] of Object.entries(categories)) {
-    const validDomains = domains.filter(domain => validPantry[domain]).sort()
+    const validDomains = domains.filter(domain => domainToPackage.has(domain)).sort()
 
     if (validDomains.length === 0)
       continue
@@ -1325,15 +1343,15 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
 
     for (const domain of validDomains) {
       try {
-        const pkg = validPantry[domain]
+        const pkg = domainToPackage.get(domain)
         if (!pkg)
           continue
 
-        // Format aliases
-        const aliases = pkg.aliases ? ` (${pkg.aliases.join(', ')})` : ''
+        // Format aliases and escape template variables for VitePress
+        const aliases = pkg.aliases ? ` (${pkg.aliases.map(a => a.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')).join(', ')})` : ''
 
         // Limit programs display and escape template variables for VitePress
-        let programs = pkg.programs.slice(0, 3).map((p: string) => p.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')).join(', ')
+        let programs = pkg.programs.slice(0, 3).map((p: string) => p.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')).join(', ')
         if (pkg.programs.length > 3) {
           programs += `, ... (+${pkg.programs.length - 3})`
         }
@@ -1360,14 +1378,18 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
           const sortedAliases = [...pkg.aliases].sort((a, b) => a.length - b.length)
           installName = sortedAliases[0]
         }
+        // Escape template variables for VitePress using v-pre (including incomplete ones)
+        installName = installName.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
         const installCmd = `\`pkgx ${installName}\``
 
-        // Create safe filename for package link in catalog
-        let safeCatalogFilename = domain
+        // Create safe filename for package link in catalog (must match generatePackagePages logic)
+        // Find the domain variable name by converting domain back to var name
+        const domainVarName = convertDomainToVarName(domain)
+        let safeCatalogFilename = domainVarName
         if (/^\d/.test(safeCatalogFilename)) {
           safeCatalogFilename = `pkg-${safeCatalogFilename}`
         }
-        safeCatalogFilename = safeCatalogFilename.replace(/[^\w.-]/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '')
+        safeCatalogFilename = safeCatalogFilename.replace(/[^\w-]/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '')
 
         content += `| **[${domain}](./packages/${safeCatalogFilename}.md)**${aliases} | ${description} | ${programs} | ${versionInfo} | ${installCmd} |\n`
       }
@@ -1395,9 +1417,9 @@ const nodePackage = pantry.nodejsorg
 const nodeByAlias = getPackage('node')
 
 // Access package properties
-console.log(\`Package: \${nodePackage.name} - \${nodePackage.description}\`)
-console.log(\`Install: \${nodePackage.installCommand}\`)
-console.log(\`Programs: \${nodePackage.programs.join(', ')}\`)
+console.log(\`Package: \$\{nodePackage.name\} - \$\{nodePackage.description\}\`)
+console.log(\`Install: \$\{nodePackage.installCommand\}\`)
+console.log(\`Programs: \$\{nodePackage.programs.join(', ')\}\`)
 \`\`\`
 
 ### Advanced Usage
@@ -1413,11 +1435,11 @@ const databases = [
 
 // Get all available versions
 const nodeVersions = pantry.nodejsorg.versions
-console.log(\`Node.js versions: \${nodeVersions.slice(0, 5).join(', ')}...\`)
+console.log(\`Node.js versions: \$\{nodeVersions.slice(0, 5).join(', ')\}...\`)
 
 // Check dependencies
 const nodeDeps = pantry.nodejsorg.dependencies
-console.log(\`Node.js dependencies: \${nodeDeps.join(', ')}\`)
+console.log(\`Node.js dependencies: \$\{nodeDeps.join(', ')\}\`)
 \`\`\`
 
 ### Installation Examples
@@ -1512,14 +1534,17 @@ async function generatePackagePages(outputDir: string, sourcePackagesDir?: strin
       const domain = pkg.domain || pkg.fullPath || domainVarName
       const description = pkg.description || ''
 
-      let content = `# ${pkg.name || domain}
+      // Escape template variables for VitePress
+      const escapedName = (pkg.name || domain).replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
+
+      let content = `# ${escapedName}
 
 >${description ? ` ${description}` : ''}
 
 ## Package Information
 
 - **Domain**: \`${domain}\`
-- **Name**: \`${pkg.name || domain}\`
+- **Name**: \`${escapedName}\`
 - **Homepage**: ${pkg.homepageUrl || 'Not specified'}
 - **Source**: [View on GitHub](${pkg.packageYmlUrl || `https://github.com/pkgxdev/pantry/tree/main/projects/${domain}/package.yml`})
 
@@ -1539,7 +1564,7 @@ This package provides the following executable programs:
       if (pkg.programs && pkg.programs.length > 0) {
         pkg.programs.forEach((program: string) => {
           // Escape template variables for VitePress
-          const escapedProgram = program.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')
+          const escapedProgram = program.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
           content += `- \`${escapedProgram}\`\n`
         })
       }
@@ -1555,7 +1580,8 @@ This package can also be accessed using these aliases:
 
 `
         pkg.aliases.forEach((alias) => {
-          content += `- \`${alias}\`\n`
+          const escapedAlias = alias.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')
+          content += `- \`${escapedAlias}\`\n`
         })
       }
 
@@ -1585,7 +1611,7 @@ This package can also be accessed using these aliases:
 
 \`\`\`bash
 # Install specific version
-${pkg.pkgxInstallCommand ? pkg.pkgxInstallCommand.replace(`+${domain}`, `+${domain}@${pkg.versions[0]}`) : `sh <(curl https://pkgx.sh) +${domain}@${pkg.versions[0]} -- $SHELL -i`}
+${pkg.pkgxInstallCommand ? pkg.pkgxInstallCommand.replace(`+${domain}`, `+${domain}@${pkg.versions[0]}`).replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>') : `sh <(curl https://pkgx.sh) +${domain}@${pkg.versions[0]} -- $SHELL -i`}
 \`\`\`
 `
       }
@@ -1741,7 +1767,7 @@ ${description
 ${description}
 `
   : ''}
-**Programs**: ${pkg.programs && pkg.programs.length > 0 ? pkg.programs.map((p: string) => p.replace(/\{\{/g, '&lbrace;&lbrace;').replace(/\}\}/g, '&rbrace;&rbrace;')).join(', ') : 'None specified'}
+**Programs**: ${pkg.programs && pkg.programs.length > 0 ? pkg.programs.map((p: string) => p.replace(/\{\{[^}]*\}\}/g, '<span v-pre>$&</span>')).join(', ') : 'None specified'}
 
 **Install**: \`${generateInstallCommand(pkg)}\`
 

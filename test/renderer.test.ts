@@ -67,6 +67,8 @@ describe('Package Renderer', () => {
     homepageUrl: 'https://test.com',
     githubUrl: 'https://github.com/test/package',
     installCommand: 'pkgx test.com',
+    pkgxInstallCommand: 'sh <(curl https://pkgx.sh) test.com -- $SHELL -i',
+    launchpadInstallCommand: 'launchpad install test.com',
     programs: ['test'],
     companions: [],
     dependencies: [],

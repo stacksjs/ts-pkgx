@@ -21,8 +21,8 @@ launchpad install py
 This package provides the following executable programs:
 
 - `python`
-- `python&lbrace;&lbrace; version.major &rbrace;&rbrace;`
-- `python&lbrace;&lbrace; version.marketing &rbrace;&rbrace;`
+- `python<span v-pre>{{ version.major }}</span>`
+- `python<span v-pre>{{ version.marketing }}</span>`
 
 ## Aliases
 

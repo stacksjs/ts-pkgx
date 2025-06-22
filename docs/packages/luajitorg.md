@@ -21,7 +21,7 @@ launchpad install luajit
 This package provides the following executable programs:
 
 - `luajit`
-- `luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;.`
+- `luajit-<span v-pre>{{version.marketing}}</span>.`
 
 ## Available Versions
 

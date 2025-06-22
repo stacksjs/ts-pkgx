@@ -60,7 +60,7 @@ The Go programming language
 
 Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).
 
-**Programs**: ghc, ghc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghc-&lbrace;&lbrace;version&rbrace;&rbrace;, ghc-pkg, ghc-pkg-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghc-pkg-&lbrace;&lbrace;version&rbrace;&rbrace;, ghci, ghci-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghci-&lbrace;&lbrace;version&rbrace;&rbrace;, ghcup, haddock, haddock-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, haddock-&lbrace;&lbrace;version&rbrace;&rbrace;, hp2ps, hp2ps-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, hp2ps-&lbrace;&lbrace;version&rbrace;&rbrace;, hpc, hpc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, hpc-&lbrace;&lbrace;version&rbrace;&rbrace;, hsc2hs, hsc2hs-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, hsc2hs-&lbrace;&lbrace;version&rbrace;&rbrace;, runghc, runghc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, runghc-&lbrace;&lbrace;version&rbrace;&rbrace;, runhaskell, runhaskell-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, runhaskell-&lbrace;&lbrace;version&rbrace;&rbrace;
+**Programs**: ghc, ghc-<span v-pre>{{version.marketing}}</span>, ghc-<span v-pre>{{version}}</span>, ghc-pkg, ghc-pkg-<span v-pre>{{version.marketing}}</span>, ghc-pkg-<span v-pre>{{version}}</span>, ghci, ghci-<span v-pre>{{version.marketing}}</span>, ghci-<span v-pre>{{version}}</span>, ghcup, haddock, haddock-<span v-pre>{{version.marketing}}</span>, haddock-<span v-pre>{{version}}</span>, hp2ps, hp2ps-<span v-pre>{{version.marketing}}</span>, hp2ps-<span v-pre>{{version}}</span>, hpc, hpc-<span v-pre>{{version.marketing}}</span>, hpc-<span v-pre>{{version}}</span>, hsc2hs, hsc2hs-<span v-pre>{{version.marketing}}</span>, hsc2hs-<span v-pre>{{version}}</span>, runghc, runghc-<span v-pre>{{version.marketing}}</span>, runghc-<span v-pre>{{version}}</span>, runhaskell, runhaskell-<span v-pre>{{version.marketing}}</span>, runhaskell-<span v-pre>{{version}}</span>
 
 **Install**: `launchpad install haskell.org`
 
@@ -130,7 +130,7 @@ General-purpose scripting language
 
 The Python programming language
 
-**Programs**: python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace;
+**Programs**: python, python<span v-pre>{{ version.major }}</span>, python<span v-pre>{{ version.marketing }}</span>
 
 **Install**: `launchpad install py`
 
@@ -140,7 +140,7 @@ The Python programming language
 
 The Python programming language
 
-**Programs**: python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace;
+**Programs**: python, python<span v-pre>{{ version.major }}</span>, python<span v-pre>{{ version.marketing }}</span>
 
 **Install**: `launchpad install py`
 

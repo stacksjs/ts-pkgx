@@ -21,33 +21,33 @@ launchpad install haskell.org
 This package provides the following executable programs:
 
 - `ghc`
-- `ghc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;`
-- `ghc-&lbrace;&lbrace;version&rbrace;&rbrace;`
+- `ghc-<span v-pre>{{version.marketing}}</span>`
+- `ghc-<span v-pre>{{version}}</span>`
 - `ghc-pkg`
-- `ghc-pkg-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;`
-- `ghc-pkg-&lbrace;&lbrace;version&rbrace;&rbrace;`
+- `ghc-pkg-<span v-pre>{{version.marketing}}</span>`
+- `ghc-pkg-<span v-pre>{{version}}</span>`
 - `ghci`
-- `ghci-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;`
-- `ghci-&lbrace;&lbrace;version&rbrace;&rbrace;`
+- `ghci-<span v-pre>{{version.marketing}}</span>`
+- `ghci-<span v-pre>{{version}}</span>`
 - `ghcup`
 - `haddock`
-- `haddock-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;`
-- `haddock-&lbrace;&lbrace;version&rbrace;&rbrace;`
+- `haddock-<span v-pre>{{version.marketing}}</span>`
+- `haddock-<span v-pre>{{version}}</span>`
 - `hp2ps`
-- `hp2ps-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;`
-- `hp2ps-&lbrace;&lbrace;version&rbrace;&rbrace;`
+- `hp2ps-<span v-pre>{{version.marketing}}</span>`
+- `hp2ps-<span v-pre>{{version}}</span>`
 - `hpc`
-- `hpc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;`
-- `hpc-&lbrace;&lbrace;version&rbrace;&rbrace;`
+- `hpc-<span v-pre>{{version.marketing}}</span>`
+- `hpc-<span v-pre>{{version}}</span>`
 - `hsc2hs`
-- `hsc2hs-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;`
-- `hsc2hs-&lbrace;&lbrace;version&rbrace;&rbrace;`
+- `hsc2hs-<span v-pre>{{version.marketing}}</span>`
+- `hsc2hs-<span v-pre>{{version}}</span>`
 - `runghc`
-- `runghc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;`
-- `runghc-&lbrace;&lbrace;version&rbrace;&rbrace;`
+- `runghc-<span v-pre>{{version.marketing}}</span>`
+- `runghc-<span v-pre>{{version}}</span>`
 - `runhaskell`
-- `runhaskell-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;`
-- `runhaskell-&lbrace;&lbrace;version&rbrace;&rbrace;`
+- `runhaskell-<span v-pre>{{version.marketing}}</span>`
+- `runhaskell-<span v-pre>{{version}}</span>`
 
 ## Available Versions
 
