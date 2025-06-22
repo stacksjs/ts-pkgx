@@ -1,11 +1,11 @@
-# mpg123.de
+# mpg123
 
-> Package from pantry: mpg123.de
+> MP3 player for Linux and UNIX
 
 ## Package Information
 
 - **Domain**: `mpg123.de`
-- **Name**: `mpg123.de`
+- **Name**: `mpg123`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mpg123.de/package.yml)
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install mpg123.de
+launchpad install mpg123
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mpg123`
+
+## Available Versions
+
+<details>
+<summary>Show all 13 versions</summary>
+
+- `1.33.0`, `1.32.10`, `1.32.9`, `1.32.8`, `1.32.7`
+- `1.32.6`, `1.32.5`, `1.32.4`, `1.32.3`, `1.32.2`
+- `1.32.1`, `1.32.0`, `1.31.2`
+
+</details>
+
+**Latest Version**: `1.33.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) mpg123 -- $SHELL -i
+```
 
 ## Usage Examples
 

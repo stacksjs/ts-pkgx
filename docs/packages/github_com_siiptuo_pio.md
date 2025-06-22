@@ -1,6 +1,6 @@
 # pio
 
-> Package from pantry: github.com/siiptuo/pio
+> Your Gateway to Embedded Software Development Excellence :alien:
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/siiptuo/pio
+launchpad install pio
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pio`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.4.0`
+
+</details>
+
+**Latest Version**: `0.4.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) pio -- $SHELL -i
+```
 
 ## Usage Examples
 

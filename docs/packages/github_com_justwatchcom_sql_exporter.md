@@ -1,11 +1,11 @@
-# sql_exporter
+# justwatchcom/sql_exporter
 
-> Package from pantry: github.com/justwatchcom/sql_exporter
+> Database agnostic SQL exporter for Prometheus
 
 ## Package Information
 
 - **Domain**: `github.com/justwatchcom/sql_exporter`
-- **Name**: `sql_exporter`
+- **Name**: `justwatchcom/sql_exporter`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/justwatchcom/sql_exporter/package.yml)
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/justwatchcom/sql_exporter
+launchpad install sql_exporter
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `sql_exporter`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `sql_exporter`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.5.0`
+
+</details>
+
+**Latest Version**: `0.5.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) sql_exporter -- $SHELL -i
+```
 
 ## Usage Examples
 

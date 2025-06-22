@@ -1,7 +1,10 @@
 /**
- * **mupdf.com** - Package from pantry: mupdf.com
+ * **mupdf.com** - Lightweight PDF and XPS viewer
  *
  * @domain `mupdf.com`
+ * @programs `mupdf-gl`, `muraster`, `mutool`
+ * @version `1.26.2` (28 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install mupdf.com`
  * @dependencies `zlib.net^1`, `openssl.org^1.1`, `info-zip.org/unzip^6`, ... (+17 more) (includes OS-specific dependencies with `os:package` format)
@@ -12,7 +15,9 @@
  *
  * const pkg = pantry.mupdfcom
  * console.log(pkg.name)        // "mupdf.com"
- * console.log(pkg.description) // "Package from pantry: mupdf.com"
+ * console.log(pkg.description) // "Lightweight PDF and XPS viewer"
+ * console.log(pkg.programs)    // ["mupdf-gl", "muraster", ...]
+ * console.log(pkg.versions[0]) // "1.26.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mupdf-com.md
@@ -30,15 +35,24 @@ export const mupdfcomPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: mupdf.com' as const,
+  description: 'Lightweight PDF and XPS viewer' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mupdf.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/ArtifexSoftware/mupdf' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install mupdf.com' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mupdf.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mupdf.com' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'mupdf-gl',
+    'muraster',
+    'mutool',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -67,10 +81,43 @@ export const mupdfcomPackage = {
     'linux:gnome.org/glib^2',
     'linux:x.org/xtrans^1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mupdf.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.26.2',
+    '1.26.1',
+    '1.26.0',
+    '1.25.6',
+    '1.25.5',
+    '1.25.4',
+    '1.25.3',
+    '1.25.2',
+    '1.25.1',
+    '1.25.0',
+    '1.24.11',
+    '1.24.10',
+    '1.24.9',
+    '1.24.8',
+    '1.24.7',
+    '1.24.6',
+    '1.24.5',
+    '1.24.4',
+    '1.24.3',
+    '1.24.2',
+    '1.24.1',
+    '1.24.0',
+    '1.23.11',
+    '1.23.10',
+    '1.23.9',
+    '1.23.8',
+    '1.23.7',
+    '1.23.6',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mupdf.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mupdf.com' as const,
 }
 
 export type MupdfcomPackage = typeof mupdfcomPackage

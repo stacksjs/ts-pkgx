@@ -1,11 +1,11 @@
-# qpdf.sourceforge.io
+# qpdf
 
-> Package from pantry: qpdf.sourceforge.io
+> qpdf: A content-preserving PDF document transformer
 
 ## Package Information
 
 - **Domain**: `qpdf.sourceforge.io`
-- **Name**: `qpdf.sourceforge.io`
+- **Name**: `qpdf`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/qpdf.sourceforge.io/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install qpdf.sourceforge.io
+launchpad install qpdf
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `qpdf`
+
+## Available Versions
+
+<details>
+<summary>Show all 10 versions</summary>
+
+- `12.2.0`, `12.1.0`, `12.0.0`, `11.10.1`, `11.10.0`
+- `11.9.1`, `11.9.0`, `11.8.0`, `11.7.0`, `11.6.4`
+
+</details>
+
+**Latest Version**: `12.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) qpdf -- $SHELL -i
+```
 
 ## Dependencies
 

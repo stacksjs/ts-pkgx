@@ -1,6 +1,6 @@
 # yubikey-manager
 
-> Package from pantry: developers.yubico.com/yubikey-manager
+> Python library and command line tool for configuring any YubiKey over all USB interfaces.
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with launchpad
-launchpad install developers.yubico.com/yubikey-manager
+launchpad install ykman
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ykman`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `ykman`
+
+## Available Versions
+
+<details>
+<summary>Show all 10 versions</summary>
+
+- `5.7.2`, `5.7.1`, `5.7.0`, `5.6.1`, `5.6.0`
+- `5.5.1`, `5.5.0`, `5.4.0`, `5.3.0`, `5.2.1`
+
+</details>
+
+**Latest Version**: `5.7.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) ykman -- $SHELL -i
+```
 
 ## Dependencies
 

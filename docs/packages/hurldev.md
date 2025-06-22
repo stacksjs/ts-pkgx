@@ -1,11 +1,11 @@
-# hurl.dev
+# hurl
 
-> Package from pantry: hurl.dev
+> Run and Test HTTP Requests with plain text and curl
 
 ## Package Information
 
 - **Domain**: `hurl.dev`
-- **Name**: `hurl.dev`
+- **Name**: `hurl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hurl.dev/package.yml)
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install hurl.dev
+launchpad install hurl
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `hurl`
+- `hurlfmt`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `6.1.1`, `6.1.0`, `6.0.0`, `5.0.1`, `5.0.0`
+- `4.3.0`, `4.2.0`, `4.1.0`, `4.0.0`
+
+</details>
+
+**Latest Version**: `6.1.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +hurl.dev@6.1.1 -- $SHELL -i
+```
 
 ## Dependencies
 

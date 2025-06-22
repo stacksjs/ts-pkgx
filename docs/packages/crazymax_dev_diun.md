@@ -1,6 +1,6 @@
 # diun
 
-> Package from pantry: crazymax.dev/diun
+> Receive notifications when an image is updated on a Docker registry
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crazymax.dev/diun
+launchpad install diun
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `diun`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `4.29.0`, `4.28.0`
+
+</details>
+
+**Latest Version**: `4.29.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) diun -- $SHELL -i
+```
 
 ## Usage Examples
 

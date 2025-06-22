@@ -1,6 +1,6 @@
 # tcsh.org
 
-> Package from pantry: tcsh.org
+> Enhanced, fully compatible version of the Berkeley C shell
 
 ## Package Information
 
@@ -20,7 +20,26 @@ launchpad install tcsh.org
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `csh`
+- `tcsh`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `6.24.15`
+
+</details>
+
+**Latest Version**: `6.24.15`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +tcsh.org@6.24.15 -- $SHELL -i
+```
 
 ## Dependencies
 

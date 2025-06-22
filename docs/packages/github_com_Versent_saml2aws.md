@@ -1,6 +1,6 @@
 # saml2aws
 
-> Package from pantry: github.com/Versent/saml2aws
+> CLI tool which enables you to login and retrieve AWS temporary credentials using a SAML IDP
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/Versent/saml2aws
+launchpad install saml2aws
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `saml2aws`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `2.36.19`, `2.36.18`, `2.36.17`, `2.36.16`, `2.36.15`
+- `2.36.14`, `2.36.13`
+
+</details>
+
+**Latest Version**: `2.36.19`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) saml2aws -- $SHELL -i
+```
 
 ## Usage Examples
 

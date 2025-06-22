@@ -1,6 +1,6 @@
 # rhash.sourceforge.net
 
-> Package from pantry: rhash.sourceforge.net
+> Utility for computing and verifying hash sums of files
 
 ## Package Information
 
@@ -20,7 +20,36 @@ launchpad install rhash.sourceforge.net
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `whirlpool-hash`
+- `tiger-hash`
+- `tth-hash`
+- `rhash`
+- `sfv-hash`
+- `magnet-link`
+- `has160-hash`
+- `gost12-256-hash`
+- `gost12-512-hash`
+- `edonr512-hash`
+- `edonr256-hash`
+- `ed2k-link`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.4.6`, `1.4.5`, `1.4.4`, `1.4.3`
+
+</details>
+
+**Latest Version**: `1.4.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +rhash.sourceforge.net@1.4.6 -- $SHELL -i
+```
 
 ## Usage Examples
 

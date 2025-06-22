@@ -1,6 +1,6 @@
 # jadx
 
-> Package from pantry: github.com/skylot/jadx
+> Dex to Java decompiler
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/skylot/jadx
+launchpad install jadx
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `jadx`
+- `jadx-gui`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.5.2`, `1.5.1`, `1.5.0`, `1.4.7`
+
+</details>
+
+**Latest Version**: `1.5.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/skylot/jadx@1.5.2 -- $SHELL -i
+```
 
 ## Dependencies
 

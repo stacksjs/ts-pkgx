@@ -1,11 +1,11 @@
-# mergestat-lite
+# mergestat
 
-> Package from pantry: mergestat.com/mergestat-lite
+> Query git repositories with SQL. Generate reports, perform status checks, analyze codebases. 🔍 📊
 
 ## Package Information
 
 - **Domain**: `mergestat.com/mergestat-lite`
-- **Name**: `mergestat-lite`
+- **Name**: `mergestat`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mergestat.com/mergestat-lite/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install mergestat.com/mergestat-lite
+launchpad install mergestat
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mergestat`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.6.2`, `0.6.1`
+
+</details>
+
+**Latest Version**: `0.6.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) mergestat -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # gotestsum
 
-> Package from pantry: github.com/gotestyourself/gotestsum
+> 'go test' runner with output optimized for humans, JUnit XML for CI integration, and a summary of the test results.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/gotestyourself/gotestsum
+launchpad install gotestsum
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gotestsum`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `1.12.3`, `1.12.2`, `1.12.1`, `1.12.0`, `1.11.0`
+
+</details>
+
+**Latest Version**: `1.12.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) gotestsum -- $SHELL -i
+```
 
 ## Usage Examples
 

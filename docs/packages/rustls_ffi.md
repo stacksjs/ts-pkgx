@@ -1,11 +1,11 @@
-# rustls-ffi
+# crates.io/rustls-ffi
 
-> Package from pantry: crates.io/rustls-ffi
+> Use Rustls from any language
 
 ## Package Information
 
 - **Domain**: `crates.io/rustls-ffi`
-- **Name**: `rustls-ffi`
+- **Name**: `crates.io/rustls-ffi`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rustls-ffi/package.yml)
 
@@ -21,6 +21,31 @@ launchpad install crates.io/rustls-ffi
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 10 versions</summary>
+
+- `0.15.0`, `0.14.1`, `0.14.0`, `0.13.0`, `0.12.2`
+- `0.12.1`, `0.12.0`, `0.11.0`, `0.10.0`, `0.9.1`
+
+</details>
+
+**Latest Version**: `0.15.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +crates.io/rustls-ffi@0.15.0 -- $SHELL -i
+```
+
+## Related Packages
+
+These packages work well with crates.io/rustls-ffi:
+
+- `curl.se/ca-certs`
 
 ## Usage Examples
 

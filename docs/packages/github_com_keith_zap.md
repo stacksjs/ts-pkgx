@@ -1,6 +1,6 @@
 # zap
 
-> Package from pantry: github.com/keith/zap
+> A CLI for cleaning up after .apps
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/keith/zap
+launchpad install zap
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `zap`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.2.0`, `1.1.0`
+
+</details>
+
+**Latest Version**: `1.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) zap -- $SHELL -i
+```
 
 ## Usage Examples
 

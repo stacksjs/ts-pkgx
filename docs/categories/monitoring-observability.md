@@ -6,13 +6,13 @@ Packages related to monitoring & observability.
 
 ## Packages
 
-### [sentry.io](../packages/sentryio.md)
+### [sentry.io](../packages/sentryio.md) (sentry-cli)
 
-Package from pantry: sentry.io
+Command-line utility to interact with Sentry
 
-**Programs**: None specified
+**Programs**: sentry-cli
 
-**Install**: `launchpad install sentry.io`
+**Install**: `launchpad install sentry-cli`
 
 ---
 

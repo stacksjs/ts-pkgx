@@ -1,6 +1,6 @@
 # factotum
 
-> Package from pantry: github.com/snowplow/factotum
+> A system to programmatically run data pipelines
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/snowplow/factotum
+launchpad install factotum
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `factotum`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.6.1`, `0.6.0`
+
+</details>
+
+**Latest Version**: `0.6.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) factotum -- $SHELL -i
+```
 
 ## Dependencies
 

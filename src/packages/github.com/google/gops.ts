@@ -1,24 +1,34 @@
 /**
- * **gops** - Package from pantry: github.com/google/gops
+ * **gops** - A tool to list and diagnose Go processes currently running on your system
  *
  * @domain `github.com/google/gops`
+ * @programs `gops`
+ * @version `0.3.28` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/google/gops`
+ * @install `launchpad install gops`
+ * @name `gops`
  * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomgooglegops
+ * // Access the package
+ * const pkg = pantry.gops
+ * // Or access via domain
+ * const samePkg = pantry.githubcomgooglegops
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "gops"
- * console.log(pkg.description) // "Package from pantry: github.com/google/gops"
+ * console.log(pkg.description) // "A tool to list and diagnose Go processes curren..."
+ * console.log(pkg.programs)    // ["gops"]
+ * console.log(pkg.versions[0]) // "0.3.28" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/google/gops.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgooglegopsPackage = {
+export const gopsPackage = {
   /**
    * The display name of this package.
    */
@@ -30,15 +40,22 @@ export const githubcomgooglegopsPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/google/gops' as const,
+  description: 'A tool to list and diagnose Go processes currently running on your system' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/google/gops/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/google/gops' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/google/gops -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/google/gops' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install gops' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'gops',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,21 @@ export const githubcomgooglegopsPackage = {
   dependencies: [
     'go.dev',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/google/gops/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.3.28',
+    '0.3.27',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gops -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gops' as const,
 }
 
-export type GithubcomgooglegopsPackage = typeof githubcomgooglegopsPackage
+export type GopsPackage = typeof gopsPackage

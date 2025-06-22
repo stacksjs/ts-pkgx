@@ -1,6 +1,6 @@
 # gitopolis
 
-> Package from pantry: crates.io/gitopolis
+> Manage multiple git repositories
 
 ## Package Information
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/gitopolis
+launchpad install gitopolis
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gitopolis`
+
+## Available Versions
+
+<details>
+<summary>Show all 17 versions</summary>
+
+- `1.5.14`, `1.5.13`, `1.5.11`, `1.5.8`, `1.5.7`
+- `1.5.4`, `1.5.3`, `1.5.2`, `1.5.1`, `1.5.0`
+- `1.4.2`, `1.4.1`, `1.4.0`, `1.3.3`, `1.3.2`
+- `1.3.1`, `1.3.0`
+
+</details>
+
+**Latest Version**: `1.5.14`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) gitopolis -- $SHELL -i
+```
 
 ## Dependencies
 

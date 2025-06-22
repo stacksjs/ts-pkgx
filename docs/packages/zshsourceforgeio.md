@@ -1,11 +1,11 @@
-# zsh.sourceforge.io
+# zsh
 
-> Package from pantry: zsh.sourceforge.io
+> UNIX shell (command interpreter)
 
 ## Package Information
 
 - **Domain**: `zsh.sourceforge.io`
-- **Name**: `zsh.sourceforge.io`
+- **Name**: `zsh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/zsh.sourceforge.io/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install zsh.sourceforge.io
+launchpad install zsh
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `zsh`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `5.9.0`
+
+</details>
+
+**Latest Version**: `5.9.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) zsh -- $SHELL -i
+```
 
 ## Dependencies
 

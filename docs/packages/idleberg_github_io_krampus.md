@@ -1,6 +1,6 @@
 # krampus
 
-> Package from pantry: idleberg.github.io/krampus
+> Command-line tool to kill one or more processes by port number
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install idleberg.github.io/krampus
+launchpad install krampus
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `krampus`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.2.1`, `0.2.0`
+
+</details>
+
+**Latest Version**: `0.2.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) krampus -- $SHELL -i
+```
 
 ## Usage Examples
 

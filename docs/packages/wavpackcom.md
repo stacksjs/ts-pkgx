@@ -1,6 +1,6 @@
 # wavpack.com
 
-> Package from pantry: wavpack.com
+> WavPack encode/decode library, command-line programs, and several plugins
 
 ## Package Information
 
@@ -20,7 +20,28 @@ launchpad install wavpack.com
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `wavpack`
+- `wvunpack`
+- `wvtag`
+- `wvgain`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `5.8.1`, `5.8.0`, `5.7.0`
+
+</details>
+
+**Latest Version**: `5.8.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +wavpack.com@5.8.1 -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # fast_float
 
-> Package from pantry: github.com/fastfloat/fast_float
+> Fast and exact implementation of the C++ from_chars functions for number types: 4x to 10x faster than strtod, part of GCC 12, Chromium, Redis and WebKit/Safari
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/fastfloat/fast_float
+launchpad install fast_float
 ```
 
 ## Programs
@@ -21,6 +21,25 @@ launchpad install github.com/fastfloat/fast_float
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `8.0.2`, `8.0.1`, `8.0.0`, `7.0.0`, `6.1.6`
+- `6.1.5`, `6.1.4`
+
+</details>
+
+**Latest Version**: `8.0.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/fastfloat/fast_float@8.0.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # flac
 
-> Package from pantry: xiph.org/flac
+> Free Lossless Audio Codec
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install xiph.org/flac
+launchpad install flac
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `flac`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.5.0`, `1.4.3`, `1.4.2`
+
+</details>
+
+**Latest Version**: `1.5.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) flac -- $SHELL -i
+```
 
 ## Dependencies
 

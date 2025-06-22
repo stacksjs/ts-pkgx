@@ -1,6 +1,6 @@
 # checkmake
 
-> Package from pantry: github.com/mrtazz/checkmake
+> experimental linter/analyzer for Makefiles
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/mrtazz/checkmake
+launchpad install checkmake
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `checkmake`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.2.2`
+
+</details>
+
+**Latest Version**: `0.2.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) checkmake -- $SHELL -i
+```
 
 ## Usage Examples
 

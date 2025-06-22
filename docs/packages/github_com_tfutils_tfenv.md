@@ -1,6 +1,6 @@
 # tfenv
 
-> Package from pantry: github.com/tfutils/tfenv
+> Terraform version manager
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/tfutils/tfenv
+launchpad install tfenv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `tfenv`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `3.0.0`
+
+</details>
+
+**Latest Version**: `3.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) tfenv -- $SHELL -i
+```
 
 ## Dependencies
 

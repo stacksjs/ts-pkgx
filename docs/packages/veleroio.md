@@ -1,11 +1,11 @@
-# velero.io
+# velero
 
-> Package from pantry: velero.io
+> Backup and migrate Kubernetes applications and their persistent volumes
 
 ## Package Information
 
 - **Domain**: `velero.io`
-- **Name**: `velero.io`
+- **Name**: `velero`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/velero.io/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install velero.io
+launchpad install velero
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `velero`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.16.1`
+
+</details>
+
+**Latest Version**: `1.16.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) velero -- $SHELL -i
+```
 
 ## Usage Examples
 

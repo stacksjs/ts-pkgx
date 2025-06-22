@@ -1,6 +1,6 @@
 # lzip
 
-> Package from pantry: nongnu.org/lzip
+> LZMA-based compression program similar to gzip or bzip2
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install nongnu.org/lzip
+launchpad install lzip
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `lzip`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.23.0`
+
+</details>
+
+**Latest Version**: `1.23.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) lzip -- $SHELL -i
+```
 
 ## Usage Examples
 

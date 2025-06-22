@@ -1,6 +1,6 @@
 # fsrx
 
-> Package from pantry: crates.io/fsrx
+> 📚 flow state reading in the terminal
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/fsrx
+launchpad install fsrx
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `fsrx`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.0.2`
+
+</details>
+
+**Latest Version**: `1.0.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) fsrx -- $SHELL -i
+```
 
 ## Usage Examples
 

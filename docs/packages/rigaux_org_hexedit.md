@@ -1,6 +1,6 @@
 # hexedit
 
-> Package from pantry: rigaux.org/hexedit
+> View and edit files in hexadecimal or in ASCII
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install rigaux.org/hexedit
+launchpad install hexedit
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `hexedit`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.6.0`
+
+</details>
+
+**Latest Version**: `1.6.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) hexedit -- $SHELL -i
+```
 
 ## Dependencies
 

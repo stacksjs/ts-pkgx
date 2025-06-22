@@ -1,6 +1,6 @@
 # pkgm
 
-> Package from pantry: pkgx.sh/pkgm
+> Install `pkgx` packages to `/usr/local`
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install pkgx.sh/pkgm
+launchpad install pkgm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pkgm`
+
+## Available Versions
+
+<details>
+<summary>Show all 10 versions</summary>
+
+- `0.11.1`, `0.11.0`, `0.10.1`, `0.10.0`, `0.9.2`
+- `0.9.1`, `0.9.0`, `0.8.0`, `0.7.2`, `0.7.1`
+
+</details>
+
+**Latest Version**: `0.11.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) pkgm -- $SHELL -i
+```
 
 ## Dependencies
 

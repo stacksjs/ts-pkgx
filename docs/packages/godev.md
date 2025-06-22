@@ -1,6 +1,6 @@
 # go.dev
 
-> Package from pantry: go.dev
+> The Go programming language
 
 ## Package Information
 
@@ -13,14 +13,52 @@
 
 ```bash
 # Install with launchpad
-launchpad install go.dev
+launchpad install go
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `go`
+- `gofmt`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `go`
+
+## Available Versions
+
+<details>
+<summary>Show all 68 versions</summary>
+
+- `1.24.4`, `1.24.3`, `1.24.2`, `1.24.1`, `1.24.0`
+- `1.23.10`, `1.23.9`, `1.23.8`, `1.23.7`, `1.23.6`
+- `1.23.5`, `1.23.4`, `1.23.3`, `1.23.2`, `1.23.1`
+- `1.23.0`, `1.22.12`, `1.22.11`, `1.22.10`, `1.22.9`
+- `1.22.8`, `1.22.7`, `1.22.6`, `1.22.5`, `1.22.4`
+- `1.22.3`, `1.22.2`, `1.22.1`, `1.22.0`, `1.21.13`
+- `1.21.12`, `1.21.11`, `1.21.10`, `1.21.8`, `1.21.7`
+- `1.21.6`, `1.21.5`, `1.21.4`, `1.21.3`, `1.21.2`
+- `1.21.1`, `1.21.0`, `1.20.14`, `1.20.13`, `1.20.12`
+- `1.20.11`, `1.20.10`, `1.20.9`, `1.20.8`, `1.20.7`
+- `1.20.6`, `1.20.5`, `1.20.4`, `1.20.3`, `1.20.2`
+- `1.20.1`, `1.19.12`, `1.19.11`, `1.19.10`, `1.19.9`
+- `1.19.8`, `1.19.5`, `1.19.4`, `1.19.3`, `1.19.2`
+- `1.18.10`, `1.17.13`, `1.16.15`
+
+</details>
+
+**Latest Version**: `1.24.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +go.dev@1.24.4 -- $SHELL -i
+```
 
 ## Dependencies
 

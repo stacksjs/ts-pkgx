@@ -1,11 +1,11 @@
-# valkey.io
+# valkey
 
-> Package from pantry: valkey.io
+> A flexible distributed key-value datastore that is optimized for caching and other realtime workloads.
 
 ## Package Information
 
 - **Domain**: `valkey.io`
-- **Name**: `valkey.io`
+- **Name**: `valkey`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/valkey.io/package.yml)
 
@@ -13,14 +13,36 @@
 
 ```bash
 # Install with launchpad
-launchpad install valkey.io
+launchpad install valkey
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `valkey-server`
+- `valkey-cli`
+- `valkey-benchmark`
+
+## Available Versions
+
+<details>
+<summary>Show all 12 versions</summary>
+
+- `8.1.2`, `8.1.1`, `8.1.0`, `8.0.3`, `8.0.2`
+- `8.0.1`, `8.0.0`, `7.2.9`, `7.2.8`, `7.2.7`
+- `7.2.6`, `7.2.5`
+
+</details>
+
+**Latest Version**: `8.1.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +valkey.io@8.1.2 -- $SHELL -i
+```
 
 ## Dependencies
 

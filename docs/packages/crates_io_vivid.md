@@ -1,6 +1,6 @@
 # vivid
 
-> Package from pantry: crates.io/vivid
+> Generator for LS_COLORS with support for multiple color themes
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/vivid
+launchpad install vivid
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `vivid`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.10.1`, `0.10.0`, `0.9.0`
+
+</details>
+
+**Latest Version**: `0.10.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) vivid -- $SHELL -i
+```
 
 ## Dependencies
 

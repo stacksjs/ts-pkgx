@@ -6,33 +6,33 @@ Packages related to development tools.
 
 ## Packages
 
-### [neovim.io](../packages/neovimio.md)
+### [neovim.io](../packages/neovimio.md) (nvim)
 
-Package from pantry: neovim.io
+Ambitious Vim-fork focused on extensibility and agility
 
-**Programs**: None specified
+**Programs**: nvim
 
-**Install**: `launchpad install neovim.io`
-
----
-
-### [prettier.io](../packages/prettierio.md)
-
-Package from pantry: prettier.io
-
-**Programs**: None specified
-
-**Install**: `launchpad install prettier.io`
+**Install**: `launchpad install nvim`
 
 ---
 
-### [vim.org](../packages/vimorg.md)
+### [prettier.io](../packages/prettierio.md) (prettier)
 
-Package from pantry: vim.org
+Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 
-**Programs**: None specified
+**Programs**: prettier
 
-**Install**: `launchpad install vim.org`
+**Install**: `launchpad install prettier`
+
+---
+
+### [vim.org](../packages/vimorg.md) (vim, vi)
+
+The official Vim repository
+
+**Programs**: vim, vi
+
+**Install**: `launchpad install vi`
 
 ---
 

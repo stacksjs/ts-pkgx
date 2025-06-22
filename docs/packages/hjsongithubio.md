@@ -1,11 +1,11 @@
-# hjson.github.io
+# hjson
 
-> Package from pantry: hjson.github.io
+> Hjson for Rust
 
 ## Package Information
 
 - **Domain**: `hjson.github.io`
-- **Name**: `hjson.github.io`
+- **Name**: `hjson`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hjson.github.io/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install hjson.github.io
+launchpad install hjson
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `hjson`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.1.0`, `1.0.0`
+
+</details>
+
+**Latest Version**: `1.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) hjson -- $SHELL -i
+```
 
 ## Usage Examples
 

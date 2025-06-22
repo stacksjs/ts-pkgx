@@ -1,6 +1,6 @@
 # kerberos.org
 
-> Package from pantry: kerberos.org
+> mirror of MIT krb5 repository
 
 ## Package Information
 
@@ -20,7 +20,52 @@ launchpad install kerberos.org
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `compile_et`
+- `gss-client`
+- `k5srvutil`
+- `kadmin`
+- `kdestroy`
+- `kinit`
+- `klist`
+- `kpasswd`
+- `krb5-config`
+- `kswitch`
+- `ktutil`
+- `kvno`
+- `sclient`
+- `sim_client`
+- `uuclient`
+- `gss-server`
+- `kadmin.local`
+- `kadmind`
+- `kdb5_util`
+- `kprop`
+- `kpropd`
+- `kproplog`
+- `krb5-send-pr`
+- `krb5kdc`
+- `sim_server`
+- `sserver`
+- `uuserver`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `1.21.3`, `1.21.2`, `1.21.1`, `1.21.0`, `1.20.2`
+- `1.20.1`
+
+</details>
+
+**Latest Version**: `1.21.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +kerberos.org@1.21.3 -- $SHELL -i
+```
 
 ## Dependencies
 

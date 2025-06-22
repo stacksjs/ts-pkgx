@@ -1,6 +1,6 @@
 # pueue
 
-> Package from pantry: crates.io/pueue
+> Command-line tool for managing long-running shell commands
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/pueue
+launchpad install pueue
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pueue`
+- `pueued`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `4.0.0`, `3.4.1`, `3.4.0`, `3.3.3`, `3.3.2`
+
+</details>
+
+**Latest Version**: `4.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +crates.io/pueue@4.0.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

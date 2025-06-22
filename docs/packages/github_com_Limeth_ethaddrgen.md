@@ -1,6 +1,6 @@
 # ethaddrgen
 
-> Package from pantry: github.com/Limeth/ethaddrgen
+> Custom Ethereum vanity address generator made in Rust
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/Limeth/ethaddrgen
+launchpad install ethaddrgen
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ethaddrgen`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.0.7`
+
+</details>
+
+**Latest Version**: `1.0.7`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) ethaddrgen -- $SHELL -i
+```
 
 ## Dependencies
 

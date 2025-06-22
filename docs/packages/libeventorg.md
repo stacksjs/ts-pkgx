@@ -1,6 +1,6 @@
 # libevent.org
 
-> Package from pantry: libevent.org
+> Event notification library
 
 ## Package Information
 
@@ -21,6 +21,24 @@ launchpad install libevent.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.1.12`
+
+</details>
+
+**Latest Version**: `2.1.12`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libevent.org@2.1.12 -- $SHELL -i
+```
 
 ## Dependencies
 

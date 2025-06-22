@@ -1,6 +1,6 @@
 # emacs
 
-> Package from pantry: gnu.org/emacs
+> GNU Emacs text editor
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install gnu.org/emacs
+launchpad install emacs
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `emacs`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `30.1.0`, `29.4.0`, `29.3.0`, `29.2.0`, `29.1.0`
+- `28.2.0`
+
+</details>
+
+**Latest Version**: `30.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) emacs -- $SHELL -i
+```
 
 ## Dependencies
 

@@ -1,7 +1,10 @@
 /**
- * **cscope.sourceforge.io** - Package from pantry: cscope.sourceforge.io
+ * **cscope.sourceforge.io** - Tool for browsing source code
  *
  * @domain `cscope.sourceforge.io`
+ * @programs `cscope`, `ocs`
+ * @version `15.9.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install cscope.sourceforge.io`
  * @dependencies `invisible-island.net/ncurses`
@@ -12,7 +15,9 @@
  *
  * const pkg = pantry.cscopesourceforgeio
  * console.log(pkg.name)        // "cscope.sourceforge.io"
- * console.log(pkg.description) // "Package from pantry: cscope.sourceforge.io"
+ * console.log(pkg.description) // "Tool for browsing source code"
+ * console.log(pkg.programs)    // ["cscope", "ocs"]
+ * console.log(pkg.versions[0]) // "15.9.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cscope-sourceforge-io.md
@@ -30,15 +35,23 @@ export const cscopesourceforgeioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: cscope.sourceforge.io' as const,
+  description: 'Tool for browsing source code' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cscope.sourceforge.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install cscope.sourceforge.io' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cscope.sourceforge.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cscope.sourceforge.io' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'cscope',
+    'ocs',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +60,16 @@ export const cscopesourceforgeioPackage = {
   dependencies: [
     'invisible-island.net/ncurses',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cscope.sourceforge.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '15.9.0',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cscope.sourceforge.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cscope.sourceforge.io' as const,
 }
 
 export type CscopesourceforgeioPackage = typeof cscopesourceforgeioPackage

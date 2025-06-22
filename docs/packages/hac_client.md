@@ -1,11 +1,11 @@
-# hac-client
+# hac
 
-> Package from pantry: crates.io/hac-client
+> A terminal API Client that comes in handy. // Lightweight alternative to postman
 
 ## Package Information
 
 - **Domain**: `crates.io/hac-client`
-- **Name**: `hac-client`
+- **Name**: `hac`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/hac-client/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/hac-client
+launchpad install hac
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `hac`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.2.1`
+
+</details>
+
+**Latest Version**: `0.2.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) hac -- $SHELL -i
+```
 
 ## Usage Examples
 

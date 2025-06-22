@@ -6,23 +6,23 @@ Packages related to cli tools & utilities.
 
 ## Packages
 
-### [curl.se](../packages/curlse.md)
+### [curl.se](../packages/curlse.md) (cURL, curl)
 
-Package from pantry: curl.se
+A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features
 
-**Programs**: None specified
+**Programs**: curl, curl-config
 
-**Install**: `launchpad install curl.se`
+**Install**: `launchpad install curl`
 
 ---
 
-### [htop.dev](../packages/htopdev.md)
+### [htop.dev](../packages/htopdev.md) (htop)
 
-Package from pantry: htop.dev
+Improved top (interactive process viewer)
 
-**Programs**: None specified
+**Programs**: htop
 
-**Install**: `launchpad install htop.dev`
+**Install**: `launchpad install htop`
 
 ---
 

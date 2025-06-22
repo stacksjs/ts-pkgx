@@ -1,6 +1,6 @@
 # sl
 
-> Package from pantry: github.com/mtoyoda/sl
+> SL(1): Cure your bad habit of mistyping
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/mtoyoda/sl
+launchpad install sl
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `sl`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `5.2.0`
+
+</details>
+
+**Latest Version**: `5.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) sl -- $SHELL -i
+```
 
 ## Dependencies
 

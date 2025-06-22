@@ -1,6 +1,6 @@
 # craftql
 
-> Package from pantry: crates.io/craftql
+> A CLI tool to visualize GraphQL schemas and to output a graph data structure as a graphviz .dot format
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/craftql
+launchpad install craftql
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `craftql`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.2.20`
+
+</details>
+
+**Latest Version**: `0.2.20`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) craftql -- $SHELL -i
+```
 
 ## Usage Examples
 

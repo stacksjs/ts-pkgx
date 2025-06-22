@@ -1,6 +1,6 @@
 # python-pillow.org
 
-> Package from pantry: python-pillow.org
+> Python Imaging Library (Fork)
 
 ## Package Information
 
@@ -21,6 +21,25 @@ launchpad install python-pillow.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `11.2.1`, `11.1.0`, `11.0.0`, `10.4.0`, `10.3.0`
+- `10.2.0`
+
+</details>
+
+**Latest Version**: `11.2.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +python-pillow.org@11.2.1 -- $SHELL -i
+```
 
 ## Dependencies
 

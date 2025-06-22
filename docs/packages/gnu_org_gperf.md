@@ -1,6 +1,6 @@
 # gperf
 
-> Package from pantry: gnu.org/gperf
+> Perfect hash function generator
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install gnu.org/gperf
+launchpad install gperf
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gperf`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `3.3.0`, `3.2.1`, `3.2.0`, `3.1.0`
+
+</details>
+
+**Latest Version**: `3.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) gperf -- $SHELL -i
+```
 
 ## Usage Examples
 

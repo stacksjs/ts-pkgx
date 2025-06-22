@@ -1,6 +1,6 @@
 # go-sponge
 
-> Package from pantry: github.com/loq9/go-sponge
+> Golang alternative of sponge tool
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/loq9/go-sponge
+launchpad install go-sponge
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `go-sponge`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.0.0`
+
+</details>
+
+**Latest Version**: `1.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) go-sponge -- $SHELL -i
+```
 
 ## Usage Examples
 

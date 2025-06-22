@@ -1,6 +1,6 @@
 # sassc
 
-> Package from pantry: sass-lang.com/sassc
+> Wrapper around libsass that helps to create command-line apps
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install sass-lang.com/sassc
+launchpad install sassc
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `sassc`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `3.6.2`
+
+</details>
+
+**Latest Version**: `3.6.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) sassc -- $SHELL -i
+```
 
 ## Dependencies
 

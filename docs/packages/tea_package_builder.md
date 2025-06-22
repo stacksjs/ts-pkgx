@@ -1,6 +1,6 @@
 # tea-package-builder
 
-> Package from pantry: github.com/ArionThinker/tea-package-builder
+> Tea Package Builder is a tool that helps create packages for Tea.xyz quickly and conveniently
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/ArionThinker/tea-package-builder
+launchpad install tea-package-builder
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `tea-package-builder`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `0.1.6`, `0.1.5`, `0.1.4`, `0.1.3`, `0.1.2`
+- `0.1.1`
+
+</details>
+
+**Latest Version**: `0.1.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) tea-package-builder -- $SHELL -i
+```
 
 ## Dependencies
 

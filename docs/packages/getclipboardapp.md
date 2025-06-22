@@ -1,11 +1,11 @@
-# getclipboard.app
+# cb
 
-> Package from pantry: getclipboard.app
+> 😎🏖️🐬 Your new, 𝙧𝙞𝙙𝙤𝙣𝙠𝙪𝙡𝙞𝙘𝙞𝙤𝙪𝙨𝙡𝙮 smart clipboard manager
 
 ## Package Information
 
 - **Domain**: `getclipboard.app`
-- **Name**: `getclipboard.app`
+- **Name**: `cb`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getclipboard.app/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install getclipboard.app
+launchpad install cb
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cb`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.9.1`, `0.9.0.1`, `0.10.0`
+
+</details>
+
+**Latest Version**: `0.9.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) cb -- $SHELL -i
+```
 
 ## Dependencies
 

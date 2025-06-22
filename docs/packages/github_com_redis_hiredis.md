@@ -1,6 +1,6 @@
 # hiredis
 
-> Package from pantry: github.com/redis/hiredis
+> Minimalistic C client for Redis >= 1.2
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/redis/hiredis
+launchpad install hiredis
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ launchpad install github.com/redis/hiredis
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.3.0`, `1.2.0`, `1.1.0`
+
+</details>
+
+**Latest Version**: `1.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/redis/hiredis@1.3.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

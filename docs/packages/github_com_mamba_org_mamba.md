@@ -1,6 +1,6 @@
 # mamba
 
-> Package from pantry: github.com/mamba-org/mamba
+> The Fast Cross-Platform Package Manager
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/mamba-org/mamba
+launchpad install mamba
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mamba`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `22.11.1.4`
+
+</details>
+
+**Latest Version**: `22.11.1.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) mamba -- $SHELL -i
+```
 
 ## Usage Examples
 

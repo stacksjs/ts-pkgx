@@ -1,6 +1,6 @@
 # joshuto
 
-> Package from pantry: crates.io/joshuto
+> ranger-like terminal file manager written in Rust
 
 ## Package Information
 
@@ -13,20 +13,45 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/joshuto
+launchpad install joshuto
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `joshuto`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.9.9`, `0.9.8`
+
+</details>
+
+**Latest Version**: `0.9.9`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) joshuto -- $SHELL -i
+```
 
 ## Dependencies
 
 This package depends on:
 
 - `libgit2.org@1`
+
+## Related Packages
+
+These packages work well with joshuto:
+
+- `github.com/junegunn/fzf`
+- `crates.io/zoxide`
 
 ## Usage Examples
 

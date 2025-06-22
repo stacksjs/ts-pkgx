@@ -1,24 +1,34 @@
 /**
- * **bat** - Package from pantry: crates.io/bat
+ * **bat** - Clone of cat(1) with syntax highlighting and Git integration
  *
  * @domain `crates.io/bat`
+ * @programs `bat`
+ * @version `0.25.0` (4 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install crates.io/bat`
+ * @install `launchpad install bat`
+ * @name `bat`
  * @dependencies `zlib.net^1`, `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cratesiobat
+ * // Access the package
+ * const pkg = pantry.bat
+ * // Or access via domain
+ * const samePkg = pantry.cratesiobat
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "bat"
- * console.log(pkg.description) // "Package from pantry: crates.io/bat"
+ * console.log(pkg.description) // "Clone of cat(1) with syntax highlighting and Gi..."
+ * console.log(pkg.programs)    // ["bat"]
+ * console.log(pkg.versions[0]) // "0.25.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/bat.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cratesiobatPackage = {
+export const batPackage = {
   /**
    * The display name of this package.
    */
@@ -30,15 +40,22 @@ export const cratesiobatPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: crates.io/bat' as const,
+  description: 'Clone of cat(1) with syntax highlighting and Git integration' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/bat/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install crates.io/bat' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/bat -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/bat' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install bat' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'bat',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -48,10 +65,23 @@ export const cratesiobatPackage = {
     'zlib.net^1',
     'libgit2.org~1.7 # links to libgit2.so.1.7',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/bat/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.25.0',
+    '0.24.0',
+    '0.23.0',
+    '0.22.1',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bat -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bat' as const,
 }
 
-export type CratesiobatPackage = typeof cratesiobatPackage
+export type BatPackage = typeof batPackage

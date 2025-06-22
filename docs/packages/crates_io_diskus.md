@@ -1,6 +1,6 @@
 # diskus
 
-> Package from pantry: crates.io/diskus
+> A minimal, fast alternative to 'du -sh'
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/diskus
+launchpad install diskus
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `diskus`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.8.0`, `0.7.0`
+
+</details>
+
+**Latest Version**: `0.8.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) diskus -- $SHELL -i
+```
 
 ## Usage Examples
 

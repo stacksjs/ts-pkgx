@@ -1,11 +1,11 @@
-# mujs.com
+# mujs
 
-> Package from pantry: mujs.com
+> An embeddable Javascript interpreter in C.
 
 ## Package Information
 
 - **Domain**: `mujs.com`
-- **Name**: `mujs.com`
+- **Name**: `mujs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mujs.com/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install mujs.com
+launchpad install mujs
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mujs`
+- `mujs-pp`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.3.6`, `1.3.5`, `1.3.4`, `1.3.3`
+
+</details>
+
+**Latest Version**: `1.3.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +mujs.com@1.3.6 -- $SHELL -i
+```
 
 ## Dependencies
 

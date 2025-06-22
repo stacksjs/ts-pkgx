@@ -1,6 +1,6 @@
 # confd
 
-> Package from pantry: github.com/abtreece/confd
+> Manage local application configuration files using templates and data from etcd or consul
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/abtreece/confd
+launchpad install confd
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `confd`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.30.0`
+
+</details>
+
+**Latest Version**: `0.30.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) confd -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # minisign
 
-> Package from pantry: jedisct1.github.io/minisign
+> A dead simple tool to sign files and verify digital signatures.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install jedisct1.github.io/minisign
+launchpad install minisign
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `minisign`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.12.0`, `0.11.0`
+
+</details>
+
+**Latest Version**: `0.12.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) minisign -- $SHELL -i
+```
 
 ## Usage Examples
 

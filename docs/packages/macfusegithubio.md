@@ -1,6 +1,6 @@
 # macfuse.github.io
 
-> Package from pantry: macfuse.github.io
+> macFUSE umbrella repository
 
 ## Package Information
 
@@ -21,6 +21,24 @@ launchpad install macfuse.github.io
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `4.10.2`
+
+</details>
+
+**Latest Version**: `4.10.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +macfuse.github.io@4.10.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

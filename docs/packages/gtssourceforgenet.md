@@ -1,6 +1,6 @@
 # gts.sourceforge.net
 
-> Package from pantry: gts.sourceforge.net
+> GNU triangulated surface library
 
 ## Package Information
 
@@ -20,7 +20,33 @@ launchpad install gts.sourceforge.net
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `delaunay`
+- `gts2dxf`
+- `gts2oogl`
+- `gts2stl`
+- `gtscheck`
+- `gtscompare`
+- `gtstemplate`
+- `stl2gts`
+- `transform`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.7.6`
+
+</details>
+
+**Latest Version**: `0.7.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +gts.sourceforge.net@0.7.6 -- $SHELL -i
+```
 
 ## Dependencies
 

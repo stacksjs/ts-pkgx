@@ -1,6 +1,6 @@
 # kubecolor
 
-> Package from pantry: github.com/kubecolor/kubecolor
+> Colorize your kubectl output
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/kubecolor/kubecolor
+launchpad install kubecolor
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `kubecolor`
+
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `0.5.1`, `0.5.0`, `0.4.0`, `0.3.3`, `0.3.2`
+- `0.3.1`, `0.3.0`, `0.2.2`
+
+</details>
+
+**Latest Version**: `0.5.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) kubecolor -- $SHELL -i
+```
 
 ## Usage Examples
 

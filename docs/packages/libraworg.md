@@ -1,6 +1,6 @@
 # libraw.org
 
-> Package from pantry: libraw.org
+> Library for reading RAW files from digital photo cameras
 
 ## Package Information
 
@@ -20,7 +20,35 @@ launchpad install libraw.org
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `4channels`
+- `dcraw_emu`
+- `dcraw_half`
+- `half_mt`
+- `mem_image`
+- `multirender_test`
+- `postprocessing_benchmark`
+- `raw-identify`
+- `rawtextdump`
+- `simple_dcraw`
+- `unprocessed_raw`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `0.21.4`, `0.21.3`, `0.21.2`, `0.21.1`
+
+</details>
+
+**Latest Version**: `0.21.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libraw.org@0.21.4 -- $SHELL -i
+```
 
 ## Dependencies
 

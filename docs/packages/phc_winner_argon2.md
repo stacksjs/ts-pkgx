@@ -1,11 +1,11 @@
-# phc-winner-argon2
+# argon2
 
-> Package from pantry: github.com/P-H-C/phc-winner-argon2
+> The password hash Argon2, winner of PHC
 
 ## Package Information
 
 - **Domain**: `github.com/P-H-C/phc-winner-argon2`
-- **Name**: `phc-winner-argon2`
+- **Name**: `argon2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/P-H-C/phc-winner-argon2/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/P-H-C/phc-winner-argon2
+launchpad install argon2
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `argon2`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `20190702.0.0`
+
+</details>
+
+**Latest Version**: `20190702.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) argon2 -- $SHELL -i
+```
 
 ## Usage Examples
 

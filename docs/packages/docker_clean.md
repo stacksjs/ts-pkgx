@@ -1,6 +1,6 @@
 # docker-clean
 
-> Package from pantry: github.com/ZZROTDesign/docker-clean
+> A script that cleans docker containers, images, volumes, and networks.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/ZZROTDesign/docker-clean
+launchpad install docker-clean
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `docker-clean`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.0.4`
+
+</details>
+
+**Latest Version**: `2.0.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) docker-clean -- $SHELL -i
+```
 
 ## Dependencies
 

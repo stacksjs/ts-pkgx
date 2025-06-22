@@ -1,6 +1,6 @@
 # httpie.io
 
-> Package from pantry: httpie.io
+> 🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more.
 
 ## Package Information
 
@@ -20,7 +20,27 @@ launchpad install httpie.io
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `http`
+- `httpie`
+- `https`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `3.2.4`, `3.2.3`, `3.2.2`, `3.2.1`
+
+</details>
+
+**Latest Version**: `3.2.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +httpie.io@3.2.4 -- $SHELL -i
+```
 
 ## Dependencies
 

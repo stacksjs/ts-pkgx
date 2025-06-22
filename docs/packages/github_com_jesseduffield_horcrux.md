@@ -1,6 +1,6 @@
 # horcrux
 
-> Package from pantry: github.com/jesseduffield/horcrux
+> Split your file into encrypted fragments so that you don't need to remember a passcode
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/jesseduffield/horcrux
+launchpad install horcrux
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `horcrux`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.3.0`
+
+</details>
+
+**Latest Version**: `0.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) horcrux -- $SHELL -i
+```
 
 ## Usage Examples
 

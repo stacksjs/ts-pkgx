@@ -1,11 +1,11 @@
-# openslide.org
+# openslide
 
-> Package from pantry: openslide.org
+> C library to read whole-slide images (a.k.a. virtual slides)
 
 ## Package Information
 
 - **Domain**: `openslide.org`
-- **Name**: `openslide.org`
+- **Name**: `openslide`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openslide.org/package.yml)
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install openslide.org
+launchpad install openslide
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `openslide-quickhash1sum`
+- `openslide-show-properties`
+- `openslide-write-png`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `4.0.0`, `3.4.1`
+
+</details>
+
+**Latest Version**: `4.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +openslide.org@4.0.0 -- $SHELL -i
+```
 
 ## Dependencies
 

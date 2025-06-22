@@ -26,63 +26,63 @@ Consul is a distributed, highly available, and data center aware solution to con
 
 ---
 
-### [helm.sh](../packages/helmsh.md)
+### [helm.sh](../packages/helmsh.md) (helm)
 
-Package from pantry: helm.sh
+The Kubernetes Package Manager
 
-**Programs**: None specified
+**Programs**: helm
 
-**Install**: `launchpad install helm.sh`
-
----
-
-### [istio.io](../packages/istioio.md)
-
-Package from pantry: istio.io
-
-**Programs**: None specified
-
-**Install**: `launchpad install istio.io`
+**Install**: `launchpad install helm`
 
 ---
 
-### [nomadproject.io](../packages/nomadprojectio.md)
+### [istio.io](../packages/istioio.md) (istioctl)
 
-Package from pantry: nomadproject.io
+Connect, secure, control, and observe services.
 
-**Programs**: None specified
+**Programs**: istioctl
 
-**Install**: `launchpad install nomadproject.io`
-
----
-
-### [podman.io](../packages/podmanio.md)
-
-Package from pantry: podman.io
-
-**Programs**: None specified
-
-**Install**: `launchpad install podman.io`
+**Install**: `launchpad install istioctl`
 
 ---
 
-### [terraform.io](../packages/terraformio.md)
+### [nomadproject.io](../packages/nomadprojectio.md) (nomad)
 
-Package from pantry: terraform.io
+Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.
 
-**Programs**: None specified
+**Programs**: nomad
 
-**Install**: `launchpad install terraform.io`
+**Install**: `launchpad install nomad`
 
 ---
 
-### [traefik.io](../packages/traefikio.md)
+### [podman.io](../packages/podmanio.md) (podman)
 
-Package from pantry: traefik.io
+Podman: A tool for managing OCI containers and pods.
 
-**Programs**: None specified
+**Programs**: podman, podman-remote, podman-mac-helper
 
-**Install**: `launchpad install traefik.io`
+**Install**: `launchpad install podman`
+
+---
+
+### [terraform.io](../packages/terraformio.md) (terraform)
+
+Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.
+
+**Programs**: terraform
+
+**Install**: `launchpad install terraform`
+
+---
+
+### [traefik.io](../packages/traefikio.md) (traefik)
+
+The Cloud Native Application Proxy
+
+**Programs**: traefik
+
+**Install**: `launchpad install traefik`
 
 ---
 

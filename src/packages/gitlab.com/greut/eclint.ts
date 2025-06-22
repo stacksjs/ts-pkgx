@@ -1,23 +1,32 @@
 /**
- * **eclint** - Package from pantry: gitlab.com/greut/eclint
+ * **eclint** - pkgx package
  *
  * @domain `gitlab.com/greut/eclint`
+ * @programs `eclint`
+ * @version `0.5.1` (3 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install gitlab.com/greut/eclint`
+ * @install `launchpad install eclint`
+ * @name `eclint`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.gitlabcomgreuteclint
+ * // Access the package
+ * const pkg = pantry.eclint
+ * // Or access via domain
+ * const samePkg = pantry.gitlabcomgreuteclint
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "eclint"
- * console.log(pkg.description) // "Package from pantry: gitlab.com/greut/eclint"
+ * console.log(pkg.programs)    // ["eclint"]
+ * console.log(pkg.versions[0]) // "0.5.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gitlab-com/greut/eclint.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitlabcomgreuteclintPackage = {
+export const eclintPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +38,40 @@ export const gitlabcomgreuteclintPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: gitlab.com/greut/eclint' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gitlab.com/greut/eclint/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gitlab.com/greut/eclint' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gitlab.com/greut/eclint -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gitlab.com/greut/eclint' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install eclint' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'eclint',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gitlab.com/greut/eclint/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.5.1',
+    '0.5.0',
+    '0.4.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) eclint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install eclint' as const,
 }
 
-export type GitlabcomgreuteclintPackage = typeof gitlabcomgreuteclintPackage
+export type EclintPackage = typeof eclintPackage

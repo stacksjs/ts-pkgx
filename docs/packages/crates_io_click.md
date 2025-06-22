@@ -1,6 +1,6 @@
 # click
 
-> Package from pantry: crates.io/click
+> The "Command Line Interactive Controller for Kubernetes"
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/click
+launchpad install click
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `click`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.6.3`, `0.6.2`
+
+</details>
+
+**Latest Version**: `0.6.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) click -- $SHELL -i
+```
 
 ## Dependencies
 

@@ -1,11 +1,11 @@
-# terrarium-tf
+# terrarium
 
-> Package from pantry: github.com/terrarium-tf
+> terraform wrapper which transparent loads env files for stacks
 
 ## Package Information
 
 - **Domain**: `github.com/terrarium-tf`
-- **Name**: `terrarium-tf`
+- **Name**: `terrarium`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/terrarium-tf/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/terrarium-tf
+launchpad install terrarium
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `terrarium`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.3.2`
+
+</details>
+
+**Latest Version**: `1.3.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) terrarium -- $SHELL -i
+```
 
 ## Dependencies
 

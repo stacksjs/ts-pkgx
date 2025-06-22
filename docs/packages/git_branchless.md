@@ -1,6 +1,6 @@
 # git-branchless
 
-> Package from pantry: crates.io/git-branchless
+> High-velocity, monorepo-scale workflow for Git
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/git-branchless
+launchpad install git-branchless
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `git-branchless`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `0.10.0`, `0.9.0`, `0.8.0`, `0.7.1`
+
+</details>
+
+**Latest Version**: `0.10.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) git-branchless -- $SHELL -i
+```
 
 ## Dependencies
 

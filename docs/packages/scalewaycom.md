@@ -1,11 +1,11 @@
-# scaleway.com
+# scw
 
-> Package from pantry: scaleway.com
+> Command Line Interface for Scaleway
 
 ## Package Information
 
 - **Domain**: `scaleway.com`
-- **Name**: `scaleway.com`
+- **Name**: `scw`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/scaleway.com/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install scaleway.com
+launchpad install scw
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `scw`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `2.40.0`, `2.39.0`, `2.38.0`, `2.37.0`, `2.36.0`
+- `2.35.0`, `2.34.0`, `2.33.0`, `2.32.1`
+
+</details>
+
+**Latest Version**: `2.40.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) scw -- $SHELL -i
+```
 
 ## Usage Examples
 

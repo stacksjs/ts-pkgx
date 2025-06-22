@@ -1,11 +1,11 @@
-# fd-find
+# fd
 
-> Package from pantry: crates.io/fd-find
+> A simple, fast and user-friendly alternative to 'find'
 
 ## Package Information
 
 - **Domain**: `crates.io/fd-find`
-- **Name**: `fd-find`
+- **Name**: `fd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/fd-find/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/fd-find
+launchpad install fd
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `fd`
+
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `10.2.0`, `10.1.0`, `10.0.0`, `9.0.0`, `8.7.1`
+- `8.7.0`, `8.6.0`, `8.5.3`
+
+</details>
+
+**Latest Version**: `10.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) fd -- $SHELL -i
+```
 
 ## Usage Examples
 

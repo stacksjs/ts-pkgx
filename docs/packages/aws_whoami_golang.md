@@ -1,11 +1,11 @@
-# aws-whoami-golang
+# aws-whoami
 
-> Package from pantry: github.com/benkehoe/aws-whoami-golang
+> A tool to show what AWS account and identity you're using.
 
 ## Package Information
 
 - **Domain**: `github.com/benkehoe/aws-whoami-golang`
-- **Name**: `aws-whoami-golang`
+- **Name**: `aws-whoami`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/benkehoe/aws-whoami-golang/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/benkehoe/aws-whoami-golang
+launchpad install aws-whoami
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `aws-whoami`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.6.0`
+
+</details>
+
+**Latest Version**: `2.6.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) aws-whoami -- $SHELL -i
+```
 
 ## Usage Examples
 

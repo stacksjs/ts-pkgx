@@ -87,7 +87,7 @@ This package depends on:
 
 These packages work well with astral.sh/uv:
 
-- [`python.org`](pythonorg.md) - Package from pantry: python.org
+- [`python.org`](pythonorg.md) - The Python programming language
 
 ## Usage Examples
 

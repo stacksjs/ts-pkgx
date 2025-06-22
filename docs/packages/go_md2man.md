@@ -1,6 +1,6 @@
 # go-md2man
 
-> Package from pantry: github.com/cpuguy83/go-md2man
+> Converts markdown into roff (man pages)
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/cpuguy83/go-md2man
+launchpad install go-md2man
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `go-md2man`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `2.0.7`, `2.0.6`, `2.0.5`, `2.0.4`, `2.0.3`
+- `2.0.2`
+
+</details>
+
+**Latest Version**: `2.0.7`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) go-md2man -- $SHELL -i
+```
 
 ## Usage Examples
 

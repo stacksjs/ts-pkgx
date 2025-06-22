@@ -1,11 +1,11 @@
-# rucola-notes
+# rucola
 
-> Package from pantry: crates.io/rucola-notes
+> Terminal-based markdown note manager.
 
 ## Package Information
 
 - **Domain**: `crates.io/rucola-notes`
-- **Name**: `rucola-notes`
+- **Name**: `rucola`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rucola-notes/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/rucola-notes
+launchpad install rucola
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `rucola`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.5.0`
+
+</details>
+
+**Latest Version**: `0.5.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) rucola -- $SHELL -i
+```
 
 ## Usage Examples
 

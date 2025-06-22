@@ -1,6 +1,6 @@
 # argc
 
-> Package from pantry: crates.io/argc
+> A Bash CLI framework, also a Bash command runner.
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/argc
+launchpad install argc
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `argc`
+
+## Available Versions
+
+<details>
+<summary>Show all 10 versions</summary>
+
+- `1.22.0`, `1.21.1`, `1.21.0`, `1.20.1`, `1.20.0`
+- `1.19.0`, `1.18.0`, `1.17.0`, `1.16.0`, `1.15.0`
+
+</details>
+
+**Latest Version**: `1.22.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) argc -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # when
 
-> Package from pantry: github.com/mitsuhiko/when
+> Timezones from the command line
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/mitsuhiko/when
+launchpad install when
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `when`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.4.0`
+
+</details>
+
+**Latest Version**: `0.4.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) when -- $SHELL -i
+```
 
 ## Usage Examples
 

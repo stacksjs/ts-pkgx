@@ -6,23 +6,23 @@ Packages related to web servers & proxies.
 
 ## Packages
 
-### [nginx.org](../packages/nginxorg.md)
+### [nginx.org](../packages/nginxorg.md) (nginx)
 
-Package from pantry: nginx.org
+HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 
-**Programs**: None specified
+**Programs**: nginx
 
-**Install**: `launchpad install nginx.org`
+**Install**: `launchpad install nginx`
 
 ---
 
-### [traefik.io](../packages/traefikio.md)
+### [traefik.io](../packages/traefikio.md) (traefik)
 
-Package from pantry: traefik.io
+The Cloud Native Application Proxy
 
-**Programs**: None specified
+**Programs**: traefik
 
-**Install**: `launchpad install traefik.io`
+**Install**: `launchpad install traefik`
 
 ---
 

@@ -1,6 +1,6 @@
 # pqrs
 
-> Package from pantry: crates.io/pqrs
+> Command line tool for inspecting Parquet files
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/pqrs
+launchpad install pqrs
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pqrs`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.3.2`, `0.3.1`
+
+</details>
+
+**Latest Version**: `0.3.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) pqrs -- $SHELL -i
+```
 
 ## Usage Examples
 

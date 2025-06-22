@@ -1,6 +1,6 @@
 # socat
 
-> Package from pantry: dest-unreach.org/socat
+> SOcket CAT: netcat on steroids
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install dest-unreach.org/socat
+launchpad install socat
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `socat`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.8.0.3`, `1.8.0.2`, `1.8.0.1`, `1.8.0.0`
+
+</details>
+
+**Latest Version**: `1.8.0.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) socat -- $SHELL -i
+```
 
 ## Dependencies
 

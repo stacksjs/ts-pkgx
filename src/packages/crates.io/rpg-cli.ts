@@ -1,23 +1,33 @@
 /**
- * **rpg-cli** - Package from pantry: crates.io/rpg-cli
+ * **rpg-cli** - Your filesystem as a dungeon!
  *
  * @domain `crates.io/rpg-cli`
+ * @programs `rpg-cli`
+ * @version `1.2.0` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install crates.io/rpg-cli`
+ * @install `launchpad install rpg-cli`
+ * @name `rpg-cli`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cratesiorpgcli
+ * // Access the package
+ * const pkg = pantry.rpgcli
+ * // Or access via domain
+ * const samePkg = pantry.cratesiorpgcli
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "rpg-cli"
- * console.log(pkg.description) // "Package from pantry: crates.io/rpg-cli"
+ * console.log(pkg.description) // "Your filesystem as a dungeon!"
+ * console.log(pkg.programs)    // ["rpg-cli"]
+ * console.log(pkg.versions[0]) // "1.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/rpg-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cratesiorpgcliPackage = {
+export const rpgcliPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,39 @@ export const cratesiorpgcliPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: crates.io/rpg-cli' as const,
+  description: 'Your filesystem as a dungeon!' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rpg-cli/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install crates.io/rpg-cli' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/rpg-cli -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/rpg-cli' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install rpg-cli' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'rpg-cli',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rpg-cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.2.0',
+    '1.0.1',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rpg-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rpg-cli' as const,
 }
 
-export type CratesiorpgcliPackage = typeof cratesiorpgcliPackage
+export type RpgcliPackage = typeof rpgcliPackage

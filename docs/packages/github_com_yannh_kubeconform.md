@@ -1,6 +1,6 @@
 # kubeconform
 
-> Package from pantry: github.com/yannh/kubeconform
+> A FAST Kubernetes manifests validator, with support for Custom Resources!
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/yannh/kubeconform
+launchpad install kubeconform
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `kubeconform`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `0.7.0`, `0.6.7`, `0.6.6`, `0.6.5`, `0.6.4`
+
+</details>
+
+**Latest Version**: `0.7.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) kubeconform -- $SHELL -i
+```
 
 ## Usage Examples
 

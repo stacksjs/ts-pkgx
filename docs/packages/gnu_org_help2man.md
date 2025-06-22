@@ -1,6 +1,6 @@
 # help2man
 
-> Package from pantry: gnu.org/help2man
+> Automatically generate simple man pages
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install gnu.org/help2man
+launchpad install help2man
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `help2man`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.49.3`
+
+</details>
+
+**Latest Version**: `1.49.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) help2man -- $SHELL -i
+```
 
 ## Dependencies
 

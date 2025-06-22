@@ -1,6 +1,6 @@
 # pgen
 
-> Package from pantry: crates.io/pgen
+> Command-line passphrase generator
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/pgen
+launchpad install pgen
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pgen`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.3.0`, `1.2.0`, `1.1.4`
+
+</details>
+
+**Latest Version**: `1.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) pgen -- $SHELL -i
+```
 
 ## Usage Examples
 

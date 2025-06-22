@@ -1,6 +1,6 @@
 # rename
 
-> Package from pantry: plasmasturm.org/rename
+> Rename multiple files
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install plasmasturm.org/rename
+launchpad install rename
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `rename`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.601.0`
+
+</details>
+
+**Latest Version**: `1.601.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) rename -- $SHELL -i
+```
 
 ## Dependencies
 

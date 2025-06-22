@@ -1,6 +1,6 @@
 # leptonica.org
 
-> Package from pantry: leptonica.org
+> Leptonica is an open source library containing software that is broadly useful for image processing and image analysis applications. The official github repository for Leptonica is: danbloomberg/leptonica.  See leptonica.org for more documentation.
 
 ## Package Information
 
@@ -20,7 +20,34 @@ launchpad install leptonica.org
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `convertfilestopdf`
+- `convertfilestops`
+- `convertformat`
+- `convertsegfilestopdf`
+- `convertsegfilestops`
+- `converttopdf`
+- `converttops`
+- `fileinfo`
+- `imagetops`
+- `xtractprotos`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.85.0`, `1.84.1`, `1.84.0`, `1.83.1`
+
+</details>
+
+**Latest Version**: `1.85.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +leptonica.org@1.85.0 -- $SHELL -i
+```
 
 ## Dependencies
 

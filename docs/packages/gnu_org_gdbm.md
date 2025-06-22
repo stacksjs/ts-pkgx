@@ -1,6 +1,6 @@
 # gdbm
 
-> Package from pantry: gnu.org/gdbm
+> GNU database manager
 
 ## Package Information
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install gnu.org/gdbm
+launchpad install gdbm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gdbm_dump`
+- `gdbm_load`
+- `gdbmtool`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.25.0`, `1.24.0`, `1.23.0`
+
+</details>
+
+**Latest Version**: `1.25.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +gnu.org/gdbm@1.25.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# btrfs-progs
+# github.com/kdave/btrfs-progs
 
-> Package from pantry: github.com/kdave/btrfs-progs
+> Userspace utilities to manage btrfs filesystems
 
 ## Package Information
 
 - **Domain**: `github.com/kdave/btrfs-progs`
-- **Name**: `btrfs-progs`
+- **Name**: `github.com/kdave/btrfs-progs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kdave/btrfs-progs/package.yml)
 
@@ -20,7 +20,36 @@ launchpad install github.com/kdave/btrfs-progs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `btrfs`
+- `btrfsck`
+- `btrfs-convert`
+- `btrfs-find-root`
+- `btrfs-image`
+- `btrfs-map-logical`
+- `btrfs-select-super`
+- `btrfstune`
+- `fsck.btrfs`
+- `mkfs.btrfs`
+
+## Available Versions
+
+<details>
+<summary>Show all 12 versions</summary>
+
+- `6.14.0`, `6.13.0`, `6.12.0`, `6.11.0`, `6.10.1`
+- `6.10.0`, `6.9.2`, `6.9.1`, `6.9.0`, `6.8.1`
+- `6.8.0`, `6.7.1`
+
+</details>
+
+**Latest Version**: `6.14.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/kdave/btrfs-progs@6.14.0 -- $SHELL -i
+```
 
 ## Dependencies
 

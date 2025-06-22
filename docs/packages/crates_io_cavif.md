@@ -1,6 +1,6 @@
 # cavif
 
-> Package from pantry: crates.io/cavif
+> AVIF image creator in pure Rust
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/cavif
+launchpad install cavif
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cavif`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.5.6`, `1.5.5`, `1.5.4`
+
+</details>
+
+**Latest Version**: `1.5.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) cavif -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # blowfish
 
-> Package from pantry: github.com/matoszz/blowfish
+> blowfish is a command line interface for interacting with DMTF Redfish and SNIA Swordfish enabled devices based on gofish
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/matoszz/blowfish
+launchpad install blowfish
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `blowfish`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.0.0`
+
+</details>
+
+**Latest Version**: `0.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) blowfish -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # ksops
 
-> Package from pantry: viaduct.ai/ksops
+> KSOPS - A Flexible Kustomize Plugin for SOPS Encrypted Resources
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install viaduct.ai/ksops
+launchpad install ksops
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ksops`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `4.3.3`, `4.3.2`
+
+</details>
+
+**Latest Version**: `4.3.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) ksops -- $SHELL -i
+```
 
 ## Usage Examples
 

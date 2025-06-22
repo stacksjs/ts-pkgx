@@ -1,11 +1,11 @@
-# fftw.org
+# fftw
 
-> Package from pantry: fftw.org
+> C routines to compute the Discrete Fourier Transform
 
 ## Package Information
 
 - **Domain**: `fftw.org`
-- **Name**: `fftw.org`
+- **Name**: `fftw`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fftw.org/package.yml)
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install fftw.org
+launchpad install fftw
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `fftw-wisdom`
+- `fftw-wisdom-to-conf`
+- `fftwf-wisdom`
+- `fftwl-wisdom`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `3.3.10`
+
+</details>
+
+**Latest Version**: `3.3.10`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +fftw.org@3.3.10 -- $SHELL -i
+```
 
 ## Dependencies
 

@@ -1,24 +1,34 @@
 /**
- * **jsonlint** - Package from pantry: github.com/zaach/jsonlint
+ * **jsonlint** - A JSON parser and validator with a CLI.
  *
  * @domain `github.com/zaach/jsonlint`
+ * @programs `jsonlint`
+ * @version `1.6.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/zaach/jsonlint`
+ * @install `launchpad install jsonlint`
+ * @name `jsonlint`
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomzaachjsonlint
+ * // Access the package
+ * const pkg = pantry.jsonlint
+ * // Or access via domain
+ * const samePkg = pantry.githubcomzaachjsonlint
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "jsonlint"
- * console.log(pkg.description) // "Package from pantry: github.com/zaach/jsonlint"
+ * console.log(pkg.description) // "A JSON parser and validator with a CLI."
+ * console.log(pkg.programs)    // ["jsonlint"]
+ * console.log(pkg.versions[0]) // "1.6.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/zaach/jsonlint.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomzaachjsonlintPackage = {
+export const jsonlintPackage = {
   /**
    * The display name of this package.
    */
@@ -30,15 +40,22 @@ export const githubcomzaachjsonlintPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/zaach/jsonlint' as const,
+  description: 'A JSON parser and validator with a CLI.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zaach/jsonlint/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/zaach/jsonlint' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/zaach/jsonlint -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/zaach/jsonlint' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install jsonlint' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'jsonlint',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,20 @@ export const githubcomzaachjsonlintPackage = {
   dependencies: [
     'nodejs.org^20',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zaach/jsonlint/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.6.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jsonlint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jsonlint' as const,
 }
 
-export type GithubcomzaachjsonlintPackage = typeof githubcomzaachjsonlintPackage
+export type JsonlintPackage = typeof jsonlintPackage

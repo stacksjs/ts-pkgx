@@ -1,6 +1,6 @@
 # blink
 
-> Package from pantry: github.com/jart/blink
+> tiniest x86-64-linux emulator
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/jart/blink
+launchpad install blink
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `blink`
+- `blinkenlights`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.0.0`
+
+</details>
+
+**Latest Version**: `0.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/jart/blink@0.0.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

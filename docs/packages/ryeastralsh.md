@@ -1,11 +1,11 @@
-# rye.astral.sh
+# rye
 
-> Package from pantry: rye.astral.sh
+> Experimental Package Management Solution for Python
 
 ## Package Information
 
 - **Domain**: `rye.astral.sh`
-- **Name**: `rye.astral.sh`
+- **Name**: `rye`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rye.astral.sh/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install rye.astral.sh
+launchpad install rye
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `rye`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `0.44.0`, `0.43.0`, `0.42.0`, `0.41.0`, `0.40.0`
+- `0.39.0`, `0.38.0`, `0.37.0`, `0.36.0`
+
+</details>
+
+**Latest Version**: `0.44.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) rye -- $SHELL -i
+```
 
 ## Dependencies
 

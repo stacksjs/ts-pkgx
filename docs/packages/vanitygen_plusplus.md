@@ -1,11 +1,11 @@
-# vanitygen-plusplus
+# github.com/10gic/vanitygen-plusplus
 
-> Package from pantry: github.com/10gic/vanitygen-plusplus
+> A vanity address generator for BTC, ETH, LTC, TRX and 100+ more crypto currencies.
 
 ## Package Information
 
 - **Domain**: `github.com/10gic/vanitygen-plusplus`
-- **Name**: `vanitygen-plusplus`
+- **Name**: `github.com/10gic/vanitygen-plusplus`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/10gic/vanitygen-plusplus/package.yml)
 
@@ -20,7 +20,28 @@ launchpad install github.com/10gic/vanitygen-plusplus
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `vanitygen++`
+- `keyconv`
+- `oclvanitygen++`
+- `oclvanityminer`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.2.0`
+
+</details>
+
+**Latest Version**: `0.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/10gic/vanitygen-plusplus@0.2.0 -- $SHELL -i
+```
 
 ## Dependencies
 

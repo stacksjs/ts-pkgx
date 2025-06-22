@@ -1,6 +1,6 @@
 # openjdk.org
 
-> Package from pantry: openjdk.org
+> Development kit for the Java programming language
 
 ## Package Information
 
@@ -20,7 +20,52 @@ launchpad install openjdk.org
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `jar`
+- `jarsigner`
+- `java`
+- `javac`
+- `javadoc`
+- `javap`
+- `jcmd`
+- `jconsole`
+- `jdb`
+- `jdeprscan`
+- `jdeps`
+- `jfr`
+- `jhsdb`
+- `jimage`
+- `jinfo`
+- `jlink`
+- `jmap`
+- `jmod`
+- `jps`
+- `jrunscript`
+- `jshell`
+- `jstack`
+- `jstat`
+- `jstatd`
+- `keytool`
+- `rmiregistry`
+- `serialver`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `21.0.7.4`, `21.0.6.6`, `21.0.3.6`, `17.0.11.4`, `17.0.10.6`
+- `11.0.23.6`
+
+</details>
+
+**Latest Version**: `21.0.7.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +openjdk.org@21.0.7.4 -- $SHELL -i
+```
 
 ## Dependencies
 

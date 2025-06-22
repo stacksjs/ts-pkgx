@@ -1,6 +1,6 @@
 # tiny
 
-> Package from pantry: crates.io/tiny
+> A terminal IRC client
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/tiny
+launchpad install tiny
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `tiny`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.13.0`, `0.12.0`, `0.11.0`
+
+</details>
+
+**Latest Version**: `0.13.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) tiny -- $SHELL -i
+```
 
 ## Dependencies
 

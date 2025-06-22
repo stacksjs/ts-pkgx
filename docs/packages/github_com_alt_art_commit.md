@@ -1,6 +1,6 @@
 # commit
 
-> Package from pantry: github.com/alt-art/commit
+> Command-line tool to guide your template commit messages anywhere, anytime
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/alt-art/commit
+launchpad install commit
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `commit`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.7.0`, `0.6.0`
+
+</details>
+
+**Latest Version**: `0.7.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) commit -- $SHELL -i
+```
 
 ## Usage Examples
 

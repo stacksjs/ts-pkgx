@@ -1,6 +1,6 @@
 # aws-vault
 
-> Package from pantry: github.com/99designs/aws-vault
+> A vault for securely storing and accessing AWS credentials in development environments
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/99designs/aws-vault
+launchpad install aws-vault
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `aws-vault`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `7.2.0`
+
+</details>
+
+**Latest Version**: `7.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) aws-vault -- $SHELL -i
+```
 
 ## Usage Examples
 

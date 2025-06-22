@@ -1,6 +1,6 @@
 # gops
 
-> Package from pantry: github.com/google/gops
+> A tool to list and diagnose Go processes currently running on your system
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/google/gops
+launchpad install gops
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gops`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.3.28`, `0.3.27`
+
+</details>
+
+**Latest Version**: `0.3.28`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) gops -- $SHELL -i
+```
 
 ## Dependencies
 

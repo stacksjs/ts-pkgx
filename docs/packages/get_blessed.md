@@ -1,6 +1,6 @@
 # get-blessed
 
-> Package from pantry: crates.io/get-blessed
+> Terminal tool to get you the best crates for your rust projects, curated by blessed.rs
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/get-blessed
+launchpad install get-blessed
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `get-blessed`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.2.1`, `0.2.0`, `0.1.3`
+
+</details>
+
+**Latest Version**: `0.2.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) get-blessed -- $SHELL -i
+```
 
 ## Dependencies
 

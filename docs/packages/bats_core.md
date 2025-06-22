@@ -1,11 +1,11 @@
-# bats-core
+# bats
 
-> Package from pantry: github.com/bats-core/bats-core
+> Bash Automated Testing System
 
 ## Package Information
 
 - **Domain**: `github.com/bats-core/bats-core`
-- **Name**: `bats-core`
+- **Name**: `bats`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/bats-core/bats-core/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/bats-core/bats-core
+launchpad install bats
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `bats`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.12.0`, `1.11.1`, `1.11.0`, `1.10.0`
+
+</details>
+
+**Latest Version**: `1.12.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) bats -- $SHELL -i
+```
 
 ## Dependencies
 

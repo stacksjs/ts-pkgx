@@ -1,6 +1,6 @@
 # gpp
 
-> Package from pantry: logological.org/gpp
+> General-purpose preprocessor with customizable syntax
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install logological.org/gpp
+launchpad install gpp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gpp`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `2.28.0`, `2.27.0`
+
+</details>
+
+**Latest Version**: `2.28.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) gpp -- $SHELL -i
+```
 
 ## Usage Examples
 

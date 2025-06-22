@@ -1,6 +1,6 @@
 # liblmdb
 
-> Package from pantry: openldap.org/liblmdb
+> Lightning memory-mapped database: key-value data store
 
 ## Package Information
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install openldap.org/liblmdb
+launchpad install liblmdb
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mdb_copy`
+- `mdb_dump`
+- `mdb_load`
+- `mdb_stat`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.9.33`
+
+</details>
+
+**Latest Version**: `0.9.33`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +openldap.org/liblmdb@0.9.33 -- $SHELL -i
+```
 
 ## Usage Examples
 

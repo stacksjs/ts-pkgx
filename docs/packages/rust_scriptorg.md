@@ -1,11 +1,11 @@
-# rust-script.org
+# rust-script
 
-> Package from pantry: rust-script.org
+> Run Rust files and expressions as scripts without any setup or compilation step.
 
 ## Package Information
 
 - **Domain**: `rust-script.org`
-- **Name**: `rust-script.org`
+- **Name**: `rust-script`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rust-script.org/package.yml)
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with launchpad
-launchpad install rust-script.org
+launchpad install rust-script
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `rust-script`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.35.0`, `0.34.0`
+
+</details>
+
+**Latest Version**: `0.35.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) rust-script -- $SHELL -i
+```
+
+## Related Packages
+
+These packages work well with rust-script:
+
+- `rust-lang.org`
+- `rust-lang.org/cargo`
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # zip
 
-> Package from pantry: info-zip.org/zip
+> Compression and file packaging/archive utility
 
 ## Package Information
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install info-zip.org/zip
+launchpad install zip
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `zip`
+- `zipcloak`
+- `zipnote`
+- `zipsplit`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `3.0.0`
+
+</details>
+
+**Latest Version**: `3.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +info-zip.org/zip@3.0.0 -- $SHELL -i
+```
 
 ## Dependencies
 

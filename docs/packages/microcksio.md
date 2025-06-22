@@ -1,11 +1,11 @@
-# microcks.io
+# microcks-cli
 
-> Package from pantry: microcks.io
+> Simple CLI for interacting with Microcks test APIs
 
 ## Package Information
 
 - **Domain**: `microcks.io`
-- **Name**: `microcks.io`
+- **Name**: `microcks-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microcks.io/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install microcks.io
+launchpad install microcks-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `microcks-cli`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `0.9.0`, `0.5.8`, `0.5.7`, `0.5.6`, `0.5.5`
+- `0.5.4`
+
+</details>
+
+**Latest Version**: `0.9.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) microcks-cli -- $SHELL -i
+```
 
 ## Dependencies
 

@@ -1,6 +1,6 @@
 # redfishtool
 
-> Package from pantry: github.com/DMTF/redfishtool
+> A Python34 program that implements a command line tool for accessing the Redfish API.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/DMTF/redfishtool
+launchpad install redfishtool
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `redfishtool`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.1.8`
+
+</details>
+
+**Latest Version**: `1.1.8`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) redfishtool -- $SHELL -i
+```
 
 ## Dependencies
 

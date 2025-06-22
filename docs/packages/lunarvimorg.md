@@ -1,6 +1,6 @@
 # lunarvim.org
 
-> Package from pantry: lunarvim.org
+> 🌙 LunarVim is an IDE layer for Neovim. Completely free and community driven.
 
 ## Package Information
 
@@ -20,7 +20,26 @@ launchpad install lunarvim.org
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `lvim`
+- `nvim`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.4.0`, `1.3.0`
+
+</details>
+
+**Latest Version**: `1.4.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +lunarvim.org@1.4.0 -- $SHELL -i
+```
 
 ## Dependencies
 

@@ -1,28 +1,36 @@
 /**
- * **jinja** - Package from pantry: palletsprojects.com/jinja
+ * **python-jinja** - A very fast and expressive template engine.
  *
  * @domain `palletsprojects.com/jinja`
+ * @version `3.1.6` (4 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install palletsprojects.com/jinja`
+ * @install `launchpad install python-jinja`
+ * @name `python-jinja`
  * @dependencies `python.org>=3.11`, `markupsafe.palletsprojects.com>=2.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.palletsprojectscomjinja
- * console.log(pkg.name)        // "jinja"
- * console.log(pkg.description) // "Package from pantry: palletsprojects.com/jinja"
+ * // Access the package
+ * const pkg = pantry.pythonjinja
+ * // Or access via domain
+ * const samePkg = pantry.palletsprojectscomjinja
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "python-jinja"
+ * console.log(pkg.description) // "A very fast and expressive template engine."
+ * console.log(pkg.versions[0]) // "3.1.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/palletsprojects-com/jinja.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const palletsprojectscomjinjaPackage = {
+export const pythonjinjaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jinja' as const,
+  name: 'python-jinja' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,14 +38,15 @@ export const palletsprojectscomjinjaPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: palletsprojects.com/jinja' as const,
+  description: 'A very fast and expressive template engine.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/palletsprojects.com/jinja/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pallets/jinja' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install palletsprojects.com/jinja' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +palletsprojects.com/jinja -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install palletsprojects.com/jinja' as const,
+  installCommand: 'launchpad install python-jinja' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -48,10 +57,23 @@ export const palletsprojectscomjinjaPackage = {
     'python.org>=3.11',
     'markupsafe.palletsprojects.com>=2.1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/palletsprojects.com/jinja/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.1.6',
+    '3.1.5',
+    '3.1.4',
+    '3.1.3',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +palletsprojects.com/jinja -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install python-jinja' as const,
 }
 
-export type PalletsprojectscomjinjaPackage = typeof palletsprojectscomjinjaPackage
+export type PythonjinjaPackage = typeof pythonjinjaPackage

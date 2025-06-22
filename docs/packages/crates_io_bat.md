@@ -1,6 +1,6 @@
 # bat
 
-> Package from pantry: crates.io/bat
+> Clone of cat(1) with syntax highlighting and Git integration
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/bat
+launchpad install bat
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `bat`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `0.25.0`, `0.24.0`, `0.23.0`, `0.22.1`
+
+</details>
+
+**Latest Version**: `0.25.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) bat -- $SHELL -i
+```
 
 ## Dependencies
 

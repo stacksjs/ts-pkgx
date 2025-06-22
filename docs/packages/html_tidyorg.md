@@ -1,11 +1,11 @@
-# html-tidy.org
+# tidy
 
-> Package from pantry: html-tidy.org
+> The granddaddy of HTML tools, with support for modern standards
 
 ## Package Information
 
 - **Domain**: `html-tidy.org`
-- **Name**: `html-tidy.org`
+- **Name**: `tidy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/html-tidy.org/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install html-tidy.org
+launchpad install tidy
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `tidy`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `5.8.0`
+
+</details>
+
+**Latest Version**: `5.8.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) tidy -- $SHELL -i
+```
 
 ## Usage Examples
 

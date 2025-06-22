@@ -1,6 +1,6 @@
 # epstool
 
-> Package from pantry: ghostgum.com.au/epstool
+> Edit preview images and fix bounding boxes in EPS files
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install ghostgum.com.au/epstool
+launchpad install epstool
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `epstool`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `3.9.0`
+
+</details>
+
+**Latest Version**: `3.9.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) epstool -- $SHELL -i
+```
 
 ## Dependencies
 

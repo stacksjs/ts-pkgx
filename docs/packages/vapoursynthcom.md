@@ -1,11 +1,11 @@
-# vapoursynth.com
+# vspipe
 
-> Package from pantry: vapoursynth.com
+> A video processing framework with simplicity in mind
 
 ## Package Information
 
 - **Domain**: `vapoursynth.com`
-- **Name**: `vapoursynth.com`
+- **Name**: `vspipe`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vapoursynth.com/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install vapoursynth.com
+launchpad install vspipe
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `vspipe`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `72.0.0`, `71.0.0`, `70.0.0`, `69.0.0`, `68.0.0`
+- `67.0.0`, `66.0.0`, `65.0.0`, `64.0.0`
+
+</details>
+
+**Latest Version**: `72.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) vspipe -- $SHELL -i
+```
 
 ## Dependencies
 

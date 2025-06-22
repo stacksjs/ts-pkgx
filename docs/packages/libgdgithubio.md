@@ -1,6 +1,6 @@
 # libgd.github.io
 
-> Package from pantry: libgd.github.io
+> Graphics library to dynamically manipulate images
 
 ## Package Information
 
@@ -20,7 +20,29 @@ launchpad install libgd.github.io
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `bdftogd`
+- `gd2copypal`
+- `gd2togif`
+- `gdcmpgif`
+- `giftogd2`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.3.3`
+
+</details>
+
+**Latest Version**: `2.3.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libgd.github.io@2.3.3 -- $SHELL -i
+```
 
 ## Dependencies
 

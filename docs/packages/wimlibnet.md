@@ -1,6 +1,6 @@
 # wimlib.net
 
-> Package from pantry: wimlib.net
+> Library to create, extract, and modify Windows Imaging files
 
 ## Package Information
 
@@ -20,7 +20,42 @@ launchpad install wimlib.net
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mkwinpeimg`
+- `wimappend`
+- `wimapply`
+- `wimapply`
+- `wimdelete`
+- `wimdir`
+- `wimexport`
+- `wimextract`
+- `wiminfo`
+- `wimjoin`
+- `wimlib-imagex`
+- `wimmount`
+- `wimmountrw`
+- `wimoptimize`
+- `wimsplit`
+- `wimunmount`
+- `wimupdate`
+- `wimverify`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.14.4`, `1.14.3`, `1.14.1`
+
+</details>
+
+**Latest Version**: `1.14.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +wimlib.net@1.14.4 -- $SHELL -i
+```
 
 ## Dependencies
 

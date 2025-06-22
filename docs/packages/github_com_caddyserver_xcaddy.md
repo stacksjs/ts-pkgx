@@ -1,6 +1,6 @@
 # xcaddy
 
-> Package from pantry: github.com/caddyserver/xcaddy
+> Build Caddy with plugins
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/caddyserver/xcaddy
+launchpad install xcaddy
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `xcaddy`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `0.4.4`, `0.4.2`, `0.4.1`, `0.4.0`, `0.3.5`
+
+</details>
+
+**Latest Version**: `0.4.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) xcaddy -- $SHELL -i
+```
 
 ## Dependencies
 

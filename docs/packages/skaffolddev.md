@@ -1,11 +1,11 @@
-# skaffold.dev
+# skaffold
 
-> Package from pantry: skaffold.dev
+> Easy and Repeatable Kubernetes Development
 
 ## Package Information
 
 - **Domain**: `skaffold.dev`
-- **Name**: `skaffold.dev`
+- **Name**: `skaffold`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/skaffold.dev/package.yml)
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install skaffold.dev
+launchpad install skaffold
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `skaffold`
+
+## Available Versions
+
+<details>
+<summary>Show all 15 versions</summary>
+
+- `2.16.1`, `2.16.0`, `2.15.0`, `2.14.2`, `2.14.1`
+- `2.14.0`, `2.13.2`, `2.13.0`, `2.12.0`, `2.11.1`
+- `2.11.0`, `2.10.1`, `2.10.0`, `2.9.0`, `2.8.0`
+
+</details>
+
+**Latest Version**: `2.16.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) skaffold -- $SHELL -i
+```
 
 ## Usage Examples
 

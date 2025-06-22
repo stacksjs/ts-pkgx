@@ -1,7 +1,9 @@
 /**
- * **iso-codes** - Package from pantry: debian.org/iso-codes
+ * **debian.org/iso-codes** - pkgx package
  *
  * @domain `debian.org/iso-codes`
+ * @version `4.18.0` (4 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install debian.org/iso-codes`
  * @dependencies `gnu.org/gettext`
@@ -11,8 +13,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.debianorgisocodes
- * console.log(pkg.name)        // "iso-codes"
- * console.log(pkg.description) // "Package from pantry: debian.org/iso-codes"
+ * console.log(pkg.name)        // "debian.org/iso-codes"
+ * console.log(pkg.versions[0]) // "4.18.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/debian-org/iso-codes.md
@@ -22,7 +24,7 @@ export const debianorgisocodesPackage = {
   /**
    * The display name of this package.
    */
-  name: 'iso-codes' as const,
+  name: 'debian.org/iso-codes' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,14 +32,15 @@ export const debianorgisocodesPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: debian.org/iso-codes' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/debian.org/iso-codes/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install debian.org/iso-codes' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +debian.org/iso-codes -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install debian.org/iso-codes' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -47,10 +50,19 @@ export const debianorgisocodesPackage = {
   dependencies: [
     'gnu.org/gettext',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/debian.org/iso-codes/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '4.18.0',
+    '4.17.0',
+    '4.16.0',
+    '4.15.0',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +debian.org/iso-codes -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install debian.org/iso-codes' as const,
 }
 
 export type DebianorgisocodesPackage = typeof debianorgisocodesPackage

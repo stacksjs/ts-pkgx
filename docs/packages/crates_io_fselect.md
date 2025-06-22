@@ -1,6 +1,6 @@
 # fselect
 
-> Package from pantry: crates.io/fselect
+> Find files with SQL-like queries
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/fselect
+launchpad install fselect
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `fselect`
+
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `0.8.12`, `0.8.11`, `0.8.10`, `0.8.9`, `0.8.8`
+- `0.8.6`, `0.8.5`, `0.8.4`
+
+</details>
+
+**Latest Version**: `0.8.12`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) fselect -- $SHELL -i
+```
 
 ## Dependencies
 

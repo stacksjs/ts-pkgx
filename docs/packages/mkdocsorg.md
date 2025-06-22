@@ -1,11 +1,11 @@
-# mkdocs.org
+# mkdocs
 
-> Package from pantry: mkdocs.org
+> Project documentation with Markdown.
 
 ## Package Information
 
 - **Domain**: `mkdocs.org`
-- **Name**: `mkdocs.org`
+- **Name**: `mkdocs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mkdocs.org/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install mkdocs.org
+launchpad install mkdocs
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mkdocs`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.6.1`, `1.6.0`, `1.5.3`
+
+</details>
+
+**Latest Version**: `1.6.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) mkdocs -- $SHELL -i
+```
 
 ## Dependencies
 

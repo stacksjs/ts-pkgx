@@ -1,6 +1,6 @@
 # prettyping
 
-> Package from pantry: denilson.sa.nom.br/prettyping
+> `prettyping` is a wrapper around the standard `ping` tool, making the output prettier, more colorful, more compact, and easier to read.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install denilson.sa.nom.br/prettyping
+launchpad install prettyping
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `prettyping`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.1.0`, `1.0.1`
+
+</details>
+
+**Latest Version**: `1.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) prettyping -- $SHELL -i
+```
 
 ## Usage Examples
 

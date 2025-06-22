@@ -1,11 +1,11 @@
-# ni
+# github.com/antfu/ni
 
-> Package from pantry: github.com/antfu/ni
+> 💡 Use the right package manager
 
 ## Package Information
 
 - **Domain**: `github.com/antfu/ni`
-- **Name**: `ni`
+- **Name**: `github.com/antfu/ni`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/antfu/ni/package.yml)
 
@@ -20,7 +20,35 @@ launchpad install github.com/antfu/ni
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `na`
+- `nci`
+- `ni`
+- `nlx`
+- `nr`
+- `nu`
+- `nun`
+
+## Available Versions
+
+<details>
+<summary>Show all 24 versions</summary>
+
+- `25.0.0`, `24.4.0`, `24.3.0`, `24.2.0`, `24.1.0`
+- `23.3.1`, `23.3.0`, `23.2.0`, `0.23.2`, `0.23.1`
+- `0.23.0`, `0.22.4`, `0.22.3`, `0.22.1`, `0.22.0`
+- `0.21.12`, `0.21.11`, `0.21.10`, `0.21.9`, `0.21.8`
+- `0.21.7`, `0.21.6`, `0.21.5`, `0.21.4`
+
+</details>
+
+**Latest Version**: `25.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/antfu/ni@25.0.0 -- $SHELL -i
+```
 
 ## Dependencies
 

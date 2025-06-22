@@ -1,6 +1,6 @@
 # zippy
 
-> Package from pantry: github.com/thinkst/zippy
+> Detect AI-generated text [relatively] quickly via compression ratios
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/thinkst/zippy
+launchpad install zippy
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `zippy`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.1.3`, `0.1.2`, `0.1.1`
+
+</details>
+
+**Latest Version**: `0.1.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) zippy -- $SHELL -i
+```
 
 ## Dependencies
 

@@ -1,6 +1,6 @@
 # mask
 
-> Package from pantry: crates.io/mask
+> 🎭 A CLI task runner defined by a simple markdown file
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/mask
+launchpad install mask
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mask`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.11.3`
+
+</details>
+
+**Latest Version**: `0.11.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) mask -- $SHELL -i
+```
 
 ## Usage Examples
 

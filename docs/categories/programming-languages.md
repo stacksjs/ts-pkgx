@@ -6,183 +6,183 @@ Popular programming languages and their runtimes available through pkgx.
 
 ## Packages
 
-### [dart.dev](../packages/dartdev.md)
+### [dart.dev](../packages/dartdev.md) (dart)
 
-Package from pantry: dart.dev
+The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more.
 
-**Programs**: None specified
+**Programs**: dart, dartaotruntime
 
-**Install**: `launchpad install dart.dev`
+**Install**: `launchpad install dart`
 
 ---
 
-### [deno.land](../packages/denoland.md)
+### [deno.land](../packages/denoland.md) (deno)
 
-Package from pantry: deno.land
+A modern runtime for JavaScript and TypeScript.
 
-**Programs**: None specified
+**Programs**: deno
 
-**Install**: `launchpad install deno.land`
+**Install**: `launchpad install deno`
 
 ---
 
 ### [erlang.org](../packages/erlangorg.md)
 
-Package from pantry: erlang.org
+Programming language for highly scalable real-time systems
 
-**Programs**: None specified
+**Programs**: ct_run, dialyzer, epmd, erl, erlc, escript, run_erl, to_erl, typer
 
 **Install**: `launchpad install erlang.org`
 
 ---
 
-### [gleam.run](../packages/gleamrun.md)
+### [gleam.run](../packages/gleamrun.md) (gleam)
 
-Package from pantry: gleam.run
+⭐️ A friendly language for building type-safe, scalable systems!
 
-**Programs**: None specified
+**Programs**: gleam
 
-**Install**: `launchpad install gleam.run`
+**Install**: `launchpad install gleam`
 
 ---
 
-### [go.dev](../packages/godev.md)
+### [go.dev](../packages/godev.md) (go)
 
-Package from pantry: go.dev
+The Go programming language
 
-**Programs**: None specified
+**Programs**: go, gofmt
 
-**Install**: `launchpad install go.dev`
+**Install**: `launchpad install go`
 
 ---
 
 ### [haskell.org](../packages/haskellorg.md)
 
-Package from pantry: haskell.org
+Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).
 
-**Programs**: None specified
+**Programs**: ghc, ghc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghc-&lbrace;&lbrace;version&rbrace;&rbrace;, ghc-pkg, ghc-pkg-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghc-pkg-&lbrace;&lbrace;version&rbrace;&rbrace;, ghci, ghci-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghci-&lbrace;&lbrace;version&rbrace;&rbrace;, ghcup, haddock, haddock-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, haddock-&lbrace;&lbrace;version&rbrace;&rbrace;, hp2ps, hp2ps-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, hp2ps-&lbrace;&lbrace;version&rbrace;&rbrace;, hpc, hpc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, hpc-&lbrace;&lbrace;version&rbrace;&rbrace;, hsc2hs, hsc2hs-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, hsc2hs-&lbrace;&lbrace;version&rbrace;&rbrace;, runghc, runghc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, runghc-&lbrace;&lbrace;version&rbrace;&rbrace;, runhaskell, runhaskell-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, runhaskell-&lbrace;&lbrace;version&rbrace;&rbrace;
 
 **Install**: `launchpad install haskell.org`
 
 ---
 
-### [julialang.org](../packages/julialangorg.md)
+### [julialang.org](../packages/julialangorg.md) (julia)
 
-Package from pantry: julialang.org
+The Julia Programming Language
 
-**Programs**: None specified
+**Programs**: julia
 
-**Install**: `launchpad install julialang.org`
+**Install**: `launchpad install julia`
 
 ---
 
 ### [kotlinlang.org](../packages/kotlinlangorg.md)
 
-Package from pantry: kotlinlang.org
+Statically typed programming language for the JVM
 
-**Programs**: None specified
+**Programs**: kapt, kotlin, kotlinc, kotlinc-js, kotlinc-jvm
 
 **Install**: `launchpad install kotlinlang.org`
 
 ---
 
-### [nodejs.org](../packages/nodejsorg.md)
+### [nodejs.org](../packages/nodejsorg.md) (node)
 
-Package from pantry: nodejs.org
+Platform built on V8 to build network applications
 
-**Programs**: None specified
+**Programs**: node
 
-**Install**: `launchpad install nodejs.org`
+**Install**: `launchpad install node`
 
 ---
 
-### [nodejs.org](../packages/node.md)
+### [nodejs.org](../packages/node.md) (node)
 
-Package from pantry: nodejs.org
+Platform built on V8 to build network applications
 
-**Programs**: None specified
+**Programs**: node
 
-**Install**: `launchpad install nodejs.org`
+**Install**: `launchpad install node`
 
 ---
 
 ### [perl.org](../packages/perlorg.md)
 
-Package from pantry: perl.org
+Highly capable, feature-rich programming language
 
-**Programs**: None specified
+**Programs**: corelist, cpan, enc2xs, encguess, h2ph, h2xs, instmodsh, json_pp, libnetcfg, perl, perlbug, perldoc, perlivp, perlthanks, piconv, pl2pm, pod2html, pod2man, pod2text, pod2usage, podchecker, prove, ptar, ptardiff, ptargrep, shasum, splain, streamzip, xsubpp, zipdetails
 
 **Install**: `launchpad install perl.org`
 
 ---
 
-### [php.net](../packages/phpnet.md)
+### [php.net](../packages/phpnet.md) (php)
 
-Package from pantry: php.net
+General-purpose scripting language
 
-**Programs**: None specified
+**Programs**: pear, pecl, phar, php, php-cgi, php-config, phpdbg, phpize
 
-**Install**: `launchpad install php.net`
-
----
-
-### [python.org](../packages/pythonorg.md)
-
-Package from pantry: python.org
-
-**Programs**: None specified
-
-**Install**: `launchpad install python.org`
+**Install**: `launchpad install php`
 
 ---
 
-### [python.org](../packages/python.md)
+### [python.org](../packages/pythonorg.md) (python, py)
 
-Package from pantry: python.org
+The Python programming language
 
-**Programs**: None specified
+**Programs**: python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace;
 
-**Install**: `launchpad install python.org`
-
----
-
-### [swift.org](../packages/swiftorg.md)
-
-Package from pantry: swift.org
-
-**Programs**: None specified
-
-**Install**: `launchpad install swift.org`
+**Install**: `launchpad install py`
 
 ---
 
-### [typescriptlang.org](../packages/typescriptlangorg.md)
+### [python.org](../packages/python.md) (python, py)
 
-Package from pantry: typescriptlang.org
+The Python programming language
 
-**Programs**: None specified
+**Programs**: python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace;
 
-**Install**: `launchpad install typescriptlang.org`
-
----
-
-### [vlang.io](../packages/vlangio.md)
-
-Package from pantry: vlang.io
-
-**Programs**: None specified
-
-**Install**: `launchpad install vlang.io`
+**Install**: `launchpad install py`
 
 ---
 
-### [ziglang.org](../packages/ziglangorg.md)
+### [swift.org](../packages/swiftorg.md) (swift)
 
-Package from pantry: ziglang.org
+The Swift Programming Language
 
-**Programs**: None specified
+**Programs**: docc, dsymutil, sourcekit-lsp, swift-api-checker.py, swift-build-sdk-interfaces, swift-build-tool, swift-demangle, swift-driver, swift-format, swift-frontend, swift-help, swift-package, swift-plugin-server, swift-stdlib-tool, swift, swift-api-digester, swift-api-extract, swift-autolink-extract, swift-build, swift-experimental-sdk, swift-package-collection, swift-package-registry, swift-run, swift-symbolgraph-extract, swift-test, swiftc
 
-**Install**: `launchpad install ziglang.org`
+**Install**: `launchpad install swift`
+
+---
+
+### [typescriptlang.org](../packages/typescriptlangorg.md) (tsc)
+
+TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
+
+**Programs**: tsc
+
+**Install**: `launchpad install tsc`
+
+---
+
+### [vlang.io](../packages/vlangio.md) (v)
+
+Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
+
+**Programs**: v
+
+**Install**: `launchpad install v`
+
+---
+
+### [ziglang.org](../packages/ziglangorg.md) (zig)
+
+General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
+
+**Programs**: zig
+
+**Install**: `launchpad install zig`
 
 ---
 

@@ -1,11 +1,11 @@
-# liburcu.org
+# liburcu
 
-> Package from pantry: liburcu.org
+> liburcu is a LGPLv2.1 userspace RCU (read-copy-update) library. This data synchronization library provides read-side access which scales linearly with the number of cores.
 
 ## Package Information
 
 - **Domain**: `liburcu.org`
-- **Name**: `liburcu.org`
+- **Name**: `liburcu`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/liburcu.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install liburcu.org
+launchpad install liburcu
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ launchpad install liburcu.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `0.15.3`, `0.15.2`, `0.15.1`, `0.15.0`
+
+</details>
+
+**Latest Version**: `0.15.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +liburcu.org@0.15.3 -- $SHELL -i
+```
 
 ## Usage Examples
 

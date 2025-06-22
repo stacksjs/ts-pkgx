@@ -1,11 +1,11 @@
-# mpv.io
+# mpv
 
-> Package from pantry: mpv.io
+> Media player based on MPlayer and mplayer2
 
 ## Package Information
 
 - **Domain**: `mpv.io`
-- **Name**: `mpv.io`
+- **Name**: `mpv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mpv.io/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install mpv.io
+launchpad install mpv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mpv`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.40.0`, `0.39.0`, `0.38.0`
+
+</details>
+
+**Latest Version**: `0.40.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) mpv -- $SHELL -i
+```
 
 ## Dependencies
 

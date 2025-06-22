@@ -1,6 +1,6 @@
 # checkexec
 
-> Package from pantry: crates.io/checkexec
+> CLI tool to conditionally execute commands only when files in a dependency list have been updated. Like `make`, but standalone.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/checkexec
+launchpad install checkexec
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `checkexec`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.2.0`
+
+</details>
+
+**Latest Version**: `0.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) checkexec -- $SHELL -i
+```
 
 ## Usage Examples
 

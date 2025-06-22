@@ -1,6 +1,6 @@
 # go-mod-upgrade
 
-> Package from pantry: github.com/oligot/go-mod-upgrade
+> Update outdated Go dependencies interactively
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/oligot/go-mod-upgrade
+launchpad install go-mod-upgrade
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `go-mod-upgrade`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.11.0`, `0.10.0`, `0.9.1`
+
+</details>
+
+**Latest Version**: `0.11.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) go-mod-upgrade -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,7 +1,10 @@
 /**
- * **source-highlight** - Package from pantry: gnu.org/source-highlight
+ * **gnu.org/source-highlight** - Source-code syntax highlighter
  *
  * @domain `gnu.org/source-highlight`
+ * @programs `check-regexp`, `source-highlight`, `source-highlight-settings`
+ * @version `3.1.9` (1 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/source-highlight`
  * @dependencies `boost.org`
@@ -11,8 +14,10 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgsourcehighlight
- * console.log(pkg.name)        // "source-highlight"
- * console.log(pkg.description) // "Package from pantry: gnu.org/source-highlight"
+ * console.log(pkg.name)        // "gnu.org/source-highlight"
+ * console.log(pkg.description) // "Source-code syntax highlighter"
+ * console.log(pkg.programs)    // ["check-regexp", "source-highlight", ...]
+ * console.log(pkg.versions[0]) // "3.1.9" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/source-highlight.md
@@ -22,7 +27,7 @@ export const gnuorgsourcehighlightPackage = {
   /**
    * The display name of this package.
    */
-  name: 'source-highlight' as const,
+  name: 'gnu.org/source-highlight' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +35,24 @@ export const gnuorgsourcehighlightPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: gnu.org/source-highlight' as const,
+  description: 'Source-code syntax highlighter' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/source-highlight/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnu.org/source-highlight' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/source-highlight -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/source-highlight' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'check-regexp',
+    'source-highlight',
+    'source-highlight-settings',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +61,16 @@ export const gnuorgsourcehighlightPackage = {
   dependencies: [
     'boost.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/source-highlight/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.1.9',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/source-highlight -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/source-highlight' as const,
 }
 
 export type GnuorgsourcehighlightPackage = typeof gnuorgsourcehighlightPackage

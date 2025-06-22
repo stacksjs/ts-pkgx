@@ -1,11 +1,11 @@
-# luajit.org
+# luajit
 
-> Package from pantry: luajit.org
+> Mirror of the LuaJIT git repository
 
 ## Package Information
 
 - **Domain**: `luajit.org`
-- **Name**: `luajit.org`
+- **Name**: `luajit`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/luajit.org/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install luajit.org
+launchpad install luajit
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `luajit`
+- `luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;.`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.1.0`
+
+</details>
+
+**Latest Version**: `2.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +luajit.org@2.1.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

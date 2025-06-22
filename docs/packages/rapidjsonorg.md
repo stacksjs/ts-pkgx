@@ -1,6 +1,6 @@
 # rapidjson.org
 
-> Package from pantry: rapidjson.org
+> A fast JSON parser/generator for C++ with both SAX/DOM style API
 
 ## Package Information
 
@@ -21,6 +21,24 @@ launchpad install rapidjson.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.1.0`
+
+</details>
+
+**Latest Version**: `1.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +rapidjson.org@1.1.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

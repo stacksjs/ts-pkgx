@@ -1,11 +1,11 @@
-# yasm.tortall.net
+# yasm
 
-> Package from pantry: yasm.tortall.net
+> Yasm Assembler mainline development tree
 
 ## Package Information
 
 - **Domain**: `yasm.tortall.net`
-- **Name**: `yasm.tortall.net`
+- **Name**: `yasm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/yasm.tortall.net/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install yasm.tortall.net
+launchpad install yasm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `yasm`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.3.0`
+
+</details>
+
+**Latest Version**: `1.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) yasm -- $SHELL -i
+```
 
 ## Usage Examples
 

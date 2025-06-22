@@ -1,6 +1,6 @@
 # shovel
 
-> Package from pantry: indexsupply.com/shovel
+> An Ethereum to Postgres indexer
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with launchpad
-launchpad install indexsupply.com/shovel
+launchpad install shovel
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `shovel`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `1.6.0`, `1.5.0`, `1.4.0`, `1.3.0`, `1.2.0`
+- `1.1.0`, `1.0.0`
+
+</details>
+
+**Latest Version**: `1.6.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) shovel -- $SHELL -i
+```
+
+## Related Packages
+
+These packages work well with shovel:
+
+- [`postgresql.org`](postgresqlorg.md) - Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
 
 ## Usage Examples
 

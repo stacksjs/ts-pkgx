@@ -1,6 +1,6 @@
 # wasm-pack
 
-> Package from pantry: crates.io/wasm-pack
+> 📦✨ your favorite rust -> wasm workflow tool!
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/wasm-pack
+launchpad install wasm-pack
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `wasm-pack`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.13.1`, `0.13.0`, `0.12.1`
+
+</details>
+
+**Latest Version**: `0.13.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) wasm-pack -- $SHELL -i
+```
 
 ## Dependencies
 

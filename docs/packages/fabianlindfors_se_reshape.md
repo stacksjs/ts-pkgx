@@ -1,6 +1,6 @@
 # reshape
 
-> Package from pantry: fabianlindfors.se/reshape
+> An easy-to-use, zero-downtime schema migration tool for Postgres
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install fabianlindfors.se/reshape
+launchpad install reshape
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `reshape`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.7.0`
+
+</details>
+
+**Latest Version**: `0.7.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) reshape -- $SHELL -i
+```
 
 ## Usage Examples
 

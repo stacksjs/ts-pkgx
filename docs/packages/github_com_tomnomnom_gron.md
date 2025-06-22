@@ -1,6 +1,6 @@
 # gron
 
-> Package from pantry: github.com/tomnomnom/gron
+> Make JSON greppable!
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/tomnomnom/gron
+launchpad install gron
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gron`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.7.1`
+
+</details>
+
+**Latest Version**: `0.7.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) gron -- $SHELL -i
+```
 
 ## Usage Examples
 

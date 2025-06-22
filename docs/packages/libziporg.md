@@ -1,11 +1,11 @@
-# libzip.org
+# zipcmp
 
-> Package from pantry: libzip.org
+> A C library for reading, creating, and modifying zip archives.
 
 ## Package Information
 
 - **Domain**: `libzip.org`
-- **Name**: `libzip.org`
+- **Name**: `zipcmp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libzip.org/package.yml)
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install libzip.org
+launchpad install zipcmp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `zipcmp`
+- `zipmerge`
+- `ziptool`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `1.11.4`, `1.11.3`, `1.11.2`, `1.11.1`, `1.10.1`
+- `1.10.0`, `1.9.2`
+
+</details>
+
+**Latest Version**: `1.11.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libzip.org@1.11.4 -- $SHELL -i
+```
 
 ## Dependencies
 

@@ -1,11 +1,11 @@
-# pkgx.sh
+# pkgx
 
-> Package from pantry: pkgx.sh
+> Standalone binary that can run anything
 
 ## Package Information
 
 - **Domain**: `pkgx.sh`
-- **Name**: `pkgx.sh`
+- **Name**: `pkgx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/package.yml)
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with launchpad
-launchpad install pkgx.sh
+launchpad install pkgx
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pkgx`
+
+## Available Versions
+
+<details>
+<summary>Show all 35 versions</summary>
+
+- `2.7.0`, `2.6.0`, `2.5.0`, `2.4.0`, `2.3.2`
+- `2.3.1`, `2.3.0`, `2.2.1`, `2.2.0`, `2.1.4`
+- `2.1.3`, `2.1.2`, `2.1.1`, `2.1.0`, `2.0.0`
+- `1.5.0`, `1.4.1`, `1.4.0`, `1.3.1`, `1.3.0`
+- `1.2.2`, `1.2.1`, `1.2.0`, `1.1.6`, `1.1.5`
+- `1.1.4`, `1.1.3`, `1.1.2`, `1.1.1`, `1.1.0`
+- `1.0.4`, `1.0.3`, `1.0.2`, `1.0.1`, `1.0.0`
+
+</details>
+
+**Latest Version**: `2.7.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) pkgx -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # neowofetch
 
-> Package from pantry: github.com/hykilpikonna/hyfetch/neowofetch
+> Fast, highly customisable system info script with LGBTQ+ pride flags
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/hykilpikonna/hyfetch/neowofetch
+launchpad install neowofetch
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `neowofetch`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.99.0`, `1.4.11`
+
+</details>
+
+**Latest Version**: `1.99.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) neowofetch -- $SHELL -i
+```
 
 ## Dependencies
 

@@ -1,6 +1,6 @@
 # drill
 
-> Package from pantry: crates.io/drill
+> Drill is an HTTP load testing application written in Rust
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/drill
+launchpad install drill
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `drill`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.8.3`
+
+</details>
+
+**Latest Version**: `0.8.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) drill -- $SHELL -i
+```
 
 ## Dependencies
 

@@ -1,11 +1,11 @@
-# gource.io
+# gource
 
-> Package from pantry: gource.io
+> software version control visualization
 
 ## Package Information
 
 - **Domain**: `gource.io`
-- **Name**: `gource.io`
+- **Name**: `gource`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gource.io/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install gource.io
+launchpad install gource
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gource`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.55.0`, `0.54.0`
+
+</details>
+
+**Latest Version**: `0.55.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) gource -- $SHELL -i
+```
 
 ## Dependencies
 

@@ -1,6 +1,6 @@
 # swift-sh
 
-> Package from pantry: github.com/mxcl/swift-sh
+> Easily script with third-party Swift dependencies.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/mxcl/swift-sh
+launchpad install swift-sh
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `swift-sh`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `2.5.0`, `2.4.0`
+
+</details>
+
+**Latest Version**: `2.5.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) swift-sh -- $SHELL -i
+```
 
 ## Usage Examples
 

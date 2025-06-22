@@ -1,7 +1,9 @@
 /**
- * **libass** - Package from pantry: github.com/libass/libass
+ * **github.com/libass/libass** - libass is a portable subtitle renderer for the ASS/SSA (Advanced Substation Alpha/Substation Alpha) subtitle format.
  *
  * @domain `github.com/libass/libass`
+ * @version `0.17.4` (4 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/libass/libass`
  * @dependencies `freetype.org@2`, `gnu.org/fribidi@1`, `harfbuzz.org`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
@@ -11,8 +13,9 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomlibasslibass
- * console.log(pkg.name)        // "libass"
- * console.log(pkg.description) // "Package from pantry: github.com/libass/libass"
+ * console.log(pkg.name)        // "github.com/libass/libass"
+ * console.log(pkg.description) // "libass is a portable subtitle renderer for the ..."
+ * console.log(pkg.versions[0]) // "0.17.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/libass/libass.md
@@ -22,7 +25,7 @@ export const githubcomlibasslibassPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libass' as const,
+  name: 'github.com/libass/libass' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,14 +33,15 @@ export const githubcomlibasslibassPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/libass/libass' as const,
+  description: 'libass is a portable subtitle renderer for the ASS/SSA (Advanced Substation Alpha/Substation Alpha) subtitle format.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libass/libass/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/libass/libass' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/libass/libass -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/libass/libass' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -52,10 +56,19 @@ export const githubcomlibasslibassPackage = {
     'github.com/adah1972/libunibreak',
     'linux:freedesktop.org/fontconfig@2',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libass/libass/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.17.4',
+    '0.17.3',
+    '0.17.2',
+    '0.17.1',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/libass/libass -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/libass/libass' as const,
 }
 
 export type GithubcomlibasslibassPackage = typeof githubcomlibasslibassPackage

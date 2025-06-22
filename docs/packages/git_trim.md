@@ -1,6 +1,6 @@
 # git-trim
 
-> Package from pantry: crates.io/git-trim
+> Automatically trims your branches whose tracking remote refs are merged or stray
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/git-trim
+launchpad install git-trim
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `git-trim`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.4.3`
+
+</details>
+
+**Latest Version**: `0.4.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) git-trim -- $SHELL -i
+```
 
 ## Dependencies
 

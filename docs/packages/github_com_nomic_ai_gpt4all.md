@@ -1,6 +1,6 @@
 # gpt4all
 
-> Package from pantry: github.com/nomic-ai/gpt4all
+> Locally run an Assistant-Tuned Chat-Style LLM
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/nomic-ai/gpt4all
+launchpad install gpt4all
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gpt4all`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2023.3.29`
+
+</details>
+
+**Latest Version**: `2023.3.29`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) gpt4all -- $SHELL -i
+```
 
 ## Usage Examples
 
