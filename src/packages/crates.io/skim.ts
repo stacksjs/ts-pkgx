@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/skim`
  * @programs `sk`
- * @version `0.19.0` (25 versions available)
+ * @version `0.20.1` (27 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sk`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "skim"
  * console.log(pkg.description) // "Fuzzy Finder in rust!"
  * console.log(pkg.programs)    // ["sk"]
- * console.log(pkg.versions[0]) // "0.19.0" (latest)
+ * console.log(pkg.versions[0]) // "0.20.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/skim.md
@@ -62,6 +62,8 @@ export const skPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.20.1',
+    '0.20.0',
     '0.19.0',
     '0.18.0',
     '0.17.3',
