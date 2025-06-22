@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) xcresultparser -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_a7ex_xcresultparser
+const pkg = pantry.xcresultparser
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

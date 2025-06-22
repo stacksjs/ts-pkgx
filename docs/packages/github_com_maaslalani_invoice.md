@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) invoice -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_maaslalani_invoice
+const pkg = pantry.invoice
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

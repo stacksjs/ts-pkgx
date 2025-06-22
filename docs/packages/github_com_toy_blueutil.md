@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) blueutil -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_toy_blueutil
+const pkg = pantry.blueutil
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

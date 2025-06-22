@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) zap -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_keith_zap
+const pkg = pantry.zap
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

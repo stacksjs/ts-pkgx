@@ -54,7 +54,7 @@ sh <(curl https://pkgx.sh) fzf -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_junegunn_fzf
+const pkg = pantry.fzf
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +github.com/glauth/glauth@2.4.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_glauth_glauth
+const pkg = pantry.glauth
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

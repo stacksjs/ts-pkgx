@@ -52,7 +52,7 @@ These packages work well with xcodes:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_XcodesOrg_xcodes
+const pkg = pantry.xcodes
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

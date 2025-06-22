@@ -52,7 +52,7 @@ These packages work well with bruce:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_brucedom_bruce
+const pkg = pantry.bruce
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

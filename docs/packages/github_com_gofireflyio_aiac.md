@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) aiac -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_gofireflyio_aiac
+const pkg = pantry.aiac
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

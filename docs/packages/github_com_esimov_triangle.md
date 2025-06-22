@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) triangle -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_esimov_triangle
+const pkg = pantry.triangle
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_adamritter_fastgron
+const pkg = pantry.fastgron
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

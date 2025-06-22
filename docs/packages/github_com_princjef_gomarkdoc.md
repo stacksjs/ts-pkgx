@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) gomarkdoc -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_princjef_gomarkdoc
+const pkg = pantry.gomarkdoc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

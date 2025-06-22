@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) tine -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_OutOfBedlam_tine
+const pkg = pantry.tine
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

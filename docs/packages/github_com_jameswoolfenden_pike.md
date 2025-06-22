@@ -54,7 +54,7 @@ sh <(curl https://pkgx.sh) pike -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_jameswoolfenden_pike
+const pkg = pantry.pike
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

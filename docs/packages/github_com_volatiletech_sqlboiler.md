@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) sqlboiler -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_volatiletech_sqlboiler
+const pkg = pantry.sqlboiler
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

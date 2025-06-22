@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) conform -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_siderolabs_conform
+const pkg = pantry.conform
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

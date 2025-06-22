@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) lolcat -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_jaseg_lolcat
+const pkg = pantry.lolcat
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) k3sup -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_alexellis_k3sup
+const pkg = pantry.k3sup
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

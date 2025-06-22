@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) gopass -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_gopasspw_gopass
+const pkg = pantry.gopass
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

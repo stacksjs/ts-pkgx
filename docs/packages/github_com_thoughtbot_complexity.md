@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) complexity -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_thoughtbot_complexity
+const pkg = pantry.complexity
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

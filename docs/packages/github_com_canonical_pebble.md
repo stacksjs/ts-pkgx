@@ -58,7 +58,7 @@ sh <(curl https://pkgx.sh) pebble -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_canonical_pebble
+const pkg = pantry.pebble
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

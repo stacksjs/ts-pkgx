@@ -52,7 +52,7 @@ sh <(curl https://pkgx.sh) vals -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_helmfile_vals
+const pkg = pantry.vals
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

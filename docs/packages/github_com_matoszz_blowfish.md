@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) blowfish -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_matoszz_blowfish
+const pkg = pantry.blowfish
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

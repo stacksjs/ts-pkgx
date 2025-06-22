@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) stargazers -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_spencerkimball_stargazers
+const pkg = pantry.stargazers
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

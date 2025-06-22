@@ -51,7 +51,7 @@ sh <(curl https://pkgx.sh) usql -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_xo_usql
+const pkg = pantry.usql
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

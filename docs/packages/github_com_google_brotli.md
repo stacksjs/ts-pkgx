@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) brotli -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_google_brotli
+const pkg = pantry.brotli
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) air -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_cosmtrek_air
+const pkg = pantry.air
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

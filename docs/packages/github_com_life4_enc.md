@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) enc -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_life4_enc
+const pkg = pantry.enc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

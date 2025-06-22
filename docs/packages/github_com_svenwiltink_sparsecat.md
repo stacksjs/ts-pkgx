@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) sparsecat -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_svenwiltink_sparsecat
+const pkg = pantry.sparsecat
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

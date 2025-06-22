@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_jarun_nnn
+const pkg = pantry.nnn
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

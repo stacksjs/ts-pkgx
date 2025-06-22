@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) csvdiff -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_aswinkarthik_csvdiff
+const pkg = pantry.csvdiff
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

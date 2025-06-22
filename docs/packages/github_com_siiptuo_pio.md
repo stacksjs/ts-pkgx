@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) pio -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_siiptuo_pio
+const pkg = pantry.pio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_abanteai_rawdog
+const pkg = pantry.rawdog
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

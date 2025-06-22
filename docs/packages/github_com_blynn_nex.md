@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) nex -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_blynn_nex
+const pkg = pantry.nex
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_westes_flex
+const pkg = pantry.flex
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

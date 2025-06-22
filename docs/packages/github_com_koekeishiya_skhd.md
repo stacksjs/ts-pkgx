@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) skhd -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_koekeishiya_skhd
+const pkg = pantry.skhd
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

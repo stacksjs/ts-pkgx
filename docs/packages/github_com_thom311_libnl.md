@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/thom311/libnl@3.11.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_thom311_libnl
+const pkg = pantry.libnl
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

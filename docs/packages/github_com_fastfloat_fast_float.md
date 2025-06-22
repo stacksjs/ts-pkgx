@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +github.com/fastfloat/fast_float@8.0.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_fastfloat_fast_float
+const pkg = pantry.fast_float
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

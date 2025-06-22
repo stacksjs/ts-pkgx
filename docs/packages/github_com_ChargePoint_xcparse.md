@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) xcparse -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_ChargePoint_xcparse
+const pkg = pantry.xcparse
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

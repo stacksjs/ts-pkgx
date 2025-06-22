@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) hadolint -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_hadolint_hadolint
+const pkg = pantry.hadolint
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) sup -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_pressly_sup
+const pkg = pantry.sup
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

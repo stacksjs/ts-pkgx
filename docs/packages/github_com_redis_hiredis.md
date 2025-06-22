@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/redis/hiredis@1.3.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_redis_hiredis
+const pkg = pantry.hiredis
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

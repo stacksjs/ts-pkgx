@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) webhook -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_adnanh_webhook
+const pkg = pantry.webhook
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) sasqwatch -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_fabio42_sasqwatch
+const pkg = pantry.sasqwatch
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

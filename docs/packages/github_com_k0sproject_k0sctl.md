@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) k0sctl -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_k0sproject_k0sctl
+const pkg = pantry.k0sctl
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

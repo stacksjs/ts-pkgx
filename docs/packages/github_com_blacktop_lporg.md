@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) lporg -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_blacktop_lporg
+const pkg = pantry.lporg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_canonical_charmcraft
+const pkg = pantry.charmcraft
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

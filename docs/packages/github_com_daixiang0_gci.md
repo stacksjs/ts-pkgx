@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) gci -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_daixiang0_gci
+const pkg = pantry.gci
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

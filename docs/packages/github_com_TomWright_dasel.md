@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) dasel -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_TomWright_dasel
+const pkg = pantry.dasel
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -52,7 +52,7 @@ sh <(curl https://pkgx.sh) rip -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_MilesCranmer_rip2
+const pkg = pantry.rip
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

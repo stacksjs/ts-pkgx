@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_hykilpikonna_hyfetch_neowofetch
+const pkg = pantry.neowofetch
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

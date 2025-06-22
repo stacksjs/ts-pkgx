@@ -51,7 +51,7 @@ sh <(curl https://pkgx.sh) yabai -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_koekeishiya_yabai
+const pkg = pantry.yabai
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

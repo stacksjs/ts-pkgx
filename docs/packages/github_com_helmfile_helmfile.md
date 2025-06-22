@@ -56,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_helmfile_helmfile
+const pkg = pantry.helmfile
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

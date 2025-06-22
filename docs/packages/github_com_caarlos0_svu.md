@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) svu -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_caarlos0_svu
+const pkg = pantry.svu
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

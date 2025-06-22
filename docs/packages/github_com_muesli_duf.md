@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) duf -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_muesli_duf
+const pkg = pantry.duf
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

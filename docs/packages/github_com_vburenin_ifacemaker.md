@@ -52,7 +52,7 @@ These packages work well with ifacemaker:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_vburenin_ifacemaker
+const pkg = pantry.ifacemaker
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

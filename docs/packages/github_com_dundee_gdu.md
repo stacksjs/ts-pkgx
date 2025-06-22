@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) gdu -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_dundee_gdu
+const pkg = pantry.gdu
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

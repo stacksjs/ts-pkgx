@@ -68,7 +68,7 @@ sh <(curl https://pkgx.sh) lefthook -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_evilmartians_lefthook
+const pkg = pantry.lefthook
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

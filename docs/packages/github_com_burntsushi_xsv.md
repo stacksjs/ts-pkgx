@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) xsv -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_burntsushi_xsv
+const pkg = pantry.xsv
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

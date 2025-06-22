@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) gotestsum -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_gotestyourself_gotestsum
+const pkg = pantry.gotestsum
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

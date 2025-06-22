@@ -56,7 +56,7 @@ sh <(curl https://pkgx.sh) grype -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_anchore_grype
+const pkg = pantry.grype
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

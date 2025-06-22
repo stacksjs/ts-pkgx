@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) +github.com/ebiggers/libdeflate@1.24.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_ebiggers_libdeflate
+const pkg = pantry.libdeflate
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) swiftenv -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_kylef_swiftenv
+const pkg = pantry.swiftenv
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

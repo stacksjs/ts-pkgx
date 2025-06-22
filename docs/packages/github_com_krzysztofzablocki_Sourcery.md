@@ -55,7 +55,7 @@ sh <(curl https://pkgx.sh) sourcery -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_krzysztofzablocki_Sourcery
+const pkg = pantry.Sourcery
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

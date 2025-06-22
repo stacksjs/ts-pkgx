@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) ladder -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_everywall_ladder
+const pkg = pantry.ladder
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

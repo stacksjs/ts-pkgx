@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) nak -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_fiatjaf_nak
+const pkg = pantry.nak
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

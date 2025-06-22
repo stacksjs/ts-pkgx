@@ -86,7 +86,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_facebookincubator_fizz
+const pkg = pantry.fizz
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

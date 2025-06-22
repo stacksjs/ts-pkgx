@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +github.com/jart/blink@0.0.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_jart_blink
+const pkg = pantry.blink
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

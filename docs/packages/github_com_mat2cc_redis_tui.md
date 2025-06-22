@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) redis_tui -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_mat2cc_redis_tui
+const pkg = pantry.redis_tui
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

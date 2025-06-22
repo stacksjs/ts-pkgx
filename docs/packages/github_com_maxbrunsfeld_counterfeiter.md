@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_maxbrunsfeld_counterfeiter
+const pkg = pantry.counterfeiter
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

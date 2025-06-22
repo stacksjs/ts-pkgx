@@ -62,7 +62,7 @@ These packages work well with licensed:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_licensee_licensed
+const pkg = pantry.licensed
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

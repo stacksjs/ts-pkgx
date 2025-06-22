@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) pstree -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_FredHucht_pstree
+const pkg = pantry.pstree
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

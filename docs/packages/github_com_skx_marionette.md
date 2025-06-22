@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) marionette -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_skx_marionette
+const pkg = pantry.marionette
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

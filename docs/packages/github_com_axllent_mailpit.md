@@ -59,7 +59,7 @@ sh <(curl https://pkgx.sh) mailpit -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_axllent_mailpit
+const pkg = pantry.mailpit
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

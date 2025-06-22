@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) horcrux -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_jesseduffield_horcrux
+const pkg = pantry.horcrux
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

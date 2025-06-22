@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) unxip -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_saagarjha_unxip
+const pkg = pantry.unxip
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

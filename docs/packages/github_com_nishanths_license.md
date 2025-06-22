@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) license -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.github_com_nishanths_license
+const pkg = pantry.license
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
