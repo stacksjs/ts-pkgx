@@ -1753,9 +1753,18 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
       const pkg = pantry[domainVarName]
       if (pkg && !shouldExcludePackage(pkg)) {
         const domain = pkg.domain || pkg.fullPath || 'unknown'
-        // Only keep the first occurrence of each domain (prefer shorter variable names)
-        if (!packagesMap.has(domain) || domainVarName.length < packagesMap.get(domain)!.domainVarName.length) {
+        // Use the same deterministic logic as generatePackagePages
+        if (!packagesMap.has(domain)) {
           packagesMap.set(domain, { domainVarName, pkg })
+        }
+        else {
+          const existing = packagesMap.get(domain)!
+          // Prefer shorter variable names (usually the primary ones)
+          // If lengths are equal, prefer alphabetically first (for deterministic results)
+          if (domainVarName.length < existing.domainVarName.length
+            || (domainVarName.length === existing.domainVarName.length && domainVarName < existing.domainVarName)) {
+            packagesMap.set(domain, { domainVarName, pkg })
+          }
         }
       }
     })
@@ -1935,8 +1944,8 @@ async function generatePackagePages(outputDir: string, sourcePackagesDir?: strin
 
   const generatedFiles: string[] = []
 
-  // Track processed domains to avoid duplicates
-  const processedDomains = new Set<string>()
+  // First pass: collect packages and choose the best domain variable name for each domain
+  const domainToInfo = new Map<string, { domainVarName: string, pkg: PkgxPackage }>()
 
   for (const [domainVarName, pkg] of Object.entries(pantry)) {
     // Skip packages with placeholder data
@@ -1945,12 +1954,27 @@ async function generatePackagePages(outputDir: string, sourcePackagesDir?: strin
       continue
     }
 
-    // Skip if we've already processed this domain (prevents duplicates from aliases)
-    if (processedDomains.has(pkg.domain)) {
-      continue
+    const domain = pkg.domain
+    if (!domainToInfo.has(domain)) {
+      // First occurrence of this domain
+      domainToInfo.set(domain, { domainVarName, pkg })
     }
-    processedDomains.add(pkg.domain)
+    else {
+      // Domain already exists, choose the better variable name
+      const existing = domainToInfo.get(domain)!
 
+      // Prefer shorter variable names (usually the primary ones)
+      // If lengths are equal, prefer alphabetically first (for deterministic results)
+      if (domainVarName.length < existing.domainVarName.length
+        || (domainVarName.length === existing.domainVarName.length && domainVarName < existing.domainVarName)) {
+        domainToInfo.set(domain, { domainVarName, pkg })
+        console.log(`Replaced ${existing.domainVarName} with ${domainVarName} for domain ${domain}`)
+      }
+    }
+  }
+
+  // Second pass: generate files using the chosen domain variable names
+  for (const { domainVarName, pkg } of domainToInfo.values()) {
     try {
       // Use domain variable name as filename (no alias-based naming to avoid duplicates)
       // Ensure consistent lowercase naming
@@ -2185,9 +2209,18 @@ async function generateCategoryPages(outputDir: string, packagesDir?: string): P
       const pkg = pantry[domainVarName]
       if (pkg && !shouldExcludePackage(pkg)) {
         const domain = pkg.domain || pkg.fullPath || 'unknown'
-        // Only keep the first occurrence of each domain (prefer domain-based variable names over aliases)
-        if (!packagesMap.has(domain) || domainVarName.length > packagesMap.get(domain)!.domainVarName.length) {
+        // Use the same deterministic logic as other functions
+        if (!packagesMap.has(domain)) {
           packagesMap.set(domain, { domainVarName, pkg })
+        }
+        else {
+          const existing = packagesMap.get(domain)!
+          // Prefer shorter variable names (usually the primary ones)
+          // If lengths are equal, prefer alphabetically first (for deterministic results)
+          if (domainVarName.length < existing.domainVarName.length
+            || (domainVarName.length === existing.domainVarName.length && domainVarName < existing.domainVarName)) {
+            packagesMap.set(domain, { domainVarName, pkg })
+          }
         }
       }
     })

@@ -1,0 +1,77 @@
+# cowsay
+
+> apjanke's fork of the classic cowsay project
+
+## Package Information
+
+- **Domain**: `github.com/cowsay-org/cowsay`
+- **Name**: `cowsay`
+- **Homepage**: Not specified
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/cowsay-org/cowsay/package.yml)
+
+## Installation
+
+```bash
+# Install with launchpad
+launchpad install cowsay
+```
+
+## Programs
+
+This package provides the following executable programs:
+
+- `cowsay`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `3.8.4`, `3.8.3`, `3.8.2`, `3.8.1`, `3.8.0`
+- `3.7.0`
+
+</details>
+
+**Latest Version**: `3.8.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) cowsay -- $SHELL -i
+```
+
+## Dependencies
+
+This package depends on:
+
+- `perl.org^5`
+
+## Related Packages
+
+These packages work well with cowsay:
+
+- `PERL5LIB^{{prefix}}/lib/perl5:$PERL5LIB`
+
+## Usage Examples
+
+```typescript
+import { pantry } from 'ts-pkgx'
+
+// Access this package
+const pkg = pantry.cowsay
+
+console.log(`Package: ${pkg.name}`)
+console.log(`Description: ${pkg.description}`)
+console.log(`Programs: ${pkg.programs.join(', ')}`)
+```
+
+## Links
+
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/cowsay-org/cowsay/package.yml)
+- [Homepage](#)
+- [Back to Package Catalog](../package-catalog.md)
+
+---
+
+*This documentation was auto-generated from package data.*

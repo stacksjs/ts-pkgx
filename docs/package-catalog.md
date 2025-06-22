@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-06-22T20:46:15.564Z
+- **Last Updated**: 2025-06-22T20:55:02.185Z
 
 ## Table of Contents
 
