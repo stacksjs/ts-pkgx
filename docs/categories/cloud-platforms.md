@@ -6,7 +6,7 @@ Packages related to cloud platforms.
 
 ## Packages
 
-### [fly.io](../packages/flyio.md) (fly)
+### [fly.io](../packages/fly.io/index.md) (fly)
 
 Command line tools for fly.io services
 
@@ -16,7 +16,7 @@ Command line tools for fly.io services
 
 ---
 
-### [heroku.com](../packages/herokucom.md) (heroku)
+### [heroku.com](../packages/heroku.com/index.md) (heroku)
 
 CLI for Heroku
 
@@ -26,7 +26,7 @@ CLI for Heroku
 
 ---
 
-### [planetscale.com](../packages/planetscalecom.md) (pscale)
+### [planetscale.com](../packages/planetscale.com/index.md) (pscale)
 
 The CLI for PlanetScale Database
 
@@ -36,7 +36,7 @@ The CLI for PlanetScale Database
 
 ---
 
-### [railway.app](../packages/railwayapp.md) (railway)
+### [railway.app](../packages/railway.app/index.md) (railway)
 
 Develop and deploy code with zero configuration
 
@@ -46,7 +46,7 @@ Develop and deploy code with zero configuration
 
 ---
 
-### [render.com](../packages/rendercom.md) (render)
+### [render.com](../packages/render.com/index.md) (render)
 
 Command-line interface for Render
 

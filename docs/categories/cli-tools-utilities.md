@@ -6,7 +6,7 @@ Command-line utilities and system tools.
 
 ## Packages
 
-### [htop.dev](../packages/htopdev.md) (htop)
+### [htop.dev](../packages/htop.dev/index.md) (htop)
 
 Improved top (interactive process viewer)
 
@@ -16,7 +16,7 @@ Improved top (interactive process viewer)
 
 ---
 
-### [ohmyposh.dev](../packages/ohmyposhdev.md) (oh-my-posh)
+### [ohmyposh.dev](../packages/ohmyposh.dev/index.md) (oh-my-posh)
 
 The most customisable and low-latency cross platform/shell prompt renderer
 
@@ -26,7 +26,7 @@ The most customisable and low-latency cross platform/shell prompt renderer
 
 ---
 
-### [starship.rs](../packages/starshiprs.md) (starship)
+### [starship.rs](../packages/starship.rs/index.md) (starship)
 
 ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
@@ -36,7 +36,7 @@ The most customisable and low-latency cross platform/shell prompt renderer
 
 ---
 
-### [tree-sitter.github.io](../packages/tree_sittergithubio.md) (tree-sitter)
+### [tree-sitter.github.io](../packages/tree-sitter.github.io/index.md) (tree-sitter)
 
 Parser generator tool and incremental parsing library
 
@@ -46,7 +46,7 @@ Parser generator tool and incremental parsing library
 
 ---
 
-### [zsh.sourceforge.io](../packages/zshsourceforgeio.md) (zsh)
+### [zsh.sourceforge.io](../packages/zsh.sourceforge.io/index.md) (zsh)
 
 UNIX shell (command interpreter)
 

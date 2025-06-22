@@ -6,7 +6,7 @@ Packages related to cryptocurrency.
 
 ## Packages
 
-### [bitcoin.org](../packages/bitcoinorg.md) (bitcoin)
+### [bitcoin.org](../packages/bitcoin.org/index.md) (bitcoin)
 
 Decentralized, peer to peer payment network
 
@@ -16,7 +16,7 @@ Decentralized, peer to peer payment network
 
 ---
 
-### [elementsproject.org](../packages/elementsprojectorg.md)
+### [elementsproject.org](../packages/elementsproject.org/index.md)
 
 Open Source implementation of advanced blockchain features extending the Bitcoin protocol
 
@@ -26,7 +26,7 @@ Open Source implementation of advanced blockchain features extending the Bitcoin
 
 ---
 
-### [getfoundry.sh](../packages/getfoundrysh.md)
+### [getfoundry.sh](../packages/getfoundry.sh/index.md)
 
 Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.
 
@@ -36,7 +36,7 @@ Foundry is a blazing fast, portable and modular toolkit for Ethereum application
 
 ---
 
-### [ghostscript.com](../packages/ghostscriptcom.md)
+### [ghostscript.com](../packages/ghostscript.com/index.md)
 
 This is purely for downloads, please check the website for full information
 
@@ -46,7 +46,7 @@ This is purely for downloads, please check the website for full information
 
 ---
 
-### [solana.com](../packages/solanacom.md) (solana)
+### [solana.com](../packages/solana.com/index.md) (solana)
 
 Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces.
 

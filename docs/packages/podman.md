@@ -61,7 +61,7 @@ This package depends on:
 
 These packages work well with podman:
 
-- [`openssh.com`](opensshcom.md) - 
+- [`openssh.com`](./opensshcom.md) - 
 
 ## Usage Examples
 

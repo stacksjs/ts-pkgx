@@ -6,7 +6,7 @@ Popular programming languages and their runtimes available through pkgx.
 
 ## Packages
 
-### [erlang.org](../packages/erlangorg.md)
+### [erlang.org](../packages/erlang.org/index.md)
 
 Programming language for highly scalable real-time systems
 
@@ -16,7 +16,7 @@ Programming language for highly scalable real-time systems
 
 ---
 
-### [go.dev](../packages/godev.md) (go)
+### [go.dev](../packages/go.dev/index.md) (go)
 
 The Go programming language
 
@@ -26,7 +26,7 @@ The Go programming language
 
 ---
 
-### [haskell.org](../packages/haskellorg.md)
+### [haskell.org](../packages/haskell.org/index.md)
 
 Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).
 
@@ -36,7 +36,7 @@ Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC'
 
 ---
 
-### [julialang.org](../packages/julialangorg.md) (julia)
+### [julialang.org](../packages/julialang.org/index.md) (julia)
 
 The Julia Programming Language
 
@@ -46,7 +46,7 @@ The Julia Programming Language
 
 ---
 
-### [kotlinlang.org](../packages/kotlinlangorg.md)
+### [kotlinlang.org](../packages/kotlinlang.org/index.md)
 
 Statically typed programming language for the JVM
 
@@ -56,7 +56,7 @@ Statically typed programming language for the JVM
 
 ---
 
-### [lua.org](../packages/luaorg.md) (lua)
+### [lua.org](../packages/lua.org/index.md) (lua)
 
 Powerful, lightweight programming language
 
@@ -66,7 +66,7 @@ Powerful, lightweight programming language
 
 ---
 
-### [luajit.org](../packages/luajitorg.md) (luajit)
+### [luajit.org](../packages/luajit.org/index.md) (luajit)
 
 Mirror of the LuaJIT git repository
 
@@ -76,7 +76,7 @@ Mirror of the LuaJIT git repository
 
 ---
 
-### [nodejs.org](../packages/nodejsorg.md) (node)
+### [nodejs.org](../packages/nodejs.org/index.md) (node)
 
 Platform built on V8 to build network applications
 
@@ -86,7 +86,7 @@ Platform built on V8 to build network applications
 
 ---
 
-### [perl.org](../packages/perlorg.md)
+### [perl.org](../packages/perl.org/index.md)
 
 Highly capable, feature-rich programming language
 
@@ -96,7 +96,7 @@ Highly capable, feature-rich programming language
 
 ---
 
-### [php.net](../packages/phpnet.md) (php)
+### [php.net](../packages/php.net/index.md) (php)
 
 General-purpose scripting language
 
@@ -106,7 +106,7 @@ General-purpose scripting language
 
 ---
 
-### [python.org](../packages/pythonorg.md) (python, py)
+### [python.org](../packages/python.org/index.md) (python, py)
 
 The Python programming language
 
@@ -116,7 +116,7 @@ The Python programming language
 
 ---
 
-### [swift.org](../packages/swiftorg.md) (swift)
+### [swift.org](../packages/swift.org/index.md) (swift)
 
 The Swift Programming Language
 
@@ -126,7 +126,7 @@ The Swift Programming Language
 
 ---
 
-### [tinygo.org](../packages/tinygoorg.md) (tinygo)
+### [tinygo.org](../packages/tinygo.org/index.md) (tinygo)
 
 Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM.
 
@@ -136,7 +136,7 @@ Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and com
 
 ---
 
-### [ziglang.org](../packages/ziglangorg.md) (zig)
+### [ziglang.org](../packages/ziglang.org/index.md) (zig)
 
 General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
 

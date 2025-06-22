@@ -6,7 +6,7 @@ Packages related to embedded & iot.
 
 ## Packages
 
-### [qemu.org](../packages/qemuorg.md) (qemu)
+### [qemu.org](../packages/qemu.org/index.md) (qemu)
 
 Generic machine emulator and virtualizer
 

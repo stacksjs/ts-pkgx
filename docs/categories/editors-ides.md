@@ -6,7 +6,7 @@ Packages related to editors & ides.
 
 ## Packages
 
-### [lunarvim.org](../packages/lunarvimorg.md)
+### [lunarvim.org](../packages/lunarvim.org/index.md)
 
 🌙 LunarVim is an IDE layer for Neovim. Completely free and community driven.
 
@@ -16,7 +16,7 @@ Packages related to editors & ides.
 
 ---
 
-### [macvim.org](../packages/macvimorg.md)
+### [macvim.org](../packages/macvim.org/index.md)
 
 Vim - the text editor - for macOS
 
@@ -26,7 +26,7 @@ Vim - the text editor - for macOS
 
 ---
 
-### [neovim.io](../packages/neovimio.md) (nvim)
+### [neovim.io](../packages/neovim.io/index.md) (nvim)
 
 Ambitious Vim-fork focused on extensibility and agility
 
@@ -36,7 +36,7 @@ Ambitious Vim-fork focused on extensibility and agility
 
 ---
 
-### [vim.org](../packages/vimorg.md) (vim, vi)
+### [vim.org](../packages/vim.org/index.md) (vim, vi)
 
 The official Vim repository
 

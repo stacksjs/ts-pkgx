@@ -6,7 +6,7 @@ Packages related to documentation & text processing.
 
 ## Packages
 
-### [asciidoctor.org](../packages/asciidoctororg.md) (asciidoctor)
+### [asciidoctor.org](../packages/asciidoctor.org/index.md) (asciidoctor)
 
 :gem: A fast, open source text processor and publishing toolchain, written in Ruby, for converting AsciiDoc content to HTML 5, DocBook 5, and other formats.
 
@@ -16,7 +16,7 @@ Packages related to documentation & text processing.
 
 ---
 
-### [mkdocs.org](../packages/mkdocsorg.md) (mkdocs)
+### [mkdocs.org](../packages/mkdocs.org/index.md) (mkdocs)
 
 Project documentation with Markdown.
 
@@ -26,7 +26,7 @@ Project documentation with Markdown.
 
 ---
 
-### [pandoc.org](../packages/pandocorg.md) (pandoc)
+### [pandoc.org](../packages/pandoc.org/index.md) (pandoc)
 
 Swiss-army knife of markup format conversion
 
@@ -36,7 +36,7 @@ Swiss-army knife of markup format conversion
 
 ---
 
-### [tectonic-typesetting.github.io](../packages/tectonic_typesettinggithubio.md) (tectonic)
+### [tectonic-typesetting.github.io](../packages/tectonic-typesetting.github.io/index.md) (tectonic)
 
 A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive.
 
@@ -46,7 +46,7 @@ A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and Te
 
 ---
 
-### [typst.app](../packages/typstapp.md) (typst)
+### [typst.app](../packages/typst.app/index.md) (typst)
 
 A new markup-based typesetting system that is powerful and easy to learn.
 

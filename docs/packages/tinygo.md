@@ -51,7 +51,7 @@ This package depends on:
 
 These packages work well with tinygo:
 
-- [`llvm.org`](llvmorg.md) - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
+- [`llvm.org`](./llvmorg.md) - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
 
 ## Usage Examples
 

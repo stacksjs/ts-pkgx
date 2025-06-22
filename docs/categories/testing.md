@@ -6,7 +6,7 @@ Packages related to testing.
 
 ## Packages
 
-### [pytest.org](../packages/pytestorg.md) (pytest)
+### [pytest.org](../packages/pytest.org/index.md) (pytest)
 
 The pytest framework makes it easy to write small tests, yet scales to support complex functional testing
 

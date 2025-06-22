@@ -80,7 +80,7 @@ This package depends on:
 
 These packages work well with node:
 
-- [`npmjs.com`](npmjscom.md) - the package manager for JavaScript
+- [`npmjs.com`](./npmjscom.md) - the package manager for JavaScript
 
 ## Usage Examples
 

@@ -58,10 +58,10 @@ This package depends on:
 These packages work well with projen:
 
 - `git-scm.org`
-- [`classic.yarnpkg.com`](classicyarnpkgcom.md) - The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
-- [`maven.apache.org`](mavenapacheorg.md) - Java-based project management
-- [`python.org`](pythonorg.md) - The Python programming language
-- [`go.dev`](godev.md) - The Go programming language
+- [`classic.yarnpkg.com`](./classicyarnpkgcom.md) - The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
+- [`maven.apache.org`](./mavenapacheorg.md) - Java-based project management
+- [`python.org`](./pythonorg.md) - The Python programming language
+- [`go.dev`](./godev.md) - The Go programming language
 
 ## Usage Examples
 

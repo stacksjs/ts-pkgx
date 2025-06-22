@@ -6,7 +6,7 @@ Packages related to financial tools.
 
 ## Packages
 
-### [raccoin.org](../packages/raccoinorg.md) (raccoin)
+### [raccoin.org](../packages/raccoin.org/index.md) (raccoin)
 
 Crypto Portfolio and Tax Reporting Tool
 

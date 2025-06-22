@@ -6,7 +6,7 @@ Packages related to build tools & automation.
 
 ## Packages
 
-### [cmake.org](../packages/cmakeorg.md)
+### [cmake.org](../packages/cmake.org/index.md)
 
 Mirror of CMake upstream repository
 
@@ -16,7 +16,7 @@ Mirror of CMake upstream repository
 
 ---
 
-### [gradle.org](../packages/gradleorg.md) (gradle)
+### [gradle.org](../packages/gradle.org/index.md) (gradle)
 
 Open-source build automation tool based on the Groovy and Kotlin DSL
 
@@ -26,7 +26,7 @@ Open-source build automation tool based on the Groovy and Kotlin DSL
 
 ---
 
-### [just.systems](../packages/justsystems.md) (just)
+### [just.systems](../packages/just.systems/index.md) (just)
 
 Handy way to save and run project-specific commands
 
@@ -36,7 +36,7 @@ Handy way to save and run project-specific commands
 
 ---
 
-### [mesonbuild.com](../packages/mesonbuildcom.md) (meson)
+### [mesonbuild.com](../packages/mesonbuild.com/index.md) (meson)
 
 Fast and user friendly build system
 
@@ -46,7 +46,7 @@ Fast and user friendly build system
 
 ---
 
-### [scons.org](../packages/sconsorg.md) (scons)
+### [scons.org](../packages/scons.org/index.md) (scons)
 
 Substitute for classic 'make' tool with autoconf/automake functionality
 
@@ -56,7 +56,7 @@ Substitute for classic 'make' tool with autoconf/automake functionality
 
 ---
 
-### [taskfile.dev](../packages/taskfiledev.md) (task)
+### [taskfile.dev](../packages/taskfile.dev/index.md) (task)
 
 A task runner / simpler Make alternative written in Go
 

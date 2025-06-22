@@ -62,7 +62,7 @@ This package depends on:
 These packages work well with elizaOS:
 
 - `git-scm.org`
-- [`ffmpeg.org`](ffmpegorg.md) - Play, record, convert, and stream audio and video
+- [`ffmpeg.org`](./ffmpegorg.md) - Play, record, convert, and stream audio and video
 
 ## Usage Examples
 

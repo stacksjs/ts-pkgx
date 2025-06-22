@@ -98,7 +98,7 @@ This package depends on:
 
 These packages work well with python:
 
-- [`pip.pypa.io`](pippypaio.md) - The Python package installer
+- [`pip.pypa.io`](./pippypaio.md) - The Python package installer
 
 ## Usage Examples
 

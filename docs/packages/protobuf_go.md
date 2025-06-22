@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) protoc-gen-go -- $SHELL -i
 
 These packages work well with protoc-gen-go:
 
-- [`protobuf.dev`](protobufdev.md) - Protocol Buffers - Google's data interchange format
+- [`protobuf.dev`](./protobufdev.md) - Protocol Buffers - Google's data interchange format
 
 ## Usage Examples
 

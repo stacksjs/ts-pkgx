@@ -6,7 +6,7 @@ Packages related to artificial intelligence.
 
 ## Packages
 
-### [huggingface.co](../packages/huggingfaceco.md) (huggingface-cli)
+### [huggingface.co](../packages/huggingface.co/index.md) (huggingface-cli)
 
 The official Python client for the Huggingface Hub.
 
@@ -16,7 +16,7 @@ The official Python client for the Huggingface Hub.
 
 ---
 
-### [jupyter.org](../packages/jupyterorg.md)
+### [jupyter.org](../packages/jupyter.org/index.md)
 
 JupyterLab computational environment.
 
@@ -26,7 +26,7 @@ JupyterLab computational environment.
 
 ---
 
-### [kaggle.com](../packages/kagglecom.md) (kaggle)
+### [kaggle.com](../packages/kaggle.com/index.md) (kaggle)
 
 Official Kaggle API
 
@@ -36,7 +36,7 @@ Official Kaggle API
 
 ---
 
-### [localai.io](../packages/localaiio.md) (local-ai)
+### [localai.io](../packages/localai.io/index.md) (local-ai)
 
 :robot: The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. Drop-in replacement for OpenAI, running on consumer-grade hardware. No GPU required. Runs gguf, transformers, diffusers and many more models architectures. Features: Generate Text, Audio, Video, Images, Voice Cloning, Distributed, P2P inference
 
@@ -46,7 +46,7 @@ Official Kaggle API
 
 ---
 
-### [numpy.org](../packages/numpyorg.md) (f2py)
+### [numpy.org](../packages/numpy.org/index.md) (f2py)
 
 The fundamental package for scientific computing with Python.
 
@@ -56,7 +56,7 @@ The fundamental package for scientific computing with Python.
 
 ---
 
-### [ollama.ai](../packages/ollamaai.md) (ollama)
+### [ollama.ai](../packages/ollama.ai/index.md) (ollama)
 
 Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models.
 

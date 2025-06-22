@@ -6,7 +6,7 @@ Packages related to security & cryptography.
 
 ## Packages
 
-### [bitwarden.com](../packages/bitwardencom.md) (bw)
+### [bitwarden.com](../packages/bitwarden.com/index.md) (bw)
 
 Secure and free password manager for all of your devices
 
@@ -16,7 +16,7 @@ Secure and free password manager for all of your devices
 
 ---
 
-### [gnupg.org](../packages/gnupgorg.md)
+### [gnupg.org](../packages/gnupg.org/index.md)
 
 GNU Pretty Good Privacy (PGP) package
 
@@ -26,7 +26,7 @@ GNU Pretty Good Privacy (PGP) package
 
 ---
 
-### [mkcert.dev](../packages/mkcertdev.md) (mkcert)
+### [mkcert.dev](../packages/mkcert.dev/index.md) (mkcert)
 
 A simple zero-config tool to make locally trusted development certificates with any names you'd like.
 
@@ -36,7 +36,7 @@ A simple zero-config tool to make locally trusted development certificates with 
 
 ---
 
-### [openssl.org](../packages/opensslorg.md) (OpenSSL)
+### [openssl.org](../packages/openssl.org/index.md) (OpenSSL)
 
 TLS/SSL and crypto library with QUIC APIs
 
@@ -46,7 +46,7 @@ TLS/SSL and crypto library with QUIC APIs
 
 ---
 
-### [snyk.io](../packages/snykio.md) (snyk)
+### [snyk.io](../packages/snyk.io/index.md) (snyk)
 
 Scans and monitors projects for security vulnerabilities
 

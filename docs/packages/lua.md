@@ -51,7 +51,7 @@ This package depends on:
 
 These packages work well with lua:
 
-- [`luarocks.org`](luarocksorg.md) - LuaRocks is the package manager for the Lua programming language.
+- [`luarocks.org`](./luarocksorg.md) - LuaRocks is the package manager for the Lua programming language.
 
 ## Usage Examples
 

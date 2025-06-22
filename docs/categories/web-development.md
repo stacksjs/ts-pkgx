@@ -6,7 +6,7 @@ Packages related to web development.
 
 ## Packages
 
-### [laravel.com](../packages/laravelcom.md) (laravel)
+### [laravel.com](../packages/laravel.com/index.md) (laravel)
 
 The Laravel application installer.
 
@@ -16,7 +16,7 @@ The Laravel application installer.
 
 ---
 
-### [symfony.com](../packages/symfonycom.md) (symfony)
+### [symfony.com](../packages/symfony.com/index.md) (symfony)
 
 The Symfony CLI tool
 
@@ -26,7 +26,7 @@ The Symfony CLI tool
 
 ---
 
-### [tailwindcss.com](../packages/tailwindcsscom.md) (tailwindcss)
+### [tailwindcss.com](../packages/tailwindcss.com/index.md) (tailwindcss)
 
 A utility-first CSS framework for rapid UI development.
 
@@ -36,7 +36,7 @@ A utility-first CSS framework for rapid UI development.
 
 ---
 
-### [vitejs.dev](../packages/vitejsdev.md) (vite)
+### [vitejs.dev](../packages/vitejs.dev/index.md) (vite)
 
 Next generation frontend tooling. It's fast!
 

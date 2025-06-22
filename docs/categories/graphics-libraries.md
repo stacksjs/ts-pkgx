@@ -6,7 +6,7 @@ Packages related to graphics libraries.
 
 ## Packages
 
-### [cairographics.org](../packages/cairographicsorg.md) (cairo-trace)
+### [cairographics.org](../packages/cairographics.org/index.md) (cairo-trace)
 
 Vector graphics library with cross-device output support
 
@@ -16,7 +16,7 @@ Vector graphics library with cross-device output support
 
 ---
 
-### [libsdl.org](../packages/libsdlorg.md)
+### [libsdl.org](../packages/libsdl.org/index.md)
 
 Simple Directmedia Layer
 

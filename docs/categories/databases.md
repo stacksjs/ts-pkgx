@@ -6,7 +6,7 @@ Database systems and data storage solutions.
 
 ## Packages
 
-### [duckdb.org](../packages/duckdborg.md) (duckdb)
+### [duckdb.org](../packages/duckdb.org/index.md) (duckdb)
 
 DuckDB is an analytical in-process SQL database management system
 
@@ -16,7 +16,7 @@ DuckDB is an analytical in-process SQL database management system
 
 ---
 
-### [etcd.io](../packages/etcdio.md) (etcd)
+### [etcd.io](../packages/etcd.io/index.md) (etcd)
 
 Distributed reliable key-value store for the most critical data of a distributed system
 
@@ -26,7 +26,7 @@ Distributed reliable key-value store for the most critical data of a distributed
 
 ---
 
-### [mongodb.com](../packages/mongodbcom.md)
+### [mongodb.com](../packages/mongodb.com/index.md)
 
 The MongoDB Database
 
@@ -36,7 +36,7 @@ The MongoDB Database
 
 ---
 
-### [mysql.com](../packages/mysqlcom.md)
+### [mysql.com](../packages/mysql.com/index.md)
 
 MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.
 
@@ -46,7 +46,7 @@ MySQL Server, the world's most popular open source database, and MySQL Cluster, 
 
 ---
 
-### [opensearch.org](../packages/opensearchorg.md) (opensearch)
+### [opensearch.org](../packages/opensearch.org/index.md) (opensearch)
 
 🔎 Open source distributed and RESTful search engine.
 
@@ -56,7 +56,7 @@ MySQL Server, the world's most popular open source database, and MySQL Cluster, 
 
 ---
 
-### [postgresql.org](../packages/postgresqlorg.md)
+### [postgresql.org](../packages/postgresql.org/index.md)
 
 Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
 
@@ -66,7 +66,7 @@ Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirr
 
 ---
 
-### [redis.io](../packages/redisio.md) (redis)
+### [redis.io](../packages/redis.io/index.md) (redis)
 
 Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps.
 
@@ -76,7 +76,7 @@ Redis is an in-memory database that persists on disk. The data model is key-valu
 
 ---
 
-### [sqlite.org](../packages/sqliteorg.md) (sqlite3)
+### [sqlite.org](../packages/sqlite.org/index.md) (sqlite3)
 
 Official Git mirror of the SQLite source tree
 
@@ -86,7 +86,7 @@ Official Git mirror of the SQLite source tree
 
 ---
 
-### [surrealdb.com](../packages/surrealdbcom.md) (surreal)
+### [surrealdb.com](../packages/surrealdb.com/index.md) (surreal)
 
 A scalable, distributed, collaborative, document-graph database, for the realtime web
 
@@ -96,7 +96,7 @@ A scalable, distributed, collaborative, document-graph database, for the realtim
 
 ---
 
-### [turso.tech](../packages/tursotech.md) (turso)
+### [turso.tech](../packages/turso.tech/index.md) (turso)
 
 Command line interface to Turso.
 
@@ -106,7 +106,7 @@ Command line interface to Turso.
 
 ---
 
-### [valkey.io](../packages/valkeyio.md) (valkey)
+### [valkey.io](../packages/valkey.io/index.md) (valkey)
 
 A flexible distributed key-value datastore that is optimized for caching and other realtime workloads.
 

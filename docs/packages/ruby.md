@@ -71,7 +71,7 @@ This package depends on:
 
 These packages work well with ruby-lang.org:
 
-- [`rubygems.org`](rubygemsorg.md) - Powerful, clean, object-oriented scripting language
+- [`rubygems.org`](./rubygemsorg.md) - Powerful, clean, object-oriented scripting language
 
 ## Usage Examples
 

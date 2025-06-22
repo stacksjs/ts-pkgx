@@ -6,7 +6,7 @@ Packages related to package managers.
 
 ## Packages
 
-### [bun.sh](../packages/bunsh.md) (bun)
+### [bun.sh](../packages/bun.sh/index.md) (bun)
 
 Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
 
@@ -16,7 +16,7 @@ Incredibly fast JavaScript runtime, bundler, test runner, and package manager �
 
 ---
 
-### [classic.yarnpkg.com](../packages/classicyarnpkgcom.md) (yarn)
+### [classic.yarnpkg.com](../packages/classic.yarnpkg.com/index.md) (yarn)
 
 The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
 
@@ -26,7 +26,7 @@ The 1.x line is frozen - features and bugfixes now happen on https://github.com/
 
 ---
 
-### [cocoapods.org](../packages/cocoapodsorg.md) (pod)
+### [cocoapods.org](../packages/cocoapods.org/index.md) (pod)
 
 Dependency manager for Cocoa projects
 
@@ -36,7 +36,7 @@ Dependency manager for Cocoa projects
 
 ---
 
-### [nixpacks.com](../packages/nixpackscom.md) (nixpacks)
+### [nixpacks.com](../packages/nixpacks.com/index.md) (nixpacks)
 
 App source + Nix packages + Docker = Image
 
@@ -46,7 +46,7 @@ App source + Nix packages + Docker = Image
 
 ---
 
-### [npmjs.com](../packages/npmjscom.md) (npm)
+### [npmjs.com](../packages/npmjs.com/index.md) (npm)
 
 the package manager for JavaScript
 
@@ -56,7 +56,7 @@ the package manager for JavaScript
 
 ---
 
-### [pdm.fming.dev](../packages/pdmfmingdev.md) (pdm)
+### [pdm.fming.dev](../packages/pdm.fming.dev/index.md) (pdm)
 
 A modern Python package and dependency manager supporting the latest PEP standards
 
@@ -66,7 +66,7 @@ A modern Python package and dependency manager supporting the latest PEP standar
 
 ---
 
-### [pipenv.pypa.io](../packages/pipenvpypaio.md) (pipenv)
+### [pipenv.pypa.io](../packages/pipenv.pypa.io/index.md) (pipenv)
 
 Python Development Workflow for Humans.
 
@@ -76,7 +76,7 @@ Python Development Workflow for Humans.
 
 ---
 
-### [pkgx.sh](../packages/pkgxsh.md) (pkgx)
+### [pkgx.sh](../packages/pkgx.sh/index.md) (pkgx)
 
 Standalone binary that can run anything
 
@@ -86,7 +86,7 @@ Standalone binary that can run anything
 
 ---
 
-### [pnpm.io](../packages/pnpmio.md) (pnpm)
+### [pnpm.io](../packages/pnpm.io/index.md) (pnpm)
 
 Fast, disk space efficient package manager
 
@@ -96,7 +96,7 @@ Fast, disk space efficient package manager
 
 ---
 
-### [yarnpkg.com](../packages/yarnpkgcom.md) (yarn)
+### [yarnpkg.com](../packages/yarnpkg.com/index.md) (yarn)
 
 📦🐈 Active development trunk for Yarn ⚒
 

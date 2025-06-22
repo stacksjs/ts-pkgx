@@ -6,7 +6,7 @@ Network tools, protocols, and communication software.
 
 ## Packages
 
-### [caddyserver.com](../packages/caddyservercom.md) (caddy)
+### [caddyserver.com](../packages/caddyserver.com/index.md) (caddy)
 
 Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
 
@@ -16,7 +16,7 @@ Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
 
 ---
 
-### [curl.se](../packages/curlse.md) (cURL, curl)
+### [curl.se](../packages/curl.se/index.md) (cURL, curl)
 
 A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features
 
@@ -26,7 +26,7 @@ A command line tool and library for transferring data with URL syntax, supportin
 
 ---
 
-### [httpie.io](../packages/httpieio.md)
+### [httpie.io](../packages/httpie.io/index.md)
 
 🥧 HTTPie CLI — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more.
 
@@ -36,7 +36,7 @@ A command line tool and library for transferring data with URL syntax, supportin
 
 ---
 
-### [nginx.org](../packages/nginxorg.md) (nginx)
+### [nginx.org](../packages/nginx.org/index.md) (nginx)
 
 HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 
@@ -46,7 +46,7 @@ HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 
 ---
 
-### [nmap.org](../packages/nmaporg.md)
+### [nmap.org](../packages/nmap.org/index.md)
 
 Port scanning utility for large networks
 
@@ -56,7 +56,7 @@ Port scanning utility for large networks
 
 ---
 
-### [sshx.io](../packages/sshxio.md) (sshx)
+### [sshx.io](../packages/sshx.io/index.md) (sshx)
 
 Fast, collaborative live terminal sharing over the web
 
@@ -66,7 +66,7 @@ Fast, collaborative live terminal sharing over the web
 
 ---
 
-### [tcpdump.org](../packages/tcpdumporg.md) (pcap-config)
+### [tcpdump.org](../packages/tcpdump.org/index.md) (pcap-config)
 
 the LIBpcap interface to various kernel packet capture mechanism
 
@@ -76,7 +76,7 @@ the LIBpcap interface to various kernel packet capture mechanism
 
 ---
 
-### [traefik.io](../packages/traefikio.md) (traefik)
+### [traefik.io](../packages/traefik.io/index.md) (traefik)
 
 The Cloud Native Application Proxy
 
@@ -86,7 +86,7 @@ The Cloud Native Application Proxy
 
 ---
 
-### [wireshark.org](../packages/wiresharkorg.md)
+### [wireshark.org](../packages/wireshark.org/index.md)
 
 Network analyzer and capture tool - without graphical user interface
 

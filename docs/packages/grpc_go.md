@@ -55,9 +55,9 @@ This package depends on:
 
 These packages work well with protoc-gen-go-grpc:
 
-- [`protobuf.dev`](protobufdev.md) - Protocol Buffers - Google's data interchange format
-- [`abseil.io`](abseilio.md) - Abseil Common Libraries (C++)
-- [`go.dev`](godev.md) - The Go programming language
+- [`protobuf.dev`](./protobufdev.md) - Protocol Buffers - Google's data interchange format
+- [`abseil.io`](./abseilio.md) - Abseil Common Libraries (C++)
+- [`go.dev`](./godev.md) - The Go programming language
 
 ## Usage Examples
 

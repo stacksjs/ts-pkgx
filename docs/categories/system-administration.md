@@ -6,7 +6,7 @@ Packages related to system administration.
 
 ## Packages
 
-### [htop.dev](../packages/htopdev.md) (htop)
+### [htop.dev](../packages/htop.dev/index.md) (htop)
 
 Improved top (interactive process viewer)
 
@@ -16,7 +16,7 @@ Improved top (interactive process viewer)
 
 ---
 
-### [rsync.samba.org](../packages/rsyncsambaorg.md) (rsync)
+### [rsync.samba.org](../packages/rsync.samba.org/index.md) (rsync)
 
 An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases.
 
@@ -26,7 +26,7 @@ An open source utility that provides fast incremental file transfer. It also has
 
 ---
 
-### [strace.io](../packages/straceio.md) (strace)
+### [strace.io](../packages/strace.io/index.md) (strace)
 
 strace is a diagnostic, debugging and instructional userspace utility for Linux
 
@@ -36,7 +36,7 @@ strace is a diagnostic, debugging and instructional userspace utility for Linux
 
 ---
 
-### [systemd.io](../packages/systemdio.md)
+### [systemd.io](../packages/systemd.io/index.md)
 
 The systemd System and Service Manager
 
@@ -46,7 +46,7 @@ The systemd System and Service Manager
 
 ---
 
-### [tcpdump.org](../packages/tcpdumporg.md) (pcap-config)
+### [tcpdump.org](../packages/tcpdump.org/index.md) (pcap-config)
 
 the LIBpcap interface to various kernel packet capture mechanism
 

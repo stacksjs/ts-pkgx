@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +pkl-lang.org@0.28.2 -- $SHELL -i
 
 These packages work well with pkl-lang.org:
 
-- [`openjdk.org`](openjdkorg.md) - Development kit for the Java programming language
+- [`openjdk.org`](./openjdkorg.md) - Development kit for the Java programming language
 
 ## Usage Examples
 

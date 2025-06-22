@@ -53,7 +53,7 @@ This package depends on:
 
 These packages work well with streamlink:
 
-- [`ffmpeg.org`](ffmpegorg.md) - Play, record, convert, and stream audio and video
+- [`ffmpeg.org`](./ffmpegorg.md) - Play, record, convert, and stream audio and video
 
 ## Usage Examples
 

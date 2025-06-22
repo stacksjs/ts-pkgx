@@ -6,7 +6,7 @@ Audio, video, and image processing tools.
 
 ## Packages
 
-### [ffmpeg.org](../packages/ffmpegorg.md)
+### [ffmpeg.org](../packages/ffmpeg.org/index.md)
 
 Play, record, convert, and stream audio and video
 
@@ -16,7 +16,7 @@ Play, record, convert, and stream audio and video
 
 ---
 
-### [graphicsmagick.org](../packages/graphicsmagickorg.md) (gm)
+### [graphicsmagick.org](../packages/graphicsmagick.org/index.md) (gm)
 
 Image processing tools collection
 
@@ -26,7 +26,7 @@ Image processing tools collection
 
 ---
 
-### [imagemagick.org](../packages/imagemagickorg.md)
+### [imagemagick.org](../packages/imagemagick.org/index.md)
 
 ImageMagick is a powerful, open-source software suite for creating, editing, converting, and manipulating images in over 200 formats. Ideal for web developers, graphic designers, and researchers, it offers versatile tools for image processing, including batch processing, format conversion, and complex image transformations.
 
@@ -36,7 +36,7 @@ ImageMagick is a powerful, open-source software suite for creating, editing, con
 
 ---
 
-### [libvips.org](../packages/libvipsorg.md) (vips)
+### [libvips.org](../packages/libvips.org/index.md) (vips)
 
 A fast image processing library with low memory needs.
 
@@ -46,7 +46,7 @@ A fast image processing library with low memory needs.
 
 ---
 
-### [mpv.io](../packages/mpvio.md) (mpv)
+### [mpv.io](../packages/mpv.io/index.md) (mpv)
 
 Media player based on MPlayer and mplayer2
 
@@ -56,7 +56,7 @@ Media player based on MPlayer and mplayer2
 
 ---
 
-### [streamlink.github.io](../packages/streamlinkgithubio.md) (streamlink)
+### [streamlink.github.io](../packages/streamlink.github.io/index.md) (streamlink)
 
 Streamlink is a CLI utility which pipes video streams from various services into a video player
 
@@ -66,7 +66,7 @@ Streamlink is a CLI utility which pipes video streams from various services into
 
 ---
 
-### [youtube-dl.org](../packages/youtube_dlorg.md) (youtube-dl)
+### [youtube-dl.org](../packages/youtube-dl.org/index.md) (youtube-dl)
 
 Command-line program to download videos from YouTube.com and other video sites
 
@@ -76,7 +76,7 @@ Command-line program to download videos from YouTube.com and other video sites
 
 ---
 
-### [yt-dlp.org](../packages/yt_dlporg.md) (yt-dlp)
+### [yt-dlp.org](../packages/yt-dlp.org/index.md) (yt-dlp)
 
 A feature-rich command-line audio/video downloader
 
