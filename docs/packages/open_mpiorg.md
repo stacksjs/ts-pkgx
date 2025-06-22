@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +open-mpi.org -- $SHELL -i
+launchpad install open-mpi.org
 ```
 
 ## Programs

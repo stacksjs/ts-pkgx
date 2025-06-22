@@ -5,7 +5,7 @@
  * @version `5.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +docbook.org -- $SHELL -i`
+ * @install `launchpad install docbook.org`
  *
  * @example
  * ```typescript
@@ -39,7 +39,7 @@ export const docbookorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +docbook.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install docbook.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -51,6 +51,8 @@ export const docbookorgPackage = {
     '5.1.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +docbook.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docbook.org' as const,
 }
 
 export type DocbookorgPackage = typeof docbookorgPackage

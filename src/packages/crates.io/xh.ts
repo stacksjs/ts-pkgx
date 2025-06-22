@@ -73,6 +73,8 @@ export const xhPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xh' as const,
 }
 
 export type XhPackage = typeof xhPackage

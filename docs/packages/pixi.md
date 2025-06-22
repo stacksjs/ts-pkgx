@@ -1,11 +1,11 @@
-# prefix.dev
+# pixi
 
 > Package management made easy
 
 ## Package Information
 
 - **Domain**: `prefix.dev`
-- **Name**: `prefix.dev`
+- **Name**: `pixi`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/prefix.dev/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install pixi
 ## Programs
 
 This package provides the following executable programs:
-
-- `pixi`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pixi`
 
@@ -59,7 +53,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +prefix.dev@0.48.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) pixi -- $SHELL -i
 ```
 
 ## Dependencies

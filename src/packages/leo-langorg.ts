@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install leo`
- * @aliases `leo`
+ * @name `leo`
  * @dependencies `openssl.org^1.1`, `curl.se^8.4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.leo
  * // Or access via domain
  * const samePkg = pantry.leolangorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "leo-lang.org"
+ * console.log(pkg.name)        // "leo"
  * console.log(pkg.description) // "🦁 The Leo Programming Language. A Programming ..."
  * console.log(pkg.programs)    // ["leo"]
  * console.log(pkg.versions[0]) // "2.7.1" (latest)
@@ -32,7 +32,7 @@ export const leoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'leo-lang.org' as const,
+  name: 'leo' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -90,9 +90,9 @@ export const leoPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'leo',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) leo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install leo' as const,
 }
 
 export type LeoPackage = typeof leoPackage

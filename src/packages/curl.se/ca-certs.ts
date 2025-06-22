@@ -1,18 +1,18 @@
 /**
- * **ca-certs** - pkgx package
+ * **curl.se/ca-certs** - pkgx package
  *
  * @domain `curl.se/ca-certs`
  * @version `2025.5.20` (20 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +curl.se/ca-certs -- $SHELL -i`
+ * @install `launchpad install curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.curlsecacerts
- * console.log(pkg.name)        // "ca-certs"
+ * console.log(pkg.name)        // "curl.se/ca-certs"
  * console.log(pkg.versions[0]) // "2025.5.20" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const curlsecacertsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ca-certs' as const,
+  name: 'curl.se/ca-certs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +39,7 @@ export const curlsecacertsPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +curl.se/ca-certs -- $SHELL -i' as const,
+  installCommand: 'launchpad install curl.se/ca-certs' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -70,6 +70,8 @@ export const curlsecacertsPackage = {
     '2021.7.5',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +curl.se/ca-certs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install curl.se/ca-certs' as const,
 }
 
 export type CurlsecacertsPackage = typeof curlsecacertsPackage

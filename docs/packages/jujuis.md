@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) juju
+launchpad install juju
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +juju.is@3.6.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) juju -- $SHELL -i
 ```
 
 ## Usage Examples

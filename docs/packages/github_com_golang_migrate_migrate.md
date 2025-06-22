@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/golang-migrate/migrate@4.18.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) migrate -- $SHELL -i
 ```
 
 ## Usage Examples

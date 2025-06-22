@@ -1,11 +1,11 @@
-# libgcrypt
+# gnupg.org/libgcrypt
 
 > Cryptographic library based on the code from GnuPG
 
 ## Package Information
 
 - **Domain**: `gnupg.org/libgcrypt`
-- **Name**: `libgcrypt`
+- **Name**: `gnupg.org/libgcrypt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/libgcrypt/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnupg.org/libgcrypt -- $SHELL -i
+launchpad install gnupg.org/libgcrypt
 ```
 
 ## Programs

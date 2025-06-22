@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +htslib.org -- $SHELL -i
+launchpad install htslib.org
 ```
 
 ## Programs

@@ -1,11 +1,11 @@
-# libcbor
+# github.com/PJK/libcbor
 
 > CBOR protocol implementation for C
 
 ## Package Information
 
 - **Domain**: `github.com/PJK/libcbor`
-- **Name**: `libcbor`
+- **Name**: `github.com/PJK/libcbor`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/PJK/libcbor/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/PJK/libcbor -- $SHELL -i
+launchpad install github.com/PJK/libcbor
 ```
 
 ## Programs

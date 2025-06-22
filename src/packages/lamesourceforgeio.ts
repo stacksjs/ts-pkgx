@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install lame`
- * @aliases `lame`
+ * @name `lame`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.lame
  * // Or access via domain
  * const samePkg = pantry.lamesourceforgeio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "lame.sourceforge.io"
+ * console.log(pkg.name)        // "lame"
  * console.log(pkg.description) // "High quality MPEG Audio Layer III (MP3) encoder"
  * console.log(pkg.programs)    // ["lame"]
  * console.log(pkg.versions[0]) // "3.100.0" (latest)
@@ -31,7 +31,7 @@ export const lamePackage = {
   /**
    * The display name of this package.
    */
-  name: 'lame.sourceforge.io' as const,
+  name: 'lame' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const lamePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'lame',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) lame -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lame' as const,
 }
 
 export type LamePackage = typeof lamePackage

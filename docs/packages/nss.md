@@ -1,11 +1,11 @@
-# nss
+# mozilla.org/nss
 
 > Libraries for security-enabled client and server applications
 
 ## Package Information
 
 - **Domain**: `mozilla.org/nss`
-- **Name**: `nss`
+- **Name**: `mozilla.org/nss`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mozilla.org/nss/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mozilla.org/nss -- $SHELL -i
+launchpad install mozilla.org/nss
 ```
 
 ## Programs

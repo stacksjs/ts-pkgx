@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/regclient/regclient/regbot@0.8.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) regbot -- $SHELL -i
 ```
 
 ## Dependencies

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fluentci`
- * @aliases `fluentci`
+ * @name `fluentci`
  * @dependencies `dagger.io^0.10`, `deno.land^1.42`, `charm.sh/glow^1.5.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.fluentci
  * // Or access via domain
  * const samePkg = pantry.fluentciio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "fluentci.io"
+ * console.log(pkg.name)        // "fluentci"
  * console.log(pkg.description) // "Set up and run your CI locally or in any CI Pro..."
  * console.log(pkg.programs)    // ["fluentci"]
  * console.log(pkg.versions[0]) // "0.16.5" (latest)
@@ -32,7 +32,7 @@ export const fluentciPackage = {
   /**
    * The display name of this package.
    */
-  name: 'fluentci.io' as const,
+  name: 'fluentci' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -144,9 +144,9 @@ export const fluentciPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'fluentci',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fluentci -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fluentci' as const,
 }
 
 export type FluentciPackage = typeof fluentciPackage

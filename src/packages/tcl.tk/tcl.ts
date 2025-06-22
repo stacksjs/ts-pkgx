@@ -1,19 +1,19 @@
 /**
- * **tcl** - pkgx package
+ * **tcl.tk/tcl** - pkgx package
  *
  * @domain `tcl.tk/tcl`
  * @programs `sqlite3_analyzer`, `tclsh{{version.major}}.{{version.minor}}`, `tclsh`
  * @version `9.0.1` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +tcl.tk/tcl -- $SHELL -i`
+ * @install `launchpad install tcl.tk/tcl`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.tcltktcl
- * console.log(pkg.name)        // "tcl"
+ * console.log(pkg.name)        // "tcl.tk/tcl"
  * console.log(pkg.programs)    // ["sqlite3_analyzer", "tclsh{{version.major}}.{{version.minor}}", ...]
  * console.log(pkg.versions[0]) // "9.0.1" (latest)
  * ```
@@ -25,7 +25,7 @@ export const tcltktclPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tcl' as const,
+  name: 'tcl.tk/tcl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const tcltktclPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +tcl.tk/tcl -- $SHELL -i' as const,
+  installCommand: 'launchpad install tcl.tk/tcl' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,8 @@ export const tcltktclPackage = {
     '8.6.13',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tcl.tk/tcl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tcl.tk/tcl' as const,
 }
 
 export type TcltktclPackage = typeof tcltktclPackage

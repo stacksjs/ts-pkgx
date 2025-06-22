@@ -1,11 +1,11 @@
-# redis.io
+# redis
 
 > Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps.
 
 ## Package Information
 
 - **Domain**: `redis.io`
-- **Name**: `redis.io`
+- **Name**: `redis`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/redis.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +redis.io -- $SHELL -i
+launchpad install redis
 ```
 
 ## Programs
@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `redis-server`
 - `redis-cli`
 - `redis-benchmark`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `redis`
 
 ## Available Versions
 

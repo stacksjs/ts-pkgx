@@ -1,11 +1,11 @@
-# deno.land
+# deno
 
 > A modern runtime for JavaScript and TypeScript.
 
 ## Package Information
 
 - **Domain**: `deno.land`
-- **Name**: `deno.land`
+- **Name**: `deno`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/deno.land/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install deno
 ## Programs
 
 This package provides the following executable programs:
-
-- `deno`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `deno`
 
@@ -69,12 +63,12 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +deno.land@2.3.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) deno -- $SHELL -i
 ```
 
 ## Related Packages
 
-These packages work well with deno.land:
+These packages work well with deno:
 
 - `info-zip.org/unzip`
 

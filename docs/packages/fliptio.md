@@ -1,11 +1,11 @@
-# flipt.io
+# flipt
 
 > Enterprise-ready, GitOps enabled, CloudNative feature management solution
 
 ## Package Information
 
 - **Domain**: `flipt.io`
-- **Name**: `flipt.io`
+- **Name**: `flipt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/flipt.io/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install flipt.io
+launchpad install flipt
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `flipt`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `flipt`
 
@@ -50,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +flipt.io@1.58.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) flipt -- $SHELL -i
 ```
 
 ## Usage Examples

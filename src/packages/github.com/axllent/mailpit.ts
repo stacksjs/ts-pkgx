@@ -137,6 +137,8 @@ export const mailpitPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mailpit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mailpit' as const,
 }
 
 export type MailpitPackage = typeof mailpitPackage

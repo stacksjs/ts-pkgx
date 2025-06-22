@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install depot`
- * @aliases `depot`
+ * @name `depot`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.depot
  * // Or access via domain
  * const samePkg = pantry.depotdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "depot.dev"
+ * console.log(pkg.name)        // "depot"
  * console.log(pkg.description) // "🖥️ Depot CLI, build your Docker images in the ..."
  * console.log(pkg.programs)    // ["depot"]
  * console.log(pkg.versions[0]) // "2.88.0" (latest)
@@ -31,7 +31,7 @@ export const depotPackage = {
   /**
    * The display name of this package.
    */
-  name: 'depot.dev' as const,
+  name: 'depot' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -109,9 +109,9 @@ export const depotPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'depot',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) depot -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install depot' as const,
 }
 
 export type DepotPackage = typeof depotPackage

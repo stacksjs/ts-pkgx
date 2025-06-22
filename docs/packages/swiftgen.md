@@ -1,11 +1,11 @@
-# SwiftGen
+# swiftgen
 
 > The Swift code generator for your assets, storyboards, Localizable.strings, … — Get rid of all String-based APIs!
 
 ## Package Information
 
 - **Domain**: `github.com/SwiftGen/SwiftGen`
-- **Name**: `SwiftGen`
+- **Name**: `swiftgen`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/SwiftGen/SwiftGen/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install swiftgen
 ## Programs
 
 This package provides the following executable programs:
-
-- `swiftgen`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `swiftgen`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/SwiftGen/SwiftGen@6.6.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) swiftgen -- $SHELL -i
 ```
 
 ## Usage Examples

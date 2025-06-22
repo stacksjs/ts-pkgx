@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install oauth2-proxy`
- * @aliases `oauth2-proxy`
+ * @name `oauth2-proxy`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.oauth2proxy
  * // Or access via domain
  * const samePkg = pantry.oauth2proxygithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "oauth2-proxy.github.io"
+ * console.log(pkg.name)        // "oauth2-proxy"
  * console.log(pkg.description) // "A reverse proxy that provides authentication wi..."
  * console.log(pkg.programs)    // ["oauth2-proxy"]
  * console.log(pkg.versions[0]) // "7.9.0" (latest)
@@ -31,7 +31,7 @@ export const oauth2proxyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'oauth2-proxy.github.io' as const,
+  name: 'oauth2-proxy' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -74,9 +74,9 @@ export const oauth2proxyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'oauth2-proxy',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) oauth2-proxy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install oauth2-proxy' as const,
 }
 
 export type Oauth2proxyPackage = typeof oauth2proxyPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pluralith`
- * @aliases `pluralith`
+ * @name `pluralith`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pluralith
  * // Or access via domain
  * const samePkg = pantry.pluralithcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pluralith.com"
+ * console.log(pkg.name)        // "pluralith"
  * console.log(pkg.description) // "A tool for Terraform state visualisation and au..."
  * console.log(pkg.programs)    // ["pluralith"]
  * console.log(pkg.versions[0]) // "0.2.2" (latest)
@@ -32,7 +32,7 @@ export const pluralithPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pluralith.com' as const,
+  name: 'pluralith' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const pluralithPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pluralith',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pluralith -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pluralith' as const,
 }
 
 export type PluralithPackage = typeof pluralithPackage

@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/bartib@1.1.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) bartib -- $SHELL -i
 ```
 
 ## Usage Examples

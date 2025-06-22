@@ -1,11 +1,11 @@
-# tidbyt.com
+# pixlet
 
 > Build apps for pixel-based displays ✨
 
 ## Package Information
 
 - **Domain**: `tidbyt.com`
-- **Name**: `tidbyt.com`
+- **Name**: `pixlet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tidbyt.com/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install tidbyt.com
+launchpad install pixlet
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `pixlet`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pixlet`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +tidbyt.com@0.34.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) pixlet -- $SHELL -i
 ```
 
 ## Dependencies

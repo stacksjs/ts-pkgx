@@ -89,6 +89,8 @@ export const xeolPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xeol -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xeol' as const,
 }
 
 export type XeolPackage = typeof xeolPackage

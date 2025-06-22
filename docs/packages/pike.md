@@ -45,7 +45,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/jameswoolfenden/pike@0.3.60 -- $SHELL -i
+sh <(curl https://pkgx.sh) pike -- $SHELL -i
 ```
 
 ## Usage Examples

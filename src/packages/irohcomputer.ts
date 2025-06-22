@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install iroh`
- * @aliases `iroh`
+ * @name `iroh`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.iroh
  * // Or access via domain
  * const samePkg = pantry.irohcomputer
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "iroh.computer"
+ * console.log(pkg.name)        // "iroh"
  * console.log(pkg.description) // "peer-2-peer that just works"
  * console.log(pkg.programs)    // ["iroh"]
  * console.log(pkg.versions[0]) // "0.35.0" (latest)
@@ -31,7 +31,7 @@ export const irohPackage = {
   /**
    * The display name of this package.
    */
-  name: 'iroh.computer' as const,
+  name: 'iroh' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -102,9 +102,9 @@ export const irohPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'iroh',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) iroh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install iroh' as const,
 }
 
 export type IrohPackage = typeof irohPackage

@@ -8,7 +8,6 @@
  *
  * @install `launchpad install garm-provider-openstack`
  * @name `garm-provider-openstack`
- * @aliases `cloudbase/garm-provider-openstack`
  *
  * @example
  * ```typescript
@@ -69,9 +68,9 @@ export const garmprovideropenstackPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cloudbase/garm-provider-openstack',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) garm-provider-openstack -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install garm-provider-openstack' as const,
 }
 
 export type GarmprovideropenstackPackage = typeof garmprovideropenstackPackage

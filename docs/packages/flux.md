@@ -1,11 +1,11 @@
-# flux2
+# flux
 
 > Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit.
 
 ## Package Information
 
 - **Domain**: `fluxcd.io/flux2`
-- **Name**: `flux2`
+- **Name**: `flux`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fluxcd.io/flux2/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install flux
 ## Programs
 
 This package provides the following executable programs:
-
-- `flux`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `flux`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +fluxcd.io/flux2@2.6.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) flux -- $SHELL -i
 ```
 
 ## Usage Examples

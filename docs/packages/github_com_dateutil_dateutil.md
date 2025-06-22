@@ -1,11 +1,11 @@
-# dateutil
+# github.com/dateutil/dateutil
 
 > Useful extensions to the standard Python datetime features
 
 ## Package Information
 
 - **Domain**: `github.com/dateutil/dateutil`
-- **Name**: `dateutil`
+- **Name**: `github.com/dateutil/dateutil`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/dateutil/dateutil/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/dateutil/dateutil -- $SHELL -i
+launchpad install github.com/dateutil/dateutil
 ```
 
 ## Programs

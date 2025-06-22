@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install uplift`
- * @aliases `uplift`
+ * @name `uplift`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.uplift
  * // Or access via domain
  * const samePkg = pantry.upliftcidev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "upliftci.dev"
+ * console.log(pkg.name)        // "uplift"
  * console.log(pkg.description) // "Semantic versioning the easy way. Powered by Co..."
  * console.log(pkg.programs)    // ["uplift"]
  * console.log(pkg.versions[0]) // "2.25.0" (latest)
@@ -31,7 +31,7 @@ export const upliftPackage = {
   /**
    * The display name of this package.
    */
-  name: 'upliftci.dev' as const,
+  name: 'uplift' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -72,9 +72,9 @@ export const upliftPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'uplift',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) uplift -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install uplift' as const,
 }
 
 export type UpliftPackage = typeof upliftPackage

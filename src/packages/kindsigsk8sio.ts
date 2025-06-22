@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kind`
- * @aliases `kind`
+ * @name `kind`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.kind
  * // Or access via domain
  * const samePkg = pantry.kindsigsk8sio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "kind.sigs.k8s.io"
+ * console.log(pkg.name)        // "kind"
  * console.log(pkg.description) // "Kubernetes IN Docker - local clusters for testi..."
  * console.log(pkg.programs)    // ["kind"]
  * console.log(pkg.versions[0]) // "0.29.0" (latest)
@@ -31,7 +31,7 @@ export const kindPackage = {
   /**
    * The display name of this package.
    */
-  name: 'kind.sigs.k8s.io' as const,
+  name: 'kind' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +78,9 @@ export const kindPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kind',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kind -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kind' as const,
 }
 
 export type KindPackage = typeof kindPackage

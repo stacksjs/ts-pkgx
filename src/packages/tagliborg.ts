@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install taglib-config`
- * @aliases `taglib-config`
+ * @name `taglib-config`
  * @dependencies `zlib.net^1`, `github.com/nemtrif/utfcpp^4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.taglibconfig
  * // Or access via domain
  * const samePkg = pantry.tagliborg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "taglib.org"
+ * console.log(pkg.name)        // "taglib-config"
  * console.log(pkg.description) // "TagLib Audio Meta-Data Library"
  * console.log(pkg.programs)    // ["taglib-config"]
  * console.log(pkg.versions[0]) // "2.1.0" (latest)
@@ -32,7 +32,7 @@ export const taglibconfigPackage = {
   /**
    * The display name of this package.
    */
-  name: 'taglib.org' as const,
+  name: 'taglib-config' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -80,9 +80,9 @@ export const taglibconfigPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'taglib-config',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) taglib-config -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install taglib-config' as const,
 }
 
 export type TaglibconfigPackage = typeof taglibconfigPackage

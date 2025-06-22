@@ -55,7 +55,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pkgx.sh/brewkit@1.16.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) bk -- $SHELL -i
 ```
 
 ## Dependencies

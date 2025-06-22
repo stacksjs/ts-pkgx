@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +sigstore.dev/gitsign -- $SHELL -i
+launchpad install gitsign
 ```
 
 ## Programs

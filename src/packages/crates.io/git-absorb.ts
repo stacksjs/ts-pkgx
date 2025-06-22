@@ -84,6 +84,8 @@ export const gitabsorbPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-absorb -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-absorb' as const,
 }
 
 export type GitabsorbPackage = typeof gitabsorbPackage

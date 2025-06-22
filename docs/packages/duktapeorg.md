@@ -1,11 +1,11 @@
-# duktape.org
+# duk
 
 > Duktape - embeddable Javascript engine with a focus on portability and compact footprint
 
 ## Package Information
 
 - **Domain**: `duktape.org`
-- **Name**: `duktape.org`
+- **Name**: `duk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/duktape.org/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install duktape.org
+launchpad install duk
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `duk`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `duk`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +duktape.org@2.7.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) duk -- $SHELL -i
 ```
 
 ## Usage Examples

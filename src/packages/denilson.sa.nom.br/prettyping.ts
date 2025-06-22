@@ -70,6 +70,8 @@ export const prettypingPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) prettyping -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install prettyping' as const,
 }
 
 export type PrettypingPackage = typeof prettypingPackage

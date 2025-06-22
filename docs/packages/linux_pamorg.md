@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +linux-pam.org -- $SHELL -i
+launchpad install linux-pam.org
 ```
 
 ## Programs

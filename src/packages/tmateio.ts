@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tmate`
- * @aliases `tmate`
+ * @name `tmate`
  * @dependencies `libevent.org^2.0`, `invisible-island.net/ncurses@6`, `msgpack.org@6`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tmate
  * // Or access via domain
  * const samePkg = pantry.tmateio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tmate.io"
+ * console.log(pkg.name)        // "tmate"
  * console.log(pkg.description) // "Instant Terminal Sharing"
  * console.log(pkg.programs)    // ["tmate"]
  * console.log(pkg.versions[0]) // "2.4.0" (latest)
@@ -32,7 +32,7 @@ export const tmatePackage = {
   /**
    * The display name of this package.
    */
-  name: 'tmate.io' as const,
+  name: 'tmate' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +78,9 @@ export const tmatePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tmate',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tmate -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tmate' as const,
 }
 
 export type TmatePackage = typeof tmatePackage

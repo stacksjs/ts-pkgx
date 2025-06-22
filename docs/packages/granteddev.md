@@ -1,11 +1,11 @@
-# granted.dev
+# granted
 
 > The easiest way to access your cloud.
 
 ## Package Information
 
 - **Domain**: `granted.dev`
-- **Name**: `granted.dev`
+- **Name**: `granted`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/granted.dev/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install granted.dev
+launchpad install granted
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `granted`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `granted`
 
@@ -50,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +granted.dev@0.38.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) granted -- $SHELL -i
 ```
 
 ## Usage Examples

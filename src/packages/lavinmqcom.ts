@@ -6,20 +6,20 @@
  * @version `2.4.0` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +lavinmq.com -- $SHELL -i`
- * @aliases `lavinmq`
+ * @install `launchpad install lavinmq`
+ * @name `lavinmq`
  * @dependencies `openssl.org^1.1`, `pcre.org/v2@10`, `libevent.org@2`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.lavinmq
  * // Or access via domain
  * const samePkg = pantry.lavinmqcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "lavinmq.com"
+ * console.log(pkg.name)        // "lavinmq"
  * console.log(pkg.description) // "Lightweight and fast AMQP (0-9-1) server"
  * console.log(pkg.programs)    // ["lavinmq", "lavinmqctl", ...]
  * console.log(pkg.versions[0]) // "2.4.0" (latest)
@@ -32,7 +32,7 @@ export const lavinmqPackage = {
   /**
    * The display name of this package.
    */
-  name: 'lavinmq.com' as const,
+  name: 'lavinmq' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const lavinmqPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +lavinmq.com -- $SHELL -i' as const,
+  installCommand: 'launchpad install lavinmq' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -87,9 +87,9 @@ export const lavinmqPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'lavinmq',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lavinmq.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lavinmq' as const,
 }
 
 export type LavinmqPackage = typeof lavinmqPackage

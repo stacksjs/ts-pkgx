@@ -1,11 +1,11 @@
-# prql-lang.org
+# prql
 
 > PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement
 
 ## Package Information
 
 - **Domain**: `prql-lang.org`
-- **Name**: `prql-lang.org`
+- **Name**: `prql`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/prql-lang.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +prql-lang.org -- $SHELL -i
+launchpad install prql
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `prql-compiler`
 - `prqlc`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `prql`
 
 ## Available Versions
 

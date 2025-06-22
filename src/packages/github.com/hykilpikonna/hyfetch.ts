@@ -77,6 +77,8 @@ export const hyfetchPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hyfetch -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hyfetch' as const,
 }
 
 export type HyfetchPackage = typeof hyfetchPackage

@@ -1,11 +1,11 @@
-# bats-core
+# bats
 
 > Bash Automated Testing System
 
 ## Package Information
 
 - **Domain**: `github.com/bats-core/bats-core`
-- **Name**: `bats-core`
+- **Name**: `bats`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/bats-core/bats-core/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install bats
 ## Programs
 
 This package provides the following executable programs:
-
-- `bats`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `bats`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/bats-core/bats-core@1.12.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) bats -- $SHELL -i
 ```
 
 ## Dependencies

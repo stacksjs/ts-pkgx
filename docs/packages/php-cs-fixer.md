@@ -1,11 +1,11 @@
-# cs
+# php-cs-fixer
 
 > A tool to automatically fix PHP Coding Standards issues
 
 ## Package Information
 
 - **Domain**: `symfony.com/cs`
-- **Name**: `cs`
+- **Name**: `php-cs-fixer`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/symfony.com/cs/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install php-cs-fixer
 ## Programs
 
 This package provides the following executable programs:
-
-- `php-cs-fixer`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `php-cs-fixer`
 
@@ -52,7 +46,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +symfony.com/cs@3.75.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) php-cs-fixer -- $SHELL -i
 ```
 
 ## Dependencies

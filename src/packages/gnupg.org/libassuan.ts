@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install libassuan-config`
- * @aliases `libassuan-config`
+ * @name `libassuan-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.libassuanconfig
  * // Or access via domain
  * const samePkg = pantry.gnupgorglibassuan
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libassuan"
+ * console.log(pkg.name)        // "libassuan-config"
  * console.log(pkg.description) // "Assuan IPC Library"
  * console.log(pkg.programs)    // ["libassuan-config"]
  * console.log(pkg.versions[0]) // "3.0.2" (latest)
@@ -31,7 +31,7 @@ export const libassuanconfigPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libassuan' as const,
+  name: 'libassuan-config' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -73,9 +73,9 @@ export const libassuanconfigPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'libassuan-config',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) libassuan-config -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libassuan-config' as const,
 }
 
 export type LibassuanconfigPackage = typeof libassuanconfigPackage

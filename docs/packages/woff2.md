@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +google.com/woff2 -- $SHELL -i
+launchpad install woff2
 ```
 
 ## Programs

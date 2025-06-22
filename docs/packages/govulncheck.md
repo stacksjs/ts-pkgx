@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +go.dev/govulncheck@1.1.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) govulncheck -- $SHELL -i
 ```
 
 ## Usage Examples

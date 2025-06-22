@@ -1,12 +1,12 @@
 /**
- * **sqruff** - Fast SQL formatter/linter
+ * **quary.dev/sqruff** - Fast SQL formatter/linter
  *
  * @domain `quary.dev/sqruff`
  * @programs `bench`, `sqruff`
  * @version `0.26.8` (86 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +quary.dev/sqruff -- $SHELL -i`
+ * @install `launchpad install quary.dev/sqruff`
  * @dependencies `linux:jemalloc.net@5` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.quarydevsqruff
- * console.log(pkg.name)        // "sqruff"
+ * console.log(pkg.name)        // "quary.dev/sqruff"
  * console.log(pkg.description) // "Fast SQL formatter/linter"
  * console.log(pkg.programs)    // ["bench", "sqruff"]
  * console.log(pkg.versions[0]) // "0.26.8" (latest)
@@ -27,7 +27,7 @@ export const quarydevsqruffPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sqruff' as const,
+  name: 'quary.dev/sqruff' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const quarydevsqruffPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +quary.dev/sqruff -- $SHELL -i' as const,
+  installCommand: 'launchpad install quary.dev/sqruff' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -154,6 +154,8 @@ export const quarydevsqruffPackage = {
     '0.7.6',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +quary.dev/sqruff -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install quary.dev/sqruff' as const,
 }
 
 export type QuarydevsqruffPackage = typeof quarydevsqruffPackage

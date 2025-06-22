@@ -70,6 +70,8 @@ export const marionettePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) marionette -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install marionette' as const,
 }
 
 export type MarionettePackage = typeof marionettePackage

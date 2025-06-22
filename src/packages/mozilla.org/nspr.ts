@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nspr-config`
- * @aliases `nspr-config`
+ * @name `nspr-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.nsprconfig
  * // Or access via domain
  * const samePkg = pantry.mozillaorgnspr
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "nspr"
+ * console.log(pkg.name)        // "nspr-config"
  * console.log(pkg.description) // "Platform-neutral API for system-level and libc-..."
  * console.log(pkg.programs)    // ["nspr-config"]
  * console.log(pkg.versions[0]) // "4.34.1" (latest)
@@ -31,7 +31,7 @@ export const nsprconfigPackage = {
   /**
    * The display name of this package.
    */
-  name: 'nspr' as const,
+  name: 'nspr-config' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const nsprconfigPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'nspr-config',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nspr-config -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nspr-config' as const,
 }
 
 export type NsprconfigPackage = typeof nsprconfigPackage

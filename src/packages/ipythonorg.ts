@@ -6,20 +6,20 @@
  * @version `9.3.0` (44 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +ipython.org -- $SHELL -i`
- * @aliases `ipython`
+ * @install `launchpad install ipython`
+ * @name `ipython`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ipython
  * // Or access via domain
  * const samePkg = pantry.ipythonorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ipython.org"
+ * console.log(pkg.name)        // "ipython"
  * console.log(pkg.description) // "Official repository for IPython itself. Other r..."
  * console.log(pkg.programs)    // ["ipython", "ipython3"]
  * console.log(pkg.versions[0]) // "9.3.0" (latest)
@@ -32,7 +32,7 @@ export const ipythonPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ipython.org' as const,
+  name: 'ipython' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const ipythonPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +ipython.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install ipython' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -119,9 +119,9 @@ export const ipythonPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ipython',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ipython.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ipython' as const,
 }
 
 export type IpythonPackage = typeof ipythonPackage

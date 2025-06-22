@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install git-quick-stats`
- * @aliases `git-quick-stats`
+ * @name `git-quick-stats`
  * @dependencies `git-scm.org`, `gnu.org/bash`, `linux:github.com/util-linux/util-linux` (includes OS-specific dependencies with `os:package` format)
  * @companions `gnu.org/coreutils`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gitquickstats
  * // Or access via domain
  * const samePkg = pantry.gitquickstatssh
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "git-quick-stats.sh"
+ * console.log(pkg.name)        // "git-quick-stats"
  * console.log(pkg.description) // "▁▅▆▃▅ Git quick statistics is a simple and effi..."
  * console.log(pkg.programs)    // ["git-quick-stats"]
  * console.log(pkg.versions[0]) // "2.6.2" (latest)
@@ -33,7 +33,7 @@ export const gitquickstatsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'git-quick-stats.sh' as const,
+  name: 'git-quick-stats' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -97,9 +97,9 @@ export const gitquickstatsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'git-quick-stats',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-quick-stats -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-quick-stats' as const,
 }
 
 export type GitquickstatsPackage = typeof gitquickstatsPackage

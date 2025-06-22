@@ -32,7 +32,7 @@ The 1.x line is frozen - features and bugfixes now happen on https://github.com/
 
 **Programs**: yarn, yarnpkg
 
-**Install**: `launchpad install +classic.yarnpkg.com`
+**Install**: `launchpad install classic.yarnpkg.com`
 
 ---
 
@@ -52,7 +52,7 @@ Flutter makes it easy and fast to build beautiful apps for mobile and beyond
 
 **Programs**: flutter, dart
 
-**Install**: `launchpad install +flutter.dev -- $SHELL -i`
+**Install**: `launchpad install flutter.dev`
 
 ---
 
@@ -82,17 +82,17 @@ the package manager for JavaScript
 
 **Programs**: npm, npx
 
-**Install**: `launchpad install +npmjs.com -- $SHELL -i`
+**Install**: `launchpad install npmjs.com`
 
 ---
 
-### [pnpm.io](../packages/pnpmio.md) (pnp)
+### [pnpm.io](../packages/pnpmio.md) (pnpm)
 
 Fast, disk space efficient package manager
 
 **Programs**: pnpm, pnpx
 
-**Install**: `launchpad install +pnpm.io -- $SHELL -i`
+**Install**: `launchpad install pnpm`
 
 ---
 
@@ -112,7 +112,7 @@ Next generation frontend tooling. It's fast!
 
 **Programs**: yarn, yarnpkg
 
-**Install**: `launchpad install +yarnpkg.com -- $SHELL -i`
+**Install**: `launchpad install yarn`
 
 ---
 

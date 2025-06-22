@@ -1,11 +1,11 @@
 /**
- * **packaging** - Core utilities for Python packages
+ * **pypa.io/packaging** - Core utilities for Python packages
  *
  * @domain `pypa.io/packaging`
  * @version `25.0.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +pypa.io/packaging -- $SHELL -i`
+ * @install `launchpad install pypa.io/packaging`
  * @dependencies `python.org>=3.11`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.pypaiopackaging
- * console.log(pkg.name)        // "packaging"
+ * console.log(pkg.name)        // "pypa.io/packaging"
  * console.log(pkg.description) // "Core utilities for Python packages"
  * console.log(pkg.versions[0]) // "25.0.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const pypaiopackagingPackage = {
   /**
    * The display name of this package.
    */
-  name: 'packaging' as const,
+  name: 'pypa.io/packaging' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const pypaiopackagingPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pypa.io/packaging -- $SHELL -i' as const,
+  installCommand: 'launchpad install pypa.io/packaging' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -63,6 +63,8 @@ export const pypaiopackagingPackage = {
     '23.2.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pypa.io/packaging -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pypa.io/packaging' as const,
 }
 
 export type PypaiopackagingPackage = typeof pypaiopackagingPackage

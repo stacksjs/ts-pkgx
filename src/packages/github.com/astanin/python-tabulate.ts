@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tabulate`
- * @aliases `tabulate`
+ * @name `tabulate`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tabulate
  * // Or access via domain
  * const samePkg = pantry.githubcomastaninpythontabulate
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "python-tabulate"
+ * console.log(pkg.name)        // "tabulate"
  * console.log(pkg.description) // "Pretty-print tabular data in Python, a library ..."
  * console.log(pkg.programs)    // ["tabulate"]
  * console.log(pkg.versions[0]) // "0.9.0" (latest)
@@ -32,7 +32,7 @@ export const tabulatePackage = {
   /**
    * The display name of this package.
    */
-  name: 'python-tabulate' as const,
+  name: 'tabulate' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const tabulatePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tabulate',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tabulate -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tabulate' as const,
 }
 
 export type TabulatePackage = typeof tabulatePackage

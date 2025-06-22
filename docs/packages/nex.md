@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/blynn/nex@2021.3.30 -- $SHELL -i
+sh <(curl https://pkgx.sh) nex -- $SHELL -i
 ```
 
 ## Usage Examples

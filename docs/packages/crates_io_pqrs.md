@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/pqrs@0.3.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) pqrs -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -76,6 +76,8 @@ export const epstoolPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) epstool -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install epstool' as const,
 }
 
 export type EpstoolPackage = typeof epstoolPackage

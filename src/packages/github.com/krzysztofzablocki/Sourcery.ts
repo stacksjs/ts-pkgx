@@ -90,6 +90,8 @@ export const sourceryPackage = {
   aliases: [
     'sourcery',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sourcery -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sourcery' as const,
 }
 
 export type SourceryPackage = typeof sourceryPackage

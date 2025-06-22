@@ -102,6 +102,8 @@ export const yaziPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) yazi -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install yazi' as const,
 }
 
 export type YaziPackage = typeof yaziPackage

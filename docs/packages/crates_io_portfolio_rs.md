@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/portfolio_rs@0.2.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) portfolio_rs -- $SHELL -i
 ```
 
 ## Usage Examples

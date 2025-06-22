@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +crates.io/termusic -- $SHELL -i
+launchpad install termusic
 ```
 
 ## Programs

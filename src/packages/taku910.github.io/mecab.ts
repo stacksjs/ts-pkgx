@@ -6,7 +6,7 @@
  * @version `0.996.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +taku910.github.io/mecab -- $SHELL -i`
+ * @install `launchpad install mecab`
  * @name `mecab`
  *
  * @example
@@ -46,7 +46,7 @@ export const mecabPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +taku910.github.io/mecab -- $SHELL -i' as const,
+  installCommand: 'launchpad install mecab' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,6 +69,8 @@ export const mecabPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +taku910.github.io/mecab -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mecab' as const,
 }
 
 export type MecabPackage = typeof mecabPackage

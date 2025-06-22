@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +liblqr.wikidot.com -- $SHELL -i
+launchpad install liblqr.wikidot.com
 ```
 
 ## Programs

@@ -1,11 +1,11 @@
-# libavif
+# avif
 
 > libavif - Library for encoding and decoding .avif files
 
 ## Package Information
 
 - **Domain**: `github.com/AOMediaCodec/libavif`
-- **Name**: `libavif`
+- **Name**: `avif`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/AOMediaCodec/libavif/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/AOMediaCodec/libavif -- $SHELL -i
+launchpad install avif
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `avifenc`
 - `avifdec`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `avif`
 
 ## Available Versions
 

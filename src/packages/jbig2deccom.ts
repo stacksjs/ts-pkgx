@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jbig2dec`
- * @aliases `jbig2dec`
+ * @name `jbig2dec`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.jbig2dec
  * // Or access via domain
  * const samePkg = pantry.jbig2deccom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "jbig2dec.com"
+ * console.log(pkg.name)        // "jbig2dec"
  * console.log(pkg.description) // "This is a mirror: the canonical repo is: git.gh..."
  * console.log(pkg.programs)    // ["jbig2dec"]
  * console.log(pkg.versions[0]) // "0.19.0" (latest)
@@ -31,7 +31,7 @@ export const jbig2decPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jbig2dec.com' as const,
+  name: 'jbig2dec' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const jbig2decPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jbig2dec',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jbig2dec -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jbig2dec' as const,
 }
 
 export type Jbig2decPackage = typeof jbig2decPackage

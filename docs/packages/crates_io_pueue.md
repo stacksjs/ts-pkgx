@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +crates.io/pueue -- $SHELL -i
+launchpad install pueue
 ```
 
 ## Programs

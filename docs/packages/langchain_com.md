@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +langchain.com -- $SHELL -i
+launchpad install langchain.com
 ```
 
 ## Programs

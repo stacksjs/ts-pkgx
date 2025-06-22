@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install checkov`
- * @aliases `checkov`
+ * @name `checkov`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.checkov
  * // Or access via domain
  * const samePkg = pantry.checkovio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "checkov.io"
+ * console.log(pkg.name)        // "checkov"
  * console.log(pkg.description) // "Prevent cloud misconfigurations and find vulner..."
  * console.log(pkg.programs)    // ["checkov"]
  * console.log(pkg.versions[0]) // "3.2.443" (latest)
@@ -32,7 +32,7 @@ export const checkovPackage = {
   /**
    * The display name of this package.
    */
-  name: 'checkov.io' as const,
+  name: 'checkov' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -552,9 +552,7 @@ export const checkovPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'checkov',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) checkov -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install checkov' as const,
 }

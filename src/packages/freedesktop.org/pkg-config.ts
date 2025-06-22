@@ -69,6 +69,8 @@ export const pkgconfigPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pkg-config -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pkg-config' as const,
 }
 
 export type PkgconfigPackage = typeof pkgconfigPackage

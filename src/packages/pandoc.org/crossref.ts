@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pandoc-crossref`
- * @aliases `pandoc-crossref`
+ * @name `pandoc-crossref`
  * @dependencies `pandoc.org^2.18`, `zlib.net@1`, `gnu.org/gmp@6`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pandoccrossref
  * // Or access via domain
  * const samePkg = pantry.pandocorgcrossref
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "crossref"
+ * console.log(pkg.name)        // "pandoc-crossref"
  * console.log(pkg.description) // "Pandoc filter for numbering and cross-referencing"
  * console.log(pkg.programs)    // ["pandoc-crossref"]
  * console.log(pkg.versions[0]) // "0.3.20" (latest)
@@ -32,7 +32,7 @@ export const pandoccrossrefPackage = {
   /**
    * The display name of this package.
    */
-  name: 'crossref' as const,
+  name: 'pandoc-crossref' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -84,9 +84,9 @@ export const pandoccrossrefPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pandoc-crossref',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pandoc-crossref -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pandoc-crossref' as const,
 }
 
 export type PandoccrossrefPackage = typeof pandoccrossrefPackage

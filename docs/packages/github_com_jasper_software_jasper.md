@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/jasper-software/jasper@4.2.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) jasper -- $SHELL -i
 ```
 
 ## Dependencies

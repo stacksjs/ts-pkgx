@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install iconv`
- * @aliases `iconv`
+ * @name `iconv`
  * @dependencies `linux:gnu.org/gcc/libstdcxx@14` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.iconv
  * // Or access via domain
  * const samePkg = pantry.gnuorglibiconv
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libiconv"
+ * console.log(pkg.name)        // "iconv"
  * console.log(pkg.programs)    // ["iconv"]
  * console.log(pkg.versions[0]) // "1.18.0" (latest)
  * ```
@@ -31,7 +31,7 @@ export const iconvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libiconv' as const,
+  name: 'iconv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -76,9 +76,9 @@ export const iconvPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'iconv',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) iconv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install iconv' as const,
 }
 
 export type IconvPackage = typeof iconvPackage

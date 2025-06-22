@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install curlie`
- * @aliases `curlie`
+ * @name `curlie`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.curlie
  * // Or access via domain
  * const samePkg = pantry.curlieio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "curlie.io"
+ * console.log(pkg.name)        // "curlie"
  * console.log(pkg.description) // "The power of curl, the ease of use of httpie."
  * console.log(pkg.programs)    // ["curlie"]
  * console.log(pkg.versions[0]) // "1.8.2" (latest)
@@ -31,7 +31,7 @@ export const curliePackage = {
   /**
    * The display name of this package.
    */
-  name: 'curlie.io' as const,
+  name: 'curlie' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -69,9 +69,9 @@ export const curliePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'curlie',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) curlie -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install curlie' as const,
 }
 
 export type CurliePackage = typeof curliePackage

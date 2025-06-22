@@ -1,18 +1,18 @@
 /**
- * **util-macros** - pkgx package
+ * **x.org/util-macros** - pkgx package
  *
  * @domain `x.org/util-macros`
  * @version `1.20.2` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/util-macros -- $SHELL -i`
+ * @install `launchpad install x.org/util-macros`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgutilmacros
- * console.log(pkg.name)        // "util-macros"
+ * console.log(pkg.name)        // "x.org/util-macros"
  * console.log(pkg.versions[0]) // "1.20.2" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const xorgutilmacrosPackage = {
   /**
    * The display name of this package.
    */
-  name: 'util-macros' as const,
+  name: 'x.org/util-macros' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +39,7 @@ export const xorgutilmacrosPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/util-macros -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/util-macros' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -53,6 +53,8 @@ export const xorgutilmacrosPackage = {
     '1.20.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/util-macros -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/util-macros' as const,
 }
 
 export type XorgutilmacrosPackage = typeof xorgutilmacrosPackage

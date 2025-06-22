@@ -1,11 +1,11 @@
-# slang
+# s-lang
 
 > Library for creating multi-platform software
 
 ## Package Information
 
 - **Domain**: `jedsoft.org/slang`
-- **Name**: `slang`
+- **Name**: `s-lang`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jedsoft.org/slang/package.yml)
 
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `slsh`
-- `s-lang`
 
 ## Available Versions
 
@@ -44,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +jedsoft.org/slang@2.3.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) slsh -- $SHELL -i
 ```
 
 ## Dependencies
@@ -60,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.s-lang
+const pkg = pantry.slsh
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

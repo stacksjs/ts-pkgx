@@ -6,7 +6,7 @@
  * @version `1.4.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +lunarvim.org -- $SHELL -i`
+ * @install `launchpad install lunarvim.org`
  * @dependencies `gnu.org/bash`, `crates.io/fd-find`, `pip.pypa.io`, ... (+4 more)
  *
  * @example
@@ -43,7 +43,7 @@ export const lunarvimorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +lunarvim.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install lunarvim.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,6 +75,8 @@ export const lunarvimorgPackage = {
     '1.3.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lunarvim.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lunarvim.org' as const,
 }
 
 export type LunarvimorgPackage = typeof lunarvimorgPackage

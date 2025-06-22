@@ -1,11 +1,11 @@
-# watchexec.github.io
+# watchexec
 
 > Executes commands in response to file modifications
 
 ## Package Information
 
-- **Domain**: `watchexecgithub.io`
-- **Name**: `watchexec.github.io`
+- **Domain**: `watchexec.github.io`
+- **Name**: `watchexec`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/watchexec.github.io/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install watchexecgithub.io
+launchpad install watchexec
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `watchexec`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `watchexec`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +watchexecgithub.io@2.3.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) watchexec -- $SHELL -i
 ```
 
 ## Usage Examples

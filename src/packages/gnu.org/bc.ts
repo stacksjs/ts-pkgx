@@ -1,12 +1,12 @@
 /**
- * **bc** - pkgx package
+ * **gnu.org/bc** - pkgx package
  *
  * @domain `gnu.org/bc`
  * @programs `bc`, `dc`
  * @version `1.8.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnu.org/bc -- $SHELL -i`
+ * @install `launchpad install gnu.org/bc`
  * @dependencies `github.com/westes/flex^2.6`
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgbc
- * console.log(pkg.name)        // "bc"
+ * console.log(pkg.name)        // "gnu.org/bc"
  * console.log(pkg.programs)    // ["bc", "dc"]
  * console.log(pkg.versions[0]) // "1.8.2" (latest)
  * ```
@@ -26,7 +26,7 @@ export const gnuorgbcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'bc' as const,
+  name: 'gnu.org/bc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const gnuorgbcPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnu.org/bc -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnu.org/bc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,6 +70,8 @@ export const gnuorgbcPackage = {
     '1.7.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/bc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/bc' as const,
 }
 
 export type GnuorgbcPackage = typeof gnuorgbcPackage

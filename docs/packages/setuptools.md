@@ -1,11 +1,11 @@
-# setuptools
+# pypa.io/setuptools
 
 > Official project repository for the Setuptools build system
 
 ## Package Information
 
 - **Domain**: `pypa.io/setuptools`
-- **Name**: `setuptools`
+- **Name**: `pypa.io/setuptools`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pypa.io/setuptools/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +pypa.io/setuptools -- $SHELL -i
+launchpad install pypa.io/setuptools
 ```
 
 ## Programs

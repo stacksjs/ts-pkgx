@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gflags.github.io -- $SHELL -i
+launchpad install gflags.github.io
 ```
 
 ## Programs

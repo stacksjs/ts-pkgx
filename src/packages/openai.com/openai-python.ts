@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openai`
- * @aliases `openai`
+ * @name `openai`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.openai
  * // Or access via domain
  * const samePkg = pantry.openaicomopenaipython
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "openai-python"
+ * console.log(pkg.name)        // "openai"
  * console.log(pkg.description) // "The official Python library for the OpenAI API"
  * console.log(pkg.programs)    // ["openai"]
  * console.log(pkg.versions[0]) // "1.90.0" (latest)
@@ -32,7 +32,7 @@ export const openaiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openai-python' as const,
+  name: 'openai' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -311,9 +311,9 @@ export const openaiPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'openai',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) openai -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openai' as const,
 }
 
 export type OpenaiPackage = typeof openaiPackage

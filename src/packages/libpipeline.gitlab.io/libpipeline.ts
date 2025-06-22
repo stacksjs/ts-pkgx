@@ -5,7 +5,7 @@
  * @version `1.5.8` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +libpipeline.gitlab.io/libpipeline -- $SHELL -i`
+ * @install `launchpad install libpipeline`
  * @name `libpipeline`
  *
  * @example
@@ -44,7 +44,7 @@ export const libpipelinePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +libpipeline.gitlab.io/libpipeline -- $SHELL -i' as const,
+  installCommand: 'launchpad install libpipeline' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -61,6 +61,8 @@ export const libpipelinePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libpipeline.gitlab.io/libpipeline -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libpipeline' as const,
 }
 
 export type LibpipelinePackage = typeof libpipelinePackage

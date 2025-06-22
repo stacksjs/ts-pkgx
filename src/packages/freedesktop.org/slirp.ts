@@ -1,11 +1,11 @@
 /**
- * **slirp** - pkgx package
+ * **freedesktop.org/slirp** - pkgx package
  *
  * @domain `freedesktop.org/slirp`
  * @version `4.9.1` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +freedesktop.org/slirp -- $SHELL -i`
+ * @install `launchpad install freedesktop.org/slirp`
  * @dependencies `gnome.org/glib^2`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.freedesktoporgslirp
- * console.log(pkg.name)        // "slirp"
+ * console.log(pkg.name)        // "freedesktop.org/slirp"
  * console.log(pkg.versions[0]) // "4.9.1" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const freedesktoporgslirpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'slirp' as const,
+  name: 'freedesktop.org/slirp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const freedesktoporgslirpPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +freedesktop.org/slirp -- $SHELL -i' as const,
+  installCommand: 'launchpad install freedesktop.org/slirp' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,6 +61,8 @@ export const freedesktoporgslirpPackage = {
     '4.7.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/slirp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/slirp' as const,
 }
 
 export type FreedesktoporgslirpPackage = typeof freedesktoporgslirpPackage

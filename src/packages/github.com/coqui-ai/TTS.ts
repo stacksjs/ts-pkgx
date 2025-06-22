@@ -1,12 +1,12 @@
 /**
- * **TTS** - 🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and production
+ * **github.com/coqui-ai/TTS** - 🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and production
  *
  * @domain `github.com/coqui-ai/TTS`
  * @programs `tts`, `tts-server`, `ttx`
  * @version `0.22.0` (33 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/coqui-ai/TTS -- $SHELL -i`
+ * @install `launchpad install github.com/coqui-ai/TTS`
  * @dependencies `python.org>=3.7<3.11`, `taku910.github.io/mecab`
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomcoquiaitts
- * console.log(pkg.name)        // "TTS"
+ * console.log(pkg.name)        // "github.com/coqui-ai/TTS"
  * console.log(pkg.description) // "🐸💬 - a deep learning toolkit for Text-to-Spee..."
  * console.log(pkg.programs)    // ["tts", "tts-server", ...]
  * console.log(pkg.versions[0]) // "0.22.0" (latest)
@@ -27,7 +27,7 @@ export const githubcomcoquiaittsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'TTS' as const,
+  name: 'github.com/coqui-ai/TTS' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const githubcomcoquiaittsPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/coqui-ai/TTS -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/coqui-ai/TTS' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -102,6 +102,8 @@ export const githubcomcoquiaittsPackage = {
     '0.14.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/coqui-ai/TTS -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/coqui-ai/TTS' as const,
 }
 
 export type GithubcomcoquiaittsPackage = typeof githubcomcoquiaittsPackage

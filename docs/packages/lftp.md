@@ -1,11 +1,11 @@
-# lftp.yar.ru
+# lftp
 
 > sophisticated command line file transfer program (ftp, http, sftp, fish, torrent)
 
 ## Package Information
 
 - **Domain**: `lftp.yar.ru`
-- **Name**: `lftp.yar.ru`
+- **Name**: `lftp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lftp.yar.ru/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +lftp.yar.ru -- $SHELL -i
+launchpad install lftp
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `lftp`
 - `lftpget`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `lftp`
 
 ## Available Versions
 

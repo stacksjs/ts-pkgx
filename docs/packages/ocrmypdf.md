@@ -1,11 +1,11 @@
-# OCRmyPDF
+# ocrmypdf
 
 > OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched
 
 ## Package Information
 
 - **Domain**: `github.com/ocrmypdf/OCRmyPDF`
-- **Name**: `OCRmyPDF`
+- **Name**: `ocrmypdf`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ocrmypdf/OCRmyPDF/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install ocrmypdf
 ## Programs
 
 This package provides the following executable programs:
-
-- `ocrmypdf`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `ocrmypdf`
 
@@ -50,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/ocrmypdf/OCRmyPDF@16.10.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) ocrmypdf -- $SHELL -i
 ```
 
 ## Dependencies

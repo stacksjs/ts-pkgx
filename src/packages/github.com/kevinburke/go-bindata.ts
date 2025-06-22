@@ -71,6 +71,8 @@ export const gobindataPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) go-bindata -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install go-bindata' as const,
 }
 
 export type GobindataPackage = typeof gobindataPackage

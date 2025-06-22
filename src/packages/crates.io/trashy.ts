@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install trash`
- * @aliases `trash`
+ * @name `trash`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.trash
  * // Or access via domain
  * const samePkg = pantry.cratesiotrashy
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "trashy"
+ * console.log(pkg.name)        // "trash"
  * console.log(pkg.description) // "a cli system trash manager, alternative to rm a..."
  * console.log(pkg.programs)    // ["trash"]
  * console.log(pkg.versions[0]) // "2.0.0" (latest)
@@ -31,7 +31,7 @@ export const trashPackage = {
   /**
    * The display name of this package.
    */
-  name: 'trashy' as const,
+  name: 'trash' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -69,9 +69,9 @@ export const trashPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'trash',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) trash -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install trash' as const,
 }
 
 export type TrashPackage = typeof trashPackage

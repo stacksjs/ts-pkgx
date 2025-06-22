@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +littlecms.com -- $SHELL -i
+launchpad install littlecms.com
 ```
 
 ## Programs

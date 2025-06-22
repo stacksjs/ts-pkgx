@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +markupsafe.palletsprojects.com -- $SHELL -i
+launchpad install markupsafe.palletsprojects.com
 ```
 
 ## Programs

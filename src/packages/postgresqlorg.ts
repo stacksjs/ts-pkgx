@@ -6,7 +6,7 @@
  * @version `17.2.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +postgresql.org -- $SHELL -i`
+ * @install `launchpad install postgresql.org`
  * @dependencies `openssl.org^1.0.1`, `gnu.org/readline`, `zlib.net`, ... (+4 more)
  *
  * @example
@@ -43,7 +43,7 @@ export const postgresqlorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +postgresql.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install postgresql.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -88,7 +88,7 @@ export const postgresqlorgPackage = {
     'gnu.org/readline',
     'zlib.net',
     'lz4.org',
-    'gnome.org/libxml2',
+    'gnome.org/libxml2~2.13 # abi changed in 2.14',
     'gnome.org/libxslt',
     'unicode.org^73',
   ] as const,
@@ -111,6 +111,8 @@ export const postgresqlorgPackage = {
     '11.19.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +postgresql.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install postgresql.org' as const,
 }
 
 export type PostgresqlorgPackage = typeof postgresqlorgPackage

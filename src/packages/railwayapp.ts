@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install railway`
- * @aliases `railway`
+ * @name `railway`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.railway
  * // Or access via domain
  * const samePkg = pantry.railwayapp
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "railway.app"
+ * console.log(pkg.name)        // "railway"
  * console.log(pkg.description) // "Develop and deploy code with zero configuration"
  * console.log(pkg.programs)    // ["railway"]
  * console.log(pkg.versions[0]) // "4.5.3" (latest)
@@ -31,7 +31,7 @@ export const railwayPackage = {
   /**
    * The display name of this package.
    */
-  name: 'railway.app' as const,
+  name: 'railway' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -118,9 +118,9 @@ export const railwayPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'railway',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) railway -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install railway' as const,
 }
 
 export type RailwayPackage = typeof railwayPackage

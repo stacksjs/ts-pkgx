@@ -1,18 +1,18 @@
 /**
- * **libksba** - pkgx package
+ * **gnupg.org/libksba** - pkgx package
  *
  * @domain `gnupg.org/libksba`
  * @version `1.6.7` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnupg.org/libksba -- $SHELL -i`
+ * @install `launchpad install gnupg.org/libksba`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnupgorglibksba
- * console.log(pkg.name)        // "libksba"
+ * console.log(pkg.name)        // "gnupg.org/libksba"
  * console.log(pkg.versions[0]) // "1.6.7" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const gnupgorglibksbaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libksba' as const,
+  name: 'gnupg.org/libksba' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +39,7 @@ export const gnupgorglibksbaPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnupg.org/libksba -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnupg.org/libksba' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -56,6 +56,8 @@ export const gnupgorglibksbaPackage = {
     '1.6.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnupg.org/libksba -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnupg.org/libksba' as const,
 }
 
 export type GnupgorglibksbaPackage = typeof gnupgorglibksbaPackage

@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +veracode.com/gen-ir@0.5.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) gen-ir -- $SHELL -i
 ```
 
 ## Usage Examples

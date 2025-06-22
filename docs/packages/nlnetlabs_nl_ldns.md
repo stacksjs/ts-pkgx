@@ -1,11 +1,11 @@
-# ldns
+# nlnetlabs.nl/ldns
 
 > LDNS is a DNS library that facilitates DNS tool programming
 
 ## Package Information
 
 - **Domain**: `nlnetlabs.nl/ldns`
-- **Name**: `ldns`
+- **Name**: `nlnetlabs.nl/ldns`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nlnetlabs.nl/ldns/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +nlnetlabs.nl/ldns -- $SHELL -i
+launchpad install nlnetlabs.nl/ldns
 ```
 
 ## Programs

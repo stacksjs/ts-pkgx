@@ -1,11 +1,11 @@
-# gc
+# hboehm.info/gc
 
 > The Boehm-Demers-Weiser conservative C/C++ Garbage Collector (bdwgc, also known as bdw-gc, boehm-gc, libgc)
 
 ## Package Information
 
 - **Domain**: `hboehm.info/gc`
-- **Name**: `gc`
+- **Name**: `hboehm.info/gc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hboehm.info/gc/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +hboehm.info/gc -- $SHELL -i
+launchpad install hboehm.info/gc
 ```
 
 ## Programs

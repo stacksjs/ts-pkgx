@@ -1,11 +1,11 @@
-# wangle
+# facebook.com/wangle
 
 > Wangle is a framework providing a set of common client/server abstractions for building services in a consistent, modular, and composable way.
 
 ## Package Information
 
 - **Domain**: `facebook.com/wangle`
-- **Name**: `wangle`
+- **Name**: `facebook.com/wangle`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/wangle/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +facebook.com/wangle -- $SHELL -i
+launchpad install facebook.com/wangle
 ```
 
 ## Programs

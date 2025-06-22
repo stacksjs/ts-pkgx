@@ -1,11 +1,11 @@
-# dotnet.microsoft.com
+# dotnet
 
 > Home of .NET's Virtual Monolithic Repository which includes all the code needed to build the .NET SDK from source
 
 ## Package Information
 
 - **Domain**: `dotnet.microsoft.com`
-- **Name**: `dotnet.microsoft.com`
+- **Name**: `dotnet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dotnet.microsoft.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install dotnet
 ## Programs
 
 This package provides the following executable programs:
-
-- `dotnet`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `dotnet`
 
@@ -49,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +dotnet.microsoft.com@9.0.202 -- $SHELL -i
+sh <(curl https://pkgx.sh) dotnet -- $SHELL -i
 ```
 
 ## Dependencies

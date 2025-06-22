@@ -70,6 +70,8 @@ export const rpgcliPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rpg-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rpg-cli' as const,
 }
 
 export type RpgcliPackage = typeof rpgcliPackage

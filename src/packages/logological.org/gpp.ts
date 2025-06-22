@@ -70,6 +70,8 @@ export const gppPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gpp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gpp' as const,
 }
 
 export type GppPackage = typeof gppPackage

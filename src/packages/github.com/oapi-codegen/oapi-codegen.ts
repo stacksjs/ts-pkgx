@@ -71,6 +71,8 @@ export const oapicodegenPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) oapi-codegen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install oapi-codegen' as const,
 }
 
 export type OapicodegenPackage = typeof oapicodegenPackage

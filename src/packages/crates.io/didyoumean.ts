@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dym`
- * @aliases `dym`
+ * @name `dym`
  * @dependencies `openssl.org^1.1`, `linux:x.org/xcb` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.dym
  * // Or access via domain
  * const samePkg = pantry.cratesiodidyoumean
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "didyoumean"
+ * console.log(pkg.name)        // "dym"
  * console.log(pkg.description) // "A CLI spelling corrector for when you're unsure"
  * console.log(pkg.programs)    // ["dym"]
  * console.log(pkg.versions[0]) // "1.1.4" (latest)
@@ -32,7 +32,7 @@ export const dymPackage = {
   /**
    * The display name of this package.
    */
-  name: 'didyoumean' as const,
+  name: 'dym' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const dymPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'dym',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dym -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dym' as const,
 }
 
 export type DymPackage = typeof dymPackage

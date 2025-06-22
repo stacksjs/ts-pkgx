@@ -70,6 +70,8 @@ export const dnsmasqPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dnsmasq -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dnsmasq' as const,
 }
 
 export type DnsmasqPackage = typeof dnsmasqPackage

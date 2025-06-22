@@ -1,11 +1,11 @@
-# sway
+# forc
 
 > 🌴 Empowering everyone to build reliable and efficient smart contracts.
 
 ## Package Information
 
 - **Domain**: `fuellabs.github.io/sway`
-- **Name**: `sway`
+- **Name**: `forc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fuellabs.github.io/sway/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install forc
 ## Programs
 
 This package provides the following executable programs:
-
-- `forc`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `forc`
 
@@ -57,7 +51,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +fuellabs.github.io/sway@0.68.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) forc -- $SHELL -i
 ```
 
 ## Dependencies

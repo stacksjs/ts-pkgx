@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/fiatjaf/nak@0.14.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) nak -- $SHELL -i
 ```
 
 ## Usage Examples

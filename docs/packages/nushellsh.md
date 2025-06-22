@@ -1,11 +1,11 @@
-# nushell.sh
+# nu
 
 > Modern shell for the GitHub era
 
 ## Package Information
 
 - **Domain**: `nushell.sh`
-- **Name**: `nushell.sh`
+- **Name**: `nu`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nushell.sh/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install nushell.sh
+launchpad install nu
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `nu`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `nu`
 
@@ -52,7 +46,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +nushell.sh@0.105.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) nu -- $SHELL -i
 ```
 
 ## Dependencies

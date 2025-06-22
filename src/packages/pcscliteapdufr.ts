@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pcscd`
- * @aliases `pcscd`, `pcsc-lite`
+ * @name `pcsc-lite`
+ * @aliases `pcscd`
  * @dependencies `libusb.info^1`, `linux:systemd.io^254 # libudev` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -19,7 +20,7 @@
  * // Or access via domain
  * const samePkg = pantry.pcscliteapdufr
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pcsclite.apdu.fr"
+ * console.log(pkg.name)        // "pcsc-lite"
  * console.log(pkg.programs)    // ["pcscd"]
  * console.log(pkg.versions[0]) // "2.3.3" (latest)
  * ```
@@ -31,7 +32,7 @@ export const pcscdPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pcsclite.apdu.fr' as const,
+  name: 'pcsc-lite' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -90,8 +91,9 @@ export const pcscdPackage = {
    */
   aliases: [
     'pcscd',
-    'pcsc-lite',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pcscd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pcscd' as const,
 }
 
 export type PcscdPackage = typeof pcscdPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install idn2`
- * @aliases `idn2`
+ * @name `idn2`
  * @dependencies `gnu.org/gettext`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.idn2
  * // Or access via domain
  * const samePkg = pantry.gnuorglibidn2
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libidn2"
+ * console.log(pkg.name)        // "idn2"
  * console.log(pkg.description) // "International domain name library (IDNA2008, Pu..."
  * console.log(pkg.programs)    // ["idn2"]
  * console.log(pkg.versions[0]) // "2.3.8" (latest)
@@ -32,7 +32,7 @@ export const idn2Package = {
   /**
    * The display name of this package.
    */
-  name: 'libidn2' as const,
+  name: 'idn2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,9 @@ export const idn2Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'idn2',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) idn2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install idn2' as const,
 }
 
 export type Idn2Package = typeof idn2Package

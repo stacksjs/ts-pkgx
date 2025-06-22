@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install hac`
- * @aliases `hac`
+ * @name `hac`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.hac
  * // Or access via domain
  * const samePkg = pantry.cratesiohacclient
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "hac-client"
+ * console.log(pkg.name)        // "hac"
  * console.log(pkg.description) // "A terminal API Client that comes in handy. // L..."
  * console.log(pkg.programs)    // ["hac"]
  * console.log(pkg.versions[0]) // "0.2.1" (latest)
@@ -31,7 +31,7 @@ export const hacPackage = {
   /**
    * The display name of this package.
    */
-  name: 'hac-client' as const,
+  name: 'hac' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const hacPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'hac',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hac -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hac' as const,
 }
 
 export type HacPackage = typeof hacPackage

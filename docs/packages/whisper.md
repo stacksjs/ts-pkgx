@@ -1,11 +1,11 @@
-# whisper.cpp
+# whisper
 
 > Port of OpenAI's Whisper model in C/C++
 
 ## Package Information
 
 - **Domain**: `github.com/ggerganov/whisper.cpp`
-- **Name**: `whisper.cpp`
+- **Name**: `whisper`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ggerganov/whisper.cpp/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/ggerganov/whisper.cpp -- $SHELL -i
+launchpad install whisper
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `whisper.cpp`
 - `whisper-cli`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `whisper`
 
 ## Available Versions
 
@@ -60,7 +54,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with whisper.cpp:
+These packages work well with whisper:
 
 - [`huggingface.co`](huggingfaceco.md) - The official Python client for the Huggingface Hub.
 
@@ -70,7 +64,7 @@ These packages work well with whisper.cpp:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.whisper.cpp
+const pkg = pantry.whisper
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

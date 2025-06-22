@@ -1,11 +1,11 @@
-# highway
+# google.com/highway
 
 > Performance-portable, length-agnostic SIMD with runtime dispatch
 
 ## Package Information
 
 - **Domain**: `google.com/highway`
-- **Name**: `highway`
+- **Name**: `google.com/highway`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/highway/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +google.com/highway -- $SHELL -i
+launchpad install google.com/highway
 ```
 
 ## Programs

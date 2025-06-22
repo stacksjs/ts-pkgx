@@ -91,6 +91,8 @@ export const hcloudPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hcloud -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hcloud' as const,
 }
 
 export type HcloudPackage = typeof hcloudPackage

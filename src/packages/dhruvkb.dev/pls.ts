@@ -76,6 +76,8 @@ export const plsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pls -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pls' as const,
 }
 
 export type PlsPackage = typeof plsPackage

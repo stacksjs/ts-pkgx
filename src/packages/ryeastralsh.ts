@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rye`
- * @aliases `rye`
+ * @name `rye`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.rye
  * // Or access via domain
  * const samePkg = pantry.ryeastralsh
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rye.astral.sh"
+ * console.log(pkg.name)        // "rye"
  * console.log(pkg.description) // "Experimental Package Management Solution for Py..."
  * console.log(pkg.programs)    // ["rye"]
  * console.log(pkg.versions[0]) // "0.44.0" (latest)
@@ -32,7 +32,7 @@ export const ryePackage = {
   /**
    * The display name of this package.
    */
-  name: 'rye.astral.sh' as const,
+  name: 'rye' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -83,9 +83,9 @@ export const ryePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'rye',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rye -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rye' as const,
 }
 
 export type RyePackage = typeof ryePackage

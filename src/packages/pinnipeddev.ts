@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pinniped`
- * @aliases `pinniped`
+ * @name `pinniped`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pinniped
  * // Or access via domain
  * const samePkg = pantry.pinnipeddev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pinniped.dev"
+ * console.log(pkg.name)        // "pinniped"
  * console.log(pkg.description) // "Pinniped is the easy, secure way to log in to y..."
  * console.log(pkg.programs)    // ["pinniped"]
  * console.log(pkg.versions[0]) // "0.39.0" (latest)
@@ -31,7 +31,7 @@ export const pinnipedPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pinniped.dev' as const,
+  name: 'pinniped' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -81,9 +81,9 @@ export const pinnipedPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pinniped',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pinniped -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pinniped' as const,
 }
 
 export type PinnipedPackage = typeof pinnipedPackage

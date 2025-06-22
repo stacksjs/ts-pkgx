@@ -81,6 +81,8 @@ export const qsvPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) qsv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install qsv' as const,
 }
 
 export type QsvPackage = typeof qsvPackage

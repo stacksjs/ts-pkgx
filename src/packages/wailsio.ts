@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install wails`
- * @aliases `wails`
+ * @name `wails`
  * @dependencies `go.dev^1.18`, `npmjs.com`, `linux:gnu.org/gcc`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.wails
  * // Or access via domain
  * const samePkg = pantry.wailsio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "wails.io"
+ * console.log(pkg.name)        // "wails"
  * console.log(pkg.description) // "Create beautiful applications using Go"
  * console.log(pkg.programs)    // ["wails"]
  * console.log(pkg.versions[0]) // "2.10.1" (latest)
@@ -32,7 +32,7 @@ export const wailsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'wails.io' as const,
+  name: 'wails' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -88,9 +88,9 @@ export const wailsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'wails',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wails -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wails' as const,
 }
 
 export type WailsPackage = typeof wailsPackage

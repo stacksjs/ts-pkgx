@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install safe_hashes`
- * @aliases `safe_hashes`
+ * @name `safe_hashes`
  * @dependencies `gnu.org/bash>=4`, `gnu.org/gcc/libstdcxx^14 # solc wants GLIBCXX_3.4.26`
  * @companions `getfoundry.sh`, `stedolan.github.io/jq`, `curl.se`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.safehashes
  * // Or access via domain
  * const samePkg = pantry.githubcomcyfrinsafetxhashesutil
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "safe-tx-hashes-util"
+ * console.log(pkg.name)        // "safe_hashes"
  * console.log(pkg.programs)    // ["safe_hashes"]
  * console.log(pkg.versions[0]) // "0.1.4" (latest)
  * ```
@@ -32,7 +32,7 @@ export const safehashesPackage = {
   /**
    * The display name of this package.
    */
-  name: 'safe-tx-hashes-util' as const,
+  name: 'safe_hashes' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -85,9 +85,9 @@ export const safehashesPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'safe_hashes',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) safe_hashes -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install safe_hashes' as const,
 }
 
 export type SafehashesPackage = typeof safehashesPackage

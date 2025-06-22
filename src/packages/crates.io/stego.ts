@@ -69,6 +69,8 @@ export const stegoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) stego -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install stego' as const,
 }
 
 export type StegoPackage = typeof stegoPackage

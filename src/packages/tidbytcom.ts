@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pixlet`
- * @aliases `pixlet`
+ * @name `pixlet`
  * @dependencies `google.com/webp^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pixlet
  * // Or access via domain
  * const samePkg = pantry.tidbytcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tidbyt.com"
+ * console.log(pkg.name)        // "pixlet"
  * console.log(pkg.description) // "Build apps for pixel-based displays ✨"
  * console.log(pkg.programs)    // ["pixlet"]
  * console.log(pkg.versions[0]) // "0.34.0" (latest)
@@ -32,7 +32,7 @@ export const pixletPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tidbyt.com' as const,
+  name: 'pixlet' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -94,9 +94,9 @@ export const pixletPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pixlet',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pixlet -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pixlet' as const,
 }
 
 export type PixletPackage = typeof pixletPackage

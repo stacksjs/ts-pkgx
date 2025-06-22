@@ -1,11 +1,11 @@
-# trove-classifiers
+# pypa.io/trove-classifiers
 
 > Canonical source for classifiers on PyPI.
 
 ## Package Information
 
 - **Domain**: `pypa.io/trove-classifiers`
-- **Name**: `trove-classifiers`
+- **Name**: `pypa.io/trove-classifiers`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pypa.io/trove-classifiers/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +pypa.io/trove-classifiers -- $SHELL -i
+launchpad install pypa.io/trove-classifiers
 ```
 
 ## Programs

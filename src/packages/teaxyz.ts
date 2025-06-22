@@ -42,6 +42,8 @@ export const teaxyzPackage = {
   dependencies: [] as const,
   versions: [] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tea.xyz -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tea.xyz' as const,
 }
 
 export type TeaxyzPackage = typeof teaxyzPackage

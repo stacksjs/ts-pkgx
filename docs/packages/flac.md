@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +xiph.org/flac@1.5.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) flac -- $SHELL -i
 ```
 
 ## Dependencies

@@ -1,11 +1,11 @@
-# mujs.com
+# mujs
 
 > An embeddable Javascript interpreter in C.
 
 ## Package Information
 
 - **Domain**: `mujs.com`
-- **Name**: `mujs.com`
+- **Name**: `mujs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mujs.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mujs.com -- $SHELL -i
+launchpad install mujs
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `mujs`
 - `mujs-pp`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `mujs`
 
 ## Available Versions
 

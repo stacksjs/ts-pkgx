@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install delta`
- * @aliases `delta`
+ * @name `delta`
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `darwin:zlib.net^1` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.delta
  * // Or access via domain
  * const samePkg = pantry.cratesiogitdelta
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "git-delta"
+ * console.log(pkg.name)        // "delta"
  * console.log(pkg.description) // "A syntax-highlighting pager for git, diff, grep..."
  * console.log(pkg.programs)    // ["delta"]
  * console.log(pkg.versions[0]) // "0.18.2" (latest)
@@ -32,7 +32,7 @@ export const deltaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'git-delta' as const,
+  name: 'delta' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -87,9 +87,9 @@ export const deltaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'delta',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) delta -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install delta' as const,
 }
 
 export type DeltaPackage = typeof deltaPackage

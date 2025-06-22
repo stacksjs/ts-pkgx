@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install databricks`
- * @aliases `databricks`
+ * @name `databricks`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.databricks
  * // Or access via domain
  * const samePkg = pantry.databrickscom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "databricks.com"
+ * console.log(pkg.name)        // "databricks"
  * console.log(pkg.description) // "Databricks CLI"
  * console.log(pkg.programs)    // ["databricks"]
  * console.log(pkg.versions[0]) // "0.256.0" (latest)
@@ -31,7 +31,7 @@ export const databricksPackage = {
   /**
    * The display name of this package.
    */
-  name: 'databricks.com' as const,
+  name: 'databricks' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -122,9 +122,9 @@ export const databricksPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'databricks',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) databricks -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install databricks' as const,
 }
 
 export type DatabricksPackage = typeof databricksPackage

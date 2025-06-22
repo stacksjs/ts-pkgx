@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xb-tool`
- * @aliases `xb-tool`
+ * @name `xb-tool`
  * @dependencies `gnome.org/glib@2`, `tukaani.org/xz@5`, `facebook.com/zstd@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.xbtool
  * // Or access via domain
  * const samePkg = pantry.githubcomhughsielibxmlb
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libxmlb"
+ * console.log(pkg.name)        // "xb-tool"
  * console.log(pkg.description) // "A library to help create and query binary XML b..."
  * console.log(pkg.programs)    // ["xb-tool"]
  * console.log(pkg.versions[0]) // "0.3.22" (latest)
@@ -32,7 +32,7 @@ export const xbtoolPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libxmlb' as const,
+  name: 'xb-tool' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -80,9 +80,9 @@ export const xbtoolPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'xb-tool',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xb-tool -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xb-tool' as const,
 }
 
 export type XbtoolPackage = typeof xbtoolPackage

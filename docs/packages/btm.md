@@ -1,11 +1,11 @@
-# bottom
+# btm
 
 > Yet another cross-platform graphical process/system monitor.
 
 ## Package Information
 
 - **Domain**: `crates.io/bottom`
-- **Name**: `bottom`
+- **Name**: `btm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/bottom/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install btm
 ## Programs
 
 This package provides the following executable programs:
-
-- `btm`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `btm`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/bottom@0.10.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) btm -- $SHELL -i
 ```
 
 ## Usage Examples

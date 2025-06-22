@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mpg123`
- * @aliases `mpg123`
+ * @name `mpg123`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mpg123
  * // Or access via domain
  * const samePkg = pantry.mpg123de
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mpg123.de"
+ * console.log(pkg.name)        // "mpg123"
  * console.log(pkg.description) // "MP3 player for Linux and UNIX"
  * console.log(pkg.programs)    // ["mpg123"]
  * console.log(pkg.versions[0]) // "1.33.0" (latest)
@@ -31,7 +31,7 @@ export const mpg123Package = {
   /**
    * The display name of this package.
    */
-  name: 'mpg123.de' as const,
+  name: 'mpg123' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -80,9 +80,9 @@ export const mpg123Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mpg123',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mpg123 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mpg123' as const,
 }
 
 export type Mpg123Package = typeof mpg123Package

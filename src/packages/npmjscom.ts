@@ -6,7 +6,7 @@
  * @version `11.4.2` (60 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +npmjs.com -- $SHELL -i`
+ * @install `launchpad install npmjs.com`
  * @aliases `npm`
  * @dependencies `nodejs.org`
  *
@@ -48,7 +48,7 @@ export const npmPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +npmjs.com -- $SHELL -i' as const,
+  installCommand: 'launchpad install npmjs.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -138,6 +138,8 @@ export const npmPackage = {
   aliases: [
     'npm',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +npmjs.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install npmjs.com' as const,
 }
 
 export type NpmPackage = typeof npmPackage

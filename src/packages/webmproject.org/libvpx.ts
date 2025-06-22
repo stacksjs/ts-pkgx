@@ -1,18 +1,18 @@
 /**
- * **libvpx** - Mirror only. Please do not send pull requests.
+ * **webmproject.org/libvpx** - Mirror only. Please do not send pull requests.
  *
  * @domain `webmproject.org/libvpx`
  * @version `1.15.2` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +webmproject.org/libvpx -- $SHELL -i`
+ * @install `launchpad install webmproject.org/libvpx`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.webmprojectorglibvpx
- * console.log(pkg.name)        // "libvpx"
+ * console.log(pkg.name)        // "webmproject.org/libvpx"
  * console.log(pkg.description) // "Mirror only. Please do not send pull requests."
  * console.log(pkg.versions[0]) // "1.15.2" (latest)
  * ```
@@ -24,7 +24,7 @@ export const webmprojectorglibvpxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libvpx' as const,
+  name: 'webmproject.org/libvpx' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const webmprojectorglibvpxPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +webmproject.org/libvpx -- $SHELL -i' as const,
+  installCommand: 'launchpad install webmproject.org/libvpx' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -58,6 +58,8 @@ export const webmprojectorglibvpxPackage = {
     '1.13.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +webmproject.org/libvpx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install webmproject.org/libvpx' as const,
 }
 
 export type WebmprojectorglibvpxPackage = typeof webmprojectorglibvpxPackage

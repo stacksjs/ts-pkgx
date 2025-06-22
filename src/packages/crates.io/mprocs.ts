@@ -73,6 +73,8 @@ export const mprocsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mprocs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mprocs' as const,
 }
 
 export type MprocsPackage = typeof mprocsPackage

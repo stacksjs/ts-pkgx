@@ -1,11 +1,11 @@
-# openssl.org
+# OpenSSL
 
 > TLS/SSL and crypto library with QUIC APIs
 
 ## Package Information
 
 - **Domain**: `openssl.org`
-- **Name**: `openssl.org`
+- **Name**: `OpenSSL`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openssl.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install openssl.org
+launchpad install OpenSSL
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `openssl`
 - `c_rehash`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `OpenSSL`
 
 ## Available Versions
 

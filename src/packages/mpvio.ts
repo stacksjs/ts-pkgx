@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mpv`
- * @aliases `mpv`
+ * @name `mpv`
  * @dependencies `ffmpeg.org`, `libjpeg-turbo.org@2`, `libarchive.org@3`, ... (+10 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mpv
  * // Or access via domain
  * const samePkg = pantry.mpvio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mpv.io"
+ * console.log(pkg.name)        // "mpv"
  * console.log(pkg.description) // "Media player based on MPlayer and mplayer2"
  * console.log(pkg.programs)    // ["mpv"]
  * console.log(pkg.versions[0]) // "0.40.0" (latest)
@@ -32,7 +32,7 @@ export const mpvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mpv.io' as const,
+  name: 'mpv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -90,9 +90,9 @@ export const mpvPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mpv',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mpv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mpv' as const,
 }
 
 export type MpvPackage = typeof mpvPackage

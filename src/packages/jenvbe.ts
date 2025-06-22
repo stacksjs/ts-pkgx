@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jenv`
- * @aliases `jenv`
+ * @name `jenv`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.jenv
  * // Or access via domain
  * const samePkg = pantry.jenvbe
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "jenv.be"
+ * console.log(pkg.name)        // "jenv"
  * console.log(pkg.description) // "Manage your Java environment"
  * console.log(pkg.programs)    // ["jenv"]
  * console.log(pkg.versions[0]) // "0.5.7" (latest)
@@ -31,7 +31,7 @@ export const jenvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jenv.be' as const,
+  name: 'jenv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -69,9 +69,9 @@ export const jenvPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jenv',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jenv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jenv' as const,
 }
 
 export type JenvPackage = typeof jenvPackage

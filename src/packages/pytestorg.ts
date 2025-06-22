@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pytest`
- * @aliases `pytest`
+ * @name `pytest`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pytest
  * // Or access via domain
  * const samePkg = pantry.pytestorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pytest.org"
+ * console.log(pkg.name)        // "pytest"
  * console.log(pkg.description) // "The pytest framework makes it easy to write sma..."
  * console.log(pkg.programs)    // ["pytest"]
  * console.log(pkg.versions[0]) // "8.4.1" (latest)
@@ -32,7 +32,7 @@ export const pytestPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pytest.org' as const,
+  name: 'pytest' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -101,9 +101,9 @@ export const pytestPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pytest',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pytest -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pytest' as const,
 }
 
 export type PytestPackage = typeof pytestPackage

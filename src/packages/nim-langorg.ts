@@ -6,7 +6,7 @@
  * @version `2.2.4` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +nim-lang.org -- $SHELL -i`
+ * @install `launchpad install nim-lang.org`
  * @dependencies `gnu.org/gcc`, `pcre.org`, `openssl.org`
  *
  * @example
@@ -43,7 +43,7 @@ export const nimlangorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +nim-lang.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install nim-lang.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -91,6 +91,8 @@ export const nimlangorgPackage = {
     '1.6.14',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nim-lang.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nim-lang.org' as const,
 }
 
 export type NimlangorgPackage = typeof nimlangorgPackage

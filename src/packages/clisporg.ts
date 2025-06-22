@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install clisp`
- * @aliases `clisp`
+ * @name `clisp`
  * @dependencies `gnu.org/libsigsegv^2.14`, `gnu.org/readline^8.2`, `github.com/besser82/libxcrypt^4.4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.clisp
  * // Or access via domain
  * const samePkg = pantry.clisporg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "clisp.org"
+ * console.log(pkg.name)        // "clisp"
  * console.log(pkg.description) // "GNU CLISP, a Common Lisp implementation"
  * console.log(pkg.programs)    // ["clisp"]
  * console.log(pkg.versions[0]) // "2.49.92" (latest)
@@ -32,7 +32,7 @@ export const clispPackage = {
   /**
    * The display name of this package.
    */
-  name: 'clisp.org' as const,
+  name: 'clisp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const clispPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'clisp',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) clisp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install clisp' as const,
 }
 
 export type ClispPackage = typeof clispPackage

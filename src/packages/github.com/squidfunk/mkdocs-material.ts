@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mkdocs`
- * @aliases `mkdocs`, `squidfunk/mkdocs-material`
+ * @name `squidfunk/mkdocs-material`
+ * @aliases `mkdocs`
  * @dependencies `pkgx.sh^1`, `sass-lang.com/libsass^3.6`
  *
  * @example
@@ -19,7 +20,7 @@
  * // Or access via domain
  * const samePkg = pantry.githubcomsquidfunkmkdocsmaterial
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mkdocs-material"
+ * console.log(pkg.name)        // "squidfunk/mkdocs-material"
  * console.log(pkg.description) // "Documentation that simply works"
  * console.log(pkg.programs)    // ["mkdocs"]
  * console.log(pkg.versions[0]) // "9.6.14" (latest)
@@ -32,7 +33,7 @@ export const mkdocsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mkdocs-material' as const,
+  name: 'squidfunk/mkdocs-material' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -139,8 +140,9 @@ export const mkdocsPackage = {
    */
   aliases: [
     'mkdocs',
-    'squidfunk/mkdocs-material',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mkdocs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mkdocs' as const,
 }
 
 export type MkdocsPackage = typeof mkdocsPackage

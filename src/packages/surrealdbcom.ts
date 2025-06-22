@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install surreal`
- * @aliases `surreal`
+ * @name `surreal`
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.surreal
  * // Or access via domain
  * const samePkg = pantry.surrealdbcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "surrealdb.com"
+ * console.log(pkg.name)        // "surreal"
  * console.log(pkg.description) // "A scalable, distributed, collaborative, documen..."
  * console.log(pkg.programs)    // ["surreal"]
  * console.log(pkg.versions[0]) // "2023.9.1" (latest)
@@ -32,7 +32,7 @@ export const surrealPackage = {
   /**
    * The display name of this package.
    */
-  name: 'surrealdb.com' as const,
+  name: 'surreal' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -121,9 +121,9 @@ export const surrealPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'surreal',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) surreal -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install surreal' as const,
 }
 
 export type SurrealPackage = typeof surrealPackage

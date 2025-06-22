@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/eb@0.5.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) eb -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnu.org/bash -- $SHELL -i
+launchpad install bash
 ```
 
 ## Programs

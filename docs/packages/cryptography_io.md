@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +cryptography.io -- $SHELL -i
+launchpad install cryptography.io
 ```
 
 ## Programs

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install hjson`
- * @aliases `hjson`
+ * @name `hjson`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.hjson
  * // Or access via domain
  * const samePkg = pantry.hjsongithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "hjson.github.io"
+ * console.log(pkg.name)        // "hjson"
  * console.log(pkg.description) // "Hjson for Rust"
  * console.log(pkg.programs)    // ["hjson"]
  * console.log(pkg.versions[0]) // "1.1.0" (latest)
@@ -31,7 +31,7 @@ export const hjsonPackage = {
   /**
    * The display name of this package.
    */
-  name: 'hjson.github.io' as const,
+  name: 'hjson' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -69,9 +69,9 @@ export const hjsonPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'hjson',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hjson -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hjson' as const,
 }
 
 export type HjsonPackage = typeof hjsonPackage

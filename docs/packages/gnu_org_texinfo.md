@@ -1,11 +1,11 @@
-# texinfo
+# gnu.org/texinfo
 
 > Official documentation format of the GNU project
 
 ## Package Information
 
 - **Domain**: `gnu.org/texinfo`
-- **Name**: `texinfo`
+- **Name**: `gnu.org/texinfo`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/texinfo/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnu.org/texinfo -- $SHELL -i
+launchpad install gnu.org/texinfo
 ```
 
 ## Programs

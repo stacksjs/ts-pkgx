@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +getfoundry.sh -- $SHELL -i
+launchpad install getfoundry.sh
 ```
 
 ## Programs

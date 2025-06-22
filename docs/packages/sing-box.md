@@ -1,11 +1,11 @@
-# sing-box.app
+# sing-box
 
 > The universal proxy platform
 
 ## Package Information
 
 - **Domain**: `sing-box.app`
-- **Name**: `sing-box.app`
+- **Name**: `sing-box`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sing-box.app/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install sing-box
 ## Programs
 
 This package provides the following executable programs:
-
-- `sing-box`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `sing-box`
 
@@ -53,7 +47,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +sing-box.app@1.11.14 -- $SHELL -i
+sh <(curl https://pkgx.sh) sing-box -- $SHELL -i
 ```
 
 ## Usage Examples

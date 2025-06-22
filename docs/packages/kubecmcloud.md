@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) kubecm
+launchpad install kubecm
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +kubecm.cloud@0.33.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) kubecm -- $SHELL -i
 ```
 
 ## Usage Examples

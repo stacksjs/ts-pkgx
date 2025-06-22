@@ -5,7 +5,7 @@
  * @version `1.5.2` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +opus-codec.org -- $SHELL -i`
+ * @install `launchpad install opus-codec.org`
  *
  * @example
  * ```typescript
@@ -40,7 +40,7 @@ export const opuscodecorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +opus-codec.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install opus-codec.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -56,6 +56,8 @@ export const opuscodecorgPackage = {
     '1.3.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +opus-codec.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install opus-codec.org' as const,
 }
 
 export type OpuscodecorgPackage = typeof opuscodecorgPackage

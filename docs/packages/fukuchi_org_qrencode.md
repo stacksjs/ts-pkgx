@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +fukuchi.org/qrencode@4.1.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) qrencode -- $SHELL -i
 ```
 
 ## Dependencies

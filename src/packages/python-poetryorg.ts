@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install poetry`
- * @aliases `poetry`
+ * @name `poetry`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.poetry
  * // Or access via domain
  * const samePkg = pantry.pythonpoetryorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "python-poetry.org"
+ * console.log(pkg.name)        // "poetry"
  * console.log(pkg.description) // "Python packaging and dependency management made..."
  * console.log(pkg.programs)    // ["poetry"]
  * console.log(pkg.versions[0]) // "2.1.3" (latest)
@@ -32,7 +32,7 @@ export const poetryPackage = {
   /**
    * The display name of this package.
    */
-  name: 'python-poetry.org' as const,
+  name: 'poetry' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -95,9 +95,9 @@ export const poetryPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'poetry',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) poetry -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install poetry' as const,
 }
 
 export type PoetryPackage = typeof poetryPackage

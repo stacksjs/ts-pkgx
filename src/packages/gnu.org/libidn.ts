@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install idn`
- * @aliases `idn`
+ * @name `idn`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.idn
  * // Or access via domain
  * const samePkg = pantry.gnuorglibidn
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libidn"
+ * console.log(pkg.name)        // "idn"
  * console.log(pkg.description) // "International domain name library"
  * console.log(pkg.programs)    // ["idn"]
  * console.log(pkg.versions[0]) // "1.43.0" (latest)
@@ -31,7 +31,7 @@ export const idnPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libidn' as const,
+  name: 'idn' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -70,9 +70,9 @@ export const idnPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'idn',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) idn -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install idn' as const,
 }
 
 export type IdnPackage = typeof idnPackage

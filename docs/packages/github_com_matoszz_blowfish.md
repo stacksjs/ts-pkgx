@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/matoszz/blowfish@0.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) blowfish -- $SHELL -i
 ```
 
 ## Usage Examples

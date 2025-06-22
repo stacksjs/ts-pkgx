@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install wayland-scanner`
- * @aliases `wayland-scanner`, `wayland`
+ * @name `wayland-scanner`
  * @dependencies `libexpat.github.io`, `sourceware.org/libffi`, `gnome.org/libxml2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.waylandscanner
  * // Or access via domain
  * const samePkg = pantry.waylandfreedesktoporg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "wayland.freedesktop.org"
+ * console.log(pkg.name)        // "wayland-scanner"
  * console.log(pkg.programs)    // ["wayland-scanner"]
  * console.log(pkg.versions[0]) // "1.23.93" (latest)
  * ```
@@ -31,7 +31,7 @@ export const waylandscannerPackage = {
   /**
    * The display name of this package.
    */
-  name: 'wayland.freedesktop.org' as const,
+  name: 'wayland-scanner' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -84,10 +84,9 @@ export const waylandscannerPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'wayland-scanner',
-    'wayland',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wayland-scanner -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wayland-scanner' as const,
 }
 
 export type WaylandscannerPackage = typeof waylandscannerPackage

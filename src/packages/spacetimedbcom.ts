@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install spacetime`
- * @aliases `spacetime`
+ * @name `spacetime`
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.spacetime
  * // Or access via domain
  * const samePkg = pantry.spacetimedbcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "spacetimedb.com"
+ * console.log(pkg.name)        // "spacetime"
  * console.log(pkg.description) // "Multiplayer at the speed of light"
  * console.log(pkg.programs)    // ["spacetime"]
  * console.log(pkg.versions[0]) // "2023.12.8" (latest)
@@ -32,7 +32,7 @@ export const spacetimePackage = {
   /**
    * The display name of this package.
    */
-  name: 'spacetimedb.com' as const,
+  name: 'spacetime' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -76,9 +76,9 @@ export const spacetimePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'spacetime',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) spacetime -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install spacetime' as const,
 }
 
 export type SpacetimePackage = typeof spacetimePackage

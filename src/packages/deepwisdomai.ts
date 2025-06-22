@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install metagpt`
- * @aliases `metagpt`, `MetaGPT`
+ * @name `MetaGPT`
+ * @aliases `metagpt`
  * @dependencies `pkgx.sh^1`, `git-scm.org^2 # v0.7.0 requires it`
  *
  * @example
@@ -19,7 +20,7 @@
  * // Or access via domain
  * const samePkg = pantry.deepwisdomai
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "deepwisdom.ai"
+ * console.log(pkg.name)        // "MetaGPT"
  * console.log(pkg.description) // "🌟 The Multi-Agent Framework: First AI Software..."
  * console.log(pkg.programs)    // ["metagpt"]
  * console.log(pkg.versions[0]) // "0.8.2" (latest)
@@ -32,7 +33,7 @@ export const metagptPackage = {
   /**
    * The display name of this package.
    */
-  name: 'deepwisdom.ai' as const,
+  name: 'MetaGPT' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -93,8 +94,9 @@ export const metagptPackage = {
    */
   aliases: [
     'metagpt',
-    'MetaGPT',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) metagpt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install metagpt' as const,
 }
 
 export type MetagptPackage = typeof metagptPackage

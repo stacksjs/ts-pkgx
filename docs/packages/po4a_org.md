@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +po4a.org -- $SHELL -i
+launchpad install po4a.org
 ```
 
 ## Programs

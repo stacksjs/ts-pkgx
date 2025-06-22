@@ -72,6 +72,8 @@ export const genqlientPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) genqlient -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install genqlient' as const,
 }
 
 export type GenqlientPackage = typeof genqlientPackage

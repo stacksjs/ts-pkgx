@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +invisible-island.net/lynx@2.9.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) lynx -- $SHELL -i
 ```
 
 ## Dependencies

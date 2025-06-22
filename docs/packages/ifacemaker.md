@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/vburenin/ifacemaker@1.3.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) ifacemaker -- $SHELL -i
 ```
 
 ## Related Packages

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jags`
- * @aliases `jags`
+ * @name `jags`
  * @dependencies `gnu.org/gcc`, `linux:netlib.org/lapack^3` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.jags
  * // Or access via domain
  * const samePkg = pantry.mcmcjagssourceforgeio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mcmc-jags.sourceforge.io"
+ * console.log(pkg.name)        // "jags"
  * console.log(pkg.description) // "Just Another Gibbs Sampler for Bayesian MCMC si..."
  * console.log(pkg.programs)    // ["jags"]
  * console.log(pkg.versions[0]) // "4.3.2" (latest)
@@ -32,7 +32,7 @@ export const jagsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mcmc-jags.sourceforge.io' as const,
+  name: 'jags' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const jagsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jags',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jags -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jags' as const,
 }
 
 export type JagsPackage = typeof jagsPackage

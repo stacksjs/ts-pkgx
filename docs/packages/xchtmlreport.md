@@ -1,11 +1,11 @@
-# XCTestHTMLReport
+# xchtmlreport
 
 > Xcode-like HTML report for Unit and UI Tests
 
 ## Package Information
 
 - **Domain**: `github.com/XCTestHTMLReport/XCTestHTMLReport`
-- **Name**: `XCTestHTMLReport`
+- **Name**: `xchtmlreport`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/XCTestHTMLReport/XCTestHTMLReport/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install xchtmlreport
 ## Programs
 
 This package provides the following executable programs:
-
-- `xchtmlreport`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `xchtmlreport`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/XCTestHTMLReport/XCTestHTMLReport@2.5.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) xchtmlreport -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) starship
+launchpad install starship
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +starship.rs@1.23.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) starship -- $SHELL -i
 ```
 
 ## Usage Examples

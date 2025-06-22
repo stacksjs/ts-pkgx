@@ -81,6 +81,8 @@ export const gciPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gci -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gci' as const,
 }
 
 export type GciPackage = typeof gciPackage

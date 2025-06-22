@@ -76,6 +76,8 @@ export const hexeditPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hexedit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hexedit' as const,
 }
 
 export type HexeditPackage = typeof hexeditPackage

@@ -6,7 +6,7 @@
  * @version `37.5.0` (27 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +rucio.cern.ch/rucio-client -- $SHELL -i`
+ * @install `launchpad install rucio-client`
  * @name `rucio-client`
  * @dependencies `pkgx.sh^1`
  *
@@ -48,7 +48,7 @@ export const rucioclientPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +rucio.cern.ch/rucio-client -- $SHELL -i' as const,
+  installCommand: 'launchpad install rucio-client' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -103,6 +103,8 @@ export const rucioclientPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rucio.cern.ch/rucio-client -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rucio-client' as const,
 }
 
 export type RucioclientPackage = typeof rucioclientPackage

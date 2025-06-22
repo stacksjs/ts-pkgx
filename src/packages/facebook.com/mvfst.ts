@@ -1,11 +1,11 @@
 /**
- * **mvfst** - An implementation of the QUIC transport protocol.
+ * **facebook.com/mvfst** - An implementation of the QUIC transport protocol.
  *
  * @domain `facebook.com/mvfst`
  * @version `2025.6.9.0` (82 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +facebook.com/mvfst -- $SHELL -i`
+ * @install `launchpad install facebook.com/mvfst`
  * @dependencies `boost.org`, `github.com/facebookincubator/fizz`, `fmt.dev^10`, ... (+6 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.facebookcommvfst
- * console.log(pkg.name)        // "mvfst"
+ * console.log(pkg.name)        // "facebook.com/mvfst"
  * console.log(pkg.description) // "An implementation of the QUIC transport protocol."
  * console.log(pkg.versions[0]) // "2025.6.9.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const facebookcommvfstPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mvfst' as const,
+  name: 'facebook.com/mvfst' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const facebookcommvfstPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +facebook.com/mvfst -- $SHELL -i' as const,
+  installCommand: 'launchpad install facebook.com/mvfst' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -149,6 +149,8 @@ export const facebookcommvfstPackage = {
     '2023.10.23.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +facebook.com/mvfst -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install facebook.com/mvfst' as const,
 }
 
 export type FacebookcommvfstPackage = typeof facebookcommvfstPackage

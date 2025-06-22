@@ -104,6 +104,8 @@ export const zxPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zx' as const,
 }
 
 export type ZxPackage = typeof zxPackage

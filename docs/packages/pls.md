@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +dhruvkb.dev/pls@2023.12.22 -- $SHELL -i
+sh <(curl https://pkgx.sh) pls -- $SHELL -i
 ```
 
 ## Dependencies

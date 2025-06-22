@@ -1,25 +1,25 @@
 /**
- * **pnp** - Fast, disk space efficient package manager
+ * **pnpm** - Fast, disk space efficient package manager
  *
  * @domain `pnpm.io`
  * @programs `pnpm`, `pnpx`
  * @version `10.12.1` (165 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +pnpm.io -- $SHELL -i`
- * @aliases `pnp`
+ * @install `launchpad install pnpm`
+ * @name `pnpm`
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pnp
+ * // Access the package
+ * const pkg = pantry.pnpm
  * // Or access via domain
  * const samePkg = pantry.pnpmio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pnpm.io"
+ * console.log(pkg.name)        // "pnpm"
  * console.log(pkg.description) // "Fast, disk space efficient package manager"
  * console.log(pkg.programs)    // ["pnpm", "pnpx"]
  * console.log(pkg.versions[0]) // "10.12.1" (latest)
@@ -28,11 +28,11 @@
  * @see https://ts-pkgx.netlify.app/packages/pnpm-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pnpPackage = {
+export const pnpmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pnpm.io' as const,
+  name: 'pnpm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const pnpPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pnpm.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install pnpm' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -240,9 +240,9 @@ export const pnpPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pnp',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pnpm.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pnpm' as const,
 }
 
-export type PnpPackage = typeof pnpPackage
+export type PnpmPackage = typeof pnpmPackage

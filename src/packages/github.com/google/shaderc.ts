@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install glslc`
- * @aliases `glslc`
+ * @name `glslc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.glslc
  * // Or access via domain
  * const samePkg = pantry.githubcomgoogleshaderc
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "shaderc"
+ * console.log(pkg.name)        // "glslc"
  * console.log(pkg.description) // "A collection of tools, libraries, and tests for..."
  * console.log(pkg.programs)    // ["glslc"]
  * console.log(pkg.versions[0]) // "2025.2.0" (latest)
@@ -31,7 +31,7 @@ export const glslcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'shaderc' as const,
+  name: 'glslc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const glslcPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'glslc',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) glslc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install glslc' as const,
 }
 
 export type GlslcPackage = typeof glslcPackage

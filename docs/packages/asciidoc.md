@@ -1,11 +1,11 @@
-# asciidoc-py
+# asciidoc
 
 > Formatter/translator for text files to numerous formats
 
 ## Package Information
 
 - **Domain**: `github.com/asciidoc-py/asciidoc-py`
-- **Name**: `asciidoc-py`
+- **Name**: `asciidoc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/asciidoc-py/asciidoc-py/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install asciidoc
 ## Programs
 
 This package provides the following executable programs:
-
-- `asciidoc`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `asciidoc`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/asciidoc-py/asciidoc-py@10.2.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) asciidoc -- $SHELL -i
 ```
 
 ## Dependencies

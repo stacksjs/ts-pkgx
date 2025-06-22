@@ -76,6 +76,8 @@ export const k3supPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) k3sup -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install k3sup' as const,
 }
 
 export type K3supPackage = typeof k3supPackage

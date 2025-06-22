@@ -77,6 +77,8 @@ export const brucePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bruce -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bruce' as const,
 }
 
 export type BrucePackage = typeof brucePackage

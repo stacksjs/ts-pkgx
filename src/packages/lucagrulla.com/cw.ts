@@ -69,6 +69,8 @@ export const cwPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cw -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cw' as const,
 }
 
 export type CwPackage = typeof cwPackage

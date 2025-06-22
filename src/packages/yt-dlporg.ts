@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install yt-dlp`
- * @aliases `yt-dlp`
+ * @name `yt-dlp`
  * @dependencies `python.org>=3<3.12`, `ffmpeg.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ytdlp
  * // Or access via domain
  * const samePkg = pantry.ytdlporg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "yt-dlp.org"
+ * console.log(pkg.name)        // "yt-dlp"
  * console.log(pkg.description) // "A feature-rich command-line audio/video downloader"
  * console.log(pkg.programs)    // ["yt-dlp"]
  * console.log(pkg.versions[0]) // "2025.6.9" (latest)
@@ -32,7 +32,7 @@ export const ytdlpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'yt-dlp.org' as const,
+  name: 'yt-dlp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -122,9 +122,9 @@ export const ytdlpPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'yt-dlp',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) yt-dlp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install yt-dlp' as const,
 }
 
 export type YtdlpPackage = typeof ytdlpPackage

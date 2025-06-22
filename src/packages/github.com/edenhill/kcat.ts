@@ -79,6 +79,8 @@ export const kcatPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kcat -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kcat' as const,
 }
 
 export type KcatPackage = typeof kcatPackage

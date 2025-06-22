@@ -5,7 +5,7 @@
  * @version `3.2.16` (34 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +libsdl.org -- $SHELL -i`
+ * @install `launchpad install libsdl.org`
  * @dependencies `linux:x.org/x11`, `linux:x.org/xcursor`, `linux:x.org/xi`, ... (+5 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -41,7 +41,7 @@ export const libsdlorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +libsdl.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install libsdl.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -100,6 +100,8 @@ export const libsdlorgPackage = {
     '2.26.5',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libsdl.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libsdl.org' as const,
 }
 
 export type LibsdlorgPackage = typeof libsdlorgPackage

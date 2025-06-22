@@ -71,6 +71,8 @@ export const diffociPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) diffoci -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install diffoci' as const,
 }
 
 export type DiffociPackage = typeof diffociPackage

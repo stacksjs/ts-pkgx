@@ -1,11 +1,11 @@
-# spdlog
+# github.com/gabime/spdlog
 
 > Fast C++ logging library.
 
 ## Package Information
 
 - **Domain**: `github.com/gabime/spdlog`
-- **Name**: `spdlog`
+- **Name**: `github.com/gabime/spdlog`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/gabime/spdlog/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/gabime/spdlog -- $SHELL -i
+launchpad install github.com/gabime/spdlog
 ```
 
 ## Programs

@@ -84,6 +84,8 @@ export const comrakPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) comrak -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install comrak' as const,
 }
 
 export type ComrakPackage = typeof comrakPackage

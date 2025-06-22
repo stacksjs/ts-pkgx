@@ -1,11 +1,11 @@
-# shaka-packager
+# github.com/shaka-project/shaka-packager
 
 > A media packaging and development framework for VOD and Live DASH and HLS applications, supporting Common Encryption for Widevine and other DRM Systems.
 
 ## Package Information
 
 - **Domain**: `github.com/shaka-project/shaka-packager`
-- **Name**: `shaka-packager`
+- **Name**: `github.com/shaka-project/shaka-packager`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/shaka-project/shaka-packager/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/shaka-project/shaka-packager -- $SHELL -i
+launchpad install github.com/shaka-project/shaka-packager
 ```
 
 ## Programs

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install duk`
- * @aliases `duk`
+ * @name `duk`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.duk
  * // Or access via domain
  * const samePkg = pantry.duktapeorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "duktape.org"
+ * console.log(pkg.name)        // "duk"
  * console.log(pkg.description) // "Duktape - embeddable Javascript engine with a f..."
  * console.log(pkg.programs)    // ["duk"]
  * console.log(pkg.versions[0]) // "2.7.0" (latest)
@@ -31,7 +31,7 @@ export const dukPackage = {
   /**
    * The display name of this package.
    */
-  name: 'duktape.org' as const,
+  name: 'duk' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const dukPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'duk',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) duk -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install duk' as const,
 }
 
 export type DukPackage = typeof dukPackage

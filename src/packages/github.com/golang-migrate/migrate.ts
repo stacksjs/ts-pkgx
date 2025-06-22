@@ -75,6 +75,8 @@ export const migratePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) migrate -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install migrate' as const,
 }
 
 export type MigratePackage = typeof migratePackage

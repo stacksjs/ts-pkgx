@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +kotlinlang.org -- $SHELL -i
+launchpad install kotlinlang.org
 ```
 
 ## Programs

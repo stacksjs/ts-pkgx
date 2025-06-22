@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mercure`
- * @aliases `mercure`
+ * @name `mercure`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mercure
  * // Or access via domain
  * const samePkg = pantry.mercurerocks
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mercure.rocks"
+ * console.log(pkg.name)        // "mercure"
  * console.log(pkg.description) // "🪽 An open, easy, fast, reliable and battery-ef..."
  * console.log(pkg.programs)    // ["mercure"]
  * console.log(pkg.versions[0]) // "0.19.2" (latest)
@@ -31,7 +31,7 @@ export const mercurePackage = {
   /**
    * The display name of this package.
    */
-  name: 'mercure.rocks' as const,
+  name: 'mercure' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +78,9 @@ export const mercurePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mercure',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mercure -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mercure' as const,
 }
 
 export type MercurePackage = typeof mercurePackage

@@ -1,11 +1,11 @@
-# surrealdb.com
+# surreal
 
 > A scalable, distributed, collaborative, document-graph database, for the realtime web
 
 ## Package Information
 
 - **Domain**: `surrealdb.com`
-- **Name**: `surrealdb.com`
+- **Name**: `surreal`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/surrealdb.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install surreal
 ## Programs
 
 This package provides the following executable programs:
-
-- `surreal`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `surreal`
 
@@ -52,7 +46,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +surrealdb.com@2023.9.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) surreal -- $SHELL -i
 ```
 
 ## Dependencies

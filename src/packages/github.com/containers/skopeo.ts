@@ -90,6 +90,8 @@ export const skopeoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) skopeo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install skopeo' as const,
 }
 
 export type SkopeoPackage = typeof skopeoPackage

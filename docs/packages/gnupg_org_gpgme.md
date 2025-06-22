@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnupg.org/gpgme -- $SHELL -i
+launchpad install gpgme
 ```
 
 ## Programs

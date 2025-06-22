@@ -70,6 +70,8 @@ export const minisignPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) minisign -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install minisign' as const,
 }
 
 export type MinisignPackage = typeof minisignPackage

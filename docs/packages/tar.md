@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/tar@1.35.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) tar -- $SHELL -i
 ```
 
 ## Usage Examples

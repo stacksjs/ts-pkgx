@@ -70,6 +70,8 @@ export const sdPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sd' as const,
 }
 
 export type SdPackage = typeof sdPackage

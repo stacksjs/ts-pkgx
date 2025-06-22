@@ -1,11 +1,11 @@
-# xz
+# tukaani.org/xz
 
 > General-purpose data compression with high compression ratio
 
 ## Package Information
 
 - **Domain**: `tukaani.org/xz`
-- **Name**: `xz`
+- **Name**: `tukaani.org/xz`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tukaani.org/xz/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +tukaani.org/xz -- $SHELL -i
+launchpad install tukaani.org/xz
 ```
 
 ## Programs

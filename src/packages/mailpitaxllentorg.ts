@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mailpit`
- * @aliases `mailpit`
+ * @name `mailpit`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mailpit
  * // Or access via domain
  * const samePkg = pantry.mailpitaxllentorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mailpit.axllent.org"
+ * console.log(pkg.name)        // "mailpit"
  * console.log(pkg.description) // "An email and SMTP testing tool with API for dev..."
  * console.log(pkg.programs)    // ["mailpit"]
  * console.log(pkg.versions[0]) // "1.26.2" (latest)
@@ -31,7 +31,7 @@ export const mailpitPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mailpit.axllent.org' as const,
+  name: 'mailpit' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -135,9 +135,9 @@ export const mailpitPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mailpit',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mailpit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mailpit' as const,
 }
 
 export type MailpitPackage = typeof mailpitPackage

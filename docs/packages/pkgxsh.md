@@ -1,11 +1,11 @@
-# pkgx.sh
+# pkgx
 
 > Standalone binary that can run anything
 
 ## Package Information
 
 - **Domain**: `pkgx.sh`
-- **Name**: `pkgx.sh`
+- **Name**: `pkgx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install pkgx.sh
+launchpad install pkgx
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `pkgx`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pkgx`
 
@@ -49,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pkgx.sh@2.7.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) pkgx -- $SHELL -i
 ```
 
 ## Usage Examples

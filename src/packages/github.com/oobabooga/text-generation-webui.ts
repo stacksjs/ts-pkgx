@@ -8,7 +8,6 @@
  *
  * @install `launchpad install text-generation-webui`
  * @name `text-generation-webui`
- * @aliases `text generation web UI`
  * @dependencies `python.org~3.10`, `pkgx.sh^1`
  *
  * @example
@@ -112,9 +111,9 @@ export const textgenerationwebuiPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'text generation web UI',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) text-generation-webui -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install text-generation-webui' as const,
 }
 
 export type TextgenerationwebuiPackage = typeof textgenerationwebuiPackage

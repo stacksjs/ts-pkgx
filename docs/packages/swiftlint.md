@@ -1,11 +1,11 @@
-# SwiftLint
+# swiftlint
 
 > A tool to enforce Swift style and conventions.
 
 ## Package Information
 
 - **Domain**: `github.com/realm/SwiftLint`
-- **Name**: `SwiftLint`
+- **Name**: `swiftlint`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/realm/SwiftLint/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install swiftlint
 ## Programs
 
 This package provides the following executable programs:
-
-- `swiftlint`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `swiftlint`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/realm/SwiftLint@0.59.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) swiftlint -- $SHELL -i
 ```
 
 ## Dependencies

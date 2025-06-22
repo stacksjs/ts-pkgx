@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnu.org/gdbm -- $SHELL -i
+launchpad install gdbm
 ```
 
 ## Programs

@@ -1,11 +1,11 @@
-# conftest.dev
+# conftest
 
 > Write tests against structured configuration data using the Open Policy Agent Rego query language
 
 ## Package Information
 
 - **Domain**: `conftest.dev`
-- **Name**: `conftest.dev`
+- **Name**: `conftest`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/conftest.dev/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install conftest
 ## Programs
 
 This package provides the following executable programs:
-
-- `conftest`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `conftest`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +conftest.dev@0.61.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) conftest -- $SHELL -i
 ```
 
 ## Usage Examples

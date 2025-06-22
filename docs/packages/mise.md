@@ -1,11 +1,11 @@
-# mise.jdx.dev
+# mise
 
 > dev tools, env vars, task runner
 
 ## Package Information
 
 - **Domain**: `mise.jdx.dev`
-- **Name**: `mise.jdx.dev`
+- **Name**: `mise`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mise.jdx.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mise.jdx.dev -- $SHELL -i
+launchpad install mise
 ```
 
 ## Programs
@@ -21,12 +21,6 @@ launchpad install +mise.jdx.dev -- $SHELL -i
 This package provides the following executable programs:
 
 - `rtx`
-- `mise`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
 - `mise`
 
 ## Available Versions

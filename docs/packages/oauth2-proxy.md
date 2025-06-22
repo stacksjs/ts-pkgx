@@ -1,11 +1,11 @@
-# oauth2-proxy.github.io
+# oauth2-proxy
 
 > A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers.
 
 ## Package Information
 
 - **Domain**: `oauth2-proxy.github.io`
-- **Name**: `oauth2-proxy.github.io`
+- **Name**: `oauth2-proxy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/oauth2-proxy.github.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install oauth2-proxy
 ## Programs
 
 This package provides the following executable programs:
-
-- `oauth2-proxy`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `oauth2-proxy`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +oauth2-proxy.github.io@7.9.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) oauth2-proxy -- $SHELL -i
 ```
 
 ## Usage Examples

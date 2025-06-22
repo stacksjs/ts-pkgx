@@ -52,7 +52,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gitlab.com/gitlab-org/gitlab-runner@18.1.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) gitlab-runner -- $SHELL -i
 ```
 
 ## Usage Examples

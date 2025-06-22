@@ -1,11 +1,11 @@
 /**
- * **vorbis** - Reference implementation of the Ogg Vorbis audio format.
+ * **xiph.org/vorbis** - Reference implementation of the Ogg Vorbis audio format.
  *
  * @domain `xiph.org/vorbis`
  * @version `1.3.7` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +xiph.org/vorbis -- $SHELL -i`
+ * @install `launchpad install xiph.org/vorbis`
  * @dependencies `xiph.org/ogg^1`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xiphorgvorbis
- * console.log(pkg.name)        // "vorbis"
+ * console.log(pkg.name)        // "xiph.org/vorbis"
  * console.log(pkg.description) // "Reference implementation of the Ogg Vorbis audi..."
  * console.log(pkg.versions[0]) // "1.3.7" (latest)
  * ```
@@ -25,7 +25,7 @@ export const xiphorgvorbisPackage = {
   /**
    * The display name of this package.
    */
-  name: 'vorbis' as const,
+  name: 'xiph.org/vorbis' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const xiphorgvorbisPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +xiph.org/vorbis -- $SHELL -i' as const,
+  installCommand: 'launchpad install xiph.org/vorbis' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -59,6 +59,8 @@ export const xiphorgvorbisPackage = {
     '1.3.7',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +xiph.org/vorbis -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xiph.org/vorbis' as const,
 }
 
 export type XiphorgvorbisPackage = typeof xiphorgvorbisPackage

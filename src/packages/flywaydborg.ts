@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install flyway`
- * @aliases `flyway`
+ * @name `flyway`
  * @dependencies `openjdk.org^21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.flyway
  * // Or access via domain
  * const samePkg = pantry.flywaydborg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "flywaydb.org"
+ * console.log(pkg.name)        // "flyway"
  * console.log(pkg.description) // "Database version control to control migrations"
  * console.log(pkg.programs)    // ["flyway"]
  * console.log(pkg.versions[0]) // "11.8.2" (latest)
@@ -32,7 +32,7 @@ export const flywayPackage = {
   /**
    * The display name of this package.
    */
-  name: 'flywaydb.org' as const,
+  name: 'flyway' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -115,9 +115,9 @@ export const flywayPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'flyway',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) flyway -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install flyway' as const,
 }
 
 export type FlywayPackage = typeof flywayPackage

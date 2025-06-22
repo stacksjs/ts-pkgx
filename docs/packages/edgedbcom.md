@@ -1,11 +1,11 @@
-# edgedb.com
+# edgedb
 
 > The EdgeDB CLI
 
 ## Package Information
 
 - **Domain**: `edgedb.com`
-- **Name**: `edgedb.com`
+- **Name**: `edgedb`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/edgedb.com/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install edgedb.com
+launchpad install edgedb
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `edgedb`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `edgedb`
 
@@ -50,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +edgedb.com@7.7.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) edgedb -- $SHELL -i
 ```
 
 ## Usage Examples

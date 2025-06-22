@@ -69,6 +69,8 @@ export const ddhPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ddh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ddh' as const,
 }
 
 export type DdhPackage = typeof ddhPackage

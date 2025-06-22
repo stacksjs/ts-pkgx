@@ -86,6 +86,8 @@ export const semveratorPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) semverator -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install semverator' as const,
 }
 
 export type SemveratorPackage = typeof semveratorPackage

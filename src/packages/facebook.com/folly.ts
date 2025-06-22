@@ -1,11 +1,11 @@
 /**
- * **folly** - An open-source C++ library developed and used at Facebook.
+ * **facebook.com/folly** - An open-source C++ library developed and used at Facebook.
  *
  * @domain `facebook.com/folly`
  * @version `2025.6.9.0` (108 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +facebook.com/folly -- $SHELL -i`
+ * @install `launchpad install facebook.com/folly`
  * @dependencies `boost.org`, `gflags.github.io`, `google.com/glog<0.7`, ... (+17 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.facebookcomfolly
- * console.log(pkg.name)        // "folly"
+ * console.log(pkg.name)        // "facebook.com/folly"
  * console.log(pkg.description) // "An open-source C++ library developed and used a..."
  * console.log(pkg.versions[0]) // "2025.6.9.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const facebookcomfollyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'folly' as const,
+  name: 'facebook.com/folly' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const facebookcomfollyPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +facebook.com/folly -- $SHELL -i' as const,
+  installCommand: 'launchpad install facebook.com/folly' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -186,6 +186,8 @@ export const facebookcomfollyPackage = {
     '2023.10.16.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +facebook.com/folly -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install facebook.com/folly' as const,
 }
 
 export type FacebookcomfollyPackage = typeof facebookcomfollyPackage

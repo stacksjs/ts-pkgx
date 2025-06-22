@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install julia`
- * @aliases `julia`
+ * @name `julia`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.julia
  * // Or access via domain
  * const samePkg = pantry.julialangorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "julialang.org"
+ * console.log(pkg.name)        // "julia"
  * console.log(pkg.description) // "The Julia Programming Language"
  * console.log(pkg.programs)    // ["julia"]
  * console.log(pkg.versions[0]) // "1.11.5" (latest)
@@ -31,7 +31,7 @@ export const juliaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'julialang.org' as const,
+  name: 'julia' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -85,9 +85,9 @@ export const juliaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'julia',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) julia -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install julia' as const,
 }
 
 export type JuliaPackage = typeof juliaPackage

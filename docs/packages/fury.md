@@ -1,11 +1,11 @@
-# fury.co
+# fury
 
 > Gemfury CLI
 
 ## Package Information
 
 - **Domain**: `fury.co`
-- **Name**: `fury.co`
+- **Name**: `fury`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fury.co/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install fury
 ## Programs
 
 This package provides the following executable programs:
-
-- `fury`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `fury`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +fury.co@0.23.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) fury -- $SHELL -i
 ```
 
 ## Usage Examples

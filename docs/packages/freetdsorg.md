@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +freetds.org -- $SHELL -i
+launchpad install freetds.org
 ```
 
 ## Programs

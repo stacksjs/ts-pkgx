@@ -70,6 +70,8 @@ export const xcparsePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xcparse -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xcparse' as const,
 }
 
 export type XcparsePackage = typeof xcparsePackage

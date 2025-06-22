@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install shout`
- * @aliases `shout`
+ * @name `shout`
  * @dependencies `xiph.org/ogg`, `xiph.org/vorbis`, `openssl.org~1`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.shout
  * // Or access via domain
  * const samePkg = pantry.xiphorglibshout
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libshout"
+ * console.log(pkg.name)        // "shout"
  * console.log(pkg.description) // "Data and connectivity library for the icecast s..."
  * console.log(pkg.programs)    // ["shout"]
  * console.log(pkg.versions[0]) // "2.4.6" (latest)
@@ -32,7 +32,7 @@ export const shoutPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libshout' as const,
+  name: 'shout' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,9 @@ export const shoutPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'shout',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) shout -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install shout' as const,
 }
 
 export type ShoutPackage = typeof shoutPackage

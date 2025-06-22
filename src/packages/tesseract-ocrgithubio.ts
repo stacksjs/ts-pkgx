@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tesseract`
- * @aliases `tesseract`
+ * @name `tesseract`
  * @dependencies `cairographics.org@1`, `unicode.org@71`, `leptonica.org`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tesseract
  * // Or access via domain
  * const samePkg = pantry.tesseractocrgithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tesseract-ocr.github.io"
+ * console.log(pkg.name)        // "tesseract"
  * console.log(pkg.description) // "Tesseract Open Source OCR Engine (main repository)"
  * console.log(pkg.programs)    // ["tesseract"]
  * console.log(pkg.versions[0]) // "5.5.1" (latest)
@@ -32,7 +32,7 @@ export const tesseractPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tesseract-ocr.github.io' as const,
+  name: 'tesseract' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -87,9 +87,9 @@ export const tesseractPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tesseract',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tesseract -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tesseract' as const,
 }
 
 export type TesseractPackage = typeof tesseractPackage

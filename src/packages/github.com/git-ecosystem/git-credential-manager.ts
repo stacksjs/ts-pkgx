@@ -86,6 +86,8 @@ export const gitcredentialmanagerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-credential-manager -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-credential-manager' as const,
 }
 
 export type GitcredentialmanagerPackage = typeof gitcredentialmanagerPackage

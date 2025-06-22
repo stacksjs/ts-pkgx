@@ -76,6 +76,8 @@ export const lazydockerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) lazydocker -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lazydocker' as const,
 }
 
 export type LazydockerPackage = typeof lazydockerPackage

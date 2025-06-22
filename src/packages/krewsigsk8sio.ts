@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kubectl-krew`
- * @aliases `kubectl-krew`
+ * @name `kubectl-krew`
  * @dependencies `git-scm.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.kubectlkrew
  * // Or access via domain
  * const samePkg = pantry.krewsigsk8sio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "krew.sigs.k8s.io"
+ * console.log(pkg.name)        // "kubectl-krew"
  * console.log(pkg.description) // "📦 Find and install kubectl plugins"
  * console.log(pkg.programs)    // ["kubectl-krew"]
  * console.log(pkg.versions[0]) // "0.4.5" (latest)
@@ -32,7 +32,7 @@ export const kubectlkrewPackage = {
   /**
    * The display name of this package.
    */
-  name: 'krew.sigs.k8s.io' as const,
+  name: 'kubectl-krew' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -76,9 +76,9 @@ export const kubectlkrewPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kubectl-krew',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kubectl-krew -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kubectl-krew' as const,
 }
 
 export type KubectlkrewPackage = typeof kubectlkrewPackage

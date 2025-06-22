@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gleam`
- * @aliases `gleam`
+ * @name `gleam`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gleam
  * // Or access via domain
  * const samePkg = pantry.gleamrun
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gleam.run"
+ * console.log(pkg.name)        // "gleam"
  * console.log(pkg.description) // "⭐️ A friendly language for building type-safe, ..."
  * console.log(pkg.programs)    // ["gleam"]
  * console.log(pkg.versions[0]) // "1.11.1" (latest)
@@ -31,7 +31,7 @@ export const gleamPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gleam.run' as const,
+  name: 'gleam' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -111,9 +111,9 @@ export const gleamPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gleam',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gleam -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gleam' as const,
 }
 
 export type GleamPackage = typeof gleamPackage

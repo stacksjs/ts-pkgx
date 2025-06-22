@@ -6,7 +6,7 @@
  * @version `2024.4.12` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +getfoundry.sh -- $SHELL -i`
+ * @install `launchpad install getfoundry.sh`
  * @dependencies `git-scm.org^2`
  *
  * @example
@@ -43,7 +43,7 @@ export const getfoundryshPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +getfoundry.sh -- $SHELL -i' as const,
+  installCommand: 'launchpad install getfoundry.sh' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,6 +79,8 @@ export const getfoundryshPackage = {
     '0.3.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +getfoundry.sh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install getfoundry.sh' as const,
 }
 
 export type GetfoundryshPackage = typeof getfoundryshPackage

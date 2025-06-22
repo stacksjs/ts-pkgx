@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pcap-config`
- * @aliases `pcap-config`
+ * @name `pcap-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pcapconfig
  * // Or access via domain
  * const samePkg = pantry.tcpdumporg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tcpdump.org"
+ * console.log(pkg.name)        // "pcap-config"
  * console.log(pkg.description) // "the LIBpcap interface to various kernel packet ..."
  * console.log(pkg.programs)    // ["pcap-config"]
  * console.log(pkg.versions[0]) // "1.10.5" (latest)
@@ -31,7 +31,7 @@ export const pcapconfigPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tcpdump.org' as const,
+  name: 'pcap-config' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -69,9 +69,9 @@ export const pcapconfigPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pcap-config',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pcap-config -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pcap-config' as const,
 }
 
 export type PcapconfigPackage = typeof pcapconfigPackage

@@ -1,18 +1,18 @@
 /**
- * **ucl** - pkgx package
+ * **oberhumer.com/ucl** - pkgx package
  *
  * @domain `oberhumer.com/ucl`
  * @version `1.3.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +oberhumer.com/ucl -- $SHELL -i`
+ * @install `launchpad install oberhumer.com/ucl`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.oberhumercomucl
- * console.log(pkg.name)        // "ucl"
+ * console.log(pkg.name)        // "oberhumer.com/ucl"
  * console.log(pkg.versions[0]) // "1.3.0" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const oberhumercomuclPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ucl' as const,
+  name: 'oberhumer.com/ucl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +39,7 @@ export const oberhumercomuclPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +oberhumer.com/ucl -- $SHELL -i' as const,
+  installCommand: 'launchpad install oberhumer.com/ucl' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -51,6 +51,8 @@ export const oberhumercomuclPackage = {
     '1.3.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +oberhumer.com/ucl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install oberhumer.com/ucl' as const,
 }
 
 export type OberhumercomuclPackage = typeof oberhumercomuclPackage

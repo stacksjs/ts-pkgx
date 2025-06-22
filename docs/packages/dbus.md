@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +freedesktop.org/dbus -- $SHELL -i
+launchpad install dbus
 ```
 
 ## Programs

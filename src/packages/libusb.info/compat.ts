@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install libusb-config`
- * @aliases `libusb-config`, `libusb-compat`
+ * @name `libusb-config`
  * @dependencies `libusb.info^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.libusbconfig
  * // Or access via domain
  * const samePkg = pantry.libusbinfocompat
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "compat"
+ * console.log(pkg.name)        // "libusb-config"
  * console.log(pkg.description) // "Library for USB device access"
  * console.log(pkg.programs)    // ["libusb-config"]
  * console.log(pkg.versions[0]) // "0.1.8" (latest)
@@ -32,7 +32,7 @@ export const libusbconfigPackage = {
   /**
    * The display name of this package.
    */
-  name: 'compat' as const,
+  name: 'libusb-config' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,10 +75,9 @@ export const libusbconfigPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'libusb-config',
-    'libusb-compat',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) libusb-config -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libusb-config' as const,
 }
 
 export type LibusbconfigPackage = typeof libusbconfigPackage

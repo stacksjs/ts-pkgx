@@ -1,11 +1,11 @@
-# distlib
+# pypa.io/distlib
 
 > A low-level library which implements some Python packaging  standards (PEPs) and which could be used by third-party packaging tools to achieve interoperability.
 
 ## Package Information
 
 - **Domain**: `pypa.io/distlib`
-- **Name**: `distlib`
+- **Name**: `pypa.io/distlib`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pypa.io/distlib/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +pypa.io/distlib -- $SHELL -i
+launchpad install pypa.io/distlib
 ```
 
 ## Programs

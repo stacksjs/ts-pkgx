@@ -6,7 +6,7 @@
  * @version `2025.4.7.0` (64 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +facebook.com/watchman -- $SHELL -i`
+ * @install `launchpad install watchman`
  * @name `watchman`
  * @dependencies `facebook.com/edencommon`, `facebook.com/fb303`, `facebook.com/folly`, ... (+10 more) (includes OS-specific dependencies with `os:package` format)
  *
@@ -48,7 +48,7 @@ export const watchmanPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +facebook.com/watchman -- $SHELL -i' as const,
+  installCommand: 'launchpad install watchman' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -157,6 +157,8 @@ export const watchmanPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +facebook.com/watchman -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install watchman' as const,
 }
 
 export type WatchmanPackage = typeof watchmanPackage

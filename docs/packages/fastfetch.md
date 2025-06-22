@@ -1,11 +1,11 @@
-# fastfetch
+# github.com/fastfetch-cli/fastfetch
 
 > A maintained, feature-rich and performance oriented, neofetch like system information tool.
 
 ## Package Information
 
 - **Domain**: `github.com/fastfetch-cli/fastfetch`
-- **Name**: `fastfetch`
+- **Name**: `github.com/fastfetch-cli/fastfetch`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/fastfetch-cli/fastfetch/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/fastfetch-cli/fastfetch -- $SHELL -i
+launchpad install github.com/fastfetch-cli/fastfetch
 ```
 
 ## Programs

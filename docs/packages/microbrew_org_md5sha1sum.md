@@ -1,11 +1,11 @@
-# md5sha1sum
+# microbrew.org/md5sha1sum
 
 > Hash utilities
 
 ## Package Information
 
 - **Domain**: `microbrew.org/md5sha1sum`
-- **Name**: `md5sha1sum`
+- **Name**: `microbrew.org/md5sha1sum`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microbrew.org/md5sha1sum/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +microbrew.org/md5sha1sum -- $SHELL -i
+launchpad install microbrew.org/md5sha1sum
 ```
 
 ## Programs

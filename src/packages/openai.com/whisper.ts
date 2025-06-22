@@ -81,6 +81,8 @@ export const whisperPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) whisper -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install whisper' as const,
 }
 
 export type WhisperPackage = typeof whisperPackage

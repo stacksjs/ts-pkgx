@@ -70,6 +70,8 @@ export const dav1dPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dav1d -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dav1d' as const,
 }
 
 export type Dav1dPackage = typeof dav1dPackage

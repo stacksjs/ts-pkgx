@@ -77,6 +77,8 @@ export const stressngPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) stress-ng -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install stress-ng' as const,
 }
 
 export type StressngPackage = typeof stressngPackage

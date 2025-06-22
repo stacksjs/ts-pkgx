@@ -1,11 +1,11 @@
-# openinterpreter.com
+# open-interpreter
 
 > A natural language interface for computers
 
 ## Package Information
 
 - **Domain**: `openinterpreter.com`
-- **Name**: `openinterpreter.com`
+- **Name**: `open-interpreter`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openinterpreter.com/package.yml)
 
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `interpreter`
-- `open-interpreter`
 
 ## Available Versions
 
@@ -48,7 +47,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +openinterpreter.com@0.4.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) interpreter -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +63,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.open-interpreter
+const pkg = pantry.interpreter
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

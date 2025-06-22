@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install just`
- * @aliases `just`
+ * @name `just`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.just
  * // Or access via domain
  * const samePkg = pantry.justsystems
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "just.systems"
+ * console.log(pkg.name)        // "just"
  * console.log(pkg.description) // "Handy way to save and run project-specific comm..."
  * console.log(pkg.programs)    // ["just"]
  * console.log(pkg.versions[0]) // "1.40.0" (latest)
@@ -31,7 +31,7 @@ export const justPackage = {
   /**
    * The display name of this package.
    */
-  name: 'just.systems' as const,
+  name: 'just' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -107,9 +107,9 @@ export const justPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'just',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) just -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install just' as const,
 }
 
 export type JustPackage = typeof justPackage

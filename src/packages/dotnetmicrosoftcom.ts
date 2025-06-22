@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dotnet`
- * @aliases `dotnet`
+ * @name `dotnet`
  * @dependencies `linux:unicode.org^71`, `linux:openssl.org` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.dotnet
  * // Or access via domain
  * const samePkg = pantry.dotnetmicrosoftcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "dotnet.microsoft.com"
+ * console.log(pkg.name)        // "dotnet"
  * console.log(pkg.description) // "Home of .NET's Virtual Monolithic Repository wh..."
  * console.log(pkg.programs)    // ["dotnet"]
  * console.log(pkg.versions[0]) // "9.0.202" (latest)
@@ -32,7 +32,7 @@ export const dotnetPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dotnet.microsoft.com' as const,
+  name: 'dotnet' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -108,9 +108,9 @@ export const dotnetPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'dotnet',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dotnet -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dotnet' as const,
 }
 
 export type DotnetPackage = typeof dotnetPackage

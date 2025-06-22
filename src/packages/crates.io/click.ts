@@ -77,6 +77,8 @@ export const clickPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) click -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install click' as const,
 }
 
 export type ClickPackage = typeof clickPackage

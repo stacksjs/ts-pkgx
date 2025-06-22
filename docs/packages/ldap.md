@@ -1,11 +1,11 @@
-# openldap.org
+# ldap
 
 > Open source suite of directory software
 
 ## Package Information
 
 - **Domain**: `openldap.org`
-- **Name**: `openldap.org`
+- **Name**: `ldap`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openldap.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +openldap.org -- $SHELL -i
+launchpad install ldap
 ```
 
 ## Programs
@@ -30,12 +30,6 @@ This package provides the following executable programs:
 - `ldapurl`
 - `ldapvc`
 - `ldapwhoami`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ldap`
 
 ## Available Versions
 

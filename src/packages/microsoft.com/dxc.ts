@@ -1,12 +1,12 @@
 /**
- * **dxc** - This repo hosts the source for the DirectX Shader Compiler which is based on LLVM/Clang.
+ * **microsoft.com/dxc** - This repo hosts the source for the DirectX Shader Compiler which is based on LLVM/Clang.
  *
  * @domain `microsoft.com/dxc`
  * @programs `dxc`, `dxv`, `dxa`, `dxr`, `dxl`
  * @version `1.8.2505` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +microsoft.com/dxc -- $SHELL -i`
+ * @install `launchpad install microsoft.com/dxc`
  * @dependencies `zlib.net^1`
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.microsoftcomdxc
- * console.log(pkg.name)        // "dxc"
+ * console.log(pkg.name)        // "microsoft.com/dxc"
  * console.log(pkg.description) // "This repo hosts the source for the DirectX Shad..."
  * console.log(pkg.programs)    // ["dxc", "dxv", ...]
  * console.log(pkg.versions[0]) // "1.8.2505" (latest)
@@ -27,7 +27,7 @@ export const microsoftcomdxcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dxc' as const,
+  name: 'microsoft.com/dxc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const microsoftcomdxcPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +microsoft.com/dxc -- $SHELL -i' as const,
+  installCommand: 'launchpad install microsoft.com/dxc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,6 +78,8 @@ export const microsoftcomdxcPackage = {
     '1.7.2308',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +microsoft.com/dxc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install microsoft.com/dxc' as const,
 }
 
 export type MicrosoftcomdxcPackage = typeof microsoftcomdxcPackage

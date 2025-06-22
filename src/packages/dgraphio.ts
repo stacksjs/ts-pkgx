@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dgraph`
- * @aliases `dgraph`
+ * @name `dgraph`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.dgraph
  * // Or access via domain
  * const samePkg = pantry.dgraphio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "dgraph.io"
+ * console.log(pkg.name)        // "dgraph"
  * console.log(pkg.description) // "high-performance graph database for real-time u..."
  * console.log(pkg.programs)    // ["dgraph"]
  * console.log(pkg.versions[0]) // "24.1.3" (latest)
@@ -31,7 +31,7 @@ export const dgraphPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dgraph.io' as const,
+  name: 'dgraph' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +78,9 @@ export const dgraphPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'dgraph',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dgraph -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dgraph' as const,
 }
 
 export type DgraphPackage = typeof dgraphPackage

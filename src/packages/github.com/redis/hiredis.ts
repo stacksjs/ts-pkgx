@@ -5,7 +5,7 @@
  * @version `1.3.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/redis/hiredis -- $SHELL -i`
+ * @install `launchpad install hiredis`
  * @name `hiredis`
  *
  * @example
@@ -45,7 +45,7 @@ export const hiredisPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/redis/hiredis -- $SHELL -i' as const,
+  installCommand: 'launchpad install hiredis' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -63,6 +63,8 @@ export const hiredisPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/redis/hiredis -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hiredis' as const,
 }
 
 export type HiredisPackage = typeof hiredisPackage

@@ -1,11 +1,11 @@
-# jansson
+# digip.org/jansson
 
 > C library for encoding, decoding and manipulating JSON data
 
 ## Package Information
 
 - **Domain**: `digip.org/jansson`
-- **Name**: `jansson`
+- **Name**: `digip.org/jansson`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/digip.org/jansson/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +digip.org/jansson -- $SHELL -i
+launchpad install digip.org/jansson
 ```
 
 ## Programs

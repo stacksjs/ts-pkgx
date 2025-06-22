@@ -103,6 +103,8 @@ export const crocPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) croc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install croc' as const,
 }
 
 export type CrocPackage = typeof crocPackage

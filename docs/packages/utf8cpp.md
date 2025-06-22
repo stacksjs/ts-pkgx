@@ -1,11 +1,11 @@
-# utfcpp
+# utf8cpp
 
 > UTF-8 with C++ in a Portable Way
 
 ## Package Information
 
 - **Domain**: `github.com/nemtrif/utfcpp`
-- **Name**: `utfcpp`
+- **Name**: `utf8cpp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/nemtrif/utfcpp/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/nemtrif/utfcpp -- $SHELL -i
+launchpad install utf8cpp
 ```
 
 ## Programs
@@ -21,12 +21,6 @@ launchpad install +github.com/nemtrif/utfcpp -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `utf8cpp`
 
 ## Available Versions
 

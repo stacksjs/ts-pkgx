@@ -71,6 +71,8 @@ export const encPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) enc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install enc' as const,
 }
 
 export type EncPackage = typeof encPackage

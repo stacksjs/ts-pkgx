@@ -1,11 +1,11 @@
-# alacritty.org
+# alacritty
 
 > A cross-platform, OpenGL terminal emulator.
 
 ## Package Information
 
 - **Domain**: `alacritty.org`
-- **Name**: `alacritty.org`
+- **Name**: `alacritty`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/alacritty.org/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install alacritty
 ## Programs
 
 This package provides the following executable programs:
-
-- `alacritty`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `alacritty`
 

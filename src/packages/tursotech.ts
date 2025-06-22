@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install turso`
- * @aliases `turso`
+ * @name `turso`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.turso
  * // Or access via domain
  * const samePkg = pantry.tursotech
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "turso.tech"
+ * console.log(pkg.name)        // "turso"
  * console.log(pkg.description) // "Command line interface to Turso."
  * console.log(pkg.programs)    // ["turso"]
  * console.log(pkg.versions[0]) // "1.0.11" (latest)
@@ -31,7 +31,7 @@ export const tursoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'turso.tech' as const,
+  name: 'turso' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -157,9 +157,9 @@ export const tursoPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'turso',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) turso -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install turso' as const,
 }
 
 export type TursoPackage = typeof tursoPackage

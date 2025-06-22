@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tailcall`
- * @aliases `tailcall`
+ * @name `tailcall`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tailcall
  * // Or access via domain
  * const samePkg = pantry.tailcallrun
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tailcall.run"
+ * console.log(pkg.name)        // "tailcall"
  * console.log(pkg.description) // "High Performance GraphQL Runtime"
  * console.log(pkg.programs)    // ["tailcall"]
  * console.log(pkg.versions[0]) // "1.6.11" (latest)
@@ -31,7 +31,7 @@ export const tailcallPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tailcall.run' as const,
+  name: 'tailcall' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -690,9 +690,9 @@ export const tailcallPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tailcall',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tailcall -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tailcall' as const,
 }
 
 export type TailcallPackage = typeof tailcallPackage

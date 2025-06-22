@@ -52,7 +52,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/eza@0.21.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) eza -- $SHELL -i
 ```
 
 ## Dependencies

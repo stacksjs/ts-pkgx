@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +vanna.ai -- $SHELL -i
+launchpad install Vanna
 ```
 
 ## Programs
@@ -53,8 +53,7 @@ sh <(curl https://pkgx.sh) +vanna.ai@0.7.9 -- $SHELL -i
 This package depends on:
 
 - `python.org~3.12`
-- `linuxopenmp.llvm.org@17`
-- `openmp.llvm.org@17`
+- `linux:openmp.llvm.org^17 # needed by chromadb`
 
 ## Usage Examples
 

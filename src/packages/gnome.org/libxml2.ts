@@ -1,25 +1,25 @@
 /**
- * **xml** - Read-only mirror of https://gitlab.gnome.org/GNOME/libxml2
+ * **xml2-config** - Read-only mirror of https://gitlab.gnome.org/GNOME/libxml2
  *
  * @domain `gnome.org/libxml2`
  * @programs `xml2-config`, `xmlcatalog`, `xmllint`
  * @version `2.14.4` (35 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnome.org/libxml2 -- $SHELL -i`
- * @aliases `xml`
+ * @install `launchpad install xml2-config`
+ * @name `xml2-config`
  * @dependencies `zlib.net^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xml
+ * // Access the package
+ * const pkg = pantry.xml2config
  * // Or access via domain
  * const samePkg = pantry.gnomeorglibxml2
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libxml2"
+ * console.log(pkg.name)        // "xml2-config"
  * console.log(pkg.description) // "Read-only mirror of https://gitlab.gnome.org/GN..."
  * console.log(pkg.programs)    // ["xml2-config", "xmlcatalog", ...]
  * console.log(pkg.versions[0]) // "2.14.4" (latest)
@@ -28,11 +28,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/libxml2.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xmlPackage = {
+export const xml2configPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libxml2' as const,
+  name: 'xml2-config' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const xmlPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnome.org/libxml2 -- $SHELL -i' as const,
+  installCommand: 'launchpad install xml2-config' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -111,9 +111,9 @@ export const xmlPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'xml',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/libxml2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xml2-config' as const,
 }
 
-export type XmlPackage = typeof xmlPackage
+export type Xml2configPackage = typeof xml2configPackage

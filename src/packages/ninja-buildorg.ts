@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ninja`
- * @aliases `ninja`
+ * @name `ninja`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ninja
  * // Or access via domain
  * const samePkg = pantry.ninjabuildorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ninja-build.org"
+ * console.log(pkg.name)        // "ninja"
  * console.log(pkg.description) // "Small build system for use with gyp or CMake"
  * console.log(pkg.programs)    // ["ninja"]
  * console.log(pkg.versions[0]) // "1.13.0" (latest)
@@ -31,7 +31,7 @@ export const ninjaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ninja-build.org' as const,
+  name: 'ninja' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -72,9 +72,9 @@ export const ninjaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ninja',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ninja -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ninja' as const,
 }
 
 export type NinjaPackage = typeof ninjaPackage

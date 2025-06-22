@@ -18,7 +18,7 @@
  * // Or access via domain
  * const samePkg = pantry.developer1passwordcom1passwordcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "1password-cli"
+ * console.log(pkg.name)        // "1Password CLI"
  * console.log(pkg.programs)    // ["op"]
  * console.log(pkg.versions[0]) // "2.31.1" (latest)
  * ```
@@ -30,7 +30,7 @@ export const opPackage = {
   /**
    * The display name of this package.
    */
-  name: '1password-cli' as const,
+  name: '1Password CLI' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -72,6 +72,8 @@ export const opPackage = {
   aliases: [
     'op',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) op -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install op' as const,
 }
 
 export type OpPackage = typeof opPackage

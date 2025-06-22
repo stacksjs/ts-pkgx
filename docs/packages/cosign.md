@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +sigstore.dev/cosign@2.5.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) cosign -- $SHELL -i
 ```
 
 ## Usage Examples

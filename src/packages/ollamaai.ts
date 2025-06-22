@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ollama`
- * @aliases `ollama`
+ * @name `ollama`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ollama
  * // Or access via domain
  * const samePkg = pantry.ollamaai
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ollama.ai"
+ * console.log(pkg.name)        // "ollama"
  * console.log(pkg.description) // "Get up and running with Llama 3.3, DeepSeek-R1,..."
  * console.log(pkg.programs)    // ["ollama"]
  * console.log(pkg.versions[0]) // "0.9.2" (latest)
@@ -32,7 +32,7 @@ export const ollamaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ollama.ai' as const,
+  name: 'ollama' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -173,9 +173,9 @@ export const ollamaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ollama',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ollama -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ollama' as const,
 }
 
 export type OllamaPackage = typeof ollamaPackage

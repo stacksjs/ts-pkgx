@@ -80,6 +80,8 @@ export const fblogPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fblog -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fblog' as const,
 }
 
 export type FblogPackage = typeof fblogPackage

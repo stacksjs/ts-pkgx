@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +git.tozt.net/rbw@1.13.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) rbw -- $SHELL -i
 ```
 
 ## Usage Examples

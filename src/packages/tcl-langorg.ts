@@ -6,7 +6,7 @@
  * @version `9.0.1` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +tcl-lang.org -- $SHELL -i`
+ * @install `launchpad install tcl-lang.org`
  * @dependencies `openssl.org^1.1`, `zlib.net^1.3`, `freetype.org^2`, ... (+3 more)
  *
  * @example
@@ -43,7 +43,7 @@ export const tcllangorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +tcl-lang.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install tcl-lang.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,6 +79,8 @@ export const tcllangorgPackage = {
     '8.6.13',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tcl-lang.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tcl-lang.org' as const,
 }
 
 export type TcllangorgPackage = typeof tcllangorgPackage

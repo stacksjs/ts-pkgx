@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rio`
- * @aliases `rio`
+ * @name `rio`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.rio
  * // Or access via domain
  * const samePkg = pantry.riotermcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rioterm.com"
+ * console.log(pkg.name)        // "rio"
  * console.log(pkg.description) // "A hardware-accelerated GPU terminal emulator fo..."
  * console.log(pkg.programs)    // ["rio"]
  * console.log(pkg.versions[0]) // "0.2.20" (latest)
@@ -31,7 +31,7 @@ export const rioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rioterm.com' as const,
+  name: 'rio' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -72,9 +72,9 @@ export const rioPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'rio',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rio -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rio' as const,
 }
 
 export type RioPackage = typeof rioPackage

@@ -69,6 +69,8 @@ export const huniqPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) huniq -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install huniq' as const,
 }
 
 export type HuniqPackage = typeof huniqPackage

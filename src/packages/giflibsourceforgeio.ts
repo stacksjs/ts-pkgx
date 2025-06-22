@@ -1,24 +1,24 @@
 /**
- * **gif** - Library and utilities for processing GIFs
+ * **gif2rgb** - Library and utilities for processing GIFs
  *
  * @domain `giflib.sourceforge.io`
  * @programs `gif2rgb`, `gifbuild`, `gifclrmp`, `giffix`, `giftext`, ... (+1 more)
  * @version `5.2.2` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +giflib.sourceforge.io -- $SHELL -i`
- * @aliases `gif`
+ * @install `launchpad install gif2rgb`
+ * @name `gif2rgb`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.gif
+ * // Access the package
+ * const pkg = pantry.gif2rgb
  * // Or access via domain
  * const samePkg = pantry.giflibsourceforgeio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "giflib.sourceforge.io"
+ * console.log(pkg.name)        // "gif2rgb"
  * console.log(pkg.description) // "Library and utilities for processing GIFs"
  * console.log(pkg.programs)    // ["gif2rgb", "gifbuild", ...]
  * console.log(pkg.versions[0]) // "5.2.2" (latest)
@@ -27,11 +27,11 @@
  * @see https://ts-pkgx.netlify.app/packages/giflib-sourceforge-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gifPackage = {
+export const gif2rgbPackage = {
   /**
    * The display name of this package.
    */
-  name: 'giflib.sourceforge.io' as const,
+  name: 'gif2rgb' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const gifPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +giflib.sourceforge.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install gif2rgb' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,9 +74,9 @@ export const gifPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gif',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +giflib.sourceforge.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gif2rgb' as const,
 }
 
-export type GifPackage = typeof gifPackage
+export type Gif2rgbPackage = typeof gif2rgbPackage

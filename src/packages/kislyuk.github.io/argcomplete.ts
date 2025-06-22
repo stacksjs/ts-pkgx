@@ -1,12 +1,12 @@
 /**
- * **argcomplete** - Python and tab completion, better together.
+ * **kislyuk.github.io/argcomplete** - Python and tab completion, better together.
  *
  * @domain `kislyuk.github.io/argcomplete`
  * @programs `activate-global-python-argcomplete`, `register-python-argcomplete`, `python-argcomplete-check-easy-install-script`
  * @version `3.6.2` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +kislyuk.github.io/argcomplete -- $SHELL -i`
+ * @install `launchpad install kislyuk.github.io/argcomplete`
  * @dependencies `pkgx.sh^1`
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.kislyukgithubioargcomplete
- * console.log(pkg.name)        // "argcomplete"
+ * console.log(pkg.name)        // "kislyuk.github.io/argcomplete"
  * console.log(pkg.description) // "Python and tab completion, better together."
  * console.log(pkg.programs)    // ["activate-global-python-argcomplete", "register-python-argcomplete", ...]
  * console.log(pkg.versions[0]) // "3.6.2" (latest)
@@ -27,7 +27,7 @@ export const kislyukgithubioargcompletePackage = {
   /**
    * The display name of this package.
    */
-  name: 'argcomplete' as const,
+  name: 'kislyuk.github.io/argcomplete' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const kislyukgithubioargcompletePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +kislyuk.github.io/argcomplete -- $SHELL -i' as const,
+  installCommand: 'launchpad install kislyuk.github.io/argcomplete' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,6 +78,8 @@ export const kislyukgithubioargcompletePackage = {
     '3.2.3',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kislyuk.github.io/argcomplete -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kislyuk.github.io/argcomplete' as const,
 }
 
 export type KislyukgithubioargcompletePackage = typeof kislyukgithubioargcompletePackage

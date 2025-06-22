@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +zeromq.org -- $SHELL -i
+launchpad install zeromq.org
 ```
 
 ## Programs

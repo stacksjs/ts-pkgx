@@ -1,11 +1,11 @@
-# oapi-codegen
+# github.com/deepmap/oapi-codegen
 
 > Generate Go client and server boilerplate from OpenAPI 3 specifications
 
 ## Package Information
 
 - **Domain**: `github.com/deepmap/oapi-codegen`
-- **Name**: `oapi-codegen`
+- **Name**: `github.com/deepmap/oapi-codegen`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/deepmap/oapi-codegen/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/deepmap/oapi-codegen -- $SHELL -i
+launchpad install github.com/deepmap/oapi-codegen
 ```
 
 ## Programs

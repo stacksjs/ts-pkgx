@@ -1,12 +1,12 @@
 /**
- * **cloc** - cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
+ * **github.com/AlDanial/cloc** - cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
  *
  * @domain `github.com/AlDanial/cloc`
  * @programs `cloc`, `config_data`
  * @version `2.4.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/AlDanial/cloc -- $SHELL -i`
+ * @install `launchpad install github.com/AlDanial/cloc`
  * @dependencies `perl.org^5`
  * @companions `PERL5LIB^$PERL5LIB:{{prefix}}/lib/perl5`
  *
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomaldanialcloc
- * console.log(pkg.name)        // "cloc"
+ * console.log(pkg.name)        // "github.com/AlDanial/cloc"
  * console.log(pkg.description) // "cloc counts blank lines, comment lines, and phy..."
  * console.log(pkg.programs)    // ["cloc", "config_data"]
  * console.log(pkg.versions[0]) // "2.4.0" (latest)
@@ -28,7 +28,7 @@ export const githubcomaldanialclocPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cloc' as const,
+  name: 'github.com/AlDanial/cloc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,7 +44,7 @@ export const githubcomaldanialclocPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/AlDanial/cloc -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/AlDanial/cloc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,6 +78,8 @@ export const githubcomaldanialclocPackage = {
     '1.98.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/AlDanial/cloc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/AlDanial/cloc' as const,
 }
 
 export type GithubcomaldanialclocPackage = typeof githubcomaldanialclocPackage

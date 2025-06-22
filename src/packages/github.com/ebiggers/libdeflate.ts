@@ -6,7 +6,7 @@
  * @version `1.24.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/ebiggers/libdeflate -- $SHELL -i`
+ * @install `launchpad install libdeflate`
  * @name `libdeflate`
  *
  * @example
@@ -47,7 +47,7 @@ export const libdeflatePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/ebiggers/libdeflate -- $SHELL -i' as const,
+  installCommand: 'launchpad install libdeflate' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,6 +75,8 @@ export const libdeflatePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/ebiggers/libdeflate -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libdeflate' as const,
 }
 
 export type LibdeflatePackage = typeof libdeflatePackage

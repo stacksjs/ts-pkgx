@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +info-zip.org/zip -- $SHELL -i
+launchpad install zip
 ```
 
 ## Programs

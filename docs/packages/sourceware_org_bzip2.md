@@ -1,11 +1,11 @@
-# bzip2
+# sourceware.org/bzip2
 
 > Clone of https://gitlab.com/federicomenaquintero/bzip2
 
 ## Package Information
 
 - **Domain**: `sourceware.org/bzip2`
-- **Name**: `bzip2`
+- **Name**: `sourceware.org/bzip2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceware.org/bzip2/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +sourceware.org/bzip2 -- $SHELL -i
+launchpad install sourceware.org/bzip2
 ```
 
 ## Programs

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sbt`
- * @aliases `sbt`
+ * @name `sbt`
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sbt
  * // Or access via domain
  * const samePkg = pantry.scalasbtorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "scala-sbt.org"
+ * console.log(pkg.name)        // "sbt"
  * console.log(pkg.description) // "sbt, the interactive build tool"
  * console.log(pkg.programs)    // ["sbt"]
  * console.log(pkg.versions[0]) // "1.11.2" (latest)
@@ -32,7 +32,7 @@ export const sbtPackage = {
   /**
    * The display name of this package.
    */
-  name: 'scala-sbt.org' as const,
+  name: 'sbt' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -95,9 +95,9 @@ export const sbtPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sbt',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sbt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sbt' as const,
 }
 
 export type SbtPackage = typeof sbtPackage

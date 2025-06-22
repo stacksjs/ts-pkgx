@@ -6,19 +6,19 @@
  * @version `2.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +luajit.org -- $SHELL -i`
- * @aliases `luajit`
+ * @install `launchpad install luajit`
+ * @name `luajit`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.luajit
  * // Or access via domain
  * const samePkg = pantry.luajitorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "luajit.org"
+ * console.log(pkg.name)        // "luajit"
  * console.log(pkg.description) // "Mirror of the LuaJIT git repository"
  * console.log(pkg.programs)    // ["luajit", "luajit-{{version.marketing}}."]
  * console.log(pkg.versions[0]) // "2.1.0" (latest)
@@ -31,7 +31,7 @@ export const luajitPackage = {
   /**
    * The display name of this package.
    */
-  name: 'luajit.org' as const,
+  name: 'luajit' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const luajitPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +luajit.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install luajit' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,9 +69,9 @@ export const luajitPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'luajit',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +luajit.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install luajit' as const,
 }
 
 export type LuajitPackage = typeof luajitPackage

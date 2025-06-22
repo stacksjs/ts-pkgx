@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +wavpack.com -- $SHELL -i
+launchpad install wavpack.com
 ```
 
 ## Programs

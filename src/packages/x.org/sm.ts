@@ -1,11 +1,11 @@
 /**
- * **sm** - pkgx package
+ * **x.org/sm** - pkgx package
  *
  * @domain `x.org/sm`
  * @version `1.2.6` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/sm -- $SHELL -i`
+ * @install `launchpad install x.org/sm`
  * @dependencies `x.org/ice`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgsm
- * console.log(pkg.name)        // "sm"
+ * console.log(pkg.name)        // "x.org/sm"
  * console.log(pkg.versions[0]) // "1.2.6" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgsmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sm' as const,
+  name: 'x.org/sm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const xorgsmPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/sm -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/sm' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,6 +60,8 @@ export const xorgsmPackage = {
     '1.2.4',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/sm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/sm' as const,
 }
 
 export type XorgsmPackage = typeof xorgsmPackage

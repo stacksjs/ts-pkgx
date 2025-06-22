@@ -1,19 +1,19 @@
 /**
- * **flamegraph** - Easy flamegraphs for Rust projects and everything else, without Perl or pipes <3
+ * **crates.io/flamegraph** - Easy flamegraphs for Rust projects and everything else, without Perl or pipes <3
  *
  * @domain `crates.io/flamegraph`
  * @programs `flamegraph`, `cargo-flamegraph`
  * @version `0.6.8` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +crates.io/flamegraph -- $SHELL -i`
+ * @install `launchpad install crates.io/flamegraph`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.cratesioflamegraph
- * console.log(pkg.name)        // "flamegraph"
+ * console.log(pkg.name)        // "crates.io/flamegraph"
  * console.log(pkg.description) // "Easy flamegraphs for Rust projects and everythi..."
  * console.log(pkg.programs)    // ["flamegraph", "cargo-flamegraph"]
  * console.log(pkg.versions[0]) // "0.6.8" (latest)
@@ -26,7 +26,7 @@ export const cratesioflamegraphPackage = {
   /**
    * The display name of this package.
    */
-  name: 'flamegraph' as const,
+  name: 'crates.io/flamegraph' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const cratesioflamegraphPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +crates.io/flamegraph -- $SHELL -i' as const,
+  installCommand: 'launchpad install crates.io/flamegraph' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -62,6 +62,8 @@ export const cratesioflamegraphPackage = {
     '0.6.7',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/flamegraph -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/flamegraph' as const,
 }
 
 export type CratesioflamegraphPackage = typeof cratesioflamegraphPackage

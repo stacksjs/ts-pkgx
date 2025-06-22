@@ -5,7 +5,7 @@
  * @version `11.2.0` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +fmt.dev -- $SHELL -i`
+ * @install `launchpad install fmt.dev`
  *
  * @example
  * ```typescript
@@ -40,7 +40,7 @@ export const fmtdevPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +fmt.dev -- $SHELL -i' as const,
+  installCommand: 'launchpad install fmt.dev' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -66,6 +66,8 @@ export const fmtdevPackage = {
     '9.1.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fmt.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fmt.dev' as const,
 }
 
 export type FmtdevPackage = typeof fmtdevPackage

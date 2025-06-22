@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install yasm`
- * @aliases `yasm`
+ * @name `yasm`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.yasm
  * // Or access via domain
  * const samePkg = pantry.yasmtortallnet
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "yasm.tortall.net"
+ * console.log(pkg.name)        // "yasm"
  * console.log(pkg.description) // "Yasm Assembler mainline development tree"
  * console.log(pkg.programs)    // ["yasm"]
  * console.log(pkg.versions[0]) // "1.3.0" (latest)
@@ -31,7 +31,7 @@ export const yasmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'yasm.tortall.net' as const,
+  name: 'yasm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const yasmPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'yasm',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) yasm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install yasm' as const,
 }
 
 export type YasmPackage = typeof yasmPackage

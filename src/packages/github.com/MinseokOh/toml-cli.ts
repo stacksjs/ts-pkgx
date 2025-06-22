@@ -69,6 +69,8 @@ export const tomlcliPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) toml-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install toml-cli' as const,
 }
 
 export type TomlcliPackage = typeof tomlcliPackage

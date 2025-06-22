@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install upx`
- * @aliases `upx`
+ * @name `upx`
  * @dependencies `zlib.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.upx
  * // Or access via domain
  * const samePkg = pantry.upxgithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "upx.github.io"
+ * console.log(pkg.name)        // "upx"
  * console.log(pkg.description) // "UPX - the Ultimate Packer for eXecutables"
  * console.log(pkg.programs)    // ["upx"]
  * console.log(pkg.versions[0]) // "5.0.1" (latest)
@@ -32,7 +32,7 @@ export const upxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'upx.github.io' as const,
+  name: 'upx' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const upxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'upx',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) upx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install upx' as const,
 }
 
 export type UpxPackage = typeof upxPackage

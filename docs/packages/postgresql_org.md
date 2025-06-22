@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +postgresql.org -- $SHELL -i
+launchpad install postgresql.org
 ```
 
 ## Programs
@@ -77,7 +77,7 @@ This package depends on:
 - `gnu.org/readline`
 - `zlib.net`
 - `lz4.org`
-- `gnome.org/libxml2`
+- `gnome.org/libxml2~2.13 # abi changed in 2.14`
 - `gnome.org/libxslt`
 - `unicode.org^73`
 

@@ -1,11 +1,11 @@
-# opencl-headers
+# khronos.org/opencl-headers
 
 > Khronos OpenCL-Headers
 
 ## Package Information
 
 - **Domain**: `khronos.org/opencl-headers`
-- **Name**: `opencl-headers`
+- **Name**: `khronos.org/opencl-headers`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/khronos.org/opencl-headers/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +khronos.org/opencl-headers -- $SHELL -i
+launchpad install khronos.org/opencl-headers
 ```
 
 ## Programs

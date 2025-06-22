@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dotenv-linter`
- * @aliases `dotenv-linter`
+ * @name `dotenv-linter`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.dotenvlinter
  * // Or access via domain
  * const samePkg = pantry.dotenvlintergithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "dotenv-linter.github.io"
+ * console.log(pkg.name)        // "dotenv-linter"
  * console.log(pkg.description) // "⚡️Lightning-fast linter for .env files. Written..."
  * console.log(pkg.programs)    // ["dotenv-linter"]
  * console.log(pkg.versions[0]) // "3.3.0" (latest)
@@ -31,7 +31,7 @@ export const dotenvlinterPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dotenv-linter.github.io' as const,
+  name: 'dotenv-linter' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const dotenvlinterPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'dotenv-linter',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dotenv-linter -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dotenv-linter' as const,
 }
 
 export type DotenvlinterPackage = typeof dotenvlinterPackage

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install goreleaser`
- * @aliases `goreleaser`
+ * @name `goreleaser`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.goreleaser
  * // Or access via domain
  * const samePkg = pantry.goreleasercom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "goreleaser.com"
+ * console.log(pkg.name)        // "goreleaser"
  * console.log(pkg.description) // "Deliver Go binaries as fast and easily as possible"
  * console.log(pkg.programs)    // ["goreleaser"]
  * console.log(pkg.versions[0]) // "2.10.2" (latest)
@@ -31,7 +31,7 @@ export const goreleaserPackage = {
   /**
    * The display name of this package.
    */
-  name: 'goreleaser.com' as const,
+  name: 'goreleaser' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -108,9 +108,9 @@ export const goreleaserPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'goreleaser',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) goreleaser -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install goreleaser' as const,
 }
 
 export type GoreleaserPackage = typeof goreleaserPackage

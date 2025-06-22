@@ -1,18 +1,18 @@
 /**
- * **gc** - The Boehm-Demers-Weiser conservative C/C++ Garbage Collector (bdwgc, also known as bdw-gc, boehm-gc, libgc)
+ * **hboehm.info/gc** - The Boehm-Demers-Weiser conservative C/C++ Garbage Collector (bdwgc, also known as bdw-gc, boehm-gc, libgc)
  *
  * @domain `hboehm.info/gc`
  * @version `8.2.8` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +hboehm.info/gc -- $SHELL -i`
+ * @install `launchpad install hboehm.info/gc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.hboehminfogc
- * console.log(pkg.name)        // "gc"
+ * console.log(pkg.name)        // "hboehm.info/gc"
  * console.log(pkg.description) // "The Boehm-Demers-Weiser conservative C/C++ Garb..."
  * console.log(pkg.versions[0]) // "8.2.8" (latest)
  * ```
@@ -24,7 +24,7 @@ export const hboehminfogcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gc' as const,
+  name: 'hboehm.info/gc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const hboehminfogcPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +hboehm.info/gc -- $SHELL -i' as const,
+  installCommand: 'launchpad install hboehm.info/gc' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -58,6 +58,8 @@ export const hboehminfogcPackage = {
     '7.6.20',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +hboehm.info/gc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hboehm.info/gc' as const,
 }
 
 export type HboehminfogcPackage = typeof hboehminfogcPackage

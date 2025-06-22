@@ -118,6 +118,8 @@ export const codeserverPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) code-server -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install code-server' as const,
 }
 
 export type CodeserverPackage = typeof codeserverPackage

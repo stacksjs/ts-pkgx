@@ -1,11 +1,11 @@
-# numbat.dev
+# numbat
 
 > A statically typed programming language for scientific computations with first class support for physical dimensions and units
 
 ## Package Information
 
 - **Domain**: `numbat.dev`
-- **Name**: `numbat.dev`
+- **Name**: `numbat`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/numbat.dev/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install numbat
 ## Programs
 
 This package provides the following executable programs:
-
-- `numbat`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `numbat`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +numbat.dev@1.16.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) numbat -- $SHELL -i
 ```
 
 ## Usage Examples

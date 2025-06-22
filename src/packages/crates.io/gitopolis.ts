@@ -95,6 +95,8 @@ export const gitopolisPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gitopolis -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gitopolis' as const,
 }
 
 export type GitopolisPackage = typeof gitopolisPackage

@@ -1,11 +1,11 @@
 /**
- * **luv** - Bare libuv bindings for lua
+ * **github.com/luvit/luv** - Bare libuv bindings for lua
  *
  * @domain `github.com/luvit/luv`
  * @version `1.45.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/luvit/luv -- $SHELL -i`
+ * @install `launchpad install github.com/luvit/luv`
  * @dependencies `libuv.org`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomluvitluv
- * console.log(pkg.name)        // "luv"
+ * console.log(pkg.name)        // "github.com/luvit/luv"
  * console.log(pkg.description) // "Bare libuv bindings for lua"
  * console.log(pkg.versions[0]) // "1.45.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomluvitluvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'luv' as const,
+  name: 'github.com/luvit/luv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const githubcomluvitluvPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/luvit/luv -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/luvit/luv' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -59,6 +59,8 @@ export const githubcomluvitluvPackage = {
     '1.45.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/luvit/luv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/luvit/luv' as const,
 }
 
 export type GithubcomluvitluvPackage = typeof githubcomluvitluvPackage

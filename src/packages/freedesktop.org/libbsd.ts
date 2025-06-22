@@ -1,18 +1,18 @@
 /**
- * **libbsd** - BSD compatibility library (mirror)
+ * **freedesktop.org/libbsd** - BSD compatibility library (mirror)
  *
  * @domain `freedesktop.org/libbsd`
  * @version `0.11.7` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +freedesktop.org/libbsd -- $SHELL -i`
+ * @install `launchpad install freedesktop.org/libbsd`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.freedesktoporglibbsd
- * console.log(pkg.name)        // "libbsd"
+ * console.log(pkg.name)        // "freedesktop.org/libbsd"
  * console.log(pkg.description) // "BSD compatibility library (mirror)"
  * console.log(pkg.versions[0]) // "0.11.7" (latest)
  * ```
@@ -24,7 +24,7 @@ export const freedesktoporglibbsdPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libbsd' as const,
+  name: 'freedesktop.org/libbsd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const freedesktoporglibbsdPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +freedesktop.org/libbsd -- $SHELL -i' as const,
+  installCommand: 'launchpad install freedesktop.org/libbsd' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -52,6 +52,8 @@ export const freedesktoporglibbsdPackage = {
     '0.11.7',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/libbsd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/libbsd' as const,
 }
 
 export type FreedesktoporglibbsdPackage = typeof freedesktoporglibbsdPackage

@@ -6,20 +6,20 @@
  * @version `12.0.1` (26 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +mariadb.com/server -- $SHELL -i`
- * @aliases `MariaDB`
+ * @install `launchpad install MariaDB`
+ * @name `MariaDB`
  * @dependencies `sourceware.org/bzip2^1`, `github.com/besser82/libxcrypt^4`, `gnome.org/libxml2`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.MariaDB
  * // Or access via domain
  * const samePkg = pantry.mariadbcomserver
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "server"
+ * console.log(pkg.name)        // "MariaDB"
  * console.log(pkg.description) // "MariaDB server is a community developed fork of..."
  * console.log(pkg.programs)    // ["aria_chk", "aria_dump_log", ...]
  * console.log(pkg.versions[0]) // "12.0.1" (latest)
@@ -32,7 +32,7 @@ export const mariaDBPackage = {
   /**
    * The display name of this package.
    */
-  name: 'server' as const,
+  name: 'MariaDB' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const mariaDBPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +mariadb.com/server -- $SHELL -i' as const,
+  installCommand: 'launchpad install MariaDB' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -190,9 +190,9 @@ export const mariaDBPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'MariaDB',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mariadb.com/server -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install MariaDB' as const,
 }
 
 export type MariaDBPackage = typeof mariaDBPackage

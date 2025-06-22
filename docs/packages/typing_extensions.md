@@ -1,11 +1,11 @@
-# typing_extensions
+# python.org/typing_extensions
 
 > Backported and experimental type hints for Python
 
 ## Package Information
 
 - **Domain**: `python.org/typing_extensions`
-- **Name**: `typing_extensions`
+- **Name**: `python.org/typing_extensions`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/python.org/typing_extensions/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +python.org/typing_extensions -- $SHELL -i
+launchpad install python.org/typing_extensions
 ```
 
 ## Programs

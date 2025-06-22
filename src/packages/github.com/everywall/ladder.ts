@@ -70,6 +70,8 @@ export const ladderPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ladder -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ladder' as const,
 }
 
 export type LadderPackage = typeof ladderPackage

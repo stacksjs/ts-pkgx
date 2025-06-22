@@ -114,6 +114,8 @@ export const googlemapsscraperPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) google-maps-scraper -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install google-maps-scraper' as const,
 }
 
 export type GooglemapsscraperPackage = typeof googlemapsscraperPackage

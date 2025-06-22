@@ -1,11 +1,11 @@
-# git-quick-stats.sh
+# git-quick-stats
 
 > ▁▅▆▃▅ Git quick statistics is a simple and efficient way to access various statistics in git repository.
 
 ## Package Information
 
 - **Domain**: `git-quick-stats.sh`
-- **Name**: `git-quick-stats.sh`
+- **Name**: `git-quick-stats`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/git-quick-stats.sh/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install git-quick-stats
 ## Programs
 
 This package provides the following executable programs:
-
-- `git-quick-stats`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `git-quick-stats`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +git-quick-stats.sh@2.6.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) git-quick-stats -- $SHELL -i
 ```
 
 ## Dependencies
@@ -58,7 +52,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with git-quick-stats.sh:
+These packages work well with git-quick-stats:
 
 - `gnu.org/coreutils`
 

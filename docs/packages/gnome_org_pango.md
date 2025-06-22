@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnome.org/pango -- $SHELL -i
+launchpad install pango
 ```
 
 ## Programs

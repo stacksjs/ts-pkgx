@@ -1,11 +1,11 @@
-# zsh-completions
+# github.com/zsh-users/zsh-completions
 
 > Additional completion definitions for Zsh.
 
 ## Package Information
 
 - **Domain**: `github.com/zsh-users/zsh-completions`
-- **Name**: `zsh-completions`
+- **Name**: `github.com/zsh-users/zsh-completions`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zsh-users/zsh-completions/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/zsh-users/zsh-completions -- $SHELL -i
+launchpad install github.com/zsh-users/zsh-completions
 ```
 
 ## Programs

@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +sf.net/optipng@7.9.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) optipng -- $SHELL -i
 ```
 
 ## Dependencies

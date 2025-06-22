@@ -1,11 +1,11 @@
-# SDL_image
+# libsdl.org/SDL_image
 
 > Image decoding for many popular formats for Simple Directmedia Layer.
 
 ## Package Information
 
 - **Domain**: `libsdl.org/SDL_image`
-- **Name**: `SDL_image`
+- **Name**: `libsdl.org/SDL_image`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libsdl.org/SDL_image/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libsdl.org/SDL_image -- $SHELL -i
+launchpad install libsdl.org/SDL_image
 ```
 
 ## Programs

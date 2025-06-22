@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/craftql@0.2.20 -- $SHELL -i
+sh <(curl https://pkgx.sh) craftql -- $SHELL -i
 ```
 
 ## Usage Examples

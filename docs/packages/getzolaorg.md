@@ -1,11 +1,11 @@
-# getzola.org
+# zola
 
 > A fast static site generator in a single binary with everything built-in. https://www.getzola.org
 
 ## Package Information
 
 - **Domain**: `getzola.org`
-- **Name**: `getzola.org`
+- **Name**: `zola`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getzola.org/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install getzola.org
+launchpad install zola
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `zola`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `zola`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +getzola.org@0.20.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) zola -- $SHELL -i
 ```
 
 ## Usage Examples

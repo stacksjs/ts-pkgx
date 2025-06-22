@@ -1,11 +1,11 @@
-# sphinx-doc.org
+# sphinx
 
 > Tool to create intelligent and beautiful documentation
 
 ## Package Information
 
 - **Domain**: `sphinx-doc.org`
-- **Name**: `sphinx-doc.org`
+- **Name**: `sphinx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sphinx-doc.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +sphinx-doc.org -- $SHELL -i
+launchpad install sphinx
 ```
 
 ## Programs
@@ -24,12 +24,6 @@ This package provides the following executable programs:
 - `sphinx-autogen`
 - `sphinx-build`
 - `sphinx-quickstart`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `sphinx`
 
 ## Available Versions
 

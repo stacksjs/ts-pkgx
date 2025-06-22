@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install generic_sum`
- * @aliases `generic_sum`
+ * @name `generic_sum`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.genericsum
  * // Or access via domain
  * const samePkg = pantry.githubcommbedtlsmbedtls
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mbedtls"
+ * console.log(pkg.name)        // "generic_sum"
  * console.log(pkg.description) // "An open source, portable, easy to use, readable..."
  * console.log(pkg.programs)    // ["generic_sum"]
  * console.log(pkg.versions[0]) // "3.6.3.1" (latest)
@@ -31,7 +31,7 @@ export const genericsumPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mbedtls' as const,
+  name: 'generic_sum' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const genericsumPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'generic_sum',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) generic_sum -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install generic_sum' as const,
 }
 
 export type GenericsumPackage = typeof genericsumPackage

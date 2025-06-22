@@ -1,11 +1,11 @@
-# didyoumean
+# dym
 
 > A CLI spelling corrector for when you're unsure
 
 ## Package Information
 
 - **Domain**: `crates.io/didyoumean`
-- **Name**: `didyoumean`
+- **Name**: `dym`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/didyoumean/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install dym
 ## Programs
 
 This package provides the following executable programs:
-
-- `dym`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `dym`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/didyoumean@1.1.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) dym -- $SHELL -i
 ```
 
 ## Dependencies

@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install eliza`
- * @aliases `eliza`, `elizaOS`
+ * @name `elizaOS`
+ * @aliases `eliza`
  * @dependencies `python.org>=2.7`, `nodejs.org~23.3`, `pnpm.io`, ... (+1 more)
  * @companions `git-scm.org`, `ffmpeg.org`
  *
@@ -20,7 +21,7 @@
  * // Or access via domain
  * const samePkg = pantry.elizaosgithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "elizaOS.github.io"
+ * console.log(pkg.name)        // "elizaOS"
  * console.log(pkg.description) // "Autonomous agents for everyone"
  * console.log(pkg.programs)    // ["eliza"]
  * console.log(pkg.versions[0]) // "1.0.11" (latest)
@@ -33,7 +34,7 @@ export const elizaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'elizaOS.github.io' as const,
+  name: 'elizaOS' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -100,8 +101,9 @@ export const elizaPackage = {
    */
   aliases: [
     'eliza',
-    'elizaOS',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) eliza -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install eliza' as const,
 }
 
 export type ElizaPackage = typeof elizaPackage

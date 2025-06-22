@@ -6,20 +6,20 @@
  * @version `1.47.2` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +sourceforge.net/e2fsprogs -- $SHELL -i`
- * @aliases `sf.net/e2fsprogs`
+ * @install `launchpad install sourceforge.net/e2fsprogs`
+ * @name `sf.net/e2fsprogs`
  * @dependencies `darwin:gnu.org/gettext^0.22`, `linux:github.com/util-linux/util-linux^2.39` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sfnete2fsprogs
  * // Or access via domain
  * const samePkg = pantry.sourceforgenete2fsprogs
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "e2fsprogs"
+ * console.log(pkg.name)        // "sf.net/e2fsprogs"
  * console.log(pkg.description) // "Utilities for the ext2, ext3, and ext4 file sys..."
  * console.log(pkg.programs)    // ["chattr", "compile_et", ...]
  * console.log(pkg.versions[0]) // "1.47.2" (latest)
@@ -32,7 +32,7 @@ export const sfnete2fsprogsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'e2fsprogs' as const,
+  name: 'sf.net/e2fsprogs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const sfnete2fsprogsPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +sourceforge.net/e2fsprogs -- $SHELL -i' as const,
+  installCommand: 'launchpad install sourceforge.net/e2fsprogs' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -83,9 +83,9 @@ export const sfnete2fsprogsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sf.net/e2fsprogs',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceforge.net/e2fsprogs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sourceforge.net/e2fsprogs' as const,
 }
 
 export type Sfnete2fsprogsPackage = typeof sfnete2fsprogsPackage

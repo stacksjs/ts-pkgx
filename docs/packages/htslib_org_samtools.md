@@ -1,11 +1,11 @@
-# samtools
+# htslib.org/samtools
 
 > Tools (written in C using htslib) for manipulating next-generation sequencing data
 
 ## Package Information
 
 - **Domain**: `htslib.org/samtools`
-- **Name**: `samtools`
+- **Name**: `htslib.org/samtools`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/htslib.org/samtools/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +htslib.org/samtools -- $SHELL -i
+launchpad install htslib.org/samtools
 ```
 
 ## Programs

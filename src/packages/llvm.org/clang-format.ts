@@ -1,12 +1,12 @@
 /**
- * **clang-format** - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
+ * **llvm.org/clang-format** - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
  *
  * @domain `llvm.org/clang-format`
  * @programs `clang-format`, `git-clang-format`
  * @version `20.1.7` (33 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +llvm.org/clang-format -- $SHELL -i`
+ * @install `launchpad install llvm.org/clang-format`
  * @dependencies `gnome.org/libxml2`, `invisible-island.net/ncurses`, `python.org<3.12`, ... (+1 more)
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.llvmorgclangformat
- * console.log(pkg.name)        // "clang-format"
+ * console.log(pkg.name)        // "llvm.org/clang-format"
  * console.log(pkg.description) // "The LLVM Project is a collection of modular and..."
  * console.log(pkg.programs)    // ["clang-format", "git-clang-format"]
  * console.log(pkg.versions[0]) // "20.1.7" (latest)
@@ -27,7 +27,7 @@ export const llvmorgclangformatPackage = {
   /**
    * The display name of this package.
    */
-  name: 'clang-format' as const,
+  name: 'llvm.org/clang-format' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const llvmorgclangformatPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +llvm.org/clang-format -- $SHELL -i' as const,
+  installCommand: 'launchpad install llvm.org/clang-format' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -103,6 +103,8 @@ export const llvmorgclangformatPackage = {
     '16.0.6',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +llvm.org/clang-format -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install llvm.org/clang-format' as const,
 }
 
 export type LlvmorgclangformatPackage = typeof llvmorgclangformatPackage

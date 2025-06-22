@@ -69,6 +69,8 @@ export const pushenvPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pushenv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pushenv' as const,
 }
 
 export type PushenvPackage = typeof pushenvPackage

@@ -1,11 +1,11 @@
-# mercure.rocks
+# mercure
 
 > 🪽 An open, easy, fast, reliable and battery-efficient solution for real-time communications
 
 ## Package Information
 
 - **Domain**: `mercure.rocks`
-- **Name**: `mercure.rocks`
+- **Name**: `mercure`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mercure.rocks/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install mercure
 ## Programs
 
 This package provides the following executable programs:
-
-- `mercure`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `mercure`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mercure.rocks@0.19.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) mercure -- $SHELL -i
 ```
 
 ## Usage Examples

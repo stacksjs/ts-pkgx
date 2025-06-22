@@ -1,11 +1,11 @@
-# getsops.io
+# sops
 
 > Simple and flexible tool for managing secrets
 
 ## Package Information
 
 - **Domain**: `getsops.io`
-- **Name**: `getsops.io`
+- **Name**: `sops`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getsops.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install sops
 ## Programs
 
 This package provides the following executable programs:
-
-- `sops`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `sops`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +getsops.io@3.10.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) sops -- $SHELL -i
 ```
 
 ## Usage Examples

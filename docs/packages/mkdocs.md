@@ -1,11 +1,11 @@
-# mkdocs-material
+# squidfunk/mkdocs-material
 
 > Documentation that simply works
 
 ## Package Information
 
 - **Domain**: `github.com/squidfunk/mkdocs-material`
-- **Name**: `mkdocs-material`
+- **Name**: `squidfunk/mkdocs-material`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/squidfunk/mkdocs-material/package.yml)
 
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `mkdocs`
-- `squidfunk/mkdocs-material`
 
 ## Available Versions
 
@@ -56,7 +55,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/squidfunk/mkdocs-material@9.6.14 -- $SHELL -i
+sh <(curl https://pkgx.sh) mkdocs -- $SHELL -i
 ```
 
 ## Dependencies
@@ -72,7 +71,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.squidfunk/mkdocs-material
+const pkg = pantry.mkdocs
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

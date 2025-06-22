@@ -6,7 +6,7 @@
  * @version `9.3.0` (24 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +mysql.com -- $SHELL -i`
+ * @install `launchpad install mysql.com`
  * @dependencies `unicode.org^71`, `libevent.org^2`, `lz4.org^1`, ... (+8 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -43,7 +43,7 @@ export const mysqlcomPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +mysql.com -- $SHELL -i' as const,
+  installCommand: 'launchpad install mysql.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -131,6 +131,8 @@ export const mysqlcomPackage = {
     '8.0.32',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mysql.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mysql.com' as const,
 }
 
 export type MysqlcomPackage = typeof mysqlcomPackage

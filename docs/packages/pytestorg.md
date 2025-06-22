@@ -1,11 +1,11 @@
-# pytest.org
+# pytest
 
 > The pytest framework makes it easy to write small tests, yet scales to support complex functional testing
 
 ## Package Information
 
 - **Domain**: `pytest.org`
-- **Name**: `pytest.org`
+- **Name**: `pytest`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pytest.org/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install pytest.org
+launchpad install pytest
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `pytest`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pytest`
 
@@ -48,7 +42,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pytest.org@8.4.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) pytest -- $SHELL -i
 ```
 
 ## Dependencies

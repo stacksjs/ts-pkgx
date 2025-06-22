@@ -83,6 +83,8 @@ export const cosignPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cosign -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cosign' as const,
 }
 
 export type CosignPackage = typeof cosignPackage

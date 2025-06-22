@@ -1,11 +1,11 @@
-# yaml-cpp
+# github.com/jbeder/yaml-cpp
 
 > A YAML parser and emitter in C++
 
 ## Package Information
 
 - **Domain**: `github.com/jbeder/yaml-cpp`
-- **Name**: `yaml-cpp`
+- **Name**: `github.com/jbeder/yaml-cpp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jbeder/yaml-cpp/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/jbeder/yaml-cpp -- $SHELL -i
+launchpad install github.com/jbeder/yaml-cpp
 ```
 
 ## Programs

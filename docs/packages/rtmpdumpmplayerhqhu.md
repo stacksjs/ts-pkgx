@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +rtmpdump.mplayerhq.hu -- $SHELL -i
+launchpad install rtmpdump
 ```
 
 ## Programs

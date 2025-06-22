@@ -1,18 +1,18 @@
 /**
- * **usrsctp** - A portable SCTP userland stack
+ * **github.com/sctplab/usrsctp** - A portable SCTP userland stack
  *
  * @domain `github.com/sctplab/usrsctp`
  * @version `0.9.5.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/sctplab/usrsctp -- $SHELL -i`
+ * @install `launchpad install github.com/sctplab/usrsctp`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomsctplabusrsctp
- * console.log(pkg.name)        // "usrsctp"
+ * console.log(pkg.name)        // "github.com/sctplab/usrsctp"
  * console.log(pkg.description) // "A portable SCTP userland stack"
  * console.log(pkg.versions[0]) // "0.9.5.0" (latest)
  * ```
@@ -24,7 +24,7 @@ export const githubcomsctplabusrsctpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'usrsctp' as const,
+  name: 'github.com/sctplab/usrsctp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const githubcomsctplabusrsctpPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/sctplab/usrsctp -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/sctplab/usrsctp' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -52,6 +52,8 @@ export const githubcomsctplabusrsctpPackage = {
     '0.9.5.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/sctplab/usrsctp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/sctplab/usrsctp' as const,
 }
 
 export type GithubcomsctplabusrsctpPackage = typeof githubcomsctplabusrsctpPackage

@@ -1,11 +1,11 @@
-# markdownlint-cli
+# markdownlint
 
 > CLI for Node.js style checker and lint tool for Markdown files
 
 ## Package Information
 
 - **Domain**: `github.com/igorshubovych/markdownlint-cli`
-- **Name**: `markdownlint-cli`
+- **Name**: `markdownlint`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/igorshubovych/markdownlint-cli/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install markdownlint
 ## Programs
 
 This package provides the following executable programs:
-
-- `markdownlint`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `markdownlint`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/igorshubovych/markdownlint-cli@0.45.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) markdownlint -- $SHELL -i
 ```
 
 ## Dependencies

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install postgrest`
- * @aliases `postgrest`
+ * @name `postgrest`
  * @dependencies `postgresql.org/libpq@17`, `zlib.net~1.3`, `gnu.org/gcc/libstdcxx@14`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.postgrest
  * // Or access via domain
  * const samePkg = pantry.postgrestorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "postgrest.org"
+ * console.log(pkg.name)        // "postgrest"
  * console.log(pkg.description) // "Serves a fully RESTful API from any existing Po..."
  * console.log(pkg.programs)    // ["postgrest"]
  * console.log(pkg.versions[0]) // "13.0.4" (latest)
@@ -32,7 +32,7 @@ export const postgrestPackage = {
   /**
    * The display name of this package.
    */
-  name: 'postgrest.org' as const,
+  name: 'postgrest' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -92,9 +92,9 @@ export const postgrestPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'postgrest',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) postgrest -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install postgrest' as const,
 }
 
 export type PostgrestPackage = typeof postgrestPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +wxwidgets.org -- $SHELL -i
+launchpad install wxwidgets.org
 ```
 
 ## Programs

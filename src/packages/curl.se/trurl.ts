@@ -89,6 +89,8 @@ export const trurlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) trurl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install trurl' as const,
 }
 
 export type TrurlPackage = typeof trurlPackage

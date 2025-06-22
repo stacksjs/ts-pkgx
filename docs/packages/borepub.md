@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) bore
+launchpad install bore
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +bore.pub@0.6.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) bore -- $SHELL -i
 ```
 
 ## Usage Examples

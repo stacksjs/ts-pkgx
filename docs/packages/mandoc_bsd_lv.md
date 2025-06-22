@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mandoc.bsd.lv -- $SHELL -i
+launchpad install mandoc.bsd.lv
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) fury
+launchpad install fury
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +fury.co@0.23.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) fury -- $SHELL -i
 ```
 
 ## Usage Examples

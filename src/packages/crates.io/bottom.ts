@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install btm`
- * @aliases `btm`
+ * @name `btm`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.btm
  * // Or access via domain
  * const samePkg = pantry.cratesiobottom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "bottom"
+ * console.log(pkg.name)        // "btm"
  * console.log(pkg.description) // "Yet another cross-platform graphical process/sy..."
  * console.log(pkg.programs)    // ["btm"]
  * console.log(pkg.versions[0]) // "0.10.2" (latest)
@@ -31,7 +31,7 @@ export const btmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'bottom' as const,
+  name: 'btm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,9 @@ export const btmPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'btm',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) btm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install btm' as const,
 }
 
 export type BtmPackage = typeof btmPackage

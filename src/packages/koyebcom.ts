@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install koyeb`
- * @aliases `koyeb`
+ * @name `koyeb`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.koyeb
  * // Or access via domain
  * const samePkg = pantry.koyebcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "koyeb.com"
+ * console.log(pkg.name)        // "koyeb"
  * console.log(pkg.description) // "Koyeb cli"
  * console.log(pkg.programs)    // ["koyeb"]
  * console.log(pkg.versions[0]) // "5.5.1" (latest)
@@ -31,7 +31,7 @@ export const koyebPackage = {
   /**
    * The display name of this package.
    */
-  name: 'koyeb.com' as const,
+  name: 'koyeb' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -103,9 +103,9 @@ export const koyebPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'koyeb',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) koyeb -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install koyeb' as const,
 }
 
 export type KoyebPackage = typeof koyebPackage

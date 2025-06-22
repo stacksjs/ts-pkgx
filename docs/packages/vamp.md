@@ -1,11 +1,11 @@
-# vamp-plugins.org
+# vamp
 
 > Audio processing plugin system sdk
 
 ## Package Information
 
 - **Domain**: `vamp-plugins.org`
-- **Name**: `vamp-plugins.org`
+- **Name**: `vamp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vamp-plugins.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +vamp-plugins.org -- $SHELL -i
+launchpad install vamp
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `vamp-simple-host`
 - `vamp-rdf-template-generator`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `vamp`
 
 ## Available Versions
 

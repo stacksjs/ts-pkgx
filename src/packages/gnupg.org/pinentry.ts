@@ -6,7 +6,7 @@
  * @version `1.3.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnupg.org/pinentry -- $SHELL -i`
+ * @install `launchpad install pinentry`
  * @name `pinentry`
  * @dependencies `gnupg.org/libassuan`, `gnupg.org/libgpg-error`
  *
@@ -48,7 +48,7 @@ export const pinentryPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnupg.org/pinentry -- $SHELL -i' as const,
+  installCommand: 'launchpad install pinentry' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -80,6 +80,8 @@ export const pinentryPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnupg.org/pinentry -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pinentry' as const,
 }
 
 export type PinentryPackage = typeof pinentryPackage

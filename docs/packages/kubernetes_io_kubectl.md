@@ -58,7 +58,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +kubernetes.io/kubectl@1.33.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) kubectl -- $SHELL -i
 ```
 
 ## Usage Examples

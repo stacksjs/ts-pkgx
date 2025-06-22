@@ -82,6 +82,8 @@ export const processcomposePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) process-compose -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install process-compose' as const,
 }
 
 export type ProcesscomposePackage = typeof processcomposePackage

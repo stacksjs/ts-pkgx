@@ -74,6 +74,8 @@ export const gomd2manPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) go-md2man -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install go-md2man' as const,
 }
 
 export type Gomd2manPackage = typeof gomd2manPackage

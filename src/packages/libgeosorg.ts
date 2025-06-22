@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install geos-config`
- * @aliases `geos-config`
+ * @name `geos-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.geosconfig
  * // Or access via domain
  * const samePkg = pantry.libgeosorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libgeos.org"
+ * console.log(pkg.name)        // "geos-config"
  * console.log(pkg.description) // "Geometry Engine, Open Source"
  * console.log(pkg.programs)    // ["geos-config"]
  * console.log(pkg.versions[0]) // "3.13.1" (latest)
@@ -31,7 +31,7 @@ export const geosconfigPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libgeos.org' as const,
+  name: 'geos-config' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -82,9 +82,9 @@ export const geosconfigPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'geos-config',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) geos-config -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install geos-config' as const,
 }
 
 export type GeosconfigPackage = typeof geosconfigPackage

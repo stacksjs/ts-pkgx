@@ -78,6 +78,8 @@ export const envchainPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) envchain -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install envchain' as const,
 }
 
 export type EnvchainPackage = typeof envchainPackage

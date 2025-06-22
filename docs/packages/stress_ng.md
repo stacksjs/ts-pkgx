@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/ColinIanKing/stress-ng@0.19.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) stress-ng -- $SHELL -i
 ```
 
 ## Dependencies

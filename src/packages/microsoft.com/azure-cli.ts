@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install az`
- * @aliases `az`
+ * @name `az`
  * @dependencies `openssl.org@1.1`, `python.org>=3.10<3.12`, `sourceware.org/libffi`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.az
  * // Or access via domain
  * const samePkg = pantry.microsoftcomazurecli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "azure-cli"
+ * console.log(pkg.name)        // "az"
  * console.log(pkg.description) // "Azure Command-Line Interface"
  * console.log(pkg.programs)    // ["az"]
  * console.log(pkg.versions[0]) // "2.74.0" (latest)
@@ -32,7 +32,7 @@ export const azPackage = {
   /**
    * The display name of this package.
    */
-  name: 'azure-cli' as const,
+  name: 'az' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -108,9 +108,9 @@ export const azPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'az',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) az -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install az' as const,
 }
 
 export type AzPackage = typeof azPackage

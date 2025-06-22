@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/TomWright/dasel@2.8.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) dasel -- $SHELL -i
 ```
 
 ## Usage Examples

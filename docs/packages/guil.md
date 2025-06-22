@@ -1,11 +1,11 @@
-# guile
+# guil
 
 > GNU Ubiquitous Intelligent Language for Extensions
 
 ## Package Information
 
 - **Domain**: `gnu.org/guile`
-- **Name**: `guile`
+- **Name**: `guil`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/guile/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnu.org/guile -- $SHELL -i
+launchpad install guil
 ```
 
 ## Programs
@@ -25,12 +25,6 @@ This package provides the following executable programs:
 - `guile-config`
 - `guile-snarf`
 - `guile-tools`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `guil`
 
 ## Available Versions
 

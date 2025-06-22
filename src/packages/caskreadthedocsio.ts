@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cask`
- * @aliases `cask`
+ * @name `cask`
  * @dependencies `gnu.org/coreutils`, `gnu.org/emacs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cask
  * // Or access via domain
  * const samePkg = pantry.caskreadthedocsio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cask.readthedocs.io"
+ * console.log(pkg.name)        // "cask"
  * console.log(pkg.description) // "Project management tool for Emacs"
  * console.log(pkg.programs)    // ["cask"]
  * console.log(pkg.versions[0]) // "0.9.1" (latest)
@@ -32,7 +32,7 @@ export const caskPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cask.readthedocs.io' as const,
+  name: 'cask' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,7 @@ export const caskPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cask',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cask -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install cask' as const,
 }

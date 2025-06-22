@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install coredns`
- * @aliases `coredns`
+ * @name `coredns`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.coredns
  * // Or access via domain
  * const samePkg = pantry.corednsio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "coredns.io"
+ * console.log(pkg.name)        // "coredns"
  * console.log(pkg.description) // "CoreDNS is a DNS server that chains plugins"
  * console.log(pkg.programs)    // ["coredns"]
  * console.log(pkg.versions[0]) // "1.12.2" (latest)
@@ -31,7 +31,7 @@ export const corednsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'coredns.io' as const,
+  name: 'coredns' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const corednsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'coredns',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) coredns -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install coredns' as const,
 }
 
 export type CorednsPackage = typeof corednsPackage

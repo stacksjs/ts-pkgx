@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +min.io/mc@2023.10.24.21.42.22 -- $SHELL -i
+sh <(curl https://pkgx.sh) mc -- $SHELL -i
 ```
 
 ## Usage Examples

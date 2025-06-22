@@ -86,6 +86,8 @@ export const yamllintPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) yamllint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install yamllint' as const,
 }
 
 export type YamllintPackage = typeof yamllintPackage

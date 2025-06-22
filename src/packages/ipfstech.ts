@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ipfs`
- * @aliases `ipfs`
+ * @name `ipfs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ipfs
  * // Or access via domain
  * const samePkg = pantry.ipfstech
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ipfs.tech"
+ * console.log(pkg.name)        // "ipfs"
  * console.log(pkg.description) // "Peer-to-peer hypermedia protocol"
  * console.log(pkg.programs)    // ["ipfs"]
  * console.log(pkg.versions[0]) // "0.35.0" (latest)
@@ -31,7 +31,7 @@ export const ipfsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ipfs.tech' as const,
+  name: 'ipfs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -95,9 +95,9 @@ export const ipfsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ipfs',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ipfs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ipfs' as const,
 }
 
 export type IpfsPackage = typeof ipfsPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +elementsproject.org -- $SHELL -i
+launchpad install elementsproject.org
 ```
 
 ## Programs

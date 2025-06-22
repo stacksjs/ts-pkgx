@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +rabbitmq.com -- $SHELL -i
+launchpad install rabbitmq.com
 ```
 
 ## Programs

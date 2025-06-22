@@ -70,6 +70,8 @@ export const pqrsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pqrs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pqrs' as const,
 }
 
 export type PqrsPackage = typeof pqrsPackage

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install oras`
- * @aliases `oras`
+ * @name `oras`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.oras
  * // Or access via domain
  * const samePkg = pantry.orasland
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "oras.land"
+ * console.log(pkg.name)        // "oras"
  * console.log(pkg.description) // "OCI registry client - managing content like art..."
  * console.log(pkg.programs)    // ["oras"]
  * console.log(pkg.versions[0]) // "1.2.3" (latest)
@@ -31,7 +31,7 @@ export const orasPackage = {
   /**
    * The display name of this package.
    */
-  name: 'oras.land' as const,
+  name: 'oras' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -71,9 +71,9 @@ export const orasPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'oras',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) oras -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install oras' as const,
 }
 
 export type OrasPackage = typeof orasPackage

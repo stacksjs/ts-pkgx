@@ -1,18 +1,18 @@
 /**
- * **typing_extensions** - Backported and experimental type hints for Python
+ * **python.org/typing_extensions** - Backported and experimental type hints for Python
  *
  * @domain `python.org/typing_extensions`
  * @version `4.14.0` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +python.org/typing_extensions -- $SHELL -i`
+ * @install `launchpad install python.org/typing_extensions`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.pythonorgtyping_extensions
- * console.log(pkg.name)        // "typing_extensions"
+ * console.log(pkg.name)        // "python.org/typing_extensions"
  * console.log(pkg.description) // "Backported and experimental type hints for Python"
  * console.log(pkg.versions[0]) // "4.14.0" (latest)
  * ```
@@ -24,7 +24,7 @@ export const pythonorgtyping_extensionsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'typing_extensions' as const,
+  name: 'python.org/typing_extensions' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const pythonorgtyping_extensionsPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +python.org/typing_extensions -- $SHELL -i' as const,
+  installCommand: 'launchpad install python.org/typing_extensions' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -62,6 +62,8 @@ export const pythonorgtyping_extensionsPackage = {
     '4.8.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +python.org/typing_extensions -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install python.org/typing_extensions' as const,
 }
 
 export type Pythonorgtyping_extensionsPackage = typeof pythonorgtyping_extensionsPackage

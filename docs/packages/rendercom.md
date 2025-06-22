@@ -1,11 +1,11 @@
-# render.com
+# render
 
 > Command-line interface for Render
 
 ## Package Information
 
 - **Domain**: `render.com`
-- **Name**: `render.com`
+- **Name**: `render`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/render.com/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install render.com
+launchpad install render
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `render`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `render`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +render.com@0.1.11 -- $SHELL -i
+sh <(curl https://pkgx.sh) render -- $SHELL -i
 ```
 
 ## Usage Examples

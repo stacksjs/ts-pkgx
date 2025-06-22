@@ -5,7 +5,7 @@
  * @version `3.4.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +eigen.tuxfamily.org -- $SHELL -i`
+ * @install `launchpad install eigen.tuxfamily.org`
  * @dependencies `linux:gnu.org/gcc/libstdcxx@14` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -40,7 +40,7 @@ export const eigentuxfamilyorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +eigen.tuxfamily.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install eigen.tuxfamily.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -59,6 +59,8 @@ export const eigentuxfamilyorgPackage = {
     '3.4.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +eigen.tuxfamily.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install eigen.tuxfamily.org' as const,
 }
 
 export type EigentuxfamilyorgPackage = typeof eigentuxfamilyorgPackage

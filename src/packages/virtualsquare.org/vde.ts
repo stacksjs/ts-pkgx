@@ -1,18 +1,18 @@
 /**
- * **vde** - pkgx package
+ * **virtualsquare.org/vde** - pkgx package
  *
  * @domain `virtualsquare.org/vde`
  * @version `2.3.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +virtualsquare.org/vde -- $SHELL -i`
+ * @install `launchpad install virtualsquare.org/vde`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.virtualsquareorgvde
- * console.log(pkg.name)        // "vde"
+ * console.log(pkg.name)        // "virtualsquare.org/vde"
  * console.log(pkg.versions[0]) // "2.3.3" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const virtualsquareorgvdePackage = {
   /**
    * The display name of this package.
    */
-  name: 'vde' as const,
+  name: 'virtualsquare.org/vde' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +39,7 @@ export const virtualsquareorgvdePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +virtualsquare.org/vde -- $SHELL -i' as const,
+  installCommand: 'launchpad install virtualsquare.org/vde' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -51,6 +51,8 @@ export const virtualsquareorgvdePackage = {
     '2.3.3',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +virtualsquare.org/vde -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install virtualsquare.org/vde' as const,
 }
 
 export type VirtualsquareorgvdePackage = typeof virtualsquareorgvdePackage

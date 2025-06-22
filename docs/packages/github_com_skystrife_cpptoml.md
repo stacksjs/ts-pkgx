@@ -1,11 +1,11 @@
-# cpptoml
+# github.com/skystrife/cpptoml
 
 > cpptoml is a header-only library for parsing TOML
 
 ## Package Information
 
 - **Domain**: `github.com/skystrife/cpptoml`
-- **Name**: `cpptoml`
+- **Name**: `github.com/skystrife/cpptoml`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/skystrife/cpptoml/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/skystrife/cpptoml -- $SHELL -i
+launchpad install github.com/skystrife/cpptoml
 ```
 
 ## Programs

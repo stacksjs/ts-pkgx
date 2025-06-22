@@ -1,11 +1,11 @@
-# git-cliff.org
+# git-cliff
 
 > A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️
 
 ## Package Information
 
 - **Domain**: `git-cliff.org`
-- **Name**: `git-cliff.org`
+- **Name**: `git-cliff`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/git-cliff.org/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install git-cliff
 ## Programs
 
 This package provides the following executable programs:
-
-- `git-cliff`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `git-cliff`
 
@@ -47,7 +41,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +git-cliff.org@2.9.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) git-cliff -- $SHELL -i
 ```
 
 ## Dependencies

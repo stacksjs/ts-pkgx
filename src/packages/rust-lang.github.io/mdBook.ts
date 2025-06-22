@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mdbook`
- * @aliases `mdbook`
+ * @name `mdbook`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mdbook
  * // Or access via domain
  * const samePkg = pantry.rustlanggithubiomdbook
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mdBook"
+ * console.log(pkg.name)        // "mdbook"
  * console.log(pkg.description) // "Create book from markdown files. Like Gitbook b..."
  * console.log(pkg.programs)    // ["mdbook"]
  * console.log(pkg.versions[0]) // "0.4.51" (latest)
@@ -31,7 +31,7 @@ export const mdbookPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mdBook' as const,
+  name: 'mdbook' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -85,9 +85,9 @@ export const mdbookPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mdbook',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mdbook -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mdbook' as const,
 }
 
 export type MdbookPackage = typeof mdbookPackage

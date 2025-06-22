@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/oapi-codegen/oapi-codegen@2.4.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) oapi-codegen -- $SHELL -i
 ```
 
 ## Usage Examples

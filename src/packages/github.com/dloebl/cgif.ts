@@ -1,18 +1,18 @@
 /**
- * **cgif** - GIF encoder written in C
+ * **github.com/dloebl/cgif** - GIF encoder written in C
  *
  * @domain `github.com/dloebl/cgif`
  * @version `0.5.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/dloebl/cgif -- $SHELL -i`
+ * @install `launchpad install github.com/dloebl/cgif`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomdloeblcgif
- * console.log(pkg.name)        // "cgif"
+ * console.log(pkg.name)        // "github.com/dloebl/cgif"
  * console.log(pkg.description) // "GIF encoder written in C"
  * console.log(pkg.versions[0]) // "0.5.0" (latest)
  * ```
@@ -24,7 +24,7 @@ export const githubcomdloeblcgifPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cgif' as const,
+  name: 'github.com/dloebl/cgif' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const githubcomdloeblcgifPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/dloebl/cgif -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/dloebl/cgif' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -56,6 +56,8 @@ export const githubcomdloeblcgifPackage = {
     '0.3.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/dloebl/cgif -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/dloebl/cgif' as const,
 }
 
 export type GithubcomdloeblcgifPackage = typeof githubcomdloeblcgifPackage

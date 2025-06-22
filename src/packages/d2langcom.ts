@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install d2`
- * @aliases `d2`
+ * @name `d2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.d2
  * // Or access via domain
  * const samePkg = pantry.d2langcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "d2lang.com"
+ * console.log(pkg.name)        // "d2"
  * console.log(pkg.description) // "D2 is a modern diagram scripting language that ..."
  * console.log(pkg.programs)    // ["d2"]
  * console.log(pkg.versions[0]) // "0.7.0" (latest)
@@ -31,7 +31,7 @@ export const d2Package = {
   /**
    * The display name of this package.
    */
-  name: 'd2lang.com' as const,
+  name: 'd2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +78,9 @@ export const d2Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'd2',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) d2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install d2' as const,
 }
 
 export type D2Package = typeof d2Package

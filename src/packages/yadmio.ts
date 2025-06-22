@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install yadm`
- * @aliases `yadm`
+ * @name `yadm`
  * @dependencies `git-scm.org`, `gnu.org/bash`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.yadm
  * // Or access via domain
  * const samePkg = pantry.yadmio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "yadm.io"
+ * console.log(pkg.name)        // "yadm"
  * console.log(pkg.description) // "Yet Another Dotfiles Manager"
  * console.log(pkg.programs)    // ["yadm"]
  * console.log(pkg.versions[0]) // "3.5.0" (latest)
@@ -32,7 +32,7 @@ export const yadmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'yadm.io' as const,
+  name: 'yadm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,9 @@ export const yadmPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'yadm',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) yadm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install yadm' as const,
 }
 
 export type YadmPackage = typeof yadmPackage

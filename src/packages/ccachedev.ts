@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ccache`
- * @aliases `ccache`
+ * @name `ccache`
  * @dependencies `github.com/redis/hiredis`, `facebook.com/zstd`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ccache
  * // Or access via domain
  * const samePkg = pantry.ccachedev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ccache.dev"
+ * console.log(pkg.name)        // "ccache"
  * console.log(pkg.description) // "Object-file caching compiler wrapper"
  * console.log(pkg.programs)    // ["ccache"]
  * console.log(pkg.versions[0]) // "4.11.3" (latest)
@@ -32,7 +32,7 @@ export const ccachePackage = {
   /**
    * The display name of this package.
    */
-  name: 'ccache.dev' as const,
+  name: 'ccache' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -85,9 +85,7 @@ export const ccachePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ccache',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ccache -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install ccache' as const,
 }

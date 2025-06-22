@@ -1,11 +1,11 @@
 /**
- * **xcb** - pkgx package
+ * **x.org/xcb** - pkgx package
  *
  * @domain `x.org/xcb`
  * @version `1.17.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/xcb -- $SHELL -i`
+ * @install `launchpad install x.org/xcb`
  * @dependencies `x.org/xau^1`, `x.org/xdmcp^1`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgxcb
- * console.log(pkg.name)        // "xcb"
+ * console.log(pkg.name)        // "x.org/xcb"
  * console.log(pkg.versions[0]) // "1.17.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgxcbPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xcb' as const,
+  name: 'x.org/xcb' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const xorgxcbPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/xcb -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/xcb' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -62,6 +62,8 @@ export const xorgxcbPackage = {
     '1.15.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xcb -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/xcb' as const,
 }
 
 export type XorgxcbPackage = typeof xorgxcbPackage

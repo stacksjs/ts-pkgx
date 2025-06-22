@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install terratag`
- * @aliases `terratag`
+ * @name `terratag`
  * @dependencies `terraform.io>=0.12`, `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.terratag
  * // Or access via domain
  * const samePkg = pantry.terratagio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "terratag.io"
+ * console.log(pkg.name)        // "terratag"
  * console.log(pkg.description) // "Terratag is a CLI tool that enables users of Te..."
  * console.log(pkg.programs)    // ["terratag"]
  * console.log(pkg.versions[0]) // "0.7.2" (latest)
@@ -32,7 +32,7 @@ export const terratagPackage = {
   /**
    * The display name of this package.
    */
-  name: 'terratag.io' as const,
+  name: 'terratag' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -93,9 +93,9 @@ export const terratagPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'terratag',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) terratag -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install terratag' as const,
 }
 
 export type TerratagPackage = typeof terratagPackage

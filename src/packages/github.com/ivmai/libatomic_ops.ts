@@ -1,18 +1,18 @@
 /**
- * **libatomic_ops** - The atomic_ops project (Atomic memory update operations portable implementation)
+ * **github.com/ivmai/libatomic_ops** - The atomic_ops project (Atomic memory update operations portable implementation)
  *
  * @domain `github.com/ivmai/libatomic_ops`
  * @version `7.8.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/ivmai/libatomic_ops -- $SHELL -i`
+ * @install `launchpad install github.com/ivmai/libatomic_ops`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomivmailibatomic_ops
- * console.log(pkg.name)        // "libatomic_ops"
+ * console.log(pkg.name)        // "github.com/ivmai/libatomic_ops"
  * console.log(pkg.description) // "The atomic_ops project (Atomic memory update op..."
  * console.log(pkg.versions[0]) // "7.8.2" (latest)
  * ```
@@ -24,7 +24,7 @@ export const githubcomivmailibatomic_opsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libatomic_ops' as const,
+  name: 'github.com/ivmai/libatomic_ops' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const githubcomivmailibatomic_opsPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/ivmai/libatomic_ops -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/ivmai/libatomic_ops' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -55,6 +55,8 @@ export const githubcomivmailibatomic_opsPackage = {
     '7.4.20',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/ivmai/libatomic_ops -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/ivmai/libatomic_ops' as const,
 }
 
 export type Githubcomivmailibatomic_opsPackage = typeof githubcomivmailibatomic_opsPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) rome
+launchpad install rome
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +rome.tools@0.4.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) rome -- $SHELL -i
 ```
 
 ## Usage Examples

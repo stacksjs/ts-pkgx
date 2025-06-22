@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ktlint`
- * @aliases `ktlint`
+ * @name `ktlint`
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ktlint
  * // Or access via domain
  * const samePkg = pantry.ktlintgithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ktlint.github.io"
+ * console.log(pkg.name)        // "ktlint"
  * console.log(pkg.description) // "An anti-bikeshedding Kotlin linter with built-i..."
  * console.log(pkg.programs)    // ["ktlint"]
  * console.log(pkg.versions[0]) // "1.6.0" (latest)
@@ -32,7 +32,7 @@ export const ktlintPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ktlint.github.io' as const,
+  name: 'ktlint' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -84,9 +84,9 @@ export const ktlintPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ktlint',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ktlint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ktlint' as const,
 }
 
 export type KtlintPackage = typeof ktlintPackage

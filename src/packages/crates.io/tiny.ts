@@ -78,6 +78,8 @@ export const tinyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tiny -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tiny' as const,
 }
 
 export type TinyPackage = typeof tinyPackage

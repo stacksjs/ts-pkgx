@@ -77,6 +77,8 @@ export const daffPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) daff -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install daff' as const,
 }
 
 export type DaffPackage = typeof daffPackage

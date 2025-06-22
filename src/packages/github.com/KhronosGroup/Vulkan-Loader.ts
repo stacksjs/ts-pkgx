@@ -1,11 +1,11 @@
 /**
- * **Vulkan-Loader** - Vulkan Loader
+ * **github.com/KhronosGroup/Vulkan-Loader** - Vulkan Loader
  *
  * @domain `github.com/KhronosGroup/Vulkan-Loader`
  * @version `1.4.319` (57 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/KhronosGroup/Vulkan-Loader -- $SHELL -i`
+ * @install `launchpad install github.com/KhronosGroup/Vulkan-Loader`
  * @dependencies `github.com/KhronosGroup/Vulkan-Headers`, `linux:x.org/x11`, `linux:x.org/xcb`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomkhronosgroupvulkanloader
- * console.log(pkg.name)        // "Vulkan-Loader"
+ * console.log(pkg.name)        // "github.com/KhronosGroup/Vulkan-Loader"
  * console.log(pkg.description) // "Vulkan Loader"
  * console.log(pkg.versions[0]) // "1.4.319" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomkhronosgroupvulkanloaderPackage = {
   /**
    * The display name of this package.
    */
-  name: 'Vulkan-Loader' as const,
+  name: 'github.com/KhronosGroup/Vulkan-Loader' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const githubcomkhronosgroupvulkanloaderPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/KhronosGroup/Vulkan-Loader -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/KhronosGroup/Vulkan-Loader' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -119,6 +119,8 @@ export const githubcomkhronosgroupvulkanloaderPackage = {
     '1.3.261',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/KhronosGroup/Vulkan-Loader -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/KhronosGroup/Vulkan-Loader' as const,
 }
 
 export type GithubcomkhronosgroupvulkanloaderPackage = typeof githubcomkhronosgroupvulkanloaderPackage

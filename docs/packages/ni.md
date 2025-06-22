@@ -1,11 +1,11 @@
-# ni
+# github.com/antfu/ni
 
 > 💡 Use the right package manager
 
 ## Package Information
 
 - **Domain**: `github.com/antfu/ni`
-- **Name**: `ni`
+- **Name**: `github.com/antfu/ni`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/antfu/ni/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/antfu/ni -- $SHELL -i
+launchpad install github.com/antfu/ni
 ```
 
 ## Programs

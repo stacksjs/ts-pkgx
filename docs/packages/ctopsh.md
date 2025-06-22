@@ -1,11 +1,11 @@
-# ctop.sh
+# ctop
 
 > Top-like interface for container metrics
 
 ## Package Information
 
 - **Domain**: `ctop.sh`
-- **Name**: `ctop.sh`
+- **Name**: `ctop`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ctop.sh/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install ctop.sh
+launchpad install ctop
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `ctop`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `ctop`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +ctop.sh@0.7.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) ctop -- $SHELL -i
 ```
 
 ## Usage Examples

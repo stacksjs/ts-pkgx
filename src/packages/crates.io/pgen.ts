@@ -71,6 +71,8 @@ export const pgenPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pgen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pgen' as const,
 }
 
 export type PgenPackage = typeof pgenPackage

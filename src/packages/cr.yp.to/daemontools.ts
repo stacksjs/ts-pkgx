@@ -1,19 +1,19 @@
 /**
- * **daemontools** - Collection of tools for managing UNIX services
+ * **cr.yp.to/daemontools** - Collection of tools for managing UNIX services
  *
  * @domain `cr.yp.to/daemontools`
  * @programs `envdir`, `envuidgid`, `fghack`, `multilog`, `pgrphack`, ... (+12 more)
  * @version `0.76.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +cr.yp.to/daemontools -- $SHELL -i`
+ * @install `launchpad install cr.yp.to/daemontools`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.cryptodaemontools
- * console.log(pkg.name)        // "daemontools"
+ * console.log(pkg.name)        // "cr.yp.to/daemontools"
  * console.log(pkg.description) // "Collection of tools for managing UNIX services"
  * console.log(pkg.programs)    // ["envdir", "envuidgid", ...]
  * console.log(pkg.versions[0]) // "0.76.0" (latest)
@@ -26,7 +26,7 @@ export const cryptodaemontoolsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'daemontools' as const,
+  name: 'cr.yp.to/daemontools' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const cryptodaemontoolsPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +cr.yp.to/daemontools -- $SHELL -i' as const,
+  installCommand: 'launchpad install cr.yp.to/daemontools' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,6 +76,8 @@ export const cryptodaemontoolsPackage = {
     '0.76.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cr.yp.to/daemontools -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cr.yp.to/daemontools' as const,
 }
 
 export type CryptodaemontoolsPackage = typeof cryptodaemontoolsPackage

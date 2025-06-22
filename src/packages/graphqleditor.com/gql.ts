@@ -69,6 +69,8 @@ export const gqlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gql -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gql' as const,
 }
 
 export type GqlPackage = typeof gqlPackage

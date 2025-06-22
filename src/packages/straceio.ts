@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install strace`
- * @aliases `strace`
+ * @name `strace`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.strace
  * // Or access via domain
  * const samePkg = pantry.straceio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "strace.io"
+ * console.log(pkg.name)        // "strace"
  * console.log(pkg.description) // "strace is a diagnostic, debugging and instructi..."
  * console.log(pkg.programs)    // ["strace"]
  * console.log(pkg.versions[0]) // "6.2.0" (latest)
@@ -31,7 +31,7 @@ export const stracePackage = {
   /**
    * The display name of this package.
    */
-  name: 'strace.io' as const,
+  name: 'strace' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const stracePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'strace',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) strace -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install strace' as const,
 }
 
 export type StracePackage = typeof stracePackage

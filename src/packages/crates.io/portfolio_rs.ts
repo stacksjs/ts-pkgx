@@ -75,6 +75,8 @@ export const portfoliorsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) portfolio_rs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install portfolio_rs' as const,
 }
 
 export type PortfoliorsPackage = typeof portfoliorsPackage

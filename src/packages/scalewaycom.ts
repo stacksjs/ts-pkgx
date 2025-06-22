@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install scw`
- * @aliases `scw`
+ * @name `scw`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.scw
  * // Or access via domain
  * const samePkg = pantry.scalewaycom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "scaleway.com"
+ * console.log(pkg.name)        // "scw"
  * console.log(pkg.description) // "Command Line Interface for Scaleway"
  * console.log(pkg.programs)    // ["scw"]
  * console.log(pkg.versions[0]) // "2.40.0" (latest)
@@ -31,7 +31,7 @@ export const scwPackage = {
   /**
    * The display name of this package.
    */
-  name: 'scaleway.com' as const,
+  name: 'scw' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -76,9 +76,9 @@ export const scwPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'scw',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) scw -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install scw' as const,
 }
 
 export type ScwPackage = typeof scwPackage

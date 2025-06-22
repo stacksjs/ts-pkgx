@@ -77,6 +77,8 @@ export const resticPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) restic -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install restic' as const,
 }
 
 export type ResticPackage = typeof resticPackage

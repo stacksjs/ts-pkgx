@@ -1,11 +1,11 @@
-# helm.sh
+# helm
 
 > The Kubernetes Package Manager
 
 ## Package Information
 
 - **Domain**: `helm.sh`
-- **Name**: `helm.sh`
+- **Name**: `helm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/helm.sh/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install helm
 ## Programs
 
 This package provides the following executable programs:
-
-- `helm`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `helm`
 
@@ -49,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +helm.sh@3.18.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) helm -- $SHELL -i
 ```
 
 ## Usage Examples

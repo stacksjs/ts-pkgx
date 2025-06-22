@@ -69,6 +69,8 @@ export const srgnPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) srgn -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install srgn' as const,
 }
 
 export type SrgnPackage = typeof srgnPackage

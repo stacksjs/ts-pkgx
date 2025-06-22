@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install packer`
- * @aliases `packer`
+ * @name `packer`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.packer
  * // Or access via domain
  * const samePkg = pantry.packerio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "packer.io"
+ * console.log(pkg.name)        // "packer"
  * console.log(pkg.description) // "Packer is a tool for creating identical machine..."
  * console.log(pkg.programs)    // ["packer"]
  * console.log(pkg.versions[0]) // "1.13.1" (latest)
@@ -31,7 +31,7 @@ export const packerPackage = {
   /**
    * The display name of this package.
    */
-  name: 'packer.io' as const,
+  name: 'packer' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -80,9 +80,9 @@ export const packerPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'packer',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) packer -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install packer' as const,
 }
 
 export type PackerPackage = typeof packerPackage

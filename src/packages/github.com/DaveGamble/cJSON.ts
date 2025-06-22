@@ -1,18 +1,18 @@
 /**
- * **cJSON** - Ultralightweight JSON parser in ANSI C
+ * **github.com/DaveGamble/cJSON** - Ultralightweight JSON parser in ANSI C
  *
  * @domain `github.com/DaveGamble/cJSON`
  * @version `1.7.18` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/DaveGamble/cJSON -- $SHELL -i`
+ * @install `launchpad install github.com/DaveGamble/cJSON`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomdavegamblecjson
- * console.log(pkg.name)        // "cJSON"
+ * console.log(pkg.name)        // "github.com/DaveGamble/cJSON"
  * console.log(pkg.description) // "Ultralightweight JSON parser in ANSI C"
  * console.log(pkg.versions[0]) // "1.7.18" (latest)
  * ```
@@ -24,7 +24,7 @@ export const githubcomdavegamblecjsonPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cJSON' as const,
+  name: 'github.com/DaveGamble/cJSON' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const githubcomdavegamblecjsonPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/DaveGamble/cJSON -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/DaveGamble/cJSON' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -55,6 +55,8 @@ export const githubcomdavegamblecjsonPackage = {
     '1.7.15',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/DaveGamble/cJSON -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/DaveGamble/cJSON' as const,
 }
 
 export type GithubcomdavegamblecjsonPackage = typeof githubcomdavegamblecjsonPackage

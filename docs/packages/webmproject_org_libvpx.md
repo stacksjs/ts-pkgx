@@ -1,11 +1,11 @@
-# libvpx
+# webmproject.org/libvpx
 
 > Mirror only. Please do not send pull requests.
 
 ## Package Information
 
 - **Domain**: `webmproject.org/libvpx`
-- **Name**: `libvpx`
+- **Name**: `webmproject.org/libvpx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/webmproject.org/libvpx/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +webmproject.org/libvpx -- $SHELL -i
+launchpad install webmproject.org/libvpx
 ```
 
 ## Programs

@@ -62,7 +62,7 @@ Podman: A tool for managing OCI containers and pods.
 
 **Programs**: podman, podman-remote, podman-mac-helper
 
-**Install**: `launchpad install +podman.io -- $SHELL -i`
+**Install**: `launchpad install podman`
 
 ---
 

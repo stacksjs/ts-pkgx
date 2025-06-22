@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +x.org/xinput@1.6.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) xinput -- $SHELL -i
 ```
 
 ## Dependencies

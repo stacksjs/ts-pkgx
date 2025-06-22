@@ -6,20 +6,20 @@
  * @version `1.1.43` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnome.org/libxslt -- $SHELL -i`
- * @aliases `xslt`
+ * @install `launchpad install xslt`
+ * @name `xslt`
  * @dependencies `gnome.org/libxml2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.xslt
  * // Or access via domain
  * const samePkg = pantry.gnomeorglibxslt
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libxslt"
+ * console.log(pkg.name)        // "xslt"
  * console.log(pkg.description) // "Read-only mirror of https://gitlab.gnome.org/GN..."
  * console.log(pkg.programs)    // ["xslt-config", "xsltproc"]
  * console.log(pkg.versions[0]) // "1.1.43" (latest)
@@ -32,7 +32,7 @@ export const xsltPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libxslt' as const,
+  name: 'xslt' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const xsltPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnome.org/libxslt -- $SHELL -i' as const,
+  installCommand: 'launchpad install xslt' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,9 +82,9 @@ export const xsltPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'xslt',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/libxslt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xslt' as const,
 }
 
 export type XsltPackage = typeof xsltPackage

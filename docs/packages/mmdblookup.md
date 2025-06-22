@@ -1,11 +1,11 @@
-# libmaxminddb
+# mmdblookup
 
 > C library for the MaxMind DB file format
 
 ## Package Information
 
 - **Domain**: `github.com/maxmind/libmaxminddb`
-- **Name**: `libmaxminddb`
+- **Name**: `mmdblookup`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/maxmind/libmaxminddb/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install mmdblookup
 ## Programs
 
 This package provides the following executable programs:
-
-- `mmdblookup`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `mmdblookup`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/maxmind/libmaxminddb@1.12.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) mmdblookup -- $SHELL -i
 ```
 
 ## Usage Examples

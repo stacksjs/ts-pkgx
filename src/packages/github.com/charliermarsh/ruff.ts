@@ -1,18 +1,18 @@
 /**
- * **ruff** - An extremely fast Python linter and code formatter, written in Rust.
+ * **github.com/charliermarsh/ruff** - An extremely fast Python linter and code formatter, written in Rust.
  *
  * @domain `github.com/charliermarsh/ruff`
  * @version `0.12.0` (151 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/charliermarsh/ruff -- $SHELL -i`
+ * @install `launchpad install github.com/charliermarsh/ruff`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomcharliermarshruff
- * console.log(pkg.name)        // "ruff"
+ * console.log(pkg.name)        // "github.com/charliermarsh/ruff"
  * console.log(pkg.description) // "An extremely fast Python linter and code format..."
  * console.log(pkg.versions[0]) // "0.12.0" (latest)
  * ```
@@ -24,7 +24,7 @@ export const githubcomcharliermarshruffPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ruff' as const,
+  name: 'github.com/charliermarsh/ruff' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const githubcomcharliermarshruffPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/charliermarsh/ruff -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/charliermarsh/ruff' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -202,6 +202,8 @@ export const githubcomcharliermarshruffPackage = {
     '0.0.237',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/charliermarsh/ruff -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/charliermarsh/ruff' as const,
 }
 
 export type GithubcomcharliermarshruffPackage = typeof githubcomcharliermarshruffPackage

@@ -1,11 +1,11 @@
-# groff
+# gnu.org/groff
 
 > GNU troff text-formatting system
 
 ## Package Information
 
 - **Domain**: `gnu.org/groff`
-- **Name**: `groff`
+- **Name**: `gnu.org/groff`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/groff/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnu.org/groff -- $SHELL -i
+launchpad install gnu.org/groff
 ```
 
 ## Programs

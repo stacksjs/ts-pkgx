@@ -1,11 +1,11 @@
-# md4c
+# md2html
 
 > C Markdown parser. Fast. SAX-like interface. Compliant to CommonMark specification.
 
 ## Package Information
 
 - **Domain**: `github.com/mity/md4c`
-- **Name**: `md4c`
+- **Name**: `md2html`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mity/md4c/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install md2html
 ## Programs
 
 This package provides the following executable programs:
-
-- `md2html`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `md2html`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/mity/md4c@0.5.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) md2html -- $SHELL -i
 ```
 
 ## Usage Examples

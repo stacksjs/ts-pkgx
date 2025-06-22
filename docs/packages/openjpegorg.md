@@ -1,11 +1,11 @@
-# openjpeg.org
+# opj_compress
 
 > Official repository of the OpenJPEG project
 
 ## Package Information
 
 - **Domain**: `openjpeg.org`
-- **Name**: `openjpeg.org`
+- **Name**: `opj_compress`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openjpeg.org/package.yml)
 
@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `opj_compress`
 - `opj_decompress`
 - `opj_dump`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `opj`
 
 ## Available Versions
 

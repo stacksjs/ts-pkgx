@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aws-sso`
- * @aliases `aws-sso`
+ * @name `aws-sso`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.awssso
  * // Or access via domain
  * const samePkg = pantry.githubcomsynfinaticawsssocli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "aws-sso-cli"
+ * console.log(pkg.name)        // "aws-sso"
  * console.log(pkg.description) // "A powerful tool for using AWS Identity Center f..."
  * console.log(pkg.programs)    // ["aws-sso"]
  * console.log(pkg.versions[0]) // "2.0.3" (latest)
@@ -31,7 +31,7 @@ export const awsssoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'aws-sso-cli' as const,
+  name: 'aws-sso' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -82,9 +82,9 @@ export const awsssoPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'aws-sso',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aws-sso -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install aws-sso' as const,
 }
 
 export type AwsssoPackage = typeof awsssoPackage

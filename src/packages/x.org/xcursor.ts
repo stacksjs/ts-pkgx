@@ -1,11 +1,11 @@
 /**
- * **xcursor** - pkgx package
+ * **x.org/xcursor** - pkgx package
  *
  * @domain `x.org/xcursor`
  * @version `1.2.3` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/xcursor -- $SHELL -i`
+ * @install `launchpad install x.org/xcursor`
  * @dependencies `x.org/x11`, `x.org/xfixes`, `x.org/xrender`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgxcursor
- * console.log(pkg.name)        // "xcursor"
+ * console.log(pkg.name)        // "x.org/xcursor"
  * console.log(pkg.versions[0]) // "1.2.3" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgxcursorPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xcursor' as const,
+  name: 'x.org/xcursor' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const xorgxcursorPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/xcursor -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/xcursor' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -62,6 +62,8 @@ export const xorgxcursorPackage = {
     '1.2.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xcursor -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/xcursor' as const,
 }
 
 export type XorgxcursorPackage = typeof xorgxcursorPackage

@@ -70,6 +70,8 @@ export const aichatPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aichat -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install aichat' as const,
 }
 
 export type AichatPackage = typeof aichatPackage

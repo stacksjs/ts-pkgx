@@ -1,11 +1,11 @@
-# git-town.com
+# git-town
 
 > High-level command-line interface for Git
 
 ## Package Information
 
 - **Domain**: `git-town.com`
-- **Name**: `git-town.com`
+- **Name**: `git-town`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/git-town.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install git-town
 ## Programs
 
 This package provides the following executable programs:
-
-- `git-town`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `git-town`
 
@@ -53,7 +47,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +git-town.com@21.1.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) git-town -- $SHELL -i
 ```
 
 ## Usage Examples

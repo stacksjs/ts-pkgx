@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install localstack`
- * @aliases `localstack`
+ * @name `localstack`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.localstack
  * // Or access via domain
  * const samePkg = pantry.localstackcloudcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cli"
+ * console.log(pkg.name)        // "localstack"
  * console.log(pkg.description) // "The LocalStack CLI packaged using pyinstaller"
  * console.log(pkg.programs)    // ["localstack"]
  * console.log(pkg.versions[0]) // "4.5.0" (latest)
@@ -32,7 +32,7 @@ export const localstackPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cli' as const,
+  name: 'localstack' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -96,9 +96,9 @@ export const localstackPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'localstack',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) localstack -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install localstack' as const,
 }
 
 export type LocalstackPackage = typeof localstackPackage

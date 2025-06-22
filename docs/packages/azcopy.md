@@ -1,11 +1,11 @@
-# azure-storage-azcopy
+# azcopy
 
 > The new Azure Storage data transfer utility - AzCopy v10
 
 ## Package Information
 
 - **Domain**: `microsoft.com/azure-storage-azcopy`
-- **Name**: `azure-storage-azcopy`
+- **Name**: `azcopy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/azure-storage-azcopy/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install azcopy
 ## Programs
 
 This package provides the following executable programs:
-
-- `azcopy`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `azcopy`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +microsoft.com/azure-storage-azcopy@10.29.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) azcopy -- $SHELL -i
 ```
 
 ## Usage Examples

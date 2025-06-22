@@ -6,19 +6,19 @@
  * @version `1.0.6` (38 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +zrok.io -- $SHELL -i`
- * @aliases `zrok`
+ * @install `launchpad install zrok`
+ * @name `zrok`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.zrok
  * // Or access via domain
  * const samePkg = pantry.zrokio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "zrok.io"
+ * console.log(pkg.name)        // "zrok"
  * console.log(pkg.description) // "Geo-scale, next-generation peer-to-peer sharing..."
  * console.log(pkg.programs)    // ["zrok", "copyto", ...]
  * console.log(pkg.versions[0]) // "1.0.6" (latest)
@@ -31,7 +31,7 @@ export const zrokPackage = {
   /**
    * The display name of this package.
    */
-  name: 'zrok.io' as const,
+  name: 'zrok' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const zrokPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +zrok.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install zrok' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -107,9 +107,9 @@ export const zrokPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'zrok',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +zrok.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zrok' as const,
 }
 
 export type ZrokPackage = typeof zrokPackage

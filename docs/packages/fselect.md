@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/fselect@0.8.12 -- $SHELL -i
+sh <(curl https://pkgx.sh) fselect -- $SHELL -i
 ```
 
 ## Dependencies

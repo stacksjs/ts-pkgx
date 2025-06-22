@@ -1,11 +1,11 @@
-# qemu.org
+# qemu
 
 > Generic machine emulator and virtualizer
 
 ## Package Information
 
 - **Domain**: `qemu.org`
-- **Name**: `qemu.org`
+- **Name**: `qemu`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/qemu.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +qemu.org -- $SHELL -i
+launchpad install qemu
 ```
 
 ## Programs
@@ -54,12 +54,6 @@ This package provides the following executable programs:
 - `qemu-system-x86_64`
 - `qemu-system-xtensa`
 - `qemu-system-xtensaeb`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `qemu`
 
 ## Available Versions
 

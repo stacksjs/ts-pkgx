@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install uriparse`
- * @aliases `uriparse`
+ * @name `uriparse`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.uriparse
  * // Or access via domain
  * const samePkg = pantry.uriparsergithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "uriparser.github.io"
+ * console.log(pkg.name)        // "uriparse"
  * console.log(pkg.description) // ":hocho: Strictly RFC 3986 compliant URI parsing..."
  * console.log(pkg.programs)    // ["uriparse"]
  * console.log(pkg.versions[0]) // "0.9.8" (latest)
@@ -31,7 +31,7 @@ export const uriparsePackage = {
   /**
    * The display name of this package.
    */
-  name: 'uriparser.github.io' as const,
+  name: 'uriparse' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -69,9 +69,9 @@ export const uriparsePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'uriparse',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) uriparse -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install uriparse' as const,
 }
 
 export type UriparsePackage = typeof uriparsePackage

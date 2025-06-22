@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install helm`
- * @aliases `helm`
+ * @name `helm`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.helm
  * // Or access via domain
  * const samePkg = pantry.helmsh
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "helm.sh"
+ * console.log(pkg.name)        // "helm"
  * console.log(pkg.description) // "The Kubernetes Package Manager"
  * console.log(pkg.programs)    // ["helm"]
  * console.log(pkg.versions[0]) // "3.18.3" (latest)
@@ -31,7 +31,7 @@ export const helmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'helm.sh' as const,
+  name: 'helm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -101,9 +101,9 @@ export const helmPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'helm',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) helm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install helm' as const,
 }
 
 export type HelmPackage = typeof helmPackage

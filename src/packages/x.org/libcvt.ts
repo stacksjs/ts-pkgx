@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cvt`
- * @aliases `cvt`
+ * @name `cvt`
  * @dependencies `x.org/x11^1`, `x.org/exts`, `x.org/protocol`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cvt
  * // Or access via domain
  * const samePkg = pantry.xorglibcvt
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libcvt"
+ * console.log(pkg.name)        // "cvt"
  * console.log(pkg.description) // "VESA CVT standard timing modelines generator"
  * console.log(pkg.programs)    // ["cvt"]
  * console.log(pkg.versions[0]) // "0.1.3" (latest)
@@ -32,7 +32,7 @@ export const cvtPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libcvt' as const,
+  name: 'cvt' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +78,9 @@ export const cvtPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cvt',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cvt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cvt' as const,
 }
 
 export type CvtPackage = typeof cvtPackage

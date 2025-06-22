@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +classic.yarnpkg.com
+launchpad install classic.yarnpkg.com
 ```
 
 ## Programs

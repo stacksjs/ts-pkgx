@@ -70,6 +70,8 @@ export const commitPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) commit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install commit' as const,
 }
 
 export type CommitPackage = typeof commitPackage

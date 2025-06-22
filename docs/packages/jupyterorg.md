@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +jupyter.org -- $SHELL -i
+launchpad install jupyter.org
 ```
 
 ## Programs

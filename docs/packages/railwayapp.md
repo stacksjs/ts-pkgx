@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) railway
+launchpad install railway
 ```
 
 ## Programs
@@ -47,7 +47,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +railway.app@4.5.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) railway -- $SHELL -i
 ```
 
 ## Usage Examples

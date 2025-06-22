@@ -168,6 +168,8 @@ export const typosPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) typos -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install typos' as const,
 }
 
 export type TyposPackage = typeof typosPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +imagemagick.org -- $SHELL -i
+launchpad install imagemagick.org
 ```
 
 ## Programs

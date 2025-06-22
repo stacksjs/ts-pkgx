@@ -1,11 +1,11 @@
-# edencommon
+# facebook.com/edencommon
 
 > Shared library for Watchman and Eden projects.
 
 ## Package Information
 
 - **Domain**: `facebook.com/edencommon`
-- **Name**: `edencommon`
+- **Name**: `facebook.com/edencommon`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/edencommon/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +facebook.com/edencommon -- $SHELL -i
+launchpad install facebook.com/edencommon
 ```
 
 ## Programs

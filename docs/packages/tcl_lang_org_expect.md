@@ -1,11 +1,11 @@
-# expect
+# tcl-lang.org/expect
 
 > Program that can automate interactive applications
 
 ## Package Information
 
 - **Domain**: `tcl-lang.org/expect`
-- **Name**: `expect`
+- **Name**: `tcl-lang.org/expect`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tcl-lang.org/expect/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +tcl-lang.org/expect -- $SHELL -i
+launchpad install tcl-lang.org/expect
 ```
 
 ## Programs

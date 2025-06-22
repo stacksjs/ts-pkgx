@@ -1,18 +1,18 @@
 /**
- * **poppler-data** - pkgx package
+ * **poppler.freedesktop.org/poppler-data** - pkgx package
  *
  * @domain `poppler.freedesktop.org/poppler-data`
  * @version `0.4.12` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +poppler.freedesktop.org/poppler-data -- $SHELL -i`
+ * @install `launchpad install poppler.freedesktop.org/poppler-data`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.popplerfreedesktoporgpopplerdata
- * console.log(pkg.name)        // "poppler-data"
+ * console.log(pkg.name)        // "poppler.freedesktop.org/poppler-data"
  * console.log(pkg.versions[0]) // "0.4.12" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const popplerfreedesktoporgpopplerdataPackage = {
   /**
    * The display name of this package.
    */
-  name: 'poppler-data' as const,
+  name: 'poppler.freedesktop.org/poppler-data' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +39,7 @@ export const popplerfreedesktoporgpopplerdataPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +poppler.freedesktop.org/poppler-data -- $SHELL -i' as const,
+  installCommand: 'launchpad install poppler.freedesktop.org/poppler-data' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -51,6 +51,8 @@ export const popplerfreedesktoporgpopplerdataPackage = {
     '0.4.12',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +poppler.freedesktop.org/poppler-data -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install poppler.freedesktop.org/poppler-data' as const,
 }
 
 export type PopplerfreedesktoporgpopplerdataPackage = typeof popplerfreedesktoporgpopplerdataPackage

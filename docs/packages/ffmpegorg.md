@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +ffmpeg.org -- $SHELL -i
+launchpad install ffmpeg.org
 ```
 
 ## Programs

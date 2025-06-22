@@ -1,19 +1,19 @@
 /**
- * **fastfetch** - A maintained, feature-rich and performance oriented, neofetch like system information tool.
+ * **github.com/fastfetch-cli/fastfetch** - A maintained, feature-rich and performance oriented, neofetch like system information tool.
  *
  * @domain `github.com/fastfetch-cli/fastfetch`
  * @programs `fastfetch`, `flashfetch`
  * @version `2.46.0` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/fastfetch-cli/fastfetch -- $SHELL -i`
+ * @install `launchpad install github.com/fastfetch-cli/fastfetch`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomfastfetchclifastfetch
- * console.log(pkg.name)        // "fastfetch"
+ * console.log(pkg.name)        // "github.com/fastfetch-cli/fastfetch"
  * console.log(pkg.description) // "A maintained, feature-rich and performance orie..."
  * console.log(pkg.programs)    // ["fastfetch", "flashfetch"]
  * console.log(pkg.versions[0]) // "2.46.0" (latest)
@@ -26,7 +26,7 @@ export const githubcomfastfetchclifastfetchPackage = {
   /**
    * The display name of this package.
    */
-  name: 'fastfetch' as const,
+  name: 'github.com/fastfetch-cli/fastfetch' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const githubcomfastfetchclifastfetchPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/fastfetch-cli/fastfetch -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/fastfetch-cli/fastfetch' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -81,6 +81,8 @@ export const githubcomfastfetchclifastfetchPackage = {
     '2.33.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/fastfetch-cli/fastfetch -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/fastfetch-cli/fastfetch' as const,
 }
 
 export type GithubcomfastfetchclifastfetchPackage = typeof githubcomfastfetchclifastfetchPackage

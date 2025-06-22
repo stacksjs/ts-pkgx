@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pod`
- * @aliases `pod`
+ * @name `pod`
  * @dependencies `ruby-lang.org~3.2`, `sourceware.org/libffi^3`, `rubygems.org^3`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pod
  * // Or access via domain
  * const samePkg = pantry.cocoapodsorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cocoapods.org"
+ * console.log(pkg.name)        // "pod"
  * console.log(pkg.description) // "Dependency manager for Cocoa projects"
  * console.log(pkg.programs)    // ["pod"]
  * console.log(pkg.versions[0]) // "1.16.2" (latest)
@@ -32,7 +32,7 @@ export const podPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cocoapods.org' as const,
+  name: 'pod' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -90,9 +90,9 @@ export const podPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pod',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pod -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pod' as const,
 }
 
 export type PodPackage = typeof podPackage

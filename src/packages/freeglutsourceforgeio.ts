@@ -5,7 +5,7 @@
  * @version `3.6.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +freeglut.sourceforge.io -- $SHELL -i`
+ * @install `launchpad install freeglut.sourceforge.io`
  * @dependencies `x.org/x11`, `x.org/xi`, `x.org/xrandr`, ... (+4 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -41,7 +41,7 @@ export const freeglutsourceforgeioPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +freeglut.sourceforge.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install freeglut.sourceforge.io' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -67,6 +67,8 @@ export const freeglutsourceforgeioPackage = {
     '3.4.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freeglut.sourceforge.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freeglut.sourceforge.io' as const,
 }
 
 export type FreeglutsourceforgeioPackage = typeof freeglutsourceforgeioPackage

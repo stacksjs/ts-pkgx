@@ -1,11 +1,11 @@
-# planetscale.com
+# pscale
 
 > The CLI for PlanetScale Database
 
 ## Package Information
 
 - **Domain**: `planetscale.com`
-- **Name**: `planetscale.com`
+- **Name**: `pscale`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/planetscale.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install pscale
 ## Programs
 
 This package provides the following executable programs:
-
-- `pscale`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pscale`
 
@@ -56,7 +50,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +planetscale.com@0.245.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) pscale -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tailwindcss`
- * @aliases `tailwindcss`
+ * @name `tailwindcss`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tailwindcss
  * // Or access via domain
  * const samePkg = pantry.tailwindcsscom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tailwindcss.com"
+ * console.log(pkg.name)        // "tailwindcss"
  * console.log(pkg.description) // "A utility-first CSS framework for rapid UI deve..."
  * console.log(pkg.programs)    // ["tailwindcss"]
  * console.log(pkg.versions[0]) // "4.1.10" (latest)
@@ -31,7 +31,7 @@ export const tailwindcssPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tailwindcss.com' as const,
+  name: 'tailwindcss' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -111,9 +111,9 @@ export const tailwindcssPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tailwindcss',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tailwindcss -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tailwindcss' as const,
 }
 
 export type TailwindcssPackage = typeof tailwindcssPackage

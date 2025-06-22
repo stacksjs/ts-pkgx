@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gm`
- * @aliases `gm`
+ * @name `gm`
  * @dependencies `freetype.org`, `github.com/jasper-software/jasper`, `libjpeg-turbo.org`, ... (+9 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gm
  * // Or access via domain
  * const samePkg = pantry.graphicsmagickorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "graphicsmagick.org"
+ * console.log(pkg.name)        // "gm"
  * console.log(pkg.description) // "Image processing tools collection"
  * console.log(pkg.programs)    // ["gm"]
  * console.log(pkg.versions[0]) // "1.3.45" (latest)
@@ -32,7 +32,7 @@ export const gmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'graphicsmagick.org' as const,
+  name: 'gm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -90,9 +90,9 @@ export const gmPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gm',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gm' as const,
 }
 
 export type GmPackage = typeof gmPackage

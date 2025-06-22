@@ -5,7 +5,7 @@
  * @version `25.1.4` (55 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +mesa3d.org -- $SHELL -i`
+ * @install `launchpad install mesa3d.org`
  * @dependencies `libexpat.github.io`, `x.org/x11`, `x.org/xcb`, ... (+21 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -40,7 +40,7 @@ export const mesa3dorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +mesa3d.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install mesa3d.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -136,6 +136,8 @@ export const mesa3dorgPackage = {
     '23.1.7',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mesa3d.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mesa3d.org' as const,
 }
 
 export type Mesa3dorgPackage = typeof mesa3dorgPackage

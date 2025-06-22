@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gradle`
- * @aliases `gradle`
+ * @name `gradle`
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gradle
  * // Or access via domain
  * const samePkg = pantry.gradleorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gradle.org"
+ * console.log(pkg.name)        // "gradle"
  * console.log(pkg.description) // "Open-source build automation tool based on the ..."
  * console.log(pkg.programs)    // ["gradle"]
  * console.log(pkg.versions[0]) // "8.14.2" (latest)
@@ -32,7 +32,7 @@ export const gradlePackage = {
   /**
    * The display name of this package.
    */
-  name: 'gradle.org' as const,
+  name: 'gradle' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -92,9 +92,9 @@ export const gradlePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gradle',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gradle -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gradle' as const,
 }
 
 export type GradlePackage = typeof gradlePackage

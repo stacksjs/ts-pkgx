@@ -80,6 +80,8 @@ export const mockgenPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mockgen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mockgen' as const,
 }
 
 export type MockgenPackage = typeof mockgenPackage

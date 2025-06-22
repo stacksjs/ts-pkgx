@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +glfw.org -- $SHELL -i
+launchpad install glfw.org
 ```
 
 ## Programs

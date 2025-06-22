@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gost3411-2012`
- * @aliases `gost3411-2012`
+ * @name `gost3411-2012`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gost34112012
  * // Or access via domain
  * const samePkg = pantry.githubcomadegtyarevstreebog
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "streebog"
+ * console.log(pkg.name)        // "gost3411-2012"
  * console.log(pkg.description) // "GOST R 34.11-2012: RFC-6986 cryptographic hash ..."
  * console.log(pkg.programs)    // ["gost3411-2012"]
  * console.log(pkg.versions[0]) // "0.13.0" (latest)
@@ -31,7 +31,7 @@ export const gost34112012Package = {
   /**
    * The display name of this package.
    */
-  name: 'streebog' as const,
+  name: 'gost3411-2012' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const gost34112012Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gost3411-2012',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gost3411-2012 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gost3411-2012' as const,
 }
 
 export type Gost34112012Package = typeof gost34112012Package

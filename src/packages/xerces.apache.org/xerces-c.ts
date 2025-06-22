@@ -1,12 +1,12 @@
 /**
- * **xerces-c** - Validating XML parser
+ * **xerces.apache.org/xerces-c** - Validating XML parser
  *
  * @domain `xerces.apache.org/xerces-c`
  * @programs `CreateDOMDocument`, `DOMCount`, `DOMPrint`, `EnumVal`, `PParse`, ... (+10 more)
  * @version `3.3.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +xerces.apache.org/xerces-c -- $SHELL -i`
+ * @install `launchpad install xerces.apache.org/xerces-c`
  * @dependencies `curl.se`
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xercesapacheorgxercesc
- * console.log(pkg.name)        // "xerces-c"
+ * console.log(pkg.name)        // "xerces.apache.org/xerces-c"
  * console.log(pkg.description) // "Validating XML parser"
  * console.log(pkg.programs)    // ["CreateDOMDocument", "DOMCount", ...]
  * console.log(pkg.versions[0]) // "3.3.0" (latest)
@@ -27,7 +27,7 @@ export const xercesapacheorgxercescPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xerces-c' as const,
+  name: 'xerces.apache.org/xerces-c' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const xercesapacheorgxercescPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +xerces.apache.org/xerces-c -- $SHELL -i' as const,
+  installCommand: 'launchpad install xerces.apache.org/xerces-c' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -83,6 +83,8 @@ export const xercesapacheorgxercescPackage = {
     '3.2.4',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +xerces.apache.org/xerces-c -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xerces.apache.org/xerces-c' as const,
 }
 
 export type XercesapacheorgxercescPackage = typeof xercesapacheorgxercescPackage

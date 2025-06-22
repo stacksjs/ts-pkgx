@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install squawk`
- * @aliases `squawk`
+ * @name `squawk`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.squawk
  * // Or access via domain
  * const samePkg = pantry.squawkhqcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "squawkhq.com"
+ * console.log(pkg.name)        // "squawk"
  * console.log(pkg.description) // "🐘 linter for PostgreSQL, focused on migrations"
  * console.log(pkg.programs)    // ["squawk"]
  * console.log(pkg.versions[0]) // "2.15.0" (latest)
@@ -31,7 +31,7 @@ export const squawkPackage = {
   /**
    * The display name of this package.
    */
-  name: 'squawkhq.com' as const,
+  name: 'squawk' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -105,9 +105,9 @@ export const squawkPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'squawk',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) squawk -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install squawk' as const,
 }
 
 export type SquawkPackage = typeof squawkPackage

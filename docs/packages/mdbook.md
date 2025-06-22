@@ -1,11 +1,11 @@
-# mdBook
+# mdbook
 
 > Create book from markdown files. Like Gitbook but implemented in Rust
 
 ## Package Information
 
 - **Domain**: `rust-lang.github.io/mdBook`
-- **Name**: `mdBook`
+- **Name**: `mdbook`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.github.io/mdBook/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install mdbook
 ## Programs
 
 This package provides the following executable programs:
-
-- `mdbook`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `mdbook`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +rust-lang.github.io/mdBook@0.4.51 -- $SHELL -i
+sh <(curl https://pkgx.sh) mdbook -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -225,6 +225,8 @@ export const cfnlintPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cfn-lint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cfn-lint' as const,
 }
 
 export type CfnlintPackage = typeof cfnlintPackage

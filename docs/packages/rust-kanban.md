@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/rust-kanban@0.10.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) rust-kanban -- $SHELL -i
 ```
 
 ## Dependencies

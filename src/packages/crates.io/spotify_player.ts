@@ -93,6 +93,8 @@ export const spotifyplayerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) spotify_player -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install spotify_player' as const,
 }
 
 export type SpotifyplayerPackage = typeof spotifyplayerPackage

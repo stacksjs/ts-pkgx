@@ -1,11 +1,11 @@
-# jfrog-cli
+# jfrog.com/jfrog-cli
 
 > JFrog CLI is a client that provides a simple interface that automates access to the JFrog products.
 
 ## Package Information
 
 - **Domain**: `jfrog.com/jfrog-cli`
-- **Name**: `jfrog-cli`
+- **Name**: `jfrog.com/jfrog-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jfrog.com/jfrog-cli/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +jfrog.com/jfrog-cli -- $SHELL -i
+launchpad install jfrog.com/jfrog-cli
 ```
 
 ## Programs

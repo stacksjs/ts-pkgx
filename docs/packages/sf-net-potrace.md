@@ -1,11 +1,11 @@
-# potrace
+# sf.net/potrace
 
 > Convert bitmaps to vector graphics
 
 ## Package Information
 
 - **Domain**: `sourceforge.net/potrace`
-- **Name**: `potrace`
+- **Name**: `sf.net/potrace`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/potrace/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +sourceforge.net/potrace -- $SHELL -i
+launchpad install sourceforge.net/potrace
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `potrace`
 - `mkbitmap`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `sf.net/potrace`
 
 ## Available Versions
 

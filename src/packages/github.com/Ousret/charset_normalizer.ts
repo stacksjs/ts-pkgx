@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install normalizer`
- * @aliases `normalizer`
+ * @name `normalizer`
  * @dependencies `python.org>=3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.normalizer
  * // Or access via domain
  * const samePkg = pantry.githubcomousretcharset_normalizer
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "charset_normalizer"
+ * console.log(pkg.name)        // "normalizer"
  * console.log(pkg.description) // "Truly universal encoding detector in pure Python"
  * console.log(pkg.programs)    // ["normalizer"]
  * console.log(pkg.versions[0]) // "3.4.2" (latest)
@@ -32,7 +32,7 @@ export const normalizerPackage = {
   /**
    * The display name of this package.
    */
-  name: 'charset_normalizer' as const,
+  name: 'normalizer' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +78,9 @@ export const normalizerPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'normalizer',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) normalizer -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install normalizer' as const,
 }
 
 export type NormalizerPackage = typeof normalizerPackage

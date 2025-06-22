@@ -6,20 +6,20 @@
  * @version `8.2.3` (42 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +sphinx-doc.org -- $SHELL -i`
- * @aliases `sphinx`
+ * @install `launchpad install sphinx`
+ * @name `sphinx`
  * @dependencies `python.org>=3.8<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sphinx
  * // Or access via domain
  * const samePkg = pantry.sphinxdocorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sphinx-doc.org"
+ * console.log(pkg.name)        // "sphinx"
  * console.log(pkg.description) // "Tool to create intelligent and beautiful docume..."
  * console.log(pkg.programs)    // ["sphinx-apidoc", "sphinx-autogen", ...]
  * console.log(pkg.versions[0]) // "8.2.3" (latest)
@@ -32,7 +32,7 @@ export const sphinxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sphinx-doc.org' as const,
+  name: 'sphinx' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const sphinxPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +sphinx-doc.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install sphinx' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -119,9 +119,9 @@ export const sphinxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sphinx',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sphinx-doc.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sphinx' as const,
 }
 
 export type SphinxPackage = typeof sphinxPackage

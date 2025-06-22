@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +versity.com/versitygw@1.0.14 -- $SHELL -i
+sh <(curl https://pkgx.sh) versitygw -- $SHELL -i
 ```
 
 ## Usage Examples

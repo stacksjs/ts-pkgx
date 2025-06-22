@@ -69,6 +69,8 @@ export const mcPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mc' as const,
 }
 
 export type McPackage = typeof mcPackage

@@ -73,6 +73,8 @@ export const grpcurlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) grpcurl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install grpcurl' as const,
 }
 
 export type GrpcurlPackage = typeof grpcurlPackage

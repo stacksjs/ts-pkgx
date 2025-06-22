@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +modal.com -- $SHELL -i
+launchpad install modal.com
 ```
 
 ## Programs

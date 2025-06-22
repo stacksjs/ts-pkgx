@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install hugo`
- * @aliases `hugo`
+ * @name `hugo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.hugo
  * // Or access via domain
  * const samePkg = pantry.gohugoio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gohugo.io"
+ * console.log(pkg.name)        // "hugo"
  * console.log(pkg.description) // "The world’s fastest framework for building webs..."
  * console.log(pkg.programs)    // ["hugo"]
  * console.log(pkg.versions[0]) // "0.147.8" (latest)
@@ -31,7 +31,7 @@ export const hugoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gohugo.io' as const,
+  name: 'hugo' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -190,9 +190,9 @@ export const hugoPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'hugo',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hugo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hugo' as const,
 }
 
 export type HugoPackage = typeof hugoPackage

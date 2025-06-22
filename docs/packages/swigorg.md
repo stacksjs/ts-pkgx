@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +swig.org -- $SHELL -i
+launchpad install swig.org
 ```
 
 ## Programs

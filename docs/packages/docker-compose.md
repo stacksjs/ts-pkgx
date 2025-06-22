@@ -1,11 +1,11 @@
-# compose
+# docker-compose
 
 > Define and run multi-container applications with Docker
 
 ## Package Information
 
 - **Domain**: `docker.com/compose`
-- **Name**: `compose`
+- **Name**: `docker-compose`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/docker.com/compose/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install docker-compose
 ## Programs
 
 This package provides the following executable programs:
-
-- `docker-compose`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `docker-compose`
 
@@ -53,7 +47,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +docker.com/compose@2.37.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) docker-compose -- $SHELL -i
 ```
 
 ## Usage Examples

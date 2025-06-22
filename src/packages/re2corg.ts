@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install re2c`
- * @aliases `re2c`
+ * @name `re2c`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.re2c
  * // Or access via domain
  * const samePkg = pantry.re2corg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "re2c.org"
+ * console.log(pkg.name)        // "re2c"
  * console.log(pkg.description) // "Lexer generator for C, C++, D, Go, Haskell, Jav..."
  * console.log(pkg.programs)    // ["re2c"]
  * console.log(pkg.versions[0]) // "4.2.0" (latest)
@@ -31,7 +31,7 @@ export const re2cPackage = {
   /**
    * The display name of this package.
    */
-  name: 're2c.org' as const,
+  name: 're2c' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -74,9 +74,9 @@ export const re2cPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    're2c',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) re2c -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install re2c' as const,
 }
 
 export type Re2cPackage = typeof re2cPackage

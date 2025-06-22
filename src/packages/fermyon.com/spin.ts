@@ -85,6 +85,8 @@ export const spinPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) spin -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install spin' as const,
 }
 
 export type SpinPackage = typeof spinPackage

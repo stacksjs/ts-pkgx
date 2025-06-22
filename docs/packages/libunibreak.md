@@ -1,11 +1,11 @@
-# libunibreak
+# github.com/adah1972/libunibreak
 
 > The libunibreak library
 
 ## Package Information
 
 - **Domain**: `github.com/adah1972/libunibreak`
-- **Name**: `libunibreak`
+- **Name**: `github.com/adah1972/libunibreak`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/adah1972/libunibreak/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/adah1972/libunibreak -- $SHELL -i
+launchpad install github.com/adah1972/libunibreak
 ```
 
 ## Programs

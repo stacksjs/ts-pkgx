@@ -69,6 +69,8 @@ export const conformPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) conform -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install conform' as const,
 }
 
 export type ConformPackage = typeof conformPackage

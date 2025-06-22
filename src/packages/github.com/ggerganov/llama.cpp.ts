@@ -6,20 +6,20 @@
  * @version `5731.0.0` (2741 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/ggerganov/llama.cpp -- $SHELL -i`
- * @aliases `LLaMA.cpp`
+ * @install `launchpad install github.com/ggerganov/llama.cpp`
+ * @name `LLaMA.cpp`
  * @dependencies `pkgx.sh^1`, `curl.se^8 # libcurl, since b5064`, `linux:gnu.org/gcc/libstdcxx` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.LLaMAcpp
  * // Or access via domain
  * const samePkg = pantry.githubcomggerganovllamacpp
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "llama.cpp"
+ * console.log(pkg.name)        // "LLaMA.cpp"
  * console.log(pkg.description) // "LLM inference in C/C++"
  * console.log(pkg.programs)    // ["llama-cli", "llama.cpp", ...]
  * console.log(pkg.versions[0]) // "5731.0.0" (latest)
@@ -32,7 +32,7 @@ export const lLaMAcppPackage = {
   /**
    * The display name of this package.
    */
-  name: 'llama.cpp' as const,
+  name: 'LLaMA.cpp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const lLaMAcppPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/ggerganov/llama.cpp -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/ggerganov/llama.cpp' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -2820,9 +2820,9 @@ export const lLaMAcppPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'LLaMA.cpp',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/ggerganov/llama.cpp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/ggerganov/llama.cpp' as const,
 }
 
 export type LLaMAcppPackage = typeof lLaMAcppPackage

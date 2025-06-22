@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install heroku`
- * @aliases `heroku`
+ * @name `heroku`
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.heroku
  * // Or access via domain
  * const samePkg = pantry.herokucom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "heroku.com"
+ * console.log(pkg.name)        // "heroku"
  * console.log(pkg.description) // "CLI for Heroku"
  * console.log(pkg.programs)    // ["heroku"]
  * console.log(pkg.versions[0]) // "10.10.1" (latest)
@@ -32,7 +32,7 @@ export const herokuPackage = {
   /**
    * The display name of this package.
    */
-  name: 'heroku.com' as const,
+  name: 'heroku' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -107,9 +107,9 @@ export const herokuPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'heroku',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) heroku -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install heroku' as const,
 }
 
 export type HerokuPackage = typeof herokuPackage

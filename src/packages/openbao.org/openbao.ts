@@ -6,7 +6,7 @@
  * @version `2.2.2` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +openbao.org/openbao -- $SHELL -i`
+ * @install `launchpad install openbao`
  * @name `openbao`
  *
  * @example
@@ -47,7 +47,7 @@ export const openbaoPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +openbao.org/openbao -- $SHELL -i' as const,
+  installCommand: 'launchpad install openbao' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,6 +78,8 @@ export const openbaoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openbao.org/openbao -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openbao' as const,
 }
 
 export type OpenbaoPackage = typeof openbaoPackage

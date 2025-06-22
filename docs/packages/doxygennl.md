@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) doxygen
+launchpad install doxygen
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +doxygen.nl@1.14.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) doxygen -- $SHELL -i
 ```
 
 ## Usage Examples

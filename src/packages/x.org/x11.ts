@@ -1,11 +1,11 @@
 /**
- * **x11** - pkgx package
+ * **x.org/x11** - pkgx package
  *
  * @domain `x.org/x11`
  * @version `1.8.12` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/x11 -- $SHELL -i`
+ * @install `launchpad install x.org/x11`
  * @dependencies `x.org/xcb^1`, `x.org/protocol`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgx11
- * console.log(pkg.name)        // "x11"
+ * console.log(pkg.name)        // "x.org/x11"
  * console.log(pkg.versions[0]) // "1.8.12" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgx11Package = {
   /**
    * The display name of this package.
    */
-  name: 'x11' as const,
+  name: 'x.org/x11' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const xorgx11Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/x11 -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/x11' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -67,6 +67,8 @@ export const xorgx11Package = {
     '1.8.4',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/x11 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/x11' as const,
 }
 
 export type Xorgx11Package = typeof xorgx11Package

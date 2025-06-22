@@ -1,11 +1,11 @@
-# diffutils
+# gnu.org/diffutils
 
 > File comparison utilities
 
 ## Package Information
 
 - **Domain**: `gnu.org/diffutils`
-- **Name**: `diffutils`
+- **Name**: `gnu.org/diffutils`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/diffutils/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnu.org/diffutils -- $SHELL -i
+launchpad install gnu.org/diffutils
 ```
 
 ## Programs

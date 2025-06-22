@@ -1,11 +1,11 @@
-# parallel
+# gnu.org/parallel
 
 > Shell command parallelization utility
 
 ## Package Information
 
 - **Domain**: `gnu.org/parallel`
-- **Name**: `parallel`
+- **Name**: `gnu.org/parallel`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/parallel/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnu.org/parallel -- $SHELL -i
+launchpad install gnu.org/parallel
 ```
 
 ## Programs

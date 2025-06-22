@@ -5,7 +5,7 @@
  * @version `1.15.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +pugixml.org -- $SHELL -i`
+ * @install `launchpad install pugixml.org`
  *
  * @example
  * ```typescript
@@ -40,7 +40,7 @@ export const pugixmlorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pugixml.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install pugixml.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -54,6 +54,8 @@ export const pugixmlorgPackage = {
     '1.13.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pugixml.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pugixml.org' as const,
 }
 
 export type PugixmlorgPackage = typeof pugixmlorgPackage

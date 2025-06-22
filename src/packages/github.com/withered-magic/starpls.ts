@@ -69,6 +69,8 @@ export const starplsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) starpls -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install starpls' as const,
 }
 
 export type StarplsPackage = typeof starplsPackage

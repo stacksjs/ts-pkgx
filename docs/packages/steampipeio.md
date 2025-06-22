@@ -1,11 +1,11 @@
-# steampipe.io
+# steampipe
 
 > Zero-ETL, infinite possibilities. Live query APIs, code & more with SQL. No DB required.
 
 ## Package Information
 
 - **Domain**: `steampipe.io`
-- **Name**: `steampipe.io`
+- **Name**: `steampipe`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/steampipe.io/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install steampipe.io
+launchpad install steampipe
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `steampipe`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `steampipe`
 
@@ -50,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +steampipe.io@2.0.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) steampipe -- $SHELL -i
 ```
 
 ## Usage Examples

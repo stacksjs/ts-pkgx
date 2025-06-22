@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install qpdf`
- * @aliases `qpdf`
+ * @name `qpdf`
  * @dependencies `zlib.net^1`, `libjpeg-turbo.org^2`, `openssl.org^1.1`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.qpdf
  * // Or access via domain
  * const samePkg = pantry.qpdfsourceforgeio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "qpdf.sourceforge.io"
+ * console.log(pkg.name)        // "qpdf"
  * console.log(pkg.description) // "qpdf: A content-preserving PDF document transfo..."
  * console.log(pkg.programs)    // ["qpdf"]
  * console.log(pkg.versions[0]) // "12.2.0" (latest)
@@ -32,7 +32,7 @@ export const qpdfPackage = {
   /**
    * The display name of this package.
    */
-  name: 'qpdf.sourceforge.io' as const,
+  name: 'qpdf' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -87,9 +87,9 @@ export const qpdfPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'qpdf',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) qpdf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install qpdf' as const,
 }
 
 export type QpdfPackage = typeof qpdfPackage

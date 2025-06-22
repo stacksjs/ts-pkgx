@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +kubernetes.io/minikube@1.36.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) minikube -- $SHELL -i
 ```
 
 ## Dependencies

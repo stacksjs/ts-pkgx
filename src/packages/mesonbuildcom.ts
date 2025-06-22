@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install meson`
- * @aliases `meson`
+ * @name `meson`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.meson
  * // Or access via domain
  * const samePkg = pantry.mesonbuildcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mesonbuild.com"
+ * console.log(pkg.name)        // "meson"
  * console.log(pkg.description) // "Fast and user friendly build system"
  * console.log(pkg.programs)    // ["meson"]
  * console.log(pkg.versions[0]) // "1.8.2" (latest)
@@ -32,7 +32,7 @@ export const mesonPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mesonbuild.com' as const,
+  name: 'meson' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -102,9 +102,9 @@ export const mesonPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'meson',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) meson -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install meson' as const,
 }
 
 export type MesonPackage = typeof mesonPackage

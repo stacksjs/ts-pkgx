@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rome`
- * @aliases `rome`
+ * @name `rome`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.rome
  * // Or access via domain
  * const samePkg = pantry.rometools
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rome.tools"
+ * console.log(pkg.name)        // "rome"
  * console.log(pkg.description) // "Unified developer tools for JavaScript, TypeScr..."
  * console.log(pkg.programs)    // ["rome"]
  * console.log(pkg.versions[0]) // "0.4.2" (latest)
@@ -31,7 +31,7 @@ export const romePackage = {
   /**
    * The display name of this package.
    */
-  name: 'rome.tools' as const,
+  name: 'rome' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const romePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'rome',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rome -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rome' as const,
 }
 
 export type RomePackage = typeof romePackage

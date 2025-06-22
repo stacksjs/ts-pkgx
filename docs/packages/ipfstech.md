@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) ipfs
+launchpad install ipfs
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +ipfs.tech@0.35.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) ipfs -- $SHELL -i
 ```
 
 ## Usage Examples

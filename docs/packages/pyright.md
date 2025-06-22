@@ -46,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +microsoft.com/pyright@1.1.402 -- $SHELL -i
+sh <(curl https://pkgx.sh) pyright -- $SHELL -i
 ```
 
 ## Dependencies

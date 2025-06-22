@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install paper`
- * @aliases `paper`
+ * @name `paper`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.paper
  * // Or access via domain
  * const samePkg = pantry.githubcomrrthomaslibpaper
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libpaper"
+ * console.log(pkg.name)        // "paper"
  * console.log(pkg.description) // "Library and command-line tools for configuring ..."
  * console.log(pkg.programs)    // ["paper"]
  * console.log(pkg.versions[0]) // "2.2.6" (latest)
@@ -31,7 +31,7 @@ export const paperPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libpaper' as const,
+  name: 'paper' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -74,9 +74,9 @@ export const paperPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'paper',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) paper -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install paper' as const,
 }
 
 export type PaperPackage = typeof paperPackage

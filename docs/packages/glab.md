@@ -1,11 +1,11 @@
-# cli
+# glab
 
 > Open-source GitLab command-line tool
 
 ## Package Information
 
 - **Domain**: `gitlab.com/gitlab-org/cli`
-- **Name**: `cli`
+- **Name**: `glab`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gitlab.com/gitlab-org/cli/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install glab
 ## Programs
 
 This package provides the following executable programs:
-
-- `glab`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `glab`
 
@@ -51,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gitlab.com/gitlab-org/cli@1.60.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) glab -- $SHELL -i
 ```
 
 ## Usage Examples

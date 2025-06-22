@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +s3tools.org/s3cmd@2.4.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) s3cmd -- $SHELL -i
 ```
 
 ## Dependencies

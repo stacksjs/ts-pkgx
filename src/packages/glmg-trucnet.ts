@@ -42,6 +42,8 @@ export const glmgtrucnetPackage = {
   dependencies: [] as const,
   versions: [] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +glm.g-truc.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install glm.g-truc.net' as const,
 }
 
 export type GlmgtrucnetPackage = typeof glmgtrucnetPackage

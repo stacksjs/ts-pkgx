@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install svn`
- * @aliases `svn`
+ * @name `svn`
  * @dependencies `gnu.org/gettext^0.21`, `lz4.org^1`, `openssl.org^1.1`, ... (+7 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.svn
  * // Or access via domain
  * const samePkg = pantry.apacheorgsubversion
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "subversion"
+ * console.log(pkg.name)        // "svn"
  * console.log(pkg.description) // "Version control system designed to be a better CVS"
  * console.log(pkg.programs)    // ["svn", "svnadmin", ...]
  * console.log(pkg.versions[0]) // "1.14.5" (latest)
@@ -32,7 +32,7 @@ export const svnPackage = {
   /**
    * The display name of this package.
    */
-  name: 'subversion' as const,
+  name: 'svn' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -97,9 +97,7 @@ export const svnPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'svn',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/subversion -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install svn' as const,
 }

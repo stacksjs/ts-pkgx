@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +dest-unreach.org/socat@1.8.0.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) socat -- $SHELL -i
 ```
 
 ## Dependencies

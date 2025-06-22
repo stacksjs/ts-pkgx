@@ -12,7 +12,7 @@ Mirror of CMake upstream repository
 
 **Programs**: cmake, ccmake, cpack, ctest
 
-**Install**: `launchpad install +cmake.org -- $SHELL -i`
+**Install**: `launchpad install cmake.org`
 
 ---
 
@@ -32,7 +32,7 @@ Java-based project management
 
 **Programs**: mvn, mvnDebug, mvnyjp
 
-**Install**: `launchpad install +maven.apache.org -- $SHELL -i`
+**Install**: `launchpad install mvn`
 
 ---
 
@@ -52,7 +52,7 @@ the package manager for JavaScript
 
 **Programs**: npm, npx
 
-**Install**: `launchpad install +npmjs.com -- $SHELL -i`
+**Install**: `launchpad install npmjs.com`
 
 ---
 
@@ -62,7 +62,7 @@ The Python package installer
 
 **Programs**: pip, pip3.8, pip3.9, pip3.10, pip3.11
 
-**Install**: `launchpad install +pip.pypa.io -- $SHELL -i`
+**Install**: `launchpad install pip`
 
 ---
 
@@ -76,13 +76,13 @@ Python Development Workflow for Humans.
 
 ---
 
-### [pnpm.io](../packages/pnpmio.md) (pnp)
+### [pnpm.io](../packages/pnpmio.md) (pnpm)
 
 Fast, disk space efficient package manager
 
 **Programs**: pnpm, pnpx
 
-**Install**: `launchpad install +pnpm.io -- $SHELL -i`
+**Install**: `launchpad install pnpm`
 
 ---
 
@@ -92,7 +92,7 @@ Powerful, clean, object-oriented scripting language
 
 **Programs**: bundle, bundler, gem
 
-**Install**: `launchpad install +rubygems.org -- $SHELL -i`
+**Install**: `launchpad install rubygems.org`
 
 ---
 
@@ -102,7 +102,7 @@ Powerful, clean, object-oriented scripting language
 
 **Programs**: yarn, yarnpkg
 
-**Install**: `launchpad install +yarnpkg.com -- $SHELL -i`
+**Install**: `launchpad install yarn`
 
 ---
 

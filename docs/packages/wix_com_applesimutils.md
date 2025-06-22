@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +wix.com/applesimutils@0.9.12 -- $SHELL -i
+sh <(curl https://pkgx.sh) applesimutils -- $SHELL -i
 ```
 
 ## Usage Examples

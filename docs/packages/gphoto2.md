@@ -1,11 +1,11 @@
-# libgphoto2
+# gphoto2
 
 > The libgphoto2 camera access and control library.
 
 ## Package Information
 
 - **Domain**: `gphoto.org/libgphoto2`
-- **Name**: `libgphoto2`
+- **Name**: `gphoto2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gphoto.org/libgphoto2/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gphoto.org/libgphoto2 -- $SHELL -i
+launchpad install gphoto2
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `gphoto2-config`
 - `gphoto2-port-config`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `gphoto2`
 
 ## Available Versions
 

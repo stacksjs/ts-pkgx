@@ -32,7 +32,7 @@ The official Vim repository
 
 **Programs**: vim, vi
 
-**Install**: `launchpad install +vim.org -- $SHELL -i`
+**Install**: `launchpad install vim.org`
 
 ---
 

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install docker-credential-ecr-login`
- * @aliases `docker-credential-ecr-login`
+ * @name `docker-credential-ecr-login`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.dockercredentialecrlogin
  * // Or access via domain
  * const samePkg = pantry.githubcomawslabsamazonecrcredentialhelper
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "amazon-ecr-credential-helper"
+ * console.log(pkg.name)        // "docker-credential-ecr-login"
  * console.log(pkg.description) // "Automatically gets credentials for Amazon ECR o..."
  * console.log(pkg.programs)    // ["docker-credential-ecr-login"]
  * console.log(pkg.versions[0]) // "0.10.0" (latest)
@@ -31,7 +31,7 @@ export const dockercredentialecrloginPackage = {
   /**
    * The display name of this package.
    */
-  name: 'amazon-ecr-credential-helper' as const,
+  name: 'docker-credential-ecr-login' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -72,9 +72,9 @@ export const dockercredentialecrloginPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'docker-credential-ecr-login',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) docker-credential-ecr-login -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docker-credential-ecr-login' as const,
 }
 
 export type DockercredentialecrloginPackage = typeof dockercredentialecrloginPackage

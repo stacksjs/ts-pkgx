@@ -6,20 +6,20 @@
  * @version `3.0.10` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnu.org/guile -- $SHELL -i`
- * @aliases `guil`
+ * @install `launchpad install guil`
+ * @name `guil`
  * @dependencies `hboehm.info/gc^8`, `gnu.org/gmp^6`, `gnu.org/libtool^2`, ... (+6 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.guil
  * // Or access via domain
  * const samePkg = pantry.gnuorgguile
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "guile"
+ * console.log(pkg.name)        // "guil"
  * console.log(pkg.description) // "GNU Ubiquitous Intelligent Language for Extensions"
  * console.log(pkg.programs)    // ["guild", "guile", ...]
  * console.log(pkg.versions[0]) // "3.0.10" (latest)
@@ -32,7 +32,7 @@ export const guilPackage = {
   /**
    * The display name of this package.
    */
-  name: 'guile' as const,
+  name: 'guil' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const guilPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnu.org/guile -- $SHELL -i' as const,
+  installCommand: 'launchpad install guil' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -88,9 +88,9 @@ export const guilPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'guil',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/guile -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install guil' as const,
 }
 
 export type GuilPackage = typeof guilPackage

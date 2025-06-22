@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pdm`
- * @aliases `pdm`
+ * @name `pdm`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pdm
  * // Or access via domain
  * const samePkg = pantry.pdmfmingdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pdm.fming.dev"
+ * console.log(pkg.name)        // "pdm"
  * console.log(pkg.description) // "A modern Python package and dependency manager ..."
  * console.log(pkg.programs)    // ["pdm"]
  * console.log(pkg.versions[0]) // "2.25.3" (latest)
@@ -32,7 +32,7 @@ export const pdmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pdm.fming.dev' as const,
+  name: 'pdm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -143,9 +143,9 @@ export const pdmPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pdm',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pdm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pdm' as const,
 }
 
 export type PdmPackage = typeof pdmPackage

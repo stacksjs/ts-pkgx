@@ -69,6 +69,8 @@ export const gronPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gron -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gron' as const,
 }
 
 export type GronPackage = typeof gronPackage

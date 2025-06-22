@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ord`
- * @aliases `ord`
+ * @name `ord`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ord
  * // Or access via domain
  * const samePkg = pantry.ordinalscom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ordinals.com"
+ * console.log(pkg.name)        // "ord"
  * console.log(pkg.description) // "Index, block explorer, and command-line wallet"
  * console.log(pkg.programs)    // ["ord"]
  * console.log(pkg.versions[0]) // "0.6.1" (latest)
@@ -31,7 +31,7 @@ export const ordPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ordinals.com' as const,
+  name: 'ord' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -71,9 +71,9 @@ export const ordPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ord',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ord -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ord' as const,
 }
 
 export type OrdPackage = typeof ordPackage

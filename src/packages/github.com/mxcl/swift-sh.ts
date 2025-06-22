@@ -70,6 +70,8 @@ export const swiftshPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) swift-sh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install swift-sh' as const,
 }
 
 export type SwiftshPackage = typeof swiftshPackage

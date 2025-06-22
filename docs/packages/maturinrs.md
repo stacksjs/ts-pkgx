@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) maturin
+launchpad install maturin
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +maturin.rs@1.8.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) maturin -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -6,7 +6,7 @@
  * @version `0.21.2` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +docutils.org -- $SHELL -i`
+ * @install `launchpad install docutils.org`
  * @dependencies `pkgx.sh^1`
  *
  * @example
@@ -43,7 +43,7 @@ export const docutilsorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +docutils.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install docutils.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,6 +82,8 @@ export const docutilsorgPackage = {
     '0.19.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +docutils.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docutils.org' as const,
 }
 
 export type DocutilsorgPackage = typeof docutilsorgPackage

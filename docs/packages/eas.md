@@ -1,11 +1,11 @@
-# eas-cli
+# eas
 
 > Fastest way to build, submit, and update iOS and Android apps
 
 ## Package Information
 
 - **Domain**: `expo.dev/eas-cli`
-- **Name**: `eas-cli`
+- **Name**: `eas`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/expo.dev/eas-cli/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install eas
 ## Programs
 
 This package provides the following executable programs:
-
-- `eas`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `eas`
 
@@ -70,7 +64,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +expo.dev/eas-cli@16.12.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) eas -- $SHELL -i
 ```
 
 ## Dependencies

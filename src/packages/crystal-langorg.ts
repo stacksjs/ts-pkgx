@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crystal`
- * @aliases `crystal`
+ * @name `crystal`
  * @dependencies `hboehm.info/gc^8`, `gnu.org/gmp^6`, `libevent.org^2`, ... (+7 more)
  * @companions `crystal-lang.org/shards`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.crystal
  * // Or access via domain
  * const samePkg = pantry.crystallangorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "crystal-lang.org"
+ * console.log(pkg.name)        // "crystal"
  * console.log(pkg.description) // "Fast and statically typed, compiled language wi..."
  * console.log(pkg.programs)    // ["crystal"]
  * console.log(pkg.versions[0]) // "1.16.3" (latest)
@@ -33,7 +33,7 @@ export const crystalPackage = {
   /**
    * The display name of this package.
    */
-  name: 'crystal-lang.org' as const,
+  name: 'crystal' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -109,9 +109,9 @@ export const crystalPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'crystal',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) crystal -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crystal' as const,
 }
 
 export type CrystalPackage = typeof crystalPackage

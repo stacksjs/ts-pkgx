@@ -5,7 +5,7 @@
  * @version `3.5.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +networkx.org -- $SHELL -i`
+ * @install `launchpad install networkx.org`
  * @dependencies `python.org>=3.11`
  *
  * @example
@@ -41,7 +41,7 @@ export const networkxorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +networkx.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install networkx.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -64,6 +64,8 @@ export const networkxorgPackage = {
     '3.2.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +networkx.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install networkx.org' as const,
 }
 
 export type NetworkxorgPackage = typeof networkxorgPackage

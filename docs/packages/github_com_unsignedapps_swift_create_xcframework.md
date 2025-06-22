@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/unsignedapps/swift-create-xcframework@2.3.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) swift-create-xcframework -- $SHELL -i
 ```
 
 ## Usage Examples

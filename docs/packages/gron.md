@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/tomnomnom/gron@0.7.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) gron -- $SHELL -i
 ```
 
 ## Usage Examples

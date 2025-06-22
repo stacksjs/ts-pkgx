@@ -6,20 +6,20 @@
  * @version `8.1.2` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +valkey.io -- $SHELL -i`
- * @aliases `valkey`
+ * @install `launchpad install valkey`
+ * @name `valkey`
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.valkey
  * // Or access via domain
  * const samePkg = pantry.valkeyio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "valkey.io"
+ * console.log(pkg.name)        // "valkey"
  * console.log(pkg.description) // "A flexible distributed key-value datastore that..."
  * console.log(pkg.programs)    // ["valkey-server", "valkey-cli", ...]
  * console.log(pkg.versions[0]) // "8.1.2" (latest)
@@ -32,7 +32,7 @@ export const valkeyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'valkey.io' as const,
+  name: 'valkey' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const valkeyPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +valkey.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install valkey' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -88,9 +88,9 @@ export const valkeyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'valkey',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +valkey.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install valkey' as const,
 }
 
 export type ValkeyPackage = typeof valkeyPackage

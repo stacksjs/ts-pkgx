@@ -1,11 +1,11 @@
-# endoflife.date
+# eol
 
 > CLI to show end-of-life dates for a number of products.
 
 ## Package Information
 
 - **Domain**: `endoflife.date`
-- **Name**: `endoflife.date`
+- **Name**: `eol`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/endoflife.date/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install eol
 ## Programs
 
 This package provides the following executable programs:
-
-- `eol`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `eol`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +endoflife.date@0.22.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) eol -- $SHELL -i
 ```
 
 ## Dependencies

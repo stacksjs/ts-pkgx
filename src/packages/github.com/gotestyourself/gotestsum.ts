@@ -73,6 +73,8 @@ export const gotestsumPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gotestsum -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gotestsum' as const,
 }
 
 export type GotestsumPackage = typeof gotestsumPackage

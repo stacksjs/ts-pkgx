@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/kubernetes-sigs/aws-iam-authenticator@0.7.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) aws-iam-authenticator -- $SHELL -i
 ```
 
 ## Usage Examples

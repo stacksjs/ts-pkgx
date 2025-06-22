@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +projectdiscovery.io/nuclei@3.4.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) nuclei -- $SHELL -i
 ```
 
 ## Usage Examples

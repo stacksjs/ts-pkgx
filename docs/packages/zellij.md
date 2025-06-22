@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/zellij@0.42.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) zellij -- $SHELL -i
 ```
 
 ## Dependencies

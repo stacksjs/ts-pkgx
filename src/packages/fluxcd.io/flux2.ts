@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install flux`
- * @aliases `flux`
+ * @name `flux`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.flux
  * // Or access via domain
  * const samePkg = pantry.fluxcdioflux2
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "flux2"
+ * console.log(pkg.name)        // "flux"
  * console.log(pkg.description) // "Open and extensible continuous delivery solutio..."
  * console.log(pkg.programs)    // ["flux"]
  * console.log(pkg.versions[0]) // "2.6.2" (latest)
@@ -31,7 +31,7 @@ export const fluxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'flux2' as const,
+  name: 'flux' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,9 @@ export const fluxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'flux',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) flux -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install flux' as const,
 }
 
 export type FluxPackage = typeof fluxPackage

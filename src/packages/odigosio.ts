@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install odigos`
- * @aliases `odigos`
+ * @name `odigos`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.odigos
  * // Or access via domain
  * const samePkg = pantry.odigosio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "odigos.io"
+ * console.log(pkg.name)        // "odigos"
  * console.log(pkg.description) // "Distributed tracing without code changes. 🚀 In..."
  * console.log(pkg.programs)    // ["odigos"]
  * console.log(pkg.versions[0]) // "1.0.199" (latest)
@@ -31,7 +31,7 @@ export const odigosPackage = {
   /**
    * The display name of this package.
    */
-  name: 'odigos.io' as const,
+  name: 'odigos' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -249,9 +249,9 @@ export const odigosPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'odigos',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) odigos -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install odigos' as const,
 }
 
 export type OdigosPackage = typeof odigosPackage

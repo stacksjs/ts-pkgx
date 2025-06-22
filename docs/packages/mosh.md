@@ -1,11 +1,11 @@
-# mosh.org
+# mosh
 
 > Remote terminal application
 
 ## Package Information
 
 - **Domain**: `mosh.org`
-- **Name**: `mosh.org`
+- **Name**: `mosh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mosh.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mosh.org -- $SHELL -i
+launchpad install mosh
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `mosh-client`
 - `mosh-server`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `mosh`
 
 ## Available Versions
 

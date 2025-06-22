@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install hasura`
- * @aliases `hasura`
+ * @name `hasura`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.hasura
  * // Or access via domain
  * const samePkg = pantry.hasuraio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "hasura.io"
+ * console.log(pkg.name)        // "hasura"
  * console.log(pkg.description) // "Blazing fast, instant realtime GraphQL APIs on ..."
  * console.log(pkg.programs)    // ["hasura"]
  * console.log(pkg.versions[0]) // "2.48.1" (latest)
@@ -31,7 +31,7 @@ export const hasuraPackage = {
   /**
    * The display name of this package.
    */
-  name: 'hasura.io' as const,
+  name: 'hasura' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -118,9 +118,9 @@ export const hasuraPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'hasura',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hasura -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hasura' as const,
 }
 
 export type HasuraPackage = typeof hasuraPackage

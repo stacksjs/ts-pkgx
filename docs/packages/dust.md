@@ -1,11 +1,11 @@
-# du-dust
+# dust
 
 > A more intuitive version of du in rust
 
 ## Package Information
 
 - **Domain**: `crates.io/du-dust`
-- **Name**: `du-dust`
+- **Name**: `dust`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/du-dust/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install dust
 ## Programs
 
 This package provides the following executable programs:
-
-- `dust`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `dust`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/du-dust@1.2.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) dust -- $SHELL -i
 ```
 
 ## Usage Examples

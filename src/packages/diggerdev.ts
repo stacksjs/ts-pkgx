@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install digger`
- * @aliases `digger`
+ * @name `digger`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.digger
  * // Or access via domain
  * const samePkg = pantry.diggerdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "digger.dev"
+ * console.log(pkg.name)        // "digger"
  * console.log(pkg.description) // "Digger is an open source IaC orchestration tool..."
  * console.log(pkg.programs)    // ["digger"]
  * console.log(pkg.versions[0]) // "0.6.106" (latest)
@@ -31,7 +31,7 @@ export const diggerPackage = {
   /**
    * The display name of this package.
    */
-  name: 'digger.dev' as const,
+  name: 'digger' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -257,9 +257,9 @@ export const diggerPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'digger',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) digger -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install digger' as const,
 }
 
 export type DiggerPackage = typeof diggerPackage

@@ -1,11 +1,11 @@
-# firebase-tools
+# firebase
 
 > The Firebase Command Line Tools
 
 ## Package Information
 
 - **Domain**: `google.com/firebase-tools`
-- **Name**: `firebase-tools`
+- **Name**: `firebase`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/firebase-tools/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install firebase
 ## Programs
 
 This package provides the following executable programs:
-
-- `firebase`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `firebase`
 
@@ -62,7 +56,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +google.com/firebase-tools@14.8.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) firebase -- $SHELL -i
 ```
 
 ## Dependencies

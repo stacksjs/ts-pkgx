@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install neon-config`
- * @aliases `neon-config`
+ * @name `neon-config`
  * @dependencies `openssl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.neonconfig
  * // Or access via domain
  * const samePkg = pantry.notrojgithubioneon
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "neon"
+ * console.log(pkg.name)        // "neon-config"
  * console.log(pkg.description) // "neon - an HTTP/1.1 and WebDAV client library wi..."
  * console.log(pkg.programs)    // ["neon-config"]
  * console.log(pkg.versions[0]) // "0.34.2" (latest)
@@ -32,7 +32,7 @@ export const neonconfigPackage = {
   /**
    * The display name of this package.
    */
-  name: 'neon' as const,
+  name: 'neon-config' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,9 @@ export const neonconfigPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'neon-config',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) neon-config -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install neon-config' as const,
 }
 
 export type NeonconfigPackage = typeof neonconfigPackage

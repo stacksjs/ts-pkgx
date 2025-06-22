@@ -69,6 +69,8 @@ export const complexityPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) complexity -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install complexity' as const,
 }
 
 export type ComplexityPackage = typeof complexityPackage

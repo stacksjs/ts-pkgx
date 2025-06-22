@@ -84,6 +84,8 @@ export const gitfilterrepoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-filter-repo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-filter-repo' as const,
 }
 
 export type GitfilterrepoPackage = typeof gitfilterrepoPackage

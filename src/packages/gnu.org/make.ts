@@ -68,6 +68,8 @@ export const makePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) make -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install make' as const,
 }
 
 export type MakePackage = typeof makePackage

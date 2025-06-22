@@ -1,12 +1,12 @@
 /**
- * **netcdf** - Official GitHub repository for netCDF-C libraries and utilities.
+ * **unidata.ucar.edu/netcdf** - Official GitHub repository for netCDF-C libraries and utilities.
  *
  * @domain `unidata.ucar.edu/netcdf`
  * @programs `nc-config`, `nccopy`, `ncdump`, `ncgen`, `ncgen3`
  * @version `4.9.3` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +unidata.ucar.edu/netcdf -- $SHELL -i`
+ * @install `launchpad install unidata.ucar.edu/netcdf`
  * @dependencies `hdfgroup.org/HDF5`, `sourceware.org/bzip2`, `curl.se`, ... (+2 more)
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.unidataucaredunetcdf
- * console.log(pkg.name)        // "netcdf"
+ * console.log(pkg.name)        // "unidata.ucar.edu/netcdf"
  * console.log(pkg.description) // "Official GitHub repository for netCDF-C librari..."
  * console.log(pkg.programs)    // ["nc-config", "nccopy", ...]
  * console.log(pkg.versions[0]) // "4.9.3" (latest)
@@ -27,7 +27,7 @@ export const unidataucaredunetcdfPackage = {
   /**
    * The display name of this package.
    */
-  name: 'netcdf' as const,
+  name: 'unidata.ucar.edu/netcdf' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const unidataucaredunetcdfPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +unidata.ucar.edu/netcdf -- $SHELL -i' as const,
+  installCommand: 'launchpad install unidata.ucar.edu/netcdf' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,6 +76,8 @@ export const unidataucaredunetcdfPackage = {
     '4.9.2',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +unidata.ucar.edu/netcdf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install unidata.ucar.edu/netcdf' as const,
 }
 
 export type UnidataucaredunetcdfPackage = typeof unidataucaredunetcdfPackage

@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/fsrx@1.0.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) fsrx -- $SHELL -i
 ```
 
 ## Usage Examples

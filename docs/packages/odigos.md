@@ -1,11 +1,11 @@
-# odigos.io
+# odigos
 
 > Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetry and eBPF
 
 ## Package Information
 
 - **Domain**: `odigos.io`
-- **Name**: `odigos.io`
+- **Name**: `odigos`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/odigos.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install odigos
 ## Programs
 
 This package provides the following executable programs:
-
-- `odigos`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `odigos`
 
@@ -79,7 +73,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +odigos.io@1.0.199 -- $SHELL -i
+sh <(curl https://pkgx.sh) odigos -- $SHELL -i
 ```
 
 ## Usage Examples

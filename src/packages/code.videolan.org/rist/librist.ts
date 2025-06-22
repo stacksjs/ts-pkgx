@@ -6,19 +6,19 @@
  * @version `0.2.11` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +code.videolan.org/rist/librist -- $SHELL -i`
- * @aliases `rist`
+ * @install `launchpad install rist`
+ * @name `rist`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.rist
  * // Or access via domain
  * const samePkg = pantry.codevideolanorgristlibrist
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "librist"
+ * console.log(pkg.name)        // "rist"
  * console.log(pkg.description) // "Reliable Internet Stream Transport (RIST)"
  * console.log(pkg.programs)    // ["rist2rist", "ristreceiver", ...]
  * console.log(pkg.versions[0]) // "0.2.11" (latest)
@@ -31,7 +31,7 @@ export const ristPackage = {
   /**
    * The display name of this package.
    */
-  name: 'librist' as const,
+  name: 'rist' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const ristPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +code.videolan.org/rist/librist -- $SHELL -i' as const,
+  installCommand: 'launchpad install rist' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,9 +73,9 @@ export const ristPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'rist',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +code.videolan.org/rist/librist -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rist' as const,
 }
 
 export type RistPackage = typeof ristPackage

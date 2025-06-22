@@ -1,11 +1,11 @@
-# TTS
+# github.com/coqui-ai/TTS
 
 > 🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and production
 
 ## Package Information
 
 - **Domain**: `github.com/coqui-ai/TTS`
-- **Name**: `TTS`
+- **Name**: `github.com/coqui-ai/TTS`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/coqui-ai/TTS/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/coqui-ai/TTS -- $SHELL -i
+launchpad install github.com/coqui-ai/TTS
 ```
 
 ## Programs

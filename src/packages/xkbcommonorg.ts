@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xkbcli`
- * @aliases `xkbcli`
+ * @name `xkbcli`
  * @dependencies `x.org/x11`, `x.org/xcb`, `freedesktop.org/XKeyboardConfig`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.xkbcli
  * // Or access via domain
  * const samePkg = pantry.xkbcommonorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "xkbcommon.org"
+ * console.log(pkg.name)        // "xkbcli"
  * console.log(pkg.description) // "keymap handling library for toolkits and window..."
  * console.log(pkg.programs)    // ["xkbcli"]
  * console.log(pkg.versions[0]) // "1.10.0" (latest)
@@ -32,7 +32,7 @@ export const xkbcliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xkbcommon.org' as const,
+  name: 'xkbcli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -86,9 +86,9 @@ export const xkbcliPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'xkbcli',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xkbcli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xkbcli' as const,
 }
 
 export type XkbcliPackage = typeof xkbcliPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install lychee`
- * @aliases `lychee`
+ * @name `lychee`
  * @dependencies `openssl.org>=1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.lychee
  * // Or access via domain
  * const samePkg = pantry.lycheeclirs
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "lychee.cli.rs"
+ * console.log(pkg.name)        // "lychee"
  * console.log(pkg.description) // "⚡ Fast, async, stream-based link checker writte..."
  * console.log(pkg.programs)    // ["lychee"]
  * console.log(pkg.versions[0]) // "0.15.1" (latest)
@@ -32,7 +32,7 @@ export const lycheePackage = {
   /**
    * The display name of this package.
    */
-  name: 'lychee.cli.rs' as const,
+  name: 'lychee' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,9 @@ export const lycheePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'lychee',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) lychee -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lychee' as const,
 }
 
 export type LycheePackage = typeof lycheePackage

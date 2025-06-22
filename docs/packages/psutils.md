@@ -1,11 +1,11 @@
-# psutils
+# github.com/rrthomas/psutils
 
 > Utilities for manipulating PostScript documents
 
 ## Package Information
 
 - **Domain**: `github.com/rrthomas/psutils`
-- **Name**: `psutils`
+- **Name**: `github.com/rrthomas/psutils`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/rrthomas/psutils/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/rrthomas/psutils -- $SHELL -i
+launchpad install github.com/rrthomas/psutils
 ```
 
 ## Programs

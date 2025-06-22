@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/everywall/ladder@0.0.21 -- $SHELL -i
+sh <(curl https://pkgx.sh) ladder -- $SHELL -i
 ```
 
 ## Usage Examples

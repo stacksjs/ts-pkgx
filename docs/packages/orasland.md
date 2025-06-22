@@ -1,11 +1,11 @@
-# oras.land
+# oras
 
 > OCI registry client - managing content like artifacts, images, packages
 
 ## Package Information
 
 - **Domain**: `oras.land`
-- **Name**: `oras.land`
+- **Name**: `oras`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/oras.land/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install oras.land
+launchpad install oras
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `oras`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `oras`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +oras.land@1.2.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) oras -- $SHELL -i
 ```
 
 ## Usage Examples

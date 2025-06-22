@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install docker`
- * @aliases `docker`, `docker/cli`
+ * @name `docker/cli`
+ * @aliases `docker`
  *
  * @example
  * ```typescript
@@ -18,7 +19,7 @@
  * // Or access via domain
  * const samePkg = pantry.dockercomcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cli"
+ * console.log(pkg.name)        // "docker/cli"
  * console.log(pkg.description) // "Pack, ship and run any application as a lightwe..."
  * console.log(pkg.programs)    // ["docker"]
  * console.log(pkg.versions[0]) // "28.2.2" (latest)
@@ -31,7 +32,7 @@ export const dockerPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cli' as const,
+  name: 'docker/cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -122,8 +123,9 @@ export const dockerPackage = {
    */
   aliases: [
     'docker',
-    'docker/cli',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) docker -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docker' as const,
 }
 
 export type DockerPackage = typeof dockerPackage

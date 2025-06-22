@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install difft`
- * @aliases `difft`
+ * @name `difft`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.difft
  * // Or access via domain
  * const samePkg = pantry.wilfredmeukdifftastic
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "difftastic"
+ * console.log(pkg.name)        // "difft"
  * console.log(pkg.description) // "a structural diff that understands syntax 🟥🟩"
  * console.log(pkg.programs)    // ["difft"]
  * console.log(pkg.versions[0]) // "0.64.0" (latest)
@@ -31,7 +31,7 @@ export const difftPackage = {
   /**
    * The display name of this package.
    */
-  name: 'difftastic' as const,
+  name: 'difft' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -76,9 +76,9 @@ export const difftPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'difft',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) difft -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install difft' as const,
 }
 
 export type DifftPackage = typeof difftPackage

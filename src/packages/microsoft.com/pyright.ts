@@ -124,6 +124,8 @@ export const pyrightPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pyright -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pyright' as const,
 }
 
 export type PyrightPackage = typeof pyrightPackage

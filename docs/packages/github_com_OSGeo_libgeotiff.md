@@ -1,11 +1,11 @@
-# libgeotiff
+# github.com/OSGeo/libgeotiff
 
 > Official repository of the libgeotiff project
 
 ## Package Information
 
 - **Domain**: `github.com/OSGeo/libgeotiff`
-- **Name**: `libgeotiff`
+- **Name**: `github.com/OSGeo/libgeotiff`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/OSGeo/libgeotiff/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/OSGeo/libgeotiff -- $SHELL -i
+launchpad install github.com/OSGeo/libgeotiff
 ```
 
 ## Programs

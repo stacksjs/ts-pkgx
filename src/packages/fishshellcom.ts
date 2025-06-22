@@ -6,20 +6,20 @@
  * @version `4.0.2` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +fishshell.com -- $SHELL -i`
- * @aliases `fish`
+ * @install `launchpad install fish`
+ * @name `fish`
  * @dependencies `gnu.org/gettext`, `invisible-island.net/ncurses>=6.0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.fish
  * // Or access via domain
  * const samePkg = pantry.fishshellcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "fishshell.com"
+ * console.log(pkg.name)        // "fish"
  * console.log(pkg.description) // "User-friendly command-line shell for UNIX-like ..."
  * console.log(pkg.programs)    // ["fish", "fish_indent", ...]
  * console.log(pkg.versions[0]) // "4.0.2" (latest)
@@ -32,7 +32,7 @@ export const fishPackage = {
   /**
    * The display name of this package.
    */
-  name: 'fishshell.com' as const,
+  name: 'fish' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const fishPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +fishshell.com -- $SHELL -i' as const,
+  installCommand: 'launchpad install fish' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -88,9 +88,9 @@ export const fishPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'fish',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fishshell.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fish' as const,
 }
 
 export type FishPackage = typeof fishPackage

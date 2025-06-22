@@ -1,11 +1,11 @@
-# xpra.org
+# xpra
 
 > Persistent remote applications for X11; screen sharing for X11, MacOS and MSWindows.
 
 ## Package Information
 
 - **Domain**: `xpra.org`
-- **Name**: `xpra.org`
+- **Name**: `xpra`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xpra.org/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install xpra
 ## Programs
 
 This package provides the following executable programs:
-
-- `xpra`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `xpra`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +xpra.org@6.3.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) xpra -- $SHELL -i
 ```
 
 ## Dependencies

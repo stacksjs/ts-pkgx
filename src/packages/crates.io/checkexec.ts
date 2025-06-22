@@ -69,6 +69,8 @@ export const checkexecPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) checkexec -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install checkexec' as const,
 }
 
 export type CheckexecPackage = typeof checkexecPackage

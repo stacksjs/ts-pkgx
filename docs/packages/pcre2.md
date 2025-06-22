@@ -1,11 +1,11 @@
-# v2
+# pcre2
 
 > Perl compatible regular expressions library with a new API
 
 ## Package Information
 
 - **Domain**: `pcre.org/v2`
-- **Name**: `v2`
+- **Name**: `pcre2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pcre.org/v2/package.yml)
 
@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `pcre2-config`
 - `pcre2grep`
 - `pcre2test`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `pcre2`
 
 ## Available Versions
 

@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/dduan/tre@0.4.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) tre -- $SHELL -i
 ```
 
 ## Dependencies

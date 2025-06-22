@@ -69,6 +69,8 @@ export const ebPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) eb -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install eb' as const,
 }
 
 export type EbPackage = typeof ebPackage

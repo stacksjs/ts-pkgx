@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install shellcheck`
- * @aliases `shellcheck`
+ * @name `shellcheck`
  * @dependencies `sourceware.org/libffi@3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.shellcheck
  * // Or access via domain
  * const samePkg = pantry.shellchecknet
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "shellcheck.net"
+ * console.log(pkg.name)        // "shellcheck"
  * console.log(pkg.description) // "ShellCheck, a static analysis tool for shell sc..."
  * console.log(pkg.programs)    // ["shellcheck"]
  * console.log(pkg.versions[0]) // "0.10.0" (latest)
@@ -32,7 +32,7 @@ export const shellcheckPackage = {
   /**
    * The display name of this package.
    */
-  name: 'shellcheck.net' as const,
+  name: 'shellcheck' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const shellcheckPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'shellcheck',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) shellcheck -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install shellcheck' as const,
 }
 
 export type ShellcheckPackage = typeof shellcheckPackage

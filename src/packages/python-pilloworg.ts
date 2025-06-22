@@ -5,7 +5,7 @@
  * @version `11.2.1` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +python-pillow.org -- $SHELL -i`
+ * @install `launchpad install python-pillow.org`
  * @dependencies `libjpeg-turbo.org^2`, `pngquant.org/lib^4`, `simplesystems.org/libtiff^4`, ... (+7 more)
  *
  * @example
@@ -41,7 +41,7 @@ export const pythonpilloworgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +python-pillow.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install python-pillow.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -73,6 +73,8 @@ export const pythonpilloworgPackage = {
     '10.2.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +python-pillow.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install python-pillow.org' as const,
 }
 
 export type PythonpilloworgPackage = typeof pythonpilloworgPackage

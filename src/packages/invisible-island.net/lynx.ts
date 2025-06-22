@@ -77,6 +77,8 @@ export const lynxPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) lynx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lynx' as const,
 }
 
 export type LynxPackage = typeof lynxPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install youtube-dl`
- * @aliases `youtube-dl`
+ * @name `youtube-dl`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.youtubedl
  * // Or access via domain
  * const samePkg = pantry.youtubedlorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "youtube-dl.org"
+ * console.log(pkg.name)        // "youtube-dl"
  * console.log(pkg.description) // "Command-line program to download videos from Yo..."
  * console.log(pkg.programs)    // ["youtube-dl"]
  * console.log(pkg.versions[0]) // "2023.8.4" (latest)
@@ -32,7 +32,7 @@ export const youtubedlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'youtube-dl.org' as const,
+  name: 'youtube-dl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -76,9 +76,9 @@ export const youtubedlPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'youtube-dl',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) youtube-dl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install youtube-dl' as const,
 }
 
 export type YoutubedlPackage = typeof youtubedlPackage

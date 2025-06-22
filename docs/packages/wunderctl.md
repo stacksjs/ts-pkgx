@@ -1,11 +1,11 @@
-# wundergraph.com
+# wunderctl
 
 > WunderGraph is a Backend for Frontend Framework to optimize frontend, fullstack and backend developer workflows through API Composition.
 
 ## Package Information
 
 - **Domain**: `wundergraph.com`
-- **Name**: `wundergraph.com`
+- **Name**: `wunderctl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wundergraph.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install wunderctl
 ## Programs
 
 This package provides the following executable programs:
-
-- `wunderctl`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `wunderctl`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +wundergraph.com@0.181.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) wunderctl -- $SHELL -i
 ```
 
 ## Usage Examples

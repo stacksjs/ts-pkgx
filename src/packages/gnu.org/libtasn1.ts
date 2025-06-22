@@ -6,19 +6,19 @@
  * @version `4.20.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnu.org/libtasn1 -- $SHELL -i`
- * @aliases `asn1`
+ * @install `launchpad install asn1`
+ * @name `asn1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.asn1
  * // Or access via domain
  * const samePkg = pantry.gnuorglibtasn1
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libtasn1"
+ * console.log(pkg.name)        // "asn1"
  * console.log(pkg.description) // "ASN.1 structure parser library"
  * console.log(pkg.programs)    // ["asn1Coding", "asn1Decoding", ...]
  * console.log(pkg.versions[0]) // "4.20.0" (latest)
@@ -31,7 +31,7 @@ export const asn1Package = {
   /**
    * The display name of this package.
    */
-  name: 'libtasn1' as const,
+  name: 'asn1' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const asn1Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnu.org/libtasn1 -- $SHELL -i' as const,
+  installCommand: 'launchpad install asn1' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,9 +71,9 @@ export const asn1Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'asn1',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/libtasn1 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install asn1' as const,
 }
 
 export type Asn1Package = typeof asn1Package

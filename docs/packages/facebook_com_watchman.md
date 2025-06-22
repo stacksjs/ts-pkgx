@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +facebook.com/watchman -- $SHELL -i
+launchpad install watchman
 ```
 
 ## Programs

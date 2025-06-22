@@ -76,6 +76,8 @@ export const omekasyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) omekasy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install omekasy' as const,
 }
 
 export type OmekasyPackage = typeof omekasyPackage

@@ -1,11 +1,11 @@
-# lm-sensors
+# sensors
 
 > Tools for monitoring the temperatures, voltages, and fans
 
 ## Package Information
 
 - **Domain**: `github.com/lm-sensors/lm-sensors`
-- **Name**: `lm-sensors`
+- **Name**: `sensors`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/lm-sensors/lm-sensors/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install sensors
 ## Programs
 
 This package provides the following executable programs:
-
-- `sensors`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `sensors`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/lm-sensors/lm-sensors@3.6.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) sensors -- $SHELL -i
 ```
 
 ## Usage Examples

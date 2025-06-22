@@ -1,11 +1,11 @@
-# sniffnet.net
+# sniffnet
 
 > Cross-platform application to monitor your network traffic
 
 ## Package Information
 
 - **Domain**: `sniffnet.net`
-- **Name**: `sniffnet.net`
+- **Name**: `sniffnet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sniffnet.net/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install sniffnet.net
+launchpad install sniffnet
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `sniffnet`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `sniffnet`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +sniffnet.net@1.3.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) sniffnet -- $SHELL -i
 ```
 
 ## Dependencies

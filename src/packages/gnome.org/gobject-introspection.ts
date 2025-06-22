@@ -6,20 +6,20 @@
  * @version `1.84.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnome.org/gobject-introspection -- $SHELL -i`
- * @aliases `g-ir`
+ * @install `launchpad install g-ir`
+ * @name `g-ir`
  * @dependencies `gnome.org/glib@2`, `sourceware.org/libffi@3`, `gnu.org/bison^3 #NOTE macOS provides v2`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gir
  * // Or access via domain
  * const samePkg = pantry.gnomeorggobjectintrospection
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gobject-introspection"
+ * console.log(pkg.name)        // "g-ir"
  * console.log(pkg.description) // "Generate introspection data for GObject libraries"
  * console.log(pkg.programs)    // ["g-ir-annotation-tool", "g-ir-compiler", ...]
  * console.log(pkg.versions[0]) // "1.84.0" (latest)
@@ -32,7 +32,7 @@ export const girPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gobject-introspection' as const,
+  name: 'g-ir' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const girPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnome.org/gobject-introspection -- $SHELL -i' as const,
+  installCommand: 'launchpad install g-ir' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -87,9 +87,9 @@ export const girPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'g-ir',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/gobject-introspection -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install g-ir' as const,
 }
 
 export type GirPackage = typeof girPackage

@@ -164,6 +164,8 @@ export const nodebuildPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) node-build -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install node-build' as const,
 }
 
 export type NodebuildPackage = typeof nodebuildPackage

@@ -1,11 +1,11 @@
-# libvterm
+# leonerd.org.uk/libvterm
 
 > C99 library which implements a VT220 or xterm terminal emulator
 
 ## Package Information
 
 - **Domain**: `leonerd.org.uk/libvterm`
-- **Name**: `libvterm`
+- **Name**: `leonerd.org.uk/libvterm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/leonerd.org.uk/libvterm/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +leonerd.org.uk/libvterm -- $SHELL -i
+launchpad install leonerd.org.uk/libvterm
 ```
 
 ## Programs

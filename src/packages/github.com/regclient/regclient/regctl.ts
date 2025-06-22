@@ -90,6 +90,8 @@ export const regctlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) regctl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install regctl' as const,
 }
 
 export type RegctlPackage = typeof regctlPackage

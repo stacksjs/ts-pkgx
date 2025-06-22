@@ -1,11 +1,11 @@
-# python.org
+# python
 
 > The Python programming language
 
 ## Package Information
 
 - **Domain**: `python.org`
-- **Name**: `python.org`
+- **Name**: `python`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/python.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +python.org -- $SHELL -i
+launchpad install python
 ```
 
 ## Programs
@@ -28,7 +28,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `python`
 - `py`
 
 ## Available Versions
@@ -97,7 +96,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with python.org:
+These packages work well with python:
 
 - [`pip.pypa.io`](pippypaio.md) - The Python package installer
 

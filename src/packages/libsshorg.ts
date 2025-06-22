@@ -5,7 +5,7 @@
  * @version `0.11.1` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +libssh.org -- $SHELL -i`
+ * @install `launchpad install libssh.org`
  * @dependencies `openssl.org^1.1`, `zlib.net^1`
  *
  * @example
@@ -40,7 +40,7 @@ export const libsshorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +libssh.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install libssh.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -65,6 +65,8 @@ export const libsshorgPackage = {
     '0.9.7',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libssh.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libssh.org' as const,
 }
 
 export type LibsshorgPackage = typeof libsshorgPackage

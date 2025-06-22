@@ -1,11 +1,11 @@
-# click
+# python-click
 
 > Python composable command line interface toolkit
 
 ## Package Information
 
 - **Domain**: `palletsprojects.com/click`
-- **Name**: `click`
+- **Name**: `python-click`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/palletsprojects.com/click/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +palletsprojects.com/click -- $SHELL -i
+launchpad install python-click
 ```
 
 ## Programs
@@ -21,12 +21,6 @@ launchpad install +palletsprojects.com/click -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `python-click`
 
 ## Available Versions
 

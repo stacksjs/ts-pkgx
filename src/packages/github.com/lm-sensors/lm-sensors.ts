@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sensors`
- * @aliases `sensors`
+ * @name `sensors`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sensors
  * // Or access via domain
  * const samePkg = pantry.githubcomlmsensorslmsensors
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "lm-sensors"
+ * console.log(pkg.name)        // "sensors"
  * console.log(pkg.description) // "Tools for monitoring the temperatures, voltages..."
  * console.log(pkg.programs)    // ["sensors"]
  * console.log(pkg.versions[0]) // "3.6.0" (latest)
@@ -31,7 +31,7 @@ export const sensorsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'lm-sensors' as const,
+  name: 'sensors' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const sensorsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sensors',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sensors -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sensors' as const,
 }
 
 export type SensorsPackage = typeof sensorsPackage

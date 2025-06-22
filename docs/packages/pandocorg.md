@@ -1,11 +1,11 @@
-# pandoc.org
+# pandoc
 
 > Swiss-army knife of markup format conversion
 
 ## Package Information
 
 - **Domain**: `pandoc.org`
-- **Name**: `pandoc.org`
+- **Name**: `pandoc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pandoc.org/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install pandoc.org
+launchpad install pandoc
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `pandoc`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pandoc`
 
@@ -49,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pandoc.org@3.7.0.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) pandoc -- $SHELL -i
 ```
 
 ## Dependencies

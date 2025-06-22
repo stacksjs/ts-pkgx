@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pygmentize`
- * @aliases `pygmentize`
+ * @name `pygmentize`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pygmentize
  * // Or access via domain
  * const samePkg = pantry.pygmentsorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pygments.org"
+ * console.log(pkg.name)        // "pygmentize"
  * console.log(pkg.description) // "Pygments is a generic syntax highlighter writte..."
  * console.log(pkg.programs)    // ["pygmentize"]
  * console.log(pkg.versions[0]) // "2.19.2" (latest)
@@ -32,7 +32,7 @@ export const pygmentizePackage = {
   /**
    * The display name of this package.
    */
-  name: 'pygments.org' as const,
+  name: 'pygmentize' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -83,9 +83,9 @@ export const pygmentizePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pygmentize',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pygmentize -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pygmentize' as const,
 }
 
 export type PygmentizePackage = typeof pygmentizePackage

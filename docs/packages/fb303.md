@@ -1,11 +1,11 @@
-# fb303
+# facebook.com/fb303
 
 > fb303 is a core set of thrift functions that provide a common mechanism for querying stats and other information from a service.
 
 ## Package Information
 
 - **Domain**: `facebook.com/fb303`
-- **Name**: `fb303`
+- **Name**: `facebook.com/fb303`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/fb303/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +facebook.com/fb303 -- $SHELL -i
+launchpad install facebook.com/fb303
 ```
 
 ## Programs

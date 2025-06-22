@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) lychee
+launchpad install lychee
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +lychee.cli.rs@0.15.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) lychee -- $SHELL -i
 ```
 
 ## Dependencies

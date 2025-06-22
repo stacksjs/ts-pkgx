@@ -75,6 +75,8 @@ export const csviewPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) csview -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install csview' as const,
 }
 
 export type CsviewPackage = typeof csviewPackage

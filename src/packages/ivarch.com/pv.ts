@@ -81,6 +81,8 @@ export const pvPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pv' as const,
 }
 
 export type PvPackage = typeof pvPackage

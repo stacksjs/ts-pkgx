@@ -123,6 +123,8 @@ export const grypePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) grype -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install grype' as const,
 }
 
 export type GrypePackage = typeof grypePackage

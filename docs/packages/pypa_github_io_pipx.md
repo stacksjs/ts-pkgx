@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pypa.github.io/pipx@1.7.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) pipx -- $SHELL -i
 ```
 
 ## Dependencies

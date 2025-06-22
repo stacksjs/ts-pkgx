@@ -1,11 +1,11 @@
-# convco.github.io
+# convco
 
 > Conventional commits, changelog, versioning, validation
 
 ## Package Information
 
 - **Domain**: `convco.github.io`
-- **Name**: `convco.github.io`
+- **Name**: `convco`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/convco.github.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install convco
 ## Programs
 
 This package provides the following executable programs:
-
-- `convco`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `convco`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +convco.github.io@0.6.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) convco -- $SHELL -i
 ```
 
 ## Usage Examples

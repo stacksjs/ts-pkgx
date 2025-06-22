@@ -1,11 +1,11 @@
-# lua.org
+# lua
 
 > Powerful, lightweight programming language
 
 ## Package Information
 
 - **Domain**: `lua.org`
-- **Name**: `lua.org`
+- **Name**: `lua`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lua.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +lua.org -- $SHELL -i
+launchpad install lua
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `lua`
 - `luac`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `lua`
 
 ## Available Versions
 
@@ -55,7 +49,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with lua.org:
+These packages work well with lua:
 
 - [`luarocks.org`](luarocksorg.md) - LuaRocks is the package manager for the Lua programming language.
 

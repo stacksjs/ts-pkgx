@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openvpn`
- * @aliases `openvpn`
+ * @name `openvpn`
  * @dependencies `lz4.org^1.9`, `oberhumer.com/lzo^2.10`, `openssl.org^1.1`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.openvpn
  * // Or access via domain
  * const samePkg = pantry.openvpnnet
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "openvpn.net"
+ * console.log(pkg.name)        // "openvpn"
  * console.log(pkg.programs)    // ["openvpn"]
  * console.log(pkg.versions[0]) // "2.6.14" (latest)
  * ```
@@ -31,7 +31,7 @@ export const openvpnPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openvpn.net' as const,
+  name: 'openvpn' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -90,9 +90,9 @@ export const openvpnPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'openvpn',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) openvpn -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openvpn' as const,
 }
 
 export type OpenvpnPackage = typeof openvpnPackage

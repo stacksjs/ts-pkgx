@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/mop-tracker/mop@2023.3.30 -- $SHELL -i
+sh <(curl https://pkgx.sh) mop -- $SHELL -i
 ```
 
 ## Usage Examples

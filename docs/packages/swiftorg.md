@@ -1,11 +1,11 @@
-# swift.org
+# swift
 
 > The Swift Programming Language
 
 ## Package Information
 
 - **Domain**: `swift.org`
-- **Name**: `swift.org`
+- **Name**: `swift`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/swift.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install swift.org
+launchpad install swift
 ```
 
 ## Programs
@@ -46,12 +46,6 @@ This package provides the following executable programs:
 - `swift-symbolgraph-extract`
 - `swift-test`
 - `swiftc`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `swift`
 
 ## Available Versions
 

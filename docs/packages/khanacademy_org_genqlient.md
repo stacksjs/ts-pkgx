@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +khanacademy.org/genqlient@0.8.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) genqlient -- $SHELL -i
 ```
 
 ## Usage Examples

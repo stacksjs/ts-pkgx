@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install plantuml`
- * @aliases `plantuml`
+ * @name `plantuml`
  * @dependencies `graphviz.org`, `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.plantuml
  * // Or access via domain
  * const samePkg = pantry.plantumlcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "plantuml.com"
+ * console.log(pkg.name)        // "plantuml"
  * console.log(pkg.description) // "Generate diagrams from textual description"
  * console.log(pkg.programs)    // ["plantuml"]
  * console.log(pkg.versions[0]) // "1.2025.3" (latest)
@@ -32,7 +32,7 @@ export const plantumlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'plantuml.com' as const,
+  name: 'plantuml' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -92,9 +92,9 @@ export const plantumlPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'plantuml',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) plantuml -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install plantuml' as const,
 }
 
 export type PlantumlPackage = typeof plantumlPackage

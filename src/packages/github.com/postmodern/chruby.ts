@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install chruby-exec`
- * @aliases `chruby-exec`
+ * @name `chruby-exec`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.chrubyexec
  * // Or access via domain
  * const samePkg = pantry.githubcompostmodernchruby
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "chruby"
+ * console.log(pkg.name)        // "chruby-exec"
  * console.log(pkg.description) // "Changes the current Ruby"
  * console.log(pkg.programs)    // ["chruby-exec"]
  * console.log(pkg.versions[0]) // "0.3.9" (latest)
@@ -31,7 +31,7 @@ export const chrubyexecPackage = {
   /**
    * The display name of this package.
    */
-  name: 'chruby' as const,
+  name: 'chruby-exec' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const chrubyexecPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'chruby-exec',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) chruby-exec -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install chruby-exec' as const,
 }
 
 export type ChrubyexecPackage = typeof chrubyexecPackage

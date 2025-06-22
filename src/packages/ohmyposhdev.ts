@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install oh-my-posh`
- * @aliases `oh-my-posh`
+ * @name `oh-my-posh`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ohmyposh
  * // Or access via domain
  * const samePkg = pantry.ohmyposhdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ohmyposh.dev"
+ * console.log(pkg.name)        // "oh-my-posh"
  * console.log(pkg.description) // "The most customisable and low-latency cross pla..."
  * console.log(pkg.programs)    // ["oh-my-posh"]
  * console.log(pkg.versions[0]) // "26.9.0" (latest)
@@ -31,7 +31,7 @@ export const ohmyposhPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ohmyposh.dev' as const,
+  name: 'oh-my-posh' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -358,9 +358,9 @@ export const ohmyposhPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'oh-my-posh',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) oh-my-posh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install oh-my-posh' as const,
 }
 
 export type OhmyposhPackage = typeof ohmyposhPackage

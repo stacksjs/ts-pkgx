@@ -78,6 +78,8 @@ export const vividPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vivid -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vivid' as const,
 }
 
 export type VividPackage = typeof vividPackage

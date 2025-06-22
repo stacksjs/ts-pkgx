@@ -76,6 +76,8 @@ export const protocgenjsonschemaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) protoc-gen-jsonschema -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install protoc-gen-jsonschema' as const,
 }
 
 export type ProtocgenjsonschemaPackage = typeof protocgenjsonschemaPackage

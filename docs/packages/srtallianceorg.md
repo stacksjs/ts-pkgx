@@ -1,11 +1,11 @@
-# srtalliance.org
+# srt-ffplay
 
 > Secure, Reliable, Transport
 
 ## Package Information
 
 - **Domain**: `srtalliance.org`
-- **Name**: `srtalliance.org`
+- **Name**: `srt-ffplay`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/srtalliance.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install srtalliance.org
+launchpad install srt-ffplay
 ```
 
 ## Programs
@@ -24,12 +24,6 @@ This package provides the following executable programs:
 - `srt-file-transmit`
 - `srt-live-transmit`
 - `srt-tunnel`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `srt`
 
 ## Available Versions
 

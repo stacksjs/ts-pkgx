@@ -1,11 +1,11 @@
-# rtx-cli
+# crates.io/rtx-cli
 
 > dev tools, env vars, task runner
 
 ## Package Information
 
 - **Domain**: `crates.io/rtx-cli`
-- **Name**: `rtx-cli`
+- **Name**: `crates.io/rtx-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rtx-cli/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +crates.io/rtx-cli -- $SHELL -i
+launchpad install crates.io/rtx-cli
 ```
 
 ## Programs

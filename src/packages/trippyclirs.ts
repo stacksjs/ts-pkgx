@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install trip`
- * @aliases `trip`
+ * @name `trip`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.trip
  * // Or access via domain
  * const samePkg = pantry.trippyclirs
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "trippy.cli.rs"
+ * console.log(pkg.name)        // "trip"
  * console.log(pkg.description) // "Network diagnostic tool, inspired by mtr"
  * console.log(pkg.programs)    // ["trip"]
  * console.log(pkg.versions[0]) // "0.13.0" (latest)
@@ -31,7 +31,7 @@ export const tripPackage = {
   /**
    * The display name of this package.
    */
-  name: 'trippy.cli.rs' as const,
+  name: 'trip' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -74,9 +74,9 @@ export const tripPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'trip',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) trip -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install trip' as const,
 }
 
 export type TripPackage = typeof tripPackage

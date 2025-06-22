@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/pressly/sup@0.5.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) sup -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -1,18 +1,18 @@
 /**
- * **adwaita-icon-theme** - pkgx package
+ * **gnome.org/adwaita-icon-theme** - pkgx package
  *
  * @domain `gnome.org/adwaita-icon-theme`
  * @version `48.1.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnome.org/adwaita-icon-theme -- $SHELL -i`
+ * @install `launchpad install gnome.org/adwaita-icon-theme`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnomeorgadwaitaicontheme
- * console.log(pkg.name)        // "adwaita-icon-theme"
+ * console.log(pkg.name)        // "gnome.org/adwaita-icon-theme"
  * console.log(pkg.versions[0]) // "48.1.0" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const gnomeorgadwaitaiconthemePackage = {
   /**
    * The display name of this package.
    */
-  name: 'adwaita-icon-theme' as const,
+  name: 'gnome.org/adwaita-icon-theme' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +39,7 @@ export const gnomeorgadwaitaiconthemePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnome.org/adwaita-icon-theme -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnome.org/adwaita-icon-theme' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -56,6 +56,8 @@ export const gnomeorgadwaitaiconthemePackage = {
     '45.0.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/adwaita-icon-theme -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnome.org/adwaita-icon-theme' as const,
 }
 
 export type GnomeorgadwaitaiconthemePackage = typeof gnomeorgadwaitaiconthemePackage

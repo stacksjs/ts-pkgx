@@ -1,11 +1,11 @@
-# caesium
+# caesiumclt
 
 > Caesium Command Line Tools - Lossy/lossless image compression tool
 
 ## Package Information
 
 - **Domain**: `saerasoft.com/caesium`
-- **Name**: `caesium`
+- **Name**: `caesiumclt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/saerasoft.com/caesium/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install caesiumclt
 ## Programs
 
 This package provides the following executable programs:
-
-- `caesiumclt`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `caesiumclt`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +saerasoft.com/caesium@0.21.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) caesiumclt -- $SHELL -i
 ```
 
 ## Usage Examples

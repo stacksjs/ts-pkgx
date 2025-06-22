@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/OutOfBedlam/tine@0.0.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) tine -- $SHELL -i
 ```
 
 ## Usage Examples

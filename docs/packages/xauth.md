@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +x.org/xauth@1.1.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) xauth -- $SHELL -i
 ```
 
 ## Dependencies

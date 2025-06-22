@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install zig`
- * @aliases `zig`
+ * @name `zig`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.zig
  * // Or access via domain
  * const samePkg = pantry.ziglangorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ziglang.org"
+ * console.log(pkg.name)        // "zig"
  * console.log(pkg.description) // "General-purpose programming language and toolch..."
  * console.log(pkg.programs)    // ["zig"]
  * console.log(pkg.versions[0]) // "0.14.1" (latest)
@@ -31,7 +31,7 @@ export const zigPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ziglang.org' as const,
+  name: 'zig' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -74,9 +74,9 @@ export const zigPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'zig',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zig -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zig' as const,
 }
 
 export type ZigPackage = typeof zigPackage

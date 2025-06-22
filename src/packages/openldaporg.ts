@@ -6,20 +6,20 @@
  * @version `2.6.10` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +openldap.org -- $SHELL -i`
- * @aliases `ldap`
+ * @install `launchpad install ldap`
+ * @name `ldap`
  * @dependencies `openssl.org^1.1`, `linux:github.com/util-linux/util-linux` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ldap
  * // Or access via domain
  * const samePkg = pantry.openldaporg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "openldap.org"
+ * console.log(pkg.name)        // "ldap"
  * console.log(pkg.description) // "Open source suite of directory software"
  * console.log(pkg.programs)    // ["ldapcompare", "ldapdelete", ...]
  * console.log(pkg.versions[0]) // "2.6.10" (latest)
@@ -32,7 +32,7 @@ export const ldapPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openldap.org' as const,
+  name: 'ldap' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const ldapPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +openldap.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install ldap' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -98,9 +98,9 @@ export const ldapPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ldap',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openldap.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ldap' as const,
 }
 
 export type LdapPackage = typeof ldapPackage

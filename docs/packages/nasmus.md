@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +nasm.us -- $SHELL -i
+launchpad install nasm.us
 ```
 
 ## Programs

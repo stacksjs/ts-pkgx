@@ -5,7 +5,7 @@
  * @version `0.2.5` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +pyyaml.org -- $SHELL -i`
+ * @install `launchpad install pyyaml.org`
  *
  * @example
  * ```typescript
@@ -40,7 +40,7 @@ export const pyyamlorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pyyaml.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install pyyaml.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -52,6 +52,8 @@ export const pyyamlorgPackage = {
     '0.2.5',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pyyaml.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pyyaml.org' as const,
 }
 
 export type PyyamlorgPackage = typeof pyyamlorgPackage

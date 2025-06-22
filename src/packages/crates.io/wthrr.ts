@@ -77,6 +77,8 @@ export const wthrrPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wthrr -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wthrr' as const,
 }
 
 export type WthrrPackage = typeof wthrrPackage

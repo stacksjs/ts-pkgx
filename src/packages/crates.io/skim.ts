@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sk`
- * @aliases `sk`
+ * @name `sk`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sk
  * // Or access via domain
  * const samePkg = pantry.cratesioskim
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "skim"
+ * console.log(pkg.name)        // "sk"
  * console.log(pkg.description) // "Fuzzy Finder in rust!"
  * console.log(pkg.programs)    // ["sk"]
  * console.log(pkg.versions[0]) // "0.20.1" (latest)
@@ -31,7 +31,7 @@ export const skPackage = {
   /**
    * The display name of this package.
    */
-  name: 'skim' as const,
+  name: 'sk' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -94,9 +94,9 @@ export const skPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sk',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sk -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sk' as const,
 }
 
 export type SkPackage = typeof skPackage

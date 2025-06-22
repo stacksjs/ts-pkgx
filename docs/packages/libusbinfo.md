@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libusb.info -- $SHELL -i
+launchpad install libusb.info
 ```
 
 ## Programs

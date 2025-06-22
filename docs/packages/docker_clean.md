@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/ZZROTDesign/docker-clean@2.0.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) docker-clean -- $SHELL -i
 ```
 
 ## Dependencies

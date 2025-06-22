@@ -83,6 +83,8 @@ export const mackupPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mackup -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mackup' as const,
 }
 
 export type MackupPackage = typeof mackupPackage

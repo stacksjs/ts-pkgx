@@ -1,18 +1,18 @@
 /**
- * **jansson** - C library for encoding, decoding and manipulating JSON data
+ * **digip.org/jansson** - C library for encoding, decoding and manipulating JSON data
  *
  * @domain `digip.org/jansson`
  * @version `2.14.1` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +digip.org/jansson -- $SHELL -i`
+ * @install `launchpad install digip.org/jansson`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.digiporgjansson
- * console.log(pkg.name)        // "jansson"
+ * console.log(pkg.name)        // "digip.org/jansson"
  * console.log(pkg.description) // "C library for encoding, decoding and manipulati..."
  * console.log(pkg.versions[0]) // "2.14.1" (latest)
  * ```
@@ -24,7 +24,7 @@ export const digiporgjanssonPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jansson' as const,
+  name: 'digip.org/jansson' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const digiporgjanssonPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +digip.org/jansson -- $SHELL -i' as const,
+  installCommand: 'launchpad install digip.org/jansson' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -53,6 +53,8 @@ export const digiporgjanssonPackage = {
     '2.14.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +digip.org/jansson -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install digip.org/jansson' as const,
 }
 
 export type DigiporgjanssonPackage = typeof digiporgjanssonPackage

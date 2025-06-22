@@ -71,6 +71,8 @@ export const gomodupgradePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) go-mod-upgrade -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install go-mod-upgrade' as const,
 }
 
 export type GomodupgradePackage = typeof gomodupgradePackage

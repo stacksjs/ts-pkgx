@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pyproject-build`
- * @aliases `pyproject-build`
+ * @name `pyproject-build`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pyprojectbuild
  * // Or access via domain
  * const samePkg = pantry.githubcompypabuild
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "build"
+ * console.log(pkg.name)        // "pyproject-build"
  * console.log(pkg.description) // "A simple, correct Python build frontend"
  * console.log(pkg.programs)    // ["pyproject-build"]
  * console.log(pkg.versions[0]) // "1.2.2" (latest)
@@ -32,7 +32,7 @@ export const pyprojectbuildPackage = {
   /**
    * The display name of this package.
    */
-  name: 'build' as const,
+  name: 'pyproject-build' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -83,9 +83,9 @@ export const pyprojectbuildPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pyproject-build',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pyproject-build -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pyproject-build' as const,
 }
 
 export type PyprojectbuildPackage = typeof pyprojectbuildPackage

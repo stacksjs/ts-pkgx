@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install maturin`
- * @aliases `maturin`
+ * @name `maturin`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.maturin
  * // Or access via domain
  * const samePkg = pantry.maturinrs
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "maturin.rs"
+ * console.log(pkg.name)        // "maturin"
  * console.log(pkg.description) // "Build and publish crates with pyo3, cffi and un..."
  * console.log(pkg.programs)    // ["maturin"]
  * console.log(pkg.versions[0]) // "1.8.7" (latest)
@@ -31,7 +31,7 @@ export const maturinPackage = {
   /**
    * The display name of this package.
    */
-  name: 'maturin.rs' as const,
+  name: 'maturin' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -87,9 +87,9 @@ export const maturinPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'maturin',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) maturin -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install maturin' as const,
 }
 
 export type MaturinPackage = typeof maturinPackage

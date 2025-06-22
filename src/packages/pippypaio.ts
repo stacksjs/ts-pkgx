@@ -6,20 +6,20 @@
  * @version `25.1.1` (27 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +pip.pypa.io -- $SHELL -i`
- * @aliases `pip`
+ * @install `launchpad install pip`
+ * @name `pip`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pip
  * // Or access via domain
  * const samePkg = pantry.pippypaio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pip.pypa.io"
+ * console.log(pkg.name)        // "pip"
  * console.log(pkg.description) // "The Python package installer"
  * console.log(pkg.programs)    // ["pip", "pip3.8", ...]
  * console.log(pkg.versions[0]) // "25.1.1" (latest)
@@ -32,7 +32,7 @@ export const pipPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pip.pypa.io' as const,
+  name: 'pip' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const pipPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pip.pypa.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install pip' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -105,9 +105,9 @@ export const pipPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pip',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pip.pypa.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pip' as const,
 }
 
 export type PipPackage = typeof pipPackage

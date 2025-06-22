@@ -79,6 +79,8 @@ export const llrtPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) llrt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install llrt' as const,
 }
 
 export type LlrtPackage = typeof llrtPackage

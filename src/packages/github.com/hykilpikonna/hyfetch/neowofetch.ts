@@ -77,6 +77,8 @@ export const neowofetchPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) neowofetch -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install neowofetch' as const,
 }
 
 export type NeowofetchPackage = typeof neowofetchPackage

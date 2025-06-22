@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) jenv
+launchpad install jenv
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +jenv.be@0.5.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) jenv -- $SHELL -i
 ```
 
 ## Usage Examples

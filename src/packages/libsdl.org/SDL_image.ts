@@ -1,11 +1,11 @@
 /**
- * **SDL_image** - Image decoding for many popular formats for Simple Directmedia Layer.
+ * **libsdl.org/SDL_image** - Image decoding for many popular formats for Simple Directmedia Layer.
  *
  * @domain `libsdl.org/SDL_image`
  * @version `3.2.4` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +libsdl.org/SDL_image -- $SHELL -i`
+ * @install `launchpad install libsdl.org/SDL_image`
  * @dependencies `libjpeg-turbo.org^2`, `github.com/AOMediaCodec/libavif^0.11`, `libpng.org^1.6`, ... (+3 more)
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.libsdlorgsdl_image
- * console.log(pkg.name)        // "SDL_image"
+ * console.log(pkg.name)        // "libsdl.org/SDL_image"
  * console.log(pkg.description) // "Image decoding for many popular formats for Sim..."
  * console.log(pkg.versions[0]) // "3.2.4" (latest)
  * ```
@@ -25,7 +25,7 @@ export const libsdlorgsdl_imagePackage = {
   /**
    * The display name of this package.
    */
-  name: 'SDL_image' as const,
+  name: 'libsdl.org/SDL_image' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const libsdlorgsdl_imagePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +libsdl.org/SDL_image -- $SHELL -i' as const,
+  installCommand: 'launchpad install libsdl.org/SDL_image' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -76,6 +76,8 @@ export const libsdlorgsdl_imagePackage = {
     '2.6.3',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libsdl.org/SDL_image -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libsdl.org/SDL_image' as const,
 }
 
 export type Libsdlorgsdl_imagePackage = typeof libsdlorgsdl_imagePackage

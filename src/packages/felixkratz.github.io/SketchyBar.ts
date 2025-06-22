@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sketchybar`
- * @aliases `sketchybar`
+ * @name `sketchybar`
  * @dependencies `github.com/koekeishiya/yabai`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sketchybar
  * // Or access via domain
  * const samePkg = pantry.felixkratzgithubiosketchybar
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "SketchyBar"
+ * console.log(pkg.name)        // "sketchybar"
  * console.log(pkg.description) // "A highly customizable macOS status bar replacement"
  * console.log(pkg.programs)    // ["sketchybar"]
  * console.log(pkg.versions[0]) // "2.22.1" (latest)
@@ -32,7 +32,7 @@ export const sketchybarPackage = {
   /**
    * The display name of this package.
    */
-  name: 'SketchyBar' as const,
+  name: 'sketchybar' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,9 @@ export const sketchybarPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sketchybar',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sketchybar -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sketchybar' as const,
 }
 
 export type SketchybarPackage = typeof sketchybarPackage

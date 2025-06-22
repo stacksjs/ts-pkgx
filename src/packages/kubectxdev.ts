@@ -6,20 +6,20 @@
  * @version `0.9.5` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +kubectx.dev -- $SHELL -i`
- * @aliases `kube`
+ * @install `launchpad install kube`
+ * @name `kube`
  * @dependencies `github.com/junegunn/fzf`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.kube
  * // Or access via domain
  * const samePkg = pantry.kubectxdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "kubectx.dev"
+ * console.log(pkg.name)        // "kube"
  * console.log(pkg.description) // "Tool that can switch between kubectl contexts e..."
  * console.log(pkg.programs)    // ["kubectx", "kubens"]
  * console.log(pkg.versions[0]) // "0.9.5" (latest)
@@ -32,7 +32,7 @@ export const kubePackage = {
   /**
    * The display name of this package.
    */
-  name: 'kubectx.dev' as const,
+  name: 'kube' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const kubePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +kubectx.dev -- $SHELL -i' as const,
+  installCommand: 'launchpad install kube' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,9 +77,9 @@ export const kubePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kube',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kubectx.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kube' as const,
 }
 
 export type KubePackage = typeof kubePackage

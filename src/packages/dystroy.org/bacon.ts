@@ -86,6 +86,8 @@ export const baconPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bacon -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bacon' as const,
 }
 
 export type BaconPackage = typeof baconPackage

@@ -6,7 +6,7 @@
  * @version `5.2.37` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnu.org/bash -- $SHELL -i`
+ * @install `launchpad install bash`
  * @name `bash`
  *
  * @example
@@ -47,7 +47,7 @@ export const bashPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnu.org/bash -- $SHELL -i' as const,
+  installCommand: 'launchpad install bash' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,6 +74,8 @@ export const bashPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/bash -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bash' as const,
 }
 
 export type BashPackage = typeof bashPackage

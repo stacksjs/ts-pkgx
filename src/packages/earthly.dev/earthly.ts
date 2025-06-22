@@ -69,6 +69,8 @@ export const earthlyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) earthly -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install earthly' as const,
 }
 
 export type EarthlyPackage = typeof earthlyPackage

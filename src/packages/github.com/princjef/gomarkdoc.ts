@@ -69,6 +69,8 @@ export const gomarkdocPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gomarkdoc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gomarkdoc' as const,
 }
 
 export type GomarkdocPackage = typeof gomarkdocPackage

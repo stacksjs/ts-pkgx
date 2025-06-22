@@ -5,20 +5,20 @@
  * @version `2.4.125` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +dri.freedesktop.org -- $SHELL -i`
- * @aliases `libdrm`
+ * @install `launchpad install libdrm`
+ * @name `libdrm`
  * @dependencies `x.org/pciaccess`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.libdrm
  * // Or access via domain
  * const samePkg = pantry.drifreedesktoporg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "dri.freedesktop.org"
+ * console.log(pkg.name)        // "libdrm"
  * console.log(pkg.versions[0]) // "2.4.125" (latest)
  * ```
  *
@@ -29,7 +29,7 @@ export const libdrmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dri.freedesktop.org' as const,
+  name: 'libdrm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +45,7 @@ export const libdrmPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +dri.freedesktop.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install libdrm' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -76,9 +76,9 @@ export const libdrmPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'libdrm',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +dri.freedesktop.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libdrm' as const,
 }
 
 export type LibdrmPackage = typeof libdrmPackage

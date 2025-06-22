@@ -1,19 +1,19 @@
 /**
- * **unzip** - Extraction utility for .zip compressed archives
+ * **info-zip.org/unzip** - Extraction utility for .zip compressed archives
  *
  * @domain `info-zip.org/unzip`
  * @programs `funzip`, `unzip`, `unzipsfx`, `zipgrep`, `zipinfo`
  * @version `6.0.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +info-zip.org/unzip -- $SHELL -i`
+ * @install `launchpad install info-zip.org/unzip`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.infoziporgunzip
- * console.log(pkg.name)        // "unzip"
+ * console.log(pkg.name)        // "info-zip.org/unzip"
  * console.log(pkg.description) // "Extraction utility for .zip compressed archives"
  * console.log(pkg.programs)    // ["funzip", "unzip", ...]
  * console.log(pkg.versions[0]) // "6.0.0" (latest)
@@ -26,7 +26,7 @@ export const infoziporgunzipPackage = {
   /**
    * The display name of this package.
    */
-  name: 'unzip' as const,
+  name: 'info-zip.org/unzip' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const infoziporgunzipPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +info-zip.org/unzip -- $SHELL -i' as const,
+  installCommand: 'launchpad install info-zip.org/unzip' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,8 @@ export const infoziporgunzipPackage = {
     '6.0.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +info-zip.org/unzip -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install info-zip.org/unzip' as const,
 }
 
 export type InfoziporgunzipPackage = typeof infoziporgunzipPackage

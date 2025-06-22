@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +smartmontools.org -- $SHELL -i
+launchpad install smartmontools.org
 ```
 
 ## Programs

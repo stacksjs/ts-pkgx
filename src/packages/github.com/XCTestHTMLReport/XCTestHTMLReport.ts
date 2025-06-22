@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xchtmlreport`
- * @aliases `xchtmlreport`
+ * @name `xchtmlreport`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.xchtmlreport
  * // Or access via domain
  * const samePkg = pantry.githubcomxctesthtmlreportxctesthtmlreport
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "XCTestHTMLReport"
+ * console.log(pkg.name)        // "xchtmlreport"
  * console.log(pkg.description) // "Xcode-like HTML report for Unit and UI Tests"
  * console.log(pkg.programs)    // ["xchtmlreport"]
  * console.log(pkg.versions[0]) // "2.5.1" (latest)
@@ -31,7 +31,7 @@ export const xchtmlreportPackage = {
   /**
    * The display name of this package.
    */
-  name: 'XCTestHTMLReport' as const,
+  name: 'xchtmlreport' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -70,9 +70,9 @@ export const xchtmlreportPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'xchtmlreport',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xchtmlreport -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xchtmlreport' as const,
 }
 
 export type XchtmlreportPackage = typeof xchtmlreportPackage

@@ -5,7 +5,7 @@
  * @version `3.0.2` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +markupsafe.palletsprojects.com -- $SHELL -i`
+ * @install `launchpad install markupsafe.palletsprojects.com`
  * @dependencies `python.org~3.11`
  *
  * @example
@@ -41,7 +41,7 @@ export const markupsafepalletsprojectscomPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +markupsafe.palletsprojects.com -- $SHELL -i' as const,
+  installCommand: 'launchpad install markupsafe.palletsprojects.com' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -64,6 +64,8 @@ export const markupsafepalletsprojectscomPackage = {
     '2.1.3',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +markupsafe.palletsprojects.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install markupsafe.palletsprojects.com' as const,
 }
 
 export type MarkupsafepalletsprojectscomPackage = typeof markupsafepalletsprojectscomPackage

@@ -78,6 +78,8 @@ export const flacPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) flac -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install flac' as const,
 }
 
 export type FlacPackage = typeof flacPackage

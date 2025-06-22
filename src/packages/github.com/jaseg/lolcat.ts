@@ -70,6 +70,8 @@ export const lolcatPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) lolcat -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lolcat' as const,
 }
 
 export type LolcatPackage = typeof lolcatPackage

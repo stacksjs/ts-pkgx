@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dhall`
- * @aliases `dhall`
+ * @name `dhall`
  * @dependencies `invisible-island.net/ncurses^6.4`, `zlib.net^1.3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.dhall
  * // Or access via domain
  * const samePkg = pantry.dhalllangorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "dhall-lang.org"
+ * console.log(pkg.name)        // "dhall"
  * console.log(pkg.description) // "Interpreter for the Dhall language"
  * console.log(pkg.programs)    // ["dhall"]
  * console.log(pkg.versions[0]) // "1.42.2" (latest)
@@ -32,7 +32,7 @@ export const dhallPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dhall-lang.org' as const,
+  name: 'dhall' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const dhallPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'dhall',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dhall -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dhall' as const,
 }
 
 export type DhallPackage = typeof dhallPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install symfony`
- * @aliases `symfony`
+ * @name `symfony`
  * @dependencies `php.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.symfony
  * // Or access via domain
  * const samePkg = pantry.symfonycom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "symfony.com"
+ * console.log(pkg.name)        // "symfony"
  * console.log(pkg.description) // "The Symfony CLI tool"
  * console.log(pkg.programs)    // ["symfony"]
  * console.log(pkg.versions[0]) // "5.12.0" (latest)
@@ -32,7 +32,7 @@ export const symfonyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'symfony.com' as const,
+  name: 'symfony' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -124,9 +124,9 @@ export const symfonyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'symfony',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) symfony -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install symfony' as const,
 }
 
 export type SymfonyPackage = typeof symfonyPackage

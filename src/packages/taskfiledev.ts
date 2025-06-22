@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install task`
- * @aliases `task`
+ * @name `task`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.task
  * // Or access via domain
  * const samePkg = pantry.taskfiledev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "taskfile.dev"
+ * console.log(pkg.name)        // "task"
  * console.log(pkg.description) // "A task runner / simpler Make alternative writte..."
  * console.log(pkg.programs)    // ["task"]
  * console.log(pkg.versions[0]) // "3.44.0" (latest)
@@ -31,7 +31,7 @@ export const taskPackage = {
   /**
    * The display name of this package.
    */
-  name: 'taskfile.dev' as const,
+  name: 'task' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -98,9 +98,9 @@ export const taskPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'task',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) task -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install task' as const,
 }
 
 export type TaskPackage = typeof taskPackage

@@ -5,19 +5,19 @@
  * @version `20.1.7` (33 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +openmp.llvm.org -- $SHELL -i`
- * @aliases `libomp`
+ * @install `launchpad install libomp`
+ * @name `libomp`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.libomp
  * // Or access via domain
  * const samePkg = pantry.openmpllvmorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "openmp.llvm.org"
+ * console.log(pkg.name)        // "libomp"
  * console.log(pkg.description) // "The LLVM Project is a collection of modular and..."
  * console.log(pkg.versions[0]) // "20.1.7" (latest)
  * ```
@@ -29,7 +29,7 @@ export const libompPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openmp.llvm.org' as const,
+  name: 'libomp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +45,7 @@ export const libompPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +openmp.llvm.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install libomp' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -92,9 +92,9 @@ export const libompPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'libomp',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openmp.llvm.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libomp' as const,
 }
 
 export type LibompPackage = typeof libompPackage

@@ -1,11 +1,11 @@
-# lcov
+# github.com/linux-test-project/lcov
 
 > Graphical front-end for GCC's coverage testing tool (gcov)
 
 ## Package Information
 
 - **Domain**: `github.com/linux-test-project/lcov`
-- **Name**: `lcov`
+- **Name**: `github.com/linux-test-project/lcov`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/linux-test-project/lcov/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/linux-test-project/lcov -- $SHELL -i
+launchpad install github.com/linux-test-project/lcov
 ```
 
 ## Programs
@@ -53,7 +53,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with lcov:
+These packages work well with github.com/linux-test-project/lcov:
 
 - `PERL5LIB^${{prefix}}/lib/perl5`
 

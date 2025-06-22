@@ -76,6 +76,8 @@ export const gistPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gist -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gist' as const,
 }
 
 export type GistPackage = typeof gistPackage

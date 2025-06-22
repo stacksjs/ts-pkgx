@@ -1,18 +1,18 @@
 /**
- * **libsigsegv** - pkgx package
+ * **gnu.org/libsigsegv** - pkgx package
  *
  * @domain `gnu.org/libsigsegv`
  * @version `2.15.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnu.org/libsigsegv -- $SHELL -i`
+ * @install `launchpad install gnu.org/libsigsegv`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorglibsigsegv
- * console.log(pkg.name)        // "libsigsegv"
+ * console.log(pkg.name)        // "gnu.org/libsigsegv"
  * console.log(pkg.versions[0]) // "2.15.0" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const gnuorglibsigsegvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libsigsegv' as const,
+  name: 'gnu.org/libsigsegv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +39,7 @@ export const gnuorglibsigsegvPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnu.org/libsigsegv -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnu.org/libsigsegv' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -52,6 +52,8 @@ export const gnuorglibsigsegvPackage = {
     '2.14.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/libsigsegv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/libsigsegv' as const,
 }
 
 export type GnuorglibsigsegvPackage = typeof gnuorglibsigsegvPackage

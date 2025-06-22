@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) turso
+launchpad install turso
 ```
 
 ## Programs
@@ -54,7 +54,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +turso.tech@1.0.11 -- $SHELL -i
+sh <(curl https://pkgx.sh) turso -- $SHELL -i
 ```
 
 ## Usage Examples

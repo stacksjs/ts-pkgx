@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install git-cliff`
- * @aliases `git-cliff`
+ * @name `git-cliff`
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gitcliff
  * // Or access via domain
  * const samePkg = pantry.gitclifforg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "git-cliff.org"
+ * console.log(pkg.name)        // "git-cliff"
  * console.log(pkg.description) // "A highly customizable Changelog Generator that ..."
  * console.log(pkg.programs)    // ["git-cliff"]
  * console.log(pkg.versions[0]) // "2.9.1" (latest)
@@ -32,7 +32,7 @@ export const gitcliffPackage = {
   /**
    * The display name of this package.
    */
-  name: 'git-cliff.org' as const,
+  name: 'git-cliff' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -97,9 +97,9 @@ export const gitcliffPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'git-cliff',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-cliff -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-cliff' as const,
 }
 
 export type GitcliffPackage = typeof gitcliffPackage

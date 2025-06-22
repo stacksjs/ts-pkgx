@@ -74,6 +74,8 @@ export const tinePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tine -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tine' as const,
 }
 
 export type TinePackage = typeof tinePackage

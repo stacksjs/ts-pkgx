@@ -69,6 +69,8 @@ export const supPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sup -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sup' as const,
 }
 
 export type SupPackage = typeof supPackage

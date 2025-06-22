@@ -1,11 +1,11 @@
 /**
- * **cfitsio** - pkgx package
+ * **heasarc.gsfc.nasa.gov/cfitsio** - pkgx package
  *
  * @domain `heasarc.gsfc.nasa.gov/cfitsio`
  * @version `4.6.2` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +heasarc.gsfc.nasa.gov/cfitsio -- $SHELL -i`
+ * @install `launchpad install heasarc.gsfc.nasa.gov/cfitsio`
  * @dependencies `darwin:zlib.net` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.heasarcgsfcnasagovcfitsio
- * console.log(pkg.name)        // "cfitsio"
+ * console.log(pkg.name)        // "heasarc.gsfc.nasa.gov/cfitsio"
  * console.log(pkg.versions[0]) // "4.6.2" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const heasarcgsfcnasagovcfitsioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cfitsio' as const,
+  name: 'heasarc.gsfc.nasa.gov/cfitsio' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const heasarcgsfcnasagovcfitsioPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +heasarc.gsfc.nasa.gov/cfitsio -- $SHELL -i' as const,
+  installCommand: 'launchpad install heasarc.gsfc.nasa.gov/cfitsio' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -66,6 +66,8 @@ export const heasarcgsfcnasagovcfitsioPackage = {
     '4.2.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +heasarc.gsfc.nasa.gov/cfitsio -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install heasarc.gsfc.nasa.gov/cfitsio' as const,
 }
 
 export type HeasarcgsfcnasagovcfitsioPackage = typeof heasarcgsfcnasagovcfitsioPackage

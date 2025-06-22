@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +openpmix.github.io -- $SHELL -i
+launchpad install openpmix.github.io
 ```
 
 ## Programs

@@ -1,11 +1,11 @@
-# ruff
+# github.com/charliermarsh/ruff
 
 > An extremely fast Python linter and code formatter, written in Rust.
 
 ## Package Information
 
 - **Domain**: `github.com/charliermarsh/ruff`
-- **Name**: `ruff`
+- **Name**: `github.com/charliermarsh/ruff`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/charliermarsh/ruff/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/charliermarsh/ruff -- $SHELL -i
+launchpad install github.com/charliermarsh/ruff
 ```
 
 ## Programs

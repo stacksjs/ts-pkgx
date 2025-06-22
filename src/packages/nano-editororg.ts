@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nano`
- * @aliases `nano`
+ * @name `nano`
  * @dependencies `gnu.org/gettext`, `invisible-island.net/ncurses>=6.0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.nano
  * // Or access via domain
  * const samePkg = pantry.nanoeditororg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "nano-editor.org"
+ * console.log(pkg.name)        // "nano"
  * console.log(pkg.description) // "Free (GNU) replacement for the Pico text editor"
  * console.log(pkg.programs)    // ["nano"]
  * console.log(pkg.versions[0]) // "8.0.0" (latest)
@@ -32,7 +32,7 @@ export const nanoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'nano-editor.org' as const,
+  name: 'nano' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const nanoPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'nano',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nano -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nano' as const,
 }
 
 export type NanoPackage = typeof nanoPackage

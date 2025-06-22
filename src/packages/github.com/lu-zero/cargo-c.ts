@@ -6,7 +6,7 @@
  * @version `0.10.13` (25 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/lu-zero/cargo-c -- $SHELL -i`
+ * @install `launchpad install cargo-c`
  * @name `cargo-c`
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `libssh2.org`, `openssl.org^1.1`, ... (+1 more)
  *
@@ -48,7 +48,7 @@ export const cargocPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/lu-zero/cargo-c -- $SHELL -i' as const,
+  installCommand: 'launchpad install cargo-c' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -106,6 +106,8 @@ export const cargocPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/lu-zero/cargo-c -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cargo-c' as const,
 }
 
 export type CargocPackage = typeof cargocPackage

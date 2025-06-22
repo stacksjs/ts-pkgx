@@ -83,6 +83,8 @@ export const rav1ePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rav1e -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rav1e' as const,
 }
 
 export type Rav1ePackage = typeof rav1ePackage

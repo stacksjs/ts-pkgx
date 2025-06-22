@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install lz4`
- * @aliases `lz4`
+ * @name `lz4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.lz4
  * // Or access via domain
  * const samePkg = pantry.lz4org
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "lz4.org"
+ * console.log(pkg.name)        // "lz4"
  * console.log(pkg.description) // "Extremely Fast Compression algorithm"
  * console.log(pkg.programs)    // ["lz4"]
  * console.log(pkg.versions[0]) // "1.10.0" (latest)
@@ -31,7 +31,7 @@ export const lz4Package = {
   /**
    * The display name of this package.
    */
-  name: 'lz4.org' as const,
+  name: 'lz4' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -69,9 +69,9 @@ export const lz4Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'lz4',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) lz4 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lz4' as const,
 }
 
 export type Lz4Package = typeof lz4Package

@@ -1,11 +1,11 @@
-# difftastic
+# difft
 
 > a structural diff that understands syntax 🟥🟩
 
 ## Package Information
 
 - **Domain**: `wilfred.me.uk/difftastic`
-- **Name**: `difftastic`
+- **Name**: `difft`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wilfred.me.uk/difftastic/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install difft
 ## Programs
 
 This package provides the following executable programs:
-
-- `difft`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `difft`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +wilfred.me.uk/difftastic@0.64.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) difft -- $SHELL -i
 ```
 
 ## Usage Examples

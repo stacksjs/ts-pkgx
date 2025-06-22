@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rust-script`
- * @aliases `rust-script`
+ * @name `rust-script`
  * @companions `rust-lang.org`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.rustscript
  * // Or access via domain
  * const samePkg = pantry.rustscriptorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rust-script.org"
+ * console.log(pkg.name)        // "rust-script"
  * console.log(pkg.description) // "Run Rust files and expressions as scripts witho..."
  * console.log(pkg.programs)    // ["rust-script"]
  * console.log(pkg.versions[0]) // "0.35.0" (latest)
@@ -32,7 +32,7 @@ export const rustscriptPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rust-script.org' as const,
+  name: 'rust-script' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const rustscriptPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'rust-script',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rust-script -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rust-script' as const,
 }
 
 export type RustscriptPackage = typeof rustscriptPackage

@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/samwho/spacer@0.3.9 -- $SHELL -i
+sh <(curl https://pkgx.sh) spacer -- $SHELL -i
 ```
 
 ## Usage Examples

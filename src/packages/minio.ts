@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install minio`
- * @aliases `minio`
+ * @name `minio`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.minio
  * // Or access via domain
  * const samePkg = pantry.minio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "min.io"
+ * console.log(pkg.name)        // "minio"
  * console.log(pkg.description) // "MinIO is a high-performance, S3 compatible obje..."
  * console.log(pkg.programs)    // ["minio"]
  * console.log(pkg.versions[0]) // "2023.10.25.6.33.25" (latest)
@@ -31,7 +31,7 @@ export const minioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'min.io' as const,
+  name: 'minio' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const minioPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'minio',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) minio -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install minio' as const,
 }
 
 export type MinioPackage = typeof minioPackage

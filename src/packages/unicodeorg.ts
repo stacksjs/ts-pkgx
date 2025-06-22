@@ -6,7 +6,7 @@
  * @version `77.1.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +unicode.org -- $SHELL -i`
+ * @install `launchpad install unicode.org`
  *
  * @example
  * ```typescript
@@ -42,7 +42,7 @@ export const unicodeorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +unicode.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install unicode.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,6 +77,8 @@ export const unicodeorgPackage = {
     '71.1.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +unicode.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install unicode.org' as const,
 }
 
 export type UnicodeorgPackage = typeof unicodeorgPackage

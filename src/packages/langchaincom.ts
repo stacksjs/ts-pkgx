@@ -6,7 +6,7 @@
  * @version `0.1.16` (29 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +langchain.com -- $SHELL -i`
+ * @install `launchpad install langchain.com`
  * @dependencies `python.org^3.12`, `docker.com/compose^2.23`
  *
  * @example
@@ -43,7 +43,7 @@ export const langchaincomPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +langchain.com -- $SHELL -i' as const,
+  installCommand: 'launchpad install langchain.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -102,6 +102,8 @@ export const langchaincomPackage = {
     '0.0.343',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +langchain.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install langchain.com' as const,
 }
 
 export type LangchaincomPackage = typeof langchaincomPackage

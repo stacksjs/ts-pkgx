@@ -69,6 +69,8 @@ export const yjPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) yj -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install yj' as const,
 }
 
 export type YjPackage = typeof yjPackage

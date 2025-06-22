@@ -79,6 +79,8 @@ export const rbenvPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rbenv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rbenv' as const,
 }
 
 export type RbenvPackage = typeof rbenvPackage

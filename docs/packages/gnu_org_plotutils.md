@@ -1,11 +1,11 @@
-# plotutils
+# gnu.org/plotutils
 
 > C/C++ function library for exporting 2-D vector graphics
 
 ## Package Information
 
 - **Domain**: `gnu.org/plotutils`
-- **Name**: `plotutils`
+- **Name**: `gnu.org/plotutils`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/plotutils/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnu.org/plotutils -- $SHELL -i
+launchpad install gnu.org/plotutils
 ```
 
 ## Programs

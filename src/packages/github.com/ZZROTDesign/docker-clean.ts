@@ -77,6 +77,8 @@ export const dockercleanPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) docker-clean -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docker-clean' as const,
 }
 
 export type DockercleanPackage = typeof dockercleanPackage

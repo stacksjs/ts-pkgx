@@ -6,19 +6,19 @@
  * @version `0.21.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +jsonnet.org -- $SHELL -i`
- * @aliases `jsonnet`
+ * @install `launchpad install jsonnet`
+ * @name `jsonnet`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.jsonnet
  * // Or access via domain
  * const samePkg = pantry.jsonnetorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "jsonnet.org"
+ * console.log(pkg.name)        // "jsonnet"
  * console.log(pkg.description) // "Jsonnet - The data templating language"
  * console.log(pkg.programs)    // ["jsonnet", "jsonnetfmt"]
  * console.log(pkg.versions[0]) // "0.21.0" (latest)
@@ -31,7 +31,7 @@ export const jsonnetPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jsonnet.org' as const,
+  name: 'jsonnet' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const jsonnetPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +jsonnet.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install jsonnet' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,9 +70,9 @@ export const jsonnetPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jsonnet',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jsonnet.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jsonnet' as const,
 }
 
 export type JsonnetPackage = typeof jsonnetPackage

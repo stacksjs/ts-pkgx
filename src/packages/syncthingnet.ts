@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install syncthing`
- * @aliases `syncthing`
+ * @name `syncthing`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.syncthing
  * // Or access via domain
  * const samePkg = pantry.syncthingnet
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "syncthing.net"
+ * console.log(pkg.name)        // "syncthing"
  * console.log(pkg.description) // "Open source continuous file synchronization app..."
  * console.log(pkg.programs)    // ["syncthing"]
  * console.log(pkg.versions[0]) // "1.29.7" (latest)
@@ -31,7 +31,7 @@ export const syncthingPackage = {
   /**
    * The display name of this package.
    */
-  name: 'syncthing.net' as const,
+  name: 'syncthing' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -86,9 +86,9 @@ export const syncthingPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'syncthing',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) syncthing -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install syncthing' as const,
 }
 
 export type SyncthingPackage = typeof syncthingPackage

@@ -1,11 +1,11 @@
-# cli
+# docker/cli
 
 > Pack, ship and run any application as a lightweight container
 
 ## Package Information
 
 - **Domain**: `docker.com/cli`
-- **Name**: `cli`
+- **Name**: `docker/cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/docker.com/cli/package.yml)
 
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `docker`
-- `docker/cli`
 
 ## Available Versions
 
@@ -54,7 +53,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +docker.com/cli@28.2.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) docker -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -63,7 +62,7 @@ sh <(curl https://pkgx.sh) +docker.com/cli@28.2.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.docker/cli
+const pkg = pantry.docker
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

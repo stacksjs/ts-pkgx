@@ -5,7 +5,7 @@
  * @version `1.14.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +sympy.org -- $SHELL -i`
+ * @install `launchpad install sympy.org`
  * @dependencies `python.org>=3.11`
  *
  * @example
@@ -41,7 +41,7 @@ export const sympyorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +sympy.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install sympy.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -65,6 +65,8 @@ export const sympyorgPackage = {
     '1.12.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sympy.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sympy.org' as const,
 }
 
 export type SympyorgPackage = typeof sympyorgPackage

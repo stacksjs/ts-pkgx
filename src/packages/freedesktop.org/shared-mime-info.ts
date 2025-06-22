@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install update-mime-database`
- * @aliases `update-mime-database`
+ * @name `update-mime-database`
  * @dependencies `gnome.org/glib@2`, `gnu.org/gettext^0.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.updatemimedatabase
  * // Or access via domain
  * const samePkg = pantry.freedesktoporgsharedmimeinfo
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "shared-mime-info"
+ * console.log(pkg.name)        // "update-mime-database"
  * console.log(pkg.description) // "Database of common MIME types"
  * console.log(pkg.programs)    // ["update-mime-database"]
  * console.log(pkg.versions[0]) // "2.4.0" (latest)
@@ -32,7 +32,7 @@ export const updatemimedatabasePackage = {
   /**
    * The display name of this package.
    */
-  name: 'shared-mime-info' as const,
+  name: 'update-mime-database' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +78,9 @@ export const updatemimedatabasePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'update-mime-database',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) update-mime-database -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install update-mime-database' as const,
 }
 
 export type UpdatemimedatabasePackage = typeof updatemimedatabasePackage

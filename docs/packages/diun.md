@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crazymax.dev/diun@4.29.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) diun -- $SHELL -i
 ```
 
 ## Usage Examples

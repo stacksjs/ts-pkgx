@@ -1,11 +1,11 @@
 /**
- * **applewm** - pkgx package
+ * **x.org/applewm** - pkgx package
  *
  * @domain `x.org/applewm`
  * @version `1.4.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/applewm -- $SHELL -i`
+ * @install `launchpad install x.org/applewm`
  * @dependencies `x.org/x11`, `x.org/exts`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgapplewm
- * console.log(pkg.name)        // "applewm"
+ * console.log(pkg.name)        // "x.org/applewm"
  * console.log(pkg.versions[0]) // "1.4.1" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgapplewmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'applewm' as const,
+  name: 'x.org/applewm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const xorgapplewmPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/applewm -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/applewm' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -59,6 +59,8 @@ export const xorgapplewmPackage = {
     '1.4.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/applewm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/applewm' as const,
 }
 
 export type XorgapplewmPackage = typeof xorgapplewmPackage

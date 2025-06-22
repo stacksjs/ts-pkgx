@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install scons`
- * @aliases `scons`
+ * @name `scons`
  * @dependencies `python.org~3.11`, `linux:gnu.org/gcc>=10` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.scons
  * // Or access via domain
  * const samePkg = pantry.sconsorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "scons.org"
+ * console.log(pkg.name)        // "scons"
  * console.log(pkg.description) // "Substitute for classic 'make' tool with autocon..."
  * console.log(pkg.programs)    // ["scons"]
  * console.log(pkg.versions[0]) // "4.9.1" (latest)
@@ -32,7 +32,7 @@ export const sconsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'scons.org' as const,
+  name: 'scons' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -83,9 +83,9 @@ export const sconsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'scons',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) scons -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install scons' as const,
 }
 
 export type SconsPackage = typeof sconsPackage

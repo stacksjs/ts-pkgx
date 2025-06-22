@@ -1,11 +1,11 @@
-# LicensePlist
+# license-plist
 
 > A license list generator of all your dependencies for iOS applications
 
 ## Package Information
 
 - **Domain**: `github.com/mono0926/LicensePlist`
-- **Name**: `LicensePlist`
+- **Name**: `license-plist`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mono0926/LicensePlist/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install license-plist
 ## Programs
 
 This package provides the following executable programs:
-
-- `license-plist`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `license-plist`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/mono0926/LicensePlist@3.27.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) license-plist -- $SHELL -i
 ```
 
 ## Usage Examples

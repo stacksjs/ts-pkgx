@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install opencanaryd`
- * @aliases `opencanaryd`
+ * @name `opencanaryd`
  * @dependencies `python.org>=3.10<3.12`, `tcpdump.org`, `openssl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.opencanaryd
  * // Or access via domain
  * const samePkg = pantry.githubcomthinkstopencanary
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "opencanary"
+ * console.log(pkg.name)        // "opencanaryd"
  * console.log(pkg.description) // "Modular and decentralised honeypot"
  * console.log(pkg.programs)    // ["opencanaryd"]
  * console.log(pkg.versions[0]) // "0.9.6" (latest)
@@ -32,7 +32,7 @@ export const opencanarydPackage = {
   /**
    * The display name of this package.
    */
-  name: 'opencanary' as const,
+  name: 'opencanaryd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -81,9 +81,9 @@ export const opencanarydPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'opencanaryd',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) opencanaryd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install opencanaryd' as const,
 }
 
 export type OpencanarydPackage = typeof opencanarydPackage

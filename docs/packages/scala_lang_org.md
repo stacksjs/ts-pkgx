@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +scala-lang.org -- $SHELL -i
+launchpad install scala-lang.org
 ```
 
 ## Programs

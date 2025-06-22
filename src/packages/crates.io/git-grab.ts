@@ -72,6 +72,8 @@ export const gitgrabPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-grab -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-grab' as const,
 }
 
 export type GitgrabPackage = typeof gitgrabPackage

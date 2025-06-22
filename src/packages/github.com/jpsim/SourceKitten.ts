@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sourcekitten`
- * @aliases `sourcekitten`
+ * @name `sourcekitten`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sourcekitten
  * // Or access via domain
  * const samePkg = pantry.githubcomjpsimsourcekitten
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "SourceKitten"
+ * console.log(pkg.name)        // "sourcekitten"
  * console.log(pkg.description) // "An adorable little framework and command line t..."
  * console.log(pkg.programs)    // ["sourcekitten"]
  * console.log(pkg.versions[0]) // "0.37.2" (latest)
@@ -31,7 +31,7 @@ export const sourcekittenPackage = {
   /**
    * The display name of this package.
    */
-  name: 'SourceKitten' as const,
+  name: 'sourcekitten' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -73,9 +73,9 @@ export const sourcekittenPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sourcekitten',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sourcekitten -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sourcekitten' as const,
 }
 
 export type SourcekittenPackage = typeof sourcekittenPackage

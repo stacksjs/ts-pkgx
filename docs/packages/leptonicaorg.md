@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +leptonica.org -- $SHELL -i
+launchpad install leptonica.org
 ```
 
 ## Programs

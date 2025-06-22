@@ -84,6 +84,8 @@ export const imageflowtoolPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) imageflow_tool -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install imageflow_tool' as const,
 }
 
 export type ImageflowtoolPackage = typeof imageflowtoolPackage

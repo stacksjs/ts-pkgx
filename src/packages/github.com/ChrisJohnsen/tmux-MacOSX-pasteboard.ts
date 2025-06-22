@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install reattach-to-user-namespace`
- * @aliases `reattach-to-user-namespace`
+ * @name `reattach-to-user-namespace`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.reattachtousernamespace
  * // Or access via domain
  * const samePkg = pantry.githubcomchrisjohnsentmuxmacosxpasteboard
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tmux-MacOSX-pasteboard"
+ * console.log(pkg.name)        // "reattach-to-user-namespace"
  * console.log(pkg.description) // "Notes and workarounds for accessing the Mac OS ..."
  * console.log(pkg.programs)    // ["reattach-to-user-namespace"]
  * console.log(pkg.versions[0]) // "2.9.0" (latest)
@@ -31,7 +31,7 @@ export const reattachtousernamespacePackage = {
   /**
    * The display name of this package.
    */
-  name: 'tmux-MacOSX-pasteboard' as const,
+  name: 'reattach-to-user-namespace' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const reattachtousernamespacePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'reattach-to-user-namespace',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) reattach-to-user-namespace -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install reattach-to-user-namespace' as const,
 }
 
 export type ReattachtousernamespacePackage = typeof reattachtousernamespacePackage

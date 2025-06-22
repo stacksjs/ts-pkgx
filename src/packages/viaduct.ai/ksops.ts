@@ -70,6 +70,8 @@ export const ksopsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ksops -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ksops' as const,
 }
 
 export type KsopsPackage = typeof ksopsPackage

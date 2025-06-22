@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install stripe`
- * @aliases `stripe`
+ * @name `stripe`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.stripe
  * // Or access via domain
  * const samePkg = pantry.stripecom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "stripe.com"
+ * console.log(pkg.name)        // "stripe"
  * console.log(pkg.description) // "A command-line tool for Stripe"
  * console.log(pkg.programs)    // ["stripe"]
  * console.log(pkg.versions[0]) // "1.27.0" (latest)
@@ -31,7 +31,7 @@ export const stripePackage = {
   /**
    * The display name of this package.
    */
-  name: 'stripe.com' as const,
+  name: 'stripe' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -118,9 +118,9 @@ export const stripePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'stripe',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) stripe -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install stripe' as const,
 }
 
 export type StripePackage = typeof stripePackage

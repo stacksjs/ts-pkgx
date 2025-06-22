@@ -1,11 +1,11 @@
-# glog
+# google.com/glog
 
 > C++ implementation of the Google logging module
 
 ## Package Information
 
 - **Domain**: `google.com/glog`
-- **Name**: `glog`
+- **Name**: `google.com/glog`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/glog/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +google.com/glog -- $SHELL -i
+launchpad install google.com/glog
 ```
 
 ## Programs

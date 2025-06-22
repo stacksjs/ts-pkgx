@@ -1,11 +1,11 @@
-# bitwarden.com
+# bw
 
 > Secure and free password manager for all of your devices
 
 ## Package Information
 
 - **Domain**: `bitwarden.com`
-- **Name**: `bitwarden.com`
+- **Name**: `bw`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bitwarden.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install bw
 ## Programs
 
 This package provides the following executable programs:
-
-- `bw`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `bw`
 

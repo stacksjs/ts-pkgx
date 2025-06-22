@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) gleam
+launchpad install gleam
 ```
 
 ## Programs
@@ -45,7 +45,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gleam.run@1.11.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) gleam -- $SHELL -i
 ```
 
 ## Usage Examples

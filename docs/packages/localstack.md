@@ -1,11 +1,11 @@
-# cli
+# localstack
 
 > The LocalStack CLI packaged using pyinstaller
 
 ## Package Information
 
 - **Domain**: `localstack.cloud/cli`
-- **Name**: `cli`
+- **Name**: `localstack`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/localstack.cloud/cli/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install localstack
 ## Programs
 
 This package provides the following executable programs:
-
-- `localstack`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `localstack`
 
@@ -47,7 +41,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +localstack.cloud/cli@4.5.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) localstack -- $SHELL -i
 ```
 
 ## Dependencies

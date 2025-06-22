@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/0age/create2crunch@2024.12.23 -- $SHELL -i
+sh <(curl https://pkgx.sh) create2crunch -- $SHELL -i
 ```
 
 ## Usage Examples

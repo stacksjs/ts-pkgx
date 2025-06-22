@@ -94,6 +94,8 @@ export const buildxPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) buildx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install buildx' as const,
 }
 
 export type BuildxPackage = typeof buildxPackage

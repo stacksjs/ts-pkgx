@@ -1,11 +1,11 @@
-# gpt-engineer
+# GPT Engineer
 
 > Platform to experiment with the AI Software Engineer. Terminal based. NOTE: Very different from https://gptengineer.app
 
 ## Package Information
 
 - **Domain**: `github.com/AntonOsika/gpt-engineer`
-- **Name**: `gpt-engineer`
+- **Name**: `GPT Engineer`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/AntonOsika/gpt-engineer/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/AntonOsika/gpt-engineer -- $SHELL -i
+launchpad install github.com/AntonOsika/gpt-engineer
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `gpte`
 - `gpt-engineer`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `GPT Engineer`
 
 ## Available Versions
 

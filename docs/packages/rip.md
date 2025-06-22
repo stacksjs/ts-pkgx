@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/MilesCranmer/rip2@0.9.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) rip -- $SHELL -i
 ```
 
 ## Usage Examples

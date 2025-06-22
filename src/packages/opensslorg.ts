@@ -6,20 +6,20 @@
  * @version `3.5.0` (30 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +openssl.org -- $SHELL -i`
- * @aliases `OpenSSL`
+ * @install `launchpad install OpenSSL`
+ * @name `OpenSSL`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.OpenSSL
  * // Or access via domain
  * const samePkg = pantry.opensslorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "openssl.org"
+ * console.log(pkg.name)        // "OpenSSL"
  * console.log(pkg.description) // "TLS/SSL and crypto library with QUIC APIs"
  * console.log(pkg.programs)    // ["openssl", "c_rehash"]
  * console.log(pkg.versions[0]) // "3.5.0" (latest)
@@ -32,7 +32,7 @@ export const openSSLPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openssl.org' as const,
+  name: 'OpenSSL' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const openSSLPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +openssl.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install OpenSSL' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -105,9 +105,9 @@ export const openSSLPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'OpenSSL',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openssl.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install OpenSSL' as const,
 }
 
 export type OpenSSLPackage = typeof openSSLPackage

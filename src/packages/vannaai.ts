@@ -5,20 +5,20 @@
  * @version `0.7.9` (42 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +vanna.ai -- $SHELL -i`
- * @aliases `Vanna`
+ * @install `launchpad install Vanna`
+ * @name `Vanna`
  * @dependencies `python.org~3.12`, `linux:openmp.llvm.org^17 # needed by chromadb` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.Vanna
  * // Or access via domain
  * const samePkg = pantry.vannaai
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "vanna.ai"
+ * console.log(pkg.name)        // "Vanna"
  * console.log(pkg.description) // "🤖 Chat with your SQL database 📊. Accurate Tex..."
  * console.log(pkg.versions[0]) // "0.7.9" (latest)
  * ```
@@ -30,7 +30,7 @@ export const vannaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'vanna.ai' as const,
+  name: 'Vanna' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +46,7 @@ export const vannaPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +vanna.ai -- $SHELL -i' as const,
+  installCommand: 'launchpad install Vanna' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -110,9 +110,9 @@ export const vannaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'Vanna',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +vanna.ai -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install Vanna' as const,
 }
 
 export type VannaPackage = typeof vannaPackage

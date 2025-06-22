@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +stedolan.github.io/jq@1.8.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) jq -- $SHELL -i
 ```
 
 ## Dependencies

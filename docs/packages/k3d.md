@@ -1,11 +1,11 @@
-# k3d.io
+# k3d
 
 > Little helper to run CNCF's k3s in Docker
 
 ## Package Information
 
 - **Domain**: `k3d.io`
-- **Name**: `k3d.io`
+- **Name**: `k3d`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/k3d.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install k3d
 ## Programs
 
 This package provides the following executable programs:
-
-- `k3d`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `k3d`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +k3d.io@5.8.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) k3d -- $SHELL -i
 ```
 
 ## Usage Examples

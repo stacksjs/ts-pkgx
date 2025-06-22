@@ -69,6 +69,8 @@ export const whenPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) when -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install when' as const,
 }
 
 export type WhenPackage = typeof whenPackage

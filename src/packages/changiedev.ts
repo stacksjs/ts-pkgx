@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install changie`
- * @aliases `changie`
+ * @name `changie`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.changie
  * // Or access via domain
  * const samePkg = pantry.changiedev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "changie.dev"
+ * console.log(pkg.name)        // "changie"
  * console.log(pkg.description) // "Automated changelog tool for preparing releases..."
  * console.log(pkg.programs)    // ["changie"]
  * console.log(pkg.versions[0]) // "1.22.0" (latest)
@@ -31,7 +31,7 @@ export const changiePackage = {
   /**
    * The display name of this package.
    */
-  name: 'changie.dev' as const,
+  name: 'changie' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,7 @@ export const changiePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'changie',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) changie -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install changie' as const,
 }

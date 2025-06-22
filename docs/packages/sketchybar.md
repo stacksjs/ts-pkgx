@@ -1,11 +1,11 @@
-# SketchyBar
+# sketchybar
 
 > A highly customizable macOS status bar replacement
 
 ## Package Information
 
 - **Domain**: `felixkratz.github.io/SketchyBar`
-- **Name**: `SketchyBar`
+- **Name**: `sketchybar`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/felixkratz.github.io/SketchyBar/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install sketchybar
 ## Programs
 
 This package provides the following executable programs:
-
-- `sketchybar`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `sketchybar`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +felixkratz.github.io/SketchyBar@2.22.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) sketchybar -- $SHELL -i
 ```
 
 ## Dependencies

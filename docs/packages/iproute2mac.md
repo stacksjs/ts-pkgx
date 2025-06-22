@@ -1,11 +1,11 @@
-# iproute2mac
+# github.com/brona/iproute2mac
 
 > CLI wrapper for basic network utilites on Mac OS X inspired with iproute2 on Linux systems - ip command.
 
 ## Package Information
 
 - **Domain**: `github.com/brona/iproute2mac`
-- **Name**: `iproute2mac`
+- **Name**: `github.com/brona/iproute2mac`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/brona/iproute2mac/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/brona/iproute2mac -- $SHELL -i
+launchpad install github.com/brona/iproute2mac
 ```
 
 ## Programs

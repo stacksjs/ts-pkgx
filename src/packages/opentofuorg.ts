@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tofu`
- * @aliases `tofu`
+ * @name `tofu`
  * @dependencies `linux:gnu.org/gcc/libstdcxx` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tofu
  * // Or access via domain
  * const samePkg = pantry.opentofuorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "opentofu.org"
+ * console.log(pkg.name)        // "tofu"
  * console.log(pkg.description) // "OpenTofu lets you declaratively manage your clo..."
  * console.log(pkg.programs)    // ["tofu"]
  * console.log(pkg.versions[0]) // "1.9.1" (latest)
@@ -32,7 +32,7 @@ export const tofuPackage = {
   /**
    * The display name of this package.
    */
-  name: 'opentofu.org' as const,
+  name: 'tofu' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -94,9 +94,9 @@ export const tofuPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tofu',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tofu -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tofu' as const,
 }
 
 export type TofuPackage = typeof tofuPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +lima-vm.io -- $SHELL -i
+launchpad install lima-vm.io
 ```
 
 ## Programs

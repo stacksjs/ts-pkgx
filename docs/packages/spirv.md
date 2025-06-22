@@ -1,11 +1,11 @@
-# SPIRV-Tools
+# spirv
 
 > API and commands for processing SPIR-V modules
 
 ## Package Information
 
 - **Domain**: `khronos.org/SPIRV-Tools`
-- **Name**: `SPIRV-Tools`
+- **Name**: `spirv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/khronos.org/SPIRV-Tools/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +khronos.org/SPIRV-Tools -- $SHELL -i
+launchpad install spirv
 ```
 
 ## Programs
@@ -30,12 +30,6 @@ This package provides the following executable programs:
 - `spirv-opt`
 - `spirv-reduce`
 - `spirv-val`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `spirv`
 
 ## Available Versions
 

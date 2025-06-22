@@ -1,18 +1,18 @@
 /**
- * **mpc** - pkgx package
+ * **gnu.org/mpc** - pkgx package
  *
  * @domain `gnu.org/mpc`
  * @version `1.3.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnu.org/mpc -- $SHELL -i`
+ * @install `launchpad install gnu.org/mpc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgmpc
- * console.log(pkg.name)        // "mpc"
+ * console.log(pkg.name)        // "gnu.org/mpc"
  * console.log(pkg.versions[0]) // "1.3.1" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const gnuorgmpcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mpc' as const,
+  name: 'gnu.org/mpc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +39,7 @@ export const gnuorgmpcPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnu.org/mpc -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnu.org/mpc' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -51,6 +51,8 @@ export const gnuorgmpcPackage = {
     '1.3.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/mpc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/mpc' as const,
 }
 
 export type GnuorgmpcPackage = typeof gnuorgmpcPackage

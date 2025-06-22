@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install opa`
- * @aliases `opa`
+ * @name `opa`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.opa
  * // Or access via domain
  * const samePkg = pantry.openpolicyagentorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "openpolicyagent.org"
+ * console.log(pkg.name)        // "opa"
  * console.log(pkg.description) // "Open Policy Agent (OPA) is an open source, gene..."
  * console.log(pkg.programs)    // ["opa"]
  * console.log(pkg.versions[0]) // "1.5.1" (latest)
@@ -31,7 +31,7 @@ export const opaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openpolicyagent.org' as const,
+  name: 'opa' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -93,9 +93,9 @@ export const opaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'opa',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) opa -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install opa' as const,
 }
 
 export type OpaPackage = typeof opaPackage

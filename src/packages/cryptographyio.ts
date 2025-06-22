@@ -5,7 +5,7 @@
  * @version `45.0.4` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +cryptography.io -- $SHELL -i`
+ * @install `launchpad install cryptography.io`
  * @dependencies `python.org>=3.11`, `github.com/python-cffi/cffi^1.16`, `openssl.org>=1.1`
  *
  * @example
@@ -41,7 +41,7 @@ export const cryptographyioPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +cryptography.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install cryptography.io' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -81,6 +81,8 @@ export const cryptographyioPackage = {
     '42.0.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cryptography.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cryptography.io' as const,
 }
 
 export type CryptographyioPackage = typeof cryptographyioPackage

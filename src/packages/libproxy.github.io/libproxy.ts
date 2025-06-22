@@ -90,6 +90,8 @@ export const proxyPackage = {
   aliases: [
     'proxy',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) proxy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install proxy' as const,
 }
 
 export type ProxyPackage = typeof proxyPackage

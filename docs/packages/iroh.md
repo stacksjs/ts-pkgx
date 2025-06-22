@@ -1,11 +1,11 @@
-# iroh.computer
+# iroh
 
 > peer-2-peer that just works
 
 ## Package Information
 
 - **Domain**: `iroh.computer`
-- **Name**: `iroh.computer`
+- **Name**: `iroh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/iroh.computer/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install iroh
 ## Programs
 
 This package provides the following executable programs:
-
-- `iroh`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `iroh`
 
@@ -49,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +iroh.computer@0.35.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) iroh -- $SHELL -i
 ```
 
 ## Usage Examples

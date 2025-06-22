@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aws-whoami`
- * @aliases `aws-whoami`
+ * @name `aws-whoami`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.awswhoami
  * // Or access via domain
  * const samePkg = pantry.githubcombenkehoeawswhoamigolang
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "aws-whoami-golang"
+ * console.log(pkg.name)        // "aws-whoami"
  * console.log(pkg.description) // "A tool to show what AWS account and identity yo..."
  * console.log(pkg.programs)    // ["aws-whoami"]
  * console.log(pkg.versions[0]) // "2.6.0" (latest)
@@ -31,7 +31,7 @@ export const awswhoamiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'aws-whoami-golang' as const,
+  name: 'aws-whoami' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const awswhoamiPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'aws-whoami',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aws-whoami -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install aws-whoami' as const,
 }
 
 export type AwswhoamiPackage = typeof awswhoamiPackage

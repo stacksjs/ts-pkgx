@@ -6,20 +6,20 @@
  * @version `1.26.0` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/bazelbuild/bazelisk -- $SHELL -i`
- * @aliases `bazel`
+ * @install `launchpad install bazel`
+ * @name `bazel`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.bazel
  * // Or access via domain
  * const samePkg = pantry.githubcombazelbuildbazelisk
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "bazelisk"
+ * console.log(pkg.name)        // "bazel"
  * console.log(pkg.description) // "A user-friendly launcher for Bazel."
  * console.log(pkg.programs)    // ["bazel", "bazelisk"]
  * console.log(pkg.versions[0]) // "1.26.0" (latest)
@@ -32,7 +32,7 @@ export const bazelPackage = {
   /**
    * The display name of this package.
    */
-  name: 'bazelisk' as const,
+  name: 'bazel' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const bazelPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/bazelbuild/bazelisk -- $SHELL -i' as const,
+  installCommand: 'launchpad install bazel' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -85,9 +85,9 @@ export const bazelPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'bazel',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/bazelbuild/bazelisk -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bazel' as const,
 }
 
 export type BazelPackage = typeof bazelPackage

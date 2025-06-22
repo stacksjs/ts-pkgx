@@ -1,11 +1,11 @@
-# popt
+# rpm.org/popt
 
 > C library for parsing command line parameters
 
 ## Package Information
 
 - **Domain**: `rpm.org/popt`
-- **Name**: `popt`
+- **Name**: `rpm.org/popt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rpm.org/popt/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +rpm.org/popt -- $SHELL -i
+launchpad install rpm.org/popt
 ```
 
 ## Programs

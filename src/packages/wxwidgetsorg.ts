@@ -6,7 +6,7 @@
  * @version `3.3.0` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +wxwidgets.org -- $SHELL -i`
+ * @install `launchpad install wxwidgets.org`
  * @dependencies `libjpeg-turbo.org`, `libpng.org`, `simplesystems.org/libtiff`, ... (+6 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -43,7 +43,7 @@ export const wxwidgetsorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +wxwidgets.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install wxwidgets.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,6 +84,8 @@ export const wxwidgetsorgPackage = {
     '3.2.3',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wxwidgets.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wxwidgets.org' as const,
 }
 
 export type WxwidgetsorgPackage = typeof wxwidgetsorgPackage

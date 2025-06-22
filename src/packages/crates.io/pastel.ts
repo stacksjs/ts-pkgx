@@ -69,6 +69,8 @@ export const pastelPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pastel -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pastel' as const,
 }
 
 export type PastelPackage = typeof pastelPackage

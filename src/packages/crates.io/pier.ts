@@ -70,6 +70,8 @@ export const pierPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pier -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pier' as const,
 }
 
 export type PierPackage = typeof pierPackage

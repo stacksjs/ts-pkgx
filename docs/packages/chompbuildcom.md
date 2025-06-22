@@ -1,11 +1,11 @@
-# chompbuild.com
+# chomp
 
 > 'JS Make' - parallel task runner for the frontend ecosystem with a JS extension system.
 
 ## Package Information
 
 - **Domain**: `chompbuild.com`
-- **Name**: `chompbuild.com`
+- **Name**: `chomp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/chompbuild.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install chomp
 ## Programs
 
 This package provides the following executable programs:
-
-- `chomp`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `chomp`
 

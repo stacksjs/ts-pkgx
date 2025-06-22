@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install onig-config`
- * @aliases `onig-config`
+ * @name `onig-config`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.onigconfig
  * // Or access via domain
  * const samePkg = pantry.githubcomkkosoniguruma
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "oniguruma"
+ * console.log(pkg.name)        // "onig-config"
  * console.log(pkg.description) // "Regular expressions library"
  * console.log(pkg.programs)    // ["onig-config"]
  * console.log(pkg.versions[0]) // "6.9.10" (latest)
@@ -31,7 +31,7 @@ export const onigconfigPackage = {
   /**
    * The display name of this package.
    */
-  name: 'oniguruma' as const,
+  name: 'onig-config' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -70,9 +70,9 @@ export const onigconfigPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'onig-config',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) onig-config -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install onig-config' as const,
 }
 
 export type OnigconfigPackage = typeof onigconfigPackage

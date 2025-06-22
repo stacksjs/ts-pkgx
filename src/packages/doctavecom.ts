@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install doctave`
- * @aliases `doctave`
+ * @name `doctave`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.doctave
  * // Or access via domain
  * const samePkg = pantry.doctavecom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "doctave.com"
+ * console.log(pkg.name)        // "doctave"
  * console.log(pkg.description) // "A batteries-included developer documentation si..."
  * console.log(pkg.programs)    // ["doctave"]
  * console.log(pkg.versions[0]) // "0.4.2" (latest)
@@ -31,7 +31,7 @@ export const doctavePackage = {
   /**
    * The display name of this package.
    */
-  name: 'doctave.com' as const,
+  name: 'doctave' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const doctavePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'doctave',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) doctave -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install doctave' as const,
 }
 
 export type DoctavePackage = typeof doctavePackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +unixodbc.org -- $SHELL -i
+launchpad install unixodbc.org
 ```
 
 ## Programs

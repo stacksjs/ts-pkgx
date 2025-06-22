@@ -1,11 +1,11 @@
-# protobuf-go
+# protoc-gen-go
 
 > Go support for Google's protocol buffers
 
 ## Package Information
 
 - **Domain**: `google.com/protobuf-go`
-- **Name**: `protobuf-go`
+- **Name**: `protoc-gen-go`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/protobuf-go/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install protoc-gen-go
 ## Programs
 
 This package provides the following executable programs:
-
-- `protoc-gen-go`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `protoc-gen-go`
 
@@ -45,12 +39,12 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +google.com/protobuf-go@1.36.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) protoc-gen-go -- $SHELL -i
 ```
 
 ## Related Packages
 
-These packages work well with protobuf-go:
+These packages work well with protoc-gen-go:
 
 - [`protobuf.dev`](protobufdev.md) - Protocol Buffers - Google's data interchange format
 

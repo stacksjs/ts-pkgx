@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +rubygems.org -- $SHELL -i
+launchpad install rubygems.org
 ```
 
 ## Programs

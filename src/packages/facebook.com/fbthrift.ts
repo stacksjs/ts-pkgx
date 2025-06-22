@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install thrift1`
- * @aliases `thrift1`
+ * @name `thrift1`
  * @dependencies `github.com/facebookincubator/fizz`, `facebook.com/folly`, `facebook.com/wangle`, ... (+10 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.thrift1
  * // Or access via domain
  * const samePkg = pantry.facebookcomfbthrift
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "fbthrift"
+ * console.log(pkg.name)        // "thrift1"
  * console.log(pkg.description) // "Facebook's branch of Apache Thrift, including a..."
  * console.log(pkg.programs)    // ["thrift1"]
  * console.log(pkg.versions[0]) // "2025.6.9.0" (latest)
@@ -32,7 +32,7 @@ export const thrift1Package = {
   /**
    * The display name of this package.
    */
-  name: 'fbthrift' as const,
+  name: 'thrift1' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -164,9 +164,9 @@ export const thrift1Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'thrift1',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) thrift1 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install thrift1' as const,
 }
 
 export type Thrift1Package = typeof thrift1Package

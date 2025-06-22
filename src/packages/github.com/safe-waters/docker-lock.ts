@@ -76,6 +76,8 @@ export const dockerlockPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) docker-lock -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docker-lock' as const,
 }
 
 export type DockerlockPackage = typeof dockerlockPackage

@@ -1,11 +1,11 @@
-# psycopg3
+# psycopg.org/psycopg3
 
 > New generation PostgreSQL database adapter for the Python programming language
 
 ## Package Information
 
 - **Domain**: `psycopg.org/psycopg3`
-- **Name**: `psycopg3`
+- **Name**: `psycopg.org/psycopg3`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/psycopg.org/psycopg3/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +psycopg.org/psycopg3 -- $SHELL -i
+launchpad install psycopg.org/psycopg3
 ```
 
 ## Programs

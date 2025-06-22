@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnupg.org -- $SHELL -i
+launchpad install gnupg.org
 ```
 
 ## Programs

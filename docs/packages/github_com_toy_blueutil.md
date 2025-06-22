@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/toy/blueutil@2.12.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) blueutil -- $SHELL -i
 ```
 
 ## Usage Examples

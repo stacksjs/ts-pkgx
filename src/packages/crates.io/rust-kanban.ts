@@ -83,6 +83,8 @@ export const rustkanbanPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rust-kanban -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rust-kanban' as const,
 }
 
 export type RustkanbanPackage = typeof rustkanbanPackage

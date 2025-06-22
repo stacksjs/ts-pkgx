@@ -78,6 +78,8 @@ export const sccPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) scc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install scc' as const,
 }
 
 export type SccPackage = typeof sccPackage

@@ -1,11 +1,11 @@
 /**
- * **xrandr** - pkgx package
+ * **x.org/xrandr** - pkgx package
  *
  * @domain `x.org/xrandr`
  * @version `1.5.4` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/xrandr -- $SHELL -i`
+ * @install `launchpad install x.org/xrandr`
  * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/exts`, ... (+1 more)
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgxrandr
- * console.log(pkg.name)        // "xrandr"
+ * console.log(pkg.name)        // "x.org/xrandr"
  * console.log(pkg.versions[0]) // "1.5.4" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgxrandrPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xrandr' as const,
+  name: 'x.org/xrandr' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const xorgxrandrPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/xrandr -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/xrandr' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -62,6 +62,8 @@ export const xorgxrandrPackage = {
     '1.5.3',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xrandr -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/xrandr' as const,
 }
 
 export type XorgxrandrPackage = typeof xorgxrandrPackage

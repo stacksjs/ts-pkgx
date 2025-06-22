@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xc`
- * @aliases `xc`
+ * @name `xc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.xc
  * // Or access via domain
  * const samePkg = pantry.xcfiledev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "xcfile.dev"
+ * console.log(pkg.name)        // "xc"
  * console.log(pkg.description) // "Markdown defined task runner."
  * console.log(pkg.programs)    // ["xc"]
  * console.log(pkg.versions[0]) // "0.8.5" (latest)
@@ -31,7 +31,7 @@ export const xcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xcfile.dev' as const,
+  name: 'xc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -94,9 +94,9 @@ export const xcPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'xc',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xc' as const,
 }
 
 export type XcPackage = typeof xcPackage

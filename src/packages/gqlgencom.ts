@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gqlgen`
- * @aliases `gqlgen`
+ * @name `gqlgen`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gqlgen
  * // Or access via domain
  * const samePkg = pantry.gqlgencom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gqlgen.com"
+ * console.log(pkg.name)        // "gqlgen"
  * console.log(pkg.description) // "go generate based graphql server library"
  * console.log(pkg.programs)    // ["gqlgen"]
  * console.log(pkg.versions[0]) // "0.17.75" (latest)
@@ -31,7 +31,7 @@ export const gqlgenPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gqlgen.com' as const,
+  name: 'gqlgen' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -106,9 +106,9 @@ export const gqlgenPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gqlgen',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gqlgen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gqlgen' as const,
 }
 
 export type GqlgenPackage = typeof gqlgenPackage

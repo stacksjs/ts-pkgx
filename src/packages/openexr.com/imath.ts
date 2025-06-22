@@ -1,18 +1,18 @@
 /**
- * **imath** - Imath is a C++ and python library of 2D and 3D vector, matrix, and math operations for computer graphics
+ * **openexr.com/imath** - Imath is a C++ and python library of 2D and 3D vector, matrix, and math operations for computer graphics
  *
  * @domain `openexr.com/imath`
  * @version `3.1.12` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +openexr.com/imath -- $SHELL -i`
+ * @install `launchpad install openexr.com/imath`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.openexrcomimath
- * console.log(pkg.name)        // "imath"
+ * console.log(pkg.name)        // "openexr.com/imath"
  * console.log(pkg.description) // "Imath is a C++ and python library of 2D and 3D ..."
  * console.log(pkg.versions[0]) // "3.1.12" (latest)
  * ```
@@ -24,7 +24,7 @@ export const openexrcomimathPackage = {
   /**
    * The display name of this package.
    */
-  name: 'imath' as const,
+  name: 'openexr.com/imath' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const openexrcomimathPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +openexr.com/imath -- $SHELL -i' as const,
+  installCommand: 'launchpad install openexr.com/imath' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -57,6 +57,8 @@ export const openexrcomimathPackage = {
     '3.1.7',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openexr.com/imath -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openexr.com/imath' as const,
 }
 
 export type OpenexrcomimathPackage = typeof openexrcomimathPackage

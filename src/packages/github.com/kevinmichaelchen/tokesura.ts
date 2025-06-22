@@ -69,6 +69,8 @@ export const tokesuraPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tokesura -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tokesura' as const,
 }
 
 export type TokesuraPackage = typeof tokesuraPackage

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install steampipe`
- * @aliases `steampipe`
+ * @name `steampipe`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.steampipe
  * // Or access via domain
  * const samePkg = pantry.steampipeio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "steampipe.io"
+ * console.log(pkg.name)        // "steampipe"
  * console.log(pkg.description) // "Zero-ETL, infinite possibilities. Live query AP..."
  * console.log(pkg.programs)    // ["steampipe"]
  * console.log(pkg.versions[0]) // "2.0.1" (latest)
@@ -31,7 +31,7 @@ export const steampipePackage = {
   /**
    * The display name of this package.
    */
-  name: 'steampipe.io' as const,
+  name: 'steampipe' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -103,9 +103,9 @@ export const steampipePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'steampipe',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) steampipe -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install steampipe' as const,
 }
 
 export type SteampipePackage = typeof steampipePackage

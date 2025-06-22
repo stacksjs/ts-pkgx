@@ -1,11 +1,11 @@
-# alsa-lib
+# aserver
 
 > Provides audio and MIDI functionality to the Linux operating system
 
 ## Package Information
 
 - **Domain**: `alsa-project.org/alsa-lib`
-- **Name**: `alsa-lib`
+- **Name**: `aserver`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/alsa-project.org/alsa-lib/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install aserver
 ## Programs
 
 This package provides the following executable programs:
-
-- `aserver`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `aserver`
 

@@ -1,11 +1,11 @@
-# build
+# pyproject-build
 
 > A simple, correct Python build frontend
 
 ## Package Information
 
 - **Domain**: `github.com/pypa/build`
-- **Name**: `build`
+- **Name**: `pyproject-build`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/pypa/build/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install pyproject-build
 ## Programs
 
 This package provides the following executable programs:
-
-- `pyproject-build`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pyproject-build`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/pypa/build@1.2.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) pyproject-build -- $SHELL -i
 ```
 
 ## Dependencies

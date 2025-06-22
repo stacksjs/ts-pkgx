@@ -90,6 +90,8 @@ export const regbotPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) regbot -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install regbot' as const,
 }
 
 export type RegbotPackage = typeof regbotPackage

@@ -4,31 +4,30 @@
 
 ## Package Information
 
-- **Domain**: `github.com/deepmap/oapi-codegen`
+- **Domain**: `github.com/oapi-codegen/oapi-codegen`
 - **Name**: `oapi-codegen`
 - **Homepage**: Not specified
-- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/deepmap/oapi-codegen/package.yml)
+- **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/oapi-codegen/oapi-codegen/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/deepmap/oapi-codegen -- $SHELL -i
+launchpad install oapi-codegen
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `oapi-codegen`
 
 ## Available Versions
 
 <details>
-<summary>Show all 10 versions</summary>
+<summary>Show all 3 versions</summary>
 
-- `2.4.1`, `2.4.0`, `2.3.0`, `2.2.0`, `2.1.0`
-- `2.0.0`, `1.16.2`, `1.16.1`, `1.16.0`, `1.15.0`
+- `2.4.1`, `2.4.0`, `2.3.0`
 
 </details>
 
@@ -38,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/deepmap/oapi-codegen@2.4.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) oapi-codegen -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +55,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 ## Links
 
-- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/deepmap/oapi-codegen/package.yml)
+- [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/oapi-codegen/oapi-codegen/package.yml)
 - [Homepage](#)
 - [Back to Package Catalog](../package-catalog.md)
 

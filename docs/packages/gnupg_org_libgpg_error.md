@@ -1,11 +1,11 @@
-# libgpg-error
+# gnupg.org/libgpg-error
 
 > Common error values for all GnuPG components
 
 ## Package Information
 
 - **Domain**: `gnupg.org/libgpg-error`
-- **Name**: `libgpg-error`
+- **Name**: `gnupg.org/libgpg-error`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/libgpg-error/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnupg.org/libgpg-error -- $SHELL -i
+launchpad install gnupg.org/libgpg-error
 ```
 
 ## Programs

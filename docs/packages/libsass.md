@@ -1,11 +1,11 @@
-# libsass
+# sass-lang.com/libsass
 
 > A C/C++ implementation of a Sass compiler
 
 ## Package Information
 
 - **Domain**: `sass-lang.com/libsass`
-- **Name**: `libsass`
+- **Name**: `sass-lang.com/libsass`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sass-lang.com/libsass/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +sass-lang.com/libsass -- $SHELL -i
+launchpad install sass-lang.com/libsass
 ```
 
 ## Programs

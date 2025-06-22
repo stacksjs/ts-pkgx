@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gomplate`
- * @aliases `gomplate`
+ * @name `gomplate`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gomplate
  * // Or access via domain
  * const samePkg = pantry.gomplateca
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gomplate.ca"
+ * console.log(pkg.name)        // "gomplate"
  * console.log(pkg.description) // "A flexible commandline tool for template render..."
  * console.log(pkg.programs)    // ["gomplate"]
  * console.log(pkg.versions[0]) // "4.3.2" (latest)
@@ -31,7 +31,7 @@ export const gomplatePackage = {
   /**
    * The display name of this package.
    */
-  name: 'gomplate.ca' as const,
+  name: 'gomplate' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +78,9 @@ export const gomplatePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gomplate',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gomplate -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gomplate' as const,
 }
 
 export type GomplatePackage = typeof gomplatePackage

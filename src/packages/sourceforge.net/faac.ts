@@ -69,6 +69,8 @@ export const faacPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) faac -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install faac' as const,
 }
 
 export type FaacPackage = typeof faacPackage

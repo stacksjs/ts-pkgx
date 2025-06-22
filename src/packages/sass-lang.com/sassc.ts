@@ -76,6 +76,8 @@ export const sasscPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sassc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sassc' as const,
 }
 
 export type SasscPackage = typeof sasscPackage

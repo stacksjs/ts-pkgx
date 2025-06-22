@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install markdownlint`
- * @aliases `markdownlint`
+ * @name `markdownlint`
  * @dependencies `nodejs.org^18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.markdownlint
  * // Or access via domain
  * const samePkg = pantry.githubcomigorshubovychmarkdownlintcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "markdownlint-cli"
+ * console.log(pkg.name)        // "markdownlint"
  * console.log(pkg.description) // "CLI for Node.js style checker and lint tool for..."
  * console.log(pkg.programs)    // ["markdownlint"]
  * console.log(pkg.versions[0]) // "0.45.0" (latest)
@@ -32,7 +32,7 @@ export const markdownlintPackage = {
   /**
    * The display name of this package.
    */
-  name: 'markdownlint-cli' as const,
+  name: 'markdownlint' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +78,9 @@ export const markdownlintPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'markdownlint',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) markdownlint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install markdownlint' as const,
 }
 
 export type MarkdownlintPackage = typeof markdownlintPackage

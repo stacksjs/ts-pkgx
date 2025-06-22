@@ -1,11 +1,11 @@
-# autoconf
+# gnu.org/autoconf
 
 > Automatic configure script builder
 
 ## Package Information
 
 - **Domain**: `gnu.org/autoconf`
-- **Name**: `autoconf`
+- **Name**: `gnu.org/autoconf`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/autoconf/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnu.org/autoconf -- $SHELL -i
+launchpad install gnu.org/autoconf
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/ebiggers/libdeflate -- $SHELL -i
+launchpad install libdeflate
 ```
 
 ## Programs

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ocrmypdf`
- * @aliases `ocrmypdf`
+ * @name `ocrmypdf`
  * @dependencies `pkgx.sh^1`, `qpdf.sourceforge.io^12 # as of 16.10.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ocrmypdf
  * // Or access via domain
  * const samePkg = pantry.githubcomocrmypdfocrmypdf
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "OCRmyPDF"
+ * console.log(pkg.name)        // "ocrmypdf"
  * console.log(pkg.description) // "OCRmyPDF adds an OCR text layer to scanned PDF ..."
  * console.log(pkg.programs)    // ["ocrmypdf"]
  * console.log(pkg.versions[0]) // "16.10.2" (latest)
@@ -32,7 +32,7 @@ export const ocrmypdfPackage = {
   /**
    * The display name of this package.
    */
-  name: 'OCRmyPDF' as const,
+  name: 'ocrmypdf' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -111,9 +111,9 @@ export const ocrmypdfPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ocrmypdf',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ocrmypdf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ocrmypdf' as const,
 }
 
 export type OcrmypdfPackage = typeof ocrmypdfPackage

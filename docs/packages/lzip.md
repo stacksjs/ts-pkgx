@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +nongnu.org/lzip@1.23.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) lzip -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install supabase`
- * @aliases `supabase`
+ * @name `supabase`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.supabase
  * // Or access via domain
  * const samePkg = pantry.supabasecomcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cli"
+ * console.log(pkg.name)        // "supabase"
  * console.log(pkg.description) // "Supabase CLI. Manage postgres migrations, run S..."
  * console.log(pkg.programs)    // ["supabase"]
  * console.log(pkg.versions[0]) // "2.26.9" (latest)
@@ -31,7 +31,7 @@ export const supabasePackage = {
   /**
    * The display name of this package.
    */
-  name: 'cli' as const,
+  name: 'supabase' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -243,9 +243,9 @@ export const supabasePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'supabase',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) supabase -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install supabase' as const,
 }
 
 export type SupabasePackage = typeof supabasePackage

@@ -1,11 +1,11 @@
-# cli
+# devpod
 
 > Codespaces but open-source, client-only and unopinionated: Works with any IDE and lets you use any cloud, kubernetes or just localhost docker.
 
 ## Package Information
 
 - **Domain**: `devpod.sh/cli`
-- **Name**: `cli`
+- **Name**: `devpod`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/devpod.sh/cli/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install devpod
 ## Programs
 
 This package provides the following executable programs:
-
-- `devpod`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `devpod`
 
@@ -49,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +devpod.sh/cli@0.6.15 -- $SHELL -i
+sh <(curl https://pkgx.sh) devpod -- $SHELL -i
 ```
 
 ## Usage Examples

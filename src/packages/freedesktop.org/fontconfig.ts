@@ -1,12 +1,12 @@
 /**
- * **fontconfig** - XML-based font configuration API for X Windows
+ * **freedesktop.org/fontconfig** - XML-based font configuration API for X Windows
  *
  * @domain `freedesktop.org/fontconfig`
  * @programs `fc-cache`, `fc-cat`, `fc-conflist`, `fc-list`, `fc-match`, ... (+4 more)
  * @version `2.16.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +freedesktop.org/fontconfig -- $SHELL -i`
+ * @install `launchpad install freedesktop.org/fontconfig`
  * @dependencies `sourceware.org/bzip2@1`, `freetype.org@2`, `zlib.net@1`, ... (+2 more)
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.freedesktoporgfontconfig
- * console.log(pkg.name)        // "fontconfig"
+ * console.log(pkg.name)        // "freedesktop.org/fontconfig"
  * console.log(pkg.description) // "XML-based font configuration API for X Windows"
  * console.log(pkg.programs)    // ["fc-cache", "fc-cat", ...]
  * console.log(pkg.versions[0]) // "2.16.0" (latest)
@@ -27,7 +27,7 @@ export const freedesktoporgfontconfigPackage = {
   /**
    * The display name of this package.
    */
-  name: 'fontconfig' as const,
+  name: 'freedesktop.org/fontconfig' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const freedesktoporgfontconfigPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +freedesktop.org/fontconfig -- $SHELL -i' as const,
+  installCommand: 'launchpad install freedesktop.org/fontconfig' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,6 +82,8 @@ export const freedesktoporgfontconfigPackage = {
     '2.14.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/fontconfig -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/fontconfig' as const,
 }
 
 export type FreedesktoporgfontconfigPackage = typeof freedesktoporgfontconfigPackage

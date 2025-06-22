@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +crates.io/rage -- $SHELL -i
+launchpad install rage
 ```
 
 ## Programs

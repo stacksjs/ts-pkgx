@@ -211,6 +211,8 @@ export const trufflehogPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) trufflehog -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install trufflehog' as const,
 }
 
 export type TrufflehogPackage = typeof trufflehogPackage

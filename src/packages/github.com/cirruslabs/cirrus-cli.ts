@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cirrus`
- * @aliases `cirrus`
+ * @name `cirrus`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cirrus
  * // Or access via domain
  * const samePkg = pantry.githubcomcirruslabscirruscli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cirrus-cli"
+ * console.log(pkg.name)        // "cirrus"
  * console.log(pkg.description) // "CLI for executing Cirrus tasks locally and in a..."
  * console.log(pkg.programs)    // ["cirrus"]
  * console.log(pkg.versions[0]) // "0.144.3" (latest)
@@ -31,7 +31,7 @@ export const cirrusPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cirrus-cli' as const,
+  name: 'cirrus' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -139,9 +139,9 @@ export const cirrusPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cirrus',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cirrus -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cirrus' as const,
 }
 
 export type CirrusPackage = typeof cirrusPackage

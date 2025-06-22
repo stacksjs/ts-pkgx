@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gtk.org/gtk3 -- $SHELL -i
+launchpad install gtk3
 ```
 
 ## Programs

@@ -1,11 +1,11 @@
-# libidn2
+# idn2
 
 > International domain name library (IDNA2008, Punycode and TR46)
 
 ## Package Information
 
 - **Domain**: `gnu.org/libidn2`
-- **Name**: `libidn2`
+- **Name**: `idn2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libidn2/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install idn2
 ## Programs
 
 This package provides the following executable programs:
-
-- `idn2`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `idn2`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/libidn2@2.3.8 -- $SHELL -i
+sh <(curl https://pkgx.sh) idn2 -- $SHELL -i
 ```
 
 ## Dependencies

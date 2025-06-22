@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kluctl`
- * @aliases `kluctl`
+ * @name `kluctl`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.kluctl
  * // Or access via domain
  * const samePkg = pantry.kluctlio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "kluctl.io"
+ * console.log(pkg.name)        // "kluctl"
  * console.log(pkg.description) // "The missing glue to put together large Kubernet..."
  * console.log(pkg.programs)    // ["kluctl"]
  * console.log(pkg.versions[0]) // "2.26.0" (latest)
@@ -31,7 +31,7 @@ export const kluctlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'kluctl.io' as const,
+  name: 'kluctl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -81,9 +81,9 @@ export const kluctlPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kluctl',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kluctl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kluctl' as const,
 }
 
 export type KluctlPackage = typeof kluctlPackage

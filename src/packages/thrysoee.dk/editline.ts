@@ -1,11 +1,11 @@
 /**
- * **editline** - pkgx package
+ * **thrysoee.dk/editline** - pkgx package
  *
  * @domain `thrysoee.dk/editline`
  * @version `3.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +thrysoee.dk/editline -- $SHELL -i`
+ * @install `launchpad install thrysoee.dk/editline`
  * @dependencies `invisible-island.net/ncurses`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.thrysoeedkeditline
- * console.log(pkg.name)        // "editline"
+ * console.log(pkg.name)        // "thrysoee.dk/editline"
  * console.log(pkg.versions[0]) // "3.1.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const thrysoeedkeditlinePackage = {
   /**
    * The display name of this package.
    */
-  name: 'editline' as const,
+  name: 'thrysoee.dk/editline' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const thrysoeedkeditlinePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +thrysoee.dk/editline -- $SHELL -i' as const,
+  installCommand: 'launchpad install thrysoee.dk/editline' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -58,6 +58,8 @@ export const thrysoeedkeditlinePackage = {
     '3.1.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +thrysoee.dk/editline -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install thrysoee.dk/editline' as const,
 }
 
 export type ThrysoeedkeditlinePackage = typeof thrysoeedkeditlinePackage

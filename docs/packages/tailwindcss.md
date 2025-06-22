@@ -1,11 +1,11 @@
-# tailwindcss.com
+# tailwindcss
 
 > A utility-first CSS framework for rapid UI development.
 
 ## Package Information
 
 - **Domain**: `tailwindcss.com`
-- **Name**: `tailwindcss.com`
+- **Name**: `tailwindcss`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tailwindcss.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install tailwindcss
 ## Programs
 
 This package provides the following executable programs:
-
-- `tailwindcss`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `tailwindcss`
 
@@ -51,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +tailwindcss.com@4.1.10 -- $SHELL -i
+sh <(curl https://pkgx.sh) tailwindcss -- $SHELL -i
 ```
 
 ## Usage Examples

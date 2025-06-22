@@ -1,11 +1,11 @@
 /**
- * **libbluray** - pkgx package
+ * **videolan.org/libbluray** - pkgx package
  *
  * @domain `videolan.org/libbluray`
  * @version `1.3.4` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +videolan.org/libbluray -- $SHELL -i`
+ * @install `launchpad install videolan.org/libbluray`
  * @dependencies `freedesktop.org/fontconfig`, `freetype.org`, `darwin:gnome.org/libxml2` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.videolanorglibbluray
- * console.log(pkg.name)        // "libbluray"
+ * console.log(pkg.name)        // "videolan.org/libbluray"
  * console.log(pkg.versions[0]) // "1.3.4" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const videolanorglibblurayPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libbluray' as const,
+  name: 'videolan.org/libbluray' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const videolanorglibblurayPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +videolan.org/libbluray -- $SHELL -i' as const,
+  installCommand: 'launchpad install videolan.org/libbluray' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,6 +61,8 @@ export const videolanorglibblurayPackage = {
     '1.3.4',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +videolan.org/libbluray -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install videolan.org/libbluray' as const,
 }
 
 export type VideolanorglibblurayPackage = typeof videolanorglibblurayPackage

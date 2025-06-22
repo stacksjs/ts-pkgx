@@ -1,11 +1,11 @@
-# server
+# MariaDB
 
 > MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry.
 
 ## Package Information
 
 - **Domain**: `mariadb.com/server`
-- **Name**: `server`
+- **Name**: `MariaDB`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mariadb.com/server/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mariadb.com/server -- $SHELL -i
+launchpad install MariaDB
 ```
 
 ## Programs
@@ -104,12 +104,6 @@ This package provides the following executable programs:
 - `wsrep_sst_mysqldump`
 - `wsrep_sst_rsync`
 - `wsrep_sst_rsync_wan`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `MariaDB`
 
 ## Available Versions
 

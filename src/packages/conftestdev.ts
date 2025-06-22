@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install conftest`
- * @aliases `conftest`
+ * @name `conftest`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.conftest
  * // Or access via domain
  * const samePkg = pantry.conftestdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "conftest.dev"
+ * console.log(pkg.name)        // "conftest"
  * console.log(pkg.description) // "Write tests against structured configuration da..."
  * console.log(pkg.programs)    // ["conftest"]
  * console.log(pkg.versions[0]) // "0.61.2" (latest)
@@ -31,7 +31,7 @@ export const conftestPackage = {
   /**
    * The display name of this package.
    */
-  name: 'conftest.dev' as const,
+  name: 'conftest' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -86,9 +86,9 @@ export const conftestPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'conftest',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) conftest -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install conftest' as const,
 }
 
 export type ConftestPackage = typeof conftestPackage

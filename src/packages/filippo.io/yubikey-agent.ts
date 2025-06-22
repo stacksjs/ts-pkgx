@@ -78,6 +78,8 @@ export const yubikeyagentPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) yubikey-agent -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install yubikey-agent' as const,
 }
 
 export type YubikeyagentPackage = typeof yubikeyagentPackage

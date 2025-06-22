@@ -1,11 +1,11 @@
 /**
- * **edencommon** - Shared library for Watchman and Eden projects.
+ * **facebook.com/edencommon** - Shared library for Watchman and Eden projects.
  *
  * @domain `facebook.com/edencommon`
  * @version `2025.6.9.0` (93 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +facebook.com/edencommon -- $SHELL -i`
+ * @install `launchpad install facebook.com/edencommon`
  * @dependencies `facebook.com/folly`, `gflags.github.io`, `google.com/glog`, ... (+6 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.facebookcomedencommon
- * console.log(pkg.name)        // "edencommon"
+ * console.log(pkg.name)        // "facebook.com/edencommon"
  * console.log(pkg.description) // "Shared library for Watchman and Eden projects."
  * console.log(pkg.versions[0]) // "2025.6.9.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const facebookcomedencommonPackage = {
   /**
    * The display name of this package.
    */
-  name: 'edencommon' as const,
+  name: 'facebook.com/edencommon' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const facebookcomedencommonPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +facebook.com/edencommon -- $SHELL -i' as const,
+  installCommand: 'launchpad install facebook.com/edencommon' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -160,6 +160,8 @@ export const facebookcomedencommonPackage = {
     '2023.10.16.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +facebook.com/edencommon -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install facebook.com/edencommon' as const,
 }
 
 export type FacebookcomedencommonPackage = typeof facebookcomedencommonPackage

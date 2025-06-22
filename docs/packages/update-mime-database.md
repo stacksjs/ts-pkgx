@@ -1,11 +1,11 @@
-# shared-mime-info
+# update-mime-database
 
 > Database of common MIME types
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/shared-mime-info`
-- **Name**: `shared-mime-info`
+- **Name**: `update-mime-database`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/shared-mime-info/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install update-mime-database
 ## Programs
 
 This package provides the following executable programs:
-
-- `update-mime-database`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `update-mime-database`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +freedesktop.org/shared-mime-info@2.4.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) update-mime-database -- $SHELL -i
 ```
 
 ## Dependencies

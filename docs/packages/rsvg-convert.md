@@ -1,11 +1,11 @@
-# librsvg
+# rsvg-convert
 
 > Read-only mirror of https://gitlab.gnome.org/GNOME/librsvg
 
 ## Package Information
 
 - **Domain**: `gnome.org/librsvg`
-- **Name**: `librsvg`
+- **Name**: `rsvg-convert`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/librsvg/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install rsvg-convert
 ## Programs
 
 This package provides the following executable programs:
-
-- `rsvg-convert`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `rsvg-convert`
 
@@ -48,7 +42,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnome.org/librsvg@2.60.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) rsvg-convert -- $SHELL -i
 ```
 
 ## Dependencies

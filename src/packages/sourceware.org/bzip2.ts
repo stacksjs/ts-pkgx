@@ -1,19 +1,19 @@
 /**
- * **bzip2** - Clone of https://gitlab.com/federicomenaquintero/bzip2
+ * **sourceware.org/bzip2** - Clone of https://gitlab.com/federicomenaquintero/bzip2
  *
  * @domain `sourceware.org/bzip2`
  * @programs `bunzip2`, `bzcat`, `bzcmp`, `bzdiff`, `bzgrep`, ... (+6 more)
  * @version `1.0.8` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +sourceware.org/bzip2 -- $SHELL -i`
+ * @install `launchpad install sourceware.org/bzip2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.sourcewareorgbzip2
- * console.log(pkg.name)        // "bzip2"
+ * console.log(pkg.name)        // "sourceware.org/bzip2"
  * console.log(pkg.description) // "Clone of https://gitlab.com/federicomenaquinter..."
  * console.log(pkg.programs)    // ["bunzip2", "bzcat", ...]
  * console.log(pkg.versions[0]) // "1.0.8" (latest)
@@ -26,7 +26,7 @@ export const sourcewareorgbzip2Package = {
   /**
    * The display name of this package.
    */
-  name: 'bzip2' as const,
+  name: 'sourceware.org/bzip2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const sourcewareorgbzip2Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +sourceware.org/bzip2 -- $SHELL -i' as const,
+  installCommand: 'launchpad install sourceware.org/bzip2' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,6 +70,8 @@ export const sourcewareorgbzip2Package = {
     '1.0.8',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceware.org/bzip2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sourceware.org/bzip2' as const,
 }
 
 export type Sourcewareorgbzip2Package = typeof sourcewareorgbzip2Package

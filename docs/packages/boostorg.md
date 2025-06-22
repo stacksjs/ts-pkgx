@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +boost.org
+launchpad install boost.org
 ```
 
 ## Programs

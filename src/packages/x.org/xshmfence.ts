@@ -1,11 +1,11 @@
 /**
- * **xshmfence** - pkgx package
+ * **x.org/xshmfence** - pkgx package
  *
  * @domain `x.org/xshmfence`
  * @version `1.3.3` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/xshmfence -- $SHELL -i`
+ * @install `launchpad install x.org/xshmfence`
  * @dependencies `x.org/protocol`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgxshmfence
- * console.log(pkg.name)        // "xshmfence"
+ * console.log(pkg.name)        // "x.org/xshmfence"
  * console.log(pkg.versions[0]) // "1.3.3" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgxshmfencePackage = {
   /**
    * The display name of this package.
    */
-  name: 'xshmfence' as const,
+  name: 'x.org/xshmfence' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const xorgxshmfencePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/xshmfence -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/xshmfence' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -59,6 +59,8 @@ export const xorgxshmfencePackage = {
     '1.3.2',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xshmfence -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/xshmfence' as const,
 }
 
 export type XorgxshmfencePackage = typeof xorgxshmfencePackage

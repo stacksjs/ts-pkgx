@@ -6,20 +6,20 @@
  * @version `1.4.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +mosh.org -- $SHELL -i`
- * @aliases `mosh`
+ * @install `launchpad install mosh`
+ * @name `mosh`
  * @dependencies `protobuf.dev@26.1.0`, `invisible-island.net/ncurses@6`, `zlib.net@1.3`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mosh
  * // Or access via domain
  * const samePkg = pantry.moshorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mosh.org"
+ * console.log(pkg.name)        // "mosh"
  * console.log(pkg.description) // "Remote terminal application"
  * console.log(pkg.programs)    // ["mosh-client", "mosh-server"]
  * console.log(pkg.versions[0]) // "1.4.0" (latest)
@@ -32,7 +32,7 @@ export const moshPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mosh.org' as const,
+  name: 'mosh' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const moshPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +mosh.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install mosh' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -80,9 +80,9 @@ export const moshPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mosh',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mosh.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mosh' as const,
 }
 
 export type MoshPackage = typeof moshPackage

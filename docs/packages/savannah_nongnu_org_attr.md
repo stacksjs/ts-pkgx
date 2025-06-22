@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +savannah.nongnu.org/attr -- $SHELL -i
+launchpad install attr
 ```
 
 ## Programs

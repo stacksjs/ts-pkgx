@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nu`
- * @aliases `nu`
+ * @name `nu`
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.nu
  * // Or access via domain
  * const samePkg = pantry.nushellsh
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "nushell.sh"
+ * console.log(pkg.name)        // "nu"
  * console.log(pkg.description) // "Modern shell for the GitHub era"
  * console.log(pkg.programs)    // ["nu"]
  * console.log(pkg.versions[0]) // "0.105.1" (latest)
@@ -32,7 +32,7 @@ export const nuPackage = {
   /**
    * The display name of this package.
    */
-  name: 'nushell.sh' as const,
+  name: 'nu' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -122,9 +122,9 @@ export const nuPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'nu',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nu -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nu' as const,
 }
 
 export type NuPackage = typeof nuPackage

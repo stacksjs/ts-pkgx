@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install s3cmd`
- * @aliases `s3cmd`
+ * @name `s3cmd`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.s3cmd
  * // Or access via domain
  * const samePkg = pantry.s3toolsorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "s3tools.org"
+ * console.log(pkg.name)        // "s3cmd"
  * console.log(pkg.description) // "Official s3cmd repo -- Command line tool for ma..."
  * console.log(pkg.programs)    // ["s3cmd"]
  * console.log(pkg.versions[0]) // "2.4.0" (latest)
@@ -32,7 +32,7 @@ export const s3cmdPackage = {
   /**
    * The display name of this package.
    */
-  name: 's3tools.org' as const,
+  name: 's3cmd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -76,9 +76,9 @@ export const s3cmdPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    's3cmd',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) s3cmd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install s3cmd' as const,
 }
 
 export type S3cmdPackage = typeof s3cmdPackage

@@ -6,7 +6,7 @@
  * @version `25.6.0` (17 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +poppler.freedesktop.org -- $SHELL -i`
+ * @install `launchpad install poppler.freedesktop.org`
  * @dependencies `boost.org>=1.58.0`, `cairographics.org>=1.16.0`, `curl.se`, ... (+16 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -42,7 +42,7 @@ export const popplerfreedesktoporgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +poppler.freedesktop.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install poppler.freedesktop.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -112,6 +112,8 @@ export const popplerfreedesktoporgPackage = {
     '22.12.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +poppler.freedesktop.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install poppler.freedesktop.org' as const,
 }
 
 export type PopplerfreedesktoporgPackage = typeof popplerfreedesktoporgPackage

@@ -1,11 +1,11 @@
-# pake-cli
+# pake
 
 > 🤱🏻 Turn any webpage into a desktop app with Rust.  🤱🏻 利用 Rust 轻松构建轻量级多端桌面应用
 
 ## Package Information
 
 - **Domain**: `npmjs.com/pake-cli`
-- **Name**: `pake-cli`
+- **Name**: `pake`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/npmjs.com/pake-cli/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install pake
 ## Programs
 
 This package provides the following executable programs:
-
-- `pake`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pake`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +npmjs.com/pake-cli@3.1.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) pake -- $SHELL -i
 ```
 
 ## Dependencies

@@ -77,6 +77,8 @@ export const gitwebPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gitweb -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gitweb' as const,
 }
 
 export type GitwebPackage = typeof gitwebPackage

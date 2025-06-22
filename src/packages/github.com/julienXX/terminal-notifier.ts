@@ -69,6 +69,8 @@ export const terminalnotifierPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) terminal-notifier -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install terminal-notifier' as const,
 }
 
 export type TerminalnotifierPackage = typeof terminalnotifierPackage

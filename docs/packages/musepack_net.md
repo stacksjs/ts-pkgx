@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +musepack.net -- $SHELL -i
+launchpad install musepack.net
 ```
 
 ## Programs

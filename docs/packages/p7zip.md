@@ -1,11 +1,11 @@
-# p7zip
+# github.com/p7zip-project/p7zip
 
 > A new p7zip fork with additional codecs and improvements (forked from https://sourceforge.net/projects/sevenzip/ AND https://sourceforge.net/projects/p7zip/).
 
 ## Package Information
 
 - **Domain**: `github.com/p7zip-project/p7zip`
-- **Name**: `p7zip`
+- **Name**: `github.com/p7zip-project/p7zip`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/p7zip-project/p7zip/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/p7zip-project/p7zip -- $SHELL -i
+launchpad install github.com/p7zip-project/p7zip
 ```
 
 ## Programs

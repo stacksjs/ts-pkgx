@@ -1,11 +1,11 @@
-# direnv.net
+# direnv
 
 > Load/unload environment variables based on $PWD
 
 ## Package Information
 
 - **Domain**: `direnv.net`
-- **Name**: `direnv.net`
+- **Name**: `direnv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/direnv.net/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install direnv
 ## Programs
 
 This package provides the following executable programs:
-
-- `direnv`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `direnv`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +direnv.net@2.36.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) direnv -- $SHELL -i
 ```
 
 ## Usage Examples

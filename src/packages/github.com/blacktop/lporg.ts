@@ -69,6 +69,8 @@ export const lporgPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) lporg -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lporg' as const,
 }
 
 export type LporgPackage = typeof lporgPackage

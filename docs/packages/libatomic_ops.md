@@ -1,11 +1,11 @@
-# libatomic_ops
+# github.com/ivmai/libatomic_ops
 
 > The atomic_ops project (Atomic memory update operations portable implementation)
 
 ## Package Information
 
 - **Domain**: `github.com/ivmai/libatomic_ops`
-- **Name**: `libatomic_ops`
+- **Name**: `github.com/ivmai/libatomic_ops`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ivmai/libatomic_ops/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/ivmai/libatomic_ops -- $SHELL -i
+launchpad install github.com/ivmai/libatomic_ops
 ```
 
 ## Programs

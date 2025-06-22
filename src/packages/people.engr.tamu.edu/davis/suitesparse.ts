@@ -6,20 +6,20 @@
  * @version `7.10.3` (20 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +people.engr.tamu.edu/davis/suitesparse -- $SHELL -i`
- * @aliases `suite-sparse`
+ * @install `launchpad install suite-sparse`
+ * @name `suite-sparse`
  * @dependencies `glaros.dtc.umn.edu/metis`, `gnu.org/m4`, `netlib.org/lapack`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.suitesparse
  * // Or access via domain
  * const samePkg = pantry.peopleengrtamuedudavissuitesparse
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "suitesparse"
+ * console.log(pkg.name)        // "suite-sparse"
  * console.log(pkg.description) // "The official SuiteSparse library: a suite of sp..."
  * console.log(pkg.programs)    // ["mongoose", "suitesparse_mongoose"]
  * console.log(pkg.versions[0]) // "7.10.3" (latest)
@@ -32,7 +32,7 @@ export const suitesparsePackage = {
   /**
    * The display name of this package.
    */
-  name: 'suitesparse' as const,
+  name: 'suite-sparse' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const suitesparsePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +people.engr.tamu.edu/davis/suitesparse -- $SHELL -i' as const,
+  installCommand: 'launchpad install suite-sparse' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -101,9 +101,9 @@ export const suitesparsePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'suite-sparse',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +people.engr.tamu.edu/davis/suitesparse -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install suite-sparse' as const,
 }
 
 export type SuitesparsePackage = typeof suitesparsePackage

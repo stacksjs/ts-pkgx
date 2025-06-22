@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +spawn.link -- $SHELL -i
+launchpad install spawn.link
 ```
 
 ## Programs

@@ -1,11 +1,11 @@
-# vala
+# gnome.org/vala
 
 > Compiler for the GObject type system
 
 ## Package Information
 
 - **Domain**: `gnome.org/vala`
-- **Name**: `vala`
+- **Name**: `gnome.org/vala`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/vala/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnome.org/vala -- $SHELL -i
+launchpad install gnome.org/vala
 ```
 
 ## Programs

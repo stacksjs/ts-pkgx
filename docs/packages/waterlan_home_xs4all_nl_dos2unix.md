@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +waterlan.home.xs4all.nl/dos2unix -- $SHELL -i
+launchpad install dos2unix
 ```
 
 ## Programs

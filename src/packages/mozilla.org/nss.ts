@@ -1,12 +1,12 @@
 /**
- * **nss** - Libraries for security-enabled client and server applications
+ * **mozilla.org/nss** - Libraries for security-enabled client and server applications
  *
  * @domain `mozilla.org/nss`
  * @programs `addbuiltin`, `certutil`, `crmftest`, `ecperf`, `listsuites`, ... (+56 more)
  * @version `3.92.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +mozilla.org/nss -- $SHELL -i`
+ * @install `launchpad install mozilla.org/nss`
  * @dependencies `mozilla.org/nspr`, `sqlite.org`, `zlib.net`
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.mozillaorgnss
- * console.log(pkg.name)        // "nss"
+ * console.log(pkg.name)        // "mozilla.org/nss"
  * console.log(pkg.description) // "Libraries for security-enabled client and serve..."
  * console.log(pkg.programs)    // ["addbuiltin", "certutil", ...]
  * console.log(pkg.versions[0]) // "3.92.0" (latest)
@@ -27,7 +27,7 @@ export const mozillaorgnssPackage = {
   /**
    * The display name of this package.
    */
-  name: 'nss' as const,
+  name: 'mozilla.org/nss' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const mozillaorgnssPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +mozilla.org/nss -- $SHELL -i' as const,
+  installCommand: 'launchpad install mozilla.org/nss' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -129,6 +129,8 @@ export const mozillaorgnssPackage = {
     '3.92.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mozilla.org/nss -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mozilla.org/nss' as const,
 }
 
 export type MozillaorgnssPackage = typeof mozillaorgnssPackage

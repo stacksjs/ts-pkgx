@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) typst
+launchpad install typst
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +typst.app@0.13.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) typst -- $SHELL -i
 ```
 
 ## Dependencies

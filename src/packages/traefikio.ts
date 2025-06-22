@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install traefik`
- * @aliases `traefik`
+ * @name `traefik`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.traefik
  * // Or access via domain
  * const samePkg = pantry.traefikio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "traefik.io"
+ * console.log(pkg.name)        // "traefik"
  * console.log(pkg.description) // "The Cloud Native Application Proxy"
  * console.log(pkg.programs)    // ["traefik"]
  * console.log(pkg.versions[0]) // "3.4.1" (latest)
@@ -31,7 +31,7 @@ export const traefikPackage = {
   /**
    * The display name of this package.
    */
-  name: 'traefik.io' as const,
+  name: 'traefik' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -125,9 +125,9 @@ export const traefikPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'traefik',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) traefik -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install traefik' as const,
 }
 
 export type TraefikPackage = typeof traefikPackage

@@ -1,11 +1,11 @@
-# spider_cli
+# spider
 
 > A web crawler and scraper for Rust
 
 ## Package Information
 
 - **Domain**: `crates.io/spider_cli`
-- **Name**: `spider_cli`
+- **Name**: `spider`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/spider_cli/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install spider
 ## Programs
 
 This package provides the following executable programs:
-
-- `spider`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `spider`
 
@@ -104,7 +98,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/spider_cli@2.37.104 -- $SHELL -i
+sh <(curl https://pkgx.sh) spider -- $SHELL -i
 ```
 
 ## Usage Examples

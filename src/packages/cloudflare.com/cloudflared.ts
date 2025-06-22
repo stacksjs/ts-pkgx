@@ -96,6 +96,8 @@ export const cloudflaredPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cloudflared -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cloudflared' as const,
 }
 
 export type CloudflaredPackage = typeof cloudflaredPackage

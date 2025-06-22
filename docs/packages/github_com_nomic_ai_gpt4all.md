@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/nomic-ai/gpt4all@2023.3.29 -- $SHELL -i
+sh <(curl https://pkgx.sh) gpt4all -- $SHELL -i
 ```
 
 ## Usage Examples

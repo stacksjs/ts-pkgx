@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) mercure
+launchpad install mercure
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mercure.rocks@0.19.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) mercure -- $SHELL -i
 ```
 
 ## Usage Examples

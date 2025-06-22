@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nomad`
- * @aliases `nomad`
+ * @name `nomad`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.nomad
  * // Or access via domain
  * const samePkg = pantry.nomadprojectio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "nomadproject.io"
+ * console.log(pkg.name)        // "nomad"
  * console.log(pkg.description) // "Nomad is an easy-to-use, flexible, and performa..."
  * console.log(pkg.programs)    // ["nomad"]
  * console.log(pkg.versions[0]) // "1.10.2" (latest)
@@ -31,7 +31,7 @@ export const nomadPackage = {
   /**
    * The display name of this package.
    */
-  name: 'nomadproject.io' as const,
+  name: 'nomad' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -81,9 +81,9 @@ export const nomadPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'nomad',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nomad -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nomad' as const,
 }
 
 export type NomadPackage = typeof nomadPackage

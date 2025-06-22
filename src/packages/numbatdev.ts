@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install numbat`
- * @aliases `numbat`
+ * @name `numbat`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.numbat
  * // Or access via domain
  * const samePkg = pantry.numbatdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "numbat.dev"
+ * console.log(pkg.name)        // "numbat"
  * console.log(pkg.description) // "A statically typed programming language for sci..."
  * console.log(pkg.programs)    // ["numbat"]
  * console.log(pkg.versions[0]) // "1.16.0" (latest)
@@ -31,7 +31,7 @@ export const numbatPackage = {
   /**
    * The display name of this package.
    */
-  name: 'numbat.dev' as const,
+  name: 'numbat' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const numbatPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'numbat',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) numbat -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install numbat' as const,
 }
 
 export type NumbatPackage = typeof numbatPackage

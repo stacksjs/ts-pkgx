@@ -90,6 +90,8 @@ export const chatbladePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) chatblade -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install chatblade' as const,
 }
 
 export type ChatbladePackage = typeof chatbladePackage

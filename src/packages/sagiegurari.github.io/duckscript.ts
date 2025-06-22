@@ -76,6 +76,8 @@ export const duckPackage = {
   aliases: [
     'duck',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) duck -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install duck' as const,
 }
 
 export type DuckPackage = typeof duckPackage

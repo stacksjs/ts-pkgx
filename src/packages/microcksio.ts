@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install microcks-cli`
- * @aliases `microcks-cli`
+ * @name `microcks-cli`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.microckscli
  * // Or access via domain
  * const samePkg = pantry.microcksio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "microcks.io"
+ * console.log(pkg.name)        // "microcks-cli"
  * console.log(pkg.description) // "Simple CLI for interacting with Microcks test APIs"
  * console.log(pkg.programs)    // ["microcks-cli"]
  * console.log(pkg.versions[0]) // "0.9.0" (latest)
@@ -32,7 +32,7 @@ export const microckscliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'microcks.io' as const,
+  name: 'microcks-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -80,9 +80,9 @@ export const microckscliPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'microcks-cli',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) microcks-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install microcks-cli' as const,
 }
 
 export type MicrockscliPackage = typeof microckscliPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnuplot`
- * @aliases `gnuplot`
+ * @name `gnuplot`
  * @dependencies `libgd.github.io`, `lua.org`, `gnome.org/pango`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gnuplot
  * // Or access via domain
  * const samePkg = pantry.gnuplotinfo
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnuplot.info"
+ * console.log(pkg.name)        // "gnuplot"
  * console.log(pkg.description) // "Command-driven, interactive function plotting"
  * console.log(pkg.programs)    // ["gnuplot"]
  * console.log(pkg.versions[0]) // "6.0.3" (latest)
@@ -32,7 +32,7 @@ export const gnuplotPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnuplot.info' as const,
+  name: 'gnuplot' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -88,9 +88,9 @@ export const gnuplotPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gnuplot',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gnuplot -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnuplot' as const,
 }
 
 export type GnuplotPackage = typeof gnuplotPackage

@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/gofireflyio/aiac@5.3.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) aiac -- $SHELL -i
 ```
 
 ## Usage Examples

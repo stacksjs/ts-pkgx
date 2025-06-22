@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tree`
- * @aliases `tree`
+ * @name `tree`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tree
  * // Or access via domain
  * const samePkg = pantry.gitlabcomoldmanprogrammerunixtree
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "unix-tree"
+ * console.log(pkg.name)        // "tree"
  * console.log(pkg.description) // "Display directories as trees (with optional col..."
  * console.log(pkg.programs)    // ["tree"]
  * console.log(pkg.versions[0]) // "2.2.1" (latest)
@@ -31,7 +31,7 @@ export const treePackage = {
   /**
    * The display name of this package.
    */
-  name: 'unix-tree' as const,
+  name: 'tree' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -73,9 +73,9 @@ export const treePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tree',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tree -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tree' as const,
 }
 
 export type TreePackage = typeof treePackage

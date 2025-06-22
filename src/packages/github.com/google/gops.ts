@@ -77,6 +77,8 @@ export const gopsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gops -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gops' as const,
 }
 
 export type GopsPackage = typeof gopsPackage

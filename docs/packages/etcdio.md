@@ -1,11 +1,11 @@
-# etcd.io
+# etcd
 
 > Distributed reliable key-value store for the most critical data of a distributed system
 
 ## Package Information
 
 - **Domain**: `etcd.io`
-- **Name**: `etcd.io`
+- **Name**: `etcd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/etcd.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install etcd.io
+launchpad install etcd
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `etcd`
 - `etcdctl`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `etcd`
 
 ## Available Versions
 

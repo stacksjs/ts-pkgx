@@ -1,11 +1,11 @@
-# rclone.org
+# rclone
 
 > "rsync for cloud storage" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files
 
 ## Package Information
 
 - **Domain**: `rclone.org`
-- **Name**: `rclone.org`
+- **Name**: `rclone`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rclone.org/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install rclone
 ## Programs
 
 This package provides the following executable programs:
-
-- `rclone`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `rclone`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +rclone.org@1.70.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) rclone -- $SHELL -i
 ```
 
 ## Usage Examples

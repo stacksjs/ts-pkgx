@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/achannarasappa/ticker@5.0.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) ticker -- $SHELL -i
 ```
 
 ## Usage Examples

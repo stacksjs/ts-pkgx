@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/jesseduffield/lazydocker@0.24.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) lazydocker -- $SHELL -i
 ```
 
 ## Usage Examples

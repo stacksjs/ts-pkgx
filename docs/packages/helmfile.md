@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/helmfile/helmfile@1.1.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) helmfile -- $SHELL -i
 ```
 
 ## Dependencies

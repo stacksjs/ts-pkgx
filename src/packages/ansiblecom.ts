@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ansible`
- * @aliases `ansible`
+ * @name `ansible`
  * @dependencies `pkgx.sh@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ansible
  * // Or access via domain
  * const samePkg = pantry.ansiblecom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ansible.com"
+ * console.log(pkg.name)        // "ansible"
  * console.log(pkg.description) // "Ansible is a radically simple IT automation pla..."
  * console.log(pkg.programs)    // ["ansible", "ansible-config", ...]
  * console.log(pkg.versions[0]) // "2.18.6" (latest)
@@ -32,7 +32,7 @@ export const ansiblePackage = {
   /**
    * The display name of this package.
    */
-  name: 'ansible.com' as const,
+  name: 'ansible' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -153,9 +153,7 @@ export const ansiblePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ansible',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ansible.com -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install ansible' as const,
 }

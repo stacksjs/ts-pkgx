@@ -1,11 +1,11 @@
-# unibilium
+# github.com/neovim/unibilium
 
 > https://github.com/neovim/neovim/blob/master/MAINTAIN.md#third-party-dependencies
 
 ## Package Information
 
 - **Domain**: `github.com/neovim/unibilium`
-- **Name**: `unibilium`
+- **Name**: `github.com/neovim/unibilium`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/neovim/unibilium/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/neovim/unibilium -- $SHELL -i
+launchpad install github.com/neovim/unibilium
 ```
 
 ## Programs

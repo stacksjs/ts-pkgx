@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install local-ai`
- * @aliases `local-ai`, `LocalAI`
+ * @name `local-ai`
  * @dependencies `darwin:openmp.llvm.org@18` (includes OS-specific dependencies with `os:package` format)
  * @companions `linux`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.localai
  * // Or access via domain
  * const samePkg = pantry.localaiio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "localai.io"
+ * console.log(pkg.name)        // "local-ai"
  * console.log(pkg.description) // ":robot: The free, Open Source alternative to Op..."
  * console.log(pkg.programs)    // ["local-ai"]
  * console.log(pkg.versions[0]) // "2.26.0" (latest)
@@ -33,7 +33,7 @@ export const localaiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'localai.io' as const,
+  name: 'local-ai' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -119,10 +119,9 @@ export const localaiPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'local-ai',
-    'LocalAI',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) local-ai -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install local-ai' as const,
 }
 
 export type LocalaiPackage = typeof localaiPackage

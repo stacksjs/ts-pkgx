@@ -77,6 +77,8 @@ export const ifacemakerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ifacemaker -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ifacemaker' as const,
 }
 
 export type IfacemakerPackage = typeof ifacemakerPackage

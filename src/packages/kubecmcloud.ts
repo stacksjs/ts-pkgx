@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kubecm`
- * @aliases `kubecm`
+ * @name `kubecm`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.kubecm
  * // Or access via domain
  * const samePkg = pantry.kubecmcloud
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "kubecm.cloud"
+ * console.log(pkg.name)        // "kubecm"
  * console.log(pkg.description) // "Manage your kubeconfig more easily."
  * console.log(pkg.programs)    // ["kubecm"]
  * console.log(pkg.versions[0]) // "0.33.0" (latest)
@@ -31,7 +31,7 @@ export const kubecmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'kubecm.cloud' as const,
+  name: 'kubecm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const kubecmPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kubecm',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kubecm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kubecm' as const,
 }
 
 export type KubecmPackage = typeof kubecmPackage

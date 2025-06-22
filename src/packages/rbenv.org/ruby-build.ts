@@ -131,6 +131,8 @@ export const rubybuildPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ruby-build -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ruby-build' as const,
 }
 
 export type RubybuildPackage = typeof rubybuildPackage

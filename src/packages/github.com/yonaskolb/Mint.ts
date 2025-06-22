@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mint`
- * @aliases `mint`
+ * @name `mint`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mint
  * // Or access via domain
  * const samePkg = pantry.githubcomyonaskolbmint
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "Mint"
+ * console.log(pkg.name)        // "mint"
  * console.log(pkg.description) // "Dependency manager that installs and runs Swift..."
  * console.log(pkg.programs)    // ["mint"]
  * console.log(pkg.versions[0]) // "0.18.0" (latest)
@@ -31,7 +31,7 @@ export const mintPackage = {
   /**
    * The display name of this package.
    */
-  name: 'Mint' as const,
+  name: 'mint' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -69,9 +69,9 @@ export const mintPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mint',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mint' as const,
 }
 
 export type MintPackage = typeof mintPackage

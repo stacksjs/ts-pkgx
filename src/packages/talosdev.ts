@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install talosctl`
- * @aliases `talosctl`
+ * @name `talosctl`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.talosctl
  * // Or access via domain
  * const samePkg = pantry.talosdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "talos.dev"
+ * console.log(pkg.name)        // "talosctl"
  * console.log(pkg.description) // "CLI for out-of-band management of Kubernetes no..."
  * console.log(pkg.programs)    // ["talosctl"]
  * console.log(pkg.versions[0]) // "1.10.4" (latest)
@@ -31,7 +31,7 @@ export const talosctlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'talos.dev' as const,
+  name: 'talosctl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -95,9 +95,9 @@ export const talosctlPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'talosctl',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) talosctl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install talosctl' as const,
 }
 
 export type TalosctlPackage = typeof talosctlPackage

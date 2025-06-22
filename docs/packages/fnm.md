@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/fnm@1.38.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) fnm -- $SHELL -i
 ```
 
 ## Dependencies

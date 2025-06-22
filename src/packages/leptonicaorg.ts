@@ -6,7 +6,7 @@
  * @version `1.85.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +leptonica.org -- $SHELL -i`
+ * @install `launchpad install leptonica.org`
  * @dependencies `giflib.sourceforge.io@5`, `libjpeg-turbo.org@2`, `libpng.org@1`, ... (+3 more)
  *
  * @example
@@ -43,7 +43,7 @@ export const leptonicaorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +leptonica.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install leptonica.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,6 +84,8 @@ export const leptonicaorgPackage = {
     '1.83.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +leptonica.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install leptonica.org' as const,
 }
 
 export type LeptonicaorgPackage = typeof leptonicaorgPackage

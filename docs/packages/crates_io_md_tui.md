@@ -1,11 +1,11 @@
-# md-tui
+# crates.io/md-tui
 
 > Markdown renderer in the terminal
 
 ## Package Information
 
 - **Domain**: `crates.io/md-tui`
-- **Name**: `md-tui`
+- **Name**: `crates.io/md-tui`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/md-tui/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +crates.io/md-tui -- $SHELL -i
+launchpad install crates.io/md-tui
 ```
 
 ## Programs

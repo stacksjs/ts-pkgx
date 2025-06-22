@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ko`
- * @aliases `ko`
+ * @name `ko`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ko
  * // Or access via domain
  * const samePkg = pantry.kobuild
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ko.build"
+ * console.log(pkg.name)        // "ko"
  * console.log(pkg.description) // "Build and deploy Go applications on Kubernetes"
  * console.log(pkg.programs)    // ["ko"]
  * console.log(pkg.versions[0]) // "0.18.0" (latest)
@@ -31,7 +31,7 @@ export const koPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ko.build' as const,
+  name: 'ko' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -71,9 +71,9 @@ export const koPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ko',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ko -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ko' as const,
 }
 
 export type KoPackage = typeof koPackage

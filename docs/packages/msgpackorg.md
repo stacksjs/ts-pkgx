@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +msgpack.org -- $SHELL -i
+launchpad install msgpack.org
 ```
 
 ## Programs

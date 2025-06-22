@@ -1,11 +1,11 @@
-# libfido2
+# fido2
 
 > Provides library functionality for FIDO2, including communication with a device over USB or NFC.
 
 ## Package Information
 
 - **Domain**: `developers.yubico.com/libfido2`
-- **Name**: `libfido2`
+- **Name**: `fido2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/developers.yubico.com/libfido2/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +developers.yubico.com/libfido2 -- $SHELL -i
+launchpad install fido2
 ```
 
 ## Programs
@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `fido2-assert`
 - `fido2-cred`
 - `fido2-token`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `fido2`
 
 ## Available Versions
 

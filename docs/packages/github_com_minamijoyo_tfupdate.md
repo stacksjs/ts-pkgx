@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/minamijoyo/tfupdate@0.9.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) tfupdate -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -1,11 +1,11 @@
-# math
+# LibTomMath
 
 > LibTomMath is a free open source portable number theoretic multiple-precision integer library written entirely in C.
 
 ## Package Information
 
 - **Domain**: `libtom.net/math`
-- **Name**: `math`
+- **Name**: `LibTomMath`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libtom.net/math/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libtom.net/math -- $SHELL -i
+launchpad install LibTomMath
 ```
 
 ## Programs
@@ -21,12 +21,6 @@ launchpad install +libtom.net/math -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `LibTomMath`
 
 ## Available Versions
 

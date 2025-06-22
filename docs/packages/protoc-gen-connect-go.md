@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +connectrpc.org/protoc-gen-connect-go@1.18.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) protoc-gen-connect-go -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install watchexec`
- * @aliases `watchexec`
+ * @name `watchexec`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.watchexec
  * // Or access via domain
  * const samePkg = pantry.watchexecgithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "watchexec.github.io"
+ * console.log(pkg.name)        // "watchexec"
  * console.log(pkg.description) // "Executes commands in response to file modificat..."
  * console.log(pkg.programs)    // ["watchexec"]
  * console.log(pkg.versions[0]) // "2.3.2" (latest)
@@ -31,7 +31,7 @@ export const watchexecPackage = {
   /**
    * The display name of this package.
    */
-  name: 'watchexec.github.io' as const,
+  name: 'watchexec' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -73,9 +73,9 @@ export const watchexecPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'watchexec',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) watchexec -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install watchexec' as const,
 }
 
 export type WatchexecPackage = typeof watchexecPackage

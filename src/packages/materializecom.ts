@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mz`
- * @aliases `mz`
+ * @name `mz`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mz
  * // Or access via domain
  * const samePkg = pantry.materializecom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "materialize.com"
+ * console.log(pkg.name)        // "mz"
  * console.log(pkg.description) // "Real-time Data Integration and Transformation: ..."
  * console.log(pkg.programs)    // ["mz"]
  * console.log(pkg.versions[0]) // "0.112.2" (latest)
@@ -32,7 +32,7 @@ export const mzPackage = {
   /**
    * The display name of this package.
    */
-  name: 'materialize.com' as const,
+  name: 'mz' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -119,9 +119,9 @@ export const mzPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mz',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mz -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mz' as const,
 }
 
 export type MzPackage = typeof mzPackage

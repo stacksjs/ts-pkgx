@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tw`
- * @aliases `tw`
+ * @name `tw`
  * @dependencies `linux:openssl.org` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tw
  * // Or access via domain
  * const samePkg = pantry.cratesiotabiew
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tabiew"
+ * console.log(pkg.name)        // "tw"
  * console.log(pkg.description) // "A lightweight TUI application to view and query..."
  * console.log(pkg.programs)    // ["tw"]
  * console.log(pkg.versions[0]) // "0.9.4" (latest)
@@ -32,7 +32,7 @@ export const twPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tabiew' as const,
+  name: 'tw' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -96,9 +96,9 @@ export const twPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tw',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tw -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tw' as const,
 }
 
 export type TwPackage = typeof twPackage

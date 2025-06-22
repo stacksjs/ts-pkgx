@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install terragrunt`
- * @aliases `terragrunt`
+ * @name `terragrunt`
  * @dependencies `terraform.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.terragrunt
  * // Or access via domain
  * const samePkg = pantry.terragruntgruntworkio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "terragrunt.gruntwork.io"
+ * console.log(pkg.name)        // "terragrunt"
  * console.log(pkg.description) // "Terragrunt is a flexible orchestration tool tha..."
  * console.log(pkg.programs)    // ["terragrunt"]
  * console.log(pkg.versions[0]) // "0.81.10" (latest)
@@ -32,7 +32,7 @@ export const terragruntPackage = {
   /**
    * The display name of this package.
    */
-  name: 'terragrunt.gruntwork.io' as const,
+  name: 'terragrunt' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -429,9 +429,9 @@ export const terragruntPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'terragrunt',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) terragrunt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install terragrunt' as const,
 }
 
 export type TerragruntPackage = typeof terragruntPackage

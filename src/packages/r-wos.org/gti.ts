@@ -111,6 +111,8 @@ export const gtiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gti -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gti' as const,
 }
 
 export type GtiPackage = typeof gtiPackage

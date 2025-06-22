@@ -1,11 +1,11 @@
-# ktlint.github.io
+# ktlint
 
 > An anti-bikeshedding Kotlin linter with built-in formatter
 
 ## Package Information
 
-- **Domain**: `ktlintgithub.io`
-- **Name**: `ktlint.github.io`
+- **Domain**: `ktlint.github.io`
+- **Name**: `ktlint`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ktlint.github.io/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install ktlintgithub.io
+launchpad install ktlint
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `ktlint`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `ktlint`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +ktlintgithub.io@1.6.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) ktlint -- $SHELL -i
 ```
 
 ## Dependencies

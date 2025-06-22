@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install starship`
- * @aliases `starship`
+ * @name `starship`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.starship
  * // Or access via domain
  * const samePkg = pantry.starshiprs
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "starship.rs"
+ * console.log(pkg.name)        // "starship"
  * console.log(pkg.description) // "☄🌌️  The minimal, blazing-fast, and infinitely..."
  * console.log(pkg.programs)    // ["starship"]
  * console.log(pkg.versions[0]) // "1.23.0" (latest)
@@ -31,7 +31,7 @@ export const starshipPackage = {
   /**
    * The display name of this package.
    */
-  name: 'starship.rs' as const,
+  name: 'starship' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -88,9 +88,9 @@ export const starshipPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'starship',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) starship -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install starship' as const,
 }
 
 export type StarshipPackage = typeof starshipPackage

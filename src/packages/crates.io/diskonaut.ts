@@ -69,6 +69,8 @@ export const diskonautPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) diskonaut -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install diskonaut' as const,
 }
 
 export type DiskonautPackage = typeof diskonautPackage

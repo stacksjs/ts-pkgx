@@ -1,11 +1,11 @@
-# rioterm.com
+# rio
 
 > A hardware-accelerated GPU terminal emulator focusing to run in desktops and browsers.
 
 ## Package Information
 
 - **Domain**: `rioterm.com`
-- **Name**: `rioterm.com`
+- **Name**: `rio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rioterm.com/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install rioterm.com
+launchpad install rio
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `rio`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `rio`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +rioterm.com@0.2.20 -- $SHELL -i
+sh <(curl https://pkgx.sh) rio -- $SHELL -i
 ```
 
 ## Usage Examples

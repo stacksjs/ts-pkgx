@@ -1,11 +1,11 @@
-# phc-winner-argon2
+# argon2
 
 > The password hash Argon2, winner of PHC
 
 ## Package Information
 
 - **Domain**: `github.com/P-H-C/phc-winner-argon2`
-- **Name**: `phc-winner-argon2`
+- **Name**: `argon2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/P-H-C/phc-winner-argon2/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install argon2
 ## Programs
 
 This package provides the following executable programs:
-
-- `argon2`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `argon2`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/P-H-C/phc-winner-argon2@20190702.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) argon2 -- $SHELL -i
 ```
 
 ## Usage Examples

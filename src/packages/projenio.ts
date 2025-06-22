@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install projen`
- * @aliases `projen`
+ * @name `projen`
  * @dependencies `nodejs.org^22 || ^20 || ^18`
  * @companions `git-scm.org`, `classic.yarnpkg.com`, `maven.apache.org`, ... (+2 more)
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.projen
  * // Or access via domain
  * const samePkg = pantry.projenio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "projen.io"
+ * console.log(pkg.name)        // "projen"
  * console.log(pkg.description) // "Rapidly build modern applications with advanced..."
  * console.log(pkg.programs)    // ["projen"]
  * console.log(pkg.versions[0]) // "0.93.0" (latest)
@@ -33,7 +33,7 @@ export const projenPackage = {
   /**
    * The display name of this package.
    */
-  name: 'projen.io' as const,
+  name: 'projen' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -125,9 +125,9 @@ export const projenPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'projen',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) projen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install projen' as const,
 }
 
 export type ProjenPackage = typeof projenPackage

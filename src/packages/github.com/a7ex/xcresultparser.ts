@@ -84,6 +84,8 @@ export const xcresultparserPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xcresultparser -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xcresultparser' as const,
 }
 
 export type XcresultparserPackage = typeof xcresultparserPackage

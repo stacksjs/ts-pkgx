@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pwgen`
- * @aliases `pwgen`
+ * @name `pwgen`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pwgen
  * // Or access via domain
  * const samePkg = pantry.pwgensourceforgeio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pwgen.sourceforge.io"
+ * console.log(pkg.name)        // "pwgen"
  * console.log(pkg.description) // "Password generator"
  * console.log(pkg.programs)    // ["pwgen"]
  * console.log(pkg.versions[0]) // "2.8.0" (latest)
@@ -31,7 +31,7 @@ export const pwgenPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pwgen.sourceforge.io' as const,
+  name: 'pwgen' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const pwgenPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pwgen',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pwgen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pwgen' as const,
 }
 
 export type PwgenPackage = typeof pwgenPackage

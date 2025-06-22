@@ -69,6 +69,8 @@ export const nexPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nex -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nex' as const,
 }
 
 export type NexPackage = typeof nexPackage

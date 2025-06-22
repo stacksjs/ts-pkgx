@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install werf`
- * @aliases `werf`
+ * @name `werf`
  * @dependencies `linux:github.com/kdave/btrfs-progs^6.7`, `linux:sourceware.org/dm^2.3` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.werf
  * // Or access via domain
  * const samePkg = pantry.werfio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "werf.io"
+ * console.log(pkg.name)        // "werf"
  * console.log(pkg.description) // "A solution for implementing efficient and consi..."
  * console.log(pkg.programs)    // ["werf"]
  * console.log(pkg.versions[0]) // "2.38.1" (latest)
@@ -32,7 +32,7 @@ export const werfPackage = {
   /**
    * The display name of this package.
    */
-  name: 'werf.io' as const,
+  name: 'werf' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -222,9 +222,9 @@ export const werfPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'werf',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) werf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install werf' as const,
 }
 
 export type WerfPackage = typeof werfPackage

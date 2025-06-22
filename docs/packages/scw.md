@@ -1,11 +1,11 @@
-# scaleway.com
+# scw
 
 > Command Line Interface for Scaleway
 
 ## Package Information
 
 - **Domain**: `scaleway.com`
-- **Name**: `scaleway.com`
+- **Name**: `scw`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/scaleway.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install scw
 ## Programs
 
 This package provides the following executable programs:
-
-- `scw`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `scw`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +scaleway.com@2.40.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) scw -- $SHELL -i
 ```
 
 ## Usage Examples

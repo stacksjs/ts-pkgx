@@ -1,11 +1,11 @@
-# lerc
+# github.com/Esri/lerc
 
 > Limited Error Raster Compression
 
 ## Package Information
 
 - **Domain**: `github.com/Esri/lerc`
-- **Name**: `lerc`
+- **Name**: `github.com/Esri/lerc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Esri/lerc/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/Esri/lerc -- $SHELL -i
+launchpad install github.com/Esri/lerc
 ```
 
 ## Programs

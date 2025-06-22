@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libevent.org -- $SHELL -i
+launchpad install libevent.org
 ```
 
 ## Programs

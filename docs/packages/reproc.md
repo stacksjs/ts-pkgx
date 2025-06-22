@@ -1,11 +1,11 @@
-# reproc
+# github.com/DaanDeMeyer/reproc
 
 > A cross-platform (C99/C++11) process library
 
 ## Package Information
 
 - **Domain**: `github.com/DaanDeMeyer/reproc`
-- **Name**: `reproc`
+- **Name**: `github.com/DaanDeMeyer/reproc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/DaanDeMeyer/reproc/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/DaanDeMeyer/reproc -- $SHELL -i
+launchpad install github.com/DaanDeMeyer/reproc
 ```
 
 ## Programs

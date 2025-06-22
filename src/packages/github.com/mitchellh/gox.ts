@@ -76,6 +76,8 @@ export const goxPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gox -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gox' as const,
 }
 
 export type GoxPackage = typeof goxPackage

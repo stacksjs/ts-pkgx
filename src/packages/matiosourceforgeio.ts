@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install matdump`
- * @aliases `matdump`, `libmatio`
+ * @name `libmatio`
+ * @aliases `matdump`
  * @dependencies `hdfgroup.org/HDF5`, `zlib.net`
  *
  * @example
@@ -19,7 +20,7 @@
  * // Or access via domain
  * const samePkg = pantry.matiosourceforgeio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "matio.sourceforge.io"
+ * console.log(pkg.name)        // "libmatio"
  * console.log(pkg.description) // "C library for reading and writing MATLAB MAT files"
  * console.log(pkg.programs)    // ["matdump"]
  * console.log(pkg.versions[0]) // "1.5.28" (latest)
@@ -32,7 +33,7 @@ export const matdumpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'matio.sourceforge.io' as const,
+  name: 'libmatio' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -83,8 +84,9 @@ export const matdumpPackage = {
    */
   aliases: [
     'matdump',
-    'libmatio',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) matdump -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install matdump' as const,
 }
 
 export type MatdumpPackage = typeof matdumpPackage

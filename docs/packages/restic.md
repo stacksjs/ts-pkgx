@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +restic.net/restic@0.18.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) restic -- $SHELL -i
 ```
 
 ## Usage Examples

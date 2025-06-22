@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kubectl-cnpg`
- * @aliases `kubectl-cnpg`
+ * @name `kubectl-cnpg`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.kubectlcnpg
  * // Or access via domain
  * const samePkg = pantry.cloudnativepgio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cloudnative-pg.io"
+ * console.log(pkg.name)        // "kubectl-cnpg"
  * console.log(pkg.description) // "CloudNativePG is a comprehensive platform desig..."
  * console.log(pkg.programs)    // ["kubectl-cnpg"]
  * console.log(pkg.versions[0]) // "1.26.0" (latest)
@@ -31,7 +31,7 @@ export const kubectlcnpgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cloudnative-pg.io' as const,
+  name: 'kubectl-cnpg' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -73,9 +73,9 @@ export const kubectlcnpgPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kubectl-cnpg',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kubectl-cnpg -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kubectl-cnpg' as const,
 }
 
 export type KubectlcnpgPackage = typeof kubectlcnpgPackage

@@ -1,11 +1,11 @@
-# huggingface.co
+# huggingface-cli
 
 > The official Python client for the Huggingface Hub.
 
 ## Package Information
 
 - **Domain**: `huggingface.co`
-- **Name**: `huggingface.co`
+- **Name**: `huggingface-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/huggingface.co/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install huggingface-cli
 ## Programs
 
 This package provides the following executable programs:
-
-- `huggingface-cli`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `huggingface-cli`
 
@@ -54,7 +48,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +huggingface.co@0.33.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) huggingface-cli -- $SHELL -i
 ```
 
 ## Dependencies

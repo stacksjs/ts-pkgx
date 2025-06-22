@@ -1,11 +1,11 @@
-# libidn
+# idn
 
 > International domain name library
 
 ## Package Information
 
 - **Domain**: `gnu.org/libidn`
-- **Name**: `libidn`
+- **Name**: `idn`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libidn/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install idn
 ## Programs
 
 This package provides the following executable programs:
-
-- `idn`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `idn`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/libidn@1.43.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) idn -- $SHELL -i
 ```
 
 ## Usage Examples

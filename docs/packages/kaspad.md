@@ -1,11 +1,11 @@
-# kaspad
+# github.com/kaspanet/kaspad
 
 > Kaspad was the reference full node Kaspa implementation written in Go (golang), now rewritten in Rust: https://github.com/kaspanet/rusty-kaspa
 
 ## Package Information
 
 - **Domain**: `github.com/kaspanet/kaspad`
-- **Name**: `kaspad`
+- **Name**: `github.com/kaspanet/kaspad`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kaspanet/kaspad/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/kaspanet/kaspad -- $SHELL -i
+launchpad install github.com/kaspanet/kaspad
 ```
 
 ## Programs

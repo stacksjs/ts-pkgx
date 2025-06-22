@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tilt`
- * @aliases `tilt`
+ * @name `tilt`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tilt
  * // Or access via domain
  * const samePkg = pantry.tiltdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tilt.dev"
+ * console.log(pkg.name)        // "tilt"
  * console.log(pkg.description) // "Define your dev environment as code. For micros..."
  * console.log(pkg.programs)    // ["tilt"]
  * console.log(pkg.versions[0]) // "0.35.0" (latest)
@@ -31,7 +31,7 @@ export const tiltPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tilt.dev' as const,
+  name: 'tilt' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -91,9 +91,9 @@ export const tiltPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tilt',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tilt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tilt' as const,
 }
 
 export type TiltPackage = typeof tiltPackage

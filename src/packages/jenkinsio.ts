@@ -1,12 +1,12 @@
 /**
- * **jenkins.io** - Extendable open source continuous integration server
+ * **jenkins-lts** - Extendable open source continuous integration server
  *
  * @domain `jenkins.io`
  * @programs `jenkins-lts`, `jenkins-lts-cli`
  * @version `2.504.2` (19 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +jenkins.io -- $SHELL -i`
+ * @install `launchpad install jenkins.io`
  * @dependencies `openjdk.org<20`
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.jenkinsio
- * console.log(pkg.name)        // "jenkins.io"
+ * console.log(pkg.name)        // "jenkins-lts"
  * console.log(pkg.description) // "Extendable open source continuous integration s..."
  * console.log(pkg.programs)    // ["jenkins-lts", "jenkins-lts-cli"]
  * console.log(pkg.versions[0]) // "2.504.2" (latest)
@@ -27,7 +27,7 @@ export const jenkinsioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jenkins.io' as const,
+  name: 'jenkins-lts' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const jenkinsioPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +jenkins.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install jenkins.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -86,6 +86,8 @@ export const jenkinsioPackage = {
     '2.426.2',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jenkins.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jenkins.io' as const,
 }
 
 export type JenkinsioPackage = typeof jenkinsioPackage

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install k3d`
- * @aliases `k3d`
+ * @name `k3d`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.k3d
  * // Or access via domain
  * const samePkg = pantry.k3dio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "k3d.io"
+ * console.log(pkg.name)        // "k3d"
  * console.log(pkg.description) // "Little helper to run CNCF's k3s in Docker"
  * console.log(pkg.programs)    // ["k3d"]
  * console.log(pkg.versions[0]) // "5.8.3" (latest)
@@ -31,7 +31,7 @@ export const k3dPackage = {
   /**
    * The display name of this package.
    */
-  name: 'k3d.io' as const,
+  name: 'k3d' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -84,9 +84,9 @@ export const k3dPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'k3d',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) k3d -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install k3d' as const,
 }
 
 export type K3dPackage = typeof k3dPackage

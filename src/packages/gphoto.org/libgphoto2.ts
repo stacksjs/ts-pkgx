@@ -6,20 +6,20 @@
  * @version `2.5.31` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gphoto.org/libgphoto2 -- $SHELL -i`
- * @aliases `gphoto2`
+ * @install `launchpad install gphoto2`
+ * @name `gphoto2`
  * @dependencies `libgd.github.io^2.3`, `libjpeg-turbo.org^2`, `libexif.github.io^0.6`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gphoto2
  * // Or access via domain
  * const samePkg = pantry.gphotoorglibgphoto2
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libgphoto2"
+ * console.log(pkg.name)        // "gphoto2"
  * console.log(pkg.description) // "The libgphoto2 camera access and control library."
  * console.log(pkg.programs)    // ["gphoto2-config", "gphoto2-port-config"]
  * console.log(pkg.versions[0]) // "2.5.31" (latest)
@@ -32,7 +32,7 @@ export const gphoto2Package = {
   /**
    * The display name of this package.
    */
-  name: 'libgphoto2' as const,
+  name: 'gphoto2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const gphoto2Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gphoto.org/libgphoto2 -- $SHELL -i' as const,
+  installCommand: 'launchpad install gphoto2' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,9 +82,9 @@ export const gphoto2Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gphoto2',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gphoto.org/libgphoto2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gphoto2' as const,
 }
 
 export type Gphoto2Package = typeof gphoto2Package

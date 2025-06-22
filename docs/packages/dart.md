@@ -1,11 +1,11 @@
-# dart.dev
+# dart
 
 > The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more.
 
 ## Package Information
 
 - **Domain**: `dart.dev`
-- **Name**: `dart.dev`
+- **Name**: `dart`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dart.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +dart.dev -- $SHELL -i
+launchpad install dart
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `dart`
 - `dartaotruntime`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `dart`
 
 ## Available Versions
 

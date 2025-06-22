@@ -1,11 +1,11 @@
-# daytona.io
+# daytona
 
 > The Open Source Dev Environment Manager.
 
 ## Package Information
 
 - **Domain**: `daytona.io`
-- **Name**: `daytona.io`
+- **Name**: `daytona`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/daytona.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install daytona
 ## Programs
 
 This package provides the following executable programs:
-
-- `daytona`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `daytona`
 
@@ -58,7 +52,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +daytona.io@0.100.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) daytona -- $SHELL -i
 ```
 
 ## Usage Examples

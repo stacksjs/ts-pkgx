@@ -1,19 +1,19 @@
 /**
- * **jfrog-cli** - JFrog CLI is a client that provides a simple interface that automates access to the JFrog products.
+ * **jfrog.com/jfrog-cli** - JFrog CLI is a client that provides a simple interface that automates access to the JFrog products.
  *
  * @domain `jfrog.com/jfrog-cli`
  * @programs `jf`, `jfrog`
  * @version `2.77.0` (88 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +jfrog.com/jfrog-cli -- $SHELL -i`
+ * @install `launchpad install jfrog.com/jfrog-cli`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.jfrogcomjfrogcli
- * console.log(pkg.name)        // "jfrog-cli"
+ * console.log(pkg.name)        // "jfrog.com/jfrog-cli"
  * console.log(pkg.description) // "JFrog CLI is a client that provides a simple in..."
  * console.log(pkg.programs)    // ["jf", "jfrog"]
  * console.log(pkg.versions[0]) // "2.77.0" (latest)
@@ -26,7 +26,7 @@ export const jfrogcomjfrogcliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jfrog-cli' as const,
+  name: 'jfrog.com/jfrog-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const jfrogcomjfrogcliPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +jfrog.com/jfrog-cli -- $SHELL -i' as const,
+  installCommand: 'launchpad install jfrog.com/jfrog-cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -148,6 +148,8 @@ export const jfrogcomjfrogcliPackage = {
     '2.40.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jfrog.com/jfrog-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jfrog.com/jfrog-cli' as const,
 }
 
 export type JfrogcomjfrogcliPackage = typeof jfrogcomjfrogcliPackage

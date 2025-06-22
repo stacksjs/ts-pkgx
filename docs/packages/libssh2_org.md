@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libssh2.org -- $SHELL -i
+launchpad install libssh2.org
 ```
 
 ## Programs

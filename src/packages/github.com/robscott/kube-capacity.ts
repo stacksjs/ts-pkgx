@@ -69,6 +69,8 @@ export const kubecapacityPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kube-capacity -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kube-capacity' as const,
 }
 
 export type KubecapacityPackage = typeof kubecapacityPackage

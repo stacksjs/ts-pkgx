@@ -1,11 +1,11 @@
 /**
- * **xcb-util-renderutil** - pkgx package
+ * **freedesktop.org/xcb-util-renderutil** - pkgx package
  *
  * @domain `freedesktop.org/xcb-util-renderutil`
  * @version `0.3.10` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +freedesktop.org/xcb-util-renderutil -- $SHELL -i`
+ * @install `launchpad install freedesktop.org/xcb-util-renderutil`
  * @dependencies `x.org/xcb`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.freedesktoporgxcbutilrenderutil
- * console.log(pkg.name)        // "xcb-util-renderutil"
+ * console.log(pkg.name)        // "freedesktop.org/xcb-util-renderutil"
  * console.log(pkg.versions[0]) // "0.3.10" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const freedesktoporgxcbutilrenderutilPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xcb-util-renderutil' as const,
+  name: 'freedesktop.org/xcb-util-renderutil' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const freedesktoporgxcbutilrenderutilPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +freedesktop.org/xcb-util-renderutil -- $SHELL -i' as const,
+  installCommand: 'launchpad install freedesktop.org/xcb-util-renderutil' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -58,6 +58,8 @@ export const freedesktoporgxcbutilrenderutilPackage = {
     '0.3.10',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/xcb-util-renderutil -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/xcb-util-renderutil' as const,
 }
 
 export type FreedesktoporgxcbutilrenderutilPackage = typeof freedesktoporgxcbutilrenderutilPackage

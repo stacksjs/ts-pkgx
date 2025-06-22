@@ -6,7 +6,7 @@
  * @version `6.24.15` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +tcsh.org -- $SHELL -i`
+ * @install `launchpad install tcsh.org`
  * @dependencies `github.com/besser82/libxcrypt@4`, `invisible-island.net/ncurses@6`
  *
  * @example
@@ -43,7 +43,7 @@ export const tcshorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +tcsh.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install tcsh.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,6 +69,8 @@ export const tcshorgPackage = {
     '6.24.15',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tcsh.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tcsh.org' as const,
 }
 
 export type TcshorgPackage = typeof tcshorgPackage

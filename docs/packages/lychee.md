@@ -1,11 +1,11 @@
-# lychee.cli.rs
+# lychee
 
 > ⚡ Fast, async, stream-based link checker written in Rust. Finds broken URLs and mail addresses inside Markdown, HTML, reStructuredText, websites and more!
 
 ## Package Information
 
 - **Domain**: `lychee.cli.rs`
-- **Name**: `lychee.cli.rs`
+- **Name**: `lychee`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lychee.cli.rs/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install lychee
 ## Programs
 
 This package provides the following executable programs:
-
-- `lychee`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `lychee`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +lychee.cli.rs@0.15.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) lychee -- $SHELL -i
 ```
 
 ## Dependencies

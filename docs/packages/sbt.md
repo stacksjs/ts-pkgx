@@ -1,11 +1,11 @@
-# scala-sbt.org
+# sbt
 
 > sbt, the interactive build tool
 
 ## Package Information
 
 - **Domain**: `scala-sbt.org`
-- **Name**: `scala-sbt.org`
+- **Name**: `sbt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/scala-sbt.org/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install sbt
 ## Programs
 
 This package provides the following executable programs:
-
-- `sbt`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `sbt`
 
@@ -47,7 +41,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +scala-sbt.org@1.11.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) sbt -- $SHELL -i
 ```
 
 ## Dependencies

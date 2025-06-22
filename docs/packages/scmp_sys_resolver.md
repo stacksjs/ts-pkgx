@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/seccomp/libseccomp@2.6.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) scmp_sys_resolver -- $SHELL -i
 ```
 
 ## Usage Examples

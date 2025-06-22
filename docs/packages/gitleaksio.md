@@ -1,11 +1,11 @@
-# gitleaks.io
+# gitleaks
 
 > Find secrets with Gitleaks 🔑
 
 ## Package Information
 
 - **Domain**: `gitleaks.io`
-- **Name**: `gitleaks.io`
+- **Name**: `gitleaks`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gitleaks.io/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install gitleaks.io
+launchpad install gitleaks
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `gitleaks`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `gitleaks`
 
@@ -48,7 +42,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gitleaks.io@8.27.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) gitleaks -- $SHELL -i
 ```
 
 ## Usage Examples

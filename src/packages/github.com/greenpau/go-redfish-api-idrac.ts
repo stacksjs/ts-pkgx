@@ -7,19 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install go-redfish-api-idrac-client`
- * @name `go-redfish-api-idrac`
- * @aliases `go-redfish-api-idrac-client`
+ * @name `go-redfish-api-idrac-client`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.goredfishapiidracclient
  * // Or access via domain
  * const samePkg = pantry.githubcomgreenpaugoredfishapiidrac
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "go-redfish-api-idrac"
+ * console.log(pkg.name)        // "go-redfish-api-idrac-client"
  * console.log(pkg.description) // "iDRAC Redfish API client library written in Go."
  * console.log(pkg.programs)    // ["go-redfish-api-idrac-client"]
  * console.log(pkg.versions[0]) // "1.0.6" (latest)
@@ -32,7 +31,7 @@ export const goredfishapiidracclientPackage = {
   /**
    * The display name of this package.
    */
-  name: 'go-redfish-api-idrac' as const,
+  name: 'go-redfish-api-idrac-client' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -69,9 +68,9 @@ export const goredfishapiidracclientPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'go-redfish-api-idrac-client',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) go-redfish-api-idrac-client -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install go-redfish-api-idrac-client' as const,
 }
 
 export type GoredfishapiidracclientPackage = typeof goredfishapiidracclientPackage

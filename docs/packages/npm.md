@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +npmjs.com -- $SHELL -i
+launchpad install npmjs.com
 ```
 
 ## Programs

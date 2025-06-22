@@ -68,6 +68,8 @@ export const sedPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sed -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sed' as const,
 }
 
 export type SedPackage = typeof sedPackage

@@ -69,6 +69,8 @@ export const xsvPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xsv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xsv' as const,
 }
 
 export type XsvPackage = typeof xsvPackage

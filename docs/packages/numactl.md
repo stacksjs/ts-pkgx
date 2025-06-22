@@ -1,11 +1,11 @@
-# numactl
+# github.com/numactl/numactl
 
 > NUMA support for Linux
 
 ## Package Information
 
 - **Domain**: `github.com/numactl/numactl`
-- **Name**: `numactl`
+- **Name**: `github.com/numactl/numactl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/numactl/numactl/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/numactl/numactl -- $SHELL -i
+launchpad install github.com/numactl/numactl
 ```
 
 ## Programs

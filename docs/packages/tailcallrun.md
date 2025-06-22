@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) tailcall
+launchpad install tailcall
 ```
 
 ## Programs
@@ -161,7 +161,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +tailcall.run@1.6.11 -- $SHELL -i
+sh <(curl https://pkgx.sh) tailcall -- $SHELL -i
 ```
 
 ## Usage Examples

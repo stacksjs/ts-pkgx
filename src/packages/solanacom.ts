@@ -6,20 +6,20 @@
  * @version `1.18.26` (83 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +solana.com -- $SHELL -i`
- * @aliases `solana`
+ * @install `launchpad install solana`
+ * @name `solana`
  * @dependencies `protobuf.dev^21`, `zlib.net^1.2`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.solana
  * // Or access via domain
  * const samePkg = pantry.solanacom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "solana.com"
+ * console.log(pkg.name)        // "solana"
  * console.log(pkg.description) // "Web-Scale Blockchain for fast, secure, scalable..."
  * console.log(pkg.programs)    // ["solana", "solana-keygen", ...]
  * console.log(pkg.versions[0]) // "1.18.26" (latest)
@@ -32,7 +32,7 @@ export const solanaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'solana.com' as const,
+  name: 'solana' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const solanaPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +solana.com -- $SHELL -i' as const,
+  installCommand: 'launchpad install solana' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -168,9 +168,9 @@ export const solanaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'solana',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +solana.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install solana' as const,
 }
 
 export type SolanaPackage = typeof solanaPackage

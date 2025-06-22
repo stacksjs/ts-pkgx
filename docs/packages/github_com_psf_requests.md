@@ -1,11 +1,11 @@
-# requests
+# github.com/psf/requests
 
 > A simple, yet elegant, HTTP library.
 
 ## Package Information
 
 - **Domain**: `github.com/psf/requests`
-- **Name**: `requests`
+- **Name**: `github.com/psf/requests`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/psf/requests/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/psf/requests -- $SHELL -i
+launchpad install github.com/psf/requests
 ```
 
 ## Programs

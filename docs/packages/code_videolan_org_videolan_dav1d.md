@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +code.videolan.org/videolan/dav1d@1.2.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) dav1d -- $SHELL -i
 ```
 
 ## Usage Examples

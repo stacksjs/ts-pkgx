@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +cscope.sourceforge.io -- $SHELL -i
+launchpad install cscope.sourceforge.io
 ```
 
 ## Programs

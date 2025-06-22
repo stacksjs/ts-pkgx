@@ -77,6 +77,8 @@ export const sqlboilerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sqlboiler -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sqlboiler' as const,
 }
 
 export type SqlboilerPackage = typeof sqlboilerPackage

@@ -1,11 +1,11 @@
-# hwloc
+# open-mpi.org/hwloc
 
 > Portable abstraction of the hierarchical topology of modern architectures
 
 ## Package Information
 
 - **Domain**: `open-mpi.org/hwloc`
-- **Name**: `hwloc`
+- **Name**: `open-mpi.org/hwloc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/open-mpi.org/hwloc/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +open-mpi.org/hwloc -- $SHELL -i
+launchpad install open-mpi.org/hwloc
 ```
 
 ## Programs

@@ -69,6 +69,8 @@ export const m4Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) m4 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install m4' as const,
 }
 
 export type M4Package = typeof m4Package

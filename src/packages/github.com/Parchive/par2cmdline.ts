@@ -6,19 +6,19 @@
  * @version `1.0.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/Parchive/par2cmdline -- $SHELL -i`
- * @aliases `par2`
+ * @install `launchpad install par2`
+ * @name `par2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.par2
  * // Or access via domain
  * const samePkg = pantry.githubcomparchivepar2cmdline
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "par2cmdline"
+ * console.log(pkg.name)        // "par2"
  * console.log(pkg.description) // "Parchive: Parity Archive Volume Set for data re..."
  * console.log(pkg.programs)    // ["par2", "par2create", ...]
  * console.log(pkg.versions[0]) // "1.0.0" (latest)
@@ -31,7 +31,7 @@ export const par2Package = {
   /**
    * The display name of this package.
    */
-  name: 'par2cmdline' as const,
+  name: 'par2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const par2Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/Parchive/par2cmdline -- $SHELL -i' as const,
+  installCommand: 'launchpad install par2' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,9 +72,9 @@ export const par2Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'par2',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/Parchive/par2cmdline -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install par2' as const,
 }
 
 export type Par2Package = typeof par2Package

@@ -75,6 +75,8 @@ export const topgradePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) topgrade -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install topgrade' as const,
 }
 
 export type TopgradePackage = typeof topgradePackage

@@ -78,6 +78,8 @@ export const fastgronPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fastgron -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fastgron' as const,
 }
 
 export type FastgronPackage = typeof fastgronPackage

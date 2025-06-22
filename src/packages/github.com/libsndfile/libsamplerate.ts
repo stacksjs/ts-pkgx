@@ -1,18 +1,18 @@
 /**
- * **libsamplerate** - An audio Sample Rate Conversion library
+ * **github.com/libsndfile/libsamplerate** - An audio Sample Rate Conversion library
  *
  * @domain `github.com/libsndfile/libsamplerate`
  * @version `0.2.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/libsndfile/libsamplerate -- $SHELL -i`
+ * @install `launchpad install github.com/libsndfile/libsamplerate`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomlibsndfilelibsamplerate
- * console.log(pkg.name)        // "libsamplerate"
+ * console.log(pkg.name)        // "github.com/libsndfile/libsamplerate"
  * console.log(pkg.description) // "An audio Sample Rate Conversion library"
  * console.log(pkg.versions[0]) // "0.2.2" (latest)
  * ```
@@ -24,7 +24,7 @@ export const githubcomlibsndfilelibsampleratePackage = {
   /**
    * The display name of this package.
    */
-  name: 'libsamplerate' as const,
+  name: 'github.com/libsndfile/libsamplerate' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const githubcomlibsndfilelibsampleratePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/libsndfile/libsamplerate -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/libsndfile/libsamplerate' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -52,6 +52,8 @@ export const githubcomlibsndfilelibsampleratePackage = {
     '0.2.2',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/libsndfile/libsamplerate -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/libsndfile/libsamplerate' as const,
 }
 
 export type GithubcomlibsndfilelibsampleratePackage = typeof githubcomlibsndfilelibsampleratePackage

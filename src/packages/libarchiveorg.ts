@@ -6,7 +6,7 @@
  * @version `3.8.1` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +libarchive.org -- $SHELL -i`
+ * @install `launchpad install libarchive.org`
  * @dependencies `gnu.org/coreutils`, `lz4.org@1`, `tukaani.org/xz@5`, ... (+4 more)
  *
  * @example
@@ -43,7 +43,7 @@ export const libarchiveorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +libarchive.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install libarchive.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -87,6 +87,8 @@ export const libarchiveorgPackage = {
     '3.6.2',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libarchive.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libarchive.org' as const,
 }
 
 export type LibarchiveorgPackage = typeof libarchiveorgPackage

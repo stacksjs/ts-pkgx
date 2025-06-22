@@ -84,6 +84,8 @@ export const cabalPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cabal -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cabal' as const,
 }
 
 export type CabalPackage = typeof cabalPackage

@@ -54,7 +54,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/nodenv/node-build@5.4.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) node-build -- $SHELL -i
 ```
 
 ## Dependencies

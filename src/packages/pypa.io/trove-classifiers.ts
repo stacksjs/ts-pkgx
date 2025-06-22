@@ -1,11 +1,11 @@
 /**
- * **trove-classifiers** - Canonical source for classifiers on PyPI.
+ * **pypa.io/trove-classifiers** - Canonical source for classifiers on PyPI.
  *
  * @domain `pypa.io/trove-classifiers`
  * @version `2025.5.9.12` (28 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +pypa.io/trove-classifiers -- $SHELL -i`
+ * @install `launchpad install pypa.io/trove-classifiers`
  * @dependencies `python.org~3.12`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.pypaiotroveclassifiers
- * console.log(pkg.name)        // "trove-classifiers"
+ * console.log(pkg.name)        // "pypa.io/trove-classifiers"
  * console.log(pkg.description) // "Canonical source for classifiers on PyPI."
  * console.log(pkg.versions[0]) // "2025.5.9.12" (latest)
  * ```
@@ -25,7 +25,7 @@ export const pypaiotroveclassifiersPackage = {
   /**
    * The display name of this package.
    */
-  name: 'trove-classifiers' as const,
+  name: 'pypa.io/trove-classifiers' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const pypaiotroveclassifiersPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pypa.io/trove-classifiers -- $SHELL -i' as const,
+  installCommand: 'launchpad install pypa.io/trove-classifiers' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -86,6 +86,8 @@ export const pypaiotroveclassifiersPackage = {
     '2024.10.11',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pypa.io/trove-classifiers -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pypa.io/trove-classifiers' as const,
 }
 
 export type PypaiotroveclassifiersPackage = typeof pypaiotroveclassifiersPackage

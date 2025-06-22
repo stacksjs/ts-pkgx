@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/xeol-io/xeol@0.10.8 -- $SHELL -i
+sh <(curl https://pkgx.sh) xeol -- $SHELL -i
 ```
 
 ## Usage Examples

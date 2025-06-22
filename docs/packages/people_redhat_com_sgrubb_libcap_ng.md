@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +people.redhat.com/sgrubb/libcap-ng -- $SHELL -i
+launchpad install libcap-ng
 ```
 
 ## Programs

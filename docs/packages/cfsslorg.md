@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +cfssl.org
+launchpad install cfssl.org
 ```
 
 ## Programs

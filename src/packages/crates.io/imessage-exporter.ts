@@ -83,6 +83,8 @@ export const imessageexporterPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) imessage-exporter -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install imessage-exporter' as const,
 }
 
 export type ImessageexporterPackage = typeof imessageexporterPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) soldeer
+launchpad install soldeer
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +soldeer.xyz@0.5.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) soldeer -- $SHELL -i
 ```
 
 ## Usage Examples

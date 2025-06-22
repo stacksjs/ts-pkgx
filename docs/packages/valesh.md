@@ -1,11 +1,11 @@
-# vale.sh
+# vale
 
 > :pencil: A markup-aware linter for prose built with speed and extensibility in mind.
 
 ## Package Information
 
 - **Domain**: `vale.sh`
-- **Name**: `vale.sh`
+- **Name**: `vale`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vale.sh/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install vale.sh
+launchpad install vale
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `vale`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `vale`
 
@@ -51,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +vale.sh@3.12.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) vale -- $SHELL -i
 ```
 
 ## Usage Examples

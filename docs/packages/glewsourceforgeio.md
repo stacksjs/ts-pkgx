@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +glew.sourceforge.io -- $SHELL -i
+launchpad install glew.sourceforge.io
 ```
 
 ## Programs

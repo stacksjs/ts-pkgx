@@ -1,11 +1,11 @@
-# lavinmq.com
+# lavinmq
 
 > Lightweight and fast AMQP (0-9-1) server
 
 ## Package Information
 
 - **Domain**: `lavinmq.com`
-- **Name**: `lavinmq.com`
+- **Name**: `lavinmq`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lavinmq.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install lavinmq.com
+launchpad install lavinmq
 ```
 
 ## Programs
@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `lavinmq`
 - `lavinmqctl`
 - `lavinmqperf`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `lavinmq`
 
 ## Available Versions
 

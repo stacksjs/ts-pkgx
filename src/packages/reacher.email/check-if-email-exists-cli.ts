@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install check_if_email_exists`
- * @aliases `check_if_email_exists`
+ * @name `check_if_email_exists`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.checkifemailexists
  * // Or access via domain
  * const samePkg = pantry.reacheremailcheckifemailexistscli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "check-if-email-exists-cli"
+ * console.log(pkg.name)        // "check_if_email_exists"
  * console.log(pkg.description) // "Check if an email address exists without sendin..."
  * console.log(pkg.programs)    // ["check_if_email_exists"]
  * console.log(pkg.versions[0]) // "0.11.5" (latest)
@@ -32,7 +32,7 @@ export const checkifemailexistsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'check-if-email-exists-cli' as const,
+  name: 'check_if_email_exists' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -84,9 +84,9 @@ export const checkifemailexistsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'check_if_email_exists',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) check_if_email_exists -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install check_if_email_exists' as const,
 }
 
 export type CheckifemailexistsPackage = typeof checkifemailexistsPackage

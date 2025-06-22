@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install interpreter`
- * @aliases `interpreter`, `open-interpreter`
+ * @name `open-interpreter`
+ * @aliases `interpreter`
  * @dependencies `python.org>=3.10<3.12`, `github.com/mattrobenolt/jinja2-cli`
  *
  * @example
@@ -19,7 +20,7 @@
  * // Or access via domain
  * const samePkg = pantry.openinterpretercom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "openinterpreter.com"
+ * console.log(pkg.name)        // "open-interpreter"
  * console.log(pkg.description) // "A natural language interface for computers"
  * console.log(pkg.programs)    // ["interpreter"]
  * console.log(pkg.versions[0]) // "0.4.0" (latest)
@@ -32,7 +33,7 @@ export const interpreterPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openinterpreter.com' as const,
+  name: 'open-interpreter' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -99,8 +100,9 @@ export const interpreterPackage = {
    */
   aliases: [
     'interpreter',
-    'open-interpreter',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) interpreter -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install interpreter' as const,
 }
 
 export type InterpreterPackage = typeof interpreterPackage

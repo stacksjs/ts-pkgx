@@ -1,11 +1,11 @@
-# libimobiledevice-glue
+# libimobiledevice.org/libimobiledevice-glue
 
 > A library with common code used by libraries and tools around the libimobiledevice project
 
 ## Package Information
 
 - **Domain**: `libimobiledevice.org/libimobiledevice-glue`
-- **Name**: `libimobiledevice-glue`
+- **Name**: `libimobiledevice.org/libimobiledevice-glue`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libimobiledevice.org/libimobiledevice-glue/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libimobiledevice.org/libimobiledevice-glue -- $SHELL -i
+launchpad install libimobiledevice.org/libimobiledevice-glue
 ```
 
 ## Programs

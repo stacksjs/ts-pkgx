@@ -1,11 +1,11 @@
-# unbound.net
+# unbound
 
 > Unbound is a validating, recursive, and caching DNS resolver.
 
 ## Package Information
 
 - **Domain**: `unbound.net`
-- **Name**: `unbound.net`
+- **Name**: `unbound`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/unbound.net/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install unbound.net
+launchpad install unbound
 ```
 
 ## Programs
@@ -26,12 +26,6 @@ This package provides the following executable programs:
 - `unbound-control`
 - `unbound-control-setup`
 - `unbound-host`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `unbound`
 
 ## Available Versions
 

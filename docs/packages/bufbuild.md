@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) buf
+launchpad install buf
 ```
 
 ## Programs
@@ -45,7 +45,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +buf.build@1.55.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) buf -- $SHELL -i
 ```
 
 ## Usage Examples

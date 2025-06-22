@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install virtualenv`
- * @aliases `virtualenv`
+ * @name `virtualenv`
  * @dependencies `pkgx.sh^1`, `libexpat.github.io^2`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.virtualenv
  * // Or access via domain
  * const samePkg = pantry.virtualenvpypaio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "virtualenv.pypa.io"
+ * console.log(pkg.name)        // "virtualenv"
  * console.log(pkg.description) // "Tool for creating isolated virtual python envir..."
  * console.log(pkg.programs)    // ["virtualenv"]
  * console.log(pkg.versions[0]) // "20.31.2" (latest)
@@ -32,7 +32,7 @@ export const virtualenvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'virtualenv.pypa.io' as const,
+  name: 'virtualenv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -116,9 +116,9 @@ export const virtualenvPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'virtualenv',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) virtualenv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install virtualenv' as const,
 }
 
 export type VirtualenvPackage = typeof virtualenvPackage

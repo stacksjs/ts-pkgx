@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xray`
- * @aliases `xray`, `xray-core`
+ * @name `xray-core`
+ * @aliases `xray`
  *
  * @example
  * ```typescript
@@ -18,7 +19,7 @@
  * // Or access via domain
  * const samePkg = pantry.xtlsgithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "xtls.github.io"
+ * console.log(pkg.name)        // "xray-core"
  * console.log(pkg.description) // "Xray, Penetrates Everything. Also the best v2ra..."
  * console.log(pkg.programs)    // ["xray"]
  * console.log(pkg.versions[0]) // "25.6.8" (latest)
@@ -31,7 +32,7 @@ export const xrayPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xtls.github.io' as const,
+  name: 'xray-core' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -100,8 +101,9 @@ export const xrayPackage = {
    */
   aliases: [
     'xray',
-    'xray-core',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xray -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xray' as const,
 }
 
 export type XrayPackage = typeof xrayPackage

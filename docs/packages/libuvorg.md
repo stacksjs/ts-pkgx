@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libuv.org -- $SHELL -i
+launchpad install libuv.org
 ```
 
 ## Programs

@@ -1,11 +1,11 @@
-# libassuan
+# libassuan-config
 
 > Assuan IPC Library
 
 ## Package Information
 
 - **Domain**: `gnupg.org/libassuan`
-- **Name**: `libassuan`
+- **Name**: `libassuan-config`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/libassuan/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install libassuan-config
 ## Programs
 
 This package provides the following executable programs:
-
-- `libassuan-config`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `libassuan-config`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnupg.org/libassuan@3.0.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) libassuan-config -- $SHELL -i
 ```
 
 ## Usage Examples

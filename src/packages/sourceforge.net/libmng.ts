@@ -5,20 +5,20 @@
  * @version `2.0.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +sourceforge.net/libmng -- $SHELL -i`
- * @aliases `sf.net/libmng`
+ * @install `launchpad install sourceforge.net/libmng`
+ * @name `sf.net/libmng`
  * @dependencies `libjpeg-turbo.org`, `littlecms.com>=2.0.0`, `zlib.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sfnetlibmng
  * // Or access via domain
  * const samePkg = pantry.sourceforgenetlibmng
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libmng"
+ * console.log(pkg.name)        // "sf.net/libmng"
  * console.log(pkg.versions[0]) // "2.0.3" (latest)
  * ```
  *
@@ -29,7 +29,7 @@ export const sfnetlibmngPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libmng' as const,
+  name: 'sf.net/libmng' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +45,7 @@ export const sfnetlibmngPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +sourceforge.net/libmng -- $SHELL -i' as const,
+  installCommand: 'launchpad install sourceforge.net/libmng' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -68,9 +68,9 @@ export const sfnetlibmngPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sf.net/libmng',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceforge.net/libmng -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sourceforge.net/libmng' as const,
 }
 
 export type SfnetlibmngPackage = typeof sfnetlibmngPackage

@@ -71,6 +71,8 @@ export const toastPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) toast -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install toast' as const,
 }
 
 export type ToastPackage = typeof toastPackage

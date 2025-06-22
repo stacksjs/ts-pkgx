@@ -79,6 +79,8 @@ export const tickerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ticker -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ticker' as const,
 }
 
 export type TickerPackage = typeof tickerPackage

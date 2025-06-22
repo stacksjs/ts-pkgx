@@ -1,11 +1,11 @@
-# mpv.io
+# mpv
 
 > Media player based on MPlayer and mplayer2
 
 ## Package Information
 
 - **Domain**: `mpv.io`
-- **Name**: `mpv.io`
+- **Name**: `mpv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mpv.io/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install mpv.io
+launchpad install mpv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `mpv`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `mpv`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mpv.io@0.40.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) mpv -- $SHELL -i
 ```
 
 ## Dependencies

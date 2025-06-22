@@ -82,6 +82,8 @@ export const gitgonePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-gone -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-gone' as const,
 }
 
 export type GitgonePackage = typeof gitgonePackage

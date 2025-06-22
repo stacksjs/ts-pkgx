@@ -1,11 +1,11 @@
-# argcomplete
+# kislyuk.github.io/argcomplete
 
 > Python and tab completion, better together.
 
 ## Package Information
 
 - **Domain**: `kislyuk.github.io/argcomplete`
-- **Name**: `argcomplete`
+- **Name**: `kislyuk.github.io/argcomplete`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kislyuk.github.io/argcomplete/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +kislyuk.github.io/argcomplete -- $SHELL -i
+launchpad install kislyuk.github.io/argcomplete
 ```
 
 ## Programs

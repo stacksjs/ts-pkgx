@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pocketbase`
- * @aliases `pocketbase`
+ * @name `pocketbase`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pocketbase
  * // Or access via domain
  * const samePkg = pantry.pocketbaseio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pocketbase.io"
+ * console.log(pkg.name)        // "pocketbase"
  * console.log(pkg.description) // "Open source backend for your next project in 1 ..."
  * console.log(pkg.programs)    // ["pocketbase"]
  * console.log(pkg.versions[0]) // "0.28.4" (latest)
@@ -31,7 +31,7 @@ export const pocketbasePackage = {
   /**
    * The display name of this package.
    */
-  name: 'pocketbase.io' as const,
+  name: 'pocketbase' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -149,9 +149,9 @@ export const pocketbasePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pocketbase',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pocketbase -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pocketbase' as const,
 }
 
 export type PocketbasePackage = typeof pocketbasePackage

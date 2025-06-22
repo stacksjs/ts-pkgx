@@ -144,6 +144,8 @@ export const gitlabrunnerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gitlab-runner -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gitlab-runner' as const,
 }
 
 export type GitlabrunnerPackage = typeof gitlabrunnerPackage

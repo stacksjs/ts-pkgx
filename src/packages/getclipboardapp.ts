@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cb`
- * @aliases `cb`
+ * @name `cb`
  * @dependencies `openssl.org^1.1`, `linux:alsa-project.org/alsa-lib@1`, `linux:x.org/x11@1`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cb
  * // Or access via domain
  * const samePkg = pantry.getclipboardapp
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "getclipboard.app"
+ * console.log(pkg.name)        // "cb"
  * console.log(pkg.description) // "😎🏖️🐬 Your new, 𝙧𝙞𝙙𝙤𝙣𝙠𝙪𝙡𝙞𝙘𝙞𝙤𝙪𝙨�..."
  * console.log(pkg.programs)    // ["cb"]
  * console.log(pkg.versions[0]) // "0.9.1" (latest)
@@ -32,7 +32,7 @@ export const cbPackage = {
   /**
    * The display name of this package.
    */
-  name: 'getclipboard.app' as const,
+  name: 'cb' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -82,9 +82,9 @@ export const cbPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cb',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cb -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cb' as const,
 }
 
 export type CbPackage = typeof cbPackage

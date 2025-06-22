@@ -114,6 +114,8 @@ export const cargoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cargo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cargo' as const,
 }
 
 export type CargoPackage = typeof cargoPackage

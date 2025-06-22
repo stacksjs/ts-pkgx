@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dbtoepub`
- * @aliases `dbtoepub`, `docbook-xsl`
+ * @name `docbook-xsl`
+ * @aliases `dbtoepub`
  * @dependencies `docbook.org^5`, `gnome.org/libxml2`
  *
  * @example
@@ -19,7 +20,7 @@
  * // Or access via domain
  * const samePkg = pantry.docbookorgxsl
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "xsl"
+ * console.log(pkg.name)        // "docbook-xsl"
  * console.log(pkg.description) // "XML vocabulary to create presentation-neutral d..."
  * console.log(pkg.programs)    // ["dbtoepub"]
  * console.log(pkg.versions[0]) // "1.79.2" (latest)
@@ -32,7 +33,7 @@ export const dbtoepubPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xsl' as const,
+  name: 'docbook-xsl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,8 +79,9 @@ export const dbtoepubPackage = {
    */
   aliases: [
     'dbtoepub',
-    'docbook-xsl',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dbtoepub -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dbtoepub' as const,
 }
 
 export type DbtoepubPackage = typeof dbtoepubPackage

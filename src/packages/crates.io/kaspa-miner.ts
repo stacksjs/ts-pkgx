@@ -71,6 +71,8 @@ export const kaspaminerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kaspa-miner -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kaspa-miner' as const,
 }
 
 export type KaspaminerPackage = typeof kaspaminerPackage

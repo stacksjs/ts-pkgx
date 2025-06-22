@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install zola`
- * @aliases `zola`
+ * @name `zola`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.zola
  * // Or access via domain
  * const samePkg = pantry.getzolaorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "getzola.org"
+ * console.log(pkg.name)        // "zola"
  * console.log(pkg.description) // "A fast static site generator in a single binary..."
  * console.log(pkg.programs)    // ["zola"]
  * console.log(pkg.versions[0]) // "0.20.0" (latest)
@@ -31,7 +31,7 @@ export const zolaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'getzola.org' as const,
+  name: 'zola' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -73,9 +73,9 @@ export const zolaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'zola',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zola -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zola' as const,
 }
 
 export type ZolaPackage = typeof zolaPackage

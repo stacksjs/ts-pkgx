@@ -76,6 +76,8 @@ export const tfenvPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tfenv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tfenv' as const,
 }
 
 export type TfenvPackage = typeof tfenvPackage

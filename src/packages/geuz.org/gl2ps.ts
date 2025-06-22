@@ -1,11 +1,11 @@
 /**
- * **gl2ps** - pkgx package
+ * **geuz.org/gl2ps** - pkgx package
  *
  * @domain `geuz.org/gl2ps`
  * @version `1.4.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +geuz.org/gl2ps -- $SHELL -i`
+ * @install `launchpad install geuz.org/gl2ps`
  * @dependencies `libpng.org`, `linux:freeglut.sourceforge.io` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.geuzorggl2ps
- * console.log(pkg.name)        // "gl2ps"
+ * console.log(pkg.name)        // "geuz.org/gl2ps"
  * console.log(pkg.versions[0]) // "1.4.2" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const geuzorggl2psPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gl2ps' as const,
+  name: 'geuz.org/gl2ps' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const geuzorggl2psPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +geuz.org/gl2ps -- $SHELL -i' as const,
+  installCommand: 'launchpad install geuz.org/gl2ps' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,6 +60,8 @@ export const geuzorggl2psPackage = {
     '1.4.2',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +geuz.org/gl2ps -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install geuz.org/gl2ps' as const,
 }
 
 export type Geuzorggl2psPackage = typeof geuzorggl2psPackage

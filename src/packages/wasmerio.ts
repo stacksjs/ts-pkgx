@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install wasmer`
- * @aliases `wasmer`
+ * @name `wasmer`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.wasmer
  * // Or access via domain
  * const samePkg = pantry.wasmerio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "wasmer.io"
+ * console.log(pkg.name)        // "wasmer"
  * console.log(pkg.description) // "🚀 Fast, secure, lightweight containers based o..."
  * console.log(pkg.programs)    // ["wasmer"]
  * console.log(pkg.versions[0]) // "6.0.1" (latest)
@@ -31,7 +31,7 @@ export const wasmerPackage = {
   /**
    * The display name of this package.
    */
-  name: 'wasmer.io' as const,
+  name: 'wasmer' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -90,9 +90,9 @@ export const wasmerPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'wasmer',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wasmer -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wasmer' as const,
 }
 
 export type WasmerPackage = typeof wasmerPackage

@@ -88,6 +88,8 @@ export const cowsayPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cowsay -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cowsay' as const,
 }
 
 export type CowsayPackage = typeof cowsayPackage

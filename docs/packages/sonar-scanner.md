@@ -1,11 +1,11 @@
-# sonarscanner
+# sonar-scanner
 
 > Scanner CLI for SonarQube (Server, Cloud)
 
 ## Package Information
 
 - **Domain**: `sonarqube.org/sonarscanner`
-- **Name**: `sonarscanner`
+- **Name**: `sonar-scanner`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sonarqube.org/sonarscanner/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +sonarqube.org/sonarscanner -- $SHELL -i
+launchpad install sonar-scanner
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `sonar-scanner`
 - `sonar-scanner-debug`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `sonar-scanner`
 
 ## Available Versions
 

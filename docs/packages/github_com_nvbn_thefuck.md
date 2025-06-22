@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/nvbn/thefuck@3.32.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) thefuck -- $SHELL -i
 ```
 
 ## Dependencies

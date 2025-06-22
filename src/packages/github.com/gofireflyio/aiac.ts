@@ -86,6 +86,8 @@ export const aiacPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aiac -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install aiac' as const,
 }
 
 export type AiacPackage = typeof aiacPackage

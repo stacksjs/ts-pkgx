@@ -122,6 +122,8 @@ export const moonPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) moon -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install moon' as const,
 }
 
 export type MoonPackage = typeof moonPackage

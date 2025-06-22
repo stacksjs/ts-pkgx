@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sqlc`
- * @aliases `sqlc`
+ * @name `sqlc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sqlc
  * // Or access via domain
  * const samePkg = pantry.sqlcdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sqlc.dev"
+ * console.log(pkg.name)        // "sqlc"
  * console.log(pkg.description) // "Generate type-safe code from SQL"
  * console.log(pkg.programs)    // ["sqlc"]
  * console.log(pkg.versions[0]) // "1.29.0" (latest)
@@ -31,7 +31,7 @@ export const sqlcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sqlc.dev' as const,
+  name: 'sqlc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -70,9 +70,9 @@ export const sqlcPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sqlc',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sqlc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sqlc' as const,
 }
 
 export type SqlcPackage = typeof sqlcPackage

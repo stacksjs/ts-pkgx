@@ -1,11 +1,11 @@
-# speexdsp
+# github.com/xiph/speexdsp
 
 > Speex audio processing library - THIS IS A MIRROR, DEVELOPMENT HAPPENS AT https://gitlab.xiph.org/xiph/speexdsp
 
 ## Package Information
 
 - **Domain**: `github.com/xiph/speexdsp`
-- **Name**: `speexdsp`
+- **Name**: `github.com/xiph/speexdsp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/xiph/speexdsp/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/xiph/speexdsp -- $SHELL -i
+launchpad install github.com/xiph/speexdsp
 ```
 
 ## Programs

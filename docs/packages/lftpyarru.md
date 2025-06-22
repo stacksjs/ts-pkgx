@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) +lftp.yar.ru -- $SHELL -i
+launchpad install lftp
 ```
 
 ## Programs
@@ -52,8 +52,7 @@ This package depends on:
 - `zlib.net`
 - `invisible-island.net/ncurses`
 - `libexpat.github.io`
-- `linuxgnu.org/gcc/libstdcxx@14`
-- `gnu.org/gcc/libstdcxx@14`
+- `linux:gnu.org/gcc/libstdcxx@14`
 
 ## Usage Examples
 

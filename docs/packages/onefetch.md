@@ -1,11 +1,11 @@
-# onefetch.dev
+# onefetch
 
 > Command-line Git information tool
 
 ## Package Information
 
 - **Domain**: `onefetch.dev`
-- **Name**: `onefetch.dev`
+- **Name**: `onefetch`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/onefetch.dev/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install onefetch
 ## Programs
 
 This package provides the following executable programs:
-
-- `onefetch`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `onefetch`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +onefetch.dev@2.24.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) onefetch -- $SHELL -i
 ```
 
 ## Dependencies

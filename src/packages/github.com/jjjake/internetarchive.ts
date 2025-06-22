@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ia`
- * @aliases `ia`
+ * @name `ia`
  * @dependencies `python.org~3.11`, `gnu.org/which^2 # our stubs use which`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ia
  * // Or access via domain
  * const samePkg = pantry.githubcomjjjakeinternetarchive
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "internetarchive"
+ * console.log(pkg.name)        // "ia"
  * console.log(pkg.description) // "Python wrapper for the various Internet Archive..."
  * console.log(pkg.programs)    // ["ia"]
  * console.log(pkg.versions[0]) // "5.4.0" (latest)
@@ -32,7 +32,7 @@ export const iaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'internetarchive' as const,
+  name: 'ia' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -86,9 +86,9 @@ export const iaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ia',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ia -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ia' as const,
 }
 
 export type IaPackage = typeof iaPackage

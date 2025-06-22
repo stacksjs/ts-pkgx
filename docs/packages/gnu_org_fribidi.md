@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/fribidi@1.0.16 -- $SHELL -i
+sh <(curl https://pkgx.sh) fribidi -- $SHELL -i
 ```
 
 ## Usage Examples

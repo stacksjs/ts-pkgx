@@ -1,18 +1,18 @@
 /**
- * **libyaml** - Canonical source repository for LibYAML
+ * **pyyaml.org/libyaml** - Canonical source repository for LibYAML
  *
  * @domain `pyyaml.org/libyaml`
  * @version `0.2.5` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +pyyaml.org/libyaml -- $SHELL -i`
+ * @install `launchpad install pyyaml.org/libyaml`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.pyyamlorglibyaml
- * console.log(pkg.name)        // "libyaml"
+ * console.log(pkg.name)        // "pyyaml.org/libyaml"
  * console.log(pkg.description) // "Canonical source repository for LibYAML"
  * console.log(pkg.versions[0]) // "0.2.5" (latest)
  * ```
@@ -24,7 +24,7 @@ export const pyyamlorglibyamlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libyaml' as const,
+  name: 'pyyaml.org/libyaml' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const pyyamlorglibyamlPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pyyaml.org/libyaml -- $SHELL -i' as const,
+  installCommand: 'launchpad install pyyaml.org/libyaml' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -52,6 +52,8 @@ export const pyyamlorglibyamlPackage = {
     '0.2.5',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pyyaml.org/libyaml -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pyyaml.org/libyaml' as const,
 }
 
 export type PyyamlorglibyamlPackage = typeof pyyamlorglibyamlPackage

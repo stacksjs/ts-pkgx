@@ -5,20 +5,20 @@
  * @version `1.3.6` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +sourceforge.net/libtirpc -- $SHELL -i`
- * @aliases `sf.net/libtirpc`
+ * @install `launchpad install sourceforge.net/libtirpc`
+ * @name `sf.net/libtirpc`
  * @dependencies `kerberos.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sfnetlibtirpc
  * // Or access via domain
  * const samePkg = pantry.sourceforgenetlibtirpc
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libtirpc"
+ * console.log(pkg.name)        // "sf.net/libtirpc"
  * console.log(pkg.versions[0]) // "1.3.6" (latest)
  * ```
  *
@@ -29,7 +29,7 @@ export const sfnetlibtirpcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libtirpc' as const,
+  name: 'sf.net/libtirpc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +45,7 @@ export const sfnetlibtirpcPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +sourceforge.net/libtirpc -- $SHELL -i' as const,
+  installCommand: 'launchpad install sourceforge.net/libtirpc' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -69,9 +69,9 @@ export const sfnetlibtirpcPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sf.net/libtirpc',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceforge.net/libtirpc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sourceforge.net/libtirpc' as const,
 }
 
 export type SfnetlibtirpcPackage = typeof sfnetlibtirpcPackage

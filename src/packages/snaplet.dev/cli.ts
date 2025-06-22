@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install snaplet`
- * @aliases `snaplet`
+ * @name `snaplet`
  * @dependencies `nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.snaplet
  * // Or access via domain
  * const samePkg = pantry.snapletdevcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cli"
+ * console.log(pkg.name)        // "snaplet"
  * console.log(pkg.programs)    // ["snaplet"]
  * console.log(pkg.versions[0]) // "0.92.1" (latest)
  * ```
@@ -31,7 +31,7 @@ export const snapletPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cli' as const,
+  name: 'snaplet' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -140,9 +140,9 @@ export const snapletPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'snaplet',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) snaplet -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install snaplet' as const,
 }
 
 export type SnapletPackage = typeof snapletPackage

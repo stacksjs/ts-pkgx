@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/daixiang0/gci@0.13.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) gci -- $SHELL -i
 ```
 
 ## Usage Examples

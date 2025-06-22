@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install direnv`
- * @aliases `direnv`
+ * @name `direnv`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.direnv
  * // Or access via domain
  * const samePkg = pantry.direnvnet
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "direnv.net"
+ * console.log(pkg.name)        // "direnv"
  * console.log(pkg.description) // "Load/unload environment variables based on $PWD"
  * console.log(pkg.programs)    // ["direnv"]
  * console.log(pkg.versions[0]) // "2.36.0" (latest)
@@ -31,7 +31,7 @@ export const direnvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'direnv.net' as const,
+  name: 'direnv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -73,9 +73,9 @@ export const direnvPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'direnv',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) direnv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install direnv' as const,
 }
 
 export type DirenvPackage = typeof direnvPackage

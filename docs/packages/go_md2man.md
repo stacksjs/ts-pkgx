@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/cpuguy83/go-md2man@2.0.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) go-md2man -- $SHELL -i
 ```
 
 ## Usage Examples

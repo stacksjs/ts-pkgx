@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install protoc-gen-go`
- * @aliases `protoc-gen-go`
+ * @name `protoc-gen-go`
  * @companions `protobuf.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.protocgengo
  * // Or access via domain
  * const samePkg = pantry.googlecomprotobufgo
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "protobuf-go"
+ * console.log(pkg.name)        // "protoc-gen-go"
  * console.log(pkg.description) // "Go support for Google's protocol buffers"
  * console.log(pkg.programs)    // ["protoc-gen-go"]
  * console.log(pkg.versions[0]) // "1.36.6" (latest)
@@ -32,7 +32,7 @@ export const protocgengoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'protobuf-go' as const,
+  name: 'protoc-gen-go' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -87,9 +87,9 @@ export const protocgengoPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'protoc-gen-go',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) protoc-gen-go -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install protoc-gen-go' as const,
 }
 
 export type ProtocgengoPackage = typeof protocgengoPackage

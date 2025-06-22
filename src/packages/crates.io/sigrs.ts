@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sig`
- * @aliases `sig`
+ * @name `sig`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sig
  * // Or access via domain
  * const samePkg = pantry.cratesiosigrs
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sigrs"
+ * console.log(pkg.name)        // "sig"
  * console.log(pkg.description) // "Interactive grep (for streaming)"
  * console.log(pkg.programs)    // ["sig"]
  * console.log(pkg.versions[0]) // "0.1.4" (latest)
@@ -31,7 +31,7 @@ export const sigPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sigrs' as const,
+  name: 'sig' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -72,9 +72,9 @@ export const sigPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sig',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sig -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sig' as const,
 }
 
 export type SigPackage = typeof sigPackage

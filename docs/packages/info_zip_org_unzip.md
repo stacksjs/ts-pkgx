@@ -1,11 +1,11 @@
-# unzip
+# info-zip.org/unzip
 
 > Extraction utility for .zip compressed archives
 
 ## Package Information
 
 - **Domain**: `info-zip.org/unzip`
-- **Name**: `unzip`
+- **Name**: `info-zip.org/unzip`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/info-zip.org/unzip/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +info-zip.org/unzip -- $SHELL -i
+launchpad install info-zip.org/unzip
 ```
 
 ## Programs

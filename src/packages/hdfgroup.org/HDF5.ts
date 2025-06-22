@@ -1,12 +1,12 @@
 /**
- * **HDF5** - pkgx package
+ * **hdfgroup.org/HDF5** - pkgx package
  *
  * @domain `hdfgroup.org/HDF5`
  * @programs `h5c++`, `h5cc`, `h5clear`, `h5copy`, `h5debug`, ... (+16 more)
  * @version `1.14.6` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +hdfgroup.org/HDF5 -- $SHELL -i`
+ * @install `launchpad install hdfgroup.org/HDF5`
  * @dependencies `dkrz.de/libaec@1`, `linux:zlib.net@1` (includes OS-specific dependencies with `os:package` format)
  * @companions `gnu.org/gcc`
  *
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.hdfgrouporghdf5
- * console.log(pkg.name)        // "HDF5"
+ * console.log(pkg.name)        // "hdfgroup.org/HDF5"
  * console.log(pkg.programs)    // ["h5c++", "h5cc", ...]
  * console.log(pkg.versions[0]) // "1.14.6" (latest)
  * ```
@@ -27,7 +27,7 @@ export const hdfgrouporghdf5Package = {
   /**
    * The display name of this package.
    */
-  name: 'HDF5' as const,
+  name: 'hdfgroup.org/HDF5' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const hdfgrouporghdf5Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +hdfgroup.org/HDF5 -- $SHELL -i' as const,
+  installCommand: 'launchpad install hdfgroup.org/HDF5' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -97,6 +97,8 @@ export const hdfgrouporghdf5Package = {
     '1.14.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +hdfgroup.org/HDF5 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hdfgroup.org/HDF5' as const,
 }
 
 export type Hdfgrouporghdf5Package = typeof hdfgrouporghdf5Package

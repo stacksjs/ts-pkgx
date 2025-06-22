@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dozzle`
- * @aliases `dozzle`
+ * @name `dozzle`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.dozzle
  * // Or access via domain
  * const samePkg = pantry.dozzledev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "dozzle.dev"
+ * console.log(pkg.name)        // "dozzle"
  * console.log(pkg.description) // "Realtime log viewer for docker containers."
  * console.log(pkg.programs)    // ["dozzle"]
  * console.log(pkg.versions[0]) // "8.13.1" (latest)
@@ -31,7 +31,7 @@ export const dozzlePackage = {
   /**
    * The display name of this package.
    */
-  name: 'dozzle.dev' as const,
+  name: 'dozzle' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -127,9 +127,9 @@ export const dozzlePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'dozzle',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dozzle -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dozzle' as const,
 }
 
 export type DozzlePackage = typeof dozzlePackage

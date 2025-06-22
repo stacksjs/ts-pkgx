@@ -75,6 +75,8 @@ export const sasqwatchPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sasqwatch -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sasqwatch' as const,
 }
 
 export type SasqwatchPackage = typeof sasqwatchPackage

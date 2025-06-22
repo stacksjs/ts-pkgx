@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install robot`
- * @aliases `robot`
+ * @name `robot`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.robot
  * // Or access via domain
  * const samePkg = pantry.robotframeworkorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "robotframework.org"
+ * console.log(pkg.name)        // "robot"
  * console.log(pkg.description) // "Generic automation framework for acceptance tes..."
  * console.log(pkg.programs)    // ["robot"]
  * console.log(pkg.versions[0]) // "7.3.1" (latest)
@@ -32,7 +32,7 @@ export const robotPackage = {
   /**
    * The display name of this package.
    */
-  name: 'robotframework.org' as const,
+  name: 'robot' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const robotPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'robot',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) robot -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install robot' as const,
 }
 
 export type RobotPackage = typeof robotPackage

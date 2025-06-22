@@ -1,11 +1,11 @@
 /**
- * **json-glib** - pkgx package
+ * **gnome.org/json-glib** - pkgx package
  *
  * @domain `gnome.org/json-glib`
  * @version `1.10.6` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnome.org/json-glib -- $SHELL -i`
+ * @install `launchpad install gnome.org/json-glib`
  * @dependencies `gnome.org/glib^2.78`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnomeorgjsonglib
- * console.log(pkg.name)        // "json-glib"
+ * console.log(pkg.name)        // "gnome.org/json-glib"
  * console.log(pkg.versions[0]) // "1.10.6" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const gnomeorgjsonglibPackage = {
   /**
    * The display name of this package.
    */
-  name: 'json-glib' as const,
+  name: 'gnome.org/json-glib' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const gnomeorgjsonglibPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnome.org/json-glib -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnome.org/json-glib' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,6 +61,8 @@ export const gnomeorgjsonglibPackage = {
     '1.8.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/json-glib -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnome.org/json-glib' as const,
 }
 
 export type GnomeorgjsonglibPackage = typeof gnomeorgjsonglibPackage

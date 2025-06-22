@@ -1,11 +1,11 @@
-# sqruff
+# quary.dev/sqruff
 
 > Fast SQL formatter/linter
 
 ## Package Information
 
 - **Domain**: `quary.dev/sqruff`
-- **Name**: `sqruff`
+- **Name**: `quary.dev/sqruff`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/quary.dev/sqruff/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +quary.dev/sqruff -- $SHELL -i
+launchpad install quary.dev/sqruff
 ```
 
 ## Programs

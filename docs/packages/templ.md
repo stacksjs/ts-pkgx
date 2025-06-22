@@ -1,11 +1,11 @@
-# templ.guide
+# templ
 
 > A language for writing HTML user interfaces in Go.
 
 ## Package Information
 
 - **Domain**: `templ.guide`
-- **Name**: `templ.guide`
+- **Name**: `templ`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/templ.guide/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install templ
 ## Programs
 
 This package provides the following executable programs:
-
-- `templ`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `templ`
 
@@ -48,7 +42,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +templ.guide@0.3.898 -- $SHELL -i
+sh <(curl https://pkgx.sh) templ -- $SHELL -i
 ```
 
 ## Usage Examples

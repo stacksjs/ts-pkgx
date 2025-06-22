@@ -69,6 +69,8 @@ export const dutiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) duti -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install duti' as const,
 }
 
 export type DutiPackage = typeof dutiPackage

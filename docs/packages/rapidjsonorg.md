@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +rapidjson.org -- $SHELL -i
+launchpad install rapidjson.org
 ```
 
 ## Programs

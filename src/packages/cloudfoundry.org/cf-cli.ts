@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cf`
- * @aliases `cf`
+ * @name `cf`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cf
  * // Or access via domain
  * const samePkg = pantry.cloudfoundryorgcfcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cf-cli"
+ * console.log(pkg.name)        // "cf"
  * console.log(pkg.description) // "Filter to replace numeric timestamps with a for..."
  * console.log(pkg.programs)    // ["cf"]
  * console.log(pkg.versions[0]) // "8.14.1" (latest)
@@ -31,7 +31,7 @@ export const cfPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cf-cli' as const,
+  name: 'cf' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -97,9 +97,9 @@ export const cfPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cf',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cf' as const,
 }
 
 export type CfPackage = typeof cfPackage

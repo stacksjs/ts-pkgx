@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) templ
+launchpad install templ
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +templ.guide@0.3.898 -- $SHELL -i
+sh <(curl https://pkgx.sh) templ -- $SHELL -i
 ```
 
 ## Usage Examples

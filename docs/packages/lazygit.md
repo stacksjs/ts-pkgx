@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/jesseduffield/lazygit@0.52.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) lazygit -- $SHELL -i
 ```
 
 ## Dependencies

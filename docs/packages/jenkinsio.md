@@ -1,11 +1,11 @@
-# jenkins.io
+# jenkins-lts
 
 > Extendable open source continuous integration server
 
 ## Package Information
 
 - **Domain**: `jenkins.io`
-- **Name**: `jenkins.io`
+- **Name**: `jenkins-lts`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jenkins.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +jenkins.io -- $SHELL -i
+launchpad install jenkins.io
 ```
 
 ## Programs

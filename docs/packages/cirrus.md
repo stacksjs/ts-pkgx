@@ -1,11 +1,11 @@
-# cirrus-cli
+# cirrus
 
 > CLI for executing Cirrus tasks locally and in any CI
 
 ## Package Information
 
 - **Domain**: `github.com/cirruslabs/cirrus-cli`
-- **Name**: `cirrus-cli`
+- **Name**: `cirrus`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/cirruslabs/cirrus-cli/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install cirrus
 ## Programs
 
 This package provides the following executable programs:
-
-- `cirrus`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `cirrus`
 
@@ -57,7 +51,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/cirruslabs/cirrus-cli@0.144.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) cirrus -- $SHELL -i
 ```
 
 ## Usage Examples

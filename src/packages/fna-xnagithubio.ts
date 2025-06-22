@@ -5,7 +5,7 @@
  * @version `25.6.0` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +fna-xna.github.io -- $SHELL -i`
+ * @install `launchpad install fna-xna.github.io`
  * @dependencies `libsdl.org^2.28`
  *
  * @example
@@ -41,7 +41,7 @@ export const fnaxnagithubioPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +fna-xna.github.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install fna-xna.github.io' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -76,6 +76,8 @@ export const fnaxnagithubioPackage = {
     '24.1.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fna-xna.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fna-xna.github.io' as const,
 }
 
 export type FnaxnagithubioPackage = typeof fnaxnagithubioPackage

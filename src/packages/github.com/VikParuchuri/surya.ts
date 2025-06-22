@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install surya_detect`
- * @aliases `surya_detect`, `Surya`
+ * @name `Surya`
+ * @aliases `surya_detect`
  * @dependencies `pkgx.sh^1`, `linux:mesa3d.org^23.3`, `linux:gnome.org/glib^2`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -19,7 +20,7 @@
  * // Or access via domain
  * const samePkg = pantry.githubcomvikparuchurisurya
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "surya"
+ * console.log(pkg.name)        // "Surya"
  * console.log(pkg.description) // "OCR, layout analysis, reading order, table reco..."
  * console.log(pkg.programs)    // ["surya_detect"]
  * console.log(pkg.versions[0]) // "0.14.6" (latest)
@@ -32,7 +33,7 @@ export const suryadetectPackage = {
   /**
    * The display name of this package.
    */
-  name: 'surya' as const,
+  name: 'Surya' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -144,8 +145,9 @@ export const suryadetectPackage = {
    */
   aliases: [
     'surya_detect',
-    'Surya',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) surya_detect -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install surya_detect' as const,
 }
 
 export type SuryadetectPackage = typeof suryadetectPackage

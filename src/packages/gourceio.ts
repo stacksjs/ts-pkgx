@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gource`
- * @aliases `gource`
+ * @name `gource`
  * @dependencies `boost.org^1.82`, `freetype.org^2`, `libpng.org^1.6`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gource
  * // Or access via domain
  * const samePkg = pantry.gourceio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gource.io"
+ * console.log(pkg.name)        // "gource"
  * console.log(pkg.description) // "software version control visualization"
  * console.log(pkg.programs)    // ["gource"]
  * console.log(pkg.versions[0]) // "0.55.0" (latest)
@@ -32,7 +32,7 @@ export const gourcePackage = {
   /**
    * The display name of this package.
    */
-  name: 'gource.io' as const,
+  name: 'gource' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -82,9 +82,9 @@ export const gourcePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gource',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gource -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gource' as const,
 }
 
 export type GourcePackage = typeof gourcePackage

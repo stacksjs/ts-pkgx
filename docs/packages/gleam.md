@@ -1,11 +1,11 @@
-# gleam.run
+# gleam
 
 > ⭐️ A friendly language for building type-safe, scalable systems!
 
 ## Package Information
 
 - **Domain**: `gleam.run`
-- **Name**: `gleam.run`
+- **Name**: `gleam`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gleam.run/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install gleam
 ## Programs
 
 This package provides the following executable programs:
-
-- `gleam`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `gleam`
 
@@ -51,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gleam.run@1.11.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) gleam -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install render`
- * @aliases `render`
+ * @name `render`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.render
  * // Or access via domain
  * const samePkg = pantry.rendercom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "render.com"
+ * console.log(pkg.name)        // "render"
  * console.log(pkg.description) // "Command-line interface for Render"
  * console.log(pkg.programs)    // ["render"]
  * console.log(pkg.versions[0]) // "0.1.11" (latest)
@@ -31,7 +31,7 @@ export const renderPackage = {
   /**
    * The display name of this package.
    */
-  name: 'render.com' as const,
+  name: 'render' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -73,9 +73,9 @@ export const renderPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'render',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) render -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install render' as const,
 }
 
 export type RenderPackage = typeof renderPackage

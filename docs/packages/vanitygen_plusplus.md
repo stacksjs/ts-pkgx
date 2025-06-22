@@ -1,11 +1,11 @@
-# vanitygen-plusplus
+# github.com/10gic/vanitygen-plusplus
 
 > A vanity address generator for BTC, ETH, LTC, TRX and 100+ more crypto currencies.
 
 ## Package Information
 
 - **Domain**: `github.com/10gic/vanitygen-plusplus`
-- **Name**: `vanitygen-plusplus`
+- **Name**: `github.com/10gic/vanitygen-plusplus`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/10gic/vanitygen-plusplus/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/10gic/vanitygen-plusplus -- $SHELL -i
+launchpad install github.com/10gic/vanitygen-plusplus
 ```
 
 ## Programs

@@ -1,11 +1,11 @@
-# awscli-local
+# awslocal
 
 > 💲  "awslocal" - Thin wrapper around the "aws" command line interface for use with LocalStack
 
 ## Package Information
 
 - **Domain**: `localstack.cloud/awscli-local`
-- **Name**: `awscli-local`
+- **Name**: `awslocal`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/localstack.cloud/awscli-local/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install awslocal
 ## Programs
 
 This package provides the following executable programs:
-
-- `awslocal`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `awslocal`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +localstack.cloud/awscli-local@2023.12.28 -- $SHELL -i
+sh <(curl https://pkgx.sh) awslocal -- $SHELL -i
 ```
 
 ## Dependencies

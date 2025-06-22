@@ -1,11 +1,11 @@
-# polkit
+# freedesktop.org/polkit
 
 > polkit (formerly PolicyKit) is a toolkit for defining and handling authorizations. It is used for allowing unprivileged processes to speak to privileged processes.
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/polkit`
-- **Name**: `polkit`
+- **Name**: `freedesktop.org/polkit`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/polkit/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +freedesktop.org/polkit -- $SHELL -i
+launchpad install freedesktop.org/polkit
 ```
 
 ## Programs

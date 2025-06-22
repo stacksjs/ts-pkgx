@@ -78,6 +78,8 @@ export const agepluginyubikeyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) age-plugin-yubikey -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install age-plugin-yubikey' as const,
 }
 
 export type AgepluginyubikeyPackage = typeof agepluginyubikeyPackage

@@ -97,6 +97,8 @@ export const colimaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) colima -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install colima' as const,
 }
 
 export type ColimaPackage = typeof colimaPackage

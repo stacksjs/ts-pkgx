@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bake`
- * @aliases `bake`
+ * @name `bake`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.bake
  * // Or access via domain
  * const samePkg = pantry.cratesiobakers
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "bake-rs"
+ * console.log(pkg.name)        // "bake"
  * console.log(pkg.description) // "Simple and easy to use "script runner" written ..."
  * console.log(pkg.programs)    // ["bake"]
  * console.log(pkg.versions[0]) // "1.2.0" (latest)
@@ -31,7 +31,7 @@ export const bakePackage = {
   /**
    * The display name of this package.
    */
-  name: 'bake-rs' as const,
+  name: 'bake' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const bakePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'bake',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bake -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bake' as const,
 }
 
 export type BakePackage = typeof bakePackage

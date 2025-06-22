@@ -1,11 +1,11 @@
-# golangci-lint.run
+# golangci-lint
 
 > Fast linters runner for Go
 
 ## Package Information
 
 - **Domain**: `golangci-lint.run`
-- **Name**: `golangci-lint.run`
+- **Name**: `golangci-lint`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/golangci-lint.run/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install golangci-lint
 ## Programs
 
 This package provides the following executable programs:
-
-- `golangci-lint`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `golangci-lint`
 
@@ -53,7 +47,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +golangci-lint.run@2.1.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) golangci-lint -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install allure`
- * @aliases `allure`
+ * @name `allure`
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.allure
  * // Or access via domain
  * const samePkg = pantry.githubcomallureframeworkallure2
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "allure2"
+ * console.log(pkg.name)        // "allure"
  * console.log(pkg.description) // "Allure Report is a flexible, lightweight multi-..."
  * console.log(pkg.programs)    // ["allure"]
  * console.log(pkg.versions[0]) // "2.34.0" (latest)
@@ -32,7 +32,7 @@ export const allurePackage = {
   /**
    * The display name of this package.
    */
-  name: 'allure2' as const,
+  name: 'allure' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -84,9 +84,9 @@ export const allurePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'allure',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) allure -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install allure' as const,
 }
 
 export type AllurePackage = typeof allurePackage

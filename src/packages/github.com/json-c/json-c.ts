@@ -1,18 +1,18 @@
 /**
- * **json-c** - https://github.com/json-c/json-c is the official code repository for json-c.  See the wiki for release tarballs for download.  API docs at http://json-c.github.io/json-c/
+ * **github.com/json-c/json-c** - https://github.com/json-c/json-c is the official code repository for json-c.  See the wiki for release tarballs for download.  API docs at http://json-c.github.io/json-c/
  *
  * @domain `github.com/json-c/json-c`
  * @version `0.18.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/json-c/json-c -- $SHELL -i`
+ * @install `launchpad install github.com/json-c/json-c`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomjsoncjsonc
- * console.log(pkg.name)        // "json-c"
+ * console.log(pkg.name)        // "github.com/json-c/json-c"
  * console.log(pkg.description) // "https://github.com/json-c/json-c is the officia..."
  * console.log(pkg.versions[0]) // "0.18.0" (latest)
  * ```
@@ -24,7 +24,7 @@ export const githubcomjsoncjsoncPackage = {
   /**
    * The display name of this package.
    */
-  name: 'json-c' as const,
+  name: 'github.com/json-c/json-c' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const githubcomjsoncjsoncPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/json-c/json-c -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/json-c/json-c' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -54,6 +54,8 @@ export const githubcomjsoncjsoncPackage = {
     '0.16.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/json-c/json-c -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/json-c/json-c' as const,
 }
 
 export type GithubcomjsoncjsoncPackage = typeof githubcomjsoncjsoncPackage

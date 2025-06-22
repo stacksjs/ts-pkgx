@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install taplo`
- * @aliases `taplo`
+ * @name `taplo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.taplo
  * // Or access via domain
  * const samePkg = pantry.taplotamasfedev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "taplo.tamasfe.dev"
+ * console.log(pkg.name)        // "taplo"
  * console.log(pkg.description) // "A TOML toolkit written in Rust"
  * console.log(pkg.programs)    // ["taplo"]
  * console.log(pkg.versions[0]) // "0.10.0" (latest)
@@ -31,7 +31,7 @@ export const taploPackage = {
   /**
    * The display name of this package.
    */
-  name: 'taplo.tamasfe.dev' as const,
+  name: 'taplo' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -72,9 +72,9 @@ export const taploPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'taplo',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) taplo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install taplo' as const,
 }
 
 export type TaploPackage = typeof taploPackage

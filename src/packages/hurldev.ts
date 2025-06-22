@@ -6,20 +6,20 @@
  * @version `6.1.1` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +hurl.dev -- $SHELL -i`
- * @aliases `hurl`
+ * @install `launchpad install hurl`
+ * @name `hurl`
  * @dependencies `gnome.org/libxml2`, `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.hurl
  * // Or access via domain
  * const samePkg = pantry.hurldev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "hurl.dev"
+ * console.log(pkg.name)        // "hurl"
  * console.log(pkg.description) // "Run and Test HTTP Requests with plain text and ..."
  * console.log(pkg.programs)    // ["hurl", "hurlfmt"]
  * console.log(pkg.versions[0]) // "6.1.1" (latest)
@@ -32,7 +32,7 @@ export const hurlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'hurl.dev' as const,
+  name: 'hurl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const hurlPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +hurl.dev -- $SHELL -i' as const,
+  installCommand: 'launchpad install hurl' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -85,9 +85,9 @@ export const hurlPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'hurl',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +hurl.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hurl' as const,
 }
 
 export type HurlPackage = typeof hurlPackage

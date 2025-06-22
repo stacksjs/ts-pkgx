@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jira`
- * @aliases `jira`
+ * @name `jira`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.jira
  * // Or access via domain
  * const samePkg = pantry.githubcomankitpokhreljiracli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "jira-cli"
+ * console.log(pkg.name)        // "jira"
  * console.log(pkg.description) // "simple jira command line client in Go"
  * console.log(pkg.programs)    // ["jira"]
  * console.log(pkg.versions[0]) // "1.6.0" (latest)
@@ -31,7 +31,7 @@ export const jiraPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jira-cli' as const,
+  name: 'jira' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -70,9 +70,9 @@ export const jiraPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jira',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jira -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jira' as const,
 }
 
 export type JiraPackage = typeof jiraPackage

@@ -74,6 +74,8 @@ export const kubescorePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kube-score -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kube-score' as const,
 }
 
 export type KubescorePackage = typeof kubescorePackage

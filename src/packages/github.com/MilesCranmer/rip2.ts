@@ -76,6 +76,8 @@ export const ripPackage = {
   aliases: [
     'rip',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rip -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rip' as const,
 }
 
 export type RipPackage = typeof ripPackage

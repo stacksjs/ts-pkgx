@@ -77,6 +77,8 @@ export const zoxidePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zoxide -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zoxide' as const,
 }
 
 export type ZoxidePackage = typeof zoxidePackage

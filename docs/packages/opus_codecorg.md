@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +opus-codec.org -- $SHELL -i
+launchpad install opus-codec.org
 ```
 
 ## Programs

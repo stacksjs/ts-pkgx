@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/fabio42/sasqwatch@0.2.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) sasqwatch -- $SHELL -i
 ```
 
 ## Usage Examples

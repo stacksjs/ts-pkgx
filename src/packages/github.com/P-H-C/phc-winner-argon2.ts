@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install argon2`
- * @aliases `argon2`
+ * @name `argon2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.argon2
  * // Or access via domain
  * const samePkg = pantry.githubcomphcphcwinnerargon2
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "phc-winner-argon2"
+ * console.log(pkg.name)        // "argon2"
  * console.log(pkg.description) // "The password hash Argon2, winner of PHC"
  * console.log(pkg.programs)    // ["argon2"]
  * console.log(pkg.versions[0]) // "20190702.0.0" (latest)
@@ -31,7 +31,7 @@ export const argon2Package = {
   /**
    * The display name of this package.
    */
-  name: 'phc-winner-argon2' as const,
+  name: 'argon2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const argon2Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'argon2',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) argon2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install argon2' as const,
 }
 
 export type Argon2Package = typeof argon2Package

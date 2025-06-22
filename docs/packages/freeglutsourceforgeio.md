@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +freeglut.sourceforge.io -- $SHELL -i
+launchpad install freeglut.sourceforge.io
 ```
 
 ## Programs

@@ -1,11 +1,11 @@
-# fastlane.tools
+# fastlane
 
 > 🚀 The easiest way to automate building and releasing your iOS and Android apps
 
 ## Package Information
 
 - **Domain**: `fastlane.tools`
-- **Name**: `fastlane.tools`
+- **Name**: `fastlane`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fastlane.tools/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install fastlane
 ## Programs
 
 This package provides the following executable programs:
-
-- `fastlane`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `fastlane`
 
@@ -47,7 +41,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +fastlane.tools@2.228.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) fastlane -- $SHELL -i
 ```
 
 ## Dependencies
@@ -59,7 +53,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with fastlane.tools:
+These packages work well with fastlane:
 
 - `cocoapods.org/xcodeproj`
 

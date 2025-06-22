@@ -1,11 +1,11 @@
-# fishshell.com
+# fish
 
 > User-friendly command-line shell for UNIX-like operating systems
 
 ## Package Information
 
 - **Domain**: `fishshell.com`
-- **Name**: `fishshell.com`
+- **Name**: `fish`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fishshell.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +fishshell.com -- $SHELL -i
+launchpad install fish
 ```
 
 ## Programs
@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `fish`
 - `fish_indent`
 - `fish_key_reader`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `fish`
 
 ## Available Versions
 

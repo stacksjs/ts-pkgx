@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install vault`
- * @aliases `vault`
+ * @name `vault`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.vault
  * // Or access via domain
  * const samePkg = pantry.vaultprojectio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "vaultproject.io"
+ * console.log(pkg.name)        // "vault"
  * console.log(pkg.description) // "A tool for secrets management, encryption as a ..."
  * console.log(pkg.programs)    // ["vault"]
  * console.log(pkg.versions[0]) // "1.19.5" (latest)
@@ -31,7 +31,7 @@ export const vaultPackage = {
   /**
    * The display name of this package.
    */
-  name: 'vaultproject.io' as const,
+  name: 'vault' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -123,9 +123,9 @@ export const vaultPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'vault',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vault -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vault' as const,
 }
 
 export type VaultPackage = typeof vaultPackage

@@ -82,6 +82,8 @@ export const shovelPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) shovel -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install shovel' as const,
 }
 
 export type ShovelPackage = typeof shovelPackage

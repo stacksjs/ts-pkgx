@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/lu-zero/cargo-c -- $SHELL -i
+launchpad install cargo-c
 ```
 
 ## Programs

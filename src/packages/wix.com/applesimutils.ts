@@ -70,6 +70,8 @@ export const applesimutilsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) applesimutils -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install applesimutils' as const,
 }
 
 export type ApplesimutilsPackage = typeof applesimutilsPackage

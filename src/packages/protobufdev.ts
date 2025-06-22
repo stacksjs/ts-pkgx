@@ -19,7 +19,7 @@
  * // Or access via domain
  * const samePkg = pantry.protobufdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "protobuf.dev"
+ * console.log(pkg.name)        // "Protocol Buffers"
  * console.log(pkg.description) // "Protocol Buffers - Google's data interchange fo..."
  * console.log(pkg.programs)    // ["protoc"]
  * console.log(pkg.versions[0]) // "31.1.0" (latest)
@@ -32,7 +32,7 @@ export const protocPackage = {
   /**
    * The display name of this package.
    */
-  name: 'protobuf.dev' as const,
+  name: 'Protocol Buffers' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -121,6 +121,8 @@ export const protocPackage = {
   aliases: [
     'protoc',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) protoc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install protoc' as const,
 }
 
 export type ProtocPackage = typeof protocPackage

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tinygo`
- * @aliases `tinygo`
+ * @name `tinygo`
  * @dependencies `go.dev`
  * @companions `llvm.org`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tinygo
  * // Or access via domain
  * const samePkg = pantry.tinygoorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tinygo.org"
+ * console.log(pkg.name)        // "tinygo"
  * console.log(pkg.description) // "Go compiler for small places. Microcontrollers,..."
  * console.log(pkg.programs)    // ["tinygo"]
  * console.log(pkg.versions[0]) // "0.38.0" (latest)
@@ -33,7 +33,7 @@ export const tinygoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tinygo.org' as const,
+  name: 'tinygo' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -89,9 +89,9 @@ export const tinygoPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tinygo',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tinygo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tinygo' as const,
 }
 
 export type TinygoPackage = typeof tinygoPackage

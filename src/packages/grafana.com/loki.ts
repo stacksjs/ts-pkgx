@@ -88,6 +88,8 @@ export const lokiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) loki -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install loki' as const,
 }
 
 export type LokiPackage = typeof lokiPackage

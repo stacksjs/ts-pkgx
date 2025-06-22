@@ -5,7 +5,7 @@
  * @version `20.1.7` (41 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +libcxx.llvm.org -- $SHELL -i`
+ * @install `launchpad install libcxx.llvm.org`
  *
  * @example
  * ```typescript
@@ -40,7 +40,7 @@ export const libcxxllvmorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +libcxx.llvm.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install libcxx.llvm.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -92,6 +92,8 @@ export const libcxxllvmorgPackage = {
     '12.0.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libcxx.llvm.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libcxx.llvm.org' as const,
 }
 
 export type LibcxxllvmorgPackage = typeof libcxxllvmorgPackage

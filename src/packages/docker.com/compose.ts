@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install docker-compose`
- * @aliases `docker-compose`
+ * @name `docker-compose`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.dockercompose
  * // Or access via domain
  * const samePkg = pantry.dockercomcompose
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "compose"
+ * console.log(pkg.name)        // "docker-compose"
  * console.log(pkg.description) // "Define and run multi-container applications wit..."
  * console.log(pkg.programs)    // ["docker-compose"]
  * console.log(pkg.versions[0]) // "2.37.2" (latest)
@@ -31,7 +31,7 @@ export const dockercomposePackage = {
   /**
    * The display name of this package.
    */
-  name: 'compose' as const,
+  name: 'docker-compose' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -120,9 +120,9 @@ export const dockercomposePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'docker-compose',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) docker-compose -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docker-compose' as const,
 }
 
 export type DockercomposePackage = typeof dockercomposePackage

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xplr`
- * @aliases `xplr`
+ * @name `xplr`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.xplr
  * // Or access via domain
  * const samePkg = pantry.xplrdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "xplr.dev"
+ * console.log(pkg.name)        // "xplr"
  * console.log(pkg.description) // "A hackable, minimal, fast TUI file explorer"
  * console.log(pkg.programs)    // ["xplr"]
  * console.log(pkg.versions[0]) // "1.0.0" (latest)
@@ -31,7 +31,7 @@ export const xplrPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xplr.dev' as const,
+  name: 'xplr' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -71,9 +71,9 @@ export const xplrPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'xplr',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xplr -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xplr' as const,
 }
 
 export type XplrPackage = typeof xplrPackage

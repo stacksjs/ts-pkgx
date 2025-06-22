@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install flit`
- * @aliases `flit`
+ * @name `flit`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.flit
  * // Or access via domain
  * const samePkg = pantry.flitpypaio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "flit.pypa.io"
+ * console.log(pkg.name)        // "flit"
  * console.log(pkg.description) // "Simplified packaging of Python modules"
  * console.log(pkg.programs)    // ["flit"]
  * console.log(pkg.versions[0]) // "3.12.0" (latest)
@@ -32,7 +32,7 @@ export const flitPackage = {
   /**
    * The display name of this package.
    */
-  name: 'flit.pypa.io' as const,
+  name: 'flit' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -80,9 +80,9 @@ export const flitPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'flit',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) flit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install flit' as const,
 }
 
 export type FlitPackage = typeof flitPackage

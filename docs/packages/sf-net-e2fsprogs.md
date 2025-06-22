@@ -1,11 +1,11 @@
-# e2fsprogs
+# sf.net/e2fsprogs
 
 > Utilities for the ext2, ext3, and ext4 file systems
 
 ## Package Information
 
 - **Domain**: `sourceforge.net/e2fsprogs`
-- **Name**: `e2fsprogs`
+- **Name**: `sf.net/e2fsprogs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/e2fsprogs/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +sourceforge.net/e2fsprogs -- $SHELL -i
+launchpad install sourceforge.net/e2fsprogs
 ```
 
 ## Programs
@@ -25,12 +25,6 @@ This package provides the following executable programs:
 - `lsattr`
 - `mk_cmds`
 - `uuidgen`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `sf.net/e2fsprogs`
 
 ## Available Versions
 

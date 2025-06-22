@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +harding.motd.ca/autossh@1.4f -- $SHELL -i
+sh <(curl https://pkgx.sh) autossh -- $SHELL -i
 ```
 
 ## Dependencies

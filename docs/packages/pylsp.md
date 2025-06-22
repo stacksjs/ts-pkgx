@@ -1,11 +1,11 @@
-# python-lsp-server
+# pylsp
 
 > Fork of the python-language-server project, maintained by the Spyder IDE team and the community
 
 ## Package Information
 
 - **Domain**: `github.com/python-lsp/python-lsp-server`
-- **Name**: `python-lsp-server`
+- **Name**: `pylsp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/python-lsp/python-lsp-server/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install pylsp
 ## Programs
 
 This package provides the following executable programs:
-
-- `pylsp`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pylsp`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/python-lsp/python-lsp-server@1.12.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) pylsp -- $SHELL -i
 ```
 
 ## Dependencies

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install buildifier`
- * @aliases `buildifier`
+ * @name `buildifier`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.buildifier
  * // Or access via domain
  * const samePkg = pantry.githubcombazelbuildbuildtools
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "buildtools"
+ * console.log(pkg.name)        // "buildifier"
  * console.log(pkg.description) // "Format bazel BUILD files with a standard conven..."
  * console.log(pkg.programs)    // ["buildifier"]
  * console.log(pkg.versions[0]) // "8.2.1" (latest)
@@ -31,7 +31,7 @@ export const buildifierPackage = {
   /**
    * The display name of this package.
    */
-  name: 'buildtools' as const,
+  name: 'buildifier' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +78,9 @@ export const buildifierPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'buildifier',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) buildifier -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install buildifier' as const,
 }
 
 export type BuildifierPackage = typeof buildifierPackage

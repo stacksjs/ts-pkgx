@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mercurial-scm.org -- $SHELL -i
+launchpad install mercurial-scm.org
 ```
 
 ## Programs

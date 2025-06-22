@@ -85,6 +85,8 @@ export const charmcraftPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) charmcraft -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install charmcraft' as const,
 }
 
 export type CharmcraftPackage = typeof charmcraftPackage

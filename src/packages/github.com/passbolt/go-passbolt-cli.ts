@@ -73,6 +73,8 @@ export const passboltPackage = {
   aliases: [
     'passbolt',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) passbolt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install passbolt' as const,
 }
 
 export type PassboltPackage = typeof passboltPackage

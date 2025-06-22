@@ -1,11 +1,11 @@
-# Carthage
+# carthage
 
 > A simple, decentralized dependency manager for Cocoa
 
 ## Package Information
 
 - **Domain**: `github.com/Carthage/Carthage`
-- **Name**: `Carthage`
+- **Name**: `carthage`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Carthage/Carthage/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install carthage
 ## Programs
 
 This package provides the following executable programs:
-
-- `carthage`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `carthage`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/Carthage/Carthage@0.40.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) carthage -- $SHELL -i
 ```
 
 ## Usage Examples

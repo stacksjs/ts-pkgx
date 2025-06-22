@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +go.dev -- $SHELL -i
+launchpad install go.dev
 ```
 
 ## Programs

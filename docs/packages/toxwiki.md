@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) tox
+launchpad install tox
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +tox.wiki@4.27.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) tox -- $SHELL -i
 ```
 
 ## Dependencies

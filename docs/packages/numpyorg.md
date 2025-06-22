@@ -1,11 +1,11 @@
-# numpy.org
+# f2py
 
 > The fundamental package for scientific computing with Python.
 
 ## Package Information
 
 - **Domain**: `numpy.org`
-- **Name**: `numpy.org`
+- **Name**: `f2py`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/numpy.org/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install numpy.org
+launchpad install f2py
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `f2py`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `f2py`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +numpy.org@2.3.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) f2py -- $SHELL -i
 ```
 
 ## Dependencies
@@ -58,7 +52,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with numpy.org:
+These packages work well with f2py:
 
 - `gnu.org/gcc`
 

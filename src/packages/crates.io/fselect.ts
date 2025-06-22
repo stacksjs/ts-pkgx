@@ -83,6 +83,8 @@ export const fselectPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fselect -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fselect' as const,
 }
 
 export type FselectPackage = typeof fselectPackage

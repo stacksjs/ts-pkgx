@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/k0sproject/k0sctl@0.25.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) k0sctl -- $SHELL -i
 ```
 
 ## Usage Examples

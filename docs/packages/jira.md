@@ -1,11 +1,11 @@
-# jira-cli
+# jira
 
 > simple jira command line client in Go
 
 ## Package Information
 
 - **Domain**: `github.com/ankitpokhrel/jira-cli`
-- **Name**: `jira-cli`
+- **Name**: `jira`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ankitpokhrel/jira-cli/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install jira
 ## Programs
 
 This package provides the following executable programs:
-
-- `jira`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `jira`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/ankitpokhrel/jira-cli@1.6.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) jira -- $SHELL -i
 ```
 
 ## Usage Examples

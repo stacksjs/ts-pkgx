@@ -1,11 +1,11 @@
-# expected
+# github.com/TartanLlama/expected
 
 > C++11/14/17 std::expected with functional-style extensions
 
 ## Package Information
 
 - **Domain**: `github.com/TartanLlama/expected`
-- **Name**: `expected`
+- **Name**: `github.com/TartanLlama/expected`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/TartanLlama/expected/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/TartanLlama/expected -- $SHELL -i
+launchpad install github.com/TartanLlama/expected
 ```
 
 ## Programs

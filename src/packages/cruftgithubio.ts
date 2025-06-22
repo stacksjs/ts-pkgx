@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cruft`
- * @aliases `cruft`
+ * @name `cruft`
  * @dependencies `python.org>=3.7<3.12`, `git-scm.org^2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cruft
  * // Or access via domain
  * const samePkg = pantry.cruftgithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cruft.github.io"
+ * console.log(pkg.name)        // "cruft"
  * console.log(pkg.description) // "Allows you to maintain all the necessary cruft ..."
  * console.log(pkg.programs)    // ["cruft"]
  * console.log(pkg.versions[0]) // "2.16.0" (latest)
@@ -32,7 +32,7 @@ export const cruftPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cruft.github.io' as const,
+  name: 'cruft' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const cruftPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cruft',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cruft -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cruft' as const,
 }
 
 export type CruftPackage = typeof cruftPackage

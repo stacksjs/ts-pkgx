@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install vcluster`
- * @aliases `vcluster`
+ * @name `vcluster`
  * @dependencies `kubernetes.io/kubectl^1`, `linux:curl.se/ca-certs` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.vcluster
  * // Or access via domain
  * const samePkg = pantry.vclustercom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "vcluster.com"
+ * console.log(pkg.name)        // "vcluster"
  * console.log(pkg.description) // "vCluster - Create fully functional virtual Kube..."
  * console.log(pkg.programs)    // ["vcluster"]
  * console.log(pkg.versions[0]) // "0.25.1" (latest)
@@ -32,7 +32,7 @@ export const vclusterPackage = {
   /**
    * The display name of this package.
    */
-  name: 'vcluster.com' as const,
+  name: 'vcluster' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -110,9 +110,9 @@ export const vclusterPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'vcluster',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vcluster -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vcluster' as const,
 }
 
 export type VclusterPackage = typeof vclusterPackage

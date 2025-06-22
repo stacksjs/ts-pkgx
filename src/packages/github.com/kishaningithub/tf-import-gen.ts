@@ -89,6 +89,8 @@ export const tfimportgenPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tf-import-gen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tf-import-gen' as const,
 }
 
 export type TfimportgenPackage = typeof tfimportgenPackage

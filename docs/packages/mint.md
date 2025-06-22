@@ -1,11 +1,11 @@
-# Mint
+# mint
 
 > Dependency manager that installs and runs Swift command-line tool packages
 
 ## Package Information
 
 - **Domain**: `github.com/yonaskolb/Mint`
-- **Name**: `Mint`
+- **Name**: `mint`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/yonaskolb/Mint/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install mint
 ## Programs
 
 This package provides the following executable programs:
-
-- `mint`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `mint`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/yonaskolb/Mint@0.18.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) mint -- $SHELL -i
 ```
 
 ## Usage Examples

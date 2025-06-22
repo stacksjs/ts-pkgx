@@ -6,20 +6,20 @@
  * @version `4.7.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +simplesystems.org/libtiff -- $SHELL -i`
- * @aliases `tiff`
+ * @install `launchpad install tiff`
+ * @name `tiff`
  * @dependencies `facebook.com/zstd^1`, `libjpeg-turbo.org^2`, `zlib.net^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tiff
  * // Or access via domain
  * const samePkg = pantry.simplesystemsorglibtiff
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libtiff"
+ * console.log(pkg.name)        // "tiff"
  * console.log(pkg.description) // "TIFF library and utilities"
  * console.log(pkg.programs)    // ["tiffcp", "tiffdump", ...]
  * console.log(pkg.versions[0]) // "4.7.0" (latest)
@@ -32,7 +32,7 @@ export const tiffPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libtiff' as const,
+  name: 'tiff' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const tiffPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +simplesystems.org/libtiff -- $SHELL -i' as const,
+  installCommand: 'launchpad install tiff' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,9 +84,9 @@ export const tiffPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tiff',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +simplesystems.org/libtiff -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tiff' as const,
 }
 
 export type TiffPackage = typeof tiffPackage

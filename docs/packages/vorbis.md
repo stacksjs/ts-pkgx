@@ -1,11 +1,11 @@
-# vorbis
+# xiph.org/vorbis
 
 > Reference implementation of the Ogg Vorbis audio format.
 
 ## Package Information
 
 - **Domain**: `xiph.org/vorbis`
-- **Name**: `vorbis`
+- **Name**: `xiph.org/vorbis`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xiph.org/vorbis/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +xiph.org/vorbis -- $SHELL -i
+launchpad install xiph.org/vorbis
 ```
 
 ## Programs

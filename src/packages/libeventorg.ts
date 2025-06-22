@@ -5,7 +5,7 @@
  * @version `2.1.12` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +libevent.org -- $SHELL -i`
+ * @install `launchpad install libevent.org`
  * @dependencies `openssl.org^1.1`
  *
  * @example
@@ -41,7 +41,7 @@ export const libeventorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +libevent.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install libevent.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -59,6 +59,8 @@ export const libeventorgPackage = {
     '2.1.12',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libevent.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libevent.org' as const,
 }
 
 export type LibeventorgPackage = typeof libeventorgPackage

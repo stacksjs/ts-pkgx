@@ -1,11 +1,11 @@
-# pocketbase.io
+# pocketbase
 
 > Open source backend for your next project in 1 file
 
 ## Package Information
 
 - **Domain**: `pocketbase.io`
-- **Name**: `pocketbase.io`
+- **Name**: `pocketbase`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pocketbase.io/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install pocketbase.io
+launchpad install pocketbase
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `pocketbase`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pocketbase`
 
@@ -59,7 +53,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pocketbase.io@0.28.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) pocketbase -- $SHELL -i
 ```
 
 ## Usage Examples

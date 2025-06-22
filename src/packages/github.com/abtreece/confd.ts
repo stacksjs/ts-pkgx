@@ -69,6 +69,8 @@ export const confdPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) confd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install confd' as const,
 }
 
 export type ConfdPackage = typeof confdPackage

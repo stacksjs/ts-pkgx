@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tox`
- * @aliases `tox`
+ * @name `tox`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tox
  * // Or access via domain
  * const samePkg = pantry.toxwiki
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tox.wiki"
+ * console.log(pkg.name)        // "tox"
  * console.log(pkg.description) // "Command line driven CI frontend and development..."
  * console.log(pkg.programs)    // ["tox"]
  * console.log(pkg.versions[0]) // "4.27.0" (latest)
@@ -32,7 +32,7 @@ export const toxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tox.wiki' as const,
+  name: 'tox' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -90,9 +90,9 @@ export const toxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tox',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tox -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tox' as const,
 }
 
 export type ToxPackage = typeof toxPackage

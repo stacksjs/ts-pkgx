@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install vale`
- * @aliases `vale`
+ * @name `vale`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.vale
  * // Or access via domain
  * const samePkg = pantry.valesh
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "vale.sh"
+ * console.log(pkg.name)        // "vale"
  * console.log(pkg.description) // ":pencil: A markup-aware linter for prose built ..."
  * console.log(pkg.programs)    // ["vale"]
  * console.log(pkg.versions[0]) // "3.12.0" (latest)
@@ -31,7 +31,7 @@ export const valePackage = {
   /**
    * The display name of this package.
    */
-  name: 'vale.sh' as const,
+  name: 'vale' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -112,9 +112,9 @@ export const valePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'vale',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vale -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vale' as const,
 }
 
 export type ValePackage = typeof valePackage

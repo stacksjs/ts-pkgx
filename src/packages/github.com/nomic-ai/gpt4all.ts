@@ -69,6 +69,8 @@ export const gpt4allPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gpt4all -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gpt4all' as const,
 }
 
 export type Gpt4allPackage = typeof gpt4allPackage

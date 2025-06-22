@@ -77,6 +77,8 @@ export const gitreviewPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-review -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-review' as const,
 }
 
 export type GitreviewPackage = typeof gitreviewPackage

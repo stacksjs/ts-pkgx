@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +grafana.com/loki@3.5.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) loki -- $SHELL -i
 ```
 
 ## Usage Examples

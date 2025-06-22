@@ -69,6 +69,8 @@ export const pioPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pio -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pio' as const,
 }
 
 export type PioPackage = typeof pioPackage

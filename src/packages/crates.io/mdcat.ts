@@ -95,6 +95,8 @@ export const mdcatPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mdcat -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mdcat' as const,
 }
 
 export type MdcatPackage = typeof mdcatPackage

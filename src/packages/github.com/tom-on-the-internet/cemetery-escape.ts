@@ -69,6 +69,8 @@ export const cemeteryescapePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cemetery-escape -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cemetery-escape' as const,
 }
 
 export type CemeteryescapePackage = typeof cemeteryescapePackage

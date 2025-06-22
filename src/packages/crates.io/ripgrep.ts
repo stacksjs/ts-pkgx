@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rg`
- * @aliases `rg`
+ * @name `rg`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.rg
  * // Or access via domain
  * const samePkg = pantry.cratesioripgrep
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ripgrep"
+ * console.log(pkg.name)        // "rg"
  * console.log(pkg.description) // "ripgrep recursively searches directories for a ..."
  * console.log(pkg.programs)    // ["rg"]
  * console.log(pkg.versions[0]) // "14.1.1" (latest)
@@ -31,7 +31,7 @@ export const rgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ripgrep' as const,
+  name: 'rg' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -74,9 +74,9 @@ export const rgPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'rg',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rg -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rg' as const,
 }
 
 export type RgPackage = typeof rgPackage

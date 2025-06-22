@@ -1,11 +1,11 @@
-# imath
+# openexr.com/imath
 
 > Imath is a C++ and python library of 2D and 3D vector, matrix, and math operations for computer graphics
 
 ## Package Information
 
 - **Domain**: `openexr.com/imath`
-- **Name**: `imath`
+- **Name**: `openexr.com/imath`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openexr.com/imath/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +openexr.com/imath -- $SHELL -i
+launchpad install openexr.com/imath
 ```
 
 ## Programs

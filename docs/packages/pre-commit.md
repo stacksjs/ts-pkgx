@@ -1,11 +1,11 @@
-# pre-commit.com
+# pre-commit
 
 > A framework for managing and maintaining multi-language pre-commit hooks.
 
 ## Package Information
 
 - **Domain**: `pre-commit.com`
-- **Name**: `pre-commit.com`
+- **Name**: `pre-commit`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pre-commit.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install pre-commit
 ## Programs
 
 This package provides the following executable programs:
-
-- `pre-commit`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pre-commit`
 
@@ -47,7 +41,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pre-commit.com@4.2.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) pre-commit -- $SHELL -i
 ```
 
 ## Dependencies

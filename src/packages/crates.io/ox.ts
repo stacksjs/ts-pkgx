@@ -70,6 +70,8 @@ export const oxPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ox -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ox' as const,
 }
 
 export type OxPackage = typeof oxPackage

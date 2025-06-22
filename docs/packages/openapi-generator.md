@@ -1,11 +1,11 @@
-# openapi-generator.tech
+# openapi-generator
 
 > OpenAPI Generator allows generation of API client libraries (SDK generation), server stubs, documentation and configuration automatically given an OpenAPI Spec (v2, v3)
 
 ## Package Information
 
 - **Domain**: `openapi-generator.tech`
-- **Name**: `openapi-generator.tech`
+- **Name**: `openapi-generator`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openapi-generator.tech/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install openapi-generator
 ## Programs
 
 This package provides the following executable programs:
-
-- `openapi-generator`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `openapi-generator`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +openapi-generator.tech@7.13.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) openapi-generator -- $SHELL -i
 ```
 
 ## Dependencies

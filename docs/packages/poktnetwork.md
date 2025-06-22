@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) pocket
+launchpad install pocket
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pokt.network@0.12.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) pocket -- $SHELL -i
 ```
 
 ## Usage Examples

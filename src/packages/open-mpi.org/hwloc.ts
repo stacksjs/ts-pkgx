@@ -1,19 +1,19 @@
 /**
- * **hwloc** - Portable abstraction of the hierarchical topology of modern architectures
+ * **open-mpi.org/hwloc** - Portable abstraction of the hierarchical topology of modern architectures
  *
  * @domain `open-mpi.org/hwloc`
  * @programs `hwloc-annotate`, `hwloc-bind`, `hwloc-calc`, `hwloc-compress-dir`, `hwloc-diff`, ... (+5 more)
  * @version `2.12.1` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +open-mpi.org/hwloc -- $SHELL -i`
+ * @install `launchpad install open-mpi.org/hwloc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.openmpiorghwloc
- * console.log(pkg.name)        // "hwloc"
+ * console.log(pkg.name)        // "open-mpi.org/hwloc"
  * console.log(pkg.description) // "Portable abstraction of the hierarchical topolo..."
  * console.log(pkg.programs)    // ["hwloc-annotate", "hwloc-bind", ...]
  * console.log(pkg.versions[0]) // "2.12.1" (latest)
@@ -26,7 +26,7 @@ export const openmpiorghwlocPackage = {
   /**
    * The display name of this package.
    */
-  name: 'hwloc' as const,
+  name: 'open-mpi.org/hwloc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const openmpiorghwlocPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +open-mpi.org/hwloc -- $SHELL -i' as const,
+  installCommand: 'launchpad install open-mpi.org/hwloc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,6 +77,8 @@ export const openmpiorghwlocPackage = {
     '2.9.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +open-mpi.org/hwloc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install open-mpi.org/hwloc' as const,
 }
 
 export type OpenmpiorghwlocPackage = typeof openmpiorghwlocPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install raccoin`
- * @aliases `raccoin`
+ * @name `raccoin`
  * @dependencies `gnu.org/libiconv^1`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.raccoin
  * // Or access via domain
  * const samePkg = pantry.raccoinorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "raccoin.org"
+ * console.log(pkg.name)        // "raccoin"
  * console.log(pkg.description) // "Crypto Portfolio and Tax Reporting Tool"
  * console.log(pkg.programs)    // ["raccoin"]
  * console.log(pkg.versions[0]) // "0.2.0" (latest)
@@ -32,7 +32,7 @@ export const raccoinPackage = {
   /**
    * The display name of this package.
    */
-  name: 'raccoin.org' as const,
+  name: 'raccoin' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const raccoinPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'raccoin',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) raccoin -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install raccoin' as const,
 }
 
 export type RaccoinPackage = typeof raccoinPackage

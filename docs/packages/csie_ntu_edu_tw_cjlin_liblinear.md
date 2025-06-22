@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +csie.ntu.edu.tw/cjlin/liblinear -- $SHELL -i
+launchpad install liblinear
 ```
 
 ## Programs

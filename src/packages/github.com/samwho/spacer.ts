@@ -76,6 +76,8 @@ export const spacerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) spacer -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install spacer' as const,
 }
 
 export type SpacerPackage = typeof spacerPackage

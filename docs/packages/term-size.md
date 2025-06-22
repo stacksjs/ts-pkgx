@@ -1,11 +1,11 @@
-# macos-term-size
+# term-size
 
 > Get the terminal window size on macOS
 
 ## Package Information
 
 - **Domain**: `github.com/sindresorhus/macos-term-size`
-- **Name**: `macos-term-size`
+- **Name**: `term-size`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/sindresorhus/macos-term-size/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install term-size
 ## Programs
 
 This package provides the following executable programs:
-
-- `term-size`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `term-size`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/sindresorhus/macos-term-size@1.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) term-size -- $SHELL -i
 ```
 
 ## Usage Examples

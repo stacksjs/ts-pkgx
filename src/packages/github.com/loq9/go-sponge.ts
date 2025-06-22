@@ -69,6 +69,8 @@ export const gospongePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) go-sponge -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install go-sponge' as const,
 }
 
 export type GospongePackage = typeof gospongePackage

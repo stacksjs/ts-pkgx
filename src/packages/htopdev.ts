@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install htop`
- * @aliases `htop`
+ * @name `htop`
  * @dependencies `invisible-island.net/ncurses@6`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.htop
  * // Or access via domain
  * const samePkg = pantry.htopdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "htop.dev"
+ * console.log(pkg.name)        // "htop"
  * console.log(pkg.description) // "Improved top (interactive process viewer)"
  * console.log(pkg.programs)    // ["htop"]
  * console.log(pkg.versions[0]) // "3.4.1" (latest)
@@ -32,7 +32,7 @@ export const htopPackage = {
   /**
    * The display name of this package.
    */
-  name: 'htop.dev' as const,
+  name: 'htop' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,9 @@ export const htopPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'htop',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) htop -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install htop' as const,
 }
 
 export type HtopPackage = typeof htopPackage

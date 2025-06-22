@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dy`
- * @aliases `dy`
+ * @name `dy`
  * @dependencies `linux:openssl.org^1.1` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.dy
  * // Or access via domain
  * const samePkg = pantry.githubcomawslabsdynein
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "dynein"
+ * console.log(pkg.name)        // "dy"
  * console.log(pkg.description) // "DynamoDB CLI written in Rust."
  * console.log(pkg.programs)    // ["dy"]
  * console.log(pkg.versions[0]) // "0.3.0" (latest)
@@ -32,7 +32,7 @@ export const dyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dynein' as const,
+  name: 'dy' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const dyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'dy',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dy' as const,
 }
 
 export type DyPackage = typeof dyPackage

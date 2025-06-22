@@ -6,20 +6,20 @@
  * @version `1.2.2` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/libsndfile/libsndfile -- $SHELL -i`
- * @aliases `sndfile`
+ * @install `launchpad install sndfile`
+ * @name `sndfile`
  * @dependencies `xiph.org/flac`, `lame.sourceforge.io`, `xiph.org/ogg`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sndfile
  * // Or access via domain
  * const samePkg = pantry.githubcomlibsndfilelibsndfile
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libsndfile"
+ * console.log(pkg.name)        // "sndfile"
  * console.log(pkg.description) // "A C library for reading and writing sound files..."
  * console.log(pkg.programs)    // ["sndfile-info", "sndfile-convert", ...]
  * console.log(pkg.versions[0]) // "1.2.2" (latest)
@@ -32,7 +32,7 @@ export const sndfilePackage = {
   /**
    * The display name of this package.
    */
-  name: 'libsndfile' as const,
+  name: 'sndfile' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const sndfilePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/libsndfile/libsndfile -- $SHELL -i' as const,
+  installCommand: 'launchpad install sndfile' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,9 +84,9 @@ export const sndfilePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sndfile',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/libsndfile/libsndfile -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sndfile' as const,
 }
 
 export type SndfilePackage = typeof sndfilePackage

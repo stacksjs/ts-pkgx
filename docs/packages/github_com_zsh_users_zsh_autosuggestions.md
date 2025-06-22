@@ -1,11 +1,11 @@
-# zsh-autosuggestions
+# github.com/zsh-users/zsh-autosuggestions
 
 > Fish-like autosuggestions for zsh
 
 ## Package Information
 
 - **Domain**: `github.com/zsh-users/zsh-autosuggestions`
-- **Name**: `zsh-autosuggestions`
+- **Name**: `github.com/zsh-users/zsh-autosuggestions`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zsh-users/zsh-autosuggestions/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/zsh-users/zsh-autosuggestions -- $SHELL -i
+launchpad install github.com/zsh-users/zsh-autosuggestions
 ```
 
 ## Programs

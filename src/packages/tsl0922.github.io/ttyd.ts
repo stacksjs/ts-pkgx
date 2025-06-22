@@ -83,6 +83,8 @@ export const ttydPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ttyd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ttyd' as const,
 }
 
 export type TtydPackage = typeof ttydPackage

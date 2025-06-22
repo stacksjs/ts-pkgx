@@ -78,6 +78,8 @@ export const zippyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zippy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zippy' as const,
 }
 
 export type ZippyPackage = typeof zippyPackage

@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/kubecolor/kubecolor@0.5.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) kubecolor -- $SHELL -i
 ```
 
 ## Usage Examples

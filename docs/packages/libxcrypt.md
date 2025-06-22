@@ -1,11 +1,11 @@
-# libxcrypt
+# github.com/besser82/libxcrypt
 
 > Extended crypt library for descrypt, md5crypt, bcrypt, and others
 
 ## Package Information
 
 - **Domain**: `github.com/besser82/libxcrypt`
-- **Name**: `libxcrypt`
+- **Name**: `github.com/besser82/libxcrypt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/besser82/libxcrypt/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/besser82/libxcrypt -- $SHELL -i
+launchpad install github.com/besser82/libxcrypt
 ```
 
 ## Programs

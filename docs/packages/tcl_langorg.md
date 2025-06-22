@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +tcl-lang.org -- $SHELL -i
+launchpad install tcl-lang.org
 ```
 
 ## Programs

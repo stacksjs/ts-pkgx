@@ -1,11 +1,11 @@
-# bittensor.com
+# Bittensor
 
 > Internet-scale Neural Networks
 
 ## Package Information
 
 - **Domain**: `bittensor.com`
-- **Name**: `bittensor.com`
+- **Name**: `Bittensor`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bittensor.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +bittensor.com
+launchpad install Bittensor
 ```
 
 ## Programs
@@ -21,12 +21,6 @@ launchpad install +bittensor.com
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `Bittensor`
 
 ## Available Versions
 

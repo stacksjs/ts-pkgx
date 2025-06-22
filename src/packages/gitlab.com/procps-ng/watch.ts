@@ -76,6 +76,8 @@ export const watchPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) watch -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install watch' as const,
 }
 
 export type WatchPackage = typeof watchPackage

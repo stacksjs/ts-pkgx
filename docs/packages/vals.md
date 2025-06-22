@@ -43,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/helmfile/vals@0.41.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) vals -- $SHELL -i
 ```
 
 ## Usage Examples

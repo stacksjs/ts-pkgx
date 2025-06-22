@@ -1,12 +1,12 @@
 /**
- * **texinfo** - Official documentation format of the GNU project
+ * **gnu.org/texinfo** - Official documentation format of the GNU project
  *
  * @domain `gnu.org/texinfo`
  * @programs `info`, `install-info`, `makeinfo`, `pdftexi2dvi`, `pod2texi`, ... (+4 more)
  * @version `7.2.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnu.org/texinfo -- $SHELL -i`
+ * @install `launchpad install gnu.org/texinfo`
  * @dependencies `perl.org`
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgtexinfo
- * console.log(pkg.name)        // "texinfo"
+ * console.log(pkg.name)        // "gnu.org/texinfo"
  * console.log(pkg.description) // "Official documentation format of the GNU project"
  * console.log(pkg.programs)    // ["info", "install-info", ...]
  * console.log(pkg.versions[0]) // "7.2.0" (latest)
@@ -27,7 +27,7 @@ export const gnuorgtexinfoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'texinfo' as const,
+  name: 'gnu.org/texinfo' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const gnuorgtexinfoPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnu.org/texinfo -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnu.org/texinfo' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,6 +79,8 @@ export const gnuorgtexinfoPackage = {
     '7.0.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/texinfo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/texinfo' as const,
 }
 
 export type GnuorgtexinfoPackage = typeof gnuorgtexinfoPackage

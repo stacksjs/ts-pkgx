@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +cmake.org -- $SHELL -i
+launchpad install cmake.org
 ```
 
 ## Programs

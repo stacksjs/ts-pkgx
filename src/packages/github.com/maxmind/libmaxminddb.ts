@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mmdblookup`
- * @aliases `mmdblookup`
+ * @name `mmdblookup`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mmdblookup
  * // Or access via domain
  * const samePkg = pantry.githubcommaxmindlibmaxminddb
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libmaxminddb"
+ * console.log(pkg.name)        // "mmdblookup"
  * console.log(pkg.description) // "C library for the MaxMind DB file format"
  * console.log(pkg.programs)    // ["mmdblookup"]
  * console.log(pkg.versions[0]) // "1.12.2" (latest)
@@ -31,7 +31,7 @@ export const mmdblookupPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libmaxminddb' as const,
+  name: 'mmdblookup' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -76,9 +76,9 @@ export const mmdblookupPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mmdblookup',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mmdblookup -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mmdblookup' as const,
 }
 
 export type MmdblookupPackage = typeof mmdblookupPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ctags`
- * @aliases `ctags`
+ * @name `ctags`
  * @dependencies `digip.org/jansson^2`, `pyyaml.org/libyaml^0.2`, `pcre.org/v2^10`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ctags
  * // Or access via domain
  * const samePkg = pantry.ctagsio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ctags.io"
+ * console.log(pkg.name)        // "ctags"
  * console.log(pkg.description) // "A maintained ctags implementation"
  * console.log(pkg.programs)    // ["ctags"]
  * console.log(pkg.versions[0]) // "6.2.0" (latest)
@@ -32,7 +32,7 @@ export const ctagsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ctags.io' as const,
+  name: 'ctags' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,9 @@ export const ctagsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ctags',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ctags -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ctags' as const,
 }
 
 export type CtagsPackage = typeof ctagsPackage

@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +earthly.dev/earthly@0.8.15 -- $SHELL -i
+sh <(curl https://pkgx.sh) earthly -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -1,11 +1,11 @@
-# pnpm.io
+# pnpm
 
 > Fast, disk space efficient package manager
 
 ## Package Information
 
 - **Domain**: `pnpm.io`
-- **Name**: `pnpm.io`
+- **Name**: `pnpm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pnpm.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pnpm.io
+launchpad install pnpm
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `pnpm`
 - `pnpx`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `pnp`
 
 ## Available Versions
 

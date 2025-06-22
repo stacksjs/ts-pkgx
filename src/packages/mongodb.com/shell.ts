@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mongosh`
- * @aliases `mongosh`
+ * @name `mongosh`
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mongosh
  * // Or access via domain
  * const samePkg = pantry.mongodbcomshell
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "shell"
+ * console.log(pkg.name)        // "mongosh"
  * console.log(pkg.description) // "MongoDB Shell to connect, configure, query, and..."
  * console.log(pkg.programs)    // ["mongosh"]
  * console.log(pkg.versions[0]) // "2.5.3" (latest)
@@ -32,7 +32,7 @@ export const mongoshPackage = {
   /**
    * The display name of this package.
    */
-  name: 'shell' as const,
+  name: 'mongosh' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -109,9 +109,9 @@ export const mongoshPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mongosh',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mongosh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mongosh' as const,
 }
 
 export type MongoshPackage = typeof mongoshPackage

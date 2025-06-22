@@ -98,6 +98,8 @@ export const yabaiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) yabai -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install yabai' as const,
 }
 
 export type YabaiPackage = typeof yabaiPackage

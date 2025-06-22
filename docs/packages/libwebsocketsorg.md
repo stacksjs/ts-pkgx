@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libwebsockets.org -- $SHELL -i
+launchpad install libwebsockets.org
 ```
 
 ## Programs

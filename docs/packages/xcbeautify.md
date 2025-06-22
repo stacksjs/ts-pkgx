@@ -46,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +tuist.io/xcbeautify@2.28.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) xcbeautify -- $SHELL -i
 ```
 
 ## Usage Examples

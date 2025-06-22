@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install scryer-prolog`
- * @aliases `scryer-prolog`
+ * @name `scryer-prolog`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.scryerprolog
  * // Or access via domain
  * const samePkg = pantry.scryerpl
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "scryer.pl"
+ * console.log(pkg.name)        // "scryer-prolog"
  * console.log(pkg.description) // "Modern ISO Prolog implementation written mostly..."
  * console.log(pkg.programs)    // ["scryer-prolog"]
  * console.log(pkg.versions[0]) // "0.9.4" (latest)
@@ -32,7 +32,7 @@ export const scryerprologPackage = {
   /**
    * The display name of this package.
    */
-  name: 'scryer.pl' as const,
+  name: 'scryer-prolog' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const scryerprologPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'scryer-prolog',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) scryer-prolog -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install scryer-prolog' as const,
 }
 
 export type ScryerprologPackage = typeof scryerprologPackage

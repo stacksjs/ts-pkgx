@@ -1,11 +1,11 @@
-# railway.app
+# railway
 
 > Develop and deploy code with zero configuration
 
 ## Package Information
 
 - **Domain**: `railway.app`
-- **Name**: `railway.app`
+- **Name**: `railway`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/railway.app/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install railway
 ## Programs
 
 This package provides the following executable programs:
-
-- `railway`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `railway`
 
@@ -53,7 +47,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +railway.app@4.5.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) railway -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -1,19 +1,19 @@
 /**
- * **md-tui** - Markdown renderer in the terminal
+ * **crates.io/md-tui** - Markdown renderer in the terminal
  *
  * @domain `crates.io/md-tui`
  * @programs `mdt`, `md-tui`
  * @version `0.8.7` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +crates.io/md-tui -- $SHELL -i`
+ * @install `launchpad install crates.io/md-tui`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.cratesiomdtui
- * console.log(pkg.name)        // "md-tui"
+ * console.log(pkg.name)        // "crates.io/md-tui"
  * console.log(pkg.description) // "Markdown renderer in the terminal"
  * console.log(pkg.programs)    // ["mdt", "md-tui"]
  * console.log(pkg.versions[0]) // "0.8.7" (latest)
@@ -26,7 +26,7 @@ export const cratesiomdtuiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'md-tui' as const,
+  name: 'crates.io/md-tui' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const cratesiomdtuiPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +crates.io/md-tui -- $SHELL -i' as const,
+  installCommand: 'launchpad install crates.io/md-tui' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,6 +70,8 @@ export const cratesiomdtuiPackage = {
     '0.7.3',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/md-tui -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/md-tui' as const,
 }
 
 export type CratesiomdtuiPackage = typeof cratesiomdtuiPackage

@@ -1,11 +1,11 @@
-# juju.is
+# juju
 
 > Orchestration engine that enables the deployment, integration and lifecycle management of applications at any scale, on any infrastructure (Kubernetes or otherwise).
 
 ## Package Information
 
 - **Domain**: `juju.is`
-- **Name**: `juju.is`
+- **Name**: `juju`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/juju.is/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install juju
 ## Programs
 
 This package provides the following executable programs:
-
-- `juju`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `juju`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +juju.is@3.6.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) juju -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -5,7 +5,7 @@
  * @version `1.11.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +libssh2.org -- $SHELL -i`
+ * @install `launchpad install libssh2.org`
  * @dependencies `openssl.org^1.1`, `zlib.net^1.2`
  *
  * @example
@@ -41,7 +41,7 @@ export const libssh2orgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +libssh2.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install libssh2.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -62,6 +62,8 @@ export const libssh2orgPackage = {
     '1.10.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libssh2.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libssh2.org' as const,
 }
 
 export type Libssh2orgPackage = typeof libssh2orgPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ag`
- * @name `ag`
+ * @aliases `ag`
  * @dependencies `pcre.org^8`, `tukaani.org/xz^5.4.5`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.ag
  * // Or access via domain
  * const samePkg = pantry.geoffgreerfmag
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ag"
+ * console.log(pkg.name)        // "The Silver Searcher"
  * console.log(pkg.description) // "A code-searching tool similar to ack, but faster."
  * console.log(pkg.programs)    // ["ag"]
  * console.log(pkg.versions[0]) // "2.2.0" (latest)
@@ -32,7 +32,7 @@ export const agPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ag' as const,
+  name: 'The Silver Searcher' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -76,7 +76,11 @@ export const agPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'ag',
+  ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ag -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ag' as const,
 }
 
 export type AgPackage = typeof agPackage

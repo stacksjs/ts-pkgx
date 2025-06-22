@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +developers.yubico.com/yubikey-manager@5.7.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) ykman -- $SHELL -i
 ```
 
 ## Dependencies

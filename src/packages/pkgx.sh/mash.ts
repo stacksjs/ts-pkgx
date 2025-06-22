@@ -82,6 +82,8 @@ export const mashPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mash -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mash' as const,
 }
 
 export type MashPackage = typeof mashPackage

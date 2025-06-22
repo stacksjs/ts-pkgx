@@ -1,24 +1,24 @@
 /**
- * **smi** - Library to Access SMI MIB Information
+ * **smidiff** - Library to Access SMI MIB Information
  *
  * @domain `ibr.cs.tu-bs.de/libsmi`
  * @programs `smidiff`, `smidump`, `smilint`, `smiquery`, `smixlate`
  * @version `0.4.8` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +ibr.cs.tu-bs.de/libsmi -- $SHELL -i`
- * @aliases `smi`
+ * @install `launchpad install smidiff`
+ * @name `smidiff`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.smi
+ * // Access the package
+ * const pkg = pantry.smidiff
  * // Or access via domain
  * const samePkg = pantry.ibrcstubsdelibsmi
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libsmi"
+ * console.log(pkg.name)        // "smidiff"
  * console.log(pkg.description) // "Library to Access SMI MIB Information"
  * console.log(pkg.programs)    // ["smidiff", "smidump", ...]
  * console.log(pkg.versions[0]) // "0.4.8" (latest)
@@ -27,11 +27,11 @@
  * @see https://ts-pkgx.netlify.app/packages/ibr-cs-tu-bs-de/libsmi.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const smiPackage = {
+export const smidiffPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libsmi' as const,
+  name: 'smidiff' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const smiPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +ibr.cs.tu-bs.de/libsmi -- $SHELL -i' as const,
+  installCommand: 'launchpad install smidiff' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,9 +72,9 @@ export const smiPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'smi',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ibr.cs.tu-bs.de/libsmi -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install smidiff' as const,
 }
 
-export type SmiPackage = typeof smiPackage
+export type SmidiffPackage = typeof smidiffPackage

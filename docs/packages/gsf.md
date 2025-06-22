@@ -1,11 +1,11 @@
-# libgsf
+# gsf
 
 > I/O abstraction library for dealing with structured file formats
 
 ## Package Information
 
 - **Domain**: `gnome.org/libgsf`
-- **Name**: `libgsf`
+- **Name**: `gsf`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/libgsf/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnome.org/libgsf -- $SHELL -i
+launchpad install gsf
 ```
 
 ## Programs
@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `gsf`
 - `gsf-office-thumbnailer`
 - `gsf-vba-dump`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `gsf`
 
 ## Available Versions
 

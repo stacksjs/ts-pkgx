@@ -1,11 +1,11 @@
-# typescriptlang.org
+# tsc
 
 > TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
 
 ## Package Information
 
 - **Domain**: `typescriptlang.org`
-- **Name**: `typescriptlang.org`
+- **Name**: `tsc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/typescriptlang.org/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install tsc
 ## Programs
 
 This package provides the following executable programs:
-
-- `tsc`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `tsc`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +typescriptlang.org@5.8.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) tsc -- $SHELL -i
 ```
 
 ## Dependencies

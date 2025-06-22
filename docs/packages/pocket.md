@@ -1,11 +1,11 @@
-# pokt.network
+# pocket
 
 > Official implementation of the Pocket Network Protocol
 
 ## Package Information
 
 - **Domain**: `pokt.network`
-- **Name**: `pokt.network`
+- **Name**: `pocket`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pokt.network/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install pocket
 ## Programs
 
 This package provides the following executable programs:
-
-- `pocket`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pocket`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pokt.network@0.12.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) pocket -- $SHELL -i
 ```
 
 ## Usage Examples

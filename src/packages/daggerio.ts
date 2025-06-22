@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dagger`
- * @aliases `dagger`
+ * @name `dagger`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.dagger
  * // Or access via domain
  * const samePkg = pantry.daggerio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "dagger.io"
+ * console.log(pkg.name)        // "dagger"
  * console.log(pkg.description) // "An engine to run your pipelines in containers"
  * console.log(pkg.programs)    // ["dagger"]
  * console.log(pkg.versions[0]) // "0.18.10" (latest)
@@ -31,7 +31,7 @@ export const daggerPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dagger.io' as const,
+  name: 'dagger' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -158,9 +158,9 @@ export const daggerPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'dagger',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dagger -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dagger' as const,
 }
 
 export type DaggerPackage = typeof daggerPackage

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install infracost`
- * @aliases `infracost`
+ * @name `infracost`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.infracost
  * // Or access via domain
  * const samePkg = pantry.infracostio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "infracost.io"
+ * console.log(pkg.name)        // "infracost"
  * console.log(pkg.description) // "Cloud cost estimates for Terraform in pull requ..."
  * console.log(pkg.programs)    // ["infracost"]
  * console.log(pkg.versions[0]) // "0.10.41" (latest)
@@ -31,7 +31,7 @@ export const infracostPackage = {
   /**
    * The display name of this package.
    */
-  name: 'infracost.io' as const,
+  name: 'infracost' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const infracostPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'infracost',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) infracost -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install infracost' as const,
 }
 
 export type InfracostPackage = typeof infracostPackage

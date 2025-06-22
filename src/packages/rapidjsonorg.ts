@@ -5,7 +5,7 @@
  * @version `1.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +rapidjson.org -- $SHELL -i`
+ * @install `launchpad install rapidjson.org`
  *
  * @example
  * ```typescript
@@ -40,7 +40,7 @@ export const rapidjsonorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +rapidjson.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install rapidjson.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -52,6 +52,8 @@ export const rapidjsonorgPackage = {
     '1.1.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rapidjson.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rapidjson.org' as const,
 }
 
 export type RapidjsonorgPackage = typeof rapidjsonorgPackage

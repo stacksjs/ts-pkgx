@@ -1,11 +1,11 @@
-# lapack
+# netlib.org/lapack
 
 > LAPACK development repository
 
 ## Package Information
 
 - **Domain**: `netlib.org/lapack`
-- **Name**: `lapack`
+- **Name**: `netlib.org/lapack`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/netlib.org/lapack/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +netlib.org/lapack -- $SHELL -i
+launchpad install netlib.org/lapack
 ```
 
 ## Programs

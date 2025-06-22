@@ -6,20 +6,20 @@
  * @version `3.0.0` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +opensearch.org -- $SHELL -i`
- * @aliases `opensearch`
+ * @install `launchpad install opensearch`
+ * @name `opensearch`
  * @dependencies `openjdk.org^21 # since v3`, `openmp.llvm.org^17`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.opensearch
  * // Or access via domain
  * const samePkg = pantry.opensearchorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "opensearch.org"
+ * console.log(pkg.name)        // "opensearch"
  * console.log(pkg.description) // "🔎 Open source distributed and RESTful search e..."
  * console.log(pkg.programs)    // ["opensearch", "opensearch-keystore", ...]
  * console.log(pkg.versions[0]) // "3.0.0" (latest)
@@ -32,7 +32,7 @@ export const opensearchPackage = {
   /**
    * The display name of this package.
    */
-  name: 'opensearch.org' as const,
+  name: 'opensearch' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const opensearchPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +opensearch.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install opensearch' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -89,9 +89,9 @@ export const opensearchPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'opensearch',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +opensearch.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install opensearch' as const,
 }
 
 export type OpensearchPackage = typeof opensearchPackage

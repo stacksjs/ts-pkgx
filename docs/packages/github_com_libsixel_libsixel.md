@@ -1,11 +1,11 @@
-# libsixel
+# github.com/libsixel/libsixel
 
 > Mirror of "sixel" original version (kmiya's sixel). The origin of libsixel.
 
 ## Package Information
 
 - **Domain**: `github.com/libsixel/libsixel`
-- **Name**: `libsixel`
+- **Name**: `github.com/libsixel/libsixel`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libsixel/libsixel/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/libsixel/libsixel -- $SHELL -i
+launchpad install github.com/libsixel/libsixel
 ```
 
 ## Programs

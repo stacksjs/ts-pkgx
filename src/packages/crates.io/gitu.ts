@@ -118,6 +118,8 @@ export const gituPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gitu -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gitu' as const,
 }
 
 export type GituPackage = typeof gituPackage

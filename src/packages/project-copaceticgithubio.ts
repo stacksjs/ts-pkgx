@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install copa`
- * @aliases `copa`
+ * @name `copa`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.copa
  * // Or access via domain
  * const samePkg = pantry.projectcopaceticgithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "project-copacetic.github.io"
+ * console.log(pkg.name)        // "copa"
  * console.log(pkg.description) // "Tool to directly patch container images given t..."
  * console.log(pkg.programs)    // ["copa"]
  * console.log(pkg.versions[0]) // "0.10.0" (latest)
@@ -31,7 +31,7 @@ export const copaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'project-copacetic.github.io' as const,
+  name: 'copa' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -72,9 +72,9 @@ export const copaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'copa',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) copa -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install copa' as const,
 }
 
 export type CopaPackage = typeof copaPackage

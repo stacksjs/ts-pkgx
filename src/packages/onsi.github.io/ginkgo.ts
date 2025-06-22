@@ -83,6 +83,8 @@ export const ginkgoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ginkgo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ginkgo' as const,
 }
 
 export type GinkgoPackage = typeof ginkgoPackage

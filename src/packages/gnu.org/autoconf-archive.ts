@@ -1,18 +1,18 @@
 /**
- * **autoconf-archive** - pkgx package
+ * **gnu.org/autoconf-archive** - pkgx package
  *
  * @domain `gnu.org/autoconf-archive`
  * @version `2024.10.16` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnu.org/autoconf-archive -- $SHELL -i`
+ * @install `launchpad install gnu.org/autoconf-archive`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgautoconfarchive
- * console.log(pkg.name)        // "autoconf-archive"
+ * console.log(pkg.name)        // "gnu.org/autoconf-archive"
  * console.log(pkg.versions[0]) // "2024.10.16" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const gnuorgautoconfarchivePackage = {
   /**
    * The display name of this package.
    */
-  name: 'autoconf-archive' as const,
+  name: 'gnu.org/autoconf-archive' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +39,7 @@ export const gnuorgautoconfarchivePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnu.org/autoconf-archive -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnu.org/autoconf-archive' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -52,6 +52,8 @@ export const gnuorgautoconfarchivePackage = {
     '2023.2.20',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/autoconf-archive -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/autoconf-archive' as const,
 }
 
 export type GnuorgautoconfarchivePackage = typeof gnuorgautoconfarchivePackage

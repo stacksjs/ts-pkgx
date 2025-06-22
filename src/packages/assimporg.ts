@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install assimp`
- * @aliases `assimp`
+ * @name `assimp`
  * @dependencies `zlib.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.assimp
  * // Or access via domain
  * const samePkg = pantry.assimporg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "assimp.org"
+ * console.log(pkg.name)        // "assimp"
  * console.log(pkg.description) // "The official Open-Asset-Importer-Library Reposi..."
  * console.log(pkg.programs)    // ["assimp"]
  * console.log(pkg.versions[0]) // "6.0.2" (latest)
@@ -32,7 +32,7 @@ export const assimpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'assimp.org' as const,
+  name: 'assimp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -83,9 +83,7 @@ export const assimpPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'assimp',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) assimp -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install assimp' as const,
 }

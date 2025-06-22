@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tree-sitter`
- * @aliases `tree-sitter`
+ * @name `tree-sitter`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.treesitter
  * // Or access via domain
  * const samePkg = pantry.treesittergithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tree-sitter.github.io"
+ * console.log(pkg.name)        // "tree-sitter"
  * console.log(pkg.description) // "Parser generator tool and incremental parsing l..."
  * console.log(pkg.programs)    // ["tree-sitter"]
  * console.log(pkg.versions[0]) // "0.25.6" (latest)
@@ -31,7 +31,7 @@ export const treesitterPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tree-sitter.github.io' as const,
+  name: 'tree-sitter' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -95,9 +95,9 @@ export const treesitterPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tree-sitter',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tree-sitter -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tree-sitter' as const,
 }
 
 export type TreesitterPackage = typeof treesitterPackage

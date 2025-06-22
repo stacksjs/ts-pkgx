@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install micro`
- * @aliases `micro`
+ * @name `micro`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.micro
  * // Or access via domain
  * const samePkg = pantry.microeditorgithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "micro-editor.github.io"
+ * console.log(pkg.name)        // "micro"
  * console.log(pkg.description) // "A modern and intuitive terminal-based text editor"
  * console.log(pkg.programs)    // ["micro"]
  * console.log(pkg.versions[0]) // "2.0.14" (latest)
@@ -31,7 +31,7 @@ export const microPackage = {
   /**
    * The display name of this package.
    */
-  name: 'micro-editor.github.io' as const,
+  name: 'micro' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -71,9 +71,9 @@ export const microPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'micro',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) micro -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install micro' as const,
 }
 
 export type MicroPackage = typeof microPackage

@@ -74,6 +74,8 @@ export const scmpsysresolverPackage = {
   aliases: [
     'scmp_sys_resolver',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) scmp_sys_resolver -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install scmp_sys_resolver' as const,
 }
 
 export type ScmpsysresolverPackage = typeof scmpsysresolverPackage

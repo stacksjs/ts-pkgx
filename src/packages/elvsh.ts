@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install elvish`
- * @aliases `elvish`
+ * @name `elvish`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.elvish
  * // Or access via domain
  * const samePkg = pantry.elvsh
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "elv.sh"
+ * console.log(pkg.name)        // "elvish"
  * console.log(pkg.description) // "Powerful scripting language & versatile interac..."
  * console.log(pkg.programs)    // ["elvish"]
  * console.log(pkg.versions[0]) // "0.21.0" (latest)
@@ -31,7 +31,7 @@ export const elvishPackage = {
   /**
    * The display name of this package.
    */
-  name: 'elv.sh' as const,
+  name: 'elvish' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -71,9 +71,9 @@ export const elvishPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'elvish',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) elvish -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install elvish' as const,
 }
 
 export type ElvishPackage = typeof elvishPackage

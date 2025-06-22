@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libarchive.org -- $SHELL -i
+launchpad install libarchive.org
 ```
 
 ## Programs

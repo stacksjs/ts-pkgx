@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install protoc-gen-go-grpc`
- * @aliases `protoc-gen-go-grpc`
+ * @name `protoc-gen-go-grpc`
  * @dependencies `google.com/protobuf-go^1`
  * @companions `protobuf.dev`, `abseil.io`, `go.dev`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.protocgengogrpc
  * // Or access via domain
  * const samePkg = pantry.grpciogrpcgo
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "grpc-go"
+ * console.log(pkg.name)        // "protoc-gen-go-grpc"
  * console.log(pkg.description) // "The Go language implementation of gRPC. HTTP/2 ..."
  * console.log(pkg.programs)    // ["protoc-gen-go-grpc"]
  * console.log(pkg.versions[0]) // "1.73.0" (latest)
@@ -33,7 +33,7 @@ export const protocgengogrpcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'grpc-go' as const,
+  name: 'protoc-gen-go-grpc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -112,9 +112,9 @@ export const protocgengogrpcPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'protoc-gen-go-grpc',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) protoc-gen-go-grpc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install protoc-gen-go-grpc' as const,
 }
 
 export type ProtocgengogrpcPackage = typeof protocgengogrpcPackage

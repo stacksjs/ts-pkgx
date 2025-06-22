@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install deno`
- * @aliases `deno`
+ * @name `deno`
  * @companions `info-zip.org/unzip`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.deno
  * // Or access via domain
  * const samePkg = pantry.denoland
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "deno.land"
+ * console.log(pkg.name)        // "deno"
  * console.log(pkg.description) // "A modern runtime for JavaScript and TypeScript."
  * console.log(pkg.programs)    // ["deno"]
  * console.log(pkg.versions[0]) // "2.3.6" (latest)
@@ -32,7 +32,7 @@ export const denoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'deno.land' as const,
+  name: 'deno' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -206,9 +206,9 @@ export const denoPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'deno',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) deno -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install deno' as const,
 }
 
 export type DenoPackage = typeof denoPackage

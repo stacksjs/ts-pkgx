@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sqlfluff`
- * @aliases `sqlfluff`
+ * @name `sqlfluff`
  * @dependencies `python.org>=3.7<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sqlfluff
  * // Or access via domain
  * const samePkg = pantry.sqlfluffcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sqlfluff.com"
+ * console.log(pkg.name)        // "sqlfluff"
  * console.log(pkg.description) // "A modular SQL linter and auto-formatter with su..."
  * console.log(pkg.programs)    // ["sqlfluff"]
  * console.log(pkg.versions[0]) // "3.4.1" (latest)
@@ -32,7 +32,7 @@ export const sqlfluffPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sqlfluff.com' as const,
+  name: 'sqlfluff' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -98,9 +98,9 @@ export const sqlfluffPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sqlfluff',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sqlfluff -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sqlfluff' as const,
 }
 
 export type SqlfluffPackage = typeof sqlfluffPackage

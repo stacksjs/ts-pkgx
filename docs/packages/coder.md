@@ -1,11 +1,11 @@
-# coder.com
+# coder
 
 > Tool for provisioning self-hosted development environments with Terraform
 
 ## Package Information
 
 - **Domain**: `coder.com`
-- **Name**: `coder.com`
+- **Name**: `coder`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/coder.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install coder
 ## Programs
 
 This package provides the following executable programs:
-
-- `coder`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `coder`
 
@@ -56,7 +50,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +coder.com@2.23.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) coder -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -5,7 +5,7 @@
  * @version `2.2.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gflags.github.io -- $SHELL -i`
+ * @install `launchpad install gflags.github.io`
  *
  * @example
  * ```typescript
@@ -40,7 +40,7 @@ export const gflagsgithubioPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gflags.github.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install gflags.github.io' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -52,6 +52,8 @@ export const gflagsgithubioPackage = {
     '2.2.2',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gflags.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gflags.github.io' as const,
 }
 
 export type GflagsgithubioPackage = typeof gflagsgithubioPackage

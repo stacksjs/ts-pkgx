@@ -6,7 +6,7 @@
  * @version `1.3.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/AgentD/squashfs-tools-ng -- $SHELL -i`
+ * @install `launchpad install squashfs-tools-ng`
  * @name `squashfs-tools-ng`
  * @dependencies `zlib.net^1`, `tukaani.org/xz^5`, `lz4.org^1`, ... (+2 more)
  *
@@ -47,7 +47,7 @@ export const squashfstoolsngPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/AgentD/squashfs-tools-ng -- $SHELL -i' as const,
+  installCommand: 'launchpad install squashfs-tools-ng' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -86,6 +86,8 @@ export const squashfstoolsngPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/AgentD/squashfs-tools-ng -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install squashfs-tools-ng' as const,
 }
 
 export type SquashfstoolsngPackage = typeof squashfstoolsngPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pre-commit`
- * @aliases `pre-commit`
+ * @name `pre-commit`
  * @dependencies `python.org>=3.8<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.precommit
  * // Or access via domain
  * const samePkg = pantry.precommitcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pre-commit.com"
+ * console.log(pkg.name)        // "pre-commit"
  * console.log(pkg.description) // "A framework for managing and maintaining multi-..."
  * console.log(pkg.programs)    // ["pre-commit"]
  * console.log(pkg.versions[0]) // "4.2.0" (latest)
@@ -32,7 +32,7 @@ export const precommitPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pre-commit.com' as const,
+  name: 'pre-commit' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -96,9 +96,9 @@ export const precommitPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pre-commit',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pre-commit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pre-commit' as const,
 }
 
 export type PrecommitPackage = typeof precommitPackage

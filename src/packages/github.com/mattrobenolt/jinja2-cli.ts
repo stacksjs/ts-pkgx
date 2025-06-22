@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jinja2`
- * @aliases `jinja2`
+ * @name `jinja2`
  * @dependencies `python.org>=3.7<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.jinja2
  * // Or access via domain
  * const samePkg = pantry.githubcommattrobenoltjinja2cli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "jinja2-cli"
+ * console.log(pkg.name)        // "jinja2"
  * console.log(pkg.description) // "CLI for the Jinja2 templating language"
  * console.log(pkg.programs)    // ["jinja2"]
  * console.log(pkg.versions[0]) // "0.8.2" (latest)
@@ -32,7 +32,7 @@ export const jinja2Package = {
   /**
    * The display name of this package.
    */
-  name: 'jinja2-cli' as const,
+  name: 'jinja2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const jinja2Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jinja2',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jinja2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jinja2' as const,
 }
 
 export type Jinja2Package = typeof jinja2Package

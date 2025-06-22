@@ -1,11 +1,11 @@
-# bazelisk
+# bazel
 
 > A user-friendly launcher for Bazel.
 
 ## Package Information
 
 - **Domain**: `github.com/bazelbuild/bazelisk`
-- **Name**: `bazelisk`
+- **Name**: `bazel`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/bazelbuild/bazelisk/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/bazelbuild/bazelisk -- $SHELL -i
+launchpad install bazel
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `bazel`
 - `bazelisk`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `bazel`
 
 ## Available Versions
 

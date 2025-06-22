@@ -72,6 +72,8 @@ export const patchelfPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) patchelf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install patchelf' as const,
 }
 
 export type PatchelfPackage = typeof patchelfPackage

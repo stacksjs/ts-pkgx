@@ -1,11 +1,11 @@
-# pyqt-builder
+# pyqt-bundle
 
 > The PyQt build system
 
 ## Package Information
 
 - **Domain**: `riverbankcomputing.com/pyqt-builder`
-- **Name**: `pyqt-builder`
+- **Name**: `pyqt-bundle`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/riverbankcomputing.com/pyqt-builder/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install pyqt-bundle
 ## Programs
 
 This package provides the following executable programs:
-
-- `pyqt-bundle`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pyqt-bundle`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +riverbankcomputing.com/pyqt-builder@1.15.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) pyqt-bundle -- $SHELL -i
 ```
 
 ## Dependencies

@@ -1,11 +1,11 @@
-# yt-dlp.org
+# yt-dlp
 
 > A feature-rich command-line audio/video downloader
 
 ## Package Information
 
 - **Domain**: `yt-dlp.org`
-- **Name**: `yt-dlp.org`
+- **Name**: `yt-dlp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/yt-dlp.org/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install yt-dlp
 ## Programs
 
 This package provides the following executable programs:
-
-- `yt-dlp`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `yt-dlp`
 
@@ -52,7 +46,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +yt-dlp.org@2025.6.9 -- $SHELL -i
+sh <(curl https://pkgx.sh) yt-dlp -- $SHELL -i
 ```
 
 ## Dependencies

@@ -1,11 +1,11 @@
-# mvfst
+# facebook.com/mvfst
 
 > An implementation of the QUIC transport protocol.
 
 ## Package Information
 
 - **Domain**: `facebook.com/mvfst`
-- **Name**: `mvfst`
+- **Name**: `facebook.com/mvfst`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/mvfst/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +facebook.com/mvfst -- $SHELL -i
+launchpad install facebook.com/mvfst
 ```
 
 ## Programs

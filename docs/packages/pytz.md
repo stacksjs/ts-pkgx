@@ -1,11 +1,11 @@
-# pytz
+# github.com/stub42/pytz
 
 > pytz Python historical timezone library and database
 
 ## Package Information
 
 - **Domain**: `github.com/stub42/pytz`
-- **Name**: `pytz`
+- **Name**: `github.com/stub42/pytz`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/stub42/pytz/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/stub42/pytz -- $SHELL -i
+launchpad install github.com/stub42/pytz
 ```
 
 ## Programs

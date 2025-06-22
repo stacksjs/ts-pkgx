@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install wunderctl`
- * @aliases `wunderctl`
+ * @name `wunderctl`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.wunderctl
  * // Or access via domain
  * const samePkg = pantry.wundergraphcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "wundergraph.com"
+ * console.log(pkg.name)        // "wunderctl"
  * console.log(pkg.description) // "WunderGraph is a Backend for Frontend Framework..."
  * console.log(pkg.programs)    // ["wunderctl"]
  * console.log(pkg.versions[0]) // "0.181.0" (latest)
@@ -31,7 +31,7 @@ export const wunderctlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'wundergraph.com' as const,
+  name: 'wunderctl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -87,9 +87,9 @@ export const wunderctlPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'wunderctl',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wunderctl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wunderctl' as const,
 }
 
 export type WunderctlPackage = typeof wunderctlPackage

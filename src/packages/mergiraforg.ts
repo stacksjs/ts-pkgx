@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mergiraf`
- * @aliases `mergiraf`
+ * @name `mergiraf`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mergiraf
  * // Or access via domain
  * const samePkg = pantry.mergiraforg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mergiraf.org"
+ * console.log(pkg.name)        // "mergiraf"
  * console.log(pkg.description) // "Syntax-aware git merge driver"
  * console.log(pkg.programs)    // ["mergiraf"]
  * console.log(pkg.versions[0]) // "0.10.0" (latest)
@@ -31,7 +31,7 @@ export const mergirafPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mergiraf.org' as const,
+  name: 'mergiraf' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const mergirafPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mergiraf',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mergiraf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mergiraf' as const,
 }
 
 export type MergirafPackage = typeof mergirafPackage

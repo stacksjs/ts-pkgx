@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tidy`
- * @aliases `tidy`
+ * @name `tidy`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tidy
  * // Or access via domain
  * const samePkg = pantry.htmltidyorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "html-tidy.org"
+ * console.log(pkg.name)        // "tidy"
  * console.log(pkg.description) // "The granddaddy of HTML tools, with support for ..."
  * console.log(pkg.programs)    // ["tidy"]
  * console.log(pkg.versions[0]) // "5.8.0" (latest)
@@ -31,7 +31,7 @@ export const tidyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'html-tidy.org' as const,
+  name: 'tidy' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const tidyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tidy',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tidy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tidy' as const,
 }
 
 export type TidyPackage = typeof tidyPackage

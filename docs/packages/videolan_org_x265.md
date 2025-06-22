@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +videolan.org/x265@4.1.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) x265 -- $SHELL -i
 ```
 
 ## Usage Examples

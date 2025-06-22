@@ -6,7 +6,7 @@
  * @version `5.0.8` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +open-mpi.org -- $SHELL -i`
+ * @install `launchpad install open-mpi.org`
  * @dependencies `open-mpi.org/hwloc`, `openpmix.github.io@5`, `libevent.org`
  * @companions `OMPI_F77FLAGS^$FCFLAGS -I{{prefix}}/include`, `OMPI_F90FLAGS^$FCFLAGS -I{{prefix}}/include`
  *
@@ -44,7 +44,7 @@ export const openmpiorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +open-mpi.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install open-mpi.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -97,6 +97,8 @@ export const openmpiorgPackage = {
     '4.1.5',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +open-mpi.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install open-mpi.org' as const,
 }
 
 export type OpenmpiorgPackage = typeof openmpiorgPackage

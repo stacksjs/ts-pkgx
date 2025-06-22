@@ -1,18 +1,18 @@
 /**
- * **unibilium** - https://github.com/neovim/neovim/blob/master/MAINTAIN.md#third-party-dependencies
+ * **github.com/neovim/unibilium** - https://github.com/neovim/neovim/blob/master/MAINTAIN.md#third-party-dependencies
  *
  * @domain `github.com/neovim/unibilium`
  * @version `2.1.2` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/neovim/unibilium -- $SHELL -i`
+ * @install `launchpad install github.com/neovim/unibilium`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomneovimunibilium
- * console.log(pkg.name)        // "unibilium"
+ * console.log(pkg.name)        // "github.com/neovim/unibilium"
  * console.log(pkg.description) // "https://github.com/neovim/neovim/blob/master/MA..."
  * console.log(pkg.versions[0]) // "2.1.2" (latest)
  * ```
@@ -24,7 +24,7 @@ export const githubcomneovimunibiliumPackage = {
   /**
    * The display name of this package.
    */
-  name: 'unibilium' as const,
+  name: 'github.com/neovim/unibilium' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const githubcomneovimunibiliumPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/neovim/unibilium -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/neovim/unibilium' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -53,6 +53,8 @@ export const githubcomneovimunibiliumPackage = {
     '2.1.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/neovim/unibilium -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/neovim/unibilium' as const,
 }
 
 export type GithubcomneovimunibiliumPackage = typeof githubcomneovimunibiliumPackage

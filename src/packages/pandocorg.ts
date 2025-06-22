@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pandoc`
- * @aliases `pandoc`
+ * @name `pandoc`
  * @dependencies `gnu.org/gmp@6`, `zlib.net@1`, `sourceware.org/libffi@3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pandoc
  * // Or access via domain
  * const samePkg = pantry.pandocorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pandoc.org"
+ * console.log(pkg.name)        // "pandoc"
  * console.log(pkg.description) // "Swiss-army knife of markup format conversion"
  * console.log(pkg.programs)    // ["pandoc"]
  * console.log(pkg.versions[0]) // "3.7.0.2" (latest)
@@ -32,7 +32,7 @@ export const pandocPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pandoc.org' as const,
+  name: 'pandoc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -107,9 +107,9 @@ export const pandocPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pandoc',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pandoc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pandoc' as const,
 }
 
 export type PandocPackage = typeof pandocPackage

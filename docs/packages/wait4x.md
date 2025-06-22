@@ -1,11 +1,11 @@
-# wait4x.dev
+# wait4x
 
 > Wait4X allows you to wait for a port or a service to enter the requested state.
 
 ## Package Information
 
 - **Domain**: `wait4x.dev`
-- **Name**: `wait4x.dev`
+- **Name**: `wait4x`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wait4x.dev/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install wait4x
 ## Programs
 
 This package provides the following executable programs:
-
-- `wait4x`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `wait4x`
 
@@ -44,12 +38,12 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +wait4x.dev@3.3.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) wait4x -- $SHELL -i
 ```
 
 ## Related Packages
 
-These packages work well with wait4x.dev:
+These packages work well with wait4x:
 
 - `curl.se/ca-certs`
 

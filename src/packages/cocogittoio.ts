@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cog`
- * @aliases `cog`
+ * @name `cog`
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cog
  * // Or access via domain
  * const samePkg = pantry.cocogittoio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cocogitto.io"
+ * console.log(pkg.name)        // "cog"
  * console.log(pkg.description) // "The Conventional Commits toolbox"
  * console.log(pkg.programs)    // ["cog"]
  * console.log(pkg.versions[0]) // "6.3.0" (latest)
@@ -32,7 +32,7 @@ export const cogPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cocogitto.io' as const,
+  name: 'cog' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -81,9 +81,9 @@ export const cogPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cog',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cog -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cog' as const,
 }
 
 export type CogPackage = typeof cogPackage

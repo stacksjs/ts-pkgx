@@ -5,19 +5,19 @@
  * @version `4.3.4` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +pngquant.org/lib -- $SHELL -i`
- * @aliases `libimagequant`
+ * @install `launchpad install libimagequant`
+ * @name `libimagequant`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.libimagequant
  * // Or access via domain
  * const samePkg = pantry.pngquantorglib
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "lib"
+ * console.log(pkg.name)        // "libimagequant"
  * console.log(pkg.description) // "Palette quantization library that powers pngqua..."
  * console.log(pkg.versions[0]) // "4.3.4" (latest)
  * ```
@@ -29,7 +29,7 @@ export const libimagequantPackage = {
   /**
    * The display name of this package.
    */
-  name: 'lib' as const,
+  name: 'libimagequant' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +45,7 @@ export const libimagequantPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pngquant.org/lib -- $SHELL -i' as const,
+  installCommand: 'launchpad install libimagequant' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -67,9 +67,9 @@ export const libimagequantPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'libimagequant',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pngquant.org/lib -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libimagequant' as const,
 }
 
 export type LibimagequantPackage = typeof libimagequantPackage

@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +go.uber.org/mock/mockgen@0.5.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) mockgen -- $SHELL -i
 ```
 
 ## Dependencies

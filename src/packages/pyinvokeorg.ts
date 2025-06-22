@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install invoke`
- * @aliases `invoke`
+ * @name `invoke`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.invoke
  * // Or access via domain
  * const samePkg = pantry.pyinvokeorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pyinvoke.org"
+ * console.log(pkg.name)        // "invoke"
  * console.log(pkg.description) // "Pythonic task management & command execution."
  * console.log(pkg.programs)    // ["invoke"]
  * console.log(pkg.versions[0]) // "2.2.0" (latest)
@@ -32,7 +32,7 @@ export const invokePackage = {
   /**
    * The display name of this package.
    */
-  name: 'pyinvoke.org' as const,
+  name: 'invoke' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const invokePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'invoke',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) invoke -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install invoke' as const,
 }
 
 export type InvokePackage = typeof invokePackage

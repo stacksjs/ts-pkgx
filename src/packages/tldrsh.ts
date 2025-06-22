@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tldr`
- * @aliases `tldr`
+ * @name `tldr`
  * @dependencies `linux:sourceware.org/bzip2^1`, `curl.se` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tldr
  * // Or access via domain
  * const samePkg = pantry.tldrsh
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tldr.sh"
+ * console.log(pkg.name)        // "tldr"
  * console.log(pkg.description) // "C command-line client for tldr pages 📚"
  * console.log(pkg.programs)    // ["tldr"]
  * console.log(pkg.versions[0]) // "1.6.1" (latest)
@@ -32,7 +32,7 @@ export const tldrPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tldr.sh' as const,
+  name: 'tldr' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,9 @@ export const tldrPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tldr',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tldr -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tldr' as const,
 }
 
 export type TldrPackage = typeof tldrPackage

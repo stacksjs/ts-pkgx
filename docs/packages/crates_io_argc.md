@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/argc@1.22.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) argc -- $SHELL -i
 ```
 
 ## Usage Examples

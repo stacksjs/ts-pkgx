@@ -1,11 +1,11 @@
-# dblab.danvergara.com
+# dblab
 
 > The database client every command line junkie deserves.
 
 ## Package Information
 
-- **Domain**: `dblabdanvergara.com`
-- **Name**: `dblab.danvergara.com`
+- **Domain**: `dblab.danvergara.com`
+- **Name**: `dblab`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dblab.danvergara.com/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install dblabdanvergara.com
+launchpad install dblab
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `dblab`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `dblab`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +dblabdanvergara.com@0.33.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) dblab -- $SHELL -i
 ```
 
 ## Usage Examples

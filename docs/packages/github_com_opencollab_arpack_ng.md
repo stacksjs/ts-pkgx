@@ -1,11 +1,11 @@
-# arpack-ng
+# github.com/opencollab/arpack-ng
 
 > Collection of Fortran77 subroutines designed to solve large scale eigenvalue problems.
 
 ## Package Information
 
 - **Domain**: `github.com/opencollab/arpack-ng`
-- **Name**: `arpack-ng`
+- **Name**: `github.com/opencollab/arpack-ng`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/opencollab/arpack-ng/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/opencollab/arpack-ng -- $SHELL -i
+launchpad install github.com/opencollab/arpack-ng
 ```
 
 ## Programs

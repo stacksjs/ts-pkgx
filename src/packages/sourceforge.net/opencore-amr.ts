@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aac-enc`
- * @aliases `aac-enc`
+ * @name `aac-enc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.aacenc
  * // Or access via domain
  * const samePkg = pantry.sourceforgenetopencoreamr
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "opencore-amr"
+ * console.log(pkg.name)        // "aac-enc"
  * console.log(pkg.description) // "Standalone library of the Fraunhofer FDK AAC co..."
  * console.log(pkg.programs)    // ["aac-enc"]
  * console.log(pkg.versions[0]) // "2.0.3" (latest)
@@ -31,7 +31,7 @@ export const aacencPackage = {
   /**
    * The display name of this package.
    */
-  name: 'opencore-amr' as const,
+  name: 'aac-enc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -69,9 +69,9 @@ export const aacencPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'aac-enc',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aac-enc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install aac-enc' as const,
 }
 
 export type AacencPackage = typeof aacencPackage

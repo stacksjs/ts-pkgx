@@ -1,11 +1,11 @@
-# tart.run
+# tart
 
 > macOS and Linux VMs on Apple Silicon to use in CI and other automations
 
 ## Package Information
 
 - **Domain**: `tart.run`
-- **Name**: `tart.run`
+- **Name**: `tart`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tart.run/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install tart
 ## Programs
 
 This package provides the following executable programs:
-
-- `tart`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `tart`
 
@@ -54,7 +48,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +tart.run@2.28.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) tart -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -76,6 +76,8 @@ export const rawdogPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rawdog -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rawdog' as const,
 }
 
 export type RawdogPackage = typeof rawdogPackage

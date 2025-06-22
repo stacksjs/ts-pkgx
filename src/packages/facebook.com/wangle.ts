@@ -1,11 +1,11 @@
 /**
- * **wangle** - Wangle is a framework providing a set of common client/server abstractions for building services in a consistent, modular, and composable way.
+ * **facebook.com/wangle** - Wangle is a framework providing a set of common client/server abstractions for building services in a consistent, modular, and composable way.
  *
  * @domain `facebook.com/wangle`
  * @version `2025.6.9.0` (93 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +facebook.com/wangle -- $SHELL -i`
+ * @install `launchpad install facebook.com/wangle`
  * @dependencies `boost.org`, `google.com/double-conversion^3`, `github.com/facebookincubator/fizz`, ... (+13 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.facebookcomwangle
- * console.log(pkg.name)        // "wangle"
+ * console.log(pkg.name)        // "facebook.com/wangle"
  * console.log(pkg.description) // "Wangle is a framework providing a set of common..."
  * console.log(pkg.versions[0]) // "2025.6.9.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const facebookcomwanglePackage = {
   /**
    * The display name of this package.
    */
-  name: 'wangle' as const,
+  name: 'facebook.com/wangle' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const facebookcomwanglePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +facebook.com/wangle -- $SHELL -i' as const,
+  installCommand: 'launchpad install facebook.com/wangle' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -167,6 +167,8 @@ export const facebookcomwanglePackage = {
     '2023.10.16.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +facebook.com/wangle -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install facebook.com/wangle' as const,
 }
 
 export type FacebookcomwanglePackage = typeof facebookcomwanglePackage

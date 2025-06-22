@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mitmproxy`
- * @aliases `mitmproxy`
+ * @name `mitmproxy`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mitmproxy
  * // Or access via domain
  * const samePkg = pantry.mitmproxyorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mitmproxy.org"
+ * console.log(pkg.name)        // "mitmproxy"
  * console.log(pkg.description) // "An interactive TLS-capable intercepting HTTP pr..."
  * console.log(pkg.programs)    // ["mitmproxy"]
  * console.log(pkg.versions[0]) // "12.1.1" (latest)
@@ -32,7 +32,7 @@ export const mitmproxyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mitmproxy.org' as const,
+  name: 'mitmproxy' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -101,9 +101,9 @@ export const mitmproxyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mitmproxy',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mitmproxy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mitmproxy' as const,
 }
 
 export type MitmproxyPackage = typeof mitmproxyPackage

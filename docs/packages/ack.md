@@ -1,11 +1,11 @@
-# beyondgrep.com
+# ack
 
 > ack is a grep-like search tool optimized for source code.
 
 ## Package Information
 
 - **Domain**: `beyondgrep.com`
-- **Name**: `beyondgrep.com`
+- **Name**: `ack`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/beyondgrep.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install ack
 ## Programs
 
 This package provides the following executable programs:
-
-- `ack`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `ack`
 

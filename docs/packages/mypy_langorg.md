@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mypy-lang.org -- $SHELL -i
+launchpad install mypy-lang.org
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) fastlane
+launchpad install fastlane
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +fastlane.tools@2.228.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) fastlane -- $SHELL -i
 ```
 
 ## Dependencies

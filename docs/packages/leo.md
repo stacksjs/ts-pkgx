@@ -1,11 +1,11 @@
-# leo-lang.org
+# leo
 
 > 🦁 The Leo Programming Language. A Programming Language for Formally Verified, Zero-Knowledge Applications
 
 ## Package Information
 
 - **Domain**: `leo-lang.org`
-- **Name**: `leo-lang.org`
+- **Name**: `leo`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/leo-lang.org/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install leo
 ## Programs
 
 This package provides the following executable programs:
-
-- `leo`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `leo`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +leo-lang.org@2.7.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) leo -- $SHELL -i
 ```
 
 ## Dependencies

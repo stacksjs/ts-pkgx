@@ -1,11 +1,11 @@
-# tmux-MacOSX-pasteboard
+# reattach-to-user-namespace
 
 > Notes and workarounds for accessing the Mac OS X pasteboard in tmux sessions. Note: The pu branch (“Proposed Updates”) may be rewound without notice.
 
 ## Package Information
 
 - **Domain**: `github.com/ChrisJohnsen/tmux-MacOSX-pasteboard`
-- **Name**: `tmux-MacOSX-pasteboard`
+- **Name**: `reattach-to-user-namespace`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ChrisJohnsen/tmux-MacOSX-pasteboard/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install reattach-to-user-namespace
 ## Programs
 
 This package provides the following executable programs:
-
-- `reattach-to-user-namespace`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `reattach-to-user-namespace`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/ChrisJohnsen/tmux-MacOSX-pasteboard@2.9.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) reattach-to-user-namespace -- $SHELL -i
 ```
 
 ## Usage Examples

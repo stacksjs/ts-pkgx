@@ -1,11 +1,11 @@
-# project-copacetic.github.io
+# copa
 
 > Tool to directly patch container images given the vulnerability scanning results
 
 ## Package Information
 
 - **Domain**: `project-copacetic.github.io`
-- **Name**: `project-copacetic.github.io`
+- **Name**: `copa`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/project-copacetic.github.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install copa
 ## Programs
 
 This package provides the following executable programs:
-
-- `copa`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `copa`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +project-copacetic.github.io@0.10.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) copa -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -1,12 +1,12 @@
 /**
- * **expect** - Program that can automate interactive applications
+ * **tcl-lang.org/expect** - Program that can automate interactive applications
  *
  * @domain `tcl-lang.org/expect`
  * @programs `autoexpect`, `autopasswd`, `cryptdir`, `decryptdir`, `dislocate`, ... (+17 more)
  * @version `5.45.4` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +tcl-lang.org/expect -- $SHELL -i`
+ * @install `launchpad install tcl-lang.org/expect`
  * @dependencies `tcl.tk/tcl^8`
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.tcllangorgexpect
- * console.log(pkg.name)        // "expect"
+ * console.log(pkg.name)        // "tcl-lang.org/expect"
  * console.log(pkg.description) // "Program that can automate interactive applications"
  * console.log(pkg.programs)    // ["autoexpect", "autopasswd", ...]
  * console.log(pkg.versions[0]) // "5.45.4" (latest)
@@ -27,7 +27,7 @@ export const tcllangorgexpectPackage = {
   /**
    * The display name of this package.
    */
-  name: 'expect' as const,
+  name: 'tcl-lang.org/expect' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const tcllangorgexpectPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +tcl-lang.org/expect -- $SHELL -i' as const,
+  installCommand: 'launchpad install tcl-lang.org/expect' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -90,6 +90,8 @@ export const tcllangorgexpectPackage = {
     '5.45.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tcl-lang.org/expect -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tcl-lang.org/expect' as const,
 }
 
 export type TcllangorgexpectPackage = typeof tcllangorgexpectPackage

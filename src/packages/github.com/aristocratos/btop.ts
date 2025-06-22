@@ -83,6 +83,8 @@ export const btopPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) btop -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install btop' as const,
 }
 
 export type BtopPackage = typeof btopPackage

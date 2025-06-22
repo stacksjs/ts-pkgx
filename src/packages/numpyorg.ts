@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install f2py`
- * @aliases `f2py`
+ * @name `f2py`
  * @dependencies `openblas.net^0.3`, `python.org^3.11`
  * @companions `gnu.org/gcc`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.f2py
  * // Or access via domain
  * const samePkg = pantry.numpyorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "numpy.org"
+ * console.log(pkg.name)        // "f2py"
  * console.log(pkg.description) // "The fundamental package for scientific computin..."
  * console.log(pkg.programs)    // ["f2py"]
  * console.log(pkg.versions[0]) // "2.3.1" (latest)
@@ -33,7 +33,7 @@ export const f2pyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'numpy.org' as const,
+  name: 'f2py' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -101,9 +101,9 @@ export const f2pyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'f2py',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) f2py -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install f2py' as const,
 }
 
 export type F2pyPackage = typeof f2pyPackage

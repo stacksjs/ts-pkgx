@@ -1,11 +1,11 @@
-# glib
+# gnome.org/glib
 
 > Core application library for C
 
 ## Package Information
 
 - **Domain**: `gnome.org/glib`
-- **Name**: `glib`
+- **Name**: `gnome.org/glib`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/glib/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnome.org/glib -- $SHELL -i
+launchpad install gnome.org/glib
 ```
 
 ## Programs
@@ -73,7 +73,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with glib:
+These packages work well with gnome.org/glib:
 
 - `gnome.org/gsettings-desktop-schemas`
 

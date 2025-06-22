@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +soliditylang.org -- $SHELL -i
+launchpad install soliditylang.org
 ```
 
 ## Programs

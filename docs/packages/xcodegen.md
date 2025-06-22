@@ -1,11 +1,11 @@
-# XcodeGen
+# xcodegen
 
 > Generate your Xcode project from a spec file and your folder structure
 
 ## Package Information
 
 - **Domain**: `github.com/yonaskolb/XcodeGen`
-- **Name**: `XcodeGen`
+- **Name**: `xcodegen`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/yonaskolb/XcodeGen/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install xcodegen
 ## Programs
 
 This package provides the following executable programs:
-
-- `xcodegen`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `xcodegen`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/yonaskolb/XcodeGen@2.43.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) xcodegen -- $SHELL -i
 ```
 
 ## Usage Examples

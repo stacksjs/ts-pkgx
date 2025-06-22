@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +elixir-lang.org -- $SHELL -i
+launchpad install elixir-lang.org
 ```
 
 ## Programs

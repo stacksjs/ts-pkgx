@@ -1,11 +1,11 @@
-# SwiftFormat
+# swiftformat
 
 > A command-line tool and Xcode Extension for formatting Swift code
 
 ## Package Information
 
 - **Domain**: `github.com/nicklockwood/SwiftFormat`
-- **Name**: `SwiftFormat`
+- **Name**: `swiftformat`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/nicklockwood/SwiftFormat/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install swiftformat
 ## Programs
 
 This package provides the following executable programs:
-
-- `swiftformat`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `swiftformat`
 
@@ -51,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/nicklockwood/SwiftFormat@0.56.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) swiftformat -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -69,6 +69,8 @@ export const eksnodeviewerPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) eks-node-viewer -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install eks-node-viewer' as const,
 }
 
 export type EksnodeviewerPackage = typeof eksnodeviewerPackage

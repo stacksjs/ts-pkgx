@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install skaffold`
- * @aliases `skaffold`
+ * @name `skaffold`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.skaffold
  * // Or access via domain
  * const samePkg = pantry.skaffolddev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "skaffold.dev"
+ * console.log(pkg.name)        // "skaffold"
  * console.log(pkg.description) // "Easy and Repeatable Kubernetes Development"
  * console.log(pkg.programs)    // ["skaffold"]
  * console.log(pkg.versions[0]) // "2.16.1" (latest)
@@ -31,7 +31,7 @@ export const skaffoldPackage = {
   /**
    * The display name of this package.
    */
-  name: 'skaffold.dev' as const,
+  name: 'skaffold' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -82,9 +82,9 @@ export const skaffoldPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'skaffold',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) skaffold -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install skaffold' as const,
 }
 
 export type SkaffoldPackage = typeof skaffoldPackage

@@ -1,18 +1,18 @@
 /**
- * **yaml-cpp** - A YAML parser and emitter in C++
+ * **github.com/jbeder/yaml-cpp** - A YAML parser and emitter in C++
  *
  * @domain `github.com/jbeder/yaml-cpp`
  * @version `0.8.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/jbeder/yaml-cpp -- $SHELL -i`
+ * @install `launchpad install github.com/jbeder/yaml-cpp`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomjbederyamlcpp
- * console.log(pkg.name)        // "yaml-cpp"
+ * console.log(pkg.name)        // "github.com/jbeder/yaml-cpp"
  * console.log(pkg.description) // "A YAML parser and emitter in C++"
  * console.log(pkg.versions[0]) // "0.8.0" (latest)
  * ```
@@ -24,7 +24,7 @@ export const githubcomjbederyamlcppPackage = {
   /**
    * The display name of this package.
    */
-  name: 'yaml-cpp' as const,
+  name: 'github.com/jbeder/yaml-cpp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const githubcomjbederyamlcppPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/jbeder/yaml-cpp -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/jbeder/yaml-cpp' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -53,6 +53,8 @@ export const githubcomjbederyamlcppPackage = {
     '0.7.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/jbeder/yaml-cpp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/jbeder/yaml-cpp' as const,
 }
 
 export type GithubcomjbederyamlcppPackage = typeof githubcomjbederyamlcppPackage

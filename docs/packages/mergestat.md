@@ -1,11 +1,11 @@
-# mergestat-lite
+# mergestat
 
 > Query git repositories with SQL. Generate reports, perform status checks, analyze codebases. 🔍 📊
 
 ## Package Information
 
 - **Domain**: `mergestat.com/mergestat-lite`
-- **Name**: `mergestat-lite`
+- **Name**: `mergestat`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mergestat.com/mergestat-lite/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install mergestat
 ## Programs
 
 This package provides the following executable programs:
-
-- `mergestat`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `mergestat`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mergestat.com/mergestat-lite@0.6.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) mergestat -- $SHELL -i
 ```
 
 ## Usage Examples

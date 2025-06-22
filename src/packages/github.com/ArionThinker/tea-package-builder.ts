@@ -84,6 +84,8 @@ export const teapackagebuilderPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tea-package-builder -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tea-package-builder' as const,
 }
 
 export type TeapackagebuilderPackage = typeof teapackagebuilderPackage

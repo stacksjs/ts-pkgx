@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aserver`
- * @aliases `aserver`
+ * @name `aserver`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.aserver
  * // Or access via domain
  * const samePkg = pantry.alsaprojectorgalsalib
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "alsa-lib"
+ * console.log(pkg.name)        // "aserver"
  * console.log(pkg.description) // "Provides audio and MIDI functionality to the Li..."
  * console.log(pkg.programs)    // ["aserver"]
  * console.log(pkg.versions[0]) // "1.2.14" (latest)
@@ -31,7 +31,7 @@ export const aserverPackage = {
   /**
    * The display name of this package.
    */
-  name: 'alsa-lib' as const,
+  name: 'aserver' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -73,9 +73,7 @@ export const aserverPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'aserver',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aserver -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install aserver' as const,
 }

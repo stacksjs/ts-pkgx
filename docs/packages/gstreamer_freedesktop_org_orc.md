@@ -1,11 +1,11 @@
-# orc
+# orcc
 
 > Oil Runtime Compiler (ORC)
 
 ## Package Information
 
 - **Domain**: `gstreamer.freedesktop.org/orc`
-- **Name**: `orc`
+- **Name**: `orcc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gstreamer.freedesktop.org/orc/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gstreamer.freedesktop.org/orc -- $SHELL -i
+launchpad install orcc
 ```
 
 ## Programs

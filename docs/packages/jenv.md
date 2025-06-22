@@ -1,11 +1,11 @@
-# jenv.be
+# jenv
 
 > Manage your Java environment
 
 ## Package Information
 
 - **Domain**: `jenv.be`
-- **Name**: `jenv.be`
+- **Name**: `jenv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jenv.be/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install jenv
 ## Programs
 
 This package provides the following executable programs:
-
-- `jenv`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `jenv`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +jenv.be@0.5.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) jenv -- $SHELL -i
 ```
 
 ## Usage Examples

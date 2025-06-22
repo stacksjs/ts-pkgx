@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mupdf.com -- $SHELL -i
+launchpad install mupdf.com
 ```
 
 ## Programs

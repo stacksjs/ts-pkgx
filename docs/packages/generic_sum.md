@@ -1,11 +1,11 @@
-# mbedtls
+# generic_sum
 
 > An open source, portable, easy to use, readable and flexible TLS library, and reference implementation of the PSA Cryptography API. Releases are on a varying cadence, typically around 3 - 6 months between releases.
 
 ## Package Information
 
 - **Domain**: `github.com/Mbed-TLS/mbedtls`
-- **Name**: `mbedtls`
+- **Name**: `generic_sum`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Mbed-TLS/mbedtls/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install generic_sum
 ## Programs
 
 This package provides the following executable programs:
-
-- `generic_sum`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `generic_sum`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/Mbed-TLS/mbedtls@3.6.3.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) generic_sum -- $SHELL -i
 ```
 
 ## Usage Examples

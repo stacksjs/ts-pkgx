@@ -1,11 +1,11 @@
-# yarnpkg.com
+# yarn
 
 > 📦🐈 Active development trunk for Yarn ⚒
 
 ## Package Information
 
 - **Domain**: `yarnpkg.com`
-- **Name**: `yarnpkg.com`
+- **Name**: `yarn`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/yarnpkg.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install yarnpkg.com
+launchpad install yarn
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `yarn`
 - `yarnpkg`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `yarn`
 
 ## Available Versions
 

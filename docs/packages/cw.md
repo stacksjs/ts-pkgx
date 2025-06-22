@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +lucagrulla.com/cw@4.1.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) cw -- $SHELL -i
 ```
 
 ## Usage Examples

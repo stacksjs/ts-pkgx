@@ -1,11 +1,11 @@
-# sip
+# sip-install
 
 > Tool to create Python bindings for C and C++ libraries
 
 ## Package Information
 
 - **Domain**: `riverbankcomputing.com/sip`
-- **Name**: `sip`
+- **Name**: `sip-install`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/riverbankcomputing.com/sip/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +riverbankcomputing.com/sip -- $SHELL -i
+launchpad install sip-install
 ```
 
 ## Programs

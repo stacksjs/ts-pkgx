@@ -72,6 +72,8 @@ export const himalayaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) himalaya -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install himalaya' as const,
 }
 
 export type HimalayaPackage = typeof himalayaPackage

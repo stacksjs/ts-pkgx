@@ -1,11 +1,11 @@
-# libserdes
+# github.com/confluentinc/libserdes
 
 > Avro Serialization/Deserialization C/C++ library with Confluent schema-registry support
 
 ## Package Information
 
 - **Domain**: `github.com/confluentinc/libserdes`
-- **Name**: `libserdes`
+- **Name**: `github.com/confluentinc/libserdes`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/confluentinc/libserdes/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/confluentinc/libserdes -- $SHELL -i
+launchpad install github.com/confluentinc/libserdes
 ```
 
 ## Programs

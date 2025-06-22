@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nvim`
- * @aliases `nvim`
+ * @name `nvim`
  * @dependencies `gnu.org/gettext^0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.nvim
  * // Or access via domain
  * const samePkg = pantry.neovimio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "neovim.io"
+ * console.log(pkg.name)        // "nvim"
  * console.log(pkg.description) // "Ambitious Vim-fork focused on extensibility and..."
  * console.log(pkg.programs)    // ["nvim"]
  * console.log(pkg.versions[0]) // "0.11.2" (latest)
@@ -32,7 +32,7 @@ export const nvimPackage = {
   /**
    * The display name of this package.
    */
-  name: 'neovim.io' as const,
+  name: 'nvim' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -89,9 +89,9 @@ export const nvimPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'nvim',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nvim -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nvim' as const,
 }
 
 export type NvimPackage = typeof nvimPackage

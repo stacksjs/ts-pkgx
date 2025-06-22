@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) just
+launchpad install just
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +just.systems@1.40.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) just -- $SHELL -i
 ```
 
 ## Usage Examples

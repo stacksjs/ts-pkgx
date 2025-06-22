@@ -1,11 +1,11 @@
-# pwgen.sourceforge.io
+# pwgen
 
 > Password generator
 
 ## Package Information
 
 - **Domain**: `pwgen.sourceforge.io`
-- **Name**: `pwgen.sourceforge.io`
+- **Name**: `pwgen`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pwgen.sourceforge.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install pwgen
 ## Programs
 
 This package provides the following executable programs:
-
-- `pwgen`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pwgen`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pwgen.sourceforge.io@2.8.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) pwgen -- $SHELL -i
 ```
 
 ## Usage Examples

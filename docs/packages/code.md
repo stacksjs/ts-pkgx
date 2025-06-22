@@ -1,11 +1,11 @@
-# code-cli
+# vscode cli
 
 > Command-line interface built-in Visual Studio Code
 
 ## Package Information
 
 - **Domain**: `microsoft.com/code-cli`
-- **Name**: `code-cli`
+- **Name**: `vscode cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/code-cli/package.yml)
 
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `code`
-- `vscode cli`
 
 ## Available Versions
 
@@ -46,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +microsoft.com/code-cli@1.101.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) code -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +61,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.vscode cli
+const pkg = pantry.code
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,11 +1,11 @@
-# librdkafka
+# github.com/confluentinc/librdkafka
 
 > The Apache Kafka C/C++ library
 
 ## Package Information
 
 - **Domain**: `github.com/confluentinc/librdkafka`
-- **Name**: `librdkafka`
+- **Name**: `github.com/confluentinc/librdkafka`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/confluentinc/librdkafka/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/confluentinc/librdkafka -- $SHELL -i
+launchpad install github.com/confluentinc/librdkafka
 ```
 
 ## Programs

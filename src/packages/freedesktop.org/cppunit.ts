@@ -1,19 +1,19 @@
 /**
- * **cppunit** - Unit testing framework for C++
+ * **freedesktop.org/cppunit** - Unit testing framework for C++
  *
  * @domain `freedesktop.org/cppunit`
  * @programs `cppunit-config`, `DllPlugInTester`
  * @version `1.13.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +freedesktop.org/cppunit -- $SHELL -i`
+ * @install `launchpad install freedesktop.org/cppunit`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.freedesktoporgcppunit
- * console.log(pkg.name)        // "cppunit"
+ * console.log(pkg.name)        // "freedesktop.org/cppunit"
  * console.log(pkg.description) // "Unit testing framework for C++"
  * console.log(pkg.programs)    // ["cppunit-config", "DllPlugInTester"]
  * console.log(pkg.versions[0]) // "1.13.2" (latest)
@@ -26,7 +26,7 @@ export const freedesktoporgcppunitPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cppunit' as const,
+  name: 'freedesktop.org/cppunit' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const freedesktoporgcppunitPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +freedesktop.org/cppunit -- $SHELL -i' as const,
+  installCommand: 'launchpad install freedesktop.org/cppunit' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -61,6 +61,8 @@ export const freedesktoporgcppunitPackage = {
     '1.13.2',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/cppunit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/cppunit' as const,
 }
 
 export type FreedesktoporgcppunitPackage = typeof freedesktoporgcppunitPackage

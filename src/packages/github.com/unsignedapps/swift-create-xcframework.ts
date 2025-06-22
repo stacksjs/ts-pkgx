@@ -69,6 +69,8 @@ export const swiftcreatexcframeworkPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) swift-create-xcframework -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install swift-create-xcframework' as const,
 }
 
 export type SwiftcreatexcframeworkPackage = typeof swiftcreatexcframeworkPackage

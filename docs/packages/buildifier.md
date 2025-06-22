@@ -1,11 +1,11 @@
-# buildtools
+# buildifier
 
 > Format bazel BUILD files with a standard convention
 
 ## Package Information
 
 - **Domain**: `github.com/bazelbuild/buildtools`
-- **Name**: `buildtools`
+- **Name**: `buildifier`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/bazelbuild/buildtools/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install buildifier
 ## Programs
 
 This package provides the following executable programs:
-
-- `buildifier`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `buildifier`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/bazelbuild/buildtools@8.2.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) buildifier -- $SHELL -i
 ```
 
 ## Usage Examples

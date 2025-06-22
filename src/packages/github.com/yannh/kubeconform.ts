@@ -73,6 +73,8 @@ export const kubeconformPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kubeconform -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kubeconform' as const,
 }
 
 export type KubeconformPackage = typeof kubeconformPackage

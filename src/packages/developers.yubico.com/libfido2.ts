@@ -6,20 +6,20 @@
  * @version `1.16.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +developers.yubico.com/libfido2 -- $SHELL -i`
- * @aliases `fido2`
+ * @install `launchpad install fido2`
+ * @name `fido2`
  * @dependencies `github.com/PJK/libcbor@0`, `openssl.org@1`, `zlib.net@1`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.fido2
  * // Or access via domain
  * const samePkg = pantry.developersyubicocomlibfido2
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libfido2"
+ * console.log(pkg.name)        // "fido2"
  * console.log(pkg.description) // "Provides library functionality for FIDO2, inclu..."
  * console.log(pkg.programs)    // ["fido2-assert", "fido2-cred", ...]
  * console.log(pkg.versions[0]) // "1.16.0" (latest)
@@ -32,7 +32,7 @@ export const fido2Package = {
   /**
    * The display name of this package.
    */
-  name: 'libfido2' as const,
+  name: 'fido2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const fido2Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +developers.yubico.com/libfido2 -- $SHELL -i' as const,
+  installCommand: 'launchpad install fido2' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,9 +84,9 @@ export const fido2Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'fido2',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +developers.yubico.com/libfido2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fido2' as const,
 }
 
 export type Fido2Package = typeof fido2Package

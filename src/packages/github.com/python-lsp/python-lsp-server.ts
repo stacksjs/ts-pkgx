@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pylsp`
- * @aliases `pylsp`
+ * @name `pylsp`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pylsp
  * // Or access via domain
  * const samePkg = pantry.githubcompythonlsppythonlspserver
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "python-lsp-server"
+ * console.log(pkg.name)        // "pylsp"
  * console.log(pkg.description) // "Fork of the python-language-server project, mai..."
  * console.log(pkg.programs)    // ["pylsp"]
  * console.log(pkg.versions[0]) // "1.12.2" (latest)
@@ -32,7 +32,7 @@ export const pylspPackage = {
   /**
    * The display name of this package.
    */
-  name: 'python-lsp-server' as const,
+  name: 'pylsp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -87,9 +87,9 @@ export const pylspPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pylsp',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pylsp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pylsp' as const,
 }
 
 export type PylspPackage = typeof pylspPackage

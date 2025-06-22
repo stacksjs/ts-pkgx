@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kubebuilder`
- * @aliases `kubebuilder`
+ * @name `kubebuilder`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.kubebuilder
  * // Or access via domain
  * const samePkg = pantry.kubebuilderio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "kubebuilder.io"
+ * console.log(pkg.name)        // "kubebuilder"
  * console.log(pkg.description) // "Kubebuilder - SDK for building Kubernetes APIs ..."
  * console.log(pkg.programs)    // ["kubebuilder"]
  * console.log(pkg.versions[0]) // "4.6.0" (latest)
@@ -31,7 +31,7 @@ export const kubebuilderPackage = {
   /**
    * The display name of this package.
    */
-  name: 'kubebuilder.io' as const,
+  name: 'kubebuilder' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -85,9 +85,9 @@ export const kubebuilderPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kubebuilder',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kubebuilder -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kubebuilder' as const,
 }
 
 export type KubebuilderPackage = typeof kubebuilderPackage

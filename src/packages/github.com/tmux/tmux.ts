@@ -81,6 +81,8 @@ export const tmuxPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tmux -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tmux' as const,
 }
 
 export type TmuxPackage = typeof tmuxPackage

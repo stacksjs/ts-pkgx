@@ -1,11 +1,11 @@
 /**
- * **pycparser** - :snake: Complete C99 parser in pure Python
+ * **github.com/eliben/pycparser** - :snake: Complete C99 parser in pure Python
  *
  * @domain `github.com/eliben/pycparser`
  * @version `2.22.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/eliben/pycparser -- $SHELL -i`
+ * @install `launchpad install github.com/eliben/pycparser`
  * @dependencies `python.org~3.11`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomelibenpycparser
- * console.log(pkg.name)        // "pycparser"
+ * console.log(pkg.name)        // "github.com/eliben/pycparser"
  * console.log(pkg.description) // ":snake: Complete C99 parser in pure Python"
  * console.log(pkg.versions[0]) // "2.22.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomelibenpycparserPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pycparser' as const,
+  name: 'github.com/eliben/pycparser' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const githubcomelibenpycparserPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/eliben/pycparser -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/eliben/pycparser' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,6 +60,8 @@ export const githubcomelibenpycparserPackage = {
     '2.21.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/eliben/pycparser -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/eliben/pycparser' as const,
 }
 
 export type GithubcomelibenpycparserPackage = typeof githubcomelibenpycparserPackage

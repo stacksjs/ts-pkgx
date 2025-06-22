@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install terraform`
- * @aliases `terraform`
+ * @name `terraform`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.terraform
  * // Or access via domain
  * const samePkg = pantry.terraformio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "terraform.io"
+ * console.log(pkg.name)        // "terraform"
  * console.log(pkg.description) // "Terraform enables you to safely and predictably..."
  * console.log(pkg.programs)    // ["terraform"]
  * console.log(pkg.versions[0]) // "1.12.2" (latest)
@@ -31,7 +31,7 @@ export const terraformPackage = {
   /**
    * The display name of this package.
    */
-  name: 'terraform.io' as const,
+  name: 'terraform' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -142,9 +142,9 @@ export const terraformPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'terraform',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) terraform -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install terraform' as const,
 }
 
 export type TerraformPackage = typeof terraformPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mongodb.com -- $SHELL -i
+launchpad install mongodb.com
 ```
 
 ## Programs

@@ -5,7 +5,7 @@
  * @version `4.3.5` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +zeromq.org -- $SHELL -i`
+ * @install `launchpad install zeromq.org`
  *
  * @example
  * ```typescript
@@ -40,7 +40,7 @@ export const zeromqorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +zeromq.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install zeromq.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -53,6 +53,8 @@ export const zeromqorgPackage = {
     '4.3.4',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +zeromq.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zeromq.org' as const,
 }
 
 export type ZeromqorgPackage = typeof zeromqorgPackage

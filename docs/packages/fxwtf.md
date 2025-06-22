@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) fx
+launchpad install fx
 ```
 
 ## Programs
@@ -25,22 +25,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 17 versions</summary>
+<summary>Show all 18 versions</summary>
 
-- `36.0.3`, `36.0.2`, `36.0.1`, `36.0.0`, `35.0.0`
-- `34.0.0`, `33.0.0`, `32.0.0`, `31.0.0`, `30.2.0`
-- `30.1.1`, `30.1.0`, `30.0.3`, `30.0.2`, `30.0.1`
-- `30.0.0`, `24.1.0`
+- `36.0.4`, `36.0.3`, `36.0.2`, `36.0.1`, `36.0.0`
+- `35.0.0`, `34.0.0`, `33.0.0`, `32.0.0`, `31.0.0`
+- `30.2.0`, `30.1.1`, `30.1.0`, `30.0.3`, `30.0.2`
+- `30.0.1`, `30.0.0`, `24.1.0`
 
 </details>
 
-**Latest Version**: `36.0.3`
+**Latest Version**: `36.0.4`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +fx.wtf@36.0.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) fx -- $SHELL -i
 ```
 
 ## Usage Examples

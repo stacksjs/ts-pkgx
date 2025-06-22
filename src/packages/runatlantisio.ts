@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install atlantis`
- * @aliases `atlantis`
+ * @name `atlantis`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.atlantis
  * // Or access via domain
  * const samePkg = pantry.runatlantisio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "runatlantis.io"
+ * console.log(pkg.name)        // "atlantis"
  * console.log(pkg.description) // "Terraform Pull Request Automation tool"
  * console.log(pkg.programs)    // ["atlantis"]
  * console.log(pkg.versions[0]) // "0.34.0" (latest)
@@ -31,7 +31,7 @@ export const atlantisPackage = {
   /**
    * The display name of this package.
    */
-  name: 'runatlantis.io' as const,
+  name: 'atlantis' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -85,9 +85,9 @@ export const atlantisPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'atlantis',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) atlantis -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install atlantis' as const,
 }
 
 export type AtlantisPackage = typeof atlantisPackage

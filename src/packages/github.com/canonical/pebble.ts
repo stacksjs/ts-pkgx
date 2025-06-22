@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pebble`
- * @name `pebble`
- * @aliases `canonical/pebble`
+ * @name `canonical/pebble`
+ * @aliases `pebble`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.pebble
  * // Or access via domain
  * const samePkg = pantry.githubcomcanonicalpebble
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pebble"
+ * console.log(pkg.name)        // "canonical/pebble"
  * console.log(pkg.description) // "Pebble is a lightweight Linux service manager w..."
  * console.log(pkg.programs)    // ["pebble"]
  * console.log(pkg.versions[0]) // "1.22.2" (latest)
@@ -32,7 +32,7 @@ export const pebblePackage = {
   /**
    * The display name of this package.
    */
-  name: 'pebble' as const,
+  name: 'canonical/pebble' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -100,8 +100,10 @@ export const pebblePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'canonical/pebble',
+    'pebble',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pebble -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pebble' as const,
 }
 
 export type PebblePackage = typeof pebblePackage

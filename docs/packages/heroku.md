@@ -1,11 +1,11 @@
-# heroku.com
+# heroku
 
 > CLI for Heroku
 
 ## Package Information
 
 - **Domain**: `heroku.com`
-- **Name**: `heroku.com`
+- **Name**: `heroku`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/heroku.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install heroku
 ## Programs
 
 This package provides the following executable programs:
-
-- `heroku`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `heroku`
 
@@ -49,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +heroku.com@10.10.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) heroku -- $SHELL -i
 ```
 
 ## Dependencies

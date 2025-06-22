@@ -1,11 +1,11 @@
-# werf.io
+# werf
 
 > A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.
 
 ## Package Information
 
 - **Domain**: `werf.io`
-- **Name**: `werf.io`
+- **Name**: `werf`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/werf.io/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install werf.io
+launchpad install werf
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `werf`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `werf`
 
@@ -72,7 +66,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +werf.io@2.38.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) werf -- $SHELL -i
 ```
 
 ## Dependencies

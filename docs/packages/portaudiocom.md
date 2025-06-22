@@ -1,11 +1,11 @@
-# portaudio.com
+# PortAudio
 
 > PortAudio is a cross-platform, open-source C language library for real-time audio input and output.
 
 ## Package Information
 
 - **Domain**: `portaudio.com`
-- **Name**: `portaudio.com`
+- **Name**: `PortAudio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/portaudio.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install portaudio.com
+launchpad install PortAudio
 ```
 
 ## Programs
@@ -21,12 +21,6 @@ launchpad install portaudio.com
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `PortAudio`
 
 ## Available Versions
 

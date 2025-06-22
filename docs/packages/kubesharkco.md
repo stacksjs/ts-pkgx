@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) kubeshark
+launchpad install kubeshark
 ```
 
 ## Programs
@@ -48,7 +48,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +kubeshark.co@72.3.83 -- $SHELL -i
+sh <(curl https://pkgx.sh) kubeshark -- $SHELL -i
 ```
 
 ## Usage Examples

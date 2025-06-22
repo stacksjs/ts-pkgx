@@ -79,6 +79,8 @@ export const getblessedPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) get-blessed -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install get-blessed' as const,
 }
 
 export type GetblessedPackage = typeof getblessedPackage

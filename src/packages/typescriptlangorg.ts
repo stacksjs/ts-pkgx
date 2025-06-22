@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tsc`
- * @aliases `tsc`
+ * @name `tsc`
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tsc
  * // Or access via domain
  * const samePkg = pantry.typescriptlangorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "typescriptlang.org"
+ * console.log(pkg.name)        // "tsc"
  * console.log(pkg.description) // "TypeScript is a superset of JavaScript that com..."
  * console.log(pkg.programs)    // ["tsc"]
  * console.log(pkg.versions[0]) // "5.8.3" (latest)
@@ -32,7 +32,7 @@ export const tscPackage = {
   /**
    * The display name of this package.
    */
-  name: 'typescriptlang.org' as const,
+  name: 'tsc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -87,9 +87,9 @@ export const tscPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tsc',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tsc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tsc' as const,
 }
 
 export type TscPackage = typeof tscPackage

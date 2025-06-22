@@ -1,11 +1,11 @@
-# crystal-lang.org
+# crystal
 
 > Fast and statically typed, compiled language with Ruby-like syntax
 
 ## Package Information
 
 - **Domain**: `crystal-lang.org`
-- **Name**: `crystal-lang.org`
+- **Name**: `crystal`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crystal-lang.org/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install crystal
 ## Programs
 
 This package provides the following executable programs:
-
-- `crystal`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `crystal`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crystal-lang.org@1.16.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) crystal -- $SHELL -i
 ```
 
 ## Dependencies
@@ -66,7 +60,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with crystal-lang.org:
+These packages work well with crystal:
 
 - `crystal-lang.org/shards`
 

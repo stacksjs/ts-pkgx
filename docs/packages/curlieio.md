@@ -1,11 +1,11 @@
-# curlie.io
+# curlie
 
 > The power of curl, the ease of use of httpie.
 
 ## Package Information
 
 - **Domain**: `curlie.io`
-- **Name**: `curlie.io`
+- **Name**: `curlie`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/curlie.io/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install curlie.io
+launchpad install curlie
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `curlie`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `curlie`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +curlie.io@1.8.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) curlie -- $SHELL -i
 ```
 
 ## Usage Examples

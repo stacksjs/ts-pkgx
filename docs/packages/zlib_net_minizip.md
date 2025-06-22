@@ -1,11 +1,11 @@
-# minizip
+# zlib.net/minizip
 
 > A massively spiffy yet delicately unobtrusive compression library.
 
 ## Package Information
 
 - **Domain**: `zlib.net/minizip`
-- **Name**: `minizip`
+- **Name**: `zlib.net/minizip`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/zlib.net/minizip/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +zlib.net/minizip -- $SHELL -i
+launchpad install zlib.net/minizip
 ```
 
 ## Programs

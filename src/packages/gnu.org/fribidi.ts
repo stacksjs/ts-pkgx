@@ -73,6 +73,8 @@ export const fribidiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fribidi -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fribidi' as const,
 }
 
 export type FribidiPackage = typeof fribidiPackage

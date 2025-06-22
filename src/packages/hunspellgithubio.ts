@@ -6,20 +6,20 @@
  * @version `1.7.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +hunspell.github.io -- $SHELL -i`
- * @aliases `hunspell`
+ * @install `launchpad install hunspell`
+ * @name `hunspell`
  * @dependencies `gnu.org/readline`, `invisible-island.net/ncurses`, `gnu.org/gettext`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.hunspell
  * // Or access via domain
  * const samePkg = pantry.hunspellgithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "hunspell.github.io"
+ * console.log(pkg.name)        // "hunspell"
  * console.log(pkg.description) // "Spell checker and morphological analyzer"
  * console.log(pkg.programs)    // ["analyze", "chmorph", ...]
  * console.log(pkg.versions[0]) // "1.7.2" (latest)
@@ -32,7 +32,7 @@ export const hunspellPackage = {
   /**
    * The display name of this package.
    */
-  name: 'hunspell.github.io' as const,
+  name: 'hunspell' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const hunspellPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +hunspell.github.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install hunspell' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -83,9 +83,9 @@ export const hunspellPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'hunspell',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +hunspell.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hunspell' as const,
 }
 
 export type HunspellPackage = typeof hunspellPackage

@@ -5,7 +5,7 @@
  * @version `3.11.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/thom311/libnl -- $SHELL -i`
+ * @install `launchpad install libnl`
  * @name `libnl`
  *
  * @example
@@ -45,7 +45,7 @@ export const libnlPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/thom311/libnl -- $SHELL -i' as const,
+  installCommand: 'launchpad install libnl' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -65,6 +65,8 @@ export const libnlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/thom311/libnl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libnl' as const,
 }
 
 export type LibnlPackage = typeof libnlPackage

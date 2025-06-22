@@ -77,6 +77,8 @@ export const factotumPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) factotum -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install factotum' as const,
 }
 
 export type FactotumPackage = typeof factotumPackage

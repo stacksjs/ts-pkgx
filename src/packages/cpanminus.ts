@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cpanm`
- * @aliases `cpanm`
+ * @name `cpanm`
  * @dependencies `perl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cpanm
  * // Or access via domain
  * const samePkg = pantry.cpanminus
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cpanmin.us"
+ * console.log(pkg.name)        // "cpanm"
  * console.log(pkg.description) // "cpanminus - get, unpack, build and install modu..."
  * console.log(pkg.programs)    // ["cpanm"]
  * console.log(pkg.versions[0]) // "1.7048.0" (latest)
@@ -32,7 +32,7 @@ export const cpanmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cpanmin.us' as const,
+  name: 'cpanm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const cpanmPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cpanm',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cpanm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cpanm' as const,
 }
 
 export type CpanmPackage = typeof cpanmPackage

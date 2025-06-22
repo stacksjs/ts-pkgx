@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install SvtAv1EncApp`
- * @aliases `SvtAv1EncApp`
+ * @name `SvtAv1EncApp`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.SvtAv1EncApp
  * // Or access via domain
  * const samePkg = pantry.gitlabcomaomediacodecsvtav1
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "SVT-AV1"
+ * console.log(pkg.name)        // "SvtAv1EncApp"
  * console.log(pkg.description) // "AV1 encoder"
  * console.log(pkg.programs)    // ["SvtAv1EncApp"]
  * console.log(pkg.versions[0]) // "3.0.2" (latest)
@@ -31,7 +31,7 @@ export const svtAv1EncAppPackage = {
   /**
    * The display name of this package.
    */
-  name: 'SVT-AV1' as const,
+  name: 'SvtAv1EncApp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -80,9 +80,9 @@ export const svtAv1EncAppPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'SvtAv1EncApp',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) SvtAv1EncApp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install SvtAv1EncApp' as const,
 }
 
 export type SvtAv1EncAppPackage = typeof svtAv1EncAppPackage

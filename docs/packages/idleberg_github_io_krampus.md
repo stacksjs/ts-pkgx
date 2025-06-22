@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +idleberg.github.io/krampus@0.2.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) krampus -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -1,11 +1,11 @@
-# cuelang.org
+# cue
 
 > The home of the CUE language! Validate and define text-based and dynamic configuration
 
 ## Package Information
 
 - **Domain**: `cuelang.org`
-- **Name**: `cuelang.org`
+- **Name**: `cue`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cuelang.org/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install cuelang.org
+launchpad install cue
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `cue`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `cue`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +cuelang.org@0.13.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) cue -- $SHELL -i
 ```
 
 ## Usage Examples

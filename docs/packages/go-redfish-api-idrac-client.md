@@ -1,11 +1,11 @@
-# go-redfish-api-idrac
+# go-redfish-api-idrac-client
 
 > iDRAC Redfish API client library written in Go.
 
 ## Package Information
 
 - **Domain**: `github.com/greenpau/go-redfish-api-idrac`
-- **Name**: `go-redfish-api-idrac`
+- **Name**: `go-redfish-api-idrac-client`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/greenpau/go-redfish-api-idrac/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install go-redfish-api-idrac-client
 ## Programs
 
 This package provides the following executable programs:
-
-- `go-redfish-api-idrac-client`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `go-redfish-api-idrac-client`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/greenpau/go-redfish-api-idrac@1.0.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) go-redfish-api-idrac-client -- $SHELL -i
 ```
 
 ## Usage Examples

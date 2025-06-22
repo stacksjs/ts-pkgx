@@ -1,11 +1,11 @@
 /**
- * **rustls-ffi** - Use Rustls from any language
+ * **crates.io/rustls-ffi** - Use Rustls from any language
  *
  * @domain `crates.io/rustls-ffi`
  * @version `0.15.0` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +crates.io/rustls-ffi -- $SHELL -i`
+ * @install `launchpad install crates.io/rustls-ffi`
  * @companions `curl.se/ca-certs`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.cratesiorustlsffi
- * console.log(pkg.name)        // "rustls-ffi"
+ * console.log(pkg.name)        // "crates.io/rustls-ffi"
  * console.log(pkg.description) // "Use Rustls from any language"
  * console.log(pkg.versions[0]) // "0.15.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const cratesiorustlsffiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rustls-ffi' as const,
+  name: 'crates.io/rustls-ffi' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const cratesiorustlsffiPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +crates.io/rustls-ffi -- $SHELL -i' as const,
+  installCommand: 'launchpad install crates.io/rustls-ffi' as const,
   programs: [] as const,
   /**
    * Related packages that work well with this package.
@@ -68,6 +68,8 @@ export const cratesiorustlsffiPackage = {
     '0.9.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/rustls-ffi -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/rustls-ffi' as const,
 }
 
 export type CratesiorustlsffiPackage = typeof cratesiorustlsffiPackage

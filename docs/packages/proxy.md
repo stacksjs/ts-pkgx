@@ -44,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +libproxy.github.io/libproxy@0.5.9 -- $SHELL -i
+sh <(curl https://pkgx.sh) proxy -- $SHELL -i
 ```
 
 ## Dependencies

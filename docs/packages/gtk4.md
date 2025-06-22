@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gtk.org/gtk4 -- $SHELL -i
+launchpad install gtk4
 ```
 
 ## Programs

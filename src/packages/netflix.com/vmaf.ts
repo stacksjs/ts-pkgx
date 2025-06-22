@@ -70,6 +70,8 @@ export const vmafPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vmaf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vmaf' as const,
 }
 
 export type VmafPackage = typeof vmafPackage

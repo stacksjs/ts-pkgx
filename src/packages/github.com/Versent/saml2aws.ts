@@ -75,6 +75,8 @@ export const saml2awsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) saml2aws -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install saml2aws' as const,
 }
 
 export type Saml2awsPackage = typeof saml2awsPackage

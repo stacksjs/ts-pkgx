@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +f1bonacc1.github.io/process-compose@1.64.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) process-compose -- $SHELL -i
 ```
 
 ## Usage Examples

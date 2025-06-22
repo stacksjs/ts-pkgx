@@ -1,11 +1,11 @@
 /**
- * **xrender** - pkgx package
+ * **x.org/xrender** - pkgx package
  *
  * @domain `x.org/xrender`
  * @version `0.9.12` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/xrender -- $SHELL -i`
+ * @install `launchpad install x.org/xrender`
  * @dependencies `x.org/x11^1`, `x.org/protocol`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgxrender
- * console.log(pkg.name)        // "xrender"
+ * console.log(pkg.name)        // "x.org/xrender"
  * console.log(pkg.versions[0]) // "0.9.12" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgxrenderPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xrender' as const,
+  name: 'x.org/xrender' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const xorgxrenderPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/xrender -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/xrender' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,6 +60,8 @@ export const xorgxrenderPackage = {
     '0.9.11',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xrender -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/xrender' as const,
 }
 
 export type XorgxrenderPackage = typeof xorgxrenderPackage

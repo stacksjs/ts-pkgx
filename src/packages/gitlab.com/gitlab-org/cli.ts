@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install glab`
- * @aliases `glab`
+ * @name `glab`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.glab
  * // Or access via domain
  * const samePkg = pantry.gitlabcomgitlaborgcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cli"
+ * console.log(pkg.name)        // "glab"
  * console.log(pkg.description) // "Open-source GitLab command-line tool"
  * console.log(pkg.programs)    // ["glab"]
  * console.log(pkg.versions[0]) // "1.60.2" (latest)
@@ -31,7 +31,7 @@ export const glabPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cli' as const,
+  name: 'glab' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -112,9 +112,9 @@ export const glabPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'glab',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) glab -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install glab' as const,
 }
 
 export type GlabPackage = typeof glabPackage

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dprint`
- * @aliases `dprint`
+ * @name `dprint`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.dprint
  * // Or access via domain
  * const samePkg = pantry.dprintdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "dprint.dev"
+ * console.log(pkg.name)        // "dprint"
  * console.log(pkg.description) // "Pluggable and configurable code formatting plat..."
  * console.log(pkg.programs)    // ["dprint"]
  * console.log(pkg.versions[0]) // "0.50.0" (latest)
@@ -31,7 +31,7 @@ export const dprintPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dprint.dev' as const,
+  name: 'dprint' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -94,9 +94,9 @@ export const dprintPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'dprint',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dprint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dprint' as const,
 }
 
 export type DprintPackage = typeof dprintPackage

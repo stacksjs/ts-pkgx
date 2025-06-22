@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +microsoft.com/markitdown@0.0.1.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) markitdown -- $SHELL -i
 ```
 
 ## Dependencies

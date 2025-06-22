@@ -1,11 +1,11 @@
-# binutils
+# gnu.org/binutils
 
 > GNU binary tools for native development
 
 ## Package Information
 
 - **Domain**: `gnu.org/binutils`
-- **Name**: `binutils`
+- **Name**: `gnu.org/binutils`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/binutils/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnu.org/binutils -- $SHELL -i
+launchpad install gnu.org/binutils
 ```
 
 ## Programs

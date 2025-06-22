@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install code`
- * @aliases `code`, `vscode cli`
+ * @name `vscode cli`
+ * @aliases `code`
  * @dependencies `openssl.org@1.1`, `zlib.net@1`
  *
  * @example
@@ -19,7 +20,7 @@
  * // Or access via domain
  * const samePkg = pantry.microsoftcomcodecli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "code-cli"
+ * console.log(pkg.name)        // "vscode cli"
  * console.log(pkg.description) // "Command-line interface built-in Visual Studio Code"
  * console.log(pkg.programs)    // ["code"]
  * console.log(pkg.versions[0]) // "1.101.1" (latest)
@@ -32,7 +33,7 @@ export const codePackage = {
   /**
    * The display name of this package.
    */
-  name: 'code-cli' as const,
+  name: 'vscode cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -91,8 +92,9 @@ export const codePackage = {
    */
   aliases: [
     'code',
-    'vscode cli',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) code -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install code' as const,
 }
 
 export type CodePackage = typeof codePackage

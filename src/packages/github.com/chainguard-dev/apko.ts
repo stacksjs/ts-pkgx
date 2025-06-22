@@ -118,6 +118,8 @@ export const apkoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) apko -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install apko' as const,
 }
 
 export type ApkoPackage = typeof apkoPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/thom311/libnl -- $SHELL -i
+launchpad install libnl
 ```
 
 ## Programs

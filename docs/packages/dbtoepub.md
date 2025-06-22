@@ -1,11 +1,11 @@
-# xsl
+# docbook-xsl
 
 > XML vocabulary to create presentation-neutral documents
 
 ## Package Information
 
 - **Domain**: `docbook.org/xsl`
-- **Name**: `xsl`
+- **Name**: `docbook-xsl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/docbook.org/xsl/package.yml)
 
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `dbtoepub`
-- `docbook-xsl`
 
 ## Available Versions
 
@@ -44,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +docbook.org/xsl@1.79.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) dbtoepub -- $SHELL -i
 ```
 
 ## Dependencies
@@ -60,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.docbook-xsl
+const pkg = pantry.dbtoepub
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

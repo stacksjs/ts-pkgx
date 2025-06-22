@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bun`
- * @aliases `bun`
+ * @name `bun`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.bun
  * // Or access via domain
  * const samePkg = pantry.bunsh
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "bun.sh"
+ * console.log(pkg.name)        // "bun"
  * console.log(pkg.description) // "Incredibly fast JavaScript runtime, bundler, te..."
  * console.log(pkg.programs)    // ["bun", "bunx"]
  * console.log(pkg.versions[0]) // "1.2.17" (latest)
@@ -31,7 +31,7 @@ export const bunPackage = {
   /**
    * The display name of this package.
    */
-  name: 'bun.sh' as const,
+  name: 'bun' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -189,9 +189,7 @@ export const bunPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'bun',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +bun.sh -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install bun' as const,
 }

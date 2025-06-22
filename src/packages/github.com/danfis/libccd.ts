@@ -1,18 +1,18 @@
 /**
- * **libccd** - Library for collision detection between two convex shapes
+ * **github.com/danfis/libccd** - Library for collision detection between two convex shapes
  *
  * @domain `github.com/danfis/libccd`
  * @version `2.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/danfis/libccd -- $SHELL -i`
+ * @install `launchpad install github.com/danfis/libccd`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomdanfislibccd
- * console.log(pkg.name)        // "libccd"
+ * console.log(pkg.name)        // "github.com/danfis/libccd"
  * console.log(pkg.description) // "Library for collision detection between two con..."
  * console.log(pkg.versions[0]) // "2.1.0" (latest)
  * ```
@@ -24,7 +24,7 @@ export const githubcomdanfislibccdPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libccd' as const,
+  name: 'github.com/danfis/libccd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const githubcomdanfislibccdPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/danfis/libccd -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/danfis/libccd' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -52,6 +52,8 @@ export const githubcomdanfislibccdPackage = {
     '2.1.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/danfis/libccd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/danfis/libccd' as const,
 }
 
 export type GithubcomdanfislibccdPackage = typeof githubcomdanfislibccdPackage

@@ -1,11 +1,11 @@
-# libfuse
+# fusermount3
 
 > The reference implementation of the Linux FUSE (Filesystem in Userspace) interface
 
 ## Package Information
 
 - **Domain**: `github.com/libfuse/libfuse`
-- **Name**: `libfuse`
+- **Name**: `fusermount3`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libfuse/libfuse/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install fusermount3
 ## Programs
 
 This package provides the following executable programs:
-
-- `fusermount3`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `fusermount3`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/libfuse/libfuse@3.17.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) fusermount3 -- $SHELL -i
 ```
 
 ## Usage Examples

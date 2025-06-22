@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/drill@0.8.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) drill -- $SHELL -i
 ```
 
 ## Dependencies

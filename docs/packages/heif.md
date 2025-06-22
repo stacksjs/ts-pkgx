@@ -1,11 +1,11 @@
-# libheif
+# heif
 
 > libheif is an HEIF and AVIF file format decoder and encoder.
 
 ## Package Information
 
 - **Domain**: `github.com/strukturag/libheif`
-- **Name**: `libheif`
+- **Name**: `heif`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/strukturag/libheif/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/strukturag/libheif -- $SHELL -i
+launchpad install heif
 ```
 
 ## Programs
@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `heif-enc`
 - `heif-info`
 - `heif-thumbnailer`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `heif`
 
 ## Available Versions
 

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +harfbuzz.org -- $SHELL -i
+launchpad install harfbuzz.org
 ```
 
 ## Programs

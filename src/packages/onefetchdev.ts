@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install onefetch`
- * @aliases `onefetch`
+ * @name `onefetch`
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.onefetch
  * // Or access via domain
  * const samePkg = pantry.onefetchdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "onefetch.dev"
+ * console.log(pkg.name)        // "onefetch"
  * console.log(pkg.description) // "Command-line Git information tool"
  * console.log(pkg.programs)    // ["onefetch"]
  * console.log(pkg.versions[0]) // "2.24.0" (latest)
@@ -32,7 +32,7 @@ export const onefetchPackage = {
   /**
    * The display name of this package.
    */
-  name: 'onefetch.dev' as const,
+  name: 'onefetch' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -82,9 +82,9 @@ export const onefetchPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'onefetch',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) onefetch -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install onefetch' as const,
 }
 
 export type OnefetchPackage = typeof onefetchPackage

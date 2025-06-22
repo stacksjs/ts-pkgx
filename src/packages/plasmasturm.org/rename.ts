@@ -76,6 +76,8 @@ export const renamePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rename -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rename' as const,
 }
 
 export type RenamePackage = typeof renamePackage

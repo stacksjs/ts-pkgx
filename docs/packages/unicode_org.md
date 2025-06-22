@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +unicode.org -- $SHELL -i
+launchpad install unicode.org
 ```
 
 ## Programs

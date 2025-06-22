@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sftpgo`
- * @aliases `sftpgo`
+ * @name `sftpgo`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sftpgo
  * // Or access via domain
  * const samePkg = pantry.sftpgocom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sftpgo.com"
+ * console.log(pkg.name)        // "sftpgo"
  * console.log(pkg.description) // "Full-featured and highly configurable SFTP, HTT..."
  * console.log(pkg.programs)    // ["sftpgo"]
  * console.log(pkg.versions[0]) // "2.6.6" (latest)
@@ -31,7 +31,7 @@ export const sftpgoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sftpgo.com' as const,
+  name: 'sftpgo' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const sftpgoPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sftpgo',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sftpgo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sftpgo' as const,
 }
 
 export type SftpgoPackage = typeof sftpgoPackage

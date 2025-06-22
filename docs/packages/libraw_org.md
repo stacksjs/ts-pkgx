@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libraw.org -- $SHELL -i
+launchpad install libraw.org
 ```
 
 ## Programs

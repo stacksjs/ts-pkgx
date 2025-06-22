@@ -6,20 +6,20 @@
  * @version `4.8.33` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +midnight-commander.org -- $SHELL -i`
- * @aliases `Midnight Commander`
+ * @install `launchpad install midnight-commander.org`
+ * @name `Midnight Commander`
  * @dependencies `invisible-island.net/ncurses`, `gnome.org/glib>=2.30`, `gnu.org/gettext>=0.18.2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.MidnightCommander
  * // Or access via domain
  * const samePkg = pantry.midnightcommanderorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "midnight-commander.org"
+ * console.log(pkg.name)        // "Midnight Commander"
  * console.log(pkg.description) // "Terminal-based visual file manager"
  * console.log(pkg.programs)    // ["mc", "mcdiff", ...]
  * console.log(pkg.versions[0]) // "4.8.33" (latest)
@@ -32,7 +32,7 @@ export const midnightCommanderPackage = {
   /**
    * The display name of this package.
    */
-  name: 'midnight-commander.org' as const,
+  name: 'Midnight Commander' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const midnightCommanderPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +midnight-commander.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install midnight-commander.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -85,9 +85,9 @@ export const midnightCommanderPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'Midnight Commander',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +midnight-commander.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install midnight-commander.org' as const,
 }
 
 export type MidnightCommanderPackage = typeof midnightCommanderPackage

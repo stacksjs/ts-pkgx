@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/rbenv/rbenv@1.3.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) rbenv -- $SHELL -i
 ```
 
 ## Dependencies

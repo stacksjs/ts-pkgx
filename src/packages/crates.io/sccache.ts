@@ -81,6 +81,8 @@ export const sccachePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sccache -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sccache' as const,
 }
 
 export type SccachePackage = typeof sccachePackage

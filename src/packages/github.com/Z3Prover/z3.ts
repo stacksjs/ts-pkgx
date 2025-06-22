@@ -90,6 +90,8 @@ export const z3Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) z3 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install z3' as const,
 }
 
 export type Z3Package = typeof z3Package

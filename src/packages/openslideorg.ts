@@ -6,20 +6,20 @@
  * @version `4.0.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +openslide.org -- $SHELL -i`
- * @aliases `openslide`
+ * @install `launchpad install openslide`
+ * @name `openslide`
  * @dependencies `cairographics.org`, `gnome.org/gdk-pixbuf`, `gnome.org/glib`, ... (+6 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.openslide
  * // Or access via domain
  * const samePkg = pantry.openslideorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "openslide.org"
+ * console.log(pkg.name)        // "openslide"
  * console.log(pkg.description) // "C library to read whole-slide images (a.k.a. vi..."
  * console.log(pkg.programs)    // ["openslide-quickhash1sum", "openslide-show-properties", ...]
  * console.log(pkg.versions[0]) // "4.0.0" (latest)
@@ -32,7 +32,7 @@ export const openslidePackage = {
   /**
    * The display name of this package.
    */
-  name: 'openslide.org' as const,
+  name: 'openslide' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const openslidePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +openslide.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install openslide' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -86,9 +86,9 @@ export const openslidePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'openslide',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openslide.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openslide' as const,
 }
 
 export type OpenslidePackage = typeof openslidePackage

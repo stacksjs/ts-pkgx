@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/fastfloat/fast_float -- $SHELL -i
+launchpad install fast_float
 ```
 
 ## Programs

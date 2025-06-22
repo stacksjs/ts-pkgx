@@ -1,11 +1,11 @@
-# lib
+# libimagequant
 
 > Palette quantization library that powers pngquant and other PNG optimizers
 
 ## Package Information
 
 - **Domain**: `pngquant.org/lib`
-- **Name**: `lib`
+- **Name**: `libimagequant`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pngquant.org/lib/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +pngquant.org/lib -- $SHELL -i
+launchpad install libimagequant
 ```
 
 ## Programs
@@ -21,12 +21,6 @@ launchpad install +pngquant.org/lib -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `libimagequant`
 
 ## Available Versions
 

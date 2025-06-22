@@ -1,11 +1,11 @@
-# mergiraf.org
+# mergiraf
 
 > Syntax-aware git merge driver
 
 ## Package Information
 
 - **Domain**: `mergiraf.org`
-- **Name**: `mergiraf.org`
+- **Name**: `mergiraf`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mergiraf.org/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install mergiraf.org
+launchpad install mergiraf
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `mergiraf`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `mergiraf`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mergiraf.org@0.10.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) mergiraf -- $SHELL -i
 ```
 
 ## Usage Examples

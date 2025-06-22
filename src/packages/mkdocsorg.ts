@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mkdocs`
- * @aliases `mkdocs`
+ * @name `mkdocs`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mkdocs
  * // Or access via domain
  * const samePkg = pantry.mkdocsorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mkdocs.org"
+ * console.log(pkg.name)        // "mkdocs"
  * console.log(pkg.description) // "Project documentation with Markdown."
  * console.log(pkg.programs)    // ["mkdocs"]
  * console.log(pkg.versions[0]) // "1.6.1" (latest)
@@ -32,7 +32,7 @@ export const mkdocsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mkdocs.org' as const,
+  name: 'mkdocs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const mkdocsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mkdocs',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mkdocs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mkdocs' as const,
 }
 
 export type MkdocsPackage = typeof mkdocsPackage

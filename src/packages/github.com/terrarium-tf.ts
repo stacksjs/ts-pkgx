@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install terrarium`
- * @aliases `terrarium`
+ * @name `terrarium`
  * @dependencies `terraform.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.terrarium
  * // Or access via domain
  * const samePkg = pantry.githubcomterrariumtf
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "terrarium-tf"
+ * console.log(pkg.name)        // "terrarium"
  * console.log(pkg.description) // "terraform wrapper which transparent loads env f..."
  * console.log(pkg.programs)    // ["terrarium"]
  * console.log(pkg.versions[0]) // "1.3.2" (latest)
@@ -32,7 +32,7 @@ export const terrariumPackage = {
   /**
    * The display name of this package.
    */
-  name: 'terrarium-tf' as const,
+  name: 'terrarium' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const terrariumPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'terrarium',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) terrarium -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install terrarium' as const,
 }
 
 export type TerrariumPackage = typeof terrariumPackage

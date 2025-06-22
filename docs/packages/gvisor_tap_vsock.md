@@ -1,11 +1,11 @@
-# gvisor-tap-vsock
+# github.com/containers/gvisor-tap-vsock
 
 > A new network stack based on gVisor
 
 ## Package Information
 
 - **Domain**: `github.com/containers/gvisor-tap-vsock`
-- **Name**: `gvisor-tap-vsock`
+- **Name**: `github.com/containers/gvisor-tap-vsock`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/containers/gvisor-tap-vsock/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/containers/gvisor-tap-vsock -- $SHELL -i
+launchpad install github.com/containers/gvisor-tap-vsock
 ```
 
 ## Programs

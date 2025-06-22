@@ -89,6 +89,8 @@ export const operatorsdkPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) operator-sdk -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install operator-sdk' as const,
 }
 
 export type OperatorsdkPackage = typeof operatorsdkPackage

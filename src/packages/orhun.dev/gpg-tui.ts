@@ -81,6 +81,8 @@ export const gpgtuiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gpg-tui -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gpg-tui' as const,
 }
 
 export type GpgtuiPackage = typeof gpgtuiPackage

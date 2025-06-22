@@ -6,20 +6,20 @@
  * @version `3.178.0` (141 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +pulumi.io -- $SHELL -i`
- * @aliases `pulumi`
+ * @install `launchpad install pulumi`
+ * @name `pulumi`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pulumi
  * // Or access via domain
  * const samePkg = pantry.pulumiio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pulumi.io"
+ * console.log(pkg.name)        // "pulumi"
  * console.log(pkg.description) // "Pulumi - Infrastructure as Code in any programm..."
  * console.log(pkg.programs)    // ["pulumi", "pulumi-analyzer-policy", ...]
  * console.log(pkg.versions[0]) // "3.178.0" (latest)
@@ -32,7 +32,7 @@ export const pulumiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pulumi.io' as const,
+  name: 'pulumi' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const pulumiPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pulumi.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install pulumi' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -227,9 +227,9 @@ export const pulumiPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pulumi',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pulumi.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pulumi' as const,
 }
 
 export type PulumiPackage = typeof pulumiPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install argbash`
- * @aliases `argbash`
+ * @name `argbash`
  * @dependencies `gnu.org/bash>=3`, `gnu.org/autoconf`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.argbash
  * // Or access via domain
  * const samePkg = pantry.argbashdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "argbash.dev"
+ * console.log(pkg.name)        // "argbash"
  * console.log(pkg.description) // "Bash argument parsing code generator"
  * console.log(pkg.programs)    // ["argbash", "argbash-init", ...]
  * console.log(pkg.versions[0]) // "2.11.0" (latest)
@@ -32,7 +32,7 @@ export const argbashPackage = {
   /**
    * The display name of this package.
    */
-  name: 'argbash.dev' as const,
+  name: 'argbash' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,7 @@ export const argbashPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'argbash',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +argbash.dev -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install argbash' as const,
 }

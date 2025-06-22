@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install juju`
- * @aliases `juju`
+ * @name `juju`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.juju
  * // Or access via domain
  * const samePkg = pantry.jujuis
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "juju.is"
+ * console.log(pkg.name)        // "juju"
  * console.log(pkg.description) // "Orchestration engine that enables the deploymen..."
  * console.log(pkg.programs)    // ["juju"]
  * console.log(pkg.versions[0]) // "3.6.7" (latest)
@@ -31,7 +31,7 @@ export const jujuPackage = {
   /**
    * The display name of this package.
    */
-  name: 'juju.is' as const,
+  name: 'juju' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -84,9 +84,9 @@ export const jujuPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'juju',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) juju -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install juju' as const,
 }
 
 export type JujuPackage = typeof jujuPackage

@@ -1,11 +1,11 @@
-# openmp.llvm.org
+# libomp
 
 > The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
 
 ## Package Information
 
 - **Domain**: `openmp.llvm.org`
-- **Name**: `openmp.llvm.org`
+- **Name**: `libomp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openmp.llvm.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +openmp.llvm.org -- $SHELL -i
+launchpad install libomp
 ```
 
 ## Programs
@@ -21,12 +21,6 @@ launchpad install +openmp.llvm.org -- $SHELL -i
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `libomp`
 
 ## Available Versions
 

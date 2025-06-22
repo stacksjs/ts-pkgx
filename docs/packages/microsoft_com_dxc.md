@@ -1,11 +1,11 @@
-# dxc
+# microsoft.com/dxc
 
 > This repo hosts the source for the DirectX Shader Compiler which is based on LLVM/Clang.
 
 ## Package Information
 
 - **Domain**: `microsoft.com/dxc`
-- **Name**: `dxc`
+- **Name**: `microsoft.com/dxc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/dxc/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +microsoft.com/dxc -- $SHELL -i
+launchpad install microsoft.com/dxc
 ```
 
 ## Programs

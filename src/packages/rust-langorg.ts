@@ -6,8 +6,8 @@
  * @version `1.87.0` (34 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +rust-lang.org -- $SHELL -i`
- * @aliases `rust`
+ * @install `launchpad install rust`
+ * @name `rust`
  * @dependencies `zlib.net@1`
  * @companions `rust-lang.org/cargo`, `linux`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.rust
  * // Or access via domain
  * const samePkg = pantry.rustlangorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rust-lang.org"
+ * console.log(pkg.name)        // "rust"
  * console.log(pkg.description) // "Empowering everyone to build reliable and effic..."
  * console.log(pkg.programs)    // ["cargo-clippy", "cargo-fmt", ...]
  * console.log(pkg.versions[0]) // "1.87.0" (latest)
@@ -33,7 +33,7 @@ export const rustPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rust-lang.org' as const,
+  name: 'rust' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +49,7 @@ export const rustPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +rust-lang.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install rust' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -125,9 +125,9 @@ export const rustPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'rust',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rust-lang.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rust' as const,
 }
 
 export type RustPackage = typeof rustPackage

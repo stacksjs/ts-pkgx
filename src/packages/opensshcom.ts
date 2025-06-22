@@ -6,7 +6,7 @@
  * @version `10.0.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +openssh.com -- $SHELL -i`
+ * @install `launchpad install openssh.com`
  * @dependencies `nlnetlabs.nl/ldns`, `developers.yubico.com/libfido2`, `openssl.org`, ... (+5 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -42,7 +42,7 @@ export const opensshcomPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +openssh.com -- $SHELL -i' as const,
+  installCommand: 'launchpad install openssh.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -87,6 +87,8 @@ export const opensshcomPackage = {
     '9.5.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openssh.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openssh.com' as const,
 }
 
 export type OpensshcomPackage = typeof opensshcomPackage

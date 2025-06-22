@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +httpie.io -- $SHELL -i
+launchpad install httpie.io
 ```
 
 ## Programs

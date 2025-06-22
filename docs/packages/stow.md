@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/stow@2.4.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) stow -- $SHELL -i
 ```
 
 ## Dependencies

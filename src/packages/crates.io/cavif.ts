@@ -71,6 +71,8 @@ export const cavifPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cavif -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cavif' as const,
 }
 
 export type CavifPackage = typeof cavifPackage

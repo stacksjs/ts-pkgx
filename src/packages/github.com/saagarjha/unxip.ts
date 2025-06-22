@@ -72,6 +72,8 @@ export const unxipPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) unxip -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install unxip' as const,
 }
 
 export type UnxipPackage = typeof unxipPackage

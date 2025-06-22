@@ -1,11 +1,11 @@
-# proj.org
+# proj
 
 > PROJ - Cartographic Projections and Coordinate Transformations Library
 
 ## Package Information
 
 - **Domain**: `proj.org`
-- **Name**: `proj.org`
+- **Name**: `proj`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/proj.org/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install proj
 ## Programs
 
 This package provides the following executable programs:
-
-- `proj`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `proj`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +proj.org@9.6.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) proj -- $SHELL -i
 ```
 
 ## Dependencies

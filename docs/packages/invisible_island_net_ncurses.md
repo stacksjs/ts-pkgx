@@ -1,11 +1,11 @@
-# ncurses
+# invisible-island.net/ncurses
 
 > Text-based UI library
 
 ## Package Information
 
 - **Domain**: `invisible-island.net/ncurses`
-- **Name**: `ncurses`
+- **Name**: `invisible-island.net/ncurses`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/invisible-island.net/ncurses/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +invisible-island.net/ncurses -- $SHELL -i
+launchpad install invisible-island.net/ncurses
 ```
 
 ## Programs

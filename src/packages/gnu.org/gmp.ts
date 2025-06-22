@@ -1,18 +1,18 @@
 /**
- * **gmp** - pkgx package
+ * **gnu.org/gmp** - pkgx package
  *
  * @domain `gnu.org/gmp`
  * @version `6.3.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnu.org/gmp -- $SHELL -i`
+ * @install `launchpad install gnu.org/gmp`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorggmp
- * console.log(pkg.name)        // "gmp"
+ * console.log(pkg.name)        // "gnu.org/gmp"
  * console.log(pkg.versions[0]) // "6.3.0" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const gnuorggmpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gmp' as const,
+  name: 'gnu.org/gmp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +39,7 @@ export const gnuorggmpPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnu.org/gmp -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnu.org/gmp' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -52,6 +52,8 @@ export const gnuorggmpPackage = {
     '6.2.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gmp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/gmp' as const,
 }
 
 export type GnuorggmpPackage = typeof gnuorggmpPackage

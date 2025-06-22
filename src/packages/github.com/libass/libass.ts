@@ -1,11 +1,11 @@
 /**
- * **libass** - libass is a portable subtitle renderer for the ASS/SSA (Advanced Substation Alpha/Substation Alpha) subtitle format.
+ * **github.com/libass/libass** - libass is a portable subtitle renderer for the ASS/SSA (Advanced Substation Alpha/Substation Alpha) subtitle format.
  *
  * @domain `github.com/libass/libass`
  * @version `0.17.4` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/libass/libass -- $SHELL -i`
+ * @install `launchpad install github.com/libass/libass`
  * @dependencies `freetype.org@2`, `gnu.org/fribidi@1`, `harfbuzz.org`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomlibasslibass
- * console.log(pkg.name)        // "libass"
+ * console.log(pkg.name)        // "github.com/libass/libass"
  * console.log(pkg.description) // "libass is a portable subtitle renderer for the ..."
  * console.log(pkg.versions[0]) // "0.17.4" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomlibasslibassPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libass' as const,
+  name: 'github.com/libass/libass' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const githubcomlibasslibassPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/libass/libass -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/libass/libass' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -67,6 +67,8 @@ export const githubcomlibasslibassPackage = {
     '0.17.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/libass/libass -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/libass/libass' as const,
 }
 
 export type GithubcomlibasslibassPackage = typeof githubcomlibasslibassPackage

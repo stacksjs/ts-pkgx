@@ -1,11 +1,11 @@
-# girara
+# pwmt.org/girara
 
 > User interface library
 
 ## Package Information
 
 - **Domain**: `pwmt.org/girara`
-- **Name**: `girara`
+- **Name**: `pwmt.org/girara`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pwmt.org/girara/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +pwmt.org/girara -- $SHELL -i
+launchpad install pwmt.org/girara
 ```
 
 ## Programs

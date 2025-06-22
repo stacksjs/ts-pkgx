@@ -76,6 +76,8 @@ export const ryeuvPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rye-uv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rye-uv' as const,
 }
 
 export type RyeuvPackage = typeof ryeuvPackage

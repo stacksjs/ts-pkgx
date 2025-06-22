@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +ivarch.com/pv@1.9.31 -- $SHELL -i
+sh <(curl https://pkgx.sh) pv -- $SHELL -i
 ```
 
 ## Usage Examples

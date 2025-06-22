@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +sourceforge.net/net-tools -- $SHELL -i
+launchpad install net-tools
 ```
 
 ## Programs

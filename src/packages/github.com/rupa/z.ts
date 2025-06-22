@@ -5,7 +5,7 @@
  * @version `1.12.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/rupa/z -- $SHELL -i`
+ * @install `launchpad install github.com/rupa/z`
  *
  * @example
  * ```typescript
@@ -40,7 +40,7 @@ export const githubcomrupazPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/rupa/z -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/rupa/z' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -52,6 +52,8 @@ export const githubcomrupazPackage = {
     '1.12.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/rupa/z -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/rupa/z' as const,
 }
 
 export type GithubcomrupazPackage = typeof githubcomrupazPackage

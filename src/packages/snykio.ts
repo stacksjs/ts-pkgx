@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install snyk`
- * @aliases `snyk`
+ * @name `snyk`
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.snyk
  * // Or access via domain
  * const samePkg = pantry.snykio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "snyk.io"
+ * console.log(pkg.name)        // "snyk"
  * console.log(pkg.description) // "Scans and monitors projects for security vulner..."
  * console.log(pkg.programs)    // ["snyk"]
  * console.log(pkg.versions[0]) // "1.1297.2" (latest)
@@ -32,7 +32,7 @@ export const snykPackage = {
   /**
    * The display name of this package.
    */
-  name: 'snyk.io' as const,
+  name: 'snyk' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -116,9 +116,9 @@ export const snykPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'snyk',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) snyk -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install snyk' as const,
 }
 
 export type SnykPackage = typeof snykPackage

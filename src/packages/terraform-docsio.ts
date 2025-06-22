@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install terraform-docs`
- * @aliases `terraform-docs`
+ * @name `terraform-docs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.terraformdocs
  * // Or access via domain
  * const samePkg = pantry.terraformdocsio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "terraform-docs.io"
+ * console.log(pkg.name)        // "terraform-docs"
  * console.log(pkg.description) // "Generate documentation from Terraform modules i..."
  * console.log(pkg.programs)    // ["terraform-docs"]
  * console.log(pkg.versions[0]) // "0.20.0" (latest)
@@ -31,7 +31,7 @@ export const terraformdocsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'terraform-docs.io' as const,
+  name: 'terraform-docs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -72,9 +72,9 @@ export const terraformdocsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'terraform-docs',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) terraform-docs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install terraform-docs' as const,
 }
 
 export type TerraformdocsPackage = typeof terraformdocsPackage

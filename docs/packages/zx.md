@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +google.com/zx@8.5.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) zx -- $SHELL -i
 ```
 
 ## Dependencies

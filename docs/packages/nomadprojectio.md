@@ -1,11 +1,11 @@
-# nomadproject.io
+# nomad
 
 > Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.
 
 ## Package Information
 
 - **Domain**: `nomadproject.io`
-- **Name**: `nomadproject.io`
+- **Name**: `nomad`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nomadproject.io/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install nomadproject.io
+launchpad install nomad
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `nomad`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `nomad`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +nomadproject.io@1.10.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) nomad -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -82,6 +82,8 @@ export const peripheryPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) periphery -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install periphery' as const,
 }
 
 export type PeripheryPackage = typeof peripheryPackage

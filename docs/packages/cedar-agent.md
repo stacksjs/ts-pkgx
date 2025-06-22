@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +permit.io/cedar-agent@0.2.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) cedar-agent -- $SHELL -i
 ```
 
 ## Usage Examples

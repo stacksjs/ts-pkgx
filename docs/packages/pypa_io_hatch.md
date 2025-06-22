@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +pypa.io/hatch -- $SHELL -i
+launchpad install hatch
 ```
 
 ## Programs

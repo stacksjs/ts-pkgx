@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +encore.dev -- $SHELL -i
+launchpad install encore.dev
 ```
 
 ## Programs

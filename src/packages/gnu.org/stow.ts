@@ -85,6 +85,8 @@ export const stowPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) stow -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install stow' as const,
 }
 
 export type StowPackage = typeof stowPackage

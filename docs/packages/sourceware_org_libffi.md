@@ -1,11 +1,11 @@
-# libffi
+# sourceware.org/libffi
 
 > A portable foreign-function interface library.
 
 ## Package Information
 
 - **Domain**: `sourceware.org/libffi`
-- **Name**: `libffi`
+- **Name**: `sourceware.org/libffi`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceware.org/libffi/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +sourceware.org/libffi -- $SHELL -i
+launchpad install sourceware.org/libffi
 ```
 
 ## Programs

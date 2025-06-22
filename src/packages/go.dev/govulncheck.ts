@@ -77,6 +77,8 @@ export const govulncheckPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) govulncheck -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install govulncheck' as const,
 }
 
 export type GovulncheckPackage = typeof govulncheckPackage

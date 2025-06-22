@@ -81,6 +81,8 @@ export const svuPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) svu -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install svu' as const,
 }
 
 export type SvuPackage = typeof svuPackage

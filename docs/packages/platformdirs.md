@@ -1,11 +1,11 @@
-# platformdirs
+# github.com/platformdirs/platformdirs
 
 > A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".
 
 ## Package Information
 
 - **Domain**: `github.com/platformdirs/platformdirs`
-- **Name**: `platformdirs`
+- **Name**: `github.com/platformdirs/platformdirs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/platformdirs/platformdirs/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/platformdirs/platformdirs -- $SHELL -i
+launchpad install github.com/platformdirs/platformdirs
 ```
 
 ## Programs

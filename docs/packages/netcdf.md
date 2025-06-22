@@ -1,11 +1,11 @@
-# netcdf
+# unidata.ucar.edu/netcdf
 
 > Official GitHub repository for netCDF-C libraries and utilities.
 
 ## Package Information
 
 - **Domain**: `unidata.ucar.edu/netcdf`
-- **Name**: `netcdf`
+- **Name**: `unidata.ucar.edu/netcdf`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/unidata.ucar.edu/netcdf/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +unidata.ucar.edu/netcdf -- $SHELL -i
+launchpad install unidata.ucar.edu/netcdf
 ```
 
 ## Programs

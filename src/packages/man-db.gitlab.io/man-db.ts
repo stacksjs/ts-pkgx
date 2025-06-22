@@ -6,7 +6,7 @@
  * @version `2.13.1` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +man-db.gitlab.io/man-db -- $SHELL -i`
+ * @install `launchpad install man-db`
  * @name `man-db`
  * @dependencies `libpipeline.gitlab.io/libpipeline`, `gnu.org/groff`, `linux:gnu.org/gdbm` (includes OS-specific dependencies with `os:package` format)
  *
@@ -47,7 +47,7 @@ export const mandbPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +man-db.gitlab.io/man-db -- $SHELL -i' as const,
+  installCommand: 'launchpad install man-db' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -89,6 +89,8 @@ export const mandbPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +man-db.gitlab.io/man-db -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install man-db' as const,
 }
 
 export type MandbPackage = typeof mandbPackage

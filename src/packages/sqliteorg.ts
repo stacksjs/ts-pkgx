@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sqlite3`
- * @aliases `sqlite3`
+ * @name `sqlite3`
  * @dependencies `zlib.net@1`, `gnu.org/readline@8`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sqlite3
  * // Or access via domain
  * const samePkg = pantry.sqliteorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sqlite.org"
+ * console.log(pkg.name)        // "sqlite3"
  * console.log(pkg.description) // "Official Git mirror of the SQLite source tree"
  * console.log(pkg.programs)    // ["sqlite3"]
  * console.log(pkg.versions[0]) // "3.50.1" (latest)
@@ -32,7 +32,7 @@ export const sqlite3Package = {
   /**
    * The display name of this package.
    */
-  name: 'sqlite.org' as const,
+  name: 'sqlite3' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -101,9 +101,9 @@ export const sqlite3Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sqlite3',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sqlite3 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sqlite3' as const,
 }
 
 export type Sqlite3Package = typeof sqlite3Package

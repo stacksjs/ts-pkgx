@@ -1,11 +1,11 @@
-# cli
+# aws/cli
 
 > Universal Command Line Interface for Amazon Web Services
 
 ## Package Information
 
 - **Domain**: `aws.amazon.com/cli`
-- **Name**: `cli`
+- **Name**: `aws/cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aws.amazon.com/cli/package.yml)
 
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `aws`
-- `aws/cli`
 
 ## Available Versions
 
@@ -245,7 +244,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.aws/cli
+const pkg = pantry.aws
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

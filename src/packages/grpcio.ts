@@ -6,20 +6,20 @@
  * @version `1.73.0` (45 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +grpc.io -- $SHELL -i`
- * @aliases `grpc`
+ * @install `launchpad install grpc`
+ * @name `grpc`
  * @dependencies `abseil.io^20250127`, `c-ares.org`, `openssl.org^1.1`, ... (+4 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.grpc
  * // Or access via domain
  * const samePkg = pantry.grpcio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "grpc.io"
+ * console.log(pkg.name)        // "grpc"
  * console.log(pkg.description) // "The C based gRPC (C++, Python, Ruby, Objective-..."
  * console.log(pkg.programs)    // ["grpc_csharp_plugin", "grpc_node_plugin", ...]
  * console.log(pkg.versions[0]) // "1.73.0" (latest)
@@ -32,7 +32,7 @@ export const grpcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'grpc.io' as const,
+  name: 'grpc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const grpcPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +grpc.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install grpc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -133,9 +133,9 @@ export const grpcPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'grpc',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +grpc.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install grpc' as const,
 }
 
 export type GrpcPackage = typeof grpcPackage

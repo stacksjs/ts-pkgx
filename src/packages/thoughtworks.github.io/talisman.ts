@@ -80,6 +80,8 @@ export const talismanPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) talisman -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install talisman' as const,
 }
 
 export type TalismanPackage = typeof talismanPackage

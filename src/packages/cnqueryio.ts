@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cnquery`
- * @aliases `cnquery`
+ * @name `cnquery`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cnquery
  * // Or access via domain
  * const samePkg = pantry.cnqueryio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cnquery.io"
+ * console.log(pkg.name)        // "cnquery"
  * console.log(pkg.description) // "open source, cloud-native, graph-based asset in..."
  * console.log(pkg.programs)    // ["cnquery"]
  * console.log(pkg.versions[0]) // "11.59.0" (latest)
@@ -31,7 +31,7 @@ export const cnqueryPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cnquery.io' as const,
+  name: 'cnquery' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -215,9 +215,9 @@ export const cnqueryPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cnquery',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cnquery -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cnquery' as const,
 }
 
 export type CnqueryPackage = typeof cnqueryPackage

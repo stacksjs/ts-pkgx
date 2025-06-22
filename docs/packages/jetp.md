@@ -1,11 +1,11 @@
-# jetporch.com
+# jetp
 
 > Read-only mirror: see https://www.jetporch.com/community/sourcehut
 
 ## Package Information
 
 - **Domain**: `jetporch.com`
-- **Name**: `jetporch.com`
+- **Name**: `jetp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jetporch.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install jetp
 ## Programs
 
 This package provides the following executable programs:
-
-- `jetp`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `jetp`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +jetporch.com@0.0.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) jetp -- $SHELL -i
 ```
 
 ## Usage Examples

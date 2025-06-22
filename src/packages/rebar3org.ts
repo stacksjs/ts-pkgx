@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rebar3`
- * @aliases `rebar3`
+ * @name `rebar3`
  * @dependencies `erlang.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.rebar3
  * // Or access via domain
  * const samePkg = pantry.rebar3org
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rebar3.org"
+ * console.log(pkg.name)        // "rebar3"
  * console.log(pkg.description) // "Erlang build tool that makes it easy to compile..."
  * console.log(pkg.programs)    // ["rebar3"]
  * console.log(pkg.versions[0]) // "3.25.0" (latest)
@@ -32,7 +32,7 @@ export const rebar3Package = {
   /**
    * The display name of this package.
    */
-  name: 'rebar3.org' as const,
+  name: 'rebar3' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const rebar3Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'rebar3',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rebar3 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rebar3' as const,
 }
 
 export type Rebar3Package = typeof rebar3Package

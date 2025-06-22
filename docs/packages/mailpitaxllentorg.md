@@ -1,11 +1,11 @@
-# mailpit.axllent.org
+# mailpit
 
 > An email and SMTP testing tool with API for developers
 
 ## Package Information
 
-- **Domain**: `mailpitaxllent.org`
-- **Name**: `mailpit.axllent.org`
+- **Domain**: `mailpit.axllent.org`
+- **Name**: `mailpit`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mailpit.axllent.org/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install mailpitaxllent.org
+launchpad install mailpit
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `mailpit`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `mailpit`
 
@@ -56,7 +50,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mailpitaxllent.org@1.26.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) mailpit -- $SHELL -i
 ```
 
 ## Usage Examples

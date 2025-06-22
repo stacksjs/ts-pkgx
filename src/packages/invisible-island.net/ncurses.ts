@@ -1,19 +1,19 @@
 /**
- * **ncurses** - Text-based UI library
+ * **invisible-island.net/ncurses** - Text-based UI library
  *
  * @domain `invisible-island.net/ncurses`
  * @programs `captoinfo`, `clear`, `infocmp`, `infotocap`, `ncursesw6-config`, ... (+6 more)
  * @version `6.4.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +invisible-island.net/ncurses -- $SHELL -i`
+ * @install `launchpad install invisible-island.net/ncurses`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.invisibleislandnetncurses
- * console.log(pkg.name)        // "ncurses"
+ * console.log(pkg.name)        // "invisible-island.net/ncurses"
  * console.log(pkg.description) // "Text-based UI library"
  * console.log(pkg.programs)    // ["captoinfo", "clear", ...]
  * console.log(pkg.versions[0]) // "6.4.0" (latest)
@@ -26,7 +26,7 @@ export const invisibleislandnetncursesPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ncurses' as const,
+  name: 'invisible-island.net/ncurses' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const invisibleislandnetncursesPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +invisible-island.net/ncurses -- $SHELL -i' as const,
+  installCommand: 'launchpad install invisible-island.net/ncurses' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,6 +71,8 @@ export const invisibleislandnetncursesPackage = {
     '6.3.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +invisible-island.net/ncurses -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install invisible-island.net/ncurses' as const,
 }
 
 export type InvisibleislandnetncursesPackage = typeof invisibleislandnetncursesPackage

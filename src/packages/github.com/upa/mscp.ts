@@ -78,6 +78,8 @@ export const mscpPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mscp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mscp' as const,
 }
 
 export type MscpPackage = typeof mscpPackage

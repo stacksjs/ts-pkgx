@@ -1,11 +1,11 @@
-# unix-tree
+# tree
 
 > Display directories as trees (with optional color/HTML output)
 
 ## Package Information
 
 - **Domain**: `gitlab.com/OldManProgrammer/unix-tree`
-- **Name**: `unix-tree`
+- **Name**: `tree`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gitlab.com/OldManProgrammer/unix-tree/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install tree
 ## Programs
 
 This package provides the following executable programs:
-
-- `tree`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `tree`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gitlab.com/OldManProgrammer/unix-tree@2.2.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) tree -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install duckdb`
- * @aliases `duckdb`
+ * @name `duckdb`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.duckdb
  * // Or access via domain
  * const samePkg = pantry.duckdborg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "duckdb.org"
+ * console.log(pkg.name)        // "duckdb"
  * console.log(pkg.description) // "DuckDB is an analytical in-process SQL database..."
  * console.log(pkg.programs)    // ["duckdb"]
  * console.log(pkg.versions[0]) // "1.3.1" (latest)
@@ -31,7 +31,7 @@ export const duckdbPackage = {
   /**
    * The display name of this package.
    */
-  name: 'duckdb.org' as const,
+  name: 'duckdb' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -87,9 +87,9 @@ export const duckdbPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'duckdb',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) duckdb -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install duckdb' as const,
 }
 
 export type DuckdbPackage = typeof duckdbPackage

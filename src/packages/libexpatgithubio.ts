@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xmlwf`
- * @aliases `xmlwf`
+ * @name `xmlwf`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.xmlwf
  * // Or access via domain
  * const samePkg = pantry.libexpatgithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libexpat.github.io"
+ * console.log(pkg.name)        // "xmlwf"
  * console.log(pkg.description) // ":herb: Fast streaming XML parser written in C99..."
  * console.log(pkg.programs)    // ["xmlwf"]
  * console.log(pkg.versions[0]) // "2.7.1" (latest)
@@ -31,7 +31,7 @@ export const xmlwfPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libexpat.github.io' as const,
+  name: 'xmlwf' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -76,9 +76,9 @@ export const xmlwfPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'xmlwf',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xmlwf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xmlwf' as const,
 }
 
 export type XmlwfPackage = typeof xmlwfPackage

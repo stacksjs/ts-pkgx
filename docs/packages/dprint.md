@@ -1,11 +1,11 @@
-# dprint.dev
+# dprint
 
 > Pluggable and configurable code formatting platform written in Rust.
 
 ## Package Information
 
 - **Domain**: `dprint.dev`
-- **Name**: `dprint.dev`
+- **Name**: `dprint`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dprint.dev/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install dprint
 ## Programs
 
 This package provides the following executable programs:
-
-- `dprint`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `dprint`
 
@@ -48,7 +42,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +dprint.dev@0.50.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) dprint -- $SHELL -i
 ```
 
 ## Usage Examples

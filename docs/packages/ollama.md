@@ -1,11 +1,11 @@
-# ollama.ai
+# ollama
 
 > Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models.
 
 ## Package Information
 
 - **Domain**: `ollama.ai`
-- **Name**: `ollama.ai`
+- **Name**: `ollama`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ollama.ai/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install ollama
 ## Programs
 
 This package provides the following executable programs:
-
-- `ollama`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `ollama`
 
@@ -62,7 +56,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +ollama.ai@0.9.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) ollama -- $SHELL -i
 ```
 
 ## Dependencies

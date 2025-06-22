@@ -6,7 +6,7 @@
  * @version `1.14.6` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +mandoc.bsd.lv -- $SHELL -i`
+ * @install `launchpad install mandoc.bsd.lv`
  * @dependencies `zlib.net`
  *
  * @example
@@ -43,7 +43,7 @@ export const mandocbsdlvPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +mandoc.bsd.lv -- $SHELL -i' as const,
+  installCommand: 'launchpad install mandoc.bsd.lv' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,6 +72,8 @@ export const mandocbsdlvPackage = {
     '1.14.6',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mandoc.bsd.lv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mandoc.bsd.lv' as const,
 }
 
 export type MandocbsdlvPackage = typeof mandocbsdlvPackage

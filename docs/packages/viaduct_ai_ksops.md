@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +viaduct.ai/ksops@4.3.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) ksops -- $SHELL -i
 ```
 
 ## Usage Examples

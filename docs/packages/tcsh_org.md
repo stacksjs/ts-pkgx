@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +tcsh.org -- $SHELL -i
+launchpad install tcsh.org
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +netpbm.sourceforge.net -- $SHELL -i
+launchpad install netpbm.sourceforge.net
 ```
 
 ## Programs

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install micromamba`
- * @aliases `micromamba`
+ * @name `micromamba`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.micromamba
  * // Or access via domain
  * const samePkg = pantry.githubcommambaorgmicro
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "micro"
+ * console.log(pkg.name)        // "micromamba"
  * console.log(pkg.description) // "The Fast Cross-Platform Package Manager"
  * console.log(pkg.programs)    // ["micromamba"]
  * console.log(pkg.versions[0]) // "2.3.0" (latest)
@@ -32,7 +32,7 @@ export const micromambaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'micro' as const,
+  name: 'micromamba' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -99,9 +99,9 @@ export const micromambaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'micromamba',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) micromamba -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install micromamba' as const,
 }
 
 export type MicromambaPackage = typeof micromambaPackage

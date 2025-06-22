@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libcxx.llvm.org -- $SHELL -i
+launchpad install libcxx.llvm.org
 ```
 
 ## Programs

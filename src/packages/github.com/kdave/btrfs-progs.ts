@@ -1,12 +1,12 @@
 /**
- * **btrfs-progs** - Userspace utilities to manage btrfs filesystems
+ * **github.com/kdave/btrfs-progs** - Userspace utilities to manage btrfs filesystems
  *
  * @domain `github.com/kdave/btrfs-progs`
  * @programs `btrfs`, `btrfsck`, `btrfs-convert`, `btrfs-find-root`, `btrfs-image`, ... (+5 more)
  * @version `6.14.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/kdave/btrfs-progs -- $SHELL -i`
+ * @install `launchpad install github.com/kdave/btrfs-progs`
  * @dependencies `python.org~3.11`, `sourceforge.net/e2fsprogs^1.47`, `oberhumer.com/lzo^2.10`, ... (+4 more)
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomkdavebtrfsprogs
- * console.log(pkg.name)        // "btrfs-progs"
+ * console.log(pkg.name)        // "github.com/kdave/btrfs-progs"
  * console.log(pkg.description) // "Userspace utilities to manage btrfs filesystems"
  * console.log(pkg.programs)    // ["btrfs", "btrfsck", ...]
  * console.log(pkg.versions[0]) // "6.14.0" (latest)
@@ -27,7 +27,7 @@ export const githubcomkdavebtrfsprogsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'btrfs-progs' as const,
+  name: 'github.com/kdave/btrfs-progs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const githubcomkdavebtrfsprogsPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/kdave/btrfs-progs -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/kdave/btrfs-progs' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -93,6 +93,8 @@ export const githubcomkdavebtrfsprogsPackage = {
     '6.7.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/kdave/btrfs-progs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/kdave/btrfs-progs' as const,
 }
 
 export type GithubcomkdavebtrfsprogsPackage = typeof githubcomkdavebtrfsprogsPackage

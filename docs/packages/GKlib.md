@@ -1,11 +1,11 @@
-# GKlib
+# github.com/KarypisLab/GKlib
 
 > A library of various helper routines and frameworks used by many of the lab's software
 
 ## Package Information
 
 - **Domain**: `github.com/KarypisLab/GKlib`
-- **Name**: `GKlib`
+- **Name**: `github.com/KarypisLab/GKlib`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/KarypisLab/GKlib/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/KarypisLab/GKlib -- $SHELL -i
+launchpad install github.com/KarypisLab/GKlib
 ```
 
 ## Programs

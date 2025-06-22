@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libexif.github.io -- $SHELL -i
+launchpad install libexif.github.io
 ```
 
 ## Programs

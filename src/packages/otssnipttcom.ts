@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ots`
- * @aliases `ots`
+ * @name `ots`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ots
  * // Or access via domain
  * const samePkg = pantry.otssnipttcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ots.sniptt.com"
+ * console.log(pkg.name)        // "ots"
  * console.log(pkg.description) // "🔐 Share end-to-end encrypted secrets with othe..."
  * console.log(pkg.programs)    // ["ots"]
  * console.log(pkg.versions[0]) // "0.3.1" (latest)
@@ -31,7 +31,7 @@ export const otsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ots.sniptt.com' as const,
+  name: 'ots' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -70,9 +70,9 @@ export const otsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ots',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ots -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ots' as const,
 }
 
 export type OtsPackage = typeof otsPackage

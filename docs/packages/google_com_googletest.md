@@ -1,11 +1,11 @@
-# googletest
+# google.com/googletest
 
 > GoogleTest - Google Testing and Mocking Framework
 
 ## Package Information
 
 - **Domain**: `google.com/googletest`
-- **Name**: `googletest`
+- **Name**: `google.com/googletest`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/googletest/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +google.com/googletest -- $SHELL -i
+launchpad install google.com/googletest
 ```
 
 ## Programs

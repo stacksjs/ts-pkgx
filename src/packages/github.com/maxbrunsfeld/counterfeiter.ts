@@ -85,6 +85,8 @@ export const counterfeiterPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) counterfeiter -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install counterfeiter' as const,
 }
 
 export type CounterfeiterPackage = typeof counterfeiterPackage

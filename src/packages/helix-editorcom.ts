@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install hx`
- * @aliases `hx`
+ * @name `hx`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.hx
  * // Or access via domain
  * const samePkg = pantry.helixeditorcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "helix-editor.com"
+ * console.log(pkg.name)        // "hx"
  * console.log(pkg.description) // "A post-modern modal text editor."
  * console.log(pkg.programs)    // ["hx"]
  * console.log(pkg.versions[0]) // "25.1.1" (latest)
@@ -31,7 +31,7 @@ export const hxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'helix-editor.com' as const,
+  name: 'hx' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const hxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'hx',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hx' as const,
 }
 
 export type HxPackage = typeof hxPackage

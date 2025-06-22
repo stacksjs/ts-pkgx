@@ -153,6 +153,8 @@ export const ezaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) eza -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install eza' as const,
 }
 
 export type EzaPackage = typeof ezaPackage

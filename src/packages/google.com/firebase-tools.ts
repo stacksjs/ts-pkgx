@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install firebase`
- * @aliases `firebase`
+ * @name `firebase`
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.firebase
  * // Or access via domain
  * const samePkg = pantry.googlecomfirebasetools
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "firebase-tools"
+ * console.log(pkg.name)        // "firebase"
  * console.log(pkg.description) // "The Firebase Command Line Tools"
  * console.log(pkg.programs)    // ["firebase"]
  * console.log(pkg.versions[0]) // "14.8.0" (latest)
@@ -32,7 +32,7 @@ export const firebasePackage = {
   /**
    * The display name of this package.
    */
-  name: 'firebase-tools' as const,
+  name: 'firebase' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -173,9 +173,9 @@ export const firebasePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'firebase',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) firebase -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install firebase' as const,
 }
 
 export type FirebasePackage = typeof firebasePackage

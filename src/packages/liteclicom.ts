@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install litecli`
- * @aliases `litecli`
+ * @name `litecli`
  * @dependencies `pkgx.sh^1`, `sqlite.org^3.45`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.litecli
  * // Or access via domain
  * const samePkg = pantry.liteclicom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "litecli.com"
+ * console.log(pkg.name)        // "litecli"
  * console.log(pkg.description) // "CLI for SQLite Databases with auto-completion a..."
  * console.log(pkg.programs)    // ["litecli"]
  * console.log(pkg.versions[0]) // "1.15.0" (latest)
@@ -32,7 +32,7 @@ export const litecliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'litecli.com' as const,
+  name: 'litecli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -90,9 +90,9 @@ export const litecliPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'litecli',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) litecli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install litecli' as const,
 }
 
 export type LitecliPackage = typeof litecliPackage

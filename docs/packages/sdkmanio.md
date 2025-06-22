@@ -1,11 +1,11 @@
-# sdkman.io
+# sdkman-init.sh
 
 > The SDKMAN! Command Line Interface
 
 ## Package Information
 
 - **Domain**: `sdkman.io`
-- **Name**: `sdkman.io`
+- **Name**: `sdkman-init.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sdkman.io/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install sdkman.io
+launchpad install sdkman-init.sh
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `sdkman-init.sh`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `sdkman-init.sh`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +sdkman.io@5.19.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) sdkman-init.sh -- $SHELL -i
 ```
 
 ## Usage Examples

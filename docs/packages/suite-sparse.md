@@ -1,11 +1,11 @@
-# suitesparse
+# suite-sparse
 
 > The official SuiteSparse library: a suite of sparse matrix algorithms authored or co-authored by Tim Davis, Texas A&M University.
 
 ## Package Information
 
 - **Domain**: `people.engr.tamu.edu/davis/suitesparse`
-- **Name**: `suitesparse`
+- **Name**: `suite-sparse`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/people.engr.tamu.edu/davis/suitesparse/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +people.engr.tamu.edu/davis/suitesparse -- $SHELL -i
+launchpad install suite-sparse
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `mongoose`
 - `suitesparse_mongoose`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `suite-sparse`
 
 ## Available Versions
 

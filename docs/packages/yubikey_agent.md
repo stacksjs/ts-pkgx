@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +filippo.io/yubikey-agent@0.1.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) yubikey-agent -- $SHELL -i
 ```
 
 ## Dependencies

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/rupa/z -- $SHELL -i
+launchpad install github.com/rupa/z
 ```
 
 ## Programs

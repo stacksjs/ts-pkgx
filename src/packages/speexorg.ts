@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install speexdec`
- * @aliases `speexdec`
+ * @name `speexdec`
  * @dependencies `xiph.org/ogg`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.speexdec
  * // Or access via domain
  * const samePkg = pantry.speexorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "speex.org"
+ * console.log(pkg.name)        // "speexdec"
  * console.log(pkg.description) // "Audio codec designed for speech"
  * console.log(pkg.programs)    // ["speexdec"]
  * console.log(pkg.versions[0]) // "1.2.1" (latest)
@@ -32,7 +32,7 @@ export const speexdecPackage = {
   /**
    * The display name of this package.
    */
-  name: 'speex.org' as const,
+  name: 'speexdec' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const speexdecPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'speexdec',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) speexdec -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install speexdec' as const,
 }
 
 export type SpeexdecPackage = typeof speexdecPackage

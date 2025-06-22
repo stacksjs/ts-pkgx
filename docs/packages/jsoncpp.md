@@ -1,11 +1,11 @@
-# jsoncpp
+# github.com/open-source-parsers/jsoncpp
 
 > A C++ library for interacting with JSON.
 
 ## Package Information
 
 - **Domain**: `github.com/open-source-parsers/jsoncpp`
-- **Name**: `jsoncpp`
+- **Name**: `github.com/open-source-parsers/jsoncpp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/open-source-parsers/jsoncpp/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/open-source-parsers/jsoncpp -- $SHELL -i
+launchpad install github.com/open-source-parsers/jsoncpp
 ```
 
 ## Programs

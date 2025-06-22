@@ -1,11 +1,11 @@
-# pulumi.io
+# pulumi
 
 > Pulumi - Infrastructure as Code in any programming language 🚀
 
 ## Package Information
 
 - **Domain**: `pulumi.io`
-- **Name**: `pulumi.io`
+- **Name**: `pulumi`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pulumi.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pulumi.io
+launchpad install pulumi
 ```
 
 ## Programs
@@ -33,12 +33,6 @@ This package provides the following executable programs:
 - `pulumi-resource-pulumi-nodejs`
 - `pulumi-resource-pulumi-python`
 - `pulumi-watch`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `pulumi`
 
 ## Available Versions
 

@@ -1,11 +1,11 @@
 /**
- * **xscrnsaver** - pkgx package
+ * **x.org/xscrnsaver** - pkgx package
  *
  * @domain `x.org/xscrnsaver`
  * @version `1.2.4` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/xscrnsaver -- $SHELL -i`
+ * @install `launchpad install x.org/xscrnsaver`
  * @dependencies `x.org/x11^1`, `x.org/protocol`, `x.org/exts`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgxscrnsaver
- * console.log(pkg.name)        // "xscrnsaver"
+ * console.log(pkg.name)        // "x.org/xscrnsaver"
  * console.log(pkg.versions[0]) // "1.2.4" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgxscrnsaverPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xscrnsaver' as const,
+  name: 'x.org/xscrnsaver' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const xorgxscrnsaverPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/xscrnsaver -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/xscrnsaver' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,6 +60,8 @@ export const xorgxscrnsaverPackage = {
     '1.2.4',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xscrnsaver -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/xscrnsaver' as const,
 }
 
 export type XorgxscrnsaverPackage = typeof xorgxscrnsaverPackage

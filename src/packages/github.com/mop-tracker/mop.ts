@@ -69,6 +69,8 @@ export const mopPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mop -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mop' as const,
 }
 
 export type MopPackage = typeof mopPackage

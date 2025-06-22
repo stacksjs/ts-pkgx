@@ -1,5 +1,5 @@
 /**
- * **jmeter** - pkgx package
+ * **apache.org/jmeter** - pkgx package
  *
  * @domain `apache.org/jmeter`
  * @programs `jmeter`, `jmeter-server`, `mirror-server`
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.apacheorgjmeter
- * console.log(pkg.name)        // "jmeter"
+ * console.log(pkg.name)        // "apache.org/jmeter"
  * console.log(pkg.programs)    // ["jmeter", "jmeter-server", ...]
  * console.log(pkg.versions[0]) // "5.6.3" (latest)
  * ```
@@ -26,7 +26,7 @@ export const apacheorgjmeterPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jmeter' as const,
+  name: 'apache.org/jmeter' as const,
   /**
    * The canonical domain name for this package.
    */

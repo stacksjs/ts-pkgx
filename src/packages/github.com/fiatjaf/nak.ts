@@ -86,6 +86,8 @@ export const nakPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nak -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nak' as const,
 }
 
 export type NakPackage = typeof nakPackage

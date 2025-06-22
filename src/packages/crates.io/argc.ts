@@ -78,6 +78,8 @@ export const argcPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) argc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install argc' as const,
 }
 
 export type ArgcPackage = typeof argcPackage

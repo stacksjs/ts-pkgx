@@ -70,6 +70,8 @@ export const gofumptPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gofumpt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gofumpt' as const,
 }
 
 export type GofumptPackage = typeof gofumptPackage

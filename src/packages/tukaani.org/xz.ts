@@ -1,19 +1,19 @@
 /**
- * **xz** - General-purpose data compression with high compression ratio
+ * **tukaani.org/xz** - General-purpose data compression with high compression ratio
  *
  * @domain `tukaani.org/xz`
  * @programs `lzcat`, `lzcmp`, `lzdiff`, `lzegrep`, `lzfgrep`, ... (+18 more)
  * @version `5.8.1` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +tukaani.org/xz -- $SHELL -i`
+ * @install `launchpad install tukaani.org/xz`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.tukaaniorgxz
- * console.log(pkg.name)        // "xz"
+ * console.log(pkg.name)        // "tukaani.org/xz"
  * console.log(pkg.description) // "General-purpose data compression with high comp..."
  * console.log(pkg.programs)    // ["lzcat", "lzcmp", ...]
  * console.log(pkg.versions[0]) // "5.8.1" (latest)
@@ -26,7 +26,7 @@ export const tukaaniorgxzPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xz' as const,
+  name: 'tukaani.org/xz' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const tukaaniorgxzPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +tukaani.org/xz -- $SHELL -i' as const,
+  installCommand: 'launchpad install tukaani.org/xz' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -99,6 +99,8 @@ export const tukaaniorgxzPackage = {
     '5.2.7',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tukaani.org/xz -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tukaani.org/xz' as const,
 }
 
 export type TukaaniorgxzPackage = typeof tukaaniorgxzPackage

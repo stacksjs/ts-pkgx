@@ -1,19 +1,19 @@
 /**
- * **glslang** - Khronos-reference front end for GLSL/ESSL, partial front end for HLSL, and a SPIR-V generator.
+ * **khronos.org/glslang** - Khronos-reference front end for GLSL/ESSL, partial front end for HLSL, and a SPIR-V generator.
  *
  * @domain `khronos.org/glslang`
  * @programs `glslang`, `glslangValidator`, `spirv-remap`
  * @version `15.3.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +khronos.org/glslang -- $SHELL -i`
+ * @install `launchpad install khronos.org/glslang`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.khronosorgglslang
- * console.log(pkg.name)        // "glslang"
+ * console.log(pkg.name)        // "khronos.org/glslang"
  * console.log(pkg.description) // "Khronos-reference front end for GLSL/ESSL, part..."
  * console.log(pkg.programs)    // ["glslang", "glslangValidator", ...]
  * console.log(pkg.versions[0]) // "15.3.0" (latest)
@@ -26,7 +26,7 @@ export const khronosorgglslangPackage = {
   /**
    * The display name of this package.
    */
-  name: 'glslang' as const,
+  name: 'khronos.org/glslang' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const khronosorgglslangPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +khronos.org/glslang -- $SHELL -i' as const,
+  installCommand: 'launchpad install khronos.org/glslang' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,6 +73,8 @@ export const khronosorgglslangPackage = {
     '12.3.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +khronos.org/glslang -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install khronos.org/glslang' as const,
 }
 
 export type KhronosorgglslangPackage = typeof khronosorgglslangPackage

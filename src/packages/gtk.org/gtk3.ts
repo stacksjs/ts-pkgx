@@ -6,7 +6,7 @@
  * @version `3.24.38` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gtk.org/gtk3 -- $SHELL -i`
+ * @install `launchpad install gtk3`
  * @name `gtk3`
  * @dependencies `gnome.org/atk`, `gnome.org/gdk-pixbuf`, `gnome.org/glib`, ... (+18 more) (includes OS-specific dependencies with `os:package` format)
  *
@@ -48,7 +48,7 @@ export const gtk3Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gtk.org/gtk3 -- $SHELL -i' as const,
+  installCommand: 'launchpad install gtk3' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -106,6 +106,8 @@ export const gtk3Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gtk.org/gtk3 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gtk3' as const,
 }
 
 export type Gtk3Package = typeof gtk3Package

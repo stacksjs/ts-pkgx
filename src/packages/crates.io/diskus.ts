@@ -70,6 +70,8 @@ export const diskusPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) diskus -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install diskus' as const,
 }
 
 export type DiskusPackage = typeof diskusPackage

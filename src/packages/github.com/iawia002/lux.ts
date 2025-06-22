@@ -82,6 +82,8 @@ export const luxPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) lux -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lux' as const,
 }
 
 export type LuxPackage = typeof luxPackage

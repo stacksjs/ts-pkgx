@@ -70,6 +70,8 @@ export const bartibPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bartib -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bartib' as const,
 }
 
 export type BartibPackage = typeof bartibPackage

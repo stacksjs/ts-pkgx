@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +lcdf.org/gifsicle@1.96.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) gifsicle -- $SHELL -i
 ```
 
 ## Usage Examples

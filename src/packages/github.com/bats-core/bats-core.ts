@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bats`
- * @aliases `bats`
+ * @name `bats`
  * @dependencies `gnu.org/coreutils^9.4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.bats
  * // Or access via domain
  * const samePkg = pantry.githubcombatscorebatscore
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "bats-core"
+ * console.log(pkg.name)        // "bats"
  * console.log(pkg.description) // "Bash Automated Testing System"
  * console.log(pkg.programs)    // ["bats"]
  * console.log(pkg.versions[0]) // "1.12.0" (latest)
@@ -32,7 +32,7 @@ export const batsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'bats-core' as const,
+  name: 'bats' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +78,9 @@ export const batsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'bats',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bats -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bats' as const,
 }
 
 export type BatsPackage = typeof batsPackage

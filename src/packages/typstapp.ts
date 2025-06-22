@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install typst`
- * @aliases `typst`
+ * @name `typst`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.typst
  * // Or access via domain
  * const samePkg = pantry.typstapp
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "typst.app"
+ * console.log(pkg.name)        // "typst"
  * console.log(pkg.description) // "A new markup-based typesetting system that is p..."
  * console.log(pkg.programs)    // ["typst"]
  * console.log(pkg.versions[0]) // "0.13.1" (latest)
@@ -32,7 +32,7 @@ export const typstPackage = {
   /**
    * The display name of this package.
    */
-  name: 'typst.app' as const,
+  name: 'typst' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -88,9 +88,9 @@ export const typstPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'typst',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) typst -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install typst' as const,
 }
 
 export type TypstPackage = typeof typstPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sentry-cli`
- * @aliases `sentry-cli`
+ * @name `sentry-cli`
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sentrycli
  * // Or access via domain
  * const samePkg = pantry.sentryio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sentry.io"
+ * console.log(pkg.name)        // "sentry-cli"
  * console.log(pkg.description) // "Command-line utility to interact with Sentry"
  * console.log(pkg.programs)    // ["sentry-cli"]
  * console.log(pkg.versions[0]) // "2.46.0" (latest)
@@ -32,7 +32,7 @@ export const sentrycliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sentry.io' as const,
+  name: 'sentry-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -119,9 +119,9 @@ export const sentrycliPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sentry-cli',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sentry-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sentry-cli' as const,
 }
 
 export type SentrycliPackage = typeof sentrycliPackage

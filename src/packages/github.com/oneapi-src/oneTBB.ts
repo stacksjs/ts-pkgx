@@ -5,20 +5,20 @@
  * @version `2022.1.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/oneapi-src/oneTBB -- $SHELL -i`
- * @aliases `tbb`
+ * @install `launchpad install tbb`
+ * @name `tbb`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tbb
  * // Or access via domain
  * const samePkg = pantry.githubcomoneapisrconetbb
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "oneTBB"
+ * console.log(pkg.name)        // "tbb"
  * console.log(pkg.description) // "oneAPI Threading Building Blocks (oneTBB)"
  * console.log(pkg.versions[0]) // "2022.1.0" (latest)
  * ```
@@ -30,7 +30,7 @@ export const tbbPackage = {
   /**
    * The display name of this package.
    */
-  name: 'oneTBB' as const,
+  name: 'tbb' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +46,7 @@ export const tbbPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/oneapi-src/oneTBB -- $SHELL -i' as const,
+  installCommand: 'launchpad install tbb' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -72,9 +72,9 @@ export const tbbPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tbb',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/oneapi-src/oneTBB -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tbb' as const,
 }
 
 export type TbbPackage = typeof tbbPackage

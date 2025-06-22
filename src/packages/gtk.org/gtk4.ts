@@ -6,7 +6,7 @@
  * @version `4.19.1` (45 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gtk.org/gtk4 -- $SHELL -i`
+ * @install `launchpad install gtk4`
  * @name `gtk4`
  * @dependencies `gnome.org/gdk-pixbuf^2.42`, `gnome.org/glib^2.78`, `ebassi.github.io/graphene^1.10`, ... (+15 more) (includes OS-specific dependencies with `os:package` format)
  *
@@ -48,7 +48,7 @@ export const gtk4Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gtk.org/gtk4 -- $SHELL -i' as const,
+  installCommand: 'launchpad install gtk4' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -148,6 +148,8 @@ export const gtk4Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gtk.org/gtk4 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gtk4' as const,
 }
 
 export type Gtk4Package = typeof gtk4Package

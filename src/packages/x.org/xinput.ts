@@ -80,6 +80,8 @@ export const xinputPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xinput -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xinput' as const,
 }
 
 export type XinputPackage = typeof xinputPackage

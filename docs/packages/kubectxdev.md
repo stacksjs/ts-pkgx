@@ -1,11 +1,11 @@
-# kubectx.dev
+# kube
 
 > Tool that can switch between kubectl contexts easily and create aliases
 
 ## Package Information
 
 - **Domain**: `kubectx.dev`
-- **Name**: `kubectx.dev`
+- **Name**: `kube`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kubectx.dev/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install kubectx.dev
+launchpad install kube
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `kubectx`
 - `kubens`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `kube`
 
 ## Available Versions
 

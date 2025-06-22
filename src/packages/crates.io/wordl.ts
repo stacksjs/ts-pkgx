@@ -72,6 +72,8 @@ export const wordlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wordl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wordl' as const,
 }
 
 export type WordlPackage = typeof wordlPackage

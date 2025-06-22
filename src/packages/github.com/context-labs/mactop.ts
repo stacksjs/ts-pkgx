@@ -75,6 +75,8 @@ export const mactopPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mactop -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mactop' as const,
 }
 
 export type MactopPackage = typeof mactopPackage

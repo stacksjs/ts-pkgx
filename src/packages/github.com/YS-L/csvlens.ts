@@ -80,6 +80,8 @@ export const csvlensPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) csvlens -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install csvlens' as const,
 }
 
 export type CsvlensPackage = typeof csvlensPackage

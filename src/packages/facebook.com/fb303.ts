@@ -1,11 +1,11 @@
 /**
- * **fb303** - fb303 is a core set of thrift functions that provide a common mechanism for querying stats and other information from a service.
+ * **facebook.com/fb303** - fb303 is a core set of thrift functions that provide a common mechanism for querying stats and other information from a service.
  *
  * @domain `facebook.com/fb303`
  * @version `2025.6.9.0` (77 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +facebook.com/fb303 -- $SHELL -i`
+ * @install `launchpad install facebook.com/fb303`
  * @dependencies `github.com/facebookincubator/fizz`, `facebook.com/wangle`, `facebook.com/folly`, ... (+9 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.facebookcomfb303
- * console.log(pkg.name)        // "fb303"
+ * console.log(pkg.name)        // "facebook.com/fb303"
  * console.log(pkg.description) // "fb303 is a core set of thrift functions that pr..."
  * console.log(pkg.versions[0]) // "2025.6.9.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const facebookcomfb303Package = {
   /**
    * The display name of this package.
    */
-  name: 'fb303' as const,
+  name: 'facebook.com/fb303' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const facebookcomfb303Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +facebook.com/fb303 -- $SHELL -i' as const,
+  installCommand: 'launchpad install facebook.com/fb303' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -147,6 +147,8 @@ export const facebookcomfb303Package = {
     '2023.12.18.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +facebook.com/fb303 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install facebook.com/fb303' as const,
 }
 
 export type Facebookcomfb303Package = typeof facebookcomfb303Package

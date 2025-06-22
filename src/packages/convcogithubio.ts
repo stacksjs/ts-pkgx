@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install convco`
- * @aliases `convco`
+ * @name `convco`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.convco
  * // Or access via domain
  * const samePkg = pantry.convcogithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "convco.github.io"
+ * console.log(pkg.name)        // "convco"
  * console.log(pkg.description) // "Conventional commits, changelog, versioning, va..."
  * console.log(pkg.programs)    // ["convco"]
  * console.log(pkg.versions[0]) // "0.6.2" (latest)
@@ -31,7 +31,7 @@ export const convcoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'convco.github.io' as const,
+  name: 'convco' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -76,9 +76,9 @@ export const convcoPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'convco',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) convco -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install convco' as const,
 }
 
 export type ConvcoPackage = typeof convcoPackage

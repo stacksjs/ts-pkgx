@@ -5,19 +5,19 @@
  * @version `0.15.3` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +liburcu.org -- $SHELL -i`
- * @aliases `liburcu`
+ * @install `launchpad install liburcu`
+ * @name `liburcu`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.liburcu
  * // Or access via domain
  * const samePkg = pantry.liburcuorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "liburcu.org"
+ * console.log(pkg.name)        // "liburcu"
  * console.log(pkg.description) // "liburcu is a LGPLv2.1 userspace RCU (read-copy-..."
  * console.log(pkg.versions[0]) // "0.15.3" (latest)
  * ```
@@ -29,7 +29,7 @@ export const liburcuPackage = {
   /**
    * The display name of this package.
    */
-  name: 'liburcu.org' as const,
+  name: 'liburcu' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +45,7 @@ export const liburcuPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +liburcu.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install liburcu' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -63,9 +63,9 @@ export const liburcuPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'liburcu',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +liburcu.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install liburcu' as const,
 }
 
 export type LiburcuPackage = typeof liburcuPackage

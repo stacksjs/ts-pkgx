@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +networkx.org -- $SHELL -i
+launchpad install networkx.org
 ```
 
 ## Programs

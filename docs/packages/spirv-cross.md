@@ -1,11 +1,11 @@
-# SPIRV-Cross
+# spirv-cross
 
 > SPIRV-Cross is a practical tool and library for performing reflection on SPIR-V and disassembling SPIR-V back to high level languages.
 
 ## Package Information
 
 - **Domain**: `khronos.org/SPIRV-Cross`
-- **Name**: `SPIRV-Cross`
+- **Name**: `spirv-cross`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/khronos.org/SPIRV-Cross/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install spirv-cross
 ## Programs
 
 This package provides the following executable programs:
-
-- `spirv-cross`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `spirv-cross`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +khronos.org/SPIRV-Cross@2021.1.15 -- $SHELL -i
+sh <(curl https://pkgx.sh) spirv-cross -- $SHELL -i
 ```
 
 ## Usage Examples

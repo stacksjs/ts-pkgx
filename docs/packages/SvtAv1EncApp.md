@@ -1,11 +1,11 @@
-# SVT-AV1
+# SvtAv1EncApp
 
 > AV1 encoder
 
 ## Package Information
 
 - **Domain**: `gitlab.com/AOMediaCodec/SVT-AV1`
-- **Name**: `SVT-AV1`
+- **Name**: `SvtAv1EncApp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gitlab.com/AOMediaCodec/SVT-AV1/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install SvtAv1EncApp
 ## Programs
 
 This package provides the following executable programs:
-
-- `SvtAv1EncApp`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `SvtAv1EncApp`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gitlab.com/AOMediaCodec/SVT-AV1@3.0.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) SvtAv1EncApp -- $SHELL -i
 ```
 
 ## Usage Examples

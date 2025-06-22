@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install vite`
- * @aliases `vite`
+ * @name `vite`
  * @dependencies `nodejs.org^16 || ^18 || ^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.vite
  * // Or access via domain
  * const samePkg = pantry.vitejsdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "vitejs.dev"
+ * console.log(pkg.name)        // "vite"
  * console.log(pkg.description) // "Next generation frontend tooling. It's fast!"
  * console.log(pkg.programs)    // ["vite"]
  * console.log(pkg.versions[0]) // "6.3.5" (latest)
@@ -32,7 +32,7 @@ export const vitePackage = {
   /**
    * The display name of this package.
    */
-  name: 'vitejs.dev' as const,
+  name: 'vite' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -174,9 +174,9 @@ export const vitePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'vite',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vite -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vite' as const,
 }
 
 export type VitePackage = typeof vitePackage

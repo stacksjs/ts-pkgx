@@ -1,11 +1,11 @@
-# gnuplot.info
+# gnuplot
 
 > Command-driven, interactive function plotting
 
 ## Package Information
 
 - **Domain**: `gnuplot.info`
-- **Name**: `gnuplot.info`
+- **Name**: `gnuplot`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnuplot.info/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install gnuplot
 ## Programs
 
 This package provides the following executable programs:
-
-- `gnuplot`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `gnuplot`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnuplot.info@6.0.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) gnuplot -- $SHELL -i
 ```
 
 ## Dependencies

@@ -6,20 +6,20 @@
  * @version `1.3.6` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +mujs.com -- $SHELL -i`
- * @aliases `mujs`
+ * @install `launchpad install mujs`
+ * @name `mujs`
  * @dependencies `linux:gnu.org/readline~8.1`, `linux:invisible-island.net/ncurses` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mujs
  * // Or access via domain
  * const samePkg = pantry.mujscom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mujs.com"
+ * console.log(pkg.name)        // "mujs"
  * console.log(pkg.description) // "An embeddable Javascript interpreter in C."
  * console.log(pkg.programs)    // ["mujs", "mujs-pp"]
  * console.log(pkg.versions[0]) // "1.3.6" (latest)
@@ -32,7 +32,7 @@ export const mujsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mujs.com' as const,
+  name: 'mujs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const mujsPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +mujs.com -- $SHELL -i' as const,
+  installCommand: 'launchpad install mujs' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -81,9 +81,9 @@ export const mujsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mujs',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mujs.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mujs' as const,
 }
 
 export type MujsPackage = typeof mujsPackage

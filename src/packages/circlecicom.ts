@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install circleci`
- * @aliases `circleci`
+ * @name `circleci`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.circleci
  * // Or access via domain
  * const samePkg = pantry.circlecicom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "circleci.com"
+ * console.log(pkg.name)        // "circleci"
  * console.log(pkg.description) // "Enables you to reproduce the CircleCI environme..."
  * console.log(pkg.programs)    // ["circleci"]
  * console.log(pkg.versions[0]) // "0.1.32367" (latest)
@@ -31,7 +31,7 @@ export const circleciPackage = {
   /**
    * The display name of this package.
    */
-  name: 'circleci.com' as const,
+  name: 'circleci' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -124,9 +124,7 @@ export const circleciPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'circleci',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) circleci -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install circleci' as const,
 }

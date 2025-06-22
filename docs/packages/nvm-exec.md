@@ -1,11 +1,11 @@
-# nvm
+# nvm-exec
 
 > Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
 
 ## Package Information
 
 - **Domain**: `github.com/nvm-sh/nvm`
-- **Name**: `nvm`
+- **Name**: `nvm-exec`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/nvm-sh/nvm/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install nvm-exec
 ## Programs
 
 This package provides the following executable programs:
-
-- `nvm-exec`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `nvm-exec`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/nvm-sh/nvm@0.40.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) nvm-exec -- $SHELL -i
 ```
 
 ## Dependencies

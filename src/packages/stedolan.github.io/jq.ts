@@ -79,6 +79,8 @@ export const jqPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jq -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jq' as const,
 }
 
 export type JqPackage = typeof jqPackage

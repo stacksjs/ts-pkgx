@@ -1,11 +1,11 @@
-# libcvt
+# cvt
 
 > VESA CVT standard timing modelines generator
 
 ## Package Information
 
 - **Domain**: `x.org/libcvt`
-- **Name**: `libcvt`
+- **Name**: `cvt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/x.org/libcvt/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install cvt
 ## Programs
 
 This package provides the following executable programs:
-
-- `cvt`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `cvt`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +x.org/libcvt@0.1.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) cvt -- $SHELL -i
 ```
 
 ## Dependencies

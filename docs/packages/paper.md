@@ -1,11 +1,11 @@
-# libpaper
+# paper
 
 > Library and command-line tools for configuring and getting information on paper sizes
 
 ## Package Information
 
 - **Domain**: `github.com/rrthomas/libpaper`
-- **Name**: `libpaper`
+- **Name**: `paper`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/rrthomas/libpaper/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install paper
 ## Programs
 
 This package provides the following executable programs:
-
-- `paper`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `paper`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/rrthomas/libpaper@2.2.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) paper -- $SHELL -i
 ```
 
 ## Usage Examples

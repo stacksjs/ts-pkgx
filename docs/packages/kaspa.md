@@ -1,11 +1,11 @@
-# rusty-kaspa
+# kaspa
 
 > Kaspa full-node reference implementation and related libraries in the Rust programming language
 
 ## Package Information
 
 - **Domain**: `github.com/kaspanet/rusty-kaspa`
-- **Name**: `rusty-kaspa`
+- **Name**: `kaspa`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kaspanet/rusty-kaspa/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/kaspanet/rusty-kaspa -- $SHELL -i
+launchpad install kaspa
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `kaspad`
 - `kaspa-cli`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `kaspa`
 
 ## Available Versions
 

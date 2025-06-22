@@ -6,7 +6,7 @@
  * @version `0.10.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +crates.io/termusic -- $SHELL -i`
+ * @install `launchpad install termusic`
  * @name `termusic`
  * @dependencies `linux:alsa-project.org/alsa-lib`, `linux:freedesktop.org/dbus` (includes OS-specific dependencies with `os:package` format)
  * @companions `yt-dlp.org`
@@ -49,7 +49,7 @@ export const termusicPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +crates.io/termusic -- $SHELL -i' as const,
+  installCommand: 'launchpad install termusic' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -88,6 +88,8 @@ export const termusicPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/termusic -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install termusic' as const,
 }
 
 export type TermusicPackage = typeof termusicPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gts.sourceforge.net -- $SHELL -i
+launchpad install gts.sourceforge.net
 ```
 
 ## Programs

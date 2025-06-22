@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +maaslalani.com/slides@0.9.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) slides -- $SHELL -i
 ```
 
 ## Usage Examples

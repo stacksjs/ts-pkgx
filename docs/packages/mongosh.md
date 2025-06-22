@@ -1,11 +1,11 @@
-# shell
+# mongosh
 
 > MongoDB Shell to connect, configure, query, and work with your MongoDB database
 
 ## Package Information
 
 - **Domain**: `mongodb.com/shell`
-- **Name**: `shell`
+- **Name**: `mongosh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mongodb.com/shell/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install mongosh
 ## Programs
 
 This package provides the following executable programs:
-
-- `mongosh`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `mongosh`
 
@@ -49,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mongodb.com/shell@2.5.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) mongosh -- $SHELL -i
 ```
 
 ## Dependencies

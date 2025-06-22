@@ -1,11 +1,11 @@
-# rust-lang.org
+# rust
 
 > Empowering everyone to build reliable and efficient software.
 
 ## Package Information
 
 - **Domain**: `rust-lang.org`
-- **Name**: `rust-lang.org`
+- **Name**: `rust`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +rust-lang.org -- $SHELL -i
+launchpad install rust
 ```
 
 ## Programs
@@ -30,12 +30,6 @@ This package provides the following executable programs:
 - `rustc`
 - `rustdoc`
 - `rustfmt`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `rust`
 
 ## Available Versions
 
@@ -69,7 +63,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with rust-lang.org:
+These packages work well with rust:
 
 - `rust-lang.org/cargo`
 - `linux`

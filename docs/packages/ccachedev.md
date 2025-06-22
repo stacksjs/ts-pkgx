@@ -1,11 +1,11 @@
-# ccache.dev
+# ccache
 
 > Object-file caching compiler wrapper
 
 ## Package Information
 
 - **Domain**: `ccache.dev`
-- **Name**: `ccache.dev`
+- **Name**: `ccache`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ccache.dev/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install ccache
 ## Programs
 
 This package provides the following executable programs:
-
-- `ccache`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `ccache`
 

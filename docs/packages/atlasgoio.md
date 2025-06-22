@@ -1,11 +1,11 @@
-# atlasgo.io
+# atlas
 
 > Manage your database schema as code
 
 ## Package Information
 
 - **Domain**: `atlasgo.io`
-- **Name**: `atlasgo.io`
+- **Name**: `atlas`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/atlasgo.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install atlas
 ## Programs
 
 This package provides the following executable programs:
-
-- `atlas`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `atlas`
 

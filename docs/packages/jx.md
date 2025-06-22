@@ -1,11 +1,11 @@
-# jenkins-x.io
+# Jenkins X
 
 > Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton
 
 ## Package Information
 
 - **Domain**: `jenkins-x.io`
-- **Name**: `jenkins-x.io`
+- **Name**: `Jenkins X`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jenkins-x.io/package.yml)
 
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `jx`
-- `Jenkins X`
 
 ## Available Versions
 
@@ -55,7 +54,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +jenkins-x.io@3.11.92 -- $SHELL -i
+sh <(curl https://pkgx.sh) jx -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -64,7 +63,7 @@ sh <(curl https://pkgx.sh) +jenkins-x.io@3.11.92 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.Jenkins X
+const pkg = pantry.jx
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

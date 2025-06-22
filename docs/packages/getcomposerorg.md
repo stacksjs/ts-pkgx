@@ -1,11 +1,11 @@
-# getcomposer.org
+# composer
 
 > Dependency Manager for PHP
 
 ## Package Information
 
 - **Domain**: `getcomposer.org`
-- **Name**: `getcomposer.org`
+- **Name**: `composer`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getcomposer.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install getcomposer.org
+launchpad install composer
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `composer`
 - `composer.phar`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `composer`
 
 ## Available Versions
 

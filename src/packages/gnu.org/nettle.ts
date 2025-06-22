@@ -1,19 +1,19 @@
 /**
- * **nettle** - A mirror of the nettle repository
+ * **gnu.org/nettle** - A mirror of the nettle repository
  *
  * @domain `gnu.org/nettle`
  * @programs `nettle-hash`, `nettle-lfib-stream`, `nettle-pbkdf2`, `pkcs1-conv`, `sexp-conv`
  * @version `3.8.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnu.org/nettle -- $SHELL -i`
+ * @install `launchpad install gnu.org/nettle`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgnettle
- * console.log(pkg.name)        // "nettle"
+ * console.log(pkg.name)        // "gnu.org/nettle"
  * console.log(pkg.description) // "A mirror of the nettle repository"
  * console.log(pkg.programs)    // ["nettle-hash", "nettle-lfib-stream", ...]
  * console.log(pkg.versions[0]) // "3.8.1" (latest)
@@ -26,7 +26,7 @@ export const gnuorgnettlePackage = {
   /**
    * The display name of this package.
    */
-  name: 'nettle' as const,
+  name: 'gnu.org/nettle' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const gnuorgnettlePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnu.org/nettle -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnu.org/nettle' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,6 +64,8 @@ export const gnuorgnettlePackage = {
     '3.8.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/nettle -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/nettle' as const,
 }
 
 export type GnuorgnettlePackage = typeof gnuorgnettlePackage

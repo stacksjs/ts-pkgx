@@ -1,12 +1,12 @@
 /**
- * **gcc** - pkgx package
+ * **gnu.org/gcc** - pkgx package
  *
  * @domain `gnu.org/gcc`
  * @programs `ar`, `cc`, `c++`, `gc++`, `cpp`, ... (+12 more)
  * @version `15.1.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnu.org/gcc -- $SHELL -i`
+ * @install `launchpad install gnu.org/gcc`
  * @dependencies `gnu.org/binutils`, `gnu.org/gmp>=4.2`, `gnu.org/mpfr>=2.4.0`, ... (+2 more)
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorggcc
- * console.log(pkg.name)        // "gcc"
+ * console.log(pkg.name)        // "gnu.org/gcc"
  * console.log(pkg.programs)    // ["ar", "cc", ...]
  * console.log(pkg.versions[0]) // "15.1.0" (latest)
  * ```
@@ -26,7 +26,7 @@ export const gnuorggccPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gcc' as const,
+  name: 'gnu.org/gcc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const gnuorggccPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnu.org/gcc -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnu.org/gcc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -97,6 +97,8 @@ export const gnuorggccPackage = {
     '10.5.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gcc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/gcc' as const,
 }
 
 export type GnuorggccPackage = typeof gnuorggccPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jless`
- * @aliases `jless`
+ * @name `jless`
  * @dependencies `linux:x.org/xcb@1` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.jless
  * // Or access via domain
  * const samePkg = pantry.jlessio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "jless.io"
+ * console.log(pkg.name)        // "jless"
  * console.log(pkg.description) // "jless is a command-line JSON viewer designed fo..."
  * console.log(pkg.programs)    // ["jless"]
  * console.log(pkg.versions[0]) // "0.9.0" (latest)
@@ -32,7 +32,7 @@ export const jlessPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jless.io' as const,
+  name: 'jless' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -76,9 +76,9 @@ export const jlessPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jless',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jless -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jless' as const,
 }
 
 export type JlessPackage = typeof jlessPackage

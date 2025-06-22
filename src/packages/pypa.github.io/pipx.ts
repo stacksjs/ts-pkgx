@@ -90,6 +90,8 @@ export const pipxPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pipx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pipx' as const,
 }
 
 export type PipxPackage = typeof pipxPackage

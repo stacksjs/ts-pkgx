@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pipenv`
- * @aliases `pipenv`
+ * @name `pipenv`
  * @dependencies `pkgx.sh^1`
  * @companions `pip.pypa.io`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pipenv
  * // Or access via domain
  * const samePkg = pantry.pipenvpypaio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pipenv.pypa.io"
+ * console.log(pkg.name)        // "pipenv"
  * console.log(pkg.description) // "Python Development Workflow for Humans."
  * console.log(pkg.programs)    // ["pipenv"]
  * console.log(pkg.versions[0]) // "3000.0.0" (latest)
@@ -33,7 +33,7 @@ export const pipenvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pipenv.pypa.io' as const,
+  name: 'pipenv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -129,9 +129,9 @@ export const pipenvPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pipenv',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pipenv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pipenv' as const,
 }
 
 export type PipenvPackage = typeof pipenvPackage

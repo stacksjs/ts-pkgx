@@ -1,11 +1,11 @@
-# midnight-commander.org
+# Midnight Commander
 
 > Terminal-based visual file manager
 
 ## Package Information
 
 - **Domain**: `midnight-commander.org`
-- **Name**: `midnight-commander.org`
+- **Name**: `Midnight Commander`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/midnight-commander.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +midnight-commander.org -- $SHELL -i
+launchpad install midnight-commander.org
 ```
 
 ## Programs
@@ -24,12 +24,6 @@ This package provides the following executable programs:
 - `mcdiff`
 - `mcedit`
 - `mcview`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `Midnight Commander`
 
 ## Available Versions
 

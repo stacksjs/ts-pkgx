@@ -1,11 +1,11 @@
-# fbthrift
+# thrift1
 
 > Facebook's branch of Apache Thrift, including a new C++ server.
 
 ## Package Information
 
 - **Domain**: `facebook.com/fbthrift`
-- **Name**: `fbthrift`
+- **Name**: `thrift1`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/fbthrift/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install thrift1
 ## Programs
 
 This package provides the following executable programs:
-
-- `thrift1`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `thrift1`
 
@@ -58,7 +52,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +facebook.com/fbthrift@2025.6.9.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) thrift1 -- $SHELL -i
 ```
 
 ## Dependencies

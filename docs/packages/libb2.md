@@ -1,11 +1,11 @@
-# libb2
+# blake2.net/libb2
 
 > C library providing BLAKE2b, BLAKE2s, BLAKE2bp, BLAKE2sp
 
 ## Package Information
 
 - **Domain**: `blake2.net/libb2`
-- **Name**: `libb2`
+- **Name**: `blake2.net/libb2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/blake2.net/libb2/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +blake2.net/libb2
+launchpad install blake2.net/libb2
 ```
 
 ## Programs

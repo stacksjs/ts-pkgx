@@ -76,6 +76,8 @@ export const tfupdatePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tfupdate -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tfupdate' as const,
 }
 
 export type TfupdatePackage = typeof tfupdatePackage

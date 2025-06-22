@@ -102,6 +102,8 @@ export const lazygitPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) lazygit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lazygit' as const,
 }
 
 export type LazygitPackage = typeof lazygitPackage

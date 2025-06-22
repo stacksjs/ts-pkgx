@@ -5,20 +5,20 @@
  * @version `5.2.2` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +phpmyadmin.net -- $SHELL -i`
- * @aliases `phpMyAdmin`
+ * @install `launchpad install phpMyAdmin`
+ * @name `phpMyAdmin`
  * @dependencies `php.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.phpMyAdmin
  * // Or access via domain
  * const samePkg = pantry.phpmyadminnet
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "phpmyadmin.net"
+ * console.log(pkg.name)        // "phpMyAdmin"
  * console.log(pkg.versions[0]) // "5.2.2" (latest)
  * ```
  *
@@ -29,7 +29,7 @@ export const phpMyAdminPackage = {
   /**
    * The display name of this package.
    */
-  name: 'phpmyadmin.net' as const,
+  name: 'phpMyAdmin' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +45,7 @@ export const phpMyAdminPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +phpmyadmin.net -- $SHELL -i' as const,
+  installCommand: 'launchpad install phpMyAdmin' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -67,9 +67,9 @@ export const phpMyAdminPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'phpMyAdmin',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +phpmyadmin.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install phpMyAdmin' as const,
 }
 
 export type PhpMyAdminPackage = typeof phpMyAdminPackage

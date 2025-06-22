@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install quickwit`
- * @aliases `quickwit`
+ * @name `quickwit`
  * @dependencies `protobuf.dev^25`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.quickwit
  * // Or access via domain
  * const samePkg = pantry.quickwitio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "quickwit.io"
+ * console.log(pkg.name)        // "quickwit"
  * console.log(pkg.description) // "Cloud-native search engine for observability. A..."
  * console.log(pkg.programs)    // ["quickwit"]
  * console.log(pkg.versions[0]) // "0.8.2" (latest)
@@ -32,7 +32,7 @@ export const quickwitPackage = {
   /**
    * The display name of this package.
    */
-  name: 'quickwit.io' as const,
+  name: 'quickwit' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -81,9 +81,9 @@ export const quickwitPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'quickwit',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) quickwit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install quickwit' as const,
 }
 
 export type QuickwitPackage = typeof quickwitPackage

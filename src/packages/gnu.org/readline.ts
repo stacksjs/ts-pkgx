@@ -1,11 +1,11 @@
 /**
- * **readline** - pkgx package
+ * **gnu.org/readline** - pkgx package
  *
  * @domain `gnu.org/readline`
  * @version `8.2.13` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnu.org/readline -- $SHELL -i`
+ * @install `launchpad install gnu.org/readline`
  * @dependencies `invisible-island.net/ncurses^6`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgreadline
- * console.log(pkg.name)        // "readline"
+ * console.log(pkg.name)        // "gnu.org/readline"
  * console.log(pkg.versions[0]) // "8.2.13" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const gnuorgreadlinePackage = {
   /**
    * The display name of this package.
    */
-  name: 'readline' as const,
+  name: 'gnu.org/readline' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const gnuorgreadlinePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnu.org/readline -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnu.org/readline' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,6 +60,8 @@ export const gnuorgreadlinePackage = {
     '8.1.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/readline -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/readline' as const,
 }
 
 export type GnuorgreadlinePackage = typeof gnuorgreadlinePackage

@@ -75,6 +75,8 @@ export const sternPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) stern -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install stern' as const,
 }
 
 export type SternPackage = typeof sternPackage

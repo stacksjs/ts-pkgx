@@ -77,6 +77,8 @@ export const licensorPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) licensor -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install licensor' as const,
 }
 
 export type LicensorPackage = typeof licensorPackage

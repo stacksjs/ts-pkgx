@@ -1,11 +1,11 @@
-# libtasn1
+# asn1
 
 > ASN.1 structure parser library
 
 ## Package Information
 
 - **Domain**: `gnu.org/libtasn1`
-- **Name**: `libtasn1`
+- **Name**: `asn1`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libtasn1/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnu.org/libtasn1 -- $SHELL -i
+launchpad install asn1
 ```
 
 ## Programs
@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `asn1Coding`
 - `asn1Decoding`
 - `asn1Parser`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `asn1`
 
 ## Available Versions
 

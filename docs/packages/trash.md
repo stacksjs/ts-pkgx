@@ -1,11 +1,11 @@
-# trashy
+# trash
 
 > a cli system trash manager, alternative to rm and trash-cli
 
 ## Package Information
 
 - **Domain**: `crates.io/trashy`
-- **Name**: `trashy`
+- **Name**: `trash`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/trashy/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install trash
 ## Programs
 
 This package provides the following executable programs:
-
-- `trash`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `trash`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/trashy@2.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) trash -- $SHELL -i
 ```
 
 ## Usage Examples

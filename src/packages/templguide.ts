@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install templ`
- * @aliases `templ`
+ * @name `templ`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.templ
  * // Or access via domain
  * const samePkg = pantry.templguide
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "templ.guide"
+ * console.log(pkg.name)        // "templ"
  * console.log(pkg.description) // "A language for writing HTML user interfaces in Go."
  * console.log(pkg.programs)    // ["templ"]
  * console.log(pkg.versions[0]) // "0.3.898" (latest)
@@ -31,7 +31,7 @@ export const templPackage = {
   /**
    * The display name of this package.
    */
-  name: 'templ.guide' as const,
+  name: 'templ' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -94,9 +94,9 @@ export const templPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'templ',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) templ -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install templ' as const,
 }
 
 export type TemplPackage = typeof templPackage

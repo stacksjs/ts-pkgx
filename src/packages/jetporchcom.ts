@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jetp`
- * @aliases `jetp`
+ * @name `jetp`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.jetp
  * // Or access via domain
  * const samePkg = pantry.jetporchcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "jetporch.com"
+ * console.log(pkg.name)        // "jetp"
  * console.log(pkg.description) // "Read-only mirror: see https://www.jetporch.com/..."
  * console.log(pkg.programs)    // ["jetp"]
  * console.log(pkg.versions[0]) // "0.0.1" (latest)
@@ -31,7 +31,7 @@ export const jetpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jetporch.com' as const,
+  name: 'jetp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const jetpPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jetp',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jetp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jetp' as const,
 }
 
 export type JetpPackage = typeof jetpPackage

@@ -5,20 +5,20 @@
  * @version `2.3.32` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +sourceware.org/dm -- $SHELL -i`
- * @aliases `device-mapper`
+ * @install `launchpad install device-mapper`
+ * @name `device-mapper`
  * @dependencies `pagure.io/libaio^0.3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.devicemapper
  * // Or access via domain
  * const samePkg = pantry.sourcewareorgdm
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "dm"
+ * console.log(pkg.name)        // "device-mapper"
  * console.log(pkg.versions[0]) // "2.3.32" (latest)
  * ```
  *
@@ -29,7 +29,7 @@ export const devicemapperPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dm' as const,
+  name: 'device-mapper' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +45,7 @@ export const devicemapperPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +sourceware.org/dm -- $SHELL -i' as const,
+  installCommand: 'launchpad install device-mapper' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -75,9 +75,9 @@ export const devicemapperPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'device-mapper',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceware.org/dm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install device-mapper' as const,
 }
 
 export type DevicemapperPackage = typeof devicemapperPackage

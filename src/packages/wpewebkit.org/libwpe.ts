@@ -1,11 +1,11 @@
 /**
- * **libwpe** - General-purpose library specifically developed for the WPE-flavored port of WebKit.
+ * **wpewebkit.org/libwpe** - General-purpose library specifically developed for the WPE-flavored port of WebKit.
  *
  * @domain `wpewebkit.org/libwpe`
  * @version `1.16.2` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +wpewebkit.org/libwpe -- $SHELL -i`
+ * @install `launchpad install wpewebkit.org/libwpe`
  * @dependencies `xkbcommon.org`, `mesa3d.org`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.wpewebkitorglibwpe
- * console.log(pkg.name)        // "libwpe"
+ * console.log(pkg.name)        // "wpewebkit.org/libwpe"
  * console.log(pkg.description) // "General-purpose library specifically developed ..."
  * console.log(pkg.versions[0]) // "1.16.2" (latest)
  * ```
@@ -25,7 +25,7 @@ export const wpewebkitorglibwpePackage = {
   /**
    * The display name of this package.
    */
-  name: 'libwpe' as const,
+  name: 'wpewebkit.org/libwpe' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const wpewebkitorglibwpePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +wpewebkit.org/libwpe -- $SHELL -i' as const,
+  installCommand: 'launchpad install wpewebkit.org/libwpe' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -64,6 +64,8 @@ export const wpewebkitorglibwpePackage = {
     '1.15.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wpewebkit.org/libwpe -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wpewebkit.org/libwpe' as const,
 }
 
 export type WpewebkitorglibwpePackage = typeof wpewebkitorglibwpePackage

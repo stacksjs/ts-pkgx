@@ -1,11 +1,11 @@
-# tmate.io
+# tmate
 
 > Instant Terminal Sharing
 
 ## Package Information
 
 - **Domain**: `tmate.io`
-- **Name**: `tmate.io`
+- **Name**: `tmate`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tmate.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install tmate
 ## Programs
 
 This package provides the following executable programs:
-
-- `tmate`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `tmate`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +tmate.io@2.4.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) tmate -- $SHELL -i
 ```
 
 ## Dependencies

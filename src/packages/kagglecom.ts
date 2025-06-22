@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kaggle`
- * @aliases `kaggle`
+ * @name `kaggle`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.kaggle
  * // Or access via domain
  * const samePkg = pantry.kagglecom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "kaggle.com"
+ * console.log(pkg.name)        // "kaggle"
  * console.log(pkg.description) // "Official Kaggle API"
  * console.log(pkg.programs)    // ["kaggle"]
  * console.log(pkg.versions[0]) // "1.7.4.5" (latest)
@@ -32,7 +32,7 @@ export const kagglePackage = {
   /**
    * The display name of this package.
    */
-  name: 'kaggle.com' as const,
+  name: 'kaggle' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,9 @@ export const kagglePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kaggle',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kaggle -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kaggle' as const,
 }
 
 export type KagglePackage = typeof kagglePackage

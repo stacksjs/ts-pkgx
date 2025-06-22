@@ -1,11 +1,11 @@
-# doctave.com
+# doctave
 
 > A batteries-included developer documentation site generator
 
 ## Package Information
 
 - **Domain**: `doctave.com`
-- **Name**: `doctave.com`
+- **Name**: `doctave`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/doctave.com/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install doctave.com
+launchpad install doctave
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `doctave`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `doctave`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +doctave.com@0.4.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) doctave -- $SHELL -i
 ```
 
 ## Usage Examples

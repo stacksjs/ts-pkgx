@@ -1,11 +1,11 @@
 /**
- * **psycopg2** - PostgreSQL database adapter for the Python programming language
+ * **psycopg.org/psycopg2** - PostgreSQL database adapter for the Python programming language
  *
  * @domain `psycopg.org/psycopg2`
  * @version `2.9.10` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +psycopg.org/psycopg2 -- $SHELL -i`
+ * @install `launchpad install psycopg.org/psycopg2`
  * @dependencies `python.org~3.11`, `postgresql.org`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.psycopgorgpsycopg2
- * console.log(pkg.name)        // "psycopg2"
+ * console.log(pkg.name)        // "psycopg.org/psycopg2"
  * console.log(pkg.description) // "PostgreSQL database adapter for the Python prog..."
  * console.log(pkg.versions[0]) // "2.9.10" (latest)
  * ```
@@ -25,7 +25,7 @@ export const psycopgorgpsycopg2Package = {
   /**
    * The display name of this package.
    */
-  name: 'psycopg2' as const,
+  name: 'psycopg.org/psycopg2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const psycopgorgpsycopg2Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +psycopg.org/psycopg2 -- $SHELL -i' as const,
+  installCommand: 'launchpad install psycopg.org/psycopg2' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,6 +61,8 @@ export const psycopgorgpsycopg2Package = {
     '2.9.9',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +psycopg.org/psycopg2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install psycopg.org/psycopg2' as const,
 }
 
 export type Psycopgorgpsycopg2Package = typeof psycopgorgpsycopg2Package

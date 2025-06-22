@@ -1,11 +1,11 @@
-# cppunit
+# freedesktop.org/cppunit
 
 > Unit testing framework for C++
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/cppunit`
-- **Name**: `cppunit`
+- **Name**: `freedesktop.org/cppunit`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/cppunit/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +freedesktop.org/cppunit -- $SHELL -i
+launchpad install freedesktop.org/cppunit
 ```
 
 ## Programs

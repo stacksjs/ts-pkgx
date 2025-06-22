@@ -1,24 +1,24 @@
 /**
- * **orc** - Oil Runtime Compiler (ORC)
+ * **orcc** - Oil Runtime Compiler (ORC)
  *
  * @domain `gstreamer.freedesktop.org/orc`
  * @programs `orcc`, `orc-bugreport`
  * @version `0.4.41` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gstreamer.freedesktop.org/orc -- $SHELL -i`
- * @name `orc`
+ * @install `launchpad install orcc`
+ * @name `orcc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * // Access the package
- * const pkg = pantry.orc
+ * const pkg = pantry.orcc
  * // Or access via domain
  * const samePkg = pantry.gstreamerfreedesktoporgorc
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "orc"
+ * console.log(pkg.name)        // "orcc"
  * console.log(pkg.description) // "Oil Runtime Compiler (ORC)"
  * console.log(pkg.programs)    // ["orcc", "orc-bugreport"]
  * console.log(pkg.versions[0]) // "0.4.41" (latest)
@@ -27,11 +27,11 @@
  * @see https://ts-pkgx.netlify.app/packages/gstreamer-freedesktop-org/orc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const orcPackage = {
+export const orccPackage = {
   /**
    * The display name of this package.
    */
-  name: 'orc' as const,
+  name: 'orcc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const orcPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gstreamer.freedesktop.org/orc -- $SHELL -i' as const,
+  installCommand: 'launchpad install orcc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,6 +77,8 @@ export const orcPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gstreamer.freedesktop.org/orc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install orcc' as const,
 }
 
-export type OrcPackage = typeof orcPackage
+export type OrccPackage = typeof orccPackage

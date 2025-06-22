@@ -1,11 +1,11 @@
-# jumppad.dev
+# jumppad
 
 > Modern cloud native development environments
 
 ## Package Information
 
 - **Domain**: `jumppad.dev`
-- **Name**: `jumppad.dev`
+- **Name**: `jumppad`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jumppad.dev/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install jumppad
 ## Programs
 
 This package provides the following executable programs:
-
-- `jumppad`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `jumppad`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +jumppad.dev@0.20.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) jumppad -- $SHELL -i
 ```
 
 ## Usage Examples

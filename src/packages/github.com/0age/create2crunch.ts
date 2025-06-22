@@ -69,6 +69,8 @@ export const create2crunchPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) create2crunch -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install create2crunch' as const,
 }
 
 export type Create2crunchPackage = typeof create2crunchPackage

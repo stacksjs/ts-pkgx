@@ -1,11 +1,11 @@
-# machine
+# docker-machine
 
 > Create Docker hosts locally and on cloud providers
 
 ## Package Information
 
 - **Domain**: `docker.com/machine`
-- **Name**: `machine`
+- **Name**: `docker-machine`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/docker.com/machine/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install docker-machine
 ## Programs
 
 This package provides the following executable programs:
-
-- `docker-machine`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `docker-machine`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +docker.com/machine@0.16.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) docker-machine -- $SHELL -i
 ```
 
 ## Usage Examples

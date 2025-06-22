@@ -1,11 +1,11 @@
-# gohugo.io
+# hugo
 
 > The world’s fastest framework for building websites.
 
 ## Package Information
 
 - **Domain**: `gohugo.io`
-- **Name**: `gohugo.io`
+- **Name**: `hugo`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gohugo.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install hugo
 ## Programs
 
 This package provides the following executable programs:
-
-- `hugo`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `hugo`
 
@@ -67,7 +61,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gohugo.io@0.147.8 -- $SHELL -i
+sh <(curl https://pkgx.sh) hugo -- $SHELL -i
 ```
 
 ## Usage Examples

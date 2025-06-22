@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install conda`
- * @aliases `conda`
+ * @name `conda`
  * @dependencies `pkgx.sh^1`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.conda
  * // Or access via domain
  * const samePkg = pantry.condaorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "conda.org"
+ * console.log(pkg.name)        // "conda"
  * console.log(pkg.programs)    // ["conda"]
  * console.log(pkg.versions[0]) // "25.3.1" (latest)
  * ```
@@ -31,7 +31,7 @@ export const condaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'conda.org' as const,
+  name: 'conda' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -89,9 +89,9 @@ export const condaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'conda',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) conda -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install conda' as const,
 }
 
 export type CondaPackage = typeof condaPackage

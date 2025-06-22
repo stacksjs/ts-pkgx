@@ -1,11 +1,11 @@
-# zsh-syntax-highlighting
+# github.com/zsh-users/zsh-syntax-highlighting
 
 > Fish shell like syntax highlighting for Zsh.
 
 ## Package Information
 
 - **Domain**: `github.com/zsh-users/zsh-syntax-highlighting`
-- **Name**: `zsh-syntax-highlighting`
+- **Name**: `github.com/zsh-users/zsh-syntax-highlighting`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zsh-users/zsh-syntax-highlighting/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/zsh-users/zsh-syntax-highlighting -- $SHELL -i
+launchpad install github.com/zsh-users/zsh-syntax-highlighting
 ```
 
 ## Programs

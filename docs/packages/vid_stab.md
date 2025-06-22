@@ -1,11 +1,11 @@
-# vid.stab
+# public.hronopik.de/vid.stab
 
 > Video stabilization library
 
 ## Package Information
 
 - **Domain**: `public.hronopik.de/vid.stab`
-- **Name**: `vid.stab`
+- **Name**: `public.hronopik.de/vid.stab`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/public.hronopik.de/vid.stab/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +public.hronopik.de/vid.stab -- $SHELL -i
+launchpad install public.hronopik.de/vid.stab
 ```
 
 ## Programs

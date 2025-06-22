@@ -6,7 +6,7 @@
  * @version `8.4.8` (73 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +php.net -- $SHELL -i`
+ * @install `launchpad install php.net`
  * @aliases `php`
  * @dependencies `gnu.org/bison^3`, `re2c.org^3`, `apache.org/apr^1`, ... (+27 more) (includes OS-specific dependencies with `os:package` format)
  *
@@ -48,7 +48,7 @@ export const phpPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +php.net -- $SHELL -i' as const,
+  installCommand: 'launchpad install php.net' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -187,6 +187,8 @@ export const phpPackage = {
   aliases: [
     'php',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +php.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install php.net' as const,
 }
 
 export type PhpPackage = typeof phpPackage

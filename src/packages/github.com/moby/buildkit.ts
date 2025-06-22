@@ -98,6 +98,8 @@ export const buildctlPackage = {
   aliases: [
     'buildctl',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) buildctl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install buildctl' as const,
 }
 
 export type BuildctlPackage = typeof buildctlPackage

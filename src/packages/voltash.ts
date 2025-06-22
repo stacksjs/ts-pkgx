@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install volta`
- * @aliases `volta`
+ * @name `volta`
  * @dependencies `linux:curl.se/ca-certs` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.volta
  * // Or access via domain
  * const samePkg = pantry.voltash
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "volta.sh"
+ * console.log(pkg.name)        // "volta"
  * console.log(pkg.description) // "JavaScript toolchain manager for reproducible e..."
  * console.log(pkg.programs)    // ["volta"]
  * console.log(pkg.versions[0]) // "2.0.2" (latest)
@@ -32,7 +32,7 @@ export const voltaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'volta.sh' as const,
+  name: 'volta' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,9 @@ export const voltaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'volta',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) volta -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install volta' as const,
 }
 
 export type VoltaPackage = typeof voltaPackage

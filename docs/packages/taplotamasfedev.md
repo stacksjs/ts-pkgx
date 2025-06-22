@@ -1,11 +1,11 @@
-# taplo.tamasfe.dev
+# taplo
 
 > A TOML toolkit written in Rust
 
 ## Package Information
 
-- **Domain**: `taplotamasfe.dev`
-- **Name**: `taplo.tamasfe.dev`
+- **Domain**: `taplo.tamasfe.dev`
+- **Name**: `taplo`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/taplo.tamasfe.dev/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install taplotamasfe.dev
+launchpad install taplo
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `taplo`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `taplo`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +taplotamasfe.dev@0.10.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) taplo -- $SHELL -i
 ```
 
 ## Usage Examples

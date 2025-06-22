@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tb`
- * @aliases `tb`
+ * @name `tb`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tb
  * // Or access via domain
  * const samePkg = pantry.tinybirdco
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tinybird.co"
+ * console.log(pkg.name)        // "tb"
  * console.log(pkg.programs)    // ["tb"]
  * console.log(pkg.versions[0]) // "5.20.0" (latest)
  * ```
@@ -31,7 +31,7 @@ export const tbPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tinybird.co' as const,
+  name: 'tb' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -74,9 +74,9 @@ export const tbPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tb',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tb -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tb' as const,
 }
 
 export type TbPackage = typeof tbPackage

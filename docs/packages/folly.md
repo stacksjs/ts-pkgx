@@ -1,11 +1,11 @@
-# folly
+# facebook.com/folly
 
 > An open-source C++ library developed and used at Facebook.
 
 ## Package Information
 
 - **Domain**: `facebook.com/folly`
-- **Name**: `folly`
+- **Name**: `facebook.com/folly`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/folly/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +facebook.com/folly -- $SHELL -i
+launchpad install facebook.com/folly
 ```
 
 ## Programs

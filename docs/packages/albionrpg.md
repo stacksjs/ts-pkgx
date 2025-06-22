@@ -1,11 +1,11 @@
-# albion_terminal_rpg
+# albionrpg
 
 > A text-based RPG for the Terminal, written in Rust.
 
 ## Package Information
 
 - **Domain**: `crates.io/albion_terminal_rpg`
-- **Name**: `albion_terminal_rpg`
+- **Name**: `albionrpg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/albion_terminal_rpg/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install albionrpg
 ## Programs
 
 This package provides the following executable programs:
-
-- `albionrpg`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `albionrpg`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/albion_terminal_rpg@2024.5.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) albionrpg -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -1,11 +1,11 @@
-# nginx.org
+# nginx
 
 > HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 
 ## Package Information
 
 - **Domain**: `nginx.org`
-- **Name**: `nginx.org`
+- **Name**: `nginx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nginx.org/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install nginx
 ## Programs
 
 This package provides the following executable programs:
-
-- `nginx`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `nginx`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +nginx.org@1.28.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) nginx -- $SHELL -i
 ```
 
 ## Dependencies

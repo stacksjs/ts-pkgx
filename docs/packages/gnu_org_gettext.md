@@ -1,11 +1,11 @@
-# gettext
+# gnu.org/gettext
 
 > GNU internationalization (i18n) and localization (l10n) library
 
 ## Package Information
 
 - **Domain**: `gnu.org/gettext`
-- **Name**: `gettext`
+- **Name**: `gnu.org/gettext`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gettext/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnu.org/gettext -- $SHELL -i
+launchpad install gnu.org/gettext
 ```
 
 ## Programs

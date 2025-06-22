@@ -6,19 +6,19 @@
  * @version `2025.1.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +khronos.org/SPIRV-Tools -- $SHELL -i`
- * @aliases `spirv`
+ * @install `launchpad install spirv`
+ * @name `spirv`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.spirv
  * // Or access via domain
  * const samePkg = pantry.khronosorgspirvtools
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "SPIRV-Tools"
+ * console.log(pkg.name)        // "spirv"
  * console.log(pkg.description) // "API and commands for processing SPIR-V modules"
  * console.log(pkg.programs)    // ["spirv-as", "spirv-cfg", ...]
  * console.log(pkg.versions[0]) // "2025.1.0" (latest)
@@ -31,7 +31,7 @@ export const spirvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'SPIRV-Tools' as const,
+  name: 'spirv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const spirvPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +khronos.org/SPIRV-Tools -- $SHELL -i' as const,
+  installCommand: 'launchpad install spirv' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -80,9 +80,9 @@ export const spirvPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'spirv',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +khronos.org/SPIRV-Tools -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install spirv' as const,
 }
 
 export type SpirvPackage = typeof spirvPackage

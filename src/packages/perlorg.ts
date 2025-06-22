@@ -6,7 +6,7 @@
  * @version `5.40.2` (14 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +perl.org -- $SHELL -i`
+ * @install `launchpad install perl.org`
  *
  * @example
  * ```typescript
@@ -42,7 +42,7 @@ export const perlorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +perl.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install perl.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -102,6 +102,8 @@ export const perlorgPackage = {
     '5.34.2',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +perl.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install perl.org' as const,
 }
 
 export type PerlorgPackage = typeof perlorgPackage

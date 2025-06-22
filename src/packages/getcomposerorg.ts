@@ -6,20 +6,20 @@
  * @version `2.8.9` (30 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +getcomposer.org -- $SHELL -i`
- * @aliases `composer`
+ * @install `launchpad install composer`
+ * @name `composer`
  * @dependencies `php.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.composer
  * // Or access via domain
  * const samePkg = pantry.getcomposerorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "getcomposer.org"
+ * console.log(pkg.name)        // "composer"
  * console.log(pkg.description) // "Dependency Manager for PHP"
  * console.log(pkg.programs)    // ["composer", "composer.phar"]
  * console.log(pkg.versions[0]) // "2.8.9" (latest)
@@ -32,7 +32,7 @@ export const composerPackage = {
   /**
    * The display name of this package.
    */
-  name: 'getcomposer.org' as const,
+  name: 'composer' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const composerPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +getcomposer.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install composer' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -105,9 +105,9 @@ export const composerPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'composer',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +getcomposer.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install composer' as const,
 }
 
 export type ComposerPackage = typeof composerPackage

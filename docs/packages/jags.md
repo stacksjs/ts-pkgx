@@ -1,11 +1,11 @@
-# mcmc-jags.sourceforge.io
+# jags
 
 > Just Another Gibbs Sampler for Bayesian MCMC simulation
 
 ## Package Information
 
 - **Domain**: `mcmc-jags.sourceforge.io`
-- **Name**: `mcmc-jags.sourceforge.io`
+- **Name**: `jags`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mcmc-jags.sourceforge.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install jags
 ## Programs
 
 This package provides the following executable programs:
-
-- `jags`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `jags`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mcmc-jags.sourceforge.io@4.3.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) jags -- $SHELL -i
 ```
 
 ## Dependencies

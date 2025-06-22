@@ -1,11 +1,11 @@
-# zsh.sourceforge.io
+# zsh
 
 > UNIX shell (command interpreter)
 
 ## Package Information
 
 - **Domain**: `zsh.sourceforge.io`
-- **Name**: `zsh.sourceforge.io`
+- **Name**: `zsh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/zsh.sourceforge.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install zsh
 ## Programs
 
 This package provides the following executable programs:
-
-- `zsh`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `zsh`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +zsh.sourceforge.io@5.9.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) zsh -- $SHELL -i
 ```
 
 ## Dependencies

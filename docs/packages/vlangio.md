@@ -1,11 +1,11 @@
-# vlang.io
+# v
 
 > Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
 
 ## Package Information
 
 - **Domain**: `vlang.io`
-- **Name**: `vlang.io`
+- **Name**: `v`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vlang.io/package.yml)
 
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +vlang.io@0.4.11 -- $SHELL -i
+sh <(curl https://pkgx.sh) v -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -6,7 +6,7 @@
  * @version `6.0.0` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +openpmix.github.io -- $SHELL -i`
+ * @install `launchpad install openpmix.github.io`
  * @dependencies `open-mpi.org/hwloc^2.10`, `libevent.org^2.1`, `zlib.net^1.3`
  *
  * @example
@@ -43,7 +43,7 @@ export const openpmixgithubioPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +openpmix.github.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install openpmix.github.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -85,6 +85,8 @@ export const openpmixgithubioPackage = {
     '5.0.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openpmix.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openpmix.github.io' as const,
 }
 
 export type OpenpmixgithubioPackage = typeof openpmixgithubioPackage

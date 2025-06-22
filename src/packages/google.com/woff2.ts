@@ -6,7 +6,7 @@
  * @version `1.0.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +google.com/woff2 -- $SHELL -i`
+ * @install `launchpad install woff2`
  * @name `woff2`
  * @dependencies `github.com/google/brotli`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format)
  *
@@ -48,7 +48,7 @@ export const woff2Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +google.com/woff2 -- $SHELL -i' as const,
+  installCommand: 'launchpad install woff2' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -80,6 +80,8 @@ export const woff2Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +google.com/woff2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install woff2' as const,
 }
 
 export type Woff2Package = typeof woff2Package

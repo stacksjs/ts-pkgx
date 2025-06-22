@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +nmap.org -- $SHELL -i
+launchpad install nmap.org
 ```
 
 ## Programs

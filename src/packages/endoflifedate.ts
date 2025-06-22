@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install eol`
- * @aliases `eol`
+ * @name `eol`
  * @dependencies `python.org^3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.eol
  * // Or access via domain
  * const samePkg = pantry.endoflifedate
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "endoflife.date"
+ * console.log(pkg.name)        // "eol"
  * console.log(pkg.description) // "CLI to show end-of-life dates for a number of p..."
  * console.log(pkg.programs)    // ["eol"]
  * console.log(pkg.versions[0]) // "0.22.0" (latest)
@@ -32,7 +32,7 @@ export const eolPackage = {
   /**
    * The display name of this package.
    */
-  name: 'endoflife.date' as const,
+  name: 'eol' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -83,9 +83,9 @@ export const eolPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'eol',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) eol -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install eol' as const,
 }
 
 export type EolPackage = typeof eolPackage

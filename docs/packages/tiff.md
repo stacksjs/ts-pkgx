@@ -1,11 +1,11 @@
-# libtiff
+# tiff
 
 > TIFF library and utilities
 
 ## Package Information
 
 - **Domain**: `simplesystems.org/libtiff`
-- **Name**: `libtiff`
+- **Name**: `tiff`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/simplesystems.org/libtiff/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +simplesystems.org/libtiff -- $SHELL -i
+launchpad install tiff
 ```
 
 ## Programs
@@ -25,12 +25,6 @@ This package provides the following executable programs:
 - `tiffinfo`
 - `tiffset`
 - `tiffsplit`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `tiff`
 
 ## Available Versions
 

@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/chrusty/protoc-gen-jsonschema@1.4.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) protoc-gen-jsonschema -- $SHELL -i
 ```
 
 ## Dependencies

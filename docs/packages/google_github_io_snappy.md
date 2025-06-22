@@ -1,11 +1,11 @@
-# snappy
+# google.github.io/snappy
 
 > A fast compressor/decompressor
 
 ## Package Information
 
 - **Domain**: `google.github.io/snappy`
-- **Name**: `snappy`
+- **Name**: `google.github.io/snappy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.github.io/snappy/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +google.github.io/snappy -- $SHELL -i
+launchpad install google.github.io/snappy
 ```
 
 ## Programs

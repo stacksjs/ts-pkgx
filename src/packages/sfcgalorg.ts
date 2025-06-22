@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sfcgal-config`
- * @aliases `sfcgal-config`
+ * @name `sfcgal-config`
  * @dependencies `boost.org`, `cgal.org`, `gnu.org/gmp`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sfcgalconfig
  * // Or access via domain
  * const samePkg = pantry.sfcgalorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sfcgal.org"
+ * console.log(pkg.name)        // "sfcgal-config"
  * console.log(pkg.description) // "C++ wrapper library around CGAL"
  * console.log(pkg.programs)    // ["sfcgal-config"]
  * console.log(pkg.versions[0]) // "2.1.0" (latest)
@@ -32,7 +32,7 @@ export const sfcgalconfigPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sfcgal.org' as const,
+  name: 'sfcgal-config' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -83,9 +83,9 @@ export const sfcgalconfigPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sfcgal-config',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sfcgal-config -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sfcgal-config' as const,
 }
 
 export type SfcgalconfigPackage = typeof sfcgalconfigPackage

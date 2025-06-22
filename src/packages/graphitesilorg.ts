@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gr2fonttest`
- * @aliases `gr2fonttest`
+ * @name `gr2fonttest`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gr2fonttest
  * // Or access via domain
  * const samePkg = pantry.graphitesilorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "graphite.sil.org"
+ * console.log(pkg.name)        // "gr2fonttest"
  * console.log(pkg.description) // "Graphite is a "smart font" system developed spe..."
  * console.log(pkg.programs)    // ["gr2fonttest"]
  * console.log(pkg.versions[0]) // "1.3.14" (latest)
@@ -31,7 +31,7 @@ export const gr2fonttestPackage = {
   /**
    * The display name of this package.
    */
-  name: 'graphite.sil.org' as const,
+  name: 'gr2fonttest' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const gr2fonttestPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gr2fonttest',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gr2fonttest -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gr2fonttest' as const,
 }
 
 export type Gr2fonttestPackage = typeof gr2fonttestPackage

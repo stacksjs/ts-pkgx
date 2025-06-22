@@ -101,6 +101,8 @@ export const geniPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) geni -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install geni' as const,
 }
 
 export type GeniPackage = typeof geniPackage

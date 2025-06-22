@@ -77,6 +77,8 @@ export const ronnPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ronn -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ronn' as const,
 }
 
 export type RonnPackage = typeof ronnPackage

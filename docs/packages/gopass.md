@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/gopasspw/gopass@1.15.16 -- $SHELL -i
+sh <(curl https://pkgx.sh) gopass -- $SHELL -i
 ```
 
 ## Usage Examples

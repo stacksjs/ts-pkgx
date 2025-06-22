@@ -5,7 +5,7 @@
  * @version `4.3.5` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +libwebsockets.org -- $SHELL -i`
+ * @install `launchpad install libwebsockets.org`
  * @dependencies `libuv.org@1`, `libevent.org@2`
  *
  * @example
@@ -41,7 +41,7 @@ export const libwebsocketsorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +libwebsockets.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install libwebsockets.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -63,6 +63,8 @@ export const libwebsocketsorgPackage = {
     '4.3.2',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libwebsockets.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libwebsockets.org' as const,
 }
 
 export type LibwebsocketsorgPackage = typeof libwebsocketsorgPackage

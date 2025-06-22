@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/tokei@12.1.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) tokei -- $SHELL -i
 ```
 
 ## Usage Examples

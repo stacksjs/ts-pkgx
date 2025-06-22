@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +graphqleditor.com/gql@0.1.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) gql -- $SHELL -i
 ```
 
 ## Usage Examples

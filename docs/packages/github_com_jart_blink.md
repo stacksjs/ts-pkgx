@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/jart/blink -- $SHELL -i
+launchpad install blink
 ```
 
 ## Programs

@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jx`
- * @aliases `jx`, `Jenkins X`
+ * @name `Jenkins X`
+ * @aliases `jx`
  *
  * @example
  * ```typescript
@@ -18,7 +19,7 @@
  * // Or access via domain
  * const samePkg = pantry.jenkinsxio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "jenkins-x.io"
+ * console.log(pkg.name)        // "Jenkins X"
  * console.log(pkg.description) // "Jenkins X provides automated CI+CD for Kubernet..."
  * console.log(pkg.programs)    // ["jx"]
  * console.log(pkg.versions[0]) // "3.11.92" (latest)
@@ -31,7 +32,7 @@ export const jxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jenkins-x.io' as const,
+  name: 'Jenkins X' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -127,8 +128,9 @@ export const jxPackage = {
    */
   aliases: [
     'jx',
-    'Jenkins X',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jx' as const,
 }
 
 export type JxPackage = typeof jxPackage

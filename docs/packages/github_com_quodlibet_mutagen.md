@@ -1,11 +1,11 @@
-# mutagen
+# github.com/quodlibet/mutagen
 
 > Python module for handling audio metadata
 
 ## Package Information
 
 - **Domain**: `github.com/quodlibet/mutagen`
-- **Name**: `mutagen`
+- **Name**: `github.com/quodlibet/mutagen`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/quodlibet/mutagen/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/quodlibet/mutagen -- $SHELL -i
+launchpad install github.com/quodlibet/mutagen
 ```
 
 ## Programs

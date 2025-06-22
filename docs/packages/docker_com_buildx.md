@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +docker.com/buildx@0.25.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) buildx -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -1,11 +1,11 @@
-# glslang
+# khronos.org/glslang
 
 > Khronos-reference front end for GLSL/ESSL, partial front end for HLSL, and a SPIR-V generator.
 
 ## Package Information
 
 - **Domain**: `khronos.org/glslang`
-- **Name**: `glslang`
+- **Name**: `khronos.org/glslang`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/khronos.org/glslang/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +khronos.org/glslang -- $SHELL -i
+launchpad install khronos.org/glslang
 ```
 
 ## Programs

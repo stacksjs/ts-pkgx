@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install granted`
- * @aliases `granted`
+ * @name `granted`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.granted
  * // Or access via domain
  * const samePkg = pantry.granteddev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "granted.dev"
+ * console.log(pkg.name)        // "granted"
  * console.log(pkg.description) // "The easiest way to access your cloud."
  * console.log(pkg.programs)    // ["granted"]
  * console.log(pkg.versions[0]) // "0.38.0" (latest)
@@ -31,7 +31,7 @@ export const grantedPackage = {
   /**
    * The display name of this package.
    */
-  name: 'granted.dev' as const,
+  name: 'granted' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -105,9 +105,9 @@ export const grantedPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'granted',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) granted -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install granted' as const,
 }
 
 export type GrantedPackage = typeof grantedPackage

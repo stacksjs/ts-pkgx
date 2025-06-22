@@ -69,6 +69,8 @@ export const csvdiffPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) csvdiff -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install csvdiff' as const,
 }
 
 export type CsvdiffPackage = typeof csvdiffPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +llvm.org -- $SHELL -i
+launchpad install llvm.org
 ```
 
 ## Programs

@@ -81,6 +81,8 @@ export const tigPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tig -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tig' as const,
 }
 
 export type TigPackage = typeof tigPackage

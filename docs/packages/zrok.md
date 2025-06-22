@@ -1,11 +1,11 @@
-# zrok.io
+# zrok
 
 > Geo-scale, next-generation peer-to-peer sharing platform built on top of OpenZiti.
 
 ## Package Information
 
 - **Domain**: `zrok.io`
-- **Name**: `zrok.io`
+- **Name**: `zrok`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/zrok.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +zrok.io -- $SHELL -i
+launchpad install zrok
 ```
 
 ## Programs
@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `zrok`
 - `copyto`
 - `pastefrom`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `zrok`
 
 ## Available Versions
 

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnupg.org/pinentry -- $SHELL -i
+launchpad install pinentry
 ```
 
 ## Programs

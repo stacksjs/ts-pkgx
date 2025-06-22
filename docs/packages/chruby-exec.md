@@ -1,11 +1,11 @@
-# chruby
+# chruby-exec
 
 > Changes the current Ruby
 
 ## Package Information
 
 - **Domain**: `github.com/postmodern/chruby`
-- **Name**: `chruby`
+- **Name**: `chruby-exec`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/postmodern/chruby/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install chruby-exec
 ## Programs
 
 This package provides the following executable programs:
-
-- `chruby-exec`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `chruby-exec`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/postmodern/chruby@0.3.9 -- $SHELL -i
+sh <(curl https://pkgx.sh) chruby-exec -- $SHELL -i
 ```
 
 ## Usage Examples

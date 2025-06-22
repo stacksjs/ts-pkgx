@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mp`
- * @aliases `mp`
+ * @name `mp`
  * @dependencies `git-scm.org^2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mp
  * // Or access via domain
  * const samePkg = pantry.githubcomclevermicroplane
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "microplane"
+ * console.log(pkg.name)        // "mp"
  * console.log(pkg.description) // "A CLI tool to make git changes across many repo..."
  * console.log(pkg.programs)    // ["mp"]
  * console.log(pkg.versions[0]) // "0.0.36" (latest)
@@ -32,7 +32,7 @@ export const mpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'microplane' as const,
+  name: 'mp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const mpPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mp',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mp' as const,
 }
 
 export type MpPackage = typeof mpPackage

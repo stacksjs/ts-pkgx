@@ -1,11 +1,11 @@
-# assimp.org
+# assimp
 
 > The official Open-Asset-Importer-Library Repository. Loads 40+ 3D-file-formats into one unified and clean data structure.
 
 ## Package Information
 
 - **Domain**: `assimp.org`
-- **Name**: `assimp.org`
+- **Name**: `assimp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/assimp.org/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install assimp
 ## Programs
 
 This package provides the following executable programs:
-
-- `assimp`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `assimp`
 

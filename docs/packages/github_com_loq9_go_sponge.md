@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/loq9/go-sponge@1.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) go-sponge -- $SHELL -i
 ```
 
 ## Usage Examples

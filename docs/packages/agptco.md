@@ -1,11 +1,11 @@
-# Auto-GPT
+# auto-gpt
 
 > AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.
 
 ## Package Information
 
 - **Domain**: `agpt.co`
-- **Name**: `Auto-GPT`
+- **Name**: `auto-gpt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/agpt.co/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) auto-gpt
+launchpad install auto-gpt
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `auto-gpt`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `auto-gpt`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +agpt.co@0.4.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) auto-gpt -- $SHELL -i
 ```
 
 ## Dependencies

@@ -65,7 +65,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +trufflesecurity.com/trufflehog@3.89.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) trufflehog -- $SHELL -i
 ```
 
 ## Usage Examples

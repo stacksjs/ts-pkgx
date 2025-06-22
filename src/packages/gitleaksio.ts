@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gitleaks`
- * @aliases `gitleaks`
+ * @name `gitleaks`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gitleaks
  * // Or access via domain
  * const samePkg = pantry.gitleaksio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gitleaks.io"
+ * console.log(pkg.name)        // "gitleaks"
  * console.log(pkg.description) // "Find secrets with Gitleaks 🔑"
  * console.log(pkg.programs)    // ["gitleaks"]
  * console.log(pkg.versions[0]) // "8.27.2" (latest)
@@ -31,7 +31,7 @@ export const gitleaksPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gitleaks.io' as const,
+  name: 'gitleaks' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -96,9 +96,9 @@ export const gitleaksPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'gitleaks',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gitleaks -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gitleaks' as const,
 }
 
 export type GitleaksPackage = typeof gitleaksPackage

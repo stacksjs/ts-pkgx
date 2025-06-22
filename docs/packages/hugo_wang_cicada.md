@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +hugo.wang/cicada@1.1.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) cicada -- $SHELL -i
 ```
 
 ## Usage Examples

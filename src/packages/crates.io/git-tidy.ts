@@ -69,6 +69,8 @@ export const gittidyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-tidy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-tidy' as const,
 }
 
 export type GittidyPackage = typeof gittidyPackage

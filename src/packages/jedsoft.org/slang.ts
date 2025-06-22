@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install slsh`
- * @aliases `slsh`, `s-lang`
+ * @name `s-lang`
+ * @aliases `slsh`
  * @dependencies `libpng.org`, `linux:pcre.org` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -19,7 +20,7 @@
  * // Or access via domain
  * const samePkg = pantry.jedsoftorgslang
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "slang"
+ * console.log(pkg.name)        // "s-lang"
  * console.log(pkg.description) // "Library for creating multi-platform software"
  * console.log(pkg.programs)    // ["slsh"]
  * console.log(pkg.versions[0]) // "2.3.3" (latest)
@@ -32,7 +33,7 @@ export const slshPackage = {
   /**
    * The display name of this package.
    */
-  name: 'slang' as const,
+  name: 's-lang' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,8 +80,9 @@ export const slshPackage = {
    */
   aliases: [
     'slsh',
-    's-lang',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) slsh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install slsh' as const,
 }
 
 export type SlshPackage = typeof slshPackage

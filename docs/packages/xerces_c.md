@@ -1,11 +1,11 @@
-# xerces-c
+# xerces.apache.org/xerces-c
 
 > Validating XML parser
 
 ## Package Information
 
 - **Domain**: `xerces.apache.org/xerces-c`
-- **Name**: `xerces-c`
+- **Name**: `xerces.apache.org/xerces-c`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xerces.apache.org/xerces-c/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +xerces.apache.org/xerces-c -- $SHELL -i
+launchpad install xerces.apache.org/xerces-c
 ```
 
 ## Programs

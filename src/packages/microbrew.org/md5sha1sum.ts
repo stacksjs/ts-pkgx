@@ -1,12 +1,12 @@
 /**
- * **md5sha1sum** - Hash utilities
+ * **microbrew.org/md5sha1sum** - Hash utilities
  *
  * @domain `microbrew.org/md5sha1sum`
  * @programs `md5sum`, `sha1sum`, `ripemd160sum`
  * @version `0.9.5` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +microbrew.org/md5sha1sum -- $SHELL -i`
+ * @install `launchpad install microbrew.org/md5sha1sum`
  * @dependencies `openssl.org^1.1`
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.microbreworgmd5sha1sum
- * console.log(pkg.name)        // "md5sha1sum"
+ * console.log(pkg.name)        // "microbrew.org/md5sha1sum"
  * console.log(pkg.description) // "Hash utilities"
  * console.log(pkg.programs)    // ["md5sum", "sha1sum", ...]
  * console.log(pkg.versions[0]) // "0.9.5" (latest)
@@ -27,7 +27,7 @@ export const microbreworgmd5sha1sumPackage = {
   /**
    * The display name of this package.
    */
-  name: 'md5sha1sum' as const,
+  name: 'microbrew.org/md5sha1sum' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const microbreworgmd5sha1sumPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +microbrew.org/md5sha1sum -- $SHELL -i' as const,
+  installCommand: 'launchpad install microbrew.org/md5sha1sum' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,6 +69,8 @@ export const microbreworgmd5sha1sumPackage = {
     '0.9.5',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +microbrew.org/md5sha1sum -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install microbrew.org/md5sha1sum' as const,
 }
 
 export type Microbreworgmd5sha1sumPackage = typeof microbreworgmd5sha1sumPackage

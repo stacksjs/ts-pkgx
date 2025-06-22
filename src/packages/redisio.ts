@@ -6,20 +6,20 @@
  * @version `8.0.2` (37 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +redis.io -- $SHELL -i`
- * @aliases `redis`
+ * @install `launchpad install redis`
+ * @name `redis`
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.redis
  * // Or access via domain
  * const samePkg = pantry.redisio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "redis.io"
+ * console.log(pkg.name)        // "redis"
  * console.log(pkg.description) // "Redis is an in-memory database that persists on..."
  * console.log(pkg.programs)    // ["redis-server", "redis-cli", ...]
  * console.log(pkg.versions[0]) // "8.0.2" (latest)
@@ -32,7 +32,7 @@ export const redisPackage = {
   /**
    * The display name of this package.
    */
-  name: 'redis.io' as const,
+  name: 'redis' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const redisPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +redis.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install redis' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -113,9 +113,9 @@ export const redisPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'redis',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +redis.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install redis' as const,
 }
 
 export type RedisPackage = typeof redisPackage

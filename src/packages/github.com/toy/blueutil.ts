@@ -72,6 +72,8 @@ export const blueutilPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) blueutil -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install blueutil' as const,
 }
 
 export type BlueutilPackage = typeof blueutilPackage

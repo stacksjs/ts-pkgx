@@ -66,7 +66,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/aws-cloudformation/cfn-lint@1.36.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) cfn-lint -- $SHELL -i
 ```
 
 ## Dependencies

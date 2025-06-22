@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sdkman-init.sh`
- * @aliases `sdkman-init.sh`
+ * @name `sdkman-init.sh`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sdkmaninitsh
  * // Or access via domain
  * const samePkg = pantry.sdkmanio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sdkman.io"
+ * console.log(pkg.name)        // "sdkman-init.sh"
  * console.log(pkg.description) // "The SDKMAN! Command Line Interface"
  * console.log(pkg.programs)    // ["sdkman-init.sh"]
  * console.log(pkg.versions[0]) // "5.19.0" (latest)
@@ -31,7 +31,7 @@ export const sdkmaninitshPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sdkman.io' as const,
+  name: 'sdkman-init.sh' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -69,9 +69,9 @@ export const sdkmaninitshPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sdkman-init.sh',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sdkman-init.sh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sdkman-init.sh' as const,
 }
 
 export type SdkmaninitshPackage = typeof sdkmaninitshPackage

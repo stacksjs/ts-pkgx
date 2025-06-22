@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +lxml.de -- $SHELL -i
+launchpad install lxml.de
 ```
 
 ## Programs

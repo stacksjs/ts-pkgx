@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/comrak@0.39.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) comrak -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libgd.github.io -- $SHELL -i
+launchpad install libgd.github.io
 ```
 
 ## Programs

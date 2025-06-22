@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libjpeg-turbo.org -- $SHELL -i
+launchpad install libjpeg-turbo.org
 ```
 
 ## Programs

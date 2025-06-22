@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/lra/mackup@0.8.43 -- $SHELL -i
+sh <(curl https://pkgx.sh) mackup -- $SHELL -i
 ```
 
 ## Dependencies

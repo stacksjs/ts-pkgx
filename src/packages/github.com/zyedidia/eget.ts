@@ -7,20 +7,20 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install eget`
- * @name `eget`
- * @aliases `Eget`
+ * @name `Eget`
+ * @aliases `eget`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.eget
  * // Or access via domain
  * const samePkg = pantry.githubcomzyedidiaeget
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "eget"
+ * console.log(pkg.name)        // "Eget"
  * console.log(pkg.description) // "Easily install prebuilt binaries from GitHub."
  * console.log(pkg.programs)    // ["eget"]
  * console.log(pkg.versions[0]) // "1.3.4" (latest)
@@ -33,7 +33,7 @@ export const egetPackage = {
   /**
    * The display name of this package.
    */
-  name: 'eget' as const,
+  name: 'Eget' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,8 +78,10 @@ export const egetPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'Eget',
+    'eget',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) eget -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install eget' as const,
 }
 
 export type EgetPackage = typeof egetPackage

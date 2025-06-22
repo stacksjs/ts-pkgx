@@ -1,11 +1,11 @@
-# intltool
+# freedesktop.org/intltool
 
 > String tool
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/intltool`
-- **Name**: `intltool`
+- **Name**: `freedesktop.org/intltool`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/intltool/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +freedesktop.org/intltool -- $SHELL -i
+launchpad install freedesktop.org/intltool
 ```
 
 ## Programs
@@ -57,7 +57,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with intltool:
+These packages work well with freedesktop.org/intltool:
 
 - `PERL5LIB^${{prefix}}/lib/perl5:{{prefix}}/libexec/lib/perl5:$PERL5LIB`
 

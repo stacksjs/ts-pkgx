@@ -1,11 +1,11 @@
-# openai-python
+# openai
 
 > The official Python library for the OpenAI API
 
 ## Package Information
 
 - **Domain**: `openai.com/openai-python`
-- **Name**: `openai-python`
+- **Name**: `openai`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openai.com/openai-python/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install openai
 ## Programs
 
 This package provides the following executable programs:
-
-- `openai`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `openai`
 
@@ -90,7 +84,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +openai.com/openai-python@1.90.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) openai -- $SHELL -i
 ```
 
 ## Dependencies

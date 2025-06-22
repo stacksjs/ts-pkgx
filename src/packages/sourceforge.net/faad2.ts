@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install faad`
- * @aliases `faad`
+ * @name `faad`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.faad
  * // Or access via domain
  * const samePkg = pantry.sourceforgenetfaad2
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "faad2"
+ * console.log(pkg.name)        // "faad"
  * console.log(pkg.description) // "Freeware Advanced Audio (AAC) Decoder faad2 mirror"
  * console.log(pkg.programs)    // ["faad"]
  * console.log(pkg.versions[0]) // "2.11.2" (latest)
@@ -31,7 +31,7 @@ export const faadPackage = {
   /**
    * The display name of this package.
    */
-  name: 'faad2' as const,
+  name: 'faad' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -71,9 +71,9 @@ export const faadPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'faad',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) faad -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install faad' as const,
 }
 
 export type FaadPackage = typeof faadPackage

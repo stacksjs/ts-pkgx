@@ -79,6 +79,8 @@ export const gitbranchlessPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-branchless -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-branchless' as const,
 }
 
 export type GitbranchlessPackage = typeof gitbranchlessPackage

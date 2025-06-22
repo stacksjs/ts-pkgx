@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sshx`
- * @aliases `sshx`
+ * @name `sshx`
  * @dependencies `protobuf.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sshx
  * // Or access via domain
  * const samePkg = pantry.sshxio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sshx.io"
+ * console.log(pkg.name)        // "sshx"
  * console.log(pkg.description) // "Fast, collaborative live terminal sharing over ..."
  * console.log(pkg.programs)    // ["sshx"]
  * console.log(pkg.versions[0]) // "2023.11.14" (latest)
@@ -32,7 +32,7 @@ export const sshxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sshx.io' as const,
+  name: 'sshx' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const sshxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sshx',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sshx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sshx' as const,
 }
 
 export type SshxPackage = typeof sshxPackage

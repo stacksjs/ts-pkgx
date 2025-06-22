@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) eol
+launchpad install eol
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +endoflife.date@0.22.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) eol -- $SHELL -i
 ```
 
 ## Dependencies

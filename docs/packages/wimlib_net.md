@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +wimlib.net -- $SHELL -i
+launchpad install wimlib.net
 ```
 
 ## Programs

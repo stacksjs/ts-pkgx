@@ -72,6 +72,8 @@ export const createdmgPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) create-dmg -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install create-dmg' as const,
 }
 
 export type CreatedmgPackage = typeof createdmgPackage

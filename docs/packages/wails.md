@@ -1,11 +1,11 @@
-# wails.io
+# wails
 
 > Create beautiful applications using Go
 
 ## Package Information
 
 - **Domain**: `wails.io`
-- **Name**: `wails.io`
+- **Name**: `wails`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wails.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install wails
 ## Programs
 
 This package provides the following executable programs:
-
-- `wails`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `wails`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +wails.io@2.10.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) wails -- $SHELL -i
 ```
 
 ## Dependencies

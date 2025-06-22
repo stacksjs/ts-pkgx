@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sql_exporter`
- * @name `sql_exporter`
- * @aliases `justwatchcom/sql_exporter`
+ * @name `justwatchcom/sql_exporter`
+ * @aliases `sql_exporter`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.sqlexporter
  * // Or access via domain
  * const samePkg = pantry.githubcomjustwatchcomsql_exporter
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sql_exporter"
+ * console.log(pkg.name)        // "justwatchcom/sql_exporter"
  * console.log(pkg.description) // "Database agnostic SQL exporter for Prometheus"
  * console.log(pkg.programs)    // ["sql_exporter"]
  * console.log(pkg.versions[0]) // "0.5.0" (latest)
@@ -32,7 +32,7 @@ export const sqlexporterPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sql_exporter' as const,
+  name: 'justwatchcom/sql_exporter' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -70,8 +70,10 @@ export const sqlexporterPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'justwatchcom/sql_exporter',
+    'sql_exporter',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sql_exporter -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sql_exporter' as const,
 }
 
 export type SqlexporterPackage = typeof sqlexporterPackage

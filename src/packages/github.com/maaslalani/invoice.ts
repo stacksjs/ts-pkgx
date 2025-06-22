@@ -69,6 +69,8 @@ export const invoicePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) invoice -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install invoice' as const,
 }
 
 export type InvoicePackage = typeof invoicePackage

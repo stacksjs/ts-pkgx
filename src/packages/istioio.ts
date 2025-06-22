@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install istioctl`
- * @aliases `istioctl`
+ * @name `istioctl`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.istioctl
  * // Or access via domain
  * const samePkg = pantry.istioio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "istio.io"
+ * console.log(pkg.name)        // "istioctl"
  * console.log(pkg.description) // "Connect, secure, control, and observe services."
  * console.log(pkg.programs)    // ["istioctl"]
  * console.log(pkg.versions[0]) // "1.26.2" (latest)
@@ -31,7 +31,7 @@ export const istioctlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'istio.io' as const,
+  name: 'istioctl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -109,9 +109,9 @@ export const istioctlPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'istioctl',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) istioctl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install istioctl' as const,
 }
 
 export type IstioctlPackage = typeof istioctlPackage

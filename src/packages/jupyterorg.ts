@@ -6,7 +6,7 @@
  * @version `4.4.3` (49 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +jupyter.org -- $SHELL -i`
+ * @install `launchpad install jupyter.org`
  * @dependencies `python.org>=3.7<3.12`, `gnu.org/which@2`
  *
  * @example
@@ -43,7 +43,7 @@ export const jupyterorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +jupyter.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install jupyter.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -139,6 +139,8 @@ export const jupyterorgPackage = {
     '3.6.3',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jupyter.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jupyter.org' as const,
 }
 
 export type JupyterorgPackage = typeof jupyterorgPackage

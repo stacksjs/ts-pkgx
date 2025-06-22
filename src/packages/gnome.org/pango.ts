@@ -6,7 +6,7 @@
  * @version `1.56.3` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnome.org/pango -- $SHELL -i`
+ * @install `launchpad install pango`
  * @name `pango`
  * @dependencies `cairographics.org^1.18`, `freetype.org@2`, `gnome.org/glib@2`, ... (+4 more)
  *
@@ -48,7 +48,7 @@ export const pangoPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnome.org/pango -- $SHELL -i' as const,
+  installCommand: 'launchpad install pango' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -96,6 +96,8 @@ export const pangoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/pango -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pango' as const,
 }
 
 export type PangoPackage = typeof pangoPackage

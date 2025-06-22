@@ -70,6 +70,8 @@ export const driftctlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) driftctl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install driftctl' as const,
 }
 
 export type DriftctlPackage = typeof driftctlPackage

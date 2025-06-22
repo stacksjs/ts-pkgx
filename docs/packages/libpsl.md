@@ -1,11 +1,11 @@
-# libpsl
+# rockdaboot.github.io/libpsl
 
 > C library for the Public Suffix List
 
 ## Package Information
 
 - **Domain**: `rockdaboot.github.io/libpsl`
-- **Name**: `libpsl`
+- **Name**: `rockdaboot.github.io/libpsl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rockdaboot.github.io/libpsl/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +rockdaboot.github.io/libpsl -- $SHELL -i
+launchpad install rockdaboot.github.io/libpsl
 ```
 
 ## Programs

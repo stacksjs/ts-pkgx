@@ -82,6 +82,8 @@ export const siliconPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) silicon -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install silicon' as const,
 }
 
 export type SiliconPackage = typeof siliconPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +openbao.org/openbao -- $SHELL -i
+launchpad install openbao
 ```
 
 ## Programs

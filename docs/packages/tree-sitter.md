@@ -1,11 +1,11 @@
-# tree-sitter.github.io
+# tree-sitter
 
 > Parser generator tool and incremental parsing library
 
 ## Package Information
 
 - **Domain**: `tree-sitter.github.io`
-- **Name**: `tree-sitter.github.io`
+- **Name**: `tree-sitter`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tree-sitter.github.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install tree-sitter
 ## Programs
 
 This package provides the following executable programs:
-
-- `tree-sitter`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `tree-sitter`
 
@@ -48,7 +42,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +tree-sitter.github.io@0.25.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) tree-sitter -- $SHELL -i
 ```
 
 ## Usage Examples

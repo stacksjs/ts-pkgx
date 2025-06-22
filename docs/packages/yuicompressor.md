@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +yui.github.io/yuicompressor@2.4.8 -- $SHELL -i
+sh <(curl https://pkgx.sh) yuicompressor -- $SHELL -i
 ```
 
 ## Dependencies

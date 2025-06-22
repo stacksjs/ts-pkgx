@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pwsh`
- * @aliases `pwsh`
+ * @name `pwsh`
  * @dependencies `openssl.org^1.1`, `linux:unicode.org^71` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pwsh
  * // Or access via domain
  * const samePkg = pantry.microsoftcompowershell
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "PowerShell"
+ * console.log(pkg.name)        // "pwsh"
  * console.log(pkg.description) // "PowerShell for every system!"
  * console.log(pkg.programs)    // ["pwsh"]
  * console.log(pkg.versions[0]) // "7.5.1" (latest)
@@ -32,7 +32,7 @@ export const pwshPackage = {
   /**
    * The display name of this package.
    */
-  name: 'PowerShell' as const,
+  name: 'pwsh' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -82,9 +82,9 @@ export const pwshPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pwsh',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pwsh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pwsh' as const,
 }
 
 export type PwshPackage = typeof pwshPackage

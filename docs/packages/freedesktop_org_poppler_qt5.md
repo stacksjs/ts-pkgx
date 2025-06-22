@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +freedesktop.org/poppler-qt5 -- $SHELL -i
+launchpad install poppler-qt5
 ```
 
 ## Programs

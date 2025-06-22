@@ -1,11 +1,11 @@
-# angular.dev
+# ng
 
 > CLI tool for Angular
 
 ## Package Information
 
 - **Domain**: `angular.dev`
-- **Name**: `angular.dev`
+- **Name**: `ng`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/angular.dev/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install ng
 ## Programs
 
 This package provides the following executable programs:
-
-- `ng`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `ng`
 

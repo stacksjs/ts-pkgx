@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) gnuplot
+launchpad install gnuplot
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnuplot.info@6.0.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) gnuplot -- $SHELL -i
 ```
 
 ## Dependencies
@@ -49,8 +49,7 @@ This package depends on:
 - `lua.org`
 - `gnome.org/pango`
 - `gnu.org/readline`
-- `linuxgithub.com/AOMediaCodec/libavif^0.11`
-- `github.com/AOMediaCodec/libavif^0.11`
+- `linux:github.com/AOMediaCodec/libavif^0.11`
 
 ## Usage Examples
 

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install golangci-lint`
- * @aliases `golangci-lint`
+ * @name `golangci-lint`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.golangcilint
  * // Or access via domain
  * const samePkg = pantry.golangcilintrun
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "golangci-lint.run"
+ * console.log(pkg.name)        // "golangci-lint"
  * console.log(pkg.description) // "Fast linters runner for Go"
  * console.log(pkg.programs)    // ["golangci-lint"]
  * console.log(pkg.versions[0]) // "2.1.6" (latest)
@@ -31,7 +31,7 @@ export const golangcilintPackage = {
   /**
    * The display name of this package.
    */
-  name: 'golangci-lint.run' as const,
+  name: 'golangci-lint' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -119,9 +119,9 @@ export const golangcilintPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'golangci-lint',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) golangci-lint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install golangci-lint' as const,
 }
 
 export type GolangcilintPackage = typeof golangcilintPackage

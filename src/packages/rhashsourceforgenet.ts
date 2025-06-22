@@ -6,7 +6,7 @@
  * @version `1.4.6` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +rhash.sourceforge.net -- $SHELL -i`
+ * @install `launchpad install rhash.sourceforge.net`
  *
  * @example
  * ```typescript
@@ -42,7 +42,7 @@ export const rhashsourceforgenetPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +rhash.sourceforge.net -- $SHELL -i' as const,
+  installCommand: 'launchpad install rhash.sourceforge.net' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,6 +74,8 @@ export const rhashsourceforgenetPackage = {
     '1.4.3',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rhash.sourceforge.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rhash.sourceforge.net' as const,
 }
 
 export type RhashsourceforgenetPackage = typeof rhashsourceforgenetPackage

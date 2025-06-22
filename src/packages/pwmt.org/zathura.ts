@@ -92,6 +92,8 @@ export const zathuraPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zathura -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zathura' as const,
 }
 
 export type ZathuraPackage = typeof zathuraPackage

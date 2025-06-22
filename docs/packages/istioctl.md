@@ -1,11 +1,11 @@
-# istio.io
+# istioctl
 
 > Connect, secure, control, and observe services.
 
 ## Package Information
 
 - **Domain**: `istio.io`
-- **Name**: `istio.io`
+- **Name**: `istioctl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/istio.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install istioctl
 ## Programs
 
 This package provides the following executable programs:
-
-- `istioctl`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `istioctl`
 
@@ -51,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +istio.io@1.26.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) istioctl -- $SHELL -i
 ```
 
 ## Usage Examples

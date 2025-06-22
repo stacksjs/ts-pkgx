@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/alexellis/k3sup@0.13.9 -- $SHELL -i
+sh <(curl https://pkgx.sh) k3sup -- $SHELL -i
 ```
 
 ## Usage Examples

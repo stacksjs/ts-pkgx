@@ -1,11 +1,11 @@
 /**
- * **PyGObject** - pkgx package
+ * **gnome.org/PyGObject** - pkgx package
  *
  * @domain `gnome.org/PyGObject`
  * @version `3.51.0` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnome.org/PyGObject -- $SHELL -i`
+ * @install `launchpad install gnome.org/PyGObject`
  * @dependencies `gnome.org/gobject-introspection`, `cairographics.org/pycairo`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnomeorgpygobject
- * console.log(pkg.name)        // "PyGObject"
+ * console.log(pkg.name)        // "gnome.org/PyGObject"
  * console.log(pkg.versions[0]) // "3.51.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const gnomeorgpygobjectPackage = {
   /**
    * The display name of this package.
    */
-  name: 'PyGObject' as const,
+  name: 'gnome.org/PyGObject' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const gnomeorgpygobjectPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnome.org/PyGObject -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnome.org/PyGObject' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -66,6 +66,8 @@ export const gnomeorgpygobjectPackage = {
     '3.46.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/PyGObject -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnome.org/PyGObject' as const,
 }
 
 export type GnomeorgpygobjectPackage = typeof gnomeorgpygobjectPackage

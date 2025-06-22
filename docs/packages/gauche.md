@@ -1,11 +1,11 @@
-# gauche
+# practical-scheme.net/gauche
 
 > R7RS Scheme implementation, developed to be a handy script interpreter
 
 ## Package Information
 
 - **Domain**: `practical-scheme.net/gauche`
-- **Name**: `gauche`
+- **Name**: `practical-scheme.net/gauche`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/practical-scheme.net/gauche/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +practical-scheme.net/gauche -- $SHELL -i
+launchpad install practical-scheme.net/gauche
 ```
 
 ## Programs

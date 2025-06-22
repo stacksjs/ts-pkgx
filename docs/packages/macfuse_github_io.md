@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +macfuse.github.io -- $SHELL -i
+launchpad install macfuse.github.io
 ```
 
 ## Programs

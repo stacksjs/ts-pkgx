@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/skylot/jadx -- $SHELL -i
+launchpad install jadx
 ```
 
 ## Programs

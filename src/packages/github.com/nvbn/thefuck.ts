@@ -76,6 +76,8 @@ export const thefuckPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) thefuck -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install thefuck' as const,
 }
 
 export type ThefuckPackage = typeof thefuckPackage

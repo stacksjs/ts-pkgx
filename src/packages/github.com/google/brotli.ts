@@ -70,6 +70,8 @@ export const brotliPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) brotli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install brotli' as const,
 }
 
 export type BrotliPackage = typeof brotliPackage

@@ -87,6 +87,8 @@ export const corepackPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) corepack -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install corepack' as const,
 }
 
 export type CorepackPackage = typeof corepackPackage

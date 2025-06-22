@@ -5,7 +5,7 @@
  * @version `3.4.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +glfw.org -- $SHELL -i`
+ * @install `launchpad install glfw.org`
  * @dependencies `linux:freeglut.sourceforge.io^3.4`, `linux:x.org/xcursor^1.2`, `linux:xkbcommon.org^1.0`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -41,7 +41,7 @@ export const glfworgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +glfw.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install glfw.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -65,6 +65,8 @@ export const glfworgPackage = {
     '3.3.9',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +glfw.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install glfw.org' as const,
 }
 
 export type GlfworgPackage = typeof glfworgPackage

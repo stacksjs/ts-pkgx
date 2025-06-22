@@ -79,6 +79,8 @@ export const optipngPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) optipng -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install optipng' as const,
 }
 
 export type OptipngPackage = typeof optipngPackage

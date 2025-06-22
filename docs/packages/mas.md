@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/mas-cli/mas@2.2.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) mas -- $SHELL -i
 ```
 
 ## Usage Examples

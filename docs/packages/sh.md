@@ -1,11 +1,11 @@
-# sh
+# shfmt
 
 > A shell parser, formatter, and interpreter with bash support; includes shfmt
 
 ## Package Information
 
-- **Domain**: `.sh`
-- **Name**: `sh`
+- **Domain**: `mvdan.cc/sh`
+- **Name**: `shfmt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mvdan.cc/sh/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install .sh
+launchpad install shfmt
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `shfmt`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `shfmt`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +.sh@3.11.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) shfmt -- $SHELL -i
 ```
 
 ## Usage Examples

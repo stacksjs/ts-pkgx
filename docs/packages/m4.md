@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/m4@1.4.19 -- $SHELL -i
+sh <(curl https://pkgx.sh) m4 -- $SHELL -i
 ```
 
 ## Usage Examples

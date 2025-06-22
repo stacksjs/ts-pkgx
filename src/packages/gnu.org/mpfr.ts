@@ -1,18 +1,18 @@
 /**
- * **mpfr** - pkgx package
+ * **gnu.org/mpfr** - pkgx package
  *
  * @domain `gnu.org/mpfr`
  * @version `4.2.2` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnu.org/mpfr -- $SHELL -i`
+ * @install `launchpad install gnu.org/mpfr`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgmpfr
- * console.log(pkg.name)        // "mpfr"
+ * console.log(pkg.name)        // "gnu.org/mpfr"
  * console.log(pkg.versions[0]) // "4.2.2" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const gnuorgmpfrPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mpfr' as const,
+  name: 'gnu.org/mpfr' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +39,7 @@ export const gnuorgmpfrPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnu.org/mpfr -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnu.org/mpfr' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -53,6 +53,8 @@ export const gnuorgmpfrPackage = {
     '4.1.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/mpfr -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/mpfr' as const,
 }
 
 export type GnuorgmpfrPackage = typeof gnuorgmpfrPackage

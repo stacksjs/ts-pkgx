@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mysql.com -- $SHELL -i
+launchpad install mysql.com
 ```
 
 ## Programs

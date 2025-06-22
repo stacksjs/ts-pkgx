@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +fullstory.com/grpcurl@1.9.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) grpcurl -- $SHELL -i
 ```
 
 ## Usage Examples

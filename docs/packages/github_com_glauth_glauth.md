@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/glauth/glauth -- $SHELL -i
+launchpad install glauth
 ```
 
 ## Programs

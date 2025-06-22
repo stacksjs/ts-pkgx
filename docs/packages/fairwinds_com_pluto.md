@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +fairwinds.com/pluto@5.21.8 -- $SHELL -i
+sh <(curl https://pkgx.sh) pluto -- $SHELL -i
 ```
 
 ## Usage Examples

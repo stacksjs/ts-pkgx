@@ -1,11 +1,11 @@
 /**
- * **libsecret** - pkgx package
+ * **gnome.org/libsecret** - pkgx package
  *
  * @domain `gnome.org/libsecret`
  * @version `0.21.7` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnome.org/libsecret -- $SHELL -i`
+ * @install `launchpad install gnome.org/libsecret`
  * @dependencies `gnome.org/glib`, `gnupg.org/libgcrypt`, `gnupg.org/libgpg-error`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnomeorglibsecret
- * console.log(pkg.name)        // "libsecret"
+ * console.log(pkg.name)        // "gnome.org/libsecret"
  * console.log(pkg.versions[0]) // "0.21.7" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const gnomeorglibsecretPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libsecret' as const,
+  name: 'gnome.org/libsecret' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const gnomeorglibsecretPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnome.org/libsecret -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnome.org/libsecret' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -66,6 +66,8 @@ export const gnomeorglibsecretPackage = {
     '0.21.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/libsecret -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnome.org/libsecret' as const,
 }
 
 export type GnomeorglibsecretPackage = typeof gnomeorglibsecretPackage

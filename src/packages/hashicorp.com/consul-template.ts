@@ -72,6 +72,8 @@ export const consultemplatePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) consul-template -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install consul-template' as const,
 }
 
 export type ConsultemplatePackage = typeof consultemplatePackage

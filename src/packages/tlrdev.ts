@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install teller`
- * @aliases `teller`
+ * @name `teller`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.teller
  * // Or access via domain
  * const samePkg = pantry.tlrdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tlr.dev"
+ * console.log(pkg.name)        // "teller"
  * console.log(pkg.description) // "Cloud native secrets management for developers ..."
  * console.log(pkg.programs)    // ["teller"]
  * console.log(pkg.versions[0]) // "2.0.7" (latest)
@@ -32,7 +32,7 @@ export const tellerPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tlr.dev' as const,
+  name: 'teller' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,9 @@ export const tellerPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'teller',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) teller -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install teller' as const,
 }
 
 export type TellerPackage = typeof tellerPackage

@@ -93,6 +93,8 @@ export const fendPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fend -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fend' as const,
 }
 
 export type FendPackage = typeof fendPackage

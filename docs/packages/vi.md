@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +vim.org -- $SHELL -i
+launchpad install vim.org
 ```
 
 ## Programs

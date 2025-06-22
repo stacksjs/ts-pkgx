@@ -69,6 +69,8 @@ export const screenresolutionPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) screenresolution -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install screenresolution' as const,
 }
 
 export type ScreenresolutionPackage = typeof screenresolutionPackage

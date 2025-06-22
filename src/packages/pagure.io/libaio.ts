@@ -1,18 +1,18 @@
 /**
- * **libaio** - pkgx package
+ * **pagure.io/libaio** - pkgx package
  *
  * @domain `pagure.io/libaio`
  * @version `0.3.113` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +pagure.io/libaio -- $SHELL -i`
+ * @install `launchpad install pagure.io/libaio`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.pagureiolibaio
- * console.log(pkg.name)        // "libaio"
+ * console.log(pkg.name)        // "pagure.io/libaio"
  * console.log(pkg.versions[0]) // "0.3.113" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const pagureiolibaioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libaio' as const,
+  name: 'pagure.io/libaio' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +39,7 @@ export const pagureiolibaioPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pagure.io/libaio -- $SHELL -i' as const,
+  installCommand: 'launchpad install pagure.io/libaio' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -51,6 +51,8 @@ export const pagureiolibaioPackage = {
     '0.3.113',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pagure.io/libaio -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pagure.io/libaio' as const,
 }
 
 export type PagureiolibaioPackage = typeof pagureiolibaioPackage

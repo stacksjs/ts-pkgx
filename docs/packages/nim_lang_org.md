@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +nim-lang.org -- $SHELL -i
+launchpad install nim-lang.org
 ```
 
 ## Programs

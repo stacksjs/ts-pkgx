@@ -6,8 +6,8 @@
  * @version `5.5.1` (39 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +podman.io -- $SHELL -i`
- * @aliases `podman`
+ * @install `launchpad install podman`
+ * @name `podman`
  * @dependencies `qemu.org`, `github.com/containers/gvisor-tap-vsock`, `darwin:github.com/crc-org/vfkit` (includes OS-specific dependencies with `os:package` format)
  * @companions `openssh.com`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.podman
  * // Or access via domain
  * const samePkg = pantry.podmanio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "podman.io"
+ * console.log(pkg.name)        // "podman"
  * console.log(pkg.description) // "Podman: A tool for managing OCI containers and ..."
  * console.log(pkg.programs)    // ["podman", "podman-remote", ...]
  * console.log(pkg.versions[0]) // "5.5.1" (latest)
@@ -33,7 +33,7 @@ export const podmanPackage = {
   /**
    * The display name of this package.
    */
-  name: 'podman.io' as const,
+  name: 'podman' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +49,7 @@ export const podmanPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +podman.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install podman' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -125,9 +125,9 @@ export const podmanPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'podman',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +podman.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install podman' as const,
 }
 
 export type PodmanPackage = typeof podmanPackage

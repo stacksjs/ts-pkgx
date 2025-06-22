@@ -1,11 +1,11 @@
-# zstd
+# facebook.com/zstd
 
 > Zstandard - Fast real-time compression algorithm
 
 ## Package Information
 
 - **Domain**: `facebook.com/zstd`
-- **Name**: `zstd`
+- **Name**: `facebook.com/zstd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/zstd/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +facebook.com/zstd -- $SHELL -i
+launchpad install facebook.com/zstd
 ```
 
 ## Programs

@@ -71,6 +71,8 @@ export const nyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ny -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ny' as const,
 }
 
 export type NyPackage = typeof nyPackage

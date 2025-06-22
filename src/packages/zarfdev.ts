@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install zarf`
- * @aliases `zarf`
+ * @name `zarf`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.zarf
  * // Or access via domain
  * const samePkg = pantry.zarfdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "zarf.dev"
+ * console.log(pkg.name)        // "zarf"
  * console.log(pkg.description) // "DevSecOps for Air Gap & Limited-Connection Syst..."
  * console.log(pkg.programs)    // ["zarf"]
  * console.log(pkg.versions[0]) // "0.56.0" (latest)
@@ -31,7 +31,7 @@ export const zarfPackage = {
   /**
    * The display name of this package.
    */
-  name: 'zarf.dev' as const,
+  name: 'zarf' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -113,9 +113,9 @@ export const zarfPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'zarf',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zarf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zarf' as const,
 }
 
 export type ZarfPackage = typeof zarfPackage

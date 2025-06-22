@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install plistutil`
- * @aliases `plistutil`
+ * @name `plistutil`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.plistutil
  * // Or access via domain
  * const samePkg = pantry.libimobiledeviceorglibplist
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libplist"
+ * console.log(pkg.name)        // "plistutil"
  * console.log(pkg.description) // "A library to handle Apple Property List format ..."
  * console.log(pkg.programs)    // ["plistutil"]
  * console.log(pkg.versions[0]) // "2.7.0" (latest)
@@ -31,7 +31,7 @@ export const plistutilPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libplist' as const,
+  name: 'plistutil' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -72,9 +72,9 @@ export const plistutilPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'plistutil',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) plistutil -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install plistutil' as const,
 }
 
 export type PlistutilPackage = typeof plistutilPackage

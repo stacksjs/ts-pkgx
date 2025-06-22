@@ -22,7 +22,7 @@ The MongoDB Database
 
 **Programs**: install_compass, mongod, mongos
 
-**Install**: `launchpad install +mongodb.com -- $SHELL -i`
+**Install**: `launchpad install mongodb.com`
 
 ---
 
@@ -32,7 +32,7 @@ MySQL Server, the world's most popular open source database, and MySQL Cluster, 
 
 **Programs**: mysql_client_test, my_print_defaults, myisam_ftdump, myisamchk, myisamlog, myisampack, mysql, mysql_config, mysql_config_editor, mysql_keyring_encryption_test, mysql_migrate_keyring, mysql_secure_installation, mysql_tzinfo_to_sql, mysqladmin, mysqlbinlog, mysqlcheck, mysqld, mysqld_multi, mysqld_safe, mysqldump, mysqldumpslow, mysqlimport, mysqlrouter, mysqlrouter_keyring, mysqlrouter_passwd, mysqlrouter_plugin_info, mysqlshow, mysqlslap, mysqltest, mysqltest_safe_process, mysqlxtest
 
-**Install**: `launchpad install +mysql.com -- $SHELL -i`
+**Install**: `launchpad install mysql.com`
 
 ---
 
@@ -42,7 +42,7 @@ Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirr
 
 **Programs**: clusterdb, createdb, dropdb, dropuser, ecpg, initdb, pg_archivecleanup, pg_basebackup, pg_config, pg_controldata, pg_ctl, pg_dump, pg_dumpall, pg_isready, pg_receivewal, pg_recvlogical, pg_resetwal, pg_restore, pg_rewind, pg_test_fsync, pg_test_timing, pg_upgrade, pg_waldump, pgbench, postgres, psql, reindexdb, vacuumdb
 
-**Install**: `launchpad install +postgresql.org -- $SHELL -i`
+**Install**: `launchpad install postgresql.org`
 
 ---
 
@@ -52,7 +52,7 @@ Redis is an in-memory database that persists on disk. The data model is key-valu
 
 **Programs**: redis-server, redis-cli, redis-benchmark
 
-**Install**: `launchpad install +redis.io -- $SHELL -i`
+**Install**: `launchpad install redis`
 
 ---
 
@@ -82,7 +82,7 @@ A flexible distributed key-value datastore that is optimized for caching and oth
 
 **Programs**: valkey-server, valkey-cli, valkey-benchmark
 
-**Install**: `launchpad install +valkey.io -- $SHELL -i`
+**Install**: `launchpad install valkey`
 
 ---
 

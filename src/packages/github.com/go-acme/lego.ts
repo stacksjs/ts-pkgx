@@ -87,6 +87,8 @@ export const legoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) lego -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lego' as const,
 }
 
 export type LegoPackage = typeof legoPackage

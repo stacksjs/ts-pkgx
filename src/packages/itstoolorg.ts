@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install itstool`
- * @aliases `itstool`
+ * @name `itstool`
  * @dependencies `gnome.org/libxml2`, `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.itstool
  * // Or access via domain
  * const samePkg = pantry.itstoolorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "itstool.org"
+ * console.log(pkg.name)        // "itstool"
  * console.log(pkg.description) // "Translate XML with PO files using W3C Internati..."
  * console.log(pkg.programs)    // ["itstool"]
  * console.log(pkg.versions[0]) // "2.0.7" (latest)
@@ -32,7 +32,7 @@ export const itstoolPackage = {
   /**
    * The display name of this package.
    */
-  name: 'itstool.org' as const,
+  name: 'itstool' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -76,9 +76,9 @@ export const itstoolPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'itstool',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) itstool -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install itstool' as const,
 }
 
 export type ItstoolPackage = typeof itstoolPackage

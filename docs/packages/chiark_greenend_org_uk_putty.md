@@ -1,11 +1,11 @@
-# putty
+# chiark.greenend.org.uk/putty
 
 > Implementation of Telnet and SSH
 
 ## Package Information
 
 - **Domain**: `chiark.greenend.org.uk/putty`
-- **Name**: `putty`
+- **Name**: `chiark.greenend.org.uk/putty`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/chiark.greenend.org.uk/putty/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +chiark.greenend.org.uk/putty
+launchpad install chiark.greenend.org.uk/putty
 ```
 
 ## Programs

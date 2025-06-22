@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pscale`
- * @aliases `pscale`
+ * @name `pscale`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pscale
  * // Or access via domain
  * const samePkg = pantry.planetscalecom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "planetscale.com"
+ * console.log(pkg.name)        // "pscale"
  * console.log(pkg.description) // "The CLI for PlanetScale Database"
  * console.log(pkg.programs)    // ["pscale"]
  * console.log(pkg.versions[0]) // "0.245.0" (latest)
@@ -31,7 +31,7 @@ export const pscalePackage = {
   /**
    * The display name of this package.
    */
-  name: 'planetscale.com' as const,
+  name: 'pscale' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -136,9 +136,9 @@ export const pscalePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pscale',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pscale -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pscale' as const,
 }
 
 export type PscalePackage = typeof pscalePackage

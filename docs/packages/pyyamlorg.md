@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +pyyaml.org -- $SHELL -i
+launchpad install pyyaml.org
 ```
 
 ## Programs

@@ -1,11 +1,11 @@
 /**
- * **iso-codes** - pkgx package
+ * **debian.org/iso-codes** - pkgx package
  *
  * @domain `debian.org/iso-codes`
  * @version `4.18.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +debian.org/iso-codes -- $SHELL -i`
+ * @install `launchpad install debian.org/iso-codes`
  * @dependencies `gnu.org/gettext`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.debianorgisocodes
- * console.log(pkg.name)        // "iso-codes"
+ * console.log(pkg.name)        // "debian.org/iso-codes"
  * console.log(pkg.versions[0]) // "4.18.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const debianorgisocodesPackage = {
   /**
    * The display name of this package.
    */
-  name: 'iso-codes' as const,
+  name: 'debian.org/iso-codes' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const debianorgisocodesPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +debian.org/iso-codes -- $SHELL -i' as const,
+  installCommand: 'launchpad install debian.org/iso-codes' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,6 +61,8 @@ export const debianorgisocodesPackage = {
     '4.15.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +debian.org/iso-codes -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install debian.org/iso-codes' as const,
 }
 
 export type DebianorgisocodesPackage = typeof debianorgisocodesPackage

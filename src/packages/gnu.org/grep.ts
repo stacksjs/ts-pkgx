@@ -77,6 +77,8 @@ export const grepPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) grep -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install grep' as const,
 }
 
 export type GrepPackage = typeof grepPackage

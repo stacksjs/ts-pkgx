@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/Limeth/ethaddrgen@1.0.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) ethaddrgen -- $SHELL -i
 ```
 
 ## Dependencies

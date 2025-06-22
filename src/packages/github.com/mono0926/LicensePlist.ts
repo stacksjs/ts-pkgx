@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install license-plist`
- * @aliases `license-plist`
+ * @name `license-plist`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.licenseplist
  * // Or access via domain
  * const samePkg = pantry.githubcommono0926licenseplist
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "LicensePlist"
+ * console.log(pkg.name)        // "license-plist"
  * console.log(pkg.description) // "A license list generator of all your dependenci..."
  * console.log(pkg.programs)    // ["license-plist"]
  * console.log(pkg.versions[0]) // "3.27.1" (latest)
@@ -31,7 +31,7 @@ export const licenseplistPackage = {
   /**
    * The display name of this package.
    */
-  name: 'LicensePlist' as const,
+  name: 'license-plist' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -71,9 +71,9 @@ export const licenseplistPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'license-plist',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) license-plist -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install license-plist' as const,
 }
 
 export type LicenseplistPackage = typeof licenseplistPackage

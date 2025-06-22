@@ -6,19 +6,19 @@
  * @version `3.6.1` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +etcd.io -- $SHELL -i`
- * @aliases `etcd`
+ * @install `launchpad install etcd`
+ * @name `etcd`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.etcd
  * // Or access via domain
  * const samePkg = pantry.etcdio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "etcd.io"
+ * console.log(pkg.name)        // "etcd"
  * console.log(pkg.description) // "Distributed reliable key-value store for the mo..."
  * console.log(pkg.programs)    // ["etcd", "etcdctl"]
  * console.log(pkg.versions[0]) // "3.6.1" (latest)
@@ -31,7 +31,7 @@ export const etcdPackage = {
   /**
    * The display name of this package.
    */
-  name: 'etcd.io' as const,
+  name: 'etcd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const etcdPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +etcd.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install etcd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -80,9 +80,9 @@ export const etcdPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'etcd',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +etcd.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install etcd' as const,
 }
 
 export type EtcdPackage = typeof etcdPackage

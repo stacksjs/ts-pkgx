@@ -1,11 +1,11 @@
-# cpanmin.us
+# cpanm
 
 > cpanminus - get, unpack, build and install modules from CPAN
 
 ## Package Information
 
 - **Domain**: `cpanmin.us`
-- **Name**: `cpanmin.us`
+- **Name**: `cpanm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cpanmin.us/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install cpanm
 ## Programs
 
 This package provides the following executable programs:
-
-- `cpanm`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `cpanm`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +cpanmin.us@1.7048.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) cpanm -- $SHELL -i
 ```
 
 ## Dependencies

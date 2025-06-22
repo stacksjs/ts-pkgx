@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pressly.github.io/goose@3.24.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) goose -- $SHELL -i
 ```
 
 ## Usage Examples

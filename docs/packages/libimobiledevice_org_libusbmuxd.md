@@ -1,11 +1,11 @@
-# libusbmuxd
+# libimobiledevice.org/libusbmuxd
 
 > A client library to multiplex connections from and to iOS devices
 
 ## Package Information
 
 - **Domain**: `libimobiledevice.org/libusbmuxd`
-- **Name**: `libusbmuxd`
+- **Name**: `libimobiledevice.org/libusbmuxd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libimobiledevice.org/libusbmuxd/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libimobiledevice.org/libusbmuxd -- $SHELL -i
+launchpad install libimobiledevice.org/libusbmuxd
 ```
 
 ## Programs

@@ -5,7 +5,7 @@
  * @version `0.5.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +libspng.org -- $SHELL -i`
+ * @install `launchpad install libspng.org`
  * @dependencies `darwin:zlib.net` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -41,7 +41,7 @@ export const libspngorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +libspng.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install libspng.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,6 +60,8 @@ export const libspngorgPackage = {
     '0.5.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libspng.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libspng.org' as const,
 }
 
 export type LibspngorgPackage = typeof libspngorgPackage

@@ -70,6 +70,8 @@ export const zapPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zap -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zap' as const,
 }
 
 export type ZapPackage = typeof zapPackage

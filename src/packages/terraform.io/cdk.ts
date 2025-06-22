@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cdktf`
- * @aliases `cdktf`, `terraform-cdk`
+ * @name `terraform-cdk`
+ * @aliases `cdktf`
  * @dependencies `nodejs.org^17 || ^18 || ^19 || ^20`
  *
  * @example
@@ -19,7 +20,7 @@
  * // Or access via domain
  * const samePkg = pantry.terraformiocdk
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cdk"
+ * console.log(pkg.name)        // "terraform-cdk"
  * console.log(pkg.description) // "Define infrastructure resources using programmi..."
  * console.log(pkg.programs)    // ["cdktf"]
  * console.log(pkg.versions[0]) // "0.21.0" (latest)
@@ -32,7 +33,7 @@ export const cdktfPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cdk' as const,
+  name: 'terraform-cdk' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -96,8 +97,9 @@ export const cdktfPackage = {
    */
   aliases: [
     'cdktf',
-    'terraform-cdk',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cdktf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cdktf' as const,
 }
 
 export type CdktfPackage = typeof cdktfPackage

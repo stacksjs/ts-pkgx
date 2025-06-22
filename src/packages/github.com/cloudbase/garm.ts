@@ -6,19 +6,19 @@
  * @version `0.1.5` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/cloudbase/garm -- $SHELL -i`
- * @aliases `cloudbase/garm`
+ * @install `launchpad install github.com/cloudbase/garm`
+ * @name `cloudbase/garm`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cloudbasegarm
  * // Or access via domain
  * const samePkg = pantry.githubcomcloudbasegarm
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "garm"
+ * console.log(pkg.name)        // "cloudbase/garm"
  * console.log(pkg.description) // "GitHub Actions Runner Manager"
  * console.log(pkg.programs)    // ["garm", "garm-cli"]
  * console.log(pkg.versions[0]) // "0.1.5" (latest)
@@ -31,7 +31,7 @@ export const cloudbasegarmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'garm' as const,
+  name: 'cloudbase/garm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const cloudbasegarmPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/cloudbase/garm -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/cloudbase/garm' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,9 +70,9 @@ export const cloudbasegarmPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cloudbase/garm',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/cloudbase/garm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/cloudbase/garm' as const,
 }
 
 export type CloudbasegarmPackage = typeof cloudbasegarmPackage

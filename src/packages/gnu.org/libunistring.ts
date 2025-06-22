@@ -1,18 +1,18 @@
 /**
- * **libunistring** - pkgx package
+ * **gnu.org/libunistring** - pkgx package
  *
  * @domain `gnu.org/libunistring`
  * @version `1.3.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnu.org/libunistring -- $SHELL -i`
+ * @install `launchpad install gnu.org/libunistring`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorglibunistring
- * console.log(pkg.name)        // "libunistring"
+ * console.log(pkg.name)        // "gnu.org/libunistring"
  * console.log(pkg.versions[0]) // "1.3.0" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const gnuorglibunistringPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libunistring' as const,
+  name: 'gnu.org/libunistring' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +39,7 @@ export const gnuorglibunistringPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnu.org/libunistring -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnu.org/libunistring' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -53,6 +53,8 @@ export const gnuorglibunistringPackage = {
     '1.1.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/libunistring -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/libunistring' as const,
 }
 
 export type GnuorglibunistringPackage = typeof gnuorglibunistringPackage

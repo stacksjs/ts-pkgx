@@ -70,6 +70,8 @@ export const x265Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) x265 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x265' as const,
 }
 
 export type X265Package = typeof x265Package

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +invisible-island.net/dialog -- $SHELL -i
+launchpad install dialog
 ```
 
 ## Programs

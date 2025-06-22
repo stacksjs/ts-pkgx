@@ -1,12 +1,12 @@
 /**
- * **gauche** - R7RS Scheme implementation, developed to be a handy script interpreter
+ * **practical-scheme.net/gauche** - R7RS Scheme implementation, developed to be a handy script interpreter
  *
  * @domain `practical-scheme.net/gauche`
  * @programs `gauche-cesconv`, `gauche-config`, `gauche-install`, `gauche-package`, `gosh`
  * @version `0.9.15` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +practical-scheme.net/gauche -- $SHELL -i`
+ * @install `launchpad install practical-scheme.net/gauche`
  * @dependencies `curl.se/ca-certs>=2023`, `github.com/Mbed-TLS/mbedtls^3.5`, `github.com/besser82/libxcrypt^4.4`, ... (+1 more)
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.practicalschemenetgauche
- * console.log(pkg.name)        // "gauche"
+ * console.log(pkg.name)        // "practical-scheme.net/gauche"
  * console.log(pkg.description) // "R7RS Scheme implementation, developed to be a h..."
  * console.log(pkg.programs)    // ["gauche-cesconv", "gauche-config", ...]
  * console.log(pkg.versions[0]) // "0.9.15" (latest)
@@ -27,7 +27,7 @@ export const practicalschemenetgauchePackage = {
   /**
    * The display name of this package.
    */
-  name: 'gauche' as const,
+  name: 'practical-scheme.net/gauche' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const practicalschemenetgauchePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +practical-scheme.net/gauche -- $SHELL -i' as const,
+  installCommand: 'launchpad install practical-scheme.net/gauche' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,6 +75,8 @@ export const practicalschemenetgauchePackage = {
     '0.9.14',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +practical-scheme.net/gauche -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install practical-scheme.net/gauche' as const,
 }
 
 export type PracticalschemenetgauchePackage = typeof practicalschemenetgauchePackage

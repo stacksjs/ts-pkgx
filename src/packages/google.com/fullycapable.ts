@@ -1,19 +1,19 @@
 /**
- * **fullycapable** - pkgx package
+ * **google.com/fullycapable** - pkgx package
  *
  * @domain `google.com/fullycapable`
  * @programs `capsh`, `getcap`, `getpcaps`, `setcap`
  * @version `2.66.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +google.com/fullycapable -- $SHELL -i`
+ * @install `launchpad install google.com/fullycapable`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.googlecomfullycapable
- * console.log(pkg.name)        // "fullycapable"
+ * console.log(pkg.name)        // "google.com/fullycapable"
  * console.log(pkg.programs)    // ["capsh", "getcap", ...]
  * console.log(pkg.versions[0]) // "2.66.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const googlecomfullycapablePackage = {
   /**
    * The display name of this package.
    */
-  name: 'fullycapable' as const,
+  name: 'google.com/fullycapable' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const googlecomfullycapablePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +google.com/fullycapable -- $SHELL -i' as const,
+  installCommand: 'launchpad install google.com/fullycapable' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -62,6 +62,8 @@ export const googlecomfullycapablePackage = {
     '2.66.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +google.com/fullycapable -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install google.com/fullycapable' as const,
 }
 
 export type GooglecomfullycapablePackage = typeof googlecomfullycapablePackage

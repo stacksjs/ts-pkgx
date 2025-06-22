@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install exiftool`
- * @aliases `exiftool`
+ * @name `exiftool`
  * @dependencies `perl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.exiftool
  * // Or access via domain
  * const samePkg = pantry.exiftoolorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "exiftool.org"
+ * console.log(pkg.name)        // "exiftool"
  * console.log(pkg.description) // "Perl lib for reading and writing EXIF metadata"
  * console.log(pkg.programs)    // ["exiftool"]
  * console.log(pkg.versions[0]) // "13.30.0" (latest)
@@ -32,7 +32,7 @@ export const exiftoolPackage = {
   /**
    * The display name of this package.
    */
-  name: 'exiftool.org' as const,
+  name: 'exiftool' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -82,9 +82,9 @@ export const exiftoolPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'exiftool',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) exiftool -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install exiftool' as const,
 }
 
 export type ExiftoolPackage = typeof exiftoolPackage

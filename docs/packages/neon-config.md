@@ -1,11 +1,11 @@
-# neon
+# neon-config
 
 > neon - an HTTP/1.1 and WebDAV client library with a C API
 
 ## Package Information
 
 - **Domain**: `notroj.github.io/neon`
-- **Name**: `neon`
+- **Name**: `neon-config`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/notroj.github.io/neon/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install neon-config
 ## Programs
 
 This package provides the following executable programs:
-
-- `neon-config`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `neon-config`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +notroj.github.io/neon@0.34.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) neon-config -- $SHELL -i
 ```
 
 ## Dependencies

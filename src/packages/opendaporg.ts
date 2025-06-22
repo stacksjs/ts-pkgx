@@ -6,7 +6,7 @@
  * @version `3.21.1` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +opendap.org -- $SHELL -i`
+ * @install `launchpad install opendap.org`
  * @dependencies `gnome.org/libxml2`, `openssl.org`, `curl.se`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -43,7 +43,7 @@ export const opendaporgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +opendap.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install opendap.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,6 +76,8 @@ export const opendaporgPackage = {
     '3.20.11',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +opendap.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install opendap.org' as const,
 }
 
 export type OpendaporgPackage = typeof opendaporgPackage

@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/samply@0.13.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) samply -- $SHELL -i
 ```
 
 ## Usage Examples

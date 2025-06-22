@@ -1,11 +1,11 @@
-# aws-sdk-cpp
+# github.com/aws/aws-sdk-cpp
 
 > AWS SDK for C++
 
 ## Package Information
 
 - **Domain**: `github.com/aws/aws-sdk-cpp`
-- **Name**: `aws-sdk-cpp`
+- **Name**: `github.com/aws/aws-sdk-cpp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/aws/aws-sdk-cpp/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/aws/aws-sdk-cpp -- $SHELL -i
+launchpad install github.com/aws/aws-sdk-cpp
 ```
 
 ## Programs

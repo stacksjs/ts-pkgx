@@ -1,11 +1,11 @@
-# desktop-file-utils
+# freedesktop.org/desktop-file-utils
 
 > Command-line utilities for working with desktop entries
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/desktop-file-utils`
-- **Name**: `desktop-file-utils`
+- **Name**: `freedesktop.org/desktop-file-utils`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/desktop-file-utils/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +freedesktop.org/desktop-file-utils -- $SHELL -i
+launchpad install freedesktop.org/desktop-file-utils
 ```
 
 ## Programs

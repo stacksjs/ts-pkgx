@@ -1,19 +1,19 @@
 /**
- * **binutils** - GNU binary tools for native development
+ * **gnu.org/binutils** - GNU binary tools for native development
  *
  * @domain `gnu.org/binutils`
  * @programs `addr2line`, `ar`, `c++filt`, `elfedit`, `nm`, ... (+7 more)
  * @version `2.44.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnu.org/binutils -- $SHELL -i`
+ * @install `launchpad install gnu.org/binutils`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgbinutils
- * console.log(pkg.name)        // "binutils"
+ * console.log(pkg.name)        // "gnu.org/binutils"
  * console.log(pkg.description) // "GNU binary tools for native development"
  * console.log(pkg.programs)    // ["addr2line", "ar", ...]
  * console.log(pkg.versions[0]) // "2.44.0" (latest)
@@ -26,7 +26,7 @@ export const gnuorgbinutilsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'binutils' as const,
+  name: 'gnu.org/binutils' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const gnuorgbinutilsPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnu.org/binutils -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnu.org/binutils' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,6 +77,8 @@ export const gnuorgbinutilsPackage = {
     '2.39.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/binutils -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/binutils' as const,
 }
 
 export type GnuorgbinutilsPackage = typeof gnuorgbinutilsPackage

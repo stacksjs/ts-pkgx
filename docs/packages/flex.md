@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/westes/flex -- $SHELL -i
+launchpad install flex
 ```
 
 ## Programs

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install edgedb`
- * @aliases `edgedb`
+ * @name `edgedb`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.edgedb
  * // Or access via domain
  * const samePkg = pantry.edgedbcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "edgedb.com"
+ * console.log(pkg.name)        // "edgedb"
  * console.log(pkg.description) // "The EdgeDB CLI"
  * console.log(pkg.programs)    // ["edgedb"]
  * console.log(pkg.versions[0]) // "7.7.0" (latest)
@@ -31,7 +31,7 @@ export const edgedbPackage = {
   /**
    * The display name of this package.
    */
-  name: 'edgedb.com' as const,
+  name: 'edgedb' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -105,9 +105,9 @@ export const edgedbPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'edgedb',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) edgedb -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install edgedb' as const,
 }
 
 export type EdgedbPackage = typeof edgedbPackage

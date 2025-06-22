@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/DMTF/redfishtool@1.1.8 -- $SHELL -i
+sh <(curl https://pkgx.sh) redfishtool -- $SHELL -i
 ```
 
 ## Dependencies

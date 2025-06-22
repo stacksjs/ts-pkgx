@@ -5,7 +5,7 @@
  * @version `0.6.25` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +libexif.github.io -- $SHELL -i`
+ * @install `launchpad install libexif.github.io`
  * @dependencies `gnu.org/gettext`
  *
  * @example
@@ -41,7 +41,7 @@ export const libexifgithubioPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +libexif.github.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install libexif.github.io' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,6 +60,8 @@ export const libexifgithubioPackage = {
     '0.6.24',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libexif.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libexif.github.io' as const,
 }
 
 export type LibexifgithubioPackage = typeof libexifgithubioPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install eas`
- * @aliases `eas`
+ * @name `eas`
  * @dependencies `nodejs.org^18.18 || >=20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.eas
  * // Or access via domain
  * const samePkg = pantry.expodeveascli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "eas-cli"
+ * console.log(pkg.name)        // "eas"
  * console.log(pkg.description) // "Fastest way to build, submit, and update iOS an..."
  * console.log(pkg.programs)    // ["eas"]
  * console.log(pkg.versions[0]) // "16.12.0" (latest)
@@ -32,7 +32,7 @@ export const easPackage = {
   /**
    * The display name of this package.
    */
-  name: 'eas-cli' as const,
+  name: 'eas' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -210,9 +210,9 @@ export const easPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'eas',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) eas -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install eas' as const,
 }
 
 export type EasPackage = typeof easPackage

@@ -89,6 +89,8 @@ export const awsiamauthenticatorPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aws-iam-authenticator -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install aws-iam-authenticator' as const,
 }
 
 export type AwsiamauthenticatorPackage = typeof awsiamauthenticatorPackage

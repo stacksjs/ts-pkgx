@@ -1,11 +1,11 @@
-# snyk.io
+# snyk
 
 > Scans and monitors projects for security vulnerabilities
 
 ## Package Information
 
 - **Domain**: `snyk.io`
-- **Name**: `snyk.io`
+- **Name**: `snyk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/snyk.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install snyk
 ## Programs
 
 This package provides the following executable programs:
-
-- `snyk`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `snyk`
 
@@ -51,7 +45,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +snyk.io@1.1297.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) snyk -- $SHELL -i
 ```
 
 ## Dependencies

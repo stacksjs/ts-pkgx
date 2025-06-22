@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sops`
- * @aliases `sops`
+ * @name `sops`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sops
  * // Or access via domain
  * const samePkg = pantry.getsopsio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "getsops.io"
+ * console.log(pkg.name)        // "sops"
  * console.log(pkg.description) // "Simple and flexible tool for managing secrets"
  * console.log(pkg.programs)    // ["sops"]
  * console.log(pkg.versions[0]) // "3.10.2" (latest)
@@ -31,7 +31,7 @@ export const sopsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'getsops.io' as const,
+  name: 'sops' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -76,9 +76,9 @@ export const sopsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sops',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sops -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sops' as const,
 }
 
 export type SopsPackage = typeof sopsPackage

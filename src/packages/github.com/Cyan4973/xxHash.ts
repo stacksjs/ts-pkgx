@@ -1,24 +1,24 @@
 /**
- * **xxh** - Extremely fast non-cryptographic hash algorithm
+ * **xxhsum** - Extremely fast non-cryptographic hash algorithm
  *
  * @domain `github.com/Cyan4973/xxHash`
  * @programs `xxhsum`, `xxh32sum`, `xxh64sum`, `xxh128sum`
  * @version `0.8.3` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/Cyan4973/xxHash -- $SHELL -i`
- * @aliases `xxh`
+ * @install `launchpad install xxhsum`
+ * @name `xxhsum`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xxh
+ * // Access the package
+ * const pkg = pantry.xxhsum
  * // Or access via domain
  * const samePkg = pantry.githubcomcyan4973xxhash
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "xxHash"
+ * console.log(pkg.name)        // "xxhsum"
  * console.log(pkg.description) // "Extremely fast non-cryptographic hash algorithm"
  * console.log(pkg.programs)    // ["xxhsum", "xxh32sum", ...]
  * console.log(pkg.versions[0]) // "0.8.3" (latest)
@@ -27,11 +27,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Cyan4973/xxHash.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xxhPackage = {
+export const xxhsumPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xxHash' as const,
+  name: 'xxhsum' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const xxhPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/Cyan4973/xxHash -- $SHELL -i' as const,
+  installCommand: 'launchpad install xxhsum' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,9 +73,9 @@ export const xxhPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'xxh',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/Cyan4973/xxHash -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xxhsum' as const,
 }
 
-export type XxhPackage = typeof xxhPackage
+export type XxhsumPackage = typeof xxhsumPackage

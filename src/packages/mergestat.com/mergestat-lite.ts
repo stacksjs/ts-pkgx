@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mergestat`
- * @aliases `mergestat`
+ * @name `mergestat`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mergestat
  * // Or access via domain
  * const samePkg = pantry.mergestatcommergestatlite
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mergestat-lite"
+ * console.log(pkg.name)        // "mergestat"
  * console.log(pkg.description) // "Query git repositories with SQL. Generate repor..."
  * console.log(pkg.programs)    // ["mergestat"]
  * console.log(pkg.versions[0]) // "0.6.2" (latest)
@@ -31,7 +31,7 @@ export const mergestatPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mergestat-lite' as const,
+  name: 'mergestat' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -69,9 +69,9 @@ export const mergestatPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mergestat',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mergestat -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mergestat' as const,
 }
 
 export type MergestatPackage = typeof mergestatPackage

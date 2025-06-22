@@ -79,6 +79,8 @@ export const goosePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) goose -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install goose' as const,
 }
 
 export type GoosePackage = typeof goosePackage

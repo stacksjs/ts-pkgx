@@ -1,11 +1,11 @@
-# linkerd2
+# linkerd
 
 > Ultralight, security-first service mesh for Kubernetes. Main repo for Linkerd 2.x.
 
 ## Package Information
 
 - **Domain**: `linkerd.io/linkerd2`
-- **Name**: `linkerd2`
+- **Name**: `linkerd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/linkerd.io/linkerd2/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install linkerd
 ## Programs
 
 This package provides the following executable programs:
-
-- `linkerd`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `linkerd`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +linkerd.io/linkerd2@2.14.10 -- $SHELL -i
+sh <(curl https://pkgx.sh) linkerd -- $SHELL -i
 ```
 
 ## Usage Examples

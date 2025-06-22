@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +openjdk.org -- $SHELL -i
+launchpad install openjdk.org
 ```
 
 ## Programs

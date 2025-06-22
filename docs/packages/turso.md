@@ -1,11 +1,11 @@
-# turso.tech
+# turso
 
 > Command line interface to Turso.
 
 ## Package Information
 
 - **Domain**: `turso.tech`
-- **Name**: `turso.tech`
+- **Name**: `turso`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/turso.tech/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install turso
 ## Programs
 
 This package provides the following executable programs:
-
-- `turso`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `turso`
 
@@ -60,7 +54,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +turso.tech@1.0.11 -- $SHELL -i
+sh <(curl https://pkgx.sh) turso -- $SHELL -i
 ```
 
 ## Usage Examples

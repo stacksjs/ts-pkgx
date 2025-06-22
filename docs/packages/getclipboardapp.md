@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) cb
+launchpad install cb
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +getclipboard.app@0.9.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) cb -- $SHELL -i
 ```
 
 ## Dependencies
@@ -45,11 +45,10 @@ sh <(curl https://pkgx.sh) +getclipboard.app@0.9.1 -- $SHELL -i
 This package depends on:
 
 - `openssl.org^1.1`
-- `linuxalsa-project.org/alsa-lib@1x.org/x11@1wayland.freedesktop.org@1gnu.org/gcc/libstdcxx@14`
-- `alsa-project.org/alsa-lib@1`
-- `x.org/x11@1`
-- `wayland.freedesktop.org@1`
-- `gnu.org/gcc/libstdcxx@14`
+- `linux:alsa-project.org/alsa-lib@1`
+- `linux:x.org/x11@1`
+- `linux:wayland.freedesktop.org@1`
+- `linux:gnu.org/gcc/libstdcxx@14`
 
 ## Usage Examples
 

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) amp
+launchpad install amp
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +amp.rs@0.7.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) amp -- $SHELL -i
 ```
 
 ## Dependencies
@@ -46,8 +46,7 @@ This package depends on:
 
 - `zlib.net@1`
 - `libgit2.org@1`
-- `linuxopenssl.org@1.1`
-- `openssl.org@1.1`
+- `linux:openssl.org@1.1`
 
 ## Usage Examples
 

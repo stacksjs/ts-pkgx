@@ -1,11 +1,11 @@
-# tailcall.run
+# tailcall
 
 > High Performance GraphQL Runtime
 
 ## Package Information
 
 - **Domain**: `tailcall.run`
-- **Name**: `tailcall.run`
+- **Name**: `tailcall`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tailcall.run/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install tailcall
 ## Programs
 
 This package provides the following executable programs:
-
-- `tailcall`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `tailcall`
 
@@ -167,7 +161,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +tailcall.run@1.6.11 -- $SHELL -i
+sh <(curl https://pkgx.sh) tailcall -- $SHELL -i
 ```
 
 ## Usage Examples

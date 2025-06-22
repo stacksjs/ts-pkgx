@@ -1,11 +1,11 @@
-# six
+# github.com/benjaminp/six
 
 > Python 2 and 3 compatibility library
 
 ## Package Information
 
 - **Domain**: `github.com/benjaminp/six`
-- **Name**: `six`
+- **Name**: `github.com/benjaminp/six`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/benjaminp/six/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/benjaminp/six -- $SHELL -i
+launchpad install github.com/benjaminp/six
 ```
 
 ## Programs

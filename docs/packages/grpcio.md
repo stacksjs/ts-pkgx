@@ -1,11 +1,11 @@
-# grpc.io
+# grpc
 
 > The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)
 
 ## Package Information
 
 - **Domain**: `grpc.io`
-- **Name**: `grpc.io`
+- **Name**: `grpc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/grpc.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install grpc.io
+launchpad install grpc
 ```
 
 ## Programs
@@ -28,12 +28,6 @@ This package provides the following executable programs:
 - `grpc_ruby_plugin`
 - `grpc_php_plugin`
 - `grpc_cli`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `grpc`
 
 ## Available Versions
 

@@ -69,6 +69,8 @@ export const awsvaultPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aws-vault -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install aws-vault' as const,
 }
 
 export type AwsvaultPackage = typeof awsvaultPackage

@@ -1,5 +1,5 @@
 /**
- * **vlang.io** - Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
+ * **v** - Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
  *
  * @domain `vlang.io`
  * @programs `v`
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.vlangio
- * console.log(pkg.name)        // "vlang.io"
+ * console.log(pkg.name)        // "v"
  * console.log(pkg.description) // "Simple, fast, safe, compiled language for devel..."
  * console.log(pkg.programs)    // ["v"]
  * console.log(pkg.versions[0]) // "0.4.11" (latest)
@@ -26,7 +26,7 @@ export const vlangioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'vlang.io' as const,
+  name: 'v' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -74,6 +74,8 @@ export const vlangioPackage = {
     '0.3.3',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) v -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install v' as const,
 }
 
 export type VlangioPackage = typeof vlangioPackage

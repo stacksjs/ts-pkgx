@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +radicle.org -- $SHELL -i
+launchpad install radicle.org
 ```
 
 ## Programs

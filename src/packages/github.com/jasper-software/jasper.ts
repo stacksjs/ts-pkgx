@@ -86,6 +86,8 @@ export const jasperPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jasper -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jasper' as const,
 }
 
 export type JasperPackage = typeof jasperPackage

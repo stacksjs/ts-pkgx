@@ -1,11 +1,11 @@
-# bcrypt.sourceforge.net
+# bcrypt
 
 > Cross platform file encryption utility using blowfish
 
 ## Package Information
 
 - **Domain**: `bcrypt.sourceforge.net`
-- **Name**: `bcrypt.sourceforge.net`
+- **Name**: `bcrypt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bcrypt.sourceforge.net/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install bcrypt
 ## Programs
 
 This package provides the following executable programs:
-
-- `bcrypt`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `bcrypt`
 

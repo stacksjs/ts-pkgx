@@ -84,6 +84,8 @@ export const xauthPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xauth -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xauth' as const,
 }
 
 export type XauthPackage = typeof xauthPackage

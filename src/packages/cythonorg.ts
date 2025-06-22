@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cython`
- * @aliases `cython`
+ * @name `cython`
  * @dependencies `python.org<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cython
  * // Or access via domain
  * const samePkg = pantry.cythonorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cython.org"
+ * console.log(pkg.name)        // "cython"
  * console.log(pkg.description) // "Compiler for writing C extensions for the Pytho..."
  * console.log(pkg.programs)    // ["cython"]
  * console.log(pkg.versions[0]) // "3.1.2" (latest)
@@ -32,7 +32,7 @@ export const cythonPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cython.org' as const,
+  name: 'cython' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -94,9 +94,9 @@ export const cythonPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cython',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cython -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cython' as const,
 }
 
 export type CythonPackage = typeof cythonPackage

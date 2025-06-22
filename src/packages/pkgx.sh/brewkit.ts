@@ -141,6 +141,8 @@ export const bkPackage = {
   aliases: [
     'bk',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bk -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bk' as const,
 }
 
 export type BkPackage = typeof bkPackage

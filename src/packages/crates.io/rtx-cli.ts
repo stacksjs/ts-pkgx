@@ -1,11 +1,11 @@
 /**
- * **rtx-cli** - dev tools, env vars, task runner
+ * **crates.io/rtx-cli** - dev tools, env vars, task runner
  *
  * @domain `crates.io/rtx-cli`
  * @version `2025.6.5` (380 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +crates.io/rtx-cli -- $SHELL -i`
+ * @install `launchpad install crates.io/rtx-cli`
  * @dependencies `openssl.org^1.1 # newer RTX after 1.35.2 versions require openssl`, `libgit2.org^1 # newer mise after 2024.5.12 versions require libgit2`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.cratesiortxcli
- * console.log(pkg.name)        // "rtx-cli"
+ * console.log(pkg.name)        // "crates.io/rtx-cli"
  * console.log(pkg.description) // "dev tools, env vars, task runner"
  * console.log(pkg.versions[0]) // "2025.6.5" (latest)
  * ```
@@ -25,7 +25,7 @@ export const cratesiortxcliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rtx-cli' as const,
+  name: 'crates.io/rtx-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const cratesiortxcliPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +crates.io/rtx-cli -- $SHELL -i' as const,
+  installCommand: 'launchpad install crates.io/rtx-cli' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -439,6 +439,8 @@ export const cratesiortxcliPackage = {
     '1.28.5',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/rtx-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/rtx-cli' as const,
 }
 
 export type CratesiortxcliPackage = typeof cratesiortxcliPackage

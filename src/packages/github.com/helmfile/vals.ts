@@ -100,6 +100,8 @@ export const valsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vals -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vals' as const,
 }
 
 export type ValsPackage = typeof valsPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +glaros.dtc.umn.edu/metis -- $SHELL -i
+launchpad install metis
 ```
 
 ## Programs

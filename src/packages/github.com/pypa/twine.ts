@@ -82,6 +82,8 @@ export const twinePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) twine -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install twine' as const,
 }
 
 export type TwinePackage = typeof twinePackage

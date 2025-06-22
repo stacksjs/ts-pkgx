@@ -1,11 +1,11 @@
-# eksctl.io
+# eksctl
 
 > Simple command-line tool for creating clusters on Amazon EKS
 
 ## Package Information
 
 - **Domain**: `eksctl.io`
-- **Name**: `eksctl.io`
+- **Name**: `eksctl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/eksctl.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install eksctl
 ## Programs
 
 This package provides the following executable programs:
-
-- `eksctl`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `eksctl`
 
@@ -54,7 +48,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +eksctl.io@0.210.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) eksctl -- $SHELL -i
 ```
 
 ## Dependencies

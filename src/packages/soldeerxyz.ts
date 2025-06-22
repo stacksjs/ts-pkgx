@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install soldeer`
- * @aliases `soldeer`
+ * @name `soldeer`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.soldeer
  * // Or access via domain
  * const samePkg = pantry.soldeerxyz
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "soldeer.xyz"
+ * console.log(pkg.name)        // "soldeer"
  * console.log(pkg.description) // "Solidity Package Manager written in rust and in..."
  * console.log(pkg.programs)    // ["soldeer"]
  * console.log(pkg.versions[0]) // "0.5.4" (latest)
@@ -31,7 +31,7 @@ export const soldeerPackage = {
   /**
    * The display name of this package.
    */
-  name: 'soldeer.xyz' as const,
+  name: 'soldeer' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -70,9 +70,9 @@ export const soldeerPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'soldeer',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) soldeer -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install soldeer' as const,
 }
 
 export type SoldeerPackage = typeof soldeerPackage

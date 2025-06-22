@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install clog`
- * @aliases `clog`
+ * @name `clog`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.clog
  * // Or access via domain
  * const samePkg = pantry.clogtoolgithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "clog-tool.github.io"
+ * console.log(pkg.name)        // "clog"
  * console.log(pkg.description) // "Colorized pattern-matching log tail utility"
  * console.log(pkg.programs)    // ["clog"]
  * console.log(pkg.versions[0]) // "0.9.3" (latest)
@@ -31,7 +31,7 @@ export const clogPackage = {
   /**
    * The display name of this package.
    */
-  name: 'clog-tool.github.io' as const,
+  name: 'clog' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const clogPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'clog',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) clog -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install clog' as const,
 }
 
 export type ClogPackage = typeof clogPackage

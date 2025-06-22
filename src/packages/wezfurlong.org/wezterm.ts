@@ -80,6 +80,8 @@ export const weztermPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wezterm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wezterm' as const,
 }
 
 export type WeztermPackage = typeof weztermPackage

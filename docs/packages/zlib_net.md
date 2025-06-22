@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +zlib.net -- $SHELL -i
+launchpad install zlib.net
 ```
 
 ## Programs

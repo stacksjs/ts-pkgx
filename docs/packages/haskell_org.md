@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +haskell.org -- $SHELL -i
+launchpad install haskell.org
 ```
 
 ## Programs

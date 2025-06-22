@@ -90,6 +90,8 @@ export const ykmanPackage = {
   aliases: [
     'ykman',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ykman -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ykman' as const,
 }
 
 export type YkmanPackage = typeof ykmanPackage

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fx`
- * @aliases `fx`
+ * @name `fx`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.fx
  * // Or access via domain
  * const samePkg = pantry.fxwtf
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "fx.wtf"
+ * console.log(pkg.name)        // "fx"
  * console.log(pkg.description) // "Terminal JSON viewer & processor"
  * console.log(pkg.programs)    // ["fx"]
  * console.log(pkg.versions[0]) // "36.0.4" (latest)
@@ -31,7 +31,7 @@ export const fxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'fx.wtf' as const,
+  name: 'fx' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -85,9 +85,9 @@ export const fxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'fx',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fx' as const,
 }
 
 export type FxPackage = typeof fxPackage

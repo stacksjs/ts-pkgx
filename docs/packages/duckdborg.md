@@ -1,11 +1,11 @@
-# duckdb.org
+# duckdb
 
 > DuckDB is an analytical in-process SQL database management system
 
 ## Package Information
 
 - **Domain**: `duckdb.org`
-- **Name**: `duckdb.org`
+- **Name**: `duckdb`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/duckdb.org/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install duckdb.org
+launchpad install duckdb
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `duckdb`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `duckdb`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +duckdb.org@1.3.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) duckdb -- $SHELL -i
 ```
 
 ## Usage Examples

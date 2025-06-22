@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install temporal`
- * @aliases `temporal`
+ * @name `temporal`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.temporal
  * // Or access via domain
  * const samePkg = pantry.temporalio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "temporal.io"
+ * console.log(pkg.name)        // "temporal"
  * console.log(pkg.description) // "Command-line interface for running Temporal Ser..."
  * console.log(pkg.programs)    // ["temporal"]
  * console.log(pkg.versions[0]) // "1.3.0" (latest)
@@ -31,7 +31,7 @@ export const temporalPackage = {
   /**
    * The display name of this package.
    */
-  name: 'temporal.io' as const,
+  name: 'temporal' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -81,9 +81,9 @@ export const temporalPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'temporal',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) temporal -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install temporal' as const,
 }
 
 export type TemporalPackage = typeof temporalPackage

@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +jedisct1.github.io/minisign@0.12.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) minisign -- $SHELL -i
 ```
 
 ## Usage Examples

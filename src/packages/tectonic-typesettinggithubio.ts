@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tectonic`
- * @aliases `tectonic`
+ * @name `tectonic`
  * @dependencies `freetype.org`, `graphite.sil.org`, `harfbuzz.org`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tectonic
  * // Or access via domain
  * const samePkg = pantry.tectonictypesettinggithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tectonic-typesetting.github.io"
+ * console.log(pkg.name)        // "tectonic"
  * console.log(pkg.description) // "A modernized, complete, self-contained TeX/LaTe..."
  * console.log(pkg.programs)    // ["tectonic"]
  * console.log(pkg.versions[0]) // "0.15.0" (latest)
@@ -32,7 +32,7 @@ export const tectonicPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tectonic-typesetting.github.io' as const,
+  name: 'tectonic' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -85,9 +85,9 @@ export const tectonicPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tectonic',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tectonic -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tectonic' as const,
 }
 
 export type TectonicPackage = typeof tectonicPackage

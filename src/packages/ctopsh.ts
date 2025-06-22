@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ctop`
- * @aliases `ctop`
+ * @name `ctop`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ctop
  * // Or access via domain
  * const samePkg = pantry.ctopsh
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ctop.sh"
+ * console.log(pkg.name)        // "ctop"
  * console.log(pkg.description) // "Top-like interface for container metrics"
  * console.log(pkg.programs)    // ["ctop"]
  * console.log(pkg.versions[0]) // "0.7.7" (latest)
@@ -31,7 +31,7 @@ export const ctopPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ctop.sh' as const,
+  name: 'ctop' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const ctopPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ctop',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ctop -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ctop' as const,
 }
 
 export type CtopPackage = typeof ctopPackage

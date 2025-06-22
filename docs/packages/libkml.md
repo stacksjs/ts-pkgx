@@ -1,11 +1,11 @@
-# libkml
+# github.com/libkml/libkml
 
 > Reference implementation of OGC KML 2.2
 
 ## Package Information
 
 - **Domain**: `github.com/libkml/libkml`
-- **Name**: `libkml`
+- **Name**: `github.com/libkml/libkml`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libkml/libkml/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/libkml/libkml -- $SHELL -i
+launchpad install github.com/libkml/libkml
 ```
 
 ## Programs

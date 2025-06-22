@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install adr`
- * @aliases `adr`
+ * @name `adr`
  * @dependencies `gnu.org/bash`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.adr
  * // Or access via domain
  * const samePkg = pantry.githubcomnpryceadrtools
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "adr-tools"
+ * console.log(pkg.name)        // "adr"
  * console.log(pkg.description) // "Command-line tools for working with Architectur..."
  * console.log(pkg.programs)    // ["adr"]
  * console.log(pkg.versions[0]) // "3.0.0" (latest)
@@ -32,7 +32,7 @@ export const adrPackage = {
   /**
    * The display name of this package.
    */
-  name: 'adr-tools' as const,
+  name: 'adr' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const adrPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'adr',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) adr -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install adr' as const,
 }
 
 export type AdrPackage = typeof adrPackage

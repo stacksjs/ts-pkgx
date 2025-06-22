@@ -1,11 +1,11 @@
-# appstream
+# appstreamcli
 
 > Tools and libraries to work with AppStream metadata
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/appstream`
-- **Name**: `appstream`
+- **Name**: `appstreamcli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/appstream/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install appstreamcli
 ## Programs
 
 This package provides the following executable programs:
-
-- `appstreamcli`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `appstreamcli`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +freedesktop.org/appstream@1.0.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) appstreamcli -- $SHELL -i
 ```
 
 ## Dependencies

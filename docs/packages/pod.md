@@ -1,11 +1,11 @@
-# cocoapods.org
+# pod
 
 > Dependency manager for Cocoa projects
 
 ## Package Information
 
 - **Domain**: `cocoapods.org`
-- **Name**: `cocoapods.org`
+- **Name**: `pod`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cocoapods.org/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install pod
 ## Programs
 
 This package provides the following executable programs:
-
-- `pod`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pod`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +cocoapods.org@1.16.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) pod -- $SHELL -i
 ```
 
 ## Dependencies

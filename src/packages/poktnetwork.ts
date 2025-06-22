@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pocket`
- * @aliases `pocket`
+ * @name `pocket`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pocket
  * // Or access via domain
  * const samePkg = pantry.poktnetwork
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pokt.network"
+ * console.log(pkg.name)        // "pocket"
  * console.log(pkg.description) // "Official implementation of the Pocket Network P..."
  * console.log(pkg.programs)    // ["pocket"]
  * console.log(pkg.versions[0]) // "0.12.0" (latest)
@@ -31,7 +31,7 @@ export const pocketPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pokt.network' as const,
+  name: 'pocket' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const pocketPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pocket',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pocket -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pocket' as const,
 }
 
 export type PocketPackage = typeof pocketPackage

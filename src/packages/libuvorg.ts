@@ -5,7 +5,7 @@
  * @version `1.51.0` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +libuv.org -- $SHELL -i`
+ * @install `launchpad install libuv.org`
  *
  * @example
  * ```typescript
@@ -40,7 +40,7 @@ export const libuvorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +libuv.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install libuv.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -61,6 +61,8 @@ export const libuvorgPackage = {
     '1.44.2',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libuv.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libuv.org' as const,
 }
 
 export type LibuvorgPackage = typeof libuvorgPackage

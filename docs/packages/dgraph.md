@@ -1,11 +1,11 @@
-# dgraph.io
+# dgraph
 
 > high-performance graph database for real-time use cases
 
 ## Package Information
 
 - **Domain**: `dgraph.io`
-- **Name**: `dgraph.io`
+- **Name**: `dgraph`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dgraph.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install dgraph
 ## Programs
 
 This package provides the following executable programs:
-
-- `dgraph`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `dgraph`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +dgraph.io@24.1.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) dgraph -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install forc`
- * @aliases `forc`
+ * @name `forc`
  * @dependencies `zlib.net^1`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.forc
  * // Or access via domain
  * const samePkg = pantry.fuellabsgithubiosway
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sway"
+ * console.log(pkg.name)        // "forc"
  * console.log(pkg.description) // "🌴 Empowering everyone to build reliable and ef..."
  * console.log(pkg.programs)    // ["forc"]
  * console.log(pkg.versions[0]) // "0.68.7" (latest)
@@ -32,7 +32,7 @@ export const forcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sway' as const,
+  name: 'forc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -150,9 +150,9 @@ export const forcPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'forc',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) forc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install forc' as const,
 }
 
 export type ForcPackage = typeof forcPackage

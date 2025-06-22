@@ -78,6 +78,8 @@ export const nnnPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nnn -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nnn' as const,
 }
 
 export type NnnPackage = typeof nnnPackage

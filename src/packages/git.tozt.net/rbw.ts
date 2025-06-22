@@ -79,6 +79,8 @@ export const rbwPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rbw -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rbw' as const,
 }
 
 export type RbwPackage = typeof rbwPackage

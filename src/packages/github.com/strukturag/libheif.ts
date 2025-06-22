@@ -6,20 +6,20 @@
  * @version `1.19.8` (20 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/strukturag/libheif -- $SHELL -i`
- * @aliases `heif`
+ * @install `launchpad install heif`
+ * @name `heif`
  * @dependencies `aomedia.googlesource.com/aom`, `libjpeg-turbo.org`, `github.com/strukturag/libde265`, ... (+4 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.heif
  * // Or access via domain
  * const samePkg = pantry.githubcomstrukturaglibheif
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libheif"
+ * console.log(pkg.name)        // "heif"
  * console.log(pkg.description) // "libheif is an HEIF and AVIF file format decoder..."
  * console.log(pkg.programs)    // ["heif-enc", "heif-info", ...]
  * console.log(pkg.versions[0]) // "1.19.8" (latest)
@@ -32,7 +32,7 @@ export const heifPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libheif' as const,
+  name: 'heif' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const heifPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/strukturag/libheif -- $SHELL -i' as const,
+  installCommand: 'launchpad install heif' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -103,9 +103,9 @@ export const heifPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'heif',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/strukturag/libheif -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install heif' as const,
 }
 
 export type HeifPackage = typeof heifPackage

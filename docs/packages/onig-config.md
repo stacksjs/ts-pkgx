@@ -1,11 +1,11 @@
-# oniguruma
+# onig-config
 
 > Regular expressions library
 
 ## Package Information
 
 - **Domain**: `github.com/kkos/oniguruma`
-- **Name**: `oniguruma`
+- **Name**: `onig-config`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kkos/oniguruma/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install onig-config
 ## Programs
 
 This package provides the following executable programs:
-
-- `onig-config`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `onig-config`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/kkos/oniguruma@6.9.10 -- $SHELL -i
+sh <(curl https://pkgx.sh) onig-config -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -6,8 +6,8 @@
  * @version `1.7.5` (17 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/ggerganov/whisper.cpp -- $SHELL -i`
- * @aliases `whisper`
+ * @install `launchpad install whisper`
+ * @name `whisper`
  * @dependencies `libsdl.org`, `linux:openmp.llvm.org^18 # as of 1.7.0`, `linux:gnu.org/gcc/libstdcxx@14` (includes OS-specific dependencies with `os:package` format)
  * @companions `huggingface.co`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.whisper
  * // Or access via domain
  * const samePkg = pantry.githubcomggerganovwhispercpp
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "whisper.cpp"
+ * console.log(pkg.name)        // "whisper"
  * console.log(pkg.description) // "Port of OpenAI's Whisper model in C/C++"
  * console.log(pkg.programs)    // ["whisper.cpp", "whisper-cli"]
  * console.log(pkg.versions[0]) // "1.7.5" (latest)
@@ -33,7 +33,7 @@ export const whisperPackage = {
   /**
    * The display name of this package.
    */
-  name: 'whisper.cpp' as const,
+  name: 'whisper' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -49,7 +49,7 @@ export const whisperPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/ggerganov/whisper.cpp -- $SHELL -i' as const,
+  installCommand: 'launchpad install whisper' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -102,9 +102,9 @@ export const whisperPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'whisper',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/ggerganov/whisper.cpp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install whisper' as const,
 }
 
 export type WhisperPackage = typeof whisperPackage

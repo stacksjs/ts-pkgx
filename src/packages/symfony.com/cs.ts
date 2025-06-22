@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install php-cs-fixer`
- * @aliases `php-cs-fixer`
+ * @name `php-cs-fixer`
  * @dependencies `php.net>=7.4<8.4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.phpcsfixer
  * // Or access via domain
  * const samePkg = pantry.symfonycomcs
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cs"
+ * console.log(pkg.name)        // "php-cs-fixer"
  * console.log(pkg.description) // "A tool to automatically fix PHP Coding Standard..."
  * console.log(pkg.programs)    // ["php-cs-fixer"]
  * console.log(pkg.versions[0]) // "3.75.0" (latest)
@@ -32,7 +32,7 @@ export const phpcsfixerPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cs' as const,
+  name: 'php-cs-fixer' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -122,9 +122,9 @@ export const phpcsfixerPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'php-cs-fixer',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) php-cs-fixer -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install php-cs-fixer' as const,
 }
 
 export type PhpcsfixerPackage = typeof phpcsfixerPackage

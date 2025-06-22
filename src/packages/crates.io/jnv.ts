@@ -75,6 +75,8 @@ export const jnvPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jnv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jnv' as const,
 }
 
 export type JnvPackage = typeof jnvPackage

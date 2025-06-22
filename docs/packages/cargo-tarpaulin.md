@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/cargo-tarpaulin@0.32.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) cargo-tarpaulin -- $SHELL -i
 ```
 
 ## Related Packages

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sing-box`
- * @aliases `sing-box`
+ * @name `sing-box`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.singbox
  * // Or access via domain
  * const samePkg = pantry.singboxapp
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sing-box.app"
+ * console.log(pkg.name)        // "sing-box"
  * console.log(pkg.description) // "The universal proxy platform"
  * console.log(pkg.programs)    // ["sing-box"]
  * console.log(pkg.versions[0]) // "1.11.14" (latest)
@@ -31,7 +31,7 @@ export const singboxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sing-box.app' as const,
+  name: 'sing-box' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -119,9 +119,9 @@ export const singboxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sing-box',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sing-box -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sing-box' as const,
 }
 
 export type SingboxPackage = typeof singboxPackage

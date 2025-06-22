@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dblab`
- * @aliases `dblab`
+ * @name `dblab`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.dblab
  * // Or access via domain
  * const samePkg = pantry.dblabdanvergaracom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "dblab.danvergara.com"
+ * console.log(pkg.name)        // "dblab"
  * console.log(pkg.description) // "The database client every command line junkie d..."
  * console.log(pkg.programs)    // ["dblab"]
  * console.log(pkg.versions[0]) // "0.33.0" (latest)
@@ -31,7 +31,7 @@ export const dblabPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dblab.danvergara.com' as const,
+  name: 'dblab' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -83,9 +83,9 @@ export const dblabPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'dblab',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dblab -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dblab' as const,
 }
 
 export type DblabPackage = typeof dblabPackage

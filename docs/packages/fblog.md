@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/fblog@4.14.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) fblog -- $SHELL -i
 ```
 
 ## Usage Examples

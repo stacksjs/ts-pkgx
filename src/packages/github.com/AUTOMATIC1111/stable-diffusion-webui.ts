@@ -8,7 +8,6 @@
  *
  * @install `launchpad install stable-diffusion-webui`
  * @name `stable-diffusion-webui`
- * @aliases `Stable Diffusion web UI`
  * @dependencies `python.org~3.10`, `tea.xyz^0  # our scripts use tea/cli`, `git-scm.org^2`
  *
  * @example
@@ -97,9 +96,9 @@ export const stablediffusionwebuiPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'Stable Diffusion web UI',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) stable-diffusion-webui -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install stable-diffusion-webui' as const,
 }
 
 export type StablediffusionwebuiPackage = typeof stablediffusionwebuiPackage

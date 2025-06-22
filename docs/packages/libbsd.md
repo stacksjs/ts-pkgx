@@ -1,11 +1,11 @@
-# libbsd
+# freedesktop.org/libbsd
 
 > BSD compatibility library (mirror)
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/libbsd`
-- **Name**: `libbsd`
+- **Name**: `freedesktop.org/libbsd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/libbsd/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +freedesktop.org/libbsd -- $SHELL -i
+launchpad install freedesktop.org/libbsd
 ```
 
 ## Programs

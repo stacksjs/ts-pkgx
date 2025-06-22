@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +nghttp2.org -- $SHELL -i
+launchpad install nghttp2.org
 ```
 
 ## Programs

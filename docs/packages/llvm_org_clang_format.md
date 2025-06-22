@@ -1,11 +1,11 @@
-# clang-format
+# llvm.org/clang-format
 
 > The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
 
 ## Package Information
 
 - **Domain**: `llvm.org/clang-format`
-- **Name**: `clang-format`
+- **Name**: `llvm.org/clang-format`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/llvm.org/clang-format/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +llvm.org/clang-format -- $SHELL -i
+launchpad install llvm.org/clang-format
 ```
 
 ## Programs

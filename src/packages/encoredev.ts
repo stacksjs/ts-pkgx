@@ -6,7 +6,7 @@
  * @version `1.48.4` (55 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +encore.dev -- $SHELL -i`
+ * @install `launchpad install encore.dev`
  * @dependencies `encore.dev/go^1.21`
  *
  * @example
@@ -43,7 +43,7 @@ export const encoredevPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +encore.dev -- $SHELL -i' as const,
+  installCommand: 'launchpad install encore.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -122,6 +122,8 @@ export const encoredevPackage = {
     '1.25.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +encore.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install encore.dev' as const,
 }
 
 export type EncoredevPackage = typeof encoredevPackage

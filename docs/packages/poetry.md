@@ -1,11 +1,11 @@
-# python-poetry.org
+# poetry
 
 > Python packaging and dependency management made easy
 
 ## Package Information
 
 - **Domain**: `python-poetry.org`
-- **Name**: `python-poetry.org`
+- **Name**: `poetry`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/python-poetry.org/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install poetry
 ## Programs
 
 This package provides the following executable programs:
-
-- `poetry`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `poetry`
 
@@ -47,7 +41,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +python-poetry.org@2.1.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) poetry -- $SHELL -i
 ```
 
 ## Dependencies

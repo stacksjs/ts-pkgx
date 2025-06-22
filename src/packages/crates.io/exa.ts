@@ -77,6 +77,8 @@ export const exaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) exa -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install exa' as const,
 }
 
 export type ExaPackage = typeof exaPackage

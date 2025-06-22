@@ -69,6 +69,8 @@ export const gitchglogPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-chglog -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-chglog' as const,
 }
 
 export type GitchglogPackage = typeof gitchglogPackage

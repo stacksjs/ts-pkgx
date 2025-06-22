@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install velero`
- * @aliases `velero`
+ * @name `velero`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.velero
  * // Or access via domain
  * const samePkg = pantry.veleroio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "velero.io"
+ * console.log(pkg.name)        // "velero"
  * console.log(pkg.description) // "Backup and migrate Kubernetes applications and ..."
  * console.log(pkg.programs)    // ["velero"]
  * console.log(pkg.versions[0]) // "1.16.1" (latest)
@@ -31,7 +31,7 @@ export const veleroPackage = {
   /**
    * The display name of this package.
    */
-  name: 'velero.io' as const,
+  name: 'velero' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const veleroPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'velero',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) velero -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install velero' as const,
 }
 
 export type VeleroPackage = typeof veleroPackage

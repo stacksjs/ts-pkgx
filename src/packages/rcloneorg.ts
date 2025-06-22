@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rclone`
- * @aliases `rclone`
+ * @name `rclone`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.rclone
  * // Or access via domain
  * const samePkg = pantry.rcloneorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rclone.org"
+ * console.log(pkg.name)        // "rclone"
  * console.log(pkg.description) // ""rsync for cloud storage" - Google Drive, S3, D..."
  * console.log(pkg.programs)    // ["rclone"]
  * console.log(pkg.versions[0]) // "1.70.1" (latest)
@@ -31,7 +31,7 @@ export const rclonePackage = {
   /**
    * The display name of this package.
    */
-  name: 'rclone.org' as const,
+  name: 'rclone' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -85,9 +85,9 @@ export const rclonePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'rclone',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rclone -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rclone' as const,
 }
 
 export type RclonePackage = typeof rclonePackage

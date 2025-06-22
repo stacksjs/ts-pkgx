@@ -1,11 +1,11 @@
-# libaec
+# dkrz.de/libaec
 
 > libaec - Adaptive Entropy Coding library
 
 ## Package Information
 
 - **Domain**: `dkrz.de/libaec`
-- **Name**: `libaec`
+- **Name**: `dkrz.de/libaec`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dkrz.de/libaec/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +dkrz.de/libaec -- $SHELL -i
+launchpad install dkrz.de/libaec
 ```
 
 ## Programs

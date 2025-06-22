@@ -6,20 +6,20 @@
  * @version `1.23.0` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +unbound.net -- $SHELL -i`
- * @aliases `unbound`
+ * @install `launchpad install unbound`
+ * @name `unbound`
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.unbound
  * // Or access via domain
  * const samePkg = pantry.unboundnet
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "unbound.net"
+ * console.log(pkg.name)        // "unbound"
  * console.log(pkg.description) // "Unbound is a validating, recursive, and caching..."
  * console.log(pkg.programs)    // ["unbound", "unbound-anchor", ...]
  * console.log(pkg.versions[0]) // "1.23.0" (latest)
@@ -32,7 +32,7 @@ export const unboundPackage = {
   /**
    * The display name of this package.
    */
-  name: 'unbound.net' as const,
+  name: 'unbound' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const unboundPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +unbound.net -- $SHELL -i' as const,
+  installCommand: 'launchpad install unbound' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -90,9 +90,9 @@ export const unboundPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'unbound',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +unbound.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install unbound' as const,
 }
 
 export type UnboundPackage = typeof unboundPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pcre2`
- * @aliases `pcre2`
+ * @name `pcre2`
  * @dependencies `sourceware.org/bzip2@1`, `zlib.net@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pcre2
  * // Or access via domain
  * const samePkg = pantry.pcreorgv2
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "v2"
+ * console.log(pkg.name)        // "pcre2"
  * console.log(pkg.description) // "Perl compatible regular expressions library wit..."
  * console.log(pkg.programs)    // ["pcre2-config", "pcre2grep", ...]
  * console.log(pkg.versions[0]) // "10.44.0" (latest)
@@ -32,7 +32,7 @@ export const pcre2Package = {
   /**
    * The display name of this package.
    */
-  name: 'v2' as const,
+  name: 'pcre2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -80,9 +80,7 @@ export const pcre2Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pcre2',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pcre.org/v2 -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install pcre2' as const,
 }

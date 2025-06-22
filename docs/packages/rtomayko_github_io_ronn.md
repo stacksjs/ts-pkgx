@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +rtomayko.github.io/ronn@0.7.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) ronn -- $SHELL -i
 ```
 
 ## Dependencies

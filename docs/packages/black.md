@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/psf/black -- $SHELL -i
+launchpad install black
 ```
 
 ## Programs

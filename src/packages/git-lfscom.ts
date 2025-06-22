@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install git-lfs`
- * @aliases `git-lfs`
+ * @name `git-lfs`
  * @dependencies `git-scm.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gitlfs
  * // Or access via domain
  * const samePkg = pantry.gitlfscom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "git-lfs.com"
+ * console.log(pkg.name)        // "git-lfs"
  * console.log(pkg.description) // "Git extension for versioning large files"
  * console.log(pkg.programs)    // ["git-lfs"]
  * console.log(pkg.versions[0]) // "3.6.1" (latest)
@@ -32,7 +32,7 @@ export const gitlfsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'git-lfs.com' as const,
+  name: 'git-lfs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -80,9 +80,9 @@ export const gitlfsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'git-lfs',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-lfs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-lfs' as const,
 }
 
 export type GitlfsPackage = typeof gitlfsPackage

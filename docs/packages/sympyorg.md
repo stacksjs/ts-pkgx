@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +sympy.org -- $SHELL -i
+launchpad install sympy.org
 ```
 
 ## Programs

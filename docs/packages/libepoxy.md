@@ -1,11 +1,11 @@
-# libepoxy
+# github.com/anholt/libepoxy
 
 > Epoxy is a library for handling OpenGL function pointer management for you
 
 ## Package Information
 
 - **Domain**: `github.com/anholt/libepoxy`
-- **Name**: `libepoxy`
+- **Name**: `github.com/anholt/libepoxy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/anholt/libepoxy/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/anholt/libepoxy -- $SHELL -i
+launchpad install github.com/anholt/libepoxy
 ```
 
 ## Programs

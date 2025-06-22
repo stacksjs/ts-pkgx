@@ -1,11 +1,11 @@
-# webp
+# google.com/webp
 
 > Mirror only. Please do not send pull requests. See https://chromium.googlesource.com/webm/libwebp/+/HEAD/CONTRIBUTING.md.
 
 ## Package Information
 
 - **Domain**: `google.com/webp`
-- **Name**: `webp`
+- **Name**: `google.com/webp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/webp/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +google.com/webp -- $SHELL -i
+launchpad install google.com/webp
 ```
 
 ## Programs

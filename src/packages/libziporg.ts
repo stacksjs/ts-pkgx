@@ -1,25 +1,25 @@
 /**
- * **zip** - A C library for reading, creating, and modifying zip archives.
+ * **zipcmp** - A C library for reading, creating, and modifying zip archives.
  *
  * @domain `libzip.org`
  * @programs `zipcmp`, `zipmerge`, `ziptool`
  * @version `1.11.4` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +libzip.org -- $SHELL -i`
- * @aliases `zip`
+ * @install `launchpad install zipcmp`
+ * @name `zipcmp`
  * @dependencies `facebook.com/zstd>=1.5.0`, `darwin:sourceware.org/bzip2>=1.0.8`, `darwin:tukaani.org/xz>=5.2.7`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.zip
+ * // Access the package
+ * const pkg = pantry.zipcmp
  * // Or access via domain
  * const samePkg = pantry.libziporg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libzip.org"
+ * console.log(pkg.name)        // "zipcmp"
  * console.log(pkg.description) // "A C library for reading, creating, and modifyin..."
  * console.log(pkg.programs)    // ["zipcmp", "zipmerge", ...]
  * console.log(pkg.versions[0]) // "1.11.4" (latest)
@@ -28,11 +28,11 @@
  * @see https://ts-pkgx.netlify.app/packages/libzip-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zipPackage = {
+export const zipcmpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libzip.org' as const,
+  name: 'zipcmp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const zipPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +libzip.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install zipcmp' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -88,9 +88,9 @@ export const zipPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'zip',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libzip.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zipcmp' as const,
 }
 
-export type ZipPackage = typeof zipPackage
+export type ZipcmpPackage = typeof zipcmpPackage

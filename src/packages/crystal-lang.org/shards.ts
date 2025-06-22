@@ -82,6 +82,8 @@ export const shardsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) shards -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install shards' as const,
 }
 
 export type ShardsPackage = typeof shardsPackage

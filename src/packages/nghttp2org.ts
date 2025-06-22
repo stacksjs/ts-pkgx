@@ -5,7 +5,7 @@
  * @version `1.66.0` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +nghttp2.org -- $SHELL -i`
+ * @install `launchpad install nghttp2.org`
  *
  * @example
  * ```typescript
@@ -40,7 +40,7 @@ export const nghttp2orgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +nghttp2.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install nghttp2.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -69,6 +69,8 @@ export const nghttp2orgPackage = {
     '1.51.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nghttp2.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nghttp2.org' as const,
 }
 
 export type Nghttp2orgPackage = typeof nghttp2orgPackage

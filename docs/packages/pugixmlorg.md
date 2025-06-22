@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +pugixml.org -- $SHELL -i
+launchpad install pugixml.org
 ```
 
 ## Programs

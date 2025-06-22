@@ -76,6 +76,8 @@ export const redfishtoolPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) redfishtool -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install redfishtool' as const,
 }
 
 export type RedfishtoolPackage = typeof redfishtoolPackage

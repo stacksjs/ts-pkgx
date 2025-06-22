@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +pkl-lang.org -- $SHELL -i
+launchpad install pkl-lang.org
 ```
 
 ## Programs

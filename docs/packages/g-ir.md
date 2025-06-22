@@ -1,11 +1,11 @@
-# gobject-introspection
+# g-ir
 
 > Generate introspection data for GObject libraries
 
 ## Package Information
 
 - **Domain**: `gnome.org/gobject-introspection`
-- **Name**: `gobject-introspection`
+- **Name**: `g-ir`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/gobject-introspection/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnome.org/gobject-introspection -- $SHELL -i
+launchpad install g-ir
 ```
 
 ## Programs
@@ -25,12 +25,6 @@ This package provides the following executable programs:
 - `g-ir-generate`
 - `g-ir-inspect`
 - `g-ir-scanner`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `g-ir`
 
 ## Available Versions
 

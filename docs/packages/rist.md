@@ -1,11 +1,11 @@
-# librist
+# rist
 
 > Reliable Internet Stream Transport (RIST)
 
 ## Package Information
 
 - **Domain**: `code.videolan.org/rist/librist`
-- **Name**: `librist`
+- **Name**: `rist`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/code.videolan.org/rist/librist/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +code.videolan.org/rist/librist -- $SHELL -i
+launchpad install rist
 ```
 
 ## Programs
@@ -24,12 +24,6 @@ This package provides the following executable programs:
 - `ristreceiver`
 - `ristsender`
 - `ristsrppasswd`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `rist`
 
 ## Available Versions
 

@@ -59,7 +59,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/evilmartians/lefthook@1.11.14 -- $SHELL -i
+sh <(curl https://pkgx.sh) lefthook -- $SHELL -i
 ```
 
 ## Usage Examples

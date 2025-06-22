@@ -76,6 +76,8 @@ export const yuicompressorPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) yuicompressor -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install yuicompressor' as const,
 }
 
 export type YuicompressorPackage = typeof yuicompressorPackage

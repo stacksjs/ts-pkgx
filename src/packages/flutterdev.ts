@@ -6,7 +6,7 @@
  * @version `3.32.4` (48 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +flutter.dev -- $SHELL -i`
+ * @install `launchpad install flutter.dev`
  * @dependencies `git-scm.org`, `tukaani.org/xz`, `gnu.org/which`, ... (+3 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -43,7 +43,7 @@ export const flutterdevPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +flutter.dev -- $SHELL -i' as const,
+  installCommand: 'launchpad install flutter.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -121,6 +121,8 @@ export const flutterdevPackage = {
     '3.13.3',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +flutter.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install flutter.dev' as const,
 }
 
 export type FlutterdevPackage = typeof flutterdevPackage

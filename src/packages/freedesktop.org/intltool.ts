@@ -1,12 +1,12 @@
 /**
- * **intltool** - String tool
+ * **freedesktop.org/intltool** - String tool
  *
  * @domain `freedesktop.org/intltool`
  * @programs `intltool-extract`, `intltool-merge`, `intltool-prepare`, `intltool-update`, `intltoolize`, ... (+4 more)
  * @version `0.51.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +freedesktop.org/intltool -- $SHELL -i`
+ * @install `launchpad install freedesktop.org/intltool`
  * @dependencies `perl.org~5`, `linux:libexpat.github.io^2.6` (includes OS-specific dependencies with `os:package` format)
  * @companions `PERL5LIB^${{prefix}}/lib/perl5:{{prefix}}/libexec/lib/perl5:$PERL5LIB`
  *
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.freedesktoporgintltool
- * console.log(pkg.name)        // "intltool"
+ * console.log(pkg.name)        // "freedesktop.org/intltool"
  * console.log(pkg.description) // "String tool"
  * console.log(pkg.programs)    // ["intltool-extract", "intltool-merge", ...]
  * console.log(pkg.versions[0]) // "0.51.0" (latest)
@@ -28,7 +28,7 @@ export const freedesktoporgintltoolPackage = {
   /**
    * The display name of this package.
    */
-  name: 'intltool' as const,
+  name: 'freedesktop.org/intltool' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,7 +44,7 @@ export const freedesktoporgintltoolPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +freedesktop.org/intltool -- $SHELL -i' as const,
+  installCommand: 'launchpad install freedesktop.org/intltool' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,6 +84,8 @@ export const freedesktoporgintltoolPackage = {
     '0.51.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/intltool -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/intltool' as const,
 }
 
 export type FreedesktoporgintltoolPackage = typeof freedesktoporgintltoolPackage

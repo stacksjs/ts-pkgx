@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install weed`
- * @aliases `weed`, `SeaweedFS`
+ * @name `SeaweedFS`
+ * @aliases `weed`
  *
  * @example
  * ```typescript
@@ -18,7 +19,7 @@
  * // Or access via domain
  * const samePkg = pantry.seaweedfscom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "seaweedfs.com"
+ * console.log(pkg.name)        // "SeaweedFS"
  * console.log(pkg.description) // "SeaweedFS is a fast distributed storage system ..."
  * console.log(pkg.programs)    // ["weed"]
  * console.log(pkg.versions[0]) // "3.91.0" (latest)
@@ -31,7 +32,7 @@ export const weedPackage = {
   /**
    * The display name of this package.
    */
-  name: 'seaweedfs.com' as const,
+  name: 'SeaweedFS' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -82,8 +83,9 @@ export const weedPackage = {
    */
   aliases: [
     'weed',
-    'SeaweedFS',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) weed -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install weed' as const,
 }
 
 export type WeedPackage = typeof weedPackage

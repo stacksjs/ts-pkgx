@@ -1,11 +1,11 @@
-# taglib.org
+# taglib-config
 
 > TagLib Audio Meta-Data Library
 
 ## Package Information
 
 - **Domain**: `taglib.org`
-- **Name**: `taglib.org`
+- **Name**: `taglib-config`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/taglib.org/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install taglib-config
 ## Programs
 
 This package provides the following executable programs:
-
-- `taglib-config`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `taglib-config`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +taglib.org@2.1.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) taglib-config -- $SHELL -i
 ```
 
 ## Dependencies

@@ -1,11 +1,11 @@
-# urllib3
+# github.com/urllib3/urllib3
 
 > urllib3 is a user-friendly HTTP client library for Python
 
 ## Package Information
 
 - **Domain**: `github.com/urllib3/urllib3`
-- **Name**: `urllib3`
+- **Name**: `github.com/urllib3/urllib3`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/urllib3/urllib3/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/urllib3/urllib3 -- $SHELL -i
+launchpad install github.com/urllib3/urllib3
 ```
 
 ## Programs

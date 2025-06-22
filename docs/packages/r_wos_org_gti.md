@@ -45,7 +45,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +r-wos.org/gti@1.9.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) gti -- $SHELL -i
 ```
 
 ## Usage Examples

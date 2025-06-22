@@ -5,19 +5,19 @@
  * @version `1.45.0` (14 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +wayland.freedesktop.org/protocols -- $SHELL -i`
- * @aliases `wayland-protocols`
+ * @install `launchpad install wayland-protocols`
+ * @name `wayland-protocols`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.waylandprotocols
  * // Or access via domain
  * const samePkg = pantry.waylandfreedesktoporgprotocols
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "protocols"
+ * console.log(pkg.name)        // "wayland-protocols"
  * console.log(pkg.versions[0]) // "1.45.0" (latest)
  * ```
  *
@@ -28,7 +28,7 @@ export const waylandprotocolsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'protocols' as const,
+  name: 'wayland-protocols' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,7 +44,7 @@ export const waylandprotocolsPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +wayland.freedesktop.org/protocols -- $SHELL -i' as const,
+  installCommand: 'launchpad install wayland-protocols' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -72,9 +72,9 @@ export const waylandprotocolsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'wayland-protocols',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wayland.freedesktop.org/protocols -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wayland-protocols' as const,
 }
 
 export type WaylandprotocolsPackage = typeof waylandprotocolsPackage

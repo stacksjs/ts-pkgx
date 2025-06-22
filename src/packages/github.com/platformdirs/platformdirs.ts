@@ -1,11 +1,11 @@
 /**
- * **platformdirs** - A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".
+ * **github.com/platformdirs/platformdirs** - A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".
  *
  * @domain `github.com/platformdirs/platformdirs`
  * @version `4.3.8` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/platformdirs/platformdirs -- $SHELL -i`
+ * @install `launchpad install github.com/platformdirs/platformdirs`
  * @dependencies `python.org>=3.11`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomplatformdirsplatformdirs
- * console.log(pkg.name)        // "platformdirs"
+ * console.log(pkg.name)        // "github.com/platformdirs/platformdirs"
  * console.log(pkg.description) // "A small Python module for determining appropria..."
  * console.log(pkg.versions[0]) // "4.3.8" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomplatformdirsplatformdirsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'platformdirs' as const,
+  name: 'github.com/platformdirs/platformdirs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const githubcomplatformdirsplatformdirsPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/platformdirs/platformdirs -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/platformdirs/platformdirs' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -71,6 +71,8 @@ export const githubcomplatformdirsplatformdirsPackage = {
     '4.1.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/platformdirs/platformdirs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/platformdirs/platformdirs' as const,
 }
 
 export type GithubcomplatformdirsplatformdirsPackage = typeof githubcomplatformdirsplatformdirsPackage

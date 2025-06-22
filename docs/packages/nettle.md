@@ -1,11 +1,11 @@
-# nettle
+# gnu.org/nettle
 
 > A mirror of the nettle repository
 
 ## Package Information
 
 - **Domain**: `gnu.org/nettle`
-- **Name**: `nettle`
+- **Name**: `gnu.org/nettle`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/nettle/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnu.org/nettle -- $SHELL -i
+launchpad install gnu.org/nettle
 ```
 
 ## Programs

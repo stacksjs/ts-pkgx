@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/wasm-pack@0.13.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) wasm-pack -- $SHELL -i
 ```
 
 ## Dependencies

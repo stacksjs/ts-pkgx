@@ -46,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/chainguard-dev/apko@0.27.9 -- $SHELL -i
+sh <(curl https://pkgx.sh) apko -- $SHELL -i
 ```
 
 ## Usage Examples

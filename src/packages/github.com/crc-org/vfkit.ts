@@ -70,6 +70,8 @@ export const vfkitPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vfkit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vfkit' as const,
 }
 
 export type VfkitPackage = typeof vfkitPackage

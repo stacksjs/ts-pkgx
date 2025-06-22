@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install epsilon`
- * @aliases `epsilon`
+ * @name `epsilon`
  * @dependencies `rpm.org/popt`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.epsilon
  * // Or access via domain
  * const samePkg = pantry.epsilonprojectsourceforgeio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "epsilon-project.sourceforge.io"
+ * console.log(pkg.name)        // "epsilon"
  * console.log(pkg.description) // "Powerful wavelet image compressor"
  * console.log(pkg.programs)    // ["epsilon"]
  * console.log(pkg.versions[0]) // "0.9.2" (latest)
@@ -32,7 +32,7 @@ export const epsilonPackage = {
   /**
    * The display name of this package.
    */
-  name: 'epsilon-project.sourceforge.io' as const,
+  name: 'epsilon' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const epsilonPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'epsilon',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) epsilon -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install epsilon' as const,
 }
 
 export type EpsilonPackage = typeof epsilonPackage

@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/upa/mscp@0.2.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) mscp -- $SHELL -i
 ```
 
 ## Dependencies

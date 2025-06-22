@@ -1,11 +1,11 @@
-# plantuml.com
+# plantuml
 
 > Generate diagrams from textual description
 
 ## Package Information
 
 - **Domain**: `plantuml.com`
-- **Name**: `plantuml.com`
+- **Name**: `plantuml`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/plantuml.com/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install plantuml.com
+launchpad install plantuml
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `plantuml`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `plantuml`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +plantuml.com@1.2025.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) plantuml -- $SHELL -i
 ```
 
 ## Dependencies

@@ -76,6 +76,8 @@ export const trePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tre -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tre' as const,
 }
 
 export type TrePackage = typeof trePackage

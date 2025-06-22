@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install git2`
- * @aliases `git2`
+ * @name `git2`
  * @dependencies `libssh2.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.git2
  * // Or access via domain
  * const samePkg = pantry.libgit2org
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libgit2.org"
+ * console.log(pkg.name)        // "git2"
  * console.log(pkg.description) // "A cross-platform, linkable library implementati..."
  * console.log(pkg.programs)    // ["git2"]
  * console.log(pkg.versions[0]) // "1.9.1" (latest)
@@ -32,7 +32,7 @@ export const git2Package = {
   /**
    * The display name of this package.
    */
-  name: 'libgit2.org' as const,
+  name: 'git2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -86,9 +86,9 @@ export const git2Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'git2',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git2' as const,
 }
 
 export type Git2Package = typeof git2Package

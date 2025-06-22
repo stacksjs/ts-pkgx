@@ -1,11 +1,11 @@
-# nspr
+# nspr-config
 
 > Platform-neutral API for system-level and libc-like functions
 
 ## Package Information
 
 - **Domain**: `mozilla.org/nspr`
-- **Name**: `nspr`
+- **Name**: `nspr-config`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mozilla.org/nspr/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install nspr-config
 ## Programs
 
 This package provides the following executable programs:
-
-- `nspr-config`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `nspr-config`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mozilla.org/nspr@4.34.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) nspr-config -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install flipt`
- * @aliases `flipt`
+ * @name `flipt`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.flipt
  * // Or access via domain
  * const samePkg = pantry.fliptio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "flipt.io"
+ * console.log(pkg.name)        // "flipt"
  * console.log(pkg.description) // "Enterprise-ready, GitOps enabled, CloudNative f..."
  * console.log(pkg.programs)    // ["flipt"]
  * console.log(pkg.versions[0]) // "1.58.5" (latest)
@@ -31,7 +31,7 @@ export const fliptPackage = {
   /**
    * The display name of this package.
    */
-  name: 'flipt.io' as const,
+  name: 'flipt' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -106,9 +106,9 @@ export const fliptPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'flipt',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) flipt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install flipt' as const,
 }
 
 export type FliptPackage = typeof fliptPackage

@@ -5,20 +5,20 @@
  * @version `8.2.1` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +palletsprojects.com/click -- $SHELL -i`
- * @aliases `python-click`
+ * @install `launchpad install python-click`
+ * @name `python-click`
  * @dependencies `python.org>=3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pythonclick
  * // Or access via domain
  * const samePkg = pantry.palletsprojectscomclick
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "click"
+ * console.log(pkg.name)        // "python-click"
  * console.log(pkg.description) // "Python composable command line interface toolkit"
  * console.log(pkg.versions[0]) // "8.2.1" (latest)
  * ```
@@ -30,7 +30,7 @@ export const pythonclickPackage = {
   /**
    * The display name of this package.
    */
-  name: 'click' as const,
+  name: 'python-click' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +46,7 @@ export const pythonclickPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +palletsprojects.com/click -- $SHELL -i' as const,
+  installCommand: 'launchpad install python-click' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -70,9 +70,9 @@ export const pythonclickPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'python-click',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +palletsprojects.com/click -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install python-click' as const,
 }
 
 export type PythonclickPackage = typeof pythonclickPackage

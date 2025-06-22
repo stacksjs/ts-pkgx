@@ -1,11 +1,11 @@
-# ipython.org
+# ipython
 
 > Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc.
 
 ## Package Information
 
 - **Domain**: `ipython.org`
-- **Name**: `ipython.org`
+- **Name**: `ipython`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ipython.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install ipython.org
+launchpad install ipython
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `ipython`
 - `ipython3`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `ipython`
 
 ## Available Versions
 

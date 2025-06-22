@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pixi`
- * @aliases `pixi`
+ * @name `pixi`
  * @dependencies `openssl.org^1.1`, `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pixi
  * // Or access via domain
  * const samePkg = pantry.prefixdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "prefix.dev"
+ * console.log(pkg.name)        // "pixi"
  * console.log(pkg.description) // "Package management made easy"
  * console.log(pkg.programs)    // ["pixi"]
  * console.log(pkg.versions[0]) // "0.48.2" (latest)
@@ -32,7 +32,7 @@ export const pixiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'prefix.dev' as const,
+  name: 'pixi' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -158,9 +158,9 @@ export const pixiPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pixi',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pixi -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pixi' as const,
 }
 
 export type PixiPackage = typeof pixiPackage

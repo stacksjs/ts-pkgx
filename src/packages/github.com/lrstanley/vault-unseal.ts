@@ -70,6 +70,8 @@ export const vaultunsealPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vault-unseal -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vault-unseal' as const,
 }
 
 export type VaultunsealPackage = typeof vaultunsealPackage

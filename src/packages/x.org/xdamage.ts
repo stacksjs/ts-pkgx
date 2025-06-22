@@ -1,11 +1,11 @@
 /**
- * **xdamage** - pkgx package
+ * **x.org/xdamage** - pkgx package
  *
  * @domain `x.org/xdamage`
  * @version `1.1.6` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/xdamage -- $SHELL -i`
+ * @install `launchpad install x.org/xdamage`
  * @dependencies `x.org/x11`, `x.org/protocol`, `x.org/xfixes`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgxdamage
- * console.log(pkg.name)        // "xdamage"
+ * console.log(pkg.name)        // "x.org/xdamage"
  * console.log(pkg.versions[0]) // "1.1.6" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgxdamagePackage = {
   /**
    * The display name of this package.
    */
-  name: 'xdamage' as const,
+  name: 'x.org/xdamage' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const xorgxdamagePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/xdamage -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/xdamage' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,6 +60,8 @@ export const xorgxdamagePackage = {
     '1.1.6',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xdamage -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/xdamage' as const,
 }
 
 export type XorgxdamagePackage = typeof xorgxdamagePackage

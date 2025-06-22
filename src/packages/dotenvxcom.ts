@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dotenvx`
- * @aliases `dotenvx`
+ * @name `dotenvx`
  * @dependencies `nodejs.org^16 || ^18 || ^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.dotenvx
  * // Or access via domain
  * const samePkg = pantry.dotenvxcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "dotenvx.com"
+ * console.log(pkg.name)        // "dotenvx"
  * console.log(pkg.programs)    // ["dotenvx"]
  * console.log(pkg.versions[0]) // "1.45.1" (latest)
  * ```
@@ -31,7 +31,7 @@ export const dotenvxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dotenvx.com' as const,
+  name: 'dotenvx' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -243,9 +243,9 @@ export const dotenvxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'dotenvx',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dotenvx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dotenvx' as const,
 }
 
 export type DotenvxPackage = typeof dotenvxPackage

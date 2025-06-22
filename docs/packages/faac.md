@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +sourceforge.net/faac@1.30.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) faac -- $SHELL -i
 ```
 
 ## Usage Examples

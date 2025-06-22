@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +php.net -- $SHELL -i
+launchpad install php.net
 ```
 
 ## Programs

@@ -69,6 +69,8 @@ export const dufPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) duf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install duf' as const,
 }
 
 export type DufPackage = typeof dufPackage

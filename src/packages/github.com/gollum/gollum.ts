@@ -80,6 +80,8 @@ export const gollumPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gollum -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gollum' as const,
 }
 
 export type GollumPackage = typeof gollumPackage

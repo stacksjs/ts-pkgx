@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/redis/hiredis -- $SHELL -i
+launchpad install hiredis
 ```
 
 ## Programs

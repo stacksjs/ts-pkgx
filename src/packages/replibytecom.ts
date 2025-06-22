@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install replibyte`
- * @aliases `replibyte`
+ * @name `replibyte`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.replibyte
  * // Or access via domain
  * const samePkg = pantry.replibytecom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "replibyte.com"
+ * console.log(pkg.name)        // "replibyte"
  * console.log(pkg.description) // "Seed your development database with real data ⚡️"
  * console.log(pkg.programs)    // ["replibyte"]
  * console.log(pkg.versions[0]) // "0.10.0" (latest)
@@ -32,7 +32,7 @@ export const replibytePackage = {
   /**
    * The display name of this package.
    */
-  name: 'replibyte.com' as const,
+  name: 'replibyte' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const replibytePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'replibyte',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) replibyte -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install replibyte' as const,
 }
 
 export type ReplibytePackage = typeof replibytePackage

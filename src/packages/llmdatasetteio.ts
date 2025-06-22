@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install llm`
- * @aliases `llm`
+ * @name `llm`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.llm
  * // Or access via domain
  * const samePkg = pantry.llmdatasetteio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "llm.datasette.io"
+ * console.log(pkg.name)        // "llm"
  * console.log(pkg.description) // "Access large language models from the command-line"
  * console.log(pkg.programs)    // ["llm"]
  * console.log(pkg.versions[0]) // "0.26.0" (latest)
@@ -32,7 +32,7 @@ export const llmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'llm.datasette.io' as const,
+  name: 'llm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -104,9 +104,9 @@ export const llmPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'llm',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) llm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install llm' as const,
 }
 
 export type LlmPackage = typeof llmPackage

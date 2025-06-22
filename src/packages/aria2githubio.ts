@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aria2c`
- * @aliases `aria2c`
+ * @name `aria2c`
  * @dependencies `zlib.net^1`, `openssl.org^1`, `libexpat.github.io`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.aria2c
  * // Or access via domain
  * const samePkg = pantry.aria2githubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "aria2.github.io"
+ * console.log(pkg.name)        // "aria2c"
  * console.log(pkg.description) // "aria2 is a lightweight multi-protocol & multi-s..."
  * console.log(pkg.programs)    // ["aria2c"]
  * console.log(pkg.versions[0]) // "1.37.0" (latest)
@@ -32,7 +32,7 @@ export const aria2cPackage = {
   /**
    * The display name of this package.
    */
-  name: 'aria2.github.io' as const,
+  name: 'aria2c' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,7 @@ export const aria2cPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'aria2c',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aria2c -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install aria2c' as const,
 }

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +docutils.org -- $SHELL -i
+launchpad install docutils.org
 ```
 
 ## Programs

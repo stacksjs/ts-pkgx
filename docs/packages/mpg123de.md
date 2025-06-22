@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) mpg123
+launchpad install mpg123
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mpg123.de@1.33.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) mpg123 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install linkerd`
- * @aliases `linkerd`
+ * @name `linkerd`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.linkerd
  * // Or access via domain
  * const samePkg = pantry.linkerdiolinkerd2
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "linkerd2"
+ * console.log(pkg.name)        // "linkerd"
  * console.log(pkg.description) // "Ultralight, security-first service mesh for Kub..."
  * console.log(pkg.programs)    // ["linkerd"]
  * console.log(pkg.versions[0]) // "2.14.10" (latest)
@@ -31,7 +31,7 @@ export const linkerdPackage = {
   /**
    * The display name of this package.
    */
-  name: 'linkerd2' as const,
+  name: 'linkerd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -76,9 +76,9 @@ export const linkerdPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'linkerd',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) linkerd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install linkerd' as const,
 }
 
 export type LinkerdPackage = typeof linkerdPackage

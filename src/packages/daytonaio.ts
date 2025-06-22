@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install daytona`
- * @aliases `daytona`
+ * @name `daytona`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.daytona
  * // Or access via domain
  * const samePkg = pantry.daytonaio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "daytona.io"
+ * console.log(pkg.name)        // "daytona"
  * console.log(pkg.description) // "The Open Source Dev Environment Manager."
  * console.log(pkg.programs)    // ["daytona"]
  * console.log(pkg.versions[0]) // "0.100.0" (latest)
@@ -31,7 +31,7 @@ export const daytonaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'daytona.io' as const,
+  name: 'daytona' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -143,9 +143,9 @@ export const daytonaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'daytona',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) daytona -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install daytona' as const,
 }
 
 export type DaytonaPackage = typeof daytonaPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install scriptisto`
- * @name `scriptisto`
- * @aliases `Scriptisto`
+ * @name `Scriptisto`
+ * @aliases `scriptisto`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.scriptisto
  * // Or access via domain
  * const samePkg = pantry.githubcomigorpetrukscriptisto
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "scriptisto"
+ * console.log(pkg.name)        // "Scriptisto"
  * console.log(pkg.description) // "A language-agnostic "shebang interpreter" that ..."
  * console.log(pkg.programs)    // ["scriptisto"]
  * console.log(pkg.versions[0]) // "2.2.0" (latest)
@@ -32,7 +32,7 @@ export const scriptistoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'scriptisto' as const,
+  name: 'Scriptisto' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -71,8 +71,10 @@ export const scriptistoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'Scriptisto',
+    'scriptisto',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) scriptisto -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install scriptisto' as const,
 }
 
 export type ScriptistoPackage = typeof scriptistoPackage

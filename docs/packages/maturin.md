@@ -1,11 +1,11 @@
-# maturin.rs
+# maturin
 
 > Build and publish crates with pyo3, cffi and uniffi bindings as well as rust binaries as python packages
 
 ## Package Information
 
 - **Domain**: `maturin.rs`
-- **Name**: `maturin.rs`
+- **Name**: `maturin`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/maturin.rs/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install maturin
 ## Programs
 
 This package provides the following executable programs:
-
-- `maturin`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `maturin`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +maturin.rs@1.8.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) maturin -- $SHELL -i
 ```
 
 ## Usage Examples

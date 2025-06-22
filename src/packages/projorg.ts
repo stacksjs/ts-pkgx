@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install proj`
- * @aliases `proj`
+ * @name `proj`
  * @dependencies `simplesystems.org/libtiff`, `sqlite.org`, `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.proj
  * // Or access via domain
  * const samePkg = pantry.projorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "proj.org"
+ * console.log(pkg.name)        // "proj"
  * console.log(pkg.description) // "PROJ - Cartographic Projections and Coordinate ..."
  * console.log(pkg.programs)    // ["proj"]
  * console.log(pkg.versions[0]) // "9.6.2" (latest)
@@ -32,7 +32,7 @@ export const projPackage = {
   /**
    * The display name of this package.
    */
-  name: 'proj.org' as const,
+  name: 'proj' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -87,9 +87,9 @@ export const projPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'proj',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) proj -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install proj' as const,
 }
 
 export type ProjPackage = typeof projPackage

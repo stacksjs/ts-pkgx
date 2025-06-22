@@ -69,6 +69,8 @@ export const iosdeployPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ios-deploy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ios-deploy' as const,
 }
 
 export type IosdeployPackage = typeof iosdeployPackage

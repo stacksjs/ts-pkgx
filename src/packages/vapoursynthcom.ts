@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install vspipe`
- * @aliases `vspipe`
+ * @name `vspipe`
  * @dependencies `python.org~3.11`, `github.com/sekrit-twc/zimg`, `linux:gnu.org/gcc/libstdcxx` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.vspipe
  * // Or access via domain
  * const samePkg = pantry.vapoursynthcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "vapoursynth.com"
+ * console.log(pkg.name)        // "vspipe"
  * console.log(pkg.description) // "A video processing framework with simplicity in..."
  * console.log(pkg.programs)    // ["vspipe"]
  * console.log(pkg.versions[0]) // "72.0.0" (latest)
@@ -32,7 +32,7 @@ export const vspipePackage = {
   /**
    * The display name of this package.
    */
-  name: 'vapoursynth.com' as const,
+  name: 'vspipe' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -86,9 +86,9 @@ export const vspipePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'vspipe',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vspipe -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vspipe' as const,
 }
 
 export type VspipePackage = typeof vspipePackage

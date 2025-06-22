@@ -87,6 +87,8 @@ export const plutoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pluto -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pluto' as const,
 }
 
 export type PlutoPackage = typeof plutoPackage

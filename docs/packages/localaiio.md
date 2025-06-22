@@ -1,11 +1,11 @@
-# localai.io
+# local-ai
 
 > :robot: The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. Drop-in replacement for OpenAI,  running on consumer-grade hardware. No GPU required. Runs gguf, transformers, diffusers and many more models architectures. Features: Generate Text, Audio, Video, Images, Voice Cloning, Distributed, P2P inference
 
 ## Package Information
 
 - **Domain**: `localai.io`
-- **Name**: `localai.io`
+- **Name**: `local-ai`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/localai.io/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install localai.io
+launchpad install local-ai
 ```
 
 ## Programs
@@ -21,13 +21,6 @@ launchpad install localai.io
 This package provides the following executable programs:
 
 - `local-ai`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `local-ai`
-- `LocalAI`
 
 ## Available Versions
 
@@ -51,7 +44,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +localai.io@2.26.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) local-ai -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +55,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with localai.io:
+These packages work well with local-ai:
 
 - `linux`
 

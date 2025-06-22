@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install md2html`
- * @aliases `md2html`
+ * @name `md2html`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.md2html
  * // Or access via domain
  * const samePkg = pantry.githubcommitymd4c
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "md4c"
+ * console.log(pkg.name)        // "md2html"
  * console.log(pkg.description) // "C Markdown parser. Fast. SAX-like interface. Co..."
  * console.log(pkg.programs)    // ["md2html"]
  * console.log(pkg.versions[0]) // "0.5.2" (latest)
@@ -31,7 +31,7 @@ export const md2htmlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'md4c' as const,
+  name: 'md2html' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -71,9 +71,9 @@ export const md2htmlPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'md2html',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) md2html -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install md2html' as const,
 }
 
 export type Md2htmlPackage = typeof md2htmlPackage

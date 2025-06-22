@@ -1,11 +1,11 @@
-# databricks.com
+# databricks
 
 > Databricks CLI
 
 ## Package Information
 
 - **Domain**: `databricks.com`
-- **Name**: `databricks.com`
+- **Name**: `databricks`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/databricks.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install databricks
 ## Programs
 
 This package provides the following executable programs:
-
-- `databricks`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `databricks`
 
@@ -53,7 +47,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +databricks.com@0.256.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) databricks -- $SHELL -i
 ```
 
 ## Usage Examples

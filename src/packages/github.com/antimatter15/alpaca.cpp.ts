@@ -69,6 +69,8 @@ export const alpacacppPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) alpaca.cpp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install alpaca.cpp' as const,
 }
 
 export type AlpacacppPackage = typeof alpacacppPackage

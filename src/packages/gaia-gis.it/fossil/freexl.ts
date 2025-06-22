@@ -1,11 +1,11 @@
 /**
- * **freexl** - pkgx package
+ * **gaia-gis.it/fossil/freexl** - pkgx package
  *
  * @domain `gaia-gis.it/fossil/freexl`
  * @version `2.0.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gaia-gis.it/fossil/freexl -- $SHELL -i`
+ * @install `launchpad install gaia-gis.it/fossil/freexl`
  * @dependencies `zlib.net/minizip^1`, `libexpat.github.io^2`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gaiagisitfossilfreexl
- * console.log(pkg.name)        // "freexl"
+ * console.log(pkg.name)        // "gaia-gis.it/fossil/freexl"
  * console.log(pkg.versions[0]) // "2.0.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const gaiagisitfossilfreexlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'freexl' as const,
+  name: 'gaia-gis.it/fossil/freexl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const gaiagisitfossilfreexlPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gaia-gis.it/fossil/freexl -- $SHELL -i' as const,
+  installCommand: 'launchpad install gaia-gis.it/fossil/freexl' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,6 +60,8 @@ export const gaiagisitfossilfreexlPackage = {
     '1.0.6',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gaia-gis.it/fossil/freexl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gaia-gis.it/fossil/freexl' as const,
 }
 
 export type GaiagisitfossilfreexlPackage = typeof gaiagisitfossilfreexlPackage

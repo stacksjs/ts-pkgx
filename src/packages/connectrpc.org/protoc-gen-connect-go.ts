@@ -72,6 +72,8 @@ export const protocgenconnectgoPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) protoc-gen-connect-go -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install protoc-gen-connect-go' as const,
 }
 
 export type ProtocgenconnectgoPackage = typeof protocgenconnectgoPackage

@@ -1,11 +1,11 @@
-# vcluster.com
+# vcluster
 
 > vCluster - Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a namespace of the underlying k8s cluster. It's cheaper than creating separate full-blown clusters and it offers better multi-tenancy and isolation than regular namespaces.
 
 ## Package Information
 
 - **Domain**: `vcluster.com`
-- **Name**: `vcluster.com`
+- **Name**: `vcluster`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vcluster.com/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install vcluster.com
+launchpad install vcluster
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `vcluster`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `vcluster`
 
@@ -49,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +vcluster.com@0.25.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) vcluster -- $SHELL -i
 ```
 
 ## Dependencies

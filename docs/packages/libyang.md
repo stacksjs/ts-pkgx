@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/cesnet/libyang -- $SHELL -i
+launchpad install libyang
 ```
 
 ## Programs

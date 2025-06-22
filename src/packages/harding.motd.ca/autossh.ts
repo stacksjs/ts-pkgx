@@ -76,6 +76,8 @@ export const autosshPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) autossh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install autossh' as const,
 }
 
 export type AutosshPackage = typeof autosshPackage

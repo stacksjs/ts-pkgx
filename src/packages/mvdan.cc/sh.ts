@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install shfmt`
- * @aliases `shfmt`
+ * @name `shfmt`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.shfmt
  * // Or access via domain
  * const samePkg = pantry.mvdanccsh
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sh"
+ * console.log(pkg.name)        // "shfmt"
  * console.log(pkg.description) // "A shell parser, formatter, and interpreter with..."
  * console.log(pkg.programs)    // ["shfmt"]
  * console.log(pkg.versions[0]) // "3.11.0" (latest)
@@ -31,7 +31,7 @@ export const shfmtPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sh' as const,
+  name: 'shfmt' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -71,9 +71,9 @@ export const shfmtPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'shfmt',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) shfmt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install shfmt' as const,
 }
 
 export type ShfmtPackage = typeof shfmtPackage

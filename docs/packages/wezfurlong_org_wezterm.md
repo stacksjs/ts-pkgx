@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +wezfurlong.org/wezterm@2024.2.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) wezterm -- $SHELL -i
 ```
 
 ## Dependencies

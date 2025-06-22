@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install wait4x`
- * @aliases `wait4x`
+ * @name `wait4x`
  * @companions `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.wait4x
  * // Or access via domain
  * const samePkg = pantry.wait4xdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "wait4x.dev"
+ * console.log(pkg.name)        // "wait4x"
  * console.log(pkg.description) // "Wait4X allows you to wait for a port or a servi..."
  * console.log(pkg.programs)    // ["wait4x"]
  * console.log(pkg.versions[0]) // "3.3.1" (latest)
@@ -32,7 +32,7 @@ export const wait4xPackage = {
   /**
    * The display name of this package.
    */
-  name: 'wait4x.dev' as const,
+  name: 'wait4x' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -81,9 +81,9 @@ export const wait4xPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'wait4x',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wait4x -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wait4x' as const,
 }
 
 export type Wait4xPackage = typeof wait4xPackage

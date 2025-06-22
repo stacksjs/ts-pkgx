@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/newren/git-filter-repo@2.47.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) git-filter-repo -- $SHELL -i
 ```
 
 ## Dependencies

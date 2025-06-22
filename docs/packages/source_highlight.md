@@ -1,11 +1,11 @@
-# source-highlight
+# gnu.org/source-highlight
 
 > Source-code syntax highlighter
 
 ## Package Information
 
 - **Domain**: `gnu.org/source-highlight`
-- **Name**: `source-highlight`
+- **Name**: `gnu.org/source-highlight`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/source-highlight/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnu.org/source-highlight -- $SHELL -i
+launchpad install gnu.org/source-highlight
 ```
 
 ## Programs

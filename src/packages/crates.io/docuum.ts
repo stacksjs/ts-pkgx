@@ -72,6 +72,8 @@ export const docuumPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) docuum -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docuum' as const,
 }
 
 export type DocuumPackage = typeof docuumPackage

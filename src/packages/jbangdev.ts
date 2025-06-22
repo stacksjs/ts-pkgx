@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jbang`
- * @aliases `jbang`
+ * @name `jbang`
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.jbang
  * // Or access via domain
  * const samePkg = pantry.jbangdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "jbang.dev"
+ * console.log(pkg.name)        // "jbang"
  * console.log(pkg.description) // "Unleash the power of Java - JBang Lets Students..."
  * console.log(pkg.programs)    // ["jbang"]
  * console.log(pkg.versions[0]) // "0.126.3" (latest)
@@ -32,7 +32,7 @@ export const jbangPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jbang.dev' as const,
+  name: 'jbang' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -96,9 +96,9 @@ export const jbangPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jbang',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jbang -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jbang' as const,
 }
 
 export type JbangPackage = typeof jbangPackage

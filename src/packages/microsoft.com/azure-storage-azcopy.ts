@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install azcopy`
- * @aliases `azcopy`
+ * @name `azcopy`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.azcopy
  * // Or access via domain
  * const samePkg = pantry.microsoftcomazurestorageazcopy
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "azure-storage-azcopy"
+ * console.log(pkg.name)        // "azcopy"
  * console.log(pkg.description) // "The new Azure Storage data transfer utility - A..."
  * console.log(pkg.programs)    // ["azcopy"]
  * console.log(pkg.versions[0]) // "10.29.1" (latest)
@@ -31,7 +31,7 @@ export const azcopyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'azure-storage-azcopy' as const,
+  name: 'azcopy' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,9 +79,9 @@ export const azcopyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'azcopy',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) azcopy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install azcopy' as const,
 }
 
 export type AzcopyPackage = typeof azcopyPackage

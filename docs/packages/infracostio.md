@@ -1,11 +1,11 @@
-# infracost.io
+# infracost
 
 > Cloud cost estimates for Terraform in pull requests💰📉 Shift FinOps Left!
 
 ## Package Information
 
 - **Domain**: `infracost.io`
-- **Name**: `infracost.io`
+- **Name**: `infracost`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/infracost.io/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install infracost.io
+launchpad install infracost
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `infracost`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `infracost`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +infracost.io@0.10.41 -- $SHELL -i
+sh <(curl https://pkgx.sh) infracost -- $SHELL -i
 ```
 
 ## Usage Examples

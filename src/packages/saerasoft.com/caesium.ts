@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install caesiumclt`
- * @aliases `caesiumclt`
+ * @name `caesiumclt`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.caesiumclt
  * // Or access via domain
  * const samePkg = pantry.saerasoftcomcaesium
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "caesium"
+ * console.log(pkg.name)        // "caesiumclt"
  * console.log(pkg.description) // "Caesium Command Line Tools - Lossy/lossless ima..."
  * console.log(pkg.programs)    // ["caesiumclt"]
  * console.log(pkg.versions[0]) // "0.21.0" (latest)
@@ -31,7 +31,7 @@ export const caesiumcltPackage = {
   /**
    * The display name of this package.
    */
-  name: 'caesium' as const,
+  name: 'caesiumclt' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -72,9 +72,9 @@ export const caesiumcltPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'caesiumclt',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) caesiumclt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install caesiumclt' as const,
 }
 
 export type CaesiumcltPackage = typeof caesiumcltPackage

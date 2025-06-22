@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rubocop`
- * @aliases `rubocop`
+ * @name `rubocop`
  * @dependencies `ruby-lang.org>=3.1<3.3.7`, `rubygems.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.rubocop
  * // Or access via domain
  * const samePkg = pantry.rubocoporg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rubocop.org"
+ * console.log(pkg.name)        // "rubocop"
  * console.log(pkg.description) // "A Ruby static code analyzer and formatter, base..."
  * console.log(pkg.programs)    // ["rubocop"]
  * console.log(pkg.versions[0]) // "1.77.0" (latest)
@@ -32,7 +32,7 @@ export const rubocopPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rubocop.org' as const,
+  name: 'rubocop' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -103,9 +103,9 @@ export const rubocopPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'rubocop',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rubocop -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rubocop' as const,
 }
 
 export type RubocopPackage = typeof rubocopPackage

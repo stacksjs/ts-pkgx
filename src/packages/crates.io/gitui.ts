@@ -92,6 +92,8 @@ export const gituiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gitui -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gitui' as const,
 }
 
 export type GituiPackage = typeof gituiPackage

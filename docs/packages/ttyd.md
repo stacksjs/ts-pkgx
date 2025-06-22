@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +tsl0922.github.io/ttyd@1.7.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) ttyd -- $SHELL -i
 ```
 
 ## Dependencies

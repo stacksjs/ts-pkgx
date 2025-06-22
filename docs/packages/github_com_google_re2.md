@@ -1,11 +1,11 @@
-# re2
+# github.com/google/re2
 
 > RE2 is a fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python. It is a C++ library.
 
 ## Package Information
 
 - **Domain**: `github.com/google/re2`
-- **Name**: `re2`
+- **Name**: `github.com/google/re2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/google/re2/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/google/re2 -- $SHELL -i
+launchpad install github.com/google/re2
 ```
 
 ## Programs

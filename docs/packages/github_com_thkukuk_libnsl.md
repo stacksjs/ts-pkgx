@@ -1,11 +1,11 @@
-# libnsl
+# github.com/thkukuk/libnsl
 
 > This library contains the public client interface for NIS(YP) and NIS+ in a IPv6 ready version
 
 ## Package Information
 
 - **Domain**: `github.com/thkukuk/libnsl`
-- **Name**: `libnsl`
+- **Name**: `github.com/thkukuk/libnsl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/thkukuk/libnsl/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/thkukuk/libnsl -- $SHELL -i
+launchpad install github.com/thkukuk/libnsl
 ```
 
 ## Programs

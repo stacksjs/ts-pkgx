@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install logdy`
- * @aliases `logdy`
+ * @name `logdy`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.logdy
  * // Or access via domain
  * const samePkg = pantry.logdydev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "logdy.dev"
+ * console.log(pkg.name)        // "logdy"
  * console.log(pkg.description) // "Web based real-time log viewer. Stream ANY cont..."
  * console.log(pkg.programs)    // ["logdy"]
  * console.log(pkg.versions[0]) // "0.17.1" (latest)
@@ -31,7 +31,7 @@ export const logdyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'logdy.dev' as const,
+  name: 'logdy' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -82,9 +82,9 @@ export const logdyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'logdy',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) logdy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install logdy' as const,
 }
 
 export type LogdyPackage = typeof logdyPackage

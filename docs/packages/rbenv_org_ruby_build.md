@@ -45,7 +45,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +rbenv.org/ruby-build@20250610.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) ruby-build -- $SHELL -i
 ```
 
 ## Dependencies

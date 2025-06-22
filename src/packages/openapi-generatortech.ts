@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openapi-generator`
- * @aliases `openapi-generator`
+ * @name `openapi-generator`
  * @dependencies `openjdk.org^21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.openapigenerator
  * // Or access via domain
  * const samePkg = pantry.openapigeneratortech
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "openapi-generator.tech"
+ * console.log(pkg.name)        // "openapi-generator"
  * console.log(pkg.description) // "OpenAPI Generator allows generation of API clie..."
  * console.log(pkg.programs)    // ["openapi-generator"]
  * console.log(pkg.versions[0]) // "7.13.0" (latest)
@@ -32,7 +32,7 @@ export const openapigeneratorPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openapi-generator.tech' as const,
+  name: 'openapi-generator' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -86,9 +86,9 @@ export const openapigeneratorPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'openapi-generator',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) openapi-generator -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openapi-generator' as const,
 }
 
 export type OpenapigeneratorPackage = typeof openapigeneratorPackage

@@ -1,11 +1,11 @@
-# libva
+# intel.com/libva
 
 > Libva is an implementation for VA-API (Video Acceleration API)
 
 ## Package Information
 
 - **Domain**: `intel.com/libva`
-- **Name**: `libva`
+- **Name**: `intel.com/libva`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/intel.com/libva/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +intel.com/libva -- $SHELL -i
+launchpad install intel.com/libva
 ```
 
 ## Programs

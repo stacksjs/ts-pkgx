@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install apktool`
- * @aliases `apktool`
+ * @name `apktool`
  * @dependencies `openjdk.org^21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.apktool
  * // Or access via domain
  * const samePkg = pantry.apktoolorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "apktool.org"
+ * console.log(pkg.name)        // "apktool"
  * console.log(pkg.description) // "Tool for reverse engineering 3rd party, closed,..."
  * console.log(pkg.programs)    // ["apktool"]
  * console.log(pkg.versions[0]) // "2.11.1" (latest)
@@ -32,7 +32,7 @@ export const apktoolPackage = {
   /**
    * The display name of this package.
    */
-  name: 'apktool.org' as const,
+  name: 'apktool' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +78,7 @@ export const apktoolPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'apktool',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) apktool -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install apktool' as const,
 }

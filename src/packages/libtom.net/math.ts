@@ -5,19 +5,19 @@
  * @version `1.3.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +libtom.net/math -- $SHELL -i`
- * @aliases `LibTomMath`
+ * @install `launchpad install LibTomMath`
+ * @name `LibTomMath`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.LibTomMath
  * // Or access via domain
  * const samePkg = pantry.libtomnetmath
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "math"
+ * console.log(pkg.name)        // "LibTomMath"
  * console.log(pkg.description) // "LibTomMath is a free open source portable numbe..."
  * console.log(pkg.versions[0]) // "1.3.0" (latest)
  * ```
@@ -29,7 +29,7 @@ export const libTomMathPackage = {
   /**
    * The display name of this package.
    */
-  name: 'math' as const,
+  name: 'LibTomMath' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +45,7 @@ export const libTomMathPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +libtom.net/math -- $SHELL -i' as const,
+  installCommand: 'launchpad install LibTomMath' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -61,9 +61,9 @@ export const libTomMathPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'LibTomMath',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libtom.net/math -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install LibTomMath' as const,
 }
 
 export type LibTomMathPackage = typeof libTomMathPackage

@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +ghostgum.com.au/epstool@3.9.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) epstool -- $SHELL -i
 ```
 
 ## Dependencies

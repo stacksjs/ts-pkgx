@@ -5,7 +5,7 @@
  * @version `0.40.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +pixman.org -- $SHELL -i`
+ * @install `launchpad install pixman.org`
  *
  * @example
  * ```typescript
@@ -39,7 +39,7 @@ export const pixmanorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pixman.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install pixman.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -51,6 +51,8 @@ export const pixmanorgPackage = {
     '0.40.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pixman.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pixman.org' as const,
 }
 
 export type PixmanorgPackage = typeof pixmanorgPackage

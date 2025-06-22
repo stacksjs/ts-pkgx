@@ -90,6 +90,8 @@ export const regsyncPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) regsync -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install regsync' as const,
 }
 
 export type RegsyncPackage = typeof regsyncPackage

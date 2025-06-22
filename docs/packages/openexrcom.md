@@ -1,11 +1,11 @@
-# openexr.com
+# exr2aces
 
 > The OpenEXR project provides the specification and reference implementation of the EXR file format, the professional-grade image storage format of the motion picture industry.
 
 ## Package Information
 
 - **Domain**: `openexr.com`
-- **Name**: `openexr.com`
+- **Name**: `exr2aces`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openexr.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install openexr.com
+launchpad install exr2aces
 ```
 
 ## Programs
@@ -28,12 +28,6 @@ This package provides the following executable programs:
 - `exrmultipart`
 - `exrmultiview`
 - `exrstdattr`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `exr`
 
 ## Available Versions
 

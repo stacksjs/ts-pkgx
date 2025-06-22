@@ -6,19 +6,19 @@
  * @version `0.3.144` (402 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +fly.io -- $SHELL -i`
- * @aliases `fly`
+ * @install `launchpad install fly`
+ * @name `fly`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.fly
  * // Or access via domain
  * const samePkg = pantry.flyio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "fly.io"
+ * console.log(pkg.name)        // "fly"
  * console.log(pkg.description) // "Command line tools for fly.io services"
  * console.log(pkg.programs)    // ["fly", "flyctl"]
  * console.log(pkg.versions[0]) // "0.3.144" (latest)
@@ -31,7 +31,7 @@ export const flyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'fly.io' as const,
+  name: 'fly' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const flyPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +fly.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install fly' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -470,9 +470,9 @@ export const flyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'fly',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fly.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fly' as const,
 }
 
 export type FlyPackage = typeof flyPackage

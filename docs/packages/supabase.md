@@ -1,11 +1,11 @@
-# cli
+# supabase
 
 > Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres backups. Generating types from your database schema.
 
 ## Package Information
 
 - **Domain**: `supabase.com/cli`
-- **Name**: `cli`
+- **Name**: `supabase`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/supabase.com/cli/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install supabase
 ## Programs
 
 This package provides the following executable programs:
-
-- `supabase`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `supabase`
 
@@ -78,7 +72,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +supabase.com/cli@2.26.9 -- $SHELL -i
+sh <(curl https://pkgx.sh) supabase -- $SHELL -i
 ```
 
 ## Usage Examples

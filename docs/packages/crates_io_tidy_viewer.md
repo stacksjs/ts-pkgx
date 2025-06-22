@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/tidy-viewer@1.5.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) tidy-viewer -- $SHELL -i
 ```
 
 ## Usage Examples

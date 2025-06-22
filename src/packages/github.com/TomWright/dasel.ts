@@ -74,6 +74,8 @@ export const daselPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dasel -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dasel' as const,
 }
 
 export type DaselPackage = typeof daselPackage

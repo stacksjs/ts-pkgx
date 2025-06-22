@@ -76,6 +76,8 @@ export const jsonlintPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jsonlint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jsonlint' as const,
 }
 
 export type JsonlintPackage = typeof jsonlintPackage

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install consul`
- * @aliases `consul`
+ * @name `consul`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.consul
  * // Or access via domain
  * const samePkg = pantry.consulio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "consul.io"
+ * console.log(pkg.name)        // "consul"
  * console.log(pkg.description) // "Consul is a distributed, highly available, and ..."
  * console.log(pkg.programs)    // ["consul"]
  * console.log(pkg.versions[0]) // "1.21.1" (latest)
@@ -31,7 +31,7 @@ export const consulPackage = {
   /**
    * The display name of this package.
    */
-  name: 'consul.io' as const,
+  name: 'consul' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +78,9 @@ export const consulPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'consul',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) consul -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install consul' as const,
 }
 
 export type ConsulPackage = typeof consulPackage

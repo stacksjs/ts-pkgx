@@ -97,6 +97,8 @@ export const scrcpyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) scrcpy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install scrcpy' as const,
 }
 
 export type ScrcpyPackage = typeof scrcpyPackage

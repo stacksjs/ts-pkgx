@@ -1,11 +1,11 @@
-# llama.cpp
+# LLaMA.cpp
 
 > LLM inference in C/C++
 
 ## Package Information
 
 - **Domain**: `github.com/ggerganov/llama.cpp`
-- **Name**: `llama.cpp`
+- **Name**: `LLaMA.cpp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ggerganov/llama.cpp/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/ggerganov/llama.cpp -- $SHELL -i
+launchpad install github.com/ggerganov/llama.cpp
 ```
 
 ## Programs
@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `llama-cli`
 - `llama.cpp`
 - `convert.py`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `LLaMA.cpp`
 
 ## Available Versions
 

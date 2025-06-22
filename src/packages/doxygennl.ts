@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install doxygen`
- * @aliases `doxygen`
+ * @name `doxygen`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.doxygen
  * // Or access via domain
  * const samePkg = pantry.doxygennl
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "doxygen.nl"
+ * console.log(pkg.name)        // "doxygen"
  * console.log(pkg.description) // "Generate documentation for several programming ..."
  * console.log(pkg.programs)    // ["doxygen"]
  * console.log(pkg.versions[0]) // "1.14.0" (latest)
@@ -31,7 +31,7 @@ export const doxygenPackage = {
   /**
    * The display name of this package.
    */
-  name: 'doxygen.nl' as const,
+  name: 'doxygen' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,9 @@ export const doxygenPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'doxygen',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) doxygen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install doxygen' as const,
 }
 
 export type DoxygenPackage = typeof doxygenPackage

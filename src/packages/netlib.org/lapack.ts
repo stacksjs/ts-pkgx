@@ -1,11 +1,11 @@
 /**
- * **lapack** - LAPACK development repository
+ * **netlib.org/lapack** - LAPACK development repository
  *
  * @domain `netlib.org/lapack`
  * @version `3.12.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +netlib.org/lapack -- $SHELL -i`
+ * @install `launchpad install netlib.org/lapack`
  * @dependencies `gnu.org/gcc^11 # libgfortran`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.netliborglapack
- * console.log(pkg.name)        // "lapack"
+ * console.log(pkg.name)        // "netlib.org/lapack"
  * console.log(pkg.description) // "LAPACK development repository"
  * console.log(pkg.versions[0]) // "3.12.1" (latest)
  * ```
@@ -25,7 +25,7 @@ export const netliborglapackPackage = {
   /**
    * The display name of this package.
    */
-  name: 'lapack' as const,
+  name: 'netlib.org/lapack' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const netliborglapackPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +netlib.org/lapack -- $SHELL -i' as const,
+  installCommand: 'launchpad install netlib.org/lapack' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,6 +61,8 @@ export const netliborglapackPackage = {
     '3.11.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +netlib.org/lapack -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install netlib.org/lapack' as const,
 }
 
 export type NetliborglapackPackage = typeof netliborglapackPackage

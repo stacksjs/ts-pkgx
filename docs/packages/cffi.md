@@ -1,11 +1,11 @@
-# cffi
+# github.com/python-cffi/cffi
 
 > A Foreign Function Interface package for calling C libraries from Python.
 
 ## Package Information
 
 - **Domain**: `github.com/python-cffi/cffi`
-- **Name**: `cffi`
+- **Name**: `github.com/python-cffi/cffi`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/python-cffi/cffi/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/python-cffi/cffi -- $SHELL -i
+launchpad install github.com/python-cffi/cffi
 ```
 
 ## Programs

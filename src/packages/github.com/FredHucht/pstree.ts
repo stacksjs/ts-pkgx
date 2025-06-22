@@ -69,6 +69,8 @@ export const pstreePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pstree -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pstree' as const,
 }
 
 export type PstreePackage = typeof pstreePackage

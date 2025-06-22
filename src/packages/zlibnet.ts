@@ -5,7 +5,7 @@
  * @version `1.3.1` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +zlib.net -- $SHELL -i`
+ * @install `launchpad install zlib.net`
  *
  * @example
  * ```typescript
@@ -40,7 +40,7 @@ export const zlibnetPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +zlib.net -- $SHELL -i' as const,
+  installCommand: 'launchpad install zlib.net' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -55,6 +55,8 @@ export const zlibnetPackage = {
     '1.2.12',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +zlib.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zlib.net' as const,
 }
 
 export type ZlibnetPackage = typeof zlibnetPackage

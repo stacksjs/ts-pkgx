@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install k9s`
- * @aliases `k9s`
+ * @name `k9s`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.k9s
  * // Or access via domain
  * const samePkg = pantry.k9scliio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "k9scli.io"
+ * console.log(pkg.name)        // "k9s"
  * console.log(pkg.description) // "🐶 Kubernetes CLI To Manage Your Clusters In St..."
  * console.log(pkg.programs)    // ["k9s"]
  * console.log(pkg.versions[0]) // "0.50.6" (latest)
@@ -31,7 +31,7 @@ export const k9sPackage = {
   /**
    * The display name of this package.
    */
-  name: 'k9scli.io' as const,
+  name: 'k9s' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -119,9 +119,9 @@ export const k9sPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'k9s',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) k9s -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install k9s' as const,
 }
 
 export type K9sPackage = typeof k9sPackage

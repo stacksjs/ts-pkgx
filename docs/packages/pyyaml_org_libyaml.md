@@ -1,11 +1,11 @@
-# libyaml
+# pyyaml.org/libyaml
 
 > Canonical source repository for LibYAML
 
 ## Package Information
 
 - **Domain**: `pyyaml.org/libyaml`
-- **Name**: `libyaml`
+- **Name**: `pyyaml.org/libyaml`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pyyaml.org/libyaml/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +pyyaml.org/libyaml -- $SHELL -i
+launchpad install pyyaml.org/libyaml
 ```
 
 ## Programs

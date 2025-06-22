@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nvm-exec`
- * @aliases `nvm-exec`
+ * @name `nvm-exec`
  * @dependencies `linux:curl.se` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.nvmexec
  * // Or access via domain
  * const samePkg = pantry.githubcomnvmshnvm
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "nvm"
+ * console.log(pkg.name)        // "nvm-exec"
  * console.log(pkg.description) // "Node Version Manager - POSIX-compliant bash scr..."
  * console.log(pkg.programs)    // ["nvm-exec"]
  * console.log(pkg.versions[0]) // "0.40.3" (latest)
@@ -32,7 +32,7 @@ export const nvmexecPackage = {
   /**
    * The display name of this package.
    */
-  name: 'nvm' as const,
+  name: 'nvm-exec' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -82,9 +82,9 @@ export const nvmexecPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'nvm-exec',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nvm-exec -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nvm-exec' as const,
 }
 
 export type NvmexecPackage = typeof nvmexecPackage

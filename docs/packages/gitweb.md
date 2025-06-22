@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/gitweb@0.3.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) gitweb -- $SHELL -i
 ```
 
 ## Dependencies

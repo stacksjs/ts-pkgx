@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rucola`
- * @aliases `rucola`
+ * @name `rucola`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.rucola
  * // Or access via domain
  * const samePkg = pantry.cratesiorucolanotes
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rucola-notes"
+ * console.log(pkg.name)        // "rucola"
  * console.log(pkg.description) // "Terminal-based markdown note manager."
  * console.log(pkg.programs)    // ["rucola"]
  * console.log(pkg.versions[0]) // "0.5.0" (latest)
@@ -31,7 +31,7 @@ export const rucolaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rucola-notes' as const,
+  name: 'rucola' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const rucolaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'rucola',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rucola -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rucola' as const,
 }
 
 export type RucolaPackage = typeof rucolaPackage

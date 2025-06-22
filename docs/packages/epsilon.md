@@ -1,11 +1,11 @@
-# epsilon-project.sourceforge.io
+# epsilon
 
 > Powerful wavelet image compressor
 
 ## Package Information
 
 - **Domain**: `epsilon-project.sourceforge.io`
-- **Name**: `epsilon-project.sourceforge.io`
+- **Name**: `epsilon`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/epsilon-project.sourceforge.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install epsilon
 ## Programs
 
 This package provides the following executable programs:
-
-- `epsilon`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `epsilon`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +epsilon-project.sourceforge.io@0.9.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) epsilon -- $SHELL -i
 ```
 
 ## Dependencies

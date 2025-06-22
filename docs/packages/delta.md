@@ -1,11 +1,11 @@
-# git-delta
+# delta
 
 > A syntax-highlighting pager for git, diff, grep, and blame output
 
 ## Package Information
 
 - **Domain**: `crates.io/git-delta`
-- **Name**: `git-delta`
+- **Name**: `delta`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/git-delta/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install delta
 ## Programs
 
 This package provides the following executable programs:
-
-- `delta`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `delta`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/git-delta@0.18.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) delta -- $SHELL -i
 ```
 
 ## Dependencies

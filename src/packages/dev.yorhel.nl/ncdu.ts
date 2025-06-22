@@ -80,6 +80,8 @@ export const ncduPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ncdu -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ncdu' as const,
 }
 
 export type NcduPackage = typeof ncduPackage

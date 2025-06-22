@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +qhull.org -- $SHELL -i
+launchpad install qhull.org
 ```
 
 ## Programs

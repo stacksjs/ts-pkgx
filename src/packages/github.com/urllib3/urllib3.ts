@@ -1,11 +1,11 @@
 /**
- * **urllib3** - urllib3 is a user-friendly HTTP client library for Python
+ * **github.com/urllib3/urllib3** - urllib3 is a user-friendly HTTP client library for Python
  *
  * @domain `github.com/urllib3/urllib3`
  * @version `2.5.0` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/urllib3/urllib3 -- $SHELL -i`
+ * @install `launchpad install github.com/urllib3/urllib3`
  * @dependencies `python.org~3.11`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomurllib3urllib3
- * console.log(pkg.name)        // "urllib3"
+ * console.log(pkg.name)        // "github.com/urllib3/urllib3"
  * console.log(pkg.description) // "urllib3 is a user-friendly HTTP client library ..."
  * console.log(pkg.versions[0]) // "2.5.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomurllib3urllib3Package = {
   /**
    * The display name of this package.
    */
-  name: 'urllib3' as const,
+  name: 'github.com/urllib3/urllib3' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const githubcomurllib3urllib3Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/urllib3/urllib3 -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/urllib3/urllib3' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -67,6 +67,8 @@ export const githubcomurllib3urllib3Package = {
     '1.26.19',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/urllib3/urllib3 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/urllib3/urllib3' as const,
 }
 
 export type Githubcomurllib3urllib3Package = typeof githubcomurllib3urllib3Package

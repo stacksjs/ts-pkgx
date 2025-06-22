@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libpng.org -- $SHELL -i
+launchpad install libpng.org
 ```
 
 ## Programs

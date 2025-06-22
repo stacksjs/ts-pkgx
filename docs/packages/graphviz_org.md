@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +graphviz.org -- $SHELL -i
+launchpad install graphviz.org
 ```
 
 ## Programs

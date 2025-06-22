@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install swiftformat`
- * @aliases `swiftformat`
+ * @name `swiftformat`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.swiftformat
  * // Or access via domain
  * const samePkg = pantry.githubcomnicklockwoodswiftformat
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "SwiftFormat"
+ * console.log(pkg.name)        // "swiftformat"
  * console.log(pkg.description) // "A command-line tool and Xcode Extension for for..."
  * console.log(pkg.programs)    // ["swiftformat"]
  * console.log(pkg.versions[0]) // "0.56.4" (latest)
@@ -31,7 +31,7 @@ export const swiftformatPackage = {
   /**
    * The display name of this package.
    */
-  name: 'SwiftFormat' as const,
+  name: 'swiftformat' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -112,9 +112,9 @@ export const swiftformatPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'swiftformat',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) swiftformat -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install swiftformat' as const,
 }
 
 export type SwiftformatPackage = typeof swiftformatPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install prettier`
- * @aliases `prettier`
+ * @name `prettier`
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.prettier
  * // Or access via domain
  * const samePkg = pantry.prettierio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "prettier.io"
+ * console.log(pkg.name)        // "prettier"
  * console.log(pkg.description) // "Code formatter for JavaScript, CSS, JSON, Graph..."
  * console.log(pkg.programs)    // ["prettier"]
  * console.log(pkg.versions[0]) // "3.5.3" (latest)
@@ -32,7 +32,7 @@ export const prettierPackage = {
   /**
    * The display name of this package.
    */
-  name: 'prettier.io' as const,
+  name: 'prettier' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -86,9 +86,9 @@ export const prettierPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'prettier',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) prettier -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install prettier' as const,
 }
 
 export type PrettierPackage = typeof prettierPackage

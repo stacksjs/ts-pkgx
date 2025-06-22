@@ -6,20 +6,20 @@
  * @version `8.17.0` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +libvips.org -- $SHELL -i`
- * @aliases `vips`
+ * @install `launchpad install vips`
+ * @name `vips`
  * @dependencies `mozilla.org/mozjpeg`, `cairographics.org`, `heasarc.gsfc.nasa.gov/cfitsio`, ... (+24 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.vips
  * // Or access via domain
  * const samePkg = pantry.libvipsorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libvips.org"
+ * console.log(pkg.name)        // "vips"
  * console.log(pkg.description) // "A fast image processing library with low memory..."
  * console.log(pkg.programs)    // ["vips", "vipsedit", ...]
  * console.log(pkg.versions[0]) // "8.17.0" (latest)
@@ -32,7 +32,7 @@ export const vipsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libvips.org' as const,
+  name: 'vips' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const vipsPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +libvips.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install vips' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -113,9 +113,9 @@ export const vipsPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'vips',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libvips.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vips' as const,
 }
 
 export type VipsPackage = typeof vipsPackage

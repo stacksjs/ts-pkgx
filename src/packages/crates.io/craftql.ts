@@ -69,6 +69,8 @@ export const craftqlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) craftql -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install craftql' as const,
 }
 
 export type CraftqlPackage = typeof craftqlPackage

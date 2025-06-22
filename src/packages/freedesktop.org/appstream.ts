@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install appstreamcli`
- * @aliases `appstreamcli`
+ * @name `appstreamcli`
  * @dependencies `gnome.org/glib@2`, `github.com/hughsie/libxmlb@0`, `pyyaml.org/libyaml@0`, ... (+4 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.appstreamcli
  * // Or access via domain
  * const samePkg = pantry.freedesktoporgappstream
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "appstream"
+ * console.log(pkg.name)        // "appstreamcli"
  * console.log(pkg.description) // "Tools and libraries to work with AppStream meta..."
  * console.log(pkg.programs)    // ["appstreamcli"]
  * console.log(pkg.versions[0]) // "1.0.5" (latest)
@@ -32,7 +32,7 @@ export const appstreamcliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'appstream' as const,
+  name: 'appstreamcli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -84,9 +84,9 @@ export const appstreamcliPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'appstreamcli',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) appstreamcli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install appstreamcli' as const,
 }
 
 export type AppstreamcliPackage = typeof appstreamcliPackage

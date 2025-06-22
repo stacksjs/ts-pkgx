@@ -1,11 +1,11 @@
-# shaderc
+# glslc
 
 > A collection of tools, libraries, and tests for Vulkan shader compilation.
 
 ## Package Information
 
 - **Domain**: `github.com/google/shaderc`
-- **Name**: `shaderc`
+- **Name**: `glslc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/google/shaderc/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install glslc
 ## Programs
 
 This package provides the following executable programs:
-
-- `glslc`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `glslc`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/google/shaderc@2025.2.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) glslc -- $SHELL -i
 ```
 
 ## Usage Examples

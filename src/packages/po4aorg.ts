@@ -6,7 +6,7 @@
  * @version `0.73.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +po4a.org -- $SHELL -i`
+ * @install `launchpad install po4a.org`
  * @dependencies `gnu.org/gettext^0.22`, `perl.org^5.22`, `gnome.org/libxslt^1.1`
  * @companions `PERL5LIB^${{prefix}}/libexec/lib/perl5:$PERL5LIB`
  *
@@ -44,7 +44,7 @@ export const po4aorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +po4a.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install po4a.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -87,6 +87,8 @@ export const po4aorgPackage = {
     '0.69.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +po4a.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install po4a.org' as const,
 }
 
 export type Po4aorgPackage = typeof po4aorgPackage

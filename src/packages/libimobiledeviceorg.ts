@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install idevicedate`
- * @aliases `idevicedate`
+ * @name `idevicedate`
  * @dependencies `libimobiledevice.org/libplist^2.4`, `gnu.org/libtasn1^4.19`, `libimobiledevice.org/libusbmuxd^2`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.idevicedate
  * // Or access via domain
  * const samePkg = pantry.libimobiledeviceorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "libimobiledevice.org"
+ * console.log(pkg.name)        // "idevicedate"
  * console.log(pkg.description) // "A cross-platform protocol library to communicat..."
  * console.log(pkg.programs)    // ["idevicedate"]
  * console.log(pkg.versions[0]) // "1.3.0" (latest)
@@ -32,7 +32,7 @@ export const idevicedatePackage = {
   /**
    * The display name of this package.
    */
-  name: 'libimobiledevice.org' as const,
+  name: 'idevicedate' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +78,9 @@ export const idevicedatePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'idevicedate',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) idevicedate -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install idevicedate' as const,
 }
 
 export type IdevicedatePackage = typeof idevicedatePackage

@@ -1,11 +1,11 @@
-# openslide.org
+# openslide
 
 > C library to read whole-slide images (a.k.a. virtual slides)
 
 ## Package Information
 
 - **Domain**: `openslide.org`
-- **Name**: `openslide.org`
+- **Name**: `openslide`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openslide.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +openslide.org -- $SHELL -i
+launchpad install openslide
 ```
 
 ## Programs
@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `openslide-quickhash1sum`
 - `openslide-show-properties`
 - `openslide-write-png`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `openslide`
 
 ## Available Versions
 

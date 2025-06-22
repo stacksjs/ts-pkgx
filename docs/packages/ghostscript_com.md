@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +ghostscript.com -- $SHELL -i
+launchpad install ghostscript.com
 ```
 
 ## Programs

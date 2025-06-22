@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/dundee/gdu@5.31.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) gdu -- $SHELL -i
 ```
 
 ## Usage Examples

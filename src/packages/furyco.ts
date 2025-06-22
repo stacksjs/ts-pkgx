@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fury`
- * @aliases `fury`
+ * @name `fury`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.fury
  * // Or access via domain
  * const samePkg = pantry.furyco
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "fury.co"
+ * console.log(pkg.name)        // "fury"
  * console.log(pkg.description) // "Gemfury CLI"
  * console.log(pkg.programs)    // ["fury"]
  * console.log(pkg.versions[0]) // "0.23.0" (latest)
@@ -31,7 +31,7 @@ export const furyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'fury.co' as const,
+  name: 'fury' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -70,9 +70,9 @@ export const furyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'fury',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fury -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fury' as const,
 }
 
 export type FuryPackage = typeof furyPackage

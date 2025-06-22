@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +openblas.net -- $SHELL -i
+launchpad install openblas.net
 ```
 
 ## Programs

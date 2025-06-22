@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +rhash.sourceforge.net -- $SHELL -i
+launchpad install rhash.sourceforge.net
 ```
 
 ## Programs

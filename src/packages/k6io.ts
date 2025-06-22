@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install k6`
- * @aliases `k6`
+ * @name `k6`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.k6
  * // Or access via domain
  * const samePkg = pantry.k6io
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "k6.io"
+ * console.log(pkg.name)        // "k6"
  * console.log(pkg.description) // "A modern load testing tool, using Go and JavaSc..."
  * console.log(pkg.programs)    // ["k6"]
  * console.log(pkg.versions[0]) // "1.0.0" (latest)
@@ -31,7 +31,7 @@ export const k6Package = {
   /**
    * The display name of this package.
    */
-  name: 'k6.io' as const,
+  name: 'k6' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -91,9 +91,9 @@ export const k6Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'k6',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) k6 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install k6' as const,
 }
 
 export type K6Package = typeof k6Package

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rsvg-convert`
- * @aliases `rsvg-convert`
+ * @name `rsvg-convert`
  * @dependencies `cairographics.org^1.18`, `gnome.org/pango@1`, `gnome.org/gdk-pixbuf@2`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.rsvgconvert
  * // Or access via domain
  * const samePkg = pantry.gnomeorglibrsvg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "librsvg"
+ * console.log(pkg.name)        // "rsvg-convert"
  * console.log(pkg.description) // "Read-only mirror of https://gitlab.gnome.org/GN..."
  * console.log(pkg.programs)    // ["rsvg-convert"]
  * console.log(pkg.versions[0]) // "2.60.0" (latest)
@@ -32,7 +32,7 @@ export const rsvgconvertPackage = {
   /**
    * The display name of this package.
    */
-  name: 'librsvg' as const,
+  name: 'rsvg-convert' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -108,9 +108,9 @@ export const rsvgconvertPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'rsvg-convert',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rsvg-convert -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rsvg-convert' as const,
 }
 
 export type RsvgconvertPackage = typeof rsvgconvertPackage

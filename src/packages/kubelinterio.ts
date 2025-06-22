@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kube-linter`
- * @aliases `kube-linter`
+ * @name `kube-linter`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.kubelinter
  * // Or access via domain
  * const samePkg = pantry.kubelinterio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "kubelinter.io"
+ * console.log(pkg.name)        // "kube-linter"
  * console.log(pkg.description) // "KubeLinter is a static analysis tool that check..."
  * console.log(pkg.programs)    // ["kube-linter"]
  * console.log(pkg.versions[0]) // "0.7.4" (latest)
@@ -31,7 +31,7 @@ export const kubelinterPackage = {
   /**
    * The display name of this package.
    */
-  name: 'kubelinter.io' as const,
+  name: 'kube-linter' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -73,9 +73,9 @@ export const kubelinterPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kube-linter',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kube-linter -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kube-linter' as const,
 }
 
 export type KubelinterPackage = typeof kubelinterPackage

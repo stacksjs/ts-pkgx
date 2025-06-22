@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +ladspa.org -- $SHELL -i
+launchpad install ladspa.org
 ```
 
 ## Programs

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pkgx`
- * @aliases `pkgx`
+ * @name `pkgx`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pkgx
  * // Or access via domain
  * const samePkg = pantry.pkgxsh
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pkgx.sh"
+ * console.log(pkg.name)        // "pkgx"
  * console.log(pkg.description) // "Standalone binary that can run anything"
  * console.log(pkg.programs)    // ["pkgx"]
  * console.log(pkg.versions[0]) // "2.7.0" (latest)
@@ -31,7 +31,7 @@ export const pkgxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pkgx.sh' as const,
+  name: 'pkgx' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -102,9 +102,9 @@ export const pkgxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pkgx',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pkgx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pkgx' as const,
 }
 
 export type PkgxPackage = typeof pkgxPackage

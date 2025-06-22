@@ -95,6 +95,8 @@ export const swaggercodegenPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) swagger-codegen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install swagger-codegen' as const,
 }
 
 export type SwaggercodegenPackage = typeof swaggercodegenPackage

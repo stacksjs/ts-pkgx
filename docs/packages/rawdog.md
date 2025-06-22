@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/abanteai/rawdog@0.1.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) rawdog -- $SHELL -i
 ```
 
 ## Dependencies

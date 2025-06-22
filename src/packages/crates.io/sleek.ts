@@ -71,6 +71,8 @@ export const sleekPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sleek -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sleek' as const,
 }
 
 export type SleekPackage = typeof sleekPackage

@@ -1,11 +1,11 @@
-# libwpe
+# wpewebkit.org/libwpe
 
 > General-purpose library specifically developed for the WPE-flavored port of WebKit.
 
 ## Package Information
 
 - **Domain**: `wpewebkit.org/libwpe`
-- **Name**: `libwpe`
+- **Name**: `wpewebkit.org/libwpe`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wpewebkit.org/libwpe/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +wpewebkit.org/libwpe -- $SHELL -i
+launchpad install wpewebkit.org/libwpe
 ```
 
 ## Programs

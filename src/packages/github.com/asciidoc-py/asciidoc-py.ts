@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install asciidoc`
- * @aliases `asciidoc`
+ * @name `asciidoc`
  * @dependencies `docbook.org`, `python.org~3.11`, `gnu.org/source-highlight`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.asciidoc
  * // Or access via domain
  * const samePkg = pantry.githubcomasciidocpyasciidocpy
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "asciidoc-py"
+ * console.log(pkg.name)        // "asciidoc"
  * console.log(pkg.description) // "Formatter/translator for text files to numerous..."
  * console.log(pkg.programs)    // ["asciidoc"]
  * console.log(pkg.versions[0]) // "10.2.1" (latest)
@@ -32,7 +32,7 @@ export const asciidocPackage = {
   /**
    * The display name of this package.
    */
-  name: 'asciidoc-py' as const,
+  name: 'asciidoc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,9 +78,9 @@ export const asciidocPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'asciidoc',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) asciidoc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install asciidoc' as const,
 }
 
 export type AsciidocPackage = typeof asciidocPackage

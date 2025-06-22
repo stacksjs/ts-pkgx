@@ -1,11 +1,11 @@
 /**
- * **libstdcxx** - pkgx package
+ * **gnu.org/gcc/libstdcxx** - pkgx package
  *
  * @domain `gnu.org/gcc/libstdcxx`
  * @version `15.1.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnu.org/gcc/libstdcxx -- $SHELL -i`
+ * @install `launchpad install gnu.org/gcc/libstdcxx`
  * @dependencies `gnu.org/binutils`, `gnu.org/gmp>=4.2`, `gnu.org/mpfr>=2.4.0`, ... (+2 more)
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorggcclibstdcxx
- * console.log(pkg.name)        // "libstdcxx"
+ * console.log(pkg.name)        // "gnu.org/gcc/libstdcxx"
  * console.log(pkg.versions[0]) // "15.1.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const gnuorggcclibstdcxxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libstdcxx' as const,
+  name: 'gnu.org/gcc/libstdcxx' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const gnuorggcclibstdcxxPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnu.org/gcc/libstdcxx -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnu.org/gcc/libstdcxx' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -67,6 +67,8 @@ export const gnuorggcclibstdcxxPackage = {
     '12.4.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gcc/libstdcxx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/gcc/libstdcxx' as const,
 }
 
 export type GnuorggcclibstdcxxPackage = typeof gnuorggcclibstdcxxPackage

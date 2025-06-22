@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tart`
- * @aliases `tart`
+ * @name `tart`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tart
  * // Or access via domain
  * const samePkg = pantry.tartrun
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tart.run"
+ * console.log(pkg.name)        // "tart"
  * console.log(pkg.description) // "macOS and Linux VMs on Apple Silicon to use in ..."
  * console.log(pkg.programs)    // ["tart"]
  * console.log(pkg.versions[0]) // "2.28.0" (latest)
@@ -31,7 +31,7 @@ export const tartPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tart.run' as const,
+  name: 'tart' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -123,9 +123,9 @@ export const tartPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tart',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tart -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tart' as const,
 }
 
 export type TartPackage = typeof tartPackage

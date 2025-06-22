@@ -72,6 +72,8 @@ export const testscriptPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) testscript -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install testscript' as const,
 }
 
 export type TestscriptPackage = typeof testscriptPackage

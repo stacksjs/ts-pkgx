@@ -1,11 +1,11 @@
-# speedtest-cli
+# speedtest
 
 > Command line interface for testing internet bandwidth using speedtest.net
 
 ## Package Information
 
 - **Domain**: `github.com/sivel/speedtest-cli`
-- **Name**: `speedtest-cli`
+- **Name**: `speedtest`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/sivel/speedtest-cli/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/sivel/speedtest-cli -- $SHELL -i
+launchpad install speedtest
 ```
 
 ## Programs
@@ -21,12 +21,6 @@ launchpad install +github.com/sivel/speedtest-cli -- $SHELL -i
 This package provides the following executable programs:
 
 - `speedtest-cli`
-- `speedtest`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
 - `speedtest`
 
 ## Available Versions

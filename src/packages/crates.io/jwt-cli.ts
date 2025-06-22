@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jwt`
- * @aliases `jwt`
+ * @name `jwt`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.jwt
  * // Or access via domain
  * const samePkg = pantry.cratesiojwtcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "jwt-cli"
+ * console.log(pkg.name)        // "jwt"
  * console.log(pkg.description) // "A super fast CLI tool to decode and encode JWTs..."
  * console.log(pkg.programs)    // ["jwt"]
  * console.log(pkg.versions[0]) // "6.2.0" (latest)
@@ -31,7 +31,7 @@ export const jwtPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jwt-cli' as const,
+  name: 'jwt' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -71,9 +71,9 @@ export const jwtPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jwt',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jwt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jwt' as const,
 }
 
 export type JwtPackage = typeof jwtPackage

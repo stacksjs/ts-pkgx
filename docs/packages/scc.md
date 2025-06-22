@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/boyter/scc@3.5.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) scc -- $SHELL -i
 ```
 
 ## Usage Examples

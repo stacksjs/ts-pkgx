@@ -112,6 +112,8 @@ export const pikePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pike -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pike' as const,
 }
 
 export type PikePackage = typeof pikePackage

@@ -1,12 +1,12 @@
 /**
- * **vala** - Compiler for the GObject type system
+ * **gnome.org/vala** - Compiler for the GObject type system
  *
  * @domain `gnome.org/vala`
  * @programs `vala`, `valac`, `valadoc`, `vala-gen-introspect`, `vapigen`
  * @version `0.56.18` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gnome.org/vala -- $SHELL -i`
+ * @install `launchpad install gnome.org/vala`
  * @dependencies `gnome.org/glib`, `graphviz.org`, `freedesktop.org/pkg-config`, ... (+1 more)
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnomeorgvala
- * console.log(pkg.name)        // "vala"
+ * console.log(pkg.name)        // "gnome.org/vala"
  * console.log(pkg.description) // "Compiler for the GObject type system"
  * console.log(pkg.programs)    // ["vala", "valac", ...]
  * console.log(pkg.versions[0]) // "0.56.18" (latest)
@@ -27,7 +27,7 @@ export const gnomeorgvalaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'vala' as const,
+  name: 'gnome.org/vala' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const gnomeorgvalaPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gnome.org/vala -- $SHELL -i' as const,
+  installCommand: 'launchpad install gnome.org/vala' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,6 +79,8 @@ export const gnomeorgvalaPackage = {
     '0.56.13',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/vala -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnome.org/vala' as const,
 }
 
 export type GnomeorgvalaPackage = typeof gnomeorgvalaPackage

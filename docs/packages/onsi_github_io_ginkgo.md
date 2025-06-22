@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +onsi.github.io/ginkgo@2.23.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) ginkgo -- $SHELL -i
 ```
 
 ## Usage Examples

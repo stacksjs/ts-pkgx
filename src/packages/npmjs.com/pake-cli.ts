@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pake`
- * @aliases `pake`
+ * @name `pake`
  * @dependencies `nodejs.org>=16`, `npmjs.com`, `rust-lang.org>=1.63`, ... (+11 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.pake
  * // Or access via domain
  * const samePkg = pantry.npmjscompakecli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pake-cli"
+ * console.log(pkg.name)        // "pake"
  * console.log(pkg.description) // "🤱🏻 Turn any webpage into a desktop app with R..."
  * console.log(pkg.programs)    // ["pake"]
  * console.log(pkg.versions[0]) // "3.1.1" (latest)
@@ -32,7 +32,7 @@ export const pakePackage = {
   /**
    * The display name of this package.
    */
-  name: 'pake-cli' as const,
+  name: 'pake' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -95,9 +95,9 @@ export const pakePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'pake',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pake -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pake' as const,
 }
 
 export type PakePackage = typeof pakePackage

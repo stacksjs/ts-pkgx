@@ -1,18 +1,18 @@
 /**
- * **reproc** - A cross-platform (C99/C++11) process library
+ * **github.com/DaanDeMeyer/reproc** - A cross-platform (C99/C++11) process library
  *
  * @domain `github.com/DaanDeMeyer/reproc`
  * @version `14.2.5` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/DaanDeMeyer/reproc -- $SHELL -i`
+ * @install `launchpad install github.com/DaanDeMeyer/reproc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomdaandemeyerreproc
- * console.log(pkg.name)        // "reproc"
+ * console.log(pkg.name)        // "github.com/DaanDeMeyer/reproc"
  * console.log(pkg.description) // "A cross-platform (C99/C++11) process library"
  * console.log(pkg.versions[0]) // "14.2.5" (latest)
  * ```
@@ -24,7 +24,7 @@ export const githubcomdaandemeyerreprocPackage = {
   /**
    * The display name of this package.
    */
-  name: 'reproc' as const,
+  name: 'github.com/DaanDeMeyer/reproc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const githubcomdaandemeyerreprocPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/DaanDeMeyer/reproc -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/DaanDeMeyer/reproc' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -53,6 +53,8 @@ export const githubcomdaandemeyerreprocPackage = {
     '14.2.4',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/DaanDeMeyer/reproc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/DaanDeMeyer/reproc' as const,
 }
 
 export type GithubcomdaandemeyerreprocPackage = typeof githubcomdaandemeyerreprocPackage

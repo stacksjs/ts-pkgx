@@ -1,11 +1,11 @@
-# allure2
+# allure
 
 > Allure Report is a flexible, lightweight multi-language test reporting tool. It provides clear graphical reports and allows everyone involved in the development process to extract the maximum of information from the everyday testing process
 
 ## Package Information
 
 - **Domain**: `github.com/allure-framework/allure2`
-- **Name**: `allure2`
+- **Name**: `allure`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/allure-framework/allure2/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install allure
 ## Programs
 
 This package provides the following executable programs:
-
-- `allure`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `allure`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/allure-framework/allure2@2.34.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) allure -- $SHELL -i
 ```
 
 ## Dependencies

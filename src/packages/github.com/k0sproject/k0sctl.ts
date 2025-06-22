@@ -88,6 +88,8 @@ export const k0sctlPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) k0sctl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install k0sctl' as const,
 }
 
 export type K0sctlPackage = typeof k0sctlPackage

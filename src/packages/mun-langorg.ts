@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mun`
- * @aliases `mun`
+ * @name `mun`
  * @dependencies `invisible-island.net/ncurses@6`, `sourceware.org/libffi@3`, `gnome.org/libxml2@2`
  * @companions `llvm.org`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mun
  * // Or access via domain
  * const samePkg = pantry.munlangorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mun-lang.org"
+ * console.log(pkg.name)        // "mun"
  * console.log(pkg.description) // "Source code for the Mun language and runtime."
  * console.log(pkg.programs)    // ["mun"]
  * console.log(pkg.versions[0]) // "0.5.0" (latest)
@@ -33,7 +33,7 @@ export const munPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mun-lang.org' as const,
+  name: 'mun' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -84,9 +84,9 @@ export const munPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mun',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mun -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mun' as const,
 }
 
 export type MunPackage = typeof munPackage

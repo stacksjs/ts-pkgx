@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mvdan.cc/gofumpt@0.8.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) gofumpt -- $SHELL -i
 ```
 
 ## Usage Examples

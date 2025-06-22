@@ -1,18 +1,18 @@
 /**
- * **libcbor** - CBOR protocol implementation for C
+ * **github.com/PJK/libcbor** - CBOR protocol implementation for C
  *
  * @domain `github.com/PJK/libcbor`
  * @version `0.12.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/PJK/libcbor -- $SHELL -i`
+ * @install `launchpad install github.com/PJK/libcbor`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcompjklibcbor
- * console.log(pkg.name)        // "libcbor"
+ * console.log(pkg.name)        // "github.com/PJK/libcbor"
  * console.log(pkg.description) // "CBOR protocol implementation for C"
  * console.log(pkg.versions[0]) // "0.12.0" (latest)
  * ```
@@ -24,7 +24,7 @@ export const githubcompjklibcborPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libcbor' as const,
+  name: 'github.com/PJK/libcbor' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const githubcompjklibcborPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/PJK/libcbor -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/PJK/libcbor' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -54,6 +54,8 @@ export const githubcompjklibcborPackage = {
     '0.10.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/PJK/libcbor -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/PJK/libcbor' as const,
 }
 
 export type GithubcompjklibcborPackage = typeof githubcompjklibcborPackage

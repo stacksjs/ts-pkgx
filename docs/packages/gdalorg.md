@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gdal.org -- $SHELL -i
+launchpad install gdal.org
 ```
 
 ## Programs

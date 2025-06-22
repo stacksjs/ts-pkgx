@@ -77,6 +77,8 @@ export const ghqPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ghq -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ghq' as const,
 }
 
 export type GhqPackage = typeof ghqPackage

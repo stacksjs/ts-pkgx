@@ -1,11 +1,11 @@
-# PowerShell
+# pwsh
 
 > PowerShell for every system!
 
 ## Package Information
 
 - **Domain**: `microsoft.com/PowerShell`
-- **Name**: `PowerShell`
+- **Name**: `pwsh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/PowerShell/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install pwsh
 ## Programs
 
 This package provides the following executable programs:
-
-- `pwsh`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pwsh`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +microsoft.com/PowerShell@7.5.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) pwsh -- $SHELL -i
 ```
 
 ## Dependencies

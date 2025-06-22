@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nixpacks`
- * @aliases `nixpacks`
+ * @name `nixpacks`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.nixpacks
  * // Or access via domain
  * const samePkg = pantry.nixpackscom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "nixpacks.com"
+ * console.log(pkg.name)        // "nixpacks"
  * console.log(pkg.description) // "App source + Nix packages + Docker = Image"
  * console.log(pkg.programs)    // ["nixpacks"]
  * console.log(pkg.versions[0]) // "1.39.0" (latest)
@@ -31,7 +31,7 @@ export const nixpacksPackage = {
   /**
    * The display name of this package.
    */
-  name: 'nixpacks.com' as const,
+  name: 'nixpacks' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -100,9 +100,9 @@ export const nixpacksPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'nixpacks',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nixpacks -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nixpacks' as const,
 }
 
 export type NixpacksPackage = typeof nixpacksPackage

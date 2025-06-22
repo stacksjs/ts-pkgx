@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/FredHucht/pstree@2.40.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) pstree -- $SHELL -i
 ```
 
 ## Usage Examples

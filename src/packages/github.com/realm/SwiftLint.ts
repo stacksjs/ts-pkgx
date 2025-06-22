@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install swiftlint`
- * @aliases `swiftlint`
+ * @name `swiftlint`
  * @dependencies `linux:curl.se@8`, `linux:gnome.org/libxml2@2` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.swiftlint
  * // Or access via domain
  * const samePkg = pantry.githubcomrealmswiftlint
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "SwiftLint"
+ * console.log(pkg.name)        // "swiftlint"
  * console.log(pkg.description) // "A tool to enforce Swift style and conventions."
  * console.log(pkg.programs)    // ["swiftlint"]
  * console.log(pkg.versions[0]) // "0.59.1" (latest)
@@ -32,7 +32,7 @@ export const swiftlintPackage = {
   /**
    * The display name of this package.
    */
-  name: 'SwiftLint' as const,
+  name: 'swiftlint' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -93,9 +93,9 @@ export const swiftlintPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'swiftlint',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) swiftlint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install swiftlint' as const,
 }
 
 export type SwiftlintPackage = typeof swiftlintPackage

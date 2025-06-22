@@ -1,11 +1,11 @@
-# cloudnative-pg.io
+# kubectl-cnpg
 
 > CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases within Kubernetes environments, covering the entire operational lifecycle from initial deployment to ongoing maintenance
 
 ## Package Information
 
 - **Domain**: `cloudnative-pg.io`
-- **Name**: `cloudnative-pg.io`
+- **Name**: `kubectl-cnpg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cloudnative-pg.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install kubectl-cnpg
 ## Programs
 
 This package provides the following executable programs:
-
-- `kubectl-cnpg`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `kubectl-cnpg`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +cloudnative-pg.io@1.26.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) kubectl-cnpg -- $SHELL -i
 ```
 
 ## Usage Examples

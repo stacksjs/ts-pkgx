@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +kerberos.org -- $SHELL -i
+launchpad install kerberos.org
 ```
 
 ## Programs

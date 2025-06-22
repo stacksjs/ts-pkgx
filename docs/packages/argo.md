@@ -1,11 +1,11 @@
-# workflows
+# argo-workflows
 
 > Get stuff done with container-native workflows for Kubernetes
 
 ## Package Information
 
 - **Domain**: `argoproj.github.io/workflows`
-- **Name**: `workflows`
+- **Name**: `argo-workflows`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/argoproj.github.io/workflows/package.yml)
 
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `argo`
-- `argo-workflows`
 
 ## Available Versions
 
@@ -59,7 +58,7 @@ sh <(curl https://pkgx.sh) argo -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.argo-workflows
+const pkg = pantry.argo
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

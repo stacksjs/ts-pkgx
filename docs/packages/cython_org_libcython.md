@@ -1,11 +1,11 @@
-# libcython
+# cython.org/libcython
 
 > The most widely used Python to C compiler
 
 ## Package Information
 
 - **Domain**: `cython.org/libcython`
-- **Name**: `libcython`
+- **Name**: `cython.org/libcython`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cython.org/libcython/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +cython.org/libcython -- $SHELL -i
+launchpad install cython.org/libcython
 ```
 
 ## Programs

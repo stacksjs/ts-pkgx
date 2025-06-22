@@ -1,11 +1,11 @@
-# libxmlb
+# xb-tool
 
 > A library to help create and query binary XML blobs
 
 ## Package Information
 
 - **Domain**: `github.com/hughsie/libxmlb`
-- **Name**: `libxmlb`
+- **Name**: `xb-tool`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/hughsie/libxmlb/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install xb-tool
 ## Programs
 
 This package provides the following executable programs:
-
-- `xb-tool`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `xb-tool`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/hughsie/libxmlb@0.3.22 -- $SHELL -i
+sh <(curl https://pkgx.sh) xb-tool -- $SHELL -i
 ```
 
 ## Dependencies

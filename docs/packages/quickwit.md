@@ -1,11 +1,11 @@
-# quickwit.io
+# quickwit
 
 > Cloud-native search engine for observability. An open-source alternative to Datadog, Elasticsearch, Loki, and Tempo.
 
 ## Package Information
 
 - **Domain**: `quickwit.io`
-- **Name**: `quickwit.io`
+- **Name**: `quickwit`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/quickwit.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install quickwit
 ## Programs
 
 This package provides the following executable programs:
-
-- `quickwit`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `quickwit`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +quickwit.io@0.8.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) quickwit -- $SHELL -i
 ```
 
 ## Dependencies

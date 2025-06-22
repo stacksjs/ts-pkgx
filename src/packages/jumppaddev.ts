@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jumppad`
- * @aliases `jumppad`
+ * @name `jumppad`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.jumppad
  * // Or access via domain
  * const samePkg = pantry.jumppaddev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "jumppad.dev"
+ * console.log(pkg.name)        // "jumppad"
  * console.log(pkg.description) // "Modern cloud native development environments"
  * console.log(pkg.programs)    // ["jumppad"]
  * console.log(pkg.versions[0]) // "0.20.1" (latest)
@@ -31,7 +31,7 @@ export const jumppadPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jumppad.dev' as const,
+  name: 'jumppad' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -87,9 +87,9 @@ export const jumppadPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'jumppad',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jumppad -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jumppad' as const,
 }
 
 export type JumppadPackage = typeof jumppadPackage

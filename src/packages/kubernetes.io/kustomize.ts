@@ -89,6 +89,8 @@ export const kustomizePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kustomize -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kustomize' as const,
 }
 
 export type KustomizePackage = typeof kustomizePackage

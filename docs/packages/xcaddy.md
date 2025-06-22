@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/caddyserver/xcaddy@0.4.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) xcaddy -- $SHELL -i
 ```
 
 ## Dependencies

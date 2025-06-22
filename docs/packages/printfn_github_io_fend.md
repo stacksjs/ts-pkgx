@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +printfn.github.io/fend@1.5.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) fend -- $SHELL -i
 ```
 
 ## Dependencies

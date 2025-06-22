@@ -1,11 +1,11 @@
-# psycopg2
+# psycopg.org/psycopg2
 
 > PostgreSQL database adapter for the Python programming language
 
 ## Package Information
 
 - **Domain**: `psycopg.org/psycopg2`
-- **Name**: `psycopg2`
+- **Name**: `psycopg.org/psycopg2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/psycopg.org/psycopg2/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +psycopg.org/psycopg2 -- $SHELL -i
+launchpad install psycopg.org/psycopg2
 ```
 
 ## Programs

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install synth`
- * @aliases `synth`
+ * @name `synth`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.synth
  * // Or access via domain
  * const samePkg = pantry.getsynthcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "getsynth.com"
+ * console.log(pkg.name)        // "synth"
  * console.log(pkg.description) // "The Declarative Data Generator"
  * console.log(pkg.programs)    // ["synth"]
  * console.log(pkg.versions[0]) // "0.6.9" (latest)
@@ -31,7 +31,7 @@ export const synthPackage = {
   /**
    * The display name of this package.
    */
-  name: 'getsynth.com' as const,
+  name: 'synth' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const synthPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'synth',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) synth -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install synth' as const,
 }
 
 export type SynthPackage = typeof synthPackage

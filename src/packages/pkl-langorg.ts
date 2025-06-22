@@ -6,7 +6,7 @@
  * @version `0.28.2` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +pkl-lang.org -- $SHELL -i`
+ * @install `launchpad install pkl-lang.org`
  * @companions `openjdk.org`
  *
  * @example
@@ -43,7 +43,7 @@ export const pkllangorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +pkl-lang.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install pkl-lang.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,6 +79,8 @@ export const pkllangorgPackage = {
     '0.25.2',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pkl-lang.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pkl-lang.org' as const,
 }
 
 export type PkllangorgPackage = typeof pkllangorgPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install huggingface-cli`
- * @aliases `huggingface-cli`
+ * @name `huggingface-cli`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.huggingfacecli
  * // Or access via domain
  * const samePkg = pantry.huggingfaceco
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "huggingface.co"
+ * console.log(pkg.name)        // "huggingface-cli"
  * console.log(pkg.description) // "The official Python client for the Huggingface ..."
  * console.log(pkg.programs)    // ["huggingface-cli"]
  * console.log(pkg.versions[0]) // "0.33.0" (latest)
@@ -32,7 +32,7 @@ export const huggingfacecliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'huggingface.co' as const,
+  name: 'huggingface-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -130,9 +130,9 @@ export const huggingfacecliPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'huggingface-cli',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) huggingface-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install huggingface-cli' as const,
 }
 
 export type HuggingfacecliPackage = typeof huggingfacecliPackage

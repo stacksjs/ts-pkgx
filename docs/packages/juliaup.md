@@ -48,7 +48,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +julialang.org/juliaup@1.17.21 -- $SHELL -i
+sh <(curl https://pkgx.sh) juliaup -- $SHELL -i
 ```
 
 ## Usage Examples

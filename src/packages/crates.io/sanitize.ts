@@ -69,6 +69,8 @@ export const sanitizePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sanitize -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sanitize' as const,
 }
 
 export type SanitizePackage = typeof sanitizePackage

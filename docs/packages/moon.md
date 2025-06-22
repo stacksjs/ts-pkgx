@@ -47,7 +47,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +moonrepo.dev/moon@1.37.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) moon -- $SHELL -i
 ```
 
 ## Usage Examples

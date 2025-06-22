@@ -1,11 +1,11 @@
-# libmd
+# hadrons.org/libmd
 
 > BSD Mesage Digest library (mirror)
 
 ## Package Information
 
 - **Domain**: `hadrons.org/libmd`
-- **Name**: `libmd`
+- **Name**: `hadrons.org/libmd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hadrons.org/libmd/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +hadrons.org/libmd -- $SHELL -i
+launchpad install hadrons.org/libmd
 ```
 
 ## Programs

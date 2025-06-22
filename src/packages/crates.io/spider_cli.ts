@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install spider`
- * @aliases `spider`
+ * @name `spider`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.spider
  * // Or access via domain
  * const samePkg = pantry.cratesiospider_cli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "spider_cli"
+ * console.log(pkg.name)        // "spider"
  * console.log(pkg.description) // "A web crawler and scraper for Rust"
  * console.log(pkg.programs)    // ["spider"]
  * console.log(pkg.versions[0]) // "2.37.104" (latest)
@@ -31,7 +31,7 @@ export const spiderPackage = {
   /**
    * The display name of this package.
    */
-  name: 'spider_cli' as const,
+  name: 'spider' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -375,9 +375,9 @@ export const spiderPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'spider',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) spider -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install spider' as const,
 }
 
 export type SpiderPackage = typeof spiderPackage

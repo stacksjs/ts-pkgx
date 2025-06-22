@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +ruby-lang.org -- $SHELL -i
+launchpad install ruby-lang.org
 ```
 
 ## Programs

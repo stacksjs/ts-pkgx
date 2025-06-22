@@ -1,19 +1,19 @@
 /**
- * **libde265** - Open h.265 video codec implementation.
+ * **github.com/strukturag/libde265** - Open h.265 video codec implementation.
  *
  * @domain `github.com/strukturag/libde265`
  * @programs `acceleration_speed`, `bjoentegaard`, `block-rate-estim`, `gen-enc-table`, `rd-curves`, ... (+2 more)
  * @version `1.0.16` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/strukturag/libde265 -- $SHELL -i`
+ * @install `launchpad install github.com/strukturag/libde265`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomstrukturaglibde265
- * console.log(pkg.name)        // "libde265"
+ * console.log(pkg.name)        // "github.com/strukturag/libde265"
  * console.log(pkg.description) // "Open h.265 video codec implementation."
  * console.log(pkg.programs)    // ["acceleration_speed", "bjoentegaard", ...]
  * console.log(pkg.versions[0]) // "1.0.16" (latest)
@@ -26,7 +26,7 @@ export const githubcomstrukturaglibde265Package = {
   /**
    * The display name of this package.
    */
-  name: 'libde265' as const,
+  name: 'github.com/strukturag/libde265' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,7 +42,7 @@ export const githubcomstrukturaglibde265Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/strukturag/libde265 -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/strukturag/libde265' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,6 +71,8 @@ export const githubcomstrukturaglibde265Package = {
     '1.0.11',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/strukturag/libde265 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/strukturag/libde265' as const,
 }
 
 export type Githubcomstrukturaglibde265Package = typeof githubcomstrukturaglibde265Package

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install keep`
- * @aliases `keep`
+ * @name `keep`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.keep
  * // Or access via domain
  * const samePkg = pantry.keephqdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "keephq.dev"
+ * console.log(pkg.name)        // "keep"
  * console.log(pkg.description) // "The open-source AIOps and alert management plat..."
  * console.log(pkg.programs)    // ["keep"]
  * console.log(pkg.versions[0]) // "0.0.0" (latest)
@@ -32,7 +32,7 @@ export const keepPackage = {
   /**
    * The display name of this package.
    */
-  name: 'keephq.dev' as const,
+  name: 'keep' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const keepPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'keep',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) keep -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install keep' as const,
 }
 
 export type KeepPackage = typeof keepPackage

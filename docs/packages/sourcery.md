@@ -46,7 +46,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/krzysztofzablocki/Sourcery@2.2.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) sourcery -- $SHELL -i
 ```
 
 ## Usage Examples

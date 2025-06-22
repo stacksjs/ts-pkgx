@@ -1,11 +1,11 @@
-# charset_normalizer
+# normalizer
 
 > Truly universal encoding detector in pure Python
 
 ## Package Information
 
 - **Domain**: `github.com/Ousret/charset_normalizer`
-- **Name**: `charset_normalizer`
+- **Name**: `normalizer`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Ousret/charset_normalizer/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install normalizer
 ## Programs
 
 This package provides the following executable programs:
-
-- `normalizer`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `normalizer`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/Ousret/charset_normalizer@3.4.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) normalizer -- $SHELL -i
 ```
 
 ## Dependencies

@@ -1,11 +1,11 @@
-# graphene
+# ebassi.github.io/graphene
 
 > A thin layer of graphic data types
 
 ## Package Information
 
 - **Domain**: `ebassi.github.io/graphene`
-- **Name**: `graphene`
+- **Name**: `ebassi.github.io/graphene`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ebassi.github.io/graphene/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +ebassi.github.io/graphene -- $SHELL -i
+launchpad install ebassi.github.io/graphene
 ```
 
 ## Programs

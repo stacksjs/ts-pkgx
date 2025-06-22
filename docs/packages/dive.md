@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/wagoodman/dive@0.13.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) dive -- $SHELL -i
 ```
 
 ## Usage Examples

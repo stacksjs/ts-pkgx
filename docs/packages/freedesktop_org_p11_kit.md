@@ -1,11 +1,11 @@
-# p11-kit
+# freedesktop.org/p11-kit
 
 > Provides a way to load and enumerate PKCS#11 modules.
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/p11-kit`
-- **Name**: `p11-kit`
+- **Name**: `freedesktop.org/p11-kit`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/p11-kit/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +freedesktop.org/p11-kit -- $SHELL -i
+launchpad install freedesktop.org/p11-kit
 ```
 
 ## Programs

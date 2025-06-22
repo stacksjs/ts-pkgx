@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fastlane`
- * @aliases `fastlane`
+ * @name `fastlane`
  * @dependencies `ruby-lang.org~3.2`, `rubygems.org`
  * @companions `cocoapods.org/xcodeproj`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.fastlane
  * // Or access via domain
  * const samePkg = pantry.fastlanetools
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "fastlane.tools"
+ * console.log(pkg.name)        // "fastlane"
  * console.log(pkg.description) // "🚀 The easiest way to automate building and rel..."
  * console.log(pkg.programs)    // ["fastlane"]
  * console.log(pkg.versions[0]) // "2.228.0" (latest)
@@ -33,7 +33,7 @@ export const fastlanePackage = {
   /**
    * The display name of this package.
    */
-  name: 'fastlane.tools' as const,
+  name: 'fastlane' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -105,9 +105,9 @@ export const fastlanePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'fastlane',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fastlane -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fastlane' as const,
 }
 
 export type FastlanePackage = typeof fastlanePackage

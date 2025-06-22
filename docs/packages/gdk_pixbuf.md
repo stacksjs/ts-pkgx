@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnome.org/gdk-pixbuf -- $SHELL -i
+launchpad install gdk-pixbuf
 ```
 
 ## Programs

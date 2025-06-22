@@ -12,7 +12,7 @@ The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries,
 
 **Programs**: dart, dartaotruntime
 
-**Install**: `launchpad install +dart.dev -- $SHELL -i`
+**Install**: `launchpad install dart`
 
 ---
 
@@ -32,7 +32,7 @@ Programming language for highly scalable real-time systems
 
 **Programs**: ct_run, dialyzer, epmd, erl, erlc, escript, run_erl, to_erl, typer
 
-**Install**: `launchpad install +erlang.org -- $SHELL -i`
+**Install**: `launchpad install erlang.org`
 
 ---
 
@@ -52,7 +52,7 @@ The Go programming language
 
 **Programs**: go, gofmt
 
-**Install**: `launchpad install +go.dev -- $SHELL -i`
+**Install**: `launchpad install go.dev`
 
 ---
 
@@ -62,7 +62,7 @@ Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC'
 
 **Programs**: ghc, ghc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghc-&lbrace;&lbrace;version&rbrace;&rbrace;, ghc-pkg, ghc-pkg-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghc-pkg-&lbrace;&lbrace;version&rbrace;&rbrace;, ghci, ghci-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghci-&lbrace;&lbrace;version&rbrace;&rbrace;, ghcup, haddock, haddock-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, haddock-&lbrace;&lbrace;version&rbrace;&rbrace;, hp2ps, hp2ps-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, hp2ps-&lbrace;&lbrace;version&rbrace;&rbrace;, hpc, hpc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, hpc-&lbrace;&lbrace;version&rbrace;&rbrace;, hsc2hs, hsc2hs-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, hsc2hs-&lbrace;&lbrace;version&rbrace;&rbrace;, runghc, runghc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, runghc-&lbrace;&lbrace;version&rbrace;&rbrace;, runhaskell, runhaskell-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, runhaskell-&lbrace;&lbrace;version&rbrace;&rbrace;
 
-**Install**: `launchpad install +haskell.org -- $SHELL -i`
+**Install**: `launchpad install haskell.org`
 
 ---
 
@@ -82,7 +82,7 @@ Statically typed programming language for the JVM
 
 **Programs**: kapt, kotlin, kotlinc, kotlinc-js, kotlinc-jvm
 
-**Install**: `launchpad install +kotlinlang.org -- $SHELL -i`
+**Install**: `launchpad install kotlinlang.org`
 
 ---
 
@@ -112,7 +112,7 @@ Highly capable, feature-rich programming language
 
 **Programs**: corelist, cpan, enc2xs, encguess, h2ph, h2xs, instmodsh, json_pp, libnetcfg, perl, perlbug, perldoc, perlivp, perlthanks, piconv, pl2pm, pod2html, pod2man, pod2text, pod2usage, podchecker, prove, ptar, ptardiff, ptargrep, shasum, splain, streamzip, xsubpp, zipdetails
 
-**Install**: `launchpad install +perl.org -- $SHELL -i`
+**Install**: `launchpad install perl.org`
 
 ---
 
@@ -122,7 +122,7 @@ General-purpose scripting language
 
 **Programs**: pear, pecl, phar, php, php-cgi, php-config, phpdbg, phpize
 
-**Install**: `launchpad install +php.net -- $SHELL -i`
+**Install**: `launchpad install php.net`
 
 ---
 
@@ -132,7 +132,7 @@ The Python programming language
 
 **Programs**: python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace;
 
-**Install**: `launchpad install +python.org -- $SHELL -i`
+**Install**: `launchpad install python`
 
 ---
 
@@ -142,7 +142,7 @@ The Python programming language
 
 **Programs**: python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace;
 
-**Install**: `launchpad install +python.org -- $SHELL -i`
+**Install**: `launchpad install python`
 
 ---
 
@@ -152,7 +152,7 @@ The Swift Programming Language
 
 **Programs**: docc, dsymutil, sourcekit-lsp, swift-api-checker.py, swift-build-sdk-interfaces, swift-build-tool, swift-demangle, swift-driver, swift-format, swift-frontend, swift-help, swift-package, swift-plugin-server, swift-stdlib-tool, swift, swift-api-digester, swift-api-extract, swift-autolink-extract, swift-build, swift-experimental-sdk, swift-package-collection, swift-package-registry, swift-run, swift-symbolgraph-extract, swift-test, swiftc
 
-**Install**: `launchpad install +swift.org -- $SHELL -i`
+**Install**: `launchpad install swift`
 
 ---
 
@@ -166,7 +166,7 @@ TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
 
 ---
 
-### [vlang.io](../packages/vlangio.md)
+### [vlang.io](../packages/vlangio.md) (v)
 
 Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
 

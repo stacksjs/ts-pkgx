@@ -1,11 +1,11 @@
-# maven.apache.org
+# mvn
 
 > Java-based project management
 
 ## Package Information
 
-- **Domain**: `mavenapache.org`
-- **Name**: `maven.apache.org`
+- **Domain**: `maven.apache.org`
+- **Name**: `mvn`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/maven.apache.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install mavenapache.org
+launchpad install mvn
 ```
 
 ## Programs
@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `mvn`
 - `mvnDebug`
 - `mvnyjp`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `mvn`
 
 ## Available Versions
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +mavenapache.org@3.9.10 -- $SHELL -i
+sh <(curl https://pkgx.sh) +maven.apache.org@3.9.10 -- $SHELL -i
 ```
 
 ## Dependencies

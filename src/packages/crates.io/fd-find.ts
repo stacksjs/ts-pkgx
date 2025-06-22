@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fd`
- * @aliases `fd`
+ * @name `fd`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.fd
  * // Or access via domain
  * const samePkg = pantry.cratesiofdfind
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "fd-find"
+ * console.log(pkg.name)        // "fd"
  * console.log(pkg.description) // "A simple, fast and user-friendly alternative to..."
  * console.log(pkg.programs)    // ["fd"]
  * console.log(pkg.versions[0]) // "10.2.0" (latest)
@@ -31,7 +31,7 @@ export const fdPackage = {
   /**
    * The display name of this package.
    */
-  name: 'fd-find' as const,
+  name: 'fd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const fdPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'fd',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fd' as const,
 }
 
 export type FdPackage = typeof fdPackage

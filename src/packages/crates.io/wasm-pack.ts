@@ -79,6 +79,8 @@ export const wasmpackPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wasm-pack -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wasm-pack' as const,
 }
 
 export type WasmpackPackage = typeof wasmpackPackage

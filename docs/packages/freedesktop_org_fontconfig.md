@@ -1,11 +1,11 @@
-# fontconfig
+# freedesktop.org/fontconfig
 
 > XML-based font configuration API for X Windows
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/fontconfig`
-- **Name**: `fontconfig`
+- **Name**: `freedesktop.org/fontconfig`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/fontconfig/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +freedesktop.org/fontconfig -- $SHELL -i
+launchpad install freedesktop.org/fontconfig
 ```
 
 ## Programs

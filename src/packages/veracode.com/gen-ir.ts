@@ -72,6 +72,8 @@ export const genirPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gen-ir -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gen-ir' as const,
 }
 
 export type GenirPackage = typeof genirPackage

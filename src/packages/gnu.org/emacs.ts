@@ -88,6 +88,8 @@ export const emacsPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) emacs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install emacs' as const,
 }
 
 export type EmacsPackage = typeof emacsPackage

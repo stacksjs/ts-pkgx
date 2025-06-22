@@ -1,11 +1,11 @@
-# cdk
+# terraform-cdk
 
 > Define infrastructure resources using programming constructs and provision them using HashiCorp Terraform
 
 ## Package Information
 
 - **Domain**: `terraform.io/cdk`
-- **Name**: `cdk`
+- **Name**: `terraform-cdk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/terraform.io/cdk/package.yml)
 
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `cdktf`
-- `terraform-cdk`
 
 ## Available Versions
 
@@ -47,7 +46,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +terraform.io/cdk@0.21.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) cdktf -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +61,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.terraform-cdk
+const pkg = pantry.cdktf
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

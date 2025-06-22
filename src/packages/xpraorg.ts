@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xpra`
- * @aliases `xpra`
+ * @name `xpra`
  * @dependencies `pkgx.sh^1`, `python.org~3.11`, `cython.org`, ... (+6 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.xpra
  * // Or access via domain
  * const samePkg = pantry.xpraorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "xpra.org"
+ * console.log(pkg.name)        // "xpra"
  * console.log(pkg.description) // "Persistent remote applications for X11; screen ..."
  * console.log(pkg.programs)    // ["xpra"]
  * console.log(pkg.versions[0]) // "6.3.1" (latest)
@@ -32,7 +32,7 @@ export const xpraPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xpra.org' as const,
+  name: 'xpra' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -92,9 +92,9 @@ export const xpraPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'xpra',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xpra -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xpra' as const,
 }
 
 export type XpraPackage = typeof xpraPackage

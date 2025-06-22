@@ -1,11 +1,11 @@
-# filelock
+# github.com/tox-dev/filelock
 
 > A platform-independent file lock for Python.
 
 ## Package Information
 
 - **Domain**: `github.com/tox-dev/filelock`
-- **Name**: `filelock`
+- **Name**: `github.com/tox-dev/filelock`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/tox-dev/filelock/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/tox-dev/filelock -- $SHELL -i
+launchpad install github.com/tox-dev/filelock
 ```
 
 ## Programs

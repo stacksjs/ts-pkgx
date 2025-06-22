@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cue`
- * @aliases `cue`
+ * @name `cue`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cue
  * // Or access via domain
  * const samePkg = pantry.cuelangorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cuelang.org"
+ * console.log(pkg.name)        // "cue"
  * console.log(pkg.description) // "The home of the CUE language! Validate and defi..."
  * console.log(pkg.programs)    // ["cue"]
  * console.log(pkg.versions[0]) // "0.13.1" (latest)
@@ -31,7 +31,7 @@ export const cuePackage = {
   /**
    * The display name of this package.
    */
-  name: 'cuelang.org' as const,
+  name: 'cue' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -87,9 +87,9 @@ export const cuePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cue',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cue -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cue' as const,
 }
 
 export type CuePackage = typeof cuePackage

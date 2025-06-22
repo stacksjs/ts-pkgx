@@ -1,11 +1,11 @@
-# btrfs-progs
+# github.com/kdave/btrfs-progs
 
 > Userspace utilities to manage btrfs filesystems
 
 ## Package Information
 
 - **Domain**: `github.com/kdave/btrfs-progs`
-- **Name**: `btrfs-progs`
+- **Name**: `github.com/kdave/btrfs-progs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kdave/btrfs-progs/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/kdave/btrfs-progs -- $SHELL -i
+launchpad install github.com/kdave/btrfs-progs
 ```
 
 ## Programs

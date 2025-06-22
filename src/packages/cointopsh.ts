@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cointop`
- * @aliases `cointop`
+ * @name `cointop`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cointop
  * // Or access via domain
  * const samePkg = pantry.cointopsh
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cointop.sh"
+ * console.log(pkg.name)        // "cointop"
  * console.log(pkg.description) // "A fast and lightweight interactive terminal bas..."
  * console.log(pkg.programs)    // ["cointop"]
  * console.log(pkg.versions[0]) // "1.6.10" (latest)
@@ -32,7 +32,7 @@ export const cointopPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cointop.sh' as const,
+  name: 'cointop' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const cointopPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'cointop',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cointop -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cointop' as const,
 }
 
 export type CointopPackage = typeof cointopPackage

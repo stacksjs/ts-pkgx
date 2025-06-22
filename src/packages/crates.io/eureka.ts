@@ -76,6 +76,8 @@ export const eurekaPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) eureka -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install eureka' as const,
 }
 
 export type EurekaPackage = typeof eurekaPackage

@@ -1,11 +1,11 @@
-# opencanary
+# opencanaryd
 
 > Modular and decentralised honeypot
 
 ## Package Information
 
 - **Domain**: `github.com/thinkst/opencanary`
-- **Name**: `opencanary`
+- **Name**: `opencanaryd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/thinkst/opencanary/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install opencanaryd
 ## Programs
 
 This package provides the following executable programs:
-
-- `opencanaryd`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `opencanaryd`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/thinkst/opencanary@0.9.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) opencanaryd -- $SHELL -i
 ```
 
 ## Dependencies

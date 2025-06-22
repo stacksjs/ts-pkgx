@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +snyk.io/driftctl@0.40.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) driftctl -- $SHELL -i
 ```
 
 ## Usage Examples

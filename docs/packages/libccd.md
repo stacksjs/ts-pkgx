@@ -1,11 +1,11 @@
-# libccd
+# github.com/danfis/libccd
 
 > Library for collision detection between two convex shapes
 
 ## Package Information
 
 - **Domain**: `github.com/danfis/libccd`
-- **Name**: `libccd`
+- **Name**: `github.com/danfis/libccd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/danfis/libccd/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/danfis/libccd -- $SHELL -i
+launchpad install github.com/danfis/libccd
 ```
 
 ## Programs

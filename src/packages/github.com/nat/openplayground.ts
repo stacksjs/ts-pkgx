@@ -78,6 +78,8 @@ export const openplaygroundPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) openplayground -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openplayground' as const,
 }
 
 export type OpenplaygroundPackage = typeof openplaygroundPackage

@@ -5,7 +5,7 @@
  * @version `1.2.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +theora.org -- $SHELL -i`
+ * @install `launchpad install theora.org`
  * @dependencies `xiph.org/ogg`, `xiph.org/vorbis`
  *
  * @example
@@ -40,7 +40,7 @@ export const theoraorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +theora.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install theora.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,6 +60,8 @@ export const theoraorgPackage = {
     '1.1.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +theora.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install theora.org' as const,
 }
 
 export type TheoraorgPackage = typeof theoraorgPackage

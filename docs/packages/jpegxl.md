@@ -1,11 +1,11 @@
-# jpegxl
+# jpeg.org/jpegxl
 
 > JPEG XL image format reference implementation
 
 ## Package Information
 
 - **Domain**: `jpeg.org/jpegxl`
-- **Name**: `jpegxl`
+- **Name**: `jpeg.org/jpegxl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jpeg.org/jpegxl/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +jpeg.org/jpegxl -- $SHELL -i
+launchpad install jpeg.org/jpegxl
 ```
 
 ## Programs

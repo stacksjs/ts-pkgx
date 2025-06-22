@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kubeshark`
- * @aliases `kubeshark`
+ * @name `kubeshark`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.kubeshark
  * // Or access via domain
  * const samePkg = pantry.kubesharkco
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "kubeshark.co"
+ * console.log(pkg.name)        // "kubeshark"
  * console.log(pkg.description) // "The API traffic analyzer for Kubernetes providi..."
  * console.log(pkg.programs)    // ["kubeshark"]
  * console.log(pkg.versions[0]) // "72.3.83" (latest)
@@ -31,7 +31,7 @@ export const kubesharkPackage = {
   /**
    * The display name of this package.
    */
-  name: 'kubeshark.co' as const,
+  name: 'kubeshark' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -124,9 +124,9 @@ export const kubesharkPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'kubeshark',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kubeshark -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kubeshark' as const,
 }
 
 export type KubesharkPackage = typeof kubesharkPackage

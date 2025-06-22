@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +openresty.org -- $SHELL -i
+launchpad install openresty.org
 ```
 
 ## Programs

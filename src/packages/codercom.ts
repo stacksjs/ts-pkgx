@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install coder`
- * @aliases `coder`
+ * @name `coder`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.coder
  * // Or access via domain
  * const samePkg = pantry.codercom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "coder.com"
+ * console.log(pkg.name)        // "coder"
  * console.log(pkg.description) // "Tool for provisioning self-hosted development e..."
  * console.log(pkg.programs)    // ["coder"]
  * console.log(pkg.versions[0]) // "2.23.1" (latest)
@@ -31,7 +31,7 @@ export const coderPackage = {
   /**
    * The display name of this package.
    */
-  name: 'coder.com' as const,
+  name: 'coder' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -136,9 +136,9 @@ export const coderPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'coder',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) coder -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install coder' as const,
 }
 
 export type CoderPackage = typeof coderPackage

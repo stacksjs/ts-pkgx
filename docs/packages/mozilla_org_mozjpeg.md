@@ -1,11 +1,11 @@
-# mozjpeg
+# mozilla.org/mozjpeg
 
 > Improved JPEG encoder.
 
 ## Package Information
 
 - **Domain**: `mozilla.org/mozjpeg`
-- **Name**: `mozjpeg`
+- **Name**: `mozilla.org/mozjpeg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mozilla.org/mozjpeg/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +mozilla.org/mozjpeg -- $SHELL -i
+launchpad install mozilla.org/mozjpeg
 ```
 
 ## Programs

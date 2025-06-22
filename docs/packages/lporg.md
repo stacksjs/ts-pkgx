@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/blacktop/lporg@20.4.32 -- $SHELL -i
+sh <(curl https://pkgx.sh) lporg -- $SHELL -i
 ```
 
 ## Usage Examples

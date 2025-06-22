@@ -69,6 +69,8 @@ export const hadolintPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hadolint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hadolint' as const,
 }
 
 export type HadolintPackage = typeof hadolintPackage

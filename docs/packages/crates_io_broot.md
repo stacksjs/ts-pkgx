@@ -48,7 +48,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/broot@1.46.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) broot -- $SHELL -i
 ```
 
 ## Dependencies

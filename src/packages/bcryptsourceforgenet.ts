@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bcrypt`
- * @aliases `bcrypt`
+ * @name `bcrypt`
  * @dependencies `zlib.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.bcrypt
  * // Or access via domain
  * const samePkg = pantry.bcryptsourceforgenet
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "bcrypt.sourceforge.net"
+ * console.log(pkg.name)        // "bcrypt"
  * console.log(pkg.description) // "Cross platform file encryption utility using bl..."
  * console.log(pkg.programs)    // ["bcrypt"]
  * console.log(pkg.versions[0]) // "1.1.0" (latest)
@@ -32,7 +32,7 @@ export const bcryptPackage = {
   /**
    * The display name of this package.
    */
-  name: 'bcrypt.sourceforge.net' as const,
+  name: 'bcrypt' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,7 @@ export const bcryptPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'bcrypt',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bcrypt -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install bcrypt' as const,
 }

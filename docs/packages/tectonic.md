@@ -1,11 +1,11 @@
-# tectonic-typesetting.github.io
+# tectonic
 
 > A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive.
 
 ## Package Information
 
 - **Domain**: `tectonic-typesetting.github.io`
-- **Name**: `tectonic-typesetting.github.io`
+- **Name**: `tectonic`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tectonic-typesetting.github.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install tectonic
 ## Programs
 
 This package provides the following executable programs:
-
-- `tectonic`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `tectonic`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +tectonic-typesetting.github.io@0.15.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) tectonic -- $SHELL -i
 ```
 
 ## Dependencies

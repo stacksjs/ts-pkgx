@@ -1,11 +1,11 @@
-# SourceKitten
+# sourcekitten
 
 > An adorable little framework and command line tool for interacting with SourceKit.
 
 ## Package Information
 
 - **Domain**: `github.com/jpsim/SourceKitten`
-- **Name**: `SourceKitten`
+- **Name**: `sourcekitten`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jpsim/SourceKitten/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install sourcekitten
 ## Programs
 
 This package provides the following executable programs:
-
-- `sourcekitten`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `sourcekitten`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/jpsim/SourceKitten@0.37.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) sourcekitten -- $SHELL -i
 ```
 
 ## Usage Examples

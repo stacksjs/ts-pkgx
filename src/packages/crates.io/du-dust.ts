@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dust`
- * @aliases `dust`
+ * @name `dust`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.dust
  * // Or access via domain
  * const samePkg = pantry.cratesiodudust
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "du-dust"
+ * console.log(pkg.name)        // "dust"
  * console.log(pkg.description) // "A more intuitive version of du in rust"
  * console.log(pkg.programs)    // ["dust"]
  * console.log(pkg.versions[0]) // "1.2.1" (latest)
@@ -31,7 +31,7 @@ export const dustPackage = {
   /**
    * The display name of this package.
    */
-  name: 'du-dust' as const,
+  name: 'dust' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -73,9 +73,9 @@ export const dustPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'dust',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dust -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dust' as const,
 }
 
 export type DustPackage = typeof dustPackage

@@ -1,11 +1,11 @@
-# faad2
+# faad
 
 > Freeware Advanced Audio (AAC) Decoder faad2 mirror
 
 ## Package Information
 
 - **Domain**: `sourceforge.net/faad2`
-- **Name**: `faad2`
+- **Name**: `faad`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/faad2/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install faad
 ## Programs
 
 This package provides the following executable programs:
-
-- `faad`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `faad`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +sourceforge.net/faad2@2.11.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) faad -- $SHELL -i
 ```
 
 ## Usage Examples

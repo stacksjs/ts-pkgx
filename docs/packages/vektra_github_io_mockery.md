@@ -53,7 +53,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +vektra.github.io/mockery@3.4.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) mockery -- $SHELL -i
 ```
 
 ## Usage Examples

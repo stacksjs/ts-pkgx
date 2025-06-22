@@ -80,6 +80,8 @@ export const socatPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) socat -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install socat' as const,
 }
 
 export type SocatPackage = typeof socatPackage

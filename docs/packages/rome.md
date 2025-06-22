@@ -1,11 +1,11 @@
-# rome.tools
+# rome
 
 > Unified developer tools for JavaScript, TypeScript, and the web
 
 ## Package Information
 
 - **Domain**: `rome.tools`
-- **Name**: `rome.tools`
+- **Name**: `rome`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rome.tools/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install rome
 ## Programs
 
 This package provides the following executable programs:
-
-- `rome`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `rome`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +rome.tools@0.4.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) rome -- $SHELL -i
 ```
 
 ## Usage Examples

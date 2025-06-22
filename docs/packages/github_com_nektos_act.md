@@ -44,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/nektos/act@0.2.78 -- $SHELL -i
+sh <(curl https://pkgx.sh) act -- $SHELL -i
 ```
 
 ## Usage Examples

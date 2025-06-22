@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/git-gone@1.2.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) git-gone -- $SHELL -i
 ```
 
 ## Dependencies

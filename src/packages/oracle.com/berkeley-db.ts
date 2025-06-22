@@ -1,12 +1,12 @@
 /**
- * **berkeley-db** - High performance key/value database
+ * **oracle.com/berkeley-db** - High performance key/value database
  *
  * @domain `oracle.com/berkeley-db`
  * @programs `db_verify`, `db_upgrade`, `db_tuner`, `db_replicate`, `db_stat`, ... (+10 more)
  * @version `18.1.40` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +oracle.com/berkeley-db -- $SHELL -i`
+ * @install `launchpad install oracle.com/berkeley-db`
  * @dependencies `openssl.org^1.1.1`
  *
  * @example
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.oraclecomberkeleydb
- * console.log(pkg.name)        // "berkeley-db"
+ * console.log(pkg.name)        // "oracle.com/berkeley-db"
  * console.log(pkg.description) // "High performance key/value database"
  * console.log(pkg.programs)    // ["db_verify", "db_upgrade", ...]
  * console.log(pkg.versions[0]) // "18.1.40" (latest)
@@ -27,7 +27,7 @@ export const oraclecomberkeleydbPackage = {
   /**
    * The display name of this package.
    */
-  name: 'berkeley-db' as const,
+  name: 'oracle.com/berkeley-db' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,7 +43,7 @@ export const oraclecomberkeleydbPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +oracle.com/berkeley-db -- $SHELL -i' as const,
+  installCommand: 'launchpad install oracle.com/berkeley-db' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -81,6 +81,8 @@ export const oraclecomberkeleydbPackage = {
     '18.1.40',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +oracle.com/berkeley-db -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install oracle.com/berkeley-db' as const,
 }
 
 export type OraclecomberkeleydbPackage = typeof oraclecomberkeleydbPackage

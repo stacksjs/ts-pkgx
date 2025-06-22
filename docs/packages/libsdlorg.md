@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +libsdl.org -- $SHELL -i
+launchpad install libsdl.org
 ```
 
 ## Programs

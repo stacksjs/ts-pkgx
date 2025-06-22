@@ -1,11 +1,11 @@
-# kubeshark.co
+# kubeshark
 
 > The API traffic analyzer for Kubernetes providing real-time K8s protocol-level visibility, capturing and monitoring all traffic and payloads going in, out and across containers, pods, nodes and clusters. Inspired by Wireshark, purposely built for Kubernetes
 
 ## Package Information
 
 - **Domain**: `kubeshark.co`
-- **Name**: `kubeshark.co`
+- **Name**: `kubeshark`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kubeshark.co/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install kubeshark
 ## Programs
 
 This package provides the following executable programs:
-
-- `kubeshark`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `kubeshark`
 
@@ -54,7 +48,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +kubeshark.co@72.3.83 -- $SHELL -i
+sh <(curl https://pkgx.sh) kubeshark -- $SHELL -i
 ```
 
 ## Usage Examples

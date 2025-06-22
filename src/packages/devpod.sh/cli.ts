@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install devpod`
- * @aliases `devpod`
+ * @name `devpod`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.devpod
  * // Or access via domain
  * const samePkg = pantry.devpodshcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cli"
+ * console.log(pkg.name)        // "devpod"
  * console.log(pkg.description) // "Codespaces but open-source, client-only and uno..."
  * console.log(pkg.programs)    // ["devpod"]
  * console.log(pkg.versions[0]) // "0.6.15" (latest)
@@ -31,7 +31,7 @@ export const devpodPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cli' as const,
+  name: 'devpod' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -99,9 +99,9 @@ export const devpodPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'devpod',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) devpod -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install devpod' as const,
 }
 
 export type DevpodPackage = typeof devpodPackage

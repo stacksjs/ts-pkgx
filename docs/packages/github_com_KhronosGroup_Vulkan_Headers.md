@@ -1,11 +1,11 @@
-# Vulkan-Headers
+# github.com/KhronosGroup/Vulkan-Headers
 
 > Vulkan header files and API registry
 
 ## Package Information
 
 - **Domain**: `github.com/KhronosGroup/Vulkan-Headers`
-- **Name**: `Vulkan-Headers`
+- **Name**: `github.com/KhronosGroup/Vulkan-Headers`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/KhronosGroup/Vulkan-Headers/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/KhronosGroup/Vulkan-Headers -- $SHELL -i
+launchpad install github.com/KhronosGroup/Vulkan-Headers
 ```
 
 ## Programs

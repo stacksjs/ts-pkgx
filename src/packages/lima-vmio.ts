@@ -6,7 +6,7 @@
  * @version `1.1.1` (25 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +lima-vm.io -- $SHELL -i`
+ * @install `launchpad install lima-vm.io`
  * @dependencies `qemu.org`
  *
  * @example
@@ -43,7 +43,7 @@ export const limavmioPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +lima-vm.io -- $SHELL -i' as const,
+  installCommand: 'launchpad install lima-vm.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -97,6 +97,8 @@ export const limavmioPackage = {
     '0.16.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lima-vm.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lima-vm.io' as const,
 }
 
 export type LimavmioPackage = typeof limavmioPackage

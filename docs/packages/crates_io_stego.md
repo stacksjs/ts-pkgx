@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/stego@2019.10.22 -- $SHELL -i
+sh <(curl https://pkgx.sh) stego -- $SHELL -i
 ```
 
 ## Usage Examples

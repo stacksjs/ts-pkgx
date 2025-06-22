@@ -1,11 +1,11 @@
-# bison
+# gnu.org/bison
 
 > Parser generator
 
 ## Package Information
 
 - **Domain**: `gnu.org/bison`
-- **Name**: `bison`
+- **Name**: `gnu.org/bison`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/bison/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnu.org/bison -- $SHELL -i
+launchpad install gnu.org/bison
 ```
 
 ## Programs

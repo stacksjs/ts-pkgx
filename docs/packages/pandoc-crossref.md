@@ -1,11 +1,11 @@
-# crossref
+# pandoc-crossref
 
 > Pandoc filter for numbering and cross-referencing
 
 ## Package Information
 
 - **Domain**: `pandoc.org/crossref`
-- **Name**: `crossref`
+- **Name**: `pandoc-crossref`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pandoc.org/crossref/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install pandoc-crossref
 ## Programs
 
 This package provides the following executable programs:
-
-- `pandoc-crossref`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pandoc-crossref`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pandoc.org/crossref@0.3.20 -- $SHELL -i
+sh <(curl https://pkgx.sh) pandoc-crossref -- $SHELL -i
 ```
 
 ## Dependencies

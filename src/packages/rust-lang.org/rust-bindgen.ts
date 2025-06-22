@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bindgen`
- * @aliases `bindgen`
+ * @name `bindgen`
  * @dependencies `linux:llvm.org` (includes OS-specific dependencies with `os:package` format)
  * @companions `rust-lang.org`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.bindgen
  * // Or access via domain
  * const samePkg = pantry.rustlangorgrustbindgen
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rust-bindgen"
+ * console.log(pkg.name)        // "bindgen"
  * console.log(pkg.description) // "Automatically generates Rust FFI bindings to C ..."
  * console.log(pkg.programs)    // ["bindgen"]
  * console.log(pkg.versions[0]) // "0.72.0" (latest)
@@ -33,7 +33,7 @@ export const bindgenPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rust-bindgen' as const,
+  name: 'bindgen' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -86,9 +86,9 @@ export const bindgenPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'bindgen',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bindgen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bindgen' as const,
 }
 
 export type BindgenPackage = typeof bindgenPackage

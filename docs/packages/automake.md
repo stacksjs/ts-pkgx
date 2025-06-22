@@ -1,11 +1,11 @@
-# automake
+# gnu.org/automake
 
 > Tool for generating GNU Standards-compliant Makefiles
 
 ## Package Information
 
 - **Domain**: `gnu.org/automake`
-- **Name**: `automake`
+- **Name**: `gnu.org/automake`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/automake/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +gnu.org/automake -- $SHELL -i
+launchpad install gnu.org/automake
 ```
 
 ## Programs

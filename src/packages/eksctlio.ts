@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install eksctl`
- * @aliases `eksctl`
+ * @name `eksctl`
  * @dependencies `github.com/kubernetes-sigs/aws-iam-authenticator`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.eksctl
  * // Or access via domain
  * const samePkg = pantry.eksctlio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "eksctl.io"
+ * console.log(pkg.name)        // "eksctl"
  * console.log(pkg.description) // "Simple command-line tool for creating clusters ..."
  * console.log(pkg.programs)    // ["eksctl"]
  * console.log(pkg.versions[0]) // "0.210.0" (latest)
@@ -32,7 +32,7 @@ export const eksctlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'eksctl.io' as const,
+  name: 'eksctl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -131,9 +131,9 @@ export const eksctlPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'eksctl',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) eksctl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install eksctl' as const,
 }
 
 export type EksctlPackage = typeof eksctlPackage

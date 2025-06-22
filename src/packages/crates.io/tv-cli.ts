@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tv`
- * @aliases `tv`
+ * @name `tv`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.tv
  * // Or access via domain
  * const samePkg = pantry.cratesiotvcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "tv-cli"
+ * console.log(pkg.name)        // "tv"
  * console.log(pkg.description) // "Format json into table view"
  * console.log(pkg.programs)    // ["tv"]
  * console.log(pkg.versions[0]) // "0.7.0" (latest)
@@ -31,7 +31,7 @@ export const tvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tv-cli' as const,
+  name: 'tv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const tvPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'tv',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tv' as const,
 }
 
 export type TvPackage = typeof tvPackage

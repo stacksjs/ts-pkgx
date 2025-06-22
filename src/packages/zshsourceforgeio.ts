@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install zsh`
- * @aliases `zsh`
+ * @name `zsh`
  * @dependencies `invisible-island.net/ncurses`, `pcre.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.zsh
  * // Or access via domain
  * const samePkg = pantry.zshsourceforgeio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "zsh.sourceforge.io"
+ * console.log(pkg.name)        // "zsh"
  * console.log(pkg.description) // "UNIX shell (command interpreter)"
  * console.log(pkg.programs)    // ["zsh"]
  * console.log(pkg.versions[0]) // "5.9.0" (latest)
@@ -32,7 +32,7 @@ export const zshPackage = {
   /**
    * The display name of this package.
    */
-  name: 'zsh.sourceforge.io' as const,
+  name: 'zsh' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -76,9 +76,9 @@ export const zshPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'zsh',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zsh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zsh' as const,
 }
 
 export type ZshPackage = typeof zshPackage

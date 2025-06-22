@@ -1,11 +1,11 @@
-# opensearch.org
+# opensearch
 
 > 🔎 Open source distributed and RESTful search engine.
 
 ## Package Information
 
 - **Domain**: `opensearch.org`
-- **Name**: `opensearch.org`
+- **Name**: `opensearch`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/opensearch.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install opensearch.org
+launchpad install opensearch
 ```
 
 ## Programs
@@ -24,12 +24,6 @@ This package provides the following executable programs:
 - `opensearch-keystore`
 - `opensearch-plugin`
 - `opensearch-shard`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `opensearch`
 
 ## Available Versions
 

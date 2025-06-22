@@ -71,6 +71,8 @@ export const containerstructuretestPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) container-structure-test -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install container-structure-test' as const,
 }
 
 export type ContainerstructuretestPackage = typeof containerstructuretestPackage

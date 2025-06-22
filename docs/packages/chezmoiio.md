@@ -1,11 +1,11 @@
-# chezmoi.io
+# chezmoi
 
 > Manage your dotfiles across multiple diverse machines, securely.
 
 ## Package Information
 
 - **Domain**: `chezmoi.io`
-- **Name**: `chezmoi.io`
+- **Name**: `chezmoi`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/chezmoi.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install chezmoi
 ## Programs
 
 This package provides the following executable programs:
-
-- `chezmoi`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `chezmoi`
 

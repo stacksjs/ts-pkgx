@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install docker-machine`
- * @aliases `docker-machine`
+ * @name `docker-machine`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.dockermachine
  * // Or access via domain
  * const samePkg = pantry.dockercommachine
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "machine"
+ * console.log(pkg.name)        // "docker-machine"
  * console.log(pkg.description) // "Create Docker hosts locally and on cloud providers"
  * console.log(pkg.programs)    // ["docker-machine"]
  * console.log(pkg.versions[0]) // "0.16.2" (latest)
@@ -31,7 +31,7 @@ export const dockermachinePackage = {
   /**
    * The display name of this package.
    */
-  name: 'machine' as const,
+  name: 'docker-machine' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const dockermachinePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'docker-machine',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) docker-machine -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docker-machine' as const,
 }
 
 export type DockermachinePackage = typeof dockermachinePackage

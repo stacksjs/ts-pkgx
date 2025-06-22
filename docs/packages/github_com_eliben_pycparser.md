@@ -1,11 +1,11 @@
-# pycparser
+# github.com/eliben/pycparser
 
 > :snake: Complete C99 parser in pure Python
 
 ## Package Information
 
 - **Domain**: `github.com/eliben/pycparser`
-- **Name**: `pycparser`
+- **Name**: `github.com/eliben/pycparser`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/eliben/pycparser/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/eliben/pycparser -- $SHELL -i
+launchpad install github.com/eliben/pycparser
 ```
 
 ## Programs

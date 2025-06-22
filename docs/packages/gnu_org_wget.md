@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/wget@1.25.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) wget -- $SHELL -i
 ```
 
 ## Dependencies

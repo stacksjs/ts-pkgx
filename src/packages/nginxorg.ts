@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nginx`
- * @aliases `nginx`
+ * @name `nginx`
  * @dependencies `pcre.org^8.45 # switch to pcre.org/pcre2 once it`, `zlib.net^1.2.13`, `openssl.org^1.1.1k`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.nginx
  * // Or access via domain
  * const samePkg = pantry.nginxorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "nginx.org"
+ * console.log(pkg.name)        // "nginx"
  * console.log(pkg.description) // "HTTP(S) server and reverse proxy, and IMAP/POP3..."
  * console.log(pkg.programs)    // ["nginx"]
  * console.log(pkg.versions[0]) // "1.28.0" (latest)
@@ -32,7 +32,7 @@ export const nginxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'nginx.org' as const,
+  name: 'nginx' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -94,9 +94,9 @@ export const nginxPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'nginx',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nginx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nginx' as const,
 }
 
 export type NginxPackage = typeof nginxPackage

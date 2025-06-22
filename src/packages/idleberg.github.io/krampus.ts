@@ -70,6 +70,8 @@ export const krampusPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) krampus -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install krampus' as const,
 }
 
 export type KrampusPackage = typeof krampusPackage

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install unrar`
- * @aliases `unrar`
+ * @name `unrar`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.unrar
  * // Or access via domain
  * const samePkg = pantry.rarlabcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rarlab.com"
+ * console.log(pkg.name)        // "unrar"
  * console.log(pkg.programs)    // ["unrar"]
  * console.log(pkg.versions[0]) // "7.1.7" (latest)
  * ```
@@ -30,7 +30,7 @@ export const unrarPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rarlab.com' as const,
+  name: 'unrar' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -86,9 +86,9 @@ export const unrarPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'unrar',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) unrar -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install unrar' as const,
 }
 
 export type UnrarPackage = typeof unrarPackage

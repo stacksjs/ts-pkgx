@@ -229,6 +229,8 @@ export const nxPackage = {
   aliases: [
     'nx',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nx' as const,
 }
 
 export type NxPackage = typeof nxPackage

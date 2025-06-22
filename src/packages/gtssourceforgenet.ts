@@ -6,7 +6,7 @@
  * @version `0.7.6` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +gts.sourceforge.net -- $SHELL -i`
+ * @install `launchpad install gts.sourceforge.net`
  * @dependencies `gnome.org/glib>=2.4.0`
  *
  * @example
@@ -43,7 +43,7 @@ export const gtssourceforgenetPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +gts.sourceforge.net -- $SHELL -i' as const,
+  installCommand: 'launchpad install gts.sourceforge.net' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,6 +75,8 @@ export const gtssourceforgenetPackage = {
     '0.7.6',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gts.sourceforge.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gts.sourceforge.net' as const,
 }
 
 export type GtssourceforgenetPackage = typeof gtssourceforgenetPackage

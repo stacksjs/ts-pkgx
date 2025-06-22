@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +go.dev/testscript@1.14.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) testscript -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -1,11 +1,11 @@
 /**
- * **exts** - pkgx package
+ * **x.org/exts** - pkgx package
  *
  * @domain `x.org/exts`
  * @version `1.3.6` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +x.org/exts -- $SHELL -i`
+ * @install `launchpad install x.org/exts`
  * @dependencies `x.org/x11^1`, `x.org/protocol`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgexts
- * console.log(pkg.name)        // "exts"
+ * console.log(pkg.name)        // "x.org/exts"
  * console.log(pkg.versions[0]) // "1.3.6" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgextsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'exts' as const,
+  name: 'x.org/exts' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const xorgextsPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +x.org/exts -- $SHELL -i' as const,
+  installCommand: 'launchpad install x.org/exts' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,6 +60,8 @@ export const xorgextsPackage = {
     '1.3.5',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/exts -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/exts' as const,
 }
 
 export type XorgextsPackage = typeof xorgextsPackage

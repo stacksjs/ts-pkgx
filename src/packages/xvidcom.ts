@@ -5,7 +5,7 @@
  * @version `1.3.7` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +xvid.com -- $SHELL -i`
+ * @install `launchpad install xvid.com`
  *
  * @example
  * ```typescript
@@ -39,7 +39,7 @@ export const xvidcomPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +xvid.com -- $SHELL -i' as const,
+  installCommand: 'launchpad install xvid.com' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -51,6 +51,8 @@ export const xvidcomPackage = {
     '1.3.7',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +xvid.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xvid.com' as const,
 }
 
 export type XvidcomPackage = typeof xvidcomPackage

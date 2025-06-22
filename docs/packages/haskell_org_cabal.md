@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +haskell.org/cabal@3.8.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) cabal -- $SHELL -i
 ```
 
 ## Dependencies

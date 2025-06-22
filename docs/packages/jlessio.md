@@ -1,11 +1,11 @@
-# jless.io
+# jless
 
 > jless is a command-line JSON viewer designed for reading, exploring, and searching through JSON data.
 
 ## Package Information
 
 - **Domain**: `jless.io`
-- **Name**: `jless.io`
+- **Name**: `jless`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jless.io/package.yml)
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install jless.io
+launchpad install jless
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `jless`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `jless`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +jless.io@0.9.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) jless -- $SHELL -i
 ```
 
 ## Dependencies

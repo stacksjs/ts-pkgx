@@ -1,11 +1,11 @@
-# pluggy
+# pytest.org/pluggy
 
 > A minimalist production ready plugin system
 
 ## Package Information
 
 - **Domain**: `pytest.org/pluggy`
-- **Name**: `pluggy`
+- **Name**: `pytest.org/pluggy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pytest.org/pluggy/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +pytest.org/pluggy -- $SHELL -i
+launchpad install pytest.org/pluggy
 ```
 
 ## Programs

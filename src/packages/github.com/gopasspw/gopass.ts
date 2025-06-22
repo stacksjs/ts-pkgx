@@ -80,6 +80,8 @@ export const gopassPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gopass -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gopass' as const,
 }
 
 export type GopassPackage = typeof gopassPackage

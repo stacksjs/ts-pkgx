@@ -44,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +coder.com/code-server@4.101.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) code-server -- $SHELL -i
 ```
 
 ## Dependencies

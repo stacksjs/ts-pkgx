@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +lunarvim.org -- $SHELL -i
+launchpad install lunarvim.org
 ```
 
 ## Programs

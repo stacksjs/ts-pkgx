@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +fna-xna.github.io -- $SHELL -i
+launchpad install fna-xna.github.io
 ```
 
 ## Programs

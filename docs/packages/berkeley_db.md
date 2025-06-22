@@ -1,11 +1,11 @@
-# berkeley-db
+# oracle.com/berkeley-db
 
 > High performance key/value database
 
 ## Package Information
 
 - **Domain**: `oracle.com/berkeley-db`
-- **Name**: `berkeley-db`
+- **Name**: `oracle.com/berkeley-db`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/oracle.com/berkeley-db/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +oracle.com/berkeley-db -- $SHELL -i
+launchpad install oracle.com/berkeley-db
 ```
 
 ## Programs

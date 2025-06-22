@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pantsbuild.org/scie-pants@0.12.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) pants -- $SHELL -i
 ```
 
 ## Dependencies

@@ -69,6 +69,8 @@ export const fsrxPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fsrx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fsrx' as const,
 }
 
 export type FsrxPackage = typeof fsrxPackage

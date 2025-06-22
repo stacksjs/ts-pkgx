@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install laravel`
- * @aliases `laravel`
+ * @name `laravel`
  * @dependencies `php.net^8.2`, `getcomposer.org^2.7`, `linux:info-zip.org/unzip^6` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.laravel
  * // Or access via domain
  * const samePkg = pantry.laravelcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "laravel.com"
+ * console.log(pkg.name)        // "laravel"
  * console.log(pkg.description) // "The Laravel application installer."
  * console.log(pkg.programs)    // ["laravel"]
  * console.log(pkg.versions[0]) // "5.16.0" (latest)
@@ -32,7 +32,7 @@ export const laravelPackage = {
   /**
    * The display name of this package.
    */
-  name: 'laravel.com' as const,
+  name: 'laravel' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -94,9 +94,9 @@ export const laravelPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'laravel',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) laravel -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install laravel' as const,
 }
 
 export type LaravelPackage = typeof laravelPackage

@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mako-render`
- * @aliases `mako-render`
+ * @name `mako-render`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.makorender
  * // Or access via domain
  * const samePkg = pantry.makotemplatesorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "makotemplates.org"
+ * console.log(pkg.name)        // "mako-render"
  * console.log(pkg.description) // "Mako Templates for Python"
  * console.log(pkg.programs)    // ["mako-render"]
  * console.log(pkg.versions[0]) // "1.3.10" (latest)
@@ -32,7 +32,7 @@ export const makorenderPackage = {
   /**
    * The display name of this package.
    */
-  name: 'makotemplates.org' as const,
+  name: 'mako-render' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -86,9 +86,9 @@ export const makorenderPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mako-render',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mako-render -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mako-render' as const,
 }
 
 export type MakorenderPackage = typeof makorenderPackage

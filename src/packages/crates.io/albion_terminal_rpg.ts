@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install albionrpg`
- * @aliases `albionrpg`
+ * @name `albionrpg`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.albionrpg
  * // Or access via domain
  * const samePkg = pantry.cratesioalbion_terminal_rpg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "albion_terminal_rpg"
+ * console.log(pkg.name)        // "albionrpg"
  * console.log(pkg.description) // "A text-based RPG for the Terminal, written in R..."
  * console.log(pkg.programs)    // ["albionrpg"]
  * console.log(pkg.versions[0]) // "2024.5.7" (latest)
@@ -31,7 +31,7 @@ export const albionrpgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'albion_terminal_rpg' as const,
+  name: 'albionrpg' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const albionrpgPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'albionrpg',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) albionrpg -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install albionrpg' as const,
 }
 
 export type AlbionrpgPackage = typeof albionrpgPackage

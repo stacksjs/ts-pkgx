@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/cookiecutter/cookiecutter@2.6.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) cookiecutter -- $SHELL -i
 ```
 
 ## Dependencies

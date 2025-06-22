@@ -6,20 +6,21 @@
  * @version `8.14.1` (25 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +curl.se -- $SHELL -i`
- * @aliases `cURL`, `curl`
+ * @install `launchpad install cURL`
+ * @name `cURL`
+ * @aliases `curl`
  * @dependencies `openssl.org^1.1`, `curl.se/ca-certs`, `zlib.net^1.2.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.cURL
  * // Or access via domain
  * const samePkg = pantry.curlse
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "curl.se"
+ * console.log(pkg.name)        // "cURL"
  * console.log(pkg.description) // "A command line tool and library for transferrin..."
  * console.log(pkg.programs)    // ["curl", "curl-config"]
  * console.log(pkg.versions[0]) // "8.14.1" (latest)
@@ -32,7 +33,7 @@ export const cURLPackage = {
   /**
    * The display name of this package.
    */
-  name: 'curl.se' as const,
+  name: 'cURL' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +49,7 @@ export const cURLPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +curl.se -- $SHELL -i' as const,
+  installCommand: 'launchpad install cURL' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -103,9 +104,10 @@ export const cURLPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'cURL',
     'curl',
   ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +curl.se -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cURL' as const,
 }
 
 export type CURLPackage = typeof cURLPackage

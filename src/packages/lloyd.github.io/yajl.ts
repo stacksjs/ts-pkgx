@@ -6,19 +6,19 @@
  * @version `2.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +lloyd.github.io/yajl -- $SHELL -i`
- * @aliases `json`
+ * @install `launchpad install json`
+ * @name `json`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.json
  * // Or access via domain
  * const samePkg = pantry.lloydgithubioyajl
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "yajl"
+ * console.log(pkg.name)        // "json"
  * console.log(pkg.description) // "A fast streaming JSON parsing library in C."
  * console.log(pkg.programs)    // ["json_reformat", "json_verify"]
  * console.log(pkg.versions[0]) // "2.1.0" (latest)
@@ -31,7 +31,7 @@ export const jsonPackage = {
   /**
    * The display name of this package.
    */
-  name: 'yajl' as const,
+  name: 'json' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const jsonPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +lloyd.github.io/yajl -- $SHELL -i' as const,
+  installCommand: 'launchpad install json' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,9 +69,9 @@ export const jsonPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'json',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lloyd.github.io/yajl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install json' as const,
 }
 
 export type JsonPackage = typeof jsonPackage

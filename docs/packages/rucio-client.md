@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +rucio.cern.ch/rucio-client -- $SHELL -i
+launchpad install rucio-client
 ```
 
 ## Programs

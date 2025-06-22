@@ -1,11 +1,11 @@
-# tinyxml2
+# leethomason.github.io/tinyxml2
 
 > TinyXML2 is a simple, small, efficient, C++ XML parser that can be easily integrated into other programs.
 
 ## Package Information
 
 - **Domain**: `leethomason.github.io/tinyxml2`
-- **Name**: `tinyxml2`
+- **Name**: `leethomason.github.io/tinyxml2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/leethomason.github.io/tinyxml2/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +leethomason.github.io/tinyxml2 -- $SHELL -i
+launchpad install leethomason.github.io/tinyxml2
 ```
 
 ## Programs

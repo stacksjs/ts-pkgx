@@ -1,18 +1,18 @@
 /**
- * **mpdecimal** - pkgx package
+ * **bytereef.org/mpdecimal** - pkgx package
  *
  * @domain `bytereef.org/mpdecimal`
  * @version `4.0.1` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +bytereef.org/mpdecimal`
+ * @install `launchpad install bytereef.org/mpdecimal`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.bytereeforgmpdecimal
- * console.log(pkg.name)        // "mpdecimal"
+ * console.log(pkg.name)        // "bytereef.org/mpdecimal"
  * console.log(pkg.versions[0]) // "4.0.1" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const bytereeforgmpdecimalPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mpdecimal' as const,
+  name: 'bytereef.org/mpdecimal' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +39,7 @@ export const bytereeforgmpdecimalPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +bytereef.org/mpdecimal' as const,
+  installCommand: 'launchpad install bytereef.org/mpdecimal' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -56,7 +56,7 @@ export const bytereeforgmpdecimalPackage = {
   ] as const,
   aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +bytereef.org/mpdecimal -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install +bytereef.org/mpdecimal' as const,
+  launchpadInstallCommand: 'launchpad install bytereef.org/mpdecimal' as const,
 }
 
 export type BytereeforgmpdecimalPackage = typeof bytereeforgmpdecimalPackage

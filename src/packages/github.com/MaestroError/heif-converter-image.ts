@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install heif-converter`
- * @aliases `heif-converter`
+ * @name `heif-converter`
  * @dependencies `github.com/strukturag/libheif`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.heifconverter
  * // Or access via domain
  * const samePkg = pantry.githubcommaestroerrorheifconverterimage
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "heif-converter-image"
+ * console.log(pkg.name)        // "heif-converter"
  * console.log(pkg.description) // "heif-converter is a versatile command-line appl..."
  * console.log(pkg.programs)    // ["heif-converter"]
  * console.log(pkg.versions[0]) // "2023.6.23" (latest)
@@ -32,7 +32,7 @@ export const heifconverterPackage = {
   /**
    * The display name of this package.
    */
-  name: 'heif-converter-image' as const,
+  name: 'heif-converter' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,9 +75,9 @@ export const heifconverterPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'heif-converter',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) heif-converter -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install heif-converter' as const,
 }
 
 export type HeifconverterPackage = typeof heifconverterPackage

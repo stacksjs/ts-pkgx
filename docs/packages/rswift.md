@@ -1,11 +1,11 @@
-# R.swift
+# rswift
 
 > Strong typed, autocompleted resources like images, fonts and segues in Swift projects
 
 ## Package Information
 
 - **Domain**: `github.com/mac-cain13/R.swift`
-- **Name**: `R.swift`
+- **Name**: `rswift`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mac-cain13/R.swift/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install rswift
 ## Programs
 
 This package provides the following executable programs:
-
-- `rswift`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `rswift`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/mac-cain13/R.swift@7.8.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) rswift -- $SHELL -i
 ```
 
 ## Usage Examples

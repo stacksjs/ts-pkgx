@@ -6,20 +6,20 @@
  * @version `1.16.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +sourceforge.net/potrace -- $SHELL -i`
- * @aliases `sf.net/potrace`
+ * @install `launchpad install sourceforge.net/potrace`
+ * @name `sf.net/potrace`
  * @dependencies `zlib.net^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.sfnetpotrace
  * // Or access via domain
  * const samePkg = pantry.sourceforgenetpotrace
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "potrace"
+ * console.log(pkg.name)        // "sf.net/potrace"
  * console.log(pkg.description) // "Convert bitmaps to vector graphics"
  * console.log(pkg.programs)    // ["potrace", "mkbitmap"]
  * console.log(pkg.versions[0]) // "1.16.0" (latest)
@@ -32,7 +32,7 @@ export const sfnetpotracePackage = {
   /**
    * The display name of this package.
    */
-  name: 'potrace' as const,
+  name: 'sf.net/potrace' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const sfnetpotracePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +sourceforge.net/potrace -- $SHELL -i' as const,
+  installCommand: 'launchpad install sourceforge.net/potrace' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,9 +76,9 @@ export const sfnetpotracePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'sf.net/potrace',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceforge.net/potrace -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sourceforge.net/potrace' as const,
 }
 
 export type SfnetpotracePackage = typeof sfnetpotracePackage

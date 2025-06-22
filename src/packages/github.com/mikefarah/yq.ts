@@ -101,6 +101,8 @@ export const yqPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) yq -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install yq' as const,
 }
 
 export type YqPackage = typeof yqPackage

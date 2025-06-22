@@ -6,7 +6,7 @@
  * @version `25.6.0` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +freedesktop.org/poppler-qt5 -- $SHELL -i`
+ * @install `launchpad install poppler-qt5`
  * @name `poppler-qt5`
  * @dependencies `gnupg.org/libassuan^2`, `cairographics.org^1`, `freedesktop.org/fontconfig^2`, ... (+16 more) (includes OS-specific dependencies with `os:package` format)
  *
@@ -48,7 +48,7 @@ export const popplerqt5Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +freedesktop.org/poppler-qt5 -- $SHELL -i' as const,
+  installCommand: 'launchpad install poppler-qt5' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -127,6 +127,8 @@ export const popplerqt5Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/poppler-qt5 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install poppler-qt5' as const,
 }
 
 export type Popplerqt5Package = typeof popplerqt5Package

@@ -1,11 +1,11 @@
-# grpc-go
+# protoc-gen-go-grpc
 
 > The Go language implementation of gRPC. HTTP/2 based RPC
 
 ## Package Information
 
 - **Domain**: `grpc.io/grpc-go`
-- **Name**: `grpc-go`
+- **Name**: `protoc-gen-go-grpc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/grpc.io/grpc-go/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install protoc-gen-go-grpc
 ## Programs
 
 This package provides the following executable programs:
-
-- `protoc-gen-go-grpc`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `protoc-gen-go-grpc`
 
@@ -48,7 +42,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +grpc.io/grpc-go@1.73.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) protoc-gen-go-grpc -- $SHELL -i
 ```
 
 ## Dependencies
@@ -59,7 +53,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with grpc-go:
+These packages work well with protoc-gen-go-grpc:
 
 - [`protobuf.dev`](protobufdev.md) - Protocol Buffers - Google's data interchange format
 - [`abseil.io`](abseilio.md) - Abseil Common Libraries (C++)

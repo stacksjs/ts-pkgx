@@ -1,11 +1,11 @@
-# tox.wiki
+# tox
 
 > Command line driven CI frontend and development task automation tool.
 
 ## Package Information
 
 - **Domain**: `tox.wiki`
-- **Name**: `tox.wiki`
+- **Name**: `tox`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tox.wiki/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install tox
 ## Programs
 
 This package provides the following executable programs:
-
-- `tox`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `tox`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +tox.wiki@4.27.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) tox -- $SHELL -i
 ```
 
 ## Dependencies

@@ -69,6 +69,8 @@ export const swiftenvPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) swiftenv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install swiftenv' as const,
 }
 
 export type SwiftenvPackage = typeof swiftenvPackage

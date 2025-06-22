@@ -79,6 +79,8 @@ export const wgetPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wget -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wget' as const,
 }
 
 export type WgetPackage = typeof wgetPackage

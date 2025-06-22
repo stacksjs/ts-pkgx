@@ -6,7 +6,7 @@
  * @version `9.21.9` (14 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +isc.org/bind9 -- $SHELL -i`
+ * @install `launchpad install bind9`
  * @name `bind9`
  * @dependencies `gnome.org/libxml2@2.13`, `nghttp2.org@1.57`, `libuv.org@1.49`, ... (+8 more) (includes OS-specific dependencies with `os:package` format)
  *
@@ -47,7 +47,7 @@ export const bind9Package = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +isc.org/bind9 -- $SHELL -i' as const,
+  installCommand: 'launchpad install bind9' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -127,6 +127,8 @@ export const bind9Package = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +isc.org/bind9 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bind9' as const,
 }
 
 export type Bind9Package = typeof bind9Package

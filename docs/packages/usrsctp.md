@@ -1,11 +1,11 @@
-# usrsctp
+# github.com/sctplab/usrsctp
 
 > A portable SCTP userland stack
 
 ## Package Information
 
 - **Domain**: `github.com/sctplab/usrsctp`
-- **Name**: `usrsctp`
+- **Name**: `github.com/sctplab/usrsctp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/sctplab/usrsctp/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +github.com/sctplab/usrsctp -- $SHELL -i
+launchpad install github.com/sctplab/usrsctp
 ```
 
 ## Programs

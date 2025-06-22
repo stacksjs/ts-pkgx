@@ -1,11 +1,11 @@
-# fftw.org
+# fftw
 
 > C routines to compute the Discrete Fourier Transform
 
 ## Package Information
 
 - **Domain**: `fftw.org`
-- **Name**: `fftw.org`
+- **Name**: `fftw`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fftw.org/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install fftw.org
+launchpad install fftw
 ```
 
 ## Programs
@@ -24,12 +24,6 @@ This package provides the following executable programs:
 - `fftw-wisdom-to-conf`
 - `fftwf-wisdom`
 - `fftwl-wisdom`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `fftw`
 
 ## Available Versions
 

@@ -1,11 +1,11 @@
-# GQL
+# gitql
 
 > GitQL is a extensible SQL-like query language and SDK to perform queries on various data sources such .git files with supports of most of SQL features such as grouping, ordering and aggregation and window functions and allow customization like user-defined types and functions
 
 ## Package Information
 
 - **Domain**: `amrdeveloper.github.io/GQL`
-- **Name**: `GQL`
+- **Name**: `gitql`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/amrdeveloper.github.io/GQL/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install gitql
 ## Programs
 
 This package provides the following executable programs:
-
-- `gitql`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `gitql`
 

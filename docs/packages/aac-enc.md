@@ -1,11 +1,11 @@
-# opencore-amr
+# aac-enc
 
 > Standalone library of the Fraunhofer FDK AAC code from Android
 
 ## Package Information
 
 - **Domain**: `sourceforge.net/opencore-amr`
-- **Name**: `opencore-amr`
+- **Name**: `aac-enc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/opencore-amr/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install aac-enc
 ## Programs
 
 This package provides the following executable programs:
-
-- `aac-enc`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `aac-enc`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +sourceforge.net/opencore-amr@2.0.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) aac-enc -- $SHELL -i
 ```
 
 ## Usage Examples

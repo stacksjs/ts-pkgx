@@ -80,6 +80,8 @@ export const xcaddyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xcaddy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xcaddy' as const,
 }
 
 export type XcaddyPackage = typeof xcaddyPackage

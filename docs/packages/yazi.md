@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/sxyazi/yazi@25.5.31 -- $SHELL -i
+sh <(curl https://pkgx.sh) yazi -- $SHELL -i
 ```
 
 ## Dependencies

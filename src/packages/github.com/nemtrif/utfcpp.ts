@@ -5,19 +5,19 @@
  * @version `4.0.6` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/nemtrif/utfcpp -- $SHELL -i`
- * @aliases `utf8cpp`
+ * @install `launchpad install utf8cpp`
+ * @name `utf8cpp`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.utf8cpp
  * // Or access via domain
  * const samePkg = pantry.githubcomnemtrifutfcpp
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "utfcpp"
+ * console.log(pkg.name)        // "utf8cpp"
  * console.log(pkg.description) // "UTF-8 with C++ in a Portable Way"
  * console.log(pkg.versions[0]) // "4.0.6" (latest)
  * ```
@@ -29,7 +29,7 @@ export const utf8cppPackage = {
   /**
    * The display name of this package.
    */
-  name: 'utfcpp' as const,
+  name: 'utf8cpp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -45,7 +45,7 @@ export const utf8cppPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/nemtrif/utfcpp -- $SHELL -i' as const,
+  installCommand: 'launchpad install utf8cpp' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -69,9 +69,9 @@ export const utf8cppPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'utf8cpp',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/nemtrif/utfcpp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install utf8cpp' as const,
 }
 
 export type Utf8cppPackage = typeof utf8cppPackage

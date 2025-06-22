@@ -6,7 +6,7 @@
  * @version `13.0.1` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +graphviz.org -- $SHELL -i`
+ * @install `launchpad install graphviz.org`
  * @dependencies `cairographics.org^1.1.10`, `freedesktop.org/fontconfig^2.3.95`, `freetype.org^2.1.0`, ... (+7 more)
  *
  * @example
@@ -43,7 +43,7 @@ export const graphvizorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +graphviz.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install graphviz.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -122,6 +122,8 @@ export const graphvizorgPackage = {
     '7.1.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +graphviz.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install graphviz.org' as const,
 }
 
 export type GraphvizorgPackage = typeof graphvizorgPackage

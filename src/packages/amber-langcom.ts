@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install amber`
- * @aliases `amber`
+ * @name `amber`
  * @companions `gnu.org/bc`, `gnu.org/sed`, `gnu.org/coreutils`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.amber
  * // Or access via domain
  * const samePkg = pantry.amberlangcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "amber-lang.com"
+ * console.log(pkg.name)        // "amber"
  * console.log(pkg.description) // "Crystal web framework. Bare metal performance, ..."
  * console.log(pkg.programs)    // ["amber"]
  * console.log(pkg.versions[0]) // "0.4.0" (latest)
@@ -32,7 +32,7 @@ export const amberPackage = {
   /**
    * The display name of this package.
    */
-  name: 'amber-lang.com' as const,
+  name: 'amber' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -84,9 +84,7 @@ export const amberPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'amber',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) amber -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install amber' as const,
 }

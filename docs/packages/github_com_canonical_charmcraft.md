@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/canonical/charmcraft@3.5.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) charmcraft -- $SHELL -i
 ```
 
 ## Dependencies

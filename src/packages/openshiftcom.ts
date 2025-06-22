@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install oc`
- * @aliases `oc`
+ * @name `oc`
  * @dependencies `kerberos.org^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.oc
  * // Or access via domain
  * const samePkg = pantry.openshiftcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "openshift.com"
+ * console.log(pkg.name)        // "oc"
  * console.log(pkg.description) // "The OpenShift Command Line, part of OKD"
  * console.log(pkg.programs)    // ["oc"]
  * console.log(pkg.versions[0]) // "4.19.1" (latest)
@@ -32,7 +32,7 @@ export const ocPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openshift.com' as const,
+  name: 'oc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -302,9 +302,9 @@ export const ocPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'oc',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) oc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install oc' as const,
 }
 
 export type OcPackage = typeof ocPackage

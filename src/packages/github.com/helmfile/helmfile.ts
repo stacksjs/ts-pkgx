@@ -100,6 +100,8 @@ export const helmfilePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) helmfile -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install helmfile' as const,
 }
 
 export type HelmfilePackage = typeof helmfilePackage

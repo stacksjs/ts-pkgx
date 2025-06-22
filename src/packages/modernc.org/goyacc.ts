@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install goyacc`
- * @name `goyacc`
+ * @aliases `goyacc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.goyacc
  * // Or access via domain
  * const samePkg = pantry.moderncorggoyacc
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "goyacc"
+ * console.log(pkg.name)        // "modernc.org/goyacc"
  * console.log(pkg.description) // "Parser Generator for Go"
  * console.log(pkg.programs)    // ["goyacc"]
  * console.log(pkg.versions[0]) // "1.0.3" (latest)
@@ -31,7 +31,7 @@ export const goyaccPackage = {
   /**
    * The display name of this package.
    */
-  name: 'goyacc' as const,
+  name: 'modernc.org/goyacc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,7 +68,11 @@ export const goyaccPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'goyacc',
+  ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) goyacc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install goyacc' as const,
 }
 
 export type GoyaccPackage = typeof goyaccPackage

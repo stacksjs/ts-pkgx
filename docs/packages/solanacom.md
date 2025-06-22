@@ -1,11 +1,11 @@
-# solana.com
+# solana
 
 > Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces.
 
 ## Package Information
 
 - **Domain**: `solana.com`
-- **Name**: `solana.com`
+- **Name**: `solana`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/solana.com/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install solana.com
+launchpad install solana
 ```
 
 ## Programs
@@ -30,12 +30,6 @@ This package provides the following executable programs:
 - `solana-stake-accounts`
 - `solana-tokens`
 - `solana-watchtower`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `solana`
 
 ## Available Versions
 

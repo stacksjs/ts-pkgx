@@ -69,6 +69,8 @@ export const s5cmdPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) s5cmd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install s5cmd' as const,
 }
 
 export type S5cmdPackage = typeof s5cmdPackage

@@ -5,7 +5,7 @@
  * @version `1.3.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +mpmath.org -- $SHELL -i`
+ * @install `launchpad install mpmath.org`
  * @dependencies `python.org~3.11`
  *
  * @example
@@ -40,7 +40,7 @@ export const mpmathorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +mpmath.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install mpmath.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -58,6 +58,8 @@ export const mpmathorgPackage = {
     '1.3.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mpmath.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mpmath.org' as const,
 }
 
 export type MpmathorgPackage = typeof mpmathorgPackage

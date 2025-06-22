@@ -1,11 +1,11 @@
-# vaultproject.io
+# vault
 
 > A tool for secrets management, encryption as a service, and privileged access management
 
 ## Package Information
 
 - **Domain**: `vaultproject.io`
-- **Name**: `vaultproject.io`
+- **Name**: `vault`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vaultproject.io/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install vault
 ## Programs
 
 This package provides the following executable programs:
-
-- `vault`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `vault`
 
@@ -54,7 +48,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +vaultproject.io@1.19.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) vault -- $SHELL -i
 ```
 
 ## Usage Examples

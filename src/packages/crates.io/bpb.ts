@@ -69,6 +69,8 @@ export const bpbPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bpb -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bpb' as const,
 }
 
 export type BpbPackage = typeof bpbPackage

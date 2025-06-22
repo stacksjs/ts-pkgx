@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +flutter.dev -- $SHELL -i
+launchpad install flutter.dev
 ```
 
 ## Programs

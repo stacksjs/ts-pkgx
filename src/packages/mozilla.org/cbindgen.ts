@@ -80,6 +80,8 @@ export const cbindgenPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cbindgen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cbindgen' as const,
 }
 
 export type CbindgenPackage = typeof cbindgenPackage

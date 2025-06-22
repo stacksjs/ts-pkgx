@@ -1,11 +1,11 @@
 /**
- * **cffi** - A Foreign Function Interface package for calling C libraries from Python.
+ * **github.com/python-cffi/cffi** - A Foreign Function Interface package for calling C libraries from Python.
  *
  * @domain `github.com/python-cffi/cffi`
  * @version `1.17.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/python-cffi/cffi -- $SHELL -i`
+ * @install `launchpad install github.com/python-cffi/cffi`
  * @dependencies `python.org>=3.11`, `github.com/eliben/pycparser^2.21`, `sourceware.org/libffi^3.4`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcompythoncfficffi
- * console.log(pkg.name)        // "cffi"
+ * console.log(pkg.name)        // "github.com/python-cffi/cffi"
  * console.log(pkg.description) // "A Foreign Function Interface package for callin..."
  * console.log(pkg.versions[0]) // "1.17.1" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcompythoncfficffiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cffi' as const,
+  name: 'github.com/python-cffi/cffi' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const githubcompythoncfficffiPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/python-cffi/cffi -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/python-cffi/cffi' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -63,6 +63,8 @@ export const githubcompythoncfficffiPackage = {
     '1.16.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/python-cffi/cffi -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/python-cffi/cffi' as const,
 }
 
 export type GithubcompythoncfficffiPackage = typeof githubcompythoncfficffiPackage

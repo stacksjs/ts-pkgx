@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +kafka.apache.org -- $SHELL -i
+launchpad install kafka.apache.org
 ```
 
 ## Programs

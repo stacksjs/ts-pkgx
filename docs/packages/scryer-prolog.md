@@ -1,11 +1,11 @@
-# scryer.pl
+# scryer-prolog
 
 > Modern ISO Prolog implementation written mostly in Rust
 
 ## Package Information
 
 - **Domain**: `scryer.pl`
-- **Name**: `scryer.pl`
+- **Name**: `scryer-prolog`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/scryer.pl/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install scryer-prolog
 ## Programs
 
 This package provides the following executable programs:
-
-- `scryer-prolog`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `scryer-prolog`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +scryer.pl@0.9.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) scryer-prolog -- $SHELL -i
 ```
 
 ## Dependencies

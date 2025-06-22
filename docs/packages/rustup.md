@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +rust-lang.org/rustup -- $SHELL -i
+launchpad install rustup
 ```
 
 ## Programs

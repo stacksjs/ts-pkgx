@@ -80,6 +80,8 @@ export const xcodesPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xcodes -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xcodes' as const,
 }
 
 export type XcodesPackage = typeof xcodesPackage

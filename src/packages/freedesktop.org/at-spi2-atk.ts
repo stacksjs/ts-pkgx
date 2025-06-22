@@ -1,11 +1,11 @@
 /**
- * **at-spi2-atk** - pkgx package
+ * **freedesktop.org/at-spi2-atk** - pkgx package
  *
  * @domain `freedesktop.org/at-spi2-atk`
  * @version `2.38.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +freedesktop.org/at-spi2-atk -- $SHELL -i`
+ * @install `launchpad install freedesktop.org/at-spi2-atk`
  * @dependencies `gnome.org/atk`, `gnome.org/libxml2`, `freedesktop.org/dbus`, ... (+1 more)
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.freedesktoporgatspi2atk
- * console.log(pkg.name)        // "at-spi2-atk"
+ * console.log(pkg.name)        // "freedesktop.org/at-spi2-atk"
  * console.log(pkg.versions[0]) // "2.38.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const freedesktoporgatspi2atkPackage = {
   /**
    * The display name of this package.
    */
-  name: 'at-spi2-atk' as const,
+  name: 'freedesktop.org/at-spi2-atk' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const freedesktoporgatspi2atkPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +freedesktop.org/at-spi2-atk -- $SHELL -i' as const,
+  installCommand: 'launchpad install freedesktop.org/at-spi2-atk' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,6 +61,8 @@ export const freedesktoporgatspi2atkPackage = {
     '2.38.0',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/at-spi2-atk -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/at-spi2-atk' as const,
 }
 
 export type Freedesktoporgatspi2atkPackage = typeof freedesktoporgatspi2atkPackage

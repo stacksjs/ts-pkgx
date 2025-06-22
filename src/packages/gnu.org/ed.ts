@@ -71,6 +71,8 @@ export const edPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ed -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ed' as const,
 }
 
 export type EdPackage = typeof edPackage

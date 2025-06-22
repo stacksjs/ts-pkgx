@@ -1,11 +1,11 @@
-# cups
+# openprinting.github.io/cups
 
 > Common UNIX Printing System
 
 ## Package Information
 
 - **Domain**: `openprinting.github.io/cups`
-- **Name**: `cups`
+- **Name**: `openprinting.github.io/cups`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openprinting.github.io/cups/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +openprinting.github.io/cups -- $SHELL -i
+launchpad install openprinting.github.io/cups
 ```
 
 ## Programs

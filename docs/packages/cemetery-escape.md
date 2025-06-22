@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/tom-on-the-internet/cemetery-escape@0.0.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) cemetery-escape -- $SHELL -i
 ```
 
 ## Usage Examples

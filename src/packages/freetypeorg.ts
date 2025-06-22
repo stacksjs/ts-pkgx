@@ -5,7 +5,7 @@
  * @version `2.13.3` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +freetype.org -- $SHELL -i`
+ * @install `launchpad install freetype.org`
  * @dependencies `libpng.org@1`, `zlib.net@1`, `sourceware.org/bzip2@1`
  *
  * @example
@@ -40,7 +40,7 @@ export const freetypeorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +freetype.org -- $SHELL -i' as const,
+  installCommand: 'launchpad install freetype.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -63,6 +63,8 @@ export const freetypeorgPackage = {
     '2.12.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freetype.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freetype.org' as const,
 }
 
 export type FreetypeorgPackage = typeof freetypeorgPackage

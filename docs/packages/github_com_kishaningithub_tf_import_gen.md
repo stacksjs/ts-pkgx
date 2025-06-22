@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/kishaningithub/tf-import-gen@0.17.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) tf-import-gen -- $SHELL -i
 ```
 
 ## Usage Examples

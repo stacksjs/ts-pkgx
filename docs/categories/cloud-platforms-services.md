@@ -12,7 +12,7 @@ Command line tools for fly.io services
 
 **Programs**: fly, flyctl
 
-**Install**: `launchpad install +fly.io -- $SHELL -i`
+**Install**: `launchpad install fly`
 
 ---
 

@@ -6,7 +6,7 @@
  * @version `2.40.2` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +spawn.link -- $SHELL -i`
+ * @install `launchpad install spawn.link`
  *
  * @example
  * ```typescript
@@ -42,7 +42,7 @@ export const spawnlinkPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +spawn.link -- $SHELL -i' as const,
+  installCommand: 'launchpad install spawn.link' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,6 +70,8 @@ export const spawnlinkPackage = {
     '2.35.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +spawn.link -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install spawn.link' as const,
 }
 
 export type SpawnlinkPackage = typeof spawnlinkPackage

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install git-town`
- * @aliases `git-town`
+ * @name `git-town`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.gittown
  * // Or access via domain
  * const samePkg = pantry.gittowncom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "git-town.com"
+ * console.log(pkg.name)        // "git-town"
  * console.log(pkg.description) // "High-level command-line interface for Git"
  * console.log(pkg.programs)    // ["git-town"]
  * console.log(pkg.versions[0]) // "21.1.0" (latest)
@@ -31,7 +31,7 @@ export const gittownPackage = {
   /**
    * The display name of this package.
    */
-  name: 'git-town.com' as const,
+  name: 'git-town' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -122,9 +122,9 @@ export const gittownPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'git-town',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-town -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-town' as const,
 }
 
 export type GittownPackage = typeof gittownPackage

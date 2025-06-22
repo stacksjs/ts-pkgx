@@ -76,6 +76,8 @@ export const kubecolorPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kubecolor -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kubecolor' as const,
 }
 
 export type KubecolorPackage = typeof kubecolorPackage

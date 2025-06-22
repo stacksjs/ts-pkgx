@@ -117,6 +117,8 @@ export const xcbeautifyPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xcbeautify -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xcbeautify' as const,
 }
 
 export type XcbeautifyPackage = typeof xcbeautifyPackage

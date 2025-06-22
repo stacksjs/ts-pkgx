@@ -74,6 +74,8 @@ export const redistuiPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) redis_tui -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install redis_tui' as const,
 }
 
 export type RedistuiPackage = typeof redistuiPackage

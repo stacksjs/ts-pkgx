@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-sh <(curl https://pkgx.sh) iroh
+launchpad install iroh
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +iroh.computer@0.35.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) iroh -- $SHELL -i
 ```
 
 ## Usage Examples

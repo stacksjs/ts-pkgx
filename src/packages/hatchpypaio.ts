@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install hatch`
- * @aliases `hatch`
+ * @name `hatch`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.hatch
  * // Or access via domain
  * const samePkg = pantry.hatchpypaio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "hatch.pypa.io"
+ * console.log(pkg.name)        // "hatch"
  * console.log(pkg.description) // "Modern, extensible Python project management"
  * console.log(pkg.programs)    // ["hatch"]
  * console.log(pkg.versions[0]) // "1.14.1" (latest)
@@ -32,7 +32,7 @@ export const hatchPackage = {
   /**
    * The display name of this package.
    */
-  name: 'hatch.pypa.io' as const,
+  name: 'hatch' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -92,9 +92,9 @@ export const hatchPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'hatch',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hatch -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hatch' as const,
 }
 
 export type HatchPackage = typeof hatchPackage

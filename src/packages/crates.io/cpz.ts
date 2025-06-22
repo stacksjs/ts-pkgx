@@ -73,6 +73,8 @@ export const cpzPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cpz -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cpz' as const,
 }
 
 export type CpzPackage = typeof cpzPackage

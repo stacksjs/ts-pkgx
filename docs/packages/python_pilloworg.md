@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +python-pillow.org -- $SHELL -i
+launchpad install python-pillow.org
 ```
 
 ## Programs

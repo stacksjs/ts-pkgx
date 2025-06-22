@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install spirv-cross`
- * @aliases `spirv-cross`
+ * @name `spirv-cross`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.spirvcross
  * // Or access via domain
  * const samePkg = pantry.khronosorgspirvcross
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "SPIRV-Cross"
+ * console.log(pkg.name)        // "spirv-cross"
  * console.log(pkg.description) // "SPIRV-Cross is a practical tool and library for..."
  * console.log(pkg.programs)    // ["spirv-cross"]
  * console.log(pkg.versions[0]) // "2021.1.15" (latest)
@@ -31,7 +31,7 @@ export const spirvcrossPackage = {
   /**
    * The display name of this package.
    */
-  name: 'SPIRV-Cross' as const,
+  name: 'spirv-cross' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const spirvcrossPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'spirv-cross',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) spirv-cross -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install spirv-cross' as const,
 }
 
 export type SpirvcrossPackage = typeof spirvcrossPackage

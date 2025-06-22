@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +macvim.org -- $SHELL -i
+launchpad install macvim.org
 ```
 
 ## Programs

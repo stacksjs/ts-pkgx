@@ -1,11 +1,11 @@
 /**
- * **libpsl** - C library for the Public Suffix List
+ * **rockdaboot.github.io/libpsl** - C library for the Public Suffix List
  *
  * @domain `rockdaboot.github.io/libpsl`
  * @version `0.21.5` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +rockdaboot.github.io/libpsl -- $SHELL -i`
+ * @install `launchpad install rockdaboot.github.io/libpsl`
  * @dependencies `unicode.org^71`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.rockdabootgithubiolibpsl
- * console.log(pkg.name)        // "libpsl"
+ * console.log(pkg.name)        // "rockdaboot.github.io/libpsl"
  * console.log(pkg.description) // "C library for the Public Suffix List"
  * console.log(pkg.versions[0]) // "0.21.5" (latest)
  * ```
@@ -25,7 +25,7 @@ export const rockdabootgithubiolibpslPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libpsl' as const,
+  name: 'rockdaboot.github.io/libpsl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,7 +41,7 @@ export const rockdabootgithubiolibpslPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +rockdaboot.github.io/libpsl -- $SHELL -i' as const,
+  installCommand: 'launchpad install rockdaboot.github.io/libpsl' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,6 +60,8 @@ export const rockdabootgithubiolibpslPackage = {
     '0.21.2',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rockdaboot.github.io/libpsl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rockdaboot.github.io/libpsl' as const,
 }
 
 export type RockdabootgithubiolibpslPackage = typeof rockdabootgithubiolibpslPackage

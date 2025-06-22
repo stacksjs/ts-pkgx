@@ -43,7 +43,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/passbolt/go-passbolt-cli@0.3.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) passbolt -- $SHELL -i
 ```
 
 ## Usage Examples

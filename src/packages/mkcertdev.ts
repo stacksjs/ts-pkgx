@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mkcert`
- * @aliases `mkcert`
+ * @name `mkcert`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.mkcert
  * // Or access via domain
  * const samePkg = pantry.mkcertdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mkcert.dev"
+ * console.log(pkg.name)        // "mkcert"
  * console.log(pkg.description) // "A simple zero-config tool to make locally trust..."
  * console.log(pkg.programs)    // ["mkcert"]
  * console.log(pkg.versions[0]) // "1.4.4" (latest)
@@ -31,7 +31,7 @@ export const mkcertPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mkcert.dev' as const,
+  name: 'mkcert' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -68,9 +68,9 @@ export const mkcertPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'mkcert',
-  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mkcert -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mkcert' as const,
 }
 
 export type MkcertPackage = typeof mkcertPackage

@@ -1,11 +1,11 @@
-# libshout
+# shout
 
 > Data and connectivity library for the icecast server
 
 ## Package Information
 
 - **Domain**: `xiph.org/libshout`
-- **Name**: `libshout`
+- **Name**: `shout`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xiph.org/libshout/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install shout
 ## Programs
 
 This package provides the following executable programs:
-
-- `shout`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `shout`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +xiph.org/libshout@2.4.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) shout -- $SHELL -i
 ```
 
 ## Dependencies

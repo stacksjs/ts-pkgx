@@ -1,18 +1,18 @@
 /**
- * **speexdsp** - Speex audio processing library - THIS IS A MIRROR, DEVELOPMENT HAPPENS AT https://gitlab.xiph.org/xiph/speexdsp
+ * **github.com/xiph/speexdsp** - Speex audio processing library - THIS IS A MIRROR, DEVELOPMENT HAPPENS AT https://gitlab.xiph.org/xiph/speexdsp
  *
  * @domain `github.com/xiph/speexdsp`
  * @version `1.2.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +github.com/xiph/speexdsp -- $SHELL -i`
+ * @install `launchpad install github.com/xiph/speexdsp`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomxiphspeexdsp
- * console.log(pkg.name)        // "speexdsp"
+ * console.log(pkg.name)        // "github.com/xiph/speexdsp"
  * console.log(pkg.description) // "Speex audio processing library - THIS IS A MIRR..."
  * console.log(pkg.versions[0]) // "1.2.1" (latest)
  * ```
@@ -24,7 +24,7 @@ export const githubcomxiphspeexdspPackage = {
   /**
    * The display name of this package.
    */
-  name: 'speexdsp' as const,
+  name: 'github.com/xiph/speexdsp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +40,7 @@ export const githubcomxiphspeexdspPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +github.com/xiph/speexdsp -- $SHELL -i' as const,
+  installCommand: 'launchpad install github.com/xiph/speexdsp' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -52,6 +52,8 @@ export const githubcomxiphspeexdspPackage = {
     '1.2.1',
   ] as const,
   aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/xiph/speexdsp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/xiph/speexdsp' as const,
 }
 
 export type GithubcomxiphspeexdspPackage = typeof githubcomxiphspeexdspPackage
