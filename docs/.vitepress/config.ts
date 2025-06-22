@@ -171,7 +171,7 @@ export default withPwa(
         theme_color: '#0A0ABC',
       },
       workbox: {
-        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5MB limit instead of default 2MB
+        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024, // 10MB limit to accommodate large search index
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
       },
     },
