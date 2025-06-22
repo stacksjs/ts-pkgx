@@ -66,12 +66,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) deno -- $SHELL -i
 ```
 
-## Related Packages
-
-These packages work well with deno:
-
-- `info-zip.org/unzip`
-
 ## Usage Examples
 
 ```typescript

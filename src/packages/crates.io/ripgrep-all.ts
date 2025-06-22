@@ -8,7 +8,6 @@
  *
  * @install `launchpad install rga`
  * @name `rga`
- * @companions `crates.io/ripgrep`, `github.com/junegunn/fzf`
  *
  * @example
  * ```typescript
@@ -59,14 +58,7 @@ export const rgaPackage = {
     'rga-fzf-open',
     'rga-preproc',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'crates.io/ripgrep',
-    'github.com/junegunn/fzf',
-  ] as const,
+  companions: [] as const,
   dependencies: [] as const,
   /**
    * Available versions from newest to oldest.

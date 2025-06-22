@@ -58,12 +58,6 @@ This package depends on:
 - `sourceware.org/libffi^3`
 - `invisible-island.net/ncurses^6`
 
-## Related Packages
-
-These packages work well with crystal:
-
-- `crystal-lang.org/shards`
-
 ## Usage Examples
 
 ```typescript

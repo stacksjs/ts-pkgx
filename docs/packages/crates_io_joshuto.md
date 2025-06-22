@@ -46,13 +46,6 @@ This package depends on:
 
 - `libgit2.org@1`
 
-## Related Packages
-
-These packages work well with joshuto:
-
-- `github.com/junegunn/fzf`
-- `crates.io/zoxide`
-
 ## Usage Examples
 
 ```typescript

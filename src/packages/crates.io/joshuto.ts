@@ -9,7 +9,6 @@
  * @install `launchpad install joshuto`
  * @name `joshuto`
  * @dependencies `libgit2.org@1`
- * @companions `github.com/junegunn/fzf`, `crates.io/zoxide`
  *
  * @example
  * ```typescript
@@ -57,14 +56,7 @@ export const joshutoPackage = {
   programs: [
     'joshuto',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'github.com/junegunn/fzf',
-    'crates.io/zoxide',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 13
-- **Last Updated**: 2025-06-22T14:25:24.436Z
+- **Last Updated**: 2025-06-22T15:27:24.957Z
 
 ## Table of Contents
 
@@ -127,7 +127,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[charm.sh/pop](./packages/charmshpop.md)** () | Send emails from your terminal 📬 | pop | 0.2.0 (+1) | `pkgx pop` |
 | **[charm.sh/skate](./packages/charmshskate.md)** () | A personal key value store 🛼 | skate | 1.0.1 (+2) | `pkgx skate` |
 | **[charm.sh/vhs](./packages/charmshvhs.md)** () | Your CLI home video recorder 📼 | vhs | 0.10.0 (+13) | `pkgx vhs` |
-| **[checkov.io](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.444 (+478) | `pkgx checkov` |
+| **[checkov.io](./packages/checkovio.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.445 (+479) | `pkgx checkov` |
 | **[chezmoi.io](./packages/chezmoiio.md)** () | Manage your dotfiles across multiple diverse machines, securely. | chezmoi | 2.62.6 (+75) | `pkgx chezmoi` |
 | **[chiark.greenend.org.uk/halibut](./packages/chiarkgreenendorgukhalibut.md)** () | Yet another free document preparation system | halibut | 1.3.0 (+0) | `pkgx halibut` |
 | **[chiark.greenend.org.uk/putty](./packages/chiarkgreenendorgukputty.md)** () | Implementation of Telnet and SSH | pageant, plink, pscp, ... (+3) | 0.83.0 (+5) | `pkgx chiark.greenend.org.uk/putty` |

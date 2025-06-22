@@ -9,7 +9,6 @@
  * @install `launchpad install termusic`
  * @name `termusic`
  * @dependencies `linux:alsa-project.org/alsa-lib`, `linux:freedesktop.org/dbus` (includes OS-specific dependencies with `os:package` format)
- * @companions `yt-dlp.org`
  *
  * @example
  * ```typescript
@@ -58,13 +57,7 @@ export const termusicPackage = {
     'termusic',
     'termusic-server',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'yt-dlp.org',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

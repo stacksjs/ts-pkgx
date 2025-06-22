@@ -9,7 +9,6 @@
  * @install `launchpad install crystal`
  * @name `crystal`
  * @dependencies `hboehm.info/gc^8`, `gnu.org/gmp^6`, `libevent.org^2`, ... (+7 more)
- * @companions `crystal-lang.org/shards`
  *
  * @example
  * ```typescript
@@ -57,13 +56,7 @@ export const crystalPackage = {
   programs: [
     'crystal',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'crystal-lang.org/shards',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

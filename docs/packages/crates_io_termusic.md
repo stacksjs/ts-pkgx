@@ -48,12 +48,6 @@ This package depends on:
 - `linux:alsa-project.org/alsa-lib`
 - `linux:freedesktop.org/dbus`
 
-## Related Packages
-
-These packages work well with termusic:
-
-- `yt-dlp.org`
-
 ## Usage Examples
 
 ```typescript

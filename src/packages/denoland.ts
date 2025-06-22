@@ -8,7 +8,6 @@
  *
  * @install `launchpad install deno`
  * @name `deno`
- * @companions `info-zip.org/unzip`
  *
  * @example
  * ```typescript
@@ -56,13 +55,7 @@ export const denoPackage = {
   programs: [
     'deno',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'info-zip.org/unzip',
-  ] as const,
+  companions: [] as const,
   dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
