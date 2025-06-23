@@ -44,7 +44,7 @@ sh <(curl https://pkgx.sh) ifacemaker -- $SHELL -i
 
 These packages work well with ifacemaker:
 
-- [`go.dev`](../go.dev/index.md) - The Go programming language
+- [`go.dev`](../../go.dev/index.md) - The Go programming language
 
 ## Usage Examples
 
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/vburenin/ifacemaker/package.yml)
 - [Homepage](#)
-- [Back to Package Catalog](../../package-catalog.md)
+- [Back to Package Catalog](../../../package-catalog.md)
 
 ---
 

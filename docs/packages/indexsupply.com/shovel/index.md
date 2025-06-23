@@ -45,7 +45,7 @@ sh <(curl https://pkgx.sh) shovel -- $SHELL -i
 
 These packages work well with shovel:
 
-- [`postgresql.org`](../postgresql.org/index.md) - Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
+- [`postgresql.org`](../../postgresql.org/index.md) - Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
 
 ## Usage Examples
 
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/indexsupply.com/shovel/package.yml)
 - [Homepage](#)
-- [Back to Package Catalog](../../package-catalog.md)
+- [Back to Package Catalog](../../../package-catalog.md)
 
 ---
 

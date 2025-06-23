@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/docker.com/buildx/package.yml)
 - [Homepage](#)
-- [Back to Package Catalog](../../package-catalog.md)
+- [Back to Package Catalog](../../../package-catalog.md)
 
 ---
 

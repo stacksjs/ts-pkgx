@@ -58,7 +58,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mac-cain13/R.swift/package.yml)
 - [Homepage](#)
-- [Back to Package Catalog](../../package-catalog.md)
+- [Back to Package Catalog](../../../package-catalog.md)
 
 ---
 

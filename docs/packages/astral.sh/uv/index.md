@@ -87,7 +87,7 @@ This package depends on:
 
 These packages work well with astral.sh/uv:
 
-- [`python.org`](../python.org/index.md) - The Python programming language
+- [`python.org`](../../python.org/index.md) - The Python programming language
 
 ## Usage Examples
 
@@ -106,7 +106,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/astral.sh/uv/package.yml)
 - [Homepage](#)
-- [Back to Package Catalog](../../package-catalog.md)
+- [Back to Package Catalog](../../../package-catalog.md)
 
 ---
 

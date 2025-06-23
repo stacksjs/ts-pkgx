@@ -56,7 +56,7 @@ This package depends on:
 
 These packages work well with whisper:
 
-- [`huggingface.co`](../huggingface.co/index.md) - The official Python client for the Huggingface Hub.
+- [`huggingface.co`](../../huggingface.co/index.md) - The official Python client for the Huggingface Hub.
 
 ## Usage Examples
 
@@ -75,7 +75,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ggerganov/whisper.cpp/package.yml)
 - [Homepage](#)
-- [Back to Package Catalog](../../package-catalog.md)
+- [Back to Package Catalog](../../../package-catalog.md)
 
 ---
 

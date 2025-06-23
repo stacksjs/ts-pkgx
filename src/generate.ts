@@ -1965,6 +1965,48 @@ To add or update packages, see the pkgx [contribution guide](https://docs.pkgx.s
 /**
  * Generate individual package documentation pages
  */
+
+/**
+ * Calculate the file path for a given domain using the same logic as generatePackagePages
+ */
+function calculatePackageFilePath(domain: string, domainVarName: string, packagesDir: string): string {
+  if (domain.includes('.')) {
+    // For GitHub domains with org/repo structure, use github.com/org/repo.md
+    if (domain.startsWith('github.com/') && domain.includes('/')) {
+      const domainPath = domain.replace('github.com/', '')
+      const parts = domainPath.split('/')
+
+      if (parts.length >= 2) {
+        const orgName = parts[0]
+        const repoName = parts.slice(1).join('-') // Handle multi-part repo names
+        return path.join(packagesDir, 'github.com', orgName, `${repoName}.md`)
+      }
+      else {
+        // Malformed GitHub domain, use flat structure
+        let safeFilename = domainVarName.toLowerCase()
+        if (/^\d/.test(safeFilename)) {
+          safeFilename = `pkg-${safeFilename}`
+        }
+        safeFilename = safeFilename.replace(/[^\w-]/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '')
+        return path.join(packagesDir, `${safeFilename}.md`)
+      }
+    }
+    else {
+      // For other domains, use domain/index.md
+      return path.join(packagesDir, domain, 'index.md')
+    }
+  }
+  else {
+    // Simple domains without dots use flat structure
+    let safeFilename = domainVarName.toLowerCase()
+    if (/^\d/.test(safeFilename)) {
+      safeFilename = `pkg-${safeFilename}`
+    }
+    safeFilename = safeFilename.replace(/[^\w-]/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '')
+    return path.join(packagesDir, `${safeFilename}.md`)
+  }
+}
+
 async function generatePackagePages(outputDir: string, sourcePackagesDir?: string): Promise<string[]> {
   const pantry = await importPantry(sourcePackagesDir)
   const packagesDir = path.join(outputDir, 'packages')
@@ -2199,98 +2241,12 @@ These packages work well with ${pkg.name || domain}:
           const companionVarName = convertDomainToVarName(companion)
           const companionPkg = pantry[companionVarName]
           if (companionPkg) {
-            // Create companion link path using same logic as main package generation
-            let companionLinkPath: string
+            // Calculate the companion file path using the same logic as main generation
+            const companionFilePath = calculatePackageFilePath(companion, companionVarName, packagesDir)
 
-            // Determine companion file path using same logic as main generation
-            if (companion.includes('.')) {
-              // Companion is in a domain folder structure
-              if (companion.startsWith('github.com/') && companion.includes('/')) {
-                // GitHub companion with org/repo structure
-                const domainPath = companion.replace('github.com/', '')
-                const parts = domainPath.split('/')
-
-                if (parts.length >= 2) {
-                  const orgName = parts[0]
-                  const repoName = parts.slice(1).join('-')
-
-                  // Determine relative path based on current file location
-                  if (domain.startsWith('github.com/') && domain.includes('/')) {
-                    // Current file is also a GitHub package
-                    const currentDomainPath = domain.replace('github.com/', '')
-                    const currentParts = currentDomainPath.split('/')
-                    if (currentParts.length >= 2) {
-                      const currentOrgName = currentParts[0]
-                      if (currentOrgName === orgName) {
-                        // Same org, companion is in same directory
-                        companionLinkPath = `./${repoName}.md`
-                      }
-                      else {
-                        // Different org, companion is in sibling org directory
-                        companionLinkPath = `../${orgName}/${repoName}.md`
-                      }
-                    }
-                    else {
-                      // Malformed current domain
-                      companionLinkPath = `./github.com/${orgName}/${repoName}.md`
-                    }
-                  }
-                  else if (domain.includes('.')) {
-                    // Current file is in another domain folder
-                    companionLinkPath = `../github.com/${orgName}/${repoName}.md`
-                  }
-                  else {
-                    // Current file is flat, companion is in GitHub folder
-                    companionLinkPath = `./github.com/${orgName}/${repoName}.md`
-                  }
-                }
-                else {
-                  // Malformed GitHub domain, use flat structure
-                  let safeCompanionFilename = companionVarName.toLowerCase()
-                  if (/^\d/.test(safeCompanionFilename)) {
-                    safeCompanionFilename = `pkg-${safeCompanionFilename}`
-                  }
-                  safeCompanionFilename = safeCompanionFilename.replace(/[^\w-]/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '')
-
-                  if (domain.includes('.')) {
-                    // Current file is in domain folder, companion is flat
-                    companionLinkPath = `../../${safeCompanionFilename}.md`
-                  }
-                  else {
-                    // Both files are flat
-                    companionLinkPath = `./${safeCompanionFilename}.md`
-                  }
-                }
-              }
-              else {
-                // Other domain, use index.md
-                if (domain.includes('.')) {
-                  // Current file is in domain folder, companion is in another domain folder
-                  companionLinkPath = `../${companion}/index.md`
-                }
-                else {
-                  // Current file is flat, companion is in domain folder
-                  companionLinkPath = `./${companion}/index.md`
-                }
-              }
-            }
-            else {
-              // Companion is in flat structure
-              let safeCompanionFilename = companionVarName.toLowerCase()
-              if (/^\d/.test(safeCompanionFilename)) {
-                safeCompanionFilename = `pkg-${safeCompanionFilename}`
-              }
-              safeCompanionFilename = safeCompanionFilename.replace(/[^\w-]/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '')
-
-              if (domain.includes('.')) {
-                // Current file is in domain folder, companion is flat
-                companionLinkPath = `../../${safeCompanionFilename}.md`
-              }
-              else {
-                // Both files are flat
-                companionLinkPath = `./${safeCompanionFilename}.md`
-              }
-            }
+            // Calculate relative path from current file to companion file
+            const companionLinkPath = path.relative(path.dirname(filepath), companionFilePath)
+              .replace(/\\/g, '/') // Normalize path separators for web
 
             content += `- [\`${companion}\`](${companionLinkPath}) - ${companionPkg.description}\n`
           }
@@ -2300,8 +2256,9 @@ These packages work well with ${pkg.name || domain}:
         })
       }
 
-      // Determine the correct path to package catalog based on folder structure
-      const packageCatalogPath = domain.includes('.') ? '../../package-catalog.md' : '../package-catalog.md'
+      // Determine the correct path to package catalog based on actual file depth
+      const relativeDepth = path.relative(packagesDir, path.dirname(filepath)).split(path.sep).length
+      const packageCatalogPath = `${'../'.repeat(relativeDepth + 1)}package-catalog.md`
 
       // Add usage examples
       content += `\n## Usage Examples
