@@ -3,7 +3,7 @@
  *
  * @domain `kotlinlang.org`
  * @programs `kapt`, `kotlin`, `kotlinc`, `kotlinc-js`, `kotlinc-jvm`
- * @version `2.1.21` (16 versions available)
+ * @version `2.2.0` (17 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kotlinlang.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "kotlinlang.org"
  * console.log(pkg.description) // "Statically typed programming language for the JVM"
  * console.log(pkg.programs)    // ["kapt", "kotlin", ...]
- * console.log(pkg.versions[0]) // "2.1.21" (latest)
+ * console.log(pkg.versions[0]) // "2.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kotlinlang-org.md
@@ -68,6 +68,7 @@ export const kotlinlangorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.2.0',
     '2.1.21',
     '2.1.20',
     '2.1.10',

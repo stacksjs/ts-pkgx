@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-06-23T11:29:00.676Z
+- **Last Updated**: 2025-06-23T13:37:59.114Z
 
 ## Table of Contents
 
@@ -50,7 +50,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[go.dev](./packages/go.dev/index.md)** (go) | The Go programming language | go, gofmt | 1.24.4 (+67) | `pkgx go` |
 | **[haskell.org](./packages/haskell.org/index.md)** () | Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC&#39;s Gitlab inst... | ghc, ghc-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;, ghc-&lbrace;&lbrace;version&rbrace;&rbrace;, ... (+25) | 9.12.2 (+18) | `pkgx haskell.org` |
 | **[julialang.org](./packages/julialang.org/index.md)** () | The Julia Programming Language | julia | 1.11.5 (+17) | `pkgx julia` |
-| **[kotlinlang.org](./packages/kotlinlang.org/index.md)** () | Statically typed programming language for the JVM | kapt, kotlin, kotlinc, ... (+2) | 2.1.21 (+15) | `pkgx kotlinlang.org` |
+| **[kotlinlang.org](./packages/kotlinlang.org/index.md)** () | Statically typed programming language for the JVM | kapt, kotlin, kotlinc, ... (+2) | 2.2.0 (+16) | `pkgx kotlinlang.org` |
 | **[lua.org](./packages/lua.org/index.md)** () | Powerful, lightweight programming language | lua, luac | 5.4.8 (+3) | `pkgx lua` |
 | **[luajit.org](./packages/luajit.org/index.md)** () | Mirror of the LuaJIT git repository | luajit, luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;. | 2.1.0 (+0) | `pkgx luajit` |
 | **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 24.2.0 (+138) | `pkgx node` |
