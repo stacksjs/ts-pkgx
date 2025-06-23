@@ -1971,24 +1971,21 @@ To add or update packages, see the pkgx [contribution guide](https://docs.pkgx.s
  */
 function calculatePackageFilePath(domain: string, domainVarName: string, packagesDir: string): string {
   if (domain.includes('.')) {
-    // For GitHub domains with org/repo structure, use github.com/org/repo.md
-    if (domain.startsWith('github.com/') && domain.includes('/')) {
+    // For GitHub domains, always use nested structure
+    if (domain.startsWith('github.com/')) {
       const domainPath = domain.replace('github.com/', '')
       const parts = domainPath.split('/')
 
       if (parts.length >= 2) {
+        // Full org/repo structure: github.com/org/repo.md
         const orgName = parts[0]
         const repoName = parts.slice(1).join('-') // Handle multi-part repo names
         return path.join(packagesDir, 'github.com', orgName, `${repoName}.md`)
       }
       else {
-        // Malformed GitHub domain, use flat structure
-        let safeFilename = domainVarName.toLowerCase()
-        if (/^\d/.test(safeFilename)) {
-          safeFilename = `pkg-${safeFilename}`
-        }
-        safeFilename = safeFilename.replace(/[^\w-]/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '')
-        return path.join(packagesDir, `${safeFilename}.md`)
+        // GitHub domain with just org name: github.com/org/index.md
+        const orgName = parts[0]
+        return path.join(packagesDir, 'github.com', orgName, 'index.md')
       }
     }
     else {
@@ -2056,12 +2053,13 @@ async function generatePackagePages(outputDir: string, sourcePackagesDir?: strin
 
       // Use folder structure for any domain that contains a dot (indicating a domain name)
       if (domain.includes('.')) {
-        // For GitHub domains with org/repo structure, use github.com/org/repo.md
-        if (domain.startsWith('github.com/') && domain.includes('/')) {
+        // For GitHub domains, always use nested structure
+        if (domain.startsWith('github.com/')) {
           const domainPath = domain.replace('github.com/', '')
           const parts = domainPath.split('/')
 
           if (parts.length >= 2) {
+            // Full org/repo structure: github.com/org/repo.md
             const orgName = parts[0]
             const repoName = parts.slice(1).join('-') // Handle multi-part repo names
 
@@ -2074,13 +2072,16 @@ async function generatePackagePages(outputDir: string, sourcePackagesDir?: strin
             filepath = path.join(orgDir, `${repoName}.md`)
           }
           else {
-            // Malformed GitHub domain, use flat structure
-            let safeFilename = domainVarName.toLowerCase()
-            if (/^\d/.test(safeFilename)) {
-              safeFilename = `pkg-${safeFilename}`
+            // GitHub domain with just org name: github.com/org/index.md
+            const orgName = parts[0]
+            const orgDir = path.join(packagesDir, 'github.com', orgName)
+
+            // Ensure directory exists
+            if (!fs.existsSync(orgDir)) {
+              fs.mkdirSync(orgDir, { recursive: true })
             }
-            safeFilename = safeFilename.replace(/[^\w-]/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '')
-            filepath = path.join(packagesDir, `${safeFilename}.md`)
+
+            filepath = path.join(orgDir, 'index.md')
           }
         }
         else {
@@ -2257,8 +2258,10 @@ These packages work well with ${pkg.name || domain}:
       }
 
       // Determine the correct path to package catalog based on actual file depth
-      const relativeDepth = path.relative(packagesDir, path.dirname(filepath)).split(path.sep).length
-      const packageCatalogPath = `${'../'.repeat(relativeDepth + 1)}package-catalog.md`
+      // Calculate how many levels up we need to go from the file to reach docs/
+      const docsDir = path.dirname(packagesDir) // docs directory
+      const relativePathFromFile = path.relative(path.dirname(filepath), docsDir)
+      const packageCatalogPath = `${relativePathFromFile}/package-catalog.md`.replace(/\\/g, '/')
 
       // Add usage examples
       content += `\n## Usage Examples
