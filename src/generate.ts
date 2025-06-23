@@ -651,6 +651,7 @@ function getCategoryMapping(): Record<string, string[]> {
       'trivy',
       'tfsec',
       'checkov',
+      'git-crypt',
     ],
 
     'Multimedia': [
@@ -1714,6 +1715,7 @@ function generateInstallCommand(pkg: PkgxPackage): string {
  */
 async function generatePackageCatalog(outputDir: string, packagesDir?: string): Promise<string> {
   const pantry = await importPantry(packagesDir)
+  const allAliases = await extractAllAliases(packagesDir)
   const categories = getCategoryMapping()
   const catalogPath = path.resolve(outputDir, 'package-catalog.md')
 
@@ -1780,29 +1782,49 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
 
 `
 
+  // Helper function to resolve package identifier to domain variable name
+  const resolvePackageIdentifier = (identifier: string): { domainVarName: string, pkg: PkgxPackage } | null => {
+    // First check if it's a direct domain variable name in pantry
+    if (pantry[identifier]) {
+      return { domainVarName: identifier, pkg: pantry[identifier] }
+    }
+
+    // Check if it's an alias that resolves to a domain
+    const resolvedDomain = allAliases[identifier]
+    if (resolvedDomain) {
+      // Convert domain to variable name to find in pantry
+      const resolvedVarName = convertDomainToVarName(resolvedDomain)
+      if (pantry[resolvedVarName]) {
+        return { domainVarName: resolvedVarName, pkg: pantry[resolvedVarName] }
+      }
+    }
+
+    return null
+  }
+
   // Generate table of contents
   Object.keys(categories).forEach((category) => {
     const slug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-')
-    // Convert domain variable names to actual domains and count valid packages
-    const domainVarNames = categories[category]
+    // Convert package identifiers (aliases or domain var names) to actual packages
+    const packageIdentifiers = categories[category]
     const packagesMap = new Map<string, { domainVarName: string, pkg: PkgxPackage }>()
 
     // First pass: collect all packages and deduplicate by domain
-    domainVarNames.forEach((domainVarName) => {
-      const pkg = pantry[domainVarName]
-      if (pkg && !shouldExcludePackage(pkg)) {
-        const domain = pkg.domain || pkg.fullPath || 'unknown'
+    packageIdentifiers.forEach((identifier) => {
+      const resolved = resolvePackageIdentifier(identifier)
+      if (resolved && !shouldExcludePackage(resolved.pkg)) {
+        const domain = resolved.pkg.domain || resolved.pkg.fullPath || 'unknown'
         // Use the same deterministic logic as other functions
         if (!packagesMap.has(domain)) {
-          packagesMap.set(domain, { domainVarName, pkg })
+          packagesMap.set(domain, resolved)
         }
         else {
           const existing = packagesMap.get(domain)!
           // Prefer shorter variable names (usually the primary ones)
           // If lengths are equal, prefer alphabetically first (for deterministic results)
-          if (domainVarName.length < existing.domainVarName.length
-            || (domainVarName.length === existing.domainVarName.length && domainVarName < existing.domainVarName)) {
-            packagesMap.set(domain, { domainVarName, pkg })
+          if (resolved.domainVarName.length < existing.domainVarName.length
+            || (resolved.domainVarName.length === existing.domainVarName.length && resolved.domainVarName < existing.domainVarName)) {
+            packagesMap.set(domain, resolved)
           }
         }
       }
@@ -1815,26 +1837,26 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
   content += '\n'
 
   // Generate sections for each category
-  for (const [categoryName, domainVarNames] of Object.entries(categories)) {
-    // Convert domain variable names back to actual domains and get valid packages
+  for (const [categoryName, packageIdentifiers] of Object.entries(categories)) {
+    // Convert package identifiers (aliases or domain var names) to actual packages
     const packagesMap = new Map<string, { domainVarName: string, pkg: PkgxPackage }>()
 
     // First pass: collect all packages and deduplicate by domain
-    domainVarNames.forEach((domainVarName) => {
-      const pkg = pantry[domainVarName]
-      if (pkg && !shouldExcludePackage(pkg)) {
-        const domain = pkg.domain || pkg.fullPath || 'unknown'
+    packageIdentifiers.forEach((identifier) => {
+      const resolved = resolvePackageIdentifier(identifier)
+      if (resolved && !shouldExcludePackage(resolved.pkg)) {
+        const domain = resolved.pkg.domain || resolved.pkg.fullPath || 'unknown'
         // Use the same deterministic logic as generatePackagePages
         if (!packagesMap.has(domain)) {
-          packagesMap.set(domain, { domainVarName, pkg })
+          packagesMap.set(domain, resolved)
         }
         else {
           const existing = packagesMap.get(domain)!
           // Prefer shorter variable names (usually the primary ones)
           // If lengths are equal, prefer alphabetically first (for deterministic results)
-          if (domainVarName.length < existing.domainVarName.length
-            || (domainVarName.length === existing.domainVarName.length && domainVarName < existing.domainVarName)) {
-            packagesMap.set(domain, { domainVarName, pkg })
+          if (resolved.domainVarName.length < existing.domainVarName.length
+            || (resolved.domainVarName.length === existing.domainVarName.length && resolved.domainVarName < existing.domainVarName)) {
+            packagesMap.set(domain, resolved)
           }
         }
       }
@@ -2393,6 +2415,7 @@ console.log(\`Programs: \${pkg.programs.join(', ')}\`)
  */
 async function generateCategoryPages(outputDir: string, packagesDir?: string): Promise<string[]> {
   const pantry = await importPantry(packagesDir)
+  const allAliases = await extractAllAliases(packagesDir)
   const categories = getCategoryMapping()
   const categoriesDir = path.join(outputDir, 'categories')
 
@@ -2403,26 +2426,45 @@ async function generateCategoryPages(outputDir: string, packagesDir?: string): P
 
   const generatedFiles: string[] = []
 
-  for (const [categoryName, domainVarNames] of Object.entries(categories)) {
-    // Convert domain variable names back to actual domains and get valid packages
+  // Helper function to resolve category identifiers to actual domain variable names
+  const resolvePackageIdentifier = (identifier: string): { domainVarName: string, pkg: PkgxPackage } | null => {
+    // Try direct lookup in pantry first
+    if (pantry[identifier]) {
+      return { domainVarName: identifier, pkg: pantry[identifier] }
+    }
+
+    // Try alias resolution
+    if (allAliases[identifier]) {
+      const domain = allAliases[identifier]
+      const domainVarName = convertDomainToVarName(domain)
+      if (pantry[domainVarName]) {
+        return { domainVarName, pkg: pantry[domainVarName] }
+      }
+    }
+
+    return null
+  }
+
+  for (const [categoryName, packageIdentifiers] of Object.entries(categories)) {
+    // Convert category identifiers to actual domain variable names and get valid packages
     const packagesMap = new Map<string, { domainVarName: string, pkg: PkgxPackage }>()
 
     // First pass: collect all packages and deduplicate by domain
-    domainVarNames.forEach((domainVarName) => {
-      const pkg = pantry[domainVarName]
-      if (pkg && !shouldExcludePackage(pkg)) {
-        const domain = pkg.domain || pkg.fullPath || 'unknown'
+    packageIdentifiers.forEach((identifier) => {
+      const resolved = resolvePackageIdentifier(identifier)
+      if (resolved && !shouldExcludePackage(resolved.pkg)) {
+        const domain = resolved.pkg.domain || resolved.pkg.fullPath || 'unknown'
         // Use the same deterministic logic as other functions
         if (!packagesMap.has(domain)) {
-          packagesMap.set(domain, { domainVarName, pkg })
+          packagesMap.set(domain, resolved)
         }
         else {
           const existing = packagesMap.get(domain)!
           // Prefer shorter variable names (usually the primary ones)
           // If lengths are equal, prefer alphabetically first (for deterministic results)
-          if (domainVarName.length < existing.domainVarName.length
-            || (domainVarName.length === existing.domainVarName.length && domainVarName < existing.domainVarName)) {
-            packagesMap.set(domain, { domainVarName, pkg })
+          if (resolved.domainVarName.length < existing.domainVarName.length
+            || (resolved.domainVarName.length === existing.domainVarName.length && resolved.domainVarName < existing.domainVarName)) {
+            packagesMap.set(domain, resolved)
           }
         }
       }

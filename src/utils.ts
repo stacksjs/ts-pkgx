@@ -437,12 +437,36 @@ export function convertDomainToVarName(domain: string): string {
     const parentDomain = parts[0]
     const subPaths = parts.slice(1)
 
-    // Remove all dots and dashes from all parts
+    // Remove all dots and dashes from parent domain
     const cleanParent = parentDomain.replace(/[.-]/g, '')
-    const cleanSubPaths = subPaths.map(part => part.replace(/[.-]/g, '')).join('')
+
+    // Clean and process subpaths
+    const cleanSubPaths = subPaths.map(part => part.replace(/[.-]/g, ''))
+
+    // For deduplication logic: if the last subpath appears in the domain name (like github.com/cli/cli),
+    // or if we have multiple path segments, use only the first unique one
+    let finalSubPath = ''
+    if (cleanSubPaths.length > 0) {
+      // Check if any subpath is already contained in the parent domain
+      const firstSubPath = cleanSubPaths[0]
+      if (cleanParent.includes(firstSubPath.toLowerCase())) {
+        // If the subpath name is already in the domain (like cli in cli.github.com),
+        // use it only once by taking just the domain
+        finalSubPath = ''
+      }
+      else if (cleanSubPaths.length === 1) {
+        // Single subpath, use it
+        finalSubPath = firstSubPath
+      }
+      else {
+        // Multiple subpaths: use only the first one to avoid duplication
+        // This handles cases like 'complex-domain.example.com/nested/path' -> 'complexdomainexamplecomnested'
+        finalSubPath = firstSubPath
+      }
+    }
 
     // Combine all parts without any separator
-    return `${cleanParent}${cleanSubPaths}`.toLowerCase()
+    return `${cleanParent}${finalSubPath}`.toLowerCase()
   }
 
   // Regular domains like 'bun.sh' -> 'bunsh'

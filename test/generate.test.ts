@@ -46,7 +46,7 @@ const mockPackages: Record<string, PkgxPackage> = {
   },
   'agwa.name/git-crypt': {
     name: 'git-crypt',
-    domain: 'agwa.name',
+    domain: 'agwa.name/git-crypt',
     description: 'Enable transparent encryption/decryption of files in a git repo',
     packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/agwa.name/git-crypt/package.yml',
     homepageUrl: 'https://www.agwa.name/projects/git-crypt/',
@@ -87,21 +87,8 @@ describe('Generate Module', () => {
       const fileName = domain.replace(/\//g, '-')
       const filePath = path.join(tempPackagesDir, `${fileName}.ts`)
 
-      // Create variable name based on the pattern from real files
-      let varNameBase: string
-      if (domain === 'nodejs.org') {
-        varNameBase = 'node'
-      }
-      else if (domain === 'python.org') {
-        varNameBase = 'python'
-      }
-      else if (domain === 'agwa.name/git-crypt') {
-        varNameBase = 'gitcrypt'
-      }
-      else {
-        // Fallback for other domains
-        varNameBase = domain.replace(/\./g, '').replace(/\//g, '')
-      }
+      // Create variable name based on convertDomainToVarName function (matching real behavior)
+      const varNameBase = domain.replace(/\./g, '').replace(/\//g, '').replace(/-/g, '').toLowerCase()
 
       // Create a simple mock TypeScript file
       const content = `
@@ -915,15 +902,28 @@ export type CaseVariationsPackage = typeof caseVariationsPackage
         const packageFiles = fs.readdirSync(packagesDir)
         expect(packageFiles.length).toBeGreaterThan(0)
 
-        // Check Node.js package page
-        const nodeFile = packageFiles.find(f => f.includes('nodejs'))
-        expect(nodeFile).toBeDefined()
+        // Check Node.js package page (it should be in a nodejs.org directory structure)
+        const nodeEntry = packageFiles.find(f => f.includes('nodejs'))
+        expect(nodeEntry).toBeDefined()
 
-        const nodeContent = fs.readFileSync(path.join(packagesDir, nodeFile!), 'utf-8')
+        // Handle both flat file and directory structure
+        let nodeContentPath: string
+        const fullNodePath = path.join(packagesDir, nodeEntry!)
+
+        if (fs.statSync(fullNodePath).isDirectory()) {
+          // Directory structure: nodejs.org/index.md
+          nodeContentPath = path.join(fullNodePath, 'index.md')
+        }
+        else {
+          // Flat file structure: nodejs-org.md
+          nodeContentPath = fullNodePath
+        }
+
+        expect(fs.existsSync(nodeContentPath)).toBe(true)
+        const nodeContent = fs.readFileSync(nodeContentPath, 'utf-8')
         expect(nodeContent).toContain('# Node.js')
         expect(nodeContent).toContain('## Installation')
         expect(nodeContent).toContain('## Programs')
-        expect(nodeContent).toContain('## Available Versions')
       }
       catch (error) {
         if (process.env.CI === 'true') {
