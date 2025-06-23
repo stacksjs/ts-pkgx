@@ -1,11 +1,11 @@
-# borgbackup.org
+# borg
 
 > Deduplicating archiver with compression and authenticated encryption.
 
 ## Package Information
 
 - **Domain**: `borgbackup.org`
-- **Name**: `borgbackup.org`
+- **Name**: `borg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/borgbackup.org/package.yml)
 
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `borg`
 - `borgfs`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `borg`
 
 ## Available Versions
 

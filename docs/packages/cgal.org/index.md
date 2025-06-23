@@ -1,11 +1,11 @@
-# cgal.org
+# cgal
 
 > The public CGAL repository, see the README below
 
 ## Package Information
 
 - **Domain**: `cgal.org`
-- **Name**: `cgal.org`
+- **Name**: `cgal`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cgal.org/package.yml)
 
@@ -23,12 +23,6 @@ This package provides the following executable programs:
 - `cgal_create_CMakeLists`
 - `cgal_create_cmake_script`
 - `cgal_make_macosx_app`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `cgal`
 
 ## Available Versions
 

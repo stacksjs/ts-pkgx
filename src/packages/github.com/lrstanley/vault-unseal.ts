@@ -3,7 +3,7 @@
  *
  * @domain `github.com/lrstanley/vault-unseal`
  * @programs `vault-unseal`
- * @version `0.7.0` (2 versions available)
+ * @version `0.7.1` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install vault-unseal`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "vault-unseal"
  * console.log(pkg.description) // "auto-unseal utility for Hashicorp Vault"
  * console.log(pkg.programs)    // ["vault-unseal"]
- * console.log(pkg.versions[0]) // "0.7.0" (latest)
+ * console.log(pkg.versions[0]) // "0.7.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/lrstanley/vault-unseal.md
@@ -62,6 +62,7 @@ export const vaultunsealPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.7.1',
     '0.7.0',
     '0.6.0',
   ] as const,

@@ -1,10 +1,20 @@
 # Security & Cryptography
 
-*11 packages in this category*
+*12 packages in this category*
 
 Packages related to security & cryptography.
 
 ## Packages
+
+### [agwa.name/git-crypt](../packages/agwa.name/git-crypt/index.md) (git-crypt)
+
+Enable transparent encryption/decryption of files in a git repo
+
+**Programs**: git-crypt
+
+**Install**: `launchpad install git-crypt`
+
+---
 
 ### [aquasecurity.github.io/tfsec](../packages/aquasecurity.github.io/tfsec/index.md) (tfsec)
 
