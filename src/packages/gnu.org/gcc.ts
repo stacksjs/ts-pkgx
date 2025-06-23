@@ -34,7 +34,7 @@ export const gnuorggccPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'The GNU Compiler Collection - a compiler system supporting various programming languages' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gcc/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

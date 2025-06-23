@@ -33,7 +33,7 @@ export const gnuorggawkPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'GNU version of the AWK programming language' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gawk/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

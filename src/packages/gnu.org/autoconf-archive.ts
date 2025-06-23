@@ -31,7 +31,7 @@ export const gnuorgautoconfarchivePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A collection of more than 500 macros for GNU Autoconf' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/autoconf-archive/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

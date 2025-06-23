@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +blake2.net/libb2
+launchpad install blake2.net/libb2
 ```
 
 ## Programs

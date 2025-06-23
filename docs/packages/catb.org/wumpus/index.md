@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +catb.org/wumpus
+launchpad install catb.org/wumpus
 ```
 
 ## Programs

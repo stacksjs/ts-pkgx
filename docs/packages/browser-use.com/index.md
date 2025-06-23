@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +browser-use.com
+launchpad install browser-use.com
 ```
 
 ## Programs

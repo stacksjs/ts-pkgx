@@ -41,7 +41,7 @@ export const browserusecomPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +browser-use.com' as const,
+  installCommand: 'launchpad install browser-use.com' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -80,7 +80,7 @@ export const browserusecomPackage = {
   ] as const,
   aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +browser-use.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install +browser-use.com' as const,
+  launchpadInstallCommand: 'launchpad install browser-use.com' as const,
 }
 
 export type BrowserusecomPackage = typeof browserusecomPackage

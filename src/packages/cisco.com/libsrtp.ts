@@ -41,7 +41,7 @@ export const ciscocomlibsrtpPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +cisco.com/libsrtp' as const,
+  installCommand: 'launchpad install cisco.com/libsrtp' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -62,7 +62,7 @@ export const ciscocomlibsrtpPackage = {
   ] as const,
   aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cisco.com/libsrtp -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install +cisco.com/libsrtp' as const,
+  launchpadInstallCommand: 'launchpad install cisco.com/libsrtp' as const,
 }
 
 export type CiscocomlibsrtpPackage = typeof ciscocomlibsrtpPackage

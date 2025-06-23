@@ -46,7 +46,7 @@ export const bittensorPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +bittensor.com' as const,
+  installCommand: 'launchpad install bittensor.com' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -134,7 +134,7 @@ export const bittensorPackage = {
     'Bittensor',
   ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install +bittensor.com' as const,
+  launchpadInstallCommand: 'launchpad install bittensor.com' as const,
 }
 
 export type BittensorPackage = typeof bittensorPackage

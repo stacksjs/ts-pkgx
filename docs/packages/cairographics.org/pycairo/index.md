@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +cairographics.org/pycairo
+launchpad install cairographics.org/pycairo
 ```
 
 ## Programs

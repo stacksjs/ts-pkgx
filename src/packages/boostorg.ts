@@ -41,7 +41,7 @@ export const boostorgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +boost.org' as const,
+  installCommand: 'launchpad install boost.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -67,7 +67,7 @@ export const boostorgPackage = {
   ] as const,
   aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +boost.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install +boost.org' as const,
+  launchpadInstallCommand: 'launchpad install boost.org' as const,
 }
 
 export type BoostorgPackage = typeof boostorgPackage

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +chiark.greenend.org.uk/putty
+launchpad install chiark.greenend.org.uk/putty
 ```
 
 ## Programs

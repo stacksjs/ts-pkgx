@@ -41,7 +41,7 @@ export const certifiiopythoncertifiPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +certifi.io/python-certifi' as const,
+  installCommand: 'launchpad install certifi.io/python-certifi' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -67,7 +67,7 @@ export const certifiiopythoncertifiPackage = {
   ] as const,
   aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +certifi.io/python-certifi -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install +certifi.io/python-certifi' as const,
+  launchpadInstallCommand: 'launchpad install certifi.io/python-certifi' as const,
 }
 
 export type CertifiiopythoncertifiPackage = typeof certifiiopythoncertifiPackage

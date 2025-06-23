@@ -33,7 +33,7 @@ export const gnuorgcoreutilsPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'Basic file, shell and text manipulation utilities of the GNU operating system' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/coreutils/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

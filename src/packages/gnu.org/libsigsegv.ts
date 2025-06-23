@@ -31,7 +31,7 @@ export const gnuorglibsigsegvPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A library for handling page faults in user mode' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libsigsegv/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

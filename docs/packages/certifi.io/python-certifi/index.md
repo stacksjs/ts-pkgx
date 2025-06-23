@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +certifi.io/python-certifi
+launchpad install certifi.io/python-certifi
 ```
 
 ## Programs

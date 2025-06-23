@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install +cisco.com/libsrtp
+launchpad install cisco.com/libsrtp
 ```
 
 ## Programs

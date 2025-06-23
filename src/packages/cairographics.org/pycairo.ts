@@ -41,7 +41,7 @@ export const cairographicsorgpycairoPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install +cairographics.org/pycairo' as const,
+  installCommand: 'launchpad install cairographics.org/pycairo' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -66,7 +66,7 @@ export const cairographicsorgpycairoPackage = {
   ] as const,
   aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cairographics.org/pycairo -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install +cairographics.org/pycairo' as const,
+  launchpadInstallCommand: 'launchpad install cairographics.org/pycairo' as const,
 }
 
 export type CairographicsorgpycairoPackage = typeof cairographicsorgpycairoPackage

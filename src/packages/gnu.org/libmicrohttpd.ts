@@ -32,7 +32,7 @@ export const gnuorglibmicrohttpdPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A small C library that is supposed to make it easy to run an HTTP server' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libmicrohttpd/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

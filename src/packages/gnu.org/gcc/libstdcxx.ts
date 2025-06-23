@@ -32,7 +32,7 @@ export const gnuorggcclibstdcxxPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'The GNU Standard C++ Library v3' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gcc/libstdcxx/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
