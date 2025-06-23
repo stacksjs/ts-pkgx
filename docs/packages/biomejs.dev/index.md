@@ -1,11 +1,11 @@
-# biomejs.dev
+# biome
 
 > A toolchain for web projects, aimed to provide functionalities to maintain them. Biome offers formatter and linter, usable via CLI and LSP.
 
 ## Package Information
 
 - **Domain**: `biomejs.dev`
-- **Name**: `biomejs.dev`
+- **Name**: `biome`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/biomejs.dev/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install biome
 ## Programs
 
 This package provides the following executable programs:
-
-- `biome`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `biome`
 

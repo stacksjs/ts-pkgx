@@ -5,7 +5,7 @@
  * @version `1.88.0` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +boost.org`
+ * @install `launchpad install boost.org`
  * @dependencies `facebook.com/zstd^1`
  *
  * @example

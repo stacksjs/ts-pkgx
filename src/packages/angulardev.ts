@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ng`
- * @aliases `ng`
+ * @name `ng`
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ng
  * // Or access via domain
  * const samePkg = pantry.angulardev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "angular.dev"
+ * console.log(pkg.name)        // "ng"
  * console.log(pkg.description) // "CLI tool for Angular"
  * console.log(pkg.programs)    // ["ng"]
  * console.log(pkg.versions[0]) // "20.0.3" (latest)
@@ -32,7 +32,7 @@ export const ngPackage = {
   /**
    * The display name of this package.
    */
-  name: 'angular.dev' as const,
+  name: 'ng' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -183,9 +183,7 @@ export const ngPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ng',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ng -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install ng' as const,
 }

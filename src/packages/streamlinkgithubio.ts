@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install streamlink`
- * @aliases `streamlink`
+ * @name `streamlink`
  * @dependencies `pkgx.sh^1`
  * @companions `ffmpeg.org`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.streamlink
  * // Or access via domain
  * const samePkg = pantry.streamlinkgithubio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "streamlink.github.io"
+ * console.log(pkg.name)        // "streamlink"
  * console.log(pkg.description) // "Streamlink is a CLI utility which pipes video s..."
  * console.log(pkg.programs)    // ["streamlink"]
  * console.log(pkg.versions[0]) // "7.4.0" (latest)
@@ -33,7 +33,7 @@ export const streamlinkPackage = {
   /**
    * The display name of this package.
    */
-  name: 'streamlink.github.io' as const,
+  name: 'streamlink' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -101,9 +101,7 @@ export const streamlinkPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'streamlink',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) streamlink -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install streamlink' as const,
 }

@@ -39,7 +39,7 @@ export const grepPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A command-line utility for searching plain-text data sets for lines that match a regular expression' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/grep/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

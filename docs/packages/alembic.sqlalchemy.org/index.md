@@ -1,11 +1,11 @@
-# alembic.sqlalchemy.org
+# alembic
 
 > A database migrations tool for SQLAlchemy.
 
 ## Package Information
 
 - **Domain**: `alembic.sqlalchemy.org`
-- **Name**: `alembic.sqlalchemy.org`
+- **Name**: `alembic`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/alembic.sqlalchemy.org/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install alembic
 ## Programs
 
 This package provides the following executable programs:
-
-- `alembic`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `alembic`
 

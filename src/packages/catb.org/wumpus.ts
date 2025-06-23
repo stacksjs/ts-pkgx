@@ -1,19 +1,19 @@
 /**
- * **wumpus** - Exact clone of the ancient BASIC Hunt the Wumpus game
+ * **catb.org/wumpus** - Exact clone of the ancient BASIC Hunt the Wumpus game
  *
  * @domain `catb.org/wumpus`
  * @programs `wumpus`, `superhack`
  * @version `1.10.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +catb.org/wumpus`
+ * @install `launchpad install catb.org/wumpus`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.catborgwumpus
- * console.log(pkg.name)        // "wumpus"
+ * console.log(pkg.name)        // "catb.org/wumpus"
  * console.log(pkg.description) // "Exact clone of the ancient BASIC Hunt the Wumpu..."
  * console.log(pkg.programs)    // ["wumpus", "superhack"]
  * console.log(pkg.versions[0]) // "1.10.0" (latest)
@@ -26,7 +26,7 @@ export const catborgwumpusPackage = {
   /**
    * The display name of this package.
    */
-  name: 'wumpus' as const,
+  name: 'catb.org/wumpus' as const,
   /**
    * The canonical domain name for this package.
    */

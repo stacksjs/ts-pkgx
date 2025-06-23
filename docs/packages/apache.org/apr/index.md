@@ -1,11 +1,11 @@
-# apr
+# apache.org/apr
 
 > Mirror of Apache Portable Runtime
 
 ## Package Information
 
 - **Domain**: `apache.org/apr`
-- **Name**: `apr`
+- **Name**: `apache.org/apr`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/apr/package.yml)
 

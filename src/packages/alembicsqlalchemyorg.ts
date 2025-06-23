@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install alembic`
- * @aliases `alembic`
+ * @name `alembic`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.alembic
  * // Or access via domain
  * const samePkg = pantry.alembicsqlalchemyorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "alembic.sqlalchemy.org"
+ * console.log(pkg.name)        // "alembic"
  * console.log(pkg.description) // "A database migrations tool for SQLAlchemy."
  * console.log(pkg.programs)    // ["alembic"]
  * console.log(pkg.versions[0]) // "1.16.2" (latest)
@@ -32,7 +32,7 @@ export const alembicPackage = {
   /**
    * The display name of this package.
    */
-  name: 'alembic.sqlalchemy.org' as const,
+  name: 'alembic' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -83,9 +83,7 @@ export const alembicPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'alembic',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) alembic -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install alembic' as const,
 }

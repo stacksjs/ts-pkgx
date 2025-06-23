@@ -1,11 +1,11 @@
 /**
- * **pycairo** - Python bindings for cairo
+ * **cairographics.org/pycairo** - Python bindings for cairo
  *
  * @domain `cairographics.org/pycairo`
  * @version `1.28.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +cairographics.org/pycairo`
+ * @install `launchpad install cairographics.org/pycairo`
  * @dependencies `cairographics.org`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.cairographicsorgpycairo
- * console.log(pkg.name)        // "pycairo"
+ * console.log(pkg.name)        // "cairographics.org/pycairo"
  * console.log(pkg.description) // "Python bindings for cairo"
  * console.log(pkg.versions[0]) // "1.28.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const cairographicsorgpycairoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pycairo' as const,
+  name: 'cairographics.org/pycairo' as const,
   /**
    * The canonical domain name for this package.
    */

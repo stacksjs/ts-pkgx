@@ -7,20 +7,20 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cdk`
- * @name `cdk`
- * @aliases `aws/cdk`
+ * @name `aws/cdk`
+ * @aliases `cdk`
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.cdk
  * // Or access via domain
  * const samePkg = pantry.awsamazoncomcdk
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cdk"
+ * console.log(pkg.name)        // "aws/cdk"
  * console.log(pkg.description) // "The AWS Cloud Development Kit is a framework fo..."
  * console.log(pkg.programs)    // ["cdk"]
  * console.log(pkg.versions[0]) // "3.0.0" (latest)
@@ -33,7 +33,7 @@ export const cdkPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cdk' as const,
+  name: 'aws/cdk' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -238,7 +238,7 @@ export const cdkPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'aws/cdk',
+    'cdk',
   ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cdk -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install cdk' as const,

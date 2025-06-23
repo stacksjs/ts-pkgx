@@ -1,11 +1,11 @@
-# cd
+# argo-cd
 
 > GitOps Continuous Delivery for Kubernetes
 
 ## Package Information
 
 - **Domain**: `argoproj.github.io/cd`
-- **Name**: `cd`
+- **Name**: `argo-cd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/argoproj.github.io/cd/package.yml)
 
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `argocd`
-- `argo-cd`
 
 ## Available Versions
 

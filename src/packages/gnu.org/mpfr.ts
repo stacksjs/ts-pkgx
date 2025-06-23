@@ -31,7 +31,7 @@ export const gnuorgmpfrPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A portable library written in C for arbitrary precision arithmetic on floating-point numbers' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/mpfr/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

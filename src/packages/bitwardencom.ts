@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bw`
- * @aliases `bw`
+ * @name `bw`
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.bw
  * // Or access via domain
  * const samePkg = pantry.bitwardencom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "bitwarden.com"
+ * console.log(pkg.name)        // "bw"
  * console.log(pkg.description) // "Secure and free password manager for all of you..."
  * console.log(pkg.programs)    // ["bw"]
  * console.log(pkg.versions[0]) // "2025.4.0" (latest)
@@ -32,7 +32,7 @@ export const bwPackage = {
   /**
    * The display name of this package.
    */
-  name: 'bitwarden.com' as const,
+  name: 'bw' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -98,9 +98,7 @@ export const bwPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'bw',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bw -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install bw' as const,
 }

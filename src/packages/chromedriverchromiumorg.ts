@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install chromedriver`
- * @aliases `chromedriver`
+ * @name `chromedriver`
  * @dependencies `linux:gnome.org/glib^2`, `linux:mozilla.org/nss`, `linux:x.org/xcb` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.chromedriver
  * // Or access via domain
  * const samePkg = pantry.chromedriverchromiumorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "chromedriver.chromium.org"
+ * console.log(pkg.name)        // "chromedriver"
  * console.log(pkg.programs)    // ["chromedriver"]
  * console.log(pkg.versions[0]) // "114.0.5735.90" (latest)
  * ```
@@ -31,7 +31,7 @@ export const chromedriverPackage = {
   /**
    * The display name of this package.
    */
-  name: 'chromedriver.chromium.org' as const,
+  name: 'chromedriver' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,9 +77,7 @@ export const chromedriverPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'chromedriver',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) chromedriver -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install chromedriver' as const,
 }

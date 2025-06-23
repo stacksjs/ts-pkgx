@@ -38,7 +38,7 @@ export const edPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A line-oriented text editor' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/ed/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

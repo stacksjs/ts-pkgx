@@ -1,11 +1,11 @@
-# bytebase.com
+# bytebase
 
 > World's most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engineering teams. The GitHub/GitLab for database DevSecOps.
 
 ## Package Information
 
 - **Domain**: `bytebase.com`
-- **Name**: `bytebase.com`
+- **Name**: `bytebase`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bytebase.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install bytebase
 ## Programs
 
 This package provides the following executable programs:
-
-- `bytebase`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `bytebase`
 
@@ -60,7 +54,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with bytebase.com:
+These packages work well with bytebase:
 
 - [`postgresql.org`](../postgresql.org/index.md) - Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
 

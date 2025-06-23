@@ -1,11 +1,11 @@
-# cdk
+# aws/cdk
 
 > The AWS Cloud Development Kit is a framework for defining cloud infrastructure in code
 
 ## Package Information
 
 - **Domain**: `aws.amazon.com/cdk`
-- **Name**: `cdk`
+- **Name**: `aws/cdk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aws.amazon.com/cdk/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install aws/cdk
+launchpad install cdk
 ```
 
 ## Programs
@@ -26,7 +26,7 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `aws/cdk`
+- `cdk`
 
 ## Available Versions
 

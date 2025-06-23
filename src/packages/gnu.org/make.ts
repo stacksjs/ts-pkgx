@@ -38,7 +38,7 @@ export const makePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A build automation tool that builds executable programs and libraries from source code' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/make/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

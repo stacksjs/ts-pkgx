@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install asciidoctor`
- * @aliases `asciidoctor`
+ * @name `asciidoctor`
  * @dependencies `ruby-lang.org^3.1`, `rubygems.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.asciidoctor
  * // Or access via domain
  * const samePkg = pantry.asciidoctororg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "asciidoctor.org"
+ * console.log(pkg.name)        // "asciidoctor"
  * console.log(pkg.description) // ":gem: A fast, open source text processor and pu..."
  * console.log(pkg.programs)    // ["asciidoctor"]
  * console.log(pkg.versions[0]) // "2.0.23" (latest)
@@ -32,7 +32,7 @@ export const asciidoctorPackage = {
   /**
    * The display name of this package.
    */
-  name: 'asciidoctor.org' as const,
+  name: 'asciidoctor' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -81,9 +81,7 @@ export const asciidoctorPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'asciidoctor',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) asciidoctor -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install asciidoctor' as const,
 }

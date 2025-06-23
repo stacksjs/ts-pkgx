@@ -1,11 +1,11 @@
 /**
- * **libsrtp** - Library for SRTP (Secure Realtime Transport Protocol)
+ * **cisco.com/libsrtp** - Library for SRTP (Secure Realtime Transport Protocol)
  *
  * @domain `cisco.com/libsrtp`
  * @version `2.7.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +cisco.com/libsrtp`
+ * @install `launchpad install cisco.com/libsrtp`
  * @dependencies `openssl.org~1`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.ciscocomlibsrtp
- * console.log(pkg.name)        // "libsrtp"
+ * console.log(pkg.name)        // "cisco.com/libsrtp"
  * console.log(pkg.description) // "Library for SRTP (Secure Realtime Transport Pro..."
  * console.log(pkg.versions[0]) // "2.7.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const ciscocomlibsrtpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libsrtp' as const,
+  name: 'cisco.com/libsrtp' as const,
   /**
    * The canonical domain name for this package.
    */

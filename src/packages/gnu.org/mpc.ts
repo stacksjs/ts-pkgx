@@ -31,7 +31,7 @@ export const gnuorgmpcPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A C library for the arithmetic of complex numbers with arbitrarily high precision' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/mpc/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

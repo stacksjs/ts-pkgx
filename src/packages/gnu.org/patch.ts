@@ -38,7 +38,7 @@ export const patchPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A utility to apply a diff file to an original' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/patch/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

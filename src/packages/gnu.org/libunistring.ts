@@ -31,7 +31,7 @@ export const gnuorglibunistringPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A library that provides functions for manipulating Unicode strings' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libunistring/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

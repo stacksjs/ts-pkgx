@@ -1,24 +1,24 @@
 /**
- * **aom** - Codec library for encoding and decoding AV1 video streams
+ * **aomenc** - Codec library for encoding and decoding AV1 video streams
  *
  * @domain `aomedia.googlesource.com/aom`
  * @programs `aomenc`, `aomdec`
  * @version `3.12.1` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install aom`
- * @name `aom`
+ * @install `launchpad install aomenc`
+ * @name `aomenc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * // Access the package
- * const pkg = pantry.aom
+ * const pkg = pantry.aomenc
  * // Or access via domain
  * const samePkg = pantry.aomediagooglesourcecomaom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "aom"
+ * console.log(pkg.name)        // "aomenc"
  * console.log(pkg.description) // "Codec library for encoding and decoding AV1 vid..."
  * console.log(pkg.programs)    // ["aomenc", "aomdec"]
  * console.log(pkg.versions[0]) // "3.12.1" (latest)
@@ -27,11 +27,11 @@
  * @see https://ts-pkgx.netlify.app/packages/aomedia-googlesource-com/aom.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const aomPackage = {
+export const aomencPackage = {
   /**
    * The display name of this package.
    */
-  name: 'aom' as const,
+  name: 'aomenc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -47,7 +47,7 @@ export const aomPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install aom' as const,
+  installCommand: 'launchpad install aomenc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -85,7 +85,7 @@ export const aomPackage = {
    */
   aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +aomedia.googlesource.com/aom -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install aom' as const,
+  launchpadInstallCommand: 'launchpad install aomenc' as const,
 }
 
-export type AomPackage = typeof aomPackage
+export type AomencPackage = typeof aomencPackage

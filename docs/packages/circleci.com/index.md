@@ -1,11 +1,11 @@
-# circleci.com
+# circleci
 
 > Enables you to reproduce the CircleCI environment locally
 
 ## Package Information
 
 - **Domain**: `circleci.com`
-- **Name**: `circleci.com`
+- **Name**: `circleci`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/circleci.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install circleci
 ## Programs
 
 This package provides the following executable programs:
-
-- `circleci`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `circleci`
 

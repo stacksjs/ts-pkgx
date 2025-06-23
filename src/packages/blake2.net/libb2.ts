@@ -1,18 +1,18 @@
 /**
- * **libb2** - C library providing BLAKE2b, BLAKE2s, BLAKE2bp, BLAKE2sp
+ * **blake2.net/libb2** - C library providing BLAKE2b, BLAKE2s, BLAKE2bp, BLAKE2sp
  *
  * @domain `blake2.net/libb2`
  * @version `0.98.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +blake2.net/libb2`
+ * @install `launchpad install blake2.net/libb2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.blake2netlibb2
- * console.log(pkg.name)        // "libb2"
+ * console.log(pkg.name)        // "blake2.net/libb2"
  * console.log(pkg.description) // "C library providing BLAKE2b, BLAKE2s, BLAKE2bp,..."
  * console.log(pkg.versions[0]) // "0.98.1" (latest)
  * ```
@@ -24,7 +24,7 @@ export const blake2netlibb2Package = {
   /**
    * The display name of this package.
    */
-  name: 'libb2' as const,
+  name: 'blake2.net/libb2' as const,
   /**
    * The canonical domain name for this package.
    */

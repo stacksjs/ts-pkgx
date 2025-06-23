@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install arkade`
- * @aliases `arkade`, `Arkade`
+ * @name `Arkade`
+ * @aliases `arkade`
  *
  * @example
  * ```typescript
@@ -18,7 +19,7 @@
  * // Or access via domain
  * const samePkg = pantry.arkadedev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "arkade.dev"
+ * console.log(pkg.name)        // "Arkade"
  * console.log(pkg.description) // "Open Source Marketplace For Developer Tools"
  * console.log(pkg.programs)    // ["arkade"]
  * console.log(pkg.versions[0]) // "0.11.39" (latest)
@@ -31,7 +32,7 @@ export const arkadePackage = {
   /**
    * The display name of this package.
    */
-  name: 'arkade.dev' as const,
+  name: 'Arkade' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -106,7 +107,6 @@ export const arkadePackage = {
    */
   aliases: [
     'arkade',
-    'Arkade',
   ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) arkade -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install arkade' as const,

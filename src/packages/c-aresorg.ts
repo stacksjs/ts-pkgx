@@ -5,7 +5,7 @@
  * @version `1.34.5` (28 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +c-ares.org`
+ * @install `launchpad install c-ares.org`
  *
  * @example
  * ```typescript

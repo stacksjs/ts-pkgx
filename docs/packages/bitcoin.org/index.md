@@ -1,11 +1,11 @@
-# bitcoin.org
+# bitcoin
 
 > Decentralized, peer to peer payment network
 
 ## Package Information
 
 - **Domain**: `bitcoin.org`
-- **Name**: `bitcoin.org`
+- **Name**: `bitcoin`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bitcoin.org/package.yml)
 
@@ -25,12 +25,6 @@ This package provides the following executable programs:
 - `bitcoin-util`
 - `bitcoin-wallet`
 - `bitcoind`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `bitcoin`
 
 ## Available Versions
 

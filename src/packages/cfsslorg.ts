@@ -6,7 +6,7 @@
  * @version `1.6.5` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +cfssl.org`
+ * @install `launchpad install cfssl.org`
  *
  * @example
  * ```typescript

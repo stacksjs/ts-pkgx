@@ -38,7 +38,7 @@ export const whichPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A utility for locating a command' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/which/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

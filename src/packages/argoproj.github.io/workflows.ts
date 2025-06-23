@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install argo`
- * @aliases `argo`, `argo-workflows`
+ * @name `argo-workflows`
+ * @aliases `argo`
  *
  * @example
  * ```typescript
@@ -18,7 +19,7 @@
  * // Or access via domain
  * const samePkg = pantry.argoprojgithubioworkflows
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "workflows"
+ * console.log(pkg.name)        // "argo-workflows"
  * console.log(pkg.description) // "Get stuff done with container-native workflows ..."
  * console.log(pkg.programs)    // ["argo"]
  * console.log(pkg.versions[0]) // "3.6.10" (latest)
@@ -31,7 +32,7 @@ export const argoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'workflows' as const,
+  name: 'argo-workflows' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -104,7 +105,6 @@ export const argoPackage = {
    */
   aliases: [
     'argo',
-    'argo-workflows',
   ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) argo -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install argo' as const,

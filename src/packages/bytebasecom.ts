@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bytebase`
- * @aliases `bytebase`
+ * @name `bytebase`
  * @dependencies `nodejs.org>=23.11`
  * @companions `postgresql.org`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.bytebase
  * // Or access via domain
  * const samePkg = pantry.bytebasecom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "bytebase.com"
+ * console.log(pkg.name)        // "bytebase"
  * console.log(pkg.description) // "World's most advanced database DevSecOps soluti..."
  * console.log(pkg.programs)    // ["bytebase"]
  * console.log(pkg.versions[0]) // "3.7.1" (latest)
@@ -33,7 +33,7 @@ export const bytebasePackage = {
   /**
    * The display name of this package.
    */
-  name: 'bytebase.com' as const,
+  name: 'bytebase' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -113,9 +113,7 @@ export const bytebasePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'bytebase',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bytebase -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install bytebase' as const,
 }

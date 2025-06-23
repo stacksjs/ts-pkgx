@@ -1,11 +1,11 @@
-# caddyserver.com
+# caddy
 
 > Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
 
 ## Package Information
 
 - **Domain**: `caddyserver.com`
-- **Name**: `caddyserver.com`
+- **Name**: `caddy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/caddyserver.com/package.yml)
 
@@ -19,12 +19,6 @@ launchpad install caddy
 ## Programs
 
 This package provides the following executable programs:
-
-- `caddy`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `caddy`
 

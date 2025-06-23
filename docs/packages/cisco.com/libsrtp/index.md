@@ -1,11 +1,11 @@
-# libsrtp
+# cisco.com/libsrtp
 
 > Library for SRTP (Secure Realtime Transport Protocol)
 
 ## Package Information
 
 - **Domain**: `cisco.com/libsrtp`
-- **Name**: `libsrtp`
+- **Name**: `cisco.com/libsrtp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cisco.com/libsrtp/package.yml)
 

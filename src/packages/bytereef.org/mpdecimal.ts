@@ -1,18 +1,18 @@
 /**
- * **mpdecimal** - pkgx package
+ * **bytereef.org/mpdecimal** - pkgx package
  *
  * @domain `bytereef.org/mpdecimal`
  * @version `4.0.1` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +bytereef.org/mpdecimal`
+ * @install `launchpad install bytereef.org/mpdecimal`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.bytereeforgmpdecimal
- * console.log(pkg.name)        // "mpdecimal"
+ * console.log(pkg.name)        // "bytereef.org/mpdecimal"
  * console.log(pkg.versions[0]) // "4.0.1" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const bytereeforgmpdecimalPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mpdecimal' as const,
+  name: 'bytereef.org/mpdecimal' as const,
   /**
    * The canonical domain name for this package.
    */

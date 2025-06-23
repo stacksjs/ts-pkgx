@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ack`
- * @aliases `ack`
+ * @name `ack`
  * @dependencies `perl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.ack
  * // Or access via domain
  * const samePkg = pantry.beyondgrepcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "beyondgrep.com"
+ * console.log(pkg.name)        // "ack"
  * console.log(pkg.description) // "ack is a grep-like search tool optimized for so..."
  * console.log(pkg.programs)    // ["ack"]
  * console.log(pkg.versions[0]) // "3.9.0" (latest)
@@ -32,7 +32,7 @@ export const ackPackage = {
   /**
    * The display name of this package.
    */
-  name: 'beyondgrep.com' as const,
+  name: 'ack' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -80,9 +80,7 @@ export const ackPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'ack',
-  ] as const,
+  aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ack -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install ack' as const,
 }

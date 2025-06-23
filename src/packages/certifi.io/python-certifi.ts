@@ -1,11 +1,11 @@
 /**
- * **python-certifi** - (Python Distribution) A carefully curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts.
+ * **certifi.io/python-certifi** - (Python Distribution) A carefully curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts.
  *
  * @domain `certifi.io/python-certifi`
  * @version `2025.6.15` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +certifi.io/python-certifi`
+ * @install `launchpad install certifi.io/python-certifi`
  * @dependencies `python.org~3.11`
  *
  * @example
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.certifiiopythoncertifi
- * console.log(pkg.name)        // "python-certifi"
+ * console.log(pkg.name)        // "certifi.io/python-certifi"
  * console.log(pkg.description) // "(Python Distribution) A carefully curated colle..."
  * console.log(pkg.versions[0]) // "2025.6.15" (latest)
  * ```
@@ -25,7 +25,7 @@ export const certifiiopythoncertifiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'python-certifi' as const,
+  name: 'certifi.io/python-certifi' as const,
   /**
    * The canonical domain name for this package.
    */

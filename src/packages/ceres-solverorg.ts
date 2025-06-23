@@ -5,7 +5,7 @@
  * @version `2.2.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +ceres-solver.org`
+ * @install `launchpad install ceres-solver.org`
  * @dependencies `eigen.tuxfamily.org`, `gflags.github.io`, `google.com/glog`, ... (+4 more)
  *
  * @example

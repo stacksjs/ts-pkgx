@@ -34,7 +34,7 @@ export const gnuorgbcPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'An arbitrary precision calculator language with syntax similar to the C programming language' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/bc/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

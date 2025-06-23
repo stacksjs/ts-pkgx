@@ -1,11 +1,11 @@
-# python-certifi
+# certifi.io/python-certifi
 
 > (Python Distribution) A carefully curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts.
 
 ## Package Information
 
 - **Domain**: `certifi.io/python-certifi`
-- **Name**: `python-certifi`
+- **Name**: `certifi.io/python-certifi`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/certifi.io/python-certifi/package.yml)
 
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.python-certifi
+const pkg = pantry.python_certifi
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

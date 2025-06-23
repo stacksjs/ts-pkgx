@@ -1,11 +1,11 @@
-# pycairo
+# cairographics.org/pycairo
 
 > Python bindings for cairo
 
 ## Package Information
 
 - **Domain**: `cairographics.org/pycairo`
-- **Name**: `pycairo`
+- **Name**: `cairographics.org/pycairo`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cairographics.org/pycairo/package.yml)
 

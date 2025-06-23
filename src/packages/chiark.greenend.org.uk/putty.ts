@@ -1,19 +1,19 @@
 /**
- * **putty** - Implementation of Telnet and SSH
+ * **chiark.greenend.org.uk/putty** - Implementation of Telnet and SSH
  *
  * @domain `chiark.greenend.org.uk/putty`
  * @programs `pageant`, `plink`, `pscp`, `psftp`, `psusan`, ... (+1 more)
  * @version `0.83.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install +chiark.greenend.org.uk/putty`
+ * @install `launchpad install chiark.greenend.org.uk/putty`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.chiarkgreenendorgukputty
- * console.log(pkg.name)        // "putty"
+ * console.log(pkg.name)        // "chiark.greenend.org.uk/putty"
  * console.log(pkg.description) // "Implementation of Telnet and SSH"
  * console.log(pkg.programs)    // ["pageant", "plink", ...]
  * console.log(pkg.versions[0]) // "0.83.0" (latest)
@@ -26,7 +26,7 @@ export const chiarkgreenendorgukputtyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'putty' as const,
+  name: 'chiark.greenend.org.uk/putty' as const,
   /**
    * The canonical domain name for this package.
    */

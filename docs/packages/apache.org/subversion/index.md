@@ -1,11 +1,11 @@
-# subversion
+# svn
 
 > Version control system designed to be a better CVS
 
 ## Package Information
 
 - **Domain**: `apache.org/subversion`
-- **Name**: `subversion`
+- **Name**: `svn`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/subversion/package.yml)
 
@@ -31,12 +31,6 @@ This package provides the following executable programs:
 - `svnserve`
 - `svnsync`
 - `svnversion`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `svn`
 
 ## Available Versions
 

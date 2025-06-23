@@ -32,7 +32,7 @@ export const gnuorgreadlinePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A library for editing command lines as they are typed in' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/readline/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

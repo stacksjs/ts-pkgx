@@ -7,7 +7,8 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install argocd`
- * @aliases `argocd`, `argo-cd`
+ * @name `argo-cd`
+ * @aliases `argocd`
  *
  * @example
  * ```typescript
@@ -18,7 +19,7 @@
  * // Or access via domain
  * const samePkg = pantry.argoprojgithubiocd
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cd"
+ * console.log(pkg.name)        // "argo-cd"
  * console.log(pkg.description) // "GitOps Continuous Delivery for Kubernetes"
  * console.log(pkg.programs)    // ["argocd"]
  * console.log(pkg.versions[0]) // "3.0.6" (latest)
@@ -31,7 +32,7 @@ export const argocdPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cd' as const,
+  name: 'argo-cd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -192,7 +193,6 @@ export const argocdPackage = {
    */
   aliases: [
     'argocd',
-    'argo-cd',
   ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) argocd -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install argocd' as const,

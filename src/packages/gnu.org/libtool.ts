@@ -38,7 +38,7 @@ export const libtoolPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A generic library support script' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libtool/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
