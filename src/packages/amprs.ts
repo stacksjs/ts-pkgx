@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install amp`
- * @name `amp`
+ * @aliases `amp`
  * @dependencies `zlib.net@1`, `libgit2.org@1`, `linux:openssl.org@1.1` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.amp
  * // Or access via domain
  * const samePkg = pantry.amprs
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "amp"
+ * console.log(pkg.name)        // "amp.rs"
  * console.log(pkg.description) // "A complete text editor for your terminal."
  * console.log(pkg.programs)    // ["amp"]
  * console.log(pkg.versions[0]) // "0.7.1" (latest)
@@ -32,7 +32,7 @@ export const ampPackage = {
   /**
    * The display name of this package.
    */
-  name: 'amp' as const,
+  name: 'amp.rs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -78,7 +78,9 @@ export const ampPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'amp',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) amp -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install amp' as const,
 }

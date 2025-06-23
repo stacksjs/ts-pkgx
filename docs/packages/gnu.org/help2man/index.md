@@ -51,7 +51,7 @@ This package depends on:
 
 These packages work well with help2man:
 
-- `PERL5LIB^{{prefix}}/lib/perl5:{{prefix}}/libexec/lib/perl5:$PERL5LIB`
+- [`PERL5LIB^{{prefix}}/lib/perl5:{{prefix}}/libexec/lib/perl5:$PERL5LIB`](../../perl5lib-prefix-lib.md) - Package not available
 
 ## Usage Examples
 

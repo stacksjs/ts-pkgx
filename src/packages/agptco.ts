@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install auto-gpt`
- * @name `auto-gpt`
+ * @aliases `auto-gpt`
  * @dependencies `python.org>=3.10<3.12`, `redis.io^7`, `tea.xyz^0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.autogpt
  * // Or access via domain
  * const samePkg = pantry.agptco
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "auto-gpt"
+ * console.log(pkg.name)        // "agpt.co"
  * console.log(pkg.description) // "AutoGPT is the vision of accessible AI for ever..."
  * console.log(pkg.programs)    // ["auto-gpt"]
  * console.log(pkg.versions[0]) // "0.4.7" (latest)
@@ -32,7 +32,7 @@ export const autogptPackage = {
   /**
    * The display name of this package.
    */
-  name: 'auto-gpt' as const,
+  name: 'agpt.co' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -85,7 +85,9 @@ export const autogptPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'auto-gpt',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) auto-gpt -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install auto-gpt' as const,
 }

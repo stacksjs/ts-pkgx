@@ -63,7 +63,7 @@ This package depends on:
 
 These packages work well with ruby-build:
 
-- `linux`
+- [`linux`](../../linux.md) - Package not available
 
 ## Usage Examples
 

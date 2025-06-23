@@ -1,11 +1,11 @@
-# bore
+# bore.pub
 
 > Modern, simple TCP tunnel in Rust that exposes local ports to a remote server
 
 ## Package Information
 
 - **Domain**: `bore.pub`
-- **Name**: `bore`
+- **Name**: `bore.pub`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bore.pub/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install bore
 ## Programs
 
 This package provides the following executable programs:
+
+- `bore`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `bore`
 

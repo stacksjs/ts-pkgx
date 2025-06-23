@@ -1,11 +1,11 @@
-# amp
+# amp.rs
 
 > A complete text editor for your terminal.
 
 ## Package Information
 
 - **Domain**: `amp.rs`
-- **Name**: `amp`
+- **Name**: `amp.rs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/amp.rs/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install amp
 ## Programs
 
 This package provides the following executable programs:
+
+- `amp`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `amp`
 

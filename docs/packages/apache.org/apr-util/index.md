@@ -1,11 +1,11 @@
-# apu-1-config
+# apr-util
 
 > Mirror of Apache Portable Runtime util
 
 ## Package Information
 
 - **Domain**: `apache.org/apr-util`
-- **Name**: `apu-1-config`
+- **Name**: `apr-util`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/apr-util/package.yml)
 
@@ -52,7 +52,7 @@ sh <(curl https://pkgx.sh) apu-&lbrace;&lbrace; -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.apr_util
+const pkg = pantry.apr-util
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,11 +1,11 @@
-# gh
+# cli.github.com
 
 > GitHub’s official command line tool
 
 ## Package Information
 
 - **Domain**: `cli.github.com`
-- **Name**: `gh`
+- **Name**: `cli.github.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cli.github.com/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install gh
 ## Programs
 
 This package provides the following executable programs:
+
+- `gh`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `gh`
 
@@ -61,7 +67,7 @@ sh <(curl https://pkgx.sh) gh -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cligithubcom
+const pkg = pantry.gh
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

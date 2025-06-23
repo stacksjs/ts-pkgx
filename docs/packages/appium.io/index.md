@@ -1,11 +1,11 @@
-# appium
+# appium.io
 
 > Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver protocol
 
 ## Package Information
 
 - **Domain**: `appium.io`
-- **Name**: `appium`
+- **Name**: `appium.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/appium.io/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install appium
 ## Programs
 
 This package provides the following executable programs:
+
+- `appium`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `appium`
 

@@ -1,5 +1,5 @@
 /**
- * **android.com/cmdline-tools** - pkgx package
+ * **cmdline-tools** - pkgx package
  *
  * @domain `android.com/cmdline-tools`
  * @programs `apkanalyzer`, `avdmanager`, `lint`, `profgen`, `resourceshrinker`, ... (+3 more)
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.androidcomcmdlinetools
- * console.log(pkg.name)        // "android.com/cmdline-tools"
+ * console.log(pkg.name)        // "cmdline-tools"
  * console.log(pkg.programs)    // ["apkanalyzer", "avdmanager", ...]
  * console.log(pkg.versions[0]) // "13114758.0.0" (latest)
  * ```
@@ -26,7 +26,7 @@ export const androidcomcmdlinetoolsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'android.com/cmdline-tools' as const,
+  name: 'cmdline-tools' as const,
   /**
    * The canonical domain name for this package.
    */

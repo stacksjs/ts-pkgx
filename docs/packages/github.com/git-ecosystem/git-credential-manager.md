@@ -53,7 +53,7 @@ This package depends on:
 
 These packages work well with git-credential-manager:
 
-- `git-scm.org`
+- [`git-scm.org`](../../git-scm.org/index.md) - Package not available
 
 ## Usage Examples
 

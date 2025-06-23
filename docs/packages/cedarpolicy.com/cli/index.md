@@ -1,11 +1,11 @@
-# cedar
+# cli
 
 > Implementation of the Cedar Policy Language
 
 ## Package Information
 
 - **Domain**: `cedarpolicy.com/cli`
-- **Name**: `cedar`
+- **Name**: `cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cedarpolicy.com/cli/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install cedar
 ## Programs
 
 This package provides the following executable programs:
+
+- `cedar`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `cedar`
 

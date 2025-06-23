@@ -55,7 +55,7 @@ This package depends on:
 
 These packages work well with fastlane:
 
-- `cocoapods.org/xcodeproj`
+- [`cocoapods.org/xcodeproj`](../cocoapods.org/xcodeproj/index.md) - Package not available
 
 ## Usage Examples
 

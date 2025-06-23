@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cedar`
- * @name `cedar`
+ * @aliases `cedar`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.cedar
  * // Or access via domain
  * const samePkg = pantry.cedarpolicycomcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cedar"
+ * console.log(pkg.name)        // "cli"
  * console.log(pkg.description) // "Implementation of the Cedar Policy Language"
  * console.log(pkg.programs)    // ["cedar"]
  * console.log(pkg.versions[0]) // "4.4.1" (latest)
@@ -31,7 +31,7 @@ export const cedarPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cedar' as const,
+  name: 'cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -101,7 +101,9 @@ export const cedarPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'cedar',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cedar -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install cedar' as const,
 }

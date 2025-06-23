@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install appium`
- * @name `appium`
+ * @aliases `appium`
  * @dependencies `npmjs.com`, `nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20`, `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.appium
  * // Or access via domain
  * const samePkg = pantry.appiumio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "appium"
+ * console.log(pkg.name)        // "appium.io"
  * console.log(pkg.description) // "Cross-platform automation framework for all kin..."
  * console.log(pkg.programs)    // ["appium"]
  * console.log(pkg.versions[0]) // "2.19.0" (latest)
@@ -32,7 +32,7 @@ export const appiumPackage = {
   /**
    * The display name of this package.
    */
-  name: 'appium' as const,
+  name: 'appium.io' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -113,7 +113,9 @@ export const appiumPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'appium',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) appium -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install appium' as const,
 }

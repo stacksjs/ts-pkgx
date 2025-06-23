@@ -54,7 +54,7 @@ This package depends on:
 
 These packages work well with licensed:
 
-- `linux`
+- [`linux`](../../linux.md) - Package not available
 
 ## Usage Examples
 

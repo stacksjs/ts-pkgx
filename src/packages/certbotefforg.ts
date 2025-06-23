@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install certbot`
- * @name `certbot`
+ * @aliases `certbot`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.certbot
  * // Or access via domain
  * const samePkg = pantry.certbotefforg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "certbot"
+ * console.log(pkg.name)        // "certbot.eff.org"
  * console.log(pkg.description) // "Certbot is EFF's tool to obtain certs from Let'..."
  * console.log(pkg.programs)    // ["certbot"]
  * console.log(pkg.versions[0]) // "4.1.1" (latest)
@@ -32,7 +32,7 @@ export const certbotPackage = {
   /**
    * The display name of this package.
    */
-  name: 'certbot' as const,
+  name: 'certbot.eff.org' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -93,7 +93,9 @@ export const certbotPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'certbot',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) certbot -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install certbot' as const,
 }

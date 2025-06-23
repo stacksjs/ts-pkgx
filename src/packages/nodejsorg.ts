@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install node`
- * @name `node`
+ * @aliases `node`
  * @dependencies `unicode.org^71`, `openssl.org@1.1`, `zlib.net@1`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  * @companions `npmjs.com`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.node
  * // Or access via domain
  * const samePkg = pantry.nodejsorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "node"
+ * console.log(pkg.name)        // "nodejs.org"
  * console.log(pkg.description) // "Platform built on V8 to build network applications"
  * console.log(pkg.programs)    // ["node"]
  * console.log(pkg.versions[0]) // "24.2.0" (latest)
@@ -33,7 +33,7 @@ export const nodePackage = {
   /**
    * The display name of this package.
    */
-  name: 'node' as const,
+  name: 'nodejs.org' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -223,7 +223,9 @@ export const nodePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'node',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) node -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install node' as const,
 }

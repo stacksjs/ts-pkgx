@@ -1,5 +1,5 @@
 /**
- * **apache.org/zookeeper** - pkgx package
+ * **zookeeper** - pkgx package
  *
  * @domain `apache.org/zookeeper`
  * @programs `zkCleanup`, `zkCli`, `zkEnv`, `zkServer-initialize`, `zkServer`, ... (+4 more)
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.apacheorgzookeeper
- * console.log(pkg.name)        // "apache.org/zookeeper"
+ * console.log(pkg.name)        // "zookeeper"
  * console.log(pkg.programs)    // ["zkCleanup", "zkCli", ...]
  * console.log(pkg.versions[0]) // "3.9.3" (latest)
  * ```
@@ -26,7 +26,7 @@ export const apacheorgzookeeperPackage = {
   /**
    * The display name of this package.
    */
-  name: 'apache.org/zookeeper' as const,
+  name: 'zookeeper' as const,
   /**
    * The canonical domain name for this package.
    */

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install carapace`
- * @name `carapace`
+ * @aliases `carapace`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.carapace
  * // Or access via domain
  * const samePkg = pantry.carapacesh
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "carapace"
+ * console.log(pkg.name)        // "carapace.sh"
  * console.log(pkg.description) // "Multi-shell multi-command argument completer"
  * console.log(pkg.programs)    // ["carapace"]
  * console.log(pkg.versions[0]) // "1.3.3" (latest)
@@ -31,7 +31,7 @@ export const carapacePackage = {
   /**
    * The display name of this package.
    */
-  name: 'carapace' as const,
+  name: 'carapace.sh' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -79,7 +79,9 @@ export const carapacePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'carapace',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) carapace -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install carapace' as const,
 }

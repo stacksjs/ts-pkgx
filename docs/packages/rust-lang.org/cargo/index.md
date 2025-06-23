@@ -59,8 +59,8 @@ This package depends on:
 
 These packages work well with cargo:
 
-- `git-scm.org`
-- `rust-lang.org`
+- [`git-scm.org`](../../git-scm.org/index.md) - Package not available
+- [`rust-lang.org`](../index.md) - Package not available
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# aws/cli
+# cli
 
 > Universal Command Line Interface for Amazon Web Services
 
 ## Package Information
 
 - **Domain**: `aws.amazon.com/cli`
-- **Name**: `aws/cli`
+- **Name**: `cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aws.amazon.com/cli/package.yml)
 
@@ -27,6 +27,7 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `aws`
+- `aws/cli`
 
 ## Available Versions
 

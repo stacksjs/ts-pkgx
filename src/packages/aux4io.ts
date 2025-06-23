@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aux4`
- * @name `aux4`
+ * @aliases `aux4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.aux4
  * // Or access via domain
  * const samePkg = pantry.aux4io
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "aux4"
+ * console.log(pkg.name)        // "aux4.io"
  * console.log(pkg.description) // "elevate your imagination"
  * console.log(pkg.programs)    // ["aux4"]
  * console.log(pkg.versions[0]) // "5.0.14" (latest)
@@ -31,7 +31,7 @@ export const aux4Package = {
   /**
    * The display name of this package.
    */
-  name: 'aux4' as const,
+  name: 'aux4.io' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -73,7 +73,9 @@ export const aux4Package = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'aux4',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aux4 -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install aux4' as const,
 }

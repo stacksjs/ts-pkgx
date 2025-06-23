@@ -52,7 +52,7 @@ This package depends on:
 
 These packages work well with termusic:
 
-- `yt-dlp.org`
+- [`yt-dlp.org`](../../yt-dlp.org/index.md) - Package not available
 
 ## Usage Examples
 

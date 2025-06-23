@@ -18,7 +18,7 @@
  * // Or access via domain
  * const samePkg = pantry.apacheorgaprutil
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "apu-{{ version.major }}-config"
+ * console.log(pkg.name)        // "apr-util"
  * console.log(pkg.description) // "Mirror of Apache Portable Runtime util"
  * console.log(pkg.programs)    // ["apu-{{ version.major }}-config"]
  * console.log(pkg.versions[0]) // "1.6.3" (latest)
@@ -31,7 +31,7 @@ export const apuPackage = {
   /**
    * The display name of this package.
    */
-  name: 'apu-{{ version.major }}-config' as const,
+  name: 'apr-util' as const,
   /**
    * The canonical domain name for this package.
    */

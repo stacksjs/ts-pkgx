@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install caddy`
- * @name `caddy`
+ * @aliases `caddy`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.caddy
  * // Or access via domain
  * const samePkg = pantry.caddyservercom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "caddy"
+ * console.log(pkg.name)        // "caddyserver.com"
  * console.log(pkg.description) // "Fast and extensible multi-platform HTTP/1-2-3 w..."
  * console.log(pkg.programs)    // ["caddy"]
  * console.log(pkg.versions[0]) // "2.10.0" (latest)
@@ -31,7 +31,7 @@ export const caddyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'caddy' as const,
+  name: 'caddyserver.com' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -77,7 +77,9 @@ export const caddyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'caddy',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) caddy -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install caddy' as const,
 }

@@ -2,10 +2,10 @@
  * **browser-use.com** - Make websites accessible for AI agents
  *
  * @domain `browser-use.com`
- * @version `0.3.2` (22 versions available)
+ * @version `0.3.1` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install browser-use.com`
+ * @install `launchpad install +browser-use.com`
  * @dependencies `python.org~3.12 # no torch<2.3.0 for 3.13`
  *
  * @example
@@ -15,7 +15,7 @@
  * const pkg = pantry.browserusecom
  * console.log(pkg.name)        // "browser-use.com"
  * console.log(pkg.description) // "Make websites accessible for AI agents"
- * console.log(pkg.versions[0]) // "0.3.2" (latest)
+ * console.log(pkg.versions[0]) // "0.3.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/browser-use-com.md
@@ -41,7 +41,7 @@ export const browserusecomPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install browser-use.com' as const,
+  installCommand: 'launchpad install +browser-use.com' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -56,7 +56,6 @@ export const browserusecomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
-    '0.3.2',
     '0.3.1',
     '0.3.0',
     '0.2.7',
@@ -81,7 +80,7 @@ export const browserusecomPackage = {
   ] as const,
   aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +browser-use.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install browser-use.com' as const,
+  launchpadInstallCommand: 'launchpad install +browser-use.com' as const,
 }
 
 export type BrowserusecomPackage = typeof browserusecomPackage

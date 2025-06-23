@@ -6,20 +6,20 @@
  * @version `1.4.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install borg`
- * @name `borg`
+ * @install `launchpad install +borgbackup.org`
+ * @aliases `borg`
  * @dependencies `pkgx.sh^1`, `github.com/Cyan4973/xxHash^0.8`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.borg
  * // Or access via domain
  * const samePkg = pantry.borgbackuporg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "borg"
+ * console.log(pkg.name)        // "borgbackup.org"
  * console.log(pkg.description) // "Deduplicating archiver with compression and aut..."
  * console.log(pkg.programs)    // ["borg", "borgfs"]
  * console.log(pkg.versions[0]) // "1.4.1" (latest)
@@ -32,7 +32,7 @@ export const borgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'borg' as const,
+  name: 'borgbackup.org' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const borgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install borg' as const,
+  installCommand: 'launchpad install +borgbackup.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,9 +77,11 @@ export const borgPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'borg',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +borgbackup.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install borg' as const,
+  launchpadInstallCommand: 'launchpad install +borgbackup.org' as const,
 }
 
 export type BorgPackage = typeof borgPackage

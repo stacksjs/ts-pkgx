@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install asciinema`
- * @name `asciinema`
+ * @aliases `asciinema`
  * @dependencies `python.org^3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.asciinema
  * // Or access via domain
  * const samePkg = pantry.asciinemaorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "asciinema"
+ * console.log(pkg.name)        // "asciinema.org"
  * console.log(pkg.description) // "Record and share terminal sessions"
  * console.log(pkg.programs)    // ["asciinema"]
  * console.log(pkg.versions[0]) // "2.4.0" (latest)
@@ -32,7 +32,7 @@ export const asciinemaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'asciinema' as const,
+  name: 'asciinema.org' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,7 +75,9 @@ export const asciinemaPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'asciinema',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) asciinema -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install asciinema' as const,
 }

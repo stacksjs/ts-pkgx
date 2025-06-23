@@ -1,11 +1,11 @@
-# node
+# nodejs.org
 
 > Platform built on V8 to build network applications
 
 ## Package Information
 
 - **Domain**: `nodejs.org`
-- **Name**: `node`
+- **Name**: `nodejs.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nodejs.org/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install node
 ## Programs
 
 This package provides the following executable programs:
+
+- `node`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `node`
 
@@ -78,7 +84,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with node:
+These packages work well with nodejs.org:
 
 - [`npmjs.com`](../npmjs.com/index.md) - the package manager for JavaScript
 

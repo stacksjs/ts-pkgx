@@ -54,7 +54,7 @@ This package depends on:
 
 These packages work well with apptainer.org:
 
-- `github.com/plougher/squashfs-tools`
+- [`github.com/plougher/squashfs-tools`](../github.com/plougher/squashfs-tools.md) - Package not available
 
 ## Usage Examples
 

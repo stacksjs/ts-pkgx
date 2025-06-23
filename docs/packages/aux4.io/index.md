@@ -1,11 +1,11 @@
-# aux4
+# aux4.io
 
 > elevate your imagination
 
 ## Package Information
 
 - **Domain**: `aux4.io`
-- **Name**: `aux4`
+- **Name**: `aux4.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aux4.io/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install aux4
 ## Programs
 
 This package provides the following executable programs:
+
+- `aux4`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `aux4`
 

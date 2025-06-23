@@ -1,11 +1,11 @@
-# astral.sh/uv
+# uv
 
 > An extremely fast Python package and project manager, written in Rust.
 
 ## Package Information
 
 - **Domain**: `astral.sh/uv`
-- **Name**: `astral.sh/uv`
+- **Name**: `uv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/astral.sh/uv/package.yml)
 
@@ -85,7 +85,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with astral.sh/uv:
+These packages work well with uv:
 
 - [`python.org`](../../python.org/index.md) - The Python programming language
 

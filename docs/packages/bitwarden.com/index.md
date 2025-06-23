@@ -1,11 +1,11 @@
-# bw
+# bitwarden.com
 
 > Secure and free password manager for all of your devices
 
 ## Package Information
 
 - **Domain**: `bitwarden.com`
-- **Name**: `bw`
+- **Name**: `bitwarden.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bitwarden.com/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install bw
 ## Programs
 
 This package provides the following executable programs:
+
+- `bw`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `bw`
 
@@ -56,7 +62,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.bitwardencom
+const pkg = pantry.bw
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

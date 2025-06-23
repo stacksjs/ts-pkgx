@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pack`
- * @name `pack`
+ * @aliases `pack`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.pack
  * // Or access via domain
  * const samePkg = pantry.buildpacksio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pack"
+ * console.log(pkg.name)        // "buildpacks.io"
  * console.log(pkg.description) // "CLI for building apps using Cloud Native Buildp..."
  * console.log(pkg.programs)    // ["pack"]
  * console.log(pkg.versions[0]) // "0.38.1" (latest)
@@ -31,7 +31,7 @@ export const packPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pack' as const,
+  name: 'buildpacks.io' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -81,7 +81,9 @@ export const packPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'pack',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pack -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install pack' as const,
 }

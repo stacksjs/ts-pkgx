@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install buf`
- * @name `buf`
+ * @aliases `buf`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.buf
  * // Or access via domain
  * const samePkg = pantry.bufbuild
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "buf"
+ * console.log(pkg.name)        // "buf.build"
  * console.log(pkg.description) // "The best way of working with Protocol Buffers."
  * console.log(pkg.programs)    // ["buf"]
  * console.log(pkg.versions[0]) // "1.55.1" (latest)
@@ -31,7 +31,7 @@ export const bufPackage = {
   /**
    * The display name of this package.
    */
-  name: 'buf' as const,
+  name: 'buf.build' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -110,7 +110,9 @@ export const bufPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'buf',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) buf -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install buf' as const,
 }

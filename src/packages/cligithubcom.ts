@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gh`
- * @name `gh`
+ * @aliases `gh`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.gh
  * // Or access via domain
  * const samePkg = pantry.cligithubcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gh"
+ * console.log(pkg.name)        // "cli.github.com"
  * console.log(pkg.description) // "GitHub’s official command line tool"
  * console.log(pkg.programs)    // ["gh"]
  * console.log(pkg.versions[0]) // "2.74.2" (latest)
@@ -31,7 +31,7 @@ export const ghPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gh' as const,
+  name: 'cli.github.com' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -145,7 +145,9 @@ export const ghPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'gh',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gh -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install gh' as const,
 }

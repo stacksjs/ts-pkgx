@@ -1,11 +1,11 @@
-# buf
+# buf.build
 
 > The best way of working with Protocol Buffers.
 
 ## Package Information
 
 - **Domain**: `buf.build`
-- **Name**: `buf`
+- **Name**: `buf.build`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/buf.build/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install buf
 ## Programs
 
 This package provides the following executable programs:
+
+- `buf`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `buf`
 

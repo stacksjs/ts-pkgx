@@ -1,11 +1,11 @@
-# Arkade
+# arkade.dev
 
 > Open Source Marketplace For Developer Tools
 
 ## Package Information
 
 - **Domain**: `arkade.dev`
-- **Name**: `Arkade`
+- **Name**: `arkade.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/arkade.dev/package.yml)
 
@@ -27,6 +27,7 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `arkade`
+- `Arkade`
 
 ## Available Versions
 

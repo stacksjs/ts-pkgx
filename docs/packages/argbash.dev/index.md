@@ -1,11 +1,11 @@
-# argbash
+# argbash.dev
 
 > Bash argument parsing code generator
 
 ## Package Information
 
 - **Domain**: `argbash.dev`
-- **Name**: `argbash`
+- **Name**: `argbash.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/argbash.dev/package.yml)
 
@@ -23,6 +23,12 @@ This package provides the following executable programs:
 - `argbash`
 - `argbash-init`
 - `argbash-1to2`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `argbash`
 
 ## Available Versions
 

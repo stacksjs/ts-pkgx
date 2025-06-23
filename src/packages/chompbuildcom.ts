@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install chomp`
- * @name `chomp`
+ * @aliases `chomp`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.chomp
  * // Or access via domain
  * const samePkg = pantry.chompbuildcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "chomp"
+ * console.log(pkg.name)        // "chompbuild.com"
  * console.log(pkg.description) // "'JS Make' - parallel task runner for the fronte..."
  * console.log(pkg.programs)    // ["chomp"]
  * console.log(pkg.versions[0]) // "0.2.23" (latest)
@@ -32,7 +32,7 @@ export const chompPackage = {
   /**
    * The display name of this package.
    */
-  name: 'chomp' as const,
+  name: 'chompbuild.com' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -75,7 +75,9 @@ export const chompPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'chomp',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) chomp -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install chomp' as const,
 }

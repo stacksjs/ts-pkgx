@@ -75,7 +75,7 @@ This package depends on:
 
 These packages work well with gnome.org/glib:
 
-- `gnome.org/gsettings-desktop-schemas`
+- [`gnome.org/gsettings-desktop-schemas`](../gsettings-desktop-schemas/index.md) - Package not available
 
 ## Usage Examples
 

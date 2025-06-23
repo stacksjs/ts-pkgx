@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gitql`
- * @name `gitql`
+ * @aliases `gitql`
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.gitql
  * // Or access via domain
  * const samePkg = pantry.amrdevelopergithubiogql
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gitql"
+ * console.log(pkg.name)        // "GQL"
  * console.log(pkg.description) // "GitQL is a extensible SQL-like query language a..."
  * console.log(pkg.programs)    // ["gitql"]
  * console.log(pkg.versions[0]) // "0.39.0" (latest)
@@ -32,7 +32,7 @@ export const gitqlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gitql' as const,
+  name: 'GQL' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -107,7 +107,9 @@ export const gitqlPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'gitql',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gitql -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install gitql' as const,
 }

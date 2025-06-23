@@ -1,11 +1,11 @@
-# aomenc
+# aom
 
 > Codec library for encoding and decoding AV1 video streams
 
 ## Package Information
 
 - **Domain**: `aomedia.googlesource.com/aom`
-- **Name**: `aomenc`
+- **Name**: `aom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aomedia.googlesource.com/aom/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install aomenc
+launchpad install aom
 ```
 
 ## Programs

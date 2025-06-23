@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cairo-trace`
- * @name `cairo-trace`
+ * @aliases `cairo-trace`
  * @dependencies `libpng.org@1`, `pixman.org^0.40.0`, `freetype.org@2`, ... (+8 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.cairotrace
  * // Or access via domain
  * const samePkg = pantry.cairographicsorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cairo-trace"
+ * console.log(pkg.name)        // "cairographics.org"
  * console.log(pkg.description) // "Vector graphics library with cross-device outpu..."
  * console.log(pkg.programs)    // ["cairo-trace"]
  * console.log(pkg.versions[0]) // "1.18.4" (latest)
@@ -32,7 +32,7 @@ export const cairotracePackage = {
   /**
    * The display name of this package.
    */
-  name: 'cairo-trace' as const,
+  name: 'cairographics.org' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -88,7 +88,9 @@ export const cairotracePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'cairo-trace',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cairo-trace -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install cairo-trace' as const,
 }

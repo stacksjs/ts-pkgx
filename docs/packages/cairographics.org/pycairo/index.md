@@ -1,11 +1,11 @@
-# cairographics.org/pycairo
+# pycairo
 
 > Python bindings for cairo
 
 ## Package Information
 
 - **Domain**: `cairographics.org/pycairo`
-- **Name**: `cairographics.org/pycairo`
+- **Name**: `pycairo`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cairographics.org/pycairo/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install cairographics.org/pycairo
+launchpad install +cairographics.org/pycairo
 ```
 
 ## Programs

@@ -50,8 +50,8 @@ This package depends on:
 
 These packages work well with joshuto:
 
-- `github.com/junegunn/fzf`
-- `crates.io/zoxide`
+- [`github.com/junegunn/fzf`](../../github.com/junegunn/fzf.md) - Package not available
+- [`crates.io/zoxide`](../zoxide/index.md) - Package not available
 
 ## Usage Examples
 

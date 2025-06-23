@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bore`
- * @name `bore`
+ * @aliases `bore`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.bore
  * // Or access via domain
  * const samePkg = pantry.borepub
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "bore"
+ * console.log(pkg.name)        // "bore.pub"
  * console.log(pkg.description) // "Modern, simple TCP tunnel in Rust that exposes ..."
  * console.log(pkg.programs)    // ["bore"]
  * console.log(pkg.versions[0]) // "0.6.0" (latest)
@@ -31,7 +31,7 @@ export const borePackage = {
   /**
    * The display name of this package.
    */
-  name: 'bore' as const,
+  name: 'bore.pub' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -72,7 +72,9 @@ export const borePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'bore',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bore -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install bore' as const,
 }

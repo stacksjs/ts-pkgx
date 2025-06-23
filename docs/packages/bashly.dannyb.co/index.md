@@ -1,11 +1,11 @@
-# bashly
+# bashly.dannyb.co
 
 > Bash command line framework and CLI generator
 
 ## Package Information
 
 - **Domain**: `bashly.dannyb.co`
-- **Name**: `bashly`
+- **Name**: `bashly.dannyb.co`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bashly.dannyb.co/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install bashly
 ## Programs
 
 This package provides the following executable programs:
+
+- `bashly`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `bashly`
 
@@ -51,9 +57,9 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with bashly:
+These packages work well with bashly.dannyb.co:
 
-- `gnu.org/bash`
+- [`gnu.org/bash`](../gnu.org/bash/index.md) - Package not available
 
 ## Usage Examples
 

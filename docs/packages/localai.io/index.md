@@ -57,7 +57,7 @@ This package depends on:
 
 These packages work well with local-ai:
 
-- `linux`
+- [`linux`](../linux.md) - Package not available
 
 ## Usage Examples
 

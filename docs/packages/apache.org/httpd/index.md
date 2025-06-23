@@ -1,11 +1,11 @@
-# apache.org/httpd
+# httpd
 
 > Apache HTTP server
 
 ## Package Information
 
 - **Domain**: `apache.org/httpd`
-- **Name**: `apache.org/httpd`
+- **Name**: `httpd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/httpd/package.yml)
 

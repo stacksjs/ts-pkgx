@@ -1,11 +1,11 @@
-# apache.org/arrow
+# arrow
 
 > Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics
 
 ## Package Information
 
 - **Domain**: `apache.org/arrow`
-- **Name**: `apache.org/arrow`
+- **Name**: `arrow`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/arrow/package.yml)
 

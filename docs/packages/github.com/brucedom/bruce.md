@@ -44,7 +44,7 @@ sh <(curl https://pkgx.sh) bruce -- $SHELL -i
 
 These packages work well with bruce:
 
-- `linux`
+- [`linux`](../../linux.md) - Package not available
 
 ## Usage Examples
 

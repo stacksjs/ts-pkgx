@@ -1,11 +1,11 @@
-# acorn
+# acorn-cli
 
 > A simple application deployment framework built on Kubernetes
 
 ## Package Information
 
 - **Domain**: `acorn.io/acorn-cli`
-- **Name**: `acorn`
+- **Name**: `acorn-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/acorn.io/acorn-cli/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install acorn
 ## Programs
 
 This package provides the following executable programs:
+
+- `acorn`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `acorn`
 

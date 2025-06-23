@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install acorn`
- * @name `acorn`
+ * @aliases `acorn`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.acorn
  * // Or access via domain
  * const samePkg = pantry.acornioacorncli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "acorn"
+ * console.log(pkg.name)        // "acorn-cli"
  * console.log(pkg.description) // "A simple application deployment framework built..."
  * console.log(pkg.programs)    // ["acorn"]
  * console.log(pkg.versions[0]) // "0.10.1" (latest)
@@ -31,7 +31,7 @@ export const acornPackage = {
   /**
    * The display name of this package.
    */
-  name: 'acorn' as const,
+  name: 'acorn-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -70,7 +70,9 @@ export const acornPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'acorn',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) acorn -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install acorn' as const,
 }

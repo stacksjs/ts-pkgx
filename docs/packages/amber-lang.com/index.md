@@ -1,11 +1,11 @@
-# amber
+# amber-lang.com
 
 > Crystal web framework. Bare metal performance, productivity and happiness
 
 ## Package Information
 
 - **Domain**: `amber-lang.com`
-- **Name**: `amber`
+- **Name**: `amber-lang.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/amber-lang.com/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install amber
 ## Programs
 
 This package provides the following executable programs:
+
+- `amber`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `amber`
 
@@ -43,13 +49,13 @@ sh <(curl https://pkgx.sh) amber -- $SHELL -i
 
 ## Related Packages
 
-These packages work well with amber:
+These packages work well with amber-lang.com:
 
-- `gnu.org/bc`
-- `gnu.org/sed`
-- `gnu.org/coreutils`
-- `gnu.org/gawk`
-- `gnu.org/bash`
+- [`gnu.org/bc`](../gnu.org/bc/index.md) - Package not available
+- [`gnu.org/sed`](../gnu.org/sed/index.md) - Package not available
+- [`gnu.org/coreutils`](../gnu.org/coreutils/index.md) - Package not available
+- [`gnu.org/gawk`](../gnu.org/gawk/index.md) - Package not available
+- [`gnu.org/bash`](../gnu.org/bash/index.md) - Package not available
 
 ## Usage Examples
 

@@ -45,9 +45,9 @@ sh <(curl https://pkgx.sh) spin -- $SHELL -i
 
 These packages work well with spin:
 
-- `rust-lang.org`
-- `rust-lang.org/cargo`
-- `git-scm.org`
+- [`rust-lang.org`](../../rust-lang.org/index.md) - Package not available
+- [`rust-lang.org/cargo`](../../rust-lang.org/cargo/index.md) - Package not available
+- [`git-scm.org`](../../git-scm.org/index.md) - Package not available
 
 ## Usage Examples
 

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cstool`
- * @name `cstool`
+ * @aliases `cstool`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.cstool
  * // Or access via domain
  * const samePkg = pantry.capstoneengineorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cstool"
+ * console.log(pkg.name)        // "capstone-engine.org"
  * console.log(pkg.description) // "Capstone disassembly/disassembler framework for..."
  * console.log(pkg.programs)    // ["cstool"]
  * console.log(pkg.versions[0]) // "5.0.6" (latest)
@@ -31,7 +31,7 @@ export const cstoolPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cstool' as const,
+  name: 'capstone-engine.org' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -74,7 +74,9 @@ export const cstoolPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'cstool',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cstool -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install cstool' as const,
 }

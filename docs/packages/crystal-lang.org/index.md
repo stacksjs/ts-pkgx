@@ -62,7 +62,7 @@ This package depends on:
 
 These packages work well with crystal:
 
-- `crystal-lang.org/shards`
+- [`crystal-lang.org/shards`](shards/index.md) - Package not available
 
 ## Usage Examples
 

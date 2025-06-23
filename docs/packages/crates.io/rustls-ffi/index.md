@@ -45,7 +45,7 @@ sh <(curl https://pkgx.sh) +crates.io/rustls-ffi@0.15.0 -- $SHELL -i
 
 These packages work well with crates.io/rustls-ffi:
 
-- `curl.se/ca-certs`
+- [`curl.se/ca-certs`](../../curl.se/ca-certs/index.md) - Package not available
 
 ## Usage Examples
 

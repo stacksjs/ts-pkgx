@@ -44,7 +44,7 @@ sh <(curl https://pkgx.sh) rye-uv -- $SHELL -i
 
 These packages work well with rye-uv:
 
-- `astral.sh/uv`
+- [`astral.sh/uv`](../../astral.sh/uv/index.md) - Package not available
 
 ## Usage Examples
 

@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install atlas`
- * @name `atlas`
+ * @aliases `atlas`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.atlas
  * // Or access via domain
  * const samePkg = pantry.atlasgoio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "atlas"
+ * console.log(pkg.name)        // "atlasgo.io"
  * console.log(pkg.description) // "Manage your database schema as code"
  * console.log(pkg.programs)    // ["atlas"]
  * console.log(pkg.versions[0]) // "0.35.0" (latest)
@@ -31,7 +31,7 @@ export const atlasPackage = {
   /**
    * The display name of this package.
    */
-  name: 'atlas' as const,
+  name: 'atlasgo.io' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -89,7 +89,9 @@ export const atlasPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'atlas',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) atlas -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install atlas' as const,
 }

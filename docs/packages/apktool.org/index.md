@@ -1,11 +1,11 @@
-# apktool
+# apktool.org
 
 > Tool for reverse engineering 3rd party, closed, binary Android apps
 
 ## Package Information
 
 - **Domain**: `apktool.org`
-- **Name**: `apktool`
+- **Name**: `apktool.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apktool.org/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install apktool
 ## Programs
 
 This package provides the following executable programs:
+
+- `apktool`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `apktool`
 

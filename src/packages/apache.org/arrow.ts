@@ -1,5 +1,5 @@
 /**
- * **apache.org/arrow** - Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics
+ * **arrow** - Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics
  *
  * @domain `apache.org/arrow`
  * @programs `parquet-dump-schema`, `parquet-reader`, `parquet-scan`
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.apacheorgarrow
- * console.log(pkg.name)        // "apache.org/arrow"
+ * console.log(pkg.name)        // "arrow"
  * console.log(pkg.description) // "Apache Arrow is the universal columnar format a..."
  * console.log(pkg.programs)    // ["parquet-dump-schema", "parquet-reader", ...]
  * console.log(pkg.versions[0]) // "20.0.0" (latest)
@@ -27,7 +27,7 @@ export const apacheorgarrowPackage = {
   /**
    * The display name of this package.
    */
-  name: 'apache.org/arrow' as const,
+  name: 'arrow' as const,
   /**
    * The canonical domain name for this package.
    */

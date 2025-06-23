@@ -59,7 +59,7 @@ This package depends on:
 
 These packages work well with po4a.org:
 
-- `PERL5LIB^${{prefix}}/libexec/lib/perl5:$PERL5LIB`
+- [`PERL5LIB^${{prefix}}/libexec/lib/perl5:$PERL5LIB`](../perl5lib-prefix-libexec.md) - Package not available
 
 ## Usage Examples
 

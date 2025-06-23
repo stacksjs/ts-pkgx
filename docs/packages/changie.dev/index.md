@@ -1,11 +1,11 @@
-# changie
+# changie.dev
 
 > Automated changelog tool for preparing releases with lots of customization options
 
 ## Package Information
 
 - **Domain**: `changie.dev`
-- **Name**: `changie`
+- **Name**: `changie.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/changie.dev/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install changie
 ## Programs
 
 This package provides the following executable programs:
+
+- `changie`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `changie`
 

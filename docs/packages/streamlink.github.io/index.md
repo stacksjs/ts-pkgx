@@ -1,11 +1,11 @@
-# streamlink
+# streamlink.github.io
 
 > Streamlink is a CLI utility which pipes video streams from various services into a video player
 
 ## Package Information
 
 - **Domain**: `streamlink.github.io`
-- **Name**: `streamlink`
+- **Name**: `streamlink.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/streamlink.github.io/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install streamlink
 ## Programs
 
 This package provides the following executable programs:
+
+- `streamlink`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `streamlink`
 
@@ -51,7 +57,7 @@ This package depends on:
 
 ## Related Packages
 
-These packages work well with streamlink:
+These packages work well with streamlink.github.io:
 
 - [`ffmpeg.org`](../ffmpeg.org/index.md) - Play, record, convert, and stream audio and video
 

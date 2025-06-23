@@ -1,5 +1,5 @@
 /**
- * **apache.org/httpd** - Apache HTTP server
+ * **httpd** - Apache HTTP server
  *
  * @domain `apache.org/httpd`
  * @programs `ab`, `apachectl`, `checkgid`, `fcgistarter`, `htcacheclean`, ... (+8 more)
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.apacheorghttpd
- * console.log(pkg.name)        // "apache.org/httpd"
+ * console.log(pkg.name)        // "httpd"
  * console.log(pkg.description) // "Apache HTTP server"
  * console.log(pkg.programs)    // ["ab", "apachectl", ...]
  * console.log(pkg.versions[0]) // "2.4.63" (latest)
@@ -27,7 +27,7 @@ export const apacheorghttpdPackage = {
   /**
    * The display name of this package.
    */
-  name: 'apache.org/httpd' as const,
+  name: 'httpd' as const,
   /**
    * The canonical domain name for this package.
    */

@@ -57,7 +57,7 @@ This package depends on:
 
 These packages work well with projen:
 
-- `git-scm.org`
+- [`git-scm.org`](../git-scm.org/index.md) - Package not available
 - [`classic.yarnpkg.com`](../classic.yarnpkg.com/index.md) - The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
 - [`maven.apache.org`](../maven.apache.org/index.md) - Java-based project management
 - [`python.org`](../python.org/index.md) - The Python programming language

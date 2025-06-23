@@ -1,11 +1,11 @@
-# bun
+# bun.sh
 
 > Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
 
 ## Package Information
 
 - **Domain**: `bun.sh`
-- **Name**: `bun`
+- **Name**: `bun.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bun.sh/package.yml)
 
@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `bun`
 - `bunx`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `bun`
 
 ## Available Versions
 

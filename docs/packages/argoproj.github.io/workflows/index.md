@@ -1,11 +1,11 @@
-# argo-workflows
+# workflows
 
 > Get stuff done with container-native workflows for Kubernetes
 
 ## Package Information
 
 - **Domain**: `argoproj.github.io/workflows`
-- **Name**: `argo-workflows`
+- **Name**: `workflows`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/argoproj.github.io/workflows/package.yml)
 
@@ -27,6 +27,7 @@ This package provides the following executable programs:
 This package can also be accessed using these aliases:
 
 - `argo`
+- `argo-workflows`
 
 ## Available Versions
 

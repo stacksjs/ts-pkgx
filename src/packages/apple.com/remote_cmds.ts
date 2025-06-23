@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install telnet`
- * @name `telnet`
+ * @aliases `telnet`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.telnet
  * // Or access via domain
  * const samePkg = pantry.applecomremote_cmds
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "telnet"
+ * console.log(pkg.name)        // "remote_cmds"
  * console.log(pkg.programs)    // ["telnet"]
  * console.log(pkg.versions[0]) // "306.0.0" (latest)
  * ```
@@ -30,7 +30,7 @@ export const telnetPackage = {
   /**
    * The display name of this package.
    */
-  name: 'telnet' as const,
+  name: 'remote_cmds' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -71,7 +71,9 @@ export const telnetPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'telnet',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) telnet -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install telnet' as const,
 }

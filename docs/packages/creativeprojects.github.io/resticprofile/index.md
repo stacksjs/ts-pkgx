@@ -45,7 +45,7 @@ sh <(curl https://pkgx.sh) resticprofile -- $SHELL -i
 
 These packages work well with resticprofile:
 
-- `restic.net/restic`
+- [`restic.net/restic`](../../restic.net/restic/index.md) - Package not available
 
 ## Usage Examples
 

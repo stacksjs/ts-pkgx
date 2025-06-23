@@ -1,11 +1,11 @@
-# carapace
+# carapace.sh
 
 > Multi-shell multi-command argument completer
 
 ## Package Information
 
 - **Domain**: `carapace.sh`
-- **Name**: `carapace`
+- **Name**: `carapace.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/carapace.sh/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install carapace
 ## Programs
 
 This package provides the following executable programs:
+
+- `carapace`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `carapace`
 

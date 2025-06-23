@@ -7,19 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install alacritty`
- * @name `alacritty`
+ * @aliases `alacritty`
  * @dependencies `linux:freetype.org`, `linux:freedesktop.org/fontconfig` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.alacritty
  * // Or access via domain
  * const samePkg = pantry.alacrittyorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "alacritty"
+ * console.log(pkg.name)        // "alacritty.org"
  * console.log(pkg.description) // "A cross-platform, OpenGL terminal emulator."
  * console.log(pkg.programs)    // ["alacritty"]
  * console.log(pkg.versions[0]) // "0.15.1" (latest)
@@ -32,7 +32,7 @@ export const alacrittyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'alacritty' as const,
+  name: 'alacritty.org' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -80,7 +80,9 @@ export const alacrittyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'alacritty',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) alacritty -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install alacritty' as const,
 }

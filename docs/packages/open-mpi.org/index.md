@@ -64,8 +64,8 @@ This package depends on:
 
 These packages work well with open-mpi.org:
 
-- `OMPI_F77FLAGS^$FCFLAGS -I{{prefix}}/include`
-- `OMPI_F90FLAGS^$FCFLAGS -I{{prefix}}/include`
+- [`OMPI_F77FLAGS^$FCFLAGS -I{{prefix}}/include`](../ompi_f77flags-fcflags-i-prefix-include.md) - Package not available
+- [`OMPI_F90FLAGS^$FCFLAGS -I{{prefix}}/include`](../ompi_f90flags-fcflags-i-prefix-include.md) - Package not available
 
 ## Usage Examples
 

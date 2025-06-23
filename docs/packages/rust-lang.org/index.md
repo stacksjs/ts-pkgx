@@ -65,8 +65,8 @@ This package depends on:
 
 These packages work well with rust:
 
-- `rust-lang.org/cargo`
-- `linux`
+- [`rust-lang.org/cargo`](cargo/index.md) - Package not available
+- [`linux`](../linux.md) - Package not available
 
 ## Usage Examples
 

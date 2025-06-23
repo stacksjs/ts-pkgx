@@ -1,11 +1,11 @@
-# asciinema
+# asciinema.org
 
 > Record and share terminal sessions
 
 ## Package Information
 
 - **Domain**: `asciinema.org`
-- **Name**: `asciinema`
+- **Name**: `asciinema.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/asciinema.org/package.yml)
 
@@ -19,6 +19,12 @@ launchpad install asciinema
 ## Programs
 
 This package provides the following executable programs:
+
+- `asciinema`
+
+## Aliases
+
+This package can also be accessed using these aliases:
 
 - `asciinema`
 

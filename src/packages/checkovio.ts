@@ -3,26 +3,26 @@
  *
  * @domain `checkov.io`
  * @programs `checkov`
- * @version `3.2.445` (480 versions available)
+ * @version `3.2.443` (478 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install checkov`
- * @name `checkov`
+ * @aliases `checkov`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.checkov
  * // Or access via domain
  * const samePkg = pantry.checkovio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "checkov"
+ * console.log(pkg.name)        // "checkov.io"
  * console.log(pkg.description) // "Prevent cloud misconfigurations and find vulner..."
  * console.log(pkg.programs)    // ["checkov"]
- * console.log(pkg.versions[0]) // "3.2.445" (latest)
+ * console.log(pkg.versions[0]) // "3.2.443" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/checkov-io.md
@@ -32,7 +32,7 @@ export const checkovPackage = {
   /**
    * The display name of this package.
    */
-  name: 'checkov' as const,
+  name: 'checkov.io' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -69,8 +69,6 @@ export const checkovPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
-    '3.2.445',
-    '3.2.444',
     '3.2.443',
     '3.2.442',
     '3.2.441',
@@ -554,7 +552,9 @@ export const checkovPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'checkov',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) checkov -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install checkov' as const,
 }

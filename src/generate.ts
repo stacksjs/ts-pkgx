@@ -2241,6 +2241,7 @@ These packages work well with ${pkg.name || domain}:
         pkg.companions.forEach((companion) => {
           const companionVarName = convertDomainToVarName(companion)
           const companionPkg = pantry[companionVarName]
+
           if (companionPkg && !shouldExcludePackage(companionPkg)) {
             // Calculate the companion file path using the same logic as main generation
             const companionFilePath = calculatePackageFilePath(companion, companionVarName, packagesDir)
@@ -2252,7 +2253,14 @@ These packages work well with ${pkg.name || domain}:
             content += `- [\`${companion}\`](${companionLinkPath}) - ${companionPkg.description}\n`
           }
           else {
-            content += `- \`${companion}\`\n`
+            // For excluded or missing packages, still create a proper markdown link
+            // Calculate what the file path would be if the package existed
+            const companionFilePath = calculatePackageFilePath(companion, companionVarName, packagesDir)
+            const companionLinkPath = path.relative(path.dirname(filepath), companionFilePath)
+              .replace(/\\/g, '/') // Normalize path separators for web
+
+            const description = companionPkg ? companionPkg.description : 'Package not available'
+            content += `- [\`${companion}\`](${companionLinkPath}) - ${description}\n`
           }
         })
       }

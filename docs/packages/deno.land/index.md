@@ -70,7 +70,7 @@ sh <(curl https://pkgx.sh) deno -- $SHELL -i
 
 These packages work well with deno:
 
-- `info-zip.org/unzip`
+- [`info-zip.org/unzip`](../info-zip.org/unzip/index.md) - Package not available
 
 ## Usage Examples
 

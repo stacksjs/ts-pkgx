@@ -3,25 +3,25 @@
  *
  * @domain `chezmoi.io`
  * @programs `chezmoi`
- * @version `2.62.7` (77 versions available)
+ * @version `2.62.6` (76 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install chezmoi`
- * @name `chezmoi`
+ * @aliases `chezmoi`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.chezmoi
  * // Or access via domain
  * const samePkg = pantry.chezmoiio
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "chezmoi"
+ * console.log(pkg.name)        // "chezmoi.io"
  * console.log(pkg.description) // "Manage your dotfiles across multiple diverse ma..."
  * console.log(pkg.programs)    // ["chezmoi"]
- * console.log(pkg.versions[0]) // "2.62.7" (latest)
+ * console.log(pkg.versions[0]) // "2.62.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/chezmoi-io.md
@@ -31,7 +31,7 @@ export const chezmoiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'chezmoi' as const,
+  name: 'chezmoi.io' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -62,7 +62,6 @@ export const chezmoiPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
-    '2.62.7',
     '2.62.6',
     '2.62.5',
     '2.62.4',
@@ -144,7 +143,9 @@ export const chezmoiPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'chezmoi',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) chezmoi -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install chezmoi' as const,
 }

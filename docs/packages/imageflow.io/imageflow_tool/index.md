@@ -50,8 +50,8 @@ This package depends on:
 
 These packages work well with imageflow_tool:
 
-- `info-zip.org/zip`
-- `kornel.ski/dssim`
+- [`info-zip.org/zip`](../../info-zip.org/zip/index.md) - Package not available
+- [`kornel.ski/dssim`](../../kornel.ski/dssim/index.md) - Package not available
 
 ## Usage Examples
 

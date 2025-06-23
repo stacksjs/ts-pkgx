@@ -1,5 +1,5 @@
 /**
- * **astral.sh/uv** - An extremely fast Python package and project manager, written in Rust.
+ * **uv** - An extremely fast Python package and project manager, written in Rust.
  *
  * @domain `astral.sh/uv`
  * @programs `uv`, `uvx`
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.astralshuv
- * console.log(pkg.name)        // "astral.sh/uv"
+ * console.log(pkg.name)        // "uv"
  * console.log(pkg.description) // "An extremely fast Python package and project ma..."
  * console.log(pkg.programs)    // ["uv", "uvx"]
  * console.log(pkg.versions[0]) // "0.7.13" (latest)
@@ -28,7 +28,7 @@ export const astralshuvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'astral.sh/uv' as const,
+  name: 'uv' as const,
   /**
    * The canonical domain name for this package.
    */

@@ -1,11 +1,11 @@
-# catb.org/wumpus
+# wumpus
 
 > Exact clone of the ancient BASIC Hunt the Wumpus game
 
 ## Package Information
 
 - **Domain**: `catb.org/wumpus`
-- **Name**: `catb.org/wumpus`
+- **Name**: `wumpus`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/catb.org/wumpus/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install catb.org/wumpus
+launchpad install +catb.org/wumpus
 ```
 
 ## Programs

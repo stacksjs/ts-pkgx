@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bashly`
- * @name `bashly`
+ * @aliases `bashly`
  * @dependencies `ruby-lang.org^3.1`, `rubygems.org`
  * @companions `gnu.org/bash`
  *
@@ -15,12 +15,12 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.bashly
  * // Or access via domain
  * const samePkg = pantry.bashlydannybco
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "bashly"
+ * console.log(pkg.name)        // "bashly.dannyb.co"
  * console.log(pkg.description) // "Bash command line framework and CLI generator"
  * console.log(pkg.programs)    // ["bashly"]
  * console.log(pkg.versions[0]) // "1.2.12" (latest)
@@ -33,7 +33,7 @@ export const bashlyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'bashly' as const,
+  name: 'bashly.dannyb.co' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -96,7 +96,9 @@ export const bashlyPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'bashly',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bashly -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install bashly' as const,
 }

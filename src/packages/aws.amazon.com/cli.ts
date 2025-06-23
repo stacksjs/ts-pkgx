@@ -7,8 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aws`
- * @name `aws/cli`
- * @aliases `aws`
+ * @aliases `aws`, `aws/cli`
  * @dependencies `sourceware.org/libffi^3`, `pkgx.sh^1`
  *
  * @example
@@ -20,7 +19,7 @@
  * // Or access via domain
  * const samePkg = pantry.awsamazoncomcli
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "aws/cli"
+ * console.log(pkg.name)        // "cli"
  * console.log(pkg.description) // "Universal Command Line Interface for Amazon Web..."
  * console.log(pkg.programs)    // ["aws"]
  * console.log(pkg.versions[0]) // "2.27.40" (latest)
@@ -33,7 +32,7 @@ export const awsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'aws/cli' as const,
+  name: 'cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -1007,6 +1006,7 @@ export const awsPackage = {
    */
   aliases: [
     'aws',
+    'aws/cli',
   ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aws -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install aws' as const,

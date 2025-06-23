@@ -7,18 +7,18 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install biome`
- * @name `biome`
+ * @aliases `biome`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.biome
  * // Or access via domain
  * const samePkg = pantry.biomejsdev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "biome"
+ * console.log(pkg.name)        // "biomejs.dev"
  * console.log(pkg.description) // "A toolchain for web projects, aimed to provide ..."
  * console.log(pkg.programs)    // ["biome"]
  * console.log(pkg.versions[0]) // "1.9.4" (latest)
@@ -31,7 +31,7 @@ export const biomePackage = {
   /**
    * The display name of this package.
    */
-  name: 'biome' as const,
+  name: 'biomejs.dev' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -95,7 +95,9 @@ export const biomePackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'biome',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) biome -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install biome' as const,
 }
