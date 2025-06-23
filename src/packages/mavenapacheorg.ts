@@ -3,7 +3,7 @@
  *
  * @domain `maven.apache.org`
  * @programs `mvn`, `mvnDebug`, `mvnyjp`
- * @version `3.9.10` (10 versions available)
+ * @version `3.9.10` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mvn`
@@ -79,6 +79,7 @@ export const mvnPackage = {
     '3.9.5',
     '3.9.4',
     '3.9.3',
+    '3.8.9',
     '3.8.7',
     '3.6.3',
   ] as const,
