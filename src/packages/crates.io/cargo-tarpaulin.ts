@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/cargo-tarpaulin`
  * @programs `cargo-tarpaulin`
- * @version `0.32.8` (11 versions available)
+ * @version `0.32.7` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cargo-tarpaulin`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "cargo-tarpaulin"
  * console.log(pkg.description) // "A code coverage tool for Rust projects"
  * console.log(pkg.programs)    // ["cargo-tarpaulin"]
- * console.log(pkg.versions[0]) // "0.32.8" (latest)
+ * console.log(pkg.versions[0]) // "0.32.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/cargo-tarpaulin.md
@@ -69,7 +69,6 @@ export const cargotarpaulinPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
-    '0.32.8',
     '0.32.7',
     '0.32.6',
     '0.32.5',
