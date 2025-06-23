@@ -52,7 +52,7 @@ sh <(curl https://pkgx.sh) +chiark.greenend.org.uk/putty@0.83.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.putty
+const pkg = pantry['chiark.greenend.org.uk/putty']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

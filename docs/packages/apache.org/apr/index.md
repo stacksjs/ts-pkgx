@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +apache.org/apr@1.7.6 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.apr
+const pkg = pantry['apache.org/apr']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

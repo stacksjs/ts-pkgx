@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1421+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1397+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1421
+- **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-06-23T03:13:30.232Z
+- **Last Updated**: 2025-06-23T03:54:55.562Z
 
 ## Table of Contents
 
@@ -38,7 +38,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [Scientific Computing](#scientific-computing) (0 packages)
 - [Embedded & IoT](#embedded-iot) (0 packages)
 - [Version Control](#version-control) (0 packages)
-- [Other Utilities](#other-utilities) (1421 packages)
+- [Other Utilities](#other-utilities) (1397 packages)
 
 ## Programming Languages
 

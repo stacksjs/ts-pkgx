@@ -61,7 +61,7 @@ sh <(curl https://pkgx.sh) gh -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cligithubcom
+const pkg = pantry.gh
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

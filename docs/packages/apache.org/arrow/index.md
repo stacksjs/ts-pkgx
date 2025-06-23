@@ -71,7 +71,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.arrow
+const pkg = pantry['apache.org/arrow']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

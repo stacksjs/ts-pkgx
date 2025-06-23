@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +blake2.net/libb2@0.98.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libb2
+const pkg = pantry['blake2.net/libb2']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

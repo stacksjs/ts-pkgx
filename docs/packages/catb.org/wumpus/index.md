@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) +catb.org/wumpus@1.10.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.wumpus
+const pkg = pantry['catb.org/wumpus']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

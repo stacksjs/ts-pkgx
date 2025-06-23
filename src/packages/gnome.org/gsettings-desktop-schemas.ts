@@ -32,7 +32,7 @@ export const gnomeorggsettingsdesktopschemasPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Shared GSettings schemas for the GNOME desktop' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/gsettings-desktop-schemas/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

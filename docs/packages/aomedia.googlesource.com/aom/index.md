@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) +aomedia.googlesource.com/aom@3.12.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.aom
+const pkg = pantry.aomenc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
