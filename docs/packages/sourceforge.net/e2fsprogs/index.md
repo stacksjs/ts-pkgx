@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.e2fsprogs
+const pkg = pantry['sf.net/e2fsprogs']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

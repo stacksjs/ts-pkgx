@@ -69,7 +69,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.btrfs_progs
+const pkg = pantry['github.com/kdave/btrfs-progs']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

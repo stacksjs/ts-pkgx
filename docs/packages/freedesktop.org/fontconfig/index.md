@@ -64,7 +64,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.fontconfig
+const pkg = pantry['freedesktop.org/fontconfig']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

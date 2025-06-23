@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) docker-credential-ecr-login -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.docker-credential-ecr-login
+const pkg = pantry['docker-credential-ecr-login']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

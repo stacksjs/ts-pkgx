@@ -51,19 +51,13 @@ This package depends on:
 - `perl.org>=5`
 - `python.org@3`
 
-## Related Packages
-
-These packages work well with github.com/linux-test-project/lcov:
-
-- [`PERL5LIB^${{prefix}}/lib/perl5`](../../perl5lib-prefix-lib.md) - Package not available
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.lcov
+const pkg = pantry['github.com/linux-test-project/lcov']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

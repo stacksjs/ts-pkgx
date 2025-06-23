@@ -51,7 +51,7 @@ sh <(curl https://pkgx.sh) tree-sitter -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.tree-sitter
+const pkg = pantry['tree-sitter']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

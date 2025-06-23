@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +github.com/nemtrif/utfcpp@4.0.6 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.utfcpp
+const pkg = pantry.utf8cpp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

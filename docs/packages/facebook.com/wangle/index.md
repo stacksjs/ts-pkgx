@@ -85,7 +85,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.wangle
+const pkg = pantry['facebook.com/wangle']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

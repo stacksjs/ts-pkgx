@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +smartmontools.org@7.5.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.smartmontoolsorg
+const pkg = pantry['smartmontools.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

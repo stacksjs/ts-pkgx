@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/zsh-users/zsh-autosuggestions@0.7.1 -- $S
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.zsh_autosuggestions
+const pkg = pantry['github.com/zsh-users/zsh-autosuggestions']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

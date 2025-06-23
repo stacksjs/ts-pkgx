@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.youtube-dl
+const pkg = pantry['youtube-dl']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

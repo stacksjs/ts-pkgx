@@ -90,7 +90,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cdk
+const pkg = pantry['aws/cdk']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

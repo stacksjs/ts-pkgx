@@ -62,7 +62,7 @@ sh <(curl https://pkgx.sh) +cr.yp.to/daemontools@0.76.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.daemontools
+const pkg = pantry['cr.yp.to/daemontools']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

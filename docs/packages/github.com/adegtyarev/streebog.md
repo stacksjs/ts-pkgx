@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) gost3411-2012 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.streebog
+const pkg = pantry['gost3411-2012']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

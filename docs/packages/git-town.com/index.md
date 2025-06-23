@@ -56,7 +56,7 @@ sh <(curl https://pkgx.sh) git-town -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.git-town
+const pkg = pantry['git-town']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

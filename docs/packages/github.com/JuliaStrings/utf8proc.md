@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/JuliaStrings/utf8proc@2.10.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.utf8proc
+const pkg = pantry['github.com/JuliaStrings/utf8proc']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) fusermount3 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libfuse
+const pkg = pantry.fusermount3
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

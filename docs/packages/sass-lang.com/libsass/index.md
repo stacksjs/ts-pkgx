@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +sass-lang.com/libsass@3.6.6 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libsass
+const pkg = pantry['sass-lang.com/libsass']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

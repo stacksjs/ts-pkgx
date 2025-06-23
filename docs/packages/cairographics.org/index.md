@@ -62,7 +62,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cairo-trace
+const pkg = pantry['cairo-trace']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -51,7 +51,7 @@ sh <(curl https://pkgx.sh) +github.com/KarypisLab/GKlib@5.1.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.GKlib
+const pkg = pantry['github.com/KarypisLab/GKlib']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

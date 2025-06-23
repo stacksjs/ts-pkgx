@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +github.com/deepmap/oapi-codegen@2.4.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.oapi_codegen
+const pkg = pantry['github.com/deepmap/oapi-codegen']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

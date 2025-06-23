@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/sekrit-twc/zimg@3.0.5 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.zimg
+const pkg = pantry['github.com/sekrit-twc/zimg']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

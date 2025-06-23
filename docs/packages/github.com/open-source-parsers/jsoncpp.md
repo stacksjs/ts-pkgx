@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/open-source-parsers/jsoncpp@1.9.6 -- $SHE
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.jsoncpp
+const pkg = pantry['github.com/open-source-parsers/jsoncpp']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

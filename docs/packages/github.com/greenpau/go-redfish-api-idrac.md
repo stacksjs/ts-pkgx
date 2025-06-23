@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) go-redfish-api-idrac-client -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.go_redfish_api_idrac
+const pkg = pantry['go-redfish-api-idrac-client']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -73,7 +73,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.expect
+const pkg = pantry['tcl-lang.org/expect']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

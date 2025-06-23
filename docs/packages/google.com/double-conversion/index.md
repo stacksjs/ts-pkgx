@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +google.com/double-conversion@3.3.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.double_conversion
+const pkg = pantry['google.com/double-conversion']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

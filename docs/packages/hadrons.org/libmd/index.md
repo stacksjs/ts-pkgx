@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +hadrons.org/libmd@1.1.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libmd
+const pkg = pantry['hadrons.org/libmd']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

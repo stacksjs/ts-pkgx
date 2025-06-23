@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) ios-deploy -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.ios-deploy
+const pkg = pantry['ios-deploy']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +rpm.org/popt@1.19.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.popt
+const pkg = pantry['rpm.org/popt']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

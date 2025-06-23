@@ -57,12 +57,6 @@ This package depends on:
 - `github.com/containers/gvisor-tap-vsock`
 - `darwin:github.com/crc-org/vfkit`
 
-## Related Packages
-
-These packages work well with podman:
-
-- [`openssh.com`](../openssh.com/index.md) - 
-
 ## Usage Examples
 
 ```typescript

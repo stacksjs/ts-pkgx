@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) +gnu.org/findutils@4.10.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.findutils
+const pkg = pantry['gnu.org/findutils']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

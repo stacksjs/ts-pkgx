@@ -51,7 +51,7 @@ sh <(curl https://pkgx.sh) +qhull.org@8.0.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.qhullorg
+const pkg = pantry['qhull.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

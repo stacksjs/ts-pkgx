@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) eks-node-viewer -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.eks-node-viewer
+const pkg = pantry['eks-node-viewer']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

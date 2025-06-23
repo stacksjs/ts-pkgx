@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) docker-machine -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.machine
+const pkg = pantry['docker-machine']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

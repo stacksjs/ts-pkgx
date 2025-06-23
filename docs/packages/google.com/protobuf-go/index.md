@@ -54,7 +54,7 @@ These packages work well with protoc-gen-go:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.protobuf_go
+const pkg = pantry['protoc-gen-go']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -47,19 +47,13 @@ This package depends on:
 
 - `perl.org^5`
 
-## Related Packages
-
-These packages work well with github.com/AlDanial/cloc:
-
-- [`PERL5LIB^$PERL5LIB:{{prefix}}/lib/perl5`](../../perl5lib-perl5lib-prefix-lib.md) - Package not available
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cloc
+const pkg = pantry['github.com/AlDanial/cloc']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

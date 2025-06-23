@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +zlib.net@1.3.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.zlibnet
+const pkg = pantry['zlib.net']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

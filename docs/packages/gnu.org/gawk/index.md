@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) +gnu.org/gawk@5.3.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.gawk
+const pkg = pantry['gnu.org/gawk']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

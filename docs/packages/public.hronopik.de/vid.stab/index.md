@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +public.hronopik.de/vid.stab@1.1.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.vid_stab
+const pkg = pantry['public.hronopik.de/vid.stab']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) imessage-exporter -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.imessage-exporter
+const pkg = pantry['imessage-exporter']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

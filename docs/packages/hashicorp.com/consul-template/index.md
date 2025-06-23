@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) consul-template -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.consul-template
+const pkg = pantry['consul-template']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

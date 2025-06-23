@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +rapidjson.org@1.1.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.rapidjsonorg
+const pkg = pantry['rapidjson.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

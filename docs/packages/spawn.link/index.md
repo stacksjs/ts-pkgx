@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) +spawn.link@2.40.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.spawnlink
+const pkg = pantry['spawn.link']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

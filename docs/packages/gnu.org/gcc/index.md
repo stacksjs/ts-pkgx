@@ -74,7 +74,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.gcc
+const pkg = pantry['gnu.org/gcc']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

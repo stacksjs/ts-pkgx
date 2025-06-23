@@ -70,7 +70,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.wimlibnet
+const pkg = pantry['wimlib.net']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

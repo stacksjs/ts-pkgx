@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) go-md2man -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.go-md2man
+const pkg = pantry['go-md2man']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

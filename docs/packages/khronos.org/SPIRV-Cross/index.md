@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) spirv-cross -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.SPIRV_Cross
+const pkg = pantry['spirv-cross']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

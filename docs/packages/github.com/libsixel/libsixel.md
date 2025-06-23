@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libsixel
+const pkg = pantry['github.com/libsixel/libsixel']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -58,7 +58,7 @@ sh <(curl https://pkgx.sh) +gnu.org/binutils@2.44.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.binutils
+const pkg = pantry['gnu.org/binutils']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

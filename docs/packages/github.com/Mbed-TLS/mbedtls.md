@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) generic_sum -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.mbedtls
+const pkg = pantry.generic_sum
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -56,7 +56,7 @@ sh <(curl https://pkgx.sh) golangci-lint -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.golangci-lint
+const pkg = pantry['golangci-lint']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

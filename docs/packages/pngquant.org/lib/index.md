@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +pngquant.org/lib@4.3.4 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.lib
+const pkg = pantry.libimagequant
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

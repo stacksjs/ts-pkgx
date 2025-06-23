@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) +github.com/Cyan4973/xxHash@0.8.3 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.xxHash
+const pkg = pantry.xxhsum
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

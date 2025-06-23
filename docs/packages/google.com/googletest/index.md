@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +google.com/googletest@1.17.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.googletest
+const pkg = pantry['google.com/googletest']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

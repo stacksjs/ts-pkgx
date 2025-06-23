@@ -54,7 +54,7 @@ sh <(curl https://pkgx.sh) +libcxx.llvm.org@20.1.7 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libcxxllvmorg
+const pkg = pantry['libcxx.llvm.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

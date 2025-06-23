@@ -61,7 +61,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cdk1
+const pkg = pantry.cdktf
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

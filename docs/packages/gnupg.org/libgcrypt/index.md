@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) +gnupg.org/libgcrypt@1.11.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libgcrypt
+const pkg = pantry['gnupg.org/libgcrypt']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

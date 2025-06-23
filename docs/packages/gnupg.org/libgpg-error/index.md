@@ -50,7 +50,7 @@ sh <(curl https://pkgx.sh) +gnupg.org/libgpg-error@1.55.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libgpg_error
+const pkg = pantry['gnupg.org/libgpg-error']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

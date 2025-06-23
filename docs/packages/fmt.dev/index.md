@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) +fmt.dev@11.2.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.fmtdev
+const pkg = pantry['fmt.dev']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

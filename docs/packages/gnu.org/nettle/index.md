@@ -50,7 +50,7 @@ sh <(curl https://pkgx.sh) +gnu.org/nettle@3.8.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.nettle
+const pkg = pantry['gnu.org/nettle']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

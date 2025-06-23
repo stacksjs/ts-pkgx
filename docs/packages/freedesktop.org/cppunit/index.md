@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +freedesktop.org/cppunit@1.13.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cppunit
+const pkg = pantry['freedesktop.org/cppunit']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

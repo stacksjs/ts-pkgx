@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) fd -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.fd_find
+const pkg = pantry.fd
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) tidy-viewer -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.tidy-viewer
+const pkg = pantry['tidy-viewer']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

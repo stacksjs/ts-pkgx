@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +libuv.org@1.51.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libuvorg
+const pkg = pantry['libuv.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

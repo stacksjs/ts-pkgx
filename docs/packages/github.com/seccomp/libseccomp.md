@@ -52,7 +52,7 @@ sh <(curl https://pkgx.sh) scmp_sys_resolver -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libseccomp
+const pkg = pantry.scmp_sys_resolver
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

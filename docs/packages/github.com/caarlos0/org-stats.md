@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) org-stats -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.org-stats
+const pkg = pantry['org-stats']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

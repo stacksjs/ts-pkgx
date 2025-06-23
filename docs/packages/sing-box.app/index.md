@@ -56,7 +56,7 @@ sh <(curl https://pkgx.sh) sing-box -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.sing-box
+const pkg = pantry['sing-box']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

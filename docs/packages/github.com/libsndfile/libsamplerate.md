@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/libsndfile/libsamplerate@0.2.2 -- $SHELL 
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libsamplerate
+const pkg = pantry['github.com/libsndfile/libsamplerate']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

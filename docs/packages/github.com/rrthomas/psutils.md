@@ -61,7 +61,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.psutils
+const pkg = pantry['github.com/rrthomas/psutils']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

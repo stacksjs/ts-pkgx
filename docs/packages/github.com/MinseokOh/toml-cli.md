@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) toml-cli -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.toml-cli
+const pkg = pantry['toml-cli']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

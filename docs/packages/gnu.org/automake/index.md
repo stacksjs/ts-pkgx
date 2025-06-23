@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.automake
+const pkg = pantry['gnu.org/automake']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

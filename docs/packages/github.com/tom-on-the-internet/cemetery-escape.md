@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) cemetery-escape -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cemetery-escape
+const pkg = pantry['cemetery-escape']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

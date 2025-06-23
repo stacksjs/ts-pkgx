@@ -76,7 +76,7 @@ sh <(curl https://pkgx.sh) argocd -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cd
+const pkg = pantry.argocd
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

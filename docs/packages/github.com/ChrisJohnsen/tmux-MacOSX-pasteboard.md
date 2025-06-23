@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) reattach-to-user-namespace -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.tmux_MacOSX_pasteboard
+const pkg = pantry['reattach-to-user-namespace']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

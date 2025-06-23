@@ -77,7 +77,7 @@ sh <(curl https://pkgx.sh) +perl.org@5.40.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.perlorg
+const pkg = pantry['perl.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

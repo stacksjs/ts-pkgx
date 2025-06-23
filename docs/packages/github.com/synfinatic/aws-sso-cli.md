@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) aws-sso -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.aws-sso
+const pkg = pantry['aws-sso']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

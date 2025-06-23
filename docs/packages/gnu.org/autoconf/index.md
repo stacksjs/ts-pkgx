@@ -59,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.autoconf
+const pkg = pantry['gnu.org/autoconf']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/xiph/speexdsp@1.2.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.speexdsp
+const pkg = pantry['github.com/xiph/speexdsp']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

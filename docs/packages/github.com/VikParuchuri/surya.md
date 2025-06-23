@@ -73,7 +73,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.Surya
+const pkg = pantry.surya_detect
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

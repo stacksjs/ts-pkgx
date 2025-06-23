@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.click1
+const pkg = pantry['python-click']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

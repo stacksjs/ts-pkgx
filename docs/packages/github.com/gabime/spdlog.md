@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.spdlog
+const pkg = pantry['github.com/gabime/spdlog']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

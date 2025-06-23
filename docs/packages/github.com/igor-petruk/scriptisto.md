@@ -52,7 +52,7 @@ sh <(curl https://pkgx.sh) scriptisto -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.Scriptisto
+const pkg = pantry.scriptisto
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

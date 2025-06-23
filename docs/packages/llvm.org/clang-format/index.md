@@ -62,7 +62,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.clang_format
+const pkg = pantry['llvm.org/clang-format']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

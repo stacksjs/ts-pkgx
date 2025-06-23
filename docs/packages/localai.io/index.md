@@ -53,19 +53,13 @@ This package depends on:
 
 - `darwin:openmp.llvm.org@18`
 
-## Related Packages
-
-These packages work well with local-ai:
-
-- [`linux`](../linux.md) - Package not available
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.local-ai
+const pkg = pantry['local-ai']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

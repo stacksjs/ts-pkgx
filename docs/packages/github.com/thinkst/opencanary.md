@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.opencanary
+const pkg = pantry.opencanaryd
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

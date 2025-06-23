@@ -62,7 +62,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cargo-c
+const pkg = pantry['cargo-c']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

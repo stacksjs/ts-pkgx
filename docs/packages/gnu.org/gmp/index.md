@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +gnu.org/gmp@6.3.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.gmp
+const pkg = pantry['gnu.org/gmp']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

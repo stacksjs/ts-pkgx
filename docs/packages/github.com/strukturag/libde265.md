@@ -53,7 +53,7 @@ sh <(curl https://pkgx.sh) +github.com/strukturag/libde265@1.0.16 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libde265
+const pkg = pantry['github.com/strukturag/libde265']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

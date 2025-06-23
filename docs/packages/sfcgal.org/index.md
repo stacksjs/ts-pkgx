@@ -56,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.sfcgalorg
+const pkg = pantry['sfcgal-config']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

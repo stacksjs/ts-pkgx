@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) swift-sh -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.swift-sh
+const pkg = pantry['swift-sh']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

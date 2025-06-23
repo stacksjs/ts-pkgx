@@ -51,7 +51,7 @@ sh <(curl https://pkgx.sh) cf -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cf_cli
+const pkg = pantry.cf
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

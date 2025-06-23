@@ -50,7 +50,7 @@ sh <(curl https://pkgx.sh) k6 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.k6io
+const pkg = pantry.k6
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -62,7 +62,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.yt-dlp
+const pkg = pantry['yt-dlp']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

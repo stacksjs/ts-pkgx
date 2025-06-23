@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.microplane
+const pkg = pantry.mp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

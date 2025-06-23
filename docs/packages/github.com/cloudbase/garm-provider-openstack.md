@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) garm-provider-openstack -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.garm-provider-openstack
+const pkg = pantry['garm-provider-openstack']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

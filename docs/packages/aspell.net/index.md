@@ -54,7 +54,7 @@ sh <(curl https://pkgx.sh) +aspell.net@0.60.8.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.aspellnet
+const pkg = pantry['aspell.net']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

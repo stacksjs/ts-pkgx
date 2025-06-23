@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) bruce -- $SHELL -i
 ```
 
-## Related Packages
-
-These packages work well with bruce:
-
-- [`linux`](../../linux.md) - Package not available
-
 ## Usage Examples
 
 ```typescript

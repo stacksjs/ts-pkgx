@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/danfis/libccd@2.1.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libccd
+const pkg = pantry['github.com/danfis/libccd']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

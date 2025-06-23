@@ -56,7 +56,7 @@ sh <(curl https://pkgx.sh) +invisible-island.net/ncurses@6.4.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.ncurses
+const pkg = pantry['invisible-island.net/ncurses']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

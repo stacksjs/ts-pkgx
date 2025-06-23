@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libmicrohttpd
+const pkg = pantry['gnu.org/libmicrohttpd']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

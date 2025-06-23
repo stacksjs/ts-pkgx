@@ -56,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libkml
+const pkg = pantry['github.com/libkml/libkml']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

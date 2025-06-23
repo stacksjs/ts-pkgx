@@ -76,7 +76,7 @@ sh <(curl https://pkgx.sh) +github.com/charliermarsh/ruff@0.12.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.ruff1
+const pkg = pantry['github.com/charliermarsh/ruff']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

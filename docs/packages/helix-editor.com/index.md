@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) hx -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.helix_editorcom
+const pkg = pantry.hx
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

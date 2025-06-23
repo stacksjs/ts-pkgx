@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +dkrz.de/libaec@1.1.4 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libaec
+const pkg = pantry['dkrz.de/libaec']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) process-compose -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.process-compose
+const pkg = pantry['process-compose']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

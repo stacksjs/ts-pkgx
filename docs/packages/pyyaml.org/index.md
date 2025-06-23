@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +pyyaml.org@0.2.5 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.pyyamlorg
+const pkg = pantry['pyyaml.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

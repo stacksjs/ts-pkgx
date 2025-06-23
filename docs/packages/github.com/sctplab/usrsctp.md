@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/sctplab/usrsctp@0.9.5.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.usrsctp
+const pkg = pantry['github.com/sctplab/usrsctp']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

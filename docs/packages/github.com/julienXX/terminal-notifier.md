@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) terminal-notifier -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.terminal-notifier
+const pkg = pantry['terminal-notifier']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

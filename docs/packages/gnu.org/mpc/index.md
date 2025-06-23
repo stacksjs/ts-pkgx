@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +gnu.org/mpc@1.3.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.mpc
+const pkg = pantry['gnu.org/mpc']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

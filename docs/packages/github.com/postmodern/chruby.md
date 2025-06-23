@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) chruby-exec -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.chruby
+const pkg = pantry['chruby-exec']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.yubikey-agent
+const pkg = pantry['yubikey-agent']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

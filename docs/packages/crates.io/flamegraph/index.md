@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +crates.io/flamegraph@0.6.8 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.flamegraph
+const pkg = pantry['crates.io/flamegraph']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

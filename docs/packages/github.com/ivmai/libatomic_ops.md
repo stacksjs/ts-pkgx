@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/ivmai/libatomic_ops@7.8.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libatomic_ops
+const pkg = pantry['github.com/ivmai/libatomic_ops']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

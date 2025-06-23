@@ -52,7 +52,7 @@ sh <(curl https://pkgx.sh) cedar -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cli1
+const pkg = pantry.cedar
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

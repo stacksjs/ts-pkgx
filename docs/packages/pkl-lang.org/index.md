@@ -55,7 +55,7 @@ These packages work well with pkl-lang.org:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.pkl_langorg
+const pkg = pantry['pkl-lang.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -114,7 +114,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.nss
+const pkg = pantry['mozilla.org/nss']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) gen-ir -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.gen-ir
+const pkg = pantry['gen-ir']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

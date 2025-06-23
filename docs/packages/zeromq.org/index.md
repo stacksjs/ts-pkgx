@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +zeromq.org@4.3.5 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.zeromqorg
+const pkg = pantry['zeromq.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

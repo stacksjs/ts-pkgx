@@ -56,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libgeotiff
+const pkg = pantry['github.com/OSGeo/libgeotiff']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

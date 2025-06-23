@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) git-grab -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.git-grab
+const pkg = pantry['git-grab']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

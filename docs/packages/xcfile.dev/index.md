@@ -51,7 +51,7 @@ sh <(curl https://pkgx.sh) xc -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.xcfiledev
+const pkg = pantry.xc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

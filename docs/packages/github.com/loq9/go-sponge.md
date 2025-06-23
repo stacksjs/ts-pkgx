@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) go-sponge -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.go-sponge
+const pkg = pantry['go-sponge']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

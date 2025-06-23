@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.arpack_ng
+const pkg = pantry['github.com/opencollab/arpack-ng']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) go-bindata -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.go-bindata
+const pkg = pantry['go-bindata']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

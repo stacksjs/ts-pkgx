@@ -60,20 +60,13 @@ This package depends on:
 - `openpmix.github.io@5`
 - `libevent.org`
 
-## Related Packages
-
-These packages work well with open-mpi.org:
-
-- [`OMPI_F77FLAGS^$FCFLAGS -I{{prefix}}/include`](../ompi_f77flags-fcflags-i-prefix-include.md) - Package not available
-- [`OMPI_F90FLAGS^$FCFLAGS -I{{prefix}}/include`](../ompi_f90flags-fcflags-i-prefix-include.md) - Package not available
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.open_mpiorg
+const pkg = pantry['open-mpi.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

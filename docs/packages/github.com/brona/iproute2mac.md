@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.iproute2mac
+const pkg = pantry['github.com/brona/iproute2mac']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

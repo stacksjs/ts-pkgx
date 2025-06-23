@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/DaveGamble/cJSON@1.7.18 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cJSON
+const pkg = pantry['github.com/DaveGamble/cJSON']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

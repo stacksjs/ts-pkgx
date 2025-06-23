@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) libassuan-config -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libassuan
+const pkg = pantry['libassuan-config']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) tv -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.tv_cli
+const pkg = pantry.tv
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

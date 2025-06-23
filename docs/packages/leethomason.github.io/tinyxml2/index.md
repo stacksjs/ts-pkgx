@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +leethomason.github.io/tinyxml2@11.0.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.tinyxml2
+const pkg = pantry['leethomason.github.io/tinyxml2']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

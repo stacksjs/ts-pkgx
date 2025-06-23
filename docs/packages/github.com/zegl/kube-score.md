@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) kube-score -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.kube-score
+const pkg = pantry['kube-score']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

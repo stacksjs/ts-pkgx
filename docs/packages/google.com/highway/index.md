@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +google.com/highway@1.2.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.highway
+const pkg = pantry['google.com/highway']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

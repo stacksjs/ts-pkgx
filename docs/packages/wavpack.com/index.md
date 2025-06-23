@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) +wavpack.com@5.8.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.wavpackcom
+const pkg = pantry['wavpack.com']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

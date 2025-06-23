@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/json-c/json-c@0.18.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.json_c
+const pkg = pantry['github.com/json-c/json-c']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -52,7 +52,7 @@ sh <(curl https://pkgx.sh) +libjpeg-turbo.org@3.1.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libjpeg_turboorg
+const pkg = pantry['libjpeg-turbo.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

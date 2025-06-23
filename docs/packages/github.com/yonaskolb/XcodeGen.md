@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) xcodegen -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.XcodeGen
+const pkg = pantry.xcodegen
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

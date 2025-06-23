@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/dloebl/cgif@0.5.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cgif
+const pkg = pantry['github.com/dloebl/cgif']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.pkcs11_helper
+const pkg = pantry['github.com/OpenSC/pkcs11-helper']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

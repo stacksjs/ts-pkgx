@@ -61,7 +61,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.TTS
+const pkg = pantry['github.com/coqui-ai/TTS']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

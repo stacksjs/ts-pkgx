@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +github.com/cloudbase/garm@0.1.5 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.garm
+const pkg = pantry['cloudbase/garm']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

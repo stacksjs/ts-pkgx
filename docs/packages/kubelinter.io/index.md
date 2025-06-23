@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) kube-linter -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.kube-linter
+const pkg = pantry['kube-linter']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

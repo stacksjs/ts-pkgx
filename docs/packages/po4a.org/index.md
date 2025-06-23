@@ -55,19 +55,13 @@ This package depends on:
 - `perl.org^5.22`
 - `gnome.org/libxslt^1.1`
 
-## Related Packages
-
-These packages work well with po4a.org:
-
-- [`PERL5LIB^${{prefix}}/libexec/lib/perl5:$PERL5LIB`](../perl5lib-prefix-libexec.md) - Package not available
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.po4aorg
+const pkg = pantry['po4a.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

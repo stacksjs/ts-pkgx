@@ -56,7 +56,7 @@ sh <(curl https://pkgx.sh) docker-compose -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.compose
+const pkg = pantry['docker-compose']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

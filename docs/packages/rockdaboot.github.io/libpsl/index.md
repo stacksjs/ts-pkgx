@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libpsl
+const pkg = pantry['rockdaboot.github.io/libpsl']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

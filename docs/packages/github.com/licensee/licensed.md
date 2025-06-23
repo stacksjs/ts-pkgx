@@ -50,12 +50,6 @@ This package depends on:
 - `linux:gnome.org/libxslt~1.1.43 # for nokogiri`
 - `linux:pcre.org^8 # for nokogiri`
 
-## Related Packages
-
-These packages work well with licensed:
-
-- [`linux`](../../linux.md) - Package not available
-
 ## Usage Examples
 
 ```typescript

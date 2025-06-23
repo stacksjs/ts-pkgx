@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/DaanDeMeyer/reproc@14.2.5 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.reproc
+const pkg = pantry['github.com/DaanDeMeyer/reproc']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

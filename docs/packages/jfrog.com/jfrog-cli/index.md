@@ -64,7 +64,7 @@ sh <(curl https://pkgx.sh) +jfrog.com/jfrog-cli@2.77.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.jfrog_cli
+const pkg = pantry['jfrog.com/jfrog-cli']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

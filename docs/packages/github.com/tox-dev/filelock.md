@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.filelock
+const pkg = pantry['github.com/tox-dev/filelock']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

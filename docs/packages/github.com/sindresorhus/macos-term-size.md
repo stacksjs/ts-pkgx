@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) term-size -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.term-size
+const pkg = pantry['term-size']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

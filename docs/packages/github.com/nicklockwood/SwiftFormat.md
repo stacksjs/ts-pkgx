@@ -54,7 +54,7 @@ sh <(curl https://pkgx.sh) swiftformat -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.SwiftFormat
+const pkg = pantry.swiftformat
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

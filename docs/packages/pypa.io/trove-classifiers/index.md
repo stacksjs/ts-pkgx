@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.trove_classifiers
+const pkg = pantry['pypa.io/trove-classifiers']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

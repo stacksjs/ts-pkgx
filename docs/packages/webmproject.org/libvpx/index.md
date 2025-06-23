@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +webmproject.org/libvpx@1.15.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libvpx
+const pkg = pantry['webmproject.org/libvpx']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

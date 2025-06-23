@@ -58,7 +58,7 @@ sh <(curl https://pkgx.sh) +unicode.org@77.1.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.unicodeorg
+const pkg = pantry['unicode.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

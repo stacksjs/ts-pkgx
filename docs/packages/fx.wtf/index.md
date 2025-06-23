@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) fx -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.fxwtf
+const pkg = pantry.fx
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

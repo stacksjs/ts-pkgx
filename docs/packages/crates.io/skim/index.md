@@ -51,7 +51,7 @@ sh <(curl https://pkgx.sh) sk -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.skim
+const pkg = pantry.sk
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

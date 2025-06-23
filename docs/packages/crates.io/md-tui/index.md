@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) +crates.io/md-tui@0.8.7 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.md_tui
+const pkg = pantry['crates.io/md-tui']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

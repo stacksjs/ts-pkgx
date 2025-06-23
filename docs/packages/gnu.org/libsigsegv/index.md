@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +gnu.org/libsigsegv@2.15.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libsigsegv
+const pkg = pantry['gnu.org/libsigsegv']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

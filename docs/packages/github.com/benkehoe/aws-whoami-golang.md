@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) aws-whoami -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.aws-whoami
+const pkg = pantry['aws-whoami']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

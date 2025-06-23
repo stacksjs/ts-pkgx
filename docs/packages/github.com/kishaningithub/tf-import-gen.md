@@ -50,7 +50,7 @@ sh <(curl https://pkgx.sh) tf-import-gen -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.tf-import-gen
+const pkg = pantry['tf-import-gen']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

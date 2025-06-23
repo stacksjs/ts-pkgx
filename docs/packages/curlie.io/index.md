@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) curlie -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.curlieio
+const pkg = pantry.curlie
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

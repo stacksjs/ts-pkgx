@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +opus-codec.org@1.5.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.opus_codecorg
+const pkg = pantry['opus-codec.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

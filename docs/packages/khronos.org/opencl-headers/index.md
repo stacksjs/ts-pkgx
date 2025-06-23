@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +khronos.org/opencl-headers@2024.10.24 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.opencl_headers
+const pkg = pantry['khronos.org/opencl-headers']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

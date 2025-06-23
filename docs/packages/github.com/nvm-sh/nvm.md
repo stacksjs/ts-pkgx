@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.nvm
+const pkg = pantry['nvm-exec']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

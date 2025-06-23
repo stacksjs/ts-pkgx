@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +github.com/besser82/libxcrypt@4.4.38 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libxcrypt
+const pkg = pantry['github.com/besser82/libxcrypt']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

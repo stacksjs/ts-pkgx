@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) aws-vault -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.aws-vault
+const pkg = pantry['aws-vault']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/numactl/numactl@2.0.16 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.numactl
+const pkg = pantry['github.com/numactl/numactl']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

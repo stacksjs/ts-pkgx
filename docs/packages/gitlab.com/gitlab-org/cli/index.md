@@ -54,7 +54,7 @@ sh <(curl https://pkgx.sh) glab -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cli4
+const pkg = pantry.glab
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

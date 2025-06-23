@@ -59,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.SDL_image
+const pkg = pantry['libsdl.org/SDL_image']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

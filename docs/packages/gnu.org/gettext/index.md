@@ -75,7 +75,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.gettext
+const pkg = pantry['gnu.org/gettext']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

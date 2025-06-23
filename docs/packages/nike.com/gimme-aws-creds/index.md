@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.gimme-aws-creds
+const pkg = pantry['gimme-aws-creds']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -50,7 +50,7 @@ sh <(curl https://pkgx.sh) aws-iam-authenticator -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.aws-iam-authenticator
+const pkg = pantry['aws-iam-authenticator']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

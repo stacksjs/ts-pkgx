@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) swift-outdated -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.swift-outdated
+const pkg = pantry['swift-outdated']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

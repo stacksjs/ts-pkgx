@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) +gnu.org/diffutils@3.12.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.diffutils
+const pkg = pantry['gnu.org/diffutils']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

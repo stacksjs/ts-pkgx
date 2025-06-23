@@ -60,7 +60,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.text-generation-webui
+const pkg = pantry['text-generation-webui']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

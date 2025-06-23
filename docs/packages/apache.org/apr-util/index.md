@@ -52,7 +52,7 @@ sh <(curl https://pkgx.sh) apu-&lbrace;&lbrace; -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.apr_util
+const pkg = pantry['apu-{{']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

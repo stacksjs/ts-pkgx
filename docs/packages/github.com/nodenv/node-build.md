@@ -69,7 +69,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.node-build
+const pkg = pantry['node-build']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

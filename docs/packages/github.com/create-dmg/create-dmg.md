@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) create-dmg -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.create-dmg
+const pkg = pantry['create-dmg']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

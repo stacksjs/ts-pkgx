@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/neovim/unibilium@2.1.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.unibilium
+const pkg = pantry['github.com/neovim/unibilium']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

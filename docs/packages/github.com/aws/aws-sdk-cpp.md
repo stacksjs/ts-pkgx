@@ -155,7 +155,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.aws_sdk_cpp
+const pkg = pantry['github.com/aws/aws-sdk-cpp']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

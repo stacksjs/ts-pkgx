@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +freedesktop.org/libbsd@0.11.7 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libbsd
+const pkg = pantry['freedesktop.org/libbsd']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

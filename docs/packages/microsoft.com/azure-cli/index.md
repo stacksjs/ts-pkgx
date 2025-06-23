@@ -60,7 +60,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.azure_cli
+const pkg = pantry.az
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

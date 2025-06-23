@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) git-chglog -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.git-chglog
+const pkg = pantry['git-chglog']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

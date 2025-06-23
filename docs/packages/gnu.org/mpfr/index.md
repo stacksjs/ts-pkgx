@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +gnu.org/mpfr@4.2.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.mpfr
+const pkg = pantry['gnu.org/mpfr']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/PJK/libcbor@0.12.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libcbor
+const pkg = pantry['github.com/PJK/libcbor']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

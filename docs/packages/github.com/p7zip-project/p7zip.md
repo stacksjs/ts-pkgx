@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) +github.com/p7zip-project/p7zip@17.5.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.p7zip
+const pkg = pantry['github.com/p7zip-project/p7zip']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

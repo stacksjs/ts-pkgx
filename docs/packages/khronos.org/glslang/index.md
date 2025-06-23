@@ -50,7 +50,7 @@ sh <(curl https://pkgx.sh) +khronos.org/glslang@15.3.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.glslang
+const pkg = pantry['khronos.org/glslang']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

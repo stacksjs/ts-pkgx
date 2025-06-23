@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +pugixml.org@1.15.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.pugixmlorg
+const pkg = pantry['pugixml.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

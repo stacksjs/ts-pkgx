@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) +leonerd.org.uk/libvterm@0.3.3 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libvterm
+const pkg = pantry['leonerd.org.uk/libvterm']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

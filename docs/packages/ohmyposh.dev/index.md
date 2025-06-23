@@ -104,7 +104,7 @@ sh <(curl https://pkgx.sh) oh-my-posh -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.oh-my-posh
+const pkg = pantry['oh-my-posh']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +hboehm.info/gc@8.2.8 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.gc
+const pkg = pantry['hboehm.info/gc']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

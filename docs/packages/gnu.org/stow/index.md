@@ -46,12 +46,6 @@ This package depends on:
 
 - `perl.org^5.6.1`
 
-## Related Packages
-
-These packages work well with stow:
-
-- [`PERL5LIB^${{prefix}}/lib/perl5`](../../perl5lib-prefix-lib.md) - Package not available
-
 ## Usage Examples
 
 ```typescript

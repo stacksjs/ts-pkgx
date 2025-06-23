@@ -433,13 +433,16 @@ export function formatObjectWithoutQuotedKeys(obj: any, indent = 2): string {
 export function convertDomainToVarName(domain: string): string {
   // Handle nested paths
   if (domain.includes('/')) {
-    const [parentDomain, subPath] = domain.split('/')
-    // Remove all dots and dashes from both parts
-    const cleanParent = parentDomain.replace(/[.-]/g, '')
-    const cleanSubPath = subPath.replace(/[.-]/g, '')
+    const parts = domain.split('/')
+    const parentDomain = parts[0]
+    const subPaths = parts.slice(1)
 
-    // Combine both parts without any separator
-    return `${cleanParent}${cleanSubPath}`.toLowerCase()
+    // Remove all dots and dashes from all parts
+    const cleanParent = parentDomain.replace(/[.-]/g, '')
+    const cleanSubPaths = subPaths.map(part => part.replace(/[.-]/g, '')).join('')
+
+    // Combine all parts without any separator
+    return `${cleanParent}${cleanSubPaths}`.toLowerCase()
   }
 
   // Regular domains like 'bun.sh' -> 'bunsh'

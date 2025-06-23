@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/Esri/lerc@4.0.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.lerc
+const pkg = pantry['github.com/Esri/lerc']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

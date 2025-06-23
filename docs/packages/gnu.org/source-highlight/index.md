@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.source_highlight
+const pkg = pantry['gnu.org/source-highlight']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

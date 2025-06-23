@@ -66,7 +66,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.Vulkan_Loader
+const pkg = pantry['github.com/KhronosGroup/Vulkan-Loader']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

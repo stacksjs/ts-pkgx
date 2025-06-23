@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +nasm.us@2.16.3 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.nasmus
+const pkg = pantry['nasm.us']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

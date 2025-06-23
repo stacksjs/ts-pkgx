@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) vault-unseal -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.vault-unseal
+const pkg = pantry['vault-unseal']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

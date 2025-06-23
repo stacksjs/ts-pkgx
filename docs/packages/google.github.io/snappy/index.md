@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +google.github.io/snappy@1.2.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.snappy
+const pkg = pantry['google.github.io/snappy']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

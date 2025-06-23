@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) +people.redhat.com/sgrubb/libcap-ng@0.8.5 -- $SHELL -
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libcap-ng
+const pkg = pantry['libcap-ng']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

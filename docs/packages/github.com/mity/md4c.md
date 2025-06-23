@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) md2html -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.md4c
+const pkg = pantry.md2html
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

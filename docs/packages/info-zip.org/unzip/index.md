@@ -50,7 +50,7 @@ sh <(curl https://pkgx.sh) +info-zip.org/unzip@6.0.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.unzip
+const pkg = pantry['info-zip.org/unzip']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

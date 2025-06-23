@@ -47,12 +47,6 @@ This package depends on:
 
 - `perl.org^5`
 
-## Related Packages
-
-These packages work well with cowsay:
-
-- [`PERL5LIB^{{prefix}}/lib/perl5:$PERL5LIB`](../../perl5lib-prefix-lib.md) - Package not available
-
 ## Usage Examples
 
 ```typescript

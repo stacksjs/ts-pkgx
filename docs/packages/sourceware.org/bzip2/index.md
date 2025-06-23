@@ -56,7 +56,7 @@ sh <(curl https://pkgx.sh) +sourceware.org/bzip2@1.0.8 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.bzip2
+const pkg = pantry['sourceware.org/bzip2']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

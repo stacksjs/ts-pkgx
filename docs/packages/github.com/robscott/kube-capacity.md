@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) kube-capacity -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.kube-capacity
+const pkg = pantry['kube-capacity']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

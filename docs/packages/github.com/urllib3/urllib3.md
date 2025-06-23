@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.urllib3
+const pkg = pantry['github.com/urllib3/urllib3']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

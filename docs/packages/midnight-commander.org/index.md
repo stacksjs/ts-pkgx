@@ -58,7 +58,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.Midnight Commander
+const pkg = pantry['Midnight Commander']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

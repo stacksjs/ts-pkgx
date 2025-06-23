@@ -55,19 +55,13 @@ This package depends on:
 - `perl.org~5`
 - `linux:libexpat.github.io^2.6`
 
-## Related Packages
-
-These packages work well with freedesktop.org/intltool:
-
-- [`PERL5LIB^${{prefix}}/lib/perl5:{{prefix}}/libexec/lib/perl5:$PERL5LIB`](../../perl5lib-prefix-lib.md) - Package not available
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.intltool
+const pkg = pantry['freedesktop.org/intltool']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

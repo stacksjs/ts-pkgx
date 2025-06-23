@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +glew.sourceforge.io@2.2.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.glewsourceforgeio
+const pkg = pantry['glew.sourceforge.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

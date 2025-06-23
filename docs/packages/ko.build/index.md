@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) ko -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.kobuild
+const pkg = pantry.ko
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

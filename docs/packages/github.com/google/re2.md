@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.re2
+const pkg = pantry['github.com/google/re2']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +gflags.github.io@2.2.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.gflagsgithubio
+const pkg = pantry['gflags.github.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

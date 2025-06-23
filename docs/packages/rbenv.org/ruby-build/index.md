@@ -59,19 +59,13 @@ This package depends on:
 - `gnu.org/readline^8.2`
 - `pyyaml.org/libyaml^0.2`
 
-## Related Packages
-
-These packages work well with ruby-build:
-
-- [`linux`](../../linux.md) - Package not available
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.ruby-build
+const pkg = pantry['ruby-build']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

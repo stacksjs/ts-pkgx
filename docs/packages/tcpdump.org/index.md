@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) pcap-config -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.tcpdumporg
+const pkg = pantry['pcap-config']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -63,7 +63,7 @@ sh <(curl https://pkgx.sh) +ast-grep.github.io@0.38.5 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.ast_grepgithubio
+const pkg = pantry['ast-grep.github.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) +sourceforge.net/net-tools@2.10.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.net-tools
+const pkg = pantry['net-tools']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

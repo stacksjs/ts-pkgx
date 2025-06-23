@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) container-structure-test -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.container-structure-test
+const pkg = pantry['container-structure-test']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

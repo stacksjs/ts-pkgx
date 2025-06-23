@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) go-mod-upgrade -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.go-mod-upgrade
+const pkg = pantry['go-mod-upgrade']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

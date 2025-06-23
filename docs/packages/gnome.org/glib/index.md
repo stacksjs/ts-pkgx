@@ -83,7 +83,7 @@ These packages work well with gnome.org/glib:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.glib
+const pkg = pantry['gnome.org/glib']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

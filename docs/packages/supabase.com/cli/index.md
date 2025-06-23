@@ -81,7 +81,7 @@ sh <(curl https://pkgx.sh) supabase -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cli7
+const pkg = pantry.supabase
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

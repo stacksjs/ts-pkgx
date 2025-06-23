@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.p11_kit
+const pkg = pantry['freedesktop.org/p11-kit']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

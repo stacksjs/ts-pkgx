@@ -56,7 +56,7 @@ sh <(curl https://pkgx.sh) +open-mpi.org/hwloc@2.12.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.hwloc
+const pkg = pantry['open-mpi.org/hwloc']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

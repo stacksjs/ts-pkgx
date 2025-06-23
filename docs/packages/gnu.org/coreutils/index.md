@@ -150,7 +150,7 @@ sh <(curl https://pkgx.sh) +gnu.org/coreutils@9.7.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.coreutils
+const pkg = pantry['gnu.org/coreutils']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

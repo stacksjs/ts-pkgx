@@ -6,20 +6,20 @@
  * @version `29.0.0` (16 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install bitcoin`
- * @name `bitcoin`
+ * @install `launchpad install bitcoin.org`
+ * @aliases `bitcoin`
  * @dependencies `oracle.com/berkeley-db^18`, `boost.org^1`, `libevent.org^2`, ... (+3 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.bitcoin
  * // Or access via domain
  * const samePkg = pantry.bitcoinorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "bitcoin"
+ * console.log(pkg.name)        // "bitcoin.org"
  * console.log(pkg.description) // "Decentralized, peer to peer payment network"
  * console.log(pkg.programs)    // ["bitcoin-cli", "bitcoin-tx", ...]
  * console.log(pkg.versions[0]) // "29.0.0" (latest)
@@ -32,7 +32,7 @@ export const bitcoinPackage = {
   /**
    * The display name of this package.
    */
-  name: 'bitcoin' as const,
+  name: 'bitcoin.org' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -48,7 +48,7 @@ export const bitcoinPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install bitcoin' as const,
+  installCommand: 'launchpad install bitcoin.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -100,9 +100,11 @@ export const bitcoinPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'bitcoin',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +bitcoin.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install bitcoin' as const,
+  launchpadInstallCommand: 'launchpad install bitcoin.org' as const,
 }
 
 export type BitcoinPackage = typeof bitcoinPackage

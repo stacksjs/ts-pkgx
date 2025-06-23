@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +macfuse.github.io@4.10.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.macfusegithubio
+const pkg = pantry['macfuse.github.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

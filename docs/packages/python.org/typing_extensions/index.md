@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) +python.org/typing_extensions@4.14.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.typing_extensions
+const pkg = pantry['python.org/typing_extensions']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

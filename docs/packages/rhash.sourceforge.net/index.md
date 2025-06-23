@@ -57,7 +57,7 @@ sh <(curl https://pkgx.sh) +rhash.sourceforge.net@1.4.6 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.rhashsourceforgenet
+const pkg = pantry['rhash.sourceforge.net']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

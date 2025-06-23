@@ -51,7 +51,7 @@ sh <(curl https://pkgx.sh) +github.com/kaspanet/kaspad@0.12.22 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.kaspad
+const pkg = pantry['github.com/kaspanet/kaspad']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

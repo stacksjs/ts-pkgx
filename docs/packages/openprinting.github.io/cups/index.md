@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cups
+const pkg = pantry['openprinting.github.io/cups']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

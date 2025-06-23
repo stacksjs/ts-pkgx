@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +zlib.net/minizip@1.3.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.minizip
+const pkg = pantry['zlib.net/minizip']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

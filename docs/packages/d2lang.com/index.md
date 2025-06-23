@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) d2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.d2langcom
+const pkg = pantry.d2
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

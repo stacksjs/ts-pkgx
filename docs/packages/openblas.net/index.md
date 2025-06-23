@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +openblas.net@0.3.30 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.openblasnet
+const pkg = pantry['openblas.net']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +openexr.com/imath@3.1.12 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.imath
+const pkg = pantry['openexr.com/imath']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) +gstreamer.freedesktop.org/orc@0.4.41 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.orc
+const pkg = pantry.orcc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

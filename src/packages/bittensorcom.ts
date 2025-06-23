@@ -5,20 +5,20 @@
  * @version `9.7.0` (63 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install Bittensor`
- * @name `Bittensor`
+ * @install `launchpad install bittensor.com`
+ * @aliases `Bittensor`
  * @dependencies `pkgx.sh^1`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
+ * // Access via alias (recommended)
  * const pkg = pantry.Bittensor
  * // Or access via domain
  * const samePkg = pantry.bittensorcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "Bittensor"
+ * console.log(pkg.name)        // "bittensor.com"
  * console.log(pkg.description) // "Internet-scale Neural Networks"
  * console.log(pkg.versions[0]) // "9.7.0" (latest)
  * ```
@@ -30,7 +30,7 @@ export const bittensorPackage = {
   /**
    * The display name of this package.
    */
-  name: 'Bittensor' as const,
+  name: 'bittensor.com' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -46,7 +46,7 @@ export const bittensorPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install Bittensor' as const,
+  installCommand: 'launchpad install bittensor.com' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -130,9 +130,11 @@ export const bittensorPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'Bittensor',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install Bittensor' as const,
+  launchpadInstallCommand: 'launchpad install bittensor.com' as const,
 }
 
 export type BittensorPackage = typeof bittensorPackage

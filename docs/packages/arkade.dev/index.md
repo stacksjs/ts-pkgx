@@ -59,7 +59,7 @@ sh <(curl https://pkgx.sh) arkade -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.Arkade
+const pkg = pantry.arkade
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

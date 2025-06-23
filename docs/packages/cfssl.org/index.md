@@ -53,7 +53,7 @@ sh <(curl https://pkgx.sh) +cfssl.org@1.6.5 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cfsslorg
+const pkg = pantry['cfssl.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

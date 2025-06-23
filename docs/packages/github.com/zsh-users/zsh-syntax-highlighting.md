@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/zsh-users/zsh-syntax-highlighting@0.8.0 -
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.zsh_syntax_highlighting
+const pkg = pantry['github.com/zsh-users/zsh-syntax-highlighting']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

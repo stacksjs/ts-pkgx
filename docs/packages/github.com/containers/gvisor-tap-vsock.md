@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) +github.com/containers/gvisor-tap-vsock@0.8.6 -- $SHE
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.gvisor_tap_vsock
+const pkg = pantry['github.com/containers/gvisor-tap-vsock']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -56,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libva
+const pkg = pantry['intel.com/libva']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

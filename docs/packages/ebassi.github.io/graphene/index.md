@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.graphene
+const pkg = pantry['ebassi.github.io/graphene']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

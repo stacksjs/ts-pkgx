@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) elvish -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.elvsh
+const pkg = pantry.elvish
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

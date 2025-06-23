@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) kaspa-miner -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.kaspa-miner
+const pkg = pantry['kaspa-miner']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +digip.org/jansson@2.14.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.jansson
+const pkg = pantry['digip.org/jansson']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

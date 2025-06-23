@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) caesiumclt -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.caesium
+const pkg = pantry.caesiumclt
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -59,7 +59,7 @@ sh <(curl https://pkgx.sh) +github.com/KhronosGroup/Vulkan-Headers@1.4.319 -- $S
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.Vulkan_Headers
+const pkg = pantry['github.com/KhronosGroup/Vulkan-Headers']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

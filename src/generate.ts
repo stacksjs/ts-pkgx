@@ -1564,6 +1564,31 @@ function isValidPackageDomain(domain: string): boolean {
 }
 
 /**
+ * Checks if a companion reference is actually a virtual package (environment variable or build flag)
+ * that shouldn't be treated as a real package for documentation linking
+ */
+function isVirtualPackage(companion: string): boolean {
+  // Environment variables (PERL5LIB, OMPI_F77FLAGS, etc.)
+  if (/^[A-Z][A-Z0-9_]*(?:\^|$)/.test(companion)) {
+    return true
+  }
+
+  // Build flags and system packages
+  const virtualPatterns = [
+    /^linux$/,
+    /^darwin$/,
+    /^ompi_.*flags/i,
+    /^perl5lib/i,
+    /^gsettings-desktop-schemas$/,
+    /^curl\.se\/ca-certs$/,
+    /^openssh\.com$/,
+    // Add more patterns as needed
+  ]
+
+  return virtualPatterns.some(pattern => pattern.test(companion))
+}
+
+/**
  * Check if a package has placeholder/invalid data and should be excluded
  */
 function shouldExcludePackage(pkg: PkgxPackage): boolean {
@@ -2233,36 +2258,41 @@ This package depends on:
 
       // Add companions
       if (pkg.companions && pkg.companions.length > 0) {
-        content += `\n## Related Packages
+        // Filter out virtual packages (environment variables, build flags, etc.)
+        const realCompanions = pkg.companions.filter(companion => !isVirtualPackage(companion))
+
+        if (realCompanions.length > 0) {
+          content += `\n## Related Packages
 
 These packages work well with ${pkg.name || domain}:
 
 `
-        pkg.companions.forEach((companion) => {
-          const companionVarName = convertDomainToVarName(companion)
-          const companionPkg = pantry[companionVarName]
+          realCompanions.forEach((companion) => {
+            const companionVarName = convertDomainToVarName(companion)
+            const companionPkg = pantry[companionVarName]
 
-          if (companionPkg && !shouldExcludePackage(companionPkg)) {
-            // Calculate the companion file path using the same logic as main generation
-            const companionFilePath = calculatePackageFilePath(companion, companionVarName, packagesDir)
+            if (companionPkg && !shouldExcludePackage(companionPkg)) {
+              // Calculate the companion file path using the same logic as main generation
+              const companionFilePath = calculatePackageFilePath(companion, companionVarName, packagesDir)
 
-            // Calculate relative path from current file to companion file
-            const companionLinkPath = path.relative(path.dirname(filepath), companionFilePath)
-              .replace(/\\/g, '/') // Normalize path separators for web
+              // Calculate relative path from current file to companion file
+              const companionLinkPath = path.relative(path.dirname(filepath), companionFilePath)
+                .replace(/\\/g, '/') // Normalize path separators for web
 
-            content += `- [\`${companion}\`](${companionLinkPath}) - ${companionPkg.description}\n`
-          }
-          else {
-            // For excluded or missing packages, still create a proper markdown link
-            // Calculate what the file path would be if the package existed
-            const companionFilePath = calculatePackageFilePath(companion, companionVarName, packagesDir)
-            const companionLinkPath = path.relative(path.dirname(filepath), companionFilePath)
-              .replace(/\\/g, '/') // Normalize path separators for web
+              content += `- [\`${companion}\`](${companionLinkPath}) - ${companionPkg.description}\n`
+            }
+            else {
+              // For excluded or missing packages, still create a proper markdown link
+              // Calculate what the file path would be if the package existed
+              const companionFilePath = calculatePackageFilePath(companion, companionVarName, packagesDir)
+              const companionLinkPath = path.relative(path.dirname(filepath), companionFilePath)
+                .replace(/\\/g, '/') // Normalize path separators for web
 
-            const description = companionPkg ? companionPkg.description : 'Package not available'
-            content += `- [\`${companion}\`](${companionLinkPath}) - ${description}\n`
-          }
-        })
+              const description = companionPkg ? companionPkg.description : 'Package not available'
+              content += `- [\`${companion}\`](${companionLinkPath}) - ${description}\n`
+            }
+          })
+        }
       }
 
       // Determine the correct path to package catalog based on actual file depth
@@ -2272,13 +2302,18 @@ These packages work well with ${pkg.name || domain}:
       const packageCatalogPath = `${relativePathFromFile}/package-catalog.md`.replace(/\\/g, '/')
 
       // Add usage examples
+      // Use the primary alias if available, otherwise use the name
+      const displayName = (pkg.aliases && pkg.aliases.length > 0) ? pkg.aliases[0] : pkg.name || convertDomainToVarName(domain)
+      const needsBracketNotation = /[^\w$]/.test(displayName) || /^\d/.test(displayName)
+      const accessPattern = needsBracketNotation ? `pantry['${displayName}']` : `pantry.${displayName}`
+
       content += `\n## Usage Examples
 
 \`\`\`typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.${domainVarName}
+const pkg = ${accessPattern}
 
 console.log(\`Package: \${pkg.name}\`)
 console.log(\`Description: \${pkg.description}\`)

@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) plistutil -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libplist
+const pkg = pantry.plistutil
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

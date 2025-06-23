@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.vanitygen_plusplus
+const pkg = pantry['github.com/10gic/vanitygen-plusplus']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

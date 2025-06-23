@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) aac-enc -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.aac-enc
+const pkg = pantry['aac-enc']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

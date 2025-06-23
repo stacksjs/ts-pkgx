@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) nspr-config -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.nspr
+const pkg = pantry['nspr-config']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

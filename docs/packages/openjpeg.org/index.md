@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.openjpegorg
+const pkg = pantry.opj_compress
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

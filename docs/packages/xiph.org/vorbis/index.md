@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.vorbis
+const pkg = pantry['xiph.org/vorbis']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

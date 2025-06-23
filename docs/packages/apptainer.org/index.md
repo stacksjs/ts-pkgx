@@ -62,7 +62,7 @@ These packages work well with apptainer.org:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.apptainerorg
+const pkg = pantry['apptainer.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

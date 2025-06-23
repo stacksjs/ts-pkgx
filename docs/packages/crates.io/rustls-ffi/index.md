@@ -41,19 +41,13 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +crates.io/rustls-ffi@0.15.0 -- $SHELL -i
 ```
 
-## Related Packages
-
-These packages work well with crates.io/rustls-ffi:
-
-- [`curl.se/ca-certs`](../../curl.se/ca-certs/index.md) - Package not available
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.rustls_ffi
+const pkg = pantry['crates.io/rustls-ffi']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -61,7 +61,7 @@ sh <(curl https://pkgx.sh) gitlab-runner -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.gitlab-runner
+const pkg = pantry['gitlab-runner']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

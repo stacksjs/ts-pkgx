@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) terraform-docs -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.terraform-docs
+const pkg = pantry['terraform-docs']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

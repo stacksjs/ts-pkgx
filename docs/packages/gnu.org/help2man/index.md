@@ -47,12 +47,6 @@ This package depends on:
 - `gnu.org/gettext`
 - `perl.org^5.38 # perl modules require matching minors`
 
-## Related Packages
-
-These packages work well with help2man:
-
-- [`PERL5LIB^{{prefix}}/lib/perl5:{{prefix}}/libexec/lib/perl5:$PERL5LIB`](../../perl5lib-prefix-lib.md) - Package not available
-
 ## Usage Examples
 
 ```typescript

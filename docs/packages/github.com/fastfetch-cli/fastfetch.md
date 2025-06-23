@@ -51,7 +51,7 @@ sh <(curl https://pkgx.sh) +github.com/fastfetch-cli/fastfetch@2.46.0 -- $SHELL 
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.fastfetch
+const pkg = pantry['github.com/fastfetch-cli/fastfetch']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

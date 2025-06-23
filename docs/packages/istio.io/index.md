@@ -54,7 +54,7 @@ sh <(curl https://pkgx.sh) istioctl -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.istioio
+const pkg = pantry.istioctl
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

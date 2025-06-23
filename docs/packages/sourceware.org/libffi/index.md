@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +sourceware.org/libffi@3.5.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libffi
+const pkg = pantry['sourceware.org/libffi']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

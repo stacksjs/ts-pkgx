@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.md5sha1sum
+const pkg = pantry['microbrew.org/md5sha1sum']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

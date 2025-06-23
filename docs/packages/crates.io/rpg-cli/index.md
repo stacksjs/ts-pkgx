@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) rpg-cli -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.rpg-cli
+const pkg = pantry['rpg-cli']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -50,7 +50,7 @@ sh <(curl https://pkgx.sh) +ibr.cs.tu-bs.de/libsmi@0.4.8 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libsmi
+const pkg = pantry.smidiff
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

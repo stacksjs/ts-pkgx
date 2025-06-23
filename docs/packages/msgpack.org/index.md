@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +msgpack.org@6.0.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.msgpackorg
+const pkg = pantry['msgpack.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

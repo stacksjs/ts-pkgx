@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.argcomplete
+const pkg = pantry['kislyuk.github.io/argcomplete']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

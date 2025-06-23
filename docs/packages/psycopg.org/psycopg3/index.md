@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.psycopg3
+const pkg = pantry['psycopg.org/psycopg3']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

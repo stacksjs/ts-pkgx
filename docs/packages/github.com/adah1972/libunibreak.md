@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/adah1972/libunibreak@6.1.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libunibreak
+const pkg = pantry['github.com/adah1972/libunibreak']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

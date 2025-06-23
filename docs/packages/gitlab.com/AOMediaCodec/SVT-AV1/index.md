@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) SvtAv1EncApp -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.SVT_AV1
+const pkg = pantry.SvtAv1EncApp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

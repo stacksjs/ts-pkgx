@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +gnu.org/libunistring@1.3.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libunistring
+const pkg = pantry['gnu.org/libunistring']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -71,7 +71,7 @@ sh <(curl https://pkgx.sh) +tukaani.org/xz@5.8.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.xz
+const pkg = pantry['tukaani.org/xz']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

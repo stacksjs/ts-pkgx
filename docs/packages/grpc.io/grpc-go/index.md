@@ -65,7 +65,7 @@ These packages work well with protoc-gen-go-grpc:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.grpc_go
+const pkg = pantry['protoc-gen-go-grpc']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

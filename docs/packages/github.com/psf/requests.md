@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.requests
+const pkg = pantry['github.com/psf/requests']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

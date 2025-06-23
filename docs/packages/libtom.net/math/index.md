@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +libtom.net/math@1.3.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.math
+const pkg = pantry.LibTomMath
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) sdkman-init.sh -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.sdkmanio
+const pkg = pantry['sdkman-init.sh']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

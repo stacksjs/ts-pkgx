@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.girara
+const pkg = pantry['pwmt.org/girara']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

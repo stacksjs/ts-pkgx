@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) protoc-gen-connect-go -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.protoc-gen-connect-go
+const pkg = pantry['protoc-gen-connect-go']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) alpaca.cpp -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.alpaca.cpp
+const pkg = pantry['alpaca.cpp']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

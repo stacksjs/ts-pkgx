@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) arduino-cli -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.arduino-cli
+const pkg = pantry['arduino-cli']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

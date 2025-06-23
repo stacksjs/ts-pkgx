@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) kubectl-cnpg -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.kubectl-cnpg
+const pkg = pantry['kubectl-cnpg']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

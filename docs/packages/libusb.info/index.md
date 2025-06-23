@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +libusb.info@1.0.29 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libusbinfo
+const pkg = pantry['libusb.info']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

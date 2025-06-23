@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/skystrife/cpptoml@0.1.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cpptoml
+const pkg = pantry['github.com/skystrife/cpptoml']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

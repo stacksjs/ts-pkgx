@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +gnu.org/autoconf-archive@2024.10.16 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.autoconf_archive
+const pkg = pantry['gnu.org/autoconf-archive']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

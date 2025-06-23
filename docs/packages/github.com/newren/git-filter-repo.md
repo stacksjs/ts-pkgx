@@ -58,7 +58,7 @@ These packages work well with git-filter-repo:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.git-filter-repo
+const pkg = pantry['git-filter-repo']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
