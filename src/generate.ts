@@ -314,322 +314,355 @@ function getCategoryMapping(): Record<string, string[]> {
   return {
     // Computing Platforms & Runtimes
     'Programming Languages': [
-      'nodejsorg', // nodejs.org -> node
-      'pythonorg', // python.org -> python
-      'godev', // go.dev -> go
-      'rust-langorg', // rust-lang.org -> rust
-      'rubylangorg', // ruby-lang.org -> ruby
-      'julialangorg', // julialang.org -> julia
-      'luaorg', // lua.org -> lua
-      'luajitorg', // luajit.org -> luajit
-      'phpnet', // php.net -> php
-      'crystal-langorg', // crystal-lang.org -> crystal
-      'nim-langorg', // nim-lang.org -> nim
-      'kotlinlangorg', // kotlinlang.org -> kotlin
-      'scala-langorg', // scala-lang.org -> scala
-      'swiftorg', // swift.org -> swift
-      'ziglangorg', // ziglang.org -> zig
-      'vlangiopub', // vlang.io -> v
-      'dartlangorg', // dartlang.org -> dart
-      'haskellorg', // haskell.org -> ghc
-      'ocamlorg', // ocaml.org -> ocaml
-      'clojureorg', // clojure.org -> clojure
-      'erlangorg', // erlang.org -> erl
-      'elixirlangorg', // elixirlang.org -> elixir
-      'rorg', // r-project.org -> R
-      'perlorg', // perl.org -> perl
-      'tcllangorg', // tcl-lang.org -> tcl
-      'dlangorg', // dlang.org -> dmd
-      'tinygoorg', // tinygo.org -> tinygo
+      'node',
+      'python',
+      'go',
+      'rust',
+      'ruby',
+      'julia',
+      'lua',
+      'luajit',
+      'php',
+      'crystal',
+      'nim',
+      'kotlin',
+      'scala',
+      'swift',
+      'zig',
+      'v',
+      'dart',
+      'ghc',
+      'ocaml',
+      'clojure',
+      'erl',
+      'elixir',
+      'R',
+      'perl',
+      'tcl',
+      'dmd',
+      'tinygo',
     ],
 
     // AI/ML & Data Science
     'Artificial Intelligence': [
-      'ollamaai', // ollama.ai -> ollama
-      'huggingfaceco', // huggingface.co -> huggingface-cli
-      'openaicom', // openai.com packages
-      'numpyorg', // numpy.org -> f2py
-      'kagglecom', // kaggle.com -> kaggle
-      'tensorfloworg', // tensorflow.org (if available)
-      'pytorchorg', // pytorch.org (if available)
-      'jupyterorg', // jupyter.org -> jupyter
-      'localaiio', // localai.io -> local-ai
-      'githubcomautomaticstableidffusionwebui', // stable-diffusion-webui
-      'githubcomopeninterpreteropen-interpreter', // open-interpreter
-      'githubcomantonosikagptengineer', // gpt-engineer
+      'ollama',
+      'huggingface',
+      'openai',
+      'f2py',
+      'kaggle',
+      'jupyter',
+      'llm',
+      'stable-diffusion-webui',
+      'open-interpreter',
+      'interpreter',
+      'GPT Engineer',
+      'gPTEngineer',
+      'auto-gpt',
+      'autogpt',
+      'metagpt',
+      'MetaGPT',
+      'elizaOS',
+      'eliza',
+      'openplayground',
+      'chatblade',
+      'aichat',
     ],
 
     // Databases & Storage
     'Databases': [
-      'postgresqlorg', // postgresql.org -> psql
-      'mysqlcom', // mysql.com -> mysql
-      'mongodbcom', // mongodb.com -> mongod, mongos
-      'redisio', // redis.io -> redis
-      'sqliteorg', // sqlite.org -> sqlite3
-      'duckdborg', // duckdb.org -> duckdb
-      'surrealdbcom', // surrealdb.com -> surreal
-      'etcdio', // etcd.io -> etcd
-      'tursotech', // turso.tech -> turso
-      'mariadbcom', // mariadb.com -> mariadb
-      'influxdatacom', // influxdata.com -> influx
-      'clickhousecom', // clickhouse.com -> clickhouse
-      'neo4jcom', // neo4j.com -> neo4j
-      'cassandraapacheorg', // cassandra.apache.org -> cassandra
-      'couchdbapacheorg', // couchdb.apache.org -> couchdb
-      'elasticsearchorg', // elasticsearch.org -> elasticsearch
-      'opensearchorg', // opensearch.org -> opensearch
-      'memcachedorg', // memcached.org -> memcached
-      'valkeyio', // valkey.io -> valkey
-      'priverdevgeni', // priver.dev/geni -> geni (database migration tool)
+      'psql',
+      'mysql',
+      'mongod',
+      'mongos',
+      'mongosh',
+      'redis',
+      'sqlite3',
+      'duckdb',
+      'surreal',
+      'etcd',
+      'turso',
+      'mariadb',
+      'influx',
+      'clickhouse',
+      'neo4j',
+      'cassandra',
+      'couchdb',
+      'elasticsearch',
+      'opensearch',
+      'memcached',
+      'valkey',
+      'postgrest',
+      'litecli',
+      'edgedb',
+      'dgraph',
     ],
 
     // Web Development & Frameworks
     'Web Development': [
-      'vitejsdev', // vitejs.dev -> vite
-      'nextjsorg', // nextjs.org -> next
-      'astrobuild', // astro.build -> astro
-      'vitepressdev', // vitepress.dev -> vitepress
-      'laravelcom', // laravel.com -> laravel
-      'symfonycom', // symfony.com -> symfony
-      'djangoproject', // django.djangoproject.com -> django
-      'flaskpalletsprojects', // flask.palletsprojects.com -> flask
-      'fastapitiangolocom', // fastapi.tiangolo.com -> fastapi
-      'rubyonrailsorg', // rubyonrails.org -> rails
-      'springio', // spring.io -> spring
-      'expressjs', // expressjs.com -> express
-      'tailwindcsscom', // tailwindcss.com -> tailwindcss
-      'sveltedev', // svelte.dev -> svelte
-      'angular', // angular.dev -> ng
-      'reactjs', // reactjs.org -> react (if available)
-      'vuejs', // vuejs.org -> vue (if available)
+      'vite',
+      'next',
+      'astro',
+      'vitepress',
+      'laravel',
+      'symfony',
+      'django',
+      'flask',
+      'fastapi',
+      'rails',
+      'spring',
+      'express',
+      'tailwindcss',
+      'svelte',
+      'ng',
+      'react',
+      'vue',
+      'nx',
+      'nuxt',
     ],
 
     // DevOps & Infrastructure
     'DevOps': [
-      'dockercom', // docker.com -> docker
-      'dockercomcompose', // docker.com/compose -> docker-compose
-      'podmanio', // podman.io -> podman
-      'kubernetesiokubectl', // kubernetes.io/kubectl -> kubectl
-      'kubernetesiominikube', // kubernetes.io/minikube -> minikube
-      'kubernetesiokustomize', // kubernetes.io/kustomize -> kustomize
-      'helmsh', // helm.sh -> helm
-      'terraformio', // terraform.io -> terraform
-      'terragruntgruntworkio', // terragrunt.gruntwork.io -> terragrunt
-      'jenkinsio', // jenkins.io -> jenkins
-      'vaultprojectio', // vaultproject.io -> vault
-      'consulio', // consul.io -> consul
-      'nomadprojectio', // nomad.project.io -> nomad
-      'packerio', // packer.io -> packer
-      'ansiblecom', // ansible.com -> ansible
-      'githubcomactions', // github.com/actions
-      'gitlabcomci', // gitlab.com/ci
-      // 'circleci',         // circleci.com -> circleci (REMOVED - doesn't exist)
-      'argoprojgithubiocd', // argo-proj.github.io/cd -> argocd
-      'fluxcdioflux2', // fluxcd.io/flux2 -> flux
-      'limavmio', // lima-vm.io -> lima, limactl
-      'k3dio', // k3d.io -> k3d
-      'kindsigsksio', // kind.sigs.k8s.io -> kind
+      'docker',
+      'compose',
+      'podman',
+      'kubectl',
+      'minikube',
+      'kustomize',
+      'helm',
+      'terraform',
+      'terragrunt',
+      'jenkins-lts',
+      'vault',
+      'consul',
+      'nomad',
+      'packer',
+      'ansible',
+      'ansible-lint',
+      'argocd',
+      'flux',
+      'lima',
+      'k3d',
+      'kind',
+      'tofu',
+      'atlantis',
+      'terratag',
+      'tflint',
+      'tfupdate',
+      'cfn-lint',
+      'infracost',
     ],
 
     'Container & Kubernetes Tools': [
-      'dockercom', // docker.com -> docker
-      'podmanio', // podman.io -> podman
-      'kubernetesiokubectl', // kubernetes.io/kubectl -> kubectl
-      'kubernetesiominikube', // kubernetes.io/minikube -> minikube
-      'kubernetesiokustomize', // kubernetes.io/kustomize -> kustomize
-      'helmsh', // helm.sh -> helm
-      'githubcomhelmfilehelmfile', // github.com/helmfile/helmfile -> helmfile
-      'githubcomsternstern', // github.com/stern/stern -> stern
-      'ciliumiohubble', // cilium.io/hubble -> hubble
-      'ciliumiocilium', // cilium.io/cilium -> cilium
-      'kubelinterio', // kubelinter.io -> kube-linter
-      'kubesharkco', // kubeshark.co -> kubeshark
-      'cloudnativepgio', // cloudnative-pg.io -> kubectl-cnpg
-      'k9scliio', // k9scli.io -> k9s
-      'kubectxdev', // kubectx.dev -> kubectx, kubens
-      'kubecmcloud', // kubecm.cloud -> kubecm
-      'krewsigsksio', // krew.sigs.k8s.io -> kubectl-krew
-      'skaffolddev', // skaffold.dev -> skaffold
-      'tiltdev', // tilt.dev -> tilt
-      'linkerdiolinkerd2', // linkerd.io/linkerd2 -> linkerd
-      'vclustercom', // vcluster.com -> vcluster
-      // 'istioctl',         // istio.io -> istioctl (REMOVED - doesn't exist)
+      'docker',
+      'podman',
+      'kubectl',
+      'minikube',
+      'kustomize',
+      'helm',
+      'helmfile',
+      'stern',
+      'hubble',
+      'cilium',
+      'kube-linter',
+      'kubeshark',
+      'kubectl-cnpg',
+      'k9s',
+      'kubectx',
+      'kubecm',
+      'kubectl-krew',
+      'skaffold',
+      'tilt',
+      'linkerd',
+      'vcluster',
+      'istioctl',
+      'velero',
+      'kubeconform',
+      'kubebuilder',
+      'operator-sdk',
     ],
 
     'Monitoring & Observability': [
-      'prometheusio', // prometheus.io -> prometheus
-      'grafanacom', // grafana.com -> grafana
-      'datadogcom', // datadog.com -> datadog
-      'newreliccom', // newrelic.com -> newrelic
-      'elasticokibana', // elastic.co/kibana -> kibana
-      'jaegertracingfio', // jaegertracing.fio -> jaeger
-      'zipkinio', // zipkin.io -> zipkin
-      'sentryio', // sentry.io -> sentry
-      'steampipeio', // steampipe.io -> steampipe
-      'logdydev', // logdy.dev -> logdy
-      'lokigrafanacom', // loki.grafana.com -> loki
-      'tempoproject', // tempo.project.io -> tempo
+      'prometheus',
+      'grafana',
+      'datadog',
+      'newrelic',
+      'kibana',
+      'jaeger',
+      'zipkin',
+      'sentry',
+      'steampipe',
+      'logdy',
+      'loki',
+      'tempo',
+      'allure',
     ],
 
     // Build Tools & Package Management
     'Build Tools & Automation': [
-      'cmakeorg', // cmake.org -> cmake
-      'ninjabuilorg', // ninja-build.org -> ninja
-      'mesonbuildcom', // mesonbuild.com -> meson
-      'sconsorg', // scons.org -> scons
-      'gnuorgmake', // gnu.org/make -> make
-      'bazelbuilgithubcom', // github.com/bazelbuild/bazel -> bazel
-      'gradleorg', // gradle.org -> gradle
-      'mavenorg', // maven.apache.org -> mvn
-      'antapacheorg', // ant.apache.org -> ant
-      'taskfiledev', // taskfile.dev -> task
-      'justsystems', // just.systems -> just
-      'gnuorgautoconf', // gnu.org/autoconf -> autoconf
-      'gnuorgautomake', // gnu.org/automake -> automake
-      'pkgconfigfreedesktoporg', // pkg-config.freedesktop.org -> pkg-config
-      'githubcommicrosoftvcpkg', // github.com/microsoft/vcpkg -> vcpkg
+      'cmake',
+      'ninja',
+      'meson',
+      'scons',
+      'make',
+      'bazel',
+      'gradle',
+      'mvn',
+      'ant',
+      'task',
+      'just',
+      'autoconf',
+      'automake',
+      'pkg-config',
+      'vcpkg',
+      'buildctl',
+      'buildkit',
+      'earthly',
+      'buildifier',
+      'pants',
+      'scie-pants',
     ],
 
     'Package Managers': [
-      'npmjscom', // npmjs.com -> npm, npx
-      'yarnpkgcom', // yarnpkg.com -> yarn
-      'pnpmio', // pnpm.io -> pnpm
-      'bunsh', // bun.sh -> bun
-      'piporg', // pip.org -> pip
-      'pipenvpypaio', // pipenv.pypa.io -> pipenv
-      'poetrypythonorg', // python-poetry.org -> poetry
-      'condaforgeorg', // conda-forge.org -> conda
-      'bundlerrubygemsorg', // bundler.rubygems.org -> bundler
-      'cargoorg', // rust-lang.org/cargo -> cargo
-      'composerorg', // getcomposer.org -> composer
-      'cocoapodsorg', // cocoapods.org -> pod
-      'nugetorg', // nuget.org -> nuget
-      'homebrewsh', // homebrew.sh -> brew
-      'macportsorg', // macports.org -> port
-      'pkgxsh', // pkgx.sh -> pkgx
-      'misedev', // mise.jdx.dev -> mise
-      'asdfvmcom', // asdf-vm.com -> asdf
-      'nixpackscom', // nixpacks.com -> nixpacks
-      'ryeuxorg', // rye.astral.sh -> rye
-      'pixiprefixdev', // prefix.dev/pixi -> pixi
-      'pdmfmingdev', // pdm.fming.dev -> pdm
-      'classicyarnpkgcom', // classic.yarnpkg.com -> yarn (classic)
+      'npm',
+      'npx',
+      'yarn',
+      'pnpm',
+      'bun',
+      'pip',
+      'pipenv',
+      'poetry',
+      'conda',
+      'bundler',
+      'cargo',
+      'composer',
+      'pod',
+      'nuget',
+      'brew',
+      'port',
+      'pkgx',
+      'mise',
+      'asdf',
+      'nixpacks',
+      'corepack',
+      'luarocks',
+      'rye',
+      'pdm',
     ],
 
     // Development Tools & Editors
     'Editors & IDEs': [
-      'neovimio', // neovim.io -> nvim
-      'vimorg', // vim.org -> vim
-      'macvimorg', // macvim.org -> macvim
-      'lunarvimorg', // lunarvim.org -> lvim
-      'helixeditorcom', // helix-editor.com -> hx
-      'gnuorgemacs', // gnu.org/emacs -> emacs
-      'codevisualstudiocom', // code.visualstudio.com -> code
-      'microsoftcomcodecli', // microsoft.com/code-cli -> code
-      'sublimetextcom', // sublimetext.com -> subl
-      'atomio', // atom.io -> atom
-      'microeditoregithubio', // micro-editor.github.io -> micro
-      'nanoeditororg', // nano-editor.org -> nano
+      'nvim',
+      'vim',
+      'emacs',
+      'code',
+      'vscode cli',
+      'micro',
+      'nano',
+      'alacritty',
+      'wezterm',
+      'helix',
     ],
 
     'CLI Tools & Utilities': [
-      'ripgrepburntsushinet', // ripgrep.burntsushi.net -> rg
-      'tree_sittergithubio', // tree-sitter.github.io -> tree-sitter
-      'fzfgithubcom', // github.com/junegunn/fzf -> fzf
-      'batgithubcom', // github.com/sharkdp/bat -> bat
-      'lsdgithubcom', // github.com/lsd-rs/lsd -> lsd
-      'exagithubcom', // github.com/ogham/exa -> exa
-      'fd_findgithubcom', // github.com/sharkdp/fd -> fd
-      'sedgnuorg', // gnu.org/sed -> sed
-      'awkgnuorg', // gnu.org/awk -> awk
-      'grepgnuorg', // gnu.org/grep -> grep
-      'findgnuorg', // gnu.org/findutils -> find
-      'jqdev', // jq.dev -> jq
-      'yqgithubcom', // github.com/mikefarah/yq -> yq
-      'treegnuorg', // gnu.org/tree -> tree
-      'watchgnuorg', // gnu.org/watch -> watch
-      'htopdev', // htop.dev -> htop
-      'bottomrs', // bottom.rs -> btm
-      'tmuxgithubcom', // github.com/tmux/tmux -> tmux
-      'gnuorgscreen', // gnu.org/screen -> screen
-      'starshiprs', // starship.rs -> starship
-      'ohmyposhdev', // ohmyposh.dev -> oh-my-posh
-      'fishcli', // fishshell.com -> fish
-      'zshsourceforgeio', // zsh.sourceforge.io -> zsh
-      'bashgnuorg', // gnu.org/bash -> bash
+      'ripgrep',
+      'rg',
+      'tree-sitter',
+      'fzf',
+      'bat',
+      'lsd',
+      'exa',
+      'eza',
+      'fd',
+      'fd-find',
+      'sed',
+      'awk',
+      'grep',
+      'find',
+      'jq',
+      'yq',
+      'tree',
+      'watch',
+      'htop',
+      'btop',
+      'bottom',
+      'tmux',
+      'screen',
+      'starship',
+      'oh-my-posh',
+      'fish',
+      'zsh',
+      'bash',
+      'curl',
+      'wget',
+      'ripgrep-all',
+      'rga',
+      'hyperfine',
+      'dust',
+      'du-dust',
+      'duf',
+      'ncdu',
+      'tokei',
+      'loc',
+      'delta',
+      'git-delta',
+      'difftastic',
+      'diff-so-fancy',
+      'gdu',
+      'procs',
+      'bandwhich',
+      'grex',
+      'choose',
+      'sd',
+      'dog',
+      'drill',
+      'xh',
+      'httpie',
+      'curlie',
     ],
 
-    // Networking & Communication
     'Networking': [
-      'nginxorg', // nginx.org -> nginx
-      'apacheorg', // apache.org -> httpd
-      'haproxyorg', // haproxy.org -> haproxy
-      'traefikio', // traefik.io -> traefik
-      'caddyservercom', // caddyserver.com -> caddy
-      'envoyproxyio', // envoyproxy.io -> envoy
-      'opensshcom', // openssh.com -> ssh, scp, sftp
-      'curlse', // curl.se -> curl
-      'wgetgnuorg', // wget.gnu.org -> wget
-      'httpieio', // httpie.io -> http, https
-      'nmaporg', // nmap.org -> nmap
-      'wiresharkorg', // wireshark.org -> wireshark
-      'tcpdumporg', // tcpdump.org -> tcpdump
-      'netcatsourceforge', // netcat.sourceforge.net -> nc
-      'sosocatorg', // socat.org -> socat
-      'rsyncsamba', // rsync.samba.org -> rsync
-      'openrestryorg', // openresty.org -> openresty
-      'cloudflarecomcloudflared', // cloudflare.com/cloudflared -> cloudflared
-      'wirehuardcom', // wireguard.com -> wg
-      'openvpnnet', // openvpn.net -> openvpn
-      'sshxio', // sshx.io -> sshx
+      'nginx',
+      'httpd',
+      'caddy',
+      'traefik',
+      'curl',
+      'wget',
+      'httpie',
+      'cloudflared',
+      'openssh',
+      'rsync',
+      'mosh',
     ],
 
     'Security & Cryptography': [
-      'opensslorg', // openssl.org -> openssl
-      'gnupgorg', // gnupg.org -> gpg
-      'githubcomorhundevgpgtui', // orhun.dev/gpg-tui -> gpg-tui
-      'githubcomhashicorpvault', // hashicorp.com/vault -> vault
-      'keep_assxcorg', // keepassxc.org -> keepassxc
-      'bitwardencom', // bitwarden.com -> bw
-      'onepasswordcom', // 1password.com -> op
-      'lastpasscom', // lastpass.com -> lpass
-      'yubicocom', // yubico.com -> ykchalresp
-      'mkcertdev', // mkcert.dev -> mkcert
-      'letsencryptorg', // letsencrypt.org -> certbot
-      'filippoioage', // filippo.io/age -> age
-      'filippoioyubikeyagent', // filippo.io/yubikey-agent -> yubikey-agent
-      'cosignsigstoredev', // cosign.sigstore.dev -> cosign
-      'gitsignsigstoredev', // gitsign.sigstore.dev -> gitsign
-      'tailscalecom', // tailscale.com -> tailscale
-      'zerotiercom', // zerotier.com -> zerotier-one
-      'snykio', // snyk.io -> snyk
-      'trivy_aquasecuritygithubio', // aquasecurity.github.io/trivy -> trivy
-      'tfsec_aquasecuritygithubio', // aquasecurity.github.io/tfsec -> tfsec
-      'checkifsecuritycom', // checkov.io -> checkov
+      'OpenSSL',
+      'gpg',
+      'gpg-tui',
+      'vault',
+      'bw',
+      'op',
+      '1Password CLI',
+      '1password_cli',
+      'mkcert',
+      'certbot',
+      'age',
+      'yubikey-agent',
+      'snyk',
+      'trivy',
+      'tfsec',
+      'checkov',
     ],
 
-    // Multimedia & Graphics
     'Multimedia': [
-      'ffmpegorg', // ffmpeg.org -> ffmpeg, ffplay, ffprobe
-      'imagemagickorg', // imagemagick.org -> convert, identify
-      'graphicsmagickorg', // graphicsmagick.org -> gm
-      'libvipsorg', // libvips.org -> vips
-      'gimporg', // gimp.org -> gimp
-      'inkscapeorg', // inkscape.org -> inkscape
-      'blenderorg', // blender.org -> blender
-      'handbrake_fr', // handbrake.fr -> HandBrakeCLI
-      'vlcvideolan', // vlc.videolan.org -> vlc
-      'mpvio', // mpv.io -> mpv
-      'youtube_dlorg', // youtube-dl.org -> youtube-dl
-      'yt_dlporg', // yt-dlp.org -> yt-dlp
-      'streamlinkgithubio', // streamlink.github.io -> streamlink
-      'obs_studiocom', // obs-studio.com -> obs
-      'audacityteamorg', // audacity.team.org -> audacity
-      'gifsiclelcdforg', // gifsicle.lcdf.org -> gifsicle
-      'exiftoollib', // exiftool.lib.org -> exiftool
-      'pngquant', // pngquant.org -> pngquant
-      'optipngorg', // optipng.org -> optipng
-      'jpegoptimgithubcom', // github.com/tjko/jpegoptim -> jpegoptim
+      'ffmpeg',
+      'vips',
+      'mpv',
+      'yt-dlp',
+      'streamlink',
+      'gifsicle',
+      'exiftool',
+      'optipng',
+      'imagemagick',
     ],
 
     'Graphics Libraries': [
@@ -832,26 +865,14 @@ function getCategoryMapping(): Record<string, string[]> {
       'gpiozeropythonorg', // gpiozero.python.org -> gpiozero
     ],
 
-    // Version Control & Git Tools
     'Version Control': [
-      'gitscmcom', // git-scm.org -> git
-      'githubcomcli', // github.com/cli -> gh
-      'gitlabcom', // gitlab.com -> glab
-      'githubcomgithub', // github.com/github -> github
-      'mercurialscmorg', // mercurial-scm.org -> hg
-      'apache_subversionorg', // apache.org/subversion -> svn
-      'bazaargithubio', // bazaar.github.io -> bzr
-      'fossil_scmorg', // fossil-scm.org -> fossil
-      'darcsnet', // darcs.net -> darcs
-      'githubcomgitcliff', // github.com/git-cliff -> git-cliff
-      'githubcomgitlfs', // github.com/git-lfs -> git-lfs
-      'githubcomgitquickstats', // github.com/git-quick-stats -> git-quick-stats
-      'githubcomgittown', // github.com/git-town -> git-town
-      'ghtoolsgithubcom', // github.com/github/hub -> hub
-      'gitignoreiogithubcom', // gitignore.io -> gitignore
-      'githubcomdeltadevcidelta', // github.com/dandavison/delta -> delta
-      'githubcomcargocprojects', // github.com/crate-ci/cargo-release -> cargo-release
+      'git',
+      'gh',
+      'gitlab',
     ],
+
+    // Catch-all for remaining packages
+    'Other Utilities': [],
   }
 }
 
@@ -1762,7 +1783,32 @@ Each package can be accessed using \`getPackage(name)\` or directly via \`pantry
   // Generate table of contents
   Object.keys(categories).forEach((category) => {
     const slug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-')
-    const count = categories[category].filter(domain => domainToPackage.has(domain)).length
+    // Convert domain variable names to actual domains and count valid packages
+    const domainVarNames = categories[category]
+    const packagesMap = new Map<string, { domainVarName: string, pkg: PkgxPackage }>()
+
+    // First pass: collect all packages and deduplicate by domain
+    domainVarNames.forEach((domainVarName) => {
+      const pkg = pantry[domainVarName]
+      if (pkg && !shouldExcludePackage(pkg)) {
+        const domain = pkg.domain || pkg.fullPath || 'unknown'
+        // Use the same deterministic logic as other functions
+        if (!packagesMap.has(domain)) {
+          packagesMap.set(domain, { domainVarName, pkg })
+        }
+        else {
+          const existing = packagesMap.get(domain)!
+          // Prefer shorter variable names (usually the primary ones)
+          // If lengths are equal, prefer alphabetically first (for deterministic results)
+          if (domainVarName.length < existing.domainVarName.length
+            || (domainVarName.length === existing.domainVarName.length && domainVarName < existing.domainVarName)) {
+            packagesMap.set(domain, { domainVarName, pkg })
+          }
+        }
+      }
+    })
+
+    const count = packagesMap.size
     content += `- [${category}](#${slug}) (${count} packages)\n`
   })
 

@@ -6,13 +6,23 @@ Popular programming languages and their runtimes available through pkgx.
 
 ## Packages
 
-### [erlang.org](../packages/erlang.org/index.md)
+### [crystal-lang.org](../packages/crystal-lang.org/index.md) (crystal)
 
-Programming language for highly scalable real-time systems
+Fast and statically typed, compiled language with Ruby-like syntax
 
-**Programs**: ct_run, dialyzer, epmd, erl, erlc, escript, run_erl, to_erl, typer
+**Programs**: crystal
 
-**Install**: `launchpad install erlang.org`
+**Install**: `launchpad install crystal`
+
+---
+
+### [dart.dev](../packages/dart.dev/index.md) (dart)
+
+The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more.
+
+**Programs**: dart, dartaotruntime
+
+**Install**: `launchpad install dart`
 
 ---
 
@@ -26,16 +36,6 @@ The Go programming language
 
 ---
 
-### [haskell.org](../packages/haskell.org/index.md)
-
-Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).
-
-**Programs**: ghc, ghc-9.12, ghc-9.12.2, ghc-pkg, ghc-pkg-9.12, ghc-pkg-9.12.2, ghci, ghci-9.12, ghci-9.12.2, ghcup, haddock, haddock-9.12, haddock-9.12.2, hp2ps, hp2ps-9.12, hp2ps-9.12.2, hpc, hpc-9.12, hpc-9.12.2, hsc2hs, hsc2hs-9.12, hsc2hs-9.12.2, runghc, runghc-9.12, runghc-9.12.2, runhaskell, runhaskell-9.12, runhaskell-9.12.2
-
-**Install**: `launchpad install haskell.org`
-
----
-
 ### [julialang.org](../packages/julialang.org/index.md) (julia)
 
 The Julia Programming Language
@@ -43,16 +43,6 @@ The Julia Programming Language
 **Programs**: julia
 
 **Install**: `launchpad install julia`
-
----
-
-### [kotlinlang.org](../packages/kotlinlang.org/index.md)
-
-Statically typed programming language for the JVM
-
-**Programs**: kapt, kotlin, kotlinc, kotlinc-js, kotlinc-jvm
-
-**Install**: `launchpad install kotlinlang.org`
 
 ---
 
@@ -86,16 +76,6 @@ Platform built on V8 to build network applications
 
 ---
 
-### [perl.org](../packages/perl.org/index.md)
-
-Highly capable, feature-rich programming language
-
-**Programs**: corelist, cpan, enc2xs, encguess, h2ph, h2xs, instmodsh, json_pp, libnetcfg, perl, perlbug, perldoc, perlivp, perlthanks, piconv, pl2pm, pod2html, pod2man, pod2text, pod2usage, podchecker, prove, ptar, ptardiff, ptargrep, shasum, splain, streamzip, xsubpp, zipdetails
-
-**Install**: `launchpad install perl.org`
-
----
-
 ### [php.net](../packages/php.net/index.md) (php)
 
 General-purpose scripting language
@@ -113,6 +93,26 @@ The Python programming language
 **Programs**: python, python3, python3.13
 
 **Install**: `launchpad install py`
+
+---
+
+### [ruby-lang.org](../packages/ruby-lang.org/index.md) (ruby)
+
+Powerful, clean, object-oriented scripting language
+
+**Programs**: erb, irb, rake, rdoc, ri, ruby
+
+**Install**: `launchpad install ruby`
+
+---
+
+### [rust-lang.org](../packages/rust-lang.org/index.md) (rust)
+
+Empowering everyone to build reliable and efficient software.
+
+**Programs**: cargo-clippy, cargo-fmt, clippy-driver, rust-analyzer, rust-gdb, rust-gdbgui, rust-lldb, rustc, rustdoc, rustfmt
+
+**Install**: `launchpad install rust`
 
 ---
 

@@ -1,10 +1,20 @@
 # Databases
 
-*11 packages in this category*
+*13 packages in this category*
 
 Database systems and data storage solutions.
 
 ## Packages
+
+### [dgraph.io](../packages/dgraph.io/index.md) (dgraph)
+
+high-performance graph database for real-time use cases
+
+**Programs**: dgraph
+
+**Install**: `launchpad install dgraph`
+
+---
 
 ### [duckdb.org](../packages/duckdb.org/index.md) (duckdb)
 
@@ -13,6 +23,16 @@ DuckDB is an analytical in-process SQL database management system
 **Programs**: duckdb
 
 **Install**: `launchpad install duckdb`
+
+---
+
+### [edgedb.com](../packages/edgedb.com/index.md) (edgedb)
+
+The EdgeDB CLI
+
+**Programs**: edgedb
+
+**Install**: `launchpad install edgedb`
 
 ---
 
@@ -26,23 +46,23 @@ Distributed reliable key-value store for the most critical data of a distributed
 
 ---
 
-### [mongodb.com](../packages/mongodb.com/index.md)
+### [litecli.com](../packages/litecli.com/index.md) (litecli)
 
-The MongoDB Database
+CLI for SQLite Databases with auto-completion and syntax highlighting
 
-**Programs**: install_compass, mongod, mongos
+**Programs**: litecli
 
-**Install**: `launchpad install mongodb.com`
+**Install**: `launchpad install litecli`
 
 ---
 
-### [mysql.com](../packages/mysql.com/index.md)
+### [mongodb.com/shell](../packages/mongodb.com/shell/index.md) (mongosh)
 
-MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.
+MongoDB Shell to connect, configure, query, and work with your MongoDB database
 
-**Programs**: mysql_client_test, my_print_defaults, myisam_ftdump, myisamchk, myisamlog, myisampack, mysql, mysql_config, mysql_config_editor, mysql_keyring_encryption_test, mysql_migrate_keyring, mysql_secure_installation, mysql_tzinfo_to_sql, mysqladmin, mysqlbinlog, mysqlcheck, mysqld, mysqld_multi, mysqld_safe, mysqldump, mysqldumpslow, mysqlimport, mysqlrouter, mysqlrouter_keyring, mysqlrouter_passwd, mysqlrouter_plugin_info, mysqlshow, mysqlslap, mysqltest, mysqltest_safe_process, mysqlxtest
+**Programs**: mongosh
 
-**Install**: `launchpad install mysql.com`
+**Install**: `launchpad install mongosh`
 
 ---
 
@@ -56,13 +76,13 @@ MySQL Server, the world's most popular open source database, and MySQL Cluster, 
 
 ---
 
-### [postgresql.org](../packages/postgresql.org/index.md)
+### [postgrest.org](../packages/postgrest.org/index.md) (postgrest)
 
-Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
+Serves a fully RESTful API from any existing PostgreSQL database
 
-**Programs**: clusterdb, createdb, dropdb, dropuser, ecpg, initdb, pg_archivecleanup, pg_basebackup, pg_config, pg_controldata, pg_ctl, pg_dump, pg_dumpall, pg_isready, pg_receivewal, pg_recvlogical, pg_resetwal, pg_restore, pg_rewind, pg_test_fsync, pg_test_timing, pg_upgrade, pg_waldump, pgbench, postgres, psql, reindexdb, vacuumdb
+**Programs**: postgrest
 
-**Install**: `launchpad install postgresql.org`
+**Install**: `launchpad install postgrest`
 
 ---
 

@@ -1,38 +1,28 @@
 # Multimedia
 
-*8 packages in this category*
+*7 packages in this category*
 
 Audio, video, and image processing tools.
 
 ## Packages
 
-### [ffmpeg.org](../packages/ffmpeg.org/index.md)
+### [exiftool.org](../packages/exiftool.org/index.md) (exiftool)
 
-Play, record, convert, and stream audio and video
+Perl lib for reading and writing EXIF metadata
 
-**Programs**: ffmpeg, ffplay, ffprobe
+**Programs**: exiftool
 
-**Install**: `launchpad install ffmpeg.org`
-
----
-
-### [graphicsmagick.org](../packages/graphicsmagick.org/index.md) (gm)
-
-Image processing tools collection
-
-**Programs**: gm
-
-**Install**: `launchpad install gm`
+**Install**: `launchpad install exiftool`
 
 ---
 
-### [imagemagick.org](../packages/imagemagick.org/index.md)
+### [lcdf.org/gifsicle](../packages/lcdf.org/gifsicle/index.md) (gifsicle)
 
-ImageMagick is a powerful, open-source software suite for creating, editing, converting, and manipulating images in over 200 formats. Ideal for web developers, graphic designers, and researchers, it offers versatile tools for image processing, including batch processing, format conversion, and complex image transformations.
+Create, manipulate, and optimize GIF images and animations
 
-**Programs**: animate, compare, composite, conjure, convert, display, identify, import, magick, magick-script, Magick++-config, MagickCore-config, MagickWand-config, mogrify, montage, stream
+**Programs**: gifsicle
 
-**Install**: `launchpad install imagemagick.org`
+**Install**: `launchpad install gifsicle`
 
 ---
 
@@ -56,6 +46,16 @@ Media player based on MPlayer and mplayer2
 
 ---
 
+### [sf.net/optipng](../packages/sf.net/optipng/index.md) (optipng)
+
+PNG file optimizer
+
+**Programs**: optipng
+
+**Install**: `launchpad install optipng`
+
+---
+
 ### [streamlink.github.io](../packages/streamlink.github.io/index.md) (streamlink)
 
 Streamlink is a CLI utility which pipes video streams from various services into a video player
@@ -63,16 +63,6 @@ Streamlink is a CLI utility which pipes video streams from various services into
 **Programs**: streamlink
 
 **Install**: `launchpad install streamlink`
-
----
-
-### [youtube-dl.org](../packages/youtube-dl.org/index.md) (youtube-dl)
-
-Command-line program to download videos from YouTube.com and other video sites
-
-**Programs**: youtube-dl
-
-**Install**: `launchpad install youtube-dl`
 
 ---
 

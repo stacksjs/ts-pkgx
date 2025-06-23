@@ -1,10 +1,30 @@
 # Monitoring & Observability
 
-*3 packages in this category*
+*4 packages in this category*
 
 Packages related to monitoring & observability.
 
 ## Packages
+
+### [github.com/allure-framework/allure2](../packages/github.com/allure-framework/allure2.md) (allure)
+
+Allure Report is a flexible, lightweight multi-language test reporting tool. It provides clear graphical reports and allows everyone involved in the development process to extract the maximum of information from the everyday testing process
+
+**Programs**: allure
+
+**Install**: `launchpad install allure`
+
+---
+
+### [grafana.com/loki](../packages/grafana.com/loki/index.md) (loki)
+
+Horizontally-scalable, highly-available log aggregation system
+
+**Programs**: loki
+
+**Install**: `launchpad install loki`
+
+---
 
 ### [logdy.dev](../packages/logdy.dev/index.md) (logdy)
 
@@ -13,16 +33,6 @@ Web based real-time log viewer. Stream ANY content to a web UI with autogenerate
 **Programs**: logdy
 
 **Install**: `launchpad install logdy`
-
----
-
-### [sentry.io](../packages/sentry.io/index.md) (sentry-cli)
-
-Command-line utility to interact with Sentry
-
-**Programs**: sentry-cli
-
-**Install**: `launchpad install sentry-cli`
 
 ---
 

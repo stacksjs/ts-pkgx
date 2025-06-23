@@ -1,28 +1,58 @@
 # Editors & IDEs
 
-*4 packages in this category*
+*8 packages in this category*
 
 Packages related to editors & ides.
 
 ## Packages
 
-### [lunarvim.org](../packages/lunarvim.org/index.md)
+### [alacritty.org](../packages/alacritty.org/index.md) (alacritty)
 
-🌙 LunarVim is an IDE layer for Neovim. Completely free and community driven.
+A cross-platform, OpenGL terminal emulator.
 
-**Programs**: lvim, nvim
+**Programs**: alacritty
 
-**Install**: `launchpad install lunarvim.org`
+**Install**: `launchpad install alacritty`
 
 ---
 
-### [macvim.org](../packages/macvim.org/index.md)
+### [gnu.org/emacs](../packages/gnu.org/emacs/index.md) (emacs)
 
-Vim - the text editor - for macOS
+GNU Emacs text editor
 
-**Programs**: gview, gvim, gvimdiff, gvimtutor, mview, mvim, mvimdiff, mvimtutor, view, vim, vimdiff, vimtutor
+**Programs**: emacs
 
-**Install**: `launchpad install macvim.org`
+**Install**: `launchpad install emacs`
+
+---
+
+### [micro-editor.github.io](../packages/micro-editor.github.io/index.md) (micro)
+
+A modern and intuitive terminal-based text editor
+
+**Programs**: micro
+
+**Install**: `launchpad install micro`
+
+---
+
+### [microsoft.com/code-cli](../packages/microsoft.com/code-cli/index.md) (vscode cli, code)
+
+Command-line interface built-in Visual Studio Code
+
+**Programs**: code
+
+**Install**: `launchpad install code`
+
+---
+
+### [nano-editor.org](../packages/nano-editor.org/index.md) (nano)
+
+Free (GNU) replacement for the Pico text editor
+
+**Programs**: nano
+
+**Install**: `launchpad install nano`
 
 ---
 
@@ -43,6 +73,16 @@ The official Vim repository
 **Programs**: vim, vi
 
 **Install**: `launchpad install vi`
+
+---
+
+### [wezfurlong.org/wezterm](../packages/wezfurlong.org/wezterm/index.md) (wezterm)
+
+A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
+
+**Programs**: wezterm
+
+**Install**: `launchpad install wezterm`
 
 ---
 

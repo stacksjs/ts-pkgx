@@ -6,6 +6,16 @@ Network tools, protocols, and communication software.
 
 ## Packages
 
+### [apache.org/httpd](../packages/apache.org/httpd/index.md)
+
+Apache HTTP server
+
+**Programs**: ab, apachectl, checkgid, fcgistarter, htcacheclean, htdbm, htdigest, htpasswd, httpd, httxt2dbm, logresolve, rotatelogs, suexec
+
+**Install**: `launchpad install apache.org/httpd`
+
+---
+
 ### [caddyserver.com](../packages/caddyserver.com/index.md) (caddy)
 
 Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
@@ -13,6 +23,16 @@ Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
 **Programs**: caddy
 
 **Install**: `launchpad install caddy`
+
+---
+
+### [cloudflare.com/cloudflared](../packages/cloudflare.com/cloudflared/index.md) (cloudflared)
+
+Cloudflare Tunnel client (formerly Argo Tunnel)
+
+**Programs**: cloudflared
+
+**Install**: `launchpad install cloudflared`
 
 ---
 
@@ -26,13 +46,23 @@ A command line tool and library for transferring data with URL syntax, supportin
 
 ---
 
-### [httpie.io](../packages/httpie.io/index.md)
+### [gnu.org/wget](../packages/gnu.org/wget/index.md) (wget)
 
-🥧 HTTPie CLI — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more.
+Internet file retriever
 
-**Programs**: http, httpie, https
+**Programs**: wget
 
-**Install**: `launchpad install httpie.io`
+**Install**: `launchpad install wget`
+
+---
+
+### [mosh.org](../packages/mosh.org/index.md) (mosh)
+
+Remote terminal application
+
+**Programs**: mosh-client, mosh-server
+
+**Install**: `launchpad install mosh`
 
 ---
 
@@ -46,33 +76,13 @@ HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 
 ---
 
-### [nmap.org](../packages/nmap.org/index.md)
+### [rsync.samba.org](../packages/rsync.samba.org/index.md) (rsync)
 
-Port scanning utility for large networks
+An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases.
 
-**Programs**: nmap, ncat, nping
+**Programs**: rsync, rsync-ssl
 
-**Install**: `launchpad install nmap.org`
-
----
-
-### [sshx.io](../packages/sshx.io/index.md) (sshx)
-
-Fast, collaborative live terminal sharing over the web
-
-**Programs**: sshx
-
-**Install**: `launchpad install sshx`
-
----
-
-### [tcpdump.org](../packages/tcpdump.org/index.md) (pcap-config)
-
-the LIBpcap interface to various kernel packet capture mechanism
-
-**Programs**: pcap-config
-
-**Install**: `launchpad install pcap-config`
+**Install**: `launchpad install rsync`
 
 ---
 
@@ -83,16 +93,6 @@ The Cloud Native Application Proxy
 **Programs**: traefik
 
 **Install**: `launchpad install traefik`
-
----
-
-### [wireshark.org](../packages/wireshark.org/index.md)
-
-Network analyzer and capture tool - without graphical user interface
-
-**Programs**: capinfos, captype, dumpcap, editcap, idl2wrs, mergecap, mmdbresolve, randpkt, rawshark, reordercap, sharkd, text2pcap, tshark
-
-**Install**: `launchpad install wireshark.org`
 
 ---
 
