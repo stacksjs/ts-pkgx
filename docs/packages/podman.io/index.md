@@ -61,7 +61,7 @@ This package depends on:
 
 These packages work well with podman:
 
-- [`openssh.com`](../openssh.com/index.md) - 
+- `openssh.com`
 
 ## Usage Examples
 

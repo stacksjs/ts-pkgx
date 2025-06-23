@@ -2241,7 +2241,7 @@ These packages work well with ${pkg.name || domain}:
         pkg.companions.forEach((companion) => {
           const companionVarName = convertDomainToVarName(companion)
           const companionPkg = pantry[companionVarName]
-          if (companionPkg) {
+          if (companionPkg && !shouldExcludePackage(companionPkg)) {
             // Calculate the companion file path using the same logic as main generation
             const companionFilePath = calculatePackageFilePath(companion, companionVarName, packagesDir)
 
