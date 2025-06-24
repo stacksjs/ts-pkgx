@@ -3,7 +3,7 @@
  *
  * @domain `apollographql.com/rover`
  * @programs `rover`
- * @version `0.34.0` (28 versions available)
+ * @version `0.34.1` (29 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rover`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "rover"
  * console.log(pkg.description) // "CLI for managing and maintaining data graphs wi..."
  * console.log(pkg.programs)    // ["rover"]
- * console.log(pkg.versions[0]) // "0.34.0" (latest)
+ * console.log(pkg.versions[0]) // "0.34.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/apollographql-com/rover.md
@@ -71,6 +71,7 @@ export const roverPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.34.1',
     '0.34.0',
     '0.33.0',
     '0.32.1',

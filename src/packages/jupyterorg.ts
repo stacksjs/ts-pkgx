@@ -3,7 +3,7 @@
  *
  * @domain `jupyter.org`
  * @programs `jlpm`, `jupyter`, `jupyter-bundlerextension`, `jupyter-dejavu`, `jupyter-events`, ... (+19 more)
- * @version `4.4.3` (49 versions available)
+ * @version `4.4.3` (50 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jupyter.org`
@@ -92,6 +92,7 @@ export const jupyterorgPackage = {
     '4.4.2',
     '4.4.1',
     '4.4.0',
+    '4.3.8',
     '4.3.7',
     '4.3.6',
     '4.3.5',
