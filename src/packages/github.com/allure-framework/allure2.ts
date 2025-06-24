@@ -3,7 +3,7 @@
  *
  * @domain `github.com/allure-framework/allure2`
  * @programs `allure`
- * @version `2.34.0` (10 versions available)
+ * @version `2.34.1` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install allure`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "allure"
  * console.log(pkg.description) // "Allure Report is a flexible, lightweight multi-..."
  * console.log(pkg.programs)    // ["allure"]
- * console.log(pkg.versions[0]) // "2.34.0" (latest)
+ * console.log(pkg.versions[0]) // "2.34.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/allure-framework/allure2.md
@@ -69,6 +69,7 @@ export const allurePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.34.1',
     '2.34.0',
     '2.33.0',
     '2.32.2',
