@@ -1,11 +1,11 @@
-# tv-cli
+# tv
 
-> Package from pantry: crates.io/tv-cli
+> Format json into table view
 
 ## Package Information
 
 - **Domain**: `crates.io/tv-cli`
-- **Name**: `tv-cli`
+- **Name**: `tv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/tv-cli/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/tv-cli
+launchpad install tv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `tv`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.7.0`
+
+</details>
+
+**Latest Version**: `0.7.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) tv -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['tv-cli']
+const pkg = pantry.tv
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

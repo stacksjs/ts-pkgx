@@ -1,24 +1,34 @@
 /**
- * **rust-kanban** - Package from pantry: crates.io/rust-kanban
+ * **rust-kanban** - A kanban board for the terminal built with ❤️ in Rust
  *
  * @domain `crates.io/rust-kanban`
+ * @programs `rust-kanban`
+ * @version `0.10.5` (8 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install crates.io/rust-kanban`
+ * @install `launchpad install rust-kanban`
+ * @name `rust-kanban`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cratesiorustkanban
+ * // Access the package
+ * const pkg = pantry.rustkanban
+ * // Or access via domain
+ * const samePkg = pantry.cratesiorustkanban
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "rust-kanban"
- * console.log(pkg.description) // "Package from pantry: crates.io/rust-kanban"
+ * console.log(pkg.description) // "A kanban board for the terminal built with ❤️ i..."
+ * console.log(pkg.programs)    // ["rust-kanban"]
+ * console.log(pkg.versions[0]) // "0.10.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/rust-kanban.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cratesiorustkanbanPackage = {
+export const rustkanbanPackage = {
   /**
    * The display name of this package.
    */
@@ -30,15 +40,22 @@ export const cratesiorustkanbanPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: crates.io/rust-kanban' as const,
+  description: 'A kanban board for the terminal built with ❤️ in Rust' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rust-kanban/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install crates.io/rust-kanban' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/rust-kanban -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/rust-kanban' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install rust-kanban' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'rust-kanban',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,27 @@ export const cratesiorustkanbanPackage = {
   dependencies: [
     'openssl.org^1.1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rust-kanban/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.10.5',
+    '0.10.4',
+    '0.10.3',
+    '0.10.2',
+    '0.10.1',
+    '0.10.0',
+    '0.9.7',
+    '0.9.6',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rust-kanban -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rust-kanban' as const,
 }
 
-export type CratesiorustkanbanPackage = typeof cratesiorustkanbanPackage
+export type RustkanbanPackage = typeof rustkanbanPackage

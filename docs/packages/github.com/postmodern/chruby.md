@@ -1,11 +1,11 @@
-# chruby
+# chruby-exec
 
-> Package from pantry: github.com/postmodern/chruby
+> Changes the current Ruby
 
 ## Package Information
 
 - **Domain**: `github.com/postmodern/chruby`
-- **Name**: `chruby`
+- **Name**: `chruby-exec`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/postmodern/chruby/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/postmodern/chruby
+launchpad install chruby-exec
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `chruby-exec`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.3.9`
+
+</details>
+
+**Latest Version**: `0.3.9`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) chruby-exec -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.chruby
+const pkg = pantry['chruby-exec']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

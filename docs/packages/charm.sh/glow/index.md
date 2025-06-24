@@ -1,6 +1,6 @@
 # glow
 
-> Package from pantry: charm.sh/glow
+> Render markdown on the CLI, with pizzazz! 💅🏻
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install charm.sh/glow
+launchpad install glow
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `glow`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `2.1.1`, `2.1.0`, `2.0.0`, `1.5.1`, `1.5.0`
+- `1.4.1`
+
+</details>
+
+**Latest Version**: `2.1.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) glow -- $SHELL -i
+```
 
 ## Usage Examples
 

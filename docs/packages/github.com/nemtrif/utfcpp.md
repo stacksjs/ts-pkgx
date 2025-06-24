@@ -1,11 +1,11 @@
-# utfcpp
+# utf8cpp
 
-> Package from pantry: github.com/nemtrif/utfcpp
+> UTF-8 with C++ in a Portable Way
 
 ## Package Information
 
 - **Domain**: `github.com/nemtrif/utfcpp`
-- **Name**: `utfcpp`
+- **Name**: `utf8cpp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/nemtrif/utfcpp/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/nemtrif/utfcpp
+launchpad install utf8cpp
 ```
 
 ## Programs
@@ -22,13 +22,32 @@ This package provides the following executable programs:
 
 *No programs specified*
 
+## Available Versions
+
+<details>
+<summary>Show all 10 versions</summary>
+
+- `4.0.6`, `4.0.5`, `4.0.4`, `4.0.3`, `4.0.2`
+- `4.0.1`, `4.0.0`, `3.2.5`, `3.2.4`, `3.2.3`
+
+</details>
+
+**Latest Version**: `4.0.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/nemtrif/utfcpp@4.0.6 -- $SHELL -i
+```
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.utfcpp
+const pkg = pantry.utf8cpp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

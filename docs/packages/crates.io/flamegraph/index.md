@@ -1,11 +1,11 @@
-# flamegraph
+# crates.io/flamegraph
 
-> Package from pantry: crates.io/flamegraph
+> Easy flamegraphs for Rust projects and everything else, without Perl or pipes <3
 
 ## Package Information
 
 - **Domain**: `crates.io/flamegraph`
-- **Name**: `flamegraph`
+- **Name**: `crates.io/flamegraph`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/flamegraph/package.yml)
 
@@ -20,7 +20,26 @@ launchpad install crates.io/flamegraph
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `flamegraph`
+- `cargo-flamegraph`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.6.8`, `0.6.7`
+
+</details>
+
+**Latest Version**: `0.6.8`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +crates.io/flamegraph@0.6.8 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +47,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.flamegraph
+const pkg = pantry['crates.io/flamegraph']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

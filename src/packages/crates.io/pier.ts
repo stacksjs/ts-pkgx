@@ -1,23 +1,33 @@
 /**
- * **pier** - Package from pantry: crates.io/pier
+ * **pier** - A Linux script management CLI written in Rust
  *
  * @domain `crates.io/pier`
+ * @programs `pier`
+ * @version `0.1.6` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install crates.io/pier`
+ * @install `launchpad install pier`
+ * @name `pier`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cratesiopier
+ * // Access the package
+ * const pkg = pantry.pier
+ * // Or access via domain
+ * const samePkg = pantry.cratesiopier
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "pier"
- * console.log(pkg.description) // "Package from pantry: crates.io/pier"
+ * console.log(pkg.description) // "A Linux script management CLI written in Rust"
+ * console.log(pkg.programs)    // ["pier"]
+ * console.log(pkg.versions[0]) // "0.1.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/pier.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cratesiopierPackage = {
+export const pierPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,39 @@ export const cratesiopierPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: crates.io/pier' as const,
+  description: 'A Linux script management CLI written in Rust' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/pier/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install crates.io/pier' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/pier -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/pier' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install pier' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'pier',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/pier/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.1.6',
+    '0.1.5',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pier -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pier' as const,
 }
 
-export type CratesiopierPackage = typeof cratesiopierPackage
+export type PierPackage = typeof pierPackage

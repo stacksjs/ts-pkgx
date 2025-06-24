@@ -1,6 +1,6 @@
 # pier
 
-> Package from pantry: crates.io/pier
+> A Linux script management CLI written in Rust
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/pier
+launchpad install pier
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pier`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.1.6`, `0.1.5`
+
+</details>
+
+**Latest Version**: `0.1.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) pier -- $SHELL -i
+```
 
 ## Usage Examples
 

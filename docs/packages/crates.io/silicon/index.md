@@ -1,6 +1,6 @@
 # silicon
 
-> Package from pantry: crates.io/silicon
+> Create beautiful image of your source code.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/silicon
+launchpad install silicon
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `silicon`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.5.3`, `0.5.2`, `0.5.1`
+
+</details>
+
+**Latest Version**: `0.5.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) silicon -- $SHELL -i
+```
 
 ## Dependencies
 

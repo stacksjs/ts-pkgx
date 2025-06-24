@@ -1,6 +1,6 @@
 # CLI Tools & Utilities
 
-*31 packages in this category*
+*35 packages in this category*
 
 Command-line utilities and system tools.
 
@@ -8,311 +8,351 @@ Command-line utilities and system tools.
 
 ### [crates.io/bat](../packages/crates.io/bat/index.md) (bat)
 
-Package from pantry: crates.io/bat
+Clone of cat(1) with syntax highlighting and Git integration
 
-**Programs**: None specified
+**Programs**: bat
 
-**Install**: `launchpad install crates.io/bat`
+**Install**: `launchpad install bat`
 
 ---
 
-### [crates.io/bottom](../packages/crates.io/bottom/index.md) (bottom)
+### [crates.io/bottom](../packages/crates.io/bottom/index.md) (btm)
 
-Package from pantry: crates.io/bottom
+Yet another cross-platform graphical process/system monitor.
 
-**Programs**: None specified
+**Programs**: btm
 
-**Install**: `launchpad install crates.io/bottom`
+**Install**: `launchpad install btm`
 
 ---
 
 ### [crates.io/drill](../packages/crates.io/drill/index.md) (drill)
 
-Package from pantry: crates.io/drill
+Drill is an HTTP load testing application written in Rust
 
-**Programs**: None specified
+**Programs**: drill
 
-**Install**: `launchpad install crates.io/drill`
+**Install**: `launchpad install drill`
 
 ---
 
-### [crates.io/du-dust](../packages/crates.io/du-dust/index.md) (du-dust)
+### [crates.io/du-dust](../packages/crates.io/du-dust/index.md) (dust)
 
-Package from pantry: crates.io/du-dust
+A more intuitive version of du in rust
 
-**Programs**: None specified
+**Programs**: dust
 
-**Install**: `launchpad install crates.io/du-dust`
+**Install**: `launchpad install dust`
 
 ---
 
 ### [crates.io/exa](../packages/crates.io/exa/index.md) (exa)
 
-Package from pantry: crates.io/exa
+A modern replacement for ‘ls’.
 
-**Programs**: None specified
+**Programs**: exa
 
-**Install**: `launchpad install crates.io/exa`
+**Install**: `launchpad install exa`
 
 ---
 
 ### [crates.io/eza](../packages/crates.io/eza/index.md) (eza)
 
-Package from pantry: crates.io/eza
+Modern, maintained replacement for ls
 
-**Programs**: None specified
+**Programs**: eza
 
-**Install**: `launchpad install crates.io/eza`
-
----
-
-### [crates.io/fd-find](../packages/crates.io/fd-find/index.md) (fd-find)
-
-Package from pantry: crates.io/fd-find
-
-**Programs**: None specified
-
-**Install**: `launchpad install crates.io/fd-find`
+**Install**: `launchpad install eza`
 
 ---
 
-### [crates.io/git-delta](../packages/crates.io/git-delta/index.md) (git-delta)
+### [crates.io/git-delta](../packages/crates.io/git-delta/index.md) (delta)
 
-Package from pantry: crates.io/git-delta
+A syntax-highlighting pager for git, diff, grep, and blame output
 
-**Programs**: None specified
+**Programs**: delta
 
-**Install**: `launchpad install crates.io/git-delta`
+**Install**: `launchpad install delta`
 
 ---
 
 ### [crates.io/hyperfine](../packages/crates.io/hyperfine/index.md) (hyperfine)
 
-Package from pantry: crates.io/hyperfine
+A command-line benchmarking tool
 
-**Programs**: None specified
+**Programs**: hyperfine
 
-**Install**: `launchpad install crates.io/hyperfine`
-
----
-
-### [crates.io/ripgrep](../packages/crates.io/ripgrep/index.md) (ripgrep)
-
-Package from pantry: crates.io/ripgrep
-
-**Programs**: None specified
-
-**Install**: `launchpad install crates.io/ripgrep`
+**Install**: `launchpad install hyperfine`
 
 ---
 
-### [crates.io/ripgrep-all](../packages/crates.io/ripgrep-all/index.md) (ripgrep-all)
+### [crates.io/ripgrep](../packages/crates.io/ripgrep/index.md) (rg)
 
-Package from pantry: crates.io/ripgrep-all
+ripgrep recursively searches directories for a regex pattern while respecting your gitignore
 
-**Programs**: None specified
+**Programs**: rg
 
-**Install**: `launchpad install crates.io/ripgrep-all`
+**Install**: `launchpad install rg`
+
+---
+
+### [crates.io/ripgrep-all](../packages/crates.io/ripgrep-all/index.md) (rga)
+
+rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
+
+**Programs**: rga, rga-fzf, rga-fzf-open, rga-preproc
+
+**Install**: `launchpad install rga`
 
 ---
 
 ### [crates.io/sd](../packages/crates.io/sd/index.md) (sd)
 
-Package from pantry: crates.io/sd
+Intuitive find & replace CLI (sed alternative)
 
-**Programs**: None specified
+**Programs**: sd
 
-**Install**: `launchpad install crates.io/sd`
+**Install**: `launchpad install sd`
 
 ---
 
 ### [crates.io/tokei](../packages/crates.io/tokei/index.md) (tokei)
 
-Package from pantry: crates.io/tokei
+Program that allows you to count code, quickly
 
-**Programs**: None specified
+**Programs**: tokei
 
-**Install**: `launchpad install crates.io/tokei`
+**Install**: `launchpad install tokei`
 
 ---
 
 ### [crates.io/xh](../packages/crates.io/xh/index.md) (xh)
 
-Package from pantry: crates.io/xh
+Friendly and fast tool for sending HTTP requests
 
-**Programs**: None specified
+**Programs**: xh
 
-**Install**: `launchpad install crates.io/xh`
+**Install**: `launchpad install xh`
 
 ---
 
-### [curl.se](../packages/curl.se/index.md)
+### [curl.se](../packages/curl.se/index.md) (cURL, curl)
 
-Package from pantry: curl.se
+A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features
 
-**Programs**: None specified
+**Programs**: curl, curl-config
 
-**Install**: `launchpad install curl.se`
+**Install**: `launchpad install curl`
 
 ---
 
 ### [dev.yorhel.nl/ncdu](../packages/dev.yorhel.nl/ncdu/index.md) (ncdu)
 
-Package from pantry: dev.yorhel.nl/ncdu
+NCurses Disk Usage
 
-**Programs**: None specified
+**Programs**: ncdu
 
-**Install**: `launchpad install dev.yorhel.nl/ncdu`
+**Install**: `launchpad install ncdu`
+
+---
+
+### [dns.lookup.dog](../packages/dns.lookup.dog/index.md) (dog)
+
+A command-line DNS client.
+
+**Programs**: dog
+
+**Install**: `launchpad install dog`
+
+---
+
+### [fishshell.com](../packages/fishshell.com/index.md) (fish)
+
+User-friendly command-line shell for UNIX-like operating systems
+
+**Programs**: fish, fish_indent, fish_key_reader
+
+**Install**: `launchpad install fish`
 
 ---
 
 ### [github.com/aristocratos/btop](../packages/github.com/aristocratos/btop.md) (btop)
 
-Package from pantry: github.com/aristocratos/btop
+Resource monitor. C++ version and continuation of bashtop and bpytop
 
-**Programs**: None specified
+**Programs**: btop
 
-**Install**: `launchpad install github.com/aristocratos/btop`
+**Install**: `launchpad install btop`
 
 ---
 
 ### [github.com/dundee/gdu](../packages/github.com/dundee/gdu.md) (gdu)
 
-Package from pantry: github.com/dundee/gdu
+Fast disk usage analyzer with console interface written in Go
 
-**Programs**: None specified
+**Programs**: gdu
 
-**Install**: `launchpad install github.com/dundee/gdu`
+**Install**: `launchpad install gdu`
 
 ---
 
 ### [github.com/junegunn/fzf](../packages/github.com/junegunn/fzf.md) (fzf)
 
-Package from pantry: github.com/junegunn/fzf
+:cherry_blossom: A command-line fuzzy finder
 
-**Programs**: None specified
+**Programs**: fzf
 
-**Install**: `launchpad install github.com/junegunn/fzf`
+**Install**: `launchpad install fzf`
 
 ---
 
 ### [github.com/mikefarah/yq](../packages/github.com/mikefarah/yq.md) (yq)
 
-Package from pantry: github.com/mikefarah/yq
+yq is a portable command-line YAML, JSON, XML, CSV, TOML and properties processor
 
-**Programs**: None specified
+**Programs**: yq
 
-**Install**: `launchpad install github.com/mikefarah/yq`
+**Install**: `launchpad install yq`
 
 ---
 
 ### [github.com/muesli/duf](../packages/github.com/muesli/duf.md) (duf)
 
-Package from pantry: github.com/muesli/duf
+Disk Usage/Free Utility - a better 'df' alternative
 
-**Programs**: None specified
+**Programs**: duf
 
-**Install**: `launchpad install github.com/muesli/duf`
+**Install**: `launchpad install duf`
 
 ---
 
 ### [github.com/peltoche/lsd](../packages/github.com/peltoche/lsd.md) (lsd)
 
-Package from pantry: github.com/peltoche/lsd
+Clone of ls with colorful output, file type icons, and more
 
-**Programs**: None specified
+**Programs**: lsd
 
-**Install**: `launchpad install github.com/peltoche/lsd`
+**Install**: `launchpad install lsd`
 
 ---
 
 ### [github.com/so-fancy/diff-so-fancy](../packages/github.com/so-fancy/diff-so-fancy.md) (diff-so-fancy)
 
-Package from pantry: github.com/so-fancy/diff-so-fancy
+Good-lookin' diffs. Actually… nah… The best-lookin' diffs. :tada:
 
-**Programs**: None specified
+**Programs**: diff-so-fancy
 
-**Install**: `launchpad install github.com/so-fancy/diff-so-fancy`
+**Install**: `launchpad install diff-so-fancy`
 
 ---
 
 ### [github.com/tmux/tmux](../packages/github.com/tmux/tmux.md) (tmux)
 
-Package from pantry: github.com/tmux/tmux
+Terminal multiplexer
 
-**Programs**: None specified
+**Programs**: tmux
 
-**Install**: `launchpad install github.com/tmux/tmux`
+**Install**: `launchpad install tmux`
 
 ---
 
-### [gitlab.com/procps-ng/watch](../packages/gitlab.com/procps-ng/watch/index.md) (watch)
+### [gitlab.com/OldManProgrammer/unix-tree](../packages/gitlab.com/OldManProgrammer/unix-tree/index.md) (tree)
 
-Package from pantry: gitlab.com/procps-ng/watch
+Display directories as trees (with optional color/HTML output)
 
-**Programs**: None specified
+**Programs**: tree
 
-**Install**: `launchpad install gitlab.com/procps-ng/watch`
+**Install**: `launchpad install tree`
 
 ---
 
 ### [gnu.org/bash](../packages/gnu.org/bash/index.md) (bash)
 
-Package from pantry: gnu.org/bash
+Bourne-Again SHell, a UNIX command interpreter
 
-**Programs**: None specified
+**Programs**: bash, bashbug
 
-**Install**: `launchpad install gnu.org/bash`
-
----
-
-### [gnu.org/grep](../packages/gnu.org/grep/index.md) (grep)
-
-Package from pantry: gnu.org/grep
-
-**Programs**: None specified
-
-**Install**: `launchpad install gnu.org/grep`
-
----
-
-### [gnu.org/sed](../packages/gnu.org/sed/index.md) (sed)
-
-Package from pantry: gnu.org/sed
-
-**Programs**: None specified
-
-**Install**: `launchpad install gnu.org/sed`
+**Install**: `launchpad install bash`
 
 ---
 
 ### [gnu.org/wget](../packages/gnu.org/wget/index.md) (wget)
 
-Package from pantry: gnu.org/wget
+Internet file retriever
 
-**Programs**: None specified
+**Programs**: wget
 
-**Install**: `launchpad install gnu.org/wget`
+**Install**: `launchpad install wget`
+
+---
+
+### [htop.dev](../packages/htop.dev/index.md) (htop)
+
+Improved top (interactive process viewer)
+
+**Programs**: htop
+
+**Install**: `launchpad install htop`
+
+---
+
+### [ohmyposh.dev](../packages/ohmyposh.dev/index.md) (oh-my-posh)
+
+The most customisable and low-latency cross platform/shell prompt renderer
+
+**Programs**: oh-my-posh
+
+**Install**: `launchpad install oh-my-posh`
+
+---
+
+### [starship.rs](../packages/starship.rs/index.md) (starship)
+
+☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+
+**Programs**: starship
+
+**Install**: `launchpad install starship`
 
 ---
 
 ### [stedolan.github.io/jq](../packages/stedolan.github.io/jq/index.md) (jq)
 
-Package from pantry: stedolan.github.io/jq
+Lightweight and flexible command-line JSON processor
 
-**Programs**: None specified
+**Programs**: jq
 
-**Install**: `launchpad install stedolan.github.io/jq`
+**Install**: `launchpad install jq`
 
 ---
 
-### [wilfred.me.uk/difftastic](../packages/wilfred.me.uk/difftastic/index.md) (difftastic)
+### [tree-sitter.github.io](../packages/tree-sitter.github.io/index.md) (tree-sitter)
 
-Package from pantry: wilfred.me.uk/difftastic
+Parser generator tool and incremental parsing library
 
-**Programs**: None specified
+**Programs**: tree-sitter
 
-**Install**: `launchpad install wilfred.me.uk/difftastic`
+**Install**: `launchpad install tree-sitter`
+
+---
+
+### [wilfred.me.uk/difftastic](../packages/wilfred.me.uk/difftastic/index.md) (difft)
+
+a structural diff that understands syntax 🟥🟩
+
+**Programs**: difft
+
+**Install**: `launchpad install difft`
+
+---
+
+### [zsh.sourceforge.io](../packages/zsh.sourceforge.io/index.md) (zsh)
+
+UNIX shell (command interpreter)
+
+**Programs**: zsh
+
+**Install**: `launchpad install zsh`
 
 ---
 

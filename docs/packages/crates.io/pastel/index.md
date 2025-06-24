@@ -1,6 +1,6 @@
 # pastel
 
-> Package from pantry: crates.io/pastel
+> A command-line tool to generate, analyze, convert and manipulate colors
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/pastel
+launchpad install pastel
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pastel`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.10.0`
+
+</details>
+
+**Latest Version**: `0.10.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) pastel -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# grpc.io
+# grpc
 
-> Package from pantry: grpc.io
+> The C based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)
 
 ## Package Information
 
 - **Domain**: `grpc.io`
-- **Name**: `grpc.io`
+- **Name**: `grpc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/grpc.io/package.yml)
 
@@ -13,14 +13,47 @@
 
 ```bash
 # Install with launchpad
-launchpad install grpc.io
+launchpad install grpc
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `grpc_csharp_plugin`
+- `grpc_node_plugin`
+- `grpc_cpp_plugin`
+- `grpc_python_plugin`
+- `grpc_objective_c_plugin`
+- `grpc_ruby_plugin`
+- `grpc_php_plugin`
+- `grpc_cli`
+
+## Available Versions
+
+<details>
+<summary>Show all 45 versions</summary>
+
+- `1.73.0`, `1.72.1`, `1.72.0`, `1.71.1`, `1.71.0`
+- `1.70.2`, `1.70.1`, `1.70.0`, `1.69.0`, `1.68.2`
+- `1.68.1`, `1.68.0`, `1.67.1`, `1.67.0`, `1.66.2`
+- `1.65.5`, `1.65.4`, `1.65.3`, `1.65.2`, `1.65.1`
+- `1.65.0`, `1.64.2`, `1.64.1`, `1.64.0`, `1.63.1`
+- `1.62.2`, `1.62.1`, `1.62.0`, `1.61.2`, `1.61.1`
+- `1.61.0`, `1.60.1`, `1.60.0`, `1.59.4`, `1.59.3`
+- `1.59.2`, `1.59.1`, `1.59.0`, `1.58.2`, `1.58.1`
+- `1.58.0`, `1.57.1`, `1.56.4`, `1.56.3`, `1.55.4`
+
+</details>
+
+**Latest Version**: `1.73.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +grpc.io@1.73.0 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -40,7 +73,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['grpc.io']
+const pkg = pantry.grpc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

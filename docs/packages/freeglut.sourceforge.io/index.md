@@ -1,6 +1,6 @@
 # freeglut.sourceforge.io
 
-> Package from pantry: freeglut.sourceforge.io
+> Free implementation of the OpenGL Utility Toolkit (GLUT)
 
 ## Package Information
 
@@ -21,6 +21,24 @@ launchpad install freeglut.sourceforge.io
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `3.6.0`, `3.4.0`
+
+</details>
+
+**Latest Version**: `3.6.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +freeglut.sourceforge.io@3.6.0 -- $SHELL -i
+```
 
 ## Dependencies
 

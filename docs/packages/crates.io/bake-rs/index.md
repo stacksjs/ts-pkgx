@@ -1,11 +1,11 @@
-# bake-rs
+# bake
 
-> Package from pantry: crates.io/bake-rs
+> Simple and easy to use "script runner" written in Rust.
 
 ## Package Information
 
 - **Domain**: `crates.io/bake-rs`
-- **Name**: `bake-rs`
+- **Name**: `bake`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/bake-rs/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/bake-rs
+launchpad install bake
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `bake`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.2.0`
+
+</details>
+
+**Latest Version**: `1.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) bake -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['bake-rs']
+const pkg = pantry.bake
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

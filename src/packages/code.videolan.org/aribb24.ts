@@ -1,7 +1,9 @@
 /**
- * **aribb24** - Package from pantry: code.videolan.org/aribb24
+ * **code.videolan.org/aribb24** - pkgx package
  *
  * @domain `code.videolan.org/aribb24`
+ * @version `1.0.4` (1 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install code.videolan.org/aribb24`
  * @dependencies `libpng.org`
@@ -11,8 +13,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.codevideolanorgaribb24
- * console.log(pkg.name)        // "aribb24"
- * console.log(pkg.description) // "Package from pantry: code.videolan.org/aribb24"
+ * console.log(pkg.name)        // "code.videolan.org/aribb24"
+ * console.log(pkg.versions[0]) // "1.0.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/code-videolan-org/aribb24.md
@@ -22,7 +24,7 @@ export const codevideolanorgaribb24Package = {
   /**
    * The display name of this package.
    */
-  name: 'aribb24' as const,
+  name: 'code.videolan.org/aribb24' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,14 +32,15 @@ export const codevideolanorgaribb24Package = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: code.videolan.org/aribb24' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/code.videolan.org/aribb24/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install code.videolan.org/aribb24' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +code.videolan.org/aribb24 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install code.videolan.org/aribb24' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -47,10 +50,16 @@ export const codevideolanorgaribb24Package = {
   dependencies: [
     'libpng.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/code.videolan.org/aribb24/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.0.4',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +code.videolan.org/aribb24 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install code.videolan.org/aribb24' as const,
 }
 
 export type Codevideolanorgaribb24Package = typeof codevideolanorgaribb24Package

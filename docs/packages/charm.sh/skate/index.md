@@ -1,6 +1,6 @@
 # skate
 
-> Package from pantry: charm.sh/skate
+> A personal key value store 🛼
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install charm.sh/skate
+launchpad install skate
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `skate`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.0.1`, `1.0.0`, `0.2.2`
+
+</details>
+
+**Latest Version**: `1.0.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) skate -- $SHELL -i
+```
 
 ## Dependencies
 

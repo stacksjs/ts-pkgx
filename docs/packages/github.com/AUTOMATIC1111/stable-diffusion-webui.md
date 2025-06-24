@@ -1,6 +1,6 @@
 # stable-diffusion-webui
 
-> Package from pantry: github.com/AUTOMATIC1111/stable-diffusion-webui
+> Stable Diffusion web UI
 
 ## Package Information
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/AUTOMATIC1111/stable-diffusion-webui
+launchpad install stable-diffusion-webui
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `stable-diffusion-webui`
+
+## Available Versions
+
+<details>
+<summary>Show all 20 versions</summary>
+
+- `1.10.1`, `1.10.0`, `1.9.4`, `1.9.3`, `1.9.2`
+- `1.9.1`, `1.9.0`, `1.8.0`, `1.7.0`, `1.6.0`
+- `1.5.2`, `1.5.1`, `1.5.0`, `1.4.0`, `1.3.2`
+- `1.3.1`, `1.3.0`, `1.2.1`, `1.2.0`, `1.1.0`
+
+</details>
+
+**Latest Version**: `1.10.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) stable-diffusion-webui -- $SHELL -i
+```
 
 ## Dependencies
 

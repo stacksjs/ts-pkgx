@@ -1,6 +1,6 @@
 # ox
 
-> Package from pantry: crates.io/ox
+> Independent Rust text editor that runs in your terminal
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/ox
+launchpad install ox
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ox`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.7.7`, `0.7.6`
+
+</details>
+
+**Latest Version**: `0.7.7`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) ox -- $SHELL -i
+```
 
 ## Usage Examples
 

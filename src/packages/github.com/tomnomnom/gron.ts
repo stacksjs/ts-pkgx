@@ -1,23 +1,33 @@
 /**
- * **gron** - Package from pantry: github.com/tomnomnom/gron
+ * **gron** - Make JSON greppable!
  *
  * @domain `github.com/tomnomnom/gron`
+ * @programs `gron`
+ * @version `0.7.1` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/tomnomnom/gron`
+ * @install `launchpad install gron`
+ * @name `gron`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomtomnomnomgron
+ * // Access the package
+ * const pkg = pantry.gron
+ * // Or access via domain
+ * const samePkg = pantry.githubcomtomnomnomgron
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "gron"
- * console.log(pkg.description) // "Package from pantry: github.com/tomnomnom/gron"
+ * console.log(pkg.description) // "Make JSON greppable!"
+ * console.log(pkg.programs)    // ["gron"]
+ * console.log(pkg.versions[0]) // "0.7.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/tomnomnom/gron.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomtomnomnomgronPackage = {
+export const gronPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,38 @@ export const githubcomtomnomnomgronPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/tomnomnom/gron' as const,
+  description: 'Make JSON greppable!' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/tomnomnom/gron/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/tomnomnom/gron' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/tomnomnom/gron -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/tomnomnom/gron' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install gron' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'gron',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/tomnomnom/gron/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.7.1',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gron -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gron' as const,
 }
 
-export type GithubcomtomnomnomgronPackage = typeof githubcomtomnomnomgronPackage
+export type GronPackage = typeof gronPackage

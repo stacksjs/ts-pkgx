@@ -1,24 +1,34 @@
 /**
- * **get-blessed** - Package from pantry: crates.io/get-blessed
+ * **get-blessed** - Terminal tool to get you the best crates for your rust projects, curated by blessed.rs
  *
  * @domain `crates.io/get-blessed`
+ * @programs `get-blessed`
+ * @version `0.2.1` (3 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install crates.io/get-blessed`
+ * @install `launchpad install get-blessed`
+ * @name `get-blessed`
  * @dependencies `linux:openssl.org` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cratesiogetblessed
+ * // Access the package
+ * const pkg = pantry.getblessed
+ * // Or access via domain
+ * const samePkg = pantry.cratesiogetblessed
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "get-blessed"
- * console.log(pkg.description) // "Package from pantry: crates.io/get-blessed"
+ * console.log(pkg.description) // "Terminal tool to get you the best crates for yo..."
+ * console.log(pkg.programs)    // ["get-blessed"]
+ * console.log(pkg.versions[0]) // "0.2.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/get-blessed.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cratesiogetblessedPackage = {
+export const getblessedPackage = {
   /**
    * The display name of this package.
    */
@@ -30,15 +40,22 @@ export const cratesiogetblessedPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: crates.io/get-blessed' as const,
+  description: 'Terminal tool to get you the best crates for your rust projects, curated by blessed.rs' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/get-blessed/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install crates.io/get-blessed' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/get-blessed -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/get-blessed' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install get-blessed' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'get-blessed',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -48,10 +65,22 @@ export const cratesiogetblessedPackage = {
   dependencies: [
     'linux:openssl.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/get-blessed/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.2.1',
+    '0.2.0',
+    '0.1.3',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) get-blessed -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install get-blessed' as const,
 }
 
-export type CratesiogetblessedPackage = typeof cratesiogetblessedPackage
+export type GetblessedPackage = typeof getblessedPackage

@@ -1,38 +1,28 @@
 # Graphics Libraries
 
-*3 packages in this category*
+*2 packages in this category*
 
 Packages related to graphics libraries.
 
 ## Packages
 
-### [cairographics.org](../packages/cairographics.org/index.md)
+### [cairographics.org](../packages/cairographics.org/index.md) (cairo-trace)
 
-Package from pantry: cairographics.org
+Vector graphics library with cross-device output support
 
-**Programs**: None specified
+**Programs**: cairo-trace
 
-**Install**: `launchpad install cairographics.org`
+**Install**: `launchpad install cairo-trace`
 
 ---
 
 ### [libsdl.org](../packages/libsdl.org/index.md)
 
-Package from pantry: libsdl.org
+Simple Directmedia Layer
 
 **Programs**: None specified
 
 **Install**: `launchpad install libsdl.org`
-
----
-
-### [mesa3d.org](../packages/mesa3d.org/index.md)
-
-Package from pantry: mesa3d.org
-
-**Programs**: None specified
-
-**Install**: `launchpad install mesa3d.org`
 
 ---
 

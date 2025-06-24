@@ -1,11 +1,11 @@
-# lcov
+# github.com/linux-test-project/lcov
 
-> Package from pantry: github.com/linux-test-project/lcov
+> Graphical front-end for GCC's coverage testing tool (gcov)
 
 ## Package Information
 
 - **Domain**: `github.com/linux-test-project/lcov`
-- **Name**: `lcov`
+- **Name**: `github.com/linux-test-project/lcov`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/linux-test-project/lcov/package.yml)
 
@@ -20,7 +20,29 @@ launchpad install github.com/linux-test-project/lcov
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `lcov`
+- `geninfo`
+- `genhtml`
+- `gendesc`
+- `genpng`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `2.3.1`, `2.3.0`, `2.2.0`, `1.16.0`
+
+</details>
+
+**Latest Version**: `2.3.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/linux-test-project/lcov@2.3.1 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -35,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.lcov
+const pkg = pantry['github.com/linux-test-project/lcov']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

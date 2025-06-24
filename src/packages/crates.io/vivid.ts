@@ -1,24 +1,34 @@
 /**
- * **vivid** - Package from pantry: crates.io/vivid
+ * **vivid** - Generator for LS_COLORS with support for multiple color themes
  *
  * @domain `crates.io/vivid`
+ * @programs `vivid`
+ * @version `0.10.1` (3 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install crates.io/vivid`
+ * @install `launchpad install vivid`
+ * @name `vivid`
  * @dependencies `zlib.net^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cratesiovivid
+ * // Access the package
+ * const pkg = pantry.vivid
+ * // Or access via domain
+ * const samePkg = pantry.cratesiovivid
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "vivid"
- * console.log(pkg.description) // "Package from pantry: crates.io/vivid"
+ * console.log(pkg.description) // "Generator for LS_COLORS with support for multip..."
+ * console.log(pkg.programs)    // ["vivid"]
+ * console.log(pkg.versions[0]) // "0.10.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/vivid.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cratesiovividPackage = {
+export const vividPackage = {
   /**
    * The display name of this package.
    */
@@ -30,15 +40,22 @@ export const cratesiovividPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: crates.io/vivid' as const,
+  description: 'Generator for LS_COLORS with support for multiple color themes' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/vivid/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install crates.io/vivid' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/vivid -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/vivid' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install vivid' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'vivid',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,22 @@ export const cratesiovividPackage = {
   dependencies: [
     'zlib.net^1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/vivid/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.10.1',
+    '0.10.0',
+    '0.9.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vivid -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vivid' as const,
 }
 
-export type CratesiovividPackage = typeof cratesiovividPackage
+export type VividPackage = typeof vividPackage

@@ -1,6 +1,6 @@
 # rye-uv
 
-> Package from pantry: github.com/lucianosrp/rye-uv
+> Simple CLI tool to migrate from Rye to Uv
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/lucianosrp/rye-uv
+launchpad install rye-uv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `rye-uv`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.1.3`
+
+</details>
+
+**Latest Version**: `0.1.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) rye-uv -- $SHELL -i
+```
+
+## Related Packages
+
+These packages work well with rye-uv:
+
+- [`astral.sh/uv`](../../astral.sh/uv/index.md) - Package not available
 
 ## Usage Examples
 

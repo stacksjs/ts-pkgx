@@ -1,11 +1,11 @@
-# capstone-engine.org
+# cstool
 
-> Package from pantry: capstone-engine.org
+> Capstone disassembly/disassembler framework for ARM, ARM64 (ARMv8), Alpha, BPF, Ethereum VM, HPPA, LoongArch, M68K, M680X, Mips, MOS65XX, PPC, RISC-V(rv32G/rv64G), SH, Sparc, SystemZ, TMS320C64X, TriCore, Webassembly, XCore and X86.
 
 ## Package Information
 
 - **Domain**: `capstone-engine.org`
-- **Name**: `capstone-engine.org`
+- **Name**: `cstool`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/capstone-engine.org/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install capstone-engine.org
+launchpad install cstool
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cstool`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `5.0.6`, `5.0.5`, `5.0.3`, `5.0.2`, `5.0.1`
+- `5.0.0`, `4.0.2`
+
+</details>
+
+**Latest Version**: `5.0.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) cstool -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +47,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['capstone-engine.org']
+const pkg = pantry.cstool
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,7 +1,10 @@
 /**
- * **ffmpeg.org** - Package from pantry: ffmpeg.org
+ * **ffmpeg.org** - Play, record, convert, and stream audio and video
  *
  * @domain `ffmpeg.org`
+ * @programs `ffmpeg`, `ffplay`, `ffprobe`
+ * @version `7.1.1` (24 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install ffmpeg.org`
  * @dependencies `lame.sourceforge.io>=3.98.3`, `libsdl.org^2`, `freetype.org^2`, ... (+6 more)
@@ -12,7 +15,9 @@
  *
  * const pkg = pantry.ffmpegorg
  * console.log(pkg.name)        // "ffmpeg.org"
- * console.log(pkg.description) // "Package from pantry: ffmpeg.org"
+ * console.log(pkg.description) // "Play, record, convert, and stream audio and video"
+ * console.log(pkg.programs)    // ["ffmpeg", "ffplay", ...]
+ * console.log(pkg.versions[0]) // "7.1.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ffmpeg-org.md
@@ -30,15 +35,24 @@ export const ffmpegorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: ffmpeg.org' as const,
+  description: 'Play, record, convert, and stream audio and video' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ffmpeg.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install ffmpeg.org' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ffmpeg.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ffmpeg.org' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'ffmpeg',
+    'ffplay',
+    'ffprobe',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -55,10 +69,39 @@ export const ffmpegorgPackage = {
     'opus-codec.org^1',
     'google.com/webp^1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ffmpeg.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '7.1.1',
+    '7.1.0',
+    '7.0.2',
+    '7.0.1',
+    '7.0.0',
+    '6.1.2',
+    '6.1.1',
+    '6.1.0',
+    '6.0.1',
+    '6.0.0',
+    '5.1.6',
+    '5.1.5',
+    '5.1.4',
+    '5.1.2',
+    '4.4.6',
+    '4.4.5',
+    '4.3.9',
+    '4.3.8',
+    '4.3.7',
+    '4.2.11',
+    '4.2.10',
+    '4.1.11',
+    '3.4.14',
+    '3.4.13',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ffmpeg.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ffmpeg.org' as const,
 }
 
 export type FfmpegorgPackage = typeof ffmpegorgPackage

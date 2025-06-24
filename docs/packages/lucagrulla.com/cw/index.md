@@ -1,6 +1,6 @@
 # cw
 
-> Package from pantry: lucagrulla.com/cw
+> The best way to tail AWS CloudWatch Logs from your terminal
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install lucagrulla.com/cw
+launchpad install cw
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cw`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `4.1.3`
+
+</details>
+
+**Latest Version**: `4.1.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) cw -- $SHELL -i
+```
 
 ## Usage Examples
 

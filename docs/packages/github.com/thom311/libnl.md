@@ -1,6 +1,6 @@
 # libnl
 
-> Package from pantry: github.com/thom311/libnl
+> Netlink Library Suite
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/thom311/libnl
+launchpad install libnl
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ launchpad install github.com/thom311/libnl
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `3.11.0`, `3.10.0`, `3.9.0`, `3.8.0`, `3.7.0`
+
+</details>
+
+**Latest Version**: `3.11.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/thom311/libnl@3.11.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

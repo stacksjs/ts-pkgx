@@ -1,11 +1,11 @@
-# direnv.net
+# direnv
 
-> Package from pantry: direnv.net
+> Load/unload environment variables based on $PWD
 
 ## Package Information
 
 - **Domain**: `direnv.net`
-- **Name**: `direnv.net`
+- **Name**: `direnv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/direnv.net/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install direnv.net
+launchpad install direnv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `direnv`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `2.36.0`, `2.35.0`, `2.34.0`, `2.33.0`, `2.32.3`
+- `2.32.2`
+
+</details>
+
+**Latest Version**: `2.36.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) direnv -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +47,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['direnv.net']
+const pkg = pantry.direnv
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

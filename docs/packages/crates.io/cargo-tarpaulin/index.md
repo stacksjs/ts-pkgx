@@ -1,6 +1,6 @@
 # cargo-tarpaulin
 
-> Package from pantry: crates.io/cargo-tarpaulin
+> A code coverage tool for Rust projects
 
 ## Package Information
 
@@ -13,14 +13,40 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/cargo-tarpaulin
+launchpad install cargo-tarpaulin
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cargo-tarpaulin`
+
+## Available Versions
+
+<details>
+<summary>Show all 11 versions</summary>
+
+- `0.32.8`, `0.32.7`, `0.32.6`, `0.32.5`, `0.32.4`
+- `0.32.3`, `0.32.2`, `0.32.1`, `0.32.0`, `0.31.5`
+- `0.31.4`
+
+</details>
+
+**Latest Version**: `0.32.8`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) cargo-tarpaulin -- $SHELL -i
+```
+
+## Related Packages
+
+These packages work well with cargo-tarpaulin:
+
+- [`rust-lang.org/cargo`](../../rust-lang.org/cargo/index.md) - Package not available
 
 ## Usage Examples
 

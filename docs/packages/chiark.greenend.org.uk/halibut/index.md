@@ -1,6 +1,6 @@
 # halibut
 
-> Package from pantry: chiark.greenend.org.uk/halibut
+> Yet another free document preparation system
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install chiark.greenend.org.uk/halibut
+launchpad install halibut
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `halibut`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.3.0`
+
+</details>
+
+**Latest Version**: `1.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) halibut -- $SHELL -i
+```
 
 ## Usage Examples
 

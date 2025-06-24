@@ -1,6 +1,6 @@
 # cfssl.org
 
-> Package from pantry: cfssl.org
+> CFSSL: Cloudflare's PKI and TLS toolkit
 
 ## Package Information
 
@@ -20,7 +20,32 @@ launchpad install cfssl.org
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cfssl`
+- `cfssl-bundle`
+- `cfssl-certinfo`
+- `cfssl-newkey`
+- `cfssl-scan`
+- `cfssljson`
+- `mkbundle`
+- `multirootca`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.6.5`
+
+</details>
+
+**Latest Version**: `1.6.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +cfssl.org@1.6.5 -- $SHELL -i
+```
 
 ## Usage Examples
 

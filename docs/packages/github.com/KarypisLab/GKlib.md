@@ -1,11 +1,11 @@
-# GKlib
+# github.com/KarypisLab/GKlib
 
-> Package from pantry: github.com/KarypisLab/GKlib
+> A library of various helper routines and frameworks used by many of the lab's software
 
 ## Package Information
 
 - **Domain**: `github.com/KarypisLab/GKlib`
-- **Name**: `GKlib`
+- **Name**: `github.com/KarypisLab/GKlib`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/KarypisLab/GKlib/package.yml)
 
@@ -20,7 +20,30 @@ launchpad install github.com/KarypisLab/GKlib
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cmpnbrs`
+- `csrcnv`
+- `fis`
+- `gkgraph`
+- `gkrw`
+- `m2mnbrs`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `5.1.1`
+
+</details>
+
+**Latest Version**: `5.1.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/KarypisLab/GKlib@5.1.1 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +51,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.GKlib
+const pkg = pantry['github.com/KarypisLab/GKlib']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

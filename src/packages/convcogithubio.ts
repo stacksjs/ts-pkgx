@@ -1,27 +1,37 @@
 /**
- * **convco.github.io** - Package from pantry: convco.github.io
+ * **convco** - Conventional commits, changelog, versioning, validation
  *
  * @domain `convco.github.io`
+ * @programs `convco`
+ * @version `0.6.2` (9 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install convco.github.io`
+ * @install `launchpad install convco`
+ * @name `convco`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.convcogithubio
- * console.log(pkg.name)        // "convco.github.io"
- * console.log(pkg.description) // "Package from pantry: convco.github.io"
+ * // Access the package
+ * const pkg = pantry.convco
+ * // Or access via domain
+ * const samePkg = pantry.convcogithubio
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "convco"
+ * console.log(pkg.description) // "Conventional commits, changelog, versioning, va..."
+ * console.log(pkg.programs)    // ["convco"]
+ * console.log(pkg.versions[0]) // "0.6.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/convco-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const convcogithubioPackage = {
+export const convcoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'convco.github.io' as const,
+  name: 'convco' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -29,21 +39,46 @@ export const convcogithubioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: convco.github.io' as const,
+  description: 'Conventional commits, changelog, versioning, validation' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/convco.github.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install convco.github.io' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +convco.github.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install convco.github.io' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install convco' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'convco',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/convco.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.6.2',
+    '0.6.1',
+    '0.6.0',
+    '0.5.2',
+    '0.5.1',
+    '0.5.0',
+    '0.4.3',
+    '0.4.2',
+    '0.4.1',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) convco -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install convco' as const,
 }
 
-export type ConvcogithubioPackage = typeof convcogithubioPackage
+export type ConvcoPackage = typeof convcoPackage

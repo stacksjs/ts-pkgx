@@ -1,11 +1,11 @@
-# xplr.dev
+# xplr
 
-> Package from pantry: xplr.dev
+> A hackable, minimal, fast TUI file explorer
 
 ## Package Information
 
 - **Domain**: `xplr.dev`
-- **Name**: `xplr.dev`
+- **Name**: `xplr`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xplr.dev/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install xplr.dev
+launchpad install xplr
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `xplr`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.0.0`, `0.21.10`, `0.21.9`, `0.21.8`
+
+</details>
+
+**Latest Version**: `1.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) xplr -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['xplr.dev']
+const pkg = pantry.xplr
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

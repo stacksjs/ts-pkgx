@@ -1,11 +1,11 @@
-# sigrs
+# sig
 
-> Package from pantry: crates.io/sigrs
+> Interactive grep (for streaming)
 
 ## Package Information
 
 - **Domain**: `crates.io/sigrs`
-- **Name**: `sigrs`
+- **Name**: `sig`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/sigrs/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/sigrs
+launchpad install sig
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `sig`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `0.1.4`, `0.1.3`, `0.1.2`, `0.1.1`, `0.1.0`
+
+</details>
+
+**Latest Version**: `0.1.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) sig -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.sigrs
+const pkg = pantry.sig
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

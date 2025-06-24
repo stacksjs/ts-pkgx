@@ -1,11 +1,11 @@
-# sniffnet.net
+# sniffnet
 
-> Package from pantry: sniffnet.net
+> Cross-platform application to monitor your network traffic
 
 ## Package Information
 
 - **Domain**: `sniffnet.net`
-- **Name**: `sniffnet.net`
+- **Name**: `sniffnet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sniffnet.net/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install sniffnet.net
+launchpad install sniffnet
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `sniffnet`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.3.2`, `1.3.1`
+
+</details>
+
+**Latest Version**: `1.3.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) sniffnet -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -37,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['sniffnet.net']
+const pkg = pantry.sniffnet
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # cscope.sourceforge.io
 
-> Package from pantry: cscope.sourceforge.io
+> Tool for browsing source code
 
 ## Package Information
 
@@ -20,7 +20,26 @@ launchpad install cscope.sourceforge.io
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cscope`
+- `ocs`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `15.9.0`
+
+</details>
+
+**Latest Version**: `15.9.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +cscope.sourceforge.io@15.9.0 -- $SHELL -i
+```
 
 ## Dependencies
 

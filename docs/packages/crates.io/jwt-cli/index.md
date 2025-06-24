@@ -1,11 +1,11 @@
-# jwt-cli
+# jwt
 
-> Package from pantry: crates.io/jwt-cli
+> A super fast CLI tool to decode and encode JWTs built in Rust
 
 ## Package Information
 
 - **Domain**: `crates.io/jwt-cli`
-- **Name**: `jwt-cli`
+- **Name**: `jwt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/jwt-cli/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/jwt-cli
+launchpad install jwt
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `jwt`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `6.2.0`, `6.1.1`, `6.1.0`, `6.0.0`
+
+</details>
+
+**Latest Version**: `6.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) jwt -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['jwt-cli']
+const pkg = pantry.jwt
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

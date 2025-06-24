@@ -1,6 +1,6 @@
 # samply
 
-> Package from pantry: crates.io/samply
+> Command-line sampling profiler for macOS, Linux, and Windows
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/samply
+launchpad install samply
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `samply`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.13.1`, `0.13.0`, `0.12.0`
+
+</details>
+
+**Latest Version**: `0.13.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) samply -- $SHELL -i
+```
 
 ## Usage Examples
 

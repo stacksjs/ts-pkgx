@@ -1,6 +1,6 @@
 # cilium
 
-> Package from pantry: cilium.io/cilium
+> CLI to install, manage & troubleshoot Kubernetes clusters running Cilium
 
 ## Package Information
 
@@ -13,14 +13,36 @@
 
 ```bash
 # Install with launchpad
-launchpad install cilium.io/cilium
+launchpad install cilium
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cilium`
+
+## Available Versions
+
+<details>
+<summary>Show all 25 versions</summary>
+
+- `0.18.4`, `0.18.3`, `0.18.2`, `0.18.1`, `0.18.0`
+- `0.17.0`, `0.16.24`, `0.16.23`, `0.16.22`, `0.16.21`
+- `0.16.20`, `0.16.19`, `0.16.18`, `0.16.17`, `0.16.16`
+- `0.16.15`, `0.16.14`, `0.16.13`, `0.16.12`, `0.16.11`
+- `0.16.10`, `0.16.9`, `0.16.8`, `0.16.7`, `0.16.6`
+
+</details>
+
+**Latest Version**: `0.18.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) cilium -- $SHELL -i
+```
 
 ## Usage Examples
 

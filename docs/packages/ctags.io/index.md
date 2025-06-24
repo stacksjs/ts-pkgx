@@ -1,11 +1,11 @@
-# ctags.io
+# ctags
 
-> Package from pantry: ctags.io
+> A maintained ctags implementation
 
 ## Package Information
 
 - **Domain**: `ctags.io`
-- **Name**: `ctags.io`
+- **Name**: `ctags`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ctags.io/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install ctags.io
+launchpad install ctags
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ctags`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `6.2.0`, `6.1.0`
+
+</details>
+
+**Latest Version**: `6.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) ctags -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -37,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ctags.io']
+const pkg = pantry.ctags
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

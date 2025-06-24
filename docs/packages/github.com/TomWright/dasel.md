@@ -1,6 +1,6 @@
 # dasel
 
-> Package from pantry: github.com/TomWright/dasel
+> Select, put and delete data from JSON, TOML, YAML, XML and CSV files with a single tool. Supports conversion between formats and can be used as a Go package.
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/TomWright/dasel
+launchpad install dasel
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `dasel`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `2.8.1`, `2.8.0`, `2.7.0`, `2.6.0`, `2.5.0`
+- `2.4.1`
+
+</details>
+
+**Latest Version**: `2.8.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) dasel -- $SHELL -i
+```
 
 ## Usage Examples
 

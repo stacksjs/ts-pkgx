@@ -1,11 +1,11 @@
-# oneTBB
+# tbb
 
-> Package from pantry: github.com/oneapi-src/oneTBB
+> oneAPI Threading Building Blocks (oneTBB)
 
 ## Package Information
 
 - **Domain**: `github.com/oneapi-src/oneTBB`
-- **Name**: `oneTBB`
+- **Name**: `tbb`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/oneapi-src/oneTBB/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/oneapi-src/oneTBB
+launchpad install tbb
 ```
 
 ## Programs
@@ -21,6 +21,25 @@ launchpad install github.com/oneapi-src/oneTBB
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `2022.1.0`, `2022.0.0`, `2021.13.0`, `2021.12.0`, `2021.11.0`
+- `2021.10.0`
+
+</details>
+
+**Latest Version**: `2022.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/oneapi-src/oneTBB@2022.1.0 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.oneTBB
+const pkg = pantry.tbb
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

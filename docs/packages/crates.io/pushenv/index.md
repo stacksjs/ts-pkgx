@@ -1,6 +1,6 @@
 # pushenv
 
-> Package from pantry: crates.io/pushenv
+> A CLI utility that reads a .env file before starting a process
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/pushenv
+launchpad install pushenv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pushenv`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.1.2`
+
+</details>
+
+**Latest Version**: `1.1.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) pushenv -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # ddh
 
-> Package from pantry: crates.io/ddh
+> A fast duplicate file finder
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/ddh
+launchpad install ddh
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ddh`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.13.0`
+
+</details>
+
+**Latest Version**: `0.13.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) ddh -- $SHELL -i
+```
 
 ## Usage Examples
 

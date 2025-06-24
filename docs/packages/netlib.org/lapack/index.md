@@ -1,11 +1,11 @@
-# lapack
+# netlib.org/lapack
 
-> Package from pantry: netlib.org/lapack
+> LAPACK development repository
 
 ## Package Information
 
 - **Domain**: `netlib.org/lapack`
-- **Name**: `lapack`
+- **Name**: `netlib.org/lapack`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/netlib.org/lapack/package.yml)
 
@@ -22,6 +22,24 @@ This package provides the following executable programs:
 
 *No programs specified*
 
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `3.12.1`, `3.12.0`, `3.11.0`
+
+</details>
+
+**Latest Version**: `3.12.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +netlib.org/lapack@3.12.1 -- $SHELL -i
+```
+
 ## Dependencies
 
 This package depends on:
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.lapack
+const pkg = pantry['netlib.org/lapack']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

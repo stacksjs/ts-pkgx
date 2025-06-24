@@ -1,6 +1,6 @@
 # git-grab
 
-> Package from pantry: crates.io/git-grab
+> Clone a git repository into a standard location organised by domain and path.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/git-grab
+launchpad install git-grab
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `git-grab`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `3.0.0`, `2.1.0`, `2.0.0`, `1.0.1`
+
+</details>
+
+**Latest Version**: `3.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) git-grab -- $SHELL -i
+```
 
 ## Usage Examples
 

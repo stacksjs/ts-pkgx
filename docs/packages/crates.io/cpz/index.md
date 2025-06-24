@@ -1,6 +1,6 @@
 # cpz
 
-> Package from pantry: crates.io/cpz
+> Modern, performance focused unix commands
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/cpz
+launchpad install cpz
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cpz`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `3.1.0`, `3.0.1`, `3.0.0`, `2.2.0`, `2.1.0`
+
+</details>
+
+**Latest Version**: `3.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) cpz -- $SHELL -i
+```
 
 ## Usage Examples
 

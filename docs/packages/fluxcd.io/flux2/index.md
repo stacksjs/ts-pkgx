@@ -1,11 +1,11 @@
-# flux2
+# flux
 
-> Package from pantry: fluxcd.io/flux2
+> Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit.
 
 ## Package Information
 
 - **Domain**: `fluxcd.io/flux2`
-- **Name**: `flux2`
+- **Name**: `flux`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fluxcd.io/flux2/package.yml)
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install fluxcd.io/flux2
+launchpad install flux
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `flux`
+
+## Available Versions
+
+<details>
+<summary>Show all 12 versions</summary>
+
+- `2.6.2`, `2.6.1`, `2.6.0`, `2.5.1`, `2.5.0`
+- `2.4.0`, `2.3.0`, `2.2.3`, `2.2.2`, `2.2.1`
+- `2.2.0`, `2.1.2`
+
+</details>
+
+**Latest Version**: `2.6.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) flux -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +48,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.flux2
+const pkg = pantry.flux
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

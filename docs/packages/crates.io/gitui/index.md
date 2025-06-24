@@ -1,6 +1,6 @@
 # gitui
 
-> Package from pantry: crates.io/gitui
+> Blazing 💥 fast terminal-ui for git written in rust 🦀
 
 ## Package Information
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/gitui
+launchpad install gitui
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gitui`
+
+## Available Versions
+
+<details>
+<summary>Show all 14 versions</summary>
+
+- `0.27.0`, `0.26.3`, `0.26.2`, `0.26.1`, `0.26.0`
+- `0.25.2`, `0.25.1`, `0.25.0`, `0.24.3`, `0.24.2`
+- `0.24.1`, `0.24.0`, `0.23.0`, `0.22.1`
+
+</details>
+
+**Latest Version**: `0.27.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) gitui -- $SHELL -i
+```
 
 ## Dependencies
 

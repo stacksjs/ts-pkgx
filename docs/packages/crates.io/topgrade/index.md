@@ -1,6 +1,6 @@
 # topgrade
 
-> Package from pantry: crates.io/topgrade
+> Upgrade all the things
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/topgrade
+launchpad install topgrade
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `topgrade`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `16.0.4`, `16.0.3`, `16.0.2`, `16.0.1`, `16.0.0`
+- `15.0.0`, `14.0.1`
+
+</details>
+
+**Latest Version**: `16.0.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) topgrade -- $SHELL -i
+```
 
 ## Usage Examples
 

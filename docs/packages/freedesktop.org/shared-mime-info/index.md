@@ -1,11 +1,11 @@
-# shared-mime-info
+# update-mime-database
 
-> Package from pantry: freedesktop.org/shared-mime-info
+> Database of common MIME types
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/shared-mime-info`
-- **Name**: `shared-mime-info`
+- **Name**: `update-mime-database`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/shared-mime-info/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install freedesktop.org/shared-mime-info
+launchpad install update-mime-database
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `update-mime-database`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `2.4.0`, `2.3.0`, `2.2.0`
+
+</details>
+
+**Latest Version**: `2.4.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) update-mime-database -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -35,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['shared-mime-info']
+const pkg = pantry['update-mime-database']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
