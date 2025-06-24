@@ -2,7 +2,7 @@
  * **libssh.org** - pkgx package
  *
  * @domain `libssh.org`
- * @version `0.11.1` (7 versions available)
+ * @version `0.11.2` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install libssh.org`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.libsshorg
  * console.log(pkg.name)        // "libssh.org"
- * console.log(pkg.versions[0]) // "0.11.1" (latest)
+ * console.log(pkg.versions[0]) // "0.11.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libssh-org.md
@@ -56,6 +56,7 @@ export const libsshorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.11.2',
     '0.11.1',
     '0.11.0',
     '0.10.6',
