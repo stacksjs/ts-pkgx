@@ -3,7 +3,7 @@
  *
  * @domain `microsoft.com/PowerShell`
  * @programs `pwsh`
- * @version `7.5.1` (6 versions available)
+ * @version `7.5.2` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pwsh`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "pwsh"
  * console.log(pkg.description) // "PowerShell for every system!"
  * console.log(pkg.programs)    // ["pwsh"]
- * console.log(pkg.versions[0]) // "7.5.1" (latest)
+ * console.log(pkg.versions[0]) // "7.5.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/microsoft-com/PowerShell.md
@@ -71,8 +71,10 @@ export const pwshPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '7.5.2',
     '7.5.1',
     '7.5.0',
+    '7.4.11',
     '7.4.10',
     '7.4.7',
     '7.4.5',
