@@ -469,6 +469,7 @@ import { githubcomtartanllamaexpectedPackage } from './github.com/TartanLlama/ex
 import { daselPackage } from './github.com/TomWright/dasel'
 import { saml2awsPackage } from './github.com/Versent/saml2aws'
 import { suryadetectPackage } from './github.com/VikParuchuri/surya'
+import { githubcomvirviiloci2gitPackage } from './github.com/Virviil/oci2git'
 import { xchtmlreportPackage } from './github.com/XCTestHTMLReport/XCTestHTMLReport'
 import { xcodesPackage } from './github.com/XcodesOrg/xcodes'
 import { csvlensPackage } from './github.com/YS-L/csvlens'
@@ -2525,6 +2526,8 @@ export interface Pantry {
   github_com_Versent_saml2aws: typeof saml2awsPackage
   surya: typeof suryadetectPackage
   github_com_VikParuchuri_surya: typeof suryadetectPackage
+  oci2git: typeof githubcomvirviiloci2gitPackage
+  github_com_Virviil_oci2git: typeof githubcomvirviiloci2gitPackage
   XCTestHTMLReport: typeof xchtmlreportPackage
   github_com_XCTestHTMLReport_XCTestHTMLReport: typeof xchtmlreportPackage
 
@@ -6829,6 +6832,8 @@ export const pantry: Pantry = {
   github_com_Versent_saml2aws: saml2awsPackage,
   surya: suryadetectPackage,
   github_com_VikParuchuri_surya: suryadetectPackage,
+  oci2git: githubcomvirviiloci2gitPackage,
+  github_com_Virviil_oci2git: githubcomvirviiloci2gitPackage,
   XCTestHTMLReport: xchtmlreportPackage,
   github_com_XCTestHTMLReport_XCTestHTMLReport: xchtmlreportPackage,
 
