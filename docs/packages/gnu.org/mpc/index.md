@@ -1,11 +1,11 @@
-# gnu.org/mpc
+# mpc
 
-> A C library for the arithmetic of complex numbers with arbitrarily high precision
+> Package from pantry: gnu.org/mpc
 
 ## Package Information
 
 - **Domain**: `gnu.org/mpc`
-- **Name**: `gnu.org/mpc`
+- **Name**: `mpc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/mpc/package.yml)
 
@@ -22,31 +22,13 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.3.1`
-
-</details>
-
-**Latest Version**: `1.3.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/mpc@1.3.1 -- $SHELL -i
-```
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/mpc']
+const pkg = pantry.mpc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

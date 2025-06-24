@@ -1,34 +1,24 @@
 /**
- * **fnm** - 🚀 Fast and simple Node.js version manager, built in Rust
+ * **fnm** - Package from pantry: crates.io/fnm
  *
  * @domain `crates.io/fnm`
- * @programs `fnm`
- * @version `1.38.1` (8 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install fnm`
- * @name `fnm`
+ * @install `launchpad install crates.io/fnm`
  * @dependencies `darwin:zlib.net^1` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.fnm
- * // Or access via domain
- * const samePkg = pantry.cratesiofnm
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiofnm
  * console.log(pkg.name)        // "fnm"
- * console.log(pkg.description) // "🚀 Fast and simple Node.js version manager, bui..."
- * console.log(pkg.programs)    // ["fnm"]
- * console.log(pkg.versions[0]) // "1.38.1" (latest)
+ * console.log(pkg.description) // "Package from pantry: crates.io/fnm"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/fnm.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fnmPackage = {
+export const cratesiofnmPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const fnmPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '🚀 Fast and simple Node.js version manager, built in Rust' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/fnm/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: crates.io/fnm' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install fnm' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'fnm',
-  ] as const,
+  installCommand: 'launchpad install crates.io/fnm' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/fnm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/fnm' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -65,27 +48,10 @@ export const fnmPackage = {
   dependencies: [
     'darwin:zlib.net^1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.38.1',
-    '1.38.0',
-    '1.37.2',
-    '1.37.1',
-    '1.37.0',
-    '1.36.0',
-    '1.35.1',
-    '1.35.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fnm -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install fnm' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/fnm/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type FnmPackage = typeof fnmPackage
+export type CratesiofnmPackage = typeof cratesiofnmPackage

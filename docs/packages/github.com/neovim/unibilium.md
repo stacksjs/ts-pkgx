@@ -1,11 +1,11 @@
-# github.com/neovim/unibilium
+# unibilium
 
-> https://github.com/neovim/neovim/blob/master/MAINTAIN.md#third-party-dependencies
+> Package from pantry: github.com/neovim/unibilium
 
 ## Package Information
 
 - **Domain**: `github.com/neovim/unibilium`
-- **Name**: `github.com/neovim/unibilium`
+- **Name**: `unibilium`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/neovim/unibilium/package.yml)
 
@@ -22,31 +22,13 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `2.1.2`, `2.1.1`
-
-</details>
-
-**Latest Version**: `2.1.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/neovim/unibilium@2.1.2 -- $SHELL -i
-```
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/neovim/unibilium']
+const pkg = pantry.unibilium
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

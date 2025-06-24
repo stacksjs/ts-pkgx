@@ -1,6 +1,6 @@
 # freeze
 
-> Generate images of code and terminal output 📸
+> Package from pantry: charm.sh/freeze
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install freeze
+launchpad install charm.sh/freeze
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `freeze`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `0.2.2`, `0.2.1`, `0.2.0`, `0.1.6`, `0.1.4`
-
-</details>
-
-**Latest Version**: `0.2.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) freeze -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

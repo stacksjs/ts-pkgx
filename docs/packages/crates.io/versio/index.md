@@ -1,6 +1,6 @@
 # versio
 
-> A version number manager
+> Package from pantry: crates.io/versio
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install versio
+launchpad install crates.io/versio
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `versio`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `0.8.5`, `0.8.3`, `0.7.6`
-
-</details>
-
-**Latest Version**: `0.8.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) versio -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

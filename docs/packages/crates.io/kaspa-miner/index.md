@@ -1,6 +1,6 @@
 # kaspa-miner
 
-> A fast CPU miner for Kaspa
+> Package from pantry: crates.io/kaspa-miner
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install kaspa-miner
+launchpad install crates.io/kaspa-miner
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `kaspa-miner`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `0.2.5`, `0.2.4`, `0.2.3`
-
-</details>
-
-**Latest Version**: `0.2.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) kaspa-miner -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

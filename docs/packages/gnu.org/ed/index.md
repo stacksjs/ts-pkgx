@@ -1,6 +1,6 @@
 # ed
 
-> A line-oriented text editor
+> Package from pantry: gnu.org/ed
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ed
+launchpad install gnu.org/ed
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ed`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.21.1`, `1.20.2`, `1.20.1`, `1.14.2`
-
-</details>
-
-**Latest Version**: `1.21.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ed -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

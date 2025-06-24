@@ -1,11 +1,11 @@
-# catb.org/wumpus
+# wumpus
 
-> Exact clone of the ancient BASIC Hunt the Wumpus game
+> Package from pantry: catb.org/wumpus
 
 ## Package Information
 
 - **Domain**: `catb.org/wumpus`
-- **Name**: `catb.org/wumpus`
+- **Name**: `wumpus`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/catb.org/wumpus/package.yml)
 
@@ -20,27 +20,7 @@ launchpad install catb.org/wumpus
 
 This package provides the following executable programs:
 
-- `wumpus`
-- `superhack`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `1.10.0`, `1.9.0`, `1.8.0`, `1.6.0`, `1.5.0`
-- `1.4.0`
-
-</details>
-
-**Latest Version**: `1.10.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +catb.org/wumpus@1.10.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -48,7 +28,7 @@ sh <(curl https://pkgx.sh) +catb.org/wumpus@1.10.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['catb.org/wumpus']
+const pkg = pantry.wumpus
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

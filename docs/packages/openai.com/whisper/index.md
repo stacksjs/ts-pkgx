@@ -1,6 +1,6 @@
 # whisper
 
-> Robust Speech Recognition via Large-Scale Weak Supervision
+> Package from pantry: openai.com/whisper
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install whisper
+launchpad install openai.com/whisper
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `whisper`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `20240930.0.0`, `20240927.0.0`, `20231117.0.0`
-
-</details>
-
-**Latest Version**: `20240930.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) whisper -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

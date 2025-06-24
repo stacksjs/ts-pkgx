@@ -1,6 +1,6 @@
 # which
 
-> A utility for locating a command
+> Package from pantry: gnu.org/which
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install which
+launchpad install gnu.org/which
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `which`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `2.23.0`, `2.22.0`, `2.21.0`
-
-</details>
-
-**Latest Version**: `2.23.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) which -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

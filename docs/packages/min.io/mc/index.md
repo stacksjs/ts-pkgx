@@ -1,6 +1,6 @@
 # mc
 
-> Unix like utilities for object store
+> Package from pantry: min.io/mc
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install mc
+launchpad install min.io/mc
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mc`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2023.10.24.21.42.22`
-
-</details>
-
-**Latest Version**: `2023.10.24.21.42.22`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) mc -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # sed
 
-> A stream editor for filtering and transforming text
+> Package from pantry: gnu.org/sed
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install sed
+launchpad install gnu.org/sed
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `sed`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `4.9.0`
-
-</details>
-
-**Latest Version**: `4.9.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) sed -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # pstree
 
-> pstree shows the process listing as a tree
+> Package from pantry: github.com/FredHucht/pstree
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install pstree
+launchpad install github.com/FredHucht/pstree
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pstree`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.40.0`
-
-</details>
-
-**Latest Version**: `2.40.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) pstree -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # git-gone
 
-> Cleanup stale Git branches of pull requests
+> Package from pantry: crates.io/git-gone
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install git-gone
+launchpad install crates.io/git-gone
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `git-gone`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `1.2.5`, `1.2.4`, `1.2.2`, `1.2.0`, `1.1.1`
-- `1.1.0`, `1.0.0`
-
-</details>
-
-**Latest Version**: `1.2.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) git-gone -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

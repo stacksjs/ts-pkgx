@@ -1,11 +1,11 @@
-# MetaGPT
+# deepwisdom.ai
 
-> 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming
+> Package from pantry: deepwisdom.ai
 
 ## Package Information
 
 - **Domain**: `deepwisdom.ai`
-- **Name**: `MetaGPT`
+- **Name**: `deepwisdom.ai`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/deepwisdom.ai/package.yml)
 
@@ -13,41 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install metagpt
+launchpad install deepwisdom.ai
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `metagpt`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `metagpt`
-
-## Available Versions
-
-<details>
-<summary>Show all 16 versions</summary>
-
-- `0.8.2`, `0.8.1`, `0.8.0`, `0.7.7`, `0.7.6`
-- `0.7.4`, `0.7.3`, `0.7.2`, `0.7.1`, `0.7.0`
-- `0.6.6`, `0.6.4`, `0.6.3`, `0.6.2`, `0.6.0`
-- `0.5.2`
-
-</details>
-
-**Latest Version**: `0.8.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) metagpt -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -62,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.metagpt
+const pkg = pantry['deepwisdom.ai']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

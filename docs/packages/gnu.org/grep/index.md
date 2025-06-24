@@ -1,6 +1,6 @@
 # grep
 
-> A command-line utility for searching plain-text data sets for lines that match a regular expression
+> Package from pantry: gnu.org/grep
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install grep
+launchpad install gnu.org/grep
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `grep`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `3.12.0`, `3.11.0`, `3.8.0`
-
-</details>
-
-**Latest Version**: `3.12.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) grep -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

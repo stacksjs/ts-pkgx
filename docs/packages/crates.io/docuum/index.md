@@ -1,6 +1,6 @@
 # docuum
 
-> Docuum performs least recently used (LRU) eviction of Docker images. 🗑️
+> Package from pantry: crates.io/docuum
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install docuum
+launchpad install crates.io/docuum
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `docuum`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.25.0`, `0.24.0`, `0.23.1`, `0.23.0`
-
-</details>
-
-**Latest Version**: `0.25.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) docuum -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

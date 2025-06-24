@@ -1,11 +1,11 @@
-# forc
+# sway
 
-> 🌴 Empowering everyone to build reliable and efficient smart contracts.
+> Package from pantry: fuellabs.github.io/sway
 
 ## Package Information
 
 - **Domain**: `fuellabs.github.io/sway`
-- **Name**: `forc`
+- **Name**: `sway`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fuellabs.github.io/sway/package.yml)
 
@@ -13,47 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install forc
+launchpad install fuellabs.github.io/sway
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `forc`
-
-## Available Versions
-
-<details>
-<summary>Show all 76 versions</summary>
-
-- `0.68.9`, `0.68.7`, `0.68.6`, `0.68.5`, `0.68.4`
-- `0.68.3`, `0.68.2`, `0.68.1`, `0.68.0`, `0.67.2`
-- `0.67.1`, `0.67.0`, `0.66.10`, `0.66.9`, `0.66.8`
-- `0.66.7`, `0.66.6`, `0.66.5`, `0.66.4`, `0.66.3`
-- `0.66.2`, `0.66.1`, `0.66.0`, `0.65.2`, `0.65.1`
-- `0.65.0`, `0.63.6`, `0.63.5`, `0.63.4`, `0.63.3`
-- `0.63.2`, `0.63.1`, `0.63.0`, `0.62.0`, `0.61.2`
-- `0.61.1`, `0.61.0`, `0.60.0`, `0.59.0`, `0.58.0`
-- `0.57.0`, `0.56.1`, `0.56.0`, `0.55.0`, `0.54.0`
-- `0.53.0`, `0.52.1`, `0.51.1`, `0.51.0`, `0.50.0`
-- `0.49.3`, `0.49.2`, `0.49.1`, `0.49.0`, `0.48.1`
-- `0.48.0`, `0.47.0`, `0.46.1`, `0.46.0`, `0.45.0`
-- `0.44.1`, `0.44.0`, `0.43.2`, `0.43.1`, `0.43.0`
-- `0.42.1`, `0.42.0`, `0.41.0`, `0.40.1`, `0.40.0`
-- `0.39.1`, `0.39.0`, `0.38.0`, `0.37.3`, `0.37.2`
-- `0.35.5`
-
-</details>
-
-**Latest Version**: `0.68.9`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) forc -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -68,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.forc
+const pkg = pantry.sway
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

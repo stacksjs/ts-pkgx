@@ -1,11 +1,11 @@
-# gnu.org/findutils
+# findutils
 
-> Basic directory searching utilities of the GNU operating system
+> Package from pantry: gnu.org/findutils
 
 ## Package Information
 
 - **Domain**: `gnu.org/findutils`
-- **Name**: `gnu.org/findutils`
+- **Name**: `findutils`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/findutils/package.yml)
 
@@ -20,28 +20,7 @@ launchpad install gnu.org/findutils
 
 This package provides the following executable programs:
 
-- `find`
-- `locate`
-- `updatedb`
-- `xargs`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `4.10.0`, `4.9.0`
-
-</details>
-
-**Latest Version**: `4.10.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/findutils@4.10.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -49,7 +28,7 @@ sh <(curl https://pkgx.sh) +gnu.org/findutils@4.10.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/findutils']
+const pkg = pantry.findutils
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

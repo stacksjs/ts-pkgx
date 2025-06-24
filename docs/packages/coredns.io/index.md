@@ -1,11 +1,11 @@
-# coredns
+# coredns.io
 
-> CoreDNS is a DNS server that chains plugins
+> Package from pantry: coredns.io
 
 ## Package Information
 
 - **Domain**: `coredns.io`
-- **Name**: `coredns`
+- **Name**: `coredns.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/coredns.io/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install coredns
+launchpad install coredns.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `coredns`
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `1.12.2`, `1.12.1`, `1.12.0`, `1.11.4`, `1.11.3`
-- `1.11.2`, `1.11.1`, `1.10.1`
-
-</details>
-
-**Latest Version**: `1.12.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) coredns -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -47,7 +28,7 @@ sh <(curl https://pkgx.sh) coredns -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.coredns
+const pkg = pantry['coredns.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

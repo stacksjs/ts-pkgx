@@ -1,33 +1,23 @@
 /**
- * **melt** - Author, manage, and run multitrack audio/video compositions
+ * **melt** - Package from pantry: charm.sh/melt
  *
  * @domain `charm.sh/melt`
- * @programs `melt`
- * @version `0.6.2` (4 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install melt`
- * @name `melt`
+ * @install `launchpad install charm.sh/melt`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.melt
- * // Or access via domain
- * const samePkg = pantry.charmshmelt
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.charmshmelt
  * console.log(pkg.name)        // "melt"
- * console.log(pkg.description) // "Author, manage, and run multitrack audio/video ..."
- * console.log(pkg.programs)    // ["melt"]
- * console.log(pkg.versions[0]) // "0.6.2" (latest)
+ * console.log(pkg.description) // "Package from pantry: charm.sh/melt"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/charm-sh/melt.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const meltPackage = {
+export const charmshmeltPackage = {
   /**
    * The display name of this package.
    */
@@ -39,41 +29,21 @@ export const meltPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Author, manage, and run multitrack audio/video compositions' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/charm.sh/melt/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: charm.sh/melt' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install melt' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'melt',
-  ] as const,
+  installCommand: 'launchpad install charm.sh/melt' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +charm.sh/melt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install charm.sh/melt' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.6.2',
-    '0.6.1',
-    '0.6.0',
-    '0.5.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) melt -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install melt' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/charm.sh/melt/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type MeltPackage = typeof meltPackage
+export type CharmshmeltPackage = typeof charmshmeltPackage

@@ -1,37 +1,27 @@
 /**
- * **conftest** - Write tests against structured configuration data using the Open Policy Agent Rego query language
+ * **conftest.dev** - Package from pantry: conftest.dev
  *
  * @domain `conftest.dev`
- * @programs `conftest`
- * @version `0.61.2` (19 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install conftest`
- * @name `conftest`
+ * @install `launchpad install conftest.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.conftest
- * // Or access via domain
- * const samePkg = pantry.conftestdev
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "conftest"
- * console.log(pkg.description) // "Write tests against structured configuration da..."
- * console.log(pkg.programs)    // ["conftest"]
- * console.log(pkg.versions[0]) // "0.61.2" (latest)
+ * const pkg = pantry.conftestdev
+ * console.log(pkg.name)        // "conftest.dev"
+ * console.log(pkg.description) // "Package from pantry: conftest.dev"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/conftest-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const conftestPackage = {
+export const conftestdevPackage = {
   /**
    * The display name of this package.
    */
-  name: 'conftest' as const,
+  name: 'conftest.dev' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,56 +29,21 @@ export const conftestPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Write tests against structured configuration data using the Open Policy Agent Rego query language' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/conftest.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: conftest.dev' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install conftest' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'conftest',
-  ] as const,
+  installCommand: 'launchpad install conftest.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +conftest.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install conftest.dev' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.61.2',
-    '0.61.1',
-    '0.61.0',
-    '0.60.0',
-    '0.59.0',
-    '0.58.0',
-    '0.57.0',
-    '0.56.0',
-    '0.55.0',
-    '0.54.0',
-    '0.53.0',
-    '0.52.0',
-    '0.51.0',
-    '0.50.0',
-    '0.49.1',
-    '0.49.0',
-    '0.48.0',
-    '0.47.0',
-    '0.46.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) conftest -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install conftest' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/conftest.dev/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type ConftestPackage = typeof conftestPackage
+export type ConftestdevPackage = typeof conftestdevPackage

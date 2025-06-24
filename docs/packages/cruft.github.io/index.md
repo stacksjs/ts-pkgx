@@ -1,11 +1,11 @@
-# cruft
+# cruft.github.io
 
-> Allows you to maintain all the necessary cruft for packaging and building projects separate from the code you intentionally write. Built on-top of, and fully compatible with, CookieCutter.
+> Package from pantry: cruft.github.io
 
 ## Package Information
 
 - **Domain**: `cruft.github.io`
-- **Name**: `cruft`
+- **Name**: `cruft.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cruft.github.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install cruft
+launchpad install cruft.github.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cruft`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `2.16.0`, `2.15.0`
-
-</details>
-
-**Latest Version**: `2.16.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) cruft -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -53,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cruft
+const pkg = pantry['cruft.github.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

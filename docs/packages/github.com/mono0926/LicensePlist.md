@@ -1,11 +1,11 @@
-# license-plist
+# LicensePlist
 
-> A license list generator of all your dependencies for iOS applications
+> Package from pantry: github.com/mono0926/LicensePlist
 
 ## Package Information
 
 - **Domain**: `github.com/mono0926/LicensePlist`
-- **Name**: `license-plist`
+- **Name**: `LicensePlist`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mono0926/LicensePlist/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install license-plist
+launchpad install github.com/mono0926/LicensePlist
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `license-plist`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `3.27.1`, `3.27.0`, `3.26.0`, `3.25.1`
-
-</details>
-
-**Latest Version**: `3.27.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) license-plist -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) license-plist -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['license-plist']
+const pkg = pantry.LicensePlist
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,11 +1,11 @@
-# iconv
+# libiconv
 
-> A library for character encoding conversion
+> Package from pantry: gnu.org/libiconv
 
 ## Package Information
 
 - **Domain**: `gnu.org/libiconv`
-- **Name**: `iconv`
+- **Name**: `libiconv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libiconv/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install iconv
+launchpad install gnu.org/libiconv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `iconv`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.18.0`, `1.17.0`
-
-</details>
-
-**Latest Version**: `1.18.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) iconv -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -52,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.iconv
+const pkg = pantry.libiconv
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

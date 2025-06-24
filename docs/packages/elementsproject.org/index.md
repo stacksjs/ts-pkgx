@@ -1,6 +1,6 @@
 # elementsproject.org
 
-> Open Source implementation of advanced blockchain features extending the Bitcoin protocol
+> Package from pantry: elementsproject.org
 
 ## Package Information
 
@@ -20,32 +20,7 @@ launchpad install elementsproject.org
 
 This package provides the following executable programs:
 
-- `bench_bitcoin`
-- `elements-cli`
-- `elements-tx`
-- `elements-util`
-- `elements-wallet`
-- `elementsd`
-- `test_bitcoin`
-
-## Available Versions
-
-<details>
-<summary>Show all 9 versions</summary>
-
-- `23.3.0`, `23.2.7`, `23.2.6`, `23.2.5`, `23.2.4`
-- `23.2.3`, `23.2.2`, `23.2.1`, `22.1.1`
-
-</details>
-
-**Latest Version**: `23.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +elementsproject.org@23.3.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -1,11 +1,11 @@
-# docker-machine
+# machine
 
-> Create Docker hosts locally and on cloud providers
+> Package from pantry: docker.com/machine
 
 ## Package Information
 
 - **Domain**: `docker.com/machine`
-- **Name**: `docker-machine`
+- **Name**: `machine`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/docker.com/machine/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install docker-machine
+launchpad install docker.com/machine
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `docker-machine`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.16.2`
-
-</details>
-
-**Latest Version**: `0.16.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) docker-machine -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) docker-machine -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['docker-machine']
+const pkg = pantry.machine
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

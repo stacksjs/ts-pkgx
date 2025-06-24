@@ -1,33 +1,23 @@
 /**
- * **sleek** - Sleek is a CLI tool for formatting SQL. It helps you maintain a consistent style across your SQL code, enhancing readability and productivity.
+ * **sleek** - Package from pantry: crates.io/sleek
  *
  * @domain `crates.io/sleek`
- * @programs `sleek`
- * @version `0.5.0` (3 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install sleek`
- * @name `sleek`
+ * @install `launchpad install crates.io/sleek`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sleek
- * // Or access via domain
- * const samePkg = pantry.cratesiosleek
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiosleek
  * console.log(pkg.name)        // "sleek"
- * console.log(pkg.description) // "Sleek is a CLI tool for formatting SQL. It help..."
- * console.log(pkg.programs)    // ["sleek"]
- * console.log(pkg.versions[0]) // "0.5.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: crates.io/sleek"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/sleek.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sleekPackage = {
+export const cratesiosleekPackage = {
   /**
    * The display name of this package.
    */
@@ -39,40 +29,21 @@ export const sleekPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Sleek is a CLI tool for formatting SQL. It helps you maintain a consistent style across your SQL code, enhancing readability and productivity.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/sleek/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: crates.io/sleek' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sleek' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'sleek',
-  ] as const,
+  installCommand: 'launchpad install crates.io/sleek' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/sleek -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/sleek' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.5.0',
-    '0.4.0',
-    '0.3.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sleek -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sleek' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/sleek/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type SleekPackage = typeof sleekPackage
+export type CratesiosleekPackage = typeof cratesiosleekPackage

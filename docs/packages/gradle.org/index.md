@@ -1,11 +1,11 @@
-# gradle
+# gradle.org
 
-> Open-source build automation tool based on the Groovy and Kotlin DSL
+> Package from pantry: gradle.org
 
 ## Package Information
 
 - **Domain**: `gradle.org`
-- **Name**: `gradle`
+- **Name**: `gradle.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gradle.org/package.yml)
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gradle
+launchpad install gradle.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gradle`
-
-## Available Versions
-
-<details>
-<summary>Show all 18 versions</summary>
-
-- `8.14.2`, `8.14.1`, `8.14.0`, `8.13.0`, `8.12.1`
-- `8.12.0`, `8.11.1`, `8.11.0`, `8.10.2`, `8.10.1`
-- `8.10.0`, `8.9.0`, `8.8.0`, `8.7.0`, `8.6.0`
-- `8.5.0`, `8.2.1`, `7.6.5`
-
-</details>
-
-**Latest Version**: `8.14.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) gradle -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -55,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.gradle
+const pkg = pantry['gradle.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

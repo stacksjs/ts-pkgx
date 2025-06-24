@@ -1,11 +1,11 @@
-# gnome.org/gsettings-desktop-schemas
+# gsettings-desktop-schemas
 
-> Shared GSettings schemas for the GNOME desktop
+> Package from pantry: gnome.org/gsettings-desktop-schemas
 
 ## Package Information
 
 - **Domain**: `gnome.org/gsettings-desktop-schemas`
-- **Name**: `gnome.org/gsettings-desktop-schemas`
+- **Name**: `gsettings-desktop-schemas`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/gsettings-desktop-schemas/package.yml)
 
@@ -22,25 +22,6 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `48.0.0`, `47.1.0`, `46.1.0`, `46.0.0`, `45.0.0`
-- `44.0.0`
-
-</details>
-
-**Latest Version**: `48.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnome.org/gsettings-desktop-schemas@48.0.0 -- $SHELL -i
-```
-
 ## Dependencies
 
 This package depends on:
@@ -54,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnome.org/gsettings-desktop-schemas']
+const pkg = pantry['gsettings-desktop-schemas']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

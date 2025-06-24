@@ -1,11 +1,11 @@
-# gnu.org/gcc/libstdcxx
+# libstdcxx
 
-> The GNU Standard C++ Library v3
+> Package from pantry: gnu.org/gcc/libstdcxx
 
 ## Package Information
 
 - **Domain**: `gnu.org/gcc/libstdcxx`
-- **Name**: `gnu.org/gcc/libstdcxx`
+- **Name**: `libstdcxx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gcc/libstdcxx/package.yml)
 
@@ -21,25 +21,6 @@ launchpad install gnu.org/gcc/libstdcxx
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `15.1.0`, `14.3.0`, `14.2.0`, `14.1.0`, `13.3.0`
-- `12.4.0`
-
-</details>
-
-**Latest Version**: `15.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/gcc/libstdcxx@15.1.0 -- $SHELL -i
-```
 
 ## Dependencies
 
@@ -57,7 +38,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/gcc/libstdcxx']
+const pkg = pantry.libstdcxx
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

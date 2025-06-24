@@ -1,6 +1,6 @@
 # usque
 
-> Open-source reimplementation of the Cloudflare WARP client's MASQUE protocol.
+> Package from pantry: github.com/Diniboy1123/usque
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install usque
+launchpad install github.com/Diniboy1123/usque
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `usque`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `1.4.0`, `1.3.0`, `1.2.1`, `1.2.0`, `1.1.1`
-- `1.1.0`, `1.0.4`
-
-</details>
-
-**Latest Version**: `1.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) usque -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

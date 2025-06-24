@@ -1,6 +1,6 @@
 # xcodeproj
 
-> Create and modify Xcode projects from Ruby.
+> Package from pantry: cocoapods.org/xcodeproj
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install xcodeproj
+launchpad install cocoapods.org/xcodeproj
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `xcodeproj`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.27.0`
-
-</details>
-
-**Latest Version**: `1.27.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) xcodeproj -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

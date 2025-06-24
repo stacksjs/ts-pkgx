@@ -1,11 +1,11 @@
-# carapace
+# carapace.sh
 
-> Multi-shell multi-command argument completer
+> Package from pantry: carapace.sh
 
 ## Package Information
 
 - **Domain**: `carapace.sh`
-- **Name**: `carapace`
+- **Name**: `carapace.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/carapace.sh/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install carapace
+launchpad install carapace.sh
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `carapace`
-
-## Available Versions
-
-<details>
-<summary>Show all 12 versions</summary>
-
-- `1.3.3`, `1.3.2`, `1.3.1`, `1.3.0`, `1.2.1`
-- `1.2.0`, `1.1.1`, `1.1.0`, `1.0.7`, `1.0.6`
-- `1.0.5`, `1.0.4`
-
-</details>
-
-**Latest Version**: `1.3.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) carapace -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -48,7 +28,7 @@ sh <(curl https://pkgx.sh) carapace -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.carapace
+const pkg = pantry['carapace.sh']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

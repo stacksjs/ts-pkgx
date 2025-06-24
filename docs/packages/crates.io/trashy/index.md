@@ -1,11 +1,11 @@
-# trash
+# trashy
 
-> a cli system trash manager, alternative to rm and trash-cli
+> Package from pantry: crates.io/trashy
 
 ## Package Information
 
 - **Domain**: `crates.io/trashy`
-- **Name**: `trash`
+- **Name**: `trashy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/trashy/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install trash
+launchpad install crates.io/trashy
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `trash`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `2.0.0`, `1.0.3`
-
-</details>
-
-**Latest Version**: `2.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) trash -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) trash -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.trash
+const pkg = pantry.trashy
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

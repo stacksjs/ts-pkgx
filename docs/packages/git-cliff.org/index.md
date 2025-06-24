@@ -1,11 +1,11 @@
-# git-cliff
+# git-cliff.org
 
-> A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️
+> Package from pantry: git-cliff.org
 
 ## Package Information
 
 - **Domain**: `git-cliff.org`
-- **Name**: `git-cliff`
+- **Name**: `git-cliff.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/git-cliff.org/package.yml)
 
@@ -13,36 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install git-cliff
+launchpad install git-cliff.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `git-cliff`
-
-## Available Versions
-
-<details>
-<summary>Show all 23 versions</summary>
-
-- `2.9.1`, `2.9.0`, `2.8.0`, `2.7.0`, `2.6.1`
-- `2.6.0`, `2.5.0`, `2.4.0`, `2.3.0`, `2.2.2`
-- `2.2.1`, `2.2.0`, `2.1.2`, `2.1.1`, `2.0.4`
-- `2.0.3`, `2.0.2`, `2.0.1`, `2.0.0`, `1.4.0`
-- `1.3.1`, `1.3.0`, `1.2.0`
-
-</details>
-
-**Latest Version**: `2.9.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) git-cliff -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -56,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['git-cliff']
+const pkg = pantry['git-cliff.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

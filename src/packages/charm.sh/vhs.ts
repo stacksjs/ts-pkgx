@@ -1,34 +1,24 @@
 /**
- * **vhs** - Your CLI home video recorder 📼
+ * **vhs** - Package from pantry: charm.sh/vhs
  *
  * @domain `charm.sh/vhs`
- * @programs `vhs`
- * @version `0.10.0` (14 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install vhs`
- * @name `vhs`
+ * @install `launchpad install charm.sh/vhs`
  * @dependencies `ffmpeg.org>=5`, `tsl0922.github.io/ttyd^1.7.2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.vhs
- * // Or access via domain
- * const samePkg = pantry.charmshvhs
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.charmshvhs
  * console.log(pkg.name)        // "vhs"
- * console.log(pkg.description) // "Your CLI home video recorder 📼"
- * console.log(pkg.programs)    // ["vhs"]
- * console.log(pkg.versions[0]) // "0.10.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: charm.sh/vhs"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/charm-sh/vhs.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const vhsPackage = {
+export const charmshvhsPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const vhsPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Your CLI home video recorder 📼' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/charm.sh/vhs/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: charm.sh/vhs' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install vhs' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'vhs',
-  ] as const,
+  installCommand: 'launchpad install charm.sh/vhs' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +charm.sh/vhs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install charm.sh/vhs' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -65,33 +48,10 @@ export const vhsPackage = {
     'ffmpeg.org>=5',
     'tsl0922.github.io/ttyd^1.7.2',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.10.0',
-    '0.9.0',
-    '0.8.0',
-    '0.7.2',
-    '0.7.1',
-    '0.7.0',
-    '0.6.0',
-    '0.5.0',
-    '0.4.0',
-    '0.3.0',
-    '0.2.0',
-    '0.1.1',
-    '0.1.0',
-    '0.0.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vhs -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install vhs' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/charm.sh/vhs/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type VhsPackage = typeof vhsPackage
+export type CharmshvhsPackage = typeof charmshvhsPackage

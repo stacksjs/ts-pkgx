@@ -1,11 +1,11 @@
-# unidata.ucar.edu/netcdf
+# netcdf
 
-> Official GitHub repository for netCDF-C libraries and utilities.
+> Package from pantry: unidata.ucar.edu/netcdf
 
 ## Package Information
 
 - **Domain**: `unidata.ucar.edu/netcdf`
-- **Name**: `unidata.ucar.edu/netcdf`
+- **Name**: `netcdf`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/unidata.ucar.edu/netcdf/package.yml)
 
@@ -20,29 +20,7 @@ launchpad install unidata.ucar.edu/netcdf
 
 This package provides the following executable programs:
 
-- `nc-config`
-- `nccopy`
-- `ncdump`
-- `ncgen`
-- `ncgen3`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `4.9.3`, `4.9.2`
-
-</details>
-
-**Latest Version**: `4.9.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +unidata.ucar.edu/netcdf@4.9.3 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -60,7 +38,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['unidata.ucar.edu/netcdf']
+const pkg = pantry.netcdf
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

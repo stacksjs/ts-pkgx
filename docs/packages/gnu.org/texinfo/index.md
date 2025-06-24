@@ -1,11 +1,11 @@
-# gnu.org/texinfo
+# texinfo
 
-> Official documentation format of the GNU project
+> Package from pantry: gnu.org/texinfo
 
 ## Package Information
 
 - **Domain**: `gnu.org/texinfo`
-- **Name**: `gnu.org/texinfo`
+- **Name**: `texinfo`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/texinfo/package.yml)
 
@@ -20,33 +20,7 @@ launchpad install gnu.org/texinfo
 
 This package provides the following executable programs:
 
-- `info`
-- `install-info`
-- `makeinfo`
-- `pdftexi2dvi`
-- `pod2texi`
-- `texi2any`
-- `texi2dvi`
-- `texi2pdf`
-- `texindex`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `7.2.0`, `7.1.1`, `7.1.0`, `7.0.3`, `7.0.1`
-
-</details>
-
-**Latest Version**: `7.2.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/texinfo@7.2.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -60,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/texinfo']
+const pkg = pantry.texinfo
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

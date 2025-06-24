@@ -1,6 +1,6 @@
 # bartib
 
-> A simple timetracker for the command line. It saves a log of all tracked activities as a plaintext file and allows you to create flexible reports.
+> Package from pantry: crates.io/bartib
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install bartib
+launchpad install crates.io/bartib
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `bartib`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.1.0`, `1.0.1`
-
-</details>
-
-**Latest Version**: `1.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) bartib -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

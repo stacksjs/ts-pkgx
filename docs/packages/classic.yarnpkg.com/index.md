@@ -1,6 +1,6 @@
 # classic.yarnpkg.com
 
-> The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
+> Package from pantry: classic.yarnpkg.com
 
 ## Package Information
 
@@ -13,39 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install yarn
+launchpad install classic.yarnpkg.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `yarn`
-- `yarnpkg`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `yarn`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.22.22`, `1.22.21`, `1.22.20`, `1.22.19`
-
-</details>
-
-**Latest Version**: `1.22.22`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +classic.yarnpkg.com@1.22.22 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -59,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.yarn
+const pkg = pantry['classic.yarnpkg.com']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

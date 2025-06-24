@@ -1,148 +1,68 @@
 # Programming Languages
 
-*14 packages in this category*
+*6 packages in this category*
 
 Popular programming languages and their runtimes available through pkgx.
 
 ## Packages
 
-### [crystal-lang.org](../packages/crystal-lang.org/index.md) (crystal)
+### [go.dev](../packages/go.dev/index.md)
 
-Fast and statically typed, compiled language with Ruby-like syntax
+Package from pantry: go.dev
 
-**Programs**: crystal
+**Programs**: None specified
 
-**Install**: `launchpad install crystal`
-
----
-
-### [dart.dev](../packages/dart.dev/index.md) (dart)
-
-The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more.
-
-**Programs**: dart, dartaotruntime
-
-**Install**: `launchpad install dart`
+**Install**: `launchpad install go.dev`
 
 ---
 
-### [go.dev](../packages/go.dev/index.md) (go)
+### [nodejs.org](../packages/nodejs.org/index.md)
 
-The Go programming language
+Package from pantry: nodejs.org
 
-**Programs**: go, gofmt
+**Programs**: None specified
 
-**Install**: `launchpad install go`
-
----
-
-### [julialang.org](../packages/julialang.org/index.md) (julia)
-
-The Julia Programming Language
-
-**Programs**: julia
-
-**Install**: `launchpad install julia`
+**Install**: `launchpad install nodejs.org`
 
 ---
 
-### [lua.org](../packages/lua.org/index.md) (lua)
+### [php.net](../packages/php.net/index.md)
 
-Powerful, lightweight programming language
+Package from pantry: php.net
 
-**Programs**: lua, luac
+**Programs**: None specified
 
-**Install**: `launchpad install lua`
-
----
-
-### [luajit.org](../packages/luajit.org/index.md) (luajit)
-
-Mirror of the LuaJIT git repository
-
-**Programs**: luajit, luajit-2.1.
-
-**Install**: `launchpad install luajit`
+**Install**: `launchpad install php.net`
 
 ---
 
-### [nodejs.org](../packages/nodejs.org/index.md) (node)
+### [python.org](../packages/python.org/index.md)
 
-Platform built on V8 to build network applications
+Package from pantry: python.org
 
-**Programs**: node
+**Programs**: None specified
 
-**Install**: `launchpad install node`
-
----
-
-### [php.net](../packages/php.net/index.md) (php)
-
-General-purpose scripting language
-
-**Programs**: pear, pecl, phar, php, php-cgi, php-config, phpdbg, phpize
-
-**Install**: `launchpad install php`
+**Install**: `launchpad install python.org`
 
 ---
 
-### [python.org](../packages/python.org/index.md) (python, py)
+### [ruby-lang.org](../packages/ruby-lang.org/index.md)
 
-The Python programming language
+Package from pantry: ruby-lang.org
 
-**Programs**: python, python3, python3.13
+**Programs**: None specified
 
-**Install**: `launchpad install py`
-
----
-
-### [ruby-lang.org](../packages/ruby-lang.org/index.md) (ruby)
-
-Powerful, clean, object-oriented scripting language
-
-**Programs**: erb, irb, rake, rdoc, ri, ruby
-
-**Install**: `launchpad install ruby`
+**Install**: `launchpad install ruby-lang.org`
 
 ---
 
-### [rust-lang.org](../packages/rust-lang.org/index.md) (rust)
+### [tcl.tk/tcl](../packages/tcl.tk/tcl/index.md) (tcl)
 
-Empowering everyone to build reliable and efficient software.
+Package from pantry: tcl.tk/tcl
 
-**Programs**: cargo-clippy, cargo-fmt, clippy-driver, rust-analyzer, rust-gdb, rust-gdbgui, rust-lldb, rustc, rustdoc, rustfmt
+**Programs**: None specified
 
-**Install**: `launchpad install rust`
-
----
-
-### [swift.org](../packages/swift.org/index.md) (swift)
-
-The Swift Programming Language
-
-**Programs**: docc, dsymutil, sourcekit-lsp, swift-api-checker.py, swift-build-sdk-interfaces, swift-build-tool, swift-demangle, swift-driver, swift-format, swift-frontend, swift-help, swift-package, swift-plugin-server, swift-stdlib-tool, swift, swift-api-digester, swift-api-extract, swift-autolink-extract, swift-build, swift-experimental-sdk, swift-package-collection, swift-package-registry, swift-run, swift-symbolgraph-extract, swift-test, swiftc
-
-**Install**: `launchpad install swift`
-
----
-
-### [tinygo.org](../packages/tinygo.org/index.md) (tinygo)
-
-Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM.
-
-**Programs**: tinygo
-
-**Install**: `launchpad install tinygo`
-
----
-
-### [ziglang.org](../packages/ziglang.org/index.md) (zig)
-
-General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
-
-**Programs**: zig
-
-**Install**: `launchpad install zig`
+**Install**: `launchpad install tcl.tk/tcl`
 
 ---
 

@@ -1,33 +1,23 @@
 /**
- * **cpz** - Modern, performance focused unix commands
+ * **cpz** - Package from pantry: crates.io/cpz
  *
  * @domain `crates.io/cpz`
- * @programs `cpz`
- * @version `3.1.0` (5 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install cpz`
- * @name `cpz`
+ * @install `launchpad install crates.io/cpz`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cpz
- * // Or access via domain
- * const samePkg = pantry.cratesiocpz
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiocpz
  * console.log(pkg.name)        // "cpz"
- * console.log(pkg.description) // "Modern, performance focused unix commands"
- * console.log(pkg.programs)    // ["cpz"]
- * console.log(pkg.versions[0]) // "3.1.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: crates.io/cpz"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/cpz.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cpzPackage = {
+export const cratesiocpzPackage = {
   /**
    * The display name of this package.
    */
@@ -39,42 +29,21 @@ export const cpzPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Modern, performance focused unix commands' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/cpz/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: crates.io/cpz' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cpz' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'cpz',
-  ] as const,
+  installCommand: 'launchpad install crates.io/cpz' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/cpz -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/cpz' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.1.0',
-    '3.0.1',
-    '3.0.0',
-    '2.2.0',
-    '2.1.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cpz -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cpz' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/cpz/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type CpzPackage = typeof cpzPackage
+export type CratesiocpzPackage = typeof cratesiocpzPackage

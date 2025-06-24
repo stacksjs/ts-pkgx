@@ -1,11 +1,11 @@
-# gnu.org/gcc
+# gcc
 
-> The GNU Compiler Collection - a compiler system supporting various programming languages
+> Package from pantry: gnu.org/gcc
 
 ## Package Information
 
 - **Domain**: `gnu.org/gcc`
-- **Name**: `gnu.org/gcc`
+- **Name**: `gcc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gcc/package.yml)
 
@@ -20,43 +20,7 @@ launchpad install gnu.org/gcc
 
 This package provides the following executable programs:
 
-- `ar`
-- `cc`
-- `c++`
-- `gc++`
-- `cpp`
-- `g++`
-- `gcc`
-- `gcc-ar`
-- `gcc-nm`
-- `gcc-ranlib`
-- `gcov`
-- `gcov-dump`
-- `gcov-tool`
-- `gfortran`
-- `lto-dump`
-- `nm`
-- `ranlib`
-
-## Available Versions
-
-<details>
-<summary>Show all 12 versions</summary>
-
-- `15.1.0`, `14.3.0`, `14.2.0`, `14.1.0`, `13.3.0`
-- `13.2.0`, `13.1.0`, `12.4.0`, `12.3.0`, `12.2.0`
-- `11.4.0`, `10.5.0`
-
-</details>
-
-**Latest Version**: `15.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/gcc@15.1.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -74,7 +38,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/gcc']
+const pkg = pantry.gcc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

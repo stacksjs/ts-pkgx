@@ -1,11 +1,11 @@
-# gnu.org/inetutils
+# inetutils
 
-> Common network programs
+> Package from pantry: gnu.org/inetutils
 
 ## Package Information
 
 - **Domain**: `gnu.org/inetutils`
-- **Name**: `gnu.org/inetutils`
+- **Name**: `inetutils`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/inetutils/package.yml)
 
@@ -20,50 +20,7 @@ launchpad install gnu.org/inetutils
 
 This package provides the following executable programs:
 
-- `dnsdomainname`
-- `ftp`
-- `hostname`
-- `ifconfig`
-- `logger`
-- `ping`
-- `ping6`
-- `rcp`
-- `rexec`
-- `rlogin`
-- `rsh`
-- `talk`
-- `telnet`
-- `tftp`
-- `traceroute`
-- `whois`
-- `ftpd`
-- `inetd`
-- `rexecd`
-- `rlogind`
-- `rshd`
-- `syslogd`
-- `talkd`
-- `telnetd`
-- `tftpd`
-- `uucpd`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `2.6.0`, `2.5.0`, `2.4.0`
-
-</details>
-
-**Latest Version**: `2.6.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/inetutils@2.6.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -78,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/inetutils']
+const pkg = pantry.inetutils
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

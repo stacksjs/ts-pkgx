@@ -1,30 +1,23 @@
 /**
- * **cyrus-sasl** - pkgx package
+ * **cyrus-sasl** - Package from pantry: cyrusimap.org/cyrus-sasl
  *
  * @domain `cyrusimap.org/cyrus-sasl`
- * @version `2.1.28` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install cyrus-sasl`
- * @name `cyrus-sasl`
+ * @install `launchpad install cyrusimap.org/cyrus-sasl`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cyrussasl
- * // Or access via domain
- * const samePkg = pantry.cyrusimaporgcyrussasl
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cyrusimaporgcyrussasl
  * console.log(pkg.name)        // "cyrus-sasl"
- * console.log(pkg.versions[0]) // "2.1.28" (latest)
+ * console.log(pkg.description) // "Package from pantry: cyrusimap.org/cyrus-sasl"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cyrusimap-org/cyrus-sasl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cyrussaslPackage = {
+export const cyrusimaporgcyrussaslPackage = {
   /**
    * The display name of this package.
    */
@@ -36,32 +29,21 @@ export const cyrussaslPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cyrusimap.org/cyrus-sasl/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: cyrusimap.org/cyrus-sasl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cyrus-sasl' as const,
+  installCommand: 'launchpad install cyrusimap.org/cyrus-sasl' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cyrusimap.org/cyrus-sasl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cyrusimap.org/cyrus-sasl' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.1.28',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cyrusimap.org/cyrus-sasl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cyrus-sasl' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cyrusimap.org/cyrus-sasl/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type CyrussaslPackage = typeof cyrussaslPackage
+export type CyrusimaporgcyrussaslPackage = typeof cyrusimaporgcyrussaslPackage

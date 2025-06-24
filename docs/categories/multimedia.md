@@ -1,78 +1,28 @@
 # Multimedia
 
-*7 packages in this category*
+*2 packages in this category*
 
 Audio, video, and image processing tools.
 
 ## Packages
 
-### [exiftool.org](../packages/exiftool.org/index.md) (exiftool)
-
-Perl lib for reading and writing EXIF metadata
-
-**Programs**: exiftool
-
-**Install**: `launchpad install exiftool`
-
----
-
 ### [lcdf.org/gifsicle](../packages/lcdf.org/gifsicle/index.md) (gifsicle)
 
-Create, manipulate, and optimize GIF images and animations
+Package from pantry: lcdf.org/gifsicle
 
-**Programs**: gifsicle
+**Programs**: None specified
 
-**Install**: `launchpad install gifsicle`
-
----
-
-### [libvips.org](../packages/libvips.org/index.md) (vips)
-
-A fast image processing library with low memory needs.
-
-**Programs**: vips, vipsedit, vipsheader, vipsprofile, vipsthumbnail
-
-**Install**: `launchpad install vips`
-
----
-
-### [mpv.io](../packages/mpv.io/index.md) (mpv)
-
-Media player based on MPlayer and mplayer2
-
-**Programs**: mpv
-
-**Install**: `launchpad install mpv`
+**Install**: `launchpad install lcdf.org/gifsicle`
 
 ---
 
 ### [sf.net/optipng](../packages/sf.net/optipng/index.md) (optipng)
 
-PNG file optimizer
+Package from pantry: sf.net/optipng
 
-**Programs**: optipng
+**Programs**: None specified
 
-**Install**: `launchpad install optipng`
-
----
-
-### [streamlink.github.io](../packages/streamlink.github.io/index.md) (streamlink)
-
-Streamlink is a CLI utility which pipes video streams from various services into a video player
-
-**Programs**: streamlink
-
-**Install**: `launchpad install streamlink`
-
----
-
-### [yt-dlp.org](../packages/yt-dlp.org/index.md) (yt-dlp)
-
-A feature-rich command-line audio/video downloader
-
-**Programs**: yt-dlp
-
-**Install**: `launchpad install yt-dlp`
+**Install**: `launchpad install sf.net/optipng`
 
 ---
 

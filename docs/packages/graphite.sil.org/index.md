@@ -1,11 +1,11 @@
-# gr2fonttest
+# graphite.sil.org
 
-> Graphite is a "smart font" system developed specifically to handle the complexities of lesser-known languages of the world.
+> Package from pantry: graphite.sil.org
 
 ## Package Information
 
 - **Domain**: `graphite.sil.org`
-- **Name**: `gr2fonttest`
+- **Name**: `graphite.sil.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/graphite.sil.org/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gr2fonttest
+launchpad install graphite.sil.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gr2fonttest`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.3.14`
-
-</details>
-
-**Latest Version**: `1.3.14`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) gr2fonttest -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) gr2fonttest -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.gr2fonttest
+const pkg = pantry['graphite.sil.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

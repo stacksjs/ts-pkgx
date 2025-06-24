@@ -1,6 +1,6 @@
 # licensor
 
-> write licenses to stdout
+> Package from pantry: crates.io/licensor
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install licensor
+launchpad install crates.io/licensor
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `licensor`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `2.1.0`, `2.0.0`
-
-</details>
-
-**Latest Version**: `2.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) licensor -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -1,33 +1,23 @@
 /**
- * **git-chglog** - CHANGELOG generator implemented in Go (Golang).
+ * **git-chglog** - Package from pantry: github.com/git-chglog
  *
  * @domain `github.com/git-chglog`
- * @programs `git-chglog`
- * @version `0.15.4` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install git-chglog`
- * @name `git-chglog`
+ * @install `launchpad install github.com/git-chglog`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gitchglog
- * // Or access via domain
- * const samePkg = pantry.githubcomgitchglog
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomgitchglog
  * console.log(pkg.name)        // "git-chglog"
- * console.log(pkg.description) // "CHANGELOG generator implemented in Go (Golang)."
- * console.log(pkg.programs)    // ["git-chglog"]
- * console.log(pkg.versions[0]) // "0.15.4" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/git-chglog"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/git-chglog.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitchglogPackage = {
+export const githubcomgitchglogPackage = {
   /**
    * The display name of this package.
    */
@@ -39,38 +29,21 @@ export const gitchglogPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'CHANGELOG generator implemented in Go (Golang).' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/git-chglog/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/git-chglog' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install git-chglog' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'git-chglog',
-  ] as const,
+  installCommand: 'launchpad install github.com/git-chglog' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/git-chglog -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/git-chglog' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.15.4',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-chglog -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install git-chglog' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/git-chglog/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type GitchglogPackage = typeof gitchglogPackage
+export type GithubcomgitchglogPackage = typeof githubcomgitchglogPackage

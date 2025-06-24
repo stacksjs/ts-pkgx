@@ -1,6 +1,6 @@
 # patch
 
-> A utility to apply a diff file to an original
+> Package from pantry: gnu.org/patch
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install patch
+launchpad install gnu.org/patch
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `patch`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `2.8.0`, `2.7.6`
-
-</details>
-
-**Latest Version**: `2.8.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) patch -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

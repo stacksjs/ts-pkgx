@@ -1,6 +1,6 @@
 # eureka
 
-> 💡 CLI tool to input and store your ideas without leaving the terminal
+> Package from pantry: crates.io/eureka
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install eureka
+launchpad install crates.io/eureka
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `eureka`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.0.0`
-
-</details>
-
-**Latest Version**: `2.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) eureka -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

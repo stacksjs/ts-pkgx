@@ -1,37 +1,27 @@
 /**
- * **caddy** - Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
+ * **caddyserver.com** - Package from pantry: caddyserver.com
  *
  * @domain `caddyserver.com`
- * @programs `caddy`
- * @version `2.10.0` (10 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install caddy`
- * @name `caddy`
+ * @install `launchpad install caddyserver.com`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.caddy
- * // Or access via domain
- * const samePkg = pantry.caddyservercom
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "caddy"
- * console.log(pkg.description) // "Fast and extensible multi-platform HTTP/1-2-3 w..."
- * console.log(pkg.programs)    // ["caddy"]
- * console.log(pkg.versions[0]) // "2.10.0" (latest)
+ * const pkg = pantry.caddyservercom
+ * console.log(pkg.name)        // "caddyserver.com"
+ * console.log(pkg.description) // "Package from pantry: caddyserver.com"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/caddyserver-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const caddyPackage = {
+export const caddyservercomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'caddy' as const,
+  name: 'caddyserver.com' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,47 +29,21 @@ export const caddyPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/caddyserver.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: caddyserver.com' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install caddy' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'caddy',
-  ] as const,
+  installCommand: 'launchpad install caddyserver.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +caddyserver.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install caddyserver.com' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.10.0',
-    '2.9.1',
-    '2.9.0',
-    '2.8.4',
-    '2.8.2',
-    '2.8.1',
-    '2.8.0',
-    '2.7.6',
-    '2.7.5',
-    '2.7.4',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) caddy -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install caddy' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/caddyserver.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type CaddyPackage = typeof caddyPackage
+export type CaddyservercomPackage = typeof caddyservercomPackage

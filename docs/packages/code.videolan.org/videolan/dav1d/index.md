@@ -1,6 +1,6 @@
 # dav1d
 
-> AV1 decoder targeted to be small and fast
+> Package from pantry: code.videolan.org/videolan/dav1d
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install dav1d
+launchpad install code.videolan.org/videolan/dav1d
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `dav1d`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.2.0`, `1.0.0`
-
-</details>
-
-**Latest Version**: `1.2.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) dav1d -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

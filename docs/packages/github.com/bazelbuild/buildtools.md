@@ -1,11 +1,11 @@
-# buildifier
+# buildtools
 
-> Format bazel BUILD files with a standard convention
+> Package from pantry: github.com/bazelbuild/buildtools
 
 ## Package Information
 
 - **Domain**: `github.com/bazelbuild/buildtools`
-- **Name**: `buildifier`
+- **Name**: `buildtools`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/bazelbuild/buildtools/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install buildifier
+launchpad install github.com/bazelbuild/buildtools
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `buildifier`
-
-## Available Versions
-
-<details>
-<summary>Show all 11 versions</summary>
-
-- `8.2.1`, `8.2.0`, `8.0.3`, `8.0.2`, `8.0.1`
-- `8.0.0`, `7.3.1`, `7.1.2`, `7.1.1`, `7.1.0`
-- `6.4.0`
-
-</details>
-
-**Latest Version**: `8.2.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) buildifier -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -48,7 +28,7 @@ sh <(curl https://pkgx.sh) buildifier -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.buildifier
+const pkg = pantry.buildtools
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

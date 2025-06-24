@@ -1,6 +1,6 @@
 # tf-import-gen
 
-> Tool to generate terraform import statements to simplify state migrations from one terraform code base to another
+> Package from pantry: github.com/kishaningithub/tf-import-gen
 
 ## Package Information
 
@@ -13,36 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install tf-import-gen
+launchpad install github.com/kishaningithub/tf-import-gen
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `tf-import-gen`
-
-## Available Versions
-
-<details>
-<summary>Show all 21 versions</summary>
-
-- `0.17.0`, `0.16.0`, `0.15.0`, `0.14.0`, `0.13.1`
-- `0.12.0`, `0.11.1`, `0.11.0`, `0.10.2`, `0.10.1`
-- `0.10.0`, `0.9.0`, `0.8.0`, `0.7.4`, `0.7.3`
-- `0.7.2`, `0.7.1`, `0.7.0`, `0.6.0`, `0.5.0`
-- `0.4.1`
-
-</details>
-
-**Latest Version**: `0.17.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) tf-import-gen -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

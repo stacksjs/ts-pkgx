@@ -1,6 +1,6 @@
 # ny
 
-> 🗽 Fast, Proxy Package Manager for JavaScript
+> Package from pantry: github.com/krzkaczor/ny
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ny
+launchpad install github.com/krzkaczor/ny
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ny`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.2.1`, `0.2.0`, `0.1.2`, `0.1.1`
-
-</details>
-
-**Latest Version**: `0.2.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ny -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

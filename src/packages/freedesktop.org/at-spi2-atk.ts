@@ -1,9 +1,7 @@
 /**
- * **freedesktop.org/at-spi2-atk** - pkgx package
+ * **at-spi2-atk** - Package from pantry: freedesktop.org/at-spi2-atk
  *
  * @domain `freedesktop.org/at-spi2-atk`
- * @version `2.38.0` (1 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install freedesktop.org/at-spi2-atk`
  * @dependencies `gnome.org/atk`, `gnome.org/libxml2`, `freedesktop.org/dbus`, ... (+1 more)
@@ -13,8 +11,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.freedesktoporgatspi2atk
- * console.log(pkg.name)        // "freedesktop.org/at-spi2-atk"
- * console.log(pkg.versions[0]) // "2.38.0" (latest)
+ * console.log(pkg.name)        // "at-spi2-atk"
+ * console.log(pkg.description) // "Package from pantry: freedesktop.org/at-spi2-atk"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/freedesktop-org/at-spi2-atk.md
@@ -24,7 +22,7 @@ export const freedesktoporgatspi2atkPackage = {
   /**
    * The display name of this package.
    */
-  name: 'freedesktop.org/at-spi2-atk' as const,
+  name: 'at-spi2-atk' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -32,15 +30,14 @@ export const freedesktoporgatspi2atkPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/at-spi2-atk/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: freedesktop.org/at-spi2-atk' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install freedesktop.org/at-spi2-atk' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/at-spi2-atk -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/at-spi2-atk' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -53,16 +50,10 @@ export const freedesktoporgatspi2atkPackage = {
     'freedesktop.org/dbus',
     'x.org/xtst',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.38.0',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/at-spi2-atk -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install freedesktop.org/at-spi2-atk' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/at-spi2-atk/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type Freedesktoporgatspi2atkPackage = typeof freedesktoporgatspi2atkPackage

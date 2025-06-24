@@ -1,37 +1,27 @@
 /**
- * **clog** - Colorized pattern-matching log tail utility
+ * **clog-tool.github.io** - Package from pantry: clog-tool.github.io
  *
  * @domain `clog-tool.github.io`
- * @programs `clog`
- * @version `0.9.3` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install clog`
- * @name `clog`
+ * @install `launchpad install clog-tool.github.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.clog
- * // Or access via domain
- * const samePkg = pantry.clogtoolgithubio
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "clog"
- * console.log(pkg.description) // "Colorized pattern-matching log tail utility"
- * console.log(pkg.programs)    // ["clog"]
- * console.log(pkg.versions[0]) // "0.9.3" (latest)
+ * const pkg = pantry.clogtoolgithubio
+ * console.log(pkg.name)        // "clog-tool.github.io"
+ * console.log(pkg.description) // "Package from pantry: clog-tool.github.io"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/clog-tool-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const clogPackage = {
+export const clogtoolgithubioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'clog' as const,
+  name: 'clog-tool.github.io' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,38 +29,21 @@ export const clogPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Colorized pattern-matching log tail utility' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/clog-tool.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: clog-tool.github.io' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install clog' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'clog',
-  ] as const,
+  installCommand: 'launchpad install clog-tool.github.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +clog-tool.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install clog-tool.github.io' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.9.3',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) clog -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install clog' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/clog-tool.github.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type ClogPackage = typeof clogPackage
+export type ClogtoolgithubioPackage = typeof clogtoolgithubioPackage

@@ -1,6 +1,6 @@
 # genqlient
 
-> a truly type-safe Go GraphQL client
+> Package from pantry: khanacademy.org/genqlient
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install genqlient
+launchpad install khanacademy.org/genqlient
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `genqlient`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.8.1`, `0.8.0`, `0.7.0`, `0.6.0`
-
-</details>
-
-**Latest Version**: `0.8.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) genqlient -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

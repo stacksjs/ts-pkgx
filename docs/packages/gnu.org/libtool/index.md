@@ -1,6 +1,6 @@
 # libtool
 
-> A generic library support script
+> Package from pantry: gnu.org/libtool
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install libtool
+launchpad install gnu.org/libtool
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `libtool`
-- `libtoolize`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `2.5.4`, `2.5.3`, `2.4.7`
-
-</details>
-
-**Latest Version**: `2.5.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/libtool@2.5.4 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

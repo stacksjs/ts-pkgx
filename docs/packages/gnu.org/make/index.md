@@ -1,6 +1,6 @@
 # make
 
-> A build automation tool that builds executable programs and libraries from source code
+> Package from pantry: gnu.org/make
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install make
+launchpad install gnu.org/make
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `make`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `4.3.0`
-
-</details>
-
-**Latest Version**: `4.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) make -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

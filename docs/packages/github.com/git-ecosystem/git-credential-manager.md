@@ -1,6 +1,6 @@
 # git-credential-manager
 
-> Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services.
+> Package from pantry: github.com/git-ecosystem/git-credential-manager
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install git-credential-manager
+launchpad install github.com/git-ecosystem/git-credential-manager
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `git-credential-manager`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.6.1`
-
-</details>
-
-**Latest Version**: `2.6.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) git-credential-manager -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -48,12 +30,6 @@ This package depends on:
 - `unicode.org^71`
 - `zlib.net^1.3`
 - `dotnet.microsoft.com^8.0`
-
-## Related Packages
-
-These packages work well with git-credential-manager:
-
-- [`git-scm.org`](../../git-scm.org/index.md) - Package not available
 
 ## Usage Examples
 

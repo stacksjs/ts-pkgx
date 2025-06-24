@@ -1,6 +1,6 @@
 # eb
 
-> Client for Amazon Elastic Beanstalk web service
+> Package from pantry: crates.io/eb
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install eb
+launchpad install crates.io/eb
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `eb`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.5.0`
-
-</details>
-
-**Latest Version**: `0.5.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) eb -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

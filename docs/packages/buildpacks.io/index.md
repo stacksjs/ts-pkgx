@@ -1,11 +1,11 @@
-# pack
+# buildpacks.io
 
-> CLI for building apps using Cloud Native Buildpacks
+> Package from pantry: buildpacks.io
 
 ## Package Information
 
 - **Domain**: `buildpacks.io`
-- **Name**: `pack`
+- **Name**: `buildpacks.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/buildpacks.io/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install pack
+launchpad install buildpacks.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pack`
-
-## Available Versions
-
-<details>
-<summary>Show all 14 versions</summary>
-
-- `0.38.1`, `0.38.0`, `0.37.0`, `0.36.4`, `0.36.3`
-- `0.36.2`, `0.36.1`, `0.36.0`, `0.35.1`, `0.35.0`
-- `0.34.2`, `0.34.1`, `0.34.0`, `0.33.2`
-
-</details>
-
-**Latest Version**: `0.38.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) pack -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -48,7 +28,7 @@ sh <(curl https://pkgx.sh) pack -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.pack
+const pkg = pantry['buildpacks.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

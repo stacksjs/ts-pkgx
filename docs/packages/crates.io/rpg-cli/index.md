@@ -1,6 +1,6 @@
 # rpg-cli
 
-> Your filesystem as a dungeon!
+> Package from pantry: crates.io/rpg-cli
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install rpg-cli
+launchpad install crates.io/rpg-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `rpg-cli`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.2.0`, `1.0.1`
-
-</details>
-
-**Latest Version**: `1.2.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) rpg-cli -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

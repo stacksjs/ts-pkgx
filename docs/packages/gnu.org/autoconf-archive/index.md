@@ -1,11 +1,11 @@
-# gnu.org/autoconf-archive
+# autoconf-archive
 
-> A collection of more than 500 macros for GNU Autoconf
+> Package from pantry: gnu.org/autoconf-archive
 
 ## Package Information
 
 - **Domain**: `gnu.org/autoconf-archive`
-- **Name**: `gnu.org/autoconf-archive`
+- **Name**: `autoconf-archive`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/autoconf-archive/package.yml)
 
@@ -22,31 +22,13 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `2024.10.16`, `2023.2.20`
-
-</details>
-
-**Latest Version**: `2024.10.16`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/autoconf-archive@2024.10.16 -- $SHELL -i
-```
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/autoconf-archive']
+const pkg = pantry['autoconf-archive']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

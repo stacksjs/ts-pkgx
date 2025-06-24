@@ -1,11 +1,11 @@
-# github.com/gabime/spdlog
+# spdlog
 
-> Fast C++ logging library.
+> Package from pantry: github.com/gabime/spdlog
 
 ## Package Information
 
 - **Domain**: `github.com/gabime/spdlog`
-- **Name**: `github.com/gabime/spdlog`
+- **Name**: `spdlog`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/gabime/spdlog/package.yml)
 
@@ -22,25 +22,6 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `1.15.3`, `1.15.2`, `1.15.1`, `1.15.0`, `1.14.1`
-- `1.14.0`, `1.13.0`, `1.12.0`
-
-</details>
-
-**Latest Version**: `1.15.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/gabime/spdlog@1.15.3 -- $SHELL -i
-```
-
 ## Dependencies
 
 This package depends on:
@@ -53,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/gabime/spdlog']
+const pkg = pantry.spdlog
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

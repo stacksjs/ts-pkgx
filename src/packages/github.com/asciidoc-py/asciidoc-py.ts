@@ -1,38 +1,28 @@
 /**
- * **asciidoc** - Formatter/translator for text files to numerous formats
+ * **asciidoc-py** - Package from pantry: github.com/asciidoc-py/asciidoc-py
  *
  * @domain `github.com/asciidoc-py/asciidoc-py`
- * @programs `asciidoc`
- * @version `10.2.1` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install asciidoc`
- * @name `asciidoc`
+ * @install `launchpad install github.com/asciidoc-py/asciidoc-py`
  * @dependencies `docbook.org`, `python.org~3.11`, `gnu.org/source-highlight`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.asciidoc
- * // Or access via domain
- * const samePkg = pantry.githubcomasciidocpyasciidocpy
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "asciidoc"
- * console.log(pkg.description) // "Formatter/translator for text files to numerous..."
- * console.log(pkg.programs)    // ["asciidoc"]
- * console.log(pkg.versions[0]) // "10.2.1" (latest)
+ * const pkg = pantry.githubcomasciidocpyasciidocpy
+ * console.log(pkg.name)        // "asciidoc-py"
+ * console.log(pkg.description) // "Package from pantry: github.com/asciidoc-py/asc..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/asciidoc-py/asciidoc-py.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const asciidocPackage = {
+export const githubcomasciidocpyasciidocpyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'asciidoc' as const,
+  name: 'asciidoc-py' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,22 +30,15 @@ export const asciidocPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Formatter/translator for text files to numerous formats' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/asciidoc-py/asciidoc-py/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/asciidoc-py/asciidoc-py' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install asciidoc' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'asciidoc',
-  ] as const,
+  installCommand: 'launchpad install github.com/asciidoc-py/asciidoc-py' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/asciidoc-py/asciidoc-py -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/asciidoc-py/asciidoc-py' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -66,21 +49,10 @@ export const asciidocPackage = {
     'python.org~3.11',
     'gnu.org/source-highlight',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '10.2.1',
-    '10.2.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) asciidoc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install asciidoc' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/asciidoc-py/asciidoc-py/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type AsciidocPackage = typeof asciidocPackage
+export type GithubcomasciidocpyasciidocpyPackage = typeof githubcomasciidocpyasciidocpyPackage

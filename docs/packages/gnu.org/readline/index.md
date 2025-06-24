@@ -1,11 +1,11 @@
-# gnu.org/readline
+# readline
 
-> A library for editing command lines as they are typed in
+> Package from pantry: gnu.org/readline
 
 ## Package Information
 
 - **Domain**: `gnu.org/readline`
-- **Name**: `gnu.org/readline`
+- **Name**: `readline`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/readline/package.yml)
 
@@ -22,24 +22,6 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `8.2.13`, `8.2.0`, `8.1.0`
-
-</details>
-
-**Latest Version**: `8.2.13`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/readline@8.2.13 -- $SHELL -i
-```
-
 ## Dependencies
 
 This package depends on:
@@ -52,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/readline']
+const pkg = pantry.readline
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
