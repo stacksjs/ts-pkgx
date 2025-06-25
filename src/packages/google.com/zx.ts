@@ -3,7 +3,7 @@
  *
  * @domain `google.com/zx`
  * @programs `zx`
- * @version `8.6.0` (30 versions available)
+ * @version `8.6.0` (31 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install zx`
@@ -98,6 +98,7 @@ export const zxPackage = {
     '8.0.2',
     '8.0.1',
     '8.0.0',
+    '7.2.4',
     '7.2.3',
   ] as const,
   /**
