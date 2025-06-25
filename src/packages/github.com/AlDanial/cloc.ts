@@ -3,7 +3,7 @@
  *
  * @domain `github.com/AlDanial/cloc`
  * @programs `cloc`, `config_data`
- * @version `2.4.0` (4 versions available)
+ * @version `2.6.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/AlDanial/cloc`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "github.com/AlDanial/cloc"
  * console.log(pkg.description) // "cloc counts blank lines, comment lines, and phy..."
  * console.log(pkg.programs)    // ["cloc", "config_data"]
- * console.log(pkg.versions[0]) // "2.4.0" (latest)
+ * console.log(pkg.versions[0]) // "2.6.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/AlDanial/cloc.md
@@ -72,6 +72,7 @@ export const githubcomaldanialclocPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.6.0',
     '2.4.0',
     '2.2.0',
     '2.0.0',
