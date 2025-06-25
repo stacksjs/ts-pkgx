@@ -3,7 +3,7 @@
  *
  * @domain `templ.guide`
  * @programs `templ`
- * @version `0.3.898` (27 versions available)
+ * @version `0.3.906` (28 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install templ`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "templ"
  * console.log(pkg.description) // "A language for writing HTML user interfaces in Go."
  * console.log(pkg.programs)    // ["templ"]
- * console.log(pkg.versions[0]) // "0.3.898" (latest)
+ * console.log(pkg.versions[0]) // "0.3.906" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/templ-guide.md
@@ -62,6 +62,7 @@ export const templPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.3.906',
     '0.3.898',
     '0.3.894',
     '0.3.887',
