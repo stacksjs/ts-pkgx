@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-06-25T19:28:40.681Z
+- **Last Updated**: 2025-06-25T20:31:25.606Z
 
 ## Table of Contents
 
@@ -98,7 +98,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[postgrest.org](./packages/postgrest.org/index.md)** () | Serves a fully RESTful API from any existing PostgreSQL database | postgrest | 13.0.4 (+14) | `pkgx postgrest` |
 | **[redis.io](./packages/redis.io/index.md)** () | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.0.2 (+36) | `pkgx redis` |
 | **[sqlite.org](./packages/sqlite.org/index.md)** () | Official Git mirror of the SQLite source tree | sqlite3 | 3.50.1 (+25) | `pkgx sqlite3` |
-| **[surrealdb.com](./packages/surrealdb.com/index.md)** () | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+47) | `pkgx surreal` |
+| **[surrealdb.com](./packages/surrealdb.com/index.md)** () | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+48) | `pkgx surreal` |
 | **[turso.tech](./packages/turso.tech/index.md)** () | Command line interface to Turso. | turso | 1.0.11 (+89) | `pkgx turso` |
 | **[valkey.io](./packages/valkey.io/index.md)** () | A flexible distributed key-value datastore that is optimized for caching and other realtime workl... | valkey-server, valkey-cli, valkey-benchmark | 8.1.2 (+11) | `pkgx valkey` |
 
@@ -145,7 +145,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[terraform.io](./packages/terraform.io/index.md)** () | Terraform enables you to safely and predictably create, change, and improve infrastructure. It is... | terraform | 1.12.2 (+74) | `pkgx terraform` |
 | **[terragrunt.gruntwork.io](./packages/terragrunt.gruntwork.io/index.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.82.0 (+355) | `pkgx terragrunt` |
 | **[terratag.io](./packages/terratag.io/index.md)** () | Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags ... | terratag | 0.7.2 (+17) | `pkgx terratag` |
-| **[vaultproject.io](./packages/vaultproject.io/index.md)** () | A tool for secrets management, encryption as a service, and privileged access management | vault | 1.19.5 (+55) | `pkgx vault` |
+| **[vaultproject.io](./packages/vaultproject.io/index.md)** () | A tool for secrets management, encryption as a service, and privileged access management | vault | 1.20.0 (+56) | `pkgx vault` |
 
 ## Container & Kubernetes Tools
 
@@ -326,7 +326,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[openssl.org](./packages/openssl.org/index.md)** () | TLS/SSL and crypto library with QUIC APIs | openssl, c_rehash | 3.5.0 (+29) | `pkgx OpenSSL` |
 | **[orhun.dev/gpg-tui](./packages/orhun.dev/gpg-tui/index.md)** () | Manage your GnuPG keys with ease! 🔐 | gpg-tui | 0.11.1 (+2) | `pkgx gpg-tui` |
 | **[snyk.io](./packages/snyk.io/index.md)** () | Scans and monitors projects for security vulnerabilities | snyk | 1.1297.3 (+42) | `pkgx snyk` |
-| **[vaultproject.io](./packages/vaultproject.io/index.md)** () | A tool for secrets management, encryption as a service, and privileged access management | vault | 1.19.5 (+55) | `pkgx vault` |
+| **[vaultproject.io](./packages/vaultproject.io/index.md)** () | A tool for secrets management, encryption as a service, and privileged access management | vault | 1.20.0 (+56) | `pkgx vault` |
 
 ## Multimedia
 
@@ -379,7 +379,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[appium.io](./packages/appium.io/index.md)** () | Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver prot... | appium | 2.19.0 (+36) | `pkgx appium` |
 | **[fastlane.tools](./packages/fastlane.tools/index.md)** () | 🚀 The easiest way to automate building and releasing your iOS and Android apps | fastlane | 2.228.0 (+22) | `pkgx fastlane` |
-| **[flutter.dev](./packages/flutter.dev/index.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.32.4 (+47) | `pkgx flutter.dev` |
+| **[flutter.dev](./packages/flutter.dev/index.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.32.5 (+48) | `pkgx flutter.dev` |
 | **[gradle.org](./packages/gradle.org/index.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 8.14.2 (+17) | `pkgx gradle` |
 
 ## Testing
