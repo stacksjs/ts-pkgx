@@ -3,7 +3,7 @@
  *
  * @domain `github.com/Diniboy1123/usque`
  * @programs `usque`
- * @version `1.4.0` (7 versions available)
+ * @version `1.4.1` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install usque`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "usque"
  * console.log(pkg.description) // "Open-source reimplementation of the Cloudflare ..."
  * console.log(pkg.programs)    // ["usque"]
- * console.log(pkg.versions[0]) // "1.4.0" (latest)
+ * console.log(pkg.versions[0]) // "1.4.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/Diniboy1123/usque.md
@@ -62,6 +62,7 @@ export const usquePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.4.1',
     '1.4.0',
     '1.3.0',
     '1.2.1',
