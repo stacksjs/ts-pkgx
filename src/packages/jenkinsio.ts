@@ -3,7 +3,7 @@
  *
  * @domain `jenkins.io`
  * @programs `jenkins-lts`, `jenkins-lts-cli`
- * @version `2.504.2` (19 versions available)
+ * @version `2.504.3` (20 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jenkins.io`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "jenkins-lts"
  * console.log(pkg.description) // "Extendable open source continuous integration s..."
  * console.log(pkg.programs)    // ["jenkins-lts", "jenkins-lts-cli"]
- * console.log(pkg.versions[0]) // "2.504.2" (latest)
+ * console.log(pkg.versions[0]) // "2.504.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/jenkins-io.md
@@ -65,6 +65,7 @@ export const jenkinsioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.504.3',
     '2.504.2',
     '2.504.1',
     '2.492.3',
