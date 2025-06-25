@@ -3,7 +3,7 @@
  *
  * @domain `systemd.io`
  * @programs `busctl`, `coredumpctl`, `hostnamectl`, `journalctl`, `kernel-install`, ... (+50 more)
- * @version `257.7.0` (27 versions available)
+ * @version `257.7.0` (28 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install systemd.io`
@@ -138,6 +138,7 @@ export const systemdioPackage = {
     '257.2.0',
     '257.1.0',
     '257.0.0',
+    '256.17.0',
     '256.16.0',
     '256.15.0',
     '256.14.0',
