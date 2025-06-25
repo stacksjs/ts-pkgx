@@ -3,7 +3,7 @@
  *
  * @domain `nodejs.org`
  * @programs `node`
- * @version `24.2.0` (139 versions available)
+ * @version `24.3.0` (141 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install node`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "node"
  * console.log(pkg.description) // "Platform built on V8 to build network applications"
  * console.log(pkg.programs)    // ["node"]
- * console.log(pkg.versions[0]) // "24.2.0" (latest)
+ * console.log(pkg.versions[0]) // "24.3.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nodejs-org.md
@@ -80,6 +80,7 @@ export const nodePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '24.3.0',
     '24.2.0',
     '24.1.0',
     '24.0.2',
@@ -99,6 +100,7 @@ export const nodePackage = {
     '23.2.0',
     '23.1.0',
     '23.0.0',
+    '22.17.0',
     '22.16.0',
     '22.15.1',
     '22.15.0',
