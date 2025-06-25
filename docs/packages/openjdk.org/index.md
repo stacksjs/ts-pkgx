@@ -51,20 +51,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 6 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `21.0.7.4`, `21.0.6.6`, `21.0.3.6`, `17.0.11.4`, `17.0.10.6`
-- `11.0.23.6`
+- `21.0.8.7`, `21.0.7.4`, `21.0.6.6`, `21.0.3.6`, `17.0.16.7`
+- `17.0.11.4`, `17.0.10.6`, `11.0.28.5`, `11.0.23.6`
 
 </details>
 
-**Latest Version**: `21.0.7.4`
+**Latest Version**: `21.0.8.7`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +openjdk.org@21.0.7.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) +openjdk.org@21.0.8.7 -- $SHELL -i
 ```
 
 ## Dependencies

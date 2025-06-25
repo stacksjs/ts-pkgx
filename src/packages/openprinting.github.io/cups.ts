@@ -1,8 +1,7 @@
 /**
- * **openprinting.github.io/cups** - Common UNIX Printing System
+ * **openprinting.github.io/cups** - pkgx package
  *
  * @domain `openprinting.github.io/cups`
- * @programs `cups-config`, `ippeveprinter`, `ipptool`
  * @version `2.4.12` (7 versions available)
  * @versions From newest version to oldest.
  *
@@ -15,8 +14,6 @@
  *
  * const pkg = pantry.openprintinggithubiocups
  * console.log(pkg.name)        // "openprinting.github.io/cups"
- * console.log(pkg.description) // "Common UNIX Printing System"
- * console.log(pkg.programs)    // ["cups-config", "ippeveprinter", ...]
  * console.log(pkg.versions[0]) // "2.4.12" (latest)
  * ```
  *
@@ -35,7 +32,7 @@ export const openprintinggithubiocupsPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Common UNIX Printing System' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openprinting.github.io/cups/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
@@ -44,15 +41,7 @@ export const openprintinggithubiocupsPackage = {
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install openprinting.github.io/cups' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'cups-config',
-    'ippeveprinter',
-    'ipptool',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.

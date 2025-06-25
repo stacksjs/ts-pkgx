@@ -3,7 +3,7 @@
  *
  * @domain `openjdk.org`
  * @programs `jar`, `jarsigner`, `java`, `javac`, `javadoc`, ... (+22 more)
- * @version `21.0.7.4` (6 versions available)
+ * @version `21.0.8.7` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openjdk.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "openjdk.org"
  * console.log(pkg.description) // "Development kit for the Java programming language"
  * console.log(pkg.programs)    // ["jar", "jarsigner", ...]
- * console.log(pkg.versions[0]) // "21.0.7.4" (latest)
+ * console.log(pkg.versions[0]) // "21.0.8.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openjdk-org.md
@@ -110,11 +110,14 @@ export const openjdkorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '21.0.8.7',
     '21.0.7.4',
     '21.0.6.6',
     '21.0.3.6',
+    '17.0.16.7',
     '17.0.11.4',
     '17.0.10.6',
+    '11.0.28.5',
     '11.0.23.6',
   ] as const,
   aliases: [] as const,
