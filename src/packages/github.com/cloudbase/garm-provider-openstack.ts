@@ -3,7 +3,7 @@
  *
  * @domain `github.com/cloudbase/garm-provider-openstack`
  * @programs `garm-provider-openstack`
- * @version `0.1.0` (1 versions available)
+ * @version `0.1.1` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install garm-provider-openstack`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "garm-provider-openstack"
  * console.log(pkg.description) // "Garm external provider for OpenStack"
  * console.log(pkg.programs)    // ["garm-provider-openstack"]
- * console.log(pkg.versions[0]) // "0.1.0" (latest)
+ * console.log(pkg.versions[0]) // "0.1.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/cloudbase/garm-provider-openstack.md
@@ -62,6 +62,7 @@ export const garmprovideropenstackPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.1.1',
     '0.1.0',
   ] as const,
   /**

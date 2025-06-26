@@ -3,7 +3,7 @@
  *
  * @domain `github.com/volatiletech/sqlboiler`
  * @programs `sqlboiler`
- * @version `4.19.3` (11 versions available)
+ * @version `4.19.4` (12 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sqlboiler`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "sqlboiler"
  * console.log(pkg.description) // "Generate a Go ORM tailored to your database sch..."
  * console.log(pkg.programs)    // ["sqlboiler"]
- * console.log(pkg.versions[0]) // "4.19.3" (latest)
+ * console.log(pkg.versions[0]) // "4.19.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/volatiletech/sqlboiler.md
@@ -62,6 +62,7 @@ export const sqlboilerPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.19.4',
     '4.19.3',
     '4.19.2',
     '4.19.1',

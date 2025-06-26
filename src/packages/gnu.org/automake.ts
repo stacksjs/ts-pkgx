@@ -3,7 +3,7 @@
  *
  * @domain `gnu.org/automake`
  * @programs `aclocal`, `automake`
- * @version `1.18.0` (3 versions available)
+ * @version `1.18.1` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/automake`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "gnu.org/automake"
  * console.log(pkg.description) // "Tool for generating GNU Standards-compliant Mak..."
  * console.log(pkg.programs)    // ["aclocal", "automake"]
- * console.log(pkg.versions[0]) // "1.18.0" (latest)
+ * console.log(pkg.versions[0]) // "1.18.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/automake.md
@@ -66,6 +66,7 @@ export const gnuorgautomakePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.18.1',
     '1.18.0',
     '1.17.0',
     '1.16.5',
