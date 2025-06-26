@@ -1,6 +1,6 @@
 # git-filter-repo
 
-> Package from pantry: github.com/newren/git-filter-repo
+> Quickly rewrite git repository history (filter-branch replacement)
 
 ## Package Information
 
@@ -13,20 +13,44 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/newren/git-filter-repo
+launchpad install git-filter-repo
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `git-filter-repo`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `2.47.0`, `2.45.0`
+
+</details>
+
+**Latest Version**: `2.47.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) git-filter-repo -- $SHELL -i
+```
 
 ## Dependencies
 
 This package depends on:
 
 - `python.org>=3.6`
+
+## Related Packages
+
+These packages work well with git-filter-repo:
+
+- [`git-scm.org`](../../git-scm.org/index.md) - Package not available
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# jsonnet.org
+# jsonnet
 
-> Package from pantry: jsonnet.org
+> Jsonnet - The data templating language
 
 ## Package Information
 
 - **Domain**: `jsonnet.org`
-- **Name**: `jsonnet.org`
+- **Name**: `jsonnet`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jsonnet.org/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install jsonnet.org
+launchpad install jsonnet
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `jsonnet`
+- `jsonnetfmt`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.21.0`, `0.20.0`
+
+</details>
+
+**Latest Version**: `0.21.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +jsonnet.org@0.21.0 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +47,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['jsonnet.org']
+const pkg = pantry.jsonnet
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # gox
 
-> Package from pantry: github.com/mitchellh/gox
+> A dead simple, no frills Go cross compile tool
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/mitchellh/gox
+launchpad install gox
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gox`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.0.1`
+
+</details>
+
+**Latest Version**: `1.0.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) gox -- $SHELL -i
+```
 
 ## Dependencies
 

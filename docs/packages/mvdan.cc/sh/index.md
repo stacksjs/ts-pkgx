@@ -1,11 +1,11 @@
-# sh
+# shfmt
 
-> Package from pantry: mvdan.cc/sh
+> A shell parser, formatter, and interpreter with bash support; includes shfmt
 
 ## Package Information
 
 - **Domain**: `mvdan.cc/sh`
-- **Name**: `sh`
+- **Name**: `shfmt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mvdan.cc/sh/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install mvdan.cc/sh
+launchpad install shfmt
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `shfmt`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `3.11.0`, `3.10.0`, `3.9.0`, `3.8.0`
+
+</details>
+
+**Latest Version**: `3.11.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) shfmt -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.sh
+const pkg = pantry.shfmt
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

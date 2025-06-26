@@ -1,11 +1,11 @@
-# eget
+# Eget
 
-> Package from pantry: github.com/zyedidia/eget
+> Easily install prebuilt binaries from GitHub.
 
 ## Package Information
 
 - **Domain**: `github.com/zyedidia/eget`
-- **Name**: `eget`
+- **Name**: `Eget`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zyedidia/eget/package.yml)
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/zyedidia/eget
+launchpad install eget
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `eget`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `eget`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.3.4`, `1.3.3`
+
+</details>
+
+**Latest Version**: `1.3.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) eget -- $SHELL -i
+```
 
 ## Dependencies
 

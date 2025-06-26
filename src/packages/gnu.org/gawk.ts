@@ -1,7 +1,10 @@
 /**
- * **gawk** - Package from pantry: gnu.org/gawk
+ * **gnu.org/gawk** - pkgx package
  *
  * @domain `gnu.org/gawk`
+ * @programs `awk`, `gawk`, `gawk-{{version}}`, `gawkbug`
+ * @version `5.3.2` (5 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/gawk`
  *
@@ -10,8 +13,9 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorggawk
- * console.log(pkg.name)        // "gawk"
- * console.log(pkg.description) // "Package from pantry: gnu.org/gawk"
+ * console.log(pkg.name)        // "gnu.org/gawk"
+ * console.log(pkg.programs)    // ["awk", "gawk", ...]
+ * console.log(pkg.versions[0]) // "5.3.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/gawk.md
@@ -21,7 +25,7 @@ export const gnuorggawkPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gawk' as const,
+  name: 'gnu.org/gawk' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -29,21 +33,41 @@ export const gnuorggawkPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: gnu.org/gawk' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gawk/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnu.org/gawk' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gawk -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/gawk' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'awk',
+    'gawk',
+    'gawk-{{version}}',
+    'gawkbug',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gawk/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '5.3.2',
+    '5.3.1',
+    '5.3.0',
+    '5.2.2',
+    '5.2.1',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gawk -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/gawk' as const,
 }
 
 export type GnuorggawkPackage = typeof gnuorggawkPackage

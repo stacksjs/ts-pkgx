@@ -1,11 +1,11 @@
-# snappy
+# google.github.io/snappy
 
-> Package from pantry: google.github.io/snappy
+> A fast compressor/decompressor
 
 ## Package Information
 
 - **Domain**: `google.github.io/snappy`
-- **Name**: `snappy`
+- **Name**: `google.github.io/snappy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.github.io/snappy/package.yml)
 
@@ -22,13 +22,31 @@ This package provides the following executable programs:
 
 *No programs specified*
 
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.2.2`, `1.2.1`, `1.2.0`, `1.1.10`
+
+</details>
+
+**Latest Version**: `1.2.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +google.github.io/snappy@1.2.2 -- $SHELL -i
+```
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.snappy
+const pkg = pantry['google.github.io/snappy']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

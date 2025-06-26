@@ -1,11 +1,11 @@
-# nspr
+# nspr-config
 
-> Package from pantry: mozilla.org/nspr
+> Platform-neutral API for system-level and libc-like functions
 
 ## Package Information
 
 - **Domain**: `mozilla.org/nspr`
-- **Name**: `nspr`
+- **Name**: `nspr-config`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mozilla.org/nspr/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install mozilla.org/nspr
+launchpad install nspr-config
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `nspr-config`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `4.34.1`
+
+</details>
+
+**Latest Version**: `4.34.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) nspr-config -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.nspr
+const pkg = pantry['nspr-config']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

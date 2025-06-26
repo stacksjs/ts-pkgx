@@ -1,6 +1,6 @@
 # nuclei
 
-> Package from pantry: projectdiscovery.io/nuclei
+> Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install projectdiscovery.io/nuclei
+launchpad install nuclei
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `nuclei`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `3.4.5`, `3.4.4`, `3.4.3`, `3.4.2`
+
+</details>
+
+**Latest Version**: `3.4.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) nuclei -- $SHELL -i
+```
 
 ## Usage Examples
 

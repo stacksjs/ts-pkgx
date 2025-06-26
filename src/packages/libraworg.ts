@@ -1,7 +1,10 @@
 /**
- * **libraw.org** - Package from pantry: libraw.org
+ * **libraw.org** - Library for reading RAW files from digital photo cameras
  *
  * @domain `libraw.org`
+ * @programs `4channels`, `dcraw_emu`, `dcraw_half`, `half_mt`, `mem_image`, ... (+6 more)
+ * @version `0.21.4` (4 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install libraw.org`
  * @dependencies `github.com/jasper-software/jasper`, `libjpeg-turbo.org`, `littlecms.com`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
@@ -12,7 +15,9 @@
  *
  * const pkg = pantry.libraworg
  * console.log(pkg.name)        // "libraw.org"
- * console.log(pkg.description) // "Package from pantry: libraw.org"
+ * console.log(pkg.description) // "Library for reading RAW files from digital phot..."
+ * console.log(pkg.programs)    // ["4channels", "dcraw_emu", ...]
+ * console.log(pkg.versions[0]) // "0.21.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libraw-org.md
@@ -30,15 +35,32 @@ export const libraworgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: libraw.org' as const,
+  description: 'Library for reading RAW files from digital photo cameras' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libraw.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install libraw.org' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libraw.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libraw.org' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    '4channels',
+    'dcraw_emu',
+    'dcraw_half',
+    'half_mt',
+    'mem_image',
+    'multirender_test',
+    'postprocessing_benchmark',
+    'raw-identify',
+    'rawtextdump',
+    'simple_dcraw',
+    'unprocessed_raw',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -52,10 +74,19 @@ export const libraworgPackage = {
     'zlib.net',
     'darwin:openmp.llvm.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libraw.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.21.4',
+    '0.21.3',
+    '0.21.2',
+    '0.21.1',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libraw.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libraw.org' as const,
 }
 
 export type LibraworgPackage = typeof libraworgPackage

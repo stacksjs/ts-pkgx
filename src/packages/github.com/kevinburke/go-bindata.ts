@@ -1,23 +1,33 @@
 /**
- * **go-bindata** - Package from pantry: github.com/kevinburke/go-bindata
+ * **go-bindata** - A small utility which generates Go code from any file. Useful for embedding binary data in a Go program.
  *
  * @domain `github.com/kevinburke/go-bindata`
+ * @programs `go-bindata`
+ * @version `4.0.2` (3 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/kevinburke/go-bindata`
+ * @install `launchpad install go-bindata`
+ * @name `go-bindata`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomkevinburkegobindata
+ * // Access the package
+ * const pkg = pantry.gobindata
+ * // Or access via domain
+ * const samePkg = pantry.githubcomkevinburkegobindata
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "go-bindata"
- * console.log(pkg.description) // "Package from pantry: github.com/kevinburke/go-b..."
+ * console.log(pkg.description) // "A small utility which generates Go code from an..."
+ * console.log(pkg.programs)    // ["go-bindata"]
+ * console.log(pkg.versions[0]) // "4.0.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/kevinburke/go-bindata.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkevinburkegobindataPackage = {
+export const gobindataPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,40 @@ export const githubcomkevinburkegobindataPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/kevinburke/go-bindata' as const,
+  description: 'A small utility which generates Go code from any file. Useful for embedding binary data in a Go program.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kevinburke/go-bindata/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/kevinburke/go-bindata' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/kevinburke/go-bindata -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/kevinburke/go-bindata' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install go-bindata' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'go-bindata',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kevinburke/go-bindata/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '4.0.2',
+    '3.25.0',
+    '3.24.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) go-bindata -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install go-bindata' as const,
 }
 
-export type GithubcomkevinburkegobindataPackage = typeof githubcomkevinburkegobindataPackage
+export type GobindataPackage = typeof gobindataPackage

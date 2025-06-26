@@ -1,11 +1,11 @@
-# jenv.be
+# jenv
 
-> Package from pantry: jenv.be
+> Manage your Java environment
 
 ## Package Information
 
 - **Domain**: `jenv.be`
-- **Name**: `jenv.be`
+- **Name**: `jenv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jenv.be/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install jenv.be
+launchpad install jenv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `jenv`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.5.7`, `0.5.6`
+
+</details>
+
+**Latest Version**: `0.5.7`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) jenv -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['jenv.be']
+const pkg = pantry.jenv
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

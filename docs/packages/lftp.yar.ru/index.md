@@ -1,11 +1,11 @@
-# lftp.yar.ru
+# lftp
 
-> Package from pantry: lftp.yar.ru
+> sophisticated command line file transfer program (ftp, http, sftp, fish, torrent)
 
 ## Package Information
 
 - **Domain**: `lftp.yar.ru`
-- **Name**: `lftp.yar.ru`
+- **Name**: `lftp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lftp.yar.ru/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install lftp.yar.ru
+launchpad install lftp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `lftp`
+- `lftpget`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `4.9.3`, `4.9.2`, `4.9.1`
+
+</details>
+
+**Latest Version**: `4.9.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +lftp.yar.ru@4.9.3 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -41,7 +60,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['lftp.yar.ru']
+const pkg = pantry.lftp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

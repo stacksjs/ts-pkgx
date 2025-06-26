@@ -1,7 +1,9 @@
 /**
- * **mutagen** - Package from pantry: github.com/quodlibet/mutagen
+ * **github.com/quodlibet/mutagen** - Python module for handling audio metadata
  *
  * @domain `github.com/quodlibet/mutagen`
+ * @version `1.47.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/quodlibet/mutagen`
  * @dependencies `python.org>=3.11`
@@ -11,8 +13,9 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomquodlibetmutagen
- * console.log(pkg.name)        // "mutagen"
- * console.log(pkg.description) // "Package from pantry: github.com/quodlibet/mutagen"
+ * console.log(pkg.name)        // "github.com/quodlibet/mutagen"
+ * console.log(pkg.description) // "Python module for handling audio metadata"
+ * console.log(pkg.versions[0]) // "1.47.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/quodlibet/mutagen.md
@@ -22,7 +25,7 @@ export const githubcomquodlibetmutagenPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mutagen' as const,
+  name: 'github.com/quodlibet/mutagen' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,14 +33,15 @@ export const githubcomquodlibetmutagenPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/quodlibet/mutagen' as const,
+  description: 'Python module for handling audio metadata' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/quodlibet/mutagen/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/quodlibet/mutagen' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/quodlibet/mutagen' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/quodlibet/mutagen -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/quodlibet/mutagen' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -47,10 +51,16 @@ export const githubcomquodlibetmutagenPackage = {
   dependencies: [
     'python.org>=3.11',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/quodlibet/mutagen/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.47.0',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/quodlibet/mutagen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/quodlibet/mutagen' as const,
 }
 
 export type GithubcomquodlibetmutagenPackage = typeof githubcomquodlibetmutagenPackage
