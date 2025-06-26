@@ -3,7 +3,7 @@
  *
  * @domain `openshift.com`
  * @programs `oc`
- * @version `4.19.1` (229 versions available)
+ * @version `4.19.1` (230 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install oc`
@@ -124,6 +124,7 @@ export const ocPackage = {
     '4.17.2',
     '4.17.1',
     '4.17.0',
+    '4.16.43',
     '4.16.42',
     '4.16.41',
     '4.16.40',
