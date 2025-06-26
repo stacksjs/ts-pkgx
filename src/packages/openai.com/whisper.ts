@@ -3,7 +3,7 @@
  *
  * @domain `openai.com/whisper`
  * @programs `whisper`
- * @version `20240930.0.0` (3 versions available)
+ * @version `20250625.0.0` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install whisper`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "whisper"
  * console.log(pkg.description) // "Robust Speech Recognition via Large-Scale Weak ..."
  * console.log(pkg.programs)    // ["whisper"]
- * console.log(pkg.versions[0]) // "20240930.0.0" (latest)
+ * console.log(pkg.versions[0]) // "20250625.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openai-com/whisper.md
@@ -72,6 +72,7 @@ export const whisperPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '20250625.0.0',
     '20240930.0.0',
     '20240927.0.0',
     '20231117.0.0',
