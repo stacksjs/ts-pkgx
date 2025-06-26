@@ -1,7 +1,9 @@
 /**
- * **libSM** - Package from pantry: x.org/libSM
+ * **x.org/libSM** - pkgx package
  *
  * @domain `x.org/libSM`
+ * @version `1.2.6` (3 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install x.org/libSM`
  * @dependencies `x.org/ice`
@@ -11,8 +13,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorglibsm
- * console.log(pkg.name)        // "libSM"
- * console.log(pkg.description) // "Package from pantry: x.org/libSM"
+ * console.log(pkg.name)        // "x.org/libSM"
+ * console.log(pkg.versions[0]) // "1.2.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/libSM.md
@@ -22,7 +24,7 @@ export const xorglibsmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libSM' as const,
+  name: 'x.org/libSM' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,14 +32,15 @@ export const xorglibsmPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: x.org/libSM' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/libSM/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install x.org/libSM' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/libSM -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install x.org/libSM' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -47,10 +50,18 @@ export const xorglibsmPackage = {
   dependencies: [
     'x.org/ice',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/libSM/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.2.6',
+    '1.2.5',
+    '1.2.4',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/libSM -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/libSM' as const,
 }
 
 export type XorglibsmPackage = typeof xorglibsmPackage

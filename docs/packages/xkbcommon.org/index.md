@@ -1,11 +1,11 @@
-# xkbcommon.org
+# xkbcli
 
-> Package from pantry: xkbcommon.org
+> keymap handling library for toolkits and window systems
 
 ## Package Information
 
 - **Domain**: `xkbcommon.org`
-- **Name**: `xkbcommon.org`
+- **Name**: `xkbcli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xkbcommon.org/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install xkbcommon.org
+launchpad install xkbcli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `xkbcli`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `1.10.0`, `1.9.2`, `1.9.1`, `1.9.0`, `1.8.1`
+- `1.8.0`, `1.7.0`, `1.6.0`, `1.5.0`
+
+</details>
+
+**Latest Version**: `1.10.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) xkbcli -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -37,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['xkbcommon.org']
+const pkg = pantry.xkbcli
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

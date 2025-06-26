@@ -1,11 +1,11 @@
-# xerces-c
+# xerces.apache.org/xerces-c
 
-> Package from pantry: xerces.apache.org/xerces-c
+> Validating XML parser
 
 ## Package Information
 
 - **Domain**: `xerces.apache.org/xerces-c`
-- **Name**: `xerces-c`
+- **Name**: `xerces.apache.org/xerces-c`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xerces.apache.org/xerces-c/package.yml)
 
@@ -20,7 +20,39 @@ launchpad install xerces.apache.org/xerces-c
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `CreateDOMDocument`
+- `DOMCount`
+- `DOMPrint`
+- `EnumVal`
+- `PParse`
+- `PSVIWriter`
+- `Redirect`
+- `SAX2Count`
+- `SAX2Print`
+- `SAXCount`
+- `SAXPrint`
+- `SCMPrint`
+- `SEnumVal`
+- `StdInParse`
+- `XInclude`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `3.3.0`, `3.2.5`, `3.2.4`
+
+</details>
+
+**Latest Version**: `3.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +xerces.apache.org/xerces-c@3.3.0 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +66,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['xerces-c']
+const pkg = pantry['xerces.apache.org/xerces-c']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
