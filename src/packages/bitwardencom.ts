@@ -3,7 +3,7 @@
  *
  * @domain `bitwarden.com`
  * @programs `bw`
- * @version `2025.4.0` (24 versions available)
+ * @version `2025.6.0` (25 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bw`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "bw"
  * console.log(pkg.description) // "Secure and free password manager for all of you..."
  * console.log(pkg.programs)    // ["bw"]
- * console.log(pkg.versions[0]) // "2025.4.0" (latest)
+ * console.log(pkg.versions[0]) // "2025.6.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/bitwarden-com.md
@@ -69,6 +69,7 @@ export const bwPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2025.6.0',
     '2025.4.0',
     '2025.3.0',
     '2025.2.0',

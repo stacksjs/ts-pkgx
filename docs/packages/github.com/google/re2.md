@@ -25,19 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 6 versions</summary>
 
-- `2024.7.2`, `2024.7.1`, `2024.6.1`, `2023.3.1`
+- `2025.6.26`, `2025.06.26b`, `2024.7.2`, `2024.7.1`, `2024.6.1`
+- `2023.3.1`
 
 </details>
 
-**Latest Version**: `2024.7.2`
+**Latest Version**: `2025.6.26`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/google/re2@2024.7.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/google/re2@2025.6.26 -- $SHELL -i
 ```
 
 ## Dependencies

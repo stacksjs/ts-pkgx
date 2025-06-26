@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-06-26T17:32:09.291Z
+- **Last Updated**: 2025-06-26T19:28:25.690Z
 
 ## Table of Contents
 
@@ -56,7 +56,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[php.net](./packages/php.net/index.md)** (php) | General-purpose scripting language | pear, pecl, phar, ... (+5) | 8.4.8 (+72) | `pkgx php` |
 | **[python.org](./packages/python.org/index.md)** (py) | The Python programming language | python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace; | 3.13.5 (+150) | `pkgx py` |
 | **[ruby-lang.org](./packages/ruby-lang.org/index.md)** (ruby) | Powerful, clean, object-oriented scripting language | erb, irb, rake, ... (+3) | 3.4.4 (+41) | `pkgx ruby` |
-| **[rust-lang.org](./packages/rust-lang.org/index.md)** () | Empowering everyone to build reliable and efficient software. | cargo-clippy, cargo-fmt, clippy-driver, ... (+7) | 1.87.0 (+33) | `pkgx rust` |
+| **[rust-lang.org](./packages/rust-lang.org/index.md)** () | Empowering everyone to build reliable and efficient software. | cargo-clippy, cargo-fmt, clippy-driver, ... (+7) | 1.88.0 (+34) | `pkgx rust` |
 | **[swift.org](./packages/swift.org/index.md)** () | The Swift Programming Language | docc, dsymutil, sourcekit-lsp, ... (+23) | 6.1.2 (+9) | `pkgx swift` |
 | **[tinygo.org](./packages/tinygo.org/index.md)** () | Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. ... | tinygo | 0.38.0 (+7) | `pkgx tinygo` |
 | **[ziglang.org](./packages/ziglang.org/index.md)** () | General-purpose programming language and toolchain for maintaining robust, optimal, and reusable ... | zig | 0.14.1 (+6) | `pkgx zig` |
@@ -231,9 +231,9 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[pip.pypa.io](./packages/pip.pypa.io/index.md)** () | The Python package installer | pip, pip3.8, pip3.9, ... (+2) | 25.1.1 (+26) | `pkgx pip` |
 | **[pipenv.pypa.io](./packages/pipenv.pypa.io/index.md)** () | Python Development Workflow for Humans. | pipenv | 3000.0.0 (+47) | `pkgx pipenv` |
 | **[pkgx.sh](./packages/pkgx.sh/index.md)** () | Standalone binary that can run anything | pkgx | 2.7.0 (+34) | `pkgx pkgx` |
-| **[pnpm.io](./packages/pnpm.io/index.md)** () | Fast, disk space efficient package manager | pnpm, pnpx | 10.12.3 (+166) | `pkgx pnpm` |
+| **[pnpm.io](./packages/pnpm.io/index.md)** () | Fast, disk space efficient package manager | pnpm, pnpx | 10.12.4 (+167) | `pkgx pnpm` |
 | **[python-poetry.org](./packages/python-poetry.org/index.md)** () | Python packaging and dependency management made easy | poetry | 2.1.3 (+20) | `pkgx poetry` |
-| **[rust-lang.org/cargo](./packages/rust-lang.org/cargo/index.md)** () | The Rust package manager | cargo | 0.88.0 (+25) | `pkgx cargo` |
+| **[rust-lang.org/cargo](./packages/rust-lang.org/cargo/index.md)** () | The Rust package manager | cargo | 0.89.0 (+26) | `pkgx cargo` |
 | **[rye.astral.sh](./packages/rye.astral.sh/index.md)** () | Experimental Package Management Solution for Python | rye | 0.44.0 (+8) | `pkgx rye` |
 
 ## Editors & IDEs
@@ -248,7 +248,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[microsoft.com/code-cli](./packages/microsoft.com/code-cli/index.md)** (code) | Command-line interface built-in Visual Studio Code | code | 1.101.2 (+14) | `pkgx code` |
 | **[nano-editor.org](./packages/nano-editor.org/index.md)** () | Free (GNU) replacement for the Pico text editor | nano | 8.0.0 (+1) | `pkgx nano` |
 | **[neovim.io](./packages/neovim.io/index.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.2 (+14) | `pkgx nvim` |
-| **[vim.org](./packages/vim.org/index.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1481 (+2052) | `pkgx vi` |
+| **[vim.org](./packages/vim.org/index.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1483 (+2054) | `pkgx vi` |
 | **[wezfurlong.org/wezterm](./packages/wezfurlong.org/wezterm/index.md)** () | A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemente... | wezterm | 2024.2.3 (+0) | `pkgx wezterm` |
 
 ## CLI Tools & Utilities

@@ -3,7 +3,7 @@
  *
  * @domain `vim.org`
  * @programs `vim`, `vi`
- * @version `9.1.1481` (2053 versions available)
+ * @version `9.1.1483` (2055 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install vim.org`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "vim.org"
  * console.log(pkg.description) // "The official Vim repository"
  * console.log(pkg.programs)    // ["vim", "vi"]
- * console.log(pkg.versions[0]) // "9.1.1481" (latest)
+ * console.log(pkg.versions[0]) // "9.1.1483" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/vim-org.md
@@ -74,6 +74,8 @@ export const vimPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '9.1.1483',
+    '9.1.1482',
     '9.1.1481',
     '9.1.1479',
     '9.1.1478',
