@@ -1,6 +1,6 @@
 # diff-so-fancy
 
-> Good-lookin' diffs. Actually… nah… The best-lookin' diffs. :tada:
+> Package from pantry: github.com/so-fancy/diff-so-fancy
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install diff-so-fancy
+launchpad install github.com/so-fancy/diff-so-fancy
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `diff-so-fancy`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.4.4`
-
-</details>
-
-**Latest Version**: `1.4.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) diff-so-fancy -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

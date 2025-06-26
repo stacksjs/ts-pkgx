@@ -1,6 +1,6 @@
 # sqlboiler
 
-> Generate a Go ORM tailored to your database schema.
+> Package from pantry: github.com/volatiletech/sqlboiler
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install sqlboiler
+launchpad install github.com/volatiletech/sqlboiler
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `sqlboiler`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `4.19.2`, `4.19.1`, `4.19.0`, `4.18.0`, `4.17.1`
-- `4.17.0`, `4.16.2`, `4.16.1`, `4.16.0`, `4.15.0`
-
-</details>
-
-**Latest Version**: `4.19.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) sqlboiler -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

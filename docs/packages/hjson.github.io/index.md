@@ -1,11 +1,11 @@
-# hjson
+# hjson.github.io
 
-> Hjson for Rust
+> Package from pantry: hjson.github.io
 
 ## Package Information
 
 - **Domain**: `hjson.github.io`
-- **Name**: `hjson`
+- **Name**: `hjson.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hjson.github.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install hjson
+launchpad install hjson.github.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `hjson`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.1.0`, `1.0.0`
-
-</details>
-
-**Latest Version**: `1.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) hjson -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) hjson -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.hjson
+const pkg = pantry['hjson.github.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

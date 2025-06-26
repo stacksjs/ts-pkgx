@@ -1,6 +1,6 @@
 # Graphics Libraries
 
-*2 packages in this category*
+*3 packages in this category*
 
 Packages related to graphics libraries.
 
@@ -18,11 +18,21 @@ Vector graphics library with cross-device output support
 
 ### [libsdl.org](../packages/libsdl.org/index.md)
 
-Simple Directmedia Layer
+Package from pantry: libsdl.org
 
 **Programs**: None specified
 
 **Install**: `launchpad install libsdl.org`
+
+---
+
+### [mesa3d.org](../packages/mesa3d.org/index.md)
+
+Package from pantry: mesa3d.org
+
+**Programs**: None specified
+
+**Install**: `launchpad install mesa3d.org`
 
 ---
 

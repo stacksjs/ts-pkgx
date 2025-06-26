@@ -1,9 +1,7 @@
 /**
- * **python-pillow.org** - Python Imaging Library (Fork)
+ * **python-pillow.org** - Package from pantry: python-pillow.org
  *
  * @domain `python-pillow.org`
- * @version `11.2.1` (6 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install python-pillow.org`
  * @dependencies `libjpeg-turbo.org^2`, `pngquant.org/lib^4`, `simplesystems.org/libtiff^4`, ... (+7 more)
@@ -14,8 +12,7 @@
  *
  * const pkg = pantry.pythonpilloworg
  * console.log(pkg.name)        // "python-pillow.org"
- * console.log(pkg.description) // "Python Imaging Library (Fork)"
- * console.log(pkg.versions[0]) // "11.2.1" (latest)
+ * console.log(pkg.description) // "Package from pantry: python-pillow.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/python-pillow-org.md
@@ -33,15 +30,14 @@ export const pythonpilloworgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Python Imaging Library (Fork)' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/python-pillow.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: python-pillow.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install python-pillow.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +python-pillow.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install python-pillow.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,21 +56,10 @@ export const pythonpilloworgPackage = {
     'zlib.net^1',
     'python.org~3.12',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '11.2.1',
-    '11.1.0',
-    '11.0.0',
-    '10.4.0',
-    '10.3.0',
-    '10.2.0',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +python-pillow.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install python-pillow.org' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/python-pillow.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type PythonpilloworgPackage = typeof pythonpilloworgPackage

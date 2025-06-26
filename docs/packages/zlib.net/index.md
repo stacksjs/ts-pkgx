@@ -1,6 +1,6 @@
 # zlib.net
 
-> A massively spiffy yet delicately unobtrusive compression library.
+> Package from pantry: zlib.net
 
 ## Package Information
 
@@ -21,24 +21,6 @@ launchpad install zlib.net
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.3.1`, `1.3.0`, `1.2.13`, `1.2.12`
-
-</details>
-
-**Latest Version**: `1.3.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +zlib.net@1.3.1 -- $SHELL -i
-```
 
 ## Usage Examples
 

@@ -1,34 +1,24 @@
 /**
- * **lazygit** - simple terminal UI for git commands
+ * **lazygit** - Package from pantry: github.com/jesseduffield/lazygit
  *
  * @domain `github.com/jesseduffield/lazygit`
- * @programs `lazygit`
- * @version `0.52.0` (27 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install lazygit`
- * @name `lazygit`
+ * @install `launchpad install github.com/jesseduffield/lazygit`
  * @dependencies `git-scm.org^2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.lazygit
- * // Or access via domain
- * const samePkg = pantry.githubcomjesseduffieldlazygit
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomjesseduffieldlazygit
  * console.log(pkg.name)        // "lazygit"
- * console.log(pkg.description) // "simple terminal UI for git commands"
- * console.log(pkg.programs)    // ["lazygit"]
- * console.log(pkg.versions[0]) // "0.52.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/jesseduffield/l..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/jesseduffield/lazygit.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const lazygitPackage = {
+export const githubcomjesseduffieldlazygitPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const lazygitPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'simple terminal UI for git commands' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jesseduffield/lazygit/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/jesseduffield/lazygit' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install lazygit' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'lazygit',
-  ] as const,
+  installCommand: 'launchpad install github.com/jesseduffield/lazygit' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/jesseduffield/lazygit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/jesseduffield/lazygit' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,46 +47,10 @@ export const lazygitPackage = {
   dependencies: [
     'git-scm.org^2',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.52.0',
-    '0.51.1',
-    '0.51.0',
-    '0.50.0',
-    '0.49.0',
-    '0.48.0',
-    '0.47.2',
-    '0.47.1',
-    '0.46.0',
-    '0.45.2',
-    '0.45.0',
-    '0.44.1',
-    '0.44.0',
-    '0.43.1',
-    '0.43.0',
-    '0.42.0',
-    '0.41.0',
-    '0.40.2',
-    '0.40.0',
-    '0.39.4',
-    '0.39.3',
-    '0.39.2',
-    '0.39.1',
-    '0.38.2',
-    '0.38.1',
-    '0.38.0',
-    '0.37.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) lazygit -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install lazygit' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jesseduffield/lazygit/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type LazygitPackage = typeof lazygitPackage
+export type GithubcomjesseduffieldlazygitPackage = typeof githubcomjesseduffieldlazygitPackage

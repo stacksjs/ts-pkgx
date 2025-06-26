@@ -16,43 +16,43 @@ Packages related to documentation & text processing.
 
 ---
 
-### [mkdocs.org](../packages/mkdocs.org/index.md) (mkdocs)
+### [mkdocs.org](../packages/mkdocs.org/index.md)
 
-Project documentation with Markdown.
+Package from pantry: mkdocs.org
 
-**Programs**: mkdocs
+**Programs**: None specified
 
-**Install**: `launchpad install mkdocs`
-
----
-
-### [pandoc.org](../packages/pandoc.org/index.md) (pandoc)
-
-Swiss-army knife of markup format conversion
-
-**Programs**: pandoc
-
-**Install**: `launchpad install pandoc`
+**Install**: `launchpad install mkdocs.org`
 
 ---
 
-### [tectonic-typesetting.github.io](../packages/tectonic-typesetting.github.io/index.md) (tectonic)
+### [pandoc.org](../packages/pandoc.org/index.md)
 
-A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive.
+Package from pantry: pandoc.org
 
-**Programs**: tectonic
+**Programs**: None specified
 
-**Install**: `launchpad install tectonic`
+**Install**: `launchpad install pandoc.org`
 
 ---
 
-### [typst.app](../packages/typst.app/index.md) (typst)
+### [tectonic-typesetting.github.io](../packages/tectonic-typesetting.github.io/index.md)
 
-A new markup-based typesetting system that is powerful and easy to learn.
+Package from pantry: tectonic-typesetting.github.io
 
-**Programs**: typst
+**Programs**: None specified
 
-**Install**: `launchpad install typst`
+**Install**: `launchpad install tectonic-typesetting.github.io`
+
+---
+
+### [typst.app](../packages/typst.app/index.md)
+
+Package from pantry: typst.app
+
+**Programs**: None specified
+
+**Install**: `launchpad install typst.app`
 
 ---
 

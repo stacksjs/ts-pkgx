@@ -1,32 +1,23 @@
 /**
- * **make** - pkgx package
+ * **make** - Package from pantry: gnu.org/make
  *
  * @domain `gnu.org/make`
- * @programs `make`
- * @version `4.3.0` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install make`
- * @name `make`
+ * @install `launchpad install gnu.org/make`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.make
- * // Or access via domain
- * const samePkg = pantry.gnuorgmake
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnuorgmake
  * console.log(pkg.name)        // "make"
- * console.log(pkg.programs)    // ["make"]
- * console.log(pkg.versions[0]) // "4.3.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: gnu.org/make"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/make.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const makePackage = {
+export const gnuorgmakePackage = {
   /**
    * The display name of this package.
    */
@@ -38,38 +29,21 @@ export const makePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/make/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: gnu.org/make' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install make' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'make',
-  ] as const,
+  installCommand: 'launchpad install gnu.org/make' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/make -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/make' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '4.3.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) make -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install make' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/make/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type MakePackage = typeof makePackage
+export type GnuorgmakePackage = typeof gnuorgmakePackage
