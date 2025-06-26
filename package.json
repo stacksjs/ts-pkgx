@@ -89,8 +89,8 @@
     "bumpp": "^10.2.0",
     "bun-plugin-dtsx": "0.9.5",
     "changelogen": "^0.6.1",
-    "chromium-bidi": "^6.0.0",
-    "electron": "^36.5.0",
+    "chromium-bidi": "^6.1.0",
+    "electron": "^36.6.0",
     "lint-staged": "^16.1.2",
     "simple-git-hooks": "^2.13.0",
     "typescript": "^5.8.3"
