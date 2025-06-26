@@ -3,7 +3,7 @@
  *
  * @domain `bitcoin.org`
  * @programs `bitcoin-cli`, `bitcoin-tx`, `bitcoin-util`, `bitcoin-wallet`, `bitcoind`
- * @version `29.0.0` (16 versions available)
+ * @version `29.0.0` (17 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bitcoin`
@@ -80,6 +80,7 @@ export const bitcoinPackage = {
    */
   versions: [
     '29.0.0',
+    '28.2.0',
     '28.1.0',
     '28.0.0',
     '27.2.0',
