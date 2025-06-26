@@ -1,6 +1,6 @@
 # Programming Languages
 
-*14 packages in this category*
+*12 packages in this category*
 
 Popular programming languages and their runtimes available through pkgx.
 
@@ -116,33 +116,13 @@ Empowering everyone to build reliable and efficient software.
 
 ---
 
-### [swift.org](../packages/swift.org/index.md) (swift)
+### [tcl.tk/tcl](../packages/tcl.tk/tcl/index.md) (tcl)
 
-The Swift Programming Language
+Package from pantry: tcl.tk/tcl
 
-**Programs**: docc, dsymutil, sourcekit-lsp, swift-api-checker.py, swift-build-sdk-interfaces, swift-build-tool, swift-demangle, swift-driver, swift-format, swift-frontend, swift-help, swift-package, swift-plugin-server, swift-stdlib-tool, swift, swift-api-digester, swift-api-extract, swift-autolink-extract, swift-build, swift-experimental-sdk, swift-package-collection, swift-package-registry, swift-run, swift-symbolgraph-extract, swift-test, swiftc
+**Programs**: None specified
 
-**Install**: `launchpad install swift`
-
----
-
-### [tinygo.org](../packages/tinygo.org/index.md) (tinygo)
-
-Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM.
-
-**Programs**: tinygo
-
-**Install**: `launchpad install tinygo`
-
----
-
-### [ziglang.org](../packages/ziglang.org/index.md) (zig)
-
-General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
-
-**Programs**: zig
-
-**Install**: `launchpad install zig`
+**Install**: `launchpad install tcl.tk/tcl`
 
 ---
 

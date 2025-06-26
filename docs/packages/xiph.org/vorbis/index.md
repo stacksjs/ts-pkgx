@@ -1,11 +1,11 @@
-# xiph.org/vorbis
+# vorbis
 
-> Reference implementation of the Ogg Vorbis audio format.
+> Package from pantry: xiph.org/vorbis
 
 ## Package Information
 
 - **Domain**: `xiph.org/vorbis`
-- **Name**: `xiph.org/vorbis`
+- **Name**: `vorbis`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xiph.org/vorbis/package.yml)
 
@@ -22,24 +22,6 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.3.7`
-
-</details>
-
-**Latest Version**: `1.3.7`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +xiph.org/vorbis@1.3.7 -- $SHELL -i
-```
-
 ## Dependencies
 
 This package depends on:
@@ -52,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['xiph.org/vorbis']
+const pkg = pantry.vorbis
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

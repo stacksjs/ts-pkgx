@@ -66,23 +66,23 @@ Ambitious Vim-fork focused on extensibility and agility
 
 ---
 
-### [vim.org](../packages/vim.org/index.md) (vim, vi)
+### [vim.org](../packages/vim.org/index.md)
 
-The official Vim repository
+Package from pantry: vim.org
 
-**Programs**: vim, vi
+**Programs**: None specified
 
-**Install**: `launchpad install vi`
+**Install**: `launchpad install vim.org`
 
 ---
 
 ### [wezfurlong.org/wezterm](../packages/wezfurlong.org/wezterm/index.md) (wezterm)
 
-A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
+Package from pantry: wezfurlong.org/wezterm
 
-**Programs**: wezterm
+**Programs**: None specified
 
-**Install**: `launchpad install wezterm`
+**Install**: `launchpad install wezfurlong.org/wezterm`
 
 ---
 

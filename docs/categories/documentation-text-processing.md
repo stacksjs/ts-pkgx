@@ -36,23 +36,23 @@ Swiss-army knife of markup format conversion
 
 ---
 
-### [tectonic-typesetting.github.io](../packages/tectonic-typesetting.github.io/index.md) (tectonic)
+### [tectonic-typesetting.github.io](../packages/tectonic-typesetting.github.io/index.md)
 
-A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive.
+Package from pantry: tectonic-typesetting.github.io
 
-**Programs**: tectonic
+**Programs**: None specified
 
-**Install**: `launchpad install tectonic`
+**Install**: `launchpad install tectonic-typesetting.github.io`
 
 ---
 
-### [typst.app](../packages/typst.app/index.md) (typst)
+### [typst.app](../packages/typst.app/index.md)
 
-A new markup-based typesetting system that is powerful and easy to learn.
+Package from pantry: typst.app
 
-**Programs**: typst
+**Programs**: None specified
 
-**Install**: `launchpad install typst`
+**Install**: `launchpad install typst.app`
 
 ---
 
