@@ -3,7 +3,7 @@
  *
  * @domain `khronos.org/glslang`
  * @programs `glslang`, `glslangValidator`, `spirv-remap`
- * @version `15.3.0` (12 versions available)
+ * @version `15.4.0` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install khronos.org/glslang`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "khronos.org/glslang"
  * console.log(pkg.description) // "Khronos-reference front end for GLSL/ESSL, part..."
  * console.log(pkg.programs)    // ["glslang", "glslangValidator", ...]
- * console.log(pkg.versions[0]) // "15.3.0" (latest)
+ * console.log(pkg.versions[0]) // "15.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/khronos-org/glslang.md
@@ -59,6 +59,7 @@ export const khronosorgglslangPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '15.4.0',
     '15.3.0',
     '15.2.0',
     '15.1.0',
