@@ -1,31 +1,31 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1451+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1397+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1451
+- **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-06-27T01:55:50.273Z
+- **Last Updated**: 2025-06-27T03:52:17.420Z
 
 ## Table of Contents
 
-- [Programming Languages](#programming-languages) (13 packages)
+- [Programming Languages](#programming-languages) (14 packages)
 - [Artificial Intelligence](#artificial-intelligence) (14 packages)
-- [Databases](#databases) (11 packages)
-- [Web Development](#web-development) (2 packages)
-- [DevOps](#devops) (23 packages)
-- [Container & Kubernetes Tools](#container-kubernetes-tools) (22 packages)
+- [Databases](#databases) (13 packages)
+- [Web Development](#web-development) (4 packages)
+- [DevOps](#devops) (27 packages)
+- [Container & Kubernetes Tools](#container-kubernetes-tools) (25 packages)
 - [Monitoring & Observability](#monitoring-observability) (4 packages)
-- [Build Tools & Automation](#build-tools-automation) (14 packages)
+- [Build Tools & Automation](#build-tools-automation) (15 packages)
 - [Package Managers](#package-managers) (17 packages)
 - [Editors & IDEs](#editors-ides) (8 packages)
-- [CLI Tools & Utilities](#cli-tools-utilities) (33 packages)
-- [Networking](#networking) (8 packages)
-- [Security & Cryptography](#security-cryptography) (11 packages)
-- [Multimedia](#multimedia) (6 packages)
+- [CLI Tools & Utilities](#cli-tools-utilities) (35 packages)
+- [Networking](#networking) (9 packages)
+- [Security & Cryptography](#security-cryptography) (12 packages)
+- [Multimedia](#multimedia) (7 packages)
 - [Graphics Libraries](#graphics-libraries) (2 packages)
 - [Gaming & Game Development](#gaming-game-development) (1 packages)
 - [Cloud Platforms](#cloud-platforms) (5 packages)
@@ -42,7 +42,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Programming Languages
 
-*13 packages in this category*
+*14 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -58,7 +58,8 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[ruby-lang.org](./packages/ruby-lang.org/index.md)** (ruby) | Powerful, clean, object-oriented scripting language | erb, irb, rake, ... (+3) | 3.4.4 (+41) | `pkgx ruby` |
 | **[rust-lang.org](./packages/rust-lang.org/index.md)** () | Empowering everyone to build reliable and efficient software. | cargo-clippy, cargo-fmt, clippy-driver, ... (+7) | 1.88.0 (+34) | `pkgx rust` |
 | **[swift.org](./packages/swift.org/index.md)** () | The Swift Programming Language | docc, dsymutil, sourcekit-lsp, ... (+23) | 6.1.2 (+9) | `pkgx swift` |
-| **[tcl.tk/tcl](./packages/tcl.tk/tcl/index.md)** | Package from pantry: tcl.tk/tcl | - | latest | `pkgx tcl` |
+| **[tinygo.org](./packages/tinygo.org/index.md)** () | Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. ... | tinygo | 0.38.0 (+7) | `pkgx tinygo` |
+| **[ziglang.org](./packages/ziglang.org/index.md)** () | General-purpose programming language and toolchain for maintaining robust, optimal, and reusable ... | zig | 0.14.1 (+6) | `pkgx zig` |
 
 ## Artificial Intelligence
 
@@ -83,7 +84,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Databases
 
-*11 packages in this category*
+*13 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -98,19 +99,23 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[redis.io](./packages/redis.io/index.md)** () | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.0.2 (+36) | `pkgx redis` |
 | **[sqlite.org](./packages/sqlite.org/index.md)** () | Official Git mirror of the SQLite source tree | sqlite3 | 3.50.1 (+25) | `pkgx sqlite3` |
 | **[surrealdb.com](./packages/surrealdb.com/index.md)** () | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+49) | `pkgx surreal` |
+| **[turso.tech](./packages/turso.tech/index.md)** () | Command line interface to Turso. | turso | 1.0.11 (+89) | `pkgx turso` |
+| **[valkey.io](./packages/valkey.io/index.md)** () | A flexible distributed key-value datastore that is optimized for caching and other realtime workl... | valkey-server, valkey-cli, valkey-benchmark | 8.1.2 (+11) | `pkgx valkey` |
 
 ## Web Development
 
-*2 packages in this category*
+*4 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[laravel.com](./packages/laravel.com/index.md)** () | The Laravel application installer. | laravel | 5.16.0 (+16) | `pkgx laravel` |
 | **[symfony.com](./packages/symfony.com/index.md)** () | The Symfony CLI tool | symfony | 5.12.0 (+49) | `pkgx symfony` |
+| **[tailwindcss.com](./packages/tailwindcss.com/index.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.11 (+44) | `pkgx tailwindcss` |
+| **[vitejs.dev](./packages/vitejs.dev/index.md)** () | Next generation frontend tooling. It&#39;s fast! | vite | 7.0.0 (+100) | `pkgx vite` |
 
 ## DevOps
 
-*23 packages in this category*
+*27 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -137,10 +142,14 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[packer.io](./packages/packer.io/index.md)** () | Packer is a tool for creating identical machine images for multiple platforms from a single sourc... | packer | 1.13.1 (+12) | `pkgx packer` |
 | **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.5.2 (+39) | `pkgx podman` |
 | **[runatlantis.io](./packages/runatlantis.io/index.md)** () | Terraform Pull Request Automation tool | atlantis | 0.34.0 (+17) | `pkgx atlantis` |
+| **[terraform.io](./packages/terraform.io/index.md)** () | Terraform enables you to safely and predictably create, change, and improve infrastructure. It is... | terraform | 1.12.2 (+74) | `pkgx terraform` |
+| **[terragrunt.gruntwork.io](./packages/terragrunt.gruntwork.io/index.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.82.2 (+357) | `pkgx terragrunt` |
+| **[terratag.io](./packages/terratag.io/index.md)** () | Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags ... | terratag | 0.7.2 (+17) | `pkgx terratag` |
+| **[vaultproject.io](./packages/vaultproject.io/index.md)** () | A tool for secrets management, encryption as a service, and privileged access management | vault | 1.20.0 (+56) | `pkgx vault` |
 
 ## Container & Kubernetes Tools
 
-*22 packages in this category*
+*25 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -166,6 +175,9 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[operatorframework.io/operator-sdk](./packages/operatorframework.io/operator-sdk/index.md)** () | SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and proj... | operator-sdk | 1.40.0 (+13) | `pkgx operator-sdk` |
 | **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.5.2 (+39) | `pkgx podman` |
 | **[skaffold.dev](./packages/skaffold.dev/index.md)** () | Easy and Repeatable Kubernetes Development | skaffold | 2.16.1 (+14) | `pkgx skaffold` |
+| **[tilt.dev](./packages/tilt.dev/index.md)** () | Define your dev environment as code. For microservice apps on Kubernetes. | tilt | 0.35.0 (+23) | `pkgx tilt` |
+| **[vcluster.com](./packages/vcluster.com/index.md)** () | vCluster - Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a name... | vcluster | 0.26.0 (+34) | `pkgx vcluster` |
+| **[velero.io](./packages/velero.io/index.md)** () | Backup and migrate Kubernetes applications and their persistent volumes | velero | 1.16.1 (+0) | `pkgx velero` |
 
 ## Monitoring & Observability
 
@@ -180,7 +192,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Build Tools & Automation
 
-*14 packages in this category*
+*15 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -198,6 +210,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[ninja-build.org](./packages/ninja-build.org/index.md)** () | Small build system for use with gyp or CMake | ninja | 1.13.0 (+4) | `pkgx ninja` |
 | **[pantsbuild.org/scie-pants](./packages/pantsbuild.org/scie-pants/index.md)** (pants) | Protects your Pants from the elements. | pants | 0.12.3 (+3) | `pkgx pants` |
 | **[scons.org](./packages/scons.org/index.md)** () | Substitute for classic &#39;make&#39; tool with autoconf/automake functionality | scons | 4.9.1 (+6) | `pkgx scons` |
+| **[taskfile.dev](./packages/taskfile.dev/index.md)** () | A task runner / simpler Make alternative written in Go | task | 3.44.0 (+30) | `pkgx task` |
 
 ## Package Managers
 
@@ -235,12 +248,12 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[microsoft.com/code-cli](./packages/microsoft.com/code-cli/index.md)** (code) | Command-line interface built-in Visual Studio Code | code | 1.101.2 (+14) | `pkgx code` |
 | **[nano-editor.org](./packages/nano-editor.org/index.md)** () | Free (GNU) replacement for the Pico text editor | nano | 8.0.0 (+1) | `pkgx nano` |
 | **[neovim.io](./packages/neovim.io/index.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.2 (+14) | `pkgx nvim` |
-| **[vim.org](./packages/vim.org/index.md)** | Package from pantry: vim.org | - | latest | `pkgx vim.org` |
-| **[wezfurlong.org/wezterm](./packages/wezfurlong.org/wezterm/index.md)** | Package from pantry: wezfurlong.org/wezterm | - | latest | `pkgx wezterm` |
+| **[vim.org](./packages/vim.org/index.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1484 (+2055) | `pkgx vi` |
+| **[wezfurlong.org/wezterm](./packages/wezfurlong.org/wezterm/index.md)** () | A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemente... | wezterm | 2024.2.3 (+0) | `pkgx wezterm` |
 
 ## CLI Tools & Utilities
 
-*33 packages in this category*
+*35 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -276,11 +289,13 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[ohmyposh.dev](./packages/ohmyposh.dev/index.md)** () | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.11.0 (+293) | `pkgx oh-my-posh` |
 | **[starship.rs](./packages/starship.rs/index.md)** () | ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell! | starship | 1.23.0 (+20) | `pkgx starship` |
 | **[stedolan.github.io/jq](./packages/stedolan.github.io/jq/index.md)** () | Lightweight and flexible command-line JSON processor | jq | 1.8.0 (+3) | `pkgx jq` |
-| **[wilfred.me.uk/difftastic](./packages/wilfred.me.uk/difftastic/index.md)** | Package from pantry: wilfred.me.uk/difftastic | - | latest | `pkgx difftastic` |
+| **[tree-sitter.github.io](./packages/tree-sitter.github.io/index.md)** () | Parser generator tool and incremental parsing library | tree-sitter | 0.25.6 (+27) | `pkgx tree-sitter` |
+| **[wilfred.me.uk/difftastic](./packages/wilfred.me.uk/difftastic/index.md)** () | a structural diff that understands syntax 🟥🟩 | difft | 0.64.0 (+8) | `pkgx difft` |
+| **[zsh.sourceforge.io](./packages/zsh.sourceforge.io/index.md)** () | UNIX shell (command interpreter) | zsh | 5.9.0 (+0) | `pkgx zsh` |
 
 ## Networking
 
-*8 packages in this category*
+*9 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -292,10 +307,11 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mosh.org](./packages/mosh.org/index.md)** () | Remote terminal application | mosh-client, mosh-server | 1.4.0 (+0) | `pkgx mosh` |
 | **[nginx.org](./packages/nginx.org/index.md)** () | HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server | nginx | 1.29.0 (+18) | `pkgx nginx` |
 | **[rsync.samba.org](./packages/rsync.samba.org/index.md)** () | An open source utility that provides fast incremental file transfer. It also has useful features ... | rsync, rsync-ssl | 3.4.1 (+3) | `pkgx rsync` |
+| **[traefik.io](./packages/traefik.io/index.md)** () | The Cloud Native Application Proxy | traefik | 3.4.3 (+60) | `pkgx traefik` |
 
 ## Security & Cryptography
 
-*11 packages in this category*
+*12 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -310,10 +326,11 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[openssl.org](./packages/openssl.org/index.md)** () | TLS/SSL and crypto library with QUIC APIs | openssl, c_rehash | 3.5.0 (+29) | `pkgx OpenSSL` |
 | **[orhun.dev/gpg-tui](./packages/orhun.dev/gpg-tui/index.md)** () | Manage your GnuPG keys with ease! 🔐 | gpg-tui | 0.11.1 (+2) | `pkgx gpg-tui` |
 | **[snyk.io](./packages/snyk.io/index.md)** () | Scans and monitors projects for security vulnerabilities | snyk | 1.1297.3 (+42) | `pkgx snyk` |
+| **[vaultproject.io](./packages/vaultproject.io/index.md)** () | A tool for secrets management, encryption as a service, and privileged access management | vault | 1.20.0 (+56) | `pkgx vault` |
 
 ## Multimedia
 
-*6 packages in this category*
+*7 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -323,6 +340,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mpv.io](./packages/mpv.io/index.md)** () | Media player based on MPlayer and mplayer2 | mpv | 0.40.0 (+2) | `pkgx mpv` |
 | **[sf.net/optipng](./packages/sf.net/optipng/index.md)** () | PNG file optimizer | optipng | 7.9.1 (+2) | `pkgx optipng` |
 | **[streamlink.github.io](./packages/streamlink.github.io/index.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 7.4.0 (+19) | `pkgx streamlink` |
+| **[yt-dlp.org](./packages/yt-dlp.org/index.md)** () | A feature-rich command-line audio/video downloader | yt-dlp | 2025.6.25 (+47) | `pkgx yt-dlp` |
 
 ## Graphics Libraries
 
@@ -401,8 +419,8 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[asciidoctor.org](./packages/asciidoctor.org/index.md)** () | :gem: A fast, open source text processor and publishing toolchain, written in Ruby, for convertin... | asciidoctor | 2.0.23 (+5) | `pkgx asciidoctor` |
 | **[mkdocs.org](./packages/mkdocs.org/index.md)** () | Project documentation with Markdown. | mkdocs | 1.6.1 (+2) | `pkgx mkdocs` |
 | **[pandoc.org](./packages/pandoc.org/index.md)** () | Swiss-army knife of markup format conversion | pandoc | 3.7.0.2 (+30) | `pkgx pandoc` |
-| **[tectonic-typesetting.github.io](./packages/tectonic-typesetting.github.io/index.md)** | Package from pantry: tectonic-typesetting.github.io | - | latest | `pkgx tectonic-typesetting.github.io` |
-| **[typst.app](./packages/typst.app/index.md)** | Package from pantry: typst.app | - | latest | `pkgx typst.app` |
+| **[tectonic-typesetting.github.io](./packages/tectonic-typesetting.github.io/index.md)** () | A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive. | tectonic | 0.15.0 (+5) | `pkgx tectonic` |
+| **[typst.app](./packages/typst.app/index.md)** () | A new markup-based typesetting system that is powerful and easy to learn. | typst | 0.13.1 (+13) | `pkgx typst` |
 
 ## System Administration
 
@@ -414,7 +432,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[rsync.samba.org](./packages/rsync.samba.org/index.md)** () | An open source utility that provides fast incremental file transfer. It also has useful features ... | rsync, rsync-ssl | 3.4.1 (+3) | `pkgx rsync` |
 | **[strace.io](./packages/strace.io/index.md)** () | strace is a diagnostic, debugging and instructional userspace utility for Linux | strace | 6.2.0 (+0) | `pkgx strace` |
 | **[systemd.io](./packages/systemd.io/index.md)** () | The systemd System and Service Manager | busctl, coredumpctl, hostnamectl, ... (+52) | 257.7.0 (+27) | `pkgx systemd.io` |
-| **[tcpdump.org](./packages/tcpdump.org/index.md)** | Package from pantry: tcpdump.org | - | latest | `pkgx tcpdump.org` |
+| **[tcpdump.org](./packages/tcpdump.org/index.md)** () | the LIBpcap interface to various kernel packet capture mechanism | pcap-config | 1.10.5 (+1) | `pkgx pcap-config` |
 
 ## Scientific Computing
 

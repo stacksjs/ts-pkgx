@@ -1,6 +1,6 @@
 # Databases
 
-*11 packages in this category*
+*13 packages in this category*
 
 Database systems and data storage solutions.
 
@@ -113,6 +113,26 @@ A scalable, distributed, collaborative, document-graph database, for the realtim
 **Programs**: surreal
 
 **Install**: `launchpad install surreal`
+
+---
+
+### [turso.tech](../packages/turso.tech/index.md) (turso)
+
+Command line interface to Turso.
+
+**Programs**: turso
+
+**Install**: `launchpad install turso`
+
+---
+
+### [valkey.io](../packages/valkey.io/index.md) (valkey)
+
+A flexible distributed key-value datastore that is optimized for caching and other realtime workloads.
+
+**Programs**: valkey-server, valkey-cli, valkey-benchmark
+
+**Install**: `launchpad install valkey`
 
 ---
 

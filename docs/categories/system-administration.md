@@ -46,13 +46,13 @@ The systemd System and Service Manager
 
 ---
 
-### [tcpdump.org](../packages/tcpdump.org/index.md)
+### [tcpdump.org](../packages/tcpdump.org/index.md) (pcap-config)
 
-Package from pantry: tcpdump.org
+the LIBpcap interface to various kernel packet capture mechanism
 
-**Programs**: None specified
+**Programs**: pcap-config
 
-**Install**: `launchpad install tcpdump.org`
+**Install**: `launchpad install pcap-config`
 
 ---
 

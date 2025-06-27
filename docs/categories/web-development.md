@@ -1,6 +1,6 @@
 # Web Development
 
-*2 packages in this category*
+*4 packages in this category*
 
 Packages related to web development.
 
@@ -23,6 +23,26 @@ The Symfony CLI tool
 **Programs**: symfony
 
 **Install**: `launchpad install symfony`
+
+---
+
+### [tailwindcss.com](../packages/tailwindcss.com/index.md) (tailwindcss)
+
+A utility-first CSS framework for rapid UI development.
+
+**Programs**: tailwindcss
+
+**Install**: `launchpad install tailwindcss`
+
+---
+
+### [vitejs.dev](../packages/vitejs.dev/index.md) (vite)
+
+Next generation frontend tooling. It's fast!
+
+**Programs**: vite
+
+**Install**: `launchpad install vite`
 
 ---
 
