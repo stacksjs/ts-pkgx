@@ -3,7 +3,7 @@
  *
  * @domain `gnome.org/pango`
  * @programs `pango-list`, `pango-segmentation`, `pango-view`
- * @version `1.56.3` (13 versions available)
+ * @version `1.56.4` (14 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pango`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "pango"
  * console.log(pkg.description) // "Framework for layout and rendering of i18n text"
  * console.log(pkg.programs)    // ["pango-list", "pango-segmentation", ...]
- * console.log(pkg.versions[0]) // "1.56.3" (latest)
+ * console.log(pkg.versions[0]) // "1.56.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/pango.md
@@ -77,6 +77,7 @@ export const pangoPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.56.4',
     '1.56.3',
     '1.56.2',
     '1.56.1',
