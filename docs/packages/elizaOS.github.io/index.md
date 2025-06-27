@@ -31,15 +31,16 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 15 versions</summary>
+<summary>Show all 16 versions</summary>
 
-- `1.0.13`, `1.0.12`, `1.0.11`, `1.0.10`, `1.0.9`
-- `1.0.8`, `1.0.7`, `1.0.6`, `1.0.5`, `0.25.19`
-- `0.25.9`, `0.25.8`, `0.1.9`, `0.1.8.1`, `0.1.7`
+- `1.0.14`, `1.0.13`, `1.0.12`, `1.0.11`, `1.0.10`
+- `1.0.9`, `1.0.8`, `1.0.7`, `1.0.6`, `1.0.5`
+- `0.25.19`, `0.25.9`, `0.25.8`, `0.1.9`, `0.1.8.1`
+- `0.1.7`
 
 </details>
 
-**Latest Version**: `1.0.13`
+**Latest Version**: `1.0.14`
 
 ### Install Specific Version
 

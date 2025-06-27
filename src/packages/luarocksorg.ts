@@ -3,7 +3,7 @@
  *
  * @domain `luarocks.org`
  * @programs `luarocks`, `luarocks-admin`
- * @version `3.12.1` (6 versions available)
+ * @version `3.12.2` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install luarocks`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "luarocks"
  * console.log(pkg.description) // "LuaRocks is the package manager for the Lua pro..."
  * console.log(pkg.programs)    // ["luarocks", "luarocks-admin"]
- * console.log(pkg.versions[0]) // "3.12.1" (latest)
+ * console.log(pkg.versions[0]) // "3.12.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/luarocks-org.md
@@ -71,6 +71,7 @@ export const luarocksPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.12.2',
     '3.12.1',
     '3.12.0',
     '3.11.1',
