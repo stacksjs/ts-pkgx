@@ -1,6 +1,6 @@
 # CLI Tools & Utilities
 
-*35 packages in this category*
+*33 packages in this category*
 
 Command-line utilities and system tools.
 
@@ -326,33 +326,13 @@ Lightweight and flexible command-line JSON processor
 
 ---
 
-### [tree-sitter.github.io](../packages/tree-sitter.github.io/index.md) (tree-sitter)
+### [wilfred.me.uk/difftastic](../packages/wilfred.me.uk/difftastic/index.md) (difftastic)
 
-Parser generator tool and incremental parsing library
+Package from pantry: wilfred.me.uk/difftastic
 
-**Programs**: tree-sitter
+**Programs**: None specified
 
-**Install**: `launchpad install tree-sitter`
-
----
-
-### [wilfred.me.uk/difftastic](../packages/wilfred.me.uk/difftastic/index.md) (difft)
-
-a structural diff that understands syntax 🟥🟩
-
-**Programs**: difft
-
-**Install**: `launchpad install difft`
-
----
-
-### [zsh.sourceforge.io](../packages/zsh.sourceforge.io/index.md) (zsh)
-
-UNIX shell (command interpreter)
-
-**Programs**: zsh
-
-**Install**: `launchpad install zsh`
+**Install**: `launchpad install wilfred.me.uk/difftastic`
 
 ---
 

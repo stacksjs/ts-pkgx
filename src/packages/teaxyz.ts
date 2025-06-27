@@ -1,5 +1,5 @@
 /**
- * **tea.xyz** - pkgx package
+ * **tea.xyz** - Package from pantry: tea.xyz
  *
  * @domain `tea.xyz`
  *
@@ -11,6 +11,7 @@
  *
  * const pkg = pantry.teaxyz
  * console.log(pkg.name)        // "tea.xyz"
+ * console.log(pkg.description) // "Package from pantry: tea.xyz"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tea-xyz.md
@@ -28,22 +29,21 @@ export const teaxyzPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: '' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  description: 'Package from pantry: tea.xyz' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install tea.xyz' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tea.xyz -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tea.xyz' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tea.xyz -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tea.xyz' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tea.xyz/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type TeaxyzPackage = typeof teaxyzPackage

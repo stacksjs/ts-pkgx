@@ -3,7 +3,7 @@
  *
  * @domain `git-lfs.com`
  * @programs `git-lfs`
- * @version `3.6.1` (6 versions available)
+ * @version `3.7.0` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install git-lfs`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "git-lfs"
  * console.log(pkg.description) // "Git extension for versioning large files"
  * console.log(pkg.programs)    // ["git-lfs"]
- * console.log(pkg.versions[0]) // "3.6.1" (latest)
+ * console.log(pkg.versions[0]) // "3.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/git-lfs-com.md
@@ -69,6 +69,7 @@ export const gitlfsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.7.0',
     '3.6.1',
     '3.6.0',
     '3.5.1',
