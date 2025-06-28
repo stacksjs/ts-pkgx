@@ -1,6 +1,6 @@
 # vmaf
 
-> Package from pantry: netflix.com/vmaf
+> Perceptual video quality assessment based on multi-method fusion.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install netflix.com/vmaf
+launchpad install vmaf
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `vmaf`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `3.0.0`, `2.3.1`
+
+</details>
+
+**Latest Version**: `3.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) vmaf -- $SHELL -i
+```
 
 ## Usage Examples
 

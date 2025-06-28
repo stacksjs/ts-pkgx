@@ -1,11 +1,11 @@
-# libgphoto2
+# gphoto2
 
-> Package from pantry: gphoto.org/libgphoto2
+> The libgphoto2 camera access and control library.
 
 ## Package Information
 
 - **Domain**: `gphoto.org/libgphoto2`
-- **Name**: `libgphoto2`
+- **Name**: `gphoto2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gphoto.org/libgphoto2/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install gphoto.org/libgphoto2
+launchpad install gphoto2
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gphoto2-config`
+- `gphoto2-port-config`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.5.31`
+
+</details>
+
+**Latest Version**: `2.5.31`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +gphoto.org/libgphoto2@2.5.31 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -40,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libgphoto2
+const pkg = pantry.gphoto2
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

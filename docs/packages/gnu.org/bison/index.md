@@ -1,11 +1,11 @@
-# bison
+# gnu.org/bison
 
-> Package from pantry: gnu.org/bison
+> Parser generator
 
 ## Package Information
 
 - **Domain**: `gnu.org/bison`
-- **Name**: `bison`
+- **Name**: `gnu.org/bison`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/bison/package.yml)
 
@@ -20,7 +20,26 @@ launchpad install gnu.org/bison
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `bison`
+- `yacc`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `3.8.2`
+
+</details>
+
+**Latest Version**: `3.8.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +gnu.org/bison@3.8.2 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.bison
+const pkg = pantry['gnu.org/bison']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

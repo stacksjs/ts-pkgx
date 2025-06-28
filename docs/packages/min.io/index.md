@@ -1,11 +1,11 @@
-# min.io
+# minio
 
-> Package from pantry: min.io
+> MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.
 
 ## Package Information
 
 - **Domain**: `min.io`
-- **Name**: `min.io`
+- **Name**: `minio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/min.io/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install min.io
+launchpad install minio
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `minio`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2023.10.25.6.33.25`
+
+</details>
+
+**Latest Version**: `2023.10.25.6.33.25`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) minio -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['min.io']
+const pkg = pantry.minio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

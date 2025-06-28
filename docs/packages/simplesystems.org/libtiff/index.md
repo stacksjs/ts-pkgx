@@ -1,11 +1,11 @@
-# libtiff
+# tiff
 
-> Package from pantry: simplesystems.org/libtiff
+> TIFF library and utilities
 
 ## Package Information
 
 - **Domain**: `simplesystems.org/libtiff`
-- **Name**: `libtiff`
+- **Name**: `tiff`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/simplesystems.org/libtiff/package.yml)
 
@@ -13,14 +13,36 @@
 
 ```bash
 # Install with launchpad
-launchpad install simplesystems.org/libtiff
+launchpad install tiff
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `tiffcp`
+- `tiffdump`
+- `tiffinfo`
+- `tiffset`
+- `tiffsplit`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `4.7.0`, `4.6.0`, `4.5.1`, `4.5.0`
+
+</details>
+
+**Latest Version**: `4.7.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +simplesystems.org/libtiff@4.7.0 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -36,7 +58,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libtiff
+const pkg = pantry.tiff
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

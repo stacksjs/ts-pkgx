@@ -16,43 +16,43 @@ Command line tools for fly.io services
 
 ---
 
-### [heroku.com](../packages/heroku.com/index.md)
+### [heroku.com](../packages/heroku.com/index.md) (heroku)
 
-Package from pantry: heroku.com
+CLI for Heroku
 
-**Programs**: None specified
+**Programs**: heroku
 
-**Install**: `launchpad install heroku.com`
-
----
-
-### [planetscale.com](../packages/planetscale.com/index.md)
-
-Package from pantry: planetscale.com
-
-**Programs**: None specified
-
-**Install**: `launchpad install planetscale.com`
+**Install**: `launchpad install heroku`
 
 ---
 
-### [railway.app](../packages/railway.app/index.md)
+### [planetscale.com](../packages/planetscale.com/index.md) (pscale)
 
-Package from pantry: railway.app
+The CLI for PlanetScale Database
 
-**Programs**: None specified
+**Programs**: pscale
 
-**Install**: `launchpad install railway.app`
+**Install**: `launchpad install pscale`
 
 ---
 
-### [render.com](../packages/render.com/index.md)
+### [railway.app](../packages/railway.app/index.md) (railway)
 
-Package from pantry: render.com
+Develop and deploy code with zero configuration
 
-**Programs**: None specified
+**Programs**: railway
 
-**Install**: `launchpad install render.com`
+**Install**: `launchpad install railway`
+
+---
+
+### [render.com](../packages/render.com/index.md) (render)
+
+Command-line interface for Render
+
+**Programs**: render
+
+**Install**: `launchpad install render`
 
 ---
 

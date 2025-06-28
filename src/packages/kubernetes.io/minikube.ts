@@ -1,24 +1,34 @@
 /**
- * **minikube** - Package from pantry: kubernetes.io/minikube
+ * **minikube** - Run a Kubernetes cluster locally
  *
  * @domain `kubernetes.io/minikube`
+ * @programs `minikube`
+ * @version `1.36.0` (12 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install kubernetes.io/minikube`
+ * @install `launchpad install minikube`
+ * @name `minikube`
  * @dependencies `kubernetes.io/kubectl`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.kubernetesiominikube
+ * // Access the package
+ * const pkg = pantry.minikube
+ * // Or access via domain
+ * const samePkg = pantry.kubernetesiominikube
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "minikube"
- * console.log(pkg.description) // "Package from pantry: kubernetes.io/minikube"
+ * console.log(pkg.description) // "Run a Kubernetes cluster locally"
+ * console.log(pkg.programs)    // ["minikube"]
+ * console.log(pkg.versions[0]) // "1.36.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kubernetes-io/minikube.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kubernetesiominikubePackage = {
+export const minikubePackage = {
   /**
    * The display name of this package.
    */
@@ -30,15 +40,22 @@ export const kubernetesiominikubePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: kubernetes.io/minikube' as const,
+  description: 'Run a Kubernetes cluster locally' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kubernetes.io/minikube/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install kubernetes.io/minikube' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kubernetes.io/minikube -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install kubernetes.io/minikube' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install minikube' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'minikube',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,31 @@ export const kubernetesiominikubePackage = {
   dependencies: [
     'kubernetes.io/kubectl',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kubernetes.io/minikube/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.36.0',
+    '1.35.0',
+    '1.34.0',
+    '1.33.1',
+    '1.33.0',
+    '1.32.0',
+    '1.31.2',
+    '1.31.1',
+    '1.31.0',
+    '1.30.1',
+    '1.30.0',
+    '1.29.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) minikube -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install minikube' as const,
 }
 
-export type KubernetesiominikubePackage = typeof kubernetesiominikubePackage
+export type MinikubePackage = typeof minikubePackage

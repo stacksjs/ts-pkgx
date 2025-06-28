@@ -1,11 +1,11 @@
-# ninja-build.org
+# ninja
 
-> Package from pantry: ninja-build.org
+> Small build system for use with gyp or CMake
 
 ## Package Information
 
 - **Domain**: `ninja-build.org`
-- **Name**: `ninja-build.org`
+- **Name**: `ninja`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ninja-build.org/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install ninja-build.org
+launchpad install ninja
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ninja`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `1.13.0`, `1.12.1`, `1.12.0`, `1.11.1`, `1.11.0`
+
+</details>
+
+**Latest Version**: `1.13.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) ninja -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ninja-build.org']
+const pkg = pantry.ninja
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

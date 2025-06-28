@@ -1,6 +1,6 @@
 # cargo
 
-> Package from pantry: rust-lang.org/cargo
+> The Rust package manager
 
 ## Package Information
 
@@ -13,14 +13,37 @@
 
 ```bash
 # Install with launchpad
-launchpad install rust-lang.org/cargo
+launchpad install cargo
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cargo`
+
+## Available Versions
+
+<details>
+<summary>Show all 27 versions</summary>
+
+- `0.89.0`, `0.88.0`, `0.87.0`, `0.86.0`, `0.85.0`
+- `0.84.0`, `0.83.0`, `0.82.0`, `0.81.0`, `0.80.0`
+- `0.79.0`, `0.78.1`, `0.78.0`, `0.77.0`, `0.76.0`
+- `0.75.0`, `0.74.0`, `0.73.1`, `0.72.1`, `0.72.0`
+- `0.71.0`, `0.70.1`, `0.70.0`, `0.69.1`, `0.69.0`
+- `0.66.0`, `0.65.0`
+
+</details>
+
+**Latest Version**: `0.89.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) cargo -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -31,6 +54,13 @@ This package depends on:
 - `curl.se/ca-certs`
 - `linux:llvm.org`
 - `linux:curl.se`
+
+## Related Packages
+
+These packages work well with cargo:
+
+- [`git-scm.org`](../../git-scm.org/index.md) - Package not available
+- [`rust-lang.org`](../index.md) - Package not available
 
 ## Usage Examples
 
