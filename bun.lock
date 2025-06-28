@@ -14,7 +14,7 @@
         "bumpp": "^10.2.0",
         "bun-plugin-dtsx": "0.9.5",
         "changelogen": "^0.6.1",
-        "chromium-bidi": "^6.1.0",
+        "chromium-bidi": "^7.0.0",
         "electron": "^36.6.0",
         "lint-staged": "^16.1.2",
         "simple-git-hooks": "^2.13.0",
@@ -825,7 +825,7 @@
 
     "chokidar": ["chokidar@3.6.0", "", { "dependencies": { "anymatch": "~3.1.2", "braces": "~3.0.2", "glob-parent": "~5.1.2", "is-binary-path": "~2.1.0", "is-glob": "~4.0.1", "normalize-path": "~3.0.0", "readdirp": "~3.6.0" }, "optionalDependencies": { "fsevents": "~2.3.2" } }, "sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw=="],
 
-    "chromium-bidi": ["chromium-bidi@6.1.0", "", { "dependencies": { "mitt": "^3.0.1", "zod": "^3.24.1" }, "peerDependencies": { "devtools-protocol": "*" } }, "sha512-ZQlWlA5HTLeXqVSc584ImYZg4O8km3LXT692Nz9vW5ZqMSxldVEVXnDZlPWmEe0bI5V/5+xBoRRfO+cp22sGCQ=="],
+    "chromium-bidi": ["chromium-bidi@7.0.0", "", { "dependencies": { "mitt": "^3.0.1", "zod": "^3.24.1" }, "peerDependencies": { "devtools-protocol": "*" } }, "sha512-TClgAwvbQp+VdxgYPT9uQ1rMuo1nMNhpCxB1CempdPpKb88At3jiqvjvAzPXWg1uHFgsbEMN6sTqGWOk2Nl6wA=="],
 
     "ci-info": ["ci-info@4.2.0", "", {}, "sha512-cYY9mypksY8NRqgDB1XD1RiJL338v/551niynFTGkZOO2LHuB2OmOYxDIe/ttN9AHwrqdum1360G3ald0W9kCg=="],
 
