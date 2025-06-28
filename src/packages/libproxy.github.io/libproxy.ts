@@ -3,7 +3,7 @@
  *
  * @domain `libproxy.github.io/libproxy`
  * @programs `proxy`
- * @version `0.5.9` (7 versions available)
+ * @version `0.5.10` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install proxy`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "libproxy"
  * console.log(pkg.description) // "Library that provides automatic proxy configura..."
  * console.log(pkg.programs)    // ["proxy"]
- * console.log(pkg.versions[0]) // "0.5.9" (latest)
+ * console.log(pkg.versions[0]) // "0.5.10" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libproxy-github-io/libproxy.md
@@ -75,6 +75,7 @@ export const proxyPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.5.10',
     '0.5.9',
     '0.5.8',
     '0.5.7',
