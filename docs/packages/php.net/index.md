@@ -1,6 +1,6 @@
 # php.net
 
-> General-purpose scripting language
+> Package from pantry: php.net
 
 ## Package Information
 
@@ -13,59 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install php
+launchpad install php.net
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pear`
-- `pecl`
-- `phar`
-- `php`
-- `php-cgi`
-- `php-config`
-- `phpdbg`
-- `phpize`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `php`
-
-## Available Versions
-
-<details>
-<summary>Show all 73 versions</summary>
-
-- `8.4.8`, `8.4.7`, `8.4.6`, `8.4.5`, `8.4.4`
-- `8.4.3`, `8.4.2`, `8.4.1`, `8.4.0`, `8.3.22`
-- `8.3.21`, `8.3.20`, `8.3.19`, `8.3.18`, `8.3.17`
-- `8.3.16`, `8.3.15`, `8.3.14`, `8.3.13`, `8.3.12`
-- `8.3.11`, `8.3.10`, `8.3.9`, `8.3.8`, `8.3.7`
-- `8.3.6`, `8.3.5`, `8.3.4`, `8.3.3`, `8.3.2`
-- `8.3.1`, `8.3.0`, `8.2.28`, `8.2.27`, `8.2.26`
-- `8.2.25`, `8.2.24`, `8.2.23`, `8.2.22`, `8.2.21`
-- `8.2.20`, `8.2.19`, `8.2.18`, `8.2.17`, `8.2.16`
-- `8.2.15`, `8.2.14`, `8.2.13`, `8.2.12`, `8.2.11`
-- `8.2.10`, `8.2.9`, `8.2.8`, `8.2.7`, `8.2.6`
-- `8.2.5`, `8.1.32`, `8.1.31`, `8.1.30`, `8.1.29`
-- `8.1.28`, `8.1.27`, `8.1.26`, `8.1.25`, `8.1.24`
-- `8.1.23`, `8.1.22`, `8.1.21`, `8.1.20`, `8.1.18`
-- `8.0.30`, `8.0.28`, `7.4.33`
-
-</details>
-
-**Latest Version**: `8.4.8`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +php.net@8.4.8 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -108,7 +63,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.php
+const pkg = pantry['php.net']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

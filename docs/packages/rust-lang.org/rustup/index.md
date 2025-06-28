@@ -1,6 +1,6 @@
 # rustup
 
-> The Rust toolchain installer
+> Package from pantry: rust-lang.org/rustup
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install rustup
+launchpad install rust-lang.org/rustup
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `rustup`
-- `rustup-init`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `1.28.2`, `1.28.1`, `1.28.0`, `1.27.1`, `1.27.0`
-
-</details>
-
-**Latest Version**: `1.28.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +rust-lang.org/rustup@1.28.2 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

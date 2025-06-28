@@ -36,13 +36,13 @@ Flutter makes it easy and fast to build beautiful apps for mobile and beyond
 
 ---
 
-### [gradle.org](../packages/gradle.org/index.md) (gradle)
+### [gradle.org](../packages/gradle.org/index.md)
 
-Open-source build automation tool based on the Groovy and Kotlin DSL
+Package from pantry: gradle.org
 
-**Programs**: gradle
+**Programs**: None specified
 
-**Install**: `launchpad install gradle`
+**Install**: `launchpad install gradle.org`
 
 ---
 

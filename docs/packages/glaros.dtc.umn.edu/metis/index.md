@@ -1,6 +1,6 @@
 # metis
 
-> Programs that partition graphs and order matrices
+> Package from pantry: glaros.dtc.umn.edu/metis
 
 ## Package Information
 
@@ -13,37 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install metis
+launchpad install glaros.dtc.umn.edu/metis
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cmpfillin`
-- `gpmetis`
-- `graphchk`
-- `m2gmetis`
-- `mpmetis`
-- `ndmetis`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `5.2.1.1`, `5.1.0.4`, `5.1.0.3`
-
-</details>
-
-**Latest Version**: `5.2.1.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +glaros.dtc.umn.edu/metis@5.2.1.1 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# gsf
+# libgsf
 
-> I/O abstraction library for dealing with structured file formats
+> Package from pantry: gnome.org/libgsf
 
 ## Package Information
 
 - **Domain**: `gnome.org/libgsf`
-- **Name**: `gsf`
+- **Name**: `libgsf`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/libgsf/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gsf
+launchpad install gnome.org/libgsf
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gsf`
-- `gsf-office-thumbnailer`
-- `gsf-vba-dump`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.14.53`, `1.14.52`, `1.14.51`, `1.14.50`
-
-</details>
-
-**Latest Version**: `1.14.53`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnome.org/libgsf@1.14.53 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -54,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.gsf
+const pkg = pantry.libgsf
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

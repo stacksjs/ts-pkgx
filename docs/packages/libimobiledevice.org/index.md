@@ -1,11 +1,11 @@
-# idevicedate
+# libimobiledevice.org
 
-> A cross-platform protocol library to communicate with iOS devices
+> Package from pantry: libimobiledevice.org
 
 ## Package Information
 
 - **Domain**: `libimobiledevice.org`
-- **Name**: `idevicedate`
+- **Name**: `libimobiledevice.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libimobiledevice.org/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install idevicedate
+launchpad install libimobiledevice.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `idevicedate`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.3.0`
-
-</details>
-
-**Latest Version**: `1.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) idevicedate -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -55,7 +37,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.idevicedate
+const pkg = pantry['libimobiledevice.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

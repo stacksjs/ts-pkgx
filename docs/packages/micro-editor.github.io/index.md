@@ -1,11 +1,11 @@
-# micro
+# micro-editor.github.io
 
-> A modern and intuitive terminal-based text editor
+> Package from pantry: micro-editor.github.io
 
 ## Package Information
 
 - **Domain**: `micro-editor.github.io`
-- **Name**: `micro`
+- **Name**: `micro-editor.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/micro-editor.github.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install micro
+launchpad install micro-editor.github.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `micro`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `2.0.14`, `2.0.13`, `2.0.12`, `2.0.11`
-
-</details>
-
-**Latest Version**: `2.0.14`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) micro -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) micro -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.micro
+const pkg = pantry['micro-editor.github.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

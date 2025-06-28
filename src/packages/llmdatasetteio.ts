@@ -1,38 +1,28 @@
 /**
- * **llm** - Access large language models from the command-line
+ * **llm.datasette.io** - Package from pantry: llm.datasette.io
  *
  * @domain `llm.datasette.io`
- * @programs `llm`
- * @version `0.26.0` (30 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install llm`
- * @name `llm`
+ * @install `launchpad install llm.datasette.io`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.llm
- * // Or access via domain
- * const samePkg = pantry.llmdatasetteio
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "llm"
- * console.log(pkg.description) // "Access large language models from the command-line"
- * console.log(pkg.programs)    // ["llm"]
- * console.log(pkg.versions[0]) // "0.26.0" (latest)
+ * const pkg = pantry.llmdatasetteio
+ * console.log(pkg.name)        // "llm.datasette.io"
+ * console.log(pkg.description) // "Package from pantry: llm.datasette.io"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/llm-datasette-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const llmPackage = {
+export const llmdatasetteioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'llm' as const,
+  name: 'llm.datasette.io' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,22 +30,15 @@ export const llmPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Access large language models from the command-line' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/llm.datasette.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: llm.datasette.io' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install llm' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'llm',
-  ] as const,
+  installCommand: 'launchpad install llm.datasette.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +llm.datasette.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install llm.datasette.io' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,49 +47,10 @@ export const llmPackage = {
   dependencies: [
     'python.org~3.11',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.26.0',
-    '0.25.0',
-    '0.24.2',
-    '0.24.1',
-    '0.24.0',
-    '0.23.0',
-    '0.22.0',
-    '0.21.0',
-    '0.20.0',
-    '0.19.1',
-    '0.19.0',
-    '0.18.0',
-    '0.17.1',
-    '0.17.0',
-    '0.16.0',
-    '0.15.0',
-    '0.14.0',
-    '0.13.1',
-    '0.13.0',
-    '0.12.0',
-    '0.11.2',
-    '0.11.1',
-    '0.11.0',
-    '0.10.0',
-    '0.9.0',
-    '0.8.1',
-    '0.8.0',
-    '0.7.1',
-    '0.7.0',
-    '0.6.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) llm -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install llm' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/llm.datasette.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type LlmPackage = typeof llmPackage
+export type LlmdatasetteioPackage = typeof llmdatasetteioPackage

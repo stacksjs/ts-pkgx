@@ -1,6 +1,6 @@
 # htslib.org
 
-> C library for high-throughput sequencing data formats
+> Package from pantry: htslib.org
 
 ## Package Information
 
@@ -20,28 +20,7 @@ launchpad install htslib.org
 
 This package provides the following executable programs:
 
-- `bgzip`
-- `htsfile`
-- `tabix`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `1.22.0`, `1.21.0`, `1.20.0`, `1.19.1`, `1.19.0`
-- `1.18.0`
-
-</details>
-
-**Latest Version**: `1.22.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +htslib.org@1.22.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

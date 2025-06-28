@@ -1,6 +1,6 @@
 # stern
 
-> ⎈ Multi pod and container log tailing for Kubernetes -- Friendly fork of https://github.com/wercker/stern
+> Package from pantry: github.com/stern/stern
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install stern
+launchpad install github.com/stern/stern
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `stern`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `1.32.0`, `1.31.0`, `1.30.0`, `1.29.0`, `1.28.0`
-- `1.27.0`, `1.26.0`
-
-</details>
-
-**Latest Version**: `1.32.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) stern -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,33 +1,23 @@
 /**
- * **unxip** - A fast Xcode unarchiver
+ * **unxip** - Package from pantry: github.com/saagarjha/unxip
  *
  * @domain `github.com/saagarjha/unxip`
- * @programs `unxip`
- * @version `3.1.0` (4 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install unxip`
- * @name `unxip`
+ * @install `launchpad install github.com/saagarjha/unxip`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.unxip
- * // Or access via domain
- * const samePkg = pantry.githubcomsaagarjhaunxip
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomsaagarjhaunxip
  * console.log(pkg.name)        // "unxip"
- * console.log(pkg.description) // "A fast Xcode unarchiver"
- * console.log(pkg.programs)    // ["unxip"]
- * console.log(pkg.versions[0]) // "3.1.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/saagarjha/unxip"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/saagarjha/unxip.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const unxipPackage = {
+export const githubcomsaagarjhaunxipPackage = {
   /**
    * The display name of this package.
    */
@@ -39,41 +29,21 @@ export const unxipPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A fast Xcode unarchiver' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/saagarjha/unxip/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/saagarjha/unxip' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install unxip' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'unxip',
-  ] as const,
+  installCommand: 'launchpad install github.com/saagarjha/unxip' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/saagarjha/unxip -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/saagarjha/unxip' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.1.0',
-    '3.0.0',
-    '2.2.0',
-    '2.1.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) unxip -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install unxip' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/saagarjha/unxip/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type UnxipPackage = typeof unxipPackage
+export type GithubcomsaagarjhaunxipPackage = typeof githubcomsaagarjhaunxipPackage

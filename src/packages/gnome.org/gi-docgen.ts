@@ -1,9 +1,7 @@
 /**
- * **gnome.org/gi-docgen** - pkgx package
+ * **gi-docgen** - Package from pantry: gnome.org/gi-docgen
  *
  * @domain `gnome.org/gi-docgen`
- * @version `2025.3.0` (2 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install gnome.org/gi-docgen`
  * @dependencies `pkgx.sh^1`
@@ -13,8 +11,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnomeorggidocgen
- * console.log(pkg.name)        // "gnome.org/gi-docgen"
- * console.log(pkg.versions[0]) // "2025.3.0" (latest)
+ * console.log(pkg.name)        // "gi-docgen"
+ * console.log(pkg.description) // "Package from pantry: gnome.org/gi-docgen"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/gi-docgen.md
@@ -24,7 +22,7 @@ export const gnomeorggidocgenPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnome.org/gi-docgen' as const,
+  name: 'gi-docgen' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -32,15 +30,14 @@ export const gnomeorggidocgenPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/gi-docgen/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: gnome.org/gi-docgen' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnome.org/gi-docgen' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/gi-docgen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnome.org/gi-docgen' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -50,17 +47,10 @@ export const gnomeorggidocgenPackage = {
   dependencies: [
     'pkgx.sh^1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2025.3.0',
-    '2024.1.0',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/gi-docgen -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnome.org/gi-docgen' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/gi-docgen/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type GnomeorggidocgenPackage = typeof gnomeorggidocgenPackage
