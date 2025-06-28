@@ -3,7 +3,7 @@
  *
  * @domain `github.com/lu-zero/cargo-c`
  * @programs `cargo-capi`, `cargo-cbuild`, `cargo-cinstall`, `cargo-ctest`
- * @version `0.10.13` (25 versions available)
+ * @version `0.10.14` (26 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cargo-c`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "cargo-c"
  * console.log(pkg.description) // "Helper program to build and install c-like libr..."
  * console.log(pkg.programs)    // ["cargo-capi", "cargo-cbuild", ...]
- * console.log(pkg.versions[0]) // "0.10.13" (latest)
+ * console.log(pkg.versions[0]) // "0.10.14" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/lu-zero/cargo-c.md
@@ -75,6 +75,7 @@ export const cargocPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.10.14',
     '0.10.13',
     '0.10.12',
     '0.10.11',
