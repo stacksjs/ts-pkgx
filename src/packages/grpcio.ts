@@ -3,7 +3,7 @@
  *
  * @domain `grpc.io`
  * @programs `grpc_csharp_plugin`, `grpc_node_plugin`, `grpc_cpp_plugin`, `grpc_python_plugin`, `grpc_objective_c_plugin`, ... (+3 more)
- * @version `1.73.1` (47 versions available)
+ * @version `1.73.1` (48 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install grpc`
@@ -88,6 +88,7 @@ export const grpcPackage = {
     '1.72.2',
     '1.72.1',
     '1.72.0',
+    '1.71.2',
     '1.71.1',
     '1.71.0',
     '1.70.2',

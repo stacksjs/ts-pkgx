@@ -3,7 +3,7 @@
  *
  * @domain `buildpacks.io`
  * @programs `pack`
- * @version `0.38.1` (14 versions available)
+ * @version `0.38.2` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pack`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "pack"
  * console.log(pkg.description) // "CLI for building apps using Cloud Native Buildp..."
  * console.log(pkg.programs)    // ["pack"]
- * console.log(pkg.versions[0]) // "0.38.1" (latest)
+ * console.log(pkg.versions[0]) // "0.38.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/buildpacks-io.md
@@ -62,6 +62,7 @@ export const packPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.38.2',
     '0.38.1',
     '0.38.0',
     '0.37.0',
