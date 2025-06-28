@@ -3,7 +3,7 @@
  *
  * @domain `kubernetes.io/kustomize`
  * @programs `kustomize`
- * @version `5.6.0` (14 versions available)
+ * @version `5.7.0` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kustomize`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "kustomize"
  * console.log(pkg.description) // "Template-free customization of Kubernetes YAML ..."
  * console.log(pkg.programs)    // ["kustomize"]
- * console.log(pkg.versions[0]) // "5.6.0" (latest)
+ * console.log(pkg.versions[0]) // "5.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kubernetes-io/kustomize.md
@@ -69,6 +69,7 @@ export const kustomizePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '5.7.0',
     '5.6.0',
     '5.5.0',
     '5.4.3',
