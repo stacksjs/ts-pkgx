@@ -54,7 +54,7 @@ This package depends on:
 
 These packages work well with git-quick-stats:
 
-- [`gnu.org/coreutils`](../gnu.org/coreutils/index.md) - Package not available
+- [`gnu.org/coreutils`](../gnu.org/coreutils/index.md) - 
 
 ## Usage Examples
 

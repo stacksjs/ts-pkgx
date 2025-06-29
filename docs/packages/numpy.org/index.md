@@ -54,7 +54,7 @@ This package depends on:
 
 These packages work well with f2py:
 
-- [`gnu.org/gcc`](../gnu.org/gcc/index.md) - Package not available
+- [`gnu.org/gcc`](../gnu.org/gcc/index.md) - 
 
 ## Usage Examples
 

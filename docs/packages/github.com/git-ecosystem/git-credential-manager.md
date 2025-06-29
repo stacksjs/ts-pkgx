@@ -53,7 +53,7 @@ This package depends on:
 
 These packages work well with git-credential-manager:
 
-- [`git-scm.org`](../../git-scm.org/index.md) - Package not available
+- [`git-scm.org`](../../git-scm.org/index.md) - Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.
 
 ## Usage Examples
 

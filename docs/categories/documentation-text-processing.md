@@ -1,6 +1,6 @@
 # Documentation & Text Processing
 
-*5 packages in this category*
+*7 packages in this category*
 
 Packages related to documentation & text processing.
 
@@ -13,6 +13,16 @@ Packages related to documentation & text processing.
 **Programs**: asciidoctor
 
 **Install**: `launchpad install asciidoctor`
+
+---
+
+### [maaslalani.com/slides](../packages/maaslalani.com/slides/index.md) (slides)
+
+Terminal based presentation tool
+
+**Programs**: slides
+
+**Install**: `launchpad install slides`
 
 ---
 
@@ -33,6 +43,16 @@ Swiss-army knife of markup format conversion
 **Programs**: pandoc
 
 **Install**: `launchpad install pandoc`
+
+---
+
+### [sphinx-doc.org](../packages/sphinx-doc.org/index.md) (sphinx)
+
+Tool to create intelligent and beautiful documentation
+
+**Programs**: sphinx-apidoc, sphinx-autogen, sphinx-build, sphinx-quickstart
+
+**Install**: `launchpad install sphinx`
 
 ---
 

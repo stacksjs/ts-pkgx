@@ -65,7 +65,7 @@ This package depends on:
 
 These packages work well with rust:
 
-- [`rust-lang.org/cargo`](cargo/index.md) - Package not available
+- [`rust-lang.org/cargo`](cargo/index.md) - The Rust package manager
 
 ## Usage Examples
 

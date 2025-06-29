@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-06-28T23:28:32.965Z
+- **Last Updated**: 2025-06-29T01:57:51.231Z
 
 ## Table of Contents
 
@@ -26,18 +26,18 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [Networking](#networking) (9 packages)
 - [Security & Cryptography](#security-cryptography) (12 packages)
 - [Multimedia](#multimedia) (7 packages)
-- [Graphics Libraries](#graphics-libraries) (2 packages)
+- [Graphics Libraries](#graphics-libraries) (3 packages)
 - [Gaming & Game Development](#gaming-game-development) (1 packages)
-- [Cloud Platforms](#cloud-platforms) (5 packages)
+- [Cloud Platforms](#cloud-platforms) (8 packages)
 - [Mobile Development](#mobile-development) (4 packages)
 - [Testing](#testing) (1 packages)
 - [Cryptocurrency](#cryptocurrency) (5 packages)
 - [Financial Tools](#financial-tools) (1 packages)
-- [Documentation & Text Processing](#documentation-text-processing) (5 packages)
+- [Documentation & Text Processing](#documentation-text-processing) (7 packages)
 - [System Administration](#system-administration) (5 packages)
 - [Scientific Computing](#scientific-computing) (2 packages)
 - [Embedded & IoT](#embedded-iot) (1 packages)
-- [Version Control](#version-control) (0 packages)
+- [Version Control](#version-control) (1 packages)
 - [Other Utilities](#other-utilities) (0 packages)
 
 ## Programming Languages
@@ -344,12 +344,13 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Graphics Libraries
 
-*2 packages in this category*
+*3 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[cairographics.org](./packages/cairographics.org/index.md)** () | Vector graphics library with cross-device output support | cairo-trace | 1.18.4 (+3) | `pkgx cairo-trace` |
 | **[libsdl.org](./packages/libsdl.org/index.md)** () | Simple Directmedia Layer | - | 3.2.16 (+33) | `pkgx libsdl.org` |
+| **[libsdl.org/SDL_image](./packages/libsdl.org/SDL_image/index.md)** () | Image decoding for many popular formats for Simple Directmedia Layer. | - | 3.2.4 (+12) | `pkgx libsdl.org/SDL_image` |
 
 ## Gaming & Game Development
 
@@ -361,15 +362,18 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Cloud Platforms
 
-*5 packages in this category*
+*8 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
+| **[aws.amazon.com/sam](./packages/aws.amazon.com/sam/index.md)** () | CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM | sam | 1.141.0 (+30) | `pkgx sam` |
 | **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.145 (+402) | `pkgx fly` |
 | **[heroku.com](./packages/heroku.com/index.md)** () | CLI for Heroku | heroku | 10.11.0 (+33) | `pkgx heroku` |
+| **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.5.0 (+21) | `pkgx localstack` |
 | **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.246.0 (+69) | `pkgx pscale` |
 | **[railway.app](./packages/railway.app/index.md)** () | Develop and deploy code with zero configuration | railway | 4.5.4 (+51) | `pkgx railway` |
 | **[render.com](./packages/render.com/index.md)** () | Command-line interface for Render | render | 0.1.11 (+5) | `pkgx render` |
+| **[supabase.com/cli](./packages/supabase.com/cli/index.md)** () | Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres b... | supabase | 2.26.9 (+175) | `pkgx supabase` |
 
 ## Mobile Development
 
@@ -412,13 +416,15 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Documentation & Text Processing
 
-*5 packages in this category*
+*7 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[asciidoctor.org](./packages/asciidoctor.org/index.md)** () | :gem: A fast, open source text processor and publishing toolchain, written in Ruby, for convertin... | asciidoctor | 2.0.23 (+5) | `pkgx asciidoctor` |
+| **[maaslalani.com/slides](./packages/maaslalani.com/slides/index.md)** () | Terminal based presentation tool | slides | 0.9.0 (+0) | `pkgx slides` |
 | **[mkdocs.org](./packages/mkdocs.org/index.md)** () | Project documentation with Markdown. | mkdocs | 1.6.1 (+2) | `pkgx mkdocs` |
 | **[pandoc.org](./packages/pandoc.org/index.md)** () | Swiss-army knife of markup format conversion | pandoc | 3.7.0.2 (+30) | `pkgx pandoc` |
+| **[sphinx-doc.org](./packages/sphinx-doc.org/index.md)** () | Tool to create intelligent and beautiful documentation | sphinx-apidoc, sphinx-autogen, sphinx-build, ... (+1) | 8.2.3 (+41) | `pkgx sphinx` |
 | **[tectonic-typesetting.github.io](./packages/tectonic-typesetting.github.io/index.md)** () | A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive. | tectonic | 0.15.0 (+5) | `pkgx tectonic` |
 | **[typst.app](./packages/typst.app/index.md)** () | A new markup-based typesetting system that is powerful and easy to learn. | typst | 0.13.1 (+13) | `pkgx typst` |
 
@@ -450,6 +456,14 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[qemu.org](./packages/qemu.org/index.md)** () | Generic machine emulator and virtualizer | qemu-img, qemu-edid, qemu-io, ... (+31) | 10.0.2 (+50) | `pkgx qemu` |
+
+## Version Control
+
+*1 packages in this category*
+
+| Package | Description | Programs | Versions | Install |
+|---------|-------------|----------|----------|----------|
+| **[cli.github.com](./packages/cli.github.com/index.md)** () | GitHub’s official command line tool | gh | 2.74.2 (+77) | `pkgx gh` |
 
 ## Usage Examples
 

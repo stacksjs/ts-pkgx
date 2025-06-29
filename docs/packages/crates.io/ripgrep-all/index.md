@@ -47,8 +47,8 @@ sh <(curl https://pkgx.sh) +crates.io/ripgrep-all@0.10.9 -- $SHELL -i
 
 These packages work well with rga:
 
-- [`crates.io/ripgrep`](../ripgrep/index.md) - Package not available
-- [`github.com/junegunn/fzf`](../../github.com/junegunn/fzf.md) - Package not available
+- [`crates.io/ripgrep`](../ripgrep/index.md) - ripgrep recursively searches directories for a regex pattern while respecting your gitignore
+- [`github.com/junegunn/fzf`](../../github.com/junegunn/fzf.md) - :cherry_blossom: A command-line fuzzy finder
 
 ## Usage Examples
 

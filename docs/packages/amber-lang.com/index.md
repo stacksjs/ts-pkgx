@@ -45,11 +45,11 @@ sh <(curl https://pkgx.sh) amber -- $SHELL -i
 
 These packages work well with amber:
 
-- [`gnu.org/bc`](../gnu.org/bc/index.md) - Package not available
-- [`gnu.org/sed`](../gnu.org/sed/index.md) - Package not available
-- [`gnu.org/coreutils`](../gnu.org/coreutils/index.md) - Package not available
-- [`gnu.org/gawk`](../gnu.org/gawk/index.md) - Package not available
-- [`gnu.org/bash`](../gnu.org/bash/index.md) - Package not available
+- [`gnu.org/bc`](../gnu.org/bc/index.md) - 
+- [`gnu.org/sed`](../gnu.org/sed/index.md) - 
+- [`gnu.org/coreutils`](../gnu.org/coreutils/index.md) - 
+- [`gnu.org/gawk`](../gnu.org/gawk/index.md) - 
+- [`gnu.org/bash`](../gnu.org/bash/index.md) - Bourne-Again SHell, a UNIX command interpreter
 
 ## Usage Examples
 

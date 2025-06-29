@@ -50,7 +50,7 @@ This package depends on:
 
 These packages work well with bindgen:
 
-- [`rust-lang.org`](../index.md) - Package not available
+- [`rust-lang.org`](../index.md) - Empowering everyone to build reliable and efficient software.
 
 ## Usage Examples
 

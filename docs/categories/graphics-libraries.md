@@ -1,6 +1,6 @@
 # Graphics Libraries
 
-*2 packages in this category*
+*3 packages in this category*
 
 Packages related to graphics libraries.
 
@@ -23,6 +23,16 @@ Simple Directmedia Layer
 **Programs**: None specified
 
 **Install**: `launchpad install libsdl.org`
+
+---
+
+### [libsdl.org/SDL_image](../packages/libsdl.org/SDL_image/index.md)
+
+Image decoding for many popular formats for Simple Directmedia Layer.
+
+**Programs**: None specified
+
+**Install**: `launchpad install libsdl.org/SDL_image`
 
 ---
 

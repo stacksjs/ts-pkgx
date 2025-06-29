@@ -44,7 +44,7 @@ sh <(curl https://pkgx.sh) rye-uv -- $SHELL -i
 
 These packages work well with rye-uv:
 
-- [`astral.sh/uv`](../../astral.sh/uv/index.md) - Package not available
+- [`astral.sh/uv`](../../astral.sh/uv/index.md) - An extremely fast Python package and project manager, written in Rust.
 
 ## Usage Examples
 

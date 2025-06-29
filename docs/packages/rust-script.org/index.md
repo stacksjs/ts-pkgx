@@ -44,8 +44,8 @@ sh <(curl https://pkgx.sh) rust-script -- $SHELL -i
 
 These packages work well with rust-script:
 
-- [`rust-lang.org`](../rust-lang.org/index.md) - Package not available
-- [`rust-lang.org/cargo`](../rust-lang.org/cargo/index.md) - Package not available
+- [`rust-lang.org`](../rust-lang.org/index.md) - Empowering everyone to build reliable and efficient software.
+- [`rust-lang.org/cargo`](../rust-lang.org/cargo/index.md) - The Rust package manager
 
 ## Usage Examples
 
