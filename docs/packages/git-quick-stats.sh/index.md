@@ -25,15 +25,15 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 13 versions</summary>
+<summary>Show all 14 versions</summary>
 
-- `2.6.2`, `2.6.1`, `2.6.0`, `2.5.8`, `2.5.7`
-- `2.5.6`, `2.5.5`, `2.5.4`, `2.5.3`, `2.5.2`
-- `2.5.1`, `2.5.0`, `2.4.1`
+- `2.7.0`, `2.6.2`, `2.6.1`, `2.6.0`, `2.5.8`
+- `2.5.7`, `2.5.6`, `2.5.5`, `2.5.4`, `2.5.3`
+- `2.5.2`, `2.5.1`, `2.5.0`, `2.4.1`
 
 </details>
 
-**Latest Version**: `2.6.2`
+**Latest Version**: `2.7.0`
 
 ### Install Specific Version
 
@@ -55,6 +55,7 @@ This package depends on:
 These packages work well with git-quick-stats:
 
 - [`gnu.org/coreutils`](../gnu.org/coreutils/index.md)
+- [`invisible-island.net/ncurses`](../invisible-island.net/ncurses/index.md) - Text-based UI library
 
 ## Usage Examples
 
