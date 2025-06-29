@@ -1504,6 +1504,16 @@ export async function generateAliases(packagesDir?: string): Promise<string> {
 }
 
 /**
+ * Clean up trailing spaces from generated content to avoid lint errors
+ */
+function cleanTrailingSpaces(content: string): string {
+  return content
+    .split('\n')
+    .map(line => line.trimEnd())
+    .join('\n')
+}
+
+/**
  * Check if a package domain is valid and not a reserved keyword
  */
 function isValidPackageDomain(domain: string): boolean {
@@ -2058,7 +2068,7 @@ Each package includes:
 To add or update packages, see the pkgx [contribution guide](https://docs.pkgx.sh/appendix/packaging/pantry).
 `
 
-  await fs.promises.writeFile(catalogPath, content)
+  await fs.promises.writeFile(catalogPath, cleanTrailingSpaces(content))
   return catalogPath
 }
 
@@ -2241,7 +2251,7 @@ async function generatePackagePages(outputDir: string, sourcePackagesDir?: strin
 
       let content = `# ${resolvedName}
 
->${resolvedDescription ? ` ${resolvedDescription}` : ''}
+${resolvedDescription ? `> ${resolvedDescription}` : ''}
 
 ## Package Information
 
@@ -2354,7 +2364,13 @@ These packages work well with ${pkg.name || domain}:
               const companionLinkPath = path.relative(path.dirname(filepath), companionFilePath)
                 .replace(/\\/g, '/') // Normalize path separators for web
 
-              content += `- [\`${companion}\`](${companionLinkPath}) - ${companionPkg.description}\n`
+              const description = companionPkg.description?.trim()
+              if (description) {
+                content += `- [\`${companion}\`](${companionLinkPath}) - ${description}\n`
+              }
+              else {
+                content += `- [\`${companion}\`](${companionLinkPath})\n`
+              }
             }
             else {
               // For excluded or missing packages, still create a proper markdown link
@@ -2363,8 +2379,13 @@ These packages work well with ${pkg.name || domain}:
               const companionLinkPath = path.relative(path.dirname(filepath), companionFilePath)
                 .replace(/\\/g, '/') // Normalize path separators for web
 
-              const description = companionPkg ? companionPkg.description : 'Package not available'
-              content += `- [\`${companion}\`](${companionLinkPath}) - ${description}\n`
+              const description = companionPkg?.description?.trim() || 'Package not available'
+              if (description && description !== 'Package not available') {
+                content += `- [\`${companion}\`](${companionLinkPath}) - ${description}\n`
+              }
+              else {
+                content += `- [\`${companion}\`](${companionLinkPath})\n`
+              }
             }
           })
         }
@@ -2406,7 +2427,7 @@ console.log(\`Programs: \${pkg.programs.join(', ')}\`)
 *This documentation was auto-generated from package data.*
 `
 
-      await fs.promises.writeFile(filepath, content)
+      await fs.promises.writeFile(filepath, cleanTrailingSpaces(content))
       generatedFiles.push(filepath)
     }
     catch (error) {
@@ -2603,11 +2624,9 @@ ${categoryName === 'Programming Languages'
       }
 
       content += `### [${domain}](${packageLinkPath})${nameAndAliases}
-${resolvedDescription
-  ? `
-${resolvedDescription}
-`
-  : ''}
+
+${resolvedDescription ? `${resolvedDescription}` : ''}
+
 **Programs**: ${pkg.programs && pkg.programs.length > 0 ? pkg.programs.map((p: string) => resolveTemplateVars(p)).join(', ') : 'None specified'}
 
 **Install**: \`${generateInstallCommand(pkg)}\`
@@ -2620,7 +2639,7 @@ ${resolvedDescription}
     content += `[← Back to Package Catalog](../package-catalog.md)
 `
 
-    await fs.promises.writeFile(filepath, content)
+    await fs.promises.writeFile(filepath, cleanTrailingSpaces(content))
     generatedFiles.push(filepath)
   }
 
