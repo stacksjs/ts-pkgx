@@ -1,28 +1,38 @@
 /**
- * **tmate.io** - Package from pantry: tmate.io
+ * **tmate** - Instant Terminal Sharing
  *
  * @domain `tmate.io`
+ * @programs `tmate`
+ * @version `2.4.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install tmate.io`
+ * @install `launchpad install tmate`
+ * @name `tmate`
  * @dependencies `libevent.org^2.0`, `invisible-island.net/ncurses@6`, `msgpack.org@6`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.tmateio
- * console.log(pkg.name)        // "tmate.io"
- * console.log(pkg.description) // "Package from pantry: tmate.io"
+ * // Access the package
+ * const pkg = pantry.tmate
+ * // Or access via domain
+ * const samePkg = pantry.tmateio
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "tmate"
+ * console.log(pkg.description) // "Instant Terminal Sharing"
+ * console.log(pkg.programs)    // ["tmate"]
+ * console.log(pkg.versions[0]) // "2.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tmate-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tmateioPackage = {
+export const tmatePackage = {
   /**
    * The display name of this package.
    */
-  name: 'tmate.io' as const,
+  name: 'tmate' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +40,22 @@ export const tmateioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: tmate.io' as const,
+  description: 'Instant Terminal Sharing' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tmate.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tmate.io' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tmate.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tmate.io' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install tmate' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'tmate',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -50,10 +67,20 @@ export const tmateioPackage = {
     'msgpack.org@6',
     'libssh.org@0',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tmate.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.4.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tmate -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tmate' as const,
 }
 
-export type TmateioPackage = typeof tmateioPackage
+export type TmatePackage = typeof tmatePackage

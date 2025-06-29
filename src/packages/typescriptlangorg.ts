@@ -1,28 +1,38 @@
 /**
- * **typescriptlang.org** - Package from pantry: typescriptlang.org
+ * **tsc** - TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
  *
  * @domain `typescriptlang.org`
+ * @programs `tsc`
+ * @version `5.8.3` (13 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install typescriptlang.org`
+ * @install `launchpad install tsc`
+ * @name `tsc`
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.typescriptlangorg
- * console.log(pkg.name)        // "typescriptlang.org"
- * console.log(pkg.description) // "Package from pantry: typescriptlang.org"
+ * // Access the package
+ * const pkg = pantry.tsc
+ * // Or access via domain
+ * const samePkg = pantry.typescriptlangorg
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "tsc"
+ * console.log(pkg.description) // "TypeScript is a superset of JavaScript that com..."
+ * console.log(pkg.programs)    // ["tsc"]
+ * console.log(pkg.versions[0]) // "5.8.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/typescriptlang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const typescriptlangorgPackage = {
+export const tscPackage = {
   /**
    * The display name of this package.
    */
-  name: 'typescriptlang.org' as const,
+  name: 'tsc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +40,22 @@ export const typescriptlangorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: typescriptlang.org' as const,
+  description: 'TypeScript is a superset of JavaScript that compiles to clean JavaScript output.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/typescriptlang.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install typescriptlang.org' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +typescriptlang.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install typescriptlang.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install tsc' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'tsc',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,32 @@ export const typescriptlangorgPackage = {
   dependencies: [
     'nodejs.org^20',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/typescriptlang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '5.8.3',
+    '5.8.2',
+    '5.7.3',
+    '5.7.2',
+    '5.6.3',
+    '5.6.2',
+    '5.5.4',
+    '5.5.3',
+    '5.5.2',
+    '5.4.5',
+    '5.4.4',
+    '5.4.3',
+    '5.4.2',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tsc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tsc' as const,
 }
 
-export type TypescriptlangorgPackage = typeof typescriptlangorgPackage
+export type TscPackage = typeof tscPackage
