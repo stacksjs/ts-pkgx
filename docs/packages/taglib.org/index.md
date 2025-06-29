@@ -1,11 +1,11 @@
-# taglib-config
+# taglib.org
 
-> TagLib Audio Meta-Data Library
+> Package from pantry: taglib.org
 
 ## Package Information
 
 - **Domain**: `taglib.org`
-- **Name**: `taglib-config`
+- **Name**: `taglib.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/taglib.org/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install taglib-config
+launchpad install taglib.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `taglib-config`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `2.1.0`, `2.0.2`, `2.0.1`, `2.0.0`, `1.13.1`
-
-</details>
-
-**Latest Version**: `2.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) taglib-config -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -53,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['taglib-config']
+const pkg = pantry['taglib.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

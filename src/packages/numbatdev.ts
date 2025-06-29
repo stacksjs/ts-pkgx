@@ -1,37 +1,27 @@
 /**
- * **numbat** - A statically typed programming language for scientific computations with first class support for physical dimensions and units
+ * **numbat.dev** - Package from pantry: numbat.dev
  *
  * @domain `numbat.dev`
- * @programs `numbat`
- * @version `1.16.0` (10 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install numbat`
- * @name `numbat`
+ * @install `launchpad install numbat.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.numbat
- * // Or access via domain
- * const samePkg = pantry.numbatdev
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "numbat"
- * console.log(pkg.description) // "A statically typed programming language for sci..."
- * console.log(pkg.programs)    // ["numbat"]
- * console.log(pkg.versions[0]) // "1.16.0" (latest)
+ * const pkg = pantry.numbatdev
+ * console.log(pkg.name)        // "numbat.dev"
+ * console.log(pkg.description) // "Package from pantry: numbat.dev"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/numbat-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const numbatPackage = {
+export const numbatdevPackage = {
   /**
    * The display name of this package.
    */
-  name: 'numbat' as const,
+  name: 'numbat.dev' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,47 +29,21 @@ export const numbatPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A statically typed programming language for scientific computations with first class support for physical dimensions and units' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/numbat.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: numbat.dev' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install numbat' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'numbat',
-  ] as const,
+  installCommand: 'launchpad install numbat.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +numbat.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install numbat.dev' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.16.0',
-    '1.15.0',
-    '1.14.0',
-    '1.13.0',
-    '1.12.0',
-    '1.11.0',
-    '1.10.1',
-    '1.10.0',
-    '1.9.0',
-    '1.8.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) numbat -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install numbat' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/numbat.dev/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type NumbatPackage = typeof numbatPackage
+export type NumbatdevPackage = typeof numbatdevPackage

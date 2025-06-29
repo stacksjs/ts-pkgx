@@ -1,6 +1,6 @@
 # zx
 
-> A tool for writing better scripts
+> Package from pantry: google.com/zx
 
 ## Package Information
 
@@ -13,38 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install zx
+launchpad install google.com/zx
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `zx`
-
-## Available Versions
-
-<details>
-<summary>Show all 31 versions</summary>
-
-- `8.6.0`, `8.5.5`, `8.5.4`, `8.5.3`, `8.5.2`
-- `8.5.0`, `8.4.1`, `8.4.0`, `8.3.2`, `8.3.1`
-- `8.3.0`, `8.2.4`, `8.2.3`, `8.2.2`, `8.2.1`
-- `8.2.0`, `8.1.9`, `8.1.8`, `8.1.7`, `8.1.6`
-- `8.1.5`, `8.1.4`, `8.1.3`, `8.1.2`, `8.1.1`
-- `8.1.0`, `8.0.2`, `8.0.1`, `8.0.0`, `7.2.4`
-- `7.2.3`
-
-</details>
-
-**Latest Version**: `8.6.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) zx -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

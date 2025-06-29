@@ -1,6 +1,6 @@
 # gitsign
 
-> Keyless Git signing using Sigstore
+> Package from pantry: sigstore.dev/gitsign
 
 ## Package Information
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gitsign
+launchpad install sigstore.dev/gitsign
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gitsign`
-- `gitsign-credential-cache`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `0.13.0`, `0.12.0`, `0.11.0`, `0.10.2`, `0.10.1`
-- `0.10.0`, `0.9.0`, `0.8.1`, `0.8.0`, `0.7.1`
-
-</details>
-
-**Latest Version**: `0.13.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +sigstore.dev/gitsign@0.13.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

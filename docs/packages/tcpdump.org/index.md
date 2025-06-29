@@ -1,11 +1,11 @@
-# pcap-config
+# tcpdump.org
 
-> the LIBpcap interface to various kernel packet capture mechanism
+> Package from pantry: tcpdump.org
 
 ## Package Information
 
 - **Domain**: `tcpdump.org`
-- **Name**: `pcap-config`
+- **Name**: `tcpdump.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tcpdump.org/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install pcap-config
+launchpad install tcpdump.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pcap-config`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.10.5`, `1.10.4`
-
-</details>
-
-**Latest Version**: `1.10.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) pcap-config -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) pcap-config -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pcap-config']
+const pkg = pantry['tcpdump.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
