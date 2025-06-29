@@ -57,6 +57,7 @@ sh <(curl https://pkgx.sh) mailpit -- $SHELL -i
 
 This package depends on:
 
+- `linuxcurl.se/ca-certs`
 - `curl.se/ca-certs`
 
 ## Usage Examples

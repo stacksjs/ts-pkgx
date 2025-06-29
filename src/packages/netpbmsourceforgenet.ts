@@ -3,7 +3,7 @@
  *
  * @domain `netpbm.sourceforge.net`
  * @programs `411toppm`, `asciitopgm`, `atktopbm`, `avstopam`, `bioradtopgm`, ... (+310 more)
- * @version `10.86.46` (10 versions available)
+ * @version `10.86.47` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install netpbm.sourceforge.net`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "netpbm.sourceforge.net"
  * console.log(pkg.description) // "Image manipulation"
  * console.log(pkg.programs)    // ["411toppm", "asciitopgm", ...]
- * console.log(pkg.versions[0]) // "10.86.46" (latest)
+ * console.log(pkg.versions[0]) // "10.86.47" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/netpbm-sourceforge-net.md
@@ -383,6 +383,7 @@ export const netpbmsourceforgenetPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '10.86.47',
     '10.86.46',
     '10.86.45',
     '10.86.44',

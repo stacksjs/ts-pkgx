@@ -339,20 +339,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 10 versions</summary>
+<summary>Show all 11 versions</summary>
 
-- `10.86.46`, `10.86.45`, `10.86.44`, `10.86.43`, `10.86.42`
-- `10.86.41`, `10.86.40`, `10.86.39`, `10.86.38`, `10.73.43`
+- `10.86.47`, `10.86.46`, `10.86.45`, `10.86.44`, `10.86.43`
+- `10.86.42`, `10.86.41`, `10.86.40`, `10.86.39`, `10.86.38`
+- `10.73.43`
 
 </details>
 
-**Latest Version**: `10.86.46`
+**Latest Version**: `10.86.47`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +netpbm.sourceforge.net@10.86.46 -- $SHELL -i
+sh <(curl https://pkgx.sh) +netpbm.sourceforge.net@10.86.47 -- $SHELL -i
 ```
 
 ## Dependencies

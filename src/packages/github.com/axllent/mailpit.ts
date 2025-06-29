@@ -8,7 +8,7 @@
  *
  * @install `launchpad install mailpit`
  * @name `mailpit`
- * @dependencies `curl.se/ca-certs`
+ * @dependencies `linuxcurl.se/ca-certs`, `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -62,6 +62,7 @@ export const mailpitPackage = {
    * These will be automatically installed.
    */
   dependencies: [
+    'linuxcurl.se/ca-certs',
     'curl.se/ca-certs',
   ] as const,
   /**
