@@ -1,6 +1,6 @@
 # Networking
 
-*9 packages in this category*
+*8 packages in this category*
 
 Network tools, protocols, and communication software.
 
@@ -83,16 +83,6 @@ An open source utility that provides fast incremental file transfer. It also has
 **Programs**: rsync, rsync-ssl
 
 **Install**: `launchpad install rsync`
-
----
-
-### [traefik.io](../packages/traefik.io/index.md) (traefik)
-
-The Cloud Native Application Proxy
-
-**Programs**: traefik
-
-**Install**: `launchpad install traefik`
 
 ---
 

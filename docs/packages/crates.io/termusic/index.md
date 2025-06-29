@@ -52,7 +52,7 @@ This package depends on:
 
 These packages work well with termusic:
 
-- [`yt-dlp.org`](../../yt-dlp.org/index.md) - A feature-rich command-line audio/video downloader
+- [`yt-dlp.org`](../../yt-dlp.org/index.md) - Package from pantry: yt-dlp.org
 
 ## Usage Examples
 

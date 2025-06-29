@@ -66,13 +66,13 @@ A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and Te
 
 ---
 
-### [typst.app](../packages/typst.app/index.md) (typst)
+### [typst.app](../packages/typst.app/index.md)
 
-A new markup-based typesetting system that is powerful and easy to learn.
+Package from pantry: typst.app
 
-**Programs**: typst
+**Programs**: None specified
 
-**Install**: `launchpad install typst`
+**Install**: `launchpad install typst.app`
 
 ---
 

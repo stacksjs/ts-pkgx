@@ -1,6 +1,6 @@
 # gdown
 
-> Google Drive Public File Downloader when Curl/Wget Fails
+> Package from pantry: wkentaro.github.io/gdown
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gdown
+launchpad install wkentaro.github.io/gdown
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gdown`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `5.2.0`, `5.1.0`, `5.0.1`, `5.0.0`, `4.7.3`
-- `4.7.2`, `4.7.1`
-
-</details>
-
-**Latest Version**: `5.2.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) gdown -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
