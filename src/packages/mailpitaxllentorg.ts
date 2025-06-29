@@ -8,6 +8,7 @@
  *
  * @install `launchpad install mailpit`
  * @name `mailpit`
+ * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -56,7 +57,13 @@ export const mailpitPackage = {
     'mailpit',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'curl.se/ca-certs',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

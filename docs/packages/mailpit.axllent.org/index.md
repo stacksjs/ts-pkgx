@@ -53,6 +53,12 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) mailpit -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `curl.se/ca-certs`
+
 ## Usage Examples
 
 ```typescript
