@@ -1,11 +1,11 @@
-# cups
+# openprinting.github.io/cups
 
-> Package from pantry: openprinting.github.io/cups
+> Common UNIX Printing System
 
 ## Package Information
 
 - **Domain**: `openprinting.github.io/cups`
-- **Name**: `cups`
+- **Name**: `openprinting.github.io/cups`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openprinting.github.io/cups/package.yml)
 
@@ -20,7 +20,28 @@ launchpad install openprinting.github.io/cups
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cups-config`
+- `ippeveprinter`
+- `ipptool`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `2.4.12`, `2.4.11`, `2.4.10`, `2.4.9`, `2.4.8`
+- `2.4.7`, `2.4.6`
+
+</details>
+
+**Latest Version**: `2.4.12`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +openprinting.github.io/cups@2.4.12 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -36,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cups
+const pkg = pantry['openprinting.github.io/cups']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

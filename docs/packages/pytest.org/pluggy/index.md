@@ -1,11 +1,11 @@
-# pluggy
+# pytest.org/pluggy
 
-> Package from pantry: pytest.org/pluggy
+> A minimalist production ready plugin system
 
 ## Package Information
 
 - **Domain**: `pytest.org/pluggy`
-- **Name**: `pluggy`
+- **Name**: `pytest.org/pluggy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pytest.org/pluggy/package.yml)
 
@@ -22,6 +22,24 @@ This package provides the following executable programs:
 
 *No programs specified*
 
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.6.0`, `1.5.0`, `1.4.0`
+
+</details>
+
+**Latest Version**: `1.6.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +pytest.org/pluggy@1.6.0 -- $SHELL -i
+```
+
 ## Dependencies
 
 This package depends on:
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.pluggy
+const pkg = pantry['pytest.org/pluggy']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

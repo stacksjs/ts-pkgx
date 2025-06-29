@@ -1,6 +1,6 @@
 # libpng.org
 
-> Package from pantry: libpng.org
+> LIBPNG: Portable Network Graphics support, official libpng repository
 
 ## Package Information
 
@@ -20,7 +20,30 @@ launchpad install libpng.org
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `libpng-config`
+- `libpng16-config`
+- `png-fix-itxt`
+- `pngfix`
+
+## Available Versions
+
+<details>
+<summary>Show all 12 versions</summary>
+
+- `1.6.49`, `1.6.48`, `1.6.47`, `1.6.46`, `1.6.45`
+- `1.6.44`, `1.6.43`, `1.6.42`, `1.6.41`, `1.6.40`
+- `1.6.39`, `1.6.35`
+
+</details>
+
+**Latest Version**: `1.6.49`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libpng.org@1.6.49 -- $SHELL -i
+```
 
 ## Dependencies
 

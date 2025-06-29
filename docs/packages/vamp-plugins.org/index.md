@@ -1,11 +1,11 @@
-# vamp-plugins.org
+# vamp
 
-> Package from pantry: vamp-plugins.org
+> Audio processing plugin system sdk
 
 ## Package Information
 
 - **Domain**: `vamp-plugins.org`
-- **Name**: `vamp-plugins.org`
+- **Name**: `vamp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vamp-plugins.org/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install vamp-plugins.org
+launchpad install vamp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `vamp-simple-host`
+- `vamp-rdf-template-generator`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `2.10.0`, `2.9.0`
+
+</details>
+
+**Latest Version**: `2.10.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +vamp-plugins.org@2.10.0 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -36,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['vamp-plugins.org']
+const pkg = pantry.vamp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

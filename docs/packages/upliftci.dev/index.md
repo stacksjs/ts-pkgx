@@ -1,11 +1,11 @@
-# upliftci.dev
+# uplift
 
-> Package from pantry: upliftci.dev
+> Semantic versioning the easy way. Powered by Conventional Commits. Built for use with CI.
 
 ## Package Information
 
 - **Domain**: `upliftci.dev`
-- **Name**: `upliftci.dev`
+- **Name**: `uplift`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/upliftci.dev/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install upliftci.dev
+launchpad install uplift
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `uplift`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `2.25.0`, `2.24.1`, `2.24.0`, `2.23.0`, `2.22.0`
+
+</details>
+
+**Latest Version**: `2.25.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) uplift -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['upliftci.dev']
+const pkg = pantry.uplift
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
