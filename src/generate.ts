@@ -109,7 +109,10 @@ async function importPantry(packagesDir?: string): Promise<Record<string, PkgxPa
         const filePath = path.isAbsolute(file) ? file : path.join(targetPackagesDir, file)
         const content = fs.readFileSync(filePath, 'utf-8')
         const moduleName = path.basename(file, '.ts')
-        const domain = guessOriginalDomain(moduleName)
+
+        // Extract the actual domain from the file content instead of guessing from filename
+        const domainMatch = content.match(/domain:\s*['"]([^'"]*)['"]\s*as const/)
+        const domain = domainMatch ? domainMatch[1] : guessOriginalDomain(moduleName)
         const domainVarName = convertDomainToVarName(domain)
 
         // Extract package data from the file content
@@ -136,8 +139,12 @@ async function importPantry(packagesDir?: string): Promise<Record<string, PkgxPa
 /**
  * Extract package data from a TypeScript package file content
  */
-function extractPackageDataFromFile(content: string, domain: string): PkgxPackage | null {
+function extractPackageDataFromFile(content: string, fallbackDomain: string): PkgxPackage | null {
   try {
+    // Extract the actual domain from the file content
+    const domainMatch = content.match(/domain:\s*['"]([^'"]*)['"]\s*as const/)
+    const domain = domainMatch ? domainMatch[1] : fallbackDomain
+
     // Extract the package object from the file
     const packageMatch = content.match(/export const \w+Package = \{([\s\S]*?)\}/)
     if (!packageMatch) {
@@ -225,7 +232,7 @@ function extractPackageDataFromFile(content: string, domain: string): PkgxPackag
     }
   }
   catch (error) {
-    console.error(`Error extracting package data for ${domain}:`, error)
+    console.error(`Error extracting package data for ${fallbackDomain}:`, error)
     return null
   }
 }
@@ -1150,7 +1157,7 @@ export const packages: Packages = pantry
 
           // Add domain-based property for ALL packages (convert domain to valid property name)
           if (domain) {
-            const baseDomainPropertyName = domain.replace(/[^a-z0-9]/gi, '_')
+            const baseDomainPropertyName = convertDomainToVarName(domain)
             // Only add if it's different from the existing property name
             if (baseDomainPropertyName !== propertyName) {
               // Create unique domain property name to avoid collisions
