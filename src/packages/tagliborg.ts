@@ -3,7 +3,7 @@
  *
  * @domain `taglib.org`
  * @programs `taglib-config`
- * @version `2.1.0` (5 versions available)
+ * @version `2.1.1` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install taglib-config`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "taglib-config"
  * console.log(pkg.description) // "TagLib Audio Meta-Data Library"
  * console.log(pkg.programs)    // ["taglib-config"]
- * console.log(pkg.versions[0]) // "2.1.0" (latest)
+ * console.log(pkg.versions[0]) // "2.1.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/taglib-org.md
@@ -70,6 +70,7 @@ export const taglibconfigPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.1.1',
     '2.1.0',
     '2.0.2',
     '2.0.1',
