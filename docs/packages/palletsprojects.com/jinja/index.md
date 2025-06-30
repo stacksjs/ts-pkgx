@@ -1,11 +1,11 @@
-# python-jinja
+# jinja
 
-> A very fast and expressive template engine.
+> Package from pantry: palletsprojects.com/jinja
 
 ## Package Information
 
 - **Domain**: `palletsprojects.com/jinja`
-- **Name**: `python-jinja`
+- **Name**: `jinja`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/palletsprojects.com/jinja/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install python-jinja
+launchpad install palletsprojects.com/jinja
 ```
 
 ## Programs
@@ -21,24 +21,6 @@ launchpad install python-jinja
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `3.1.6`, `3.1.5`, `3.1.4`, `3.1.3`
-
-</details>
-
-**Latest Version**: `3.1.6`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +palletsprojects.com/jinja@3.1.6 -- $SHELL -i
-```
 
 ## Dependencies
 
@@ -53,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['python-jinja']
+const pkg = pantry.jinja
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

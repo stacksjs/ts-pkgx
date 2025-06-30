@@ -1,34 +1,24 @@
 /**
- * **hexedit** - View and edit files in hexadecimal or in ASCII
+ * **hexedit** - Package from pantry: rigaux.org/hexedit
  *
  * @domain `rigaux.org/hexedit`
- * @programs `hexedit`
- * @version `1.6.0` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install hexedit`
- * @name `hexedit`
+ * @install `launchpad install rigaux.org/hexedit`
  * @dependencies `invisible-island.net/ncurses@6`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.hexedit
- * // Or access via domain
- * const samePkg = pantry.rigauxorghexedit
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.rigauxorghexedit
  * console.log(pkg.name)        // "hexedit"
- * console.log(pkg.description) // "View and edit files in hexadecimal or in ASCII"
- * console.log(pkg.programs)    // ["hexedit"]
- * console.log(pkg.versions[0]) // "1.6.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: rigaux.org/hexedit"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rigaux-org/hexedit.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const hexeditPackage = {
+export const rigauxorghexeditPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const hexeditPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'View and edit files in hexadecimal or in ASCII' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rigaux.org/hexedit/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: rigaux.org/hexedit' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install hexedit' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'hexedit',
-  ] as const,
+  installCommand: 'launchpad install rigaux.org/hexedit' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rigaux.org/hexedit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rigaux.org/hexedit' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,20 +47,10 @@ export const hexeditPackage = {
   dependencies: [
     'invisible-island.net/ncurses@6',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.6.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hexedit -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install hexedit' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rigaux.org/hexedit/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type HexeditPackage = typeof hexeditPackage
+export type RigauxorghexeditPackage = typeof rigauxorghexeditPackage

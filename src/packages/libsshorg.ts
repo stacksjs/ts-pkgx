@@ -1,9 +1,7 @@
 /**
- * **libssh.org** - pkgx package
+ * **libssh.org** - Package from pantry: libssh.org
  *
  * @domain `libssh.org`
- * @version `0.11.2` (8 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install libssh.org`
  * @dependencies `openssl.org^1.1`, `zlib.net^1`
@@ -14,7 +12,7 @@
  *
  * const pkg = pantry.libsshorg
  * console.log(pkg.name)        // "libssh.org"
- * console.log(pkg.versions[0]) // "0.11.2" (latest)
+ * console.log(pkg.description) // "Package from pantry: libssh.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libssh-org.md
@@ -32,15 +30,14 @@ export const libsshorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libssh.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: libssh.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install libssh.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libssh.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libssh.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -51,23 +48,10 @@ export const libsshorgPackage = {
     'openssl.org^1.1',
     'zlib.net^1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.11.2',
-    '0.11.1',
-    '0.11.0',
-    '0.10.6',
-    '0.10.5',
-    '0.10.4',
-    '0.9.8',
-    '0.9.7',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libssh.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libssh.org' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libssh.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type LibsshorgPackage = typeof libsshorgPackage

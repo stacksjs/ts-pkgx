@@ -1,11 +1,11 @@
-# linkerd
+# linkerd2
 
-> Ultralight, security-first service mesh for Kubernetes. Main repo for Linkerd 2.x.
+> Package from pantry: linkerd.io/linkerd2
 
 ## Package Information
 
 - **Domain**: `linkerd.io/linkerd2`
-- **Name**: `linkerd`
+- **Name**: `linkerd2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/linkerd.io/linkerd2/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install linkerd
+launchpad install linkerd.io/linkerd2
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `linkerd`
-
-## Available Versions
-
-<details>
-<summary>Show all 9 versions</summary>
-
-- `2.14.10`, `2.14.9`, `2.14.8`, `2.14.7`, `2.14.6`
-- `2.14.5`, `2.14.4`, `2.14.3`, `2.14.2`
-
-</details>
-
-**Latest Version**: `2.14.10`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) linkerd -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -47,7 +28,7 @@ sh <(curl https://pkgx.sh) linkerd -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.linkerd
+const pkg = pantry.linkerd2
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
