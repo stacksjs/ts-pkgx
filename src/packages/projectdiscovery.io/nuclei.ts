@@ -3,7 +3,7 @@
  *
  * @domain `projectdiscovery.io/nuclei`
  * @programs `nuclei`
- * @version `3.4.5` (4 versions available)
+ * @version `3.4.6` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nuclei`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "nuclei"
  * console.log(pkg.description) // "Nuclei is a fast, customizable vulnerability sc..."
  * console.log(pkg.programs)    // ["nuclei"]
- * console.log(pkg.versions[0]) // "3.4.5" (latest)
+ * console.log(pkg.versions[0]) // "3.4.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/projectdiscovery-io/nuclei.md
@@ -62,6 +62,7 @@ export const nucleiPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.4.6',
     '3.4.5',
     '3.4.4',
     '3.4.3',

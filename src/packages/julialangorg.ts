@@ -3,7 +3,7 @@
  *
  * @domain `julialang.org`
  * @programs `julia`
- * @version `1.11.5` (18 versions available)
+ * @version `1.11.5` (19 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install julia`
@@ -68,6 +68,7 @@ export const juliaPackage = {
     '1.11.2',
     '1.11.1',
     '1.11.0',
+    '1.10.10',
     '1.10.9',
     '1.10.8',
     '1.10.7',
