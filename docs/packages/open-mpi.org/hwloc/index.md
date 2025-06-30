@@ -1,11 +1,11 @@
-# open-mpi.org/hwloc
+# hwloc
 
-> Portable abstraction of the hierarchical topology of modern architectures
+> Package from pantry: open-mpi.org/hwloc
 
 ## Package Information
 
 - **Domain**: `open-mpi.org/hwloc`
-- **Name**: `open-mpi.org/hwloc`
+- **Name**: `hwloc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/open-mpi.org/hwloc/package.yml)
 
@@ -20,35 +20,7 @@ launchpad install open-mpi.org/hwloc
 
 This package provides the following executable programs:
 
-- `hwloc-annotate`
-- `hwloc-bind`
-- `hwloc-calc`
-- `hwloc-compress-dir`
-- `hwloc-diff`
-- `hwloc-distrib`
-- `hwloc-info`
-- `hwloc-patch`
-- `hwloc-ps`
-- `lstopo-no-graphics`
-
-## Available Versions
-
-<details>
-<summary>Show all 9 versions</summary>
-
-- `2.12.1`, `2.12.0`, `2.11.2`, `2.11.1`, `2.11.0`
-- `2.10.0`, `2.9.3`, `2.9.2`, `2.9.1`
-
-</details>
-
-**Latest Version**: `2.12.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +open-mpi.org/hwloc@2.12.1 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -56,7 +28,7 @@ sh <(curl https://pkgx.sh) +open-mpi.org/hwloc@2.12.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['open-mpi.org/hwloc']
+const pkg = pantry.hwloc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,11 +1,11 @@
-# speedtest
+# speedtest-cli
 
-> Command line interface for testing internet bandwidth using speedtest.net
+> Package from pantry: github.com/sivel/speedtest-cli
 
 ## Package Information
 
 - **Domain**: `github.com/sivel/speedtest-cli`
-- **Name**: `speedtest`
+- **Name**: `speedtest-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/sivel/speedtest-cli/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install speedtest
+launchpad install github.com/sivel/speedtest-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `speedtest-cli`
-- `speedtest`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.1.3`
-
-</details>
-
-**Latest Version**: `2.1.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/sivel/speedtest-cli@2.1.3 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -53,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.speedtest
+const pkg = pantry['speedtest-cli']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

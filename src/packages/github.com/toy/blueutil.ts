@@ -1,33 +1,23 @@
 /**
- * **blueutil** - CLI for bluetooth on OSX: power, discoverable state, list, inquire devices, connect, info, …
+ * **blueutil** - Package from pantry: github.com/toy/blueutil
  *
  * @domain `github.com/toy/blueutil`
- * @programs `blueutil`
- * @version `2.12.0` (4 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install blueutil`
- * @name `blueutil`
+ * @install `launchpad install github.com/toy/blueutil`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.blueutil
- * // Or access via domain
- * const samePkg = pantry.githubcomtoyblueutil
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomtoyblueutil
  * console.log(pkg.name)        // "blueutil"
- * console.log(pkg.description) // "CLI for bluetooth on OSX: power, discoverable s..."
- * console.log(pkg.programs)    // ["blueutil"]
- * console.log(pkg.versions[0]) // "2.12.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/toy/blueutil"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/toy/blueutil.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const blueutilPackage = {
+export const githubcomtoyblueutilPackage = {
   /**
    * The display name of this package.
    */
@@ -39,41 +29,21 @@ export const blueutilPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'CLI for bluetooth on OSX: power, discoverable state, list, inquire devices, connect, info, …' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/toy/blueutil/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/toy/blueutil' as const,
+  description: 'Package from pantry: github.com/toy/blueutil' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install blueutil' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'blueutil',
-  ] as const,
+  installCommand: 'launchpad install github.com/toy/blueutil' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/toy/blueutil -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/toy/blueutil' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.12.0',
-    '2.11.0',
-    '2.10.0',
-    '2.9.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) blueutil -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install blueutil' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/toy/blueutil/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type BlueutilPackage = typeof blueutilPackage
+export type GithubcomtoyblueutilPackage = typeof githubcomtoyblueutilPackage

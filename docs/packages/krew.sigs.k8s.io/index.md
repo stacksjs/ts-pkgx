@@ -1,11 +1,11 @@
-# kubectl-krew
+# krew.sigs.k8s.io
 
-> 📦 Find and install kubectl plugins
+> Package from pantry: krew.sigs.k8s.io
 
 ## Package Information
 
 - **Domain**: `krew.sigs.k8s.io`
-- **Name**: `kubectl-krew`
+- **Name**: `krew.sigs.k8s.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/krew.sigs.k8s.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install kubectl-krew
+launchpad install krew.sigs.k8s.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `kubectl-krew`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.4.5`, `0.4.4`
-
-</details>
-
-**Latest Version**: `0.4.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) kubectl-krew -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -52,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['kubectl-krew']
+const pkg = pantry['krew.sigs.k8s.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

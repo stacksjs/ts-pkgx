@@ -1,6 +1,6 @@
 # perl.org
 
-> Highly capable, feature-rich programming language
+> Package from pantry: perl.org
 
 ## Package Information
 
@@ -20,56 +20,7 @@ launchpad install perl.org
 
 This package provides the following executable programs:
 
-- `corelist`
-- `cpan`
-- `enc2xs`
-- `encguess`
-- `h2ph`
-- `h2xs`
-- `instmodsh`
-- `json_pp`
-- `libnetcfg`
-- `perl`
-- `perlbug`
-- `perldoc`
-- `perlivp`
-- `perlthanks`
-- `piconv`
-- `pl2pm`
-- `pod2html`
-- `pod2man`
-- `pod2text`
-- `pod2usage`
-- `podchecker`
-- `prove`
-- `ptar`
-- `ptardiff`
-- `ptargrep`
-- `shasum`
-- `splain`
-- `streamzip`
-- `xsubpp`
-- `zipdetails`
-
-## Available Versions
-
-<details>
-<summary>Show all 14 versions</summary>
-
-- `5.40.2`, `5.40.1`, `5.40.0`, `5.38.4`, `5.38.3`
-- `5.38.2`, `5.38.1`, `5.38.0`, `5.36.3`, `5.36.2`
-- `5.36.1`, `5.36.0`, `5.34.3`, `5.34.2`
-
-</details>
-
-**Latest Version**: `5.40.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +perl.org@5.40.2 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

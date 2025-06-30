@@ -1,11 +1,11 @@
-# copa
+# project-copacetic.github.io
 
-> Tool to directly patch container images given the vulnerability scanning results
+> Package from pantry: project-copacetic.github.io
 
 ## Package Information
 
 - **Domain**: `project-copacetic.github.io`
-- **Name**: `copa`
+- **Name**: `project-copacetic.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/project-copacetic.github.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install copa
+launchpad install project-copacetic.github.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `copa`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `0.10.0`, `0.9.0`, `0.8.0`, `0.7.0`, `0.6.2`
-
-</details>
-
-**Latest Version**: `0.10.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) copa -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) copa -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.copa
+const pkg = pantry['project-copacetic.github.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

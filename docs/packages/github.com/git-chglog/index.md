@@ -1,6 +1,6 @@
 # git-chglog
 
-> CHANGELOG generator implemented in Go (Golang).
+> Package from pantry: github.com/git-chglog
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install git-chglog
+launchpad install github.com/git-chglog
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `git-chglog`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.15.4`
-
-</details>
-
-**Latest Version**: `0.15.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) git-chglog -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

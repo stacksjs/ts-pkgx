@@ -1,6 +1,6 @@
 # mockgen
 
-> GoMock is a mocking framework for the Go programming language.
+> Package from pantry: go.uber.org/mock/mockgen
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install mockgen
+launchpad install go.uber.org/mock/mockgen
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mockgen`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `0.5.2`, `0.5.1`, `0.5.0`, `0.4.0`, `0.3.0`
-
-</details>
-
-**Latest Version**: `0.5.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) mockgen -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

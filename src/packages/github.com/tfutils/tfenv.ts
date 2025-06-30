@@ -1,34 +1,24 @@
 /**
- * **tfenv** - Terraform version manager
+ * **tfenv** - Package from pantry: github.com/tfutils/tfenv
  *
  * @domain `github.com/tfutils/tfenv`
- * @programs `tfenv`
- * @version `3.0.0` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install tfenv`
- * @name `tfenv`
+ * @install `launchpad install github.com/tfutils/tfenv`
  * @dependencies `gnu.org/grep`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.tfenv
- * // Or access via domain
- * const samePkg = pantry.githubcomtfutilstfenv
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomtfutilstfenv
  * console.log(pkg.name)        // "tfenv"
- * console.log(pkg.description) // "Terraform version manager"
- * console.log(pkg.programs)    // ["tfenv"]
- * console.log(pkg.versions[0]) // "3.0.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/tfutils/tfenv"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/tfutils/tfenv.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tfenvPackage = {
+export const githubcomtfutilstfenvPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const tfenvPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Terraform version manager' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/tfutils/tfenv/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/tfutils/tfenv' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tfenv' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'tfenv',
-  ] as const,
+  installCommand: 'launchpad install github.com/tfutils/tfenv' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/tfutils/tfenv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/tfutils/tfenv' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,20 +47,10 @@ export const tfenvPackage = {
   dependencies: [
     'gnu.org/grep',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.0.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tfenv -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tfenv' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/tfutils/tfenv/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type TfenvPackage = typeof tfenvPackage
+export type GithubcomtfutilstfenvPackage = typeof githubcomtfutilstfenvPackage
