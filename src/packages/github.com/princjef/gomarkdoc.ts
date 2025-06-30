@@ -1,23 +1,33 @@
 /**
- * **gomarkdoc** - Package from pantry: github.com/princjef/gomarkdoc
+ * **gomarkdoc** - Generate markdown documentation for Go (golang) code
  *
  * @domain `github.com/princjef/gomarkdoc`
+ * @programs `gomarkdoc`
+ * @version `1.1.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/princjef/gomarkdoc`
+ * @install `launchpad install gomarkdoc`
+ * @name `gomarkdoc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomprincjefgomarkdoc
+ * // Access the package
+ * const pkg = pantry.gomarkdoc
+ * // Or access via domain
+ * const samePkg = pantry.githubcomprincjefgomarkdoc
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "gomarkdoc"
- * console.log(pkg.description) // "Package from pantry: github.com/princjef/gomarkdoc"
+ * console.log(pkg.description) // "Generate markdown documentation for Go (golang)..."
+ * console.log(pkg.programs)    // ["gomarkdoc"]
+ * console.log(pkg.versions[0]) // "1.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/princjef/gomarkdoc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomprincjefgomarkdocPackage = {
+export const gomarkdocPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,38 @@ export const githubcomprincjefgomarkdocPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/princjef/gomarkdoc' as const,
+  description: 'Generate markdown documentation for Go (golang) code' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/princjef/gomarkdoc/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/princjef/gomarkdoc' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/princjef/gomarkdoc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/princjef/gomarkdoc' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install gomarkdoc' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'gomarkdoc',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/princjef/gomarkdoc/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.1.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gomarkdoc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gomarkdoc' as const,
 }
 
-export type GithubcomprincjefgomarkdocPackage = typeof githubcomprincjefgomarkdocPackage
+export type GomarkdocPackage = typeof gomarkdocPackage

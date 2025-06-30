@@ -1,11 +1,11 @@
-# luv
+# github.com/luvit/luv
 
-> Package from pantry: github.com/luvit/luv
+> Bare libuv bindings for lua
 
 ## Package Information
 
 - **Domain**: `github.com/luvit/luv`
-- **Name**: `luv`
+- **Name**: `github.com/luvit/luv`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/luvit/luv/package.yml)
 
@@ -22,6 +22,24 @@ This package provides the following executable programs:
 
 *No programs specified*
 
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.45.0`
+
+</details>
+
+**Latest Version**: `1.45.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/luvit/luv@1.45.0 -- $SHELL -i
+```
+
 ## Dependencies
 
 This package depends on:
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.luv
+const pkg = pantry['github.com/luvit/luv']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

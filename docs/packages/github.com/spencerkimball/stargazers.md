@@ -1,6 +1,6 @@
 # stargazers
 
-> Package from pantry: github.com/spencerkimball/stargazers
+> Analyze GitHub stars
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/spencerkimball/stargazers
+launchpad install stargazers
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `stargazers`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.0.0`
+
+</details>
+
+**Latest Version**: `0.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) stargazers -- $SHELL -i
+```
 
 ## Usage Examples
 

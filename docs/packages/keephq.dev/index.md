@@ -1,11 +1,11 @@
-# keephq.dev
+# keep
 
-> Package from pantry: keephq.dev
+> The open-source AIOps and alert management platform
 
 ## Package Information
 
 - **Domain**: `keephq.dev`
-- **Name**: `keephq.dev`
+- **Name**: `keep`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/keephq.dev/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install keephq.dev
+launchpad install keep
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `keep`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.0.0`
+
+</details>
+
+**Latest Version**: `0.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) keep -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['keephq.dev']
+const pkg = pantry.keep
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

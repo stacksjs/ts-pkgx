@@ -1,23 +1,33 @@
 /**
- * **testscript** - Package from pantry: go.dev/testscript
+ * **testscript** - Selected Go-internal packages factored out from the standard library
  *
  * @domain `go.dev/testscript`
+ * @programs `testscript`
+ * @version `1.14.1` (4 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install go.dev/testscript`
+ * @install `launchpad install testscript`
+ * @name `testscript`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.godevtestscript
+ * // Access the package
+ * const pkg = pantry.testscript
+ * // Or access via domain
+ * const samePkg = pantry.godevtestscript
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "testscript"
- * console.log(pkg.description) // "Package from pantry: go.dev/testscript"
+ * console.log(pkg.description) // "Selected Go-internal packages factored out from..."
+ * console.log(pkg.programs)    // ["testscript"]
+ * console.log(pkg.versions[0]) // "1.14.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/go-dev/testscript.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const godevtestscriptPackage = {
+export const testscriptPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,41 @@ export const godevtestscriptPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: go.dev/testscript' as const,
+  description: 'Selected Go-internal packages factored out from the standard library' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/go.dev/testscript/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install go.dev/testscript' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +go.dev/testscript -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install go.dev/testscript' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install testscript' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'testscript',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/go.dev/testscript/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.14.1',
+    '1.14.0',
+    '1.13.1',
+    '1.12.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) testscript -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install testscript' as const,
 }
 
-export type GodevtestscriptPackage = typeof godevtestscriptPackage
+export type TestscriptPackage = typeof testscriptPackage

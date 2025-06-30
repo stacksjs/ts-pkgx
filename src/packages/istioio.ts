@@ -1,27 +1,37 @@
 /**
- * **istio.io** - Package from pantry: istio.io
+ * **istioctl** - Connect, secure, control, and observe services.
  *
  * @domain `istio.io`
+ * @programs `istioctl`
+ * @version `1.26.2` (42 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install istio.io`
+ * @install `launchpad install istioctl`
+ * @name `istioctl`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.istioio
- * console.log(pkg.name)        // "istio.io"
- * console.log(pkg.description) // "Package from pantry: istio.io"
+ * // Access the package
+ * const pkg = pantry.istioctl
+ * // Or access via domain
+ * const samePkg = pantry.istioio
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "istioctl"
+ * console.log(pkg.description) // "Connect, secure, control, and observe services."
+ * console.log(pkg.programs)    // ["istioctl"]
+ * console.log(pkg.versions[0]) // "1.26.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/istio-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const istioioPackage = {
+export const istioctlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'istio.io' as const,
+  name: 'istioctl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -29,21 +39,79 @@ export const istioioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: istio.io' as const,
+  description: 'Connect, secure, control, and observe services.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/istio.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/istio/istio' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install istio.io' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +istio.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install istio.io' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install istioctl' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'istioctl',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/istio.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.26.2',
+    '1.26.1',
+    '1.26.0',
+    '1.25.3',
+    '1.25.2',
+    '1.25.1',
+    '1.25.0',
+    '1.24.6',
+    '1.24.4',
+    '1.24.3',
+    '1.24.2',
+    '1.24.1',
+    '1.24.0',
+    '1.23.6',
+    '1.23.5',
+    '1.23.4',
+    '1.23.3',
+    '1.23.2',
+    '1.23.1',
+    '1.23.0',
+    '1.22.8',
+    '1.22.7',
+    '1.22.6',
+    '1.22.5',
+    '1.22.4',
+    '1.22.3',
+    '1.22.2',
+    '1.22.1',
+    '1.22.0',
+    '1.21.6',
+    '1.21.5',
+    '1.21.4',
+    '1.21.3',
+    '1.21.2',
+    '1.21.1',
+    '1.21.0',
+    '1.20.8',
+    '1.20.7',
+    '1.20.6',
+    '1.20.5',
+    '1.19.10',
+    '1.19.9',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) istioctl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install istioctl' as const,
 }
 
-export type IstioioPackage = typeof istioioPackage
+export type IstioctlPackage = typeof istioctlPackage

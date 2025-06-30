@@ -1,6 +1,6 @@
 # Artificial Intelligence
 
-*8 packages in this category*
+*14 packages in this category*
 
 Packages related to artificial intelligence.
 
@@ -68,21 +68,81 @@ Stable Diffusion web UI
 
 ### [github.com/nat/openplayground](../packages/github.com/nat/openplayground.md) (openplayground)
 
-Package from pantry: github.com/nat/openplayground
+An LLM playground you can run on your laptop
 
-**Programs**: None specified
+**Programs**: openplayground
 
-**Install**: `launchpad install github.com/nat/openplayground`
+**Install**: `launchpad install openplayground`
 
 ---
 
 ### [github.com/npiv/chatblade](../packages/github.com/npiv/chatblade.md) (chatblade)
 
-Package from pantry: github.com/npiv/chatblade
+A CLI Swiss Army Knife for ChatGPT
 
-**Programs**: None specified
+**Programs**: chatblade
 
-**Install**: `launchpad install github.com/npiv/chatblade`
+**Install**: `launchpad install chatblade`
+
+---
+
+### [kaggle.com](../packages/kaggle.com/index.md) (kaggle)
+
+Official Kaggle API
+
+**Programs**: kaggle
+
+**Install**: `launchpad install kaggle`
+
+---
+
+### [llm.datasette.io](../packages/llm.datasette.io/index.md) (llm)
+
+Access large language models from the command-line
+
+**Programs**: llm
+
+**Install**: `launchpad install llm`
+
+---
+
+### [numpy.org](../packages/numpy.org/index.md) (f2py)
+
+The fundamental package for scientific computing with Python.
+
+**Programs**: f2py
+
+**Install**: `launchpad install f2py`
+
+---
+
+### [ollama.ai](../packages/ollama.ai/index.md) (ollama)
+
+Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models.
+
+**Programs**: ollama
+
+**Install**: `launchpad install ollama`
+
+---
+
+### [openai.com/openai-python](../packages/openai.com/openai-python/index.md) (openai)
+
+The official Python library for the OpenAI API
+
+**Programs**: openai
+
+**Install**: `launchpad install openai`
+
+---
+
+### [openinterpreter.com](../packages/openinterpreter.com/index.md) (open-interpreter, interpreter)
+
+A natural language interface for computers
+
+**Programs**: interpreter
+
+**Install**: `launchpad install interpreter`
 
 ---
 

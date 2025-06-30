@@ -1,6 +1,6 @@
 # ruby-install
 
-> Package from pantry: github.com/postmodern/ruby-install
+> Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/postmodern/ruby-install
+launchpad install ruby-install
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ruby-install`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `0.10.1`, `0.10.0`, `0.9.4`, `0.9.3`, `0.9.2`
+- `0.9.1`
+
+</details>
+
+**Latest Version**: `0.10.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) ruby-install -- $SHELL -i
+```
 
 ## Dependencies
 

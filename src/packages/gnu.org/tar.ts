@@ -1,23 +1,33 @@
 /**
- * **tar** - Package from pantry: gnu.org/tar
+ * **tar** - Multi-format archive and compression library
  *
  * @domain `gnu.org/tar`
+ * @programs `tar`
+ * @version `1.35.0` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install gnu.org/tar`
+ * @install `launchpad install tar`
+ * @name `tar`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.gnuorgtar
+ * // Access the package
+ * const pkg = pantry.tar
+ * // Or access via domain
+ * const samePkg = pantry.gnuorgtar
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "tar"
- * console.log(pkg.description) // "Package from pantry: gnu.org/tar"
+ * console.log(pkg.description) // "Multi-format archive and compression library"
+ * console.log(pkg.programs)    // ["tar"]
+ * console.log(pkg.versions[0]) // "1.35.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/tar.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gnuorgtarPackage = {
+export const tarPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,39 @@ export const gnuorgtarPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: gnu.org/tar' as const,
+  description: 'Multi-format archive and compression library' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/tar/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gnu.org/tar' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/tar -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/tar' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install tar' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'tar',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/tar/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.35.0',
+    '1.34.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tar -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tar' as const,
 }
 
-export type GnuorgtarPackage = typeof gnuorgtarPackage
+export type TarPackage = typeof tarPackage

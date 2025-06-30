@@ -1,23 +1,33 @@
 /**
- * **libdeflate** - Package from pantry: github.com/ebiggers/libdeflate
+ * **libdeflate** - Heavily optimized library for DEFLATE/zlib/gzip compression and decompression
  *
  * @domain `github.com/ebiggers/libdeflate`
+ * @programs `libdeflate-gzip`, `libdeflate-gunzip`
+ * @version `1.24.0` (6 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/ebiggers/libdeflate`
+ * @install `launchpad install libdeflate`
+ * @name `libdeflate`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomebiggerslibdeflate
+ * // Access the package
+ * const pkg = pantry.libdeflate
+ * // Or access via domain
+ * const samePkg = pantry.githubcomebiggerslibdeflate
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "libdeflate"
- * console.log(pkg.description) // "Package from pantry: github.com/ebiggers/libdef..."
+ * console.log(pkg.description) // "Heavily optimized library for DEFLATE/zlib/gzip..."
+ * console.log(pkg.programs)    // ["libdeflate-gzip", "libdeflate-gunzip"]
+ * console.log(pkg.versions[0]) // "1.24.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/ebiggers/libdeflate.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomebiggerslibdeflatePackage = {
+export const libdeflatePackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,44 @@ export const githubcomebiggerslibdeflatePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/ebiggers/libdeflate' as const,
+  description: 'Heavily optimized library for DEFLATE/zlib/gzip compression and decompression' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ebiggers/libdeflate/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/ebiggers/libdeflate' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/ebiggers/libdeflate -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/ebiggers/libdeflate' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install libdeflate' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'libdeflate-gzip',
+    'libdeflate-gunzip',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ebiggers/libdeflate/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.24.0',
+    '1.23.0',
+    '1.22.0',
+    '1.21.0',
+    '1.20.0',
+    '1.19.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/ebiggers/libdeflate -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libdeflate' as const,
 }
 
-export type GithubcomebiggerslibdeflatePackage = typeof githubcomebiggerslibdeflatePackage
+export type LibdeflatePackage = typeof libdeflatePackage
