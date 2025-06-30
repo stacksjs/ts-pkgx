@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/typos`
  * @programs `typos`
- * @version `1.33.1` (100 versions available)
+ * @version `1.34.0` (101 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install typos`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "typos"
  * console.log(pkg.description) // "Source code spell checker"
  * console.log(pkg.programs)    // ["typos"]
- * console.log(pkg.versions[0]) // "1.33.1" (latest)
+ * console.log(pkg.versions[0]) // "1.34.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/typos.md
@@ -62,6 +62,7 @@ export const typosPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.34.0',
     '1.33.1',
     '1.33.0',
     '1.32.0',
