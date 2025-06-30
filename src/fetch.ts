@@ -4,7 +4,7 @@ import type { FetchProjectsOptions, GitHubContent, PackageFetchOptions, PkgxPack
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
-import { chromium } from 'playwright'
+// Playwright will be dynamically imported when needed
 import { getAliasOverrides, shouldReplaceAliases } from './alias-overrides'
 import { DEFAULT_CACHE_DIR, DEFAULT_CACHE_EXPIRATION_MINUTES, DEFAULT_TIMEOUT_MS } from './consts'
 import { aliases } from './packages/aliases'
@@ -836,6 +836,7 @@ export async function fetchPantryPackage(
 
       while (retryCount < maxLaunchRetries) {
         try {
+          const { chromium } = await import('playwright')
           browser = await chromium.launch({
             headless: true,
             timeout: 8000, // 8 second timeout for browser launch
@@ -1800,6 +1801,7 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
 
     // Create a single browser instance for all operations
     console.log('Launching browser...')
+    const { chromium } = await import('playwright')
     const browser = await chromium.launch({
       headless: true,
       args: [
@@ -2193,6 +2195,7 @@ export async function fetchAndSavePackage(
           // Try fetching with a direct URL approach for nested packages
             let altBrowser = null
             try {
+              const { chromium } = await import('playwright')
               altBrowser = await chromium.launch({
                 headless: true,
                 timeout: actualTimeout, // Use the same timeout
