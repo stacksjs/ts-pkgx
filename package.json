@@ -80,7 +80,7 @@
   },
   "dependencies": {
     "js-yaml": "^4.1.0",
-    "playwright": "^1.53.1"
+    "playwright": "^1.53.2"
   },
   "devDependencies": {
     "@stacksjs/docs": "^0.70.23",
