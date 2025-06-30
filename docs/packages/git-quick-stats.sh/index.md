@@ -55,7 +55,7 @@ This package depends on:
 These packages work well with git-quick-stats:
 
 - [`gnu.org/coreutils`](../gnu.org/coreutils/index.md)
-- [`invisible-island.net/ncurses`](../invisible-island.net/ncurses/index.md) - Package from pantry: invisible-island.net/ncurses
+- [`invisible-island.net/ncurses`](../invisible-island.net/ncurses/index.md) - Text-based UI library
 
 ## Usage Examples
 

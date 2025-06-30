@@ -1,6 +1,6 @@
 # daff
 
-> Package from pantry: paulfitz.github.io/daff
+> align and compare tables
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install paulfitz.github.io/daff
+launchpad install daff
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `daff`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.4.2`, `1.3.46`
+
+</details>
+
+**Latest Version**: `1.4.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) daff -- $SHELL -i
+```
 
 ## Dependencies
 

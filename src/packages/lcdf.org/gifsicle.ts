@@ -1,23 +1,33 @@
 /**
- * **gifsicle** - Package from pantry: lcdf.org/gifsicle
+ * **gifsicle** - Create, manipulate, and optimize GIF images and animations
  *
  * @domain `lcdf.org/gifsicle`
+ * @programs `gifsicle`
+ * @version `1.96.0` (4 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install lcdf.org/gifsicle`
+ * @install `launchpad install gifsicle`
+ * @name `gifsicle`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.lcdforggifsicle
+ * // Access the package
+ * const pkg = pantry.gifsicle
+ * // Or access via domain
+ * const samePkg = pantry.lcdforggifsicle
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "gifsicle"
- * console.log(pkg.description) // "Package from pantry: lcdf.org/gifsicle"
+ * console.log(pkg.description) // "Create, manipulate, and optimize GIF images and..."
+ * console.log(pkg.programs)    // ["gifsicle"]
+ * console.log(pkg.versions[0]) // "1.96.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/lcdf-org/gifsicle.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const lcdforggifsiclePackage = {
+export const gifsiclePackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,41 @@ export const lcdforggifsiclePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: lcdf.org/gifsicle' as const,
+  description: 'Create, manipulate, and optimize GIF images and animations' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lcdf.org/gifsicle/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install lcdf.org/gifsicle' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lcdf.org/gifsicle -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install lcdf.org/gifsicle' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install gifsicle' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'gifsicle',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lcdf.org/gifsicle/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.96.0',
+    '1.95.0',
+    '1.94.0',
+    '1.93.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gifsicle -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gifsicle' as const,
 }
 
-export type LcdforggifsiclePackage = typeof lcdforggifsiclePackage
+export type GifsiclePackage = typeof gifsiclePackage
