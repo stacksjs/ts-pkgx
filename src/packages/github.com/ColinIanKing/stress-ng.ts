@@ -3,7 +3,7 @@
  *
  * @domain `github.com/ColinIanKing/stress-ng`
  * @programs `stress-ng`
- * @version `0.19.1` (1 versions available)
+ * @version `0.19.2` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install stress-ng`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "stress-ng"
  * console.log(pkg.description) // "This is the stress-ng upstream project git repo..."
  * console.log(pkg.programs)    // ["stress-ng"]
- * console.log(pkg.versions[0]) // "0.19.1" (latest)
+ * console.log(pkg.versions[0]) // "0.19.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/ColinIanKing/stress-ng.md
@@ -70,6 +70,7 @@ export const stressngPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.19.2',
     '0.19.1',
   ] as const,
   /**
