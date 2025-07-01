@@ -3,7 +3,7 @@
  *
  * @domain `github.com/nektos/act`
  * @programs `act`
- * @version `0.2.78` (36 versions available)
+ * @version `0.2.79` (37 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install act`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "act"
  * console.log(pkg.description) // "Run your GitHub Actions locally 🚀"
  * console.log(pkg.programs)    // ["act"]
- * console.log(pkg.versions[0]) // "0.2.78" (latest)
+ * console.log(pkg.versions[0]) // "0.2.79" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/nektos/act.md
@@ -62,6 +62,7 @@ export const actPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.2.79',
     '0.2.78',
     '0.2.77',
     '0.2.76',
