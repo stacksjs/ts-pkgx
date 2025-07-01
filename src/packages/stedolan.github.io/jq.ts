@@ -3,7 +3,7 @@
  *
  * @domain `stedolan.github.io/jq`
  * @programs `jq`
- * @version `1.8.0` (4 versions available)
+ * @version `1.8.1` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jq`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "jq"
  * console.log(pkg.description) // "Lightweight and flexible command-line JSON proc..."
  * console.log(pkg.programs)    // ["jq"]
- * console.log(pkg.versions[0]) // "1.8.0" (latest)
+ * console.log(pkg.versions[0]) // "1.8.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/stedolan-github-io/jq.md
@@ -69,6 +69,7 @@ export const jqPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.8.1',
     '1.8.0',
     '1.7.1',
     '1.7.0',
