@@ -3,7 +3,7 @@
  *
  * @domain `php.net`
  * @programs `pear`, `pecl`, `phar`, `php`, `php-cgi`, ... (+3 more)
- * @version `8.4.9` (74 versions available)
+ * @version `8.4.9` (76 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install php.net`
@@ -116,6 +116,7 @@ export const phpPackage = {
     '8.4.2',
     '8.4.1',
     '8.4.0',
+    '8.3.23',
     '8.3.22',
     '8.3.21',
     '8.3.20',
@@ -139,6 +140,7 @@ export const phpPackage = {
     '8.3.2',
     '8.3.1',
     '8.3.0',
+    '8.2.29',
     '8.2.28',
     '8.2.27',
     '8.2.26',

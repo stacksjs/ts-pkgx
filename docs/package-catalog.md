@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-07-01T17:28:08.578Z
+- **Last Updated**: 2025-07-01T19:29:23.726Z
 
 ## Table of Contents
 
@@ -53,7 +53,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[lua.org](./packages/lua.org/index.md)** () | Powerful, lightweight programming language | lua, luac | 5.4.8 (+3) | `pkgx lua` |
 | **[luajit.org](./packages/luajit.org/index.md)** () | Mirror of the LuaJIT git repository | luajit, luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;. | 2.1.0 (+0) | `pkgx luajit` |
 | **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 24.3.0 (+140) | `pkgx node` |
-| **[php.net](./packages/php.net/index.md)** (php) | General-purpose scripting language | pear, pecl, phar, ... (+5) | 8.4.9 (+73) | `pkgx php` |
+| **[php.net](./packages/php.net/index.md)** (php) | General-purpose scripting language | pear, pecl, phar, ... (+5) | 8.4.9 (+75) | `pkgx php` |
 | **[python.org](./packages/python.org/index.md)** (py) | The Python programming language | python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace; | 3.13.5 (+150) | `pkgx py` |
 | **[ruby-lang.org](./packages/ruby-lang.org/index.md)** (ruby) | Powerful, clean, object-oriented scripting language | erb, irb, rake, ... (+3) | 3.4.4 (+41) | `pkgx ruby` |
 | **[rust-lang.org](./packages/rust-lang.org/index.md)** () | Empowering everyone to build reliable and efficient software. | cargo-clippy, cargo-fmt, clippy-driver, ... (+7) | 1.88.0 (+34) | `pkgx rust` |
@@ -78,7 +78,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[kaggle.com](./packages/kaggle.com/index.md)** () | Official Kaggle API | kaggle | 1.7.4.5 (+4) | `pkgx kaggle` |
 | **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.26.0 (+29) | `pkgx llm` |
 | **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.1 (+18) | `pkgx f2py` |
-| **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.9.3 (+99) | `pkgx ollama` |
+| **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.9.4 (+100) | `pkgx ollama` |
 | **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 1.93.0 (+242) | `pkgx openai` |
 | **[openinterpreter.com](./packages/openinterpreter.com/index.md)** (interpreter) | A natural language interface for computers | interpreter | 0.4.0 (+21) | `pkgx interpreter` |
 
@@ -138,7 +138,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[kubernetes.io/kustomize](./packages/kubernetes.io/kustomize/index.md)** () | Template-free customization of Kubernetes YAML manifests | kustomize | 5.7.0 (+14) | `pkgx kustomize` |
 | **[kubernetes.io/minikube](./packages/kubernetes.io/minikube/index.md)** () | Run a Kubernetes cluster locally | minikube | 1.36.0 (+11) | `pkgx minikube` |
 | **[nomadproject.io](./packages/nomadproject.io/index.md)** () | Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of ... | nomad | 1.10.2 (+13) | `pkgx nomad` |
-| **[opentofu.org](./packages/opentofu.org/index.md)** () | OpenTofu lets you declaratively manage your cloud infrastructure. | tofu | 1.9.1 (+20) | `pkgx tofu` |
+| **[opentofu.org](./packages/opentofu.org/index.md)** () | OpenTofu lets you declaratively manage your cloud infrastructure. | tofu | 1.9.1 (+21) | `pkgx tofu` |
 | **[packer.io](./packages/packer.io/index.md)** () | Packer is a tool for creating identical machine images for multiple platforms from a single sourc... | packer | 1.13.1 (+12) | `pkgx packer` |
 | **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.5.2 (+39) | `pkgx podman` |
 | **[runatlantis.io](./packages/runatlantis.io/index.md)** () | Terraform Pull Request Automation tool | atlantis | 0.35.0 (+18) | `pkgx atlantis` |
@@ -200,7 +200,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[freedesktop.org/pkg-config](./packages/freedesktop.org/pkg-config/index.md)** () | package compiler and linker metadata toolkit | pkg-config | 0.29.2 (+0) | `pkgx pkg-config` |
 | **[github.com/bazelbuild/bazelisk](./packages/github.com/bazelbuild/bazelisk.md)** () | A user-friendly launcher for Bazel. | bazel, bazelisk | 1.26.0 (+9) | `pkgx bazel` |
 | **[github.com/bazelbuild/buildtools](./packages/github.com/bazelbuild/buildtools.md)** () | Format bazel BUILD files with a standard convention | buildifier | 8.2.1 (+10) | `pkgx buildifier` |
-| **[github.com/moby/buildkit](./packages/github.com/moby/buildkit.md)** (buildctl) | concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit | buildctl | 0.23.1 (+26) | `pkgx buildctl` |
+| **[github.com/moby/buildkit](./packages/github.com/moby/buildkit.md)** (buildctl) | concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit | buildctl | 0.23.2 (+27) | `pkgx buildctl` |
 | **[gnu.org/autoconf](./packages/gnu.org/autoconf/index.md)** () | Automatic configure script builder | autoconf, autoheader, autom4te, ... (+4) | 2.72.0 (+1) | `pkgx gnu.org/autoconf` |
 | **[gnu.org/automake](./packages/gnu.org/automake/index.md)** () | Tool for generating GNU Standards-compliant Makefiles | aclocal, automake | 1.18.1 (+3) | `pkgx gnu.org/automake` |
 | **[gradle.org](./packages/gradle.org/index.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 8.14.2 (+17) | `pkgx gradle` |

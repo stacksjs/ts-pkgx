@@ -3,7 +3,7 @@
  *
  * @domain `google.com/gcloud`
  * @programs `gcloud`, `gsutil`, `bq`
- * @version `528.0.0` (77 versions available)
+ * @version `529.0.0` (78 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install google.com/gcloud`
@@ -16,7 +16,7 @@
  * const pkg = pantry.googlecomgcloud
  * console.log(pkg.name)        // "google.com/gcloud"
  * console.log(pkg.programs)    // ["gcloud", "gsutil", ...]
- * console.log(pkg.versions[0]) // "528.0.0" (latest)
+ * console.log(pkg.versions[0]) // "529.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/google-com/gcloud.md
@@ -65,6 +65,7 @@ export const googlecomgcloudPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '529.0.0',
     '528.0.0',
     '527.0.0',
     '526.0.1',

@@ -3,7 +3,7 @@
  *
  * @domain `opentofu.org`
  * @programs `tofu`
- * @version `1.9.1` (21 versions available)
+ * @version `1.9.1` (22 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tofu`
@@ -89,6 +89,7 @@ export const tofuPackage = {
     '1.7.4',
     '1.7.3',
     '1.6.0.3',
+    '1.10.2',
     '1.10.1',
     '1.10.0',
   ] as const,
