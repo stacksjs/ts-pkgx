@@ -3,7 +3,7 @@
  *
  * @domain `gdal.org`
  * @programs `gdaladdo`, `gdalbuildvrt`, `gdal-config`, `gdal_contour`, `gdal_create`, ... (+23 more)
- * @version `3.11.0` (17 versions available)
+ * @version `3.11.1` (18 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gdal.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "gdal.org"
  * console.log(pkg.description) // "GDAL is an open source MIT licensed translator ..."
  * console.log(pkg.programs)    // ["gdaladdo", "gdalbuildvrt", ...]
- * console.log(pkg.versions[0]) // "3.11.0" (latest)
+ * console.log(pkg.versions[0]) // "3.11.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gdal-org.md
@@ -136,6 +136,7 @@ export const gdalorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.11.1',
     '3.11.0',
     '3.10.3',
     '3.10.2',
