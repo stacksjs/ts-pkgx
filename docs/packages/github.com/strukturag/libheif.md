@@ -27,22 +27,23 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 20 versions</summary>
+<summary>Show all 21 versions</summary>
 
-- `1.19.8`, `1.19.7`, `1.19.6`, `1.19.5`, `1.19.4`
-- `1.19.3`, `1.19.2`, `1.19.1`, `1.19.0`, `1.18.2`
-- `1.18.1`, `1.18.0`, `1.17.6`, `1.17.5`, `1.17.4`
-- `1.17.3`, `1.17.2`, `1.17.1`, `1.17.0`, `1.16.2`
+- `1.20.0`, `1.19.8`, `1.19.7`, `1.19.6`, `1.19.5`
+- `1.19.4`, `1.19.3`, `1.19.2`, `1.19.1`, `1.19.0`
+- `1.18.2`, `1.18.1`, `1.18.0`, `1.17.6`, `1.17.5`
+- `1.17.4`, `1.17.3`, `1.17.2`, `1.17.1`, `1.17.0`
+- `1.16.2`
 
 </details>
 
-**Latest Version**: `1.19.8`
+**Latest Version**: `1.20.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/strukturag/libheif@1.19.8 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/strukturag/libheif@1.20.0 -- $SHELL -i
 ```
 
 ## Dependencies
