@@ -74,7 +74,7 @@ sh <(curl https://pkgx.sh) +gdal.org@3.11.1 -- $SHELL -i
 
 This package depends on:
 
-- `apache.org/arrow`
+- `apache.org/arrow@19`
 - `heasarc.gsfc.nasa.gov/cfitsio`
 - `epsilon-project.sourceforge.io`
 - `libexpat.github.io`
@@ -94,7 +94,7 @@ This package depends on:
 - `postgresql.org/libpq`
 - `gaia-gis.it/libspatialite`
 - `simplesystems.org/libtiff`
-- `gnome.org/libxml2`
+- `gnome.org/libxml2~2.13 # 2.14 changed the soname`
 - `unidata.ucar.edu/netcdf`
 - `numpy.org`
 - `openexr.com`
@@ -118,7 +118,7 @@ This package depends on:
 - `github.com/ebiggers/libdeflate`
 - `linux:curl.se`
 - `linux:github.com/util-linux/util-linux`
-- `linux:apache.org/thrift=0.21.0 # since 3.10.0`
+- `linux:apache.org/thrift=0.22.0 # since 3.11.1`
 
 ## Usage Examples
 

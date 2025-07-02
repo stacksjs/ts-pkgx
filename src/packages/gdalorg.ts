@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gdal.org`
- * @dependencies `apache.org/arrow`, `heasarc.gsfc.nasa.gov/cfitsio`, `epsilon-project.sourceforge.io`, ... (+42 more) (includes OS-specific dependencies with `os:package` format)
+ * @dependencies `apache.org/arrow@19`, `heasarc.gsfc.nasa.gov/cfitsio`, `epsilon-project.sourceforge.io`, ... (+42 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -85,7 +85,7 @@ export const gdalorgPackage = {
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'apache.org/arrow',
+    'apache.org/arrow@19',
     'heasarc.gsfc.nasa.gov/cfitsio',
     'epsilon-project.sourceforge.io',
     'libexpat.github.io',
@@ -105,7 +105,7 @@ export const gdalorgPackage = {
     'postgresql.org/libpq',
     'gaia-gis.it/libspatialite',
     'simplesystems.org/libtiff',
-    'gnome.org/libxml2',
+    'gnome.org/libxml2~2.13 # 2.14 changed the soname',
     'unidata.ucar.edu/netcdf',
     'numpy.org',
     'openexr.com',
@@ -129,7 +129,7 @@ export const gdalorgPackage = {
     'github.com/ebiggers/libdeflate',
     'linux:curl.se',
     'linux:github.com/util-linux/util-linux',
-    'linux:apache.org/thrift=0.21.0 # since 3.10.0',
+    'linux:apache.org/thrift=0.22.0 # since 3.11.1',
   ] as const,
   /**
    * Available versions from newest to oldest.
