@@ -3,7 +3,7 @@
  *
  * @domain `github.com/krzkaczor/ny`
  * @programs `ny`
- * @version `0.2.1` (4 versions available)
+ * @version `0.2.2` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ny`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "ny"
  * console.log(pkg.description) // "🗽 Fast, Proxy Package Manager for JavaScript"
  * console.log(pkg.programs)    // ["ny"]
- * console.log(pkg.versions[0]) // "0.2.1" (latest)
+ * console.log(pkg.versions[0]) // "0.2.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/krzkaczor/ny.md
@@ -69,6 +69,7 @@ export const nyPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.2.2',
     '0.2.1',
     '0.2.0',
     '0.1.2',
