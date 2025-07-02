@@ -3,7 +3,7 @@
  *
  * @domain `tcl-lang.org`
  * @programs `tclsh`, `wish`, `critcl`
- * @version `9.0.1` (6 versions available)
+ * @version `9.0.2` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tcl-lang.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "tcl-lang.org"
  * console.log(pkg.description) // "Tool Command Language"
  * console.log(pkg.programs)    // ["tclsh", "wish", ...]
- * console.log(pkg.versions[0]) // "9.0.1" (latest)
+ * console.log(pkg.versions[0]) // "9.0.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tcl-lang-org.md
@@ -71,6 +71,7 @@ export const tcllangorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '9.0.2',
     '9.0.1',
     '9.0.0',
     '8.6.16',
