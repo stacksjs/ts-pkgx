@@ -3,7 +3,7 @@
  *
  * @domain `rucio.cern.ch/rucio-client`
  * @programs `rucio`, `rucio-admin`
- * @version `37.6.0` (28 versions available)
+ * @version `37.6.0` (29 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rucio-client`
@@ -82,6 +82,7 @@ export const rucioclientPackage = {
     '36.3.0',
     '36.2.0',
     '36.1.0',
+    '35.8.0',
     '35.7.0',
     '35.6.1',
     '35.6.0',
