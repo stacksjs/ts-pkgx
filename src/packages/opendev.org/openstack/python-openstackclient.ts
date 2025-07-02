@@ -3,7 +3,7 @@
  *
  * @domain `opendev.org/openstack/python-openstackclient`
  * @programs `openstack`, `openstack-inventory`
- * @version `8.1.0` (20 versions available)
+ * @version `8.1.0` (21 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openstack`
@@ -71,6 +71,7 @@ export const openstackPackage = {
   versions: [
     '8.1.0',
     '8.0.0',
+    '7.5.0',
     '7.4.0',
     '7.3.1',
     '7.3.0',
