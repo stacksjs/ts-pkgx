@@ -8,6 +8,7 @@
  *
  * @install `launchpad install ny`
  * @name `ny`
+ * @companions `npmjs.com`
  *
  * @example
  * ```typescript
@@ -55,7 +56,13 @@ export const nyPackage = {
   programs: [
     'ny',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'npmjs.com',
+  ] as const,
   dependencies: [] as const,
   /**
    * Available versions from newest to oldest.

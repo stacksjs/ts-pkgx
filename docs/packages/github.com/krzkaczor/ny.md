@@ -40,6 +40,12 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) ny -- $SHELL -i
 ```
 
+## Related Packages
+
+These packages work well with ny:
+
+- [`npmjs.com`](../../npmjs.com/index.md) - the package manager for JavaScript
+
 ## Usage Examples
 
 ```typescript
