@@ -25,14 +25,14 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `1.4.3`, `1.4.2`, `1.4.1`, `1.4.0`, `1.3.2`
-- `1.3.1`, `1.3.0`
+- `1.4.4`, `1.4.3`, `1.4.2`, `1.4.1`, `1.4.0`
+- `1.3.2`, `1.3.1`, `1.3.0`
 
 </details>
 
-**Latest Version**: `1.4.3`
+**Latest Version**: `1.4.4`
 
 ### Install Specific Version
 

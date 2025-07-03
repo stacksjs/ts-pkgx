@@ -2,7 +2,7 @@
  * **gnu.org/readline** - pkgx package
  *
  * @domain `gnu.org/readline`
- * @version `8.2.13` (3 versions available)
+ * @version `8.3.0` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/readline`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.gnuorgreadline
  * console.log(pkg.name)        // "gnu.org/readline"
- * console.log(pkg.versions[0]) // "8.2.13" (latest)
+ * console.log(pkg.versions[0]) // "8.3.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/readline.md
@@ -55,6 +55,7 @@ export const gnuorgreadlinePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '8.3.0',
     '8.2.13',
     '8.2.0',
     '8.1.0',

@@ -3,7 +3,7 @@
  *
  * @domain `gnu.org/bash`
  * @programs `bash`, `bashbug`
- * @version `5.2.37` (5 versions available)
+ * @version `5.3.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bash`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "bash"
  * console.log(pkg.description) // "Bourne-Again SHell, a UNIX command interpreter"
  * console.log(pkg.programs)    // ["bash", "bashbug"]
- * console.log(pkg.versions[0]) // "5.2.37" (latest)
+ * console.log(pkg.versions[0]) // "5.3.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/bash.md
@@ -63,6 +63,7 @@ export const bashPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '5.3.0',
     '5.2.37',
     '5.2.32',
     '5.2.21',

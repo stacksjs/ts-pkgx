@@ -3,7 +3,7 @@
  *
  * @domain `github.com/aristocratos/btop`
  * @programs `btop`
- * @version `1.4.3` (7 versions available)
+ * @version `1.4.4` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install btop`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "btop"
  * console.log(pkg.description) // "Resource monitor. C++ version and continuation ..."
  * console.log(pkg.programs)    // ["btop"]
- * console.log(pkg.versions[0]) // "1.4.3" (latest)
+ * console.log(pkg.versions[0]) // "1.4.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/aristocratos/btop.md
@@ -70,6 +70,7 @@ export const btopPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.4.4',
     '1.4.3',
     '1.4.2',
     '1.4.1',

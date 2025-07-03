@@ -26,19 +26,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 5 versions</summary>
+<summary>Show all 6 versions</summary>
 
-- `5.2.37`, `5.2.32`, `5.2.21`, `5.2.15`, `5.1.16`
+- `5.3.0`, `5.2.37`, `5.2.32`, `5.2.21`, `5.2.15`
+- `5.1.16`
 
 </details>
 
-**Latest Version**: `5.2.37`
+**Latest Version**: `5.3.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/bash@5.2.37 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnu.org/bash@5.3.0 -- $SHELL -i
 ```
 
 ## Usage Examples
