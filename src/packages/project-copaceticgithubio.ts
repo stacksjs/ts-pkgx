@@ -3,7 +3,7 @@
  *
  * @domain `project-copacetic.github.io`
  * @programs `copa`
- * @version `0.10.0` (5 versions available)
+ * @version `0.11.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install copa`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "copa"
  * console.log(pkg.description) // "Tool to directly patch container images given t..."
  * console.log(pkg.programs)    // ["copa"]
- * console.log(pkg.versions[0]) // "0.10.0" (latest)
+ * console.log(pkg.versions[0]) // "0.11.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/project-copacetic-github-io.md
@@ -62,6 +62,7 @@ export const copaPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.11.0',
     '0.10.0',
     '0.9.0',
     '0.8.0',
