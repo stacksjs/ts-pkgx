@@ -3,7 +3,7 @@
  *
  * @domain `pwmt.org/zathura`
  * @programs `zathura`
- * @version `0.5.11` (6 versions available)
+ * @version `0.5.12` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install zathura`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "zathura"
  * console.log(pkg.description) // "Document viewer"
  * console.log(pkg.programs)    // ["zathura"]
- * console.log(pkg.versions[0]) // "0.5.11" (latest)
+ * console.log(pkg.versions[0]) // "0.5.12" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pwmt-org/zathura.md
@@ -80,6 +80,7 @@ export const zathuraPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.5.12',
     '0.5.11',
     '0.5.10',
     '0.5.9',
