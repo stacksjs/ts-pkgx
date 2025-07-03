@@ -3,7 +3,7 @@
  *
  * @domain `kluctl.io`
  * @programs `kluctl`
- * @version `2.26.0` (14 versions available)
+ * @version `2.27.0` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kluctl`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "kluctl"
  * console.log(pkg.description) // "The missing glue to put together large Kubernet..."
  * console.log(pkg.programs)    // ["kluctl"]
- * console.log(pkg.versions[0]) // "2.26.0" (latest)
+ * console.log(pkg.versions[0]) // "2.27.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kluctl-io.md
@@ -62,6 +62,7 @@ export const kluctlPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.27.0',
     '2.26.0',
     '2.25.1',
     '2.25.0',
