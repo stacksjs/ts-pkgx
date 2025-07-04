@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-07-04T14:29:26.579Z
+- **Last Updated**: 2025-07-04T15:28:09.539Z
 
 ## Table of Contents
 
@@ -143,7 +143,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.5.2 (+39) | `pkgx podman` |
 | **[runatlantis.io](./packages/runatlantis.io/index.md)** () | Terraform Pull Request Automation tool | atlantis | 0.35.0 (+18) | `pkgx atlantis` |
 | **[terraform.io](./packages/terraform.io/index.md)** () | Terraform enables you to safely and predictably create, change, and improve infrastructure. It is... | terraform | 1.12.2 (+74) | `pkgx terraform` |
-| **[terragrunt.gruntwork.io](./packages/terragrunt.gruntwork.io/index.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.82.4 (+359) | `pkgx terragrunt` |
+| **[terragrunt.gruntwork.io](./packages/terragrunt.gruntwork.io/index.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.83.0 (+360) | `pkgx terragrunt` |
 | **[terratag.io](./packages/terratag.io/index.md)** () | Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags ... | terratag | 0.7.2 (+17) | `pkgx terratag` |
 | **[vaultproject.io](./packages/vaultproject.io/index.md)** () | A tool for secrets management, encryption as a service, and privileged access management | vault | 1.20.0 (+56) | `pkgx vault` |
 
@@ -203,7 +203,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[github.com/moby/buildkit](./packages/github.com/moby/buildkit.md)** (buildctl) | concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit | buildctl | 0.23.2 (+27) | `pkgx buildctl` |
 | **[gnu.org/autoconf](./packages/gnu.org/autoconf/index.md)** () | Automatic configure script builder | autoconf, autoheader, autom4te, ... (+4) | 2.72.0 (+1) | `pkgx gnu.org/autoconf` |
 | **[gnu.org/automake](./packages/gnu.org/automake/index.md)** () | Tool for generating GNU Standards-compliant Makefiles | aclocal, automake | 1.18.1 (+3) | `pkgx gnu.org/automake` |
-| **[gradle.org](./packages/gradle.org/index.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 8.14.2 (+18) | `pkgx gradle` |
+| **[gradle.org](./packages/gradle.org/index.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 8.14.3 (+19) | `pkgx gradle` |
 | **[just.systems](./packages/just.systems/index.md)** () | Handy way to save and run project-specific commands | just | 1.41.0 (+40) | `pkgx just` |
 | **[maven.apache.org](./packages/maven.apache.org/index.md)** () | Java-based project management | mvn, mvnDebug, mvnyjp | 3.9.10 (+10) | `pkgx mvn` |
 | **[mesonbuild.com](./packages/mesonbuild.com/index.md)** () | Fast and user friendly build system | meson | 1.8.2 (+27) | `pkgx meson` |
@@ -384,7 +384,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[appium.io](./packages/appium.io/index.md)** () | Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver prot... | appium | 2.19.0 (+36) | `pkgx appium` |
 | **[fastlane.tools](./packages/fastlane.tools/index.md)** () | 🚀 The easiest way to automate building and releasing your iOS and Android apps | fastlane | 2.228.0 (+22) | `pkgx fastlane` |
 | **[flutter.dev](./packages/flutter.dev/index.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.32.5 (+48) | `pkgx flutter.dev` |
-| **[gradle.org](./packages/gradle.org/index.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 8.14.2 (+18) | `pkgx gradle` |
+| **[gradle.org](./packages/gradle.org/index.md)** () | Open-source build automation tool based on the Groovy and Kotlin DSL | gradle | 8.14.3 (+19) | `pkgx gradle` |
 
 ## Testing
 
