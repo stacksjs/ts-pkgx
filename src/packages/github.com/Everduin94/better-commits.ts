@@ -3,7 +3,7 @@
  *
  * @domain `github.com/Everduin94/better-commits`
  * @programs `bcommits`, `better-branch`, `better-commits`, `better-commits-init`, `git-bc`
- * @version `1.17.0` (13 versions available)
+ * @version `1.17.1` (14 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/Everduin94/better-commits`
@@ -16,7 +16,7 @@
  * const pkg = pantry.githubcomeverduin94bettercommits
  * console.log(pkg.name)        // "github.com/Everduin94/better-commits"
  * console.log(pkg.programs)    // ["bcommits", "better-branch", ...]
- * console.log(pkg.versions[0]) // "1.17.0" (latest)
+ * console.log(pkg.versions[0]) // "1.17.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/Everduin94/better-commits.md
@@ -67,6 +67,7 @@ export const githubcomeverduin94bettercommitsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.17.1',
     '1.17.0',
     '1.16.1',
     '1.16.0',
