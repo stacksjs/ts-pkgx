@@ -1,11 +1,11 @@
-# click
+# python-click
 
-> Package from pantry: palletsprojects.com/click
+> Python composable command line interface toolkit
 
 ## Package Information
 
 - **Domain**: `palletsprojects.com/click`
-- **Name**: `click`
+- **Name**: `python-click`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/palletsprojects.com/click/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install palletsprojects.com/click
+launchpad install python-click
 ```
 
 ## Programs
@@ -21,6 +21,24 @@ launchpad install palletsprojects.com/click
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `8.2.1`, `8.2.0`, `8.1.8`, `8.1.7`
+
+</details>
+
+**Latest Version**: `8.2.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +palletsprojects.com/click@8.2.1 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.click
+const pkg = pantry['python-click']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

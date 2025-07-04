@@ -1,6 +1,6 @@
 # x264
 
-> Package from pantry: videolan.org/x264
+> H.264/AVC encoder
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install videolan.org/x264
+launchpad install x264
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `x264`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.164.3095`
+
+</details>
+
+**Latest Version**: `0.164.3095`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) x264 -- $SHELL -i
+```
 
 ## Usage Examples
 

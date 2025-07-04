@@ -1,28 +1,38 @@
 /**
- * **pluralith.com** - Package from pantry: pluralith.com
+ * **pluralith** - A tool for Terraform state visualisation and automated generation of infrastructure documentation
  *
  * @domain `pluralith.com`
+ * @programs `pluralith`
+ * @version `0.2.2` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install pluralith.com`
+ * @install `launchpad install pluralith`
+ * @name `pluralith`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.pluralithcom
- * console.log(pkg.name)        // "pluralith.com"
- * console.log(pkg.description) // "Package from pantry: pluralith.com"
+ * // Access the package
+ * const pkg = pantry.pluralith
+ * // Or access via domain
+ * const samePkg = pantry.pluralithcom
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "pluralith"
+ * console.log(pkg.description) // "A tool for Terraform state visualisation and au..."
+ * console.log(pkg.programs)    // ["pluralith"]
+ * console.log(pkg.versions[0]) // "0.2.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pluralith-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pluralithcomPackage = {
+export const pluralithPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pluralith.com' as const,
+  name: 'pluralith' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +40,22 @@ export const pluralithcomPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: pluralith.com' as const,
+  description: 'A tool for Terraform state visualisation and automated generation of infrastructure documentation' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pluralith.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pluralith.com' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pluralith.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pluralith.com' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install pluralith' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'pluralith',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,20 @@ export const pluralithcomPackage = {
   dependencies: [
     'curl.se/ca-certs',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pluralith.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.2.2',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pluralith -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pluralith' as const,
 }
 
-export type PluralithcomPackage = typeof pluralithcomPackage
+export type PluralithPackage = typeof pluralithPackage

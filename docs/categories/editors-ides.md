@@ -1,6 +1,6 @@
 # Editors & IDEs
 
-*6 packages in this category*
+*8 packages in this category*
 
 Packages related to editors & ides.
 
@@ -46,23 +46,43 @@ Command-line interface built-in Visual Studio Code
 
 ---
 
-### [vim.org](../packages/vim.org/index.md)
+### [nano-editor.org](../packages/nano-editor.org/index.md) (nano)
 
-Package from pantry: vim.org
+Free (GNU) replacement for the Pico text editor
 
-**Programs**: None specified
+**Programs**: nano
 
-**Install**: `launchpad install vim.org`
+**Install**: `launchpad install nano`
+
+---
+
+### [neovim.io](../packages/neovim.io/index.md) (nvim)
+
+Ambitious Vim-fork focused on extensibility and agility
+
+**Programs**: nvim
+
+**Install**: `launchpad install nvim`
+
+---
+
+### [vim.org](../packages/vim.org/index.md) (vim, vi)
+
+The official Vim repository
+
+**Programs**: vim, vi
+
+**Install**: `launchpad install vi`
 
 ---
 
 ### [wezfurlong.org/wezterm](../packages/wezfurlong.org/wezterm/index.md) (wezterm)
 
-Package from pantry: wezfurlong.org/wezterm
+A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
 
-**Programs**: None specified
+**Programs**: wezterm
 
-**Install**: `launchpad install wezfurlong.org/wezterm`
+**Install**: `launchpad install wezterm`
 
 ---
 

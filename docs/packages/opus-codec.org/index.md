@@ -1,6 +1,6 @@
 # opus-codec.org
 
-> Package from pantry: opus-codec.org
+> Modern audio compression for the internet.
 
 ## Package Information
 
@@ -21,6 +21,24 @@ launchpad install opus-codec.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `1.5.2`, `1.5.1`, `1.5.0`, `1.4.0`, `1.3.1`
+
+</details>
+
+**Latest Version**: `1.5.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +opus-codec.org@1.5.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

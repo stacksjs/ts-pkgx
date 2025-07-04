@@ -1,7 +1,9 @@
 /**
- * **libbluray** - Package from pantry: videolan.org/libbluray
+ * **videolan.org/libbluray** - pkgx package
  *
  * @domain `videolan.org/libbluray`
+ * @version `1.3.4` (1 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install videolan.org/libbluray`
  * @dependencies `freedesktop.org/fontconfig`, `freetype.org`, `darwin:gnome.org/libxml2` (includes OS-specific dependencies with `os:package` format)
@@ -11,8 +13,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.videolanorglibbluray
- * console.log(pkg.name)        // "libbluray"
- * console.log(pkg.description) // "Package from pantry: videolan.org/libbluray"
+ * console.log(pkg.name)        // "videolan.org/libbluray"
+ * console.log(pkg.versions[0]) // "1.3.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/videolan-org/libbluray.md
@@ -22,7 +24,7 @@ export const videolanorglibblurayPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libbluray' as const,
+  name: 'videolan.org/libbluray' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,14 +32,15 @@ export const videolanorglibblurayPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: videolan.org/libbluray' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/videolan.org/libbluray/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install videolan.org/libbluray' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +videolan.org/libbluray -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install videolan.org/libbluray' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -50,10 +53,16 @@ export const videolanorglibblurayPackage = {
     'freetype.org',
     'darwin:gnome.org/libxml2',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/videolan.org/libbluray/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.3.4',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +videolan.org/libbluray -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install videolan.org/libbluray' as const,
 }
 
 export type VideolanorglibblurayPackage = typeof videolanorglibblurayPackage

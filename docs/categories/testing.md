@@ -6,13 +6,13 @@ Packages related to testing.
 
 ## Packages
 
-### [pytest.org](../packages/pytest.org/index.md)
+### [pytest.org](../packages/pytest.org/index.md) (pytest)
 
-Package from pantry: pytest.org
+The pytest framework makes it easy to write small tests, yet scales to support complex functional testing
 
-**Programs**: None specified
+**Programs**: pytest
 
-**Install**: `launchpad install pytest.org`
+**Install**: `launchpad install pytest`
 
 ---
 

@@ -44,7 +44,7 @@ sh <(curl https://pkgx.sh) ny -- $SHELL -i
 
 These packages work well with ny:
 
-- [`npmjs.com`](../../npmjs.com/index.md) - Package from pantry: npmjs.com
+- [`npmjs.com`](../../npmjs.com/index.md) - the package manager for JavaScript
 
 ## Usage Examples
 
