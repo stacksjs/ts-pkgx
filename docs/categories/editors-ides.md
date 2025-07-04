@@ -1,6 +1,6 @@
 # Editors & IDEs
 
-*5 packages in this category*
+*6 packages in this category*
 
 Packages related to editors & ides.
 
@@ -16,23 +16,33 @@ A cross-platform, OpenGL terminal emulator.
 
 ---
 
-### [github.com/mamba-org/micro](../packages/github.com/mamba-org/micro.md) (micromamba)
+### [gnu.org/emacs](../packages/gnu.org/emacs/index.md) (emacs)
 
-The Fast Cross-Platform Package Manager
+GNU Emacs text editor
 
-**Programs**: micromamba
+**Programs**: emacs
 
-**Install**: `launchpad install micromamba`
+**Install**: `launchpad install emacs`
 
 ---
 
-### [gnu.org/emacs](../packages/gnu.org/emacs/index.md) (emacs)
+### [micro-editor.github.io](../packages/micro-editor.github.io/index.md) (micro)
 
-Package from pantry: gnu.org/emacs
+A modern and intuitive terminal-based text editor
 
-**Programs**: None specified
+**Programs**: micro
 
-**Install**: `launchpad install gnu.org/emacs`
+**Install**: `launchpad install micro`
+
+---
+
+### [microsoft.com/code-cli](../packages/microsoft.com/code-cli/index.md) (vscode cli, code)
+
+Command-line interface built-in Visual Studio Code
+
+**Programs**: code
+
+**Install**: `launchpad install code`
 
 ---
 

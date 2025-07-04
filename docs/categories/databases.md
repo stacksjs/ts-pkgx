@@ -1,6 +1,6 @@
 # Databases
 
-*4 packages in this category*
+*6 packages in this category*
 
 Database systems and data storage solutions.
 
@@ -43,6 +43,26 @@ Distributed reliable key-value store for the most critical data of a distributed
 **Programs**: etcd, etcdctl
 
 **Install**: `launchpad install etcd`
+
+---
+
+### [litecli.com](../packages/litecli.com/index.md) (litecli)
+
+CLI for SQLite Databases with auto-completion and syntax highlighting
+
+**Programs**: litecli
+
+**Install**: `launchpad install litecli`
+
+---
+
+### [mongodb.com/shell](../packages/mongodb.com/shell/index.md) (mongosh)
+
+MongoDB Shell to connect, configure, query, and work with your MongoDB database
+
+**Programs**: mongosh
+
+**Install**: `launchpad install mongosh`
 
 ---
 

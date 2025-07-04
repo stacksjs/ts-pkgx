@@ -1,6 +1,6 @@
 # Package Managers
 
-*7 packages in this category*
+*9 packages in this category*
 
 Packages related to package managers.
 
@@ -43,6 +43,26 @@ Dependency Manager for PHP
 **Programs**: composer, composer.phar
 
 **Install**: `launchpad install composer`
+
+---
+
+### [luarocks.org](../packages/luarocks.org/index.md) (luarocks)
+
+LuaRocks is the package manager for the Lua programming language.
+
+**Programs**: luarocks, luarocks-admin
+
+**Install**: `launchpad install luarocks`
+
+---
+
+### [mise.jdx.dev](../packages/mise.jdx.dev/index.md) (mise)
+
+dev tools, env vars, task runner
+
+**Programs**: rtx, mise
+
+**Install**: `launchpad install mise`
 
 ---
 

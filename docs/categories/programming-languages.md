@@ -1,6 +1,6 @@
 # Programming Languages
 
-*8 packages in this category*
+*11 packages in this category*
 
 Popular programming languages and their runtimes available through pkgx.
 
@@ -26,13 +26,43 @@ The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries,
 
 ---
 
-### [go.dev](../packages/go.dev/index.md)
+### [go.dev](../packages/go.dev/index.md) (go)
 
-Package from pantry: go.dev
+The Go programming language
 
-**Programs**: None specified
+**Programs**: go, gofmt
 
-**Install**: `launchpad install go.dev`
+**Install**: `launchpad install go`
+
+---
+
+### [julialang.org](../packages/julialang.org/index.md) (julia)
+
+The Julia Programming Language
+
+**Programs**: julia
+
+**Install**: `launchpad install julia`
+
+---
+
+### [lua.org](../packages/lua.org/index.md) (lua)
+
+Powerful, lightweight programming language
+
+**Programs**: lua, luac
+
+**Install**: `launchpad install lua`
+
+---
+
+### [luajit.org](../packages/luajit.org/index.md) (luajit)
+
+Mirror of the LuaJIT git repository
+
+**Programs**: luajit, luajit-2.1.
+
+**Install**: `launchpad install luajit`
 
 ---
 

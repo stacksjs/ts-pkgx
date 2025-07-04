@@ -1,6 +1,6 @@
 # Artificial Intelligence
 
-*8 packages in this category*
+*10 packages in this category*
 
 Packages related to artificial intelligence.
 
@@ -83,6 +83,26 @@ A CLI Swiss Army Knife for ChatGPT
 **Programs**: chatblade
 
 **Install**: `launchpad install chatblade`
+
+---
+
+### [kaggle.com](../packages/kaggle.com/index.md) (kaggle)
+
+Official Kaggle API
+
+**Programs**: kaggle
+
+**Install**: `launchpad install kaggle`
+
+---
+
+### [llm.datasette.io](../packages/llm.datasette.io/index.md) (llm)
+
+Access large language models from the command-line
+
+**Programs**: llm
+
+**Install**: `launchpad install llm`
 
 ---
 

@@ -26,23 +26,23 @@ Command line tools for fly.io services
 
 ---
 
-### [heroku.com](../packages/heroku.com/index.md)
+### [heroku.com](../packages/heroku.com/index.md) (heroku)
 
-Package from pantry: heroku.com
+CLI for Heroku
 
-**Programs**: None specified
+**Programs**: heroku
 
-**Install**: `launchpad install heroku.com`
+**Install**: `launchpad install heroku`
 
 ---
 
-### [localstack.cloud/cli](../packages/localstack.cloud/cli/index.md) (cli)
+### [localstack.cloud/cli](../packages/localstack.cloud/cli/index.md) (localstack)
 
-Package from pantry: localstack.cloud/cli
+The LocalStack CLI packaged using pyinstaller
 
-**Programs**: None specified
+**Programs**: localstack
 
-**Install**: `launchpad install localstack.cloud/cli`
+**Install**: `launchpad install localstack`
 
 ---
 

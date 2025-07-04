@@ -1,6 +1,6 @@
 # Networking
 
-*5 packages in this category*
+*6 packages in this category*
 
 Network tools, protocols, and communication software.
 
@@ -48,11 +48,21 @@ A command line tool and library for transferring data with URL syntax, supportin
 
 ### [gnu.org/wget](../packages/gnu.org/wget/index.md) (wget)
 
-Package from pantry: gnu.org/wget
+Internet file retriever
 
-**Programs**: None specified
+**Programs**: wget
 
-**Install**: `launchpad install gnu.org/wget`
+**Install**: `launchpad install wget`
+
+---
+
+### [mosh.org](../packages/mosh.org/index.md) (mosh)
+
+Remote terminal application
+
+**Programs**: mosh-client, mosh-server
+
+**Install**: `launchpad install mosh`
 
 ---
 

@@ -1,6 +1,6 @@
 # Build Tools & Automation
 
-*9 packages in this category*
+*12 packages in this category*
 
 Packages related to build tools & automation.
 
@@ -56,33 +56,63 @@ concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit
 
 ---
 
-### [gnu.org/autoconf](../packages/gnu.org/autoconf/index.md) (autoconf)
+### [gnu.org/autoconf](../packages/gnu.org/autoconf/index.md)
 
-Package from pantry: gnu.org/autoconf
+Automatic configure script builder
 
-**Programs**: None specified
+**Programs**: autoconf, autoheader, autom4te, autoreconf, autoscan, autoupdate, ifnames
 
 **Install**: `launchpad install gnu.org/autoconf`
 
 ---
 
-### [gnu.org/automake](../packages/gnu.org/automake/index.md) (automake)
+### [gnu.org/automake](../packages/gnu.org/automake/index.md)
 
-Package from pantry: gnu.org/automake
+Tool for generating GNU Standards-compliant Makefiles
 
-**Programs**: None specified
+**Programs**: aclocal, automake
 
 **Install**: `launchpad install gnu.org/automake`
 
 ---
 
-### [gnu.org/make](../packages/gnu.org/make/index.md) (make)
+### [gradle.org](../packages/gradle.org/index.md) (gradle)
 
-Package from pantry: gnu.org/make
+Open-source build automation tool based on the Groovy and Kotlin DSL
 
-**Programs**: None specified
+**Programs**: gradle
 
-**Install**: `launchpad install gnu.org/make`
+**Install**: `launchpad install gradle`
+
+---
+
+### [just.systems](../packages/just.systems/index.md) (just)
+
+Handy way to save and run project-specific commands
+
+**Programs**: just
+
+**Install**: `launchpad install just`
+
+---
+
+### [maven.apache.org](../packages/maven.apache.org/index.md) (mvn)
+
+Java-based project management
+
+**Programs**: mvn, mvnDebug, mvnyjp
+
+**Install**: `launchpad install mvn`
+
+---
+
+### [mesonbuild.com](../packages/mesonbuild.com/index.md) (meson)
+
+Fast and user friendly build system
+
+**Programs**: meson
+
+**Install**: `launchpad install meson`
 
 ---
 

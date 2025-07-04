@@ -18,21 +18,21 @@ Packages related to documentation & text processing.
 
 ### [maaslalani.com/slides](../packages/maaslalani.com/slides/index.md) (slides)
 
-Package from pantry: maaslalani.com/slides
+Terminal based presentation tool
 
-**Programs**: None specified
+**Programs**: slides
 
-**Install**: `launchpad install maaslalani.com/slides`
+**Install**: `launchpad install slides`
 
 ---
 
-### [mkdocs.org](../packages/mkdocs.org/index.md)
+### [mkdocs.org](../packages/mkdocs.org/index.md) (mkdocs)
 
-Package from pantry: mkdocs.org
+Project documentation with Markdown.
 
-**Programs**: None specified
+**Programs**: mkdocs
 
-**Install**: `launchpad install mkdocs.org`
+**Install**: `launchpad install mkdocs`
 
 ---
 

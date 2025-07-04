@@ -1,6 +1,6 @@
 # CLI Tools & Utilities
 
-*32 packages in this category*
+*31 packages in this category*
 
 Command-line utilities and system tools.
 
@@ -268,41 +268,31 @@ Display directories as trees (with optional color/HTML output)
 
 ### [gnu.org/bash](../packages/gnu.org/bash/index.md) (bash)
 
-Package from pantry: gnu.org/bash
+Bourne-Again SHell, a UNIX command interpreter
 
-**Programs**: None specified
+**Programs**: bash, bashbug
 
-**Install**: `launchpad install gnu.org/bash`
-
----
-
-### [gnu.org/grep](../packages/gnu.org/grep/index.md) (grep)
-
-Package from pantry: gnu.org/grep
-
-**Programs**: None specified
-
-**Install**: `launchpad install gnu.org/grep`
-
----
-
-### [gnu.org/sed](../packages/gnu.org/sed/index.md) (sed)
-
-Package from pantry: gnu.org/sed
-
-**Programs**: None specified
-
-**Install**: `launchpad install gnu.org/sed`
+**Install**: `launchpad install bash`
 
 ---
 
 ### [gnu.org/wget](../packages/gnu.org/wget/index.md) (wget)
 
-Package from pantry: gnu.org/wget
+Internet file retriever
 
-**Programs**: None specified
+**Programs**: wget
 
-**Install**: `launchpad install gnu.org/wget`
+**Install**: `launchpad install wget`
+
+---
+
+### [htop.dev](../packages/htop.dev/index.md) (htop)
+
+Improved top (interactive process viewer)
+
+**Programs**: htop
+
+**Install**: `launchpad install htop`
 
 ---
 

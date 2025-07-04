@@ -1,6 +1,6 @@
 # DevOps
 
-*13 packages in this category*
+*18 packages in this category*
 
 Tools for deployment, orchestration, and infrastructure management.
 
@@ -106,33 +106,83 @@ A Pluggable Terraform Linter
 
 ---
 
+### [helm.sh](../packages/helm.sh/index.md) (helm)
+
+The Kubernetes Package Manager
+
+**Programs**: helm
+
+**Install**: `launchpad install helm`
+
+---
+
+### [infracost.io](../packages/infracost.io/index.md) (infracost)
+
+Cloud cost estimates for Terraform in pull requests💰📉 Shift FinOps Left!
+
+**Programs**: infracost
+
+**Install**: `launchpad install infracost`
+
+---
+
+### [jenkins.io](../packages/jenkins.io/index.md) (jenkins-lts)
+
+Extendable open source continuous integration server
+
+**Programs**: jenkins-lts, jenkins-lts-cli
+
+**Install**: `launchpad install jenkins.io`
+
+---
+
+### [k3d.io](../packages/k3d.io/index.md) (k3d)
+
+Little helper to run CNCF's k3s in Docker
+
+**Programs**: k3d
+
+**Install**: `launchpad install k3d`
+
+---
+
+### [kind.sigs.k8s.io](../packages/kind.sigs.k8s.io/index.md) (kind)
+
+Kubernetes IN Docker - local clusters for testing Kubernetes
+
+**Programs**: kind
+
+**Install**: `launchpad install kind`
+
+---
+
 ### [kubernetes.io/kubectl](../packages/kubernetes.io/kubectl/index.md) (kubectl)
 
-Package from pantry: kubernetes.io/kubectl
+Production-Grade Container Scheduling and Management
 
-**Programs**: None specified
+**Programs**: kubectl
 
-**Install**: `launchpad install kubernetes.io/kubectl`
+**Install**: `launchpad install kubectl`
 
 ---
 
 ### [kubernetes.io/kustomize](../packages/kubernetes.io/kustomize/index.md) (kustomize)
 
-Package from pantry: kubernetes.io/kustomize
+Template-free customization of Kubernetes YAML manifests
 
-**Programs**: None specified
+**Programs**: kustomize
 
-**Install**: `launchpad install kubernetes.io/kustomize`
+**Install**: `launchpad install kustomize`
 
 ---
 
 ### [kubernetes.io/minikube](../packages/kubernetes.io/minikube/index.md) (minikube)
 
-Package from pantry: kubernetes.io/minikube
+Run a Kubernetes cluster locally
 
-**Programs**: None specified
+**Programs**: minikube
 
-**Install**: `launchpad install kubernetes.io/minikube`
+**Install**: `launchpad install minikube`
 
 ---
 

@@ -6,13 +6,13 @@ Packages related to system administration.
 
 ## Packages
 
-### [htop.dev](../packages/htop.dev/index.md)
+### [htop.dev](../packages/htop.dev/index.md) (htop)
 
-Package from pantry: htop.dev
+Improved top (interactive process viewer)
 
-**Programs**: None specified
+**Programs**: htop
 
-**Install**: `launchpad install htop.dev`
+**Install**: `launchpad install htop`
 
 ---
 

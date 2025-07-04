@@ -1,6 +1,6 @@
 # Security & Cryptography
 
-*8 packages in this category*
+*9 packages in this category*
 
 Packages related to security & cryptography.
 
@@ -73,6 +73,16 @@ Seamless ssh-agent for YubiKeys and other PIV tokens
 **Programs**: yubikey-agent
 
 **Install**: `launchpad install yubikey-agent`
+
+---
+
+### [mkcert.dev](../packages/mkcert.dev/index.md) (mkcert)
+
+A simple zero-config tool to make locally trusted development certificates with any names you'd like.
+
+**Programs**: mkcert
+
+**Install**: `launchpad install mkcert`
 
 ---
 

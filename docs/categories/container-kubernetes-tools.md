@@ -1,6 +1,6 @@
 # Container & Kubernetes Tools
 
-*11 packages in this category*
+*20 packages in this category*
 
 Packages related to container & kubernetes tools.
 
@@ -76,33 +76,123 @@ A FAST Kubernetes manifests validator, with support for Custom Resources!
 
 ---
 
+### [helm.sh](../packages/helm.sh/index.md) (helm)
+
+The Kubernetes Package Manager
+
+**Programs**: helm
+
+**Install**: `launchpad install helm`
+
+---
+
+### [istio.io](../packages/istio.io/index.md) (istioctl)
+
+Connect, secure, control, and observe services.
+
+**Programs**: istioctl
+
+**Install**: `launchpad install istioctl`
+
+---
+
+### [k9scli.io](../packages/k9scli.io/index.md) (k9s)
+
+🐶 Kubernetes CLI To Manage Your Clusters In Style!
+
+**Programs**: k9s
+
+**Install**: `launchpad install k9s`
+
+---
+
+### [krew.sigs.k8s.io](../packages/krew.sigs.k8s.io/index.md) (kubectl-krew)
+
+📦 Find and install kubectl plugins
+
+**Programs**: kubectl-krew
+
+**Install**: `launchpad install kubectl-krew`
+
+---
+
+### [kubebuilder.io](../packages/kubebuilder.io/index.md) (kubebuilder)
+
+Kubebuilder - SDK for building Kubernetes APIs using CRDs
+
+**Programs**: kubebuilder
+
+**Install**: `launchpad install kubebuilder`
+
+---
+
+### [kubecm.cloud](../packages/kubecm.cloud/index.md) (kubecm)
+
+Manage your kubeconfig more easily.
+
+**Programs**: kubecm
+
+**Install**: `launchpad install kubecm`
+
+---
+
+### [kubelinter.io](../packages/kubelinter.io/index.md) (kube-linter)
+
+KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure the applications represented in them adhere to best practices.
+
+**Programs**: kube-linter
+
+**Install**: `launchpad install kube-linter`
+
+---
+
 ### [kubernetes.io/kubectl](../packages/kubernetes.io/kubectl/index.md) (kubectl)
 
-Package from pantry: kubernetes.io/kubectl
+Production-Grade Container Scheduling and Management
 
-**Programs**: None specified
+**Programs**: kubectl
 
-**Install**: `launchpad install kubernetes.io/kubectl`
+**Install**: `launchpad install kubectl`
 
 ---
 
 ### [kubernetes.io/kustomize](../packages/kubernetes.io/kustomize/index.md) (kustomize)
 
-Package from pantry: kubernetes.io/kustomize
+Template-free customization of Kubernetes YAML manifests
 
-**Programs**: None specified
+**Programs**: kustomize
 
-**Install**: `launchpad install kubernetes.io/kustomize`
+**Install**: `launchpad install kustomize`
 
 ---
 
 ### [kubernetes.io/minikube](../packages/kubernetes.io/minikube/index.md) (minikube)
 
-Package from pantry: kubernetes.io/minikube
+Run a Kubernetes cluster locally
 
-**Programs**: None specified
+**Programs**: minikube
 
-**Install**: `launchpad install kubernetes.io/minikube`
+**Install**: `launchpad install minikube`
+
+---
+
+### [kubeshark.co](../packages/kubeshark.co/index.md) (kubeshark)
+
+The API traffic analyzer for Kubernetes providing real-time K8s protocol-level visibility, capturing and monitoring all traffic and payloads going in, out and across containers, pods, nodes and clusters. Inspired by Wireshark, purposely built for Kubernetes
+
+**Programs**: kubeshark
+
+**Install**: `launchpad install kubeshark`
+
+---
+
+### [linkerd.io/linkerd2](../packages/linkerd.io/linkerd2/index.md) (linkerd)
+
+Ultralight, security-first service mesh for Kubernetes. Main repo for Linkerd 2.x.
+
+**Programs**: linkerd
+
+**Install**: `launchpad install linkerd`
 
 ---
 
