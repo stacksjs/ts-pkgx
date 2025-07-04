@@ -3,7 +3,7 @@
  *
  * @domain `xcfile.dev`
  * @programs `xc`
- * @version `0.8.5` (27 versions available)
+ * @version `0.8.6` (28 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xc`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "xc"
  * console.log(pkg.description) // "Markdown defined task runner."
  * console.log(pkg.programs)    // ["xc"]
- * console.log(pkg.versions[0]) // "0.8.5" (latest)
+ * console.log(pkg.versions[0]) // "0.8.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/xcfile-dev.md
@@ -62,6 +62,7 @@ export const xcPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.8.6',
     '0.8.5',
     '0.8.4',
     '0.8.3',
