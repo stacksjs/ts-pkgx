@@ -1,11 +1,11 @@
-# pyyaml.org/libyaml
+# libyaml
 
-> Canonical source repository for LibYAML
+> Package from pantry: pyyaml.org/libyaml
 
 ## Package Information
 
 - **Domain**: `pyyaml.org/libyaml`
-- **Name**: `pyyaml.org/libyaml`
+- **Name**: `libyaml`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pyyaml.org/libyaml/package.yml)
 
@@ -22,31 +22,13 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.2.5`
-
-</details>
-
-**Latest Version**: `0.2.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +pyyaml.org/libyaml@0.2.5 -- $SHELL -i
-```
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pyyaml.org/libyaml']
+const pkg = pantry.libyaml
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

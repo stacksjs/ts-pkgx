@@ -1,11 +1,11 @@
-# info-zip.org/unzip
+# unzip
 
-> Extraction utility for .zip compressed archives
+> Package from pantry: info-zip.org/unzip
 
 ## Package Information
 
 - **Domain**: `info-zip.org/unzip`
-- **Name**: `info-zip.org/unzip`
+- **Name**: `unzip`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/info-zip.org/unzip/package.yml)
 
@@ -20,29 +20,7 @@ launchpad install info-zip.org/unzip
 
 This package provides the following executable programs:
 
-- `funzip`
-- `unzip`
-- `unzipsfx`
-- `zipgrep`
-- `zipinfo`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `6.0.0`
-
-</details>
-
-**Latest Version**: `6.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +info-zip.org/unzip@6.0.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -50,7 +28,7 @@ sh <(curl https://pkgx.sh) +info-zip.org/unzip@6.0.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['info-zip.org/unzip']
+const pkg = pantry.unzip
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

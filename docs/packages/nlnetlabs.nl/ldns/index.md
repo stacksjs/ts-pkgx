@@ -1,11 +1,11 @@
-# nlnetlabs.nl/ldns
+# ldns
 
-> LDNS is a DNS library that facilitates DNS tool programming
+> Package from pantry: nlnetlabs.nl/ldns
 
 ## Package Information
 
 - **Domain**: `nlnetlabs.nl/ldns`
-- **Name**: `nlnetlabs.nl/ldns`
+- **Name**: `ldns`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nlnetlabs.nl/ldns/package.yml)
 
@@ -20,26 +20,7 @@ launchpad install nlnetlabs.nl/ldns
 
 This package provides the following executable programs:
 
-- `drill`
-- `ldns-config`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.8.4`, `1.8.3`
-
-</details>
-
-**Latest Version**: `1.8.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +nlnetlabs.nl/ldns@1.8.4 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -53,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['nlnetlabs.nl/ldns']
+const pkg = pantry.ldns
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

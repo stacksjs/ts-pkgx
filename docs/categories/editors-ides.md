@@ -1,6 +1,6 @@
 # Editors & IDEs
 
-*8 packages in this category*
+*5 packages in this category*
 
 Packages related to editors & ides.
 
@@ -16,73 +16,43 @@ A cross-platform, OpenGL terminal emulator.
 
 ---
 
+### [github.com/mamba-org/micro](../packages/github.com/mamba-org/micro.md) (micromamba)
+
+The Fast Cross-Platform Package Manager
+
+**Programs**: micromamba
+
+**Install**: `launchpad install micromamba`
+
+---
+
 ### [gnu.org/emacs](../packages/gnu.org/emacs/index.md) (emacs)
 
-GNU Emacs text editor
+Package from pantry: gnu.org/emacs
 
-**Programs**: emacs
+**Programs**: None specified
 
-**Install**: `launchpad install emacs`
-
----
-
-### [micro-editor.github.io](../packages/micro-editor.github.io/index.md) (micro)
-
-A modern and intuitive terminal-based text editor
-
-**Programs**: micro
-
-**Install**: `launchpad install micro`
+**Install**: `launchpad install gnu.org/emacs`
 
 ---
 
-### [microsoft.com/code-cli](../packages/microsoft.com/code-cli/index.md) (vscode cli, code)
+### [vim.org](../packages/vim.org/index.md)
 
-Command-line interface built-in Visual Studio Code
+Package from pantry: vim.org
 
-**Programs**: code
+**Programs**: None specified
 
-**Install**: `launchpad install code`
-
----
-
-### [nano-editor.org](../packages/nano-editor.org/index.md) (nano)
-
-Free (GNU) replacement for the Pico text editor
-
-**Programs**: nano
-
-**Install**: `launchpad install nano`
-
----
-
-### [neovim.io](../packages/neovim.io/index.md) (nvim)
-
-Ambitious Vim-fork focused on extensibility and agility
-
-**Programs**: nvim
-
-**Install**: `launchpad install nvim`
-
----
-
-### [vim.org](../packages/vim.org/index.md) (vim, vi)
-
-The official Vim repository
-
-**Programs**: vim, vi
-
-**Install**: `launchpad install vi`
+**Install**: `launchpad install vim.org`
 
 ---
 
 ### [wezfurlong.org/wezterm](../packages/wezfurlong.org/wezterm/index.md) (wezterm)
 
-A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
+Package from pantry: wezfurlong.org/wezterm
 
-**Programs**: wezterm
+**Programs**: None specified
 
-**Install**: `launchpad install wezterm`
+**Install**: `launchpad install wezfurlong.org/wezterm`
 
 ---
 

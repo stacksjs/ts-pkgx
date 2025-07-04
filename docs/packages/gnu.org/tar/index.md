@@ -1,6 +1,6 @@
 # tar
 
-> Multi-format archive and compression library
+> Package from pantry: gnu.org/tar
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install tar
+launchpad install gnu.org/tar
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `tar`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.35.0`, `1.34.0`
-
-</details>
-
-**Latest Version**: `1.35.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) tar -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

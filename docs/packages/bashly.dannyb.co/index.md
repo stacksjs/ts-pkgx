@@ -53,7 +53,7 @@ This package depends on:
 
 These packages work well with bashly:
 
-- [`gnu.org/bash`](../gnu.org/bash/index.md) - Bourne-Again SHell, a UNIX command interpreter
+- [`gnu.org/bash`](../gnu.org/bash/index.md) - Package from pantry: gnu.org/bash
 
 ## Usage Examples
 

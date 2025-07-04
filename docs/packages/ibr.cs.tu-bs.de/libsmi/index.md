@@ -1,11 +1,11 @@
-# smidiff
+# libsmi
 
-> Library to Access SMI MIB Information
+> Package from pantry: ibr.cs.tu-bs.de/libsmi
 
 ## Package Information
 
 - **Domain**: `ibr.cs.tu-bs.de/libsmi`
-- **Name**: `smidiff`
+- **Name**: `libsmi`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ibr.cs.tu-bs.de/libsmi/package.yml)
 
@@ -13,36 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install smidiff
+launchpad install ibr.cs.tu-bs.de/libsmi
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `smidiff`
-- `smidump`
-- `smilint`
-- `smiquery`
-- `smixlate`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.4.8`
-
-</details>
-
-**Latest Version**: `0.4.8`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +ibr.cs.tu-bs.de/libsmi@0.4.8 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -50,7 +28,7 @@ sh <(curl https://pkgx.sh) +ibr.cs.tu-bs.de/libsmi@0.4.8 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.smidiff
+const pkg = pantry.libsmi
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

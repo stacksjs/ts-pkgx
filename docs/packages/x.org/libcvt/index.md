@@ -1,11 +1,11 @@
-# cvt
+# libcvt
 
-> VESA CVT standard timing modelines generator
+> Package from pantry: x.org/libcvt
 
 ## Package Information
 
 - **Domain**: `x.org/libcvt`
-- **Name**: `cvt`
+- **Name**: `libcvt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/x.org/libcvt/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install cvt
+launchpad install x.org/libcvt
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cvt`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.1.3`, `0.1.2`
-
-</details>
-
-**Latest Version**: `0.1.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) cvt -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -54,7 +36,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cvt
+const pkg = pantry.libcvt
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
