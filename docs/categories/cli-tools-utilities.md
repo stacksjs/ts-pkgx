@@ -1,6 +1,6 @@
 # CLI Tools & Utilities
 
-*31 packages in this category*
+*35 packages in this category*
 
 Command-line utilities and system tools.
 
@@ -296,23 +296,63 @@ Improved top (interactive process viewer)
 
 ---
 
-### [stedolan.github.io/jq](../packages/stedolan.github.io/jq/index.md) (jq)
+### [ohmyposh.dev](../packages/ohmyposh.dev/index.md) (oh-my-posh)
 
-Package from pantry: stedolan.github.io/jq
+The most customisable and low-latency cross platform/shell prompt renderer
 
-**Programs**: None specified
+**Programs**: oh-my-posh
 
-**Install**: `launchpad install stedolan.github.io/jq`
+**Install**: `launchpad install oh-my-posh`
 
 ---
 
-### [wilfred.me.uk/difftastic](../packages/wilfred.me.uk/difftastic/index.md) (difftastic)
+### [starship.rs](../packages/starship.rs/index.md) (starship)
 
-Package from pantry: wilfred.me.uk/difftastic
+☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
-**Programs**: None specified
+**Programs**: starship
 
-**Install**: `launchpad install wilfred.me.uk/difftastic`
+**Install**: `launchpad install starship`
+
+---
+
+### [stedolan.github.io/jq](../packages/stedolan.github.io/jq/index.md) (jq)
+
+Lightweight and flexible command-line JSON processor
+
+**Programs**: jq
+
+**Install**: `launchpad install jq`
+
+---
+
+### [tree-sitter.github.io](../packages/tree-sitter.github.io/index.md) (tree-sitter)
+
+Parser generator tool and incremental parsing library
+
+**Programs**: tree-sitter
+
+**Install**: `launchpad install tree-sitter`
+
+---
+
+### [wilfred.me.uk/difftastic](../packages/wilfred.me.uk/difftastic/index.md) (difft)
+
+a structural diff that understands syntax 🟥🟩
+
+**Programs**: difft
+
+**Install**: `launchpad install difft`
+
+---
+
+### [zsh.sourceforge.io](../packages/zsh.sourceforge.io/index.md) (zsh)
+
+UNIX shell (command interpreter)
+
+**Programs**: zsh
+
+**Install**: `launchpad install zsh`
 
 ---
 
