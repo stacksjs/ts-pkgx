@@ -3,7 +3,7 @@
  *
  * @domain `onefetch.dev`
  * @programs `onefetch`
- * @version `2.24.0` (8 versions available)
+ * @version `2.25.0` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install onefetch`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "onefetch"
  * console.log(pkg.description) // "Command-line Git information tool"
  * console.log(pkg.programs)    // ["onefetch"]
- * console.log(pkg.versions[0]) // "2.24.0" (latest)
+ * console.log(pkg.versions[0]) // "2.25.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/onefetch-dev.md
@@ -69,6 +69,7 @@ export const onefetchPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.25.0',
     '2.24.0',
     '2.23.1',
     '2.23.0',
