@@ -1,7 +1,7 @@
 {
   "name": "ts-pkgx",
   "type": "module",
-  "version": "0.3.81",
+  "version": "0.3.82",
   "description": "A library & CLI for managing packages",
   "author": "Chris Breuer <chris@stacksjs.org>",
   "license": "MIT",
