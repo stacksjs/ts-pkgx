@@ -1,6 +1,6 @@
 # patchelf
 
-> A small utility to modify the dynamic linker and RPATH of ELF executables
+> Package from pantry: nixos.org/patchelf
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install patchelf
+launchpad install nixos.org/patchelf
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `patchelf`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.18.0`, `0.17.2`, `0.17.0`, `0.15.0`
-
-</details>
-
-**Latest Version**: `0.18.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) patchelf -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

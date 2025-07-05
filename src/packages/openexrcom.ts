@@ -1,38 +1,28 @@
 /**
- * **exr2aces** - The OpenEXR project provides the specification and reference implementation of the EXR file format, the professional-grade image storage format of the motion picture industry.
+ * **openexr.com** - Package from pantry: openexr.com
  *
  * @domain `openexr.com`
- * @programs `exr2aces`, `exrenvmap`, `exrheader`, `exrmakepreview`, `exrmaketiled`, ... (+3 more)
- * @version `3.3.4` (20 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install exr2aces`
- * @name `exr2aces`
+ * @install `launchpad install openexr.com`
  * @dependencies `zlib.net^1`, `openexr.com/imath`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.exr2aces
- * // Or access via domain
- * const samePkg = pantry.openexrcom
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "exr2aces"
- * console.log(pkg.description) // "The OpenEXR project provides the specification ..."
- * console.log(pkg.programs)    // ["exr2aces", "exrenvmap", ...]
- * console.log(pkg.versions[0]) // "3.3.4" (latest)
+ * const pkg = pantry.openexrcom
+ * console.log(pkg.name)        // "openexr.com"
+ * console.log(pkg.description) // "Package from pantry: openexr.com"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openexr-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const exr2acesPackage = {
+export const openexrcomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'exr2aces' as const,
+  name: 'openexr.com' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,29 +30,15 @@ export const exr2acesPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'The OpenEXR project provides the specification and reference implementation of the EXR file format, the professional-grade image storage format of the motion picture industry.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openexr.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: openexr.com' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install exr2aces' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'exr2aces',
-    'exrenvmap',
-    'exrheader',
-    'exrmakepreview',
-    'exrmaketiled',
-    'exrmultipart',
-    'exrmultiview',
-    'exrstdattr',
-  ] as const,
+  installCommand: 'launchpad install openexr.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openexr.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openexr.com' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -72,39 +48,10 @@ export const exr2acesPackage = {
     'zlib.net^1',
     'openexr.com/imath',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.3.4',
-    '3.3.3',
-    '3.3.2',
-    '3.3.1',
-    '3.3.0',
-    '3.2.126',
-    '3.2.4',
-    '3.2.3',
-    '3.2.2',
-    '3.2.1',
-    '3.2.0',
-    '3.1.13',
-    '3.1.12',
-    '3.1.11',
-    '3.1.10',
-    '3.1.9',
-    '3.1.8',
-    '3.1.7',
-    '3.1.6',
-    '2.5.10',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openexr.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install exr2aces' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openexr.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type Exr2acesPackage = typeof exr2acesPackage
+export type OpenexrcomPackage = typeof openexrcomPackage

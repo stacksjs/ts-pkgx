@@ -1,6 +1,6 @@
 # genact
 
-> 🌀 A nonsense activity generator
+> Package from pantry: svenstaro.github.io/genact
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install genact
+launchpad install svenstaro.github.io/genact
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `genact`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `1.4.2`, `1.4.1`, `1.4.0`, `1.3.0`, `1.2.2`
-
-</details>
-
-**Latest Version**: `1.4.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) genact -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

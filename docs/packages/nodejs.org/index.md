@@ -81,7 +81,7 @@ This package depends on:
 
 These packages work well with node:
 
-- [`npmjs.com`](../npmjs.com/index.md) - the package manager for JavaScript
+- [`npmjs.com`](../npmjs.com/index.md) - Package from pantry: npmjs.com
 
 ## Usage Examples
 

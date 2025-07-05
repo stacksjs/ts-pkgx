@@ -16,13 +16,13 @@ JupyterLab computational environment.
 
 ---
 
-### [numpy.org](../packages/numpy.org/index.md) (f2py)
+### [numpy.org](../packages/numpy.org/index.md)
 
-The fundamental package for scientific computing with Python.
+Package from pantry: numpy.org
 
-**Programs**: f2py
+**Programs**: None specified
 
-**Install**: `launchpad install f2py`
+**Install**: `launchpad install numpy.org`
 
 ---
 

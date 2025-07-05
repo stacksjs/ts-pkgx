@@ -36,43 +36,43 @@ Project documentation with Markdown.
 
 ---
 
-### [pandoc.org](../packages/pandoc.org/index.md) (pandoc)
+### [pandoc.org](../packages/pandoc.org/index.md)
 
-Swiss-army knife of markup format conversion
+Package from pantry: pandoc.org
 
-**Programs**: pandoc
+**Programs**: None specified
 
-**Install**: `launchpad install pandoc`
-
----
-
-### [sphinx-doc.org](../packages/sphinx-doc.org/index.md) (sphinx)
-
-Tool to create intelligent and beautiful documentation
-
-**Programs**: sphinx-apidoc, sphinx-autogen, sphinx-build, sphinx-quickstart
-
-**Install**: `launchpad install sphinx`
+**Install**: `launchpad install pandoc.org`
 
 ---
 
-### [tectonic-typesetting.github.io](../packages/tectonic-typesetting.github.io/index.md) (tectonic)
+### [sphinx-doc.org](../packages/sphinx-doc.org/index.md)
 
-A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive.
+Package from pantry: sphinx-doc.org
 
-**Programs**: tectonic
+**Programs**: None specified
 
-**Install**: `launchpad install tectonic`
+**Install**: `launchpad install sphinx-doc.org`
 
 ---
 
-### [typst.app](../packages/typst.app/index.md) (typst)
+### [tectonic-typesetting.github.io](../packages/tectonic-typesetting.github.io/index.md)
 
-A new markup-based typesetting system that is powerful and easy to learn.
+Package from pantry: tectonic-typesetting.github.io
 
-**Programs**: typst
+**Programs**: None specified
 
-**Install**: `launchpad install typst`
+**Install**: `launchpad install tectonic-typesetting.github.io`
+
+---
+
+### [typst.app](../packages/typst.app/index.md)
+
+Package from pantry: typst.app
+
+**Programs**: None specified
+
+**Install**: `launchpad install typst.app`
 
 ---
 

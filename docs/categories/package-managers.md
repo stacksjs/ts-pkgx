@@ -1,6 +1,6 @@
 # Package Managers
 
-*17 packages in this category*
+*10 packages in this category*
 
 Packages related to package managers.
 
@@ -86,93 +86,23 @@ Platform built on V8 to build network applications
 
 ---
 
-### [npmjs.com](../packages/npmjs.com/index.md) (npm)
+### [npmjs.com](../packages/npmjs.com/index.md)
 
-the package manager for JavaScript
+Package from pantry: npmjs.com
 
-**Programs**: npm, npx
+**Programs**: None specified
 
-**Install**: `launchpad install npm`
-
----
-
-### [pdm.fming.dev](../packages/pdm.fming.dev/index.md) (pdm)
-
-A modern Python package and dependency manager supporting the latest PEP standards
-
-**Programs**: pdm
-
-**Install**: `launchpad install pdm`
-
----
-
-### [pip.pypa.io](../packages/pip.pypa.io/index.md) (pip)
-
-The Python package installer
-
-**Programs**: pip, pip3.8, pip3.9, pip3.10, pip3.11
-
-**Install**: `launchpad install pip`
-
----
-
-### [pipenv.pypa.io](../packages/pipenv.pypa.io/index.md) (pipenv)
-
-Python Development Workflow for Humans.
-
-**Programs**: pipenv
-
-**Install**: `launchpad install pipenv`
-
----
-
-### [pkgx.sh](../packages/pkgx.sh/index.md) (pkgx)
-
-Standalone binary that can run anything
-
-**Programs**: pkgx
-
-**Install**: `launchpad install pkgx`
-
----
-
-### [pnpm.io](../packages/pnpm.io/index.md) (pnpm)
-
-Fast, disk space efficient package manager
-
-**Programs**: pnpm, pnpx
-
-**Install**: `launchpad install pnpm`
-
----
-
-### [python-poetry.org](../packages/python-poetry.org/index.md) (poetry)
-
-Python packaging and dependency management made easy
-
-**Programs**: poetry
-
-**Install**: `launchpad install poetry`
+**Install**: `launchpad install npmjs.com`
 
 ---
 
 ### [rust-lang.org/cargo](../packages/rust-lang.org/cargo/index.md) (cargo)
 
-The Rust package manager
+Package from pantry: rust-lang.org/cargo
 
-**Programs**: cargo
+**Programs**: None specified
 
-**Install**: `launchpad install cargo`
-
----
-
-### [rye.astral.sh](../packages/rye.astral.sh/index.md) (rye)
-
-Experimental Package Management Solution for Python
-
-**Programs**: rye
-
-**Install**: `launchpad install rye`
+**Install**: `launchpad install rust-lang.org/cargo`
 
 ---
 
