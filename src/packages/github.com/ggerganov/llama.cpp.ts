@@ -3,7 +3,7 @@
  *
  * @domain `github.com/ggerganov/llama.cpp`
  * @programs `llama-cli`, `llama.cpp`, `convert.py`
- * @version `5828.0.0` (2806 versions available)
+ * @version `5828.0.0` (2807 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/ggerganov/llama.cpp`
@@ -81,6 +81,7 @@ export const lLaMAcppPackage = {
     '5824.0.0',
     '5823.0.0',
     '5822.0.0',
+    '5821.0.0',
     '5820.0.0',
     '5819.0.0',
     '5817.0.0',

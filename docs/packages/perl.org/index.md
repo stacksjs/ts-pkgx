@@ -54,21 +54,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 14 versions</summary>
+<summary>Show all 15 versions</summary>
 
-- `5.40.2`, `5.40.1`, `5.40.0`, `5.38.4`, `5.38.3`
-- `5.38.2`, `5.38.1`, `5.38.0`, `5.36.3`, `5.36.2`
-- `5.36.1`, `5.36.0`, `5.34.3`, `5.34.2`
+- `5.42.0`, `5.40.2`, `5.40.1`, `5.40.0`, `5.38.4`
+- `5.38.3`, `5.38.2`, `5.38.1`, `5.38.0`, `5.36.3`
+- `5.36.2`, `5.36.1`, `5.36.0`, `5.34.3`, `5.34.2`
 
 </details>
 
-**Latest Version**: `5.40.2`
+**Latest Version**: `5.42.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +perl.org@5.40.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +perl.org@5.42.0 -- $SHELL -i
 ```
 
 ## Usage Examples
