@@ -3,7 +3,7 @@
  *
  * @domain `github.com/jesseduffield/lazygit`
  * @programs `lazygit`
- * @version `0.52.0` (27 versions available)
+ * @version `0.53.0` (28 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install lazygit`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "lazygit"
  * console.log(pkg.description) // "simple terminal UI for git commands"
  * console.log(pkg.programs)    // ["lazygit"]
- * console.log(pkg.versions[0]) // "0.52.0" (latest)
+ * console.log(pkg.versions[0]) // "0.53.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/jesseduffield/lazygit.md
@@ -69,6 +69,7 @@ export const lazygitPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.53.0',
     '0.52.0',
     '0.51.1',
     '0.51.0',
