@@ -3,7 +3,7 @@
  *
  * @domain `reacher.email/check-if-email-exists-cli`
  * @programs `check_if_email_exists`
- * @version `0.11.5` (10 versions available)
+ * @version `0.11.6` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install check_if_email_exists`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "check_if_email_exists"
  * console.log(pkg.description) // "Check if an email address exists without sendin..."
  * console.log(pkg.programs)    // ["check_if_email_exists"]
- * console.log(pkg.versions[0]) // "0.11.5" (latest)
+ * console.log(pkg.versions[0]) // "0.11.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/reacher-email/check-if-email-exists-cli.md
@@ -69,6 +69,7 @@ export const checkifemailexistsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.11.6',
     '0.11.5',
     '0.11.4',
     '0.11.3',
