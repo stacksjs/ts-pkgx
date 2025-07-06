@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-07-06T07:28:10.256Z
+- **Last Updated**: 2025-07-06T10:27:56.945Z
 
 ## Table of Contents
 
@@ -248,7 +248,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[microsoft.com/code-cli](./packages/microsoft.com/code-cli/index.md)** (code) | Command-line interface built-in Visual Studio Code | code | 1.101.2 (+14) | `pkgx code` |
 | **[nano-editor.org](./packages/nano-editor.org/index.md)** () | Free (GNU) replacement for the Pico text editor | nano | 8.0.0 (+1) | `pkgx nano` |
 | **[neovim.io](./packages/neovim.io/index.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.2 (+14) | `pkgx nvim` |
-| **[vim.org](./packages/vim.org/index.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1512 (+2082) | `pkgx vi` |
+| **[vim.org](./packages/vim.org/index.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1516 (+2086) | `pkgx vi` |
 | **[wezfurlong.org/wezterm](./packages/wezfurlong.org/wezterm/index.md)** () | A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemente... | wezterm | 2024.2.3 (+0) | `pkgx wezterm` |
 
 ## CLI Tools & Utilities
@@ -260,7 +260,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[crates.io/bat](./packages/crates.io/bat/index.md)** () | Clone of cat(1) with syntax highlighting and Git integration | bat | 0.25.0 (+3) | `pkgx bat` |
 | **[crates.io/bottom](./packages/crates.io/bottom/index.md)** () | Yet another cross-platform graphical process/system monitor. | btm | 0.10.2 (+11) | `pkgx btm` |
 | **[crates.io/drill](./packages/crates.io/drill/index.md)** () | Drill is an HTTP load testing application written in Rust | drill | 0.8.3 (+0) | `pkgx drill` |
-| **[crates.io/du-dust](./packages/crates.io/du-dust/index.md)** () | A more intuitive version of du in rust | dust | 1.2.1 (+5) | `pkgx dust` |
+| **[crates.io/du-dust](./packages/crates.io/du-dust/index.md)** () | A more intuitive version of du in rust | dust | 1.2.2 (+6) | `pkgx dust` |
 | **[crates.io/exa](./packages/crates.io/exa/index.md)** () | A modern replacement for ‘ls’. | exa | 0.10.1 (+0) | `pkgx exa` |
 | **[crates.io/eza](./packages/crates.io/eza/index.md)** () | Modern, maintained replacement for ls | eza | 0.22.0 (+79) | `pkgx eza` |
 | **[crates.io/git-delta](./packages/crates.io/git-delta/index.md)** () | A syntax-highlighting pager for git, diff, grep, and blame output | delta | 0.18.2 (+10) | `pkgx delta` |
