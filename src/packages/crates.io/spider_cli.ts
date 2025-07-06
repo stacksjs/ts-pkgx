@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/spider_cli`
  * @programs `spider`
- * @version `2.37.122` (310 versions available)
+ * @version `2.37.130` (311 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install spider`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "spider"
  * console.log(pkg.description) // "A web crawler and scraper for Rust"
  * console.log(pkg.programs)    // ["spider"]
- * console.log(pkg.versions[0]) // "2.37.122" (latest)
+ * console.log(pkg.versions[0]) // "2.37.130" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/spider_cli.md
@@ -62,6 +62,7 @@ export const spiderPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.37.130',
     '2.37.122',
     '2.37.120',
     '2.37.104',
