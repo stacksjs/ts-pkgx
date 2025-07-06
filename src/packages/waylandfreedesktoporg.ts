@@ -3,7 +3,7 @@
  *
  * @domain `wayland.freedesktop.org`
  * @programs `wayland-scanner`
- * @version `1.23.93` (9 versions available)
+ * @version `1.24.0` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install wayland-scanner`
@@ -21,7 +21,7 @@
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "wayland-scanner"
  * console.log(pkg.programs)    // ["wayland-scanner"]
- * console.log(pkg.versions[0]) // "1.23.93" (latest)
+ * console.log(pkg.versions[0]) // "1.24.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/wayland-freedesktop-org.md
@@ -70,6 +70,7 @@ export const waylandscannerPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.24.0',
     '1.23.93',
     '1.23.92',
     '1.23.91',
