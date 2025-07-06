@@ -26,19 +26,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 1 versions</summary>
+<summary>Show all 2 versions</summary>
 
-- `2.5.31`
+- `2.5.32`, `2.5.31`
 
 </details>
 
-**Latest Version**: `2.5.31`
+**Latest Version**: `2.5.32`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gphoto.org/libgphoto2@2.5.31 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gphoto.org/libgphoto2@2.5.32 -- $SHELL -i
 ```
 
 ## Dependencies
