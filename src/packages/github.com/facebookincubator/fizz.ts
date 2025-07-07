@@ -3,7 +3,7 @@
  *
  * @domain `github.com/facebookincubator/fizz`
  * @programs `fizz`
- * @version `2025.6.9.0` (105 versions available)
+ * @version `2025.7.7.0` (106 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fizz`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "fizz"
  * console.log(pkg.description) // "C++14 implementation of the TLS-1.3 standard"
  * console.log(pkg.programs)    // ["fizz"]
- * console.log(pkg.versions[0]) // "2025.6.9.0" (latest)
+ * console.log(pkg.versions[0]) // "2025.7.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/facebookincubator/fizz.md
@@ -84,6 +84,7 @@ export const fizzPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2025.7.7.0',
     '2025.6.9.0',
     '2025.6.30.0',
     '2025.6.23.0',

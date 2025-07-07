@@ -3,7 +3,7 @@
  *
  * @domain `facebook.com/fbthrift`
  * @programs `thrift1`
- * @version `2025.6.9.0` (79 versions available)
+ * @version `2025.7.7.0` (80 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install thrift1`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "thrift1"
  * console.log(pkg.description) // "Facebook's branch of Apache Thrift, including a..."
  * console.log(pkg.programs)    // ["thrift1"]
- * console.log(pkg.versions[0]) // "2025.6.9.0" (latest)
+ * console.log(pkg.versions[0]) // "2025.7.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/facebook-com/fbthrift.md
@@ -82,6 +82,7 @@ export const thrift1Package = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2025.7.7.0',
     '2025.6.9.0',
     '2025.6.30.0',
     '2025.6.23.0',
