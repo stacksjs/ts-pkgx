@@ -31,15 +31,15 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 14 versions</summary>
+<summary>Show all 15 versions</summary>
 
-- `3.92.0`, `3.91.0`, `3.90.0`, `3.89.0`, `3.88.0`
-- `3.87.0`, `3.86.0`, `3.85.0`, `3.84.0`, `3.83.0`
-- `3.82.0`, `3.81.0`, `3.80.0`, `3.79.0`
+- `3.93.0`, `3.92.0`, `3.91.0`, `3.90.0`, `3.89.0`
+- `3.88.0`, `3.87.0`, `3.86.0`, `3.85.0`, `3.84.0`
+- `3.83.0`, `3.82.0`, `3.81.0`, `3.80.0`, `3.79.0`
 
 </details>
 
-**Latest Version**: `3.92.0`
+**Latest Version**: `3.93.0`
 
 ### Install Specific Version
 
