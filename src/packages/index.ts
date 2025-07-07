@@ -1521,13 +1521,13 @@ import { applesimutilsPackage } from './wix.com/applesimutils'
 import { gdownPackage } from './wkentaro.github.io/gdown'
 import { wpewebkitorglibwpePackage } from './wpewebkit.org/libwpe'
 import { wpewebkitorgwpebackendfdoPackage } from './wpewebkit.org/wpebackend-fdo'
-import { wunderctlPackage } from './wundergraphcom'
+import { wundergraphcomPackage } from './wundergraphcom'
 import { wxwidgetsorgPackage } from './wxwidgetsorg'
 import { xorgapplewmPackage } from './x.org/applewm'
 import { xorgextsPackage } from './x.org/exts'
 import { xorgicePackage } from './x.org/ice'
 import { xorglibsmPackage } from './x.org/libSM'
-import { cvtPackage } from './x.org/libcvt'
+import { xorglibcvtPackage } from './x.org/libcvt'
 import { xorglibfontencPackage } from './x.org/libfontenc'
 import { xorglibpthreadstubsPackage } from './x.org/libpthread-stubs'
 import { xorglibxfont2Package } from './x.org/libxfont2'
@@ -1539,7 +1539,7 @@ import { xorgsmPackage } from './x.org/sm'
 import { xorgutilmacrosPackage } from './x.org/util-macros'
 import { xorgx11Package } from './x.org/x11'
 import { xorgxauPackage } from './x.org/xau'
-import { xauthPackage } from './x.org/xauth'
+import { xorgxauthPackage } from './x.org/xauth'
 import { xorgxawPackage } from './x.org/xaw'
 import { xorgxcbutilPackage } from './x.org/xcb-util'
 import { xorgxcbPackage } from './x.org/xcb'
@@ -1551,7 +1551,7 @@ import { xorgxfixesPackage } from './x.org/xfixes'
 import { xorgxftPackage } from './x.org/xft'
 import { xorgxiPackage } from './x.org/xi'
 import { xorgxineramaPackage } from './x.org/xinerama'
-import { xinputPackage } from './x.org/xinput'
+import { xorgxinputPackage } from './x.org/xinput'
 import { xorgxkbfilePackage } from './x.org/xkbfile'
 import { xorgxmuPackage } from './x.org/xmu'
 import { xorgxpmPackage } from './x.org/xpm'
@@ -1564,30 +1564,30 @@ import { xorgxtransPackage } from './x.org/xtrans'
 import { xorgxtstPackage } from './x.org/xtst'
 import { xorgxvPackage } from './x.org/xv'
 import { xorgxxf86vmPackage } from './x.org/xxf86vm'
-import { xcPackage } from './xcfiledev'
+import { xcfiledevPackage } from './xcfiledev'
 import { xercesapacheorgxercescPackage } from './xerces.apache.org/xerces-c'
-import { flacPackage } from './xiph.org/flac'
-import { shoutPackage } from './xiph.org/libshout'
+import { xiphorgflacPackage } from './xiph.org/flac'
+import { xiphorglibshoutPackage } from './xiph.org/libshout'
 import { xiphorgoggPackage } from './xiph.org/ogg'
 import { xiphorgvorbisPackage } from './xiph.org/vorbis'
-import { xkbcliPackage } from './xkbcommonorg'
-import { xplrPackage } from './xplrdev'
-import { xpraPackage } from './xpraorg'
-import { xrayPackage } from './xtlsgithubio'
+import { xkbcommonorgPackage } from './xkbcommonorg'
+import { xplrdevPackage } from './xplrdev'
+import { xpraorgPackage } from './xpraorg'
+import { xtlsgithubioPackage } from './xtlsgithubio'
 import { xvidcomPackage } from './xvidcom'
-import { yadmPackage } from './yadmio'
+import { yadmioPackage } from './yadmio'
 import { yarnPackage } from './yarnpkgcom'
-import { yasmPackage } from './yasmtortallnet'
-import { youtubedlPackage } from './youtube-dlorg'
-import { ytdlpPackage } from './yt-dlporg'
-import { yuicompressorPackage } from './yui.github.io/yuicompressor'
-import { zarfPackage } from './zarfdev'
+import { yasmtortallnetPackage } from './yasmtortallnet'
+import { youtubedlorgPackage } from './youtube-dlorg'
+import { ytdlporgPackage } from './yt-dlporg'
+import { yuigithubioyuicompressorPackage } from './yui.github.io/yuicompressor'
+import { zarfdevPackage } from './zarfdev'
 import { zeromqorgPackage } from './zeromqorg'
-import { zigPackage } from './ziglangorg'
+import { ziglangorgPackage } from './ziglangorg'
 import { zlibnetminizipPackage } from './zlib.net/minizip'
 import { zlibnetPackage } from './zlibnet'
-import { zrokPackage } from './zrokio'
-import { zshPackage } from './zshsourceforgeio'
+import { zrokioPackage } from './zrokio'
+import { zshsourceforgeioPackage } from './zshsourceforgeio'
 
 export interface Pantry {
   abseilio: typeof abseilioPackage
@@ -4139,123 +4139,123 @@ export interface Pantry {
   wpewebkitorglibwpe: typeof wpewebkitorglibwpePackage
   wpebackend_fdo: typeof wpewebkitorgwpebackendfdoPackage
   wpewebkitorgwpebackendfdo: typeof wpewebkitorgwpebackendfdoPackage
-  wundergraphcom: typeof wunderctlPackage
+  wundergraphcom: typeof wundergraphcomPackage
   wxwidgetsorg: typeof wxwidgetsorgPackage
   applewm: typeof xorgapplewmPackage
   xorgapplewm: typeof xorgapplewmPackage
   exts: typeof xorgextsPackage
   xorgexts: typeof xorgextsPackage
-  ice: typeof xorgicePackage
+
   xorgice: typeof xorgicePackage
-  libSM: typeof xorglibsmPackage
+
   xorglibsm: typeof xorglibsmPackage
-  libcvt: typeof cvtPackage
-  xorglibcvt: typeof cvtPackage
-  libfontenc: typeof xorglibfontencPackage
+
+  xorglibcvt: typeof xorglibcvtPackage
+
   xorglibfontenc: typeof xorglibfontencPackage
   libpthread_stubs: typeof xorglibpthreadstubsPackage
   xorglibpthreadstubs: typeof xorglibpthreadstubsPackage
-  libxfont2: typeof xorglibxfont2Package
+
   xorglibxfont2: typeof xorglibxfont2Package
-  libxres: typeof xorglibxresPackage
+
   xorglibxres: typeof xorglibxresPackage
-  pciaccess: typeof xorgpciaccessPackage
+
   xorgpciaccess: typeof xorgpciaccessPackage
-  protocol: typeof xorgprotocolPackage
+
   xorgprotocol: typeof xorgprotocolPackage
-  xcb: typeof xorgprotocolxcbPackage
+
   xorgprotocol1: typeof xorgprotocolxcbPackage
   sm: typeof xorgsmPackage
   xorgsm: typeof xorgsmPackage
   util_macros: typeof xorgutilmacrosPackage
   xorgutilmacros: typeof xorgutilmacrosPackage
-  x11: typeof xorgx11Package
+
   xorgx11: typeof xorgx11Package
-  xau: typeof xorgxauPackage
+
   xorgxau: typeof xorgxauPackage
 
-  xorgxauth: typeof xauthPackage
-  xaw: typeof xorgxawPackage
+  xorgxauth: typeof xorgxauthPackage
+
   xorgxaw: typeof xorgxawPackage
   xcb_util1: typeof xorgxcbutilPackage
   xorgxcbutil: typeof xorgxcbutilPackage
   xcb1: typeof xorgxcbPackage
   xorgxcb: typeof xorgxcbPackage
-  xcomposite: typeof xorgxcompositePackage
+
   xorgxcomposite: typeof xorgxcompositePackage
-  xcursor: typeof xorgxcursorPackage
+
   xorgxcursor: typeof xorgxcursorPackage
-  xdamage: typeof xorgxdamagePackage
+
   xorgxdamage: typeof xorgxdamagePackage
-  xdmcp: typeof xorgxdmcpPackage
+
   xorgxdmcp: typeof xorgxdmcpPackage
-  xfixes: typeof xorgxfixesPackage
+
   xorgxfixes: typeof xorgxfixesPackage
-  xft: typeof xorgxftPackage
+
   xorgxft: typeof xorgxftPackage
   xi: typeof xorgxiPackage
   xorgxi: typeof xorgxiPackage
-  xinerama: typeof xorgxineramaPackage
+
   xorgxinerama: typeof xorgxineramaPackage
 
-  xorgxinput: typeof xinputPackage
-  xkbfile: typeof xorgxkbfilePackage
+  xorgxinput: typeof xorgxinputPackage
+
   xorgxkbfile: typeof xorgxkbfilePackage
-  xmu: typeof xorgxmuPackage
+
   xorgxmu: typeof xorgxmuPackage
-  xpm: typeof xorgxpmPackage
+
   xorgxpm: typeof xorgxpmPackage
-  xrandr: typeof xorgxrandrPackage
+
   xorgxrandr: typeof xorgxrandrPackage
-  xrender: typeof xorgxrenderPackage
+
   xorgxrender: typeof xorgxrenderPackage
-  xscrnsaver: typeof xorgxscrnsaverPackage
+
   xorgxscrnsaver: typeof xorgxscrnsaverPackage
-  xshmfence: typeof xorgxshmfencePackage
+
   xorgxshmfence: typeof xorgxshmfencePackage
   xt: typeof xorgxtPackage
   xorgxt: typeof xorgxtPackage
-  xtrans: typeof xorgxtransPackage
+
   xorgxtrans: typeof xorgxtransPackage
-  xtst: typeof xorgxtstPackage
+
   xorgxtst: typeof xorgxtstPackage
   xv: typeof xorgxvPackage
   xorgxv: typeof xorgxvPackage
-  xxf86vm: typeof xorgxxf86vmPackage
+
   xorgxxf86vm: typeof xorgxxf86vmPackage
-  xcfiledev: typeof xcPackage
+  xcfiledev: typeof xcfiledevPackage
   xerces_c: typeof xercesapacheorgxercescPackage
   xercesapacheorgxercesc: typeof xercesapacheorgxercescPackage
 
-  xiphorgflac: typeof flacPackage
-  libshout: typeof shoutPackage
-  xiphorglibshout: typeof shoutPackage
-  ogg: typeof xiphorgoggPackage
-  xiphorgogg: typeof xiphorgoggPackage
-  vorbis: typeof xiphorgvorbisPackage
-  xiphorgvorbis: typeof xiphorgvorbisPackage
-  xkbcommonorg: typeof xkbcliPackage
-  xplrdev: typeof xplrPackage
-  xpraorg: typeof xpraPackage
-  xtlsgithubio: typeof xrayPackage
-  xvidcom: typeof xvidcomPackage
-  yadmio: typeof yadmPackage
-  yarnpkgcom: typeof yarnPackage
-  yasmtortallnet: typeof yasmPackage
-  youtube_dlorg: typeof youtubedlPackage
-  youtubedlorg: typeof youtubedlPackage
-  yt_dlporg: typeof ytdlpPackage
-  ytdlporg: typeof ytdlpPackage
+  xiphorgflac: typeof xiphorgflacPackage
 
-  yuigithubioyuicompressor: typeof yuicompressorPackage
-  zarfdev: typeof zarfPackage
+  xiphorglibshout: typeof xiphorglibshoutPackage
+
+  xiphorgogg: typeof xiphorgoggPackage
+
+  xiphorgvorbis: typeof xiphorgvorbisPackage
+  xkbcommonorg: typeof xkbcommonorgPackage
+  xplrdev: typeof xplrdevPackage
+  xpraorg: typeof xpraorgPackage
+  xtlsgithubio: typeof xtlsgithubioPackage
+  xvidcom: typeof xvidcomPackage
+  yadmio: typeof yadmioPackage
+  yarnpkgcom: typeof yarnPackage
+  yasmtortallnet: typeof yasmtortallnetPackage
+  youtube_dlorg: typeof youtubedlorgPackage
+  youtubedlorg: typeof youtubedlorgPackage
+  yt_dlporg: typeof ytdlporgPackage
+  ytdlporg: typeof ytdlporgPackage
+
+  yuigithubioyuicompressor: typeof yuigithubioyuicompressorPackage
+  zarfdev: typeof zarfdevPackage
   zeromqorg: typeof zeromqorgPackage
-  ziglangorg: typeof zigPackage
-  minizip: typeof zlibnetminizipPackage
+  ziglangorg: typeof ziglangorgPackage
+
   zlibnetminizip: typeof zlibnetminizipPackage
   zlibnet: typeof zlibnetPackage
-  zrokio: typeof zrokPackage
-  zshsourceforgeio: typeof zshPackage
+  zrokio: typeof zrokioPackage
+  zshsourceforgeio: typeof zshsourceforgeioPackage
   tmate: typeof tmatePackage
   cephadm: typeof cephadmPackage
   kargo: typeof kargoPackage
@@ -4278,7 +4278,6 @@ export interface Pantry {
   'sentry-cli': typeof sentrycliPackage
   coder: typeof coderPackage
   'scryer-prolog': typeof scryerprologPackage
-  xpra: typeof xpraPackage
   gitsign: typeof gitsignPackage
   cosign: typeof cosignPackage
   spin: typeof spinPackage
@@ -4459,7 +4458,6 @@ export interface Pantry {
   shellcheck: typeof shellcheckPackage
   railway: typeof railwayPackage
   nomad: typeof nomadPackage
-  yarn: typeof classicYarnPackage
   digger: typeof diggerPackage
   dhall: typeof dhallPackage
   fish: typeof fishPackage
@@ -4479,7 +4477,6 @@ export interface Pantry {
   cdktf: typeof cdktfPackage
   juliaup: typeof juliaupPackage
   koyeb: typeof koyebPackage
-  zsh: typeof zshPackage
   biome: typeof biomePackage
   'kubectl-krew': typeof kubectlkrewPackage
   'docker/cli': typeof dockerPackage
@@ -4505,9 +4502,40 @@ export interface Pantry {
   invoke: typeof invokePackage
   rebar3: typeof rebar3Package
   templ: typeof templPackage
-  cvt: typeof cvtPackage
-  xauth: typeof xauthPackage
-  xinput: typeof xinputPackage
+  x11: typeof xorgx11Package
+  libxfont2: typeof xorglibxfont2Package
+  xrender: typeof xorgxrenderPackage
+  xtrans: typeof xorgxtransPackage
+  xfixes: typeof xorgxfixesPackage
+  xft: typeof xorgxftPackage
+  xcb: typeof xorgxcbPackage
+  xdmcp: typeof xorgxdmcpPackage
+  xinerama: typeof xorgxineramaPackage
+  'libpthread-stubs': typeof xorglibpthreadstubsPackage
+  xpm: typeof xorgxpmPackage
+  pciaccess: typeof xorgpciaccessPackage
+  xdamage: typeof xorgxdamagePackage
+  ice: typeof xorgicePackage
+  'xcb-util': typeof xorgxcbutilPackage
+  xmu: typeof xorgxmuPackage
+  protocol: typeof xorgprotocolPackage
+  libfontenc: typeof xorglibfontencPackage
+  xtst: typeof xorgxtstPackage
+  xaw: typeof xorgxawPackage
+  xscrnsaver: typeof xorgxscrnsaverPackage
+  xkbfile: typeof xorgxkbfilePackage
+  libcvt: typeof xorglibcvtPackage
+  xshmfence: typeof xorgxshmfencePackage
+  xau: typeof xorgxauPackage
+  xcursor: typeof xorgxcursorPackage
+  xcomposite: typeof xorgxcompositePackage
+  'util-macros': typeof xorgutilmacrosPackage
+  libxres: typeof xorglibxresPackage
+  libSM: typeof xorglibsmPackage
+  xauth: typeof xorgxauthPackage
+  xrandr: typeof xorgxrandrPackage
+  xinput: typeof xorgxinputPackage
+  xxf86vm: typeof xorgxxf86vmPackage
   pkgx: typeof pkgxPackage
   sketchybar: typeof sketchybarPackage
   qemu: typeof qemuPackage
@@ -4529,7 +4557,6 @@ export interface Pantry {
   teller: typeof tellerPackage
   ccache: typeof ccachePackage
   kind: typeof kindPackage
-  'youtube-dl': typeof youtubedlPackage
   surreal: typeof surrealPackage
   socat: typeof socatPackage
   MariaDB: typeof mariaDBPackage
@@ -4564,7 +4591,6 @@ export interface Pantry {
   mods: typeof modsPackage
   cicada: typeof cicadaPackage
   atlas: typeof atlasPackage
-  zarf: typeof zarfPackage
   imageflow_tool: typeof imageflowtoolPackage
   tldr: typeof tldrPackage
   cue: typeof cuePackage
@@ -4917,7 +4943,6 @@ export interface Pantry {
   fftw: typeof fftwPackage
   Arkade: typeof arkadePackage
   arkade: typeof arkadePackage
-  zrok: typeof zrokPackage
   npm: typeof npmPackage
   linkerd: typeof linkerdPackage
   xmlif: typeof xmlifPackage
@@ -4936,19 +4961,17 @@ export interface Pantry {
   himalaya: typeof himalayaPackage
   clog: typeof clogPackage
   composer: typeof composerPackage
-  zig: typeof zigPackage
   duk: typeof dukPackage
   'ansible-lint': typeof ansiblelintPackage
   'srt-ffplay': typeof srtffplayPackage
   libimagequant: typeof libimagequantPackage
   Vanna: typeof vannaPackage
   vault: typeof vaultPackage
-  xplr: typeof xplrPackage
   tig: typeof tigPackage
   'git-crypt': typeof gitcryptPackage
   sassc: typeof sasscPackage
   ksops: typeof ksopsPackage
-  yuicompressor: typeof yuicompressorPackage
+  yuicompressor: typeof yuigithubioyuicompressorPackage
   pulumi: typeof pulumiPackage
   halibut: typeof halibutPackage
   buf: typeof bufPackage
@@ -4958,7 +4981,6 @@ export interface Pantry {
   loki: typeof lokiPackage
   mitmproxy: typeof mitmproxyPackage
   carapace: typeof carapacePackage
-  yadm: typeof yadmPackage
   applesimutils: typeof applesimutilsPackage
   pluto: typeof plutoPackage
   bashly: typeof bashlyPackage
@@ -5004,6 +5026,7 @@ export interface Pantry {
   'pkg-config': typeof pkgconfigPackage
   uchardet: typeof uchardetPackage
   'poppler-qt5': typeof popplerqt5Package
+  'xerces-c': typeof xercesapacheorgxercescPackage
   render: typeof renderPackage
   packer: typeof packerPackage
   pinentry: typeof pinentryPackage
@@ -5016,7 +5039,6 @@ export interface Pantry {
   itstool: typeof itstoolPackage
   eol: typeof eolPackage
   cython: typeof cythonPackage
-  'yt-dlp': typeof ytdlpPackage
   postgrest: typeof postgrestPackage
   lychee: typeof lycheePackage
   moon: typeof moonPackage
@@ -5028,8 +5050,10 @@ export interface Pantry {
   watch: typeof watchPackage
   tox: typeof toxPackage
   doctl: typeof doctlPackage
-  flac: typeof flacPackage
-  shout: typeof shoutPackage
+  flac: typeof xiphorgflacPackage
+  libshout: typeof xiphorglibshoutPackage
+  ogg: typeof xiphorgoggPackage
+  vorbis: typeof xiphorgvorbisPackage
   infracost: typeof infracostPackage
   tailwindcss: typeof tailwindcssPackage
   kubeshark: typeof kubesharkPackage
@@ -5041,9 +5065,11 @@ export interface Pantry {
   pocketbase: typeof pocketbasePackage
   dos2unix: typeof dos2unixPackage
   coredns: typeof corednsPackage
+  yarn: typeof classicYarnPackage
   re2c: typeof re2cPackage
   sqlc: typeof sqlcPackage
   flux: typeof fluxPackage
+  minizip: typeof zlibnetminizipPackage
   'g-ir': typeof girPackage
   gsf: typeof gsfPackage
   pango: typeof pangoPackage
@@ -5093,15 +5119,12 @@ export interface Pantry {
   symfony: typeof symfonyPackage
   'protoc-gen-go-grpc': typeof protocgengogrpcPackage
   jq: typeof jqPackage
-  'xray-core': typeof xrayPackage
-  xray: typeof xrayPackage
   xcodeproj: typeof xcodeprojPackage
   dexios: typeof dexiosPackage
   numbat: typeof numbatPackage
   gdown: typeof gdownPackage
   flyway: typeof flywayPackage
   htop: typeof htopPackage
-  xkbcli: typeof xkbcliPackage
   flit: typeof flitPackage
   'php-cs-fixer': typeof phpcsfixerPackage
   agg: typeof aggPackage
@@ -5124,7 +5147,6 @@ export interface Pantry {
   libcerf: typeof libcerfPackage
   talosctl: typeof talosctlPackage
   'sing-box': typeof singboxPackage
-  yasm: typeof yasmPackage
   edgedb: typeof edgedbPackage
   odigos: typeof odigosPackage
   watchman: typeof watchmanPackage
@@ -5288,7 +5310,6 @@ export interface Pantry {
   trivy: typeof trivyPackage
   tfsec: typeof tfsecPackage
   jbig2dec: typeof jbig2decPackage
-  wunderctl: typeof wunderctlPackage
   replibyte: typeof replibytePackage
   bind9: typeof bind9Package
   goreleaser: typeof goreleaserPackage
@@ -7938,123 +7959,123 @@ export const pantry: Pantry = {
   wpewebkitorglibwpe: wpewebkitorglibwpePackage,
   wpebackend_fdo: wpewebkitorgwpebackendfdoPackage,
   wpewebkitorgwpebackendfdo: wpewebkitorgwpebackendfdoPackage,
-  wundergraphcom: wunderctlPackage,
+  wundergraphcom: wundergraphcomPackage,
   wxwidgetsorg: wxwidgetsorgPackage,
   applewm: xorgapplewmPackage,
   xorgapplewm: xorgapplewmPackage,
   exts: xorgextsPackage,
   xorgexts: xorgextsPackage,
-  ice: xorgicePackage,
+
   xorgice: xorgicePackage,
-  libSM: xorglibsmPackage,
+
   xorglibsm: xorglibsmPackage,
-  libcvt: cvtPackage,
-  xorglibcvt: cvtPackage,
-  libfontenc: xorglibfontencPackage,
+
+  xorglibcvt: xorglibcvtPackage,
+
   xorglibfontenc: xorglibfontencPackage,
   libpthread_stubs: xorglibpthreadstubsPackage,
   xorglibpthreadstubs: xorglibpthreadstubsPackage,
-  libxfont2: xorglibxfont2Package,
+
   xorglibxfont2: xorglibxfont2Package,
-  libxres: xorglibxresPackage,
+
   xorglibxres: xorglibxresPackage,
-  pciaccess: xorgpciaccessPackage,
+
   xorgpciaccess: xorgpciaccessPackage,
-  protocol: xorgprotocolPackage,
+
   xorgprotocol: xorgprotocolPackage,
-  xcb: xorgprotocolxcbPackage,
+
   xorgprotocol1: xorgprotocolxcbPackage,
   sm: xorgsmPackage,
   xorgsm: xorgsmPackage,
   util_macros: xorgutilmacrosPackage,
   xorgutilmacros: xorgutilmacrosPackage,
-  x11: xorgx11Package,
+
   xorgx11: xorgx11Package,
-  xau: xorgxauPackage,
+
   xorgxau: xorgxauPackage,
 
-  xorgxauth: xauthPackage,
-  xaw: xorgxawPackage,
+  xorgxauth: xorgxauthPackage,
+
   xorgxaw: xorgxawPackage,
   xcb_util1: xorgxcbutilPackage,
   xorgxcbutil: xorgxcbutilPackage,
   xcb1: xorgxcbPackage,
   xorgxcb: xorgxcbPackage,
-  xcomposite: xorgxcompositePackage,
+
   xorgxcomposite: xorgxcompositePackage,
-  xcursor: xorgxcursorPackage,
+
   xorgxcursor: xorgxcursorPackage,
-  xdamage: xorgxdamagePackage,
+
   xorgxdamage: xorgxdamagePackage,
-  xdmcp: xorgxdmcpPackage,
+
   xorgxdmcp: xorgxdmcpPackage,
-  xfixes: xorgxfixesPackage,
+
   xorgxfixes: xorgxfixesPackage,
-  xft: xorgxftPackage,
+
   xorgxft: xorgxftPackage,
   xi: xorgxiPackage,
   xorgxi: xorgxiPackage,
-  xinerama: xorgxineramaPackage,
+
   xorgxinerama: xorgxineramaPackage,
 
-  xorgxinput: xinputPackage,
-  xkbfile: xorgxkbfilePackage,
+  xorgxinput: xorgxinputPackage,
+
   xorgxkbfile: xorgxkbfilePackage,
-  xmu: xorgxmuPackage,
+
   xorgxmu: xorgxmuPackage,
-  xpm: xorgxpmPackage,
+
   xorgxpm: xorgxpmPackage,
-  xrandr: xorgxrandrPackage,
+
   xorgxrandr: xorgxrandrPackage,
-  xrender: xorgxrenderPackage,
+
   xorgxrender: xorgxrenderPackage,
-  xscrnsaver: xorgxscrnsaverPackage,
+
   xorgxscrnsaver: xorgxscrnsaverPackage,
-  xshmfence: xorgxshmfencePackage,
+
   xorgxshmfence: xorgxshmfencePackage,
   xt: xorgxtPackage,
   xorgxt: xorgxtPackage,
-  xtrans: xorgxtransPackage,
+
   xorgxtrans: xorgxtransPackage,
-  xtst: xorgxtstPackage,
+
   xorgxtst: xorgxtstPackage,
   xv: xorgxvPackage,
   xorgxv: xorgxvPackage,
-  xxf86vm: xorgxxf86vmPackage,
+
   xorgxxf86vm: xorgxxf86vmPackage,
-  xcfiledev: xcPackage,
+  xcfiledev: xcfiledevPackage,
   xerces_c: xercesapacheorgxercescPackage,
   xercesapacheorgxercesc: xercesapacheorgxercescPackage,
 
-  xiphorgflac: flacPackage,
-  libshout: shoutPackage,
-  xiphorglibshout: shoutPackage,
-  ogg: xiphorgoggPackage,
-  xiphorgogg: xiphorgoggPackage,
-  vorbis: xiphorgvorbisPackage,
-  xiphorgvorbis: xiphorgvorbisPackage,
-  xkbcommonorg: xkbcliPackage,
-  xplrdev: xplrPackage,
-  xpraorg: xpraPackage,
-  xtlsgithubio: xrayPackage,
-  xvidcom: xvidcomPackage,
-  yadmio: yadmPackage,
-  yarnpkgcom: yarnPackage,
-  yasmtortallnet: yasmPackage,
-  youtube_dlorg: youtubedlPackage,
-  youtubedlorg: youtubedlPackage,
-  yt_dlporg: ytdlpPackage,
-  ytdlporg: ytdlpPackage,
+  xiphorgflac: xiphorgflacPackage,
 
-  yuigithubioyuicompressor: yuicompressorPackage,
-  zarfdev: zarfPackage,
+  xiphorglibshout: xiphorglibshoutPackage,
+
+  xiphorgogg: xiphorgoggPackage,
+
+  xiphorgvorbis: xiphorgvorbisPackage,
+  xkbcommonorg: xkbcommonorgPackage,
+  xplrdev: xplrdevPackage,
+  xpraorg: xpraorgPackage,
+  xtlsgithubio: xtlsgithubioPackage,
+  xvidcom: xvidcomPackage,
+  yadmio: yadmioPackage,
+  yarnpkgcom: yarnPackage,
+  yasmtortallnet: yasmtortallnetPackage,
+  youtube_dlorg: youtubedlorgPackage,
+  youtubedlorg: youtubedlorgPackage,
+  yt_dlporg: ytdlporgPackage,
+  ytdlporg: ytdlporgPackage,
+
+  yuigithubioyuicompressor: yuigithubioyuicompressorPackage,
+  zarfdev: zarfdevPackage,
   zeromqorg: zeromqorgPackage,
-  ziglangorg: zigPackage,
-  minizip: zlibnetminizipPackage,
+  ziglangorg: ziglangorgPackage,
+
   zlibnetminizip: zlibnetminizipPackage,
   zlibnet: zlibnetPackage,
-  zrokio: zrokPackage,
-  zshsourceforgeio: zshPackage,
+  zrokio: zrokioPackage,
+  zshsourceforgeio: zshsourceforgeioPackage,
   tmate: tmatePackage,
   cephadm: cephadmPackage,
   kargo: kargoPackage,
@@ -8077,7 +8098,6 @@ export const pantry: Pantry = {
   'sentry-cli': sentrycliPackage,
   coder: coderPackage,
   'scryer-prolog': scryerprologPackage,
-  xpra: xpraPackage,
   gitsign: gitsignPackage,
   cosign: cosignPackage,
   spin: spinPackage,
@@ -8258,7 +8278,6 @@ export const pantry: Pantry = {
   shellcheck: shellcheckPackage,
   railway: railwayPackage,
   nomad: nomadPackage,
-  yarn: classicYarnPackage,
   digger: diggerPackage,
   dhall: dhallPackage,
   fish: fishPackage,
@@ -8278,7 +8297,6 @@ export const pantry: Pantry = {
   cdktf: cdktfPackage,
   juliaup: juliaupPackage,
   koyeb: koyebPackage,
-  zsh: zshPackage,
   biome: biomePackage,
   'kubectl-krew': kubectlkrewPackage,
   'docker/cli': dockerPackage,
@@ -8304,9 +8322,40 @@ export const pantry: Pantry = {
   invoke: invokePackage,
   rebar3: rebar3Package,
   templ: templPackage,
-  cvt: cvtPackage,
-  xauth: xauthPackage,
-  xinput: xinputPackage,
+  x11: xorgx11Package,
+  libxfont2: xorglibxfont2Package,
+  xrender: xorgxrenderPackage,
+  xtrans: xorgxtransPackage,
+  xfixes: xorgxfixesPackage,
+  xft: xorgxftPackage,
+  xcb: xorgxcbPackage,
+  xdmcp: xorgxdmcpPackage,
+  xinerama: xorgxineramaPackage,
+  'libpthread-stubs': xorglibpthreadstubsPackage,
+  xpm: xorgxpmPackage,
+  pciaccess: xorgpciaccessPackage,
+  xdamage: xorgxdamagePackage,
+  ice: xorgicePackage,
+  'xcb-util': xorgxcbutilPackage,
+  xmu: xorgxmuPackage,
+  protocol: xorgprotocolPackage,
+  libfontenc: xorglibfontencPackage,
+  xtst: xorgxtstPackage,
+  xaw: xorgxawPackage,
+  xscrnsaver: xorgxscrnsaverPackage,
+  xkbfile: xorgxkbfilePackage,
+  libcvt: xorglibcvtPackage,
+  xshmfence: xorgxshmfencePackage,
+  xau: xorgxauPackage,
+  xcursor: xorgxcursorPackage,
+  xcomposite: xorgxcompositePackage,
+  'util-macros': xorgutilmacrosPackage,
+  libxres: xorglibxresPackage,
+  libSM: xorglibsmPackage,
+  xauth: xorgxauthPackage,
+  xrandr: xorgxrandrPackage,
+  xinput: xorgxinputPackage,
+  xxf86vm: xorgxxf86vmPackage,
   pkgx: pkgxPackage,
   sketchybar: sketchybarPackage,
   qemu: qemuPackage,
@@ -8328,7 +8377,6 @@ export const pantry: Pantry = {
   teller: tellerPackage,
   ccache: ccachePackage,
   kind: kindPackage,
-  'youtube-dl': youtubedlPackage,
   surreal: surrealPackage,
   socat: socatPackage,
   MariaDB: mariaDBPackage,
@@ -8363,7 +8411,6 @@ export const pantry: Pantry = {
   mods: modsPackage,
   cicada: cicadaPackage,
   atlas: atlasPackage,
-  zarf: zarfPackage,
   imageflow_tool: imageflowtoolPackage,
   tldr: tldrPackage,
   cue: cuePackage,
@@ -8716,7 +8763,6 @@ export const pantry: Pantry = {
   fftw: fftwPackage,
   Arkade: arkadePackage,
   arkade: arkadePackage,
-  zrok: zrokPackage,
   npm: npmPackage,
   linkerd: linkerdPackage,
   xmlif: xmlifPackage,
@@ -8735,19 +8781,17 @@ export const pantry: Pantry = {
   himalaya: himalayaPackage,
   clog: clogPackage,
   composer: composerPackage,
-  zig: zigPackage,
   duk: dukPackage,
   'ansible-lint': ansiblelintPackage,
   'srt-ffplay': srtffplayPackage,
   libimagequant: libimagequantPackage,
   Vanna: vannaPackage,
   vault: vaultPackage,
-  xplr: xplrPackage,
   tig: tigPackage,
   'git-crypt': gitcryptPackage,
   sassc: sasscPackage,
   ksops: ksopsPackage,
-  yuicompressor: yuicompressorPackage,
+  yuicompressor: yuigithubioyuicompressorPackage,
   pulumi: pulumiPackage,
   halibut: halibutPackage,
   buf: bufPackage,
@@ -8757,7 +8801,6 @@ export const pantry: Pantry = {
   loki: lokiPackage,
   mitmproxy: mitmproxyPackage,
   carapace: carapacePackage,
-  yadm: yadmPackage,
   applesimutils: applesimutilsPackage,
   pluto: plutoPackage,
   bashly: bashlyPackage,
@@ -8803,6 +8846,7 @@ export const pantry: Pantry = {
   'pkg-config': pkgconfigPackage,
   uchardet: uchardetPackage,
   'poppler-qt5': popplerqt5Package,
+  'xerces-c': xercesapacheorgxercescPackage,
   render: renderPackage,
   packer: packerPackage,
   pinentry: pinentryPackage,
@@ -8815,7 +8859,6 @@ export const pantry: Pantry = {
   itstool: itstoolPackage,
   eol: eolPackage,
   cython: cythonPackage,
-  'yt-dlp': ytdlpPackage,
   postgrest: postgrestPackage,
   lychee: lycheePackage,
   moon: moonPackage,
@@ -8827,8 +8870,10 @@ export const pantry: Pantry = {
   watch: watchPackage,
   tox: toxPackage,
   doctl: doctlPackage,
-  flac: flacPackage,
-  shout: shoutPackage,
+  flac: xiphorgflacPackage,
+  libshout: xiphorglibshoutPackage,
+  ogg: xiphorgoggPackage,
+  vorbis: xiphorgvorbisPackage,
   infracost: infracostPackage,
   tailwindcss: tailwindcssPackage,
   kubeshark: kubesharkPackage,
@@ -8840,9 +8885,11 @@ export const pantry: Pantry = {
   pocketbase: pocketbasePackage,
   dos2unix: dos2unixPackage,
   coredns: corednsPackage,
+  yarn: classicYarnPackage,
   re2c: re2cPackage,
   sqlc: sqlcPackage,
   flux: fluxPackage,
+  minizip: zlibnetminizipPackage,
   'g-ir': girPackage,
   gsf: gsfPackage,
   pango: pangoPackage,
@@ -8892,15 +8939,12 @@ export const pantry: Pantry = {
   symfony: symfonyPackage,
   'protoc-gen-go-grpc': protocgengogrpcPackage,
   jq: jqPackage,
-  'xray-core': xrayPackage,
-  xray: xrayPackage,
   xcodeproj: xcodeprojPackage,
   dexios: dexiosPackage,
   numbat: numbatPackage,
   gdown: gdownPackage,
   flyway: flywayPackage,
   htop: htopPackage,
-  xkbcli: xkbcliPackage,
   flit: flitPackage,
   'php-cs-fixer': phpcsfixerPackage,
   agg: aggPackage,
@@ -8923,7 +8967,6 @@ export const pantry: Pantry = {
   libcerf: libcerfPackage,
   talosctl: talosctlPackage,
   'sing-box': singboxPackage,
-  yasm: yasmPackage,
   edgedb: edgedbPackage,
   odigos: odigosPackage,
   watchman: watchmanPackage,
@@ -9087,7 +9130,6 @@ export const pantry: Pantry = {
   trivy: trivyPackage,
   tfsec: tfsecPackage,
   jbig2dec: jbig2decPackage,
-  wunderctl: wunderctlPackage,
   replibyte: replibytePackage,
   bind9: bind9Package,
   goreleaser: goreleaserPackage,
