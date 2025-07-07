@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/pueue`
  * @programs `pueue`, `pueued`
- * @version `4.0.0` (5 versions available)
+ * @version `4.0.1` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pueue`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "pueue"
  * console.log(pkg.description) // "Command-line tool for managing long-running she..."
  * console.log(pkg.programs)    // ["pueue", "pueued"]
- * console.log(pkg.versions[0]) // "4.0.0" (latest)
+ * console.log(pkg.versions[0]) // "4.0.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/pueue.md
@@ -63,6 +63,7 @@ export const pueuePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.0.1',
     '4.0.0',
     '3.4.1',
     '3.4.0',

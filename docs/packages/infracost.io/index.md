@@ -25,14 +25,15 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 10 versions</summary>
+<summary>Show all 11 versions</summary>
 
-- `0.10.41`, `0.10.40`, `0.10.39`, `0.10.38`, `0.10.37`
-- `0.10.36`, `0.10.35`, `0.10.34`, `0.10.33`, `0.10.32`
+- `0.10.42`, `0.10.41`, `0.10.40`, `0.10.39`, `0.10.38`
+- `0.10.37`, `0.10.36`, `0.10.35`, `0.10.34`, `0.10.33`
+- `0.10.32`
 
 </details>
 
-**Latest Version**: `0.10.41`
+**Latest Version**: `0.10.42`
 
 ### Install Specific Version
 

@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-07-07T09:32:06.230Z
+- **Last Updated**: 2025-07-07T13:39:10.003Z
 
 ## Table of Contents
 
@@ -70,7 +70,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[agpt.co](./packages/agpt.co/index.md)** () | AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to pr... | auto-gpt | 0.4.7 (+8) | `pkgx auto-gpt` |
 | **[crates.io/aichat](./packages/crates.io/aichat/index.md)** () | All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access... | aichat | 0.30.0 (+2) | `pkgx aichat` |
 | **[deepwisdom.ai](./packages/deepwisdom.ai/index.md)** (metagpt) | 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming | metagpt | 0.8.2 (+15) | `pkgx metagpt` |
-| **[elizaOS.github.io](./packages/elizaOS.github.io/index.md)** (eliza) | Autonomous agents for everyone | eliza | 1.0.18 (+19) | `pkgx eliza` |
+| **[elizaOS.github.io](./packages/elizaOS.github.io/index.md)** (eliza) | Autonomous agents for everyone | eliza | 1.0.19 (+20) | `pkgx eliza` |
 | **[github.com/AntonOsika/gpt-engineer](./packages/github.com/AntonOsika/gpt-engineer.md)** () | Platform to experiment with the AI Software Engineer. Terminal based. NOTE: Very different from h... | gpte, gpt-engineer | 0.3.1 (+14) | `pkgx GPT Engineer` |
 | **[github.com/AUTOMATIC1111/stable-diffusion-webui](./packages/github.com/AUTOMATIC1111/stable-diffusion-webui.md)** () | Stable Diffusion web UI | stable-diffusion-webui | 1.10.1 (+19) | `pkgx stable-diffusion-webui` |
 | **[github.com/nat/openplayground](./packages/github.com/nat/openplayground.md)** () | An LLM playground you can run on your laptop | openplayground | 2023.6.5 (+0) | `pkgx openplayground` |
@@ -130,7 +130,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[github.com/minamijoyo/tfupdate](./packages/github.com/minamijoyo/tfupdate.md)** () | Update version constraints in your Terraform configurations | tfupdate | 0.9.1 (+7) | `pkgx tfupdate` |
 | **[github.com/terraform-linters/tflint](./packages/github.com/terraform-linters/tflint.md)** () | A Pluggable Terraform Linter | tflint | 0.58.0 (+18) | `pkgx tflint` |
 | **[helm.sh](./packages/helm.sh/index.md)** () | The Kubernetes Package Manager | helm | 3.18.3 (+33) | `pkgx helm` |
-| **[infracost.io](./packages/infracost.io/index.md)** () | Cloud cost estimates for Terraform in pull requests💰📉 Shift FinOps Left! | infracost | 0.10.41 (+9) | `pkgx infracost` |
+| **[infracost.io](./packages/infracost.io/index.md)** () | Cloud cost estimates for Terraform in pull requests💰📉 Shift FinOps Left! | infracost | 0.10.42 (+10) | `pkgx infracost` |
 | **[jenkins.io](./packages/jenkins.io/index.md)** () | Extendable open source continuous integration server | jenkins-lts, jenkins-lts-cli | 2.504.3 (+19) | `pkgx jenkins-lts` |
 | **[k3d.io](./packages/k3d.io/index.md)** () | Little helper to run CNCF&#39;s k3s in Docker | k3d | 5.8.3 (+16) | `pkgx k3d` |
 | **[kind.sigs.k8s.io](./packages/kind.sigs.k8s.io/index.md)** () | Kubernetes IN Docker - local clusters for testing Kubernetes | kind | 0.29.0 (+10) | `pkgx kind` |
@@ -336,7 +336,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[exiftool.org](./packages/exiftool.org/index.md)** () | Perl lib for reading and writing EXIF metadata | exiftool | 13.30.0 (+7) | `pkgx exiftool` |
 | **[lcdf.org/gifsicle](./packages/lcdf.org/gifsicle/index.md)** () | Create, manipulate, and optimize GIF images and animations | gifsicle | 1.96.0 (+3) | `pkgx gifsicle` |
-| **[libvips.org](./packages/libvips.org/index.md)** () | A fast image processing library with low memory needs. | vips, vipsedit, vipsheader, ... (+2) | 8.17.0 (+8) | `pkgx vips` |
+| **[libvips.org](./packages/libvips.org/index.md)** () | A fast image processing library with low memory needs. | vips, vipsedit, vipsheader, ... (+2) | 8.17.1 (+9) | `pkgx vips` |
 | **[mpv.io](./packages/mpv.io/index.md)** () | Media player based on MPlayer and mplayer2 | mpv | 0.40.0 (+2) | `pkgx mpv` |
 | **[sf.net/optipng](./packages/sf.net/optipng/index.md)** () | PNG file optimizer | optipng | 7.9.1 (+2) | `pkgx optipng` |
 | **[streamlink.github.io](./packages/streamlink.github.io/index.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 7.4.0 (+19) | `pkgx streamlink` |
