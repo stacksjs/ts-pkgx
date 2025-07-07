@@ -27,11 +27,11 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 14 versions</summary>
+<summary>Show all 15 versions</summary>
 
 - `8.1.3`, `8.1.2`, `8.1.1`, `8.1.0`, `8.0.4`
-- `8.0.3`, `8.0.2`, `8.0.1`, `8.0.0`, `7.2.9`
-- `7.2.8`, `7.2.7`, `7.2.6`, `7.2.5`
+- `8.0.3`, `8.0.2`, `8.0.1`, `8.0.0`, `7.2.10`
+- `7.2.9`, `7.2.8`, `7.2.7`, `7.2.6`, `7.2.5`
 
 </details>
 

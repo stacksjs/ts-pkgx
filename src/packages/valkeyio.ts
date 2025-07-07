@@ -3,7 +3,7 @@
  *
  * @domain `valkey.io`
  * @programs `valkey-server`, `valkey-cli`, `valkey-benchmark`
- * @version `8.1.3` (14 versions available)
+ * @version `8.1.3` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install valkey`
@@ -80,6 +80,7 @@ export const valkeyPackage = {
     '8.0.2',
     '8.0.1',
     '8.0.0',
+    '7.2.10',
     '7.2.9',
     '7.2.8',
     '7.2.7',
