@@ -3,7 +3,7 @@
  *
  * @domain `pipenv.pypa.io`
  * @programs `pipenv`
- * @version `3000.0.0` (48 versions available)
+ * @version `3000.0.0` (49 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pipenv`
@@ -77,6 +77,7 @@ export const pipenvPackage = {
    */
   versions: [
     '3000.0.0',
+    '2025.0.4',
     '2025.0.3',
     '2025.0.2',
     '2025.0.1',
