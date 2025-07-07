@@ -2,7 +2,7 @@
  * **libimagequant** - Palette quantization library that powers pngquant and other PNG optimizers
  *
  * @domain `pngquant.org/lib`
- * @version `4.3.4` (8 versions available)
+ * @version `4.4.0` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install libimagequant`
@@ -19,7 +19,7 @@
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "libimagequant"
  * console.log(pkg.description) // "Palette quantization library that powers pngqua..."
- * console.log(pkg.versions[0]) // "4.3.4" (latest)
+ * console.log(pkg.versions[0]) // "4.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pngquant-org/lib.md
@@ -54,6 +54,7 @@ export const libimagequantPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.4.0',
     '4.3.4',
     '4.3.3',
     '4.3.2',
