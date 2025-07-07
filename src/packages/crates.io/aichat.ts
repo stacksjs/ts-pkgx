@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/aichat`
  * @programs `aichat`
- * @version `0.29.0` (2 versions available)
+ * @version `0.30.0` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aichat`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "aichat"
  * console.log(pkg.description) // "All-in-one LLM CLI tool featuring Shell Assista..."
  * console.log(pkg.programs)    // ["aichat"]
- * console.log(pkg.versions[0]) // "0.29.0" (latest)
+ * console.log(pkg.versions[0]) // "0.30.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/aichat.md
@@ -62,6 +62,7 @@ export const aichatPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.30.0',
     '0.29.0',
     '0.28.0',
   ] as const,
