@@ -1,6 +1,6 @@
 # bash
 
-> Bourne-Again SHell, a UNIX command interpreter
+> Package from pantry: gnu.org/bash
 
 ## Package Information
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install bash
+launchpad install gnu.org/bash
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `bash`
-- `bashbug`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `5.3.0`, `5.2.37`, `5.2.32`, `5.2.21`, `5.2.15`
-- `5.1.16`
-
-</details>
-
-**Latest Version**: `5.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/bash@5.3.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

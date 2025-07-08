@@ -1,11 +1,11 @@
-# julia
+# julialang.org
 
-> The Julia Programming Language
+> Package from pantry: julialang.org
 
 ## Package Information
 
 - **Domain**: `julialang.org`
-- **Name**: `julia`
+- **Name**: `julialang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/julialang.org/package.yml)
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install julia
+launchpad install julialang.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `julia`
-
-## Available Versions
-
-<details>
-<summary>Show all 19 versions</summary>
-
-- `1.11.5`, `1.11.4`, `1.11.3`, `1.11.2`, `1.11.1`
-- `1.11.0`, `1.10.10`, `1.10.9`, `1.10.8`, `1.10.7`
-- `1.10.6`, `1.10.5`, `1.10.4`, `1.10.3`, `1.10.2`
-- `1.10.1`, `1.10.0`, `1.9.4`, `1.9.3`
-
-</details>
-
-**Latest Version**: `1.11.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) julia -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -49,7 +28,7 @@ sh <(curl https://pkgx.sh) julia -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.julia
+const pkg = pantry['julialang.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

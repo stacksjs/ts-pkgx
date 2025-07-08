@@ -1,11 +1,11 @@
-# kislyuk.github.io/argcomplete
+# argcomplete
 
-> Python and tab completion, better together.
+> Package from pantry: kislyuk.github.io/argcomplete
 
 ## Package Information
 
 - **Domain**: `kislyuk.github.io/argcomplete`
-- **Name**: `kislyuk.github.io/argcomplete`
+- **Name**: `argcomplete`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kislyuk.github.io/argcomplete/package.yml)
 
@@ -20,28 +20,7 @@ launchpad install kislyuk.github.io/argcomplete
 
 This package provides the following executable programs:
 
-- `activate-global-python-argcomplete`
-- `register-python-argcomplete`
-- `python-argcomplete-check-easy-install-script`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `3.6.2`, `3.6.1`, `3.6.0`, `3.5.3`, `3.5.2`
-- `3.5.1`, `3.5.0`, `3.4.0`, `3.3.0`, `3.2.3`
-
-</details>
-
-**Latest Version**: `3.6.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +kislyuk.github.io/argcomplete@3.6.2 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -55,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['kislyuk.github.io/argcomplete']
+const pkg = pantry.argcomplete
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

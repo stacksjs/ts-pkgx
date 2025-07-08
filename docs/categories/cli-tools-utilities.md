@@ -1,6 +1,6 @@
 # CLI Tools & Utilities
 
-*35 packages in this category*
+*33 packages in this category*
 
 Command-line utilities and system tools.
 
@@ -266,93 +266,73 @@ Display directories as trees (with optional color/HTML output)
 
 ---
 
+### [gitlab.com/procps-ng/watch](../packages/gitlab.com/procps-ng/watch/index.md) (watch)
+
+Package from pantry: gitlab.com/procps-ng/watch
+
+**Programs**: None specified
+
+**Install**: `launchpad install gitlab.com/procps-ng/watch`
+
+---
+
 ### [gnu.org/bash](../packages/gnu.org/bash/index.md) (bash)
 
-Bourne-Again SHell, a UNIX command interpreter
+Package from pantry: gnu.org/bash
 
-**Programs**: bash, bashbug
+**Programs**: None specified
 
-**Install**: `launchpad install bash`
+**Install**: `launchpad install gnu.org/bash`
+
+---
+
+### [gnu.org/grep](../packages/gnu.org/grep/index.md) (grep)
+
+Package from pantry: gnu.org/grep
+
+**Programs**: None specified
+
+**Install**: `launchpad install gnu.org/grep`
+
+---
+
+### [gnu.org/sed](../packages/gnu.org/sed/index.md) (sed)
+
+Package from pantry: gnu.org/sed
+
+**Programs**: None specified
+
+**Install**: `launchpad install gnu.org/sed`
 
 ---
 
 ### [gnu.org/wget](../packages/gnu.org/wget/index.md) (wget)
 
-Internet file retriever
+Package from pantry: gnu.org/wget
 
-**Programs**: wget
+**Programs**: None specified
 
-**Install**: `launchpad install wget`
-
----
-
-### [htop.dev](../packages/htop.dev/index.md) (htop)
-
-Improved top (interactive process viewer)
-
-**Programs**: htop
-
-**Install**: `launchpad install htop`
-
----
-
-### [ohmyposh.dev](../packages/ohmyposh.dev/index.md) (oh-my-posh)
-
-The most customisable and low-latency cross platform/shell prompt renderer
-
-**Programs**: oh-my-posh
-
-**Install**: `launchpad install oh-my-posh`
-
----
-
-### [starship.rs](../packages/starship.rs/index.md) (starship)
-
-☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
-
-**Programs**: starship
-
-**Install**: `launchpad install starship`
+**Install**: `launchpad install gnu.org/wget`
 
 ---
 
 ### [stedolan.github.io/jq](../packages/stedolan.github.io/jq/index.md) (jq)
 
-Lightweight and flexible command-line JSON processor
+Package from pantry: stedolan.github.io/jq
 
-**Programs**: jq
+**Programs**: None specified
 
-**Install**: `launchpad install jq`
-
----
-
-### [tree-sitter.github.io](../packages/tree-sitter.github.io/index.md) (tree-sitter)
-
-Parser generator tool and incremental parsing library
-
-**Programs**: tree-sitter
-
-**Install**: `launchpad install tree-sitter`
+**Install**: `launchpad install stedolan.github.io/jq`
 
 ---
 
-### [wilfred.me.uk/difftastic](../packages/wilfred.me.uk/difftastic/index.md) (difft)
+### [wilfred.me.uk/difftastic](../packages/wilfred.me.uk/difftastic/index.md) (difftastic)
 
-a structural diff that understands syntax 🟥🟩
+Package from pantry: wilfred.me.uk/difftastic
 
-**Programs**: difft
+**Programs**: None specified
 
-**Install**: `launchpad install difft`
-
----
-
-### [zsh.sourceforge.io](../packages/zsh.sourceforge.io/index.md) (zsh)
-
-UNIX shell (command interpreter)
-
-**Programs**: zsh
-
-**Install**: `launchpad install zsh`
+**Install**: `launchpad install wilfred.me.uk/difftastic`
 
 ---
 

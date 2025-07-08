@@ -1,11 +1,11 @@
-# numbat
+# numbat.dev
 
-> A statically typed programming language for scientific computations with first class support for physical dimensions and units
+> Package from pantry: numbat.dev
 
 ## Package Information
 
 - **Domain**: `numbat.dev`
-- **Name**: `numbat`
+- **Name**: `numbat.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/numbat.dev/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install numbat
+launchpad install numbat.dev
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `numbat`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `1.16.0`, `1.15.0`, `1.14.0`, `1.13.0`, `1.12.0`
-- `1.11.0`, `1.10.1`, `1.10.0`, `1.9.0`, `1.8.0`
-
-</details>
-
-**Latest Version**: `1.16.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) numbat -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -47,7 +28,7 @@ sh <(curl https://pkgx.sh) numbat -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.numbat
+const pkg = pantry['numbat.dev']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

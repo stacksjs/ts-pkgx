@@ -1,11 +1,11 @@
-# khronos.org/glslang
+# glslang
 
-> Khronos-reference front end for GLSL/ESSL, partial front end for HLSL, and a SPIR-V generator.
+> Package from pantry: khronos.org/glslang
 
 ## Package Information
 
 - **Domain**: `khronos.org/glslang`
-- **Name**: `khronos.org/glslang`
+- **Name**: `glslang`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/khronos.org/glslang/package.yml)
 
@@ -20,29 +20,7 @@ launchpad install khronos.org/glslang
 
 This package provides the following executable programs:
 
-- `glslang`
-- `glslangValidator`
-- `spirv-remap`
-
-## Available Versions
-
-<details>
-<summary>Show all 13 versions</summary>
-
-- `15.4.0`, `15.3.0`, `15.2.0`, `15.1.0`, `15.0.0`
-- `14.3.0`, `14.2.0`, `14.1.0`, `14.0.0`, `13.1.1`
-- `13.1.0`, `13.0.0`, `12.3.1`
-
-</details>
-
-**Latest Version**: `15.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +khronos.org/glslang@15.4.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -50,7 +28,7 @@ sh <(curl https://pkgx.sh) +khronos.org/glslang@15.4.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['khronos.org/glslang']
+const pkg = pantry.glslang
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

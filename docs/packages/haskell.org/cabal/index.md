@@ -1,6 +1,6 @@
 # cabal
 
-> Official upstream development repository for Cabal and cabal-install
+> Package from pantry: haskell.org/cabal
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install cabal
+launchpad install haskell.org/cabal
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cabal`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `3.8.1`, `3.14.2.0`, `3.14.1.1`, `3.14.1.0`, `3.12.1.0`
-- `3.10.3.0`, `3.10.1`
-
-</details>
-
-**Latest Version**: `3.8.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) cabal -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
