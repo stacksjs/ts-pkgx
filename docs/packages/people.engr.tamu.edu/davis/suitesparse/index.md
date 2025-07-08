@@ -1,11 +1,11 @@
-# suitesparse
+# suite-sparse
 
-> Package from pantry: people.engr.tamu.edu/davis/suitesparse
+> The official SuiteSparse library: a suite of sparse matrix algorithms authored or co-authored by Tim Davis, Texas A&M University.
 
 ## Package Information
 
 - **Domain**: `people.engr.tamu.edu/davis/suitesparse`
-- **Name**: `suitesparse`
+- **Name**: `suite-sparse`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/people.engr.tamu.edu/davis/suitesparse/package.yml)
 
@@ -13,14 +13,36 @@
 
 ```bash
 # Install with launchpad
-launchpad install people.engr.tamu.edu/davis/suitesparse
+launchpad install suite-sparse
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mongoose`
+- `suitesparse_mongoose`
+
+## Available Versions
+
+<details>
+<summary>Show all 20 versions</summary>
+
+- `7.10.3`, `7.10.2`, `7.10.1`, `7.10.0`, `7.9.0`
+- `7.8.3`, `7.8.2`, `7.8.1`, `7.8.0`, `7.7.0`
+- `7.6.1`, `7.6.0`, `7.5.1`, `7.5.0`, `7.4.0`
+- `7.3.1`, `7.3.0`, `7.2.2`, `7.2.1`, `7.2.0`
+
+</details>
+
+**Latest Version**: `7.10.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +people.engr.tamu.edu/davis/suitesparse@7.10.3 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -40,7 +62,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.suitesparse
+const pkg = pantry['suite-sparse']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

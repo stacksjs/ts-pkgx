@@ -1,27 +1,34 @@
 /**
- * **protocols** - Package from pantry: wayland.freedesktop.org/protocols
+ * **wayland-protocols** - pkgx package
  *
  * @domain `wayland.freedesktop.org/protocols`
+ * @version `1.45.0` (14 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install wayland.freedesktop.org/protocols`
+ * @install `launchpad install wayland-protocols`
+ * @name `wayland-protocols`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.waylandfreedesktoporgprotocols
- * console.log(pkg.name)        // "protocols"
- * console.log(pkg.description) // "Package from pantry: wayland.freedesktop.org/pr..."
+ * // Access the package
+ * const pkg = pantry.waylandprotocols
+ * // Or access via domain
+ * const samePkg = pantry.waylandfreedesktoporgprotocols
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "wayland-protocols"
+ * console.log(pkg.versions[0]) // "1.45.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/wayland-freedesktop-org/protocols.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const waylandfreedesktoporgprotocolsPackage = {
+export const waylandprotocolsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'protocols' as const,
+  name: 'wayland-protocols' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -29,21 +36,45 @@ export const waylandfreedesktoporgprotocolsPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: wayland.freedesktop.org/protocols' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wayland.freedesktop.org/protocols/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install wayland.freedesktop.org/protocols' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wayland.freedesktop.org/protocols -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install wayland.freedesktop.org/protocols' as const,
+  installCommand: 'launchpad install wayland-protocols' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wayland.freedesktop.org/protocols/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.45.0',
+    '1.44.0',
+    '1.43.0',
+    '1.42.0',
+    '1.41.0',
+    '1.40.0',
+    '1.39.0',
+    '1.38.0',
+    '1.37.0',
+    '1.36.0',
+    '1.35.0',
+    '1.34.0',
+    '1.33.0',
+    '1.32.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wayland.freedesktop.org/protocols -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wayland-protocols' as const,
 }
 
-export type WaylandfreedesktoporgprotocolsPackage = typeof waylandfreedesktoporgprotocolsPackage
+export type WaylandprotocolsPackage = typeof waylandprotocolsPackage

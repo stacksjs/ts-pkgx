@@ -1,11 +1,11 @@
-# girara
+# pwmt.org/girara
 
-> Package from pantry: pwmt.org/girara
+> User interface library
 
 ## Package Information
 
 - **Domain**: `pwmt.org/girara`
-- **Name**: `girara`
+- **Name**: `pwmt.org/girara`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pwmt.org/girara/package.yml)
 
@@ -22,6 +22,24 @@ This package provides the following executable programs:
 
 *No programs specified*
 
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.4.5`, `0.4.4`
+
+</details>
+
+**Latest Version**: `0.4.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +pwmt.org/girara@0.4.5 -- $SHELL -i
+```
+
 ## Dependencies
 
 This package depends on:
@@ -36,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.girara
+const pkg = pantry['pwmt.org/girara']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # restic
 
-> Package from pantry: restic.net/restic
+> Fast, efficient and secure backup program
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install restic.net/restic
+launchpad install restic
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `restic`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `0.18.0`, `0.17.3`, `0.17.2`, `0.17.1`, `0.17.0`
+- `0.16.5`, `0.16.4`, `0.16.3`, `0.16.2`
+
+</details>
+
+**Latest Version**: `0.18.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) restic -- $SHELL -i
+```
 
 ## Usage Examples
 

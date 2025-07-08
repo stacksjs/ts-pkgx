@@ -1,23 +1,33 @@
 /**
- * **envconsul** - Package from pantry: hashicorp.com/envconsul
+ * **envconsul** - Launch a subprocess with environment variables using data from @HashiCorp Consul and Vault.
  *
  * @domain `hashicorp.com/envconsul`
+ * @programs `envconsul`
+ * @version `0.13.3` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install hashicorp.com/envconsul`
+ * @install `launchpad install envconsul`
+ * @name `envconsul`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.hashicorpcomenvconsul
+ * // Access the package
+ * const pkg = pantry.envconsul
+ * // Or access via domain
+ * const samePkg = pantry.hashicorpcomenvconsul
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "envconsul"
- * console.log(pkg.description) // "Package from pantry: hashicorp.com/envconsul"
+ * console.log(pkg.description) // "Launch a subprocess with environment variables ..."
+ * console.log(pkg.programs)    // ["envconsul"]
+ * console.log(pkg.versions[0]) // "0.13.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/hashicorp-com/envconsul.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const hashicorpcomenvconsulPackage = {
+export const envconsulPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,39 @@ export const hashicorpcomenvconsulPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: hashicorp.com/envconsul' as const,
+  description: 'Launch a subprocess with environment variables using data from @HashiCorp Consul and Vault.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/hashicorp.com/envconsul/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install hashicorp.com/envconsul' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +hashicorp.com/envconsul -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install hashicorp.com/envconsul' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install envconsul' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'envconsul',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/hashicorp.com/envconsul/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.13.3',
+    '0.13.2',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) envconsul -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install envconsul' as const,
 }
 
-export type HashicorpcomenvconsulPackage = typeof hashicorpcomenvconsulPackage
+export type EnvconsulPackage = typeof envconsulPackage

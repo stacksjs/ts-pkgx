@@ -1,7 +1,10 @@
 /**
- * **groff** - Package from pantry: gnu.org/groff
+ * **gnu.org/groff** - GNU troff text-formatting system
  *
  * @domain `gnu.org/groff`
+ * @programs `addftinfo`, `afmtodit`, `chem`, `eqn`, `eqn2graph`, ... (+34 more)
+ * @version `1.23.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/groff`
  * @dependencies `ghostscript.com`, `netpbm.sourceforge.net`, `github.com/rrthomas/psutils`, ... (+3 more) (includes OS-specific dependencies with `os:package` format)
@@ -11,8 +14,10 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorggroff
- * console.log(pkg.name)        // "groff"
- * console.log(pkg.description) // "Package from pantry: gnu.org/groff"
+ * console.log(pkg.name)        // "gnu.org/groff"
+ * console.log(pkg.description) // "GNU troff text-formatting system"
+ * console.log(pkg.programs)    // ["addftinfo", "afmtodit", ...]
+ * console.log(pkg.versions[0]) // "1.23.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/groff.md
@@ -22,7 +27,7 @@ export const gnuorggroffPackage = {
   /**
    * The display name of this package.
    */
-  name: 'groff' as const,
+  name: 'gnu.org/groff' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +35,60 @@ export const gnuorggroffPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: gnu.org/groff' as const,
+  description: 'GNU troff text-formatting system' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/groff/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnu.org/groff' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/groff -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/groff' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'addftinfo',
+    'afmtodit',
+    'chem',
+    'eqn',
+    'eqn2graph',
+    'gdiffmk',
+    'glilypond',
+    'gperl',
+    'gpinyin',
+    'grap2graph',
+    'grn',
+    'grodvi',
+    'groff',
+    'grog',
+    'grolbp',
+    'grolj4',
+    'gropdf',
+    'grops',
+    'grotty',
+    'hpftodit',
+    'indxbib',
+    'lkbib',
+    'lookbib',
+    'mmroff',
+    'neqn',
+    'nroff',
+    'pdfmom',
+    'pdfroff',
+    'pfbtops',
+    'pic',
+    'pic2graph',
+    'post-grohtml',
+    'preconv',
+    'pre-grohtml',
+    'refer',
+    'soelim',
+    'tbl',
+    'tfmtodit',
+    'troff',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -53,10 +103,16 @@ export const gnuorggroffPackage = {
     'perl.org',
     'linux:gnome.org/glib',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/groff/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.23.0',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/groff -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/groff' as const,
 }
 
 export type GnuorggroffPackage = typeof gnuorggroffPackage
