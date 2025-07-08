@@ -3,7 +3,7 @@
  *
  * @domain `vitejs.dev`
  * @programs `vite`
- * @version `7.0.2` (103 versions available)
+ * @version `7.0.3` (104 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install vite`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "vite"
  * console.log(pkg.description) // "Next generation frontend tooling. It's fast!"
  * console.log(pkg.programs)    // ["vite"]
- * console.log(pkg.versions[0]) // "7.0.2" (latest)
+ * console.log(pkg.versions[0]) // "7.0.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/vitejs-dev.md
@@ -69,6 +69,7 @@ export const vitePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '7.0.3',
     '7.0.2',
     '7.0.1',
     '7.0.0',
