@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-07-05T02:35:33.979Z
+ * Generated on 2025-07-08T02:38:33.456Z
  */
 
 /**
@@ -43,7 +43,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1587 total)
+ * List of all known packages (1588 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -563,6 +563,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'github.com/burntsushi/xsv',
   'github.com/caarlos0/org-stats',
   'github.com/caarlos0/svu',
+  'github.com/caddy-dns/acmedns',
   'github.com/caddyserver/xcaddy',
   'github.com/canonical/charmcraft',
   'github.com/canonical/pebble',
