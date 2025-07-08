@@ -518,6 +518,7 @@ import { brucePackage } from './github.com/brucedom/bruce'
 import { xsvPackage } from './github.com/burntsushi/xsv'
 import { orgstatsPackage } from './github.com/caarlos0/org-stats'
 import { svuPackage } from './github.com/caarlos0/svu'
+import { githubcomcaddydnsacmednsPackage } from './github.com/caddy-dns/acmedns'
 import { xcaddyPackage } from './github.com/caddyserver/xcaddy'
 import { charmcraftPackage } from './github.com/canonical/charmcraft'
 import { pebblePackage } from './github.com/canonical/pebble'
@@ -2487,6 +2488,8 @@ export interface Pantry {
   githubcomcaarlos0: typeof orgstatsPackage
 
   githubcomcaarlos01: typeof svuPackage
+  acmedns: typeof githubcomcaddydnsacmednsPackage
+  githubcomcaddydns: typeof githubcomcaddydnsacmednsPackage
 
   githubcomcaddyserver: typeof xcaddyPackage
 
@@ -6286,6 +6289,8 @@ export const pantry: Pantry = {
   githubcomcaarlos0: orgstatsPackage,
 
   githubcomcaarlos01: svuPackage,
+  acmedns: githubcomcaddydnsacmednsPackage,
+  githubcomcaddydns: githubcomcaddydnsacmednsPackage,
 
   githubcomcaddyserver: xcaddyPackage,
 
