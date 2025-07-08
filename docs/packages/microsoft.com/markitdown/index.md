@@ -1,6 +1,6 @@
 # markitdown
 
-> Python tool for converting files and office documents to Markdown.
+> Package from pantry: microsoft.com/markitdown
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install markitdown
+launchpad install microsoft.com/markitdown
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `markitdown`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.0.1.3`
-
-</details>
-
-**Latest Version**: `0.0.1.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) markitdown -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -1,11 +1,11 @@
-# fido2
+# libfido2
 
-> Provides library functionality for FIDO2, including communication with a device over USB or NFC.
+> Package from pantry: developers.yubico.com/libfido2
 
 ## Package Information
 
 - **Domain**: `developers.yubico.com/libfido2`
-- **Name**: `fido2`
+- **Name**: `libfido2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/developers.yubico.com/libfido2/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install fido2
+launchpad install developers.yubico.com/libfido2
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `fido2-assert`
-- `fido2-cred`
-- `fido2-token`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.16.0`, `1.15.0`, `1.14.0`, `1.13.0`
-
-</details>
-
-**Latest Version**: `1.16.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +developers.yubico.com/libfido2@1.16.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -57,7 +37,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.fido2
+const pkg = pantry.libfido2
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

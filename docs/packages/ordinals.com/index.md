@@ -1,11 +1,11 @@
-# ord
+# ordinals.com
 
-> Index, block explorer, and command-line wallet
+> Package from pantry: ordinals.com
 
 ## Package Information
 
 - **Domain**: `ordinals.com`
-- **Name**: `ord`
+- **Name**: `ordinals.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ordinals.com/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ord
+launchpad install ordinals.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ord`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.6.1`, `0.6.0`, `0.5.1`, `0.5.0`
-
-</details>
-
-**Latest Version**: `0.6.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ord -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) ord -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.ord
+const pkg = pantry['ordinals.com']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

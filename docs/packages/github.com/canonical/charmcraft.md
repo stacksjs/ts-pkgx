@@ -1,6 +1,6 @@
 # charmcraft
 
-> Collaborate, build and publish charmed operators for Kubernetes, Linux and Windows.
+> Package from pantry: github.com/canonical/charmcraft
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install charmcraft
+launchpad install github.com/canonical/charmcraft
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `charmcraft`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `3.5.2`, `3.5.1`, `3.5.0`, `3.4.3`, `3.3.3`
-- `3.3.2`, `3.3.0`, `3.2.2`, `3.2.1`, `2.7.5`
-
-</details>
-
-**Latest Version**: `3.5.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) charmcraft -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

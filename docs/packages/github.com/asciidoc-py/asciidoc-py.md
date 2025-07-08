@@ -1,11 +1,11 @@
-# asciidoc
+# asciidoc-py
 
-> Formatter/translator for text files to numerous formats
+> Package from pantry: github.com/asciidoc-py/asciidoc-py
 
 ## Package Information
 
 - **Domain**: `github.com/asciidoc-py/asciidoc-py`
-- **Name**: `asciidoc`
+- **Name**: `asciidoc-py`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/asciidoc-py/asciidoc-py/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install asciidoc
+launchpad install github.com/asciidoc-py/asciidoc-py
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `asciidoc`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `10.2.1`, `10.2.0`
-
-</details>
-
-**Latest Version**: `10.2.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) asciidoc -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -54,7 +36,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.asciidoc
+const pkg = pantry['asciidoc-py']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

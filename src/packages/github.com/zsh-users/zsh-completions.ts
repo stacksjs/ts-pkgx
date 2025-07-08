@@ -1,9 +1,7 @@
 /**
- * **github.com/zsh-users/zsh-completions** - Additional completion definitions for Zsh.
+ * **zsh-completions** - Package from pantry: github.com/zsh-users/zsh-completions
  *
  * @domain `github.com/zsh-users/zsh-completions`
- * @version `0.35.0` (1 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/zsh-users/zsh-completions`
  * @dependencies `zsh.sourceforge.io`
@@ -13,9 +11,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomzshuserszshcompletions
- * console.log(pkg.name)        // "github.com/zsh-users/zsh-completions"
- * console.log(pkg.description) // "Additional completion definitions for Zsh."
- * console.log(pkg.versions[0]) // "0.35.0" (latest)
+ * console.log(pkg.name)        // "zsh-completions"
+ * console.log(pkg.description) // "Package from pantry: github.com/zsh-users/zsh-c..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/zsh-users/zsh-completions.md
@@ -25,7 +22,7 @@ export const githubcomzshuserszshcompletionsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/zsh-users/zsh-completions' as const,
+  name: 'zsh-completions' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -33,15 +30,14 @@ export const githubcomzshuserszshcompletionsPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Additional completion definitions for Zsh.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zsh-users/zsh-completions/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/zsh-users/zsh-completions' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/zsh-users/zsh-completions' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/zsh-users/zsh-completions -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/zsh-users/zsh-completions' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -51,16 +47,10 @@ export const githubcomzshuserszshcompletionsPackage = {
   dependencies: [
     'zsh.sourceforge.io',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.35.0',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/zsh-users/zsh-completions -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/zsh-users/zsh-completions' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zsh-users/zsh-completions/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type GithubcomzshuserszshcompletionsPackage = typeof githubcomzshuserszshcompletionsPackage

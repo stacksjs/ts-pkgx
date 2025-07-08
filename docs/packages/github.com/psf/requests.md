@@ -1,11 +1,11 @@
-# github.com/psf/requests
+# requests
 
-> A simple, yet elegant, HTTP library.
+> Package from pantry: github.com/psf/requests
 
 ## Package Information
 
 - **Domain**: `github.com/psf/requests`
-- **Name**: `github.com/psf/requests`
+- **Name**: `requests`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/psf/requests/package.yml)
 
@@ -21,25 +21,6 @@ launchpad install github.com/psf/requests
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `2.32.4`, `2.32.3`, `2.32.2`, `2.32.1`, `2.32.0`
-- `2.31.0`
-
-</details>
-
-**Latest Version**: `2.32.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/psf/requests@2.32.4 -- $SHELL -i
-```
 
 ## Dependencies
 
@@ -57,7 +38,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/psf/requests']
+const pkg = pantry.requests
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

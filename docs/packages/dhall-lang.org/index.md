@@ -1,11 +1,11 @@
-# dhall
+# dhall-lang.org
 
-> Interpreter for the Dhall language
+> Package from pantry: dhall-lang.org
 
 ## Package Information
 
 - **Domain**: `dhall-lang.org`
-- **Name**: `dhall`
+- **Name**: `dhall-lang.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dhall-lang.org/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install dhall
+launchpad install dhall-lang.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `dhall`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.42.2`, `1.42.1`
-
-</details>
-
-**Latest Version**: `1.42.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) dhall -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -53,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.dhall
+const pkg = pantry['dhall-lang.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # liblqr.wikidot.com
 
-> Liquid Rescale library
+> Package from pantry: liblqr.wikidot.com
 
 ## Package Information
 
@@ -21,24 +21,6 @@ launchpad install liblqr.wikidot.com
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.4.3`, `0.4.2`
-
-</details>
-
-**Latest Version**: `0.4.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +liblqr.wikidot.com@0.4.3 -- $SHELL -i
-```
 
 ## Dependencies
 

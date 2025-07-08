@@ -1,33 +1,23 @@
 /**
- * **tine** - TINE a data pipeline runner.
+ * **tine** - Package from pantry: github.com/OutOfBedlam/tine
  *
  * @domain `github.com/OutOfBedlam/tine`
- * @programs `tine`
- * @version `0.0.7` (6 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install tine`
- * @name `tine`
+ * @install `launchpad install github.com/OutOfBedlam/tine`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.tine
- * // Or access via domain
- * const samePkg = pantry.githubcomoutofbedlamtine
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomoutofbedlamtine
  * console.log(pkg.name)        // "tine"
- * console.log(pkg.description) // "TINE a data pipeline runner."
- * console.log(pkg.programs)    // ["tine"]
- * console.log(pkg.versions[0]) // "0.0.7" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/OutOfBedlam/tine"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/OutOfBedlam/tine.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tinePackage = {
+export const githubcomoutofbedlamtinePackage = {
   /**
    * The display name of this package.
    */
@@ -39,43 +29,21 @@ export const tinePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'TINE a data pipeline runner.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/OutOfBedlam/tine/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/OutOfBedlam/tine' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tine' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'tine',
-  ] as const,
+  installCommand: 'launchpad install github.com/OutOfBedlam/tine' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/OutOfBedlam/tine -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/OutOfBedlam/tine' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.0.7',
-    '0.0.6',
-    '0.0.5',
-    '0.0.4',
-    '0.0.3',
-    '0.0.2',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tine -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tine' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/OutOfBedlam/tine/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type TinePackage = typeof tinePackage
+export type GithubcomoutofbedlamtinePackage = typeof githubcomoutofbedlamtinePackage

@@ -1,11 +1,11 @@
-# rclone
+# rclone.org
 
-> "rsync for cloud storage" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files
+> Package from pantry: rclone.org
 
 ## Package Information
 
 - **Domain**: `rclone.org`
-- **Name**: `rclone`
+- **Name**: `rclone.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rclone.org/package.yml)
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install rclone
+launchpad install rclone.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `rclone`
-
-## Available Versions
-
-<details>
-<summary>Show all 19 versions</summary>
-
-- `1.70.2`, `1.70.1`, `1.70.0`, `1.69.3`, `1.69.2`
-- `1.69.1`, `1.69.0`, `1.68.2`, `1.68.1`, `1.68.0`
-- `1.67.0`, `1.66.0`, `1.65.2`, `1.65.1`, `1.65.0`
-- `1.64.2`, `1.64.1`, `1.64.0`, `1.63.1`
-
-</details>
-
-**Latest Version**: `1.70.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) rclone -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -49,7 +28,7 @@ sh <(curl https://pkgx.sh) rclone -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.rclone
+const pkg = pantry['rclone.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

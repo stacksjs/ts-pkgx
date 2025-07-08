@@ -1,11 +1,11 @@
-# github.com/libsndfile/libsamplerate
+# libsamplerate
 
-> An audio Sample Rate Conversion library
+> Package from pantry: github.com/libsndfile/libsamplerate
 
 ## Package Information
 
 - **Domain**: `github.com/libsndfile/libsamplerate`
-- **Name**: `github.com/libsndfile/libsamplerate`
+- **Name**: `libsamplerate`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libsndfile/libsamplerate/package.yml)
 
@@ -22,31 +22,13 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.2.2`
-
-</details>
-
-**Latest Version**: `0.2.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/libsndfile/libsamplerate@0.2.2 -- $SHELL -i
-```
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/libsndfile/libsamplerate']
+const pkg = pantry.libsamplerate
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

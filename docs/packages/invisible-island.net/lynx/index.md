@@ -1,6 +1,6 @@
 # lynx
 
-> Text-based web browser
+> Package from pantry: invisible-island.net/lynx
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install lynx
+launchpad install invisible-island.net/lynx
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `lynx`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.9.2`
-
-</details>
-
-**Latest Version**: `2.9.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) lynx -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

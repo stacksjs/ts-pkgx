@@ -1,6 +1,6 @@
 # tfupdate
 
-> Update version constraints in your Terraform configurations
+> Package from pantry: github.com/minamijoyo/tfupdate
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install tfupdate
+launchpad install github.com/minamijoyo/tfupdate
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `tfupdate`
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `0.9.1`, `0.9.0`, `0.8.5`, `0.8.4`, `0.8.2`
-- `0.8.1`, `0.8.0`, `0.7.2`
-
-</details>
-
-**Latest Version**: `0.9.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) tfupdate -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

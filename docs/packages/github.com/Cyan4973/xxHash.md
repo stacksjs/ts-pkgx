@@ -1,11 +1,11 @@
-# xxhsum
+# xxHash
 
-> Extremely fast non-cryptographic hash algorithm
+> Package from pantry: github.com/Cyan4973/xxHash
 
 ## Package Information
 
 - **Domain**: `github.com/Cyan4973/xxHash`
-- **Name**: `xxhsum`
+- **Name**: `xxHash`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Cyan4973/xxHash/package.yml)
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install xxhsum
+launchpad install github.com/Cyan4973/xxHash
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `xxhsum`
-- `xxh32sum`
-- `xxh64sum`
-- `xxh128sum`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `0.8.3`, `0.8.2`, `0.8.1`
-
-</details>
-
-**Latest Version**: `0.8.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/Cyan4973/xxHash@0.8.3 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -49,7 +28,7 @@ sh <(curl https://pkgx.sh) +github.com/Cyan4973/xxHash@0.8.3 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.xxhsum
+const pkg = pantry.xxHash
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,38 +1,28 @@
 /**
- * **jless** - jless is a command-line JSON viewer designed for reading, exploring, and searching through JSON data.
+ * **jless.io** - Package from pantry: jless.io
  *
  * @domain `jless.io`
- * @programs `jless`
- * @version `0.9.0` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install jless`
- * @name `jless`
+ * @install `launchpad install jless.io`
  * @dependencies `linux:x.org/xcb@1` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.jless
- * // Or access via domain
- * const samePkg = pantry.jlessio
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "jless"
- * console.log(pkg.description) // "jless is a command-line JSON viewer designed fo..."
- * console.log(pkg.programs)    // ["jless"]
- * console.log(pkg.versions[0]) // "0.9.0" (latest)
+ * const pkg = pantry.jlessio
+ * console.log(pkg.name)        // "jless.io"
+ * console.log(pkg.description) // "Package from pantry: jless.io"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/jless-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jlessPackage = {
+export const jlessioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jless' as const,
+  name: 'jless.io' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,22 +30,15 @@ export const jlessPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'jless is a command-line JSON viewer designed for reading, exploring, and searching through JSON data.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jless.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: jless.io' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install jless' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'jless',
-  ] as const,
+  installCommand: 'launchpad install jless.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jless.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jless.io' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -65,20 +48,10 @@ export const jlessPackage = {
   dependencies: [
     'linux:x.org/xcb@1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.9.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jless -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jless' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jless.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type JlessPackage = typeof jlessPackage
+export type JlessioPackage = typeof jlessioPackage

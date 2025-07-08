@@ -1,6 +1,6 @@
 # gtk4
 
-> Toolkit for creating graphical user interfaces
+> Package from pantry: gtk.org/gtk4
 
 ## Package Information
 
@@ -13,51 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gtk4
+launchpad install gtk.org/gtk4
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gtk4-builder-tool`
-- `gtk4-demo`
-- `gtk4-demo-application`
-- `gtk4-encode-symbolic-svg`
-- `gtk4-launch`
-- `gtk4-node-editor`
-- `gtk4-query-settings`
-- `gtk4-print-editor`
-- `gtk4-rendernode-tool`
-- `gtk4-update-icon-cache`
-- `gtk4-widget-factory`
-
-## Available Versions
-
-<details>
-<summary>Show all 46 versions</summary>
-
-- `4.19.2`, `4.19.1`, `4.19.0`, `4.18.6`, `4.18.5`
-- `4.18.4`, `4.18.3`, `4.18.2`, `4.18.1`, `4.17.6`
-- `4.17.5`, `4.17.4`, `4.17.3`, `4.17.2`, `4.17.1`
-- `4.17.0`, `4.16.13`, `4.16.12`, `4.16.7`, `4.16.6`
-- `4.16.5`, `4.16.4`, `4.16.3`, `4.16.2`, `4.16.1`
-- `4.16.0`, `4.15.6`, `4.15.5`, `4.15.4`, `4.15.3`
-- `4.15.2`, `4.15.1`, `4.15.0`, `4.14.5`, `4.14.4`
-- `4.14.3`, `4.14.2`, `4.14.1`, `4.14.0`, `4.13.9`
-- `4.13.8`, `4.13.7`, `4.13.6`, `4.13.5`, `4.13.4`
-- `4.13.3`
-
-</details>
-
-**Latest Version**: `4.19.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gtk.org/gtk4@4.19.2 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -1,34 +1,23 @@
 /**
- * **passbolt** - A CLI tool to interact  with Passbolt, a Open source Password Manager for Teams
+ * **go-passbolt-cli** - Package from pantry: github.com/passbolt/go-passbolt-cli
  *
  * @domain `github.com/passbolt/go-passbolt-cli`
- * @programs `passbolt`
- * @version `0.3.2` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install passbolt`
- * @name `go-passbolt-cli`
- * @aliases `passbolt`
+ * @install `launchpad install github.com/passbolt/go-passbolt-cli`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.passbolt
- * // Or access via domain
- * const samePkg = pantry.githubcompassboltgopassboltcli
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcompassboltgopassboltcli
  * console.log(pkg.name)        // "go-passbolt-cli"
- * console.log(pkg.description) // "A CLI tool to interact  with Passbolt, a Open s..."
- * console.log(pkg.programs)    // ["passbolt"]
- * console.log(pkg.versions[0]) // "0.3.2" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/passbolt/go-pas..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/passbolt/go-passbolt-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const passboltPackage = {
+export const githubcompassboltgopassboltcliPackage = {
   /**
    * The display name of this package.
    */
@@ -40,41 +29,21 @@ export const passboltPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A CLI tool to interact  with Passbolt, a Open source Password Manager for Teams' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/passbolt/go-passbolt-cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/passbolt/go-passbolt-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install passbolt' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'passbolt',
-  ] as const,
+  installCommand: 'launchpad install github.com/passbolt/go-passbolt-cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/passbolt/go-passbolt-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/passbolt/go-passbolt-cli' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.3.2',
-    '0.3.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'passbolt',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) passbolt -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install passbolt' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/passbolt/go-passbolt-cli/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type PassboltPackage = typeof passboltPackage
+export type GithubcompassboltgopassboltcliPackage = typeof githubcompassboltgopassboltcliPackage

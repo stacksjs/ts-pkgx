@@ -1,11 +1,11 @@
-# go-redfish-api-idrac-client
+# go-redfish-api-idrac
 
-> iDRAC Redfish API client library written in Go.
+> Package from pantry: github.com/greenpau/go-redfish-api-idrac
 
 ## Package Information
 
 - **Domain**: `github.com/greenpau/go-redfish-api-idrac`
-- **Name**: `go-redfish-api-idrac-client`
+- **Name**: `go-redfish-api-idrac`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/greenpau/go-redfish-api-idrac/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install go-redfish-api-idrac-client
+launchpad install github.com/greenpau/go-redfish-api-idrac
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `go-redfish-api-idrac-client`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.0.6`
-
-</details>
-
-**Latest Version**: `1.0.6`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) go-redfish-api-idrac-client -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) go-redfish-api-idrac-client -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['go-redfish-api-idrac-client']
+const pkg = pantry['go-redfish-api-idrac']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

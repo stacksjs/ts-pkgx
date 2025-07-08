@@ -1,11 +1,11 @@
-# xb-tool
+# libxmlb
 
-> A library to help create and query binary XML blobs
+> Package from pantry: github.com/hughsie/libxmlb
 
 ## Package Information
 
 - **Domain**: `github.com/hughsie/libxmlb`
-- **Name**: `xb-tool`
+- **Name**: `libxmlb`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/hughsie/libxmlb/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install xb-tool
+launchpad install github.com/hughsie/libxmlb
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `xb-tool`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.3.22`, `0.3.21`, `0.3.20`, `0.3.19`
-
-</details>
-
-**Latest Version**: `0.3.22`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) xb-tool -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -54,7 +36,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['xb-tool']
+const pkg = pantry.libxmlb
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

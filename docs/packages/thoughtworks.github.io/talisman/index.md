@@ -1,6 +1,6 @@
 # talisman
 
-> Using a pre-commit hook, Talisman validates the outgoing changeset for things that look suspicious — such as tokens, passwords, and private keys.
+> Package from pantry: thoughtworks.github.io/talisman
 
 ## Package Information
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install talisman
+launchpad install thoughtworks.github.io/talisman
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `talisman`
-
-## Available Versions
-
-<details>
-<summary>Show all 12 versions</summary>
-
-- `1.37.0`, `1.36.1`, `1.36.0`, `1.35.1`, `1.35.0`
-- `1.34.0`, `1.33.2`, `1.33.1`, `1.33.0`, `1.32.2`
-- `1.32.1`, `1.32.0`
-
-</details>
-
-**Latest Version**: `1.37.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) talisman -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

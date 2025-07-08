@@ -1,33 +1,23 @@
 /**
- * **nex** - 44BSD re-implementation of vi
+ * **nex** - Package from pantry: github.com/blynn/nex
  *
  * @domain `github.com/blynn/nex`
- * @programs `nex`
- * @version `2021.3.30` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install nex`
- * @name `nex`
+ * @install `launchpad install github.com/blynn/nex`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.nex
- * // Or access via domain
- * const samePkg = pantry.githubcomblynnnex
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomblynnnex
  * console.log(pkg.name)        // "nex"
- * console.log(pkg.description) // "44BSD re-implementation of vi"
- * console.log(pkg.programs)    // ["nex"]
- * console.log(pkg.versions[0]) // "2021.3.30" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/blynn/nex"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/blynn/nex.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nexPackage = {
+export const githubcomblynnnexPackage = {
   /**
    * The display name of this package.
    */
@@ -39,38 +29,21 @@ export const nexPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '44BSD re-implementation of vi' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/blynn/nex/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/blynn/nex' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install nex' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'nex',
-  ] as const,
+  installCommand: 'launchpad install github.com/blynn/nex' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/blynn/nex -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/blynn/nex' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2021.3.30',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nex -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install nex' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/blynn/nex/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type NexPackage = typeof nexPackage
+export type GithubcomblynnnexPackage = typeof githubcomblynnnexPackage

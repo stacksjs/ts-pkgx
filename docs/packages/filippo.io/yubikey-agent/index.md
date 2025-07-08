@@ -1,6 +1,6 @@
 # yubikey-agent
 
-> Seamless ssh-agent for YubiKeys and other PIV tokens
+> Package from pantry: filippo.io/yubikey-agent
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install yubikey-agent
+launchpad install filippo.io/yubikey-agent
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `yubikey-agent`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.1.6`
-
-</details>
-
-**Latest Version**: `0.1.6`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) yubikey-agent -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -1,11 +1,11 @@
-# swiftgen
+# SwiftGen
 
-> The Swift code generator for your assets, storyboards, Localizable.strings, … — Get rid of all String-based APIs!
+> Package from pantry: github.com/SwiftGen/SwiftGen
 
 ## Package Information
 
 - **Domain**: `github.com/SwiftGen/SwiftGen`
-- **Name**: `swiftgen`
+- **Name**: `SwiftGen`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/SwiftGen/SwiftGen/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install swiftgen
+launchpad install github.com/SwiftGen/SwiftGen
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `swiftgen`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `6.6.3`, `6.6.2`
-
-</details>
-
-**Latest Version**: `6.6.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) swiftgen -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) swiftgen -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.swiftgen
+const pkg = pantry.SwiftGen
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
