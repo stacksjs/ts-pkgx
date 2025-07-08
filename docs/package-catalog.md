@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-07-08T17:30:05.952Z
+- **Last Updated**: 2025-07-08T19:29:06.472Z
 
 ## Table of Contents
 
@@ -48,7 +48,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[crystal-lang.org](./packages/crystal-lang.org/index.md)** () | Fast and statically typed, compiled language with Ruby-like syntax | crystal | 1.16.3 (+18) | `pkgx crystal` |
 | **[dart.dev](./packages/dart.dev/index.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.8.1 (+35) | `pkgx dart` |
-| **[go.dev](./packages/go.dev/index.md)** (go) | The Go programming language | go, gofmt | 1.24.4 (+67) | `pkgx go` |
+| **[go.dev](./packages/go.dev/index.md)** (go) | The Go programming language | go, gofmt | 1.24.5 (+69) | `pkgx go` |
 | **[julialang.org](./packages/julialang.org/index.md)** () | The Julia Programming Language | julia | 1.11.5 (+18) | `pkgx julia` |
 | **[lua.org](./packages/lua.org/index.md)** () | Powerful, lightweight programming language | lua, luac | 5.4.8 (+3) | `pkgx lua` |
 | **[luajit.org](./packages/luajit.org/index.md)** () | Mirror of the LuaJIT git repository | luajit, luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;. | 2.1.0 (+0) | `pkgx luajit` |
@@ -70,7 +70,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[agpt.co](./packages/agpt.co/index.md)** () | AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to pr... | auto-gpt | 0.4.7 (+8) | `pkgx auto-gpt` |
 | **[crates.io/aichat](./packages/crates.io/aichat/index.md)** () | All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access... | aichat | 0.30.0 (+2) | `pkgx aichat` |
 | **[deepwisdom.ai](./packages/deepwisdom.ai/index.md)** (metagpt) | 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming | metagpt | 0.8.2 (+15) | `pkgx metagpt` |
-| **[elizaOS.github.io](./packages/elizaOS.github.io/index.md)** (eliza) | Autonomous agents for everyone | eliza | 1.0.20 (+21) | `pkgx eliza` |
+| **[elizaOS.github.io](./packages/elizaOS.github.io/index.md)** (eliza) | Autonomous agents for everyone | eliza | 1.1.1 (+23) | `pkgx eliza` |
 | **[github.com/AntonOsika/gpt-engineer](./packages/github.com/AntonOsika/gpt-engineer.md)** () | Platform to experiment with the AI Software Engineer. Terminal based. NOTE: Very different from h... | gpte, gpt-engineer | 0.3.1 (+14) | `pkgx GPT Engineer` |
 | **[github.com/AUTOMATIC1111/stable-diffusion-webui](./packages/github.com/AUTOMATIC1111/stable-diffusion-webui.md)** () | Stable Diffusion web UI | stable-diffusion-webui | 1.10.1 (+19) | `pkgx stable-diffusion-webui` |
 | **[github.com/nat/openplayground](./packages/github.com/nat/openplayground.md)** () | An LLM playground you can run on your laptop | openplayground | 2023.6.5 (+0) | `pkgx openplayground` |
@@ -78,7 +78,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[kaggle.com](./packages/kaggle.com/index.md)** () | Official Kaggle API | kaggle | 1.7.4.5 (+4) | `pkgx kaggle` |
 | **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.26.0 (+29) | `pkgx llm` |
 | **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.1 (+18) | `pkgx f2py` |
-| **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.9.5 (+101) | `pkgx ollama` |
+| **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.9.6 (+102) | `pkgx ollama` |
 | **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 1.93.2 (+244) | `pkgx openai` |
 | **[openinterpreter.com](./packages/openinterpreter.com/index.md)** (interpreter) | A natural language interface for computers | interpreter | 0.4.0 (+21) | `pkgx interpreter` |
 
