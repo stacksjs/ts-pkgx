@@ -1,7 +1,9 @@
 /**
- * **libaec** - Package from pantry: dkrz.de/libaec
+ * **dkrz.de/libaec** - libaec - Adaptive Entropy Coding library
  *
  * @domain `dkrz.de/libaec`
+ * @version `1.1.4` (5 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install dkrz.de/libaec`
  *
@@ -10,8 +12,9 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.dkrzdelibaec
- * console.log(pkg.name)        // "libaec"
- * console.log(pkg.description) // "Package from pantry: dkrz.de/libaec"
+ * console.log(pkg.name)        // "dkrz.de/libaec"
+ * console.log(pkg.description) // "libaec - Adaptive Entropy Coding library"
+ * console.log(pkg.versions[0]) // "1.1.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/dkrz-de/libaec.md
@@ -21,7 +24,7 @@ export const dkrzdelibaecPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libaec' as const,
+  name: 'dkrz.de/libaec' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -29,21 +32,32 @@ export const dkrzdelibaecPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: dkrz.de/libaec' as const,
+  description: 'libaec - Adaptive Entropy Coding library' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dkrz.de/libaec/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install dkrz.de/libaec' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +dkrz.de/libaec -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install dkrz.de/libaec' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dkrz.de/libaec/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.1.4',
+    '1.1.3',
+    '1.1.2',
+    '1.1.1',
+    '1.0.6',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +dkrz.de/libaec -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dkrz.de/libaec' as const,
 }
 
 export type DkrzdelibaecPackage = typeof dkrzdelibaecPackage

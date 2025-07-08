@@ -1,6 +1,6 @@
 # skopeo
 
-> Package from pantry: github.com/containers/skopeo
+> Work with remote images registries - retrieving information, images, signing content
 
 ## Package Information
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/containers/skopeo
+launchpad install skopeo
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `skopeo`
+
+## Available Versions
+
+<details>
+<summary>Show all 15 versions</summary>
+
+- `1.19.0`, `1.18.0`, `1.17.0`, `1.16.1`, `1.16.0`
+- `1.15.2`, `1.15.1`, `1.15.0`, `1.14.5`, `1.14.4`
+- `1.14.3`, `1.14.2`, `1.14.1`, `1.14.0`, `1.13.3`
+
+</details>
+
+**Latest Version**: `1.19.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) skopeo -- $SHELL -i
+```
 
 ## Dependencies
 

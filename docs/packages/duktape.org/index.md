@@ -1,11 +1,11 @@
-# duktape.org
+# duk
 
-> Package from pantry: duktape.org
+> Duktape - embeddable Javascript engine with a focus on portability and compact footprint
 
 ## Package Information
 
 - **Domain**: `duktape.org`
-- **Name**: `duktape.org`
+- **Name**: `duk`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/duktape.org/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install duktape.org
+launchpad install duk
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `duk`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.7.0`
+
+</details>
+
+**Latest Version**: `2.7.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) duk -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['duktape.org']
+const pkg = pantry.duk
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

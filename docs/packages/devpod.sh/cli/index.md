@@ -1,11 +1,11 @@
-# cli
+# devpod
 
-> Package from pantry: devpod.sh/cli
+> Codespaces but open-source, client-only and unopinionated: Works with any IDE and lets you use any cloud, kubernetes or just localhost docker.
 
 ## Package Information
 
 - **Domain**: `devpod.sh/cli`
-- **Name**: `cli`
+- **Name**: `devpod`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/devpod.sh/cli/package.yml)
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with launchpad
-launchpad install devpod.sh/cli
+launchpad install devpod
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `devpod`
+
+## Available Versions
+
+<details>
+<summary>Show all 32 versions</summary>
+
+- `0.6.15`, `0.6.14`, `0.6.13`, `0.6.12`, `0.6.11`
+- `0.6.10`, `0.6.9`, `0.6.8`, `0.6.7`, `0.6.6`
+- `0.6.5`, `0.6.4`, `0.6.2`, `0.6.1`, `0.6.0`
+- `0.5.22`, `0.5.21`, `0.5.20`, `0.5.19`, `0.5.18`
+- `0.5.16`, `0.5.15`, `0.5.14`, `0.5.13`, `0.5.12`
+- `0.5.11`, `0.5.10`, `0.5.9`, `0.5.8`, `0.5.7`
+- `0.5.6`, `0.5.5`
+
+</details>
+
+**Latest Version**: `0.6.15`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) devpod -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +52,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cli
+const pkg = pantry.devpod
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

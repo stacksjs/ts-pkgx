@@ -8,7 +8,7 @@ Packages related to gaming & game development.
 
 ### [libsdl.org](../packages/libsdl.org/index.md)
 
-Package from pantry: libsdl.org
+Simple Directmedia Layer
 
 **Programs**: None specified
 

@@ -1,11 +1,11 @@
-# libidn
+# idn
 
-> Package from pantry: gnu.org/libidn
+> International domain name library
 
 ## Package Information
 
 - **Domain**: `gnu.org/libidn`
-- **Name**: `libidn`
+- **Name**: `idn`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libidn/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install gnu.org/libidn
+launchpad install idn
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `idn`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.43.0`, `1.42.0`, `1.41.0`
+
+</details>
+
+**Latest Version**: `1.43.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) idn -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libidn
+const pkg = pantry.idn
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

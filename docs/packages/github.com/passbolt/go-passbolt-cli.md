@@ -1,6 +1,6 @@
 # go-passbolt-cli
 
-> Package from pantry: github.com/passbolt/go-passbolt-cli
+> A CLI tool to interact with Passbolt, a Open source Password Manager for Teams
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/passbolt/go-passbolt-cli
+launchpad install passbolt
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `passbolt`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `passbolt`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.3.2`, `0.3.1`
+
+</details>
+
+**Latest Version**: `0.3.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) passbolt -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +52,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['go-passbolt-cli']
+const pkg = pantry.passbolt
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

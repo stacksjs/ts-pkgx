@@ -1,11 +1,11 @@
-# charset_normalizer
+# normalizer
 
-> Package from pantry: github.com/Ousret/charset_normalizer
+> Truly universal encoding detector in pure Python
 
 ## Package Information
 
 - **Domain**: `github.com/Ousret/charset_normalizer`
-- **Name**: `charset_normalizer`
+- **Name**: `normalizer`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Ousret/charset_normalizer/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/Ousret/charset_normalizer
+launchpad install normalizer
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `normalizer`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `3.4.2`, `3.4.1`, `3.4.0`, `3.3.2`
+
+</details>
+
+**Latest Version**: `3.4.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) normalizer -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.charset_normalizer
+const pkg = pantry.normalizer
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

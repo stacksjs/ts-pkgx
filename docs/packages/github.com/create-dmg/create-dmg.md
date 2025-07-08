@@ -1,6 +1,6 @@
 # create-dmg
 
-> Package from pantry: github.com/create-dmg/create-dmg
+> A shell script to build fancy DMGs
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/create-dmg/create-dmg
+launchpad install create-dmg
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `create-dmg`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.2.2`, `1.2.1`, `1.2.0`, `1.1.0`
+
+</details>
+
+**Latest Version**: `1.2.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) create-dmg -- $SHELL -i
+```
 
 ## Usage Examples
 

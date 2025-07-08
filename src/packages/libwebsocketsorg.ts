@@ -1,7 +1,9 @@
 /**
- * **libwebsockets.org** - Package from pantry: libwebsockets.org
+ * **libwebsockets.org** - canonical libwebsockets.org networking library
  *
  * @domain `libwebsockets.org`
+ * @version `4.3.5` (4 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install libwebsockets.org`
  * @dependencies `libuv.org@1`, `libevent.org@2`
@@ -12,7 +14,8 @@
  *
  * const pkg = pantry.libwebsocketsorg
  * console.log(pkg.name)        // "libwebsockets.org"
- * console.log(pkg.description) // "Package from pantry: libwebsockets.org"
+ * console.log(pkg.description) // "canonical libwebsockets.org networking library"
+ * console.log(pkg.versions[0]) // "4.3.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libwebsockets-org.md
@@ -30,14 +33,15 @@ export const libwebsocketsorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: libwebsockets.org' as const,
+  description: 'canonical libwebsockets.org networking library' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libwebsockets.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install libwebsockets.org' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libwebsockets.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libwebsockets.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -48,10 +52,19 @@ export const libwebsocketsorgPackage = {
     'libuv.org@1',
     'libevent.org@2',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libwebsockets.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '4.3.5',
+    '4.3.4',
+    '4.3.3',
+    '4.3.2',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libwebsockets.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libwebsockets.org' as const,
 }
 
 export type LibwebsocketsorgPackage = typeof libwebsocketsorgPackage

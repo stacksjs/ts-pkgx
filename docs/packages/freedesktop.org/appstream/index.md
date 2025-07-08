@@ -1,11 +1,11 @@
-# appstream
+# appstreamcli
 
-> Package from pantry: freedesktop.org/appstream
+> Tools and libraries to work with AppStream metadata
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/appstream`
-- **Name**: `appstream`
+- **Name**: `appstreamcli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/appstream/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install freedesktop.org/appstream
+launchpad install appstreamcli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `appstreamcli`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.0.5`, `1.0.4`, `1.0.3`
+
+</details>
+
+**Latest Version**: `1.0.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) appstreamcli -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -40,7 +58,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.appstream
+const pkg = pantry.appstreamcli
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,11 +1,11 @@
-# libaec
+# dkrz.de/libaec
 
-> Package from pantry: dkrz.de/libaec
+> libaec - Adaptive Entropy Coding library
 
 ## Package Information
 
 - **Domain**: `dkrz.de/libaec`
-- **Name**: `libaec`
+- **Name**: `dkrz.de/libaec`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dkrz.de/libaec/package.yml)
 
@@ -22,13 +22,31 @@ This package provides the following executable programs:
 
 *No programs specified*
 
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `1.1.4`, `1.1.3`, `1.1.2`, `1.1.1`, `1.0.6`
+
+</details>
+
+**Latest Version**: `1.1.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +dkrz.de/libaec@1.1.4 -- $SHELL -i
+```
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libaec
+const pkg = pantry['dkrz.de/libaec']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

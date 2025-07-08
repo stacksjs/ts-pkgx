@@ -1,6 +1,6 @@
 # envconsul
 
-> Package from pantry: hashicorp.com/envconsul
+> Launch a subprocess with environment variables using data from @HashiCorp Consul and Vault.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install hashicorp.com/envconsul
+launchpad install envconsul
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `envconsul`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.13.3`, `0.13.2`
+
+</details>
+
+**Latest Version**: `0.13.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) envconsul -- $SHELL -i
+```
 
 ## Usage Examples
 

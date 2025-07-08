@@ -1,11 +1,11 @@
-# matio.sourceforge.io
+# libmatio
 
-> Package from pantry: matio.sourceforge.io
+> C library for reading and writing MATLAB MAT files
 
 ## Package Information
 
 - **Domain**: `matio.sourceforge.io`
-- **Name**: `matio.sourceforge.io`
+- **Name**: `libmatio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/matio.sourceforge.io/package.yml)
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with launchpad
-launchpad install matio.sourceforge.io
+launchpad install matdump
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `matdump`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `matdump`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `1.5.28`, `1.5.27`, `1.5.26`, `1.5.25`, `1.5.24`
+- `1.5.23`
+
+</details>
+
+**Latest Version**: `1.5.28`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) matdump -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -35,7 +60,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['matio.sourceforge.io']
+const pkg = pantry.matdump
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

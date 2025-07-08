@@ -1,11 +1,11 @@
-# microplane
+# mp
 
-> Package from pantry: github.com/clever/microplane
+> A CLI tool to make git changes across many repos, especially useful with Microservices.
 
 ## Package Information
 
 - **Domain**: `github.com/clever/microplane`
-- **Name**: `microplane`
+- **Name**: `mp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/clever/microplane/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/clever/microplane
+launchpad install mp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mp`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.0.36`, `0.0.35`, `0.0.34`
+
+</details>
+
+**Latest Version**: `0.0.36`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) mp -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.microplane
+const pkg = pantry.mp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

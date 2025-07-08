@@ -1,7 +1,9 @@
 /**
- * **idna** - Package from pantry: github.com/kjd/idna
+ * **github.com/kjd/idna** - Internationalized Domain Names for Python (IDNA 2008 and UTS #46)
  *
  * @domain `github.com/kjd/idna`
+ * @version `3.10.0` (5 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/kjd/idna`
  * @dependencies `python.org~3.11`
@@ -11,8 +13,9 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomkjdidna
- * console.log(pkg.name)        // "idna"
- * console.log(pkg.description) // "Package from pantry: github.com/kjd/idna"
+ * console.log(pkg.name)        // "github.com/kjd/idna"
+ * console.log(pkg.description) // "Internationalized Domain Names for Python (IDNA..."
+ * console.log(pkg.versions[0]) // "3.10.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/kjd/idna.md
@@ -22,7 +25,7 @@ export const githubcomkjdidnaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'idna' as const,
+  name: 'github.com/kjd/idna' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,14 +33,15 @@ export const githubcomkjdidnaPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/kjd/idna' as const,
+  description: 'Internationalized Domain Names for Python (IDNA 2008 and UTS #46)' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kjd/idna/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/kjd/idna' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/kjd/idna' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/kjd/idna -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/kjd/idna' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -47,10 +51,20 @@ export const githubcomkjdidnaPackage = {
   dependencies: [
     'python.org~3.11',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kjd/idna/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.10.0',
+    '3.9.0',
+    '3.8.0',
+    '3.7.0',
+    '3.6.0',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/kjd/idna -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/kjd/idna' as const,
 }
 
 export type GithubcomkjdidnaPackage = typeof githubcomkjdidnaPackage

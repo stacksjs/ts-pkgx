@@ -1,7 +1,10 @@
 /**
- * **bc** - Package from pantry: gnu.org/bc
+ * **gnu.org/bc** - pkgx package
  *
  * @domain `gnu.org/bc`
+ * @programs `bc`, `dc`
+ * @version `1.8.2` (4 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/bc`
  * @dependencies `github.com/westes/flex^2.6`
@@ -11,8 +14,9 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgbc
- * console.log(pkg.name)        // "bc"
- * console.log(pkg.description) // "Package from pantry: gnu.org/bc"
+ * console.log(pkg.name)        // "gnu.org/bc"
+ * console.log(pkg.programs)    // ["bc", "dc"]
+ * console.log(pkg.versions[0]) // "1.8.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/bc.md
@@ -22,7 +26,7 @@ export const gnuorgbcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'bc' as const,
+  name: 'gnu.org/bc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +34,23 @@ export const gnuorgbcPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: gnu.org/bc' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/bc/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnu.org/bc' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/bc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/bc' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'bc',
+    'dc',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +59,19 @@ export const gnuorgbcPackage = {
   dependencies: [
     'github.com/westes/flex^2.6',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/bc/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.8.2',
+    '1.8.1',
+    '1.8.0',
+    '1.7.1',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/bc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/bc' as const,
 }
 
 export type GnuorgbcPackage = typeof gnuorgbcPackage

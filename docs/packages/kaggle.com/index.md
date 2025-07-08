@@ -1,11 +1,11 @@
-# kaggle.com
+# kaggle
 
-> Package from pantry: kaggle.com
+> Official Kaggle API
 
 ## Package Information
 
 - **Domain**: `kaggle.com`
-- **Name**: `kaggle.com`
+- **Name**: `kaggle`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kaggle.com/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install kaggle.com
+launchpad install kaggle
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `kaggle`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `1.7.4.5`, `1.7.4.2`, `1.6.3`, `1.6.1`, `1.5.16`
+
+</details>
+
+**Latest Version**: `1.7.4.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) kaggle -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['kaggle.com']
+const pkg = pantry.kaggle
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

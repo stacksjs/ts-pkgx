@@ -1,11 +1,11 @@
-# libsndfile
+# sndfile
 
-> Package from pantry: github.com/libsndfile/libsndfile
+> A C library for reading and writing sound files containing sampled audio data.
 
 ## Package Information
 
 - **Domain**: `github.com/libsndfile/libsndfile`
-- **Name**: `libsndfile`
+- **Name**: `sndfile`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libsndfile/libsndfile/package.yml)
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/libsndfile/libsndfile
+launchpad install sndfile
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `sndfile-info`
+- `sndfile-convert`
+- `sndfile-play`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.2.2`, `1.2.1`, `1.2.0`
+
+</details>
+
+**Latest Version**: `1.2.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/libsndfile/libsndfile@1.2.2 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -39,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libsndfile
+const pkg = pantry.sndfile
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

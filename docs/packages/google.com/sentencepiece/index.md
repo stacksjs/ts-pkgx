@@ -1,11 +1,11 @@
-# sentencepiece
+# spm_decode
 
-> Package from pantry: google.com/sentencepiece
+> Unsupervised text tokenizer for Neural Network-based text generation.
 
 ## Package Information
 
 - **Domain**: `google.com/sentencepiece`
-- **Name**: `sentencepiece`
+- **Name**: `spm_decode`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/sentencepiece/package.yml)
 
@@ -13,14 +13,36 @@
 
 ```bash
 # Install with launchpad
-launchpad install google.com/sentencepiece
+launchpad install spm_decode
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `spm_decode`
+- `spm_encode`
+- `spm_export_vocab`
+- `spm_normalize`
+- `spm_train`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `0.2.0`, `0.1.99`, `0.1.98`, `0.1.97`
+
+</details>
+
+**Latest Version**: `0.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +google.com/sentencepiece@0.2.0 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +50,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.sentencepiece
+const pkg = pantry.spm_decode
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

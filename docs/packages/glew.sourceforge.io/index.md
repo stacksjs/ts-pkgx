@@ -1,6 +1,6 @@
 # glew.sourceforge.io
 
-> Package from pantry: glew.sourceforge.io
+> The OpenGL Extension Wrangler Library
 
 ## Package Information
 
@@ -20,7 +20,26 @@ launchpad install glew.sourceforge.io
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `glewinfo`
+- `visualinfo`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.2.0`
+
+</details>
+
+**Latest Version**: `2.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +glew.sourceforge.io@2.2.0 -- $SHELL -i
+```
 
 ## Usage Examples
 

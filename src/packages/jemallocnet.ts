@@ -1,7 +1,9 @@
 /**
- * **jemalloc.net** - Package from pantry: jemalloc.net
+ * **jemalloc.net** - pkgx package
  *
  * @domain `jemalloc.net`
+ * @version `5.3.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install jemalloc.net`
  *
@@ -11,7 +13,7 @@
  *
  * const pkg = pantry.jemallocnet
  * console.log(pkg.name)        // "jemalloc.net"
- * console.log(pkg.description) // "Package from pantry: jemalloc.net"
+ * console.log(pkg.versions[0]) // "5.3.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/jemalloc-net.md
@@ -29,21 +31,28 @@ export const jemallocnetPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: jemalloc.net' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jemalloc.net/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install jemalloc.net' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jemalloc.net -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jemalloc.net' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jemalloc.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '5.3.0',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jemalloc.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jemalloc.net' as const,
 }
 
 export type JemallocnetPackage = typeof jemallocnetPackage

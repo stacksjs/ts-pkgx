@@ -1,23 +1,33 @@
 /**
- * **pakku** - Package from pantry: github.com/mycreepy/pakku
+ * **pakku** - pakku is a declarative approach to your system package managers.
  *
  * @domain `github.com/mycreepy/pakku`
+ * @programs `pakku`
+ * @version `0.5.0` (8 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/mycreepy/pakku`
+ * @install `launchpad install pakku`
+ * @name `pakku`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcommycreepypakku
+ * // Access the package
+ * const pkg = pantry.pakku
+ * // Or access via domain
+ * const samePkg = pantry.githubcommycreepypakku
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "pakku"
- * console.log(pkg.description) // "Package from pantry: github.com/mycreepy/pakku"
+ * console.log(pkg.description) // "pakku is a declarative approach to your system ..."
+ * console.log(pkg.programs)    // ["pakku"]
+ * console.log(pkg.versions[0]) // "0.5.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/mycreepy/pakku.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcommycreepypakkuPackage = {
+export const pakkuPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,45 @@ export const githubcommycreepypakkuPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/mycreepy/pakku' as const,
+  description: 'pakku is a declarative approach to your system package managers.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mycreepy/pakku/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/mycreepy/pakku' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/mycreepy/pakku' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/mycreepy/pakku -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/mycreepy/pakku' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install pakku' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'pakku',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mycreepy/pakku/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.5.0',
+    '0.4.2',
+    '0.4.1',
+    '0.4.0',
+    '0.3.1',
+    '0.3.0',
+    '0.2.0',
+    '0.1.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pakku -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pakku' as const,
 }
 
-export type GithubcommycreepypakkuPackage = typeof githubcommycreepypakkuPackage
+export type PakkuPackage = typeof pakkuPackage
