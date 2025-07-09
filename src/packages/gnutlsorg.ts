@@ -3,7 +3,7 @@
  *
  * @domain `gnutls.org`
  * @programs `certtool`, `danetool`, `gnutls-cli`, `gnutls-cli-debug`, `gnutls-serv`, ... (+3 more)
- * @version `3.8.9` (10 versions available)
+ * @version `3.8.10` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnutls.org`
@@ -16,7 +16,7 @@
  * const pkg = pantry.gnutlsorg
  * console.log(pkg.name)        // "gnutls.org"
  * console.log(pkg.programs)    // ["certtool", "danetool", ...]
- * console.log(pkg.versions[0]) // "3.8.9" (latest)
+ * console.log(pkg.versions[0]) // "3.8.10" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnutls-org.md
@@ -78,6 +78,7 @@ export const gnutlsorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.8.10',
     '3.8.9',
     '3.8.7',
     '3.8.6',
