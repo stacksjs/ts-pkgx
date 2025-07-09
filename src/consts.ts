@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-07-08T02:38:33.456Z
+ * Generated on 2025-07-09T02:39:49.866Z
  */
 
 /**
@@ -43,7 +43,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1588 total)
+ * List of all known packages (1590 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -69,6 +69,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'apache.org/avro',
   'apache.org/httpd',
   'apache.org/jmeter',
+  'apache.org/serf',
   'apache.org/subversion',
   'apache.org/thrift',
   'apache.org/zookeeper',
@@ -1297,6 +1298,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'pkgx.sh/mash',
   'pkgx.sh/pkgm',
   'pkl-lang.org',
+  'plakar.io',
   'planetscale.com',
   'plantuml.com',
   'plasmasturm.org/rename',
