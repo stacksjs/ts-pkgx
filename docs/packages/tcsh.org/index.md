@@ -26,19 +26,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 1 versions</summary>
+<summary>Show all 2 versions</summary>
 
-- `6.24.15`
+- `6.24.16`, `6.24.15`
 
 </details>
 
-**Latest Version**: `6.24.15`
+**Latest Version**: `6.24.16`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +tcsh.org@6.24.15 -- $SHELL -i
+sh <(curl https://pkgx.sh) +tcsh.org@6.24.16 -- $SHELL -i
 ```
 
 ## Dependencies

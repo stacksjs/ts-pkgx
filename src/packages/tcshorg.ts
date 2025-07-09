@@ -3,7 +3,7 @@
  *
  * @domain `tcsh.org`
  * @programs `csh`, `tcsh`
- * @version `6.24.15` (1 versions available)
+ * @version `6.24.16` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tcsh.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "tcsh.org"
  * console.log(pkg.description) // "Enhanced, fully compatible version of the Berke..."
  * console.log(pkg.programs)    // ["csh", "tcsh"]
- * console.log(pkg.versions[0]) // "6.24.15" (latest)
+ * console.log(pkg.versions[0]) // "6.24.16" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tcsh-org.md
@@ -66,6 +66,7 @@ export const tcshorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '6.24.16',
     '6.24.15',
   ] as const,
   aliases: [] as const,
