@@ -3,7 +3,7 @@
  *
  * @domain `github.com/MinseokOh/toml-cli`
  * @programs `toml-cli`
- * @version `0.1.2` (2 versions available)
+ * @version `0.1.3` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install toml-cli`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "toml-cli"
  * console.log(pkg.description) // "A simple CLI for editing and querying TOML files."
  * console.log(pkg.programs)    // ["toml-cli"]
- * console.log(pkg.versions[0]) // "0.1.2" (latest)
+ * console.log(pkg.versions[0]) // "0.1.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/MinseokOh/toml-cli.md
@@ -62,6 +62,7 @@ export const tomlcliPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.1.3',
     '0.1.2',
     '0.1.1',
   ] as const,
