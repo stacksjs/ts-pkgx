@@ -1,5 +1,5 @@
 /**
- * **info-zip.org/unzip** - Extraction utility for .zip compressed archives
+ * **unzip** - Extraction utility for .zip compressed archives
  *
  * @domain `info-zip.org/unzip`
  * @programs `funzip`, `unzip`, `unzipsfx`, `zipgrep`, `zipinfo`
@@ -7,12 +7,17 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install info-zip.org/unzip`
+ * @aliases `unzip`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.infoziporgunzip
+ * // Access via alias (recommended)
+ * const pkg = pantry.unzip
+ * // Or access via domain
+ * const samePkg = pantry.infoziporgunzip
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "info-zip.org/unzip"
  * console.log(pkg.description) // "Extraction utility for .zip compressed archives"
  * console.log(pkg.programs)    // ["funzip", "unzip", ...]
@@ -22,7 +27,7 @@
  * @see https://ts-pkgx.netlify.app/packages/info-zip-org/unzip.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const infoziporgunzipPackage = {
+export const unzipPackage = {
   /**
    * The display name of this package.
    */
@@ -63,9 +68,15 @@ export const infoziporgunzipPackage = {
   versions: [
     '6.0.0',
   ] as const,
-  aliases: [] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'unzip',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +info-zip.org/unzip -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install info-zip.org/unzip' as const,
 }
 
-export type InfoziporgunzipPackage = typeof infoziporgunzipPackage
+export type UnzipPackage = typeof unzipPackage

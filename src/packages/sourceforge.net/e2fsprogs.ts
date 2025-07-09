@@ -3,7 +3,7 @@
  *
  * @domain `sourceforge.net/e2fsprogs`
  * @programs `chattr`, `compile_et`, `lsattr`, `mk_cmds`, `uuidgen`
- * @version `1.47.2` (3 versions available)
+ * @version `1.47.3` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sourceforge.net/e2fsprogs`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "sf.net/e2fsprogs"
  * console.log(pkg.description) // "Utilities for the ext2, ext3, and ext4 file sys..."
  * console.log(pkg.programs)    // ["chattr", "compile_et", ...]
- * console.log(pkg.versions[0]) // "1.47.2" (latest)
+ * console.log(pkg.versions[0]) // "1.47.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sourceforge-net/e2fsprogs.md
@@ -75,6 +75,7 @@ export const sfnete2fsprogsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.47.3',
     '1.47.2',
     '1.47.1',
     '1.47.0',

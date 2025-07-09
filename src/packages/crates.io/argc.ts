@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/argc`
  * @programs `argc`
- * @version `1.22.0` (10 versions available)
+ * @version `1.23.0` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install argc`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "argc"
  * console.log(pkg.description) // "A Bash CLI framework, also a Bash command runner."
  * console.log(pkg.programs)    // ["argc"]
- * console.log(pkg.versions[0]) // "1.22.0" (latest)
+ * console.log(pkg.versions[0]) // "1.23.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/argc.md
@@ -62,6 +62,7 @@ export const argcPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.23.0',
     '1.22.0',
     '1.21.1',
     '1.21.0',

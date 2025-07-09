@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install info-zip.org/unzip
+launchpad install unzip
 ```
 
 ## Programs
@@ -25,6 +25,12 @@ This package provides the following executable programs:
 - `unzipsfx`
 - `zipgrep`
 - `zipinfo`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `unzip`
 
 ## Available Versions
 
@@ -50,7 +56,7 @@ sh <(curl https://pkgx.sh) +info-zip.org/unzip@6.0.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['info-zip.org/unzip']
+const pkg = pantry.unzip
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
