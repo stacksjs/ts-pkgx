@@ -75,6 +75,16 @@ export const ALIAS_OVERRIDES: AliasOverride[] = [
     domain: 'aws.amazon.com/cdk',
     aliases: ['cdk', 'aws/cdk'],
   },
+
+  // Compression/Archive tools
+  {
+    domain: 'info-zip.org/zip',
+    aliases: ['zip'],
+  },
+  {
+    domain: 'info-zip.org/unzip',
+    aliases: ['unzip'],
+  },
 ]
 
 /**

@@ -3318,7 +3318,7 @@ export interface Pantry {
   imagemagickorg: typeof imagemagickorgPackage
 
   indexsupplycomshovel: typeof shovelPackage
-  unzip: typeof infoziporgunzipPackage
+
   infoziporgunzip: typeof infoziporgunzipPackage
 
   infoziporg: typeof zipPackage
@@ -5387,6 +5387,7 @@ export interface Pantry {
   tmate: typeof tmatePackage
   depot: typeof depotPackage
   curl: typeof cURLPackage
+  unzip: typeof infoziporgunzipPackage
 }
 
 export type Packages = Pantry
@@ -7119,7 +7120,7 @@ export const pantry: Pantry = {
   imagemagickorg: imagemagickorgPackage,
 
   indexsupplycomshovel: shovelPackage,
-  unzip: infoziporgunzipPackage,
+
   infoziporgunzip: infoziporgunzipPackage,
 
   infoziporg: zipPackage,
@@ -9188,6 +9189,7 @@ export const pantry: Pantry = {
   tmate: tmatePackage,
   depot: depotPackage,
   curl: cURLPackage,
+  unzip: infoziporgunzipPackage,
 }
 
 export const packages: Packages = pantry

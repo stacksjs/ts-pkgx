@@ -1029,6 +1029,7 @@ export const aliases: Record<string, string> = {
   'unbound': 'unbound.net',
   'unrar': 'rarlab.com',
   'unxip': 'github.com/saagarjha/unxip',
+  'unzip': 'info-zip.org/unzip',
   'update-mime-database': 'freedesktop.org/shared-mime-info',
   'uplift': 'upliftci.dev',
   'upx': 'upx.github.io',
