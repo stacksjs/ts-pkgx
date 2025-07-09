@@ -8,7 +8,7 @@
  *
  * @install `launchpad install svn`
  * @name `svn`
- * @dependencies `gnu.org/gettext^0.21`, `lz4.org^1`, `openssl.org^1.1`, ... (+7 more)
+ * @dependencies `gnu.org/gettext^0.21`, `lz4.org^1`, `openssl.org^1.1`, ... (+8 more)
  *
  * @example
  * ```typescript
@@ -82,6 +82,7 @@ export const svnPackage = {
     'zlib.net^1.2',
     'apache.org/apr^1',
     'apache.org/apr-util^1',
+    'apache.org/serf^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

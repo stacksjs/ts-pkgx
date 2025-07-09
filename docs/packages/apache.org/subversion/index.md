@@ -64,6 +64,7 @@ This package depends on:
 - `zlib.net^1.2`
 - `apache.org/apr^1`
 - `apache.org/apr-util^1`
+- `apache.org/serf^1`
 
 ## Usage Examples
 

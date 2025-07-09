@@ -24,6 +24,7 @@ import { apacheorgarrowPackage } from './apache.org/arrow'
 import { avroPackage } from './apache.org/avro'
 import { apacheorghttpdPackage } from './apache.org/httpd'
 import { apacheorgjmeterPackage } from './apache.org/jmeter'
+import { apacheorgserfPackage } from './apache.org/serf'
 import { svnPackage } from './apache.org/subversion'
 import { thriftPackage } from './apache.org/thrift'
 import { apacheorgzookeeperPackage } from './apache.org/zookeeper'
@@ -1252,6 +1253,7 @@ import { mashPackage } from './pkgx.sh/mash'
 import { pkgmPackage } from './pkgx.sh/pkgm'
 import { pkgxPackage } from './pkgxsh'
 import { pkllangorgPackage } from './pkl-langorg'
+import { plakarioPackage } from './plakario'
 import { pscalePackage } from './planetscalecom'
 import { plantumlPackage } from './plantumlcom'
 import { renamePackage } from './plasmasturm.org/rename'
@@ -1630,6 +1632,8 @@ export interface Pantry {
   apacheorghttpd: typeof apacheorghttpdPackage
   jmeter: typeof apacheorgjmeterPackage
   apacheorgjmeter: typeof apacheorgjmeterPackage
+  serf: typeof apacheorgserfPackage
+  apacheorgserf: typeof apacheorgserfPackage
   subversion: typeof svnPackage
   apacheorgsubversion: typeof svnPackage
 
@@ -3750,6 +3754,7 @@ export interface Pantry {
   pkgxsh: typeof pkgxPackage
   pkl_langorg: typeof pkllangorgPackage
   pkllangorg: typeof pkllangorgPackage
+  plakario: typeof plakarioPackage
   planetscalecom: typeof pscalePackage
   plantumlcom: typeof plantumlPackage
 
@@ -5432,6 +5437,8 @@ export const pantry: Pantry = {
   apacheorghttpd: apacheorghttpdPackage,
   jmeter: apacheorgjmeterPackage,
   apacheorgjmeter: apacheorgjmeterPackage,
+  serf: apacheorgserfPackage,
+  apacheorgserf: apacheorgserfPackage,
   subversion: svnPackage,
   apacheorgsubversion: svnPackage,
 
@@ -7552,6 +7559,7 @@ export const pantry: Pantry = {
   pkgxsh: pkgxPackage,
   pkl_langorg: pkllangorgPackage,
   pkllangorg: pkllangorgPackage,
+  plakario: plakarioPackage,
   planetscalecom: pscalePackage,
   plantumlcom: plantumlPackage,
 
