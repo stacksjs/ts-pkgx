@@ -3,7 +3,7 @@
  *
  * @domain `charm.sh/mods`
  * @programs `mods`
- * @version `1.8.0` (16 versions available)
+ * @version `1.8.1` (17 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mods`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "mods"
  * console.log(pkg.description) // "AI on the command line"
  * console.log(pkg.programs)    // ["mods"]
- * console.log(pkg.versions[0]) // "1.8.0" (latest)
+ * console.log(pkg.versions[0]) // "1.8.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/charm-sh/mods.md
@@ -62,6 +62,7 @@ export const modsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.8.1',
     '1.8.0',
     '1.7.0',
     '1.6.0',
