@@ -3,7 +3,7 @@
  *
  * @domain `lima-vm.io`
  * @programs `apptainer.lima`, `docker.lima`, `kubectl.lima`, `lima`, `limactl`, ... (+2 more)
- * @version `1.1.1` (25 versions available)
+ * @version `1.2.0` (26 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install lima-vm.io`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "lima-vm.io"
  * console.log(pkg.description) // "Linux virtual machines, with a focus on running..."
  * console.log(pkg.programs)    // ["apptainer.lima", "docker.lima", ...]
- * console.log(pkg.versions[0]) // "1.1.1" (latest)
+ * console.log(pkg.versions[0]) // "1.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/lima-vm-io.md
@@ -70,6 +70,7 @@ export const limavmioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.2.0',
     '1.1.1',
     '1.1.0',
     '1.0.7',
