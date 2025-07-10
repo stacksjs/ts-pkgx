@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-07-10T09:28:55.623Z
+- **Last Updated**: 2025-07-10T10:28:44.095Z
 
 ## Table of Contents
 
@@ -111,7 +111,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[laravel.com](./packages/laravel.com/index.md)** () | The Laravel application installer. | laravel | 5.16.0 (+16) | `pkgx laravel` |
 | **[symfony.com](./packages/symfony.com/index.md)** () | The Symfony CLI tool | symfony | 5.12.0 (+49) | `pkgx symfony` |
 | **[tailwindcss.com](./packages/tailwindcss.com/index.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.11 (+44) | `pkgx tailwindcss` |
-| **[vitejs.dev](./packages/vitejs.dev/index.md)** () | Next generation frontend tooling. It&#39;s fast! | vite | 7.0.3 (+103) | `pkgx vite` |
+| **[vitejs.dev](./packages/vitejs.dev/index.md)** () | Next generation frontend tooling. It&#39;s fast! | vite | 7.0.4 (+104) | `pkgx vite` |
 
 ## DevOps
 
@@ -319,7 +319,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[aquasecurity.github.io/tfsec](./packages/aquasecurity.github.io/tfsec/index.md)** () | Static analysis security scanner for your terraform code | tfsec | 1.28.14 (+8) | `pkgx tfsec` |
 | **[aquasecurity.github.io/trivy](./packages/aquasecurity.github.io/trivy/index.md)** () | Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositori... | trivy | 0.64.1 (+37) | `pkgx trivy` |
 | **[certbot.eff.org](./packages/certbot.eff.org/index.md)** () | Certbot is EFF&#39;s tool to obtain certs from Let&#39;s Encrypt and (optionally) auto-enable HTT... | certbot | 4.1.1 (+18) | `pkgx certbot` |
-| **[checkov.io](./packages/checkov.io/index.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.449 (+483) | `pkgx checkov` |
+| **[checkov.io](./packages/checkov.io/index.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.450 (+484) | `pkgx checkov` |
 | **[filippo.io/age](./packages/filippo.io/age/index.md)** () | A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config ... | age, age-keygen | 1.2.1 (+2) | `pkgx age` |
 | **[filippo.io/yubikey-agent](./packages/filippo.io/yubikey-agent/index.md)** () | Seamless ssh-agent for YubiKeys and other PIV tokens | yubikey-agent | 0.1.6 (+0) | `pkgx yubikey-agent` |
 | **[mkcert.dev](./packages/mkcert.dev/index.md)** () | A simple zero-config tool to make locally trusted development certificates with any names you&#39... | mkcert | 1.4.4 (+0) | `pkgx mkcert` |
