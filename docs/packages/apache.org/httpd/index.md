@@ -37,20 +37,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `2.4.63`, `2.4.62`, `2.4.61`, `2.4.60`, `2.4.59`
-- `2.4.58`, `2.4.57`
+- `2.4.64`, `2.4.63`, `2.4.62`, `2.4.61`, `2.4.60`
+- `2.4.59`, `2.4.58`, `2.4.57`
 
 </details>
 
-**Latest Version**: `2.4.63`
+**Latest Version**: `2.4.64`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +apache.org/httpd@2.4.63 -- $SHELL -i
+sh <(curl https://pkgx.sh) +apache.org/httpd@2.4.64 -- $SHELL -i
 ```
 
 ## Dependencies

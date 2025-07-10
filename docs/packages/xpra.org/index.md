@@ -25,14 +25,15 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 10 versions</summary>
+<summary>Show all 11 versions</summary>
 
-- `6.3.1`, `6.3.0`, `6.2.5`, `6.2.4`, `6.2.3`
-- `6.2.2`, `6.2.1`, `6.2.0`, `6.1.3`, `6.1.2`
+- `6.3.2`, `6.3.1`, `6.3.0`, `6.2.5`, `6.2.4`
+- `6.2.3`, `6.2.2`, `6.2.1`, `6.2.0`, `6.1.3`
+- `6.1.2`
 
 </details>
 
-**Latest Version**: `6.3.1`
+**Latest Version**: `6.3.2`
 
 ### Install Specific Version
 
