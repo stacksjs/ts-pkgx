@@ -42,7 +42,7 @@ export const steampipePackage = {
   description: 'Zero-ETL, infinite possibilities. Live query APIs, code & more with SQL. No DB required.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/steampipe.io/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/turbot/steampipe' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
