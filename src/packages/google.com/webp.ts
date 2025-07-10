@@ -3,7 +3,7 @@
  *
  * @domain `google.com/webp`
  * @programs `cwebp`, `dwebp`, `gif2webp`, `img2webp`, `vwebp`, ... (+2 more)
- * @version `1.5.0` (5 versions available)
+ * @version `1.6.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install google.com/webp`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "google.com/webp"
  * console.log(pkg.description) // "Mirror only. Please do not send pull requests. ..."
  * console.log(pkg.programs)    // ["cwebp", "dwebp", ...]
- * console.log(pkg.versions[0]) // "1.5.0" (latest)
+ * console.log(pkg.versions[0]) // "1.6.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/google-com/webp.md
@@ -73,6 +73,7 @@ export const googlecomwebpPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.6.0',
     '1.5.0',
     '1.4.0',
     '1.3.2',
