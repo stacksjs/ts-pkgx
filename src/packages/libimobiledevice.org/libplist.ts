@@ -1,29 +1,37 @@
 /**
- * **libimobiledevice.org/libplist** - pkgx package
+ * **plistutil** - A library to handle Apple Property List format in binary or XML
  *
  * @domain `libimobiledevice.org/libplist`
+ * @programs `plistutil`
  * @version `2.7.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install libimobiledevice.org/libplist`
+ * @install `launchpad install plistutil`
+ * @name `plistutil`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.libimobiledeviceorglibplist
- * console.log(pkg.name)        // "libimobiledevice.org/libplist"
+ * // Access the package
+ * const pkg = pantry.plistutil
+ * // Or access via domain
+ * const samePkg = pantry.libimobiledeviceorglibplist
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "plistutil"
+ * console.log(pkg.description) // "A library to handle Apple Property List format ..."
+ * console.log(pkg.programs)    // ["plistutil"]
  * console.log(pkg.versions[0]) // "2.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libimobiledevice-org/libplist.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libimobiledeviceorglibplistPackage = {
+export const plistutilPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libimobiledevice.org/libplist' as const,
+  name: 'plistutil' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -31,7 +39,7 @@ export const libimobiledeviceorglibplistPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A library to handle Apple Property List format in binary or XML' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libimobiledevice.org/libplist/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
@@ -39,8 +47,14 @@ export const libimobiledeviceorglibplistPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install libimobiledevice.org/libplist' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install plistutil' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'plistutil',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
   /**
@@ -54,9 +68,13 @@ export const libimobiledeviceorglibplistPackage = {
     '2.4.0',
     '2.3.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libimobiledevice.org/libplist -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libimobiledevice.org/libplist' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) plistutil -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install plistutil' as const,
 }
 
-export type LibimobiledeviceorglibplistPackage = typeof libimobiledeviceorglibplistPackage
+export type PlistutilPackage = typeof plistutilPackage

@@ -1040,7 +1040,7 @@ import { libgdgithubioPackage } from './libgdgithubio'
 import { geosconfigPackage } from './libgeosorg'
 import { git2Package } from './libgit2org'
 import { libimobiledeviceorglibimobiledevicegluePackage } from './libimobiledevice.org/libimobiledevice-glue'
-import { libimobiledeviceorglibplistPackage } from './libimobiledevice.org/libplist'
+import { plistutilPackage } from './libimobiledevice.org/libplist'
 import { libimobiledeviceorglibusbmuxdPackage } from './libimobiledevice.org/libusbmuxd'
 import { idevicedatePackage } from './libimobiledeviceorg'
 import { libislsourceforgeioPackage } from './libislsourceforgeio'
@@ -3444,8 +3444,8 @@ export interface Pantry {
   libgit2org: typeof git2Package
   libimobiledevice_glue: typeof libimobiledeviceorglibimobiledevicegluePackage
   libimobiledeviceorglibimobiledeviceglue: typeof libimobiledeviceorglibimobiledevicegluePackage
-  libplist: typeof libimobiledeviceorglibplistPackage
-  libimobiledeviceorglibplist: typeof libimobiledeviceorglibplistPackage
+  libplist: typeof plistutilPackage
+  libimobiledeviceorglibplist: typeof plistutilPackage
   libusbmuxd: typeof libimobiledeviceorglibusbmuxdPackage
   libimobiledeviceorglibusbmuxd: typeof libimobiledeviceorglibusbmuxdPackage
   libimobiledeviceorg: typeof idevicedatePackage
@@ -4294,6 +4294,7 @@ export interface Pantry {
   'suite-sparse': typeof suitesparsePackage
   ansible: typeof ansiblePackage
   autossh: typeof autosshPackage
+  plistutil: typeof plistutilPackage
   'Protocol Buffers': typeof protocPackage
   protoc: typeof protocPackage
   changie: typeof changiePackage
@@ -7248,8 +7249,8 @@ export const pantry: Pantry = {
   libgit2org: git2Package,
   libimobiledevice_glue: libimobiledeviceorglibimobiledevicegluePackage,
   libimobiledeviceorglibimobiledeviceglue: libimobiledeviceorglibimobiledevicegluePackage,
-  libplist: libimobiledeviceorglibplistPackage,
-  libimobiledeviceorglibplist: libimobiledeviceorglibplistPackage,
+  libplist: plistutilPackage,
+  libimobiledeviceorglibplist: plistutilPackage,
   libusbmuxd: libimobiledeviceorglibusbmuxdPackage,
   libimobiledeviceorglibusbmuxd: libimobiledeviceorglibusbmuxdPackage,
   libimobiledeviceorg: idevicedatePackage,
@@ -8098,6 +8099,7 @@ export const pantry: Pantry = {
   'suite-sparse': suitesparsePackage,
   ansible: ansiblePackage,
   autossh: autosshPackage,
+  plistutil: plistutilPackage,
   'Protocol Buffers': protocPackage,
   protoc: protocPackage,
   changie: changiePackage,
