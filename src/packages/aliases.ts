@@ -721,7 +721,6 @@ export const aliases: Record<string, string> = {
   'pkgm': 'pkgx.sh/pkgm',
   'pkgx': 'pkgx.sh',
   'plantuml': 'plantuml.com',
-  'plistutil': 'libimobiledevice.org/libplist',
   'pls': 'dhruvkb.dev/pls',
   'pluralith': 'pluralith.com',
   'pluto': 'fairwinds.com/pluto',
