@@ -1,6 +1,6 @@
 # Editors & IDEs
 
-*5 packages in this category*
+*8 packages in this category*
 
 Packages related to editors & ides.
 
@@ -16,16 +16,6 @@ A cross-platform, OpenGL terminal emulator.
 
 ---
 
-### [github.com/mamba-org/micro](../packages/github.com/mamba-org/micro.md) (micromamba)
-
-The Fast Cross-Platform Package Manager
-
-**Programs**: micromamba
-
-**Install**: `launchpad install micromamba`
-
----
-
 ### [gnu.org/emacs](../packages/gnu.org/emacs/index.md) (emacs)
 
 GNU Emacs text editor
@@ -36,23 +26,63 @@ GNU Emacs text editor
 
 ---
 
-### [vim.org](../packages/vim.org/index.md)
+### [micro-editor.github.io](../packages/micro-editor.github.io/index.md) (micro)
 
-Package from pantry: vim.org
+A modern and intuitive terminal-based text editor
 
-**Programs**: None specified
+**Programs**: micro
 
-**Install**: `launchpad install vim.org`
+**Install**: `launchpad install micro`
+
+---
+
+### [microsoft.com/code-cli](../packages/microsoft.com/code-cli/index.md) (vscode cli, code)
+
+Command-line interface built-in Visual Studio Code
+
+**Programs**: code
+
+**Install**: `launchpad install code`
+
+---
+
+### [nano-editor.org](../packages/nano-editor.org/index.md) (nano)
+
+Free (GNU) replacement for the Pico text editor
+
+**Programs**: nano
+
+**Install**: `launchpad install nano`
+
+---
+
+### [neovim.io](../packages/neovim.io/index.md) (nvim)
+
+Ambitious Vim-fork focused on extensibility and agility
+
+**Programs**: nvim
+
+**Install**: `launchpad install nvim`
+
+---
+
+### [vim.org](../packages/vim.org/index.md) (vim, vi)
+
+The official Vim repository
+
+**Programs**: vim, vi
+
+**Install**: `launchpad install vi`
 
 ---
 
 ### [wezfurlong.org/wezterm](../packages/wezfurlong.org/wezterm/index.md) (wezterm)
 
-Package from pantry: wezfurlong.org/wezterm
+A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
 
-**Programs**: None specified
+**Programs**: wezterm
 
-**Install**: `launchpad install wezfurlong.org/wezterm`
+**Install**: `launchpad install wezterm`
 
 ---
 

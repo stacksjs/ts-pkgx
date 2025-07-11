@@ -1,6 +1,6 @@
 # gen-ir
 
-> Package from pantry: veracode.com/gen-ir
+> Generates LLVM IR for Xcode Projects
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install veracode.com/gen-ir
+launchpad install gen-ir
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gen-ir`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `0.5.2`, `0.5.1`, `0.5.0`, `0.4.3`
+
+</details>
+
+**Latest Version**: `0.5.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) gen-ir -- $SHELL -i
+```
 
 ## Usage Examples
 
