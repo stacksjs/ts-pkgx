@@ -1,38 +1,28 @@
 /**
- * **luarocks** - LuaRocks is the package manager for the Lua programming language.
+ * **luarocks.org** - Package from pantry: luarocks.org
  *
  * @domain `luarocks.org`
- * @programs `luarocks`, `luarocks-admin`
- * @version `3.12.2` (7 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install luarocks`
- * @name `luarocks`
+ * @install `launchpad install luarocks.org`
  * @dependencies `lua.org`, `info-zip.org/unzip`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.luarocks
- * // Or access via domain
- * const samePkg = pantry.luarocksorg
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "luarocks"
- * console.log(pkg.description) // "LuaRocks is the package manager for the Lua pro..."
- * console.log(pkg.programs)    // ["luarocks", "luarocks-admin"]
- * console.log(pkg.versions[0]) // "3.12.2" (latest)
+ * const pkg = pantry.luarocksorg
+ * console.log(pkg.name)        // "luarocks.org"
+ * console.log(pkg.description) // "Package from pantry: luarocks.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/luarocks-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const luarocksPackage = {
+export const luarocksorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'luarocks' as const,
+  name: 'luarocks.org' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,23 +30,15 @@ export const luarocksPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'LuaRocks is the package manager for the Lua programming language.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/luarocks.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: luarocks.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install luarocks' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'luarocks',
-    'luarocks-admin',
-  ] as const,
+  installCommand: 'launchpad install luarocks.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +luarocks.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install luarocks.org' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -66,26 +48,10 @@ export const luarocksPackage = {
     'lua.org',
     'info-zip.org/unzip',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.12.2',
-    '3.12.1',
-    '3.12.0',
-    '3.11.1',
-    '3.11.0',
-    '3.10.0',
-    '3.9.2',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +luarocks.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install luarocks' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/luarocks.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type LuarocksPackage = typeof luarocksPackage
+export type LuarocksorgPackage = typeof luarocksorgPackage

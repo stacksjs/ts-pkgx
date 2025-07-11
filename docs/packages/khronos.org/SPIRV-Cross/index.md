@@ -1,11 +1,11 @@
-# spirv-cross
+# SPIRV-Cross
 
-> SPIRV-Cross is a practical tool and library for performing reflection on SPIR-V and disassembling SPIR-V back to high level languages.
+> Package from pantry: khronos.org/SPIRV-Cross
 
 ## Package Information
 
 - **Domain**: `khronos.org/SPIRV-Cross`
-- **Name**: `spirv-cross`
+- **Name**: `SPIRV-Cross`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/khronos.org/SPIRV-Cross/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install spirv-cross
+launchpad install khronos.org/SPIRV-Cross
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `spirv-cross`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2021.1.15`
-
-</details>
-
-**Latest Version**: `2021.1.15`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) spirv-cross -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) spirv-cross -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['spirv-cross']
+const pkg = pantry['SPIRV-Cross']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

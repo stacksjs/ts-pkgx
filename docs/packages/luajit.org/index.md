@@ -1,11 +1,11 @@
-# luajit
+# luajit.org
 
-> Mirror of the LuaJIT git repository
+> Package from pantry: luajit.org
 
 ## Package Information
 
 - **Domain**: `luajit.org`
-- **Name**: `luajit`
+- **Name**: `luajit.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/luajit.org/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install luajit
+launchpad install luajit.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `luajit`
-- `luajit-2.1.`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.1.0`
-
-</details>
-
-**Latest Version**: `2.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +luajit.org@2.1.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -47,7 +28,7 @@ sh <(curl https://pkgx.sh) +luajit.org@2.1.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.luajit
+const pkg = pantry['luajit.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

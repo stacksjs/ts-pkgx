@@ -1,6 +1,6 @@
 # DevOps
 
-*27 packages in this category*
+*15 packages in this category*
 
 Tools for deployment, orchestration, and infrastructure management.
 
@@ -126,153 +126,33 @@ Cloud cost estimates for Terraform in pull requests💰📉 Shift FinOps Left!
 
 ---
 
-### [jenkins.io](../packages/jenkins.io/index.md) (jenkins-lts)
-
-Extendable open source continuous integration server
-
-**Programs**: jenkins-lts, jenkins-lts-cli
-
-**Install**: `launchpad install jenkins.io`
-
----
-
-### [k3d.io](../packages/k3d.io/index.md) (k3d)
-
-Little helper to run CNCF's k3s in Docker
-
-**Programs**: k3d
-
-**Install**: `launchpad install k3d`
-
----
-
-### [kind.sigs.k8s.io](../packages/kind.sigs.k8s.io/index.md) (kind)
-
-Kubernetes IN Docker - local clusters for testing Kubernetes
-
-**Programs**: kind
-
-**Install**: `launchpad install kind`
-
----
-
 ### [kubernetes.io/kubectl](../packages/kubernetes.io/kubectl/index.md) (kubectl)
 
-Production-Grade Container Scheduling and Management
+Package from pantry: kubernetes.io/kubectl
 
-**Programs**: kubectl
+**Programs**: None specified
 
-**Install**: `launchpad install kubectl`
+**Install**: `launchpad install kubernetes.io/kubectl`
 
 ---
 
 ### [kubernetes.io/kustomize](../packages/kubernetes.io/kustomize/index.md) (kustomize)
 
-Template-free customization of Kubernetes YAML manifests
+Package from pantry: kubernetes.io/kustomize
 
-**Programs**: kustomize
+**Programs**: None specified
 
-**Install**: `launchpad install kustomize`
+**Install**: `launchpad install kubernetes.io/kustomize`
 
 ---
 
 ### [kubernetes.io/minikube](../packages/kubernetes.io/minikube/index.md) (minikube)
 
-Run a Kubernetes cluster locally
+Package from pantry: kubernetes.io/minikube
 
-**Programs**: minikube
+**Programs**: None specified
 
-**Install**: `launchpad install minikube`
-
----
-
-### [nomadproject.io](../packages/nomadproject.io/index.md) (nomad)
-
-Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice, batch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul and Vault integrations.
-
-**Programs**: nomad
-
-**Install**: `launchpad install nomad`
-
----
-
-### [opentofu.org](../packages/opentofu.org/index.md) (tofu)
-
-OpenTofu lets you declaratively manage your cloud infrastructure.
-
-**Programs**: tofu
-
-**Install**: `launchpad install tofu`
-
----
-
-### [packer.io](../packages/packer.io/index.md) (packer)
-
-Packer is a tool for creating identical machine images for multiple platforms from a single source configuration.
-
-**Programs**: packer
-
-**Install**: `launchpad install packer`
-
----
-
-### [podman.io](../packages/podman.io/index.md) (podman)
-
-Podman: A tool for managing OCI containers and pods.
-
-**Programs**: podman, podman-remote, podman-mac-helper
-
-**Install**: `launchpad install podman`
-
----
-
-### [runatlantis.io](../packages/runatlantis.io/index.md) (atlantis)
-
-Terraform Pull Request Automation tool
-
-**Programs**: atlantis
-
-**Install**: `launchpad install atlantis`
-
----
-
-### [terraform.io](../packages/terraform.io/index.md) (terraform)
-
-Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.
-
-**Programs**: terraform
-
-**Install**: `launchpad install terraform`
-
----
-
-### [terragrunt.gruntwork.io](../packages/terragrunt.gruntwork.io/index.md) (terragrunt)
-
-Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTofu/Terraform to scale.
-
-**Programs**: terragrunt
-
-**Install**: `launchpad install terragrunt`
-
----
-
-### [terratag.io](../packages/terratag.io/index.md) (terratag)
-
-Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags across their entire set of AWS, Azure, and GCP resources
-
-**Programs**: terratag
-
-**Install**: `launchpad install terratag`
-
----
-
-### [vaultproject.io](../packages/vaultproject.io/index.md) (vault)
-
-A tool for secrets management, encryption as a service, and privileged access management
-
-**Programs**: vault
-
-**Install**: `launchpad install vault`
+**Install**: `launchpad install kubernetes.io/minikube`
 
 ---
 

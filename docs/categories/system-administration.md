@@ -1,6 +1,6 @@
 # System Administration
 
-*5 packages in this category*
+*6 packages in this category*
 
 Packages related to system administration.
 
@@ -16,43 +16,53 @@ Improved top (interactive process viewer)
 
 ---
 
-### [rsync.samba.org](../packages/rsync.samba.org/index.md) (rsync)
+### [openssh.com](../packages/openssh.com/index.md)
 
-An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases.
+Package from pantry: openssh.com
 
-**Programs**: rsync, rsync-ssl
+**Programs**: None specified
 
-**Install**: `launchpad install rsync`
+**Install**: `launchpad install openssh.com`
 
 ---
 
-### [strace.io](../packages/strace.io/index.md) (strace)
+### [rsync.samba.org](../packages/rsync.samba.org/index.md)
 
-strace is a diagnostic, debugging and instructional userspace utility for Linux
+Package from pantry: rsync.samba.org
 
-**Programs**: strace
+**Programs**: None specified
 
-**Install**: `launchpad install strace`
+**Install**: `launchpad install rsync.samba.org`
+
+---
+
+### [strace.io](../packages/strace.io/index.md)
+
+Package from pantry: strace.io
+
+**Programs**: None specified
+
+**Install**: `launchpad install strace.io`
 
 ---
 
 ### [systemd.io](../packages/systemd.io/index.md)
 
-The systemd System and Service Manager
+Package from pantry: systemd.io
 
-**Programs**: busctl, coredumpctl, hostnamectl, journalctl, kernel-install, localectl, loginctl, machinectl, networkctl, oomctl, portablectl, resolvectl, systemctl, systemd-ac-power, systemd-analyze, systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop, systemd-confext, systemd-creds, systemd-delta, systemd-detect-virt, systemd-dissect, systemd-escape, systemd-firstboot, systemd-id128, systemd-inhibit, systemd-machine-id-setup, systemd-mount, systemd-notify, systemd-nspawn, systemd-path, systemd-repart, systemd-resolve, systemd-run, systemd-socket-activate, systemd-stdio-bridge, systemd-sysext, systemd-sysusers, systemd-tmpfiles, systemd-tty-ask-password-agent, systemd-umount, timedatectl, udevadm, userdbctl, halt, init, mount.ddi, poweroff, reboot, resolvconf, runlevel, shutdown, telinit
+**Programs**: None specified
 
 **Install**: `launchpad install systemd.io`
 
 ---
 
-### [tcpdump.org](../packages/tcpdump.org/index.md) (pcap-config)
+### [tcpdump.org](../packages/tcpdump.org/index.md)
 
-the LIBpcap interface to various kernel packet capture mechanism
+Package from pantry: tcpdump.org
 
-**Programs**: pcap-config
+**Programs**: None specified
 
-**Install**: `launchpad install pcap-config`
+**Install**: `launchpad install tcpdump.org`
 
 ---
 

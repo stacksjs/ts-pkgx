@@ -1,11 +1,11 @@
-# microbrew.org/md5sha1sum
+# md5sha1sum
 
-> Hash utilities
+> Package from pantry: microbrew.org/md5sha1sum
 
 ## Package Information
 
 - **Domain**: `microbrew.org/md5sha1sum`
-- **Name**: `microbrew.org/md5sha1sum`
+- **Name**: `md5sha1sum`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microbrew.org/md5sha1sum/package.yml)
 
@@ -20,27 +20,7 @@ launchpad install microbrew.org/md5sha1sum
 
 This package provides the following executable programs:
 
-- `md5sum`
-- `sha1sum`
-- `ripemd160sum`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.9.5`
-
-</details>
-
-**Latest Version**: `0.9.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +microbrew.org/md5sha1sum@0.9.5 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -54,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['microbrew.org/md5sha1sum']
+const pkg = pantry.md5sha1sum
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

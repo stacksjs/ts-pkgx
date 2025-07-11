@@ -1,11 +1,11 @@
-# Midnight Commander
+# midnight-commander.org
 
-> Terminal-based visual file manager
+> Package from pantry: midnight-commander.org
 
 ## Package Information
 
 - **Domain**: `midnight-commander.org`
-- **Name**: `Midnight Commander`
+- **Name**: `midnight-commander.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/midnight-commander.org/package.yml)
 
@@ -20,29 +20,7 @@ launchpad install midnight-commander.org
 
 This package provides the following executable programs:
 
-- `mc`
-- `mcdiff`
-- `mcedit`
-- `mcview`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `4.8.33`, `4.8.32`, `4.8.31`, `4.8.30`, `4.8.29`
-- `4.8.28`
-
-</details>
-
-**Latest Version**: `4.8.33`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +midnight-commander.org@4.8.33 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -58,7 +36,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['Midnight Commander']
+const pkg = pantry['midnight-commander.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

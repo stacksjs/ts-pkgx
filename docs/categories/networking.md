@@ -1,6 +1,6 @@
 # Networking
 
-*9 packages in this category*
+*5 packages in this category*
 
 Network tools, protocols, and communication software.
 
@@ -53,46 +53,6 @@ Internet file retriever
 **Programs**: wget
 
 **Install**: `launchpad install wget`
-
----
-
-### [mosh.org](../packages/mosh.org/index.md) (mosh)
-
-Remote terminal application
-
-**Programs**: mosh-client, mosh-server
-
-**Install**: `launchpad install mosh`
-
----
-
-### [nginx.org](../packages/nginx.org/index.md) (nginx)
-
-HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-
-**Programs**: nginx
-
-**Install**: `launchpad install nginx`
-
----
-
-### [rsync.samba.org](../packages/rsync.samba.org/index.md) (rsync)
-
-An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases.
-
-**Programs**: rsync, rsync-ssl
-
-**Install**: `launchpad install rsync`
-
----
-
-### [traefik.io](../packages/traefik.io/index.md) (traefik)
-
-The Cloud Native Application Proxy
-
-**Programs**: traefik
-
-**Install**: `launchpad install traefik`
 
 ---
 
