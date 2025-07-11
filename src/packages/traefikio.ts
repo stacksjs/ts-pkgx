@@ -3,7 +3,7 @@
  *
  * @domain `traefik.io`
  * @programs `traefik`
- * @version `3.4.3` (62 versions available)
+ * @version `3.4.4` (63 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install traefik`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "traefik"
  * console.log(pkg.description) // "The Cloud Native Application Proxy"
  * console.log(pkg.programs)    // ["traefik"]
- * console.log(pkg.versions[0]) // "3.4.3" (latest)
+ * console.log(pkg.versions[0]) // "3.4.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/traefik-io.md
@@ -62,6 +62,7 @@ export const traefikPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.4.4',
     '3.4.3',
     '3.4.2',
     '3.4.1',
