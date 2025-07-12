@@ -2,7 +2,7 @@
  * **gnu.org/gcc/libstdcxx** - pkgx package
  *
  * @domain `gnu.org/gcc/libstdcxx`
- * @version `15.1.0` (6 versions available)
+ * @version `15.1.0` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/gcc/libstdcxx`
@@ -64,6 +64,7 @@ export const gnuorggcclibstdcxxPackage = {
     '14.2.0',
     '14.1.0',
     '13.3.0',
+    '12.5.0',
     '12.4.0',
   ] as const,
   aliases: [] as const,

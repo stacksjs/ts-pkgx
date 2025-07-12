@@ -3,7 +3,7 @@
  *
  * @domain `fluentci.io`
  * @programs `fluentci`
- * @version `0.16.5` (68 versions available)
+ * @version `0.16.8` (70 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fluentci`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "fluentci"
  * console.log(pkg.description) // "Set up and run your CI locally or in any CI Pro..."
  * console.log(pkg.programs)    // ["fluentci"]
- * console.log(pkg.versions[0]) // "0.16.5" (latest)
+ * console.log(pkg.versions[0]) // "0.16.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/fluentci-io.md
@@ -71,6 +71,8 @@ export const fluentciPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.16.8',
+    '0.16.7',
     '0.16.5',
     '0.16.4',
     '0.16.3',

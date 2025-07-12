@@ -3,7 +3,7 @@
  *
  * @domain `git-scm.org`
  * @programs `git`, `git-cvsserver`, `git-receive-pack`, `git-shell`, `git-upload-archive`, ... (+3 more)
- * @version `2.50.0` (22 versions available)
+ * @version `2.50.1` (30 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install git`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "git"
  * console.log(pkg.description) // "Git Source Code Mirror - This is a publish-only..."
  * console.log(pkg.programs)    // ["git", "git-cvsserver", ...]
- * console.log(pkg.versions[0]) // "2.50.0" (latest)
+ * console.log(pkg.versions[0]) // "2.50.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/git-scm-org.md
@@ -81,17 +81,25 @@ export const gitPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.50.1',
     '2.50.0',
+    '2.49.1',
     '2.49.0',
+    '2.48.2',
     '2.48.0',
+    '2.47.3',
     '2.47.1',
     '2.47.0',
+    '2.46.4',
     '2.46.2',
     '2.46.1',
     '2.46.0',
+    '2.45.4',
     '2.45.2',
     '2.45.0',
+    '2.44.4',
     '2.44.0',
+    '2.43.7',
     '2.43.3',
     '2.43.2',
     '2.43.1',

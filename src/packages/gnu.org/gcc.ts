@@ -3,7 +3,7 @@
  *
  * @domain `gnu.org/gcc`
  * @programs `ar`, `cc`, `c++`, `gc++`, `cpp`, ... (+12 more)
- * @version `15.1.0` (12 versions available)
+ * @version `15.1.0` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/gcc`
@@ -90,6 +90,7 @@ export const gnuorggccPackage = {
     '13.3.0',
     '13.2.0',
     '13.1.0',
+    '12.5.0',
     '12.4.0',
     '12.3.0',
     '12.2.0',
