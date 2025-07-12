@@ -3,7 +3,7 @@
  *
  * @domain `github.com/terraform-linters/tflint`
  * @programs `tflint`
- * @version `0.58.0` (19 versions available)
+ * @version `0.58.1` (20 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tflint`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "tflint"
  * console.log(pkg.description) // "A Pluggable Terraform Linter"
  * console.log(pkg.programs)    // ["tflint"]
- * console.log(pkg.versions[0]) // "0.58.0" (latest)
+ * console.log(pkg.versions[0]) // "0.58.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/terraform-linters/tflint.md
@@ -62,6 +62,7 @@ export const tflintPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.58.1',
     '0.58.0',
     '0.57.0',
     '0.56.0',
