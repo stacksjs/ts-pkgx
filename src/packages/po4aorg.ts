@@ -3,7 +3,7 @@
  *
  * @domain `po4a.org`
  * @programs `msguntypot`, `po4a`, `po4a-display-man`, `po4a-display-pod`, `po4a-gettextize`, ... (+3 more)
- * @version `0.73.0` (5 versions available)
+ * @version `0.74.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install po4a.org`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "po4a.org"
  * console.log(pkg.description) // "Maintain the translations of your documentation..."
  * console.log(pkg.programs)    // ["msguntypot", "po4a", ...]
- * console.log(pkg.versions[0]) // "0.73.0" (latest)
+ * console.log(pkg.versions[0]) // "0.74.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/po4a-org.md
@@ -80,6 +80,7 @@ export const po4aorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.74.0',
     '0.73.0',
     '0.72.0',
     '0.71.0',
