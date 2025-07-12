@@ -8,7 +8,6 @@
  *
  * @install `launchpad install werf`
  * @name `werf`
- * @dependencies `linux:github.com/kdave/btrfs-progs^6.7`, `linux:sourceware.org/dm^2.3` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const werfPackage = {
     'werf',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
-   */
-  dependencies: [
-    'linux:github.com/kdave/btrfs-progs^6.7',
-    'linux:sourceware.org/dm^2.3',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

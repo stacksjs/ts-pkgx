@@ -70,13 +70,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) werf -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `linux:github.com/kdave/btrfs-progs^6.7`
-- `linux:sourceware.org/dm^2.3`
-
 ## Usage Examples
 
 ```typescript
