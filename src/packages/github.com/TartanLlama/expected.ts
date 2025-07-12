@@ -2,7 +2,7 @@
  * **github.com/TartanLlama/expected** - C++11/14/17 std::expected with functional-style extensions
  *
  * @domain `github.com/TartanLlama/expected`
- * @version `1.1.0` (1 versions available)
+ * @version `1.2.0` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/TartanLlama/expected`
@@ -14,7 +14,7 @@
  * const pkg = pantry.githubcomtartanllamaexpected
  * console.log(pkg.name)        // "github.com/TartanLlama/expected"
  * console.log(pkg.description) // "C++11/14/17 std::expected with functional-style..."
- * console.log(pkg.versions[0]) // "1.1.0" (latest)
+ * console.log(pkg.versions[0]) // "1.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/TartanLlama/expected.md
@@ -49,6 +49,7 @@ export const githubcomtartanllamaexpectedPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.2.0',
     '1.1.0',
   ] as const,
   aliases: [] as const,
