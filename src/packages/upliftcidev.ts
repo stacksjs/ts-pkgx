@@ -3,7 +3,7 @@
  *
  * @domain `upliftci.dev`
  * @programs `uplift`
- * @version `2.25.0` (5 versions available)
+ * @version `2.26.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install uplift`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "uplift"
  * console.log(pkg.description) // "Semantic versioning the easy way. Powered by Co..."
  * console.log(pkg.programs)    // ["uplift"]
- * console.log(pkg.versions[0]) // "2.25.0" (latest)
+ * console.log(pkg.versions[0]) // "2.26.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/upliftci-dev.md
@@ -62,6 +62,7 @@ export const upliftPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.26.0',
     '2.25.0',
     '2.24.1',
     '2.24.0',
