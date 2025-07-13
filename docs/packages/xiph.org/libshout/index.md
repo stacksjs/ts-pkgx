@@ -1,11 +1,11 @@
-# libshout
+# shout
 
-> Package from pantry: xiph.org/libshout
+> Data and connectivity library for the icecast server
 
 ## Package Information
 
 - **Domain**: `xiph.org/libshout`
-- **Name**: `libshout`
+- **Name**: `shout`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xiph.org/libshout/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install xiph.org/libshout
+launchpad install shout
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `shout`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.4.6`
+
+</details>
+
+**Latest Version**: `2.4.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) shout -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -38,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libshout
+const pkg = pantry.shout
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

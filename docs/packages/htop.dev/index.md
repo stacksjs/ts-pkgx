@@ -1,11 +1,11 @@
-# htop.dev
+# htop
 
-> Package from pantry: htop.dev
+> Improved top (interactive process viewer)
 
 ## Package Information
 
 - **Domain**: `htop.dev`
-- **Name**: `htop.dev`
+- **Name**: `htop`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/htop.dev/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install htop.dev
+launchpad install htop
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `htop`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `3.4.1`, `3.4.0`, `3.3.0`, `3.2.2`, `3.2.1`
+
+</details>
+
+**Latest Version**: `3.4.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) htop -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['htop.dev']
+const pkg = pantry.htop
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

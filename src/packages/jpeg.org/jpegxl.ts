@@ -1,7 +1,10 @@
 /**
- * **jpegxl** - Package from pantry: jpeg.org/jpegxl
+ * **jpeg.org/jpegxl** - JPEG XL image format reference implementation
  *
  * @domain `jpeg.org/jpegxl`
+ * @programs `cjxl`, `djxl`, `jxlinfo`
+ * @version `0.11.1` (18 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install jpeg.org/jpegxl`
  * @dependencies `github.com/google/brotli^1`, `littlecms.com^2.13`, `google.com/highway^1`, ... (+4 more)
@@ -11,8 +14,10 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.jpegorgjpegxl
- * console.log(pkg.name)        // "jpegxl"
- * console.log(pkg.description) // "Package from pantry: jpeg.org/jpegxl"
+ * console.log(pkg.name)        // "jpeg.org/jpegxl"
+ * console.log(pkg.description) // "JPEG XL image format reference implementation"
+ * console.log(pkg.programs)    // ["cjxl", "djxl", ...]
+ * console.log(pkg.versions[0]) // "0.11.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/jpeg-org/jpegxl.md
@@ -22,7 +27,7 @@ export const jpegorgjpegxlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jpegxl' as const,
+  name: 'jpeg.org/jpegxl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +35,24 @@ export const jpegorgjpegxlPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: jpeg.org/jpegxl' as const,
+  description: 'JPEG XL image format reference implementation' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jpeg.org/jpegxl/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/libjxl/libjxl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install jpeg.org/jpegxl' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jpeg.org/jpegxl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jpeg.org/jpegxl' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'cjxl',
+    'djxl',
+    'jxlinfo',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -53,10 +67,33 @@ export const jpegorgjpegxlPackage = {
     'openexr.com^3',
     'libpng.org^1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jpeg.org/jpegxl/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.11.1',
+    '0.11.0',
+    '0.10.4',
+    '0.10.3',
+    '0.10.2',
+    '0.10.1',
+    '0.10.0',
+    '0.9.4',
+    '0.9.3',
+    '0.9.2',
+    '0.9.1',
+    '0.9.0',
+    '0.8.4',
+    '0.8.3',
+    '0.8.2',
+    '0.8.1',
+    '0.7.2',
+    '0.7.1',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jpeg.org/jpegxl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jpeg.org/jpegxl' as const,
 }
 
 export type JpegorgjpegxlPackage = typeof jpegorgjpegxlPackage

@@ -6,13 +6,13 @@ Packages related to financial tools.
 
 ## Packages
 
-### [raccoin.org](../packages/raccoin.org/index.md)
+### [raccoin.org](../packages/raccoin.org/index.md) (raccoin)
 
-Package from pantry: raccoin.org
+Crypto Portfolio and Tax Reporting Tool
 
-**Programs**: None specified
+**Programs**: raccoin
 
-**Install**: `launchpad install raccoin.org`
+**Install**: `launchpad install raccoin`
 
 ---
 

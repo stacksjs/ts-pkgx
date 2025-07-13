@@ -1,11 +1,11 @@
-# googletest
+# google.com/googletest
 
-> Package from pantry: google.com/googletest
+> GoogleTest - Google Testing and Mocking Framework
 
 ## Package Information
 
 - **Domain**: `google.com/googletest`
-- **Name**: `googletest`
+- **Name**: `google.com/googletest`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/googletest/package.yml)
 
@@ -22,13 +22,32 @@ This package provides the following executable programs:
 
 *No programs specified*
 
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `1.17.0`, `1.16.0`, `1.15.2`, `1.15.0`, `1.14.0`
+- `1.13.0`
+
+</details>
+
+**Latest Version**: `1.17.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +google.com/googletest@1.17.0 -- $SHELL -i
+```
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.googletest
+const pkg = pantry['google.com/googletest']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

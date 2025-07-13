@@ -1,6 +1,6 @@
 # yuicompressor
 
-> Package from pantry: yui.github.io/yuicompressor
+> Yahoo! JavaScript and CSS compressor
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install yui.github.io/yuicompressor
+launchpad install yuicompressor
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `yuicompressor`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.4.8`
+
+</details>
+
+**Latest Version**: `2.4.8`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) yuicompressor -- $SHELL -i
+```
 
 ## Dependencies
 
