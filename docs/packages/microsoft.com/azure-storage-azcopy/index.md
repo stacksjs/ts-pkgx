@@ -1,11 +1,11 @@
-# azcopy
+# azure-storage-azcopy
 
-> The new Azure Storage data transfer utility - AzCopy v10
+> Package from pantry: microsoft.com/azure-storage-azcopy
 
 ## Package Information
 
 - **Domain**: `microsoft.com/azure-storage-azcopy`
-- **Name**: `azcopy`
+- **Name**: `azure-storage-azcopy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/azure-storage-azcopy/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install azcopy
+launchpad install microsoft.com/azure-storage-azcopy
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `azcopy`
-
-## Available Versions
-
-<details>
-<summary>Show all 12 versions</summary>
-
-- `10.29.1`, `10.29.0`, `10.28.1`, `10.28.0`, `10.27.1`
-- `10.27.0`, `10.26.0`, `10.25.1`, `10.25.0`, `10.24.0`
-- `10.23.0`, `10.22.2`
-
-</details>
-
-**Latest Version**: `10.29.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) azcopy -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -48,7 +28,7 @@ sh <(curl https://pkgx.sh) azcopy -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.azcopy
+const pkg = pantry['azure-storage-azcopy']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

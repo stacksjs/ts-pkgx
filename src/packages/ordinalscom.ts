@@ -1,37 +1,27 @@
 /**
- * **ord** - Index, block explorer, and command-line wallet
+ * **ordinals.com** - Package from pantry: ordinals.com
  *
  * @domain `ordinals.com`
- * @programs `ord`
- * @version `0.6.1` (4 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install ord`
- * @name `ord`
+ * @install `launchpad install ordinals.com`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ord
- * // Or access via domain
- * const samePkg = pantry.ordinalscom
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ord"
- * console.log(pkg.description) // "Index, block explorer, and command-line wallet"
- * console.log(pkg.programs)    // ["ord"]
- * console.log(pkg.versions[0]) // "0.6.1" (latest)
+ * const pkg = pantry.ordinalscom
+ * console.log(pkg.name)        // "ordinals.com"
+ * console.log(pkg.description) // "Package from pantry: ordinals.com"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ordinals-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ordPackage = {
+export const ordinalscomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ord' as const,
+  name: 'ordinals.com' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,41 +29,21 @@ export const ordPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Index, block explorer, and command-line wallet' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ordinals.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: ordinals.com' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ord' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'ord',
-  ] as const,
+  installCommand: 'launchpad install ordinals.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ordinals.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ordinals.com' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.6.1',
-    '0.6.0',
-    '0.5.1',
-    '0.5.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ord -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ord' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ordinals.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type OrdPackage = typeof ordPackage
+export type OrdinalscomPackage = typeof ordinalscomPackage

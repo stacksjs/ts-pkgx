@@ -44,7 +44,7 @@ sh <(curl https://pkgx.sh) ifacemaker -- $SHELL -i
 
 These packages work well with ifacemaker:
 
-- [`go.dev`](../../go.dev/index.md) - The Go programming language
+- [`go.dev`](../../go.dev/index.md) - Package from pantry: go.dev
 
 ## Usage Examples
 

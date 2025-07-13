@@ -1,11 +1,11 @@
-# scw
+# scaleway.com
 
-> Command Line Interface for Scaleway
+> Package from pantry: scaleway.com
 
 ## Package Information
 
 - **Domain**: `scaleway.com`
-- **Name**: `scw`
+- **Name**: `scaleway.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/scaleway.com/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install scw
+launchpad install scaleway.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `scw`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `2.41.0`, `2.40.0`, `2.39.0`, `2.38.0`, `2.37.0`
-- `2.36.0`, `2.35.0`, `2.34.0`, `2.33.0`, `2.32.1`
-
-</details>
-
-**Latest Version**: `2.41.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) scw -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -47,7 +28,7 @@ sh <(curl https://pkgx.sh) scw -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.scw
+const pkg = pantry['scaleway.com']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

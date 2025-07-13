@@ -1,33 +1,23 @@
 /**
- * **openbao** - OpenBao exists to provide a software solution to manage, store, and distribute sensitive data including secrets, certificates, and keys.
+ * **openbao** - Package from pantry: openbao.org/openbao
  *
  * @domain `openbao.org/openbao`
- * @programs `bao`, `bao-setup`
- * @version `2.3.1` (10 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install openbao`
- * @name `openbao`
+ * @install `launchpad install openbao.org/openbao`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.openbao
- * // Or access via domain
- * const samePkg = pantry.openbaoorgopenbao
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.openbaoorgopenbao
  * console.log(pkg.name)        // "openbao"
- * console.log(pkg.description) // "OpenBao exists to provide a software solution t..."
- * console.log(pkg.programs)    // ["bao", "bao-setup"]
- * console.log(pkg.versions[0]) // "2.3.1" (latest)
+ * console.log(pkg.description) // "Package from pantry: openbao.org/openbao"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openbao-org/openbao.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const openbaoPackage = {
+export const openbaoorgopenbaoPackage = {
   /**
    * The display name of this package.
    */
@@ -39,48 +29,21 @@ export const openbaoPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'OpenBao exists to provide a software solution to manage, store, and distribute sensitive data including secrets, certificates, and keys.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openbao.org/openbao/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: openbao.org/openbao' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install openbao' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'bao',
-    'bao-setup',
-  ] as const,
+  installCommand: 'launchpad install openbao.org/openbao' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openbao.org/openbao -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openbao.org/openbao' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.3.1',
-    '2.2.2',
-    '2.2.1',
-    '2.2.0',
-    '2.1.1',
-    '2.1.0',
-    '2.0.3',
-    '2.0.2',
-    '2.0.1',
-    '2.0.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openbao.org/openbao -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install openbao' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openbao.org/openbao/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type OpenbaoPackage = typeof openbaoPackage
+export type OpenbaoorgopenbaoPackage = typeof openbaoorgopenbaoPackage

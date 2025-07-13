@@ -1,11 +1,11 @@
-# mozilla.org/mozjpeg
+# mozjpeg
 
-> Improved JPEG encoder.
+> Package from pantry: mozilla.org/mozjpeg
 
 ## Package Information
 
 - **Domain**: `mozilla.org/mozjpeg`
-- **Name**: `mozilla.org/mozjpeg`
+- **Name**: `mozjpeg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mozilla.org/mozjpeg/package.yml)
 
@@ -20,30 +20,7 @@ launchpad install mozilla.org/mozjpeg
 
 This package provides the following executable programs:
 
-- `cjpeg`
-- `djpeg`
-- `jpegtran`
-- `rdjpgcom`
-- `tjbench`
-- `wrjpgcom`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `4.0.3`
-
-</details>
-
-**Latest Version**: `4.0.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +mozilla.org/mozjpeg@4.0.3 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -57,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mozilla.org/mozjpeg']
+const pkg = pantry.mozjpeg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

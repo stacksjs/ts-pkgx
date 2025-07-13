@@ -1,38 +1,28 @@
 /**
- * **spacetime** - Multiplayer at the speed of light
+ * **spacetimedb.com** - Package from pantry: spacetimedb.com
  *
  * @domain `spacetimedb.com`
- * @programs `spacetime`
- * @version `2023.12.8` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install spacetime`
- * @name `spacetime`
+ * @install `launchpad install spacetimedb.com`
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.spacetime
- * // Or access via domain
- * const samePkg = pantry.spacetimedbcom
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "spacetime"
- * console.log(pkg.description) // "Multiplayer at the speed of light"
- * console.log(pkg.programs)    // ["spacetime"]
- * console.log(pkg.versions[0]) // "2023.12.8" (latest)
+ * const pkg = pantry.spacetimedbcom
+ * console.log(pkg.name)        // "spacetimedb.com"
+ * console.log(pkg.description) // "Package from pantry: spacetimedb.com"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/spacetimedb-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const spacetimePackage = {
+export const spacetimedbcomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'spacetime' as const,
+  name: 'spacetimedb.com' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,22 +30,15 @@ export const spacetimePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Multiplayer at the speed of light' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/spacetimedb.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: spacetimedb.com' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install spacetime' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'spacetime',
-  ] as const,
+  installCommand: 'launchpad install spacetimedb.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +spacetimedb.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install spacetimedb.com' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,21 +47,10 @@ export const spacetimePackage = {
   dependencies: [
     'openssl.org^1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2023.12.8',
-    '2023.8.12',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) spacetime -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install spacetime' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/spacetimedb.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type SpacetimePackage = typeof spacetimePackage
+export type SpacetimedbcomPackage = typeof spacetimedbcomPackage

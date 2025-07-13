@@ -1,6 +1,6 @@
 # linux-pam.org
 
-> Linux PAM (Pluggable Authentication Modules for Linux) project
+> Package from pantry: linux-pam.org
 
 ## Package Information
 
@@ -20,29 +20,7 @@ launchpad install linux-pam.org
 
 This package provides the following executable programs:
 
-- `faillock`
-- `mkhomedir_helper`
-- `pam_namespace_helper`
-- `pam_timestamp_check`
-- `unix_chkpwd`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `1.7.1`, `1.7.0`, `1.6.1`, `1.6.0`, `1.5.3`
-
-</details>
-
-**Latest Version**: `1.7.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +linux-pam.org@1.7.1 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -1,11 +1,11 @@
-# render
+# render.com
 
-> Command-line interface for Render
+> Package from pantry: render.com
 
 ## Package Information
 
 - **Domain**: `render.com`
-- **Name**: `render`
+- **Name**: `render.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/render.com/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install render
+launchpad install render.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `render`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `0.1.11`, `0.1.10`, `0.1.9`, `0.1.8`, `0.1.7`
-- `0.1.5`
-
-</details>
-
-**Latest Version**: `0.1.11`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) render -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -47,7 +28,7 @@ sh <(curl https://pkgx.sh) render -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.render
+const pkg = pantry['render.com']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # CLI Tools & Utilities
 
-*35 packages in this category*
+*30 packages in this category*
 
 Command-line utilities and system tools.
 
@@ -278,81 +278,31 @@ Bourne-Again SHell, a UNIX command interpreter
 
 ### [gnu.org/wget](../packages/gnu.org/wget/index.md) (wget)
 
-Internet file retriever
+Package from pantry: gnu.org/wget
 
-**Programs**: wget
+**Programs**: None specified
 
-**Install**: `launchpad install wget`
-
----
-
-### [htop.dev](../packages/htop.dev/index.md) (htop)
-
-Improved top (interactive process viewer)
-
-**Programs**: htop
-
-**Install**: `launchpad install htop`
-
----
-
-### [ohmyposh.dev](../packages/ohmyposh.dev/index.md) (oh-my-posh)
-
-The most customisable and low-latency cross platform/shell prompt renderer
-
-**Programs**: oh-my-posh
-
-**Install**: `launchpad install oh-my-posh`
-
----
-
-### [starship.rs](../packages/starship.rs/index.md) (starship)
-
-☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
-
-**Programs**: starship
-
-**Install**: `launchpad install starship`
+**Install**: `launchpad install gnu.org/wget`
 
 ---
 
 ### [stedolan.github.io/jq](../packages/stedolan.github.io/jq/index.md) (jq)
 
-Lightweight and flexible command-line JSON processor
+Package from pantry: stedolan.github.io/jq
 
-**Programs**: jq
+**Programs**: None specified
 
-**Install**: `launchpad install jq`
-
----
-
-### [tree-sitter.github.io](../packages/tree-sitter.github.io/index.md) (tree-sitter)
-
-Parser generator tool and incremental parsing library
-
-**Programs**: tree-sitter
-
-**Install**: `launchpad install tree-sitter`
+**Install**: `launchpad install stedolan.github.io/jq`
 
 ---
 
-### [wilfred.me.uk/difftastic](../packages/wilfred.me.uk/difftastic/index.md) (difft)
+### [wilfred.me.uk/difftastic](../packages/wilfred.me.uk/difftastic/index.md) (difftastic)
 
-a structural diff that understands syntax 🟥🟩
+Package from pantry: wilfred.me.uk/difftastic
 
-**Programs**: difft
+**Programs**: None specified
 
-**Install**: `launchpad install difft`
-
----
-
-### [zsh.sourceforge.io](../packages/zsh.sourceforge.io/index.md) (zsh)
-
-UNIX shell (command interpreter)
-
-**Programs**: zsh
-
-**Install**: `launchpad install zsh`
+**Install**: `launchpad install wilfred.me.uk/difftastic`
 
 ---
 

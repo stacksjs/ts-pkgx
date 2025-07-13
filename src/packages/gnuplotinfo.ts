@@ -1,38 +1,28 @@
 /**
- * **gnuplot** - Command-driven, interactive function plotting
+ * **gnuplot.info** - Package from pantry: gnuplot.info
  *
  * @domain `gnuplot.info`
- * @programs `gnuplot`
- * @version `6.0.3` (9 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install gnuplot`
- * @name `gnuplot`
+ * @install `launchpad install gnuplot.info`
  * @dependencies `libgd.github.io`, `lua.org`, `gnome.org/pango`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gnuplot
- * // Or access via domain
- * const samePkg = pantry.gnuplotinfo
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "gnuplot"
- * console.log(pkg.description) // "Command-driven, interactive function plotting"
- * console.log(pkg.programs)    // ["gnuplot"]
- * console.log(pkg.versions[0]) // "6.0.3" (latest)
+ * const pkg = pantry.gnuplotinfo
+ * console.log(pkg.name)        // "gnuplot.info"
+ * console.log(pkg.description) // "Package from pantry: gnuplot.info"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnuplot-info.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gnuplotPackage = {
+export const gnuplotinfoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnuplot' as const,
+  name: 'gnuplot.info' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,22 +30,15 @@ export const gnuplotPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Command-driven, interactive function plotting' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnuplot.info/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: gnuplot.info' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gnuplot' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'gnuplot',
-  ] as const,
+  installCommand: 'launchpad install gnuplot.info' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnuplot.info -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnuplot.info' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -69,28 +52,10 @@ export const gnuplotPackage = {
     'gnu.org/readline',
     'linux:github.com/AOMediaCodec/libavif^0.11',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '6.0.3',
-    '6.0.2',
-    '6.0.1',
-    '6.0.0',
-    '5.4.10',
-    '5.4.9',
-    '5.4.8',
-    '5.4.7',
-    '5.4.6',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gnuplot -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnuplot' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnuplot.info/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type GnuplotPackage = typeof gnuplotPackage
+export type GnuplotinfoPackage = typeof gnuplotinfoPackage

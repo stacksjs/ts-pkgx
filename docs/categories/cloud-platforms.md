@@ -26,63 +26,63 @@ Command line tools for fly.io services
 
 ---
 
-### [heroku.com](../packages/heroku.com/index.md) (heroku)
+### [heroku.com](../packages/heroku.com/index.md)
 
-CLI for Heroku
+Package from pantry: heroku.com
 
-**Programs**: heroku
+**Programs**: None specified
 
-**Install**: `launchpad install heroku`
-
----
-
-### [localstack.cloud/cli](../packages/localstack.cloud/cli/index.md) (localstack)
-
-The LocalStack CLI packaged using pyinstaller
-
-**Programs**: localstack
-
-**Install**: `launchpad install localstack`
+**Install**: `launchpad install heroku.com`
 
 ---
 
-### [planetscale.com](../packages/planetscale.com/index.md) (pscale)
+### [localstack.cloud/cli](../packages/localstack.cloud/cli/index.md) (cli)
 
-The CLI for PlanetScale Database
+Package from pantry: localstack.cloud/cli
 
-**Programs**: pscale
+**Programs**: None specified
 
-**Install**: `launchpad install pscale`
-
----
-
-### [railway.app](../packages/railway.app/index.md) (railway)
-
-Develop and deploy code with zero configuration
-
-**Programs**: railway
-
-**Install**: `launchpad install railway`
+**Install**: `launchpad install localstack.cloud/cli`
 
 ---
 
-### [render.com](../packages/render.com/index.md) (render)
+### [planetscale.com](../packages/planetscale.com/index.md)
 
-Command-line interface for Render
+Package from pantry: planetscale.com
 
-**Programs**: render
+**Programs**: None specified
 
-**Install**: `launchpad install render`
+**Install**: `launchpad install planetscale.com`
 
 ---
 
-### [supabase.com/cli](../packages/supabase.com/cli/index.md) (supabase)
+### [railway.app](../packages/railway.app/index.md)
 
-Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres backups. Generating types from your database schema.
+Package from pantry: railway.app
 
-**Programs**: supabase
+**Programs**: None specified
 
-**Install**: `launchpad install supabase`
+**Install**: `launchpad install railway.app`
+
+---
+
+### [render.com](../packages/render.com/index.md)
+
+Package from pantry: render.com
+
+**Programs**: None specified
+
+**Install**: `launchpad install render.com`
+
+---
+
+### [supabase.com/cli](../packages/supabase.com/cli/index.md) (cli)
+
+Package from pantry: supabase.com/cli
+
+**Programs**: None specified
+
+**Install**: `launchpad install supabase.com/cli`
 
 ---
 

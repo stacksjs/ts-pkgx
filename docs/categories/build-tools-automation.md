@@ -1,6 +1,6 @@
 # Build Tools & Automation
 
-*15 packages in this category*
+*8 packages in this category*
 
 Packages related to build tools & automation.
 
@@ -76,83 +76,13 @@ Tool for generating GNU Standards-compliant Makefiles
 
 ---
 
-### [gradle.org](../packages/gradle.org/index.md) (gradle)
+### [pantsbuild.org/scie-pants](../packages/pantsbuild.org/scie-pants/index.md) (scie-pants)
 
-Open-source build automation tool based on the Groovy and Kotlin DSL
+Package from pantry: pantsbuild.org/scie-pants
 
-**Programs**: gradle
+**Programs**: None specified
 
-**Install**: `launchpad install gradle`
-
----
-
-### [just.systems](../packages/just.systems/index.md) (just)
-
-Handy way to save and run project-specific commands
-
-**Programs**: just
-
-**Install**: `launchpad install just`
-
----
-
-### [maven.apache.org](../packages/maven.apache.org/index.md) (mvn)
-
-Java-based project management
-
-**Programs**: mvn, mvnDebug, mvnyjp
-
-**Install**: `launchpad install mvn`
-
----
-
-### [mesonbuild.com](../packages/mesonbuild.com/index.md) (meson)
-
-Fast and user friendly build system
-
-**Programs**: meson
-
-**Install**: `launchpad install meson`
-
----
-
-### [ninja-build.org](../packages/ninja-build.org/index.md) (ninja)
-
-Small build system for use with gyp or CMake
-
-**Programs**: ninja
-
-**Install**: `launchpad install ninja`
-
----
-
-### [pantsbuild.org/scie-pants](../packages/pantsbuild.org/scie-pants/index.md) (scie-pants, pants)
-
-Protects your Pants from the elements.
-
-**Programs**: pants
-
-**Install**: `launchpad install pants`
-
----
-
-### [scons.org](../packages/scons.org/index.md) (scons)
-
-Substitute for classic 'make' tool with autoconf/automake functionality
-
-**Programs**: scons
-
-**Install**: `launchpad install scons`
-
----
-
-### [taskfile.dev](../packages/taskfile.dev/index.md) (task)
-
-A task runner / simpler Make alternative written in Go
-
-**Programs**: task
-
-**Install**: `launchpad install task`
+**Install**: `launchpad install pantsbuild.org/scie-pants`
 
 ---
 
