@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-07-12T02:41:51.302Z
+ * Generated on 2025-07-13T02:47:38.331Z
  */
 
 /**
@@ -43,7 +43,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1590 total)
+ * List of all known packages (1591 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -595,6 +595,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'github.com/dateutil/dateutil',
   'github.com/dduan/tre',
   'github.com/deepmap/oapi-codegen',
+  'github.com/denisidoro/navi',
   'github.com/dloebl/cgif',
   'github.com/dundee/gdu',
   'github.com/dylanaraps/neofetch',
