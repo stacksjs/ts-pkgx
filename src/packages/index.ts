@@ -550,6 +550,7 @@ import { overmindPackage } from './github.com/darthsim/overmind'
 import { githubcomdateutildateutilPackage } from './github.com/dateutil/dateutil'
 import { trePackage } from './github.com/dduan/tre'
 import { githubcomdeepmapoapicodegenPackage } from './github.com/deepmap/oapi-codegen'
+import { githubcomdenisidoronaviPackage } from './github.com/denisidoro/navi'
 import { githubcomdloeblcgifPackage } from './github.com/dloebl/cgif'
 import { gduPackage } from './github.com/dundee/gdu'
 import { neofetchPackage } from './github.com/dylanaraps/neofetch'
@@ -2554,6 +2555,8 @@ export interface Pantry {
   githubcomdduan: typeof trePackage
   oapi_codegen: typeof githubcomdeepmapoapicodegenPackage
   githubcomdeepmap: typeof githubcomdeepmapoapicodegenPackage
+  navi: typeof githubcomdenisidoronaviPackage
+  githubcomdenisidoro: typeof githubcomdenisidoronaviPackage
   cgif: typeof githubcomdloeblcgifPackage
   githubcomdloebl: typeof githubcomdloeblcgifPackage
 
@@ -6359,6 +6362,8 @@ export const pantry: Pantry = {
   githubcomdduan: trePackage,
   oapi_codegen: githubcomdeepmapoapicodegenPackage,
   githubcomdeepmap: githubcomdeepmapoapicodegenPackage,
+  navi: githubcomdenisidoronaviPackage,
+  githubcomdenisidoro: githubcomdenisidoronaviPackage,
   cgif: githubcomdloeblcgifPackage,
   githubcomdloebl: githubcomdloeblcgifPackage,
 
