@@ -3,7 +3,7 @@
  *
  * @domain `just.systems`
  * @programs `just`
- * @version `1.41.0` (41 versions available)
+ * @version `1.42.0` (42 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install just`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "just"
  * console.log(pkg.description) // "Handy way to save and run project-specific comm..."
  * console.log(pkg.programs)    // ["just"]
- * console.log(pkg.versions[0]) // "1.41.0" (latest)
+ * console.log(pkg.versions[0]) // "1.42.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/just-systems.md
@@ -62,6 +62,7 @@ export const justPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.42.0',
     '1.41.0',
     '1.40.0',
     '1.39.0',

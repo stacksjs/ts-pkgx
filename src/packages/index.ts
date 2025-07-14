@@ -1193,6 +1193,7 @@ import { whisperPackage as whisperPackage1 } from './openai.com/whisper'
 import { openapigeneratorPackage } from './openapi-generatortech'
 import { openbaoPackage } from './openbao.org/openbao'
 import { openblasnetPackage } from './openblasnet'
+import { opencodeaiPackage } from './opencodeai'
 import { opencoreamrsourceforgeioPackage } from './opencore-amrsourceforgeio'
 import { opendaporgPackage } from './opendaporg'
 import { gitreviewPackage } from './opendev.org/git-review'
@@ -3668,6 +3669,7 @@ export interface Pantry {
 
   openbaoorg: typeof openbaoPackage
   openblasnet: typeof openblasnetPackage
+  opencodeai: typeof opencodeaiPackage
   opencore_amrsourceforgeio: typeof opencoreamrsourceforgeioPackage
   opencoreamrsourceforgeio: typeof opencoreamrsourceforgeioPackage
   opendaporg: typeof opendaporgPackage
@@ -7475,6 +7477,7 @@ export const pantry: Pantry = {
 
   openbaoorg: openbaoPackage,
   openblasnet: openblasnetPackage,
+  opencodeai: opencodeaiPackage,
   opencore_amrsourceforgeio: opencoreamrsourceforgeioPackage,
   opencoreamrsourceforgeio: opencoreamrsourceforgeioPackage,
   opendaporg: opendaporgPackage,
