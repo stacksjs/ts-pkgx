@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-07-13T02:47:38.331Z
+ * Generated on 2025-07-14T02:45:50.791Z
  */
 
 /**
@@ -43,7 +43,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1591 total)
+ * List of all known packages (1592 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -1238,6 +1238,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'openapi-generator.tech',
   'openbao.org/openbao',
   'openblas.net',
+  'opencode.ai',
   'opencore-amr.sourceforge.io',
   'opendap.org',
   'opendev.org/git-review',
