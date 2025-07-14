@@ -1,11 +1,11 @@
-# nvm
+# nvm-exec
 
-> Package from pantry: github.com/nvm-sh/nvm
+> Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
 
 ## Package Information
 
 - **Domain**: `github.com/nvm-sh/nvm`
-- **Name**: `nvm`
+- **Name**: `nvm-exec`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/nvm-sh/nvm/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/nvm-sh/nvm
+launchpad install nvm-exec
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `nvm-exec`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `0.40.3`, `0.40.2`, `0.40.1`, `0.40.0`, `0.39.7`
+- `0.39.6`, `0.39.5`
+
+</details>
+
+**Latest Version**: `0.40.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) nvm-exec -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.nvm
+const pkg = pantry['nvm-exec']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

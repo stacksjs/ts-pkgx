@@ -1,11 +1,11 @@
-# psycopg3
+# psycopg.org/psycopg3
 
-> Package from pantry: psycopg.org/psycopg3
+> New generation PostgreSQL database adapter for the Python programming language
 
 ## Package Information
 
 - **Domain**: `psycopg.org/psycopg3`
-- **Name**: `psycopg3`
+- **Name**: `psycopg.org/psycopg3`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/psycopg.org/psycopg3/package.yml)
 
@@ -22,6 +22,25 @@ This package provides the following executable programs:
 
 *No programs specified*
 
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `3.2.9`, `3.2.8`, `3.2.7`, `3.2.6`, `3.2.5`
+- `3.2.4`, `3.2.3`, `3.2.2`
+
+</details>
+
+**Latest Version**: `3.2.9`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +psycopg.org/psycopg3@3.2.9 -- $SHELL -i
+```
+
 ## Dependencies
 
 This package depends on:
@@ -35,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.psycopg3
+const pkg = pantry['psycopg.org/psycopg3']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

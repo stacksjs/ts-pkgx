@@ -1,11 +1,11 @@
-# streebog
+# gost3411-2012
 
-> Package from pantry: github.com/adegtyarev/streebog
+> GOST R 34.11-2012: RFC-6986 cryptographic hash function
 
 ## Package Information
 
 - **Domain**: `github.com/adegtyarev/streebog`
-- **Name**: `streebog`
+- **Name**: `gost3411-2012`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/adegtyarev/streebog/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/adegtyarev/streebog
+launchpad install gost3411-2012
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gost3411-2012`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.13.0`
+
+</details>
+
+**Latest Version**: `0.13.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) gost3411-2012 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.streebog
+const pkg = pantry['gost3411-2012']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

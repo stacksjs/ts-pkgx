@@ -1,7 +1,9 @@
 /**
- * **glfw.org** - Package from pantry: glfw.org
+ * **glfw.org** - A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input
  *
  * @domain `glfw.org`
+ * @version `3.4.0` (3 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install glfw.org`
  * @dependencies `linux:freeglut.sourceforge.io^3.4`, `linux:x.org/xcursor^1.2`, `linux:xkbcommon.org^1.0`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
@@ -12,7 +14,8 @@
  *
  * const pkg = pantry.glfworg
  * console.log(pkg.name)        // "glfw.org"
- * console.log(pkg.description) // "Package from pantry: glfw.org"
+ * console.log(pkg.description) // "A multi-platform library for OpenGL, OpenGL ES,..."
+ * console.log(pkg.versions[0]) // "3.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/glfw-org.md
@@ -30,14 +33,15 @@ export const glfworgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: glfw.org' as const,
+  description: 'A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/glfw.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/glfw/glfw' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install glfw.org' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +glfw.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install glfw.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -51,10 +55,18 @@ export const glfworgPackage = {
     'linux:xkbcommon.org^1.0',
     'linux:mesa3d.org^23.3',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/glfw.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.4.0',
+    '3.3.10',
+    '3.3.9',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +glfw.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install glfw.org' as const,
 }
 
 export type GlfworgPackage = typeof glfworgPackage

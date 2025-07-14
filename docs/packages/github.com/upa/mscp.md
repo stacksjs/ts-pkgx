@@ -1,6 +1,6 @@
 # mscp
 
-> Package from pantry: github.com/upa/mscp
+> mscp: transfer files over multiple SSH (SFTP) connections
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/upa/mscp
+launchpad install mscp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mscp`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.2.2`, `0.2.1`
+
+</details>
+
+**Latest Version**: `0.2.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) mscp -- $SHELL -i
+```
 
 ## Dependencies
 

@@ -26,63 +26,63 @@ Command line tools for fly.io services
 
 ---
 
-### [heroku.com](../packages/heroku.com/index.md)
+### [heroku.com](../packages/heroku.com/index.md) (heroku)
 
-Package from pantry: heroku.com
+CLI for Heroku
 
-**Programs**: None specified
+**Programs**: heroku
 
-**Install**: `launchpad install heroku.com`
-
----
-
-### [localstack.cloud/cli](../packages/localstack.cloud/cli/index.md) (cli)
-
-Package from pantry: localstack.cloud/cli
-
-**Programs**: None specified
-
-**Install**: `launchpad install localstack.cloud/cli`
+**Install**: `launchpad install heroku`
 
 ---
 
-### [planetscale.com](../packages/planetscale.com/index.md)
+### [localstack.cloud/cli](../packages/localstack.cloud/cli/index.md) (localstack)
 
-Package from pantry: planetscale.com
+The LocalStack CLI packaged using pyinstaller
 
-**Programs**: None specified
+**Programs**: localstack
 
-**Install**: `launchpad install planetscale.com`
-
----
-
-### [railway.app](../packages/railway.app/index.md)
-
-Package from pantry: railway.app
-
-**Programs**: None specified
-
-**Install**: `launchpad install railway.app`
+**Install**: `launchpad install localstack`
 
 ---
 
-### [render.com](../packages/render.com/index.md)
+### [planetscale.com](../packages/planetscale.com/index.md) (pscale)
 
-Package from pantry: render.com
+The CLI for PlanetScale Database
 
-**Programs**: None specified
+**Programs**: pscale
 
-**Install**: `launchpad install render.com`
+**Install**: `launchpad install pscale`
 
 ---
 
-### [supabase.com/cli](../packages/supabase.com/cli/index.md) (cli)
+### [railway.app](../packages/railway.app/index.md) (railway)
 
-Package from pantry: supabase.com/cli
+Develop and deploy code with zero configuration
 
-**Programs**: None specified
+**Programs**: railway
 
-**Install**: `launchpad install supabase.com/cli`
+**Install**: `launchpad install railway`
+
+---
+
+### [render.com](../packages/render.com/index.md) (render)
+
+Command-line interface for Render
+
+**Programs**: render
+
+**Install**: `launchpad install render`
+
+---
+
+### [supabase.com/cli](../packages/supabase.com/cli/index.md) (supabase)
+
+Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres backups. Generating types from your database schema.
+
+**Programs**: supabase
+
+**Install**: `launchpad install supabase`
 
 ---
 

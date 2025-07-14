@@ -1,6 +1,6 @@
 # fribidi
 
-> Package from pantry: gnu.org/fribidi
+> Implementation of the Unicode BiDi algorithm
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install gnu.org/fribidi
+launchpad install fribidi
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `fribidi`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `1.0.16`, `1.0.15`, `1.0.14`, `1.0.13`, `1.0.12`
+
+</details>
+
+**Latest Version**: `1.0.16`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) fribidi -- $SHELL -i
+```
 
 ## Usage Examples
 

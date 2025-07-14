@@ -1,11 +1,11 @@
-# intltool
+# freedesktop.org/intltool
 
-> Package from pantry: freedesktop.org/intltool
+> String tool
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/intltool`
-- **Name**: `intltool`
+- **Name**: `freedesktop.org/intltool`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/intltool/package.yml)
 
@@ -20,7 +20,33 @@ launchpad install freedesktop.org/intltool
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `intltool-extract`
+- `intltool-merge`
+- `intltool-prepare`
+- `intltool-update`
+- `intltoolize`
+- `lwp-download`
+- `lwp-dump`
+- `lwp-mirror`
+- `lwp-request`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.51.0`
+
+</details>
+
+**Latest Version**: `0.51.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +freedesktop.org/intltool@0.51.0 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -35,7 +61,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.intltool
+const pkg = pantry['freedesktop.org/intltool']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

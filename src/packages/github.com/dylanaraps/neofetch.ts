@@ -1,24 +1,34 @@
 /**
- * **neofetch** - Package from pantry: github.com/dylanaraps/neofetch
+ * **neofetch** - 🖼️  A command-line system information tool written in bash 3.2+
  *
  * @domain `github.com/dylanaraps/neofetch`
+ * @programs `neofetch`
+ * @version `7.1.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/dylanaraps/neofetch`
+ * @install `launchpad install neofetch`
+ * @name `neofetch`
  * @dependencies `darwin:github.com/jhford/screenresolution` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomdylanarapsneofetch
+ * // Access the package
+ * const pkg = pantry.neofetch
+ * // Or access via domain
+ * const samePkg = pantry.githubcomdylanarapsneofetch
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "neofetch"
- * console.log(pkg.description) // "Package from pantry: github.com/dylanaraps/neof..."
+ * console.log(pkg.description) // "🖼️  A command-line system information tool wri..."
+ * console.log(pkg.programs)    // ["neofetch"]
+ * console.log(pkg.versions[0]) // "7.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/dylanaraps/neofetch.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomdylanarapsneofetchPackage = {
+export const neofetchPackage = {
   /**
    * The display name of this package.
    */
@@ -30,15 +40,22 @@ export const githubcomdylanarapsneofetchPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/dylanaraps/neofetch' as const,
+  description: '🖼️  A command-line system information tool written in bash 3.2+' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/dylanaraps/neofetch/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/dylanaraps/neofetch' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/dylanaraps/neofetch -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/dylanaraps/neofetch' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install neofetch' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'neofetch',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -48,10 +65,20 @@ export const githubcomdylanarapsneofetchPackage = {
   dependencies: [
     'darwin:github.com/jhford/screenresolution',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/dylanaraps/neofetch/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '7.1.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) neofetch -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install neofetch' as const,
 }
 
-export type GithubcomdylanarapsneofetchPackage = typeof githubcomdylanarapsneofetchPackage
+export type NeofetchPackage = typeof neofetchPackage

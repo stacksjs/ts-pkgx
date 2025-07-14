@@ -1,28 +1,38 @@
 /**
- * **scryer.pl** - Package from pantry: scryer.pl
+ * **scryer-prolog** - Modern ISO Prolog implementation written mostly in Rust
  *
  * @domain `scryer.pl`
+ * @programs `scryer-prolog`
+ * @version `0.9.4` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install scryer.pl`
+ * @install `launchpad install scryer-prolog`
+ * @name `scryer-prolog`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.scryerpl
- * console.log(pkg.name)        // "scryer.pl"
- * console.log(pkg.description) // "Package from pantry: scryer.pl"
+ * // Access the package
+ * const pkg = pantry.scryerprolog
+ * // Or access via domain
+ * const samePkg = pantry.scryerpl
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "scryer-prolog"
+ * console.log(pkg.description) // "Modern ISO Prolog implementation written mostly..."
+ * console.log(pkg.programs)    // ["scryer-prolog"]
+ * console.log(pkg.versions[0]) // "0.9.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/scryer-pl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const scryerplPackage = {
+export const scryerprologPackage = {
   /**
    * The display name of this package.
    */
-  name: 'scryer.pl' as const,
+  name: 'scryer-prolog' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +40,22 @@ export const scryerplPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: scryer.pl' as const,
+  description: 'Modern ISO Prolog implementation written mostly in Rust' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/scryer.pl/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install scryer.pl' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +scryer.pl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install scryer.pl' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install scryer-prolog' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'scryer-prolog',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,20 @@ export const scryerplPackage = {
   dependencies: [
     'openssl.org^1.1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/scryer.pl/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.9.4',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) scryer-prolog -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install scryer-prolog' as const,
 }
 
-export type ScryerplPackage = typeof scryerplPackage
+export type ScryerprologPackage = typeof scryerprologPackage

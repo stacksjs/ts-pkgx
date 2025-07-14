@@ -1,6 +1,6 @@
 # scie-pants
 
-> Package from pantry: pantsbuild.org/scie-pants
+> Protects your Pants from the elements.
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with launchpad
-launchpad install pantsbuild.org/scie-pants
+launchpad install pants
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pants`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `pants`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `0.12.3`, `0.12.2`, `0.12.1`, `0.12.0`
+
+</details>
+
+**Latest Version**: `0.12.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) pants -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +58,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['scie-pants']
+const pkg = pantry.pants
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

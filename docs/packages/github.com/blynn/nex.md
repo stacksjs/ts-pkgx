@@ -1,6 +1,6 @@
 # nex
 
-> Package from pantry: github.com/blynn/nex
+> 44BSD re-implementation of vi
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/blynn/nex
+launchpad install nex
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `nex`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2021.3.30`
+
+</details>
+
+**Latest Version**: `2021.3.30`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) nex -- $SHELL -i
+```
 
 ## Usage Examples
 

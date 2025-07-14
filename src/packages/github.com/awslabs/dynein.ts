@@ -1,28 +1,38 @@
 /**
- * **dynein** - Package from pantry: github.com/awslabs/dynein
+ * **dy** - DynamoDB CLI written in Rust.
  *
  * @domain `github.com/awslabs/dynein`
+ * @programs `dy`
+ * @version `0.3.0` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/awslabs/dynein`
+ * @install `launchpad install dy`
+ * @name `dy`
  * @dependencies `linux:openssl.org^1.1` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomawslabsdynein
- * console.log(pkg.name)        // "dynein"
- * console.log(pkg.description) // "Package from pantry: github.com/awslabs/dynein"
+ * // Access the package
+ * const pkg = pantry.dy
+ * // Or access via domain
+ * const samePkg = pantry.githubcomawslabsdynein
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "dy"
+ * console.log(pkg.description) // "DynamoDB CLI written in Rust."
+ * console.log(pkg.programs)    // ["dy"]
+ * console.log(pkg.versions[0]) // "0.3.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/awslabs/dynein.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomawslabsdyneinPackage = {
+export const dyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'dynein' as const,
+  name: 'dy' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +40,22 @@ export const githubcomawslabsdyneinPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/awslabs/dynein' as const,
+  description: 'DynamoDB CLI written in Rust.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/awslabs/dynein/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/awslabs/dynein' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/awslabs/dynein -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/awslabs/dynein' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install dy' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'dy',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -48,10 +65,21 @@ export const githubcomawslabsdyneinPackage = {
   dependencies: [
     'linux:openssl.org^1.1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/awslabs/dynein/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.3.0',
+    '0.2.1',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dy' as const,
 }
 
-export type GithubcomawslabsdyneinPackage = typeof githubcomawslabsdyneinPackage
+export type DyPackage = typeof dyPackage

@@ -1,6 +1,6 @@
 # pkg
 
-> Package from pantry: vercel.com/pkg
+> Package your Node.js project into an executable
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install vercel.com/pkg
+launchpad install pkg
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pkg`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `5.8.1`
+
+</details>
+
+**Latest Version**: `5.8.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) pkg -- $SHELL -i
+```
 
 ## Dependencies
 

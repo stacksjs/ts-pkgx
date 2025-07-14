@@ -1,6 +1,6 @@
 # dive
 
-> Package from pantry: github.com/wagoodman/dive
+> A tool for exploring each layer in a docker image
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/wagoodman/dive
+launchpad install dive
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `dive`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `0.13.1`, `0.13.0`, `0.12.0`, `0.11.0`
+
+</details>
+
+**Latest Version**: `0.13.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) dive -- $SHELL -i
+```
 
 ## Usage Examples
 

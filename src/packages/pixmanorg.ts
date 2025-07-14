@@ -1,7 +1,9 @@
 /**
- * **pixman.org** - Package from pantry: pixman.org
+ * **pixman.org** - pkgx package
  *
  * @domain `pixman.org`
+ * @version `0.40.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install pixman.org`
  *
@@ -11,7 +13,7 @@
  *
  * const pkg = pantry.pixmanorg
  * console.log(pkg.name)        // "pixman.org"
- * console.log(pkg.description) // "Package from pantry: pixman.org"
+ * console.log(pkg.versions[0]) // "0.40.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pixman-org.md
@@ -29,21 +31,28 @@ export const pixmanorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: pixman.org' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pixman.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install pixman.org' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pixman.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pixman.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pixman.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.40.0',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pixman.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pixman.org' as const,
 }
 
 export type PixmanorgPackage = typeof pixmanorgPackage

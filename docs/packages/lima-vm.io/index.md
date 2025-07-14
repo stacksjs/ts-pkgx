@@ -1,6 +1,6 @@
 # lima-vm.io
 
-> Package from pantry: lima-vm.io
+> Linux virtual machines, with a focus on running containers
 
 ## Package Information
 
@@ -20,7 +20,36 @@ launchpad install lima-vm.io
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `apptainer.lima`
+- `docker.lima`
+- `kubectl.lima`
+- `lima`
+- `limactl`
+- `nerdctl.lima`
+- `podman.lima`
+
+## Available Versions
+
+<details>
+<summary>Show all 26 versions</summary>
+
+- `1.2.0`, `1.1.1`, `1.1.0`, `1.0.7`, `1.0.6`
+- `1.0.5`, `1.0.4`, `1.0.3`, `1.0.2`, `1.0.1`
+- `1.0.0`, `0.23.2`, `0.23.1`, `0.23.0`, `0.22.0`
+- `0.21.0`, `0.20.2`, `0.20.1`, `0.20.0`, `0.19.1`
+- `0.19.0`, `0.18.0`, `0.17.2`, `0.17.1`, `0.17.0`
+- `0.16.0`
+
+</details>
+
+**Latest Version**: `1.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +lima-vm.io@1.2.0 -- $SHELL -i
+```
 
 ## Dependencies
 

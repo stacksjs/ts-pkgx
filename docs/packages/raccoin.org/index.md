@@ -1,11 +1,11 @@
-# raccoin.org
+# raccoin
 
-> Package from pantry: raccoin.org
+> Crypto Portfolio and Tax Reporting Tool
 
 ## Package Information
 
 - **Domain**: `raccoin.org`
-- **Name**: `raccoin.org`
+- **Name**: `raccoin`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/raccoin.org/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install raccoin.org
+launchpad install raccoin
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `raccoin`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.2.0`, `0.1.0`
+
+</details>
+
+**Latest Version**: `0.2.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) raccoin -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -35,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['raccoin.org']
+const pkg = pantry.raccoin
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,11 +1,11 @@
-# sentry.io
+# sentry-cli
 
-> Package from pantry: sentry.io
+> Command-line utility to interact with Sentry
 
 ## Package Information
 
 - **Domain**: `sentry.io`
-- **Name**: `sentry.io`
+- **Name**: `sentry-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sentry.io/package.yml)
 
@@ -13,14 +13,41 @@
 
 ```bash
 # Install with launchpad
-launchpad install sentry.io
+launchpad install sentry-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `sentry-cli`
+
+## Available Versions
+
+<details>
+<summary>Show all 47 versions</summary>
+
+- `2.47.1`, `2.47.0`, `2.46.0`, `2.45.0`, `2.44.0`
+- `2.43.1`, `2.43.0`, `2.42.5`, `2.42.4`, `2.42.3`
+- `2.42.2`, `2.42.1`, `2.42.0`, `2.41.1`, `2.41.0`
+- `2.40.0`, `2.39.1`, `2.39.0`, `2.38.2`, `2.38.1`
+- `2.38.0`, `2.37.0`, `2.36.6`, `2.36.5`, `2.36.4`
+- `2.36.3`, `2.36.2`, `2.36.1`, `2.36.0`, `2.35.0`
+- `2.34.1`, `2.34.0`, `2.33.1`, `2.33.0`, `2.32.2`
+- `2.32.1`, `2.32.0`, `2.31.2`, `2.31.1`, `2.31.0`
+- `2.30.5`, `2.30.4`, `2.30.3`, `2.30.2`, `2.30.1`
+- `2.30.0`, `2.29.1`
+
+</details>
+
+**Latest Version**: `2.47.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) sentry-cli -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +61,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['sentry.io']
+const pkg = pantry['sentry-cli']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

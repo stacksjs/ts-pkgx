@@ -1,11 +1,11 @@
-# hunspell.github.io
+# hunspell
 
-> Package from pantry: hunspell.github.io
+> Spell checker and morphological analyzer
 
 ## Package Information
 
 - **Domain**: `hunspell.github.io`
-- **Name**: `hunspell.github.io`
+- **Name**: `hunspell`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hunspell.github.io/package.yml)
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with launchpad
-launchpad install hunspell.github.io
+launchpad install hunspell
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `analyze`
+- `chmorph`
+- `hunspell`
+- `hunzip`
+- `hzip`
+- `munch`
+- `unmunch`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.7.2`
+
+</details>
+
+**Latest Version**: `1.7.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +hunspell.github.io@1.7.2 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -36,7 +60,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['hunspell.github.io']
+const pkg = pantry.hunspell
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,11 +1,11 @@
-# libmaxminddb
+# mmdblookup
 
-> Package from pantry: github.com/maxmind/libmaxminddb
+> C library for the MaxMind DB file format
 
 ## Package Information
 
 - **Domain**: `github.com/maxmind/libmaxminddb`
-- **Name**: `libmaxminddb`
+- **Name**: `mmdblookup`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/maxmind/libmaxminddb/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/maxmind/libmaxminddb
+launchpad install mmdblookup
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mmdblookup`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `1.12.2`, `1.12.1`, `1.12.0`, `1.11.0`, `1.10.0`
+- `1.9.1`, `1.9.0`, `1.8.0`, `1.7.1`
+
+</details>
+
+**Latest Version**: `1.12.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) mmdblookup -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +47,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libmaxminddb
+const pkg = pantry.mmdblookup
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

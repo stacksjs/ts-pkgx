@@ -1,11 +1,11 @@
-# diffutils
+# gnu.org/diffutils
 
-> Package from pantry: gnu.org/diffutils
+> File comparison utilities
 
 ## Package Information
 
 - **Domain**: `gnu.org/diffutils`
-- **Name**: `diffutils`
+- **Name**: `gnu.org/diffutils`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/diffutils/package.yml)
 
@@ -20,7 +20,28 @@ launchpad install gnu.org/diffutils
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cmp`
+- `diff`
+- `diff3`
+- `sdiff`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `3.12.0`, `3.11.0`, `3.2.0`
+
+</details>
+
+**Latest Version**: `3.12.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +gnu.org/diffutils@3.12.0 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +49,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.diffutils
+const pkg = pantry['gnu.org/diffutils']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

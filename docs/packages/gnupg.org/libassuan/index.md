@@ -1,11 +1,11 @@
-# libassuan
+# libassuan-config
 
-> Package from pantry: gnupg.org/libassuan
+> Assuan IPC Library
 
 ## Package Information
 
 - **Domain**: `gnupg.org/libassuan`
-- **Name**: `libassuan`
+- **Name**: `libassuan-config`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/libassuan/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install gnupg.org/libassuan
+launchpad install libassuan-config
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `libassuan-config`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `3.0.2`, `3.0.1`, `3.0.0`, `2.5.7`, `2.5.6`
+- `2.5.5`
+
+</details>
+
+**Latest Version**: `3.0.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) libassuan-config -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +47,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libassuan
+const pkg = pantry['libassuan-config']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
