@@ -3,7 +3,7 @@
  *
  * @domain `ktlint.github.io`
  * @programs `ktlint`
- * @version `1.6.0` (10 versions available)
+ * @version `1.7.0` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ktlint`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "ktlint"
  * console.log(pkg.description) // "An anti-bikeshedding Kotlin linter with built-i..."
  * console.log(pkg.programs)    // ["ktlint"]
- * console.log(pkg.versions[0]) // "1.6.0" (latest)
+ * console.log(pkg.versions[0]) // "1.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ktlint-github-io.md
@@ -69,6 +69,7 @@ export const ktlintPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.7.0',
     '1.6.0',
     '1.5.0',
     '1.4.1',
