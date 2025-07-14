@@ -1,33 +1,23 @@
 /**
- * **nak** - a command line tool for doing all things nostr
+ * **nak** - Package from pantry: github.com/fiatjaf/nak
  *
  * @domain `github.com/fiatjaf/nak`
- * @programs `nak`
- * @version `0.15.1` (21 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install nak`
- * @name `nak`
+ * @install `launchpad install github.com/fiatjaf/nak`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.nak
- * // Or access via domain
- * const samePkg = pantry.githubcomfiatjafnak
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomfiatjafnak
  * console.log(pkg.name)        // "nak"
- * console.log(pkg.description) // "a command line tool for doing all things nostr"
- * console.log(pkg.programs)    // ["nak"]
- * console.log(pkg.versions[0]) // "0.15.1" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/fiatjaf/nak"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/fiatjaf/nak.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nakPackage = {
+export const githubcomfiatjafnakPackage = {
   /**
    * The display name of this package.
    */
@@ -39,58 +29,21 @@ export const nakPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'a command line tool for doing all things nostr' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/fiatjaf/nak/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/fiatjaf/nak' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install nak' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'nak',
-  ] as const,
+  installCommand: 'launchpad install github.com/fiatjaf/nak' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/fiatjaf/nak -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/fiatjaf/nak' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.15.1',
-    '0.15.0',
-    '0.14.4',
-    '0.14.3',
-    '0.14.2',
-    '0.14.1',
-    '0.14.0',
-    '0.13.2',
-    '0.13.1',
-    '0.13.0',
-    '0.12.6',
-    '0.12.0',
-    '0.11.4',
-    '0.11.3',
-    '0.11.2',
-    '0.11.0',
-    '0.10.1',
-    '0.10.0',
-    '0.9.1',
-    '0.9.0',
-    '0.8.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nak -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install nak' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/fiatjaf/nak/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type NakPackage = typeof nakPackage
+export type GithubcomfiatjafnakPackage = typeof githubcomfiatjafnakPackage

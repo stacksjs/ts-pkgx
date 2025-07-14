@@ -1,11 +1,11 @@
-# fusermount3
+# libfuse
 
-> The reference implementation of the Linux FUSE (Filesystem in Userspace) interface
+> Package from pantry: github.com/libfuse/libfuse
 
 ## Package Information
 
 - **Domain**: `github.com/libfuse/libfuse`
-- **Name**: `fusermount3`
+- **Name**: `libfuse`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libfuse/libfuse/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install fusermount3
+launchpad install github.com/libfuse/libfuse
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `fusermount3`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `3.17.2`, `3.17.1`
-
-</details>
-
-**Latest Version**: `3.17.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) fusermount3 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) fusermount3 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.fusermount3
+const pkg = pantry.libfuse
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

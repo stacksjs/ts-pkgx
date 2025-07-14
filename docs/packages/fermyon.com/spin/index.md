@@ -45,9 +45,9 @@ sh <(curl https://pkgx.sh) spin -- $SHELL -i
 
 These packages work well with spin:
 
-- [`rust-lang.org`](../../rust-lang.org/index.md) - Empowering everyone to build reliable and efficient software.
-- [`rust-lang.org/cargo`](../../rust-lang.org/cargo/index.md) - The Rust package manager
-- [`git-scm.org`](../../git-scm.org/index.md) - Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.
+- [`rust-lang.org`](../../rust-lang.org/index.md) - Package from pantry: rust-lang.org
+- [`rust-lang.org/cargo`](../../rust-lang.org/cargo/index.md) - Package from pantry: rust-lang.org/cargo
+- [`git-scm.org`](../../git-scm.org/index.md) - Package from pantry: git-scm.org
 
 ## Usage Examples
 

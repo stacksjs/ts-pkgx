@@ -1,6 +1,6 @@
 # duti
 
-> A command-line tool to select default applications for document types and URL schemes on Mac OS X
+> Package from pantry: github.com/moretension/duti
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install duti
+launchpad install github.com/moretension/duti
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `duti`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.5.4`
-
-</details>
-
-**Latest Version**: `1.5.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) duti -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

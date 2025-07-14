@@ -1,11 +1,11 @@
-# github.com/eliben/pycparser
+# pycparser
 
-> :snake: Complete C99 parser in pure Python
+> Package from pantry: github.com/eliben/pycparser
 
 ## Package Information
 
 - **Domain**: `github.com/eliben/pycparser`
-- **Name**: `github.com/eliben/pycparser`
+- **Name**: `pycparser`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/eliben/pycparser/package.yml)
 
@@ -22,24 +22,6 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `2.22.0`, `2.21.0`
-
-</details>
-
-**Latest Version**: `2.22.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/eliben/pycparser@2.22.0 -- $SHELL -i
-```
-
 ## Dependencies
 
 This package depends on:
@@ -52,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/eliben/pycparser']
+const pkg = pantry.pycparser
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

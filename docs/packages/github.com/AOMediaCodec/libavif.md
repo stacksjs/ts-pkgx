@@ -1,11 +1,11 @@
-# avif
+# libavif
 
-> libavif - Library for encoding and decoding .avif files
+> Package from pantry: github.com/AOMediaCodec/libavif
 
 ## Package Information
 
 - **Domain**: `github.com/AOMediaCodec/libavif`
-- **Name**: `avif`
+- **Name**: `libavif`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/AOMediaCodec/libavif/package.yml)
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install avif
+launchpad install github.com/AOMediaCodec/libavif
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `avifenc`
-- `avifdec`
-
-## Available Versions
-
-<details>
-<summary>Show all 11 versions</summary>
-
-- `1.3.0`, `1.2.1`, `1.2.0`, `1.1.1`, `1.1.0`
-- `1.0.4`, `1.0.3`, `1.0.2`, `1.0.1`, `1.0.0`
-- `0.11.1`
-
-</details>
-
-**Latest Version**: `1.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/AOMediaCodec/libavif@1.3.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -57,7 +36,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.avif
+const pkg = pantry.libavif
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

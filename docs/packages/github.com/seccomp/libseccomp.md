@@ -1,6 +1,6 @@
 # libseccomp
 
-> Interface to the Linux Kernel's syscall filtering mechanism
+> Package from pantry: github.com/seccomp/libseccomp
 
 ## Package Information
 
@@ -13,38 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install scmp_sys_resolver
+launchpad install github.com/seccomp/libseccomp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `scmp_sys_resolver`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `scmp_sys_resolver`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `2.6.0`, `2.5.6`, `2.5.5`
-
-</details>
-
-**Latest Version**: `2.6.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) scmp_sys_resolver -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -52,7 +28,7 @@ sh <(curl https://pkgx.sh) scmp_sys_resolver -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.scmp_sys_resolver
+const pkg = pantry.libseccomp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

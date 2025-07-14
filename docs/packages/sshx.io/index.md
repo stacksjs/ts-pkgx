@@ -1,11 +1,11 @@
-# sshx
+# sshx.io
 
-> Fast, collaborative live terminal sharing over the web
+> Package from pantry: sshx.io
 
 ## Package Information
 
 - **Domain**: `sshx.io`
-- **Name**: `sshx`
+- **Name**: `sshx.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sshx.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install sshx
+launchpad install sshx.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `sshx`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2023.11.14`
-
-</details>
-
-**Latest Version**: `2023.11.14`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) sshx -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -52,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.sshx
+const pkg = pantry['sshx.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,11 +1,11 @@
-# nano
+# nano-editor.org
 
-> Free (GNU) replacement for the Pico text editor
+> Package from pantry: nano-editor.org
 
 ## Package Information
 
 - **Domain**: `nano-editor.org`
-- **Name**: `nano`
+- **Name**: `nano-editor.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nano-editor.org/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install nano
+launchpad install nano-editor.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `nano`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `8.0.0`, `7.2.0`
-
-</details>
-
-**Latest Version**: `8.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) nano -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -53,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.nano
+const pkg = pantry['nano-editor.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,11 +1,11 @@
-# invoke
+# pyinvoke.org
 
-> Pythonic task management & command execution.
+> Package from pantry: pyinvoke.org
 
 ## Package Information
 
 - **Domain**: `pyinvoke.org`
-- **Name**: `invoke`
+- **Name**: `pyinvoke.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pyinvoke.org/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install invoke
+launchpad install pyinvoke.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `invoke`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.2.0`
-
-</details>
-
-**Latest Version**: `2.2.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) invoke -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -52,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.invoke
+const pkg = pantry['pyinvoke.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

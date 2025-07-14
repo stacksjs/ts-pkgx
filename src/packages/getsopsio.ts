@@ -1,37 +1,27 @@
 /**
- * **sops** - Simple and flexible tool for managing secrets
+ * **getsops.io** - Package from pantry: getsops.io
  *
  * @domain `getsops.io`
- * @programs `sops`
- * @version `3.10.2` (9 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install sops`
- * @name `sops`
+ * @install `launchpad install getsops.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sops
- * // Or access via domain
- * const samePkg = pantry.getsopsio
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sops"
- * console.log(pkg.description) // "Simple and flexible tool for managing secrets"
- * console.log(pkg.programs)    // ["sops"]
- * console.log(pkg.versions[0]) // "3.10.2" (latest)
+ * const pkg = pantry.getsopsio
+ * console.log(pkg.name)        // "getsops.io"
+ * console.log(pkg.description) // "Package from pantry: getsops.io"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/getsops-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sopsPackage = {
+export const getsopsioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sops' as const,
+  name: 'getsops.io' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,46 +29,21 @@ export const sopsPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Simple and flexible tool for managing secrets' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/getsops.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/getsops/sops' as const,
+  description: 'Package from pantry: getsops.io' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sops' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'sops',
-  ] as const,
+  installCommand: 'launchpad install getsops.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +getsops.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install getsops.io' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.10.2',
-    '3.10.1',
-    '3.10.0',
-    '3.9.4',
-    '3.9.3',
-    '3.9.2',
-    '3.9.1',
-    '3.9.0',
-    '3.8.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sops -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sops' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/getsops.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type SopsPackage = typeof sopsPackage
+export type GetsopsioPackage = typeof getsopsioPackage

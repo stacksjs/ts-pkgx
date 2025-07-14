@@ -1,6 +1,6 @@
 # openpmix.github.io
 
-> Process Management Interface for HPC environments
+> Package from pantry: openpmix.github.io
 
 ## Package Information
 
@@ -20,34 +20,7 @@ launchpad install openpmix.github.io
 
 This package provides the following executable programs:
 
-- `palloc`
-- `pattrs`
-- `pctrl`
-- `pevent`
-- `plookup`
-- `pmix_info`
-- `pmixcc`
-- `pps`
-- `pquery`
-
-## Available Versions
-
-<details>
-<summary>Show all 9 versions</summary>
-
-- `6.0.0`, `5.0.8`, `5.0.7`, `5.0.6`, `5.0.5`
-- `5.0.4`, `5.0.3`, `5.0.2`, `5.0.1`
-
-</details>
-
-**Latest Version**: `6.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +openpmix.github.io@6.0.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

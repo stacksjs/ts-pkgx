@@ -1,6 +1,6 @@
 # libdeflate
 
-> Heavily optimized library for DEFLATE/zlib/gzip compression and decompression
+> Package from pantry: github.com/ebiggers/libdeflate
 
 ## Package Information
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install libdeflate
+launchpad install github.com/ebiggers/libdeflate
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `libdeflate-gzip`
-- `libdeflate-gunzip`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `1.24.0`, `1.23.0`, `1.22.0`, `1.21.0`, `1.20.0`
-- `1.19.0`
-
-</details>
-
-**Latest Version**: `1.24.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/ebiggers/libdeflate@1.24.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

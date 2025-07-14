@@ -1,6 +1,6 @@
 # regbot
 
-> Docker and OCI Registry Client in Go and tooling using those libraries.
+> Package from pantry: github.com/regclient/regclient/regbot
 
 ## Package Information
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install regbot
+launchpad install github.com/regclient/regclient/regbot
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `regbot`
-
-## Available Versions
-
-<details>
-<summary>Show all 16 versions</summary>
-
-- `0.9.0`, `0.8.3`, `0.8.2`, `0.8.1`, `0.8.0`
-- `0.7.2`, `0.7.1`, `0.7.0`, `0.6.1`, `0.6.0`
-- `0.5.7`, `0.5.6`, `0.5.5`, `0.5.4`, `0.5.3`
-- `0.5.2`
-
-</details>
-
-**Latest Version**: `0.9.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) regbot -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

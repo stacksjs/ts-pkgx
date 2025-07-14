@@ -1,34 +1,24 @@
 /**
- * **gox** - A dead simple, no frills Go cross compile tool
+ * **gox** - Package from pantry: github.com/mitchellh/gox
  *
  * @domain `github.com/mitchellh/gox`
- * @programs `gox`
- * @version `1.0.1` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install gox`
- * @name `gox`
+ * @install `launchpad install github.com/mitchellh/gox`
  * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gox
- * // Or access via domain
- * const samePkg = pantry.githubcommitchellhgox
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcommitchellhgox
  * console.log(pkg.name)        // "gox"
- * console.log(pkg.description) // "A dead simple, no frills Go cross compile tool"
- * console.log(pkg.programs)    // ["gox"]
- * console.log(pkg.versions[0]) // "1.0.1" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/mitchellh/gox"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/mitchellh/gox.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const goxPackage = {
+export const githubcommitchellhgoxPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const goxPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A dead simple, no frills Go cross compile tool' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mitchellh/gox/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/mitchellh/gox' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gox' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'gox',
-  ] as const,
+  installCommand: 'launchpad install github.com/mitchellh/gox' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/mitchellh/gox -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/mitchellh/gox' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,20 +47,10 @@ export const goxPackage = {
   dependencies: [
     'go.dev',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.0.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gox -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gox' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mitchellh/gox/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type GoxPackage = typeof goxPackage
+export type GithubcommitchellhgoxPackage = typeof githubcommitchellhgoxPackage

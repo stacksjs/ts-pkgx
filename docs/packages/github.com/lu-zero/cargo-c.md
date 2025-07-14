@@ -1,6 +1,6 @@
 # cargo-c
 
-> Helper program to build and install c-like libraries
+> Package from pantry: github.com/lu-zero/cargo-c
 
 ## Package Information
 
@@ -13,40 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install cargo-c
+launchpad install github.com/lu-zero/cargo-c
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cargo-capi`
-- `cargo-cbuild`
-- `cargo-cinstall`
-- `cargo-ctest`
-
-## Available Versions
-
-<details>
-<summary>Show all 26 versions</summary>
-
-- `0.10.14`, `0.10.13`, `0.10.12`, `0.10.11`, `0.10.10`
-- `0.10.9`, `0.10.8`, `0.10.7`, `0.10.6`, `0.10.5`
-- `0.10.4`, `0.10.3`, `0.10.2`, `0.10.1`, `0.10.0`
-- `0.9.32`, `0.9.31`, `0.9.30`, `0.9.29`, `0.9.28`
-- `0.9.27`, `0.9.26`, `0.9.24`, `0.9.22`, `0.9.21`
-- `0.9.20`
-
-</details>
-
-**Latest Version**: `0.10.14`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/lu-zero/cargo-c@0.10.14 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
