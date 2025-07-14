@@ -3,7 +3,7 @@
  *
  * @domain `kubebuilder.io`
  * @programs `kubebuilder`
- * @version `4.6.0` (18 versions available)
+ * @version `4.7.0` (19 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kubebuilder`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "kubebuilder"
  * console.log(pkg.description) // "Kubebuilder - SDK for building Kubernetes APIs ..."
  * console.log(pkg.programs)    // ["kubebuilder"]
- * console.log(pkg.versions[0]) // "4.6.0" (latest)
+ * console.log(pkg.versions[0]) // "4.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kubebuilder-io.md
@@ -62,6 +62,7 @@ export const kubebuilderPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.7.0',
     '4.6.0',
     '4.5.2',
     '4.5.1',
