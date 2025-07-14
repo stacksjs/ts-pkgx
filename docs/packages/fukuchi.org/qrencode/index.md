@@ -1,6 +1,6 @@
 # qrencode
 
-> A fast and compact QR Code encoding library
+> Package from pantry: fukuchi.org/qrencode
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install qrencode
+launchpad install fukuchi.org/qrencode
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `qrencode`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `4.1.1`
-
-</details>
-
-**Latest Version**: `4.1.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) qrencode -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

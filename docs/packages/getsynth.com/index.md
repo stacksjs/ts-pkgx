@@ -1,11 +1,11 @@
-# synth
+# getsynth.com
 
-> The Declarative Data Generator
+> Package from pantry: getsynth.com
 
 ## Package Information
 
 - **Domain**: `getsynth.com`
-- **Name**: `synth`
+- **Name**: `getsynth.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getsynth.com/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install synth
+launchpad install getsynth.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `synth`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.6.9`
-
-</details>
-
-**Latest Version**: `0.6.9`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) synth -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) synth -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.synth
+const pkg = pantry['getsynth.com']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

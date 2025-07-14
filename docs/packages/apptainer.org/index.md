@@ -54,7 +54,7 @@ This package depends on:
 
 These packages work well with apptainer.org:
 
-- [`github.com/plougher/squashfs-tools`](../github.com/plougher/squashfs-tools.md) - tools to create and extract Squashfs filesystems
+- [`github.com/plougher/squashfs-tools`](../github.com/plougher/squashfs-tools.md) - Package from pantry: github.com/plougher/squashfs-tools
 
 ## Usage Examples
 

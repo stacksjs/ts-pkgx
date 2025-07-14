@@ -1,11 +1,11 @@
-# dy
+# dynein
 
-> DynamoDB CLI written in Rust.
+> Package from pantry: github.com/awslabs/dynein
 
 ## Package Information
 
 - **Domain**: `github.com/awslabs/dynein`
-- **Name**: `dy`
+- **Name**: `dynein`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/awslabs/dynein/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install dy
+launchpad install github.com/awslabs/dynein
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `dy`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.3.0`, `0.2.1`
-
-</details>
-
-**Latest Version**: `0.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) dy -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -52,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.dy
+const pkg = pantry.dynein
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

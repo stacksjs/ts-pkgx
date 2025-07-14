@@ -1,10 +1,7 @@
 /**
- * **github.com/10gic/vanitygen-plusplus** - A vanity address generator for BTC, ETH, LTC, TRX and 100+ more crypto currencies.
+ * **vanitygen-plusplus** - Package from pantry: github.com/10gic/vanitygen-plusplus
  *
  * @domain `github.com/10gic/vanitygen-plusplus`
- * @programs `vanitygen++`, `keyconv`, `oclvanitygen++`, `oclvanityminer`
- * @version `0.2.0` (1 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/10gic/vanitygen-plusplus`
  * @dependencies `openssl.org^1.1`, `curl.se^8`, `pcre.org^8`
@@ -14,10 +11,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcom10gicvanitygenplusplus
- * console.log(pkg.name)        // "github.com/10gic/vanitygen-plusplus"
- * console.log(pkg.description) // "A vanity address generator for BTC, ETH, LTC, T..."
- * console.log(pkg.programs)    // ["vanitygen++", "keyconv", ...]
- * console.log(pkg.versions[0]) // "0.2.0" (latest)
+ * console.log(pkg.name)        // "vanitygen-plusplus"
+ * console.log(pkg.description) // "Package from pantry: github.com/10gic/vanitygen..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/10gic/vanitygen-plusplus.md
@@ -27,7 +22,7 @@ export const githubcom10gicvanitygenplusplusPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/10gic/vanitygen-plusplus' as const,
+  name: 'vanitygen-plusplus' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,25 +30,15 @@ export const githubcom10gicvanitygenplusplusPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A vanity address generator for BTC, ETH, LTC, TRX and 100+ more crypto currencies.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/10gic/vanitygen-plusplus/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/10gic/vanitygen-plusplus' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/10gic/vanitygen-plusplus' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'vanitygen++',
-    'keyconv',
-    'oclvanitygen++',
-    'oclvanityminer',
-  ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/10gic/vanitygen-plusplus -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/10gic/vanitygen-plusplus' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,16 +49,10 @@ export const githubcom10gicvanitygenplusplusPackage = {
     'curl.se^8',
     'pcre.org^8',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.2.0',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/10gic/vanitygen-plusplus -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/10gic/vanitygen-plusplus' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/10gic/vanitygen-plusplus/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type Githubcom10gicvanitygenplusplusPackage = typeof githubcom10gicvanitygenplusplusPackage

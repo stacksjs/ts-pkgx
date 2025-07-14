@@ -1,6 +1,6 @@
 # k3sup
 
-> Utility to create k3s clusters on any local or remote VM
+> Package from pantry: github.com/alexellis/k3sup
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install k3sup
+launchpad install github.com/alexellis/k3sup
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `k3sup`
-
-## Available Versions
-
-<details>
-<summary>Show all 9 versions</summary>
-
-- `0.13.10`, `0.13.9`, `0.13.8`, `0.13.6`, `0.13.5`
-- `0.13.4`, `0.13.3`, `0.13.2`, `0.13.1`
-
-</details>
-
-**Latest Version**: `0.13.10`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) k3sup -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

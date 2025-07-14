@@ -1,11 +1,11 @@
-# mergiraf
+# mergiraf.org
 
-> Syntax-aware git merge driver
+> Package from pantry: mergiraf.org
 
 ## Package Information
 
 - **Domain**: `mergiraf.org`
-- **Name**: `mergiraf`
+- **Name**: `mergiraf.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mergiraf.org/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install mergiraf
+launchpad install mergiraf.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mergiraf`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.12.1`, `0.12.0`, `0.11.0`, `0.10.0`
-
-</details>
-
-**Latest Version**: `0.12.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) mergiraf -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) mergiraf -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.mergiraf
+const pkg = pantry['mergiraf.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

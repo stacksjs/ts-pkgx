@@ -28,9 +28,9 @@ Open Source implementation of advanced blockchain features extending the Bitcoin
 
 ### [getfoundry.sh](../packages/getfoundry.sh/index.md)
 
-Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.
+Package from pantry: getfoundry.sh
 
-**Programs**: forge, anvil, cast, chisel
+**Programs**: None specified
 
 **Install**: `launchpad install getfoundry.sh`
 
@@ -38,21 +38,21 @@ Foundry is a blazing fast, portable and modular toolkit for Ethereum application
 
 ### [ghostscript.com](../packages/ghostscript.com/index.md)
 
-This is purely for downloads, please check the website for full information
+Package from pantry: ghostscript.com
 
-**Programs**: dvipdf, eps2eps, gpcl6, gpcl6c, gpdlc, gs, gsbj, gsc, gsdj, gsdj500, gslj, gslp, gsnd, gsx, gxps, gxpsc, lprsetup.sh, pdf2dsc, pdf2ps, pf2afm, pfbtopfa, pphs, printafm, ps2ascii, ps2epsi, ps2pdf, ps2pdf12, ps2pdf13, ps2pdf14, ps2pdfwr, ps2ps, ps2ps2, unix-lpr.sh
+**Programs**: None specified
 
 **Install**: `launchpad install ghostscript.com`
 
 ---
 
-### [solana.com](../packages/solana.com/index.md) (solana)
+### [solana.com](../packages/solana.com/index.md)
 
-Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces.
+Package from pantry: solana.com
 
-**Programs**: solana, solana-keygen, solana-bench-streamer, solana-faucet, solana-keygen, solana-log-analyzer, solana-net-shaper, solana-stake-accounts, solana-tokens, solana-watchtower
+**Programs**: None specified
 
-**Install**: `launchpad install solana`
+**Install**: `launchpad install solana.com`
 
 ---
 

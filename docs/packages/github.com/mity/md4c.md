@@ -1,11 +1,11 @@
-# md2html
+# md4c
 
-> C Markdown parser. Fast. SAX-like interface. Compliant to CommonMark specification.
+> Package from pantry: github.com/mity/md4c
 
 ## Package Information
 
 - **Domain**: `github.com/mity/md4c`
-- **Name**: `md2html`
+- **Name**: `md4c`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mity/md4c/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install md2html
+launchpad install github.com/mity/md4c
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `md2html`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.5.2`, `0.5.1`, `0.5.0`, `0.4.8`
-
-</details>
-
-**Latest Version**: `0.5.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) md2html -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) md2html -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.md2html
+const pkg = pantry.md4c
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

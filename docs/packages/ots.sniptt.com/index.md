@@ -1,11 +1,11 @@
-# ots
+# ots.sniptt.com
 
-> 🔐 Share end-to-end encrypted secrets with others via a one-time URL
+> Package from pantry: ots.sniptt.com
 
 ## Package Information
 
 - **Domain**: `ots.sniptt.com`
-- **Name**: `ots`
+- **Name**: `ots.sniptt.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ots.sniptt.com/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ots
+launchpad install ots.sniptt.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ots`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `0.3.1`, `0.3.0`, `0.2.0`
-
-</details>
-
-**Latest Version**: `0.3.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ots -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) ots -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.ots
+const pkg = pantry['ots.sniptt.com']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

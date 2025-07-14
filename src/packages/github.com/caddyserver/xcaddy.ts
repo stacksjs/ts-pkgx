@@ -1,34 +1,24 @@
 /**
- * **xcaddy** - Build Caddy with plugins
+ * **xcaddy** - Package from pantry: github.com/caddyserver/xcaddy
  *
  * @domain `github.com/caddyserver/xcaddy`
- * @programs `xcaddy`
- * @version `0.4.4` (5 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install xcaddy`
- * @name `xcaddy`
+ * @install `launchpad install github.com/caddyserver/xcaddy`
  * @dependencies `go.dev^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.xcaddy
- * // Or access via domain
- * const samePkg = pantry.githubcomcaddyserverxcaddy
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomcaddyserverxcaddy
  * console.log(pkg.name)        // "xcaddy"
- * console.log(pkg.description) // "Build Caddy with plugins"
- * console.log(pkg.programs)    // ["xcaddy"]
- * console.log(pkg.versions[0]) // "0.4.4" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/caddyserver/xcaddy"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/caddyserver/xcaddy.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xcaddyPackage = {
+export const githubcomcaddyserverxcaddyPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const xcaddyPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Build Caddy with plugins' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/caddyserver/xcaddy/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/caddyserver/xcaddy' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install xcaddy' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'xcaddy',
-  ] as const,
+  installCommand: 'launchpad install github.com/caddyserver/xcaddy' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/caddyserver/xcaddy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/caddyserver/xcaddy' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,24 +47,10 @@ export const xcaddyPackage = {
   dependencies: [
     'go.dev^1.21',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.4.4',
-    '0.4.2',
-    '0.4.1',
-    '0.4.0',
-    '0.3.5',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xcaddy -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install xcaddy' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/caddyserver/xcaddy/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type XcaddyPackage = typeof xcaddyPackage
+export type GithubcomcaddyserverxcaddyPackage = typeof githubcomcaddyserverxcaddyPackage

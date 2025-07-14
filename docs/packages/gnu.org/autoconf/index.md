@@ -1,11 +1,11 @@
-# gnu.org/autoconf
+# autoconf
 
-> Automatic configure script builder
+> Package from pantry: gnu.org/autoconf
 
 ## Package Information
 
 - **Domain**: `gnu.org/autoconf`
-- **Name**: `gnu.org/autoconf`
+- **Name**: `autoconf`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/autoconf/package.yml)
 
@@ -20,31 +20,7 @@ launchpad install gnu.org/autoconf
 
 This package provides the following executable programs:
 
-- `autoconf`
-- `autoheader`
-- `autom4te`
-- `autoreconf`
-- `autoscan`
-- `autoupdate`
-- `ifnames`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `2.72.0`, `2.71.0`
-
-</details>
-
-**Latest Version**: `2.72.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/autoconf@2.72.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -59,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/autoconf']
+const pkg = pantry.autoconf
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

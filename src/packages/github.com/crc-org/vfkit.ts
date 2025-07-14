@@ -1,32 +1,23 @@
 /**
- * **vfkit** - pkgx package
+ * **vfkit** - Package from pantry: github.com/crc-org/vfkit
  *
  * @domain `github.com/crc-org/vfkit`
- * @programs `vfkit`
- * @version `0.6.1` (3 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install vfkit`
- * @name `vfkit`
+ * @install `launchpad install github.com/crc-org/vfkit`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.vfkit
- * // Or access via domain
- * const samePkg = pantry.githubcomcrcorgvfkit
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomcrcorgvfkit
  * console.log(pkg.name)        // "vfkit"
- * console.log(pkg.programs)    // ["vfkit"]
- * console.log(pkg.versions[0]) // "0.6.1" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/crc-org/vfkit"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/crc-org/vfkit.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const vfkitPackage = {
+export const githubcomcrcorgvfkitPackage = {
   /**
    * The display name of this package.
    */
@@ -38,40 +29,21 @@ export const vfkitPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/crc-org/vfkit/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/crc-org/vfkit' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install vfkit' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'vfkit',
-  ] as const,
+  installCommand: 'launchpad install github.com/crc-org/vfkit' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/crc-org/vfkit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/crc-org/vfkit' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.6.1',
-    '0.6.0',
-    '0.5.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vfkit -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install vfkit' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/crc-org/vfkit/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type VfkitPackage = typeof vfkitPackage
+export type GithubcomcrcorgvfkitPackage = typeof githubcomcrcorgvfkitPackage

@@ -1,6 +1,6 @@
 # mactop
 
-> Apple Silicon Monitor Top written in Golang
+> Package from pantry: github.com/context-labs/mactop
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install mactop
+launchpad install github.com/context-labs/mactop
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mactop`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `0.2.3`, `0.2.2`, `0.2.1`, `0.2.0`, `0.1.9`
-- `0.1.8`, `0.1.7`
-
-</details>
-
-**Latest Version**: `0.2.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) mactop -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

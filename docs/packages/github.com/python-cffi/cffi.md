@@ -1,11 +1,11 @@
-# github.com/python-cffi/cffi
+# cffi
 
-> A Foreign Function Interface package for calling C libraries from Python.
+> Package from pantry: github.com/python-cffi/cffi
 
 ## Package Information
 
 - **Domain**: `github.com/python-cffi/cffi`
-- **Name**: `github.com/python-cffi/cffi`
+- **Name**: `cffi`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/python-cffi/cffi/package.yml)
 
@@ -22,24 +22,6 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `1.17.1`, `1.17.0`, `1.16.0`
-
-</details>
-
-**Latest Version**: `1.17.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/python-cffi/cffi@1.17.1 -- $SHELL -i
-```
-
 ## Dependencies
 
 This package depends on:
@@ -54,7 +36,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/python-cffi/cffi']
+const pkg = pantry.cffi
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

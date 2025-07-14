@@ -1,6 +1,6 @@
 # marionette
 
-> Something like puppet, for the localhost only.
+> Package from pantry: github.com/skx/marionette
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install marionette
+launchpad install github.com/skx/marionette
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `marionette`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.19.0`, `0.18.0`
-
-</details>
-
-**Latest Version**: `0.19.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) marionette -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # invoice
 
-> Command line invoice generator
+> Package from pantry: github.com/maaslalani/invoice
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install invoice
+launchpad install github.com/maaslalani/invoice
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `invoice`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.1.0`
-
-</details>
-
-**Latest Version**: `0.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) invoice -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

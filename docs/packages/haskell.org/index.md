@@ -1,6 +1,6 @@
 # haskell.org
 
-> Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).
+> Package from pantry: haskell.org
 
 ## Package Information
 
@@ -20,55 +20,7 @@ launchpad install haskell.org
 
 This package provides the following executable programs:
 
-- `ghc`
-- `ghc-9.12`
-- `ghc-9.12.2`
-- `ghc-pkg`
-- `ghc-pkg-9.12`
-- `ghc-pkg-9.12.2`
-- `ghci`
-- `ghci-9.12`
-- `ghci-9.12.2`
-- `ghcup`
-- `haddock`
-- `haddock-9.12`
-- `haddock-9.12.2`
-- `hp2ps`
-- `hp2ps-9.12`
-- `hp2ps-9.12.2`
-- `hpc`
-- `hpc-9.12`
-- `hpc-9.12.2`
-- `hsc2hs`
-- `hsc2hs-9.12`
-- `hsc2hs-9.12.2`
-- `runghc`
-- `runghc-9.12`
-- `runghc-9.12.2`
-- `runhaskell`
-- `runhaskell-9.12`
-- `runhaskell-9.12.2`
-
-## Available Versions
-
-<details>
-<summary>Show all 19 versions</summary>
-
-- `9.12.2`, `9.12.1`, `9.10.2`, `9.10.1`, `9.8.4`
-- `9.8.2`, `9.8.1`, `9.6.7`, `9.6.6`, `9.6.5`
-- `9.6.4`, `9.6.3`, `9.6.2`, `9.4.8`, `9.4.7`
-- `9.4.4`, `9.2.8`, `9.0.2`, `8.10.7`
-
-</details>
-
-**Latest Version**: `9.12.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +haskell.org@9.12.2 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

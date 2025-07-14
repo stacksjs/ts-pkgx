@@ -1,11 +1,11 @@
-# wasmer
+# wasmer.io
 
-> 🚀 Fast, secure, lightweight containers based on WebAssembly
+> Package from pantry: wasmer.io
 
 ## Package Information
 
 - **Domain**: `wasmer.io`
-- **Name**: `wasmer`
+- **Name**: `wasmer.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wasmer.io/package.yml)
 
@@ -13,36 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install wasmer
+launchpad install wasmer.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `wasmer`
-
-## Available Versions
-
-<details>
-<summary>Show all 23 versions</summary>
-
-- `6.0.1`, `6.0.0`, `5.0.4`, `5.0.3`, `5.0.2`
-- `5.0.1`, `5.0.0`, `4.4.0`, `4.3.7`, `4.3.6`
-- `4.3.5`, `4.3.4`, `4.3.3`, `4.3.2`, `4.3.1`
-- `4.3.0`, `4.2.8`, `4.2.7`, `4.2.6`, `4.2.5`
-- `4.2.4`, `4.2.3`, `4.2.2`
-
-</details>
-
-**Latest Version**: `6.0.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) wasmer -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -50,7 +28,7 @@ sh <(curl https://pkgx.sh) wasmer -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.wasmer
+const pkg = pantry['wasmer.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
