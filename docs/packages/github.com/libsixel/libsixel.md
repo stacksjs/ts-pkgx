@@ -1,11 +1,11 @@
-# libsixel
+# github.com/libsixel/libsixel
 
-> Package from pantry: github.com/libsixel/libsixel
+> Mirror of "sixel" original version (kmiya's sixel). The origin of libsixel.
 
 ## Package Information
 
 - **Domain**: `github.com/libsixel/libsixel`
-- **Name**: `libsixel`
+- **Name**: `github.com/libsixel/libsixel`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libsixel/libsixel/package.yml)
 
@@ -20,7 +20,27 @@ launchpad install github.com/libsixel/libsixel
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `img2sixel`
+- `sixel2png`
+- `libsixel-config`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.10.3`
+
+</details>
+
+**Latest Version**: `1.10.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/libsixel/libsixel@1.10.3 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -35,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libsixel
+const pkg = pantry['github.com/libsixel/libsixel']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

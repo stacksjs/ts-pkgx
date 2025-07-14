@@ -1,11 +1,11 @@
-# guile
+# guil
 
-> Package from pantry: gnu.org/guile
+> GNU Ubiquitous Intelligent Language for Extensions
 
 ## Package Information
 
 - **Domain**: `gnu.org/guile`
-- **Name**: `guile`
+- **Name**: `guil`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/guile/package.yml)
 
@@ -13,14 +13,36 @@
 
 ```bash
 # Install with launchpad
-launchpad install gnu.org/guile
+launchpad install guil
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `guild`
+- `guile`
+- `guile-config`
+- `guile-snarf`
+- `guile-tools`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `3.0.10`, `3.0.9`
+
+</details>
+
+**Latest Version**: `3.0.10`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +gnu.org/guile@3.0.10 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -42,7 +64,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.guile
+const pkg = pantry.guil
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

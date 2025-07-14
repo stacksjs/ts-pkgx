@@ -1,28 +1,39 @@
 /**
- * **eget** - Package from pantry: github.com/zyedidia/eget
+ * **eget** - Easily install prebuilt binaries from GitHub.
  *
  * @domain `github.com/zyedidia/eget`
+ * @programs `eget`
+ * @version `1.3.4` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/zyedidia/eget`
+ * @install `launchpad install eget`
+ * @name `Eget`
+ * @aliases `eget`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomzyedidiaeget
- * console.log(pkg.name)        // "eget"
- * console.log(pkg.description) // "Package from pantry: github.com/zyedidia/eget"
+ * // Access via alias (recommended)
+ * const pkg = pantry.eget
+ * // Or access via domain
+ * const samePkg = pantry.githubcomzyedidiaeget
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "Eget"
+ * console.log(pkg.description) // "Easily install prebuilt binaries from GitHub."
+ * console.log(pkg.programs)    // ["eget"]
+ * console.log(pkg.versions[0]) // "1.3.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/zyedidia/eget.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomzyedidiaegetPackage = {
+export const egetPackage = {
   /**
    * The display name of this package.
    */
-  name: 'eget' as const,
+  name: 'Eget' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +41,22 @@ export const githubcomzyedidiaegetPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/zyedidia/eget' as const,
+  description: 'Easily install prebuilt binaries from GitHub.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zyedidia/eget/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/zyedidia/eget' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/zyedidia/eget' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/zyedidia/eget -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/zyedidia/eget' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install eget' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'eget',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +65,23 @@ export const githubcomzyedidiaegetPackage = {
   dependencies: [
     'curl.se/ca-certs',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zyedidia/eget/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.3.4',
+    '1.3.3',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [
+    'eget',
+  ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) eget -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install eget' as const,
 }
 
-export type GithubcomzyedidiaegetPackage = typeof githubcomzyedidiaegetPackage
+export type EgetPackage = typeof egetPackage

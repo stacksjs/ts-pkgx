@@ -1,24 +1,34 @@
 /**
- * **epstool** - Package from pantry: ghostgum.com.au/epstool
+ * **epstool** - Edit preview images and fix bounding boxes in EPS files
  *
  * @domain `ghostgum.com.au/epstool`
+ * @programs `epstool`
+ * @version `3.9.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install ghostgum.com.au/epstool`
+ * @install `launchpad install epstool`
+ * @name `epstool`
  * @dependencies `ghostscript.com`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.ghostgumcomauepstool
+ * // Access the package
+ * const pkg = pantry.epstool
+ * // Or access via domain
+ * const samePkg = pantry.ghostgumcomauepstool
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "epstool"
- * console.log(pkg.description) // "Package from pantry: ghostgum.com.au/epstool"
+ * console.log(pkg.description) // "Edit preview images and fix bounding boxes in E..."
+ * console.log(pkg.programs)    // ["epstool"]
+ * console.log(pkg.versions[0]) // "3.9.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ghostgum-com-au/epstool.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ghostgumcomauepstoolPackage = {
+export const epstoolPackage = {
   /**
    * The display name of this package.
    */
@@ -30,15 +40,22 @@ export const ghostgumcomauepstoolPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: ghostgum.com.au/epstool' as const,
+  description: 'Edit preview images and fix bounding boxes in EPS files' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ghostgum.com.au/epstool/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ghostgum.com.au/epstool' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ghostgum.com.au/epstool -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ghostgum.com.au/epstool' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install epstool' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'epstool',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,20 @@ export const ghostgumcomauepstoolPackage = {
   dependencies: [
     'ghostscript.com',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ghostgum.com.au/epstool/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.9.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) epstool -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install epstool' as const,
 }
 
-export type GhostgumcomauepstoolPackage = typeof ghostgumcomauepstoolPackage
+export type EpstoolPackage = typeof epstoolPackage

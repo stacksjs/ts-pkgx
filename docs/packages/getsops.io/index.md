@@ -1,11 +1,11 @@
-# getsops.io
+# sops
 
-> Package from pantry: getsops.io
+> Simple and flexible tool for managing secrets
 
 ## Package Information
 
 - **Domain**: `getsops.io`
-- **Name**: `getsops.io`
+- **Name**: `sops`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getsops.io/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install getsops.io
+launchpad install sops
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `sops`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `3.10.2`, `3.10.1`, `3.10.0`, `3.9.4`, `3.9.3`
+- `3.9.2`, `3.9.1`, `3.9.0`, `3.8.1`
+
+</details>
+
+**Latest Version**: `3.10.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) sops -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +47,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['getsops.io']
+const pkg = pantry.sops
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

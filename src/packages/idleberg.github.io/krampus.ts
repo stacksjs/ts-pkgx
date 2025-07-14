@@ -1,23 +1,33 @@
 /**
- * **krampus** - Package from pantry: idleberg.github.io/krampus
+ * **krampus** - Command-line tool to kill one or more processes by port number
  *
  * @domain `idleberg.github.io/krampus`
+ * @programs `krampus`
+ * @version `0.2.1` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install idleberg.github.io/krampus`
+ * @install `launchpad install krampus`
+ * @name `krampus`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.idleberggithubiokrampus
+ * // Access the package
+ * const pkg = pantry.krampus
+ * // Or access via domain
+ * const samePkg = pantry.idleberggithubiokrampus
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "krampus"
- * console.log(pkg.description) // "Package from pantry: idleberg.github.io/krampus"
+ * console.log(pkg.description) // "Command-line tool to kill one or more processes..."
+ * console.log(pkg.programs)    // ["krampus"]
+ * console.log(pkg.versions[0]) // "0.2.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/idleberg-github-io/krampus.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const idleberggithubiokrampusPackage = {
+export const krampusPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,39 @@ export const idleberggithubiokrampusPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: idleberg.github.io/krampus' as const,
+  description: 'Command-line tool to kill one or more processes by port number' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/idleberg.github.io/krampus/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install idleberg.github.io/krampus' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +idleberg.github.io/krampus -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install idleberg.github.io/krampus' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install krampus' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'krampus',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/idleberg.github.io/krampus/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.2.1',
+    '0.2.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) krampus -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install krampus' as const,
 }
 
-export type IdleberggithubiokrampusPackage = typeof idleberggithubiokrampusPackage
+export type KrampusPackage = typeof krampusPackage

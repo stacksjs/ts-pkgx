@@ -1,11 +1,11 @@
-# seaweedfs.com
+# SeaweedFS
 
-> Package from pantry: seaweedfs.com
+> SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for billions of files! Blob store has O(1) disk seek, cloud tiering. Filer supports Cloud Drive, cross-DC active-active replication, Kubernetes, POSIX FUSE mount, S3 API, S3 Gateway, Hadoop, WebDAV, encryption, Erasure Coding.
 
 ## Package Information
 
 - **Domain**: `seaweedfs.com`
-- **Name**: `seaweedfs.com`
+- **Name**: `SeaweedFS`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/seaweedfs.com/package.yml)
 
@@ -13,14 +13,41 @@
 
 ```bash
 # Install with launchpad
-launchpad install seaweedfs.com
+launchpad install weed
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `weed`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `weed`
+
+## Available Versions
+
+<details>
+<summary>Show all 16 versions</summary>
+
+- `3.94.0`, `3.93.0`, `3.92.0`, `3.91.0`, `3.90.0`
+- `3.89.0`, `3.88.0`, `3.87.0`, `3.86.0`, `3.85.0`
+- `3.84.0`, `3.83.0`, `3.82.0`, `3.81.0`, `3.80.0`
+- `3.79.0`
+
+</details>
+
+**Latest Version**: `3.94.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) weed -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +55,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['seaweedfs.com']
+const pkg = pantry.weed
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

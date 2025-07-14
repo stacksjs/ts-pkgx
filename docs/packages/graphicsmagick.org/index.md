@@ -1,11 +1,11 @@
-# graphicsmagick.org
+# gm
 
-> Package from pantry: graphicsmagick.org
+> Image processing tools collection
 
 ## Package Information
 
 - **Domain**: `graphicsmagick.org`
-- **Name**: `graphicsmagick.org`
+- **Name**: `gm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/graphicsmagick.org/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install graphicsmagick.org
+launchpad install gm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gm`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `1.3.45`, `1.3.44`, `1.3.43`, `1.3.42`, `1.3.40`
+
+</details>
+
+**Latest Version**: `1.3.45`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) gm -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -45,7 +63,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['graphicsmagick.org']
+const pkg = pantry.gm
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

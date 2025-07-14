@@ -1,6 +1,6 @@
 # ladspa.org
 
-> Package from pantry: ladspa.org
+> Linux Audio Developer's Simple Plugin
 
 ## Package Information
 
@@ -20,7 +20,27 @@ launchpad install ladspa.org
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `analyseplugin`
+- `applyplugin`
+- `listplugins`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.17.0`
+
+</details>
+
+**Latest Version**: `1.17.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +ladspa.org@1.17.0 -- $SHELL -i
+```
 
 ## Dependencies
 

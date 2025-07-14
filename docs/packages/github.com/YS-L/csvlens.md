@@ -1,6 +1,6 @@
 # csvlens
 
-> Package from pantry: github.com/YS-L/csvlens
+> Command line csv viewer
 
 ## Package Information
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/YS-L/csvlens
+launchpad install csvlens
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `csvlens`
+
+## Available Versions
+
+<details>
+<summary>Show all 12 versions</summary>
+
+- `0.13.0`, `0.12.0`, `0.11.0`, `0.10.1`, `0.10.0`
+- `0.9.1`, `0.9.0`, `0.8.1`, `0.8.0`, `0.7.0`
+- `0.6.0`, `0.5.1`
+
+</details>
+
+**Latest Version**: `0.13.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) csvlens -- $SHELL -i
+```
 
 ## Usage Examples
 

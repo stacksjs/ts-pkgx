@@ -1,6 +1,6 @@
 # optipng
 
-> Package from pantry: sf.net/optipng
+> PNG file optimizer
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install sf.net/optipng
+launchpad install optipng
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `optipng`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `7.9.1`, `0.7.8`, `0.7.7`
+
+</details>
+
+**Latest Version**: `7.9.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) optipng -- $SHELL -i
+```
 
 ## Dependencies
 

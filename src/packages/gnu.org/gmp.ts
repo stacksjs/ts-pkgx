@@ -1,7 +1,9 @@
 /**
- * **gmp** - Package from pantry: gnu.org/gmp
+ * **gnu.org/gmp** - pkgx package
  *
  * @domain `gnu.org/gmp`
+ * @version `6.3.0` (2 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/gmp`
  *
@@ -10,8 +12,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorggmp
- * console.log(pkg.name)        // "gmp"
- * console.log(pkg.description) // "Package from pantry: gnu.org/gmp"
+ * console.log(pkg.name)        // "gnu.org/gmp"
+ * console.log(pkg.versions[0]) // "6.3.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/gmp.md
@@ -21,7 +23,7 @@ export const gnuorggmpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gmp' as const,
+  name: 'gnu.org/gmp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -29,21 +31,29 @@ export const gnuorggmpPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: gnu.org/gmp' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gmp/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnu.org/gmp' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gmp -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/gmp' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gmp/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '6.3.0',
+    '6.2.1',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gmp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/gmp' as const,
 }
 
 export type GnuorggmpPackage = typeof gnuorggmpPackage

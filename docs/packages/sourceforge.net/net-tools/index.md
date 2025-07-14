@@ -1,6 +1,6 @@
 # net-tools
 
-> Package from pantry: sourceforge.net/net-tools
+> Linux networking base tools
 
 ## Package Information
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install sourceforge.net/net-tools
+launchpad install net-tools
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `hostname`
+- `ifconfig`
+- `netstat`
+- `route`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.10.0`
+
+</details>
+
+**Latest Version**: `2.10.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +sourceforge.net/net-tools@2.10.0 -- $SHELL -i
+```
 
 ## Usage Examples
 
