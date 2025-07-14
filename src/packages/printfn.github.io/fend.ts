@@ -3,7 +3,7 @@
  *
  * @domain `printfn.github.io/fend`
  * @programs `fend`
- * @version `1.5.6` (18 versions available)
+ * @version `1.5.7` (19 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fend`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "fend"
  * console.log(pkg.description) // "Arbitrary-precision unit-aware calculator"
  * console.log(pkg.programs)    // ["fend"]
- * console.log(pkg.versions[0]) // "1.5.6" (latest)
+ * console.log(pkg.versions[0]) // "1.5.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/printfn-github-io/fend.md
@@ -69,6 +69,7 @@ export const fendPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.5.7',
     '1.5.6',
     '1.5.5',
     '1.5.3',
