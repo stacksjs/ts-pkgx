@@ -1,6 +1,6 @@
 # mypy-lang.org
 
-> Package from pantry: mypy-lang.org
+> Experimental optional static type checker for Python
 
 ## Package Information
 
@@ -20,7 +20,32 @@ launchpad install mypy-lang.org
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mypy`
+- `mypyc`
+- `dmypy`
+
+## Available Versions
+
+<details>
+<summary>Show all 26 versions</summary>
+
+- `1.17.0`, `1.16.1`, `1.16.0`, `1.15.0`, `1.14.1`
+- `1.14.0`, `1.13.0`, `1.12.1`, `1.12.0`, `1.11.2`
+- `1.11.1`, `1.11.0`, `1.10.1`, `1.10.0`, `1.9.0`
+- `1.8.0`, `1.7.1`, `1.7.0`, `1.6.1`, `1.6.0`
+- `1.5.1`, `1.5.0`, `1.4.1`, `1.4.0`, `1.3.0`
+- `1.2.0`
+
+</details>
+
+**Latest Version**: `1.17.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +mypy-lang.org@1.17.0 -- $SHELL -i
+```
 
 ## Dependencies
 

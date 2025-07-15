@@ -1,11 +1,11 @@
-# micro
+# micromamba
 
-> Package from pantry: github.com/mamba-org/micro
+> The Fast Cross-Platform Package Manager
 
 ## Package Information
 
 - **Domain**: `github.com/mamba-org/micro`
-- **Name**: `micro`
+- **Name**: `micromamba`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mamba-org/micro/package.yml)
 
@@ -13,14 +13,36 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/mamba-org/micro
+launchpad install micromamba
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `micromamba`
+
+## Available Versions
+
+<details>
+<summary>Show all 25 versions</summary>
+
+- `2.3.0`, `2.2.0`, `2.1.1`, `2.1.0`, `2.0.8`
+- `2.0.7`, `2.0.6`, `2.0.5`, `2.0.4`, `2.0.3`
+- `2.0.2`, `2.0.1`, `2.0.0`, `1.5.12`, `1.5.11`
+- `1.5.10`, `1.5.9`, `1.5.8`, `1.5.7`, `1.5.6`
+- `1.5.5`, `1.5.3`, `1.5.1`, `1.5.0`, `1.4.9`
+
+</details>
+
+**Latest Version**: `2.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) micromamba -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.micro
+const pkg = pantry.micromamba
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

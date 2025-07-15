@@ -1,6 +1,6 @@
 # git-sizer
 
-> Package from pantry: github.com/github/git-sizer
+> Compute various size metrics for a Git repository, flagging those that might cause problems
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/github/git-sizer
+launchpad install git-sizer
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `git-sizer`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.5.0`
+
+</details>
+
+**Latest Version**: `1.5.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) git-sizer -- $SHELL -i
+```
 
 ## Usage Examples
 

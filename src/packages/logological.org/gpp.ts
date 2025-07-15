@@ -1,23 +1,33 @@
 /**
- * **gpp** - Package from pantry: logological.org/gpp
+ * **gpp** - General-purpose preprocessor with customizable syntax
  *
  * @domain `logological.org/gpp`
+ * @programs `gpp`
+ * @version `2.28.0` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install logological.org/gpp`
+ * @install `launchpad install gpp`
+ * @name `gpp`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.logologicalorggpp
+ * // Access the package
+ * const pkg = pantry.gpp
+ * // Or access via domain
+ * const samePkg = pantry.logologicalorggpp
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "gpp"
- * console.log(pkg.description) // "Package from pantry: logological.org/gpp"
+ * console.log(pkg.description) // "General-purpose preprocessor with customizable ..."
+ * console.log(pkg.programs)    // ["gpp"]
+ * console.log(pkg.versions[0]) // "2.28.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/logological-org/gpp.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const logologicalorggppPackage = {
+export const gppPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,39 @@ export const logologicalorggppPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: logological.org/gpp' as const,
+  description: 'General-purpose preprocessor with customizable syntax' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/logological.org/gpp/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install logological.org/gpp' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +logological.org/gpp -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install logological.org/gpp' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install gpp' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'gpp',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/logological.org/gpp/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.28.0',
+    '2.27.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gpp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gpp' as const,
 }
 
-export type LogologicalorggppPackage = typeof logologicalorggppPackage
+export type GppPackage = typeof gppPackage

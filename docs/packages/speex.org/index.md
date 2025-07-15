@@ -1,11 +1,11 @@
-# speex.org
+# speexdec
 
-> Package from pantry: speex.org
+> Audio codec designed for speech
 
 ## Package Information
 
 - **Domain**: `speex.org`
-- **Name**: `speex.org`
+- **Name**: `speexdec`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/speex.org/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install speex.org
+launchpad install speexdec
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `speexdec`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.2.1`
+
+</details>
+
+**Latest Version**: `1.2.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) speexdec -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['speex.org']
+const pkg = pantry.speexdec
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

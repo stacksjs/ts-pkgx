@@ -1,6 +1,6 @@
 # swift-outdated
 
-> Package from pantry: github.com/kiliankoe/swift-outdated
+> A swift subcommand for displaying when your dependencies (SwiftPM or Xcode) are out of date
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/kiliankoe/swift-outdated
+launchpad install swift-outdated
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `swift-outdated`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `0.9.0`, `0.8.1`, `0.8.0`, `0.7.0`, `0.6.0`
+- `0.5.1`
+
+</details>
+
+**Latest Version**: `0.9.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) swift-outdated -- $SHELL -i
+```
 
 ## Usage Examples
 

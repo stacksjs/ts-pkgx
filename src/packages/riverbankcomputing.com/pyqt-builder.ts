@@ -1,28 +1,38 @@
 /**
- * **pyqt-builder** - Package from pantry: riverbankcomputing.com/pyqt-builder
+ * **pyqt-bundle** - The PyQt build system
  *
  * @domain `riverbankcomputing.com/pyqt-builder`
+ * @programs `pyqt-bundle`
+ * @version `1.15.4` (3 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install riverbankcomputing.com/pyqt-builder`
+ * @install `launchpad install pyqt-bundle`
+ * @name `pyqt-bundle`
  * @dependencies `python.org~3.11`, `riverbankcomputing.com/sip`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.riverbankcomputingcompyqtbuilder
- * console.log(pkg.name)        // "pyqt-builder"
- * console.log(pkg.description) // "Package from pantry: riverbankcomputing.com/pyq..."
+ * // Access the package
+ * const pkg = pantry.pyqtbundle
+ * // Or access via domain
+ * const samePkg = pantry.riverbankcomputingcompyqtbuilder
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "pyqt-bundle"
+ * console.log(pkg.description) // "The PyQt build system"
+ * console.log(pkg.programs)    // ["pyqt-bundle"]
+ * console.log(pkg.versions[0]) // "1.15.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/riverbankcomputing-com/pyqt-builder.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const riverbankcomputingcompyqtbuilderPackage = {
+export const pyqtbundlePackage = {
   /**
    * The display name of this package.
    */
-  name: 'pyqt-builder' as const,
+  name: 'pyqt-bundle' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +40,22 @@ export const riverbankcomputingcompyqtbuilderPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: riverbankcomputing.com/pyqt-builder' as const,
+  description: 'The PyQt build system' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/riverbankcomputing.com/pyqt-builder/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install riverbankcomputing.com/pyqt-builder' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +riverbankcomputing.com/pyqt-builder -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install riverbankcomputing.com/pyqt-builder' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install pyqt-bundle' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'pyqt-bundle',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -48,10 +65,22 @@ export const riverbankcomputingcompyqtbuilderPackage = {
     'python.org~3.11',
     'riverbankcomputing.com/sip',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/riverbankcomputing.com/pyqt-builder/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.15.4',
+    '1.15.3',
+    '1.15.2',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pyqt-bundle -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pyqt-bundle' as const,
 }
 
-export type RiverbankcomputingcompyqtbuilderPackage = typeof riverbankcomputingcompyqtbuilderPackage
+export type PyqtbundlePackage = typeof pyqtbundlePackage

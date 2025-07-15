@@ -1,28 +1,38 @@
 /**
- * **microplane** - Package from pantry: github.com/clever/microplane
+ * **mp** - A CLI tool to make git changes across many repos, especially useful with Microservices.
  *
  * @domain `github.com/clever/microplane`
+ * @programs `mp`
+ * @version `0.0.36` (3 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/clever/microplane`
+ * @install `launchpad install mp`
+ * @name `mp`
  * @dependencies `git-scm.org^2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomclevermicroplane
- * console.log(pkg.name)        // "microplane"
- * console.log(pkg.description) // "Package from pantry: github.com/clever/microplane"
+ * // Access the package
+ * const pkg = pantry.mp
+ * // Or access via domain
+ * const samePkg = pantry.githubcomclevermicroplane
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "mp"
+ * console.log(pkg.description) // "A CLI tool to make git changes across many repo..."
+ * console.log(pkg.programs)    // ["mp"]
+ * console.log(pkg.versions[0]) // "0.0.36" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/clever/microplane.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomclevermicroplanePackage = {
+export const mpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'microplane' as const,
+  name: 'mp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +40,22 @@ export const githubcomclevermicroplanePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/clever/microplane' as const,
+  description: 'A CLI tool to make git changes across many repos, especially useful with Microservices.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/clever/microplane/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/clever/microplane' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/clever/microplane -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/clever/microplane' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install mp' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'mp',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,22 @@ export const githubcomclevermicroplanePackage = {
   dependencies: [
     'git-scm.org^2',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/clever/microplane/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.0.36',
+    '0.0.35',
+    '0.0.34',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mp' as const,
 }
 
-export type GithubcomclevermicroplanePackage = typeof githubcomclevermicroplanePackage
+export type MpPackage = typeof mpPackage

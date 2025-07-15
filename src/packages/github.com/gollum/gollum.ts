@@ -1,24 +1,34 @@
 /**
- * **gollum** - Package from pantry: github.com/gollum/gollum
+ * **gollum** - An n:m message multiplexer written in Go
  *
  * @domain `github.com/gollum/gollum`
+ * @programs `gollum`
+ * @version `6.1.0` (4 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/gollum/gollum`
+ * @install `launchpad install gollum`
+ * @name `gollum`
  * @dependencies `ruby-lang.org^3.1`, `rubygems.org~3.3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomgollumgollum
+ * // Access the package
+ * const pkg = pantry.gollum
+ * // Or access via domain
+ * const samePkg = pantry.githubcomgollumgollum
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "gollum"
- * console.log(pkg.description) // "Package from pantry: github.com/gollum/gollum"
+ * console.log(pkg.description) // "An n:m message multiplexer written in Go"
+ * console.log(pkg.programs)    // ["gollum"]
+ * console.log(pkg.versions[0]) // "6.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/gollum/gollum.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgollumgollumPackage = {
+export const gollumPackage = {
   /**
    * The display name of this package.
    */
@@ -30,15 +40,22 @@ export const githubcomgollumgollumPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/gollum/gollum' as const,
+  description: 'An n:m message multiplexer written in Go' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/gollum/gollum/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/gollum/gollum' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/gollum/gollum -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/gollum/gollum' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install gollum' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'gollum',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -48,10 +65,23 @@ export const githubcomgollumgollumPackage = {
     'ruby-lang.org^3.1',
     'rubygems.org~3.3',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/gollum/gollum/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '6.1.0',
+    '6.0.1',
+    '6.0.0',
+    '5.3.2',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gollum -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gollum' as const,
 }
 
-export type GithubcomgollumgollumPackage = typeof githubcomgollumgollumPackage
+export type GollumPackage = typeof gollumPackage

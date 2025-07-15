@@ -1,11 +1,11 @@
-# internetarchive
+# ia
 
-> Package from pantry: github.com/jjjake/internetarchive
+> Python wrapper for the various Internet Archive APIs
 
 ## Package Information
 
 - **Domain**: `github.com/jjjake/internetarchive`
-- **Name**: `internetarchive`
+- **Name**: `ia`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jjjake/internetarchive/package.yml)
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/jjjake/internetarchive
+launchpad install ia
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ia`
+
+## Available Versions
+
+<details>
+<summary>Show all 11 versions</summary>
+
+- `5.4.0`, `5.3.0`, `5.2.1`, `5.1.0`, `5.0.5`
+- `5.0.3`, `5.0.0`, `4.1.0`, `4.0.1`, `3.7.0`
+- `3.4.0`
+
+</details>
+
+**Latest Version**: `5.4.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) ia -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -35,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.internetarchive
+const pkg = pantry.ia
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

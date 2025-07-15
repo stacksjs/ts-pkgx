@@ -1,6 +1,6 @@
 # Build Tools & Automation
 
-*7 packages in this category*
+*15 packages in this category*
 
 Packages related to build tools & automation.
 
@@ -26,53 +26,133 @@ package compiler and linker metadata toolkit
 
 ---
 
-### [github.com/moby/buildkit](../packages/github.com/moby/buildkit.md) (buildkit)
+### [github.com/bazelbuild/bazelisk](../packages/github.com/bazelbuild/bazelisk.md) (bazel)
 
-Package from pantry: github.com/moby/buildkit
+A user-friendly launcher for Bazel.
 
-**Programs**: None specified
+**Programs**: bazel, bazelisk
 
-**Install**: `launchpad install github.com/moby/buildkit`
+**Install**: `launchpad install bazel`
 
 ---
 
-### [gnu.org/autoconf](../packages/gnu.org/autoconf/index.md) (autoconf)
+### [github.com/bazelbuild/buildtools](../packages/github.com/bazelbuild/buildtools.md) (buildifier)
 
-Package from pantry: gnu.org/autoconf
+Format bazel BUILD files with a standard convention
 
-**Programs**: None specified
+**Programs**: buildifier
+
+**Install**: `launchpad install buildifier`
+
+---
+
+### [github.com/moby/buildkit](../packages/github.com/moby/buildkit.md) (buildkit, buildctl)
+
+concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit
+
+**Programs**: buildctl
+
+**Install**: `launchpad install buildctl`
+
+---
+
+### [gnu.org/autoconf](../packages/gnu.org/autoconf/index.md)
+
+Automatic configure script builder
+
+**Programs**: autoconf, autoheader, autom4te, autoreconf, autoscan, autoupdate, ifnames
 
 **Install**: `launchpad install gnu.org/autoconf`
 
 ---
 
-### [gnu.org/automake](../packages/gnu.org/automake/index.md) (automake)
+### [gnu.org/automake](../packages/gnu.org/automake/index.md)
 
-Package from pantry: gnu.org/automake
+Tool for generating GNU Standards-compliant Makefiles
 
-**Programs**: None specified
+**Programs**: aclocal, automake
 
 **Install**: `launchpad install gnu.org/automake`
 
 ---
 
-### [gnu.org/make](../packages/gnu.org/make/index.md) (make)
+### [gradle.org](../packages/gradle.org/index.md) (gradle)
 
-Package from pantry: gnu.org/make
+Open-source build automation tool based on the Groovy and Kotlin DSL
 
-**Programs**: None specified
+**Programs**: gradle
 
-**Install**: `launchpad install gnu.org/make`
+**Install**: `launchpad install gradle`
 
 ---
 
-### [pantsbuild.org/scie-pants](../packages/pantsbuild.org/scie-pants/index.md) (scie-pants)
+### [just.systems](../packages/just.systems/index.md) (just)
 
-Package from pantry: pantsbuild.org/scie-pants
+Handy way to save and run project-specific commands
 
-**Programs**: None specified
+**Programs**: just
 
-**Install**: `launchpad install pantsbuild.org/scie-pants`
+**Install**: `launchpad install just`
+
+---
+
+### [maven.apache.org](../packages/maven.apache.org/index.md) (mvn)
+
+Java-based project management
+
+**Programs**: mvn, mvnDebug, mvnyjp
+
+**Install**: `launchpad install mvn`
+
+---
+
+### [mesonbuild.com](../packages/mesonbuild.com/index.md) (meson)
+
+Fast and user friendly build system
+
+**Programs**: meson
+
+**Install**: `launchpad install meson`
+
+---
+
+### [ninja-build.org](../packages/ninja-build.org/index.md) (ninja)
+
+Small build system for use with gyp or CMake
+
+**Programs**: ninja
+
+**Install**: `launchpad install ninja`
+
+---
+
+### [pantsbuild.org/scie-pants](../packages/pantsbuild.org/scie-pants/index.md) (scie-pants, pants)
+
+Protects your Pants from the elements.
+
+**Programs**: pants
+
+**Install**: `launchpad install pants`
+
+---
+
+### [scons.org](../packages/scons.org/index.md) (scons)
+
+Substitute for classic 'make' tool with autoconf/automake functionality
+
+**Programs**: scons
+
+**Install**: `launchpad install scons`
+
+---
+
+### [taskfile.dev](../packages/taskfile.dev/index.md) (task)
+
+A task runner / simpler Make alternative written in Go
+
+**Programs**: task
+
+**Install**: `launchpad install task`
 
 ---
 

@@ -1,23 +1,33 @@
 /**
- * **starpls** - Package from pantry: github.com/withered-magic/starpls
+ * **starpls** - An LSP implementation for Starlark, the configuration language used by Bazel and Buck2.
  *
  * @domain `github.com/withered-magic/starpls`
+ * @programs `starpls`
+ * @version `0.1.21` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/withered-magic/starpls`
+ * @install `launchpad install starpls`
+ * @name `starpls`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomwitheredmagicstarpls
+ * // Access the package
+ * const pkg = pantry.starpls
+ * // Or access via domain
+ * const samePkg = pantry.githubcomwitheredmagicstarpls
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "starpls"
- * console.log(pkg.description) // "Package from pantry: github.com/withered-magic/..."
+ * console.log(pkg.description) // "An LSP implementation for Starlark, the configu..."
+ * console.log(pkg.programs)    // ["starpls"]
+ * console.log(pkg.versions[0]) // "0.1.21" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/withered-magic/starpls.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomwitheredmagicstarplsPackage = {
+export const starplsPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,38 @@ export const githubcomwitheredmagicstarplsPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/withered-magic/starpls' as const,
+  description: 'An LSP implementation for Starlark, the configuration language used by Bazel and Buck2.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/withered-magic/starpls/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/withered-magic/starpls' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/withered-magic/starpls -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/withered-magic/starpls' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install starpls' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'starpls',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/withered-magic/starpls/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.1.21',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) starpls -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install starpls' as const,
 }
 
-export type GithubcomwitheredmagicstarplsPackage = typeof githubcomwitheredmagicstarplsPackage
+export type StarplsPackage = typeof starplsPackage

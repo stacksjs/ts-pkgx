@@ -1,11 +1,11 @@
-# binutils
+# gnu.org/binutils
 
-> Package from pantry: gnu.org/binutils
+> GNU binary tools for native development
 
 ## Package Information
 
 - **Domain**: `gnu.org/binutils`
-- **Name**: `binutils`
+- **Name**: `gnu.org/binutils`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/binutils/package.yml)
 
@@ -20,7 +20,37 @@ launchpad install gnu.org/binutils
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `addr2line`
+- `ar`
+- `c++filt`
+- `elfedit`
+- `nm`
+- `objcopy`
+- `objdump`
+- `ranlib`
+- `readelf`
+- `size`
+- `strings`
+- `strip`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `2.44.0`, `2.43.1`, `2.43.0`, `2.42.0`, `2.41.0`
+- `2.40.0`, `2.39.0`
+
+</details>
+
+**Latest Version**: `2.44.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +gnu.org/binutils@2.44.0 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +58,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.binutils
+const pkg = pantry['gnu.org/binutils']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

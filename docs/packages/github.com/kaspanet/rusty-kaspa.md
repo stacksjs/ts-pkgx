@@ -1,11 +1,11 @@
-# rusty-kaspa
+# kaspa
 
-> Package from pantry: github.com/kaspanet/rusty-kaspa
+> Kaspa full-node reference implementation and related libraries in the Rust programming language
 
 ## Package Information
 
 - **Domain**: `github.com/kaspanet/rusty-kaspa`
-- **Name**: `rusty-kaspa`
+- **Name**: `kaspa`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kaspanet/rusty-kaspa/package.yml)
 
@@ -13,14 +13,36 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/kaspanet/rusty-kaspa
+launchpad install kaspa
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `kaspad`
+- `kaspa-cli`
+
+## Available Versions
+
+<details>
+<summary>Show all 16 versions</summary>
+
+- `1.0.1`, `1.0.0`, `0.17.2`, `0.17.1`, `0.17.0`
+- `0.16.1`, `0.16.0`, `0.15.2`, `0.15.1`, `0.14.1`
+- `0.13.6`, `0.13.4`, `0.13.3`, `0.13.2`, `0.13.0`
+- `0.1.7`
+
+</details>
+
+**Latest Version**: `1.0.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/kaspanet/rusty-kaspa@1.0.1 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rusty-kaspa']
+const pkg = pantry.kaspa
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
