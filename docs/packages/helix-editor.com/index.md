@@ -25,14 +25,14 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `25.1.1`, `25.1.0`, `24.7.0`, `24.3.0`, `23.10.0`
-- `23.5.0`, `23.3.0`, `22.12.0`
+- `25.7.0`, `25.1.1`, `25.1.0`, `24.7.0`, `24.3.0`
+- `23.10.0`, `23.5.0`, `23.3.0`, `22.12.0`
 
 </details>
 
-**Latest Version**: `25.1.1`
+**Latest Version**: `25.7.0`
 
 ### Install Specific Version
 

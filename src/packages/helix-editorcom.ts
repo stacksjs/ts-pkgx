@@ -3,7 +3,7 @@
  *
  * @domain `helix-editor.com`
  * @programs `hx`
- * @version `25.1.1` (8 versions available)
+ * @version `25.7.0` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install hx`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "hx"
  * console.log(pkg.description) // "A post-modern modal text editor."
  * console.log(pkg.programs)    // ["hx"]
- * console.log(pkg.versions[0]) // "25.1.1" (latest)
+ * console.log(pkg.versions[0]) // "25.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/helix-editor-com.md
@@ -62,6 +62,7 @@ export const hxPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '25.7.0',
     '25.1.1',
     '25.1.0',
     '24.7.0',

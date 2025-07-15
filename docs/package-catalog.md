@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-07-15T17:30:27.874Z
+- **Last Updated**: 2025-07-15T19:29:16.002Z
 
 ## Table of Contents
 
@@ -119,7 +119,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[ansible.com](./packages/ansible.com/index.md)** () | Ansible is a radically simple IT automation platform that makes your applications and systems eas... | ansible, ansible-config, ansible-connection, ... (+8) | 2.18.6 (+68) | `pkgx ansible` |
+| **[ansible.com](./packages/ansible.com/index.md)** () | Ansible is a radically simple IT automation platform that makes your applications and systems eas... | ansible, ansible-config, ansible-connection, ... (+8) | 2.18.7 (+70) | `pkgx ansible` |
 | **[ansible.com/ansible-lint](./packages/ansible.com/ansible-lint/index.md)** () | ansible-lint checks playbooks for practices and behavior that could potentially be improved and c... | ansible-lint | 25.6.1 (+22) | `pkgx ansible-lint` |
 | **[argoproj.github.io/cd](./packages/argoproj.github.io/cd/index.md)** (argocd) | GitOps Continuous Delivery for Kubernetes | argocd | 3.0.11 (+123) | `pkgx argocd` |
 | **[consul.io](./packages/consul.io/index.md)** () | Consul is a distributed, highly available, and data center aware solution to connect and configur... | consul | 1.21.2 (+11) | `pkgx consul` |
@@ -138,7 +138,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[kubernetes.io/kustomize](./packages/kubernetes.io/kustomize/index.md)** () | Template-free customization of Kubernetes YAML manifests | kustomize | 5.7.0 (+14) | `pkgx kustomize` |
 | **[kubernetes.io/minikube](./packages/kubernetes.io/minikube/index.md)** () | Run a Kubernetes cluster locally | minikube | 1.36.0 (+11) | `pkgx minikube` |
 | **[nomadproject.io](./packages/nomadproject.io/index.md)** () | Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of ... | nomad | 1.10.3 (+14) | `pkgx nomad` |
-| **[opentofu.org](./packages/opentofu.org/index.md)** () | OpenTofu lets you declaratively manage your cloud infrastructure. | tofu | 1.9.2 (+23) | `pkgx tofu` |
+| **[opentofu.org](./packages/opentofu.org/index.md)** () | OpenTofu lets you declaratively manage your cloud infrastructure. | tofu | 1.9.2 (+25) | `pkgx tofu` |
 | **[packer.io](./packages/packer.io/index.md)** () | Packer is a tool for creating identical machine images for multiple platforms from a single sourc... | packer | 1.13.1 (+12) | `pkgx packer` |
 | **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.5.2 (+39) | `pkgx podman` |
 | **[runatlantis.io](./packages/runatlantis.io/index.md)** () | Terraform Pull Request Automation tool | atlantis | 0.35.0 (+18) | `pkgx atlantis` |
@@ -248,7 +248,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[microsoft.com/code-cli](./packages/microsoft.com/code-cli/index.md)** (code) | Command-line interface built-in Visual Studio Code | code | 1.102.0 (+15) | `pkgx code` |
 | **[nano-editor.org](./packages/nano-editor.org/index.md)** () | Free (GNU) replacement for the Pico text editor | nano | 8.0.0 (+1) | `pkgx nano` |
 | **[neovim.io](./packages/neovim.io/index.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.3 (+15) | `pkgx nvim` |
-| **[vim.org](./packages/vim.org/index.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1544 (+2113) | `pkgx vi` |
+| **[vim.org](./packages/vim.org/index.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1547 (+2116) | `pkgx vi` |
 | **[wezfurlong.org/wezterm](./packages/wezfurlong.org/wezterm/index.md)** () | A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemente... | wezterm | 2024.2.3 (+0) | `pkgx wezterm` |
 
 ## CLI Tools & Utilities
