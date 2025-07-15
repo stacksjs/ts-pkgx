@@ -1,6 +1,6 @@
 # DevOps
 
-*11 packages in this category*
+*13 packages in this category*
 
 Tools for deployment, orchestration, and infrastructure management.
 
@@ -46,23 +46,43 @@ Consul is a distributed, highly available, and data center aware solution to con
 
 ---
 
-### [docker.com/compose](../packages/docker.com/compose/index.md) (compose)
+### [docker.com/cli](../packages/docker.com/cli/index.md) (docker/cli, docker)
 
-Package from pantry: docker.com/compose
+Pack, ship and run any application as a lightweight container
 
-**Programs**: None specified
+**Programs**: docker
 
-**Install**: `launchpad install docker.com/compose`
+**Install**: `launchpad install docker`
+
+---
+
+### [docker.com/compose](../packages/docker.com/compose/index.md) (docker-compose)
+
+Define and run multi-container applications with Docker
+
+**Programs**: docker-compose
+
+**Install**: `launchpad install docker-compose`
+
+---
+
+### [fluxcd.io/flux2](../packages/fluxcd.io/flux2/index.md) (flux)
+
+Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit.
+
+**Programs**: flux
+
+**Install**: `launchpad install flux`
 
 ---
 
 ### [github.com/aws-cloudformation/cfn-lint](../packages/github.com/aws-cloudformation/cfn-lint.md) (cfn-lint)
 
-Package from pantry: github.com/aws-cloudformation/cfn-lint
+Validate CloudFormation templates against the CloudFormation spec
 
-**Programs**: None specified
+**Programs**: cfn-lint
 
-**Install**: `launchpad install github.com/aws-cloudformation/cfn-lint`
+**Install**: `launchpad install cfn-lint`
 
 ---
 

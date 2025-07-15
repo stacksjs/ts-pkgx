@@ -1,11 +1,11 @@
-# graphene
+# ebassi.github.io/graphene
 
-> Package from pantry: ebassi.github.io/graphene
+> A thin layer of graphic data types
 
 ## Package Information
 
 - **Domain**: `ebassi.github.io/graphene`
-- **Name**: `graphene`
+- **Name**: `ebassi.github.io/graphene`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ebassi.github.io/graphene/package.yml)
 
@@ -22,6 +22,24 @@ This package provides the following executable programs:
 
 *No programs specified*
 
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.10.8`
+
+</details>
+
+**Latest Version**: `1.10.8`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +ebassi.github.io/graphene@1.10.8 -- $SHELL -i
+```
+
 ## Dependencies
 
 This package depends on:
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.graphene
+const pkg = pantry['ebassi.github.io/graphene']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

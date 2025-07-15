@@ -58,21 +58,21 @@ Prevent cloud misconfigurations and find vulnerabilities during build-time in in
 
 ### [filippo.io/age](../packages/filippo.io/age/index.md) (age)
 
-Package from pantry: filippo.io/age
+A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability.
 
-**Programs**: None specified
+**Programs**: age, age-keygen
 
-**Install**: `launchpad install filippo.io/age`
+**Install**: `launchpad install age`
 
 ---
 
 ### [filippo.io/yubikey-agent](../packages/filippo.io/yubikey-agent/index.md) (yubikey-agent)
 
-Package from pantry: filippo.io/yubikey-agent
+Seamless ssh-agent for YubiKeys and other PIV tokens
 
-**Programs**: None specified
+**Programs**: yubikey-agent
 
-**Install**: `launchpad install filippo.io/yubikey-agent`
+**Install**: `launchpad install yubikey-agent`
 
 ---
 

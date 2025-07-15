@@ -1,6 +1,6 @@
 # Databases
 
-*1 packages in this category*
+*4 packages in this category*
 
 Database systems and data storage solutions.
 
@@ -13,6 +13,36 @@ high-performance graph database for real-time use cases
 **Programs**: dgraph
 
 **Install**: `launchpad install dgraph`
+
+---
+
+### [duckdb.org](../packages/duckdb.org/index.md) (duckdb)
+
+DuckDB is an analytical in-process SQL database management system
+
+**Programs**: duckdb
+
+**Install**: `launchpad install duckdb`
+
+---
+
+### [edgedb.com](../packages/edgedb.com/index.md) (edgedb)
+
+The EdgeDB CLI
+
+**Programs**: edgedb
+
+**Install**: `launchpad install edgedb`
+
+---
+
+### [etcd.io](../packages/etcd.io/index.md) (etcd)
+
+Distributed reliable key-value store for the most critical data of a distributed system
+
+**Programs**: etcd, etcdctl
+
+**Install**: `launchpad install etcd`
 
 ---
 

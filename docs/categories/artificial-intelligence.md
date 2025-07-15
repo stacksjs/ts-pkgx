@@ -1,6 +1,6 @@
 # Artificial Intelligence
 
-*6 packages in this category*
+*8 packages in this category*
 
 Packages related to artificial intelligence.
 
@@ -36,13 +36,33 @@ All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Ag
 
 ---
 
+### [elizaOS.github.io](../packages/elizaOS.github.io/index.md) (elizaOS, eliza)
+
+Autonomous agents for everyone
+
+**Programs**: eliza
+
+**Install**: `launchpad install eliza`
+
+---
+
+### [github.com/AntonOsika/gpt-engineer](../packages/github.com/AntonOsika/gpt-engineer.md) (GPT Engineer)
+
+Platform to experiment with the AI Software Engineer. Terminal based. NOTE: Very different from https://gptengineer.app
+
+**Programs**: gpte, gpt-engineer
+
+**Install**: `launchpad install github.com/AntonOsika/gpt-engineer`
+
+---
+
 ### [github.com/AUTOMATIC1111/stable-diffusion-webui](../packages/github.com/AUTOMATIC1111/stable-diffusion-webui.md) (stable-diffusion-webui)
 
-Package from pantry: github.com/AUTOMATIC1111/stable-diffusion-webui
+Stable Diffusion web UI
 
-**Programs**: None specified
+**Programs**: stable-diffusion-webui
 
-**Install**: `launchpad install github.com/AUTOMATIC1111/stable-diffusion-webui`
+**Install**: `launchpad install stable-diffusion-webui`
 
 ---
 

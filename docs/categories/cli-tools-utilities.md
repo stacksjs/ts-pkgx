@@ -1,6 +1,6 @@
 # CLI Tools & Utilities
 
-*30 packages in this category*
+*32 packages in this category*
 
 Command-line utilities and system tools.
 
@@ -156,13 +156,33 @@ NCurses Disk Usage
 
 ---
 
+### [dns.lookup.dog](../packages/dns.lookup.dog/index.md) (dog)
+
+A command-line DNS client.
+
+**Programs**: dog
+
+**Install**: `launchpad install dog`
+
+---
+
+### [fishshell.com](../packages/fishshell.com/index.md) (fish)
+
+User-friendly command-line shell for UNIX-like operating systems
+
+**Programs**: fish, fish_indent, fish_key_reader
+
+**Install**: `launchpad install fish`
+
+---
+
 ### [github.com/aristocratos/btop](../packages/github.com/aristocratos/btop.md) (btop)
 
-Package from pantry: github.com/aristocratos/btop
+Resource monitor. C++ version and continuation of bashtop and bpytop
 
-**Programs**: None specified
+**Programs**: btop
 
-**Install**: `launchpad install github.com/aristocratos/btop`
+**Install**: `launchpad install btop`
 
 ---
 

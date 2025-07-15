@@ -1,11 +1,11 @@
-# desktop-file-utils
+# freedesktop.org/desktop-file-utils
 
-> Package from pantry: freedesktop.org/desktop-file-utils
+> Command-line utilities for working with desktop entries
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/desktop-file-utils`
-- **Name**: `desktop-file-utils`
+- **Name**: `freedesktop.org/desktop-file-utils`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/desktop-file-utils/package.yml)
 
@@ -20,7 +20,28 @@ launchpad install freedesktop.org/desktop-file-utils
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `desktop-file-edit`
+- `desktop-file-install`
+- `desktop-file-validate`
+- `update-desktop-database`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.28.0`, `0.27.0`
+
+</details>
+
+**Latest Version**: `0.28.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +freedesktop.org/desktop-file-utils@0.28.0 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['desktop-file-utils']
+const pkg = pantry['freedesktop.org/desktop-file-utils']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

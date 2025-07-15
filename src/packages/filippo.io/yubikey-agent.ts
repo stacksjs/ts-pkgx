@@ -1,24 +1,34 @@
 /**
- * **yubikey-agent** - Package from pantry: filippo.io/yubikey-agent
+ * **yubikey-agent** - Seamless ssh-agent for YubiKeys and other PIV tokens
  *
  * @domain `filippo.io/yubikey-agent`
+ * @programs `yubikey-agent`
+ * @version `0.1.6` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install filippo.io/yubikey-agent`
+ * @install `launchpad install yubikey-agent`
+ * @name `yubikey-agent`
  * @dependencies `pcsclite.apdu.fr^2`, `linux:gnupg.org/pinentry` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.filippoioyubikeyagent
+ * // Access the package
+ * const pkg = pantry.yubikeyagent
+ * // Or access via domain
+ * const samePkg = pantry.filippoioyubikeyagent
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "yubikey-agent"
- * console.log(pkg.description) // "Package from pantry: filippo.io/yubikey-agent"
+ * console.log(pkg.description) // "Seamless ssh-agent for YubiKeys and other PIV t..."
+ * console.log(pkg.programs)    // ["yubikey-agent"]
+ * console.log(pkg.versions[0]) // "0.1.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/filippo-io/yubikey-agent.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const filippoioyubikeyagentPackage = {
+export const yubikeyagentPackage = {
   /**
    * The display name of this package.
    */
@@ -30,15 +40,22 @@ export const filippoioyubikeyagentPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: filippo.io/yubikey-agent' as const,
+  description: 'Seamless ssh-agent for YubiKeys and other PIV tokens' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/filippo.io/yubikey-agent/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install filippo.io/yubikey-agent' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +filippo.io/yubikey-agent -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install filippo.io/yubikey-agent' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install yubikey-agent' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'yubikey-agent',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -49,10 +66,20 @@ export const filippoioyubikeyagentPackage = {
     'pcsclite.apdu.fr^2',
     'linux:gnupg.org/pinentry',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/filippo.io/yubikey-agent/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.1.6',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) yubikey-agent -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install yubikey-agent' as const,
 }
 
-export type FilippoioyubikeyagentPackage = typeof filippoioyubikeyagentPackage
+export type YubikeyagentPackage = typeof yubikeyagentPackage

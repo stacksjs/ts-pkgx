@@ -16,21 +16,21 @@ Cross-platform automation framework for all kinds of apps, built on top of the W
 
 ---
 
-### [fastlane.tools](../packages/fastlane.tools/index.md)
+### [fastlane.tools](../packages/fastlane.tools/index.md) (fastlane)
 
-Package from pantry: fastlane.tools
+🚀 The easiest way to automate building and releasing your iOS and Android apps
 
-**Programs**: None specified
+**Programs**: fastlane
 
-**Install**: `launchpad install fastlane.tools`
+**Install**: `launchpad install fastlane`
 
 ---
 
 ### [flutter.dev](../packages/flutter.dev/index.md)
 
-Package from pantry: flutter.dev
+Flutter makes it easy and fast to build beautiful apps for mobile and beyond
 
-**Programs**: None specified
+**Programs**: flutter, dart
 
 **Install**: `launchpad install flutter.dev`
 

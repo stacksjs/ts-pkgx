@@ -1,6 +1,6 @@
 # rip2
 
-> Package from pantry: github.com/MilesCranmer/rip2
+> A safe and ergonomic alternative to rm
 
 ## Package Information
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/MilesCranmer/rip2
+launchpad install rip
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `rip`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `rip`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `0.9.4`, `0.9.3`, `0.9.2`, `0.9.1`, `0.9.0`
+
+</details>
+
+**Latest Version**: `0.9.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) rip -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +52,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.rip2
+const pkg = pantry.rip
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # Package Managers
 
-*6 packages in this category*
+*7 packages in this category*
 
 Packages related to package managers.
 
@@ -33,6 +33,16 @@ Dependency manager for Cocoa projects
 **Programs**: pod
 
 **Install**: `launchpad install pod`
+
+---
+
+### [getcomposer.org](../packages/getcomposer.org/index.md) (composer)
+
+Dependency Manager for PHP
+
+**Programs**: composer, composer.phar
+
+**Install**: `launchpad install composer`
 
 ---
 

@@ -1,31 +1,31 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1574+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1546+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1574
+- **Total Packages**: 1546
 - **Categories**: 27
-- **Last Updated**: 2025-07-15T13:25:07.787Z
+- **Last Updated**: 2025-07-15T14:17:41.636Z
 
 ## Table of Contents
 
 - [Programming Languages](#programming-languages) (8 packages)
-- [Artificial Intelligence](#artificial-intelligence) (6 packages)
-- [Databases](#databases) (1 packages)
+- [Artificial Intelligence](#artificial-intelligence) (8 packages)
+- [Databases](#databases) (4 packages)
 - [Web Development](#web-development) (0 packages)
-- [DevOps](#devops) (11 packages)
-- [Container & Kubernetes Tools](#container-kubernetes-tools) (10 packages)
-- [Monitoring & Observability](#monitoring-observability) (1 packages)
+- [DevOps](#devops) (13 packages)
+- [Container & Kubernetes Tools](#container-kubernetes-tools) (11 packages)
+- [Monitoring & Observability](#monitoring-observability) (2 packages)
 - [Build Tools & Automation](#build-tools-automation) (7 packages)
-- [Package Managers](#package-managers) (6 packages)
+- [Package Managers](#package-managers) (7 packages)
 - [Editors & IDEs](#editors-ides) (5 packages)
-- [CLI Tools & Utilities](#cli-tools-utilities) (30 packages)
+- [CLI Tools & Utilities](#cli-tools-utilities) (32 packages)
 - [Networking](#networking) (5 packages)
 - [Security & Cryptography](#security-cryptography) (8 packages)
-- [Multimedia](#multimedia) (2 packages)
+- [Multimedia](#multimedia) (3 packages)
 - [Graphics Libraries](#graphics-libraries) (5 packages)
 - [Gaming & Game Development](#gaming-game-development) (1 packages)
 - [Cloud Platforms](#cloud-platforms) (8 packages)
@@ -57,28 +57,33 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Artificial Intelligence
 
-*6 packages in this category*
+*8 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[agpt.co](./packages/agpt.co/index.md)** () | AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to pr... | auto-gpt | 0.4.7 (+8) | `pkgx auto-gpt` |
 | **[crates.io/aichat](./packages/crates.io/aichat/index.md)** () | All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access... | aichat | 0.30.0 (+2) | `pkgx aichat` |
 | **[deepwisdom.ai](./packages/deepwisdom.ai/index.md)** (metagpt) | 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming | metagpt | 0.8.2 (+15) | `pkgx metagpt` |
-| **[github.com/AUTOMATIC1111/stable-diffusion-webui](./packages/github.com/AUTOMATIC1111/stable-diffusion-webui.md)** | Package from pantry: github.com/AUTOMATIC1111/stable-diffusion-webui | - | latest | `pkgx stable-diffusion-webui` |
+| **[elizaOS.github.io](./packages/elizaOS.github.io/index.md)** (eliza) | Autonomous agents for everyone | eliza | 1.2.5 (+35) | `pkgx eliza` |
+| **[github.com/AntonOsika/gpt-engineer](./packages/github.com/AntonOsika/gpt-engineer.md)** () | Platform to experiment with the AI Software Engineer. Terminal based. NOTE: Very different from h... | gpte, gpt-engineer | 0.3.1 (+14) | `pkgx GPT Engineer` |
+| **[github.com/AUTOMATIC1111/stable-diffusion-webui](./packages/github.com/AUTOMATIC1111/stable-diffusion-webui.md)** () | Stable Diffusion web UI | stable-diffusion-webui | 1.10.1 (+19) | `pkgx stable-diffusion-webui` |
 | **[github.com/nat/openplayground](./packages/github.com/nat/openplayground.md)** | Package from pantry: github.com/nat/openplayground | - | latest | `pkgx openplayground` |
 | **[github.com/npiv/chatblade](./packages/github.com/npiv/chatblade.md)** | Package from pantry: github.com/npiv/chatblade | - | latest | `pkgx chatblade` |
 
 ## Databases
 
-*1 packages in this category*
+*4 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[dgraph.io](./packages/dgraph.io/index.md)** () | high-performance graph database for real-time use cases | dgraph | 24.1.3 (+10) | `pkgx dgraph` |
+| **[duckdb.org](./packages/duckdb.org/index.md)** () | DuckDB is an analytical in-process SQL database management system | duckdb | 1.3.2 (+20) | `pkgx duckdb` |
+| **[edgedb.com](./packages/edgedb.com/index.md)** () | The EdgeDB CLI | edgedb | 7.7.0 (+37) | `pkgx edgedb` |
+| **[etcd.io](./packages/etcd.io/index.md)** () | Distributed reliable key-value store for the most critical data of a distributed system | etcd, etcdctl | 3.6.2 (+12) | `pkgx etcd` |
 
 ## DevOps
 
-*11 packages in this category*
+*13 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -86,8 +91,10 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[ansible.com/ansible-lint](./packages/ansible.com/ansible-lint/index.md)** () | ansible-lint checks playbooks for practices and behavior that could potentially be improved and c... | ansible-lint | 25.6.1 (+22) | `pkgx ansible-lint` |
 | **[argoproj.github.io/cd](./packages/argoproj.github.io/cd/index.md)** (argocd) | GitOps Continuous Delivery for Kubernetes | argocd | 3.0.11 (+123) | `pkgx argocd` |
 | **[consul.io](./packages/consul.io/index.md)** () | Consul is a distributed, highly available, and data center aware solution to connect and configur... | consul | 1.21.2 (+11) | `pkgx consul` |
-| **[docker.com/compose](./packages/docker.com/compose/index.md)** | Package from pantry: docker.com/compose | - | latest | `pkgx compose` |
-| **[github.com/aws-cloudformation/cfn-lint](./packages/github.com/aws-cloudformation/cfn-lint.md)** | Package from pantry: github.com/aws-cloudformation/cfn-lint | - | latest | `pkgx cfn-lint` |
+| **[docker.com/cli](./packages/docker.com/cli/index.md)** (docker) | Pack, ship and run any application as a lightweight container | docker | 28.3.2 (+55) | `pkgx docker` |
+| **[docker.com/compose](./packages/docker.com/compose/index.md)** () | Define and run multi-container applications with Docker | docker-compose | 2.38.2 (+56) | `pkgx docker-compose` |
+| **[fluxcd.io/flux2](./packages/fluxcd.io/flux2/index.md)** () | Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit. | flux | 2.6.4 (+13) | `pkgx flux` |
+| **[github.com/aws-cloudformation/cfn-lint](./packages/github.com/aws-cloudformation/cfn-lint.md)** () | Validate CloudFormation templates against the CloudFormation spec | cfn-lint | 1.38.0 (+151) | `pkgx cfn-lint` |
 | **[github.com/minamijoyo/tfupdate](./packages/github.com/minamijoyo/tfupdate.md)** | Package from pantry: github.com/minamijoyo/tfupdate | - | latest | `pkgx tfupdate` |
 | **[github.com/terraform-linters/tflint](./packages/github.com/terraform-linters/tflint.md)** | Package from pantry: github.com/terraform-linters/tflint | - | latest | `pkgx tflint` |
 | **[kubernetes.io/kubectl](./packages/kubernetes.io/kubectl/index.md)** | Package from pantry: kubernetes.io/kubectl | - | latest | `pkgx kubectl` |
@@ -96,13 +103,14 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Container & Kubernetes Tools
 
-*10 packages in this category*
+*11 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[cilium.io/cilium](./packages/cilium.io/cilium/index.md)** () | CLI to install, manage & troubleshoot Kubernetes clusters running Cilium | cilium | 0.18.5 (+25) | `pkgx cilium` |
 | **[cilium.io/hubble](./packages/cilium.io/hubble/index.md)** () | Hubble - Network, Service & Security Observability for Kubernetes using eBPF | hubble | 1.17.5 (+15) | `pkgx hubble` |
 | **[cloudnative-pg.io](./packages/cloudnative-pg.io/index.md)** () | CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases with... | kubectl-cnpg | 1.26.0 (+5) | `pkgx kubectl-cnpg` |
+| **[docker.com/cli](./packages/docker.com/cli/index.md)** (docker) | Pack, ship and run any application as a lightweight container | docker | 28.3.2 (+55) | `pkgx docker` |
 | **[github.com/helmfile/helmfile](./packages/github.com/helmfile/helmfile.md)** | Package from pantry: github.com/helmfile/helmfile | - | latest | `pkgx helmfile` |
 | **[github.com/stern/stern](./packages/github.com/stern/stern.md)** | Package from pantry: github.com/stern/stern | - | latest | `pkgx stern` |
 | **[github.com/yannh/kubeconform](./packages/github.com/yannh/kubeconform.md)** | Package from pantry: github.com/yannh/kubeconform | - | latest | `pkgx kubeconform` |
@@ -113,10 +121,11 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Monitoring & Observability
 
-*1 packages in this category*
+*2 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
+| **[github.com/allure-framework/allure2](./packages/github.com/allure-framework/allure2.md)** () | Allure Report is a flexible, lightweight multi-language test reporting tool. It provides clear gr... | allure | 2.34.1 (+10) | `pkgx allure` |
 | **[grafana.com/loki](./packages/grafana.com/loki/index.md)** | Package from pantry: grafana.com/loki | - | latest | `pkgx loki` |
 
 ## Build Tools & Automation
@@ -125,8 +134,8 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[earthly.dev/earthly](./packages/earthly.dev/earthly/index.md)** | Package from pantry: earthly.dev/earthly | - | latest | `pkgx earthly` |
-| **[freedesktop.org/pkg-config](./packages/freedesktop.org/pkg-config/index.md)** | Package from pantry: freedesktop.org/pkg-config | - | latest | `pkgx pkg-config` |
+| **[earthly.dev/earthly](./packages/earthly.dev/earthly/index.md)** () | Super simple build framework with fast, repeatable builds and an instantly familiar syntax – like... | earthly | 0.8.15 (+0) | `pkgx earthly` |
+| **[freedesktop.org/pkg-config](./packages/freedesktop.org/pkg-config/index.md)** () | package compiler and linker metadata toolkit | pkg-config | 0.29.2 (+0) | `pkgx pkg-config` |
 | **[github.com/moby/buildkit](./packages/github.com/moby/buildkit.md)** | Package from pantry: github.com/moby/buildkit | - | latest | `pkgx buildkit` |
 | **[gnu.org/autoconf](./packages/gnu.org/autoconf/index.md)** | Package from pantry: gnu.org/autoconf | - | latest | `pkgx autoconf` |
 | **[gnu.org/automake](./packages/gnu.org/automake/index.md)** | Package from pantry: gnu.org/automake | - | latest | `pkgx automake` |
@@ -135,13 +144,14 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Package Managers
 
-*6 packages in this category*
+*7 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[bun.sh](./packages/bun.sh/index.md)** () | Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | bun, bunx | 1.2.18 (+121) | `pkgx bun` |
 | **[classic.yarnpkg.com](./packages/classic.yarnpkg.com/index.md)** (yarn) | The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry | yarn, yarnpkg | 1.22.22 (+3) | `pkgx yarn` |
 | **[cocoapods.org](./packages/cocoapods.org/index.md)** () | Dependency manager for Cocoa projects | pod | 1.16.2 (+12) | `pkgx pod` |
+| **[getcomposer.org](./packages/getcomposer.org/index.md)** () | Dependency Manager for PHP | composer, composer.phar | 2.8.10 (+30) | `pkgx composer` |
 | **[nodejs.org/corepack](./packages/nodejs.org/corepack/index.md)** | Package from pantry: nodejs.org/corepack | - | latest | `pkgx corepack` |
 | **[npmjs.com](./packages/npmjs.com/index.md)** | Package from pantry: npmjs.com | - | latest | `pkgx npmjs.com` |
 | **[rust-lang.org/cargo](./packages/rust-lang.org/cargo/index.md)** | Package from pantry: rust-lang.org/cargo | - | latest | `pkgx cargo` |
@@ -160,7 +170,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## CLI Tools & Utilities
 
-*30 packages in this category*
+*32 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -179,7 +189,9 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[crates.io/xh](./packages/crates.io/xh/index.md)** () | Friendly and fast tool for sending HTTP requests | xh | 0.24.1 (+4) | `pkgx xh` |
 | **[curl.se](./packages/curl.se/index.md)** (curl) | A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP... | curl, curl-config | 8.14.1 (+24) | `pkgx curl` |
 | **[dev.yorhel.nl/ncdu](./packages/dev.yorhel.nl/ncdu/index.md)** () | NCurses Disk Usage | ncdu | 1.22.0 (+4) | `pkgx ncdu` |
-| **[github.com/aristocratos/btop](./packages/github.com/aristocratos/btop.md)** | Package from pantry: github.com/aristocratos/btop | - | latest | `pkgx btop` |
+| **[dns.lookup.dog](./packages/dns.lookup.dog/index.md)** () | A command-line DNS client. | dog | 0.1.0 (+0) | `pkgx dog` |
+| **[fishshell.com](./packages/fishshell.com/index.md)** () | User-friendly command-line shell for UNIX-like operating systems | fish, fish_indent, fish_key_reader | 4.0.2 (+10) | `pkgx fish` |
+| **[github.com/aristocratos/btop](./packages/github.com/aristocratos/btop.md)** () | Resource monitor. C++ version and continuation of bashtop and bpytop | btop | 1.4.4 (+7) | `pkgx btop` |
 | **[github.com/dundee/gdu](./packages/github.com/dundee/gdu.md)** | Package from pantry: github.com/dundee/gdu | - | latest | `pkgx gdu` |
 | **[github.com/junegunn/fzf](./packages/github.com/junegunn/fzf.md)** | Package from pantry: github.com/junegunn/fzf | - | latest | `pkgx fzf` |
 | **[github.com/mikefarah/yq](./packages/github.com/mikefarah/yq.md)** | Package from pantry: github.com/mikefarah/yq | - | latest | `pkgx yq` |
@@ -218,16 +230,17 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[aquasecurity.github.io/trivy](./packages/aquasecurity.github.io/trivy/index.md)** () | Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositori... | trivy | 0.64.1 (+37) | `pkgx trivy` |
 | **[certbot.eff.org](./packages/certbot.eff.org/index.md)** () | Certbot is EFF&#39;s tool to obtain certs from Let&#39;s Encrypt and (optionally) auto-enable HTT... | certbot | 4.1.1 (+18) | `pkgx certbot` |
 | **[checkov.io](./packages/checkov.io/index.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.451 (+485) | `pkgx checkov` |
-| **[filippo.io/age](./packages/filippo.io/age/index.md)** | Package from pantry: filippo.io/age | - | latest | `pkgx age` |
-| **[filippo.io/yubikey-agent](./packages/filippo.io/yubikey-agent/index.md)** | Package from pantry: filippo.io/yubikey-agent | - | latest | `pkgx yubikey-agent` |
+| **[filippo.io/age](./packages/filippo.io/age/index.md)** () | A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config ... | age, age-keygen | 1.2.1 (+2) | `pkgx age` |
+| **[filippo.io/yubikey-agent](./packages/filippo.io/yubikey-agent/index.md)** () | Seamless ssh-agent for YubiKeys and other PIV tokens | yubikey-agent | 0.1.6 (+0) | `pkgx yubikey-agent` |
 | **[orhun.dev/gpg-tui](./packages/orhun.dev/gpg-tui/index.md)** | Package from pantry: orhun.dev/gpg-tui | - | latest | `pkgx gpg-tui` |
 
 ## Multimedia
 
-*2 packages in this category*
+*3 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
+| **[exiftool.org](./packages/exiftool.org/index.md)** () | Perl lib for reading and writing EXIF metadata | exiftool | 13.30.0 (+7) | `pkgx exiftool` |
 | **[lcdf.org/gifsicle](./packages/lcdf.org/gifsicle/index.md)** | Package from pantry: lcdf.org/gifsicle | - | latest | `pkgx gifsicle` |
 | **[sf.net/optipng](./packages/sf.net/optipng/index.md)** | Package from pantry: sf.net/optipng | - | latest | `pkgx optipng` |
 
@@ -258,7 +271,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[aws.amazon.com/sam](./packages/aws.amazon.com/sam/index.md)** () | CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM | sam | 1.142.1 (+32) | `pkgx sam` |
-| **[fly.io](./packages/fly.io/index.md)** | Package from pantry: fly.io | - | latest | `pkgx fly.io` |
+| **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.155 (+411) | `pkgx fly` |
 | **[heroku.com](./packages/heroku.com/index.md)** | Package from pantry: heroku.com | - | latest | `pkgx heroku.com` |
 | **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** | Package from pantry: localstack.cloud/cli | - | latest | `pkgx cli` |
 | **[planetscale.com](./packages/planetscale.com/index.md)** | Package from pantry: planetscale.com | - | latest | `pkgx planetscale.com` |
@@ -273,8 +286,8 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[appium.io](./packages/appium.io/index.md)** () | Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver prot... | appium | 2.19.0 (+36) | `pkgx appium` |
-| **[fastlane.tools](./packages/fastlane.tools/index.md)** | Package from pantry: fastlane.tools | - | latest | `pkgx fastlane.tools` |
-| **[flutter.dev](./packages/flutter.dev/index.md)** | Package from pantry: flutter.dev | - | latest | `pkgx flutter.dev` |
+| **[fastlane.tools](./packages/fastlane.tools/index.md)** () | 🚀 The easiest way to automate building and releasing your iOS and Android apps | fastlane | 2.228.0 (+22) | `pkgx fastlane` |
+| **[flutter.dev](./packages/flutter.dev/index.md)** () | Flutter makes it easy and fast to build beautiful apps for mobile and beyond | flutter, dart | 3.32.6 (+49) | `pkgx flutter.dev` |
 | **[gradle.org](./packages/gradle.org/index.md)** | Package from pantry: gradle.org | - | latest | `pkgx gradle.org` |
 
 ## Testing
@@ -292,9 +305,9 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[bitcoin.org](./packages/bitcoin.org/index.md)** () | Decentralized, peer to peer payment network | bitcoin-cli, bitcoin-tx, bitcoin-util, ... (+2) | 29.0.0 (+16) | `pkgx bitcoin` |
-| **[elementsproject.org](./packages/elementsproject.org/index.md)** | Package from pantry: elementsproject.org | - | latest | `pkgx elementsproject.org` |
-| **[getfoundry.sh](./packages/getfoundry.sh/index.md)** | Package from pantry: getfoundry.sh | - | latest | `pkgx getfoundry.sh` |
-| **[ghostscript.com](./packages/ghostscript.com/index.md)** | Package from pantry: ghostscript.com | - | latest | `pkgx ghostscript.com` |
+| **[elementsproject.org](./packages/elementsproject.org/index.md)** () | Open Source implementation of advanced blockchain features extending the Bitcoin protocol | bench_bitcoin, elements-cli, elements-tx, ... (+4) | 23.3.0 (+8) | `pkgx elementsproject.org` |
+| **[getfoundry.sh](./packages/getfoundry.sh/index.md)** () | Foundry is a blazing fast, portable and modular toolkit for Ethereum application development writ... | forge, anvil, cast, ... (+1) | 2024.4.12 (+9) | `pkgx getfoundry.sh` |
+| **[ghostscript.com](./packages/ghostscript.com/index.md)** () | This is purely for downloads, please check the website for full information | dvipdf, eps2eps, gpcl6, ... (+30) | 10.5.1 (+6) | `pkgx ghostscript.com` |
 | **[solana.com](./packages/solana.com/index.md)** | Package from pantry: solana.com | - | latest | `pkgx solana.com` |
 
 ## Financial Tools

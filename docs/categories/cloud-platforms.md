@@ -16,13 +16,13 @@ CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
 
 ---
 
-### [fly.io](../packages/fly.io/index.md)
+### [fly.io](../packages/fly.io/index.md) (fly)
 
-Package from pantry: fly.io
+Command line tools for fly.io services
 
-**Programs**: None specified
+**Programs**: fly, flyctl
 
-**Install**: `launchpad install fly.io`
+**Install**: `launchpad install fly`
 
 ---
 

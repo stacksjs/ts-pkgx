@@ -1,23 +1,33 @@
 /**
- * **container-structure-test** - Package from pantry: github.com/GoogleContainerTools/container-structure-test
+ * **container-structure-test** - validate the structure of your container images
  *
  * @domain `github.com/GoogleContainerTools/container-structure-test`
+ * @programs `container-structure-test`
+ * @version `1.19.3` (3 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/GoogleContainerTools/container-structure-test`
+ * @install `launchpad install container-structure-test`
+ * @name `container-structure-test`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomgooglecontainertoolscontainerstructuretest
+ * // Access the package
+ * const pkg = pantry.containerstructuretest
+ * // Or access via domain
+ * const samePkg = pantry.githubcomgooglecontainertoolscontainerstructuretest
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "container-structure-test"
- * console.log(pkg.description) // "Package from pantry: github.com/GoogleContainer..."
+ * console.log(pkg.description) // "validate the structure of your container images"
+ * console.log(pkg.programs)    // ["container-structure-test"]
+ * console.log(pkg.versions[0]) // "1.19.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/GoogleContainerTools/container-structure-test.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgooglecontainertoolscontainerstructuretestPackage = {
+export const containerstructuretestPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,40 @@ export const githubcomgooglecontainertoolscontainerstructuretestPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/GoogleContainerTools/container-structure-test' as const,
+  description: 'validate the structure of your container images' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/GoogleContainerTools/container-structure-test/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/GoogleContainerTools/container-structure-test' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/GoogleContainerTools/container-structure-test' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/GoogleContainerTools/container-structure-test -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/GoogleContainerTools/container-structure-test' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install container-structure-test' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'container-structure-test',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/GoogleContainerTools/container-structure-test/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.19.3',
+    '1.19.2',
+    '1.19.1',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) container-structure-test -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install container-structure-test' as const,
 }
 
-export type GithubcomgooglecontainertoolscontainerstructuretestPackage = typeof githubcomgooglecontainertoolscontainerstructuretestPackage
+export type ContainerstructuretestPackage = typeof containerstructuretestPackage

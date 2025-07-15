@@ -8,21 +8,21 @@ Packages related to build tools & automation.
 
 ### [earthly.dev/earthly](../packages/earthly.dev/earthly/index.md) (earthly)
 
-Package from pantry: earthly.dev/earthly
+Super simple build framework with fast, repeatable builds and an instantly familiar syntax – like Dockerfile and Makefile had a baby.
 
-**Programs**: None specified
+**Programs**: earthly
 
-**Install**: `launchpad install earthly.dev/earthly`
+**Install**: `launchpad install earthly`
 
 ---
 
 ### [freedesktop.org/pkg-config](../packages/freedesktop.org/pkg-config/index.md) (pkg-config)
 
-Package from pantry: freedesktop.org/pkg-config
+package compiler and linker metadata toolkit
 
-**Programs**: None specified
+**Programs**: pkg-config
 
-**Install**: `launchpad install freedesktop.org/pkg-config`
+**Install**: `launchpad install pkg-config`
 
 ---
 
