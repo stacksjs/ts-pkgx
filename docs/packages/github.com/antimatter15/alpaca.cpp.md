@@ -1,6 +1,6 @@
 # alpaca.cpp
 
-> Locally run an Instruction-Tuned Chat-Style LLM
+> Package from pantry: github.com/antimatter15/alpaca.cpp
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install alpaca.cpp
+launchpad install github.com/antimatter15/alpaca.cpp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `alpaca.cpp`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2023.3.21`
-
-</details>
-
-**Latest Version**: `2023.3.21`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) alpaca.cpp -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # yq
 
-> yq is a portable command-line YAML, JSON, XML, CSV, TOML and properties processor
+> Package from pantry: github.com/mikefarah/yq
 
 ## Package Information
 
@@ -13,38 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install yq
+launchpad install github.com/mikefarah/yq
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `yq`
-
-## Available Versions
-
-<details>
-<summary>Show all 34 versions</summary>
-
-- `4.46.1`, `4.45.4`, `4.45.3`, `4.45.2`, `4.45.1`
-- `4.44.6`, `4.44.5`, `4.44.3`, `4.44.2`, `4.44.1`
-- `4.43.1`, `4.42.1`, `4.41.1`, `4.40.7`, `4.40.5`
-- `4.40.4`, `4.40.3`, `4.40.2`, `4.40.1`, `4.35.2`
-- `4.35.1`, `4.34.2`, `4.34.1`, `4.33.3`, `4.33.2`
-- `4.33.1`, `4.32.2`, `4.32.1`, `4.31.2`, `4.31.1`
-- `4.30.8`, `4.30.7`, `4.30.6`, `4.30.5`
-
-</details>
-
-**Latest Version**: `4.46.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) yq -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

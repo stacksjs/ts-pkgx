@@ -1,11 +1,11 @@
-# github.com/confluentinc/libserdes
+# libserdes
 
-> Avro Serialization/Deserialization C/C++ library with Confluent schema-registry support
+> Package from pantry: github.com/confluentinc/libserdes
 
 ## Package Information
 
 - **Domain**: `github.com/confluentinc/libserdes`
-- **Name**: `github.com/confluentinc/libserdes`
+- **Name**: `libserdes`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/confluentinc/libserdes/package.yml)
 
@@ -22,24 +22,6 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `7.5.2.231027084844`
-
-</details>
-
-**Latest Version**: `7.5.2.231027084844`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/confluentinc/libserdes@7.5.2.231027084844 -- $SHELL -i
-```
-
 ## Dependencies
 
 This package depends on:
@@ -54,7 +36,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/confluentinc/libserdes']
+const pkg = pantry.libserdes
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

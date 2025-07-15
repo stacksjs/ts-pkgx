@@ -1,34 +1,24 @@
 /**
- * **zathura** - Document viewer
+ * **zathura** - Package from pantry: pwmt.org/zathura
  *
  * @domain `pwmt.org/zathura`
- * @programs `zathura`
- * @version `0.5.12` (7 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install zathura`
- * @name `zathura`
+ * @install `launchpad install pwmt.org/zathura`
  * @dependencies `gnome.org/glib^2.72`, `gnome.org/adwaita-icon-theme`, `gnu.org/gettext`, ... (+8 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.zathura
- * // Or access via domain
- * const samePkg = pantry.pwmtorgzathura
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pwmtorgzathura
  * console.log(pkg.name)        // "zathura"
- * console.log(pkg.description) // "Document viewer"
- * console.log(pkg.programs)    // ["zathura"]
- * console.log(pkg.versions[0]) // "0.5.12" (latest)
+ * console.log(pkg.description) // "Package from pantry: pwmt.org/zathura"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pwmt-org/zathura.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zathuraPackage = {
+export const pwmtorgzathuraPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const zathuraPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Document viewer' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pwmt.org/zathura/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: pwmt.org/zathura' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install zathura' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'zathura',
-  ] as const,
+  installCommand: 'launchpad install pwmt.org/zathura' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pwmt.org/zathura -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pwmt.org/zathura' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -75,26 +58,10 @@ export const zathuraPackage = {
     'sqlite.org@3',
     'darwin:gnome.org/gtk-mac-integration-gtk3',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.5.12',
-    '0.5.11',
-    '0.5.10',
-    '0.5.9',
-    '0.5.8',
-    '0.5.7',
-    '0.5.6',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zathura -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install zathura' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pwmt.org/zathura/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type ZathuraPackage = typeof zathuraPackage
+export type PwmtorgzathuraPackage = typeof pwmtorgzathuraPackage

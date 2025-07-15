@@ -1,34 +1,24 @@
 /**
- * **charmcraft** - Collaborate, build and publish charmed operators for Kubernetes, Linux and Windows.
+ * **charmcraft** - Package from pantry: github.com/canonical/charmcraft
  *
  * @domain `github.com/canonical/charmcraft`
- * @programs `charmcraft`
- * @version `3.5.2` (10 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install charmcraft`
- * @name `charmcraft`
+ * @install `launchpad install github.com/canonical/charmcraft`
  * @dependencies `pkgx.sh^1`, `libgit2.org~1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.charmcraft
- * // Or access via domain
- * const samePkg = pantry.githubcomcanonicalcharmcraft
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomcanonicalcharmcraft
  * console.log(pkg.name)        // "charmcraft"
- * console.log(pkg.description) // "Collaborate, build and publish charmed operator..."
- * console.log(pkg.programs)    // ["charmcraft"]
- * console.log(pkg.versions[0]) // "3.5.2" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/canonical/charm..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/canonical/charmcraft.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const charmcraftPackage = {
+export const githubcomcanonicalcharmcraftPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const charmcraftPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Collaborate, build and publish charmed operators for Kubernetes, Linux and Windows.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/canonical/charmcraft/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/canonical/charmcraft' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install charmcraft' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'charmcraft',
-  ] as const,
+  installCommand: 'launchpad install github.com/canonical/charmcraft' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/canonical/charmcraft -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/canonical/charmcraft' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -65,29 +48,10 @@ export const charmcraftPackage = {
     'pkgx.sh^1',
     'libgit2.org~1.7',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.5.2',
-    '3.5.1',
-    '3.5.0',
-    '3.4.3',
-    '3.3.3',
-    '3.3.2',
-    '3.3.0',
-    '3.2.2',
-    '3.2.1',
-    '2.7.5',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) charmcraft -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install charmcraft' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/canonical/charmcraft/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type CharmcraftPackage = typeof charmcraftPackage
+export type GithubcomcanonicalcharmcraftPackage = typeof githubcomcanonicalcharmcraftPackage

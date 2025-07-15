@@ -1,11 +1,11 @@
-# dotenv-linter
+# dotenv-linter.github.io
 
-> ⚡️Lightning-fast linter for .env files. Written in Rust 🦀
+> Package from pantry: dotenv-linter.github.io
 
 ## Package Information
 
 - **Domain**: `dotenv-linter.github.io`
-- **Name**: `dotenv-linter`
+- **Name**: `dotenv-linter.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dotenv-linter.github.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install dotenv-linter
+launchpad install dotenv-linter.github.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `dotenv-linter`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `3.3.0`
-
-</details>
-
-**Latest Version**: `3.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) dotenv-linter -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) dotenv-linter -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['dotenv-linter']
+const pkg = pantry['dotenv-linter.github.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

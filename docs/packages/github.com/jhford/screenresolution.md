@@ -1,6 +1,6 @@
 # screenresolution
 
-> Command line utility for getting, setting and listing display resolution on Mac OS X 10.6+
+> Package from pantry: github.com/jhford/screenresolution
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install screenresolution
+launchpad install github.com/jhford/screenresolution
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `screenresolution`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.6.0`
-
-</details>
-
-**Latest Version**: `1.6.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) screenresolution -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

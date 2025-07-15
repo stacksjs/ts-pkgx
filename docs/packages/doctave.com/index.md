@@ -1,11 +1,11 @@
-# doctave
+# doctave.com
 
-> A batteries-included developer documentation site generator
+> Package from pantry: doctave.com
 
 ## Package Information
 
 - **Domain**: `doctave.com`
-- **Name**: `doctave`
+- **Name**: `doctave.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/doctave.com/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install doctave
+launchpad install doctave.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `doctave`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.4.2`
-
-</details>
-
-**Latest Version**: `0.4.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) doctave -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) doctave -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.doctave
+const pkg = pantry['doctave.com']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

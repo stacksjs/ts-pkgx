@@ -1,6 +1,6 @@
 # kube-score
 
-> Kubernetes object analysis with recommendations for improved reliability and security. kube-score actively prevents downtime and bugs in your Kubernetes YAML and Charts. Static code analysis for Kubernetes.
+> Package from pantry: github.com/zegl/kube-score
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install kube-score
+launchpad install github.com/zegl/kube-score
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `kube-score`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `1.20.0`, `1.19.0`, `1.18.0`, `1.17.0`, `1.15.0`
-- `1.14.0`
-
-</details>
-
-**Latest Version**: `1.20.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) kube-score -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # lazydocker
 
-> The lazier way to manage everything docker
+> Package from pantry: github.com/jesseduffield/lazydocker
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install lazydocker
+launchpad install github.com/jesseduffield/lazydocker
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `lazydocker`
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `0.24.1`, `0.24.0`, `0.23.3`, `0.23.1`, `0.23.0`
-- `0.21.1`, `0.21.0`, `0.20.0`
-
-</details>
-
-**Latest Version**: `0.24.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) lazydocker -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

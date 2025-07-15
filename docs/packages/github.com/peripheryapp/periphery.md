@@ -1,6 +1,6 @@
 # periphery
 
-> A tool to identify unused code in Swift projects.
+> Package from pantry: github.com/peripheryapp/periphery
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install periphery
+launchpad install github.com/peripheryapp/periphery
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `periphery`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `3.2.0`, `3.1.0`, `3.0.3`, `3.0.2`, `3.0.1`
-- `3.0.0`, `2.21.2`
-
-</details>
-
-**Latest Version**: `3.2.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) periphery -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -1,11 +1,11 @@
-# kubecm
+# kubecm.cloud
 
-> Manage your kubeconfig more easily.
+> Package from pantry: kubecm.cloud
 
 ## Package Information
 
 - **Domain**: `kubecm.cloud`
-- **Name**: `kubecm`
+- **Name**: `kubecm.cloud`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kubecm.cloud/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install kubecm
+launchpad install kubecm.cloud
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `kubecm`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `0.33.0`, `0.32.3`, `0.32.2`, `0.32.1`, `0.32.0`
-- `0.31.0`, `0.30.0`, `0.29.1`, `0.29.0`, `0.28.0`
-
-</details>
-
-**Latest Version**: `0.33.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) kubecm -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -47,7 +28,7 @@ sh <(curl https://pkgx.sh) kubecm -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.kubecm
+const pkg = pantry['kubecm.cloud']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

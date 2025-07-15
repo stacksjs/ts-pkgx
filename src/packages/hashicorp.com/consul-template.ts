@@ -1,33 +1,23 @@
 /**
- * **consul-template** - Template rendering, notifier, and supervisor for @HashiCorp Consul and Vault data.
+ * **consul-template** - Package from pantry: hashicorp.com/consul-template
  *
  * @domain `hashicorp.com/consul-template`
- * @programs `consul-template`
- * @version `0.41.0` (4 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install consul-template`
- * @name `consul-template`
+ * @install `launchpad install hashicorp.com/consul-template`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.consultemplate
- * // Or access via domain
- * const samePkg = pantry.hashicorpcomconsultemplate
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.hashicorpcomconsultemplate
  * console.log(pkg.name)        // "consul-template"
- * console.log(pkg.description) // "Template rendering, notifier, and supervisor fo..."
- * console.log(pkg.programs)    // ["consul-template"]
- * console.log(pkg.versions[0]) // "0.41.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: hashicorp.com/consul-template"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/hashicorp-com/consul-template.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const consultemplatePackage = {
+export const hashicorpcomconsultemplatePackage = {
   /**
    * The display name of this package.
    */
@@ -39,41 +29,21 @@ export const consultemplatePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Template rendering, notifier, and supervisor for @HashiCorp Consul and Vault data.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/hashicorp.com/consul-template/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: hashicorp.com/consul-template' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install consul-template' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'consul-template',
-  ] as const,
+  installCommand: 'launchpad install hashicorp.com/consul-template' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +hashicorp.com/consul-template -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hashicorp.com/consul-template' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.41.0',
-    '0.40.0',
-    '0.39.1',
-    '0.39.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) consul-template -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install consul-template' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/hashicorp.com/consul-template/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type ConsultemplatePackage = typeof consultemplatePackage
+export type HashicorpcomconsultemplatePackage = typeof hashicorpcomconsultemplatePackage

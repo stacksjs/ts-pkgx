@@ -1,9 +1,7 @@
 /**
- * **eigen.tuxfamily.org** - pkgx package
+ * **eigen.tuxfamily.org** - Package from pantry: eigen.tuxfamily.org
  *
  * @domain `eigen.tuxfamily.org`
- * @version `3.4.0` (1 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install eigen.tuxfamily.org`
  * @dependencies `linux:gnu.org/gcc/libstdcxx@14` (includes OS-specific dependencies with `os:package` format)
@@ -14,7 +12,7 @@
  *
  * const pkg = pantry.eigentuxfamilyorg
  * console.log(pkg.name)        // "eigen.tuxfamily.org"
- * console.log(pkg.versions[0]) // "3.4.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: eigen.tuxfamily.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/eigen-tuxfamily-org.md
@@ -32,15 +30,14 @@ export const eigentuxfamilyorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/eigen.tuxfamily.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: eigen.tuxfamily.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install eigen.tuxfamily.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +eigen.tuxfamily.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install eigen.tuxfamily.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -51,16 +48,10 @@ export const eigentuxfamilyorgPackage = {
   dependencies: [
     'linux:gnu.org/gcc/libstdcxx@14',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.4.0',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +eigen.tuxfamily.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install eigen.tuxfamily.org' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/eigen.tuxfamily.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type EigentuxfamilyorgPackage = typeof eigentuxfamilyorgPackage

@@ -1,11 +1,11 @@
-# carthage
+# Carthage
 
-> A simple, decentralized dependency manager for Cocoa
+> Package from pantry: github.com/Carthage/Carthage
 
 ## Package Information
 
 - **Domain**: `github.com/Carthage/Carthage`
-- **Name**: `carthage`
+- **Name**: `Carthage`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Carthage/Carthage/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install carthage
+launchpad install github.com/Carthage/Carthage
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `carthage`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `0.40.0`, `0.39.1`, `0.39.0`
-
-</details>
-
-**Latest Version**: `0.40.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) carthage -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) carthage -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.carthage
+const pkg = pantry.Carthage
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

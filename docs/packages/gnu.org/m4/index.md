@@ -1,6 +1,6 @@
 # m4
 
-> GNU M4. Mirror of git://git.savannah.gnu.org/m4.git
+> Package from pantry: gnu.org/m4
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install m4
+launchpad install gnu.org/m4
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `m4`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.4.19`
-
-</details>
-
-**Latest Version**: `1.4.19`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) m4 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

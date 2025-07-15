@@ -1,11 +1,11 @@
-# rye
+# rye.astral.sh
 
-> Experimental Package Management Solution for Python
+> Package from pantry: rye.astral.sh
 
 ## Package Information
 
 - **Domain**: `rye.astral.sh`
-- **Name**: `rye`
+- **Name**: `rye.astral.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rye.astral.sh/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install rye
+launchpad install rye.astral.sh
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `rye`
-
-## Available Versions
-
-<details>
-<summary>Show all 9 versions</summary>
-
-- `0.44.0`, `0.43.0`, `0.42.0`, `0.41.0`, `0.40.0`
-- `0.39.0`, `0.38.0`, `0.37.0`, `0.36.0`
-
-</details>
-
-**Latest Version**: `0.44.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) rye -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -53,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.rye
+const pkg = pantry['rye.astral.sh']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

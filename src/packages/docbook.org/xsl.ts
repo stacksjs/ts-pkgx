@@ -1,39 +1,28 @@
 /**
- * **dbtoepub** - XML vocabulary to create presentation-neutral documents
+ * **xsl** - Package from pantry: docbook.org/xsl
  *
  * @domain `docbook.org/xsl`
- * @programs `dbtoepub`
- * @version `1.79.2` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install dbtoepub`
- * @name `docbook-xsl`
- * @aliases `dbtoepub`
+ * @install `launchpad install docbook.org/xsl`
  * @dependencies `docbook.org^5`, `gnome.org/libxml2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.dbtoepub
- * // Or access via domain
- * const samePkg = pantry.docbookorgxsl
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "docbook-xsl"
- * console.log(pkg.description) // "XML vocabulary to create presentation-neutral d..."
- * console.log(pkg.programs)    // ["dbtoepub"]
- * console.log(pkg.versions[0]) // "1.79.2" (latest)
+ * const pkg = pantry.docbookorgxsl
+ * console.log(pkg.name)        // "xsl"
+ * console.log(pkg.description) // "Package from pantry: docbook.org/xsl"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/docbook-org/xsl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dbtoepubPackage = {
+export const docbookorgxslPackage = {
   /**
    * The display name of this package.
    */
-  name: 'docbook-xsl' as const,
+  name: 'xsl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,22 +30,15 @@ export const dbtoepubPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'XML vocabulary to create presentation-neutral documents' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/docbook.org/xsl/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: docbook.org/xsl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install dbtoepub' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'dbtoepub',
-  ] as const,
+  installCommand: 'launchpad install docbook.org/xsl' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +docbook.org/xsl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docbook.org/xsl' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -66,22 +48,10 @@ export const dbtoepubPackage = {
     'docbook.org^5',
     'gnome.org/libxml2',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.79.2',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'dbtoepub',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dbtoepub -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install dbtoepub' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/docbook.org/xsl/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type DbtoepubPackage = typeof dbtoepubPackage
+export type DocbookorgxslPackage = typeof docbookorgxslPackage

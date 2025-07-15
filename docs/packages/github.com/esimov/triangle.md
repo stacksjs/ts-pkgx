@@ -1,6 +1,6 @@
 # triangle
 
-> Convert images to computer generated art using delaunay triangulation.
+> Package from pantry: github.com/esimov/triangle
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install triangle
+launchpad install github.com/esimov/triangle
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `triangle`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.0.0`
-
-</details>
-
-**Latest Version**: `2.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) triangle -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # vault-unseal
 
-> auto-unseal utility for Hashicorp Vault
+> Package from pantry: github.com/lrstanley/vault-unseal
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install vault-unseal
+launchpad install github.com/lrstanley/vault-unseal
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `vault-unseal`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.7.2`, `0.7.1`, `0.7.0`, `0.6.0`
-
-</details>
-
-**Latest Version**: `0.7.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) vault-unseal -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

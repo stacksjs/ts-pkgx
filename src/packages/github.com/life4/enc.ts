@@ -1,33 +1,23 @@
 /**
- * **enc** - 🔑🔒 A modern and friendly CLI alternative to GnuPG: generate and download keys, encrypt, decrypt, and sign text and files, and more.
+ * **enc** - Package from pantry: github.com/life4/enc
  *
  * @domain `github.com/life4/enc`
- * @programs `enc`
- * @version `1.1.4` (3 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install enc`
- * @name `enc`
+ * @install `launchpad install github.com/life4/enc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.enc
- * // Or access via domain
- * const samePkg = pantry.githubcomlife4enc
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomlife4enc
  * console.log(pkg.name)        // "enc"
- * console.log(pkg.description) // "🔑🔒 A modern and friendly CLI alternative to G..."
- * console.log(pkg.programs)    // ["enc"]
- * console.log(pkg.versions[0]) // "1.1.4" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/life4/enc"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/life4/enc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const encPackage = {
+export const githubcomlife4encPackage = {
   /**
    * The display name of this package.
    */
@@ -39,40 +29,21 @@ export const encPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '🔑🔒 A modern and friendly CLI alternative to GnuPG: generate and download keys, encrypt, decrypt, and sign text and files, and more.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/life4/enc/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/life4/enc' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install enc' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'enc',
-  ] as const,
+  installCommand: 'launchpad install github.com/life4/enc' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/life4/enc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/life4/enc' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.1.4',
-    '1.1.3',
-    '1.1.2',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) enc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install enc' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/life4/enc/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type EncPackage = typeof encPackage
+export type Githubcomlife4encPackage = typeof githubcomlife4encPackage

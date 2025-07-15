@@ -1,6 +1,6 @@
 # colima
 
-> Container runtimes on macOS (and Linux) with minimal setup
+> Package from pantry: github.com/abiosoft/colima
 
 ## Package Information
 
@@ -13,36 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install colima
+launchpad install github.com/abiosoft/colima
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `colima`
-
-## Available Versions
-
-<details>
-<summary>Show all 22 versions</summary>
-
-- `0.8.1`, `0.8.0`, `0.7.6`, `0.7.5`, `0.7.4`
-- `0.7.3`, `0.7.2`, `0.7.1`, `0.7.0`, `0.6.10`
-- `0.6.9`, `0.6.8`, `0.6.7`, `0.6.6`, `0.6.5`
-- `0.6.4`, `0.6.3`, `0.6.2`, `0.6.1`, `0.6.0`
-- `0.5.6`, `0.5.5`
-
-</details>
-
-**Latest Version**: `0.8.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) colima -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

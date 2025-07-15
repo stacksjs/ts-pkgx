@@ -1,11 +1,11 @@
-# github.com/confluentinc/librdkafka
+# librdkafka
 
-> The Apache Kafka C/C++ library
+> Package from pantry: github.com/confluentinc/librdkafka
 
 ## Package Information
 
 - **Domain**: `github.com/confluentinc/librdkafka`
-- **Name**: `github.com/confluentinc/librdkafka`
+- **Name**: `librdkafka`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/confluentinc/librdkafka/package.yml)
 
@@ -21,26 +21,6 @@ launchpad install github.com/confluentinc/librdkafka
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 13 versions</summary>
-
-- `2.11.0`, `2.10.1`, `2.10.0`, `2.8.0`, `2.6.1`
-- `2.6.0`, `2.5.3`, `2.5.0`, `2.4.0`, `2.3.0`
-- `2.2.1`, `2.2.0`, `2.1.1`
-
-</details>
-
-**Latest Version**: `2.11.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/confluentinc/librdkafka@2.11.0 -- $SHELL -i
-```
 
 ## Dependencies
 
@@ -58,7 +38,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/confluentinc/librdkafka']
+const pkg = pantry.librdkafka
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

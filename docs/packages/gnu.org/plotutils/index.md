@@ -1,11 +1,11 @@
-# gnu.org/plotutils
+# plotutils
 
-> C/C++ function library for exporting 2-D vector graphics
+> Package from pantry: gnu.org/plotutils
 
 ## Package Information
 
 - **Domain**: `gnu.org/plotutils`
-- **Name**: `gnu.org/plotutils`
+- **Name**: `plotutils`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/plotutils/package.yml)
 
@@ -20,32 +20,7 @@ launchpad install gnu.org/plotutils
 
 This package provides the following executable programs:
 
-- `double`
-- `graph`
-- `ode`
-- `pic2plot`
-- `plot`
-- `plotfont`
-- `spline`
-- `tek2plot`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.6.0`
-
-</details>
-
-**Latest Version**: `2.6.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/plotutils@2.6.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -60,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/plotutils']
+const pkg = pantry.plotutils
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

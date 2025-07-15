@@ -1,6 +1,6 @@
 # ifacemaker
 
-> Generate interfaces from structure methods.
+> Package from pantry: github.com/vburenin/ifacemaker
 
 ## Package Information
 
@@ -13,38 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ifacemaker
+launchpad install github.com/vburenin/ifacemaker
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ifacemaker`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.3.0`, `1.2.1`
-
-</details>
-
-**Latest Version**: `1.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ifacemaker -- $SHELL -i
-```
-
-## Related Packages
-
-These packages work well with ifacemaker:
-
-- [`go.dev`](../../go.dev/index.md) - The Go programming language
+*No programs specified*
 
 ## Usage Examples
 

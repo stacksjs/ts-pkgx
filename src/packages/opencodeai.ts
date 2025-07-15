@@ -1,9 +1,7 @@
 /**
- * **opencode.ai** - pkgx package
+ * **opencode.ai** - Package from pantry: opencode.ai
  *
  * @domain `opencode.ai`
- * @version `0.3.5` (5 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install opencode.ai`
  *
@@ -13,7 +11,7 @@
  *
  * const pkg = pantry.opencodeai
  * console.log(pkg.name)        // "opencode.ai"
- * console.log(pkg.versions[0]) // "0.3.5" (latest)
+ * console.log(pkg.description) // "Package from pantry: opencode.ai"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/opencode-ai.md
@@ -31,32 +29,21 @@ export const opencodeaiPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/opencode.ai/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: opencode.ai' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install opencode.ai' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +opencode.ai -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install opencode.ai' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.3.5',
-    '0.3.4',
-    '0.3.3',
-    '0.3.2',
-    '0.2.33',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +opencode.ai -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install opencode.ai' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/opencode.ai/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type OpencodeaiPackage = typeof opencodeaiPackage
