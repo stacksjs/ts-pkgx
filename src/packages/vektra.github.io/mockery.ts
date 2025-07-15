@@ -3,7 +3,7 @@
  *
  * @domain `vektra.github.io/mockery`
  * @programs `mockery`
- * @version `3.5.0` (83 versions available)
+ * @version `3.5.1` (84 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mockery`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "mockery"
  * console.log(pkg.description) // "Mock code autogenerator for Golang"
  * console.log(pkg.programs)    // ["mockery"]
- * console.log(pkg.versions[0]) // "3.5.0" (latest)
+ * console.log(pkg.versions[0]) // "3.5.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/vektra-github-io/mockery.md
@@ -62,6 +62,7 @@ export const mockeryPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.5.1',
     '3.5.0',
     '3.4.0',
     '3.3.6',

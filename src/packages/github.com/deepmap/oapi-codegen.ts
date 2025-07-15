@@ -2,7 +2,7 @@
  * **github.com/deepmap/oapi-codegen** - Generate Go client and server boilerplate from OpenAPI 3 specifications
  *
  * @domain `github.com/deepmap/oapi-codegen`
- * @version `2.4.1` (10 versions available)
+ * @version `2.5.0` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/deepmap/oapi-codegen`
@@ -14,7 +14,7 @@
  * const pkg = pantry.githubcomdeepmapoapicodegen
  * console.log(pkg.name)        // "github.com/deepmap/oapi-codegen"
  * console.log(pkg.description) // "Generate Go client and server boilerplate from ..."
- * console.log(pkg.versions[0]) // "2.4.1" (latest)
+ * console.log(pkg.versions[0]) // "2.5.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/deepmap/oapi-codegen.md
@@ -49,6 +49,7 @@ export const githubcomdeepmapoapicodegenPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.5.0',
     '2.4.1',
     '2.4.0',
     '2.3.0',
