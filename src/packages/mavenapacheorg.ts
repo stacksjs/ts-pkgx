@@ -3,7 +3,7 @@
  *
  * @domain `maven.apache.org`
  * @programs `mvn`, `mvnDebug`, `mvnyjp`
- * @version `3.9.10` (11 versions available)
+ * @version `3.9.11` (12 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mvn`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "mvn"
  * console.log(pkg.description) // "Java-based project management"
  * console.log(pkg.programs)    // ["mvn", "mvnDebug", ...]
- * console.log(pkg.versions[0]) // "3.9.10" (latest)
+ * console.log(pkg.versions[0]) // "3.9.11" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/maven-apache-org.md
@@ -71,6 +71,7 @@ export const mvnPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.9.11',
     '3.9.10',
     '3.9.9',
     '3.9.8',
