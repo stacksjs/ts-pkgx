@@ -3,7 +3,7 @@
  *
  * @domain `earthly.dev/earthly`
  * @programs `earthly`
- * @version `0.8.15` (1 versions available)
+ * @version `0.8.16` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install earthly`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "earthly"
  * console.log(pkg.description) // "Super simple build framework with fast, repeata..."
  * console.log(pkg.programs)    // ["earthly"]
- * console.log(pkg.versions[0]) // "0.8.15" (latest)
+ * console.log(pkg.versions[0]) // "0.8.16" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/earthly-dev/earthly.md
@@ -62,6 +62,7 @@ export const earthlyPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.8.16',
     '0.8.15',
   ] as const,
   /**
