@@ -3,7 +3,7 @@
  *
  * @domain `isc.org/bind9`
  * @programs `arpaname`, `delv`, `dig`, `dnssec-cds`, `dnssec-dsfromkey`, ... (+24 more)
- * @version `9.21.9` (14 versions available)
+ * @version `9.21.9` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bind9`
@@ -113,11 +113,13 @@ export const bind9Package = {
     '9.21.6',
     '9.21.5',
     '9.21.4',
+    '9.20.11',
     '9.20.10',
     '9.20.9',
     '9.20.8',
     '9.20.7',
     '9.20.6',
+    '9.18.38',
     '9.18.37',
     '9.18.36',
     '9.18.35',
