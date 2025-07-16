@@ -3,7 +3,7 @@
  *
  * @domain `rubygems.org`
  * @programs `bundle`, `bundler`, `gem`
- * @version `3.6.9` (57 versions available)
+ * @version `3.7.0` (58 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rubygems.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "rubygems.org"
  * console.log(pkg.description) // "Powerful, clean, object-oriented scripting lang..."
  * console.log(pkg.programs)    // ["bundle", "bundler", ...]
- * console.log(pkg.versions[0]) // "3.6.9" (latest)
+ * console.log(pkg.versions[0]) // "3.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rubygems-org.md
@@ -66,6 +66,7 @@ export const rubygemsorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.7.0',
     '3.6.9',
     '3.6.8',
     '3.6.7',
