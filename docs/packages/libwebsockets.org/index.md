@@ -25,19 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 6 versions</summary>
 
-- `4.3.5`, `4.3.4`, `4.3.3`, `4.3.2`
+- `4.4.1`, `4.4.0`, `4.3.5`, `4.3.4`, `4.3.3`
+- `4.3.2`
 
 </details>
 
-**Latest Version**: `4.3.5`
+**Latest Version**: `4.4.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +libwebsockets.org@4.3.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) +libwebsockets.org@4.4.1 -- $SHELL -i
 ```
 
 ## Dependencies
