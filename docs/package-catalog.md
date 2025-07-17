@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-07-17T08:31:34.043Z
+- **Last Updated**: 2025-07-17T09:33:51.898Z
 
 ## Table of Contents
 
@@ -47,7 +47,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[crystal-lang.org](./packages/crystal-lang.org/index.md)** () | Fast and statically typed, compiled language with Ruby-like syntax | crystal | 1.17.0 (+19) | `pkgx crystal` |
-| **[dart.dev](./packages/dart.dev/index.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.8.1 (+35) | `pkgx dart` |
+| **[dart.dev](./packages/dart.dev/index.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.8.2 (+36) | `pkgx dart` |
 | **[go.dev](./packages/go.dev/index.md)** (go) | The Go programming language | go, gofmt | 1.24.5 (+69) | `pkgx go` |
 | **[julialang.org](./packages/julialang.org/index.md)** () | The Julia Programming Language | julia | 1.11.6 (+19) | `pkgx julia` |
 | **[lua.org](./packages/lua.org/index.md)** () | Powerful, lightweight programming language | lua, luac | 5.4.8 (+3) | `pkgx lua` |
@@ -70,7 +70,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[agpt.co](./packages/agpt.co/index.md)** () | AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to pr... | auto-gpt | 0.4.7 (+8) | `pkgx auto-gpt` |
 | **[crates.io/aichat](./packages/crates.io/aichat/index.md)** () | All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access... | aichat | 0.30.0 (+2) | `pkgx aichat` |
 | **[deepwisdom.ai](./packages/deepwisdom.ai/index.md)** (metagpt) | 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming | metagpt | 0.8.2 (+15) | `pkgx metagpt` |
-| **[elizaOS.github.io](./packages/elizaOS.github.io/index.md)** (eliza) | Autonomous agents for everyone | eliza | 1.2.9 (+39) | `pkgx eliza` |
+| **[elizaOS.github.io](./packages/elizaOS.github.io/index.md)** (eliza) | Autonomous agents for everyone | eliza | 1.2.10 (+40) | `pkgx eliza` |
 | **[github.com/AntonOsika/gpt-engineer](./packages/github.com/AntonOsika/gpt-engineer.md)** () | Platform to experiment with the AI Software Engineer. Terminal based. NOTE: Very different from h... | gpte, gpt-engineer | 0.3.1 (+14) | `pkgx GPT Engineer` |
 | **[github.com/AUTOMATIC1111/stable-diffusion-webui](./packages/github.com/AUTOMATIC1111/stable-diffusion-webui.md)** () | Stable Diffusion web UI | stable-diffusion-webui | 1.10.1 (+19) | `pkgx stable-diffusion-webui` |
 | **[github.com/nat/openplayground](./packages/github.com/nat/openplayground.md)** () | An LLM playground you can run on your laptop | openplayground | 2023.6.5 (+0) | `pkgx openplayground` |
