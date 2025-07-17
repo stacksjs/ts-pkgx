@@ -2,7 +2,7 @@
  * **cmocka.org** - pkgx package
  *
  * @domain `cmocka.org`
- * @version `1.1.7` (1 versions available)
+ * @version `1.1.8` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cmocka.org`
@@ -13,7 +13,7 @@
  *
  * const pkg = pantry.cmockaorg
  * console.log(pkg.name)        // "cmocka.org"
- * console.log(pkg.versions[0]) // "1.1.7" (latest)
+ * console.log(pkg.versions[0]) // "1.1.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cmocka-org.md
@@ -48,6 +48,7 @@ export const cmockaorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.1.8',
     '1.1.7',
   ] as const,
   aliases: [] as const,
