@@ -3,7 +3,7 @@
  *
  * @domain `erlang.org`
  * @programs `ct_run`, `dialyzer`, `epmd`, `erl`, `erlc`, ... (+4 more)
- * @version `28.0.1` (76 versions available)
+ * @version `28.0.1` (77 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install erlang.org`
@@ -75,6 +75,7 @@ export const erlangorgPackage = {
   versions: [
     '28.0.1',
     '28.0.0',
+    '27.3.4.2',
     '27.3.4.1',
     '27.3.4',
     '27.3.3',
