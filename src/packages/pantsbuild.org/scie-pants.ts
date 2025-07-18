@@ -3,7 +3,7 @@
  *
  * @domain `pantsbuild.org/scie-pants`
  * @programs `pants`
- * @version `0.12.3` (4 versions available)
+ * @version `0.12.5` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pants`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "scie-pants"
  * console.log(pkg.description) // "Protects your Pants from the elements."
  * console.log(pkg.programs)    // ["pants"]
- * console.log(pkg.versions[0]) // "0.12.3" (latest)
+ * console.log(pkg.versions[0]) // "0.12.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pantsbuild-org/scie-pants.md
@@ -70,6 +70,7 @@ export const pantsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.12.5',
     '0.12.3',
     '0.12.2',
     '0.12.1',
