@@ -275,7 +275,7 @@ import { cURLPackage } from './curlse'
 import { cyrussaslPackage } from './cyrusimap.org/cyrus-sasl'
 import { cythonorglibcythonPackage } from './cython.org/libcython'
 import { cythonPackage } from './cythonorg'
-import { d2Package } from './d2langcom'
+import { d2langcomPackage } from './d2langcom'
 import { daggerPackage } from './daggerio'
 import { dartPackage } from './dartdev'
 import { filePackage } from './darwinsys.com/file'
@@ -2069,7 +2069,7 @@ export interface Pantry {
   libcython: typeof cythonorglibcythonPackage
   cythonorglibcython: typeof cythonorglibcythonPackage
   cythonorg: typeof cythonPackage
-  d2langcom: typeof d2Package
+  d2langcom: typeof d2langcomPackage
   daggerio: typeof daggerPackage
   dartdev: typeof dartPackage
 
@@ -5877,7 +5877,7 @@ export const pantry: Pantry = {
   libcython: cythonorglibcythonPackage,
   cythonorglibcython: cythonorglibcythonPackage,
   cythonorg: cythonPackage,
-  d2langcom: d2Package,
+  d2langcom: d2langcomPackage,
   daggerio: daggerPackage,
   dartdev: dartPackage,
 

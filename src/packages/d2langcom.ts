@@ -1,37 +1,26 @@
 /**
- * **d2** - D2 is a modern diagram scripting language that turns text to diagrams.
+ * **d2lang.com** - pkgx package
  *
  * @domain `d2lang.com`
- * @programs `d2`
- * @version `0.7.0` (11 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install d2`
- * @name `d2`
+ * @install `launchpad install d2lang.com`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.d2
- * // Or access via domain
- * const samePkg = pantry.d2langcom
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "d2"
- * console.log(pkg.description) // "D2 is a modern diagram scripting language that ..."
- * console.log(pkg.programs)    // ["d2"]
- * console.log(pkg.versions[0]) // "0.7.0" (latest)
+ * const pkg = pantry.d2langcom
+ * console.log(pkg.name)        // "d2lang.com"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/d2lang-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const d2Package = {
+export const d2langcomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'd2' as const,
+  name: 'd2lang.com' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,48 +28,22 @@ export const d2Package = {
   /**
    * Brief description of what this package does.
    */
-  description: 'D2 is a modern diagram scripting language that turns text to diagrams.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/d2lang.com/package.yml' as const,
+  description: '' as const,
+  packageYmlUrl: '' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install d2' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'd2',
-  ] as const,
+  installCommand: 'launchpad install d2lang.com' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.7.0',
-    '0.6.9',
-    '0.6.8',
-    '0.6.7',
-    '0.6.6',
-    '0.6.5',
-    '0.6.4',
-    '0.6.3',
-    '0.6.2',
-    '0.6.1',
-    '0.6.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
+  versions: [] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) d2 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install d2' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +d2lang.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install d2lang.com' as const,
 }
 
-export type D2Package = typeof d2Package
+export type D2langcomPackage = typeof d2langcomPackage
