@@ -3,7 +3,7 @@
  *
  * @domain `github.com/samwho/spacer`
  * @programs `spacer`
- * @version `0.3.9` (8 versions available)
+ * @version `0.4.1` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install spacer`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "spacer"
  * console.log(pkg.description) // "Small command-line utility for adding spacers t..."
  * console.log(pkg.programs)    // ["spacer"]
- * console.log(pkg.versions[0]) // "0.3.9" (latest)
+ * console.log(pkg.versions[0]) // "0.4.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/samwho/spacer.md
@@ -62,6 +62,7 @@ export const spacerPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.4.1',
     '0.3.9',
     '0.3.8',
     '0.3.7',
