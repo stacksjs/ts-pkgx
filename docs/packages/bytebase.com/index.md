@@ -50,7 +50,7 @@ sh <(curl https://pkgx.sh) bytebase -- $SHELL -i
 
 This package depends on:
 
-- `nodejs.org>=23.11`
+- `nodejs.org~24.1 # 24.4 has oom errors`
 
 ## Related Packages
 

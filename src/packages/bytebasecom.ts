@@ -8,7 +8,7 @@
  *
  * @install `launchpad install bytebase`
  * @name `bytebase`
- * @dependencies `nodejs.org>=23.11`
+ * @dependencies `nodejs.org~24.1 # 24.4 has oom errors`
  * @companions `postgresql.org`
  *
  * @example
@@ -69,7 +69,7 @@ export const bytebasePackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'nodejs.org>=23.11',
+    'nodejs.org~24.1 # 24.4 has oom errors',
   ] as const,
   /**
    * Available versions from newest to oldest.
