@@ -3,7 +3,7 @@
  *
  * @domain `mise.jdx.dev`
  * @programs `rtx`, `mise`
- * @version `2025.7.16` (303 versions available)
+ * @version `2025.7.17` (305 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mise`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "mise"
  * console.log(pkg.description) // "dev tools, env vars, task runner"
  * console.log(pkg.programs)    // ["rtx", "mise"]
- * console.log(pkg.versions[0]) // "2025.7.16" (latest)
+ * console.log(pkg.versions[0]) // "2025.7.17" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mise-jdx-dev.md
@@ -71,7 +71,9 @@ export const misePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2025.7.17',
     '2025.7.16',
+    '2025.7.14',
     '2025.7.12',
     '2025.7.11',
     '2025.7.10',
