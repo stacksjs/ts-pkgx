@@ -2,7 +2,7 @@
  * **crates.io/rtx-cli** - dev tools, env vars, task runner
  *
  * @domain `crates.io/rtx-cli`
- * @version `2025.7.17` (396 versions available)
+ * @version `2025.7.17` (399 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/rtx-cli`
@@ -59,6 +59,9 @@ export const cratesiortxcliPackage = {
   versions: [
     '2025.7.17',
     '2025.7.16',
+    '2025.7.15',
+    '2025.7.14',
+    '2025.7.13',
     '2025.7.12',
     '2025.7.11',
     '2025.7.10',
