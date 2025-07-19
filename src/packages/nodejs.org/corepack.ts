@@ -3,7 +3,7 @@
  *
  * @domain `nodejs.org/corepack`
  * @programs `corepack`
- * @version `0.33.0` (12 versions available)
+ * @version `0.34.0` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install corepack`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "corepack"
  * console.log(pkg.description) // "Platform built on V8 to build network applications"
  * console.log(pkg.programs)    // ["corepack"]
- * console.log(pkg.versions[0]) // "0.33.0" (latest)
+ * console.log(pkg.versions[0]) // "0.34.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nodejs-org/corepack.md
@@ -69,6 +69,7 @@ export const corepackPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.34.0',
     '0.33.0',
     '0.32.0',
     '0.31.0',
