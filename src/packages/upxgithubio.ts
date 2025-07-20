@@ -3,7 +3,7 @@
  *
  * @domain `upx.github.io`
  * @programs `upx`
- * @version `5.0.1` (3 versions available)
+ * @version `5.0.2` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install upx`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "upx"
  * console.log(pkg.description) // "UPX - the Ultimate Packer for eXecutables"
  * console.log(pkg.programs)    // ["upx"]
- * console.log(pkg.versions[0]) // "5.0.1" (latest)
+ * console.log(pkg.versions[0]) // "5.0.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/upx-github-io.md
@@ -69,6 +69,7 @@ export const upxPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '5.0.2',
     '5.0.1',
     '5.0.0',
     '4.2.4',
