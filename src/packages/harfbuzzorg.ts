@@ -3,7 +3,7 @@
  *
  * @domain `harfbuzz.org`
  * @programs `hb-ot-shape-closure`, `hb-shape`, `hb-subset`, `hb-view`
- * @version `11.2.1` (28 versions available)
+ * @version `999.999.999` (29 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install harfbuzz.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "harfbuzz.org"
  * console.log(pkg.description) // "HarfBuzz text shaping engine"
  * console.log(pkg.programs)    // ["hb-ot-shape-closure", "hb-shape", ...]
- * console.log(pkg.versions[0]) // "11.2.1" (latest)
+ * console.log(pkg.versions[0]) // "999.999.999" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/harfbuzz-org.md
@@ -71,6 +71,7 @@ export const harfbuzzorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '999.999.999',
     '11.2.1',
     '11.2.0',
     '11.1.0',

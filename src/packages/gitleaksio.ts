@@ -3,7 +3,7 @@
  *
  * @domain `gitleaks.io`
  * @programs `gitleaks`
- * @version `8.27.2` (29 versions available)
+ * @version `8.28.0` (30 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gitleaks`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "gitleaks"
  * console.log(pkg.description) // "Find secrets with Gitleaks 🔑"
  * console.log(pkg.programs)    // ["gitleaks"]
- * console.log(pkg.versions[0]) // "8.27.2" (latest)
+ * console.log(pkg.versions[0]) // "8.28.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gitleaks-io.md
@@ -62,6 +62,7 @@ export const gitleaksPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '8.28.0',
     '8.27.2',
     '8.27.1',
     '8.27.0',
