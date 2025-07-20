@@ -3,7 +3,7 @@
  *
  * @domain `fltk.org`
  * @programs `fluid`, `fltk-config`
- * @version `1.4.3` (6 versions available)
+ * @version `1.4.4` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fltk.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "fltk.org"
  * console.log(pkg.description) // "FLTK - Fast Light Tool Kit - https://github.com..."
  * console.log(pkg.programs)    // ["fluid", "fltk-config"]
- * console.log(pkg.versions[0]) // "1.4.3" (latest)
+ * console.log(pkg.versions[0]) // "1.4.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/fltk-org.md
@@ -70,6 +70,7 @@ export const fltkorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.4.4',
     '1.4.3',
     '1.4.2',
     '1.4.1',
