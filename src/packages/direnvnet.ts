@@ -3,7 +3,7 @@
  *
  * @domain `direnv.net`
  * @programs `direnv`
- * @version `2.37.0` (7 versions available)
+ * @version `2.37.1` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install direnv`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "direnv"
  * console.log(pkg.description) // "Load/unload environment variables based on $PWD"
  * console.log(pkg.programs)    // ["direnv"]
- * console.log(pkg.versions[0]) // "2.37.0" (latest)
+ * console.log(pkg.versions[0]) // "2.37.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/direnv-net.md
@@ -62,6 +62,7 @@ export const direnvPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.37.1',
     '2.37.0',
     '2.36.0',
     '2.35.0',
