@@ -3,7 +3,7 @@
  *
  * @domain `github.com/cloudbase/garm`
  * @programs `garm`, `garm-cli`
- * @version `0.1.5` (2 versions available)
+ * @version `0.1.6` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/cloudbase/garm`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "cloudbase/garm"
  * console.log(pkg.description) // "GitHub Actions Runner Manager"
  * console.log(pkg.programs)    // ["garm", "garm-cli"]
- * console.log(pkg.versions[0]) // "0.1.5" (latest)
+ * console.log(pkg.versions[0]) // "0.1.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/cloudbase/garm.md
@@ -63,6 +63,7 @@ export const cloudbasegarmPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.1.6',
     '0.1.5',
     '0.1.4',
   ] as const,
