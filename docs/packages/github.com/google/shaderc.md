@@ -1,11 +1,11 @@
-# shaderc
+# glslc
 
-> Package from pantry: github.com/google/shaderc
+> A collection of tools, libraries, and tests for Vulkan shader compilation.
 
 ## Package Information
 
 - **Domain**: `github.com/google/shaderc`
-- **Name**: `shaderc`
+- **Name**: `glslc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/google/shaderc/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/google/shaderc
+launchpad install glslc
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `glslc`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `2025.3.0`, `2025.2.0`, `2025.1.0`, `2024.4.0`, `2024.3.0`
+- `2024.2.0`, `2024.1.0`, `2024.0.0`, `2023.8.0`
+
+</details>
+
+**Latest Version**: `2025.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) glslc -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +47,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.shaderc
+const pkg = pantry.glslc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,11 +1,11 @@
-# libxslt
+# xslt
 
-> Package from pantry: gnome.org/libxslt
+> Read-only mirror of https://gitlab.gnome.org/GNOME/libxslt
 
 ## Package Information
 
 - **Domain**: `gnome.org/libxslt`
-- **Name**: `libxslt`
+- **Name**: `xslt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/libxslt/package.yml)
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install gnome.org/libxslt
+launchpad install xslt
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `xslt-config`
+- `xsltproc`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `1.1.43`, `1.1.42`, `1.1.41`, `1.1.40`, `1.1.39`
+- `1.1.38`, `1.1.37`
+
+</details>
+
+**Latest Version**: `1.1.43`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +gnome.org/libxslt@1.1.43 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libxslt
+const pkg = pantry.xslt
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # applesimutils
 
-> Package from pantry: wix.com/applesimutils
+> A collection of command-line utils for Apple simulators.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install wix.com/applesimutils
+launchpad install applesimutils
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `applesimutils`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.9.12`, `0.9.10`
+
+</details>
+
+**Latest Version**: `0.9.12`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) applesimutils -- $SHELL -i
+```
 
 ## Usage Examples
 

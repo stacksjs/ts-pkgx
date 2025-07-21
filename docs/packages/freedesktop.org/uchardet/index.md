@@ -1,6 +1,6 @@
 # uchardet
 
-> Package from pantry: freedesktop.org/uchardet
+> Encoding detector library
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install freedesktop.org/uchardet
+launchpad install uchardet
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `uchardet`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.0.8`
+
+</details>
+
+**Latest Version**: `0.0.8`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) uchardet -- $SHELL -i
+```
 
 ## Usage Examples
 

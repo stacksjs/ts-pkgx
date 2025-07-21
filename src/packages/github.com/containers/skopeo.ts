@@ -1,24 +1,34 @@
 /**
- * **skopeo** - Package from pantry: github.com/containers/skopeo
+ * **skopeo** - Work with remote images registries - retrieving information, images, signing content
  *
  * @domain `github.com/containers/skopeo`
+ * @programs `skopeo`
+ * @version `1.19.0` (15 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/containers/skopeo`
+ * @install `launchpad install skopeo`
+ * @name `skopeo`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomcontainersskopeo
+ * // Access the package
+ * const pkg = pantry.skopeo
+ * // Or access via domain
+ * const samePkg = pantry.githubcomcontainersskopeo
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "skopeo"
- * console.log(pkg.description) // "Package from pantry: github.com/containers/skopeo"
+ * console.log(pkg.description) // "Work with remote images registries - retrieving..."
+ * console.log(pkg.programs)    // ["skopeo"]
+ * console.log(pkg.versions[0]) // "1.19.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/containers/skopeo.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcontainersskopeoPackage = {
+export const skopeoPackage = {
   /**
    * The display name of this package.
    */
@@ -30,15 +40,22 @@ export const githubcomcontainersskopeoPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/containers/skopeo' as const,
+  description: 'Work with remote images registries - retrieving information, images, signing content' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/containers/skopeo/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/containers/skopeo' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/containers/skopeo -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/containers/skopeo' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install skopeo' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'skopeo',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,34 @@ export const githubcomcontainersskopeoPackage = {
   dependencies: [
     'curl.se/ca-certs',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/containers/skopeo/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.19.0',
+    '1.18.0',
+    '1.17.0',
+    '1.16.1',
+    '1.16.0',
+    '1.15.2',
+    '1.15.1',
+    '1.15.0',
+    '1.14.5',
+    '1.14.4',
+    '1.14.3',
+    '1.14.2',
+    '1.14.1',
+    '1.14.0',
+    '1.13.3',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) skopeo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install skopeo' as const,
 }
 
-export type GithubcomcontainersskopeoPackage = typeof githubcomcontainersskopeoPackage
+export type SkopeoPackage = typeof skopeoPackage

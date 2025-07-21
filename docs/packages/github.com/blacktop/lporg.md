@@ -1,6 +1,6 @@
 # lporg
 
-> Package from pantry: github.com/blacktop/lporg
+> Organize Your macOS Launchpad Apps
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/blacktop/lporg
+launchpad install lporg
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `lporg`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `20.4.32`
+
+</details>
+
+**Latest Version**: `20.4.32`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) lporg -- $SHELL -i
+```
 
 ## Usage Examples
 

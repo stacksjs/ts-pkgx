@@ -1,11 +1,11 @@
-# webp
+# google.com/webp
 
-> Package from pantry: google.com/webp
+> Mirror only. Please do not send pull requests. See https://chromium.googlesource.com/webm/libwebp/+/HEAD/CONTRIBUTING.md.
 
 ## Package Information
 
 - **Domain**: `google.com/webp`
-- **Name**: `webp`
+- **Name**: `google.com/webp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/webp/package.yml)
 
@@ -20,7 +20,32 @@ launchpad install google.com/webp
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cwebp`
+- `dwebp`
+- `gif2webp`
+- `img2webp`
+- `vwebp`
+- `webpinfo`
+- `webpmux`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `1.6.0`, `1.5.0`, `1.4.0`, `1.3.2`, `1.3.1`
+- `1.3.0`
+
+</details>
+
+**Latest Version**: `1.6.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +google.com/webp@1.6.0 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -37,7 +62,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.webp
+const pkg = pantry['google.com/webp']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

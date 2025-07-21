@@ -1,11 +1,11 @@
-# libde265
+# github.com/strukturag/libde265
 
-> Package from pantry: github.com/strukturag/libde265
+> Open h.265 video codec implementation.
 
 ## Package Information
 
 - **Domain**: `github.com/strukturag/libde265`
-- **Name**: `libde265`
+- **Name**: `github.com/strukturag/libde265`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/strukturag/libde265/package.yml)
 
@@ -20,7 +20,32 @@ launchpad install github.com/strukturag/libde265
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `acceleration_speed`
+- `bjoentegaard`
+- `block-rate-estim`
+- `gen-enc-table`
+- `rd-curves`
+- `tests`
+- `yuv-distortion`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `1.0.16`, `1.0.15`, `1.0.14`, `1.0.13`, `1.0.12`
+- `1.0.11`
+
+</details>
+
+**Latest Version**: `1.0.16`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/strukturag/libde265@1.0.16 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +53,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libde265
+const pkg = pantry['github.com/strukturag/libde265']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

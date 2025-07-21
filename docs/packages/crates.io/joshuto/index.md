@@ -50,7 +50,7 @@ This package depends on:
 
 These packages work well with joshuto:
 
-- [`github.com/junegunn/fzf`](../../github.com/junegunn/fzf.md) - Package from pantry: github.com/junegunn/fzf
+- [`github.com/junegunn/fzf`](../../github.com/junegunn/fzf.md) - :cherry_blossom: A command-line fuzzy finder
 - [`crates.io/zoxide`](../zoxide/index.md) - Shell extension to navigate your filesystem faster
 
 ## Usage Examples

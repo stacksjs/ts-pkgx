@@ -1,28 +1,38 @@
 /**
- * **flit.pypa.io** - Package from pantry: flit.pypa.io
+ * **flit** - Simplified packaging of Python modules
  *
  * @domain `flit.pypa.io`
+ * @programs `flit`
+ * @version `3.12.0` (6 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install flit.pypa.io`
+ * @install `launchpad install flit`
+ * @name `flit`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.flitpypaio
- * console.log(pkg.name)        // "flit.pypa.io"
- * console.log(pkg.description) // "Package from pantry: flit.pypa.io"
+ * // Access the package
+ * const pkg = pantry.flit
+ * // Or access via domain
+ * const samePkg = pantry.flitpypaio
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "flit"
+ * console.log(pkg.description) // "Simplified packaging of Python modules"
+ * console.log(pkg.programs)    // ["flit"]
+ * console.log(pkg.versions[0]) // "3.12.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/flit-pypa-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const flitpypaioPackage = {
+export const flitPackage = {
   /**
    * The display name of this package.
    */
-  name: 'flit.pypa.io' as const,
+  name: 'flit' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +40,22 @@ export const flitpypaioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: flit.pypa.io' as const,
+  description: 'Simplified packaging of Python modules' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/flit.pypa.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install flit.pypa.io' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +flit.pypa.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install flit.pypa.io' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install flit' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'flit',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,25 @@ export const flitpypaioPackage = {
   dependencies: [
     'python.org>=3<3.12',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/flit.pypa.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.12.0',
+    '3.11.0',
+    '3.10.1',
+    '3.10.0',
+    '3.9.0',
+    '3.8.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) flit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install flit' as const,
 }
 
-export type FlitpypaioPackage = typeof flitpypaioPackage
+export type FlitPackage = typeof flitPackage

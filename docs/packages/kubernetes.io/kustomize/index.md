@@ -1,6 +1,6 @@
 # kustomize
 
-> Package from pantry: kubernetes.io/kustomize
+> Template-free customization of Kubernetes YAML manifests
 
 ## Package Information
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install kubernetes.io/kustomize
+launchpad install kustomize
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `kustomize`
+
+## Available Versions
+
+<details>
+<summary>Show all 15 versions</summary>
+
+- `5.7.0`, `5.6.0`, `5.5.0`, `5.4.3`, `5.4.2`
+- `5.4.1`, `5.4.0`, `5.3.0`, `5.2.1`, `5.2.0`
+- `5.1.1`, `5.1.0`, `5.0.3`, `5.0.2`, `5.0.1`
+
+</details>
+
+**Latest Version**: `5.7.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) kustomize -- $SHELL -i
+```
 
 ## Dependencies
 

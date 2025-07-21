@@ -1,11 +1,11 @@
-# six
+# github.com/benjaminp/six
 
-> Package from pantry: github.com/benjaminp/six
+> Python 2 and 3 compatibility library
 
 ## Package Information
 
 - **Domain**: `github.com/benjaminp/six`
-- **Name**: `six`
+- **Name**: `github.com/benjaminp/six`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/benjaminp/six/package.yml)
 
@@ -22,6 +22,24 @@ This package provides the following executable programs:
 
 *No programs specified*
 
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `1.17.0`, `1.16.0`
+
+</details>
+
+**Latest Version**: `1.17.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/benjaminp/six@1.17.0 -- $SHELL -i
+```
+
 ## Dependencies
 
 This package depends on:
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.six
+const pkg = pantry['github.com/benjaminp/six']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

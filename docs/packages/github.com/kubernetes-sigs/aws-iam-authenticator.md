@@ -1,6 +1,6 @@
 # aws-iam-authenticator
 
-> Package from pantry: github.com/kubernetes-sigs/aws-iam-authenticator
+> A tool to use AWS IAM credentials to authenticate to a Kubernetes cluster
 
 ## Package Information
 
@@ -13,14 +13,36 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/kubernetes-sigs/aws-iam-authenticator
+launchpad install aws-iam-authenticator
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `aws-iam-authenticator`
+
+## Available Versions
+
+<details>
+<summary>Show all 22 versions</summary>
+
+- `0.7.4`, `0.7.3`, `0.7.2`, `0.7.1`, `0.6.31`
+- `0.6.30`, `0.6.29`, `0.6.28`, `0.6.27`, `0.6.26`
+- `0.6.25`, `0.6.24`, `0.6.23`, `0.6.22`, `0.6.21`
+- `0.6.14`, `0.6.13`, `0.6.12`, `0.6.11`, `0.5.27`
+- `0.5.21`, `0.5.20`
+
+</details>
+
+**Latest Version**: `0.7.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) aws-iam-authenticator -- $SHELL -i
+```
 
 ## Usage Examples
 
