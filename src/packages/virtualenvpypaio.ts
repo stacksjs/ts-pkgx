@@ -3,7 +3,7 @@
  *
  * @domain `virtualenv.pypa.io`
  * @programs `virtualenv`
- * @version `20.31.2` (40 versions available)
+ * @version `20.32.0` (41 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install virtualenv`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "virtualenv"
  * console.log(pkg.description) // "Tool for creating isolated virtual python envir..."
  * console.log(pkg.programs)    // ["virtualenv"]
- * console.log(pkg.versions[0]) // "20.31.2" (latest)
+ * console.log(pkg.versions[0]) // "20.32.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/virtualenv-pypa-io.md
@@ -71,6 +71,7 @@ export const virtualenvPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '20.32.0',
     '20.31.2',
     '20.31.1',
     '20.31.0',
