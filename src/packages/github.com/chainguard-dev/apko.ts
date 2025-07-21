@@ -3,7 +3,7 @@
  *
  * @domain `github.com/chainguard-dev/apko`
  * @programs `apko`
- * @version `0.29.7` (59 versions available)
+ * @version `0.29.8` (60 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install apko`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "apko"
  * console.log(pkg.description) // "Build OCI images from APK packages directly wit..."
  * console.log(pkg.programs)    // ["apko"]
- * console.log(pkg.versions[0]) // "0.29.7" (latest)
+ * console.log(pkg.versions[0]) // "0.29.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/chainguard-dev/apko.md
@@ -62,6 +62,7 @@ export const apkoPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.29.8',
     '0.29.7',
     '0.29.6',
     '0.29.5',
