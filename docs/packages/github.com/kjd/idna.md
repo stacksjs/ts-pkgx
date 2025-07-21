@@ -1,11 +1,11 @@
-# github.com/kjd/idna
+# idna
 
-> Internationalized Domain Names for Python (IDNA 2008 and UTS #46)
+> Package from pantry: github.com/kjd/idna
 
 ## Package Information
 
 - **Domain**: `github.com/kjd/idna`
-- **Name**: `github.com/kjd/idna`
+- **Name**: `idna`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kjd/idna/package.yml)
 
@@ -22,24 +22,6 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `3.10.0`, `3.9.0`, `3.8.0`, `3.7.0`, `3.6.0`
-
-</details>
-
-**Latest Version**: `3.10.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/kjd/idna@3.10.0 -- $SHELL -i
-```
-
 ## Dependencies
 
 This package depends on:
@@ -52,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/kjd/idna']
+const pkg = pantry.idna
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

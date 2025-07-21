@@ -1,37 +1,27 @@
 /**
- * **mergiraf** - Syntax-aware git merge driver
+ * **mergiraf.org** - Package from pantry: mergiraf.org
  *
  * @domain `mergiraf.org`
- * @programs `mergiraf`
- * @version `0.12.1` (4 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install mergiraf`
- * @name `mergiraf`
+ * @install `launchpad install mergiraf.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mergiraf
- * // Or access via domain
- * const samePkg = pantry.mergiraforg
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mergiraf"
- * console.log(pkg.description) // "Syntax-aware git merge driver"
- * console.log(pkg.programs)    // ["mergiraf"]
- * console.log(pkg.versions[0]) // "0.12.1" (latest)
+ * const pkg = pantry.mergiraforg
+ * console.log(pkg.name)        // "mergiraf.org"
+ * console.log(pkg.description) // "Package from pantry: mergiraf.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mergiraf-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mergirafPackage = {
+export const mergiraforgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mergiraf' as const,
+  name: 'mergiraf.org' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,41 +29,21 @@ export const mergirafPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Syntax-aware git merge driver' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mergiraf.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: mergiraf.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mergiraf' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'mergiraf',
-  ] as const,
+  installCommand: 'launchpad install mergiraf.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mergiraf.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mergiraf.org' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.12.1',
-    '0.12.0',
-    '0.11.0',
-    '0.10.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mergiraf -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mergiraf' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mergiraf.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type MergirafPackage = typeof mergirafPackage
+export type MergiraforgPackage = typeof mergiraforgPackage

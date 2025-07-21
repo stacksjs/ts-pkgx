@@ -1,10 +1,7 @@
 /**
- * **github.com/essembeh/gnome-extensions-cli** - Command line tool to manage your Gnome Shell extensions
+ * **gnome-extensions-cli** - Package from pantry: github.com/essembeh/gnome-extensions-cli
  *
  * @domain `github.com/essembeh/gnome-extensions-cli`
- * @programs `gnome-extensions-cli`, `gext`
- * @version `0.10.6` (6 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/essembeh/gnome-extensions-cli`
  * @dependencies `pkgx.sh^1`
@@ -14,10 +11,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomessembehgnomeextensionscli
- * console.log(pkg.name)        // "github.com/essembeh/gnome-extensions-cli"
- * console.log(pkg.description) // "Command line tool to manage your Gnome Shell ex..."
- * console.log(pkg.programs)    // ["gnome-extensions-cli", "gext"]
- * console.log(pkg.versions[0]) // "0.10.6" (latest)
+ * console.log(pkg.name)        // "gnome-extensions-cli"
+ * console.log(pkg.description) // "Package from pantry: github.com/essembeh/gnome-..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/essembeh/gnome-extensions-cli.md
@@ -27,7 +22,7 @@ export const githubcomessembehgnomeextensionscliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/essembeh/gnome-extensions-cli' as const,
+  name: 'gnome-extensions-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,23 +30,15 @@ export const githubcomessembehgnomeextensionscliPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Command line tool to manage your Gnome Shell extensions' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/essembeh/gnome-extensions-cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/essembeh/gnome-extensions-cli' as const,
+  description: 'Package from pantry: github.com/essembeh/gnome-extensions-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/essembeh/gnome-extensions-cli' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'gnome-extensions-cli',
-    'gext',
-  ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/essembeh/gnome-extensions-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/essembeh/gnome-extensions-cli' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -60,21 +47,10 @@ export const githubcomessembehgnomeextensionscliPackage = {
   dependencies: [
     'pkgx.sh^1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.10.6',
-    '0.10.5',
-    '0.10.4',
-    '0.10.3',
-    '0.10.2',
-    '0.10.1',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/essembeh/gnome-extensions-cli -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/essembeh/gnome-extensions-cli' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/essembeh/gnome-extensions-cli/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type GithubcomessembehgnomeextensionscliPackage = typeof githubcomessembehgnomeextensionscliPackage

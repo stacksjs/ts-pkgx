@@ -1,38 +1,28 @@
 /**
- * **lftp** - sophisticated command line file transfer program (ftp, http, sftp, fish, torrent)
+ * **lftp.yar.ru** - Package from pantry: lftp.yar.ru
  *
  * @domain `lftp.yar.ru`
- * @programs `lftp`, `lftpget`
- * @version `4.9.3` (3 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install lftp`
- * @name `lftp`
+ * @install `launchpad install lftp.yar.ru`
  * @dependencies `gnu.org/libidn2`, `gnu.org/gettext`, `gnu.org/readline`, ... (+5 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.lftp
- * // Or access via domain
- * const samePkg = pantry.lftpyarru
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "lftp"
- * console.log(pkg.description) // "sophisticated command line file transfer progra..."
- * console.log(pkg.programs)    // ["lftp", "lftpget"]
- * console.log(pkg.versions[0]) // "4.9.3" (latest)
+ * const pkg = pantry.lftpyarru
+ * console.log(pkg.name)        // "lftp.yar.ru"
+ * console.log(pkg.description) // "Package from pantry: lftp.yar.ru"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/lftp-yar-ru.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const lftpPackage = {
+export const lftpyarruPackage = {
   /**
    * The display name of this package.
    */
-  name: 'lftp' as const,
+  name: 'lftp.yar.ru' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,23 +30,15 @@ export const lftpPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'sophisticated command line file transfer program (ftp, http, sftp, fish, torrent)' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lftp.yar.ru/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: lftp.yar.ru' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install lftp' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'lftp',
-    'lftpget',
-  ] as const,
+  installCommand: 'launchpad install lftp.yar.ru' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lftp.yar.ru -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lftp.yar.ru' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -73,22 +55,10 @@ export const lftpPackage = {
     'libexpat.github.io',
     'linux:gnu.org/gcc/libstdcxx@14',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '4.9.3',
-    '4.9.2',
-    '4.9.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lftp.yar.ru -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install lftp' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lftp.yar.ru/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type LftpPackage = typeof lftpPackage
+export type LftpyarruPackage = typeof lftpyarruPackage

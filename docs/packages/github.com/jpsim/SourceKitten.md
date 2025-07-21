@@ -1,11 +1,11 @@
-# sourcekitten
+# SourceKitten
 
-> An adorable little framework and command line tool for interacting with SourceKit.
+> Package from pantry: github.com/jpsim/SourceKitten
 
 ## Package Information
 
 - **Domain**: `github.com/jpsim/SourceKitten`
-- **Name**: `sourcekitten`
+- **Name**: `SourceKitten`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jpsim/SourceKitten/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install sourcekitten
+launchpad install github.com/jpsim/SourceKitten
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `sourcekitten`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `0.37.2`, `0.37.1`, `0.37.0`, `0.36.0`, `0.35.0`
-- `0.34.1`
-
-</details>
-
-**Latest Version**: `0.37.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) sourcekitten -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -47,7 +28,7 @@ sh <(curl https://pkgx.sh) sourcekitten -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.sourcekitten
+const pkg = pantry.SourceKitten
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

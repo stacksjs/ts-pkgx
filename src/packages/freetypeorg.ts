@@ -1,9 +1,7 @@
 /**
- * **freetype.org** - pkgx package
+ * **freetype.org** - Package from pantry: freetype.org
  *
  * @domain `freetype.org`
- * @version `2.13.3` (4 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install freetype.org`
  * @dependencies `libpng.org@1`, `zlib.net@1`, `sourceware.org/bzip2@1`
@@ -14,7 +12,7 @@
  *
  * const pkg = pantry.freetypeorg
  * console.log(pkg.name)        // "freetype.org"
- * console.log(pkg.versions[0]) // "2.13.3" (latest)
+ * console.log(pkg.description) // "Package from pantry: freetype.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/freetype-org.md
@@ -32,15 +30,14 @@ export const freetypeorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/freetype.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: freetype.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install freetype.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freetype.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freetype.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -52,19 +49,10 @@ export const freetypeorgPackage = {
     'zlib.net@1',
     'sourceware.org/bzip2@1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.13.3',
-    '2.13.2',
-    '2.13.1',
-    '2.12.1',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freetype.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install freetype.org' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/freetype.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type FreetypeorgPackage = typeof freetypeorgPackage

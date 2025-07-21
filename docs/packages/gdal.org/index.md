@@ -1,6 +1,6 @@
 # gdal.org
 
-> GDAL is an open source MIT licensed translator library for raster and vector geospatial data formats.
+> Package from pantry: gdal.org
 
 ## Package Information
 
@@ -20,55 +20,7 @@ launchpad install gdal.org
 
 This package provides the following executable programs:
 
-- `gdaladdo`
-- `gdalbuildvrt`
-- `gdal-config`
-- `gdal_contour`
-- `gdal_create`
-- `gdaldem`
-- `gdalenhance`
-- `gdal_grid`
-- `gdalinfo`
-- `gdallocationinfo`
-- `gdalmanage`
-- `gdalmdiminfo`
-- `gdalmdimtranslate`
-- `gdal_rasterize`
-- `gdalsrsinfo`
-- `gdaltindex`
-- `gdaltransform`
-- `gdal_translate`
-- `gdal_viewshed`
-- `gdalwarp`
-- `gnmanalyse`
-- `gnmmanage`
-- `nearblack`
-- `ogr2ogr`
-- `ogrinfo`
-- `ogrlineref`
-- `ogrtindex`
-- `sozip`
-
-## Available Versions
-
-<details>
-<summary>Show all 20 versions</summary>
-
-- `3.11.3`, `3.11.2`, `3.11.1`, `3.11.0`, `3.10.3`
-- `3.10.2`, `3.10.1`, `3.10.0`, `3.9.3`, `3.9.2`
-- `3.9.1`, `3.9.0`, `3.8.5`, `3.8.4`, `3.8.3`
-- `3.8.2`, `3.8.1`, `3.8.0`, `3.7.3`, `3.7.2`
-
-</details>
-
-**Latest Version**: `3.11.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gdal.org@3.11.3 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

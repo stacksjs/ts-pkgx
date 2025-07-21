@@ -1,11 +1,11 @@
-# facebook.com/zstd
+# zstd
 
-> Zstandard - Fast real-time compression algorithm
+> Package from pantry: facebook.com/zstd
 
 ## Package Information
 
 - **Domain**: `facebook.com/zstd`
-- **Name**: `facebook.com/zstd`
+- **Name**: `zstd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/zstd/package.yml)
 
@@ -20,31 +20,7 @@ launchpad install facebook.com/zstd
 
 This package provides the following executable programs:
 
-- `pzstd`
-- `unzstd`
-- `zstd`
-- `zstdcat`
-- `zstdgrep`
-- `zstdless`
-- `zstdmt`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `1.5.7`, `1.5.6`, `1.5.5`, `1.5.4`, `1.5.2`
-
-</details>
-
-**Latest Version**: `1.5.7`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +facebook.com/zstd@1.5.7 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -60,7 +36,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['facebook.com/zstd']
+const pkg = pantry.zstd
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

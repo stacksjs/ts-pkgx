@@ -1,11 +1,11 @@
-# lavinmq
+# lavinmq.com
 
-> Lightweight and fast AMQP (0-9-1) server
+> Package from pantry: lavinmq.com
 
 ## Package Information
 
 - **Domain**: `lavinmq.com`
-- **Name**: `lavinmq`
+- **Name**: `lavinmq.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lavinmq.com/package.yml)
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install lavinmq
+launchpad install lavinmq.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `lavinmq`
-- `lavinmqctl`
-- `lavinmqperf`
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `2.4.0`, `2.3.0`, `2.2.0`, `2.1.0`, `2.0.2`
-- `2.0.1`, `2.0.0`, `1.3.1`
-
-</details>
-
-**Latest Version**: `2.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +lavinmq.com@2.4.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -58,7 +37,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.lavinmq
+const pkg = pantry['lavinmq.com']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

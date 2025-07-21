@@ -1,6 +1,6 @@
 # age
 
-> A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability.
+> Package from pantry: filippo.io/age
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install age
+launchpad install filippo.io/age
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `age`
-- `age-keygen`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `1.2.1`, `1.2.0`, `1.1.1`
-
-</details>
-
-**Latest Version**: `1.2.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +filippo.io/age@1.2.1 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# github.com/Esri/lerc
+# lerc
 
-> Limited Error Raster Compression
+> Package from pantry: github.com/Esri/lerc
 
 ## Package Information
 
 - **Domain**: `github.com/Esri/lerc`
-- **Name**: `github.com/Esri/lerc`
+- **Name**: `lerc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Esri/lerc/package.yml)
 
@@ -22,31 +22,13 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `4.0.0`
-
-</details>
-
-**Latest Version**: `4.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/Esri/lerc@4.0.0 -- $SHELL -i
-```
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/Esri/lerc']
+const pkg = pantry.lerc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

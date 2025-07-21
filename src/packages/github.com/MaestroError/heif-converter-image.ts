@@ -1,38 +1,28 @@
 /**
- * **heif-converter** - heif-converter is a versatile command-line application, along with a Docker image, that offers an easy and efficient way to convert HEIC (and AVIF) images to other common formats like JPEG and PNG, and vice versa. It leverages the go-libheif module, a GoLang wrapper for the libheif library.
+ * **heif-converter-image** - Package from pantry: github.com/MaestroError/heif-converter-image
  *
  * @domain `github.com/MaestroError/heif-converter-image`
- * @programs `heif-converter`
- * @version `2023.6.23` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install heif-converter`
- * @name `heif-converter`
+ * @install `launchpad install github.com/MaestroError/heif-converter-image`
  * @dependencies `github.com/strukturag/libheif`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.heifconverter
- * // Or access via domain
- * const samePkg = pantry.githubcommaestroerrorheifconverterimage
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "heif-converter"
- * console.log(pkg.description) // "heif-converter is a versatile command-line appl..."
- * console.log(pkg.programs)    // ["heif-converter"]
- * console.log(pkg.versions[0]) // "2023.6.23" (latest)
+ * const pkg = pantry.githubcommaestroerrorheifconverterimage
+ * console.log(pkg.name)        // "heif-converter-image"
+ * console.log(pkg.description) // "Package from pantry: github.com/MaestroError/he..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/MaestroError/heif-converter-image.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const heifconverterPackage = {
+export const githubcommaestroerrorheifconverterimagePackage = {
   /**
    * The display name of this package.
    */
-  name: 'heif-converter' as const,
+  name: 'heif-converter-image' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,22 +30,15 @@ export const heifconverterPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'heif-converter is a versatile command-line application, along with a Docker image, that offers an easy and efficient way to convert HEIC (and AVIF) images to other common formats like JPEG and PNG, and vice versa. It leverages the go-libheif module, a GoLang wrapper for the libheif library.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/MaestroError/heif-converter-image/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/MaestroError/heif-converter-image' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install heif-converter' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'heif-converter',
-  ] as const,
+  installCommand: 'launchpad install github.com/MaestroError/heif-converter-image' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/MaestroError/heif-converter-image -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/MaestroError/heif-converter-image' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,20 +47,10 @@ export const heifconverterPackage = {
   dependencies: [
     'github.com/strukturag/libheif',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2023.6.23',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) heif-converter -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install heif-converter' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/MaestroError/heif-converter-image/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type HeifconverterPackage = typeof heifconverterPackage
+export type GithubcommaestroerrorheifconverterimagePackage = typeof githubcommaestroerrorheifconverterimagePackage

@@ -1,11 +1,11 @@
-# jira
+# jira-cli
 
-> simple jira command line client in Go
+> Package from pantry: github.com/ankitpokhrel/jira-cli
 
 ## Package Information
 
 - **Domain**: `github.com/ankitpokhrel/jira-cli`
-- **Name**: `jira`
+- **Name**: `jira-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ankitpokhrel/jira-cli/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install jira
+launchpad install github.com/ankitpokhrel/jira-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `jira`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `1.6.0`, `1.5.2`, `1.5.1`
-
-</details>
-
-**Latest Version**: `1.6.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) jira -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) jira -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.jira
+const pkg = pantry['jira-cli']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

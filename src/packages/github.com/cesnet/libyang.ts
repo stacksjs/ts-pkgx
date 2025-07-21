@@ -1,34 +1,24 @@
 /**
- * **libyang** - YANG data modeling language library
+ * **libyang** - Package from pantry: github.com/cesnet/libyang
  *
  * @domain `github.com/cesnet/libyang`
- * @programs `yanglint`, `yangre`
- * @version `3.12.2` (5 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install libyang`
- * @name `libyang`
+ * @install `launchpad install github.com/cesnet/libyang`
  * @dependencies `pcre.org/v2>=10.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.libyang
- * // Or access via domain
- * const samePkg = pantry.githubcomcesnetlibyang
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomcesnetlibyang
  * console.log(pkg.name)        // "libyang"
- * console.log(pkg.description) // "YANG data modeling language library"
- * console.log(pkg.programs)    // ["yanglint", "yangre"]
- * console.log(pkg.versions[0]) // "3.12.2" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/cesnet/libyang"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/cesnet/libyang.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libyangPackage = {
+export const githubcomcesnetlibyangPackage = {
   /**
    * The display name of this package.
    */
@@ -40,23 +30,15 @@ export const libyangPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'YANG data modeling language library' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/cesnet/libyang/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/cesnet/libyang' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install libyang' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'yanglint',
-    'yangre',
-  ] as const,
+  installCommand: 'launchpad install github.com/cesnet/libyang' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/cesnet/libyang -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/cesnet/libyang' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -65,24 +47,10 @@ export const libyangPackage = {
   dependencies: [
     'pcre.org/v2>=10.21',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.12.2',
-    '3.7.8',
-    '3.4.2',
-    '3.1.0',
-    '2.1.148',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/cesnet/libyang -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libyang' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/cesnet/libyang/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type LibyangPackage = typeof libyangPackage
+export type GithubcomcesnetlibyangPackage = typeof githubcomcesnetlibyangPackage

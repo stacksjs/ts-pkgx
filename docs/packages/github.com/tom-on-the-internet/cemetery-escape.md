@@ -1,6 +1,6 @@
 # cemetery-escape
 
-> A game in the terminal. Ghosts chase you. You find the key and escape.
+> Package from pantry: github.com/tom-on-the-internet/cemetery-escape
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install cemetery-escape
+launchpad install github.com/tom-on-the-internet/cemetery-escape
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cemetery-escape`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.0.7`
-
-</details>
-
-**Latest Version**: `0.0.7`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) cemetery-escape -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

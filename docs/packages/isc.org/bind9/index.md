@@ -31,11 +31,13 @@ This package depends on:
 - `libuv.org@1.49`
 - `liburcu.org@0.15`
 - `openldap.org/liblmdb@0.9`
-- `openssl.org@3`
+- `openssl.org@1.1`
 - `gnu.org/readline@8.2`
 - `github.com/json-c/json-c@0.18`
 - `gnu.org/libidn2@2.3`
 - `jemalloc.net@5`
+- `mesonbuild.com@1`
+- `ninja-build.org`
 - `linux:kernel.org/libcap`
 
 ## Usage Examples

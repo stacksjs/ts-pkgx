@@ -1,6 +1,6 @@
 # gql
 
-> Very simple CLI for many GraphQL schemas in the cloud. Provides autocompletion for GraphQL queries
+> Package from pantry: graphqleditor.com/gql
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gql
+launchpad install graphqleditor.com/gql
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gql`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.1.1`
-
-</details>
-
-**Latest Version**: `0.1.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) gql -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

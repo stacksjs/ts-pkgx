@@ -1,11 +1,11 @@
-# github.com/DaveGamble/cJSON
+# cJSON
 
-> Ultralightweight JSON parser in ANSI C
+> Package from pantry: github.com/DaveGamble/cJSON
 
 ## Package Information
 
 - **Domain**: `github.com/DaveGamble/cJSON`
-- **Name**: `github.com/DaveGamble/cJSON`
+- **Name**: `cJSON`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/DaveGamble/cJSON/package.yml)
 
@@ -22,31 +22,13 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.7.18`, `1.7.17`, `1.7.16`, `1.7.15`
-
-</details>
-
-**Latest Version**: `1.7.18`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/DaveGamble/cJSON@1.7.18 -- $SHELL -i
-```
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/DaveGamble/cJSON']
+const pkg = pantry.cJSON
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

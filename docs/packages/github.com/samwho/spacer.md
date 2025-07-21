@@ -1,6 +1,6 @@
 # spacer
 
-> Small command-line utility for adding spacers to command output
+> Package from pantry: github.com/samwho/spacer
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install spacer
+launchpad install github.com/samwho/spacer
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `spacer`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `0.4.2`, `0.4.1`, `0.3.9`, `0.3.8`, `0.3.7`
-- `0.3.5`, `0.3.3`, `0.3.2`, `0.3.1`, `0.3.0`
-
-</details>
-
-**Latest Version**: `0.4.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) spacer -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

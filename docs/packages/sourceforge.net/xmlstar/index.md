@@ -1,11 +1,11 @@
-# XMLStarlet
+# xmlstar
 
-> XML command-line utilities
+> Package from pantry: sourceforge.net/xmlstar
 
 ## Package Information
 
 - **Domain**: `sourceforge.net/xmlstar`
-- **Name**: `XMLStarlet`
+- **Name**: `xmlstar`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/xmlstar/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install XMLStarlet
+launchpad install sourceforge.net/xmlstar
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `xml`
-- `xmlstarlet`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.6.1`
-
-</details>
-
-**Latest Version**: `1.6.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +sourceforge.net/xmlstar@1.6.1 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -53,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.XMLStarlet
+const pkg = pantry.xmlstar
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
