@@ -1,6 +1,6 @@
 # rucio-client
 
-> Rucio - Scientific Data Management
+> Package from pantry: rucio.cern.ch/rucio-client
 
 ## Package Information
 
@@ -13,38 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install rucio-client
+launchpad install rucio.cern.ch/rucio-client
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `rucio`
-- `rucio-admin`
-
-## Available Versions
-
-<details>
-<summary>Show all 30 versions</summary>
-
-- `37.7.0`, `37.6.0`, `37.5.0`, `37.4.0`, `37.3.0`
-- `37.2.0`, `37.1.0`, `37.0.0`, `36.5.0`, `36.4.0`
-- `36.3.0`, `36.2.0`, `36.1.0`, `35.8.0`, `35.7.0`
-- `35.6.1`, `35.6.0`, `35.5.0`, `35.4.1`, `35.4.0`
-- `35.3.0`, `35.2.1`, `35.2.0`, `35.1.1`, `35.1.0`
-- `35.0.1`, `35.0.0`, `34.6.0`, `34.5.0`, `34.4.3`
-
-</details>
-
-**Latest Version**: `37.7.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +rucio.cern.ch/rucio-client@37.7.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
