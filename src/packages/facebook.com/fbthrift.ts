@@ -3,7 +3,7 @@
  *
  * @domain `facebook.com/fbthrift`
  * @programs `thrift1`
- * @version `2025.7.7.0` (81 versions available)
+ * @version `2025.7.7.0` (82 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install thrift1`
@@ -83,6 +83,7 @@ export const thrift1Package = {
    */
   versions: [
     '2025.7.7.0',
+    '2025.7.21.0',
     '2025.7.14.0',
     '2025.6.9.0',
     '2025.6.30.0',
