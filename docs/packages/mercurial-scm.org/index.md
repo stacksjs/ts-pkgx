@@ -1,6 +1,6 @@
 # mercurial-scm.org
 
-> Package from pantry: mercurial-scm.org
+> Scalable distributed version control system
 
 ## Package Information
 
@@ -20,7 +20,30 @@ launchpad install mercurial-scm.org
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `hg`
+- `chg`
+
+## Available Versions
+
+<details>
+<summary>Show all 25 versions</summary>
+
+- `7.0.3`, `7.0.2`, `7.0.1`, `7.0.0`, `6.9.5`
+- `6.9.4`, `6.9.3`, `6.9.2`, `6.9.1`, `6.9.0`
+- `6.8.2`, `6.8.1`, `6.8.0`, `6.7.4`, `6.7.3`
+- `6.7.2`, `6.7.1`, `6.7.0`, `6.6.3`, `6.6.2`
+- `6.6.1`, `6.6.0`, `6.5.3`, `6.5.2`, `6.5.0`
+
+</details>
+
+**Latest Version**: `7.0.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +mercurial-scm.org@7.0.3 -- $SHELL -i
+```
 
 ## Dependencies
 

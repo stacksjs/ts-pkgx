@@ -1,6 +1,6 @@
 # chatblade
 
-> Package from pantry: github.com/npiv/chatblade
+> A CLI Swiss Army Knife for ChatGPT
 
 ## Package Information
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/npiv/chatblade
+launchpad install chatblade
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `chatblade`
+
+## Available Versions
+
+<details>
+<summary>Show all 15 versions</summary>
+
+- `0.7.0`, `0.6.4`, `0.6.3`, `0.6.2`, `0.5.0`
+- `0.4.0`, `0.3.4`, `0.3.3`, `0.3.1`, `0.3.0`
+- `0.2.3`, `0.2.2`, `0.2.1`, `0.2.0`, `0.1.1`
+
+</details>
+
+**Latest Version**: `0.7.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) chatblade -- $SHELL -i
+```
 
 ## Dependencies
 

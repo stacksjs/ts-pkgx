@@ -1,6 +1,6 @@
 # counterfeiter
 
-> Package from pantry: github.com/maxbrunsfeld/counterfeiter
+> A tool for generating self-contained, type-safe test doubles in go
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/maxbrunsfeld/counterfeiter
+launchpad install counterfeiter
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `counterfeiter`
+
+## Available Versions
+
+<details>
+<summary>Show all 10 versions</summary>
+
+- `6.11.2`, `6.11.1`, `6.11.0`, `6.10.0`, `6.9.0`
+- `6.8.1`, `6.8.0`, `6.7.0`, `6.6.2`, `6.6.1`
+
+</details>
+
+**Latest Version**: `6.11.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) counterfeiter -- $SHELL -i
+```
 
 ## Dependencies
 

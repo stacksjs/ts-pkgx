@@ -1,28 +1,38 @@
 /**
- * **nvm** - Package from pantry: github.com/nvm-sh/nvm
+ * **nvm-exec** - Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
  *
  * @domain `github.com/nvm-sh/nvm`
+ * @programs `nvm-exec`
+ * @version `0.40.3` (7 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/nvm-sh/nvm`
+ * @install `launchpad install nvm-exec`
+ * @name `nvm-exec`
  * @dependencies `linux:curl.se` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomnvmshnvm
- * console.log(pkg.name)        // "nvm"
- * console.log(pkg.description) // "Package from pantry: github.com/nvm-sh/nvm"
+ * // Access the package
+ * const pkg = pantry.nvmexec
+ * // Or access via domain
+ * const samePkg = pantry.githubcomnvmshnvm
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "nvm-exec"
+ * console.log(pkg.description) // "Node Version Manager - POSIX-compliant bash scr..."
+ * console.log(pkg.programs)    // ["nvm-exec"]
+ * console.log(pkg.versions[0]) // "0.40.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/nvm-sh/nvm.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomnvmshnvmPackage = {
+export const nvmexecPackage = {
   /**
    * The display name of this package.
    */
-  name: 'nvm' as const,
+  name: 'nvm-exec' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +40,22 @@ export const githubcomnvmshnvmPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/nvm-sh/nvm' as const,
+  description: 'Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/nvm-sh/nvm/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/nvm-sh/nvm' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/nvm-sh/nvm -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/nvm-sh/nvm' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install nvm-exec' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'nvm-exec',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -48,10 +65,26 @@ export const githubcomnvmshnvmPackage = {
   dependencies: [
     'linux:curl.se',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/nvm-sh/nvm/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.40.3',
+    '0.40.2',
+    '0.40.1',
+    '0.40.0',
+    '0.39.7',
+    '0.39.6',
+    '0.39.5',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nvm-exec -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nvm-exec' as const,
 }
 
-export type GithubcomnvmshnvmPackage = typeof githubcomnvmshnvmPackage
+export type NvmexecPackage = typeof nvmexecPackage

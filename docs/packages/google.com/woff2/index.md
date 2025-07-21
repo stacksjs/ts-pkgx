@@ -1,6 +1,6 @@
 # woff2
 
-> Package from pantry: google.com/woff2
+> Utilities to create and convert Web Open Font File (WOFF) files
 
 ## Package Information
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install google.com/woff2
+launchpad install woff2
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `woff2_info`
+- `woff2_decompress`
+- `woff2_compress`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.0.2`
+
+</details>
+
+**Latest Version**: `1.0.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +google.com/woff2@1.0.2 -- $SHELL -i
+```
 
 ## Dependencies
 

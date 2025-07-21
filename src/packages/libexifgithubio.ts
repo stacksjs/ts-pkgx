@@ -1,7 +1,9 @@
 /**
- * **libexif.github.io** - Package from pantry: libexif.github.io
+ * **libexif.github.io** - A library for parsing, editing, and saving EXIF data
  *
  * @domain `libexif.github.io`
+ * @version `0.6.25` (2 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install libexif.github.io`
  * @dependencies `gnu.org/gettext`
@@ -12,7 +14,8 @@
  *
  * const pkg = pantry.libexifgithubio
  * console.log(pkg.name)        // "libexif.github.io"
- * console.log(pkg.description) // "Package from pantry: libexif.github.io"
+ * console.log(pkg.description) // "A library for parsing, editing, and saving EXIF..."
+ * console.log(pkg.versions[0]) // "0.6.25" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libexif-github-io.md
@@ -30,14 +33,15 @@ export const libexifgithubioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: libexif.github.io' as const,
+  description: 'A library for parsing, editing, and saving EXIF data' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libexif.github.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install libexif.github.io' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libexif.github.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libexif.github.io' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -47,10 +51,17 @@ export const libexifgithubioPackage = {
   dependencies: [
     'gnu.org/gettext',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libexif.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.6.25',
+    '0.6.24',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libexif.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libexif.github.io' as const,
 }
 
 export type LibexifgithubioPackage = typeof libexifgithubioPackage

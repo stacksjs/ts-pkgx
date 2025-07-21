@@ -1,11 +1,11 @@
-# libvips.org
+# vips
 
-> Package from pantry: libvips.org
+> A fast image processing library with low memory needs.
 
 ## Package Information
 
 - **Domain**: `libvips.org`
-- **Name**: `libvips.org`
+- **Name**: `vips`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libvips.org/package.yml)
 
@@ -13,14 +13,37 @@
 
 ```bash
 # Install with launchpad
-launchpad install libvips.org
+launchpad install vips
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `vips`
+- `vipsedit`
+- `vipsheader`
+- `vipsprofile`
+- `vipsthumbnail`
+
+## Available Versions
+
+<details>
+<summary>Show all 10 versions</summary>
+
+- `8.17.1`, `8.17.0`, `8.16.1`, `8.16.0`, `8.15.5`
+- `8.15.3`, `8.15.2`, `8.15.1`, `8.15.0`, `8.14.5`
+
+</details>
+
+**Latest Version**: `8.17.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libvips.org@8.17.1 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -60,7 +83,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libvips.org']
+const pkg = pantry.vips
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

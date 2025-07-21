@@ -1,6 +1,6 @@
 # musepack.net
 
-> Package from pantry: musepack.net
+> Audio compression format and tools
 
 ## Package Information
 
@@ -20,7 +20,31 @@ launchpad install musepack.net
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mpc2sv8`
+- `mpcchap`
+- `mpccut`
+- `mpcdec`
+- `mpcenc`
+- `mpcgain`
+- `wavcmp`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `475.0.0`
+
+</details>
+
+**Latest Version**: `475.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +musepack.net@475.0.0 -- $SHELL -i
+```
 
 ## Dependencies
 

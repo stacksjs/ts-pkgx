@@ -1,6 +1,6 @@
 # gofumpt
 
-> Package from pantry: mvdan.cc/gofumpt
+> A stricter gofmt
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install mvdan.cc/gofumpt
+launchpad install gofumpt
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gofumpt`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `0.8.0`, `0.7.0`
+
+</details>
+
+**Latest Version**: `0.8.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) gofumpt -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# distlib
+# pypa.io/distlib
 
-> Package from pantry: pypa.io/distlib
+> A low-level library which implements some Python packaging standards (PEPs) and which could be used by third-party packaging tools to achieve interoperability.
 
 ## Package Information
 
 - **Domain**: `pypa.io/distlib`
-- **Name**: `distlib`
+- **Name**: `pypa.io/distlib`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pypa.io/distlib/package.yml)
 
@@ -22,6 +22,24 @@ This package provides the following executable programs:
 
 *No programs specified*
 
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.3.6`
+
+</details>
+
+**Latest Version**: `0.3.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +pypa.io/distlib@0.3.6 -- $SHELL -i
+```
+
 ## Dependencies
 
 This package depends on:
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.distlib
+const pkg = pantry['pypa.io/distlib']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -3,7 +3,7 @@
  *
  * @domain `ansible.com`
  * @programs `ansible`, `ansible-config`, `ansible-connection`, `ansible-console`, `ansible-doc`, ... (+6 more)
- * @version `2.18.7` (71 versions available)
+ * @version `2.19.0` (72 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ansible`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "ansible"
  * console.log(pkg.description) // "Ansible is a radically simple IT automation pla..."
  * console.log(pkg.programs)    // ["ansible", "ansible-config", ...]
- * console.log(pkg.versions[0]) // "2.18.7" (latest)
+ * console.log(pkg.versions[0]) // "2.19.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ansible-com.md
@@ -79,6 +79,7 @@ export const ansiblePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.19.0',
     '2.18.7',
     '2.18.6',
     '2.18.5',
