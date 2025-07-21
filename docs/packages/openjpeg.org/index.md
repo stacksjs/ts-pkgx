@@ -1,11 +1,11 @@
-# opj_compress
+# openjpeg.org
 
-> Official repository of the OpenJPEG project
+> Package from pantry: openjpeg.org
 
 ## Package Information
 
 - **Domain**: `openjpeg.org`
-- **Name**: `opj_compress`
+- **Name**: `openjpeg.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openjpeg.org/package.yml)
 
@@ -20,27 +20,7 @@ launchpad install openjpeg.org
 
 This package provides the following executable programs:
 
-- `opj_compress`
-- `opj_decompress`
-- `opj_dump`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `2.5.3`, `2.5.2`, `2.5.1`, `2.5.0`
-
-</details>
-
-**Latest Version**: `2.5.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +openjpeg.org@2.5.3 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -55,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.opj_compress
+const pkg = pantry['openjpeg.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # gomarkdoc
 
-> Generate markdown documentation for Go (golang) code
+> Package from pantry: github.com/princjef/gomarkdoc
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gomarkdoc
+launchpad install github.com/princjef/gomarkdoc
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gomarkdoc`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.1.0`
-
-</details>
-
-**Latest Version**: `1.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) gomarkdoc -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,33 +1,23 @@
 /**
- * **cicada** - An old-school bash-like Unix shell written in Rust
+ * **cicada** - Package from pantry: hugo.wang/cicada
  *
  * @domain `hugo.wang/cicada`
- * @programs `cicada`
- * @version `1.1.2` (10 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install cicada`
- * @name `cicada`
+ * @install `launchpad install hugo.wang/cicada`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cicada
- * // Or access via domain
- * const samePkg = pantry.hugowangcicada
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.hugowangcicada
  * console.log(pkg.name)        // "cicada"
- * console.log(pkg.description) // "An old-school bash-like Unix shell written in Rust"
- * console.log(pkg.programs)    // ["cicada"]
- * console.log(pkg.versions[0]) // "1.1.2" (latest)
+ * console.log(pkg.description) // "Package from pantry: hugo.wang/cicada"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/hugo-wang/cicada.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cicadaPackage = {
+export const hugowangcicadaPackage = {
   /**
    * The display name of this package.
    */
@@ -39,47 +29,21 @@ export const cicadaPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'An old-school bash-like Unix shell written in Rust' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/hugo.wang/cicada/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: hugo.wang/cicada' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cicada' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'cicada',
-  ] as const,
+  installCommand: 'launchpad install hugo.wang/cicada' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +hugo.wang/cicada -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hugo.wang/cicada' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.1.2',
-    '1.1.1',
-    '1.0.3',
-    '1.0.2',
-    '1.0.1',
-    '1.0.0',
-    '0.9.41',
-    '0.9.40',
-    '0.9.39',
-    '0.9.38',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cicada -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cicada' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/hugo.wang/cicada/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type CicadaPackage = typeof cicadaPackage
+export type HugowangcicadaPackage = typeof hugowangcicadaPackage

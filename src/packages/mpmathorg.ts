@@ -1,9 +1,7 @@
 /**
- * **mpmath.org** - pkgx package
+ * **mpmath.org** - Package from pantry: mpmath.org
  *
  * @domain `mpmath.org`
- * @version `1.3.0` (1 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install mpmath.org`
  * @dependencies `python.org~3.11`
@@ -14,7 +12,7 @@
  *
  * const pkg = pantry.mpmathorg
  * console.log(pkg.name)        // "mpmath.org"
- * console.log(pkg.versions[0]) // "1.3.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: mpmath.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mpmath-org.md
@@ -32,15 +30,14 @@ export const mpmathorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mpmath.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: mpmath.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install mpmath.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mpmath.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mpmath.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -50,16 +47,10 @@ export const mpmathorgPackage = {
   dependencies: [
     'python.org~3.11',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.3.0',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mpmath.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mpmath.org' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mpmath.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type MpmathorgPackage = typeof mpmathorgPackage

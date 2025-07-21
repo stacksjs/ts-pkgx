@@ -1,11 +1,11 @@
-# mint
+# Mint
 
-> Dependency manager that installs and runs Swift command-line tool packages
+> Package from pantry: github.com/yonaskolb/Mint
 
 ## Package Information
 
 - **Domain**: `github.com/yonaskolb/Mint`
-- **Name**: `mint`
+- **Name**: `Mint`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/yonaskolb/Mint/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install mint
+launchpad install github.com/yonaskolb/Mint
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mint`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.18.0`, `0.17.5`
-
-</details>
-
-**Latest Version**: `0.18.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) mint -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) mint -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.mint
+const pkg = pantry.Mint
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

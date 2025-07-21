@@ -1,6 +1,6 @@
 # yazi
 
-> 💥 Blazing fast terminal file manager written in Rust, based on async I/O.
+> Package from pantry: github.com/sxyazi/yazi
 
 ## Package Information
 
@@ -13,36 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install yazi
+launchpad install github.com/sxyazi/yazi
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `yazi`
-
-## Available Versions
-
-<details>
-<summary>Show all 22 versions</summary>
-
-- `25.5.31`, `25.5.28`, `25.4.8`, `25.3.2`, `25.2.26`
-- `25.2.11`, `25.2.7`, `0.4.2`, `0.4.1`, `0.4.0`
-- `0.3.3`, `0.3.2`, `0.3.1`, `0.3.0`, `0.2.5`
-- `0.2.4`, `0.2.3`, `0.2.2`, `0.2.1`, `0.2.0`
-- `0.1.5`, `0.1.4`
-
-</details>
-
-**Latest Version**: `25.5.31`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) yazi -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

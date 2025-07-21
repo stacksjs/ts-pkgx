@@ -1,11 +1,11 @@
-# typst
+# typst.app
 
-> A new markup-based typesetting system that is powerful and easy to learn.
+> Package from pantry: typst.app
 
 ## Package Information
 
 - **Domain**: `typst.app`
-- **Name**: `typst`
+- **Name**: `typst.app`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/typst.app/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install typst
+launchpad install typst.app
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `typst`
-
-## Available Versions
-
-<details>
-<summary>Show all 14 versions</summary>
-
-- `0.13.1`, `0.13.0`, `0.12.0`, `0.11.1`, `0.11.0`
-- `0.10.0`, `0.9.0`, `0.8.0`, `0.7.0`, `0.6.0`
-- `0.5.0`, `0.4.0`, `0.2.0`, `0.0.0`
-
-</details>
-
-**Latest Version**: `0.13.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) typst -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -54,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.typst
+const pkg = pantry['typst.app']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

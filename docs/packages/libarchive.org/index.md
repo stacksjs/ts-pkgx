@@ -1,6 +1,6 @@
 # libarchive.org
 
-> Multi-format archive and compression library
+> Package from pantry: libarchive.org
 
 ## Package Information
 
@@ -20,29 +20,7 @@ launchpad install libarchive.org
 
 This package provides the following executable programs:
 
-- `bsdcat`
-- `bsdcpio`
-- `bsdtar`
-
-## Available Versions
-
-<details>
-<summary>Show all 13 versions</summary>
-
-- `3.8.1`, `3.8.0`, `3.7.9`, `3.7.8`, `3.7.7`
-- `3.7.6`, `3.7.5`, `3.7.4`, `3.7.3`, `3.7.2`
-- `3.7.1`, `3.7.0`, `3.6.2`
-
-</details>
-
-**Latest Version**: `3.8.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +libarchive.org@3.8.1 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

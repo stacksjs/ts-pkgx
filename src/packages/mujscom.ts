@@ -1,38 +1,28 @@
 /**
- * **mujs** - An embeddable Javascript interpreter in C.
+ * **mujs.com** - Package from pantry: mujs.com
  *
  * @domain `mujs.com`
- * @programs `mujs`, `mujs-pp`
- * @version `1.3.7` (5 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install mujs`
- * @name `mujs`
+ * @install `launchpad install mujs.com`
  * @dependencies `gnu.org/readline~8.1`, `linux:invisible-island.net/ncurses` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mujs
- * // Or access via domain
- * const samePkg = pantry.mujscom
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "mujs"
- * console.log(pkg.description) // "An embeddable Javascript interpreter in C."
- * console.log(pkg.programs)    // ["mujs", "mujs-pp"]
- * console.log(pkg.versions[0]) // "1.3.7" (latest)
+ * const pkg = pantry.mujscom
+ * console.log(pkg.name)        // "mujs.com"
+ * console.log(pkg.description) // "Package from pantry: mujs.com"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mujs-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mujsPackage = {
+export const mujscomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mujs' as const,
+  name: 'mujs.com' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,23 +30,15 @@ export const mujsPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'An embeddable Javascript interpreter in C.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mujs.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: mujs.com' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mujs' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'mujs',
-    'mujs-pp',
-  ] as const,
+  installCommand: 'launchpad install mujs.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mujs.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mujs.com' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -67,24 +49,10 @@ export const mujsPackage = {
     'gnu.org/readline~8.1',
     'linux:invisible-island.net/ncurses',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.3.7',
-    '1.3.6',
-    '1.3.5',
-    '1.3.4',
-    '1.3.3',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mujs.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mujs' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mujs.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type MujsPackage = typeof mujsPackage
+export type MujscomPackage = typeof mujscomPackage

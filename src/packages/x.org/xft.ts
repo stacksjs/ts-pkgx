@@ -1,9 +1,7 @@
 /**
- * **x.org/xft** - pkgx package
+ * **xft** - Package from pantry: x.org/xft
  *
  * @domain `x.org/xft`
- * @version `2.3.9` (2 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install x.org/xft`
  * @dependencies `freedesktop.org/fontconfig^2.14`, `x.org/xrender^0.9`, `sourceware.org/bzip2^1`, ... (+1 more)
@@ -13,8 +11,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgxft
- * console.log(pkg.name)        // "x.org/xft"
- * console.log(pkg.versions[0]) // "2.3.9" (latest)
+ * console.log(pkg.name)        // "xft"
+ * console.log(pkg.description) // "Package from pantry: x.org/xft"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xft.md
@@ -24,7 +22,7 @@ export const xorgxftPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xft' as const,
+  name: 'xft' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -32,15 +30,14 @@ export const xorgxftPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xft/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: x.org/xft' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install x.org/xft' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xft -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/xft' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -53,17 +50,10 @@ export const xorgxftPackage = {
     'sourceware.org/bzip2^1',
     'zlib.net^1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.3.9',
-    '2.3.8',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xft -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install x.org/xft' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xft/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type XorgxftPackage = typeof xorgxftPackage

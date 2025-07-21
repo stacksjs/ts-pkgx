@@ -56,7 +56,7 @@ This package depends on:
 
 These packages work well with whisper:
 
-- [`huggingface.co`](../../huggingface.co/index.md) - The official Python client for the Huggingface Hub.
+- [`huggingface.co`](../../huggingface.co/index.md) - Package from pantry: huggingface.co
 
 ## Usage Examples
 

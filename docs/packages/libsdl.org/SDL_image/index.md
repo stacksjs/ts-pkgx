@@ -1,11 +1,11 @@
-# libsdl.org/SDL_image
+# SDL_image
 
-> Image decoding for many popular formats for Simple Directmedia Layer.
+> Package from pantry: libsdl.org/SDL_image
 
 ## Package Information
 
 - **Domain**: `libsdl.org/SDL_image`
-- **Name**: `libsdl.org/SDL_image`
+- **Name**: `SDL_image`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libsdl.org/SDL_image/package.yml)
 
@@ -21,26 +21,6 @@ launchpad install libsdl.org/SDL_image
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 13 versions</summary>
-
-- `3.2.4`, `3.2.2`, `3.2.0`, `2.8.8`, `2.8.6`
-- `2.8.5`, `2.8.4`, `2.8.3`, `2.8.2`, `2.8.1`
-- `2.8.0`, `2.7.1`, `2.6.3`
-
-</details>
-
-**Latest Version**: `3.2.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +libsdl.org/SDL_image@3.2.4 -- $SHELL -i
-```
 
 ## Dependencies
 
@@ -59,7 +39,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libsdl.org/SDL_image']
+const pkg = pantry.SDL_image
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
