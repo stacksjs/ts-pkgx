@@ -1,11 +1,11 @@
-# rtmpdump.mplayerhq.hu
+# rtmpdump
 
-> Package from pantry: rtmpdump.mplayerhq.hu
+> Tool for downloading RTMP streaming media
 
 ## Package Information
 
 - **Domain**: `rtmpdump.mplayerhq.hu`
-- **Name**: `rtmpdump.mplayerhq.hu`
+- **Name**: `rtmpdump`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rtmpdump.mplayerhq.hu/package.yml)
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install rtmpdump.mplayerhq.hu
+launchpad install rtmpdump
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `rtmpdump`
+- `rtmpgw`
+- `rtmpsrv`
+- `rtmpsuck`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `2.3.0`, `2.3.0`
+
+</details>
+
+**Latest Version**: `2.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +rtmpdump.mplayerhq.hu@2.3.0 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -35,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rtmpdump.mplayerhq.hu']
+const pkg = pantry.rtmpdump
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

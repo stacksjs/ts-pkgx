@@ -66,23 +66,23 @@ Develop and deploy code with zero configuration
 
 ---
 
-### [render.com](../packages/render.com/index.md)
+### [render.com](../packages/render.com/index.md) (render)
 
-Package from pantry: render.com
+Command-line interface for Render
 
-**Programs**: None specified
+**Programs**: render
 
-**Install**: `launchpad install render.com`
+**Install**: `launchpad install render`
 
 ---
 
-### [supabase.com/cli](../packages/supabase.com/cli/index.md) (cli)
+### [supabase.com/cli](../packages/supabase.com/cli/index.md) (supabase)
 
-Package from pantry: supabase.com/cli
+Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres backups. Generating types from your database schema.
 
-**Programs**: None specified
+**Programs**: supabase
 
-**Install**: `launchpad install supabase.com/cli`
+**Install**: `launchpad install supabase`
 
 ---
 

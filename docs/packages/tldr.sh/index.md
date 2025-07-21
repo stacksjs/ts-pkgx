@@ -1,11 +1,11 @@
-# tldr.sh
+# tldr
 
-> Package from pantry: tldr.sh
+> C command-line client for tldr pages 📚
 
 ## Package Information
 
 - **Domain**: `tldr.sh`
-- **Name**: `tldr.sh`
+- **Name**: `tldr`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tldr.sh/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install tldr.sh
+launchpad install tldr
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `tldr`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `1.6.1`, `1.6.0`, `1.5.0`
+
+</details>
+
+**Latest Version**: `1.6.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) tldr -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -35,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['tldr.sh']
+const pkg = pantry.tldr
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

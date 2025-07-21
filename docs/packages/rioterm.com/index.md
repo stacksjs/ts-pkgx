@@ -1,11 +1,11 @@
-# rioterm.com
+# rio
 
-> Package from pantry: rioterm.com
+> A hardware-accelerated GPU terminal emulator focusing to run in desktops and browsers.
 
 ## Package Information
 
 - **Domain**: `rioterm.com`
-- **Name**: `rioterm.com`
+- **Name**: `rio`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rioterm.com/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install rioterm.com
+launchpad install rio
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `rio`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `0.2.22`, `0.2.21`, `0.2.20`, `0.2.19`, `0.2.18`
+- `0.2.17`, `0.2.16`
+
+</details>
+
+**Latest Version**: `0.2.22`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) rio -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +47,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rioterm.com']
+const pkg = pantry.rio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
