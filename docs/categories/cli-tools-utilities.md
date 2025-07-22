@@ -1,6 +1,6 @@
 # CLI Tools & Utilities
 
-*32 packages in this category*
+*35 packages in this category*
 
 Command-line utilities and system tools.
 
@@ -306,23 +306,53 @@ The most customisable and low-latency cross platform/shell prompt renderer
 
 ---
 
-### [stedolan.github.io/jq](../packages/stedolan.github.io/jq/index.md) (jq)
+### [starship.rs](../packages/starship.rs/index.md) (starship)
 
-Package from pantry: stedolan.github.io/jq
+☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
-**Programs**: None specified
+**Programs**: starship
 
-**Install**: `launchpad install stedolan.github.io/jq`
+**Install**: `launchpad install starship`
 
 ---
 
-### [wilfred.me.uk/difftastic](../packages/wilfred.me.uk/difftastic/index.md) (difftastic)
+### [stedolan.github.io/jq](../packages/stedolan.github.io/jq/index.md) (jq)
 
-Package from pantry: wilfred.me.uk/difftastic
+Lightweight and flexible command-line JSON processor
 
-**Programs**: None specified
+**Programs**: jq
 
-**Install**: `launchpad install wilfred.me.uk/difftastic`
+**Install**: `launchpad install jq`
+
+---
+
+### [tree-sitter.github.io](../packages/tree-sitter.github.io/index.md) (tree-sitter)
+
+Parser generator tool and incremental parsing library
+
+**Programs**: tree-sitter
+
+**Install**: `launchpad install tree-sitter`
+
+---
+
+### [wilfred.me.uk/difftastic](../packages/wilfred.me.uk/difftastic/index.md) (difft)
+
+a structural diff that understands syntax 🟥🟩
+
+**Programs**: difft
+
+**Install**: `launchpad install difft`
+
+---
+
+### [zsh.sourceforge.io](../packages/zsh.sourceforge.io/index.md) (zsh)
+
+UNIX shell (command interpreter)
+
+**Programs**: zsh
+
+**Install**: `launchpad install zsh`
 
 ---
 

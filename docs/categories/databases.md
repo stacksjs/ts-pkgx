@@ -1,6 +1,6 @@
 # Databases
 
-*9 packages in this category*
+*13 packages in this category*
 
 Database systems and data storage solutions.
 
@@ -93,6 +93,46 @@ Redis is an in-memory database that persists on disk. The data model is key-valu
 **Programs**: redis-server, redis-cli, redis-benchmark
 
 **Install**: `launchpad install redis`
+
+---
+
+### [sqlite.org](../packages/sqlite.org/index.md) (sqlite3)
+
+Official Git mirror of the SQLite source tree
+
+**Programs**: sqlite3
+
+**Install**: `launchpad install sqlite3`
+
+---
+
+### [surrealdb.com](../packages/surrealdb.com/index.md) (surreal)
+
+A scalable, distributed, collaborative, document-graph database, for the realtime web
+
+**Programs**: surreal
+
+**Install**: `launchpad install surreal`
+
+---
+
+### [turso.tech](../packages/turso.tech/index.md) (turso)
+
+Command line interface to Turso.
+
+**Programs**: turso
+
+**Install**: `launchpad install turso`
+
+---
+
+### [valkey.io](../packages/valkey.io/index.md) (valkey)
+
+A flexible distributed key-value datastore that is optimized for caching and other realtime workloads.
+
+**Programs**: valkey-server, valkey-cli, valkey-benchmark
+
+**Install**: `launchpad install valkey`
 
 ---
 

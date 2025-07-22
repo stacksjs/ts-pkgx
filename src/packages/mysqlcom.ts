@@ -3,7 +3,7 @@
  *
  * @domain `mysql.com`
  * @programs `mysql_client_test`, `my_print_defaults`, `myisam_ftdump`, `myisamchk`, `myisamlog`, ... (+26 more)
- * @version `9.4.0` (26 versions available)
+ * @version `9.4.0` (27 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mysql.com`
@@ -121,6 +121,7 @@ export const mysqlcomPackage = {
     '8.3.0',
     '8.2.0',
     '8.1.0',
+    '8.0.43',
     '8.0.42',
     '8.0.41',
     '8.0.40',
