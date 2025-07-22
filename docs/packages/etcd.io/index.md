@@ -26,21 +26,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 13 versions</summary>
+<summary>Show all 15 versions</summary>
 
-- `3.6.2`, `3.6.1`, `3.6.0`, `3.5.21`, `3.5.20`
-- `3.5.19`, `3.5.18`, `3.5.17`, `3.5.16`, `3.5.15`
-- `3.5.14`, `3.4.37`, `3.4.36`
+- `3.6.3`, `3.6.2`, `3.6.1`, `3.6.0`, `3.5.22`
+- `3.5.21`, `3.5.20`, `3.5.19`, `3.5.18`, `3.5.17`
+- `3.5.16`, `3.5.15`, `3.5.14`, `3.4.37`, `3.4.36`
 
 </details>
 
-**Latest Version**: `3.6.2`
+**Latest Version**: `3.6.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +etcd.io@3.6.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +etcd.io@3.6.3 -- $SHELL -i
 ```
 
 ## Usage Examples
