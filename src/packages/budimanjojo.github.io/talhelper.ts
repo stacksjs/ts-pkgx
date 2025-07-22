@@ -3,7 +3,7 @@
  *
  * @domain `budimanjojo.github.io/talhelper`
  * @programs `talhelper`
- * @version `3.0.30` (50 versions available)
+ * @version `3.0.31` (51 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install talhelper`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "talhelper"
  * console.log(pkg.description) // "A tool to help creating Talos kubernetes cluster"
  * console.log(pkg.programs)    // ["talhelper"]
- * console.log(pkg.versions[0]) // "3.0.30" (latest)
+ * console.log(pkg.versions[0]) // "3.0.31" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/budimanjojo-github-io/talhelper.md
@@ -62,6 +62,7 @@ export const talhelperPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.0.31',
     '3.0.30',
     '3.0.29',
     '3.0.28',
