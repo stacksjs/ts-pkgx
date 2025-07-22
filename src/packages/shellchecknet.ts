@@ -1,38 +1,28 @@
 /**
- * **shellcheck** - ShellCheck, a static analysis tool for shell scripts
+ * **shellcheck.net** - Package from pantry: shellcheck.net
  *
  * @domain `shellcheck.net`
- * @programs `shellcheck`
- * @version `0.10.0` (3 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install shellcheck`
- * @name `shellcheck`
+ * @install `launchpad install shellcheck.net`
  * @dependencies `sourceware.org/libffi@3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.shellcheck
- * // Or access via domain
- * const samePkg = pantry.shellchecknet
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "shellcheck"
- * console.log(pkg.description) // "ShellCheck, a static analysis tool for shell sc..."
- * console.log(pkg.programs)    // ["shellcheck"]
- * console.log(pkg.versions[0]) // "0.10.0" (latest)
+ * const pkg = pantry.shellchecknet
+ * console.log(pkg.name)        // "shellcheck.net"
+ * console.log(pkg.description) // "Package from pantry: shellcheck.net"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/shellcheck-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const shellcheckPackage = {
+export const shellchecknetPackage = {
   /**
    * The display name of this package.
    */
-  name: 'shellcheck' as const,
+  name: 'shellcheck.net' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,22 +30,15 @@ export const shellcheckPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'ShellCheck, a static analysis tool for shell scripts' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/shellcheck.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: shellcheck.net' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install shellcheck' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'shellcheck',
-  ] as const,
+  installCommand: 'launchpad install shellcheck.net' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +shellcheck.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install shellcheck.net' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,22 +47,10 @@ export const shellcheckPackage = {
   dependencies: [
     'sourceware.org/libffi@3',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.10.0',
-    '0.9.0',
-    '0.8.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) shellcheck -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install shellcheck' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/shellcheck.net/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type ShellcheckPackage = typeof shellcheckPackage
+export type ShellchecknetPackage = typeof shellchecknetPackage

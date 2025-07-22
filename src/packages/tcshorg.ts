@@ -1,10 +1,7 @@
 /**
- * **tcsh.org** - Enhanced, fully compatible version of the Berkeley C shell
+ * **tcsh.org** - Package from pantry: tcsh.org
  *
  * @domain `tcsh.org`
- * @programs `csh`, `tcsh`
- * @version `6.24.16` (2 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install tcsh.org`
  * @dependencies `github.com/besser82/libxcrypt@4`, `invisible-island.net/ncurses@6`
@@ -15,9 +12,7 @@
  *
  * const pkg = pantry.tcshorg
  * console.log(pkg.name)        // "tcsh.org"
- * console.log(pkg.description) // "Enhanced, fully compatible version of the Berke..."
- * console.log(pkg.programs)    // ["csh", "tcsh"]
- * console.log(pkg.versions[0]) // "6.24.16" (latest)
+ * console.log(pkg.description) // "Package from pantry: tcsh.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tcsh-org.md
@@ -35,23 +30,15 @@ export const tcshorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Enhanced, fully compatible version of the Berkeley C shell' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tcsh.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: tcsh.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install tcsh.org' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'csh',
-    'tcsh',
-  ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tcsh.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tcsh.org' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -61,17 +48,10 @@ export const tcshorgPackage = {
     'github.com/besser82/libxcrypt@4',
     'invisible-island.net/ncurses@6',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '6.24.16',
-    '6.24.15',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tcsh.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tcsh.org' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tcsh.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type TcshorgPackage = typeof tcshorgPackage

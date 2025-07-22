@@ -1,11 +1,11 @@
-# wails
+# wails.io
 
-> Create beautiful applications using Go
+> Package from pantry: wails.io
 
 ## Package Information
 
 - **Domain**: `wails.io`
-- **Name**: `wails`
+- **Name**: `wails.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wails.io/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install wails
+launchpad install wails.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `wails`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `2.10.2`, `2.10.1`, `2.10.0`, `2.9.3`, `2.9.2`
-- `2.9.1`, `2.9.0`, `2.8.2`, `2.8.1`, `2.8.0`
-
-</details>
-
-**Latest Version**: `2.10.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) wails -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -57,7 +38,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.wails
+const pkg = pantry['wails.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

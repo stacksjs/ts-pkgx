@@ -76,13 +76,13 @@ Command-line interface for Render
 
 ---
 
-### [supabase.com/cli](../packages/supabase.com/cli/index.md) (supabase)
+### [supabase.com/cli](../packages/supabase.com/cli/index.md) (cli)
 
-Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres backups. Generating types from your database schema.
+Package from pantry: supabase.com/cli
 
-**Programs**: supabase
+**Programs**: None specified
 
-**Install**: `launchpad install supabase`
+**Install**: `launchpad install supabase.com/cli`
 
 ---
 

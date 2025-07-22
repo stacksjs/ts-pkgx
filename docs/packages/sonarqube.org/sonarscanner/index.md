@@ -1,11 +1,11 @@
-# sonar-scanner
+# sonarscanner
 
-> Scanner CLI for SonarQube (Server, Cloud)
+> Package from pantry: sonarqube.org/sonarscanner
 
 ## Package Information
 
 - **Domain**: `sonarqube.org/sonarscanner`
-- **Name**: `sonar-scanner`
+- **Name**: `sonarscanner`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sonarqube.org/sonarscanner/package.yml)
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install sonar-scanner
+launchpad install sonarqube.org/sonarscanner
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `sonar-scanner`
-- `sonar-scanner-debug`
-
-## Available Versions
-
-<details>
-<summary>Show all 11 versions</summary>
-
-- `7.2.0.5079`, `7.1.0.4889`, `7.0.2.4839`, `7.0.1.4817`, `7.0.0.4796`
-- `6.2.1.4610`, `6.2.0.4584`, `6.1.0.4477`, `6.0.0.4432`, `5.0.2.4997`
-- `5.0.1.3006`
-
-</details>
-
-**Latest Version**: `7.2.0.5079`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +sonarqube.org/sonarscanner@7.2.0.5079 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -55,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['sonar-scanner']
+const pkg = pantry.sonarscanner
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -46,33 +46,33 @@ Swiss-army knife of markup format conversion
 
 ---
 
-### [sphinx-doc.org](../packages/sphinx-doc.org/index.md) (sphinx)
+### [sphinx-doc.org](../packages/sphinx-doc.org/index.md)
 
-Tool to create intelligent and beautiful documentation
+Package from pantry: sphinx-doc.org
 
-**Programs**: sphinx-apidoc, sphinx-autogen, sphinx-build, sphinx-quickstart
+**Programs**: None specified
 
-**Install**: `launchpad install sphinx`
-
----
-
-### [tectonic-typesetting.github.io](../packages/tectonic-typesetting.github.io/index.md) (tectonic)
-
-A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive.
-
-**Programs**: tectonic
-
-**Install**: `launchpad install tectonic`
+**Install**: `launchpad install sphinx-doc.org`
 
 ---
 
-### [typst.app](../packages/typst.app/index.md) (typst)
+### [tectonic-typesetting.github.io](../packages/tectonic-typesetting.github.io/index.md)
 
-A new markup-based typesetting system that is powerful and easy to learn.
+Package from pantry: tectonic-typesetting.github.io
 
-**Programs**: typst
+**Programs**: None specified
 
-**Install**: `launchpad install typst`
+**Install**: `launchpad install tectonic-typesetting.github.io`
+
+---
+
+### [typst.app](../packages/typst.app/index.md)
+
+Package from pantry: typst.app
+
+**Programs**: None specified
+
+**Install**: `launchpad install typst.app`
 
 ---
 

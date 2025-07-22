@@ -1,6 +1,6 @@
 # driftctl
 
-> Detect, track and alert on infrastructure drift
+> Package from pantry: snyk.io/driftctl
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install driftctl
+launchpad install snyk.io/driftctl
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `driftctl`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.40.0`, `0.39.0`
-
-</details>
-
-**Latest Version**: `0.40.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) driftctl -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

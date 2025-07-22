@@ -2,7 +2,7 @@
  * **libwebsockets.org** - canonical libwebsockets.org networking library
  *
  * @domain `libwebsockets.org`
- * @version `4.4.1` (6 versions available)
+ * @version `4.4.1` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install libwebsockets.org`
@@ -59,6 +59,7 @@ export const libwebsocketsorgPackage = {
   versions: [
     '4.4.1',
     '4.4.0',
+    '4.3.6',
     '4.3.5',
     '4.3.4',
     '4.3.3',

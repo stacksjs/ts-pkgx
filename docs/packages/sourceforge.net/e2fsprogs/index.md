@@ -1,11 +1,11 @@
-# sf.net/e2fsprogs
+# e2fsprogs
 
-> Utilities for the ext2, ext3, and ext4 file systems
+> Package from pantry: sourceforge.net/e2fsprogs
 
 ## Package Information
 
 - **Domain**: `sourceforge.net/e2fsprogs`
-- **Name**: `sf.net/e2fsprogs`
+- **Name**: `e2fsprogs`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/e2fsprogs/package.yml)
 
@@ -20,29 +20,7 @@ launchpad install sourceforge.net/e2fsprogs
 
 This package provides the following executable programs:
 
-- `chattr`
-- `compile_et`
-- `lsattr`
-- `mk_cmds`
-- `uuidgen`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.47.3`, `1.47.2`, `1.47.1`, `1.47.0`
-
-</details>
-
-**Latest Version**: `1.47.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +sourceforge.net/e2fsprogs@1.47.3 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -57,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['sf.net/e2fsprogs']
+const pkg = pantry.e2fsprogs
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

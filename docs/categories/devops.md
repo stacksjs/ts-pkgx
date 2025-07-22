@@ -1,6 +1,6 @@
 # DevOps
 
-*27 packages in this category*
+*23 packages in this category*
 
 Tools for deployment, orchestration, and infrastructure management.
 
@@ -233,46 +233,6 @@ Terraform Pull Request Automation tool
 **Programs**: atlantis
 
 **Install**: `launchpad install atlantis`
-
----
-
-### [terraform.io](../packages/terraform.io/index.md) (terraform)
-
-Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.
-
-**Programs**: terraform
-
-**Install**: `launchpad install terraform`
-
----
-
-### [terragrunt.gruntwork.io](../packages/terragrunt.gruntwork.io/index.md) (terragrunt)
-
-Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTofu/Terraform to scale.
-
-**Programs**: terragrunt
-
-**Install**: `launchpad install terragrunt`
-
----
-
-### [terratag.io](../packages/terratag.io/index.md) (terratag)
-
-Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags across their entire set of AWS, Azure, and GCP resources
-
-**Programs**: terratag
-
-**Install**: `launchpad install terratag`
-
----
-
-### [vaultproject.io](../packages/vaultproject.io/index.md) (vault)
-
-A tool for secrets management, encryption as a service, and privileged access management
-
-**Programs**: vault
-
-**Install**: `launchpad install vault`
 
 ---
 
