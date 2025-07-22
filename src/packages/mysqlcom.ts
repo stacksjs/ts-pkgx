@@ -3,7 +3,7 @@
  *
  * @domain `mysql.com`
  * @programs `mysql_client_test`, `my_print_defaults`, `myisam_ftdump`, `myisamchk`, `myisamlog`, ... (+26 more)
- * @version `9.3.0` (24 versions available)
+ * @version `9.4.0` (25 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mysql.com`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "mysql.com"
  * console.log(pkg.description) // "MySQL Server, the world's most popular open sou..."
  * console.log(pkg.programs)    // ["mysql_client_test", "my_print_defaults", ...]
- * console.log(pkg.versions[0]) // "9.3.0" (latest)
+ * console.log(pkg.versions[0]) // "9.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mysql-com.md
@@ -105,6 +105,7 @@ export const mysqlcomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '9.4.0',
     '9.3.0',
     '9.2.0',
     '9.1.0',

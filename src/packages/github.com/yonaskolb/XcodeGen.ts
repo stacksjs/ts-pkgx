@@ -3,7 +3,7 @@
  *
  * @domain `github.com/yonaskolb/XcodeGen`
  * @programs `xcodegen`
- * @version `2.44.0` (13 versions available)
+ * @version `2.44.1` (14 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xcodegen`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "xcodegen"
  * console.log(pkg.description) // "Generate your Xcode project from a spec file an..."
  * console.log(pkg.programs)    // ["xcodegen"]
- * console.log(pkg.versions[0]) // "2.44.0" (latest)
+ * console.log(pkg.versions[0]) // "2.44.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/yonaskolb/XcodeGen.md
@@ -62,6 +62,7 @@ export const xcodegenPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.44.1',
     '2.44.0',
     '2.43.0',
     '2.42.0',
