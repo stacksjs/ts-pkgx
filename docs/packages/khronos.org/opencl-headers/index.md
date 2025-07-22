@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `2024.10.24`, `2024.5.8`, `2023.12.14`, `2023.4.17`
+- `2025.7.22`, `2024.10.24`, `2024.5.8`, `2023.12.14`, `2023.4.17`
 
 </details>
 
-**Latest Version**: `2024.10.24`
+**Latest Version**: `2025.7.22`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +khronos.org/opencl-headers@2024.10.24 -- $SHELL -i
+sh <(curl https://pkgx.sh) +khronos.org/opencl-headers@2025.7.22 -- $SHELL -i
 ```
 
 ## Usage Examples

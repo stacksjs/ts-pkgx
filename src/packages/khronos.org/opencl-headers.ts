@@ -2,7 +2,7 @@
  * **khronos.org/opencl-headers** - Khronos OpenCL-Headers
  *
  * @domain `khronos.org/opencl-headers`
- * @version `2024.10.24` (4 versions available)
+ * @version `2025.7.22` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install khronos.org/opencl-headers`
@@ -14,7 +14,7 @@
  * const pkg = pantry.khronosorgopenclheaders
  * console.log(pkg.name)        // "khronos.org/opencl-headers"
  * console.log(pkg.description) // "Khronos OpenCL-Headers"
- * console.log(pkg.versions[0]) // "2024.10.24" (latest)
+ * console.log(pkg.versions[0]) // "2025.7.22" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/khronos-org/opencl-headers.md
@@ -49,6 +49,7 @@ export const khronosorgopenclheadersPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2025.7.22',
     '2024.10.24',
     '2024.5.8',
     '2023.12.14',
