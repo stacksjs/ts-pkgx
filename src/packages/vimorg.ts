@@ -3,7 +3,7 @@
  *
  * @domain `vim.org`
  * @programs `vim`, `vi`
- * @version `9.1.1581` (2149 versions available)
+ * @version `9.1.1581` (2150 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install vim.org`
@@ -76,6 +76,7 @@ export const vimPackage = {
   versions: [
     '9.1.1581',
     '9.1.1580',
+    '9.1.1579',
     '9.1.1578',
     '9.1.1577',
     '9.1.1576',
