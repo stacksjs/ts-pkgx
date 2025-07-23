@@ -101,7 +101,8 @@ async function zipPlatform(platform: typeof platforms[0]) {
       try {
         await $`head -c 1 ${platform.output} > /dev/null`
         console.log('✅ Windows executable is readable')
-      } catch (readError) {
+      }
+      catch (readError) {
         console.error('❌ Cannot read Windows executable:', readError)
         throw new Error('Windows executable is not readable')
       }
@@ -109,7 +110,8 @@ async function zipPlatform(platform: typeof platforms[0]) {
 
     try {
       await $`zip -j ${zipFile} ${platform.output}`
-    } catch (zipError) {
+    }
+    catch {
       // If zip fails, try to fix permissions and retry
       console.log(`Zip failed, attempting to fix permissions and retry...`)
       await $`chmod 644 ${platform.output}`
