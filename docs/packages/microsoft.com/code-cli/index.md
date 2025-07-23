@@ -31,16 +31,16 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 17 versions</summary>
+<summary>Show all 18 versions</summary>
 
-- `1.102.1`, `1.102.0`, `1.101.2`, `1.101.1`, `1.101.0`
-- `1.100.3`, `1.100.2`, `1.100.1`, `1.100.0`, `1.99.3`
-- `1.99.2`, `1.99.1`, `1.99.0`, `1.98.2`, `1.98.1`
-- `1.98.0`, `1.97.2`
+- `1.102.2`, `1.102.1`, `1.102.0`, `1.101.2`, `1.101.1`
+- `1.101.0`, `1.100.3`, `1.100.2`, `1.100.1`, `1.100.0`
+- `1.99.3`, `1.99.2`, `1.99.1`, `1.99.0`, `1.98.2`
+- `1.98.1`, `1.98.0`, `1.97.2`
 
 </details>
 
-**Latest Version**: `1.102.1`
+**Latest Version**: `1.102.2`
 
 ### Install Specific Version
 
