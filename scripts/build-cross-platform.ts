@@ -46,10 +46,15 @@ async function compilePlatform(platform: typeof platforms[0]) {
     const stats = statSync(platform.output)
     console.log(`✅ ${platform.name} compiled successfully (${Math.round(stats.size / 1024 / 1024)}MB)`)
 
+    // Set proper permissions for the executable
+    await $`chmod +r ${platform.output}`
+
     // For Windows, add a small extra delay to ensure file handle is released
     if (platform.name === 'windows-x64') {
       console.log('⏳ Waiting for Windows file handle to be released...')
       await new Promise(resolve => setTimeout(resolve, 2000))
+      // Extra permission check for Windows
+      await $`chmod 644 ${platform.output}`
     }
 
     return true
@@ -86,9 +91,30 @@ async function zipPlatform(platform: typeof platforms[0]) {
       if (stats.size === 0) {
         throw new Error(`Windows executable is empty`)
       }
+
+      // Ensure proper permissions before zipping
+      console.log('Setting proper permissions for Windows executable...')
+      await $`chmod 644 ${platform.output}`
+      await $`ls -la ${platform.output}`
+
+      // Test if we can actually read the file
+      try {
+        await $`head -c 1 ${platform.output} > /dev/null`
+        console.log('✅ Windows executable is readable')
+      } catch (readError) {
+        console.error('❌ Cannot read Windows executable:', readError)
+        throw new Error('Windows executable is not readable')
+      }
     }
 
-    await $`zip -j ${zipFile} ${platform.output}`
+    try {
+      await $`zip -j ${zipFile} ${platform.output}`
+    } catch (zipError) {
+      // If zip fails, try to fix permissions and retry
+      console.log(`Zip failed, attempting to fix permissions and retry...`)
+      await $`chmod 644 ${platform.output}`
+      await $`zip -j ${zipFile} ${platform.output}`
+    }
 
     if (!existsSync(zipFile)) {
       throw new Error(`Zip file ${zipFile} was not created`)
