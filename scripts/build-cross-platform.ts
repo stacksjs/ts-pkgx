@@ -53,7 +53,8 @@ async function compilePlatform(platform: typeof platforms[0]) {
     }
 
     return true
-  } catch (error) {
+  }
+  catch (error) {
     console.error(`❌ Failed to compile ${platform.name}:`, error)
     return false
   }
@@ -95,7 +96,8 @@ async function zipPlatform(platform: typeof platforms[0]) {
 
     console.log(`✅ ${platform.name} zipped successfully`)
     return true
-  } catch (error) {
+  }
+  catch (error) {
     console.error(`❌ Failed to zip ${platform.name}:`, error)
 
     // Add extra debugging for Windows
@@ -104,7 +106,8 @@ async function zipPlatform(platform: typeof platforms[0]) {
       try {
         await $`ls -la ${platform.output}`
         await $`file ${platform.output}`
-      } catch (debugError) {
+      }
+      catch (debugError) {
         console.error('Debug commands failed:', debugError)
       }
     }
@@ -148,7 +151,8 @@ async function main() {
 
   if (allSucceeded) {
     console.log('🎉 All builds completed successfully!')
-  } else {
+  }
+  else {
     console.error('❌ Some operations failed')
     process.exit(1)
   }
