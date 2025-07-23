@@ -156,6 +156,13 @@ jobs:
         id: get_version
         run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
 
+      - name: Verify Build Artifacts
+        run: |
+          echo "Checking for build artifacts..."
+          ls -la bin/
+          echo "Verifying zip files exist..."
+          ls -la bin/*.zip || echo "No zip files found"
+
       - name: Publish to npm
         run: bun publish --access public
         env:
