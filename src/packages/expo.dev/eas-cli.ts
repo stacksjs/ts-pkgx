@@ -3,7 +3,7 @@
  *
  * @domain `expo.dev/eas-cli`
  * @programs `eas`
- * @version `16.17.0` (146 versions available)
+ * @version `16.17.1` (147 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install eas`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "eas"
  * console.log(pkg.description) // "Fastest way to build, submit, and update iOS an..."
  * console.log(pkg.programs)    // ["eas"]
- * console.log(pkg.versions[0]) // "16.17.0" (latest)
+ * console.log(pkg.versions[0]) // "16.17.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/expo-dev/eas-cli.md
@@ -69,6 +69,7 @@ export const easPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '16.17.1',
     '16.17.0',
     '16.16.0',
     '16.15.0',
