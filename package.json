@@ -82,6 +82,8 @@
     "pkgx:docs": "bun bin/cli.ts generate-docs"
   },
   "dependencies": {
+    "chromium-bidi": "^7.2.0",
+    "electron": "^37.2.4",
     "js-yaml": "^4.1.0",
     "playwright": "^1.54.1"
   },
@@ -92,8 +94,6 @@
     "bumpp": "^10.2.0",
     "bun-plugin-dtsx": "0.9.5",
     "changelogen": "^0.6.2",
-    "chromium-bidi": "^7.2.0",
-    "electron": "^37.2.4",
     "lint-staged": "^16.1.2",
     "simple-git-hooks": "^2.13.0",
     "typescript": "^5.8.3"
