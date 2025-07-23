@@ -511,7 +511,7 @@ import { buildifierPackage } from './github.com/bazelbuild/buildtools'
 import { githubcombenjaminpsixPackage } from './github.com/benjaminp/six'
 import { awswhoamiPackage } from './github.com/benkehoe/aws-whoami-golang'
 import { githubcombesser82libxcryptPackage } from './github.com/besser82/libxcrypt'
-import { lporgPackage } from './github.com/blacktop/lporg'
+import { githubcomblacktoplporgPackage } from './github.com/blacktop/lporg'
 import { nexPackage } from './github.com/blynn/nex'
 import { sccPackage } from './github.com/boyter/scc'
 import { githubcombronaiproute2macPackage } from './github.com/brona/iproute2mac'
@@ -2478,8 +2478,8 @@ export interface Pantry {
   githubcombenkehoe: typeof awswhoamiPackage
   libxcrypt: typeof githubcombesser82libxcryptPackage
   githubcombesser82: typeof githubcombesser82libxcryptPackage
-
-  githubcomblacktop: typeof lporgPackage
+  lporg: typeof githubcomblacktoplporgPackage
+  githubcomblacktop: typeof githubcomblacktoplporgPackage
 
   githubcomblynn: typeof nexPackage
 
@@ -5025,7 +5025,7 @@ export interface Pantry {
   md2html: typeof md2htmlPackage
   mmdblookup: typeof mmdblookupPackage
   'alpaca.cpp': typeof alpacacppPackage
-  lporg: typeof lporgPackage
+  blacktop: typeof githubcomblacktoplporgPackage
   mailpit: typeof mailpitPackage
   s5cmd: typeof s5cmdPackage
   sasqwatch: typeof sasqwatchPackage
@@ -6286,8 +6286,8 @@ export const pantry: Pantry = {
   githubcombenkehoe: awswhoamiPackage,
   libxcrypt: githubcombesser82libxcryptPackage,
   githubcombesser82: githubcombesser82libxcryptPackage,
-
-  githubcomblacktop: lporgPackage,
+  lporg: githubcomblacktoplporgPackage,
+  githubcomblacktop: githubcomblacktoplporgPackage,
 
   githubcomblynn: nexPackage,
 
@@ -8833,7 +8833,7 @@ export const pantry: Pantry = {
   md2html: md2htmlPackage,
   mmdblookup: mmdblookupPackage,
   'alpaca.cpp': alpacacppPackage,
-  lporg: lporgPackage,
+  blacktop: githubcomblacktoplporgPackage,
   mailpit: mailpitPackage,
   s5cmd: s5cmdPackage,
   sasqwatch: sasqwatchPackage,

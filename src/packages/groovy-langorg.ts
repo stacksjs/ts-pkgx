@@ -3,7 +3,7 @@
  *
  * @domain `groovy-lang.org`
  * @programs `grape`, `grape_completion`, `groovy`, `groovyc`, `groovyc_completion`, ... (+9 more)
- * @version `4.0.27` (22 versions available)
+ * @version `4.0.28` (23 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install groovy-lang.org`
@@ -16,7 +16,7 @@
  * const pkg = pantry.groovylangorg
  * console.log(pkg.name)        // "groovy-lang.org"
  * console.log(pkg.programs)    // ["grape", "grape_completion", ...]
- * console.log(pkg.versions[0]) // "4.0.27" (latest)
+ * console.log(pkg.versions[0]) // "4.0.28" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/groovy-lang-org.md
@@ -76,6 +76,7 @@ export const groovylangorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.0.28',
     '4.0.27',
     '4.0.26',
     '4.0.25',
