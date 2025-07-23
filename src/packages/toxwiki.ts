@@ -3,7 +3,7 @@
  *
  * @domain `tox.wiki`
  * @programs `tox`
- * @version `4.28.0` (17 versions available)
+ * @version `4.28.1` (18 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tox`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "tox"
  * console.log(pkg.description) // "Command line driven CI frontend and development..."
  * console.log(pkg.programs)    // ["tox"]
- * console.log(pkg.versions[0]) // "4.28.0" (latest)
+ * console.log(pkg.versions[0]) // "4.28.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tox-wiki.md
@@ -69,6 +69,7 @@ export const toxPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.28.1',
     '4.28.0',
     '4.27.0',
     '4.26.0',
