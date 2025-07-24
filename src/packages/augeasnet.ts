@@ -1,10 +1,7 @@
 /**
- * **augeas.net** - A configuration editing tool and API
+ * **augeas.net** - Package from pantry: augeas.net
  *
  * @domain `augeas.net`
- * @programs `augmatch`, `augparse`, `augprint`, `augtool`, `fadot`
- * @version `1.14.1` (2 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install augeas.net`
  * @dependencies `gnu.org/readline`, `gnome.org/libxml2`
@@ -15,9 +12,7 @@
  *
  * const pkg = pantry.augeasnet
  * console.log(pkg.name)        // "augeas.net"
- * console.log(pkg.description) // "A configuration editing tool and API"
- * console.log(pkg.programs)    // ["augmatch", "augparse", ...]
- * console.log(pkg.versions[0]) // "1.14.1" (latest)
+ * console.log(pkg.description) // "Package from pantry: augeas.net"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/augeas-net.md
@@ -35,26 +30,15 @@ export const augeasnetPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A configuration editing tool and API' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/augeas.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: augeas.net' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install augeas.net' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'augmatch',
-    'augparse',
-    'augprint',
-    'augtool',
-    'fadot',
-  ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +augeas.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install augeas.net' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,17 +48,10 @@ export const augeasnetPackage = {
     'gnu.org/readline',
     'gnome.org/libxml2',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.14.1',
-    '1.14.0',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +augeas.net -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install augeas.net' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/augeas.net/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type AugeasnetPackage = typeof augeasnetPackage

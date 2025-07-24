@@ -1,9 +1,7 @@
 /**
- * **abseil.io** - Abseil Common Libraries (C++)
+ * **abseil.io** - pkgx package
  *
  * @domain `abseil.io`
- * @version `20250512.1.0` (18 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install abseil.io`
  *
@@ -13,8 +11,6 @@
  *
  * const pkg = pantry.abseilio
  * console.log(pkg.name)        // "abseil.io"
- * console.log(pkg.description) // "Abseil Common Libraries (C++)"
- * console.log(pkg.versions[0]) // "20250512.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/abseil-io.md
@@ -32,10 +28,10 @@ export const abseilioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Abseil Common Libraries (C++)' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/abseil.io/package.yml' as const,
+  description: '' as const,
+  packageYmlUrl: '' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -44,30 +40,7 @@ export const abseilioPackage = {
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '20250512.1.0',
-    '20250512.0.0',
-    '20250127.1.0',
-    '20250127.0.0',
-    '20240722.1.0',
-    '20240722.0.0',
-    '20240116.3.0',
-    '20240116.2.0',
-    '20240116.1.0',
-    '20240116.0.0',
-    '20230802.3.0',
-    '20230802.2.0',
-    '20230802.1.0',
-    '20230802.0.0',
-    '20230125.4.0',
-    '20230125.3.0',
-    '20230125.2.0',
-    '20220623.2.0',
-  ] as const,
+  versions: [] as const,
   aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +abseil.io -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install abseil.io' as const,

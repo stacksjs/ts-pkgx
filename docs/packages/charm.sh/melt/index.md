@@ -1,6 +1,6 @@
 # melt
 
-> Author, manage, and run multitrack audio/video compositions
+> Package from pantry: charm.sh/melt
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install melt
+launchpad install charm.sh/melt
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `melt`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.6.2`, `0.6.1`, `0.6.0`, `0.5.0`
-
-</details>
-
-**Latest Version**: `0.6.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) melt -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

@@ -1,37 +1,28 @@
 /**
- * **conda** - pkgx package
+ * **conda.org** - Package from pantry: conda.org
  *
  * @domain `conda.org`
- * @programs `conda`
- * @version `25.5.1` (16 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install conda`
- * @name `conda`
+ * @install `launchpad install conda.org`
  * @dependencies `pkgx.sh^1`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.conda
- * // Or access via domain
- * const samePkg = pantry.condaorg
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "conda"
- * console.log(pkg.programs)    // ["conda"]
- * console.log(pkg.versions[0]) // "25.5.1" (latest)
+ * const pkg = pantry.condaorg
+ * console.log(pkg.name)        // "conda.org"
+ * console.log(pkg.description) // "Package from pantry: conda.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/conda-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const condaPackage = {
+export const condaorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'conda' as const,
+  name: 'conda.org' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,22 +30,15 @@ export const condaPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/conda.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: conda.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install conda' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'conda',
-  ] as const,
+  installCommand: 'launchpad install conda.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +conda.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install conda.org' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,35 +48,10 @@ export const condaPackage = {
     'pkgx.sh^1',
     'openssl.org^1.1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '25.5.1',
-    '25.3.1',
-    '25.1.1',
-    '24.11.1',
-    '24.9.2',
-    '24.7.1',
-    '24.5.0',
-    '24.4.0',
-    '24.3.0',
-    '24.1.2',
-    '23.11.0',
-    '23.10.0',
-    '23.9.0',
-    '23.7.4',
-    '23.7.3',
-    '23.7.2',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) conda -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install conda' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/conda.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type CondaPackage = typeof condaPackage
+export type CondaorgPackage = typeof condaorgPackage

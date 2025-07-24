@@ -1,38 +1,27 @@
 /**
- * **alacritty** - A cross-platform, OpenGL terminal emulator.
+ * **alacritty.org** - pkgx package
  *
  * @domain `alacritty.org`
- * @programs `alacritty`
- * @version `0.15.1` (4 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install alacritty`
- * @name `alacritty`
+ * @install `launchpad install alacritty.org`
  * @dependencies `linux:freetype.org`, `linux:freedesktop.org/fontconfig` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.alacritty
- * // Or access via domain
- * const samePkg = pantry.alacrittyorg
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "alacritty"
- * console.log(pkg.description) // "A cross-platform, OpenGL terminal emulator."
- * console.log(pkg.programs)    // ["alacritty"]
- * console.log(pkg.versions[0]) // "0.15.1" (latest)
+ * const pkg = pantry.alacrittyorg
+ * console.log(pkg.name)        // "alacritty.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/alacritty-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const alacrittyPackage = {
+export const alacrittyorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'alacritty' as const,
+  name: 'alacritty.org' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,22 +29,16 @@ export const alacrittyPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A cross-platform, OpenGL terminal emulator.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/alacritty.org/package.yml' as const,
+  description: '' as const,
+  packageYmlUrl: '' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install alacritty' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'alacritty',
-  ] as const,
+  installCommand: 'launchpad install alacritty.org' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -66,23 +49,10 @@ export const alacrittyPackage = {
     'linux:freetype.org',
     'linux:freedesktop.org/fontconfig',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.15.1',
-    '0.15.0',
-    '0.14.0',
-    '0.13.2',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
+  versions: [] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) alacritty -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install alacritty' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +alacritty.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install alacritty.org' as const,
 }
 
-export type AlacrittyPackage = typeof alacrittyPackage
+export type AlacrittyorgPackage = typeof alacrittyorgPackage

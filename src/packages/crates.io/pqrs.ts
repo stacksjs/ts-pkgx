@@ -1,5 +1,5 @@
 /**
- * **pqrs** - pkgx package
+ * **pqrs** - Package from pantry: crates.io/pqrs
  *
  * @domain `crates.io/pqrs`
  *
@@ -11,6 +11,7 @@
  *
  * const pkg = pantry.cratesiopqrs
  * console.log(pkg.name)        // "pqrs"
+ * console.log(pkg.description) // "Package from pantry: crates.io/pqrs"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/pqrs.md
@@ -28,22 +29,21 @@ export const cratesiopqrsPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: '' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  description: 'Package from pantry: crates.io/pqrs' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install crates.io/pqrs' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/pqrs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/pqrs' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/pqrs -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/pqrs' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/pqrs/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type CratesiopqrsPackage = typeof cratesiopqrsPackage

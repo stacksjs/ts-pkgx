@@ -1,5 +1,5 @@
 /**
- * **wthrr** - pkgx package
+ * **wthrr** - Package from pantry: crates.io/wthrr
  *
  * @domain `crates.io/wthrr`
  *
@@ -12,6 +12,7 @@
  *
  * const pkg = pantry.cratesiowthrr
  * console.log(pkg.name)        // "wthrr"
+ * console.log(pkg.description) // "Package from pantry: crates.io/wthrr"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/wthrr.md
@@ -29,15 +30,14 @@ export const cratesiowthrrPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: '' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  description: 'Package from pantry: crates.io/wthrr' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install crates.io/wthrr' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/wthrr -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/wthrr' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -48,9 +48,9 @@ export const cratesiowthrrPackage = {
     'openssl.org^1.1',
   ] as const,
   versions: [] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/wthrr -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/wthrr' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/wthrr/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type CratesiowthrrPackage = typeof cratesiowthrrPackage

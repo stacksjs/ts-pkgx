@@ -1,6 +1,6 @@
 # aspell.net
 
-> Spell checker with better logic than ispell
+> Package from pantry: aspell.net
 
 ## Package Information
 
@@ -20,33 +20,7 @@ launchpad install aspell.net
 
 This package provides the following executable programs:
 
-- `aspell`
-- `aspell-import`
-- `precat`
-- `preunzip`
-- `prezip`
-- `prezip-bin`
-- `pspell-config`
-- `run-with-aspell`
-- `word-list-compress`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.60.8.1`, `0.60.8`
-
-</details>
-
-**Latest Version**: `0.60.8.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +aspell.net@0.60.8.1 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

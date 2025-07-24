@@ -1,38 +1,28 @@
 # Package Managers
 
-*6 packages in this category*
+*5 packages in this category*
 
 Packages related to package managers.
 
 ## Packages
 
-### [bun.sh](../packages/bun.sh/index.md) (bun, bun.com)
+### [bun.sh](../packages/bun.sh/index.md)
 
-Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
+Package from pantry: bun.sh
 
-**Programs**: bun, bunx
+**Programs**: None specified
 
-**Install**: `launchpad install bun.com`
-
----
-
-### [classic.yarnpkg.com](../packages/classic.yarnpkg.com/index.md) (yarn)
-
-The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
-
-**Programs**: yarn, yarnpkg
-
-**Install**: `launchpad install yarn`
+**Install**: `launchpad install bun.sh`
 
 ---
 
-### [cocoapods.org](../packages/cocoapods.org/index.md) (pod)
+### [classic.yarnpkg.com](../packages/classic.yarnpkg.com/index.md)
 
-Dependency manager for Cocoa projects
+Package from pantry: classic.yarnpkg.com
 
-**Programs**: pod
+**Programs**: None specified
 
-**Install**: `launchpad install pod`
+**Install**: `launchpad install classic.yarnpkg.com`
 
 ---
 

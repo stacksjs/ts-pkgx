@@ -1,5 +1,5 @@
 /**
- * **spotify_player** - pkgx package
+ * **spotify_player** - Package from pantry: crates.io/spotify_player
  *
  * @domain `crates.io/spotify_player`
  *
@@ -12,6 +12,7 @@
  *
  * const pkg = pantry.cratesiospotify_player
  * console.log(pkg.name)        // "spotify_player"
+ * console.log(pkg.description) // "Package from pantry: crates.io/spotify_player"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/spotify_player.md
@@ -29,15 +30,14 @@ export const cratesiospotify_playerPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: '' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  description: 'Package from pantry: crates.io/spotify_player' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install crates.io/spotify_player' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/spotify_player -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/spotify_player' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -52,9 +52,9 @@ export const cratesiospotify_playerPackage = {
     'linux:freedesktop.org/dbus^1',
   ] as const,
   versions: [] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/spotify_player -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/spotify_player' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/spotify_player/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type Cratesiospotify_playerPackage = typeof cratesiospotify_playerPackage

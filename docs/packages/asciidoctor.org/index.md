@@ -1,11 +1,11 @@
-# asciidoctor
+# asciidoctor.org
 
-> :gem: A fast, open source text processor and publishing toolchain, written in Ruby, for converting AsciiDoc content to HTML 5, DocBook 5, and other formats.
+> Package from pantry: asciidoctor.org
 
 ## Package Information
 
 - **Domain**: `asciidoctor.org`
-- **Name**: `asciidoctor`
+- **Name**: `asciidoctor.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/asciidoctor.org/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install asciidoctor
+launchpad install asciidoctor.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `asciidoctor`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `2.0.23`, `2.0.22`, `2.0.21`, `2.0.20`, `2.0.19`
-- `2.0.18`
-
-</details>
-
-**Latest Version**: `2.0.23`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) asciidoctor -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -54,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.asciidoctor
+const pkg = pantry['asciidoctor.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

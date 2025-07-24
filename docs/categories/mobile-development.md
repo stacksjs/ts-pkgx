@@ -1,18 +1,28 @@
 # Mobile Development
 
-*4 packages in this category*
+*5 packages in this category*
 
 Packages related to mobile development.
 
 ## Packages
 
-### [appium.io](../packages/appium.io/index.md) (appium)
+### [android.com/cmdline-tools](../packages/android.com/cmdline-tools/index.md) (cmdline-tools)
 
-Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver protocol
+Package from pantry: android.com/cmdline-tools
 
-**Programs**: appium
+**Programs**: None specified
 
-**Install**: `launchpad install appium`
+**Install**: `launchpad install android.com/cmdline-tools`
+
+---
+
+### [appium.io](../packages/appium.io/index.md)
+
+Package from pantry: appium.io
+
+**Programs**: None specified
+
+**Install**: `launchpad install appium.io`
 
 ---
 

@@ -1,5 +1,5 @@
 /**
- * **sccache** - pkgx package
+ * **sccache** - Package from pantry: crates.io/sccache
  *
  * @domain `crates.io/sccache`
  *
@@ -12,6 +12,7 @@
  *
  * const pkg = pantry.cratesiosccache
  * console.log(pkg.name)        // "sccache"
+ * console.log(pkg.description) // "Package from pantry: crates.io/sccache"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/sccache.md
@@ -29,15 +30,14 @@ export const cratesiosccachePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: '' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  description: 'Package from pantry: crates.io/sccache' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install crates.io/sccache' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/sccache -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/sccache' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -49,9 +49,9 @@ export const cratesiosccachePackage = {
     'curl.se/ca-certs',
   ] as const,
   versions: [] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/sccache -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/sccache' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/sccache/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type CratesiosccachePackage = typeof cratesiosccachePackage

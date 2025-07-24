@@ -1,6 +1,6 @@
 # ansible-lint
 
-> ansible-lint checks playbooks for practices and behavior that could potentially be improved and can fix some of the most common ones for you
+> Package from pantry: ansible.com/ansible-lint
 
 ## Package Information
 
@@ -13,36 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ansible-lint
+launchpad install ansible.com/ansible-lint
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ansible-lint`
-
-## Available Versions
-
-<details>
-<summary>Show all 23 versions</summary>
-
-- `25.6.1`, `25.6.0`, `25.5.0`, `25.4.0`, `25.2.1`
-- `25.2.0`, `25.1.3`, `25.1.2`, `25.1.1`, `25.1.0`
-- `24.12.2`, `24.12.1`, `24.12.0`, `24.10.0`, `24.9.2`
-- `24.9.1`, `24.9.0`, `24.7.0`, `24.6.1`, `24.6.0`
-- `24.5.0`, `24.2.3`, `24.2.2`
-
-</details>
-
-**Latest Version**: `25.6.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ansible-lint -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

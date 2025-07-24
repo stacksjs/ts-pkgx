@@ -1,6 +1,6 @@
 # pop
 
-> Send emails from your terminal 📬
+> Package from pantry: charm.sh/pop
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install pop
+launchpad install charm.sh/pop
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pop`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.2.0`, `0.1.0`
-
-</details>
-
-**Latest Version**: `0.2.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) pop -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

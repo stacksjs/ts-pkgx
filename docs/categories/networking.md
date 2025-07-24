@@ -1,38 +1,28 @@
 # Networking
 
-*5 packages in this category*
+*4 packages in this category*
 
 Network tools, protocols, and communication software.
 
 ## Packages
 
-### [apache.org/httpd](../packages/apache.org/httpd/index.md)
+### [apache.org/httpd](../packages/apache.org/httpd/index.md) (httpd)
 
-Apache HTTP server
+Package from pantry: apache.org/httpd
 
-**Programs**: ab, apachectl, checkgid, fcgistarter, htcacheclean, htdbm, htdigest, htpasswd, httpd, httxt2dbm, logresolve, rotatelogs, suexec
+**Programs**: None specified
 
 **Install**: `launchpad install apache.org/httpd`
 
 ---
 
-### [caddyserver.com](../packages/caddyserver.com/index.md) (caddy)
-
-Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
-
-**Programs**: caddy
-
-**Install**: `launchpad install caddy`
-
----
-
 ### [cloudflare.com/cloudflared](../packages/cloudflare.com/cloudflared/index.md) (cloudflared)
 
-Cloudflare Tunnel client (formerly Argo Tunnel)
+Package from pantry: cloudflare.com/cloudflared
 
-**Programs**: cloudflared
+**Programs**: None specified
 
-**Install**: `launchpad install cloudflared`
+**Install**: `launchpad install cloudflare.com/cloudflared`
 
 ---
 

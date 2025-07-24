@@ -1,6 +1,6 @@
 # arduino-cli
 
-> Arduino command-line interface
+> Package from pantry: arduino.github.io/arduino-cli
 
 ## Package Information
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install arduino-cli
+launchpad install arduino.github.io/arduino-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `arduino-cli`
-
-## Available Versions
-
-<details>
-<summary>Show all 20 versions</summary>
-
-- `1.2.2`, `1.2.0`, `1.1.1`, `1.1.0`, `1.0.4`
-- `1.0.3`, `1.0.2`, `1.0.1`, `1.0.0`, `0.35.3`
-- `0.35.2`, `0.35.1`, `0.35.0`, `0.34.2`, `0.34.1`
-- `0.34.0`, `0.33.1`, `0.33.0`, `0.32.3`, `0.32.2`
-
-</details>
-
-**Latest Version**: `1.2.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) arduino-cli -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

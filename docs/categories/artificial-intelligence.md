@@ -1,28 +1,18 @@
 # Artificial Intelligence
 
-*5 packages in this category*
+*4 packages in this category*
 
 Packages related to artificial intelligence.
 
 ## Packages
 
-### [agpt.co](../packages/agpt.co/index.md) (auto-gpt)
-
-AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.
-
-**Programs**: auto-gpt
-
-**Install**: `launchpad install auto-gpt`
-
----
-
 ### [crates.io/aichat](../packages/crates.io/aichat/index.md) (aichat)
 
-All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.
+Package from pantry: crates.io/aichat
 
-**Programs**: aichat
+**Programs**: None specified
 
-**Install**: `launchpad install aichat`
+**Install**: `launchpad install crates.io/aichat`
 
 ---
 

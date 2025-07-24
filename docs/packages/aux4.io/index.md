@@ -1,11 +1,11 @@
-# aux4
+# aux4.io
 
-> elevate your imagination
+> Package from pantry: aux4.io
 
 ## Package Information
 
 - **Domain**: `aux4.io`
-- **Name**: `aux4`
+- **Name**: `aux4.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aux4.io/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install aux4
+launchpad install aux4.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `aux4`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `5.0.14`, `5.0.11`, `5.0.10`, `5.0.9`, `5.0.8`
-- `5.0.3`
-
-</details>
-
-**Latest Version**: `5.0.14`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) aux4 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -47,7 +28,7 @@ sh <(curl https://pkgx.sh) aux4 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.aux4
+const pkg = pantry['aux4.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

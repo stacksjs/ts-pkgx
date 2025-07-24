@@ -1,58 +1,28 @@
 # Security & Cryptography
 
-*9 packages in this category*
+*6 packages in this category*
 
 Packages related to security & cryptography.
 
 ## Packages
 
-### [agwa.name/git-crypt](../packages/agwa.name/git-crypt/index.md) (git-crypt)
-
-Enable transparent encryption/decryption of files in a git repo
-
-**Programs**: git-crypt
-
-**Install**: `launchpad install git-crypt`
-
----
-
 ### [aquasecurity.github.io/tfsec](../packages/aquasecurity.github.io/tfsec/index.md) (tfsec)
 
-Static analysis security scanner for your terraform code
+Package from pantry: aquasecurity.github.io/tfsec
 
-**Programs**: tfsec
+**Programs**: None specified
 
-**Install**: `launchpad install tfsec`
+**Install**: `launchpad install aquasecurity.github.io/tfsec`
 
 ---
 
 ### [aquasecurity.github.io/trivy](../packages/aquasecurity.github.io/trivy/index.md) (trivy)
 
-Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more
+Package from pantry: aquasecurity.github.io/trivy
 
-**Programs**: trivy
+**Programs**: None specified
 
-**Install**: `launchpad install trivy`
-
----
-
-### [certbot.eff.org](../packages/certbot.eff.org/index.md) (certbot)
-
-Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server. It can also act as a client for any other CA that uses the ACME protocol.
-
-**Programs**: certbot
-
-**Install**: `launchpad install certbot`
-
----
-
-### [checkov.io](../packages/checkov.io/index.md) (checkov)
-
-Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages with Checkov by Bridgecrew.
-
-**Programs**: checkov
-
-**Install**: `launchpad install checkov`
+**Install**: `launchpad install aquasecurity.github.io/trivy`
 
 ---
 

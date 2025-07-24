@@ -1,6 +1,6 @@
 # agg
 
-> Asciicast to GIF converter
+> Package from pantry: asciinema.org/agg
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install agg
+launchpad install asciinema.org/agg
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `agg`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.5.0`, `1.4.3`
-
-</details>
-
-**Latest Version**: `1.5.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) agg -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

@@ -1,6 +1,6 @@
 # dexios
 
-> A secure file encryption utility, written in Rust.
+> Package from pantry: brxken128.github.io/dexios
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install dexios
+launchpad install brxken128.github.io/dexios
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `dexios`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `8.8.1`
-
-</details>
-
-**Latest Version**: `8.8.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) dexios -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

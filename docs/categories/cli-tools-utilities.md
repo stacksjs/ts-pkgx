@@ -1,6 +1,6 @@
 # CLI Tools & Utilities
 
-*25 packages in this category*
+*31 packages in this category*
 
 Command-line utilities and system tools.
 
@@ -8,81 +8,141 @@ Command-line utilities and system tools.
 
 ### [crates.io/bat](../packages/crates.io/bat/index.md) (bat)
 
-Clone of cat(1) with syntax highlighting and Git integration
+Package from pantry: crates.io/bat
 
-**Programs**: bat
+**Programs**: None specified
 
-**Install**: `launchpad install bat`
+**Install**: `launchpad install crates.io/bat`
 
 ---
 
-### [crates.io/bottom](../packages/crates.io/bottom/index.md) (btm)
+### [crates.io/bottom](../packages/crates.io/bottom/index.md) (bottom)
 
-Yet another cross-platform graphical process/system monitor.
+Package from pantry: crates.io/bottom
 
-**Programs**: btm
+**Programs**: None specified
 
-**Install**: `launchpad install btm`
+**Install**: `launchpad install crates.io/bottom`
 
 ---
 
 ### [crates.io/drill](../packages/crates.io/drill/index.md) (drill)
 
-Drill is an HTTP load testing application written in Rust
+Package from pantry: crates.io/drill
 
-**Programs**: drill
+**Programs**: None specified
 
-**Install**: `launchpad install drill`
+**Install**: `launchpad install crates.io/drill`
 
 ---
 
-### [crates.io/du-dust](../packages/crates.io/du-dust/index.md) (dust)
+### [crates.io/du-dust](../packages/crates.io/du-dust/index.md) (du-dust)
 
-A more intuitive version of du in rust
+Package from pantry: crates.io/du-dust
 
-**Programs**: dust
+**Programs**: None specified
 
-**Install**: `launchpad install dust`
+**Install**: `launchpad install crates.io/du-dust`
 
 ---
 
 ### [crates.io/exa](../packages/crates.io/exa/index.md) (exa)
 
-A modern replacement for ‘ls’.
+Package from pantry: crates.io/exa
 
-**Programs**: exa
+**Programs**: None specified
 
-**Install**: `launchpad install exa`
+**Install**: `launchpad install crates.io/exa`
 
 ---
 
 ### [crates.io/eza](../packages/crates.io/eza/index.md) (eza)
 
-Modern, maintained replacement for ls
+Package from pantry: crates.io/eza
 
-**Programs**: eza
+**Programs**: None specified
 
-**Install**: `launchpad install eza`
+**Install**: `launchpad install crates.io/eza`
 
 ---
 
-### [crates.io/git-delta](../packages/crates.io/git-delta/index.md) (delta)
+### [crates.io/fd-find](../packages/crates.io/fd-find/index.md) (fd-find)
 
-A syntax-highlighting pager for git, diff, grep, and blame output
+Package from pantry: crates.io/fd-find
 
-**Programs**: delta
+**Programs**: None specified
 
-**Install**: `launchpad install delta`
+**Install**: `launchpad install crates.io/fd-find`
+
+---
+
+### [crates.io/git-delta](../packages/crates.io/git-delta/index.md) (git-delta)
+
+Package from pantry: crates.io/git-delta
+
+**Programs**: None specified
+
+**Install**: `launchpad install crates.io/git-delta`
 
 ---
 
 ### [crates.io/hyperfine](../packages/crates.io/hyperfine/index.md) (hyperfine)
 
-A command-line benchmarking tool
+Package from pantry: crates.io/hyperfine
 
-**Programs**: hyperfine
+**Programs**: None specified
 
-**Install**: `launchpad install hyperfine`
+**Install**: `launchpad install crates.io/hyperfine`
+
+---
+
+### [crates.io/ripgrep](../packages/crates.io/ripgrep/index.md) (ripgrep)
+
+Package from pantry: crates.io/ripgrep
+
+**Programs**: None specified
+
+**Install**: `launchpad install crates.io/ripgrep`
+
+---
+
+### [crates.io/ripgrep-all](../packages/crates.io/ripgrep-all/index.md) (ripgrep-all)
+
+Package from pantry: crates.io/ripgrep-all
+
+**Programs**: None specified
+
+**Install**: `launchpad install crates.io/ripgrep-all`
+
+---
+
+### [crates.io/sd](../packages/crates.io/sd/index.md) (sd)
+
+Package from pantry: crates.io/sd
+
+**Programs**: None specified
+
+**Install**: `launchpad install crates.io/sd`
+
+---
+
+### [crates.io/tokei](../packages/crates.io/tokei/index.md) (tokei)
+
+Package from pantry: crates.io/tokei
+
+**Programs**: None specified
+
+**Install**: `launchpad install crates.io/tokei`
+
+---
+
+### [crates.io/xh](../packages/crates.io/xh/index.md) (xh)
+
+Package from pantry: crates.io/xh
+
+**Programs**: None specified
+
+**Install**: `launchpad install crates.io/xh`
 
 ---
 

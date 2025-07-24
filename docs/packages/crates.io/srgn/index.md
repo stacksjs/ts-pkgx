@@ -1,6 +1,6 @@
 # srgn
 
-> A grep-like tool which understands source code syntax and allows for manipulation in addition to search
+> Package from pantry: crates.io/srgn
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install srgn
+launchpad install crates.io/srgn
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `srgn`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.10.0`
-
-</details>
-
-**Latest Version**: `0.10.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) srgn -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

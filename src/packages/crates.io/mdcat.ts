@@ -1,5 +1,5 @@
 /**
- * **mdcat** - pkgx package
+ * **mdcat** - Package from pantry: crates.io/mdcat
  *
  * @domain `crates.io/mdcat`
  *
@@ -12,6 +12,7 @@
  *
  * const pkg = pantry.cratesiomdcat
  * console.log(pkg.name)        // "mdcat"
+ * console.log(pkg.description) // "Package from pantry: crates.io/mdcat"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/mdcat.md
@@ -29,15 +30,14 @@ export const cratesiomdcatPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: '' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  description: 'Package from pantry: crates.io/mdcat' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install crates.io/mdcat' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/mdcat -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/mdcat' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -49,9 +49,9 @@ export const cratesiomdcatPackage = {
     'curl.se^8 # since 2.7.0',
   ] as const,
   versions: [] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/mdcat -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/mdcat' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/mdcat/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type CratesiomdcatPackage = typeof cratesiomdcatPackage

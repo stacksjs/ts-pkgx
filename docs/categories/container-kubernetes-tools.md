@@ -1,6 +1,6 @@
 # Container & Kubernetes Tools
 
-*10 packages in this category*
+*9 packages in this category*
 
 Packages related to container & kubernetes tools.
 
@@ -8,31 +8,21 @@ Packages related to container & kubernetes tools.
 
 ### [cilium.io/cilium](../packages/cilium.io/cilium/index.md) (cilium)
 
-CLI to install, manage & troubleshoot Kubernetes clusters running Cilium
+Package from pantry: cilium.io/cilium
 
-**Programs**: cilium
+**Programs**: None specified
 
-**Install**: `launchpad install cilium`
+**Install**: `launchpad install cilium.io/cilium`
 
 ---
 
 ### [cilium.io/hubble](../packages/cilium.io/hubble/index.md) (hubble)
 
-Hubble - Network, Service & Security Observability for Kubernetes using eBPF
+Package from pantry: cilium.io/hubble
 
-**Programs**: hubble
+**Programs**: None specified
 
-**Install**: `launchpad install hubble`
-
----
-
-### [cloudnative-pg.io](../packages/cloudnative-pg.io/index.md) (kubectl-cnpg)
-
-CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases within Kubernetes environments, covering the entire operational lifecycle from initial deployment to ongoing maintenance
-
-**Programs**: kubectl-cnpg
-
-**Install**: `launchpad install kubectl-cnpg`
+**Install**: `launchpad install cilium.io/hubble`
 
 ---
 

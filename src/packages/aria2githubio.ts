@@ -1,38 +1,28 @@
 /**
- * **aria2c** - aria2 is a lightweight multi-protocol & multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.
+ * **aria2.github.io** - Package from pantry: aria2.github.io
  *
  * @domain `aria2.github.io`
- * @programs `aria2c`
- * @version `1.37.0` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install aria2c`
- * @name `aria2c`
+ * @install `launchpad install aria2.github.io`
  * @dependencies `zlib.net^1`, `openssl.org^1`, `libexpat.github.io`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.aria2c
- * // Or access via domain
- * const samePkg = pantry.aria2githubio
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "aria2c"
- * console.log(pkg.description) // "aria2 is a lightweight multi-protocol & multi-s..."
- * console.log(pkg.programs)    // ["aria2c"]
- * console.log(pkg.versions[0]) // "1.37.0" (latest)
+ * const pkg = pantry.aria2githubio
+ * console.log(pkg.name)        // "aria2.github.io"
+ * console.log(pkg.description) // "Package from pantry: aria2.github.io"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/aria2-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const aria2cPackage = {
+export const aria2githubioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'aria2c' as const,
+  name: 'aria2.github.io' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,22 +30,15 @@ export const aria2cPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'aria2 is a lightweight multi-protocol & multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/aria2.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: aria2.github.io' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install aria2c' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'aria2c',
-  ] as const,
+  installCommand: 'launchpad install aria2.github.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +aria2.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install aria2.github.io' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -67,21 +50,10 @@ export const aria2cPackage = {
     'libexpat.github.io',
     'sqlite.org^3',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.37.0',
-    '1.36.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aria2c -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install aria2c' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/aria2.github.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type Aria2cPackage = typeof aria2cPackage
+export type Aria2githubioPackage = typeof aria2githubioPackage

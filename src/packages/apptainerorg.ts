@@ -1,14 +1,10 @@
 /**
- * **apptainer.org** - Application container and unprivileged sandbox platform for Linux
+ * **apptainer.org** - Package from pantry: apptainer.org
  *
  * @domain `apptainer.org`
- * @programs `apptainer`, `run-singularity`, `singularity`
- * @version `1.4.1` (6 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install apptainer.org`
  * @dependencies `github.com/seccomp/libseccomp@2`, `curl.se/ca-certs`
- * @companions `github.com/plougher/squashfs-tools`
  *
  * @example
  * ```typescript
@@ -16,9 +12,7 @@
  *
  * const pkg = pantry.apptainerorg
  * console.log(pkg.name)        // "apptainer.org"
- * console.log(pkg.description) // "Application container and unprivileged sandbox ..."
- * console.log(pkg.programs)    // ["apptainer", "run-singularity", ...]
- * console.log(pkg.versions[0]) // "1.4.1" (latest)
+ * console.log(pkg.description) // "Package from pantry: apptainer.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/apptainer-org.md
@@ -36,31 +30,16 @@ export const apptainerorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Application container and unprivileged sandbox platform for Linux' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/apptainer.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: apptainer.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install apptainer.org' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'apptainer',
-    'run-singularity',
-    'singularity',
-  ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'github.com/plougher/squashfs-tools',
-  ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apptainer.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install apptainer.org' as const,
+  programs: [] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -69,21 +48,10 @@ export const apptainerorgPackage = {
     'github.com/seccomp/libseccomp@2',
     'curl.se/ca-certs',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.4.1',
-    '1.4.0',
-    '1.3.6',
-    '1.3.5',
-    '1.3.4',
-    '1.3.3',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apptainer.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install apptainer.org' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/apptainer.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type ApptainerorgPackage = typeof apptainerorgPackage

@@ -1,11 +1,11 @@
-# asciinema
+# asciinema.org
 
-> Record and share terminal sessions
+> Package from pantry: asciinema.org
 
 ## Package Information
 
 - **Domain**: `asciinema.org`
-- **Name**: `asciinema`
+- **Name**: `asciinema.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/asciinema.org/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install asciinema
+launchpad install asciinema.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `asciinema`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.4.0`
-
-</details>
-
-**Latest Version**: `2.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) asciinema -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -52,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.asciinema
+const pkg = pantry['asciinema.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

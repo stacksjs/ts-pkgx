@@ -1,6 +1,6 @@
 # rubberband
 
-> Audio time stretcher tool and library
+> Package from pantry: breakfastquay.com/rubberband
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install rubberband
+launchpad install breakfastquay.com/rubberband
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `rubberband`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `4.0.0`, `3.3.0`
-
-</details>
-
-**Latest Version**: `4.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) rubberband -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

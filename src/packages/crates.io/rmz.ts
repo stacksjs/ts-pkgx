@@ -1,5 +1,5 @@
 /**
- * **rmz** - pkgx package
+ * **rmz** - Package from pantry: crates.io/rmz
  *
  * @domain `crates.io/rmz`
  *
@@ -11,6 +11,7 @@
  *
  * const pkg = pantry.cratesiormz
  * console.log(pkg.name)        // "rmz"
+ * console.log(pkg.description) // "Package from pantry: crates.io/rmz"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/rmz.md
@@ -28,22 +29,21 @@ export const cratesiormzPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: '' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  description: 'Package from pantry: crates.io/rmz' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install crates.io/rmz' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/rmz -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/rmz' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/rmz -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/rmz' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rmz/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type CratesiormzPackage = typeof cratesiormzPackage

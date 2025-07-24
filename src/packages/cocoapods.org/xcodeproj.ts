@@ -1,34 +1,24 @@
 /**
- * **xcodeproj** - Create and modify Xcode projects from Ruby.
+ * **xcodeproj** - Package from pantry: cocoapods.org/xcodeproj
  *
  * @domain `cocoapods.org/xcodeproj`
- * @programs `xcodeproj`
- * @version `1.27.0` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install xcodeproj`
- * @name `xcodeproj`
+ * @install `launchpad install cocoapods.org/xcodeproj`
  * @dependencies `ruby-lang.org~3.2`, `rubygems.org^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.xcodeproj
- * // Or access via domain
- * const samePkg = pantry.cocoapodsorgxcodeproj
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cocoapodsorgxcodeproj
  * console.log(pkg.name)        // "xcodeproj"
- * console.log(pkg.description) // "Create and modify Xcode projects from Ruby."
- * console.log(pkg.programs)    // ["xcodeproj"]
- * console.log(pkg.versions[0]) // "1.27.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: cocoapods.org/xcodeproj"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cocoapods-org/xcodeproj.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xcodeprojPackage = {
+export const cocoapodsorgxcodeprojPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const xcodeprojPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Create and modify Xcode projects from Ruby.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cocoapods.org/xcodeproj/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: cocoapods.org/xcodeproj' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install xcodeproj' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'xcodeproj',
-  ] as const,
+  installCommand: 'launchpad install cocoapods.org/xcodeproj' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cocoapods.org/xcodeproj -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cocoapods.org/xcodeproj' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -65,20 +48,10 @@ export const xcodeprojPackage = {
     'ruby-lang.org~3.2',
     'rubygems.org^3',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.27.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xcodeproj -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install xcodeproj' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cocoapods.org/xcodeproj/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type XcodeprojPackage = typeof xcodeprojPackage
+export type CocoapodsorgxcodeprojPackage = typeof cocoapodsorgxcodeprojPackage

@@ -1,6 +1,6 @@
 # qsv
 
-> Ultra-fast CSV data-wrangling toolkit
+> Package from pantry: crates.io/qsv
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install qsv
+launchpad install crates.io/qsv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `qsv`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `6.0.1`, `6.0.0`, `5.1.0`, `5.0.3`, `4.0.0`
-- `3.3.0`, `3.2.0`
-
-</details>
-
-**Latest Version**: `6.0.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) qsv -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

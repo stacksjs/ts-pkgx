@@ -1,11 +1,11 @@
-# cog
+# cocogitto.io
 
-> The Conventional Commits toolbox
+> Package from pantry: cocogitto.io
 
 ## Package Information
 
 - **Domain**: `cocogitto.io`
-- **Name**: `cog`
+- **Name**: `cocogitto.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cocogitto.io/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install cog
+launchpad install cocogitto.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cog`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `6.3.0`, `6.2.0`, `6.1.0`, `6.0.1`, `6.0.0`
-- `5.6.0`, `5.5.0`
-
-</details>
-
-**Latest Version**: `6.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) cog -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -53,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cog
+const pkg = pantry['cocogitto.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

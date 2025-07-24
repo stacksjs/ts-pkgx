@@ -1,11 +1,11 @@
-# cask
+# cask.readthedocs.io
 
-> Project management tool for Emacs
+> Package from pantry: cask.readthedocs.io
 
 ## Package Information
 
 - **Domain**: `cask.readthedocs.io`
-- **Name**: `cask`
+- **Name**: `cask.readthedocs.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cask.readthedocs.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install cask
+launchpad install cask.readthedocs.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cask`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.9.1`, `0.9.0`
-
-</details>
-
-**Latest Version**: `0.9.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) cask -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -53,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cask
+const pkg = pantry['cask.readthedocs.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

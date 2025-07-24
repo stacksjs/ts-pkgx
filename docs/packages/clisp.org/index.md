@@ -1,11 +1,11 @@
-# clisp
+# clisp.org
 
-> GNU CLISP, a Common Lisp implementation
+> Package from pantry: clisp.org
 
 ## Package Information
 
 - **Domain**: `clisp.org`
-- **Name**: `clisp`
+- **Name**: `clisp.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/clisp.org/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install clisp
+launchpad install clisp.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `clisp`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.49.92`
-
-</details>
-
-**Latest Version**: `2.49.92`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) clisp -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -54,7 +36,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.clisp
+const pkg = pantry['clisp.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

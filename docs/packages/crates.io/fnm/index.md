@@ -1,6 +1,6 @@
 # fnm
 
-> 🚀 Fast and simple Node.js version manager, built in Rust
+> Package from pantry: crates.io/fnm
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install fnm
+launchpad install crates.io/fnm
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `fnm`
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `1.38.1`, `1.38.0`, `1.37.2`, `1.37.1`, `1.37.0`
-- `1.36.0`, `1.35.1`, `1.35.0`
-
-</details>
-
-**Latest Version**: `1.38.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) fnm -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

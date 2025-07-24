@@ -1,6 +1,6 @@
 # aichat
 
-> All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.
+> Package from pantry: crates.io/aichat
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install aichat
+launchpad install crates.io/aichat
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `aichat`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `0.30.0`, `0.29.0`, `0.28.0`
-
-</details>
-
-**Latest Version**: `0.30.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) aichat -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

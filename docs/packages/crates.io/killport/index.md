@@ -1,6 +1,6 @@
 # killport
 
-> A command-line tool to easily kill processes running on a specified port.
+> Package from pantry: crates.io/killport
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install killport
+launchpad install crates.io/killport
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `killport`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.1.0`, `1.0.0`, `0.9.2`, `0.9.1`
-
-</details>
-
-**Latest Version**: `1.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) killport -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

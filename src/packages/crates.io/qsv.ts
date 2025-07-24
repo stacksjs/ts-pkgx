@@ -1,5 +1,5 @@
 /**
- * **qsv** - pkgx package
+ * **qsv** - Package from pantry: crates.io/qsv
  *
  * @domain `crates.io/qsv`
  *
@@ -12,6 +12,7 @@
  *
  * const pkg = pantry.cratesioqsv
  * console.log(pkg.name)        // "qsv"
+ * console.log(pkg.description) // "Package from pantry: crates.io/qsv"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/qsv.md
@@ -29,15 +30,14 @@ export const cratesioqsvPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: '' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  description: 'Package from pantry: crates.io/qsv' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install crates.io/qsv' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/qsv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/qsv' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -49,9 +49,9 @@ export const cratesioqsvPackage = {
     'linux:wayland.freedesktop.org',
   ] as const,
   versions: [] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/qsv -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/qsv' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/qsv/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type CratesioqsvPackage = typeof cratesioqsvPackage

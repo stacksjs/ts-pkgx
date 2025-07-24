@@ -1,48 +1,18 @@
 # DevOps
 
-*11 packages in this category*
+*8 packages in this category*
 
 Tools for deployment, orchestration, and infrastructure management.
 
 ## Packages
 
-### [ansible.com](../packages/ansible.com/index.md) (ansible)
-
-Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.
-
-**Programs**: ansible, ansible-config, ansible-connection, ansible-console, ansible-doc, ansible-galaxy, ansible-inventory, ansible-playbook, ansible-pull, ansible-test, ansible-vault
-
-**Install**: `launchpad install ansible`
-
----
-
 ### [ansible.com/ansible-lint](../packages/ansible.com/ansible-lint/index.md) (ansible-lint)
 
-ansible-lint checks playbooks for practices and behavior that could potentially be improved and can fix some of the most common ones for you
+Package from pantry: ansible.com/ansible-lint
 
-**Programs**: ansible-lint
+**Programs**: None specified
 
-**Install**: `launchpad install ansible-lint`
-
----
-
-### [argoproj.github.io/cd](../packages/argoproj.github.io/cd/index.md) (argo-cd, argocd)
-
-GitOps Continuous Delivery for Kubernetes
-
-**Programs**: argocd
-
-**Install**: `launchpad install argocd`
-
----
-
-### [consul.io](../packages/consul.io/index.md) (consul)
-
-Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure.
-
-**Programs**: consul
-
-**Install**: `launchpad install consul`
+**Install**: `launchpad install ansible.com/ansible-lint`
 
 ---
 

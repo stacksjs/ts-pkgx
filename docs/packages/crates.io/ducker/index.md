@@ -1,6 +1,6 @@
 # ducker
 
-> A slightly quackers Docker TUI based on k9s 🦆
+> Package from pantry: crates.io/ducker
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ducker
+launchpad install crates.io/ducker
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ducker`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.4.1`, `0.4.0`, `0.3.1`, `0.3.0`
-
-</details>
-
-**Latest Version**: `0.4.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ducker -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

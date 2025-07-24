@@ -1,11 +1,11 @@
-# clog
+# clog-tool.github.io
 
-> Colorized pattern-matching log tail utility
+> Package from pantry: clog-tool.github.io
 
 ## Package Information
 
 - **Domain**: `clog-tool.github.io`
-- **Name**: `clog`
+- **Name**: `clog-tool.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/clog-tool.github.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install clog
+launchpad install clog-tool.github.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `clog`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.9.3`
-
-</details>
-
-**Latest Version**: `0.9.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) clog -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) clog -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.clog
+const pkg = pantry['clog-tool.github.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

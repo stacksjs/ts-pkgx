@@ -1,11 +1,11 @@
-# crates.io/md-tui
+# md-tui
 
-> Markdown renderer in the terminal
+> Package from pantry: crates.io/md-tui
 
 ## Package Information
 
 - **Domain**: `crates.io/md-tui`
-- **Name**: `crates.io/md-tui`
+- **Name**: `md-tui`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/md-tui/package.yml)
 
@@ -20,28 +20,7 @@ launchpad install crates.io/md-tui
 
 This package provides the following executable programs:
 
-- `mdt`
-- `md-tui`
-
-## Available Versions
-
-<details>
-<summary>Show all 11 versions</summary>
-
-- `0.9.0`, `0.8.7`, `0.8.6`, `0.8.5`, `0.8.4`
-- `0.8.3`, `0.8.2`, `0.8.1`, `0.8.0`, `0.7.4`
-- `0.7.3`
-
-</details>
-
-**Latest Version**: `0.9.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +crates.io/md-tui@0.9.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -49,7 +28,7 @@ sh <(curl https://pkgx.sh) +crates.io/md-tui@0.9.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['crates.io/md-tui']
+const pkg = pantry['md-tui']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

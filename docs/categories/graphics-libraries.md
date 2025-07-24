@@ -6,13 +6,13 @@ Packages related to graphics libraries.
 
 ## Packages
 
-### [cairographics.org](../packages/cairographics.org/index.md) (cairo-trace)
+### [cairographics.org](../packages/cairographics.org/index.md)
 
-Vector graphics library with cross-device output support
+Package from pantry: cairographics.org
 
-**Programs**: cairo-trace
+**Programs**: None specified
 
-**Install**: `launchpad install cairo-trace`
+**Install**: `launchpad install cairographics.org`
 
 ---
 

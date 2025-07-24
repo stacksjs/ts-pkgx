@@ -1,11 +1,11 @@
-# pod
+# cocoapods.org
 
-> Dependency manager for Cocoa projects
+> Package from pantry: cocoapods.org
 
 ## Package Information
 
 - **Domain**: `cocoapods.org`
-- **Name**: `pod`
+- **Name**: `cocoapods.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cocoapods.org/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install pod
+launchpad install cocoapods.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pod`
-
-## Available Versions
-
-<details>
-<summary>Show all 13 versions</summary>
-
-- `1.16.2`, `1.16.1`, `1.16.0`, `1.15.2`, `1.15.1`
-- `1.15.0`, `1.14.3`, `1.14.2`, `1.14.1`, `1.14.0`
-- `1.13.0`, `1.12.1`, `1.5.0`
-
-</details>
-
-**Latest Version**: `1.16.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) pod -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -57,7 +37,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.pod
+const pkg = pantry['cocoapods.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

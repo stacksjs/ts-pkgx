@@ -1,6 +1,6 @@
 # avro
 
-> Apache Avro is a data serialization system.
+> Package from pantry: apache.org/avro
 
 ## Package Information
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install avro
+launchpad install apache.org/avro
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `avroappend`
-- `avrocat`
-- `avromod`
-- `avropipe`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.12.0`, `1.11.3`
-
-</details>
-
-**Latest Version**: `1.12.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +apache.org/avro@1.12.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

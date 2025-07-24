@@ -1,5 +1,5 @@
 /**
- * **xh** - pkgx package
+ * **xh** - Package from pantry: crates.io/xh
  *
  * @domain `crates.io/xh`
  *
@@ -11,6 +11,7 @@
  *
  * const pkg = pantry.cratesioxh
  * console.log(pkg.name)        // "xh"
+ * console.log(pkg.description) // "Package from pantry: crates.io/xh"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/xh.md
@@ -28,22 +29,21 @@ export const cratesioxhPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: '' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  description: 'Package from pantry: crates.io/xh' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install crates.io/xh' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/xh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/xh' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   versions: [] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/xh -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/xh' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/xh/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type CratesioxhPackage = typeof cratesioxhPackage

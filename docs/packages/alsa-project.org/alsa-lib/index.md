@@ -1,11 +1,11 @@
-# aserver
+# alsa-lib
 
-> Provides audio and MIDI functionality to the Linux operating system
+> Package from pantry: alsa-project.org/alsa-lib
 
 ## Package Information
 
 - **Domain**: `alsa-project.org/alsa-lib`
-- **Name**: `aserver`
+- **Name**: `alsa-lib`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/alsa-project.org/alsa-lib/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install aserver
+launchpad install alsa-project.org/alsa-lib
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `aserver`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `1.2.14`, `1.2.13`, `1.2.12`, `1.2.11`, `1.2.10`
-- `1.2.9`
-
-</details>
-
-**Latest Version**: `1.2.14`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) aserver -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -47,7 +28,7 @@ sh <(curl https://pkgx.sh) aserver -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.aserver
+const pkg = pantry['alsa-lib']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

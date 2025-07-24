@@ -1,6 +1,6 @@
 # termusic
 
-> Music Player TUI written in Rust
+> Package from pantry: crates.io/termusic
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install termusic
+launchpad install crates.io/termusic
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `termusic`
-- `termusic-server`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.11.0`, `0.10.0`, `0.9.1`, `0.9.0`
-
-</details>
-
-**Latest Version**: `0.11.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +crates.io/termusic@0.11.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -47,12 +28,6 @@ This package depends on:
 
 - `linux:alsa-project.org/alsa-lib`
 - `linux:freedesktop.org/dbus`
-
-## Related Packages
-
-These packages work well with termusic:
-
-- [`yt-dlp.org`](../../yt-dlp.org/index.md) - A feature-rich command-line audio/video downloader
 
 ## Usage Examples
 

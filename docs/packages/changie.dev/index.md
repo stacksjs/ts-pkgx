@@ -1,11 +1,11 @@
-# changie
+# changie.dev
 
-> Automated changelog tool for preparing releases with lots of customization options
+> Package from pantry: changie.dev
 
 ## Package Information
 
 - **Domain**: `changie.dev`
-- **Name**: `changie`
+- **Name**: `changie.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/changie.dev/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install changie
+launchpad install changie.dev
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `changie`
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `1.22.0`, `1.21.1`, `1.21.0`, `1.20.1`, `1.20.0`
-- `1.19.1`, `1.19.0`, `1.18.0`
-
-</details>
-
-**Latest Version**: `1.22.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) changie -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -47,7 +28,7 @@ sh <(curl https://pkgx.sh) changie -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.changie
+const pkg = pantry['changie.dev']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

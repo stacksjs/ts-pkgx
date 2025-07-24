@@ -8,11 +8,11 @@ Packages related to cloud platforms.
 
 ### [aws.amazon.com/sam](../packages/aws.amazon.com/sam/index.md) (sam)
 
-CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
+Package from pantry: aws.amazon.com/sam
 
-**Programs**: sam
+**Programs**: None specified
 
-**Install**: `launchpad install sam`
+**Install**: `launchpad install aws.amazon.com/sam`
 
 ---
 

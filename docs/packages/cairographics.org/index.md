@@ -1,11 +1,11 @@
-# cairo-trace
+# cairographics.org
 
-> Vector graphics library with cross-device output support
+> Package from pantry: cairographics.org
 
 ## Package Information
 
 - **Domain**: `cairographics.org`
-- **Name**: `cairo-trace`
+- **Name**: `cairographics.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cairographics.org/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install cairo-trace
+launchpad install cairographics.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cairo-trace`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.18.4`, `1.18.2`, `1.18.0`, `1.16.0`
-
-</details>
-
-**Latest Version**: `1.18.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) cairo-trace -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -62,7 +44,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cairo-trace']
+const pkg = pantry['cairographics.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

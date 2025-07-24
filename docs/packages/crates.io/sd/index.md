@@ -1,6 +1,6 @@
 # sd
 
-> Intuitive find & replace CLI (sed alternative)
+> Package from pantry: crates.io/sd
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install sd
+launchpad install crates.io/sd
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `sd`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.0.0`, `0.7.6`
-
-</details>
-
-**Latest Version**: `1.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) sd -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

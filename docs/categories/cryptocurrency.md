@@ -6,13 +6,13 @@ Packages related to cryptocurrency.
 
 ## Packages
 
-### [bitcoin.org](../packages/bitcoin.org/index.md) (bitcoin)
+### [bitcoin.org](../packages/bitcoin.org/index.md)
 
-Decentralized, peer to peer payment network
+Package from pantry: bitcoin.org
 
-**Programs**: bitcoin-cli, bitcoin-tx, bitcoin-util, bitcoin-wallet, bitcoind
+**Programs**: None specified
 
-**Install**: `launchpad install bitcoin`
+**Install**: `launchpad install bitcoin.org`
 
 ---
 

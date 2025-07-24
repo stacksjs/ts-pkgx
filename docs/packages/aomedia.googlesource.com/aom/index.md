@@ -1,11 +1,11 @@
-# aomenc
+# aom
 
-> Codec library for encoding and decoding AV1 video streams
+> Package from pantry: aomedia.googlesource.com/aom
 
 ## Package Information
 
 - **Domain**: `aomedia.googlesource.com/aom`
-- **Name**: `aomenc`
+- **Name**: `aom`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aomedia.googlesource.com/aom/package.yml)
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install aomenc
+launchpad install aomedia.googlesource.com/aom
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `aomenc`
-- `aomdec`
-
-## Available Versions
-
-<details>
-<summary>Show all 15 versions</summary>
-
-- `3.12.1`, `3.12.0`, `3.11.0`, `3.10.0`, `3.9.1`
-- `3.9.0`, `3.8.3`, `3.8.2`, `3.8.1`, `3.8.0`
-- `3.7.2`, `3.7.1`, `3.7.0`, `3.6.1`, `3.5.0`
-
-</details>
-
-**Latest Version**: `3.12.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +aomedia.googlesource.com/aom@3.12.1 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -49,7 +28,7 @@ sh <(curl https://pkgx.sh) +aomedia.googlesource.com/aom@3.12.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.aomenc
+const pkg = pantry.aom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

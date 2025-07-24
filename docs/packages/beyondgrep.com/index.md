@@ -1,11 +1,11 @@
-# ack
+# beyondgrep.com
 
-> ack is a grep-like search tool optimized for source code.
+> Package from pantry: beyondgrep.com
 
 ## Package Information
 
 - **Domain**: `beyondgrep.com`
-- **Name**: `ack`
+- **Name**: `beyondgrep.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/beyondgrep.com/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ack
+launchpad install beyondgrep.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ack`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `3.9.0`, `3.8.2`, `3.8.1`, `3.8.0`, `3.7.0`
-- `3.6.0`
-
-</details>
-
-**Latest Version**: `3.9.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ack -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -53,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.ack
+const pkg = pantry['beyondgrep.com']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

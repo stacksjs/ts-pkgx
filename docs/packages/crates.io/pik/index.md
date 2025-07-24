@@ -1,6 +1,6 @@
 # pik
 
-> Process Interactive Kill
+> Package from pantry: crates.io/pik
 
 ## Package Information
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install pik
+launchpad install crates.io/pik
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pik`
-
-## Available Versions
-
-<details>
-<summary>Show all 12 versions</summary>
-
-- `0.25.0`, `0.24.0`, `0.23.1`, `0.23.0`, `0.22.0`
-- `0.21.0`, `0.20.0`, `0.19.0`, `0.18.1`, `0.18.0`
-- `0.17.0`, `0.16.0`
-
-</details>
-
-**Latest Version**: `0.25.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) pik -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

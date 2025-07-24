@@ -1,5 +1,5 @@
 /**
- * **sqlx-cli** - pkgx package
+ * **sqlx-cli** - Package from pantry: crates.io/sqlx-cli
  *
  * @domain `crates.io/sqlx-cli`
  *
@@ -12,6 +12,7 @@
  *
  * const pkg = pantry.cratesiosqlxcli
  * console.log(pkg.name)        // "sqlx-cli"
+ * console.log(pkg.description) // "Package from pantry: crates.io/sqlx-cli"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/sqlx-cli.md
@@ -29,15 +30,14 @@ export const cratesiosqlxcliPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: '' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  description: 'Package from pantry: crates.io/sqlx-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install crates.io/sqlx-cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/sqlx-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/sqlx-cli' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -48,9 +48,9 @@ export const cratesiosqlxcliPackage = {
     'openssl.org^1.1',
   ] as const,
   versions: [] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/sqlx-cli -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/sqlx-cli' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/sqlx-cli/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type CratesiosqlxcliPackage = typeof cratesiosqlxcliPackage

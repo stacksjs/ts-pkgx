@@ -1,20 +1,10 @@
 # Editors & IDEs
 
-*5 packages in this category*
+*4 packages in this category*
 
 Packages related to editors & ides.
 
 ## Packages
-
-### [alacritty.org](../packages/alacritty.org/index.md) (alacritty)
-
-A cross-platform, OpenGL terminal emulator.
-
-**Programs**: alacritty
-
-**Install**: `launchpad install alacritty`
-
----
 
 ### [github.com/mamba-org/micro](../packages/github.com/mamba-org/micro.md) (micro)
 

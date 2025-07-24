@@ -6,13 +6,13 @@ Packages related to documentation & text processing.
 
 ## Packages
 
-### [asciidoctor.org](../packages/asciidoctor.org/index.md) (asciidoctor)
+### [asciidoctor.org](../packages/asciidoctor.org/index.md)
 
-:gem: A fast, open source text processor and publishing toolchain, written in Ruby, for converting AsciiDoc content to HTML 5, DocBook 5, and other formats.
+Package from pantry: asciidoctor.org
 
-**Programs**: asciidoctor
+**Programs**: None specified
 
-**Install**: `launchpad install asciidoctor`
+**Install**: `launchpad install asciidoctor.org`
 
 ---
 

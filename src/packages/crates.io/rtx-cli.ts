@@ -1,5 +1,5 @@
 /**
- * **rtx-cli** - pkgx package
+ * **rtx-cli** - Package from pantry: crates.io/rtx-cli
  *
  * @domain `crates.io/rtx-cli`
  *
@@ -12,6 +12,7 @@
  *
  * const pkg = pantry.cratesiortxcli
  * console.log(pkg.name)        // "rtx-cli"
+ * console.log(pkg.description) // "Package from pantry: crates.io/rtx-cli"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/rtx-cli.md
@@ -29,15 +30,14 @@ export const cratesiortxcliPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: '' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  description: 'Package from pantry: crates.io/rtx-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install crates.io/rtx-cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/rtx-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/rtx-cli' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -49,9 +49,9 @@ export const cratesiortxcliPackage = {
     'libgit2.org^1 # newer mise after 2024.5.12 versions require libgit2',
   ] as const,
   versions: [] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/rtx-cli -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/rtx-cli' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rtx-cli/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type CratesiortxcliPackage = typeof cratesiortxcliPackage

@@ -1,11 +1,11 @@
-# bcrypt
+# bcrypt.sourceforge.net
 
-> Cross platform file encryption utility using blowfish
+> Package from pantry: bcrypt.sourceforge.net
 
 ## Package Information
 
 - **Domain**: `bcrypt.sourceforge.net`
-- **Name**: `bcrypt`
+- **Name**: `bcrypt.sourceforge.net`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bcrypt.sourceforge.net/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install bcrypt
+launchpad install bcrypt.sourceforge.net
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `bcrypt`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.1.0`
-
-</details>
-
-**Latest Version**: `1.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) bcrypt -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -52,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.bcrypt
+const pkg = pantry['bcrypt.sourceforge.net']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

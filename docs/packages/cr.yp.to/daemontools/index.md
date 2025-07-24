@@ -1,11 +1,11 @@
-# cr.yp.to/daemontools
+# daemontools
 
-> Collection of tools for managing UNIX services
+> Package from pantry: cr.yp.to/daemontools
 
 ## Package Information
 
 - **Domain**: `cr.yp.to/daemontools`
-- **Name**: `cr.yp.to/daemontools`
+- **Name**: `daemontools`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cr.yp.to/daemontools/package.yml)
 
@@ -20,41 +20,7 @@ launchpad install cr.yp.to/daemontools
 
 This package provides the following executable programs:
 
-- `envdir`
-- `envuidgid`
-- `fghack`
-- `multilog`
-- `pgrphack`
-- `readproctitle`
-- `setlock`
-- `setuidgid`
-- `softlimit`
-- `supervise`
-- `svc`
-- `svok`
-- `svscan`
-- `svscanboot`
-- `svstat`
-- `tai64n`
-- `tai64nlocal`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.76.0`
-
-</details>
-
-**Latest Version**: `0.76.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +cr.yp.to/daemontools@0.76.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -62,7 +28,7 @@ sh <(curl https://pkgx.sh) +cr.yp.to/daemontools@0.76.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cr.yp.to/daemontools']
+const pkg = pantry.daemontools
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
