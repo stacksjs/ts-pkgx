@@ -3,7 +3,7 @@
  *
  * @domain `qemu.org`
  * @programs `qemu-img`, `qemu-edid`, `qemu-io`, `qemu-nbd`, `qemu-storage-daemon`, ... (+29 more)
- * @version `10.0.2` (51 versions available)
+ * @version `10.0.2` (52 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install qemu`
@@ -147,6 +147,7 @@ export const qemuPackage = {
     '8.0.3',
     '8.0.2',
     '8.0.0',
+    '7.2.19',
     '7.2.18',
     '7.2.17',
     '7.2.16',
