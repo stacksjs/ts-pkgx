@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/rmz`
  * @programs `rmz`
- * @version `3.1.0` (5 versions available)
+ * @version `3.1.1` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rmz`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "rmz"
  * console.log(pkg.description) // "Modern, performance focused unix commands"
  * console.log(pkg.programs)    // ["rmz"]
- * console.log(pkg.versions[0]) // "3.1.0" (latest)
+ * console.log(pkg.versions[0]) // "3.1.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/rmz.md
@@ -62,6 +62,7 @@ export const rmzPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.1.1',
     '3.1.0',
     '3.0.1',
     '3.0.0',
