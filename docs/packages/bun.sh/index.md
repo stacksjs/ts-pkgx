@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install bun
+launchpad install bun.com
 ```
 
 ## Programs
@@ -22,6 +22,12 @@ This package provides the following executable programs:
 
 - `bun`
 - `bunx`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `bun.com`
 
 ## Available Versions
 
@@ -71,7 +77,7 @@ sh <(curl https://pkgx.sh) +bun.sh@1.2.19 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.bun
+const pkg = pantry['bun.com']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

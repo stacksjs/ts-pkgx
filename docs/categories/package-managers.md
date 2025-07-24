@@ -6,13 +6,13 @@ Packages related to package managers.
 
 ## Packages
 
-### [bun.sh](../packages/bun.sh/index.md) (bun)
+### [bun.sh](../packages/bun.sh/index.md) (bun, bun.com)
 
 Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one
 
 **Programs**: bun, bunx
 
-**Install**: `launchpad install bun`
+**Install**: `launchpad install bun.com`
 
 ---
 

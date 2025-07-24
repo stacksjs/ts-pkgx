@@ -8,6 +8,7 @@
  *
  * @install `launchpad install bun`
  * @name `bun`
+ * @aliases `bun.com`
  *
  * @example
  * ```typescript
@@ -191,7 +192,9 @@ export const bunPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [] as const,
+  aliases: [
+    'bun.com',
+  ] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +bun.sh -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install bun' as const,
 }
