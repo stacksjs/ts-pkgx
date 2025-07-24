@@ -1,34 +1,24 @@
 /**
- * **scrcpy** - Display and control your Android device
+ * **scrcpy** - Package from pantry: github.com/Genymobile/scrcpy
  *
  * @domain `github.com/Genymobile/scrcpy`
- * @programs `scrcpy`
- * @version `3.3.1` (16 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install scrcpy`
- * @name `scrcpy`
+ * @install `launchpad install github.com/Genymobile/scrcpy`
  * @dependencies `ffmpeg.org`, `libusb.info`, `libsdl.org`, ... (+3 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.scrcpy
- * // Or access via domain
- * const samePkg = pantry.githubcomgenymobilescrcpy
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomgenymobilescrcpy
  * console.log(pkg.name)        // "scrcpy"
- * console.log(pkg.description) // "Display and control your Android device"
- * console.log(pkg.programs)    // ["scrcpy"]
- * console.log(pkg.versions[0]) // "3.3.1" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/Genymobile/scrcpy"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/Genymobile/scrcpy.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const scrcpyPackage = {
+export const githubcomgenymobilescrcpyPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const scrcpyPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Display and control your Android device' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Genymobile/scrcpy/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/Genymobile/scrcpy' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install scrcpy' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'scrcpy',
-  ] as const,
+  installCommand: 'launchpad install github.com/Genymobile/scrcpy' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/Genymobile/scrcpy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/Genymobile/scrcpy' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -70,35 +53,10 @@ export const scrcpyPackage = {
     'darwin:sourceware.org/bzip2',
     'darwin:zlib.net',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.3.1',
-    '3.3.0',
-    '3.2.0',
-    '3.1.0',
-    '3.0.2',
-    '3.0.1',
-    '3.0.0',
-    '2.7.0',
-    '2.6.1',
-    '2.6.0',
-    '2.5.0',
-    '2.4.0',
-    '2.3.1',
-    '2.3.0',
-    '2.2.0',
-    '2.1.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) scrcpy -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install scrcpy' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Genymobile/scrcpy/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type ScrcpyPackage = typeof scrcpyPackage
+export type GithubcomgenymobilescrcpyPackage = typeof githubcomgenymobilescrcpyPackage

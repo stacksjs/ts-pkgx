@@ -1,6 +1,6 @@
 # pluto
 
-> A cli tool to help discover deprecated apiVersions in Kubernetes
+> Package from pantry: fairwinds.com/pluto
 
 ## Package Information
 
@@ -13,36 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install pluto
+launchpad install fairwinds.com/pluto
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pluto`
-
-## Available Versions
-
-<details>
-<summary>Show all 22 versions</summary>
-
-- `5.22.1`, `5.22.0`, `5.21.9`, `5.21.8`, `5.21.7`
-- `5.21.6`, `5.21.4`, `5.21.3`, `5.21.2`, `5.21.1`
-- `5.21.0`, `5.20.3`, `5.20.2`, `5.20.1`, `5.20.0`
-- `5.19.4`, `5.19.3`, `5.19.2`, `5.19.1`, `5.19.0`
-- `5.18.6`, `5.18.5`
-
-</details>
-
-**Latest Version**: `5.22.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) pluto -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

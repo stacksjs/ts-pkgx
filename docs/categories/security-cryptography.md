@@ -1,6 +1,6 @@
 # Security & Cryptography
 
-*12 packages in this category*
+*9 packages in this category*
 
 Packages related to security & cryptography.
 
@@ -56,73 +56,43 @@ Prevent cloud misconfigurations and find vulnerabilities during build-time in in
 
 ---
 
+### [developer.1password.com/1password-cli](../packages/developer.1password.com/1password-cli/index.md) (1password-cli)
+
+Package from pantry: developer.1password.com/1password-cli
+
+**Programs**: None specified
+
+**Install**: `launchpad install developer.1password.com/1password-cli`
+
+---
+
 ### [filippo.io/age](../packages/filippo.io/age/index.md) (age)
 
-A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability.
+Package from pantry: filippo.io/age
 
-**Programs**: age, age-keygen
+**Programs**: None specified
 
-**Install**: `launchpad install age`
+**Install**: `launchpad install filippo.io/age`
 
 ---
 
 ### [filippo.io/yubikey-agent](../packages/filippo.io/yubikey-agent/index.md) (yubikey-agent)
 
-Seamless ssh-agent for YubiKeys and other PIV tokens
+Package from pantry: filippo.io/yubikey-agent
 
-**Programs**: yubikey-agent
+**Programs**: None specified
 
-**Install**: `launchpad install yubikey-agent`
-
----
-
-### [mkcert.dev](../packages/mkcert.dev/index.md) (mkcert)
-
-A simple zero-config tool to make locally trusted development certificates with any names you'd like.
-
-**Programs**: mkcert
-
-**Install**: `launchpad install mkcert`
-
----
-
-### [openssl.org](../packages/openssl.org/index.md) (OpenSSL)
-
-TLS/SSL and crypto library with QUIC APIs
-
-**Programs**: openssl, c_rehash
-
-**Install**: `launchpad install OpenSSL`
+**Install**: `launchpad install filippo.io/yubikey-agent`
 
 ---
 
 ### [orhun.dev/gpg-tui](../packages/orhun.dev/gpg-tui/index.md) (gpg-tui)
 
-Manage your GnuPG keys with ease! 🔐
+Package from pantry: orhun.dev/gpg-tui
 
-**Programs**: gpg-tui
+**Programs**: None specified
 
-**Install**: `launchpad install gpg-tui`
-
----
-
-### [snyk.io](../packages/snyk.io/index.md) (snyk)
-
-Scans and monitors projects for security vulnerabilities
-
-**Programs**: snyk
-
-**Install**: `launchpad install snyk`
-
----
-
-### [vaultproject.io](../packages/vaultproject.io/index.md) (vault)
-
-A tool for secrets management, encryption as a service, and privileged access management
-
-**Programs**: vault
-
-**Install**: `launchpad install vault`
+**Install**: `launchpad install orhun.dev/gpg-tui`
 
 ---
 

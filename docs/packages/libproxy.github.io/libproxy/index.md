@@ -1,6 +1,6 @@
 # libproxy
 
-> Library that provides automatic proxy configuration management
+> Package from pantry: libproxy.github.io/libproxy
 
 ## Package Information
 
@@ -13,39 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install proxy
+launchpad install libproxy.github.io/libproxy
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `proxy`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `proxy`
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `0.5.10`, `0.5.9`, `0.5.8`, `0.5.7`, `0.5.6`
-- `0.5.5`, `0.5.4`, `0.5.3`
-
-</details>
-
-**Latest Version**: `0.5.10`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) proxy -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -63,7 +38,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.proxy
+const pkg = pantry.libproxy
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

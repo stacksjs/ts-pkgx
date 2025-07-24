@@ -1,6 +1,6 @@
 # tre
 
-> Tree command, improved.
+> Package from pantry: github.com/dduan/tre
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install tre
+launchpad install github.com/dduan/tre
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `tre`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.4.0`
-
-</details>
-
-**Latest Version**: `0.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) tre -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

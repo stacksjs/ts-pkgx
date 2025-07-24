@@ -1,6 +1,6 @@
 # vals
 
-> Helm-like configuration values loader with support for various sources
+> Package from pantry: github.com/helmfile/vals
 
 ## Package Information
 
@@ -13,38 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install vals
+launchpad install github.com/helmfile/vals
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `vals`
-
-## Available Versions
-
-<details>
-<summary>Show all 33 versions</summary>
-
-- `0.41.3`, `0.41.2`, `0.41.1`, `0.41.0`, `0.40.1`
-- `0.40.0`, `0.39.4`, `0.39.3`, `0.39.2`, `0.39.1`
-- `0.39.0`, `0.38.0`, `0.37.8`, `0.37.7`, `0.37.6`
-- `0.37.5`, `0.37.4`, `0.37.3`, `0.37.2`, `0.37.1`
-- `0.37.0`, `0.36.0`, `0.35.0`, `0.34.1`, `0.34.0`
-- `0.33.1`, `0.33.0`, `0.32.0`, `0.31.0`, `0.30.0`
-- `0.29.0`, `0.28.1`, `0.28.0`
-
-</details>
-
-**Latest Version**: `0.41.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) vals -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

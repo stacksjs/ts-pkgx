@@ -1,6 +1,6 @@
 # buildx
 
-> Docker CLI plugin for extended build capabilities with BuildKit
+> Package from pantry: docker.com/buildx
 
 ## Package Information
 
@@ -13,37 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install buildx
+launchpad install docker.com/buildx
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `buildx`
-
-## Available Versions
-
-<details>
-<summary>Show all 28 versions</summary>
-
-- `0.26.1`, `0.26.0`, `0.25.0`, `0.24.0`, `0.23.0`
-- `0.22.0`, `0.21.3`, `0.21.2`, `0.21.1`, `0.21.0`
-- `0.20.1`, `0.20.0`, `0.19.3`, `0.19.2`, `0.19.1`
-- `0.19.0`, `0.18.0`, `0.17.1`, `0.17.0`, `0.16.2`
-- `0.16.1`, `0.16.0`, `0.15.1`, `0.15.0`, `0.14.1`
-- `0.14.0`, `0.13.1`, `0.13.0`
-
-</details>
-
-**Latest Version**: `0.26.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) buildx -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

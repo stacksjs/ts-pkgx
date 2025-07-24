@@ -1,38 +1,28 @@
 /**
- * **cruft** - Allows you to maintain all the necessary cruft for packaging and building projects separate from the code you intentionally write. Built on-top of, and fully compatible with, CookieCutter.
+ * **cruft.github.io** - Package from pantry: cruft.github.io
  *
  * @domain `cruft.github.io`
- * @programs `cruft`
- * @version `2.16.0` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install cruft`
- * @name `cruft`
+ * @install `launchpad install cruft.github.io`
  * @dependencies `python.org>=3.7<3.12`, `git-scm.org^2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cruft
- * // Or access via domain
- * const samePkg = pantry.cruftgithubio
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cruft"
- * console.log(pkg.description) // "Allows you to maintain all the necessary cruft ..."
- * console.log(pkg.programs)    // ["cruft"]
- * console.log(pkg.versions[0]) // "2.16.0" (latest)
+ * const pkg = pantry.cruftgithubio
+ * console.log(pkg.name)        // "cruft.github.io"
+ * console.log(pkg.description) // "Package from pantry: cruft.github.io"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cruft-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cruftPackage = {
+export const cruftgithubioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cruft' as const,
+  name: 'cruft.github.io' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,22 +30,15 @@ export const cruftPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Allows you to maintain all the necessary cruft for packaging and building projects separate from the code you intentionally write. Built on-top of, and fully compatible with, CookieCutter.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cruft.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: cruft.github.io' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cruft' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'cruft',
-  ] as const,
+  installCommand: 'launchpad install cruft.github.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cruft.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cruft.github.io' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -65,21 +48,10 @@ export const cruftPackage = {
     'python.org>=3.7<3.12',
     'git-scm.org^2',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.16.0',
-    '2.15.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cruft -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cruft' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cruft.github.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type CruftPackage = typeof cruftPackage
+export type CruftgithubioPackage = typeof cruftgithubioPackage

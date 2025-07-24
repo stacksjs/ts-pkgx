@@ -1,34 +1,24 @@
 /**
- * **jasper** - Official Repository for the JasPer Image Coding Toolkit
+ * **jasper** - Package from pantry: github.com/jasper-software/jasper
  *
  * @domain `github.com/jasper-software/jasper`
- * @programs `jasper`
- * @version `4.2.5` (11 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install jasper`
- * @name `jasper`
+ * @install `launchpad install github.com/jasper-software/jasper`
  * @dependencies `libjpeg-turbo.org^2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.jasper
- * // Or access via domain
- * const samePkg = pantry.githubcomjaspersoftwarejasper
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomjaspersoftwarejasper
  * console.log(pkg.name)        // "jasper"
- * console.log(pkg.description) // "Official Repository for the JasPer Image Coding..."
- * console.log(pkg.programs)    // ["jasper"]
- * console.log(pkg.versions[0]) // "4.2.5" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/jasper-software..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/jasper-software/jasper.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jasperPackage = {
+export const githubcomjaspersoftwarejasperPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const jasperPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Official Repository for the JasPer Image Coding Toolkit' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jasper-software/jasper/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/jasper-software/jasper' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install jasper' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'jasper',
-  ] as const,
+  installCommand: 'launchpad install github.com/jasper-software/jasper' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/jasper-software/jasper -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/jasper-software/jasper' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,30 +47,10 @@ export const jasperPackage = {
   dependencies: [
     'libjpeg-turbo.org^2',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '4.2.5',
-    '4.2.4',
-    '4.2.3',
-    '4.2.2',
-    '4.2.1',
-    '4.2.0',
-    '4.1.2',
-    '4.1.1',
-    '4.1.0',
-    '4.0.1',
-    '4.0.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jasper -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jasper' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jasper-software/jasper/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type JasperPackage = typeof jasperPackage
+export type GithubcomjaspersoftwarejasperPackage = typeof githubcomjaspersoftwarejasperPackage

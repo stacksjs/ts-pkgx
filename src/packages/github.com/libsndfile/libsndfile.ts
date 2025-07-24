@@ -1,38 +1,28 @@
 /**
- * **sndfile** - A C library for reading and writing sound files containing sampled audio data.
+ * **libsndfile** - Package from pantry: github.com/libsndfile/libsndfile
  *
  * @domain `github.com/libsndfile/libsndfile`
- * @programs `sndfile-info`, `sndfile-convert`, `sndfile-play`
- * @version `1.2.2` (3 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install sndfile`
- * @name `sndfile`
+ * @install `launchpad install github.com/libsndfile/libsndfile`
  * @dependencies `xiph.org/flac`, `lame.sourceforge.io`, `xiph.org/ogg`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sndfile
- * // Or access via domain
- * const samePkg = pantry.githubcomlibsndfilelibsndfile
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sndfile"
- * console.log(pkg.description) // "A C library for reading and writing sound files..."
- * console.log(pkg.programs)    // ["sndfile-info", "sndfile-convert", ...]
- * console.log(pkg.versions[0]) // "1.2.2" (latest)
+ * const pkg = pantry.githubcomlibsndfilelibsndfile
+ * console.log(pkg.name)        // "libsndfile"
+ * console.log(pkg.description) // "Package from pantry: github.com/libsndfile/libs..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/libsndfile/libsndfile.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sndfilePackage = {
+export const githubcomlibsndfilelibsndfilePackage = {
   /**
    * The display name of this package.
    */
-  name: 'sndfile' as const,
+  name: 'libsndfile' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,24 +30,15 @@ export const sndfilePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A C library for reading and writing sound files containing sampled audio data.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libsndfile/libsndfile/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/libsndfile/libsndfile' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sndfile' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'sndfile-info',
-    'sndfile-convert',
-    'sndfile-play',
-  ] as const,
+  installCommand: 'launchpad install github.com/libsndfile/libsndfile' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/libsndfile/libsndfile -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/libsndfile/libsndfile' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -71,22 +52,10 @@ export const sndfilePackage = {
     'mpg123.de',
     'opus-codec.org',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.2.2',
-    '1.2.1',
-    '1.2.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/libsndfile/libsndfile -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sndfile' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libsndfile/libsndfile/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type SndfilePackage = typeof sndfilePackage
+export type GithubcomlibsndfilelibsndfilePackage = typeof githubcomlibsndfilelibsndfilePackage

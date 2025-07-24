@@ -1,33 +1,23 @@
 /**
- * **kubeconform** - A FAST Kubernetes manifests validator, with support for Custom Resources!
+ * **kubeconform** - Package from pantry: github.com/yannh/kubeconform
  *
  * @domain `github.com/yannh/kubeconform`
- * @programs `kubeconform`
- * @version `0.7.0` (5 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install kubeconform`
- * @name `kubeconform`
+ * @install `launchpad install github.com/yannh/kubeconform`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.kubeconform
- * // Or access via domain
- * const samePkg = pantry.githubcomyannhkubeconform
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomyannhkubeconform
  * console.log(pkg.name)        // "kubeconform"
- * console.log(pkg.description) // "A FAST Kubernetes manifests validator, with sup..."
- * console.log(pkg.programs)    // ["kubeconform"]
- * console.log(pkg.versions[0]) // "0.7.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/yannh/kubeconform"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/yannh/kubeconform.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kubeconformPackage = {
+export const githubcomyannhkubeconformPackage = {
   /**
    * The display name of this package.
    */
@@ -39,42 +29,21 @@ export const kubeconformPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A FAST Kubernetes manifests validator, with support for Custom Resources!' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/yannh/kubeconform/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/yannh/kubeconform' as const,
+  description: 'Package from pantry: github.com/yannh/kubeconform' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install kubeconform' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'kubeconform',
-  ] as const,
+  installCommand: 'launchpad install github.com/yannh/kubeconform' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/yannh/kubeconform -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/yannh/kubeconform' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.7.0',
-    '0.6.7',
-    '0.6.6',
-    '0.6.5',
-    '0.6.4',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kubeconform -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install kubeconform' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/yannh/kubeconform/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type KubeconformPackage = typeof kubeconformPackage
+export type GithubcomyannhkubeconformPackage = typeof githubcomyannhkubeconformPackage

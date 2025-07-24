@@ -1,34 +1,24 @@
 /**
- * **gimme-aws-creds** - A CLI that utilizes Okta IdP via SAML to acquire temporary AWS credentials
+ * **gimme-aws-creds** - Package from pantry: nike.com/gimme-aws-creds
  *
  * @domain `nike.com/gimme-aws-creds`
- * @programs `gimme-aws-creds`
- * @version `2.8.2` (4 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install gimme-aws-creds`
- * @name `gimme-aws-creds`
+ * @install `launchpad install nike.com/gimme-aws-creds`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gimmeawscreds
- * // Or access via domain
- * const samePkg = pantry.nikecomgimmeawscreds
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.nikecomgimmeawscreds
  * console.log(pkg.name)        // "gimme-aws-creds"
- * console.log(pkg.description) // "A CLI that utilizes Okta IdP via SAML to acquir..."
- * console.log(pkg.programs)    // ["gimme-aws-creds"]
- * console.log(pkg.versions[0]) // "2.8.2" (latest)
+ * console.log(pkg.description) // "Package from pantry: nike.com/gimme-aws-creds"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nike-com/gimme-aws-creds.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gimmeawscredsPackage = {
+export const nikecomgimmeawscredsPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const gimmeawscredsPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A CLI that utilizes Okta IdP via SAML to acquire temporary AWS credentials' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nike.com/gimme-aws-creds/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: nike.com/gimme-aws-creds' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gimme-aws-creds' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'gimme-aws-creds',
-  ] as const,
+  installCommand: 'launchpad install nike.com/gimme-aws-creds' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nike.com/gimme-aws-creds -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nike.com/gimme-aws-creds' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,23 +47,10 @@ export const gimmeawscredsPackage = {
   dependencies: [
     'pkgx.sh^1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.8.2',
-    '2.8.1.1',
-    '2.8.1',
-    '2.8.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gimme-aws-creds -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gimme-aws-creds' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nike.com/gimme-aws-creds/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type GimmeawscredsPackage = typeof gimmeawscredsPackage
+export type NikecomgimmeawscredsPackage = typeof nikecomgimmeawscredsPackage

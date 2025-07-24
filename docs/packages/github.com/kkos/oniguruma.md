@@ -1,11 +1,11 @@
-# onig-config
+# oniguruma
 
-> Regular expressions library
+> Package from pantry: github.com/kkos/oniguruma
 
 ## Package Information
 
 - **Domain**: `github.com/kkos/oniguruma`
-- **Name**: `onig-config`
+- **Name**: `oniguruma`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kkos/oniguruma/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install onig-config
+launchpad install github.com/kkos/oniguruma
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `onig-config`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `6.9.10`, `6.9.9`, `6.9.8`
-
-</details>
-
-**Latest Version**: `6.9.10`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) onig-config -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) onig-config -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['onig-config']
+const pkg = pantry.oniguruma
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

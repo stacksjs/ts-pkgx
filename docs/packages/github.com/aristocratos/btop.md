@@ -1,6 +1,6 @@
 # btop
 
-> Resource monitor. C++ version and continuation of bashtop and bpytop
+> Package from pantry: github.com/aristocratos/btop
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install btop
+launchpad install github.com/aristocratos/btop
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `btop`
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `1.4.4`, `1.4.3`, `1.4.2`, `1.4.1`, `1.4.0`
-- `1.3.2`, `1.3.1`, `1.3.0`
-
-</details>
-
-**Latest Version**: `1.4.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) btop -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

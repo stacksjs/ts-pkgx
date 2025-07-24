@@ -1,11 +1,11 @@
-# nvim
+# neovim.io
 
-> Ambitious Vim-fork focused on extensibility and agility
+> Package from pantry: neovim.io
 
 ## Package Information
 
 - **Domain**: `neovim.io`
-- **Name**: `nvim`
+- **Name**: `neovim.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/neovim.io/package.yml)
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install nvim
+launchpad install neovim.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `nvim`
-
-## Available Versions
-
-<details>
-<summary>Show all 16 versions</summary>
-
-- `0.11.3`, `0.11.2`, `0.11.1`, `0.11.0`, `0.10.4`
-- `0.10.3`, `0.10.2`, `0.10.1`, `0.10.0`, `0.9.5`
-- `0.9.4`, `0.9.2`, `0.9.1`, `0.9.0`, `0.8.2`
-- `0.8.1`
-
-</details>
-
-**Latest Version**: `0.11.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) nvim -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -55,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.nvim
+const pkg = pantry['neovim.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

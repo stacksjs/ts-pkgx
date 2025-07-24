@@ -1,34 +1,24 @@
 /**
- * **openplayground** - An LLM playground you can run on your laptop
+ * **openplayground** - Package from pantry: github.com/nat/openplayground
  *
  * @domain `github.com/nat/openplayground`
- * @programs `openplayground`
- * @version `2023.6.5` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install openplayground`
- * @name `openplayground`
+ * @install `launchpad install github.com/nat/openplayground`
  * @dependencies `python.org~3.11`, `gnu.org/bash`, `tea.xyz^0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.openplayground
- * // Or access via domain
- * const samePkg = pantry.githubcomnatopenplayground
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomnatopenplayground
  * console.log(pkg.name)        // "openplayground"
- * console.log(pkg.description) // "An LLM playground you can run on your laptop"
- * console.log(pkg.programs)    // ["openplayground"]
- * console.log(pkg.versions[0]) // "2023.6.5" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/nat/openplayground"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/nat/openplayground.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const openplaygroundPackage = {
+export const githubcomnatopenplaygroundPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const openplaygroundPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'An LLM playground you can run on your laptop' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/nat/openplayground/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/nat/openplayground' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install openplayground' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'openplayground',
-  ] as const,
+  installCommand: 'launchpad install github.com/nat/openplayground' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/nat/openplayground -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/nat/openplayground' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -66,20 +49,10 @@ export const openplaygroundPackage = {
     'gnu.org/bash',
     'tea.xyz^0',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2023.6.5',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) openplayground -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install openplayground' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/nat/openplayground/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type OpenplaygroundPackage = typeof openplaygroundPackage
+export type GithubcomnatopenplaygroundPackage = typeof githubcomnatopenplaygroundPackage

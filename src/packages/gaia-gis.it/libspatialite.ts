@@ -1,9 +1,7 @@
 /**
- * **gaia-gis.it/libspatialite** - pkgx package
+ * **libspatialite** - Package from pantry: gaia-gis.it/libspatialite
  *
  * @domain `gaia-gis.it/libspatialite`
- * @version `5.1.0` (2 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install gaia-gis.it/libspatialite`
  * @dependencies `gaia-gis.it/fossil/freexl`, `libgeos.org`, `git.osgeo.org/gitea/rttopo/librttopo`, ... (+4 more)
@@ -13,8 +11,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gaiagisitlibspatialite
- * console.log(pkg.name)        // "gaia-gis.it/libspatialite"
- * console.log(pkg.versions[0]) // "5.1.0" (latest)
+ * console.log(pkg.name)        // "libspatialite"
+ * console.log(pkg.description) // "Package from pantry: gaia-gis.it/libspatialite"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gaia-gis-it/libspatialite.md
@@ -24,7 +22,7 @@ export const gaiagisitlibspatialitePackage = {
   /**
    * The display name of this package.
    */
-  name: 'gaia-gis.it/libspatialite' as const,
+  name: 'libspatialite' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -32,15 +30,14 @@ export const gaiagisitlibspatialitePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gaia-gis.it/libspatialite/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: gaia-gis.it/libspatialite' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gaia-gis.it/libspatialite' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gaia-gis.it/libspatialite -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gaia-gis.it/libspatialite' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -56,17 +53,10 @@ export const gaiagisitlibspatialitePackage = {
     'proj.org',
     'sqlite.org',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '5.1.0',
-    '5.0.1',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gaia-gis.it/libspatialite -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gaia-gis.it/libspatialite' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gaia-gis.it/libspatialite/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type GaiagisitlibspatialitePackage = typeof gaiagisitlibspatialitePackage

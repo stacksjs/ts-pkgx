@@ -1,6 +1,6 @@
 # lux
 
-> 👾 Fast and simple video download library and CLI tool written in Go
+> Package from pantry: github.com/iawia002/lux
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install lux
+launchpad install github.com/iawia002/lux
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `lux`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `0.24.1`, `0.24.0`, `0.23.0`, `0.22.0`, `0.21.0`
-- `0.20.0`, `0.19.0`
-
-</details>
-
-**Latest Version**: `0.24.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) lux -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

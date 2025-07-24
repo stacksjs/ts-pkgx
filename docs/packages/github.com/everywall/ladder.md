@@ -1,6 +1,6 @@
 # ladder
 
-> Selfhosted alternative to 12ft.io. and 1ft.io bypass paywalls with a proxy ladder and remove CORS headers from any URL
+> Package from pantry: github.com/everywall/ladder
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ladder
+launchpad install github.com/everywall/ladder
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ladder`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.0.21`, `0.0.20`
-
-</details>
-
-**Latest Version**: `0.0.21`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ladder -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

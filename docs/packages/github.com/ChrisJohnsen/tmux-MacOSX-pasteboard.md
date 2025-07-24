@@ -1,11 +1,11 @@
-# reattach-to-user-namespace
+# tmux-MacOSX-pasteboard
 
-> Notes and workarounds for accessing the Mac OS X pasteboard in tmux sessions. Note: The pu branch (“Proposed Updates”) may be rewound without notice.
+> Package from pantry: github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 
 ## Package Information
 
 - **Domain**: `github.com/ChrisJohnsen/tmux-MacOSX-pasteboard`
-- **Name**: `reattach-to-user-namespace`
+- **Name**: `tmux-MacOSX-pasteboard`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ChrisJohnsen/tmux-MacOSX-pasteboard/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install reattach-to-user-namespace
+launchpad install github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `reattach-to-user-namespace`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.9.0`
-
-</details>
-
-**Latest Version**: `2.9.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) reattach-to-user-namespace -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) reattach-to-user-namespace -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['reattach-to-user-namespace']
+const pkg = pantry['tmux-MacOSX-pasteboard']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

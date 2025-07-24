@@ -1,33 +1,23 @@
 /**
- * **svu** - Semantic Version Util
+ * **svu** - Package from pantry: github.com/caarlos0/svu
  *
  * @domain `github.com/caarlos0/svu`
- * @programs `svu`
- * @version `3.2.3` (13 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install svu`
- * @name `svu`
+ * @install `launchpad install github.com/caarlos0/svu`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.svu
- * // Or access via domain
- * const samePkg = pantry.githubcomcaarlos0svu
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomcaarlos0svu
  * console.log(pkg.name)        // "svu"
- * console.log(pkg.description) // "Semantic Version Util"
- * console.log(pkg.programs)    // ["svu"]
- * console.log(pkg.versions[0]) // "3.2.3" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/caarlos0/svu"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/caarlos0/svu.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const svuPackage = {
+export const githubcomcaarlos0svuPackage = {
   /**
    * The display name of this package.
    */
@@ -39,50 +29,21 @@ export const svuPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Semantic Version Util' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/caarlos0/svu/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/caarlos0/svu' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install svu' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'svu',
-  ] as const,
+  installCommand: 'launchpad install github.com/caarlos0/svu' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/caarlos0/svu -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/caarlos0/svu' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '3.2.3',
-    '3.2.2',
-    '3.2.1',
-    '3.2.0',
-    '3.1.0',
-    '3.0.0',
-    '2.2.0',
-    '2.1.1',
-    '2.1.0',
-    '2.0.1',
-    '2.0.0',
-    '1.12.0',
-    '1.11.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) svu -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install svu' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/caarlos0/svu/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type SvuPackage = typeof svuPackage
+export type Githubcomcaarlos0svuPackage = typeof githubcomcaarlos0svuPackage

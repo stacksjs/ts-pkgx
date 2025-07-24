@@ -1,11 +1,11 @@
-# ktlint
+# ktlint.github.io
 
-> An anti-bikeshedding Kotlin linter with built-in formatter
+> Package from pantry: ktlint.github.io
 
 ## Package Information
 
 - **Domain**: `ktlint.github.io`
-- **Name**: `ktlint`
+- **Name**: `ktlint.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ktlint.github.io/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ktlint
+launchpad install ktlint.github.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ktlint`
-
-## Available Versions
-
-<details>
-<summary>Show all 12 versions</summary>
-
-- `1.7.1`, `1.7.0`, `1.6.0`, `1.5.0`, `1.4.1`
-- `1.4.0`, `1.3.1`, `1.3.0`, `1.2.1`, `1.2.0`
-- `1.1.1`, `0.49.1`
-
-</details>
-
-**Latest Version**: `1.7.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ktlint -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -54,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.ktlint
+const pkg = pantry['ktlint.github.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

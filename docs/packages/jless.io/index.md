@@ -1,11 +1,11 @@
-# jless
+# jless.io
 
-> jless is a command-line JSON viewer designed for reading, exploring, and searching through JSON data.
+> Package from pantry: jless.io
 
 ## Package Information
 
 - **Domain**: `jless.io`
-- **Name**: `jless`
+- **Name**: `jless.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jless.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install jless
+launchpad install jless.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `jless`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.9.0`
-
-</details>
-
-**Latest Version**: `0.9.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) jless -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -52,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.jless
+const pkg = pantry['jless.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,37 +1,26 @@
 /**
- * **sig** - Interactive grep (for streaming)
+ * **sigrs** - pkgx package
  *
  * @domain `crates.io/sigrs`
- * @programs `sig`
- * @version `0.1.4` (5 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install sig`
- * @name `sig`
+ * @install `launchpad install crates.io/sigrs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sig
- * // Or access via domain
- * const samePkg = pantry.cratesiosigrs
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sig"
- * console.log(pkg.description) // "Interactive grep (for streaming)"
- * console.log(pkg.programs)    // ["sig"]
- * console.log(pkg.versions[0]) // "0.1.4" (latest)
+ * const pkg = pantry.cratesiosigrs
+ * console.log(pkg.name)        // "sigrs"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/sigrs.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sigPackage = {
+export const cratesiosigrsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sig' as const,
+  name: 'sigrs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,42 +28,22 @@ export const sigPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Interactive grep (for streaming)' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/sigrs/package.yml' as const,
+  description: '' as const,
+  packageYmlUrl: '' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sig' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'sig',
-  ] as const,
+  installCommand: 'launchpad install crates.io/sigrs' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.1.4',
-    '0.1.3',
-    '0.1.2',
-    '0.1.1',
-    '0.1.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
+  versions: [] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sig -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sig' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/sigrs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/sigrs' as const,
 }
 
-export type SigPackage = typeof sigPackage
+export type CratesiosigrsPackage = typeof cratesiosigrsPackage

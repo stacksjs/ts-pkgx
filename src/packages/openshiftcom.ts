@@ -1,38 +1,28 @@
 /**
- * **oc** - The OpenShift Command Line, part of OKD
+ * **openshift.com** - Package from pantry: openshift.com
  *
  * @domain `openshift.com`
- * @programs `oc`
- * @version `4.19.5` (244 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install oc`
- * @name `oc`
+ * @install `launchpad install openshift.com`
  * @dependencies `kerberos.org^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.oc
- * // Or access via domain
- * const samePkg = pantry.openshiftcom
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "oc"
- * console.log(pkg.description) // "The OpenShift Command Line, part of OKD"
- * console.log(pkg.programs)    // ["oc"]
- * console.log(pkg.versions[0]) // "4.19.5" (latest)
+ * const pkg = pantry.openshiftcom
+ * console.log(pkg.name)        // "openshift.com"
+ * console.log(pkg.description) // "Package from pantry: openshift.com"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openshift-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ocPackage = {
+export const openshiftcomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'oc' as const,
+  name: 'openshift.com' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,22 +30,15 @@ export const ocPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'The OpenShift Command Line, part of OKD' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openshift.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: openshift.com' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install oc' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'oc',
-  ] as const,
+  installCommand: 'launchpad install openshift.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openshift.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openshift.com' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,263 +47,10 @@ export const ocPackage = {
   dependencies: [
     'kerberos.org^1.21',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '4.19.5',
-    '4.19.4',
-    '4.19.3',
-    '4.19.2',
-    '4.19.1',
-    '4.19.0',
-    '4.18.20',
-    '4.18.19',
-    '4.18.18',
-    '4.18.17',
-    '4.18.16',
-    '4.18.15',
-    '4.18.14',
-    '4.18.13',
-    '4.18.12',
-    '4.18.11',
-    '4.18.10',
-    '4.18.9',
-    '4.18.8',
-    '4.18.7',
-    '4.18.6',
-    '4.18.5',
-    '4.18.4',
-    '4.18.3',
-    '4.18.2',
-    '4.18.1',
-    '4.17.36',
-    '4.17.35',
-    '4.17.34',
-    '4.17.33',
-    '4.17.32',
-    '4.17.31',
-    '4.17.30',
-    '4.17.29',
-    '4.17.28',
-    '4.17.27',
-    '4.17.26',
-    '4.17.25',
-    '4.17.24',
-    '4.17.23',
-    '4.17.22',
-    '4.17.21',
-    '4.17.20',
-    '4.17.19',
-    '4.17.18',
-    '4.17.17',
-    '4.17.16',
-    '4.17.15',
-    '4.17.14',
-    '4.17.13',
-    '4.17.12',
-    '4.17.11',
-    '4.17.10',
-    '4.17.9',
-    '4.17.8',
-    '4.17.7',
-    '4.17.6',
-    '4.17.5',
-    '4.17.4',
-    '4.17.3',
-    '4.17.2',
-    '4.17.1',
-    '4.17.0',
-    '4.16.44',
-    '4.16.43',
-    '4.16.42',
-    '4.16.41',
-    '4.16.40',
-    '4.16.39',
-    '4.16.38',
-    '4.16.37',
-    '4.16.36',
-    '4.16.35',
-    '4.16.34',
-    '4.16.33',
-    '4.16.32',
-    '4.16.30',
-    '4.16.29',
-    '4.16.28',
-    '4.16.27',
-    '4.16.26',
-    '4.16.25',
-    '4.16.24',
-    '4.16.23',
-    '4.16.21',
-    '4.16.20',
-    '4.16.19',
-    '4.16.18',
-    '4.16.17',
-    '4.16.16',
-    '4.16.15',
-    '4.16.14',
-    '4.16.13',
-    '4.16.12',
-    '4.16.11',
-    '4.16.10',
-    '4.16.9',
-    '4.16.8',
-    '4.16.7',
-    '4.16.6',
-    '4.16.5',
-    '4.16.4',
-    '4.16.3',
-    '4.16.2',
-    '4.16.1',
-    '4.15.55',
-    '4.15.54',
-    '4.15.53',
-    '4.15.52',
-    '4.15.51',
-    '4.15.50',
-    '4.15.49',
-    '4.15.48',
-    '4.15.47',
-    '4.15.46',
-    '4.15.45',
-    '4.15.44',
-    '4.15.43',
-    '4.15.42',
-    '4.15.41',
-    '4.15.40',
-    '4.15.39',
-    '4.15.38',
-    '4.15.37',
-    '4.15.36',
-    '4.15.35',
-    '4.15.34',
-    '4.15.33',
-    '4.15.32',
-    '4.15.31',
-    '4.15.30',
-    '4.15.29',
-    '4.15.28',
-    '4.15.27',
-    '4.15.26',
-    '4.15.25',
-    '4.15.24',
-    '4.15.23',
-    '4.15.22',
-    '4.15.21',
-    '4.15.20',
-    '4.15.19',
-    '4.15.18',
-    '4.15.17',
-    '4.15.16',
-    '4.15.15',
-    '4.15.14',
-    '4.15.13',
-    '4.15.12',
-    '4.15.11',
-    '4.15.10',
-    '4.15.9',
-    '4.15.8',
-    '4.15.7',
-    '4.15.6',
-    '4.15.5',
-    '4.15.4',
-    '4.15.3',
-    '4.15.2',
-    '4.14.54',
-    '4.14.53',
-    '4.14.52',
-    '4.14.51',
-    '4.14.50',
-    '4.14.49',
-    '4.14.48',
-    '4.14.46',
-    '4.14.45',
-    '4.14.44',
-    '4.14.43',
-    '4.14.42',
-    '4.14.41',
-    '4.14.40',
-    '4.14.39',
-    '4.14.38',
-    '4.14.37',
-    '4.14.36',
-    '4.14.35',
-    '4.14.34',
-    '4.14.33',
-    '4.14.32',
-    '4.14.31',
-    '4.14.30',
-    '4.14.29',
-    '4.14.28',
-    '4.14.27',
-    '4.14.26',
-    '4.14.25',
-    '4.14.24',
-    '4.14.23',
-    '4.14.22',
-    '4.14.21',
-    '4.14.20',
-    '4.14.19',
-    '4.14.18',
-    '4.14.17',
-    '4.13.59',
-    '4.13.58',
-    '4.13.57',
-    '4.13.56',
-    '4.13.55',
-    '4.13.54',
-    '4.13.53',
-    '4.13.52',
-    '4.13.51',
-    '4.13.50',
-    '4.13.49',
-    '4.13.48',
-    '4.13.46',
-    '4.13.45',
-    '4.13.44',
-    '4.13.43',
-    '4.13.42',
-    '4.13.41',
-    '4.13.40',
-    '4.13.39',
-    '4.13.38',
-    '4.12.78',
-    '4.12.77',
-    '4.12.76',
-    '4.12.75',
-    '4.12.74',
-    '4.12.73',
-    '4.12.72',
-    '4.12.71',
-    '4.12.70',
-    '4.12.69',
-    '4.12.68',
-    '4.12.67',
-    '4.12.66',
-    '4.12.65',
-    '4.12.64',
-    '4.12.63',
-    '4.12.62',
-    '4.12.61',
-    '4.12.60',
-    '4.12.59',
-    '4.12.58',
-    '4.12.57',
-    '4.12.56',
-    '4.12.55',
-    '4.12.54',
-    '4.12.53',
-    '4.11.59',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) oc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install oc' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openshift.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type OcPackage = typeof ocPackage
+export type OpenshiftcomPackage = typeof openshiftcomPackage

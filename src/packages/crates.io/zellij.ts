@@ -1,34 +1,24 @@
 /**
- * **zellij** - Pluggable terminal workspace, with terminal multiplexer as the base feature
+ * **zellij** - Package from pantry: crates.io/zellij
  *
  * @domain `crates.io/zellij`
- * @programs `zellij`
- * @version `0.42.2` (18 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install zellij`
- * @name `zellij`
+ * @install `launchpad install crates.io/zellij`
  * @dependencies `zlib.net^1`, `curl.se@8`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.zellij
- * // Or access via domain
- * const samePkg = pantry.cratesiozellij
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiozellij
  * console.log(pkg.name)        // "zellij"
- * console.log(pkg.description) // "Pluggable terminal workspace, with terminal mul..."
- * console.log(pkg.programs)    // ["zellij"]
- * console.log(pkg.versions[0]) // "0.42.2" (latest)
+ * console.log(pkg.description) // "Package from pantry: crates.io/zellij"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/zellij.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zellijPackage = {
+export const cratesiozellijPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const zellijPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Pluggable terminal workspace, with terminal multiplexer as the base feature' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/zellij/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: crates.io/zellij' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install zellij' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'zellij',
-  ] as const,
+  installCommand: 'launchpad install crates.io/zellij' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/zellij -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/zellij' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -65,37 +48,10 @@ export const zellijPackage = {
     'zlib.net^1',
     'curl.se@8',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.42.2',
-    '0.42.1',
-    '0.42.0',
-    '0.41.2',
-    '0.41.1',
-    '0.41.0',
-    '0.40.1',
-    '0.40.0',
-    '0.39.2',
-    '0.39.1',
-    '0.39.0',
-    '0.38.2',
-    '0.38.1',
-    '0.38.0',
-    '0.37.2',
-    '0.37.1',
-    '0.37.0',
-    '0.36.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zellij -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install zellij' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/zellij/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type ZellijPackage = typeof zellijPackage
+export type CratesiozellijPackage = typeof cratesiozellijPackage

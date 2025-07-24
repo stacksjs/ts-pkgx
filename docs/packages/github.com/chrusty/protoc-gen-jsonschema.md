@@ -1,6 +1,6 @@
 # protoc-gen-jsonschema
 
-> Protobuf to JSON-Schema compiler
+> Package from pantry: github.com/chrusty/protoc-gen-jsonschema
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install protoc-gen-jsonschema
+launchpad install github.com/chrusty/protoc-gen-jsonschema
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `protoc-gen-jsonschema`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.4.1`
-
-</details>
-
-**Latest Version**: `1.4.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) protoc-gen-jsonschema -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

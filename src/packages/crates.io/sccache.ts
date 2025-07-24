@@ -1,34 +1,23 @@
 /**
- * **sccache** - Sccache is a ccache-like tool. It is used as a compiler wrapper and avoids compilation when possible. Sccache has the capability to utilize caching in remote storage environments, including various cloud storage options, or alternatively, in local storage.
+ * **sccache** - pkgx package
  *
  * @domain `crates.io/sccache`
- * @programs `sccache`
- * @version `0.10.0` (5 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install sccache`
- * @name `sccache`
+ * @install `launchpad install crates.io/sccache`
  * @dependencies `openssl.org^1.1`, `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sccache
- * // Or access via domain
- * const samePkg = pantry.cratesiosccache
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiosccache
  * console.log(pkg.name)        // "sccache"
- * console.log(pkg.description) // "Sccache is a ccache-like tool. It is used as a ..."
- * console.log(pkg.programs)    // ["sccache"]
- * console.log(pkg.versions[0]) // "0.10.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/sccache.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sccachePackage = {
+export const cratesiosccachePackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +29,16 @@ export const sccachePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Sccache is a ccache-like tool. It is used as a compiler wrapper and avoids compilation when possible. Sccache has the capability to utilize caching in remote storage environments, including various cloud storage options, or alternatively, in local storage.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/sccache/package.yml' as const,
+  description: '' as const,
+  packageYmlUrl: '' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sccache' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'sccache',
-  ] as const,
+  installCommand: 'launchpad install crates.io/sccache' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -65,24 +48,10 @@ export const sccachePackage = {
     'openssl.org^1.1',
     'curl.se/ca-certs',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.10.0',
-    '0.9.1',
-    '0.9.0',
-    '0.8.2',
-    '0.8.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
+  versions: [] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sccache -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sccache' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/sccache -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/sccache' as const,
 }
 
-export type SccachePackage = typeof sccachePackage
+export type CratesiosccachePackage = typeof cratesiosccachePackage

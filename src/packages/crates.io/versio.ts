@@ -1,34 +1,23 @@
 /**
- * **versio** - A version number manager
+ * **versio** - pkgx package
  *
  * @domain `crates.io/versio`
- * @programs `versio`
- * @version `0.8.5` (3 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install versio`
- * @name `versio`
+ * @install `launchpad install crates.io/versio`
  * @dependencies `openssl.org^1.1`, `gnupg.org/libgpg-error@1`, `gnupg.org/gpgme^1.13`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.versio
- * // Or access via domain
- * const samePkg = pantry.cratesioversio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesioversio
  * console.log(pkg.name)        // "versio"
- * console.log(pkg.description) // "A version number manager"
- * console.log(pkg.programs)    // ["versio"]
- * console.log(pkg.versions[0]) // "0.8.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/versio.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const versioPackage = {
+export const cratesioversioPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +29,16 @@ export const versioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A version number manager' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/versio/package.yml' as const,
+  description: '' as const,
+  packageYmlUrl: '' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install versio' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'versio',
-  ] as const,
+  installCommand: 'launchpad install crates.io/versio' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -68,22 +51,10 @@ export const versioPackage = {
     'gnupg.org/libassuan',
     'zlib.net^1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.8.5',
-    '0.8.3',
-    '0.7.6',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
+  versions: [] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) versio -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install versio' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/versio -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/versio' as const,
 }
 
-export type VersioPackage = typeof versioPackage
+export type CratesioversioPackage = typeof cratesioversioPackage

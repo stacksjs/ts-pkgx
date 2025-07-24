@@ -1,6 +1,6 @@
 # helmfile
 
-> Declaratively deploy your Kubernetes manifests, Kustomize configs, and Charts as Helm releases. Generate all-in-one manifests for use with ArgoCD.
+> Package from pantry: github.com/helmfile/helmfile
 
 ## Package Information
 
@@ -13,36 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install helmfile
+launchpad install github.com/helmfile/helmfile
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `helmfile`
-
-## Available Versions
-
-<details>
-<summary>Show all 25 versions</summary>
-
-- `1.1.2`, `1.1.1`, `1.1.0`, `1.0.0`, `0.171.0`
-- `0.170.1`, `0.170.0`, `0.169.2`, `0.169.1`, `0.169.0`
-- `0.168.0`, `0.167.1`, `0.167.0`, `0.166.0`, `0.165.0`
-- `0.164.0`, `0.163.1`, `0.163.0`, `0.162.0`, `0.161.0`
-- `0.160.0`, `0.159.0`, `0.158.1`, `0.158.0`, `0.157.0`
-
-</details>
-
-**Latest Version**: `1.1.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) helmfile -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

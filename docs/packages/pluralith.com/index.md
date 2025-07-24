@@ -1,11 +1,11 @@
-# pluralith
+# pluralith.com
 
-> A tool for Terraform state visualisation and automated generation of infrastructure documentation
+> Package from pantry: pluralith.com
 
 ## Package Information
 
 - **Domain**: `pluralith.com`
-- **Name**: `pluralith`
+- **Name**: `pluralith.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pluralith.com/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install pluralith
+launchpad install pluralith.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pluralith`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.2.2`
-
-</details>
-
-**Latest Version**: `0.2.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) pluralith -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -52,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.pluralith
+const pkg = pantry['pluralith.com']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

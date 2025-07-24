@@ -1,37 +1,28 @@
 /**
- * **openstack** - pkgx package
+ * **python-openstackclient** - Package from pantry: opendev.org/openstack/python-openstackclient
  *
  * @domain `opendev.org/openstack/python-openstackclient`
- * @programs `openstack`, `openstack-inventory`
- * @version `8.1.0` (21 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install openstack`
- * @name `openstack`
+ * @install `launchpad install opendev.org/openstack/python-openstackclient`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.openstack
- * // Or access via domain
- * const samePkg = pantry.opendevorgopenstackpythonopenstackclient
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "openstack"
- * console.log(pkg.programs)    // ["openstack", "openstack-inventory"]
- * console.log(pkg.versions[0]) // "8.1.0" (latest)
+ * const pkg = pantry.opendevorgopenstackpythonopenstackclient
+ * console.log(pkg.name)        // "python-openstackclient"
+ * console.log(pkg.description) // "Package from pantry: opendev.org/openstack/pyth..."
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/opendev-org/openstack/python-openstackclient.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const openstackPackage = {
+export const opendevorgopenstackpythonopenstackclientPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openstack' as const,
+  name: 'python-openstackclient' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,23 +30,15 @@ export const openstackPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/opendev.org/openstack/python-openstackclient/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: opendev.org/openstack/python-openstackclient' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install openstack' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'openstack',
-    'openstack-inventory',
-  ] as const,
+  installCommand: 'launchpad install opendev.org/openstack/python-openstackclient' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +opendev.org/openstack/python-openstackclient -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install opendev.org/openstack/python-openstackclient' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,40 +47,10 @@ export const openstackPackage = {
   dependencies: [
     'pkgx.sh^1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '8.1.0',
-    '8.0.0',
-    '7.5.0',
-    '7.4.0',
-    '7.3.1',
-    '7.3.0',
-    '7.2.1',
-    '7.2.0',
-    '7.1.4',
-    '7.1.3',
-    '7.1.2',
-    '7.1.1',
-    '7.1.0',
-    '7.0.0',
-    '6.6.1',
-    '6.6.0',
-    '6.5.0',
-    '6.4.0',
-    '6.3.0',
-    '6.2.1',
-    '6.0.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +opendev.org/openstack/python-openstackclient -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install openstack' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/opendev.org/openstack/python-openstackclient/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type OpenstackPackage = typeof openstackPackage
+export type OpendevorgopenstackpythonopenstackclientPackage = typeof opendevorgopenstackpythonopenstackclientPackage
