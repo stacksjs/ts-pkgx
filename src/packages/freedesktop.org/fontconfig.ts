@@ -3,7 +3,7 @@
  *
  * @domain `freedesktop.org/fontconfig`
  * @programs `fc-cache`, `fc-cat`, `fc-conflist`, `fc-list`, `fc-match`, ... (+4 more)
- * @version `2.16.0` (4 versions available)
+ * @version `2.17.1` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install freedesktop.org/fontconfig`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "freedesktop.org/fontconfig"
  * console.log(pkg.description) // "XML-based font configuration API for X Windows"
  * console.log(pkg.programs)    // ["fc-cache", "fc-cat", ...]
- * console.log(pkg.versions[0]) // "2.16.0" (latest)
+ * console.log(pkg.versions[0]) // "2.17.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/freedesktop-org/fontconfig.md
@@ -76,6 +76,9 @@ export const freedesktoporgfontconfigPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.17.1',
+    '2.17.0',
+    '2.16.2',
     '2.16.0',
     '2.15.0',
     '2.14.1',
