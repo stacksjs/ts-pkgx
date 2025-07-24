@@ -3,7 +3,7 @@
  *
  * @domain `rarlab.com`
  * @programs `unrar`
- * @version `7.1.8` (21 versions available)
+ * @version `7.1.9` (22 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install unrar`
@@ -20,7 +20,7 @@
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "unrar"
  * console.log(pkg.programs)    // ["unrar"]
- * console.log(pkg.versions[0]) // "7.1.8" (latest)
+ * console.log(pkg.versions[0]) // "7.1.9" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rarlab-com.md
@@ -61,6 +61,7 @@ export const unrarPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '7.1.9',
     '7.1.8',
     '7.1.7',
     '7.1.6',
