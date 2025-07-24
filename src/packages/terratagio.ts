@@ -3,7 +3,7 @@
  *
  * @domain `terratag.io`
  * @programs `terratag`
- * @version `0.7.2` (18 versions available)
+ * @version `0.7.3` (19 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install terratag`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "terratag"
  * console.log(pkg.description) // "Terratag is a CLI tool that enables users of Te..."
  * console.log(pkg.programs)    // ["terratag"]
- * console.log(pkg.versions[0]) // "0.7.2" (latest)
+ * console.log(pkg.versions[0]) // "0.7.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/terratag-io.md
@@ -70,6 +70,7 @@ export const terratagPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.7.3',
     '0.7.2',
     '0.7.1',
     '0.7.0',
