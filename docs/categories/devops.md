@@ -1,6 +1,6 @@
 # DevOps
 
-*22 packages in this category*
+*21 packages in this category*
 
 Tools for deployment, orchestration, and infrastructure management.
 
@@ -213,16 +213,6 @@ Packer is a tool for creating identical machine images for multiple platforms fr
 **Programs**: packer
 
 **Install**: `launchpad install packer`
-
----
-
-### [podman.io](../packages/podman.io/index.md) (podman)
-
-Podman: A tool for managing OCI containers and pods.
-
-**Programs**: podman, podman-remote, podman-mac-helper
-
-**Install**: `launchpad install podman`
 
 ---
 

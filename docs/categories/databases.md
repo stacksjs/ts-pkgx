@@ -1,6 +1,6 @@
 # Databases
 
-*8 packages in this category*
+*7 packages in this category*
 
 Database systems and data storage solutions.
 
@@ -73,16 +73,6 @@ MongoDB Shell to connect, configure, query, and work with your MongoDB database
 **Programs**: opensearch, opensearch-keystore, opensearch-plugin, opensearch-shard
 
 **Install**: `launchpad install opensearch`
-
----
-
-### [postgrest.org](../packages/postgrest.org/index.md) (postgrest)
-
-Serves a fully RESTful API from any existing PostgreSQL database
-
-**Programs**: postgrest
-
-**Install**: `launchpad install postgrest`
 
 ---
 

@@ -46,23 +46,23 @@ The LocalStack CLI packaged using pyinstaller
 
 ---
 
-### [planetscale.com](../packages/planetscale.com/index.md) (pscale)
+### [planetscale.com](../packages/planetscale.com/index.md)
 
-The CLI for PlanetScale Database
+Package from pantry: planetscale.com
 
-**Programs**: pscale
+**Programs**: None specified
 
-**Install**: `launchpad install pscale`
+**Install**: `launchpad install planetscale.com`
 
 ---
 
-### [railway.app](../packages/railway.app/index.md) (railway)
+### [railway.app](../packages/railway.app/index.md)
 
-Develop and deploy code with zero configuration
+Package from pantry: railway.app
 
-**Programs**: railway
+**Programs**: None specified
 
-**Install**: `launchpad install railway`
+**Install**: `launchpad install railway.app`
 
 ---
 

@@ -126,13 +126,13 @@ Small build system for use with gyp or CMake
 
 ---
 
-### [pantsbuild.org/scie-pants](../packages/pantsbuild.org/scie-pants/index.md) (scie-pants, pants)
+### [pantsbuild.org/scie-pants](../packages/pantsbuild.org/scie-pants/index.md) (scie-pants)
 
-Protects your Pants from the elements.
+Package from pantry: pantsbuild.org/scie-pants
 
-**Programs**: pants
+**Programs**: None specified
 
-**Install**: `launchpad install pants`
+**Install**: `launchpad install pantsbuild.org/scie-pants`
 
 ---
 

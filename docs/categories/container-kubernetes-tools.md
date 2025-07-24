@@ -1,6 +1,6 @@
 # Container & Kubernetes Tools
 
-*21 packages in this category*
+*20 packages in this category*
 
 Packages related to container & kubernetes tools.
 
@@ -203,16 +203,6 @@ SDK for building Kubernetes applications. Provides high level APIs, useful abstr
 **Programs**: operator-sdk
 
 **Install**: `launchpad install operator-sdk`
-
----
-
-### [podman.io](../packages/podman.io/index.md) (podman)
-
-Podman: A tool for managing OCI containers and pods.
-
-**Programs**: podman, podman-remote, podman-mac-helper
-
-**Install**: `launchpad install podman`
 
 ---
 

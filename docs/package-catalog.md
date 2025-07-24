@@ -1,26 +1,26 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1458+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1468+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1458
+- **Total Packages**: 1468
 - **Categories**: 27
-- **Last Updated**: 2025-07-24T11:27:46.104Z
+- **Last Updated**: 2025-07-24T13:37:43.595Z
 
 ## Table of Contents
 
 - [Programming Languages](#programming-languages) (11 packages)
 - [Artificial Intelligence](#artificial-intelligence) (14 packages)
-- [Databases](#databases) (8 packages)
+- [Databases](#databases) (7 packages)
 - [Web Development](#web-development) (1 packages)
-- [DevOps](#devops) (22 packages)
-- [Container & Kubernetes Tools](#container-kubernetes-tools) (21 packages)
+- [DevOps](#devops) (21 packages)
+- [Container & Kubernetes Tools](#container-kubernetes-tools) (20 packages)
 - [Monitoring & Observability](#monitoring-observability) (3 packages)
 - [Build Tools & Automation](#build-tools-automation) (13 packages)
-- [Package Managers](#package-managers) (16 packages)
+- [Package Managers](#package-managers) (10 packages)
 - [Editors & IDEs](#editors-ides) (8 packages)
 - [CLI Tools & Utilities](#cli-tools-utilities) (32 packages)
 - [Networking](#networking) (7 packages)
@@ -53,8 +53,8 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[lua.org](./packages/lua.org/index.md)** () | Powerful, lightweight programming language | lua, luac | 5.4.8 (+3) | `pkgx lua` |
 | **[luajit.org](./packages/luajit.org/index.md)** () | Mirror of the LuaJIT git repository | luajit, luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;. | 2.1.0 (+0) | `pkgx luajit` |
 | **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 24.4.1 (+144) | `pkgx node` |
-| **[php.net](./packages/php.net/index.md)** (php) | General-purpose scripting language | pear, pecl, phar, ... (+5) | 8.4.10 (+76) | `pkgx php` |
-| **[python.org](./packages/python.org/index.md)** (py) | The Python programming language | python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace; | 3.13.5 (+150) | `pkgx py` |
+| **[php.net](./packages/php.net/index.md)** | Package from pantry: php.net | - | latest | `pkgx php.net` |
+| **[python.org](./packages/python.org/index.md)** | Package from pantry: python.org | - | latest | `pkgx python.org` |
 | **[ruby-lang.org](./packages/ruby-lang.org/index.md)** | Package from pantry: ruby-lang.org | - | latest | `pkgx ruby-lang.org` |
 | **[tcl.tk/tcl](./packages/tcl.tk/tcl/index.md)** | Package from pantry: tcl.tk/tcl | - | latest | `pkgx tcl` |
 
@@ -81,7 +81,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Databases
 
-*8 packages in this category*
+*7 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -92,7 +92,6 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[litecli.com](./packages/litecli.com/index.md)** () | CLI for SQLite Databases with auto-completion and syntax highlighting | litecli | 1.15.0 (+14) | `pkgx litecli` |
 | **[mongodb.com/shell](./packages/mongodb.com/shell/index.md)** () | MongoDB Shell to connect, configure, query, and work with your MongoDB database | mongosh | 2.5.6 (+36) | `pkgx mongosh` |
 | **[opensearch.org](./packages/opensearch.org/index.md)** () | 🔎 Open source distributed and RESTful search engine. | opensearch, opensearch-keystore, opensearch-plugin, ... (+1) | 3.0.0 (+10) | `pkgx opensearch` |
-| **[postgrest.org](./packages/postgrest.org/index.md)** () | Serves a fully RESTful API from any existing PostgreSQL database | postgrest | 13.0.4 (+14) | `pkgx postgrest` |
 
 ## Web Development
 
@@ -104,7 +103,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## DevOps
 
-*22 packages in this category*
+*21 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -129,11 +128,10 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[nomadproject.io](./packages/nomadproject.io/index.md)** () | Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of ... | nomad | 1.10.3 (+14) | `pkgx nomad` |
 | **[opentofu.org](./packages/opentofu.org/index.md)** () | OpenTofu lets you declaratively manage your cloud infrastructure. | tofu | 1.9.2 (+25) | `pkgx tofu` |
 | **[packer.io](./packages/packer.io/index.md)** () | Packer is a tool for creating identical machine images for multiple platforms from a single sourc... | packer | 1.13.1 (+12) | `pkgx packer` |
-| **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.5.2 (+39) | `pkgx podman` |
 
 ## Container & Kubernetes Tools
 
-*21 packages in this category*
+*20 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -157,7 +155,6 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[kubeshark.co](./packages/kubeshark.co/index.md)** () | The API traffic analyzer for Kubernetes providing real-time K8s protocol-level visibility, captur... | kubeshark | 72.3.83 (+56) | `pkgx kubeshark` |
 | **[linkerd.io/linkerd2](./packages/linkerd.io/linkerd2/index.md)** () | Ultralight, security-first service mesh for Kubernetes. Main repo for Linkerd 2.x. | linkerd | 2.14.10 (+8) | `pkgx linkerd` |
 | **[operatorframework.io/operator-sdk](./packages/operatorframework.io/operator-sdk/index.md)** () | SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and proj... | operator-sdk | 1.41.1 (+15) | `pkgx operator-sdk` |
-| **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.5.2 (+39) | `pkgx podman` |
 
 ## Monitoring & Observability
 
@@ -187,11 +184,11 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[maven.apache.org](./packages/maven.apache.org/index.md)** () | Java-based project management | mvn, mvnDebug, mvnyjp | 3.9.11 (+11) | `pkgx mvn` |
 | **[mesonbuild.com](./packages/mesonbuild.com/index.md)** () | Fast and user friendly build system | meson | 1.8.2 (+27) | `pkgx meson` |
 | **[ninja-build.org](./packages/ninja-build.org/index.md)** () | Small build system for use with gyp or CMake | ninja | 1.13.1 (+5) | `pkgx ninja` |
-| **[pantsbuild.org/scie-pants](./packages/pantsbuild.org/scie-pants/index.md)** (pants) | Protects your Pants from the elements. | pants | 0.12.5 (+4) | `pkgx pants` |
+| **[pantsbuild.org/scie-pants](./packages/pantsbuild.org/scie-pants/index.md)** | Package from pantry: pantsbuild.org/scie-pants | - | latest | `pkgx scie-pants` |
 
 ## Package Managers
 
-*16 packages in this category*
+*10 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -204,12 +201,6 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[nixpacks.com](./packages/nixpacks.com/index.md)** () | App source + Nix packages + Docker = Image | nixpacks | 1.39.0 (+32) | `pkgx nixpacks` |
 | **[nodejs.org/corepack](./packages/nodejs.org/corepack/index.md)** () | Platform built on V8 to build network applications | corepack | 0.34.0 (+12) | `pkgx corepack` |
 | **[npmjs.com](./packages/npmjs.com/index.md)** (npm) | the package manager for JavaScript | npm, npx | 11.4.2 (+60) | `pkgx npm` |
-| **[pdm.fming.dev](./packages/pdm.fming.dev/index.md)** () | A modern Python package and dependency manager supporting the latest PEP standards | pdm | 2.25.4 (+69) | `pkgx pdm` |
-| **[pip.pypa.io](./packages/pip.pypa.io/index.md)** () | The Python package installer | pip, pip3.8, pip3.9, ... (+2) | 25.1.1 (+26) | `pkgx pip` |
-| **[pipenv.pypa.io](./packages/pipenv.pypa.io/index.md)** () | Python Development Workflow for Humans. | pipenv | 3000.0.0 (+48) | `pkgx pipenv` |
-| **[pkgx.sh](./packages/pkgx.sh/index.md)** () | Standalone binary that can run anything | pkgx | 2.7.0 (+34) | `pkgx pkgx` |
-| **[pnpm.io](./packages/pnpm.io/index.md)** () | Fast, disk space efficient package manager | pnpm, pnpx | 10.13.1 (+169) | `pkgx pnpm` |
-| **[python-poetry.org](./packages/python-poetry.org/index.md)** () | Python packaging and dependency management made easy | poetry | 2.1.3 (+20) | `pkgx poetry` |
 | **[rust-lang.org/cargo](./packages/rust-lang.org/cargo/index.md)** | Package from pantry: rust-lang.org/cargo | - | latest | `pkgx cargo` |
 
 ## Editors & IDEs
@@ -337,8 +328,8 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.160 (+416) | `pkgx fly` |
 | **[heroku.com](./packages/heroku.com/index.md)** () | CLI for Heroku | heroku | 10.12.0 (+34) | `pkgx heroku` |
 | **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.6.0 (+22) | `pkgx localstack` |
-| **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.247.0 (+70) | `pkgx pscale` |
-| **[railway.app](./packages/railway.app/index.md)** () | Develop and deploy code with zero configuration | railway | 4.5.5 (+52) | `pkgx railway` |
+| **[planetscale.com](./packages/planetscale.com/index.md)** | Package from pantry: planetscale.com | - | latest | `pkgx planetscale.com` |
+| **[railway.app](./packages/railway.app/index.md)** | Package from pantry: railway.app | - | latest | `pkgx railway.app` |
 | **[render.com](./packages/render.com/index.md)** | Package from pantry: render.com | - | latest | `pkgx render.com` |
 | **[supabase.com/cli](./packages/supabase.com/cli/index.md)** | Package from pantry: supabase.com/cli | - | latest | `pkgx cli` |
 
@@ -359,7 +350,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[pytest.org](./packages/pytest.org/index.md)** () | The pytest framework makes it easy to write small tests, yet scales to support complex functional... | pytest | 8.4.1 (+26) | `pkgx pytest` |
+| **[pytest.org](./packages/pytest.org/index.md)** | Package from pantry: pytest.org | - | latest | `pkgx pytest.org` |
 
 ## Cryptocurrency
 
@@ -379,7 +370,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[raccoin.org](./packages/raccoin.org/index.md)** () | Crypto Portfolio and Tax Reporting Tool | raccoin | 0.2.0 (+1) | `pkgx raccoin` |
+| **[raccoin.org](./packages/raccoin.org/index.md)** | Package from pantry: raccoin.org | - | latest | `pkgx raccoin.org` |
 
 ## Documentation & Text Processing
 
@@ -422,7 +413,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[qemu.org](./packages/qemu.org/index.md)** () | Generic machine emulator and virtualizer | qemu-img, qemu-edid, qemu-io, ... (+31) | 10.0.2 (+51) | `pkgx qemu` |
+| **[qemu.org](./packages/qemu.org/index.md)** | Package from pantry: qemu.org | - | latest | `pkgx qemu.org` |
 
 ## Version Control
 

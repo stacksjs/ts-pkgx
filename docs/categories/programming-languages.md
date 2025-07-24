@@ -76,23 +76,23 @@ Platform built on V8 to build network applications
 
 ---
 
-### [php.net](../packages/php.net/index.md) (php)
+### [php.net](../packages/php.net/index.md)
 
-General-purpose scripting language
+Package from pantry: php.net
 
-**Programs**: pear, pecl, phar, php, php-cgi, php-config, phpdbg, phpize
+**Programs**: None specified
 
-**Install**: `launchpad install php`
+**Install**: `launchpad install php.net`
 
 ---
 
-### [python.org](../packages/python.org/index.md) (python, py)
+### [python.org](../packages/python.org/index.md)
 
-The Python programming language
+Package from pantry: python.org
 
-**Programs**: python, python3, python3.13
+**Programs**: None specified
 
-**Install**: `launchpad install py`
+**Install**: `launchpad install python.org`
 
 ---
 
