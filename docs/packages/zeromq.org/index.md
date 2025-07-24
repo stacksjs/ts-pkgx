@@ -1,6 +1,6 @@
 # zeromq.org
 
-> Package from pantry: zeromq.org
+> ZeroMQ core engine in C++, implements ZMTP/3.1
 
 ## Package Information
 
@@ -21,6 +21,24 @@ launchpad install zeromq.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `4.3.5`, `4.3.4`
+
+</details>
+
+**Latest Version**: `4.3.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +zeromq.org@4.3.5 -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# potrace
+# sf.net/potrace
 
-> Package from pantry: sourceforge.net/potrace
+> Convert bitmaps to vector graphics
 
 ## Package Information
 
 - **Domain**: `sourceforge.net/potrace`
-- **Name**: `potrace`
+- **Name**: `sf.net/potrace`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/potrace/package.yml)
 
@@ -20,7 +20,26 @@ launchpad install sourceforge.net/potrace
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `potrace`
+- `mkbitmap`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.16.0`
+
+</details>
+
+**Latest Version**: `1.16.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +sourceforge.net/potrace@1.16.0 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.potrace
+const pkg = pantry['sf.net/potrace']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

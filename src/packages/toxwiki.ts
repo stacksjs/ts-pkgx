@@ -1,28 +1,38 @@
 /**
- * **tox.wiki** - Package from pantry: tox.wiki
+ * **tox** - Command line driven CI frontend and development task automation tool.
  *
  * @domain `tox.wiki`
+ * @programs `tox`
+ * @version `4.28.1` (18 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install tox.wiki`
+ * @install `launchpad install tox`
+ * @name `tox`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.toxwiki
- * console.log(pkg.name)        // "tox.wiki"
- * console.log(pkg.description) // "Package from pantry: tox.wiki"
+ * // Access the package
+ * const pkg = pantry.tox
+ * // Or access via domain
+ * const samePkg = pantry.toxwiki
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "tox"
+ * console.log(pkg.description) // "Command line driven CI frontend and development..."
+ * console.log(pkg.programs)    // ["tox"]
+ * console.log(pkg.versions[0]) // "4.28.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tox-wiki.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const toxwikiPackage = {
+export const toxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tox.wiki' as const,
+  name: 'tox' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +40,22 @@ export const toxwikiPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: tox.wiki' as const,
+  description: 'Command line driven CI frontend and development task automation tool.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tox.wiki/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tox.wiki' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tox.wiki -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tox.wiki' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install tox' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'tox',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,37 @@ export const toxwikiPackage = {
   dependencies: [
     'pkgx.sh^1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tox.wiki/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '4.28.1',
+    '4.28.0',
+    '4.27.0',
+    '4.26.0',
+    '4.25.0',
+    '4.24.2',
+    '4.24.1',
+    '4.24.0',
+    '4.23.2',
+    '4.23.1',
+    '4.23.0',
+    '4.22.0',
+    '4.21.2',
+    '4.21.1',
+    '4.21.0',
+    '4.20.0',
+    '4.19.0',
+    '4.18.1',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tox -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tox' as const,
 }
 
-export type ToxwikiPackage = typeof toxwikiPackage
+export type ToxPackage = typeof toxPackage
