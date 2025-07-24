@@ -229,6 +229,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
   perl: 'perl.org',
   deno: 'deno.land',
   bun: 'bun.sh',
+  'bun.com': 'bun.sh',
   git: 'git-scm.com',
   docker: 'docker.com',
   kubectl: 'kubernetes.io',

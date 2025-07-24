@@ -67,7 +67,13 @@ export const ALIAS_OVERRIDES: AliasOverride[] = [
   },
   {
     domain: 'bun.sh',
-    aliases: ['bun'],
+    aliases: ['bun', 'bun.com'],
+  },
+
+  // S3 tools
+  {
+    domain: 's3tools.org',
+    aliases: ['s3cmd'],
   },
 
   // AWS Tools
