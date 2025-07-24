@@ -1,6 +1,6 @@
 # Security & Cryptography
 
-*12 packages in this category*
+*10 packages in this category*
 
 Packages related to security & cryptography.
 
@@ -103,26 +103,6 @@ Manage your GnuPG keys with ease! 🔐
 **Programs**: gpg-tui
 
 **Install**: `launchpad install gpg-tui`
-
----
-
-### [snyk.io](../packages/snyk.io/index.md) (snyk)
-
-Scans and monitors projects for security vulnerabilities
-
-**Programs**: snyk
-
-**Install**: `launchpad install snyk`
-
----
-
-### [vaultproject.io](../packages/vaultproject.io/index.md) (vault)
-
-A tool for secrets management, encryption as a service, and privileged access management
-
-**Programs**: vault
-
-**Install**: `launchpad install vault`
 
 ---
 

@@ -3,7 +3,7 @@
  *
  * @domain `hashicorp.com/consul-template`
  * @programs `consul-template`
- * @version `0.41.0` (4 versions available)
+ * @version `0.41.1` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install consul-template`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "consul-template"
  * console.log(pkg.description) // "Template rendering, notifier, and supervisor fo..."
  * console.log(pkg.programs)    // ["consul-template"]
- * console.log(pkg.versions[0]) // "0.41.0" (latest)
+ * console.log(pkg.versions[0]) // "0.41.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/hashicorp-com/consul-template.md
@@ -62,6 +62,7 @@ export const consultemplatePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.41.1',
     '0.41.0',
     '0.40.0',
     '0.39.1',
