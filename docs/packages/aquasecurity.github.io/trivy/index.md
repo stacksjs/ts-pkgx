@@ -1,6 +1,6 @@
 # trivy
 
-> Package from pantry: aquasecurity.github.io/trivy
+> Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more
 
 ## Package Information
 
@@ -13,14 +13,39 @@
 
 ```bash
 # Install with launchpad
-launchpad install aquasecurity.github.io/trivy
+launchpad install trivy
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `trivy`
+
+## Available Versions
+
+<details>
+<summary>Show all 38 versions</summary>
+
+- `0.64.1`, `0.64.0`, `0.63.0`, `0.62.1`, `0.62.0`
+- `0.61.1`, `0.61.0`, `0.60.0`, `0.59.1`, `0.59.0`
+- `0.58.2`, `0.58.1`, `0.58.0`, `0.57.1`, `0.57.0`
+- `0.56.2`, `0.56.1`, `0.56.0`, `0.55.2`, `0.55.1`
+- `0.55.0`, `0.54.1`, `0.54.0`, `0.53.0`, `0.52.2`
+- `0.52.1`, `0.52.0`, `0.51.4`, `0.51.2`, `0.51.1`
+- `0.51.0`, `0.50.4`, `0.50.2`, `0.50.1`, `0.50.0`
+- `0.49.1`, `0.49.0`, `0.48.3`
+
+</details>
+
+**Latest Version**: `0.64.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) trivy -- $SHELL -i
+```
 
 ## Dependencies
 

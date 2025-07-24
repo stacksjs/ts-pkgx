@@ -1,23 +1,33 @@
 /**
- * **pop** - Package from pantry: charm.sh/pop
+ * **pop** - Send emails from your terminal 📬
  *
  * @domain `charm.sh/pop`
+ * @programs `pop`
+ * @version `0.2.0` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install charm.sh/pop`
+ * @install `launchpad install pop`
+ * @name `pop`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.charmshpop
+ * // Access the package
+ * const pkg = pantry.pop
+ * // Or access via domain
+ * const samePkg = pantry.charmshpop
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "pop"
- * console.log(pkg.description) // "Package from pantry: charm.sh/pop"
+ * console.log(pkg.description) // "Send emails from your terminal 📬"
+ * console.log(pkg.programs)    // ["pop"]
+ * console.log(pkg.versions[0]) // "0.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/charm-sh/pop.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const charmshpopPackage = {
+export const popPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,39 @@ export const charmshpopPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: charm.sh/pop' as const,
+  description: 'Send emails from your terminal 📬' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/charm.sh/pop/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install charm.sh/pop' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +charm.sh/pop -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install charm.sh/pop' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install pop' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'pop',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/charm.sh/pop/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.2.0',
+    '0.1.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pop -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pop' as const,
 }
 
-export type CharmshpopPackage = typeof charmshpopPackage
+export type PopPackage = typeof popPackage

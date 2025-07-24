@@ -1,6 +1,6 @@
 # gdk-pixbuf
 
-> Package from pantry: gnome.org/gdk-pixbuf
+> Toolkit for image loading and pixel buffer manipulation
 
 ## Package Information
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install gnome.org/gdk-pixbuf
+launchpad install gdk-pixbuf
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gdk-pixbuf-csource`
+- `gdk-pixbuf-pixdata`
+- `gdk-pixbuf-query-loaders`
+- `gdk-pixbuf-thumbnailer`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `2.43.3`, `2.43.2`, `2.42.9`, `2.42.8`
+
+</details>
+
+**Latest Version**: `2.43.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +gnome.org/gdk-pixbuf@2.43.3 -- $SHELL -i
+```
 
 ## Dependencies
 

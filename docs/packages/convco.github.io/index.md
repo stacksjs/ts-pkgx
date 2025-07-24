@@ -1,11 +1,11 @@
-# convco.github.io
+# convco
 
-> Package from pantry: convco.github.io
+> Conventional commits, changelog, versioning, validation
 
 ## Package Information
 
 - **Domain**: `convco.github.io`
-- **Name**: `convco.github.io`
+- **Name**: `convco`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/convco.github.io/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install convco.github.io
+launchpad install convco
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `convco`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `0.6.2`, `0.6.1`, `0.6.0`, `0.5.2`, `0.5.1`
+- `0.5.0`, `0.4.3`, `0.4.2`, `0.4.1`
+
+</details>
+
+**Latest Version**: `0.6.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) convco -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +47,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['convco.github.io']
+const pkg = pantry.convco
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

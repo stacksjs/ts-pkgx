@@ -1,6 +1,6 @@
 # hubble
 
-> Package from pantry: cilium.io/hubble
+> Hubble - Network, Service & Security Observability for Kubernetes using eBPF
 
 ## Package Information
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install cilium.io/hubble
+launchpad install hubble
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `hubble`
+
+## Available Versions
+
+<details>
+<summary>Show all 16 versions</summary>
+
+- `1.17.5`, `1.17.3`, `1.17.2`, `1.17.1`, `1.17.0`
+- `1.16.6`, `1.16.5`, `1.16.4`, `1.16.3`, `1.16.2`
+- `1.16.1`, `1.16.0`, `0.13.6`, `0.13.5`, `0.13.4`
+- `0.13.3`
+
+</details>
+
+**Latest Version**: `1.17.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) hubble -- $SHELL -i
+```
 
 ## Usage Examples
 

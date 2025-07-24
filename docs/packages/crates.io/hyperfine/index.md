@@ -1,6 +1,6 @@
 # hyperfine
 
-> Package from pantry: crates.io/hyperfine
+> A command-line benchmarking tool
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/hyperfine
+launchpad install hyperfine
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `hyperfine`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `1.19.0`, `1.18.0`, `1.17.0`, `1.16.1`, `1.16.0`
+- `1.15.0`, `0.17.0`
+
+</details>
+
+**Latest Version**: `1.19.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) hyperfine -- $SHELL -i
+```
 
 ## Usage Examples
 

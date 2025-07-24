@@ -1,6 +1,6 @@
 # cosign
 
-> Package from pantry: sigstore.dev/cosign
+> Code signing and transparency for containers and binaries
 
 ## Package Information
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install sigstore.dev/cosign
+launchpad install cosign
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cosign`
+
+## Available Versions
+
+<details>
+<summary>Show all 16 versions</summary>
+
+- `2.5.3`, `2.5.2`, `2.5.1`, `2.5.0`, `2.4.3`
+- `2.4.2`, `2.4.1`, `2.4.0`, `2.3.0`, `2.2.4`
+- `2.2.3`, `2.2.2`, `2.2.1`, `2.2.0`, `1.13.6`
+- `1.13.2`
+
+</details>
+
+**Latest Version**: `2.5.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) cosign -- $SHELL -i
+```
 
 ## Usage Examples
 

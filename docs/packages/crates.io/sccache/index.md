@@ -1,6 +1,6 @@
 # sccache
 
-> Package from pantry: crates.io/sccache
+> Sccache is a ccache-like tool. It is used as a compiler wrapper and avoids compilation when possible. Sccache has the capability to utilize caching in remote storage environments, including various cloud storage options, or alternatively, in local storage.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/sccache
+launchpad install sccache
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `sccache`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `0.10.0`, `0.9.1`, `0.9.0`, `0.8.2`, `0.8.1`
+
+</details>
+
+**Latest Version**: `0.10.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) sccache -- $SHELL -i
+```
 
 ## Dependencies
 

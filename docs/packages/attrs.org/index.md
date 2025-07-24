@@ -1,12 +1,12 @@
 # attrs.org
 
-> Package from pantry: attrs.org
+> Python Classes Without Boilerplate
 
 ## Package Information
 
 - **Domain**: `attrs.org`
 - **Name**: `attrs.org`
-- **Homepage**: Not specified
+- **Homepage**: https://www.attrs.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/attrs.org/package.yml)
 
 ## Installation
@@ -21,6 +21,25 @@ launchpad install attrs.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `25.3.0`, `25.2.0`, `25.1.0`, `24.3.0`, `24.2.0`
+- `24.1.0`, `23.2.0`
+
+</details>
+
+**Latest Version**: `25.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +attrs.org@25.3.0 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -44,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/attrs.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.attrs.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

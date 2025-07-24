@@ -1,11 +1,11 @@
-# assimp.org
+# assimp
 
-> Package from pantry: assimp.org
+> The official Open-Asset-Importer-Library Repository. Loads 40+ 3D-file-formats into one unified and clean data structure.
 
 ## Package Information
 
 - **Domain**: `assimp.org`
-- **Name**: `assimp.org`
+- **Name**: `assimp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/assimp.org/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install assimp.org
+launchpad install assimp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `assimp`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `6.0.2`, `6.0.1`, `5.4.3`, `5.4.2`, `5.4.1`
+- `5.4.0`, `5.3.1`, `5.3.0`, `5.2.5`
+
+</details>
+
+**Latest Version**: `6.0.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) assimp -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['assimp.org']
+const pkg = pantry.assimp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

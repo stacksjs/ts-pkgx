@@ -1,11 +1,11 @@
-# subversion
+# svn
 
-> Package from pantry: apache.org/subversion
+> Version control system designed to be a better CVS
 
 ## Package Information
 
 - **Domain**: `apache.org/subversion`
-- **Name**: `subversion`
+- **Name**: `svn`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/subversion/package.yml)
 
@@ -13,14 +13,42 @@
 
 ```bash
 # Install with launchpad
-launchpad install apache.org/subversion
+launchpad install svn
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `svn`
+- `svnadmin`
+- `svnbench`
+- `svndumpfilter`
+- `svnfsfs`
+- `svnlook`
+- `svnmucc`
+- `svnrdump`
+- `svnserve`
+- `svnsync`
+- `svnversion`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.14.5`, `1.14.4`, `1.14.3`, `1.14.2`
+
+</details>
+
+**Latest Version**: `1.14.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +apache.org/subversion@1.14.5 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -44,7 +72,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.subversion
+const pkg = pantry.svn
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

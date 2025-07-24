@@ -1,48 +1,98 @@
 # Networking
 
-*4 packages in this category*
+*9 packages in this category*
 
 Network tools, protocols, and communication software.
 
 ## Packages
 
-### [apache.org/httpd](../packages/apache.org/httpd/index.md) (httpd)
+### [apache.org/httpd](../packages/apache.org/httpd/index.md)
 
-Package from pantry: apache.org/httpd
+Apache HTTP server
 
-**Programs**: None specified
+**Programs**: ab, apachectl, checkgid, fcgistarter, htcacheclean, htdbm, htdigest, htpasswd, httpd, httxt2dbm, logresolve, rotatelogs, suexec
 
 **Install**: `launchpad install apache.org/httpd`
 
 ---
 
-### [cloudflare.com/cloudflared](../packages/cloudflare.com/cloudflared/index.md) (cloudflared)
+### [caddyserver.com](../packages/caddyserver.com/index.md) (caddy)
 
-Package from pantry: cloudflare.com/cloudflared
+Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
 
-**Programs**: None specified
+**Programs**: caddy
 
-**Install**: `launchpad install cloudflare.com/cloudflared`
+**Install**: `launchpad install caddy`
 
 ---
 
-### [curl.se](../packages/curl.se/index.md)
+### [cloudflare.com/cloudflared](../packages/cloudflare.com/cloudflared/index.md) (cloudflared)
 
-Package from pantry: curl.se
+Cloudflare Tunnel client (formerly Argo Tunnel)
 
-**Programs**: None specified
+**Programs**: cloudflared
 
-**Install**: `launchpad install curl.se`
+**Install**: `launchpad install cloudflared`
+
+---
+
+### [curl.se](../packages/curl.se/index.md) (cURL, curl)
+
+A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features
+
+**Programs**: curl, curl-config
+
+**Install**: `launchpad install curl`
 
 ---
 
 ### [gnu.org/wget](../packages/gnu.org/wget/index.md) (wget)
 
-Package from pantry: gnu.org/wget
+Internet file retriever
 
-**Programs**: None specified
+**Programs**: wget
 
-**Install**: `launchpad install gnu.org/wget`
+**Install**: `launchpad install wget`
+
+---
+
+### [mosh.org](../packages/mosh.org/index.md) (mosh)
+
+Remote terminal application
+
+**Programs**: mosh-client, mosh-server
+
+**Install**: `launchpad install mosh`
+
+---
+
+### [nginx.org](../packages/nginx.org/index.md) (nginx)
+
+HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+
+**Programs**: nginx
+
+**Install**: `launchpad install nginx`
+
+---
+
+### [rsync.samba.org](../packages/rsync.samba.org/index.md) (rsync)
+
+An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases.
+
+**Programs**: rsync, rsync-ssl
+
+**Install**: `launchpad install rsync`
+
+---
+
+### [traefik.io](../packages/traefik.io/index.md) (traefik)
+
+The Cloud Native Application Proxy
+
+**Programs**: traefik
+
+**Install**: `launchpad install traefik`
 
 ---
 

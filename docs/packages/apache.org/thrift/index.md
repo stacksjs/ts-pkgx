@@ -1,6 +1,6 @@
 # thrift
 
-> Package from pantry: apache.org/thrift
+> Framework for scalable cross-language services development
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install apache.org/thrift
+launchpad install thrift
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `thrift`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `0.22.0`, `0.21.0`, `0.20.0`, `0.19.0`, `0.18.1`
+
+</details>
+
+**Latest Version**: `0.22.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) thrift -- $SHELL -i
+```
 
 ## Dependencies
 

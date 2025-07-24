@@ -1,28 +1,38 @@
 /**
- * **chompbuild.com** - Package from pantry: chompbuild.com
+ * **chomp** - 'JS Make' - parallel task runner for the frontend ecosystem with a JS extension system.
  *
  * @domain `chompbuild.com`
+ * @programs `chomp`
+ * @version `0.2.23` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install chompbuild.com`
+ * @install `launchpad install chomp`
+ * @name `chomp`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.chompbuildcom
- * console.log(pkg.name)        // "chompbuild.com"
- * console.log(pkg.description) // "Package from pantry: chompbuild.com"
+ * // Access the package
+ * const pkg = pantry.chomp
+ * // Or access via domain
+ * const samePkg = pantry.chompbuildcom
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "chomp"
+ * console.log(pkg.description) // "'JS Make' - parallel task runner for the fronte..."
+ * console.log(pkg.programs)    // ["chomp"]
+ * console.log(pkg.versions[0]) // "0.2.23" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/chompbuild-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const chompbuildcomPackage = {
+export const chompPackage = {
   /**
    * The display name of this package.
    */
-  name: 'chompbuild.com' as const,
+  name: 'chomp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +40,22 @@ export const chompbuildcomPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: chompbuild.com' as const,
+  description: '\'JS Make\' - parallel task runner for the frontend ecosystem with a JS extension system.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/chompbuild.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install chompbuild.com' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +chompbuild.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install chompbuild.com' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install chomp' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'chomp',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,20 @@ export const chompbuildcomPackage = {
   dependencies: [
     'openssl.org^1.1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/chompbuild.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.2.23',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) chomp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install chomp' as const,
 }
 
-export type ChompbuildcomPackage = typeof chompbuildcomPackage
+export type ChompPackage = typeof chompPackage

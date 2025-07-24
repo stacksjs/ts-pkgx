@@ -1,28 +1,38 @@
 /**
- * **asciinema.org** - Package from pantry: asciinema.org
+ * **asciinema** - Record and share terminal sessions
  *
  * @domain `asciinema.org`
+ * @programs `asciinema`
+ * @version `2.4.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install asciinema.org`
+ * @install `launchpad install asciinema`
+ * @name `asciinema`
  * @dependencies `python.org^3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.asciinemaorg
- * console.log(pkg.name)        // "asciinema.org"
- * console.log(pkg.description) // "Package from pantry: asciinema.org"
+ * // Access the package
+ * const pkg = pantry.asciinema
+ * // Or access via domain
+ * const samePkg = pantry.asciinemaorg
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "asciinema"
+ * console.log(pkg.description) // "Record and share terminal sessions"
+ * console.log(pkg.programs)    // ["asciinema"]
+ * console.log(pkg.versions[0]) // "2.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/asciinema-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const asciinemaorgPackage = {
+export const asciinemaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'asciinema.org' as const,
+  name: 'asciinema' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +40,22 @@ export const asciinemaorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: asciinema.org' as const,
+  description: 'Record and share terminal sessions' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/asciinema.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install asciinema.org' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +asciinema.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install asciinema.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install asciinema' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'asciinema',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,20 @@ export const asciinemaorgPackage = {
   dependencies: [
     'python.org^3.12',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/asciinema.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.4.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) asciinema -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install asciinema' as const,
 }
 
-export type AsciinemaorgPackage = typeof asciinemaorgPackage
+export type AsciinemaPackage = typeof asciinemaPackage

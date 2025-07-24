@@ -1,11 +1,11 @@
-# rome.tools
+# rome
 
-> Package from pantry: rome.tools
+> Unified developer tools for JavaScript, TypeScript, and the web
 
 ## Package Information
 
 - **Domain**: `rome.tools`
-- **Name**: `rome.tools`
+- **Name**: `rome`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rome.tools/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install rome.tools
+launchpad install rome
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `rome`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.4.2`
+
+</details>
+
+**Latest Version**: `0.4.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) rome -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rome.tools']
+const pkg = pantry.rome
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

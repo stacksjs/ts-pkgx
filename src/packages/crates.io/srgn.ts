@@ -1,23 +1,33 @@
 /**
- * **srgn** - Package from pantry: crates.io/srgn
+ * **srgn** - A grep-like tool which understands source code syntax and allows for manipulation in addition to search
  *
  * @domain `crates.io/srgn`
+ * @programs `srgn`
+ * @version `0.10.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install crates.io/srgn`
+ * @install `launchpad install srgn`
+ * @name `srgn`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cratesiosrgn
+ * // Access the package
+ * const pkg = pantry.srgn
+ * // Or access via domain
+ * const samePkg = pantry.cratesiosrgn
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "srgn"
- * console.log(pkg.description) // "Package from pantry: crates.io/srgn"
+ * console.log(pkg.description) // "A grep-like tool which understands source code ..."
+ * console.log(pkg.programs)    // ["srgn"]
+ * console.log(pkg.versions[0]) // "0.10.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/srgn.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cratesiosrgnPackage = {
+export const srgnPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,38 @@ export const cratesiosrgnPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: crates.io/srgn' as const,
+  description: 'A grep-like tool which understands source code syntax and allows for manipulation in addition to search' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/srgn/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install crates.io/srgn' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/srgn -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/srgn' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install srgn' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'srgn',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/srgn/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.10.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) srgn -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install srgn' as const,
 }
 
-export type CratesiosrgnPackage = typeof cratesiosrgnPackage
+export type SrgnPackage = typeof srgnPackage

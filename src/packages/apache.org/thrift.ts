@@ -1,24 +1,34 @@
 /**
- * **thrift** - Package from pantry: apache.org/thrift
+ * **thrift** - Framework for scalable cross-language services development
  *
  * @domain `apache.org/thrift`
+ * @programs `thrift`
+ * @version `0.22.0` (5 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install apache.org/thrift`
+ * @install `launchpad install thrift`
+ * @name `thrift`
  * @dependencies `openssl.org@1.1`, `zlib.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.apacheorgthrift
+ * // Access the package
+ * const pkg = pantry.thrift
+ * // Or access via domain
+ * const samePkg = pantry.apacheorgthrift
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "thrift"
- * console.log(pkg.description) // "Package from pantry: apache.org/thrift"
+ * console.log(pkg.description) // "Framework for scalable cross-language services ..."
+ * console.log(pkg.programs)    // ["thrift"]
+ * console.log(pkg.versions[0]) // "0.22.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/apache-org/thrift.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const apacheorgthriftPackage = {
+export const thriftPackage = {
   /**
    * The display name of this package.
    */
@@ -30,15 +40,22 @@ export const apacheorgthriftPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: apache.org/thrift' as const,
+  description: 'Framework for scalable cross-language services development' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/thrift/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install apache.org/thrift' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/thrift -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install apache.org/thrift' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install thrift' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'thrift',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -48,10 +65,24 @@ export const apacheorgthriftPackage = {
     'openssl.org@1.1',
     'zlib.net',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/thrift/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.22.0',
+    '0.21.0',
+    '0.20.0',
+    '0.19.0',
+    '0.18.1',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) thrift -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install thrift' as const,
 }
 
-export type ApacheorgthriftPackage = typeof apacheorgthriftPackage
+export type ThriftPackage = typeof thriftPackage

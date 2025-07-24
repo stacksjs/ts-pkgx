@@ -1,11 +1,11 @@
-# samtools
+# htslib.org/samtools
 
-> Package from pantry: htslib.org/samtools
+> Tools (written in C using htslib) for manipulating next-generation sequencing data
 
 ## Package Information
 
 - **Domain**: `htslib.org/samtools`
-- **Name**: `samtools`
+- **Name**: `htslib.org/samtools`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/htslib.org/samtools/package.yml)
 
@@ -20,7 +20,47 @@ launchpad install htslib.org/samtools
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ace2sam`
+- `blast2sam.pl`
+- `bowtie2sam.pl`
+- `export2sam.pl`
+- `fasta-sanitize.pl`
+- `interpolate_sam.pl`
+- `maq2sam-long`
+- `maq2sam-short`
+- `md5fa`
+- `md5sum-lite`
+- `novo2sam.pl`
+- `plot-ampliconstats`
+- `plot-bamstats`
+- `psl2sam.pl`
+- `sam2vcf.pl`
+- `samtools`
+- `samtools.pl`
+- `seq_cache_populate.pl`
+- `soap2sam.pl`
+- `wgsim`
+- `wgsim_eval.pl`
+- `zoom2sam.pl`
+
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `1.22.1`, `1.22.0`, `1.21.0`, `1.20.0`, `1.19.2`
+- `1.19.1`, `1.19.0`, `1.18.0`
+
+</details>
+
+**Latest Version**: `1.22.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +htslib.org/samtools@1.22.1 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -36,7 +76,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.samtools
+const pkg = pantry['htslib.org/samtools']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

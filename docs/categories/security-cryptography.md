@@ -1,68 +1,128 @@
 # Security & Cryptography
 
-*6 packages in this category*
+*12 packages in this category*
 
 Packages related to security & cryptography.
 
 ## Packages
 
+### [agwa.name/git-crypt](../packages/agwa.name/git-crypt/index.md) (git-crypt)
+
+Enable transparent encryption/decryption of files in a git repo
+
+**Programs**: git-crypt
+
+**Install**: `launchpad install git-crypt`
+
+---
+
 ### [aquasecurity.github.io/tfsec](../packages/aquasecurity.github.io/tfsec/index.md) (tfsec)
 
-Package from pantry: aquasecurity.github.io/tfsec
+Static analysis security scanner for your terraform code
 
-**Programs**: None specified
+**Programs**: tfsec
 
-**Install**: `launchpad install aquasecurity.github.io/tfsec`
+**Install**: `launchpad install tfsec`
 
 ---
 
 ### [aquasecurity.github.io/trivy](../packages/aquasecurity.github.io/trivy/index.md) (trivy)
 
-Package from pantry: aquasecurity.github.io/trivy
+Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more
 
-**Programs**: None specified
+**Programs**: trivy
 
-**Install**: `launchpad install aquasecurity.github.io/trivy`
+**Install**: `launchpad install trivy`
 
 ---
 
-### [developer.1password.com/1password-cli](../packages/developer.1password.com/1password-cli/index.md) (1password-cli)
+### [certbot.eff.org](../packages/certbot.eff.org/index.md) (certbot)
 
-Package from pantry: developer.1password.com/1password-cli
+Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server. It can also act as a client for any other CA that uses the ACME protocol.
 
-**Programs**: None specified
+**Programs**: certbot
 
-**Install**: `launchpad install developer.1password.com/1password-cli`
+**Install**: `launchpad install certbot`
+
+---
+
+### [checkov.io](../packages/checkov.io/index.md) (checkov)
+
+Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages with Checkov by Bridgecrew.
+
+**Programs**: checkov
+
+**Install**: `launchpad install checkov`
 
 ---
 
 ### [filippo.io/age](../packages/filippo.io/age/index.md) (age)
 
-Package from pantry: filippo.io/age
+A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability.
 
-**Programs**: None specified
+**Programs**: age, age-keygen
 
-**Install**: `launchpad install filippo.io/age`
+**Install**: `launchpad install age`
 
 ---
 
 ### [filippo.io/yubikey-agent](../packages/filippo.io/yubikey-agent/index.md) (yubikey-agent)
 
-Package from pantry: filippo.io/yubikey-agent
+Seamless ssh-agent for YubiKeys and other PIV tokens
 
-**Programs**: None specified
+**Programs**: yubikey-agent
 
-**Install**: `launchpad install filippo.io/yubikey-agent`
+**Install**: `launchpad install yubikey-agent`
+
+---
+
+### [mkcert.dev](../packages/mkcert.dev/index.md) (mkcert)
+
+A simple zero-config tool to make locally trusted development certificates with any names you'd like.
+
+**Programs**: mkcert
+
+**Install**: `launchpad install mkcert`
+
+---
+
+### [openssl.org](../packages/openssl.org/index.md) (OpenSSL)
+
+TLS/SSL and crypto library with QUIC APIs
+
+**Programs**: openssl, c_rehash
+
+**Install**: `launchpad install OpenSSL`
 
 ---
 
 ### [orhun.dev/gpg-tui](../packages/orhun.dev/gpg-tui/index.md) (gpg-tui)
 
-Package from pantry: orhun.dev/gpg-tui
+Manage your GnuPG keys with ease! 🔐
 
-**Programs**: None specified
+**Programs**: gpg-tui
 
-**Install**: `launchpad install orhun.dev/gpg-tui`
+**Install**: `launchpad install gpg-tui`
+
+---
+
+### [snyk.io](../packages/snyk.io/index.md) (snyk)
+
+Scans and monitors projects for security vulnerabilities
+
+**Programs**: snyk
+
+**Install**: `launchpad install snyk`
+
+---
+
+### [vaultproject.io](../packages/vaultproject.io/index.md) (vault)
+
+A tool for secrets management, encryption as a service, and privileged access management
+
+**Programs**: vault
+
+**Install**: `launchpad install vault`
 
 ---
 

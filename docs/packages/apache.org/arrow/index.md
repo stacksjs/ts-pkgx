@@ -1,11 +1,11 @@
-# arrow
+# apache.org/arrow
 
-> Package from pantry: apache.org/arrow
+> Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics
 
 ## Package Information
 
 - **Domain**: `apache.org/arrow`
-- **Name**: `arrow`
+- **Name**: `apache.org/arrow`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/arrow/package.yml)
 
@@ -20,7 +20,29 @@ launchpad install apache.org/arrow
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `parquet-dump-schema`
+- `parquet-reader`
+- `parquet-scan`
+
+## Available Versions
+
+<details>
+<summary>Show all 15 versions</summary>
+
+- `21.0.0`, `20.0.0`, `19.0.1`, `19.0.0`, `18.1.0`
+- `18.0.0`, `16.1.0`, `16.0.0`, `15.0.2`, `15.0.1`
+- `15.0.0`, `14.0.2`, `14.0.1`, `14.0.0`, `13.0.0`
+
+</details>
+
+**Latest Version**: `21.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +apache.org/arrow@21.0.0 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -49,7 +71,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.arrow
+const pkg = pantry['apache.org/arrow']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,11 +1,11 @@
-# apktool.org
+# apktool
 
-> Package from pantry: apktool.org
+> Tool for reverse engineering 3rd party, closed, binary Android apps
 
 ## Package Information
 
 - **Domain**: `apktool.org`
-- **Name**: `apktool.org`
+- **Name**: `apktool`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apktool.org/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install apktool.org
+launchpad install apktool
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `apktool`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `2.12.0`, `2.11.1`, `2.11.0`, `2.10.0`, `2.9.3`
+
+</details>
+
+**Latest Version**: `2.12.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) apktool -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['apktool.org']
+const pkg = pantry.apktool
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

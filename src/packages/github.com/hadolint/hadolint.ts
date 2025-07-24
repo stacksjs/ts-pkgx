@@ -1,23 +1,33 @@
 /**
- * **hadolint** - Package from pantry: github.com/hadolint/hadolint
+ * **hadolint** - Dockerfile linter, validate inline bash, written in Haskell
  *
  * @domain `github.com/hadolint/hadolint`
+ * @programs `hadolint`
+ * @version `2.12.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/hadolint/hadolint`
+ * @install `launchpad install hadolint`
+ * @name `hadolint`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomhadolinthadolint
+ * // Access the package
+ * const pkg = pantry.hadolint
+ * // Or access via domain
+ * const samePkg = pantry.githubcomhadolinthadolint
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "hadolint"
- * console.log(pkg.description) // "Package from pantry: github.com/hadolint/hadolint"
+ * console.log(pkg.description) // "Dockerfile linter, validate inline bash, writte..."
+ * console.log(pkg.programs)    // ["hadolint"]
+ * console.log(pkg.versions[0]) // "2.12.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/hadolint/hadolint.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomhadolinthadolintPackage = {
+export const hadolintPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,38 @@ export const githubcomhadolinthadolintPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/hadolint/hadolint' as const,
+  description: 'Dockerfile linter, validate inline bash, written in Haskell' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/hadolint/hadolint/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/hadolint/hadolint' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/hadolint/hadolint -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/hadolint/hadolint' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install hadolint' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'hadolint',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/hadolint/hadolint/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.12.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hadolint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hadolint' as const,
 }
 
-export type GithubcomhadolinthadolintPackage = typeof githubcomhadolinthadolintPackage
+export type HadolintPackage = typeof hadolintPackage

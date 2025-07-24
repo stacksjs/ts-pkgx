@@ -1,23 +1,33 @@
 /**
- * **pik** - Package from pantry: crates.io/pik
+ * **pik** - Process Interactive Kill
  *
  * @domain `crates.io/pik`
+ * @programs `pik`
+ * @version `0.25.0` (12 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install crates.io/pik`
+ * @install `launchpad install pik`
+ * @name `pik`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cratesiopik
+ * // Access the package
+ * const pkg = pantry.pik
+ * // Or access via domain
+ * const samePkg = pantry.cratesiopik
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "pik"
- * console.log(pkg.description) // "Package from pantry: crates.io/pik"
+ * console.log(pkg.description) // "Process Interactive Kill"
+ * console.log(pkg.programs)    // ["pik"]
+ * console.log(pkg.versions[0]) // "0.25.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/pik.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cratesiopikPackage = {
+export const pikPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,49 @@ export const cratesiopikPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: crates.io/pik' as const,
+  description: 'Process Interactive Kill' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/pik/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install crates.io/pik' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/pik -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/pik' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install pik' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'pik',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/pik/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.25.0',
+    '0.24.0',
+    '0.23.1',
+    '0.23.0',
+    '0.22.0',
+    '0.21.0',
+    '0.20.0',
+    '0.19.0',
+    '0.18.1',
+    '0.18.0',
+    '0.17.0',
+    '0.16.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pik -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pik' as const,
 }
 
-export type CratesiopikPackage = typeof cratesiopikPackage
+export type PikPackage = typeof pikPackage

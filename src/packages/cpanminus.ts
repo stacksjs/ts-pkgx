@@ -1,28 +1,38 @@
 /**
- * **cpanmin.us** - Package from pantry: cpanmin.us
+ * **cpanm** - cpanminus - get, unpack, build and install modules from CPAN
  *
  * @domain `cpanmin.us`
+ * @programs `cpanm`
+ * @version `1.7048.0` (3 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install cpanmin.us`
+ * @install `launchpad install cpanm`
+ * @name `cpanm`
  * @dependencies `perl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cpanminus
- * console.log(pkg.name)        // "cpanmin.us"
- * console.log(pkg.description) // "Package from pantry: cpanmin.us"
+ * // Access the package
+ * const pkg = pantry.cpanm
+ * // Or access via domain
+ * const samePkg = pantry.cpanminus
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "cpanm"
+ * console.log(pkg.description) // "cpanminus - get, unpack, build and install modu..."
+ * console.log(pkg.programs)    // ["cpanm"]
+ * console.log(pkg.versions[0]) // "1.7048.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cpanmin-us.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cpanminusPackage = {
+export const cpanmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cpanmin.us' as const,
+  name: 'cpanm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +40,22 @@ export const cpanminusPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: cpanmin.us' as const,
+  description: 'cpanminus - get, unpack, build and install modules from CPAN' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cpanmin.us/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cpanmin.us' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cpanmin.us -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cpanmin.us' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install cpanm' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'cpanm',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,22 @@ export const cpanminusPackage = {
   dependencies: [
     'perl.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cpanmin.us/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.7048.0',
+    '1.7047.0',
+    '1.7046.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cpanm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cpanm' as const,
 }
 
-export type CpanminusPackage = typeof cpanminusPackage
+export type CpanmPackage = typeof cpanmPackage

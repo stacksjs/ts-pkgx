@@ -1,11 +1,11 @@
-# bore.pub
+# bore
 
-> Package from pantry: bore.pub
+> Modern, simple TCP tunnel in Rust that exposes local ports to a remote server
 
 ## Package Information
 
 - **Domain**: `bore.pub`
-- **Name**: `bore.pub`
+- **Name**: `bore`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bore.pub/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install bore.pub
+launchpad install bore
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `bore`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `0.6.0`, `0.5.3`, `0.5.2`, `0.5.1`, `0.5.0`
+
+</details>
+
+**Latest Version**: `0.6.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) bore -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['bore.pub']
+const pkg = pantry.bore
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

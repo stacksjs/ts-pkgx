@@ -1,6 +1,6 @@
 # openplayground
 
-> Package from pantry: github.com/nat/openplayground
+> An LLM playground you can run on your laptop
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/nat/openplayground
+launchpad install openplayground
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `openplayground`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2023.6.5`
+
+</details>
+
+**Latest Version**: `2023.6.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) openplayground -- $SHELL -i
+```
 
 ## Dependencies
 

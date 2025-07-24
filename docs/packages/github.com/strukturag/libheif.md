@@ -1,11 +1,11 @@
-# libheif
+# heif
 
-> Package from pantry: github.com/strukturag/libheif
+> libheif is an HEIF and AVIF file format decoder and encoder.
 
 ## Package Information
 
 - **Domain**: `github.com/strukturag/libheif`
-- **Name**: `libheif`
+- **Name**: `heif`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/strukturag/libheif/package.yml)
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/strukturag/libheif
+launchpad install heif
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `heif-enc`
+- `heif-info`
+- `heif-thumbnailer`
+
+## Available Versions
+
+<details>
+<summary>Show all 22 versions</summary>
+
+- `1.20.1`, `1.20.0`, `1.19.8`, `1.19.7`, `1.19.6`
+- `1.19.5`, `1.19.4`, `1.19.3`, `1.19.2`, `1.19.1`
+- `1.19.0`, `1.18.2`, `1.18.1`, `1.18.0`, `1.17.6`
+- `1.17.5`, `1.17.4`, `1.17.3`, `1.17.2`, `1.17.1`
+- `1.17.0`, `1.16.2`
+
+</details>
+
+**Latest Version**: `1.20.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/strukturag/libheif@1.20.1 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -40,7 +64,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libheif
+const pkg = pantry.heif
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # boost.org
 
-> Package from pantry: boost.org
+> Super-project for modularized Boost
 
 ## Package Information
 
@@ -21,6 +21,25 @@ launchpad install boost.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `1.88.0`, `1.87.0`, `1.86.0`, `1.85.0`, `1.84.0`
+- `1.83.0`, `1.82.0`, `1.81.0`
+
+</details>
+
+**Latest Version**: `1.88.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +boost.org@1.88.0 -- $SHELL -i
+```
 
 ## Dependencies
 

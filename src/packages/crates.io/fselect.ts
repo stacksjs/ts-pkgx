@@ -1,24 +1,34 @@
 /**
- * **fselect** - Package from pantry: crates.io/fselect
+ * **fselect** - Find files with SQL-like queries
  *
  * @domain `crates.io/fselect`
+ * @programs `fselect`
+ * @version `0.9.0` (9 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install crates.io/fselect`
+ * @install `launchpad install fselect`
+ * @name `fselect`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cratesiofselect
+ * // Access the package
+ * const pkg = pantry.fselect
+ * // Or access via domain
+ * const samePkg = pantry.cratesiofselect
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "fselect"
- * console.log(pkg.description) // "Package from pantry: crates.io/fselect"
+ * console.log(pkg.description) // "Find files with SQL-like queries"
+ * console.log(pkg.programs)    // ["fselect"]
+ * console.log(pkg.versions[0]) // "0.9.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/fselect.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cratesiofselectPackage = {
+export const fselectPackage = {
   /**
    * The display name of this package.
    */
@@ -30,15 +40,22 @@ export const cratesiofselectPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: crates.io/fselect' as const,
+  description: 'Find files with SQL-like queries' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/fselect/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install crates.io/fselect' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/fselect -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/fselect' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install fselect' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'fselect',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,28 @@ export const cratesiofselectPackage = {
   dependencies: [
     'openssl.org^1.1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/fselect/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.9.0',
+    '0.8.12',
+    '0.8.11',
+    '0.8.10',
+    '0.8.9',
+    '0.8.8',
+    '0.8.6',
+    '0.8.5',
+    '0.8.4',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fselect -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fselect' as const,
 }
 
-export type CratesiofselectPackage = typeof cratesiofselectPackage
+export type FselectPackage = typeof fselectPackage

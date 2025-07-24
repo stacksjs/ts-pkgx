@@ -1,7 +1,10 @@
 /**
- * **libsixel** - Package from pantry: github.com/libsixel/libsixel
+ * **github.com/libsixel/libsixel** - Mirror of "sixel" original version (kmiya's sixel). The origin of libsixel.
  *
  * @domain `github.com/libsixel/libsixel`
+ * @programs `img2sixel`, `sixel2png`, `libsixel-config`
+ * @version `1.10.3` (1 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/libsixel/libsixel`
  * @dependencies `libjpeg-turbo.org`, `libpng.org`
@@ -11,8 +14,10 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomlibsixellibsixel
- * console.log(pkg.name)        // "libsixel"
- * console.log(pkg.description) // "Package from pantry: github.com/libsixel/libsixel"
+ * console.log(pkg.name)        // "github.com/libsixel/libsixel"
+ * console.log(pkg.description) // "Mirror of "sixel" original version (kmiya's six..."
+ * console.log(pkg.programs)    // ["img2sixel", "sixel2png", ...]
+ * console.log(pkg.versions[0]) // "1.10.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/libsixel/libsixel.md
@@ -22,7 +27,7 @@ export const githubcomlibsixellibsixelPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libsixel' as const,
+  name: 'github.com/libsixel/libsixel' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +35,24 @@ export const githubcomlibsixellibsixelPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/libsixel/libsixel' as const,
+  description: 'Mirror of "sixel" original version (kmiya\'s sixel). The origin of libsixel.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libsixel/libsixel/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/libsixel/libsixel' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/libsixel/libsixel -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/libsixel/libsixel' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'img2sixel',
+    'sixel2png',
+    'libsixel-config',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -48,10 +62,16 @@ export const githubcomlibsixellibsixelPackage = {
     'libjpeg-turbo.org',
     'libpng.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libsixel/libsixel/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.10.3',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/libsixel/libsixel -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/libsixel/libsixel' as const,
 }
 
 export type GithubcomlibsixellibsixelPackage = typeof githubcomlibsixellibsixelPackage

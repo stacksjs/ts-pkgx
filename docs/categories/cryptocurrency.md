@@ -6,21 +6,21 @@ Packages related to cryptocurrency.
 
 ## Packages
 
-### [bitcoin.org](../packages/bitcoin.org/index.md)
+### [bitcoin.org](../packages/bitcoin.org/index.md) (bitcoin)
 
-Package from pantry: bitcoin.org
+Decentralized, peer to peer payment network
 
-**Programs**: None specified
+**Programs**: bitcoin-cli, bitcoin-tx, bitcoin-util, bitcoin-wallet, bitcoind
 
-**Install**: `launchpad install bitcoin.org`
+**Install**: `launchpad install bitcoin`
 
 ---
 
 ### [elementsproject.org](../packages/elementsproject.org/index.md)
 
-Package from pantry: elementsproject.org
+Open Source implementation of advanced blockchain features extending the Bitcoin protocol
 
-**Programs**: None specified
+**Programs**: bench_bitcoin, elements-cli, elements-tx, elements-util, elements-wallet, elementsd, test_bitcoin
 
 **Install**: `launchpad install elementsproject.org`
 
@@ -28,9 +28,9 @@ Package from pantry: elementsproject.org
 
 ### [getfoundry.sh](../packages/getfoundry.sh/index.md)
 
-Package from pantry: getfoundry.sh
+Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.
 
-**Programs**: None specified
+**Programs**: forge, anvil, cast, chisel
 
 **Install**: `launchpad install getfoundry.sh`
 
@@ -38,21 +38,21 @@ Package from pantry: getfoundry.sh
 
 ### [ghostscript.com](../packages/ghostscript.com/index.md)
 
-Package from pantry: ghostscript.com
+This is purely for downloads, please check the website for full information
 
-**Programs**: None specified
+**Programs**: dvipdf, eps2eps, gpcl6, gpcl6c, gpdlc, gs, gsbj, gsc, gsdj, gsdj500, gslj, gslp, gsnd, gsx, gxps, gxpsc, lprsetup.sh, pdf2dsc, pdf2ps, pf2afm, pfbtopfa, pphs, printafm, ps2ascii, ps2epsi, ps2pdf, ps2pdf12, ps2pdf13, ps2pdf14, ps2pdfwr, ps2ps, ps2ps2, unix-lpr.sh
 
 **Install**: `launchpad install ghostscript.com`
 
 ---
 
-### [solana.com](../packages/solana.com/index.md)
+### [solana.com](../packages/solana.com/index.md) (solana)
 
-Package from pantry: solana.com
+Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces.
 
-**Programs**: None specified
+**Programs**: solana, solana-keygen, solana-bench-streamer, solana-faucet, solana-keygen, solana-log-analyzer, solana-net-shaper, solana-stake-accounts, solana-tokens, solana-watchtower
 
-**Install**: `launchpad install solana.com`
+**Install**: `launchpad install solana`
 
 ---
 

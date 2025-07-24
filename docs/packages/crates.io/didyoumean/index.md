@@ -1,11 +1,11 @@
-# didyoumean
+# dym
 
-> Package from pantry: crates.io/didyoumean
+> A CLI spelling corrector for when you're unsure
 
 ## Package Information
 
 - **Domain**: `crates.io/didyoumean`
-- **Name**: `didyoumean`
+- **Name**: `dym`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/didyoumean/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/didyoumean
+launchpad install dym
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `dym`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.1.4`
+
+</details>
+
+**Latest Version**: `1.1.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) dym -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -35,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.didyoumean
+const pkg = pantry.dym
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

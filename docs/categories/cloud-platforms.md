@@ -8,81 +8,81 @@ Packages related to cloud platforms.
 
 ### [aws.amazon.com/sam](../packages/aws.amazon.com/sam/index.md) (sam)
 
-Package from pantry: aws.amazon.com/sam
+CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
 
-**Programs**: None specified
+**Programs**: sam
 
-**Install**: `launchpad install aws.amazon.com/sam`
-
----
-
-### [fly.io](../packages/fly.io/index.md)
-
-Package from pantry: fly.io
-
-**Programs**: None specified
-
-**Install**: `launchpad install fly.io`
+**Install**: `launchpad install sam`
 
 ---
 
-### [heroku.com](../packages/heroku.com/index.md)
+### [fly.io](../packages/fly.io/index.md) (fly)
 
-Package from pantry: heroku.com
+Command line tools for fly.io services
 
-**Programs**: None specified
+**Programs**: fly, flyctl
 
-**Install**: `launchpad install heroku.com`
-
----
-
-### [localstack.cloud/cli](../packages/localstack.cloud/cli/index.md) (cli)
-
-Package from pantry: localstack.cloud/cli
-
-**Programs**: None specified
-
-**Install**: `launchpad install localstack.cloud/cli`
+**Install**: `launchpad install fly`
 
 ---
 
-### [planetscale.com](../packages/planetscale.com/index.md)
+### [heroku.com](../packages/heroku.com/index.md) (heroku)
 
-Package from pantry: planetscale.com
+CLI for Heroku
 
-**Programs**: None specified
+**Programs**: heroku
 
-**Install**: `launchpad install planetscale.com`
-
----
-
-### [railway.app](../packages/railway.app/index.md)
-
-Package from pantry: railway.app
-
-**Programs**: None specified
-
-**Install**: `launchpad install railway.app`
+**Install**: `launchpad install heroku`
 
 ---
 
-### [render.com](../packages/render.com/index.md)
+### [localstack.cloud/cli](../packages/localstack.cloud/cli/index.md) (localstack)
 
-Package from pantry: render.com
+The LocalStack CLI packaged using pyinstaller
 
-**Programs**: None specified
+**Programs**: localstack
 
-**Install**: `launchpad install render.com`
+**Install**: `launchpad install localstack`
 
 ---
 
-### [supabase.com/cli](../packages/supabase.com/cli/index.md) (cli)
+### [planetscale.com](../packages/planetscale.com/index.md) (pscale)
 
-Package from pantry: supabase.com/cli
+The CLI for PlanetScale Database
 
-**Programs**: None specified
+**Programs**: pscale
 
-**Install**: `launchpad install supabase.com/cli`
+**Install**: `launchpad install pscale`
+
+---
+
+### [railway.app](../packages/railway.app/index.md) (railway)
+
+Develop and deploy code with zero configuration
+
+**Programs**: railway
+
+**Install**: `launchpad install railway`
+
+---
+
+### [render.com](../packages/render.com/index.md) (render)
+
+Command-line interface for Render
+
+**Programs**: render
+
+**Install**: `launchpad install render`
+
+---
+
+### [supabase.com/cli](../packages/supabase.com/cli/index.md) (supabase)
+
+Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres backups. Generating types from your database schema.
+
+**Programs**: supabase
+
+**Install**: `launchpad install supabase`
 
 ---
 

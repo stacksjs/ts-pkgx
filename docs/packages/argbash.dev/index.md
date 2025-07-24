@@ -1,11 +1,11 @@
-# argbash.dev
+# argbash
 
-> Package from pantry: argbash.dev
+> Bash argument parsing code generator
 
 ## Package Information
 
 - **Domain**: `argbash.dev`
-- **Name**: `argbash.dev`
+- **Name**: `argbash`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/argbash.dev/package.yml)
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install argbash.dev
+launchpad install argbash
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `argbash`
+- `argbash-init`
+- `argbash-1to2`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `2.11.0`, `2.10.0`
+
+</details>
+
+**Latest Version**: `2.11.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +argbash.dev@2.11.0 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -35,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['argbash.dev']
+const pkg = pantry.argbash
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

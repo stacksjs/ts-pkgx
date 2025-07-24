@@ -1,6 +1,6 @@
 # zoxide
 
-> Package from pantry: crates.io/zoxide
+> Shell extension to navigate your filesystem faster
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/zoxide
+launchpad install zoxide
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `zoxide`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `0.9.8`, `0.9.7`, `0.9.6`, `0.9.5`, `0.9.4`
+- `0.9.3`, `0.9.2`, `0.9.1`, `0.9.0`
+
+</details>
+
+**Latest Version**: `0.9.8`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) zoxide -- $SHELL -i
+```
 
 ## Usage Examples
 

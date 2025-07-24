@@ -1,6 +1,6 @@
 # jnv
 
-> Package from pantry: crates.io/jnv
+> Interactive JSON filter using jq
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/jnv
+launchpad install jnv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `jnv`
+
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `0.6.1`, `0.6.0`, `0.5.0`, `0.4.2`, `0.4.1`
+- `0.4.0`, `0.3.0`, `0.2.3`
+
+</details>
+
+**Latest Version**: `0.6.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) jnv -- $SHELL -i
+```
 
 ## Usage Examples
 

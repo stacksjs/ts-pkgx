@@ -1,6 +1,6 @@
 # vhs
 
-> Package from pantry: charm.sh/vhs
+> Your CLI home video recorder 📼
 
 ## Package Information
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install charm.sh/vhs
+launchpad install vhs
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `vhs`
+
+## Available Versions
+
+<details>
+<summary>Show all 14 versions</summary>
+
+- `0.10.0`, `0.9.0`, `0.8.0`, `0.7.2`, `0.7.1`
+- `0.7.0`, `0.6.0`, `0.5.0`, `0.4.0`, `0.3.0`
+- `0.2.0`, `0.1.1`, `0.1.0`, `0.0.1`
+
+</details>
+
+**Latest Version**: `0.10.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) vhs -- $SHELL -i
+```
 
 ## Dependencies
 

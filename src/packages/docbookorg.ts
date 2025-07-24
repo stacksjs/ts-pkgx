@@ -1,7 +1,9 @@
 /**
- * **docbook.org** - Package from pantry: docbook.org
+ * **docbook.org** - pkgx package
  *
  * @domain `docbook.org`
+ * @version `5.1.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install docbook.org`
  *
@@ -11,7 +13,7 @@
  *
  * const pkg = pantry.docbookorg
  * console.log(pkg.name)        // "docbook.org"
- * console.log(pkg.description) // "Package from pantry: docbook.org"
+ * console.log(pkg.versions[0]) // "5.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/docbook-org.md
@@ -29,21 +31,28 @@ export const docbookorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: docbook.org' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/docbook.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install docbook.org' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +docbook.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install docbook.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/docbook.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '5.1.0',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +docbook.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docbook.org' as const,
 }
 
 export type DocbookorgPackage = typeof docbookorgPackage

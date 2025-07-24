@@ -1,6 +1,6 @@
 # ticker
 
-> Package from pantry: github.com/achannarasappa/ticker
+> Terminal stock ticker with live updates and position tracking
 
 ## Package Information
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/achannarasappa/ticker
+launchpad install ticker
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ticker`
+
+## Available Versions
+
+<details>
+<summary>Show all 11 versions</summary>
+
+- `5.0.5`, `5.0.4`, `5.0.3`, `5.0.2`, `5.0.1`
+- `5.0.0`, `4.8.1`, `4.8.0`, `4.7.1`, `4.7.0`
+- `4.6.3`
+
+</details>
+
+**Latest Version**: `5.0.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) ticker -- $SHELL -i
+```
 
 ## Usage Examples
 

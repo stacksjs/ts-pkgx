@@ -1,6 +1,6 @@
 # spawn.link
 
-> Package from pantry: spawn.link
+> a featureful union filesystem
 
 ## Package Information
 
@@ -20,7 +20,28 @@ launchpad install spawn.link
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mergerfs`
+- `mergerfs-fusermount`
+- `mount.mergerfs`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `2.40.2`, `2.40.1`, `2.40.0`, `2.39.0`, `2.38.0`
+- `2.37.1`, `2.37.0`, `2.36.0`, `2.35.1`
+
+</details>
+
+**Latest Version**: `2.40.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +spawn.link@2.40.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

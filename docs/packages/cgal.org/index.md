@@ -1,11 +1,11 @@
-# cgal.org
+# cgal
 
-> Package from pantry: cgal.org
+> The public CGAL repository, see the README below
 
 ## Package Information
 
 - **Domain**: `cgal.org`
-- **Name**: `cgal.org`
+- **Name**: `cgal`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cgal.org/package.yml)
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install cgal.org
+launchpad install cgal
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cgal_create_CMakeLists`
+- `cgal_create_cmake_script`
+- `cgal_make_macosx_app`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `6.0.1`, `6.0.0`, `5.6.2`, `5.6.1`, `5.6.0`
+
+</details>
+
+**Latest Version**: `6.0.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +cgal.org@6.0.1 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -38,7 +58,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cgal.org']
+const pkg = pantry.cgal
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

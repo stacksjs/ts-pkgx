@@ -1,11 +1,11 @@
-# cointop.sh
+# cointop
 
-> Package from pantry: cointop.sh
+> A fast and lightweight interactive terminal based UI application for tracking cryptocurrencies 🚀
 
 ## Package Information
 
 - **Domain**: `cointop.sh`
-- **Name**: `cointop.sh`
+- **Name**: `cointop`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cointop.sh/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install cointop.sh
+launchpad install cointop
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cointop`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.6.10`
+
+</details>
+
+**Latest Version**: `1.6.10`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) cointop -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cointop.sh']
+const pkg = pantry.cointop
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

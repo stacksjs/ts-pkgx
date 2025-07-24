@@ -1,34 +1,24 @@
 # Graphics Libraries
 
-*5 packages in this category*
+*3 packages in this category*
 
 Packages related to graphics libraries.
 
 ## Packages
 
-### [cairographics.org](../packages/cairographics.org/index.md)
+### [cairographics.org](../packages/cairographics.org/index.md) (cairo-trace)
 
-Package from pantry: cairographics.org
+Vector graphics library with cross-device output support
 
-**Programs**: None specified
+**Programs**: cairo-trace
 
-**Install**: `launchpad install cairographics.org`
-
----
-
-### [glm.g-truc.net](../packages/glm.g-truc.net/index.md)
-
-Package from pantry: glm.g-truc.net
-
-**Programs**: None specified
-
-**Install**: `launchpad install glm.g-truc.net`
+**Install**: `launchpad install cairo-trace`
 
 ---
 
 ### [libsdl.org](../packages/libsdl.org/index.md)
 
-Package from pantry: libsdl.org
+Simple Directmedia Layer
 
 **Programs**: None specified
 
@@ -36,23 +26,13 @@ Package from pantry: libsdl.org
 
 ---
 
-### [libsdl.org/SDL_image](../packages/libsdl.org/SDL_image/index.md) (SDL_image)
+### [libsdl.org/SDL_image](../packages/libsdl.org/SDL_image/index.md)
 
-Package from pantry: libsdl.org/SDL_image
+Image decoding for many popular formats for Simple Directmedia Layer.
 
 **Programs**: None specified
 
 **Install**: `launchpad install libsdl.org/SDL_image`
-
----
-
-### [mesa3d.org](../packages/mesa3d.org/index.md)
-
-Package from pantry: mesa3d.org
-
-**Programs**: None specified
-
-**Install**: `launchpad install mesa3d.org`
 
 ---
 

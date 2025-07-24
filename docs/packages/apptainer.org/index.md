@@ -1,6 +1,6 @@
 # apptainer.org
 
-> Package from pantry: apptainer.org
+> Application container and unprivileged sandbox platform for Linux
 
 ## Package Information
 
@@ -20,7 +20,28 @@ launchpad install apptainer.org
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `apptainer`
+- `run-singularity`
+- `singularity`
+
+## Available Versions
+
+<details>
+<summary>Show all 6 versions</summary>
+
+- `1.4.1`, `1.4.0`, `1.3.6`, `1.3.5`, `1.3.4`
+- `1.3.3`
+
+</details>
+
+**Latest Version**: `1.4.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +apptainer.org@1.4.1 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -28,6 +49,12 @@ This package depends on:
 
 - `github.com/seccomp/libseccomp@2`
 - `curl.se/ca-certs`
+
+## Related Packages
+
+These packages work well with apptainer.org:
+
+- [`github.com/plougher/squashfs-tools`](../github.com/plougher/squashfs-tools.md) - tools to create and extract Squashfs filesystems
 
 ## Usage Examples
 

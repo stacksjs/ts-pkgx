@@ -1,7 +1,9 @@
 /**
- * **z** - Package from pantry: github.com/rupa/z
+ * **z** - z - jump around
  *
  * @domain `github.com/rupa/z`
+ * @version `1.12.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/rupa/z`
  *
@@ -11,7 +13,8 @@
  *
  * const pkg = pantry.githubcomrupaz
  * console.log(pkg.name)        // "z"
- * console.log(pkg.description) // "Package from pantry: github.com/rupa/z"
+ * console.log(pkg.description) // "z - jump around"
+ * console.log(pkg.versions[0]) // "1.12.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/rupa/z.md
@@ -29,21 +32,28 @@ export const githubcomrupazPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/rupa/z' as const,
+  description: 'z - jump around' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/rupa/z/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/rupa/z' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/rupa/z -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/rupa/z' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/rupa/z/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.12.0',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/rupa/z -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/rupa/z' as const,
 }
 
 export type GithubcomrupazPackage = typeof githubcomrupazPackage

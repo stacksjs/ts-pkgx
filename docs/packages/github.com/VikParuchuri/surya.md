@@ -1,11 +1,11 @@
-# surya
+# Surya
 
-> Package from pantry: github.com/VikParuchuri/surya
+> OCR, layout analysis, reading order, table recognition in 90+ languages
 
 ## Package Information
 
 - **Domain**: `github.com/VikParuchuri/surya`
-- **Name**: `surya`
+- **Name**: `Surya`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/VikParuchuri/surya/package.yml)
 
@@ -13,14 +13,50 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/VikParuchuri/surya
+launchpad install surya_detect
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `surya_detect`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `surya_detect`
+
+## Available Versions
+
+<details>
+<summary>Show all 64 versions</summary>
+
+- `0.14.6`, `0.14.5`, `0.14.4`, `0.14.3`, `0.14.2`
+- `0.14.1`, `0.14.0`, `0.13.1`, `0.13.0`, `0.12.1`
+- `0.12.0`, `0.11.1`, `0.11.0`, `0.10.3`, `0.10.2`
+- `0.10.1`, `0.10.0`, `0.9.3`, `0.9.2`, `0.9.1`
+- `0.9.0`, `0.8.3`, `0.8.2`, `0.8.1`, `0.8.0`
+- `0.7.0`, `0.6.13`, `0.6.12`, `0.6.11`, `0.6.10`
+- `0.6.9`, `0.6.8`, `0.6.7`, `0.6.6`, `0.6.5`
+- `0.6.4`, `0.6.3`, `0.6.2`, `0.6.1`, `0.6.0`
+- `0.5.0`, `0.4.15`, `0.4.14`, `0.4.12`, `0.4.11`
+- `0.4.10`, `0.4.9`, `0.4.8`, `0.4.7`, `0.4.6`
+- `0.4.5`, `0.4.4`, `0.4.3`, `0.4.2`, `0.4.1`
+- `0.4.0`, `0.3.0`, `0.2.4`, `0.2.3`, `0.2.2`
+- `0.2.1`, `0.2.0`, `0.1.6`, `0.1.5`
+
+</details>
+
+**Latest Version**: `0.14.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) surya_detect -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -37,7 +73,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.surya
+const pkg = pantry.surya_detect
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

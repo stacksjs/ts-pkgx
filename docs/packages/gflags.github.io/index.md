@@ -1,6 +1,6 @@
 # gflags.github.io
 
-> Package from pantry: gflags.github.io
+> The gflags package contains a C++ library that implements commandline flags processing. It includes built-in support for standard types such as string and the ability to define flags in the source file in which they are used. Online documentation available at:
 
 ## Package Information
 
@@ -21,6 +21,24 @@ launchpad install gflags.github.io
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.2.2`
+
+</details>
+
+**Latest Version**: `2.2.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +gflags.github.io@2.2.2 -- $SHELL -i
+```
 
 ## Usage Examples
 

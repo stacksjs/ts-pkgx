@@ -1,6 +1,6 @@
 # nnn
 
-> Package from pantry: github.com/jarun/nnn
+> Tiny, lightning fast, feature-packed file manager
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/jarun/nnn
+launchpad install nnn
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `nnn`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `5.1.0`, `5.0.0`
+
+</details>
+
+**Latest Version**: `5.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) nnn -- $SHELL -i
+```
 
 ## Dependencies
 

@@ -1,6 +1,6 @@
 # toml-cli
 
-> Package from pantry: github.com/MinseokOh/toml-cli
+> A simple CLI for editing and querying TOML files.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/MinseokOh/toml-cli
+launchpad install toml-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `toml-cli`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.1.3`, `0.1.2`, `0.1.1`
+
+</details>
+
+**Latest Version**: `0.1.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) toml-cli -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,6 +1,6 @@
 # names
 
-> Package from pantry: crates.io/names
+> Random name generator for Rust
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install crates.io/names
+launchpad install names
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `names`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.14.0`
+
+</details>
+
+**Latest Version**: `0.14.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) names -- $SHELL -i
+```
 
 ## Usage Examples
 

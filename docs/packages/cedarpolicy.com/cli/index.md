@@ -1,11 +1,11 @@
-# cli
+# cedar
 
-> Package from pantry: cedarpolicy.com/cli
+> Implementation of the Cedar Policy Language
 
 ## Package Information
 
 - **Domain**: `cedarpolicy.com/cli`
-- **Name**: `cli`
+- **Name**: `cedar`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cedarpolicy.com/cli/package.yml)
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with launchpad
-launchpad install cedarpolicy.com/cli
+launchpad install cedar
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cedar`
+
+## Available Versions
+
+<details>
+<summary>Show all 35 versions</summary>
+
+- `4.5.0`, `4.4.1`, `4.4.0`, `4.3.3`, `4.3.2`
+- `4.3.1`, `4.3.0`, `4.2.2`, `4.2.1`, `4.2.0`
+- `4.1.0`, `4.0.0`, `3.4.1`, `3.4.0`, `3.3.0`
+- `3.2.4`, `3.2.1`, `3.2.0`, `3.1.4`, `3.1.3`
+- `3.1.2`, `3.1.1`, `3.1.0`, `3.0.1`, `3.0.0`
+- `2.5.0`, `2.4.7`, `2.4.6`, `2.4.5`, `2.4.4`
+- `2.4.3`, `2.4.2`, `2.4.1`, `2.4.0`, `2.3.3`
+
+</details>
+
+**Latest Version**: `4.5.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) cedar -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +52,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cli
+const pkg = pantry.cedar
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

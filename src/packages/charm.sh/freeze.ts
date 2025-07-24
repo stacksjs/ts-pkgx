@@ -1,23 +1,33 @@
 /**
- * **freeze** - Package from pantry: charm.sh/freeze
+ * **freeze** - Generate images of code and terminal output 📸
  *
  * @domain `charm.sh/freeze`
+ * @programs `freeze`
+ * @version `0.2.2` (5 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install charm.sh/freeze`
+ * @install `launchpad install freeze`
+ * @name `freeze`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.charmshfreeze
+ * // Access the package
+ * const pkg = pantry.freeze
+ * // Or access via domain
+ * const samePkg = pantry.charmshfreeze
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "freeze"
- * console.log(pkg.description) // "Package from pantry: charm.sh/freeze"
+ * console.log(pkg.description) // "Generate images of code and terminal output 📸"
+ * console.log(pkg.programs)    // ["freeze"]
+ * console.log(pkg.versions[0]) // "0.2.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/charm-sh/freeze.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const charmshfreezePackage = {
+export const freezePackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,42 @@ export const charmshfreezePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: charm.sh/freeze' as const,
+  description: 'Generate images of code and terminal output 📸' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/charm.sh/freeze/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install charm.sh/freeze' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +charm.sh/freeze -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install charm.sh/freeze' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install freeze' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'freeze',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/charm.sh/freeze/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.2.2',
+    '0.2.1',
+    '0.2.0',
+    '0.1.6',
+    '0.1.4',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) freeze -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freeze' as const,
 }
 
-export type CharmshfreezePackage = typeof charmshfreezePackage
+export type FreezePackage = typeof freezePackage

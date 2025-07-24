@@ -1,24 +1,34 @@
 /**
- * **click** - Package from pantry: crates.io/click
+ * **click** - The "Command Line Interactive Controller for Kubernetes"
  *
  * @domain `crates.io/click`
+ * @programs `click`
+ * @version `0.6.3` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install crates.io/click`
+ * @install `launchpad install click`
+ * @name `click`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cratesioclick
+ * // Access the package
+ * const pkg = pantry.click
+ * // Or access via domain
+ * const samePkg = pantry.cratesioclick
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "click"
- * console.log(pkg.description) // "Package from pantry: crates.io/click"
+ * console.log(pkg.description) // "The "Command Line Interactive Controller for Ku..."
+ * console.log(pkg.programs)    // ["click"]
+ * console.log(pkg.versions[0]) // "0.6.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/click.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cratesioclickPackage = {
+export const clickPackage = {
   /**
    * The display name of this package.
    */
@@ -30,15 +40,22 @@ export const cratesioclickPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: crates.io/click' as const,
+  description: 'The "Command Line Interactive Controller for Kubernetes"' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/click/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install crates.io/click' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/click -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/click' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install click' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'click',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,21 @@ export const cratesioclickPackage = {
   dependencies: [
     'openssl.org^1.1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/click/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.6.3',
+    '0.6.2',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) click -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install click' as const,
 }
 
-export type CratesioclickPackage = typeof cratesioclickPackage
+export type ClickPackage = typeof clickPackage

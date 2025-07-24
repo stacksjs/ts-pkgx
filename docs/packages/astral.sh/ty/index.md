@@ -1,6 +1,6 @@
 # ty
 
-> Package from pantry: astral.sh/ty
+> An extremely fast Python type checker and language server, written in Rust.
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install astral.sh/ty
+launchpad install ty
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ty`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `0.0.1.8`, `0.0.1.7`, `0.0.1.6`, `0.0.1.5`, `0.0.1.4`
+- `0.0.1.3`, `0.0.1.2`, `0.0.1.1`, `0.0.0.8`
+
+</details>
+
+**Latest Version**: `0.0.1.8`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) ty -- $SHELL -i
+```
 
 ## Dependencies
 

@@ -1,11 +1,11 @@
-# caddyserver.com
+# caddy
 
-> Package from pantry: caddyserver.com
+> Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
 
 ## Package Information
 
 - **Domain**: `caddyserver.com`
-- **Name**: `caddyserver.com`
+- **Name**: `caddy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/caddyserver.com/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install caddyserver.com
+launchpad install caddy
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `caddy`
+
+## Available Versions
+
+<details>
+<summary>Show all 10 versions</summary>
+
+- `2.10.0`, `2.9.1`, `2.9.0`, `2.8.4`, `2.8.2`
+- `2.8.1`, `2.8.0`, `2.7.6`, `2.7.5`, `2.7.4`
+
+</details>
+
+**Latest Version**: `2.10.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) caddy -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +47,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['caddyserver.com']
+const pkg = pantry.caddy
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

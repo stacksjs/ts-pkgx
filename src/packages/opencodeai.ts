@@ -1,7 +1,9 @@
 /**
- * **opencode.ai** - Package from pantry: opencode.ai
+ * **opencode.ai** - pkgx package
  *
  * @domain `opencode.ai`
+ * @version `0.3.61` (45 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install opencode.ai`
  *
@@ -11,7 +13,7 @@
  *
  * const pkg = pantry.opencodeai
  * console.log(pkg.name)        // "opencode.ai"
- * console.log(pkg.description) // "Package from pantry: opencode.ai"
+ * console.log(pkg.versions[0]) // "0.3.61" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/opencode-ai.md
@@ -29,21 +31,72 @@ export const opencodeaiPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: opencode.ai' as const,
+  description: '' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/opencode.ai/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install opencode.ai' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +opencode.ai -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install opencode.ai' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/opencode.ai/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.3.61',
+    '0.3.58',
+    '0.3.57',
+    '0.3.56',
+    '0.3.55',
+    '0.3.54',
+    '0.3.53',
+    '0.3.52',
+    '0.3.51',
+    '0.3.50',
+    '0.3.47',
+    '0.3.46',
+    '0.3.45',
+    '0.3.44',
+    '0.3.43',
+    '0.3.40',
+    '0.3.37',
+    '0.3.36',
+    '0.3.35',
+    '0.3.34',
+    '0.3.33',
+    '0.3.32',
+    '0.3.31',
+    '0.3.30',
+    '0.3.29',
+    '0.3.27',
+    '0.3.26',
+    '0.3.24',
+    '0.3.23',
+    '0.3.22',
+    '0.3.21',
+    '0.3.20',
+    '0.3.19',
+    '0.3.18',
+    '0.3.17',
+    '0.3.16',
+    '0.3.12',
+    '0.3.11',
+    '0.3.10',
+    '0.3.9',
+    '0.3.5',
+    '0.3.4',
+    '0.3.3',
+    '0.3.2',
+    '0.2.33',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +opencode.ai -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install opencode.ai' as const,
 }
 
 export type OpencodeaiPackage = typeof opencodeaiPackage

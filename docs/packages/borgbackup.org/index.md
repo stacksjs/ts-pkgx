@@ -1,11 +1,11 @@
-# borgbackup.org
+# borg
 
-> Package from pantry: borgbackup.org
+> Deduplicating archiver with compression and authenticated encryption.
 
 ## Package Information
 
 - **Domain**: `borgbackup.org`
-- **Name**: `borgbackup.org`
+- **Name**: `borg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/borgbackup.org/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install borgbackup.org
+launchpad install borg
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `borg`
+- `borgfs`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.4.1`
+
+</details>
+
+**Latest Version**: `1.4.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +borgbackup.org@1.4.1 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -35,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['borgbackup.org']
+const pkg = pantry.borg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

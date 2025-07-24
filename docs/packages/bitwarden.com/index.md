@@ -1,11 +1,11 @@
-# bitwarden.com
+# bw
 
-> Package from pantry: bitwarden.com
+> Secure and free password manager for all of your devices
 
 ## Package Information
 
 - **Domain**: `bitwarden.com`
-- **Name**: `bitwarden.com`
+- **Name**: `bw`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bitwarden.com/package.yml)
 
@@ -13,14 +13,37 @@
 
 ```bash
 # Install with launchpad
-launchpad install bitwarden.com
+launchpad install bw
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `bw`
+
+## Available Versions
+
+<details>
+<summary>Show all 26 versions</summary>
+
+- `2025.6.1`, `2025.6.0`, `2025.4.0`, `2025.3.0`, `2025.2.0`
+- `2025.1.3`, `2025.1.2`, `2025.1.1`, `2025.1.0`, `2024.12.0`
+- `2024.11.1`, `2024.11.0`, `2024.10.0`, `2024.9.0`, `2024.8.2`
+- `2024.8.1`, `2024.7.2`, `2024.7.1`, `2024.6.1`, `2024.6.0`
+- `2024.4.1`, `2024.4.0`, `2024.3.1`, `2024.2.1`, `2024.2.0`
+- `1.22.1`
+
+</details>
+
+**Latest Version**: `2025.6.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) bw -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['bitwarden.com']
+const pkg = pantry.bw
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

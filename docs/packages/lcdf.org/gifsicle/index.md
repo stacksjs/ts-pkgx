@@ -1,6 +1,6 @@
 # gifsicle
 
-> Package from pantry: lcdf.org/gifsicle
+> Create, manipulate, and optimize GIF images and animations
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install lcdf.org/gifsicle
+launchpad install gifsicle
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `gifsicle`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.96.0`, `1.95.0`, `1.94.0`, `1.93.0`
+
+</details>
+
+**Latest Version**: `1.96.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) gifsicle -- $SHELL -i
+```
 
 ## Usage Examples
 

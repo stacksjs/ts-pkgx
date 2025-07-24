@@ -1,6 +1,6 @@
 # s4cmd
 
-> Package from pantry: bloomreach.com/s4cmd
+> Super S3 command line tool
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install bloomreach.com/s4cmd
+launchpad install s4cmd
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `s4cmd`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.1.0`
+
+</details>
+
+**Latest Version**: `2.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) s4cmd -- $SHELL -i
+```
 
 ## Dependencies
 

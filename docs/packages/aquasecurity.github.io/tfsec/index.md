@@ -1,6 +1,6 @@
 # tfsec
 
-> Package from pantry: aquasecurity.github.io/tfsec
+> Static analysis security scanner for your terraform code
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install aquasecurity.github.io/tfsec
+launchpad install tfsec
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `tfsec`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `1.28.14`, `1.28.13`, `1.28.12`, `1.28.11`, `1.28.10`
+- `1.28.9`, `1.28.7`, `1.28.6`, `1.28.5`
+
+</details>
+
+**Latest Version**: `1.28.14`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) tfsec -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# apr-util
+# apu-1-config
 
-> Package from pantry: apache.org/apr-util
+> Mirror of Apache Portable Runtime util
 
 ## Package Information
 
 - **Domain**: `apache.org/apr-util`
-- **Name**: `apr-util`
+- **Name**: `apu-1-config`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/apr-util/package.yml)
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with launchpad
-launchpad install apache.org/apr-util
+launchpad install apu-&lbrace;&lbrace;
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `apu-1-config`
+
+## Aliases
+
+This package can also be accessed using these aliases:
+
+- `apu-&lbrace;&lbrace;`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.6.3`
+
+</details>
+
+**Latest Version**: `1.6.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) apu-&lbrace;&lbrace; -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +52,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['apr-util']
+const pkg = pantry['apu-{{']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

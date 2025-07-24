@@ -1,11 +1,11 @@
-# librist
+# rist
 
-> Package from pantry: code.videolan.org/rist/librist
+> Reliable Internet Stream Transport (RIST)
 
 ## Package Information
 
 - **Domain**: `code.videolan.org/rist/librist`
-- **Name**: `librist`
+- **Name**: `rist`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/code.videolan.org/rist/librist/package.yml)
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install code.videolan.org/rist/librist
+launchpad install rist
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `rist2rist`
+- `ristreceiver`
+- `ristsender`
+- `ristsrppasswd`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.2.11`, `0.2.8`, `0.2.7`
+
+</details>
+
+**Latest Version**: `0.2.11`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +code.videolan.org/rist/librist@0.2.11 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +49,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.librist
+const pkg = pantry.rist
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
