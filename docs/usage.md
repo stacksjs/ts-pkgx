@@ -34,6 +34,9 @@ pkgx-tools update-pantry
 # Generate constants file
 pkgx-tools generate-consts
 
+# Resolve dependency files
+pkgx-tools resolve-deps deps.yaml
+
 # Show version information
 pkgx-tools version
 ```
@@ -67,6 +70,9 @@ bun bin/cli.ts update-pantry
 
 # Generate constants
 bun bin/cli.ts generate-consts
+
+# Resolve dependency files
+bun bin/cli.ts resolve-deps deps.yaml
 
 # Display version information
 bun bin/cli.ts version
@@ -108,6 +114,64 @@ pkgx-tools fetch --pkg "nodejs.org,bun.sh" --output-json
 
 # Debug mode for troubleshooting
 pkgx-tools fetch agwa.name/git-crypt --debug --verbose
+```
+
+## Dependency Resolution
+
+ts-pkgx includes a powerful dependency resolver that can analyze dependency files and resolve all transitive dependencies:
+
+```bash
+# Resolve a single dependency file
+pkgx-tools resolve-deps deps.yaml
+
+# Resolve with verbose output and install command
+pkgx-tools resolve-deps pkgx.yaml --verbose --install-command
+
+# Find all dependency files in a project
+pkgx-tools resolve-deps --find-files ./my-project
+
+# Output as JSON for automation
+pkgx-tools resolve-deps deps.yaml --json
+
+# Filter for specific OS
+pkgx-tools resolve-deps deps.yaml --target-os darwin --include-os-deps
+```
+
+### Dependency File Formats
+
+The resolver supports these dependency file formats:
+
+```yaml
+# deps.yaml, dependencies.yaml, pkgx.yaml
+dependencies:
+  bun.sh: ^1.2.16
+  nodejs.org: ^20.0.0
+  python.org: 3.9.0
+  git-scm.com: latest
+```
+
+### Programmatic Dependency Resolution
+
+```typescript
+import { findDependencyFiles, resolveDependencyFile } from 'ts-pkgx'
+
+// Resolve a single dependency file
+const result = await resolveDependencyFile('./deps.yaml', {
+  pantryDir: 'src/pantry',
+  packagesDir: 'src/packages',
+  maxDepth: 10,
+  verbose: true,
+})
+
+console.log(`Found ${result.uniquePackages.length} unique packages`)
+console.log(`Conflicts resolved: ${result.conflicts.length}`)
+
+// Find all dependency files in a project
+const depFiles = findDependencyFiles('./my-project')
+for (const file of depFiles) {
+  const deps = await resolveDependencyFile(file)
+  console.log(`${file}: ${deps.uniquePackages.length} packages`)
+}
 ```
 
 ## Library Usage

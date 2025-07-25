@@ -1,9 +1,11 @@
+import type { DependencyResolverOptions } from '../src/dependency-resolver'
 import type { PackageFetchOptions } from '../src/types'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
 import { CAC } from 'cac'
 import { version } from '../package.json'
+import { findDependencyFiles, resolveDependencyFile } from '../src/dependency-resolver'
 import {
   cleanupBrowserResources,
   DEFAULT_CACHE_DIR,
@@ -894,6 +896,162 @@ cli
     }
     catch (error) {
       console.error('Error generating consts file:', error)
+      process.exit(1)
+    }
+  })
+
+// Resolve dependencies command
+cli
+  .command('resolve-deps [file]', 'Resolve all dependencies (including transitive) from a dependency file')
+  .option('-f, --file <path>', 'Path to dependency file (deps.yaml, dependencies.yaml, pkgx.yaml, etc.)')
+  .option('-d, --dir <directory>', 'Directory to search for dependency files', { default: '.' })
+  .option('--pantry-dir <dir>', 'Directory containing pantry files', { default: 'src/pantry' })
+  .option('--packages-dir <dir>', 'Directory containing generated package files', { default: 'src/packages' })
+  .option('--target-os <os>', 'Target OS for OS-specific dependencies (linux, darwin, windows)')
+  .option('--include-os-deps', 'Include OS-specific dependencies in resolution')
+  .option('--max-depth <depth>', 'Maximum recursion depth for dependency resolution', { default: 10 })
+  .option('-v, --verbose', 'Enable verbose output')
+  .option('-j, --json', 'Output results as JSON')
+  .option('--install-command', 'Show install commands for resolved packages')
+  .action(async (file: string | undefined, options) => {
+    try {
+      const {
+        dir = '.',
+        pantryDir = 'src/pantry',
+        packagesDir = 'src/packages',
+        targetOs,
+        includeOsDeps = false,
+        maxDepth = 10,
+        verbose = false,
+        json = false,
+        installCommand = false,
+      } = options
+
+      let dependencyFile = file || options.file
+
+      // If no file specified, try to find one in the directory
+      if (!dependencyFile) {
+        const foundFiles = findDependencyFiles(dir)
+        if (foundFiles.length === 0) {
+          console.error(`No dependency files found in ${dir}`)
+          console.error('Supported filenames: deps.yaml, dependencies.yaml, pkgx.yaml (and .yml variants)')
+          process.exit(1)
+        }
+        else if (foundFiles.length > 1) {
+          console.error(`Multiple dependency files found in ${dir}:`)
+          foundFiles.forEach(f => console.error(`  ${f}`))
+          console.error('Please specify which file to use with --file or [file] argument')
+          process.exit(1)
+        }
+        else {
+          dependencyFile = foundFiles[0]
+          if (!json) {
+            console.log(`Found dependency file: ${dependencyFile}`)
+          }
+        }
+      }
+
+      // Validate file exists
+      if (!fs.existsSync(dependencyFile)) {
+        console.error(`Dependency file not found: ${dependencyFile}`)
+        process.exit(1)
+      }
+
+      const resolverOptions: DependencyResolverOptions = {
+        pantryDir,
+        packagesDir,
+        includeOsSpecific: includeOsDeps,
+        targetOs: targetOs as 'linux' | 'darwin' | 'windows' | undefined,
+        maxDepth: Number.parseInt(String(maxDepth), 10),
+        verbose: verbose && !json, // Don't show verbose if JSON output requested
+      }
+
+      if (!json) {
+        console.log('🔍 Resolving dependencies...')
+      }
+
+      const result = await resolveDependencyFile(dependencyFile, resolverOptions)
+
+      if (json) {
+        // Output as JSON for programmatic use
+        const output = {
+          success: true,
+          file: dependencyFile,
+          summary: {
+            totalUnique: result.uniquePackages.length,
+            conflicts: result.conflicts.length,
+            osSpecific: {
+              linux: result.osSpecificDeps.linux.length,
+              darwin: result.osSpecificDeps.darwin.length,
+              windows: result.osSpecificDeps.windows.length,
+            },
+          },
+          packages: result.uniquePackages,
+          dependencies: result.allDependencies,
+          conflicts: result.conflicts,
+          osSpecificDeps: result.osSpecificDeps,
+          timestamp: new Date().toISOString(),
+        }
+        console.log(JSON.stringify(output, null, 2))
+      }
+      else {
+        // Human-readable output
+        console.log(`\n✅ Dependency resolution complete!`)
+        console.log(`📦 Total unique packages: ${result.uniquePackages.length}`)
+
+        if (result.conflicts.length > 0) {
+          console.log(`⚠️  Version conflicts: ${result.conflicts.length}`)
+          console.log('\nConflicts found:')
+          result.conflicts.forEach((conflict) => {
+            console.log(`  ${conflict.package}: ${conflict.versions.join(', ')}`)
+          })
+        }
+
+        console.log('\n📋 All unique packages to install:')
+        result.uniquePackages.forEach((pkg, index) => {
+          const dep = result.allDependencies.find(d => d.name === pkg)
+          const versionInfo = dep && dep.version && dep.version !== 'latest' ? ` (${dep.version})` : ''
+          console.log(`  ${index + 1}. ${pkg}${versionInfo}`)
+        })
+
+        if (installCommand) {
+          console.log('\n🚀 Install commands:')
+          console.log('\nUsing pkgx:')
+          const pkgxPackages = result.uniquePackages.map(pkg => `+${pkg}`).join(' ')
+          console.log(`sh <(curl https://pkgx.sh) ${pkgxPackages} -- $SHELL -i`)
+
+          console.log('\nOr install individually:')
+          result.uniquePackages.forEach((pkg) => {
+            console.log(`pkgx +${pkg}`)
+          })
+        }
+
+        // Show OS-specific dependencies if any
+        const totalOsSpecific = Object.values(result.osSpecificDeps).reduce((sum, deps) => sum + deps.length, 0)
+        if (totalOsSpecific > 0) {
+          console.log('\n🖥️  OS-specific dependencies:')
+          Object.entries(result.osSpecificDeps).forEach(([os, deps]) => {
+            if (deps.length > 0) {
+              console.log(`  ${os}: ${deps.map(d => d.name).join(', ')}`)
+            }
+          })
+        }
+      }
+
+      process.exit(0)
+    }
+    catch (error) {
+      if (options.json) {
+        const output = {
+          success: false,
+          error: String(error),
+          timestamp: new Date().toISOString(),
+        }
+        console.log(JSON.stringify(output))
+      }
+      else {
+        console.error('Error resolving dependencies:', error)
+      }
       process.exit(1)
     }
   })

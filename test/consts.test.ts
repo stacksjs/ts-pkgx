@@ -39,14 +39,21 @@ describe('Constants Module', () => {
       Object.keys(PACKAGE_ALIASES).forEach((alias) => {
         expect(typeof alias).toBe('string')
         expect(alias.length).toBeGreaterThan(0)
-        expect(alias).toMatch(/^[a-z0-9]+$/i)
+        // Allow alphanumeric characters, dots, hyphens, and underscores for domain-like aliases
+        expect(alias).toMatch(/^[\w.-]+$/)
       })
     })
 
     test('should not have duplicate values', () => {
       const values = Object.values(PACKAGE_ALIASES)
-      const uniqueValues = [...new Set(values)]
-      expect(values.length).toBe(uniqueValues.length)
+      // const uniqueValues = [...new Set(values)]
+
+      // Allow some legitimate duplicates (like bun and bun.com both pointing to bun.sh)
+      const allowedDuplicates = new Set(['bun.sh']) // Known legitimate duplicates
+      const duplicateValues = values.filter((item, index) => values.indexOf(item) !== index)
+      const unexpectedDuplicates = duplicateValues.filter(val => !allowedDuplicates.has(val))
+
+      expect(unexpectedDuplicates.length).toBe(0)
     })
 
     test('should not have duplicate keys', () => {

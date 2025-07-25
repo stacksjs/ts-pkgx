@@ -37,6 +37,9 @@ bun run pkgx:fetch --all --concurrency 20
 # Use or disable caching
 bun run pkgx:fetch --all --cache-dir ./custom-cache
 bun run pkgx:fetch --all --no-cache
+
+# Resolve dependency files
+bun run resolve-deps deps.yaml --verbose --install-command
 ```
 
 ## Cache Configuration
@@ -188,6 +191,40 @@ When using GitHub API for fetching package information, you can use authenticati
 # Set environment variable before running commands
 export GITHUB_TOKEN=your_github_personal_access_token
 bun run pkgx:fetch --all
+```
+
+## Dependency Resolution Configuration
+
+The dependency resolver supports extensive configuration options:
+
+```bash
+# Basic dependency resolution
+pkgx-tools resolve-deps deps.yaml
+
+# With custom directories
+pkgx-tools resolve-deps deps.yaml --pantry-dir ./my-pantry --packages-dir ./my-packages
+
+# OS-specific filtering
+pkgx-tools resolve-deps deps.yaml --target-os darwin --include-os-deps
+
+# Custom recursion depth and verbose output
+pkgx-tools resolve-deps deps.yaml --max-depth 5 --verbose
+
+# JSON output for automation
+pkgx-tools resolve-deps deps.yaml --json
+```
+
+### Dependency Resolver Options
+
+```typescript
+interface DependencyResolverOptions {
+  pantryDir?: string // Directory containing pantry files
+  packagesDir?: string // Directory containing generated package files
+  includeOsSpecific?: boolean // Include OS-specific dependencies
+  targetOs?: 'linux' | 'darwin' | 'windows' // Target operating system
+  maxDepth?: number // Maximum recursion depth for transitive deps
+  verbose?: boolean // Enable verbose output
+}
 ```
 
 This increases your GitHub API rate limit from 60 requests/hour to 5,000 requests/hour.

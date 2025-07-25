@@ -315,6 +315,154 @@ The generated packages provide excellent TypeScript intellisense:
    - "List of executable programs provided by this package"
    - Link to usage documentation
 
+## Dependency Resolution
+
+### Dependency Resolution Types
+
+ts-pkgx provides comprehensive dependency resolution capabilities with the following types:
+
+```typescript
+interface Dependency {
+  name: string
+  version: string
+  constraint: string
+  isOsSpecific: boolean
+  os?: string
+}
+
+interface DependencyResolutionResult {
+  allDependencies: Dependency[]
+  uniquePackages: string[]
+  conflicts: Array<{
+    package: string
+    versions: string[]
+  }>
+  osSpecificDeps: Record<string, Dependency[]>
+}
+
+interface DependencyResolverOptions {
+  pantryDir?: string
+  packagesDir?: string
+  includeOsSpecific?: boolean
+  targetOs?: 'linux' | 'darwin' | 'windows'
+  maxDepth?: number
+  verbose?: boolean
+}
+```
+
+### resolveDependencyFile
+
+Resolves a dependency file and all its transitive dependencies.
+
+```typescript
+async function resolveDependencyFile(
+  filePath: string,
+  options: DependencyResolverOptions = {}
+): Promise<DependencyResolutionResult>
+```
+
+#### Parameters
+
+- `filePath`: Path to the dependency file (deps.yaml, pkgx.yaml, etc.)
+- `options`: Configuration options for resolution
+
+#### Returns
+
+- `DependencyResolutionResult` with all resolved dependencies, conflicts, and install information
+
+#### Example
+
+```typescript
+const result = await resolveDependencyFile('./deps.yaml', {
+  pantryDir: 'src/pantry',
+  packagesDir: 'src/packages',
+  maxDepth: 10,
+  verbose: true,
+})
+
+console.log(`Found ${result.uniquePackages.length} unique packages`)
+if (result.conflicts.length > 0) {
+  console.log(`Resolved ${result.conflicts.length} version conflicts`)
+}
+```
+
+### findDependencyFiles
+
+Finds all dependency files in a directory.
+
+```typescript
+function findDependencyFiles(directory: string): string[]
+```
+
+#### Parameters
+
+- `directory`: Directory to search for dependency files
+
+#### Returns
+
+- Array of paths to found dependency files
+
+#### Example
+
+```typescript
+const depFiles = findDependencyFiles('./my-project')
+console.log(`Found dependency files: ${depFiles.join(', ')}`)
+```
+
+### getAvailableVersionsForPackage
+
+Gets available versions for a package from generated package files.
+
+```typescript
+async function getAvailableVersionsForPackage(
+  packageName: string,
+  packagesDir: string = 'src/packages'
+): Promise<string[]>
+```
+
+#### Parameters
+
+- `packageName`: Name of the package
+- `packagesDir`: Directory containing generated package files
+
+#### Returns
+
+- Array of available versions for the package
+
+#### Example
+
+```typescript
+const versions = await getAvailableVersionsForPackage('bun.sh')
+console.log(`Available versions: ${versions.join(', ')}`)
+```
+
+### resolveVersionConstraint
+
+Resolves a version constraint against available versions.
+
+```typescript
+function resolveVersionConstraint(
+  constraint: string,
+  availableVersions: string[]
+): string | null
+```
+
+#### Parameters
+
+- `constraint`: Version constraint (e.g., '^1.2.3', '~1.0.0', 'latest')
+- `availableVersions`: Array of available versions
+
+#### Returns
+
+- Best matching version or null if no match found
+
+#### Example
+
+```typescript
+const resolved = resolveVersionConstraint('^1.2.0', ['1.2.5', '1.1.0', '2.0.0'])
+console.log(resolved) // '1.2.5'
+```
+
 ## Core Functions
 
 ### fetchPantryPackageWithMetadata

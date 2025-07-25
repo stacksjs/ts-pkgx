@@ -2,6 +2,126 @@
 
 This section covers advanced usage scenarios and customization options for ts-pkgx.
 
+## Dependency Resolution System
+
+ts-pkgx includes a sophisticated dependency resolution system that can analyze dependency files and resolve all transitive dependencies with intelligent version conflict resolution.
+
+### Advanced Dependency Resolution
+
+The dependency resolver provides powerful features for managing complex dependency trees:
+
+```typescript
+import {
+  resolveDependencyFile,
+  findDependencyFiles,
+  type DependencyResolverOptions
+} from 'ts-pkgx'
+
+// Advanced dependency resolution with custom options
+const resolverOptions: DependencyResolverOptions = {
+  pantryDir: 'src/pantry',
+  packagesDir: 'src/packages',
+  includeOsSpecific: true,
+  targetOs: 'darwin',
+  maxDepth: 15,
+  verbose: true,
+}
+
+// Resolve multiple dependency files
+const depFiles = findDependencyFiles('./project')
+const results = await Promise.all(
+  depFiles.map(file => resolveDependencyFile(file, resolverOptions))
+)
+
+// Combine results and analyze conflicts
+const allPackages = new Set()
+const allConflicts = []
+
+results.forEach(result => {
+  result.uniquePackages.forEach(pkg => allPackages.add(pkg))
+  allConflicts.push(...result.conflicts)
+})
+
+console.log(`Total unique packages: ${allPackages.size}`)
+console.log(`Total conflicts resolved: ${allConflicts.length}`)
+```
+
+### Version Constraint Resolution
+
+The system intelligently resolves version constraints against actual available versions:
+
+```typescript
+import {
+  getAvailableVersionsForPackage,
+  resolveVersionConstraint
+} from 'ts-pkgx'
+
+// Get available versions for a package
+const versions = await getAvailableVersionsForPackage('bun.sh')
+console.log(`Available versions: ${versions.join(', ')}`)
+
+// Resolve different types of constraints
+const constraints = ['^1.2.0', '~1.1.0', '>=1.0.0', 'latest']
+constraints.forEach(constraint => {
+  const resolved = resolveVersionConstraint(constraint, versions)
+  console.log(`${constraint} → ${resolved}`)
+})
+```
+
+### Custom Dependency Analysis
+
+Implement custom dependency analysis workflows:
+
+```typescript
+async function analyzeDependencyComplexity(projectDir: string) {
+  const depFiles = findDependencyFiles(projectDir)
+  const analysis = {
+    totalFiles: depFiles.length,
+    totalPackages: new Set(),
+    maxDepth: 0,
+    conflicts: [],
+    osSpecific: new Map(),
+  }
+
+  for (const file of depFiles) {
+    const result = await resolveDependencyFile(file, {
+      includeOsSpecific: true,
+      maxDepth: 20,
+      verbose: false,
+    })
+
+    // Track unique packages
+    result.uniquePackages.forEach(pkg => analysis.totalPackages.add(pkg))
+
+    // Track conflicts
+    analysis.conflicts.push(...result.conflicts)
+
+    // Track OS-specific dependencies
+    Object.entries(result.osSpecificDeps).forEach(([os, deps]) => {
+      if (!analysis.osSpecific.has(os)) {
+        analysis.osSpecific.set(os, new Set())
+      }
+      deps.forEach(dep => analysis.osSpecific.get(os).add(dep.name))
+    })
+  }
+
+  return {
+    ...analysis,
+    totalPackages: analysis.totalPackages.size,
+    osSpecific: Object.fromEntries(
+      Array.from(analysis.osSpecific.entries()).map(([os, deps]) => [
+        os,
+        deps.size,
+      ])
+    ),
+  }
+}
+
+// Usage
+const complexity = await analyzeDependencyComplexity('./my-project')
+console.log('Dependency Analysis:', complexity)
+```
+
 ## Pantry-Based Package Fetching
 
 ts-pkgx uses a pantry-based approach for fetching package information. This provides more reliable and comprehensive metadata than traditional web scraping.

@@ -15,6 +15,17 @@ ts-pkgx uses a pantry-based approach to fetch detailed information about package
 - Installation commands
 - Links to documentation, source code, and related resources
 
+### Dependency Resolution
+
+ts-pkgx includes a powerful dependency resolver that can analyze dependency files and resolve all transitive dependencies:
+
+- Supports multiple dependency file formats: `deps.yaml`, `dependencies.yaml`, `pkgx.yaml`, `.yml` variants
+- Resolves version constraints (`^1.2.3`, `~1.2.3`, `>=1.2.3`, `latest`, etc.) against actual available versions
+- Handles transitive dependencies recursively
+- Deduplicates packages and resolves version conflicts intelligently
+- Provides install commands for all unique dependencies
+- Supports OS-specific dependency filtering
+
 ### Bulk Fetching
 
 You can fetch information about all available packages at once using the `fetchAndSaveAllPackages` function or the CLI command:
@@ -209,6 +220,11 @@ pkgx-tools fetch --all
 ts-pkgx includes several advanced CLI features:
 
 ```bash
+# Dependency resolution
+pkgx-tools resolve-deps deps.yaml --verbose --install-command
+pkgx-tools resolve-deps pkgx.yaml --json
+pkgx-tools resolve-deps --find-files ./project --target-os darwin
+
 # Pantry management
 pkgx-tools update-pantry --pantry-dir ./my-pantry
 pkgx-tools generate-consts --source pantry

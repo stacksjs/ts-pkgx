@@ -56,6 +56,27 @@ bun ./bin/cli.ts generate-aliases
 
 # Generate constants file
 bun ./bin/cli.ts generate-consts
+
+# Resolve dependency files and transitive dependencies
+bun ./bin/cli.ts resolve-deps deps.yaml
+```
+
+### Dependency Resolution
+
+ts-pkgx includes a powerful dependency resolver that can analyze dependency files and resolve all transitive dependencies:
+
+```bash
+# Resolve a single dependency file
+bun ./bin/cli.ts resolve-deps deps.yaml --verbose --install-command
+
+# Find and resolve all dependency files in a project
+bun ./bin/cli.ts resolve-deps --find-files ./my-project
+
+# Output as JSON for automation
+bun ./bin/cli.ts resolve-deps deps.yaml --json
+
+# Filter for specific OS
+bun ./bin/cli.ts resolve-deps deps.yaml --target-os darwin --include-os-deps
 ```
 
 ### Programmatic Usage
@@ -67,6 +88,8 @@ import {
   fetchAndSaveAllPackages,
   fetchPantryPackage,
   fetchPantryPackageWithMetadata,
+  findDependencyFiles,
+  resolveDependencyFile,
   savePackageAsTypeScript,
   saveToCacheAndOutput
 } from 'ts-pkgx'
@@ -93,6 +116,22 @@ console.log(`Saved ${savedPackages.length} packages`)
 if (packageWithMeta) {
   const filePath = savePackageAsTypeScript('src/packages', 'node', packageWithMeta.packageInfo)
   console.log(`Saved to ${filePath}`)
+}
+
+// Resolve dependency files and transitive dependencies
+const depFiles = findDependencyFiles('./my-project')
+for (const file of depFiles) {
+  const result = await resolveDependencyFile(file, {
+    pantryDir: 'src/pantry',
+    packagesDir: 'src/packages',
+    maxDepth: 10,
+    verbose: true,
+  })
+
+  console.log(`${file}: Found ${result.uniquePackages.length} unique packages`)
+  if (result.conflicts.length > 0) {
+    console.log(`Resolved ${result.conflicts.length} version conflicts`)
+  }
 }
 ```
 

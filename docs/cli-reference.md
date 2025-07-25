@@ -15,6 +15,7 @@ bun install ts-pkgx
 | Command | Description |
 |---------|-------------|
 | `pkgx-tools fetch [packageName]` | Fetch a single package, multiple packages, or all packages |
+| `pkgx-tools resolve-deps [file]` | Resolve dependency files and find all transitive dependencies |
 | `pkgx-tools generate-index` | Generate TypeScript index file for packages |
 | `pkgx-tools generate-ts` | Generate TypeScript files from cached JSON |
 | `pkgx-tools generate-aliases` | Generate TypeScript aliases file for packages |
@@ -93,6 +94,86 @@ pkgx-tools fetch --all --cache-expiration 120 --no-cache
 # Output JSON for CI integration
 pkgx-tools fetch --pkg "node,bun,python" --output-json
 ```
+
+## resolve-deps Command
+
+The `resolve-deps` command analyzes dependency files and resolves all transitive dependencies with version conflict resolution.
+
+### Usage
+
+```bash
+# Resolve a specific dependency file
+pkgx-tools resolve-deps [file] [options]
+
+# Find and resolve all dependency files in a directory
+pkgx-tools resolve-deps --find-files [directory] [options]
+```
+
+### Arguments
+
+- `file`: Optional path to a dependency file (e.g., 'deps.yaml', 'pkgx.yaml', 'dependencies.yml')
+
+### Options
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `-d, --dir <directory>` | Directory to search for dependency files | `.` |
+| `--find-files` | Find and resolve all dependency files in the directory | `false` |
+| `--pantry-dir <dir>` | Directory containing pantry files | `src/pantry` |
+| `--packages-dir <dir>` | Directory containing generated package files | `src/packages` |
+| `--target-os <os>` | Target OS for OS-specific dependencies (linux, darwin, windows) | - |
+| `--include-os-deps` | Include OS-specific dependencies | `false` |
+| `--max-depth <depth>` | Maximum recursion depth for transitive dependencies | `10` |
+| `-v, --verbose` | Enable verbose output | `false` |
+| `-j, --json` | Output results as JSON | `false` |
+| `--install-command` | Show install command for all unique packages | `false` |
+
+### Examples
+
+```bash
+# Resolve a single dependency file
+pkgx-tools resolve-deps deps.yaml
+
+# Resolve with verbose output and install command
+pkgx-tools resolve-deps pkgx.yaml --verbose --install-command
+
+# Find all dependency files in a project
+pkgx-tools resolve-deps --find-files ./my-project
+
+# Output as JSON for automation
+pkgx-tools resolve-deps deps.yaml --json
+
+# Filter for specific OS
+pkgx-tools resolve-deps deps.yaml --target-os darwin --include-os-deps
+
+# Custom configuration
+pkgx-tools resolve-deps deps.yaml --pantry-dir ./custom-pantry --max-depth 5
+```
+
+### Supported File Formats
+
+The resolver supports these dependency file formats:
+- `deps.yaml` / `deps.yml`
+- `dependencies.yaml` / `dependencies.yml`
+- `pkgx.yaml` / `pkgx.yml`
+
+Example dependency file:
+```yaml
+dependencies:
+  bun.sh: ^1.2.16
+  nodejs.org: ^20.0.0
+  python.org: 3.9.0
+  git-scm.com: latest
+```
+
+### Output Format
+
+The command provides detailed output including:
+- All unique packages to install with resolved versions
+- Version conflicts detected and resolved
+- OS-specific dependencies (when enabled)
+- Install commands for package managers
+- Statistics about dependency resolution
 
 ## generate-index Command
 
