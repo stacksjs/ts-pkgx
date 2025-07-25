@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-07-22T02:43:55.750Z
+ * Generated on 2025-07-25T02:43:47.803Z
  */
 
 /**
@@ -32,6 +32,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
   perl: 'perl.org',
   deno: 'deno.land',
   bun: 'bun.sh',
+  'bun.com': 'bun.sh',
   git: 'git-scm.com',
   docker: 'docker.com',
   kubectl: 'kubernetes.io',
