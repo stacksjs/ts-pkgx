@@ -2,7 +2,7 @@
  * **opencode.ai** - pkgx package
  *
  * @domain `opencode.ai`
- * @version `0.3.67` (49 versions available)
+ * @version `0.3.70` (52 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install opencode.ai`
@@ -13,7 +13,7 @@
  *
  * const pkg = pantry.opencodeai
  * console.log(pkg.name)        // "opencode.ai"
- * console.log(pkg.versions[0]) // "0.3.67" (latest)
+ * console.log(pkg.versions[0]) // "0.3.70" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/opencode-ai.md
@@ -48,6 +48,9 @@ export const opencodeaiPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.3.70',
+    '0.3.69',
+    '0.3.68',
     '0.3.67',
     '0.3.66',
     '0.3.65',
