@@ -26,22 +26,23 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 20 versions</summary>
+<summary>Show all 21 versions</summary>
 
-- `7.10.3`, `7.10.2`, `7.10.1`, `7.10.0`, `7.9.0`
-- `7.8.3`, `7.8.2`, `7.8.1`, `7.8.0`, `7.7.0`
-- `7.6.1`, `7.6.0`, `7.5.1`, `7.5.0`, `7.4.0`
-- `7.3.1`, `7.3.0`, `7.2.2`, `7.2.1`, `7.2.0`
+- `7.11.0`, `7.10.3`, `7.10.2`, `7.10.1`, `7.10.0`
+- `7.9.0`, `7.8.3`, `7.8.2`, `7.8.1`, `7.8.0`
+- `7.7.0`, `7.6.1`, `7.6.0`, `7.5.1`, `7.5.0`
+- `7.4.0`, `7.3.1`, `7.3.0`, `7.2.2`, `7.2.1`
+- `7.2.0`
 
 </details>
 
-**Latest Version**: `7.10.3`
+**Latest Version**: `7.11.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +people.engr.tamu.edu/davis/suitesparse@7.10.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) +people.engr.tamu.edu/davis/suitesparse@7.11.0 -- $SHELL -i
 ```
 
 ## Dependencies

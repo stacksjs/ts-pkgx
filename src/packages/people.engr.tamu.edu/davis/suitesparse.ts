@@ -3,7 +3,7 @@
  *
  * @domain `people.engr.tamu.edu/davis/suitesparse`
  * @programs `mongoose`, `suitesparse_mongoose`
- * @version `7.10.3` (20 versions available)
+ * @version `7.11.0` (21 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install suite-sparse`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "suite-sparse"
  * console.log(pkg.description) // "The official SuiteSparse library: a suite of sp..."
  * console.log(pkg.programs)    // ["mongoose", "suitesparse_mongoose"]
- * console.log(pkg.versions[0]) // "7.10.3" (latest)
+ * console.log(pkg.versions[0]) // "7.11.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/people-engr-tamu-edu/davis/suitesparse.md
@@ -76,6 +76,7 @@ export const suitesparsePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '7.11.0',
     '7.10.3',
     '7.10.2',
     '7.10.1',
