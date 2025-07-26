@@ -3,7 +3,7 @@
  *
  * @domain `ivarch.com/pv`
  * @programs `pv`
- * @version `1.9.31` (13 versions available)
+ * @version `1.9.34` (14 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pv`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "pv"
  * console.log(pkg.description) // "Monitor data's progress through a pipe"
  * console.log(pkg.programs)    // ["pv"]
- * console.log(pkg.versions[0]) // "1.9.31" (latest)
+ * console.log(pkg.versions[0]) // "1.9.34" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ivarch-com/pv.md
@@ -62,6 +62,7 @@ export const pvPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.9.34',
     '1.9.31',
     '1.9.27',
     '1.9.25',
