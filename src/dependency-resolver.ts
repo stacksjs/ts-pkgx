@@ -202,14 +202,44 @@ export async function getAvailableVersionsForPackage(packageName: string, packag
 }
 
 /**
- * Resolve a version constraint to the best available version
+ * Get available versions for a package from generated package data
+ */
+async function getAvailableVersionsFromPackage(packageName: string): Promise<string[]> {
+  try {
+    // Import the package index to get access to the generated packages
+    const { pantry } = await import('./packages/index.js').catch(() => import('./index.js'))
+
+    // Convert domain to package key
+    const packageKey = packageName.replace(/[^a-z0-9]/gi, '').toLowerCase()
+
+    // Try to find the package in the pantry
+    let pkg = (pantry as any)[packageKey]
+
+    // If direct key lookup fails, try searching by domain
+    if (!pkg) {
+      const packages = Object.values(pantry as any)
+      pkg = packages.find((p: any) => p.domain === packageName)
+    }
+
+    if (pkg && pkg.versions && Array.isArray(pkg.versions)) {
+      return pkg.versions
+    }
+
+    return []
+  }
+  catch {
+    return []
+  }
+}
+
+/**
+ * Resolve a version constraint to the best available version using generated package data
  */
 export async function resolveVersionConstraint(
   packageName: string,
   constraint: string,
-  packagesDir = 'src/packages',
 ): Promise<string> {
-  const availableVersions = await getAvailableVersionsForPackage(packageName, packagesDir)
+  const availableVersions = await getAvailableVersionsFromPackage(packageName)
 
   if (availableVersions.length === 0) {
     return constraint.replace(/^[@^~>=<]+/, '') || 'latest'
@@ -522,13 +552,11 @@ export async function deduplicateDependencies(
   const uniqueDependencies: Dependency[] = []
   const uniquePackages: string[] = []
 
-  const { packagesDir = 'src/packages' } = options
-
   // Resolve conflicts for each package
   for (const [packageName, deps] of packageMap) {
     if (deps.length === 1) {
       // No conflict - but still resolve the version constraint to actual version
-      const resolvedVersion = await resolveVersionConstraint(packageName, deps[0].constraint, packagesDir)
+      const resolvedVersion = await resolveVersionConstraint(packageName, deps[0].constraint)
       const resolvedDep = { ...deps[0], version: resolvedVersion }
       uniqueDependencies.push(resolvedDep)
       uniquePackages.push(packageName)
@@ -549,7 +577,7 @@ export async function deduplicateDependencies(
       const resolvedDeps = await Promise.all(
         deps.map(async dep => ({
           ...dep,
-          resolvedVersion: await resolveVersionConstraint(packageName, dep.constraint, packagesDir),
+          resolvedVersion: await resolveVersionConstraint(packageName, dep.constraint),
         })),
       )
 
