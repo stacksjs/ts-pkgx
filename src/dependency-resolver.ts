@@ -233,7 +233,7 @@ async function getAvailableVersionsFromPackage(packageName: string): Promise<str
 }
 
 /**
- * Resolve a version constraint to the best available version using generated package data
+ * Resolve a version constraint to the best available version using proper semver
  */
 export async function resolveVersionConstraint(
   packageName: string,
@@ -242,62 +242,109 @@ export async function resolveVersionConstraint(
   const availableVersions = await getAvailableVersionsFromPackage(packageName)
 
   if (availableVersions.length === 0) {
-    return constraint.replace(/^[@^~>=<]+/, '') || 'latest'
+    // Fallback: extract version from constraint, handling comments
+    const cleanConstraint = constraint.split('#')[0].trim()
+    return cleanConstraint.replace(/^[@^~>=<]+/, '') || 'latest'
   }
 
+  // Clean the constraint by removing comments and whitespace
+  const cleanConstraint = constraint.split('#')[0].trim()
+
   // Handle different constraint types
-  if (constraint === '*' || constraint === 'latest') {
+  if (cleanConstraint === '*' || cleanConstraint === 'latest') {
     return availableVersions[0] // First version is latest
   }
 
-  if (constraint.startsWith('@')) {
+  if (cleanConstraint.startsWith('@')) {
     // Exact version
-    const exactVersion = constraint.slice(1)
+    const exactVersion = cleanConstraint.slice(1)
     return availableVersions.includes(exactVersion) ? exactVersion : availableVersions[0]
   }
 
-  if (constraint.startsWith('^')) {
-    // Compatible version (same major)
-    const baseVersion = constraint.slice(1)
-    const majorVersion = baseVersion.split('.')[0]
+  // For semver constraints, find the best matching version
+  const bestMatch = findBestSemverMatch(availableVersions, cleanConstraint)
+  return bestMatch || availableVersions[0]
+}
 
-    const compatibleVersions = availableVersions.filter((v) => {
-      const vMajor = v.split('.')[0]
-      return vMajor === majorVersion && compareVersions(v, baseVersion) >= 0
+/**
+ * Find the best semver match for a constraint using proper semver logic
+ */
+function findBestSemverMatch(availableVersions: string[], constraint: string): string | null {
+  // Handle different constraint types with proper semver logic
+  if (constraint.startsWith('^')) {
+    // Caret: ^1.2.3 allows 1.2.3 <= version < 2.0.0 (compatible within major version)
+    const baseVersion = constraint.slice(1)
+    const [baseMajor] = parseVersionParts(baseVersion)
+
+    const compatibleVersions = availableVersions.filter((version) => {
+      const [vMajor] = parseVersionParts(version)
+      return vMajor === baseMajor && compareVersions(version, baseVersion) >= 0
     })
 
-    return compatibleVersions[0] || availableVersions[0]
+    return compatibleVersions[0] || null
   }
 
   if (constraint.startsWith('~')) {
-    // Patch version compatibility
+    // Tilde: ~1.2.3 allows 1.2.3 <= version < 1.3.0 (compatible within minor version)
     const baseVersion = constraint.slice(1)
-    const [major, minor] = baseVersion.split('.')
+    const [baseMajor, baseMinor] = parseVersionParts(baseVersion)
 
-    const compatibleVersions = availableVersions.filter((v) => {
-      const [vMajor, vMinor] = v.split('.')
-      return vMajor === major && vMinor === minor && compareVersions(v, baseVersion) >= 0
+    const compatibleVersions = availableVersions.filter((version) => {
+      const [vMajor, vMinor] = parseVersionParts(version)
+      return vMajor === baseMajor && vMinor === baseMinor && compareVersions(version, baseVersion) >= 0
     })
 
-    return compatibleVersions[0] || availableVersions[0]
+    return compatibleVersions[0] || null
   }
 
   if (constraint.startsWith('>=')) {
-    const minVersion = constraint.slice(2)
-    const compatibleVersions = availableVersions.filter(v =>
-      compareVersions(v, minVersion) >= 0,
-    )
-    return compatibleVersions[0] || availableVersions[0]
+    // Greater than or equal
+    const minVersion = constraint.slice(2).trim()
+    const validVersions = availableVersions.filter(v => compareVersions(v, minVersion) >= 0)
+    return validVersions[0] || null
+  }
+
+  if (constraint.startsWith('>')) {
+    // Greater than
+    const minVersion = constraint.slice(1).trim()
+    const validVersions = availableVersions.filter(v => compareVersions(v, minVersion) > 0)
+    return validVersions[0] || null
+  }
+
+  if (constraint.startsWith('<=')) {
+    // Less than or equal
+    const maxVersion = constraint.slice(2).trim()
+    const validVersions = availableVersions.filter(v => compareVersions(v, maxVersion) <= 0)
+    return validVersions[0] || null
+  }
+
+  if (constraint.startsWith('<')) {
+    // Less than
+    const maxVersion = constraint.slice(1).trim()
+    const validVersions = availableVersions.filter(v => compareVersions(v, maxVersion) < 0)
+    return validVersions[0] || null
   }
 
   if (constraint.startsWith('=')) {
-    const exactVersion = constraint.slice(1)
-    return availableVersions.includes(exactVersion) ? exactVersion : availableVersions[0]
+    // Exact match
+    const exactVersion = constraint.slice(1).trim()
+    return availableVersions.includes(exactVersion) ? exactVersion : null
   }
 
-  // For other patterns or plain version numbers, try to find exact match or return latest
-  const cleanVersion = constraint.replace(/^\D*/, '')
-  return availableVersions.includes(cleanVersion) ? cleanVersion : availableVersions[0]
+  // If no operator, treat as exact match
+  return availableVersions.includes(constraint) ? constraint : null
+}
+
+/**
+ * Parse a version string into major, minor, patch components
+ */
+function parseVersionParts(version: string): [number, number, number] {
+  const parts = version.split('.').map((p) => {
+    // Extract numeric part only (remove any non-numeric suffixes)
+    const numericPart = p.match(/^\d+/)
+    return numericPart ? Number.parseInt(numericPart[0], 10) : 0
+  })
+  return [parts[0] || 0, parts[1] || 0, parts[2] || 0]
 }
 
 /**
@@ -312,21 +359,30 @@ export function compareVersions(version1: string, version2: string): number {
   if (version1 === 'latest' && version2 === 'latest')
     return 0
 
-  // Parse semantic versions
-  const v1Parts = version1.split('.').map(Number)
-  const v2Parts = version2.split('.').map(Number)
+  // Clean versions by removing comments and non-numeric suffixes
+  const cleanV1 = version1.split('#')[0].trim()
+  const cleanV2 = version2.split('#')[0].trim()
 
-  const maxLength = Math.max(v1Parts.length, v2Parts.length)
+  const [v1Major, v1Minor, v1Patch] = parseVersionParts(cleanV1)
+  const [v2Major, v2Minor, v2Patch] = parseVersionParts(cleanV2)
 
-  for (let i = 0; i < maxLength; i++) {
-    const v1Part = v1Parts[i] || 0
-    const v2Part = v2Parts[i] || 0
+  // Compare major version
+  if (v1Major > v2Major)
+    return 1
+  if (v1Major < v2Major)
+    return -1
 
-    if (v1Part > v2Part)
-      return 1
-    if (v1Part < v2Part)
-      return -1
-  }
+  // Compare minor version
+  if (v1Minor > v2Minor)
+    return 1
+  if (v1Minor < v2Minor)
+    return -1
+
+  // Compare patch version
+  if (v1Patch > v2Patch)
+    return 1
+  if (v1Patch < v2Patch)
+    return -1
 
   return 0
 }
@@ -526,7 +582,7 @@ export async function resolveTransitiveDependencies(
  */
 export async function deduplicateDependencies(
   dependencies: Dependency[],
-  options: DependencyResolverOptions = {},
+  _options: DependencyResolverOptions = {},
 ): Promise<DependencyResolutionResult> {
   const packageMap = new Map<string, Dependency[]>()
   const conflicts: Array<{ package: string, versions: string[] }> = []

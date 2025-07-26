@@ -1,17 +1,16 @@
-import { describe, expect, test, beforeEach, afterEach } from 'bun:test'
+import type { Dependency } from '../src/dependency-resolver'
+import { afterEach, beforeEach, describe, expect, test } from 'bun:test'
 import fs from 'node:fs'
 import path from 'node:path'
 import {
-  parseDependencyFile,
-  resolveVersionConstraint,
   compareVersions,
-  resolveTransitiveDependencies,
   deduplicateDependencies,
-  resolveDependencyFile,
+
   findDependencyFiles,
-  type Dependency,
-  type DependencyResolutionResult,
-  type DependencyResolverOptions,
+  parseDependencyFile,
+  resolveDependencyFile,
+  resolveTransitiveDependencies,
+  resolveVersionConstraint,
 } from '../src/dependency-resolver'
 
 // Test fixtures directory
@@ -46,14 +45,14 @@ dependencies:
 
       const result = parseDependencyFile(testFile)
       expect(result).toHaveLength(2)
-      
+
       expect(result[0]).toEqual({
         name: 'bun.sh',
         version: '1.2.19',
         constraint: '^1.2.19',
         isOsSpecific: false,
       })
-      
+
       expect(result[1]).toEqual({
         name: 'cli.github.com',
         version: '2.73.0',
@@ -91,7 +90,7 @@ dependencies:
 
       const result = parseDependencyFile(testFile)
       expect(result).toHaveLength(6)
-      
+
       expect(result[0].constraint).toBe('^1.2.3')
       expect(result[1].constraint).toBe('~2.1.0')
       expect(result[2].constraint).toBe('>=3.0.0')
@@ -168,6 +167,92 @@ version: 1.0.0
     })
   })
 
+  describe('Version Resolution Fixes', () => {
+    test('should properly handle version constraints with comments', async () => {
+      const tests = [
+        { constraint: '~1.14 # libvpx abi changes in 1.15', expected: '~1.14' },
+        { constraint: '^3 # several of the bins are scripts', expected: '^3' },
+        { constraint: '>=1.0.0 # minimum supported version', expected: '>=1.0.0' },
+        { constraint: '1.7 # links to libgit2.so.1.7', expected: '1.7' },
+      ]
+
+      for (const test of tests) {
+        // The resolved version should respect the constraint (without comment)
+        const resolved = await resolveVersionConstraint('webmproject.org/libvpx', test.constraint)
+
+        // Should not be null
+        expect(resolved).toBeTruthy()
+
+        // Should not contain comment text
+        expect(resolved).not.toMatch(/#/)
+
+        // For tilde constraints, should stay within the specified minor version
+        if (test.constraint.startsWith('~1.14')) {
+          expect(resolved.startsWith('1.14')).toBe(true)
+        }
+      }
+    })
+
+    test('should correctly implement tilde constraint logic', async () => {
+      // Tilde constraints should only allow patch-level changes
+      const resolved = await resolveVersionConstraint('webmproject.org/libvpx', '~1.14.0')
+
+      // Should resolve to a 1.14.x version, NOT 1.15.x
+      expect(resolved).toBeTruthy()
+      if (resolved !== '~1.14.0') { // If it's not returning the constraint as-is
+        const [major, minor] = resolved.split('.')
+        expect(major).toBe('1')
+        expect(minor).toBe('14')
+      }
+    })
+
+    test('should correctly implement caret constraint logic', async () => {
+      // Caret constraints should allow compatible version updates
+      const resolved = await resolveVersionConstraint('bun.sh', '^1.2.16')
+
+      expect(resolved).toBeTruthy()
+      if (resolved !== '^1.2.16') { // If it's not returning the constraint as-is
+        const [major] = resolved.split('.')
+        expect(major).toBe('1')
+      }
+    })
+
+    test('should handle exact version constraints', async () => {
+      const resolved = await resolveVersionConstraint('bun.sh', '@1.2.19')
+      expect(resolved).toBeTruthy()
+    })
+
+    test('should handle range constraints', async () => {
+      const tests = [
+        '>=1.0.0',
+        '>1.0.0',
+        '<=2.0.0',
+        '<2.0.0',
+      ]
+
+      for (const constraint of tests) {
+        const resolved = await resolveVersionConstraint('python.org', constraint)
+        expect(resolved).toBeTruthy()
+      }
+    })
+
+    test('should handle wildcard constraints', async () => {
+      const resolved = await resolveVersionConstraint('python.org', '*')
+      expect(resolved).toBeTruthy()
+    })
+
+    test('should handle latest constraints', async () => {
+      const resolved = await resolveVersionConstraint('python.org', 'latest')
+      expect(resolved).toBeTruthy()
+    })
+
+    test('should handle unknown packages gracefully', async () => {
+      const resolved = await resolveVersionConstraint('unknown.package.domain', '^1.0.0')
+      // Should return the constraint without the operator or fallback gracefully
+      expect(resolved).toBeTruthy()
+    })
+  })
+
   describe('compareVersions', () => {
     test('should compare semantic versions correctly', () => {
       expect(compareVersions('1.2.3', '1.2.2')).toBe(1)
@@ -236,10 +321,10 @@ version: 1.0.0
       })
 
       expect(Array.isArray(result)).toBe(true)
-      
+
       // Check that OS-specific dependencies are properly marked
       const osSpecificDeps = result.filter(dep => dep.isOsSpecific)
-      osSpecificDeps.forEach(dep => {
+      osSpecificDeps.forEach((dep) => {
         expect(dep.os).toBe('linux')
       })
     })
@@ -284,7 +369,7 @@ version: 1.0.0
       ]
 
       const result = await deduplicateDependencies(dependencies)
-      
+
       expect(result.allDependencies).toHaveLength(1)
       expect(result.uniquePackages).toEqual(['bun.sh'])
       expect(result.conflicts).toHaveLength(0)
@@ -307,7 +392,7 @@ version: 1.0.0
       ]
 
       const result = await deduplicateDependencies(dependencies)
-      
+
       expect(result.conflicts).toHaveLength(1)
       expect(result.conflicts[0].package).toBe('test-package')
       expect(result.conflicts[0].versions).toEqual(['1.0.0', '2.0.0'])
@@ -339,7 +424,7 @@ version: 1.0.0
       ]
 
       const result = await deduplicateDependencies(dependencies)
-      
+
       expect(result.osSpecificDeps.linux).toHaveLength(1)
       expect(result.osSpecificDeps.darwin).toHaveLength(1)
       expect(result.osSpecificDeps.windows).toHaveLength(1)
@@ -362,7 +447,7 @@ version: 1.0.0
       ]
 
       const result = await deduplicateDependencies(dependencies)
-      
+
       expect(result.allDependencies).toHaveLength(1)
       // Should choose the latest version
       expect(compareVersions(result.allDependencies[0].version, '1.2.16')).toBeGreaterThanOrEqual(0)
@@ -478,7 +563,7 @@ dependencies:
       fs.writeFileSync(path.join(testDir, '.deps.yaml'), 'dependencies:\n  test: ^1.0.0')
 
       const found = findDependencyFiles(testDir)
-      
+
       expect(found).toContain(path.join(testDir, 'deps.yaml'))
       expect(found).toContain(path.join(testDir, 'dependencies.yml'))
       expect(found).toContain(path.join(testDir, 'pkgx.yaml'))
@@ -509,7 +594,7 @@ dependencies:
       fs.writeFileSync(path.join(testDir, 'other.yaml'), 'not: dependencies')
 
       const found = findDependencyFiles(testDir)
-      
+
       expect(found).toHaveLength(1)
       expect(found[0]).toBe(path.join(testDir, 'deps.yaml'))
 
@@ -542,18 +627,18 @@ dependencies:
       // Verify basic structure
       expect(result.allDependencies.length).toBeGreaterThan(7)
       expect(result.uniquePackages.length).toBeGreaterThan(7)
-      
+
       // Verify specific packages are resolved
       expect(result.uniquePackages).toContain('bun.sh')
       expect(result.uniquePackages).toContain('ffmpeg.org')
       expect(result.uniquePackages).toContain('cli.github.com')
-      
+
       // Verify versions are properly resolved
       const bunDep = result.allDependencies.find(dep => dep.name === 'bun.sh')
       expect(bunDep).toBeDefined()
       expect(bunDep!.constraint).toBe('^1.2.16')
       expect(compareVersions(bunDep!.version, '1.2.16')).toBeGreaterThanOrEqual(0)
-      
+
       // Verify OS-specific dependencies are handled
       expect(result.osSpecificDeps).toBeDefined()
       expect(result.osSpecificDeps.linux).toEqual(expect.any(Array))
@@ -579,4 +664,4 @@ dependencies:
       expect(result.allDependencies).toEqual(expect.any(Array))
     })
   })
-}) 
+})
