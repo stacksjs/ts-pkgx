@@ -2,7 +2,6 @@
 import type { PkgxPackage } from './types'
 import fs from 'node:fs'
 import path from 'node:path'
-import { readPantryPackageInfo } from './fetch'
 
 /**
  * Represents a dependency with version constraints
@@ -32,7 +31,6 @@ export interface DependencyResolutionResult {
  * Options for dependency resolution
  */
 export interface DependencyResolverOptions {
-  pantryDir?: string
   packagesDir?: string
   includeOsSpecific?: boolean
   targetOs?: 'linux' | 'darwin' | 'windows'
@@ -304,24 +302,9 @@ export function compareVersions(version1: string, version2: string): number {
 }
 
 /**
- * Enhanced readPantryPackageInfo that falls back to generated package data
+ * Read package info from generated package data
  */
-async function readPantryPackageInfoWithFallback(
-  packageName: string,
-  pantryDir = 'src/pantry',
-): Promise<Partial<PkgxPackage> | null> {
-  // First try the original function (reading from pantry directory)
-  try {
-    const result = await readPantryPackageInfo(packageName, pantryDir)
-    if (result) {
-      return result
-    }
-  }
-  catch {
-    // If pantry directory doesn't exist, fall back to generated package data
-  }
-
-  // Fall back to generated package data
+async function readPackageInfo(packageName: string): Promise<Partial<PkgxPackage> | null> {
   try {
     // Import the package index to get access to the generated packages
     const { pantry } = await import('./packages/index.js').catch(() => import('./index.js'))
@@ -350,11 +333,10 @@ async function readPantryPackageInfoWithFallback(
       }
     }
 
-    console.warn(`Package not found for ${packageName} in generated package data`)
     return null
   }
   catch (error) {
-    console.warn(`Failed to load generated package data for ${packageName}: ${error}`)
+    console.warn(`Failed to load package data for ${packageName}: ${error}`)
     return null
   }
 }
@@ -369,7 +351,6 @@ export async function resolveTransitiveDependencies(
   depth = 0,
 ): Promise<Dependency[]> {
   const {
-    pantryDir = 'src/pantry',
     maxDepth = 10,
     verbose = false,
     targetOs,
@@ -390,8 +371,8 @@ export async function resolveTransitiveDependencies(
   const allDependencies: Dependency[] = []
 
   try {
-    // Get package info from pantry
-    const packageInfo = await readPantryPackageInfoWithFallback(packageName, pantryDir)
+    // Get package info from generated packages
+    const packageInfo = await readPackageInfo(packageName)
 
     if (packageInfo && packageInfo.dependencies) {
       for (const dep of packageInfo.dependencies) {
