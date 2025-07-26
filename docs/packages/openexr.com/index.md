@@ -32,22 +32,23 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 20 versions</summary>
+<summary>Show all 21 versions</summary>
 
-- `3.3.4`, `3.3.3`, `3.3.2`, `3.3.1`, `3.3.0`
-- `3.2.126`, `3.2.4`, `3.2.3`, `3.2.2`, `3.2.1`
-- `3.2.0`, `3.1.13`, `3.1.12`, `3.1.11`, `3.1.10`
-- `3.1.9`, `3.1.8`, `3.1.7`, `3.1.6`, `2.5.10`
+- `3.3.5`, `3.3.4`, `3.3.3`, `3.3.2`, `3.3.1`
+- `3.3.0`, `3.2.126`, `3.2.4`, `3.2.3`, `3.2.2`
+- `3.2.1`, `3.2.0`, `3.1.13`, `3.1.12`, `3.1.11`
+- `3.1.10`, `3.1.9`, `3.1.8`, `3.1.7`, `3.1.6`
+- `2.5.10`
 
 </details>
 
-**Latest Version**: `3.3.4`
+**Latest Version**: `3.3.5`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +openexr.com@3.3.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) +openexr.com@3.3.5 -- $SHELL -i
 ```
 
 ## Dependencies
