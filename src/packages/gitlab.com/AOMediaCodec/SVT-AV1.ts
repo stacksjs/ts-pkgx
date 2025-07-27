@@ -3,7 +3,7 @@
  *
  * @domain `gitlab.com/AOMediaCodec/SVT-AV1`
  * @programs `SvtAv1EncApp`
- * @version `3.0.2` (13 versions available)
+ * @version `3.1.0` (14 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install SvtAv1EncApp`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "SvtAv1EncApp"
  * console.log(pkg.description) // "AV1 encoder"
  * console.log(pkg.programs)    // ["SvtAv1EncApp"]
- * console.log(pkg.versions[0]) // "3.0.2" (latest)
+ * console.log(pkg.versions[0]) // "3.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gitlab-com/AOMediaCodec/SVT-AV1.md
@@ -62,6 +62,7 @@ export const svtAv1EncAppPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.1.0',
     '3.0.2',
     '3.0.1',
     '3.0.0',
