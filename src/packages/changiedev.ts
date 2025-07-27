@@ -3,7 +3,7 @@
  *
  * @domain `changie.dev`
  * @programs `changie`
- * @version `1.22.0` (8 versions available)
+ * @version `1.22.1` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install changie`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "changie"
  * console.log(pkg.description) // "Automated changelog tool for preparing releases..."
  * console.log(pkg.programs)    // ["changie"]
- * console.log(pkg.versions[0]) // "1.22.0" (latest)
+ * console.log(pkg.versions[0]) // "1.22.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/changie-dev.md
@@ -62,6 +62,7 @@ export const changiePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.22.1',
     '1.22.0',
     '1.21.1',
     '1.21.0',
