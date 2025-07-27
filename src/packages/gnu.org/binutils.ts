@@ -3,7 +3,7 @@
  *
  * @domain `gnu.org/binutils`
  * @programs `addr2line`, `ar`, `c++filt`, `elfedit`, `nm`, ... (+7 more)
- * @version `2.44.0` (7 versions available)
+ * @version `2.45.0` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/binutils`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "gnu.org/binutils"
  * console.log(pkg.description) // "GNU binary tools for native development"
  * console.log(pkg.programs)    // ["addr2line", "ar", ...]
- * console.log(pkg.versions[0]) // "2.44.0" (latest)
+ * console.log(pkg.versions[0]) // "2.45.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/binutils.md
@@ -68,6 +68,7 @@ export const gnuorgbinutilsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.45.0',
     '2.44.0',
     '2.43.1',
     '2.43.0',
