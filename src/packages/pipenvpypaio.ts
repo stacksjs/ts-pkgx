@@ -9,7 +9,6 @@
  * @install `launchpad install pipenv`
  * @name `pipenv`
  * @dependencies `pkgx.sh^1`
- * @companions `pip.pypa.io`
  *
  * @example
  * ```typescript
@@ -57,13 +56,7 @@ export const pipenvPackage = {
   programs: [
     'pipenv',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'pip.pypa.io',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

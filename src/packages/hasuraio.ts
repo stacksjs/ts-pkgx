@@ -3,7 +3,7 @@
  *
  * @domain `hasura.io`
  * @programs `hasura`
- * @version `2.48.1` (51 versions available)
+ * @version `2.48.1` (52 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install hasura`
@@ -66,6 +66,7 @@ export const hasuraPackage = {
     '2.48.0',
     '2.47.0',
     '2.46.0',
+    '2.45.3',
     '2.45.2',
     '2.45.1',
     '2.45.0',

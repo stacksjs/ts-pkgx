@@ -55,12 +55,6 @@ This package depends on:
 
 - `pkgx.sh^1`
 
-## Related Packages
-
-These packages work well with pipenv:
-
-- [`pip.pypa.io`](../pip.pypa.io/index.md) - The Python package installer
-
 ## Usage Examples
 
 ```typescript
