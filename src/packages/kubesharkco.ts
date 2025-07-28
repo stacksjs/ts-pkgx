@@ -3,7 +3,7 @@
  *
  * @domain `kubeshark.co`
  * @programs `kubeshark`
- * @version `72.3.83` (57 versions available)
+ * @version `72.3.83` (58 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kubeshark`
@@ -63,6 +63,7 @@ export const kubesharkPackage = {
    */
   versions: [
     '72.3.83',
+    '52.8.0',
     '52.7.8',
     '52.7.7',
     '52.7.3',
