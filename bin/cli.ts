@@ -917,7 +917,6 @@ cli
     try {
       const {
         dir = '.',
-        pantryDir = 'src/pantry',
         packagesDir = 'src/packages',
         targetOs,
         includeOsDeps = false,
@@ -958,7 +957,6 @@ cli
       }
 
       const resolverOptions: DependencyResolverOptions = {
-        pantryDir,
         packagesDir,
         includeOsSpecific: includeOsDeps,
         targetOs: targetOs as 'linux' | 'darwin' | 'windows' | undefined,

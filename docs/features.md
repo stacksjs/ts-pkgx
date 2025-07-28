@@ -26,6 +26,17 @@ ts-pkgx includes a powerful dependency resolver that can analyze dependency file
 - Provides install commands for all unique dependencies
 - Supports OS-specific dependency filtering
 
+ts-pkgx provides specialized **Integration APIs** designed for package managers and deployment tools:
+
+- 🔍 **Deep transitive dependency resolution** - Automatically resolves all nested dependencies
+- ⚡ **Version conflict resolution** - Intelligently handles conflicting version constraints
+- 🎯 **OS-specific dependencies** - Platform-aware dependency resolution
+- 📄 **Multiple input formats** - YAML files, strings, and individual packages
+- 🔧 **Semantic versioning** - Full semver constraint support (^, ~, >=, etc.)
+- 🚀 **Optimized for automation** - Ready-to-use install commands and structured data
+
+See the [Launchpad Integration Guide](./launchpad-integration.md) for detailed documentation and examples.
+
 ### Bulk Fetching
 
 You can fetch information about all available packages at once using the `fetchAndSaveAllPackages` function or the CLI command:

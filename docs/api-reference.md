@@ -967,3 +967,133 @@ try {
   await cleanupBrowserResources()
 }
 ```
+
+## Launchpad Dependency Resolution API
+
+The Launchpad API provides comprehensive dependency resolution for package managers and deployment tools.
+
+### resolveDependencies()
+
+Resolves all dependencies from a YAML dependency file with complete transitive dependency analysis.
+
+```typescript
+async function resolveDependencies(
+  filePath: string,
+  options?: LaunchpadResolverOptions
+): Promise<LaunchpadInstallResult>
+```
+
+#### Parameters
+
+- `filePath`: Path to dependency file (deps.yaml, pkgx.yaml, etc.)
+- `options`: Optional resolution configuration
+
+#### Example
+
+```typescript
+import { resolveDependencies } from 'ts-pkgx'
+
+const result = await resolveDependencies('./deps.yaml', {
+  targetOs: 'darwin',
+  includeOsSpecific: true,
+  maxDepth: 10,
+  verbose: false
+})
+
+console.log(`Installing ${result.totalCount} packages...`)
+for (const pkg of result.packages) {
+  await launchpad.install(pkg.name, pkg.version)
+}
+```
+
+### resolveDependenciesFromYaml()
+
+Resolves dependencies directly from a YAML string without requiring a file.
+
+```typescript
+async function resolveDependenciesFromYaml(
+  yamlContent: string,
+  options?: LaunchpadResolverOptions
+): Promise<LaunchpadInstallResult>
+```
+
+#### Example
+
+```typescript
+const yamlContent = `
+global: true
+dependencies:
+  bun.sh: ^1.2.16
+  gnu.org/grep: ^3.12.0
+`
+
+const result = await resolveDependenciesFromYaml(yamlContent, {
+  targetOs: 'darwin'
+})
+```
+
+### resolvePackageDependencies()
+
+Resolves all transitive dependencies for a single package.
+
+```typescript
+async function resolvePackageDependencies(
+  packageName: string,
+  options?: LaunchpadResolverOptions
+): Promise<LaunchpadPackage[]>
+```
+
+#### Example
+
+```typescript
+const deps = await resolvePackageDependencies('gnu.org/grep')
+console.log(deps) // ['gnu.org/grep', 'pcre.org/v2', 'zlib.net', ...]
+```
+
+### LaunchpadInstallResult
+
+Response format for all Launchpad resolution functions.
+
+```typescript
+interface LaunchpadInstallResult {
+  packages: LaunchpadPackage[]     // All packages to install
+  directCount: number              // Number of direct dependencies
+  totalCount: number               // Total packages including transitive
+  conflicts: Array<{               // Version conflicts resolved
+    package: string
+    versions: string[]
+    resolved: string
+  }>
+  pkgxCommand: string             // Ready-to-use pkgx install command
+  launchpadCommand: string        // Ready-to-use launchpad install command
+}
+```
+
+### LaunchpadPackage
+
+Individual package information in the resolution result.
+
+```typescript
+interface LaunchpadPackage {
+  name: string                    // Package domain (e.g., 'bun.sh')
+  version: string                 // Resolved version (e.g., '1.2.19')
+  constraint: string              // Original constraint (e.g., '^1.2.16')
+  isOsSpecific: boolean           // Whether OS-specific
+  os?: 'linux' | 'darwin' | 'windows'
+}
+```
+
+### LaunchpadResolverOptions
+
+Configuration options for dependency resolution.
+
+```typescript
+interface LaunchpadResolverOptions {
+  targetOs?: 'linux' | 'darwin' | 'windows'  // Target platform
+  includeOsSpecific?: boolean                 // Include OS-specific deps
+  maxDepth?: number                          // Max recursion depth (default: 10)
+  verbose?: boolean                          // Show detailed output
+}
+```
+
+For comprehensive integration examples and usage patterns, see the [Launchpad Integration Guide](./launchpad-integration.md).

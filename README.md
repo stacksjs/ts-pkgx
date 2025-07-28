@@ -79,6 +79,34 @@ bun ./bin/cli.ts resolve-deps deps.yaml --json
 bun ./bin/cli.ts resolve-deps deps.yaml --target-os darwin --include-os-deps
 ```
 
+ts-pkgx also provides comprehensive **Integration APIs** designed for package managers and deployment tools that need advanced dependency resolution:
+
+```typescript
+import { resolveDependencies } from 'ts-pkgx'
+
+// Resolve dependencies from a YAML file
+const result = await resolveDependencies('./deps.yaml', {
+  targetOs: 'darwin',
+  includeOsSpecific: true
+})
+
+console.log(`Installing ${result.totalCount} packages...`)
+
+// Install each resolved package
+for (const pkg of result.packages) {
+  await launchpad.install(pkg.name, pkg.version)
+}
+```
+
+**Key Features:**
+- 🔍 **Deep transitive dependency resolution** - Automatically resolves all nested dependencies
+- ⚡ **Version conflict resolution** - Intelligently handles conflicting version constraints
+- 🎯 **OS-specific dependencies** - Platform-aware dependency resolution
+- 📄 **Multiple input formats** - YAML files, strings, and individual packages
+- 🔧 **Semantic versioning** - Full semver constraint support (^, ~, >=, etc.)
+
+For detailed integration examples and API documentation, see the [Launchpad Integration Guide](./docs/launchpad-integration.md).
+
 ### Programmatic Usage
 
 You can also use the library programmatically in your code:
@@ -89,7 +117,10 @@ import {
   fetchPantryPackage,
   fetchPantryPackageWithMetadata,
   findDependencyFiles,
+  resolveDependencies,
+  resolveDependenciesFromYaml,
   resolveDependencyFile,
+  resolvePackageDependencies,
   savePackageAsTypeScript,
   saveToCacheAndOutput
 } from 'ts-pkgx'
@@ -133,6 +164,34 @@ for (const file of depFiles) {
     console.log(`Resolved ${result.conflicts.length} version conflicts`)
   }
 }
+
+// Launchpad Integration API - Resolve dependencies for package managers
+const launchpadResult = await resolveDependencies('./deps.yaml', {
+  targetOs: 'darwin',
+  includeOsSpecific: true,
+  maxDepth: 10,
+  verbose: false
+})
+
+console.log(`Launchpad: Installing ${launchpadResult.totalCount} packages`)
+console.log(`Direct dependencies: ${launchpadResult.directCount}`)
+console.log(`Version conflicts resolved: ${launchpadResult.conflicts.length}`)
+
+// Install command ready for use
+console.log(launchpadResult.launchpadCommand)
+
+// Resolve from YAML string
+const yamlContent = `
+global: true
+dependencies:
+  bun.sh: ^1.2.16
+  gnu.org/grep: ^3.12.0
+`
+const yamlResult = await resolveDependenciesFromYaml(yamlContent)
+
+// Resolve single package dependencies
+const grepDeps = await resolvePackageDependencies('gnu.org/grep')
+console.log(`grep has ${grepDeps.length} total dependencies`)
 ```
 
 ### TypeScript Types
@@ -141,6 +200,9 @@ ts-pkgx provides comprehensive TypeScript types for all packages in the pkgx.dev
 
 ```typescript
 import type {
+  LaunchpadInstallResult, // Launchpad API result type
+  LaunchpadPackage, // Individual package in Launchpad result
+  LaunchpadResolverOptions, // Launchpad resolution options
   PackageFetchOptions, // Options for fetching packages
   Packages, // Type alias for Pantry
   Pantry, // Complete pantry type with all packages
