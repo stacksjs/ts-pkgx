@@ -405,7 +405,7 @@ console.log(result.pkgxCommand) // "pkgx install bun.sh gnu.org/bash gnu.org/gre
 
 // But full dependency tree is available for analysis
 console.log(`Resolved ${result.totalCount} total packages:`)
-result.packages.forEach(pkg => {
+result.packages.forEach((pkg) => {
   console.log(`${pkg.name}@${pkg.version}`)
 })
 ```
