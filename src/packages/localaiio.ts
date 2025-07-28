@@ -3,7 +3,7 @@
  *
  * @domain `localai.io`
  * @programs `local-ai`
- * @version `3.2.3` (41 versions available)
+ * @version `3.3.0` (42 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install local-ai`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "local-ai"
  * console.log(pkg.description) // ":robot: The free, Open Source alternative to Op..."
  * console.log(pkg.programs)    // ["local-ai"]
- * console.log(pkg.versions[0]) // "3.2.3" (latest)
+ * console.log(pkg.versions[0]) // "3.3.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/localai-io.md
@@ -77,6 +77,7 @@ export const localaiPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.3.0',
     '3.2.3',
     '3.2.2',
     '3.2.1',
