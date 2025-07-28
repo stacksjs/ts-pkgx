@@ -9,7 +9,6 @@
  * @install `launchpad install whisper`
  * @name `whisper`
  * @dependencies `libsdl.org`, `linux:openmp.llvm.org^18 # as of 1.7.0`, `linux:gnu.org/gcc/libstdcxx@14` (includes OS-specific dependencies with `os:package` format)
- * @companions `huggingface.co`
  *
  * @example
  * ```typescript
@@ -58,13 +57,7 @@ export const whisperPackage = {
     'whisper.cpp',
     'whisper-cli',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'huggingface.co',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
