@@ -5,8 +5,8 @@ on:
     tags:
       - 'v*'
   schedule:
-    # Check for unreleased commits every 2 hours
-    - cron: '0 */6 * * *'
+    # Check for unreleased commits once a day
+    - cron: '0 0 * * *'
   # Allow manual trigger
   workflow_dispatch:
 
