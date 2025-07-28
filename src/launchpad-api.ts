@@ -113,9 +113,10 @@ export async function resolveDependencies(
   }))
 
   // Generate install commands
-  const packageSpecs = packages.map(pkg => `${pkg.name}@${pkg.version}`)
-  const pkgxCommand = `pkgx install ${packageSpecs.join(' ')}`
-  const launchpadCommand = `launchpad install ${packages.map(pkg => pkg.name).join(' ')}`
+  // Both pkgx and launchpad auto-resolve transitive dependencies, so only install direct deps
+  const directPackageNames = directDeps.map(dep => dep.name)
+  const pkgxCommand = `pkgx install ${directPackageNames.join(' ')}`
+  const launchpadCommand = `launchpad install ${directPackageNames.join(' ')}`
 
   // Format conflicts with resolution info
   const conflicts = result.conflicts.map((conflict) => {
@@ -231,9 +232,11 @@ export async function resolvePackageDependencies(
 /**
  * Get install command for a list of packages
  *
- * @param packages Array of package names
+ * @param packages Array of package names (should be direct deps only)
  * @param format Command format ('pkgx' or 'launchpad')
  * @returns Install command string
+ *
+ * @note Both pkgx and launchpad auto-resolve transitive dependencies
  */
 export function getInstallCommand(packages: string[], format: 'pkgx' | 'launchpad' = 'launchpad'): string {
   if (format === 'pkgx') {

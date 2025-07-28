@@ -1064,8 +1064,8 @@ interface LaunchpadInstallResult {
     versions: string[]
     resolved: string
   }>
-  pkgxCommand: string             // Ready-to-use pkgx install command
-  launchpadCommand: string        // Ready-to-use launchpad install command
+  pkgxCommand: string             // Ready-to-use pkgx install command (direct deps only)
+  launchpadCommand: string        // Ready-to-use launchpad install command (direct deps only)
 }
 ```
 

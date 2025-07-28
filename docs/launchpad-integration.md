@@ -118,8 +118,8 @@ interface LaunchpadInstallResult {
     versions: string[]
     resolved: string
   }>
-  pkgxCommand: string // Ready-to-use pkgx install command
-  launchpadCommand: string // Ready-to-use launchpad install command
+  pkgxCommand: string // Ready-to-use pkgx install command (direct deps only)
+  launchpadCommand: string // Ready-to-use launchpad install command (direct deps only)
 }
 
 interface LaunchpadPackage {
@@ -176,6 +176,7 @@ export class LaunchpadInstaller {
 
   private async install(packageName: string, version: string) {
     // Your Launchpad installation logic here
+    // Note: Launchpad should auto-resolve transitive dependencies
     console.log(`pkgx ${packageName}@${version}`)
   }
 }
@@ -359,9 +360,55 @@ The resolver will:
 **Output includes:**
 - All resolved packages with exact versions
 - Version conflict resolutions
-- Ready-to-use install commands
+- Ready-to-use install commands:
+  - `pkgxCommand`: Installs only 7 direct dependencies (transitive deps auto-resolved)
+  - `launchpadCommand`: Installs only 7 direct dependencies (transitive deps auto-resolved)
 - OS-specific dependency handling
 - Comprehensive error reporting
+
+## Install Commands
+
+Both install commands are optimized for modern package managers that auto-resolve transitive dependencies:
+
+### `pkgxCommand` - pkgx Installation
+```bash
+pkgx install bun.sh gnu.org/bash gnu.org/grep crates.io/eza ffmpeg.org cli.github.com starship.rs
+```
+- Includes **only the 7 direct dependencies** from your deps file
+- pkgx auto-resolves and installs all transitive dependencies
+- Fast and efficient installation
+
+### `launchpadCommand` - Launchpad Installation
+```bash
+launchpad install bun.sh gnu.org/bash gnu.org/grep crates.io/eza ffmpeg.org cli.github.com starship.rs
+```
+- Includes **only the 7 direct dependencies** from your deps file
+- Launchpad auto-resolves and installs all transitive dependencies
+- **Recommended for Launchpad integrations**
+
+### Benefits of Direct Dependencies Only
+
+- **Faster installations**: Only install what you explicitly need
+- **Automatic resolution**: Package managers handle transitive dependencies
+- **Clean dependency files**: Focus on direct requirements
+- **Less network overhead**: Fewer explicit package downloads
+
+### Access to Full Dependency Tree
+
+While the install commands only include direct dependencies, the full resolved dependency tree is still available in the `packages` array for analysis, conflict resolution, or custom installation logic:
+
+```typescript
+const result = await resolveDependencies('./deps.yaml')
+
+// Install commands use direct deps only
+console.log(result.pkgxCommand) // "pkgx install bun.sh gnu.org/bash gnu.org/grep"
+
+// But full dependency tree is available for analysis
+console.log(`Resolved ${result.totalCount} total packages:`)
+result.packages.forEach(pkg => {
+  console.log(`${pkg.name}@${pkg.version}`)
+})
+```
 
 ## Troubleshooting
 

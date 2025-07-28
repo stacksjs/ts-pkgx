@@ -177,8 +177,9 @@ console.log(`Launchpad: Installing ${launchpadResult.totalCount} packages`)
 console.log(`Direct dependencies: ${launchpadResult.directCount}`)
 console.log(`Version conflicts resolved: ${launchpadResult.conflicts.length}`)
 
-// Install command ready for use
-console.log(launchpadResult.launchpadCommand)
+// Install commands ready for use (both use direct deps only)
+console.log('Launchpad:', launchpadResult.launchpadCommand)
+console.log('pkgx:', launchpadResult.pkgxCommand)
 
 // Resolve from YAML string
 const yamlContent = `
