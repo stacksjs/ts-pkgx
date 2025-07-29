@@ -9,6 +9,7 @@
  * @install `launchpad install node`
  * @name `node`
  * @dependencies `unicode.org^71`, `openssl.org@1.1`, `zlib.net@1`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
+ * @companions `npmjs.com`
  *
  * @example
  * ```typescript
@@ -56,7 +57,13 @@ export const nodePackage = {
   programs: [
     'node',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'npmjs.com',
+  ] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

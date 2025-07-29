@@ -77,6 +77,12 @@ This package depends on:
 - `zlib.net@1`
 - `linux:gnu.org/gcc/libstdcxx`
 
+## Related Packages
+
+These packages work well with node:
+
+- [`npmjs.com`](../npmjs.com/index.md) - the package manager for JavaScript
+
 ## Usage Examples
 
 ```typescript
