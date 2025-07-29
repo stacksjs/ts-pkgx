@@ -1,6 +1,6 @@
 # openresty.org
 
-> High Performance Web Platform Based on Nginx and LuaJIT
+> Package from pantry: openresty.org
 
 ## Package Information
 
@@ -20,29 +20,7 @@ launchpad install openresty.org
 
 This package provides the following executable programs:
 
-- `nginx-xml2pod`
-- `opm`
-- `resty`
-- `restydoc`
-- `restydoc-index`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.25.3.2`
-
-</details>
-
-**Latest Version**: `1.25.3.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +openresty.org@1.25.3.2 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

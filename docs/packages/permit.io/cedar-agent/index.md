@@ -1,6 +1,6 @@
 # cedar-agent
 
-> Cedar-agent is the easiest way to deploy and run Cedar
+> Package from pantry: permit.io/cedar-agent
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install cedar-agent
+launchpad install permit.io/cedar-agent
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `cedar-agent`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.2.1`, `0.2.0`, `0.1.4`, `0.1.3`
-
-</details>
-
-**Latest Version**: `0.2.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) cedar-agent -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

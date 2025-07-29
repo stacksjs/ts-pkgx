@@ -1,9 +1,7 @@
 /**
- * **postgresql.org/libpq** - pkgx package
+ * **libpq** - Package from pantry: postgresql.org/libpq
  *
  * @domain `postgresql.org/libpq`
- * @version `17.0.0` (4 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install postgresql.org/libpq`
  * @dependencies `kerberos.org`, `openssl.org^1.1`, `zlib.net^1`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
@@ -13,8 +11,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.postgresqlorglibpq
- * console.log(pkg.name)        // "postgresql.org/libpq"
- * console.log(pkg.versions[0]) // "17.0.0" (latest)
+ * console.log(pkg.name)        // "libpq"
+ * console.log(pkg.description) // "Package from pantry: postgresql.org/libpq"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/postgresql-org/libpq.md
@@ -24,7 +22,7 @@ export const postgresqlorglibpqPackage = {
   /**
    * The display name of this package.
    */
-  name: 'postgresql.org/libpq' as const,
+  name: 'libpq' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -32,15 +30,14 @@ export const postgresqlorglibpqPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/postgresql.org/libpq/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: postgresql.org/libpq' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install postgresql.org/libpq' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +postgresql.org/libpq -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install postgresql.org/libpq' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -55,19 +52,10 @@ export const postgresqlorglibpqPackage = {
     'unicode.org^71',
     'linux:gnu.org/readline',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '17.0.0',
-    '16.1.0',
-    '16.0.0',
-    '15.2.0',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +postgresql.org/libpq -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install postgresql.org/libpq' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/postgresql.org/libpq/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type PostgresqlorglibpqPackage = typeof postgresqlorglibpqPackage

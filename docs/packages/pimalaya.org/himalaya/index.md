@@ -1,6 +1,6 @@
 # himalaya
 
-> CLI email client written in Rust
+> Package from pantry: pimalaya.org/himalaya
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install himalaya
+launchpad install pimalaya.org/himalaya
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `himalaya`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.1.0`, `1.0.0`, `0.9.0`, `0.8.4`
-
-</details>
-
-**Latest Version**: `1.1.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) himalaya -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

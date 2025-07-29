@@ -1,6 +1,6 @@
 # networkx.org
 
-> Network Analysis in Python
+> Package from pantry: networkx.org
 
 ## Package Information
 
@@ -21,25 +21,6 @@ launchpad install networkx.org
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `3.5.0`, `3.4.2`, `3.4.1`, `3.4.0`, `3.3.0`
-- `3.2.1`
-
-</details>
-
-**Latest Version**: `3.5.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +networkx.org@3.5.0 -- $SHELL -i
-```
 
 ## Dependencies
 

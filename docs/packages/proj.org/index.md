@@ -1,11 +1,11 @@
-# proj
+# proj.org
 
-> PROJ - Cartographic Projections and Coordinate Transformations Library
+> Package from pantry: proj.org
 
 ## Package Information
 
 - **Domain**: `proj.org`
-- **Name**: `proj`
+- **Name**: `proj.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/proj.org/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install proj
+launchpad install proj.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `proj`
-
-## Available Versions
-
-<details>
-<summary>Show all 11 versions</summary>
-
-- `9.6.2`, `9.6.1`, `9.6.0`, `9.5.1`, `9.5.0`
-- `9.4.1`, `9.4.0`, `9.3.1`, `9.3.0`, `9.2.1`
-- `9.2.0`
-
-</details>
-
-**Latest Version**: `9.6.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) proj -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -56,7 +36,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.proj
+const pkg = pantry['proj.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
