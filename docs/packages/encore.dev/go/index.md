@@ -1,11 +1,11 @@
-# go
+# encore-go
 
-> Package from pantry: encore.dev/go
+> Encore's rolling fork of Go with added automatic tracing & instrumentation
 
 ## Package Information
 
 - **Domain**: `encore.dev/go`
-- **Name**: `go`
+- **Name**: `encore-go`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/encore.dev/go/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install encore.dev/go
+launchpad install encore-go
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `encore-go`
+
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `1.23.0`, `1.22.5`, `1.22.0`, `1.21.6`, `1.21.5`
+- `1.21.4`, `1.21.3`, `1.21.1`
+
+</details>
+
+**Latest Version**: `1.23.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) encore-go -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.go
+const pkg = pantry['encore-go']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,11 +1,11 @@
-# exiftool.org
+# exiftool
 
-> Package from pantry: exiftool.org
+> Perl lib for reading and writing EXIF metadata
 
 ## Package Information
 
 - **Domain**: `exiftool.org`
-- **Name**: `exiftool.org`
+- **Name**: `exiftool`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/exiftool.org/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install exiftool.org
+launchpad install exiftool
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `exiftool`
+
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `13.30.0`, `13.25.0`, `13.10.0`, `13.0.0`, `12.76.0`
+- `12.75.0`, `12.70.0`, `12.60.0`
+
+</details>
+
+**Latest Version**: `13.30.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) exiftool -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['exiftool.org']
+const pkg = pantry.exiftool
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

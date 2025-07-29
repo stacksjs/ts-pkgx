@@ -1,6 +1,6 @@
 # tig
 
-> Package from pantry: jonas.github.io/tig
+> Text interface for Git repositories
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install jonas.github.io/tig
+launchpad install tig
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `tig`
+
+## Available Versions
+
+<details>
+<summary>Show all 5 versions</summary>
+
+- `2.5.12`, `2.5.11`, `2.5.10`, `2.5.9`, `2.5.8`
+
+</details>
+
+**Latest Version**: `2.5.12`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) tig -- $SHELL -i
+```
 
 ## Dependencies
 

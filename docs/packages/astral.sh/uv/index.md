@@ -85,12 +85,6 @@ This package depends on:
 
 - `libgit2.org~1.7 # links to libgit2.so.1.7`
 
-## Related Packages
-
-These packages work well with astral.sh/uv:
-
-- [`python.org`](../../python.org/index.md) - Package from pantry: python.org
-
 ## Usage Examples
 
 ```typescript

@@ -1,6 +1,6 @@
 # licensed
 
-> Package from pantry: github.com/licensee/licensed
+> A Ruby gem to cache and verify the licenses of dependencies
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/licensee/licensed
+launchpad install licensed
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `licensed`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `5.0.4`
+
+</details>
+
+**Latest Version**: `5.0.4`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) licensed -- $SHELL -i
+```
 
 ## Dependencies
 

@@ -1,6 +1,6 @@
 # trurl
 
-> Package from pantry: curl.se/trurl
+> a command line tool for URL parsing and manipulation.
 
 ## Package Information
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install curl.se/trurl
+launchpad install trurl
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `trurl`
+
+## Available Versions
+
+<details>
+<summary>Show all 14 versions</summary>
+
+- `0.16.1`, `0.16.0`, `0.15.1`, `0.15.0`, `0.14.0`
+- `0.13.0`, `0.12.0`, `0.11.0`, `0.10.0`, `0.9.0`
+- `0.8.0`, `0.7.0`, `0.6.0`, `0.4.0`
+
+</details>
+
+**Latest Version**: `0.16.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) trurl -- $SHELL -i
+```
 
 ## Dependencies
 

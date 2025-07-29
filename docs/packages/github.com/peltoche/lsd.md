@@ -1,6 +1,6 @@
 # lsd
 
-> Package from pantry: github.com/peltoche/lsd
+> Clone of ls with colorful output, file type icons, and more
 
 ## Package Information
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/peltoche/lsd
+launchpad install lsd
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `lsd`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `1.1.5`, `1.1.3`, `1.1.2`, `1.1.1`, `1.1.0`
+- `1.0.0`, `0.23.1`
+
+</details>
+
+**Latest Version**: `1.1.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) lsd -- $SHELL -i
+```
 
 ## Dependencies
 

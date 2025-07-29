@@ -1,6 +1,6 @@
 # Networking
 
-*5 packages in this category*
+*9 packages in this category*
 
 Network tools, protocols, and communication software.
 
@@ -36,23 +36,63 @@ Cloudflare Tunnel client (formerly Argo Tunnel)
 
 ---
 
-### [curl.se](../packages/curl.se/index.md)
+### [curl.se](../packages/curl.se/index.md) (cURL, curl)
 
-Package from pantry: curl.se
+A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features
 
-**Programs**: None specified
+**Programs**: curl, curl-config
 
-**Install**: `launchpad install curl.se`
+**Install**: `launchpad install curl`
 
 ---
 
 ### [gnu.org/wget](../packages/gnu.org/wget/index.md) (wget)
 
-Package from pantry: gnu.org/wget
+Internet file retriever
 
-**Programs**: None specified
+**Programs**: wget
 
-**Install**: `launchpad install gnu.org/wget`
+**Install**: `launchpad install wget`
+
+---
+
+### [mosh.org](../packages/mosh.org/index.md) (mosh)
+
+Remote terminal application
+
+**Programs**: mosh-client, mosh-server
+
+**Install**: `launchpad install mosh`
+
+---
+
+### [nginx.org](../packages/nginx.org/index.md) (nginx)
+
+HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+
+**Programs**: nginx
+
+**Install**: `launchpad install nginx`
+
+---
+
+### [rsync.samba.org](../packages/rsync.samba.org/index.md) (rsync)
+
+An open source utility that provides fast incremental file transfer. It also has useful features for backup and restore operations among many other use cases.
+
+**Programs**: rsync, rsync-ssl
+
+**Install**: `launchpad install rsync`
+
+---
+
+### [traefik.io](../packages/traefik.io/index.md) (traefik)
+
+The Cloud Native Application Proxy
+
+**Programs**: traefik
+
+**Install**: `launchpad install traefik`
 
 ---
 

@@ -1,6 +1,6 @@
 # garm-provider-openstack
 
-> Package from pantry: github.com/cloudbase/garm-provider-openstack
+> Garm external provider for OpenStack
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/cloudbase/garm-provider-openstack
+launchpad install garm-provider-openstack
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `garm-provider-openstack`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.1.2`, `0.1.1`, `0.1.0`
+
+</details>
+
+**Latest Version**: `0.1.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) garm-provider-openstack -- $SHELL -i
+```
 
 ## Usage Examples
 

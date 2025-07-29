@@ -1,11 +1,11 @@
-# heif-converter-image
+# heif-converter
 
-> Package from pantry: github.com/MaestroError/heif-converter-image
+> heif-converter is a versatile command-line application, along with a Docker image, that offers an easy and efficient way to convert HEIC (and AVIF) images to other common formats like JPEG and PNG, and vice versa. It leverages the go-libheif module, a GoLang wrapper for the libheif library.
 
 ## Package Information
 
 - **Domain**: `github.com/MaestroError/heif-converter-image`
-- **Name**: `heif-converter-image`
+- **Name**: `heif-converter`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/MaestroError/heif-converter-image/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/MaestroError/heif-converter-image
+launchpad install heif-converter
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `heif-converter`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2023.6.23`
+
+</details>
+
+**Latest Version**: `2023.6.23`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) heif-converter -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['heif-converter-image']
+const pkg = pantry['heif-converter']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

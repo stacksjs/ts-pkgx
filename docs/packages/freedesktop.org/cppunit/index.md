@@ -1,11 +1,11 @@
-# cppunit
+# freedesktop.org/cppunit
 
-> Package from pantry: freedesktop.org/cppunit
+> Unit testing framework for C++
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/cppunit`
-- **Name**: `cppunit`
+- **Name**: `freedesktop.org/cppunit`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/cppunit/package.yml)
 
@@ -20,7 +20,26 @@ launchpad install freedesktop.org/cppunit
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `cppunit-config`
+- `DllPlugInTester`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.13.2`
+
+</details>
+
+**Latest Version**: `1.13.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +freedesktop.org/cppunit@1.13.2 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +47,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cppunit
+const pkg = pantry['freedesktop.org/cppunit']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

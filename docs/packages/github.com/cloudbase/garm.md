@@ -1,11 +1,11 @@
-# garm
+# cloudbase/garm
 
-> Package from pantry: github.com/cloudbase/garm
+> GitHub Actions Runner Manager
 
 ## Package Information
 
 - **Domain**: `github.com/cloudbase/garm`
-- **Name**: `garm`
+- **Name**: `cloudbase/garm`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/cloudbase/garm/package.yml)
 
@@ -20,7 +20,26 @@ launchpad install github.com/cloudbase/garm
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `garm`
+- `garm-cli`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.1.6`, `0.1.5`, `0.1.4`
+
+</details>
+
+**Latest Version**: `0.1.6`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +github.com/cloudbase/garm@0.1.6 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +47,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.garm
+const pkg = pantry['cloudbase/garm']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

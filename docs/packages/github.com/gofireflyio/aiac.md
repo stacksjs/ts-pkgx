@@ -1,6 +1,6 @@
 # aiac
 
-> Package from pantry: github.com/gofireflyio/aiac
+> Artificial Intelligence Infrastructure-as-Code Generator.
 
 ## Package Information
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/gofireflyio/aiac
+launchpad install aiac
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `aiac`
+
+## Available Versions
+
+<details>
+<summary>Show all 18 versions</summary>
+
+- `5.3.0`, `5.2.1`, `5.2.0`, `5.1.1`, `5.1.0`
+- `5.0.1`, `5.0.0`, `4.3.0`, `4.2.0`, `4.1.0`
+- `4.0.0`, `2.5.0`, `2.4.0`, `2.3.0`, `2.2.0`
+- `2.1.0`, `2.0.0`, `1.0.0`
+
+</details>
+
+**Latest Version**: `5.3.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) aiac -- $SHELL -i
+```
 
 ## Usage Examples
 

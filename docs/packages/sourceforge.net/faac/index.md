@@ -1,6 +1,6 @@
 # faac
 
-> Package from pantry: sourceforge.net/faac
+> Freeware Advanced Audio Coder faac mirror
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install sourceforge.net/faac
+launchpad install faac
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `faac`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `1.30.0`
+
+</details>
+
+**Latest Version**: `1.30.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) faac -- $SHELL -i
+```
 
 ## Usage Examples
 

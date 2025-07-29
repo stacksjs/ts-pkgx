@@ -1,6 +1,6 @@
 # ffmpeg.org
 
-> Package from pantry: ffmpeg.org
+> Play, record, convert, and stream audio and video
 
 ## Package Information
 
@@ -20,7 +20,31 @@ launchpad install ffmpeg.org
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `ffmpeg`
+- `ffplay`
+- `ffprobe`
+
+## Available Versions
+
+<details>
+<summary>Show all 24 versions</summary>
+
+- `7.1.1`, `7.1.0`, `7.0.2`, `7.0.1`, `7.0.0`
+- `6.1.2`, `6.1.1`, `6.1.0`, `6.0.1`, `6.0.0`
+- `5.1.6`, `5.1.5`, `5.1.4`, `5.1.2`, `4.4.6`
+- `4.4.5`, `4.3.9`, `4.3.8`, `4.3.7`, `4.2.11`
+- `4.2.10`, `4.1.11`, `3.4.14`, `3.4.13`
+
+</details>
+
+**Latest Version**: `7.1.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +ffmpeg.org@7.1.1 -- $SHELL -i
+```
 
 ## Dependencies
 

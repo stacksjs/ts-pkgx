@@ -1,6 +1,6 @@
 # Package Managers
 
-*6 packages in this category*
+*17 packages in this category*
 
 Packages related to package managers.
 
@@ -36,33 +36,143 @@ Dependency manager for Cocoa projects
 
 ---
 
-### [nodejs.org/corepack](../packages/nodejs.org/corepack/index.md) (corepack)
+### [getcomposer.org](../packages/getcomposer.org/index.md) (composer)
 
-Package from pantry: nodejs.org/corepack
+Dependency Manager for PHP
 
-**Programs**: None specified
+**Programs**: composer, composer.phar
 
-**Install**: `launchpad install nodejs.org/corepack`
+**Install**: `launchpad install composer`
 
 ---
 
-### [npmjs.com](../packages/npmjs.com/index.md)
+### [luarocks.org](../packages/luarocks.org/index.md) (luarocks)
 
-Package from pantry: npmjs.com
+LuaRocks is the package manager for the Lua programming language.
 
-**Programs**: None specified
+**Programs**: luarocks, luarocks-admin
 
-**Install**: `launchpad install npmjs.com`
+**Install**: `launchpad install luarocks`
+
+---
+
+### [mise.jdx.dev](../packages/mise.jdx.dev/index.md) (mise)
+
+dev tools, env vars, task runner
+
+**Programs**: rtx, mise
+
+**Install**: `launchpad install mise`
+
+---
+
+### [nixpacks.com](../packages/nixpacks.com/index.md) (nixpacks)
+
+App source + Nix packages + Docker = Image
+
+**Programs**: nixpacks
+
+**Install**: `launchpad install nixpacks`
+
+---
+
+### [nodejs.org/corepack](../packages/nodejs.org/corepack/index.md) (corepack)
+
+Platform built on V8 to build network applications
+
+**Programs**: corepack
+
+**Install**: `launchpad install corepack`
+
+---
+
+### [npmjs.com](../packages/npmjs.com/index.md) (npm)
+
+the package manager for JavaScript
+
+**Programs**: npm, npx
+
+**Install**: `launchpad install npm`
+
+---
+
+### [pdm.fming.dev](../packages/pdm.fming.dev/index.md) (pdm)
+
+A modern Python package and dependency manager supporting the latest PEP standards
+
+**Programs**: pdm
+
+**Install**: `launchpad install pdm`
+
+---
+
+### [pip.pypa.io](../packages/pip.pypa.io/index.md) (pip)
+
+The Python package installer
+
+**Programs**: pip, pip3.8, pip3.9, pip3.10, pip3.11
+
+**Install**: `launchpad install pip`
+
+---
+
+### [pipenv.pypa.io](../packages/pipenv.pypa.io/index.md) (pipenv)
+
+Python Development Workflow for Humans.
+
+**Programs**: pipenv
+
+**Install**: `launchpad install pipenv`
+
+---
+
+### [pkgx.sh](../packages/pkgx.sh/index.md) (pkgx)
+
+Standalone binary that can run anything
+
+**Programs**: pkgx
+
+**Install**: `launchpad install pkgx`
+
+---
+
+### [pnpm.io](../packages/pnpm.io/index.md) (pnpm)
+
+Fast, disk space efficient package manager
+
+**Programs**: pnpm, pnpx
+
+**Install**: `launchpad install pnpm`
+
+---
+
+### [python-poetry.org](../packages/python-poetry.org/index.md) (poetry)
+
+Python packaging and dependency management made easy
+
+**Programs**: poetry
+
+**Install**: `launchpad install poetry`
 
 ---
 
 ### [rust-lang.org/cargo](../packages/rust-lang.org/cargo/index.md) (cargo)
 
-Package from pantry: rust-lang.org/cargo
+The Rust package manager
 
-**Programs**: None specified
+**Programs**: cargo
 
-**Install**: `launchpad install rust-lang.org/cargo`
+**Install**: `launchpad install cargo`
+
+---
+
+### [rye.astral.sh](../packages/rye.astral.sh/index.md) (rye)
+
+Experimental Package Management Solution for Python
+
+**Programs**: rye
+
+**Install**: `launchpad install rye`
 
 ---
 

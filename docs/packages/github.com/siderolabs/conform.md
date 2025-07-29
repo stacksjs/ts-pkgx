@@ -1,6 +1,6 @@
 # conform
 
-> Package from pantry: github.com/siderolabs/conform
+> Policy enforcement for your pipelines.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/siderolabs/conform
+launchpad install conform
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `conform`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2022.10.25`
+
+</details>
+
+**Latest Version**: `2022.10.25`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) conform -- $SHELL -i
+```
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# build
+# pyproject-build
 
-> Package from pantry: github.com/pypa/build
+> A simple, correct Python build frontend
 
 ## Package Information
 
 - **Domain**: `github.com/pypa/build`
-- **Name**: `build`
+- **Name**: `pyproject-build`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/pypa/build/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/pypa/build
+launchpad install pyproject-build
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pyproject-build`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `1.2.2`, `1.2.1`, `1.2.0`, `1.1.1`, `1.1.0`
+- `1.0.3`, `1.0.1`, `1.0.0`, `0.10.0`
+
+</details>
+
+**Latest Version**: `1.2.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) pyproject-build -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.build
+const pkg = pantry['pyproject-build']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

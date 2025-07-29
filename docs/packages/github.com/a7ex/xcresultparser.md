@@ -1,6 +1,6 @@
 # xcresultparser
 
-> Package from pantry: github.com/a7ex/xcresultparser
+> Parse the binary xcresult bundle from Xcode builds and testruns
 
 ## Package Information
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/a7ex/xcresultparser
+launchpad install xcresultparser
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `xcresultparser`
+
+## Available Versions
+
+<details>
+<summary>Show all 16 versions</summary>
+
+- `1.8.5`, `1.8.4`, `1.8.3`, `1.8.2`, `1.8.1`
+- `1.8.0`, `1.7.2`, `1.7.1`, `1.7.0`, `1.6.5`
+- `1.6.4`, `1.6.3`, `1.6.2`, `1.6.1`, `1.6.0`
+- `1.5.2`
+
+</details>
+
+**Latest Version**: `1.8.5`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) xcresultparser -- $SHELL -i
+```
 
 ## Usage Examples
 

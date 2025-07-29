@@ -1,11 +1,11 @@
-# onefetch.dev
+# onefetch
 
-> Package from pantry: onefetch.dev
+> Command-line Git information tool
 
 ## Package Information
 
 - **Domain**: `onefetch.dev`
-- **Name**: `onefetch.dev`
+- **Name**: `onefetch`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/onefetch.dev/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install onefetch.dev
+launchpad install onefetch
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `onefetch`
+
+## Available Versions
+
+<details>
+<summary>Show all 9 versions</summary>
+
+- `2.25.0`, `2.24.0`, `2.23.1`, `2.23.0`, `2.22.0`
+- `2.21.0`, `2.20.0`, `2.19.0`, `2.18.1`
+
+</details>
+
+**Latest Version**: `2.25.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) onefetch -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['onefetch.dev']
+const pkg = pantry.onefetch
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

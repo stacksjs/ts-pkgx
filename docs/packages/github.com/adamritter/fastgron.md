@@ -1,6 +1,6 @@
 # fastgron
 
-> Package from pantry: github.com/adamritter/fastgron
+> High-performance JSON to GRON (greppable, flattened JSON) converter
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/adamritter/fastgron
+launchpad install fastgron
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `fastgron`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `0.7.7`
+
+</details>
+
+**Latest Version**: `0.7.7`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) fastgron -- $SHELL -i
+```
 
 ## Dependencies
 
