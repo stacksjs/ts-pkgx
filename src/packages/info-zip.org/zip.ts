@@ -1,24 +1,34 @@
 /**
- * **zip** - Package from pantry: info-zip.org/zip
+ * **zip** - Compression and file packaging/archive utility
  *
  * @domain `info-zip.org/zip`
+ * @programs `zip`, `zipcloak`, `zipnote`, `zipsplit`
+ * @version `3.0.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install info-zip.org/zip`
+ * @install `launchpad install zip`
+ * @name `zip`
  * @dependencies `sourceware.org/bzip2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.infoziporgzip
+ * // Access the package
+ * const pkg = pantry.zip
+ * // Or access via domain
+ * const samePkg = pantry.infoziporgzip
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "zip"
- * console.log(pkg.description) // "Package from pantry: info-zip.org/zip"
+ * console.log(pkg.description) // "Compression and file packaging/archive utility"
+ * console.log(pkg.programs)    // ["zip", "zipcloak", ...]
+ * console.log(pkg.versions[0]) // "3.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/info-zip-org/zip.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const infoziporgzipPackage = {
+export const zipPackage = {
   /**
    * The display name of this package.
    */
@@ -30,15 +40,25 @@ export const infoziporgzipPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: info-zip.org/zip' as const,
+  description: 'Compression and file packaging/archive utility' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/info-zip.org/zip/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install info-zip.org/zip' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +info-zip.org/zip -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install info-zip.org/zip' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install zip' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'zip',
+    'zipcloak',
+    'zipnote',
+    'zipsplit',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +67,20 @@ export const infoziporgzipPackage = {
   dependencies: [
     'sourceware.org/bzip2',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/info-zip.org/zip/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.0.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +info-zip.org/zip -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zip' as const,
 }
 
-export type InfoziporgzipPackage = typeof infoziporgzipPackage
+export type ZipPackage = typeof zipPackage

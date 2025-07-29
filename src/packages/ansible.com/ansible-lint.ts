@@ -3,7 +3,7 @@
  *
  * @domain `ansible.com/ansible-lint`
  * @programs `ansible-lint`
- * @version `25.6.1` (23 versions available)
+ * @version `25.7.0` (24 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ansible-lint`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "ansible-lint"
  * console.log(pkg.description) // "ansible-lint checks playbooks for practices and..."
  * console.log(pkg.programs)    // ["ansible-lint"]
- * console.log(pkg.versions[0]) // "25.6.1" (latest)
+ * console.log(pkg.versions[0]) // "25.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ansible-com/ansible-lint.md
@@ -69,6 +69,7 @@ export const ansiblelintPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '25.7.0',
     '25.6.1',
     '25.6.0',
     '25.5.0',

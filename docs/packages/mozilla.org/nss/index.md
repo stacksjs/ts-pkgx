@@ -1,11 +1,11 @@
-# nss
+# mozilla.org/nss
 
-> Package from pantry: mozilla.org/nss
+> Libraries for security-enabled client and server applications
 
 ## Package Information
 
 - **Domain**: `mozilla.org/nss`
-- **Name**: `nss`
+- **Name**: `mozilla.org/nss`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mozilla.org/nss/package.yml)
 
@@ -20,7 +20,85 @@ launchpad install mozilla.org/nss
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `addbuiltin`
+- `certutil`
+- `crmftest`
+- `ecperf`
+- `listsuites`
+- `multinit`
+- `ocspresp`
+- `p7verify`
+- `pk12util`
+- `remtest`
+- `secmodtest`
+- `ssltap`
+- `vfychain`
+- `atob`
+- `chktest`
+- `dbtest`
+- `encodeinttest`
+- `nonspr10`
+- `oidcalc`
+- `pk11ectest`
+- `pk1sign`
+- `rsaperf`
+- `selfserv`
+- `strsclnt`
+- `vfyserv`
+- `baddbdir`
+- `cmsutil`
+- `derdump`
+- `fbectest`
+- `makepqg`
+- `nss-config`
+- `p7content`
+- `pk11gcmtest`
+- `pkix-errcodes`
+- `rsapoptst`
+- `shlibsign`
+- `symkeyutil`
+- `bltest`
+- `conflict`
+- `dertimetest`
+- `fipstest`
+- `mangle`
+- `nss-policy-check`
+- `p7env`
+- `pk11importtest`
+- `pp`
+- `sdbthreadtst`
+- `signtool`
+- `tstclnt`
+- `btoa`
+- `crlutil`
+- `digest`
+- `httpserv`
+- `modutil`
+- `ocspclnt`
+- `p7sign`
+- `pk11mode`
+- `pwdecrypt`
+- `sdrtest`
+- `signver`
+- `validation`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `3.92.0`
+
+</details>
+
+**Latest Version**: `3.92.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +mozilla.org/nss@3.92.0 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -36,7 +114,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.nss
+const pkg = pantry['mozilla.org/nss']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

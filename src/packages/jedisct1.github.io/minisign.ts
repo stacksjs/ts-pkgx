@@ -1,23 +1,33 @@
 /**
- * **minisign** - Package from pantry: jedisct1.github.io/minisign
+ * **minisign** - A dead simple tool to sign files and verify digital signatures.
  *
  * @domain `jedisct1.github.io/minisign`
+ * @programs `minisign`
+ * @version `0.12.0` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install jedisct1.github.io/minisign`
+ * @install `launchpad install minisign`
+ * @name `minisign`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.jedisct1githubiominisign
+ * // Access the package
+ * const pkg = pantry.minisign
+ * // Or access via domain
+ * const samePkg = pantry.jedisct1githubiominisign
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "minisign"
- * console.log(pkg.description) // "Package from pantry: jedisct1.github.io/minisign"
+ * console.log(pkg.description) // "A dead simple tool to sign files and verify dig..."
+ * console.log(pkg.programs)    // ["minisign"]
+ * console.log(pkg.versions[0]) // "0.12.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/jedisct1-github-io/minisign.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jedisct1githubiominisignPackage = {
+export const minisignPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,39 @@ export const jedisct1githubiominisignPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: jedisct1.github.io/minisign' as const,
+  description: 'A dead simple tool to sign files and verify digital signatures.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jedisct1.github.io/minisign/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install jedisct1.github.io/minisign' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jedisct1.github.io/minisign -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jedisct1.github.io/minisign' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install minisign' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'minisign',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jedisct1.github.io/minisign/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.12.0',
+    '0.11.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) minisign -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install minisign' as const,
 }
 
-export type Jedisct1githubiominisignPackage = typeof jedisct1githubiominisignPackage
+export type MinisignPackage = typeof minisignPackage

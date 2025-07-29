@@ -3,7 +3,7 @@
  *
  * @domain `eksctl.io`
  * @programs `eksctl`
- * @version `0.211.0` (58 versions available)
+ * @version `0.212.0` (59 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install eksctl`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "eksctl"
  * console.log(pkg.description) // "Simple command-line tool for creating clusters ..."
  * console.log(pkg.programs)    // ["eksctl"]
- * console.log(pkg.versions[0]) // "0.211.0" (latest)
+ * console.log(pkg.versions[0]) // "0.212.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/eksctl-io.md
@@ -69,6 +69,7 @@ export const eksctlPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.212.0',
     '0.211.0',
     '0.210.0',
     '0.209.0',

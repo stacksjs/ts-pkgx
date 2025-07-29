@@ -1,11 +1,11 @@
-# infracost.io
+# infracost
 
-> Package from pantry: infracost.io
+> Cloud cost estimates for Terraform in pull requests💰📉 Shift FinOps Left!
 
 ## Package Information
 
 - **Domain**: `infracost.io`
-- **Name**: `infracost.io`
+- **Name**: `infracost`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/infracost.io/package.yml)
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install infracost.io
+launchpad install infracost
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `infracost`
+
+## Available Versions
+
+<details>
+<summary>Show all 11 versions</summary>
+
+- `0.10.42`, `0.10.41`, `0.10.40`, `0.10.39`, `0.10.38`
+- `0.10.37`, `0.10.36`, `0.10.35`, `0.10.34`, `0.10.33`
+- `0.10.32`
+
+</details>
+
+**Latest Version**: `0.10.42`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) infracost -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +48,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['infracost.io']
+const pkg = pantry.infracost
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

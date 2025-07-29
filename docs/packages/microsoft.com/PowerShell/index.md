@@ -1,11 +1,11 @@
-# PowerShell
+# pwsh
 
-> Package from pantry: microsoft.com/PowerShell
+> PowerShell for every system!
 
 ## Package Information
 
 - **Domain**: `microsoft.com/PowerShell`
-- **Name**: `PowerShell`
+- **Name**: `pwsh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/PowerShell/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install microsoft.com/PowerShell
+launchpad install pwsh
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pwsh`
+
+## Available Versions
+
+<details>
+<summary>Show all 8 versions</summary>
+
+- `7.5.2`, `7.5.1`, `7.5.0`, `7.4.11`, `7.4.10`
+- `7.4.7`, `7.4.5`, `7.2.24`
+
+</details>
+
+**Latest Version**: `7.5.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) pwsh -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -35,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.PowerShell
+const pkg = pantry.pwsh
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

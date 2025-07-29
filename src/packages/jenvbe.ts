@@ -1,27 +1,37 @@
 /**
- * **jenv.be** - Package from pantry: jenv.be
+ * **jenv** - Manage your Java environment
  *
  * @domain `jenv.be`
+ * @programs `jenv`
+ * @version `0.5.9` (4 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install jenv.be`
+ * @install `launchpad install jenv`
+ * @name `jenv`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.jenvbe
- * console.log(pkg.name)        // "jenv.be"
- * console.log(pkg.description) // "Package from pantry: jenv.be"
+ * // Access the package
+ * const pkg = pantry.jenv
+ * // Or access via domain
+ * const samePkg = pantry.jenvbe
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "jenv"
+ * console.log(pkg.description) // "Manage your Java environment"
+ * console.log(pkg.programs)    // ["jenv"]
+ * console.log(pkg.versions[0]) // "0.5.9" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/jenv-be.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jenvbePackage = {
+export const jenvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jenv.be' as const,
+  name: 'jenv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -29,21 +39,41 @@ export const jenvbePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: jenv.be' as const,
+  description: 'Manage your Java environment' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jenv.be/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install jenv.be' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jenv.be -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jenv.be' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install jenv' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'jenv',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jenv.be/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.5.9',
+    '0.5.8',
+    '0.5.7',
+    '0.5.6',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jenv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jenv' as const,
 }
 
-export type JenvbePackage = typeof jenvbePackage
+export type JenvPackage = typeof jenvPackage
