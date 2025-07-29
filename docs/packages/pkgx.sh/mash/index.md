@@ -1,6 +1,6 @@
 # mash
 
-> mash up millions of open source packages into monstrously powerful scripts
+> Package from pantry: pkgx.sh/mash
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install mash
+launchpad install pkgx.sh/mash
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mash`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `0.4.0`, `0.3.1`, `0.3.0`, `0.2.0`, `0.1.0`
-
-</details>
-
-**Latest Version**: `0.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) mash -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

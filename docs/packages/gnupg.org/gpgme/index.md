@@ -1,6 +1,6 @@
 # gpgme
 
-> Library access to GnuPG
+> Package from pantry: gnupg.org/gpgme
 
 ## Package Information
 
@@ -13,36 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gpgme
+launchpad install gnupg.org/gpgme
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gpgme-config`
-- `gpgme-json`
-- `gpgme-tool`
-
-## Available Versions
-
-<details>
-<summary>Show all 11 versions</summary>
-
-- `2.0.0`, `1.24.3`, `1.24.2`, `1.24.1`, `1.24.0`
-- `1.23.2`, `1.23.1`, `1.23.0`, `1.22.0`, `1.19.0`
-- `1.5.1`
-
-</details>
-
-**Latest Version**: `2.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnupg.org/gpgme@2.0.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

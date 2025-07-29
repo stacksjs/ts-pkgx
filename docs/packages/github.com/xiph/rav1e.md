@@ -1,6 +1,6 @@
 # rav1e
 
-> Fastest and safest AV1 video encoder
+> Package from pantry: github.com/xiph/rav1e
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install rav1e
+launchpad install github.com/xiph/rav1e
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `rav1e`
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `0.8.1`, `0.8.0`, `0.7.1`, `0.7.0`, `0.6.6`
-- `0.6.5`, `0.6.4`, `0.6.3`
-
-</details>
-
-**Latest Version**: `0.8.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) rav1e -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

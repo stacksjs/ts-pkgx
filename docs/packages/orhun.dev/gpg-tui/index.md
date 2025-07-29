@@ -1,6 +1,6 @@
 # gpg-tui
 
-> Manage your GnuPG keys with ease! 🔐
+> Package from pantry: orhun.dev/gpg-tui
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gpg-tui
+launchpad install orhun.dev/gpg-tui
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gpg-tui`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `0.11.1`, `0.11.0`, `0.10.0`
-
-</details>
-
-**Latest Version**: `0.11.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) gpg-tui -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

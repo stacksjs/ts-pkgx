@@ -1,6 +1,6 @@
 # xh
 
-> Friendly and fast tool for sending HTTP requests
+> Package from pantry: crates.io/xh
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install xh
+launchpad install crates.io/xh
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `xh`
-
-## Available Versions
-
-<details>
-<summary>Show all 5 versions</summary>
-
-- `0.24.1`, `0.24.0`, `0.23.1`, `0.23.0`, `0.22.2`
-
-</details>
-
-**Latest Version**: `0.24.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) xh -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

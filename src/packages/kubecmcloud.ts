@@ -1,37 +1,27 @@
 /**
- * **kubecm** - Manage your kubeconfig more easily.
+ * **kubecm.cloud** - Package from pantry: kubecm.cloud
  *
  * @domain `kubecm.cloud`
- * @programs `kubecm`
- * @version `0.33.1` (11 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install kubecm`
- * @name `kubecm`
+ * @install `launchpad install kubecm.cloud`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.kubecm
- * // Or access via domain
- * const samePkg = pantry.kubecmcloud
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "kubecm"
- * console.log(pkg.description) // "Manage your kubeconfig more easily."
- * console.log(pkg.programs)    // ["kubecm"]
- * console.log(pkg.versions[0]) // "0.33.1" (latest)
+ * const pkg = pantry.kubecmcloud
+ * console.log(pkg.name)        // "kubecm.cloud"
+ * console.log(pkg.description) // "Package from pantry: kubecm.cloud"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kubecm-cloud.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kubecmPackage = {
+export const kubecmcloudPackage = {
   /**
    * The display name of this package.
    */
-  name: 'kubecm' as const,
+  name: 'kubecm.cloud' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,48 +29,21 @@ export const kubecmPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Manage your kubeconfig more easily.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kubecm.cloud/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: kubecm.cloud' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install kubecm' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'kubecm',
-  ] as const,
+  installCommand: 'launchpad install kubecm.cloud' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kubecm.cloud -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kubecm.cloud' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.33.1',
-    '0.33.0',
-    '0.32.3',
-    '0.32.2',
-    '0.32.1',
-    '0.32.0',
-    '0.31.0',
-    '0.30.0',
-    '0.29.1',
-    '0.29.0',
-    '0.28.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kubecm -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install kubecm' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kubecm.cloud/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type KubecmPackage = typeof kubecmPackage
+export type KubecmcloudPackage = typeof kubecmcloudPackage

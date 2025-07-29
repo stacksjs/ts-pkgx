@@ -1,6 +1,6 @@
 # gti
 
-> ASCII-art displaying typo-corrector for commands
+> Package from pantry: r-wos.org/gti
 
 ## Package Information
 
@@ -13,40 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gti
+launchpad install r-wos.org/gti
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gti`
-
-## Available Versions
-
-<details>
-<summary>Show all 43 versions</summary>
-
-- `1.9.1`, `1.9.1`, `1.9.1`, `1.9.1`, `1.9.1`
-- `1.9.1`, `1.9.1`, `1.9.1`, `1.9.1`, `1.9.1`
-- `1.9.1`, `1.9.1`, `1.9.1`, `1.9.1`, `1.9.1`
-- `1.9.1`, `1.9.1`, `1.9.1`, `1.9.1`, `1.9.1`
-- `1.9.1`, `1.9.1`, `1.9.1`, `1.9.1`, `1.9.1`
-- `1.9.1`, `1.9.1`, `1.9.1`, `1.9.1`, `1.9.1`
-- `1.9.1`, `1.9.1`, `1.9.1`, `1.9.1`, `1.9.1`
-- `1.9.1`, `1.9.1`, `1.9.1`, `1.9.1`, `1.9.1`
-- `1.9.1`, `1.9.0`, `1.8.0`
-
-</details>
-
-**Latest Version**: `1.9.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) gti -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

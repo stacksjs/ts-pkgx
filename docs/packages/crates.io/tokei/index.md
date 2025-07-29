@@ -1,6 +1,6 @@
 # tokei
 
-> Program that allows you to count code, quickly
+> Package from pantry: crates.io/tokei
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install tokei
+launchpad install crates.io/tokei
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `tokei`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `12.1.2`
-
-</details>
-
-**Latest Version**: `12.1.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) tokei -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

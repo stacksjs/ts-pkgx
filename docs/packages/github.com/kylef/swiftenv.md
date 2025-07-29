@@ -1,6 +1,6 @@
 # swiftenv
 
-> Swift Version Manager
+> Package from pantry: github.com/kylef/swiftenv
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install swiftenv
+launchpad install github.com/kylef/swiftenv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `swiftenv`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.4.0`
-
-</details>
-
-**Latest Version**: `1.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) swiftenv -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

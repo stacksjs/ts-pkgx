@@ -1,6 +1,6 @@
 # sparsecat
 
-> CLI tool that reduces bandwidth usage when transmitting sparse files.
+> Package from pantry: github.com/svenwiltink/sparsecat
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install sparsecat
+launchpad install github.com/svenwiltink/sparsecat
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `sparsecat`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.0.1`
-
-</details>
-
-**Latest Version**: `1.0.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) sparsecat -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

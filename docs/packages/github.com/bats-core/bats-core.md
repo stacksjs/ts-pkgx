@@ -1,11 +1,11 @@
-# bats
+# bats-core
 
-> Bash Automated Testing System
+> Package from pantry: github.com/bats-core/bats-core
 
 ## Package Information
 
 - **Domain**: `github.com/bats-core/bats-core`
-- **Name**: `bats`
+- **Name**: `bats-core`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/bats-core/bats-core/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install bats
+launchpad install github.com/bats-core/bats-core
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `bats`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `1.12.0`, `1.11.1`, `1.11.0`, `1.10.0`
-
-</details>
-
-**Latest Version**: `1.12.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) bats -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -52,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.bats
+const pkg = pantry['bats-core']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

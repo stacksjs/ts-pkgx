@@ -1,6 +1,6 @@
 # yamllint
 
-> A linter for YAML files.
+> Package from pantry: github.com/adrienverge/yamllint
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install yamllint
+launchpad install github.com/adrienverge/yamllint
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `yamllint`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `1.37.1`, `1.37.0`, `1.36.2`, `1.36.1`, `1.36.0`
-- `1.35.1`, `1.35.0`, `1.34.0`, `1.33.0`, `1.32.0`
-
-</details>
-
-**Latest Version**: `1.37.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) yamllint -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

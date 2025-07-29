@@ -1,39 +1,28 @@
 /**
- * **crystal** - Fast and statically typed, compiled language with Ruby-like syntax
+ * **crystal-lang.org** - Package from pantry: crystal-lang.org
  *
  * @domain `crystal-lang.org`
- * @programs `crystal`
- * @version `1.17.1` (21 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install crystal`
- * @name `crystal`
+ * @install `launchpad install crystal-lang.org`
  * @dependencies `hboehm.info/gc^8`, `gnu.org/gmp^6`, `libevent.org^2`, ... (+7 more)
- * @companions `crystal-lang.org/shards`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.crystal
- * // Or access via domain
- * const samePkg = pantry.crystallangorg
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "crystal"
- * console.log(pkg.description) // "Fast and statically typed, compiled language wi..."
- * console.log(pkg.programs)    // ["crystal"]
- * console.log(pkg.versions[0]) // "1.17.1" (latest)
+ * const pkg = pantry.crystallangorg
+ * console.log(pkg.name)        // "crystal-lang.org"
+ * console.log(pkg.description) // "Package from pantry: crystal-lang.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crystal-lang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const crystalPackage = {
+export const crystallangorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'crystal' as const,
+  name: 'crystal-lang.org' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,29 +30,16 @@ export const crystalPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Fast and statically typed, compiled language with Ruby-like syntax' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crystal-lang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: crystal-lang.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install crystal' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'crystal',
-  ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'crystal-lang.org/shards',
-  ] as const,
+  installCommand: 'launchpad install crystal-lang.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crystal-lang.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crystal-lang.org' as const,
+  programs: [] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -80,40 +56,10 @@ export const crystalPackage = {
     'sourceware.org/libffi^3',
     'invisible-island.net/ncurses^6',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.17.1',
-    '1.17.0',
-    '1.16.3',
-    '1.16.2',
-    '1.16.1',
-    '1.16.0',
-    '1.15.1',
-    '1.15.0',
-    '1.14.1',
-    '1.14.0',
-    '1.13.3',
-    '1.13.2',
-    '1.13.1',
-    '1.13.0',
-    '1.12.2',
-    '1.12.1',
-    '1.12.0',
-    '1.11.2',
-    '1.11.1',
-    '1.11.0',
-    '1.10.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) crystal -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crystal' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crystal-lang.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type CrystalPackage = typeof crystalPackage
+export type CrystallangorgPackage = typeof crystallangorgPackage

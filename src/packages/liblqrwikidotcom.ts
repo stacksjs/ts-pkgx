@@ -1,9 +1,7 @@
 /**
- * **liblqr.wikidot.com** - Liquid Rescale library
+ * **liblqr.wikidot.com** - Package from pantry: liblqr.wikidot.com
  *
  * @domain `liblqr.wikidot.com`
- * @version `0.4.3` (2 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install liblqr.wikidot.com`
  * @dependencies `gnome.org/glib`
@@ -14,8 +12,7 @@
  *
  * const pkg = pantry.liblqrwikidotcom
  * console.log(pkg.name)        // "liblqr.wikidot.com"
- * console.log(pkg.description) // "Liquid Rescale library"
- * console.log(pkg.versions[0]) // "0.4.3" (latest)
+ * console.log(pkg.description) // "Package from pantry: liblqr.wikidot.com"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/liblqr-wikidot-com.md
@@ -33,15 +30,14 @@ export const liblqrwikidotcomPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Liquid Rescale library' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/liblqr.wikidot.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: liblqr.wikidot.com' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install liblqr.wikidot.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +liblqr.wikidot.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install liblqr.wikidot.com' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -51,17 +47,10 @@ export const liblqrwikidotcomPackage = {
   dependencies: [
     'gnome.org/glib',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.4.3',
-    '0.4.2',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +liblqr.wikidot.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install liblqr.wikidot.com' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/liblqr.wikidot.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type LiblqrwikidotcomPackage = typeof liblqrwikidotcomPackage

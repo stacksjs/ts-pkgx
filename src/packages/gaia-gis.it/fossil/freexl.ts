@@ -1,9 +1,7 @@
 /**
- * **gaia-gis.it/fossil/freexl** - pkgx package
+ * **freexl** - Package from pantry: gaia-gis.it/fossil/freexl
  *
  * @domain `gaia-gis.it/fossil/freexl`
- * @version `2.0.0` (2 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install gaia-gis.it/fossil/freexl`
  * @dependencies `zlib.net/minizip^1`, `libexpat.github.io^2`
@@ -13,8 +11,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gaiagisitfossilfreexl
- * console.log(pkg.name)        // "gaia-gis.it/fossil/freexl"
- * console.log(pkg.versions[0]) // "2.0.0" (latest)
+ * console.log(pkg.name)        // "freexl"
+ * console.log(pkg.description) // "Package from pantry: gaia-gis.it/fossil/freexl"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gaia-gis-it/fossil/freexl.md
@@ -24,7 +22,7 @@ export const gaiagisitfossilfreexlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gaia-gis.it/fossil/freexl' as const,
+  name: 'freexl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -32,15 +30,14 @@ export const gaiagisitfossilfreexlPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gaia-gis.it/fossil/freexl/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: gaia-gis.it/fossil/freexl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gaia-gis.it/fossil/freexl' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gaia-gis.it/fossil/freexl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gaia-gis.it/fossil/freexl' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -51,17 +48,10 @@ export const gaiagisitfossilfreexlPackage = {
     'zlib.net/minizip^1',
     'libexpat.github.io^2',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.0.0',
-    '1.0.6',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gaia-gis.it/fossil/freexl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gaia-gis.it/fossil/freexl' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gaia-gis.it/fossil/freexl/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type GaiagisitfossilfreexlPackage = typeof gaiagisitfossilfreexlPackage

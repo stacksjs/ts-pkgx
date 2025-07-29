@@ -1,6 +1,6 @@
 # rawdog
 
-> Generate and auto-execute Python scripts in the cli
+> Package from pantry: github.com/abanteai/rawdog
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install rawdog
+launchpad install github.com/abanteai/rawdog
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `rawdog`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.1.6`
-
-</details>
-
-**Latest Version**: `0.1.6`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) rawdog -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

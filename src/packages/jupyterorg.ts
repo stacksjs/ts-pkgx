@@ -1,10 +1,7 @@
 /**
- * **jupyter.org** - JupyterLab computational environment.
+ * **jupyter.org** - Package from pantry: jupyter.org
  *
  * @domain `jupyter.org`
- * @programs `jlpm`, `jupyter`, `jupyter-bundlerextension`, `jupyter-dejavu`, `jupyter-events`, ... (+19 more)
- * @version `4.4.5` (52 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install jupyter.org`
  * @dependencies `python.org>=3.7<3.12`, `gnu.org/which@2`
@@ -15,9 +12,7 @@
  *
  * const pkg = pantry.jupyterorg
  * console.log(pkg.name)        // "jupyter.org"
- * console.log(pkg.description) // "JupyterLab computational environment."
- * console.log(pkg.programs)    // ["jlpm", "jupyter", ...]
- * console.log(pkg.versions[0]) // "4.4.5" (latest)
+ * console.log(pkg.description) // "Package from pantry: jupyter.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/jupyter-org.md
@@ -35,45 +30,15 @@ export const jupyterorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'JupyterLab computational environment.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jupyter.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: jupyter.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install jupyter.org' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'jlpm',
-    'jupyter',
-    'jupyter-bundlerextension',
-    'jupyter-dejavu',
-    'jupyter-events',
-    'jupyter-execute',
-    'jupyter-fileid',
-    'jupyter-kernel',
-    'jupyter-kernelspec',
-    'jupyter-lab',
-    'jupyter-labextension',
-    'jupyter-labhub',
-    'jupyter-migrate',
-    'jupyter-nbclassic',
-    'jupyter-nbclassic-bundlerextension',
-    'jupyter-nbclassic-extension',
-    'jupyter-nbclassic-serverextension',
-    'jupyter-nbconvert',
-    'jupyter-nbextension',
-    'jupyter-run',
-    'jupyter-server',
-    'jupyter-serverextension',
-    'jupyter-troubleshoot',
-    'jupyter-trust',
-  ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jupyter.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jupyter.org' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -83,67 +48,10 @@ export const jupyterorgPackage = {
     'python.org>=3.7<3.12',
     'gnu.org/which@2',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '4.4.5',
-    '4.4.4',
-    '4.4.3',
-    '4.4.2',
-    '4.4.1',
-    '4.4.0',
-    '4.3.8',
-    '4.3.7',
-    '4.3.6',
-    '4.3.5',
-    '4.3.4',
-    '4.3.3',
-    '4.3.2',
-    '4.3.1',
-    '4.3.0',
-    '4.2.7',
-    '4.2.6',
-    '4.2.5',
-    '4.2.4',
-    '4.2.3',
-    '4.2.2',
-    '4.2.1',
-    '4.2.0',
-    '4.1.8',
-    '4.1.7',
-    '4.1.6',
-    '4.1.5',
-    '4.1.4',
-    '4.1.3',
-    '4.1.2',
-    '4.1.1',
-    '4.1.0',
-    '4.0.13',
-    '4.0.12',
-    '4.0.11',
-    '4.0.10',
-    '4.0.9',
-    '4.0.8',
-    '4.0.7',
-    '4.0.6',
-    '4.0.5',
-    '4.0.4',
-    '4.0.3',
-    '4.0.2',
-    '4.0.1',
-    '4.0.0',
-    '3.6.8',
-    '3.6.7',
-    '3.6.6',
-    '3.6.5',
-    '3.6.4',
-    '3.6.3',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jupyter.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jupyter.org' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jupyter.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type JupyterorgPackage = typeof jupyterorgPackage

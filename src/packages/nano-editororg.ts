@@ -1,38 +1,28 @@
 /**
- * **nano** - Free (GNU) replacement for the Pico text editor
+ * **nano-editor.org** - Package from pantry: nano-editor.org
  *
  * @domain `nano-editor.org`
- * @programs `nano`
- * @version `8.0.0` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install nano`
- * @name `nano`
+ * @install `launchpad install nano-editor.org`
  * @dependencies `gnu.org/gettext`, `invisible-island.net/ncurses>=6.0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.nano
- * // Or access via domain
- * const samePkg = pantry.nanoeditororg
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "nano"
- * console.log(pkg.description) // "Free (GNU) replacement for the Pico text editor"
- * console.log(pkg.programs)    // ["nano"]
- * console.log(pkg.versions[0]) // "8.0.0" (latest)
+ * const pkg = pantry.nanoeditororg
+ * console.log(pkg.name)        // "nano-editor.org"
+ * console.log(pkg.description) // "Package from pantry: nano-editor.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nano-editor-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nanoPackage = {
+export const nanoeditororgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'nano' as const,
+  name: 'nano-editor.org' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,22 +30,15 @@ export const nanoPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Free (GNU) replacement for the Pico text editor' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nano-editor.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: nano-editor.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install nano' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'nano',
-  ] as const,
+  installCommand: 'launchpad install nano-editor.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nano-editor.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nano-editor.org' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -65,21 +48,10 @@ export const nanoPackage = {
     'gnu.org/gettext',
     'invisible-island.net/ncurses>=6.0',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '8.0.0',
-    '7.2.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nano -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install nano' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nano-editor.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type NanoPackage = typeof nanoPackage
+export type NanoeditororgPackage = typeof nanoeditororgPackage

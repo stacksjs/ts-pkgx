@@ -1,6 +1,6 @@
 # fna-xna.github.io
 
-> FAudio - Accuracy-focused XAudio reimplementation for open platforms
+> Package from pantry: fna-xna.github.io
 
 ## Package Information
 
@@ -21,27 +21,6 @@ launchpad install fna-xna.github.io
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 19 versions</summary>
-
-- `25.7.0`, `25.6.0`, `25.5.0`, `25.4.0`, `25.3.0`
-- `25.2.0`, `25.1.0`, `24.12.0`, `24.11.0`, `24.10.0`
-- `24.9.0`, `24.8.0`, `24.7.0`, `24.6.0`, `24.5.0`
-- `24.4.0`, `24.3.0`, `24.2.0`, `24.1.0`
-
-</details>
-
-**Latest Version**: `25.7.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +fna-xna.github.io@25.7.0 -- $SHELL -i
-```
 
 ## Dependencies
 

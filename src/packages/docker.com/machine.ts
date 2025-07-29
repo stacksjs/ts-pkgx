@@ -1,37 +1,27 @@
 /**
- * **docker-machine** - Create Docker hosts locally and on cloud providers
+ * **machine** - Package from pantry: docker.com/machine
  *
  * @domain `docker.com/machine`
- * @programs `docker-machine`
- * @version `0.16.2` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install docker-machine`
- * @name `docker-machine`
+ * @install `launchpad install docker.com/machine`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dockermachine
- * // Or access via domain
- * const samePkg = pantry.dockercommachine
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "docker-machine"
- * console.log(pkg.description) // "Create Docker hosts locally and on cloud providers"
- * console.log(pkg.programs)    // ["docker-machine"]
- * console.log(pkg.versions[0]) // "0.16.2" (latest)
+ * const pkg = pantry.dockercommachine
+ * console.log(pkg.name)        // "machine"
+ * console.log(pkg.description) // "Package from pantry: docker.com/machine"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/docker-com/machine.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dockermachinePackage = {
+export const dockercommachinePackage = {
   /**
    * The display name of this package.
    */
-  name: 'docker-machine' as const,
+  name: 'machine' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,38 +29,21 @@ export const dockermachinePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Create Docker hosts locally and on cloud providers' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/docker.com/machine/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: docker.com/machine' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install docker-machine' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'docker-machine',
-  ] as const,
+  installCommand: 'launchpad install docker.com/machine' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +docker.com/machine -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docker.com/machine' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.16.2',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) docker-machine -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install docker-machine' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/docker.com/machine/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type DockermachinePackage = typeof dockermachinePackage
+export type DockercommachinePackage = typeof dockercommachinePackage

@@ -1,34 +1,24 @@
 /**
- * **overmind** - Process manager for Procfile-based applications and tmux
+ * **overmind** - Package from pantry: github.com/darthsim/overmind
  *
  * @domain `github.com/darthsim/overmind`
- * @programs `overmind`
- * @version `2.5.1` (3 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install overmind`
- * @name `overmind`
+ * @install `launchpad install github.com/darthsim/overmind`
  * @dependencies `github.com/tmux/tmux`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.overmind
- * // Or access via domain
- * const samePkg = pantry.githubcomdarthsimovermind
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomdarthsimovermind
  * console.log(pkg.name)        // "overmind"
- * console.log(pkg.description) // "Process manager for Procfile-based applications..."
- * console.log(pkg.programs)    // ["overmind"]
- * console.log(pkg.versions[0]) // "2.5.1" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/darthsim/overmind"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/darthsim/overmind.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const overmindPackage = {
+export const githubcomdarthsimovermindPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const overmindPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Process manager for Procfile-based applications and tmux' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/darthsim/overmind/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/darthsim/overmind' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install overmind' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'overmind',
-  ] as const,
+  installCommand: 'launchpad install github.com/darthsim/overmind' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/darthsim/overmind -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/darthsim/overmind' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,22 +47,10 @@ export const overmindPackage = {
   dependencies: [
     'github.com/tmux/tmux',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2.5.1',
-    '2.5.0',
-    '2.4.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) overmind -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install overmind' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/darthsim/overmind/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type OvermindPackage = typeof overmindPackage
+export type GithubcomdarthsimovermindPackage = typeof githubcomdarthsimovermindPackage

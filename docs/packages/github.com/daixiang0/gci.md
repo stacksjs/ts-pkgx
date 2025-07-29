@@ -1,6 +1,6 @@
 # gci
 
-> GCI, a tool that control golang package import order and make it always deterministic.
+> Package from pantry: github.com/daixiang0/gci
 
 ## Package Information
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install gci
+launchpad install github.com/daixiang0/gci
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `gci`
-
-## Available Versions
-
-<details>
-<summary>Show all 14 versions</summary>
-
-- `0.13.7`, `0.13.6`, `0.13.5`, `0.13.4`, `0.13.3`
-- `0.13.2`, `0.13.1`, `0.13.0`, `0.12.3`, `0.12.2`
-- `0.12.1`, `0.12.0`, `0.11.2`, `0.11.1`
-
-</details>
-
-**Latest Version**: `0.13.7`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) gci -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

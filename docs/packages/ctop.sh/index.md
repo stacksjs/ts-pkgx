@@ -1,11 +1,11 @@
-# ctop
+# ctop.sh
 
-> Top-like interface for container metrics
+> Package from pantry: ctop.sh
 
 ## Package Information
 
 - **Domain**: `ctop.sh`
-- **Name**: `ctop`
+- **Name**: `ctop.sh`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ctop.sh/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ctop
+launchpad install ctop.sh
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ctop`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.7.7`
-
-</details>
-
-**Latest Version**: `0.7.7`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ctop -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) ctop -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.ctop
+const pkg = pantry['ctop.sh']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

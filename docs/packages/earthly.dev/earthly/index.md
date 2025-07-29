@@ -1,6 +1,6 @@
 # earthly
 
-> Super simple build framework with fast, repeatable builds and an instantly familiar syntax – like Dockerfile and Makefile had a baby.
+> Package from pantry: earthly.dev/earthly
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install earthly
+launchpad install earthly.dev/earthly
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `earthly`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.8.16`, `0.8.15`
-
-</details>
-
-**Latest Version**: `0.8.16`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) earthly -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

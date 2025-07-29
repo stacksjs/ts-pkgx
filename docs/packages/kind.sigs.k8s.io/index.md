@@ -1,11 +1,11 @@
-# kind
+# kind.sigs.k8s.io
 
-> Kubernetes IN Docker - local clusters for testing Kubernetes
+> Package from pantry: kind.sigs.k8s.io
 
 ## Package Information
 
 - **Domain**: `kind.sigs.k8s.io`
-- **Name**: `kind`
+- **Name**: `kind.sigs.k8s.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kind.sigs.k8s.io/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install kind
+launchpad install kind.sigs.k8s.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `kind`
-
-## Available Versions
-
-<details>
-<summary>Show all 11 versions</summary>
-
-- `0.29.0`, `0.28.0`, `0.27.0`, `0.26.0`, `0.25.0`
-- `0.24.0`, `0.23.0`, `0.22.0`, `0.21.0`, `0.20.0`
-- `0.19.0`
-
-</details>
-
-**Latest Version**: `0.29.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) kind -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -48,7 +28,7 @@ sh <(curl https://pkgx.sh) kind -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.kind
+const pkg = pantry['kind.sigs.k8s.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

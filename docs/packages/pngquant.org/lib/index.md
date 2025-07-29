@@ -1,11 +1,11 @@
-# libimagequant
+# lib
 
-> Palette quantization library that powers pngquant and other PNG optimizers
+> Package from pantry: pngquant.org/lib
 
 ## Package Information
 
 - **Domain**: `pngquant.org/lib`
-- **Name**: `libimagequant`
+- **Name**: `lib`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pngquant.org/lib/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install libimagequant
+launchpad install pngquant.org/lib
 ```
 
 ## Programs
@@ -22,32 +22,13 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 9 versions</summary>
-
-- `4.4.0`, `4.3.4`, `4.3.3`, `4.3.2`, `4.3.1`
-- `4.3.0`, `4.2.2`, `4.2.1`, `4.2.0`
-
-</details>
-
-**Latest Version**: `4.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +pngquant.org/lib@4.4.0 -- $SHELL -i
-```
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libimagequant
+const pkg = pantry.lib
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

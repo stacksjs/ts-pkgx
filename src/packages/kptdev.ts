@@ -1,5 +1,5 @@
 /**
- * **kpt.dev** - pkgx package
+ * **kpt.dev** - Package from pantry: kpt.dev
  *
  * @domain `kpt.dev`
  *
@@ -12,6 +12,7 @@
  *
  * const pkg = pantry.kptdev
  * console.log(pkg.name)        // "kpt.dev"
+ * console.log(pkg.description) // "Package from pantry: kpt.dev"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kpt-dev.md
@@ -29,15 +30,14 @@ export const kptdevPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: '' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  description: 'Package from pantry: kpt.dev' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install kpt.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kpt.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kpt.dev' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -48,9 +48,9 @@ export const kptdevPackage = {
     'git-scm.org',
   ] as const,
   versions: [] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kpt.dev -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install kpt.dev' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kpt.dev/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type KptdevPackage = typeof kptdevPackage

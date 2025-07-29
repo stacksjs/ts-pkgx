@@ -1,6 +1,6 @@
 # wordl
 
-> Terminal wordle. Web like GUI with Keyboard hints, guess reveal animations etc.
+> Package from pantry: crates.io/wordl
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install wordl
+launchpad install crates.io/wordl
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `wordl`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.3.0`, `0.2.0`, `0.1.6`, `0.1.5`
-
-</details>
-
-**Latest Version**: `0.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) wordl -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
