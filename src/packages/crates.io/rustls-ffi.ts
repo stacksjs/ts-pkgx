@@ -6,6 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/rustls-ffi`
+ * @companions `curl.se/ca-certs`
  *
  * @example
  * ```typescript
@@ -42,7 +43,13 @@ export const cratesiorustlsffiPackage = {
    */
   installCommand: 'launchpad install crates.io/rustls-ffi' as const,
   programs: [] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'curl.se/ca-certs',
+  ] as const,
   dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
