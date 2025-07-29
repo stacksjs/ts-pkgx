@@ -3,7 +3,7 @@
  *
  * @domain `github.com/caddyserver/xcaddy`
  * @programs `xcaddy`
- * @version `0.4.4` (5 versions available)
+ * @version `0.4.5` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xcaddy`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "xcaddy"
  * console.log(pkg.description) // "Build Caddy with plugins"
  * console.log(pkg.programs)    // ["xcaddy"]
- * console.log(pkg.versions[0]) // "0.4.4" (latest)
+ * console.log(pkg.versions[0]) // "0.4.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/caddyserver/xcaddy.md
@@ -69,6 +69,7 @@ export const xcaddyPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.4.5',
     '0.4.4',
     '0.4.2',
     '0.4.1',

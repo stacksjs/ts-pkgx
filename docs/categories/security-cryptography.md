@@ -1,6 +1,6 @@
 # Security & Cryptography
 
-*9 packages in this category*
+*12 packages in this category*
 
 Packages related to security & cryptography.
 
@@ -86,13 +86,43 @@ A simple zero-config tool to make locally trusted development certificates with 
 
 ---
 
+### [openssl.org](../packages/openssl.org/index.md) (OpenSSL)
+
+TLS/SSL and crypto library with QUIC APIs
+
+**Programs**: openssl, c_rehash
+
+**Install**: `launchpad install OpenSSL`
+
+---
+
 ### [orhun.dev/gpg-tui](../packages/orhun.dev/gpg-tui/index.md) (gpg-tui)
 
-Package from pantry: orhun.dev/gpg-tui
+Manage your GnuPG keys with ease! 🔐
 
-**Programs**: None specified
+**Programs**: gpg-tui
 
-**Install**: `launchpad install orhun.dev/gpg-tui`
+**Install**: `launchpad install gpg-tui`
+
+---
+
+### [snyk.io](../packages/snyk.io/index.md) (snyk)
+
+Scans and monitors projects for security vulnerabilities
+
+**Programs**: snyk
+
+**Install**: `launchpad install snyk`
+
+---
+
+### [vaultproject.io](../packages/vaultproject.io/index.md) (vault)
+
+A tool for secrets management, encryption as a service, and privileged access management
+
+**Programs**: vault
+
+**Install**: `launchpad install vault`
 
 ---
 

@@ -1,11 +1,11 @@
-# rebar3.org
+# rebar3
 
-> Package from pantry: rebar3.org
+> Erlang build tool that makes it easy to compile and test Erlang applications and releases.
 
 ## Package Information
 
 - **Domain**: `rebar3.org`
-- **Name**: `rebar3.org`
+- **Name**: `rebar3`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rebar3.org/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install rebar3.org
+launchpad install rebar3
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `rebar3`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `3.25.1`, `3.25.0`, `3.24.0`, `3.23.0`
+
+</details>
+
+**Latest Version**: `3.25.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) rebar3 -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rebar3.org']
+const pkg = pantry.rebar3
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

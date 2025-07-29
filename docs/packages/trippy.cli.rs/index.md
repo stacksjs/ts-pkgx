@@ -1,11 +1,11 @@
-# trippy.cli.rs
+# trip
 
-> Package from pantry: trippy.cli.rs
+> Network diagnostic tool, inspired by mtr
 
 ## Package Information
 
 - **Domain**: `trippy.cli.rs`
-- **Name**: `trippy.cli.rs`
+- **Name**: `trip`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/trippy.cli.rs/package.yml)
 
@@ -13,14 +13,33 @@
 
 ```bash
 # Install with launchpad
-launchpad install trippy.cli.rs
+launchpad install trip
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `trip`
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `0.13.0`, `0.12.2`, `0.12.1`, `0.12.0`, `0.11.0`
+- `0.10.0`, `0.9.0`
+
+</details>
+
+**Latest Version**: `0.13.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) trip -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +47,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['trippy.cli.rs']
+const pkg = pantry.trip
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

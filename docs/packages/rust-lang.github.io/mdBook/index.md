@@ -1,11 +1,11 @@
-# mdBook
+# mdbook
 
-> Package from pantry: rust-lang.github.io/mdBook
+> Create book from markdown files. Like Gitbook but implemented in Rust
 
 ## Package Information
 
 - **Domain**: `rust-lang.github.io/mdBook`
-- **Name**: `mdBook`
+- **Name**: `mdbook`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.github.io/mdBook/package.yml)
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install rust-lang.github.io/mdBook
+launchpad install mdbook
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `mdbook`
+
+## Available Versions
+
+<details>
+<summary>Show all 19 versions</summary>
+
+- `0.4.52`, `0.4.51`, `0.4.50`, `0.4.49`, `0.4.48`
+- `0.4.47`, `0.4.46`, `0.4.45`, `0.4.44`, `0.4.43`
+- `0.4.42`, `0.4.41`, `0.4.40`, `0.4.39`, `0.4.38`
+- `0.4.37`, `0.4.36`, `0.4.35`, `0.4.34`
+
+</details>
+
+**Latest Version**: `0.4.52`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) mdbook -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +49,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.mdBook
+const pkg = pantry.mdbook
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

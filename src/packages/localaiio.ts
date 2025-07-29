@@ -9,6 +9,7 @@
  * @install `launchpad install local-ai`
  * @name `local-ai`
  * @dependencies `darwin:openmp.llvm.org@18` (includes OS-specific dependencies with `os:package` format)
+ * @companions `linux`
  *
  * @example
  * ```typescript
@@ -56,7 +57,13 @@ export const localaiPackage = {
   programs: [
     'local-ai',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'linux',
+  ] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

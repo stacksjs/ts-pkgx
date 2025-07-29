@@ -1,11 +1,11 @@
-# syncthing.net
+# syncthing
 
-> Package from pantry: syncthing.net
+> Open source continuous file synchronization application
 
 ## Package Information
 
 - **Domain**: `syncthing.net`
-- **Name**: `syncthing.net`
+- **Name**: `syncthing`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/syncthing.net/package.yml)
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install syncthing.net
+launchpad install syncthing
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `syncthing`
+
+## Available Versions
+
+<details>
+<summary>Show all 20 versions</summary>
+
+- `1.30.0`, `1.29.7`, `1.29.6`, `1.29.5`, `1.29.4`
+- `1.29.3`, `1.29.2`, `1.29.1`, `1.29.0`, `1.28.1`
+- `1.28.0`, `1.27.12`, `1.27.11`, `1.27.10`, `1.27.9`
+- `1.27.8`, `1.27.7`, `1.27.6`, `1.27.5`, `1.27.4`
+
+</details>
+
+**Latest Version**: `1.30.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) syncthing -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +49,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['syncthing.net']
+const pkg = pantry.syncthing
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
