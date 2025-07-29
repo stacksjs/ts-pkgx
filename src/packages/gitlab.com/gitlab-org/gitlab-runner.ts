@@ -3,7 +3,7 @@
  *
  * @domain `gitlab.com/gitlab-org/gitlab-runner`
  * @programs `gitlab-runner`
- * @version `18.2.1` (81 versions available)
+ * @version `18.2.1` (83 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gitlab-runner`
@@ -64,9 +64,11 @@ export const gitlabrunnerPackage = {
   versions: [
     '18.2.1',
     '18.2.0',
+    '18.1.3',
     '18.1.2',
     '18.1.1',
     '18.1.0',
+    '18.0.5',
     '18.0.4',
     '18.0.3',
     '18.0.2',

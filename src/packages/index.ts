@@ -1009,7 +1009,7 @@ import { koPackage } from './kobuild'
 import { dssimPackage } from './kornel.ski/dssim'
 import { kotlinlangorgPackage } from './kotlinlangorg'
 import { koyebPackage } from './koyebcom'
-import { kptPackage } from './kptdev'
+import { kptdevPackage } from './kptdev'
 import { kubectlkrewPackage } from './krewsigsk8sio'
 import { ktlintPackage } from './ktlintgithubio'
 import { kubebuilderPackage } from './kubebuilderio'
@@ -3407,7 +3407,7 @@ export interface Pantry {
   kornelskidssim: typeof dssimPackage
   kotlinlangorg: typeof kotlinlangorgPackage
   koyebcom: typeof koyebPackage
-  kptdev: typeof kptPackage
+  kptdev: typeof kptdevPackage
   krewsigsk8sio: typeof kubectlkrewPackage
   ktlintgithubio: typeof ktlintPackage
   kubebuilderio: typeof kubebuilderPackage
@@ -5293,7 +5293,6 @@ export interface Pantry {
   tesseract: typeof tesseractPackage
   surreal: typeof surrealPackage
   rbw: typeof rbwPackage
-  kpt: typeof kptPackage
   flac: typeof flacPackage
   shout: typeof shoutPackage
   ctags: typeof ctagsPackage
@@ -7216,7 +7215,7 @@ export const pantry: Pantry = {
   kornelskidssim: dssimPackage,
   kotlinlangorg: kotlinlangorgPackage,
   koyebcom: koyebPackage,
-  kptdev: kptPackage,
+  kptdev: kptdevPackage,
   krewsigsk8sio: kubectlkrewPackage,
   ktlintgithubio: ktlintPackage,
   kubebuilderio: kubebuilderPackage,
@@ -9102,7 +9101,6 @@ export const pantry: Pantry = {
   tesseract: tesseractPackage,
   surreal: surrealPackage,
   rbw: rbwPackage,
-  kpt: kptPackage,
   flac: flacPackage,
   shout: shoutPackage,
   ctags: ctagsPackage,
