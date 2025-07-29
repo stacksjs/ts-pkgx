@@ -1,6 +1,6 @@
 # ronn
 
-> the opposite of roff
+> Package from pantry: rtomayko.github.io/ronn
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ronn
+launchpad install rtomayko.github.io/ronn
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ronn`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.7.3`
-
-</details>
-
-**Latest Version**: `0.7.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ronn -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

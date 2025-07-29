@@ -8,6 +8,7 @@
  *
  * @install `launchpad install astral.sh/uv`
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
+ * @companions `python.org`
  *
  * @example
  * ```typescript
@@ -52,7 +53,13 @@ export const astralshuvPackage = {
     'uv',
     'uvx',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'python.org',
+  ] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

@@ -1,11 +1,11 @@
-# sdkman-init.sh
+# sdkman.io
 
-> The SDKMAN! Command Line Interface
+> Package from pantry: sdkman.io
 
 ## Package Information
 
 - **Domain**: `sdkman.io`
-- **Name**: `sdkman-init.sh`
+- **Name**: `sdkman.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sdkman.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install sdkman-init.sh
+launchpad install sdkman.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `sdkman-init.sh`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `5.19.0`, `5.18.2`
-
-</details>
-
-**Latest Version**: `5.19.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) sdkman-init.sh -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) sdkman-init.sh -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['sdkman-init.sh']
+const pkg = pantry['sdkman.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

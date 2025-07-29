@@ -1,6 +1,6 @@
 # Programming Languages
 
-*14 packages in this category*
+*11 packages in this category*
 
 Popular programming languages and their runtimes available through pkgx.
 
@@ -76,73 +76,43 @@ Platform built on V8 to build network applications
 
 ---
 
-### [php.net](../packages/php.net/index.md) (php)
+### [php.net](../packages/php.net/index.md)
 
-General-purpose scripting language
+Package from pantry: php.net
 
-**Programs**: pear, pecl, phar, php, php-cgi, php-config, phpdbg, phpize
+**Programs**: None specified
 
-**Install**: `launchpad install php`
-
----
-
-### [python.org](../packages/python.org/index.md) (python, py)
-
-The Python programming language
-
-**Programs**: python, python3, python3.13
-
-**Install**: `launchpad install py`
+**Install**: `launchpad install php.net`
 
 ---
 
-### [ruby-lang.org](../packages/ruby-lang.org/index.md) (ruby)
+### [python.org](../packages/python.org/index.md)
 
-Powerful, clean, object-oriented scripting language
+Package from pantry: python.org
 
-**Programs**: erb, irb, rake, rdoc, ri, ruby
+**Programs**: None specified
 
-**Install**: `launchpad install ruby`
-
----
-
-### [rust-lang.org](../packages/rust-lang.org/index.md) (rust)
-
-Empowering everyone to build reliable and efficient software.
-
-**Programs**: cargo-clippy, cargo-fmt, clippy-driver, rust-analyzer, rust-gdb, rust-gdbgui, rust-lldb, rustc, rustdoc, rustfmt
-
-**Install**: `launchpad install rust`
+**Install**: `launchpad install python.org`
 
 ---
 
-### [swift.org](../packages/swift.org/index.md) (swift)
+### [ruby-lang.org](../packages/ruby-lang.org/index.md)
 
-The Swift Programming Language
+Package from pantry: ruby-lang.org
 
-**Programs**: docc, dsymutil, sourcekit-lsp, swift-api-checker.py, swift-build-sdk-interfaces, swift-build-tool, swift-demangle, swift-driver, swift-format, swift-frontend, swift-help, swift-package, swift-plugin-server, swift-stdlib-tool, swift, swift-api-digester, swift-api-extract, swift-autolink-extract, swift-build, swift-experimental-sdk, swift-package-collection, swift-package-registry, swift-run, swift-symbolgraph-extract, swift-test, swiftc
+**Programs**: None specified
 
-**Install**: `launchpad install swift`
-
----
-
-### [tinygo.org](../packages/tinygo.org/index.md) (tinygo)
-
-Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM.
-
-**Programs**: tinygo
-
-**Install**: `launchpad install tinygo`
+**Install**: `launchpad install ruby-lang.org`
 
 ---
 
-### [ziglang.org](../packages/ziglang.org/index.md) (zig)
+### [tcl.tk/tcl](../packages/tcl.tk/tcl/index.md) (tcl)
 
-General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
+Package from pantry: tcl.tk/tcl
 
-**Programs**: zig
+**Programs**: None specified
 
-**Install**: `launchpad install zig`
+**Install**: `launchpad install tcl.tk/tcl`
 
 ---
 

@@ -1,6 +1,6 @@
 # wxwidgets.org
 
-> Cross-Platform C++ GUI Library
+> Package from pantry: wxwidgets.org
 
 ## Package Information
 
@@ -20,27 +20,7 @@ launchpad install wxwidgets.org
 
 This package provides the following executable programs:
 
-- `wx-config`
-- `wxrc`
-
-## Available Versions
-
-<details>
-<summary>Show all 9 versions</summary>
-
-- `3.3.1`, `3.3.0`, `3.2.8.1`, `3.2.8`, `3.2.7`
-- `3.2.6`, `3.2.5`, `3.2.4`, `3.2.3`
-
-</details>
-
-**Latest Version**: `3.3.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +wxwidgets.org@3.3.1 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
