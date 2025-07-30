@@ -3,7 +3,7 @@
  *
  * @domain `gnu.org/gdbm`
  * @programs `gdbm_dump`, `gdbm_load`, `gdbmtool`
- * @version `1.25.0` (3 versions available)
+ * @version `1.26.0` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gdbm`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "gdbm"
  * console.log(pkg.description) // "GNU database manager"
  * console.log(pkg.programs)    // ["gdbm_dump", "gdbm_load", ...]
- * console.log(pkg.versions[0]) // "1.25.0" (latest)
+ * console.log(pkg.versions[0]) // "1.26.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/gdbm.md
@@ -64,6 +64,7 @@ export const gdbmPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.26.0',
     '1.25.0',
     '1.24.0',
     '1.23.0',
