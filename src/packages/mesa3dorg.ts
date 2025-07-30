@@ -2,7 +2,7 @@
  * **mesa3d.org** - pkgx package
  *
  * @domain `mesa3d.org`
- * @version `25.1.6` (57 versions available)
+ * @version `25.1.7` (58 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mesa3d.org`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.mesa3dorg
  * console.log(pkg.name)        // "mesa3d.org"
- * console.log(pkg.versions[0]) // "25.1.6" (latest)
+ * console.log(pkg.versions[0]) // "25.1.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mesa3d-org.md
@@ -79,6 +79,7 @@ export const mesa3dorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '25.1.7',
     '25.1.6',
     '25.1.5',
     '25.1.4',

@@ -3,7 +3,7 @@
  *
  * @domain `stripe.com`
  * @programs `stripe`
- * @version `1.28.0` (52 versions available)
+ * @version `1.29.0` (53 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install stripe`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "stripe"
  * console.log(pkg.description) // "A command-line tool for Stripe"
  * console.log(pkg.programs)    // ["stripe"]
- * console.log(pkg.versions[0]) // "1.28.0" (latest)
+ * console.log(pkg.versions[0]) // "1.29.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/stripe-com.md
@@ -62,6 +62,7 @@ export const stripePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.29.0',
     '1.28.0',
     '1.27.0',
     '1.26.1',
