@@ -2,7 +2,7 @@
  * **gnupg.org/v2.5** - pkgx package
  *
  * @domain `gnupg.org/v2.5`
- * @version `2.5.10` (11 versions available)
+ * @version `2.5.11` (12 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnupg.org/v2.5`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.gnupgorgv25
  * console.log(pkg.name)        // "gnupg.org/v2.5"
- * console.log(pkg.versions[0]) // "2.5.10" (latest)
+ * console.log(pkg.versions[0]) // "2.5.11" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnupg-org/v2-5.md
@@ -66,6 +66,7 @@ export const gnupgorgv25Package = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.5.11',
     '2.5.10',
     '2.5.9',
     '2.5.8',
