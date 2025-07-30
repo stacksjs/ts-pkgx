@@ -3,7 +3,7 @@
  *
  * @domain `cilium.io/cilium`
  * @programs `cilium`
- * @version `0.18.5` (26 versions available)
+ * @version `0.18.6` (27 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cilium`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "cilium"
  * console.log(pkg.description) // "CLI to install, manage & troubleshoot Kubernete..."
  * console.log(pkg.programs)    // ["cilium"]
- * console.log(pkg.versions[0]) // "0.18.5" (latest)
+ * console.log(pkg.versions[0]) // "0.18.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cilium-io/cilium.md
@@ -62,6 +62,7 @@ export const ciliumPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.18.6',
     '0.18.5',
     '0.18.4',
     '0.18.3',
