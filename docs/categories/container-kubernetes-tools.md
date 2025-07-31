@@ -1,6 +1,6 @@
 # Container & Kubernetes Tools
 
-*20 packages in this category*
+*23 packages in this category*
 
 Packages related to container & kubernetes tools.
 
@@ -198,11 +198,41 @@ Ultralight, security-first service mesh for Kubernetes. Main repo for Linkerd 2.
 
 ### [operatorframework.io/operator-sdk](../packages/operatorframework.io/operator-sdk/index.md) (operator-sdk)
 
-Package from pantry: operatorframework.io/operator-sdk
+SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and project scaffolding.
 
-**Programs**: None specified
+**Programs**: operator-sdk
 
-**Install**: `launchpad install operatorframework.io/operator-sdk`
+**Install**: `launchpad install operator-sdk`
+
+---
+
+### [podman.io](../packages/podman.io/index.md) (podman)
+
+Podman: A tool for managing OCI containers and pods.
+
+**Programs**: podman, podman-remote, podman-mac-helper
+
+**Install**: `launchpad install podman`
+
+---
+
+### [skaffold.dev](../packages/skaffold.dev/index.md) (skaffold)
+
+Easy and Repeatable Kubernetes Development
+
+**Programs**: skaffold
+
+**Install**: `launchpad install skaffold`
+
+---
+
+### [tilt.dev](../packages/tilt.dev/index.md) (tilt)
+
+Define your dev environment as code. For microservice apps on Kubernetes.
+
+**Programs**: tilt
+
+**Install**: `launchpad install tilt`
 
 ---
 

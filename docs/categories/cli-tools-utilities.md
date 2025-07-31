@@ -1,6 +1,6 @@
 # CLI Tools & Utilities
 
-*31 packages in this category*
+*34 packages in this category*
 
 Command-line utilities and system tools.
 
@@ -296,13 +296,43 @@ Improved top (interactive process viewer)
 
 ---
 
+### [ohmyposh.dev](../packages/ohmyposh.dev/index.md) (oh-my-posh)
+
+The most customisable and low-latency cross platform/shell prompt renderer
+
+**Programs**: oh-my-posh
+
+**Install**: `launchpad install oh-my-posh`
+
+---
+
+### [starship.rs](../packages/starship.rs/index.md) (starship)
+
+☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+
+**Programs**: starship
+
+**Install**: `launchpad install starship`
+
+---
+
 ### [stedolan.github.io/jq](../packages/stedolan.github.io/jq/index.md) (jq)
 
-Package from pantry: stedolan.github.io/jq
+Lightweight and flexible command-line JSON processor
 
-**Programs**: None specified
+**Programs**: jq
 
-**Install**: `launchpad install stedolan.github.io/jq`
+**Install**: `launchpad install jq`
+
+---
+
+### [tree-sitter.github.io](../packages/tree-sitter.github.io/index.md) (tree-sitter)
+
+Parser generator tool and incremental parsing library
+
+**Programs**: tree-sitter
+
+**Install**: `launchpad install tree-sitter`
 
 ---
 
