@@ -1,6 +1,6 @@
 # Package Managers
 
-*15 packages in this category*
+*17 packages in this category*
 
 Packages related to package managers.
 
@@ -146,13 +146,33 @@ Fast, disk space efficient package manager
 
 ---
 
+### [python-poetry.org](../packages/python-poetry.org/index.md) (poetry)
+
+Python packaging and dependency management made easy
+
+**Programs**: poetry
+
+**Install**: `launchpad install poetry`
+
+---
+
 ### [rust-lang.org/cargo](../packages/rust-lang.org/cargo/index.md) (cargo)
 
-Package from pantry: rust-lang.org/cargo
+The Rust package manager
 
-**Programs**: None specified
+**Programs**: cargo
 
-**Install**: `launchpad install rust-lang.org/cargo`
+**Install**: `launchpad install cargo`
+
+---
+
+### [rye.astral.sh](../packages/rye.astral.sh/index.md) (rye)
+
+Experimental Package Management Solution for Python
+
+**Programs**: rye
+
+**Install**: `launchpad install rye`
 
 ---
 

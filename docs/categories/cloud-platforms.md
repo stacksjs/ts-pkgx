@@ -56,33 +56,33 @@ The CLI for PlanetScale Database
 
 ---
 
-### [railway.app](../packages/railway.app/index.md)
+### [railway.app](../packages/railway.app/index.md) (railway)
 
-Package from pantry: railway.app
+Develop and deploy code with zero configuration
 
-**Programs**: None specified
+**Programs**: railway
 
-**Install**: `launchpad install railway.app`
-
----
-
-### [render.com](../packages/render.com/index.md)
-
-Package from pantry: render.com
-
-**Programs**: None specified
-
-**Install**: `launchpad install render.com`
+**Install**: `launchpad install railway`
 
 ---
 
-### [supabase.com/cli](../packages/supabase.com/cli/index.md) (cli)
+### [render.com](../packages/render.com/index.md) (render)
 
-Package from pantry: supabase.com/cli
+Command-line interface for Render
 
-**Programs**: None specified
+**Programs**: render
 
-**Install**: `launchpad install supabase.com/cli`
+**Install**: `launchpad install render`
+
+---
+
+### [supabase.com/cli](../packages/supabase.com/cli/index.md) (supabase)
+
+Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres backups. Generating types from your database schema.
+
+**Programs**: supabase
+
+**Install**: `launchpad install supabase`
 
 ---
 

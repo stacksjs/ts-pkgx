@@ -1,11 +1,11 @@
-# faad2
+# faad
 
-> Package from pantry: sourceforge.net/faad2
+> Freeware Advanced Audio (AAC) Decoder faad2 mirror
 
 ## Package Information
 
 - **Domain**: `sourceforge.net/faad2`
-- **Name**: `faad2`
+- **Name**: `faad`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/faad2/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install sourceforge.net/faad2
+launchpad install faad
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `faad`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `2.11.2`, `2.11.1`, `2.11.0`, `2.10.1`
+
+</details>
+
+**Latest Version**: `2.11.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) faad -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +46,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.faad2
+const pkg = pantry.faad
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
