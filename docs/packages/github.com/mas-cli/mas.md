@@ -25,14 +25,14 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `2.2.2`, `2.2.1`, `2.2.0`, `2.1.0`, `2.0.0`
-- `1.9.0`, `1.8.8`, `1.8.7`
+- `2.3.0`, `2.2.2`, `2.2.1`, `2.2.0`, `2.1.0`
+- `2.0.0`, `1.9.0`, `1.8.8`, `1.8.7`
 
 </details>
 
-**Latest Version**: `2.2.2`
+**Latest Version**: `2.3.0`
 
 ### Install Specific Version
 

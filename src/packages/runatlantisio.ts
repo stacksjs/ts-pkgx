@@ -3,7 +3,7 @@
  *
  * @domain `runatlantis.io`
  * @programs `atlantis`
- * @version `0.35.0` (19 versions available)
+ * @version `0.35.1` (20 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install atlantis`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "atlantis"
  * console.log(pkg.description) // "Terraform Pull Request Automation tool"
  * console.log(pkg.programs)    // ["atlantis"]
- * console.log(pkg.versions[0]) // "0.35.0" (latest)
+ * console.log(pkg.versions[0]) // "0.35.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/runatlantis-io.md
@@ -62,6 +62,7 @@ export const atlantisPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.35.1',
     '0.35.0',
     '0.34.0',
     '0.33.0',
