@@ -3,7 +3,7 @@
  *
  * @domain `sfcgal.org`
  * @programs `sfcgal-config`
- * @version `2.1.0` (6 versions available)
+ * @version `2.2.0` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sfcgal-config`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "sfcgal-config"
  * console.log(pkg.description) // "C++ wrapper library around CGAL"
  * console.log(pkg.programs)    // ["sfcgal-config"]
- * console.log(pkg.versions[0]) // "2.1.0" (latest)
+ * console.log(pkg.versions[0]) // "2.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sfcgal-org.md
@@ -72,6 +72,7 @@ export const sfcgalconfigPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.2.0',
     '2.1.0',
     '2.0.0',
     '1.5.2',
