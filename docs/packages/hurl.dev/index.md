@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +hurl.dev@7.0.0 -- $SHELL -i
 
 This package depends on:
 
-- `gnome.org/libxml2`
+- `gnome.org/libxml2~2.13 # 2.14 changed the API`
 - `curl.se`
 
 ## Usage Examples

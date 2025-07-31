@@ -8,7 +8,7 @@
  *
  * @install `launchpad install hurl`
  * @name `hurl`
- * @dependencies `gnome.org/libxml2`, `curl.se`
+ * @dependencies `gnome.org/libxml2~2.13 # 2.14 changed the API`, `curl.se`
  *
  * @example
  * ```typescript
@@ -63,7 +63,7 @@ export const hurlPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'gnome.org/libxml2',
+    'gnome.org/libxml2~2.13 # 2.14 changed the API',
     'curl.se',
   ] as const,
   /**
