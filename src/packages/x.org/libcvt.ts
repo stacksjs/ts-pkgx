@@ -1,28 +1,38 @@
 /**
- * **libcvt** - Package from pantry: x.org/libcvt
+ * **cvt** - VESA CVT standard timing modelines generator
  *
  * @domain `x.org/libcvt`
+ * @programs `cvt`
+ * @version `0.1.3` (2 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install x.org/libcvt`
+ * @install `launchpad install cvt`
+ * @name `cvt`
  * @dependencies `x.org/x11^1`, `x.org/exts`, `x.org/protocol`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.xorglibcvt
- * console.log(pkg.name)        // "libcvt"
- * console.log(pkg.description) // "Package from pantry: x.org/libcvt"
+ * // Access the package
+ * const pkg = pantry.cvt
+ * // Or access via domain
+ * const samePkg = pantry.xorglibcvt
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "cvt"
+ * console.log(pkg.description) // "VESA CVT standard timing modelines generator"
+ * console.log(pkg.programs)    // ["cvt"]
+ * console.log(pkg.versions[0]) // "0.1.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/libcvt.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xorglibcvtPackage = {
+export const cvtPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libcvt' as const,
+  name: 'cvt' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +40,22 @@ export const xorglibcvtPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: x.org/libcvt' as const,
+  description: 'VESA CVT standard timing modelines generator' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/libcvt/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install x.org/libcvt' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/libcvt -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install x.org/libcvt' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install cvt' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'cvt',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -49,10 +66,21 @@ export const xorglibcvtPackage = {
     'x.org/exts',
     'x.org/protocol',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/libcvt/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.1.3',
+    '0.1.2',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cvt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cvt' as const,
 }
 
-export type XorglibcvtPackage = typeof xorglibcvtPackage
+export type CvtPackage = typeof cvtPackage
