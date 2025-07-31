@@ -1,6 +1,6 @@
 # Artificial Intelligence
 
-*14 packages in this category*
+*11 packages in this category*
 
 Packages related to artificial intelligence.
 
@@ -113,36 +113,6 @@ The fundamental package for scientific computing with Python.
 **Programs**: f2py
 
 **Install**: `launchpad install f2py`
-
----
-
-### [ollama.ai](../packages/ollama.ai/index.md) (ollama)
-
-Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models.
-
-**Programs**: ollama
-
-**Install**: `launchpad install ollama`
-
----
-
-### [openai.com/openai-python](../packages/openai.com/openai-python/index.md) (openai)
-
-The official Python library for the OpenAI API
-
-**Programs**: openai
-
-**Install**: `launchpad install openai`
-
----
-
-### [openinterpreter.com](../packages/openinterpreter.com/index.md) (open-interpreter, interpreter)
-
-A natural language interface for computers
-
-**Programs**: interpreter
-
-**Install**: `launchpad install interpreter`
 
 ---
 

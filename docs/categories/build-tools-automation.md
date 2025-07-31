@@ -1,6 +1,6 @@
 # Build Tools & Automation
 
-*15 packages in this category*
+*13 packages in this category*
 
 Packages related to build tools & automation.
 
@@ -126,33 +126,13 @@ Small build system for use with gyp or CMake
 
 ---
 
-### [pantsbuild.org/scie-pants](../packages/pantsbuild.org/scie-pants/index.md) (scie-pants, pants)
+### [pantsbuild.org/scie-pants](../packages/pantsbuild.org/scie-pants/index.md) (scie-pants)
 
-Protects your Pants from the elements.
+Package from pantry: pantsbuild.org/scie-pants
 
-**Programs**: pants
+**Programs**: None specified
 
-**Install**: `launchpad install pants`
-
----
-
-### [scons.org](../packages/scons.org/index.md) (scons)
-
-Substitute for classic 'make' tool with autoconf/automake functionality
-
-**Programs**: scons
-
-**Install**: `launchpad install scons`
-
----
-
-### [taskfile.dev](../packages/taskfile.dev/index.md) (task)
-
-A task runner / simpler Make alternative written in Go
-
-**Programs**: task
-
-**Install**: `launchpad install task`
+**Install**: `launchpad install pantsbuild.org/scie-pants`
 
 ---
 
