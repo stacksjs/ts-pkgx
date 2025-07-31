@@ -1,6 +1,6 @@
 # Build Tools & Automation
 
-*15 packages in this category*
+*13 packages in this category*
 
 Packages related to build tools & automation.
 
@@ -133,26 +133,6 @@ Protects your Pants from the elements.
 **Programs**: pants
 
 **Install**: `launchpad install pants`
-
----
-
-### [scons.org](../packages/scons.org/index.md) (scons)
-
-Substitute for classic 'make' tool with autoconf/automake functionality
-
-**Programs**: scons
-
-**Install**: `launchpad install scons`
-
----
-
-### [taskfile.dev](../packages/taskfile.dev/index.md) (task)
-
-A task runner / simpler Make alternative written in Go
-
-**Programs**: task
-
-**Install**: `launchpad install task`
 
 ---
 

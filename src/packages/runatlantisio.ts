@@ -1,37 +1,27 @@
 /**
- * **atlantis** - Terraform Pull Request Automation tool
+ * **runatlantis.io** - Package from pantry: runatlantis.io
  *
  * @domain `runatlantis.io`
- * @programs `atlantis`
- * @version `0.35.1` (20 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install atlantis`
- * @name `atlantis`
+ * @install `launchpad install runatlantis.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.atlantis
- * // Or access via domain
- * const samePkg = pantry.runatlantisio
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "atlantis"
- * console.log(pkg.description) // "Terraform Pull Request Automation tool"
- * console.log(pkg.programs)    // ["atlantis"]
- * console.log(pkg.versions[0]) // "0.35.1" (latest)
+ * const pkg = pantry.runatlantisio
+ * console.log(pkg.name)        // "runatlantis.io"
+ * console.log(pkg.description) // "Package from pantry: runatlantis.io"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/runatlantis-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const atlantisPackage = {
+export const runatlantisioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'atlantis' as const,
+  name: 'runatlantis.io' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,57 +29,21 @@ export const atlantisPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Terraform Pull Request Automation tool' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/runatlantis.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: runatlantis.io' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install atlantis' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'atlantis',
-  ] as const,
+  installCommand: 'launchpad install runatlantis.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +runatlantis.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install runatlantis.io' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.35.1',
-    '0.35.0',
-    '0.34.0',
-    '0.33.0',
-    '0.32.0',
-    '0.31.0',
-    '0.30.0',
-    '0.29.0',
-    '0.28.5',
-    '0.28.4',
-    '0.28.3',
-    '0.28.2',
-    '0.28.1',
-    '0.28.0',
-    '0.27.3',
-    '0.27.2',
-    '0.27.1',
-    '0.27.0',
-    '0.26.0',
-    '0.25.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) atlantis -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install atlantis' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/runatlantis.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type AtlantisPackage = typeof atlantisPackage
+export type RunatlantisioPackage = typeof runatlantisioPackage

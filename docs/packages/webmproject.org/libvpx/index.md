@@ -1,11 +1,11 @@
-# webmproject.org/libvpx
+# libvpx
 
-> Mirror only. Please do not send pull requests.
+> Package from pantry: webmproject.org/libvpx
 
 ## Package Information
 
 - **Domain**: `webmproject.org/libvpx`
-- **Name**: `webmproject.org/libvpx`
+- **Name**: `libvpx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/webmproject.org/libvpx/package.yml)
 
@@ -22,32 +22,13 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `1.15.2`, `1.15.1`, `1.15.0`, `1.14.1`, `1.14.0`
-- `1.13.1`, `1.13.0`
-
-</details>
-
-**Latest Version**: `1.15.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +webmproject.org/libvpx@1.15.2 -- $SHELL -i
-```
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['webmproject.org/libvpx']
+const pkg = pantry.libvpx
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

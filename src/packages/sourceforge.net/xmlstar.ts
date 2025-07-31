@@ -1,38 +1,28 @@
 /**
- * **XMLStarlet** - XML command-line utilities
+ * **xmlstar** - Package from pantry: sourceforge.net/xmlstar
  *
  * @domain `sourceforge.net/xmlstar`
- * @programs `xml`, `xmlstarlet`
- * @version `1.6.1` (1 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install XMLStarlet`
- * @name `XMLStarlet`
+ * @install `launchpad install sourceforge.net/xmlstar`
  * @dependencies `gnome.org/libxslt^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.XMLStarlet
- * // Or access via domain
- * const samePkg = pantry.sourceforgenetxmlstar
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "XMLStarlet"
- * console.log(pkg.description) // "XML command-line utilities"
- * console.log(pkg.programs)    // ["xml", "xmlstarlet"]
- * console.log(pkg.versions[0]) // "1.6.1" (latest)
+ * const pkg = pantry.sourceforgenetxmlstar
+ * console.log(pkg.name)        // "xmlstar"
+ * console.log(pkg.description) // "Package from pantry: sourceforge.net/xmlstar"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sourceforge-net/xmlstar.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xMLStarletPackage = {
+export const sourceforgenetxmlstarPackage = {
   /**
    * The display name of this package.
    */
-  name: 'XMLStarlet' as const,
+  name: 'xmlstar' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,23 +30,15 @@ export const xMLStarletPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'XML command-line utilities' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/xmlstar/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: sourceforge.net/xmlstar' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install XMLStarlet' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'xml',
-    'xmlstarlet',
-  ] as const,
+  installCommand: 'launchpad install sourceforge.net/xmlstar' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceforge.net/xmlstar -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sourceforge.net/xmlstar' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -65,20 +47,10 @@ export const xMLStarletPackage = {
   dependencies: [
     'gnome.org/libxslt^1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.6.1',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceforge.net/xmlstar -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install XMLStarlet' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/xmlstar/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type XMLStarletPackage = typeof xMLStarletPackage
+export type SourceforgenetxmlstarPackage = typeof sourceforgenetxmlstarPackage

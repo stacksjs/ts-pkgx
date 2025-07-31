@@ -1,9 +1,7 @@
 /**
- * **x.org/sm** - pkgx package
+ * **sm** - Package from pantry: x.org/sm
  *
  * @domain `x.org/sm`
- * @version `1.2.6` (3 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install x.org/sm`
  * @dependencies `x.org/ice`
@@ -13,8 +11,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgsm
- * console.log(pkg.name)        // "x.org/sm"
- * console.log(pkg.versions[0]) // "1.2.6" (latest)
+ * console.log(pkg.name)        // "sm"
+ * console.log(pkg.description) // "Package from pantry: x.org/sm"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/sm.md
@@ -24,7 +22,7 @@ export const xorgsmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/sm' as const,
+  name: 'sm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -32,15 +30,14 @@ export const xorgsmPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/sm/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: x.org/sm' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install x.org/sm' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/sm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/sm' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -50,18 +47,10 @@ export const xorgsmPackage = {
   dependencies: [
     'x.org/ice',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.2.6',
-    '1.2.5',
-    '1.2.4',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/sm -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install x.org/sm' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/sm/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type XorgsmPackage = typeof xorgsmPackage
