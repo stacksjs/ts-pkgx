@@ -3,7 +3,7 @@
  *
  * @domain `jbang.dev`
  * @programs `jbang`
- * @version `0.128.6` (29 versions available)
+ * @version `0.128.7` (30 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jbang`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "jbang"
  * console.log(pkg.description) // "Unleash the power of Java - JBang Lets Students..."
  * console.log(pkg.programs)    // ["jbang"]
- * console.log(pkg.versions[0]) // "0.128.6" (latest)
+ * console.log(pkg.versions[0]) // "0.128.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/jbang-dev.md
@@ -69,6 +69,7 @@ export const jbangPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.128.7',
     '0.128.6',
     '0.128.5',
     '0.128.2',

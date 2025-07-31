@@ -1582,7 +1582,7 @@ import { xrayPackage } from './xtlsgithubio'
 import { xvidcomPackage } from './xvidcom'
 import { yadmPackage } from './yadmio'
 import { yarnPackage } from './yarnpkgcom'
-import { yasmPackage } from './yasmtortallnet'
+import { yasmtortallnetPackage } from './yasmtortallnet'
 import { youtubedlPackage } from './youtube-dlorg'
 import { ytdlpPackage } from './yt-dlporg'
 import { yuicompressorPackage } from './yui.github.io/yuicompressor'
@@ -4254,7 +4254,7 @@ export interface Pantry {
   xvidcom: typeof xvidcomPackage
   yadmio: typeof yadmPackage
   yarnpkgcom: typeof yarnPackage
-  yasmtortallnet: typeof yasmPackage
+  yasmtortallnet: typeof yasmtortallnetPackage
   youtube_dlorg: typeof youtubedlPackage
   youtubedlorg: typeof youtubedlPackage
   yt_dlporg: typeof ytdlpPackage
@@ -4615,7 +4615,6 @@ export interface Pantry {
   'dotenv-linter': typeof dotenvlinterPackage
   rover: typeof roverPackage
   libcerf: typeof libcerfPackage
-  yasm: typeof yasmPackage
   'libcap-ng': typeof libcapngPackage
   jless: typeof jlessPackage
   cURL: typeof cURLPackage
@@ -8063,7 +8062,7 @@ export const pantry: Pantry = {
   xvidcom: xvidcomPackage,
   yadmio: yadmPackage,
   yarnpkgcom: yarnPackage,
-  yasmtortallnet: yasmPackage,
+  yasmtortallnet: yasmtortallnetPackage,
   youtube_dlorg: youtubedlPackage,
   youtubedlorg: youtubedlPackage,
   yt_dlporg: ytdlpPackage,
@@ -8424,7 +8423,6 @@ export const pantry: Pantry = {
   'dotenv-linter': dotenvlinterPackage,
   rover: roverPackage,
   libcerf: libcerfPackage,
-  yasm: yasmPackage,
   'libcap-ng': libcapngPackage,
   jless: jlessPackage,
   cURL: cURLPackage,
