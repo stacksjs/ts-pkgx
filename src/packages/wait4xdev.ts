@@ -3,7 +3,7 @@
  *
  * @domain `wait4x.dev`
  * @programs `wait4x`
- * @version `3.5.0` (9 versions available)
+ * @version `3.5.1` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install wait4x`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "wait4x"
  * console.log(pkg.description) // "Wait4X allows you to wait for a port or a servi..."
  * console.log(pkg.programs)    // ["wait4x"]
- * console.log(pkg.versions[0]) // "3.5.0" (latest)
+ * console.log(pkg.versions[0]) // "3.5.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/wait4x-dev.md
@@ -69,6 +69,7 @@ export const wait4xPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.5.1',
     '3.5.0',
     '3.4.0',
     '3.3.1',
