@@ -1114,6 +1114,7 @@ export const aliases: Record<string, string> = {
   'yadm': 'yadm.io',
   'yamllint': 'github.com/adrienverge/yamllint',
   'yarn': 'classic.yarnpkg.com',
+  'yasm': 'yasm.tortall.net',
   'yazi': 'github.com/sxyazi/yazi',
   'ykman': 'developers.yubico.com/yubikey-manager',
   'youtube-dl': 'youtube-dl.org',

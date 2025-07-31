@@ -3,7 +3,7 @@
  *
  * @domain `tinybird.co`
  * @programs `tb`
- * @version `5.21.0` (2 versions available)
+ * @version `5.21.1` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tb`
@@ -21,7 +21,7 @@
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "tb"
  * console.log(pkg.programs)    // ["tb"]
- * console.log(pkg.versions[0]) // "5.21.0" (latest)
+ * console.log(pkg.versions[0]) // "5.21.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tinybird-co.md
@@ -68,6 +68,7 @@ export const tbPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '5.21.1',
     '5.21.0',
     '5.20.0',
   ] as const,

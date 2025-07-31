@@ -3,7 +3,7 @@
  *
  * @domain `mypy-lang.org`
  * @programs `mypy`, `mypyc`, `dmypy`
- * @version `1.17.0` (26 versions available)
+ * @version `1.17.1` (27 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mypy-lang.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "mypy-lang.org"
  * console.log(pkg.description) // "Experimental optional static type checker for P..."
  * console.log(pkg.programs)    // ["mypy", "mypyc", ...]
- * console.log(pkg.versions[0]) // "1.17.0" (latest)
+ * console.log(pkg.versions[0]) // "1.17.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mypy-lang-org.md
@@ -66,6 +66,7 @@ export const mypylangorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.17.1',
     '1.17.0',
     '1.16.1',
     '1.16.0',
