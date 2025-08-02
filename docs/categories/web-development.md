@@ -1,6 +1,6 @@
 # Web Development
 
-*4 packages in this category*
+*3 packages in this category*
 
 Packages related to web development.
 
@@ -33,16 +33,6 @@ A utility-first CSS framework for rapid UI development.
 **Programs**: tailwindcss
 
 **Install**: `launchpad install tailwindcss`
-
----
-
-### [vitejs.dev](../packages/vitejs.dev/index.md) (vite)
-
-Next generation frontend tooling. It's fast!
-
-**Programs**: vite
-
-**Install**: `launchpad install vite`
 
 ---
 

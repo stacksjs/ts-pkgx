@@ -2,7 +2,7 @@
  * **sourceware.org/libffi** - A portable foreign-function interface library.
  *
  * @domain `sourceware.org/libffi`
- * @version `3.5.1` (8 versions available)
+ * @version `3.5.2` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sourceware.org/libffi`
@@ -14,7 +14,7 @@
  * const pkg = pantry.sourcewareorglibffi
  * console.log(pkg.name)        // "sourceware.org/libffi"
  * console.log(pkg.description) // "A portable foreign-function interface library."
- * console.log(pkg.versions[0]) // "3.5.1" (latest)
+ * console.log(pkg.versions[0]) // "3.5.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sourceware-org/libffi.md
@@ -49,6 +49,7 @@ export const sourcewareorglibffiPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.5.2',
     '3.5.1',
     '3.5.0',
     '3.4.8',
