@@ -1,6 +1,6 @@
 # CLI Tools & Utilities
 
-*35 packages in this category*
+*34 packages in this category*
 
 Command-line utilities and system tools.
 
@@ -336,23 +336,13 @@ Parser generator tool and incremental parsing library
 
 ---
 
-### [wilfred.me.uk/difftastic](../packages/wilfred.me.uk/difftastic/index.md) (difft)
+### [wilfred.me.uk/difftastic](../packages/wilfred.me.uk/difftastic/index.md) (difftastic)
 
-a structural diff that understands syntax 🟥🟩
+Package from pantry: wilfred.me.uk/difftastic
 
-**Programs**: difft
+**Programs**: None specified
 
-**Install**: `launchpad install difft`
-
----
-
-### [zsh.sourceforge.io](../packages/zsh.sourceforge.io/index.md) (zsh)
-
-UNIX shell (command interpreter)
-
-**Programs**: zsh
-
-**Install**: `launchpad install zsh`
+**Install**: `launchpad install wilfred.me.uk/difftastic`
 
 ---
 

@@ -78,11 +78,11 @@ The official Vim repository
 
 ### [wezfurlong.org/wezterm](../packages/wezfurlong.org/wezterm/index.md) (wezterm)
 
-A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
+Package from pantry: wezfurlong.org/wezterm
 
-**Programs**: wezterm
+**Programs**: None specified
 
-**Install**: `launchpad install wezterm`
+**Install**: `launchpad install wezfurlong.org/wezterm`
 
 ---
 
