@@ -1,11 +1,11 @@
-# libtasn1
+# asn1
 
-> Package from pantry: gnu.org/libtasn1
+> ASN.1 structure parser library
 
 ## Package Information
 
 - **Domain**: `gnu.org/libtasn1`
-- **Name**: `libtasn1`
+- **Name**: `asn1`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libtasn1/package.yml)
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install gnu.org/libtasn1
+launchpad install asn1
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `asn1Coding`
+- `asn1Decoding`
+- `asn1Parser`
+
+## Available Versions
+
+<details>
+<summary>Show all 2 versions</summary>
+
+- `4.20.0`, `4.19.0`
+
+</details>
+
+**Latest Version**: `4.20.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +gnu.org/libtasn1@4.20.0 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +48,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libtasn1
+const pkg = pantry.asn1
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

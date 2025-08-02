@@ -1,23 +1,33 @@
 /**
- * **stargazers** - Package from pantry: github.com/spencerkimball/stargazers
+ * **stargazers** - Analyze GitHub stars
  *
  * @domain `github.com/spencerkimball/stargazers`
+ * @programs `stargazers`
+ * @version `0.0.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/spencerkimball/stargazers`
+ * @install `launchpad install stargazers`
+ * @name `stargazers`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomspencerkimballstargazers
+ * // Access the package
+ * const pkg = pantry.stargazers
+ * // Or access via domain
+ * const samePkg = pantry.githubcomspencerkimballstargazers
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "stargazers"
- * console.log(pkg.description) // "Package from pantry: github.com/spencerkimball/..."
+ * console.log(pkg.description) // "Analyze GitHub stars"
+ * console.log(pkg.programs)    // ["stargazers"]
+ * console.log(pkg.versions[0]) // "0.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/spencerkimball/stargazers.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomspencerkimballstargazersPackage = {
+export const stargazersPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,38 @@ export const githubcomspencerkimballstargazersPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/spencerkimball/stargazers' as const,
+  description: 'Analyze GitHub stars' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/spencerkimball/stargazers/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/spencerkimball/stargazers' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/spencerkimball/stargazers -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/spencerkimball/stargazers' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install stargazers' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'stargazers',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/spencerkimball/stargazers/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.0.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) stargazers -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install stargazers' as const,
 }
 
-export type GithubcomspencerkimballstargazersPackage = typeof githubcomspencerkimballstargazersPackage
+export type StargazersPackage = typeof stargazersPackage

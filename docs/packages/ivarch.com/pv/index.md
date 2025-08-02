@@ -1,6 +1,6 @@
 # pv
 
-> Package from pantry: ivarch.com/pv
+> Monitor data's progress through a pipe
 
 ## Package Information
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install ivarch.com/pv
+launchpad install pv
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `pv`
+
+## Available Versions
+
+<details>
+<summary>Show all 14 versions</summary>
+
+- `1.9.34`, `1.9.31`, `1.9.27`, `1.9.25`, `1.9.24`
+- `1.9.15`, `1.9.7`, `1.9.0`, `1.8.14`, `1.8.13`
+- `1.8.12`, `1.8.10`, `1.8.9`, `1.8.5`
+
+</details>
+
+**Latest Version**: `1.9.34`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) pv -- $SHELL -i
+```
 
 ## Usage Examples
 

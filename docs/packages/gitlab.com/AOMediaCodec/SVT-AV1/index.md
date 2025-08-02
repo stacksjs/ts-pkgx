@@ -1,11 +1,11 @@
-# SVT-AV1
+# SvtAv1EncApp
 
-> Package from pantry: gitlab.com/AOMediaCodec/SVT-AV1
+> AV1 encoder
 
 ## Package Information
 
 - **Domain**: `gitlab.com/AOMediaCodec/SVT-AV1`
-- **Name**: `SVT-AV1`
+- **Name**: `SvtAv1EncApp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gitlab.com/AOMediaCodec/SVT-AV1/package.yml)
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install gitlab.com/AOMediaCodec/SVT-AV1
+launchpad install SvtAv1EncApp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `SvtAv1EncApp`
+
+## Available Versions
+
+<details>
+<summary>Show all 14 versions</summary>
+
+- `3.1.0`, `3.0.2`, `3.0.1`, `3.0.0`, `2.3.0`
+- `2.2.1`, `2.2.0`, `2.1.2`, `2.1.1`, `2.1.0`
+- `2.0.0`, `1.8.0`, `1.7.0`, `1.6.0`
+
+</details>
+
+**Latest Version**: `3.1.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) SvtAv1EncApp -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +48,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['SVT-AV1']
+const pkg = pantry.SvtAv1EncApp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

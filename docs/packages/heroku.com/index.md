@@ -1,11 +1,11 @@
-# heroku.com
+# heroku
 
-> Package from pantry: heroku.com
+> CLI for Heroku
 
 ## Package Information
 
 - **Domain**: `heroku.com`
-- **Name**: `heroku.com`
+- **Name**: `heroku`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/heroku.com/package.yml)
 
@@ -13,14 +13,38 @@
 
 ```bash
 # Install with launchpad
-launchpad install heroku.com
+launchpad install heroku
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `heroku`
+
+## Available Versions
+
+<details>
+<summary>Show all 35 versions</summary>
+
+- `10.12.0`, `10.11.0`, `10.10.1`, `10.10.0`, `10.9.0`
+- `10.8.0`, `10.7.0`, `10.6.1`, `10.6.0`, `10.5.0`
+- `10.4.1`, `10.4.0`, `10.3.0`, `10.2.0`, `10.1.0`
+- `10.0.2`, `10.0.1`, `10.0.0`, `9.5.1`, `9.5.0`
+- `9.4.0`, `9.3.2`, `9.3.1`, `9.3.0`, `9.2.1`
+- `9.2.0`, `9.1.0`, `9.0.0`, `8.11.5`, `8.11.4`
+- `8.11.3`, `8.11.2`, `8.11.1`, `8.11.0`, `8.10.0`
+
+</details>
+
+**Latest Version**: `10.12.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) heroku -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +58,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['heroku.com']
+const pkg = pantry.heroku
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -8,21 +8,21 @@ Packages related to scientific computing.
 
 ### [jupyter.org](../packages/jupyter.org/index.md)
 
-Package from pantry: jupyter.org
+JupyterLab computational environment.
 
-**Programs**: None specified
+**Programs**: jlpm, jupyter, jupyter-bundlerextension, jupyter-dejavu, jupyter-events, jupyter-execute, jupyter-fileid, jupyter-kernel, jupyter-kernelspec, jupyter-lab, jupyter-labextension, jupyter-labhub, jupyter-migrate, jupyter-nbclassic, jupyter-nbclassic-bundlerextension, jupyter-nbclassic-extension, jupyter-nbclassic-serverextension, jupyter-nbconvert, jupyter-nbextension, jupyter-run, jupyter-server, jupyter-serverextension, jupyter-troubleshoot, jupyter-trust
 
 **Install**: `launchpad install jupyter.org`
 
 ---
 
-### [numpy.org](../packages/numpy.org/index.md)
+### [numpy.org](../packages/numpy.org/index.md) (f2py)
 
-Package from pantry: numpy.org
+The fundamental package for scientific computing with Python.
 
-**Programs**: None specified
+**Programs**: f2py
 
-**Install**: `launchpad install numpy.org`
+**Install**: `launchpad install f2py`
 
 ---
 

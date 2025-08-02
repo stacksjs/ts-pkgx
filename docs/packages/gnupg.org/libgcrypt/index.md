@@ -1,11 +1,11 @@
-# libgcrypt
+# gnupg.org/libgcrypt
 
-> Package from pantry: gnupg.org/libgcrypt
+> Cryptographic library based on the code from GnuPG
 
 ## Package Information
 
 - **Domain**: `gnupg.org/libgcrypt`
-- **Name**: `libgcrypt`
+- **Name**: `gnupg.org/libgcrypt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/libgcrypt/package.yml)
 
@@ -20,7 +20,28 @@ launchpad install gnupg.org/libgcrypt
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `dumpsexp`
+- `hmac256`
+- `libgcrypt-config`
+- `mpicalc`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `1.11.1`, `1.11.0`, `1.10.3`, `1.10.1`
+
+</details>
+
+**Latest Version**: `1.11.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +gnupg.org/libgcrypt@1.11.1 -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +49,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.libgcrypt
+const pkg = pantry['gnupg.org/libgcrypt']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

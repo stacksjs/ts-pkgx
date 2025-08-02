@@ -1,7 +1,10 @@
 /**
- * **littlecms.com** - Package from pantry: littlecms.com
+ * **littlecms.com** - A free, open source, CMM engine. It provides fast transforms between ICC profiles.
  *
  * @domain `littlecms.com`
+ * @programs `jpgicc`, `linkicc`, `psicc`, `tificc`, `transicc`
+ * @version `2.17.0` (4 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install littlecms.com`
  * @dependencies `simplesystems.org/libtiff^4`, `libjpeg-turbo.org^2`
@@ -12,7 +15,9 @@
  *
  * const pkg = pantry.littlecmscom
  * console.log(pkg.name)        // "littlecms.com"
- * console.log(pkg.description) // "Package from pantry: littlecms.com"
+ * console.log(pkg.description) // "A free, open source, CMM engine. It provides fa..."
+ * console.log(pkg.programs)    // ["jpgicc", "linkicc", ...]
+ * console.log(pkg.versions[0]) // "2.17.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/littlecms-com.md
@@ -30,15 +35,26 @@ export const littlecmscomPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: littlecms.com' as const,
+  description: 'A free, open source, CMM engine. It provides fast transforms between ICC profiles.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/littlecms.com/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install littlecms.com' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +littlecms.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install littlecms.com' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'jpgicc',
+    'linkicc',
+    'psicc',
+    'tificc',
+    'transicc',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -48,10 +64,19 @@ export const littlecmscomPackage = {
     'simplesystems.org/libtiff^4',
     'libjpeg-turbo.org^2',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/littlecms.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.17.0',
+    '2.16.0',
+    '2.15.0',
+    '2.12.0',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +littlecms.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install littlecms.com' as const,
 }
 
 export type LittlecmscomPackage = typeof littlecmscomPackage

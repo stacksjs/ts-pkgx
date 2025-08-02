@@ -1,6 +1,6 @@
 # terminal-notifier
 
-> Package from pantry: github.com/julienXX/terminal-notifier
+> Send User Notifications on macOS from the command-line.
 
 ## Package Information
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/julienXX/terminal-notifier
+launchpad install terminal-notifier
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `terminal-notifier`
+
+## Available Versions
+
+<details>
+<summary>Show all 1 versions</summary>
+
+- `2.0.0`
+
+</details>
+
+**Latest Version**: `2.0.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) terminal-notifier -- $SHELL -i
+```
 
 ## Usage Examples
 

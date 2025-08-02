@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) cargo-tarpaulin -- $SHELL -i
 
 These packages work well with cargo-tarpaulin:
 
-- [`rust-lang.org/cargo`](../../rust-lang.org/cargo/index.md) - Package from pantry: rust-lang.org/cargo
+- [`rust-lang.org/cargo`](../../rust-lang.org/cargo/index.md) - The Rust package manager
 
 ## Usage Examples
 

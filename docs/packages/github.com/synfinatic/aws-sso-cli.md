@@ -1,11 +1,11 @@
-# aws-sso-cli
+# aws-sso
 
-> Package from pantry: github.com/synfinatic/aws-sso-cli
+> A powerful tool for using AWS Identity Center for the CLI and web console.
 
 ## Package Information
 
 - **Domain**: `github.com/synfinatic/aws-sso-cli`
-- **Name**: `aws-sso-cli`
+- **Name**: `aws-sso`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/synfinatic/aws-sso-cli/package.yml)
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install github.com/synfinatic/aws-sso-cli
+launchpad install aws-sso
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `aws-sso`
+
+## Available Versions
+
+<details>
+<summary>Show all 15 versions</summary>
+
+- `2.0.3`, `2.0.2`, `2.0.1`, `2.0.0`, `1.17.0`
+- `1.16.1`, `1.16.0`, `1.15.1`, `1.15.0`, `1.14.3`
+- `1.14.2`, `1.14.1`, `1.14.0`, `1.13.1`, `1.13.0`
+
+</details>
+
+**Latest Version**: `2.0.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) aws-sso -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +48,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['aws-sso-cli']
+const pkg = pantry['aws-sso']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

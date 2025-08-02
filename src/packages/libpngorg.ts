@@ -1,7 +1,10 @@
 /**
- * **libpng.org** - Package from pantry: libpng.org
+ * **libpng.org** - LIBPNG: Portable Network Graphics support, official libpng repository
  *
  * @domain `libpng.org`
+ * @programs `libpng-config`, `libpng16-config`, `png-fix-itxt`, `pngfix`
+ * @version `1.6.50` (13 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install libpng.org`
  * @dependencies `zlib.net@1`
@@ -12,7 +15,9 @@
  *
  * const pkg = pantry.libpngorg
  * console.log(pkg.name)        // "libpng.org"
- * console.log(pkg.description) // "Package from pantry: libpng.org"
+ * console.log(pkg.description) // "LIBPNG: Portable Network Graphics support, offi..."
+ * console.log(pkg.programs)    // ["libpng-config", "libpng16-config", ...]
+ * console.log(pkg.versions[0]) // "1.6.50" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libpng-org.md
@@ -30,15 +35,25 @@ export const libpngorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: libpng.org' as const,
+  description: 'LIBPNG: Portable Network Graphics support, official libpng repository' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libpng.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install libpng.org' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libpng.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libpng.org' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'libpng-config',
+    'libpng16-config',
+    'png-fix-itxt',
+    'pngfix',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +62,28 @@ export const libpngorgPackage = {
   dependencies: [
     'zlib.net@1',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libpng.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.6.50',
+    '1.6.49',
+    '1.6.48',
+    '1.6.47',
+    '1.6.46',
+    '1.6.45',
+    '1.6.44',
+    '1.6.43',
+    '1.6.42',
+    '1.6.41',
+    '1.6.40',
+    '1.6.39',
+    '1.6.35',
+  ] as const,
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libpng.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libpng.org' as const,
 }
 
 export type LibpngorgPackage = typeof libpngorgPackage

@@ -1,11 +1,11 @@
-# kluctl.io
+# kluctl
 
-> Package from pantry: kluctl.io
+> The missing glue to put together large Kubernetes deployments, composed of multiple smaller parts (Helm/Kustomize/...) in a manageable and unified way.
 
 ## Package Information
 
 - **Domain**: `kluctl.io`
-- **Name**: `kluctl.io`
+- **Name**: `kluctl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kluctl.io/package.yml)
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install kluctl.io
+launchpad install kluctl
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `kluctl`
+
+## Available Versions
+
+<details>
+<summary>Show all 15 versions</summary>
+
+- `2.27.0`, `2.26.0`, `2.25.1`, `2.25.0`, `2.24.1`
+- `2.24.0`, `2.23.5`, `2.23.4`, `2.23.3`, `2.23.2`
+- `2.23.1`, `2.23.0`, `2.22.1`, `2.22.0`, `2.21.2`
+
+</details>
+
+**Latest Version**: `2.27.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) kluctl -- $SHELL -i
+```
 
 ## Usage Examples
 
@@ -28,7 +48,7 @@ This package provides the following executable programs:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['kluctl.io']
+const pkg = pantry.kluctl
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # libwebsockets.org
 
-> Package from pantry: libwebsockets.org
+> canonical libwebsockets.org networking library
 
 ## Package Information
 
@@ -21,6 +21,25 @@ launchpad install libwebsockets.org
 This package provides the following executable programs:
 
 *No programs specified*
+
+## Available Versions
+
+<details>
+<summary>Show all 7 versions</summary>
+
+- `4.4.1`, `4.4.0`, `4.3.6`, `4.3.5`, `4.3.4`
+- `4.3.3`, `4.3.2`
+
+</details>
+
+**Latest Version**: `4.4.1`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +libwebsockets.org@4.4.1 -- $SHELL -i
+```
 
 ## Dependencies
 

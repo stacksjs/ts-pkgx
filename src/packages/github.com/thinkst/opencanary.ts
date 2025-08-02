@@ -1,28 +1,38 @@
 /**
- * **opencanary** - Package from pantry: github.com/thinkst/opencanary
+ * **opencanaryd** - Modular and decentralised honeypot
  *
  * @domain `github.com/thinkst/opencanary`
+ * @programs `opencanaryd`
+ * @version `0.9.6` (5 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/thinkst/opencanary`
+ * @install `launchpad install opencanaryd`
+ * @name `opencanaryd`
  * @dependencies `python.org>=3.10<3.12`, `tcpdump.org`, `openssl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomthinkstopencanary
- * console.log(pkg.name)        // "opencanary"
- * console.log(pkg.description) // "Package from pantry: github.com/thinkst/opencanary"
+ * // Access the package
+ * const pkg = pantry.opencanaryd
+ * // Or access via domain
+ * const samePkg = pantry.githubcomthinkstopencanary
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "opencanaryd"
+ * console.log(pkg.description) // "Modular and decentralised honeypot"
+ * console.log(pkg.programs)    // ["opencanaryd"]
+ * console.log(pkg.versions[0]) // "0.9.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/thinkst/opencanary.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomthinkstopencanaryPackage = {
+export const opencanarydPackage = {
   /**
    * The display name of this package.
    */
-  name: 'opencanary' as const,
+  name: 'opencanaryd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +40,22 @@ export const githubcomthinkstopencanaryPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: github.com/thinkst/opencanary' as const,
+  description: 'Modular and decentralised honeypot' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/thinkst/opencanary/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/thinkst/opencanary' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/thinkst/opencanary -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/thinkst/opencanary' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install opencanaryd' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'opencanaryd',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -49,10 +66,24 @@ export const githubcomthinkstopencanaryPackage = {
     'tcpdump.org',
     'openssl.org',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/thinkst/opencanary/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '0.9.6',
+    '0.9.5',
+    '0.9.4',
+    '0.9.3',
+    '0.9.2',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) opencanaryd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install opencanaryd' as const,
 }
 
-export type GithubcomthinkstopencanaryPackage = typeof githubcomthinkstopencanaryPackage
+export type OpencanarydPackage = typeof opencanarydPackage
