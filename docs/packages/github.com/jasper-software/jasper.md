@@ -25,15 +25,15 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 11 versions</summary>
+<summary>Show all 12 versions</summary>
 
-- `4.2.5`, `4.2.4`, `4.2.3`, `4.2.2`, `4.2.1`
-- `4.2.0`, `4.1.2`, `4.1.1`, `4.1.0`, `4.0.1`
-- `4.0.0`
+- `4.2.6`, `4.2.5`, `4.2.4`, `4.2.3`, `4.2.2`
+- `4.2.1`, `4.2.0`, `4.1.2`, `4.1.1`, `4.1.0`
+- `4.0.1`, `4.0.0`
 
 </details>
 
-**Latest Version**: `4.2.5`
+**Latest Version**: `4.2.6`
 
 ### Install Specific Version
 
