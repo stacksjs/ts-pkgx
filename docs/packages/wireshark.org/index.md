@@ -1,6 +1,6 @@
 # wireshark.org
 
-> Package from pantry: wireshark.org
+> Network analyzer and capture tool - without graphical user interface
 
 ## Package Information
 
@@ -20,7 +20,43 @@ launchpad install wireshark.org
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `capinfos`
+- `captype`
+- `dumpcap`
+- `editcap`
+- `idl2wrs`
+- `mergecap`
+- `mmdbresolve`
+- `randpkt`
+- `rawshark`
+- `reordercap`
+- `sharkd`
+- `text2pcap`
+- `tshark`
+
+## Available Versions
+
+<details>
+<summary>Show all 33 versions</summary>
+
+- `4.4.8`, `4.4.7`, `4.4.6`, `4.4.5`, `4.4.4`
+- `4.4.3`, `4.4.2`, `4.4.1`, `4.4.0`, `4.3.1`
+- `4.3.0`, `4.2.12`, `4.2.11`, `4.2.10`, `4.2.9`
+- `4.2.8`, `4.2.7`, `4.2.5`, `4.2.3`, `4.2.2`
+- `4.2.1`, `4.2.0`, `4.0.17`, `4.0.16`, `4.0.15`
+- `4.0.14`, `4.0.13`, `4.0.12`, `3.6.24`, `3.6.23`
+- `3.6.22`, `3.6.21`, `3.6.20`
+
+</details>
+
+**Latest Version**: `4.4.8`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) +wireshark.org@4.4.8 -- $SHELL -i
+```
 
 ## Dependencies
 

@@ -1,31 +1,31 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1441+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1397+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1441
+- **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-08-02T07:29:14.409Z
+- **Last Updated**: 2025-08-02T08:30:44.252Z
 
 ## Table of Contents
 
-- [Programming Languages](#programming-languages) (13 packages)
+- [Programming Languages](#programming-languages) (14 packages)
 - [Artificial Intelligence](#artificial-intelligence) (14 packages)
 - [Databases](#databases) (13 packages)
-- [Web Development](#web-development) (3 packages)
+- [Web Development](#web-development) (4 packages)
 - [DevOps](#devops) (27 packages)
 - [Container & Kubernetes Tools](#container-kubernetes-tools) (25 packages)
 - [Monitoring & Observability](#monitoring-observability) (4 packages)
 - [Build Tools & Automation](#build-tools-automation) (15 packages)
 - [Package Managers](#package-managers) (17 packages)
 - [Editors & IDEs](#editors-ides) (8 packages)
-- [CLI Tools & Utilities](#cli-tools-utilities) (34 packages)
+- [CLI Tools & Utilities](#cli-tools-utilities) (35 packages)
 - [Networking](#networking) (9 packages)
 - [Security & Cryptography](#security-cryptography) (12 packages)
-- [Multimedia](#multimedia) (6 packages)
+- [Multimedia](#multimedia) (7 packages)
 - [Graphics Libraries](#graphics-libraries) (3 packages)
 - [Gaming & Game Development](#gaming-game-development) (1 packages)
 - [Cloud Platforms](#cloud-platforms) (8 packages)
@@ -42,7 +42,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Programming Languages
 
-*13 packages in this category*
+*14 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -59,6 +59,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[rust-lang.org](./packages/rust-lang.org/index.md)** () | Empowering everyone to build reliable and efficient software. | cargo-clippy, cargo-fmt, clippy-driver, ... (+7) | 1.88.0 (+34) | `pkgx rust` |
 | **[swift.org](./packages/swift.org/index.md)** () | The Swift Programming Language | docc, dsymutil, sourcekit-lsp, ... (+23) | 6.1.2 (+9) | `pkgx swift` |
 | **[tinygo.org](./packages/tinygo.org/index.md)** () | Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. ... | tinygo | 0.38.0 (+7) | `pkgx tinygo` |
+| **[ziglang.org](./packages/ziglang.org/index.md)** () | General-purpose programming language and toolchain for maintaining robust, optimal, and reusable ... | zig | 0.14.1 (+6) | `pkgx zig` |
 
 ## Artificial Intelligence
 
@@ -103,13 +104,14 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Web Development
 
-*3 packages in this category*
+*4 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[laravel.com](./packages/laravel.com/index.md)** () | The Laravel application installer. | laravel | 5.16.0 (+16) | `pkgx laravel` |
 | **[symfony.com](./packages/symfony.com/index.md)** () | The Symfony CLI tool | symfony | 5.12.0 (+49) | `pkgx symfony` |
 | **[tailwindcss.com](./packages/tailwindcss.com/index.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.11 (+44) | `pkgx tailwindcss` |
+| **[vitejs.dev](./packages/vitejs.dev/index.md)** () | Next generation frontend tooling. It&#39;s fast! | vite | 7.0.6 (+106) | `pkgx vite` |
 
 ## DevOps
 
@@ -246,12 +248,12 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[microsoft.com/code-cli](./packages/microsoft.com/code-cli/index.md)** (code) | Command-line interface built-in Visual Studio Code | code | 1.102.3 (+18) | `pkgx code` |
 | **[nano-editor.org](./packages/nano-editor.org/index.md)** () | Free (GNU) replacement for the Pico text editor | nano | 8.0.0 (+1) | `pkgx nano` |
 | **[neovim.io](./packages/neovim.io/index.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.3 (+15) | `pkgx nvim` |
-| **[vim.org](./packages/vim.org/index.md)** | Package from pantry: vim.org | - | latest | `pkgx vim.org` |
-| **[wezfurlong.org/wezterm](./packages/wezfurlong.org/wezterm/index.md)** | Package from pantry: wezfurlong.org/wezterm | - | latest | `pkgx wezterm` |
+| **[vim.org](./packages/vim.org/index.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1591 (+2159) | `pkgx vi` |
+| **[wezfurlong.org/wezterm](./packages/wezfurlong.org/wezterm/index.md)** () | A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemente... | wezterm | 2024.2.3 (+0) | `pkgx wezterm` |
 
 ## CLI Tools & Utilities
 
-*34 packages in this category*
+*35 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -288,7 +290,8 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[starship.rs](./packages/starship.rs/index.md)** () | ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell! | starship | 1.23.0 (+20) | `pkgx starship` |
 | **[stedolan.github.io/jq](./packages/stedolan.github.io/jq/index.md)** () | Lightweight and flexible command-line JSON processor | jq | 1.8.1 (+4) | `pkgx jq` |
 | **[tree-sitter.github.io](./packages/tree-sitter.github.io/index.md)** () | Parser generator tool and incremental parsing library | tree-sitter | 0.25.8 (+29) | `pkgx tree-sitter` |
-| **[wilfred.me.uk/difftastic](./packages/wilfred.me.uk/difftastic/index.md)** | Package from pantry: wilfred.me.uk/difftastic | - | latest | `pkgx difftastic` |
+| **[wilfred.me.uk/difftastic](./packages/wilfred.me.uk/difftastic/index.md)** () | a structural diff that understands syntax 🟥🟩 | difft | 0.64.0 (+8) | `pkgx difft` |
+| **[zsh.sourceforge.io](./packages/zsh.sourceforge.io/index.md)** () | UNIX shell (command interpreter) | zsh | 5.9.0 (+0) | `pkgx zsh` |
 
 ## Networking
 
@@ -327,7 +330,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Multimedia
 
-*6 packages in this category*
+*7 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -337,6 +340,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mpv.io](./packages/mpv.io/index.md)** () | Media player based on MPlayer and mplayer2 | mpv | 0.40.0 (+2) | `pkgx mpv` |
 | **[sf.net/optipng](./packages/sf.net/optipng/index.md)** () | PNG file optimizer | optipng | 7.9.1 (+2) | `pkgx optipng` |
 | **[streamlink.github.io](./packages/streamlink.github.io/index.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 7.5.0 (+20) | `pkgx streamlink` |
+| **[yt-dlp.org](./packages/yt-dlp.org/index.md)** () | A feature-rich command-line audio/video downloader | yt-dlp | 2025.7.21 (+49) | `pkgx yt-dlp` |
 
 ## Graphics Libraries
 
