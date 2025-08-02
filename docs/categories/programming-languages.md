@@ -1,6 +1,6 @@
 # Programming Languages
 
-*13 packages in this category*
+*14 packages in this category*
 
 Popular programming languages and their runtimes available through pkgx.
 
@@ -133,6 +133,16 @@ Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and com
 **Programs**: tinygo
 
 **Install**: `launchpad install tinygo`
+
+---
+
+### [ziglang.org](../packages/ziglang.org/index.md) (zig)
+
+General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
+
+**Programs**: zig
+
+**Install**: `launchpad install zig`
 
 ---
 
