@@ -1,11 +1,11 @@
-# gnu.org/gettext
+# gettext
 
-> GNU internationalization (i18n) and localization (l10n) library
+> Package from pantry: gnu.org/gettext
 
 ## Package Information
 
 - **Domain**: `gnu.org/gettext`
-- **Name**: `gnu.org/gettext`
+- **Name**: `gettext`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gettext/package.yml)
 
@@ -20,47 +20,7 @@ launchpad install gnu.org/gettext
 
 This package provides the following executable programs:
 
-- `autopoint`
-- `envsubst`
-- `gettext`
-- `gettext.sh`
-- `gettextize`
-- `msgattrib`
-- `msgcat`
-- `msgcmp`
-- `msgcomm`
-- `msgconv`
-- `msgen`
-- `msgexec`
-- `msgfilter`
-- `msgfmt`
-- `msggrep`
-- `msginit`
-- `msgmerge`
-- `msgunfmt`
-- `msguniq`
-- `ngettext`
-- `recode-sr-latin`
-- `xgettext`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `0.22.5`, `0.22.4`, `0.22.3`, `0.22.2`, `0.22.1`
-- `0.22.0`, `0.21.1`
-
-</details>
-
-**Latest Version**: `0.22.5`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +gnu.org/gettext@0.22.5 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -75,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/gettext']
+const pkg = pantry.gettext
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,11 +1,11 @@
-# adr
+# adr-tools
 
-> Command-line tools for working with Architecture Decision Records
+> Package from pantry: github.com/npryce/adr-tools
 
 ## Package Information
 
 - **Domain**: `github.com/npryce/adr-tools`
-- **Name**: `adr`
+- **Name**: `adr-tools`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/npryce/adr-tools/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install adr
+launchpad install github.com/npryce/adr-tools
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `adr`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `3.0.0`
-
-</details>
-
-**Latest Version**: `3.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) adr -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -52,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.adr
+const pkg = pantry['adr-tools']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

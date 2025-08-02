@@ -1,6 +1,6 @@
 # lolcat
 
-> Rainbows and unicorns in your console!
+> Package from pantry: github.com/jaseg/lolcat
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install lolcat
+launchpad install github.com/jaseg/lolcat
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `lolcat`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `1.5.0`, `1.4.0`
-
-</details>
-
-**Latest Version**: `1.5.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) lolcat -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

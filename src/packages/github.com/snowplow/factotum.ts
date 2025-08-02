@@ -1,34 +1,24 @@
 /**
- * **factotum** - A system to programmatically run data pipelines
+ * **factotum** - Package from pantry: github.com/snowplow/factotum
  *
  * @domain `github.com/snowplow/factotum`
- * @programs `factotum`
- * @version `0.6.1` (2 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install factotum`
- * @name `factotum`
+ * @install `launchpad install github.com/snowplow/factotum`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.factotum
- * // Or access via domain
- * const samePkg = pantry.githubcomsnowplowfactotum
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomsnowplowfactotum
  * console.log(pkg.name)        // "factotum"
- * console.log(pkg.description) // "A system to programmatically run data pipelines"
- * console.log(pkg.programs)    // ["factotum"]
- * console.log(pkg.versions[0]) // "0.6.1" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/snowplow/factotum"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/snowplow/factotum.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const factotumPackage = {
+export const githubcomsnowplowfactotumPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const factotumPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A system to programmatically run data pipelines' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/snowplow/factotum/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/snowplow/factotum' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install factotum' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'factotum',
-  ] as const,
+  installCommand: 'launchpad install github.com/snowplow/factotum' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/snowplow/factotum -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/snowplow/factotum' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,21 +47,10 @@ export const factotumPackage = {
   dependencies: [
     'openssl.org^1.1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.6.1',
-    '0.6.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) factotum -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install factotum' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/snowplow/factotum/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type FactotumPackage = typeof factotumPackage
+export type GithubcomsnowplowfactotumPackage = typeof githubcomsnowplowfactotumPackage

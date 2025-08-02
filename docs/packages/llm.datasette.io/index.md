@@ -1,11 +1,11 @@
-# llm
+# llm.datasette.io
 
-> Access large language models from the command-line
+> Package from pantry: llm.datasette.io
 
 ## Package Information
 
 - **Domain**: `llm.datasette.io`
-- **Name**: `llm`
+- **Name**: `llm.datasette.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/llm.datasette.io/package.yml)
 
@@ -13,37 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install llm
+launchpad install llm.datasette.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `llm`
-
-## Available Versions
-
-<details>
-<summary>Show all 30 versions</summary>
-
-- `0.26.0`, `0.25.0`, `0.24.2`, `0.24.1`, `0.24.0`
-- `0.23.0`, `0.22.0`, `0.21.0`, `0.20.0`, `0.19.1`
-- `0.19.0`, `0.18.0`, `0.17.1`, `0.17.0`, `0.16.0`
-- `0.15.0`, `0.14.0`, `0.13.1`, `0.13.0`, `0.12.0`
-- `0.11.2`, `0.11.1`, `0.11.0`, `0.10.0`, `0.9.0`
-- `0.8.1`, `0.8.0`, `0.7.1`, `0.7.0`, `0.6.1`
-
-</details>
-
-**Latest Version**: `0.26.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) llm -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -57,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.llm
+const pkg = pantry['llm.datasette.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

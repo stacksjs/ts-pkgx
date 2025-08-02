@@ -1,11 +1,11 @@
-# github.com/google/re2
+# re2
 
-> RE2 is a fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python. It is a C++ library.
+> Package from pantry: github.com/google/re2
 
 ## Package Information
 
 - **Domain**: `github.com/google/re2`
-- **Name**: `github.com/google/re2`
+- **Name**: `re2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/google/re2/package.yml)
 
@@ -22,25 +22,6 @@ This package provides the following executable programs:
 
 *No programs specified*
 
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `2025.7.22`, `2025.7.17`, `2025.6.26`, `2025.06.26b`, `2024.7.2`
-- `2024.7.1`, `2024.6.1`, `2023.3.1`
-
-</details>
-
-**Latest Version**: `2025.7.22`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/google/re2@2025.7.22 -- $SHELL -i
-```
-
 ## Dependencies
 
 This package depends on:
@@ -53,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/google/re2']
+const pkg = pantry.re2
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

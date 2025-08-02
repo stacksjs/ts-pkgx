@@ -1,6 +1,6 @@
 # license
 
-> Command line license text generator.
+> Package from pantry: github.com/nishanths/license
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install license
+launchpad install github.com/nishanths/license
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `license`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `5.0.4`
-
-</details>
-
-**Latest Version**: `5.0.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) license -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

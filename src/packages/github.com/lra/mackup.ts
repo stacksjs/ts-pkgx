@@ -1,34 +1,24 @@
 /**
- * **mackup** - Keep your application settings in sync (OS X/Linux)
+ * **mackup** - Package from pantry: github.com/lra/mackup
  *
  * @domain `github.com/lra/mackup`
- * @programs `mackup`
- * @version `0.8.43` (8 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install mackup`
- * @name `mackup`
+ * @install `launchpad install github.com/lra/mackup`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mackup
- * // Or access via domain
- * const samePkg = pantry.githubcomlramackup
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomlramackup
  * console.log(pkg.name)        // "mackup"
- * console.log(pkg.description) // "Keep your application settings in sync (OS X/Li..."
- * console.log(pkg.programs)    // ["mackup"]
- * console.log(pkg.versions[0]) // "0.8.43" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/lra/mackup"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/lra/mackup.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mackupPackage = {
+export const githubcomlramackupPackage = {
   /**
    * The display name of this package.
    */
@@ -40,22 +30,15 @@ export const mackupPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Keep your application settings in sync (OS X/Linux)' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/lra/mackup/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/lra/mackup' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mackup' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'mackup',
-  ] as const,
+  installCommand: 'launchpad install github.com/lra/mackup' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/lra/mackup -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/lra/mackup' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -64,27 +47,10 @@ export const mackupPackage = {
   dependencies: [
     'python.org>=3<3.12',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.8.43',
-    '0.8.42',
-    '0.8.41',
-    '0.8.40',
-    '0.8.39',
-    '0.8.38',
-    '0.8.37',
-    '0.8.36',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mackup -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mackup' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/lra/mackup/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type MackupPackage = typeof mackupPackage
+export type GithubcomlramackupPackage = typeof githubcomlramackupPackage

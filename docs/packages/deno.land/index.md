@@ -71,7 +71,7 @@ sh <(curl https://pkgx.sh) deno -- $SHELL -i
 
 These packages work well with deno:
 
-- [`info-zip.org/unzip`](../info-zip.org/unzip/index.md) - Extraction utility for .zip compressed archives
+- [`info-zip.org/unzip`](../info-zip.org/unzip/index.md) - Package from pantry: info-zip.org/unzip
 
 ## Usage Examples
 

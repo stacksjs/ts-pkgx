@@ -1,37 +1,27 @@
 /**
- * **oras** - OCI registry client - managing content like artifacts, images, packages
+ * **oras.land** - Package from pantry: oras.land
  *
  * @domain `oras.land`
- * @programs `oras`
- * @version `1.2.3` (4 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install oras`
- * @name `oras`
+ * @install `launchpad install oras.land`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.oras
- * // Or access via domain
- * const samePkg = pantry.orasland
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "oras"
- * console.log(pkg.description) // "OCI registry client - managing content like art..."
- * console.log(pkg.programs)    // ["oras"]
- * console.log(pkg.versions[0]) // "1.2.3" (latest)
+ * const pkg = pantry.orasland
+ * console.log(pkg.name)        // "oras.land"
+ * console.log(pkg.description) // "Package from pantry: oras.land"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/oras-land.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const orasPackage = {
+export const oraslandPackage = {
   /**
    * The display name of this package.
    */
-  name: 'oras' as const,
+  name: 'oras.land' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,41 +29,21 @@ export const orasPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'OCI registry client - managing content like artifacts, images, packages' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/oras.land/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/oras-project/oras' as const,
+  description: 'Package from pantry: oras.land' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install oras' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'oras',
-  ] as const,
+  installCommand: 'launchpad install oras.land' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +oras.land -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install oras.land' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.2.3',
-    '1.2.2',
-    '1.2.1',
-    '1.2.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) oras -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install oras' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/oras.land/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type OrasPackage = typeof orasPackage
+export type OraslandPackage = typeof oraslandPackage

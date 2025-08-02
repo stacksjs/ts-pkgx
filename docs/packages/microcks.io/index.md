@@ -1,11 +1,11 @@
-# microcks-cli
+# microcks.io
 
-> Simple CLI for interacting with Microcks test APIs
+> Package from pantry: microcks.io
 
 ## Package Information
 
 - **Domain**: `microcks.io`
-- **Name**: `microcks-cli`
+- **Name**: `microcks.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microcks.io/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install microcks-cli
+launchpad install microcks.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `microcks-cli`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `0.9.0`, `0.5.8`, `0.5.7`, `0.5.6`, `0.5.5`
-- `0.5.4`
-
-</details>
-
-**Latest Version**: `0.9.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) microcks-cli -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -53,7 +34,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['microcks-cli']
+const pkg = pantry['microcks.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

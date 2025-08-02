@@ -1,33 +1,23 @@
 /**
- * **gdbm** - GNU database manager
+ * **gdbm** - Package from pantry: gnu.org/gdbm
  *
  * @domain `gnu.org/gdbm`
- * @programs `gdbm_dump`, `gdbm_load`, `gdbmtool`
- * @version `1.26.0` (4 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install gdbm`
- * @name `gdbm`
+ * @install `launchpad install gnu.org/gdbm`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gdbm
- * // Or access via domain
- * const samePkg = pantry.gnuorggdbm
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnuorggdbm
  * console.log(pkg.name)        // "gdbm"
- * console.log(pkg.description) // "GNU database manager"
- * console.log(pkg.programs)    // ["gdbm_dump", "gdbm_load", ...]
- * console.log(pkg.versions[0]) // "1.26.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: gnu.org/gdbm"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/gdbm.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gdbmPackage = {
+export const gnuorggdbmPackage = {
   /**
    * The display name of this package.
    */
@@ -39,43 +29,21 @@ export const gdbmPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'GNU database manager' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gdbm/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: gnu.org/gdbm' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gdbm' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'gdbm_dump',
-    'gdbm_load',
-    'gdbmtool',
-  ] as const,
+  installCommand: 'launchpad install gnu.org/gdbm' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gdbm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/gdbm' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.26.0',
-    '1.25.0',
-    '1.24.0',
-    '1.23.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gdbm -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gdbm' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gdbm/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type GdbmPackage = typeof gdbmPackage
+export type GnuorggdbmPackage = typeof gnuorggdbmPackage

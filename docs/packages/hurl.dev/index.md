@@ -1,11 +1,11 @@
-# hurl
+# hurl.dev
 
-> Run and Test HTTP Requests with plain text and curl
+> Package from pantry: hurl.dev
 
 ## Package Information
 
 - **Domain**: `hurl.dev`
-- **Name**: `hurl`
+- **Name**: `hurl.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hurl.dev/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install hurl
+launchpad install hurl.dev
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `hurl`
-- `hurlfmt`
-
-## Available Versions
-
-<details>
-<summary>Show all 10 versions</summary>
-
-- `7.0.0`, `6.1.1`, `6.1.0`, `6.0.0`, `5.0.1`
-- `5.0.0`, `4.3.0`, `4.2.0`, `4.1.0`, `4.0.0`
-
-</details>
-
-**Latest Version**: `7.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +hurl.dev@7.0.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -55,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.hurl
+const pkg = pantry['hurl.dev']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # migrate
 
-> Database migrations. CLI and Golang library.
+> Package from pantry: github.com/golang-migrate/migrate
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install migrate
+launchpad install github.com/golang-migrate/migrate
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `migrate`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `4.18.3`, `4.18.2`, `4.18.1`, `4.18.0`, `4.17.1`
-- `4.17.0`, `4.16.2`
-
-</details>
-
-**Latest Version**: `4.18.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) migrate -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

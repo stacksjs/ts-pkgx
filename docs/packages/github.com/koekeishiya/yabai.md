@@ -1,6 +1,6 @@
 # yabai
 
-> A tiling window manager for macOS based on binary space partitioning
+> Package from pantry: github.com/koekeishiya/yabai
 
 ## Package Information
 
@@ -13,37 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install yabai
+launchpad install github.com/koekeishiya/yabai
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `yabai`
-
-## Available Versions
-
-<details>
-<summary>Show all 30 versions</summary>
-
-- `7.1.15`, `7.1.14`, `7.1.13`, `7.1.12`, `7.1.11`
-- `7.1.10`, `7.1.9`, `7.1.8`, `7.1.7`, `7.1.6`
-- `7.1.5`, `7.1.4`, `7.1.3`, `7.1.2`, `7.1.1`
-- `7.1.0`, `7.0.4`, `7.0.3`, `7.0.2`, `7.0.1`
-- `7.0.0`, `6.0.15`, `6.0.14`, `6.0.13`, `6.0.12`
-- `6.0.11`, `6.0.10`, `6.0.9`, `6.0.8`, `6.0.7`
-
-</details>
-
-**Latest Version**: `7.1.15`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) yabai -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

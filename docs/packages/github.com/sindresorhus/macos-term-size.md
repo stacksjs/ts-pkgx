@@ -1,11 +1,11 @@
-# term-size
+# macos-term-size
 
-> Get the terminal window size on macOS
+> Package from pantry: github.com/sindresorhus/macos-term-size
 
 ## Package Information
 
 - **Domain**: `github.com/sindresorhus/macos-term-size`
-- **Name**: `term-size`
+- **Name**: `macos-term-size`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/sindresorhus/macos-term-size/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install term-size
+launchpad install github.com/sindresorhus/macos-term-size
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `term-size`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.0.0`
-
-</details>
-
-**Latest Version**: `1.0.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) term-size -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) term-size -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['term-size']
+const pkg = pantry['macos-term-size']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

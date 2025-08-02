@@ -1,6 +1,6 @@
 # z
 
-> z - jump around
+> Package from pantry: github.com/rupa/z
 
 ## Package Information
 
@@ -21,24 +21,6 @@ launchpad install github.com/rupa/z
 This package provides the following executable programs:
 
 *No programs specified*
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.12.0`
-
-</details>
-
-**Latest Version**: `1.12.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +github.com/rupa/z@1.12.0 -- $SHELL -i
-```
 
 ## Usage Examples
 

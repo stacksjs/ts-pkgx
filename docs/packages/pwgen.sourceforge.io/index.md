@@ -1,11 +1,11 @@
-# pwgen
+# pwgen.sourceforge.io
 
-> Password generator
+> Package from pantry: pwgen.sourceforge.io
 
 ## Package Information
 
 - **Domain**: `pwgen.sourceforge.io`
-- **Name**: `pwgen`
+- **Name**: `pwgen.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pwgen.sourceforge.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install pwgen
+launchpad install pwgen.sourceforge.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pwgen`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.8.0`
-
-</details>
-
-**Latest Version**: `2.8.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) pwgen -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) pwgen -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.pwgen
+const pkg = pantry['pwgen.sourceforge.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

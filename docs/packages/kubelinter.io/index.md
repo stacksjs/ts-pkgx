@@ -1,11 +1,11 @@
-# kube-linter
+# kubelinter.io
 
-> KubeLinter is a static analysis tool that checks Kubernetes YAML files and Helm charts to ensure the applications represented in them adhere to best practices.
+> Package from pantry: kubelinter.io
 
 ## Package Information
 
 - **Domain**: `kubelinter.io`
-- **Name**: `kube-linter`
+- **Name**: `kubelinter.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kubelinter.io/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install kube-linter
+launchpad install kubelinter.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `kube-linter`
-
-## Available Versions
-
-<details>
-<summary>Show all 6 versions</summary>
-
-- `0.7.4`, `0.7.3`, `0.7.2`, `0.7.1`, `0.7.0`
-- `0.6.8`
-
-</details>
-
-**Latest Version**: `0.7.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) kube-linter -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -47,7 +28,7 @@ sh <(curl https://pkgx.sh) kube-linter -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['kube-linter']
+const pkg = pantry['kubelinter.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

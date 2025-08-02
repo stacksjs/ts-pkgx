@@ -1,11 +1,11 @@
-# mkcert
+# mkcert.dev
 
-> A simple zero-config tool to make locally trusted development certificates with any names you'd like.
+> Package from pantry: mkcert.dev
 
 ## Package Information
 
 - **Domain**: `mkcert.dev`
-- **Name**: `mkcert`
+- **Name**: `mkcert.dev`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mkcert.dev/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install mkcert
+launchpad install mkcert.dev
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mkcert`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.4.4`
-
-</details>
-
-**Latest Version**: `1.4.4`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) mkcert -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) mkcert -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.mkcert
+const pkg = pantry['mkcert.dev']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

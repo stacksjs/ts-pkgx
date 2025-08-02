@@ -1,6 +1,6 @@
 # pakku
 
-> pakku is a declarative approach to your system package managers.
+> Package from pantry: github.com/mycreepy/pakku
 
 ## Package Information
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install pakku
+launchpad install github.com/mycreepy/pakku
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pakku`
-
-## Available Versions
-
-<details>
-<summary>Show all 8 versions</summary>
-
-- `0.5.0`, `0.4.2`, `0.4.1`, `0.4.0`, `0.3.1`
-- `0.3.0`, `0.2.0`, `0.1.0`
-
-</details>
-
-**Latest Version**: `0.5.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) pakku -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

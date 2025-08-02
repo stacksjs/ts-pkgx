@@ -1,6 +1,6 @@
 # s5cmd
 
-> Parallel S3 and local filesystem execution tool.
+> Package from pantry: github.com/peak/s5cmd
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install s5cmd
+launchpad install github.com/peak/s5cmd
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `s5cmd`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `2.3.0`
-
-</details>
-
-**Latest Version**: `2.3.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) s5cmd -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

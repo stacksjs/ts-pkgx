@@ -1,11 +1,11 @@
-# ko
+# ko.build
 
-> Build and deploy Go applications on Kubernetes
+> Package from pantry: ko.build
 
 ## Package Information
 
 - **Domain**: `ko.build`
-- **Name**: `ko`
+- **Name**: `ko.build`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ko.build/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install ko
+launchpad install ko.build
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `ko`
-
-## Available Versions
-
-<details>
-<summary>Show all 4 versions</summary>
-
-- `0.18.0`, `0.17.1`, `0.17.0`, `0.16.0`
-
-</details>
-
-**Latest Version**: `0.18.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) ko -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) ko -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.ko
+const pkg = pantry['ko.build']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

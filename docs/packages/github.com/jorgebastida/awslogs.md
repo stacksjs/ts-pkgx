@@ -1,6 +1,6 @@
 # awslogs
 
-> Simple command-line tool to read AWS CloudWatch logs
+> Package from pantry: github.com/jorgebastida/awslogs
 
 ## Package Information
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install awslogs
+launchpad install github.com/jorgebastida/awslogs
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `awslogs`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `0.15.0`, `0.14.0`
-
-</details>
-
-**Latest Version**: `0.15.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) awslogs -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

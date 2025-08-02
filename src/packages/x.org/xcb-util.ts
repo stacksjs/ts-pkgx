@@ -1,9 +1,7 @@
 /**
- * **x.org/xcb-util** - pkgx package
+ * **xcb-util** - Package from pantry: x.org/xcb-util
  *
  * @domain `x.org/xcb-util`
- * @version `0.4.1` (1 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install x.org/xcb-util`
  * @dependencies `x.org/xcb^1`
@@ -13,8 +11,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgxcbutil
- * console.log(pkg.name)        // "x.org/xcb-util"
- * console.log(pkg.versions[0]) // "0.4.1" (latest)
+ * console.log(pkg.name)        // "xcb-util"
+ * console.log(pkg.description) // "Package from pantry: x.org/xcb-util"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xcb-util.md
@@ -24,7 +22,7 @@ export const xorgxcbutilPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xcb-util' as const,
+  name: 'xcb-util' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -32,15 +30,14 @@ export const xorgxcbutilPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xcb-util/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: x.org/xcb-util' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install x.org/xcb-util' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xcb-util -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/xcb-util' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -50,16 +47,10 @@ export const xorgxcbutilPackage = {
   dependencies: [
     'x.org/xcb^1',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '0.4.1',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xcb-util -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install x.org/xcb-util' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xcb-util/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type XorgxcbutilPackage = typeof xorgxcbutilPackage

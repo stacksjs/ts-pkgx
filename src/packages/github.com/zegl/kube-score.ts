@@ -1,33 +1,23 @@
 /**
- * **kube-score** - Kubernetes object analysis with recommendations for improved reliability and security. kube-score actively prevents downtime and bugs in your Kubernetes YAML and Charts. Static code analysis for Kubernetes.
+ * **kube-score** - Package from pantry: github.com/zegl/kube-score
  *
  * @domain `github.com/zegl/kube-score`
- * @programs `kube-score`
- * @version `1.20.0` (6 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install kube-score`
- * @name `kube-score`
+ * @install `launchpad install github.com/zegl/kube-score`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.kubescore
- * // Or access via domain
- * const samePkg = pantry.githubcomzeglkubescore
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomzeglkubescore
  * console.log(pkg.name)        // "kube-score"
- * console.log(pkg.description) // "Kubernetes object analysis with recommendations..."
- * console.log(pkg.programs)    // ["kube-score"]
- * console.log(pkg.versions[0]) // "1.20.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: github.com/zegl/kube-score"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/zegl/kube-score.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kubescorePackage = {
+export const githubcomzeglkubescorePackage = {
   /**
    * The display name of this package.
    */
@@ -39,43 +29,21 @@ export const kubescorePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Kubernetes object analysis with recommendations for improved reliability and security. kube-score actively prevents downtime and bugs in your Kubernetes YAML and Charts. Static code analysis for Kubernetes.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zegl/kube-score/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: github.com/zegl/kube-score' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install kube-score' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'kube-score',
-  ] as const,
+  installCommand: 'launchpad install github.com/zegl/kube-score' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/zegl/kube-score -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/zegl/kube-score' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.20.0',
-    '1.19.0',
-    '1.18.0',
-    '1.17.0',
-    '1.15.0',
-    '1.14.0',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kube-score -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install kube-score' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zegl/kube-score/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
-export type KubescorePackage = typeof kubescorePackage
+export type GithubcomzeglkubescorePackage = typeof githubcomzeglkubescorePackage
