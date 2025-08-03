@@ -2,7 +2,7 @@
  * **opencode.ai** - pkgx package
  *
  * @domain `opencode.ai`
- * @version `0.3.122` (88 versions available)
+ * @version `0.3.122` (89 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install opencode.ai`
@@ -49,6 +49,7 @@ export const opencodeaiPackage = {
    */
   versions: [
     '0.3.122',
+    '0.3.121',
     '0.3.120',
     '0.3.119',
     '0.3.118',
