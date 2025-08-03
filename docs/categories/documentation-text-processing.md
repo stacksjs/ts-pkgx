@@ -26,53 +26,53 @@ Terminal based presentation tool
 
 ---
 
-### [mkdocs.org](../packages/mkdocs.org/index.md) (mkdocs)
+### [mkdocs.org](../packages/mkdocs.org/index.md)
 
-Project documentation with Markdown.
+Package from pantry: mkdocs.org
 
-**Programs**: mkdocs
+**Programs**: None specified
 
-**Install**: `launchpad install mkdocs`
-
----
-
-### [pandoc.org](../packages/pandoc.org/index.md) (pandoc)
-
-Swiss-army knife of markup format conversion
-
-**Programs**: pandoc
-
-**Install**: `launchpad install pandoc`
+**Install**: `launchpad install mkdocs.org`
 
 ---
 
-### [sphinx-doc.org](../packages/sphinx-doc.org/index.md) (sphinx)
+### [pandoc.org](../packages/pandoc.org/index.md)
 
-Tool to create intelligent and beautiful documentation
+Package from pantry: pandoc.org
 
-**Programs**: sphinx-apidoc, sphinx-autogen, sphinx-build, sphinx-quickstart
+**Programs**: None specified
 
-**Install**: `launchpad install sphinx`
-
----
-
-### [tectonic-typesetting.github.io](../packages/tectonic-typesetting.github.io/index.md) (tectonic)
-
-A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive.
-
-**Programs**: tectonic
-
-**Install**: `launchpad install tectonic`
+**Install**: `launchpad install pandoc.org`
 
 ---
 
-### [typst.app](../packages/typst.app/index.md) (typst)
+### [sphinx-doc.org](../packages/sphinx-doc.org/index.md)
 
-A new markup-based typesetting system that is powerful and easy to learn.
+Package from pantry: sphinx-doc.org
 
-**Programs**: typst
+**Programs**: None specified
 
-**Install**: `launchpad install typst`
+**Install**: `launchpad install sphinx-doc.org`
+
+---
+
+### [tectonic-typesetting.github.io](../packages/tectonic-typesetting.github.io/index.md)
+
+Package from pantry: tectonic-typesetting.github.io
+
+**Programs**: None specified
+
+**Install**: `launchpad install tectonic-typesetting.github.io`
+
+---
+
+### [typst.app](../packages/typst.app/index.md)
+
+Package from pantry: typst.app
+
+**Programs**: None specified
+
+**Install**: `launchpad install typst.app`
 
 ---
 

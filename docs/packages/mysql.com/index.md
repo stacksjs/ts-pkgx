@@ -1,6 +1,6 @@
 # mysql.com
 
-> MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.
+> Package from pantry: mysql.com
 
 ## Package Information
 
@@ -20,60 +20,7 @@ launchpad install mysql.com
 
 This package provides the following executable programs:
 
-- `mysql_client_test`
-- `my_print_defaults`
-- `myisam_ftdump`
-- `myisamchk`
-- `myisamlog`
-- `myisampack`
-- `mysql`
-- `mysql_config`
-- `mysql_config_editor`
-- `mysql_keyring_encryption_test`
-- `mysql_migrate_keyring`
-- `mysql_secure_installation`
-- `mysql_tzinfo_to_sql`
-- `mysqladmin`
-- `mysqlbinlog`
-- `mysqlcheck`
-- `mysqld`
-- `mysqld_multi`
-- `mysqld_safe`
-- `mysqldump`
-- `mysqldumpslow`
-- `mysqlimport`
-- `mysqlrouter`
-- `mysqlrouter_keyring`
-- `mysqlrouter_passwd`
-- `mysqlrouter_plugin_info`
-- `mysqlshow`
-- `mysqlslap`
-- `mysqltest`
-- `mysqltest_safe_process`
-- `mysqlxtest`
-
-## Available Versions
-
-<details>
-<summary>Show all 27 versions</summary>
-
-- `9.4.0`, `9.3.0`, `9.2.0`, `9.1.0`, `9.0.1`
-- `9.0.0`, `8.4.6`, `8.4.5`, `8.4.4`, `8.4.3`
-- `8.4.2`, `8.4.1`, `8.4.0`, `8.3.0`, `8.2.0`
-- `8.1.0`, `8.0.43`, `8.0.42`, `8.0.41`, `8.0.40`
-- `8.0.39`, `8.0.38`, `8.0.36`, `8.0.35`, `8.0.34`
-- `8.0.33`, `8.0.32`
-
-</details>
-
-**Latest Version**: `9.4.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +mysql.com@9.4.0 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

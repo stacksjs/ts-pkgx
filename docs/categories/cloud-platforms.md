@@ -46,43 +46,43 @@ The LocalStack CLI packaged using pyinstaller
 
 ---
 
-### [planetscale.com](../packages/planetscale.com/index.md) (pscale)
+### [planetscale.com](../packages/planetscale.com/index.md)
 
-The CLI for PlanetScale Database
+Package from pantry: planetscale.com
 
-**Programs**: pscale
+**Programs**: None specified
 
-**Install**: `launchpad install pscale`
-
----
-
-### [railway.app](../packages/railway.app/index.md) (railway)
-
-Develop and deploy code with zero configuration
-
-**Programs**: railway
-
-**Install**: `launchpad install railway`
+**Install**: `launchpad install planetscale.com`
 
 ---
 
-### [render.com](../packages/render.com/index.md) (render)
+### [railway.app](../packages/railway.app/index.md)
 
-Command-line interface for Render
+Package from pantry: railway.app
 
-**Programs**: render
+**Programs**: None specified
 
-**Install**: `launchpad install render`
+**Install**: `launchpad install railway.app`
 
 ---
 
-### [supabase.com/cli](../packages/supabase.com/cli/index.md) (supabase)
+### [render.com](../packages/render.com/index.md)
 
-Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres backups. Generating types from your database schema.
+Package from pantry: render.com
 
-**Programs**: supabase
+**Programs**: None specified
 
-**Install**: `launchpad install supabase`
+**Install**: `launchpad install render.com`
+
+---
+
+### [supabase.com/cli](../packages/supabase.com/cli/index.md) (cli)
+
+Package from pantry: supabase.com/cli
+
+**Programs**: None specified
+
+**Install**: `launchpad install supabase.com/cli`
 
 ---
 

@@ -46,13 +46,13 @@ This is purely for downloads, please check the website for full information
 
 ---
 
-### [solana.com](../packages/solana.com/index.md) (solana)
+### [solana.com](../packages/solana.com/index.md)
 
-Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces.
+Package from pantry: solana.com
 
-**Programs**: solana, solana-keygen, solana-bench-streamer, solana-faucet, solana-keygen, solana-log-analyzer, solana-net-shaper, solana-stake-accounts, solana-tokens, solana-watchtower
+**Programs**: None specified
 
-**Install**: `launchpad install solana`
+**Install**: `launchpad install solana.com`
 
 ---
 

@@ -1,9 +1,7 @@
 /**
- * **msgpack.org** - MessagePack implementation for C and C++ / msgpack.org[C/C++]
+ * **msgpack.org** - Package from pantry: msgpack.org
  *
  * @domain `msgpack.org`
- * @version `6.0.2` (3 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install msgpack.org`
  *
@@ -13,8 +11,7 @@
  *
  * const pkg = pantry.msgpackorg
  * console.log(pkg.name)        // "msgpack.org"
- * console.log(pkg.description) // "MessagePack implementation for C and C++ / msgp..."
- * console.log(pkg.versions[0]) // "6.0.2" (latest)
+ * console.log(pkg.description) // "Package from pantry: msgpack.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/msgpack-org.md
@@ -32,30 +29,21 @@ export const msgpackorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'MessagePack implementation for C and C++ / msgpack.org[C/C++]' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/msgpack.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: msgpack.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install msgpack.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +msgpack.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install msgpack.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '6.0.2',
-    '6.0.1',
-    '6.0.0',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +msgpack.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install msgpack.org' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/msgpack.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type MsgpackorgPackage = typeof msgpackorgPackage

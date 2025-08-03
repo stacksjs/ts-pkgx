@@ -1,11 +1,11 @@
-# pake
+# pake-cli
 
-> 🤱🏻 Turn any webpage into a desktop app with Rust. 🤱🏻 利用 Rust 轻松构建轻量级多端桌面应用
+> Package from pantry: npmjs.com/pake-cli
 
 ## Package Information
 
 - **Domain**: `npmjs.com/pake-cli`
-- **Name**: `pake`
+- **Name**: `pake-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/npmjs.com/pake-cli/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install pake
+launchpad install npmjs.com/pake-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `pake`
-
-## Available Versions
-
-<details>
-<summary>Show all 7 versions</summary>
-
-- `3.1.1`, `3.0.3`, `2.6.0`, `2.5.1`, `2.5.0`
-- `2.3.6`, `2.3.5`
-
-</details>
-
-**Latest Version**: `3.1.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) pake -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -66,7 +47,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.pake
+const pkg = pantry['pake-cli']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # Monitoring & Observability
 
-*4 packages in this category*
+*3 packages in this category*
 
 Packages related to monitoring & observability.
 
@@ -33,16 +33,6 @@ Web based real-time log viewer. Stream ANY content to a web UI with autogenerate
 **Programs**: logdy
 
 **Install**: `launchpad install logdy`
-
----
-
-### [steampipe.io](../packages/steampipe.io/index.md) (steampipe)
-
-Zero-ETL, infinite possibilities. Live query APIs, code & more with SQL. No DB required.
-
-**Programs**: steampipe
-
-**Install**: `launchpad install steampipe`
 
 ---
 
