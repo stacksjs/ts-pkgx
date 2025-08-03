@@ -3,7 +3,7 @@
  *
  * @domain `amrdeveloper.github.io/GQL`
  * @programs `gitql`
- * @version `0.39.0` (33 versions available)
+ * @version `0.40.0` (34 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gitql`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "gitql"
  * console.log(pkg.description) // "GitQL is a extensible SQL-like query language a..."
  * console.log(pkg.programs)    // ["gitql"]
- * console.log(pkg.versions[0]) // "0.39.0" (latest)
+ * console.log(pkg.versions[0]) // "0.40.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/amrdeveloper-github-io/GQL.md
@@ -69,6 +69,7 @@ export const gitqlPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.40.0',
     '0.39.0',
     '0.38.0',
     '0.37.0',
