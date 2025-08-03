@@ -26,53 +26,53 @@ Terminal based presentation tool
 
 ---
 
-### [mkdocs.org](../packages/mkdocs.org/index.md)
+### [mkdocs.org](../packages/mkdocs.org/index.md) (mkdocs)
 
-Package from pantry: mkdocs.org
+Project documentation with Markdown.
 
-**Programs**: None specified
+**Programs**: mkdocs
 
-**Install**: `launchpad install mkdocs.org`
-
----
-
-### [pandoc.org](../packages/pandoc.org/index.md)
-
-Package from pantry: pandoc.org
-
-**Programs**: None specified
-
-**Install**: `launchpad install pandoc.org`
+**Install**: `launchpad install mkdocs`
 
 ---
 
-### [sphinx-doc.org](../packages/sphinx-doc.org/index.md)
+### [pandoc.org](../packages/pandoc.org/index.md) (pandoc)
 
-Package from pantry: sphinx-doc.org
+Swiss-army knife of markup format conversion
 
-**Programs**: None specified
+**Programs**: pandoc
 
-**Install**: `launchpad install sphinx-doc.org`
-
----
-
-### [tectonic-typesetting.github.io](../packages/tectonic-typesetting.github.io/index.md)
-
-Package from pantry: tectonic-typesetting.github.io
-
-**Programs**: None specified
-
-**Install**: `launchpad install tectonic-typesetting.github.io`
+**Install**: `launchpad install pandoc`
 
 ---
 
-### [typst.app](../packages/typst.app/index.md)
+### [sphinx-doc.org](../packages/sphinx-doc.org/index.md) (sphinx)
 
-Package from pantry: typst.app
+Tool to create intelligent and beautiful documentation
 
-**Programs**: None specified
+**Programs**: sphinx-apidoc, sphinx-autogen, sphinx-build, sphinx-quickstart
 
-**Install**: `launchpad install typst.app`
+**Install**: `launchpad install sphinx`
+
+---
+
+### [tectonic-typesetting.github.io](../packages/tectonic-typesetting.github.io/index.md) (tectonic)
+
+A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive.
+
+**Programs**: tectonic
+
+**Install**: `launchpad install tectonic`
+
+---
+
+### [typst.app](../packages/typst.app/index.md) (typst)
+
+A new markup-based typesetting system that is powerful and easy to learn.
+
+**Programs**: typst
+
+**Install**: `launchpad install typst`
 
 ---
 

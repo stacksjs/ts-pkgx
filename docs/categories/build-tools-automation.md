@@ -1,6 +1,6 @@
 # Build Tools & Automation
 
-*12 packages in this category*
+*15 packages in this category*
 
 Packages related to build tools & automation.
 
@@ -116,13 +116,43 @@ Fast and user friendly build system
 
 ---
 
-### [pantsbuild.org/scie-pants](../packages/pantsbuild.org/scie-pants/index.md) (scie-pants)
+### [ninja-build.org](../packages/ninja-build.org/index.md) (ninja)
 
-Package from pantry: pantsbuild.org/scie-pants
+Small build system for use with gyp or CMake
 
-**Programs**: None specified
+**Programs**: ninja
 
-**Install**: `launchpad install pantsbuild.org/scie-pants`
+**Install**: `launchpad install ninja`
+
+---
+
+### [pantsbuild.org/scie-pants](../packages/pantsbuild.org/scie-pants/index.md) (scie-pants, pants)
+
+Protects your Pants from the elements.
+
+**Programs**: pants
+
+**Install**: `launchpad install pants`
+
+---
+
+### [scons.org](../packages/scons.org/index.md) (scons)
+
+Substitute for classic 'make' tool with autoconf/automake functionality
+
+**Programs**: scons
+
+**Install**: `launchpad install scons`
+
+---
+
+### [taskfile.dev](../packages/taskfile.dev/index.md) (task)
+
+A task runner / simpler Make alternative written in Go
+
+**Programs**: task
+
+**Install**: `launchpad install task`
 
 ---
 
