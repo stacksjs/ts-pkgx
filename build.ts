@@ -37,5 +37,18 @@ if (!cliResult.success) {
   process.exit(1)
 }
 
+// Add shebang to CLI for proper execution
+const fs = await import('fs')
+const cliPath = './dist/bin/cli.js'
+if (fs.existsSync(cliPath)) {
+  const cliContent = fs.readFileSync(cliPath, 'utf8')
+  if (!cliContent.startsWith('#!')) {
+    console.log('Adding shebang to CLI...')
+    fs.writeFileSync(cliPath, `#!/usr/bin/env bun\n${cliContent}`)
+    // Make executable
+    fs.chmodSync(cliPath, 0o755)
+  }
+}
+
 console.log('CLI build completed successfully!')
 console.log('All builds completed successfully!')
