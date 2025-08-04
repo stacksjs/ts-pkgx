@@ -1088,6 +1088,8 @@ cli
           console.log(JSON.stringify(versions))
           break
       }
+
+      process.exit(0)
     }
     catch (error) {
       console.error('Error getting PHP versions:', error)
