@@ -271,7 +271,7 @@ interface FetchOptions {
   outputJson?: boolean
 }
 
-const cli = new CAC('pkgx-tools')
+const cli = new CAC('ts-pkgx')
 
 // Force exit after a maximum timeout to prevent hung processes
 // This is a safety mechanism in case Playwright doesn't close properly
@@ -1050,6 +1050,46 @@ cli
       else {
         console.error('Error resolving dependencies:', error)
       }
+      process.exit(1)
+    }
+  })
+
+// Get PHP versions for CI/CD workflows
+cli
+  .command('get-php-versions', 'Get PHP versions suitable for CI/CD workflows')
+  .option('--format <type>', 'Output format: json (default), yaml, or csv', { default: 'json' })
+  .option('--branches <branches>', 'Comma-separated list of PHP branches to include (e.g., 8.4,8.3,8.2)')
+  .option('--fallback <versions>', 'Comma-separated list of fallback versions if detection fails')
+  .action(async (options) => {
+    try {
+      const { getPhpVersionsForWorkflow } = await import('../src/version-utils')
+
+      const workflowOptions: any = {}
+
+      if (options.branches) {
+        workflowOptions.supportedBranches = options.branches.split(',').map((b: string) => b.trim())
+      }
+
+      if (options.fallback) {
+        workflowOptions.fallbackVersions = options.fallback.split(',').map((v: string) => v.trim())
+      }
+
+      const versions = getPhpVersionsForWorkflow(workflowOptions)
+
+      switch (options.format.toLowerCase()) {
+        case 'yaml':
+          console.log(`php_versions:\n${versions.map(v => `  - "${v}"`).join('\n')}`)
+          break
+        case 'csv':
+          console.log(versions.join(','))
+          break
+        case 'json':
+        default:
+          console.log(JSON.stringify(versions))
+          break
+      }
+    } catch (error) {
+      console.error('Error getting PHP versions:', error)
       process.exit(1)
     }
   })

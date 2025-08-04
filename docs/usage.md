@@ -8,37 +8,37 @@ After installing the package, you can use the CLI tools to fetch and manage pack
 
 ```bash
 # Fetch a single package
-pkgx-tools fetch nodejs.org
+ts-pkgx fetch nodejs.org
 
 # Fetch multiple packages at once
-pkgx-tools fetch --pkg nodejs.org,bun.sh,deno.land
+ts-pkgx fetch --pkg nodejs.org,bun.sh,deno.land
 
 # Fetch all available packages
-pkgx-tools fetch --all
+ts-pkgx fetch --all
 
 # Generate index file
-pkgx-tools generate-index
+ts-pkgx generate-index
 
 # Generate TypeScript from cached JSON
-pkgx-tools generate-ts
+ts-pkgx generate-ts
 
 # Generate aliases file
-pkgx-tools generate-aliases
+ts-pkgx generate-aliases
 
 # Generate documentation
-pkgx-tools generate-docs
+ts-pkgx generate-docs
 
 # Update local pantry
-pkgx-tools update-pantry
+ts-pkgx update-pantry
 
 # Generate constants file
-pkgx-tools generate-consts
+ts-pkgx generate-consts
 
 # Resolve dependency files
-pkgx-tools resolve-deps deps.yaml
+ts-pkgx resolve-deps deps.yaml
 
 # Show version information
-pkgx-tools version
+ts-pkgx version
 ```
 
 You can also use the Bun scripts:
@@ -101,19 +101,19 @@ The fetch command supports several options:
 
 ```bash
 # Fetch with custom settings
-pkgx-tools fetch --all --concurrency 12 --timeout 60000 --cache-expiration 60
+ts-pkgx fetch --all --concurrency 12 --timeout 60000 --cache-expiration 60
 
 # Fetch specific packages with verbose output
-pkgx-tools fetch --pkg "node,bun,python,go" --verbose
+ts-pkgx fetch --pkg "node,bun,python,go" --verbose
 
 # Disable caching and save as JSON
-pkgx-tools fetch --pkg "rust-lang.org,deno.land" --no-cache --json
+ts-pkgx fetch --pkg "rust-lang.org,deno.land" --no-cache --json
 
 # Fetch for CI integration
-pkgx-tools fetch --pkg "nodejs.org,bun.sh" --output-json
+ts-pkgx fetch --pkg "nodejs.org,bun.sh" --output-json
 
 # Debug mode for troubleshooting
-pkgx-tools fetch agwa.name/git-crypt --debug --verbose
+ts-pkgx fetch agwa.name/git-crypt --debug --verbose
 ```
 
 ## Dependency Resolution
@@ -122,19 +122,19 @@ ts-pkgx includes a powerful dependency resolver that can analyze dependency file
 
 ```bash
 # Resolve a single dependency file
-pkgx-tools resolve-deps deps.yaml
+ts-pkgx resolve-deps deps.yaml
 
 # Resolve with verbose output and install command
-pkgx-tools resolve-deps pkgx.yaml --verbose --install-command
+ts-pkgx resolve-deps pkgx.yaml --verbose --install-command
 
 # Find all dependency files in a project
-pkgx-tools resolve-deps --find-files ./my-project
+ts-pkgx resolve-deps --find-files ./my-project
 
 # Output as JSON for automation
-pkgx-tools resolve-deps deps.yaml --json
+ts-pkgx resolve-deps deps.yaml --json
 
 # Filter for specific OS
-pkgx-tools resolve-deps deps.yaml --target-os darwin --include-os-deps
+ts-pkgx resolve-deps deps.yaml --target-os darwin --include-os-deps
 ```
 
 ### Dependency File Formats
@@ -330,17 +330,17 @@ ts-pkgx now includes powerful pantry management features:
 
 ```bash
 # Update local pantry from pkgx distribution
-pkgx-tools update-pantry
+ts-pkgx update-pantry
 
 # Generate constants file from local pantry
-pkgx-tools generate-consts --source pantry
+ts-pkgx generate-consts --source pantry
 
 # Generate constants file from S3 registry
-pkgx-tools generate-consts --source registry --validate
+ts-pkgx generate-consts --source registry --validate
 
 # Use custom pantry directory
-pkgx-tools update-pantry --pantry-dir ./my-pantry
-pkgx-tools generate-consts --pantry-dir ./my-pantry
+ts-pkgx update-pantry --pantry-dir ./my-pantry
+ts-pkgx generate-consts --pantry-dir ./my-pantry
 ```
 
 ### Cache Management
@@ -349,16 +349,16 @@ Control caching behavior for optimal performance:
 
 ```bash
 # Use fresh data (disable cache)
-pkgx-tools fetch --all --no-cache
+ts-pkgx fetch --all --no-cache
 
 # Custom cache expiration (30 minutes)
-pkgx-tools fetch --all --cache-expiration 30
+ts-pkgx fetch --all --cache-expiration 30
 
 # Custom cache directory
-pkgx-tools fetch --all --cache-dir ./my-cache
+ts-pkgx fetch --all --cache-dir ./my-cache
 
 # Generate TypeScript from cached JSON files
-pkgx-tools generate-ts --cache-dir ./my-cache --output-dir ./output
+ts-pkgx generate-ts --cache-dir ./my-cache --output-dir ./output
 ```
 
 ### Performance Optimization
@@ -367,13 +367,13 @@ Optimize for different scenarios:
 
 ```bash
 # High-performance bulk fetching
-pkgx-tools fetch --all --concurrency 12 --timeout 60000
+ts-pkgx fetch --all --concurrency 12 --timeout 60000
 
 # Conservative fetching for slow networks
-pkgx-tools fetch --all --concurrency 4 --timeout 120000
+ts-pkgx fetch --all --concurrency 4 --timeout 120000
 
 # Quick testing with limited packages
-pkgx-tools fetch --all --limit 10 --verbose
+ts-pkgx fetch --all --limit 10 --verbose
 ```
 
 ### CI/CD Integration
@@ -382,11 +382,11 @@ Use output-json for automation:
 
 ```bash
 # Get structured JSON output for CI systems
-result=$(pkgx-tools fetch --pkg "node,bun,python" --output-json)
+result=$(ts-pkgx fetch --pkg "node,bun,python" --output-json)
 echo "$result" | jq '.updatedPackages[]'
 
 # Batch process specific packages
-pkgx-tools fetch --pkg "$(cat package-list.txt | tr '\n' ',')" --output-json
+ts-pkgx fetch --pkg "$(cat package-list.txt | tr '\n' ',')" --output-json
 ```
 
 ## Advanced Usage

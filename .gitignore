@@ -12,6 +12,6 @@ temp
 docs/.vitepress/cache
 github-cache.json
 github-rate-limit.json
-bin/pkgx-tools
-bin/pkgx-tools*
+bin/ts-pkgx
+bin/ts-pkgx*
 /docs/.vitepress/.temp

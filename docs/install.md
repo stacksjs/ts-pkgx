@@ -72,16 +72,16 @@ ts-pkgx also provides pre-compiled binaries for various platforms. These allow y
 
 ```sh
 # Download the binary for your platform
-curl -fsSL https://github.com/stacksjs/ts-pkgx/releases/latest/download/pkgx-tools-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m).zip -o pkgx-tools.zip
+curl -fsSL https://github.com/stacksjs/ts-pkgx/releases/latest/download/ts-pkgx-$(uname -s | tr '[:upper:]' '[:lower:]')-$(uname -m).zip -o ts-pkgx.zip
 
 # Unzip the binary
-unzip pkgx-tools.zip
+unzip ts-pkgx.zip
 
 # Make it executable
-chmod +x pkgx-tools
+chmod +x ts-pkgx
 
 # Move to a directory in your PATH (optional)
-sudo mv pkgx-tools /usr/local/bin/
+sudo mv ts-pkgx /usr/local/bin/
 ```
 
 ## Verification
@@ -95,7 +95,7 @@ bun run pkgx:fetch node
 Or if you installed globally or are using the binary:
 
 ```sh
-pkgx-tools fetch node
+ts-pkgx fetch node
 ```
 
 This should fetch information about the Node.js package from pkgx.dev.

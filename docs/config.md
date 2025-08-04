@@ -199,19 +199,19 @@ The dependency resolver supports extensive configuration options:
 
 ```bash
 # Basic dependency resolution
-pkgx-tools resolve-deps deps.yaml
+ts-pkgx resolve-deps deps.yaml
 
 # With custom directories
-pkgx-tools resolve-deps deps.yaml --pantry-dir ./my-pantry --packages-dir ./my-packages
+ts-pkgx resolve-deps deps.yaml --pantry-dir ./my-pantry --packages-dir ./my-packages
 
 # OS-specific filtering
-pkgx-tools resolve-deps deps.yaml --target-os darwin --include-os-deps
+ts-pkgx resolve-deps deps.yaml --target-os darwin --include-os-deps
 
 # Custom recursion depth and verbose output
-pkgx-tools resolve-deps deps.yaml --max-depth 5 --verbose
+ts-pkgx resolve-deps deps.yaml --max-depth 5 --verbose
 
 # JSON output for automation
-pkgx-tools resolve-deps deps.yaml --json
+ts-pkgx resolve-deps deps.yaml --json
 ```
 
 ### Dependency Resolver Options

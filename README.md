@@ -59,6 +59,11 @@ bun ./bin/cli.ts generate-consts
 
 # Resolve dependency files and transitive dependencies
 bun ./bin/cli.ts resolve-deps deps.yaml
+
+# Get PHP versions for CI/CD workflows
+bun ./bin/cli.ts get-php-versions
+bun ./bin/cli.ts get-php-versions --format yaml
+bun ./bin/cli.ts get-php-versions --branches 8.4,8.3 --format csv
 ```
 
 ### Dependency Resolution
@@ -193,6 +198,12 @@ const yamlResult = await resolveDependenciesFromYaml(yamlContent)
 // Resolve single package dependencies
 const grepDeps = await resolvePackageDependencies('gnu.org/grep')
 console.log(`grep has ${grepDeps.length} total dependencies`)
+
+// Get PHP versions for CI/CD workflows
+const { getPhpVersionsForWorkflow } = await import('ts-pkgx')
+const workflowVersions = getPhpVersionsForWorkflow()
+console.log('Latest PHP versions for CI:', workflowVersions)
+// Output: ['8.4.11', '8.3.24', '8.2.29', '8.1.32']
 ```
 
 ### TypeScript Types

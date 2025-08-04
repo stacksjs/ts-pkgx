@@ -14,15 +14,15 @@ bun install ts-pkgx
 
 | Command | Description |
 |---------|-------------|
-| `pkgx-tools fetch [packageName]` | Fetch a single package, multiple packages, or all packages |
-| `pkgx-tools resolve-deps [file]` | Resolve dependency files and find all transitive dependencies |
-| `pkgx-tools generate-index` | Generate TypeScript index file for packages |
-| `pkgx-tools generate-ts` | Generate TypeScript files from cached JSON |
-| `pkgx-tools generate-aliases` | Generate TypeScript aliases file for packages |
-| `pkgx-tools generate-docs` | Generate comprehensive VitePress documentation for all packages |
-| `pkgx-tools update-pantry` | Download and extract the latest pantry.tgz file |
-| `pkgx-tools generate-consts` | Generate or update the consts.ts file with all known packages |
-| `pkgx-tools version` | Display version information |
+| `ts-pkgx fetch [packageName]` | Fetch a single package, multiple packages, or all packages |
+| `ts-pkgx resolve-deps [file]` | Resolve dependency files and find all transitive dependencies |
+| `ts-pkgx generate-index` | Generate TypeScript index file for packages |
+| `ts-pkgx generate-ts` | Generate TypeScript files from cached JSON |
+| `ts-pkgx generate-aliases` | Generate TypeScript aliases file for packages |
+| `ts-pkgx generate-docs` | Generate comprehensive VitePress documentation for all packages |
+| `ts-pkgx update-pantry` | Download and extract the latest pantry.tgz file |
+| `ts-pkgx generate-consts` | Generate or update the consts.ts file with all known packages |
+| `ts-pkgx version` | Display version information |
 
 ## fetch Command
 
@@ -32,13 +32,13 @@ The `fetch` command retrieves package information from pkgx.dev for one or more 
 
 ```bash
 # Fetch a single package
-pkgx-tools fetch [packageName] [options]
+ts-pkgx fetch [packageName] [options]
 
 # Fetch multiple specific packages
-pkgx-tools fetch --pkg <packageNames> [options]
+ts-pkgx fetch --pkg <packageNames> [options]
 
 # Fetch all packages
-pkgx-tools fetch --all [options]
+ts-pkgx fetch --all [options]
 ```
 
 ### Arguments
@@ -68,31 +68,31 @@ pkgx-tools fetch --all [options]
 
 ```bash
 # Fetch a single package
-pkgx-tools fetch node
+ts-pkgx fetch node
 
 # Fetch a package with specific path
-pkgx-tools fetch agwa.name/git-crypt
+ts-pkgx fetch agwa.name/git-crypt
 
 # Fetch multiple packages
-pkgx-tools fetch --pkg node,bun,python
+ts-pkgx fetch --pkg node,bun,python
 
 # Fetch packages with custom output directory and timeout
-pkgx-tools fetch --pkg "nodejs.org,python.org" --output-dir ./custom-packages --timeout 60000
+ts-pkgx fetch --pkg "nodejs.org,python.org" --output-dir ./custom-packages --timeout 60000
 
 # Save as JSON instead of TypeScript
-pkgx-tools fetch --pkg "go.dev,rust-lang.org" --json
+ts-pkgx fetch --pkg "go.dev,rust-lang.org" --json
 
 # Fetch all packages with a limit
-pkgx-tools fetch --all --limit 50
+ts-pkgx fetch --all --limit 50
 
 # Fetch with increased concurrency and verbose output
-pkgx-tools fetch --all --concurrency 12 --verbose
+ts-pkgx fetch --all --concurrency 12 --verbose
 
 # Fetch with custom cache settings
-pkgx-tools fetch --all --cache-expiration 120 --no-cache
+ts-pkgx fetch --all --cache-expiration 120 --no-cache
 
 # Output JSON for CI integration
-pkgx-tools fetch --pkg "node,bun,python" --output-json
+ts-pkgx fetch --pkg "node,bun,python" --output-json
 ```
 
 ## resolve-deps Command
@@ -103,10 +103,10 @@ The `resolve-deps` command analyzes dependency files and resolves all transitive
 
 ```bash
 # Resolve a specific dependency file
-pkgx-tools resolve-deps [file] [options]
+ts-pkgx resolve-deps [file] [options]
 
 # Find and resolve all dependency files in a directory
-pkgx-tools resolve-deps --find-files [directory] [options]
+ts-pkgx resolve-deps --find-files [directory] [options]
 ```
 
 ### Arguments
@@ -132,22 +132,22 @@ pkgx-tools resolve-deps --find-files [directory] [options]
 
 ```bash
 # Resolve a single dependency file
-pkgx-tools resolve-deps deps.yaml
+ts-pkgx resolve-deps deps.yaml
 
 # Resolve with verbose output and install command
-pkgx-tools resolve-deps pkgx.yaml --verbose --install-command
+ts-pkgx resolve-deps pkgx.yaml --verbose --install-command
 
 # Find all dependency files in a project
-pkgx-tools resolve-deps --find-files ./my-project
+ts-pkgx resolve-deps --find-files ./my-project
 
 # Output as JSON for automation
-pkgx-tools resolve-deps deps.yaml --json
+ts-pkgx resolve-deps deps.yaml --json
 
 # Filter for specific OS
-pkgx-tools resolve-deps deps.yaml --target-os darwin --include-os-deps
+ts-pkgx resolve-deps deps.yaml --target-os darwin --include-os-deps
 
 # Custom configuration
-pkgx-tools resolve-deps deps.yaml --pantry-dir ./custom-pantry --max-depth 5
+ts-pkgx resolve-deps deps.yaml --pantry-dir ./custom-pantry --max-depth 5
 ```
 
 ### Supported File Formats
@@ -182,7 +182,7 @@ Generate a TypeScript index file for packages with comprehensive JSDoc documenta
 ### Usage
 
 ```bash
-pkgx-tools generate-index [options]
+ts-pkgx generate-index [options]
 ```
 
 ### Options
@@ -195,10 +195,10 @@ pkgx-tools generate-index [options]
 
 ```bash
 # Generate index with default settings
-pkgx-tools generate-index
+ts-pkgx generate-index
 
 # With custom output directory
-pkgx-tools generate-index --output-dir ./custom/packages
+ts-pkgx generate-index --output-dir ./custom/packages
 ```
 
 ## generate-ts Command
@@ -208,7 +208,7 @@ Generate TypeScript files from cached JSON files.
 ### Usage
 
 ```bash
-pkgx-tools generate-ts [options]
+ts-pkgx generate-ts [options]
 ```
 
 ### Options
@@ -222,10 +222,10 @@ pkgx-tools generate-ts [options]
 
 ```bash
 # Generate TypeScript from cached JSON
-pkgx-tools generate-ts
+ts-pkgx generate-ts
 
 # With custom directories
-pkgx-tools generate-ts --cache-dir ./custom-cache --output-dir ./custom-output
+ts-pkgx generate-ts --cache-dir ./custom-cache --output-dir ./custom-output
 ```
 
 ## generate-aliases Command
@@ -235,14 +235,14 @@ Generate a TypeScript aliases file for packages.
 ### Usage
 
 ```bash
-pkgx-tools generate-aliases
+ts-pkgx generate-aliases
 ```
 
 ### Examples
 
 ```bash
 # Generate aliases file
-pkgx-tools generate-aliases
+ts-pkgx generate-aliases
 ```
 
 ## generate-docs Command
@@ -252,7 +252,7 @@ Generate comprehensive VitePress documentation for all packages.
 ### Usage
 
 ```bash
-pkgx-tools generate-docs [options]
+ts-pkgx generate-docs [options]
 ```
 
 ### Options
@@ -265,10 +265,10 @@ pkgx-tools generate-docs [options]
 
 ```bash
 # Generate documentation with default settings
-pkgx-tools generate-docs
+ts-pkgx generate-docs
 
 # Generate documentation with custom output directory
-pkgx-tools generate-docs --output-dir ./custom-docs
+ts-pkgx generate-docs --output-dir ./custom-docs
 ```
 
 ## update-pantry Command
@@ -278,7 +278,7 @@ Download and extract the latest pantry.tgz file from the pkgx distribution.
 ### Usage
 
 ```bash
-pkgx-tools update-pantry [options]
+ts-pkgx update-pantry [options]
 ```
 
 ### Options
@@ -291,10 +291,10 @@ pkgx-tools update-pantry [options]
 
 ```bash
 # Update pantry with default settings
-pkgx-tools update-pantry
+ts-pkgx update-pantry
 
 # Update pantry to custom directory
-pkgx-tools update-pantry --pantry-dir ./my-pantry
+ts-pkgx update-pantry --pantry-dir ./my-pantry
 ```
 
 ## generate-consts Command
@@ -304,7 +304,7 @@ Generate or update the consts.ts file with all known packages from either the lo
 ### Usage
 
 ```bash
-pkgx-tools generate-consts [options]
+ts-pkgx generate-consts [options]
 ```
 
 ### Options
@@ -319,16 +319,16 @@ pkgx-tools generate-consts [options]
 
 ```bash
 # Generate consts from local pantry
-pkgx-tools generate-consts
+ts-pkgx generate-consts
 
 # Generate consts from S3 registry
-pkgx-tools generate-consts --source registry
+ts-pkgx generate-consts --source registry
 
 # Generate with validation
-pkgx-tools generate-consts --source registry --validate
+ts-pkgx generate-consts --source registry --validate
 
 # Use custom pantry directory
-pkgx-tools generate-consts --pantry-dir ./my-pantry
+ts-pkgx generate-consts --pantry-dir ./my-pantry
 ```
 
 ## Using with Bun Scripts
@@ -350,11 +350,11 @@ For faster execution, you can use the compiled binaries that are distributed wit
 
 ```bash
 # Run directly from bin directory
-./bin/pkgx-tools fetch node
+./bin/ts-pkgx fetch node
 
 # Create a symlink in your path
-ln -s $(pwd)/bin/pkgx-tools /usr/local/bin/pkgx-tools
-pkgx-tools fetch node
+ln -s $(pwd)/bin/ts-pkgx /usr/local/bin/ts-pkgx
+ts-pkgx fetch node
 ```
 
 ## Type Safety Features
@@ -363,12 +363,12 @@ The CLI commands work seamlessly with ts-pkgx's comprehensive type safety featur
 
 ```bash
 # Type-safe package names are validated at runtime
-pkgx-tools fetch node          # ✅ Valid alias
-pkgx-tools fetch nodejs.org    # ✅ Valid domain
-pkgx-tools fetch invalid-pkg   # ❌ Will show error for invalid package
+ts-pkgx fetch node          # ✅ Valid alias
+ts-pkgx fetch nodejs.org    # ✅ Valid domain
+ts-pkgx fetch invalid-pkg   # ❌ Will show error for invalid package
 
 # Nested package paths are supported
-pkgx-tools fetch agwa.name/git-crypt  # ✅ Valid nested package
+ts-pkgx fetch agwa.name/git-crypt  # ✅ Valid nested package
 ```
 
 ## CI Integration
@@ -377,7 +377,7 @@ Use the `--output-json` flag for CI integration:
 
 ```bash
 # Output structured JSON for CI systems
-pkgx-tools fetch --pkg "node,bun,python" --output-json
+ts-pkgx fetch --pkg "node,bun,python" --output-json
 ```
 
 This outputs structured JSON with information about processed packages, friendly names, and success status.
@@ -397,13 +397,13 @@ Control caching behavior for better performance:
 
 ```bash
 # Use fresh data (disable cache)
-pkgx-tools fetch --all --no-cache
+ts-pkgx fetch --all --no-cache
 
 # Custom cache expiration (in minutes)
-pkgx-tools fetch --all --cache-expiration 60
+ts-pkgx fetch --all --cache-expiration 60
 
 # Custom cache directory
-pkgx-tools fetch --all --cache-dir ./my-cache
+ts-pkgx fetch --all --cache-dir ./my-cache
 ```
 
 ### Performance Tuning
@@ -412,13 +412,13 @@ Optimize performance for large operations:
 
 ```bash
 # Increase concurrency for faster fetching
-pkgx-tools fetch --all --concurrency 20
+ts-pkgx fetch --all --concurrency 20
 
 # Set longer timeout for slow networks
-pkgx-tools fetch --all --timeout 60000
+ts-pkgx fetch --all --timeout 60000
 
 # Limit packages for testing
-pkgx-tools fetch --all --limit 10
+ts-pkgx fetch --all --limit 10
 ```
 
 ### Development and Debugging
@@ -427,11 +427,11 @@ Enable debugging and verbose output:
 
 ```bash
 # Enable debug mode (saves screenshots)
-pkgx-tools fetch node --debug
+ts-pkgx fetch node --debug
 
 # Verbose output for detailed logging
-pkgx-tools fetch --pkg "node,bun" --verbose
+ts-pkgx fetch --pkg "node,bun" --verbose
 
 # Both debug and verbose
-pkgx-tools fetch --all --debug --verbose --limit 5
+ts-pkgx fetch --all --debug --verbose --limit 5
 ```

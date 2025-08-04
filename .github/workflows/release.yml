@@ -178,11 +178,11 @@ jobs:
         uses: stacksjs/action-releaser@v1.1.0
         with:
           files: |
-            ./bin/pkgx-tools-linux-x64.zip
-            ./bin/pkgx-tools-linux-arm64.zip
-            ./bin/pkgx-tools-windows-x64.zip
-            ./bin/pkgx-tools-darwin-x64.zip
-            ./bin/pkgx-tools-darwin-arm64.zip
+            ./bin/ts-pkgx-linux-x64.zip
+            ./bin/ts-pkgx-linux-arm64.zip
+            ./bin/ts-pkgx-windows-x64.zip
+            ./bin/ts-pkgx-darwin-x64.zip
+            ./bin/ts-pkgx-darwin-arm64.zip
           # --- Homebrew tap update support ---
           # Path to your Homebrew formula template (update this path as needed)
           # homebrewFormula: .github/homebrew-formula.rb

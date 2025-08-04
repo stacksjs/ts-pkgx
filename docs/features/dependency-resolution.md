@@ -40,32 +40,32 @@ dependencies:
 
 ```bash
 # Resolve a single dependency file
-pkgx-tools resolve-deps deps.yaml
+ts-pkgx resolve-deps deps.yaml
 
 # Resolve with verbose output
-pkgx-tools resolve-deps deps.yaml --verbose
+ts-pkgx resolve-deps deps.yaml --verbose
 
 # Show install commands for all unique packages
-pkgx-tools resolve-deps deps.yaml --install-command
+ts-pkgx resolve-deps deps.yaml --install-command
 ```
 
 ### Advanced Options
 
 ```bash
 # Find and resolve all dependency files in a directory
-pkgx-tools resolve-deps --find-files ./my-project
+ts-pkgx resolve-deps --find-files ./my-project
 
 # Filter for specific operating system
-pkgx-tools resolve-deps deps.yaml --target-os darwin --include-os-deps
+ts-pkgx resolve-deps deps.yaml --target-os darwin --include-os-deps
 
 # Custom pantry and packages directories
-pkgx-tools resolve-deps deps.yaml --pantry-dir ./custom-pantry --packages-dir ./custom-packages
+ts-pkgx resolve-deps deps.yaml --pantry-dir ./custom-pantry --packages-dir ./custom-packages
 
 # Limit recursion depth for transitive dependencies
-pkgx-tools resolve-deps deps.yaml --max-depth 5
+ts-pkgx resolve-deps deps.yaml --max-depth 5
 
 # Output as JSON for automation
-pkgx-tools resolve-deps deps.yaml --json
+ts-pkgx resolve-deps deps.yaml --json
 ```
 
 ## Programmatic Usage
@@ -172,10 +172,10 @@ The resolver can handle OS-specific dependencies and filter them based on your t
 
 ```bash
 # Include OS-specific dependencies for macOS
-pkgx-tools resolve-deps deps.yaml --target-os darwin --include-os-deps
+ts-pkgx resolve-deps deps.yaml --target-os darwin --include-os-deps
 
 # Include OS-specific dependencies for Linux
-pkgx-tools resolve-deps deps.yaml --target-os linux --include-os-deps
+ts-pkgx resolve-deps deps.yaml --target-os linux --include-os-deps
 ```
 
 ## Output Formats
@@ -183,7 +183,7 @@ pkgx-tools resolve-deps deps.yaml --target-os linux --include-os-deps
 ### Human-Readable Output
 
 ```bash
-pkgx-tools resolve-deps deps.yaml --verbose --install-command
+ts-pkgx resolve-deps deps.yaml --verbose --install-command
 ```
 
 ```
@@ -205,7 +205,7 @@ sh <(curl https://pkgx.sh) +bun.sh +nodejs.org +python.org +git-scm.com -- $SHEL
 ### JSON Output
 
 ```bash
-pkgx-tools resolve-deps deps.yaml --json
+ts-pkgx resolve-deps deps.yaml --json
 ```
 
 ```json
@@ -383,7 +383,7 @@ catch (error) {
 # ci-resolve-deps.sh
 
 # Resolve all dependencies and output JSON for further processing
-result=$(pkgx-tools resolve-deps --find-files . --json)
+result=$(ts-pkgx resolve-deps --find-files . --json)
 
 # Extract package count
 package_count=$(echo "$result" | jq '.uniquePackages | length')
@@ -412,7 +412,7 @@ COPY deps.yaml .
 
 # Install ts-pkgx and resolve dependencies
 RUN npm install -g ts-pkgx && \
-    deps=$(pkgx-tools resolve-deps deps.yaml --json) && \
+    deps=$(ts-pkgx resolve-deps deps.yaml --json) && \
     packages=$(echo "$deps" | jq -r '.uniquePackages[]' | tr '\n' ' ') && \
     echo "Installing packages: $packages"
 

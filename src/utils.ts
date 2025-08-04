@@ -215,7 +215,7 @@ export async function fetchPackageListFromGitHub(limit: number = 0, singlePackag
     const response = await fetch('https://api.github.com/repos/pkgxdev/pantry/contents/projects', {
       headers: {
         'Accept': 'application/vnd.github.v3+json',
-        'User-Agent': 'pkgx-tools',
+        'User-Agent': 'ts-pkgx',
       },
     })
 
@@ -282,7 +282,7 @@ export async function fetchPackageListFromGitHub(limit: number = 0, singlePackag
         const nestedResponse = await fetch(`https://api.github.com/repos/pkgxdev/pantry/contents/projects/${project}`, {
           headers: {
             'Accept': 'application/vnd.github.v3+json',
-            'User-Agent': 'pkgx-tools',
+            'User-Agent': 'ts-pkgx',
           },
         })
 

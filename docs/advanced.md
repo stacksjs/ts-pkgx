@@ -130,13 +130,13 @@ ts-pkgx uses a pantry-based approach for fetching package information. This prov
 
 ```bash
 # Download and extract the latest pantry
-pkgx-tools update-pantry --pantry-dir ./custom-pantry
+ts-pkgx update-pantry --pantry-dir ./custom-pantry
 
 # Generate constants from local pantry
-pkgx-tools generate-consts --source pantry --pantry-dir ./custom-pantry
+ts-pkgx generate-consts --source pantry --pantry-dir ./custom-pantry
 
 # Generate constants from S3 registry (alternative)
-pkgx-tools generate-consts --source registry --validate
+ts-pkgx generate-consts --source registry --validate
 ```
 
 ### Advanced Fetching Options
@@ -163,7 +163,7 @@ When enabled, debug mode saves screenshots and additional debugging information:
 
 ```bash
 # CLI debug mode
-pkgx-tools fetch rust-lang.org --debug --verbose
+ts-pkgx fetch rust-lang.org --debug --verbose
 
 # API debug mode
 const result = await fetchPantryPackageWithMetadata('rust-lang.org', { debug: true })
@@ -554,13 +554,13 @@ The optimal settings depend on several factors:
 
 ```bash
 # High-performance setup (good network, powerful machine)
-pkgx-tools fetch --all --concurrency 15 --timeout 30000
+ts-pkgx fetch --all --concurrency 15 --timeout 30000
 
 # Conservative setup (slower network or machine)
-pkgx-tools fetch --all --concurrency 4 --timeout 120000
+ts-pkgx fetch --all --concurrency 4 --timeout 120000
 
 # Testing setup (quick validation)
-pkgx-tools fetch --all --limit 20 --concurrency 8 --verbose
+ts-pkgx fetch --all --limit 20 --concurrency 8 --verbose
 ```
 
 ### Resource Management

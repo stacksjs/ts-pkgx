@@ -42,7 +42,7 @@ See the [Launchpad Integration Guide](./launchpad-integration.md) for detailed d
 You can fetch information about all available packages at once using the `fetchAndSaveAllPackages` function or the CLI command:
 
 ```bash
-pkgx-tools fetch --all
+ts-pkgx fetch --all
 ```
 
 This will retrieve information about all packages listed in the local pantry and save them to your specified output directory.
@@ -53,13 +53,13 @@ ts-pkgx includes comprehensive pantry management capabilities:
 
 ```bash
 # Download and extract the latest pantry from pkgx distribution
-pkgx-tools update-pantry
+ts-pkgx update-pantry
 
 # Generate constants file from local pantry
-pkgx-tools generate-consts --source pantry
+ts-pkgx generate-consts --source pantry
 
 # Generate constants file from S3 registry (alternative approach)
-pkgx-tools generate-consts --source registry
+ts-pkgx generate-consts --source registry
 ```
 
 ## TypeScript Integration
@@ -201,7 +201,7 @@ const fileName = convertDomainToFileName('agwa.name/git-crypt')
 Fetch information about a single package using the CLI:
 
 ```bash
-pkgx-tools fetch node
+ts-pkgx fetch node
 ```
 
 ### Multiple Package Fetching
@@ -210,10 +210,10 @@ Fetch information about multiple packages at once using the `--pkg` option:
 
 ```bash
 # Fetch multiple packages in one command
-pkgx-tools fetch --pkg node,bun,python
+ts-pkgx fetch --pkg node,bun,python
 
 # With custom options
-pkgx-tools fetch --pkg "go.dev,python.org,rust-lang.org" --json --timeout 60000
+ts-pkgx fetch --pkg "go.dev,python.org,rust-lang.org" --json --timeout 60000
 ```
 
 This allows you to fetch multiple specific packages without having to fetch the entire pantry.
@@ -223,7 +223,7 @@ This allows you to fetch multiple specific packages without having to fetch the 
 Fetch information about all packages at once:
 
 ```bash
-pkgx-tools fetch --all
+ts-pkgx fetch --all
 ```
 
 ### Advanced CLI Features
@@ -232,22 +232,22 @@ ts-pkgx includes several advanced CLI features:
 
 ```bash
 # Dependency resolution
-pkgx-tools resolve-deps deps.yaml --verbose --install-command
-pkgx-tools resolve-deps pkgx.yaml --json
-pkgx-tools resolve-deps --find-files ./project --target-os darwin
+ts-pkgx resolve-deps deps.yaml --verbose --install-command
+ts-pkgx resolve-deps pkgx.yaml --json
+ts-pkgx resolve-deps --find-files ./project --target-os darwin
 
 # Pantry management
-pkgx-tools update-pantry --pantry-dir ./my-pantry
-pkgx-tools generate-consts --source pantry
+ts-pkgx update-pantry --pantry-dir ./my-pantry
+ts-pkgx generate-consts --source pantry
 
 # Documentation generation
-pkgx-tools generate-docs --output-dir ./custom-docs
+ts-pkgx generate-docs --output-dir ./custom-docs
 
 # TypeScript generation from cache
-pkgx-tools generate-ts --cache-dir ./cache --output-dir ./output
+ts-pkgx generate-ts --cache-dir ./cache --output-dir ./output
 
 # Aliases file generation
-pkgx-tools generate-aliases
+ts-pkgx generate-aliases
 ```
 
 ### Batch Processing
@@ -256,13 +256,13 @@ ts-pkgx implements smart batch processing to optimize fetching multiple packages
 
 ```bash
 # Fetch all packages with optimized batch processing
-pkgx-tools fetch --all
+ts-pkgx fetch --all
 
 # Control concurrency for performance tuning
-pkgx-tools fetch --all --concurrency 12
+ts-pkgx fetch --all --concurrency 12
 
 # Limit packages for testing
-pkgx-tools fetch --all --limit 50
+ts-pkgx fetch --all --limit 50
 ```
 
 The batch processing system:
@@ -277,19 +277,19 @@ Customize the behavior of the CLI with various options:
 
 ```bash
 # Custom output directory
-pkgx-tools fetch node --output-dir ./data/packages
+ts-pkgx fetch node --output-dir ./data/packages
 
 # Custom cache settings
-pkgx-tools fetch --all --cache-dir ./my-cache --cache-expiration 60
+ts-pkgx fetch --all --cache-dir ./my-cache --cache-expiration 60
 
 # Custom timeout for slow networks
-pkgx-tools fetch --all --timeout 120000
+ts-pkgx fetch --all --timeout 120000
 
 # Debug mode for troubleshooting
-pkgx-tools fetch node --debug --verbose
+ts-pkgx fetch node --debug --verbose
 
 # CI integration with JSON output
-pkgx-tools fetch --pkg "node,bun,python" --output-json
+ts-pkgx fetch --pkg "node,bun,python" --output-json
 ```
 
 ## Performance Optimizations
@@ -300,9 +300,9 @@ ts-pkgx implements comprehensive caching for optimal performance:
 
 ```bash
 # Control cache behavior
-pkgx-tools fetch --all --cache-expiration 30  # 30 minutes
-pkgx-tools fetch --all --no-cache             # Disable cache
-pkgx-tools fetch --all --cache-dir ./my-cache # Custom cache location
+ts-pkgx fetch --all --cache-expiration 30  # 30 minutes
+ts-pkgx fetch --all --no-cache             # Disable cache
+ts-pkgx fetch --all --cache-dir ./my-cache # Custom cache location
 ```
 
 ### Parallel Processing
@@ -311,10 +311,10 @@ When fetching multiple packages, ts-pkgx processes them in parallel to speed up 
 
 ```bash
 # Increase concurrency for faster processing
-pkgx-tools fetch --all --concurrency 12
+ts-pkgx fetch --all --concurrency 12
 
 # Conservative settings for slower systems
-pkgx-tools fetch --all --concurrency 4 --timeout 120000
+ts-pkgx fetch --all --concurrency 4 --timeout 120000
 ```
 
 ### Resource Management
@@ -395,7 +395,7 @@ You can choose to output package information as JSON instead of TypeScript files
 
 ```bash
 # CLI option
-pkgx-tools fetch node --json
+ts-pkgx fetch node --json
 
 # API option
 const result = await fetchPantryPackageWithMetadata('node', { outputJson: true })
@@ -407,7 +407,7 @@ Specify where you want to save package information:
 
 ```bash
 # CLI option
-pkgx-tools fetch node --output-dir ./my-packages
+ts-pkgx fetch node --output-dir ./my-packages
 
 # API option
 const packages = await fetchAndSaveAllPackages({ outputDir: './my-packages' })
@@ -419,7 +419,7 @@ Use structured JSON output for automation:
 
 ```bash
 # Get structured output for CI systems
-pkgx-tools fetch --pkg "node,bun,python" --output-json
+ts-pkgx fetch --pkg "node,bun,python" --output-json
 ```
 
 This outputs structured JSON with:

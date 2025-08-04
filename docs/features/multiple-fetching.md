@@ -8,10 +8,10 @@ The `--pkg` option allows you to fetch multiple specific packages in a single co
 
 ```bash
 # Fetch multiple packages with one command
-pkgx-tools fetch --pkg node,bun,python
+ts-pkgx fetch --pkg node,bun,python
 
 # With custom options
-pkgx-tools fetch --pkg "go.dev,python.org,rust-lang.org" --json --timeout 60000
+ts-pkgx fetch --pkg "go.dev,python.org,rust-lang.org" --json --timeout 60000
 
 # Using Bun scripts (alternative)
 bun run pkgx:fetch --pkg node,bun,python
@@ -25,13 +25,13 @@ The `--pkg` option accepts a comma-separated list of package names:
 
 ```bash
 # Fetch packages by their aliases or domain names
-pkgx-tools fetch --pkg node,python,bun,deno
+ts-pkgx fetch --pkg node,python,bun,deno
 
 # Quotes are helpful when using dots or special characters
-pkgx-tools fetch --pkg "nodejs.org,python.org,rust-lang.org"
+ts-pkgx fetch --pkg "nodejs.org,python.org,rust-lang.org"
 
 # Nested packages are also supported
-pkgx-tools fetch --pkg "agwa.name/git-crypt,aws.amazon.com/cli"
+ts-pkgx fetch --pkg "agwa.name/git-crypt,aws.amazon.com/cli"
 ```
 
 Both aliases (like `node`) and full domain names (like `nodejs.org`) are supported, including nested packages.
@@ -42,25 +42,25 @@ The multiple package fetching feature can be combined with other CLI options:
 
 ```bash
 # Save as JSON instead of TypeScript
-pkgx-tools fetch --pkg node,bun --json
+ts-pkgx fetch --pkg node,bun --json
 
 # Custom output directory
-pkgx-tools fetch --pkg node,bun --output-dir ./custom-packages
+ts-pkgx fetch --pkg node,bun --output-dir ./custom-packages
 
 # Increased timeout for complex packages
-pkgx-tools fetch --pkg "rust-lang.org,go.dev" --timeout 60000
+ts-pkgx fetch --pkg "rust-lang.org,go.dev" --timeout 60000
 
 # Debug mode for troubleshooting
-pkgx-tools fetch --pkg "rust-lang.org,go.dev" --debug --verbose
+ts-pkgx fetch --pkg "rust-lang.org,go.dev" --debug --verbose
 
 # Custom cache settings
-pkgx-tools fetch --pkg node,bun --cache-dir ./my-cache --cache-expiration 30
+ts-pkgx fetch --pkg node,bun --cache-dir ./my-cache --cache-expiration 30
 
 # Disable caching for fresh data
-pkgx-tools fetch --pkg node,bun --no-cache
+ts-pkgx fetch --pkg node,bun --no-cache
 
 # CI integration with JSON output
-pkgx-tools fetch --pkg "node,bun,python" --output-json
+ts-pkgx fetch --pkg "node,bun,python" --output-json
 ```
 
 ## Benefits Over Individual Fetching
@@ -184,13 +184,13 @@ Optimize multiple package fetching for your environment:
 
 ```bash
 # High-performance setup
-pkgx-tools fetch --pkg "node,bun,python,go,rust" --concurrency 8 --timeout 30000
+ts-pkgx fetch --pkg "node,bun,python,go,rust" --concurrency 8 --timeout 30000
 
 # Conservative setup for slower networks
-pkgx-tools fetch --pkg "node,bun,python" --timeout 120000 --cache-expiration 60
+ts-pkgx fetch --pkg "node,bun,python" --timeout 120000 --cache-expiration 60
 
 # Debug setup for troubleshooting
-pkgx-tools fetch --pkg "problematic-package" --debug --verbose --timeout 180000
+ts-pkgx fetch --pkg "problematic-package" --debug --verbose --timeout 180000
 ```
 
 ## CI/CD Integration
@@ -199,7 +199,7 @@ Use multiple package fetching in automation:
 
 ```bash
 # Get structured JSON output for CI systems
-result=$(pkgx-tools fetch --pkg "node,bun,python" --output-json)
+result=$(ts-pkgx fetch --pkg "node,bun,python" --output-json)
 
 # Extract updated packages
 echo "$result" | jq -r '.updatedPackages[]'

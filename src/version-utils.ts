@@ -50,6 +50,98 @@ export async function getAvailableVersions(packageName: PackageName): Promise<st
 }
 
 /**
+ * Get PHP versions suitable for CI/CD workflows
+ * Returns the latest versions from each supported major.minor branch
+ */
+export function getPhpVersionsForWorkflow(options: {
+  supportedBranches?: string[]
+  fallbackVersions?: string[]
+} = {}): string[] {
+  const defaultFallback = ['8.4.11', '8.3.14', '8.2.26', '8.1.30']
+  const fallbackVersions = options.fallbackVersions || defaultFallback
+
+  try {
+    // Direct access to pantry since this is for build workflows
+    // eslint-disable-next-line ts/no-require-imports
+    const { pantry } = require('./packages')
+    const php = pantry.phpnet || pantry.php
+
+    if (!php || !php.versions || php.versions.length === 0) {
+      return fallbackVersions
+    }
+
+    const versions = [...php.versions]
+
+    // Determine supported branches dynamically or use provided ones
+    const supportedBranches = options.supportedBranches || detectSupportedPhpBranches(versions)
+
+    // Get latest versions from each major.minor branch
+    const latestVersions = new Map<string, string>()
+
+    for (const version of versions) {
+      const [major, minor] = version.split('.')
+      if (!major || !minor)
+        continue
+
+      const key = `${major}.${minor}`
+
+      // Only include if it's in our supported branches
+      if (supportedBranches.includes(key) && !latestVersions.has(key)) {
+        latestVersions.set(key, version)
+      }
+    }
+
+    // Get versions in order of supported branches
+    const workflowVersions = supportedBranches
+      .map(branch => latestVersions.get(branch))
+      .filter(Boolean) as string[]
+
+    return workflowVersions.length > 0 ? workflowVersions : fallbackVersions
+  }
+  catch {
+    // Fallback if anything fails
+    return fallbackVersions
+  }
+}
+
+/**
+ * Dynamically detect which PHP branches are currently supported
+ * Based on available versions in ts-pkgx
+ */
+function detectSupportedPhpBranches(versions: string[]): string[] {
+  const branchCounts = new Map<string, number>()
+
+  // Count versions per branch
+  for (const version of versions) {
+    const [major, minor] = version.split('.')
+    if (!major || !minor)
+      continue
+
+    const branch = `${major}.${minor}`
+    branchCounts.set(branch, (branchCounts.get(branch) || 0) + 1)
+  }
+
+  // Get branches sorted by major.minor version (newest first)
+  const sortedBranches = Array.from(branchCounts.keys())
+    .filter((branch) => {
+      // Only include PHP 8.x branches with multiple versions (indicating active support)
+      const [major] = branch.split('.')
+      return major === '8' && branchCounts.get(branch)! > 3
+    })
+    .sort((a, b) => {
+      const [aMajor, aMinor] = a.split('.').map(Number)
+      const [bMajor, bMinor] = b.split('.').map(Number)
+
+      if (aMajor !== bMajor)
+        return bMajor - aMajor
+      return bMinor - aMinor
+    })
+
+  // Return the top 4 most recent branches, or all if less than 4
+  return sortedBranches.slice(0, 4)
+}
+
+/**
  * Check if a specific version is available for a package
  */
 export async function isVersionAvailable(packageName: PackageName, version: string): Promise<boolean> {

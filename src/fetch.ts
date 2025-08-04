@@ -1483,7 +1483,7 @@ async function fetchVersionsFromGitHub(packageName: string): Promise<string[]> {
     const response = await fetch(`https://api.github.com/repos/pkgxdev/pantry/contents/projects/${packageName}`, {
       headers: {
         'Accept': 'application/vnd.github.v3+json',
-        'User-Agent': 'pkgx-tools',
+        'User-Agent': 'ts-pkgx',
       },
       // Add a timeout to prevent hanging
       signal: AbortSignal.timeout(15000),
