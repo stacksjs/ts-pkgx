@@ -1,6 +1,6 @@
 # fend
 
-> Package from pantry: printfn.github.io/fend
+> Arbitrary-precision unit-aware calculator
 
 ## Package Information
 
@@ -13,14 +13,35 @@
 
 ```bash
 # Install with launchpad
-launchpad install printfn.github.io/fend
+launchpad install fend
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `fend`
+
+## Available Versions
+
+<details>
+<summary>Show all 19 versions</summary>
+
+- `1.5.7`, `1.5.6`, `1.5.5`, `1.5.3`, `1.5.2`
+- `1.5.1`, `1.5.0`, `1.4.9`, `1.4.8`, `1.4.7`
+- `1.4.6`, `1.4.5`, `1.4.4`, `1.4.3`, `1.4.2`
+- `1.4.1`, `1.4.0`, `1.3.3`, `1.3.2`
+
+</details>
+
+**Latest Version**: `1.5.7`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) fend -- $SHELL -i
+```
 
 ## Dependencies
 

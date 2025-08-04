@@ -1,11 +1,11 @@
-# shellcheck.net
+# shellcheck
 
-> Package from pantry: shellcheck.net
+> ShellCheck, a static analysis tool for shell scripts
 
 ## Package Information
 
 - **Domain**: `shellcheck.net`
-- **Name**: `shellcheck.net`
+- **Name**: `shellcheck`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/shellcheck.net/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install shellcheck.net
+launchpad install shellcheck
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `shellcheck`
+
+## Available Versions
+
+<details>
+<summary>Show all 3 versions</summary>
+
+- `0.10.0`, `0.9.0`, `0.8.0`
+
+</details>
+
+**Latest Version**: `0.10.0`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) shellcheck -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['shellcheck.net']
+const pkg = pantry.shellcheck
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

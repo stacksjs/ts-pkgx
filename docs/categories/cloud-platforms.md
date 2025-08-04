@@ -36,53 +36,53 @@ CLI for Heroku
 
 ---
 
-### [localstack.cloud/cli](../packages/localstack.cloud/cli/index.md) (cli)
+### [localstack.cloud/cli](../packages/localstack.cloud/cli/index.md) (localstack)
 
-Package from pantry: localstack.cloud/cli
+The LocalStack CLI packaged using pyinstaller
 
-**Programs**: None specified
+**Programs**: localstack
 
-**Install**: `launchpad install localstack.cloud/cli`
-
----
-
-### [planetscale.com](../packages/planetscale.com/index.md)
-
-Package from pantry: planetscale.com
-
-**Programs**: None specified
-
-**Install**: `launchpad install planetscale.com`
+**Install**: `launchpad install localstack`
 
 ---
 
-### [railway.app](../packages/railway.app/index.md)
+### [planetscale.com](../packages/planetscale.com/index.md) (pscale)
 
-Package from pantry: railway.app
+The CLI for PlanetScale Database
 
-**Programs**: None specified
+**Programs**: pscale
 
-**Install**: `launchpad install railway.app`
-
----
-
-### [render.com](../packages/render.com/index.md)
-
-Package from pantry: render.com
-
-**Programs**: None specified
-
-**Install**: `launchpad install render.com`
+**Install**: `launchpad install pscale`
 
 ---
 
-### [supabase.com/cli](../packages/supabase.com/cli/index.md) (cli)
+### [railway.app](../packages/railway.app/index.md) (railway)
 
-Package from pantry: supabase.com/cli
+Develop and deploy code with zero configuration
 
-**Programs**: None specified
+**Programs**: railway
 
-**Install**: `launchpad install supabase.com/cli`
+**Install**: `launchpad install railway`
+
+---
+
+### [render.com](../packages/render.com/index.md) (render)
+
+Command-line interface for Render
+
+**Programs**: render
+
+**Install**: `launchpad install render`
+
+---
+
+### [supabase.com/cli](../packages/supabase.com/cli/index.md) (supabase)
+
+Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres backups. Generating types from your database schema.
+
+**Programs**: supabase
+
+**Install**: `launchpad install supabase`
 
 ---
 
