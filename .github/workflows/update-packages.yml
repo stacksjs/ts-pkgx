@@ -398,8 +398,32 @@ jobs:
             echo "changes=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Commit and push changes
+      - name: Safeguard
+        id: deletion-check
         if: steps.git-check.outputs.changes == 'true' && steps.commit-message.outputs.should_commit == 'true'
+        run: |
+          echo "Checking for excessive line deletions..."
+
+          # Get git diff stats for staged and unstaged changes
+          DELETIONS=$(git diff --numstat HEAD src/packages/ docs/ | awk '{deleted += $2} END {print deleted+0}')
+
+          echo "Total lines to be deleted: $DELETIONS"
+
+          # Check if deletions exceed the threshold
+          DELETION_THRESHOLD=20000
+          if [ "$DELETIONS" -gt "$DELETION_THRESHOLD" ]; then
+            echo "ERROR: Detected $DELETIONS line deletions, which exceeds the safety threshold of $DELETION_THRESHOLD lines."
+            echo "This suggests a potentially problematic update that could remove large amounts of valid data."
+            echo "Aborting commit to prevent data loss."
+            echo "safe_to_commit=false" >> $GITHUB_OUTPUT
+            exit 1
+          else
+            echo "Deletion count ($DELETIONS) is within acceptable limits."
+            echo "safe_to_commit=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.git-check.outputs.changes == 'true' && steps.commit-message.outputs.should_commit == 'true' && steps.deletion-check.outputs.safe_to_commit == 'true'
         run: |
           SHOULD_COMMIT="${{ steps.commit-message.outputs.should_commit }}"
           TOTAL_UPDATED="${{ steps.commit-message.outputs.total_updated }}"
