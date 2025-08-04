@@ -3,7 +3,7 @@
  *
  * @domain `perl.org`
  * @programs `corelist`, `cpan`, `enc2xs`, `encguess`, `h2ph`, ... (+25 more)
- * @version `5.42.0` (15 versions available)
+ * @version `5.42.0` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install perl.org`
@@ -90,6 +90,7 @@ export const perlorgPackage = {
     '5.40.2',
     '5.40.1',
     '5.40.0',
+    '5.38.5',
     '5.38.4',
     '5.38.3',
     '5.38.2',
