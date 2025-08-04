@@ -3,7 +3,7 @@
  *
  * @domain `github.com/containers/skopeo`
  * @programs `skopeo`
- * @version `1.19.0` (15 versions available)
+ * @version `1.20.0` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install skopeo`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "skopeo"
  * console.log(pkg.description) // "Work with remote images registries - retrieving..."
  * console.log(pkg.programs)    // ["skopeo"]
- * console.log(pkg.versions[0]) // "1.19.0" (latest)
+ * console.log(pkg.versions[0]) // "1.20.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/containers/skopeo.md
@@ -69,6 +69,7 @@ export const skopeoPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.20.0',
     '1.19.0',
     '1.18.0',
     '1.17.0',

@@ -3,7 +3,7 @@
  *
  * @domain `github.com/VikParuchuri/surya`
  * @programs `surya_detect`
- * @version `0.15.0` (66 versions available)
+ * @version `0.15.2` (68 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install surya_detect`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "Surya"
  * console.log(pkg.description) // "OCR, layout analysis, reading order, table reco..."
  * console.log(pkg.programs)    // ["surya_detect"]
- * console.log(pkg.versions[0]) // "0.15.0" (latest)
+ * console.log(pkg.versions[0]) // "0.15.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/VikParuchuri/surya.md
@@ -74,6 +74,8 @@ export const suryadetectPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.15.2',
+    '0.15.1',
     '0.15.0',
     '0.14.7',
     '0.14.6',

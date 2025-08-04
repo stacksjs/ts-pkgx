@@ -2,7 +2,7 @@
  * **github.com/KhronosGroup/Vulkan-Loader** - Vulkan Loader
  *
  * @domain `github.com/KhronosGroup/Vulkan-Loader`
- * @version `1.4.323` (61 versions available)
+ * @version `1.4.324` (62 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/KhronosGroup/Vulkan-Loader`
@@ -15,7 +15,7 @@
  * const pkg = pantry.githubcomkhronosgroupvulkanloader
  * console.log(pkg.name)        // "github.com/KhronosGroup/Vulkan-Loader"
  * console.log(pkg.description) // "Vulkan Loader"
- * console.log(pkg.versions[0]) // "1.4.323" (latest)
+ * console.log(pkg.versions[0]) // "1.4.324" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/KhronosGroup/Vulkan-Loader.md
@@ -60,6 +60,7 @@ export const githubcomkhronosgroupvulkanloaderPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.4.324',
     '1.4.323',
     '1.4.322',
     '1.4.321',
