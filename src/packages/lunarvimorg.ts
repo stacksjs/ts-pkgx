@@ -1,10 +1,7 @@
 /**
- * **lunarvim.org** - 🌙 LunarVim is an IDE layer for Neovim. Completely free and community driven.
+ * **lunarvim.org** - Package from pantry: lunarvim.org
  *
  * @domain `lunarvim.org`
- * @programs `lvim`, `nvim`
- * @version `1.4.0` (2 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install lunarvim.org`
  * @dependencies `gnu.org/bash`, `crates.io/fd-find`, `pip.pypa.io`, ... (+4 more)
@@ -15,9 +12,7 @@
  *
  * const pkg = pantry.lunarvimorg
  * console.log(pkg.name)        // "lunarvim.org"
- * console.log(pkg.description) // "🌙 LunarVim is an IDE layer for Neovim. Complet..."
- * console.log(pkg.programs)    // ["lvim", "nvim"]
- * console.log(pkg.versions[0]) // "1.4.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: lunarvim.org"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/lunarvim-org.md
@@ -35,23 +30,15 @@ export const lunarvimorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '🌙 LunarVim is an IDE layer for Neovim. Completely free and community driven.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lunarvim.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: lunarvim.org' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install lunarvim.org' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'lvim',
-    'nvim',
-  ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lunarvim.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lunarvim.org' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -66,17 +53,10 @@ export const lunarvimorgPackage = {
     'rust-lang.org/cargo',
     'neovim.io',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.4.0',
-    '1.3.0',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lunarvim.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install lunarvim.org' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lunarvim.org/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type LunarvimorgPackage = typeof lunarvimorgPackage

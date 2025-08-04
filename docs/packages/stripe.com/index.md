@@ -1,11 +1,11 @@
-# stripe
+# stripe.com
 
-> A command-line tool for Stripe
+> Package from pantry: stripe.com
 
 ## Package Information
 
 - **Domain**: `stripe.com`
-- **Name**: `stripe`
+- **Name**: `stripe.com`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/stripe.com/package.yml)
 
@@ -13,42 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install stripe
+launchpad install stripe.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `stripe`
-
-## Available Versions
-
-<details>
-<summary>Show all 53 versions</summary>
-
-- `1.29.0`, `1.28.0`, `1.27.0`, `1.26.1`, `1.26.0`
-- `1.25.1`, `1.25.0`, `1.24.0`, `1.23.10`, `1.23.9`
-- `1.23.8`, `1.23.7`, `1.23.6`, `1.23.5`, `1.23.4`
-- `1.23.3`, `1.23.2`, `1.23.1`, `1.23.0`, `1.22.0`
-- `1.21.11`, `1.21.10`, `1.21.9`, `1.21.8`, `1.21.7`
-- `1.21.6`, `1.21.5`, `1.21.3`, `1.21.2`, `1.21.1`
-- `1.21.0`, `1.20.0`, `1.19.5`, `1.19.4`, `1.19.3`
-- `1.19.2`, `1.19.1`, `1.19.0`, `1.18.0`, `1.17.2`
-- `1.17.1`, `1.17.0`, `1.16.0`, `1.15.0`, `1.14.7`
-- `1.14.6`, `1.14.5`, `1.14.4`, `1.14.3`, `1.14.2`
-- `1.14.1`, `1.14.0`, `1.13.12`
-
-</details>
-
-**Latest Version**: `1.29.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) stripe -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -56,7 +28,7 @@ sh <(curl https://pkgx.sh) stripe -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.stripe
+const pkg = pantry['stripe.com']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,6 +1,6 @@
 # mandoc.bsd.lv
 
-> UNIX manpage compiler toolset
+> Package from pantry: mandoc.bsd.lv
 
 ## Package Information
 
@@ -20,30 +20,7 @@ launchpad install mandoc.bsd.lv
 
 This package provides the following executable programs:
 
-- `bsdapropos`
-- `bsdman`
-- `bsdsoelim`
-- `bsdwhatis`
-- `demandoc`
-- `mandoc`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `1.14.6`
-
-</details>
-
-**Latest Version**: `1.14.6`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +mandoc.bsd.lv@1.14.6 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

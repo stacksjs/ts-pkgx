@@ -1,6 +1,6 @@
 # Multimedia
 
-*7 packages in this category*
+*4 packages in this category*
 
 Audio, video, and image processing tools.
 
@@ -36,43 +36,13 @@ A fast image processing library with low memory needs.
 
 ---
 
-### [mpv.io](../packages/mpv.io/index.md) (mpv)
-
-Media player based on MPlayer and mplayer2
-
-**Programs**: mpv
-
-**Install**: `launchpad install mpv`
-
----
-
 ### [sf.net/optipng](../packages/sf.net/optipng/index.md) (optipng)
 
-PNG file optimizer
+Package from pantry: sf.net/optipng
 
-**Programs**: optipng
+**Programs**: None specified
 
-**Install**: `launchpad install optipng`
-
----
-
-### [streamlink.github.io](../packages/streamlink.github.io/index.md) (streamlink)
-
-Streamlink is a CLI utility which pipes video streams from various services into a video player
-
-**Programs**: streamlink
-
-**Install**: `launchpad install streamlink`
-
----
-
-### [yt-dlp.org](../packages/yt-dlp.org/index.md) (yt-dlp)
-
-A feature-rich command-line audio/video downloader
-
-**Programs**: yt-dlp
-
-**Install**: `launchpad install yt-dlp`
+**Install**: `launchpad install sf.net/optipng`
 
 ---
 

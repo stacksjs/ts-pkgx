@@ -1,6 +1,6 @@
 # Build Tools & Automation
 
-*15 packages in this category*
+*10 packages in this category*
 
 Packages related to build tools & automation.
 
@@ -96,63 +96,13 @@ Handy way to save and run project-specific commands
 
 ---
 
-### [maven.apache.org](../packages/maven.apache.org/index.md) (mvn)
+### [pantsbuild.org/scie-pants](../packages/pantsbuild.org/scie-pants/index.md) (scie-pants)
 
-Java-based project management
+Package from pantry: pantsbuild.org/scie-pants
 
-**Programs**: mvn, mvnDebug, mvnyjp
+**Programs**: None specified
 
-**Install**: `launchpad install mvn`
-
----
-
-### [mesonbuild.com](../packages/mesonbuild.com/index.md) (meson)
-
-Fast and user friendly build system
-
-**Programs**: meson
-
-**Install**: `launchpad install meson`
-
----
-
-### [ninja-build.org](../packages/ninja-build.org/index.md) (ninja)
-
-Small build system for use with gyp or CMake
-
-**Programs**: ninja
-
-**Install**: `launchpad install ninja`
-
----
-
-### [pantsbuild.org/scie-pants](../packages/pantsbuild.org/scie-pants/index.md) (scie-pants, pants)
-
-Protects your Pants from the elements.
-
-**Programs**: pants
-
-**Install**: `launchpad install pants`
-
----
-
-### [scons.org](../packages/scons.org/index.md) (scons)
-
-Substitute for classic 'make' tool with autoconf/automake functionality
-
-**Programs**: scons
-
-**Install**: `launchpad install scons`
-
----
-
-### [taskfile.dev](../packages/taskfile.dev/index.md) (task)
-
-A task runner / simpler Make alternative written in Go
-
-**Programs**: task
-
-**Install**: `launchpad install task`
+**Install**: `launchpad install pantsbuild.org/scie-pants`
 
 ---
 

@@ -1,6 +1,6 @@
 # radicle.org
 
-> Radicle CLI
+> Package from pantry: radicle.org
 
 ## Package Information
 
@@ -20,50 +20,7 @@ launchpad install radicle.org
 
 This package provides the following executable programs:
 
-- `rad`
-- `git-remote-rad`
-- `rad-account`
-- `rad-auth`
-- `rad-checkout`
-- `rad-clone`
-- `rad-edit`
-- `rad-ens`
-- `rad-gov`
-- `rad-help`
-- `rad-init`
-- `rad-inspect`
-- `rad-issue`
-- `rad-ls`
-- `rad-merge`
-- `rad-patch`
-- `rad-path`
-- `rad-pull`
-- `rad-push`
-- `rad-remote`
-- `rad-reward`
-- `rad-rm`
-- `rad-self`
-- `rad-sync`
-- `rad-track`
-- `rad-untrack`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `0.6.1`
-
-</details>
-
-**Latest Version**: `0.6.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +radicle.org@0.6.1 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

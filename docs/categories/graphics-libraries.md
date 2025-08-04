@@ -1,6 +1,6 @@
 # Graphics Libraries
 
-*3 packages in this category*
+*4 packages in this category*
 
 Packages related to graphics libraries.
 
@@ -33,6 +33,16 @@ Image decoding for many popular formats for Simple Directmedia Layer.
 **Programs**: None specified
 
 **Install**: `launchpad install libsdl.org/SDL_image`
+
+---
+
+### [mesa3d.org](../packages/mesa3d.org/index.md)
+
+Package from pantry: mesa3d.org
+
+**Programs**: None specified
+
+**Install**: `launchpad install mesa3d.org`
 
 ---
 

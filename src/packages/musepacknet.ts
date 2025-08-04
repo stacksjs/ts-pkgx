@@ -1,10 +1,7 @@
 /**
- * **musepack.net** - Audio compression format and tools
+ * **musepack.net** - Package from pantry: musepack.net
  *
  * @domain `musepack.net`
- * @programs `mpc2sv8`, `mpcchap`, `mpccut`, `mpcdec`, `mpcenc`, ... (+2 more)
- * @version `475.0.0` (1 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install musepack.net`
  * @dependencies `musepack.net/libreplaygain`, `musepack.net/libcuefile`
@@ -15,9 +12,7 @@
  *
  * const pkg = pantry.musepacknet
  * console.log(pkg.name)        // "musepack.net"
- * console.log(pkg.description) // "Audio compression format and tools"
- * console.log(pkg.programs)    // ["mpc2sv8", "mpcchap", ...]
- * console.log(pkg.versions[0]) // "475.0.0" (latest)
+ * console.log(pkg.description) // "Package from pantry: musepack.net"
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/musepack-net.md
@@ -35,28 +30,15 @@ export const musepacknetPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Audio compression format and tools' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/musepack.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  description: 'Package from pantry: musepack.net' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install musepack.net' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'mpc2sv8',
-    'mpcchap',
-    'mpccut',
-    'mpcdec',
-    'mpcenc',
-    'mpcgain',
-    'wavcmp',
-  ] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +musepack.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install musepack.net' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -66,16 +48,10 @@ export const musepacknetPackage = {
     'musepack.net/libreplaygain',
     'musepack.net/libcuefile',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '475.0.0',
-  ] as const,
-  aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +musepack.net -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install musepack.net' as const,
+  versions: [] as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/musepack.net/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
 }
 
 export type MusepacknetPackage = typeof musepacknetPackage

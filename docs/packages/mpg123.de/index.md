@@ -1,11 +1,11 @@
-# mpg123
+# mpg123.de
 
-> MP3 player for Linux and UNIX
+> Package from pantry: mpg123.de
 
 ## Package Information
 
 - **Domain**: `mpg123.de`
-- **Name**: `mpg123`
+- **Name**: `mpg123.de`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mpg123.de/package.yml)
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install mpg123
+launchpad install mpg123.de
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `mpg123`
-
-## Available Versions
-
-<details>
-<summary>Show all 16 versions</summary>
-
-- `1.33.1`, `1.33.0`, `1.32.11`, `1.32.10`, `1.32.9`
-- `1.32.8`, `1.32.7`, `1.32.6`, `1.32.5`, `1.32.4`
-- `1.32.3`, `1.32.2`, `1.32.1`, `1.32.0`, `1.31.4`
-- `1.31.2`
-
-</details>
-
-**Latest Version**: `1.33.1`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) mpg123 -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -49,7 +28,7 @@ sh <(curl https://pkgx.sh) mpg123 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.mpg123
+const pkg = pantry['mpg123.de']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
