@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'bun:test'
-import { resolveDependencies } from '../src/launchpad-api'
 import fs from 'node:fs'
-import path from 'node:path'
 import os from 'node:os'
+import path from 'node:path'
+import { resolveDependencies } from '../src/launchpad-api'
 
 describe('PostgreSQL Alias Resolution - Regression Test', () => {
   it('should properly resolve postgres alias to postgresql.org with all dependencies', async () => {
@@ -24,7 +24,7 @@ describe('PostgreSQL Alias Resolution - Regression Test', () => {
 
       const result = await resolveDependencies(tempFile, {
         targetOs: 'darwin',
-        includeOsSpecific: true
+        includeOsSpecific: true,
       })
 
       // Should resolve to multiple packages (PostgreSQL + all its dependencies)
@@ -50,12 +50,13 @@ describe('PostgreSQL Alias Resolution - Regression Test', () => {
       // Verify that we get a valid command for installation
       expect(result.pkgxCommand).toContain('postgresql.org')
       expect(result.launchpadCommand).toContain('postgresql.org')
-
-    } finally {
+    }
+    finally {
       // Clean up
       try {
         fs.unlinkSync(tempFile)
-      } catch {
+      }
+      catch {
         // Ignore cleanup errors
       }
     }
@@ -79,7 +80,7 @@ describe('PostgreSQL Alias Resolution - Regression Test', () => {
 
       const result = await resolveDependencies(tempFile, {
         targetOs: 'darwin',
-        includeOsSpecific: true
+        includeOsSpecific: true,
       })
 
       // With the alias bug, this would only resolve to 1 package
@@ -93,14 +94,15 @@ describe('PostgreSQL Alias Resolution - Regression Test', () => {
         version: '*',
         constraint: '*',
         isOsSpecific: false,
-        os: undefined
+        os: undefined,
       })
-
-    } finally {
+    }
+    finally {
       // Clean up
       try {
         fs.unlinkSync(tempFile)
-      } catch {
+      }
+      catch {
         // Ignore cleanup errors
       }
     }
@@ -123,7 +125,7 @@ describe('PostgreSQL Alias Resolution - Regression Test', () => {
 
       const result = await resolveDependencies(tempFile, {
         targetOs: 'darwin',
-        includeOsSpecific: true
+        includeOsSpecific: true,
       })
 
       // Should resolve all dependencies
@@ -139,12 +141,13 @@ describe('PostgreSQL Alias Resolution - Regression Test', () => {
 
       const nodePkg = result.packages.find(pkg => pkg.name === 'node.js')
       expect(nodePkg).toBeDefined()
-
-    } finally {
+    }
+    finally {
       // Clean up
       try {
         fs.unlinkSync(tempFile)
-      } catch {
+      }
+      catch {
         // Ignore cleanup errors
       }
     }
