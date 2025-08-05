@@ -3,7 +3,7 @@
  *
  * @domain `borgbackup.org`
  * @programs `borg`, `borgfs`
- * @version `1.4.1` (1 versions available)
+ * @version `1.4.1` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install borg`
@@ -72,6 +72,7 @@ export const borgPackage = {
    */
   versions: [
     '1.4.1',
+    '1.2.9',
   ] as const,
   /**
    * Alternative names for this package.
