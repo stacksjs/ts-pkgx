@@ -1,11 +1,11 @@
-# aac-enc
+# opencore-amr
 
-> Standalone library of the Fraunhofer FDK AAC code from Android
+> Package from pantry: sourceforge.net/opencore-amr
 
 ## Package Information
 
 - **Domain**: `sourceforge.net/opencore-amr`
-- **Name**: `aac-enc`
+- **Name**: `opencore-amr`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/opencore-amr/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install aac-enc
+launchpad install sourceforge.net/opencore-amr
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `aac-enc`
-
-## Available Versions
-
-<details>
-<summary>Show all 2 versions</summary>
-
-- `2.0.3`, `2.0.2`
-
-</details>
-
-**Latest Version**: `2.0.3`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) aac-enc -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) aac-enc -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['aac-enc']
+const pkg = pantry['opencore-amr']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

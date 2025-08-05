@@ -1,6 +1,6 @@
 # Multimedia
 
-*7 packages in this category*
+*5 packages in this category*
 
 Audio, video, and image processing tools.
 
@@ -53,26 +53,6 @@ PNG file optimizer
 **Programs**: optipng
 
 **Install**: `launchpad install optipng`
-
----
-
-### [streamlink.github.io](../packages/streamlink.github.io/index.md) (streamlink)
-
-Streamlink is a CLI utility which pipes video streams from various services into a video player
-
-**Programs**: streamlink
-
-**Install**: `launchpad install streamlink`
-
----
-
-### [yt-dlp.org](../packages/yt-dlp.org/index.md) (yt-dlp)
-
-A feature-rich command-line audio/video downloader
-
-**Programs**: yt-dlp
-
-**Install**: `launchpad install yt-dlp`
 
 ---
 
