@@ -3,7 +3,7 @@
  *
  * @domain `microsoft.com/azure-cli`
  * @programs `az`
- * @version `2.75.0` (33 versions available)
+ * @version `2.76.0` (34 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install az`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "az"
  * console.log(pkg.description) // "Azure Command-Line Interface"
  * console.log(pkg.programs)    // ["az"]
- * console.log(pkg.versions[0]) // "2.75.0" (latest)
+ * console.log(pkg.versions[0]) // "2.76.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/microsoft-com/azure-cli.md
@@ -71,6 +71,7 @@ export const azPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.76.0',
     '2.75.0',
     '2.74.0',
     '2.73.0',
