@@ -3,7 +3,7 @@
  *
  * @domain `cnquery.io`
  * @programs `cnquery`
- * @version `11.66.0` (157 versions available)
+ * @version `11.66.1` (158 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cnquery`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "cnquery"
  * console.log(pkg.description) // "open source, cloud-native, graph-based asset in..."
  * console.log(pkg.programs)    // ["cnquery"]
- * console.log(pkg.versions[0]) // "11.66.0" (latest)
+ * console.log(pkg.versions[0]) // "11.66.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cnquery-io.md
@@ -62,6 +62,7 @@ export const cnqueryPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '11.66.1',
     '11.66.0',
     '11.65.0',
     '11.64.0',
