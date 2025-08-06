@@ -1,28 +1,38 @@
 /**
- * **yadm.io** - Package from pantry: yadm.io
+ * **yadm** - Yet Another Dotfiles Manager
  *
  * @domain `yadm.io`
+ * @programs `yadm`
+ * @version `3.5.0` (4 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install yadm.io`
+ * @install `launchpad install yadm`
+ * @name `yadm`
  * @dependencies `git-scm.org`, `gnu.org/bash`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.yadmio
- * console.log(pkg.name)        // "yadm.io"
- * console.log(pkg.description) // "Package from pantry: yadm.io"
+ * // Access the package
+ * const pkg = pantry.yadm
+ * // Or access via domain
+ * const samePkg = pantry.yadmio
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "yadm"
+ * console.log(pkg.description) // "Yet Another Dotfiles Manager"
+ * console.log(pkg.programs)    // ["yadm"]
+ * console.log(pkg.versions[0]) // "3.5.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/yadm-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const yadmioPackage = {
+export const yadmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'yadm.io' as const,
+  name: 'yadm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -30,15 +40,22 @@ export const yadmioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: yadm.io' as const,
+  description: 'Yet Another Dotfiles Manager' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/yadm.io/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install yadm.io' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +yadm.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install yadm.io' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install yadm' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'yadm',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -48,10 +65,23 @@ export const yadmioPackage = {
     'git-scm.org',
     'gnu.org/bash',
   ] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/yadm.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.5.0',
+    '3.4.0',
+    '3.3.0',
+    '3.2.2',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) yadm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install yadm' as const,
 }
 
-export type YadmioPackage = typeof yadmioPackage
+export type YadmPackage = typeof yadmPackage

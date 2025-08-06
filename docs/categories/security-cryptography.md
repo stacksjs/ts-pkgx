@@ -1,6 +1,6 @@
 # Security & Cryptography
 
-*11 packages in this category*
+*12 packages in this category*
 
 Packages related to security & cryptography.
 
@@ -113,6 +113,16 @@ Scans and monitors projects for security vulnerabilities
 **Programs**: snyk
 
 **Install**: `launchpad install snyk`
+
+---
+
+### [vaultproject.io](../packages/vaultproject.io/index.md) (vault)
+
+A tool for secrets management, encryption as a service, and privileged access management
+
+**Programs**: vault
+
+**Install**: `launchpad install vault`
 
 ---
 
