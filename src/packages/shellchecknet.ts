@@ -3,7 +3,7 @@
  *
  * @domain `shellcheck.net`
  * @programs `shellcheck`
- * @version `0.10.0` (3 versions available)
+ * @version `0.11.0` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install shellcheck`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "shellcheck"
  * console.log(pkg.description) // "ShellCheck, a static analysis tool for shell sc..."
  * console.log(pkg.programs)    // ["shellcheck"]
- * console.log(pkg.versions[0]) // "0.10.0" (latest)
+ * console.log(pkg.versions[0]) // "0.11.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/shellcheck-net.md
@@ -69,6 +69,7 @@ export const shellcheckPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.11.0',
     '0.10.0',
     '0.9.0',
     '0.8.0',
