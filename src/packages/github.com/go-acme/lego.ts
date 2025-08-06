@@ -3,7 +3,7 @@
  *
  * @domain `github.com/go-acme/lego`
  * @programs `lego`
- * @version `4.25.1` (22 versions available)
+ * @version `4.25.2` (23 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install lego`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "lego"
  * console.log(pkg.description) // "Let's Encrypt/ACME client and library written i..."
  * console.log(pkg.programs)    // ["lego"]
- * console.log(pkg.versions[0]) // "4.25.1" (latest)
+ * console.log(pkg.versions[0]) // "4.25.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/go-acme/lego.md
@@ -62,6 +62,7 @@ export const legoPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.25.2',
     '4.25.1',
     '4.25.0',
     '4.24.0',
