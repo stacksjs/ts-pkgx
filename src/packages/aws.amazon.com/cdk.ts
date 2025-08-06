@@ -3,7 +3,7 @@
  *
  * @domain `aws.amazon.com/cdk`
  * @programs `cdk`
- * @version `3.0.0` (169 versions available)
+ * @version `3.0.0` (170 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cdk`
@@ -71,6 +71,7 @@ export const cdkPackage = {
    */
   versions: [
     '3.0.0',
+    '2.1024.0',
     '2.1023.0',
     '2.1022.0',
     '2.1021.0',
