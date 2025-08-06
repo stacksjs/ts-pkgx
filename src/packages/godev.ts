@@ -3,7 +3,7 @@
  *
  * @domain `go.dev`
  * @programs `go`, `gofmt`
- * @version `1.24.5` (70 versions available)
+ * @version `1.24.6` (72 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install go.dev`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "go.dev"
  * console.log(pkg.description) // "The Go programming language"
  * console.log(pkg.programs)    // ["go", "gofmt"]
- * console.log(pkg.versions[0]) // "1.24.5" (latest)
+ * console.log(pkg.versions[0]) // "1.24.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/go-dev.md
@@ -70,12 +70,14 @@ export const goPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.24.6',
     '1.24.5',
     '1.24.4',
     '1.24.3',
     '1.24.2',
     '1.24.1',
     '1.24.0',
+    '1.23.12',
     '1.23.11',
     '1.23.10',
     '1.23.9',
