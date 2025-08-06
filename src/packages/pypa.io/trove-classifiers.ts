@@ -2,7 +2,7 @@
  * **pypa.io/trove-classifiers** - Canonical source for classifiers on PyPI.
  *
  * @domain `pypa.io/trove-classifiers`
- * @version `2025.5.9.12` (28 versions available)
+ * @version `2025.8.6.13` (29 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pypa.io/trove-classifiers`
@@ -15,7 +15,7 @@
  * const pkg = pantry.pypaiotroveclassifiers
  * console.log(pkg.name)        // "pypa.io/trove-classifiers"
  * console.log(pkg.description) // "Canonical source for classifiers on PyPI."
- * console.log(pkg.versions[0]) // "2025.5.9.12" (latest)
+ * console.log(pkg.versions[0]) // "2025.8.6.13" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pypa-io/trove-classifiers.md
@@ -56,6 +56,7 @@ export const pypaiotroveclassifiersPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2025.8.6.13',
     '2025.5.9.12',
     '2025.5.8.15',
     '2025.5.8.13',
