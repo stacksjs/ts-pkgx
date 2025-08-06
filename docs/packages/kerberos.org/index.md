@@ -51,20 +51,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 6 versions</summary>
+<summary>Show all 7 versions</summary>
 
-- `1.21.3`, `1.21.2`, `1.21.1`, `1.21.0`, `1.20.2`
-- `1.20.1`
+- `1.22.0`, `1.21.3`, `1.21.2`, `1.21.1`, `1.21.0`
+- `1.20.2`, `1.20.1`
 
 </details>
 
-**Latest Version**: `1.21.3`
+**Latest Version**: `1.22.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +kerberos.org@1.21.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) +kerberos.org@1.22.0 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -50,7 +50,7 @@ sh <(curl https://pkgx.sh) +mercurial-scm.org@7.1.0 -- $SHELL -i
 
 This package depends on:
 
-- `python.org~3.11`
+- `python.org~3.13 # as of 7.1`
 
 ## Usage Examples
 

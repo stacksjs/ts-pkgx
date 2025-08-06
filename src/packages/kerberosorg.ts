@@ -3,7 +3,7 @@
  *
  * @domain `kerberos.org`
  * @programs `compile_et`, `gss-client`, `k5srvutil`, `kadmin`, `kdestroy`, ... (+22 more)
- * @version `1.21.3` (6 versions available)
+ * @version `1.22.0` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kerberos.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "kerberos.org"
  * console.log(pkg.description) // "mirror of MIT krb5 repository"
  * console.log(pkg.programs)    // ["compile_et", "gss-client", ...]
- * console.log(pkg.versions[0]) // "1.21.3" (latest)
+ * console.log(pkg.versions[0]) // "1.22.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kerberos-org.md
@@ -90,6 +90,7 @@ export const kerberosorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.22.0',
     '1.21.3',
     '1.21.2',
     '1.21.1',
