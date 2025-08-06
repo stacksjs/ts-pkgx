@@ -3,7 +3,7 @@
  *
  * @domain `github.com/jasper-software/jasper`
  * @programs `jasper`
- * @version `4.2.7` (13 versions available)
+ * @version `4.2.8` (14 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jasper`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "jasper"
  * console.log(pkg.description) // "Official Repository for the JasPer Image Coding..."
  * console.log(pkg.programs)    // ["jasper"]
- * console.log(pkg.versions[0]) // "4.2.7" (latest)
+ * console.log(pkg.versions[0]) // "4.2.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/jasper-software/jasper.md
@@ -69,6 +69,7 @@ export const jasperPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.2.8',
     '4.2.7',
     '4.2.6',
     '4.2.5',
