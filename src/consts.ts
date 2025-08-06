@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-08-01T02:53:21.349Z
+ * Generated on 2025-08-06T02:47:35.188Z
  */
 
 /**
@@ -23,24 +23,24 @@ export const DEFAULT_TIMEOUT_MS = 20000
  * Package aliases mapping friendly names to domain names
  */
 export const PACKAGE_ALIASES: Record<string, string> = {
-  'node': 'nodejs.org',
-  'python': 'python.org',
-  'go': 'go.dev',
-  'rust': 'rust-lang.org',
-  'ruby': 'ruby-lang.org',
-  'php': 'php.net',
-  'perl': 'perl.org',
-  'deno': 'deno.land',
-  'bun': 'bun.sh',
+  node: 'nodejs.org',
+  python: 'python.org',
+  go: 'go.dev',
+  rust: 'rust-lang.org',
+  ruby: 'ruby-lang.org',
+  php: 'php.net',
+  perl: 'perl.org',
+  deno: 'deno.land',
+  bun: 'bun.sh',
   'bun.com': 'bun.sh',
-  'git': 'git-scm.com',
-  'docker': 'docker.com',
-  'kubectl': 'kubernetes.io',
-  'terraform': 'terraform.io',
-  'ansible': 'ansible.com',
-  'nvim': 'neovim.io',
-  'vim': 'vim.org',
-  'curl': 'curl.se',
+  git: 'git-scm.com',
+  docker: 'docker.com',
+  kubectl: 'kubernetes.io',
+  terraform: 'terraform.io',
+  ansible: 'ansible.com',
+  nvim: 'neovim.io',
+  vim: 'vim.org',
+  curl: 'curl.se',
 } as const
 
 /**
