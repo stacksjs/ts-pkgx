@@ -1184,7 +1184,7 @@ import { oberhumercomuclPackage } from './oberhumer.com/ucl'
 import { odigosPackage } from './odigosio'
 import { ohmyposhPackage } from './ohmyposhdev'
 import { ollamaPackage } from './ollamaai'
-import { onefetchdevPackage } from './onefetchdev'
+import { onefetchPackage } from './onefetchdev'
 import { ginkgoPackage } from './onsi.github.io/ginkgo'
 import { openmpiorghwlocPackage } from './open-mpi.org/hwloc'
 import { openmpiorgPackage } from './open-mpiorg'
@@ -3653,7 +3653,7 @@ export interface Pantry {
   odigosio: typeof odigosPackage
   ohmyposhdev: typeof ohmyposhPackage
   ollamaai: typeof ollamaPackage
-  onefetchdev: typeof onefetchdevPackage
+  onefetchdev: typeof onefetchPackage
 
   onsigithubioginkgo: typeof ginkgoPackage
   hwloc: typeof openmpiorghwlocPackage
@@ -4493,6 +4493,7 @@ export interface Pantry {
   rclone: typeof rclonePackage
   terraform: typeof terraformPackage
   logdy: typeof logdyPackage
+  onefetch: typeof onefetchPackage
   talhelper: typeof talhelperPackage
   orcc: typeof orccPackage
   temporal: typeof temporalPackage
@@ -7461,7 +7462,7 @@ export const pantry: Pantry = {
   odigosio: odigosPackage,
   ohmyposhdev: ohmyposhPackage,
   ollamaai: ollamaPackage,
-  onefetchdev: onefetchdevPackage,
+  onefetchdev: onefetchPackage,
 
   onsigithubioginkgo: ginkgoPackage,
   hwloc: openmpiorghwlocPackage,
@@ -8301,6 +8302,7 @@ export const pantry: Pantry = {
   rclone: rclonePackage,
   terraform: terraformPackage,
   logdy: logdyPackage,
+  onefetch: onefetchPackage,
   talhelper: talhelperPackage,
   orcc: orccPackage,
   temporal: temporalPackage,

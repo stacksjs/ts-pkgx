@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1396+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1397+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1396
+- **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-08-07T07:34:09.691Z
+- **Last Updated**: 2025-08-07T08:36:21.079Z
 
 ## Table of Contents
 
@@ -111,7 +111,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[laravel.com](./packages/laravel.com/index.md)** () | The Laravel application installer. | laravel | 5.16.0 (+16) | `pkgx laravel` |
 | **[symfony.com](./packages/symfony.com/index.md)** () | The Symfony CLI tool | symfony | 5.12.0 (+49) | `pkgx symfony` |
 | **[tailwindcss.com](./packages/tailwindcss.com/index.md)** () | A utility-first CSS framework for rapid UI development. | tailwindcss | 4.1.11 (+44) | `pkgx tailwindcss` |
-| **[vitejs.dev](./packages/vitejs.dev/index.md)** () | Next generation frontend tooling. It&#39;s fast! | vite | 7.0.6 (+106) | `pkgx vite` |
+| **[vitejs.dev](./packages/vitejs.dev/index.md)** () | Next generation frontend tooling. It&#39;s fast! | vite | 7.1.0 (+107) | `pkgx vite` |
 
 ## DevOps
 
