@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/tidy-viewer`
  * @programs `tidy-viewer`
- * @version `1.6.0` (2 versions available)
+ * @version `1.6.5` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tidy-viewer`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "tidy-viewer"
  * console.log(pkg.description) // "📺(tv) Tidy Viewer is a cross-platform CLI csv ..."
  * console.log(pkg.programs)    // ["tidy-viewer"]
- * console.log(pkg.versions[0]) // "1.6.0" (latest)
+ * console.log(pkg.versions[0]) // "1.6.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/tidy-viewer.md
@@ -62,6 +62,7 @@ export const tidyviewerPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.6.5',
     '1.6.0',
     '1.5.2',
   ] as const,
