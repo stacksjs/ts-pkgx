@@ -1,38 +1,30 @@
 /**
- * **onefetch** - Command-line Git information tool
+ * **onefetch.dev** - pkgx package
  *
  * @domain `onefetch.dev`
- * @programs `onefetch`
  * @version `2.25.0` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install onefetch`
- * @name `onefetch`
+ * @install `launchpad install onefetch.dev`
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.onefetch
- * // Or access via domain
- * const samePkg = pantry.onefetchdev
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "onefetch"
- * console.log(pkg.description) // "Command-line Git information tool"
- * console.log(pkg.programs)    // ["onefetch"]
+ * const pkg = pantry.onefetchdev
+ * console.log(pkg.name)        // "onefetch.dev"
  * console.log(pkg.versions[0]) // "2.25.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/onefetch-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const onefetchPackage = {
+export const onefetchdevPackage = {
   /**
    * The display name of this package.
    */
-  name: 'onefetch' as const,
+  name: 'onefetch.dev' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -40,7 +32,7 @@ export const onefetchPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Command-line Git information tool' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/onefetch.dev/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
@@ -48,14 +40,8 @@ export const onefetchPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install onefetch' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'onefetch',
-  ] as const,
+  installCommand: 'launchpad install onefetch.dev' as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -79,13 +65,9 @@ export const onefetchPackage = {
     '2.19.0',
     '2.18.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) onefetch -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install onefetch' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +onefetch.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install onefetch.dev' as const,
 }
 
-export type OnefetchPackage = typeof onefetchPackage
+export type OnefetchdevPackage = typeof onefetchdevPackage

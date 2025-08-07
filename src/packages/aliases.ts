@@ -656,7 +656,6 @@ export const aliases: Record<string, string> = {
   'oh-my-posh': 'ohmyposh.dev',
   'ollama': 'ollama.ai',
   'omekasy': 'crates.io/omekasy',
-  'onefetch': 'onefetch.dev',
   'onig-config': 'github.com/kkos/oniguruma',
   'op': 'developer.1password.com/1password-cli',
   'opa': 'openpolicyagent.org',
