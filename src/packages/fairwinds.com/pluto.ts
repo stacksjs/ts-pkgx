@@ -3,7 +3,7 @@
  *
  * @domain `fairwinds.com/pluto`
  * @programs `pluto`
- * @version `5.22.2` (23 versions available)
+ * @version `5.22.3` (24 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pluto`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "pluto"
  * console.log(pkg.description) // "A cli tool to help discover deprecated apiVersi..."
  * console.log(pkg.programs)    // ["pluto"]
- * console.log(pkg.versions[0]) // "5.22.2" (latest)
+ * console.log(pkg.versions[0]) // "5.22.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/fairwinds-com/pluto.md
@@ -62,6 +62,7 @@ export const plutoPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '5.22.3',
     '5.22.2',
     '5.22.1',
     '5.22.0',

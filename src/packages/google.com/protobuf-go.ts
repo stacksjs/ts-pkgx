@@ -3,12 +3,12 @@
  *
  * @domain `google.com/protobuf-go`
  * @programs `protoc-gen-go`
- * @version `1.36.6` (13 versions available)
+ * @version `1.36.7` (14 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install protoc-gen-go`
  * @name `protoc-gen-go`
- * @companions `protobuf.dev`
+ * @companions `protobuf.dev`, `abseil.io`
  *
  * @example
  * ```typescript
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "protoc-gen-go"
  * console.log(pkg.description) // "Go support for Google's protocol buffers"
  * console.log(pkg.programs)    // ["protoc-gen-go"]
- * console.log(pkg.versions[0]) // "1.36.6" (latest)
+ * console.log(pkg.versions[0]) // "1.36.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/google-com/protobuf-go.md
@@ -62,6 +62,7 @@ export const protocgengoPackage = {
    */
   companions: [
     'protobuf.dev',
+    'abseil.io',
   ] as const,
   dependencies: [] as const,
   /**
@@ -69,6 +70,7 @@ export const protocgengoPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.36.7',
     '1.36.6',
     '1.36.5',
     '1.36.4',
