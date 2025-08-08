@@ -2,7 +2,7 @@
  * **github.com/caddy-dns/acmedns** - pkgx package
  *
  * @domain `github.com/caddy-dns/acmedns`
- * @version `0.4.1` (1 versions available)
+ * @version `0.5.0` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/caddy-dns/acmedns`
@@ -13,7 +13,7 @@
  *
  * const pkg = pantry.githubcomcaddydnsacmedns
  * console.log(pkg.name)        // "github.com/caddy-dns/acmedns"
- * console.log(pkg.versions[0]) // "0.4.1" (latest)
+ * console.log(pkg.versions[0]) // "0.5.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/caddy-dns/acmedns.md
@@ -48,6 +48,7 @@ export const githubcomcaddydnsacmednsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.5.0',
     '0.4.1',
   ] as const,
   aliases: [] as const,
