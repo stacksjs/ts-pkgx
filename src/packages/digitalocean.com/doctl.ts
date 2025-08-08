@@ -3,7 +3,7 @@
  *
  * @domain `digitalocean.com/doctl`
  * @programs `doctl`
- * @version `2.59.3` (40 versions available)
+ * @version `2.59.3` (41 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install doctl`
@@ -64,6 +64,7 @@ export const doctlPackage = {
   versions: [
     '2.59.3',
     '2.59.2',
+    '1.136.0',
     '1.135.0',
     '1.134.0',
     '1.133.0',
