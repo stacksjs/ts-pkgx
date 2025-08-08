@@ -3,7 +3,7 @@
  *
  * @domain `gnome.org/glib`
  * @programs `gdbus`, `gdbus-codegen`, `gio`, `gio-querymodules`, `glib-compile-resources`, ... (+9 more)
- * @version `2.85.2` (46 versions available)
+ * @version `2.85.3` (48 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnome.org/glib`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "gnome.org/glib"
  * console.log(pkg.description) // "Core application library for C"
  * console.log(pkg.programs)    // ["gdbus", "gdbus-codegen", ...]
- * console.log(pkg.versions[0]) // "2.85.2" (latest)
+ * console.log(pkg.versions[0]) // "2.85.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/glib.md
@@ -88,9 +88,11 @@ export const gnomeorgglibPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.85.3',
     '2.85.2',
     '2.85.1',
     '2.85.0',
+    '2.84.4',
     '2.84.3',
     '2.84.2',
     '2.84.1',
