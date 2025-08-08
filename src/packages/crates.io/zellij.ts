@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/zellij`
  * @programs `zellij`
- * @version `0.43.0` (19 versions available)
+ * @version `0.43.1` (20 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install zellij`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "zellij"
  * console.log(pkg.description) // "Pluggable terminal workspace, with terminal mul..."
  * console.log(pkg.programs)    // ["zellij"]
- * console.log(pkg.versions[0]) // "0.43.0" (latest)
+ * console.log(pkg.versions[0]) // "0.43.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/zellij.md
@@ -70,6 +70,7 @@ export const zellijPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.43.1',
     '0.43.0',
     '0.42.2',
     '0.42.1',
