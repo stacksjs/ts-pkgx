@@ -3,7 +3,7 @@
  *
  * @domain `glaros.dtc.umn.edu/metis`
  * @programs `cmpfillin`, `gpmetis`, `graphchk`, `m2gmetis`, `mpmetis`, ... (+1 more)
- * @version `5.2.1.1` (3 versions available)
+ * @version `5.2.1.2` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install metis`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "metis"
  * console.log(pkg.description) // "Programs that partition graphs and order matrices"
  * console.log(pkg.programs)    // ["cmpfillin", "gpmetis", ...]
- * console.log(pkg.versions[0]) // "5.2.1.1" (latest)
+ * console.log(pkg.versions[0]) // "5.2.1.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/glaros-dtc-umn-edu/metis.md
@@ -67,6 +67,7 @@ export const metisPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '5.2.1.2',
     '5.2.1.1',
     '5.1.0.4',
     '5.1.0.3',

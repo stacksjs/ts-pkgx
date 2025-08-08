@@ -3,7 +3,7 @@
  *
  * @domain `zrok.io`
  * @programs `zrok`, `copyto`, `pastefrom`
- * @version `1.1.0` (41 versions available)
+ * @version `1.1.1` (42 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install zrok`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "zrok"
  * console.log(pkg.description) // "Geo-scale, next-generation peer-to-peer sharing..."
  * console.log(pkg.programs)    // ["zrok", "copyto", ...]
- * console.log(pkg.versions[0]) // "1.1.0" (latest)
+ * console.log(pkg.versions[0]) // "1.1.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/zrok-io.md
@@ -64,6 +64,7 @@ export const zrokPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.1.1',
     '1.1.0',
     '1.0.8',
     '1.0.7',
