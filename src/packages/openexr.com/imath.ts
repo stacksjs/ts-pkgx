@@ -2,7 +2,7 @@
  * **openexr.com/imath** - Imath is a C++ and python library of 2D and 3D vector, matrix, and math operations for computer graphics
  *
  * @domain `openexr.com/imath`
- * @version `3.1.12` (6 versions available)
+ * @version `3.2.0` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openexr.com/imath`
@@ -14,7 +14,7 @@
  * const pkg = pantry.openexrcomimath
  * console.log(pkg.name)        // "openexr.com/imath"
  * console.log(pkg.description) // "Imath is a C++ and python library of 2D and 3D ..."
- * console.log(pkg.versions[0]) // "3.1.12" (latest)
+ * console.log(pkg.versions[0]) // "3.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openexr-com/imath.md
@@ -49,6 +49,7 @@ export const openexrcomimathPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.2.0',
     '3.1.12',
     '3.1.11',
     '3.1.10',

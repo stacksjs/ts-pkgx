@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 6 versions</summary>
+<summary>Show all 7 versions</summary>
 
-- `3.1.12`, `3.1.11`, `3.1.10`, `3.1.9`, `3.1.8`
-- `3.1.7`
+- `3.2.0`, `3.1.12`, `3.1.11`, `3.1.10`, `3.1.9`
+- `3.1.8`, `3.1.7`
 
 </details>
 
-**Latest Version**: `3.1.12`
+**Latest Version**: `3.2.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +openexr.com/imath@3.1.12 -- $SHELL -i
+sh <(curl https://pkgx.sh) +openexr.com/imath@3.2.0 -- $SHELL -i
 ```
 
 ## Usage Examples
