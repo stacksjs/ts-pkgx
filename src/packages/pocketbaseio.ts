@@ -3,7 +3,7 @@
  *
  * @domain `pocketbase.io`
  * @programs `pocketbase`
- * @version `0.29.1` (84 versions available)
+ * @version `0.29.1` (85 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pocketbase`
@@ -106,6 +106,7 @@ export const pocketbasePackage = {
     '0.23.2',
     '0.23.1',
     '0.23.0',
+    '0.22.35',
     '0.22.34',
     '0.22.33',
     '0.22.32',
