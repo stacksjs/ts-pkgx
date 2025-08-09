@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-08-08T02:47:27.513Z
+ * Generated on 2025-08-09T02:38:03.264Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1592 total)
+ * List of all known packages (1593 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -456,6 +456,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'getclipboard.app',
   'getcomposer.org',
   'getfoundry.sh',
+  'getmonero.org',
   'getsops.io',
   'getsynth.com',
   'getzola.org',
