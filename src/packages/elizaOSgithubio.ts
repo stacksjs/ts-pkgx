@@ -3,7 +3,7 @@
  *
  * @domain `elizaOS.github.io`
  * @programs `eliza`
- * @version `1.4.2` (49 versions available)
+ * @version `1.4.2` (50 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install eliza`
@@ -83,6 +83,7 @@ export const elizaPackage = {
   versions: [
     '1.4.2',
     '1.4.1',
+    '1.3.6',
     '1.3.4',
     '1.3.3',
     '1.3.2',
