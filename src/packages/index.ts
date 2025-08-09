@@ -410,6 +410,7 @@ import { agPackage } from './geoff.greer.fm/ag'
 import { cbPackage } from './getclipboardapp'
 import { composerPackage } from './getcomposerorg'
 import { getfoundryshPackage } from './getfoundrysh'
+import { getmoneroorgPackage } from './getmoneroorg'
 import { sopsPackage } from './getsopsio'
 import { synthPackage } from './getsynthcom'
 import { zolaPackage } from './getzolaorg'
@@ -2282,6 +2283,7 @@ export interface Pantry {
   getclipboardapp: typeof cbPackage
   getcomposerorg: typeof composerPackage
   getfoundrysh: typeof getfoundryshPackage
+  getmoneroorg: typeof getmoneroorgPackage
   getsopsio: typeof sopsPackage
   getsynthcom: typeof synthPackage
   getzolaorg: typeof zolaPackage
@@ -6091,6 +6093,7 @@ export const pantry: Pantry = {
   getclipboardapp: cbPackage,
   getcomposerorg: composerPackage,
   getfoundrysh: getfoundryshPackage,
+  getmoneroorg: getmoneroorgPackage,
   getsopsio: sopsPackage,
   getsynthcom: synthPackage,
   getzolaorg: zolaPackage,
