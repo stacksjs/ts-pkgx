@@ -3,7 +3,7 @@
  *
  * @domain `github.com/minamijoyo/tfupdate`
  * @programs `tfupdate`
- * @version `0.9.1` (8 versions available)
+ * @version `0.9.2` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tfupdate`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "tfupdate"
  * console.log(pkg.description) // "Update version constraints in your Terraform co..."
  * console.log(pkg.programs)    // ["tfupdate"]
- * console.log(pkg.versions[0]) // "0.9.1" (latest)
+ * console.log(pkg.versions[0]) // "0.9.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/minamijoyo/tfupdate.md
@@ -62,6 +62,7 @@ export const tfupdatePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.9.2',
     '0.9.1',
     '0.9.0',
     '0.8.5',
