@@ -25,16 +25,17 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 20 versions</summary>
+<summary>Show all 21 versions</summary>
 
-- `1.2.2`, `1.2.0`, `1.1.1`, `1.1.0`, `1.0.4`
-- `1.0.3`, `1.0.2`, `1.0.1`, `1.0.0`, `0.35.3`
-- `0.35.2`, `0.35.1`, `0.35.0`, `0.34.2`, `0.34.1`
-- `0.34.0`, `0.33.1`, `0.33.0`, `0.32.3`, `0.32.2`
+- `1.3.0`, `1.2.2`, `1.2.0`, `1.1.1`, `1.1.0`
+- `1.0.4`, `1.0.3`, `1.0.2`, `1.0.1`, `1.0.0`
+- `0.35.3`, `0.35.2`, `0.35.1`, `0.35.0`, `0.34.2`
+- `0.34.1`, `0.34.0`, `0.33.1`, `0.33.0`, `0.32.3`
+- `0.32.2`
 
 </details>
 
-**Latest Version**: `1.2.2`
+**Latest Version**: `1.3.0`
 
 ### Install Specific Version
 
