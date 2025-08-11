@@ -3,7 +3,7 @@
  *
  * @domain `ansible.com`
  * @programs `ansible`, `ansible-config`, `ansible-connection`, `ansible-console`, `ansible-doc`, ... (+6 more)
- * @version `2.19.0` (72 versions available)
+ * @version `2.19.0` (73 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ansible`
@@ -80,6 +80,7 @@ export const ansiblePackage = {
    */
   versions: [
     '2.19.0',
+    '2.18.8',
     '2.18.7',
     '2.18.6',
     '2.18.5',
