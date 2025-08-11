@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-08-11T21:30:54.196Z
+- **Last Updated**: 2025-08-11T22:28:50.686Z
 
 ## Table of Contents
 
@@ -76,7 +76,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[github.com/nat/openplayground](./packages/github.com/nat/openplayground.md)** () | An LLM playground you can run on your laptop | openplayground | 2023.6.5 (+0) | `pkgx openplayground` |
 | **[github.com/npiv/chatblade](./packages/github.com/npiv/chatblade.md)** () | A CLI Swiss Army Knife for ChatGPT | chatblade | 0.7.0 (+14) | `pkgx chatblade` |
 | **[kaggle.com](./packages/kaggle.com/index.md)** () | Official Kaggle API | kaggle | 1.7.4.5 (+4) | `pkgx kaggle` |
-| **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.26.0 (+29) | `pkgx llm` |
+| **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.27.0 (+30) | `pkgx llm` |
 | **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.2 (+19) | `pkgx f2py` |
 | **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.11.4 (+108) | `pkgx ollama` |
 | **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 1.99.8 (+263) | `pkgx openai` |
