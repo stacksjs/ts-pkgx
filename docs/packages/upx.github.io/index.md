@@ -1,11 +1,11 @@
-# upx.github.io
+# upx
 
-> Package from pantry: upx.github.io
+> UPX - the Ultimate Packer for eXecutables
 
 ## Package Information
 
 - **Domain**: `upx.github.io`
-- **Name**: `upx.github.io`
+- **Name**: `upx`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/upx.github.io/package.yml)
 
@@ -13,14 +13,32 @@
 
 ```bash
 # Install with launchpad
-launchpad install upx.github.io
+launchpad install upx
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `upx`
+
+## Available Versions
+
+<details>
+<summary>Show all 4 versions</summary>
+
+- `5.0.2`, `5.0.1`, `5.0.0`, `4.2.4`
+
+</details>
+
+**Latest Version**: `5.0.2`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) upx -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -34,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['upx.github.io']
+const pkg = pantry.upx
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,27 +1,37 @@
 /**
- * **upliftci.dev** - Package from pantry: upliftci.dev
+ * **uplift** - Semantic versioning the easy way. Powered by Conventional Commits. Built for use with CI.
  *
  * @domain `upliftci.dev`
+ * @programs `uplift`
+ * @version `2.26.0` (6 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install upliftci.dev`
+ * @install `launchpad install uplift`
+ * @name `uplift`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.upliftcidev
- * console.log(pkg.name)        // "upliftci.dev"
- * console.log(pkg.description) // "Package from pantry: upliftci.dev"
+ * // Access the package
+ * const pkg = pantry.uplift
+ * // Or access via domain
+ * const samePkg = pantry.upliftcidev
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "uplift"
+ * console.log(pkg.description) // "Semantic versioning the easy way. Powered by Co..."
+ * console.log(pkg.programs)    // ["uplift"]
+ * console.log(pkg.versions[0]) // "2.26.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/upliftci-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const upliftcidevPackage = {
+export const upliftPackage = {
   /**
    * The display name of this package.
    */
-  name: 'upliftci.dev' as const,
+  name: 'uplift' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -29,21 +39,43 @@ export const upliftcidevPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: upliftci.dev' as const,
+  description: 'Semantic versioning the easy way. Powered by Conventional Commits. Built for use with CI.' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/upliftci.dev/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install upliftci.dev' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +upliftci.dev -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install upliftci.dev' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install uplift' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'uplift',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/upliftci.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.26.0',
+    '2.25.0',
+    '2.24.1',
+    '2.24.0',
+    '2.23.0',
+    '2.22.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) uplift -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install uplift' as const,
 }
 
-export type UpliftcidevPackage = typeof upliftcidevPackage
+export type UpliftPackage = typeof upliftPackage
