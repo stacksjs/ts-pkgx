@@ -477,6 +477,7 @@ import { xcodesPackage } from './github.com/XcodesOrg/xcodes'
 import { csvlensPackage } from './github.com/YS-L/csvlens'
 import { z3Package } from './github.com/Z3Prover/z3'
 import { dockercleanPackage } from './github.com/ZZROTDesign/docker-clean'
+import { githubcomzouuuplandrunPackage } from './github.com/Zouuup/landrun'
 import { xcresultparserPackage } from './github.com/a7ex/xcresultparser'
 import { rawdogPackage } from './github.com/abanteai/rawdog'
 import { colimaPackage } from './github.com/abiosoft/colima'
@@ -2410,6 +2411,8 @@ export interface Pantry {
   githubcomz3prover: typeof z3Package
   docker_clean: typeof dockercleanPackage
   githubcomzzrotdesign: typeof dockercleanPackage
+  landrun: typeof githubcomzouuuplandrunPackage
+  githubcomzouuup: typeof githubcomzouuuplandrunPackage
 
   githubcoma7ex: typeof xcresultparserPackage
 
@@ -6220,6 +6223,8 @@ export const pantry: Pantry = {
   githubcomz3prover: z3Package,
   docker_clean: dockercleanPackage,
   githubcomzzrotdesign: dockercleanPackage,
+  landrun: githubcomzouuuplandrunPackage,
+  githubcomzouuup: githubcomzouuuplandrunPackage,
 
   githubcoma7ex: xcresultparserPackage,
 
