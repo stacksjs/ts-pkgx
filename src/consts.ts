@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-08-09T02:38:03.264Z
+ * Generated on 2025-08-11T02:47:15.216Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1593 total)
+ * List of all known packages (1594 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -523,6 +523,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'github.com/YS-L/csvlens',
   'github.com/Z3Prover/z3',
   'github.com/ZZROTDesign/docker-clean',
+  'github.com/Zouuup/landrun',
   'github.com/a7ex/xcresultparser',
   'github.com/abanteai/rawdog',
   'github.com/abiosoft/colima',
