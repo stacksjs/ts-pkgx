@@ -1,11 +1,11 @@
-# v
+# vlang.io
 
-> Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io
+> Package from pantry: vlang.io
 
 ## Package Information
 
 - **Domain**: `vlang.io`
-- **Name**: `v`
+- **Name**: `vlang.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vlang.io/package.yml)
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install v
+launchpad install vlang.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `v`
-
-## Available Versions
-
-<details>
-<summary>Show all 15 versions</summary>
-
-- `0.4.11`, `0.4.10`, `0.4.9`, `0.4.8`, `0.4.7`
-- `0.4.6`, `0.4.5`, `0.4.4`, `0.4.3`, `0.4.2`
-- `0.4.1`, `0.4.0`, `0.3.5`, `0.3.4`, `0.3.3`
-
-</details>
-
-**Latest Version**: `0.4.11`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) v -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -48,7 +28,7 @@ sh <(curl https://pkgx.sh) v -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.v
+const pkg = pantry['vlang.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

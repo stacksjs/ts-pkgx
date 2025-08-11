@@ -1,6 +1,6 @@
 # DevOps
 
-*27 packages in this category*
+*26 packages in this category*
 
 Tools for deployment, orchestration, and infrastructure management.
 
@@ -263,16 +263,6 @@ Terratag is a CLI tool that enables users of Terraform to automatically create a
 **Programs**: terratag
 
 **Install**: `launchpad install terratag`
-
----
-
-### [vaultproject.io](../packages/vaultproject.io/index.md) (vault)
-
-A tool for secrets management, encryption as a service, and privileged access management
-
-**Programs**: vault
-
-**Install**: `launchpad install vault`
 
 ---
 

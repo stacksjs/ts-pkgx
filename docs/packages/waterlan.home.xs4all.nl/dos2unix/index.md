@@ -1,6 +1,6 @@
 # dos2unix
 
-> Convert text between DOS, UNIX, and Mac formats
+> Package from pantry: waterlan.home.xs4all.nl/dos2unix
 
 ## Package Information
 
@@ -13,35 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install dos2unix
+launchpad install waterlan.home.xs4all.nl/dos2unix
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `dos2unix`
-- `mac2unix`
-- `unix2dos`
-- `unix2mac`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `7.5.2`
-
-</details>
-
-**Latest Version**: `7.5.2`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) +waterlan.home.xs4all.nl/dos2unix@7.5.2 -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 

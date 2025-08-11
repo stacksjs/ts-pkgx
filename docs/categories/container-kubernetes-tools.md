@@ -1,6 +1,6 @@
 # Container & Kubernetes Tools
 
-*25 packages in this category*
+*23 packages in this category*
 
 Packages related to container & kubernetes tools.
 
@@ -233,26 +233,6 @@ Define your dev environment as code. For microservice apps on Kubernetes.
 **Programs**: tilt
 
 **Install**: `launchpad install tilt`
-
----
-
-### [vcluster.com](../packages/vcluster.com/index.md) (vcluster)
-
-vCluster - Create fully functional virtual Kubernetes clusters - Each vcluster runs inside a namespace of the underlying k8s cluster. It's cheaper than creating separate full-blown clusters and it offers better multi-tenancy and isolation than regular namespaces.
-
-**Programs**: vcluster
-
-**Install**: `launchpad install vcluster`
-
----
-
-### [velero.io](../packages/velero.io/index.md) (velero)
-
-Backup and migrate Kubernetes applications and their persistent volumes
-
-**Programs**: velero
-
-**Install**: `launchpad install velero`
 
 ---
 
