@@ -3,7 +3,7 @@
  *
  * @domain `llm.datasette.io`
  * @programs `llm`
- * @version `0.27.0` (31 versions available)
+ * @version `0.27.1` (32 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install llm`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "llm"
  * console.log(pkg.description) // "Access large language models from the command-line"
  * console.log(pkg.programs)    // ["llm"]
- * console.log(pkg.versions[0]) // "0.27.0" (latest)
+ * console.log(pkg.versions[0]) // "0.27.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/llm-datasette-io.md
@@ -69,6 +69,7 @@ export const llmPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.27.1',
     '0.27.0',
     '0.26.0',
     '0.25.0',

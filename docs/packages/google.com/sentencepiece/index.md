@@ -29,19 +29,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `0.2.0`, `0.1.99`, `0.1.98`, `0.1.97`
+- `0.2.1`, `0.2.0`, `0.1.99`, `0.1.98`, `0.1.97`
 
 </details>
 
-**Latest Version**: `0.2.0`
+**Latest Version**: `0.2.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +google.com/sentencepiece@0.2.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +google.com/sentencepiece@0.2.1 -- $SHELL -i
 ```
 
 ## Usage Examples
