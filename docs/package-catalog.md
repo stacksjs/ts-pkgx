@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-08-12T08:31:34.939Z
+- **Last Updated**: 2025-08-12T09:32:01.260Z
 
 ## Table of Contents
 
@@ -373,7 +373,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.250.0 (+72) | `pkgx pscale` |
 | **[railway.app](./packages/railway.app/index.md)** () | Develop and deploy code with zero configuration | railway | 4.6.1 (+55) | `pkgx railway` |
 | **[render.com](./packages/render.com/index.md)** () | Command-line interface for Render | render | 0.1.11 (+5) | `pkgx render` |
-| **[supabase.com/cli](./packages/supabase.com/cli/index.md)** () | Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres b... | supabase | 2.33.9 (+184) | `pkgx supabase` |
+| **[supabase.com/cli](./packages/supabase.com/cli/index.md)** () | Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres b... | supabase | 2.34.3 (+185) | `pkgx supabase` |
 
 ## Mobile Development
 
@@ -402,7 +402,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[bitcoin.org](./packages/bitcoin.org/index.md)** () | Decentralized, peer to peer payment network | bitcoin-cli, bitcoin-tx, bitcoin-util, ... (+2) | 29.0.0 (+16) | `pkgx bitcoin` |
 | **[elementsproject.org](./packages/elementsproject.org/index.md)** () | Open Source implementation of advanced blockchain features extending the Bitcoin protocol | bench_bitcoin, elements-cli, elements-tx, ... (+4) | 23.3.0 (+8) | `pkgx elementsproject.org` |
-| **[getfoundry.sh](./packages/getfoundry.sh/index.md)** () | Foundry is a blazing fast, portable and modular toolkit for Ethereum application development writ... | forge, anvil, cast, ... (+1) | 2024.4.12 (+10) | `pkgx getfoundry.sh` |
+| **[getfoundry.sh](./packages/getfoundry.sh/index.md)** () | Foundry is a blazing fast, portable and modular toolkit for Ethereum application development writ... | forge, anvil, cast, ... (+1) | 2024.4.12 (+11) | `pkgx getfoundry.sh` |
 | **[ghostscript.com](./packages/ghostscript.com/index.md)** () | This is purely for downloads, please check the website for full information | dvipdf, eps2eps, gpcl6, ... (+30) | 10.5.1 (+6) | `pkgx ghostscript.com` |
 | **[solana.com](./packages/solana.com/index.md)** () | Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces. | solana, solana-keygen, solana-bench-streamer, ... (+7) | 1.18.26 (+82) | `pkgx solana` |
 
