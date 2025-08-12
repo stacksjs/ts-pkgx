@@ -3,7 +3,7 @@
  *
  * @domain `nixos.org/patchelf`
  * @programs `patchelf`
- * @version `0.18.0` (4 versions available)
+ * @version `0.18.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install patchelf`
@@ -65,6 +65,7 @@ export const patchelfPackage = {
     '0.18.0',
     '0.17.2',
     '0.17.0',
+    '0.15.1',
     '0.15.0',
   ] as const,
   /**
