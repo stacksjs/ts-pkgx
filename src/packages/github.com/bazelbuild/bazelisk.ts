@@ -3,7 +3,7 @@
  *
  * @domain `github.com/bazelbuild/bazelisk`
  * @programs `bazel`, `bazelisk`
- * @version `1.26.0` (10 versions available)
+ * @version `1.27.0` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bazel`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "bazel"
  * console.log(pkg.description) // "A user-friendly launcher for Bazel."
  * console.log(pkg.programs)    // ["bazel", "bazelisk"]
- * console.log(pkg.versions[0]) // "1.26.0" (latest)
+ * console.log(pkg.versions[0]) // "1.27.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/bazelbuild/bazelisk.md
@@ -70,6 +70,7 @@ export const bazelPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.27.0',
     '1.26.0',
     '1.25.0',
     '1.24.1',

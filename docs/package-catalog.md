@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-08-12T17:29:15.100Z
+- **Last Updated**: 2025-08-12T18:31:05.929Z
 
 ## Table of Contents
 
@@ -198,7 +198,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[earthly.dev/earthly](./packages/earthly.dev/earthly/index.md)** () | Super simple build framework with fast, repeatable builds and an instantly familiar syntax – like... | earthly | 0.8.16 (+1) | `pkgx earthly` |
 | **[freedesktop.org/pkg-config](./packages/freedesktop.org/pkg-config/index.md)** () | package compiler and linker metadata toolkit | pkg-config | 0.29.2 (+0) | `pkgx pkg-config` |
-| **[github.com/bazelbuild/bazelisk](./packages/github.com/bazelbuild/bazelisk.md)** () | A user-friendly launcher for Bazel. | bazel, bazelisk | 1.26.0 (+9) | `pkgx bazel` |
+| **[github.com/bazelbuild/bazelisk](./packages/github.com/bazelbuild/bazelisk.md)** () | A user-friendly launcher for Bazel. | bazel, bazelisk | 1.27.0 (+10) | `pkgx bazel` |
 | **[github.com/bazelbuild/buildtools](./packages/github.com/bazelbuild/buildtools.md)** () | Format bazel BUILD files with a standard convention | buildifier | 8.2.1 (+10) | `pkgx buildifier` |
 | **[github.com/moby/buildkit](./packages/github.com/moby/buildkit.md)** (buildctl) | concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit | buildctl | 0.23.2 (+27) | `pkgx buildctl` |
 | **[gnu.org/autoconf](./packages/gnu.org/autoconf/index.md)** () | Automatic configure script builder | autoconf, autoheader, autom4te, ... (+4) | 2.72.0 (+1) | `pkgx gnu.org/autoconf` |

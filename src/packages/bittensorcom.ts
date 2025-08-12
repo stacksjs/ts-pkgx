@@ -2,7 +2,7 @@
  * **Bittensor** - Internet-scale Neural Networks
  *
  * @domain `bittensor.com`
- * @version `9.8.3` (67 versions available)
+ * @version `9.9.0` (68 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install Bittensor`
@@ -20,7 +20,7 @@
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "Bittensor"
  * console.log(pkg.description) // "Internet-scale Neural Networks"
- * console.log(pkg.versions[0]) // "9.8.3" (latest)
+ * console.log(pkg.versions[0]) // "9.9.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/bittensor-com.md
@@ -62,6 +62,7 @@ export const bittensorPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '9.9.0',
     '9.8.3',
     '9.8.2',
     '9.8.1',
