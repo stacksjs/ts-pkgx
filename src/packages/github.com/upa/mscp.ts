@@ -3,7 +3,7 @@
  *
  * @domain `github.com/upa/mscp`
  * @programs `mscp`
- * @version `0.2.2` (2 versions available)
+ * @version `0.2.3` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mscp`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "mscp"
  * console.log(pkg.description) // "mscp: transfer files over multiple SSH (SFTP) c..."
  * console.log(pkg.programs)    // ["mscp"]
- * console.log(pkg.versions[0]) // "0.2.2" (latest)
+ * console.log(pkg.versions[0]) // "0.2.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/upa/mscp.md
@@ -70,6 +70,7 @@ export const mscpPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.2.3',
     '0.2.2',
     '0.2.1',
   ] as const,
