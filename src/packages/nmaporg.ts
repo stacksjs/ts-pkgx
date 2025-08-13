@@ -3,7 +3,7 @@
  *
  * @domain `nmap.org`
  * @programs `nmap`, `ncat`, `nping`
- * @version `7.97.0` (5 versions available)
+ * @version `7.98.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nmap.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "nmap.org"
  * console.log(pkg.description) // "Port scanning utility for large networks"
  * console.log(pkg.programs)    // ["nmap", "ncat", ...]
- * console.log(pkg.versions[0]) // "7.97.0" (latest)
+ * console.log(pkg.versions[0]) // "7.98.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nmap-org.md
@@ -67,6 +67,7 @@ export const nmaporgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '7.98.0',
     '7.97.0',
     '7.96.0',
     '7.95.0',

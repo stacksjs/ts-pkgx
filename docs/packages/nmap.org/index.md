@@ -27,19 +27,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 5 versions</summary>
+<summary>Show all 6 versions</summary>
 
-- `7.97.0`, `7.96.0`, `7.95.0`, `7.94.0`, `7.93.0`
+- `7.98.0`, `7.97.0`, `7.96.0`, `7.95.0`, `7.94.0`
+- `7.93.0`
 
 </details>
 
-**Latest Version**: `7.97.0`
+**Latest Version**: `7.98.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +nmap.org@7.97.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +nmap.org@7.98.0 -- $SHELL -i
 ```
 
 ## Dependencies
