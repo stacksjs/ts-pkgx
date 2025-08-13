@@ -3,7 +3,7 @@
  *
  * @domain `github.com/canonical/charmcraft`
  * @programs `charmcraft`
- * @version `3.5.2` (10 versions available)
+ * @version `3.5.3` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install charmcraft`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "charmcraft"
  * console.log(pkg.description) // "Collaborate, build and publish charmed operator..."
  * console.log(pkg.programs)    // ["charmcraft"]
- * console.log(pkg.versions[0]) // "3.5.2" (latest)
+ * console.log(pkg.versions[0]) // "3.5.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/canonical/charmcraft.md
@@ -70,6 +70,7 @@ export const charmcraftPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.5.3',
     '3.5.2',
     '3.5.1',
     '3.5.0',
