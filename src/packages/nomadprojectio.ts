@@ -3,7 +3,7 @@
  *
  * @domain `nomadproject.io`
  * @programs `nomad`
- * @version `1.10.3` (15 versions available)
+ * @version `1.10.4` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nomad`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "nomad"
  * console.log(pkg.description) // "Nomad is an easy-to-use, flexible, and performa..."
  * console.log(pkg.programs)    // ["nomad"]
- * console.log(pkg.versions[0]) // "1.10.3" (latest)
+ * console.log(pkg.versions[0]) // "1.10.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nomadproject-io.md
@@ -62,6 +62,7 @@ export const nomadPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.10.4',
     '1.10.3',
     '1.10.2',
     '1.10.1',
