@@ -29,22 +29,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 17 versions</summary>
+<summary>Show all 18 versions</summary>
 
-- `2.2.0`, `2.1.21`, `2.1.20`, `2.1.10`, `2.1.0`
-- `2.0.21`, `2.0.20`, `2.0.10`, `2.0.0`, `1.9.25`
-- `1.9.24`, `1.9.23`, `1.9.22`, `1.9.21`, `1.9.20`
-- `1.9.10`, `1.9.0`
+- `2.2.10`, `2.2.0`, `2.1.21`, `2.1.20`, `2.1.10`
+- `2.1.0`, `2.0.21`, `2.0.20`, `2.0.10`, `2.0.0`
+- `1.9.25`, `1.9.24`, `1.9.23`, `1.9.22`, `1.9.21`
+- `1.9.20`, `1.9.10`, `1.9.0`
 
 </details>
 
-**Latest Version**: `2.2.0`
+**Latest Version**: `2.2.10`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +kotlinlang.org@2.2.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +kotlinlang.org@2.2.10 -- $SHELL -i
 ```
 
 ## Dependencies
