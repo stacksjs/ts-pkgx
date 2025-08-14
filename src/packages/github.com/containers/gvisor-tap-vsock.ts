@@ -3,7 +3,7 @@
  *
  * @domain `github.com/containers/gvisor-tap-vsock`
  * @programs `gvproxy`, `qemu-wrapper`
- * @version `0.8.6` (15 versions available)
+ * @version `0.8.7` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/containers/gvisor-tap-vsock`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "github.com/containers/gvisor-tap-vsock"
  * console.log(pkg.description) // "A new network stack based on gVisor"
  * console.log(pkg.programs)    // ["gvproxy", "qemu-wrapper"]
- * console.log(pkg.versions[0]) // "0.8.6" (latest)
+ * console.log(pkg.versions[0]) // "0.8.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/containers/gvisor-tap-vsock.md
@@ -58,6 +58,7 @@ export const githubcomcontainersgvisortapvsockPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.8.7',
     '0.8.6',
     '0.8.5',
     '0.8.4',

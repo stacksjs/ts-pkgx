@@ -25,21 +25,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 15 versions</summary>
+<summary>Show all 16 versions</summary>
 
-- `3.19.0`, `3.18.0`, `3.17.0`, `3.16.1`, `3.16.0`
-- `3.15.4`, `3.15.3`, `3.15.2`, `3.15.1`, `3.15.0`
-- `3.14.0`, `3.13.4`, `3.13.3`, `3.13.2`, `3.13.1`
+- `3.19.1`, `3.19.0`, `3.18.0`, `3.17.0`, `3.16.1`
+- `3.16.0`, `3.15.4`, `3.15.3`, `3.15.2`, `3.15.1`
+- `3.15.0`, `3.14.0`, `3.13.4`, `3.13.3`, `3.13.2`
+- `3.13.1`
 
 </details>
 
-**Latest Version**: `3.19.0`
+**Latest Version**: `3.19.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/tox-dev/filelock@3.19.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/tox-dev/filelock@3.19.1 -- $SHELL -i
 ```
 
 ## Dependencies
