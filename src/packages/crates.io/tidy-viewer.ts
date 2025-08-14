@@ -1,33 +1,22 @@
 /**
- * **tidy-viewer** - 📺(tv) Tidy Viewer is a cross-platform CLI csv pretty printer that uses column styling to maximize viewer enjoyment.
+ * **tidy-viewer** - pkgx package
  *
  * @domain `crates.io/tidy-viewer`
- * @programs `tidy-viewer`
- * @version `1.8.93` (5 versions available)
- * @versions From newest version to oldest.
  *
- * @install `launchpad install tidy-viewer`
- * @name `tidy-viewer`
+ * @install `launchpad install crates.io/tidy-viewer`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.tidyviewer
- * // Or access via domain
- * const samePkg = pantry.cratesiotidyviewer
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiotidyviewer
  * console.log(pkg.name)        // "tidy-viewer"
- * console.log(pkg.description) // "📺(tv) Tidy Viewer is a cross-platform CLI csv ..."
- * console.log(pkg.programs)    // ["tidy-viewer"]
- * console.log(pkg.versions[0]) // "1.8.93" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/tidy-viewer.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tidyviewerPackage = {
+export const cratesiotidyviewerPackage = {
   /**
    * The display name of this package.
    */
@@ -39,42 +28,22 @@ export const tidyviewerPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '📺(tv) Tidy Viewer is a cross-platform CLI csv pretty printer that uses column styling to maximize viewer enjoyment.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/tidy-viewer/package.yml' as const,
+  description: '' as const,
+  packageYmlUrl: '' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tidy-viewer' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'tidy-viewer',
-  ] as const,
+  installCommand: 'launchpad install crates.io/tidy-viewer' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '1.8.93',
-    '1.8.92',
-    '1.6.5',
-    '1.6.0',
-    '1.5.2',
-  ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
+  versions: [] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tidy-viewer -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tidy-viewer' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/tidy-viewer -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/tidy-viewer' as const,
 }
 
-export type TidyviewerPackage = typeof tidyviewerPackage
+export type CratesiotidyviewerPackage = typeof cratesiotidyviewerPackage
