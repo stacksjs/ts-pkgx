@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-08-14T21:30:48.697Z
+- **Last Updated**: 2025-08-14T22:30:27.380Z
 
 ## Table of Contents
 
@@ -52,7 +52,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[julialang.org](./packages/julialang.org/index.md)** () | The Julia Programming Language | julia | 1.11.6 (+19) | `pkgx julia` |
 | **[lua.org](./packages/lua.org/index.md)** () | Powerful, lightweight programming language | lua, luac | 5.4.8 (+3) | `pkgx lua` |
 | **[luajit.org](./packages/luajit.org/index.md)** () | Mirror of the LuaJIT git repository | luajit, luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;. | 2.1.0 (+0) | `pkgx luajit` |
-| **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 24.5.0 (+146) | `pkgx node` |
+| **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 24.6.0 (+147) | `pkgx node` |
 | **[php.net](./packages/php.net/index.md)** (php) | General-purpose scripting language | pear, pecl, phar, ... (+5) | 8.4.11 (+78) | `pkgx php` |
 | **[python.org](./packages/python.org/index.md)** (py) | The Python programming language | python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace; | 3.13.7 (+152) | `pkgx py` |
 | **[ruby-lang.org](./packages/ruby-lang.org/index.md)** (ruby) | Powerful, clean, object-oriented scripting language | erb, irb, rake, ... (+3) | 3.4.5 (+44) | `pkgx ruby` |
