@@ -3,7 +3,7 @@
  *
  * @domain `freedesktop.org/appstream`
  * @programs `appstreamcli`
- * @version `1.0.5` (3 versions available)
+ * @version `1.0.6` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install appstreamcli`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "appstreamcli"
  * console.log(pkg.description) // "Tools and libraries to work with AppStream meta..."
  * console.log(pkg.programs)    // ["appstreamcli"]
- * console.log(pkg.versions[0]) // "1.0.5" (latest)
+ * console.log(pkg.versions[0]) // "1.0.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/freedesktop-org/appstream.md
@@ -76,6 +76,7 @@ export const appstreamcliPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.0.6',
     '1.0.5',
     '1.0.4',
     '1.0.3',

@@ -3,7 +3,7 @@
  *
  * @domain `gnu.org/emacs`
  * @programs `emacs`
- * @version `30.1.0` (6 versions available)
+ * @version `30.2.0` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install emacs`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "emacs"
  * console.log(pkg.description) // "GNU Emacs text editor"
  * console.log(pkg.programs)    // ["emacs"]
- * console.log(pkg.versions[0]) // "30.1.0" (latest)
+ * console.log(pkg.versions[0]) // "30.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/emacs.md
@@ -76,6 +76,7 @@ export const emacsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '30.2.0',
     '30.1.0',
     '29.4.0',
     '29.3.0',

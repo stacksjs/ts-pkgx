@@ -3,7 +3,7 @@
  *
  * @domain `cedarpolicy.com/cli`
  * @programs `cedar`
- * @version `4.5.0` (35 versions available)
+ * @version `4.5.1` (36 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cedar`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "cedar"
  * console.log(pkg.description) // "Implementation of the Cedar Policy Language"
  * console.log(pkg.programs)    // ["cedar"]
- * console.log(pkg.versions[0]) // "4.5.0" (latest)
+ * console.log(pkg.versions[0]) // "4.5.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cedarpolicy-com/cli.md
@@ -62,6 +62,7 @@ export const cedarPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.5.1',
     '4.5.0',
     '4.4.1',
     '4.4.0',

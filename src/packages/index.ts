@@ -241,7 +241,7 @@ import { srgnPackage } from './crates.io/srgn'
 import { stegoPackage } from './crates.io/stego'
 import { twPackage } from './crates.io/tabiew'
 import { termusicPackage } from './crates.io/termusic'
-import { cratesiotidyviewerPackage } from './crates.io/tidy-viewer'
+import { tidyviewerPackage } from './crates.io/tidy-viewer'
 import { tinyPackage } from './crates.io/tiny'
 import { toastPackage } from './crates.io/toast'
 import { tokeiPackage } from './crates.io/tokei'
@@ -2012,8 +2012,8 @@ export interface Pantry {
   cratesiotabiew: typeof twPackage
 
   cratesiotermusic: typeof termusicPackage
-  tidy_viewer: typeof cratesiotidyviewerPackage
-  cratesiotidyviewer: typeof cratesiotidyviewerPackage
+  tidy_viewer: typeof tidyviewerPackage
+  cratesiotidyviewer: typeof tidyviewerPackage
 
   cratesiotiny: typeof tinyPackage
 
@@ -4650,7 +4650,7 @@ export interface Pantry {
   rtmpdump: typeof rtmpdumpPackage
   topgrade: typeof topgradePackage
   csview: typeof csviewPackage
-  'tidy-viewer': typeof cratesiotidyviewerPackage
+  'tidy-viewer': typeof tidyviewerPackage
   delta: typeof deltaPackage
   tiny: typeof tinyPackage
   'imessage-exporter': typeof imessageexporterPackage
@@ -5824,8 +5824,8 @@ export const pantry: Pantry = {
   cratesiotabiew: twPackage,
 
   cratesiotermusic: termusicPackage,
-  tidy_viewer: cratesiotidyviewerPackage,
-  cratesiotidyviewer: cratesiotidyviewerPackage,
+  tidy_viewer: tidyviewerPackage,
+  cratesiotidyviewer: tidyviewerPackage,
 
   cratesiotiny: tinyPackage,
 
@@ -8462,7 +8462,7 @@ export const pantry: Pantry = {
   rtmpdump: rtmpdumpPackage,
   topgrade: topgradePackage,
   csview: csviewPackage,
-  'tidy-viewer': cratesiotidyviewerPackage,
+  'tidy-viewer': tidyviewerPackage,
   delta: deltaPackage,
   tiny: tinyPackage,
   'imessage-exporter': imessageexporterPackage,
