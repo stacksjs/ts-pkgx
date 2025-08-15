@@ -3,7 +3,7 @@
  *
  * @domain `podman.io`
  * @programs `podman`, `podman-remote`, `podman-mac-helper`
- * @version `5.5.2` (40 versions available)
+ * @version `5.6.0` (41 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install podman`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "podman"
  * console.log(pkg.description) // "Podman: A tool for managing OCI containers and ..."
  * console.log(pkg.programs)    // ["podman", "podman-remote", ...]
- * console.log(pkg.versions[0]) // "5.5.2" (latest)
+ * console.log(pkg.versions[0]) // "5.6.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/podman-io.md
@@ -81,6 +81,7 @@ export const podmanPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '5.6.0',
     '5.5.2',
     '5.5.1',
     '5.5.0',
