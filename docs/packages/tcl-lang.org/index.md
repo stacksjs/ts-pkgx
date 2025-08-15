@@ -27,10 +27,10 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `9.0.2`, `9.0.1`, `9.0.0`, `8.6.16`, `8.6.15`
-- `8.6.14`, `8.6.13`
+- `9.0.2`, `9.0.1`, `9.0.0`, `8.6.17`, `8.6.16`
+- `8.6.15`, `8.6.14`, `8.6.13`
 
 </details>
 

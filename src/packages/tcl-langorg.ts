@@ -3,7 +3,7 @@
  *
  * @domain `tcl-lang.org`
  * @programs `tclsh`, `wish`, `critcl`
- * @version `9.0.2` (7 versions available)
+ * @version `9.0.2` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tcl-lang.org`
@@ -74,6 +74,7 @@ export const tcllangorgPackage = {
     '9.0.2',
     '9.0.1',
     '9.0.0',
+    '8.6.17',
     '8.6.16',
     '8.6.15',
     '8.6.14',
