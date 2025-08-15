@@ -3,7 +3,7 @@
  *
  * @domain `github.com/squidfunk/mkdocs-material`
  * @programs `mkdocs`
- * @version `9.6.16` (64 versions available)
+ * @version `9.6.17` (65 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mkdocs`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "squidfunk/mkdocs-material"
  * console.log(pkg.description) // "Documentation that simply works"
  * console.log(pkg.programs)    // ["mkdocs"]
- * console.log(pkg.versions[0]) // "9.6.16" (latest)
+ * console.log(pkg.versions[0]) // "9.6.17" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/squidfunk/mkdocs-material.md
@@ -71,6 +71,7 @@ export const mkdocsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '9.6.17',
     '9.6.16',
     '9.6.15',
     '9.6.14',
