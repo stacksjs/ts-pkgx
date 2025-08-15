@@ -233,12 +233,37 @@ export function resolvePackageDomain(packageName: PackageName): string | null {
 
   // Check if it's an alias first
   if (nameStr in aliases) {
-    return aliases[nameStr as PackageAlias]
+    const domain = aliases[nameStr as PackageAlias]
+    // Convert domain to the format used in packages (e.g., 'bun.sh' -> 'bunsh')
+    return convertDomainToVarName(domain)
   }
 
-  // For now, assume packageName is a domain if it's not an alias
-  // This will need to be updated once packages are generated
-  return nameStr
+  // Convert the package name to the format used in packages
+  return convertDomainToVarName(nameStr)
+}
+
+/**
+ * Convert domain name to variable name format (same as used in packages)
+ * @param domain Domain name (e.g., 'bun.sh', 'agwa.name/git-crypt')
+ * @returns Variable name (e.g., 'bunsh', 'agwanamegitcrypt')
+ */
+function convertDomainToVarName(domain: string): string {
+  // Handle nested paths like 'github.com/user/repo'
+  if (domain.includes('/')) {
+    const [parentDomain, ...subPathParts] = domain.split('/')
+    const subPath = subPathParts.join('/')
+
+    // Clean the parent domain (remove dots)
+    const cleanParent = parentDomain.replace(/\./g, '')
+
+    // Clean the subpath (remove slashes, hyphens, and special characters)
+    const cleanSubPath = subPath.replace(/[/\-_.]/g, '').toLowerCase()
+
+    return `${cleanParent}${cleanSubPath}`.toLowerCase()
+  }
+
+  // Regular domains like 'bun.sh' -> 'bunsh'
+  return domain.replace(/[.-]/g, '').toLowerCase()
 }
 
 /**
