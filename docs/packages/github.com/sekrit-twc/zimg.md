@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 2 versions</summary>
+<summary>Show all 3 versions</summary>
 
-- `3.0.5`, `3.0.4`
+- `3.0.6`, `3.0.5`, `3.0.4`
 
 </details>
 
-**Latest Version**: `3.0.5`
+**Latest Version**: `3.0.6`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/sekrit-twc/zimg@3.0.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/sekrit-twc/zimg@3.0.6 -- $SHELL -i
 ```
 
 ## Usage Examples

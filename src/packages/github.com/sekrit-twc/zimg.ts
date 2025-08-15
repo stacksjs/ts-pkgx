@@ -2,7 +2,7 @@
  * **github.com/sekrit-twc/zimg** - Scaling, colorspace conversion, and dithering library
  *
  * @domain `github.com/sekrit-twc/zimg`
- * @version `3.0.5` (2 versions available)
+ * @version `3.0.6` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/sekrit-twc/zimg`
@@ -14,7 +14,7 @@
  * const pkg = pantry.githubcomsekrittwczimg
  * console.log(pkg.name)        // "github.com/sekrit-twc/zimg"
  * console.log(pkg.description) // "Scaling, colorspace conversion, and dithering l..."
- * console.log(pkg.versions[0]) // "3.0.5" (latest)
+ * console.log(pkg.versions[0]) // "3.0.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/sekrit-twc/zimg.md
@@ -49,6 +49,7 @@ export const githubcomsekrittwczimgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.0.6',
     '3.0.5',
     '3.0.4',
   ] as const,
