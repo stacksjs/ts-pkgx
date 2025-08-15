@@ -3,7 +3,7 @@
  *
  * @domain `gnome.org/librsvg`
  * @programs `rsvg-convert`
- * @version `2.60.0` (30 versions available)
+ * @version `2.61.0` (31 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rsvg-convert`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "rsvg-convert"
  * console.log(pkg.description) // "Read-only mirror of https://gitlab.gnome.org/GN..."
  * console.log(pkg.programs)    // ["rsvg-convert"]
- * console.log(pkg.versions[0]) // "2.60.0" (latest)
+ * console.log(pkg.versions[0]) // "2.61.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/librsvg.md
@@ -73,6 +73,7 @@ export const rsvgconvertPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.61.0',
     '2.60.0',
     '2.59.2',
     '2.59.1',
