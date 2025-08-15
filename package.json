@@ -1,7 +1,7 @@
 {
   "name": "ts-pkgx",
   "type": "module",
-  "version": "0.4.35",
+  "version": "0.4.36",
   "description": "A library & CLI for managing packages",
   "author": "Chris Breuer <chris@stacksjs.org>",
   "license": "MIT",
@@ -65,7 +65,7 @@
     "lint:fix": "bunx --bun eslint . --fix",
     "fresh": "bunx rimraf node_modules/ bun.lock && bun i",
     "changelog": "bunx changelogen --output CHANGELOG.md",
-    "prepublishOnly": "bun run build && bun run build:cross-platform",
+    "prepublishOnly": "bun run build",
     "release": "bun run release:patch",
     "release:patch": "bun scripts/bump-version.ts patch",
     "release:minor": "bun scripts/bump-version.ts minor",
