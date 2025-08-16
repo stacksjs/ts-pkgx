@@ -538,6 +538,7 @@ export const aliases: Record<string, string> = {
   'libpipeline': 'libpipeline.gitlab.io/libpipeline',
   'libproxy': 'libproxy.github.io/libproxy',
   'libseccomp': 'github.com/seccomp/libseccomp',
+  'libspatialite': 'gaia-gis.it/libspatialite',
   'LibTomMath': 'libtom.net/math',
   'libtool': 'gnu.org/libtool',
   'liburcu': 'liburcu.org',

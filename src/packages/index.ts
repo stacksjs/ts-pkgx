@@ -2276,7 +2276,7 @@ export interface Pantry {
   fxwtf: typeof fxPackage
   freexl: typeof gaiagisitfossilfreexlPackage
   gaiagisitfossil: typeof gaiagisitfossilfreexlPackage
-  libspatialite: typeof gaiagisitlibspatialitePackage
+
   gaiagisitlibspatialite: typeof gaiagisitlibspatialitePackage
   gdalorg: typeof gdalorgPackage
 
@@ -4806,6 +4806,7 @@ export interface Pantry {
   gh: typeof ghPackage
   'jenkins-lts': typeof jenkinsioPackage
   'git-town': typeof gittownPackage
+  libspatialite: typeof gaiagisitlibspatialitePackage
   liburcu: typeof liburcuPackage
   pnpm: typeof pnpmPackage
   nuclei: typeof nucleiPackage
@@ -6088,7 +6089,7 @@ export const pantry: Pantry = {
   fxwtf: fxPackage,
   freexl: gaiagisitfossilfreexlPackage,
   gaiagisitfossil: gaiagisitfossilfreexlPackage,
-  libspatialite: gaiagisitlibspatialitePackage,
+
   gaiagisitlibspatialite: gaiagisitlibspatialitePackage,
   gdalorg: gdalorgPackage,
 
@@ -8618,6 +8619,7 @@ export const pantry: Pantry = {
   gh: ghPackage,
   'jenkins-lts': jenkinsioPackage,
   'git-town': gittownPackage,
+  libspatialite: gaiagisitlibspatialitePackage,
   liburcu: liburcuPackage,
   pnpm: pnpmPackage,
   nuclei: nucleiPackage,
