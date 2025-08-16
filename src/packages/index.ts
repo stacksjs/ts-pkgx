@@ -72,7 +72,7 @@ import { borePackage } from './borepub'
 import { borgPackage } from './borgbackuporg'
 import { rubberbandPackage } from './breakfastquay.com/rubberband'
 import { browserusecomPackage } from './browser-usecom'
-import { dexiosPackage } from './brxken128.github.io/dexios'
+import { brxken128githubiodexiosPackage } from './brxken128.github.io/dexios'
 import { talhelperPackage } from './budimanjojo.github.io/talhelper'
 import { bufPackage } from './bufbuild'
 import { packPackage } from './buildpacksio'
@@ -1708,8 +1708,8 @@ export interface Pantry {
   breakfastquaycomrubberband: typeof rubberbandPackage
   browser_usecom: typeof browserusecomPackage
   browserusecom: typeof browserusecomPackage
-
-  brxken128githubiodexios: typeof dexiosPackage
+  dexios: typeof brxken128githubiodexiosPackage
+  brxken128githubiodexios: typeof brxken128githubiodexiosPackage
 
   budimanjojogithubiotalhelper: typeof talhelperPackage
   bufbuild: typeof bufPackage
@@ -4886,7 +4886,6 @@ export interface Pantry {
   bashly: typeof bashlyPackage
   cask: typeof caskPackage
   mercure: typeof mercurePackage
-  dexios: typeof dexiosPackage
   xmlwf: typeof xmlwfPackage
   poetry: typeof poetryPackage
   'poppler-qt5': typeof popplerqt5Package
@@ -5520,8 +5519,8 @@ export const pantry: Pantry = {
   breakfastquaycomrubberband: rubberbandPackage,
   browser_usecom: browserusecomPackage,
   browserusecom: browserusecomPackage,
-
-  brxken128githubiodexios: dexiosPackage,
+  dexios: brxken128githubiodexiosPackage,
+  brxken128githubiodexios: brxken128githubiodexiosPackage,
 
   budimanjojogithubiotalhelper: talhelperPackage,
   bufbuild: bufPackage,
@@ -8698,7 +8697,6 @@ export const pantry: Pantry = {
   bashly: bashlyPackage,
   cask: caskPackage,
   mercure: mercurePackage,
-  dexios: dexiosPackage,
   xmlwf: xmlwfPackage,
   poetry: poetryPackage,
   'poppler-qt5': popplerqt5Package,
