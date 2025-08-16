@@ -3,7 +3,7 @@
  *
  * @domain `litecli.com`
  * @programs `litecli`
- * @version `1.15.0` (15 versions available)
+ * @version `1.16.0` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install litecli`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "litecli"
  * console.log(pkg.description) // "CLI for SQLite Databases with auto-completion a..."
  * console.log(pkg.programs)    // ["litecli"]
- * console.log(pkg.versions[0]) // "1.15.0" (latest)
+ * console.log(pkg.versions[0]) // "1.16.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/litecli-com.md
@@ -70,6 +70,7 @@ export const litecliPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.16.0',
     '1.15.0',
     '1.14.4',
     '1.14.3',
