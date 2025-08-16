@@ -3,7 +3,7 @@
  *
  * @domain `tcl.tk/tcl`
  * @programs `sqlite3_analyzer`, `tclsh{{version.major}}.{{version.minor}}`, `tclsh`
- * @version `9.0.2` (5 versions available)
+ * @version `9.0.2` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tcl.tk/tcl`
@@ -60,6 +60,7 @@ export const tcltktclPackage = {
   versions: [
     '9.0.2',
     '9.0.1',
+    '8.6.17',
     '8.6.16',
     '8.6.14',
     '8.6.13',
