@@ -1,6 +1,6 @@
 # Editors & IDEs
 
-*7 packages in this category*
+*8 packages in this category*
 
 Packages related to editors & ides.
 
@@ -43,6 +43,16 @@ Command-line interface built-in Visual Studio Code
 **Programs**: code
 
 **Install**: `launchpad install code`
+
+---
+
+### [nano-editor.org](../packages/nano-editor.org/index.md) (nano)
+
+Free (GNU) replacement for the Pico text editor
+
+**Programs**: nano
+
+**Install**: `launchpad install nano`
 
 ---
 

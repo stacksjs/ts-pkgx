@@ -1152,7 +1152,7 @@ import { gofumptPackage } from './mvdan.cc/gofumpt'
 import { shfmtPackage } from './mvdan.cc/sh'
 import { mypylangorgPackage } from './mypy-langorg'
 import { mysqlcomPackage } from './mysqlcom'
-import { nanoeditororgPackage } from './nano-editororg'
+import { nanoPackage } from './nano-editororg'
 import { nasmusPackage } from './nasmus'
 import { nvimPackage } from './neovimio'
 import { vmafPackage } from './netflix.com/vmaf'
@@ -3609,8 +3609,8 @@ export interface Pantry {
   mypy_langorg: typeof mypylangorgPackage
   mypylangorg: typeof mypylangorgPackage
   mysqlcom: typeof mysqlcomPackage
-  nano_editororg: typeof nanoeditororgPackage
-  nanoeditororg: typeof nanoeditororgPackage
+  nano_editororg: typeof nanoPackage
+  nanoeditororg: typeof nanoPackage
   nasmus: typeof nasmusPackage
   neovimio: typeof nvimPackage
 
@@ -4948,6 +4948,7 @@ export interface Pantry {
   'pcsc-lite': typeof pcscdPackage
   pcscd: typeof pcscdPackage
   sniffnet: typeof sniffnetPackage
+  nano: typeof nanoPackage
   edgedb: typeof edgedbPackage
   jbig2dec: typeof jbig2decPackage
   synth: typeof synthPackage
@@ -7420,8 +7421,8 @@ export const pantry: Pantry = {
   mypy_langorg: mypylangorgPackage,
   mypylangorg: mypylangorgPackage,
   mysqlcom: mysqlcomPackage,
-  nano_editororg: nanoeditororgPackage,
-  nanoeditororg: nanoeditororgPackage,
+  nano_editororg: nanoPackage,
+  nanoeditororg: nanoPackage,
   nasmus: nasmusPackage,
   neovimio: nvimPackage,
 
@@ -8759,6 +8760,7 @@ export const pantry: Pantry = {
   'pcsc-lite': pcscdPackage,
   pcscd: pcscdPackage,
   sniffnet: sniffnetPackage,
+  nano: nanoPackage,
   edgedb: edgedbPackage,
   jbig2dec: jbig2decPackage,
   synth: synthPackage,

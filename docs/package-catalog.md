@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1396+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1397+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1396
+- **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-08-17T18:30:36.366Z
+- **Last Updated**: 2025-08-17T19:27:59.554Z
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [Monitoring & Observability](#monitoring-observability) (4 packages)
 - [Build Tools & Automation](#build-tools-automation) (15 packages)
 - [Package Managers](#package-managers) (17 packages)
-- [Editors & IDEs](#editors-ides) (7 packages)
+- [Editors & IDEs](#editors-ides) (8 packages)
 - [CLI Tools & Utilities](#cli-tools-utilities) (35 packages)
 - [Networking](#networking) (9 packages)
 - [Security & Cryptography](#security-cryptography) (12 packages)
@@ -238,7 +238,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Editors & IDEs
 
-*7 packages in this category*
+*8 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -246,6 +246,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gnu.org/emacs](./packages/gnu.org/emacs/index.md)** () | GNU Emacs text editor | emacs | 30.2.0 (+6) | `pkgx emacs` |
 | **[micro-editor.github.io](./packages/micro-editor.github.io/index.md)** () | A modern and intuitive terminal-based text editor | micro | 2.0.14 (+3) | `pkgx micro` |
 | **[microsoft.com/code-cli](./packages/microsoft.com/code-cli/index.md)** (code) | Command-line interface built-in Visual Studio Code | code | 1.103.1 (+20) | `pkgx code` |
+| **[nano-editor.org](./packages/nano-editor.org/index.md)** () | Free (GNU) replacement for the Pico text editor | nano | 8.0.0 (+1) | `pkgx nano` |
 | **[neovim.io](./packages/neovim.io/index.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.3 (+15) | `pkgx nvim` |
 | **[vim.org](./packages/vim.org/index.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1640 (+2208) | `pkgx vi` |
 | **[wezfurlong.org/wezterm](./packages/wezfurlong.org/wezterm/index.md)** () | A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemente... | wezterm | 2024.2.3 (+0) | `pkgx wezterm` |

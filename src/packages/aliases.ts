@@ -626,6 +626,7 @@ export const aliases: Record<string, string> = {
   'mvn': 'maven.apache.org',
   'nak': 'github.com/fiatjaf/nak',
   'names': 'crates.io/names',
+  'nano': 'nano-editor.org',
   'ncdu': 'dev.yorhel.nl/ncdu',
   'neofetch': 'github.com/dylanaraps/neofetch',
   'neon-config': 'notroj.github.io/neon',
