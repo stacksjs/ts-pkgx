@@ -208,6 +208,7 @@ export const aliases: Record<string, string> = {
   'depot': 'depot.dev',
   'device-mapper': 'sourceware.org/dm',
   'devpod': 'devpod.sh/cli',
+  'dexios': 'brxken128.github.io/dexios',
   'dgraph': 'dgraph.io',
   'dhall': 'dhall-lang.org',
   'dialog': 'invisible-island.net/dialog',
