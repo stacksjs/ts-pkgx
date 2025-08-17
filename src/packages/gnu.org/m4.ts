@@ -3,7 +3,7 @@
  *
  * @domain `gnu.org/m4`
  * @programs `m4`
- * @version `1.4.19` (1 versions available)
+ * @version `1.4.20` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install m4`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "m4"
  * console.log(pkg.description) // "GNU M4. Mirror of git://git.savannah.gnu.org/m4..."
  * console.log(pkg.programs)    // ["m4"]
- * console.log(pkg.versions[0]) // "1.4.19" (latest)
+ * console.log(pkg.versions[0]) // "1.4.20" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/m4.md
@@ -62,6 +62,7 @@ export const m4Package = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.4.20',
     '1.4.19',
   ] as const,
   /**
