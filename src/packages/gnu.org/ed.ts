@@ -3,7 +3,7 @@
  *
  * @domain `gnu.org/ed`
  * @programs `ed`
- * @version `1.22.1` (5 versions available)
+ * @version `1.22.2` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ed`
@@ -20,7 +20,7 @@
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "ed"
  * console.log(pkg.programs)    // ["ed"]
- * console.log(pkg.versions[0]) // "1.22.1" (latest)
+ * console.log(pkg.versions[0]) // "1.22.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/ed.md
@@ -61,6 +61,7 @@ export const edPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.22.2',
     '1.22.1',
     '1.21.1',
     '1.20.2',

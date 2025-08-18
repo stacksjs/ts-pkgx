@@ -3,7 +3,7 @@
  *
  * @domain `dgraph.io`
  * @programs `dgraph`
- * @version `24.1.3` (11 versions available)
+ * @version `24.1.4` (12 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dgraph`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "dgraph"
  * console.log(pkg.description) // "high-performance graph database for real-time u..."
  * console.log(pkg.programs)    // ["dgraph"]
- * console.log(pkg.versions[0]) // "24.1.3" (latest)
+ * console.log(pkg.versions[0]) // "24.1.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/dgraph-io.md
@@ -62,6 +62,7 @@ export const dgraphPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '24.1.4',
     '24.1.3',
     '24.1.2',
     '24.1.1',
