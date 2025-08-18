@@ -3,7 +3,7 @@
  *
  * @domain `go.uber.org/mock/mockgen`
  * @programs `mockgen`
- * @version `0.5.2` (5 versions available)
+ * @version `0.6.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mockgen`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "mockgen"
  * console.log(pkg.description) // "GoMock is a mocking framework for the Go progra..."
  * console.log(pkg.programs)    // ["mockgen"]
- * console.log(pkg.versions[0]) // "0.5.2" (latest)
+ * console.log(pkg.versions[0]) // "0.6.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/go-uber-org/mock/mockgen.md
@@ -69,6 +69,7 @@ export const mockgenPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.6.0',
     '0.5.2',
     '0.5.1',
     '0.5.0',
