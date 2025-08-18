@@ -25,15 +25,16 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 15 versions</summary>
+<summary>Show all 16 versions</summary>
 
-- `2.23.4`, `2.23.3`, `2.23.2`, `2.23.1`, `2.23.0`
-- `2.22.2`, `2.22.1`, `2.22.0`, `2.21.0`, `2.20.2`
-- `2.20.1`, `2.20.0`, `2.19.1`, `2.19.0`, `2.18.0`
+- `2.24.0`, `2.23.4`, `2.23.3`, `2.23.2`, `2.23.1`
+- `2.23.0`, `2.22.2`, `2.22.1`, `2.22.0`, `2.21.0`
+- `2.20.2`, `2.20.1`, `2.20.0`, `2.19.1`, `2.19.0`
+- `2.18.0`
 
 </details>
 
-**Latest Version**: `2.23.4`
+**Latest Version**: `2.24.0`
 
 ### Install Specific Version
 
