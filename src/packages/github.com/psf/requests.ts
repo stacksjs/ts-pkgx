@@ -2,7 +2,7 @@
  * **github.com/psf/requests** - A simple, yet elegant, HTTP library.
  *
  * @domain `github.com/psf/requests`
- * @version `2.32.4` (6 versions available)
+ * @version `2.32.5` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/psf/requests`
@@ -15,7 +15,7 @@
  * const pkg = pantry.githubcompsfrequests
  * console.log(pkg.name)        // "github.com/psf/requests"
  * console.log(pkg.description) // "A simple, yet elegant, HTTP library."
- * console.log(pkg.versions[0]) // "2.32.4" (latest)
+ * console.log(pkg.versions[0]) // "2.32.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/psf/requests.md
@@ -60,6 +60,7 @@ export const githubcompsfrequestsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.32.5',
     '2.32.4',
     '2.32.3',
     '2.32.2',

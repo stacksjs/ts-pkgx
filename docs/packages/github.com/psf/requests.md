@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 6 versions</summary>
+<summary>Show all 7 versions</summary>
 
-- `2.32.4`, `2.32.3`, `2.32.2`, `2.32.1`, `2.32.0`
-- `2.31.0`
+- `2.32.5`, `2.32.4`, `2.32.3`, `2.32.2`, `2.32.1`
+- `2.32.0`, `2.31.0`
 
 </details>
 
-**Latest Version**: `2.32.4`
+**Latest Version**: `2.32.5`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/psf/requests@2.32.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/psf/requests@2.32.5 -- $SHELL -i
 ```
 
 ## Dependencies
