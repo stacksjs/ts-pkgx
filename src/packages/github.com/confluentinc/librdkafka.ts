@@ -2,7 +2,7 @@
  * **github.com/confluentinc/librdkafka** - The Apache Kafka C/C++ library
  *
  * @domain `github.com/confluentinc/librdkafka`
- * @version `2.11.0` (13 versions available)
+ * @version `2.11.1` (14 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/confluentinc/librdkafka`
@@ -15,7 +15,7 @@
  * const pkg = pantry.githubcomconfluentinclibrdkafka
  * console.log(pkg.name)        // "github.com/confluentinc/librdkafka"
  * console.log(pkg.description) // "The Apache Kafka C/C++ library"
- * console.log(pkg.versions[0]) // "2.11.0" (latest)
+ * console.log(pkg.versions[0]) // "2.11.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/confluentinc/librdkafka.md
@@ -60,6 +60,7 @@ export const githubcomconfluentinclibrdkafkaPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.11.1',
     '2.11.0',
     '2.10.1',
     '2.10.0',

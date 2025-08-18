@@ -3,7 +3,7 @@
  *
  * @domain `github.com/toy/blueutil`
  * @programs `blueutil`
- * @version `2.12.0` (4 versions available)
+ * @version `2.13.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install blueutil`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "blueutil"
  * console.log(pkg.description) // "CLI for bluetooth on OSX: power, discoverable s..."
  * console.log(pkg.programs)    // ["blueutil"]
- * console.log(pkg.versions[0]) // "2.12.0" (latest)
+ * console.log(pkg.versions[0]) // "2.13.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/toy/blueutil.md
@@ -62,6 +62,7 @@ export const blueutilPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.13.0',
     '2.12.0',
     '2.11.0',
     '2.10.0',
