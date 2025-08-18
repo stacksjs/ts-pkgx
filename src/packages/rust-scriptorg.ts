@@ -3,7 +3,7 @@
  *
  * @domain `rust-script.org`
  * @programs `rust-script`
- * @version `0.35.0` (2 versions available)
+ * @version `0.36.0` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rust-script`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "rust-script"
  * console.log(pkg.description) // "Run Rust files and expressions as scripts witho..."
  * console.log(pkg.programs)    // ["rust-script"]
- * console.log(pkg.versions[0]) // "0.35.0" (latest)
+ * console.log(pkg.versions[0]) // "0.36.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rust-script-org.md
@@ -70,6 +70,7 @@ export const rustscriptPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.36.0',
     '0.35.0',
     '0.34.0',
   ] as const,
