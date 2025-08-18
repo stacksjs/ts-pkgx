@@ -3,7 +3,7 @@
  *
  * @domain `github.com/aws-cloudformation/cfn-lint`
  * @programs `cfn-lint`
- * @version `1.38.3` (155 versions available)
+ * @version `1.39.0` (156 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cfn-lint`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "cfn-lint"
  * console.log(pkg.description) // "Validate CloudFormation templates against the C..."
  * console.log(pkg.programs)    // ["cfn-lint"]
- * console.log(pkg.versions[0]) // "1.38.3" (latest)
+ * console.log(pkg.versions[0]) // "1.39.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/aws-cloudformation/cfn-lint.md
@@ -71,6 +71,7 @@ export const cfnlintPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.39.0',
     '1.38.3',
     '1.38.2',
     '1.38.1',
