@@ -3,7 +3,7 @@
  *
  * @domain `d2lang.com`
  * @programs `d2`
- * @version `0.7.0` (11 versions available)
+ * @version `0.7.1` (12 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install d2`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "d2"
  * console.log(pkg.description) // "D2 is a modern diagram scripting language that ..."
  * console.log(pkg.programs)    // ["d2"]
- * console.log(pkg.versions[0]) // "0.7.0" (latest)
+ * console.log(pkg.versions[0]) // "0.7.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/d2lang-com.md
@@ -62,6 +62,7 @@ export const d2Package = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.7.1',
     '0.7.0',
     '0.6.9',
     '0.6.8',
