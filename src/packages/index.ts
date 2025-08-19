@@ -481,7 +481,7 @@ import { githubcomzouuuplandrunPackage } from './github.com/Zouuup/landrun'
 import { xcresultparserPackage } from './github.com/a7ex/xcresultparser'
 import { rawdogPackage } from './github.com/abanteai/rawdog'
 import { colimaPackage } from './github.com/abiosoft/colima'
-import { githubcomabtreececonfdPackage } from './github.com/abtreece/confd'
+import { confdPackage } from './github.com/abtreece/confd'
 import { tickerPackage } from './github.com/achannarasappa/ticker'
 import { githubcomadah1972libunibreakPackage } from './github.com/adah1972/libunibreak'
 import { fastgronPackage } from './github.com/adamritter/fastgron'
@@ -2419,8 +2419,8 @@ export interface Pantry {
   githubcomabanteai: typeof rawdogPackage
 
   githubcomabiosoft: typeof colimaPackage
-  confd: typeof githubcomabtreececonfdPackage
-  githubcomabtreece: typeof githubcomabtreececonfdPackage
+
+  githubcomabtreece: typeof confdPackage
 
   githubcomachannarasappa: typeof tickerPackage
   libunibreak: typeof githubcomadah1972libunibreakPackage
@@ -5270,7 +5270,7 @@ export interface Pantry {
   csvdiff: typeof csvdiffPackage
   'go-md2man': typeof gomd2manPackage
   sourcekitten: typeof sourcekittenPackage
-  abtreece: typeof githubcomabtreececonfdPackage
+  confd: typeof confdPackage
   stern: typeof sternPackage
   'go-redfish-api-idrac-client': typeof goredfishapiidracclientPackage
   ghq: typeof ghqPackage
@@ -6231,8 +6231,8 @@ export const pantry: Pantry = {
   githubcomabanteai: rawdogPackage,
 
   githubcomabiosoft: colimaPackage,
-  confd: githubcomabtreececonfdPackage,
-  githubcomabtreece: githubcomabtreececonfdPackage,
+
+  githubcomabtreece: confdPackage,
 
   githubcomachannarasappa: tickerPackage,
   libunibreak: githubcomadah1972libunibreakPackage,
@@ -9082,7 +9082,7 @@ export const pantry: Pantry = {
   csvdiff: csvdiffPackage,
   'go-md2man': gomd2manPackage,
   sourcekitten: sourcekittenPackage,
-  abtreece: githubcomabtreececonfdPackage,
+  confd: confdPackage,
   stern: sternPackage,
   'go-redfish-api-idrac-client': goredfishapiidracclientPackage,
   ghq: ghqPackage,
