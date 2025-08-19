@@ -5,6 +5,7 @@
 export const aliases: Record<string, string> = {
   '1Password CLI': 'developer.1password.com/1password-cli',
   'aac-enc': 'sourceforge.net/opencore-amr',
+  'abtreece': 'github.com/abtreece/confd',
   'ack': 'beyondgrep.com',
   'acorn': 'acorn.io/acorn-cli',
   'act': 'github.com/nektos/act',
@@ -158,7 +159,6 @@ export const aliases: Record<string, string> = {
   'composer': 'getcomposer.org',
   'comrak': 'crates.io/comrak',
   'conda': 'conda.org',
-  'confd': 'github.com/abtreece/confd',
   'conform': 'github.com/siderolabs/conform',
   'conftest': 'conftest.dev',
   'consul': 'consul.io',

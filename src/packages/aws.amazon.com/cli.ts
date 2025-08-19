@@ -3,7 +3,7 @@
  *
  * @domain `aws.amazon.com/cli`
  * @programs `aws`
- * @version `2.28.13` (1002 versions available)
+ * @version `2.28.13` (1003 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aws`
@@ -500,6 +500,7 @@ export const awsPackage = {
     '2.11.7',
     '2.10.4',
     '2.10.3',
+    '1.42.13',
     '1.42.12',
     '1.42.11',
     '1.42.10',
