@@ -3,7 +3,7 @@
  *
  * @domain `developer.1password.com/1password-cli`
  * @programs `op`
- * @version `2.31.1` (3 versions available)
+ * @version `2.32.0` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install op`
@@ -20,7 +20,7 @@
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "1Password CLI"
  * console.log(pkg.programs)    // ["op"]
- * console.log(pkg.versions[0]) // "2.31.1" (latest)
+ * console.log(pkg.versions[0]) // "2.32.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/developer-1password-com/1password-cli.md
@@ -61,6 +61,7 @@ export const opPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.32.0',
     '2.31.1',
     '2.31.0',
     '2.30.3',
