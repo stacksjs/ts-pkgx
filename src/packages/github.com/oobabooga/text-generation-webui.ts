@@ -3,7 +3,7 @@
  *
  * @domain `github.com/oobabooga/text-generation-webui`
  * @programs `text-generation-webui`
- * @version `3.10.0` (42 versions available)
+ * @version `3.11.0` (43 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install text-generation-webui`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "text-generation-webui"
  * console.log(pkg.description) // "A Gradio web UI for Large Language Models with ..."
  * console.log(pkg.programs)    // ["text-generation-webui"]
- * console.log(pkg.versions[0]) // "3.10.0" (latest)
+ * console.log(pkg.versions[0]) // "3.11.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/oobabooga/text-generation-webui.md
@@ -70,6 +70,7 @@ export const textgenerationwebuiPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.11.0',
     '3.10.0',
     '3.9.1',
     '3.9.0',
