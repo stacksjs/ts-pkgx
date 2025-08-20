@@ -25,10 +25,10 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
 - `20.3.0`, `20.0.0`, `19.3.0`, `19.2.3`, `19.2.2`
-- `19.2.1`, `18.2.7`, `18.2.6`, `18.2.5`
+- `19.2.1`, `18.2.8`, `18.2.7`, `18.2.6`, `18.2.5`
 
 </details>
 
