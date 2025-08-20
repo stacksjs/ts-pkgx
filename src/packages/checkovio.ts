@@ -3,7 +3,7 @@
  *
  * @domain `checkov.io`
  * @programs `checkov`
- * @version `3.2.463` (495 versions available)
+ * @version `3.2.464` (496 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install checkov`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "checkov"
  * console.log(pkg.description) // "Prevent cloud misconfigurations and find vulner..."
  * console.log(pkg.programs)    // ["checkov"]
- * console.log(pkg.versions[0]) // "3.2.463" (latest)
+ * console.log(pkg.versions[0]) // "3.2.464" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/checkov-io.md
@@ -69,6 +69,7 @@ export const checkovPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.2.464',
     '3.2.463',
     '3.2.462',
     '3.2.461',
