@@ -3,7 +3,7 @@
  *
  * @domain `ziglang.org`
  * @programs `zig`
- * @version `0.14.1` (7 versions available)
+ * @version `0.15.0` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install zig`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "zig"
  * console.log(pkg.description) // "General-purpose programming language and toolch..."
  * console.log(pkg.programs)    // ["zig"]
- * console.log(pkg.versions[0]) // "0.14.1" (latest)
+ * console.log(pkg.versions[0]) // "0.15.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ziglang-org.md
@@ -62,6 +62,7 @@ export const zigPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.15.0',
     '0.14.1',
     '0.14.0',
     '0.13.0',
