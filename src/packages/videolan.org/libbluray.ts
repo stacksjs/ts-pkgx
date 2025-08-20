@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install videolan.org/libbluray`
- * @dependencies `freedesktop.org/fontconfig`, `freetype.org`, `darwin:gnome.org/libxml2` (includes OS-specific dependencies with `os:package` format)
+ * @dependencies `freedesktop.org/fontconfig`, `freetype.org`, `gnome.org/libxml2~2.13 # API changed in 2.14`
  *
  * @example
  * ```typescript
@@ -46,12 +46,11 @@ export const videolanorglibblurayPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
-   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'freedesktop.org/fontconfig',
     'freetype.org',
-    'darwin:gnome.org/libxml2',
+    'gnome.org/libxml2~2.13 # API changed in 2.14',
   ] as const,
   /**
    * Available versions from newest to oldest.

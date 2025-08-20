@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install facebook.com/folly`
- * @dependencies `boost.org`, `gflags.github.io`, `google.com/glog<0.7`, ... (+17 more) (includes OS-specific dependencies with `os:package` format)
+ * @dependencies `boost.org<1.89 # doesn`, `gflags.github.io`, `google.com/glog<0.7`, ... (+17 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -50,7 +50,7 @@ export const facebookcomfollyPackage = {
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'boost.org',
+    'boost.org<1.89 # doesn',
     'gflags.github.io',
     'google.com/glog<0.7',
     'libevent.org',
