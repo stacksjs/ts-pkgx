@@ -33,8 +33,9 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 2222 versions</summary>
+<summary>Show all 2227 versions</summary>
 
+- `9.1.1662`, `9.1.1661`, `9.1.1660`, `9.1.1659`, `9.1.1658`
 - `9.1.1656`, `9.1.1655`, `9.1.1652`, `9.1.1651`, `9.1.1650`
 - `9.1.1649`, `9.1.1648`, `9.1.1646`, `9.1.1645`, `9.1.1644`
 - `9.1.1643`, `9.1.1642`, `9.1.1641`, `9.1.1640`, `9.1.1639`
@@ -483,13 +484,13 @@ This package can also be accessed using these aliases:
 
 </details>
 
-**Latest Version**: `9.1.1656`
+**Latest Version**: `9.1.1662`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +vim.org@9.1.1656 -- $SHELL -i
+sh <(curl https://pkgx.sh) +vim.org@9.1.1662 -- $SHELL -i
 ```
 
 ## Dependencies
