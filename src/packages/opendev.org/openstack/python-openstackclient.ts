@@ -3,7 +3,7 @@
  *
  * @domain `opendev.org/openstack/python-openstackclient`
  * @programs `openstack`, `openstack-inventory`
- * @version `8.1.0` (21 versions available)
+ * @version `8.2.0` (22 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openstack`
@@ -21,7 +21,7 @@
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "openstack"
  * console.log(pkg.programs)    // ["openstack", "openstack-inventory"]
- * console.log(pkg.versions[0]) // "8.1.0" (latest)
+ * console.log(pkg.versions[0]) // "8.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/opendev-org/openstack/python-openstackclient.md
@@ -69,6 +69,7 @@ export const openstackPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '8.2.0',
     '8.1.0',
     '8.0.0',
     '7.5.0',
