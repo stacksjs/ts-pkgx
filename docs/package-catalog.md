@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-08-21T11:31:24.044Z
+- **Last Updated**: 2025-08-21T14:30:29.001Z
 
 ## Table of Contents
 
@@ -120,7 +120,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[ansible.com](./packages/ansible.com/index.md)** () | Ansible is a radically simple IT automation platform that makes your applications and systems eas... | ansible, ansible-config, ansible-connection, ... (+8) | 2.19.0 (+72) | `pkgx ansible` |
-| **[ansible.com/ansible-lint](./packages/ansible.com/ansible-lint/index.md)** () | ansible-lint checks playbooks for practices and behavior that could potentially be improved and c... | ansible-lint | 25.8.1 (+25) | `pkgx ansible-lint` |
+| **[ansible.com/ansible-lint](./packages/ansible.com/ansible-lint/index.md)** () | ansible-lint checks playbooks for practices and behavior that could potentially be improved and c... | ansible-lint | 25.8.2 (+26) | `pkgx ansible-lint` |
 | **[argoproj.github.io/cd](./packages/argoproj.github.io/cd/index.md)** (argocd) | GitOps Continuous Delivery for Kubernetes | argocd | 3.1.0 (+125) | `pkgx argocd` |
 | **[consul.io](./packages/consul.io/index.md)** () | Consul is a distributed, highly available, and data center aware solution to connect and configur... | consul | 1.21.4 (+13) | `pkgx consul` |
 | **[docker.com/cli](./packages/docker.com/cli/index.md)** (docker) | Pack, ship and run any application as a lightweight container | docker | 28.3.3 (+56) | `pkgx docker` |
@@ -143,7 +143,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.6.0 (+40) | `pkgx podman` |
 | **[runatlantis.io](./packages/runatlantis.io/index.md)** () | Terraform Pull Request Automation tool | atlantis | 0.35.1 (+19) | `pkgx atlantis` |
 | **[terraform.io](./packages/terraform.io/index.md)** () | Terraform enables you to safely and predictably create, change, and improve infrastructure. It is... | terraform | 1.13.0 (+75) | `pkgx terraform` |
-| **[terragrunt.gruntwork.io](./packages/terragrunt.gruntwork.io/index.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.85.0 (+365) | `pkgx terragrunt` |
+| **[terragrunt.gruntwork.io](./packages/terragrunt.gruntwork.io/index.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.85.1 (+366) | `pkgx terragrunt` |
 | **[terratag.io](./packages/terratag.io/index.md)** () | Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags ... | terratag | 0.7.3 (+18) | `pkgx terratag` |
 | **[vaultproject.io](./packages/vaultproject.io/index.md)** () | A tool for secrets management, encryption as a service, and privileged access management | vault | 1.20.2 (+58) | `pkgx vault` |
 

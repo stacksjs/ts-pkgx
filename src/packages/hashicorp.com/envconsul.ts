@@ -3,7 +3,7 @@
  *
  * @domain `hashicorp.com/envconsul`
  * @programs `envconsul`
- * @version `0.13.3` (2 versions available)
+ * @version `0.13.4` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install envconsul`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "envconsul"
  * console.log(pkg.description) // "Launch a subprocess with environment variables ..."
  * console.log(pkg.programs)    // ["envconsul"]
- * console.log(pkg.versions[0]) // "0.13.3" (latest)
+ * console.log(pkg.versions[0]) // "0.13.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/hashicorp-com/envconsul.md
@@ -62,6 +62,7 @@ export const envconsulPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.13.4',
     '0.13.3',
     '0.13.2',
   ] as const,
