@@ -3,7 +3,7 @@
  *
  * @domain `libgeos.org`
  * @programs `geos-config`
- * @version `3.13.1` (15 versions available)
+ * @version `3.14.0` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install geos-config`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "geos-config"
  * console.log(pkg.description) // "Geometry Engine, Open Source"
  * console.log(pkg.programs)    // ["geos-config"]
- * console.log(pkg.versions[0]) // "3.13.1" (latest)
+ * console.log(pkg.versions[0]) // "3.14.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libgeos-org.md
@@ -62,6 +62,7 @@ export const geosconfigPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.14.0',
     '3.13.1',
     '3.13.0',
     '3.12.3',
