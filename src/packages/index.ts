@@ -3171,7 +3171,7 @@ export interface Pantry {
   gnuorgm4: typeof m4Package
 
   gnuorgmake: typeof makePackage
-
+  mpc: typeof gnuorgmpcPackage
   gnuorgmpc: typeof gnuorgmpcPackage
   mpfr: typeof gnuorgmpfrPackage
   gnuorgmpfr: typeof gnuorgmpfrPackage
@@ -5044,7 +5044,6 @@ export interface Pantry {
   bash: typeof bashPackage
   make: typeof makePackage
   gdbm: typeof gdbmPackage
-  mpc: typeof gnuorgmpcPackage
   fribidi: typeof fribidiPackage
   emacs: typeof emacsPackage
   gperf: typeof gperfPackage
@@ -6984,7 +6983,7 @@ export const pantry: Pantry = {
   gnuorgm4: m4Package,
 
   gnuorgmake: makePackage,
-
+  mpc: gnuorgmpcPackage,
   gnuorgmpc: gnuorgmpcPackage,
   mpfr: gnuorgmpfrPackage,
   gnuorgmpfr: gnuorgmpfrPackage,
@@ -8857,7 +8856,6 @@ export const pantry: Pantry = {
   bash: bashPackage,
   make: makePackage,
   gdbm: gdbmPackage,
-  mpc: gnuorgmpcPackage,
   fribidi: fribidiPackage,
   emacs: emacsPackage,
   gperf: gperfPackage,

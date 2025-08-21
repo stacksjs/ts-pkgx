@@ -617,7 +617,6 @@ export const aliases: Record<string, string> = {
   'moon': 'moonrepo.dev/moon',
   'mop': 'github.com/mop-tracker/mop',
   'mosh': 'mosh.org',
-  'mpc': 'gnu.org/mpc',
   'mpg123': 'mpg123.de',
   'mprocs': 'crates.io/mprocs',
   'mpv': 'mpv.io',
