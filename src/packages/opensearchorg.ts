@@ -3,7 +3,7 @@
  *
  * @domain `opensearch.org`
  * @programs `opensearch`, `opensearch-keystore`, `opensearch-plugin`, `opensearch-shard`
- * @version `3.0.0` (12 versions available)
+ * @version `3.0.0` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install opensearch`
@@ -75,6 +75,7 @@ export const opensearchPackage = {
   versions: [
     '3.0.0',
     '2.19.3',
+    '2.19.2',
     '2.19.1',
     '2.18.0',
     '2.17.1',
