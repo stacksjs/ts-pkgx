@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-08-22T16:30:42.876Z
+- **Last Updated**: 2025-08-22T17:28:57.037Z
 
 ## Table of Contents
 
@@ -248,7 +248,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[microsoft.com/code-cli](./packages/microsoft.com/code-cli/index.md)** (code) | Command-line interface built-in Visual Studio Code | code | 1.103.2 (+21) | `pkgx code` |
 | **[nano-editor.org](./packages/nano-editor.org/index.md)** () | Free (GNU) replacement for the Pico text editor | nano | 8.0.0 (+1) | `pkgx nano` |
 | **[neovim.io](./packages/neovim.io/index.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.3 (+15) | `pkgx nvim` |
-| **[vim.org](./packages/vim.org/index.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1663 (+2227) | `pkgx vi` |
+| **[vim.org](./packages/vim.org/index.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1665 (+2229) | `pkgx vi` |
 | **[wezfurlong.org/wezterm](./packages/wezfurlong.org/wezterm/index.md)** () | A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemente... | wezterm | 2024.2.3 (+0) | `pkgx wezterm` |
 
 ## CLI Tools & Utilities
@@ -300,7 +300,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[apache.org/httpd](./packages/apache.org/httpd/index.md)** () | Apache HTTP server | ab, apachectl, checkgid, ... (+10) | 2.4.65 (+8) | `pkgx apache.org/httpd` |
-| **[caddyserver.com](./packages/caddyserver.com/index.md)** () | Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS | caddy | 2.10.0 (+9) | `pkgx caddy` |
+| **[caddyserver.com](./packages/caddyserver.com/index.md)** () | Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS | caddy | 2.10.1 (+10) | `pkgx caddy` |
 | **[cloudflare.com/cloudflared](./packages/cloudflare.com/cloudflared/index.md)** () | Cloudflare Tunnel client (formerly Argo Tunnel) | cloudflared | 2025.8.1 (+30) | `pkgx cloudflared` |
 | **[curl.se](./packages/curl.se/index.md)** (curl) | A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP... | curl, curl-config | 8.15.0 (+25) | `pkgx curl` |
 | **[gnu.org/wget](./packages/gnu.org/wget/index.md)** () | Internet file retriever | wget | 1.25.0 (+3) | `pkgx wget` |
