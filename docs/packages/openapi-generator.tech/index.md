@@ -25,15 +25,15 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 13 versions</summary>
+<summary>Show all 14 versions</summary>
 
-- `7.14.0`, `7.13.0`, `7.12.0`, `7.11.0`, `7.10.0`
-- `7.9.0`, `7.8.0`, `7.7.0`, `7.6.0`, `7.5.0`
-- `7.4.0`, `7.3.0`, `7.2.0`
+- `7.15.0`, `7.14.0`, `7.13.0`, `7.12.0`, `7.11.0`
+- `7.10.0`, `7.9.0`, `7.8.0`, `7.7.0`, `7.6.0`
+- `7.5.0`, `7.4.0`, `7.3.0`, `7.2.0`
 
 </details>
 
-**Latest Version**: `7.14.0`
+**Latest Version**: `7.15.0`
 
 ### Install Specific Version
 
