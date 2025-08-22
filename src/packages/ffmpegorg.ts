@@ -3,7 +3,7 @@
  *
  * @domain `ffmpeg.org`
  * @programs `ffmpeg`, `ffplay`, `ffprobe`
- * @version `7.1.1` (27 versions available)
+ * @version `8.0.0` (28 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ffmpeg.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "ffmpeg.org"
  * console.log(pkg.description) // "Play, record, convert, and stream audio and video"
  * console.log(pkg.programs)    // ["ffmpeg", "ffplay", ...]
- * console.log(pkg.versions[0]) // "7.1.1" (latest)
+ * console.log(pkg.versions[0]) // "8.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ffmpeg-org.md
@@ -74,6 +74,7 @@ export const ffmpegorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '8.0.0',
     '7.1.1',
     '7.1.0',
     '7.0.3',
