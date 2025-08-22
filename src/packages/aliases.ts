@@ -946,7 +946,7 @@ export const aliases: Record<string, string> = {
   'swift-sh': 'github.com/mxcl/swift-sh',
   'swiftenv': 'github.com/kylef/swiftenv',
   'swiftformat': 'github.com/nicklockwood/SwiftFormat',
-  'swiftgen': 'github.com/SwiftGen/SwiftGen',
+  'SwiftGen': 'github.com/SwiftGen/SwiftGen',
   'swiftlint': 'github.com/realm/SwiftLint',
   'syft': 'anchore.com/syft',
   'symfony': 'symfony.com',

@@ -466,7 +466,7 @@ import { tinePackage } from './github.com/OutOfBedlam/tine'
 import { argon2Package } from './github.com/P-H-C/phc-winner-argon2'
 import { githubcompjklibcborPackage } from './github.com/PJK/libcbor'
 import { par2Package } from './github.com/Parchive/par2cmdline'
-import { swiftgenPackage } from './github.com/SwiftGen/SwiftGen'
+import { githubcomswiftgenswiftgenPackage } from './github.com/SwiftGen/SwiftGen'
 import { githubcomtartanllamaexpectedPackage } from './github.com/TartanLlama/expected'
 import { daselPackage } from './github.com/TomWright/dasel'
 import { saml2awsPackage } from './github.com/Versent/saml2aws'
@@ -2389,8 +2389,8 @@ export interface Pantry {
   githubcompjk: typeof githubcompjklibcborPackage
   par2cmdline: typeof par2Package
   githubcomparchive: typeof par2Package
-  SwiftGen: typeof swiftgenPackage
-  githubcomswiftgen: typeof swiftgenPackage
+
+  githubcomswiftgen: typeof githubcomswiftgenswiftgenPackage
   expected: typeof githubcomtartanllamaexpectedPackage
   githubcomtartanllama: typeof githubcomtartanllamaexpectedPackage
 
@@ -5190,7 +5190,7 @@ export interface Pantry {
   vfkit: typeof vfkitPackage
   thefuck: typeof thefuckPackage
   redis_tui: typeof redistuiPackage
-  swiftgen: typeof swiftgenPackage
+  SwiftGen: typeof githubcomswiftgenswiftgenPackage
   yabai: typeof yabaiPackage
   skhd: typeof skhdPackage
   kcat: typeof kcatPackage
@@ -6201,8 +6201,8 @@ export const pantry: Pantry = {
   githubcompjk: githubcompjklibcborPackage,
   par2cmdline: par2Package,
   githubcomparchive: par2Package,
-  SwiftGen: swiftgenPackage,
-  githubcomswiftgen: swiftgenPackage,
+
+  githubcomswiftgen: githubcomswiftgenswiftgenPackage,
   expected: githubcomtartanllamaexpectedPackage,
   githubcomtartanllama: githubcomtartanllamaexpectedPackage,
 
@@ -9002,7 +9002,7 @@ export const pantry: Pantry = {
   vfkit: vfkitPackage,
   thefuck: thefuckPackage,
   redis_tui: redistuiPackage,
-  swiftgen: swiftgenPackage,
+  SwiftGen: githubcomswiftgenswiftgenPackage,
   yabai: yabaiPackage,
   skhd: skhdPackage,
   kcat: kcatPackage,
