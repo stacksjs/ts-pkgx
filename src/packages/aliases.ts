@@ -425,6 +425,7 @@ export const aliases: Record<string, string> = {
   'heroku': 'heroku.com',
   'hexedit': 'rigaux.org/hexedit',
   'himalaya': 'pimalaya.org/himalaya',
+  'hiredis': 'github.com/redis/hiredis',
   'hjson': 'hjson.github.io',
   'horcrux': 'github.com/jesseduffield/horcrux',
   'htop': 'htop.dev',
