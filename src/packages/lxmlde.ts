@@ -2,7 +2,7 @@
  * **lxml.de** - The lxml XML toolkit for Python
  *
  * @domain `lxml.de`
- * @version `6.0.0` (15 versions available)
+ * @version `6.0.1` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install lxml.de`
@@ -15,7 +15,7 @@
  * const pkg = pantry.lxmlde
  * console.log(pkg.name)        // "lxml.de"
  * console.log(pkg.description) // "The lxml XML toolkit for Python"
- * console.log(pkg.versions[0]) // "6.0.0" (latest)
+ * console.log(pkg.versions[0]) // "6.0.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/lxml-de.md
@@ -58,6 +58,7 @@ export const lxmldePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '6.0.1',
     '6.0.0',
     '5.4.0',
     '5.3.2',

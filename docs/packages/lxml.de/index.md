@@ -25,21 +25,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 15 versions</summary>
+<summary>Show all 16 versions</summary>
 
-- `6.0.0`, `5.4.0`, `5.3.2`, `5.3.1`, `5.3.0`
-- `5.2.2`, `5.2.1`, `5.2.0`, `5.1.1`, `5.1.0`
-- `5.0.2`, `5.0.1`, `5.0.0`, `4.9.4`, `4.9.3`
+- `6.0.1`, `6.0.0`, `5.4.0`, `5.3.2`, `5.3.1`
+- `5.3.0`, `5.2.2`, `5.2.1`, `5.2.0`, `5.1.1`
+- `5.1.0`, `5.0.2`, `5.0.1`, `5.0.0`, `4.9.4`
+- `4.9.3`
 
 </details>
 
-**Latest Version**: `6.0.0`
+**Latest Version**: `6.0.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +lxml.de@6.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +lxml.de@6.0.1 -- $SHELL -i
 ```
 
 ## Dependencies
