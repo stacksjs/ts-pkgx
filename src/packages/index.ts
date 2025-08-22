@@ -718,7 +718,7 @@ import { pylspPackage } from './github.com/python-lsp/python-lsp-server'
 import { githubcomquodlibetmutagenPackage } from './github.com/quodlibet/mutagen'
 import { rbenvPackage } from './github.com/rbenv/rbenv'
 import { swiftlintPackage } from './github.com/realm/SwiftLint'
-import { hiredisPackage } from './github.com/redis/hiredis'
+import { githubcomredishiredisPackage } from './github.com/redis/hiredis'
 import { regbotPackage } from './github.com/regclient/regclient/regbot'
 import { regctlPackage } from './github.com/regclient/regclient/regctl'
 import { regsyncPackage } from './github.com/regclient/regclient/regsync'
@@ -2893,8 +2893,8 @@ export interface Pantry {
   githubcomrbenv: typeof rbenvPackage
   SwiftLint: typeof swiftlintPackage
   githubcomrealm: typeof swiftlintPackage
-
-  githubcomredis: typeof hiredisPackage
+  hiredis: typeof githubcomredishiredisPackage
+  githubcomredis: typeof githubcomredishiredisPackage
 
   githubcomregclient: typeof regbotPackage
 
@@ -5219,7 +5219,6 @@ export interface Pantry {
   pike: typeof pikePackage
   asciidoc: typeof asciidocPackage
   black: typeof blackPackage
-  hiredis: typeof hiredisPackage
   'SquashFS-Tools': typeof squashFSToolsPackage
   rawdog: typeof rawdogPackage
   'docker-clean': typeof dockercleanPackage
@@ -6705,8 +6704,8 @@ export const pantry: Pantry = {
   githubcomrbenv: rbenvPackage,
   SwiftLint: swiftlintPackage,
   githubcomrealm: swiftlintPackage,
-
-  githubcomredis: hiredisPackage,
+  hiredis: githubcomredishiredisPackage,
+  githubcomredis: githubcomredishiredisPackage,
 
   githubcomregclient: regbotPackage,
 
@@ -9031,7 +9030,6 @@ export const pantry: Pantry = {
   pike: pikePackage,
   asciidoc: asciidocPackage,
   black: blackPackage,
-  hiredis: hiredisPackage,
   'SquashFS-Tools': squashFSToolsPackage,
   rawdog: rawdogPackage,
   'docker-clean': dockercleanPackage,
