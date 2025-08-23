@@ -1425,7 +1425,7 @@ import { streamlinkPackage } from './streamlinkgithubio'
 import { stripePackage } from './stripecom'
 import { supabasePackage } from './supabase.com/cli'
 import { surrealPackage } from './surrealdbcom'
-import { genactPackage } from './svenstaro.github.io/genact'
+import { svenstarogithubiogenactPackage } from './svenstaro.github.io/genact'
 import { swaggercodegenPackage } from './swagger.io/swagger-codegen'
 import { swiftPackage } from './swiftorg'
 import { swigorgPackage } from './swigorg'
@@ -4014,7 +4014,7 @@ export interface Pantry {
   supabasecomcli: typeof supabasePackage
   surrealdbcom: typeof surrealPackage
 
-  svenstarogithubiogenact: typeof genactPackage
+  svenstarogithubiogenact: typeof svenstarogithubiogenactPackage
   swagger_codegen: typeof swaggercodegenPackage
   swaggerioswaggercodegen: typeof swaggercodegenPackage
   swiftorg: typeof swiftPackage
@@ -4308,7 +4308,7 @@ export interface Pantry {
   trufflehog: typeof trufflehogPackage
   fend: typeof fendPackage
   'sfcgal-config': typeof sfcgalconfigPackage
-  genact: typeof genactPackage
+  genact: typeof svenstarogithubiogenactPackage
   opa: typeof opaPackage
   pscale: typeof pscalePackage
   postgrest: typeof postgrestPackage
@@ -7826,7 +7826,7 @@ export const pantry: Pantry = {
   supabasecomcli: supabasePackage,
   surrealdbcom: surrealPackage,
 
-  svenstarogithubiogenact: genactPackage,
+  svenstarogithubiogenact: svenstarogithubiogenactPackage,
   swagger_codegen: swaggercodegenPackage,
   swaggerioswaggercodegen: swaggercodegenPackage,
   swiftorg: swiftPackage,
@@ -8120,7 +8120,7 @@ export const pantry: Pantry = {
   trufflehog: trufflehogPackage,
   fend: fendPackage,
   'sfcgal-config': sfcgalconfigPackage,
-  genact: genactPackage,
+  genact: svenstarogithubiogenactPackage,
   opa: opaPackage,
   pscale: pscalePackage,
   postgrest: postgrestPackage,
