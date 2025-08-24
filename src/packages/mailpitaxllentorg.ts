@@ -3,7 +3,7 @@
  *
  * @domain `mailpit.axllent.org`
  * @programs `mailpit`
- * @version `1.27.5` (74 versions available)
+ * @version `1.27.6` (75 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mailpit`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "mailpit"
  * console.log(pkg.description) // "An email and SMTP testing tool with API for dev..."
  * console.log(pkg.programs)    // ["mailpit"]
- * console.log(pkg.versions[0]) // "1.27.5" (latest)
+ * console.log(pkg.versions[0]) // "1.27.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mailpit-axllent-org.md
@@ -70,6 +70,7 @@ export const mailpitPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.27.6',
     '1.27.5',
     '1.27.4',
     '1.27.3',
