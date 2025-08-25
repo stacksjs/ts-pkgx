@@ -433,7 +433,7 @@ import { avifPackage } from './github.com/AOMediaCodec/libavif'
 import { stablediffusionwebuiPackage } from './github.com/AUTOMATIC1111/stable-diffusion-webui'
 import { squashfstoolsngPackage } from './github.com/AgentD/squashfs-tools-ng'
 import { githubcomaldanialclocPackage } from './github.com/AlDanial/cloc'
-import { githubcomantonosikagptengineerPackage } from './github.com/AntonOsika/gpt-engineer'
+import { gPTEngineerPackage } from './github.com/AntonOsika/gpt-engineer'
 import { teapackagebuilderPackage } from './github.com/ArionThinker/tea-package-builder'
 import { carthagePackage } from './github.com/Carthage/Carthage'
 import { xcparsePackage } from './github.com/ChargePoint/xcparse'
@@ -2323,8 +2323,8 @@ export interface Pantry {
   githubcomagentd: typeof squashfstoolsngPackage
   cloc: typeof githubcomaldanialclocPackage
   githubcomaldanial: typeof githubcomaldanialclocPackage
-  gpt_engineer: typeof githubcomantonosikagptengineerPackage
-  githubcomantonosika: typeof githubcomantonosikagptengineerPackage
+  gpt_engineer: typeof gPTEngineerPackage
+  githubcomantonosika: typeof gPTEngineerPackage
   tea_package_builder: typeof teapackagebuilderPackage
   githubcomarionthinker: typeof teapackagebuilderPackage
   Carthage: typeof carthagePackage
@@ -5310,6 +5310,7 @@ export interface Pantry {
   xcodegen: typeof xcodegenPackage
   mint: typeof mintPackage
   ifacemaker: typeof ifacemakerPackage
+  'GPT Engineer': typeof gPTEngineerPackage
   fzf: typeof fzfPackage
   act: typeof actPackage
   periphery: typeof peripheryPackage
@@ -6134,8 +6135,8 @@ export const pantry: Pantry = {
   githubcomagentd: squashfstoolsngPackage,
   cloc: githubcomaldanialclocPackage,
   githubcomaldanial: githubcomaldanialclocPackage,
-  gpt_engineer: githubcomantonosikagptengineerPackage,
-  githubcomantonosika: githubcomantonosikagptengineerPackage,
+  gpt_engineer: gPTEngineerPackage,
+  githubcomantonosika: gPTEngineerPackage,
   tea_package_builder: teapackagebuilderPackage,
   githubcomarionthinker: teapackagebuilderPackage,
   Carthage: carthagePackage,
@@ -9121,6 +9122,7 @@ export const pantry: Pantry = {
   xcodegen: xcodegenPackage,
   mint: mintPackage,
   ifacemaker: ifacemakerPackage,
+  'GPT Engineer': gPTEngineerPackage,
   fzf: fzfPackage,
   act: actPackage,
   periphery: peripheryPackage,
