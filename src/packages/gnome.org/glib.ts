@@ -8,7 +8,6 @@
  *
  * @install `launchpad install gnome.org/glib`
  * @dependencies `gnu.org/gettext^0.21`, `sourceware.org/libffi@3`, `pcre.org@8`, ... (+2 more)
- * @companions `gnome.org/gsettings-desktop-schemas`
  *
  * @example
  * ```typescript
@@ -65,13 +64,7 @@ export const gnomeorgglibPackage = {
     'gtester',
     'gtester-report',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'gnome.org/gsettings-desktop-schemas',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

@@ -2,7 +2,7 @@
  * **sf.net/libtirpc** - pkgx package
  *
  * @domain `sourceforge.net/libtirpc`
- * @version `1.3.6` (4 versions available)
+ * @version `1.3.7` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sourceforge.net/libtirpc`
@@ -19,7 +19,7 @@
  * const samePkg = pantry.sourceforgenetlibtirpc
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "sf.net/libtirpc"
- * console.log(pkg.versions[0]) // "1.3.6" (latest)
+ * console.log(pkg.versions[0]) // "1.3.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sourceforge-net/libtirpc.md
@@ -60,6 +60,7 @@ export const sfnetlibtirpcPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.3.7',
     '1.3.6',
     '1.3.5',
     '1.3.4',

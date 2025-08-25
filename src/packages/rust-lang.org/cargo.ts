@@ -9,7 +9,6 @@
  * @install `launchpad install cargo`
  * @name `cargo`
  * @dependencies `zlib.net^1`, `libgit2.org~1.7 # links to libgit2.so.1.7`, `curl.se/ca-certs`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
- * @companions `git-scm.org`, `rust-lang.org`
  *
  * @example
  * ```typescript
@@ -57,14 +56,7 @@ export const cargoPackage = {
   programs: [
     'cargo',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'git-scm.org',
-    'rust-lang.org',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

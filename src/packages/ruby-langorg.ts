@@ -9,7 +9,6 @@
  * @install `launchpad install ruby-lang.org`
  * @aliases `ruby`
  * @dependencies `openssl.org^1.1`, `pyyaml.org^0.2`, `zlib.net^1`
- * @companions `rubygems.org`
  *
  * @example
  * ```typescript
@@ -62,13 +61,7 @@ export const rubyPackage = {
     'ri',
     'ruby',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'rubygems.org',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

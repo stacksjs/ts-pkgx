@@ -72,12 +72,6 @@ This package depends on:
 - `pcre.org/v2@10`
 - `python.org^3 # several of the bins are scripts`
 
-## Related Packages
-
-These packages work well with gnome.org/glib:
-
-- [`gnome.org/gsettings-desktop-schemas`](../gsettings-desktop-schemas/index.md)
-
 ## Usage Examples
 
 ```typescript
