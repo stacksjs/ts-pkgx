@@ -38,7 +38,7 @@ if (!cliResult.success) {
 }
 
 // Add shebang to CLI for proper execution
-const fs = await import('fs')
+const fs = await import('node:fs')
 const cliPath = './dist/bin/cli.js'
 if (fs.existsSync(cliPath)) {
   const cliContent = fs.readFileSync(cliPath, 'utf8')
