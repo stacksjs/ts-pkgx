@@ -3,7 +3,7 @@
  *
  * @domain `iroh.computer`
  * @programs `iroh`
- * @version `0.91.0` (37 versions available)
+ * @version `0.91.2` (39 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install iroh`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "iroh"
  * console.log(pkg.description) // "peer-2-peer that just works"
  * console.log(pkg.programs)    // ["iroh"]
- * console.log(pkg.versions[0]) // "0.91.0" (latest)
+ * console.log(pkg.versions[0]) // "0.91.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/iroh-computer.md
@@ -62,6 +62,8 @@ export const irohPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.91.2',
+    '0.91.1',
     '0.91.0',
     '0.90.0',
     '0.35.0',
