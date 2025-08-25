@@ -2,7 +2,7 @@
  * **python.org/typing_extensions** - Backported and experimental type hints for Python
  *
  * @domain `python.org/typing_extensions`
- * @version `4.14.1` (12 versions available)
+ * @version `4.15.0` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install python.org/typing_extensions`
@@ -14,7 +14,7 @@
  * const pkg = pantry.pythonorgtyping_extensions
  * console.log(pkg.name)        // "python.org/typing_extensions"
  * console.log(pkg.description) // "Backported and experimental type hints for Python"
- * console.log(pkg.versions[0]) // "4.14.1" (latest)
+ * console.log(pkg.versions[0]) // "4.15.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/python-org/typing_extensions.md
@@ -49,6 +49,7 @@ export const pythonorgtyping_extensionsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.15.0',
     '4.14.1',
     '4.14.0',
     '4.13.2',

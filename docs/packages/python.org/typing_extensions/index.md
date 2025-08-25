@@ -25,21 +25,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 12 versions</summary>
+<summary>Show all 13 versions</summary>
 
-- `4.14.1`, `4.14.0`, `4.13.2`, `4.13.1`, `4.13.0`
-- `4.12.2`, `4.12.1`, `4.12.0`, `4.11.0`, `4.10.0`
-- `4.9.0`, `4.8.0`
+- `4.15.0`, `4.14.1`, `4.14.0`, `4.13.2`, `4.13.1`
+- `4.13.0`, `4.12.2`, `4.12.1`, `4.12.0`, `4.11.0`
+- `4.10.0`, `4.9.0`, `4.8.0`
 
 </details>
 
-**Latest Version**: `4.14.1`
+**Latest Version**: `4.15.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +python.org/typing_extensions@4.14.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +python.org/typing_extensions@4.15.0 -- $SHELL -i
 ```
 
 ## Usage Examples
