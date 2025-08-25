@@ -1,6 +1,6 @@
 # Artificial Intelligence
 
-*14 packages in this category*
+*13 packages in this category*
 
 Packages related to artificial intelligence.
 
@@ -43,16 +43,6 @@ Autonomous agents for everyone
 **Programs**: eliza
 
 **Install**: `launchpad install eliza`
-
----
-
-### [github.com/AntonOsika/gpt-engineer](../packages/github.com/AntonOsika/gpt-engineer.md) (GPT Engineer)
-
-Platform to experiment with the AI Software Engineer. Terminal based. NOTE: Very different from https://gptengineer.app
-
-**Programs**: gpte, gpt-engineer
-
-**Install**: `launchpad install github.com/AntonOsika/gpt-engineer`
 
 ---
 
