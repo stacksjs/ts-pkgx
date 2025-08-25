@@ -3,7 +3,7 @@
  *
  * @domain `github.com/linux-test-project/lcov`
  * @programs `lcov`, `geninfo`, `genhtml`, `gendesc`, `genpng`
- * @version `2.3.1` (4 versions available)
+ * @version `2.3.2` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/linux-test-project/lcov`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "github.com/linux-test-project/lcov"
  * console.log(pkg.description) // "Graphical front-end for GCC's coverage testing ..."
  * console.log(pkg.programs)    // ["lcov", "geninfo", ...]
- * console.log(pkg.versions[0]) // "2.3.1" (latest)
+ * console.log(pkg.versions[0]) // "2.3.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/linux-test-project/lcov.md
@@ -76,6 +76,7 @@ export const githubcomlinuxtestprojectlcovPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.3.2',
     '2.3.1',
     '2.3.0',
     '2.2.0',

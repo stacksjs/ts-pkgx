@@ -29,19 +29,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `2.3.1`, `2.3.0`, `2.2.0`, `1.16.0`
+- `2.3.2`, `2.3.1`, `2.3.0`, `2.2.0`, `1.16.0`
 
 </details>
 
-**Latest Version**: `2.3.1`
+**Latest Version**: `2.3.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/linux-test-project/lcov@2.3.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/linux-test-project/lcov@2.3.2 -- $SHELL -i
 ```
 
 ## Dependencies

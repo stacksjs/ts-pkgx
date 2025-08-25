@@ -239,7 +239,7 @@ import { spotifyplayerPackage } from './crates.io/spotify_player'
 import { cratesiosqlxcliPackage } from './crates.io/sqlx-cli'
 import { srgnPackage } from './crates.io/srgn'
 import { stegoPackage } from './crates.io/stego'
-import { twPackage } from './crates.io/tabiew'
+import { cratesiotabiewPackage } from './crates.io/tabiew'
 import { termusicPackage } from './crates.io/termusic'
 import { tidyviewerPackage } from './crates.io/tidy-viewer'
 import { tinyPackage } from './crates.io/tiny'
@@ -2008,8 +2008,8 @@ export interface Pantry {
   cratesiosrgn: typeof srgnPackage
 
   cratesiostego: typeof stegoPackage
-  tabiew: typeof twPackage
-  cratesiotabiew: typeof twPackage
+  tabiew: typeof cratesiotabiewPackage
+  cratesiotabiew: typeof cratesiotabiewPackage
 
   cratesiotermusic: typeof termusicPackage
   tidy_viewer: typeof tidyviewerPackage
@@ -5820,8 +5820,8 @@ export const pantry: Pantry = {
   cratesiosrgn: srgnPackage,
 
   cratesiostego: stegoPackage,
-  tabiew: twPackage,
-  cratesiotabiew: twPackage,
+  tabiew: cratesiotabiewPackage,
+  cratesiotabiew: cratesiotabiewPackage,
 
   cratesiotermusic: termusicPackage,
   tidy_viewer: tidyviewerPackage,
