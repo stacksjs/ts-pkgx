@@ -8,6 +8,7 @@
  *
  * @install `launchpad install hdfgroup.org/HDF5`
  * @dependencies `dkrz.de/libaec@1`, `linux:zlib.net@1` (includes OS-specific dependencies with `os:package` format)
+ * @companions `gnu.org/gcc`
  *
  * @example
  * ```typescript
@@ -70,7 +71,13 @@ export const hdfgrouporghdf5Package = {
     'h5unjam',
     'h5watch',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'gnu.org/gcc',
+  ] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

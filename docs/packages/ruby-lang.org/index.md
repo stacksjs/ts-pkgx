@@ -67,6 +67,12 @@ This package depends on:
 - `pyyaml.org^0.2`
 - `zlib.net^1`
 
+## Related Packages
+
+These packages work well with ruby-lang.org:
+
+- [`rubygems.org`](../rubygems.org/index.md) - Powerful, clean, object-oriented scripting language
+
 ## Usage Examples
 
 ```typescript
