@@ -27,21 +27,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 14 versions</summary>
+<summary>Show all 15 versions</summary>
 
-- `1.56.4`, `1.56.3`, `1.56.2`, `1.56.1`, `1.56.0`
-- `1.55.5`, `1.55.0`, `1.54.0`, `1.52.2`, `1.52.1`
-- `1.52.0`, `1.51.2`, `1.50.14`, `1.50.9`
+- `1.57.0`, `1.56.4`, `1.56.3`, `1.56.2`, `1.56.1`
+- `1.56.0`, `1.55.5`, `1.55.0`, `1.54.0`, `1.52.2`
+- `1.52.1`, `1.52.0`, `1.51.2`, `1.50.14`, `1.50.9`
 
 </details>
 
-**Latest Version**: `1.56.4`
+**Latest Version**: `1.57.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnome.org/pango@1.56.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnome.org/pango@1.57.0 -- $SHELL -i
 ```
 
 ## Dependencies
