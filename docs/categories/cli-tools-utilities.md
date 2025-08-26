@@ -1,6 +1,6 @@
 # CLI Tools & Utilities
 
-*34 packages in this category*
+*35 packages in this category*
 
 Command-line utilities and system tools.
 
@@ -343,6 +343,16 @@ a structural diff that understands syntax 🟥🟩
 **Programs**: difft
 
 **Install**: `launchpad install difft`
+
+---
+
+### [zsh.sourceforge.io](../packages/zsh.sourceforge.io/index.md) (zsh)
+
+UNIX shell (command interpreter)
+
+**Programs**: zsh
+
+**Install**: `launchpad install zsh`
 
 ---
 
