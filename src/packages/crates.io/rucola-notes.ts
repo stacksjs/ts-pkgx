@@ -8,6 +8,7 @@
  *
  * @install `launchpad install rucola`
  * @name `rucola`
+ * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
@@ -56,7 +57,13 @@ export const rucolaPackage = {
     'rucola',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'openssl.org^1.1',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

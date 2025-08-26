@@ -40,6 +40,12 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) rucola -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `openssl.org^1.1`
+
 ## Usage Examples
 
 ```typescript
