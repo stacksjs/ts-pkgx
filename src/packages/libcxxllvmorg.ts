@@ -2,7 +2,7 @@
  * **libcxx.llvm.org** - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
  *
  * @domain `libcxx.llvm.org`
- * @version `20.1.8` (42 versions available)
+ * @version `21.1.0` (43 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install libcxx.llvm.org`
@@ -14,7 +14,7 @@
  * const pkg = pantry.libcxxllvmorg
  * console.log(pkg.name)        // "libcxx.llvm.org"
  * console.log(pkg.description) // "The LLVM Project is a collection of modular and..."
- * console.log(pkg.versions[0]) // "20.1.8" (latest)
+ * console.log(pkg.versions[0]) // "21.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libcxx-llvm-org.md
@@ -49,6 +49,7 @@ export const libcxxllvmorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '21.1.0',
     '20.1.8',
     '20.1.7',
     '20.1.6',
