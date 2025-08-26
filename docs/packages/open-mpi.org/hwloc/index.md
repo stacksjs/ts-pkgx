@@ -34,20 +34,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `2.12.1`, `2.12.0`, `2.11.2`, `2.11.1`, `2.11.0`
-- `2.10.0`, `2.9.3`, `2.9.2`, `2.9.1`
+- `2.12.2`, `2.12.1`, `2.12.0`, `2.11.2`, `2.11.1`
+- `2.11.0`, `2.10.0`, `2.9.3`, `2.9.2`, `2.9.1`
 
 </details>
 
-**Latest Version**: `2.12.1`
+**Latest Version**: `2.12.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +open-mpi.org/hwloc@2.12.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +open-mpi.org/hwloc@2.12.2 -- $SHELL -i
 ```
 
 ## Usage Examples

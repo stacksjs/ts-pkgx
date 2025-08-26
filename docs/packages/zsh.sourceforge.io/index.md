@@ -1,11 +1,11 @@
-# zsh
+# zsh.sourceforge.io
 
-> UNIX shell (command interpreter)
+> Package from pantry: zsh.sourceforge.io
 
 ## Package Information
 
 - **Domain**: `zsh.sourceforge.io`
-- **Name**: `zsh`
+- **Name**: `zsh.sourceforge.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/zsh.sourceforge.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install zsh
+launchpad install zsh.sourceforge.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `zsh`
-
-## Available Versions
-
-<details>
-<summary>Show all 1 versions</summary>
-
-- `5.9.0`
-
-</details>
-
-**Latest Version**: `5.9.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) zsh -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -53,7 +35,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.zsh
+const pkg = pantry['zsh.sourceforge.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

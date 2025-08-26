@@ -3,7 +3,7 @@
  *
  * @domain `gnome.org/gdk-pixbuf`
  * @programs `gdk-pixbuf-csource`, `gdk-pixbuf-pixdata`, `gdk-pixbuf-query-loaders`, `gdk-pixbuf-thumbnailer`
- * @version `2.43.3` (4 versions available)
+ * @version `2.43.5` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gdk-pixbuf`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "gdk-pixbuf"
  * console.log(pkg.description) // "Toolkit for image loading and pixel buffer mani..."
  * console.log(pkg.programs)    // ["gdk-pixbuf-csource", "gdk-pixbuf-pixdata", ...]
- * console.log(pkg.versions[0]) // "2.43.3" (latest)
+ * console.log(pkg.versions[0]) // "2.43.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/gdk-pixbuf.md
@@ -75,6 +75,7 @@ export const gdkpixbufPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.43.5',
     '2.43.3',
     '2.43.2',
     '2.42.9',

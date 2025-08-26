@@ -3,7 +3,7 @@
  *
  * @domain `open-mpi.org/hwloc`
  * @programs `hwloc-annotate`, `hwloc-bind`, `hwloc-calc`, `hwloc-compress-dir`, `hwloc-diff`, ... (+5 more)
- * @version `2.12.1` (9 versions available)
+ * @version `2.12.2` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install open-mpi.org/hwloc`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "open-mpi.org/hwloc"
  * console.log(pkg.description) // "Portable abstraction of the hierarchical topolo..."
  * console.log(pkg.programs)    // ["hwloc-annotate", "hwloc-bind", ...]
- * console.log(pkg.versions[0]) // "2.12.1" (latest)
+ * console.log(pkg.versions[0]) // "2.12.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/open-mpi-org/hwloc.md
@@ -66,6 +66,7 @@ export const openmpiorghwlocPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.12.2',
     '2.12.1',
     '2.12.0',
     '2.11.2',
