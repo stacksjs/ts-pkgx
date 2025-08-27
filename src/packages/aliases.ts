@@ -681,7 +681,6 @@ export const aliases: Record<string, string> = {
   'ots': 'ots.sniptt.com',
   'overmind': 'github.com/darthsim/overmind',
   'pack': 'buildpacks.io',
-  'packaging': 'pypa.io/packaging',
   'packer': 'packer.io',
   'pake': 'npmjs.com/pake-cli',
   'pakku': 'github.com/mycreepy/pakku',

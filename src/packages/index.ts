@@ -3828,7 +3828,7 @@ export interface Pantry {
   pypaiodistlib: typeof pypaiodistlibPackage
 
   pypaiohatch: typeof hatchPackage1
-
+  packaging: typeof pypaiopackagingPackage
   pypaiopackaging: typeof pypaiopackagingPackage
   setuptools: typeof pypaiosetuptoolsPackage
   pypaiosetuptools: typeof pypaiosetuptoolsPackage
@@ -4508,7 +4508,6 @@ export interface Pantry {
   ruff: typeof ruffPackage
   pygmentize: typeof pygmentizePackage
   hatch: typeof hatchPackage
-  packaging: typeof pypaiopackagingPackage
   ipython: typeof ipythonPackage
   nginx: typeof nginxPackage
   lavinmq: typeof lavinmqPackage
@@ -7641,7 +7640,7 @@ export const pantry: Pantry = {
   pypaiodistlib: pypaiodistlibPackage,
 
   pypaiohatch: hatchPackage1,
-
+  packaging: pypaiopackagingPackage,
   pypaiopackaging: pypaiopackagingPackage,
   setuptools: pypaiosetuptoolsPackage,
   pypaiosetuptools: pypaiosetuptoolsPackage,
@@ -8321,7 +8320,6 @@ export const pantry: Pantry = {
   ruff: ruffPackage,
   pygmentize: pygmentizePackage,
   hatch: hatchPackage,
-  packaging: pypaiopackagingPackage,
   ipython: ipythonPackage,
   nginx: nginxPackage,
   lavinmq: lavinmqPackage,
