@@ -25,15 +25,15 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 14 versions</summary>
+<summary>Show all 15 versions</summary>
 
-- `1.13.0`, `1.12.2`, `1.12.1`, `1.12.0`, `1.11.0`
-- `1.10.1`, `1.10.0`, `1.9.0`, `1.8.2`, `1.8.1`
-- `1.8.0`, `1.7.4`, `1.7.3`, `1.7.2`
+- `1.13.1`, `1.13.0`, `1.12.2`, `1.12.1`, `1.12.0`
+- `1.11.0`, `1.10.1`, `1.10.0`, `1.9.0`, `1.8.2`
+- `1.8.1`, `1.8.0`, `1.7.4`, `1.7.3`, `1.7.2`
 
 </details>
 
-**Latest Version**: `1.13.0`
+**Latest Version**: `1.13.1`
 
 ### Install Specific Version
 
