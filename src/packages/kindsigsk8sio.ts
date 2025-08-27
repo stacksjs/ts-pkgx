@@ -3,7 +3,7 @@
  *
  * @domain `kind.sigs.k8s.io`
  * @programs `kind`
- * @version `0.29.0` (11 versions available)
+ * @version `0.30.0` (12 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kind`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "kind"
  * console.log(pkg.description) // "Kubernetes IN Docker - local clusters for testi..."
  * console.log(pkg.programs)    // ["kind"]
- * console.log(pkg.versions[0]) // "0.29.0" (latest)
+ * console.log(pkg.versions[0]) // "0.30.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kind-sigs-k8s-io.md
@@ -62,6 +62,7 @@ export const kindPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.30.0',
     '0.29.0',
     '0.28.0',
     '0.27.0',
