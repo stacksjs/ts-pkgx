@@ -61,17 +61,19 @@
     "zip:darwin-x64": "zip -j bin/ts-pkgx-darwin-x64.zip bin/ts-pkgx-darwin-x64",
     "zip:darwin-arm64": "zip -j bin/ts-pkgx-darwin-arm64.zip bin/ts-pkgx-darwin-arm64",
     "test:yaml": "bun run src/tools/testYamlFetcher.ts",
-    "lint": "bunx --bun eslint .",
-    "lint:fix": "bunx --bun eslint . --fix",
     "fresh": "bunx rimraf node_modules/ bun.lock && bun i",
-    "changelog": "bunx changelogen --output CHANGELOG.md",
     "prepublishOnly": "bun run build && bun run build:cross-platform",
-    "release": "bun run release:patch",
     "release:patch": "bun scripts/bump-version.ts patch",
     "release:minor": "bun scripts/bump-version.ts minor",
     "release:major": "bun scripts/bump-version.ts major",
     "release:dry-run": "bun scripts/bump-version.ts --dry-run",
     "test": "rm -rf dist/ && bun test",
+    "lint": "bunx --bun eslint .",
+    "lint:fix": "bunx --bun eslint . --fix",
+    "changelog": "bunx logsmith --verbose",
+    "changelog:generate": "bunx logsmith --output CHANGELOG.md",
+    "release": "bun run changelog:generate && bunx bumpx prompt --recursive",
+    "postinstall": "bunx git-hooks",
     "dev:docs": "bun vitepress dev docs",
     "build:docs": "NODE_OPTIONS=\"--max-old-space-size=8192\" bun vitepress build docs",
     "preview:docs": "bun vitepress preview docs",
@@ -88,21 +90,27 @@
     "playwright": "^1.54.1"
   },
   "devDependencies": {
+    "@stacksjs/bumpx": "^0.1.17",
     "@stacksjs/docs": "^0.70.23",
     "@stacksjs/eslint-config": "^4.14.0-beta.3",
+    "@stacksjs/gitlint": "^0.1.5",
+    "@stacksjs/logsmith": "^0.1.8",
     "@types/bun": "^1.2.19",
-    "bumpp": "^10.2.0",
+    "buddy-bot": "^0.8.9",
+    "bun-git-hooks": "^0.2.19",
     "bun-plugin-dtsx": "0.9.5",
-    "changelogen": "^0.6.2",
-    "lint-staged": "^16.1.2",
-    "simple-git-hooks": "^2.13.0",
     "typescript": "^5.8.3"
   },
   "overrides": {
     "@stacksjs/dtsx": "0.9.5",
     "unconfig": "0.3.10"
   },
-  "lint-staged": {
-    "*.{js,ts}": "bunx --bun eslint . --fix"
+  "git-hooks": {
+    "pre-commit": {
+      "staged-lint": {
+        "*.{js,ts,json,yaml,yml,md}": "bunx --bun eslint --fix"
+      }
+    },
+    "commit-msg": "bunx gitlint --edit .git/COMMIT_EDITMSG"
   }
 }
