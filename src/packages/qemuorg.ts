@@ -3,7 +3,7 @@
  *
  * @domain `qemu.org`
  * @programs `qemu-img`, `qemu-edid`, `qemu-io`, `qemu-nbd`, `qemu-storage-daemon`, ... (+29 more)
- * @version `10.0.3` (53 versions available)
+ * @version `10.1.0` (54 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install qemu`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "qemu"
  * console.log(pkg.description) // "Generic machine emulator and virtualizer"
  * console.log(pkg.programs)    // ["qemu-img", "qemu-edid", ...]
- * console.log(pkg.versions[0]) // "10.0.3" (latest)
+ * console.log(pkg.versions[0]) // "10.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/qemu-org.md
@@ -111,6 +111,7 @@ export const qemuPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '10.1.0',
     '10.0.3',
     '10.0.2',
     '9.2.4',

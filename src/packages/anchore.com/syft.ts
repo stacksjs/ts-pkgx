@@ -3,7 +3,7 @@
  *
  * @domain `anchore.com/syft`
  * @programs `syft`
- * @version `1.31.0` (46 versions available)
+ * @version `1.32.0` (47 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install syft`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "syft"
  * console.log(pkg.description) // "CLI tool and library for generating a Software ..."
  * console.log(pkg.programs)    // ["syft"]
- * console.log(pkg.versions[0]) // "1.31.0" (latest)
+ * console.log(pkg.versions[0]) // "1.32.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/anchore-com/syft.md
@@ -62,6 +62,7 @@ export const syftPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.32.0',
     '1.31.0',
     '1.30.0',
     '1.29.1',
