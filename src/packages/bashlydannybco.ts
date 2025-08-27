@@ -3,7 +3,7 @@
  *
  * @domain `bashly.dannyb.co`
  * @programs `bashly`
- * @version `1.3.1` (16 versions available)
+ * @version `1.3.2` (17 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bashly`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "bashly"
  * console.log(pkg.description) // "Bash command line framework and CLI generator"
  * console.log(pkg.programs)    // ["bashly"]
- * console.log(pkg.versions[0]) // "1.3.1" (latest)
+ * console.log(pkg.versions[0]) // "1.3.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/bashly-dannyb-co.md
@@ -77,6 +77,7 @@ export const bashlyPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.3.2',
     '1.3.1',
     '1.2.13',
     '1.2.12',
