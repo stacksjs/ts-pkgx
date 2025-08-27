@@ -26,21 +26,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 13 versions</summary>
+<summary>Show all 14 versions</summary>
 
-- `0.29.0`, `0.28.2`, `0.28.1`, `0.28.0`, `0.27.2`
-- `0.27.1`, `0.27.0`, `0.26.3`, `0.26.2`, `0.26.1`
-- `0.26.0`, `0.25.3`, `0.25.2`
+- `0.29.1`, `0.29.0`, `0.28.2`, `0.28.1`, `0.28.0`
+- `0.27.2`, `0.27.1`, `0.27.0`, `0.26.3`, `0.26.2`
+- `0.26.1`, `0.26.0`, `0.25.3`, `0.25.2`
 
 </details>
 
-**Latest Version**: `0.29.0`
+**Latest Version**: `0.29.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pkl-lang.org@0.29.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +pkl-lang.org@0.29.1 -- $SHELL -i
 ```
 
 ## Related Packages
