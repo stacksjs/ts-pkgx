@@ -8,7 +8,7 @@
  *
  * @install `launchpad install rucola`
  * @name `rucola`
- * @dependencies `openssl.org^1.1`
+ * @dependencies `openssl.org^1.1 # as of 0.6.0`
  *
  * @example
  * ```typescript
@@ -62,7 +62,7 @@ export const rucolaPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'openssl.org^1.1',
+    'openssl.org^1.1 # as of 0.6.0',
   ] as const,
   /**
    * Available versions from newest to oldest.

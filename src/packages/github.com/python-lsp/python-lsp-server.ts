@@ -8,7 +8,7 @@
  *
  * @install `launchpad install pylsp`
  * @name `pylsp`
- * @dependencies `python.org>=3<3.12`
+ * @dependencies `pkgx.sh>=1`
  *
  * @example
  * ```typescript
@@ -62,7 +62,7 @@ export const pylspPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'python.org>=3<3.12',
+    'pkgx.sh>=1',
   ] as const,
   /**
    * Available versions from newest to oldest.

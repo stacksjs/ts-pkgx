@@ -44,7 +44,7 @@ sh <(curl https://pkgx.sh) rucola -- $SHELL -i
 
 This package depends on:
 
-- `openssl.org^1.1`
+- `openssl.org^1.1 # as of 0.6.0`
 
 ## Usage Examples
 

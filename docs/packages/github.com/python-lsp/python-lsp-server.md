@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) pylsp -- $SHELL -i
 
 This package depends on:
 
-- `python.org>=3<3.12`
+- `pkgx.sh>=1`
 
 ## Usage Examples
 
