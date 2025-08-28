@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-08-28T21:29:51.394Z
+- **Last Updated**: 2025-08-28T22:29:29.633Z
 
 ## Table of Contents
 
@@ -52,7 +52,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[julialang.org](./packages/julialang.org/index.md)** () | The Julia Programming Language | julia | 1.11.6 (+19) | `pkgx julia` |
 | **[lua.org](./packages/lua.org/index.md)** () | Powerful, lightweight programming language | lua, luac | 5.4.8 (+3) | `pkgx lua` |
 | **[luajit.org](./packages/luajit.org/index.md)** () | Mirror of the LuaJIT git repository | luajit, luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;. | 2.1.0 (+0) | `pkgx luajit` |
-| **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 24.7.0 (+148) | `pkgx node` |
+| **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 24.7.0 (+149) | `pkgx node` |
 | **[php.net](./packages/php.net/index.md)** (php) | General-purpose scripting language | pear, pecl, phar, ... (+5) | 8.4.12 (+80) | `pkgx php` |
 | **[python.org](./packages/python.org/index.md)** (py) | The Python programming language | python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace; | 3.13.7 (+152) | `pkgx py` |
 | **[ruby-lang.org](./packages/ruby-lang.org/index.md)** (ruby) | Powerful, clean, object-oriented scripting language | erb, irb, rake, ... (+3) | 3.4.5 (+44) | `pkgx ruby` |
@@ -370,7 +370,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.172 (+428) | `pkgx fly` |
 | **[heroku.com](./packages/heroku.com/index.md)** () | CLI for Heroku | heroku | 10.13.0 (+35) | `pkgx heroku` |
 | **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.7.0 (+23) | `pkgx localstack` |
-| **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.253.0 (+75) | `pkgx pscale` |
+| **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.254.0 (+76) | `pkgx pscale` |
 | **[railway.app](./packages/railway.app/index.md)** () | Develop and deploy code with zero configuration | railway | 4.6.3 (+56) | `pkgx railway` |
 | **[render.com](./packages/render.com/index.md)** () | Command-line interface for Render | render | 0.1.11 (+5) | `pkgx render` |
 | **[supabase.com/cli](./packages/supabase.com/cli/index.md)** () | Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres b... | supabase | 2.39.2 (+186) | `pkgx supabase` |
