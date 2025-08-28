@@ -3,7 +3,7 @@
  *
  * @domain `fx.wtf`
  * @programs `fx`
- * @version `39.0.2` (24 versions available)
+ * @version `39.0.3` (25 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fx`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "fx"
  * console.log(pkg.description) // "Terminal JSON viewer & processor"
  * console.log(pkg.programs)    // ["fx"]
- * console.log(pkg.versions[0]) // "39.0.2" (latest)
+ * console.log(pkg.versions[0]) // "39.0.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/fx-wtf.md
@@ -62,6 +62,7 @@ export const fxPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '39.0.3',
     '39.0.2',
     '39.0.1',
     '39.0.0',
