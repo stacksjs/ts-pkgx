@@ -3,7 +3,7 @@
  *
  * @domain `digger.dev`
  * @programs `digger`
- * @version `0.6.121` (205 versions available)
+ * @version `0.6.122` (206 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install digger`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "digger"
  * console.log(pkg.description) // "Digger is an open source IaC orchestration tool..."
  * console.log(pkg.programs)    // ["digger"]
- * console.log(pkg.versions[0]) // "0.6.121" (latest)
+ * console.log(pkg.versions[0]) // "0.6.122" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/digger-dev.md
@@ -62,6 +62,7 @@ export const diggerPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.6.122',
     '0.6.121',
     '0.6.120',
     '0.6.119',
