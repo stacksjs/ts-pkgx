@@ -3,7 +3,7 @@
  *
  * @domain `mongodb.com/shell`
  * @programs `mongosh`
- * @version `2.5.6` (37 versions available)
+ * @version `2.5.7` (38 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mongosh`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "mongosh"
  * console.log(pkg.description) // "MongoDB Shell to connect, configure, query, and..."
  * console.log(pkg.programs)    // ["mongosh"]
- * console.log(pkg.versions[0]) // "2.5.6" (latest)
+ * console.log(pkg.versions[0]) // "2.5.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mongodb-com/shell.md
@@ -69,6 +69,7 @@ export const mongoshPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.5.7',
     '2.5.6',
     '2.5.5',
     '2.5.3',
