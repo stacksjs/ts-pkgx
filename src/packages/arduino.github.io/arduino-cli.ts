@@ -3,7 +3,7 @@
  *
  * @domain `arduino.github.io/arduino-cli`
  * @programs `arduino-cli`
- * @version `1.3.0` (21 versions available)
+ * @version `1.3.1` (22 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install arduino-cli`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "arduino-cli"
  * console.log(pkg.description) // "Arduino command-line interface"
  * console.log(pkg.programs)    // ["arduino-cli"]
- * console.log(pkg.versions[0]) // "1.3.0" (latest)
+ * console.log(pkg.versions[0]) // "1.3.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/arduino-github-io/arduino-cli.md
@@ -62,6 +62,7 @@ export const arduinocliPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.3.1',
     '1.3.0',
     '1.2.2',
     '1.2.0',

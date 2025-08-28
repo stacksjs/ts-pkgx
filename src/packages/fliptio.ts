@@ -3,7 +3,7 @@
  *
  * @domain `flipt.io`
  * @programs `flipt`
- * @version `2.0.2` (45 versions available)
+ * @version `2.0.2` (46 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install flipt`
@@ -65,6 +65,7 @@ export const fliptPackage = {
     '2.0.2',
     '2.0.1',
     '2.0.0',
+    '1.59.3',
     '1.59.2',
     '1.59.1',
     '1.59.0',
