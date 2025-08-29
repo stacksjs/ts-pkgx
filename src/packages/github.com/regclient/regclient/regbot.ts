@@ -3,7 +3,7 @@
  *
  * @domain `github.com/regclient/regclient/regbot`
  * @programs `regbot`
- * @version `0.9.1` (17 versions available)
+ * @version `0.9.2` (18 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install regbot`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "regbot"
  * console.log(pkg.description) // "Docker and OCI Registry Client in Go and toolin..."
  * console.log(pkg.programs)    // ["regbot"]
- * console.log(pkg.versions[0]) // "0.9.1" (latest)
+ * console.log(pkg.versions[0]) // "0.9.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/regclient/regclient/regbot.md
@@ -69,6 +69,7 @@ export const regbotPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.9.2',
     '0.9.1',
     '0.9.0',
     '0.8.3',
