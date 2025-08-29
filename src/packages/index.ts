@@ -328,6 +328,7 @@ import { eigentuxfamilyorgPackage } from './eigentuxfamilyorg'
 import { eksctlPackage } from './eksctlio'
 import { elementsprojectorgPackage } from './elementsprojectorg'
 import { elfutilsorgPackage } from './elfutilsorg'
+import { elixirlangorgotp27Package } from './elixir-lang.org/otp-27'
 import { elixirlangorgPackage } from './elixir-langorg'
 import { elizaPackage } from './elizaOSgithubio'
 import { elvishPackage } from './elvsh'
@@ -2148,6 +2149,8 @@ export interface Pantry {
   eksctlio: typeof eksctlPackage
   elementsprojectorg: typeof elementsprojectorgPackage
   elfutilsorg: typeof elfutilsorgPackage
+  otp_27: typeof elixirlangorgotp27Package
+  elixirlangorgotp27: typeof elixirlangorgotp27Package
   elixir_langorg: typeof elixirlangorgPackage
   elixirlangorg: typeof elixirlangorgPackage
   elizaOSgithubio: typeof elizaPackage
@@ -5960,6 +5963,8 @@ export const pantry: Pantry = {
   eksctlio: eksctlPackage,
   elementsprojectorg: elementsprojectorgPackage,
   elfutilsorg: elfutilsorgPackage,
+  otp_27: elixirlangorgotp27Package,
+  elixirlangorgotp27: elixirlangorgotp27Package,
   elixir_langorg: elixirlangorgPackage,
   elixirlangorg: elixirlangorgPackage,
   elizaOSgithubio: elizaPackage,
