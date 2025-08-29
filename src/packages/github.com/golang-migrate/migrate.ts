@@ -3,7 +3,7 @@
  *
  * @domain `github.com/golang-migrate/migrate`
  * @programs `migrate`
- * @version `4.18.3` (7 versions available)
+ * @version `4.19.0` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install migrate`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "migrate"
  * console.log(pkg.description) // "Database migrations. CLI and Golang library."
  * console.log(pkg.programs)    // ["migrate"]
- * console.log(pkg.versions[0]) // "4.18.3" (latest)
+ * console.log(pkg.versions[0]) // "4.19.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/golang-migrate/migrate.md
@@ -62,6 +62,7 @@ export const migratePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.19.0',
     '4.18.3',
     '4.18.2',
     '4.18.1',
