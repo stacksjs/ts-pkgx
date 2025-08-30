@@ -2,7 +2,7 @@
  * **github.com/PJK/libcbor** - CBOR protocol implementation for C
  *
  * @domain `github.com/PJK/libcbor`
- * @version `0.12.0` (3 versions available)
+ * @version `0.13.0` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/PJK/libcbor`
@@ -14,7 +14,7 @@
  * const pkg = pantry.githubcompjklibcbor
  * console.log(pkg.name)        // "github.com/PJK/libcbor"
  * console.log(pkg.description) // "CBOR protocol implementation for C"
- * console.log(pkg.versions[0]) // "0.12.0" (latest)
+ * console.log(pkg.versions[0]) // "0.13.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/PJK/libcbor.md
@@ -49,6 +49,7 @@ export const githubcompjklibcborPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.13.0',
     '0.12.0',
     '0.11.0',
     '0.10.1',
