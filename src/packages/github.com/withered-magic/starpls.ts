@@ -3,7 +3,7 @@
  *
  * @domain `github.com/withered-magic/starpls`
  * @programs `starpls`
- * @version `0.1.21` (1 versions available)
+ * @version `0.1.22` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install starpls`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "starpls"
  * console.log(pkg.description) // "An LSP implementation for Starlark, the configu..."
  * console.log(pkg.programs)    // ["starpls"]
- * console.log(pkg.versions[0]) // "0.1.21" (latest)
+ * console.log(pkg.versions[0]) // "0.1.22" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/withered-magic/starpls.md
@@ -62,6 +62,7 @@ export const starplsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.1.22',
     '0.1.21',
   ] as const,
   /**
