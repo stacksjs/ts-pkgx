@@ -3,7 +3,7 @@
  *
  * @domain `github.com/ankitpokhrel/jira-cli`
  * @programs `jira`
- * @version `1.6.0` (3 versions available)
+ * @version `1.7.0` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jira`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "jira"
  * console.log(pkg.description) // "simple jira command line client in Go"
  * console.log(pkg.programs)    // ["jira"]
- * console.log(pkg.versions[0]) // "1.6.0" (latest)
+ * console.log(pkg.versions[0]) // "1.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/ankitpokhrel/jira-cli.md
@@ -62,6 +62,7 @@ export const jiraPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.7.0',
     '1.6.0',
     '1.5.2',
     '1.5.1',
