@@ -3,7 +3,7 @@
  *
  * @domain `rust-lang.org/rust-bindgen`
  * @programs `bindgen`
- * @version `0.72.0` (4 versions available)
+ * @version `0.72.1` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bindgen`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "bindgen"
  * console.log(pkg.description) // "Automatically generates Rust FFI bindings to C ..."
  * console.log(pkg.programs)    // ["bindgen"]
- * console.log(pkg.versions[0]) // "0.72.0" (latest)
+ * console.log(pkg.versions[0]) // "0.72.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rust-lang-org/rust-bindgen.md
@@ -77,6 +77,7 @@ export const bindgenPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.72.1',
     '0.72.0',
     '0.71.1',
     '0.71.0',
