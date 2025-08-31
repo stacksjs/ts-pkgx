@@ -363,7 +363,6 @@ export const aliases: Record<string, string> = {
   'glauth': 'github.com/glauth/glauth',
   'gleam': 'gleam.run',
   'glow': 'charm.sh/glow',
-  'glslc': 'github.com/google/shaderc',
   'gnuplot': 'gnuplot.info',
   'go': 'go.dev',
   'go-bindata': 'github.com/kevinburke/go-bindata',

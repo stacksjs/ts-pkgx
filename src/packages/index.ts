@@ -584,7 +584,7 @@ import { gollumPackage } from './github.com/gollum/gollum'
 import { brotliPackage } from './github.com/google/brotli'
 import { gopsPackage } from './github.com/google/gops'
 import { githubcomgooglere2Package } from './github.com/google/re2'
-import { glslcPackage } from './github.com/google/shaderc'
+import { githubcomgoogleshadercPackage } from './github.com/google/shaderc'
 import { gopassPackage } from './github.com/gopasspw/gopass'
 import { googlemapsscraperPackage } from './github.com/gosom/google-maps-scraper'
 import { gotestsumPackage } from './github.com/gotestyourself/gotestsum'
@@ -2626,8 +2626,8 @@ export interface Pantry {
   githubcomgoogle1: typeof gopsPackage
   re2: typeof githubcomgooglere2Package
   githubcomgoogle2: typeof githubcomgooglere2Package
-  shaderc: typeof glslcPackage
-  githubcomgoogle3: typeof glslcPackage
+  shaderc: typeof githubcomgoogleshadercPackage
+  githubcomgoogle3: typeof githubcomgoogleshadercPackage
 
   githubcomgopasspw: typeof gopassPackage
   google_maps_scraper: typeof googlemapsscraperPackage
@@ -4906,7 +4906,6 @@ export interface Pantry {
   jsonlint: typeof jsonlintPackage
   chatblade: typeof chatbladePackage
   colima: typeof colimaPackage
-  glslc: typeof glslcPackage
   brotli: typeof brotliPackage
   gops: typeof gopsPackage
   black: typeof blackPackage
@@ -6440,8 +6439,8 @@ export const pantry: Pantry = {
   githubcomgoogle1: gopsPackage,
   re2: githubcomgooglere2Package,
   githubcomgoogle2: githubcomgooglere2Package,
-  shaderc: glslcPackage,
-  githubcomgoogle3: glslcPackage,
+  shaderc: githubcomgoogleshadercPackage,
+  githubcomgoogle3: githubcomgoogleshadercPackage,
 
   githubcomgopasspw: gopassPackage,
   google_maps_scraper: googlemapsscraperPackage,
@@ -8720,7 +8719,6 @@ export const pantry: Pantry = {
   jsonlint: jsonlintPackage,
   chatblade: chatbladePackage,
   colima: colimaPackage,
-  glslc: glslcPackage,
   brotli: brotliPackage,
   gops: gopsPackage,
   black: blackPackage,
