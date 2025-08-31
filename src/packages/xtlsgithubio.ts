@@ -3,7 +3,7 @@
  *
  * @domain `xtls.github.io`
  * @programs `xray`
- * @version `25.8.3` (34 versions available)
+ * @version `25.8.31` (35 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xray`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "xray-core"
  * console.log(pkg.description) // "Xray, Penetrates Everything. Also the best v2ra..."
  * console.log(pkg.programs)    // ["xray"]
- * console.log(pkg.versions[0]) // "25.8.3" (latest)
+ * console.log(pkg.versions[0]) // "25.8.31" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/xtls-github-io.md
@@ -63,6 +63,7 @@ export const xrayPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '25.8.31',
     '25.8.3',
     '25.7.26',
     '25.7.25',
