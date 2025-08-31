@@ -3,7 +3,7 @@
  *
  * @domain `crazymax.dev/diun`
  * @programs `diun`
- * @version `4.29.0` (2 versions available)
+ * @version `4.30.0` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install diun`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "diun"
  * console.log(pkg.description) // "Receive notifications when an image is updated ..."
  * console.log(pkg.programs)    // ["diun"]
- * console.log(pkg.versions[0]) // "4.29.0" (latest)
+ * console.log(pkg.versions[0]) // "4.30.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crazymax-dev/diun.md
@@ -62,6 +62,7 @@ export const diunPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.30.0',
     '4.29.0',
     '4.28.0',
   ] as const,
