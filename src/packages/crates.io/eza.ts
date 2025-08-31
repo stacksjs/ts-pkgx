@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/eza`
  * @programs `eza`
- * @version `0.23.0` (82 versions available)
+ * @version `0.23.1` (83 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install eza`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "eza"
  * console.log(pkg.description) // "Modern, maintained replacement for ls"
  * console.log(pkg.programs)    // ["eza"]
- * console.log(pkg.versions[0]) // "0.23.0" (latest)
+ * console.log(pkg.versions[0]) // "0.23.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/eza.md
@@ -69,6 +69,7 @@ export const ezaPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.23.1',
     '0.23.0',
     '0.22.1',
     '0.22.0',

@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-08-31T15:29:19.518Z
+- **Last Updated**: 2025-08-31T16:28:27.024Z
 
 ## Table of Contents
 
@@ -262,7 +262,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[crates.io/drill](./packages/crates.io/drill/index.md)** () | Drill is an HTTP load testing application written in Rust | drill | 0.8.3 (+0) | `pkgx drill` |
 | **[crates.io/du-dust](./packages/crates.io/du-dust/index.md)** () | A more intuitive version of du in rust | dust | 1.2.3 (+7) | `pkgx dust` |
 | **[crates.io/exa](./packages/crates.io/exa/index.md)** () | A modern replacement for ‘ls’. | exa | 0.10.1 (+0) | `pkgx exa` |
-| **[crates.io/eza](./packages/crates.io/eza/index.md)** () | Modern, maintained replacement for ls | eza | 0.23.0 (+81) | `pkgx eza` |
+| **[crates.io/eza](./packages/crates.io/eza/index.md)** () | Modern, maintained replacement for ls | eza | 0.23.1 (+82) | `pkgx eza` |
 | **[crates.io/git-delta](./packages/crates.io/git-delta/index.md)** () | A syntax-highlighting pager for git, diff, grep, and blame output | delta | 0.18.2 (+10) | `pkgx delta` |
 | **[crates.io/hyperfine](./packages/crates.io/hyperfine/index.md)** () | A command-line benchmarking tool | hyperfine | 1.19.0 (+6) | `pkgx hyperfine` |
 | **[crates.io/ripgrep](./packages/crates.io/ripgrep/index.md)** () | ripgrep recursively searches directories for a regex pattern while respecting your gitignore | rg | 14.1.1 (+6) | `pkgx rg` |
