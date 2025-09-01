@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-09-01T21:29:53.604Z
+- **Last Updated**: 2025-09-01T22:28:34.735Z
 
 ## Table of Contents
 
@@ -349,7 +349,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[cairographics.org](./packages/cairographics.org/index.md)** () | Vector graphics library with cross-device output support | cairo-trace | 1.18.4 (+3) | `pkgx cairo-trace` |
-| **[libsdl.org](./packages/libsdl.org/index.md)** () | Simple Directmedia Layer | - | 3.2.20 (+35) | `pkgx libsdl.org` |
+| **[libsdl.org](./packages/libsdl.org/index.md)** () | Simple Directmedia Layer | - | 3.2.20 (+36) | `pkgx libsdl.org` |
 | **[libsdl.org/SDL_image](./packages/libsdl.org/SDL_image/index.md)** () | Image decoding for many popular formats for Simple Directmedia Layer. | - | 3.2.4 (+12) | `pkgx libsdl.org/SDL_image` |
 
 ## Gaming & Game Development
@@ -358,7 +358,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[libsdl.org](./packages/libsdl.org/index.md)** () | Simple Directmedia Layer | - | 3.2.20 (+35) | `pkgx libsdl.org` |
+| **[libsdl.org](./packages/libsdl.org/index.md)** () | Simple Directmedia Layer | - | 3.2.20 (+36) | `pkgx libsdl.org` |
 
 ## Cloud Platforms
 

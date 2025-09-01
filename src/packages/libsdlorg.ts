@@ -2,7 +2,7 @@
  * **libsdl.org** - Simple Directmedia Layer
  *
  * @domain `libsdl.org`
- * @version `3.2.20` (36 versions available)
+ * @version `3.2.20` (37 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install libsdl.org`
@@ -75,6 +75,7 @@ export const libsdlorgPackage = {
     '3.2.4',
     '3.2.2',
     '3.2.0',
+    '2.32.10',
     '2.32.8',
     '2.32.6',
     '2.32.4',
