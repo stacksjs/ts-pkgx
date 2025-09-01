@@ -101,7 +101,6 @@ export const aliases: Record<string, string> = {
   'buildx': 'docker.com/buildx',
   'bun': 'bun.sh',
   'bun.com': 'bun.sh',
-  'bytebase': 'bytebase.com',
   'cabal': 'haskell.org/cabal',
   'caddy': 'caddyserver.com',
   'caesiumclt': 'saerasoft.com/caesium',
