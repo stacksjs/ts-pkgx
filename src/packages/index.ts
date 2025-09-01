@@ -253,7 +253,7 @@ import { versioPackage } from './crates.io/versio'
 import { vividPackage } from './crates.io/vivid'
 import { wasmpackPackage } from './crates.io/wasm-pack'
 import { wordlPackage } from './crates.io/wordl'
-import { wthrrPackage } from './crates.io/wthrr'
+import { cratesiowthrrPackage } from './crates.io/wthrr'
 import { xhPackage } from './crates.io/xh'
 import { zellijPackage } from './crates.io/zellij'
 import { zoxidePackage } from './crates.io/zoxide'
@@ -2037,8 +2037,8 @@ export interface Pantry {
   cratesiowasmpack: typeof wasmpackPackage
 
   cratesiowordl: typeof wordlPackage
-
-  cratesiowthrr: typeof wthrrPackage
+  wthrr: typeof cratesiowthrrPackage
+  cratesiowthrr: typeof cratesiowthrrPackage
   xh: typeof xhPackage
   cratesioxh: typeof xhPackage
 
@@ -4517,7 +4517,6 @@ export interface Pantry {
   'tidy-viewer': typeof tidyviewerPackage
   hac: typeof hacPackage
   tiny: typeof tinyPackage
-  wthrr: typeof wthrrPackage
   silicon: typeof siliconPackage
   delta: typeof deltaPackage
   optipng: typeof optipngPackage
@@ -5851,8 +5850,8 @@ export const pantry: Pantry = {
   cratesiowasmpack: wasmpackPackage,
 
   cratesiowordl: wordlPackage,
-
-  cratesiowthrr: wthrrPackage,
+  wthrr: cratesiowthrrPackage,
+  cratesiowthrr: cratesiowthrrPackage,
   xh: xhPackage,
   cratesioxh: xhPackage,
 
@@ -8331,7 +8330,6 @@ export const pantry: Pantry = {
   'tidy-viewer': tidyviewerPackage,
   hac: hacPackage,
   tiny: tinyPackage,
-  wthrr: wthrrPackage,
   silicon: siliconPackage,
   delta: deltaPackage,
   optipng: optipngPackage,

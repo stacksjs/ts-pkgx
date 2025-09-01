@@ -1081,7 +1081,6 @@ export const aliases: Record<string, string> = {
   'whisper': 'github.com/ggerganov/whisper.cpp',
   'woff2': 'google.com/woff2',
   'wordl': 'crates.io/wordl',
-  'wthrr': 'crates.io/wthrr',
   'wunderctl': 'wundergraph.com',
   'x264': 'videolan.org/x264',
   'x265': 'videolan.org/x265',

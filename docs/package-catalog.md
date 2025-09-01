@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1397+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1396+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1397
+- **Total Packages**: 1396
 - **Categories**: 27
-- **Last Updated**: 2025-09-01T09:31:32.981Z
+- **Last Updated**: 2025-09-01T10:30:47.345Z
 
 ## Table of Contents
 
@@ -231,7 +231,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[pip.pypa.io](./packages/pip.pypa.io/index.md)** () | The Python package installer | pip, pip3.8, pip3.9, ... (+2) | 25.2.0 (+27) | `pkgx pip` |
 | **[pipenv.pypa.io](./packages/pipenv.pypa.io/index.md)** () | Python Development Workflow for Humans. | pipenv | 3000.0.0 (+48) | `pkgx pipenv` |
 | **[pkgx.sh](./packages/pkgx.sh/index.md)** () | Standalone binary that can run anything | pkgx | 2.7.0 (+34) | `pkgx pkgx` |
-| **[pnpm.io](./packages/pnpm.io/index.md)** () | Fast, disk space efficient package manager | pnpm, pnpx | 10.15.0 (+171) | `pkgx pnpm` |
+| **[pnpm.io](./packages/pnpm.io/index.md)** () | Fast, disk space efficient package manager | pnpm, pnpx | 10.15.1 (+172) | `pkgx pnpm` |
 | **[python-poetry.org](./packages/python-poetry.org/index.md)** () | Python packaging and dependency management made easy | poetry | 2.1.4 (+21) | `pkgx poetry` |
 | **[rust-lang.org/cargo](./packages/rust-lang.org/cargo/index.md)** () | The Rust package manager | cargo | 0.90.0 (+27) | `pkgx cargo` |
 | **[rye.astral.sh](./packages/rye.astral.sh/index.md)** () | Experimental Package Management Solution for Python | rye | 0.44.0 (+8) | `pkgx rye` |
