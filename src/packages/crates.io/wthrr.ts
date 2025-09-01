@@ -1,30 +1,38 @@
 /**
- * **crates.io/wthrr** - pkgx package
+ * **wthrr** - 🌞 🦀 🌙 Weather companion for the terminal. Rust app.
  *
  * @domain `crates.io/wthrr`
+ * @programs `wthrr`
  * @version `1.2.1` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install crates.io/wthrr`
+ * @install `launchpad install wthrr`
+ * @name `wthrr`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.cratesiowthrr
- * console.log(pkg.name)        // "crates.io/wthrr"
+ * // Access the package
+ * const pkg = pantry.wthrr
+ * // Or access via domain
+ * const samePkg = pantry.cratesiowthrr
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "wthrr"
+ * console.log(pkg.description) // "🌞 🦀 🌙 Weather companion for the terminal. Ru..."
+ * console.log(pkg.programs)    // ["wthrr"]
  * console.log(pkg.versions[0]) // "1.2.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/wthrr.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cratesiowthrrPackage = {
+export const wthrrPackage = {
   /**
    * The display name of this package.
    */
-  name: 'crates.io/wthrr' as const,
+  name: 'wthrr' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -32,7 +40,7 @@ export const cratesiowthrrPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: '🌞 🦀 🌙 Weather companion for the terminal. Rust app.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/wthrr/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
@@ -40,8 +48,14 @@ export const cratesiowthrrPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install crates.io/wthrr' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install wthrr' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'wthrr',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -58,9 +72,13 @@ export const cratesiowthrrPackage = {
     '1.2.1',
     '1.2.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/wthrr -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/wthrr' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wthrr -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wthrr' as const,
 }
 
-export type CratesiowthrrPackage = typeof cratesiowthrrPackage
+export type WthrrPackage = typeof wthrrPackage
