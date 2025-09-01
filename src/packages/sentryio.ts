@@ -3,7 +3,7 @@
  *
  * @domain `sentry.io`
  * @programs `sentry-cli`
- * @version `2.52.0` (55 versions available)
+ * @version `2.53.0` (56 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sentry-cli`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "sentry-cli"
  * console.log(pkg.description) // "Command-line utility to interact with Sentry"
  * console.log(pkg.programs)    // ["sentry-cli"]
- * console.log(pkg.versions[0]) // "2.52.0" (latest)
+ * console.log(pkg.versions[0]) // "2.53.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sentry-io.md
@@ -69,6 +69,7 @@ export const sentrycliPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.53.0',
     '2.52.0',
     '2.51.1',
     '2.51.0',
