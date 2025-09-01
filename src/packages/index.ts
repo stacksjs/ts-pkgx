@@ -77,7 +77,7 @@ import { talhelperPackage } from './budimanjojo.github.io/talhelper'
 import { bufPackage } from './bufbuild'
 import { packPackage } from './buildpacksio'
 import { bunPackage } from './bunsh'
-import { bytebasecomPackage } from './bytebasecom'
+import { bytebasePackage } from './bytebasecom'
 import { bytereeforgmpdecimalPackage } from './bytereef.org/mpdecimal'
 import { caresorgPackage } from './c-aresorg'
 import { caddyPackage } from './caddyservercom'
@@ -1716,7 +1716,7 @@ export interface Pantry {
   bufbuild: typeof bufPackage
   buildpacksio: typeof packPackage
   bunsh: typeof bunPackage
-  bytebasecom: typeof bytebasecomPackage
+  bytebasecom: typeof bytebasePackage
   mpdecimal: typeof bytereeforgmpdecimalPackage
   bytereeforgmpdecimal: typeof bytereeforgmpdecimalPackage
   c_aresorg: typeof caresorgPackage
@@ -4299,6 +4299,7 @@ export interface Pantry {
   faac: typeof faacPackage
   mockgen: typeof mockgenPackage
   gitleaks: typeof gitleaksPackage
+  bytebase: typeof bytebasePackage
   sqlc: typeof sqlcPackage
   ctags: typeof ctagsPackage
   idn2: typeof idn2Package
@@ -5529,7 +5530,7 @@ export const pantry: Pantry = {
   bufbuild: bufPackage,
   buildpacksio: packPackage,
   bunsh: bunPackage,
-  bytebasecom: bytebasecomPackage,
+  bytebasecom: bytebasePackage,
   mpdecimal: bytereeforgmpdecimalPackage,
   bytereeforgmpdecimal: bytereeforgmpdecimalPackage,
   c_aresorg: caresorgPackage,
@@ -8112,6 +8113,7 @@ export const pantry: Pantry = {
   faac: faacPackage,
   mockgen: mockgenPackage,
   gitleaks: gitleaksPackage,
+  bytebase: bytebasePackage,
   sqlc: sqlcPackage,
   ctags: ctagsPackage,
   idn2: idn2Package,
