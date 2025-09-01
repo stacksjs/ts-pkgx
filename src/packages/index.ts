@@ -967,7 +967,7 @@ import { ipfsPackage } from './ipfstech'
 import { ipythonPackage } from './ipythonorg'
 import { irohPackage } from './irohcomputer'
 import { bind9Package } from './isc.org/bind9'
-import { istioioPackage } from './istioio'
+import { istioctlPackage } from './istioio'
 import { itstoolPackage } from './itstoolorg'
 import { pvPackage } from './ivarch.com/pv'
 import { jbangPackage } from './jbangdev'
@@ -3352,7 +3352,7 @@ export interface Pantry {
   irohcomputer: typeof irohPackage
 
   iscorgbind9: typeof bind9Package
-  istioio: typeof istioioPackage
+  istioio: typeof istioctlPackage
   itstoolorg: typeof itstoolPackage
   pv: typeof pvPackage
   ivarchcompv: typeof pvPackage
@@ -5069,6 +5069,7 @@ export interface Pantry {
   bindgen: typeof bindgenPackage
   juliaup: typeof juliaupPackage
   'scryer-prolog': typeof scryerprologPackage
+  istioctl: typeof istioctlPackage
   'wayland-protocols': typeof waylandprotocolsPackage
   'jenkins-lts': typeof jenkinsioPackage
   sketchybar: typeof sketchybarPackage
@@ -7165,7 +7166,7 @@ export const pantry: Pantry = {
   irohcomputer: irohPackage,
 
   iscorgbind9: bind9Package,
-  istioio: istioioPackage,
+  istioio: istioctlPackage,
   itstoolorg: itstoolPackage,
   pv: pvPackage,
   ivarchcompv: pvPackage,
@@ -8882,6 +8883,7 @@ export const pantry: Pantry = {
   bindgen: bindgenPackage,
   juliaup: juliaupPackage,
   'scryer-prolog': scryerprologPackage,
+  istioctl: istioctlPackage,
   'wayland-protocols': waylandprotocolsPackage,
   'jenkins-lts': jenkinsioPackage,
   sketchybar: sketchybarPackage,

@@ -452,6 +452,7 @@ export const aliases: Record<string, string> = {
   'ipfs': 'ipfs.tech',
   'ipython': 'ipython.org',
   'iroh': 'iroh.computer',
+  'istioctl': 'istio.io',
   'itstool': 'itstool.org',
   'jadx': 'github.com/skylot/jadx',
   'jags': 'mcmc-jags.sourceforge.io',

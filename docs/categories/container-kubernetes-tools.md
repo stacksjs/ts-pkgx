@@ -1,6 +1,6 @@
 # Container & Kubernetes Tools
 
-*24 packages in this category*
+*25 packages in this category*
 
 Packages related to container & kubernetes tools.
 
@@ -83,6 +83,16 @@ The Kubernetes Package Manager
 **Programs**: helm
 
 **Install**: `launchpad install helm`
+
+---
+
+### [istio.io](../packages/istio.io/index.md) (istioctl)
+
+Connect, secure, control, and observe services.
+
+**Programs**: istioctl
+
+**Install**: `launchpad install istioctl`
 
 ---
 
