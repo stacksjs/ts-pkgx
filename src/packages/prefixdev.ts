@@ -3,7 +3,7 @@
  *
  * @domain `prefix.dev`
  * @programs `pixi`
- * @version `0.53.0` (90 versions available)
+ * @version `0.54.0` (91 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pixi`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "pixi"
  * console.log(pkg.description) // "Package management made easy"
  * console.log(pkg.programs)    // ["pixi"]
- * console.log(pkg.versions[0]) // "0.53.0" (latest)
+ * console.log(pkg.versions[0]) // "0.54.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/prefix-dev.md
@@ -70,6 +70,7 @@ export const pixiPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.54.0',
     '0.53.0',
     '0.52.0',
     '0.51.0',
