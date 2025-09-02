@@ -1,3 +1,28 @@
+[Compare changes](https://github.com/stacksjs/ts-pkgx/compare/v0.4.56...HEAD)
+
+### 🧹 Chores
+
+- update deps ([cd553c9](https://github.com/stacksjs/ts-pkgx/commit/cd553c9))
+- update arkadedev, crates.io_typos and 8 other deps ([89f7b2b](https://github.com/stacksjs/ts-pkgx/commit/89f7b2b))
+- update gnupg.org_v2.5, openai.com_openai-python ([25cfe45](https://github.com/stacksjs/ts-pkgx/commit/25cfe45))
+- update nghttp2org ([390e430](https://github.com/stacksjs/ts-pkgx/commit/390e430))
+- update swagger.io_swagger-codegen ([3125e63](https://github.com/stacksjs/ts-pkgx/commit/3125e63))
+- update pwmt.org_girara, symfony.com_cs ([956bf12](https://github.com/stacksjs/ts-pkgx/commit/956bf12))
+- update git-quick-statssh, github.com_ggerganov_llama.cpp, pwmt.or ([2e43eb6](https://github.com/stacksjs/ts-pkgx/commit/2e43eb6))
+- update github.com_ggerganov_llama.cpp ([e943e30](https://github.com/stacksjs/ts-pkgx/commit/e943e30))
+- update github.com_ggerganov_llama.cpp ([0ef2ab2](https://github.com/stacksjs/ts-pkgx/commit/0ef2ab2))
+- update mergiraforg ([c7b2675](https://github.com/stacksjs/ts-pkgx/commit/c7b2675))
+- update syncthingnet ([e1e608f](https://github.com/stacksjs/ts-pkgx/commit/e1e608f))
+- update budimanjojo.github.io_talhelper ([0bdf051](https://github.com/stacksjs/ts-pkgx/commit/0bdf051))
+- update microsoft.com_azure-cli ([14a4614](https://github.com/stacksjs/ts-pkgx/commit/14a4614))
+- update crates.io_typos, libsdlorg, opencodeai, projenio ([708debc](https://github.com/stacksjs/ts-pkgx/commit/708debc))
+- update moonrepo.dev_moon, opencodeai ([dd7b118](https://github.com/stacksjs/ts-pkgx/commit/dd7b118))
+- update github.com_ggerganov_llama.cpp, opencodeai, sqlcdev, x.org ([e020ca2](https://github.com/stacksjs/ts-pkgx/commit/e020ca2))
+
+### Contributors
+
+- Chris <chrisbreuer93@gmail.com>
+- chrisbbreuer <chrisbreuer93@gmail.com>
 
 ## v0.2.0...main
 
@@ -115,7 +140,6 @@
 
 ## ...main
 
-
 ### 🏡 Chore
 
 - Initial commit ([807359c](https://github.com/stacksjs/ts-pkgx/commit/807359c))
@@ -217,4 +241,3 @@
 - Chris ([@chrisbbreuer](https://github.com/chrisbbreuer))
 - GitHub Action <action@github.com>
 - Cab-mikee ([@cab-mikee](https://github.com/cab-mikee))
-
