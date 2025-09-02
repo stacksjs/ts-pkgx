@@ -3,7 +3,7 @@
  *
  * @domain `git-quick-stats.sh`
  * @programs `git-quick-stats`
- * @version `2.7.0` (14 versions available)
+ * @version `2.8.0` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install git-quick-stats`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "git-quick-stats"
  * console.log(pkg.description) // "▁▅▆▃▅ Git quick statistics is a simple and effi..."
  * console.log(pkg.programs)    // ["git-quick-stats"]
- * console.log(pkg.versions[0]) // "2.7.0" (latest)
+ * console.log(pkg.versions[0]) // "2.8.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/git-quick-stats-sh.md
@@ -80,6 +80,7 @@ export const gitquickstatsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.8.0',
     '2.7.0',
     '2.6.2',
     '2.6.1',

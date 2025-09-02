@@ -1,5 +1,5 @@
 /**
- * **pwmt.org/girara** - User interface library
+ * **pwmt.org/girara** - pkgx package
  *
  * @domain `pwmt.org/girara`
  * @version `0.4.5` (2 versions available)
@@ -14,7 +14,6 @@
  *
  * const pkg = pantry.pwmtorggirara
  * console.log(pkg.name)        // "pwmt.org/girara"
- * console.log(pkg.description) // "User interface library"
  * console.log(pkg.versions[0]) // "0.4.5" (latest)
  * ```
  *
@@ -33,7 +32,7 @@ export const pwmtorggiraraPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'User interface library' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pwmt.org/girara/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
