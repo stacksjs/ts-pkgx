@@ -2,7 +2,7 @@
  * **x.org/xfixes** - pkgx package
  *
  * @domain `x.org/xfixes`
- * @version `6.0.1` (1 versions available)
+ * @version `6.0.2` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install x.org/xfixes`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.xorgxfixes
  * console.log(pkg.name)        // "x.org/xfixes"
- * console.log(pkg.versions[0]) // "6.0.1" (latest)
+ * console.log(pkg.versions[0]) // "6.0.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xfixes.md
@@ -56,6 +56,7 @@ export const xorgxfixesPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '6.0.2',
     '6.0.1',
   ] as const,
   aliases: [] as const,

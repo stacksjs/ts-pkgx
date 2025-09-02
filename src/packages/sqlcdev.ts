@@ -3,7 +3,7 @@
  *
  * @domain `sqlc.dev`
  * @programs `sqlc`
- * @version `1.29.0` (3 versions available)
+ * @version `1.30.0` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sqlc`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "sqlc"
  * console.log(pkg.description) // "Generate type-safe code from SQL"
  * console.log(pkg.programs)    // ["sqlc"]
- * console.log(pkg.versions[0]) // "1.29.0" (latest)
+ * console.log(pkg.versions[0]) // "1.30.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sqlc-dev.md
@@ -62,6 +62,7 @@ export const sqlcPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.30.0',
     '1.29.0',
     '1.28.0',
     '1.27.0',
