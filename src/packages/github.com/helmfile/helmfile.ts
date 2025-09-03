@@ -3,7 +3,7 @@
  *
  * @domain `github.com/helmfile/helmfile`
  * @programs `helmfile`
- * @version `1.1.5` (28 versions available)
+ * @version `1.1.6` (29 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install helmfile`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "helmfile"
  * console.log(pkg.description) // "Declaratively deploy your Kubernetes manifests,..."
  * console.log(pkg.programs)    // ["helmfile"]
- * console.log(pkg.versions[0]) // "1.1.5" (latest)
+ * console.log(pkg.versions[0]) // "1.1.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/helmfile/helmfile.md
@@ -69,6 +69,7 @@ export const helmfilePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.1.6',
     '1.1.5',
     '1.1.4',
     '1.1.3',
