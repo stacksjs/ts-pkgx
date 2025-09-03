@@ -3,7 +3,7 @@
  *
  * @domain `freedesktop.org/poppler-qt5`
  * @programs `pdfattach`, `pdfdetach`, `pdffonts`, `pdfimages`, `pdfinfo`, ... (+8 more)
- * @version `25.9.0` (24 versions available)
+ * @version `25.9.1` (25 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install poppler-qt5`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "poppler-qt5"
  * console.log(pkg.description) // "PDF rendering library (based on the xpdf-3.0 co..."
  * console.log(pkg.programs)    // ["pdfattach", "pdfdetach", ...]
- * console.log(pkg.versions[0]) // "25.9.0" (latest)
+ * console.log(pkg.versions[0]) // "25.9.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/freedesktop-org/poppler-qt5.md
@@ -100,6 +100,7 @@ export const popplerqt5Package = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '25.9.1',
     '25.9.0',
     '25.8.0',
     '25.7.0',

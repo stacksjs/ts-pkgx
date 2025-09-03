@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-09-03T22:30:17.954Z
+- **Last Updated**: 2025-09-03T23:30:12.745Z
 
 ## Table of Contents
 
@@ -123,7 +123,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[ansible.com/ansible-lint](./packages/ansible.com/ansible-lint/index.md)** () | ansible-lint checks playbooks for practices and behavior that could potentially be improved and c... | ansible-lint | 25.8.2 (+26) | `pkgx ansible-lint` |
 | **[argoproj.github.io/cd](./packages/argoproj.github.io/cd/index.md)** (argocd) | GitOps Continuous Delivery for Kubernetes | argocd | 3.1.1 (+127) | `pkgx argocd` |
 | **[consul.io](./packages/consul.io/index.md)** () | Consul is a distributed, highly available, and data center aware solution to connect and configur... | consul | 1.21.4 (+13) | `pkgx consul` |
-| **[docker.com/cli](./packages/docker.com/cli/index.md)** (docker) | Pack, ship and run any application as a lightweight container | docker | 28.3.3 (+56) | `pkgx docker` |
+| **[docker.com/cli](./packages/docker.com/cli/index.md)** (docker) | Pack, ship and run any application as a lightweight container | docker | 28.4.0 (+57) | `pkgx docker` |
 | **[docker.com/compose](./packages/docker.com/compose/index.md)** () | Define and run multi-container applications with Docker | docker-compose | 2.39.2 (+59) | `pkgx docker-compose` |
 | **[fluxcd.io/flux2](./packages/fluxcd.io/flux2/index.md)** () | Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit. | flux | 2.6.4 (+13) | `pkgx flux` |
 | **[github.com/aws-cloudformation/cfn-lint](./packages/github.com/aws-cloudformation/cfn-lint.md)** () | Validate CloudFormation templates against the CloudFormation spec | cfn-lint | 1.39.1 (+156) | `pkgx cfn-lint` |
@@ -156,7 +156,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cilium.io/cilium](./packages/cilium.io/cilium/index.md)** () | CLI to install, manage & troubleshoot Kubernetes clusters running Cilium | cilium | 0.18.7 (+27) | `pkgx cilium` |
 | **[cilium.io/hubble](./packages/cilium.io/hubble/index.md)** () | Hubble - Network, Service & Security Observability for Kubernetes using eBPF | hubble | 1.18.0 (+16) | `pkgx hubble` |
 | **[cloudnative-pg.io](./packages/cloudnative-pg.io/index.md)** () | CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases with... | kubectl-cnpg | 1.27.0 (+8) | `pkgx kubectl-cnpg` |
-| **[docker.com/cli](./packages/docker.com/cli/index.md)** (docker) | Pack, ship and run any application as a lightweight container | docker | 28.3.3 (+56) | `pkgx docker` |
+| **[docker.com/cli](./packages/docker.com/cli/index.md)** (docker) | Pack, ship and run any application as a lightweight container | docker | 28.4.0 (+57) | `pkgx docker` |
 | **[github.com/helmfile/helmfile](./packages/github.com/helmfile/helmfile.md)** () | Declaratively deploy your Kubernetes manifests, Kustomize configs, and Charts as Helm releases. G... | helmfile | 1.1.6 (+28) | `pkgx helmfile` |
 | **[github.com/stern/stern](./packages/github.com/stern/stern.md)** () | ⎈ Multi pod and container log tailing for Kubernetes -- Friendly fork of https://github.com/werck... | stern | 1.32.0 (+6) | `pkgx stern` |
 | **[github.com/yannh/kubeconform](./packages/github.com/yannh/kubeconform.md)** () | A FAST Kubernetes manifests validator, with support for Custom Resources! | kubeconform | 0.7.0 (+4) | `pkgx kubeconform` |
