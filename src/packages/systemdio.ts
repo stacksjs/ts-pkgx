@@ -3,7 +3,7 @@
  *
  * @domain `systemd.io`
  * @programs `busctl`, `coredumpctl`, `hostnamectl`, `journalctl`, `kernel-install`, ... (+50 more)
- * @version `257.8.0` (29 versions available)
+ * @version `257.9.0` (30 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install systemd.io`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "systemd.io"
  * console.log(pkg.description) // "The systemd System and Service Manager"
  * console.log(pkg.programs)    // ["busctl", "coredumpctl", ...]
- * console.log(pkg.versions[0]) // "257.8.0" (latest)
+ * console.log(pkg.versions[0]) // "257.9.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/systemd-io.md
@@ -130,6 +130,7 @@ export const systemdioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '257.9.0',
     '257.8.0',
     '257.7.0',
     '257.6.0',
