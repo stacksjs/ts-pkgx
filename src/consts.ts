@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-08-29T02:34:14.078Z
+ * Generated on 2025-09-03T02:31:59.515Z
  */
 
 /**
@@ -23,28 +23,28 @@ export const DEFAULT_TIMEOUT_MS = 20000
  * Package aliases mapping friendly names to domain names
  */
 export const PACKAGE_ALIASES: Record<string, string> = {
-  'node': 'nodejs.org',
-  'python': 'python.org',
-  'go': 'go.dev',
-  'rust': 'rust-lang.org',
-  'ruby': 'ruby-lang.org',
-  'php': 'php.net',
-  'perl': 'perl.org',
-  'deno': 'deno.land',
-  'bun': 'bun.sh',
+  node: 'nodejs.org',
+  python: 'python.org',
+  go: 'go.dev',
+  rust: 'rust-lang.org',
+  ruby: 'ruby-lang.org',
+  php: 'php.net',
+  perl: 'perl.org',
+  deno: 'deno.land',
+  bun: 'bun.sh',
   'bun.com': 'bun.sh',
-  'git': 'git-scm.com',
-  'docker': 'docker.com',
-  'kubectl': 'kubernetes.io',
-  'terraform': 'terraform.io',
-  'ansible': 'ansible.com',
-  'nvim': 'neovim.io',
-  'vim': 'vim.org',
-  'curl': 'curl.se',
+  git: 'git-scm.com',
+  docker: 'docker.com',
+  kubectl: 'kubernetes.io',
+  terraform: 'terraform.io',
+  ansible: 'ansible.com',
+  nvim: 'neovim.io',
+  vim: 'vim.org',
+  curl: 'curl.se',
 } as const
 
 /**
- * List of all known packages (1595 total)
+ * List of all known packages (1596 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -286,6 +286,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'crates.io/srgn',
   'crates.io/stego',
   'crates.io/tabiew',
+  'crates.io/tea-gpg-wallet',
   'crates.io/termusic',
   'crates.io/tidy-viewer',
   'crates.io/tiny',
