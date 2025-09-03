@@ -3,7 +3,7 @@
  *
  * @domain `coder.com`
  * @programs `coder`
- * @version `2.25.1` (78 versions available)
+ * @version `2.26.0` (79 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install coder`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "coder"
  * console.log(pkg.description) // "Tool for provisioning self-hosted development e..."
  * console.log(pkg.programs)    // ["coder"]
- * console.log(pkg.versions[0]) // "2.25.1" (latest)
+ * console.log(pkg.versions[0]) // "2.26.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/coder-com.md
@@ -62,6 +62,7 @@ export const coderPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.26.0',
     '2.25.1',
     '2.25.0',
     '2.24.3',

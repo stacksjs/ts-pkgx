@@ -3,7 +3,7 @@
  *
  * @domain `nushell.sh`
  * @programs `nu`
- * @version `0.106.1` (50 versions available)
+ * @version `0.107.0` (51 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nu`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "nu"
  * console.log(pkg.description) // "Modern shell for the GitHub era"
  * console.log(pkg.programs)    // ["nu"]
- * console.log(pkg.versions[0]) // "0.106.1" (latest)
+ * console.log(pkg.versions[0]) // "0.107.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nushell-sh.md
@@ -69,6 +69,7 @@ export const nuPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.107.0',
     '0.106.1',
     '0.106.0',
     '0.105.1',
