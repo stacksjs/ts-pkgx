@@ -3,7 +3,7 @@
  *
  * @domain `github.com/synfinatic/aws-sso-cli`
  * @programs `aws-sso`
- * @version `2.0.3` (15 versions available)
+ * @version `2.1.0` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aws-sso`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "aws-sso"
  * console.log(pkg.description) // "A powerful tool for using AWS Identity Center f..."
  * console.log(pkg.programs)    // ["aws-sso"]
- * console.log(pkg.versions[0]) // "2.0.3" (latest)
+ * console.log(pkg.versions[0]) // "2.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/synfinatic/aws-sso-cli.md
@@ -62,6 +62,7 @@ export const awsssoPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.1.0',
     '2.0.3',
     '2.0.2',
     '2.0.1',
