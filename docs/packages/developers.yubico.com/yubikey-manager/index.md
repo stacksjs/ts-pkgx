@@ -31,14 +31,15 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 10 versions</summary>
+<summary>Show all 11 versions</summary>
 
-- `5.7.2`, `5.7.1`, `5.7.0`, `5.6.1`, `5.6.0`
-- `5.5.1`, `5.5.0`, `5.4.0`, `5.3.0`, `5.2.1`
+- `5.8.0`, `5.7.2`, `5.7.1`, `5.7.0`, `5.6.1`
+- `5.6.0`, `5.5.1`, `5.5.0`, `5.4.0`, `5.3.0`
+- `5.2.1`
 
 </details>
 
-**Latest Version**: `5.7.2`
+**Latest Version**: `5.8.0`
 
 ### Install Specific Version
 
