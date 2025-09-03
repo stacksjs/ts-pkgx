@@ -3,7 +3,7 @@
  *
  * @domain `github.com/MilesCranmer/rip2`
  * @programs `rip`
- * @version `0.9.4` (5 versions available)
+ * @version `0.9.5` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rip`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "rip2"
  * console.log(pkg.description) // "A safe and ergonomic alternative to rm"
  * console.log(pkg.programs)    // ["rip"]
- * console.log(pkg.versions[0]) // "0.9.4" (latest)
+ * console.log(pkg.versions[0]) // "0.9.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/MilesCranmer/rip2.md
@@ -63,6 +63,7 @@ export const ripPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.9.5',
     '0.9.4',
     '0.9.3',
     '0.9.2',
