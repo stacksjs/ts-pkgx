@@ -240,6 +240,7 @@ import { cratesiosqlxcliPackage } from './crates.io/sqlx-cli'
 import { srgnPackage } from './crates.io/srgn'
 import { stegoPackage } from './crates.io/stego'
 import { twPackage } from './crates.io/tabiew'
+import { cratesioteagpgwalletPackage } from './crates.io/tea-gpg-wallet'
 import { termusicPackage } from './crates.io/termusic'
 import { tidyviewerPackage } from './crates.io/tidy-viewer'
 import { tinyPackage } from './crates.io/tiny'
@@ -2011,6 +2012,8 @@ export interface Pantry {
   cratesiostego: typeof stegoPackage
   tabiew: typeof twPackage
   cratesiotabiew: typeof twPackage
+  tea_gpg_wallet: typeof cratesioteagpgwalletPackage
+  cratesioteagpgwallet: typeof cratesioteagpgwalletPackage
 
   cratesiotermusic: typeof termusicPackage
   tidy_viewer: typeof tidyviewerPackage
@@ -5825,6 +5828,8 @@ export const pantry: Pantry = {
   cratesiostego: stegoPackage,
   tabiew: twPackage,
   cratesiotabiew: twPackage,
+  tea_gpg_wallet: cratesioteagpgwalletPackage,
+  cratesioteagpgwallet: cratesioteagpgwalletPackage,
 
   cratesiotermusic: termusicPackage,
   tidy_viewer: tidyviewerPackage,
