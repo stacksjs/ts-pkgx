@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-09-03T18:31:34.467Z
+- **Last Updated**: 2025-09-03T19:29:33.293Z
 
 ## Table of Contents
 
@@ -52,7 +52,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[julialang.org](./packages/julialang.org/index.md)** () | The Julia Programming Language | julia | 1.11.6 (+19) | `pkgx julia` |
 | **[lua.org](./packages/lua.org/index.md)** () | Powerful, lightweight programming language | lua, luac | 5.4.8 (+3) | `pkgx lua` |
 | **[luajit.org](./packages/luajit.org/index.md)** () | Mirror of the LuaJIT git repository | luajit, luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;. | 2.1.0 (+0) | `pkgx luajit` |
-| **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 24.7.0 (+149) | `pkgx node` |
+| **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 24.7.0 (+150) | `pkgx node` |
 | **[php.net](./packages/php.net/index.md)** (php) | General-purpose scripting language | pear, pecl, phar, ... (+5) | 8.4.12 (+80) | `pkgx php` |
 | **[python.org](./packages/python.org/index.md)** (py) | The Python programming language | python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace; | 3.13.7 (+152) | `pkgx py` |
 | **[ruby-lang.org](./packages/ruby-lang.org/index.md)** (ruby) | Powerful, clean, object-oriented scripting language | erb, irb, rake, ... (+3) | 3.4.5 (+44) | `pkgx ruby` |
@@ -138,7 +138,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[kubernetes.io/kustomize](./packages/kubernetes.io/kustomize/index.md)** () | Template-free customization of Kubernetes YAML manifests | kustomize | 5.7.1 (+15) | `pkgx kustomize` |
 | **[kubernetes.io/minikube](./packages/kubernetes.io/minikube/index.md)** () | Run a Kubernetes cluster locally | minikube | 1.36.0 (+11) | `pkgx minikube` |
 | **[nomadproject.io](./packages/nomadproject.io/index.md)** () | Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of ... | nomad | 1.10.4 (+15) | `pkgx nomad` |
-| **[opentofu.org](./packages/opentofu.org/index.md)** () | OpenTofu lets you declaratively manage your cloud infrastructure. | tofu | 1.9.3 (+30) | `pkgx tofu` |
+| **[opentofu.org](./packages/opentofu.org/index.md)** () | OpenTofu lets you declaratively manage your cloud infrastructure. | tofu | 1.9.4 (+32) | `pkgx tofu` |
 | **[packer.io](./packages/packer.io/index.md)** () | Packer is a tool for creating identical machine images for multiple platforms from a single sourc... | packer | 1.14.1 (+14) | `pkgx packer` |
 | **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.6.0 (+40) | `pkgx podman` |
 | **[runatlantis.io](./packages/runatlantis.io/index.md)** () | Terraform Pull Request Automation tool | atlantis | 0.35.1 (+19) | `pkgx atlantis` |

@@ -26,21 +26,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 15 versions</summary>
+<summary>Show all 16 versions</summary>
 
-- `3.12.1`, `3.12.0`, `3.11.0`, `3.10.0`, `3.9.1`
-- `3.9.0`, `3.8.3`, `3.8.2`, `3.8.1`, `3.8.0`
-- `3.7.2`, `3.7.1`, `3.7.0`, `3.6.1`, `3.5.0`
+- `3.13.0`, `3.12.1`, `3.12.0`, `3.11.0`, `3.10.0`
+- `3.9.1`, `3.9.0`, `3.8.3`, `3.8.2`, `3.8.1`
+- `3.8.0`, `3.7.2`, `3.7.1`, `3.7.0`, `3.6.1`
+- `3.5.0`
 
 </details>
 
-**Latest Version**: `3.12.1`
+**Latest Version**: `3.13.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +aomedia.googlesource.com/aom@3.12.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +aomedia.googlesource.com/aom@3.13.0 -- $SHELL -i
 ```
 
 ## Usage Examples
