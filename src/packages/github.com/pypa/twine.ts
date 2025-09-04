@@ -3,7 +3,7 @@
  *
  * @domain `github.com/pypa/twine`
  * @programs `twine`
- * @version `6.1.0` (7 versions available)
+ * @version `6.2.0` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install twine`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "twine"
  * console.log(pkg.description) // "Utilities for interacting with PyPI"
  * console.log(pkg.programs)    // ["twine"]
- * console.log(pkg.versions[0]) // "6.1.0" (latest)
+ * console.log(pkg.versions[0]) // "6.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/pypa/twine.md
@@ -69,6 +69,7 @@ export const twinePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '6.2.0',
     '6.1.0',
     '6.0.1',
     '6.0.0',

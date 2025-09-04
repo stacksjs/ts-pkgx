@@ -3,7 +3,7 @@
  *
  * @domain `github.com/hykilpikonna/hyfetch`
  * @programs `hyfetch`
- * @version `1.99.0` (2 versions available)
+ * @version `2.0.2` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install hyfetch`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "hyfetch"
  * console.log(pkg.description) // "Fast, highly customisable system info script wi..."
  * console.log(pkg.programs)    // ["hyfetch"]
- * console.log(pkg.versions[0]) // "1.99.0" (latest)
+ * console.log(pkg.versions[0]) // "2.0.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/hykilpikonna/hyfetch.md
@@ -69,6 +69,7 @@ export const hyfetchPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.0.2',
     '1.99.0',
     '1.4.11',
   ] as const,

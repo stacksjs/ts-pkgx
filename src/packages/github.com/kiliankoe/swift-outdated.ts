@@ -3,7 +3,7 @@
  *
  * @domain `github.com/kiliankoe/swift-outdated`
  * @programs `swift-outdated`
- * @version `0.9.1` (7 versions available)
+ * @version `0.10.0` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install swift-outdated`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "swift-outdated"
  * console.log(pkg.description) // "A swift subcommand for displaying when your dep..."
  * console.log(pkg.programs)    // ["swift-outdated"]
- * console.log(pkg.versions[0]) // "0.9.1" (latest)
+ * console.log(pkg.versions[0]) // "0.10.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/kiliankoe/swift-outdated.md
@@ -62,6 +62,7 @@ export const swiftoutdatedPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.10.0',
     '0.9.1',
     '0.9.0',
     '0.8.1',
