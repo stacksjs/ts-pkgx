@@ -3,7 +3,7 @@
  *
  * @domain `docker.com/buildx`
  * @programs `buildx`
- * @version `0.27.0` (29 versions available)
+ * @version `0.28.0` (30 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install buildx`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "buildx"
  * console.log(pkg.description) // "Docker CLI plugin for extended build capabiliti..."
  * console.log(pkg.programs)    // ["buildx"]
- * console.log(pkg.versions[0]) // "0.27.0" (latest)
+ * console.log(pkg.versions[0]) // "0.28.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/docker-com/buildx.md
@@ -62,6 +62,7 @@ export const buildxPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.28.0',
     '0.27.0',
     '0.26.1',
     '0.26.0',
