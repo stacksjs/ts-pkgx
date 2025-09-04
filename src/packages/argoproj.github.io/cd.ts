@@ -3,7 +3,7 @@
  *
  * @domain `argoproj.github.io/cd`
  * @programs `argocd`
- * @version `3.1.2` (131 versions available)
+ * @version `3.1.3` (135 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install argocd`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "argo-cd"
  * console.log(pkg.description) // "GitOps Continuous Delivery for Kubernetes"
  * console.log(pkg.programs)    // ["argocd"]
- * console.log(pkg.versions[0]) // "3.1.2" (latest)
+ * console.log(pkg.versions[0]) // "3.1.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/argoproj-github-io/cd.md
@@ -63,9 +63,11 @@ export const argocdPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.1.3',
     '3.1.2',
     '3.1.1',
     '3.1.0',
+    '3.0.15',
     '3.0.14',
     '3.0.13',
     '3.0.12',
@@ -77,6 +79,7 @@ export const argocdPackage = {
     '3.0.2',
     '3.0.1',
     '3.0.0',
+    '2.14.17',
     '2.14.16',
     '2.14.15',
     '2.14.14',
@@ -93,6 +96,7 @@ export const argocdPackage = {
     '2.14.2',
     '2.14.1',
     '2.14.0',
+    '2.13.9',
     '2.13.7',
     '2.13.6',
     '2.13.5',
