@@ -3,7 +3,7 @@
  *
  * @domain `openai.com/openai-python`
  * @programs `openai`
- * @version `1.105.0` (276 versions available)
+ * @version `1.106.0` (277 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openai`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "openai"
  * console.log(pkg.description) // "The official Python library for the OpenAI API"
  * console.log(pkg.programs)    // ["openai"]
- * console.log(pkg.versions[0]) // "1.105.0" (latest)
+ * console.log(pkg.versions[0]) // "1.106.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openai-com/openai-python.md
@@ -69,6 +69,7 @@ export const openaiPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.106.0',
     '1.105.0',
     '1.104.2',
     '1.104.1',
