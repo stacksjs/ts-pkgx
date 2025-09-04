@@ -333,6 +333,7 @@ import { elixirlangorgotp27Package } from './elixir-lang.org/otp-27'
 import { elixirlangorgPackage } from './elixir-langorg'
 import { elizaPackage } from './elizaOSgithubio'
 import { elvishPackage } from './elvsh'
+import { emcrisostomogithubiofswatchPackage } from './emcrisostomo.github.io/fswatch'
 import { encoregoPackage } from './encore.dev/go'
 import { encoredevPackage } from './encoredev'
 import { eolPackage } from './endoflifedate'
@@ -2159,6 +2160,8 @@ export interface Pantry {
   elizaOSgithubio: typeof elizaPackage
   elizaosgithubio: typeof elizaPackage
   elvsh: typeof elvishPackage
+  fswatch: typeof emcrisostomogithubiofswatchPackage
+  emcrisostomogithubiofswatch: typeof emcrisostomogithubiofswatchPackage
 
   encoredevgo: typeof encoregoPackage
   encoredev: typeof encoredevPackage
@@ -5975,6 +5978,8 @@ export const pantry: Pantry = {
   elizaOSgithubio: elizaPackage,
   elizaosgithubio: elizaPackage,
   elvsh: elvishPackage,
+  fswatch: emcrisostomogithubiofswatchPackage,
+  emcrisostomogithubiofswatch: emcrisostomogithubiofswatchPackage,
 
   encoredevgo: encoregoPackage,
   encoredev: encoredevPackage,
