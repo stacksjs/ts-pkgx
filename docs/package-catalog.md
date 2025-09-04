@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-09-04T05:29:21.470Z
+- **Last Updated**: 2025-09-04T06:31:53.434Z
 
 ## Table of Contents
 
@@ -90,7 +90,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[dgraph.io](./packages/dgraph.io/index.md)** () | high-performance graph database for real-time use cases | dgraph | 24.1.4 (+11) | `pkgx dgraph` |
 | **[duckdb.org](./packages/duckdb.org/index.md)** () | DuckDB is an analytical in-process SQL database management system | duckdb | 1.3.2 (+20) | `pkgx duckdb` |
-| **[edgedb.com](./packages/edgedb.com/index.md)** () | The EdgeDB CLI | edgedb | 7.8.0 (+38) | `pkgx edgedb` |
+| **[edgedb.com](./packages/edgedb.com/index.md)** () | The EdgeDB CLI | edgedb | 7.8.1 (+39) | `pkgx edgedb` |
 | **[etcd.io](./packages/etcd.io/index.md)** () | Distributed reliable key-value store for the most critical data of a distributed system | etcd, etcdctl | 3.6.4 (+15) | `pkgx etcd` |
 | **[litecli.com](./packages/litecli.com/index.md)** () | CLI for SQLite Databases with auto-completion and syntax highlighting | litecli | 1.16.0 (+15) | `pkgx litecli` |
 | **[mongodb.com/shell](./packages/mongodb.com/shell/index.md)** () | MongoDB Shell to connect, configure, query, and work with your MongoDB database | mongosh | 2.5.7 (+37) | `pkgx mongosh` |

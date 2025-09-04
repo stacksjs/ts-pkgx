@@ -3,7 +3,7 @@
  *
  * @domain `edgedb.com`
  * @programs `edgedb`
- * @version `7.8.0` (39 versions available)
+ * @version `7.8.1` (40 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install edgedb`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "edgedb"
  * console.log(pkg.description) // "The EdgeDB CLI"
  * console.log(pkg.programs)    // ["edgedb"]
- * console.log(pkg.versions[0]) // "7.8.0" (latest)
+ * console.log(pkg.versions[0]) // "7.8.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/edgedb-com.md
@@ -62,6 +62,7 @@ export const edgedbPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '7.8.1',
     '7.8.0',
     '7.7.0',
     '7.6.0',
