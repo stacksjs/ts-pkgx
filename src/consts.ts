@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-09-03T02:31:59.515Z
+ * Generated on 2025-09-04T02:36:46.951Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1596 total)
+ * List of all known packages (1597 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -379,6 +379,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'elixir-lang.org/otp-27',
   'elizaOS.github.io',
   'elv.sh',
+  'emcrisostomo.github.io/fswatch',
   'encore.dev',
   'encore.dev/go',
   'endoflife.date',
