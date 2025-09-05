@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-09-05T22:29:44.532Z
+- **Last Updated**: 2025-09-05T23:32:08.882Z
 
 ## Table of Contents
 
@@ -340,7 +340,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mpv.io](./packages/mpv.io/index.md)** () | Media player based on MPlayer and mplayer2 | mpv | 0.40.0 (+2) | `pkgx mpv` |
 | **[sf.net/optipng](./packages/sf.net/optipng/index.md)** () | PNG file optimizer | optipng | 7.9.1 (+2) | `pkgx optipng` |
 | **[streamlink.github.io](./packages/streamlink.github.io/index.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 7.5.0 (+20) | `pkgx streamlink` |
-| **[yt-dlp.org](./packages/yt-dlp.org/index.md)** () | A feature-rich command-line audio/video downloader | yt-dlp | 2025.8.27 (+53) | `pkgx yt-dlp` |
+| **[yt-dlp.org](./packages/yt-dlp.org/index.md)** () | A feature-rich command-line audio/video downloader | yt-dlp | 2025.9.5 (+54) | `pkgx yt-dlp` |
 
 ## Graphics Libraries
 
