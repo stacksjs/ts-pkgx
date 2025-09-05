@@ -3,7 +3,7 @@
  *
  * @domain `syncthing.net`
  * @programs `syncthing`
- * @version `2.0.6` (27 versions available)
+ * @version `2.0.7` (28 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install syncthing`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "syncthing"
  * console.log(pkg.description) // "Open source continuous file synchronization app..."
  * console.log(pkg.programs)    // ["syncthing"]
- * console.log(pkg.versions[0]) // "2.0.6" (latest)
+ * console.log(pkg.versions[0]) // "2.0.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/syncthing-net.md
@@ -62,6 +62,7 @@ export const syncthingPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.0.7',
     '2.0.6',
     '2.0.5',
     '2.0.4',
