@@ -1,5 +1,5 @@
 /**
- * **github.com/libass/libass** - pkgx package
+ * **github.com/libass/libass** - libass is a portable subtitle renderer for the ASS/SSA (Advanced Substation Alpha/Substation Alpha) subtitle format.
  *
  * @domain `github.com/libass/libass`
  * @version `0.17.4` (4 versions available)
@@ -14,6 +14,7 @@
  *
  * const pkg = pantry.githubcomlibasslibass
  * console.log(pkg.name)        // "github.com/libass/libass"
+ * console.log(pkg.description) // "libass is a portable subtitle renderer for the ..."
  * console.log(pkg.versions[0]) // "0.17.4" (latest)
  * ```
  *
@@ -32,7 +33,7 @@ export const githubcomlibasslibassPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'libass is a portable subtitle renderer for the ASS/SSA (Advanced Substation Alpha/Substation Alpha) subtitle format.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libass/libass/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
