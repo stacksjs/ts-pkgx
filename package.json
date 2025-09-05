@@ -84,7 +84,7 @@
     "pkgx:docs": "bun bin/cli.ts generate-docs"
   },
   "optionalDependencies": {
-    "chromium-bidi": "^7.2.0",
+    "chromium-bidi": "^8.1.0",
     "electron": "^37.4.0",
     "js-yaml": "^4.1.0",
     "playwright": "^1.55.0"
