@@ -8,7 +8,7 @@
  *
  * @install `launchpad install hyfetch`
  * @name `hyfetch`
- * @dependencies `pkgx.sh^1`
+ * @dependencies `pkgx.sh>=1`
  *
  * @example
  * ```typescript
@@ -62,7 +62,7 @@ export const hyfetchPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'pkgx.sh^1',
+    'pkgx.sh>=1',
   ] as const,
   /**
    * Available versions from newest to oldest.

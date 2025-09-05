@@ -44,7 +44,7 @@ sh <(curl https://pkgx.sh) hyfetch -- $SHELL -i
 
 This package depends on:
 
-- `pkgx.sh^1`
+- `pkgx.sh>=1`
 
 ## Usage Examples
 

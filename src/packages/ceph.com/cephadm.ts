@@ -3,7 +3,7 @@
  *
  * @domain `ceph.com/cephadm`
  * @programs `cephadm`
- * @version `20.3.0` (10 versions available)
+ * @version `20.3.0` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cephadm`
@@ -71,6 +71,7 @@ export const cephadmPackage = {
    */
   versions: [
     '20.3.0',
+    '20.1.0',
     '20.0.0',
     '19.3.0',
     '19.2.3',

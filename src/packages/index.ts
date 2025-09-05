@@ -1126,6 +1126,7 @@ import { pyrightPackage } from './microsoft.com/pyright'
 import { midnightCommanderPackage } from './midnight-commanderorg'
 import { mcPackage } from './min.io/mc'
 import { minioPackage } from './minio'
+import { miniupnpfreefrPackage } from './miniupnpfreefr'
 import { misePackage } from './misejdxdev'
 import { mitmproxyPackage } from './mitmproxyorg'
 import { mkcertPackage } from './mkcertdev'
@@ -3576,6 +3577,7 @@ export interface Pantry {
 
   miniomc: typeof mcPackage
   minio: typeof minioPackage
+  miniupnpfreefr: typeof miniupnpfreefrPackage
   misejdxdev: typeof misePackage
   mitmproxyorg: typeof mitmproxyPackage
   mkcertdev: typeof mkcertPackage
@@ -7394,6 +7396,7 @@ export const pantry: Pantry = {
 
   miniomc: mcPackage,
   minio: minioPackage,
+  miniupnpfreefr: miniupnpfreefrPackage,
   misejdxdev: misePackage,
   mitmproxyorg: mitmproxyPackage,
   mkcertdev: mkcertPackage,
