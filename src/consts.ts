@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-09-04T02:36:46.951Z
+ * Generated on 2025-09-05T02:32:16.687Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1597 total)
+ * List of all known packages (1598 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -1172,6 +1172,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'midnight-commander.org',
   'min.io',
   'min.io/mc',
+  'miniupnp.free.fr',
   'mise.jdx.dev',
   'mitmproxy.org',
   'mkcert.dev',
