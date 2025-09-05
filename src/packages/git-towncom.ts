@@ -3,7 +3,7 @@
  *
  * @domain `git-town.com`
  * @programs `git-town`
- * @version `21.4.3` (61 versions available)
+ * @version `21.5.0` (62 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install git-town`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "git-town"
  * console.log(pkg.description) // "High-level command-line interface for Git"
  * console.log(pkg.programs)    // ["git-town"]
- * console.log(pkg.versions[0]) // "21.4.3" (latest)
+ * console.log(pkg.versions[0]) // "21.5.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/git-town-com.md
@@ -62,6 +62,7 @@ export const gittownPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '21.5.0',
     '21.4.3',
     '21.4.2',
     '21.4.1',
