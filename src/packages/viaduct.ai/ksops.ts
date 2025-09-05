@@ -3,7 +3,7 @@
  *
  * @domain `viaduct.ai/ksops`
  * @programs `ksops`
- * @version `4.3.3` (2 versions available)
+ * @version `4.4.0` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ksops`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "ksops"
  * console.log(pkg.description) // "KSOPS - A Flexible Kustomize Plugin for SOPS En..."
  * console.log(pkg.programs)    // ["ksops"]
- * console.log(pkg.versions[0]) // "4.3.3" (latest)
+ * console.log(pkg.versions[0]) // "4.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/viaduct-ai/ksops.md
@@ -62,6 +62,7 @@ export const ksopsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.4.0',
     '4.3.3',
     '4.3.2',
   ] as const,

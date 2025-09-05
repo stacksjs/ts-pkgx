@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `7.8.2`, `7.8.0`, `7.6.16`, `7.4.20`
+- `7.8.4`, `7.8.2`, `7.8.0`, `7.6.16`, `7.4.20`
 
 </details>
 
-**Latest Version**: `7.8.2`
+**Latest Version**: `7.8.4`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/ivmai/libatomic_ops@7.8.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/ivmai/libatomic_ops@7.8.4 -- $SHELL -i
 ```
 
 ## Usage Examples
