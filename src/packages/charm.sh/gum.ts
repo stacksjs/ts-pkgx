@@ -3,7 +3,7 @@
  *
  * @domain `charm.sh/gum`
  * @programs `gum`
- * @version `0.16.2` (18 versions available)
+ * @version `0.17.0` (19 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gum`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "gum"
  * console.log(pkg.description) // "A tool for glamorous shell scripts 🎀"
  * console.log(pkg.programs)    // ["gum"]
- * console.log(pkg.versions[0]) // "0.16.2" (latest)
+ * console.log(pkg.versions[0]) // "0.17.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/charm-sh/gum.md
@@ -62,6 +62,7 @@ export const gumPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.17.0',
     '0.16.2',
     '0.16.1',
     '0.16.0',
