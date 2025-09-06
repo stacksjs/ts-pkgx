@@ -516,7 +516,7 @@ import { buildifierPackage } from './github.com/bazelbuild/buildtools'
 import { githubcombenjaminpsixPackage } from './github.com/benjaminp/six'
 import { awswhoamiPackage } from './github.com/benkehoe/aws-whoami-golang'
 import { githubcombesser82libxcryptPackage } from './github.com/besser82/libxcrypt'
-import { lporgPackage } from './github.com/blacktop/lporg'
+import { githubcomblacktoplporgPackage } from './github.com/blacktop/lporg'
 import { nexPackage } from './github.com/blynn/nex'
 import { sccPackage } from './github.com/boyter/scc'
 import { githubcombronaiproute2macPackage } from './github.com/brona/iproute2mac'
@@ -2493,8 +2493,8 @@ export interface Pantry {
   githubcombenkehoe: typeof awswhoamiPackage
   libxcrypt: typeof githubcombesser82libxcryptPackage
   githubcombesser82: typeof githubcombesser82libxcryptPackage
-
-  githubcomblacktop: typeof lporgPackage
+  lporg: typeof githubcomblacktoplporgPackage
+  githubcomblacktop: typeof githubcomblacktoplporgPackage
 
   githubcomblynn: typeof nexPackage
 
@@ -5000,7 +5000,7 @@ export interface Pantry {
   heif: typeof heifPackage
   fusermount3: typeof fusermount3Package
   'swift-sh': typeof swiftshPackage
-  lporg: typeof lporgPackage
+  blacktop: typeof githubcomblacktoplporgPackage
   bruce: typeof brucePackage
   envchain: typeof envchainPackage
   'age-plugin-yubikey': typeof agepluginyubikeyPackage
@@ -6312,8 +6312,8 @@ export const pantry: Pantry = {
   githubcombenkehoe: awswhoamiPackage,
   libxcrypt: githubcombesser82libxcryptPackage,
   githubcombesser82: githubcombesser82libxcryptPackage,
-
-  githubcomblacktop: lporgPackage,
+  lporg: githubcomblacktoplporgPackage,
+  githubcomblacktop: githubcomblacktoplporgPackage,
 
   githubcomblynn: nexPackage,
 
@@ -8819,7 +8819,7 @@ export const pantry: Pantry = {
   heif: heifPackage,
   fusermount3: fusermount3Package,
   'swift-sh': swiftshPackage,
-  lporg: lporgPackage,
+  blacktop: githubcomblacktoplporgPackage,
   bruce: brucePackage,
   envchain: envchainPackage,
   'age-plugin-yubikey': agepluginyubikeyPackage,
