@@ -3,7 +3,7 @@
  *
  * @domain `pandoc.org`
  * @programs `pandoc`
- * @version `3.7.0.2` (31 versions available)
+ * @version `3.8.0` (32 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pandoc`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "pandoc"
  * console.log(pkg.description) // "Swiss-army knife of markup format conversion"
  * console.log(pkg.programs)    // ["pandoc"]
- * console.log(pkg.versions[0]) // "3.7.0.2" (latest)
+ * console.log(pkg.versions[0]) // "3.8.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pandoc-org.md
@@ -71,6 +71,7 @@ export const pandocPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.8.0',
     '3.7.0.2',
     '3.7.0.1',
     '3.7.0',

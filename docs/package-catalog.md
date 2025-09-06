@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-09-06T22:29:27.371Z
+- **Last Updated**: 2025-09-06T23:28:29.937Z
 
 ## Table of Contents
 
@@ -423,7 +423,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[asciidoctor.org](./packages/asciidoctor.org/index.md)** () | :gem: A fast, open source text processor and publishing toolchain, written in Ruby, for convertin... | asciidoctor | 2.0.23 (+5) | `pkgx asciidoctor` |
 | **[maaslalani.com/slides](./packages/maaslalani.com/slides/index.md)** () | Terminal based presentation tool | slides | 0.9.0 (+0) | `pkgx slides` |
 | **[mkdocs.org](./packages/mkdocs.org/index.md)** () | Project documentation with Markdown. | mkdocs | 1.6.1 (+2) | `pkgx mkdocs` |
-| **[pandoc.org](./packages/pandoc.org/index.md)** () | Swiss-army knife of markup format conversion | pandoc | 3.7.0.2 (+30) | `pkgx pandoc` |
+| **[pandoc.org](./packages/pandoc.org/index.md)** () | Swiss-army knife of markup format conversion | pandoc | 3.8.0 (+31) | `pkgx pandoc` |
 | **[sphinx-doc.org](./packages/sphinx-doc.org/index.md)** () | Tool to create intelligent and beautiful documentation | sphinx-apidoc, sphinx-autogen, sphinx-build, ... (+1) | 8.2.3 (+41) | `pkgx sphinx` |
 | **[tectonic-typesetting.github.io](./packages/tectonic-typesetting.github.io/index.md)** () | A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive. | tectonic | 0.15.0 (+5) | `pkgx tectonic` |
 | **[typst.app](./packages/typst.app/index.md)** () | A new markup-based typesetting system that is powerful and easy to learn. | typst | 0.13.1 (+13) | `pkgx typst` |
