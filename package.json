@@ -84,13 +84,13 @@
     "pkgx:docs": "bun bin/cli.ts generate-docs"
   },
   "optionalDependencies": {
-    "chromium-bidi": "^7.2.0",
+    "chromium-bidi": "^7.3.2",
     "electron": "^37.4.0",
     "js-yaml": "^4.1.0",
     "playwright": "^1.55.0"
   },
   "devDependencies": {
-    "@stacksjs/bumpx": "^0.1.75",
+    "@stacksjs/bumpx": "^0.1.78",
     "@stacksjs/docs": "^0.70.23",
     "@stacksjs/eslint-config": "^4.14.0-beta.3",
     "@stacksjs/gitlint": "^0.1.5",
