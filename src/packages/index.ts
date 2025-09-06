@@ -434,7 +434,7 @@ import { githubcom10gicvanitygenplusplusPackage } from './github.com/10gic/vanit
 import { awsvaultPackage } from './github.com/99designs/aws-vault'
 import { avifPackage } from './github.com/AOMediaCodec/libavif'
 import { stablediffusionwebuiPackage } from './github.com/AUTOMATIC1111/stable-diffusion-webui'
-import { githubcomagentdsquashfstoolsngPackage } from './github.com/AgentD/squashfs-tools-ng'
+import { squashfstoolsngPackage } from './github.com/AgentD/squashfs-tools-ng'
 import { githubcomaldanialclocPackage } from './github.com/AlDanial/cloc'
 import { gPTEngineerPackage } from './github.com/AntonOsika/gpt-engineer'
 import { teapackagebuilderPackage } from './github.com/ArionThinker/tea-package-builder'
@@ -2329,8 +2329,8 @@ export interface Pantry {
   githubcomaomediacodec: typeof avifPackage
   stable_diffusion_webui: typeof stablediffusionwebuiPackage
   githubcomautomatic1111: typeof stablediffusionwebuiPackage
-  squashfs_tools_ng: typeof githubcomagentdsquashfstoolsngPackage
-  githubcomagentd: typeof githubcomagentdsquashfstoolsngPackage
+  squashfs_tools_ng: typeof squashfstoolsngPackage
+  githubcomagentd: typeof squashfstoolsngPackage
   cloc: typeof githubcomaldanialclocPackage
   githubcomaldanial: typeof githubcomaldanialclocPackage
   gpt_engineer: typeof gPTEngineerPackage
@@ -4873,6 +4873,7 @@ export interface Pantry {
   checkmake: typeof checkmakePackage
   'tea-package-builder': typeof teapackagebuilderPackage
   when: typeof whenPackage
+  'squashfs-tools-ng': typeof squashfstoolsngPackage
   'aws-whoami': typeof awswhoamiPackage
   'go-mod-upgrade': typeof gomodupgradePackage
   stern: typeof sternPackage
@@ -6147,8 +6148,8 @@ export const pantry: Pantry = {
   githubcomaomediacodec: avifPackage,
   stable_diffusion_webui: stablediffusionwebuiPackage,
   githubcomautomatic1111: stablediffusionwebuiPackage,
-  squashfs_tools_ng: githubcomagentdsquashfstoolsngPackage,
-  githubcomagentd: githubcomagentdsquashfstoolsngPackage,
+  squashfs_tools_ng: squashfstoolsngPackage,
+  githubcomagentd: squashfstoolsngPackage,
   cloc: githubcomaldanialclocPackage,
   githubcomaldanial: githubcomaldanialclocPackage,
   gpt_engineer: gPTEngineerPackage,
@@ -8691,6 +8692,7 @@ export const pantry: Pantry = {
   checkmake: checkmakePackage,
   'tea-package-builder': teapackagebuilderPackage,
   when: whenPackage,
+  'squashfs-tools-ng': squashfstoolsngPackage,
   'aws-whoami': awswhoamiPackage,
   'go-mod-upgrade': gomodupgradePackage,
   stern: sternPackage,
