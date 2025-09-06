@@ -912,7 +912,6 @@ export const aliases: Record<string, string> = {
   'sqlfluff': 'sqlfluff.com',
   'sqlite3': 'sqlite.org',
   'SquashFS-Tools': 'github.com/plougher/squashfs-tools',
-  'squashfs-tools-ng': 'github.com/AgentD/squashfs-tools-ng',
   'squawk': 'squawkhq.com',
   'squidfunk/mkdocs-material': 'github.com/squidfunk/mkdocs-material',
   'srgn': 'crates.io/srgn',
