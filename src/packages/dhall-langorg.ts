@@ -3,7 +3,7 @@
  *
  * @domain `dhall-lang.org`
  * @programs `dhall`
- * @version `1.42.2` (2 versions available)
+ * @version `1.42.3` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dhall`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "dhall"
  * console.log(pkg.description) // "Interpreter for the Dhall language"
  * console.log(pkg.programs)    // ["dhall"]
- * console.log(pkg.versions[0]) // "1.42.2" (latest)
+ * console.log(pkg.versions[0]) // "1.42.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/dhall-lang-org.md
@@ -70,6 +70,7 @@ export const dhallPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.42.3',
     '1.42.2',
     '1.42.1',
   ] as const,
