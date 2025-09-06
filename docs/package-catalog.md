@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-09-06T12:32:09.379Z
+- **Last Updated**: 2025-09-06T13:33:27.877Z
 
 ## Table of Contents
 
@@ -262,7 +262,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[crates.io/drill](./packages/crates.io/drill/index.md)** () | Drill is an HTTP load testing application written in Rust | drill | 0.8.3 (+0) | `pkgx drill` |
 | **[crates.io/du-dust](./packages/crates.io/du-dust/index.md)** () | A more intuitive version of du in rust | dust | 1.2.3 (+7) | `pkgx dust` |
 | **[crates.io/exa](./packages/crates.io/exa/index.md)** () | A modern replacement for ‘ls’. | exa | 0.10.1 (+0) | `pkgx exa` |
-| **[crates.io/eza](./packages/crates.io/eza/index.md)** () | Modern, maintained replacement for ls | eza | 0.23.1 (+82) | `pkgx eza` |
+| **[crates.io/eza](./packages/crates.io/eza/index.md)** () | Modern, maintained replacement for ls | eza | 0.23.2 (+83) | `pkgx eza` |
 | **[crates.io/git-delta](./packages/crates.io/git-delta/index.md)** () | A syntax-highlighting pager for git, diff, grep, and blame output | delta | 0.18.2 (+10) | `pkgx delta` |
 | **[crates.io/hyperfine](./packages/crates.io/hyperfine/index.md)** () | A command-line benchmarking tool | hyperfine | 1.19.0 (+6) | `pkgx hyperfine` |
 | **[crates.io/ripgrep](./packages/crates.io/ripgrep/index.md)** () | ripgrep recursively searches directories for a regex pattern while respecting your gitignore | rg | 14.1.1 (+6) | `pkgx rg` |
@@ -334,7 +334,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[exiftool.org](./packages/exiftool.org/index.md)** () | Perl lib for reading and writing EXIF metadata | exiftool | 13.30.0 (+7) | `pkgx exiftool` |
+| **[exiftool.org](./packages/exiftool.org/index.md)** () | Perl lib for reading and writing EXIF metadata | exiftool | 13.35.0 (+8) | `pkgx exiftool` |
 | **[lcdf.org/gifsicle](./packages/lcdf.org/gifsicle/index.md)** () | Create, manipulate, and optimize GIF images and animations | gifsicle | 1.96.0 (+3) | `pkgx gifsicle` |
 | **[libvips.org](./packages/libvips.org/index.md)** () | A fast image processing library with low memory needs. | vips, vipsedit, vipsheader, ... (+2) | 8.17.1 (+9) | `pkgx vips` |
 | **[mpv.io](./packages/mpv.io/index.md)** () | Media player based on MPlayer and mplayer2 | mpv | 0.40.0 (+2) | `pkgx mpv` |
