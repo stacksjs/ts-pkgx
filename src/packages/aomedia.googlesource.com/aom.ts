@@ -3,7 +3,7 @@
  *
  * @domain `aomedia.googlesource.com/aom`
  * @programs `aomenc`, `aomdec`
- * @version `3.13.0` (16 versions available)
+ * @version `3.13.1` (17 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aomenc`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "aomenc"
  * console.log(pkg.description) // "Codec library for encoding and decoding AV1 vid..."
  * console.log(pkg.programs)    // ["aomenc", "aomdec"]
- * console.log(pkg.versions[0]) // "3.13.0" (latest)
+ * console.log(pkg.versions[0]) // "3.13.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/aomedia-googlesource-com/aom.md
@@ -63,6 +63,7 @@ export const aomencPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.13.1',
     '3.13.0',
     '3.12.1',
     '3.12.0',
