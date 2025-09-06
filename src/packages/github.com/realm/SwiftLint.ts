@@ -3,7 +3,7 @@
  *
  * @domain `github.com/realm/SwiftLint`
  * @programs `swiftlint`
- * @version `0.60.0` (18 versions available)
+ * @version `0.61.0` (19 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install swiftlint`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "swiftlint"
  * console.log(pkg.description) // "A tool to enforce Swift style and conventions."
  * console.log(pkg.programs)    // ["swiftlint"]
- * console.log(pkg.versions[0]) // "0.60.0" (latest)
+ * console.log(pkg.versions[0]) // "0.61.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/realm/SwiftLint.md
@@ -71,6 +71,7 @@ export const swiftlintPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.61.0',
     '0.60.0',
     '0.59.1',
     '0.59.0',
