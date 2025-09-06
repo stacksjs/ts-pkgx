@@ -437,7 +437,6 @@ export const aliases: Record<string, string> = {
   'hurl': 'hurl.dev',
   'hyfetch': 'github.com/hykilpikonna/hyfetch',
   'hyperfine': 'crates.io/hyperfine',
-  'icon-theme': 'freedesktop.org/icon-theme',
   'iconv': 'gnu.org/libiconv',
   'idevicedate': 'libimobiledevice.org',
   'idn': 'gnu.org/libidn',

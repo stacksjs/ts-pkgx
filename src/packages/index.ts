@@ -5063,7 +5063,6 @@ export interface Pantry {
   'poppler-qt5': typeof popplerqt5Package
   uchardet: typeof uchardetPackage
   'pkg-config': typeof pkgconfigPackage
-  'icon-theme': typeof freedesktoporgiconthemePackage
   vdpau: typeof vdpauPackage
   'xdg-user-dir': typeof xdguserdirPackage
   opensearch: typeof opensearchPackage
@@ -8883,7 +8882,6 @@ export const pantry: Pantry = {
   'poppler-qt5': popplerqt5Package,
   uchardet: uchardetPackage,
   'pkg-config': pkgconfigPackage,
-  'icon-theme': freedesktoporgiconthemePackage,
   vdpau: vdpauPackage,
   'xdg-user-dir': xdguserdirPackage,
   opensearch: opensearchPackage,
