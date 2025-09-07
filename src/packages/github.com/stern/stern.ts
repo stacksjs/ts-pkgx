@@ -3,7 +3,7 @@
  *
  * @domain `github.com/stern/stern`
  * @programs `stern`
- * @version `1.32.0` (7 versions available)
+ * @version `1.33.0` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install stern`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "stern"
  * console.log(pkg.description) // "⎈ Multi pod and container log tailing for Kuber..."
  * console.log(pkg.programs)    // ["stern"]
- * console.log(pkg.versions[0]) // "1.32.0" (latest)
+ * console.log(pkg.versions[0]) // "1.33.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/stern/stern.md
@@ -62,6 +62,7 @@ export const sternPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.33.0',
     '1.32.0',
     '1.31.0',
     '1.30.0',
