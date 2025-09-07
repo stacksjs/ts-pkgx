@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/portfolio_rs`
  * @programs `portfolio_rs`
- * @version `0.6.0` (12 versions available)
+ * @version `0.6.1` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install portfolio_rs`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "portfolio_rs"
  * console.log(pkg.description) // "A command line tool for managing financial inve..."
  * console.log(pkg.programs)    // ["portfolio_rs"]
- * console.log(pkg.versions[0]) // "0.6.0" (latest)
+ * console.log(pkg.versions[0]) // "0.6.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/portfolio_rs.md
@@ -62,6 +62,7 @@ export const portfoliorsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.6.1',
     '0.6.0',
     '0.5.0',
     '0.4.1',
