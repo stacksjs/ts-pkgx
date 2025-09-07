@@ -3,7 +3,7 @@
  *
  * @domain `mvdan.cc/gofumpt`
  * @programs `gofumpt`
- * @version `0.9.0` (3 versions available)
+ * @version `0.9.1` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gofumpt`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "gofumpt"
  * console.log(pkg.description) // "A stricter gofmt"
  * console.log(pkg.programs)    // ["gofumpt"]
- * console.log(pkg.versions[0]) // "0.9.0" (latest)
+ * console.log(pkg.versions[0]) // "0.9.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mvdan-cc/gofumpt.md
@@ -62,6 +62,7 @@ export const gofumptPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.9.1',
     '0.9.0',
     '0.8.0',
     '0.7.0',
