@@ -3,7 +3,7 @@
  *
  * @domain `github.com/muesli/duf`
  * @programs `duf`
- * @version `0.8.1` (1 versions available)
+ * @version `0.9.0` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install duf`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "duf"
  * console.log(pkg.description) // "Disk Usage/Free Utility - a better 'df' alterna..."
  * console.log(pkg.programs)    // ["duf"]
- * console.log(pkg.versions[0]) // "0.8.1" (latest)
+ * console.log(pkg.versions[0]) // "0.9.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/muesli/duf.md
@@ -62,6 +62,7 @@ export const dufPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.9.0',
     '0.8.1',
   ] as const,
   /**
