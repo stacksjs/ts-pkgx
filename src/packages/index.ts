@@ -259,7 +259,7 @@ import { xhPackage } from './crates.io/xh'
 import { zellijPackage } from './crates.io/zellij'
 import { zoxidePackage } from './crates.io/zoxide'
 import { diunPackage } from './crazymax.dev/diun'
-import { creativeprojectsgithubioresticprofilePackage } from './creativeprojects.github.io/resticprofile'
+import { resticprofilePackage } from './creativeprojects.github.io/resticprofile'
 import { cruftPackage } from './cruftgithubio'
 import { cryptographyioPackage } from './cryptographyio'
 import { shardsPackage } from './crystal-lang.org/shards'
@@ -2053,7 +2053,7 @@ export interface Pantry {
 
   crazymaxdevdiun: typeof diunPackage
 
-  creativeprojectsgithubioresticprofile: typeof creativeprojectsgithubioresticprofilePackage
+  creativeprojectsgithubioresticprofile: typeof resticprofilePackage
   cruftgithubio: typeof cruftPackage
   cryptographyio: typeof cryptographyioPackage
 
@@ -4574,7 +4574,7 @@ export interface Pantry {
   tailcall: typeof tailcallPackage
   tesseract: typeof tesseractPackage
   pscale: typeof pscalePackage
-  resticprofile: typeof creativeprojectsgithubioresticprofilePackage
+  resticprofile: typeof resticprofilePackage
   pake: typeof pakePackage
   mkdocs: typeof mkdocsPackage
   ttyd: typeof ttydPackage
@@ -5872,7 +5872,7 @@ export const pantry: Pantry = {
 
   crazymaxdevdiun: diunPackage,
 
-  creativeprojectsgithubioresticprofile: creativeprojectsgithubioresticprofilePackage,
+  creativeprojectsgithubioresticprofile: resticprofilePackage,
   cruftgithubio: cruftPackage,
   cryptographyio: cryptographyioPackage,
 
@@ -8393,7 +8393,7 @@ export const pantry: Pantry = {
   tailcall: tailcallPackage,
   tesseract: tesseractPackage,
   pscale: pscalePackage,
-  resticprofile: creativeprojectsgithubioresticprofilePackage,
+  resticprofile: resticprofilePackage,
   pake: pakePackage,
   mkdocs: mkdocsPackage,
   ttyd: ttydPackage,
