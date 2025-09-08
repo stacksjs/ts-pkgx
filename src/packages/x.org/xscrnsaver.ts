@@ -2,7 +2,7 @@
  * **x.org/xscrnsaver** - pkgx package
  *
  * @domain `x.org/xscrnsaver`
- * @version `1.2.4` (1 versions available)
+ * @version `1.2.5` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install x.org/xscrnsaver`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.xorgxscrnsaver
  * console.log(pkg.name)        // "x.org/xscrnsaver"
- * console.log(pkg.versions[0]) // "1.2.4" (latest)
+ * console.log(pkg.versions[0]) // "1.2.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/xscrnsaver.md
@@ -57,6 +57,7 @@ export const xorgxscrnsaverPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.2.5',
     '1.2.4',
   ] as const,
   aliases: [] as const,

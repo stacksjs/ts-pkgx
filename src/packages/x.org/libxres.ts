@@ -2,7 +2,7 @@
  * **x.org/libxres** - pkgx package
  *
  * @domain `x.org/libxres`
- * @version `1.2.2` (1 versions available)
+ * @version `1.2.3` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install x.org/libxres`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.xorglibxres
  * console.log(pkg.name)        // "x.org/libxres"
- * console.log(pkg.versions[0]) // "1.2.2" (latest)
+ * console.log(pkg.versions[0]) // "1.2.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/x-org/libxres.md
@@ -57,6 +57,7 @@ export const xorglibxresPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.2.3',
     '1.2.2',
   ] as const,
   aliases: [] as const,
