@@ -3,7 +3,7 @@
  *
  * @domain `oras.land`
  * @programs `oras`
- * @version `1.2.3` (4 versions available)
+ * @version `1.3.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install oras`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "oras"
  * console.log(pkg.description) // "OCI registry client - managing content like art..."
  * console.log(pkg.programs)    // ["oras"]
- * console.log(pkg.versions[0]) // "1.2.3" (latest)
+ * console.log(pkg.versions[0]) // "1.3.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/oras-land.md
@@ -62,6 +62,7 @@ export const orasPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.3.0',
     '1.2.3',
     '1.2.2',
     '1.2.1',
