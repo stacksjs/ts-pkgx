@@ -57,6 +57,7 @@ This package depends on:
 
 - `zlib.net^1`
 - `openexr.com/imath`
+- `linux:gnu.org/gcc/libstdcxx^14 # needed since 3.4.0`
 
 ## Usage Examples
 

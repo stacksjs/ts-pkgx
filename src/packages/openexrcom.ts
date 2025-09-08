@@ -8,7 +8,7 @@
  *
  * @install `launchpad install exr2aces`
  * @name `exr2aces`
- * @dependencies `zlib.net^1`, `openexr.com/imath`
+ * @dependencies `zlib.net^1`, `openexr.com/imath`, `linux:gnu.org/gcc/libstdcxx^14 # needed since 3.4.0` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -67,10 +67,12 @@ export const exr2acesPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'zlib.net^1',
     'openexr.com/imath',
+    'linux:gnu.org/gcc/libstdcxx^14 # needed since 3.4.0',
   ] as const,
   /**
    * Available versions from newest to oldest.
