@@ -3,7 +3,7 @@
  *
  * @domain `github.com/skylot/jadx`
  * @programs `jadx`, `jadx-gui`
- * @version `1.5.2` (4 versions available)
+ * @version `1.5.3` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jadx`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "jadx"
  * console.log(pkg.description) // "Dex to Java decompiler"
  * console.log(pkg.programs)    // ["jadx", "jadx-gui"]
- * console.log(pkg.versions[0]) // "1.5.2" (latest)
+ * console.log(pkg.versions[0]) // "1.5.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/skylot/jadx.md
@@ -70,6 +70,7 @@ export const jadxPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.5.3',
     '1.5.2',
     '1.5.1',
     '1.5.0',
