@@ -3,7 +3,7 @@
  *
  * @domain `argoproj.github.io/cd`
  * @programs `argocd`
- * @version `3.1.4` (139 versions available)
+ * @version `3.1.4` (140 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install argocd`
@@ -120,6 +120,7 @@ export const argocdPackage = {
     '2.12.2',
     '2.12.1',
     '2.12.0',
+    '2.11.14',
     '2.11.13',
     '2.11.12',
     '2.11.11',
