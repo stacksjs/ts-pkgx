@@ -3,7 +3,7 @@
  *
  * @domain `rbenv.org/ruby-build`
  * @programs `ruby-build`
- * @version `20250829.0.0` (48 versions available)
+ * @version `20250908.0.0` (49 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ruby-build`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "ruby-build"
  * console.log(pkg.description) // "A tool to download, compile, and install Ruby o..."
  * console.log(pkg.programs)    // ["ruby-build"]
- * console.log(pkg.versions[0]) // "20250829.0.0" (latest)
+ * console.log(pkg.versions[0]) // "20250908.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rbenv-org/ruby-build.md
@@ -81,6 +81,7 @@ export const rubybuildPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '20250908.0.0',
     '20250829.0.0',
     '20250811.0.0',
     '20250724.0.0',

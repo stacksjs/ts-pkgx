@@ -3,7 +3,7 @@
  *
  * @domain `streamlink.github.io`
  * @programs `streamlink`
- * @version `7.5.0` (21 versions available)
+ * @version `7.6.0` (22 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install streamlink`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "streamlink"
  * console.log(pkg.description) // "Streamlink is a CLI utility which pipes video s..."
  * console.log(pkg.programs)    // ["streamlink"]
- * console.log(pkg.versions[0]) // "7.5.0" (latest)
+ * console.log(pkg.versions[0]) // "7.6.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/streamlink-github-io.md
@@ -76,6 +76,7 @@ export const streamlinkPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '7.6.0',
     '7.5.0',
     '7.4.0',
     '7.3.0',
