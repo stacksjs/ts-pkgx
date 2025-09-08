@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-09-08T19:29:20.336Z
+- **Last Updated**: 2025-09-08T20:31:19.020Z
 
 ## Table of Contents
 
@@ -79,7 +79,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.27.1 (+31) | `pkgx llm` |
 | **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.2 (+19) | `pkgx f2py` |
 | **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.11.10 (+114) | `pkgx ollama` |
-| **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 1.106.1 (+277) | `pkgx openai` |
+| **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 1.107.0 (+278) | `pkgx openai` |
 | **[openinterpreter.com](./packages/openinterpreter.com/index.md)** (interpreter) | A natural language interface for computers | interpreter | 0.4.0 (+21) | `pkgx interpreter` |
 
 ## Databases
@@ -121,7 +121,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[ansible.com](./packages/ansible.com/index.md)** () | Ansible is a radically simple IT automation platform that makes your applications and systems eas... | ansible, ansible-config, ansible-connection, ... (+8) | 2.19.2 (+76) | `pkgx ansible` |
 | **[ansible.com/ansible-lint](./packages/ansible.com/ansible-lint/index.md)** () | ansible-lint checks playbooks for practices and behavior that could potentially be improved and c... | ansible-lint | 25.8.2 (+26) | `pkgx ansible-lint` |
-| **[argoproj.github.io/cd](./packages/argoproj.github.io/cd/index.md)** (argocd) | GitOps Continuous Delivery for Kubernetes | argocd | 3.1.4 (+136) | `pkgx argocd` |
+| **[argoproj.github.io/cd](./packages/argoproj.github.io/cd/index.md)** (argocd) | GitOps Continuous Delivery for Kubernetes | argocd | 3.1.4 (+137) | `pkgx argocd` |
 | **[consul.io](./packages/consul.io/index.md)** () | Consul is a distributed, highly available, and data center aware solution to connect and configur... | consul | 1.21.4 (+13) | `pkgx consul` |
 | **[docker.com/cli](./packages/docker.com/cli/index.md)** (docker) | Pack, ship and run any application as a lightweight container | docker | 28.4.0 (+57) | `pkgx docker` |
 | **[docker.com/compose](./packages/docker.com/compose/index.md)** () | Define and run multi-container applications with Docker | docker-compose | 2.39.2 (+59) | `pkgx docker-compose` |
@@ -248,7 +248,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[microsoft.com/code-cli](./packages/microsoft.com/code-cli/index.md)** (code) | Command-line interface built-in Visual Studio Code | code | 1.103.2 (+21) | `pkgx code` |
 | **[nano-editor.org](./packages/nano-editor.org/index.md)** () | Free (GNU) replacement for the Pico text editor | nano | 8.0.0 (+1) | `pkgx nano` |
 | **[neovim.io](./packages/neovim.io/index.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.4 (+16) | `pkgx nvim` |
-| **[vim.org](./packages/vim.org/index.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1740 (+2300) | `pkgx vi` |
+| **[vim.org](./packages/vim.org/index.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1744 (+2304) | `pkgx vi` |
 | **[wezfurlong.org/wezterm](./packages/wezfurlong.org/wezterm/index.md)** () | A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemente... | wezterm | 2024.2.3 (+0) | `pkgx wezterm` |
 
 ## CLI Tools & Utilities
@@ -367,7 +367,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[aws.amazon.com/sam](./packages/aws.amazon.com/sam/index.md)** () | CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM | sam | 1.143.0 (+33) | `pkgx sam` |
-| **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.175 (+430) | `pkgx fly` |
+| **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.176 (+431) | `pkgx fly` |
 | **[heroku.com](./packages/heroku.com/index.md)** () | CLI for Heroku | heroku | 10.13.1 (+36) | `pkgx heroku` |
 | **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.7.0 (+23) | `pkgx localstack` |
 | **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.255.0 (+77) | `pkgx pscale` |

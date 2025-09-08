@@ -3,7 +3,7 @@
  *
  * @domain `github.com/rrthomas/psutils`
  * @programs `psbook`, `psjoin`, `psnup`, `psresize`, `psselect`, ... (+1 more)
- * @version `3.3.13` (19 versions available)
+ * @version `3.3.14` (20 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/rrthomas/psutils`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "github.com/rrthomas/psutils"
  * console.log(pkg.description) // "Utilities for manipulating PostScript documents"
  * console.log(pkg.programs)    // ["psbook", "psjoin", ...]
- * console.log(pkg.versions[0]) // "3.3.13" (latest)
+ * console.log(pkg.versions[0]) // "3.3.14" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/rrthomas/psutils.md
@@ -70,6 +70,7 @@ export const githubcomrrthomaspsutilsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.3.14',
     '3.3.13',
     '3.3.12',
     '3.3.11',

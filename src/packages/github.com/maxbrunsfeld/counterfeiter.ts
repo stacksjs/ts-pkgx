@@ -3,7 +3,7 @@
  *
  * @domain `github.com/maxbrunsfeld/counterfeiter`
  * @programs `counterfeiter`
- * @version `6.11.2` (10 versions available)
+ * @version `6.12.0` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install counterfeiter`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "counterfeiter"
  * console.log(pkg.description) // "A tool for generating self-contained, type-safe..."
  * console.log(pkg.programs)    // ["counterfeiter"]
- * console.log(pkg.versions[0]) // "6.11.2" (latest)
+ * console.log(pkg.versions[0]) // "6.12.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/maxbrunsfeld/counterfeiter.md
@@ -69,6 +69,7 @@ export const counterfeiterPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '6.12.0',
     '6.11.2',
     '6.11.1',
     '6.11.0',
