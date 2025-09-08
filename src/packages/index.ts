@@ -1117,7 +1117,7 @@ import { microPackage } from './micro-editorgithubio'
 import { microbreworgmd5sha1sumPackage } from './microbrew.org/md5sha1sum'
 import { microckscliPackage } from './microcksio'
 import { pwshPackage } from './microsoft.com/PowerShell'
-import { azPackage } from './microsoft.com/azure-cli'
+import { microsoftcomazurecliPackage } from './microsoft.com/azure-cli'
 import { azcopyPackage } from './microsoft.com/azure-storage-azcopy'
 import { codePackage } from './microsoft.com/code-cli'
 import { microsoftcomdxcPackage } from './microsoft.com/dxc'
@@ -3560,8 +3560,8 @@ export interface Pantry {
   microcksio: typeof microckscliPackage
   PowerShell: typeof pwshPackage
   microsoftcompowershell: typeof pwshPackage
-  azure_cli: typeof azPackage
-  microsoftcomazurecli: typeof azPackage
+  azure_cli: typeof microsoftcomazurecliPackage
+  microsoftcomazurecli: typeof microsoftcomazurecliPackage
   azure_storage_azcopy: typeof azcopyPackage
   microsoftcomazurestorageazcopy: typeof azcopyPackage
   code_cli: typeof codePackage
@@ -5350,6 +5350,7 @@ export interface Pantry {
   azcopy: typeof azcopyPackage
   pyright: typeof pyrightPackage
   markitdown: typeof markitdownPackage
+  'azure-cli': typeof microsoftcomazurecliPackage
   pwsh: typeof pwshPackage
   'vscode cli': typeof codePackage
   code: typeof codePackage
@@ -7379,8 +7380,8 @@ export const pantry: Pantry = {
   microcksio: microckscliPackage,
   PowerShell: pwshPackage,
   microsoftcompowershell: pwshPackage,
-  azure_cli: azPackage,
-  microsoftcomazurecli: azPackage,
+  azure_cli: microsoftcomazurecliPackage,
+  microsoftcomazurecli: microsoftcomazurecliPackage,
   azure_storage_azcopy: azcopyPackage,
   microsoftcomazurestorageazcopy: azcopyPackage,
   code_cli: codePackage,
@@ -9169,6 +9170,7 @@ export const pantry: Pantry = {
   azcopy: azcopyPackage,
   pyright: pyrightPackage,
   markitdown: markitdownPackage,
+  'azure-cli': microsoftcomazurecliPackage,
   pwsh: pwshPackage,
   'vscode cli': codePackage,
   code: codePackage,
