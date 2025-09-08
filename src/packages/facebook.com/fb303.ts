@@ -2,7 +2,7 @@
  * **facebook.com/fb303** - fb303 is a core set of thrift functions that provide a common mechanism for querying stats and other information from a service.
  *
  * @domain `facebook.com/fb303`
- * @version `2025.9.1.0` (86 versions available)
+ * @version `2025.9.8.0` (87 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install facebook.com/fb303`
@@ -15,7 +15,7 @@
  * const pkg = pantry.facebookcomfb303
  * console.log(pkg.name)        // "facebook.com/fb303"
  * console.log(pkg.description) // "fb303 is a core set of thrift functions that pr..."
- * console.log(pkg.versions[0]) // "2025.9.1.0" (latest)
+ * console.log(pkg.versions[0]) // "2025.9.8.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/facebook-com/fb303.md
@@ -68,6 +68,7 @@ export const facebookcomfb303Package = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2025.9.8.0',
     '2025.9.1.0',
     '2025.8.4.0',
     '2025.8.11.0',

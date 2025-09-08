@@ -3,7 +3,7 @@
  *
  * @domain `swift.org`
  * @programs `docc`, `dsymutil`, `sourcekit-lsp`, `swift-api-checker.py`, `swift-build-sdk-interfaces`, ... (+21 more)
- * @version `6.1.2` (10 versions available)
+ * @version `6.1.3` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install swift`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "swift"
  * console.log(pkg.description) // "The Swift Programming Language"
  * console.log(pkg.programs)    // ["docc", "dsymutil", ...]
- * console.log(pkg.versions[0]) // "6.1.2" (latest)
+ * console.log(pkg.versions[0]) // "6.1.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/swift-org.md
@@ -101,6 +101,7 @@ export const swiftPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '6.1.3',
     '6.1.2',
     '6.1.1',
     '6.1.0',
