@@ -3,7 +3,7 @@
  *
  * @domain `cmake.org`
  * @programs `cmake`, `ccmake`, `cpack`, `ctest`
- * @version `4.1.1` (64 versions available)
+ * @version `4.1.1` (65 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cmake.org`
@@ -71,6 +71,7 @@ export const cmakeorgPackage = {
   versions: [
     '4.1.1',
     '4.1.0',
+    '4.0.4',
     '4.0.3',
     '4.0.2',
     '4.0.1',
