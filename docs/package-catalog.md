@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1396+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1397+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1396
+- **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-09-09T08:34:43.866Z
+- **Last Updated**: 2025-09-09T09:31:10.876Z
 
 ## Table of Contents
 
@@ -124,7 +124,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[argoproj.github.io/cd](./packages/argoproj.github.io/cd/index.md)** (argocd) | GitOps Continuous Delivery for Kubernetes | argocd | 3.1.4 (+140) | `pkgx argocd` |
 | **[consul.io](./packages/consul.io/index.md)** () | Consul is a distributed, highly available, and data center aware solution to connect and configur... | consul | 1.21.4 (+13) | `pkgx consul` |
 | **[docker.com/cli](./packages/docker.com/cli/index.md)** (docker) | Pack, ship and run any application as a lightweight container | docker | 28.4.0 (+57) | `pkgx docker` |
-| **[docker.com/compose](./packages/docker.com/compose/index.md)** () | Define and run multi-container applications with Docker | docker-compose | 2.39.2 (+59) | `pkgx docker-compose` |
+| **[docker.com/compose](./packages/docker.com/compose/index.md)** () | Define and run multi-container applications with Docker | docker-compose | 2.39.3 (+60) | `pkgx docker-compose` |
 | **[fluxcd.io/flux2](./packages/fluxcd.io/flux2/index.md)** () | Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit. | flux | 2.6.4 (+13) | `pkgx flux` |
 | **[github.com/aws-cloudformation/cfn-lint](./packages/github.com/aws-cloudformation/cfn-lint.md)** () | Validate CloudFormation templates against the CloudFormation spec | cfn-lint | 1.39.1 (+156) | `pkgx cfn-lint` |
 | **[github.com/minamijoyo/tfupdate](./packages/github.com/minamijoyo/tfupdate.md)** () | Update version constraints in your Terraform configurations | tfupdate | 0.9.2 (+8) | `pkgx tfupdate` |

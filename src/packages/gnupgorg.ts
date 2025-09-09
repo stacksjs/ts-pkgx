@@ -1,8 +1,9 @@
 /**
- * **gnupg.org** - pkgx package
+ * **gnupg.org** - GNU Pretty Good Privacy (PGP) package
  *
  * @domain `gnupg.org`
- * @version `v2.5` (1 versions available)
+ * @programs `gpg`, `gpg-agent`, `gpg-connect-agent`, `gpg-wks-server`, `gpgconf`, ... (+8 more)
+ * @version `2.4.8` (12 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnupg.org`
@@ -14,7 +15,9 @@
  *
  * const pkg = pantry.gnupgorg
  * console.log(pkg.name)        // "gnupg.org"
- * console.log(pkg.versions[0]) // "v2.5" (latest)
+ * console.log(pkg.description) // "GNU Pretty Good Privacy (PGP) package"
+ * console.log(pkg.programs)    // ["gpg", "gpg-agent", ...]
+ * console.log(pkg.versions[0]) // "2.4.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnupg-org.md
@@ -32,16 +35,34 @@ export const gnupgorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: '' as const,
+  description: 'GNU Pretty Good Privacy (PGP) package' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnupg.org' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'gpg',
+    'gpg-agent',
+    'gpg-connect-agent',
+    'gpg-wks-server',
+    'gpgconf',
+    'gpgparsemail',
+    'gpgscm',
+    'gpgsm',
+    'gpgsplit',
+    'gpgtar',
+    'gpgv',
+    'kbxutil',
+    'watchgnupg',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -66,7 +87,18 @@ export const gnupgorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
-    'v2.5',
+    '2.4.8',
+    '2.4.7',
+    '2.4.6',
+    '2.4.5',
+    '2.4.4',
+    '2.4.3',
+    '2.4.2',
+    '2.3.7',
+    '2.2.45',
+    '2.2.44',
+    '2.2.43',
+    '2.2.42',
   ] as const,
   aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnupg.org -- $SHELL -i' as const,
