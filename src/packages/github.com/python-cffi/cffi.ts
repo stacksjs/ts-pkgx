@@ -2,7 +2,7 @@
  * **github.com/python-cffi/cffi** - A Foreign Function Interface package for calling C libraries from Python.
  *
  * @domain `github.com/python-cffi/cffi`
- * @version `1.17.1` (3 versions available)
+ * @version `2.0.0` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/python-cffi/cffi`
@@ -15,7 +15,7 @@
  * const pkg = pantry.githubcompythoncfficffi
  * console.log(pkg.name)        // "github.com/python-cffi/cffi"
  * console.log(pkg.description) // "A Foreign Function Interface package for callin..."
- * console.log(pkg.versions[0]) // "1.17.1" (latest)
+ * console.log(pkg.versions[0]) // "2.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/python-cffi/cffi.md
@@ -58,6 +58,7 @@ export const githubcompythoncfficffiPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.0.0',
     '1.17.1',
     '1.17.0',
     '1.16.0',

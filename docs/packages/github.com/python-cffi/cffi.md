@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 3 versions</summary>
+<summary>Show all 4 versions</summary>
 
-- `1.17.1`, `1.17.0`, `1.16.0`
+- `2.0.0`, `1.17.1`, `1.17.0`, `1.16.0`
 
 </details>
 
-**Latest Version**: `1.17.1`
+**Latest Version**: `2.0.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/python-cffi/cffi@1.17.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/python-cffi/cffi@2.0.0 -- $SHELL -i
 ```
 
 ## Dependencies

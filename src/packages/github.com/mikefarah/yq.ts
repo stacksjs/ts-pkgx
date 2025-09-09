@@ -3,7 +3,7 @@
  *
  * @domain `github.com/mikefarah/yq`
  * @programs `yq`
- * @version `4.47.1` (35 versions available)
+ * @version `4.47.2` (36 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install yq`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "yq"
  * console.log(pkg.description) // "yq is a portable command-line YAML, JSON, XML, ..."
  * console.log(pkg.programs)    // ["yq"]
- * console.log(pkg.versions[0]) // "4.47.1" (latest)
+ * console.log(pkg.versions[0]) // "4.47.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/mikefarah/yq.md
@@ -62,6 +62,7 @@ export const yqPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.47.2',
     '4.47.1',
     '4.46.1',
     '4.45.4',

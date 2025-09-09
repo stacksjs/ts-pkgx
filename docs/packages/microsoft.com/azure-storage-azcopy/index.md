@@ -25,15 +25,15 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 13 versions</summary>
+<summary>Show all 14 versions</summary>
 
-- `10.30.0`, `10.29.1`, `10.29.0`, `10.28.1`, `10.28.0`
-- `10.27.1`, `10.27.0`, `10.26.0`, `10.25.1`, `10.25.0`
-- `10.24.0`, `10.23.0`, `10.22.2`
+- `10.30.1`, `10.30.0`, `10.29.1`, `10.29.0`, `10.28.1`
+- `10.28.0`, `10.27.1`, `10.27.0`, `10.26.0`, `10.25.1`
+- `10.25.0`, `10.24.0`, `10.23.0`, `10.22.2`
 
 </details>
 
-**Latest Version**: `10.30.0`
+**Latest Version**: `10.30.1`
 
 ### Install Specific Version
 
