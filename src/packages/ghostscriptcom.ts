@@ -3,7 +3,7 @@
  *
  * @domain `ghostscript.com`
  * @programs `dvipdf`, `eps2eps`, `gpcl6`, `gpcl6c`, `gpdlc`, ... (+28 more)
- * @version `10.5.1` (7 versions available)
+ * @version `10.6.0` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ghostscript.com`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "ghostscript.com"
  * console.log(pkg.description) // "This is purely for downloads, please check the ..."
  * console.log(pkg.programs)    // ["dvipdf", "eps2eps", ...]
- * console.log(pkg.versions[0]) // "10.5.1" (latest)
+ * console.log(pkg.versions[0]) // "10.6.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ghostscript-com.md
@@ -106,6 +106,7 @@ export const ghostscriptcomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '10.6.0',
     '10.5.1',
     '10.4.0',
     '10.3.1',
