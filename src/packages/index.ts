@@ -889,7 +889,7 @@ import { gnuplotPackage } from './gnuplotinfo'
 import { gnutlsorgPackage } from './gnutlsorg'
 import { govulncheckPackage } from './go.dev/govulncheck'
 import { testscriptPackage } from './go.dev/testscript'
-import { mockgenPackage } from './go.uber.org/mock/mockgen'
+import { gouberorgmockmockgenPackage } from './go.uber.org/mock/mockgen'
 import { goPackage } from './godev'
 import { hugoPackage } from './gohugoio'
 import { golangcilintPackage } from './golangci-lintrun'
@@ -3232,8 +3232,8 @@ export interface Pantry {
   godevgovulncheck: typeof govulncheckPackage
 
   godevtestscript: typeof testscriptPackage
-
-  gouberorgmock: typeof mockgenPackage
+  mockgen: typeof gouberorgmockmockgenPackage
+  gouberorgmock: typeof gouberorgmockmockgenPackage
   godev: typeof goPackage
   gohugoio: typeof hugoPackage
   golangci_lintrun: typeof golangcilintPackage
@@ -4305,7 +4305,7 @@ export interface Pantry {
   'sf.net/e2fsprogs': typeof sfnete2fsprogsPackage
   'net-tools': typeof nettoolsPackage
   faac: typeof faacPackage
-  mockgen: typeof mockgenPackage
+  mock: typeof gouberorgmockmockgenPackage
   gitleaks: typeof gitleaksPackage
   bytebase: typeof bytebasePackage
   sqlc: typeof sqlcPackage
@@ -7051,8 +7051,8 @@ export const pantry: Pantry = {
   godevgovulncheck: govulncheckPackage,
 
   godevtestscript: testscriptPackage,
-
-  gouberorgmock: mockgenPackage,
+  mockgen: gouberorgmockmockgenPackage,
+  gouberorgmock: gouberorgmockmockgenPackage,
   godev: goPackage,
   gohugoio: hugoPackage,
   golangci_lintrun: golangcilintPackage,
@@ -8124,7 +8124,7 @@ export const pantry: Pantry = {
   'sf.net/e2fsprogs': sfnete2fsprogsPackage,
   'net-tools': nettoolsPackage,
   faac: faacPackage,
-  mockgen: mockgenPackage,
+  mock: gouberorgmockmockgenPackage,
   gitleaks: gitleaksPackage,
   bytebase: bytebasePackage,
   sqlc: sqlcPackage,

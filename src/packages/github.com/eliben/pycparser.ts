@@ -2,7 +2,7 @@
  * **github.com/eliben/pycparser** - :snake: Complete C99 parser in pure Python
  *
  * @domain `github.com/eliben/pycparser`
- * @version `2.22.0` (2 versions available)
+ * @version `2.23.0` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/eliben/pycparser`
@@ -15,7 +15,7 @@
  * const pkg = pantry.githubcomelibenpycparser
  * console.log(pkg.name)        // "github.com/eliben/pycparser"
  * console.log(pkg.description) // ":snake: Complete C99 parser in pure Python"
- * console.log(pkg.versions[0]) // "2.22.0" (latest)
+ * console.log(pkg.versions[0]) // "2.23.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/eliben/pycparser.md
@@ -56,6 +56,7 @@ export const githubcomelibenpycparserPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.23.0',
     '2.22.0',
     '2.21.0',
   ] as const,

@@ -2,7 +2,7 @@
  * **device-mapper** - pkgx package
  *
  * @domain `sourceware.org/dm`
- * @version `2.3.34` (12 versions available)
+ * @version `2.3.35` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install device-mapper`
@@ -19,7 +19,7 @@
  * const samePkg = pantry.sourcewareorgdm
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "device-mapper"
- * console.log(pkg.versions[0]) // "2.3.34" (latest)
+ * console.log(pkg.versions[0]) // "2.3.35" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sourceware-org/dm.md
@@ -60,6 +60,7 @@ export const devicemapperPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.3.35',
     '2.3.34',
     '2.3.33',
     '2.3.32',

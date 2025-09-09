@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `1.7.18`, `1.7.17`, `1.7.16`, `1.7.15`
+- `1.7.19`, `1.7.18`, `1.7.17`, `1.7.16`, `1.7.15`
 
 </details>
 
-**Latest Version**: `1.7.18`
+**Latest Version**: `1.7.19`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/DaveGamble/cJSON@1.7.18 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/DaveGamble/cJSON@1.7.19 -- $SHELL -i
 ```
 
 ## Usage Examples

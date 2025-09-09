@@ -2,7 +2,7 @@
  * **github.com/DaveGamble/cJSON** - Ultralightweight JSON parser in ANSI C
  *
  * @domain `github.com/DaveGamble/cJSON`
- * @version `1.7.18` (4 versions available)
+ * @version `1.7.19` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/DaveGamble/cJSON`
@@ -14,7 +14,7 @@
  * const pkg = pantry.githubcomdavegamblecjson
  * console.log(pkg.name)        // "github.com/DaveGamble/cJSON"
  * console.log(pkg.description) // "Ultralightweight JSON parser in ANSI C"
- * console.log(pkg.versions[0]) // "1.7.18" (latest)
+ * console.log(pkg.versions[0]) // "1.7.19" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/DaveGamble/cJSON.md
@@ -49,6 +49,7 @@ export const githubcomdavegamblecjsonPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.7.19',
     '1.7.18',
     '1.7.17',
     '1.7.16',
