@@ -3,7 +3,7 @@
  *
  * @domain `github.com/kubernetes-sigs/aws-iam-authenticator`
  * @programs `aws-iam-authenticator`
- * @version `0.7.6` (24 versions available)
+ * @version `0.7.7` (25 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aws-iam-authenticator`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "aws-iam-authenticator"
  * console.log(pkg.description) // "A tool to use AWS IAM credentials to authentica..."
  * console.log(pkg.programs)    // ["aws-iam-authenticator"]
- * console.log(pkg.versions[0]) // "0.7.6" (latest)
+ * console.log(pkg.versions[0]) // "0.7.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/kubernetes-sigs/aws-iam-authenticator.md
@@ -62,6 +62,7 @@ export const awsiamauthenticatorPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.7.7',
     '0.7.6',
     '0.7.5',
     '0.7.4',

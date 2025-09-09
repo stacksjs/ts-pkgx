@@ -3,7 +3,7 @@
  *
  * @domain `kubernetes.io/minikube`
  * @programs `minikube`
- * @version `1.36.0` (12 versions available)
+ * @version `1.37.0` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install minikube`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "minikube"
  * console.log(pkg.description) // "Run a Kubernetes cluster locally"
  * console.log(pkg.programs)    // ["minikube"]
- * console.log(pkg.versions[0]) // "1.36.0" (latest)
+ * console.log(pkg.versions[0]) // "1.37.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kubernetes-io/minikube.md
@@ -69,6 +69,7 @@ export const minikubePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.37.0',
     '1.36.0',
     '1.35.0',
     '1.34.0',
