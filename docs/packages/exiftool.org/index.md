@@ -25,14 +25,14 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `13.35.0`, `13.30.0`, `13.25.0`, `13.10.0`, `13.0.0`
-- `12.76.0`, `12.75.0`, `12.70.0`, `12.60.0`
+- `13.36.0`, `13.35.0`, `13.30.0`, `13.25.0`, `13.10.0`
+- `13.0.0`, `12.76.0`, `12.75.0`, `12.70.0`, `12.60.0`
 
 </details>
 
-**Latest Version**: `13.35.0`
+**Latest Version**: `13.36.0`
 
 ### Install Specific Version
 
