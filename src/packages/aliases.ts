@@ -162,7 +162,6 @@ export const aliases: Record<string, string> = {
   'conform': 'github.com/siderolabs/conform',
   'conftest': 'conftest.dev',
   'consul': 'consul.io',
-  'consul-template': 'hashicorp.com/consul-template',
   'container-structure-test': 'github.com/GoogleContainerTools/container-structure-test',
   'convco': 'convco.github.io',
   'cookiecutter': 'github.com/cookiecutter/cookiecutter',
