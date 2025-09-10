@@ -3,7 +3,7 @@
  *
  * @domain `grpc.io/grpc-go`
  * @programs `protoc-gen-go-grpc`
- * @version `1.75.1` (36 versions available)
+ * @version `1.75.1` (37 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install protoc-gen-go-grpc`
@@ -86,6 +86,7 @@ export const protocgengogrpcPackage = {
     '1.74.0',
     '1.73.1',
     '1.73.0',
+    '1.72.3',
     '1.72.2',
     '1.72.1',
     '1.72.0',
