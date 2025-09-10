@@ -33,10 +33,10 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `6.0.0`, `5.0.8`, `5.0.7`, `5.0.6`, `5.0.5`
-- `5.0.4`, `5.0.3`, `5.0.2`, `5.0.1`
+- `6.0.0`, `5.0.9`, `5.0.8`, `5.0.7`, `5.0.6`
+- `5.0.5`, `5.0.4`, `5.0.3`, `5.0.2`, `5.0.1`
 
 </details>
 

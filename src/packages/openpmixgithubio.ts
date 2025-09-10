@@ -3,7 +3,7 @@
  *
  * @domain `openpmix.github.io`
  * @programs `palloc`, `pattrs`, `pctrl`, `pevent`, `plookup`, ... (+4 more)
- * @version `6.0.0` (9 versions available)
+ * @version `6.0.0` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openpmix.github.io`
@@ -75,6 +75,7 @@ export const openpmixgithubioPackage = {
    */
   versions: [
     '6.0.0',
+    '5.0.9',
     '5.0.8',
     '5.0.7',
     '5.0.6',
