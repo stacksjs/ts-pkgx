@@ -3,7 +3,7 @@
  *
  * @domain `github.com/hughsie/libxmlb`
  * @programs `xb-tool`
- * @version `0.3.23` (5 versions available)
+ * @version `0.3.24` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xb-tool`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "xb-tool"
  * console.log(pkg.description) // "A library to help create and query binary XML b..."
  * console.log(pkg.programs)    // ["xb-tool"]
- * console.log(pkg.versions[0]) // "0.3.23" (latest)
+ * console.log(pkg.versions[0]) // "0.3.24" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/hughsie/libxmlb.md
@@ -71,6 +71,7 @@ export const xbtoolPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.3.24',
     '0.3.23',
     '0.3.22',
     '0.3.21',
