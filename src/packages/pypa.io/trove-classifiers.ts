@@ -2,7 +2,7 @@
  * **pypa.io/trove-classifiers** - Canonical source for classifiers on PyPI.
  *
  * @domain `pypa.io/trove-classifiers`
- * @version `2025.9.9.12` (32 versions available)
+ * @version `2025.9.9.12` (33 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pypa.io/trove-classifiers`
@@ -58,6 +58,7 @@ export const pypaiotroveclassifiersPackage = {
   versions: [
     '2025.9.9.12',
     '2025.9.8.13',
+    '2025.9.11.17',
     '2025.8.6.13',
     '2025.8.26.11',
     '2025.5.9.12',
