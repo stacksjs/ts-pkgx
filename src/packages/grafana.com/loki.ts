@@ -3,7 +3,7 @@
  *
  * @domain `grafana.com/loki`
  * @programs `loki`
- * @version `3.5.4` (24 versions available)
+ * @version `3.5.4` (25 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install loki`
@@ -67,6 +67,7 @@ export const lokiPackage = {
     '3.5.2',
     '3.5.1',
     '3.5.0',
+    '3.4.6',
     '3.4.5',
     '3.4.4',
     '3.4.3',
