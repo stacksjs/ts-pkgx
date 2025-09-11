@@ -3,7 +3,7 @@
  *
  * @domain `github.com/gotestyourself/gotestsum`
  * @programs `gotestsum`
- * @version `1.12.3` (5 versions available)
+ * @version `1.13.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gotestsum`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "gotestsum"
  * console.log(pkg.description) // "'go test' runner with output optimized for huma..."
  * console.log(pkg.programs)    // ["gotestsum"]
- * console.log(pkg.versions[0]) // "1.12.3" (latest)
+ * console.log(pkg.versions[0]) // "1.13.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/gotestyourself/gotestsum.md
@@ -62,6 +62,7 @@ export const gotestsumPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.13.0',
     '1.12.3',
     '1.12.2',
     '1.12.1',

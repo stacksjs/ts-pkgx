@@ -3,7 +3,7 @@
  *
  * @domain `erlang.org`
  * @programs `ct_run`, `dialyzer`, `epmd`, `erl`, `erlc`, ... (+4 more)
- * @version `28.0.3` (81 versions available)
+ * @version `28.0.4` (82 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install erlang.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "erlang.org"
  * console.log(pkg.description) // "Programming language for highly scalable real-t..."
  * console.log(pkg.programs)    // ["ct_run", "dialyzer", ...]
- * console.log(pkg.versions[0]) // "28.0.3" (latest)
+ * console.log(pkg.versions[0]) // "28.0.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/erlang-org.md
@@ -73,6 +73,7 @@ export const erlangorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '28.0.4',
     '28.0.3',
     '28.0.2',
     '28.0.1',
