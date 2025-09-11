@@ -3,7 +3,7 @@
  *
  * @domain `dozzle.dev`
  * @programs `dozzle`
- * @version `8.13.14` (72 versions available)
+ * @version `8.13.14` (73 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dozzle`
@@ -63,6 +63,7 @@ export const dozzlePackage = {
    */
   versions: [
     '8.13.14',
+    '8.13.13',
     '8.13.12',
     '8.13.11',
     '8.13.10',
