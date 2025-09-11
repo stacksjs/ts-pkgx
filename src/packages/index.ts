@@ -232,7 +232,7 @@ import { sdPackage } from './crates.io/sd'
 import { semveratorPackage } from './crates.io/semverator'
 import { sigPackage } from './crates.io/sigrs'
 import { siliconPackage } from './crates.io/silicon'
-import { skPackage } from './crates.io/skim'
+import { cratesioskimPackage } from './crates.io/skim'
 import { sleekPackage } from './crates.io/sleek'
 import { spiderPackage } from './crates.io/spider_cli'
 import { spotifyplayerPackage } from './crates.io/spotify_player'
@@ -1998,8 +1998,8 @@ export interface Pantry {
   cratesiosigrs: typeof sigPackage
 
   cratesiosilicon: typeof siliconPackage
-  skim: typeof skPackage
-  cratesioskim: typeof skPackage
+
+  cratesioskim: typeof cratesioskimPackage
 
   cratesiosleek: typeof sleekPackage
   spider_cli: typeof spiderPackage
@@ -4501,6 +4501,7 @@ export interface Pantry {
   fblog: typeof fblogPackage
   names: typeof namesPackage
   comrak: typeof comrakPackage
+  skim: typeof cratesioskimPackage
   cavif: typeof cavifPackage
   dym: typeof dymPackage
   pushenv: typeof pushenvPackage
@@ -5817,8 +5818,8 @@ export const pantry: Pantry = {
   cratesiosigrs: sigPackage,
 
   cratesiosilicon: siliconPackage,
-  skim: skPackage,
-  cratesioskim: skPackage,
+
+  cratesioskim: cratesioskimPackage,
 
   cratesiosleek: sleekPackage,
   spider_cli: spiderPackage,
@@ -8320,6 +8321,7 @@ export const pantry: Pantry = {
   fblog: fblogPackage,
   names: namesPackage,
   comrak: comrakPackage,
+  skim: cratesioskimPackage,
   cavif: cavifPackage,
   dym: dymPackage,
   pushenv: pushenvPackage,

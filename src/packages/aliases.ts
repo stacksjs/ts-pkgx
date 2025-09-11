@@ -876,6 +876,7 @@ export const aliases: Record<string, string> = {
   'skate': 'charm.sh/skate',
   'sketchybar': 'felixkratz.github.io/SketchyBar',
   'skhd': 'github.com/koekeishiya/skhd',
+  'skim': 'crates.io/skim',
   'skopeo': 'github.com/containers/skopeo',
   'sleek': 'crates.io/sleek',
   'slides': 'maaslalani.com/slides',
