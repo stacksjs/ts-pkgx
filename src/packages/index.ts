@@ -929,7 +929,7 @@ import { gtssourceforgenetPackage } from './gtssourceforgenet'
 import { hadronsorglibmdPackage } from './hadrons.org/libmd'
 import { autosshPackage } from './harding.motd.ca/autossh'
 import { harfbuzzorgPackage } from './harfbuzzorg'
-import { hashicorpcomconsultemplatePackage } from './hashicorp.com/consul-template'
+import { consultemplatePackage } from './hashicorp.com/consul-template'
 import { envconsulPackage } from './hashicorp.com/envconsul'
 import { cabalPackage } from './haskell.org/cabal'
 import { haskellorgPackage } from './haskellorg'
@@ -3297,8 +3297,8 @@ export interface Pantry {
 
   hardingmotdcaautossh: typeof autosshPackage
   harfbuzzorg: typeof harfbuzzorgPackage
-  consul_template: typeof hashicorpcomconsultemplatePackage
-  hashicorpcomconsultemplate: typeof hashicorpcomconsultemplatePackage
+  consul_template: typeof consultemplatePackage
+  hashicorpcomconsultemplate: typeof consultemplatePackage
 
   hashicorpcomenvconsul: typeof envconsulPackage
 
@@ -5375,6 +5375,7 @@ export interface Pantry {
   eksctl: typeof eksctlPackage
   'rust-script': typeof rustscriptPackage
   envconsul: typeof envconsulPackage
+  'consul-template': typeof consultemplatePackage
   patchelf: typeof patchelfPackage
   helm: typeof helmPackage
   bashly: typeof bashlyPackage
@@ -7115,8 +7116,8 @@ export const pantry: Pantry = {
 
   hardingmotdcaautossh: autosshPackage,
   harfbuzzorg: harfbuzzorgPackage,
-  consul_template: hashicorpcomconsultemplatePackage,
-  hashicorpcomconsultemplate: hashicorpcomconsultemplatePackage,
+  consul_template: consultemplatePackage,
+  hashicorpcomconsultemplate: consultemplatePackage,
 
   hashicorpcomenvconsul: envconsulPackage,
 
@@ -9193,6 +9194,7 @@ export const pantry: Pantry = {
   eksctl: eksctlPackage,
   'rust-script': rustscriptPackage,
   envconsul: envconsulPackage,
+  'consul-template': consultemplatePackage,
   patchelf: patchelfPackage,
   helm: helmPackage,
   bashly: bashlyPackage,

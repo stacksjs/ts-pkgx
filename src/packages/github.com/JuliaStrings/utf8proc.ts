@@ -2,7 +2,7 @@
  * **github.com/JuliaStrings/utf8proc** - a clean C library for processing UTF-8 Unicode data
  *
  * @domain `github.com/JuliaStrings/utf8proc`
- * @version `2.10.0` (3 versions available)
+ * @version `2.11.0` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/JuliaStrings/utf8proc`
@@ -14,7 +14,7 @@
  * const pkg = pantry.githubcomjuliastringsutf8proc
  * console.log(pkg.name)        // "github.com/JuliaStrings/utf8proc"
  * console.log(pkg.description) // "a clean C library for processing UTF-8 Unicode ..."
- * console.log(pkg.versions[0]) // "2.10.0" (latest)
+ * console.log(pkg.versions[0]) // "2.11.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/JuliaStrings/utf8proc.md
@@ -49,6 +49,7 @@ export const githubcomjuliastringsutf8procPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.11.0',
     '2.10.0',
     '2.9.0',
     '2.8.0',
