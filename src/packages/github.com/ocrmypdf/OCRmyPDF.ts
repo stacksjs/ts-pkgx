@@ -3,7 +3,7 @@
  *
  * @domain `github.com/ocrmypdf/OCRmyPDF`
  * @programs `ocrmypdf`
- * @version `16.10.4` (37 versions available)
+ * @version `16.10.4` (38 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ocrmypdf`
@@ -71,6 +71,7 @@ export const ocrmypdfPackage = {
    */
   versions: [
     '16.10.4',
+    '16.10.3',
     '16.10.2',
     '16.10.1',
     '16.10.0',

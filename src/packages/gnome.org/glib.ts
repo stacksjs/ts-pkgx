@@ -1,8 +1,7 @@
 /**
- * **gnome.org/glib** - Core application library for C
+ * **gnome.org/glib** - pkgx package
  *
  * @domain `gnome.org/glib`
- * @programs `gdbus`, `gdbus-codegen`, `gio`, `gio-querymodules`, `glib-compile-resources`, ... (+9 more)
  * @version `2.86.0` (50 versions available)
  * @versions From newest version to oldest.
  *
@@ -16,8 +15,6 @@
  *
  * const pkg = pantry.gnomeorgglib
  * console.log(pkg.name)        // "gnome.org/glib"
- * console.log(pkg.description) // "Core application library for C"
- * console.log(pkg.programs)    // ["gdbus", "gdbus-codegen", ...]
  * console.log(pkg.versions[0]) // "2.86.0" (latest)
  * ```
  *
@@ -36,7 +33,7 @@ export const gnomeorgglibPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Core application library for C' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/glib/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
@@ -45,26 +42,7 @@ export const gnomeorgglibPackage = {
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnome.org/glib' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'gdbus',
-    'gdbus-codegen',
-    'gio',
-    'gio-querymodules',
-    'glib-compile-resources',
-    'glib-compile-schemas',
-    'glib-genmarshal',
-    'glib-gettextize',
-    'glib-mkenums',
-    'gobject-query',
-    'gresource',
-    'gsettings',
-    'gtester',
-    'gtester-report',
-  ] as const,
+  programs: [] as const,
   /**
    * Related packages that work well with this package.
    * Consider installing these for enhanced functionality.
