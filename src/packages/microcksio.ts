@@ -3,7 +3,7 @@
  *
  * @domain `microcks.io`
  * @programs `microcks-cli`
- * @version `0.9.0` (6 versions available)
+ * @version `1.0.0` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install microcks-cli`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "microcks-cli"
  * console.log(pkg.description) // "Simple CLI for interacting with Microcks test APIs"
  * console.log(pkg.programs)    // ["microcks-cli"]
- * console.log(pkg.versions[0]) // "0.9.0" (latest)
+ * console.log(pkg.versions[0]) // "1.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/microcks-io.md
@@ -69,6 +69,7 @@ export const microckscliPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.0.0',
     '0.9.0',
     '0.5.8',
     '0.5.7',
