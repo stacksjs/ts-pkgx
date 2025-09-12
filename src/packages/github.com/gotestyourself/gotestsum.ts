@@ -42,7 +42,7 @@ export const gotestsumPackage = {
   description: '\'go test\' runner with output optimized for humans, JUnit XML for CI integration, and a summary of the test results.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/gotestyourself/gotestsum/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/gotestyourself/gotestsum' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
