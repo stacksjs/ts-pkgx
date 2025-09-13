@@ -29,19 +29,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 5 versions</summary>
+<summary>Show all 6 versions</summary>
 
-- `1.84.0`, `1.83.4`, `1.83.2`, `1.82.0`, `1.72.0`
+- `1.86.0`, `1.84.0`, `1.83.4`, `1.83.2`, `1.82.0`
+- `1.72.0`
 
 </details>
 
-**Latest Version**: `1.84.0`
+**Latest Version**: `1.86.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnome.org/gobject-introspection@1.84.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnome.org/gobject-introspection@1.86.0 -- $SHELL -i
 ```
 
 ## Dependencies

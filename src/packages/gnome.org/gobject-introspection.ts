@@ -3,7 +3,7 @@
  *
  * @domain `gnome.org/gobject-introspection`
  * @programs `g-ir-annotation-tool`, `g-ir-compiler`, `g-ir-generate`, `g-ir-inspect`, `g-ir-scanner`
- * @version `1.84.0` (5 versions available)
+ * @version `1.86.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install g-ir`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "g-ir"
  * console.log(pkg.description) // "Generate introspection data for GObject libraries"
  * console.log(pkg.programs)    // ["g-ir-annotation-tool", "g-ir-compiler", ...]
- * console.log(pkg.versions[0]) // "1.84.0" (latest)
+ * console.log(pkg.versions[0]) // "1.86.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/gobject-introspection.md
@@ -77,6 +77,7 @@ export const girPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.86.0',
     '1.84.0',
     '1.83.4',
     '1.83.2',
