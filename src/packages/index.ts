@@ -972,7 +972,7 @@ import { bind9Package } from './isc.org/bind9'
 import { istioctlPackage } from './istioio'
 import { itstoolPackage } from './itstoolorg'
 import { pvPackage } from './ivarch.com/pv'
-import { jbangdevPackage } from './jbangdev'
+import { jbangPackage } from './jbangdev'
 import { jbig2decPackage } from './jbig2deccom'
 import { minisignPackage } from './jedisct1.github.io/minisign'
 import { slshPackage } from './jedsoft.org/slang'
@@ -3363,7 +3363,7 @@ export interface Pantry {
   itstoolorg: typeof itstoolPackage
   pv: typeof pvPackage
   ivarchcompv: typeof pvPackage
-  jbangdev: typeof jbangdevPackage
+  jbangdev: typeof jbangPackage
   jbig2deccom: typeof jbig2decPackage
 
   jedisct1githubiominisign: typeof minisignPackage
@@ -5221,6 +5221,7 @@ export interface Pantry {
   consul: typeof consulPackage
   ord: typeof ordPackage
   restic: typeof resticPackage
+  jbang: typeof jbangPackage
   dssim: typeof dssimPackage
   'argo-cd': typeof argocdPackage
   argocd: typeof argocdPackage
@@ -7181,7 +7182,7 @@ export const pantry: Pantry = {
   itstoolorg: itstoolPackage,
   pv: pvPackage,
   ivarchcompv: pvPackage,
-  jbangdev: jbangdevPackage,
+  jbangdev: jbangPackage,
   jbig2deccom: jbig2decPackage,
 
   jedisct1githubiominisign: minisignPackage,
@@ -9039,6 +9040,7 @@ export const pantry: Pantry = {
   consul: consulPackage,
   ord: ordPackage,
   restic: resticPackage,
+  jbang: jbangPackage,
   dssim: dssimPackage,
   'argo-cd': argocdPackage,
   argocd: argocdPackage,
