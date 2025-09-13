@@ -2,7 +2,7 @@
  * **gnome.org/json-glib** - pkgx package
  *
  * @domain `gnome.org/json-glib`
- * @version `1.10.6` (4 versions available)
+ * @version `1.10.8` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnome.org/json-glib`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.gnomeorgjsonglib
  * console.log(pkg.name)        // "gnome.org/json-glib"
- * console.log(pkg.versions[0]) // "1.10.6" (latest)
+ * console.log(pkg.versions[0]) // "1.10.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/json-glib.md
@@ -55,6 +55,7 @@ export const gnomeorgjsonglibPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.10.8',
     '1.10.6',
     '1.10.0',
     '1.9.2',
