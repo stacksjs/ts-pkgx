@@ -2,7 +2,7 @@
  * **github.com/pyparsing/pyparsing** - Python library for creating PEG parsers
  *
  * @domain `github.com/pyparsing/pyparsing`
- * @version `3.2.3` (8 versions available)
+ * @version `3.2.4` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/pyparsing/pyparsing`
@@ -15,7 +15,7 @@
  * const pkg = pantry.githubcompyparsingpyparsing
  * console.log(pkg.name)        // "github.com/pyparsing/pyparsing"
  * console.log(pkg.description) // "Python library for creating PEG parsers"
- * console.log(pkg.versions[0]) // "3.2.3" (latest)
+ * console.log(pkg.versions[0]) // "3.2.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/pyparsing/pyparsing.md
@@ -56,6 +56,7 @@ export const githubcompyparsingpyparsingPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.2.4',
     '3.2.3',
     '3.2.2',
     '3.2.1',
