@@ -3,7 +3,7 @@
  *
  * @domain `sniffnet.net`
  * @programs `sniffnet`
- * @version `1.4.0` (3 versions available)
+ * @version `1.4.1` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sniffnet`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "sniffnet"
  * console.log(pkg.description) // "Cross-platform application to monitor your netw..."
  * console.log(pkg.programs)    // ["sniffnet"]
- * console.log(pkg.versions[0]) // "1.4.0" (latest)
+ * console.log(pkg.versions[0]) // "1.4.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/sniffnet-net.md
@@ -73,6 +73,7 @@ export const sniffnetPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.4.1',
     '1.4.0',
     '1.3.2',
     '1.3.1',

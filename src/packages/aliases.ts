@@ -457,7 +457,6 @@ export const aliases: Record<string, string> = {
   'jadx': 'github.com/skylot/jadx',
   'jags': 'mcmc-jags.sourceforge.io',
   'jasper': 'github.com/jasper-software/jasper',
-  'jbang': 'jbang.dev',
   'jbig2dec': 'jbig2dec.com',
   'Jenkins X': 'jenkins-x.io',
   'jenkins-lts': 'jenkins.io',
