@@ -3,7 +3,7 @@
  *
  * @domain `gnome.org/librsvg`
  * @programs `rsvg-convert`
- * @version `2.61.1` (32 versions available)
+ * @version `2.61.1` (33 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rsvg-convert`
@@ -87,6 +87,7 @@ export const rsvgconvertPackage = {
     '2.58.0',
     '2.57.91',
     '2.57.90',
+    '2.57.4',
     '2.57.3',
     '2.57.2',
     '2.57.1',
