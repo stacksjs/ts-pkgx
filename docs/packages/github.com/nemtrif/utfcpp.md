@@ -25,20 +25,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 10 versions</summary>
+<summary>Show all 11 versions</summary>
 
-- `4.0.6`, `4.0.5`, `4.0.4`, `4.0.3`, `4.0.2`
-- `4.0.1`, `4.0.0`, `3.2.5`, `3.2.4`, `3.2.3`
+- `4.0.7`, `4.0.6`, `4.0.5`, `4.0.4`, `4.0.3`
+- `4.0.2`, `4.0.1`, `4.0.0`, `3.2.5`, `3.2.4`
+- `3.2.3`
 
 </details>
 
-**Latest Version**: `4.0.6`
+**Latest Version**: `4.0.7`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/nemtrif/utfcpp@4.0.6 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/nemtrif/utfcpp@4.0.7 -- $SHELL -i
 ```
 
 ## Usage Examples
