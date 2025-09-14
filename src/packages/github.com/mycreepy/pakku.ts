@@ -3,7 +3,7 @@
  *
  * @domain `github.com/mycreepy/pakku`
  * @programs `pakku`
- * @version `0.5.0` (8 versions available)
+ * @version `0.5.1` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pakku`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "pakku"
  * console.log(pkg.description) // "pakku is a declarative approach to your system ..."
  * console.log(pkg.programs)    // ["pakku"]
- * console.log(pkg.versions[0]) // "0.5.0" (latest)
+ * console.log(pkg.versions[0]) // "0.5.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/mycreepy/pakku.md
@@ -62,6 +62,7 @@ export const pakkuPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.5.1',
     '0.5.0',
     '0.4.2',
     '0.4.1',

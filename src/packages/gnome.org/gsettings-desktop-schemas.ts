@@ -2,7 +2,7 @@
  * **gnome.org/gsettings-desktop-schemas** - pkgx package
  *
  * @domain `gnome.org/gsettings-desktop-schemas`
- * @version `48.0.0` (6 versions available)
+ * @version `49.0.0` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnome.org/gsettings-desktop-schemas`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.gnomeorggsettingsdesktopschemas
  * console.log(pkg.name)        // "gnome.org/gsettings-desktop-schemas"
- * console.log(pkg.versions[0]) // "48.0.0" (latest)
+ * console.log(pkg.versions[0]) // "49.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/gsettings-desktop-schemas.md
@@ -56,6 +56,7 @@ export const gnomeorggsettingsdesktopschemasPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '49.0.0',
     '48.0.0',
     '47.1.0',
     '46.1.0',
