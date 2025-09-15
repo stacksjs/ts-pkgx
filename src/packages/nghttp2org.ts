@@ -2,7 +2,7 @@
  * **nghttp2.org** - nghttp2 - HTTP/2 C Library and tools
  *
  * @domain `nghttp2.org`
- * @version `1.67.0` (19 versions available)
+ * @version `1.67.1` (20 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nghttp2.org`
@@ -14,7 +14,7 @@
  * const pkg = pantry.nghttp2org
  * console.log(pkg.name)        // "nghttp2.org"
  * console.log(pkg.description) // "nghttp2 - HTTP/2 C Library and tools"
- * console.log(pkg.versions[0]) // "1.67.0" (latest)
+ * console.log(pkg.versions[0]) // "1.67.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nghttp2-org.md
@@ -49,6 +49,7 @@ export const nghttp2orgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.67.1',
     '1.67.0',
     '1.66.0',
     '1.65.0',
