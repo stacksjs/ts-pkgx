@@ -1,37 +1,29 @@
 /**
- * **scc** - Sloc, Cloc and Code: scc is a very fast accurate code counter with complexity calculations and COCOMO estimates written in pure Go
+ * **github.com/boyter/scc** - pkgx package
  *
  * @domain `github.com/boyter/scc`
- * @programs `scc`
  * @version `3.5.0` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install scc`
- * @name `scc`
+ * @install `launchpad install github.com/boyter/scc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.scc
- * // Or access via domain
- * const samePkg = pantry.githubcomboyterscc
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "scc"
- * console.log(pkg.description) // "Sloc, Cloc and Code: scc is a very fast accurat..."
- * console.log(pkg.programs)    // ["scc"]
+ * const pkg = pantry.githubcomboyterscc
+ * console.log(pkg.name)        // "github.com/boyter/scc"
  * console.log(pkg.versions[0]) // "3.5.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/boyter/scc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sccPackage = {
+export const githubcomboytersccPackage = {
   /**
    * The display name of this package.
    */
-  name: 'scc' as const,
+  name: 'github.com/boyter/scc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +31,7 @@ export const sccPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Sloc, Cloc and Code: scc is a very fast accurate code counter with complexity calculations and COCOMO estimates written in pure Go' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/boyter/scc/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
@@ -47,14 +39,8 @@ export const sccPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install scc' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'scc',
-  ] as const,
+  installCommand: 'launchpad install github.com/boyter/scc' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   /**
@@ -73,13 +59,9 @@ export const sccPackage = {
     '3.2.0',
     '3.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) scc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install scc' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/boyter/scc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/boyter/scc' as const,
 }
 
-export type SccPackage = typeof sccPackage
+export type GithubcomboytersccPackage = typeof githubcomboytersccPackage

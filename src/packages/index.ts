@@ -518,7 +518,7 @@ import { awswhoamiPackage } from './github.com/benkehoe/aws-whoami-golang'
 import { githubcombesser82libxcryptPackage } from './github.com/besser82/libxcrypt'
 import { lporgPackage } from './github.com/blacktop/lporg'
 import { nexPackage } from './github.com/blynn/nex'
-import { sccPackage } from './github.com/boyter/scc'
+import { githubcomboytersccPackage } from './github.com/boyter/scc'
 import { githubcombronaiproute2macPackage } from './github.com/brona/iproute2mac'
 import { brucePackage } from './github.com/brucedom/bruce'
 import { xsvPackage } from './github.com/burntsushi/xsv'
@@ -866,7 +866,7 @@ import { gnuorgmpcPackage } from './gnu.org/mpc'
 import { gnuorgmpfrPackage } from './gnu.org/mpfr'
 import { gnuorgnettlePackage } from './gnu.org/nettle'
 import { gnuorgparallelPackage } from './gnu.org/parallel'
-import { patchPackage } from './gnu.org/patch'
+import { gnuorgpatchPackage } from './gnu.org/patch'
 import { gnuorgplotutilsPackage } from './gnu.org/plotutils'
 import { gnuorgreadlinePackage } from './gnu.org/readline'
 import { sedPackage } from './gnu.org/sed'
@@ -2497,8 +2497,8 @@ export interface Pantry {
   githubcomblacktop: typeof lporgPackage
 
   githubcomblynn: typeof nexPackage
-
-  githubcomboyter: typeof sccPackage
+  scc: typeof githubcomboytersccPackage
+  githubcomboyter: typeof githubcomboytersccPackage
   iproute2mac: typeof githubcombronaiproute2macPackage
   githubcombrona: typeof githubcombronaiproute2macPackage
 
@@ -3189,8 +3189,8 @@ export interface Pantry {
   gnuorgnettle: typeof gnuorgnettlePackage
   parallel: typeof gnuorgparallelPackage
   gnuorgparallel: typeof gnuorgparallelPackage
-
-  gnuorgpatch: typeof patchPackage
+  patch: typeof gnuorgpatchPackage
+  gnuorgpatch: typeof gnuorgpatchPackage
   plotutils: typeof gnuorgplotutilsPackage
   gnuorgplotutils: typeof gnuorgplotutilsPackage
   readline: typeof gnuorgreadlinePackage
@@ -4316,7 +4316,6 @@ export interface Pantry {
   gdbm: typeof gdbmPackage
   idn: typeof idnPackage
   bash: typeof bashPackage
-  patch: typeof patchPackage
   sed: typeof sedPackage
   help2man: typeof help2manPackage
   which: typeof whichPackage
@@ -5007,7 +5006,6 @@ export interface Pantry {
   yamllint: typeof yamllintPackage
   starpls: typeof starplsPackage
   'stable-diffusion-webui': typeof stablediffusionwebuiPackage
-  scc: typeof sccPackage
   'protoc-gen-jsonschema': typeof protocgenjsonschemaPackage
   kaspa: typeof kaspaPackage
   kcat: typeof kcatPackage
@@ -6316,8 +6314,8 @@ export const pantry: Pantry = {
   githubcomblacktop: lporgPackage,
 
   githubcomblynn: nexPackage,
-
-  githubcomboyter: sccPackage,
+  scc: githubcomboytersccPackage,
+  githubcomboyter: githubcomboytersccPackage,
   iproute2mac: githubcombronaiproute2macPackage,
   githubcombrona: githubcombronaiproute2macPackage,
 
@@ -7008,8 +7006,8 @@ export const pantry: Pantry = {
   gnuorgnettle: gnuorgnettlePackage,
   parallel: gnuorgparallelPackage,
   gnuorgparallel: gnuorgparallelPackage,
-
-  gnuorgpatch: patchPackage,
+  patch: gnuorgpatchPackage,
+  gnuorgpatch: gnuorgpatchPackage,
   plotutils: gnuorgplotutilsPackage,
   gnuorgplotutils: gnuorgplotutilsPackage,
   readline: gnuorgreadlinePackage,
@@ -8135,7 +8133,6 @@ export const pantry: Pantry = {
   gdbm: gdbmPackage,
   idn: idnPackage,
   bash: bashPackage,
-  patch: patchPackage,
   sed: sedPackage,
   help2man: help2manPackage,
   which: whichPackage,
@@ -8826,7 +8823,6 @@ export const pantry: Pantry = {
   yamllint: yamllintPackage,
   starpls: starplsPackage,
   'stable-diffusion-webui': stablediffusionwebuiPackage,
-  scc: sccPackage,
   'protoc-gen-jsonschema': protocgenjsonschemaPackage,
   kaspa: kaspaPackage,
   kcat: kcatPackage,

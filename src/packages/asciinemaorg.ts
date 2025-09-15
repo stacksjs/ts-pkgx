@@ -3,7 +3,7 @@
  *
  * @domain `asciinema.org`
  * @programs `asciinema`
- * @version `2.4.0` (1 versions available)
+ * @version `3.0.0` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install asciinema`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "asciinema"
  * console.log(pkg.description) // "Record and share terminal sessions"
  * console.log(pkg.programs)    // ["asciinema"]
- * console.log(pkg.versions[0]) // "2.4.0" (latest)
+ * console.log(pkg.versions[0]) // "3.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/asciinema-org.md
@@ -69,6 +69,7 @@ export const asciinemaPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.0.0',
     '2.4.0',
   ] as const,
   /**
