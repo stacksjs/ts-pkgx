@@ -8,7 +8,7 @@
  *
  * @install `launchpad install pandoc-crossref`
  * @name `pandoc-crossref`
- * @dependencies `pandoc.org^2.18`, `zlib.net@1`, `gnu.org/gmp@6`
+ * @dependencies `pandoc.org^3.8`, `zlib.net@1`, `gnu.org/gmp@6`
  *
  * @example
  * ```typescript
@@ -62,7 +62,7 @@ export const pandoccrossrefPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'pandoc.org^2.18',
+    'pandoc.org^3.8',
     'zlib.net@1',
     'gnu.org/gmp@6',
   ] as const,

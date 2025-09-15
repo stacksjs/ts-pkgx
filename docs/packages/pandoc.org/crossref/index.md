@@ -45,7 +45,7 @@ sh <(curl https://pkgx.sh) pandoc-crossref -- $SHELL -i
 
 This package depends on:
 
-- `pandoc.org^2.18`
+- `pandoc.org^3.8`
 - `zlib.net@1`
 - `gnu.org/gmp@6`
 

@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 1 versions</summary>
+<summary>Show all 2 versions</summary>
 
-- `4.10.2`
+- `5.0.6`, `4.10.2`
 
 </details>
 
-**Latest Version**: `4.10.2`
+**Latest Version**: `5.0.6`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +macfuse.github.io@4.10.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +macfuse.github.io@5.0.6 -- $SHELL -i
 ```
 
 ## Usage Examples
