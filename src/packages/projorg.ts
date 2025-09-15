@@ -3,7 +3,7 @@
  *
  * @domain `proj.org`
  * @programs `proj`
- * @version `9.6.2` (11 versions available)
+ * @version `9.7.0` (12 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install proj`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "proj"
  * console.log(pkg.description) // "PROJ - Cartographic Projections and Coordinate ..."
  * console.log(pkg.programs)    // ["proj"]
- * console.log(pkg.versions[0]) // "9.6.2" (latest)
+ * console.log(pkg.versions[0]) // "9.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/proj-org.md
@@ -71,6 +71,7 @@ export const projPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '9.7.0',
     '9.6.2',
     '9.6.1',
     '9.6.0',
