@@ -2,7 +2,7 @@
  * **facebook.com/edencommon** - Shared library for Watchman and Eden projects.
  *
  * @domain `facebook.com/edencommon`
- * @version `2025.9.8.0` (105 versions available)
+ * @version `2025.9.8.0` (106 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install facebook.com/edencommon`
@@ -66,6 +66,7 @@ export const facebookcomedencommonPackage = {
    */
   versions: [
     '2025.9.8.0',
+    '2025.9.15.0',
     '2025.9.1.0',
     '2025.8.4.0',
     '2025.8.25.0',
