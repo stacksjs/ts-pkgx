@@ -2,7 +2,7 @@
  * **utf8cpp** - UTF-8 with C++ in a Portable Way
  *
  * @domain `github.com/nemtrif/utfcpp`
- * @version `4.0.7` (11 versions available)
+ * @version `4.0.8` (12 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install utf8cpp`
@@ -19,7 +19,7 @@
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "utf8cpp"
  * console.log(pkg.description) // "UTF-8 with C++ in a Portable Way"
- * console.log(pkg.versions[0]) // "4.0.7" (latest)
+ * console.log(pkg.versions[0]) // "4.0.8" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/nemtrif/utfcpp.md
@@ -54,6 +54,7 @@ export const utf8cppPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.0.8',
     '4.0.7',
     '4.0.6',
     '4.0.5',
