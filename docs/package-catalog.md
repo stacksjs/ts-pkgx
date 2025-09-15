@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-09-15T13:36:32.516Z
+- **Last Updated**: 2025-09-15T14:31:49.885Z
 
 ## Table of Contents
 
@@ -210,7 +210,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[ninja-build.org](./packages/ninja-build.org/index.md)** () | Small build system for use with gyp or CMake | ninja | 1.13.1 (+5) | `pkgx ninja` |
 | **[pantsbuild.org/scie-pants](./packages/pantsbuild.org/scie-pants/index.md)** (pants) | Protects your Pants from the elements. | pants | 0.12.5 (+4) | `pkgx pants` |
 | **[scons.org](./packages/scons.org/index.md)** () | Substitute for classic &#39;make&#39; tool with autoconf/automake functionality | scons | 4.9.1 (+6) | `pkgx scons` |
-| **[taskfile.dev](./packages/taskfile.dev/index.md)** () | A task runner / simpler Make alternative written in Go | task | 3.44.1 (+31) | `pkgx task` |
+| **[taskfile.dev](./packages/taskfile.dev/index.md)** () | A task runner / simpler Make alternative written in Go | task | 3.45.3 (+32) | `pkgx task` |
 
 ## Package Managers
 
