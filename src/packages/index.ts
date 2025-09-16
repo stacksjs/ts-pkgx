@@ -1456,7 +1456,7 @@ import { teaxyzPackage } from './teaxyz'
 import { tectonicPackage } from './tectonic-typesettinggithubio'
 import { templPackage } from './templguide'
 import { temporalPackage } from './temporalio'
-import { terraformdocsPackage } from './terraform-docsio'
+import { terraformdocsioPackage } from './terraform-docsio'
 import { cdktfPackage } from './terraform.io/cdk'
 import { terraformPackage } from './terraformio'
 import { terragruntPackage } from './terragruntgruntworkio'
@@ -4060,8 +4060,8 @@ export interface Pantry {
   tectonictypesettinggithubio: typeof tectonicPackage
   templguide: typeof templPackage
   temporalio: typeof temporalPackage
-  terraform_docsio: typeof terraformdocsPackage
-  terraformdocsio: typeof terraformdocsPackage
+  terraform_docsio: typeof terraformdocsioPackage
+  terraformdocsio: typeof terraformdocsioPackage
   cdk1: typeof cdktfPackage
   terraformiocdk: typeof cdktfPackage
   terraformio: typeof terraformPackage
@@ -5262,7 +5262,6 @@ export interface Pantry {
   gphoto2: typeof gphoto2Package
   'process-compose': typeof processcomposePackage
   pinniped: typeof pinnipedPackage
-  'terraform-docs': typeof terraformdocsPackage
   uplift: typeof upliftPackage
   'Midnight Commander': typeof midnightCommanderPackage
   conftest: typeof conftestPackage
@@ -7879,8 +7878,8 @@ export const pantry: Pantry = {
   tectonictypesettinggithubio: tectonicPackage,
   templguide: templPackage,
   temporalio: temporalPackage,
-  terraform_docsio: terraformdocsPackage,
-  terraformdocsio: terraformdocsPackage,
+  terraform_docsio: terraformdocsioPackage,
+  terraformdocsio: terraformdocsioPackage,
   cdk1: cdktfPackage,
   terraformiocdk: cdktfPackage,
   terraformio: terraformPackage,
@@ -9081,7 +9080,6 @@ export const pantry: Pantry = {
   gphoto2: gphoto2Package,
   'process-compose': processcomposePackage,
   pinniped: pinnipedPackage,
-  'terraform-docs': terraformdocsPackage,
   uplift: upliftPackage,
   'Midnight Commander': midnightCommanderPackage,
   conftest: conftestPackage,

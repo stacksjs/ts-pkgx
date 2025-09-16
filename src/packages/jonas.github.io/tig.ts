@@ -3,7 +3,7 @@
  *
  * @domain `jonas.github.io/tig`
  * @programs `tig`
- * @version `2.5.12` (5 versions available)
+ * @version `2.6.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tig`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "tig"
  * console.log(pkg.description) // "Text interface for Git repositories"
  * console.log(pkg.programs)    // ["tig"]
- * console.log(pkg.versions[0]) // "2.5.12" (latest)
+ * console.log(pkg.versions[0]) // "2.6.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/jonas-github-io/tig.md
@@ -70,6 +70,7 @@ export const tigPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.6.0',
     '2.5.12',
     '2.5.11',
     '2.5.10',

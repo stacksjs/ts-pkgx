@@ -3,7 +3,7 @@
  *
  * @domain `haskell.org`
  * @programs `ghc`, `ghc-{{version.marketing}}`, `ghc-{{version}}`, `ghc-pkg`, `ghc-pkg-{{version.marketing}}`, ... (+23 more)
- * @version `9.12.2` (19 versions available)
+ * @version `9.12.2` (20 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install haskell.org`
@@ -98,6 +98,7 @@ export const haskellorgPackage = {
   versions: [
     '9.12.2',
     '9.12.1',
+    '9.10.3',
     '9.10.2',
     '9.10.1',
     '9.8.4',
