@@ -25,23 +25,23 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 24 versions</summary>
+<summary>Show all 25 versions</summary>
 
-- `45.0.7`, `45.0.6`, `45.0.5`, `45.0.4`, `45.0.3`
-- `45.0.2`, `45.0.1`, `45.0.0`, `44.0.3`, `44.0.2`
-- `44.0.1`, `44.0.0`, `43.0.3`, `43.0.2`, `43.0.1`
-- `43.0.0`, `42.0.8`, `42.0.7`, `42.0.6`, `42.0.5`
-- `42.0.4`, `42.0.3`, `42.0.2`, `42.0.1`
+- `46.0.0`, `45.0.7`, `45.0.6`, `45.0.5`, `45.0.4`
+- `45.0.3`, `45.0.2`, `45.0.1`, `45.0.0`, `44.0.3`
+- `44.0.2`, `44.0.1`, `44.0.0`, `43.0.3`, `43.0.2`
+- `43.0.1`, `43.0.0`, `42.0.8`, `42.0.7`, `42.0.6`
+- `42.0.5`, `42.0.4`, `42.0.3`, `42.0.2`, `42.0.1`
 
 </details>
 
-**Latest Version**: `45.0.7`
+**Latest Version**: `46.0.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +cryptography.io@45.0.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) +cryptography.io@46.0.0 -- $SHELL -i
 ```
 
 ## Dependencies

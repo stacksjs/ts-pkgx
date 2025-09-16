@@ -975,6 +975,7 @@ export const aliases: Record<string, string> = {
   'termusic': 'crates.io/termusic',
   'terraform': 'terraform.io',
   'terraform-cdk': 'terraform.io/cdk',
+  'terraform-docs': 'terraform-docs.io',
   'terragrunt': 'terragrunt.gruntwork.io',
   'terrarium': 'github.com/terrarium-tf',
   'terratag': 'terratag.io',
