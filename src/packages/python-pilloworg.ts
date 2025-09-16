@@ -1,5 +1,5 @@
 /**
- * **python-pillow.org** - pkgx package
+ * **python-pillow.org** - Python Imaging Library (Fork)
  *
  * @domain `python-pillow.org`
  * @version `11.3.0` (7 versions available)
@@ -14,6 +14,7 @@
  *
  * const pkg = pantry.pythonpilloworg
  * console.log(pkg.name)        // "python-pillow.org"
+ * console.log(pkg.description) // "Python Imaging Library (Fork)"
  * console.log(pkg.versions[0]) // "11.3.0" (latest)
  * ```
  *
@@ -32,7 +33,7 @@ export const pythonpilloworgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'Python Imaging Library (Fork)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/python-pillow.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,

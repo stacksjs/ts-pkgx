@@ -410,7 +410,7 @@ import { gaiagisitfossilfreexlPackage } from './gaia-gis.it/fossil/freexl'
 import { gaiagisitlibspatialitePackage } from './gaia-gis.it/libspatialite'
 import { gdalorgPackage } from './gdalorg'
 import { agPackage } from './geoff.greer.fm/ag'
-import { cbPackage } from './getclipboardapp'
+import { getclipboardappPackage } from './getclipboardapp'
 import { composerPackage } from './getcomposerorg'
 import { getfoundryshPackage } from './getfoundrysh'
 import { getmoneroorgPackage } from './getmoneroorg'
@@ -2291,7 +2291,7 @@ export interface Pantry {
   gdalorg: typeof gdalorgPackage
 
   geoffgreerfmag: typeof agPackage
-  getclipboardapp: typeof cbPackage
+  getclipboardapp: typeof getclipboardappPackage
   getcomposerorg: typeof composerPackage
   getfoundrysh: typeof getfoundryshPackage
   getmoneroorg: typeof getmoneroorgPackage
@@ -6110,7 +6110,7 @@ export const pantry: Pantry = {
   gdalorg: gdalorgPackage,
 
   geoffgreerfmag: agPackage,
-  getclipboardapp: cbPackage,
+  getclipboardapp: getclipboardappPackage,
   getcomposerorg: composerPackage,
   getfoundrysh: getfoundryshPackage,
   getmoneroorg: getmoneroorgPackage,
