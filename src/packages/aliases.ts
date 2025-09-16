@@ -122,6 +122,7 @@ export const aliases: Record<string, string> = {
   'cedar-agent': 'permit.io/cedar-agent',
   'cemetery-escape': 'github.com/tom-on-the-internet/cemetery-escape',
   'cephadm': 'ceph.com/cephadm',
+  'certbot': 'certbot.eff.org',
   'cfn-lint': 'github.com/aws-cloudformation/cfn-lint',
   'cgal': 'cgal.org',
   'chacl': 'savannah.nongnu.org/acl',

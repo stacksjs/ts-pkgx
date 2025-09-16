@@ -1,30 +1,38 @@
 /**
- * **certbot.eff.org** - pkgx package
+ * **certbot** - Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server.  It can also act as a client for any other CA that uses the ACME protocol.
  *
  * @domain `certbot.eff.org`
+ * @programs `certbot`
  * @version `5.0.0` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install certbot.eff.org`
+ * @install `launchpad install certbot`
+ * @name `certbot`
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.certbotefforg
- * console.log(pkg.name)        // "certbot.eff.org"
+ * // Access the package
+ * const pkg = pantry.certbot
+ * // Or access via domain
+ * const samePkg = pantry.certbotefforg
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "certbot"
+ * console.log(pkg.description) // "Certbot is EFF's tool to obtain certs from Let'..."
+ * console.log(pkg.programs)    // ["certbot"]
  * console.log(pkg.versions[0]) // "5.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/certbot-eff-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const certbotefforgPackage = {
+export const certbotPackage = {
   /**
    * The display name of this package.
    */
-  name: 'certbot.eff.org' as const,
+  name: 'certbot' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -32,7 +40,7 @@ export const certbotefforgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'Certbot is EFF\'s tool to obtain certs from Let\'s Encrypt and (optionally) auto-enable HTTPS on your server.  It can also act as a client for any other CA that uses the ACME protocol.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/certbot.eff.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
@@ -40,8 +48,14 @@ export const certbotefforgPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install certbot.eff.org' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install certbot' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'certbot',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -77,9 +91,13 @@ export const certbotefforgPackage = {
     '2.7.0',
     '2.6.0',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +certbot.eff.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install certbot.eff.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) certbot -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install certbot' as const,
 }
 
-export type CertbotefforgPackage = typeof certbotefforgPackage
+export type CertbotPackage = typeof certbotPackage

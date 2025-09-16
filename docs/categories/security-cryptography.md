@@ -1,6 +1,6 @@
 # Security & Cryptography
 
-*11 packages in this category*
+*12 packages in this category*
 
 Packages related to security & cryptography.
 
@@ -33,6 +33,16 @@ Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes
 **Programs**: trivy
 
 **Install**: `launchpad install trivy`
+
+---
+
+### [certbot.eff.org](../packages/certbot.eff.org/index.md) (certbot)
+
+Certbot is EFF's tool to obtain certs from Let's Encrypt and (optionally) auto-enable HTTPS on your server. It can also act as a client for any other CA that uses the ACME protocol.
+
+**Programs**: certbot
+
+**Install**: `launchpad install certbot`
 
 ---
 
