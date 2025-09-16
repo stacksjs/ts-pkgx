@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1397+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1396+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1397
+- **Total Packages**: 1396
 - **Categories**: 27
-- **Last Updated**: 2025-09-16T16:33:18.407Z
+- **Last Updated**: 2025-09-16T18:32:46.647Z
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [Editors & IDEs](#editors-ides) (8 packages)
 - [CLI Tools & Utilities](#cli-tools-utilities) (35 packages)
 - [Networking](#networking) (9 packages)
-- [Security & Cryptography](#security-cryptography) (12 packages)
+- [Security & Cryptography](#security-cryptography) (11 packages)
 - [Multimedia](#multimedia) (7 packages)
 - [Graphics Libraries](#graphics-libraries) (3 packages)
 - [Gaming & Game Development](#gaming-game-development) (1 packages)
@@ -49,7 +49,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[crystal-lang.org](./packages/crystal-lang.org/index.md)** () | Fast and statically typed, compiled language with Ruby-like syntax | crystal | 1.17.1 (+20) | `pkgx crystal` |
 | **[dart.dev](./packages/dart.dev/index.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.9.3 (+41) | `pkgx dart` |
 | **[go.dev](./packages/go.dev/index.md)** (go) | The Go programming language | go, gofmt | 1.25.1 (+74) | `pkgx go` |
-| **[julialang.org](./packages/julialang.org/index.md)** () | The Julia Programming Language | julia | 1.11.6 (+19) | `pkgx julia` |
+| **[julialang.org](./packages/julialang.org/index.md)** () | The Julia Programming Language | julia | 1.11.7 (+20) | `pkgx julia` |
 | **[lua.org](./packages/lua.org/index.md)** () | Powerful, lightweight programming language | lua, luac | 5.4.8 (+3) | `pkgx lua` |
 | **[luajit.org](./packages/luajit.org/index.md)** () | Mirror of the LuaJIT git repository | luajit, luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;. | 2.1.0 (+0) | `pkgx luajit` |
 | **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 24.8.0 (+151) | `pkgx node` |
@@ -311,14 +311,13 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Security & Cryptography
 
-*12 packages in this category*
+*11 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[agwa.name/git-crypt](./packages/agwa.name/git-crypt/index.md)** () | Enable transparent encryption/decryption of files in a git repo | git-crypt | 0.7.0 (+0) | `pkgx git-crypt` |
 | **[aquasecurity.github.io/tfsec](./packages/aquasecurity.github.io/tfsec/index.md)** () | Static analysis security scanner for your terraform code | tfsec | 1.28.14 (+8) | `pkgx tfsec` |
 | **[aquasecurity.github.io/trivy](./packages/aquasecurity.github.io/trivy/index.md)** () | Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositori... | trivy | 0.66.0 (+39) | `pkgx trivy` |
-| **[certbot.eff.org](./packages/certbot.eff.org/index.md)** () | Certbot is EFF&#39;s tool to obtain certs from Let&#39;s Encrypt and (optionally) auto-enable HTT... | certbot | 5.0.0 (+20) | `pkgx certbot` |
 | **[checkov.io](./packages/checkov.io/index.md)** () | Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as c... | checkov | 3.2.471 (+501) | `pkgx checkov` |
 | **[filippo.io/age](./packages/filippo.io/age/index.md)** () | A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config ... | age, age-keygen | 1.2.1 (+2) | `pkgx age` |
 | **[filippo.io/yubikey-agent](./packages/filippo.io/yubikey-agent/index.md)** () | Seamless ssh-agent for YubiKeys and other PIV tokens | yubikey-agent | 0.1.6 (+0) | `pkgx yubikey-agent` |

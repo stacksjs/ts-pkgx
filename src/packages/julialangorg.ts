@@ -3,7 +3,7 @@
  *
  * @domain `julialang.org`
  * @programs `julia`
- * @version `1.11.6` (20 versions available)
+ * @version `1.11.7` (21 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install julia`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "julia"
  * console.log(pkg.description) // "The Julia Programming Language"
  * console.log(pkg.programs)    // ["julia"]
- * console.log(pkg.versions[0]) // "1.11.6" (latest)
+ * console.log(pkg.versions[0]) // "1.11.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/julialang-org.md
@@ -62,6 +62,7 @@ export const juliaPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.11.7',
     '1.11.6',
     '1.11.5',
     '1.11.4',

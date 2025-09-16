@@ -91,7 +91,7 @@ import { ccachePackage } from './ccachedev'
 import { cedarPackage } from './cedarpolicy.com/cli'
 import { cephadmPackage } from './ceph.com/cephadm'
 import { ceressolverorgPackage } from './ceres-solverorg'
-import { certbotPackage } from './certbotefforg'
+import { certbotefforgPackage } from './certbotefforg'
 import { certifiiopythoncertifiPackage } from './certifi.io/python-certifi'
 import { cfsslorgPackage } from './cfsslorg'
 import { cgalPackage } from './cgalorg'
@@ -1741,7 +1741,7 @@ export interface Pantry {
   cephcomcephadm: typeof cephadmPackage
   ceres_solverorg: typeof ceressolverorgPackage
   ceressolverorg: typeof ceressolverorgPackage
-  certbotefforg: typeof certbotPackage
+  certbotefforg: typeof certbotefforgPackage
   python_certifi: typeof certifiiopythoncertifiPackage
   certifiiopythoncertifi: typeof certifiiopythoncertifiPackage
   cfsslorg: typeof cfsslorgPackage
@@ -4668,7 +4668,6 @@ export interface Pantry {
   'pyqt-bundle': typeof pyqtbundlePackage
   'sip-install': typeof sipinstallPackage
   bcrypt: typeof bcryptPackage
-  certbot: typeof certbotPackage
   plistutil: typeof plistutilPackage
   tsc: typeof tscPackage
   'yt-dlp': typeof ytdlpPackage
@@ -5560,7 +5559,7 @@ export const pantry: Pantry = {
   cephcomcephadm: cephadmPackage,
   ceres_solverorg: ceressolverorgPackage,
   ceressolverorg: ceressolverorgPackage,
-  certbotefforg: certbotPackage,
+  certbotefforg: certbotefforgPackage,
   python_certifi: certifiiopythoncertifiPackage,
   certifiiopythoncertifi: certifiiopythoncertifiPackage,
   cfsslorg: cfsslorgPackage,
@@ -8487,7 +8486,6 @@ export const pantry: Pantry = {
   'pyqt-bundle': pyqtbundlePackage,
   'sip-install': sipinstallPackage,
   bcrypt: bcryptPackage,
-  certbot: certbotPackage,
   plistutil: plistutilPackage,
   tsc: tscPackage,
   'yt-dlp': ytdlpPackage,

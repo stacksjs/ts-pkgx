@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/gitu`
  * @programs `gitu`
- * @version `0.35.0` (44 versions available)
+ * @version `0.36.0` (45 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gitu`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "gitu"
  * console.log(pkg.description) // "A TUI Git client inspired by Magit"
  * console.log(pkg.programs)    // ["gitu"]
- * console.log(pkg.versions[0]) // "0.35.0" (latest)
+ * console.log(pkg.versions[0]) // "0.36.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/gitu.md
@@ -70,6 +70,7 @@ export const gituPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.36.0',
     '0.35.0',
     '0.34.0',
     '0.33.0',
