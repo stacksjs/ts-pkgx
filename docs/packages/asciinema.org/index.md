@@ -44,7 +44,7 @@ sh <(curl https://pkgx.sh) asciinema -- $SHELL -i
 
 This package depends on:
 
-- `python.org^3.12`
+- `python.org^3.12 # v2`
 
 ## Usage Examples
 

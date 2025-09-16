@@ -8,7 +8,7 @@
  *
  * @install `launchpad install asciinema`
  * @name `asciinema`
- * @dependencies `python.org^3.12`
+ * @dependencies `python.org^3.12 # v2`
  *
  * @example
  * ```typescript
@@ -62,7 +62,7 @@ export const asciinemaPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'python.org^3.12',
+    'python.org^3.12 # v2',
   ] as const,
   /**
    * Available versions from newest to oldest.
