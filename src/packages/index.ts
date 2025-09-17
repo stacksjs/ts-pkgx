@@ -700,6 +700,7 @@ import { textgenerationwebuiPackage } from './github.com/oobabooga/text-generati
 import { githubcomopensourceparsersjsoncppPackage } from './github.com/open-source-parsers/jsoncpp'
 import { githubcomopencollabarpackngPackage } from './github.com/opencollab/arpack-ng'
 import { githubcomp7zipprojectp7zipPackage } from './github.com/p7zip-project/p7zip'
+import { githubcompantonioulibfyamlPackage } from './github.com/pantoniou/libfyaml'
 import { passboltPackage } from './github.com/passbolt/go-passbolt-cli'
 import { s5cmdPackage } from './github.com/peak/s5cmd'
 import { lsdPackage } from './github.com/peltoche/lsd'
@@ -1194,6 +1195,7 @@ import { onefetchPackage } from './onefetchdev'
 import { ginkgoPackage } from './onsi.github.io/ginkgo'
 import { openmpiorghwlocPackage } from './open-mpi.org/hwloc'
 import { openmpiorgPackage } from './open-mpiorg'
+import { openaicomcodexPackage } from './openai.com/codex'
 import { openaiPackage } from './openai.com/openai-python'
 import { whisperPackage as whisperPackage1 } from './openai.com/whisper'
 import { openapigeneratorPackage } from './openapi-generatortech'
@@ -2861,6 +2863,8 @@ export interface Pantry {
   githubcomopencollab: typeof githubcomopencollabarpackngPackage
   p7zip: typeof githubcomp7zipprojectp7zipPackage
   githubcomp7zipproject: typeof githubcomp7zipprojectp7zipPackage
+  libfyaml: typeof githubcompantonioulibfyamlPackage
+  githubcompantoniou: typeof githubcompantonioulibfyamlPackage
   go_passbolt_cli: typeof passboltPackage
   githubcompassbolt: typeof passboltPackage
 
@@ -3676,6 +3680,8 @@ export interface Pantry {
   openmpiorghwloc: typeof openmpiorghwlocPackage
   open_mpiorg: typeof openmpiorgPackage
   openmpiorg: typeof openmpiorgPackage
+  codex: typeof openaicomcodexPackage
+  openaicomcodex: typeof openaicomcodexPackage
   openai_python: typeof openaiPackage
   openaicomopenaipython: typeof openaiPackage
 
@@ -6680,6 +6686,8 @@ export const pantry: Pantry = {
   githubcomopencollab: githubcomopencollabarpackngPackage,
   p7zip: githubcomp7zipprojectp7zipPackage,
   githubcomp7zipproject: githubcomp7zipprojectp7zipPackage,
+  libfyaml: githubcompantonioulibfyamlPackage,
+  githubcompantoniou: githubcompantonioulibfyamlPackage,
   go_passbolt_cli: passboltPackage,
   githubcompassbolt: passboltPackage,
 
@@ -7495,6 +7503,8 @@ export const pantry: Pantry = {
   openmpiorghwloc: openmpiorghwlocPackage,
   open_mpiorg: openmpiorgPackage,
   openmpiorg: openmpiorgPackage,
+  codex: openaicomcodexPackage,
+  openaicomcodex: openaicomcodexPackage,
   openai_python: openaiPackage,
   openaicomopenaipython: openaiPackage,
 

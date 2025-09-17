@@ -8,7 +8,7 @@
  *
  * @install `launchpad install appstreamcli`
  * @name `appstreamcli`
- * @dependencies `gnome.org/glib@2`, `github.com/hughsie/libxmlb@0`, `pyyaml.org/libyaml@0`, ... (+4 more) (includes OS-specific dependencies with `os:package` format)
+ * @dependencies `gnome.org/glib@2`, `github.com/hughsie/libxmlb@0`, `pyyaml.org/libyaml@0`, ... (+5 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -66,6 +66,7 @@ export const appstreamcliPackage = {
     'gnome.org/glib@2',
     'github.com/hughsie/libxmlb@0',
     'pyyaml.org/libyaml@0',
+    'github.com/pantoniou/libfyaml^0 # since 1.1.0',
     'curl.se@8',
     'gnome.org/libxml2@2',
     'darwin:openldap.org^2 # 1.0.4 needs it with curl',
