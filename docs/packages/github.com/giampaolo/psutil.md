@@ -25,19 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 5 versions</summary>
+<summary>Show all 6 versions</summary>
 
-- `7.0.0`, `6.1.1`, `6.1.0`, `6.0.0`, `5.9.8`
+- `7.1.0`, `7.0.0`, `6.1.1`, `6.1.0`, `6.0.0`
+- `5.9.8`
 
 </details>
 
-**Latest Version**: `7.0.0`
+**Latest Version**: `7.1.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/giampaolo/psutil@7.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/giampaolo/psutil@7.1.0 -- $SHELL -i
 ```
 
 ## Dependencies
