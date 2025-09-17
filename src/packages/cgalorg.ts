@@ -3,7 +3,7 @@
  *
  * @domain `cgal.org`
  * @programs `cgal_create_CMakeLists`, `cgal_create_cmake_script`, `cgal_make_macosx_app`
- * @version `6.0.1` (5 versions available)
+ * @version `6.0.2` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cgal`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "cgal"
  * console.log(pkg.description) // "The public CGAL repository, see the README below"
  * console.log(pkg.programs)    // ["cgal_create_CMakeLists", "cgal_create_cmake_script", ...]
- * console.log(pkg.versions[0]) // "6.0.1" (latest)
+ * console.log(pkg.versions[0]) // "6.0.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cgal-org.md
@@ -75,6 +75,7 @@ export const cgalPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '6.0.2',
     '6.0.1',
     '6.0.0',
     '5.6.2',

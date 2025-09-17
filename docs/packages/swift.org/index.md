@@ -50,21 +50,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 11 versions</summary>
+<summary>Show all 12 versions</summary>
 
-- `6.1.3`, `6.1.2`, `6.1.1`, `6.1.0`, `6.0.3`
-- `6.0.2`, `6.0.1`, `6.0.0`, `5.10.1`, `5.10.0`
-- `5.9.2`
+- `6.2.0`, `6.1.3`, `6.1.2`, `6.1.1`, `6.1.0`
+- `6.0.3`, `6.0.2`, `6.0.1`, `6.0.0`, `5.10.1`
+- `5.10.0`, `5.9.2`
 
 </details>
 
-**Latest Version**: `6.1.3`
+**Latest Version**: `6.2.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +swift.org@6.1.3 -- $SHELL -i
+sh <(curl https://pkgx.sh) +swift.org@6.2.0 -- $SHELL -i
 ```
 
 ## Dependencies
