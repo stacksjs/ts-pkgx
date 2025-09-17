@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-09-17T17:28:54.409Z
+- **Last Updated**: 2025-09-17T18:32:31.923Z
 
 ## Table of Contents
 
@@ -131,7 +131,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[github.com/terraform-linters/tflint](./packages/github.com/terraform-linters/tflint.md)** () | A Pluggable Terraform Linter | tflint | 0.59.1 (+20) | `pkgx tflint` |
 | **[helm.sh](./packages/helm.sh/index.md)** () | The Kubernetes Package Manager | helm | 3.19.0 (+38) | `pkgx helm` |
 | **[infracost.io](./packages/infracost.io/index.md)** () | Cloud cost estimates for Terraform in pull requests💰📉 Shift FinOps Left! | infracost | 0.10.42 (+10) | `pkgx infracost` |
-| **[jenkins.io](./packages/jenkins.io/index.md)** () | Extendable open source continuous integration server | jenkins-lts, jenkins-lts-cli | 2.516.2 (+21) | `pkgx jenkins-lts` |
+| **[jenkins.io](./packages/jenkins.io/index.md)** () | Extendable open source continuous integration server | jenkins-lts, jenkins-lts-cli | 2.516.3 (+22) | `pkgx jenkins-lts` |
 | **[k3d.io](./packages/k3d.io/index.md)** () | Little helper to run CNCF&#39;s k3s in Docker | k3d | 5.8.3 (+16) | `pkgx k3d` |
 | **[kind.sigs.k8s.io](./packages/kind.sigs.k8s.io/index.md)** () | Kubernetes IN Docker - local clusters for testing Kubernetes | kind | 0.30.0 (+11) | `pkgx kind` |
 | **[kubernetes.io/kubectl](./packages/kubernetes.io/kubectl/index.md)** () | Production-Grade Container Scheduling and Management | kubectl | 1.34.1 (+119) | `pkgx kubectl` |
