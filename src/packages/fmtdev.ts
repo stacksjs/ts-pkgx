@@ -2,7 +2,7 @@
  * **fmt.dev** - A modern formatting library
  *
  * @domain `fmt.dev`
- * @version `11.2.0` (15 versions available)
+ * @version `12.0.0` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fmt.dev`
@@ -14,7 +14,7 @@
  * const pkg = pantry.fmtdev
  * console.log(pkg.name)        // "fmt.dev"
  * console.log(pkg.description) // "A modern formatting library"
- * console.log(pkg.versions[0]) // "11.2.0" (latest)
+ * console.log(pkg.versions[0]) // "12.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/fmt-dev.md
@@ -49,6 +49,7 @@ export const fmtdevPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '12.0.0',
     '11.2.0',
     '11.1.4',
     '11.1.3',
