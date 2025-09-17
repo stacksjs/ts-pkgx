@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-09-16T02:30:40.969Z
+ * Generated on 2025-09-17T02:49:41.665Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1598 total)
+ * List of all known packages (1600 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -746,6 +746,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'github.com/open-source-parsers/jsoncpp',
   'github.com/opencollab/arpack-ng',
   'github.com/p7zip-project/p7zip',
+  'github.com/pantoniou/libfyaml',
   'github.com/passbolt/go-passbolt-cli',
   'github.com/peak/s5cmd',
   'github.com/peltoche/lsd',
@@ -1240,6 +1241,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'onsi.github.io/ginkgo',
   'open-mpi.org',
   'open-mpi.org/hwloc',
+  'openai.com/codex',
   'openai.com/openai-python',
   'openai.com/whisper',
   'openapi-generator.tech',
