@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-09-17T22:32:32.960Z
+- **Last Updated**: 2025-09-18T00:43:32.203Z
 
 ## Table of Contents
 
@@ -70,7 +70,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[agpt.co](./packages/agpt.co/index.md)** () | AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to pr... | auto-gpt | 0.4.7 (+8) | `pkgx auto-gpt` |
 | **[crates.io/aichat](./packages/crates.io/aichat/index.md)** () | All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access... | aichat | 0.30.0 (+2) | `pkgx aichat` |
 | **[deepwisdom.ai](./packages/deepwisdom.ai/index.md)** (metagpt) | 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming | metagpt | 0.8.2 (+15) | `pkgx metagpt` |
-| **[elizaOS.github.io](./packages/elizaOS.github.io/index.md)** (eliza) | Autonomous agents for everyone | eliza | 1.5.9 (+61) | `pkgx eliza` |
+| **[elizaOS.github.io](./packages/elizaOS.github.io/index.md)** (eliza) | Autonomous agents for everyone | eliza | 1.5.10 (+62) | `pkgx eliza` |
 | **[github.com/AntonOsika/gpt-engineer](./packages/github.com/AntonOsika/gpt-engineer.md)** () | Platform to experiment with the AI Software Engineer. Terminal based. NOTE: Very different from h... | gpte, gpt-engineer | 0.3.1 (+14) | `pkgx GPT Engineer` |
 | **[github.com/AUTOMATIC1111/stable-diffusion-webui](./packages/github.com/AUTOMATIC1111/stable-diffusion-webui.md)** () | Stable Diffusion web UI | stable-diffusion-webui | 1.10.1 (+19) | `pkgx stable-diffusion-webui` |
 | **[github.com/nat/openplayground](./packages/github.com/nat/openplayground.md)** () | An LLM playground you can run on your laptop | openplayground | 2023.6.5 (+0) | `pkgx openplayground` |
@@ -162,7 +162,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[github.com/yannh/kubeconform](./packages/github.com/yannh/kubeconform.md)** () | A FAST Kubernetes manifests validator, with support for Custom Resources! | kubeconform | 0.7.0 (+4) | `pkgx kubeconform` |
 | **[helm.sh](./packages/helm.sh/index.md)** () | The Kubernetes Package Manager | helm | 3.19.0 (+38) | `pkgx helm` |
 | **[istio.io](./packages/istio.io/index.md)** () | Connect, secure, control, and observe services. | istioctl | 1.27.1 (+47) | `pkgx istioctl` |
-| **[k9scli.io](./packages/k9scli.io/index.md)** () | 🐶 Kubernetes CLI To Manage Your Clusters In Style! | k9s | 0.50.9 (+54) | `pkgx k9s` |
+| **[k9scli.io](./packages/k9scli.io/index.md)** () | 🐶 Kubernetes CLI To Manage Your Clusters In Style! | k9s | 0.50.10 (+55) | `pkgx k9s` |
 | **[krew.sigs.k8s.io](./packages/krew.sigs.k8s.io/index.md)** () | 📦 Find and install kubectl plugins | kubectl-krew | 0.4.5 (+1) | `pkgx kubectl-krew` |
 | **[kubebuilder.io](./packages/kubebuilder.io/index.md)** () | Kubebuilder - SDK for building Kubernetes APIs using CRDs | kubebuilder | 4.8.0 (+20) | `pkgx kubebuilder` |
 | **[kubecm.cloud](./packages/kubecm.cloud/index.md)** () | Manage your kubeconfig more easily. | kubecm | 0.33.1 (+10) | `pkgx kubecm` |
@@ -367,7 +367,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[aws.amazon.com/sam](./packages/aws.amazon.com/sam/index.md)** () | CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM | sam | 1.144.0 (+34) | `pkgx sam` |
-| **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.180 (+434) | `pkgx fly` |
+| **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.181 (+435) | `pkgx fly` |
 | **[heroku.com](./packages/heroku.com/index.md)** () | CLI for Heroku | heroku | 10.13.2 (+37) | `pkgx heroku` |
 | **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.8.1 (+25) | `pkgx localstack` |
 | **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.256.0 (+78) | `pkgx pscale` |
