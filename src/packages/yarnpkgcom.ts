@@ -3,7 +3,7 @@
  *
  * @domain `yarnpkg.com`
  * @programs `yarn`, `yarnpkg`
- * @version `4.10.0` (43 versions available)
+ * @version `4.10.1` (44 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install yarn`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "yarn"
  * console.log(pkg.description) // "📦🐈 Active development trunk for Yarn ⚒"
  * console.log(pkg.programs)    // ["yarn", "yarnpkg"]
- * console.log(pkg.versions[0]) // "4.10.0" (latest)
+ * console.log(pkg.versions[0]) // "4.10.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/yarnpkg-com.md
@@ -70,6 +70,7 @@ export const yarnPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.10.1',
     '4.10.0',
     '4.9.4',
     '4.9.3',
