@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-09-17T02:49:41.665Z
+ * Generated on 2025-09-18T02:31:46.750Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1600 total)
+ * List of all known packages (1601 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -244,6 +244,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'crates.io/jwt-cli',
   'crates.io/kaspa-miner',
   'crates.io/killport',
+  'crates.io/kubie',
   'crates.io/licensor',
   'crates.io/lighthouse',
   'crates.io/mask',
