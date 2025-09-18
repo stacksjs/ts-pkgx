@@ -482,6 +482,7 @@ export const aliases: Record<string, string> = {
   'jx': 'jenkins-x.io',
   'k0sctl': 'github.com/k0sproject/k0sctl',
   'k3d': 'k3d.io',
+  'k3sup': 'github.com/alexellis/k3sup',
   'k9s': 'k9scli.io',
   'kaggle': 'kaggle.com',
   'kargo': 'akuity.io/kargo',

@@ -492,7 +492,7 @@ import { fastgronPackage } from './github.com/adamritter/fastgron'
 import { gost34112012Package } from './github.com/adegtyarev/streebog'
 import { webhookPackage } from './github.com/adnanh/webhook'
 import { yamllintPackage } from './github.com/adrienverge/yamllint'
-import { githubcomalexellisk3supPackage } from './github.com/alexellis/k3sup'
+import { k3supPackage } from './github.com/alexellis/k3sup'
 import { allurePackage } from './github.com/allure-framework/allure2'
 import { commitPackage } from './github.com/alt-art/commit'
 import { grypePackage } from './github.com/anchore/grype'
@@ -2448,8 +2448,8 @@ export interface Pantry {
   githubcomadnanh: typeof webhookPackage
 
   githubcomadrienverge: typeof yamllintPackage
-  k3sup: typeof githubcomalexellisk3supPackage
-  githubcomalexellis: typeof githubcomalexellisk3supPackage
+
+  githubcomalexellis: typeof k3supPackage
   allure2: typeof allurePackage
   githubcomallureframework: typeof allurePackage
 
@@ -4928,6 +4928,7 @@ export interface Pantry {
   gops: typeof gopsPackage
   black: typeof blackPackage
   tre: typeof trePackage
+  k3sup: typeof k3supPackage
   Surya: typeof suryadetectPackage
   surya_detect: typeof suryadetectPackage
   unxip: typeof unxipPackage
@@ -6272,8 +6273,8 @@ export const pantry: Pantry = {
   githubcomadnanh: webhookPackage,
 
   githubcomadrienverge: yamllintPackage,
-  k3sup: githubcomalexellisk3supPackage,
-  githubcomalexellis: githubcomalexellisk3supPackage,
+
+  githubcomalexellis: k3supPackage,
   allure2: allurePackage,
   githubcomallureframework: allurePackage,
 
@@ -8752,6 +8753,7 @@ export const pantry: Pantry = {
   gops: gopsPackage,
   black: blackPackage,
   tre: trePackage,
+  k3sup: k3supPackage,
   Surya: suryadetectPackage,
   surya_detect: suryadetectPackage,
   unxip: unxipPackage,

@@ -1,29 +1,37 @@
 /**
- * **github.com/alexellis/k3sup** - pkgx package
+ * **k3sup** - Utility to create k3s clusters on any local or remote VM
  *
  * @domain `github.com/alexellis/k3sup`
+ * @programs `k3sup`
  * @version `0.13.11` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install github.com/alexellis/k3sup`
+ * @install `launchpad install k3sup`
+ * @name `k3sup`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.githubcomalexellisk3sup
- * console.log(pkg.name)        // "github.com/alexellis/k3sup"
+ * // Access the package
+ * const pkg = pantry.k3sup
+ * // Or access via domain
+ * const samePkg = pantry.githubcomalexellisk3sup
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "k3sup"
+ * console.log(pkg.description) // "Utility to create k3s clusters on any local or ..."
+ * console.log(pkg.programs)    // ["k3sup"]
  * console.log(pkg.versions[0]) // "0.13.11" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/alexellis/k3sup.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomalexellisk3supPackage = {
+export const k3supPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/alexellis/k3sup' as const,
+  name: 'k3sup' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -31,7 +39,7 @@ export const githubcomalexellisk3supPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'Utility to create k3s clusters on any local or remote VM' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/alexellis/k3sup/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
@@ -39,8 +47,14 @@ export const githubcomalexellisk3supPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install github.com/alexellis/k3sup' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install k3sup' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'k3sup',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
   /**
@@ -59,9 +73,13 @@ export const githubcomalexellisk3supPackage = {
     '0.13.2',
     '0.13.1',
   ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/alexellis/k3sup -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/alexellis/k3sup' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) k3sup -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install k3sup' as const,
 }
 
-export type Githubcomalexellisk3supPackage = typeof githubcomalexellisk3supPackage
+export type K3supPackage = typeof k3supPackage
