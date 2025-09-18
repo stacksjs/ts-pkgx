@@ -2,7 +2,7 @@
  * **python-click** - Python composable command line interface toolkit
  *
  * @domain `palletsprojects.com/click`
- * @version `8.2.2` (5 versions available)
+ * @version `8.3.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install python-click`
@@ -20,7 +20,7 @@
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "python-click"
  * console.log(pkg.description) // "Python composable command line interface toolkit"
- * console.log(pkg.versions[0]) // "8.2.2" (latest)
+ * console.log(pkg.versions[0]) // "8.3.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/palletsprojects-com/click.md
@@ -61,6 +61,7 @@ export const pythonclickPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '8.3.0',
     '8.2.2',
     '8.2.1',
     '8.2.0',

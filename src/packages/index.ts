@@ -684,7 +684,7 @@ import { actPackage } from './github.com/nektos/act'
 import { utf8cppPackage } from './github.com/nemtrif/utfcpp'
 import { githubcomneovimunibiliumPackage } from './github.com/neovim/unibilium'
 import { gitfilterrepoPackage } from './github.com/newren/git-filter-repo'
-import { swiftformatPackage } from './github.com/nicklockwood/SwiftFormat'
+import { githubcomnicklockwoodswiftformatPackage } from './github.com/nicklockwood/SwiftFormat'
 import { licensePackage } from './github.com/nishanths/license'
 import { nodebuildPackage } from './github.com/nodenv/node-build'
 import { gpt4allPackage } from './github.com/nomic-ai/gpt4all'
@@ -2832,8 +2832,8 @@ export interface Pantry {
   githubcomneovim: typeof githubcomneovimunibiliumPackage
   git_filter_repo: typeof gitfilterrepoPackage
   githubcomnewren: typeof gitfilterrepoPackage
-  SwiftFormat: typeof swiftformatPackage
-  githubcomnicklockwood: typeof swiftformatPackage
+  SwiftFormat: typeof githubcomnicklockwoodswiftformatPackage
+  githubcomnicklockwood: typeof githubcomnicklockwoodswiftformatPackage
 
   githubcomnishanths: typeof licensePackage
   node_build: typeof nodebuildPackage
@@ -4844,7 +4844,7 @@ export interface Pantry {
   apko: typeof apkoPackage
   vfkit: typeof vfkitPackage
   tabulate: typeof tabulatePackage
-  swiftformat: typeof swiftformatPackage
+  nicklockwood: typeof githubcomnicklockwoodswiftformatPackage
   'aws-vault': typeof awsvaultPackage
   factotum: typeof factotumPackage
   Sourcery: typeof sourceryPackage
@@ -6657,8 +6657,8 @@ export const pantry: Pantry = {
   githubcomneovim: githubcomneovimunibiliumPackage,
   git_filter_repo: gitfilterrepoPackage,
   githubcomnewren: gitfilterrepoPackage,
-  SwiftFormat: swiftformatPackage,
-  githubcomnicklockwood: swiftformatPackage,
+  SwiftFormat: githubcomnicklockwoodswiftformatPackage,
+  githubcomnicklockwood: githubcomnicklockwoodswiftformatPackage,
 
   githubcomnishanths: licensePackage,
   node_build: nodebuildPackage,
@@ -8669,7 +8669,7 @@ export const pantry: Pantry = {
   apko: apkoPackage,
   vfkit: vfkitPackage,
   tabulate: tabulatePackage,
-  swiftformat: swiftformatPackage,
+  nicklockwood: githubcomnicklockwoodswiftformatPackage,
   'aws-vault': awsvaultPackage,
   factotum: factotumPackage,
   Sourcery: sourceryPackage,
