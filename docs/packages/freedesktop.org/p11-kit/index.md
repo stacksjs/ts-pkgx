@@ -26,20 +26,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 10 versions</summary>
+<summary>Show all 11 versions</summary>
 
-- `0.25.8`, `0.25.7`, `0.25.6`, `0.25.5`, `0.25.4`
-- `0.25.3`, `0.25.2`, `0.25.1`, `0.25.0`, `0.24.1`
+- `0.25.9`, `0.25.8`, `0.25.7`, `0.25.6`, `0.25.5`
+- `0.25.4`, `0.25.3`, `0.25.2`, `0.25.1`, `0.25.0`
+- `0.24.1`
 
 </details>
 
-**Latest Version**: `0.25.8`
+**Latest Version**: `0.25.9`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +freedesktop.org/p11-kit@0.25.8 -- $SHELL -i
+sh <(curl https://pkgx.sh) +freedesktop.org/p11-kit@0.25.9 -- $SHELL -i
 ```
 
 ## Dependencies
