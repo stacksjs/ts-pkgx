@@ -3,7 +3,7 @@
  *
  * @domain `cloudflare.com/cloudflared`
  * @programs `cloudflared`
- * @version `2025.8.1` (31 versions available)
+ * @version `2025.9.0` (32 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cloudflared`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "cloudflared"
  * console.log(pkg.description) // "Cloudflare Tunnel client (formerly Argo Tunnel)"
  * console.log(pkg.programs)    // ["cloudflared"]
- * console.log(pkg.versions[0]) // "2025.8.1" (latest)
+ * console.log(pkg.versions[0]) // "2025.9.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cloudflare-com/cloudflared.md
@@ -62,6 +62,7 @@ export const cloudflaredPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2025.9.0',
     '2025.8.1',
     '2025.8.0',
     '2025.7.0',
