@@ -436,7 +436,7 @@ import { avifPackage } from './github.com/AOMediaCodec/libavif'
 import { stablediffusionwebuiPackage } from './github.com/AUTOMATIC1111/stable-diffusion-webui'
 import { squashfstoolsngPackage } from './github.com/AgentD/squashfs-tools-ng'
 import { githubcomaldanialclocPackage } from './github.com/AlDanial/cloc'
-import { gPTEngineerPackage } from './github.com/AntonOsika/gpt-engineer'
+import { githubcomantonosikagptengineerPackage } from './github.com/AntonOsika/gpt-engineer'
 import { teapackagebuilderPackage } from './github.com/ArionThinker/tea-package-builder'
 import { carthagePackage } from './github.com/Carthage/Carthage'
 import { xcparsePackage } from './github.com/ChargePoint/xcparse'
@@ -2335,8 +2335,8 @@ export interface Pantry {
   githubcomagentd: typeof squashfstoolsngPackage
   cloc: typeof githubcomaldanialclocPackage
   githubcomaldanial: typeof githubcomaldanialclocPackage
-  gpt_engineer: typeof gPTEngineerPackage
-  githubcomantonosika: typeof gPTEngineerPackage
+  gpt_engineer: typeof githubcomantonosikagptengineerPackage
+  githubcomantonosika: typeof githubcomantonosikagptengineerPackage
   tea_package_builder: typeof teapackagebuilderPackage
   githubcomarionthinker: typeof teapackagebuilderPackage
   Carthage: typeof carthagePackage
@@ -4782,7 +4782,6 @@ export interface Pantry {
   'text-generation-webui': typeof textgenerationwebuiPackage
   'aws-iam-authenticator': typeof awsiamauthenticatorPackage
   ghq: typeof ghqPackage
-  'GPT Engineer': typeof gPTEngineerPackage
   svu: typeof svuPackage
   'org-stats': typeof orgstatsPackage
   aiac: typeof aiacPackage
@@ -6158,8 +6157,8 @@ export const pantry: Pantry = {
   githubcomagentd: squashfstoolsngPackage,
   cloc: githubcomaldanialclocPackage,
   githubcomaldanial: githubcomaldanialclocPackage,
-  gpt_engineer: gPTEngineerPackage,
-  githubcomantonosika: gPTEngineerPackage,
+  gpt_engineer: githubcomantonosikagptengineerPackage,
+  githubcomantonosika: githubcomantonosikagptengineerPackage,
   tea_package_builder: teapackagebuilderPackage,
   githubcomarionthinker: teapackagebuilderPackage,
   Carthage: carthagePackage,
@@ -8605,7 +8604,6 @@ export const pantry: Pantry = {
   'text-generation-webui': textgenerationwebuiPackage,
   'aws-iam-authenticator': awsiamauthenticatorPackage,
   ghq: ghqPackage,
-  'GPT Engineer': gPTEngineerPackage,
   svu: svuPackage,
   'org-stats': orgstatsPackage,
   aiac: aiacPackage,

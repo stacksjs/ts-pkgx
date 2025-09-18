@@ -393,7 +393,6 @@ export const aliases: Record<string, string> = {
   'gpgme': 'gnupg.org/gpgme',
   'gphoto2': 'gphoto.org/libgphoto2',
   'gpp': 'logological.org/gpp',
-  'GPT Engineer': 'github.com/AntonOsika/gpt-engineer',
   'gpt4all': 'github.com/nomic-ai/gpt4all',
   'gql': 'graphqleditor.com/gql',
   'gqlgen': 'gqlgen.com',
