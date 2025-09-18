@@ -3,7 +3,7 @@
  *
  * @domain `k9scli.io`
  * @programs `k9s`
- * @version `0.50.10` (56 versions available)
+ * @version `0.50.11` (57 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install k9s`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "k9s"
  * console.log(pkg.description) // "🐶 Kubernetes CLI To Manage Your Clusters In St..."
  * console.log(pkg.programs)    // ["k9s"]
- * console.log(pkg.versions[0]) // "0.50.10" (latest)
+ * console.log(pkg.versions[0]) // "0.50.11" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/k9scli-io.md
@@ -62,6 +62,7 @@ export const k9sPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.50.11',
     '0.50.10',
     '0.50.9',
     '0.50.8',

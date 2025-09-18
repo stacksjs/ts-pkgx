@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-09-18T15:30:57.831Z
+- **Last Updated**: 2025-09-18T16:31:31.076Z
 
 ## Table of Contents
 
@@ -141,7 +141,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[opentofu.org](./packages/opentofu.org/index.md)** () | OpenTofu lets you declaratively manage your cloud infrastructure. | tofu | 1.9.4 (+32) | `pkgx tofu` |
 | **[packer.io](./packages/packer.io/index.md)** () | Packer is a tool for creating identical machine images for multiple platforms from a single sourc... | packer | 1.14.2 (+15) | `pkgx packer` |
 | **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.6.1 (+41) | `pkgx podman` |
-| **[runatlantis.io](./packages/runatlantis.io/index.md)** () | Terraform Pull Request Automation tool | atlantis | 0.35.1 (+19) | `pkgx atlantis` |
+| **[runatlantis.io](./packages/runatlantis.io/index.md)** () | Terraform Pull Request Automation tool | atlantis | 0.36.0 (+20) | `pkgx atlantis` |
 | **[terraform.io](./packages/terraform.io/index.md)** () | Terraform enables you to safely and predictably create, change, and improve infrastructure. It is... | terraform | 1.13.3 (+78) | `pkgx terraform` |
 | **[terragrunt.gruntwork.io](./packages/terragrunt.gruntwork.io/index.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.87.4 (+375) | `pkgx terragrunt` |
 | **[terratag.io](./packages/terratag.io/index.md)** () | Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags ... | terratag | 0.7.3 (+18) | `pkgx terratag` |
@@ -162,7 +162,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[github.com/yannh/kubeconform](./packages/github.com/yannh/kubeconform.md)** () | A FAST Kubernetes manifests validator, with support for Custom Resources! | kubeconform | 0.7.0 (+4) | `pkgx kubeconform` |
 | **[helm.sh](./packages/helm.sh/index.md)** () | The Kubernetes Package Manager | helm | 3.19.0 (+38) | `pkgx helm` |
 | **[istio.io](./packages/istio.io/index.md)** () | Connect, secure, control, and observe services. | istioctl | 1.27.1 (+47) | `pkgx istioctl` |
-| **[k9scli.io](./packages/k9scli.io/index.md)** () | 🐶 Kubernetes CLI To Manage Your Clusters In Style! | k9s | 0.50.10 (+55) | `pkgx k9s` |
+| **[k9scli.io](./packages/k9scli.io/index.md)** () | 🐶 Kubernetes CLI To Manage Your Clusters In Style! | k9s | 0.50.11 (+56) | `pkgx k9s` |
 | **[krew.sigs.k8s.io](./packages/krew.sigs.k8s.io/index.md)** () | 📦 Find and install kubectl plugins | kubectl-krew | 0.4.5 (+1) | `pkgx kubectl-krew` |
 | **[kubebuilder.io](./packages/kubebuilder.io/index.md)** () | Kubebuilder - SDK for building Kubernetes APIs using CRDs | kubebuilder | 4.8.0 (+20) | `pkgx kubebuilder` |
 | **[kubecm.cloud](./packages/kubecm.cloud/index.md)** () | Manage your kubeconfig more easily. | kubecm | 0.33.1 (+10) | `pkgx kubecm` |
