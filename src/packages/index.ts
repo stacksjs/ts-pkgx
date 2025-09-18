@@ -198,6 +198,7 @@ import { joshutoPackage } from './crates.io/joshuto'
 import { jwtPackage } from './crates.io/jwt-cli'
 import { kaspaminerPackage } from './crates.io/kaspa-miner'
 import { killportPackage } from './crates.io/killport'
+import { cratesiokubiePackage } from './crates.io/kubie'
 import { licensorPackage } from './crates.io/licensor'
 import { lighthousePackage } from './crates.io/lighthouse'
 import { maskPackage } from './crates.io/mask'
@@ -436,7 +437,7 @@ import { avifPackage } from './github.com/AOMediaCodec/libavif'
 import { stablediffusionwebuiPackage } from './github.com/AUTOMATIC1111/stable-diffusion-webui'
 import { squashfstoolsngPackage } from './github.com/AgentD/squashfs-tools-ng'
 import { githubcomaldanialclocPackage } from './github.com/AlDanial/cloc'
-import { githubcomantonosikagptengineerPackage } from './github.com/AntonOsika/gpt-engineer'
+import { gPTEngineerPackage } from './github.com/AntonOsika/gpt-engineer'
 import { teapackagebuilderPackage } from './github.com/ArionThinker/tea-package-builder'
 import { carthagePackage } from './github.com/Carthage/Carthage'
 import { xcparsePackage } from './github.com/ChargePoint/xcparse'
@@ -1932,6 +1933,8 @@ export interface Pantry {
   cratesiokaspaminer: typeof kaspaminerPackage
 
   cratesiokillport: typeof killportPackage
+  kubie: typeof cratesiokubiePackage
+  cratesiokubie: typeof cratesiokubiePackage
 
   cratesiolicensor: typeof licensorPackage
 
@@ -2335,8 +2338,8 @@ export interface Pantry {
   githubcomagentd: typeof squashfstoolsngPackage
   cloc: typeof githubcomaldanialclocPackage
   githubcomaldanial: typeof githubcomaldanialclocPackage
-  gpt_engineer: typeof githubcomantonosikagptengineerPackage
-  githubcomantonosika: typeof githubcomantonosikagptengineerPackage
+  gpt_engineer: typeof gPTEngineerPackage
+  githubcomantonosika: typeof gPTEngineerPackage
   tea_package_builder: typeof teapackagebuilderPackage
   githubcomarionthinker: typeof teapackagebuilderPackage
   Carthage: typeof carthagePackage
@@ -4782,6 +4785,7 @@ export interface Pantry {
   'text-generation-webui': typeof textgenerationwebuiPackage
   'aws-iam-authenticator': typeof awsiamauthenticatorPackage
   ghq: typeof ghqPackage
+  'GPT Engineer': typeof gPTEngineerPackage
   svu: typeof svuPackage
   'org-stats': typeof orgstatsPackage
   aiac: typeof aiacPackage
@@ -5754,6 +5758,8 @@ export const pantry: Pantry = {
   cratesiokaspaminer: kaspaminerPackage,
 
   cratesiokillport: killportPackage,
+  kubie: cratesiokubiePackage,
+  cratesiokubie: cratesiokubiePackage,
 
   cratesiolicensor: licensorPackage,
 
@@ -6157,8 +6163,8 @@ export const pantry: Pantry = {
   githubcomagentd: squashfstoolsngPackage,
   cloc: githubcomaldanialclocPackage,
   githubcomaldanial: githubcomaldanialclocPackage,
-  gpt_engineer: githubcomantonosikagptengineerPackage,
-  githubcomantonosika: githubcomantonosikagptengineerPackage,
+  gpt_engineer: gPTEngineerPackage,
+  githubcomantonosika: gPTEngineerPackage,
   tea_package_builder: teapackagebuilderPackage,
   githubcomarionthinker: teapackagebuilderPackage,
   Carthage: carthagePackage,
@@ -8604,6 +8610,7 @@ export const pantry: Pantry = {
   'text-generation-webui': textgenerationwebuiPackage,
   'aws-iam-authenticator': awsiamauthenticatorPackage,
   ghq: ghqPackage,
+  'GPT Engineer': gPTEngineerPackage,
   svu: svuPackage,
   'org-stats': orgstatsPackage,
   aiac: aiacPackage,
