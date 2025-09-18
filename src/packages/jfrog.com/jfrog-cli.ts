@@ -3,7 +3,7 @@
  *
  * @domain `jfrog.com/jfrog-cli`
  * @programs `jf`, `jfrog`
- * @version `2.78.9` (97 versions available)
+ * @version `2.79.0` (98 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jfrog.com/jfrog-cli`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "jfrog.com/jfrog-cli"
  * console.log(pkg.description) // "JFrog CLI is a client that provides a simple in..."
  * console.log(pkg.programs)    // ["jf", "jfrog"]
- * console.log(pkg.versions[0]) // "2.78.9" (latest)
+ * console.log(pkg.versions[0]) // "2.79.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/jfrog-com/jfrog-cli.md
@@ -58,6 +58,7 @@ export const jfrogcomjfrogcliPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.79.0',
     '2.78.9',
     '2.78.8',
     '2.78.7',

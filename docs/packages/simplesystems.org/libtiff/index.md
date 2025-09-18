@@ -29,19 +29,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `4.7.0`, `4.6.0`, `4.5.1`, `4.5.0`
+- `4.7.1`, `4.7.0`, `4.6.0`, `4.5.1`, `4.5.0`
 
 </details>
 
-**Latest Version**: `4.7.0`
+**Latest Version**: `4.7.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +simplesystems.org/libtiff@4.7.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +simplesystems.org/libtiff@4.7.1 -- $SHELL -i
 ```
 
 ## Dependencies

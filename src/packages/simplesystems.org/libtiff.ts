@@ -3,7 +3,7 @@
  *
  * @domain `simplesystems.org/libtiff`
  * @programs `tiffcp`, `tiffdump`, `tiffinfo`, `tiffset`, `tiffsplit`
- * @version `4.7.0` (4 versions available)
+ * @version `4.7.1` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tiff`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "tiff"
  * console.log(pkg.description) // "TIFF library and utilities"
  * console.log(pkg.programs)    // ["tiffcp", "tiffdump", ...]
- * console.log(pkg.versions[0]) // "4.7.0" (latest)
+ * console.log(pkg.versions[0]) // "4.7.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/simplesystems-org/libtiff.md
@@ -75,6 +75,7 @@ export const tiffPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.7.1',
     '4.7.0',
     '4.6.0',
     '4.5.1',
