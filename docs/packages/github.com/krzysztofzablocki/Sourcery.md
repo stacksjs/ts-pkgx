@@ -31,16 +31,16 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 19 versions</summary>
+<summary>Show all 20 versions</summary>
 
-- `2.2.7`, `2.2.6`, `2.2.5`, `2.2.4`, `2.2.3`
-- `2.2.2`, `2.2.1`, `2.2.0`, `2.1.8`, `2.1.7`
-- `2.1.6`, `2.1.5`, `2.1.4`, `2.1.3`, `2.1.2`
-- `2.1.1`, `2.1.0`, `2.0.3`, `2.0.2`
+- `2.3.0`, `2.2.7`, `2.2.6`, `2.2.5`, `2.2.4`
+- `2.2.3`, `2.2.2`, `2.2.1`, `2.2.0`, `2.1.8`
+- `2.1.7`, `2.1.6`, `2.1.5`, `2.1.4`, `2.1.3`
+- `2.1.2`, `2.1.1`, `2.1.0`, `2.0.3`, `2.0.2`
 
 </details>
 
-**Latest Version**: `2.2.7`
+**Latest Version**: `2.3.0`
 
 ### Install Specific Version
 

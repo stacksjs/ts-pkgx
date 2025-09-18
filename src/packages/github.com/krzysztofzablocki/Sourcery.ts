@@ -3,7 +3,7 @@
  *
  * @domain `github.com/krzysztofzablocki/Sourcery`
  * @programs `sourcery`
- * @version `2.2.7` (19 versions available)
+ * @version `2.3.0` (20 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sourcery`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "Sourcery"
  * console.log(pkg.description) // "Meta-programming for Swift, stop writing boiler..."
  * console.log(pkg.programs)    // ["sourcery"]
- * console.log(pkg.versions[0]) // "2.2.7" (latest)
+ * console.log(pkg.versions[0]) // "2.3.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/krzysztofzablocki/Sourcery.md
@@ -63,6 +63,7 @@ export const sourceryPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.3.0',
     '2.2.7',
     '2.2.6',
     '2.2.5',
