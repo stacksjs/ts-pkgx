@@ -26,12 +26,12 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 16 versions</summary>
+<summary>Show all 17 versions</summary>
 
 - `3.6.4`, `3.6.3`, `3.6.2`, `3.6.1`, `3.6.0`
-- `3.5.22`, `3.5.21`, `3.5.20`, `3.5.19`, `3.5.18`
-- `3.5.17`, `3.5.16`, `3.5.15`, `3.5.14`, `3.4.37`
-- `3.4.36`
+- `3.5.23`, `3.5.22`, `3.5.21`, `3.5.20`, `3.5.19`
+- `3.5.18`, `3.5.17`, `3.5.16`, `3.5.15`, `3.5.14`
+- `3.4.37`, `3.4.36`
 
 </details>
 
