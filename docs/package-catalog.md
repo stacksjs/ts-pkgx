@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-09-19T15:30:21.534Z
+- **Last Updated**: 2025-09-19T17:31:23.697Z
 
 ## Table of Contents
 
@@ -79,7 +79,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.27.1 (+31) | `pkgx llm` |
 | **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.3 (+20) | `pkgx f2py` |
 | **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.11.11 (+115) | `pkgx ollama` |
-| **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 1.108.0 (+282) | `pkgx openai` |
+| **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 1.108.1 (+283) | `pkgx openai` |
 | **[openinterpreter.com](./packages/openinterpreter.com/index.md)** (interpreter) | A natural language interface for computers | interpreter | 0.4.0 (+21) | `pkgx interpreter` |
 
 ## Databases
@@ -98,7 +98,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[postgrest.org](./packages/postgrest.org/index.md)** () | Serves a fully RESTful API from any existing PostgreSQL database | postgrest | 13.0.7 (+17) | `pkgx postgrest` |
 | **[redis.io](./packages/redis.io/index.md)** () | Redis is an in-memory database that persists on disk. The data model is key-value, but many diffe... | redis-server, redis-cli, redis-benchmark | 8.2.1 (+42) | `pkgx redis` |
 | **[sqlite.org](./packages/sqlite.org/index.md)** () | Official Git mirror of the SQLite source tree | sqlite3 | 3.50.4 (+28) | `pkgx sqlite3` |
-| **[surrealdb.com](./packages/surrealdb.com/index.md)** () | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+55) | `pkgx surreal` |
+| **[surrealdb.com](./packages/surrealdb.com/index.md)** () | A scalable, distributed, collaborative, document-graph database, for the realtime web | surreal | 2023.9.1 (+56) | `pkgx surreal` |
 | **[turso.tech](./packages/turso.tech/index.md)** () | Command line interface to Turso. | turso | 1.0.13 (+91) | `pkgx turso` |
 | **[valkey.io](./packages/valkey.io/index.md)** () | A flexible distributed key-value datastore that is optimized for caching and other realtime workl... | valkey-server, valkey-cli, valkey-benchmark | 8.1.3 (+15) | `pkgx valkey` |
 
