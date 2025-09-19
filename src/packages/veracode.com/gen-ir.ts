@@ -3,7 +3,7 @@
  *
  * @domain `veracode.com/gen-ir`
  * @programs `gen-ir`
- * @version `0.5.2` (4 versions available)
+ * @version `0.5.4` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gen-ir`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "gen-ir"
  * console.log(pkg.description) // "Generates LLVM IR for Xcode Projects"
  * console.log(pkg.programs)    // ["gen-ir"]
- * console.log(pkg.versions[0]) // "0.5.2" (latest)
+ * console.log(pkg.versions[0]) // "0.5.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/veracode-com/gen-ir.md
@@ -62,6 +62,7 @@ export const genirPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.5.4',
     '0.5.2',
     '0.5.1',
     '0.5.0',
