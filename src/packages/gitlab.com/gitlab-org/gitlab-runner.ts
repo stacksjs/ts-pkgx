@@ -3,7 +3,7 @@
  *
  * @domain `gitlab.com/gitlab-org/gitlab-runner`
  * @programs `gitlab-runner`
- * @version `18.3.1` (87 versions available)
+ * @version `18.4.0` (88 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gitlab-runner`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "gitlab-runner"
  * console.log(pkg.description) // "Official GitLab CI runner"
  * console.log(pkg.programs)    // ["gitlab-runner"]
- * console.log(pkg.versions[0]) // "18.3.1" (latest)
+ * console.log(pkg.versions[0]) // "18.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gitlab-com/gitlab-org/gitlab-runner.md
@@ -62,6 +62,7 @@ export const gitlabrunnerPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '18.4.0',
     '18.3.1',
     '18.3.0',
     '18.2.2',
