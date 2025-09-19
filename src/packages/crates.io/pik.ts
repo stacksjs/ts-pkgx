@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/pik`
  * @programs `pik`
- * @version `0.25.0` (12 versions available)
+ * @version `0.26.0` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pik`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "pik"
  * console.log(pkg.description) // "Process Interactive Kill"
  * console.log(pkg.programs)    // ["pik"]
- * console.log(pkg.versions[0]) // "0.25.0" (latest)
+ * console.log(pkg.versions[0]) // "0.26.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/pik.md
@@ -62,6 +62,7 @@ export const pikPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.26.0',
     '0.25.0',
     '0.24.0',
     '0.23.1',
