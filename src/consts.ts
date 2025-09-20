@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-09-18T02:31:46.750Z
+ * Generated on 2025-09-20T02:42:46.965Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1601 total)
+ * List of all known packages (1602 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -625,6 +625,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'github.com/git-chglog',
   'github.com/git-ecosystem/git-credential-manager',
   'github.com/github/git-sizer',
+  'github.com/github/spec-kit',
   'github.com/glauth/glauth',
   'github.com/go-acme/lego',
   'github.com/gofireflyio/aiac',
