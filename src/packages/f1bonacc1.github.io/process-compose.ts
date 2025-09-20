@@ -3,7 +3,7 @@
  *
  * @domain `f1bonacc1.github.io/process-compose`
  * @programs `process-compose`
- * @version `1.75.1` (16 versions available)
+ * @version `1.75.2` (17 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install process-compose`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "process-compose"
  * console.log(pkg.description) // "Process Compose is a simple and flexible schedu..."
  * console.log(pkg.programs)    // ["process-compose"]
- * console.log(pkg.versions[0]) // "1.75.1" (latest)
+ * console.log(pkg.versions[0]) // "1.75.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/f1bonacc1-github-io/process-compose.md
@@ -62,6 +62,7 @@ export const processcomposePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.75.2',
     '1.75.1',
     '1.73.0',
     '1.64.1',

@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/xh`
  * @programs `xh`
- * @version `0.24.1` (5 versions available)
+ * @version `0.25.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xh`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "xh"
  * console.log(pkg.description) // "Friendly and fast tool for sending HTTP requests"
  * console.log(pkg.programs)    // ["xh"]
- * console.log(pkg.versions[0]) // "0.24.1" (latest)
+ * console.log(pkg.versions[0]) // "0.25.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/xh.md
@@ -62,6 +62,7 @@ export const xhPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.25.0',
     '0.24.1',
     '0.24.0',
     '0.23.1',
