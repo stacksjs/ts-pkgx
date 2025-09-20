@@ -2,7 +2,7 @@
  * **eigen.tuxfamily.org** - pkgx package
  *
  * @domain `eigen.tuxfamily.org`
- * @version `3.4.0` (1 versions available)
+ * @version `5.0.0` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install eigen.tuxfamily.org`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.eigentuxfamilyorg
  * console.log(pkg.name)        // "eigen.tuxfamily.org"
- * console.log(pkg.versions[0]) // "3.4.0" (latest)
+ * console.log(pkg.versions[0]) // "5.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/eigen-tuxfamily-org.md
@@ -56,6 +56,7 @@ export const eigentuxfamilyorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '5.0.0',
     '3.4.0',
   ] as const,
   aliases: [] as const,
