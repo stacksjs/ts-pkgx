@@ -167,7 +167,7 @@ import { drillPackage } from './crates.io/drill'
 import { dustPackage } from './crates.io/du-dust'
 import { duaPackage } from './crates.io/dua'
 import { duckerPackage } from './crates.io/ducker'
-import { ebPackage } from './crates.io/eb'
+import { cratesioebPackage } from './crates.io/eb'
 import { eurekaPackage } from './crates.io/eureka'
 import { exaPackage } from './crates.io/exa'
 import { ezaPackage } from './crates.io/eza'
@@ -1872,8 +1872,8 @@ export interface Pantry {
   cratesiodua: typeof duaPackage
 
   cratesioducker: typeof duckerPackage
-  eb: typeof ebPackage
-  cratesioeb: typeof ebPackage
+  eb: typeof cratesioebPackage
+  cratesioeb: typeof cratesioebPackage
 
   cratesioeureka: typeof eurekaPackage
 
@@ -5699,8 +5699,8 @@ export const pantry: Pantry = {
   cratesiodua: duaPackage,
 
   cratesioducker: duckerPackage,
-  eb: ebPackage,
-  cratesioeb: ebPackage,
+  eb: cratesioebPackage,
+  cratesioeb: cratesioebPackage,
 
   cratesioeureka: eurekaPackage,
 

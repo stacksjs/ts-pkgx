@@ -1,37 +1,29 @@
 /**
- * **eb** - Client for Amazon Elastic Beanstalk web service
+ * **crates.io/eb** - pkgx package
  *
  * @domain `crates.io/eb`
- * @programs `eb`
  * @version `0.5.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install eb`
- * @name `eb`
+ * @install `launchpad install crates.io/eb`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.eb
- * // Or access via domain
- * const samePkg = pantry.cratesioeb
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "eb"
- * console.log(pkg.description) // "Client for Amazon Elastic Beanstalk web service"
- * console.log(pkg.programs)    // ["eb"]
+ * const pkg = pantry.cratesioeb
+ * console.log(pkg.name)        // "crates.io/eb"
  * console.log(pkg.versions[0]) // "0.5.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/eb.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ebPackage = {
+export const cratesioebPackage = {
   /**
    * The display name of this package.
    */
-  name: 'eb' as const,
+  name: 'crates.io/eb' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +31,7 @@ export const ebPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Client for Amazon Elastic Beanstalk web service' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/eb/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
@@ -47,14 +39,8 @@ export const ebPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install eb' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'eb',
-  ] as const,
+  installCommand: 'launchpad install crates.io/eb' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   /**
@@ -64,13 +50,9 @@ export const ebPackage = {
   versions: [
     '0.5.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) eb -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install eb' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/eb -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/eb' as const,
 }
 
-export type EbPackage = typeof ebPackage
+export type CratesioebPackage = typeof cratesioebPackage

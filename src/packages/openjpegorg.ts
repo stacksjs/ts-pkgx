@@ -3,7 +3,7 @@
  *
  * @domain `openjpeg.org`
  * @programs `opj_compress`, `opj_decompress`, `opj_dump`
- * @version `2.5.3` (4 versions available)
+ * @version `2.5.4` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openjpeg.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "opj_compress"
  * console.log(pkg.description) // "Official repository of the OpenJPEG project"
  * console.log(pkg.programs)    // ["opj_compress", "opj_decompress", ...]
- * console.log(pkg.versions[0]) // "2.5.3" (latest)
+ * console.log(pkg.versions[0]) // "2.5.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openjpeg-org.md
@@ -67,6 +67,7 @@ export const openjpegorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.5.4',
     '2.5.3',
     '2.5.2',
     '2.5.1',
