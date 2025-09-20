@@ -35,20 +35,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 8 versions</summary>
+<summary>Show all 9 versions</summary>
 
-- `0.22.1`, `0.22.0`, `0.21.2`, `0.21.1`, `0.21.0`
-- `0.20.1`, `0.20.0`, `0.19.0`
+- `0.22.2`, `0.22.1`, `0.22.0`, `0.21.2`, `0.21.1`
+- `0.21.0`, `0.20.1`, `0.20.0`, `0.19.0`
 
 </details>
 
-**Latest Version**: `0.22.1`
+**Latest Version**: `0.22.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +docutils.org@0.22.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +docutils.org@0.22.2 -- $SHELL -i
 ```
 
 ## Dependencies
