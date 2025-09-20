@@ -579,6 +579,7 @@ import { githubcomgiampaolopsutilPackage } from './github.com/giampaolo/psutil'
 import { gitchglogPackage } from './github.com/git-chglog'
 import { gitcredentialmanagerPackage } from './github.com/git-ecosystem/git-credential-manager'
 import { gitsizerPackage } from './github.com/github/git-sizer'
+import { githubcomgithubspeckitPackage } from './github.com/github/spec-kit'
 import { glauthPackage } from './github.com/glauth/glauth'
 import { legoPackage } from './github.com/go-acme/lego'
 import { aiacPackage } from './github.com/gofireflyio/aiac'
@@ -2622,6 +2623,8 @@ export interface Pantry {
   githubcomgitecosystem: typeof gitcredentialmanagerPackage
   git_sizer: typeof gitsizerPackage
   githubcom: typeof gitsizerPackage
+  spec_kit: typeof githubcomgithubspeckitPackage
+  githubcom1: typeof githubcomgithubspeckitPackage
 
   githubcomglauth: typeof glauthPackage
 
@@ -6447,6 +6450,8 @@ export const pantry: Pantry = {
   githubcomgitecosystem: gitcredentialmanagerPackage,
   git_sizer: gitsizerPackage,
   githubcom: gitsizerPackage,
+  spec_kit: githubcomgithubspeckitPackage,
+  githubcom1: githubcomgithubspeckitPackage,
 
   githubcomglauth: glauthPackage,
 

@@ -48,8 +48,7 @@ sh <(curl https://pkgx.sh) +github.com/psf/black@25.9.0 -- $SHELL -i
 
 This package depends on:
 
-- `python.org>=3.7<3.12`
-- `gnu.org/which`
+- `pkgx.sh>=1`
 
 ## Usage Examples
 
