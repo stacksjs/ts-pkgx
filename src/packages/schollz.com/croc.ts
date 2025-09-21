@@ -3,7 +3,7 @@
  *
  * @domain `schollz.com/croc`
  * @programs `croc`
- * @version `10.4.0` (37 versions available)
+ * @version `10.4.0` (38 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install croc`
@@ -63,6 +63,7 @@ export const crocPackage = {
    */
   versions: [
     '10.4.0',
+    '10.2.5',
     '10.2.4',
     '10.2.3',
     '10.2.2',
