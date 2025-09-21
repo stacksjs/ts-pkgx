@@ -3,7 +3,7 @@
  *
  * @domain `restic.net/restic`
  * @programs `restic`
- * @version `0.18.0` (9 versions available)
+ * @version `0.18.1` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install restic`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "restic"
  * console.log(pkg.description) // "Fast, efficient and secure backup program"
  * console.log(pkg.programs)    // ["restic"]
- * console.log(pkg.versions[0]) // "0.18.0" (latest)
+ * console.log(pkg.versions[0]) // "0.18.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/restic-net/restic.md
@@ -62,6 +62,7 @@ export const resticPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.18.1',
     '0.18.0',
     '0.17.3',
     '0.17.2',
