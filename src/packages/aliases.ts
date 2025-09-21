@@ -492,7 +492,6 @@ export const aliases: Record<string, string> = {
   'keep': 'keephq.dev',
   'keyring': 'github.com/jaraco/keyring',
   'killport': 'crates.io/killport',
-  'kind': 'kind.sigs.k8s.io',
   'kluctl': 'kluctl.io',
   'koyeb': 'koyeb.com',
   'kpt': 'kpt.dev',

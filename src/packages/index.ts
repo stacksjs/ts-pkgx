@@ -1010,7 +1010,7 @@ import { spirvcrossPackage } from './khronos.org/SPIRV-Cross'
 import { spirvPackage } from './khronos.org/SPIRV-Tools'
 import { khronosorgglslangPackage } from './khronos.org/glslang'
 import { khronosorgopenclheadersPackage } from './khronos.org/opencl-headers'
-import { kindPackage } from './kindsigsk8sio'
+import { kindsigsk8sioPackage } from './kindsigsk8sio'
 import { kislyukgithubioargcompletePackage } from './kislyuk.github.io/argcomplete'
 import { kluctlPackage } from './kluctlio'
 import { koPackage } from './kobuild'
@@ -3423,7 +3423,7 @@ export interface Pantry {
   khronosorgglslang: typeof khronosorgglslangPackage
   opencl_headers: typeof khronosorgopenclheadersPackage
   khronosorgopenclheaders: typeof khronosorgopenclheadersPackage
-  kindsigsk8sio: typeof kindPackage
+  kindsigsk8sio: typeof kindsigsk8sioPackage
   argcomplete: typeof kislyukgithubioargcompletePackage
   kislyukgithubioargcomplete: typeof kislyukgithubioargcompletePackage
   kluctlio: typeof kluctlPackage
@@ -5221,7 +5221,6 @@ export interface Pantry {
   ktlint: typeof ktlintPackage
   werf: typeof werfPackage
   lame: typeof lamePackage
-  kind: typeof kindPackage
   wails: typeof wailsPackage
   earthly: typeof earthlyPackage
   'arduino-cli': typeof arduinocliPackage
@@ -7250,7 +7249,7 @@ export const pantry: Pantry = {
   khronosorgglslang: khronosorgglslangPackage,
   opencl_headers: khronosorgopenclheadersPackage,
   khronosorgopenclheaders: khronosorgopenclheadersPackage,
-  kindsigsk8sio: kindPackage,
+  kindsigsk8sio: kindsigsk8sioPackage,
   argcomplete: kislyukgithubioargcompletePackage,
   kislyukgithubioargcomplete: kislyukgithubioargcompletePackage,
   kluctlio: kluctlPackage,
@@ -9048,7 +9047,6 @@ export const pantry: Pantry = {
   ktlint: ktlintPackage,
   werf: werfPackage,
   lame: lamePackage,
-  kind: kindPackage,
   wails: wailsPackage,
   earthly: earthlyPackage,
   'arduino-cli': arduinocliPackage,

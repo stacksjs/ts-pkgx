@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1397+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1396+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1397
+- **Total Packages**: 1396
 - **Categories**: 27
-- **Last Updated**: 2025-09-21T15:28:45.369Z
+- **Last Updated**: 2025-09-21T17:28:56.943Z
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [Artificial Intelligence](#artificial-intelligence) (14 packages)
 - [Databases](#databases) (13 packages)
 - [Web Development](#web-development) (4 packages)
-- [DevOps](#devops) (27 packages)
+- [DevOps](#devops) (26 packages)
 - [Container & Kubernetes Tools](#container-kubernetes-tools) (25 packages)
 - [Monitoring & Observability](#monitoring-observability) (4 packages)
 - [Build Tools & Automation](#build-tools-automation) (15 packages)
@@ -115,7 +115,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## DevOps
 
-*27 packages in this category*
+*26 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -133,7 +133,6 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[infracost.io](./packages/infracost.io/index.md)** () | Cloud cost estimates for Terraform in pull requests💰📉 Shift FinOps Left! | infracost | 0.10.42 (+10) | `pkgx infracost` |
 | **[jenkins.io](./packages/jenkins.io/index.md)** () | Extendable open source continuous integration server | jenkins-lts, jenkins-lts-cli | 2.516.3 (+22) | `pkgx jenkins-lts` |
 | **[k3d.io](./packages/k3d.io/index.md)** () | Little helper to run CNCF&#39;s k3s in Docker | k3d | 5.8.3 (+16) | `pkgx k3d` |
-| **[kind.sigs.k8s.io](./packages/kind.sigs.k8s.io/index.md)** () | Kubernetes IN Docker - local clusters for testing Kubernetes | kind | 0.30.0 (+11) | `pkgx kind` |
 | **[kubernetes.io/kubectl](./packages/kubernetes.io/kubectl/index.md)** () | Production-Grade Container Scheduling and Management | kubectl | 1.34.1 (+119) | `pkgx kubectl` |
 | **[kubernetes.io/kustomize](./packages/kubernetes.io/kustomize/index.md)** () | Template-free customization of Kubernetes YAML manifests | kustomize | 5.7.1 (+15) | `pkgx kustomize` |
 | **[kubernetes.io/minikube](./packages/kubernetes.io/minikube/index.md)** () | Run a Kubernetes cluster locally | minikube | 1.37.0 (+12) | `pkgx minikube` |

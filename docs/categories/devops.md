@@ -1,6 +1,6 @@
 # DevOps
 
-*27 packages in this category*
+*26 packages in this category*
 
 Tools for deployment, orchestration, and infrastructure management.
 
@@ -143,16 +143,6 @@ Little helper to run CNCF's k3s in Docker
 **Programs**: k3d
 
 **Install**: `launchpad install k3d`
-
----
-
-### [kind.sigs.k8s.io](../packages/kind.sigs.k8s.io/index.md) (kind)
-
-Kubernetes IN Docker - local clusters for testing Kubernetes
-
-**Programs**: kind
-
-**Install**: `launchpad install kind`
 
 ---
 
