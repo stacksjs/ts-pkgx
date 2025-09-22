@@ -8,6 +8,7 @@
  *
  * @install `launchpad install shovel`
  * @name `shovel`
+ * @companions `postgresql.org`
  *
  * @example
  * ```typescript
@@ -55,7 +56,13 @@ export const shovelPackage = {
   programs: [
     'shovel',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'postgresql.org',
+  ] as const,
   dependencies: [] as const,
   /**
    * Available versions from newest to oldest.

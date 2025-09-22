@@ -9,6 +9,7 @@
  * @install `launchpad install streamlink`
  * @name `streamlink`
  * @dependencies `pkgx.sh^1`
+ * @companions `ffmpeg.org`
  *
  * @example
  * ```typescript
@@ -56,7 +57,13 @@ export const streamlinkPackage = {
   programs: [
     'streamlink',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'ffmpeg.org',
+  ] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

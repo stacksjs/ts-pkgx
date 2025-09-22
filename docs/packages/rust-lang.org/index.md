@@ -62,6 +62,12 @@ This package depends on:
 
 - `zlib.net@1`
 
+## Related Packages
+
+These packages work well with rust:
+
+- [`rust-lang.org/cargo`](cargo/index.md) - The Rust package manager
+
 ## Usage Examples
 
 ```typescript

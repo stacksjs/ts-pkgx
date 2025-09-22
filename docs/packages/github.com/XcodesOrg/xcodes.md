@@ -40,6 +40,12 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) xcodes -- $SHELL -i
 ```
 
+## Related Packages
+
+These packages work well with xcodes:
+
+- [`aria2.github.io`](../../aria2.github.io/index.md) - aria2 is a lightweight multi-protocol & multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.
+
 ## Usage Examples
 
 ```typescript

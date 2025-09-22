@@ -9,6 +9,7 @@
  * @install `launchpad install git-filter-repo`
  * @name `git-filter-repo`
  * @dependencies `python.org>=3.6`
+ * @companions `git-scm.org`
  *
  * @example
  * ```typescript
@@ -56,7 +57,13 @@ export const gitfilterrepoPackage = {
   programs: [
     'git-filter-repo',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'git-scm.org',
+  ] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

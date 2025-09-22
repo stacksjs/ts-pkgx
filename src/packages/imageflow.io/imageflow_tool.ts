@@ -9,6 +9,7 @@
  * @install `launchpad install imageflow_tool`
  * @name `imageflow_tool`
  * @dependencies `openssl.org@1.1`
+ * @companions `info-zip.org/zip`, `kornel.ski/dssim`
  *
  * @example
  * ```typescript
@@ -56,7 +57,14 @@ export const imageflowtoolPackage = {
   programs: [
     'imageflow_tool',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'info-zip.org/zip',
+    'kornel.ski/dssim',
+  ] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

@@ -8,6 +8,7 @@
  *
  * @install `launchpad install xcodes`
  * @name `xcodes`
+ * @companions `aria2.github.io`
  *
  * @example
  * ```typescript
@@ -55,7 +56,13 @@ export const xcodesPackage = {
   programs: [
     'xcodes',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'aria2.github.io',
+  ] as const,
   dependencies: [] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,6 +8,7 @@
  *
  * @install `launchpad install rye-uv`
  * @name `rye-uv`
+ * @companions `astral.sh/uv`
  *
  * @example
  * ```typescript
@@ -55,7 +56,13 @@ export const ryeuvPackage = {
   programs: [
     'rye-uv',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'astral.sh/uv',
+  ] as const,
   dependencies: [] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,6 +8,7 @@
  *
  * @install `launchpad install protoc-gen-go`
  * @name `protoc-gen-go`
+ * @companions `protobuf.dev`, `abseil.io`
  *
  * @example
  * ```typescript
@@ -55,7 +56,14 @@ export const protocgengoPackage = {
   programs: [
     'protoc-gen-go',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'protobuf.dev',
+    'abseil.io',
+  ] as const,
   dependencies: [] as const,
   /**
    * Available versions from newest to oldest.

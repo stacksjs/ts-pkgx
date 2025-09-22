@@ -57,6 +57,16 @@ This package depends on:
 
 - `nodejs.org^22 || ^20 || ^18`
 
+## Related Packages
+
+These packages work well with projen:
+
+- [`git-scm.org`](../git-scm.org/index.md) - Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.
+- [`classic.yarnpkg.com`](../classic.yarnpkg.com/index.md) - The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
+- [`maven.apache.org`](../maven.apache.org/index.md) - Java-based project management
+- [`python.org`](../python.org/index.md) - The Python programming language
+- [`go.dev`](../go.dev/index.md) - The Go programming language
+
 ## Usage Examples
 
 ```typescript

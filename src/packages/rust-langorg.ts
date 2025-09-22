@@ -9,6 +9,7 @@
  * @install `launchpad install rust`
  * @name `rust`
  * @dependencies `zlib.net@1`
+ * @companions `rust-lang.org/cargo`, `linux`
  *
  * @example
  * ```typescript
@@ -65,7 +66,14 @@ export const rustPackage = {
     'rustdoc',
     'rustfmt',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'rust-lang.org/cargo',
+    'linux',
+  ] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

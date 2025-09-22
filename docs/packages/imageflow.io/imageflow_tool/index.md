@@ -46,6 +46,13 @@ This package depends on:
 
 - `openssl.org@1.1`
 
+## Related Packages
+
+These packages work well with imageflow_tool:
+
+- [`info-zip.org/zip`](../../info-zip.org/zip/index.md) - Compression and file packaging/archive utility
+- [`kornel.ski/dssim`](../../kornel.ski/dssim/index.md) - Image similarity comparison simulating human perception (multiscale SSIM in Rust)
+
 ## Usage Examples
 
 ```typescript

@@ -9,6 +9,7 @@
  * @install `launchpad install bindgen`
  * @name `bindgen`
  * @dependencies `linux:llvm.org` (includes OS-specific dependencies with `os:package` format)
+ * @companions `rust-lang.org`
  *
  * @example
  * ```typescript
@@ -56,7 +57,13 @@ export const bindgenPackage = {
   programs: [
     'bindgen',
   ] as const,
-  companions: [] as const,
+  /**
+   * Related packages that work well with this package.
+   * Consider installing these for enhanced functionality.
+   */
+  companions: [
+    'rust-lang.org',
+  ] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
