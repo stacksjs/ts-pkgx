@@ -3,7 +3,7 @@
  *
  * @domain `freedesktop.org/xdg-user-dirs`
  * @programs `xdg-user-dir`, `xdg-user-dirs-update`
- * @version `0.18.0` (1 versions available)
+ * @version `0.19.0` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xdg-user-dir`
@@ -21,7 +21,7 @@
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "xdg-user-dir"
  * console.log(pkg.programs)    // ["xdg-user-dir", "xdg-user-dirs-update"]
- * console.log(pkg.versions[0]) // "0.18.0" (latest)
+ * console.log(pkg.versions[0]) // "0.19.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/freedesktop-org/xdg-user-dirs.md
@@ -70,6 +70,7 @@ export const xdguserdirPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.19.0',
     '0.18.0',
   ] as const,
   /**
