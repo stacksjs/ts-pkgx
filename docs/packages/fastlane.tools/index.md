@@ -51,12 +51,6 @@ This package depends on:
 - `ruby-lang.org~3.2`
 - `rubygems.org`
 
-## Related Packages
-
-These packages work well with fastlane:
-
-- [`cocoapods.org/xcodeproj`](../cocoapods.org/xcodeproj/index.md) - Create and modify Xcode projects from Ruby.
-
 ## Usage Examples
 
 ```typescript

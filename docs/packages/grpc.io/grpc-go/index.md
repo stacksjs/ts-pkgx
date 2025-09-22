@@ -53,14 +53,6 @@ This package depends on:
 
 - `google.com/protobuf-go^1`
 
-## Related Packages
-
-These packages work well with protoc-gen-go-grpc:
-
-- [`protobuf.dev`](../../protobuf.dev/index.md) - Protocol Buffers - Google's data interchange format
-- [`abseil.io`](../../abseil.io/index.md) - Abseil Common Libraries (C++)
-- [`go.dev`](../../go.dev/index.md) - The Go programming language
-
 ## Usage Examples
 
 ```typescript

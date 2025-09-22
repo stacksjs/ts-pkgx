@@ -9,7 +9,6 @@
  * @install `launchpad install fastlane`
  * @name `fastlane`
  * @dependencies `ruby-lang.org~3.2`, `rubygems.org`
- * @companions `cocoapods.org/xcodeproj`
  *
  * @example
  * ```typescript
@@ -57,13 +56,7 @@ export const fastlanePackage = {
   programs: [
     'fastlane',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'cocoapods.org/xcodeproj',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

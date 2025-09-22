@@ -43,13 +43,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) protoc-gen-go -- $SHELL -i
 ```
 
-## Related Packages
-
-These packages work well with protoc-gen-go:
-
-- [`protobuf.dev`](../../protobuf.dev/index.md) - Protocol Buffers - Google's data interchange format
-- [`abseil.io`](../../abseil.io/index.md) - Abseil Common Libraries (C++)
-
 ## Usage Examples
 
 ```typescript

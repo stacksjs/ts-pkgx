@@ -9,7 +9,6 @@
  * @install `launchpad install protoc-gen-go-grpc`
  * @name `protoc-gen-go-grpc`
  * @dependencies `google.com/protobuf-go^1`
- * @companions `protobuf.dev`, `abseil.io`, `go.dev`
  *
  * @example
  * ```typescript
@@ -57,15 +56,7 @@ export const protocgengogrpcPackage = {
   programs: [
     'protoc-gen-go-grpc',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'protobuf.dev',
-    'abseil.io',
-    'go.dev',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

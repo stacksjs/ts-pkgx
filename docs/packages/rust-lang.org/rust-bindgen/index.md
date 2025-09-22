@@ -46,12 +46,6 @@ This package depends on:
 
 - `linux:llvm.org`
 
-## Related Packages
-
-These packages work well with bindgen:
-
-- [`rust-lang.org`](../index.md) - Empowering everyone to build reliable and efficient software.
-
 ## Usage Examples
 
 ```typescript

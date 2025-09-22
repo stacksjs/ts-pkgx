@@ -9,7 +9,6 @@
  * @install `launchpad install projen`
  * @name `projen`
  * @dependencies `nodejs.org^22 || ^20 || ^18`
- * @companions `git-scm.org`, `classic.yarnpkg.com`, `maven.apache.org`, ... (+2 more)
  *
  * @example
  * ```typescript
@@ -57,17 +56,7 @@ export const projenPackage = {
   programs: [
     'projen',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'git-scm.org',
-    'classic.yarnpkg.com',
-    'maven.apache.org',
-    'python.org',
-    'go.dev',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.

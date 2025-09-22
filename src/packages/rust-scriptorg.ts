@@ -8,7 +8,6 @@
  *
  * @install `launchpad install rust-script`
  * @name `rust-script`
- * @companions `rust-lang.org`, `rust-lang.org/cargo`
  *
  * @example
  * ```typescript
@@ -56,14 +55,7 @@ export const rustscriptPackage = {
   programs: [
     'rust-script',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'rust-lang.org',
-    'rust-lang.org/cargo',
-  ] as const,
+  companions: [] as const,
   dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
