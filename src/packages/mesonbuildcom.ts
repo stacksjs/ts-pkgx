@@ -3,7 +3,7 @@
  *
  * @domain `mesonbuild.com`
  * @programs `meson`
- * @version `1.9.0` (31 versions available)
+ * @version `1.9.1` (32 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install meson`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "meson"
  * console.log(pkg.description) // "Fast and user friendly build system"
  * console.log(pkg.programs)    // ["meson"]
- * console.log(pkg.versions[0]) // "1.9.0" (latest)
+ * console.log(pkg.versions[0]) // "1.9.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/mesonbuild-com.md
@@ -69,6 +69,7 @@ export const mesonPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.9.1',
     '1.9.0',
     '1.8.4',
     '1.8.3',
