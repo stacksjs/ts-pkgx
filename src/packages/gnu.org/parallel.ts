@@ -3,7 +3,7 @@
  *
  * @domain `gnu.org/parallel`
  * @programs `env_parallel`, `niceload`, `parallel`, `parcat`, `parset`, ... (+3 more)
- * @version `20250822.0.0` (20 versions available)
+ * @version `20250922.0.0` (21 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/parallel`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "gnu.org/parallel"
  * console.log(pkg.description) // "Shell command parallelization utility"
  * console.log(pkg.programs)    // ["env_parallel", "niceload", ...]
- * console.log(pkg.versions[0]) // "20250822.0.0" (latest)
+ * console.log(pkg.versions[0]) // "20250922.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/parallel.md
@@ -71,6 +71,7 @@ export const gnuorgparallelPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '20250922.0.0',
     '20250822.0.0',
     '20250722.0.0',
     '20250622.0.0',
