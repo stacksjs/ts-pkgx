@@ -3,7 +3,7 @@
  *
  * @domain `github.com/util-linux/util-linux`
  * @programs `cal`, `colcrt`, `colrm`, `column`, `flock`, ... (+16 more)
- * @version `2.41.1` (13 versions available)
+ * @version `2.41.2` (14 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/util-linux/util-linux`
@@ -16,7 +16,7 @@
  * const pkg = pantry.githubcomutillinuxutillinux
  * console.log(pkg.name)        // "github.com/util-linux/util-linux"
  * console.log(pkg.programs)    // ["cal", "colcrt", ...]
- * console.log(pkg.versions[0]) // "2.41.1" (latest)
+ * console.log(pkg.versions[0]) // "2.41.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/util-linux/util-linux.md
@@ -84,6 +84,7 @@ export const githubcomutillinuxutillinuxPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.41.2',
     '2.41.1',
     '2.41.0',
     '2.40.4',
