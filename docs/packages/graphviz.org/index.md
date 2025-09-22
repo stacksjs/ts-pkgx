@@ -59,22 +59,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 16 versions</summary>
+<summary>Show all 17 versions</summary>
 
-- `13.1.2`, `13.1.1`, `13.1.0`, `13.0.1`, `13.0.0`
-- `12.2.1`, `12.2.0`, `12.1.2`, `12.1.1`, `12.1.0`
-- `12.0.0`, `11.0.0`, `10.0.1`, `9.0.0`, `8.1.0`
-- `7.1.0`
+- `14.0.0`, `13.1.2`, `13.1.1`, `13.1.0`, `13.0.1`
+- `13.0.0`, `12.2.1`, `12.2.0`, `12.1.2`, `12.1.1`
+- `12.1.0`, `12.0.0`, `11.0.0`, `10.0.1`, `9.0.0`
+- `8.1.0`, `7.1.0`
 
 </details>
 
-**Latest Version**: `13.1.2`
+**Latest Version**: `14.0.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +graphviz.org@13.1.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +graphviz.org@14.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
