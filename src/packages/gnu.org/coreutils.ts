@@ -3,7 +3,7 @@
  *
  * @domain `gnu.org/coreutils`
  * @programs `[`, `b2sum`, `base32`, `base64`, `basename`, ... (+100 more)
- * @version `9.7.0` (5 versions available)
+ * @version `9.8.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/coreutils`
@@ -15,7 +15,7 @@
  * const pkg = pantry.gnuorgcoreutils
  * console.log(pkg.name)        // "gnu.org/coreutils"
  * console.log(pkg.programs)    // ["[", "b2sum", ...]
- * console.log(pkg.versions[0]) // "9.7.0" (latest)
+ * console.log(pkg.versions[0]) // "9.8.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/coreutils.md
@@ -160,6 +160,7 @@ export const gnuorgcoreutilsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '9.8.0',
     '9.7.0',
     '9.6.0',
     '9.5.0',
