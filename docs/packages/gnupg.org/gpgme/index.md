@@ -27,21 +27,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 11 versions</summary>
+<summary>Show all 12 versions</summary>
 
-- `2.0.0`, `1.24.3`, `1.24.2`, `1.24.1`, `1.24.0`
-- `1.23.2`, `1.23.1`, `1.23.0`, `1.22.0`, `1.19.0`
-- `1.5.1`
+- `2.0.1`, `2.0.0`, `1.24.3`, `1.24.2`, `1.24.1`
+- `1.24.0`, `1.23.2`, `1.23.1`, `1.23.0`, `1.22.0`
+- `1.19.0`, `1.5.1`
 
 </details>
 
-**Latest Version**: `2.0.0`
+**Latest Version**: `2.0.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnupg.org/gpgme@2.0.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnupg.org/gpgme@2.0.1 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -3,7 +3,7 @@
  *
  * @domain `gnupg.org/gpgme`
  * @programs `gpgme-config`, `gpgme-json`, `gpgme-tool`
- * @version `2.0.0` (11 versions available)
+ * @version `2.0.1` (12 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gpgme`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "gpgme"
  * console.log(pkg.description) // "Library access to GnuPG"
  * console.log(pkg.programs)    // ["gpgme-config", "gpgme-json", ...]
- * console.log(pkg.versions[0]) // "2.0.0" (latest)
+ * console.log(pkg.versions[0]) // "2.0.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnupg-org/gpgme.md
@@ -64,6 +64,7 @@ export const gpgmePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.0.1',
     '2.0.0',
     '1.24.3',
     '1.24.2',
