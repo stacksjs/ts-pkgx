@@ -3,7 +3,7 @@
  *
  * @domain `github.com/oligot/go-mod-upgrade`
  * @programs `go-mod-upgrade`
- * @version `0.11.0` (3 versions available)
+ * @version `0.12.0` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install go-mod-upgrade`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "go-mod-upgrade"
  * console.log(pkg.description) // "Update outdated Go dependencies interactively"
  * console.log(pkg.programs)    // ["go-mod-upgrade"]
- * console.log(pkg.versions[0]) // "0.11.0" (latest)
+ * console.log(pkg.versions[0]) // "0.12.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/oligot/go-mod-upgrade.md
@@ -62,6 +62,7 @@ export const gomodupgradePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.12.0',
     '0.11.0',
     '0.10.0',
     '0.9.1',
