@@ -2,7 +2,7 @@
  * **wpewebkit.org/libwpe** - General-purpose library specifically developed for the WPE-flavored port of WebKit.
  *
  * @domain `wpewebkit.org/libwpe`
- * @version `1.16.2` (5 versions available)
+ * @version `1.16.3` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install wpewebkit.org/libwpe`
@@ -15,7 +15,7 @@
  * const pkg = pantry.wpewebkitorglibwpe
  * console.log(pkg.name)        // "wpewebkit.org/libwpe"
  * console.log(pkg.description) // "General-purpose library specifically developed ..."
- * console.log(pkg.versions[0]) // "1.16.2" (latest)
+ * console.log(pkg.versions[0]) // "1.16.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/wpewebkit-org/libwpe.md
@@ -57,6 +57,7 @@ export const wpewebkitorglibwpePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.16.3',
     '1.16.2',
     '1.16.1',
     '1.16.0',

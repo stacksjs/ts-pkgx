@@ -25,19 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 5 versions</summary>
+<summary>Show all 6 versions</summary>
 
-- `1.16.2`, `1.16.1`, `1.16.0`, `1.15.2`, `1.15.1`
+- `1.16.3`, `1.16.2`, `1.16.1`, `1.16.0`, `1.15.2`
+- `1.15.1`
 
 </details>
 
-**Latest Version**: `1.16.2`
+**Latest Version**: `1.16.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +wpewebkit.org/libwpe@1.16.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +wpewebkit.org/libwpe@1.16.3 -- $SHELL -i
 ```
 
 ## Dependencies
