@@ -28,20 +28,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `2.44.1`, `2.44.0`, `2.43.5`, `2.43.3`, `2.43.2`
-- `2.42.9`, `2.42.8`
+- `2.44.2`, `2.44.1`, `2.44.0`, `2.43.5`, `2.43.3`
+- `2.43.2`, `2.42.9`, `2.42.8`
 
 </details>
 
-**Latest Version**: `2.44.1`
+**Latest Version**: `2.44.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +gnome.org/gdk-pixbuf@2.44.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnome.org/gdk-pixbuf@2.44.2 -- $SHELL -i
 ```
 
 ## Dependencies
