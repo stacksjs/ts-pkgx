@@ -220,7 +220,7 @@ import { qsvPackage } from './crates.io/qsv'
 import { ragePackage } from './crates.io/rage'
 import { rgaPackage } from './crates.io/ripgrep-all'
 import { rgPackage } from './crates.io/ripgrep'
-import { rmzPackage } from './crates.io/rmz'
+import { cratesiormzPackage } from './crates.io/rmz'
 import { rpgcliPackage } from './crates.io/rpg-cli'
 import { cratesiortxcliPackage } from './crates.io/rtx-cli'
 import { rucolaPackage } from './crates.io/rucola-notes'
@@ -533,7 +533,7 @@ import { libyangPackage } from './github.com/cesnet/libyang'
 import { apkoPackage } from './github.com/chainguard-dev/apko'
 import { githubcomcharliermarshruffPackage } from './github.com/charliermarsh/ruff'
 import { protocgenjsonschemaPackage } from './github.com/chrusty/protoc-gen-jsonschema'
-import { cirrusPackage } from './github.com/cirruslabs/cirrus-cli'
+import { githubcomcirruslabscirruscliPackage } from './github.com/cirruslabs/cirrus-cli'
 import { mpPackage } from './github.com/clever/microplane'
 import { garmprovideropenstackPackage } from './github.com/cloudbase/garm-provider-openstack'
 import { cloudbasegarmPackage } from './github.com/cloudbase/garm'
@@ -1978,8 +1978,8 @@ export interface Pantry {
   cratesioripgrepall: typeof rgaPackage
   ripgrep: typeof rgPackage
   cratesioripgrep: typeof rgPackage
-
-  cratesiormz: typeof rmzPackage
+  rmz: typeof cratesiormzPackage
+  cratesiormz: typeof cratesiormzPackage
   rpg_cli: typeof rpgcliPackage
   cratesiorpgcli: typeof rpgcliPackage
   rtx_cli: typeof cratesiortxcliPackage
@@ -2531,8 +2531,8 @@ export interface Pantry {
   githubcomcharliermarsh: typeof githubcomcharliermarshruffPackage
   protoc_gen_jsonschema: typeof protocgenjsonschemaPackage
   githubcomchrusty: typeof protocgenjsonschemaPackage
-  cirrus_cli: typeof cirrusPackage
-  githubcomcirruslabs: typeof cirrusPackage
+  cirrus_cli: typeof githubcomcirruslabscirruscliPackage
+  githubcomcirruslabs: typeof githubcomcirruslabscirruscliPackage
   microplane: typeof mpPackage
   githubcomclever: typeof mpPackage
   garm_provider_openstack: typeof garmprovideropenstackPackage
@@ -4486,7 +4486,6 @@ export interface Pantry {
   portfolio_rs: typeof portfoliorsPackage
   rucola: typeof rucolaPackage
   docuum: typeof docuumPackage
-  rmz: typeof rmzPackage
   fnm: typeof fnmPackage
   licensor: typeof licensorPackage
   gitweb: typeof gitwebPackage
@@ -4861,7 +4860,6 @@ export interface Pantry {
   gollum: typeof gollumPackage
   gopass: typeof gopassPackage
   'swift-create-xcframework': typeof swiftcreatexcframeworkPackage
-  cirrus: typeof cirrusPackage
   gron: typeof gronPackage
   k0sctl: typeof k0sctlPackage
   sqlboiler: typeof sqlboilerPackage
@@ -5805,8 +5803,8 @@ export const pantry: Pantry = {
   cratesioripgrepall: rgaPackage,
   ripgrep: rgPackage,
   cratesioripgrep: rgPackage,
-
-  cratesiormz: rmzPackage,
+  rmz: cratesiormzPackage,
+  cratesiormz: cratesiormzPackage,
   rpg_cli: rpgcliPackage,
   cratesiorpgcli: rpgcliPackage,
   rtx_cli: cratesiortxcliPackage,
@@ -6358,8 +6356,8 @@ export const pantry: Pantry = {
   githubcomcharliermarsh: githubcomcharliermarshruffPackage,
   protoc_gen_jsonschema: protocgenjsonschemaPackage,
   githubcomchrusty: protocgenjsonschemaPackage,
-  cirrus_cli: cirrusPackage,
-  githubcomcirruslabs: cirrusPackage,
+  cirrus_cli: githubcomcirruslabscirruscliPackage,
+  githubcomcirruslabs: githubcomcirruslabscirruscliPackage,
   microplane: mpPackage,
   githubcomclever: mpPackage,
   garm_provider_openstack: garmprovideropenstackPackage,
@@ -8313,7 +8311,6 @@ export const pantry: Pantry = {
   portfolio_rs: portfoliorsPackage,
   rucola: rucolaPackage,
   docuum: docuumPackage,
-  rmz: rmzPackage,
   fnm: fnmPackage,
   licensor: licensorPackage,
   gitweb: gitwebPackage,
@@ -8688,7 +8685,6 @@ export const pantry: Pantry = {
   gollum: gollumPackage,
   gopass: gopassPackage,
   'swift-create-xcframework': swiftcreatexcframeworkPackage,
-  cirrus: cirrusPackage,
   gron: gronPackage,
   k0sctl: k0sctlPackage,
   sqlboiler: sqlboilerPackage,

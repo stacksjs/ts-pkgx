@@ -2,7 +2,7 @@
  * **eigen.tuxfamily.org** - pkgx package
  *
  * @domain `eigen.tuxfamily.org`
- * @version `5.0.0` (2 versions available)
+ * @version `5.0.0` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install eigen.tuxfamily.org`
@@ -57,6 +57,7 @@ export const eigentuxfamilyorgPackage = {
    */
   versions: [
     '5.0.0',
+    '3.4.1',
     '3.4.0',
   ] as const,
   aliases: [] as const,

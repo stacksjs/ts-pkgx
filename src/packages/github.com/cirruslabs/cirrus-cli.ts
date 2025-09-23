@@ -1,37 +1,29 @@
 /**
- * **cirrus** - CLI for executing Cirrus tasks locally and in any CI
+ * **github.com/cirruslabs/cirrus-cli** - pkgx package
  *
  * @domain `github.com/cirruslabs/cirrus-cli`
- * @programs `cirrus`
  * @version `0.153.5` (89 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install cirrus`
- * @name `cirrus`
+ * @install `launchpad install github.com/cirruslabs/cirrus-cli`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cirrus
- * // Or access via domain
- * const samePkg = pantry.githubcomcirruslabscirruscli
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "cirrus"
- * console.log(pkg.description) // "CLI for executing Cirrus tasks locally and in a..."
- * console.log(pkg.programs)    // ["cirrus"]
+ * const pkg = pantry.githubcomcirruslabscirruscli
+ * console.log(pkg.name)        // "github.com/cirruslabs/cirrus-cli"
  * console.log(pkg.versions[0]) // "0.153.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/cirruslabs/cirrus-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cirrusPackage = {
+export const githubcomcirruslabscirruscliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cirrus' as const,
+  name: 'github.com/cirruslabs/cirrus-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +31,7 @@ export const cirrusPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'CLI for executing Cirrus tasks locally and in any CI' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/cirruslabs/cirrus-cli/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
@@ -47,14 +39,8 @@ export const cirrusPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cirrus' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'cirrus',
-  ] as const,
+  installCommand: 'launchpad install github.com/cirruslabs/cirrus-cli' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   /**
@@ -152,13 +138,9 @@ export const cirrusPackage = {
     '0.120.0',
     '0.119.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cirrus -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cirrus' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/cirruslabs/cirrus-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/cirruslabs/cirrus-cli' as const,
 }
 
-export type CirrusPackage = typeof cirrusPackage
+export type GithubcomcirruslabscirruscliPackage = typeof githubcomcirruslabscirruscliPackage

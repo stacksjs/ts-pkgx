@@ -1,37 +1,29 @@
 /**
- * **rmz** - Modern, performance focused unix commands
+ * **crates.io/rmz** - pkgx package
  *
  * @domain `crates.io/rmz`
- * @programs `rmz`
  * @version `3.1.1` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rmz`
- * @name `rmz`
+ * @install `launchpad install crates.io/rmz`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rmz
- * // Or access via domain
- * const samePkg = pantry.cratesiormz
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "rmz"
- * console.log(pkg.description) // "Modern, performance focused unix commands"
- * console.log(pkg.programs)    // ["rmz"]
+ * const pkg = pantry.cratesiormz
+ * console.log(pkg.name)        // "crates.io/rmz"
  * console.log(pkg.versions[0]) // "3.1.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/rmz.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rmzPackage = {
+export const cratesiormzPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rmz' as const,
+  name: 'crates.io/rmz' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,7 +31,7 @@ export const rmzPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Modern, performance focused unix commands' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rmz/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
@@ -47,14 +39,8 @@ export const rmzPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rmz' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'rmz',
-  ] as const,
+  installCommand: 'launchpad install crates.io/rmz' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   /**
@@ -69,13 +55,9 @@ export const rmzPackage = {
     '2.2.0',
     '2.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rmz -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rmz' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/rmz -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/rmz' as const,
 }
 
-export type RmzPackage = typeof rmzPackage
+export type CratesiormzPackage = typeof cratesiormzPackage
