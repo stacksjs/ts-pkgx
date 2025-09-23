@@ -3,7 +3,7 @@
  *
  * @domain `github.com/nicklockwood/SwiftFormat`
  * @programs `swiftformat`
- * @version `0.57.2` (48 versions available)
+ * @version `0.58.0` (49 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install swiftformat`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "swiftformat"
  * console.log(pkg.description) // "A command-line tool and Xcode Extension for for..."
  * console.log(pkg.programs)    // ["swiftformat"]
- * console.log(pkg.versions[0]) // "0.57.2" (latest)
+ * console.log(pkg.versions[0]) // "0.58.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/nicklockwood/SwiftFormat.md
@@ -62,6 +62,7 @@ export const swiftformatPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.58.0',
     '0.57.2',
     '0.57.1',
     '0.57.0',

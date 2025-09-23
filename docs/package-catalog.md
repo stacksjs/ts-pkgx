@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-09-22T23:20:16.588Z
+- **Last Updated**: 2025-09-23T03:03:51.516Z
 
 ## Table of Contents
 
@@ -79,7 +79,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.27.1 (+31) | `pkgx llm` |
 | **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.3 (+20) | `pkgx f2py` |
 | **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.12.0 (+116) | `pkgx ollama` |
-| **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 1.108.1 (+283) | `pkgx openai` |
+| **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 1.108.2 (+284) | `pkgx openai` |
 | **[openinterpreter.com](./packages/openinterpreter.com/index.md)** (interpreter) | A natural language interface for computers | interpreter | 0.4.0 (+21) | `pkgx interpreter` |
 
 ## Databases
@@ -121,7 +121,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[ansible.com](./packages/ansible.com/index.md)** () | Ansible is a radically simple IT automation platform that makes your applications and systems eas... | ansible, ansible-config, ansible-connection, ... (+8) | 2.19.2 (+76) | `pkgx ansible` |
 | **[ansible.com/ansible-lint](./packages/ansible.com/ansible-lint/index.md)** () | ansible-lint checks playbooks for practices and behavior that could potentially be improved and c... | ansible-lint | 25.9.0 (+27) | `pkgx ansible-lint` |
-| **[argoproj.github.io/cd](./packages/argoproj.github.io/cd/index.md)** (argocd) | GitOps Continuous Delivery for Kubernetes | argocd | 3.1.6 (+144) | `pkgx argocd` |
+| **[argoproj.github.io/cd](./packages/argoproj.github.io/cd/index.md)** (argocd) | GitOps Continuous Delivery for Kubernetes | argocd | 3.1.7 (+147) | `pkgx argocd` |
 | **[consul.io](./packages/consul.io/index.md)** () | Consul is a distributed, highly available, and data center aware solution to connect and configur... | consul | 1.21.4 (+13) | `pkgx consul` |
 | **[docker.com/cli](./packages/docker.com/cli/index.md)** (docker) | Pack, ship and run any application as a lightweight container | docker | 28.4.0 (+57) | `pkgx docker` |
 | **[docker.com/compose](./packages/docker.com/compose/index.md)** () | Define and run multi-container applications with Docker | docker-compose | 2.39.4 (+61) | `pkgx docker-compose` |
@@ -223,7 +223,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cocoapods.org](./packages/cocoapods.org/index.md)** () | Dependency manager for Cocoa projects | pod | 1.16.2 (+12) | `pkgx pod` |
 | **[getcomposer.org](./packages/getcomposer.org/index.md)** () | Dependency Manager for PHP | composer, composer.phar | 2.8.12 (+32) | `pkgx composer` |
 | **[luarocks.org](./packages/luarocks.org/index.md)** () | LuaRocks is the package manager for the Lua programming language. | luarocks, luarocks-admin | 3.12.2 (+6) | `pkgx luarocks` |
-| **[mise.jdx.dev](./packages/mise.jdx.dev/index.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.9.15 (+352) | `pkgx mise` |
+| **[mise.jdx.dev](./packages/mise.jdx.dev/index.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.9.16 (+353) | `pkgx mise` |
 | **[nixpacks.com](./packages/nixpacks.com/index.md)** () | App source + Nix packages + Docker = Image | nixpacks | 1.40.0 (+33) | `pkgx nixpacks` |
 | **[nodejs.org/corepack](./packages/nodejs.org/corepack/index.md)** () | Platform built on V8 to build network applications | corepack | 0.34.0 (+12) | `pkgx corepack` |
 | **[npmjs.com](./packages/npmjs.com/index.md)** (npm) | the package manager for JavaScript | npm, npx | 11.6.0 (+64) | `pkgx npm` |
