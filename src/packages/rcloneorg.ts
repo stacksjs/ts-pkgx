@@ -3,7 +3,7 @@
  *
  * @domain `rclone.org`
  * @programs `rclone`
- * @version `1.71.0` (21 versions available)
+ * @version `1.71.1` (22 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rclone`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "rclone"
  * console.log(pkg.description) // ""rsync for cloud storage" - Google Drive, S3, D..."
  * console.log(pkg.programs)    // ["rclone"]
- * console.log(pkg.versions[0]) // "1.71.0" (latest)
+ * console.log(pkg.versions[0]) // "1.71.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rclone-org.md
@@ -62,6 +62,7 @@ export const rclonePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.71.1',
     '1.71.0',
     '1.70.3',
     '1.70.2',

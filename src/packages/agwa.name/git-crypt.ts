@@ -3,7 +3,7 @@
  *
  * @domain `agwa.name/git-crypt`
  * @programs `git-crypt`
- * @version `0.7.0` (1 versions available)
+ * @version `0.8.0` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install git-crypt`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "git-crypt"
  * console.log(pkg.description) // "Enable transparent encryption/decryption of fil..."
  * console.log(pkg.programs)    // ["git-crypt"]
- * console.log(pkg.versions[0]) // "0.7.0" (latest)
+ * console.log(pkg.versions[0]) // "0.8.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/agwa-name/git-crypt.md
@@ -69,6 +69,7 @@ export const gitcryptPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.8.0',
     '0.7.0',
   ] as const,
   /**
