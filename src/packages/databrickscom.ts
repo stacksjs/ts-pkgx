@@ -3,7 +3,7 @@
  *
  * @domain `databricks.com`
  * @programs `databricks`
- * @version `0.269.0` (70 versions available)
+ * @version `0.270.0` (71 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install databricks`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "databricks"
  * console.log(pkg.description) // "Databricks CLI"
  * console.log(pkg.programs)    // ["databricks"]
- * console.log(pkg.versions[0]) // "0.269.0" (latest)
+ * console.log(pkg.versions[0]) // "0.270.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/databricks-com.md
@@ -62,6 +62,7 @@ export const databricksPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.270.0',
     '0.269.0',
     '0.268.0',
     '0.267.0',

@@ -1,18 +1,18 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1417+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1397+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1417
+- **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-09-24T14:29:01.856Z
+- **Last Updated**: 2025-09-24T15:29:37.461Z
 
 ## Table of Contents
 
-- [Programming Languages](#programming-languages) (13 packages)
+- [Programming Languages](#programming-languages) (14 packages)
 - [Artificial Intelligence](#artificial-intelligence) (14 packages)
 - [Databases](#databases) (13 packages)
 - [Web Development](#web-development) (4 packages)
@@ -22,10 +22,10 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [Build Tools & Automation](#build-tools-automation) (15 packages)
 - [Package Managers](#package-managers) (17 packages)
 - [Editors & IDEs](#editors-ides) (8 packages)
-- [CLI Tools & Utilities](#cli-tools-utilities) (34 packages)
+- [CLI Tools & Utilities](#cli-tools-utilities) (35 packages)
 - [Networking](#networking) (9 packages)
 - [Security & Cryptography](#security-cryptography) (12 packages)
-- [Multimedia](#multimedia) (6 packages)
+- [Multimedia](#multimedia) (7 packages)
 - [Graphics Libraries](#graphics-libraries) (3 packages)
 - [Gaming & Game Development](#gaming-game-development) (1 packages)
 - [Cloud Platforms](#cloud-platforms) (8 packages)
@@ -42,7 +42,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Programming Languages
 
-*13 packages in this category*
+*14 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -59,6 +59,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[rust-lang.org](./packages/rust-lang.org/index.md)** () | Empowering everyone to build reliable and efficient software. | cargo-clippy, cargo-fmt, clippy-driver, ... (+7) | 1.90.0 (+36) | `pkgx rust` |
 | **[swift.org](./packages/swift.org/index.md)** () | The Swift Programming Language | docc, dsymutil, sourcekit-lsp, ... (+23) | 6.2.0 (+11) | `pkgx swift` |
 | **[tinygo.org](./packages/tinygo.org/index.md)** () | Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. ... | tinygo | 0.39.0 (+8) | `pkgx tinygo` |
+| **[ziglang.org](./packages/ziglang.org/index.md)** () | General-purpose programming language and toolchain for maintaining robust, optimal, and reusable ... | zig | 0.15.1 (+8) | `pkgx zig` |
 
 ## Artificial Intelligence
 
@@ -252,7 +253,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## CLI Tools & Utilities
 
-*34 packages in this category*
+*35 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -290,6 +291,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[stedolan.github.io/jq](./packages/stedolan.github.io/jq/index.md)** () | Lightweight and flexible command-line JSON processor | jq | 1.8.1 (+4) | `pkgx jq` |
 | **[tree-sitter.github.io](./packages/tree-sitter.github.io/index.md)** () | Parser generator tool and incremental parsing library | tree-sitter | 0.25.10 (+31) | `pkgx tree-sitter` |
 | **[wilfred.me.uk/difftastic](./packages/wilfred.me.uk/difftastic/index.md)** () | a structural diff that understands syntax 🟥🟩 | difft | 0.65.0 (+9) | `pkgx difft` |
+| **[zsh.sourceforge.io](./packages/zsh.sourceforge.io/index.md)** () | UNIX shell (command interpreter) | zsh | 5.9.0 (+0) | `pkgx zsh` |
 
 ## Networking
 
@@ -328,7 +330,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Multimedia
 
-*6 packages in this category*
+*7 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -338,6 +340,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mpv.io](./packages/mpv.io/index.md)** () | Media player based on MPlayer and mplayer2 | mpv | 0.40.0 (+2) | `pkgx mpv` |
 | **[sf.net/optipng](./packages/sf.net/optipng/index.md)** () | PNG file optimizer | optipng | 7.9.1 (+2) | `pkgx optipng` |
 | **[streamlink.github.io](./packages/streamlink.github.io/index.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 7.6.0 (+21) | `pkgx streamlink` |
+| **[yt-dlp.org](./packages/yt-dlp.org/index.md)** () | A feature-rich command-line audio/video downloader | yt-dlp | 2025.9.23 (+55) | `pkgx yt-dlp` |
 
 ## Graphics Libraries
 

@@ -1,11 +1,11 @@
-# xpra.org
+# xpra
 
-> Package from pantry: xpra.org
+> Persistent remote applications for X11; screen sharing for X11, MacOS and MSWindows.
 
 ## Package Information
 
 - **Domain**: `xpra.org`
-- **Name**: `xpra.org`
+- **Name**: `xpra`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xpra.org/package.yml)
 
@@ -13,14 +13,34 @@
 
 ```bash
 # Install with launchpad
-launchpad install xpra.org
+launchpad install xpra
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-*No programs specified*
+- `xpra`
+
+## Available Versions
+
+<details>
+<summary>Show all 12 versions</summary>
+
+- `6.3.3`, `6.3.2`, `6.3.1`, `6.3.0`, `6.2.5`
+- `6.2.4`, `6.2.3`, `6.2.2`, `6.2.1`, `6.2.0`
+- `6.1.3`, `6.1.2`
+
+</details>
+
+**Latest Version**: `6.3.3`
+
+### Install Specific Version
+
+```bash
+# Install specific version
+sh <(curl https://pkgx.sh) xpra -- $SHELL -i
+```
 
 ## Dependencies
 
@@ -42,7 +62,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['xpra.org']
+const pkg = pantry.xpra
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
