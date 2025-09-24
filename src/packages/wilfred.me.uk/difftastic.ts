@@ -3,7 +3,7 @@
  *
  * @domain `wilfred.me.uk/difftastic`
  * @programs `difft`
- * @version `0.64.0` (9 versions available)
+ * @version `0.65.0` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install difft`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "difft"
  * console.log(pkg.description) // "a structural diff that understands syntax 🟥🟩"
  * console.log(pkg.programs)    // ["difft"]
- * console.log(pkg.versions[0]) // "0.64.0" (latest)
+ * console.log(pkg.versions[0]) // "0.65.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/wilfred-me-uk/difftastic.md
@@ -62,6 +62,7 @@ export const difftPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.65.0',
     '0.64.0',
     '0.63.0',
     '0.62.0',
