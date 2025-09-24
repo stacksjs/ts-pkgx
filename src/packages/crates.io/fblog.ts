@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/fblog`
  * @programs `fblog`
- * @version `4.14.0` (12 versions available)
+ * @version `4.15.0` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fblog`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "fblog"
  * console.log(pkg.description) // "Small command-line JSON Log viewer"
  * console.log(pkg.programs)    // ["fblog"]
- * console.log(pkg.versions[0]) // "4.14.0" (latest)
+ * console.log(pkg.versions[0]) // "4.15.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/fblog.md
@@ -62,6 +62,7 @@ export const fblogPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.15.0',
     '4.14.0',
     '4.13.1',
     '4.13.0',
