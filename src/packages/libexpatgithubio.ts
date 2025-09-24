@@ -3,7 +3,7 @@
  *
  * @domain `libexpat.github.io`
  * @programs `xmlwf`
- * @version `2.7.2` (10 versions available)
+ * @version `2.7.3` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xmlwf`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "xmlwf"
  * console.log(pkg.description) // ":herb: Fast streaming XML parser written in C99..."
  * console.log(pkg.programs)    // ["xmlwf"]
- * console.log(pkg.versions[0]) // "2.7.2" (latest)
+ * console.log(pkg.versions[0]) // "2.7.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libexpat-github-io.md
@@ -62,6 +62,7 @@ export const xmlwfPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.7.3',
     '2.7.2',
     '2.7.1',
     '2.7.0',

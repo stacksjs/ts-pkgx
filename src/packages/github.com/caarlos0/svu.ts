@@ -3,7 +3,7 @@
  *
  * @domain `github.com/caarlos0/svu`
  * @programs `svu`
- * @version `3.2.3` (13 versions available)
+ * @version `3.2.4` (14 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install svu`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "svu"
  * console.log(pkg.description) // "Semantic Version Util"
  * console.log(pkg.programs)    // ["svu"]
- * console.log(pkg.versions[0]) // "3.2.3" (latest)
+ * console.log(pkg.versions[0]) // "3.2.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/caarlos0/svu.md
@@ -62,6 +62,7 @@ export const svuPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.2.4',
     '3.2.3',
     '3.2.2',
     '3.2.1',
