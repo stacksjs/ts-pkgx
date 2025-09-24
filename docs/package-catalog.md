@@ -1,18 +1,18 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1397+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1417+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1397
+- **Total Packages**: 1417
 - **Categories**: 27
-- **Last Updated**: 2025-09-24T11:29:16.912Z
+- **Last Updated**: 2025-09-24T14:29:01.856Z
 
 ## Table of Contents
 
-- [Programming Languages](#programming-languages) (14 packages)
+- [Programming Languages](#programming-languages) (13 packages)
 - [Artificial Intelligence](#artificial-intelligence) (14 packages)
 - [Databases](#databases) (13 packages)
 - [Web Development](#web-development) (4 packages)
@@ -22,10 +22,10 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [Build Tools & Automation](#build-tools-automation) (15 packages)
 - [Package Managers](#package-managers) (17 packages)
 - [Editors & IDEs](#editors-ides) (8 packages)
-- [CLI Tools & Utilities](#cli-tools-utilities) (35 packages)
+- [CLI Tools & Utilities](#cli-tools-utilities) (34 packages)
 - [Networking](#networking) (9 packages)
 - [Security & Cryptography](#security-cryptography) (12 packages)
-- [Multimedia](#multimedia) (7 packages)
+- [Multimedia](#multimedia) (6 packages)
 - [Graphics Libraries](#graphics-libraries) (3 packages)
 - [Gaming & Game Development](#gaming-game-development) (1 packages)
 - [Cloud Platforms](#cloud-platforms) (8 packages)
@@ -42,7 +42,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Programming Languages
 
-*14 packages in this category*
+*13 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -52,14 +52,13 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[julialang.org](./packages/julialang.org/index.md)** () | The Julia Programming Language | julia | 1.11.7 (+20) | `pkgx julia` |
 | **[lua.org](./packages/lua.org/index.md)** () | Powerful, lightweight programming language | lua, luac | 5.4.8 (+3) | `pkgx lua` |
 | **[luajit.org](./packages/luajit.org/index.md)** () | Mirror of the LuaJIT git repository | luajit, luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;. | 2.1.0 (+0) | `pkgx luajit` |
-| **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 24.8.0 (+151) | `pkgx node` |
+| **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 24.8.0 (+152) | `pkgx node` |
 | **[php.net](./packages/php.net/index.md)** (php) | General-purpose scripting language | pear, pecl, phar, ... (+5) | 8.4.13 (+82) | `pkgx php` |
 | **[python.org](./packages/python.org/index.md)** (py) | The Python programming language | python, python&lbrace;&lbrace; version.major &rbrace;&rbrace;, python&lbrace;&lbrace; version.marketing &rbrace;&rbrace; | 3.13.7 (+152) | `pkgx py` |
 | **[ruby-lang.org](./packages/ruby-lang.org/index.md)** (ruby) | Powerful, clean, object-oriented scripting language | erb, irb, rake, ... (+3) | 3.4.6 (+45) | `pkgx ruby` |
 | **[rust-lang.org](./packages/rust-lang.org/index.md)** () | Empowering everyone to build reliable and efficient software. | cargo-clippy, cargo-fmt, clippy-driver, ... (+7) | 1.90.0 (+36) | `pkgx rust` |
 | **[swift.org](./packages/swift.org/index.md)** () | The Swift Programming Language | docc, dsymutil, sourcekit-lsp, ... (+23) | 6.2.0 (+11) | `pkgx swift` |
 | **[tinygo.org](./packages/tinygo.org/index.md)** () | Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. ... | tinygo | 0.39.0 (+8) | `pkgx tinygo` |
-| **[ziglang.org](./packages/ziglang.org/index.md)** () | General-purpose programming language and toolchain for maintaining robust, optimal, and reusable ... | zig | 0.15.1 (+8) | `pkgx zig` |
 
 ## Artificial Intelligence
 
@@ -79,7 +78,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.27.1 (+31) | `pkgx llm` |
 | **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.3 (+20) | `pkgx f2py` |
 | **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.12.1 (+117) | `pkgx ollama` |
-| **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 1.109.0 (+285) | `pkgx openai` |
+| **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 1.109.1 (+286) | `pkgx openai` |
 | **[openinterpreter.com](./packages/openinterpreter.com/index.md)** (interpreter) | A natural language interface for computers | interpreter | 0.4.0 (+21) | `pkgx interpreter` |
 
 ## Databases
@@ -223,7 +222,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cocoapods.org](./packages/cocoapods.org/index.md)** () | Dependency manager for Cocoa projects | pod | 1.16.2 (+12) | `pkgx pod` |
 | **[getcomposer.org](./packages/getcomposer.org/index.md)** () | Dependency Manager for PHP | composer, composer.phar | 2.8.12 (+32) | `pkgx composer` |
 | **[luarocks.org](./packages/luarocks.org/index.md)** () | LuaRocks is the package manager for the Lua programming language. | luarocks, luarocks-admin | 3.12.2 (+6) | `pkgx luarocks` |
-| **[mise.jdx.dev](./packages/mise.jdx.dev/index.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.9.16 (+353) | `pkgx mise` |
+| **[mise.jdx.dev](./packages/mise.jdx.dev/index.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.9.17 (+354) | `pkgx mise` |
 | **[nixpacks.com](./packages/nixpacks.com/index.md)** () | App source + Nix packages + Docker = Image | nixpacks | 1.40.0 (+33) | `pkgx nixpacks` |
 | **[nodejs.org/corepack](./packages/nodejs.org/corepack/index.md)** () | Platform built on V8 to build network applications | corepack | 0.34.0 (+12) | `pkgx corepack` |
 | **[npmjs.com](./packages/npmjs.com/index.md)** (npm) | the package manager for JavaScript | npm, npx | 11.6.0 (+64) | `pkgx npm` |
@@ -253,7 +252,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## CLI Tools & Utilities
 
-*35 packages in this category*
+*34 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -286,12 +285,11 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[gnu.org/bash](./packages/gnu.org/bash/index.md)** () | Bourne-Again SHell, a UNIX command interpreter | bash, bashbug | 5.3.0 (+5) | `pkgx bash` |
 | **[gnu.org/wget](./packages/gnu.org/wget/index.md)** () | Internet file retriever | wget | 1.25.0 (+3) | `pkgx wget` |
 | **[htop.dev](./packages/htop.dev/index.md)** () | Improved top (interactive process viewer) | htop | 3.4.1 (+4) | `pkgx htop` |
-| **[ohmyposh.dev](./packages/ohmyposh.dev/index.md)** () | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.24.1 (+328) | `pkgx oh-my-posh` |
+| **[ohmyposh.dev](./packages/ohmyposh.dev/index.md)** () | The most customisable and low-latency cross platform/shell prompt renderer | oh-my-posh | 26.25.0 (+329) | `pkgx oh-my-posh` |
 | **[starship.rs](./packages/starship.rs/index.md)** () | ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell! | starship | 1.23.0 (+20) | `pkgx starship` |
 | **[stedolan.github.io/jq](./packages/stedolan.github.io/jq/index.md)** () | Lightweight and flexible command-line JSON processor | jq | 1.8.1 (+4) | `pkgx jq` |
 | **[tree-sitter.github.io](./packages/tree-sitter.github.io/index.md)** () | Parser generator tool and incremental parsing library | tree-sitter | 0.25.10 (+31) | `pkgx tree-sitter` |
 | **[wilfred.me.uk/difftastic](./packages/wilfred.me.uk/difftastic/index.md)** () | a structural diff that understands syntax 🟥🟩 | difft | 0.65.0 (+9) | `pkgx difft` |
-| **[zsh.sourceforge.io](./packages/zsh.sourceforge.io/index.md)** () | UNIX shell (command interpreter) | zsh | 5.9.0 (+0) | `pkgx zsh` |
 
 ## Networking
 
@@ -325,12 +323,12 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mkcert.dev](./packages/mkcert.dev/index.md)** () | A simple zero-config tool to make locally trusted development certificates with any names you&#39... | mkcert | 1.4.4 (+0) | `pkgx mkcert` |
 | **[openssl.org](./packages/openssl.org/index.md)** () | TLS/SSL and crypto library with QUIC APIs | openssl, c_rehash | 3.5.3 (+31) | `pkgx OpenSSL` |
 | **[orhun.dev/gpg-tui](./packages/orhun.dev/gpg-tui/index.md)** () | Manage your GnuPG keys with ease! 🔐 | gpg-tui | 0.11.1 (+2) | `pkgx gpg-tui` |
-| **[snyk.io](./packages/snyk.io/index.md)** () | Scans and monitors projects for security vulnerabilities | snyk | 1.1299.0 (+47) | `pkgx snyk` |
+| **[snyk.io](./packages/snyk.io/index.md)** () | Scans and monitors projects for security vulnerabilities | snyk | 1.1299.1 (+48) | `pkgx snyk` |
 | **[vaultproject.io](./packages/vaultproject.io/index.md)** () | A tool for secrets management, encryption as a service, and privileged access management | vault | 1.20.3 (+59) | `pkgx vault` |
 
 ## Multimedia
 
-*7 packages in this category*
+*6 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -340,7 +338,6 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mpv.io](./packages/mpv.io/index.md)** () | Media player based on MPlayer and mplayer2 | mpv | 0.40.0 (+2) | `pkgx mpv` |
 | **[sf.net/optipng](./packages/sf.net/optipng/index.md)** () | PNG file optimizer | optipng | 7.9.1 (+2) | `pkgx optipng` |
 | **[streamlink.github.io](./packages/streamlink.github.io/index.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 7.6.0 (+21) | `pkgx streamlink` |
-| **[yt-dlp.org](./packages/yt-dlp.org/index.md)** () | A feature-rich command-line audio/video downloader | yt-dlp | 2025.9.23 (+55) | `pkgx yt-dlp` |
 
 ## Graphics Libraries
 
