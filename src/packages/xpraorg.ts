@@ -8,7 +8,7 @@
  *
  * @install `launchpad install xpra`
  * @name `xpra`
- * @dependencies `pkgx.sh^1`, `python.org~3.11`, `cython.org`, ... (+6 more)
+ * @dependencies `pkgx.sh^1`, `python.org~3.11`, `tukaani.org/xz`, ... (+5 more)
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const xpraPackage = {
   dependencies: [
     'pkgx.sh^1',
     'python.org~3.11',
-    'cython.org',
     'tukaani.org/xz',
     'cairographics.org',
     'cairographics.org/pycairo@1.26.1',
