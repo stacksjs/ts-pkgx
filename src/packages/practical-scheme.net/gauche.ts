@@ -1,8 +1,7 @@
 /**
- * **practical-scheme.net/gauche** - R7RS Scheme implementation, developed to be a handy script interpreter
+ * **practical-scheme.net/gauche** - pkgx package
  *
  * @domain `practical-scheme.net/gauche`
- * @programs `gauche-cesconv`, `gauche-config`, `gauche-install`, `gauche-package`, `gosh`
  * @version `0.9.15` (2 versions available)
  * @versions From newest version to oldest.
  *
@@ -15,8 +14,6 @@
  *
  * const pkg = pantry.practicalschemenetgauche
  * console.log(pkg.name)        // "practical-scheme.net/gauche"
- * console.log(pkg.description) // "R7RS Scheme implementation, developed to be a h..."
- * console.log(pkg.programs)    // ["gauche-cesconv", "gauche-config", ...]
  * console.log(pkg.versions[0]) // "0.9.15" (latest)
  * ```
  *
@@ -35,7 +32,7 @@ export const practicalschemenetgauchePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'R7RS Scheme implementation, developed to be a handy script interpreter' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/practical-scheme.net/gauche/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
@@ -44,17 +41,7 @@ export const practicalschemenetgauchePackage = {
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install practical-scheme.net/gauche' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'gauche-cesconv',
-    'gauche-config',
-    'gauche-install',
-    'gauche-package',
-    'gosh',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.

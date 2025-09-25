@@ -3,7 +3,7 @@
  *
  * @domain `asciinema.org/agg`
  * @programs `agg`
- * @version `1.5.0` (2 versions available)
+ * @version `1.6.0` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install agg`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "agg"
  * console.log(pkg.description) // "Asciicast to GIF converter"
  * console.log(pkg.programs)    // ["agg"]
- * console.log(pkg.versions[0]) // "1.5.0" (latest)
+ * console.log(pkg.versions[0]) // "1.6.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/asciinema-org/agg.md
@@ -69,6 +69,7 @@ export const aggPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.6.0',
     '1.5.0',
     '1.4.3',
   ] as const,
