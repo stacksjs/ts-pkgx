@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/ducker`
  * @programs `ducker`
- * @version `0.4.1` (4 versions available)
+ * @version `0.4.2` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ducker`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "ducker"
  * console.log(pkg.description) // "A slightly quackers Docker TUI based on k9s 🦆"
  * console.log(pkg.programs)    // ["ducker"]
- * console.log(pkg.versions[0]) // "0.4.1" (latest)
+ * console.log(pkg.versions[0]) // "0.4.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/ducker.md
@@ -62,6 +62,7 @@ export const duckerPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.4.2',
     '0.4.1',
     '0.4.0',
     '0.3.1',
