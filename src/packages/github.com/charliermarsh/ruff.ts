@@ -2,7 +2,7 @@
  * **github.com/charliermarsh/ruff** - An extremely fast Python linter and code formatter, written in Rust.
  *
  * @domain `github.com/charliermarsh/ruff`
- * @version `0.13.1` (164 versions available)
+ * @version `0.13.2` (165 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/charliermarsh/ruff`
@@ -14,7 +14,7 @@
  * const pkg = pantry.githubcomcharliermarshruff
  * console.log(pkg.name)        // "github.com/charliermarsh/ruff"
  * console.log(pkg.description) // "An extremely fast Python linter and code format..."
- * console.log(pkg.versions[0]) // "0.13.1" (latest)
+ * console.log(pkg.versions[0]) // "0.13.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/charliermarsh/ruff.md
@@ -49,6 +49,7 @@ export const githubcomcharliermarshruffPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.13.2',
     '0.13.1',
     '0.13.0',
     '0.12.12',

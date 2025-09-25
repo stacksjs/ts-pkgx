@@ -114,7 +114,6 @@ export const aliases: Record<string, string> = {
   'carthage': 'github.com/Carthage/Carthage',
   'cask': 'cask.readthedocs.io',
   'cavif': 'crates.io/cavif',
-  'cbindgen': 'mozilla.org/cbindgen',
   'ccache': 'ccache.dev',
   'cdk': 'aws.amazon.com/cdk',
   'cdktf': 'terraform.io/cdk',
