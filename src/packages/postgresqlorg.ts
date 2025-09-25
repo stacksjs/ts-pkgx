@@ -3,7 +3,7 @@
  *
  * @domain `postgresql.org`
  * @programs `clusterdb`, `createdb`, `dropdb`, `dropuser`, `ecpg`, ... (+23 more)
- * @version `17.2.0` (12 versions available)
+ * @version `18.0.0` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install postgresql.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "postgresql.org"
  * console.log(pkg.description) // "Mirror of the official PostgreSQL GIT repositor..."
  * console.log(pkg.programs)    // ["clusterdb", "createdb", ...]
- * console.log(pkg.versions[0]) // "17.2.0" (latest)
+ * console.log(pkg.versions[0]) // "18.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/postgresql-org.md
@@ -97,6 +97,7 @@ export const postgresqlorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '18.0.0',
     '17.2.0',
     '17.0.0',
     '16.1.0',

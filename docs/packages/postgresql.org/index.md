@@ -52,21 +52,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 12 versions</summary>
+<summary>Show all 13 versions</summary>
 
-- `17.2.0`, `17.0.0`, `16.1.0`, `16.0.0`, `15.2.0`
-- `14.7.0`, `13.12.0`, `13.11.0`, `13.9.0`, `13.1.0`
-- `12.14.0`, `11.19.0`
+- `18.0.0`, `17.2.0`, `17.0.0`, `16.1.0`, `16.0.0`
+- `15.2.0`, `14.7.0`, `13.12.0`, `13.11.0`, `13.9.0`
+- `13.1.0`, `12.14.0`, `11.19.0`
 
 </details>
 
-**Latest Version**: `17.2.0`
+**Latest Version**: `18.0.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +postgresql.org@17.2.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +postgresql.org@18.0.0 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -3,7 +3,7 @@
  *
  * @domain `github.com/abiosoft/colima`
  * @programs `colima`
- * @version `0.9.0` (26 versions available)
+ * @version `0.9.1` (27 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install colima`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "colima"
  * console.log(pkg.description) // "Container runtimes on macOS (and Linux) with mi..."
  * console.log(pkg.programs)    // ["colima"]
- * console.log(pkg.versions[0]) // "0.9.0" (latest)
+ * console.log(pkg.versions[0]) // "0.9.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/abiosoft/colima.md
@@ -69,6 +69,7 @@ export const colimaPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.9.1',
     '0.9.0',
     '0.8.4',
     '0.8.3',

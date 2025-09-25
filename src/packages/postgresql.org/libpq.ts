@@ -2,7 +2,7 @@
  * **postgresql.org/libpq** - pkgx package
  *
  * @domain `postgresql.org/libpq`
- * @version `17.0.0` (4 versions available)
+ * @version `18.0.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install postgresql.org/libpq`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.postgresqlorglibpq
  * console.log(pkg.name)        // "postgresql.org/libpq"
- * console.log(pkg.versions[0]) // "17.0.0" (latest)
+ * console.log(pkg.versions[0]) // "18.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/postgresql-org/libpq.md
@@ -60,6 +60,7 @@ export const postgresqlorglibpqPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '18.0.0',
     '17.0.0',
     '16.1.0',
     '16.0.0',
