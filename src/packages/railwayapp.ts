@@ -3,7 +3,7 @@
  *
  * @domain `railway.app`
  * @programs `railway`
- * @version `4.8.0` (59 versions available)
+ * @version `4.9.0` (60 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install railway`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "railway"
  * console.log(pkg.description) // "Develop and deploy code with zero configuration"
  * console.log(pkg.programs)    // ["railway"]
- * console.log(pkg.versions[0]) // "4.8.0" (latest)
+ * console.log(pkg.versions[0]) // "4.9.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/railway-app.md
@@ -62,6 +62,7 @@ export const railwayPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.9.0',
     '4.8.0',
     '4.7.3',
     '4.6.3',

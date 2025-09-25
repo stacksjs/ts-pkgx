@@ -1140,7 +1140,7 @@ import { mongoshPackage } from './mongodb.com/shell'
 import { mongodbcomPackage } from './mongodbcom'
 import { moonPackage } from './moonrepo.dev/moon'
 import { moshPackage } from './moshorg'
-import { mozillaorgcbindgenPackage } from './mozilla.org/cbindgen'
+import { cbindgenPackage } from './mozilla.org/cbindgen'
 import { mozillaorgmozjpegPackage } from './mozilla.org/mozjpeg'
 import { nsprconfigPackage } from './mozilla.org/nspr'
 import { mozillaorgnssPackage } from './mozilla.org/nss'
@@ -3601,8 +3601,8 @@ export interface Pantry {
 
   moonrepodev: typeof moonPackage
   moshorg: typeof moshPackage
-  cbindgen: typeof mozillaorgcbindgenPackage
-  mozillaorgcbindgen: typeof mozillaorgcbindgenPackage
+
+  mozillaorgcbindgen: typeof cbindgenPackage
   mozjpeg: typeof mozillaorgmozjpegPackage
   mozillaorgmozjpeg: typeof mozillaorgmozjpegPackage
   nspr: typeof nsprconfigPackage
@@ -5406,6 +5406,7 @@ export interface Pantry {
   vault: typeof vaultPackage
   k9s: typeof k9sPackage
   'code-server': typeof codeserverPackage
+  cbindgen: typeof cbindgenPackage
   'nspr-config': typeof nsprconfigPackage
   synth: typeof synthPackage
   'suite-sparse': typeof suitesparsePackage
@@ -7427,8 +7428,8 @@ export const pantry: Pantry = {
 
   moonrepodev: moonPackage,
   moshorg: moshPackage,
-  cbindgen: mozillaorgcbindgenPackage,
-  mozillaorgcbindgen: mozillaorgcbindgenPackage,
+
+  mozillaorgcbindgen: cbindgenPackage,
   mozjpeg: mozillaorgmozjpegPackage,
   mozillaorgmozjpeg: mozillaorgmozjpegPackage,
   nspr: nsprconfigPackage,
@@ -9232,6 +9233,7 @@ export const pantry: Pantry = {
   vault: vaultPackage,
   k9s: k9sPackage,
   'code-server': codeserverPackage,
+  cbindgen: cbindgenPackage,
   'nspr-config': nsprconfigPackage,
   synth: synthPackage,
   'suite-sparse': suitesparsePackage,
