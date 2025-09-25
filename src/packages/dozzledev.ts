@@ -3,7 +3,7 @@
  *
  * @domain `dozzle.dev`
  * @programs `dozzle`
- * @version `8.14.1` (75 versions available)
+ * @version `8.14.2` (76 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dozzle`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "dozzle"
  * console.log(pkg.description) // "Realtime log viewer for docker containers."
  * console.log(pkg.programs)    // ["dozzle"]
- * console.log(pkg.versions[0]) // "8.14.1" (latest)
+ * console.log(pkg.versions[0]) // "8.14.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/dozzle-dev.md
@@ -62,6 +62,7 @@ export const dozzlePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '8.14.2',
     '8.14.1',
     '8.14.0',
     '8.13.14',
