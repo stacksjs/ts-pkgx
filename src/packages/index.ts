@@ -1290,7 +1290,7 @@ import { goosePackage } from './pressly.github.io/goose'
 import { prettierPackage } from './prettierio'
 import { fendPackage } from './printfn.github.io/fend'
 import { geniPackage } from './priver.dev/geni'
-import { projectcopaceticgithubioPackage } from './project-copaceticgithubio'
+import { copaPackage } from './project-copaceticgithubio'
 import { nucleiPackage } from './projectdiscovery.io/nuclei'
 import { projenPackage } from './projenio'
 import { projPackage } from './projorg'
@@ -3821,8 +3821,8 @@ export interface Pantry {
   printfngithubiofend: typeof fendPackage
 
   priverdevgeni: typeof geniPackage
-  project_copaceticgithubio: typeof projectcopaceticgithubioPackage
-  projectcopaceticgithubio: typeof projectcopaceticgithubioPackage
+  project_copaceticgithubio: typeof copaPackage
+  projectcopaceticgithubio: typeof copaPackage
 
   projectdiscoveryionuclei: typeof nucleiPackage
   projenio: typeof projenPackage
@@ -4335,6 +4335,7 @@ export interface Pantry {
   'pyqt-bundle': typeof pyqtbundlePackage
   'sip-install': typeof sipinstallPackage
   plistutil: typeof plistutilPackage
+  copa: typeof copaPackage
   prettyping: typeof prettypingPackage
   dexios: typeof dexiosPackage
   s3cmd: typeof s3cmdPackage
@@ -7647,8 +7648,8 @@ export const pantry: Pantry = {
   printfngithubiofend: fendPackage,
 
   priverdevgeni: geniPackage,
-  project_copaceticgithubio: projectcopaceticgithubioPackage,
-  projectcopaceticgithubio: projectcopaceticgithubioPackage,
+  project_copaceticgithubio: copaPackage,
+  projectcopaceticgithubio: copaPackage,
 
   projectdiscoveryionuclei: nucleiPackage,
   projenio: projenPackage,
@@ -8161,6 +8162,7 @@ export const pantry: Pantry = {
   'pyqt-bundle': pyqtbundlePackage,
   'sip-install': sipinstallPackage,
   plistutil: plistutilPackage,
+  copa: copaPackage,
   prettyping: prettypingPackage,
   dexios: dexiosPackage,
   s3cmd: s3cmdPackage,
