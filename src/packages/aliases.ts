@@ -1117,7 +1117,6 @@ export const aliases: Record<string, string> = {
   'yasm': 'yasm.tortall.net',
   'yazi': 'github.com/sxyazi/yazi',
   'ykman': 'developers.yubico.com/yubikey-manager',
-  'youtube-dl': 'youtube-dl.org',
   'yt-dlp': 'yt-dlp.org',
   'yubikey-agent': 'filippo.io/yubikey-agent',
   'yubikey-manager': 'developers.yubico.com/yubikey-manager',

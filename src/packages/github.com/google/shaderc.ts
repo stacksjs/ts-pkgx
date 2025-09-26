@@ -3,7 +3,7 @@
  *
  * @domain `github.com/google/shaderc`
  * @programs `glslc`
- * @version `2025.3.0` (9 versions available)
+ * @version `2025.4.0` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install glslc`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "glslc"
  * console.log(pkg.description) // "A collection of tools, libraries, and tests for..."
  * console.log(pkg.programs)    // ["glslc"]
- * console.log(pkg.versions[0]) // "2025.3.0" (latest)
+ * console.log(pkg.versions[0]) // "2025.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/google/shaderc.md
@@ -62,6 +62,7 @@ export const glslcPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2025.4.0',
     '2025.3.0',
     '2025.2.0',
     '2025.1.0',

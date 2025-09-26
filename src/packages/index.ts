@@ -1593,7 +1593,7 @@ import { xvidcomPackage } from './xvidcom'
 import { yadmPackage } from './yadmio'
 import { yarnPackage } from './yarnpkgcom'
 import { yasmPackage } from './yasmtortallnet'
-import { youtubedlPackage } from './youtube-dlorg'
+import { youtubedlorgPackage } from './youtube-dlorg'
 import { ytdlpPackage } from './yt-dlporg'
 import { yuicompressorPackage } from './yui.github.io/yuicompressor'
 import { zarfPackage } from './zarfdev'
@@ -4283,8 +4283,8 @@ export interface Pantry {
   yadmio: typeof yadmPackage
   yarnpkgcom: typeof yarnPackage
   yasmtortallnet: typeof yasmPackage
-  youtube_dlorg: typeof youtubedlPackage
-  youtubedlorg: typeof youtubedlPackage
+  youtube_dlorg: typeof youtubedlorgPackage
+  youtubedlorg: typeof youtubedlorgPackage
   yt_dlporg: typeof ytdlpPackage
   ytdlporg: typeof ytdlpPackage
 
@@ -4838,7 +4838,6 @@ export interface Pantry {
   'microcks-cli': typeof microckscliPackage
   gqlgen: typeof gqlgenPackage
   traefik: typeof traefikPackage
-  'youtube-dl': typeof youtubedlPackage
   metis: typeof metisPackage
   kpt: typeof kptPackage
   rye: typeof ryePackage
@@ -8110,8 +8109,8 @@ export const pantry: Pantry = {
   yadmio: yadmPackage,
   yarnpkgcom: yarnPackage,
   yasmtortallnet: yasmPackage,
-  youtube_dlorg: youtubedlPackage,
-  youtubedlorg: youtubedlPackage,
+  youtube_dlorg: youtubedlorgPackage,
+  youtubedlorg: youtubedlorgPackage,
   yt_dlporg: ytdlpPackage,
   ytdlporg: ytdlpPackage,
 
@@ -8665,7 +8664,6 @@ export const pantry: Pantry = {
   'microcks-cli': microckscliPackage,
   gqlgen: gqlgenPackage,
   traefik: traefikPackage,
-  'youtube-dl': youtubedlPackage,
   metis: metisPackage,
   kpt: kptPackage,
   rye: ryePackage,

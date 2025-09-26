@@ -3,7 +3,7 @@
  *
  * @domain `khronos.org/SPIRV-Tools`
  * @programs `spirv-as`, `spirv-cfg`, `spirv-dis`, `spirv-lesspipe.sh`, `spirv-link`, ... (+5 more)
- * @version `2025.1.0` (4 versions available)
+ * @version `2025.4.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install spirv`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "spirv"
  * console.log(pkg.description) // "API and commands for processing SPIR-V modules"
  * console.log(pkg.programs)    // ["spirv-as", "spirv-cfg", ...]
- * console.log(pkg.versions[0]) // "2025.1.0" (latest)
+ * console.log(pkg.versions[0]) // "2025.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/khronos-org/SPIRV-Tools.md
@@ -71,6 +71,7 @@ export const spirvPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2025.4.0',
     '2025.1.0',
     '2024.3.0',
     '2024.2.0',

@@ -34,19 +34,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `2025.1.0`, `2024.3.0`, `2024.2.0`, `2024.1.0`
+- `2025.4.0`, `2025.1.0`, `2024.3.0`, `2024.2.0`, `2024.1.0`
 
 </details>
 
-**Latest Version**: `2025.1.0`
+**Latest Version**: `2025.4.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +khronos.org/SPIRV-Tools@2025.1.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +khronos.org/SPIRV-Tools@2025.4.0 -- $SHELL -i
 ```
 
 ## Usage Examples
