@@ -1016,7 +1016,7 @@ import { kluctlPackage } from './kluctlio'
 import { koPackage } from './kobuild'
 import { dssimPackage } from './kornel.ski/dssim'
 import { kotlinlangorgPackage } from './kotlinlangorg'
-import { koyebcomPackage } from './koyebcom'
+import { koyebPackage } from './koyebcom'
 import { kptPackage } from './kptdev'
 import { kubectlkrewPackage } from './krewsigsk8sio'
 import { ktlintPackage } from './ktlintgithubio'
@@ -3431,7 +3431,7 @@ export interface Pantry {
 
   kornelskidssim: typeof dssimPackage
   kotlinlangorg: typeof kotlinlangorgPackage
-  koyebcom: typeof koyebcomPackage
+  koyebcom: typeof koyebPackage
   kptdev: typeof kptPackage
   krewsigsk8sio: typeof kubectlkrewPackage
   ktlintgithubio: typeof ktlintPackage
@@ -4940,6 +4940,7 @@ export interface Pantry {
   vdpau: typeof vdpauPackage
   'pcap-config': typeof pcapconfigPackage
   rust: typeof rustPackage
+  koyeb: typeof koyebPackage
   rist: typeof ristPackage
   dav1d: typeof dav1dPackage
   numbat: typeof numbatPackage
@@ -7257,7 +7258,7 @@ export const pantry: Pantry = {
 
   kornelskidssim: dssimPackage,
   kotlinlangorg: kotlinlangorgPackage,
-  koyebcom: koyebcomPackage,
+  koyebcom: koyebPackage,
   kptdev: kptPackage,
   krewsigsk8sio: kubectlkrewPackage,
   ktlintgithubio: ktlintPackage,
@@ -8766,6 +8767,7 @@ export const pantry: Pantry = {
   vdpau: vdpauPackage,
   'pcap-config': pcapconfigPackage,
   rust: rustPackage,
+  koyeb: koyebPackage,
   rist: ristPackage,
   dav1d: dav1dPackage,
   numbat: numbatPackage,

@@ -494,6 +494,7 @@ export const aliases: Record<string, string> = {
   'killport': 'crates.io/killport',
   'kind': 'kind.sigs.k8s.io',
   'kluctl': 'kluctl.io',
+  'koyeb': 'koyeb.com',
   'kpt': 'kpt.dev',
   'krampus': 'idleberg.github.io/krampus',
   'ksops': 'viaduct.ai/ksops',
