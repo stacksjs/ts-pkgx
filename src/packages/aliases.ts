@@ -166,7 +166,6 @@ export const aliases: Record<string, string> = {
   'container-structure-test': 'github.com/GoogleContainerTools/container-structure-test',
   'convco': 'convco.github.io',
   'cookiecutter': 'github.com/cookiecutter/cookiecutter',
-  'copa': 'project-copacetic.github.io',
   'coredns': 'coredns.io',
   'corepack': 'nodejs.org/corepack',
   'cosign': 'sigstore.dev/cosign',
