@@ -3,7 +3,7 @@
  *
  * @domain `grpc.io`
  * @programs `grpc_csharp_plugin`, `grpc_node_plugin`, `grpc_cpp_plugin`, `grpc_python_plugin`, `grpc_objective_c_plugin`, ... (+3 more)
- * @version `1.75.0` (51 versions available)
+ * @version `1.75.1` (52 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install grpc`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "grpc"
  * console.log(pkg.description) // "The C based gRPC (C++, Python, Ruby, Objective-..."
  * console.log(pkg.programs)    // ["grpc_csharp_plugin", "grpc_node_plugin", ...]
- * console.log(pkg.versions[0]) // "1.75.0" (latest)
+ * console.log(pkg.versions[0]) // "1.75.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/grpc-io.md
@@ -83,6 +83,7 @@ export const grpcPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.75.1',
     '1.75.0',
     '1.74.1',
     '1.74.0',
