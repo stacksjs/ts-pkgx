@@ -448,7 +448,7 @@ import { safehashesPackage } from './github.com/Cyfrin/safe-tx-hashes-util'
 import { redfishtoolPackage } from './github.com/DMTF/redfishtool'
 import { githubcomdaandemeyerreprocPackage } from './github.com/DaanDeMeyer/reproc'
 import { githubcomdavegamblecjsonPackage } from './github.com/DaveGamble/cJSON'
-import { usquePackage } from './github.com/Diniboy1123/usque'
+import { githubcomdiniboy1123usquePackage } from './github.com/Diniboy1123/usque'
 import { githubcomesrilercPackage } from './github.com/Esri/lerc'
 import { githubcomeverduin94bettercommitsPackage } from './github.com/Everduin94/better-commits'
 import { pstreePackage } from './github.com/FredHucht/pstree'
@@ -2361,8 +2361,8 @@ export interface Pantry {
   githubcomdaandemeyer: typeof githubcomdaandemeyerreprocPackage
   cJSON: typeof githubcomdavegamblecjsonPackage
   githubcomdavegamble: typeof githubcomdavegamblecjsonPackage
-
-  githubcomdiniboy1123: typeof usquePackage
+  usque: typeof githubcomdiniboy1123usquePackage
+  githubcomdiniboy1123: typeof githubcomdiniboy1123usquePackage
   lerc: typeof githubcomesrilercPackage
   githubcomesri: typeof githubcomesrilercPackage
   better_commits: typeof githubcomeverduin94bettercommitsPackage
@@ -5085,7 +5085,7 @@ export interface Pantry {
   wasmer: typeof wasmerPackage
   syncthing: typeof syncthingPackage
   xcparse: typeof xcparsePackage
-  usque: typeof usquePackage
+  Diniboy1123: typeof githubcomdiniboy1123usquePackage
   starpls: typeof starplsPackage
   sndfile: typeof sndfilePackage
   complexity: typeof complexityPackage
@@ -6188,8 +6188,8 @@ export const pantry: Pantry = {
   githubcomdaandemeyer: githubcomdaandemeyerreprocPackage,
   cJSON: githubcomdavegamblecjsonPackage,
   githubcomdavegamble: githubcomdavegamblecjsonPackage,
-
-  githubcomdiniboy1123: usquePackage,
+  usque: githubcomdiniboy1123usquePackage,
+  githubcomdiniboy1123: githubcomdiniboy1123usquePackage,
   lerc: githubcomesrilercPackage,
   githubcomesri: githubcomesrilercPackage,
   better_commits: githubcomeverduin94bettercommitsPackage,
@@ -8912,7 +8912,7 @@ export const pantry: Pantry = {
   wasmer: wasmerPackage,
   syncthing: syncthingPackage,
   xcparse: xcparsePackage,
-  usque: usquePackage,
+  Diniboy1123: githubcomdiniboy1123usquePackage,
   starpls: starplsPackage,
   sndfile: sndfilePackage,
   complexity: complexityPackage,

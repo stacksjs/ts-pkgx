@@ -3,7 +3,7 @@
  *
  * @domain `creativeprojects.github.io/resticprofile`
  * @programs `resticprofile`
- * @version `0.31.0` (8 versions available)
+ * @version `0.32.0` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install resticprofile`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "resticprofile"
  * console.log(pkg.description) // "Configuration profiles manager and scheduler fo..."
  * console.log(pkg.programs)    // ["resticprofile"]
- * console.log(pkg.versions[0]) // "0.31.0" (latest)
+ * console.log(pkg.versions[0]) // "0.32.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/creativeprojects-github-io/resticprofile.md
@@ -69,6 +69,7 @@ export const resticprofilePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.32.0',
     '0.31.0',
     '0.30.1',
     '0.30.0',
