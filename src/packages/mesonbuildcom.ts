@@ -3,7 +3,7 @@
  *
  * @domain `mesonbuild.com`
  * @programs `meson`
- * @version `1.9.1` (32 versions available)
+ * @version `1.9.1` (33 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install meson`
@@ -71,6 +71,7 @@ export const mesonPackage = {
   versions: [
     '1.9.1',
     '1.9.0',
+    '1.8.5',
     '1.8.4',
     '1.8.3',
     '1.8.2',
