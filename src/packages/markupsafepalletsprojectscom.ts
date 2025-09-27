@@ -2,7 +2,7 @@
  * **markupsafe.palletsprojects.com** - Safely add untrusted strings to HTML/XML markup.
  *
  * @domain `markupsafe.palletsprojects.com`
- * @version `3.0.2` (6 versions available)
+ * @version `3.0.3` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install markupsafe.palletsprojects.com`
@@ -15,7 +15,7 @@
  * const pkg = pantry.markupsafepalletsprojectscom
  * console.log(pkg.name)        // "markupsafe.palletsprojects.com"
  * console.log(pkg.description) // "Safely add untrusted strings to HTML/XML markup."
- * console.log(pkg.versions[0]) // "3.0.2" (latest)
+ * console.log(pkg.versions[0]) // "3.0.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/markupsafe-palletsprojects-com.md
@@ -56,6 +56,7 @@ export const markupsafepalletsprojectscomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.0.3',
     '3.0.2',
     '3.0.1',
     '3.0.0',

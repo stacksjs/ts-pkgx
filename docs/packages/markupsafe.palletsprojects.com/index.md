@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 6 versions</summary>
+<summary>Show all 7 versions</summary>
 
-- `3.0.2`, `3.0.1`, `3.0.0`, `2.1.5`, `2.1.4`
-- `2.1.3`
+- `3.0.3`, `3.0.2`, `3.0.1`, `3.0.0`, `2.1.5`
+- `2.1.4`, `2.1.3`
 
 </details>
 
-**Latest Version**: `3.0.2`
+**Latest Version**: `3.0.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +markupsafe.palletsprojects.com@3.0.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +markupsafe.palletsprojects.com@3.0.3 -- $SHELL -i
 ```
 
 ## Dependencies
