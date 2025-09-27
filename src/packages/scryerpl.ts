@@ -3,7 +3,7 @@
  *
  * @domain `scryer.pl`
  * @programs `scryer-prolog`
- * @version `0.9.4` (1 versions available)
+ * @version `0.10.0` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install scryer-prolog`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "scryer-prolog"
  * console.log(pkg.description) // "Modern ISO Prolog implementation written mostly..."
  * console.log(pkg.programs)    // ["scryer-prolog"]
- * console.log(pkg.versions[0]) // "0.9.4" (latest)
+ * console.log(pkg.versions[0]) // "0.10.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/scryer-pl.md
@@ -69,6 +69,7 @@ export const scryerprologPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.10.0',
     '0.9.4',
   ] as const,
   /**
