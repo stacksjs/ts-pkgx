@@ -3,7 +3,7 @@
  *
  * @domain `leptonica.org`
  * @programs `convertfilestopdf`, `convertfilestops`, `convertformat`, `convertsegfilestopdf`, `convertsegfilestops`, ... (+5 more)
- * @version `1.85.0` (4 versions available)
+ * @version `1.86.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install leptonica.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "leptonica.org"
  * console.log(pkg.description) // "Leptonica is an open source library containing ..."
  * console.log(pkg.programs)    // ["convertfilestopdf", "convertfilestops", ...]
- * console.log(pkg.versions[0]) // "1.85.0" (latest)
+ * console.log(pkg.versions[0]) // "1.86.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/leptonica-org.md
@@ -78,6 +78,7 @@ export const leptonicaorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.86.0',
     '1.85.0',
     '1.84.1',
     '1.84.0',
