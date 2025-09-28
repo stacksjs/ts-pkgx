@@ -3,7 +3,7 @@
  *
  * @domain `openapi-generator.tech`
  * @programs `openapi-generator`
- * @version `7.15.0` (14 versions available)
+ * @version `7.16.0` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openapi-generator`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "openapi-generator"
  * console.log(pkg.description) // "OpenAPI Generator allows generation of API clie..."
  * console.log(pkg.programs)    // ["openapi-generator"]
- * console.log(pkg.versions[0]) // "7.15.0" (latest)
+ * console.log(pkg.versions[0]) // "7.16.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openapi-generator-tech.md
@@ -69,6 +69,7 @@ export const openapigeneratorPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '7.16.0',
     '7.15.0',
     '7.14.0',
     '7.13.0',
