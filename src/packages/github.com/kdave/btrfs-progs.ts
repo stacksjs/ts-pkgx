@@ -3,7 +3,7 @@
  *
  * @domain `github.com/kdave/btrfs-progs`
  * @programs `btrfs`, `btrfsck`, `btrfs-convert`, `btrfs-find-root`, `btrfs-image`, ... (+5 more)
- * @version `6.16.1` (15 versions available)
+ * @version `6.17.0` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/kdave/btrfs-progs`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "github.com/kdave/btrfs-progs"
  * console.log(pkg.description) // "Userspace utilities to manage btrfs filesystems"
  * console.log(pkg.programs)    // ["btrfs", "btrfsck", ...]
- * console.log(pkg.versions[0]) // "6.16.1" (latest)
+ * console.log(pkg.versions[0]) // "6.17.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/kdave/btrfs-progs.md
@@ -79,6 +79,7 @@ export const githubcomkdavebtrfsprogsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '6.17.0',
     '6.16.1',
     '6.16.0',
     '6.15.0',
