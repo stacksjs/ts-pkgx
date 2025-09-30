@@ -141,4 +141,4 @@ export interface FetchPkgxPackageOptions {
   url?: string
 }
 
-export type { Packages, Pantry } from './packages'
+export type { Packages } from './packages'

@@ -8,8 +8,8 @@ import { aliases } from './packages/aliases'
 // Create a dynamic packages loader function instead of importing the static packages object
 async function loadPackages(): Promise<Record<string, any>> {
   try {
-    const { pantry } = await import('./packages')
-    return pantry as Record<string, any>
+    const { packages } = await import('./packages')
+    return packages as Record<string, any>
   }
   catch {
     // Return empty object if packages aren't generated yet

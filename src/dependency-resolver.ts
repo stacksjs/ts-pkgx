@@ -207,18 +207,18 @@ export async function getAvailableVersionsForPackage(packageName: string, packag
 async function getAvailableVersionsFromPackage(packageName: string): Promise<string[]> {
   try {
     // Import the package index to get access to the generated packages
-    const { pantry } = await import('./packages/index.js').catch(() => import('./index.js'))
+    const { packages } = await import('./packages/index.js').catch(() => import('./index.js'))
 
     // Convert domain to package key
     const packageKey = packageName.replace(/[^a-z0-9]/gi, '').toLowerCase()
 
     // Try to find the package in the pantry
-    let pkg = (pantry as any)[packageKey]
+    let pkg = (packages as any)[packageKey]
 
     // If direct key lookup fails, try searching by domain
     if (!pkg) {
-      const packages = Object.values(pantry as any)
-      pkg = packages.find((p: any) => p.domain === packageName)
+      const allPackages = Object.values(packages as any)
+      pkg = allPackages.find((p: any) => p.domain === packageName)
     }
 
     if (pkg && pkg.versions && Array.isArray(pkg.versions)) {
@@ -393,13 +393,13 @@ export function compareVersions(version1: string, version2: string): number {
 async function readPackageInfo(packageName: string): Promise<Partial<PkgxPackage> | null> {
   try {
     // Import the package index to get access to the generated packages
-    const { pantry } = await import('./packages/index.js').catch(() => import('./index.js'))
+    const { packages } = await import('./packages/index.js').catch(() => import('./index.js'))
 
     // Convert domain to package key (e.g., bun.sh -> bunsh, github.com/user/repo -> githubcomuserrepo)
     const packageKey = packageName.replace(/[^a-z0-9]/gi, '').toLowerCase()
 
     // Try to find the package in the pantry
-    const pkg = (pantry as any)[packageKey]
+    const pkg = (packages as any)[packageKey]
 
     if (pkg) {
       return {
@@ -409,8 +409,8 @@ async function readPackageInfo(packageName: string): Promise<Partial<PkgxPackage
     }
 
     // If direct key lookup fails, try searching by domain
-    const packages = Object.values(pantry as any)
-    const foundPkg = packages.find((p: any) => p.domain === packageName)
+    const allPackages = Object.values(packages as any)
+    const foundPkg = allPackages.find((p: any) => p.domain === packageName)
 
     if (foundPkg) {
       return {

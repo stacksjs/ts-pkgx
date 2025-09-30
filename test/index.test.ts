@@ -1,16 +1,13 @@
-import type { Packages, Pantry } from '../src/index'
+import type { Packages } from '../src/index'
 import { describe, expect, test } from 'bun:test'
 import { aliases } from '../src/packages/aliases'
-import { pantry } from '../src/packages/index'
-
-// Create packages object for compatibility
-const packages = pantry
+import { packages } from '../src/packages/index'
 
 describe('Index Module', () => {
   describe('Main Exports', () => {
-    test('should export pantry object', () => {
-      expect(pantry).toBeDefined()
-      expect(typeof pantry).toBe('object')
+    test('should export packages object', () => {
+      expect(packages).toBeDefined()
+      expect(typeof packages).toBe('object')
     })
 
     test('should export packages object', () => {
@@ -26,10 +23,10 @@ describe('Index Module', () => {
   })
 
   describe('Type Exports', () => {
-    test('should export Pantry type', () => {
+    test('should export Packages type', () => {
       // Test that the type exists by creating a variable of that type
-      const testPantry: Pantry = pantry
-      expect(testPantry).toBeDefined()
+      const testPackages: Packages = packages
+      expect(testPackages).toBeDefined()
     })
 
     test('should export Packages type', () => {
@@ -39,23 +36,23 @@ describe('Index Module', () => {
     })
   })
 
-  describe('Pantry Object Structure', () => {
+  describe('Packages Object Structure', () => {
     test('should have package properties', () => {
-      const pantryKeys = Object.keys(pantry)
-      expect(pantryKeys.length).toBeGreaterThan(0)
+      const packagesKeys = Object.keys(packages)
+      expect(packagesKeys.length).toBeGreaterThan(0)
 
       // Check that at least some common packages exist
-      const hasNodejs = pantryKeys.some(key => key.includes('nodejs') || key.includes('node'))
-      const hasPython = pantryKeys.some(key => key.includes('python'))
+      const hasNodejs = packagesKeys.some(key => key.includes('nodejs') || key.includes('node'))
+      const hasPython = packagesKeys.some(key => key.includes('python'))
 
       expect(hasNodejs || hasPython).toBe(true)
     })
 
     test('should have consistent package structure', () => {
-      const pantryKeys = Object.keys(pantry)
+      const packagesKeys = Object.keys(packages)
 
-      if (pantryKeys.length > 0) {
-        const firstPackage = pantry[pantryKeys[0] as keyof typeof pantry]
+      if (packagesKeys.length > 0) {
+        const firstPackage = packages[packagesKeys[0] as keyof typeof packages]
 
         // Check that package has expected properties
         expect(firstPackage).toHaveProperty('name')
@@ -98,19 +95,19 @@ describe('Index Module', () => {
       }
     })
 
-    test('should match pantry structure', () => {
-      const pantryKeys = Object.keys(pantry)
+    test('should match packages structure', () => {
+      const packagesKeys = Object.keys(packages)
       const packageKeys = Object.keys(packages)
 
       // Both should have the same number of entries
-      expect(pantryKeys.length).toBe(packageKeys.length)
+      expect(packagesKeys.length).toBe(packageKeys.length)
 
       // Both should reference the same packages
-      if (pantryKeys.length > 0 && packageKeys.length > 0) {
-        const firstPantryPackage = pantry[pantryKeys[0] as keyof typeof pantry]
-        const firstPackagesPackage = packages[packageKeys[0] as keyof typeof packages]
+      if (packagesKeys.length > 0 && packageKeys.length > 0) {
+        const firstPackagesPackage = packages[packagesKeys[0] as keyof typeof packages]
+        const firstPackagePackage = packages[packageKeys[0] as keyof typeof packages]
 
-        expect(firstPantryPackage.domain).toBe(firstPackagesPackage.domain)
+        expect(firstPackagesPackage.domain).toBe(firstPackagePackage.domain)
       }
     })
   })
@@ -156,24 +153,24 @@ describe('Index Module', () => {
 
   describe('Integration Tests', () => {
     test('should have consistent data across exports', () => {
-      const pantryKeys = Object.keys(pantry)
+      const packagesKeys = Object.keys(packages)
       const packageKeys = Object.keys(packages)
       const aliasValues = Object.values(aliases)
 
       // All exports should be non-empty
-      expect(pantryKeys.length).toBeGreaterThan(0)
+      expect(packagesKeys.length).toBeGreaterThan(0)
       expect(packageKeys.length).toBeGreaterThan(0)
       expect(aliasValues.length).toBeGreaterThan(0)
 
-      // Aliases should point to domains that exist in pantry/packages
-      if (pantryKeys.length > 0) {
-        const pantryDomains = pantryKeys.map((key) => {
-          const pkg = pantry[key as keyof typeof pantry]
+      // Aliases should point to domains that exist in packages/packages
+      if (packagesKeys.length > 0) {
+        const packagesDomains = packagesKeys.map((key) => {
+          const pkg = packages[key as keyof typeof packages]
           return pkg.domain
         })
 
         // At least some aliases should point to existing domains
-        const validAliases = aliasValues.filter(domain => pantryDomains.includes(domain as any))
+        const validAliases = aliasValues.filter(domain => packagesDomains.includes(domain as any))
         expect(validAliases.length).toBeGreaterThan(0)
       }
     })
@@ -185,14 +182,14 @@ describe('Index Module', () => {
         const [_alias, domain] = aliasEntries[0]
 
         // Find the package with this domain
-        const pantryKeys = Object.keys(pantry)
-        const matchingPackage = pantryKeys.find((key) => {
-          const pkg = pantry[key as keyof typeof pantry]
+        const packagesKeys = Object.keys(packages)
+        const matchingPackage = packagesKeys.find((key) => {
+          const pkg = packages[key as keyof typeof packages]
           return pkg.domain === domain
         })
 
         if (matchingPackage) {
-          const pkg = pantry[matchingPackage as keyof typeof pantry]
+          const pkg = packages[matchingPackage as keyof typeof packages]
           expect(pkg.domain).toBe(domain as any)
           expect(pkg.name).toBeDefined()
           expect(pkg.description).toBeDefined()
@@ -202,11 +199,11 @@ describe('Index Module', () => {
 
     test('should have proper TypeScript types', () => {
       // Test that TypeScript types are working correctly
-      const pantryKeys = Object.keys(pantry)
+      const packagesKeys = Object.keys(packages)
 
-      if (pantryKeys.length > 0) {
-        const firstKey = pantryKeys[0] as keyof typeof pantry
-        const firstPackage = pantry[firstKey]
+      if (packagesKeys.length > 0) {
+        const firstKey = packagesKeys[0] as keyof typeof packages
+        const firstPackage = packages[firstKey]
 
         // These should all be properly typed
         expect(typeof firstPackage.name).toBe('string')
@@ -234,10 +231,10 @@ describe('Index Module', () => {
 
   describe('Package Data Validation', () => {
     test('should have valid install commands', () => {
-      const pantryKeys = Object.keys(pantry)
+      const packagesKeys = Object.keys(packages)
 
-      for (const key of pantryKeys.slice(0, 5)) { // Test first 5 packages
-        const pkg = pantry[key as keyof typeof pantry]
+      for (const key of packagesKeys.slice(0, 5)) { // Test first 5 packages
+        const pkg = packages[key as keyof typeof packages]
 
         // Install command should start with 'launchpad install' (new format)
         expect(pkg.installCommand).toMatch(/^launchpad install/)
@@ -251,10 +248,10 @@ describe('Index Module', () => {
     })
 
     test('should have non-empty required fields', () => {
-      const pantryKeys = Object.keys(pantry)
+      const packagesKeys = Object.keys(packages)
 
-      for (const key of pantryKeys.slice(0, 5)) { // Test first 5 packages
-        const pkg = pantry[key as keyof typeof pantry]
+      for (const key of packagesKeys.slice(0, 5)) { // Test first 5 packages
+        const pkg = packages[key as keyof typeof packages]
 
         // Name should exist (can be empty for some packages)
         expect(pkg.name).toBeDefined()
@@ -271,10 +268,10 @@ describe('Index Module', () => {
     })
 
     test('should have valid domain formats', () => {
-      const pantryKeys = Object.keys(pantry)
+      const packagesKeys = Object.keys(packages)
 
-      for (const key of pantryKeys.slice(0, 5)) { // Test first 5 packages
-        const pkg = pantry[key as keyof typeof pantry]
+      for (const key of packagesKeys.slice(0, 5)) { // Test first 5 packages
+        const pkg = packages[key as keyof typeof packages]
 
         // Domain should be a valid format
         expect(pkg.domain).toMatch(/^[a-z0-9.-]+/i)
@@ -285,10 +282,10 @@ describe('Index Module', () => {
     })
 
     test('should have reasonable version formats', () => {
-      const pantryKeys = Object.keys(pantry)
+      const packagesKeys = Object.keys(packages)
 
-      for (const key of pantryKeys.slice(0, 5)) { // Test first 5 packages
-        const pkg = pantry[key as keyof typeof pantry]
+      for (const key of packagesKeys.slice(0, 5)) { // Test first 5 packages
+        const pkg = packages[key as keyof typeof packages]
 
         if (pkg.versions.length > 0) {
           // Test first 3 versions by accessing them directly to avoid complex union types
@@ -314,19 +311,19 @@ describe('Index Module', () => {
 
       // Should not throw when accessing non-existent property
       expect(() => {
-        const pkg = pantry[nonExistentKey as keyof typeof pantry]
+        const pkg = packages[nonExistentKey as keyof typeof packages]
         return pkg
       }).not.toThrow()
     })
 
     test('should handle empty objects gracefully', () => {
       // Even if objects are empty, they should still be objects
-      expect(typeof pantry).toBe('object')
+      expect(typeof packages).toBe('object')
       expect(typeof packages).toBe('object')
       expect(typeof aliases).toBe('object')
 
       // Should not throw when getting keys
-      expect(() => Object.keys(pantry)).not.toThrow()
+      expect(() => Object.keys(packages)).not.toThrow()
       expect(() => Object.keys(packages)).not.toThrow()
       expect(() => Object.keys(aliases)).not.toThrow()
     })

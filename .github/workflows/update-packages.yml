@@ -211,6 +211,10 @@ jobs:
         run: bun bin/cli.ts generate-aliases
         timeout-minutes: 5
 
+      - name: Generate precise dependencies
+        run: bun bin/cli.ts generate precise-deps
+        timeout-minutes: 5
+
       - name: Generate documentation
         run: bun bin/cli.ts generate-docs
         timeout-minutes: 5

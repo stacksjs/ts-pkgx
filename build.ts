@@ -6,7 +6,6 @@ console.log('Building main library...')
 const libraryResult = await Bun.build({
   entrypoints: ['src/index.ts'],
   outdir: './dist',
-  splitting: false,
   target: 'node',
   // minify: true,
   external: ['playwright-core', 'playwright'],
@@ -25,7 +24,6 @@ console.log('Building CLI...')
 const cliResult = await Bun.build({
   entrypoints: ['bin/cli.ts'],
   outdir: './dist/bin',
-  splitting: false,
   target: 'node',
   // minify: true,
   external: ['playwright-core'],

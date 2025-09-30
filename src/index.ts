@@ -27,6 +27,7 @@ export {
 export * from './launchpad-api'
 export * from './package-types'
 export * from './packages'
+export type { Dependencies } from './dependencies'
 export * from './types'
 export {
   convertDomainToFileName,

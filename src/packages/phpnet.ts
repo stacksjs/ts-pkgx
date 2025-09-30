@@ -85,7 +85,7 @@ export const phpPackage = {
     'openssl.org',
     'pcre.org/v2>=10.30',
     'sqlite.org^3',
-    'unicode.org^71',
+    'unicode.org^77',
     'gnu.org/libiconv^1',
     'kerberos.org^1',
     'gnome.org/libxml2',

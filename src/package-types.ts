@@ -259,3 +259,134 @@ export function isPackageInCategory(packageName: string, category: keyof typeof 
   const categoryPackages = PACKAGE_CATEGORIES[category]
   return (categoryPackages as readonly string[]).includes(packageName)
 }
+
+// ===== ADVANCED TYPE UTILITIES FOR PRECISE ERROR HIGHLIGHTING =====
+
+/**
+ * Extract available versions for a specific package
+ */
+export type PackageVersions<T extends PackageName> = T extends keyof Packages
+  ? Packages[T] extends { versions: readonly (infer V)[] }
+    ? V extends string
+      ? V
+      : never
+    : never
+  : never
+
+/**
+ * Strict version constraint that only allows valid versions for a package
+ */
+export type StrictVersionConstraint<T extends PackageName> =
+  | PackageVersions<T>
+  | `^${PackageVersions<T>}`
+  | `~${PackageVersions<T>}`
+  | `>=${PackageVersions<T>}`
+  | `<=${PackageVersions<T>}`
+  | `>${PackageVersions<T>}`
+  | `<${PackageVersions<T>}`
+  | 'latest'
+  | '*'
+
+/**
+ * Forces value-level type checking by using function parameter inference
+ * This utility type helps highlight errors at the value location rather than property name
+ */
+export type ValidateVersion<K extends PackageName, V> =
+  V extends StrictVersionConstraint<K>
+    ? V
+    : {
+        readonly __error: `❌ Invalid version "${V & string}" for package "${K}"`
+        readonly __expected: StrictVersionConstraint<K>
+      }
+
+/**
+ * Experimental: Create exact type matching for each package that might improve error location
+ * This distributes the constraint to create specific error paths
+ */
+type DistributedPackageConstraint<K extends PackageName> = {
+  [P in K]: StrictVersionConstraint<P> | {
+    version?: StrictVersionConstraint<P>
+    global?: boolean
+  }
+}[K]
+
+/**
+ * Create a type that uses excess property checking to force errors on values
+ * This exploits how TypeScript handles object literal excess property checking
+ */
+export type ExactDependency<K extends PackageName, V> =
+  V extends StrictVersionConstraint<K>
+    ? { [P in K]: V }
+    : V extends { version?: any; global?: boolean }
+      ? V extends { version?: StrictVersionConstraint<K>; global?: boolean }
+        ? { [P in K]: V }
+        : never
+      : never
+
+/**
+ * Alternative approach using exact matching
+ */
+export type ValueErrorDependencies = {
+  readonly [K in PackageName]?: StrictVersionConstraint<K> | {
+    version?: StrictVersionConstraint<K>
+    global?: boolean
+  }
+} & Record<string, never>
+
+/**
+ * Advanced dependency object type that forces precise error locations
+ * Usage: const deps: Dependencies = { 'bun.com': '^1.2.19' }
+ */
+export type Dependencies = ValueErrorDependencies
+
+/**
+ * Version validation function that forces TypeScript to check the version at the call site
+ * This moves the error from the property name to the function argument
+ *
+ * @param version - The version constraint to validate
+ * @returns The same version if valid, causes compile error if invalid
+ *
+ * @example
+ * const deps = {
+ *   'bun.com': v('^1.2.19'),     // ✅ Valid
+ *   'bun.com': v('^1.2.999'),    // ❌ Error highlights the version string
+ * }
+ */
+export function v<K extends PackageName>(
+  version: StrictVersionConstraint<K>
+): StrictVersionConstraint<K> {
+  return version
+}
+
+/**
+ * Package dependency validation function with enhanced error messages
+ * Validates both package name and version at the call site
+ *
+ * @param packageName - The package name to validate
+ * @param version - The version constraint to validate
+ * @returns Tuple of [packageName, version] if valid
+ *
+ * @example
+ * const [pkg, ver] = pkg('bun.com', '^1.2.19')    // ✅ Valid
+ * const [pkg, ver] = pkg('bun.com', '^1.2.999')   // ❌ Error on version argument
+ * const [pkg, ver] = pkg('invalid', '^1.2.19')    // ❌ Error on package argument
+ */
+export function pkg<K extends PackageName>(
+  packageName: K,
+  version: StrictVersionConstraint<K>
+): [K, StrictVersionConstraint<K>] {
+  return [packageName, version]
+}
+
+/**
+ * Enhanced dependency object builder with precise error highlighting
+ *
+ * @example
+ * const deps = dependencies({
+ *   'bun.com': '^1.2.19',      // ✅ Valid
+ *   'bun.com': '^1.2.999',     // ❌ Error highlights the version value
+ * })
+ */
+export function dependencies<T extends Dependencies>(deps: T): T {
+  return deps
+}

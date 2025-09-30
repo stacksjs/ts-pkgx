@@ -415,7 +415,7 @@ export const aliases: Record<string, string> = {
   'hadolint': 'github.com/hadolint/hadolint',
   'halibut': 'chiark.greenend.org.uk/halibut',
   'hasura': 'hasura.io',
-  'hatch': 'hatch.pypa.io',
+  'hatch': 'pypa.io/hatch',
   'hcloud': 'hetzner.com/hcloud',
   'heif': 'github.com/strukturag/libheif',
   'heif-converter': 'github.com/MaestroError/heif-converter-image',
