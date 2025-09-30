@@ -3,7 +3,7 @@
  *
  * @domain `deno.land`
  * @programs `deno`
- * @version `2.5.2` (143 versions available)
+ * @version `2.5.2` (144 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install deno`
@@ -100,6 +100,7 @@ export const denoPackage = {
     '2.2.2',
     '2.2.1',
     '2.2.0',
+    '2.1.14',
     '2.1.13',
     '2.1.12',
     '2.1.11',
