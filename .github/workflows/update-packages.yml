@@ -215,10 +215,6 @@ jobs:
         run: bun bin/cli.ts generate-docs
         timeout-minutes: 5
 
-      - name: Generate precise dependencies
-        run: bun bin/cli.ts generate precise-deps
-        timeout-minutes: 5
-
       - name: Run lint:fix
         run: bun run lint:fix
         timeout-minutes: 5
@@ -457,7 +453,7 @@ jobs:
           fi
 
           # Add and commit changes
-          git add src/packages/ docs/ src/dependencies.ts
+          git add src/packages/ docs/
           git commit -m "${{ steps.commit-message.outputs.commit_message }}" -m "Automated update via GitHub Actions workflow"
 
           # Push changes

@@ -2952,6 +2952,8 @@ Examples:
 }
 
 // Run the main function only when run directly (for both CommonJS and ES modules)
-if (require.main === module || import.meta.url.endsWith('generate.ts')) {
+// Check if this file is being run directly, not imported
+const isMainModule = import.meta.url === `file://${process.argv[1]}` || import.meta.url === `file:///${process.argv[1]}`
+if (require.main === module || isMainModule) {
   main()
 }
