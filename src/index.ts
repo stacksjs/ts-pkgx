@@ -23,6 +23,7 @@ export {
   toPackageVarName,
   toSafeVarName,
   toTypeName,
+  updatePackageVersionMap,
 } from './generate'
 export * from './launchpad-api'
 export * from './package-types'

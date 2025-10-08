@@ -2690,7 +2690,7 @@ export async function generateDocs(outputDir: string = DEFAULT_DOCS_DIR, package
 /**
  * Updates the PackageVersionMap in precise-dependencies.ts with all packages
  */
-async function updatePackageVersionMap() {
+export async function updatePackageVersionMap() {
   try {
     console.log('🎯 Updating PackageVersionMap in precise-dependencies.ts...')
 

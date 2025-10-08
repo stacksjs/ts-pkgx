@@ -211,12 +211,20 @@ jobs:
         run: bun bin/cli.ts generate-aliases
         timeout-minutes: 5
 
+      - name: Generate documentation
+        run: bun bin/cli.ts generate-docs
+        timeout-minutes: 5
+
       - name: Generate precise dependencies
         run: bun bin/cli.ts generate precise-deps
         timeout-minutes: 5
 
-      - name: Generate documentation
-        run: bun bin/cli.ts generate-docs
+      - name: Run lint:fix
+        run: bun run lint:fix
+        timeout-minutes: 5
+
+      - name: Run typecheck
+        run: bun run typecheck
         timeout-minutes: 5
 
       - name: Show git status after all generation
@@ -449,7 +457,7 @@ jobs:
           fi
 
           # Add and commit changes
-          git add src/packages/ docs/
+          git add src/packages/ docs/ src/dependencies.ts
           git commit -m "${{ steps.commit-message.outputs.commit_message }}" -m "Automated update via GitHub Actions workflow"
 
           # Push changes

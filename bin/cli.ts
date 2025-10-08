@@ -18,6 +18,7 @@ import {
   generateIndex,
   savePackageAsTypeScript,
   saveToCacheAndOutput,
+  updatePackageVersionMap,
 } from '../src/index'
 import { aliases as PACKAGE_ALIASES } from '../src/packages/aliases'
 
@@ -744,6 +745,23 @@ cli
     }
     catch (error) {
       console.error('Error generating documentation:', error)
+      process.exit(1)
+    }
+  })
+
+// Generate precise dependencies command
+cli
+  .command('generate precise-deps', 'Generate precise dependency types in dependencies.ts')
+  .action(async () => {
+    try {
+      await updatePackageVersionMap()
+      console.log('✅ Successfully generated precise dependency types')
+
+      // Force exit after successful completion to prevent hanging
+      setTimeout(() => process.exit(0), 500)
+    }
+    catch (error) {
+      console.error('Error generating precise dependencies:', error)
       process.exit(1)
     }
   })
