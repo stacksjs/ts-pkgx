@@ -1,7 +1,7 @@
 {
   "name": "ts-pkgx",
   "type": "module",
-  "version": "0.4.56",
+  "version": "0.4.89",
   "description": "A library & CLI for managing packages",
   "author": "Chris Breuer <chris@stacksjs.org>",
   "license": "MIT",
@@ -73,7 +73,6 @@
     "changelog": "bunx logsmith --verbose",
     "changelog:generate": "bunx logsmith --output CHANGELOG.md",
     "release": "bun run changelog:generate && bunx bumpx prompt --recursive",
-    "postinstall": "bunx git-hooks",
     "dev:docs": "bun vitepress dev docs",
     "build:docs": "NODE_OPTIONS=\"--max-old-space-size=8192\" bun vitepress build docs",
     "preview:docs": "bun vitepress preview docs",
@@ -83,23 +82,23 @@
     "pkgx:update": "bun run update:packages",
     "pkgx:docs": "bun bin/cli.ts generate-docs"
   },
-  "dependencies": {
-    "chromium-bidi": "^7.2.0",
-    "electron": "^37.4.0",
+  "optionalDependencies": {
+    "chromium-bidi": "^7.3.2",
+    "electron": "^38.2.2",
     "js-yaml": "^4.1.0",
-    "playwright": "^1.55.0"
+    "playwright": "^1.56.0"
   },
   "devDependencies": {
-    "@stacksjs/bumpx": "^0.1.69",
+    "@stacksjs/bumpx": "^0.1.86",
     "@stacksjs/docs": "^0.70.23",
     "@stacksjs/eslint-config": "^4.14.0-beta.3",
     "@stacksjs/gitlint": "^0.1.5",
     "@stacksjs/logsmith": "^0.1.18",
-    "@types/bun": "^1.2.21",
-    "buddy-bot": "^0.8.10",
-    "bun-git-hooks": "^0.2.19",
-    "bun-plugin-dtsx": "0.9.5",
-    "typescript": "^5.9.2"
+    "@types/bun": "^1.2.23",
+    "buddy-bot": "^0.9.8",
+    "bun-git-hooks": "^0.3.1",
+    "bun-plugin-dtsx": "0.21.12",
+    "typescript": "^5.9.3"
   },
   "overrides": {
     "@stacksjs/dtsx": "0.9.5",
