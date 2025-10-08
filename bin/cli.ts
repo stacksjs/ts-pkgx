@@ -751,7 +751,7 @@ cli
 
 // Generate precise dependencies command
 cli
-  .command('generate precise-deps', 'Generate precise dependency types in dependencies.ts')
+  .command('generate-precise-deps', 'Generate precise dependency types in dependencies.ts')
   .action(async () => {
     try {
       await updatePackageVersionMap()

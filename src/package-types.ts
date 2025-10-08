@@ -300,25 +300,14 @@ export type ValidateVersion<K extends PackageName, V> =
       }
 
 /**
- * Experimental: Create exact type matching for each package that might improve error location
- * This distributes the constraint to create specific error paths
- */
-type DistributedPackageConstraint<K extends PackageName> = {
-  [P in K]: StrictVersionConstraint<P> | {
-    version?: StrictVersionConstraint<P>
-    global?: boolean
-  }
-}[K]
-
-/**
  * Create a type that uses excess property checking to force errors on values
  * This exploits how TypeScript handles object literal excess property checking
  */
 export type ExactDependency<K extends PackageName, V> =
   V extends StrictVersionConstraint<K>
     ? { [P in K]: V }
-    : V extends { version?: any; global?: boolean }
-      ? V extends { version?: StrictVersionConstraint<K>; global?: boolean }
+    : V extends { version?: any, global?: boolean }
+      ? V extends { version?: StrictVersionConstraint<K>, global?: boolean }
         ? { [P in K]: V }
         : never
       : never
@@ -353,7 +342,7 @@ export type Dependencies = ValueErrorDependencies
  * }
  */
 export function v<K extends PackageName>(
-  version: StrictVersionConstraint<K>
+  version: StrictVersionConstraint<K>,
 ): StrictVersionConstraint<K> {
   return version
 }
@@ -373,7 +362,7 @@ export function v<K extends PackageName>(
  */
 export function pkg<K extends PackageName>(
   packageName: K,
-  version: StrictVersionConstraint<K>
+  version: StrictVersionConstraint<K>,
 ): [K, StrictVersionConstraint<K>] {
   return [packageName, version]
 }

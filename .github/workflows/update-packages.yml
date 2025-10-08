@@ -216,7 +216,7 @@ jobs:
         timeout-minutes: 5
 
       - name: Generate precise dependencies
-        run: bun bin/cli.ts generate precise-deps
+        run: bun bin/cli.ts generate-precise-deps
         timeout-minutes: 5
 
       - name: Run lint:fix

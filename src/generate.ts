@@ -2689,170 +2689,32 @@ export async function generateDocs(outputDir: string = DEFAULT_DOCS_DIR, package
 
 /**
  * Updates the PackageVersionMap in precise-dependencies.ts with all packages
+ * Simplified version that just updates the timestamp - the Packages type already has all version info
  */
 export async function updatePackageVersionMap() {
   try {
-    console.log('🎯 Updating PackageVersionMap in precise-dependencies.ts...')
+    console.log('🎯 Updating Dependencies type timestamp...')
 
     const depsFile = path.join(process.cwd(), 'src', 'dependencies.ts')
     if (!fs.existsSync(depsFile)) {
-      console.log('dependencies.ts not found, skipping Dependencies update')
+      console.log('dependencies.ts not found, skipping update')
       return
     }
 
-    // Extract package information from all files (reuse existing logic)
-    const targetPackagesDir = path.join(process.cwd(), 'src', 'packages')
-    const packageInfo = new Map<string, { domain: string; name: string; aliases: string[]; versions: string[] }>()
+    const content = fs.readFileSync(depsFile, 'utf-8')
+    const timestamp = new Date().toISOString()
 
-    function scanForPackageFiles(dir: string): string[] {
-      const files: string[] = []
-      const entries = fs.readdirSync(dir, { withFileTypes: true })
+    // Just update the timestamp comment to mark when it was last checked
+    const updatedContent = content.replace(
+      /\/\/ Auto-generated precise dependency types/,
+      `// Auto-generated precise dependency types\n// Last updated: ${timestamp}`,
+    )
 
-      for (const entry of entries) {
-        if (entry.isFile() && entry.name.endsWith('.ts') && entry.name !== 'index.ts' && entry.name !== 'aliases.ts') {
-          files.push(path.join(dir, entry.name))
-        }
-        else if (entry.isDirectory() && !entry.name.startsWith('.')) {
-          files.push(...scanForPackageFiles(path.join(dir, entry.name)))
-        }
-      }
-      return files
-    }
-
-    const files = scanForPackageFiles(targetPackagesDir)
-    console.log(`Found ${files.length} package files for PackageVersionMap`)
-
-    // Extract package info
-    for (const file of files) {
-      try {
-        const content = fs.readFileSync(file, 'utf-8')
-
-        const domainMatch = content.match(/domain:\s*['"]([^'"]*)['"]\s*as const/)
-        const nameMatch = content.match(/name:\s*['"]([^'"]*)['"]\s*as const/)
-        const versionsMatch = content.match(/versions:\s*\[([\s\S]*?)\]\s*as const/)
-        const aliasesMatch = content.match(/aliases:\s*\[([\s\S]*?)\]/)
-
-        if (domainMatch && versionsMatch) {
-          const domain = domainMatch[1]
-          const name = nameMatch ? nameMatch[1] : domain
-          const versionsContent = versionsMatch[1]
-          const versions = versionsContent.match(/'([^']*)'/g)?.map(v => v.slice(1, -1)) || []
-
-          let aliases: string[] = []
-          if (aliasesMatch) {
-            const aliasesContent = aliasesMatch[1]
-            aliases = aliasesContent.match(/'([^']*)'/g)?.map(a => a.slice(1, -1)) || []
-          }
-
-          if (versions.length > 0) {
-            // Add domain as key
-            packageInfo.set(domain, { domain, name, aliases, versions })
-
-            // Add name as key if different from domain
-            if (name !== domain) {
-              packageInfo.set(name, { domain, name, aliases, versions })
-            }
-
-            // Add aliases as keys
-            for (const alias of aliases) {
-              packageInfo.set(alias, { domain, name, aliases, versions })
-            }
-          }
-        }
-      } catch (error) {
-        console.error(`Error processing file ${file}:`, error)
-      }
-    }
-
-    let content = fs.readFileSync(depsFile, 'utf-8')
-
-    // Generate valid dependency specification patterns as template literals
-    let validSpecs: string[] = []
-
-    const packageKeys = Array.from(packageInfo.keys()).sort()
-    for (const key of packageKeys) {
-      const info = packageInfo.get(key)!
-      const versions = info.versions
-
-      if (versions.length > 0) {
-        // Create template literal patterns for each valid version
-        for (const version of versions) {
-          validSpecs.push(`'${key}': '${version}'`)
-          validSpecs.push(`'${key}': '^${version}'`)
-          validSpecs.push(`'${key}': '~${version}'`)
-          validSpecs.push(`'${key}': '>=${version}'`)
-          validSpecs.push(`'${key}': '<=${version}'`)
-          validSpecs.push(`'${key}': '>${version}'`)
-          validSpecs.push(`'${key}': '<${version}'`)
-        }
-        validSpecs.push(`'${key}': 'latest'`)
-        validSpecs.push(`'${key}': '*'`)
-
-        // Add object version specs
-        for (const version of versions) {
-          validSpecs.push(`'${key}': { version: '${version}'; global?: boolean }`)
-          validSpecs.push(`'${key}': { version: '^${version}'; global?: boolean }`)
-          validSpecs.push(`'${key}': { version: '~${version}'; global?: boolean }`)
-          validSpecs.push(`'${key}': { version: '>=${version}'; global?: boolean }`)
-          validSpecs.push(`'${key}': { version: '<=${version}'; global?: boolean }`)
-          validSpecs.push(`'${key}': { version: '>${version}'; global?: boolean }`)
-          validSpecs.push(`'${key}': { version: '<${version}'; global?: boolean }`)
-        }
-        validSpecs.push(`'${key}': { version: 'latest'; global?: boolean }`)
-        validSpecs.push(`'${key}': { version: '*'; global?: boolean }`)
-      }
-    }
-
-    // Generate function-based approach for value-level error highlighting
-    let newMap = `// Function-based dependency validation for value-level errors
-type DependencyValue<T extends string> = T extends 'bun'
-  ? ${packageInfo.get('bun')?.versions.map(v => `'${v}' | '^${v}' | '~${v}' | '>=${v}' | '<=${v}' | '>${v}' | '<${v}'`).join(' | ')} | 'latest' | '*' | { version: (${packageInfo.get('bun')?.versions.map(v => `'${v}' | '^${v}' | '~${v}' | '>=${v}' | '<=${v}' | '>${v}' | '<${v}'`).join(' | ')} | 'latest' | '*'); global?: boolean }
-  : T extends 'redis'
-  ? ${packageInfo.get('redis')?.versions.map(v => `'${v}' | '^${v}' | '~${v}' | '>=${v}' | '<=${v}' | '>${v}' | '<${v}'`).join(' | ')} | 'latest' | '*' | { version: (${packageInfo.get('redis')?.versions.map(v => `'${v}' | '^${v}' | '~${v}' | '>=${v}' | '<=${v}' | '>${v}' | '<${v}'`).join(' | ')} | 'latest' | '*'); global?: boolean }
-  : string | { version: string; global?: boolean }`
-
-    // Generate conditional type for all packages
-    for (let i = 2; i < Math.min(packageKeys.length, 50); i++) {
-      const key = packageKeys[i]
-      const info = packageInfo.get(key)!
-      const versions = info.versions
-
-      if (versions.length > 0) {
-        const versionTypes = versions.map(v => `'${v}' | '^${v}' | '~${v}' | '>=${v}' | '<=${v}' | '>${v}' | '<${v}'`).join(' | ')
-        newMap += `
-  : T extends '${key}'
-  ? ${versionTypes} | 'latest' | '*' | { version: (${versionTypes} | 'latest' | '*'); global?: boolean }`
-      }
-    }
-
-    newMap += `
-  : string | { version: string; global?: boolean }
-
-// Dependencies type using conditional validation
-export type Dependencies = {
-  [K in string]?: DependencyValue<K>
-}`
-
-    // Replace the Dependencies type between the markers
-    const startMarker = '// GENERATED_DEPENDENCIES_TYPE_START'
-    const endMarker = '// GENERATED_DEPENDENCIES_TYPE_END'
-
-    const startIndex = content.indexOf(startMarker)
-    const endIndex = content.indexOf(endMarker)
-
-    if (startIndex !== -1 && endIndex !== -1) {
-      const before = content.substring(0, startIndex + startMarker.length)
-      const after = content.substring(endIndex)
-
-      content = before + '\n' + newMap + '\n' + after
-
-      fs.writeFileSync(depsFile, content)
-      console.log(`🎯 Updated Dependencies type with ${packageKeys.length} packages`)
-    } else {
-      console.log('Could not find Dependencies type markers in precise-dependencies.ts')
-    }
-  } catch (error) {
-    console.error('Error updating PackageVersionMap:', error)
+    fs.writeFileSync(depsFile, updatedContent)
+    console.log(`✅ Updated dependencies.ts timestamp`)
+  }
+  catch (error) {
+    console.error('Error updating dependencies.ts:', error)
   }
 }
 
@@ -2952,6 +2814,8 @@ Examples:
 }
 
 // Run the main function only when run directly (for both CommonJS and ES modules)
-if (require.main === module || import.meta.url.endsWith('generate.ts')) {
+// Check if this file is being run directly, not imported
+const isMainModule = import.meta.url === `file://${process.argv[1]}` || import.meta.url === `file:///${process.argv[1]}`
+if (require.main === module || isMainModule) {
   main()
 }

@@ -1,5 +1,6 @@
 export * from './cli-utils'
 export * from './consts'
+export type { Dependencies } from './dependencies'
 export * from './dependency-resolver'
 export {
   cleanupBrowserResources,
@@ -28,7 +29,6 @@ export {
 export * from './launchpad-api'
 export * from './package-types'
 export * from './packages'
-export type { Dependencies } from './dependencies'
 export * from './types'
 export {
   convertDomainToFileName,
