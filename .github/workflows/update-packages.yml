@@ -445,7 +445,7 @@ jobs:
           fi
 
           # Add and commit changes
-          git add src/packages/ docs/ src/dependencies.ts
+          git add src/packages/ docs/
           git commit -m "${{ steps.commit-message.outputs.commit_message }}" -m "Automated update via GitHub Actions workflow"
 
           # Push changes
