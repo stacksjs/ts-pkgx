@@ -424,7 +424,7 @@ import { epstoolPackage } from './ghostgum.com.au/epstool'
 import { ghostscriptcomPackage } from './ghostscriptcom'
 import { gif2rgbPackage } from './giflibsourceforgeio'
 import { gitcliffPackage } from './git-clifforg'
-import { gitlfsPackage } from './git-lfscom'
+import { gitlfscomPackage } from './git-lfscom'
 import { gitquickstatsPackage } from './git-quick-statssh'
 import { gitPackage } from './git-scmorg'
 import { gittownPackage } from './git-towncom'
@@ -2313,8 +2313,8 @@ export interface Pantry {
   giflibsourceforgeio: typeof gif2rgbPackage
   git_clifforg: typeof gitcliffPackage
   gitclifforg: typeof gitcliffPackage
-  git_lfscom: typeof gitlfsPackage
-  gitlfscom: typeof gitlfsPackage
+  git_lfscom: typeof gitlfscomPackage
+  gitlfscom: typeof gitlfscomPackage
   git_quick_statssh: typeof gitquickstatsPackage
   gitquickstatssh: typeof gitquickstatsPackage
   git_scmorg: typeof gitPackage
@@ -4415,7 +4415,6 @@ export interface Pantry {
   tesseract: typeof tesseractPackage
   oras: typeof orasPackage
   'yt-dlp': typeof ytdlpPackage
-  'git-lfs': typeof gitlfsPackage
   pscale: typeof pscalePackage
   pocket: typeof pocketPackage
   jq: typeof jqPackage
@@ -6140,8 +6139,8 @@ export const pantry: Pantry = {
   giflibsourceforgeio: gif2rgbPackage,
   git_clifforg: gitcliffPackage,
   gitclifforg: gitcliffPackage,
-  git_lfscom: gitlfsPackage,
-  gitlfscom: gitlfsPackage,
+  git_lfscom: gitlfscomPackage,
+  gitlfscom: gitlfscomPackage,
   git_quick_statssh: gitquickstatsPackage,
   gitquickstatssh: gitquickstatsPackage,
   git_scmorg: gitPackage,
@@ -8242,7 +8241,6 @@ export const pantry: Pantry = {
   tesseract: tesseractPackage,
   oras: orasPackage,
   'yt-dlp': ytdlpPackage,
-  'git-lfs': gitlfsPackage,
   pscale: pscalePackage,
   pocket: pocketPackage,
   jq: jqPackage,
