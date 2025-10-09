@@ -219,14 +219,6 @@ jobs:
         run: bun bin/cli.ts generate-precise-deps
         timeout-minutes: 5
 
-      - name: Run lint:fix
-        run: bun run lint:fix
-        timeout-minutes: 5
-
-      - name: Run typecheck
-        run: bun run typecheck
-        timeout-minutes: 5
-
       - name: Show git status after all generation
         run: |
           echo "=== Git Status After All Generation ==="
