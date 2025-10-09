@@ -1,5 +1,5 @@
-Generated from pantry at 2025-06-20T15:07:01.001Z
-Total packages: 1586
+Generated from pantry at 2025-10-09T18:37:38.423Z
+Total packages: 1602
 
 abseil.io
 acorn.io/acorn-cli
@@ -24,6 +24,7 @@ apache.org/arrow
 apache.org/avro
 apache.org/httpd
 apache.org/jmeter
+apache.org/serf
 apache.org/subversion
 apache.org/thrift
 apache.org/zookeeper
@@ -197,6 +198,7 @@ crates.io/joshuto
 crates.io/jwt-cli
 crates.io/kaspa-miner
 crates.io/killport
+crates.io/kubie
 crates.io/licensor
 crates.io/lighthouse
 crates.io/mask
@@ -239,6 +241,7 @@ crates.io/sqlx-cli
 crates.io/srgn
 crates.io/stego
 crates.io/tabiew
+crates.io/tea-gpg-wallet
 crates.io/termusic
 crates.io/tidy-viewer
 crates.io/tiny
@@ -328,8 +331,10 @@ eksctl.io
 elementsproject.org
 elfutils.org
 elixir-lang.org
+elixir-lang.org/otp-27
 elizaOS.github.io
 elv.sh
+emcrisostomo.github.io/fswatch
 encore.dev
 encore.dev/go
 endoflife.date
@@ -409,6 +414,7 @@ geoff.greer.fm/ag
 getclipboard.app
 getcomposer.org
 getfoundry.sh
+getmonero.org
 getsops.io
 getsynth.com
 getzola.org
@@ -469,11 +475,13 @@ github.com/TartanLlama/expected
 github.com/TomWright/dasel
 github.com/Versent/saml2aws
 github.com/VikParuchuri/surya
+github.com/Virviil/oci2git
 github.com/XCTestHTMLReport/XCTestHTMLReport
 github.com/XcodesOrg/xcodes
 github.com/YS-L/csvlens
 github.com/Z3Prover/z3
 github.com/ZZROTDesign/docker-clean
+github.com/Zouuup/landrun
 github.com/a7ex/xcresultparser
 github.com/abanteai/rawdog
 github.com/abiosoft/colima
@@ -517,6 +525,7 @@ github.com/brucedom/bruce
 github.com/burntsushi/xsv
 github.com/caarlos0/org-stats
 github.com/caarlos0/svu
+github.com/caddy-dns/acmedns
 github.com/caddyserver/xcaddy
 github.com/canonical/charmcraft
 github.com/canonical/pebble
@@ -547,6 +556,7 @@ github.com/darthsim/overmind
 github.com/dateutil/dateutil
 github.com/dduan/tre
 github.com/deepmap/oapi-codegen
+github.com/denisidoro/navi
 github.com/dloebl/cgif
 github.com/dundee/gdu
 github.com/dylanaraps/neofetch
@@ -569,6 +579,7 @@ github.com/giampaolo/psutil
 github.com/git-chglog
 github.com/git-ecosystem/git-credential-manager
 github.com/github/git-sizer
+github.com/github/spec-kit
 github.com/glauth/glauth
 github.com/go-acme/lego
 github.com/gofireflyio/aiac
@@ -691,6 +702,7 @@ github.com/oobabooga/text-generation-webui
 github.com/open-source-parsers/jsoncpp
 github.com/opencollab/arpack-ng
 github.com/p7zip-project/p7zip
+github.com/pantoniou/libfyaml
 github.com/passbolt/go-passbolt-cli
 github.com/peak/s5cmd
 github.com/peltoche/lsd
@@ -1117,6 +1129,7 @@ microsoft.com/pyright
 midnight-commander.org
 min.io
 min.io/mc
+miniupnp.free.fr
 mise.jdx.dev
 mitmproxy.org
 mkcert.dev
@@ -1184,11 +1197,13 @@ onefetch.dev
 onsi.github.io/ginkgo
 open-mpi.org
 open-mpi.org/hwloc
+openai.com/codex
 openai.com/openai-python
 openai.com/whisper
 openapi-generator.tech
 openbao.org/openbao
 openblas.net
+opencode.ai
 opencore-amr.sourceforge.io
 opendap.org
 opendev.org/git-review
@@ -1250,6 +1265,7 @@ pkgx.sh/dev
 pkgx.sh/mash
 pkgx.sh/pkgm
 pkl-lang.org
+plakar.io
 planetscale.com
 plantuml.com
 plasmasturm.org/rename
