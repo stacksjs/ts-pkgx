@@ -3,7 +3,7 @@
  *
  * @domain `microsoft.com/code-cli`
  * @programs `code`
- * @version `1.104.2` (25 versions available)
+ * @version `1.105.0` (27 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install code`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "vscode cli"
  * console.log(pkg.description) // "Command-line interface built-in Visual Studio Code"
  * console.log(pkg.programs)    // ["code"]
- * console.log(pkg.versions[0]) // "1.104.2" (latest)
+ * console.log(pkg.versions[0]) // "1.105.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/microsoft-com/code-cli.md
@@ -71,6 +71,8 @@ export const codePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.105.0',
+    '1.104.3',
     '1.104.2',
     '1.104.1',
     '1.104.0',

@@ -3,7 +3,7 @@
  *
  * @domain `localstack.cloud/cli`
  * @programs `localstack`
- * @version `4.8.1` (26 versions available)
+ * @version `4.9.2` (29 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install localstack`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "localstack"
  * console.log(pkg.description) // "The LocalStack CLI packaged using pyinstaller"
  * console.log(pkg.programs)    // ["localstack"]
- * console.log(pkg.versions[0]) // "4.8.1" (latest)
+ * console.log(pkg.versions[0]) // "4.9.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/localstack-cloud/cli.md
@@ -69,6 +69,9 @@ export const localstackPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.9.2',
+    '4.9.1',
+    '4.9.0',
     '4.8.1',
     '4.8.0',
     '4.7.0',

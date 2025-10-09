@@ -3,7 +3,7 @@
  *
  * @domain `swagger.io/swagger-codegen`
  * @programs `swagger-codegen`
- * @version `3.0.73` (27 versions available)
+ * @version `3.0.74` (28 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install swagger-codegen`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "swagger-codegen"
  * console.log(pkg.description) // "swagger-codegen contains a template-driven engi..."
  * console.log(pkg.programs)    // ["swagger-codegen"]
- * console.log(pkg.versions[0]) // "3.0.73" (latest)
+ * console.log(pkg.versions[0]) // "3.0.74" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/swagger-io/swagger-codegen.md
@@ -69,6 +69,7 @@ export const swaggercodegenPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.0.74',
     '3.0.73',
     '3.0.72',
     '3.0.71',

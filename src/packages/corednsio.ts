@@ -3,7 +3,7 @@
  *
  * @domain `coredns.io`
  * @programs `coredns`
- * @version `1.12.4` (10 versions available)
+ * @version `1.13.1` (12 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install coredns`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "coredns"
  * console.log(pkg.description) // "CoreDNS is a DNS server that chains plugins"
  * console.log(pkg.programs)    // ["coredns"]
- * console.log(pkg.versions[0]) // "1.12.4" (latest)
+ * console.log(pkg.versions[0]) // "1.13.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/coredns-io.md
@@ -62,6 +62,8 @@ export const corednsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.13.1',
+    '1.13.0',
     '1.12.4',
     '1.12.3',
     '1.12.2',

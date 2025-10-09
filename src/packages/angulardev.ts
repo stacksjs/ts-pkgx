@@ -3,7 +3,7 @@
  *
  * @domain `angular.dev`
  * @programs `ng`
- * @version `20.3.3` (129 versions available)
+ * @version `20.3.5` (131 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ng`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "ng"
  * console.log(pkg.description) // "CLI tool for Angular"
  * console.log(pkg.programs)    // ["ng"]
- * console.log(pkg.versions[0]) // "20.3.3" (latest)
+ * console.log(pkg.versions[0]) // "20.3.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/angular-dev.md
@@ -69,6 +69,8 @@ export const ngPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '20.3.5',
+    '20.3.4',
     '20.3.3',
     '20.3.2',
     '20.3.1',

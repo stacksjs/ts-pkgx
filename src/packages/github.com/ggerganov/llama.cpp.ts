@@ -3,7 +3,7 @@
  *
  * @domain `github.com/ggerganov/llama.cpp`
  * @programs `llama-cli`, `llama.cpp`, `convert.py`
- * @version `6638.0.0` (3369 versions available)
+ * @version `6721.0.0` (3425 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/ggerganov/llama.cpp`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "LLaMA.cpp"
  * console.log(pkg.description) // "LLM inference in C/C++"
  * console.log(pkg.programs)    // ["llama-cli", "llama.cpp", ...]
- * console.log(pkg.versions[0]) // "6638.0.0" (latest)
+ * console.log(pkg.versions[0]) // "6721.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/ggerganov/llama-cpp.md
@@ -74,6 +74,62 @@ export const lLaMAcppPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '6721.0.0',
+    '6719.0.0',
+    '6718.0.0',
+    '6717.0.0',
+    '6715.0.0',
+    '6714.0.0',
+    '6713.0.0',
+    '6711.0.0',
+    '6710.0.0',
+    '6709.0.0',
+    '6708.0.0',
+    '6706.0.0',
+    '6704.0.0',
+    '6703.0.0',
+    '6702.0.0',
+    '6701.0.0',
+    '6700.0.0',
+    '6699.0.0',
+    '6697.0.0',
+    '6695.0.0',
+    '6692.0.0',
+    '6691.0.0',
+    '6690.0.0',
+    '6689.0.0',
+    '6688.0.0',
+    '6687.0.0',
+    '6686.0.0',
+    '6685.0.0',
+    '6684.0.0',
+    '6683.0.0',
+    '6682.0.0',
+    '6680.0.0',
+    '6679.0.0',
+    '6678.0.0',
+    '6676.0.0',
+    '6673.0.0',
+    '6672.0.0',
+    '6671.0.0',
+    '6670.0.0',
+    '6666.0.0',
+    '6665.0.0',
+    '6663.0.0',
+    '6662.0.0',
+    '6661.0.0',
+    '6660.0.0',
+    '6653.0.0',
+    '6651.0.0',
+    '6650.0.0',
+    '6648.0.0',
+    '6647.0.0',
+    '6646.0.0',
+    '6644.0.0',
+    '6643.0.0',
+    '6642.0.0',
+    '6641.0.0',
+    '6640.0.0',
     '6638.0.0',
     '6635.0.0',
     '6634.0.0',

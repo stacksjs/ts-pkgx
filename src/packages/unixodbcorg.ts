@@ -3,7 +3,7 @@
  *
  * @domain `unixodbc.org`
  * @programs `dltest`, `isql`, `iusql`, `odbc_config`, `odbcinst`, ... (+1 more)
- * @version `2.3.12` (2 versions available)
+ * @version `2.3.14` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install unixodbc.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "unixodbc.org"
  * console.log(pkg.description) // "The unixODBC Project goals are to develop and p..."
  * console.log(pkg.programs)    // ["dltest", "isql", ...]
- * console.log(pkg.versions[0]) // "2.3.12" (latest)
+ * console.log(pkg.versions[0]) // "2.3.14" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/unixodbc-org.md
@@ -69,6 +69,7 @@ export const unixodbcorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.3.14',
     '2.3.12',
     '2.3.11',
   ] as const,

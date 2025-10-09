@@ -3,7 +3,7 @@
  *
  * @domain `github.com/achannarasappa/ticker`
  * @programs `ticker`
- * @version `5.0.6` (12 versions available)
+ * @version `5.0.7` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ticker`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "ticker"
  * console.log(pkg.description) // "Terminal stock ticker with live updates and pos..."
  * console.log(pkg.programs)    // ["ticker"]
- * console.log(pkg.versions[0]) // "5.0.6" (latest)
+ * console.log(pkg.versions[0]) // "5.0.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/achannarasappa/ticker.md
@@ -62,6 +62,7 @@ export const tickerPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '5.0.7',
     '5.0.6',
     '5.0.5',
     '5.0.4',

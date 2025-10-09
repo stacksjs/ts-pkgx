@@ -25,8 +25,9 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 156 versions</summary>
+<summary>Show all 161 versions</summary>
 
+- `16.20.4`, `16.20.3`, `16.20.2`, `16.20.1`, `16.20.0`
 - `16.19.3`, `16.19.2`, `16.19.1`, `16.19.0`, `16.18.1`
 - `16.18.0`, `16.17.4`, `16.17.3`, `16.17.2`, `16.17.1`
 - `16.17.0`, `16.16.0`, `16.15.0`, `16.14.1`, `16.14.0`
@@ -62,7 +63,7 @@ This package provides the following executable programs:
 
 </details>
 
-**Latest Version**: `16.19.3`
+**Latest Version**: `16.20.4`
 
 ### Install Specific Version
 

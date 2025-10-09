@@ -3,7 +3,7 @@
  *
  * @domain `pandoc.org/crossref`
  * @programs `pandoc-crossref`
- * @version `0.3.21` (9 versions available)
+ * @version `0.3.22` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pandoc-crossref`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "pandoc-crossref"
  * console.log(pkg.description) // "Pandoc filter for numbering and cross-referencing"
  * console.log(pkg.programs)    // ["pandoc-crossref"]
- * console.log(pkg.versions[0]) // "0.3.21" (latest)
+ * console.log(pkg.versions[0]) // "0.3.22" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pandoc-org/crossref.md
@@ -71,6 +71,7 @@ export const pandoccrossrefPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.3.22',
     '0.3.21',
     '0.3.20',
     '0.3.19',

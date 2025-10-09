@@ -27,20 +27,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 6 versions</summary>
+<summary>Show all 7 versions</summary>
 
-- `6.0.2`, `6.0.1`, `6.0.0`, `5.6.2`, `5.6.1`
-- `5.6.0`
+- `6.1.0`, `6.0.2`, `6.0.1`, `6.0.0`, `5.6.2`
+- `5.6.1`, `5.6.0`
 
 </details>
 
-**Latest Version**: `6.0.2`
+**Latest Version**: `6.1.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +cgal.org@6.0.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +cgal.org@6.1.0 -- $SHELL -i
 ```
 
 ## Dependencies

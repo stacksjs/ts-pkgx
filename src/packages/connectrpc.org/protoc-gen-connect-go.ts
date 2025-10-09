@@ -3,7 +3,7 @@
  *
  * @domain `connectrpc.org/protoc-gen-connect-go`
  * @programs `protoc-gen-connect-go`
- * @version `1.19.0` (5 versions available)
+ * @version `1.19.1` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install protoc-gen-connect-go`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "protoc-gen-connect-go"
  * console.log(pkg.description) // "The Go implementation of Connect: Protobuf RPC ..."
  * console.log(pkg.programs)    // ["protoc-gen-connect-go"]
- * console.log(pkg.versions[0]) // "1.19.0" (latest)
+ * console.log(pkg.versions[0]) // "1.19.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/connectrpc-org/protoc-gen-connect-go.md
@@ -62,6 +62,7 @@ export const protocgenconnectgoPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.19.1',
     '1.19.0',
     '1.18.1',
     '1.18.0',

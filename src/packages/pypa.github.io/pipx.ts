@@ -3,7 +3,7 @@
  *
  * @domain `pypa.github.io/pipx`
  * @programs `pipx`
- * @version `1.7.1` (15 versions available)
+ * @version `1.8.0` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pipx`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "pipx"
  * console.log(pkg.description) // "Execute binaries from Python packages in isolat..."
  * console.log(pkg.programs)    // ["pipx"]
- * console.log(pkg.versions[0]) // "1.7.1" (latest)
+ * console.log(pkg.versions[0]) // "1.8.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pypa-github-io/pipx.md
@@ -69,6 +69,7 @@ export const pipxPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.8.0',
     '1.7.1',
     '1.7.0',
     '1.6.0',

@@ -3,7 +3,7 @@
  *
  * @domain `github.com/GoogleContainerTools/container-structure-test`
  * @programs `container-structure-test`
- * @version `1.20.0` (4 versions available)
+ * @version `1.21.1` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install container-structure-test`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "container-structure-test"
  * console.log(pkg.description) // "validate the structure of your container images"
  * console.log(pkg.programs)    // ["container-structure-test"]
- * console.log(pkg.versions[0]) // "1.20.0" (latest)
+ * console.log(pkg.versions[0]) // "1.21.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/GoogleContainerTools/container-structure-test.md
@@ -62,6 +62,8 @@ export const containerstructuretestPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.21.1',
+    '1.21.0',
     '1.20.0',
     '1.19.3',
     '1.19.2',

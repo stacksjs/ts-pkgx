@@ -2,7 +2,7 @@
  * **heasarc.gsfc.nasa.gov/cfitsio** - pkgx package
  *
  * @domain `heasarc.gsfc.nasa.gov/cfitsio`
- * @version `4.6.2` (8 versions available)
+ * @version `4.6.3` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install heasarc.gsfc.nasa.gov/cfitsio`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.heasarcgsfcnasagovcfitsio
  * console.log(pkg.name)        // "heasarc.gsfc.nasa.gov/cfitsio"
- * console.log(pkg.versions[0]) // "4.6.2" (latest)
+ * console.log(pkg.versions[0]) // "4.6.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/heasarc-gsfc-nasa-gov/cfitsio.md
@@ -56,6 +56,7 @@ export const heasarcgsfcnasagovcfitsioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.6.3',
     '4.6.2',
     '4.6.0',
     '4.5.0',

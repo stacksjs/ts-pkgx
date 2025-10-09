@@ -3,7 +3,7 @@
  *
  * @domain `wasmer.io`
  * @programs `wasmer`
- * @version `6.0.1` (23 versions available)
+ * @version `6.1.0` (24 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install wasmer`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "wasmer"
  * console.log(pkg.description) // "🚀 Fast, secure, lightweight containers based o..."
  * console.log(pkg.programs)    // ["wasmer"]
- * console.log(pkg.versions[0]) // "6.0.1" (latest)
+ * console.log(pkg.versions[0]) // "6.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/wasmer-io.md
@@ -62,6 +62,7 @@ export const wasmerPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '6.1.0',
     '6.0.1',
     '6.0.0',
     '5.0.4',

@@ -2,7 +2,7 @@
  * **phpMyAdmin** - pkgx package
  *
  * @domain `phpmyadmin.net`
- * @version `5.2.2` (2 versions available)
+ * @version `5.2.3` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install phpMyAdmin`
@@ -19,7 +19,7 @@
  * const samePkg = pantry.phpmyadminnet
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "phpMyAdmin"
- * console.log(pkg.versions[0]) // "5.2.2" (latest)
+ * console.log(pkg.versions[0]) // "5.2.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/phpmyadmin-net.md
@@ -60,6 +60,7 @@ export const phpMyAdminPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '5.2.3',
     '5.2.2',
     '5.2.1',
   ] as const,

@@ -22,7 +22,7 @@ This package provides the following executable programs:
 
 - `python`
 - `python3`
-- `python3.13`
+- `python3.14`
 
 ## Aliases
 
@@ -33,15 +33,16 @@ This package can also be accessed using these aliases:
 ## Available Versions
 
 <details>
-<summary>Show all 153 versions</summary>
+<summary>Show all 158 versions</summary>
 
-- `3.13.7`, `3.13.6`, `3.13.5`, `3.13.4`, `3.13.3`
-- `3.13.2`, `3.13.1`, `3.13.0`, `3.12.11`, `3.12.10`
-- `3.12.9`, `3.12.8`, `3.12.7`, `3.12.6`, `3.12.5`
-- `3.12.4`, `3.12.3`, `3.12.2`, `3.12.1`, `3.12.0`
-- `3.11.13`, `3.11.12`, `3.11.11`, `3.11.10`, `3.11.9`
-- `3.11.8`, `3.11.7`, `3.11.6`, `3.11.5`, `3.11.4`
-- `3.11.3`, `3.11.2`, `3.11.1`, `3.11.0`, `3.10.18`
+- `3.14.0`, `3.13.8`, `3.13.7`, `3.13.6`, `3.13.5`
+- `3.13.4`, `3.13.3`, `3.13.2`, `3.13.1`, `3.13.0`
+- `3.12.12`, `3.12.11`, `3.12.10`, `3.12.9`, `3.12.8`
+- `3.12.7`, `3.12.6`, `3.12.5`, `3.12.4`, `3.12.3`
+- `3.12.2`, `3.12.1`, `3.12.0`, `3.11.14`, `3.11.13`
+- `3.11.12`, `3.11.11`, `3.11.10`, `3.11.9`, `3.11.8`
+- `3.11.7`, `3.11.6`, `3.11.5`, `3.11.4`, `3.11.3`
+- `3.11.2`, `3.11.1`, `3.11.0`, `3.10.19`, `3.10.18`
 - `3.10.17`, `3.10.16`, `3.10.15`, `3.10.14`, `3.10.13`
 - `3.10.12`, `3.10.11`, `3.10.10`, `3.10.8`, `3.10.7`
 - `3.10.6`, `3.10.5`, `3.10.4`, `3.10.3`, `3.10.2`
@@ -69,13 +70,13 @@ This package can also be accessed using these aliases:
 
 </details>
 
-**Latest Version**: `3.13.7`
+**Latest Version**: `3.14.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +python.org@3.13.7 -- $SHELL -i
+sh <(curl https://pkgx.sh) +python.org@3.14.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -92,7 +93,8 @@ This package depends on:
 - `sqlite.org@3`
 - `gnu.org/readline@8`
 - `invisible-island.net/ncurses@6`
-- `tcl-lang.org@8`
+- `linux:tcl-lang.org`
+- `darwin:tcl-lang.org=8.6.16 # 9.0.2 introduced a build issue on darwin`
 
 ## Related Packages
 

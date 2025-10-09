@@ -3,7 +3,7 @@
  *
  * @domain `hugo.wang/cicada`
  * @programs `cicada`
- * @version `1.1.2` (10 versions available)
+ * @version `1.1.3` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cicada`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "cicada"
  * console.log(pkg.description) // "An old-school bash-like Unix shell written in Rust"
  * console.log(pkg.programs)    // ["cicada"]
- * console.log(pkg.versions[0]) // "1.1.2" (latest)
+ * console.log(pkg.versions[0]) // "1.1.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/hugo-wang/cicada.md
@@ -62,6 +62,7 @@ export const cicadaPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.1.3',
     '1.1.2',
     '1.1.1',
     '1.0.3',

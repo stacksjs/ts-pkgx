@@ -3,7 +3,7 @@
  *
  * @domain `openssl.org`
  * @programs `openssl`, `c_rehash`
- * @version `3.5.3` (32 versions available)
+ * @version `3.6.0` (38 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install OpenSSL`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "OpenSSL"
  * console.log(pkg.description) // "TLS/SSL and crypto library with QUIC APIs"
  * console.log(pkg.programs)    // ["openssl", "c_rehash"]
- * console.log(pkg.versions[0]) // "3.5.3" (latest)
+ * console.log(pkg.versions[0]) // "3.6.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openssl-org.md
@@ -70,13 +70,18 @@ export const openSSLPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.6.0',
+    '3.5.4',
     '3.5.3',
     '3.5.2',
     '3.5.0',
+    '3.4.3',
     '3.4.0',
+    '3.3.5',
     '3.3.2',
     '3.3.1',
     '3.3.0',
+    '3.2.6',
     '3.2.3',
     '3.2.2',
     '3.2.1',
@@ -89,6 +94,7 @@ export const openSSLPackage = {
     '3.1.2',
     '3.1.1',
     '3.1.0',
+    '3.0.18',
     '3.0.15',
     '3.0.14',
     '3.0.13',

@@ -25,8 +25,9 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 57 versions</summary>
+<summary>Show all 62 versions</summary>
 
+- `0.97.2`, `0.97.1`, `0.97.0`, `0.96.5`, `0.96.4`
 - `0.96.3`, `0.96.2`, `0.96.1`, `0.96.0`, `0.95.6`
 - `0.95.5`, `0.95.4`, `0.95.3`, `0.95.2`, `0.95.1`
 - `0.95.0`, `0.94.2`, `0.94.1`, `0.94.0`, `0.93.3`
@@ -42,7 +43,7 @@ This package provides the following executable programs:
 
 </details>
 
-**Latest Version**: `0.96.3`
+**Latest Version**: `0.97.2`
 
 ### Install Specific Version
 

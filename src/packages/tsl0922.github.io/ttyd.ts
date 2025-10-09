@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ttyd`
  * @name `ttyd`
- * @dependencies `libuv.org@1`, `github.com/json-c/json-c^0.16`, `libwebsockets.org@4`, ... (+1 more)
+ * @dependencies `libuv.org@1`, `github.com/json-c/json-c^0.16`, `libwebsockets.org~4.3 # ABI version changes in 4.4`, ... (+1 more)
  *
  * @example
  * ```typescript
@@ -64,7 +64,7 @@ export const ttydPackage = {
   dependencies: [
     'libuv.org@1',
     'github.com/json-c/json-c^0.16',
-    'libwebsockets.org@4',
+    'libwebsockets.org~4.3 # ABI version changes in 4.4',
     'zlib.net@1',
   ] as const,
   /**

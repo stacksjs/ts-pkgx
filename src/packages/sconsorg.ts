@@ -3,7 +3,7 @@
  *
  * @domain `scons.org`
  * @programs `scons`
- * @version `4.9.1` (7 versions available)
+ * @version `4.10.0` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install scons`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "scons"
  * console.log(pkg.description) // "Substitute for classic 'make' tool with autocon..."
  * console.log(pkg.programs)    // ["scons"]
- * console.log(pkg.versions[0]) // "4.9.1" (latest)
+ * console.log(pkg.versions[0]) // "4.10.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/scons-org.md
@@ -71,6 +71,7 @@ export const sconsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.10.0',
     '4.9.1',
     '4.9.0',
     '4.8.1',

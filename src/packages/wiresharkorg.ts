@@ -3,7 +3,7 @@
  *
  * @domain `wireshark.org`
  * @programs `capinfos`, `captype`, `dumpcap`, `editcap`, `idl2wrs`, ... (+8 more)
- * @version `4.4.9` (35 versions available)
+ * @version `4.4.9` (36 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install wireshark.org`
@@ -100,6 +100,7 @@ export const wiresharkorgPackage = {
     '4.4.0',
     '4.3.1',
     '4.3.0',
+    '4.2.14',
     '4.2.13',
     '4.2.12',
     '4.2.11',

@@ -2,7 +2,7 @@
  * **libdrm** - pkgx package
  *
  * @domain `dri.freedesktop.org`
- * @version `2.4.125` (11 versions available)
+ * @version `2.4.126` (12 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install libdrm`
@@ -19,7 +19,7 @@
  * const samePkg = pantry.drifreedesktoporg
  * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "libdrm"
- * console.log(pkg.versions[0]) // "2.4.125" (latest)
+ * console.log(pkg.versions[0]) // "2.4.126" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/dri-freedesktop-org.md
@@ -60,6 +60,7 @@ export const libdrmPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.4.126',
     '2.4.125',
     '2.4.124',
     '2.4.123',

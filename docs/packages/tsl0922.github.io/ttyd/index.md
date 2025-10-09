@@ -46,7 +46,7 @@ This package depends on:
 
 - `libuv.org@1`
 - `github.com/json-c/json-c^0.16`
-- `libwebsockets.org@4`
+- `libwebsockets.org~4.3 # ABI version changes in 4.4`
 - `zlib.net@1`
 
 ## Usage Examples

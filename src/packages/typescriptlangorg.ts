@@ -3,7 +3,7 @@
  *
  * @domain `typescriptlang.org`
  * @programs `tsc`
- * @version `5.9.2` (14 versions available)
+ * @version `5.9.3` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tsc`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "tsc"
  * console.log(pkg.description) // "TypeScript is a superset of JavaScript that com..."
  * console.log(pkg.programs)    // ["tsc"]
- * console.log(pkg.versions[0]) // "5.9.2" (latest)
+ * console.log(pkg.versions[0]) // "5.9.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/typescriptlang-org.md
@@ -69,6 +69,7 @@ export const tscPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '5.9.3',
     '5.9.2',
     '5.8.3',
     '5.8.2',

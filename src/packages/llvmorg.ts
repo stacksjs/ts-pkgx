@@ -3,7 +3,7 @@
  *
  * @domain `llvm.org`
  * @programs `lld`, `clang`, `clang++`, `cc`, `c++`, ... (+9 more)
- * @version `21.1.2` (47 versions available)
+ * @version `21.1.3` (48 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install llvm.org`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "llvm.org"
  * console.log(pkg.description) // "The LLVM Project is a collection of modular and..."
  * console.log(pkg.programs)    // ["lld", "clang", ...]
- * console.log(pkg.versions[0]) // "21.1.2" (latest)
+ * console.log(pkg.versions[0]) // "21.1.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/llvm-org.md
@@ -77,6 +77,7 @@ export const llvmorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '21.1.3',
     '21.1.2',
     '21.1.1',
     '21.1.0',

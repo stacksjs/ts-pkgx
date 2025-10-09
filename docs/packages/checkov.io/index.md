@@ -25,8 +25,9 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 503 versions</summary>
+<summary>Show all 508 versions</summary>
 
+- `3.2.477`, `3.2.476`, `3.2.475`, `3.2.474`, `3.2.473`
 - `3.2.472`, `3.2.471`, `3.2.470`, `3.2.469`, `3.2.468`
 - `3.2.467`, `3.2.465`, `3.2.464`, `3.2.463`, `3.2.462`
 - `3.2.461`, `3.2.460`, `3.2.458`, `3.2.457`, `3.2.456`
@@ -131,7 +132,7 @@ This package provides the following executable programs:
 
 </details>
 
-**Latest Version**: `3.2.472`
+**Latest Version**: `3.2.477`
 
 ### Install Specific Version
 

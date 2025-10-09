@@ -2,7 +2,7 @@
  * **attrs.org** - Python Classes Without Boilerplate
  *
  * @domain `attrs.org`
- * @version `25.3.0` (7 versions available)
+ * @version `25.4.0` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install attrs.org`
@@ -16,7 +16,7 @@
  * const pkg = pantry.attrsorg
  * console.log(pkg.name)        // "attrs.org"
  * console.log(pkg.description) // "Python Classes Without Boilerplate"
- * console.log(pkg.versions[0]) // "25.3.0" (latest)
+ * console.log(pkg.versions[0]) // "25.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/attrs-org.md
@@ -57,6 +57,7 @@ export const attrsorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '25.4.0',
     '25.3.0',
     '25.2.0',
     '25.1.0',

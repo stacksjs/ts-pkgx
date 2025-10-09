@@ -90,7 +90,7 @@ General-purpose scripting language
 
 The Python programming language
 
-**Programs**: python, python3, python3.13
+**Programs**: python, python3, python3.14
 
 **Install**: `launchpad install py`
 

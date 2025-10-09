@@ -25,8 +25,9 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 86 versions</summary>
+<summary>Show all 91 versions</summary>
 
+- `0.109.0`, `0.108.1`, `0.108.0`, `0.107.1`, `0.107.0`
 - `0.106.3`, `0.106.2`, `0.106.1`, `0.106.0`, `0.105.0`
 - `0.104.1`, `0.104.0`, `0.103.0`, `0.102.0`, `0.101.0`
 - `0.100.0`, `0.53.0`, `0.52.1`, `0.52.0`, `0.51.0`
@@ -48,7 +49,7 @@ This package provides the following executable programs:
 
 </details>
 
-**Latest Version**: `0.106.3`
+**Latest Version**: `0.109.0`
 
 ### Install Specific Version
 

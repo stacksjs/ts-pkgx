@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `25.3.0`, `25.2.0`, `25.1.0`, `24.3.0`, `24.2.0`
-- `24.1.0`, `23.2.0`
+- `25.4.0`, `25.3.0`, `25.2.0`, `25.1.0`, `24.3.0`
+- `24.2.0`, `24.1.0`, `23.2.0`
 
 </details>
 
-**Latest Version**: `25.3.0`
+**Latest Version**: `25.4.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +attrs.org@25.3.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +attrs.org@25.4.0 -- $SHELL -i
 ```
 
 ## Dependencies

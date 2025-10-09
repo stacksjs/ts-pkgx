@@ -3,7 +3,7 @@
  *
  * @domain `nginx.org`
  * @programs `nginx`
- * @version `1.29.1` (20 versions available)
+ * @version `1.29.2` (21 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nginx`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "nginx"
  * console.log(pkg.description) // "HTTP(S) server and reverse proxy, and IMAP/POP3..."
  * console.log(pkg.programs)    // ["nginx"]
- * console.log(pkg.versions[0]) // "1.29.1" (latest)
+ * console.log(pkg.versions[0]) // "1.29.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nginx-org.md
@@ -71,6 +71,7 @@ export const nginxPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.29.2',
     '1.29.1',
     '1.29.0',
     '1.28.0',

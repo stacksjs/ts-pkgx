@@ -3,7 +3,7 @@
  *
  * @domain `julialang.org/juliaup`
  * @programs `juliaup`
- * @version `1.18.0` (57 versions available)
+ * @version `1.18.3` (60 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install juliaup`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "juliaup"
  * console.log(pkg.description) // "Julia installer and version multiplexer"
  * console.log(pkg.programs)    // ["juliaup"]
- * console.log(pkg.versions[0]) // "1.18.0" (latest)
+ * console.log(pkg.versions[0]) // "1.18.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/julialang-org/juliaup.md
@@ -62,6 +62,9 @@ export const juliaupPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.18.3',
+    '1.18.2',
+    '1.18.1',
     '1.18.0',
     '1.17.21',
     '1.17.20',

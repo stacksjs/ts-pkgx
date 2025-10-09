@@ -3,7 +3,7 @@
  *
  * @domain `github.com/antfu/ni`
  * @programs `na`, `nci`, `ni`, `nlx`, `nr`, ... (+2 more)
- * @version `26.0.1` (26 versions available)
+ * @version `26.1.0` (27 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/antfu/ni`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "github.com/antfu/ni"
  * console.log(pkg.description) // "💡 Use the right package manager"
  * console.log(pkg.programs)    // ["na", "nci", ...]
- * console.log(pkg.versions[0]) // "26.0.1" (latest)
+ * console.log(pkg.versions[0]) // "26.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/antfu/ni.md
@@ -71,6 +71,7 @@ export const githubcomantfuniPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '26.1.0',
     '26.0.1',
     '26.0.0',
     '25.0.0',

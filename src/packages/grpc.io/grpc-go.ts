@@ -3,7 +3,7 @@
  *
  * @domain `grpc.io/grpc-go`
  * @programs `protoc-gen-go-grpc`
- * @version `1.75.1` (37 versions available)
+ * @version `1.76.0` (38 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install protoc-gen-go-grpc`
@@ -23,7 +23,7 @@
  * console.log(pkg.name)        // "protoc-gen-go-grpc"
  * console.log(pkg.description) // "The Go language implementation of gRPC. HTTP/2 ..."
  * console.log(pkg.programs)    // ["protoc-gen-go-grpc"]
- * console.log(pkg.versions[0]) // "1.75.1" (latest)
+ * console.log(pkg.versions[0]) // "1.76.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/grpc-io/grpc-go.md
@@ -78,6 +78,7 @@ export const protocgengogrpcPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.76.0',
     '1.75.1',
     '1.75.0',
     '1.74.3',

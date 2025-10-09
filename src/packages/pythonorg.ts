@@ -3,13 +3,13 @@
  *
  * @domain `python.org`
  * @programs `python`, `python{{ version.major }}`, `python{{ version.marketing }}`
- * @version `3.13.7` (153 versions available)
+ * @version `3.14.0` (158 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install python`
  * @name `python`
  * @aliases `py`
- * @dependencies `zlib.net@1`, `sourceware.org/bzip2@1`, `openssl.org^1.1`, ... (+8 more)
+ * @dependencies `zlib.net@1`, `sourceware.org/bzip2@1`, `openssl.org^1.1`, ... (+9 more) (includes OS-specific dependencies with `os:package` format)
  * @companions `pip.pypa.io`
  *
  * @example
@@ -24,7 +24,7 @@
  * console.log(pkg.name)        // "python"
  * console.log(pkg.description) // "The Python programming language"
  * console.log(pkg.programs)    // ["python", "python{{ version.major }}", ...]
- * console.log(pkg.versions[0]) // "3.13.7" (latest)
+ * console.log(pkg.versions[0]) // "3.14.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/python-org.md
@@ -70,6 +70,7 @@ export const pythonPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'zlib.net@1',
@@ -82,13 +83,16 @@ export const pythonPackage = {
     'sqlite.org@3',
     'gnu.org/readline@8',
     'invisible-island.net/ncurses@6',
-    'tcl-lang.org@8',
+    'linux:tcl-lang.org',
+    'darwin:tcl-lang.org=8.6.16 # 9.0.2 introduced a build issue on darwin',
   ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.14.0',
+    '3.13.8',
     '3.13.7',
     '3.13.6',
     '3.13.5',
@@ -97,6 +101,7 @@ export const pythonPackage = {
     '3.13.2',
     '3.13.1',
     '3.13.0',
+    '3.12.12',
     '3.12.11',
     '3.12.10',
     '3.12.9',
@@ -109,6 +114,7 @@ export const pythonPackage = {
     '3.12.2',
     '3.12.1',
     '3.12.0',
+    '3.11.14',
     '3.11.13',
     '3.11.12',
     '3.11.11',
@@ -123,6 +129,7 @@ export const pythonPackage = {
     '3.11.2',
     '3.11.1',
     '3.11.0',
+    '3.10.19',
     '3.10.18',
     '3.10.17',
     '3.10.16',

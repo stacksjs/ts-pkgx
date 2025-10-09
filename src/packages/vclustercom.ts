@@ -3,7 +3,7 @@
  *
  * @domain `vcluster.com`
  * @programs `vcluster`
- * @version `0.28.0` (44 versions available)
+ * @version `0.29.0` (45 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install vcluster`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "vcluster"
  * console.log(pkg.description) // "vCluster - Create fully functional virtual Kube..."
  * console.log(pkg.programs)    // ["vcluster"]
- * console.log(pkg.versions[0]) // "0.28.0" (latest)
+ * console.log(pkg.versions[0]) // "0.29.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/vcluster-com.md
@@ -71,6 +71,7 @@ export const vclusterPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.29.0',
     '0.28.0',
     '0.27.1',
     '0.27.0',

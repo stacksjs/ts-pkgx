@@ -3,7 +3,7 @@
  *
  * @domain `ccache.dev`
  * @programs `ccache`
- * @version `4.12.0` (11 versions available)
+ * @version `4.12.1` (12 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ccache`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "ccache"
  * console.log(pkg.description) // "Object-file caching compiler wrapper"
  * console.log(pkg.programs)    // ["ccache"]
- * console.log(pkg.versions[0]) // "4.12.0" (latest)
+ * console.log(pkg.versions[0]) // "4.12.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ccache-dev.md
@@ -70,6 +70,7 @@ export const ccachePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.12.1',
     '4.12.0',
     '4.11.3',
     '4.11.2',

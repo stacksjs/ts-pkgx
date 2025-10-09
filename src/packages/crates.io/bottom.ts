@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/bottom`
  * @programs `btm`
- * @version `0.11.1` (14 versions available)
+ * @version `0.11.2` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install btm`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "btm"
  * console.log(pkg.description) // "Yet another cross-platform graphical process/sy..."
  * console.log(pkg.programs)    // ["btm"]
- * console.log(pkg.versions[0]) // "0.11.1" (latest)
+ * console.log(pkg.versions[0]) // "0.11.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/bottom.md
@@ -62,6 +62,7 @@ export const btmPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.11.2',
     '0.11.1',
     '0.11.0',
     '0.10.2',

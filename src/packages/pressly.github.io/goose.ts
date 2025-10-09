@@ -3,7 +3,7 @@
  *
  * @domain `pressly.github.io/goose`
  * @programs `goose`
- * @version `3.25.0` (12 versions available)
+ * @version `3.26.0` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install goose`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "goose"
  * console.log(pkg.description) // "A database migration tool. Supports SQL migrati..."
  * console.log(pkg.programs)    // ["goose"]
- * console.log(pkg.versions[0]) // "3.25.0" (latest)
+ * console.log(pkg.versions[0]) // "3.26.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pressly-github-io/goose.md
@@ -62,6 +62,7 @@ export const goosePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.26.0',
     '3.25.0',
     '3.24.3',
     '3.24.2',

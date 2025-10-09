@@ -25,17 +25,17 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 21 versions</summary>
+<summary>Show all 22 versions</summary>
 
-- `5.0.0`, `4.2.0`, `4.1.1`, `4.1.0`, `4.0.0`
-- `3.3.0`, `3.2.0`, `3.1.0`, `3.0.1`, `3.0.0`
-- `2.11.1`, `2.11.0`, `2.10.0`, `2.9.0`, `2.8.0`
-- `2.7.4`, `2.7.3`, `2.7.2`, `2.7.1`, `2.7.0`
-- `2.6.0`
+- `5.1.0`, `5.0.0`, `4.2.0`, `4.1.1`, `4.1.0`
+- `4.0.0`, `3.3.0`, `3.2.0`, `3.1.0`, `3.0.1`
+- `3.0.0`, `2.11.1`, `2.11.0`, `2.10.0`, `2.9.0`
+- `2.8.0`, `2.7.4`, `2.7.3`, `2.7.2`, `2.7.1`
+- `2.7.0`, `2.6.0`
 
 </details>
 
-**Latest Version**: `5.0.0`
+**Latest Version**: `5.1.0`
 
 ### Install Specific Version
 
