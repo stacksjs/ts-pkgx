@@ -383,20 +383,40 @@ jobs:
         id: git-check
         run: |
           # Show git status for debugging
-          echo "Git status:"
+          echo "=== Full git status ==="
           git status --porcelain
+          echo "=== End full git status ==="
 
           # Check for changes in the specific directories we care about
           CHANGES=$(git status --porcelain src/packages/ docs/ 2>/dev/null || echo "")
 
+          echo "=== Checking src/packages/ and docs/ for changes ==="
           if [[ -z "$CHANGES" ]]; then
-            echo "No changes detected in src/packages/ or docs/"
+            echo "❌ No changes detected in src/packages/ or docs/"
             echo "changes=false" >> $GITHUB_OUTPUT
           else
-            echo "Changes detected:"
+            echo "✅ Changes detected:"
             echo "$CHANGES"
             echo "changes=true" >> $GITHUB_OUTPUT
           fi
+
+          echo "=== Git check complete: changes=$(if [[ -z "$CHANGES" ]]; then echo "false"; else echo "true"; fi) ==="
+
+      - name: Debug commit conditions
+        run: |
+          echo "=== Commit Decision Debug ==="
+          echo "Git changes detected: ${{ steps.git-check.outputs.changes }}"
+          echo "Should commit (from packages): ${{ steps.commit-message.outputs.should_commit }}"
+          echo "Total packages updated: ${{ steps.commit-message.outputs.total_updated }}"
+
+          if [[ "${{ steps.git-check.outputs.changes }}" != "true" ]]; then
+            echo "⚠️  Commit will be SKIPPED: No git changes detected in src/packages/ or docs/"
+          elif [[ "${{ steps.commit-message.outputs.should_commit }}" != "true" ]]; then
+            echo "⚠️  Commit will be SKIPPED: should_commit is false"
+          else
+            echo "✅ Proceeding to safeguard check and commit"
+          fi
+          echo "=== End Commit Decision Debug ==="
 
       - name: Safeguard
         id: deletion-check
