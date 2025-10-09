@@ -215,10 +215,6 @@ jobs:
         run: bun bin/cli.ts generate-docs
         timeout-minutes: 5
 
-      - name: Generate precise dependencies
-        run: bun bin/cli.ts generate-precise-deps
-        timeout-minutes: 5
-
       - name: Show git status after all generation
         run: |
           echo "=== Git Status After All Generation ==="

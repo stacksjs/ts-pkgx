@@ -1,6 +1,5 @@
 export * from './cli-utils'
 export * from './consts'
-export type { Dependencies } from './dependencies'
 export * from './dependency-resolver'
 export {
   cleanupBrowserResources,

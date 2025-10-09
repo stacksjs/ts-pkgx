@@ -2691,7 +2691,7 @@ export async function generateDocs(outputDir: string = DEFAULT_DOCS_DIR, package
  * Updates the PackageVersionMap in precise-dependencies.ts with all packages
  * Simplified version that just updates the timestamp - the Packages type already has all version info
  */
-export async function updatePackageVersionMap() {
+export async function updatePackageVersionMap(): Promise<void> {
   try {
     console.log('🎯 Updating Dependencies type timestamp...')
 

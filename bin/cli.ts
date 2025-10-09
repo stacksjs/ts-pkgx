@@ -749,23 +749,6 @@ cli
     }
   })
 
-// Generate precise dependencies command
-cli
-  .command('generate-precise-deps', 'Generate precise dependency types in dependencies.ts')
-  .action(async () => {
-    try {
-      await updatePackageVersionMap()
-      console.log('✅ Successfully generated precise dependency types')
-
-      // Force exit after successful completion to prevent hanging
-      setTimeout(() => process.exit(0), 500)
-    }
-    catch (error) {
-      console.error('Error generating precise dependencies:', error)
-      process.exit(1)
-    }
-  })
-
 // Add a new command to download and extract pantry
 cli
   .command('update-pantry', 'Download and extract the latest pantry.tgz file')
