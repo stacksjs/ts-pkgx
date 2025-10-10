@@ -1354,7 +1354,7 @@ import { rpmorgpoptPackage } from './rpm.org/popt'
 import { rsyncPackage } from './rsyncsambaorg'
 import { rtmpdumpPackage } from './rtmpdumpmplayerhqhu'
 import { ronnPackage } from './rtomayko.github.io/ronn'
-import { rubocopPackage } from './rubocoporg'
+import { rubocoporgPackage } from './rubocoporg'
 import { rubyPackage } from './ruby-langorg'
 import { gistPackage } from './rubygems.org/gist'
 import { rubygemsorgPackage } from './rubygemsorg'
@@ -1650,7 +1650,7 @@ export interface Pantry {
   apacheorgsubversion: typeof svnPackage
 
   apacheorgthrift: typeof thriftPackage
-
+  zookeeper: typeof apacheorgzookeeperPackage
   apacheorgzookeeper: typeof apacheorgzookeeperPackage
   apktoolorg: typeof apktoolPackage
 
@@ -3915,7 +3915,7 @@ export interface Pantry {
   rtmpdumpmplayerhqhu: typeof rtmpdumpPackage
 
   rtomaykogithubioronn: typeof ronnPackage
-  rubocoporg: typeof rubocopPackage
+  rubocoporg: typeof rubocoporgPackage
   ruby_langorg: typeof rubyPackage
   rubylangorg: typeof rubyPackage
 
@@ -4505,7 +4505,6 @@ export interface Pantry {
   hugo: typeof hugoPackage
   kubecm: typeof kubecmPackage
   lftp: typeof lftpPackage
-  zookeeper: typeof apacheorgzookeeperPackage
   thrift: typeof thriftPackage
   svn: typeof svnPackage
   avro: typeof avroPackage
@@ -4834,7 +4833,6 @@ export interface Pantry {
   file: typeof filePackage
   pytest: typeof pytestPackage
   json: typeof jsonPackage
-  rubocop: typeof rubocopPackage
   sqlite3: typeof sqlite3Package
   'microcks-cli': typeof microckscliPackage
   gqlgen: typeof gqlgenPackage
@@ -4933,6 +4931,7 @@ export interface Pantry {
   'cairo-trace': typeof cairotracePackage
   dbus: typeof dbusPackage
   'update-mime-database': typeof updatemimedatabasePackage
+  'xcb-util': typeof freedesktoporgxcbutilPackage
   uchardet: typeof uchardetPackage
   'pkg-config': typeof pkgconfigPackage
   'xdg-user-dir': typeof xdguserdirPackage
@@ -5478,7 +5477,7 @@ export const pantry: Pantry = {
   apacheorgsubversion: svnPackage,
 
   apacheorgthrift: thriftPackage,
-
+  zookeeper: apacheorgzookeeperPackage,
   apacheorgzookeeper: apacheorgzookeeperPackage,
   apktoolorg: apktoolPackage,
 
@@ -7743,7 +7742,7 @@ export const pantry: Pantry = {
   rtmpdumpmplayerhqhu: rtmpdumpPackage,
 
   rtomaykogithubioronn: ronnPackage,
-  rubocoporg: rubocopPackage,
+  rubocoporg: rubocoporgPackage,
   ruby_langorg: rubyPackage,
   rubylangorg: rubyPackage,
 
@@ -8333,7 +8332,6 @@ export const pantry: Pantry = {
   hugo: hugoPackage,
   kubecm: kubecmPackage,
   lftp: lftpPackage,
-  zookeeper: apacheorgzookeeperPackage,
   thrift: thriftPackage,
   svn: svnPackage,
   avro: avroPackage,
@@ -8662,7 +8660,6 @@ export const pantry: Pantry = {
   file: filePackage,
   pytest: pytestPackage,
   json: jsonPackage,
-  rubocop: rubocopPackage,
   sqlite3: sqlite3Package,
   'microcks-cli': microckscliPackage,
   gqlgen: gqlgenPackage,
@@ -8761,6 +8758,7 @@ export const pantry: Pantry = {
   'cairo-trace': cairotracePackage,
   dbus: dbusPackage,
   'update-mime-database': updatemimedatabasePackage,
+  'xcb-util': freedesktoporgxcbutilPackage,
   uchardet: uchardetPackage,
   'pkg-config': pkgconfigPackage,
   'xdg-user-dir': xdguserdirPackage,

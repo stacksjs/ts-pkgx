@@ -1,7 +1,8 @@
 /**
- * **ffmpeg.org** - pkgx package
+ * **ffmpeg.org** - Play, record, convert, and stream audio and video
  *
  * @domain `ffmpeg.org`
+ * @programs `ffmpeg`, `ffplay`, `ffprobe`
  * @version `8.0.0` (29 versions available)
  * @versions From newest version to oldest.
  *
@@ -14,6 +15,8 @@
  *
  * const pkg = pantry.ffmpegorg
  * console.log(pkg.name)        // "ffmpeg.org"
+ * console.log(pkg.description) // "Play, record, convert, and stream audio and video"
+ * console.log(pkg.programs)    // ["ffmpeg", "ffplay", ...]
  * console.log(pkg.versions[0]) // "8.0.0" (latest)
  * ```
  *
@@ -32,7 +35,7 @@ export const ffmpegorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'Play, record, convert, and stream audio and video' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ffmpeg.org/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
@@ -41,7 +44,15 @@ export const ffmpegorgPackage = {
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install ffmpeg.org' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'ffmpeg',
+    'ffplay',
+    'ffprobe',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
