@@ -3,7 +3,7 @@
  *
  * @domain `openssh.com`
  * @programs `scp`, `sftp`, `slogin`, `ssh`, `ssh-add`, ... (+4 more)
- * @version `10.1.0` (7 versions available)
+ * @version `10.2.0` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openssh.com`
@@ -16,7 +16,7 @@
  * const pkg = pantry.opensshcom
  * console.log(pkg.name)        // "openssh.com"
  * console.log(pkg.programs)    // ["scp", "sftp", ...]
- * console.log(pkg.versions[0]) // "10.1.0" (latest)
+ * console.log(pkg.versions[0]) // "10.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openssh-com.md
@@ -79,6 +79,7 @@ export const opensshcomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '10.2.0',
     '10.1.0',
     '10.0.0',
     '9.9.0',

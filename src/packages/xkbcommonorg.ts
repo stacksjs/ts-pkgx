@@ -3,7 +3,7 @@
  *
  * @domain `xkbcommon.org`
  * @programs `xkbcli`
- * @version `1.11.0` (10 versions available)
+ * @version `1.12.0` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install xkbcli`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "xkbcli"
  * console.log(pkg.description) // "keymap handling library for toolkits and window..."
  * console.log(pkg.programs)    // ["xkbcli"]
- * console.log(pkg.versions[0]) // "1.11.0" (latest)
+ * console.log(pkg.versions[0]) // "1.12.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/xkbcommon-org.md
@@ -72,6 +72,7 @@ export const xkbcliPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.12.0',
     '1.11.0',
     '1.10.0',
     '1.9.2',
