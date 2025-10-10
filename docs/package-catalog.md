@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-10-10T20:30:37.293Z
+- **Last Updated**: 2025-10-10T21:30:29.784Z
 
 ## Table of Contents
 
@@ -218,7 +218,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[bun.sh](./packages/bun.sh/index.md)** (bun.com) | Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | bun, bunx | 1.2.23 (+126) | `pkgx bun.com` |
+| **[bun.sh](./packages/bun.sh/index.md)** (bun.com) | Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one | bun, bunx | 1.3.0 (+127) | `pkgx bun.com` |
 | **[classic.yarnpkg.com](./packages/classic.yarnpkg.com/index.md)** (yarn) | The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry | yarn, yarnpkg | 1.22.22 (+3) | `pkgx yarn` |
 | **[cocoapods.org](./packages/cocoapods.org/index.md)** () | Dependency manager for Cocoa projects | pod | 1.16.2 (+12) | `pkgx pod` |
 | **[getcomposer.org](./packages/getcomposer.org/index.md)** () | Dependency Manager for PHP | composer, composer.phar | 2.8.12 (+32) | `pkgx composer` |

@@ -3,7 +3,7 @@
  *
  * @domain `bun.sh`
  * @programs `bun`, `bunx`
- * @version `1.2.23` (127 versions available)
+ * @version `1.3.0` (128 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bun`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "bun"
  * console.log(pkg.description) // "Incredibly fast JavaScript runtime, bundler, te..."
  * console.log(pkg.programs)    // ["bun", "bunx"]
- * console.log(pkg.versions[0]) // "1.2.23" (latest)
+ * console.log(pkg.versions[0]) // "1.3.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/bun-sh.md
@@ -64,6 +64,7 @@ export const bunPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.3.0',
     '1.2.23',
     '1.2.22',
     '1.2.21',
