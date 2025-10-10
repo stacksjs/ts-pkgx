@@ -3,7 +3,7 @@
  *
  * @domain `cuelang.org`
  * @programs `cue`
- * @version `0.14.1` (23 versions available)
+ * @version `0.14.2` (24 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cue`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "cue"
  * console.log(pkg.description) // "The home of the CUE language! Validate and defi..."
  * console.log(pkg.programs)    // ["cue"]
- * console.log(pkg.versions[0]) // "0.14.1" (latest)
+ * console.log(pkg.versions[0]) // "0.14.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cuelang-org.md
@@ -62,6 +62,7 @@ export const cuePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.14.2',
     '0.14.1',
     '0.14.0',
     '0.13.2',
