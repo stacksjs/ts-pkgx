@@ -3,7 +3,7 @@
  *
  * @domain `temporal.io`
  * @programs `temporal`
- * @version `1.4.1` (16 versions available)
+ * @version `1.5.0` (17 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install temporal`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "temporal"
  * console.log(pkg.description) // "Command-line interface for running Temporal Ser..."
  * console.log(pkg.programs)    // ["temporal"]
- * console.log(pkg.versions[0]) // "1.4.1" (latest)
+ * console.log(pkg.versions[0]) // "1.5.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/temporal-io.md
@@ -62,6 +62,7 @@ export const temporalPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.5.0',
     '1.4.1',
     '1.4.0',
     '1.3.0',
