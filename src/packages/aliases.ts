@@ -1131,6 +1131,7 @@ export const aliases: Record<string, string> = {
   'zipcmp': 'libzip.org',
   'zippy': 'github.com/thinkst/zippy',
   'zola': 'getzola.org',
+  'zookeeper': 'apache.org/zookeeper',
   'zoxide': 'crates.io/zoxide',
   'zrok': 'zrok.io',
   'zsh': 'zsh.sourceforge.io',

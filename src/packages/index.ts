@@ -1650,7 +1650,7 @@ export interface Pantry {
   apacheorgsubversion: typeof svnPackage
 
   apacheorgthrift: typeof thriftPackage
-  zookeeper: typeof apacheorgzookeeperPackage
+
   apacheorgzookeeper: typeof apacheorgzookeeperPackage
   apktoolorg: typeof apktoolPackage
 
@@ -4505,6 +4505,7 @@ export interface Pantry {
   hugo: typeof hugoPackage
   kubecm: typeof kubecmPackage
   lftp: typeof lftpPackage
+  zookeeper: typeof apacheorgzookeeperPackage
   thrift: typeof thriftPackage
   svn: typeof svnPackage
   avro: typeof avroPackage
@@ -5477,7 +5478,7 @@ export const pantry: Pantry = {
   apacheorgsubversion: svnPackage,
 
   apacheorgthrift: thriftPackage,
-  zookeeper: apacheorgzookeeperPackage,
+
   apacheorgzookeeper: apacheorgzookeeperPackage,
   apktoolorg: apktoolPackage,
 
@@ -8332,6 +8333,7 @@ export const pantry: Pantry = {
   hugo: hugoPackage,
   kubecm: kubecmPackage,
   lftp: lftpPackage,
+  zookeeper: apacheorgzookeeperPackage,
   thrift: thriftPackage,
   svn: svnPackage,
   avro: avroPackage,
