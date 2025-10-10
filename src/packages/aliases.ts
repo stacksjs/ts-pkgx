@@ -343,6 +343,7 @@ export const aliases: Record<string, string> = {
   'git-filter-repo': 'github.com/newren/git-filter-repo',
   'git-gone': 'crates.io/git-gone',
   'git-grab': 'crates.io/git-grab',
+  'git-lfs': 'git-lfs.com',
   'git-quick-stats': 'git-quick-stats.sh',
   'git-review': 'opendev.org/git-review',
   'git-sizer': 'github.com/github/git-sizer',

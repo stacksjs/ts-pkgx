@@ -1,27 +1,38 @@
 /**
- * **git-lfs.com** - pkgx package
+ * **git-lfs** - Git extension for versioning large files
  *
  * @domain `git-lfs.com`
+ * @programs `git-lfs`
+ * @version `3.7.0` (7 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install git-lfs.com`
+ * @install `launchpad install git-lfs`
+ * @name `git-lfs`
  * @dependencies `git-scm.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.gitlfscom
- * console.log(pkg.name)        // "git-lfs.com"
+ * // Access the package
+ * const pkg = pantry.gitlfs
+ * // Or access via domain
+ * const samePkg = pantry.gitlfscom
+ * console.log(pkg === samePkg) // true
+ * console.log(pkg.name)        // "git-lfs"
+ * console.log(pkg.description) // "Git extension for versioning large files"
+ * console.log(pkg.programs)    // ["git-lfs"]
+ * console.log(pkg.versions[0]) // "3.7.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/git-lfs-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitlfscomPackage = {
+export const gitlfsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'git-lfs.com' as const,
+  name: 'git-lfs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -29,16 +40,22 @@ export const gitlfscomPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
-  packageYmlUrl: '' as const,
+  description: 'Git extension for versioning large files' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/git-lfs.com/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install git-lfs.com' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install git-lfs' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'git-lfs',
+  ] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -47,10 +64,26 @@ export const gitlfscomPackage = {
   dependencies: [
     'git-scm.org',
   ] as const,
-  versions: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '3.7.0',
+    '3.6.1',
+    '3.6.0',
+    '3.5.1',
+    '3.4.1',
+    '3.4.0',
+    '3.3.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +git-lfs.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install git-lfs.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-lfs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-lfs' as const,
 }
 
-export type GitlfscomPackage = typeof gitlfscomPackage
+export type GitlfsPackage = typeof gitlfsPackage
