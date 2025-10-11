@@ -3,7 +3,7 @@
  *
  * @domain `pyinvoke.org`
  * @programs `invoke`
- * @version `2.2.0` (1 versions available)
+ * @version `2.2.1` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install invoke`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "invoke"
  * console.log(pkg.description) // "Pythonic task management & command execution."
  * console.log(pkg.programs)    // ["invoke"]
- * console.log(pkg.versions[0]) // "2.2.0" (latest)
+ * console.log(pkg.versions[0]) // "2.2.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pyinvoke-org.md
@@ -69,7 +69,9 @@ export const invokePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.2.1',
     '2.2.0',
+    '2.1.4',
   ] as const,
   /**
    * Alternative names for this package.
