@@ -2,7 +2,7 @@
  * **gnome.org/gi-docgen** - pkgx package
  *
  * @domain `gnome.org/gi-docgen`
- * @version `2025.4.0` (3 versions available)
+ * @version `2025.5.0` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnome.org/gi-docgen`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.gnomeorggidocgen
  * console.log(pkg.name)        // "gnome.org/gi-docgen"
- * console.log(pkg.versions[0]) // "2025.4.0" (latest)
+ * console.log(pkg.versions[0]) // "2025.5.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/gi-docgen.md
@@ -55,6 +55,7 @@ export const gnomeorggidocgenPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2025.5.0',
     '2025.4.0',
     '2025.3.0',
     '2024.1.0',
