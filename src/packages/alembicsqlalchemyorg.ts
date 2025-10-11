@@ -3,7 +3,7 @@
  *
  * @domain `alembic.sqlalchemy.org`
  * @programs `alembic`
- * @version `1.16.5` (12 versions available)
+ * @version `1.17.0` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install alembic`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "alembic"
  * console.log(pkg.description) // "A database migrations tool for SQLAlchemy."
  * console.log(pkg.programs)    // ["alembic"]
- * console.log(pkg.versions[0]) // "1.16.5" (latest)
+ * console.log(pkg.versions[0]) // "1.17.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/alembic-sqlalchemy-org.md
@@ -69,6 +69,7 @@ export const alembicPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.17.0',
     '1.16.5',
     '1.16.4',
     '1.16.3',
