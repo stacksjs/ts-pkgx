@@ -362,7 +362,7 @@ import { ffmpegorgPackage } from './ffmpegorg'
 import { fftwPackage } from './fftworg'
 import { agePackage } from './filippo.io/age'
 import { yubikeyagentPackage } from './filippo.io/yubikey-agent'
-import { fishshellcomPackage } from './fishshellcom'
+import { fishPackage } from './fishshellcom'
 import { fliptPackage } from './fliptio'
 import { flitPackage } from './flitpypaio'
 import { fltkorgPackage } from './fltkorg'
@@ -2215,7 +2215,7 @@ export interface Pantry {
   filippoioage: typeof agePackage
   yubikey_agent: typeof yubikeyagentPackage
   filippoioyubikeyagent: typeof yubikeyagentPackage
-  fishshellcom: typeof fishshellcomPackage
+  fishshellcom: typeof fishPackage
   fliptio: typeof fliptPackage
   flitpypaio: typeof flitPackage
   fltkorg: typeof fltkorgPackage
@@ -4364,6 +4364,7 @@ export interface Pantry {
   pyright: typeof pyrightPackage
   azcopy: typeof azcopyPackage
   replibyte: typeof replibytePackage
+  fish: typeof fishPackage
   duckdb: typeof duckdbPackage
   jsonnet: typeof jsonnetPackage
   qemu: typeof qemuPackage
@@ -6041,7 +6042,7 @@ export const pantry: Pantry = {
   filippoioage: agePackage,
   yubikey_agent: yubikeyagentPackage,
   filippoioyubikeyagent: yubikeyagentPackage,
-  fishshellcom: fishshellcomPackage,
+  fishshellcom: fishPackage,
   fliptio: fliptPackage,
   flitpypaio: flitPackage,
   fltkorg: fltkorgPackage,
@@ -8190,6 +8191,7 @@ export const pantry: Pantry = {
   pyright: pyrightPackage,
   azcopy: azcopyPackage,
   replibyte: replibytePackage,
+  fish: fishPackage,
   duckdb: duckdbPackage,
   jsonnet: jsonnetPackage,
   qemu: qemuPackage,
