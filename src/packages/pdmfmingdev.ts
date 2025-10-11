@@ -3,7 +3,7 @@
  *
  * @domain `pdm.fming.dev`
  * @programs `pdm`
- * @version `2.25.9` (74 versions available)
+ * @version `2.26.0` (75 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pdm`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "pdm"
  * console.log(pkg.description) // "A modern Python package and dependency manager ..."
  * console.log(pkg.programs)    // ["pdm"]
- * console.log(pkg.versions[0]) // "2.25.9" (latest)
+ * console.log(pkg.versions[0]) // "2.26.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pdm-fming-dev.md
@@ -69,6 +69,7 @@ export const pdmPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.26.0',
     '2.25.9',
     '2.25.7',
     '2.25.6',
