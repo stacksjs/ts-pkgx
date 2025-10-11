@@ -293,7 +293,6 @@ export const aliases: Record<string, string> = {
   'fido2': 'developers.yubico.com/libfido2',
   'file': 'darwinsys.com/file',
   'firebase': 'google.com/firebase-tools',
-  'fish': 'fishshell.com',
   'fizz': 'github.com/facebookincubator/fizz',
   'flac': 'xiph.org/flac',
   'flex': 'github.com/westes/flex',

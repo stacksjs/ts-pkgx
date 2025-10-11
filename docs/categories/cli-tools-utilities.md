@@ -1,6 +1,6 @@
 # CLI Tools & Utilities
 
-*35 packages in this category*
+*34 packages in this category*
 
 Command-line utilities and system tools.
 
@@ -163,16 +163,6 @@ A command-line DNS client.
 **Programs**: dog
 
 **Install**: `launchpad install dog`
-
----
-
-### [fishshell.com](../packages/fishshell.com/index.md) (fish)
-
-User-friendly command-line shell for UNIX-like operating systems
-
-**Programs**: fish, fish_indent, fish_key_reader
-
-**Install**: `launchpad install fish`
 
 ---
 
