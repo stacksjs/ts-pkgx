@@ -3,7 +3,7 @@
  *
  * @domain `nasm.us`
  * @programs `nasm`, `ndisasm`
- * @version `3.0.0` (4 versions available)
+ * @version `3.1.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nasm.us`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "nasm.us"
  * console.log(pkg.description) // "A cross-platform x86 assembler with an Intel-li..."
  * console.log(pkg.programs)    // ["nasm", "ndisasm"]
- * console.log(pkg.versions[0]) // "3.0.0" (latest)
+ * console.log(pkg.versions[0]) // "3.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nasm-us.md
@@ -58,6 +58,7 @@ export const nasmusPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.1.0',
     '3.0.0',
     '2.16.3',
     '2.16.2',
