@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 2 versions</summary>
+<summary>Show all 3 versions</summary>
 
-- `2.9.10`, `2.9.9`
+- `2.9.11`, `2.9.10`, `2.9.9`
 
 </details>
 
-**Latest Version**: `2.9.10`
+**Latest Version**: `2.9.11`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +psycopg.org/psycopg2@2.9.10 -- $SHELL -i
+sh <(curl https://pkgx.sh) +psycopg.org/psycopg2@2.9.11 -- $SHELL -i
 ```
 
 ## Dependencies

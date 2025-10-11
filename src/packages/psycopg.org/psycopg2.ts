@@ -2,7 +2,7 @@
  * **psycopg.org/psycopg2** - PostgreSQL database adapter for the Python programming language
  *
  * @domain `psycopg.org/psycopg2`
- * @version `2.9.10` (2 versions available)
+ * @version `2.9.11` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install psycopg.org/psycopg2`
@@ -15,7 +15,7 @@
  * const pkg = pantry.psycopgorgpsycopg2
  * console.log(pkg.name)        // "psycopg.org/psycopg2"
  * console.log(pkg.description) // "PostgreSQL database adapter for the Python prog..."
- * console.log(pkg.versions[0]) // "2.9.10" (latest)
+ * console.log(pkg.versions[0]) // "2.9.11" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/psycopg-org/psycopg2.md
@@ -57,6 +57,7 @@ export const psycopgorgpsycopg2Package = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.9.11',
     '2.9.10',
     '2.9.9',
   ] as const,
