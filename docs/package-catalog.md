@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1397
 - **Categories**: 27
-- **Last Updated**: 2025-10-12T13:34:22.528Z
+- **Last Updated**: 2025-10-12T14:30:38.143Z
 
 ## Table of Contents
 
@@ -248,7 +248,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[microsoft.com/code-cli](./packages/microsoft.com/code-cli/index.md)** (code) | Command-line interface built-in Visual Studio Code | code | 1.105.0 (+26) | `pkgx code` |
 | **[nano-editor.org](./packages/nano-editor.org/index.md)** () | Free (GNU) replacement for the Pico text editor | nano | 8.0.0 (+1) | `pkgx nano` |
 | **[neovim.io](./packages/neovim.io/index.md)** () | Ambitious Vim-fork focused on extensibility and agility | nvim | 0.11.4 (+16) | `pkgx nvim` |
-| **[vim.org](./packages/vim.org/index.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1846 (+2400) | `pkgx vi` |
+| **[vim.org](./packages/vim.org/index.md)** (vim, vi) | The official Vim repository | vim, vi | 9.1.1848 (+2402) | `pkgx vi` |
 | **[wezfurlong.org/wezterm](./packages/wezfurlong.org/wezterm/index.md)** () | A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemente... | wezterm | 2024.2.3 (+0) | `pkgx wezterm` |
 
 ## CLI Tools & Utilities
@@ -276,7 +276,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[fishshell.com](./packages/fishshell.com/index.md)** () | User-friendly command-line shell for UNIX-like operating systems | fish, fish_indent, fish_key_reader | 4.1.2 (+16) | `pkgx fish` |
 | **[github.com/aristocratos/btop](./packages/github.com/aristocratos/btop.md)** () | Resource monitor. C++ version and continuation of bashtop and bpytop | btop | 1.4.5 (+8) | `pkgx btop` |
 | **[github.com/dundee/gdu](./packages/github.com/dundee/gdu.md)** () | Fast disk usage analyzer with console interface written in Go | gdu | 5.31.0 (+3) | `pkgx gdu` |
-| **[github.com/junegunn/fzf](./packages/github.com/junegunn/fzf.md)** () | :cherry_blossom: A command-line fuzzy finder | fzf | 0.65.2 (+49) | `pkgx fzf` |
+| **[github.com/junegunn/fzf](./packages/github.com/junegunn/fzf.md)** () | :cherry_blossom: A command-line fuzzy finder | fzf | 0.66.0 (+50) | `pkgx fzf` |
 | **[github.com/mikefarah/yq](./packages/github.com/mikefarah/yq.md)** () | yq is a portable command-line YAML, JSON, XML, CSV, TOML and properties processor | yq | 4.48.1 (+36) | `pkgx yq` |
 | **[github.com/muesli/duf](./packages/github.com/muesli/duf.md)** () | Disk Usage/Free Utility - a better &#39;df&#39; alternative | duf | 0.9.1 (+2) | `pkgx duf` |
 | **[github.com/peltoche/lsd](./packages/github.com/peltoche/lsd.md)** () | Clone of ls with colorful output, file type icons, and more | lsd | 1.2.0 (+7) | `pkgx lsd` |
