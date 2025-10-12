@@ -3,7 +3,7 @@
  *
  * @domain `github.com/peltoche/lsd`
  * @programs `lsd`
- * @version `1.1.5` (7 versions available)
+ * @version `1.2.0` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install lsd`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "lsd"
  * console.log(pkg.description) // "Clone of ls with colorful output, file type ico..."
  * console.log(pkg.programs)    // ["lsd"]
- * console.log(pkg.versions[0]) // "1.1.5" (latest)
+ * console.log(pkg.versions[0]) // "1.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/peltoche/lsd.md
@@ -69,6 +69,7 @@ export const lsdPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.2.0',
     '1.1.5',
     '1.1.3',
     '1.1.2',
