@@ -2,7 +2,7 @@
  * **github.com/kjd/idna** - Internationalized Domain Names for Python (IDNA 2008 and UTS #46)
  *
  * @domain `github.com/kjd/idna`
- * @version `3.10.0` (5 versions available)
+ * @version `3.11.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/kjd/idna`
@@ -15,7 +15,7 @@
  * const pkg = pantry.githubcomkjdidna
  * console.log(pkg.name)        // "github.com/kjd/idna"
  * console.log(pkg.description) // "Internationalized Domain Names for Python (IDNA..."
- * console.log(pkg.versions[0]) // "3.10.0" (latest)
+ * console.log(pkg.versions[0]) // "3.11.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/kjd/idna.md
@@ -56,6 +56,7 @@ export const githubcomkjdidnaPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.11.0',
     '3.10.0',
     '3.9.0',
     '3.8.0',
