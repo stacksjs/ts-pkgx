@@ -1,11 +1,11 @@
-# tinygo
+# tinygo.org
 
-> Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM.
+> Package from pantry: tinygo.org
 
 ## Package Information
 
 - **Domain**: `tinygo.org`
-- **Name**: `tinygo`
+- **Name**: `tinygo.org`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tinygo.org/package.yml)
 
@@ -13,33 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install tinygo
+launchpad install tinygo.org
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `tinygo`
-
-## Available Versions
-
-<details>
-<summary>Show all 9 versions</summary>
-
-- `0.39.0`, `0.38.0`, `0.37.0`, `0.36.0`, `0.35.0`
-- `0.34.0`, `0.33.0`, `0.32.0`, `0.31.2`
-
-</details>
-
-**Latest Version**: `0.39.0`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) tinygo -- $SHELL -i
-```
+*No programs specified*
 
 ## Dependencies
 
@@ -47,19 +28,13 @@ This package depends on:
 
 - `go.dev`
 
-## Related Packages
-
-These packages work well with tinygo:
-
-- [`llvm.org`](../llvm.org/index.md) - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.tinygo
+const pkg = pantry['tinygo.org']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

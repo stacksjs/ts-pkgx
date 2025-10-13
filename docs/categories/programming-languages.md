@@ -1,6 +1,6 @@
 # Programming Languages
 
-*14 packages in this category*
+*13 packages in this category*
 
 Popular programming languages and their runtimes available through pkgx.
 
@@ -126,23 +126,13 @@ The Swift Programming Language
 
 ---
 
-### [tinygo.org](../packages/tinygo.org/index.md) (tinygo)
+### [tcl.tk/tcl](../packages/tcl.tk/tcl/index.md) (tcl)
 
-Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and command-line tools. Based on LLVM.
+Package from pantry: tcl.tk/tcl
 
-**Programs**: tinygo
+**Programs**: None specified
 
-**Install**: `launchpad install tinygo`
-
----
-
-### [ziglang.org](../packages/ziglang.org/index.md) (zig)
-
-General-purpose programming language and toolchain for maintaining robust, optimal, and reusable software.
-
-**Programs**: zig
-
-**Install**: `launchpad install zig`
+**Install**: `launchpad install tcl.tk/tcl`
 
 ---
 

@@ -1,6 +1,6 @@
 # versitygw
 
-> versity s3 gateway
+> Package from pantry: versity.com/versitygw
 
 ## Package Information
 
@@ -13,34 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install versitygw
+launchpad install versity.com/versitygw
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `versitygw`
-
-## Available Versions
-
-<details>
-<summary>Show all 14 versions</summary>
-
-- `1.0.18`, `1.0.17`, `1.0.16`, `1.0.15`, `1.0.14`
-- `1.0.13`, `1.0.12`, `1.0.11`, `1.0.10`, `1.0.9`
-- `1.0.8`, `1.0.7`, `1.0.6`, `1.0.5`
-
-</details>
-
-**Latest Version**: `1.0.18`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) versitygw -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 

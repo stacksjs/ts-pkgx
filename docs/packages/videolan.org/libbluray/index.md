@@ -28,7 +28,7 @@ This package depends on:
 
 - `freedesktop.org/fontconfig`
 - `freetype.org`
-- `darwin:gnome.org/libxml2`
+- `gnome.org/libxml2~2.13 # API changed in 2.14`
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# uriparse
+# uriparser.github.io
 
-> :hocho: Strictly RFC 3986 compliant URI parsing and handling library written in C89; moved from SourceForge to GitHub
+> Package from pantry: uriparser.github.io
 
 ## Package Information
 
 - **Domain**: `uriparser.github.io`
-- **Name**: `uriparse`
+- **Name**: `uriparser.github.io`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/uriparser.github.io/package.yml)
 
@@ -13,32 +13,14 @@
 
 ```bash
 # Install with launchpad
-launchpad install uriparse
+launchpad install uriparser.github.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
 
-- `uriparse`
-
-## Available Versions
-
-<details>
-<summary>Show all 3 versions</summary>
-
-- `0.9.9`, `0.9.8`, `0.9.7`
-
-</details>
-
-**Latest Version**: `0.9.9`
-
-### Install Specific Version
-
-```bash
-# Install specific version
-sh <(curl https://pkgx.sh) uriparse -- $SHELL -i
-```
+*No programs specified*
 
 ## Usage Examples
 
@@ -46,7 +28,7 @@ sh <(curl https://pkgx.sh) uriparse -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.uriparse
+const pkg = pantry['uriparser.github.io']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
