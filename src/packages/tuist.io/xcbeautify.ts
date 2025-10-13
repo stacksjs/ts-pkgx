@@ -1,23 +1,33 @@
 /**
- * **xcbeautify** - Package from pantry: tuist.io/xcbeautify
+ * **xcbeautify** - A little beautifier tool for xcodebuild
  *
  * @domain `tuist.io/xcbeautify`
+ * @programs `xcbeautify`
+ * @version `2.30.1` (52 versions available)
+ * @versions From newest version to oldest.
  *
- * @install `launchpad install tuist.io/xcbeautify`
+ * @install `launchpad install xcbeautify`
+ * @name `xcbeautify`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * const pkg = pantry.tuistioxcbeautify
+ * // Access the package
+ * const pkg = pantry.xcbeautify
+ * // Or access via domain
+ * const samePkg = pantry.tuistioxcbeautify
+ * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "xcbeautify"
- * console.log(pkg.description) // "Package from pantry: tuist.io/xcbeautify"
+ * console.log(pkg.description) // "A little beautifier tool for xcodebuild"
+ * console.log(pkg.programs)    // ["xcbeautify"]
+ * console.log(pkg.versions[0]) // "2.30.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tuist-io/xcbeautify.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tuistioxcbeautifyPackage = {
+export const xcbeautifyPackage = {
   /**
    * The display name of this package.
    */
@@ -29,21 +39,89 @@ export const tuistioxcbeautifyPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Package from pantry: tuist.io/xcbeautify' as const,
+  description: 'A little beautifier tool for xcodebuild' as const,
+  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tuist.io/xcbeautify/package.yml' as const,
+  homepageUrl: '' as const,
+  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tuist.io/xcbeautify' as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tuist.io/xcbeautify -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tuist.io/xcbeautify' as const,
-  programs: [] as const,
+  installCommand: 'launchpad install xcbeautify' as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'xcbeautify',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
-  versions: [] as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tuist.io/xcbeautify/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '2.30.1',
+    '2.30.0',
+    '2.29.0',
+    '2.28.0',
+    '2.27.0',
+    '2.26.0',
+    '2.25.1',
+    '2.25.0',
+    '2.24.0',
+    '2.23.0',
+    '2.22.0',
+    '2.21.0',
+    '2.20.0',
+    '2.19.0',
+    '2.18.0',
+    '2.17.0',
+    '2.16.1',
+    '2.16.0',
+    '2.15.0',
+    '2.14.1',
+    '2.14.0',
+    '2.13.0',
+    '2.12.0',
+    '2.11.0',
+    '2.10.1',
+    '2.10.0',
+    '2.9.0',
+    '2.7.0',
+    '2.5.0',
+    '2.4.1',
+    '2.4.0',
+    '2.3.1',
+    '2.3.0',
+    '2.2.0',
+    '2.1.1',
+    '2.1.0',
+    '2.0.1',
+    '2.0.0',
+    '1.7.0',
+    '1.6.0',
+    '1.5.0',
+    '1.4.0',
+    '1.3.1',
+    '1.3.0',
+    '1.2.0',
+    '1.1.1',
+    '1.1.0',
+    '1.0.1',
+    '1.0.0',
+    '0.21.1',
+    '0.21.0',
+    '0.20.0',
+  ] as const,
+  /**
+   * Alternative names for this package.
+   * You can use any of these names to access the package.
+   */
+  aliases: [] as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xcbeautify -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xcbeautify' as const,
 }
 
-export type TuistioxcbeautifyPackage = typeof tuistioxcbeautifyPackage
+export type XcbeautifyPackage = typeof xcbeautifyPackage

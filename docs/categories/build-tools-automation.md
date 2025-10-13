@@ -1,6 +1,6 @@
 # Build Tools & Automation
 
-*14 packages in this category*
+*15 packages in this category*
 
 Packages related to build tools & automation.
 
@@ -143,6 +143,16 @@ Substitute for classic 'make' tool with autoconf/automake functionality
 **Programs**: scons
 
 **Install**: `launchpad install scons`
+
+---
+
+### [taskfile.dev](../packages/taskfile.dev/index.md) (task)
+
+A task runner / simpler Make alternative written in Go
+
+**Programs**: task
+
+**Install**: `launchpad install task`
 
 ---
 

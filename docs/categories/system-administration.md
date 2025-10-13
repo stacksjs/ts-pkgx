@@ -38,21 +38,21 @@ strace is a diagnostic, debugging and instructional userspace utility for Linux
 
 ### [systemd.io](../packages/systemd.io/index.md)
 
-Package from pantry: systemd.io
+The systemd System and Service Manager
 
-**Programs**: None specified
+**Programs**: busctl, coredumpctl, hostnamectl, journalctl, kernel-install, localectl, loginctl, machinectl, networkctl, oomctl, portablectl, resolvectl, systemctl, systemd-ac-power, systemd-analyze, systemd-ask-password, systemd-cat, systemd-cgls, systemd-cgtop, systemd-confext, systemd-creds, systemd-delta, systemd-detect-virt, systemd-dissect, systemd-escape, systemd-firstboot, systemd-id128, systemd-inhibit, systemd-machine-id-setup, systemd-mount, systemd-notify, systemd-nspawn, systemd-path, systemd-repart, systemd-resolve, systemd-run, systemd-socket-activate, systemd-stdio-bridge, systemd-sysext, systemd-sysusers, systemd-tmpfiles, systemd-tty-ask-password-agent, systemd-umount, timedatectl, udevadm, userdbctl, halt, init, mount.ddi, poweroff, reboot, resolvconf, runlevel, shutdown, telinit
 
 **Install**: `launchpad install systemd.io`
 
 ---
 
-### [tcpdump.org](../packages/tcpdump.org/index.md)
+### [tcpdump.org](../packages/tcpdump.org/index.md) (pcap-config)
 
-Package from pantry: tcpdump.org
+the LIBpcap interface to various kernel packet capture mechanism
 
-**Programs**: None specified
+**Programs**: pcap-config
 
-**Install**: `launchpad install tcpdump.org`
+**Install**: `launchpad install pcap-config`
 
 ---
 
