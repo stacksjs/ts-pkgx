@@ -1,6 +1,6 @@
 # Cryptocurrency
 
-*4 packages in this category*
+*5 packages in this category*
 
 Packages related to cryptocurrency.
 
@@ -23,6 +23,16 @@ Open Source implementation of advanced blockchain features extending the Bitcoin
 **Programs**: bench_bitcoin, elements-cli, elements-tx, elements-util, elements-wallet, elementsd, test_bitcoin
 
 **Install**: `launchpad install elementsproject.org`
+
+---
+
+### [getfoundry.sh](../packages/getfoundry.sh/index.md)
+
+Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.
+
+**Programs**: forge, anvil, cast, chisel
+
+**Install**: `launchpad install getfoundry.sh`
 
 ---
 
