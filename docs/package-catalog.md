@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1397+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1396+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1397
+- **Total Packages**: 1396
 - **Categories**: 27
-- **Last Updated**: 2025-10-13T07:32:57.935Z
+- **Last Updated**: 2025-10-13T09:32:44.605Z
 
 ## Table of Contents
 
@@ -31,7 +31,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [Cloud Platforms](#cloud-platforms) (8 packages)
 - [Mobile Development](#mobile-development) (4 packages)
 - [Testing](#testing) (1 packages)
-- [Cryptocurrency](#cryptocurrency) (5 packages)
+- [Cryptocurrency](#cryptocurrency) (4 packages)
 - [Financial Tools](#financial-tools) (1 packages)
 - [Documentation & Text Processing](#documentation-text-processing) (7 packages)
 - [System Administration](#system-administration) (5 packages)
@@ -396,13 +396,12 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Cryptocurrency
 
-*5 packages in this category*
+*4 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[bitcoin.org](./packages/bitcoin.org/index.md)** () | Decentralized, peer to peer payment network | bitcoin-cli, bitcoin-tx, bitcoin-util, ... (+2) | 29.1.0 (+17) | `pkgx bitcoin` |
 | **[elementsproject.org](./packages/elementsproject.org/index.md)** () | Open Source implementation of advanced blockchain features extending the Bitcoin protocol | bench_bitcoin, elements-cli, elements-tx, ... (+4) | 23.3.0 (+8) | `pkgx elementsproject.org` |
-| **[getfoundry.sh](./packages/getfoundry.sh/index.md)** () | Foundry is a blazing fast, portable and modular toolkit for Ethereum application development writ... | forge, anvil, cast, ... (+1) | 2024.4.12 (+16) | `pkgx getfoundry.sh` |
 | **[ghostscript.com](./packages/ghostscript.com/index.md)** () | This is purely for downloads, please check the website for full information | dvipdf, eps2eps, gpcl6, ... (+30) | 10.6.0 (+7) | `pkgx ghostscript.com` |
 | **[solana.com](./packages/solana.com/index.md)** () | Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces. | solana, solana-keygen, solana-bench-streamer, ... (+7) | 1.18.26 (+82) | `pkgx solana` |
 

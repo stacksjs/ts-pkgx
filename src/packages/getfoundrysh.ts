@@ -1,10 +1,7 @@
 /**
- * **getfoundry.sh** - Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.
+ * **getfoundry.sh** - pkgx package
  *
  * @domain `getfoundry.sh`
- * @programs `forge`, `anvil`, `cast`, `chisel`
- * @version `2024.4.12` (17 versions available)
- * @versions From newest version to oldest.
  *
  * @install `launchpad install getfoundry.sh`
  * @dependencies `git-scm.org^2`
@@ -15,9 +12,6 @@
  *
  * const pkg = pantry.getfoundrysh
  * console.log(pkg.name)        // "getfoundry.sh"
- * console.log(pkg.description) // "Foundry is a blazing fast, portable and modular..."
- * console.log(pkg.programs)    // ["forge", "anvil", ...]
- * console.log(pkg.versions[0]) // "2024.4.12" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/getfoundry-sh.md
@@ -35,25 +29,16 @@ export const getfoundryshPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.' as const,
-  packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/getfoundry.sh/package.yml' as const,
+  description: '' as const,
+  packageYmlUrl: '' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install getfoundry.sh' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'forge',
-    'anvil',
-    'cast',
-    'chisel',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Required dependencies for this package.
@@ -62,29 +47,7 @@ export const getfoundryshPackage = {
   dependencies: [
     'git-scm.org^2',
   ] as const,
-  /**
-   * Available versions from newest to oldest.
-   * @see https://ts-pkgx.netlify.app/usage for installation instructions
-   */
-  versions: [
-    '2024.4.12',
-    '2023.12.7',
-    '2023.7.16',
-    '1.4.0',
-    '1.3.6',
-    '1.3.5',
-    '1.3.4',
-    '1.3.3',
-    '1.3.1',
-    '1.3.0',
-    '1.2.3',
-    '1.2.2',
-    '1.2.1',
-    '1.2.0',
-    '1.1.0',
-    '1.0.0',
-    '0.3.0',
-  ] as const,
+  versions: [] as const,
   aliases: [] as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +getfoundry.sh -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install getfoundry.sh' as const,
