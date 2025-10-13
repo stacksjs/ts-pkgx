@@ -3,7 +3,7 @@
  *
  * @domain `scala-lang.org`
  * @programs `scalac`, `scala`, `scala-cli`, `sbtn`, `amm`
- * @version `3.7.3` (11 versions available)
+ * @version `3.7.3` (12 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install scala-lang.org`
@@ -77,6 +77,7 @@ export const scalalangorgPackage = {
     '3.6.2',
     '3.5.2',
     '3.5.1',
+    '3.3.7',
     '3.3.6',
     '3.3.5',
   ] as const,
