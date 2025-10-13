@@ -3,7 +3,7 @@
  *
  * @domain `supabase.com/cli`
  * @programs `supabase`
- * @version `2.48.3` (192 versions available)
+ * @version `2.51.0` (193 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install supabase`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "supabase"
  * console.log(pkg.description) // "Supabase CLI. Manage postgres migrations, run S..."
  * console.log(pkg.programs)    // ["supabase"]
- * console.log(pkg.versions[0]) // "2.48.3" (latest)
+ * console.log(pkg.versions[0]) // "2.51.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/supabase-com/cli.md
@@ -62,6 +62,7 @@ export const supabasePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.51.0',
     '2.48.3',
     '2.47.2',
     '2.45.5',
