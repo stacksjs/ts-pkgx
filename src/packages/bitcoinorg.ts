@@ -3,7 +3,7 @@
  *
  * @domain `bitcoin.org`
  * @programs `bitcoin-cli`, `bitcoin-tx`, `bitcoin-util`, `bitcoin-wallet`, `bitcoind`
- * @version `29.1.0` (18 versions available)
+ * @version `29.2.0` (19 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bitcoin`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "bitcoin"
  * console.log(pkg.description) // "Decentralized, peer to peer payment network"
  * console.log(pkg.programs)    // ["bitcoin-cli", "bitcoin-tx", ...]
- * console.log(pkg.versions[0]) // "29.1.0" (latest)
+ * console.log(pkg.versions[0]) // "29.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/bitcoin-org.md
@@ -79,6 +79,7 @@ export const bitcoinPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '29.2.0',
     '29.1.0',
     '29.0.0',
     '28.2.0',
