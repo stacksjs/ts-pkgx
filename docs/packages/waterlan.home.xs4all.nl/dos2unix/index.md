@@ -28,19 +28,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 1 versions</summary>
+<summary>Show all 2 versions</summary>
 
-- `7.5.2`
+- `7.5.3`, `7.5.2`
 
 </details>
 
-**Latest Version**: `7.5.2`
+**Latest Version**: `7.5.3`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +waterlan.home.xs4all.nl/dos2unix@7.5.2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +waterlan.home.xs4all.nl/dos2unix@7.5.3 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -3,7 +3,7 @@
  *
  * @domain `waterlan.home.xs4all.nl/dos2unix`
  * @programs `dos2unix`, `mac2unix`, `unix2dos`, `unix2mac`
- * @version `7.5.2` (1 versions available)
+ * @version `7.5.3` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dos2unix`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "dos2unix"
  * console.log(pkg.description) // "Convert text between DOS, UNIX, and Mac formats"
  * console.log(pkg.programs)    // ["dos2unix", "mac2unix", ...]
- * console.log(pkg.versions[0]) // "7.5.2" (latest)
+ * console.log(pkg.versions[0]) // "7.5.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/waterlan-home-xs4all-nl/dos2unix.md
@@ -72,6 +72,7 @@ export const dos2unixPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '7.5.3',
     '7.5.2',
   ] as const,
   /**
