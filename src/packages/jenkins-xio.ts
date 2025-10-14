@@ -3,7 +3,7 @@
  *
  * @domain `jenkins-x.io`
  * @programs `jx`
- * @version `3.16.24` (73 versions available)
+ * @version `3.16.25` (74 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jx`
@@ -22,7 +22,7 @@
  * console.log(pkg.name)        // "Jenkins X"
  * console.log(pkg.description) // "Jenkins X provides automated CI+CD for Kubernet..."
  * console.log(pkg.programs)    // ["jx"]
- * console.log(pkg.versions[0]) // "3.16.24" (latest)
+ * console.log(pkg.versions[0]) // "3.16.25" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/jenkins-x-io.md
@@ -63,6 +63,7 @@ export const jxPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.16.25',
     '3.16.24',
     '3.16.21',
     '3.16.19',
