@@ -3,7 +3,7 @@
  *
  * @domain `github.com/k0sproject/k0sctl`
  * @programs `k0sctl`
- * @version `0.25.1` (20 versions available)
+ * @version `0.26.0` (21 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install k0sctl`
@@ -21,7 +21,7 @@
  * console.log(pkg.name)        // "k0sctl"
  * console.log(pkg.description) // "A bootstrapping and management tool for k0s clu..."
  * console.log(pkg.programs)    // ["k0sctl"]
- * console.log(pkg.versions[0]) // "0.25.1" (latest)
+ * console.log(pkg.versions[0]) // "0.26.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/k0sproject/k0sctl.md
@@ -62,6 +62,7 @@ export const k0sctlPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.26.0',
     '0.25.1',
     '0.25.0',
     '0.24.0',
