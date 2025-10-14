@@ -3,7 +3,7 @@
  *
  * @domain `dotnet.microsoft.com`
  * @programs `dotnet`
- * @version `9.0.303` (33 versions available)
+ * @version `9.0.303` (36 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dotnet`
@@ -75,11 +75,13 @@ export const dotnetPackage = {
     '9.0.202',
     '9.0.102',
     '9.0.100',
+    '8.0.415',
     '8.0.410',
     '8.0.405',
     '8.0.403',
     '8.0.402',
     '8.0.401',
+    '8.0.318',
     '8.0.313',
     '8.0.308',
     '8.0.303',
@@ -88,6 +90,7 @@ export const dotnetPackage = {
     '8.0.206',
     '8.0.204',
     '8.0.203',
+    '8.0.121',
     '8.0.112',
     '8.0.107',
     '8.0.106',
