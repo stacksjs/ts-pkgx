@@ -16,7 +16,7 @@
         "typescript": "^5.9.3",
       },
       "optionalDependencies": {
-        "chromium-bidi": "^7.3.2",
+        "chromium-bidi": "^10.3.0",
         "electron": "^38.2.2",
         "js-yaml": "^4.1.0",
         "playwright": "^1.56.0",
@@ -838,7 +838,7 @@
 
     "chokidar": ["chokidar@3.6.0", "", { "dependencies": { "anymatch": "~3.1.2", "braces": "~3.0.2", "glob-parent": "~5.1.2", "is-binary-path": "~2.1.0", "is-glob": "~4.0.1", "normalize-path": "~3.0.0", "readdirp": "~3.6.0" }, "optionalDependencies": { "fsevents": "~2.3.2" } }, "sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw=="],
 
-    "chromium-bidi": ["chromium-bidi@7.3.2", "", { "dependencies": { "mitt": "^3.0.1", "zod": "^3.24.1" }, "peerDependencies": { "devtools-protocol": "*" } }, "sha512-80J9hiQvSxqQAGhC6vsOa5yfG8lrusrSrR7eAIViDkoK5wnXi15z5iLQYegUTc4ELDUIkq37Ob1Xx8VRwYUDRg=="],
+    "chromium-bidi": ["chromium-bidi@10.3.0", "", { "dependencies": { "mitt": "^3.0.1", "zod": "^3.24.1" }, "peerDependencies": { "devtools-protocol": "*" } }, "sha512-uWUaPlAcCd633ph+q8Vxezaasv+C227R/mwaXXs2jWYqqwT8sh0X/d51wJhJP3GHlKxTTMS/R+2+havgycPiog=="],
 
     "ci-info": ["ci-info@4.3.0", "", {}, "sha512-l+2bNRMiQgcfILUi33labAZYIWlH1kWDp+ecNo5iisRKrbm0xcRyCww71/YU0Fkw0mAFpz9bJayXPjey6vkmaQ=="],
 
@@ -2077,6 +2077,8 @@
     "tempy/type-fest": ["type-fest@0.16.0", "", {}, "sha512-eaBzG6MxNzEn9kiwvtre90cXaNLkmadMWa1zQMs3XORCXNbsH/OewwbxC5ia9dCxIxnTAsSxXJaa/p5y8DlvJg=="],
 
     "toml-eslint-parser/eslint-visitor-keys": ["eslint-visitor-keys@3.4.3", "", {}, "sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag=="],
+
+    "ts-pkgx/chromium-bidi": ["chromium-bidi@7.3.2", "", { "dependencies": { "mitt": "^3.0.1", "zod": "^3.24.1" }, "peerDependencies": { "devtools-protocol": "*" } }, "sha512-80J9hiQvSxqQAGhC6vsOa5yfG8lrusrSrR7eAIViDkoK5wnXi15z5iLQYegUTc4ELDUIkq37Ob1Xx8VRwYUDRg=="],
 
     "ts-pkgx/electron": ["electron@37.4.0", "", { "dependencies": { "@electron/get": "^2.0.0", "@types/node": "^22.7.7", "extract-zip": "^2.0.1" }, "bin": { "electron": "cli.js" } }, "sha512-HhsSdWowE5ODOeWNc/323Ug2C52mq/TqNBG+4uMeOA3G2dMXNc/nfyi0RYu1rJEgiaJLEjtHveeZZaYRYFsFCQ=="],
 
