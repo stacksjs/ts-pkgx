@@ -25,15 +25,16 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 15 versions</summary>
+<summary>Show all 16 versions</summary>
 
-- `5.6.0`, `5.5.1`, `5.5.0`, `5.4.1`, `5.4.0`
-- `5.3.0`, `5.2.1`, `5.1.0`, `5.0.5`, `5.0.3`
-- `5.0.0`, `4.1.0`, `4.0.1`, `3.7.0`, `3.4.0`
+- `5.6.1`, `5.6.0`, `5.5.1`, `5.5.0`, `5.4.1`
+- `5.4.0`, `5.3.0`, `5.2.1`, `5.1.0`, `5.0.5`
+- `5.0.3`, `5.0.0`, `4.1.0`, `4.0.1`, `3.7.0`
+- `3.4.0`
 
 </details>
 
-**Latest Version**: `5.6.0`
+**Latest Version**: `5.6.1`
 
 ### Install Specific Version
 
