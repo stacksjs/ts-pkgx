@@ -2,6 +2,7 @@ antfu
 biomejs
 booleanish
 bumpp
+bumpx
 bunfig
 bunx
 changelogen
@@ -17,10 +18,12 @@ deps
 destructurable
 dtsx
 entrypoints
+gitlint
 happydom
 heroicons
 iconify
 lockb
+logsmith
 openweb
 outdir
 pausable

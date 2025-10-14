@@ -8,7 +8,7 @@ const libraryResult = await Bun.build({
   outdir: './dist',
   target: 'node',
   // minify: true,
-  external: ['playwright-core', 'playwright'],
+  external: ['ts-web-scraper'],
   plugins: [dts()],
 })
 
@@ -26,7 +26,7 @@ const cliResult = await Bun.build({
   outdir: './dist/bin',
   target: 'node',
   // minify: true,
-  external: ['playwright-core'],
+  external: ['ts-web-scraper'],
   // Don't generate .d.ts files for CLI
 })
 

@@ -28,6 +28,8 @@ export {
 export * from './launchpad-api'
 export * from './package-types'
 export * from './packages'
+export * from './pkgx-fetcher'
+export * from './pkgx-scraper'
 export * from './types'
 export {
   convertDomainToFileName,
