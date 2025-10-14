@@ -3,7 +3,7 @@
  *
  * @domain `getfoundry.sh`
  * @programs `forge`, `anvil`, `cast`, `chisel`
- * @version `2024.4.12` (17 versions available)
+ * @version `2024.4.12` (18 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install getfoundry.sh`
@@ -70,6 +70,7 @@ export const getfoundryshPackage = {
     '2024.4.12',
     '2023.12.7',
     '2023.7.16',
+    '1.4.1',
     '1.4.0',
     '1.3.6',
     '1.3.5',
