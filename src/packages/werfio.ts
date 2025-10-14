@@ -3,7 +3,7 @@
  *
  * @domain `werf.io`
  * @programs `werf`
- * @version `2.49.1` (175 versions available)
+ * @version `2.49.1` (176 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install werf`
@@ -64,6 +64,7 @@ export const werfPackage = {
   versions: [
     '2.49.1',
     '2.49.0',
+    '2.48.2',
     '2.48.1',
     '2.48.0',
     '2.47.10',
