@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `11.3.0`, `11.2.1`, `11.1.0`, `11.0.0`, `10.4.0`
-- `10.3.0`, `10.2.0`
+- `12.0.0`, `11.3.0`, `11.2.1`, `11.1.0`, `11.0.0`
+- `10.4.0`, `10.3.0`, `10.2.0`
 
 </details>
 
-**Latest Version**: `11.3.0`
+**Latest Version**: `12.0.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +python-pillow.org@11.3.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +python-pillow.org@12.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
