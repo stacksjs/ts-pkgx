@@ -82,12 +82,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +digger.dev@0.6.128 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.21`
-
 ## Usage Examples
 
 ```typescript

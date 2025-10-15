@@ -44,12 +44,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +aomedia.googlesource.com/aom@3.13.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org@^3`
-
 ## Usage Examples
 
 ```typescript

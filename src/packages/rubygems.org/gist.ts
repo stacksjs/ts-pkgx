@@ -9,6 +9,7 @@
  * @install `launchpad install rubygems.org/gist`
  * @homepage http://defunkt.io/gist/
  * @dependencies `ruby-lang.org^3`
+ * @buildDependencies `rubygems.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,18 @@ export const rubygemsorggistPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'ruby-lang.org^3',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'rubygems.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

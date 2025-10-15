@@ -8,6 +8,7 @@
  *
  * @install `launchpad install github.com/Genymobile/scrcpy`
  * @dependencies `ffmpeg.org`, `libusb.info`, `libsdl.org`, ... (+3 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `mesonbuild.com`, `gnu.org/wget`, `gnu.org/patch` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,8 +56,8 @@ export const scrcpyPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -66,6 +67,15 @@ export const scrcpyPackage = {
     'linux:webmproject.org/libvpx<1.15.1 # since 3.3, .9 lib api',
     'darwin:sourceware.org/bzip2',
     'darwin:zlib.net',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'mesonbuild.com',
+    'gnu.org/wget',
+    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -9,6 +9,7 @@
  * @install `launchpad install coder.com/code-server`
  * @homepage https://coder.com
  * @dependencies `nodejs.org^22 # since 4.101.0`, `linux:gnome.org/libsecret^0.21`, `linux:x.org/x11^1.8`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `npmjs.com`, `python.org@>=3.11` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,8 +57,8 @@ export const codercomcodeserverPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -66,6 +67,14 @@ export const codercomcodeserverPackage = {
     'linux:x.org/x11^1.8',
     'linux:x.org/xkbfile^1.1',
     'linux:kerberos.org^1.21',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'npmjs.com',
+    'python.org@>=3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

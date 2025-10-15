@@ -9,6 +9,7 @@
  * @install `launchpad install cairographics.org`
  * @homepage https://cairographics.org/
  * @dependencies `libpng.org@1`, `pixman.org^0.40.0`, `freetype.org@2`, ... (+8 more)
+ * @buildDependencies `libexpat.github.io@=2.4.9`, `gnu.org/libtool@^2`, `mesonbuild.com@^1` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,8 +57,8 @@ export const cairographicsorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'libpng.org@1',
@@ -71,6 +72,15 @@ export const cairographicsorgPackage = {
     'x.org/exts',
     'x.org/xrender',
     'oberhumer.com/lzo',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'libexpat.github.io@=2.4.9',
+    'gnu.org/libtool@^2',
+    'mesonbuild.com@^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +pyyaml.org/libyaml@0.2.5 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/libtool`
-- `gnu.org/autoconf`
-
 ## Usage Examples
 
 ```typescript

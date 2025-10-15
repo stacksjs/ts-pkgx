@@ -10,6 +10,7 @@
  * @aliases `yarn`
  * @homepage https://yarnpkg.com/
  * @dependencies `nodejs.org>=5`
+ * @buildDependencies `npmjs.com`, `gnu.org/patch` - required only when building from source
  *
  * @example
  * ```typescript
@@ -62,11 +63,19 @@ export const classicYarnPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'nodejs.org>=5',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'npmjs.com',
+    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -41,12 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +aquasecurity.github.io/tfsec@1.28.14 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@>=1.19`
-
 ## Usage Examples
 
 ```typescript

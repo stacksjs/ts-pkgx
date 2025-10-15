@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +freedesktop.org/uchardet@0.0.8 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-
 ## Usage Examples
 
 ```typescript

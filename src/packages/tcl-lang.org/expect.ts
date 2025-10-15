@@ -9,6 +9,7 @@
  * @install `launchpad install tcl-lang.org/expect`
  * @homepage https://core.tcl-lang.org/expect/index
  * @dependencies `tcl.tk/tcl^8`
+ * @buildDependencies `gnu.org/automake`, `gnu.org/autoconf`, `gnu.org/patch` - required only when building from source
  *
  * @example
  * ```typescript
@@ -77,11 +78,20 @@ export const tcllangorgexpectPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'tcl.tk/tcl^8',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/automake',
+    'gnu.org/autoconf',
+    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

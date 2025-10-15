@@ -9,6 +9,7 @@
  * @install `launchpad install gtk.org/gtk3`
  * @homepage https://gtk.org/
  * @dependencies `gnome.org/atk`, `gnome.org/gdk-pixbuf`, `gnome.org/glib`, ... (+18 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `docbook.org`, `docbook.org/xsl`, `gnu.org/gettext`, ... (+2 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -65,8 +66,8 @@ export const gtkorggtk3Package = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -91,6 +92,18 @@ export const gtkorggtk3Package = {
     'linux:wayland.freedesktop.org/protocols',
     'linux:x.org/protocol',
     'linux:openprinting.github.io/cups',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'docbook.org',
+    'docbook.org/xsl',
+    'gnu.org/gettext',
+    'mesonbuild.com',
+    'linux:cmake.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

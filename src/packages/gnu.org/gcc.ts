@@ -8,6 +8,7 @@
  *
  * @install `launchpad install gnu.org/gcc`
  * @dependencies `gnu.org/binutils`, `gnu.org/gmp>=4.2`, `gnu.org/mpfr>=2.4.0`, ... (+2 more)
+ * @buildDependencies `linux:gnu.org/gcc`, `gnu.org/make`, `perl.org@^5.6.1`, ... (+3 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -70,8 +71,8 @@ export const gnuorggccPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnu.org/binutils',
@@ -79,6 +80,19 @@ export const gnuorggccPackage = {
     'gnu.org/mpfr>=2.4.0',
     'gnu.org/mpc>=0.8.0',
     'zlib.net^1.3',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'linux:gnu.org/gcc',
+    'gnu.org/make',
+    'perl.org@^5.6.1',
+    'gnu.org/patch',
+    'curl.se',
+    'github.com/westes/flex',
   ] as const,
   /**
    * Available versions from newest to oldest.

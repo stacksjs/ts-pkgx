@@ -9,6 +9,7 @@
  * @install `launchpad install gnome.org/glib`
  * @homepage https://docs.gtk.org/glib/
  * @dependencies `gnu.org/gettext^0.21`, `sourceware.org/libffi@3`, `pcre.org@8`, ... (+2 more)
+ * @buildDependencies `mesonbuild.com@^1.2`, `python.org@>=3.5<3.12`, `gnome.org/libxml2@~2.13` - required only when building from source
  *
  * @example
  * ```typescript
@@ -69,8 +70,8 @@ export const gnomeorgglibPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnu.org/gettext^0.21',
@@ -78,6 +79,15 @@ export const gnomeorgglibPackage = {
     'pcre.org@8',
     'pcre.org/v2@10',
     'python.org^3 # several of the bins are scripts',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'mesonbuild.com@^1.2',
+    'python.org@>=3.5<3.12',
+    'gnome.org/libxml2@~2.13',
   ] as const,
   /**
    * Available versions from newest to oldest.

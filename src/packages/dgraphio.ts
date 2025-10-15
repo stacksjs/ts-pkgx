@@ -8,7 +8,7 @@
  *
  * @install `launchpad install dgraph.io`
  * @homepage https://dgraph.io/docs
- * @dependencies `go.dev@~1.22.12`
+ * @buildDependencies `go.dev@~1.22.12` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const dgraphioPackage = {
     'dgraph',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@~1.22.12',
   ] as const,
   /**

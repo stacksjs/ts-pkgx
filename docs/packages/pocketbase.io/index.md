@@ -57,12 +57,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +pocketbase.io@0.30.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@>=1.16`
-
 ## Usage Examples
 
 ```typescript

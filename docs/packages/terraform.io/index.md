@@ -55,12 +55,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +terraform.io@1.13.3 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.24.1`
-
 ## Usage Examples
 
 ```typescript

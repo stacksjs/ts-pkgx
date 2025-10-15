@@ -8,6 +8,7 @@
  *
  * @install `launchpad install github.com/skylot/jadx`
  * @dependencies `openjdk.org^21`
+ * @buildDependencies `gradle.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,18 @@ export const jadxPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openjdk.org^21',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gradle.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

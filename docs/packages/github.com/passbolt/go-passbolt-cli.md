@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/passbolt/go-passbolt-cli@0.3.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.20`
-
 ## Usage Examples
 
 ```typescript

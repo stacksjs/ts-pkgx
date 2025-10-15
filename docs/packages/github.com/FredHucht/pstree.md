@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/FredHucht/pstree@2.40.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

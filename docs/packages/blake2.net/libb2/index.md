@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +blake2.net/libb2@0.98.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

@@ -40,15 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +apache.org/apr-util@1.6.3 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `apache.org/apr`
-- `openssl.org`
-- `libexpat.github.io`
-- `sqlite.org`
-
 ## Usage Examples
 
 ```typescript

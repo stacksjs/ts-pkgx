@@ -66,12 +66,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +gohugo.io@0.151.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.22.6`
-
 ## Usage Examples
 
 ```typescript

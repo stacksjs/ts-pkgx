@@ -9,6 +9,7 @@
  * @install `launchpad install nlnetlabs.nl/ldns`
  * @homepage https://nlnetlabs.nl/projects/ldns/
  * @dependencies `openssl.org^1`
+ * @buildDependencies `gnu.org/autoconf`, `gnu.org/automake`, `swig.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -57,11 +58,20 @@ export const nlnetlabsnlldnsPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openssl.org^1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'swig.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

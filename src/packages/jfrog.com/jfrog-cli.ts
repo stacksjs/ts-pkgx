@@ -8,7 +8,7 @@
  *
  * @install `launchpad install jfrog.com/jfrog-cli`
  * @homepage https://www.jfrog.com/confluence/display/CLI/JFrog+CLI
- * @dependencies `go.dev@^1.20`
+ * @buildDependencies `go.dev@^1.20` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +56,12 @@ export const jfrogcomjfrogcliPackage = {
     'jfrog',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@^1.20',
   ] as const,
   /**

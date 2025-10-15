@@ -45,12 +45,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/kubernetes-sigs/aws-iam-authenticator@0.7.8 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-
 ## Usage Examples
 
 ```typescript

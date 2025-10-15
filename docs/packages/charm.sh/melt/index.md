@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +charm.sh/melt@0.6.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.18`
-
 ## Usage Examples
 
 ```typescript

@@ -43,12 +43,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +temporal.io@1.5.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.19`
-
 ## Usage Examples
 
 ```typescript

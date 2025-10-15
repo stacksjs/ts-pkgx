@@ -47,12 +47,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/nektos/act@0.2.82 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-
 ## Usage Examples
 
 ```typescript

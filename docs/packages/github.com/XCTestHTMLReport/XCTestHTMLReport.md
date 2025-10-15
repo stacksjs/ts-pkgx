@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/XCTestHTMLReport/XCTestHTMLReport@2.5.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-
 ## Usage Examples
 
 ```typescript

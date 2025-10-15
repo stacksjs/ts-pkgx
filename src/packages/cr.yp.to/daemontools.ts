@@ -8,7 +8,7 @@
  *
  * @install `launchpad install cr.yp.to/daemontools`
  * @homepage https://cr.yp.to/daemontools.html
- * @dependencies `gnu.org/gcc`, `linux:curl.se`, `linux:gnu.org/patch` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `gnu.org/gcc`, `linux:curl.se`, `linux:gnu.org/patch` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -71,12 +71,13 @@ export const cryptodaemontoolsPackage = {
     'tai64nlocal',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/gcc',
     'linux:curl.se',
     'linux:gnu.org/patch',

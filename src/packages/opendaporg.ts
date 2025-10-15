@@ -9,6 +9,7 @@
  * @install `launchpad install opendap.org`
  * @homepage https://www.opendap.org/
  * @dependencies `gnome.org/libxml2`, `openssl.org`, `curl.se`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `gnu.org/bison`, `github.com/westes/flex`, `gnu.org/patch`, ... (+3 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -59,8 +60,8 @@ export const opendaporgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -69,6 +70,19 @@ export const opendaporgPackage = {
     'curl.se',
     'linux:sourceforge.net/libtirpc',
     'linux:github.com/util-linux/util-linux',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'gnu.org/bison',
+    'github.com/westes/flex',
+    'gnu.org/patch',
+    'linux:gnu.org/autoconf',
+    'linux:gnu.org/automake',
+    'linux:gnu.org/libtool',
   ] as const,
   /**
    * Available versions from newest to oldest.

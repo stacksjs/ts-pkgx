@@ -53,12 +53,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +traefik.io@3.5.3 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-
 ## Usage Examples
 
 ```typescript

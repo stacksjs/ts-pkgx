@@ -9,6 +9,7 @@
  * @install `launchpad install nmap.org`
  * @homepage https://nmap.org/
  * @dependencies `openssl.org^1.1`, `pcre.org/v2^10`
+ * @buildDependencies `gnu.org/patch`, `python.org@3` - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,12 +59,20 @@ export const nmaporgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openssl.org^1.1',
     'pcre.org/v2^10',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/patch',
+    'python.org@3',
   ] as const,
   /**
    * Available versions from newest to oldest.

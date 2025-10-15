@@ -56,14 +56,15 @@ export const agptcoPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'python.org>=3.10<3.12',
     'redis.io^7',
     'tea.xyz^0',
   ] as const,
+  buildDependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

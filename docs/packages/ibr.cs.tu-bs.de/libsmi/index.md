@@ -44,14 +44,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +ibr.cs.tu-bs.de/libsmi@0.4.8 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/autoconf`
-- `gnu.org/automake`
-- `gnu.org/libtool`
-
 ## Usage Examples
 
 ```typescript

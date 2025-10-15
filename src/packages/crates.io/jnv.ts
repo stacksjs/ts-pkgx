@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/jnv`
- * @dependencies `gnu.org/autoconf@2`, `gnu.org/automake@1`, `gnu.org/libtool@2`
+ * @buildDependencies `gnu.org/autoconf@2`, `gnu.org/automake@1`, `gnu.org/libtool@2` - required only when building from source
  *
  * @example
  * ```typescript
@@ -54,11 +54,12 @@ export const cratesiojnvPackage = {
     'jnv',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/autoconf@2',
     'gnu.org/automake@1',
     'gnu.org/libtool@2',

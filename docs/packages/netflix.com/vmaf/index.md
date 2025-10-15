@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +netflix.com/vmaf@3.0.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `mesonbuild.com`
-- `nasm.us`
-
 ## Usage Examples
 
 ```typescript

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gnu.org/nettle`
  * @homepage https://www.lysator.liu.se/~nisse/nettle/
- * @dependencies `gnu.org/gmp`, `gnu.org/m4`
+ * @buildDependencies `gnu.org/gmp`, `gnu.org/m4` - required only when building from source
  *
  * @example
  * ```typescript
@@ -59,11 +59,12 @@ export const gnuorgnettlePackage = {
     'sexp-conv',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/gmp',
     'gnu.org/m4',
   ] as const,

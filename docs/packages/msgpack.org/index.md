@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +msgpack.org@6.0.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-- `google.com/googletest`
-
 ## Usage Examples
 
 ```typescript

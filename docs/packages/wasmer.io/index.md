@@ -44,13 +44,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +wasmer.io@6.1.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `nodejs.org@^18`
-- `gnu.org/make@^4`
-
 ## Usage Examples
 
 ```typescript

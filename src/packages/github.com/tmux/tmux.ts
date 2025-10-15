@@ -9,6 +9,7 @@
  * @install `launchpad install github.com/tmux/tmux`
  * @homepage https://tmux.github.io/
  * @dependencies `libevent.org^2.0`, `invisible-island.net/ncurses`
+ * @buildDependencies `gnu.org/bison` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,12 +57,19 @@ export const tmuxPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'libevent.org^2.0',
     'invisible-island.net/ncurses',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/bison',
   ] as const,
   /**
    * Available versions from newest to oldest.

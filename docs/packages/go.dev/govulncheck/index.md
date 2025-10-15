@@ -41,12 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +go.dev/govulncheck@1.1.4 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.23`
-
 ## Usage Examples
 
 ```typescript

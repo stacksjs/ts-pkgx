@@ -47,12 +47,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +prql-lang.org@0.13.5 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `linux:llvm.org@18`
-
 ## Usage Examples
 
 ```typescript

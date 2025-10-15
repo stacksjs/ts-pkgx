@@ -8,6 +8,7 @@
  *
  * @install `launchpad install gnu.org/bc`
  * @dependencies `github.com/westes/flex^2.6`
+ * @buildDependencies `gnu.org/bison`, `gnu.org/ed`, `gnu.org/texinfo` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +56,20 @@ export const gnuorgbcPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'github.com/westes/flex^2.6',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/bison',
+    'gnu.org/ed',
+    'gnu.org/texinfo',
   ] as const,
   /**
    * Available versions from newest to oldest.

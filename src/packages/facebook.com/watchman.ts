@@ -1,5 +1,5 @@
 /**
- * **watchman** - Watches files and records, or triggers actions, when they change.
+ * **watchman** - Watches files and records, or triggers actions, when they change. 
  *
  * @domain `facebook.com/watchman`
  * @programs `watchman`, `watchman-diag`, `watchman-make`, `watchman-wait`, `watchman-replicate-subscription`, ... (+1 more)
@@ -9,6 +9,7 @@
  * @install `launchpad install facebook.com/watchman`
  * @homepage https://facebook.github.io/watchman/
  * @dependencies `facebook.com/edencommon`, `facebook.com/fb303`, `facebook.com/folly`, ... (+10 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org`, `github.com/skystrife/cpptoml`, `facebook.com/fbthrift`, ... (+3 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -61,8 +62,8 @@ export const facebookcomwatchmanPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -79,6 +80,19 @@ export const facebookcomwatchmanPackage = {
     'python.org~3.11',
     'linux:libcxx.llvm.org^18 # libunwind',
     'linux:gnu.org/gcc/libstdcxx@13',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'cmake.org',
+    'github.com/skystrife/cpptoml',
+    'facebook.com/fbthrift',
+    'facebook.com/mvfst',
+    'google.com/googletest',
+    'linux:gnu.org/gcc@13',
   ] as const,
   /**
    * Available versions from newest to oldest.

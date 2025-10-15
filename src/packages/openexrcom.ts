@@ -9,6 +9,7 @@
  * @install `launchpad install openexr.com`
  * @homepage https://www.openexr.com/
  * @dependencies `zlib.net^1`, `openexr.com/imath`, `linux:gnu.org/gcc/libstdcxx^14 # needed since 3.4.0` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org`, `linux:gnu.org/gcc@14` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -63,14 +64,23 @@ export const openexrcomPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'zlib.net^1',
     'openexr.com/imath',
     'linux:gnu.org/gcc/libstdcxx^14 # needed since 3.4.0',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'cmake.org',
+    'linux:gnu.org/gcc@14',
   ] as const,
   /**
    * Available versions from newest to oldest.

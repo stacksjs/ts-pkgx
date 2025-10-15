@@ -7,6 +7,7 @@
  *
  * @install `launchpad install wpewebkit.org/libwpe`
  * @dependencies `xkbcommon.org`, `mesa3d.org`
+ * @buildDependencies `gnu.org/gcc`, `mesonbuild.com` - required only when building from source
  *
  * @example
  * ```typescript
@@ -47,12 +48,20 @@ export const wpewebkitorglibwpePackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'xkbcommon.org',
     'mesa3d.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/gcc',
+    'mesonbuild.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

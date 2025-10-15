@@ -43,12 +43,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +spawn.link@2.40.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `python.org@>=3<3.12`
-
 ## Usage Examples
 
 ```typescript

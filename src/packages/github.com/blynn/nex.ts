@@ -8,7 +8,7 @@
  *
  * @install `launchpad install github.com/blynn/nex`
  * @homepage https://repo.or.cz/nvi.git
- * @dependencies `rsync.samba.org`, `go.dev@^1.20`
+ * @buildDependencies `rsync.samba.org`, `go.dev@^1.20` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const nexPackage = {
     'nex',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'rsync.samba.org',
     'go.dev@^1.20',
   ] as const,

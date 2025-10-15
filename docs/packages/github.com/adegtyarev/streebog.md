@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/adegtyarev/streebog@0.13.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `linux:gnu.org/patch`
-
 ## Usage Examples
 
 ```typescript

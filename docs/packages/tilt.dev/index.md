@@ -45,14 +45,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +tilt.dev@0.35.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.21`
-- `nodejs.org@^20`
-- `classic.yarnpkg.com`
-
 ## Usage Examples
 
 ```typescript

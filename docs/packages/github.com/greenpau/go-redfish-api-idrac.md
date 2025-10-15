@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/greenpau/go-redfish-api-idrac@1.0.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-
 ## Usage Examples
 
 ```typescript

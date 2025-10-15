@@ -9,6 +9,7 @@
  * @install `launchpad install gnome.org/vala`
  * @homepage https://wiki.gnome.org/Projects/Vala
  * @dependencies `gnome.org/glib`, `graphviz.org`, `freedesktop.org/pkg-config`, ... (+1 more)
+ * @buildDependencies `gnu.org/bison`, `github.com/westes/flex`, `gnome.org/libxslt` - required only when building from source
  *
  * @example
  * ```typescript
@@ -60,14 +61,23 @@ export const gnomeorgvalaPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnome.org/glib',
     'graphviz.org',
     'freedesktop.org/pkg-config',
     'gnu.org/gettext',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/bison',
+    'github.com/westes/flex',
+    'gnome.org/libxslt',
   ] as const,
   /**
    * Available versions from newest to oldest.

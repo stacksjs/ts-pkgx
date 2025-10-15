@@ -41,12 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/cpuguy83/go-md2man@2.0.7 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.19`
-
 ## Usage Examples
 
 ```typescript

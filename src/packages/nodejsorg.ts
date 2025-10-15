@@ -10,6 +10,7 @@
  * @name `node`
  * @homepage https://nodejs.org/
  * @dependencies `unicode.org^71`, `openssl.org@1.1`, `zlib.net@1`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `python.org@~3.9`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -61,8 +62,8 @@ export const nodePackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -70,6 +71,15 @@ export const nodePackage = {
     'openssl.org@1.1',
     'zlib.net@1',
     'linux:gnu.org/gcc/libstdcxx',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'python.org@~3.9',
+    'linux:gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

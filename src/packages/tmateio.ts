@@ -9,6 +9,7 @@
  * @install `launchpad install tmate.io`
  * @homepage https://tmate.io/
  * @dependencies `libevent.org^2.0`, `invisible-island.net/ncurses@6`, `msgpack.org@6`, ... (+1 more)
+ * @buildDependencies `gnu.org/bison`, `gnu.org/autoconf`, `gnu.org/automake` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,14 +57,23 @@ export const tmateioPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'libevent.org^2.0',
     'invisible-island.net/ncurses@6',
     'msgpack.org@6',
     'libssh.org@0',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/bison',
+    'gnu.org/autoconf',
+    'gnu.org/automake',
   ] as const,
   /**
    * Available versions from newest to oldest.

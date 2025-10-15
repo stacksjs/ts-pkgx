@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/thom311/libnl`
- * @dependencies `gnu.org/bison`, `github.com/westes/flex`
+ * @buildDependencies `gnu.org/bison`, `github.com/westes/flex` - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,11 +46,12 @@ export const libnlPackage = {
   launchpadInstallCommand: 'launchpad install github.com/thom311/libnl' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/bison',
     'github.com/westes/flex',
   ] as const,

@@ -44,14 +44,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +rclone.org@1.71.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-- `darwin:curl.se`
-- `darwin:gnu.org/patch`
-
 ## Usage Examples
 
 ```typescript

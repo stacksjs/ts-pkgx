@@ -9,6 +9,7 @@
  * @install `launchpad install github.com/thinkst/opencanary`
  * @homepage http://opencanary.org
  * @dependencies `python.org>=3.10<3.12`, `tcpdump.org`, `openssl.org`
+ * @buildDependencies `pip.pypa.io` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,13 +57,20 @@ export const opencanaryPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'python.org>=3.10<3.12',
     'tcpdump.org',
     'openssl.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'pip.pypa.io',
   ] as const,
   /**
    * Available versions from newest to oldest.

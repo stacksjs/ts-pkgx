@@ -44,12 +44,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/terraform-linters/tflint@0.59.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-
 ## Usage Examples
 
 ```typescript

@@ -9,6 +9,7 @@
  * @install `launchpad install rust-lang.org/cargo`
  * @homepage https://doc.rust-lang.org/cargo
  * @dependencies `zlib.net^1`, `libgit2.org~1.7 # links to libgit2.so.1.7`, `curl.se/ca-certs`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `gnu.org/tar`, `tukaani.org/xz` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,8 +57,8 @@ export const rustlangorgcargoPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -66,6 +67,14 @@ export const rustlangorgcargoPackage = {
     'curl.se/ca-certs',
     'linux:llvm.org',
     'linux:curl.se',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/tar',
+    'tukaani.org/xz',
   ] as const,
   /**
    * Available versions from newest to oldest.

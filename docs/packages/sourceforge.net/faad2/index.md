@@ -40,16 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +sourceforge.net/faad2@2.11.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-- `gnu.org/autoconf`
-- `gnu.org/automake`
-- `gnu.org/libtool`
-- `linux:gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

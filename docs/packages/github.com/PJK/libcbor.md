@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/PJK/libcbor@0.13.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org@3`
-
 ## Usage Examples
 
 ```typescript

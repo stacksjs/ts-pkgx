@@ -51,15 +51,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +hasura.io@2.48.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.16`
-- `npmjs.com@^8.19.4`
-- `gnu.org/coreutils`
-- `nodejs.org@^18`
-
 ## Usage Examples
 
 ```typescript

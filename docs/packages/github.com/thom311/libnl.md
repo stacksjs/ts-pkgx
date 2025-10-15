@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/thom311/libnl@3.11.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/bison`
-- `github.com/westes/flex`
-
 ## Usage Examples
 
 ```typescript

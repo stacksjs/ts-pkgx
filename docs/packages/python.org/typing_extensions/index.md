@@ -42,13 +42,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +python.org/typing_extensions@4.15.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `flit.pypa.io`
-- `python.org@~3.11`
-
 ## Usage Examples
 
 ```typescript

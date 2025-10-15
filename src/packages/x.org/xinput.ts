@@ -9,6 +9,7 @@
  * @install `launchpad install x.org/xinput`
  * @homepage https://gitlab.freedesktop.org/xorg/app/xinput
  * @dependencies `x.org/x11`, `x.org/exts`, `x.org/xi`, ... (+2 more)
+ * @buildDependencies `x.org/protocol` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,8 +57,8 @@ export const xorgxinputPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'x.org/x11',
@@ -65,6 +66,13 @@ export const xorgxinputPackage = {
     'x.org/xi',
     'x.org/xinerama',
     'x.org/xrandr',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'x.org/protocol',
   ] as const,
   /**
    * Available versions from newest to oldest.

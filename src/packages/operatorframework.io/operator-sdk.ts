@@ -9,6 +9,7 @@
  * @install `launchpad install operatorframework.io/operator-sdk`
  * @homepage https://sdk.operatorframework.io/
  * @dependencies `go.dev^1.19`
+ * @buildDependencies `cmake.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,18 @@ export const operatorframeworkiooperatorsdkPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'go.dev^1.19',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

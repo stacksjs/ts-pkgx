@@ -50,13 +50,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +open-mpi.org/hwloc@2.12.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/autoconf`
-- `gnu.org/libtool`
-
 ## Usage Examples
 
 ```typescript

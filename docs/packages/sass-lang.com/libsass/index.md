@@ -40,14 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +sass-lang.com/libsass@3.6.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/autoconf`
-- `gnu.org/automake`
-- `gnu.org/libtool`
-
 ## Usage Examples
 
 ```typescript

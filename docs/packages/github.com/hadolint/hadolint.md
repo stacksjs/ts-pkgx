@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/hadolint/hadolint@2.12.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `haskell.org@~9.2`
-- `haskell.org/cabal@^3`
-
 ## Usage Examples
 
 ```typescript

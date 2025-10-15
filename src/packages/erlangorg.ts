@@ -9,6 +9,7 @@
  * @install `launchpad install erlang.org`
  * @homepage https://www.erlang.org/
  * @dependencies `openssl.org^1.1`, `invisible-island.net/ncurses`
+ * @buildDependencies `perl.org@>=5` - required only when building from source
  *
  * @example
  * ```typescript
@@ -64,12 +65,19 @@ export const erlangorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openssl.org^1.1',
     'invisible-island.net/ncurses',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'perl.org@>=5',
   ] as const,
   /**
    * Available versions from newest to oldest.

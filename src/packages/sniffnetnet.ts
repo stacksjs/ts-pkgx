@@ -56,8 +56,8 @@ export const sniffnetnetPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -66,6 +66,7 @@ export const sniffnetnetPackage = {
     'linux:alsa-project.org/alsa-lib@1',
     'linux:freedesktop.org/fontconfig@2',
   ] as const,
+  buildDependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

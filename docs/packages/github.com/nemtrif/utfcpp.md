@@ -42,13 +42,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/nemtrif/utfcpp@4.0.8 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org@3`
-- `darwin:gnu.org/gcc@13`
-
 ## Usage Examples
 
 ```typescript

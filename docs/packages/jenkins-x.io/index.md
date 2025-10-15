@@ -54,12 +54,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +jenkins-x.io@3.16.25 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.23`
-
 ## Usage Examples
 
 ```typescript

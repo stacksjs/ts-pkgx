@@ -9,6 +9,7 @@
  * @install `launchpad install exiftool.org`
  * @homepage https://exiftool.org
  * @dependencies `perl.org`
+ * @buildDependencies `perl.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,10 +57,17 @@ export const exiftoolorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
+    'perl.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
     'perl.org',
   ] as const,
   /**

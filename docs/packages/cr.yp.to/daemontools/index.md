@@ -56,14 +56,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +cr.yp.to/daemontools@0.76.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/gcc`
-- `linux:curl.se`
-- `linux:gnu.org/patch`
-
 ## Usage Examples
 
 ```typescript

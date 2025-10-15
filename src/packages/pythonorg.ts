@@ -11,6 +11,7 @@
  * @aliases `py`
  * @homepage https://www.python.org
  * @dependencies `zlib.net@1`, `sourceware.org/bzip2@1`, `openssl.org^1.1`, ... (+9 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `gnu.org/patch`, `curl.se` - required only when building from source
  *
  * @example
  * ```typescript
@@ -64,8 +65,8 @@ export const pythonPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -81,6 +82,14 @@ export const pythonPackage = {
     'invisible-island.net/ncurses@6',
     'linux:tcl-lang.org',
     'darwin:tcl-lang.org=8.6.16 # 9.0.2 introduced a build issue on darwin',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/patch',
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

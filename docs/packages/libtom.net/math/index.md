@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +libtom.net/math@1.3.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/libtool@^2.4.7`
-
 ## Usage Examples
 
 ```typescript

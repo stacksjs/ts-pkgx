@@ -9,6 +9,7 @@
  * @install `launchpad install jpeg.org/jpegxl`
  * @homepage https://jpeg.org/jpegxl/index.html
  * @dependencies `github.com/google/brotli^1`, `littlecms.com^2.13`, `google.com/highway^1`, ... (+4 more)
+ * @buildDependencies `cmake.org@^3`, `gnu.org/coreutils` - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,8 +59,8 @@ export const jpegorgjpegxlPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'github.com/google/brotli^1',
@@ -69,6 +70,14 @@ export const jpegorgjpegxlPackage = {
     'giflib.sourceforge.io^5',
     'openexr.com^3',
     'libpng.org^1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org@^3',
+    'gnu.org/coreutils',
   ] as const,
   /**
    * Available versions from newest to oldest.

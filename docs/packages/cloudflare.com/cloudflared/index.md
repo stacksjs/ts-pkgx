@@ -46,12 +46,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +cloudflare.com/cloudflared@2025.10.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.24`
-
 ## Usage Examples
 
 ```typescript

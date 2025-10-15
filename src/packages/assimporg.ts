@@ -1,5 +1,5 @@
 /**
- * **assimp** - The official Open-Asset-Importer-Library Repository. Loads 40+ 3D-file-formats into one unified and clean data structure.
+ * **assimp** - The official Open-Asset-Importer-Library Repository. Loads 40+ 3D-file-formats into one unified and clean data structure. 
  *
  * @domain `assimp.org`
  * @programs `assimp`
@@ -9,6 +9,7 @@
  * @install `launchpad install assimp.org`
  * @homepage https://www.assimp.org/
  * @dependencies `zlib.net`
+ * @buildDependencies `gnu.org/make`, `cmake.org`, `darwin:curl.se`, ... (+1 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,22 @@ export const assimporgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'zlib.net',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'gnu.org/make',
+    'cmake.org',
+    'darwin:curl.se',
+    'darwin:gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

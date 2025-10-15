@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install apache.org/apr-util`
- * @dependencies `apache.org/apr`, `openssl.org`, `libexpat.github.io`, ... (+1 more)
+ * @buildDependencies `apache.org/apr`, `openssl.org`, `libexpat.github.io`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -54,11 +54,12 @@ export const apacheorgaprutilPackage = {
     'apu-{{ version.major }}-config',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'apache.org/apr',
     'openssl.org',
     'libexpat.github.io',

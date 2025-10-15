@@ -1,5 +1,5 @@
 /**
- * **gpt4all** - Locally run an Assistant-Tuned Chat-Style LLM
+ * **gpt4all** - Locally run an Assistant-Tuned Chat-Style LLM 
  *
  * @domain `github.com/nomic-ai/gpt4all`
  * @programs `gpt4all`
@@ -54,6 +54,7 @@ export const gpt4allPackage = {
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  buildDependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

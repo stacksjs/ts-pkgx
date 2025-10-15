@@ -8,6 +8,7 @@
  * @install `launchpad install libspng.org`
  * @homepage https://libspng.org
  * @dependencies `darwin:zlib.net` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `mesonbuild.com` - required only when building from source
  *
  * @example
  * ```typescript
@@ -48,12 +49,19 @@ export const libspngorgPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'darwin:zlib.net',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'mesonbuild.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,6 +8,7 @@
  * @install `launchpad install freeglut.sourceforge.io`
  * @homepage http://freeglut.sourceforge.net
  * @dependencies `x.org/x11`, `x.org/xi`, `x.org/xrandr`, ... (+4 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -48,8 +49,8 @@ export const freeglutsourceforgeioPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -60,6 +61,13 @@ export const freeglutsourceforgeioPackage = {
     'mesa3d.org',
     'linux:freedesktop.org/mesa-glu',
     'linux:x.org/xinput',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

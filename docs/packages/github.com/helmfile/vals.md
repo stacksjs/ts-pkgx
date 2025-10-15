@@ -47,12 +47,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/helmfile/vals@0.42.3 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-
 ## Usage Examples
 
 ```typescript

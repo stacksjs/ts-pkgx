@@ -9,6 +9,7 @@
  * @install `launchpad install mercurial-scm.org`
  * @homepage https://mercurial-scm.org/
  * @dependencies `python.org~3.13 # as of 7.1`
+ * @buildDependencies `gnu.org/make` - required only when building from source
  *
  * @example
  * ```typescript
@@ -57,11 +58,18 @@ export const mercurialscmorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'python.org~3.13 # as of 7.1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

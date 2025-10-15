@@ -50,13 +50,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +squawkhq.com@2.28.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `openssl.org`
-- `perl.org`
-
 ## Usage Examples
 
 ```typescript

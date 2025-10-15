@@ -42,12 +42,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/caarlos0/svu@3.2.4 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.20`
-
 ## Usage Examples
 
 ```typescript

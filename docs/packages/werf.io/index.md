@@ -75,14 +75,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +werf.io@2.49.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.23`
-- `linux:gnu.org/gcc`
-- `linux:gnu.org/binutils`
-
 ## Usage Examples
 
 ```typescript

@@ -44,13 +44,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +gnu.org/nettle@3.8.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/gmp`
-- `gnu.org/m4`
-
 ## Usage Examples
 
 ```typescript

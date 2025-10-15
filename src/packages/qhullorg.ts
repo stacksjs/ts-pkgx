@@ -8,7 +8,7 @@
  *
  * @install `launchpad install qhull.org`
  * @homepage http://www.qhull.org/
- * @dependencies `cmake.org`
+ * @buildDependencies `cmake.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -60,11 +60,12 @@ export const qhullorgPackage = {
     'rbox',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'cmake.org',
   ] as const,
   /**

@@ -7,6 +7,7 @@
  *
  * @install `launchpad install gnome.org/glib-networking`
  * @dependencies `gnome.org/glib`, `gnutls.org`, `gnome.org/gsettings-desktop-schemas`
+ * @buildDependencies `mesonbuild.com`, `linux:llvm.org` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,13 +47,22 @@ export const gnomeorgglibnetworkingPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnome.org/glib',
     'gnutls.org',
     'gnome.org/gsettings-desktop-schemas',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'mesonbuild.com',
+    'linux:llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -9,6 +9,7 @@
  * @install `launchpad install gnome.org/pango`
  * @homepage https://www.gtk.org/docs/architecture/pango
  * @dependencies `cairographics.org^1.18`, `freetype.org@2`, `gnome.org/glib@2`, ... (+4 more)
+ * @buildDependencies `mesonbuild.com`, `python.org@>=3<3.12` - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,8 +59,8 @@ export const gnomeorgpangoPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'cairographics.org^1.18',
@@ -69,6 +70,14 @@ export const gnomeorgpangoPackage = {
     'freedesktop.org/fontconfig@2',
     'sourceware.org/libffi@3',
     'gnu.org/fribidi@1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'mesonbuild.com',
+    'python.org@>=3<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.

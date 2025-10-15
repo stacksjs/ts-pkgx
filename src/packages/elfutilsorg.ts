@@ -8,6 +8,7 @@
  *
  * @install `launchpad install elfutils.org`
  * @dependencies `sourceware.org/bzip2`, `tukaani.org/xz`, `zlib.net`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `gnu.org/m4` - required only when building from source
  *
  * @example
  * ```typescript
@@ -69,8 +70,8 @@ export const elfutilsorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -79,6 +80,13 @@ export const elfutilsorgPackage = {
     'zlib.net',
     'facebook.com/zstd',
     'linux:kernel.org/linux-headers',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/m4',
   ] as const,
   /**
    * Available versions from newest to oldest.

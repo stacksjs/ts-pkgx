@@ -9,6 +9,7 @@
  * @install `launchpad install apache.org/subversion`
  * @homepage https://subversion.apache.org/
  * @dependencies `gnu.org/gettext^0.21`, `lz4.org^1`, `openssl.org^1.1`, ... (+8 more)
+ * @buildDependencies `swig.org@^4`, `python.org@~3.11` - required only when building from source
  *
  * @example
  * ```typescript
@@ -66,8 +67,8 @@ export const apacheorgsubversionPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnu.org/gettext^0.21',
@@ -81,6 +82,14 @@ export const apacheorgsubversionPackage = {
     'apache.org/apr^1',
     'apache.org/apr-util^1',
     'apache.org/serf^1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'swig.org@^4',
+    'python.org@~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

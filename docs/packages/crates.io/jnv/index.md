@@ -41,14 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +crates.io/jnv@0.6.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/autoconf@2`
-- `gnu.org/automake@1`
-- `gnu.org/libtool@2`
-
 ## Usage Examples
 
 ```typescript

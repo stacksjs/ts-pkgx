@@ -164,12 +164,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +tailcall.run@1.6.11 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `protobuf.dev`
-
 ## Usage Examples
 
 ```typescript

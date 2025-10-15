@@ -1,5 +1,5 @@
 /**
- * **libsrtp** - Library for SRTP (Secure Realtime Transport Protocol)
+ * **libsrtp** - Library for SRTP (Secure Realtime Transport Protocol) 
  *
  * @domain `cisco.com/libsrtp`
  * @version `2.7.0` (3 versions available)
@@ -7,6 +7,7 @@
  *
  * @install `launchpad install cisco.com/libsrtp`
  * @dependencies `openssl.org~1`
+ * @buildDependencies `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -47,11 +48,19 @@ export const ciscocomlibsrtpPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openssl.org~1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'linux:gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

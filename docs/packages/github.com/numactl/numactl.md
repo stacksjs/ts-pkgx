@@ -40,15 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/numactl/numactl@2.0.16 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/autoconf@2`
-- `gnu.org/automake@1`
-- `gnu.org/libtool@2`
-- `gnu.org/m4@1`
-
 ## Usage Examples
 
 ```typescript

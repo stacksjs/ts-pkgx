@@ -7,6 +7,7 @@
  *
  * @install `launchpad install gnome.org/json-glib`
  * @dependencies `gnome.org/glib^2.78`
+ * @buildDependencies `gnu.org/gettext`, `mesonbuild.com` - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,11 +47,19 @@ export const gnomeorgjsonglibPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnome.org/glib^2.78',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/gettext',
+    'mesonbuild.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

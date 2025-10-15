@@ -44,13 +44,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +duckdb.org@1.4.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org@^3`
-- `python.org@^3`
-
 ## Usage Examples
 
 ```typescript

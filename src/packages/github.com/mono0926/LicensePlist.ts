@@ -8,7 +8,7 @@
  *
  * @install `launchpad install github.com/mono0926/LicensePlist`
  * @homepage https://www.slideshare.net/mono0926/licenseplist-a-license-list-generator-of-all-your-dependencies-for-ios-applications
- * @dependencies `swift.org@6`
+ * @buildDependencies `swift.org@6` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const licenseplistPackage = {
     'license-plist',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'swift.org@6',
   ] as const,
   /**

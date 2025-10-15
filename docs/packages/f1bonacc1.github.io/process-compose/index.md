@@ -43,12 +43,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +f1bonacc1.github.io/process-compose@1.75.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@=1.23.8`
-
 ## Usage Examples
 
 ```typescript

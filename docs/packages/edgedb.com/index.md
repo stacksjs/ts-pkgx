@@ -48,12 +48,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +edgedb.com@7.9.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `perl.org@^5`
-
 ## Usage Examples
 
 ```typescript

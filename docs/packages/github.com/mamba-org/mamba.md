@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/mamba-org/mamba@22.11.1.4 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `aria2.github.io@1.36`
-
 ## Usage Examples
 
 ```typescript

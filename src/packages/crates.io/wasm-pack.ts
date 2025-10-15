@@ -9,6 +9,7 @@
  * @install `launchpad install crates.io/wasm-pack`
  * @homepage https://rustwasm.github.io/wasm-pack/
  * @dependencies `rust-lang.org`, `rust-lang.org/cargo`
+ * @buildDependencies `cmake.org@3` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,12 +57,19 @@ export const cratesiowasmpackPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'rust-lang.org',
     'rust-lang.org/cargo',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org@3',
   ] as const,
   /**
    * Available versions from newest to oldest.

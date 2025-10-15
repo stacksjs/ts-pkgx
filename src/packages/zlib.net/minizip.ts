@@ -7,7 +7,7 @@
  *
  * @install `launchpad install zlib.net/minizip`
  * @homepage http://zlib.net/
- * @dependencies `gnu.org/autoconf@^2`, `gnu.org/automake@^1`, `gnu.org/libtool@^2`
+ * @buildDependencies `gnu.org/autoconf@^2`, `gnu.org/automake@^1`, `gnu.org/libtool@^2` - required only when building from source
  *
  * @example
  * ```typescript
@@ -47,11 +47,12 @@ export const zlibnetminizipPackage = {
   launchpadInstallCommand: 'launchpad install zlib.net/minizip' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/autoconf@^2',
     'gnu.org/automake@^1',
     'gnu.org/libtool@^2',

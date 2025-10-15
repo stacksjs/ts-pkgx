@@ -9,6 +9,7 @@
  * @install `launchpad install astral.sh/uv`
  * @homepage https://docs.astral.sh/uv
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
+ * @buildDependencies `linux:nixos.org/patchelf@^0.18`, `linux:sqlite.org`, `cmake.org@^3.28`, ... (+1 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -57,11 +58,22 @@ export const astralshuvPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'libgit2.org~1.7 # links to libgit2.so.1.7',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'linux:nixos.org/patchelf@^0.18',
+    'linux:sqlite.org',
+    'cmake.org@^3.28',
+    'maturin.rs@^1.4.0',
   ] as const,
   /**
    * Available versions from newest to oldest.

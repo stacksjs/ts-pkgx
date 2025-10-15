@@ -8,7 +8,7 @@
  *
  * @install `launchpad install vaultproject.io`
  * @homepage https://www.vaultproject.io/
- * @dependencies `go.dev@=1.24.6`, `nodejs.org@^18`, `python.org@~3.10`, ... (+2 more)
+ * @buildDependencies `go.dev@=1.24.6`, `nodejs.org@^18`, `python.org@~3.10`, ... (+2 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const vaultprojectioPackage = {
     'vault',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@=1.24.6',
     'nodejs.org@^18',
     'python.org@~3.10',

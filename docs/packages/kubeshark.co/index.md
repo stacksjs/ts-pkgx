@@ -51,13 +51,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +kubeshark.co@72.3.83 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.19`
-- `gnu.org/make`
-
 ## Usage Examples
 
 ```typescript

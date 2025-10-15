@@ -9,6 +9,7 @@
  * @install `launchpad install notroj.github.io/neon`
  * @homepage https://notroj.github.io/neon/
  * @dependencies `openssl.org`
+ * @buildDependencies `gnu.org/make`, `pagure.io/xmlto` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,19 @@ export const notrojgithubioneonPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openssl.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/make',
+    'pagure.io/xmlto',
   ] as const,
   /**
    * Available versions from newest to oldest.

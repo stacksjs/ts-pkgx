@@ -41,12 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/Versent/saml2aws@2.36.19 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.21`
-
 ## Usage Examples
 
 ```typescript

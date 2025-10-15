@@ -7,6 +7,7 @@
  *
  * @install `launchpad install github.com/libass/libass`
  * @dependencies `freetype.org@2`, `gnu.org/fribidi@1`, `harfbuzz.org`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `gnu.org/autoconf@2`, `gnu.org/automake@1`, `gnu.org/libtool@2` - required only when building from source
  *
  * @example
  * ```typescript
@@ -47,8 +48,8 @@ export const libassPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -57,6 +58,15 @@ export const libassPackage = {
     'harfbuzz.org',
     'github.com/adah1972/libunibreak',
     'linux:freedesktop.org/fontconfig@2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/autoconf@2',
+    'gnu.org/automake@1',
+    'gnu.org/libtool@2',
   ] as const,
   /**
    * Available versions from newest to oldest.

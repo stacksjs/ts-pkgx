@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gnu.org/binutils`
  * @homepage https://www.gnu.org/software/binutils/binutils.html
- * @dependencies `gnu.org/bison`, `gnu.org/texinfo`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `gnu.org/bison`, `gnu.org/texinfo`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -66,12 +66,13 @@ export const gnuorgbinutilsPackage = {
     'strip',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/bison',
     'gnu.org/texinfo',
     'linux:gnu.org/gcc',

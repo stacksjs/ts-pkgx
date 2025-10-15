@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install blake2.net/libb2`
- * @dependencies `gnu.org/gcc`
+ * @buildDependencies `gnu.org/gcc` - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,11 +46,12 @@ export const blake2netlibb2Package = {
   launchpadInstallCommand: 'launchpad install blake2.net/libb2' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/gcc',
   ] as const,
   /**

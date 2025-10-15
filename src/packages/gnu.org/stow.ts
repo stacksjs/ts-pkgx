@@ -9,6 +9,7 @@
  * @install `launchpad install gnu.org/stow`
  * @homepage https://www.gnu.org/software/stow/
  * @dependencies `perl.org^5.6.1`
+ * @buildDependencies `cpanmin.us@^1` - required only when building from source
  * @companions `PERL5LIB^${{prefix}}/lib/perl5`
  *
  * @example
@@ -63,11 +64,18 @@ export const gnuorgstowPackage = {
     'PERL5LIB^${{prefix}}/lib/perl5',
   ] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'perl.org^5.6.1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cpanmin.us@^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

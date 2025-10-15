@@ -41,13 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/maxmind/libmaxminddb@1.12.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/autoconf`
-- `gnu.org/libtool`
-
 ## Usage Examples
 
 ```typescript

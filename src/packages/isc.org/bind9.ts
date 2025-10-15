@@ -82,8 +82,8 @@ export const iscorgbind9Package = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -101,6 +101,7 @@ export const iscorgbind9Package = {
     'ninja-build.org',
     'linux:kernel.org/libcap',
   ] as const,
+  buildDependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

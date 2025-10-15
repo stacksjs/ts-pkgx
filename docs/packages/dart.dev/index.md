@@ -49,14 +49,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +dart.dev@3.9.4 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-- `python.org@>=3<3.12`
-- `tukaani.org/xz`
-
 ## Usage Examples
 
 ```typescript

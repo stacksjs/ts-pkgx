@@ -9,6 +9,7 @@
  * @install `launchpad install elizaOS.github.io`
  * @homepage https://elizaOS.github.io/eliza/
  * @dependencies `python.org>=2.7`, `nodejs.org~23.3`, `pnpm.io`, ... (+1 more)
+ * @buildDependencies `python.org@~3.10`, `pnpm.io@=9.15.7`, `curl.se`, ... (+2 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,14 +57,25 @@ export const elizaosgithubioPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'python.org>=2.7',
     'nodejs.org~23.3',
     'pnpm.io',
     'bun.sh^1.2 # since 1.0.5',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'python.org@~3.10',
+    'pnpm.io@=9.15.7',
+    'curl.se',
+    'gnu.org/patch',
+    'gnu.org/sed',
   ] as const,
   /**
    * Available versions from newest to oldest.

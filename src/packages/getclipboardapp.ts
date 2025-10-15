@@ -9,6 +9,7 @@
  * @install `launchpad install getclipboard.app`
  * @homepage https://getclipboard.app
  * @dependencies `openssl.org^1.1`, `linux:alsa-project.org/alsa-lib@1`, `linux:x.org/x11@1`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org@^3`, `linux:wayland.freedesktop.org/protocols`, `linux:gnu.org/gcc@14` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,8 +57,8 @@ export const getclipboardappPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -66,6 +67,16 @@ export const getclipboardappPackage = {
     'linux:x.org/x11@1',
     'linux:wayland.freedesktop.org@1',
     'linux:gnu.org/gcc/libstdcxx@14',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'cmake.org@^3',
+    'linux:wayland.freedesktop.org/protocols',
+    'linux:gnu.org/gcc@14',
   ] as const,
   /**
    * Available versions from newest to oldest.

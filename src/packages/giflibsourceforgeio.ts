@@ -8,7 +8,7 @@
  *
  * @install `launchpad install giflib.sourceforge.io`
  * @homepage https://giflib.sourceforge.net/
- * @dependencies `gnu.org/patch`, `imagemagick.org`
+ * @buildDependencies `gnu.org/patch`, `imagemagick.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -60,11 +60,12 @@ export const giflibsourceforgeioPackage = {
     'giftool',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/patch',
     'imagemagick.org',
   ] as const,

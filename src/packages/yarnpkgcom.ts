@@ -9,6 +9,7 @@
  * @install `launchpad install yarnpkg.com`
  * @homepage https://yarnpkg.com/
  * @dependencies `nodejs.org`
+ * @buildDependencies `classic.yarnpkg.com@^1`, `nodejs.org@>=18.3<23` - required only when building from source
  *
  * @example
  * ```typescript
@@ -57,11 +58,19 @@ export const yarnPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'nodejs.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'classic.yarnpkg.com@^1',
+    'nodejs.org@>=18.3<23',
   ] as const,
   /**
    * Available versions from newest to oldest.

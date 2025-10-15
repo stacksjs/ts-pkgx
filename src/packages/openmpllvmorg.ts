@@ -7,7 +7,7 @@
  *
  * @install `launchpad install openmp.llvm.org`
  * @homepage http://llvm.org
- * @dependencies `cmake.org`, `llvm.org`, `gnu.org/wget`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org`, `llvm.org`, `gnu.org/wget`, ... (+2 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -47,12 +47,13 @@ export const openmpllvmorgPackage = {
   launchpadInstallCommand: 'launchpad install openmp.llvm.org' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
    */
-  dependencies: [
+  buildDependencies: [
     'cmake.org',
     'llvm.org',
     'gnu.org/wget',

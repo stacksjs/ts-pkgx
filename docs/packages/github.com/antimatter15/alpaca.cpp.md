@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/antimatter15/alpaca.cpp@2023.3.21 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/wget`
-
 ## Usage Examples
 
 ```typescript

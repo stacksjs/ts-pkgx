@@ -8,7 +8,7 @@
  *
  * @install `launchpad install git-town.com`
  * @homepage https://www.git-town.com/
- * @dependencies `go.dev@~1.23.10`
+ * @buildDependencies `go.dev@~1.23.10` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const gittowncomPackage = {
     'git-town',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@~1.23.10',
   ] as const,
   /**

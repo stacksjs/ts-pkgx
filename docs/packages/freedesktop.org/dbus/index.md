@@ -49,15 +49,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +freedesktop.org/dbus@1.16.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `pagure.io/xmlto`
-- `libexpat.github.io`
-- `mesonbuild.com`
-- `darwin:gnu.org/patch`
-
 ## Usage Examples
 
 ```typescript

@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +videolan.org/x264@0.164.3095 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/gcc`
-- `nasm.us`
-
 ## Usage Examples
 
 ```typescript

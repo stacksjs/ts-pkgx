@@ -9,6 +9,7 @@
  * @install `launchpad install bitwarden.com`
  * @homepage https://bitwarden.com/
  * @dependencies `nodejs.org^20`
+ * @buildDependencies `npmjs.com`, `linux:python.org@^3` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,20 @@ export const bitwardencomPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'nodejs.org^20',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'npmjs.com',
+    'linux:python.org@^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

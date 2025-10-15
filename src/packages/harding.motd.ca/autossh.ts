@@ -9,6 +9,7 @@
  * @install `launchpad install harding.motd.ca/autossh`
  * @homepage https://www.harding.motd.ca/autossh/
  * @dependencies `openssh.com`
+ * @buildDependencies `gnu.org/make`, `gnu.org/gcc` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,19 @@ export const hardingmotdcaautosshPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openssh.com',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/make',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

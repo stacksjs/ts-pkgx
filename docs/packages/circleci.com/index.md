@@ -52,12 +52,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +circleci.com@0.1.33494 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-
 ## Usage Examples
 
 ```typescript

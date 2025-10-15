@@ -8,6 +8,7 @@
  *
  * @install `launchpad install crates.io/termusic`
  * @dependencies `linux:alsa-project.org/alsa-lib`, `linux:freedesktop.org/dbus` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `protobuf.dev`, `abseil.io@^20250127` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,13 +57,21 @@ export const cratesiotermusicPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'linux:alsa-project.org/alsa-lib',
     'linux:freedesktop.org/dbus',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'protobuf.dev',
+    'abseil.io@^20250127',
   ] as const,
   /**
    * Available versions from newest to oldest.

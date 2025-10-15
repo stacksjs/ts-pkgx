@@ -9,6 +9,7 @@
  * @install `launchpad install freedesktop.org/intltool`
  * @homepage https://wiki.freedesktop.org/www/Software/intltool
  * @dependencies `perl.org~5`, `linux:libexpat.github.io^2.6` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cpanmin.us` - required only when building from source
  * @companions `PERL5LIB^${{prefix}}/lib/perl5:{{prefix}}/libexec/lib/perl5:$PERL5LIB`
  *
  * @example
@@ -71,13 +72,20 @@ export const freedesktoporgintltoolPackage = {
     'PERL5LIB^${{prefix}}/lib/perl5:{{prefix}}/libexec/lib/perl5:$PERL5LIB',
   ] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'perl.org~5',
     'linux:libexpat.github.io^2.6',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cpanmin.us',
   ] as const,
   /**
    * Available versions from newest to oldest.

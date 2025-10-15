@@ -9,6 +9,7 @@
  * @install `launchpad install fishshell.com`
  * @homepage https://fishshell.com
  * @dependencies `gnu.org/gettext`, `invisible-island.net/ncurses>=6.0`
+ * @buildDependencies `cmake.org@>=3.5`, `gnu.org/patch` - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,12 +59,20 @@ export const fishshellcomPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnu.org/gettext',
     'invisible-island.net/ncurses>=6.0',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org@>=3.5',
+    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

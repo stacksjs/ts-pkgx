@@ -42,13 +42,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +caddyserver.com@2.10.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-- `curl.se`
-
 ## Usage Examples
 
 ```typescript

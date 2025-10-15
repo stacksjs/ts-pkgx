@@ -40,14 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +crates.io/mprocs@0.7.3 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `linux:gnu.org/gcc`
-- `linux:gnu.org/binutils`
-- `linux:gnu.org/make`
-
 ## Usage Examples
 
 ```typescript

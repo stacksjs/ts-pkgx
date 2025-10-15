@@ -8,7 +8,7 @@
  *
  * @install `launchpad install logological.org/gpp`
  * @homepage https://logological.org/gpp
- * @dependencies `gnu.org/autoconf`
+ * @buildDependencies `gnu.org/autoconf` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const logologicalorggppPackage = {
     'gpp',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/autoconf',
   ] as const,
   /**

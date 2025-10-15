@@ -41,12 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +fermyon.com/spin@3.4.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `linux:llvm.org`
-
 ## Usage Examples
 
 ```typescript

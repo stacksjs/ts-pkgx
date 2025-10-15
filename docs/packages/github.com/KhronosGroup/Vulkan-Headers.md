@@ -55,12 +55,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/KhronosGroup/Vulkan-Headers@1.4.329 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-
 ## Usage Examples
 
 ```typescript

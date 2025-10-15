@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gitlab.com/gitlab-org/cli`
  * @homepage https://gitlab.com/gitlab-org/cli
- * @dependencies `go.dev@^1.18`
+ * @buildDependencies `go.dev@^1.18` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const gitlabcomgitlaborgcliPackage = {
     'glab',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@^1.18',
   ] as const,
   /**

@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +public.hronopik.de/vid.stab@1.1.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-
 ## Usage Examples
 
 ```typescript

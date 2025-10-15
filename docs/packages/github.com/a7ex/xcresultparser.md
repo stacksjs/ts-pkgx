@@ -43,12 +43,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/a7ex/xcresultparser@1.9.3 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `crates.io/semverator`
-
 ## Usage Examples
 
 ```typescript

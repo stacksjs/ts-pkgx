@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +jedisct1.github.io/minisign@0.12.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-- `libsodium.org`
-
 ## Usage Examples
 
 ```typescript

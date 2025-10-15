@@ -9,6 +9,7 @@
  * @install `launchpad install filippo.io/yubikey-agent`
  * @homepage https://filippo.io/yubikey-agent
  * @dependencies `pcsclite.apdu.fr^2`, `linux:gnupg.org/pinentry` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `go.dev@^1.20` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,13 +57,20 @@ export const filippoioyubikeyagentPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'pcsclite.apdu.fr^2',
     'linux:gnupg.org/pinentry',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'go.dev@^1.20',
   ] as const,
   /**
    * Available versions from newest to oldest.

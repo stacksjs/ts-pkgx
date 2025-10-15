@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/ed`
- * @dependencies `curl.se`, `nongnu.org/lzip`
+ * @buildDependencies `curl.se`, `nongnu.org/lzip` - required only when building from source
  *
  * @example
  * ```typescript
@@ -53,11 +53,12 @@ export const gnuorgedPackage = {
     'ed',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'curl.se',
     'nongnu.org/lzip',
   ] as const,

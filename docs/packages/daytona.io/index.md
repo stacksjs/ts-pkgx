@@ -58,12 +58,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +daytona.io@0.110.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@=1.23.5`
-
 ## Usage Examples
 
 ```typescript

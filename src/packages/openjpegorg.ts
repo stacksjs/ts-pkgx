@@ -9,6 +9,7 @@
  * @install `launchpad install openjpeg.org`
  * @homepage https://www.openjpeg.org/
  * @dependencies `libpng.org^1`, `simplesystems.org/libtiff^4`
+ * @buildDependencies `cmake.org@^3` - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,12 +59,19 @@ export const openjpegorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'libpng.org^1',
     'simplesystems.org/libtiff^4',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org@^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

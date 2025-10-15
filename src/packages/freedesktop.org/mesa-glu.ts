@@ -7,6 +7,7 @@
  *
  * @install `launchpad install freedesktop.org/mesa-glu`
  * @dependencies `mesa3d.org`
+ * @buildDependencies `gnu.org/make`, `mesonbuild.com` - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,11 +47,19 @@ export const freedesktoporgmesagluPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'mesa3d.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/make',
+    'mesonbuild.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install github.com/maxmind/libmaxminddb`
  * @homepage https://maxmind.github.io/libmaxminddb/
- * @dependencies `gnu.org/autoconf`, `gnu.org/libtool`
+ * @buildDependencies `gnu.org/autoconf`, `gnu.org/libtool` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const libmaxminddbPackage = {
     'mmdblookup',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/autoconf',
     'gnu.org/libtool',
   ] as const,

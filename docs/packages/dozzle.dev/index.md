@@ -55,14 +55,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +dozzle.dev@8.14.4 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.21`
-- `pnpm.io`
-- `openssl.org`
-
 ## Usage Examples
 
 ```typescript

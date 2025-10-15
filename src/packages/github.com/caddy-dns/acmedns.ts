@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/caddy-dns/acmedns`
- * @dependencies `github.com/caddyserver/xcaddy`
+ * @buildDependencies `github.com/caddyserver/xcaddy` - required only when building from source
  *
  * @example
  * ```typescript
@@ -45,11 +45,12 @@ export const acmednsPackage = {
   launchpadInstallCommand: 'launchpad install github.com/caddy-dns/acmedns' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'github.com/caddyserver/xcaddy',
   ] as const,
   /**

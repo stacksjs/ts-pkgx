@@ -7,6 +7,7 @@
  *
  * @install `launchpad install github.com/luvit/luv`
  * @dependencies `libuv.org`
+ * @buildDependencies `cmake.org`, `lua.org`, `luajit.org`, ... (+1 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -47,11 +48,22 @@ export const luvPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'libuv.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'cmake.org',
+    'lua.org',
+    'luajit.org',
+    'linux:curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

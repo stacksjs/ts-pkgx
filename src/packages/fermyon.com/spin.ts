@@ -8,7 +8,7 @@
  *
  * @install `launchpad install fermyon.com/spin`
  * @homepage https://spinroot.com/spin/whatispin.html
- * @dependencies `linux:llvm.org` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `linux:llvm.org` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,12 +55,13 @@ export const fermyoncomspinPackage = {
     'spin',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
    */
-  dependencies: [
+  buildDependencies: [
     'linux:llvm.org',
   ] as const,
   /**

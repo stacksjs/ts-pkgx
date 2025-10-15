@@ -7,7 +7,7 @@
  *
  * @install `launchpad install rapidjson.org`
  * @homepage http://rapidjson.org/
- * @dependencies `cmake.org`, `doxygen.nl@1`
+ * @buildDependencies `cmake.org`, `doxygen.nl@1` - required only when building from source
  *
  * @example
  * ```typescript
@@ -47,11 +47,12 @@ export const rapidjsonorgPackage = {
   launchpadInstallCommand: 'launchpad install rapidjson.org' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'cmake.org',
     'doxygen.nl@1',
   ] as const,

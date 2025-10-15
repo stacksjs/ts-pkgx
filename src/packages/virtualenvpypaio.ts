@@ -9,6 +9,7 @@
  * @install `launchpad install virtualenv.pypa.io`
  * @homepage https://virtualenv.pypa.io/
  * @dependencies `pkgx.sh^1`, `libexpat.github.io^2`, `openssl.org^1.1`
+ * @buildDependencies `python.org@>=3.7<3.12` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,13 +57,20 @@ export const virtualenvpypaioPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'pkgx.sh^1',
     'libexpat.github.io^2',
     'openssl.org^1.1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'python.org@>=3.7<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.

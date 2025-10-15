@@ -9,6 +9,7 @@
  * @install `launchpad install localstack.cloud/awscli-local`
  * @homepage https://www.localstack.cloud/
  * @dependencies `pkgx.sh^1`, `aws.amazon.com/cli^2`
+ * @buildDependencies `python.org@^3.11` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,12 +57,19 @@ export const localstackcloudawsclilocalPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'pkgx.sh^1',
     'aws.amazon.com/cli^2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'python.org@^3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

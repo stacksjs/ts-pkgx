@@ -8,6 +8,7 @@
  *
  * @install `launchpad install freedesktop.org/xdg-user-dirs`
  * @dependencies `gnu.org/gettext^0.21`, `gnu.org/libiconv^1.1`
+ * @buildDependencies `mesonbuild.com` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,12 +56,19 @@ export const freedesktoporgxdguserdirsPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnu.org/gettext^0.21',
     'gnu.org/libiconv^1.1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'mesonbuild.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

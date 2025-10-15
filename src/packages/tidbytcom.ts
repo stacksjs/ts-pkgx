@@ -9,6 +9,7 @@
  * @install `launchpad install tidbyt.com`
  * @homepage https://tidbyt.com
  * @dependencies `google.com/webp^1`
+ * @buildDependencies `go.dev@^1.22`, `npmjs.com`, `nodejs.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,20 @@ export const tidbytcomPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'google.com/webp^1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'go.dev@^1.22',
+    'npmjs.com',
+    'nodejs.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +lcdf.org/gifsicle@1.96.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/autoconf@^2`
-- `gnu.org/automake@^1`
-
 ## Usage Examples
 
 ```typescript

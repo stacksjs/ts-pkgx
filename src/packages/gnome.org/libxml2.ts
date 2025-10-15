@@ -9,6 +9,7 @@
  * @install `launchpad install gnome.org/libxml2`
  * @homepage http://xmlsoft.org/
  * @dependencies `zlib.net^1`
+ * @buildDependencies `python.org@>=3<3.12`, `doxygen.nl` - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,11 +59,19 @@ export const gnomeorglibxml2Package = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'zlib.net^1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'python.org@>=3<3.12',
+    'doxygen.nl',
   ] as const,
   /**
    * Available versions from newest to oldest.

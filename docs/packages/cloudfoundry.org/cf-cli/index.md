@@ -46,13 +46,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +cloudfoundry.org/cf-cli@8.16.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org@^3`
-- `go.dev@=1.23.1`
-
 ## Usage Examples
 
 ```typescript

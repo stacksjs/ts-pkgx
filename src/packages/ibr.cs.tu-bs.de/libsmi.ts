@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ibr.cs.tu-bs.de/libsmi`
  * @homepage https://www.ibr.cs.tu-bs.de/projects/libsmi/
- * @dependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/libtool`
+ * @buildDependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/libtool` - required only when building from source
  *
  * @example
  * ```typescript
@@ -59,11 +59,12 @@ export const ibrcstubsdelibsmiPackage = {
     'smixlate',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/autoconf',
     'gnu.org/automake',
     'gnu.org/libtool',

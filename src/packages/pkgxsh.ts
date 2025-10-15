@@ -8,7 +8,7 @@
  *
  * @install `launchpad install pkgx.sh`
  * @homepage https://pkgx.sh
- * @dependencies `deno.land@~2`, `perl.org@5`
+ * @buildDependencies `deno.land@~2`, `perl.org@5` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const pkgxshPackage = {
     'pkgx',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'deno.land@~2',
     'perl.org@5',
   ] as const,

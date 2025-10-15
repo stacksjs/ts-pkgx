@@ -8,7 +8,7 @@
  *
  * @install `launchpad install wavpack.com`
  * @homepage https://www.wavpack.com/
- * @dependencies `gnu.org/patch`
+ * @buildDependencies `gnu.org/patch` - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,11 +58,12 @@ export const wavpackcomPackage = {
     'wvgain',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/patch',
   ] as const,
   /**

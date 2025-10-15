@@ -41,14 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/awslabs/amazon-ecr-credential-helper@0.10.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/bash`
-- `gnu.org/make`
-- `go.dev@^1.21`
-
 ## Usage Examples
 
 ```typescript

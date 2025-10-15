@@ -49,12 +49,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +akuity.io/kargo@1.7.5 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.19`
-
 ## Usage Examples
 
 ```typescript

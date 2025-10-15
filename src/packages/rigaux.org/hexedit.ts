@@ -9,6 +9,7 @@
  * @install `launchpad install rigaux.org/hexedit`
  * @homepage https://rigaux.org/hexedit.html
  * @dependencies `invisible-island.net/ncurses@6`
+ * @buildDependencies `gnu.org/autoconf` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,18 @@ export const rigauxorghexeditPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'invisible-island.net/ncurses@6',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/autoconf',
   ] as const,
   /**
    * Available versions from newest to oldest.

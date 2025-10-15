@@ -9,6 +9,7 @@
  * @install `launchpad install oracle.com/oci-cli`
  * @homepage https://docs.cloud.oracle.com/iaas/Content/API/Concepts/cliconcepts.htm
  * @dependencies `certifi.io/python-certifi^2024`, `pyyaml.org/libyaml^0.2`, `cryptography.io^42`, ... (+1 more)
+ * @buildDependencies `cmake.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,14 +57,21 @@ export const oraclecomocicliPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'certifi.io/python-certifi^2024',
     'pyyaml.org/libyaml^0.2',
     'cryptography.io^42',
     'python.org^3.11',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

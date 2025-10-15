@@ -8,6 +8,7 @@
  *
  * @install `launchpad install freedesktop.org/polkit`
  * @dependencies `gnome.org/glib^2.78`, `duktape.org^2.7`, `gnome.org/gobject-introspection^1.72`, ... (+2 more)
+ * @buildDependencies `mesonbuild.com`, `gnu.org/gettext`, `gnome.org/libxslt` - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,8 +59,8 @@ export const freedesktoporgpolkitPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnome.org/glib^2.78',
@@ -67,6 +68,15 @@ export const freedesktoporgpolkitPackage = {
     'gnome.org/gobject-introspection^1.72',
     'freedesktop.org/dbus^1.12',
     'linux-pam.org^1.4',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'mesonbuild.com',
+    'gnu.org/gettext',
+    'gnome.org/libxslt',
   ] as const,
   /**
    * Available versions from newest to oldest.

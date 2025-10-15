@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +hadrons.org/libmd@1.1.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/patch`
-- `crates.io/semverator`
-
 ## Usage Examples
 
 ```typescript

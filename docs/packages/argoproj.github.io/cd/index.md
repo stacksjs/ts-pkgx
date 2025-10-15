@@ -70,14 +70,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +argoproj.github.io/cd@3.1.8 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-- `nodejs.org@<23`
-- `yarnpkg.com`
-
 ## Usage Examples
 
 ```typescript

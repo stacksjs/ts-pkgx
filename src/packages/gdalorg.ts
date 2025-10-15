@@ -9,6 +9,7 @@
  * @install `launchpad install gdal.org`
  * @homepage https://www.gdal.org/
  * @dependencies `apache.org/arrow@19`, `heasarc.gsfc.nasa.gov/cfitsio`, `epsilon-project.sourceforge.io`, ... (+42 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `boost.org`, `cmake.org`, `swig.org`, ... (+3 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -83,8 +84,8 @@ export const gdalorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -133,6 +134,19 @@ export const gdalorgPackage = {
     'linux:curl.se',
     'linux:github.com/util-linux/util-linux',
     'linux:apache.org/thrift=0.22.0 # since 3.11.1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'boost.org',
+    'cmake.org',
+    'swig.org',
+    'doxygen.nl',
+    'linux:llvm.org',
+    'linux:nixos.org/patchelf',
   ] as const,
   /**
    * Available versions from newest to oldest.

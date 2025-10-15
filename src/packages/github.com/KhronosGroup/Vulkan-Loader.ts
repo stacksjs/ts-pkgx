@@ -8,6 +8,7 @@
  * @install `launchpad install github.com/KhronosGroup/Vulkan-Loader`
  * @homepage https://vulkan.lunarg.com/doc/sdk/latest/linux/LoaderInterfaceArchitecture.html
  * @dependencies `github.com/KhronosGroup/Vulkan-Headers`, `linux:x.org/x11`, `linux:x.org/xcb`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `gnu.org/make`, `cmake.org`, `python.org@~3.11`, ... (+1 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -48,8 +49,8 @@ export const vulkanloaderPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -57,6 +58,17 @@ export const vulkanloaderPackage = {
     'linux:x.org/x11',
     'linux:x.org/xcb',
     'linux:wayland.freedesktop.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'gnu.org/make',
+    'cmake.org',
+    'python.org@~3.11',
+    'linux:x.org/xrandr',
   ] as const,
   /**
    * Available versions from newest to oldest.

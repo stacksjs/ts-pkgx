@@ -9,6 +9,7 @@
  * @install `launchpad install harfbuzz.org`
  * @homepage http://harfbuzz.github.io/
  * @dependencies `cairographics.org@1`, `freetype.org@2`, `gnome.org/glib@2`, ... (+2 more)
+ * @buildDependencies `mesonbuild.com@>=0.63`, `python.org@>=3<3.12` - required only when building from source
  *
  * @example
  * ```typescript
@@ -59,8 +60,8 @@ export const harfbuzzorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'cairographics.org@1',
@@ -68,6 +69,14 @@ export const harfbuzzorgPackage = {
     'gnome.org/glib@2',
     'graphite.sil.org',
     'unicode.org^71',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'mesonbuild.com@>=0.63',
+    'python.org@>=3<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/mono0926/LicensePlist@3.27.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `swift.org@6`
-
 ## Usage Examples
 
 ```typescript

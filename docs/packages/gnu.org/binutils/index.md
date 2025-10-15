@@ -52,14 +52,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +gnu.org/binutils@2.45.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/bison`
-- `gnu.org/texinfo`
-- `linux:gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

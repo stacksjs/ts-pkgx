@@ -8,7 +8,7 @@
  *
  * @install `launchpad install thoughtworks.github.io/talisman`
  * @homepage https://thoughtworks.github.io/talisman/
- * @dependencies `go.dev@~1.24.2`
+ * @buildDependencies `go.dev@~1.24.2` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const thoughtworksgithubiotalismanPackage = {
     'talisman',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@~1.24.2',
   ] as const,
   /**

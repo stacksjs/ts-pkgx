@@ -45,13 +45,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +glaros.dtc.umn.edu/metis@5.2.1.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/make`
-- `cmake.org`
-
 ## Usage Examples
 
 ```typescript

@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnome.org/adwaita-icon-theme`
- * @dependencies `gnu.org/gettext`, `gtk.org/gtk4`, `freedesktop.org/intltool`, ... (+1 more)
+ * @buildDependencies `gnu.org/gettext`, `gtk.org/gtk4`, `freedesktop.org/intltool`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -45,11 +45,12 @@ export const gnomeorgadwaitaiconthemePackage = {
   launchpadInstallCommand: 'launchpad install gnome.org/adwaita-icon-theme' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/gettext',
     'gtk.org/gtk4',
     'freedesktop.org/intltool',

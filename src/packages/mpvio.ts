@@ -9,6 +9,7 @@
  * @install `launchpad install mpv.io`
  * @homepage https://mpv.io
  * @dependencies `ffmpeg.org`, `libjpeg-turbo.org@2`, `libarchive.org@3`, ... (+10 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `mesonbuild.com@1`, `linux:nixos.org/patchelf@0` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,8 +57,8 @@ export const mpvioPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -74,6 +75,15 @@ export const mpvioPackage = {
     'yt-dlp.org',
     'linux:alsa-project.org/alsa-lib@1',
     'linux:github.com/adah1972/libunibreak@6',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'mesonbuild.com@1',
+    'linux:nixos.org/patchelf@0',
   ] as const,
   /**
    * Available versions from newest to oldest.

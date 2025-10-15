@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +freedesktop.org/libbsd@0.11.7 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `hadrons.org/libmd`
-
 ## Usage Examples
 
 ```typescript

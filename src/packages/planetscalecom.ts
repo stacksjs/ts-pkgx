@@ -8,7 +8,7 @@
  *
  * @install `launchpad install planetscale.com`
  * @homepage https://www.planetscale.com/
- * @dependencies `go.dev@~1.22.4`
+ * @buildDependencies `go.dev@~1.22.4` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const planetscalecomPackage = {
     'pscale',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@~1.22.4',
   ] as const,
   /**

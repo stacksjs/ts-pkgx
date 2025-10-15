@@ -7,6 +7,7 @@
  *
  * @install `launchpad install apache.org/serf`
  * @dependencies `apache.org/apr^1`, `apache.org/apr-util^1`, `openssl.org^1.1`, ... (+3 more)
+ * @buildDependencies `python.org@~3.11`, `scons.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,8 +47,8 @@ export const apacheorgserfPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'apache.org/apr^1',
@@ -56,6 +57,14 @@ export const apacheorgserfPackage = {
     'zlib.net^1.2',
     'kerberos.org^1.20',
     'libexpat.github.io^2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'python.org@~3.11',
+    'scons.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

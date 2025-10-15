@@ -41,13 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/mycreepy/pakku@0.5.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.23`
-- `goreleaser.com`
-
 ## Usage Examples
 
 ```typescript

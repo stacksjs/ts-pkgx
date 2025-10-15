@@ -9,6 +9,7 @@
  * @install `launchpad install leptonica.org`
  * @homepage http://www.leptonica.org/
  * @dependencies `giflib.sourceforge.io@5`, `libjpeg-turbo.org@2`, `libpng.org@1`, ... (+3 more)
+ * @buildDependencies `gnu.org/wget` - required only when building from source
  *
  * @example
  * ```typescript
@@ -65,8 +66,8 @@ export const leptonicaorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'giflib.sourceforge.io@5',
@@ -75,6 +76,13 @@ export const leptonicaorgPackage = {
     'simplesystems.org/libtiff@4',
     'openjpeg.org',
     'google.com/webp',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.

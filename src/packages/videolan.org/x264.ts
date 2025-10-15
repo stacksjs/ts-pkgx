@@ -8,7 +8,7 @@
  *
  * @install `launchpad install videolan.org/x264`
  * @homepage https://www.videolan.org/developers/x264.html
- * @dependencies `gnu.org/gcc`, `nasm.us`
+ * @buildDependencies `gnu.org/gcc`, `nasm.us` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const videolanorgx264Package = {
     'x264',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/gcc',
     'nasm.us',
   ] as const,

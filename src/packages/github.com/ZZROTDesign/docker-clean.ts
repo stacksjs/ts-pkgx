@@ -1,5 +1,5 @@
 /**
- * **docker-clean** - A script that cleans docker containers, images, volumes, and networks.
+ * **docker-clean** - A script that cleans docker containers, images, volumes, and networks. 
  *
  * @domain `github.com/ZZROTDesign/docker-clean`
  * @programs `docker-clean`
@@ -55,13 +55,14 @@ export const dockercleanPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnu.org/bash',
     'docker.com/cli',
   ] as const,
+  buildDependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

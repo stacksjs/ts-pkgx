@@ -42,12 +42,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +scaleway.com@2.44.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.24.6`
-
 ## Usage Examples
 
 ```typescript

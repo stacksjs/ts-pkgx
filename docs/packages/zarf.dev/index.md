@@ -50,12 +50,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +zarf.dev@0.63.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-
 ## Usage Examples
 
 ```typescript

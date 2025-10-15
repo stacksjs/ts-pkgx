@@ -51,16 +51,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +vaultproject.io@1.20.3 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@=1.24.6`
-- `nodejs.org@^18`
-- `python.org@~3.10`
-- `npmjs.com`
-- `classic.yarnpkg.com`
-
 ## Usage Examples
 
 ```typescript

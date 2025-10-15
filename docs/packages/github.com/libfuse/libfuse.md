@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/libfuse/libfuse@3.17.4 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `mesonbuild.com`
-- `linux:gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

@@ -40,15 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +epsilon-project.sourceforge.io@0.9.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/make`
-- `gnu.org/autoconf`
-- `gnu.org/automake`
-- `gnu.org/libtool`
-
 ## Usage Examples
 
 ```typescript

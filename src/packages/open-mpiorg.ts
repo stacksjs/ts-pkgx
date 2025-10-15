@@ -9,6 +9,7 @@
  * @install `launchpad install open-mpi.org`
  * @homepage https://www.open-mpi.org
  * @dependencies `open-mpi.org/hwloc`, `openpmix.github.io@5`, `libevent.org`
+ * @buildDependencies `zlib.net@^1`, `python.org@^3`, `gnu.org/binutils`, ... (+1 more) - required only when building from source
  * @companions `OMPI_F77FLAGS^$FCFLAGS -I{{prefix}}/include`, `OMPI_F90FLAGS^$FCFLAGS -I{{prefix}}/include`
  *
  * @example
@@ -74,13 +75,23 @@ export const openmpiorgPackage = {
     'OMPI_F90FLAGS^$FCFLAGS -I{{prefix}}/include',
   ] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'open-mpi.org/hwloc',
     'openpmix.github.io@5',
     'libevent.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'zlib.net@^1',
+    'python.org@^3',
+    'gnu.org/binutils',
+    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

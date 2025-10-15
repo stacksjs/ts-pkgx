@@ -9,6 +9,7 @@
  * @install `launchpad install github.com/clever/microplane`
  * @homepage https://medium.com/always-a-student/mo-repos-mo-problems-how-we-make-changes-across-many-git-repositories-293ad7d418f0
  * @dependencies `git-scm.org^2`
+ * @buildDependencies `go.dev@^1.18` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,18 @@ export const microplanePackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'git-scm.org^2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'go.dev@^1.18',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -46,12 +46,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +docker.com/buildx@0.29.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.21`
-
 ## Usage Examples
 
 ```typescript

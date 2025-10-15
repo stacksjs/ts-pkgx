@@ -9,6 +9,7 @@
  * @install `launchpad install qpdf.sourceforge.io`
  * @homepage https://qpdf.sourceforge.io/
  * @dependencies `zlib.net^1`, `libjpeg-turbo.org^2`, `openssl.org^1.1`, ... (+1 more)
+ * @buildDependencies `cmake.org@^3`, `pyyaml.org/libyaml`, `python.org@^3`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,14 +57,24 @@ export const qpdfsourceforgeioPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'zlib.net^1',
     'libjpeg-turbo.org^2',
     'openssl.org^1.1',
     'gnutls.org^3',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org@^3',
+    'pyyaml.org/libyaml',
+    'python.org@^3',
+    'pip.pypa.io',
   ] as const,
   /**
    * Available versions from newest to oldest.

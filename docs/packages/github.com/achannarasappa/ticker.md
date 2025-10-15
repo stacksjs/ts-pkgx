@@ -42,12 +42,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/achannarasappa/ticker@5.0.7 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.22.0`
-
 ## Usage Examples
 
 ```typescript

@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +crates.io/kaspa-miner@0.2.5 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `protobuf.dev@25`
-
 ## Usage Examples
 
 ```typescript

@@ -7,6 +7,7 @@
  *
  * @install `launchpad install videolan.org/libbluray`
  * @dependencies `freedesktop.org/fontconfig`, `freetype.org`, `gnome.org/libxml2~2.13 # API changed in 2.14`
+ * @buildDependencies `gnu.org/automake`, `gnu.org/autoconf`, `gnu.org/libtool`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,13 +47,23 @@ export const videolanorglibblurayPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'freedesktop.org/fontconfig',
     'freetype.org',
     'gnome.org/libxml2~2.13 # API changed in 2.14',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/automake',
+    'gnu.org/autoconf',
+    'gnu.org/libtool',
+    'mesonbuild.com@^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

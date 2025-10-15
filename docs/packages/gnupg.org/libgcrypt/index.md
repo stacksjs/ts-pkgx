@@ -43,14 +43,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +gnupg.org/libgcrypt@1.11.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `darwinsys.com/file`
-- `darwin:llvm.org`
-- `linux:gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

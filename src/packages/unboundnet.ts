@@ -9,6 +9,7 @@
  * @install `launchpad install unbound.net`
  * @homepage https://nlnetlabs.nl/unbound
  * @dependencies `openssl.org^1`
+ * @buildDependencies `libexpat.github.io`, `github.com/westes/flex`, `gnu.org/bison@^3` - required only when building from source
  *
  * @example
  * ```typescript
@@ -61,11 +62,20 @@ export const unboundnetPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openssl.org^1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'libexpat.github.io',
+    'github.com/westes/flex',
+    'gnu.org/bison@^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

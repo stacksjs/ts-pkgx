@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jetporch.com`
- * @dependencies `openssl.org`, `zlib.net`
+ * @buildDependencies `openssl.org`, `zlib.net` - required only when building from source
  *
  * @example
  * ```typescript
@@ -54,11 +54,12 @@ export const jetporchcomPackage = {
     'jetp',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'openssl.org',
     'zlib.net',
   ] as const,

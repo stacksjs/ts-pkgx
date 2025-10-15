@@ -1,5 +1,5 @@
 /**
- * **openblas** - OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version.
+ * **openblas** - OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version. 
  *
  * @domain `openblas.net`
  * @version `0.3.30` (8 versions available)
@@ -7,7 +7,7 @@
  *
  * @install `launchpad install openblas.net`
  * @homepage http://www.openblas.net
- * @dependencies `cmake.org`
+ * @buildDependencies `cmake.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -47,11 +47,12 @@ export const openblasnetPackage = {
   launchpadInstallCommand: 'launchpad install openblas.net' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'cmake.org',
   ] as const,
   /**

@@ -41,12 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/besser82/libxcrypt@4.4.38 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `perl.org`
-
 ## Usage Examples
 
 ```typescript

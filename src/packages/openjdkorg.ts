@@ -9,6 +9,7 @@
  * @install `launchpad install openjdk.org`
  * @homepage https://openjdk.java.net/
  * @dependencies `giflib.sourceforge.io`, `harfbuzz.org^8`, `libjpeg-turbo.org`, ... (+17 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `linux:llvm.org@^16`, `linux:gnu.org/make`, `gnu.org/autoconf`, ... (+1 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -82,8 +83,8 @@ export const openjdkorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -107,6 +108,17 @@ export const openjdkorgPackage = {
     'linux:x.org/xtst',
     'linux:info-zip.org/zip',
     'linux:darwinsys.com/file',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'linux:llvm.org@^16',
+    'linux:gnu.org/make',
+    'gnu.org/autoconf',
+    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.

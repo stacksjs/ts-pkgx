@@ -41,13 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +sftpgo.com@2.6.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@=1.22.2`
-- `gnu.org/coreutils`
-
 ## Usage Examples
 
 ```typescript

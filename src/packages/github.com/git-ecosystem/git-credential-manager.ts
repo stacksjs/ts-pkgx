@@ -8,6 +8,7 @@
  *
  * @install `launchpad install github.com/git-ecosystem/git-credential-manager`
  * @dependencies `openssl.org^1.1.1`, `unicode.org^71`, `zlib.net^1.3`, ... (+1 more)
+ * @buildDependencies `kerberos.org@^1.21.3`, `linux:gnu.org/gcc@>=12` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,14 +56,23 @@ export const gitcredentialmanagerPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openssl.org^1.1.1',
     'unicode.org^71',
     'zlib.net^1.3',
     'dotnet.microsoft.com^8.0',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'kerberos.org@^1.21.3',
+    'linux:gnu.org/gcc@>=12',
   ] as const,
   /**
    * Available versions from newest to oldest.

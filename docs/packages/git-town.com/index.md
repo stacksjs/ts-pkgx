@@ -52,12 +52,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +git-town.com@22.1.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.23.10`
-
 ## Usage Examples
 
 ```typescript

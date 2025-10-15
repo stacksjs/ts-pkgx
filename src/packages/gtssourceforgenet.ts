@@ -9,6 +9,7 @@
  * @install `launchpad install gts.sourceforge.net`
  * @homepage https://gts.sourceforge.net/
  * @dependencies `gnome.org/glib>=2.4.0`
+ * @buildDependencies `gnu.org/automake`, `gnu.org/autoconf`, `gnu.org/libtool` - required only when building from source
  *
  * @example
  * ```typescript
@@ -64,11 +65,20 @@ export const gtssourceforgenetPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnome.org/glib>=2.4.0',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/automake',
+    'gnu.org/autoconf',
+    'gnu.org/libtool',
   ] as const,
   /**
    * Available versions from newest to oldest.

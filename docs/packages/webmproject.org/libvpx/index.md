@@ -41,12 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +webmproject.org/libvpx@1.15.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `yasm.tortall.net`
-
 ## Usage Examples
 
 ```typescript

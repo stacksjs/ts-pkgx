@@ -1,5 +1,5 @@
 /**
- * **caesiumclt** - Caesium Command Line Tools - Lossy/lossless image compression tool
+ * **caesiumclt** - Caesium Command Line Tools - Lossy/lossless image compression tool 
  *
  * @domain `saerasoft.com/caesium`
  * @programs `caesiumclt`
@@ -55,6 +55,7 @@ export const saerasoftcomcaesiumPackage = {
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  buildDependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

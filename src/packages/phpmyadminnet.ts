@@ -7,6 +7,7 @@
  *
  * @install `launchpad install phpmyadmin.net`
  * @dependencies `php.net`
+ * @buildDependencies `php.net` - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,10 +47,17 @@ export const phpmyadminnetPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
+    'php.net',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
     'php.net',
   ] as const,
   /**

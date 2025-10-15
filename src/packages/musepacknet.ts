@@ -9,6 +9,7 @@
  * @install `launchpad install musepack.net`
  * @homepage https://www.musepack.net/
  * @dependencies `musepack.net/libreplaygain`, `musepack.net/libcuefile`
+ * @buildDependencies `cmake.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -62,12 +63,19 @@ export const musepacknetPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'musepack.net/libreplaygain',
     'musepack.net/libcuefile',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

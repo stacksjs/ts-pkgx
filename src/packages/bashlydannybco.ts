@@ -9,6 +9,7 @@
  * @install `launchpad install bashly.dannyb.co`
  * @homepage https://bashly.dev
  * @dependencies `ruby-lang.org^3.1`, `rubygems.org`
+ * @buildDependencies `rubygems.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,18 @@ export const bashlydannybcoPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'ruby-lang.org^3.1',
+    'rubygems.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
     'rubygems.org',
   ] as const,
   /**

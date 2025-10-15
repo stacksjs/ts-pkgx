@@ -41,12 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +gitlab.com/OldManProgrammer/unix-tree@2.2.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `linux:gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

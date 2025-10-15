@@ -7,6 +7,7 @@
  *
  * @install `launchpad install github.com/confluentinc/librdkafka`
  * @dependencies `lz4.org`, `zlib.net`, `openssl.org^1.1`, ... (+2 more)
+ * @buildDependencies `python.org@~3.11`, `linux:llvm.org` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -47,8 +48,8 @@ export const librdkafkaPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'lz4.org',
@@ -56,6 +57,15 @@ export const librdkafkaPackage = {
     'openssl.org^1.1',
     'facebook.com/zstd',
     'curl.se',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'python.org@~3.11',
+    'linux:llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

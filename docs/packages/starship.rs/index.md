@@ -44,12 +44,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +starship.rs@1.23.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org@>=3.5`
-
 ## Usage Examples
 
 ```typescript

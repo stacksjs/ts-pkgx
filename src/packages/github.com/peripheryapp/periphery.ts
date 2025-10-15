@@ -8,6 +8,7 @@
  *
  * @install `launchpad install github.com/peripheryapp/periphery`
  * @dependencies `curl.se`, `gnome.org/libxml2`
+ * @buildDependencies `gnu.org/sed`, `crates.io/semverator` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,12 +56,20 @@ export const peripheryPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'curl.se',
     'gnome.org/libxml2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/sed',
+    'crates.io/semverator',
   ] as const,
   /**
    * Available versions from newest to oldest.

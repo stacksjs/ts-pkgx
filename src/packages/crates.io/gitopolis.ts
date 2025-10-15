@@ -8,6 +8,7 @@
  *
  * @install `launchpad install crates.io/gitopolis`
  * @dependencies `openssl.org^1.1`, `zlib.net^1`, `git-scm.org^2`, ... (+1 more)
+ * @buildDependencies `gnu.org/make` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,14 +56,21 @@ export const cratesiogitopolisPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openssl.org^1.1',
     'zlib.net^1',
     'git-scm.org^2',
     'libgit2.org~1.7 # links to libgit2.so.1.7',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -9,6 +9,7 @@
  * @install `launchpad install breakfastquay.com/rubberband`
  * @homepage https://breakfastquay.com/rubberband/
  * @dependencies `github.com/libsndfile/libsamplerate^0.2`, `github.com/libsndfile/libsndfile^1.2`, `linux:fftw.org^3.3`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `mesonbuild.com@^1.3.2` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,8 +57,8 @@ export const breakfastquaycomrubberbandPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -66,6 +67,13 @@ export const breakfastquaycomrubberbandPackage = {
     'linux:fftw.org^3.3',
     'linux:ladspa.org^1.17',
     'linux:vamp-plugins.org^2.9',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'mesonbuild.com@^1.3.2',
   ] as const,
   /**
    * Available versions from newest to oldest.

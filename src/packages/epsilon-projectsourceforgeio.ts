@@ -8,7 +8,7 @@
  *
  * @install `launchpad install epsilon-project.sourceforge.io`
  * @homepage https://sourceforge.net/projects/epsilon-project/
- * @dependencies `gnu.org/make`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+1 more)
+ * @buildDependencies `gnu.org/make`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const epsilonprojectsourceforgeioPackage = {
     'epsilon',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/make',
     'gnu.org/autoconf',
     'gnu.org/automake',

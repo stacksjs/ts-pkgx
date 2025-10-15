@@ -46,13 +46,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +ipfs.tech@0.38.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@>=1.20`
-- `gnu.org/patch`
-
 ## Usage Examples
 
 ```typescript

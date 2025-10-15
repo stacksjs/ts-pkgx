@@ -9,6 +9,7 @@
  * @install `launchpad install sourceforge.net/potrace`
  * @homepage https://potrace.sourceforge.net/
  * @dependencies `zlib.net^1`
+ * @buildDependencies `curl.se` - required only when building from source
  *
  * @example
  * ```typescript
@@ -57,11 +58,18 @@ export const sourceforgenetpotracePackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'zlib.net^1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

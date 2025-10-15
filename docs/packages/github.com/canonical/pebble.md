@@ -46,14 +46,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/canonical/pebble@1.25.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-- `gnu.org/sed`
-- `cmake.org@^3`
-
 ## Usage Examples
 
 ```typescript

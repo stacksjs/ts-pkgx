@@ -44,13 +44,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +fairwinds.com/pluto@5.22.5 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.21`
-- `gnu.org/make`
-
 ## Usage Examples
 
 ```typescript

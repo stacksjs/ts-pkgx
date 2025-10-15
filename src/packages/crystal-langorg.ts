@@ -9,6 +9,7 @@
  * @install `launchpad install crystal-lang.org`
  * @homepage https://crystal-lang.org/
  * @dependencies `hboehm.info/gc^8`, `gnu.org/gmp^6`, `libevent.org^2`, ... (+7 more)
+ * @buildDependencies `curl.se` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,8 +57,8 @@ export const crystallangorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'hboehm.info/gc^8',
@@ -70,6 +71,13 @@ export const crystallangorgPackage = {
     'freedesktop.org/pkg-config^0',
     'sourceware.org/libffi^3',
     'invisible-island.net/ncurses^6',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -44,12 +44,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/kishaningithub/tf-import-gen@0.19.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-
 ## Usage Examples
 
 ```typescript

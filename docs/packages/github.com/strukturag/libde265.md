@@ -47,13 +47,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/strukturag/libde265@1.0.16 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/autoconf`
-- `gnu.org/automake`
-
 ## Usage Examples
 
 ```typescript

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install tcpdump.org`
  * @homepage https://www.tcpdump.org/
- * @dependencies `gnu.org/make`, `gnu.org/bison`, `github.com/westes/flex`
+ * @buildDependencies `gnu.org/make`, `gnu.org/bison`, `github.com/westes/flex` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const tcpdumporgPackage = {
     'pcap-config',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/make',
     'gnu.org/bison',
     'github.com/westes/flex',

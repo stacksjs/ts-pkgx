@@ -9,6 +9,7 @@
  * @install `launchpad install augeas.net`
  * @homepage https://augeas.net/
  * @dependencies `gnu.org/readline`, `gnome.org/libxml2`
+ * @buildDependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/bison`, ... (+4 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -60,12 +61,26 @@ export const augeasnetPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnu.org/readline',
     'gnome.org/libxml2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/bison',
+    'gnu.org/libtool',
+    'curl.se',
+    'gnu.org/patch',
+    'linux:gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

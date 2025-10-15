@@ -8,6 +8,7 @@
  *
  * @install `launchpad install github.com/jesseduffield/lazygit`
  * @dependencies `git-scm.org^2`
+ * @buildDependencies `go.dev@^1.18` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +56,18 @@ export const lazygitPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'git-scm.org^2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'go.dev@^1.18',
   ] as const,
   /**
    * Available versions from newest to oldest.

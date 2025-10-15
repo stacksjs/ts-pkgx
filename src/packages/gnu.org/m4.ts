@@ -1,5 +1,5 @@
 /**
- * **m4** - GNU M4. Mirror of git://git.savannah.gnu.org/m4.git
+ * **m4** - GNU M4. Mirror of git://git.savannah.gnu.org/m4.git 
  *
  * @domain `gnu.org/m4`
  * @programs `m4`
@@ -55,6 +55,7 @@ export const gnuorgm4Package = {
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  buildDependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

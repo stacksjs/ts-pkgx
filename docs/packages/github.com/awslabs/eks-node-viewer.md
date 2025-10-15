@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/awslabs/eks-node-viewer@0.7.4 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.24.2`
-
 ## Usage Examples
 
 ```typescript

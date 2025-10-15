@@ -9,6 +9,7 @@
  * @install `launchpad install pwmt.org/zathura`
  * @homepage https://pwmt.org/projects/zathura
  * @dependencies `gnome.org/glib^2.72`, `gnome.org/adwaita-icon-theme`, `gnu.org/gettext`, ... (+8 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `mesonbuild.com@>=0.61`, `linux:nixos.org/patchelf` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,8 +57,8 @@ export const pwmtorgzathuraPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -72,6 +73,15 @@ export const pwmtorgzathuraPackage = {
     'gtk.org/gtk3^3.22',
     'sqlite.org@3',
     'darwin:gnome.org/gtk-mac-integration-gtk3',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'mesonbuild.com@>=0.61',
+    'linux:nixos.org/patchelf',
   ] as const,
   /**
    * Available versions from newest to oldest.

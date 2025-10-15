@@ -40,14 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +libusb.info@1.0.29 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/autoconf`
-- `gnu.org/libtool`
-- `linux:systemd.io`
-
 ## Usage Examples
 
 ```typescript

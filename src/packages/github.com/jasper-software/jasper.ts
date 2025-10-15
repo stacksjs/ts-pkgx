@@ -9,6 +9,7 @@
  * @install `launchpad install github.com/jasper-software/jasper`
  * @homepage https://ece.engr.uvic.ca/~frodo/jasper/
  * @dependencies `libjpeg-turbo.org^2`
+ * @buildDependencies `cmake.org@^3` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,18 @@ export const jasperPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'libjpeg-turbo.org^2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org@^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

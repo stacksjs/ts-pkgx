@@ -8,7 +8,7 @@
  *
  * @install `launchpad install luajit.org`
  * @homepage http://luajit.org
- * @dependencies `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,12 +56,13 @@ export const luajitorgPackage = {
     'luajit-{{version.marketing}}.',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
    */
-  dependencies: [
+  buildDependencies: [
     'linux:gnu.org/gcc',
   ] as const,
   /**

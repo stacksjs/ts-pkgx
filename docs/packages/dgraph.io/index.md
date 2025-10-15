@@ -42,12 +42,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +dgraph.io@25.0.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.22.12`
-
 ## Usage Examples
 
 ```typescript

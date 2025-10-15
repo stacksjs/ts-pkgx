@@ -8,6 +8,7 @@
  *
  * @install `launchpad install facebook.com/fbthrift`
  * @dependencies `github.com/facebookincubator/fizz`, `facebook.com/folly`, `facebook.com/wangle`, ... (+10 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org`, `facebook.com/mvfst`, `gnu.org/bison`, ... (+4 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,8 +56,8 @@ export const facebookcomfbthriftPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -73,6 +74,20 @@ export const facebookcomfbthriftPackage = {
     'libsodium.org^1.0.19',
     'github.com/Cyan4973/xxHash^0.8',
     'linux:gnu.org/gcc/libstdcxx@13',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'cmake.org',
+    'facebook.com/mvfst',
+    'gnu.org/bison',
+    'github.com/westes/flex',
+    'python.org@^3.10',
+    'linux:gnu.org/gcc@13',
+    'linux:gnu.org/binutils',
   ] as const,
   /**
    * Available versions from newest to oldest.

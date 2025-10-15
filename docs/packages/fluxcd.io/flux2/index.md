@@ -43,14 +43,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +fluxcd.io/flux2@2.7.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.20`
-- `kubernetes.io/kustomize@^5`
-- `gnu.org/make`
-
 ## Usage Examples
 
 ```typescript

@@ -40,14 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +gnu.org/tar@1.35.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/patch`
-- `gnu.org/autoconf`
-- `gnu.org/automake`
-
 ## Usage Examples
 
 ```typescript

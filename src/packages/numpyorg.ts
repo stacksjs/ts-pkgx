@@ -9,6 +9,7 @@
  * @install `launchpad install numpy.org`
  * @homepage https://www.numpy.org/
  * @dependencies `openblas.net^0.3`, `python.org^3.11`
+ * @buildDependencies `cython.org/libcython`, `llvm.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,12 +57,20 @@ export const numpyorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openblas.net^0.3',
     'python.org^3.11',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cython.org/libcython',
+    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

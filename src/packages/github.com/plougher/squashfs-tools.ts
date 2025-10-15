@@ -8,6 +8,7 @@
  *
  * @install `launchpad install github.com/plougher/squashfs-tools`
  * @dependencies `lz4.org@1`, `oberhumer.com/lzo@2`, `tukaani.org/xz@5`, ... (+2 more)
+ * @buildDependencies `curl.se`, `gnu.org/patch` - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,8 +59,8 @@ export const squashfstoolsPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'lz4.org@1',
@@ -67,6 +68,14 @@ export const squashfstoolsPackage = {
     'tukaani.org/xz@5',
     'facebook.com/zstd@1',
     'zlib.net@1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'curl.se',
+    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/mop-tracker/mop@2023.3.30 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-- `gnu.org/patch`
-
 ## Usage Examples
 
 ```typescript

@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/dloebl/cgif@0.5.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `mesonbuild.com`
-
 ## Usage Examples
 
 ```typescript

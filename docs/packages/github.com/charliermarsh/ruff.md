@@ -73,12 +73,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/charliermarsh/ruff@0.14.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `crates.io/semverator`
-
 ## Usage Examples
 
 ```typescript

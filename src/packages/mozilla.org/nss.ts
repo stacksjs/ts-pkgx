@@ -9,6 +9,7 @@
  * @install `launchpad install mozilla.org/nss`
  * @homepage https://firefox-source-docs.mozilla.org/security/nss/index.html
  * @dependencies `mozilla.org/nspr`, `sqlite.org`, `zlib.net`
+ * @buildDependencies `linux:gnu.org/gcc`, `linux:gnu.org/make` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -116,13 +117,22 @@ export const mozillaorgnssPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'mozilla.org/nspr',
     'sqlite.org',
     'zlib.net',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'linux:gnu.org/gcc',
+    'linux:gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -9,6 +9,7 @@
  * @install `launchpad install libraw.org`
  * @homepage https://www.libraw.org/
  * @dependencies `github.com/jasper-software/jasper`, `libjpeg-turbo.org`, `littlecms.com`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/libtool`, ... (+2 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -66,8 +67,8 @@ export const libraworgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -76,6 +77,18 @@ export const libraworgPackage = {
     'littlecms.com',
     'zlib.net',
     'darwin:openmp.llvm.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/libtool',
+    'darwin:llvm.org',
+    'linux:gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

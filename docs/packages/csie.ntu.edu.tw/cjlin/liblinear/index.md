@@ -41,14 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +csie.ntu.edu.tw/cjlin/liblinear@2.49.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/make`
-- `curl.se`
-- `gnu.org/patch`
-
 ## Usage Examples
 
 ```typescript

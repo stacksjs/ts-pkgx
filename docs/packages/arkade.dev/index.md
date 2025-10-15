@@ -49,12 +49,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +arkade.dev@0.11.50 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.21`
-
 ## Usage Examples
 
 ```typescript

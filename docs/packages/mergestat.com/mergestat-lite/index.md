@@ -40,16 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +mergestat.com/mergestat-lite@0.6.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.19`
-- `cmake.org`
-- `libgit2.org@~1.7`
-- `openssl.org`
-- `python.org@^3`
-
 ## Usage Examples
 
 ```typescript

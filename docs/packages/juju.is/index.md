@@ -44,12 +44,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +juju.is@3.6.10 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-
 ## Usage Examples
 
 ```typescript

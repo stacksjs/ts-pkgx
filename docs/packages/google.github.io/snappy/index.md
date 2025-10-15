@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +google.github.io/snappy@1.2.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-- `gnu.org/patch`
-
 ## Usage Examples
 
 ```typescript

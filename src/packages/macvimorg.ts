@@ -9,6 +9,7 @@
  * @install `launchpad install macvim.org`
  * @homepage https://macvim.org
  * @dependencies `cscope.sourceforge.io`, `invisible-island.net/ncurses`, `lua.org`, ... (+4 more)
+ * @buildDependencies `gnu.org/make` - required only when building from source
  *
  * @example
  * ```typescript
@@ -67,8 +68,8 @@ export const macvimorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'cscope.sourceforge.io',
@@ -78,6 +79,13 @@ export const macvimorgPackage = {
     'ruby-lang.org',
     'libsodium.org',
     'gnu.org/gettext',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gohugo.io`
  * @homepage https://gohugo.io/
- * @dependencies `go.dev@~1.22.6`
+ * @buildDependencies `go.dev@~1.22.6` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const gohugoioPackage = {
     'hugo',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@~1.22.6',
   ] as const,
   /**

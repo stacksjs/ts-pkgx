@@ -42,12 +42,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +aux4.io@5.1.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.21.5`
-
 ## Usage Examples
 
 ```typescript

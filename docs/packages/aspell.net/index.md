@@ -48,15 +48,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +aspell.net@0.60.8.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-- `gnu.org/patch`
-- `gnu.org/sed`
-- `sourceware.org/bzip2`
-
 ## Usage Examples
 
 ```typescript

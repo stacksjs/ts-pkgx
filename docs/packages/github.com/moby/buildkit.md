@@ -46,12 +46,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/moby/buildkit@0.25.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.21`
-
 ## Usage Examples
 
 ```typescript

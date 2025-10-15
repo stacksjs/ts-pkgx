@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/open-source-parsers/jsoncpp@1.9.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `mesonbuild.com`
-
 ## Usage Examples
 
 ```typescript

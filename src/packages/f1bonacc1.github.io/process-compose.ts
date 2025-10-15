@@ -8,7 +8,7 @@
  *
  * @install `launchpad install f1bonacc1.github.io/process-compose`
  * @homepage https://f1bonacc1.github.io/process-compose/
- * @dependencies `go.dev@=1.23.8`
+ * @buildDependencies `go.dev@=1.23.8` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const f1bonacc1githubioprocesscomposePackage = {
     'process-compose',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@=1.23.8',
   ] as const,
   /**

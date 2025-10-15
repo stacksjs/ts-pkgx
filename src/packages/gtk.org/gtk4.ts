@@ -9,6 +9,7 @@
  * @install `launchpad install gtk.org/gtk4`
  * @homepage https://gtk.org/
  * @dependencies `gnome.org/gdk-pixbuf^2.42`, `gnome.org/glib^2.78`, `gnome.org/librsvg^2.60 # since 4.19.2`, ... (+16 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `docbook.org`, `docbook.org/xsl`, `gnu.org/gettext`, ... (+5 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -66,8 +67,8 @@ export const gtkorggtk4Package = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -90,6 +91,21 @@ export const gtkorggtk4Package = {
     'linux:xkbcommon.org^1.6',
     'linux:cairographics.org^1.18',
     'linux:wayland.freedesktop.org/protocols^1.43 # since 4.19.1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'docbook.org',
+    'docbook.org/xsl',
+    'gnu.org/gettext',
+    'mesonbuild.com',
+    'gnome.org/libxslt',
+    'gnome.org/libxml2@~2.13',
+    'cmake.org',
+    'linux:gnu.org/binutils',
   ] as const,
   /**
    * Available versions from newest to oldest.

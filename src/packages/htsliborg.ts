@@ -9,6 +9,7 @@
  * @install `launchpad install htslib.org`
  * @homepage https://www.htslib.org/
  * @dependencies `sourceware.org/bzip2`, `tukaani.org/xz`, `zlib.net^1`, ... (+1 more)
+ * @buildDependencies `gnu.org/make`, `gnu.org/autoconf`, `gnu.org/automake@^1` - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,14 +59,23 @@ export const htsliborgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'sourceware.org/bzip2',
     'tukaani.org/xz',
     'zlib.net^1',
     'curl.se>=5',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/make',
+    'gnu.org/autoconf',
+    'gnu.org/automake@^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

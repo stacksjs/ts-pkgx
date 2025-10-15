@@ -49,12 +49,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +tailwindcss.com@4.1.14 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-
 ## Usage Examples
 
 ```typescript

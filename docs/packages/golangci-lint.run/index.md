@@ -51,12 +51,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +golangci-lint.run@2.5.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-
 ## Usage Examples
 
 ```typescript

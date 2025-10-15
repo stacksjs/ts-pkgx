@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +graphite.sil.org@1.3.14 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org@^3`
-- `freetype.org`
-
 ## Usage Examples
 
 ```typescript

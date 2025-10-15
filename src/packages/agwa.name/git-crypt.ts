@@ -9,6 +9,7 @@
  * @install `launchpad install agwa.name/git-crypt`
  * @homepage https://www.agwa.name/projects/git-crypt/
  * @dependencies `openssl.org^1.1`
+ * @buildDependencies `docbook.org`, `docbook.org/xsl`, `gnome.org/libxslt` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,20 @@ export const agwanamegitcryptPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openssl.org^1.1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'docbook.org',
+    'docbook.org/xsl',
+    'gnome.org/libxslt',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -9,6 +9,7 @@
  * @install `launchpad install typescriptlang.org`
  * @homepage https://www.typescriptlang.org/
  * @dependencies `nodejs.org^20`
+ * @buildDependencies `npmjs.com` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,18 @@ export const typescriptlangorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'nodejs.org^20',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'npmjs.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

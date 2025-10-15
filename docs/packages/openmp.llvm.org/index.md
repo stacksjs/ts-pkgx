@@ -47,16 +47,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +openmp.llvm.org@21.1.3 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-- `llvm.org`
-- `gnu.org/wget`
-- `linux:python.org@~3.11`
-- `linux:perl.org`
-
 ## Usage Examples
 
 ```typescript

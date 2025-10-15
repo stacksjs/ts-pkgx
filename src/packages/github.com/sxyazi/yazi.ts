@@ -9,6 +9,7 @@
  * @install `launchpad install github.com/sxyazi/yazi`
  * @homepage https://yazi-rs.github.io
  * @dependencies `stedolan.github.io/jq`, `poppler.freedesktop.org`, `crates.io/fd-find`, ... (+3 more)
+ * @buildDependencies `llvm.org@<17`, `gnu.org/make` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,8 +57,8 @@ export const yaziPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'stedolan.github.io/jq',
@@ -66,6 +67,14 @@ export const yaziPackage = {
     'crates.io/ripgrep',
     'github.com/junegunn/fzf',
     'crates.io/zoxide',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'llvm.org@<17',
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

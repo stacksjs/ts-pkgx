@@ -8,6 +8,7 @@
  *
  * @install `launchpad install wayland.freedesktop.org`
  * @dependencies `libexpat.github.io`, `sourceware.org/libffi`, `gnome.org/libxml2`
+ * @buildDependencies `mesonbuild.com`, `gnu.org/make`, `cmake.org`, ... (+2 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -54,13 +55,24 @@ export const waylandfreedesktoporgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'libexpat.github.io',
     'sourceware.org/libffi',
     'gnome.org/libxml2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'mesonbuild.com',
+    'gnu.org/make',
+    'cmake.org',
+    'curl.se',
+    'tukaani.org/xz',
   ] as const,
   /**
    * Available versions from newest to oldest.

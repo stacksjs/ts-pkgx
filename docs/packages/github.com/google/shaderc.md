@@ -41,13 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/google/shaderc@2025.4.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-- `python.org@~3.12`
-
 ## Usage Examples
 
 ```typescript

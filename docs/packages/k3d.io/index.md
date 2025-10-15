@@ -43,12 +43,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +k3d.io@5.8.3 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.18`
-
 ## Usage Examples
 
 ```typescript

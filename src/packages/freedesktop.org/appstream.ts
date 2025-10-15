@@ -9,6 +9,7 @@
  * @install `launchpad install freedesktop.org/appstream`
  * @homepage https://www.freedesktop.org/wiki/Distributions/AppStream/
  * @dependencies `gnome.org/glib@2`, `github.com/hughsie/libxmlb@0`, `pyyaml.org/libyaml@0`, ... (+5 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org@3`, `mesonbuild.com@>=0.61`, `itstool.org`, ... (+4 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,8 +57,8 @@ export const freedesktoporgappstreamPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -69,6 +70,20 @@ export const freedesktoporgappstreamPackage = {
     'gnome.org/libxml2@2',
     'darwin:openldap.org^2 # 1.0.4 needs it with curl',
     'linux:systemd.io',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'cmake.org@3',
+    'mesonbuild.com@>=0.61',
+    'itstool.org',
+    'gnome.org/vala',
+    'gnome.org/libxslt',
+    'docbook.org/xsl',
+    'linux:gnu.org/gperf',
   ] as const,
   /**
    * Available versions from newest to oldest.

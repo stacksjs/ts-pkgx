@@ -8,6 +8,7 @@
  *
  * @install `launchpad install github.com/ggerganov/whisper.cpp`
  * @dependencies `libsdl.org`, `linux:openmp.llvm.org^18 # as of 1.7.0`, `linux:gnu.org/gcc/libstdcxx@14` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `gnu.org/patch`, `gnu.org/coreutils`, `cmake.org@3` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,14 +57,23 @@ export const whispercppPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'libsdl.org',
     'linux:openmp.llvm.org^18 # as of 1.7.0',
     'linux:gnu.org/gcc/libstdcxx@14',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/patch',
+    'gnu.org/coreutils',
+    'cmake.org@3',
   ] as const,
   /**
    * Available versions from newest to oldest.

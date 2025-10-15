@@ -46,12 +46,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +taskfile.dev@3.45.4 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.23`
-
 ## Usage Examples
 
 ```typescript

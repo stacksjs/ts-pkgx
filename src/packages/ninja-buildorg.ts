@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ninja-build.org`
  * @homepage https://ninja-build.org/
- * @dependencies `cmake.org@3`
+ * @buildDependencies `cmake.org@3` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const ninjabuildorgPackage = {
     'ninja',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'cmake.org@3',
   ] as const,
   /**

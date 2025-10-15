@@ -9,6 +9,7 @@
  * @install `launchpad install qemu.org`
  * @homepage https://www.qemu.org/
  * @dependencies `gnome.org/glib@2`, `capstone-engine.org^4`, `pixman.org^0`, ... (+7 more)
+ * @buildDependencies `gnu.org/bison`, `github.com/westes/flex`, `python.org@~3.11`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -89,8 +90,8 @@ export const qemuorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnome.org/glib@2',
@@ -103,6 +104,16 @@ export const qemuorgPackage = {
     'invisible-island.net/ncurses^6',
     'libssh.org^0',
     'libpng.org^1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/bison',
+    'github.com/westes/flex',
+    'python.org@~3.11',
+    'mesonbuild.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

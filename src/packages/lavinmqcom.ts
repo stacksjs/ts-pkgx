@@ -9,6 +9,7 @@
  * @install `launchpad install lavinmq.com`
  * @homepage https://lavinmq.com
  * @dependencies `openssl.org^1.1`, `pcre.org/v2@10`, `libevent.org@2`, ... (+1 more)
+ * @buildDependencies `lz4.org@^1`, `gnu.org/help2man@=1.49.3`, `perl.org@=5.40.0`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,14 +59,24 @@ export const lavinmqcomPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openssl.org^1.1',
     'pcre.org/v2@10',
     'libevent.org@2',
     'hboehm.info/gc@8',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'lz4.org@^1',
+    'gnu.org/help2man@=1.49.3',
+    'perl.org@=5.40.0',
+    'etcd.io',
   ] as const,
   /**
    * Available versions from newest to oldest.

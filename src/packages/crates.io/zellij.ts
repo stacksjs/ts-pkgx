@@ -9,6 +9,7 @@
  * @install `launchpad install crates.io/zellij`
  * @homepage https://zellij.dev
  * @dependencies `zlib.net^1`, `curl.se@8`
+ * @buildDependencies `openssl.org@^1.1`, `perl.org@^5` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,12 +57,20 @@ export const cratesiozellijPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'zlib.net^1',
     'curl.se@8',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'openssl.org@^1.1',
+    'perl.org@^5',
   ] as const,
   /**
    * Available versions from newest to oldest.

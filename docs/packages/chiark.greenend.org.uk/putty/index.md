@@ -46,14 +46,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +chiark.greenend.org.uk/putty@0.83.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-- `chiark.greenend.org.uk/halibut`
-- `perl.org`
-
 ## Usage Examples
 
 ```typescript

@@ -63,16 +63,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +kubernetes.io/kubectl@1.34.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.24.4`
-- `gnu.org/coreutils@^9.1.0`
-- `gnu.org/bash@^5.1`
-- `rsync.samba.org`
-- `curl.se`
-
 ## Usage Examples
 
 ```typescript

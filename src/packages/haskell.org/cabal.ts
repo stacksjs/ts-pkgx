@@ -9,6 +9,7 @@
  * @install `launchpad install haskell.org/cabal`
  * @homepage https://www.haskell.org/cabal/
  * @dependencies `haskell.org@9`, `gnu.org/gmp@6`, `zlib.net@1`
+ * @buildDependencies `haskell.org@<9.6.4`, `curl.se`, `tukaani.org/xz@5` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,13 +57,22 @@ export const haskellorgcabalPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'haskell.org@9',
     'gnu.org/gmp@6',
     'zlib.net@1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'haskell.org@<9.6.4',
+    'curl.se',
+    'tukaani.org/xz@5',
   ] as const,
   /**
    * Available versions from newest to oldest.

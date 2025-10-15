@@ -9,6 +9,7 @@
  * @install `launchpad install rust-lang.org`
  * @homepage https://www.rust-lang.org/
  * @dependencies `zlib.net@1`
+ * @buildDependencies `cmake.org@^3.20`, `python.org@>=3<3.12`, `openssl.org`, ... (+2 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -65,11 +66,23 @@ export const rustlangorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'zlib.net@1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'cmake.org@^3.20',
+    'python.org@>=3<3.12',
+    'openssl.org',
+    'crates.io/semverator@0',
+    'linux:llvm.org@20',
   ] as const,
   /**
    * Available versions from newest to oldest.

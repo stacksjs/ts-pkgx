@@ -52,12 +52,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +tart.run@2.28.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-
 ## Usage Examples
 
 ```typescript

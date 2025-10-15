@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/hadolint/hadolint`
- * @dependencies `haskell.org@~9.2`, `haskell.org/cabal@^3`
+ * @buildDependencies `haskell.org@~9.2`, `haskell.org/cabal@^3` - required only when building from source
  *
  * @example
  * ```typescript
@@ -54,11 +54,12 @@ export const hadolintPackage = {
     'hadolint',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'haskell.org@~9.2',
     'haskell.org/cabal@^3',
   ] as const,

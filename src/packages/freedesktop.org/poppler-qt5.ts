@@ -9,6 +9,7 @@
  * @install `launchpad install freedesktop.org/poppler-qt5`
  * @homepage https://poppler.freedesktop.org/
  * @dependencies `gnupg.org/libassuan^2`, `cairographics.org^1`, `freedesktop.org/fontconfig^2`, ... (+16 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org`, `linux:gnu.org/binutils@^2`, `linux:llvm.org@~21.1` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -68,8 +69,8 @@ export const freedesktoporgpopplerqt5Package = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -92,6 +93,16 @@ export const freedesktoporgpopplerqt5Package = {
     'curl.se^8',
     'darwin:gnupg.org/libassuan^2',
     'linux:gnu.org/gcc',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'cmake.org',
+    'linux:gnu.org/binutils@^2',
+    'linux:llvm.org@~21.1',
   ] as const,
   /**
    * Available versions from newest to oldest.

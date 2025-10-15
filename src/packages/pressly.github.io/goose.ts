@@ -1,5 +1,5 @@
 /**
- * **goose** - A database migration tool. Supports SQL migrations and Go functions.
+ * **goose** - A database migration tool. Supports SQL migrations and Go functions. 
  *
  * @domain `pressly.github.io/goose`
  * @programs `goose`
@@ -8,7 +8,7 @@
  *
  * @install `launchpad install pressly.github.io/goose`
  * @homepage https://pressly.github.io/goose/
- * @dependencies `go.dev@^1.20`
+ * @buildDependencies `go.dev@^1.20` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const presslygithubiogoosePackage = {
     'goose',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@^1.20',
   ] as const,
   /**

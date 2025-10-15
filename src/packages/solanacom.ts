@@ -9,6 +9,7 @@
  * @install `launchpad install solana.com`
  * @homepage https://solana.com
  * @dependencies `protobuf.dev^21`, `zlib.net^1.2`, `openssl.org^1.1`
+ * @buildDependencies `linux:systemd.io` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -65,13 +66,21 @@ export const solanacomPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'protobuf.dev^21',
     'zlib.net^1.2',
     'openssl.org^1.1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'linux:systemd.io',
   ] as const,
   /**
    * Available versions from newest to oldest.

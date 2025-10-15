@@ -40,14 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +tcpdump.org@1.10.5 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/make`
-- `gnu.org/bison`
-- `github.com/westes/flex`
-
 ## Usage Examples
 
 ```typescript

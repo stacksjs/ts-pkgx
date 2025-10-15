@@ -8,6 +8,7 @@
  * @install `launchpad install libsdl.org`
  * @homepage https://libsdl.org
  * @dependencies `linux:x.org/x11`, `linux:x.org/xcursor`, `linux:x.org/xi`, ... (+5 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/libtool@2`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -48,8 +49,8 @@ export const libsdlorgPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -61,6 +62,16 @@ export const libsdlorgPackage = {
     'linux:x.org/xrender',
     'linux:x.org/xscrnsaver',
     'linux:x.org/exts',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/libtool@2',
+    'cmake.org@^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

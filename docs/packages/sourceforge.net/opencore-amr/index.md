@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +sourceforge.net/opencore-amr@2.0.3 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `linux:gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

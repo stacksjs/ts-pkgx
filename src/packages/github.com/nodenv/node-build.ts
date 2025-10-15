@@ -8,6 +8,7 @@
  *
  * @install `launchpad install github.com/nodenv/node-build`
  * @dependencies `openssl.org>=3.0.0`
+ * @buildDependencies `gnu.org/autoconf` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +56,18 @@ export const nodebuildPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openssl.org>=3.0.0',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/autoconf',
   ] as const,
   /**
    * Available versions from newest to oldest.

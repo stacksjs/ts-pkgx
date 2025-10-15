@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/DaveGamble/cJSON@1.7.19 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org@^3`
-
 ## Usage Examples
 
 ```typescript

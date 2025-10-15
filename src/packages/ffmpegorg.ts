@@ -58,8 +58,8 @@ export const ffmpegorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'lame.sourceforge.io>=3.98.3',
@@ -72,6 +72,7 @@ export const ffmpegorgPackage = {
     'opus-codec.org^1',
     'google.com/webp^1',
   ] as const,
+  buildDependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

@@ -9,6 +9,7 @@
  * @install `launchpad install gnu.org/texinfo`
  * @homepage https://www.gnu.org/software/texinfo/
  * @dependencies `perl.org`
+ * @buildDependencies `gnu.org/gettext` - required only when building from source
  *
  * @example
  * ```typescript
@@ -64,11 +65,18 @@ export const gnuorgtexinfoPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'perl.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/gettext',
   ] as const,
   /**
    * Available versions from newest to oldest.

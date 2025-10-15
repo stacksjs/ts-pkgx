@@ -9,6 +9,7 @@
  * @install `launchpad install encore.dev/go`
  * @homepage https://encore.dev
  * @dependencies `curl.se/ca-certs`
+ * @buildDependencies `curl.se`, `gnu.org/tar` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,19 @@ export const encoredevgoPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'curl.se/ca-certs',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'curl.se',
+    'gnu.org/tar',
   ] as const,
   /**
    * Available versions from newest to oldest.

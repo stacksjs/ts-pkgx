@@ -46,13 +46,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +talos.dev@1.11.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.21`
-- `linux:gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

@@ -7,6 +7,7 @@
  *
  * @install `launchpad install github.com/thkukuk/libnsl`
  * @dependencies `sourceforge.net/libtirpc`
+ * @buildDependencies `gnu.org/gcc`, `gnu.org/make` - required only when building from source
  *
  * @example
  * ```typescript
@@ -47,11 +48,19 @@ export const libnslPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'sourceforge.net/libtirpc',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/gcc',
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

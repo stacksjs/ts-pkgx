@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +code.videolan.org/videolan/dav1d@1.2.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `mesonbuild.com@>=0.49`
-
 ## Usage Examples
 
 ```typescript

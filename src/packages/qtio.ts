@@ -8,6 +8,7 @@
  *
  * @install `launchpad install qt.io`
  * @dependencies `freetype.org`, `gnome.org/glib`, `libjpeg-turbo.org`, ... (+37 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `nodejs.org`, `python.org@>=2.7`, `gnu.org/gperf`, ... (+3 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -96,8 +97,8 @@ export const qtioPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -141,6 +142,19 @@ export const qtioPackage = {
     'linux:freedesktop.org/xcb-util-renderutil',
     'linux:freedesktop.org/xcb-util-wm',
     'linux:facebook.com/zstd',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'nodejs.org',
+    'python.org@>=2.7',
+    'gnu.org/gperf',
+    'perl.org@>=5.12',
+    'linux:llvm.org@<16',
+    'linux:gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

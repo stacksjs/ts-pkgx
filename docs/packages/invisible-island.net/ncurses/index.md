@@ -50,12 +50,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +invisible-island.net/ncurses@6.5.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `github.com/tmux/tmux@^3`
-
 ## Usage Examples
 
 ```typescript

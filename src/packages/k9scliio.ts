@@ -8,7 +8,7 @@
  *
  * @install `launchpad install k9scli.io`
  * @homepage https://k9scli.io/
- * @dependencies `go.dev@^1.18`, `gnu.org/make`
+ * @buildDependencies `go.dev@^1.18`, `gnu.org/make` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const k9scliioPackage = {
     'k9s',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@^1.18',
     'gnu.org/make',
   ] as const,

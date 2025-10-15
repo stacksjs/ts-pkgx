@@ -45,12 +45,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +grafana.com/loki@3.5.7 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@=1.21.8`
-
 ## Usage Examples
 
 ```typescript

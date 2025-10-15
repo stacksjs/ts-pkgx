@@ -8,6 +8,7 @@
  *
  * @install `launchpad install git-scm.org`
  * @dependencies `zlib.net@1`, `gnu.org/gettext^0.21`, `curl.se>=5`, ... (+3 more)
+ * @buildDependencies `pkgx.sh@^1` - required only when building from source
  *
  * @example
  * ```typescript
@@ -62,8 +63,8 @@ export const gitscmorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'zlib.net@1',
@@ -72,6 +73,13 @@ export const gitscmorgPackage = {
     'curl.se/ca-certs',
     'perl.org',
     'libexpat.github.io~2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'pkgx.sh@^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

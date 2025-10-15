@@ -9,6 +9,7 @@
  * @install `launchpad install tinygo.org`
  * @homepage https://tinygo.org
  * @dependencies `go.dev`
+ * @buildDependencies `go.dev@^1.18`, `cmake.org@3`, `nodejs.org`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,21 @@ export const tinygoorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'go.dev',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'go.dev@^1.18',
+    'cmake.org@3',
+    'nodejs.org',
+    'python.org@>=3.6',
   ] as const,
   /**
    * Available versions from newest to oldest.

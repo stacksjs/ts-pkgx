@@ -8,7 +8,7 @@
  *
  * @install `launchpad install ipfs.tech`
  * @homepage https://ipfs.tech/
- * @dependencies `go.dev@>=1.20`, `gnu.org/patch`
+ * @buildDependencies `go.dev@>=1.20`, `gnu.org/patch` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const ipfstechPackage = {
     'ipfs',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@>=1.20',
     'gnu.org/patch',
   ] as const,

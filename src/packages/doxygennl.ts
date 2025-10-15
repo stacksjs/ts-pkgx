@@ -8,7 +8,7 @@
  *
  * @install `launchpad install doxygen.nl`
  * @homepage https://www.doxygen.nl/
- * @dependencies `gnu.org/bison@^3`, `cmake.org@^3`, `github.com/westes/flex@2`, ... (+1 more)
+ * @buildDependencies `gnu.org/bison@^3`, `cmake.org@^3`, `github.com/westes/flex@2`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const doxygennlPackage = {
     'doxygen',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/bison@^3',
     'cmake.org@^3',
     'github.com/westes/flex@2',

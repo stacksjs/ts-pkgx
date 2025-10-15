@@ -44,13 +44,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +gnupg.org/gpgme@2.0.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnupg.org`
-- `gnupg.org/libassuan@^2.0.2`
-
 ## Usage Examples
 
 ```typescript

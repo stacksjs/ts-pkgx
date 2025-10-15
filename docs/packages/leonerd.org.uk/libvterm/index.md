@@ -42,12 +42,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +leonerd.org.uk/libvterm@0.3.3 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/libtool`
-
 ## Usage Examples
 
 ```typescript

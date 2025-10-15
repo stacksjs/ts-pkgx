@@ -7,7 +7,7 @@
  *
  * @install `launchpad install hadrons.org/libmd`
  * @homepage https://www.hadrons.org/software/libmd/
- * @dependencies `gnu.org/patch`, `crates.io/semverator`
+ * @buildDependencies `gnu.org/patch`, `crates.io/semverator` - required only when building from source
  *
  * @example
  * ```typescript
@@ -47,11 +47,12 @@ export const hadronsorglibmdPackage = {
   launchpadInstallCommand: 'launchpad install hadrons.org/libmd' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/patch',
     'crates.io/semverator',
   ] as const,

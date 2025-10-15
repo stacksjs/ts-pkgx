@@ -9,6 +9,7 @@
  * @install `launchpad install borgbackup.org`
  * @homepage https://www.borgbackup.org/
  * @dependencies `pkgx.sh^1`, `github.com/Cyan4973/xxHash^0.8`
+ * @buildDependencies `python.org@^3.10`, `openssl.org@^1.1`, `facebook.com/zstd`, ... (+2 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -57,12 +58,24 @@ export const borgbackuporgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'pkgx.sh^1',
     'github.com/Cyan4973/xxHash^0.8',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'python.org@^3.10',
+    'openssl.org@^1.1',
+    'facebook.com/zstd',
+    'lz4.org',
+    'linux:savannah.nongnu.org/acl@^2.3.1',
   ] as const,
   /**
    * Available versions from newest to oldest.

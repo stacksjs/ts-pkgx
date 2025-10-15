@@ -8,6 +8,7 @@
  * @install `launchpad install python-pillow.org`
  * @homepage https://python-pillow.github.io
  * @dependencies `libjpeg-turbo.org^2`, `pngquant.org/lib^4`, `simplesystems.org/libtiff^4`, ... (+7 more)
+ * @buildDependencies `pypa.io/setuptools` - required only when building from source
  *
  * @example
  * ```typescript
@@ -48,8 +49,8 @@ export const pythonpilloworgPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'libjpeg-turbo.org^2',
@@ -62,6 +63,13 @@ export const pythonpilloworgPackage = {
     'google.com/webp^1',
     'zlib.net^1',
     'python.org~3.12',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'pypa.io/setuptools',
   ] as const,
   /**
    * Available versions from newest to oldest.

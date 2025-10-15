@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/withered-magic/starpls@0.1.22 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `github.com/bazelbuild/bazelisk`
-
 ## Usage Examples
 
 ```typescript

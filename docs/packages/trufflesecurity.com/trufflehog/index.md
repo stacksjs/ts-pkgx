@@ -70,12 +70,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +trufflesecurity.com/trufflehog@3.90.8 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.21`
-
 ## Usage Examples
 
 ```typescript

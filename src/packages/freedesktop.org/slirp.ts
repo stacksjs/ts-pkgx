@@ -7,6 +7,7 @@
  *
  * @install `launchpad install freedesktop.org/slirp`
  * @dependencies `gnome.org/glib^2`
+ * @buildDependencies `mesonbuild.com` - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,11 +47,18 @@ export const freedesktoporgslirpPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnome.org/glib^2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'mesonbuild.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

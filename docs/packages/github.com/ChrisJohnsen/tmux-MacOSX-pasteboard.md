@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/ChrisJohnsen/tmux-MacOSX-pasteboard@2.9.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/make`
-
 ## Usage Examples
 
 ```typescript

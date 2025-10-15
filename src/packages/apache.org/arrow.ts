@@ -9,6 +9,7 @@
  * @install `launchpad install apache.org/arrow`
  * @homepage https://arrow.apache.org/
  * @dependencies `github.com/aws/aws-sdk-cpp`, `github.com/google/brotli`, `sourceware.org/bzip2`, ... (+13 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `boost.org`, `cmake.org@3`, `python.org@<3.12`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,8 +59,8 @@ export const apacheorgarrowPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -79,6 +80,16 @@ export const apacheorgarrowPackage = {
     'darwin:c-ares.org@1',
     'darwin:libcxx.llvm.org~17 # since 18.1.0',
     'linux:protobuf.dev^30.0.0 # match grpc.io, so gdal.org can build, we bundle on darwin',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'boost.org',
+    'cmake.org@3',
+    'python.org@<3.12',
+    'llvm.org@~17',
   ] as const,
   /**
    * Available versions from newest to oldest.

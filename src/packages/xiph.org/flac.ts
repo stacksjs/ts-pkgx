@@ -9,6 +9,7 @@
  * @install `launchpad install xiph.org/flac`
  * @homepage https://xiph.org/flac/
  * @dependencies `xiph.org/ogg^1.3.5`
+ * @buildDependencies `gnu.org/libtool@^2.4`, `gnu.org/automake@^1.16`, `gnu.org/autoconf@^2.71` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,20 @@ export const xiphorgflacPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'xiph.org/ogg^1.3.5',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/libtool@^2.4',
+    'gnu.org/automake@^1.16',
+    'gnu.org/autoconf@^2.71',
   ] as const,
   /**
    * Available versions from newest to oldest.

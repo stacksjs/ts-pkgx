@@ -9,6 +9,7 @@
  * @install `launchpad install xiph.org/libshout`
  * @homepage https://icecast.org/
  * @dependencies `xiph.org/ogg`, `xiph.org/vorbis`, `openssl.org~1`, ... (+2 more)
+ * @buildDependencies `darwin:curl.se`, `darwin:gnu.org/patch`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,8 +57,8 @@ export const xiphorglibshoutPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'xiph.org/ogg',
@@ -65,6 +66,16 @@ export const xiphorglibshoutPackage = {
     'openssl.org~1',
     'speex.org',
     'theora.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'darwin:curl.se',
+    'darwin:gnu.org/patch',
+    'linux:gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

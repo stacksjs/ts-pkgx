@@ -1,5 +1,5 @@
 /**
- * **jenv** - Manage your Java environment
+ * **jenv** - Manage your Java environment 
  *
  * @domain `jenv.be`
  * @programs `jenv`
@@ -55,6 +55,7 @@ export const jenvbePackage = {
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  buildDependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

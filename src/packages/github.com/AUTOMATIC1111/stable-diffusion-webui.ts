@@ -8,6 +8,7 @@
  *
  * @install `launchpad install github.com/AUTOMATIC1111/stable-diffusion-webui`
  * @dependencies `python.org~3.10`, `tea.xyz^0  # our scripts use tea/cli`, `git-scm.org^2`
+ * @buildDependencies `pip.pypa.io`, `gnu.org/wget`, `protobuf.dev@>=21` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,13 +56,22 @@ export const stablediffusionwebuiPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'python.org~3.10',
     'tea.xyz^0  # our scripts use tea/cli',
     'git-scm.org^2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'pip.pypa.io',
+    'gnu.org/wget',
+    'protobuf.dev@>=21',
   ] as const,
   /**
    * Available versions from newest to oldest.

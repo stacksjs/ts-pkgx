@@ -50,12 +50,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +flipt.io@2.2.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@1.22.0`
-
 ## Usage Examples
 
 ```typescript

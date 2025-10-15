@@ -9,6 +9,7 @@
  * @install `launchpad install sfcgal.org`
  * @homepage https://sfcgal.gitlab.io/SFCGAL/
  * @dependencies `boost.org`, `cgal.org`, `gnu.org/gmp`, ... (+1 more)
+ * @buildDependencies `cmake.org`, `linux:gnu.org/gcc`, `linux:gnu.org/make` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,14 +57,24 @@ export const sfcgalorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'boost.org',
     'cgal.org',
     'gnu.org/gmp',
     'gnu.org/mpfr',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'cmake.org',
+    'linux:gnu.org/gcc',
+    'linux:gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

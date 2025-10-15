@@ -9,6 +9,7 @@
  * @install `launchpad install mailpit.axllent.org`
  * @homepage https://mailpit.axllent.org/
  * @dependencies `linux:curl.se/ca-certs` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `go.dev@^1.20`, `nodejs.org@^18`, `npmjs.com` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,12 +57,21 @@ export const mailpitaxllentorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'linux:curl.se/ca-certs',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'go.dev@^1.20',
+    'nodejs.org@^18',
+    'npmjs.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

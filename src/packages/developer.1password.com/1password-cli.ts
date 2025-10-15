@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install developer.1password.com/1password-cli`
- * @dependencies `gnupg.org@^2`, `curl.se`
+ * @buildDependencies `gnupg.org@^2`, `curl.se` - required only when building from source
  *
  * @example
  * ```typescript
@@ -53,11 +53,12 @@ export const developer1passwordcom1passwordcliPackage = {
     'op',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnupg.org@^2',
     'curl.se',
   ] as const,

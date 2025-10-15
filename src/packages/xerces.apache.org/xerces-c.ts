@@ -9,6 +9,7 @@
  * @install `launchpad install xerces.apache.org/xerces-c`
  * @homepage https://xerces.apache.org/xerces-c/
  * @dependencies `curl.se`
+ * @buildDependencies `cmake.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -70,11 +71,18 @@ export const xercesapacheorgxercescPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'curl.se',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

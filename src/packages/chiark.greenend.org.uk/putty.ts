@@ -8,7 +8,7 @@
  *
  * @install `launchpad install chiark.greenend.org.uk/putty`
  * @homepage https://www.chiark.greenend.org.uk/~sgtatham/putty/
- * @dependencies `cmake.org`, `chiark.greenend.org.uk/halibut`, `perl.org`
+ * @buildDependencies `cmake.org`, `chiark.greenend.org.uk/halibut`, `perl.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -60,11 +60,12 @@ export const chiarkgreenendorgukputtyPackage = {
     'puttygen',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'cmake.org',
     'chiark.greenend.org.uk/halibut',
     'perl.org',

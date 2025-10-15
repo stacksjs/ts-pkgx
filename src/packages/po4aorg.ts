@@ -9,6 +9,7 @@
  * @install `launchpad install po4a.org`
  * @homepage http://po4a.org/
  * @dependencies `gnu.org/gettext^0.22`, `perl.org^5.22`, `gnome.org/libxslt^1.1`
+ * @buildDependencies `cpanmin.us`, `docbook.org/xsl`, `curl.se` - required only when building from source
  * @companions `PERL5LIB^${{prefix}}/libexec/lib/perl5:$PERL5LIB`
  *
  * @example
@@ -70,13 +71,22 @@ export const po4aorgPackage = {
     'PERL5LIB^${{prefix}}/libexec/lib/perl5:$PERL5LIB',
   ] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnu.org/gettext^0.22',
     'perl.org^5.22',
     'gnome.org/libxslt^1.1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cpanmin.us',
+    'docbook.org/xsl',
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

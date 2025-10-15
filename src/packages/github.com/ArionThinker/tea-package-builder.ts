@@ -8,6 +8,7 @@
  *
  * @install `launchpad install github.com/ArionThinker/tea-package-builder`
  * @dependencies `linux:ffmpeg.org`, `linux:gnome.org/gobject-introspection`, `linux:gnome.org/glib^2` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `nodejs.org@>=14`, `npmjs.com` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,14 +56,22 @@ export const teapackagebuilderPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'linux:ffmpeg.org',
     'linux:gnome.org/gobject-introspection',
     'linux:gnome.org/glib^2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'nodejs.org@>=14',
+    'npmjs.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

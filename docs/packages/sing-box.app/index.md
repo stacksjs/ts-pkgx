@@ -52,12 +52,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +sing-box.app@1.12.10 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.20`
-
 ## Usage Examples
 
 ```typescript

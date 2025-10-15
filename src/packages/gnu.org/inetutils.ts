@@ -8,6 +8,7 @@
  *
  * @install `launchpad install gnu.org/inetutils`
  * @dependencies `gnu.org/libidn2`, `invisible-island.net/ncurses`
+ * @buildDependencies `gnu.org/help2man@1` - required only when building from source
  *
  * @example
  * ```typescript
@@ -79,12 +80,19 @@ export const gnuorginetutilsPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnu.org/libidn2',
     'invisible-island.net/ncurses',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/help2man@1',
   ] as const,
   /**
    * Available versions from newest to oldest.

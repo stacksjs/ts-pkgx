@@ -47,12 +47,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +schollz.com/croc@10.4.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-
 ## Usage Examples
 
 ```typescript

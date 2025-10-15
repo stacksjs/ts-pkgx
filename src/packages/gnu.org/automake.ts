@@ -9,6 +9,7 @@
  * @install `launchpad install gnu.org/automake`
  * @homepage https://www.gnu.org/software/automake/
  * @dependencies `gnu.org/autoconf^2.65.0`, `perl.org`
+ * @buildDependencies `gnu.org/patch` - required only when building from source
  *
  * @example
  * ```typescript
@@ -57,12 +58,19 @@ export const gnuorgautomakePackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnu.org/autoconf^2.65.0',
     'perl.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

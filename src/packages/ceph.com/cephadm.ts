@@ -1,5 +1,5 @@
 /**
- * **cephadm** - Ceph is a distributed object, block, and file storage platform
+ * **cephadm** - Ceph is a distributed object, block, and file storage platform 
  *
  * @domain `ceph.com/cephadm`
  * @programs `cephadm`
@@ -9,6 +9,7 @@
  * @install `launchpad install ceph.com/cephadm`
  * @homepage https://ceph.io
  * @dependencies `openssl.org^1.1`, `python.org^3`
+ * @buildDependencies `python.org@^3`, `gnu.org/coreutils` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,12 +57,20 @@ export const cephcomcephadmPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openssl.org^1.1',
     'python.org^3',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'python.org@^3',
+    'gnu.org/coreutils',
   ] as const,
   /**
    * Available versions from newest to oldest.

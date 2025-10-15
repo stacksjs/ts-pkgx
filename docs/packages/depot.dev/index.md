@@ -53,13 +53,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +depot.dev@2.100.8 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.21`
-- `gnu.org/coreutils`
-
 ## Usage Examples
 
 ```typescript

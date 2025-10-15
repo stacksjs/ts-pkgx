@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/FredHucht/pstree`
- * @dependencies `gnu.org/gcc`
+ * @buildDependencies `gnu.org/gcc` - required only when building from source
  *
  * @example
  * ```typescript
@@ -54,11 +54,12 @@ export const pstreePackage = {
     'pstree',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/gcc',
   ] as const,
   /**

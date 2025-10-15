@@ -9,6 +9,7 @@
  * @install `launchpad install freedesktop.org/shared-mime-info`
  * @homepage https://wiki.freedesktop.org/www/Software/shared-mime-info
  * @dependencies `gnome.org/glib@2`, `gnu.org/gettext^0.21`
+ * @buildDependencies `mesonbuild.com@^0.63`, `gnome.org/libxml2@2` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,12 +57,20 @@ export const freedesktoporgsharedmimeinfoPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnome.org/glib@2',
     'gnu.org/gettext^0.21',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'mesonbuild.com@^0.63',
+    'gnome.org/libxml2@2',
   ] as const,
   /**
    * Available versions from newest to oldest.

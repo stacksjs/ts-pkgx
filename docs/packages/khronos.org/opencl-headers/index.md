@@ -40,14 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +khronos.org/opencl-headers@2025.7.22 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/make`
-- `cmake.org`
-- `python.org@~3.11`
-
 ## Usage Examples
 
 ```typescript

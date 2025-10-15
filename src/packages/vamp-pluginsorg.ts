@@ -9,6 +9,7 @@
  * @install `launchpad install vamp-plugins.org`
  * @homepage https://www.vamp-plugins.org/
  * @dependencies `xiph.org/flac^1.4`, `xiph.org/ogg^1.3`, `github.com/libsndfile/libsndfile^1.2`
+ * @buildDependencies `gnu.org/automake`, `curl.se` - required only when building from source
  *
  * @example
  * ```typescript
@@ -57,13 +58,21 @@ export const vamppluginsorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'xiph.org/flac^1.4',
     'xiph.org/ogg^1.3',
     'github.com/libsndfile/libsndfile^1.2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/automake',
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

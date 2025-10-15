@@ -9,6 +9,7 @@
  * @install `launchpad install darwinsys.com/file`
  * @homepage https://darwinsys.com/file/
  * @dependencies `zlib.net^1 #FIXME this is actually an optional dep`
+ * @buildDependencies `gnu.org/patch` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,18 @@ export const darwinsyscomfilePackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'zlib.net^1 #FIXME this is actually an optional dep',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

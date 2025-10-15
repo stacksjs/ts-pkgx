@@ -9,6 +9,7 @@
  * @install `launchpad install nano-editor.org`
  * @homepage https://www.nano-editor.org/
  * @dependencies `gnu.org/gettext`, `invisible-island.net/ncurses>=6.0`
+ * @buildDependencies `gnu.org/automake@^1.16`, `gnu.org/make` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,12 +57,20 @@ export const nanoeditororgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnu.org/gettext',
     'invisible-island.net/ncurses>=6.0',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/automake@^1.16',
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

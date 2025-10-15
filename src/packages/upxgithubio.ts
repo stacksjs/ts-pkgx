@@ -9,6 +9,7 @@
  * @install `launchpad install upx.github.io`
  * @homepage https://upx.github.io/
  * @dependencies `zlib.net`
+ * @buildDependencies `cmake.org`, `oberhumer.com/ucl` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,19 @@ export const upxgithubioPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'zlib.net',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org',
+    'oberhumer.com/ucl',
   ] as const,
   /**
    * Available versions from newest to oldest.

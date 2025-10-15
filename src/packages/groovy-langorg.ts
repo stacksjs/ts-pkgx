@@ -8,6 +8,7 @@
  *
  * @install `launchpad install groovy-lang.org`
  * @dependencies `openjdk.org@17`
+ * @buildDependencies `waterlan.home.xs4all.nl/dos2unix` - required only when building from source
  *
  * @example
  * ```typescript
@@ -67,11 +68,18 @@ export const groovylangorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openjdk.org@17',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'waterlan.home.xs4all.nl/dos2unix',
   ] as const,
   /**
    * Available versions from newest to oldest.

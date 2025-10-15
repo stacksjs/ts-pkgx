@@ -58,12 +58,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/cirruslabs/cirrus-cli@0.155.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.22`
-
 ## Usage Examples
 
 ```typescript

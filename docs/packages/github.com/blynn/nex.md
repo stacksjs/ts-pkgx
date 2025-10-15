@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/blynn/nex@2021.3.30 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `rsync.samba.org`
-- `go.dev@^1.20`
-
 ## Usage Examples
 
 ```typescript

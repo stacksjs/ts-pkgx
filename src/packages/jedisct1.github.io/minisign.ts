@@ -8,7 +8,7 @@
  *
  * @install `launchpad install jedisct1.github.io/minisign`
  * @homepage https://jedisct1.github.io/minisign/
- * @dependencies `cmake.org`, `libsodium.org`
+ * @buildDependencies `cmake.org`, `libsodium.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const jedisct1githubiominisignPackage = {
     'minisign',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'cmake.org',
     'libsodium.org',
   ] as const,

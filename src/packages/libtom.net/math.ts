@@ -7,7 +7,7 @@
  *
  * @install `launchpad install libtom.net/math`
  * @homepage https://www.libtom.net
- * @dependencies `gnu.org/libtool@^2.4.7`
+ * @buildDependencies `gnu.org/libtool@^2.4.7` - required only when building from source
  *
  * @example
  * ```typescript
@@ -47,11 +47,12 @@ export const libtomnetmathPackage = {
   launchpadInstallCommand: 'launchpad install libtom.net/math' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/libtool@^2.4.7',
   ] as const,
   /**

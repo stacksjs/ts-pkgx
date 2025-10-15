@@ -41,13 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/Diniboy1123/usque@1.4.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.24.2`
-- `goreleaser.com`
-
 ## Usage Examples
 
 ```typescript

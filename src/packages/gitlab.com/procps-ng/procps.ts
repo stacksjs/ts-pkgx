@@ -8,6 +8,7 @@
  *
  * @install `launchpad install gitlab.com/procps-ng/procps`
  * @dependencies `invisible-island.net/ncurses>=6.0`
+ * @buildDependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/gettext`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -66,11 +67,21 @@ export const gitlabcomprocpsngprocpsPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'invisible-island.net/ncurses>=6.0',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/gettext',
+    'gnu.org/libtool',
   ] as const,
   /**
    * Available versions from newest to oldest.

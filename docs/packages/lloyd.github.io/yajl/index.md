@@ -41,14 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +lloyd.github.io/yajl@2.1.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-- `linux:gnu.org/gcc`
-- `linux:gnu.org/make`
-
 ## Usage Examples
 
 ```typescript

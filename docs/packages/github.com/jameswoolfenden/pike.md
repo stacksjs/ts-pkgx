@@ -52,12 +52,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/jameswoolfenden/pike@0.3.79 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.22`
-
 ## Usage Examples
 
 ```typescript

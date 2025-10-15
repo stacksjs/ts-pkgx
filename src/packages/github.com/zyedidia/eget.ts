@@ -8,6 +8,7 @@
  *
  * @install `launchpad install github.com/zyedidia/eget`
  * @dependencies `curl.se/ca-certs`
+ * @buildDependencies `go.dev`, `pandoc.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +56,19 @@ export const egetPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'curl.se/ca-certs',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'go.dev',
+    'pandoc.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

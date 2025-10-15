@@ -7,7 +7,7 @@
  *
  * @install `launchpad install webmproject.org/libvpx`
  * @homepage http://www.webmproject.org/code/
- * @dependencies `yasm.tortall.net`
+ * @buildDependencies `yasm.tortall.net` - required only when building from source
  *
  * @example
  * ```typescript
@@ -47,11 +47,12 @@ export const webmprojectorglibvpxPackage = {
   launchpadInstallCommand: 'launchpad install webmproject.org/libvpx' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'yasm.tortall.net',
   ] as const,
   /**

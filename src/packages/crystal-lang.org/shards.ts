@@ -9,6 +9,7 @@
  * @install `launchpad install crystal-lang.org/shards`
  * @homepage https://crystal-lang.org/
  * @dependencies `hboehm.info/gc^8`, `pyyaml.org/libyaml^0`, `crystal-lang.org`
+ * @buildDependencies `curl.se` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,13 +57,20 @@ export const crystallangorgshardsPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'hboehm.info/gc^8',
     'pyyaml.org/libyaml^0',
     'crystal-lang.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

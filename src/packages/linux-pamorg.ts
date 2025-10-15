@@ -8,6 +8,7 @@
  *
  * @install `launchpad install linux-pam.org`
  * @dependencies `github.com/thkukuk/libnsl`, `sourceforge.net/libtirpc`, `github.com/besser82/libxcrypt`
+ * @buildDependencies `gnu.org/gcc`, `gnu.org/make`, `mesonbuild.com` - required only when building from source
  *
  * @example
  * ```typescript
@@ -59,13 +60,22 @@ export const linuxpamorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'github.com/thkukuk/libnsl',
     'sourceforge.net/libtirpc',
     'github.com/besser82/libxcrypt',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/gcc',
+    'gnu.org/make',
+    'mesonbuild.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

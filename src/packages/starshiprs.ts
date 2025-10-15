@@ -8,7 +8,7 @@
  *
  * @install `launchpad install starship.rs`
  * @homepage https://starship.rs
- * @dependencies `cmake.org@>=3.5`
+ * @buildDependencies `cmake.org@>=3.5` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const starshiprsPackage = {
     'starship',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'cmake.org@>=3.5',
   ] as const,
   /**

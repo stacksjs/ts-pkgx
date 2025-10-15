@@ -9,6 +9,7 @@
  * @install `launchpad install riverbankcomputing.com/pyqt-builder`
  * @homepage https://pyqt-builder.readthedocs.io/
  * @dependencies `python.org~3.11`, `riverbankcomputing.com/sip`
+ * @buildDependencies `llvm.org@<17`, `gnu.org/make` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,12 +57,20 @@ export const riverbankcomputingcompyqtbuilderPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'python.org~3.11',
     'riverbankcomputing.com/sip',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'llvm.org@<17',
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

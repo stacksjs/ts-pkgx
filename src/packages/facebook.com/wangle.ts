@@ -7,6 +7,7 @@
  *
  * @install `launchpad install facebook.com/wangle`
  * @dependencies `boost.org`, `google.com/double-conversion^3`, `github.com/facebookincubator/fizz`, ... (+13 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org@^3`, `linux:gnu.org/gcc@13` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -47,8 +48,8 @@ export const facebookcomwanglePackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -68,6 +69,15 @@ export const facebookcomwanglePackage = {
     'darwin:sourceware.org/bzip2',
     'darwin:zlib.net',
     'linux:gnu.org/gcc/libstdcxx@13',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'cmake.org@^3',
+    'linux:gnu.org/gcc@13',
   ] as const,
   /**
    * Available versions from newest to oldest.

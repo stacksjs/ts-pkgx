@@ -9,6 +9,7 @@
  * @install `launchpad install crates.io/qsv`
  * @homepage https://qsv.dathere.com
  * @dependencies `linux:wayland.freedesktop.org` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org@^3`, `python.org@>=3.8` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,12 +57,20 @@ export const cratesioqsvPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'linux:wayland.freedesktop.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org@^3',
+    'python.org@>=3.8',
   ] as const,
   /**
    * Available versions from newest to oldest.

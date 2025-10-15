@@ -7,6 +7,7 @@
  *
  * @install `launchpad install debian.org/iso-codes`
  * @dependencies `gnu.org/gettext`
+ * @buildDependencies `python.org@<3.12` - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,11 +47,18 @@ export const debianorgisocodesPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnu.org/gettext',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'python.org@<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.

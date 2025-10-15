@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +jetporch.com@0.0.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `openssl.org`
-- `zlib.net`
-
 ## Usage Examples
 
 ```typescript

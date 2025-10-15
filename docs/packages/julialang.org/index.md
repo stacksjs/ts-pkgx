@@ -44,13 +44,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +julialang.org@1.12.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-- `gnu.org/tar`
-
 ## Usage Examples
 
 ```typescript

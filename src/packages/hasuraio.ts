@@ -8,7 +8,7 @@
  *
  * @install `launchpad install hasura.io`
  * @homepage https://hasura.io
- * @dependencies `go.dev@^1.16`, `npmjs.com@^8.19.4`, `gnu.org/coreutils`, ... (+1 more)
+ * @buildDependencies `go.dev@^1.16`, `npmjs.com@^8.19.4`, `gnu.org/coreutils`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const hasuraioPackage = {
     'hasura',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@^1.16',
     'npmjs.com@^8.19.4',
     'gnu.org/coreutils',

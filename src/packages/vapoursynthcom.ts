@@ -9,6 +9,7 @@
  * @install `launchpad install vapoursynth.com`
  * @homepage https://www.vapoursynth.com
  * @dependencies `python.org~3.11`, `github.com/sekrit-twc/zimg`, `linux:gnu.org/gcc/libstdcxx` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `gnu.org/autoconf`, `gnu.org/automake`, `cython.org`, ... (+3 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,14 +57,27 @@ export const vapoursynthcomPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'python.org~3.11',
     'github.com/sekrit-twc/zimg',
     'linux:gnu.org/gcc/libstdcxx',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'cython.org',
+    'gnu.org/libtool',
+    'nasm.us',
+    'linux:gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

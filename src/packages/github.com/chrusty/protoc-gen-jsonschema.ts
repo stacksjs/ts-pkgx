@@ -8,6 +8,7 @@
  *
  * @install `launchpad install github.com/chrusty/protoc-gen-jsonschema`
  * @dependencies `protobuf.dev`
+ * @buildDependencies `go.dev@^1.11` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +56,18 @@ export const protocgenjsonschemaPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'protobuf.dev',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'go.dev@^1.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

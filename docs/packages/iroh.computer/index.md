@@ -48,12 +48,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +iroh.computer@0.93.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `linux:gnu.org/gcc@14`
-
 ## Usage Examples
 
 ```typescript

@@ -45,13 +45,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +giflib.sourceforge.io@5.2.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/patch`
-- `imagemagick.org`
-
 ## Usage Examples
 
 ```typescript

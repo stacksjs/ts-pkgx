@@ -8,7 +8,7 @@
  *
  * @install `launchpad install open-mpi.org/hwloc`
  * @homepage https://www.open-mpi.org/projects/hwloc/
- * @dependencies `gnu.org/autoconf`, `gnu.org/libtool`
+ * @buildDependencies `gnu.org/autoconf`, `gnu.org/libtool` - required only when building from source
  *
  * @example
  * ```typescript
@@ -64,11 +64,12 @@ export const openmpiorghwlocPackage = {
     'lstopo-no-graphics',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/autoconf',
     'gnu.org/libtool',
   ] as const,

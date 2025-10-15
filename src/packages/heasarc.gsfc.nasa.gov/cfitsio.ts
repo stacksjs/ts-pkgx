@@ -7,6 +7,7 @@
  *
  * @install `launchpad install heasarc.gsfc.nasa.gov/cfitsio`
  * @dependencies `darwin:zlib.net` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `gnu.org/diffutils` - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,12 +47,19 @@ export const heasarcgsfcnasagovcfitsioPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'darwin:zlib.net',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/diffutils',
   ] as const,
   /**
    * Available versions from newest to oldest.

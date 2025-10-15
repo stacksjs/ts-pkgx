@@ -46,13 +46,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +pkgx.sh@2.7.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `deno.land@~2`
-- `perl.org@5`
-
 ## Usage Examples
 
 ```typescript

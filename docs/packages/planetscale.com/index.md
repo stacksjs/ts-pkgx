@@ -56,12 +56,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +planetscale.com@0.258.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.22.4`
-
 ## Usage Examples
 
 ```typescript

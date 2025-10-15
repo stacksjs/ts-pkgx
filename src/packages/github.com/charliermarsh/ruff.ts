@@ -7,7 +7,7 @@
  *
  * @install `launchpad install github.com/charliermarsh/ruff`
  * @homepage https://docs.astral.sh/ruff
- * @dependencies `crates.io/semverator`
+ * @buildDependencies `crates.io/semverator` - required only when building from source
  *
  * @example
  * ```typescript
@@ -47,11 +47,12 @@ export const ruffPackage = {
   launchpadInstallCommand: 'launchpad install github.com/charliermarsh/ruff' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'crates.io/semverator',
   ] as const,
   /**

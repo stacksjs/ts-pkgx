@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +curlie.io@1.8.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.24`
-- `goreleaser.com`
-
 ## Usage Examples
 
 ```typescript

@@ -9,6 +9,7 @@
  * @install `launchpad install postgrest.org`
  * @homepage https://postgrest.org
  * @dependencies `postgresql.org/libpq@17`, `zlib.net~1.3`, `gnu.org/gcc/libstdcxx@14`, ... (+1 more)
+ * @buildDependencies `haskell.org@~9.8`, `haskell.org/cabal@^3`, `linux:gnu.org/gcc`, ... (+1 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,14 +57,25 @@ export const postgrestorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'postgresql.org/libpq@17',
     'zlib.net~1.3',
     'gnu.org/gcc/libstdcxx@14',
     'gnome.org/libxml2~2.13 # 2.14 changes library api version',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'haskell.org@~9.8',
+    'haskell.org/cabal@^3',
+    'linux:gnu.org/gcc',
+    'linux:gnu.org/binutils',
   ] as const,
   /**
    * Available versions from newest to oldest.

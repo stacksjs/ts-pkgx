@@ -57,12 +57,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +vektra.github.io/mockery@3.5.5 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-
 ## Usage Examples
 
 ```typescript

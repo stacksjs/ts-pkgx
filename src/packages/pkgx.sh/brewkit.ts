@@ -55,14 +55,15 @@ export const pkgxshbrewkitPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'deno.land~1.39  # 1.40 shouts unskippable deprecation warnings',
     'gnu.org/bash^5',
     'pkgx.sh^1',
   ] as const,
+  buildDependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

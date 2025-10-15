@@ -9,6 +9,7 @@
  * @install `launchpad install projen.io`
  * @homepage https://projen.io
  * @dependencies `nodejs.org^22 || ^20 || ^18`
+ * @buildDependencies `classic.yarnpkg.com@^1`, `maven.apache.org@>=3.0.0`, `python.org@~3.11`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,21 @@ export const projenioPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'nodejs.org^22 || ^20 || ^18',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'classic.yarnpkg.com@^1',
+    'maven.apache.org@>=3.0.0',
+    'python.org@~3.11',
+    'go.dev@>=1.21',
   ] as const,
   /**
    * Available versions from newest to oldest.

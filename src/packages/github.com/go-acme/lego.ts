@@ -8,7 +8,7 @@
  *
  * @install `launchpad install github.com/go-acme/lego`
  * @homepage https://go-acme.github.io/lego/
- * @dependencies `go.dev@^1.20`
+ * @buildDependencies `go.dev@^1.20` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const legoPackage = {
     'lego',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@^1.20',
   ] as const,
   /**

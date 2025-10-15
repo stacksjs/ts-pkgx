@@ -8,6 +8,7 @@
  * @install `launchpad install cairographics.org/pycairo`
  * @homepage https://pycairo.readthedocs.io
  * @dependencies `cairographics.org`
+ * @buildDependencies `python.org@~3.11`, `mesonbuild.com` - required only when building from source
  *
  * @example
  * ```typescript
@@ -48,11 +49,19 @@ export const cairographicsorgpycairoPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'cairographics.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'python.org@~3.11',
+    'mesonbuild.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

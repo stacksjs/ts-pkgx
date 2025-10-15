@@ -45,13 +45,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/xo/usql@0.19.26 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.21`
-- `crates.io/sd`
-
 ## Usage Examples
 
 ```typescript

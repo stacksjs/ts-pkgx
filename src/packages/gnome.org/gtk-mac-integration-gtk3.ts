@@ -7,6 +7,7 @@
  *
  * @install `launchpad install gnome.org/gtk-mac-integration-gtk3`
  * @dependencies `gnu.org/gettext`, `gtk.org/gtk3`
+ * @buildDependencies `freedesktop.org/intltool`, `mesonbuild.com` - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,12 +47,20 @@ export const gnomeorggtkmacintegrationgtk3Package = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnu.org/gettext',
     'gtk.org/gtk3',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'freedesktop.org/intltool',
+    'mesonbuild.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install wasmer.io`
  * @homepage https://wasmer.io
- * @dependencies `nodejs.org@^18`, `gnu.org/make@^4`
+ * @buildDependencies `nodejs.org@^18`, `gnu.org/make@^4` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const wasmerioPackage = {
     'wasmer',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'nodejs.org@^18',
     'gnu.org/make@^4',
   ] as const,

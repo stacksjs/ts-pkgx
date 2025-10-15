@@ -41,13 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/Mbed-TLS/mbedtls@3.6.3.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-- `python.org@~3.11`
-
 ## Usage Examples
 
 ```typescript

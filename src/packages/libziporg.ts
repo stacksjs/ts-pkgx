@@ -9,6 +9,7 @@
  * @install `launchpad install libzip.org`
  * @homepage https://libzip.org/
  * @dependencies `facebook.com/zstd>=1.5.0`, `darwin:sourceware.org/bzip2>=1.0.8`, `darwin:tukaani.org/xz>=5.2.7`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org@>=3.24` - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,8 +59,8 @@ export const libziporgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -68,6 +69,13 @@ export const libziporgPackage = {
     'darwin:tukaani.org/xz>=5.2.7',
     'darwin:zlib.net>=1.2.13',
     'linux:openssl.org^1.1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org@>=3.24',
   ] as const,
   /**
    * Available versions from newest to oldest.

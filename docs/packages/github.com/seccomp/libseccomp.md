@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/seccomp/libseccomp@2.6.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/libtool`
-- `gnu.org/gperf`
-
 ## Usage Examples
 
 ```typescript

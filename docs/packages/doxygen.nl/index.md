@@ -41,15 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +doxygen.nl@1.14.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/bison@^3`
-- `cmake.org@^3`
-- `github.com/westes/flex@2`
-- `python.org@>=3<3.12`
-
 ## Usage Examples
 
 ```typescript

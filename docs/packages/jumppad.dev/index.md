@@ -44,13 +44,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +jumppad.dev@0.21.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@=1.21.5`
-- `linux:gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

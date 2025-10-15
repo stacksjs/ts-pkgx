@@ -9,6 +9,7 @@
  * @install `launchpad install gnuplot.info`
  * @homepage http://www.gnuplot.info/
  * @dependencies `libgd.github.io`, `lua.org`, `gnome.org/pango`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `gnu.org/autoconf`, `gnu.org/libtool` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,8 +57,8 @@ export const gnuplotinfoPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -66,6 +67,14 @@ export const gnuplotinfoPackage = {
     'gnome.org/pango',
     'gnu.org/readline',
     'linux:github.com/AOMediaCodec/libavif^0.11',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/autoconf',
+    'gnu.org/libtool',
   ] as const,
   /**
    * Available versions from newest to oldest.

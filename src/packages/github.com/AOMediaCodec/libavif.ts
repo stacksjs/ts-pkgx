@@ -8,6 +8,7 @@
  *
  * @install `launchpad install github.com/AOMediaCodec/libavif`
  * @dependencies `aomedia.googlesource.com/aom^3`, `libpng.org^1`, `libjpeg-turbo.org^2`
+ * @buildDependencies `cmake.org@^3`, `nasm.us` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,13 +57,21 @@ export const libavifPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'aomedia.googlesource.com/aom^3',
     'libpng.org^1',
     'libjpeg-turbo.org^2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org@^3',
+    'nasm.us',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install csie.ntu.edu.tw/cjlin/liblinear`
  * @homepage https://www.csie.ntu.edu.tw/~cjlin/liblinear/
- * @dependencies `gnu.org/make`, `curl.se`, `gnu.org/patch`
+ * @buildDependencies `gnu.org/make`, `curl.se`, `gnu.org/patch` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +56,12 @@ export const csientuedutwcjlinliblinearPackage = {
     'train',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/make',
     'curl.se',
     'gnu.org/patch',

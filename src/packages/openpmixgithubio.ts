@@ -9,6 +9,7 @@
  * @install `launchpad install openpmix.github.io`
  * @homepage https://openpmix.github.io/
  * @dependencies `open-mpi.org/hwloc^2.10`, `libevent.org^2.1`, `zlib.net^1.3`
+ * @buildDependencies `python.org@^3.11` - required only when building from source
  *
  * @example
  * ```typescript
@@ -64,13 +65,20 @@ export const openpmixgithubioPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'open-mpi.org/hwloc^2.10',
     'libevent.org^2.1',
     'zlib.net^1.3',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'python.org@^3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

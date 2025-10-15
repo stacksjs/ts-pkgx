@@ -8,7 +8,7 @@
  *
  * @install `launchpad install taskfile.dev`
  * @homepage https://taskfile.dev
- * @dependencies `go.dev@~1.23`
+ * @buildDependencies `go.dev@~1.23` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const taskfiledevPackage = {
     'task',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@~1.23',
   ] as const,
   /**

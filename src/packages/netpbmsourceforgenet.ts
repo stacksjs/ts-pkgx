@@ -9,6 +9,7 @@
  * @install `launchpad install netpbm.sourceforge.net`
  * @homepage https://netpbm.sourceforge.net/
  * @dependencies `github.com/jasper-software/jasper`, `libjpeg-turbo.org`, `libpng.org`, ... (+3 more)
+ * @buildDependencies `gnu.org/make`, `github.com/westes/flex`, `linux:perl.org` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -370,8 +371,8 @@ export const netpbmsourceforgenetPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'github.com/jasper-software/jasper',
@@ -380,6 +381,16 @@ export const netpbmsourceforgenetPackage = {
     'simplesystems.org/libtiff',
     'gnome.org/libxml2',
     'zlib.net',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'gnu.org/make',
+    'github.com/westes/flex',
+    'linux:perl.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

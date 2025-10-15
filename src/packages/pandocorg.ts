@@ -9,6 +9,7 @@
  * @install `launchpad install pandoc.org`
  * @homepage https://pandoc.org/
  * @dependencies `gnu.org/gmp@6`, `zlib.net@1`, `sourceware.org/libffi@3`
+ * @buildDependencies `haskell.org@~9.4`, `haskell.org/cabal@~3.10` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,13 +57,21 @@ export const pandocorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnu.org/gmp@6',
     'zlib.net@1',
     'sourceware.org/libffi@3',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'haskell.org@~9.4',
+    'haskell.org/cabal@~3.10',
   ] as const,
   /**
    * Available versions from newest to oldest.

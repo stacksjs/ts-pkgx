@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cyrusimap.org/cyrus-sasl`
- * @dependencies `kerberos.org`, `openssl.org@^1.1.1`
+ * @buildDependencies `kerberos.org`, `openssl.org@^1.1.1` - required only when building from source
  *
  * @example
  * ```typescript
@@ -45,11 +45,12 @@ export const cyrusimaporgcyrussaslPackage = {
   launchpadInstallCommand: 'launchpad install cyrusimap.org/cyrus-sasl' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'kerberos.org',
     'openssl.org@^1.1.1',
   ] as const,

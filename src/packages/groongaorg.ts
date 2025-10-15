@@ -9,6 +9,7 @@
  * @install `launchpad install groonga.org`
  * @homepage https://groonga.org/
  * @dependencies `darwin:taku910.github.io/mecab`, `darwin:taku910.github.io/mecab-ipadic`, `msgpack.org`, ... (+4 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `linux:curl.se` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -57,8 +58,8 @@ export const groongaorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -69,6 +70,14 @@ export const groongaorgPackage = {
     'pcre.org/v2',
     'github.com/besser82/libxcrypt',
     'linux:gnome.org/glib',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'linux:curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -9,6 +9,7 @@
  * @install `launchpad install apollographql.com/rover`
  * @homepage https://www.apollographql.com/docs/rover/
  * @dependencies `openssl.org^1.1`, `zlib.net^1`, `libgit2.org~1.7 # links to libgit2.so.1.7`
+ * @buildDependencies `linux:perl.org@^5` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,13 +57,21 @@ export const apollographqlcomroverPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openssl.org^1.1',
     'zlib.net^1',
     'libgit2.org~1.7 # links to libgit2.so.1.7',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'linux:perl.org@^5',
   ] as const,
   /**
    * Available versions from newest to oldest.

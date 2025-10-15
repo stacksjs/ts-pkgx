@@ -1,5 +1,5 @@
 /**
- * **usque** - Open-source reimplementation of the Cloudflare WARP client's MASQUE protocol.
+ * **usque** - Open-source reimplementation of the Cloudflare WARP client's MASQUE protocol. 
  *
  * @domain `github.com/Diniboy1123/usque`
  * @programs `usque`
@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/Diniboy1123/usque`
- * @dependencies `go.dev@~1.24.2`, `goreleaser.com`
+ * @buildDependencies `go.dev@~1.24.2`, `goreleaser.com` - required only when building from source
  *
  * @example
  * ```typescript
@@ -54,11 +54,12 @@ export const usquePackage = {
     'usque',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@~1.24.2',
     'goreleaser.com',
   ] as const,

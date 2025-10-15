@@ -9,6 +9,7 @@
  * @install `launchpad install llvm.org/clang-format`
  * @homepage http://llvm.org
  * @dependencies `gnome.org/libxml2`, `invisible-island.net/ncurses`, `python.org<3.12`, ... (+1 more)
+ * @buildDependencies `cmake.org`, `curl.se` - required only when building from source
  *
  * @example
  * ```typescript
@@ -57,14 +58,22 @@ export const llvmorgclangformatPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnome.org/libxml2',
     'invisible-island.net/ncurses',
     'python.org<3.12',
     'zlib.net',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org',
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

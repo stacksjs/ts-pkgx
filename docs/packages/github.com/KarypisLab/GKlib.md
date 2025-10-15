@@ -45,13 +45,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/KarypisLab/GKlib@5.1.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/make`
-- `cmake.org`
-
 ## Usage Examples
 
 ```typescript

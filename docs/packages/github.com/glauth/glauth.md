@@ -41,15 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/glauth/glauth@2.4.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.23`
-- `gnu.org/gcc`
-- `gnu.org/coreutils`
-- `stedolan.github.io/jq@^1.7`
-
 ## Usage Examples
 
 ```typescript

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install mergestat.com/mergestat-lite`
  * @homepage https://mergestat.com/
- * @dependencies `go.dev@^1.19`, `cmake.org`, `libgit2.org@~1.7`, ... (+2 more)
+ * @buildDependencies `go.dev@^1.19`, `cmake.org`, `libgit2.org@~1.7`, ... (+2 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const mergestatcommergestatlitePackage = {
     'mergestat',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@^1.19',
     'cmake.org',
     'libgit2.org@~1.7',

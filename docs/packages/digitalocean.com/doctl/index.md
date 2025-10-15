@@ -50,12 +50,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +digitalocean.com/doctl@2.59.3 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.21`
-
 ## Usage Examples
 
 ```typescript

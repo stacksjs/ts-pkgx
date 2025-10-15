@@ -41,14 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +ziglang.org@0.15.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-- `gnu.org/tar`
-- `tukaani.org/xz`
-
 ## Usage Examples
 
 ```typescript

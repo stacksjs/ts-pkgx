@@ -9,6 +9,7 @@
  * @install `launchpad install localai.io`
  * @homepage https://localai.io
  * @dependencies `darwin:openmp.llvm.org@18` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `go.dev@^1.21`, `cmake.org@^3`, `grpc.io@=1.72.1`, ... (+5 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,12 +57,27 @@ export const localaiioPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'darwin:openmp.llvm.org@18',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'go.dev@^1.21',
+    'cmake.org@^3',
+    'grpc.io@=1.72.1',
+    'gnu.org/wget@^1',
+    'gnu.org/coreutils@^9',
+    'linux:gnu.org/gcc@14',
+    'darwin:protobuf.dev@~28.1.0',
+    'darwin:llvm.org@18',
   ] as const,
   /**
    * Available versions from newest to oldest.

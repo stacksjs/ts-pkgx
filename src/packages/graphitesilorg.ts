@@ -8,7 +8,7 @@
  *
  * @install `launchpad install graphite.sil.org`
  * @homepage https://graphite.sil.org/
- * @dependencies `cmake.org@^3`, `freetype.org`
+ * @buildDependencies `cmake.org@^3`, `freetype.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const graphitesilorgPackage = {
     'gr2fonttest',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'cmake.org@^3',
     'freetype.org',
   ] as const,

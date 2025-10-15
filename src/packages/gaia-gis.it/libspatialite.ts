@@ -7,6 +7,7 @@
  *
  * @install `launchpad install gaia-gis.it/libspatialite`
  * @dependencies `gaia-gis.it/fossil/freexl`, `libgeos.org`, `git.osgeo.org/gitea/rttopo/librttopo`, ... (+4 more)
+ * @buildDependencies `gnu.org/make`, `darwin:gnu.org/patch`, `darwin:curl.se` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,8 +47,8 @@ export const gaiagisitlibspatialitePackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gaia-gis.it/fossil/freexl',
@@ -57,6 +58,16 @@ export const gaiagisitlibspatialitePackage = {
     'zlib.net/minizip',
     'proj.org',
     'sqlite.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'gnu.org/make',
+    'darwin:gnu.org/patch',
+    'darwin:curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

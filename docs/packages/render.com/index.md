@@ -41,12 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +render.com@0.1.11 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `deno.land@^1.30`
-
 ## Usage Examples
 
 ```typescript

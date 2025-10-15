@@ -9,6 +9,7 @@
  * @install `launchpad install gnome.org/gobject-introspection`
  * @homepage https://gi.readthedocs.io/en/latest/
  * @dependencies `gnome.org/glib@2`, `sourceware.org/libffi@3`, `gnu.org/bison^3 #NOTE macOS provides v2`, ... (+2 more)
+ * @buildDependencies `mesonbuild.com@^1.2` - required only when building from source
  *
  * @example
  * ```typescript
@@ -60,8 +61,8 @@ export const gnomeorggobjectintrospectionPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnome.org/glib@2',
@@ -69,6 +70,13 @@ export const gnomeorggobjectintrospectionPackage = {
     'gnu.org/bison^3 #NOTE macOS provides v2',
     'python.org>=3<3.12',
     'github.com/westes/flex@2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'mesonbuild.com@^1.2',
   ] as const,
   /**
    * Available versions from newest to oldest.

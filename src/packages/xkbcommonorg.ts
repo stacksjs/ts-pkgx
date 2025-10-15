@@ -9,6 +9,7 @@
  * @install `launchpad install xkbcommon.org`
  * @homepage https://xkbcommon.org/
  * @dependencies `x.org/x11`, `x.org/xcb`, `freedesktop.org/XKeyboardConfig`, ... (+1 more)
+ * @buildDependencies `gnu.org/bison`, `mesonbuild.com` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,14 +57,22 @@ export const xkbcommonorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'x.org/x11',
     'x.org/xcb',
     'freedesktop.org/XKeyboardConfig',
     'gnome.org/libxml2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/bison',
+    'mesonbuild.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -57,12 +57,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +cli.github.com@2.81.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.18`
-
 ## Usage Examples
 
 ```typescript

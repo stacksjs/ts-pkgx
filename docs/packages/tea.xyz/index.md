@@ -68,12 +68,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +tea.xyz@0.39.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `deno.land@>=1.23 <1.25 || ^1.25.3`
-
 ## Usage Examples
 
 ```typescript

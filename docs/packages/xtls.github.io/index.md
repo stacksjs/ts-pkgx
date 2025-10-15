@@ -47,13 +47,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +xtls.github.io@25.9.11 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.21.4`
-- `curl.se`
-
 ## Usage Examples
 
 ```typescript

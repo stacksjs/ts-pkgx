@@ -8,7 +8,7 @@
  *
  * @install `launchpad install kubeshark.co`
  * @homepage https://www.kubeshark.co/
- * @dependencies `go.dev@^1.19`, `gnu.org/make`
+ * @buildDependencies `go.dev@^1.19`, `gnu.org/make` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const kubesharkcoPackage = {
     'kubeshark',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@^1.19',
     'gnu.org/make',
   ] as const,

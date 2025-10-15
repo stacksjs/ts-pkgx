@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/besser82/libxcrypt`
- * @dependencies `perl.org`
+ * @buildDependencies `perl.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,11 +46,12 @@ export const libxcryptPackage = {
   launchpadInstallCommand: 'launchpad install github.com/besser82/libxcrypt' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'perl.org',
   ] as const,
   /**

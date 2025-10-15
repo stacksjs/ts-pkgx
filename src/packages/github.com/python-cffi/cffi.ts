@@ -8,6 +8,7 @@
  * @install `launchpad install github.com/python-cffi/cffi`
  * @homepage https://cffi.readthedocs.io/en/latest/
  * @dependencies `python.org>=3.11`, `github.com/eliben/pycparser^2.21`, `sourceware.org/libffi^3.4`
+ * @buildDependencies `llvm.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -48,13 +49,20 @@ export const cffiPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'python.org>=3.11',
     'github.com/eliben/pycparser^2.21',
     'sourceware.org/libffi^3.4',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'llvm.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

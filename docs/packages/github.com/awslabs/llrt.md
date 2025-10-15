@@ -42,17 +42,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/awslabs/llrt@0.7.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `facebook.com/zstd`
-- `ziglang.org@~0.11`
-- `nodejs.org`
-- `yarnpkg.com`
-- `cmake.org`
-- `linux:llvm.org@^17`
-
 ## Usage Examples
 
 ```typescript

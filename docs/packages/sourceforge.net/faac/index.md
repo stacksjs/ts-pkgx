@@ -40,15 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +sourceforge.net/faac@1.30.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/autoconf`
-- `gnu.org/automake`
-- `gnu.org/libtool`
-- `linux:gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

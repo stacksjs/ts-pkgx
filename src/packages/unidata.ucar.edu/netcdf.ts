@@ -9,6 +9,7 @@
  * @install `launchpad install unidata.ucar.edu/netcdf`
  * @homepage https://www.unidata.ucar.edu/software/netcdf/
  * @dependencies `hdfgroup.org/HDF5`, `sourceware.org/bzip2`, `curl.se`, ... (+2 more)
+ * @buildDependencies `gnu.org/make`, `cmake.org`, `gnu.org/m4`, ... (+1 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -60,8 +61,8 @@ export const unidataucaredunetcdfPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'hdfgroup.org/HDF5',
@@ -69,6 +70,17 @@ export const unidataucaredunetcdfPackage = {
     'curl.se',
     'gnome.org/libxml2',
     'zlib.net',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'gnu.org/make',
+    'cmake.org',
+    'gnu.org/m4',
+    'linux:gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

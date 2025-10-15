@@ -9,6 +9,7 @@
  * @install `launchpad install fuellabs.github.io/sway`
  * @homepage https://docs.fuel.network/docs/sway/
  * @dependencies `zlib.net^1`, `openssl.org^1.1`
+ * @buildDependencies `perl.org`, `gnu.org/make` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,12 +57,20 @@ export const fuellabsgithubioswayPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'zlib.net^1',
     'openssl.org^1.1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'perl.org',
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

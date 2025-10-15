@@ -9,6 +9,7 @@
  * @install `launchpad install neovim.io`
  * @homepage https://neovim.io/
  * @dependencies `gnu.org/gettext^0`
+ * @buildDependencies `cmake.org`, `gnu.org/libtool@^2` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,19 @@ export const neovimioPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnu.org/gettext^0',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org',
+    'gnu.org/libtool@^2',
   ] as const,
   /**
    * Available versions from newest to oldest.

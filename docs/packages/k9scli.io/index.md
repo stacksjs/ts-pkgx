@@ -52,13 +52,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +k9scli.io@0.50.15 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.18`
-- `gnu.org/make`
-
 ## Usage Examples
 
 ```typescript

@@ -9,6 +9,7 @@
  * @install `launchpad install lunarvim.org`
  * @homepage https://www.lunarvim.org
  * @dependencies `gnu.org/bash`, `crates.io/fd-find`, `pip.pypa.io`, ... (+4 more)
+ * @buildDependencies `cmake.org`, `gnu.org/bash` - required only when building from source
  *
  * @example
  * ```typescript
@@ -57,8 +58,8 @@ export const lunarvimorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'gnu.org/bash',
@@ -68,6 +69,14 @@ export const lunarvimorgPackage = {
     'nodejs.org',
     'rust-lang.org/cargo',
     'neovim.io',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org',
+    'gnu.org/bash',
   ] as const,
   /**
    * Available versions from newest to oldest.

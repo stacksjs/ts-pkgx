@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gnupg.org/gpgme`
  * @homepage https://www.gnupg.org/related_software/gpgme/
- * @dependencies `gnupg.org`, `gnupg.org/libassuan@^2.0.2`
+ * @buildDependencies `gnupg.org`, `gnupg.org/libassuan@^2.0.2` - required only when building from source
  *
  * @example
  * ```typescript
@@ -57,11 +57,12 @@ export const gnupgorggpgmePackage = {
     'gpgme-tool',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnupg.org',
     'gnupg.org/libassuan@^2.0.2',
   ] as const,

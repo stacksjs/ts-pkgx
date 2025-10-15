@@ -51,12 +51,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +budimanjojo.github.io/talhelper@3.0.37 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.21`
-
 ## Usage Examples
 
 ```typescript

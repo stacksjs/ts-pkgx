@@ -40,14 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/sekrit-twc/zimg@3.0.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/autoconf`
-- `gnu.org/automake`
-- `gnu.org/libtool`
-
 ## Usage Examples
 
 ```typescript

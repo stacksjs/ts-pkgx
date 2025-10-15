@@ -9,6 +9,7 @@
  * @install `launchpad install deepwisdom.ai`
  * @homepage https://deepwisdom.ai/
  * @dependencies `pkgx.sh^1`, `git-scm.org^2 # v0.7.0 requires it`
+ * @buildDependencies `python.org@>=3.9<3.12` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,12 +57,19 @@ export const deepwisdomaiPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'pkgx.sh^1',
     'git-scm.org^2 # v0.7.0 requires it',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'python.org@>=3.9<3.12',
   ] as const,
   /**
    * Available versions from newest to oldest.

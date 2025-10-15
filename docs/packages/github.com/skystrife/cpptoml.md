@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/skystrife/cpptoml@0.1.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-- `linux:gnu.org/gcc@13`
-
 ## Usage Examples
 
 ```typescript

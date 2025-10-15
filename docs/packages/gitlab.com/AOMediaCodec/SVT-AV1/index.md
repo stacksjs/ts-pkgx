@@ -43,13 +43,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +gitlab.com/AOMediaCodec/SVT-AV1@3.1.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-- `yasm.tortall.net`
-
 ## Usage Examples
 
 ```typescript

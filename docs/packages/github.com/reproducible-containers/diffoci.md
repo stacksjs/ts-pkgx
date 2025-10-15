@@ -40,12 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/reproducible-containers/diffoci@0.1.7 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@1.21.0`
-
 ## Usage Examples
 
 ```typescript

@@ -41,12 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +projectdiscovery.io/nuclei@3.4.10 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.22.2`
-
 ## Usage Examples
 
 ```typescript

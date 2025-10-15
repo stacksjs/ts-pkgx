@@ -7,6 +7,7 @@
  *
  * @install `launchpad install x.org/ice`
  * @dependencies `x.org/protocol`
+ * @buildDependencies `x.org/xtrans` - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,11 +47,18 @@ export const xorgicePackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'x.org/protocol',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'x.org/xtrans',
   ] as const,
   /**
    * Available versions from newest to oldest.

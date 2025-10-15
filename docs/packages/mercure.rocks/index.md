@@ -42,13 +42,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +mercure.rocks@0.20.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.19`
-- `goreleaser.com@>=2.4.2`
-
 ## Usage Examples
 
 ```typescript

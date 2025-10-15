@@ -1,5 +1,5 @@
 /**
- * **psycopg3** - New generation PostgreSQL database adapter for the Python programming language
+ * **psycopg3** - New generation PostgreSQL database adapter for the Python programming language 
  *
  * @domain `psycopg.org/psycopg3`
  * @version `3.2.10` (9 versions available)
@@ -48,13 +48,14 @@ export const psycopgorgpsycopg3Package = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'python.org~3.11',
     'postgresql.org',
   ] as const,
+  buildDependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

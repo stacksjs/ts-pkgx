@@ -7,7 +7,7 @@
  *
  * @install `launchpad install glm.g-truc.net`
  * @homepage https://glm.g-truc.net
- * @dependencies `cmake.org@^3`
+ * @buildDependencies `cmake.org@^3` - required only when building from source
  *
  * @example
  * ```typescript
@@ -47,11 +47,12 @@ export const glmgtrucnetPackage = {
   launchpadInstallCommand: 'launchpad install glm.g-truc.net' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'cmake.org@^3',
   ] as const,
   /**

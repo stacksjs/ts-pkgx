@@ -8,7 +8,7 @@
  *
  * @install `launchpad install dart.dev`
  * @homepage https://dart.dev
- * @dependencies `curl.se`, `python.org@>=3<3.12`, `tukaani.org/xz`
+ * @buildDependencies `curl.se`, `python.org@>=3<3.12`, `tukaani.org/xz` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +56,12 @@ export const dartdevPackage = {
     'dartaotruntime',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'curl.se',
     'python.org@>=3<3.12',
     'tukaani.org/xz',

@@ -65,12 +65,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/evilmartians/lefthook@1.13.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-
 ## Usage Examples
 
 ```typescript

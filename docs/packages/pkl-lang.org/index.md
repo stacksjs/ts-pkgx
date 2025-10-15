@@ -43,14 +43,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +pkl-lang.org@0.29.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `openjdk.org@^21`
-- `linux:zlib.net@1`
-- `linux:llvm.org`
-
 ## Usage Examples
 
 ```typescript

@@ -40,14 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +docker.com/machine@0.16.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/automake`
-- `go.dev`
-- `linux:curl.se`
-
 ## Usage Examples
 
 ```typescript

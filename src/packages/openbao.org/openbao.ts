@@ -8,7 +8,7 @@
  *
  * @install `launchpad install openbao.org/openbao`
  * @homepage https://openbao.org/
- * @dependencies `go.dev`, `gnu.org/coreutils`
+ * @buildDependencies `go.dev`, `gnu.org/coreutils` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +56,12 @@ export const openbaoorgopenbaoPackage = {
     'bao-setup',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev',
     'gnu.org/coreutils',
   ] as const,

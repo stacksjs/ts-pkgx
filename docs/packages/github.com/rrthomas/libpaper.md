@@ -41,13 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/rrthomas/libpaper@2.2.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/make`
-- `gnu.org/help2man`
-
 ## Usage Examples
 
 ```typescript

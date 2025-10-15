@@ -69,18 +69,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +deno.land@2.5.4 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `llvm.org`
-- `curl.se`
-- `cmake.org@^3`
-- `protobuf.dev`
-- `github.com/mikefarah/yq@^4`
-- `crates.io/semverator@^0`
-- `sourceware.org/libffi@>=3.2.1`
-
 ## Usage Examples
 
 ```typescript

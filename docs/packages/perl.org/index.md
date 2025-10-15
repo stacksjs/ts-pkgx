@@ -72,13 +72,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +perl.org@5.42.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `linux:llvm.org@<17`
-- `linux:gnu.org/make`
-
 ## Usage Examples
 
 ```typescript

@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install freedesktop.org/XKeyboardConfig`
- * @dependencies `gnu.org/gettext`, `mesonbuild.com`, `python.org@~3.11`, ... (+1 more)
+ * @buildDependencies `gnu.org/gettext`, `mesonbuild.com`, `python.org@~3.11`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -45,11 +45,12 @@ export const freedesktoporgxkeyboardconfigPackage = {
   launchpadInstallCommand: 'launchpad install freedesktop.org/XKeyboardConfig' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/gettext',
     'mesonbuild.com',
     'python.org@~3.11',

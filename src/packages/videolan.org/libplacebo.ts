@@ -7,6 +7,7 @@
  *
  * @install `launchpad install videolan.org/libplacebo`
  * @dependencies `littlecms.com^2`, `github.com/KhronosGroup/Vulkan-Loader^1.3.272`
+ * @buildDependencies `mesonbuild.com`, `python.org@^3.11`, `curl.se`, ... (+1 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,12 +47,23 @@ export const videolanorglibplaceboPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'littlecms.com^2',
     'github.com/KhronosGroup/Vulkan-Loader^1.3.272',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'mesonbuild.com',
+    'python.org@^3.11',
+    'curl.se',
+    'linux:gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

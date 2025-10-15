@@ -42,12 +42,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +savannah.nongnu.org/attr@2.5.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/gettext`
-
 ## Usage Examples
 
 ```typescript

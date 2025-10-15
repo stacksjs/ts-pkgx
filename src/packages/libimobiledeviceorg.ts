@@ -56,8 +56,8 @@ export const libimobiledeviceorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'libimobiledevice.org/libplist^2.4',
@@ -65,6 +65,7 @@ export const libimobiledeviceorgPackage = {
     'libimobiledevice.org/libusbmuxd^2',
     'openssl.org^1.1',
   ] as const,
+  buildDependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

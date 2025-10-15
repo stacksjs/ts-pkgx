@@ -40,15 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +opus-codec.org@1.5.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/autoconf@2`
-- `gnu.org/automake@1.16`
-- `gnu.org/libtool@2.4`
-- `gnu.org/wget`
-
 ## Usage Examples
 
 ```typescript

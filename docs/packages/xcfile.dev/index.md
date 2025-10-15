@@ -45,12 +45,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +xcfile.dev@0.8.6 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-
 ## Usage Examples
 
 ```typescript

@@ -44,13 +44,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +kubebuilder.io@4.9.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.23`
-- `gnu.org/coreutils`
-
 ## Usage Examples
 
 ```typescript

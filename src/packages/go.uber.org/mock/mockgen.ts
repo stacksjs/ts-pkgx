@@ -8,6 +8,7 @@
  *
  * @install `launchpad install go.uber.org/mock/mockgen`
  * @dependencies `go.dev^1.20`
+ * @buildDependencies `goreleaser.com` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +56,18 @@ export const gouberorgmockmockgenPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'go.dev^1.20',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'goreleaser.com',
   ] as const,
   /**
    * Available versions from newest to oldest.

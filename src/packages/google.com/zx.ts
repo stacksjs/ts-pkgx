@@ -9,6 +9,7 @@
  * @install `launchpad install google.com/zx`
  * @homepage https://google.github.io/zx/
  * @dependencies `nodejs.org`
+ * @buildDependencies `npmjs.com`, `curl.se` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,19 @@ export const googlecomzxPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'nodejs.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'npmjs.com',
+    'curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

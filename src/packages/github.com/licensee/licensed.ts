@@ -8,6 +8,7 @@
  *
  * @install `launchpad install github.com/licensee/licensed`
  * @dependencies `ruby-lang.org^3.1`, `rubygems.org`, `linux:gnome.org/libxml2~2.13.8 # for nokogiri`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org@^4` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,8 +56,8 @@ export const licensedPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -65,6 +66,13 @@ export const licensedPackage = {
     'linux:gnome.org/libxml2~2.13.8 # for nokogiri',
     'linux:gnome.org/libxslt~1.1.43 # for nokogiri',
     'linux:pcre.org^8 # for nokogiri',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org@^4',
   ] as const,
   /**
    * Available versions from newest to oldest.

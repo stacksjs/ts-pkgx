@@ -9,6 +9,7 @@
  * @install `launchpad install fukuchi.org/qrencode`
  * @homepage https://fukuchi.org/works/qrencode/index.html.en
  * @dependencies `libpng.org`
+ * @buildDependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/coreutils`, ... (+1 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,21 @@ export const fukuchiorgqrencodePackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'libpng.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/coreutils',
+    'gnu.org/libtool',
   ] as const,
   /**
    * Available versions from newest to oldest.

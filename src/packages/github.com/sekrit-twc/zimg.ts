@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/sekrit-twc/zimg`
- * @dependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/libtool`
+ * @buildDependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/libtool` - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,11 +46,12 @@ export const zimgPackage = {
   launchpadInstallCommand: 'launchpad install github.com/sekrit-twc/zimg' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/autoconf',
     'gnu.org/automake',
     'gnu.org/libtool',

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install jbig2dec.com`
  * @homepage https://jbig2dec.com/
- * @dependencies `gnu.org/automake`, `gnu.org/libtool`
+ * @buildDependencies `gnu.org/automake`, `gnu.org/libtool` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const jbig2deccomPackage = {
     'jbig2dec',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/automake',
     'gnu.org/libtool',
   ] as const,

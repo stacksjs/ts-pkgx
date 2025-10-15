@@ -40,16 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/xiph/speexdsp@1.2.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/autoconf`
-- `gnu.org/automake`
-- `gnu.org/libtool`
-- `linux:gnu.org/gcc`
-- `linux:gnu.org/make`
-
 ## Usage Examples
 
 ```typescript

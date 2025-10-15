@@ -43,13 +43,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +openbao.org/openbao@2.4.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev`
-- `gnu.org/coreutils`
-
 ## Usage Examples
 
 ```typescript

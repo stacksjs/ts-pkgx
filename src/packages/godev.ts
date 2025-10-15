@@ -10,6 +10,7 @@
  * @name `go`
  * @homepage https://go.dev
  * @dependencies `openssl.org^1  # for ca-certificates`
+ * @buildDependencies `gnu.org/m4@1`, `go.dev` - required only when building from source
  *
  * @example
  * ```typescript
@@ -62,11 +63,19 @@ export const goPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openssl.org^1  # for ca-certificates',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/m4@1',
+    'go.dev',
   ] as const,
   /**
    * Available versions from newest to oldest.

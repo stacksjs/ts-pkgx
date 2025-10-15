@@ -9,6 +9,7 @@
  * @install `launchpad install openresty.org`
  * @homepage https://openresty.org
  * @dependencies `pcre.org@8`, `openssl.org^1.1`, `zlib.net^1.2`, ... (+1 more)
+ * @buildDependencies `waterlan.home.xs4all.nl/dos2unix`, `gnu.org/wget` - required only when building from source
  *
  * @example
  * ```typescript
@@ -60,14 +61,22 @@ export const openrestyorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'pcre.org@8',
     'openssl.org^1.1',
     'zlib.net^1.2',
     'perl.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'waterlan.home.xs4all.nl/dos2unix',
+    'gnu.org/wget',
   ] as const,
   /**
    * Available versions from newest to oldest.

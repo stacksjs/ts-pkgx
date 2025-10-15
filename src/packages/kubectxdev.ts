@@ -9,6 +9,7 @@
  * @install `launchpad install kubectx.dev`
  * @homepage https://kubectx.dev
  * @dependencies `github.com/junegunn/fzf`
+ * @buildDependencies `go.dev@^1.20` - required only when building from source
  *
  * @example
  * ```typescript
@@ -57,11 +58,18 @@ export const kubectxdevPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'github.com/junegunn/fzf',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'go.dev@^1.20',
   ] as const,
   /**
    * Available versions from newest to oldest.

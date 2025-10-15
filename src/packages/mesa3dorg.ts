@@ -7,6 +7,7 @@
  *
  * @install `launchpad install mesa3d.org`
  * @dependencies `libexpat.github.io`, `x.org/x11`, `x.org/xcb`, ... (+21 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `gnu.org/bison`, `mesonbuild.com`, `pygments.org`, ... (+6 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -46,8 +47,8 @@ export const mesa3dorgPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -75,6 +76,22 @@ export const mesa3dorgPackage = {
     'linux:github.com/lm-sensors/lm-sensors',
     'linux:wayland.freedesktop.org',
     'linux:wayland.freedesktop.org/protocols',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'gnu.org/bison',
+    'mesonbuild.com',
+    'pygments.org',
+    'python.org@~3.11',
+    'x.org/protocol',
+    'github.com/westes/flex',
+    'llvm.org',
+    'linux:curl.se',
+    'linux:cmake.org@3',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rarlab.com`
- * @dependencies `gnu.org/coreutils@^9`
+ * @buildDependencies `gnu.org/coreutils@^9` - required only when building from source
  *
  * @example
  * ```typescript
@@ -53,11 +53,12 @@ export const rarlabcomPackage = {
     'unrar',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/coreutils@^9',
   ] as const,
   /**

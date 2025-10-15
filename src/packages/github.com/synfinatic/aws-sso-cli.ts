@@ -8,7 +8,7 @@
  *
  * @install `launchpad install github.com/synfinatic/aws-sso-cli`
  * @homepage https://synfinatic.github.io/aws-sso-cli/
- * @dependencies `go.dev@^1.19`
+ * @buildDependencies `go.dev@^1.19` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const awsssocliPackage = {
     'aws-sso',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@^1.19',
   ] as const,
   /**

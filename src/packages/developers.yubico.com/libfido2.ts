@@ -9,6 +9,7 @@
  * @install `launchpad install developers.yubico.com/libfido2`
  * @homepage https://developers.yubico.com/libfido2/
  * @dependencies `github.com/PJK/libcbor@0`, `openssl.org@1`, `zlib.net@1`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org@3` - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,8 +59,8 @@ export const developersyubicocomlibfido2Package = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -67,6 +68,13 @@ export const developersyubicocomlibfido2Package = {
     'openssl.org@1',
     'zlib.net@1',
     'linux:systemd.io',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org@3',
   ] as const,
   /**
    * Available versions from newest to oldest.

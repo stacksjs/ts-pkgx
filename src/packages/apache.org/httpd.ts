@@ -9,6 +9,7 @@
  * @install `launchpad install apache.org/httpd`
  * @homepage https://httpd.apache.org/
  * @dependencies `apache.org/apr>=1.3.0`, `apache.org/apr-util>=1.3.0`, `github.com/google/brotli`, ... (+6 more)
+ * @buildDependencies `gnu.org/libtool`, `gnu.org/autoconf` - required only when building from source
  *
  * @example
  * ```typescript
@@ -68,8 +69,8 @@ export const apacheorghttpdPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'apache.org/apr>=1.3.0',
@@ -81,6 +82,14 @@ export const apacheorghttpdPackage = {
     'gnome.org/libxml2',
     'zlib.net',
     'libexpat.github.io',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/libtool',
+    'gnu.org/autoconf',
   ] as const,
   /**
    * Available versions from newest to oldest.

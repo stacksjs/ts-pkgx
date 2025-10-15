@@ -9,6 +9,7 @@
  * @install `launchpad install swagger.io/swagger-codegen`
  * @homepage https://swagger.io/tools/swagger-codegen/
  * @dependencies `openjdk.org^11`
+ * @buildDependencies `maven.apache.org` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,18 @@ export const swaggerioswaggercodegenPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'openjdk.org^11',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'maven.apache.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

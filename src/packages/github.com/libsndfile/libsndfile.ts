@@ -9,6 +9,7 @@
  * @install `launchpad install github.com/libsndfile/libsndfile`
  * @homepage https://libsndfile.github.io/libsndfile/
  * @dependencies `xiph.org/flac`, `lame.sourceforge.io`, `xiph.org/ogg`, ... (+3 more)
+ * @buildDependencies `cmake.org`, `python.org@~3.11` - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,8 +59,8 @@ export const libsndfilePackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'xiph.org/flac',
@@ -68,6 +69,14 @@ export const libsndfilePackage = {
     'xiph.org/vorbis',
     'mpg123.de',
     'opus-codec.org',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org',
+    'python.org@~3.11',
   ] as const,
   /**
    * Available versions from newest to oldest.

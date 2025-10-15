@@ -11,6 +11,7 @@
  * @aliases `vi`
  * @homepage https://www.vim.org
  * @dependencies `python.org~3.11`, `lua.org>=5.4`, `invisible-island.net/ncurses>=6.3`, ... (+2 more)
+ * @buildDependencies `gnu.org/make@^4.3` - required only when building from source
  *
  * @example
  * ```typescript
@@ -63,8 +64,8 @@ export const vimPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'python.org~3.11',
@@ -72,6 +73,13 @@ export const vimPackage = {
     'invisible-island.net/ncurses>=6.3',
     'perl.org>=5.36',
     'ruby-lang.org>=3.2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/make@^4.3',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -41,12 +41,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +creativeprojects.github.io/resticprofile@0.32.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@~1.22`
-
 ## Usage Examples
 
 ```typescript

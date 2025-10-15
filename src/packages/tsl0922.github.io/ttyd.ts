@@ -9,6 +9,7 @@
  * @install `launchpad install tsl0922.github.io/ttyd`
  * @homepage https://tsl0922.github.io/ttyd/
  * @dependencies `libuv.org@1`, `github.com/json-c/json-c^0.16`, `libwebsockets.org~4.3 # ABI version changes in 4.4`, ... (+1 more)
+ * @buildDependencies `cmake.org@3` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,14 +57,21 @@ export const tsl0922githubiottydPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'libuv.org@1',
     'github.com/json-c/json-c^0.16',
     'libwebsockets.org~4.3 # ABI version changes in 4.4',
     'zlib.net@1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org@3',
   ] as const,
   /**
    * Available versions from newest to oldest.

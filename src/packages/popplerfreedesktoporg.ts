@@ -8,6 +8,7 @@
  *
  * @install `launchpad install poppler.freedesktop.org`
  * @dependencies `boost.org>=1.58.0`, `cairographics.org>=1.16.0`, `curl.se`, ... (+16 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org@>=3.16.0`, `linux:gnu.org/gcc@14` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -65,8 +66,8 @@ export const popplerfreedesktoporgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -89,6 +90,15 @@ export const popplerfreedesktoporgPackage = {
     'gnupg.org/libassuan@2',
     'littlecms.com^2.9',
     'linux:gnu.org/gcc/libstdcxx^14 # apparently, clang c++20 std isn',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'cmake.org@>=3.16.0',
+    'linux:gnu.org/gcc@14',
   ] as const,
   /**
    * Available versions from newest to oldest.

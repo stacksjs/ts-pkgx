@@ -40,14 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/kevinburke/go-bindata@4.0.2 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.18`
-- `gnu.org/patch`
-- `crates.io/semverator@^0`
-
 ## Usage Examples
 
 ```typescript

@@ -9,6 +9,7 @@
  * @install `launchpad install github.com/strukturag/libheif`
  * @homepage https://www.libde265.org/
  * @dependencies `aomedia.googlesource.com/aom`, `libjpeg-turbo.org`, `github.com/strukturag/libde265`, ... (+4 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org`, `linux:gnu.org/gcc@14` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -58,8 +59,8 @@ export const libheifPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
@@ -70,6 +71,15 @@ export const libheifPackage = {
     'freedesktop.org/shared-mime-info',
     'videolan.org/x265@3.2',
     'linux:gnu.org/gcc/libstdcxx@14',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'cmake.org',
+    'linux:gnu.org/gcc@14',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -9,6 +9,7 @@
  * @install `launchpad install soliditylang.org`
  * @homepage https://soliditylang.org
  * @dependencies `boost.org~1.84`, `linux:gnu.org/gcc/libstdcxx@14` (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `linux:gnu.org/gcc@14`, `cmake.org@3`, `gnu.org/patch` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -57,13 +58,23 @@ export const soliditylangorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'boost.org~1.84',
     'linux:gnu.org/gcc/libstdcxx@14',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'linux:gnu.org/gcc@14',
+    'cmake.org@3',
+    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

@@ -42,12 +42,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +gstreamer.freedesktop.org/orc@0.4.41 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `mesonbuild.com`
-
 ## Usage Examples
 
 ```typescript

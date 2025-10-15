@@ -40,14 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/lm-sensors/lm-sensors@3.6.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `gnu.org/bison`
-- `github.com/westes/flex`
-- `gnu.org/make`
-
 ## Usage Examples
 
 ```typescript

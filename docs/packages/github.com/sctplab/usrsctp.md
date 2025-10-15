@@ -40,13 +40,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/sctplab/usrsctp@0.9.5.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org`
-- `linux:gnu.org/gcc`
-
 ## Usage Examples
 
 ```typescript

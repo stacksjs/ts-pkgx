@@ -43,13 +43,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +code.videolan.org/rist/librist@0.2.11 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `mesonbuild.com@>=0.47<1`
-- `linux:sourceware.org/libffi@3`
-
 ## Usage Examples
 
 ```typescript

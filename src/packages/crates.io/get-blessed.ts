@@ -1,5 +1,5 @@
 /**
- * **get-blessed** - Terminal tool to get you the best crates for your rust projects, curated by blessed.rs
+ * **get-blessed** - Terminal tool to get you the best crates for your rust projects, curated by blessed.rs 
  *
  * @domain `crates.io/get-blessed`
  * @programs `get-blessed`
@@ -56,13 +56,14 @@ export const cratesiogetblessedPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'linux:openssl.org',
   ] as const,
+  buildDependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

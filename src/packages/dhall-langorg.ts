@@ -9,6 +9,7 @@
  * @install `launchpad install dhall-lang.org`
  * @homepage https://dhall-lang.org/
  * @dependencies `invisible-island.net/ncurses^6.4`, `zlib.net^1.3`
+ * @buildDependencies `haskell.org@~9.8`, `haskell.org/cabal` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,12 +57,20 @@ export const dhalllangorgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'invisible-island.net/ncurses^6.4',
     'zlib.net^1.3',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'haskell.org@~9.8',
+    'haskell.org/cabal',
   ] as const,
   /**
    * Available versions from newest to oldest.

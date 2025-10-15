@@ -44,15 +44,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +google.com/sentencepiece@0.2.1 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `cmake.org@^3`
-- `python.org@~3.11`
-- `pip.pypa.io`
-- `protobuf.dev@25`
-
 ## Usage Examples
 
 ```typescript

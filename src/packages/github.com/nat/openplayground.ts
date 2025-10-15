@@ -8,6 +8,7 @@
  *
  * @install `launchpad install github.com/nat/openplayground`
  * @dependencies `python.org~3.11`, `gnu.org/bash`, `tea.xyz^0`
+ * @buildDependencies `npmjs.com`, `pip.pypa.io` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,13 +56,21 @@ export const openplaygroundPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'python.org~3.11',
     'gnu.org/bash',
     'tea.xyz^0',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'npmjs.com',
+    'pip.pypa.io',
   ] as const,
   /**
    * Available versions from newest to oldest.

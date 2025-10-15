@@ -8,7 +8,7 @@
  *
  * @install `launchpad install github.com/lm-sensors/lm-sensors`
  * @homepage https://hwmon.wiki.kernel.org/
- * @dependencies `gnu.org/bison`, `github.com/westes/flex`, `gnu.org/make`
+ * @buildDependencies `gnu.org/bison`, `github.com/westes/flex`, `gnu.org/make` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const lmsensorsPackage = {
     'sensors',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/bison',
     'github.com/westes/flex',
     'gnu.org/make',

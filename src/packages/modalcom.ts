@@ -8,6 +8,7 @@
  * @install `launchpad install modal.com`
  * @homepage https://modal.com/docs
  * @dependencies `pkgx.sh@1`
+ * @buildDependencies `python.org@>=3.9<3.13`, `protobuf.dev` - required only when building from source
  *
  * @example
  * ```typescript
@@ -48,11 +49,19 @@ export const modalcomPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'pkgx.sh@1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'python.org@>=3.9<3.13',
+    'protobuf.dev',
   ] as const,
   /**
    * Available versions from newest to oldest.

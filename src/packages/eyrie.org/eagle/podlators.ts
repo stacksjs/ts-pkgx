@@ -8,6 +8,7 @@
  *
  * @install `launchpad install eyrie.org/eagle/podlators`
  * @dependencies `perl.org^5`
+ * @buildDependencies `gnu.org/make`, `gnu.org/wget`, `linux:cpanmin.us@^1` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  * @companions `PERL5LIB^{{prefix}}/lib/perl5:{{prefix}}/libexec/lib/perl5:$PERL5LIB`
  *
  * @example
@@ -62,11 +63,21 @@ export const eyrieorgeaglepodlatorsPackage = {
     'PERL5LIB^{{prefix}}/lib/perl5:{{prefix}}/libexec/lib/perl5:$PERL5LIB',
   ] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'perl.org^5',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
+   */
+  buildDependencies: [
+    'gnu.org/make',
+    'gnu.org/wget',
+    'linux:cpanmin.us@^1',
   ] as const,
   /**
    * Available versions from newest to oldest.

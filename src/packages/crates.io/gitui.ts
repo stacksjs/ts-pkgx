@@ -8,6 +8,7 @@
  *
  * @install `launchpad install crates.io/gitui`
  * @dependencies `perl.org`, `openssl.org^1.1`, `zlib.net^1`, ... (+1 more)
+ * @buildDependencies `cmake.org@3` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,14 +56,21 @@ export const cratesiogituiPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'perl.org',
     'openssl.org^1.1',
     'zlib.net^1',
     'libgit2.org~1.7 # links to libgit2.so.1.7',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org@3',
   ] as const,
   /**
    * Available versions from newest to oldest.

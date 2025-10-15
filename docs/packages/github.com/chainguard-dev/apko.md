@@ -55,13 +55,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/chainguard-dev/apko@0.30.16 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.21`
-- `cmake.org@^3`
-
 ## Usage Examples
 
 ```typescript

@@ -9,6 +9,7 @@
  * @install `launchpad install riverbankcomputing.com/sip`
  * @homepage https://python-sip.readthedocs.io/en/latest/
  * @dependencies `python.org~3.11`, `llvm.org<17 # needs gcc to sip-install`
+ * @buildDependencies `gnu.org/make` - required only when building from source
  *
  * @example
  * ```typescript
@@ -61,12 +62,19 @@ export const riverbankcomputingcomsipPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'python.org~3.11',
     'llvm.org<17 # needs gcc to sip-install',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

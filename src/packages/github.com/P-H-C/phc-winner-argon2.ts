@@ -1,5 +1,5 @@
 /**
- * **argon2** - The password hash Argon2, winner of PHC
+ * **argon2** - The password hash Argon2, winner of PHC 
  *
  * @domain `github.com/P-H-C/phc-winner-argon2`
  * @programs `argon2`
@@ -54,6 +54,7 @@ export const phcwinnerargon2Package = {
   ] as const,
   companions: [] as const,
   dependencies: [] as const,
+  buildDependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

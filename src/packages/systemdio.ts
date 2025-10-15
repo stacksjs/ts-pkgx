@@ -1,5 +1,5 @@
 /**
- * **systemd** - The systemd System and Service Manager
+ * **systemd** - The systemd System and Service Manager 
  *
  * @domain `systemd.io`
  * @programs `busctl`, `coredumpctl`, `hostnamectl`, `journalctl`, `kernel-install`, ... (+50 more)
@@ -9,6 +9,7 @@
  * @install `launchpad install systemd.io`
  * @homepage https://systemd.io
  * @dependencies `libexpat.github.io`, `google.com/fullycapable`, `lz4.org`, ... (+10 more)
+ * @buildDependencies `gnu.org/coreutils`, `docbook.org`, `gnu.org/gettext`, ... (+8 more) - required only when building from source
  *
  * @example
  * ```typescript
@@ -110,8 +111,8 @@ export const systemdioPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'libexpat.github.io',
@@ -127,6 +128,23 @@ export const systemdioPackage = {
     'gnutls.org',
     'sourceware.org/bzip2',
     'pcre.org/v2',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'gnu.org/coreutils',
+    'docbook.org',
+    'gnu.org/gettext',
+    'gnu.org/gperf',
+    'gnu.org/libtool',
+    'gnome.org/libxslt',
+    'gnome.org/libxml2@~2.13',
+    'gnu.org/m4',
+    'mesonbuild.com',
+    'python.org@>=3<3.12',
+    'rsync.samba.org',
   ] as const,
   /**
    * Available versions from newest to oldest.

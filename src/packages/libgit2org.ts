@@ -9,6 +9,7 @@
  * @install `launchpad install libgit2.org`
  * @homepage https://libgit2.github.com/
  * @dependencies `libssh2.org^1`
+ * @buildDependencies `cmake.org@^3` - required only when building from source
  *
  * @example
  * ```typescript
@@ -56,11 +57,18 @@ export const libgit2orgPackage = {
   ] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'libssh2.org^1',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'cmake.org@^3',
   ] as const,
   /**
    * Available versions from newest to oldest.

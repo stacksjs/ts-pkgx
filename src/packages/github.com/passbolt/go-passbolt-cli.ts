@@ -1,5 +1,5 @@
 /**
- * **go-passbolt-cli** - A CLI tool to interact  with Passbolt, a Open source Password Manager for Teams
+ * **go-passbolt-cli** - A CLI tool to interact  with Passbolt, a Open source Password Manager for Teams 
  *
  * @domain `github.com/passbolt/go-passbolt-cli`
  * @programs `passbolt`
@@ -8,7 +8,7 @@
  *
  * @install `launchpad install github.com/passbolt/go-passbolt-cli`
  * @homepage https://passbolt.com
- * @dependencies `go.dev@^1.20`
+ * @buildDependencies `go.dev@^1.20` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const gopassboltcliPackage = {
     'passbolt',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev@^1.20',
   ] as const,
   /**

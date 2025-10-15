@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/fastfetch-cli/fastfetch`
- * @dependencies `cmake.org@^3`, `gnome.org/glib@^2`, `imagemagick.org@^7`, ... (+10 more) (includes OS-specific dependencies with `os:package` format)
+ * @buildDependencies `cmake.org@^3`, `gnome.org/glib@^2`, `imagemagick.org@^7`, ... (+10 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,12 +55,13 @@ export const fastfetchPackage = {
     'flashfetch',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
    */
-  dependencies: [
+  buildDependencies: [
     'cmake.org@^3',
     'gnome.org/glib@^2',
     'imagemagick.org@^7',

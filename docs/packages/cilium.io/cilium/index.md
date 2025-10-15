@@ -45,12 +45,6 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +cilium.io/cilium@0.18.7 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `go.dev@^1.22`
-
 ## Usage Examples
 
 ```typescript

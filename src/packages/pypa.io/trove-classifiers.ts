@@ -8,6 +8,7 @@
  * @install `launchpad install pypa.io/trove-classifiers`
  * @homepage https://pypi.org/p/trove-classifiers/
  * @dependencies `python.org~3.12`
+ * @buildDependencies `pypa.io/setuptools` - required only when building from source
  *
  * @example
  * ```typescript
@@ -48,11 +49,18 @@ export const pypaiotroveclassifiersPackage = {
   programs: [] as const,
   companions: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Runtime dependencies for this package.
+   * These are required when running the package.
    */
   dependencies: [
     'python.org~3.12',
+  ] as const,
+  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
+   */
+  buildDependencies: [
+    'pypa.io/setuptools',
   ] as const,
   /**
    * Available versions from newest to oldest.

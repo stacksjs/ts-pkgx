@@ -8,7 +8,7 @@
  *
  * @install `launchpad install code.videolan.org/videolan/dav1d`
  * @homepage https://code.videolan.org/videolan/dav1d
- * @dependencies `mesonbuild.com@>=0.49`
+ * @buildDependencies `mesonbuild.com@>=0.49` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const codevideolanorgvideolandav1dPackage = {
     'dav1d',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'mesonbuild.com@>=0.49',
   ] as const,
   /**

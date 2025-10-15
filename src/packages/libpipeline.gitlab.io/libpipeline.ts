@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install libpipeline.gitlab.io/libpipeline`
- * @dependencies `gnu.org/make`
+ * @buildDependencies `gnu.org/make` - required only when building from source
  *
  * @example
  * ```typescript
@@ -45,11 +45,12 @@ export const libpipelinegitlabiolibpipelinePackage = {
   launchpadInstallCommand: 'launchpad install libpipeline.gitlab.io/libpipeline' as const,
   programs: [] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'gnu.org/make',
   ] as const,
   /**

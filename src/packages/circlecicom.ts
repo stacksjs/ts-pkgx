@@ -8,7 +8,7 @@
  *
  * @install `launchpad install circleci.com`
  * @homepage https://circleci.com/docs/2.0/local-cli/
- * @dependencies `go.dev`
+ * @buildDependencies `go.dev` - required only when building from source
  *
  * @example
  * ```typescript
@@ -55,11 +55,12 @@ export const circlecicomPackage = {
     'circleci',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'go.dev',
   ] as const,
   /**
