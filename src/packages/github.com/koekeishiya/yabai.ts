@@ -6,18 +6,13 @@
  * @version `7.1.16` (31 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install yabai`
- * @name `yabai`
+ * @install `launchpad install github.com/koekeishiya/yabai`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.yabai
- * // Or access via domain
- * const samePkg = pantry.githubcomkoekeishiyayabai
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomkoekeishiyayabai
  * console.log(pkg.name)        // "yabai"
  * console.log(pkg.description) // "A tiling window manager for macOS based on bina..."
  * console.log(pkg.programs)    // ["yabai"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/koekeishiya/yabai.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const yabaiPackage = {
+export const githubcomkoekeishiyayabaiPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const yabaiPackage = {
   description: 'A tiling window manager for macOS based on binary space partitioning' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/koekeishiya/yabai/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/koekeishiya/yabai' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install yabai' as const,
+  installCommand: 'launchpad install github.com/koekeishiya/yabai' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/koekeishiya/yabai -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/koekeishiya/yabai' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -94,13 +91,7 @@ export const yabaiPackage = {
     '6.0.8',
     '6.0.7',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) yabai -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install yabai' as const,
 }
 
-export type YabaiPackage = typeof yabaiPackage
+export type GithubcomkoekeishiyayabaiPackage = typeof githubcomkoekeishiyayabaiPackage

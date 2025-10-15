@@ -6,19 +6,14 @@
  * @version `0.24.1` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install lux`
- * @name `lux`
+ * @install `launchpad install github.com/iawia002/lux`
  * @dependencies `ffmpeg.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.lux
- * // Or access via domain
- * const samePkg = pantry.githubcomiawia002lux
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomiawia002lux
  * console.log(pkg.name)        // "lux"
  * console.log(pkg.description) // "👾 Fast and simple video download library and C..."
  * console.log(pkg.programs)    // ["lux"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/iawia002/lux.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const luxPackage = {
+export const githubcomiawia002luxPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const luxPackage = {
   description: '👾 Fast and simple video download library and CLI tool written in Go' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/iawia002/lux/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/iawia002/lux' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install lux' as const,
+  installCommand: 'launchpad install github.com/iawia002/lux' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/iawia002/lux -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/iawia002/lux' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,13 +74,7 @@ export const luxPackage = {
     '0.20.0',
     '0.19.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) lux -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install lux' as const,
 }
 
-export type LuxPackage = typeof luxPackage
+export type Githubcomiawia002luxPackage = typeof githubcomiawia002luxPackage

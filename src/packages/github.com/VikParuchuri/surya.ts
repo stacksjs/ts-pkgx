@@ -1,25 +1,20 @@
 /**
- * **surya_detect** - OCR, layout analysis, reading order, table recognition in 90+ languages
+ * **Surya** - OCR, layout analysis, reading order, table recognition in 90+ languages
  *
  * @domain `github.com/VikParuchuri/surya`
  * @programs `surya_detect`
  * @version `0.17.0` (79 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install surya_detect`
- * @name `Surya`
- * @aliases `surya_detect`
+ * @install `launchpad install github.com/VikParuchuri/surya`
+ * @homepage https://www.datalab.to
  * @dependencies `pkgx.sh^1`, `linux:mesa3d.org^23.3`, `linux:gnome.org/glib^2`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.suryadetect
- * // Or access via domain
- * const samePkg = pantry.githubcomvikparuchurisurya
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomvikparuchurisurya
  * console.log(pkg.name)        // "Surya"
  * console.log(pkg.description) // "OCR, layout analysis, reading order, table reco..."
  * console.log(pkg.programs)    // ["surya_detect"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/VikParuchuri/surya.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const suryadetectPackage = {
+export const githubcomvikparuchurisuryaPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const suryadetectPackage = {
    */
   description: 'OCR, layout analysis, reading order, table recognition in 90+ languages' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/VikParuchuri/surya/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://www.datalab.to' as const,
   githubUrl: 'https://github.com/VikParuchuri/surya' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install surya_detect' as const,
+  installCommand: 'launchpad install github.com/VikParuchuri/surya' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/VikParuchuri/surya -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/VikParuchuri/surya' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -154,15 +151,7 @@ export const suryadetectPackage = {
     '0.1.6',
     '0.1.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'surya_detect',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) surya_detect -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install surya_detect' as const,
+  aliases: [] as const,
 }
 
-export type SuryadetectPackage = typeof suryadetectPackage
+export type GithubcomvikparuchurisuryaPackage = typeof githubcomvikparuchurisuryaPackage

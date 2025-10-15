@@ -6,18 +6,14 @@
  * @version `1.14.1` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rbw`
- * @name `rbw`
+ * @install `launchpad install git.tozt.net/rbw`
+ * @homepage https://git.tozt.net/rbw
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rbw
- * // Or access via domain
- * const samePkg = pantry.gittoztnetrbw
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gittoztnetrbw
  * console.log(pkg.name)        // "rbw"
  * console.log(pkg.description) // "Unofficial Bitwarden CLI client"
  * console.log(pkg.programs)    // ["rbw"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/git-tozt-net/rbw.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rbwPackage = {
+export const gittoztnetrbwPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const rbwPackage = {
    */
   description: 'Unofficial Bitwarden CLI client' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/git.tozt.net/rbw/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://git.tozt.net/rbw' as const,
+  githubUrl: 'https://github.com/doy/rbw' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rbw' as const,
+  installCommand: 'launchpad install git.tozt.net/rbw' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +git.tozt.net/rbw -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git.tozt.net/rbw' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,13 +74,7 @@ export const rbwPackage = {
     '1.10.0',
     '1.9.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rbw -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rbw' as const,
 }
 
-export type RbwPackage = typeof rbwPackage
+export type GittoztnetrbwPackage = typeof gittoztnetrbwPackage

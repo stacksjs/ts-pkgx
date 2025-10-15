@@ -1,5 +1,5 @@
 /**
- * **github.com/confluentinc/libserdes** - Avro Serialization/Deserialization C/C++ library with Confluent schema-registry support
+ * **libserdes** - Avro Serialization/Deserialization C/C++ library with Confluent schema-registry support
  *
  * @domain `github.com/confluentinc/libserdes`
  * @version `7.5.2.231027084844` (1 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomconfluentinclibserdes
- * console.log(pkg.name)        // "github.com/confluentinc/libserdes"
+ * console.log(pkg.name)        // "libserdes"
  * console.log(pkg.description) // "Avro Serialization/Deserialization C/C++ librar..."
  * console.log(pkg.versions[0]) // "7.5.2.231027084844" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomconfluentinclibserdesPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/confluentinc/libserdes' as const,
+  name: 'libserdes' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,12 +36,14 @@ export const githubcomconfluentinclibserdesPackage = {
   description: 'Avro Serialization/Deserialization C/C++ library with Confluent schema-registry support' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/confluentinc/libserdes/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/confluentinc/libserdes' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/confluentinc/libserdes' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/confluentinc/libserdes -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/confluentinc/libserdes' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,8 +63,6 @@ export const githubcomconfluentinclibserdesPackage = {
     '7.5.2.231027084844',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/confluentinc/libserdes -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/confluentinc/libserdes' as const,
 }
 
 export type GithubcomconfluentinclibserdesPackage = typeof githubcomconfluentinclibserdesPackage

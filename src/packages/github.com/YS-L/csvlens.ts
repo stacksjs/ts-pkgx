@@ -6,18 +6,13 @@
  * @version `0.13.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install csvlens`
- * @name `csvlens`
+ * @install `launchpad install github.com/YS-L/csvlens`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.csvlens
- * // Or access via domain
- * const samePkg = pantry.githubcomyslcsvlens
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomyslcsvlens
  * console.log(pkg.name)        // "csvlens"
  * console.log(pkg.description) // "Command line csv viewer"
  * console.log(pkg.programs)    // ["csvlens"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/YS-L/csvlens.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const csvlensPackage = {
+export const githubcomyslcsvlensPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const csvlensPackage = {
   description: 'Command line csv viewer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/YS-L/csvlens/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/YS-L/csvlens' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install csvlens' as const,
+  installCommand: 'launchpad install github.com/YS-L/csvlens' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/YS-L/csvlens -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/YS-L/csvlens' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,13 +72,7 @@ export const csvlensPackage = {
     '0.6.0',
     '0.5.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) csvlens -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install csvlens' as const,
 }
 
-export type CsvlensPackage = typeof csvlensPackage
+export type GithubcomyslcsvlensPackage = typeof githubcomyslcsvlensPackage

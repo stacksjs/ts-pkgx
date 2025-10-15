@@ -6,18 +6,14 @@
  * @version `2.4.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install glauth`
- * @name `glauth`
+ * @install `launchpad install github.com/glauth/glauth`
+ * @dependencies `go.dev@^1.23`, `gnu.org/gcc`, `gnu.org/coreutils`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.glauth
- * // Or access via domain
- * const samePkg = pantry.githubcomglauthglauth
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomglauthglauth
  * console.log(pkg.name)        // "glauth"
  * console.log(pkg.description) // "A lightweight LDAP server for development, home..."
  * console.log(pkg.programs)    // ["glauth", "glauth-setup"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/glauth/glauth.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const glauthPackage = {
+export const githubcomglauthglauthPackage = {
   /**
    * The display name of this package.
    */
@@ -47,7 +43,9 @@ export const glauthPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install glauth' as const,
+  installCommand: 'launchpad install github.com/glauth/glauth' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/glauth/glauth -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/glauth/glauth' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +55,16 @@ export const glauthPackage = {
     'glauth-setup',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.23',
+    'gnu.org/gcc',
+    'gnu.org/coreutils',
+    'stedolan.github.io/jq@^1.7',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -65,13 +72,7 @@ export const glauthPackage = {
   versions: [
     '2.4.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/glauth/glauth -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install glauth' as const,
 }
 
-export type GlauthPackage = typeof glauthPackage
+export type GithubcomglauthglauthPackage = typeof githubcomglauthglauthPackage

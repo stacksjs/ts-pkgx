@@ -6,18 +6,13 @@
  * @version `0.10.1` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install swift-outdated`
- * @name `swift-outdated`
+ * @install `launchpad install github.com/kiliankoe/swift-outdated`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.swiftoutdated
- * // Or access via domain
- * const samePkg = pantry.githubcomkiliankoeswiftoutdated
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomkiliankoeswiftoutdated
  * console.log(pkg.name)        // "swift-outdated"
  * console.log(pkg.description) // "A swift subcommand for displaying when your dep..."
  * console.log(pkg.programs)    // ["swift-outdated"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/kiliankoe/swift-outdated.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const swiftoutdatedPackage = {
+export const githubcomkiliankoeswiftoutdatedPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const swiftoutdatedPackage = {
   description: 'A swift subcommand for displaying when your dependencies (SwiftPM or Xcode) are out of date' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kiliankoe/swift-outdated/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/kiliankoe/swift-outdated' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install swift-outdated' as const,
+  installCommand: 'launchpad install github.com/kiliankoe/swift-outdated' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/kiliankoe/swift-outdated -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/kiliankoe/swift-outdated' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +69,7 @@ export const swiftoutdatedPackage = {
     '0.6.0',
     '0.5.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) swift-outdated -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install swift-outdated' as const,
 }
 
-export type SwiftoutdatedPackage = typeof swiftoutdatedPackage
+export type GithubcomkiliankoeswiftoutdatedPackage = typeof githubcomkiliankoeswiftoutdatedPackage

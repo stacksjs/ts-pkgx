@@ -6,18 +6,15 @@
  * @version `2.8.1` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install dasel`
- * @name `dasel`
+ * @install `launchpad install github.com/TomWright/dasel`
+ * @homepage https://daseldocs.tomwright.me
+ * @dependencies `go.dev@^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dasel
- * // Or access via domain
- * const samePkg = pantry.githubcomtomwrightdasel
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomtomwrightdasel
  * console.log(pkg.name)        // "dasel"
  * console.log(pkg.description) // "Select, put and delete data from JSON, TOML, YA..."
  * console.log(pkg.programs)    // ["dasel"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/TomWright/dasel.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const daselPackage = {
+export const githubcomtomwrightdaselPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const daselPackage = {
    */
   description: 'Select, put and delete data from JSON, TOML, YAML, XML and CSV files with a single tool. Supports conversion between formats and can be used as a Go package.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/TomWright/dasel/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://daseldocs.tomwright.me' as const,
+  githubUrl: 'https://github.com/TomWright/dasel' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install dasel' as const,
+  installCommand: 'launchpad install github.com/TomWright/dasel' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/TomWright/dasel -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/TomWright/dasel' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const daselPackage = {
     'dasel',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,13 +74,7 @@ export const daselPackage = {
     '2.5.0',
     '2.4.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dasel -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install dasel' as const,
 }
 
-export type DaselPackage = typeof daselPackage
+export type GithubcomtomwrightdaselPackage = typeof githubcomtomwrightdaselPackage

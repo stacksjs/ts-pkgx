@@ -6,18 +6,14 @@
  * @version `0.3.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install horcrux`
- * @name `horcrux`
+ * @install `launchpad install github.com/jesseduffield/horcrux`
+ * @dependencies `go.dev@^1.14`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.horcrux
- * // Or access via domain
- * const samePkg = pantry.githubcomjesseduffieldhorcrux
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomjesseduffieldhorcrux
  * console.log(pkg.name)        // "horcrux"
  * console.log(pkg.description) // "Split your file into encrypted fragments so tha..."
  * console.log(pkg.programs)    // ["horcrux"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jesseduffield/horcrux.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const horcruxPackage = {
+export const githubcomjesseduffieldhorcruxPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const horcruxPackage = {
   description: 'Split your file into encrypted fragments so that you don\'t need to remember a passcode' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jesseduffield/horcrux/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/jesseduffield/horcrux' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install horcrux' as const,
+  installCommand: 'launchpad install github.com/jesseduffield/horcrux' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/jesseduffield/horcrux -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/jesseduffield/horcrux' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const horcruxPackage = {
     'horcrux',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.14',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +68,7 @@ export const horcruxPackage = {
   versions: [
     '0.3.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) horcrux -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install horcrux' as const,
 }
 
-export type HorcruxPackage = typeof horcruxPackage
+export type GithubcomjesseduffieldhorcruxPackage = typeof githubcomjesseduffieldhorcruxPackage

@@ -6,18 +6,15 @@
  * @version `0.13.11` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install k3sup`
- * @name `k3sup`
+ * @install `launchpad install github.com/alexellis/k3sup`
+ * @homepage https://k3sup.dev
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.k3sup
- * // Or access via domain
- * const samePkg = pantry.githubcomalexellisk3sup
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomalexellisk3sup
  * console.log(pkg.name)        // "k3sup"
  * console.log(pkg.description) // "Utility to create k3s clusters on any local or ..."
  * console.log(pkg.programs)    // ["k3sup"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/alexellis/k3sup.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const k3supPackage = {
+export const githubcomalexellisk3supPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const k3supPackage = {
    */
   description: 'Utility to create k3s clusters on any local or remote VM' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/alexellis/k3sup/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://k3sup.dev' as const,
+  githubUrl: 'https://github.com/alexellis/k3sup' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install k3sup' as const,
+  installCommand: 'launchpad install github.com/alexellis/k3sup' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/alexellis/k3sup -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/alexellis/k3sup' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const k3supPackage = {
     'k3sup',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -73,13 +78,7 @@ export const k3supPackage = {
     '0.13.2',
     '0.13.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) k3sup -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install k3sup' as const,
 }
 
-export type K3supPackage = typeof k3supPackage
+export type Githubcomalexellisk3supPackage = typeof githubcomalexellisk3supPackage

@@ -6,18 +6,13 @@
  * @version `2.0.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install terminal-notifier`
- * @name `terminal-notifier`
+ * @install `launchpad install github.com/julienXX/terminal-notifier`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.terminalnotifier
- * // Or access via domain
- * const samePkg = pantry.githubcomjulienxxterminalnotifier
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomjulienxxterminalnotifier
  * console.log(pkg.name)        // "terminal-notifier"
  * console.log(pkg.description) // "Send User Notifications on macOS from the comma..."
  * console.log(pkg.programs)    // ["terminal-notifier"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/julienXX/terminal-notifier.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const terminalnotifierPackage = {
+export const githubcomjulienxxterminalnotifierPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const terminalnotifierPackage = {
   description: 'Send User Notifications on macOS from the command-line.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/julienXX/terminal-notifier/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/julienXX/terminal-notifier' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install terminal-notifier' as const,
+  installCommand: 'launchpad install github.com/julienXX/terminal-notifier' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/julienXX/terminal-notifier -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/julienXX/terminal-notifier' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +61,7 @@ export const terminalnotifierPackage = {
   versions: [
     '2.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) terminal-notifier -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install terminal-notifier' as const,
 }
 
-export type TerminalnotifierPackage = typeof terminalnotifierPackage
+export type GithubcomjulienxxterminalnotifierPackage = typeof githubcomjulienxxterminalnotifierPackage

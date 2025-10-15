@@ -6,18 +6,14 @@
  * @version `0.7.8` (26 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install aws-iam-authenticator`
- * @name `aws-iam-authenticator`
+ * @install `launchpad install github.com/kubernetes-sigs/aws-iam-authenticator`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.awsiamauthenticator
- * // Or access via domain
- * const samePkg = pantry.githubcomkubernetessigsawsiamauthenticator
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomkubernetessigsawsiamauthenticator
  * console.log(pkg.name)        // "aws-iam-authenticator"
  * console.log(pkg.description) // "A tool to use AWS IAM credentials to authentica..."
  * console.log(pkg.programs)    // ["aws-iam-authenticator"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/kubernetes-sigs/aws-iam-authenticator.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const awsiamauthenticatorPackage = {
+export const githubcomkubernetessigsawsiamauthenticatorPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const awsiamauthenticatorPackage = {
   description: 'A tool to use AWS IAM credentials to authenticate to a Kubernetes cluster' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kubernetes-sigs/aws-iam-authenticator/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/kubernetes-sigs/aws-iam-authenticator' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install aws-iam-authenticator' as const,
+  installCommand: 'launchpad install github.com/kubernetes-sigs/aws-iam-authenticator' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/kubernetes-sigs/aws-iam-authenticator -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/kubernetes-sigs/aws-iam-authenticator' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const awsiamauthenticatorPackage = {
     'aws-iam-authenticator',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -89,13 +93,7 @@ export const awsiamauthenticatorPackage = {
     '0.5.21',
     '0.5.20',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aws-iam-authenticator -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install aws-iam-authenticator' as const,
 }
 
-export type AwsiamauthenticatorPackage = typeof awsiamauthenticatorPackage
+export type GithubcomkubernetessigsawsiamauthenticatorPackage = typeof githubcomkubernetessigsawsiamauthenticatorPackage

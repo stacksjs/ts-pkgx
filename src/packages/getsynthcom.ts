@@ -6,18 +6,14 @@
  * @version `0.6.9` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install synth`
- * @name `synth`
+ * @install `launchpad install getsynth.com`
+ * @homepage https://www.getsynth.com/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.synth
- * // Or access via domain
- * const samePkg = pantry.getsynthcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.getsynthcom
  * console.log(pkg.name)        // "synth"
  * console.log(pkg.description) // "The Declarative Data Generator"
  * console.log(pkg.programs)    // ["synth"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/getsynth-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const synthPackage = {
+export const getsynthcomPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const synthPackage = {
    */
   description: 'The Declarative Data Generator' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/getsynth.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.getsynth.com/' as const,
+  githubUrl: 'https://github.com/shuttle-hq/synth' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install synth' as const,
+  installCommand: 'launchpad install getsynth.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +getsynth.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install getsynth.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +62,7 @@ export const synthPackage = {
   versions: [
     '0.6.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) synth -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install synth' as const,
 }
 
-export type SynthPackage = typeof synthPackage
+export type GetsynthcomPackage = typeof getsynthcomPackage

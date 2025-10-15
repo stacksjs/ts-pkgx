@@ -1,24 +1,18 @@
 /**
- * **scriptisto** - A language-agnostic "shebang interpreter" that enables you to write scripts in compiled languages.
+ * **Scriptisto** - A language-agnostic "shebang interpreter" that enables you to write scripts in compiled languages.
  *
  * @domain `github.com/igor-petruk/scriptisto`
  * @programs `scriptisto`
  * @version `2.2.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install scriptisto`
- * @name `Scriptisto`
- * @aliases `scriptisto`
+ * @install `launchpad install github.com/igor-petruk/scriptisto`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.scriptisto
- * // Or access via domain
- * const samePkg = pantry.githubcomigorpetrukscriptisto
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomigorpetrukscriptisto
  * console.log(pkg.name)        // "Scriptisto"
  * console.log(pkg.description) // "A language-agnostic "shebang interpreter" that ..."
  * console.log(pkg.programs)    // ["scriptisto"]
@@ -28,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/igor-petruk/scriptisto.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const scriptistoPackage = {
+export const githubcomigorpetrukscriptistoPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +37,14 @@ export const scriptistoPackage = {
   description: 'A language-agnostic "shebang interpreter" that enables you to write scripts in compiled languages.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/igor-petruk/scriptisto/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/igor-petruk/scriptisto' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install scriptisto' as const,
+  installCommand: 'launchpad install github.com/igor-petruk/scriptisto' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/igor-petruk/scriptisto -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/igor-petruk/scriptisto' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,15 +62,7 @@ export const scriptistoPackage = {
     '2.2.0',
     '2.1.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'scriptisto',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) scriptisto -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install scriptisto' as const,
+  aliases: [] as const,
 }
 
-export type ScriptistoPackage = typeof scriptistoPackage
+export type GithubcomigorpetrukscriptistoPackage = typeof githubcomigorpetrukscriptistoPackage

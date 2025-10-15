@@ -1,5 +1,5 @@
 /**
- * **github.com/essembeh/gnome-extensions-cli** - Command line tool to manage your Gnome Shell extensions
+ * **gnome-extensions-cli** - Command line tool to manage your Gnome Shell extensions
  *
  * @domain `github.com/essembeh/gnome-extensions-cli`
  * @programs `gnome-extensions-cli`, `gext`
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomessembehgnomeextensionscli
- * console.log(pkg.name)        // "github.com/essembeh/gnome-extensions-cli"
+ * console.log(pkg.name)        // "gnome-extensions-cli"
  * console.log(pkg.description) // "Command line tool to manage your Gnome Shell ex..."
  * console.log(pkg.programs)    // ["gnome-extensions-cli", "gext"]
  * console.log(pkg.versions[0]) // "0.10.6" (latest)
@@ -27,7 +27,7 @@ export const githubcomessembehgnomeextensionscliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/essembeh/gnome-extensions-cli' as const,
+  name: 'gnome-extensions-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -44,6 +44,8 @@ export const githubcomessembehgnomeextensionscliPackage = {
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/essembeh/gnome-extensions-cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/essembeh/gnome-extensions-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/essembeh/gnome-extensions-cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,8 +75,6 @@ export const githubcomessembehgnomeextensionscliPackage = {
     '0.10.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/essembeh/gnome-extensions-cli -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/essembeh/gnome-extensions-cli' as const,
 }
 
 export type GithubcomessembehgnomeextensionscliPackage = typeof githubcomessembehgnomeextensionscliPackage

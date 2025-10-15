@@ -6,19 +6,15 @@
  * @version `3.9.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install epstool`
- * @name `epstool`
+ * @install `launchpad install ghostgum.com.au/epstool`
+ * @homepage http://www.ghostgum.com.au/software/epstool.htm
  * @dependencies `ghostscript.com`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.epstool
- * // Or access via domain
- * const samePkg = pantry.ghostgumcomauepstool
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ghostgumcomauepstool
  * console.log(pkg.name)        // "epstool"
  * console.log(pkg.description) // "Edit preview images and fix bounding boxes in E..."
  * console.log(pkg.programs)    // ["epstool"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ghostgum-com-au/epstool.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const epstoolPackage = {
+export const ghostgumcomauepstoolPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const epstoolPackage = {
    */
   description: 'Edit preview images and fix bounding boxes in EPS files' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ghostgum.com.au/epstool/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://www.ghostgum.com.au/software/epstool.htm' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install epstool' as const,
+  installCommand: 'launchpad install ghostgum.com.au/epstool' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ghostgum.com.au/epstool -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ghostgum.com.au/epstool' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +69,7 @@ export const epstoolPackage = {
   versions: [
     '3.9.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) epstool -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install epstool' as const,
 }
 
-export type EpstoolPackage = typeof epstoolPackage
+export type GhostgumcomauepstoolPackage = typeof ghostgumcomauepstoolPackage

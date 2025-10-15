@@ -6,19 +6,15 @@
  * @version `1.12.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install bats`
- * @name `bats`
+ * @install `launchpad install github.com/bats-core/bats-core`
+ * @homepage https://bats-core.readthedocs.io/
  * @dependencies `gnu.org/coreutils^9.4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.bats
- * // Or access via domain
- * const samePkg = pantry.githubcombatscorebatscore
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcombatscorebatscore
  * console.log(pkg.name)        // "bats"
  * console.log(pkg.description) // "Bash Automated Testing System"
  * console.log(pkg.programs)    // ["bats"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/bats-core/bats-core.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const batsPackage = {
+export const githubcombatscorebatscorePackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const batsPackage = {
    */
   description: 'Bash Automated Testing System' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/bats-core/bats-core/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://bats-core.readthedocs.io/' as const,
   githubUrl: 'https://github.com/bats-core/bats-core' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install bats' as const,
+  installCommand: 'launchpad install github.com/bats-core/bats-core' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/bats-core/bats-core -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/bats-core/bats-core' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,13 +72,7 @@ export const batsPackage = {
     '1.11.0',
     '1.10.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bats -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install bats' as const,
 }
 
-export type BatsPackage = typeof batsPackage
+export type GithubcombatscorebatscorePackage = typeof githubcombatscorebatscorePackage

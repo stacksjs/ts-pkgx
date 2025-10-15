@@ -6,19 +6,14 @@
  * @version `4.15.3` (16 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install z3`
- * @name `z3`
+ * @install `launchpad install github.com/Z3Prover/z3`
  * @dependencies `linux:gnu.org/gcc/libstdcxx@14` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.z3
- * // Or access via domain
- * const samePkg = pantry.githubcomz3proverz3
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomz3proverz3
  * console.log(pkg.name)        // "z3"
  * console.log(pkg.description) // "High-performance theorem prover"
  * console.log(pkg.programs)    // ["z3"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Z3Prover/z3.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const z3Package = {
+export const githubcomz3proverz3Package = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const z3Package = {
   description: 'High-performance theorem prover' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Z3Prover/z3/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/Z3Prover/z3' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install z3' as const,
+  installCommand: 'launchpad install github.com/Z3Prover/z3' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/Z3Prover/z3 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/Z3Prover/z3' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -87,13 +84,7 @@ export const z3Package = {
     '4.12.2',
     '4.12.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) z3 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install z3' as const,
 }
 
-export type Z3Package = typeof z3Package
+export type Githubcomz3proverz3Package = typeof githubcomz3proverz3Package

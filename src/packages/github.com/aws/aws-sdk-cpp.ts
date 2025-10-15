@@ -1,5 +1,5 @@
 /**
- * **github.com/aws/aws-sdk-cpp** - AWS SDK for C++
+ * **aws-sdk-cpp** - AWS SDK for C++
  *
  * @domain `github.com/aws/aws-sdk-cpp`
  * @version `1.11.669` (585 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomawsawssdkcpp
- * console.log(pkg.name)        // "github.com/aws/aws-sdk-cpp"
+ * console.log(pkg.name)        // "aws-sdk-cpp"
  * console.log(pkg.description) // "AWS SDK for C++"
  * console.log(pkg.versions[0]) // "1.11.669" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomawsawssdkcppPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/aws/aws-sdk-cpp' as const,
+  name: 'aws-sdk-cpp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,6 +42,8 @@ export const githubcomawsawssdkcppPackage = {
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/aws/aws-sdk-cpp' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/aws/aws-sdk-cpp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/aws/aws-sdk-cpp' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -645,8 +647,6 @@ export const githubcomawsawssdkcppPackage = {
     '1.11.83',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/aws/aws-sdk-cpp -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/aws/aws-sdk-cpp' as const,
 }
 
 export type GithubcomawsawssdkcppPackage = typeof githubcomawsawssdkcppPackage

@@ -1,5 +1,5 @@
 /**
- * **github.com/kjd/idna** - Internationalized Domain Names for Python (IDNA 2008 and UTS #46)
+ * **idna** - Internationalized Domain Names for Python (IDNA 2008 and UTS #46)
  *
  * @domain `github.com/kjd/idna`
  * @version `3.11.0` (6 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomkjdidna
- * console.log(pkg.name)        // "github.com/kjd/idna"
+ * console.log(pkg.name)        // "idna"
  * console.log(pkg.description) // "Internationalized Domain Names for Python (IDNA..."
  * console.log(pkg.versions[0]) // "3.11.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomkjdidnaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/kjd/idna' as const,
+  name: 'idna' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,6 +42,8 @@ export const githubcomkjdidnaPackage = {
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/kjd/idna' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/kjd/idna -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/kjd/idna' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -64,8 +66,6 @@ export const githubcomkjdidnaPackage = {
     '3.6.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/kjd/idna -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/kjd/idna' as const,
 }
 
 export type GithubcomkjdidnaPackage = typeof githubcomkjdidnaPackage

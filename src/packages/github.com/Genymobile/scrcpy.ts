@@ -6,19 +6,14 @@
  * @version `3.3.3` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install scrcpy`
- * @name `scrcpy`
+ * @install `launchpad install github.com/Genymobile/scrcpy`
  * @dependencies `ffmpeg.org`, `libusb.info`, `libsdl.org`, ... (+3 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.scrcpy
- * // Or access via domain
- * const samePkg = pantry.githubcomgenymobilescrcpy
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomgenymobilescrcpy
  * console.log(pkg.name)        // "scrcpy"
  * console.log(pkg.description) // "Display and control your Android device"
  * console.log(pkg.programs)    // ["scrcpy"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Genymobile/scrcpy.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const scrcpyPackage = {
+export const githubcomgenymobilescrcpyPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const scrcpyPackage = {
   description: 'Display and control your Android device' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Genymobile/scrcpy/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/Genymobile/scrcpy' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install scrcpy' as const,
+  installCommand: 'launchpad install github.com/Genymobile/scrcpy' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/Genymobile/scrcpy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/Genymobile/scrcpy' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -94,13 +91,7 @@ export const scrcpyPackage = {
     '2.2.0',
     '2.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) scrcpy -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install scrcpy' as const,
 }
 
-export type ScrcpyPackage = typeof scrcpyPackage
+export type GithubcomgenymobilescrcpyPackage = typeof githubcomgenymobilescrcpyPackage

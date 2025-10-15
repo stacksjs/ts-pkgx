@@ -1,24 +1,20 @@
 /**
- * **pebble** - Pebble is a lightweight Linux service manager with layered configuration and an HTTP API.
+ * **canonical/pebble** - Pebble is a lightweight Linux service manager with layered configuration and an HTTP API.
  *
  * @domain `github.com/canonical/pebble`
  * @programs `pebble`
  * @version `1.25.0` (34 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pebble`
- * @name `canonical/pebble`
- * @aliases `pebble`
+ * @install `launchpad install github.com/canonical/pebble`
+ * @homepage https://canonical-pebble.readthedocs-hosted.com/
+ * @dependencies `go.dev`, `gnu.org/sed`, `cmake.org@^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pebble
- * // Or access via domain
- * const samePkg = pantry.githubcomcanonicalpebble
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomcanonicalpebble
  * console.log(pkg.name)        // "canonical/pebble"
  * console.log(pkg.description) // "Pebble is a lightweight Linux service manager w..."
  * console.log(pkg.programs)    // ["pebble"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/canonical/pebble.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pebblePackage = {
+export const githubcomcanonicalpebblePackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const pebblePackage = {
    */
   description: 'Pebble is a lightweight Linux service manager with layered configuration and an HTTP API.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/canonical/pebble/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://canonical-pebble.readthedocs-hosted.com/' as const,
   githubUrl: 'https://github.com/canonical/pebble' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pebble' as const,
+  installCommand: 'launchpad install github.com/canonical/pebble' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/canonical/pebble -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/canonical/pebble' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +55,15 @@ export const pebblePackage = {
     'pebble',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+    'gnu.org/sed',
+    'cmake.org@^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -98,15 +104,7 @@ export const pebblePackage = {
     '1.4.1',
     '1.1.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'pebble',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pebble -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pebble' as const,
+  aliases: [] as const,
 }
 
-export type PebblePackage = typeof pebblePackage
+export type GithubcomcanonicalpebblePackage = typeof githubcomcanonicalpebblePackage

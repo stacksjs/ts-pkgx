@@ -1,18 +1,19 @@
 /**
- * **github.com/PJK/libcbor** - CBOR protocol implementation for C
+ * **libcbor** - CBOR protocol implementation for C
  *
  * @domain `github.com/PJK/libcbor`
  * @version `0.13.0` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/PJK/libcbor`
+ * @dependencies `cmake.org@3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcompjklibcbor
- * console.log(pkg.name)        // "github.com/PJK/libcbor"
+ * console.log(pkg.name)        // "libcbor"
  * console.log(pkg.description) // "CBOR protocol implementation for C"
  * console.log(pkg.versions[0]) // "0.13.0" (latest)
  * ```
@@ -24,7 +25,7 @@ export const githubcompjklibcborPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/PJK/libcbor' as const,
+  name: 'libcbor' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,15 +36,23 @@ export const githubcompjklibcborPackage = {
   description: 'CBOR protocol implementation for C' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/PJK/libcbor/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/PJK/libcbor' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/PJK/libcbor' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/PJK/libcbor -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/PJK/libcbor' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org@3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -55,8 +64,6 @@ export const githubcompjklibcborPackage = {
     '0.10.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/PJK/libcbor -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/PJK/libcbor' as const,
 }
 
 export type GithubcompjklibcborPackage = typeof githubcompjklibcborPackage

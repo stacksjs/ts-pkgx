@@ -6,18 +6,14 @@
  * @version `1.7.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install jira`
- * @name `jira`
+ * @install `launchpad install github.com/ankitpokhrel/jira-cli`
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.jira
- * // Or access via domain
- * const samePkg = pantry.githubcomankitpokhreljiracli
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomankitpokhreljiracli
  * console.log(pkg.name)        // "jira"
  * console.log(pkg.description) // "simple jira command line client in Go"
  * console.log(pkg.programs)    // ["jira"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/ankitpokhrel/jira-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jiraPackage = {
+export const githubcomankitpokhreljiracliPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const jiraPackage = {
   description: 'simple jira command line client in Go' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ankitpokhrel/jira-cli/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/go-jira/jira' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install jira' as const,
+  installCommand: 'launchpad install github.com/ankitpokhrel/jira-cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/ankitpokhrel/jira-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/ankitpokhrel/jira-cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const jiraPackage = {
     'jira',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,13 +71,7 @@ export const jiraPackage = {
     '1.5.2',
     '1.5.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jira -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jira' as const,
 }
 
-export type JiraPackage = typeof jiraPackage
+export type GithubcomankitpokhreljiracliPackage = typeof githubcomankitpokhreljiracliPackage

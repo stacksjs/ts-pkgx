@@ -6,19 +6,14 @@
  * @version `0.3.28` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gops`
- * @name `gops`
+ * @install `launchpad install github.com/google/gops`
  * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gops
- * // Or access via domain
- * const samePkg = pantry.githubcomgooglegops
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomgooglegops
  * console.log(pkg.name)        // "gops"
  * console.log(pkg.description) // "A tool to list and diagnose Go processes curren..."
  * console.log(pkg.programs)    // ["gops"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/google/gops.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gopsPackage = {
+export const githubcomgooglegopsPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const gopsPackage = {
   description: 'A tool to list and diagnose Go processes currently running on your system' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/google/gops/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/google/gops' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gops' as const,
+  installCommand: 'launchpad install github.com/google/gops' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/google/gops -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/google/gops' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +69,7 @@ export const gopsPackage = {
     '0.3.28',
     '0.3.27',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gops -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gops' as const,
 }
 
-export type GopsPackage = typeof gopsPackage
+export type GithubcomgooglegopsPackage = typeof githubcomgooglegopsPackage

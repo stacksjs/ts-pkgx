@@ -6,18 +6,15 @@
  * @version `0.30.16` (79 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install apko`
- * @name `apko`
+ * @install `launchpad install github.com/chainguard-dev/apko`
+ * @homepage https://apko.dev
+ * @dependencies `go.dev@^1.21`, `cmake.org@^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.apko
- * // Or access via domain
- * const samePkg = pantry.githubcomchainguarddevapko
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomchainguarddevapko
  * console.log(pkg.name)        // "apko"
  * console.log(pkg.description) // "Build OCI images from APK packages directly wit..."
  * console.log(pkg.programs)    // ["apko"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/chainguard-dev/apko.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const apkoPackage = {
+export const githubcomchainguarddevapkoPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const apkoPackage = {
    */
   description: 'Build OCI images from APK packages directly without Dockerfile' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/chainguard-dev/apko/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://apko.dev' as const,
   githubUrl: 'https://github.com/chainguard-dev/apko' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install apko' as const,
+  installCommand: 'launchpad install github.com/chainguard-dev/apko' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/chainguard-dev/apko -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/chainguard-dev/apko' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const apkoPackage = {
     'apko',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+    'cmake.org@^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -142,13 +148,7 @@ export const apkoPackage = {
     '0.14.1',
     '0.13.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) apko -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install apko' as const,
 }
 
-export type ApkoPackage = typeof apkoPackage
+export type GithubcomchainguarddevapkoPackage = typeof githubcomchainguarddevapkoPackage

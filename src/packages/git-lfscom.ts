@@ -6,19 +6,15 @@
  * @version `3.7.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install git-lfs`
- * @name `git-lfs`
+ * @install `launchpad install git-lfs.com`
+ * @homepage https://git-lfs.github.com/
  * @dependencies `git-scm.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gitlfs
- * // Or access via domain
- * const samePkg = pantry.gitlfscom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gitlfscom
  * console.log(pkg.name)        // "git-lfs"
  * console.log(pkg.description) // "Git extension for versioning large files"
  * console.log(pkg.programs)    // ["git-lfs"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/git-lfs-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitlfsPackage = {
+export const gitlfscomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const gitlfsPackage = {
    */
   description: 'Git extension for versioning large files' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/git-lfs.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://git-lfs.github.com/' as const,
+  githubUrl: 'https://github.com/git-lfs/git-lfs' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install git-lfs' as const,
+  installCommand: 'launchpad install git-lfs.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +git-lfs.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-lfs.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,13 +75,7 @@ export const gitlfsPackage = {
     '3.4.0',
     '3.3.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-lfs -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install git-lfs' as const,
 }
 
-export type GitlfsPackage = typeof gitlfsPackage
+export type GitlfscomPackage = typeof gitlfscomPackage

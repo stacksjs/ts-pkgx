@@ -6,18 +6,14 @@
  * @version `7.2.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install aws-vault`
- * @name `aws-vault`
+ * @install `launchpad install github.com/99designs/aws-vault`
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.awsvault
- * // Or access via domain
- * const samePkg = pantry.githubcom99designsawsvault
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcom99designsawsvault
  * console.log(pkg.name)        // "aws-vault"
  * console.log(pkg.description) // "A vault for securely storing and accessing AWS ..."
  * console.log(pkg.programs)    // ["aws-vault"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/99designs/aws-vault.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const awsvaultPackage = {
+export const githubcom99designsawsvaultPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const awsvaultPackage = {
   description: 'A vault for securely storing and accessing AWS credentials in development environments' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/99designs/aws-vault/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/99designs/aws-vault' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install aws-vault' as const,
+  installCommand: 'launchpad install github.com/99designs/aws-vault' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/99designs/aws-vault -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/99designs/aws-vault' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const awsvaultPackage = {
     'aws-vault',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +68,7 @@ export const awsvaultPackage = {
   versions: [
     '7.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aws-vault -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install aws-vault' as const,
 }
 
-export type AwsvaultPackage = typeof awsvaultPackage
+export type Githubcom99designsawsvaultPackage = typeof githubcom99designsawsvaultPackage

@@ -6,19 +6,14 @@
  * @version `1.8.5` (43 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install google-maps-scraper`
- * @name `google-maps-scraper`
+ * @install `launchpad install github.com/gosom/google-maps-scraper`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.googlemapsscraper
- * // Or access via domain
- * const samePkg = pantry.githubcomgosomgooglemapsscraper
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomgosomgooglemapsscraper
  * console.log(pkg.name)        // "google-maps-scraper"
  * console.log(pkg.description) // "scrape data  data from Google Maps. Extracts da..."
  * console.log(pkg.programs)    // ["google-maps-scraper"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/gosom/google-maps-scraper.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const googlemapsscraperPackage = {
+export const githubcomgosomgooglemapsscraperPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const googlemapsscraperPackage = {
   description: 'scrape data  data from Google Maps. Extracts data such as the name, address, phone number, website URL, rating,  reviews number, latitude and longitude, reviews,email and more for each place' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/gosom/google-maps-scraper/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/gosom/google-maps-scraper' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install google-maps-scraper' as const,
+  installCommand: 'launchpad install github.com/gosom/google-maps-scraper' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/gosom/google-maps-scraper -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/gosom/google-maps-scraper' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -113,13 +110,7 @@ export const googlemapsscraperPackage = {
     '1.1.2',
     '1.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) google-maps-scraper -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install google-maps-scraper' as const,
 }
 
-export type GooglemapsscraperPackage = typeof googlemapsscraperPackage
+export type GithubcomgosomgooglemapsscraperPackage = typeof githubcomgosomgooglemapsscraperPackage

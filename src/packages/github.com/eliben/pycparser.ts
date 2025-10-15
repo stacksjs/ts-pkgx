@@ -1,5 +1,5 @@
 /**
- * **github.com/eliben/pycparser** - :snake: Complete C99 parser in pure Python
+ * **pycparser** - :snake: Complete C99 parser in pure Python
  *
  * @domain `github.com/eliben/pycparser`
  * @version `2.23.0` (3 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomelibenpycparser
- * console.log(pkg.name)        // "github.com/eliben/pycparser"
+ * console.log(pkg.name)        // "pycparser"
  * console.log(pkg.description) // ":snake: Complete C99 parser in pure Python"
  * console.log(pkg.versions[0]) // "2.23.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomelibenpycparserPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/eliben/pycparser' as const,
+  name: 'pycparser' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,12 +36,14 @@ export const githubcomelibenpycparserPackage = {
   description: ':snake: Complete C99 parser in pure Python' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/eliben/pycparser/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/eliben/pycparser' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/eliben/pycparser' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/eliben/pycparser -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/eliben/pycparser' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,8 +63,6 @@ export const githubcomelibenpycparserPackage = {
     '2.21.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/eliben/pycparser -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/eliben/pycparser' as const,
 }
 
 export type GithubcomelibenpycparserPackage = typeof githubcomelibenpycparserPackage

@@ -7,17 +7,13 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/cloudbase/garm`
- * @name `cloudbase/garm`
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cloudbasegarm
- * // Or access via domain
- * const samePkg = pantry.githubcomcloudbasegarm
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomcloudbasegarm
  * console.log(pkg.name)        // "cloudbase/garm"
  * console.log(pkg.description) // "GitHub Actions Runner Manager"
  * console.log(pkg.programs)    // ["garm", "garm-cli"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/cloudbase/garm.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cloudbasegarmPackage = {
+export const githubcomcloudbasegarmPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const cloudbasegarmPackage = {
   description: 'GitHub Actions Runner Manager' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/cloudbase/garm/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/cloudbase/garm' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/cloudbase/garm' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/cloudbase/garm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/cloudbase/garm' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +55,13 @@ export const cloudbasegarmPackage = {
     'garm-cli',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,13 +71,7 @@ export const cloudbasegarmPackage = {
     '0.1.5',
     '0.1.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/cloudbase/garm -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/cloudbase/garm' as const,
 }
 
-export type CloudbasegarmPackage = typeof cloudbasegarmPackage
+export type GithubcomcloudbasegarmPackage = typeof githubcomcloudbasegarmPackage

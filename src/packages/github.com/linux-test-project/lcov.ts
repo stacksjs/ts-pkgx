@@ -1,5 +1,5 @@
 /**
- * **github.com/linux-test-project/lcov** - Graphical front-end for GCC's coverage testing tool (gcov)
+ * **lcov** - Graphical front-end for GCC's coverage testing tool (gcov)
  *
  * @domain `github.com/linux-test-project/lcov`
  * @programs `lcov`, `geninfo`, `genhtml`, `gendesc`, `genpng`
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomlinuxtestprojectlcov
- * console.log(pkg.name)        // "github.com/linux-test-project/lcov"
+ * console.log(pkg.name)        // "lcov"
  * console.log(pkg.description) // "Graphical front-end for GCC's coverage testing ..."
  * console.log(pkg.programs)    // ["lcov", "geninfo", ...]
  * console.log(pkg.versions[0]) // "2.3.2" (latest)
@@ -28,7 +28,7 @@ export const githubcomlinuxtestprojectlcovPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/linux-test-project/lcov' as const,
+  name: 'lcov' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,12 +39,14 @@ export const githubcomlinuxtestprojectlcovPackage = {
   description: 'Graphical front-end for GCC\'s coverage testing tool (gcov)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/linux-test-project/lcov/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/linux-test-project/lcov' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/linux-test-project/lcov' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/linux-test-project/lcov -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/linux-test-project/lcov' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -83,8 +85,6 @@ export const githubcomlinuxtestprojectlcovPackage = {
     '1.16.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/linux-test-project/lcov -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/linux-test-project/lcov' as const,
 }
 
 export type GithubcomlinuxtestprojectlcovPackage = typeof githubcomlinuxtestprojectlcovPackage

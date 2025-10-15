@@ -1,24 +1,20 @@
 /**
- * **git-cliff** - A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️
+ * **git-cliff** - A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️ 
  *
  * @domain `git-cliff.org`
  * @programs `git-cliff`
  * @version `2.10.1` (25 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install git-cliff`
- * @name `git-cliff`
+ * @install `launchpad install git-cliff.org`
+ * @homepage https://git-cliff.org
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gitcliff
- * // Or access via domain
- * const samePkg = pantry.gitclifforg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gitclifforg
  * console.log(pkg.name)        // "git-cliff"
  * console.log(pkg.description) // "A highly customizable Changelog Generator that ..."
  * console.log(pkg.programs)    // ["git-cliff"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/git-cliff-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitcliffPackage = {
+export const gitclifforgPackage = {
   /**
    * The display name of this package.
    */
@@ -40,15 +36,17 @@ export const gitcliffPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️' as const,
+  description: 'A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️ ' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/git-cliff.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://git-cliff.org' as const,
+  githubUrl: 'https://github.com/orhun/git-cliff' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install git-cliff' as const,
+  installCommand: 'launchpad install git-cliff.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +git-cliff.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-cliff.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -95,13 +93,7 @@ export const gitcliffPackage = {
     '1.3.0',
     '1.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-cliff -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install git-cliff' as const,
 }
 
-export type GitcliffPackage = typeof gitcliffPackage
+export type GitclifforgPackage = typeof gitclifforgPackage

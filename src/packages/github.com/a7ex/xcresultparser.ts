@@ -6,18 +6,14 @@
  * @version `1.9.3` (20 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install xcresultparser`
- * @name `xcresultparser`
+ * @install `launchpad install github.com/a7ex/xcresultparser`
+ * @dependencies `crates.io/semverator`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.xcresultparser
- * // Or access via domain
- * const samePkg = pantry.githubcoma7exxcresultparser
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcoma7exxcresultparser
  * console.log(pkg.name)        // "xcresultparser"
  * console.log(pkg.description) // "Parse the binary xcresult bundle from Xcode bui..."
  * console.log(pkg.programs)    // ["xcresultparser"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/a7ex/xcresultparser.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xcresultparserPackage = {
+export const githubcoma7exxcresultparserPackage = {
   /**
    * The display name of this package.
    */
@@ -47,7 +43,9 @@ export const xcresultparserPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install xcresultparser' as const,
+  installCommand: 'launchpad install github.com/a7ex/xcresultparser' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/a7ex/xcresultparser -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/a7ex/xcresultparser' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const xcresultparserPackage = {
     'xcresultparser',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'crates.io/semverator',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -83,13 +87,7 @@ export const xcresultparserPackage = {
     '1.6.0',
     '1.5.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xcresultparser -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install xcresultparser' as const,
 }
 
-export type XcresultparserPackage = typeof xcresultparserPackage
+export type Githubcoma7exxcresultparserPackage = typeof githubcoma7exxcresultparserPackage

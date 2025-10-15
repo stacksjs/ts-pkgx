@@ -6,19 +6,14 @@
  * @version `1.37.1` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install yamllint`
- * @name `yamllint`
+ * @install `launchpad install github.com/adrienverge/yamllint`
  * @dependencies `python.org~3.11`, `pyyaml.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.yamllint
- * // Or access via domain
- * const samePkg = pantry.githubcomadrienvergeyamllint
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomadrienvergeyamllint
  * console.log(pkg.name)        // "yamllint"
  * console.log(pkg.description) // "A linter for YAML files."
  * console.log(pkg.programs)    // ["yamllint"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/adrienverge/yamllint.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const yamllintPackage = {
+export const githubcomadrienvergeyamllintPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const yamllintPackage = {
   description: 'A linter for YAML files.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/adrienverge/yamllint/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/adrienverge/yamllint' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install yamllint' as const,
+  installCommand: 'launchpad install github.com/adrienverge/yamllint' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/adrienverge/yamllint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/adrienverge/yamllint' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -81,13 +78,7 @@ export const yamllintPackage = {
     '1.33.0',
     '1.32.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) yamllint -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install yamllint' as const,
 }
 
-export type YamllintPackage = typeof yamllintPackage
+export type GithubcomadrienvergeyamllintPackage = typeof githubcomadrienvergeyamllintPackage

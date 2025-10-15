@@ -1,5 +1,5 @@
 /**
- * **github.com/gabime/spdlog** - Fast C++ logging library.
+ * **spdlog** - Fast C++ logging library.
  *
  * @domain `github.com/gabime/spdlog`
  * @version `1.16.0` (9 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomgabimespdlog
- * console.log(pkg.name)        // "github.com/gabime/spdlog"
+ * console.log(pkg.name)        // "spdlog"
  * console.log(pkg.description) // "Fast C++ logging library."
  * console.log(pkg.versions[0]) // "1.16.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomgabimespdlogPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/gabime/spdlog' as const,
+  name: 'spdlog' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,12 +36,14 @@ export const githubcomgabimespdlogPackage = {
   description: 'Fast C++ logging library.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/gabime/spdlog/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/gabime/spdlog' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/gabime/spdlog' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/gabime/spdlog -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/gabime/spdlog' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -67,8 +69,6 @@ export const githubcomgabimespdlogPackage = {
     '1.12.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/gabime/spdlog -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/gabime/spdlog' as const,
 }
 
 export type GithubcomgabimespdlogPackage = typeof githubcomgabimespdlogPackage

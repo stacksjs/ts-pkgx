@@ -6,19 +6,14 @@
  * @version `1.40.2` (160 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install cfn-lint`
- * @name `cfn-lint`
+ * @install `launchpad install github.com/aws-cloudformation/cfn-lint`
  * @dependencies `pkgx.sh@1`, `pyyaml.org`, `github.com/benjaminp/six`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cfnlint
- * // Or access via domain
- * const samePkg = pantry.githubcomawscloudformationcfnlint
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomawscloudformationcfnlint
  * console.log(pkg.name)        // "cfn-lint"
  * console.log(pkg.description) // "Validate CloudFormation templates against the C..."
  * console.log(pkg.programs)    // ["cfn-lint"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/aws-cloudformation/cfn-lint.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cfnlintPackage = {
+export const githubcomawscloudformationcfnlintPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const cfnlintPackage = {
   description: 'Validate CloudFormation templates against the CloudFormation spec' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/aws-cloudformation/cfn-lint/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/aws-cloudformation/cfn-lint' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cfn-lint' as const,
+  installCommand: 'launchpad install github.com/aws-cloudformation/cfn-lint' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/aws-cloudformation/cfn-lint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/aws-cloudformation/cfn-lint' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -232,13 +229,7 @@ export const cfnlintPackage = {
     '0.79.10',
     '0.79.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cfn-lint -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cfn-lint' as const,
 }
 
-export type CfnlintPackage = typeof cfnlintPackage
+export type GithubcomawscloudformationcfnlintPackage = typeof githubcomawscloudformationcfnlintPackage

@@ -1,5 +1,5 @@
 /**
- * **github.com/brona/iproute2mac** - CLI wrapper for basic network utilites on Mac OS X inspired with iproute2 on Linux systems - ip command.
+ * **iproute2mac** - CLI wrapper for basic network utilites on Mac OS X inspired with iproute2 on Linux systems - ip command.
  *
  * @domain `github.com/brona/iproute2mac`
  * @programs `bridge`, `ip`, `iproute2mac.py`
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcombronaiproute2mac
- * console.log(pkg.name)        // "github.com/brona/iproute2mac"
+ * console.log(pkg.name)        // "iproute2mac"
  * console.log(pkg.description) // "CLI wrapper for basic network utilites on Mac O..."
  * console.log(pkg.programs)    // ["bridge", "ip", ...]
  * console.log(pkg.versions[0]) // "1.6.0" (latest)
@@ -27,7 +27,7 @@ export const githubcombronaiproute2macPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/brona/iproute2mac' as const,
+  name: 'iproute2mac' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -38,12 +38,14 @@ export const githubcombronaiproute2macPackage = {
   description: 'CLI wrapper for basic network utilites on Mac OS X inspired with iproute2 on Linux systems - ip command.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/brona/iproute2mac/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/brona/iproute2mac' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/brona/iproute2mac' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/brona/iproute2mac -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/brona/iproute2mac' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,8 +77,6 @@ export const githubcombronaiproute2macPackage = {
     '1.4.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/brona/iproute2mac -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/brona/iproute2mac' as const,
 }
 
 export type Githubcombronaiproute2macPackage = typeof githubcombronaiproute2macPackage

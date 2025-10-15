@@ -6,18 +6,15 @@
  * @version `3.11.0` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sops`
- * @name `sops`
+ * @install `launchpad install getsops.io`
+ * @homepage https://getsops.io/
+ * @dependencies `go.dev@^1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sops
- * // Or access via domain
- * const samePkg = pantry.getsopsio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.getsopsio
  * console.log(pkg.name)        // "sops"
  * console.log(pkg.description) // "Simple and flexible tool for managing secrets"
  * console.log(pkg.programs)    // ["sops"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/getsops-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sopsPackage = {
+export const getsopsioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const sopsPackage = {
    */
   description: 'Simple and flexible tool for managing secrets' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/getsops.io/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://getsops.io/' as const,
   githubUrl: 'https://github.com/getsops/sops' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sops' as const,
+  installCommand: 'launchpad install getsops.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +getsops.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install getsops.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const sopsPackage = {
     'sops',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -73,13 +78,7 @@ export const sopsPackage = {
     '3.9.0',
     '3.8.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sops -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sops' as const,
 }
 
-export type SopsPackage = typeof sopsPackage
+export type GetsopsioPackage = typeof getsopsioPackage

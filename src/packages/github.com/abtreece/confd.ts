@@ -6,18 +6,14 @@
  * @version `0.30.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install confd`
- * @name `confd`
+ * @install `launchpad install github.com/abtreece/confd`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.confd
- * // Or access via domain
- * const samePkg = pantry.githubcomabtreececonfd
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomabtreececonfd
  * console.log(pkg.name)        // "confd"
  * console.log(pkg.description) // "Manage local application configuration files us..."
  * console.log(pkg.programs)    // ["confd"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/abtreece/confd.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const confdPackage = {
+export const githubcomabtreececonfdPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const confdPackage = {
   description: 'Manage local application configuration files using templates and data from etcd or consul' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/abtreece/confd/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/kelseyhightower/confd' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install confd' as const,
+  installCommand: 'launchpad install github.com/abtreece/confd' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/abtreece/confd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/abtreece/confd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const confdPackage = {
     'confd',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +68,7 @@ export const confdPackage = {
   versions: [
     '0.30.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) confd -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install confd' as const,
 }
 
-export type ConfdPackage = typeof confdPackage
+export type GithubcomabtreececonfdPackage = typeof githubcomabtreececonfdPackage

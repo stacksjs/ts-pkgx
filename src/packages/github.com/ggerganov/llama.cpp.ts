@@ -7,18 +7,13 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/ggerganov/llama.cpp`
- * @name `LLaMA.cpp`
  * @dependencies `pkgx.sh^1`, `curl.se^8 # libcurl, since b5064`, `linux:gnu.org/gcc/libstdcxx` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.LLaMAcpp
- * // Or access via domain
- * const samePkg = pantry.githubcomggerganovllamacpp
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomggerganovllamacpp
  * console.log(pkg.name)        // "LLaMA.cpp"
  * console.log(pkg.description) // "LLM inference in C/C++"
  * console.log(pkg.programs)    // ["llama-cli", "llama.cpp", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/ggerganov/llama-cpp.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const lLaMAcppPackage = {
+export const githubcomggerganovllamacppPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const lLaMAcppPackage = {
   description: 'LLM inference in C/C++' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ggerganov/llama.cpp/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/ggerganov/llama.cpp' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/ggerganov/llama.cpp' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/ggerganov/llama.cpp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/ggerganov/llama.cpp' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -3535,13 +3532,7 @@ export const lLaMAcppPackage = {
     '1429.0.0',
     '1428.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/ggerganov/llama.cpp -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/ggerganov/llama.cpp' as const,
 }
 
-export type LLaMAcppPackage = typeof lLaMAcppPackage
+export type GithubcomggerganovllamacppPackage = typeof githubcomggerganovllamacppPackage

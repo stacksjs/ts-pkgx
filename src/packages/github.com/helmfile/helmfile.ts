@@ -6,19 +6,15 @@
  * @version `1.1.7` (30 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install helmfile`
- * @name `helmfile`
+ * @install `launchpad install github.com/helmfile/helmfile`
+ * @homepage https://helmfile.readthedocs.io
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.helmfile
- * // Or access via domain
- * const samePkg = pantry.githubcomhelmfilehelmfile
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomhelmfilehelmfile
  * console.log(pkg.name)        // "helmfile"
  * console.log(pkg.description) // "Declaratively deploy your Kubernetes manifests,..."
  * console.log(pkg.programs)    // ["helmfile"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/helmfile/helmfile.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const helmfilePackage = {
+export const githubcomhelmfilehelmfilePackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const helmfilePackage = {
    */
   description: 'Declaratively deploy your Kubernetes manifests, Kustomize configs, and Charts as Helm releases. Generate all-in-one manifests for use with ArgoCD.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/helmfile/helmfile/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://helmfile.readthedocs.io' as const,
   githubUrl: 'https://github.com/helmfile/helmfile' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install helmfile' as const,
+  installCommand: 'launchpad install github.com/helmfile/helmfile' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/helmfile/helmfile -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/helmfile/helmfile' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -100,13 +98,7 @@ export const helmfilePackage = {
     '0.158.0',
     '0.157.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) helmfile -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install helmfile' as const,
 }
 
-export type HelmfilePackage = typeof helmfilePackage
+export type GithubcomhelmfilehelmfilePackage = typeof githubcomhelmfilehelmfilePackage

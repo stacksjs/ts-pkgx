@@ -6,20 +6,14 @@
  * @version `5.0.4` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install licensed`
- * @name `licensed`
+ * @install `launchpad install github.com/licensee/licensed`
  * @dependencies `ruby-lang.org^3.1`, `rubygems.org`, `linux:gnome.org/libxml2~2.13.8 # for nokogiri`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
- * @companions `linux`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.licensed
- * // Or access via domain
- * const samePkg = pantry.githubcomlicenseelicensed
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomlicenseelicensed
  * console.log(pkg.name)        // "licensed"
  * console.log(pkg.description) // "A Ruby gem to cache and verify the licenses of ..."
  * console.log(pkg.programs)    // ["licensed"]
@@ -29,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/licensee/licensed.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const licensedPackage = {
+export const githubcomlicenseelicensedPackage = {
   /**
    * The display name of this package.
    */
@@ -49,7 +43,9 @@ export const licensedPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install licensed' as const,
+  installCommand: 'launchpad install github.com/licensee/licensed' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/licensee/licensed -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/licensee/licensed' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,13 +53,7 @@ export const licensedPackage = {
   programs: [
     'licensed',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'linux',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -83,13 +73,7 @@ export const licensedPackage = {
   versions: [
     '5.0.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) licensed -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install licensed' as const,
 }
 
-export type LicensedPackage = typeof licensedPackage
+export type GithubcomlicenseelicensedPackage = typeof githubcomlicenseelicensedPackage

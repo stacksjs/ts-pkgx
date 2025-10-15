@@ -1,5 +1,5 @@
 /**
- * **github.com/anholt/libepoxy** - Epoxy is a library for handling OpenGL function pointer management for you
+ * **libepoxy** - Epoxy is a library for handling OpenGL function pointer management for you
  *
  * @domain `github.com/anholt/libepoxy`
  * @version `1.5.10` (1 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomanholtlibepoxy
- * console.log(pkg.name)        // "github.com/anholt/libepoxy"
+ * console.log(pkg.name)        // "libepoxy"
  * console.log(pkg.description) // "Epoxy is a library for handling OpenGL function..."
  * console.log(pkg.versions[0]) // "1.5.10" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomanholtlibepoxyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/anholt/libepoxy' as const,
+  name: 'libepoxy' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,12 +36,14 @@ export const githubcomanholtlibepoxyPackage = {
   description: 'Epoxy is a library for handling OpenGL function pointer management for you' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/anholt/libepoxy/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/anholt/libepoxy' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/anholt/libepoxy' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/anholt/libepoxy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/anholt/libepoxy' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,8 +63,6 @@ export const githubcomanholtlibepoxyPackage = {
     '1.5.10',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/anholt/libepoxy -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/anholt/libepoxy' as const,
 }
 
 export type GithubcomanholtlibepoxyPackage = typeof githubcomanholtlibepoxyPackage

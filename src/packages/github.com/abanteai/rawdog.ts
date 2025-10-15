@@ -6,19 +6,15 @@
  * @version `0.1.6` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rawdog`
- * @name `rawdog`
+ * @install `launchpad install github.com/abanteai/rawdog`
+ * @homepage https://mentat.ai
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rawdog
- * // Or access via domain
- * const samePkg = pantry.githubcomabanteairawdog
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomabanteairawdog
  * console.log(pkg.name)        // "rawdog"
  * console.log(pkg.description) // "Generate and auto-execute Python scripts in the..."
  * console.log(pkg.programs)    // ["rawdog"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/abanteai/rawdog.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rawdogPackage = {
+export const githubcomabanteairawdogPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const rawdogPackage = {
    */
   description: 'Generate and auto-execute Python scripts in the cli' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/abanteai/rawdog/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://mentat.ai' as const,
+  githubUrl: 'https://github.com/AbanteAI/rawdog' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rawdog' as const,
+  installCommand: 'launchpad install github.com/abanteai/rawdog' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/abanteai/rawdog -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/abanteai/rawdog' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +69,7 @@ export const rawdogPackage = {
   versions: [
     '0.1.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rawdog -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rawdog' as const,
 }
 
-export type RawdogPackage = typeof rawdogPackage
+export type GithubcomabanteairawdogPackage = typeof githubcomabanteairawdogPackage

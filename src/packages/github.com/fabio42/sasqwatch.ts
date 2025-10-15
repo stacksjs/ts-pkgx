@@ -6,18 +6,14 @@
  * @version `0.2.5` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sasqwatch`
- * @name `sasqwatch`
+ * @install `launchpad install github.com/fabio42/sasqwatch`
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sasqwatch
- * // Or access via domain
- * const samePkg = pantry.githubcomfabio42sasqwatch
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomfabio42sasqwatch
  * console.log(pkg.name)        // "sasqwatch"
  * console.log(pkg.description) // "A modern take on the classic watch command"
  * console.log(pkg.programs)    // ["sasqwatch"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/fabio42/sasqwatch.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sasqwatchPackage = {
+export const githubcomfabio42sasqwatchPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const sasqwatchPackage = {
   description: 'A modern take on the classic watch command' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/fabio42/sasqwatch/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/fabio42/sasqwatch' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sasqwatch' as const,
+  installCommand: 'launchpad install github.com/fabio42/sasqwatch' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/fabio42/sasqwatch -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/fabio42/sasqwatch' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const sasqwatchPackage = {
     'sasqwatch',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,13 +74,7 @@ export const sasqwatchPackage = {
     '0.2.0',
     '0.1.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sasqwatch -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sasqwatch' as const,
 }
 
-export type SasqwatchPackage = typeof sasqwatchPackage
+export type Githubcomfabio42sasqwatchPackage = typeof githubcomfabio42sasqwatchPackage

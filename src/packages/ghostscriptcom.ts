@@ -1,5 +1,5 @@
 /**
- * **ghostscript.com** - This is purely for downloads, please check the website for full information
+ * **ghostscript** - This is purely for downloads, please check the website for full information
  *
  * @domain `ghostscript.com`
  * @programs `dvipdf`, `eps2eps`, `gpcl6`, `gpcl6c`, `gpdlc`, ... (+28 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ghostscript.com`
+ * @homepage https://www.ghostscript.com/
  * @dependencies `zlib.net^1.2`, `libpng.org^1.6`, `libjpeg-turbo.org^2`, ... (+8 more)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.ghostscriptcom
- * console.log(pkg.name)        // "ghostscript.com"
+ * console.log(pkg.name)        // "ghostscript"
  * console.log(pkg.description) // "This is purely for downloads, please check the ..."
  * console.log(pkg.programs)    // ["dvipdf", "eps2eps", ...]
  * console.log(pkg.versions[0]) // "10.6.0" (latest)
@@ -27,7 +28,7 @@ export const ghostscriptcomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ghostscript.com' as const,
+  name: 'ghostscript' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const ghostscriptcomPackage = {
    */
   description: 'This is purely for downloads, please check the website for full information' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ghostscript.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.ghostscript.com/' as const,
+  githubUrl: 'https://github.com/ArtifexSoftware/ghostpdl-downloads' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install ghostscript.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ghostscript.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ghostscript.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -116,8 +119,6 @@ export const ghostscriptcomPackage = {
     '10.1.2',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ghostscript.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ghostscript.com' as const,
 }
 
 export type GhostscriptcomPackage = typeof ghostscriptcomPackage

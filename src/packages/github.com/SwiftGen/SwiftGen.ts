@@ -6,18 +6,13 @@
  * @version `6.6.3` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install swiftgen`
- * @name `swiftgen`
+ * @install `launchpad install github.com/SwiftGen/SwiftGen`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.swiftgen
- * // Or access via domain
- * const samePkg = pantry.githubcomswiftgenswiftgen
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomswiftgenswiftgen
  * console.log(pkg.name)        // "swiftgen"
  * console.log(pkg.description) // "The Swift code generator for your assets, story..."
  * console.log(pkg.programs)    // ["swiftgen"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/SwiftGen/SwiftGen.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const swiftgenPackage = {
+export const githubcomswiftgenswiftgenPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const swiftgenPackage = {
   description: 'The Swift code generator for your assets, storyboards, Localizable.strings, … — Get rid of all String-based APIs!' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/SwiftGen/SwiftGen/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/SwiftGen/SwiftGen' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install swiftgen' as const,
+  installCommand: 'launchpad install github.com/SwiftGen/SwiftGen' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/SwiftGen/SwiftGen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/SwiftGen/SwiftGen' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,13 +62,7 @@ export const swiftgenPackage = {
     '6.6.3',
     '6.6.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) swiftgen -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install swiftgen' as const,
 }
 
-export type SwiftgenPackage = typeof swiftgenPackage
+export type GithubcomswiftgenswiftgenPackage = typeof githubcomswiftgenswiftgenPackage

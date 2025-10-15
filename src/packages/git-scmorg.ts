@@ -6,19 +6,14 @@
  * @version `2.51.0` (31 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install git`
- * @name `git`
+ * @install `launchpad install git-scm.org`
  * @dependencies `zlib.net@1`, `gnu.org/gettext^0.21`, `curl.se>=5`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.git
- * // Or access via domain
- * const samePkg = pantry.gitscmorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gitscmorg
  * console.log(pkg.name)        // "git"
  * console.log(pkg.description) // "Git Source Code Mirror - This is a publish-only..."
  * console.log(pkg.programs)    // ["git", "git-cvsserver", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/git-scm-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitPackage = {
+export const gitscmorgPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const gitPackage = {
   description: 'Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/git-scm.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/git/git' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install git' as const,
+  installCommand: 'launchpad install git-scm.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +git-scm.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git-scm.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -113,13 +110,7 @@ export const gitPackage = {
     '2.39.0',
     '2.38.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +git-scm.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install git' as const,
 }
 
-export type GitPackage = typeof gitPackage
+export type GitscmorgPackage = typeof gitscmorgPackage

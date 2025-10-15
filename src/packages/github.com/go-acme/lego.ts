@@ -6,18 +6,15 @@
  * @version `4.26.0` (24 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install lego`
- * @name `lego`
+ * @install `launchpad install github.com/go-acme/lego`
+ * @homepage https://go-acme.github.io/lego/
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.lego
- * // Or access via domain
- * const samePkg = pantry.githubcomgoacmelego
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomgoacmelego
  * console.log(pkg.name)        // "lego"
  * console.log(pkg.description) // "Let's Encrypt/ACME client and library written i..."
  * console.log(pkg.programs)    // ["lego"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/go-acme/lego.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const legoPackage = {
+export const githubcomgoacmelegoPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const legoPackage = {
    */
   description: 'Let\'s Encrypt/ACME client and library written in Go' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/go-acme/lego/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://go-acme.github.io/lego/' as const,
+  githubUrl: 'https://github.com/go-acme/lego' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install lego' as const,
+  installCommand: 'launchpad install github.com/go-acme/lego' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/go-acme/lego -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/go-acme/lego' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const legoPackage = {
     'lego',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -87,13 +92,7 @@ export const legoPackage = {
     '4.15.0',
     '4.14.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) lego -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install lego' as const,
 }
 
-export type LegoPackage = typeof legoPackage
+export type GithubcomgoacmelegoPackage = typeof githubcomgoacmelegoPackage

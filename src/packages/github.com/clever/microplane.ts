@@ -6,19 +6,15 @@
  * @version `0.0.36` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mp`
- * @name `mp`
+ * @install `launchpad install github.com/clever/microplane`
+ * @homepage https://medium.com/always-a-student/mo-repos-mo-problems-how-we-make-changes-across-many-git-repositories-293ad7d418f0
  * @dependencies `git-scm.org^2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mp
- * // Or access via domain
- * const samePkg = pantry.githubcomclevermicroplane
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomclevermicroplane
  * console.log(pkg.name)        // "mp"
  * console.log(pkg.description) // "A CLI tool to make git changes across many repo..."
  * console.log(pkg.programs)    // ["mp"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/clever/microplane.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mpPackage = {
+export const githubcomclevermicroplanePackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const mpPackage = {
    */
   description: 'A CLI tool to make git changes across many repos, especially useful with Microservices.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/clever/microplane/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://medium.com/always-a-student/mo-repos-mo-problems-how-we-make-changes-across-many-git-repositories-293ad7d418f0' as const,
+  githubUrl: 'https://github.com/Clever/microplane' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mp' as const,
+  installCommand: 'launchpad install github.com/clever/microplane' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/clever/microplane -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/clever/microplane' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +71,7 @@ export const mpPackage = {
     '0.0.35',
     '0.0.34',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mp -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mp' as const,
 }
 
-export type MpPackage = typeof mpPackage
+export type GithubcomclevermicroplanePackage = typeof githubcomclevermicroplanePackage

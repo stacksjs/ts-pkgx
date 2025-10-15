@@ -6,19 +6,14 @@
  * @version `0.55.1` (34 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install lazygit`
- * @name `lazygit`
+ * @install `launchpad install github.com/jesseduffield/lazygit`
  * @dependencies `git-scm.org^2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.lazygit
- * // Or access via domain
- * const samePkg = pantry.githubcomjesseduffieldlazygit
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomjesseduffieldlazygit
  * console.log(pkg.name)        // "lazygit"
  * console.log(pkg.description) // "simple terminal UI for git commands"
  * console.log(pkg.programs)    // ["lazygit"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jesseduffield/lazygit.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const lazygitPackage = {
+export const githubcomjesseduffieldlazygitPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const lazygitPackage = {
   description: 'simple terminal UI for git commands' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jesseduffield/lazygit/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/jesseduffield/lazygit' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install lazygit' as const,
+  installCommand: 'launchpad install github.com/jesseduffield/lazygit' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/jesseduffield/lazygit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/jesseduffield/lazygit' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -104,13 +101,7 @@ export const lazygitPackage = {
     '0.38.0',
     '0.37.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) lazygit -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install lazygit' as const,
 }
 
-export type LazygitPackage = typeof lazygitPackage
+export type GithubcomjesseduffieldlazygitPackage = typeof githubcomjesseduffieldlazygitPackage

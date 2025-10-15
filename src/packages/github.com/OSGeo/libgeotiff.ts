@@ -1,5 +1,5 @@
 /**
- * **github.com/OSGeo/libgeotiff** - Official repository of the libgeotiff project
+ * **libgeotiff** - Official repository of the libgeotiff project
  *
  * @domain `github.com/OSGeo/libgeotiff`
  * @programs `applygeo`, `geotifcp`, `listgeo`
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomosgeolibgeotiff
- * console.log(pkg.name)        // "github.com/OSGeo/libgeotiff"
+ * console.log(pkg.name)        // "libgeotiff"
  * console.log(pkg.description) // "Official repository of the libgeotiff project"
  * console.log(pkg.programs)    // ["applygeo", "geotifcp", ...]
  * console.log(pkg.versions[0]) // "1.7.4" (latest)
@@ -27,7 +27,7 @@ export const githubcomosgeolibgeotiffPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/OSGeo/libgeotiff' as const,
+  name: 'libgeotiff' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -38,12 +38,14 @@ export const githubcomosgeolibgeotiffPackage = {
   description: 'Official repository of the libgeotiff project' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/OSGeo/libgeotiff/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/OSGeo/libgeotiff' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/OSGeo/libgeotiff' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/OSGeo/libgeotiff -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/OSGeo/libgeotiff' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,8 +76,6 @@ export const githubcomosgeolibgeotiffPackage = {
     '1.7.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/OSGeo/libgeotiff -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/OSGeo/libgeotiff' as const,
 }
 
 export type GithubcomosgeolibgeotiffPackage = typeof githubcomosgeolibgeotiffPackage

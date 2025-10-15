@@ -1,5 +1,5 @@
 /**
- * **github.com/confluentinc/librdkafka** - The Apache Kafka C/C++ library
+ * **librdkafka** - The Apache Kafka C/C++ library
  *
  * @domain `github.com/confluentinc/librdkafka`
  * @version `2.12.0` (15 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomconfluentinclibrdkafka
- * console.log(pkg.name)        // "github.com/confluentinc/librdkafka"
+ * console.log(pkg.name)        // "librdkafka"
  * console.log(pkg.description) // "The Apache Kafka C/C++ library"
  * console.log(pkg.versions[0]) // "2.12.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomconfluentinclibrdkafkaPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/confluentinc/librdkafka' as const,
+  name: 'librdkafka' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,12 +36,14 @@ export const githubcomconfluentinclibrdkafkaPackage = {
   description: 'The Apache Kafka C/C++ library' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/confluentinc/librdkafka/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/confluentinc/librdkafka' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/confluentinc/librdkafka' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/confluentinc/librdkafka -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/confluentinc/librdkafka' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -77,8 +79,6 @@ export const githubcomconfluentinclibrdkafkaPackage = {
     '2.1.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/confluentinc/librdkafka -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/confluentinc/librdkafka' as const,
 }
 
 export type GithubcomconfluentinclibrdkafkaPackage = typeof githubcomconfluentinclibrdkafkaPackage

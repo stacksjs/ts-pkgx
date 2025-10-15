@@ -6,18 +6,14 @@
  * @version `0.10.1` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install docker-credential-ecr-login`
- * @name `docker-credential-ecr-login`
+ * @install `launchpad install github.com/awslabs/amazon-ecr-credential-helper`
+ * @dependencies `gnu.org/bash`, `gnu.org/make`, `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dockercredentialecrlogin
- * // Or access via domain
- * const samePkg = pantry.githubcomawslabsamazonecrcredentialhelper
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomawslabsamazonecrcredentialhelper
  * console.log(pkg.name)        // "docker-credential-ecr-login"
  * console.log(pkg.description) // "Automatically gets credentials for Amazon ECR o..."
  * console.log(pkg.programs)    // ["docker-credential-ecr-login"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/awslabs/amazon-ecr-credential-helper.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dockercredentialecrloginPackage = {
+export const githubcomawslabsamazonecrcredentialhelperPackage = {
   /**
    * The display name of this package.
    */
@@ -47,7 +43,9 @@ export const dockercredentialecrloginPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install docker-credential-ecr-login' as const,
+  installCommand: 'launchpad install github.com/awslabs/amazon-ecr-credential-helper' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/awslabs/amazon-ecr-credential-helper -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/awslabs/amazon-ecr-credential-helper' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,15 @@ export const dockercredentialecrloginPackage = {
     'docker-credential-ecr-login',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/bash',
+    'gnu.org/make',
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,13 +75,7 @@ export const dockercredentialecrloginPackage = {
     '0.8.0',
     '0.7.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) docker-credential-ecr-login -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install docker-credential-ecr-login' as const,
 }
 
-export type DockercredentialecrloginPackage = typeof dockercredentialecrloginPackage
+export type GithubcomawslabsamazonecrcredentialhelperPackage = typeof githubcomawslabsamazonecrcredentialhelperPackage

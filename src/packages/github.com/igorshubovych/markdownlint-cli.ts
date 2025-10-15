@@ -6,19 +6,14 @@
  * @version `0.45.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install markdownlint`
- * @name `markdownlint`
+ * @install `launchpad install github.com/igorshubovych/markdownlint-cli`
  * @dependencies `nodejs.org^18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.markdownlint
- * // Or access via domain
- * const samePkg = pantry.githubcomigorshubovychmarkdownlintcli
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomigorshubovychmarkdownlintcli
  * console.log(pkg.name)        // "markdownlint"
  * console.log(pkg.description) // "CLI for Node.js style checker and lint tool for..."
  * console.log(pkg.programs)    // ["markdownlint"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/igorshubovych/markdownlint-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const markdownlintPackage = {
+export const githubcomigorshubovychmarkdownlintcliPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const markdownlintPackage = {
   description: 'CLI for Node.js style checker and lint tool for Markdown files' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/igorshubovych/markdownlint-cli/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/igorshubovych/markdownlint-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install markdownlint' as const,
+  installCommand: 'launchpad install github.com/igorshubovych/markdownlint-cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/igorshubovych/markdownlint-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/igorshubovych/markdownlint-cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,13 +71,7 @@ export const markdownlintPackage = {
     '0.43.0',
     '0.42.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) markdownlint -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install markdownlint' as const,
 }
 
-export type MarkdownlintPackage = typeof markdownlintPackage
+export type GithubcomigorshubovychmarkdownlintcliPackage = typeof githubcomigorshubovychmarkdownlintcliPackage

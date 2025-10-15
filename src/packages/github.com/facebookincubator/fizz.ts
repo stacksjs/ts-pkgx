@@ -6,19 +6,14 @@
  * @version `2025.9.8.0` (120 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install fizz`
- * @name `fizz`
+ * @install `launchpad install github.com/facebookincubator/fizz`
  * @dependencies `boost.org`, `google.com/double-conversion^3`, `fmt.dev^10`, ... (+12 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.fizz
- * // Or access via domain
- * const samePkg = pantry.githubcomfacebookincubatorfizz
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomfacebookincubatorfizz
  * console.log(pkg.name)        // "fizz"
  * console.log(pkg.description) // "C++14 implementation of the TLS-1.3 standard"
  * console.log(pkg.programs)    // ["fizz"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/facebookincubator/fizz.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fizzPackage = {
+export const githubcomfacebookincubatorfizzPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const fizzPackage = {
   description: 'C++14 implementation of the TLS-1.3 standard' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/facebookincubator/fizz/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/facebookincubator/fizz' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install fizz' as const,
+  installCommand: 'launchpad install github.com/facebookincubator/fizz' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/facebookincubator/fizz -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/facebookincubator/fizz' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -205,13 +202,7 @@ export const fizzPackage = {
     '2023.10.2.0',
     '2023.10.16.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fizz -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install fizz' as const,
 }
 
-export type FizzPackage = typeof fizzPackage
+export type GithubcomfacebookincubatorfizzPackage = typeof githubcomfacebookincubatorfizzPackage

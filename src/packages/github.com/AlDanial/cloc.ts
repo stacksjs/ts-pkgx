@@ -1,5 +1,5 @@
 /**
- * **github.com/AlDanial/cloc** - cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
+ * **cloc** - cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
  *
  * @domain `github.com/AlDanial/cloc`
  * @programs `cloc`, `config_data`
@@ -15,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomaldanialcloc
- * console.log(pkg.name)        // "github.com/AlDanial/cloc"
+ * console.log(pkg.name)        // "cloc"
  * console.log(pkg.description) // "cloc counts blank lines, comment lines, and phy..."
  * console.log(pkg.programs)    // ["cloc", "config_data"]
  * console.log(pkg.versions[0]) // "2.6.0" (latest)
@@ -28,7 +28,7 @@ export const githubcomaldanialclocPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/AlDanial/cloc' as const,
+  name: 'cloc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,12 +39,14 @@ export const githubcomaldanialclocPackage = {
   description: 'cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/AlDanial/cloc/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/AlDanial/cloc' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/AlDanial/cloc' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/AlDanial/cloc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/AlDanial/cloc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,8 +81,6 @@ export const githubcomaldanialclocPackage = {
     '1.98.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/AlDanial/cloc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/AlDanial/cloc' as const,
 }
 
 export type GithubcomaldanialclocPackage = typeof githubcomaldanialclocPackage

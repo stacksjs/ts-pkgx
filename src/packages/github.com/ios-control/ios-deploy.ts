@@ -6,18 +6,13 @@
  * @version `1.12.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ios-deploy`
- * @name `ios-deploy`
+ * @install `launchpad install github.com/ios-control/ios-deploy`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.iosdeploy
- * // Or access via domain
- * const samePkg = pantry.githubcomioscontroliosdeploy
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomioscontroliosdeploy
  * console.log(pkg.name)        // "ios-deploy"
  * console.log(pkg.description) // "Install and debug iPhone apps from the command ..."
  * console.log(pkg.programs)    // ["ios-deploy"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/ios-control/ios-deploy.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const iosdeployPackage = {
+export const githubcomioscontroliosdeployPackage = {
   /**
    * The display name of this package.
    */
@@ -47,7 +42,9 @@ export const iosdeployPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ios-deploy' as const,
+  installCommand: 'launchpad install github.com/ios-control/ios-deploy' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/ios-control/ios-deploy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/ios-control/ios-deploy' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +61,7 @@ export const iosdeployPackage = {
   versions: [
     '1.12.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ios-deploy -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ios-deploy' as const,
 }
 
-export type IosdeployPackage = typeof iosdeployPackage
+export type GithubcomioscontroliosdeployPackage = typeof githubcomioscontroliosdeployPackage

@@ -1,11 +1,12 @@
 /**
- * **github.com/KhronosGroup/Vulkan-Loader** - Vulkan Loader
+ * **Vulkan-Loader** - Vulkan Loader
  *
  * @domain `github.com/KhronosGroup/Vulkan-Loader`
  * @version `1.4.329` (67 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/KhronosGroup/Vulkan-Loader`
+ * @homepage https://vulkan.lunarg.com/doc/sdk/latest/linux/LoaderInterfaceArchitecture.html
  * @dependencies `github.com/KhronosGroup/Vulkan-Headers`, `linux:x.org/x11`, `linux:x.org/xcb`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -13,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomkhronosgroupvulkanloader
- * console.log(pkg.name)        // "github.com/KhronosGroup/Vulkan-Loader"
+ * console.log(pkg.name)        // "Vulkan-Loader"
  * console.log(pkg.description) // "Vulkan Loader"
  * console.log(pkg.versions[0]) // "1.4.329" (latest)
  * ```
@@ -25,7 +26,7 @@ export const githubcomkhronosgroupvulkanloaderPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/KhronosGroup/Vulkan-Loader' as const,
+  name: 'Vulkan-Loader' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,13 +36,15 @@ export const githubcomkhronosgroupvulkanloaderPackage = {
    */
   description: 'Vulkan Loader' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/KhronosGroup/Vulkan-Loader/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://vulkan.lunarg.com/doc/sdk/latest/linux/LoaderInterfaceArchitecture.html' as const,
+  githubUrl: 'https://github.com/KhronosGroup/Vulkan-Loader' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/KhronosGroup/Vulkan-Loader' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/KhronosGroup/Vulkan-Loader -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/KhronosGroup/Vulkan-Loader' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -129,8 +132,6 @@ export const githubcomkhronosgroupvulkanloaderPackage = {
     '1.3.261',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/KhronosGroup/Vulkan-Loader -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/KhronosGroup/Vulkan-Loader' as const,
 }
 
 export type GithubcomkhronosgroupvulkanloaderPackage = typeof githubcomkhronosgroupvulkanloaderPackage

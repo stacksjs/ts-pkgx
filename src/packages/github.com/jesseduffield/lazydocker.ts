@@ -6,18 +6,14 @@
  * @version `0.24.1` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install lazydocker`
- * @name `lazydocker`
+ * @install `launchpad install github.com/jesseduffield/lazydocker`
+ * @dependencies `go.dev@^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.lazydocker
- * // Or access via domain
- * const samePkg = pantry.githubcomjesseduffieldlazydocker
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomjesseduffieldlazydocker
  * console.log(pkg.name)        // "lazydocker"
  * console.log(pkg.description) // "The lazier way to manage everything docker"
  * console.log(pkg.programs)    // ["lazydocker"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jesseduffield/lazydocker.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const lazydockerPackage = {
+export const githubcomjesseduffieldlazydockerPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const lazydockerPackage = {
   description: 'The lazier way to manage everything docker' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jesseduffield/lazydocker/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/jesseduffield/lazydocker' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install lazydocker' as const,
+  installCommand: 'launchpad install github.com/jesseduffield/lazydocker' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/jesseduffield/lazydocker -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/jesseduffield/lazydocker' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const lazydockerPackage = {
     'lazydocker',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -71,13 +75,7 @@ export const lazydockerPackage = {
     '0.21.0',
     '0.20.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) lazydocker -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install lazydocker' as const,
 }
 
-export type LazydockerPackage = typeof lazydockerPackage
+export type GithubcomjesseduffieldlazydockerPackage = typeof githubcomjesseduffieldlazydockerPackage

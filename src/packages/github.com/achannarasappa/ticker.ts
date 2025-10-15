@@ -6,18 +6,14 @@
  * @version `5.0.7` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ticker`
- * @name `ticker`
+ * @install `launchpad install github.com/achannarasappa/ticker`
+ * @dependencies `go.dev@~1.22.0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ticker
- * // Or access via domain
- * const samePkg = pantry.githubcomachannarasappaticker
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomachannarasappaticker
  * console.log(pkg.name)        // "ticker"
  * console.log(pkg.description) // "Terminal stock ticker with live updates and pos..."
  * console.log(pkg.programs)    // ["ticker"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/achannarasappa/ticker.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tickerPackage = {
+export const githubcomachannarasappatickerPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const tickerPackage = {
   description: 'Terminal stock ticker with live updates and position tracking' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/achannarasappa/ticker/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/achannarasappa/ticker' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ticker' as const,
+  installCommand: 'launchpad install github.com/achannarasappa/ticker' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/achannarasappa/ticker -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/achannarasappa/ticker' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const tickerPackage = {
     'ticker',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.22.0',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -76,13 +80,7 @@ export const tickerPackage = {
     '4.7.0',
     '4.6.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ticker -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ticker' as const,
 }
 
-export type TickerPackage = typeof tickerPackage
+export type GithubcomachannarasappatickerPackage = typeof githubcomachannarasappatickerPackage

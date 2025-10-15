@@ -1,18 +1,20 @@
 /**
- * **github.com/charliermarsh/ruff** - An extremely fast Python linter and code formatter, written in Rust.
+ * **ruff** - An extremely fast Python linter and code formatter, written in Rust.
  *
  * @domain `github.com/charliermarsh/ruff`
  * @version `0.14.0` (167 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/charliermarsh/ruff`
+ * @homepage https://docs.astral.sh/ruff
+ * @dependencies `crates.io/semverator`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomcharliermarshruff
- * console.log(pkg.name)        // "github.com/charliermarsh/ruff"
+ * console.log(pkg.name)        // "ruff"
  * console.log(pkg.description) // "An extremely fast Python linter and code format..."
  * console.log(pkg.versions[0]) // "0.14.0" (latest)
  * ```
@@ -24,7 +26,7 @@ export const githubcomcharliermarshruffPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/charliermarsh/ruff' as const,
+  name: 'ruff' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,16 +36,24 @@ export const githubcomcharliermarshruffPackage = {
    */
   description: 'An extremely fast Python linter and code formatter, written in Rust.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/charliermarsh/ruff/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docs.astral.sh/ruff' as const,
+  githubUrl: 'https://github.com/astral-sh/ruff' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/charliermarsh/ruff' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/charliermarsh/ruff -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/charliermarsh/ruff' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'crates.io/semverator',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -218,8 +228,6 @@ export const githubcomcharliermarshruffPackage = {
     '0.0.237',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/charliermarsh/ruff -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/charliermarsh/ruff' as const,
 }
 
 export type GithubcomcharliermarshruffPackage = typeof githubcomcharliermarshruffPackage

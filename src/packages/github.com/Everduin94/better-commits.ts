@@ -1,5 +1,5 @@
 /**
- * **github.com/Everduin94/better-commits** - pkgx package
+ * **better-commits** - pkgx package
  *
  * @domain `github.com/Everduin94/better-commits`
  * @programs `bcommits`, `better-branch`, `better-commits`, `better-commits-init`, `git-bc`
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomeverduin94bettercommits
- * console.log(pkg.name)        // "github.com/Everduin94/better-commits"
+ * console.log(pkg.name)        // "better-commits"
  * console.log(pkg.programs)    // ["bcommits", "better-branch", ...]
  * console.log(pkg.versions[0]) // "1.18.0" (latest)
  * ```
@@ -26,7 +26,7 @@ export const githubcomeverduin94bettercommitsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/Everduin94/better-commits' as const,
+  name: 'better-commits' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,12 +37,14 @@ export const githubcomeverduin94bettercommitsPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Everduin94/better-commits/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/Everduin94/better-commits' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/Everduin94/better-commits -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/Everduin94/better-commits' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,8 +86,6 @@ export const githubcomeverduin94bettercommitsPackage = {
     '1.11.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/Everduin94/better-commits -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/Everduin94/better-commits' as const,
 }
 
 export type Githubcomeverduin94bettercommitsPackage = typeof githubcomeverduin94bettercommitsPackage

@@ -6,18 +6,14 @@
  * @version `0.16.2` (26 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install nak`
- * @name `nak`
+ * @install `launchpad install github.com/fiatjaf/nak`
+ * @dependencies `go.dev@~1.24.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.nak
- * // Or access via domain
- * const samePkg = pantry.githubcomfiatjafnak
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomfiatjafnak
  * console.log(pkg.name)        // "nak"
  * console.log(pkg.description) // "a command line tool for doing all things nostr"
  * console.log(pkg.programs)    // ["nak"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/fiatjaf/nak.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nakPackage = {
+export const githubcomfiatjafnakPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const nakPackage = {
   description: 'a command line tool for doing all things nostr' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/fiatjaf/nak/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/fiatjaf/nak' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install nak' as const,
+  installCommand: 'launchpad install github.com/fiatjaf/nak' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/fiatjaf/nak -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/fiatjaf/nak' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const nakPackage = {
     'nak',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.24.1',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -89,13 +93,7 @@ export const nakPackage = {
     '0.9.0',
     '0.8.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nak -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install nak' as const,
 }
 
-export type NakPackage = typeof nakPackage
+export type GithubcomfiatjafnakPackage = typeof githubcomfiatjafnakPackage

@@ -6,18 +6,14 @@
  * @version `0.100.0` (65 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install grype`
- * @name `grype`
+ * @install `launchpad install github.com/anchore/grype`
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.grype
- * // Or access via domain
- * const samePkg = pantry.githubcomanchoregrype
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomanchoregrype
  * console.log(pkg.name)        // "grype"
  * console.log(pkg.description) // "A vulnerability scanner for container images an..."
  * console.log(pkg.programs)    // ["grype"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/anchore/grype.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const grypePackage = {
+export const githubcomanchoregrypePackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const grypePackage = {
   description: 'A vulnerability scanner for container images and filesystems' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/anchore/grype/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/anchore/grype' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install grype' as const,
+  installCommand: 'launchpad install github.com/anchore/grype' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/anchore/grype -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/anchore/grype' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const grypePackage = {
     'grype',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -128,13 +132,7 @@ export const grypePackage = {
     '0.73.0',
     '0.72.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) grype -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install grype' as const,
 }
 
-export type GrypePackage = typeof grypePackage
+export type GithubcomanchoregrypePackage = typeof githubcomanchoregrypePackage

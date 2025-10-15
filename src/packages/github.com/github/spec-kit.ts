@@ -1,5 +1,5 @@
 /**
- * **github.com/github/spec-kit** - pkgx package
+ * **spec-kit** - pkgx package
  *
  * @domain `github.com/github/spec-kit`
  * @version `0.0.64` (26 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomgithubspeckit
- * console.log(pkg.name)        // "github.com/github/spec-kit"
+ * console.log(pkg.name)        // "spec-kit"
  * console.log(pkg.versions[0]) // "0.0.64" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const githubcomgithubspeckitPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/github/spec-kit' as const,
+  name: 'spec-kit' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const githubcomgithubspeckitPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/github/spec-kit/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/github/spec-kit' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/github/spec-kit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/github/spec-kit' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -83,8 +85,6 @@ export const githubcomgithubspeckitPackage = {
     '0.0.37',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/github/spec-kit -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/github/spec-kit' as const,
 }
 
 export type GithubcomgithubspeckitPackage = typeof githubcomgithubspeckitPackage

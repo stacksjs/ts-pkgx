@@ -6,19 +6,14 @@
  * @version `2.0.2` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install neowofetch`
- * @name `neowofetch`
+ * @install `launchpad install github.com/hykilpikonna/hyfetch/neowofetch`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.neowofetch
- * // Or access via domain
- * const samePkg = pantry.githubcomhykilpikonnahyfetchneowofetch
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomhykilpikonnahyfetchneowofetch
  * console.log(pkg.name)        // "neowofetch"
  * console.log(pkg.description) // "Fast, highly customisable system info script wi..."
  * console.log(pkg.programs)    // ["neowofetch"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/hykilpikonna/hyfetch/neowofetch.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const neowofetchPackage = {
+export const githubcomhykilpikonnahyfetchneowofetchPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const neowofetchPackage = {
   description: 'Fast, highly customisable system info script with LGBTQ+ pride flags' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/hykilpikonna/hyfetch/neowofetch/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/hykilpikonna/hyfetch' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install neowofetch' as const,
+  installCommand: 'launchpad install github.com/hykilpikonna/hyfetch/neowofetch' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/hykilpikonna/hyfetch/neowofetch -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/hykilpikonna/hyfetch/neowofetch' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +70,7 @@ export const neowofetchPackage = {
     '1.99.0',
     '1.4.11',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) neowofetch -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install neowofetch' as const,
 }
 
-export type NeowofetchPackage = typeof neowofetchPackage
+export type GithubcomhykilpikonnahyfetchneowofetchPackage = typeof githubcomhykilpikonnahyfetchneowofetchPackage

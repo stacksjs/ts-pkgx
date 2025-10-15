@@ -6,18 +6,13 @@
  * @version `2024.12.23` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install create2crunch`
- * @name `create2crunch`
+ * @install `launchpad install github.com/0age/create2crunch`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.create2crunch
- * // Or access via domain
- * const samePkg = pantry.githubcom0agecreate2crunch
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcom0agecreate2crunch
  * console.log(pkg.name)        // "create2crunch"
  * console.log(pkg.description) // "A Rust program for finding salts that create ga..."
  * console.log(pkg.programs)    // ["create2crunch"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/0age/create2crunch.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const create2crunchPackage = {
+export const githubcom0agecreate2crunchPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const create2crunchPackage = {
   description: 'A Rust program for finding salts that create gas-efficient Ethereum addresses via CREATE2.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/0age/create2crunch/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/0age/create2crunch' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install create2crunch' as const,
+  installCommand: 'launchpad install github.com/0age/create2crunch' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/0age/create2crunch -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/0age/create2crunch' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +61,7 @@ export const create2crunchPackage = {
   versions: [
     '2024.12.23',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) create2crunch -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install create2crunch' as const,
 }
 
-export type Create2crunchPackage = typeof create2crunchPackage
+export type Githubcom0agecreate2crunchPackage = typeof githubcom0agecreate2crunchPackage

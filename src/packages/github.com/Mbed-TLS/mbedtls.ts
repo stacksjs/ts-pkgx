@@ -6,18 +6,15 @@
  * @version `3.6.3.1` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install generic_sum`
- * @name `generic_sum`
+ * @install `launchpad install github.com/Mbed-TLS/mbedtls`
+ * @homepage https://tls.mbed.org/
+ * @dependencies `cmake.org`, `python.org@~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.genericsum
- * // Or access via domain
- * const samePkg = pantry.githubcommbedtlsmbedtls
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcommbedtlsmbedtls
  * console.log(pkg.name)        // "generic_sum"
  * console.log(pkg.description) // "An open source, portable, easy to use, readable..."
  * console.log(pkg.programs)    // ["generic_sum"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Mbed-TLS/mbedtls.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const genericsumPackage = {
+export const githubcommbedtlsmbedtlsPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const genericsumPackage = {
    */
   description: 'An open source, portable, easy to use, readable and flexible TLS library, and reference implementation of the PSA Cryptography API. Releases are on a varying cadence, typically around 3 - 6 months between releases.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Mbed-TLS/mbedtls/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://tls.mbed.org/' as const,
+  githubUrl: 'https://github.com/Mbed-TLS/mbedtls' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install generic_sum' as const,
+  installCommand: 'launchpad install github.com/Mbed-TLS/mbedtls' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/Mbed-TLS/mbedtls -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/Mbed-TLS/mbedtls' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const genericsumPackage = {
     'generic_sum',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+    'python.org@~3.11',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -73,13 +79,7 @@ export const genericsumPackage = {
     '2.28.6',
     '2.28.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) generic_sum -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install generic_sum' as const,
 }
 
-export type GenericsumPackage = typeof genericsumPackage
+export type GithubcommbedtlsmbedtlsPackage = typeof githubcommbedtlsmbedtlsPackage

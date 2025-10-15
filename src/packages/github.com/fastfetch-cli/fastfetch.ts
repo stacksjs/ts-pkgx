@@ -1,5 +1,5 @@
 /**
- * **github.com/fastfetch-cli/fastfetch** - A maintained, feature-rich and performance oriented, neofetch like system information tool.
+ * **fastfetch** - A maintained, feature-rich and performance oriented, neofetch like system information tool.
  *
  * @domain `github.com/fastfetch-cli/fastfetch`
  * @programs `fastfetch`, `flashfetch`
@@ -7,13 +7,14 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/fastfetch-cli/fastfetch`
+ * @dependencies `cmake.org@^3`, `gnome.org/glib@^2`, `imagemagick.org@^7`, ... (+10 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomfastfetchclifastfetch
- * console.log(pkg.name)        // "github.com/fastfetch-cli/fastfetch"
+ * console.log(pkg.name)        // "fastfetch"
  * console.log(pkg.description) // "A maintained, feature-rich and performance orie..."
  * console.log(pkg.programs)    // ["fastfetch", "flashfetch"]
  * console.log(pkg.versions[0]) // "2.53.0" (latest)
@@ -26,7 +27,7 @@ export const githubcomfastfetchclifastfetchPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/fastfetch-cli/fastfetch' as const,
+  name: 'fastfetch' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,12 +38,14 @@ export const githubcomfastfetchclifastfetchPackage = {
   description: 'A maintained, feature-rich and performance oriented, neofetch like system information tool.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/fastfetch-cli/fastfetch/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/fastfetch-cli/fastfetch' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/fastfetch-cli/fastfetch' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/fastfetch-cli/fastfetch -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/fastfetch-cli/fastfetch' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -52,7 +55,26 @@ export const githubcomfastfetchclifastfetchPackage = {
     'flashfetch',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   */
+  dependencies: [
+    'cmake.org@^3',
+    'gnome.org/glib@^2',
+    'imagemagick.org@^7',
+    'python.org@~3.12',
+    'sqlite.org@^3',
+    'zlib.net@^1',
+    'linux:freedesktop.org/dbus@^1',
+    'linux:elfutils.org@^0',
+    'linux:x.org/x11@^1',
+    'linux:x.org/xcb@^1',
+    'linux:x.org/xrandr@^1',
+    'linux:mesa3d.org@^24',
+    'linux:wayland.freedesktop.org@^1',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -92,8 +114,6 @@ export const githubcomfastfetchclifastfetchPackage = {
     '2.33.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/fastfetch-cli/fastfetch -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/fastfetch-cli/fastfetch' as const,
 }
 
 export type GithubcomfastfetchclifastfetchPackage = typeof githubcomfastfetchclifastfetchPackage

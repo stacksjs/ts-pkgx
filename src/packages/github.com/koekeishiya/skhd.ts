@@ -1,25 +1,20 @@
 /**
- * **skhd** - Simple hotkey daemon for macOS
+ * **skhd** -  Simple hotkey daemon for macOS
  *
  * @domain `github.com/koekeishiya/skhd`
  * @programs `skhd`
  * @version `0.3.9` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install skhd`
- * @name `skhd`
+ * @install `launchpad install github.com/koekeishiya/skhd`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.skhd
- * // Or access via domain
- * const samePkg = pantry.githubcomkoekeishiyaskhd
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomkoekeishiyaskhd
  * console.log(pkg.name)        // "skhd"
- * console.log(pkg.description) // "Simple hotkey daemon for macOS"
+ * console.log(pkg.description) // " Simple hotkey daemon for macOS"
  * console.log(pkg.programs)    // ["skhd"]
  * console.log(pkg.versions[0]) // "0.3.9" (latest)
  * ```
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/koekeishiya/skhd.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const skhdPackage = {
+export const githubcomkoekeishiyaskhdPackage = {
   /**
    * The display name of this package.
    */
@@ -39,15 +34,17 @@ export const skhdPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Simple hotkey daemon for macOS' as const,
+  description: ' Simple hotkey daemon for macOS' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/koekeishiya/skhd/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/koekeishiya/skhd' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install skhd' as const,
+  installCommand: 'launchpad install github.com/koekeishiya/skhd' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/koekeishiya/skhd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/koekeishiya/skhd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +61,7 @@ export const skhdPackage = {
   versions: [
     '0.3.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) skhd -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install skhd' as const,
 }
 
-export type SkhdPackage = typeof skhdPackage
+export type GithubcomkoekeishiyaskhdPackage = typeof githubcomkoekeishiyaskhdPackage

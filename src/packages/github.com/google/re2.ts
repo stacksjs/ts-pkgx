@@ -1,5 +1,5 @@
 /**
- * **github.com/google/re2** - RE2 is a fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python. It is a C++ library.
+ * **re2** - RE2 is a fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python. It is a C++ library.
  *
  * @domain `github.com/google/re2`
  * @version `2025.8.12` (10 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomgooglere2
- * console.log(pkg.name)        // "github.com/google/re2"
+ * console.log(pkg.name)        // "re2"
  * console.log(pkg.description) // "RE2 is a fast, safe, thread-friendly alternativ..."
  * console.log(pkg.versions[0]) // "2025.8.12" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomgooglere2Package = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/google/re2' as const,
+  name: 're2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,12 +36,14 @@ export const githubcomgooglere2Package = {
   description: 'RE2 is a fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python. It is a C++ library.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/google/re2/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/google/re2' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/google/re2' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/google/re2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/google/re2' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -68,8 +70,6 @@ export const githubcomgooglere2Package = {
     '2023.3.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/google/re2 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/google/re2' as const,
 }
 
 export type Githubcomgooglere2Package = typeof githubcomgooglere2Package

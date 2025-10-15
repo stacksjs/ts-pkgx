@@ -6,19 +6,14 @@
  * @version `1.4.8` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install bruce`
- * @name `bruce`
- * @companions `linux`
+ * @install `launchpad install github.com/brucedom/bruce`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.bruce
- * // Or access via domain
- * const samePkg = pantry.githubcombrucedombruce
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcombrucedombruce
  * console.log(pkg.name)        // "bruce"
  * console.log(pkg.description) // "Basic Runtime for Uniform Compute Environments"
  * console.log(pkg.programs)    // ["bruce"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/brucedom/bruce.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const brucePackage = {
+export const githubcombrucedombrucePackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const brucePackage = {
   description: 'Basic Runtime for Uniform Compute Environments' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/brucedom/bruce/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/brucedom/bruce' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install bruce' as const,
+  installCommand: 'launchpad install github.com/brucedom/bruce' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/brucedom/bruce -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/brucedom/bruce' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,14 +53,14 @@ export const brucePackage = {
   programs: [
     'bruce',
   ] as const,
+  companions: [] as const,
   /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
+   * Required dependencies for this package.
+   * These will be automatically installed.
    */
-  companions: [
-    'linux',
+  dependencies: [
+    'go.dev',
   ] as const,
-  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -72,13 +69,7 @@ export const brucePackage = {
     '1.4.8',
     '1.2.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bruce -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install bruce' as const,
 }
 
-export type BrucePackage = typeof brucePackage
+export type GithubcombrucedombrucePackage = typeof githubcombrucedombrucePackage

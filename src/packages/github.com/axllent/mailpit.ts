@@ -6,19 +6,15 @@
  * @version `1.27.10` (80 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mailpit`
- * @name `mailpit`
+ * @install `launchpad install github.com/axllent/mailpit`
+ * @homepage https://mailpit.axllent.org/
  * @dependencies `linux:curl.se/ca-certs` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mailpit
- * // Or access via domain
- * const samePkg = pantry.githubcomaxllentmailpit
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomaxllentmailpit
  * console.log(pkg.name)        // "mailpit"
  * console.log(pkg.description) // "An email and SMTP testing tool with API for dev..."
  * console.log(pkg.programs)    // ["mailpit"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/axllent/mailpit.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mailpitPackage = {
+export const githubcomaxllentmailpitPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const mailpitPackage = {
    */
   description: 'An email and SMTP testing tool with API for developers' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/axllent/mailpit/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://mailpit.axllent.org/' as const,
+  githubUrl: 'https://github.com/axllent/mailpit' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mailpit' as const,
+  installCommand: 'launchpad install github.com/axllent/mailpit' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/axllent/mailpit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/axllent/mailpit' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -151,13 +149,7 @@ export const mailpitPackage = {
     '1.9.10',
     '1.9.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mailpit -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mailpit' as const,
 }
 
-export type MailpitPackage = typeof mailpitPackage
+export type GithubcomaxllentmailpitPackage = typeof githubcomaxllentmailpitPackage

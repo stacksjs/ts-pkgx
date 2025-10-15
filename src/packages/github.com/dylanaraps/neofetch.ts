@@ -6,19 +6,14 @@
  * @version `7.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install neofetch`
- * @name `neofetch`
+ * @install `launchpad install github.com/dylanaraps/neofetch`
  * @dependencies `darwin:github.com/jhford/screenresolution` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.neofetch
- * // Or access via domain
- * const samePkg = pantry.githubcomdylanarapsneofetch
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomdylanarapsneofetch
  * console.log(pkg.name)        // "neofetch"
  * console.log(pkg.description) // "🖼️  A command-line system information tool wri..."
  * console.log(pkg.programs)    // ["neofetch"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/dylanaraps/neofetch.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const neofetchPackage = {
+export const githubcomdylanarapsneofetchPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const neofetchPackage = {
   description: '🖼️  A command-line system information tool written in bash 3.2+' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/dylanaraps/neofetch/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/dylanaraps/neofetch' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install neofetch' as const,
+  installCommand: 'launchpad install github.com/dylanaraps/neofetch' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/dylanaraps/neofetch -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/dylanaraps/neofetch' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +69,7 @@ export const neofetchPackage = {
   versions: [
     '7.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) neofetch -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install neofetch' as const,
 }
 
-export type NeofetchPackage = typeof neofetchPackage
+export type GithubcomdylanarapsneofetchPackage = typeof githubcomdylanarapsneofetchPackage

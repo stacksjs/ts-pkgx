@@ -1,24 +1,20 @@
 /**
- * **stress-ng** - This is the stress-ng upstream project git repository.  stress-ng will stress test a computer system in various selectable ways. It was designed to exercise various physical subsystems of a computer as well as the various operating system kernel interfaces.
+ * **stress-ng** - This is the stress-ng upstream project git repository.  stress-ng will stress test a computer system in various selectable ways. It was designed to exercise various physical subsystems of a computer as well as the various operating system kernel interfaces. 
  *
  * @domain `github.com/ColinIanKing/stress-ng`
  * @programs `stress-ng`
  * @version `0.19.5` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install stress-ng`
- * @name `stress-ng`
+ * @install `launchpad install github.com/ColinIanKing/stress-ng`
+ * @homepage https://wiki.ubuntu.com/Kernel/Reference/stress-ng
  * @dependencies `github.com/besser82/libxcrypt`, `zlib.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.stressng
- * // Or access via domain
- * const samePkg = pantry.githubcomcoliniankingstressng
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomcoliniankingstressng
  * console.log(pkg.name)        // "stress-ng"
  * console.log(pkg.description) // "This is the stress-ng upstream project git repo..."
  * console.log(pkg.programs)    // ["stress-ng"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/ColinIanKing/stress-ng.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const stressngPackage = {
+export const githubcomcoliniankingstressngPackage = {
   /**
    * The display name of this package.
    */
@@ -40,15 +36,17 @@ export const stressngPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'This is the stress-ng upstream project git repository.  stress-ng will stress test a computer system in various selectable ways. It was designed to exercise various physical subsystems of a computer as well as the various operating system kernel interfaces.' as const,
+  description: 'This is the stress-ng upstream project git repository.  stress-ng will stress test a computer system in various selectable ways. It was designed to exercise various physical subsystems of a computer as well as the various operating system kernel interfaces. ' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ColinIanKing/stress-ng/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://wiki.ubuntu.com/Kernel/Reference/stress-ng' as const,
+  githubUrl: 'https://github.com/ColinIanKing/stress-ng' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install stress-ng' as const,
+  installCommand: 'launchpad install github.com/ColinIanKing/stress-ng' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/ColinIanKing/stress-ng -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/ColinIanKing/stress-ng' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,13 +74,7 @@ export const stressngPackage = {
     '0.19.2',
     '0.19.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) stress-ng -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install stress-ng' as const,
 }
 
-export type StressngPackage = typeof stressngPackage
+export type GithubcomcoliniankingstressngPackage = typeof githubcomcoliniankingstressngPackage

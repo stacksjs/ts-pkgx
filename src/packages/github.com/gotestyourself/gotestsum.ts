@@ -6,18 +6,14 @@
  * @version `1.13.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gotestsum`
- * @name `gotestsum`
+ * @install `launchpad install github.com/gotestyourself/gotestsum`
+ * @dependencies `go.dev@^1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gotestsum
- * // Or access via domain
- * const samePkg = pantry.githubcomgotestyourselfgotestsum
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomgotestyourselfgotestsum
  * console.log(pkg.name)        // "gotestsum"
  * console.log(pkg.description) // "'go test' runner with output optimized for huma..."
  * console.log(pkg.programs)    // ["gotestsum"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/gotestyourself/gotestsum.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gotestsumPackage = {
+export const githubcomgotestyourselfgotestsumPackage = {
   /**
    * The display name of this package.
    */
@@ -47,7 +43,9 @@ export const gotestsumPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gotestsum' as const,
+  installCommand: 'launchpad install github.com/gotestyourself/gotestsum' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/gotestyourself/gotestsum -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/gotestyourself/gotestsum' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const gotestsumPackage = {
     'gotestsum',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,13 +73,7 @@ export const gotestsumPackage = {
     '1.12.0',
     '1.11.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gotestsum -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gotestsum' as const,
 }
 
-export type GotestsumPackage = typeof gotestsumPackage
+export type GithubcomgotestyourselfgotestsumPackage = typeof githubcomgotestyourselfgotestsumPackage

@@ -1,5 +1,5 @@
 /**
- * **github.com/libkml/libkml** - Reference implementation of OGC KML 2.2
+ * **libkml** - Reference implementation of OGC KML 2.2
  *
  * @domain `github.com/libkml/libkml`
  * @version `1.3.0` (1 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomlibkmllibkml
- * console.log(pkg.name)        // "github.com/libkml/libkml"
+ * console.log(pkg.name)        // "libkml"
  * console.log(pkg.description) // "Reference implementation of OGC KML 2.2"
  * console.log(pkg.versions[0]) // "1.3.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomlibkmllibkmlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/libkml/libkml' as const,
+  name: 'libkml' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,6 +42,8 @@ export const githubcomlibkmllibkmlPackage = {
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/libkml/libkml' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/libkml/libkml -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/libkml/libkml' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -63,8 +65,6 @@ export const githubcomlibkmllibkmlPackage = {
     '1.3.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/libkml/libkml -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/libkml/libkml' as const,
 }
 
 export type GithubcomlibkmllibkmlPackage = typeof githubcomlibkmllibkmlPackage

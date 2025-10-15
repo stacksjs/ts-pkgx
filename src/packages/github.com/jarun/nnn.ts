@@ -6,19 +6,14 @@
  * @version `5.1.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install nnn`
- * @name `nnn`
+ * @install `launchpad install github.com/jarun/nnn`
  * @dependencies `invisible-island.net/ncurses@6`, `gnu.org/readline@8`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.nnn
- * // Or access via domain
- * const samePkg = pantry.githubcomjarunnnn
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomjarunnnn
  * console.log(pkg.name)        // "nnn"
  * console.log(pkg.description) // "Tiny, lightning fast, feature-packed file manager"
  * console.log(pkg.programs)    // ["nnn"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jarun/nnn.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nnnPackage = {
+export const githubcomjarunnnnPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const nnnPackage = {
   description: 'Tiny, lightning fast, feature-packed file manager' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jarun/nnn/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/jarun/nnn' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install nnn' as const,
+  installCommand: 'launchpad install github.com/jarun/nnn' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/jarun/nnn -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/jarun/nnn' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +70,7 @@ export const nnnPackage = {
     '5.1.0',
     '5.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nnn -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install nnn' as const,
 }
 
-export type NnnPackage = typeof nnnPackage
+export type GithubcomjarunnnnPackage = typeof githubcomjarunnnnPackage

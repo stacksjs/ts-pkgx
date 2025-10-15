@@ -6,18 +6,14 @@
  * @version `2.36.19` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install saml2aws`
- * @name `saml2aws`
+ * @install `launchpad install github.com/Versent/saml2aws`
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.saml2aws
- * // Or access via domain
- * const samePkg = pantry.githubcomversentsaml2aws
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomversentsaml2aws
  * console.log(pkg.name)        // "saml2aws"
  * console.log(pkg.description) // "CLI tool which enables you to login and retriev..."
  * console.log(pkg.programs)    // ["saml2aws"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Versent/saml2aws.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const saml2awsPackage = {
+export const githubcomversentsaml2awsPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const saml2awsPackage = {
   description: 'CLI tool which enables you to login and retrieve AWS temporary credentials using a SAML IDP' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Versent/saml2aws/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/Versent/saml2aws' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install saml2aws' as const,
+  installCommand: 'launchpad install github.com/Versent/saml2aws' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/Versent/saml2aws -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/Versent/saml2aws' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const saml2awsPackage = {
     'saml2aws',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,13 +74,7 @@ export const saml2awsPackage = {
     '2.36.14',
     '2.36.13',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) saml2aws -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install saml2aws' as const,
 }
 
-export type Saml2awsPackage = typeof saml2awsPackage
+export type Githubcomversentsaml2awsPackage = typeof githubcomversentsaml2awsPackage

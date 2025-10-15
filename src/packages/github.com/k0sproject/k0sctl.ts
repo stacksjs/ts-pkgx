@@ -6,18 +6,14 @@
  * @version `0.26.0` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install k0sctl`
- * @name `k0sctl`
+ * @install `launchpad install github.com/k0sproject/k0sctl`
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.k0sctl
- * // Or access via domain
- * const samePkg = pantry.githubcomk0sprojectk0sctl
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomk0sprojectk0sctl
  * console.log(pkg.name)        // "k0sctl"
  * console.log(pkg.description) // "A bootstrapping and management tool for k0s clu..."
  * console.log(pkg.programs)    // ["k0sctl"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/k0sproject/k0sctl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const k0sctlPackage = {
+export const githubcomk0sprojectk0sctlPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const k0sctlPackage = {
   description: 'A bootstrapping and management tool for k0s clusters.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/k0sproject/k0sctl/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/k0sproject/k0sctl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install k0sctl' as const,
+  installCommand: 'launchpad install github.com/k0sproject/k0sctl' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/k0sproject/k0sctl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/k0sproject/k0sctl' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const k0sctlPackage = {
     'k0sctl',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -84,13 +88,7 @@ export const k0sctlPackage = {
     '0.17.5',
     '0.17.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) k0sctl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install k0sctl' as const,
 }
 
-export type K0sctlPackage = typeof k0sctlPackage
+export type Githubcomk0sprojectk0sctlPackage = typeof githubcomk0sprojectk0sctlPackage

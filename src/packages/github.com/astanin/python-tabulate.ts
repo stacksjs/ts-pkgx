@@ -6,19 +6,15 @@
  * @version `0.9.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install tabulate`
- * @name `tabulate`
+ * @install `launchpad install github.com/astanin/python-tabulate`
+ * @homepage https://pypi.org/project/tabulate/
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.tabulate
- * // Or access via domain
- * const samePkg = pantry.githubcomastaninpythontabulate
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomastaninpythontabulate
  * console.log(pkg.name)        // "tabulate"
  * console.log(pkg.description) // "Pretty-print tabular data in Python, a library ..."
  * console.log(pkg.programs)    // ["tabulate"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/astanin/python-tabulate.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tabulatePackage = {
+export const githubcomastaninpythontabulatePackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const tabulatePackage = {
    */
   description: 'Pretty-print tabular data in Python, a library and a command-line utility. Repository migrated from bitbucket.org/astanin/python-tabulate.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/astanin/python-tabulate/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://pypi.org/project/tabulate/' as const,
   githubUrl: 'https://github.com/astanin/python-tabulate' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tabulate' as const,
+  installCommand: 'launchpad install github.com/astanin/python-tabulate' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/astanin/python-tabulate -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/astanin/python-tabulate' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +69,7 @@ export const tabulatePackage = {
   versions: [
     '0.9.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tabulate -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tabulate' as const,
 }
 
-export type TabulatePackage = typeof tabulatePackage
+export type GithubcomastaninpythontabulatePackage = typeof githubcomastaninpythontabulatePackage

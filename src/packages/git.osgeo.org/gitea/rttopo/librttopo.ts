@@ -1,5 +1,5 @@
 /**
- * **git.osgeo.org/gitea/rttopo/librttopo** - pkgx package
+ * **librttopo** - pkgx package
  *
  * @domain `git.osgeo.org/gitea/rttopo/librttopo`
  * @version `1.1.0` (1 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gitosgeoorggitearttopolibrttopo
- * console.log(pkg.name)        // "git.osgeo.org/gitea/rttopo/librttopo"
+ * console.log(pkg.name)        // "librttopo"
  * console.log(pkg.versions[0]) // "1.1.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const gitosgeoorggitearttopolibrttopoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'git.osgeo.org/gitea/rttopo/librttopo' as const,
+  name: 'librttopo' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const gitosgeoorggitearttopolibrttopoPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/git.osgeo.org/gitea/rttopo/librttopo/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install git.osgeo.org/gitea/rttopo/librttopo' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +git.osgeo.org/gitea/rttopo/librttopo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install git.osgeo.org/gitea/rttopo/librttopo' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -58,8 +60,6 @@ export const gitosgeoorggitearttopolibrttopoPackage = {
     '1.1.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +git.osgeo.org/gitea/rttopo/librttopo -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install git.osgeo.org/gitea/rttopo/librttopo' as const,
 }
 
 export type GitosgeoorggitearttopolibrttopoPackage = typeof gitosgeoorggitearttopolibrttopoPackage

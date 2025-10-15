@@ -6,18 +6,15 @@
  * @version `0.3.79` (63 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pike`
- * @name `pike`
+ * @install `launchpad install github.com/jameswoolfenden/pike`
+ * @homepage https://pike.lysator.liu.se/
+ * @dependencies `go.dev@^1.22`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pike
- * // Or access via domain
- * const samePkg = pantry.githubcomjameswoolfendenpike
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomjameswoolfendenpike
  * console.log(pkg.name)        // "pike"
  * console.log(pkg.description) // "Pike is a tool for determining the permissions ..."
  * console.log(pkg.programs)    // ["pike"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jameswoolfenden/pike.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pikePackage = {
+export const githubcomjameswoolfendenpikePackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const pikePackage = {
    */
   description: 'Pike is a tool for determining the permissions or policy required for IAC code' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jameswoolfenden/pike/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://pike.lysator.liu.se/' as const,
   githubUrl: 'https://github.com/JamesWoolfenden/pike' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pike' as const,
+  installCommand: 'launchpad install github.com/jameswoolfenden/pike' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/jameswoolfenden/pike -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/jameswoolfenden/pike' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const pikePackage = {
     'pike',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.22',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -126,13 +131,7 @@ export const pikePackage = {
     '0.3.18',
     '0.3.17',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pike -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pike' as const,
 }
 
-export type PikePackage = typeof pikePackage
+export type GithubcomjameswoolfendenpikePackage = typeof githubcomjameswoolfendenpikePackage

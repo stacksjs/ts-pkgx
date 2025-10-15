@@ -6,18 +6,13 @@
  * @version `1.2.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install zap`
- * @name `zap`
+ * @install `launchpad install github.com/keith/zap`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.zap
- * // Or access via domain
- * const samePkg = pantry.githubcomkeithzap
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomkeithzap
  * console.log(pkg.name)        // "zap"
  * console.log(pkg.description) // "A CLI for cleaning up after .apps"
  * console.log(pkg.programs)    // ["zap"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/keith/zap.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zapPackage = {
+export const githubcomkeithzapPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const zapPackage = {
   description: 'A CLI for cleaning up after .apps' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/keith/zap/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/keith/zap' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install zap' as const,
+  installCommand: 'launchpad install github.com/keith/zap' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/keith/zap -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/keith/zap' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,13 +62,7 @@ export const zapPackage = {
     '1.2.0',
     '1.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zap -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install zap' as const,
 }
 
-export type ZapPackage = typeof zapPackage
+export type GithubcomkeithzapPackage = typeof githubcomkeithzapPackage

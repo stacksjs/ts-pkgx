@@ -1,5 +1,5 @@
 /**
- * **github.com/dateutil/dateutil** - Useful extensions to the standard Python datetime features
+ * **dateutil** - Useful extensions to the standard Python datetime features
  *
  * @domain `github.com/dateutil/dateutil`
  * @version `2.9.0` (2 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomdateutildateutil
- * console.log(pkg.name)        // "github.com/dateutil/dateutil"
+ * console.log(pkg.name)        // "dateutil"
  * console.log(pkg.description) // "Useful extensions to the standard Python dateti..."
  * console.log(pkg.versions[0]) // "2.9.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomdateutildateutilPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/dateutil/dateutil' as const,
+  name: 'dateutil' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,6 +42,8 @@ export const githubcomdateutildateutilPackage = {
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/dateutil/dateutil' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/dateutil/dateutil -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/dateutil/dateutil' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,8 +63,6 @@ export const githubcomdateutildateutilPackage = {
     '2.8.2',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/dateutil/dateutil -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/dateutil/dateutil' as const,
 }
 
 export type GithubcomdateutildateutilPackage = typeof githubcomdateutildateutilPackage

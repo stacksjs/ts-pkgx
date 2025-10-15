@@ -6,18 +6,13 @@
  * @version `1.2.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install create-dmg`
- * @name `create-dmg`
+ * @install `launchpad install github.com/create-dmg/create-dmg`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.createdmg
- * // Or access via domain
- * const samePkg = pantry.githubcomcreatedmgcreatedmg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomcreatedmgcreatedmg
  * console.log(pkg.name)        // "create-dmg"
  * console.log(pkg.description) // "A shell script to build fancy DMGs"
  * console.log(pkg.programs)    // ["create-dmg"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/create-dmg/create-dmg.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const createdmgPackage = {
+export const githubcomcreatedmgcreatedmgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const createdmgPackage = {
   description: 'A shell script to build fancy DMGs' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/create-dmg/create-dmg/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/create-dmg/create-dmg' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install create-dmg' as const,
+  installCommand: 'launchpad install github.com/create-dmg/create-dmg' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/create-dmg/create-dmg -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/create-dmg/create-dmg' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,13 +64,7 @@ export const createdmgPackage = {
     '1.2.0',
     '1.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) create-dmg -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install create-dmg' as const,
 }
 
-export type CreatedmgPackage = typeof createdmgPackage
+export type GithubcomcreatedmgcreatedmgPackage = typeof githubcomcreatedmgcreatedmgPackage

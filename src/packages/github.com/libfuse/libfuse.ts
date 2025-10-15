@@ -6,18 +6,14 @@
  * @version `3.17.4` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install fusermount3`
- * @name `fusermount3`
+ * @install `launchpad install github.com/libfuse/libfuse`
+ * @dependencies `mesonbuild.com`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.fusermount3
- * // Or access via domain
- * const samePkg = pantry.githubcomlibfuselibfuse
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomlibfuselibfuse
  * console.log(pkg.name)        // "fusermount3"
  * console.log(pkg.description) // "The reference implementation of the Linux FUSE ..."
  * console.log(pkg.programs)    // ["fusermount3"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/libfuse/libfuse.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fusermount3Package = {
+export const githubcomlibfuselibfusePackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const fusermount3Package = {
   description: 'The reference implementation of the Linux FUSE (Filesystem in Userspace) interface' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libfuse/libfuse/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/libfuse/libfuse' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install fusermount3' as const,
+  installCommand: 'launchpad install github.com/libfuse/libfuse' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/libfuse/libfuse -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/libfuse/libfuse' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,15 @@ export const fusermount3Package = {
     'fusermount3',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   */
+  dependencies: [
+    'mesonbuild.com',
+    'linux:gnu.org/gcc',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,13 +73,7 @@ export const fusermount3Package = {
     '3.17.2',
     '3.17.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fusermount3 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install fusermount3' as const,
 }
 
-export type Fusermount3Package = typeof fusermount3Package
+export type GithubcomlibfuselibfusePackage = typeof githubcomlibfuselibfusePackage

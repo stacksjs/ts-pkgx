@@ -6,19 +6,15 @@
  * @version `3.4.4` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install normalizer`
- * @name `normalizer`
+ * @install `launchpad install github.com/Ousret/charset_normalizer`
+ * @homepage https://charset-normalizer.readthedocs.io/en/latest/
  * @dependencies `python.org>=3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.normalizer
- * // Or access via domain
- * const samePkg = pantry.githubcomousretcharset_normalizer
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomousretcharset_normalizer
  * console.log(pkg.name)        // "normalizer"
  * console.log(pkg.description) // "Truly universal encoding detector in pure Python"
  * console.log(pkg.programs)    // ["normalizer"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Ousret/charset_normalizer.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const normalizerPackage = {
+export const githubcomousretcharset_normalizerPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const normalizerPackage = {
    */
   description: 'Truly universal encoding detector in pure Python' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Ousret/charset_normalizer/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://charset-normalizer.readthedocs.io/en/latest/' as const,
   githubUrl: 'https://github.com/Ousret/charset_normalizer' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install normalizer' as const,
+  installCommand: 'launchpad install github.com/Ousret/charset_normalizer' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/Ousret/charset_normalizer -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/Ousret/charset_normalizer' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,13 +74,7 @@ export const normalizerPackage = {
     '3.4.0',
     '3.3.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) normalizer -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install normalizer' as const,
 }
 
-export type NormalizerPackage = typeof normalizerPackage
+export type Githubcomousretcharset_normalizerPackage = typeof githubcomousretcharset_normalizerPackage

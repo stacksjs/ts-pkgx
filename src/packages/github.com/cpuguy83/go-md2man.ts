@@ -6,18 +6,14 @@
  * @version `2.0.7` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install go-md2man`
- * @name `go-md2man`
+ * @install `launchpad install github.com/cpuguy83/go-md2man`
+ * @dependencies `go.dev@^1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gomd2man
- * // Or access via domain
- * const samePkg = pantry.githubcomcpuguy83gomd2man
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomcpuguy83gomd2man
  * console.log(pkg.name)        // "go-md2man"
  * console.log(pkg.description) // "Converts markdown into roff (man pages)"
  * console.log(pkg.programs)    // ["go-md2man"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/cpuguy83/go-md2man.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gomd2manPackage = {
+export const githubcomcpuguy83gomd2manPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const gomd2manPackage = {
   description: 'Converts markdown into roff (man pages)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/cpuguy83/go-md2man/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/cpuguy83/go-md2man' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install go-md2man' as const,
+  installCommand: 'launchpad install github.com/cpuguy83/go-md2man' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/cpuguy83/go-md2man -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/cpuguy83/go-md2man' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const gomd2manPackage = {
     'go-md2man',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,13 +73,7 @@ export const gomd2manPackage = {
     '2.0.3',
     '2.0.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) go-md2man -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install go-md2man' as const,
 }
 
-export type Gomd2manPackage = typeof gomd2manPackage
+export type Githubcomcpuguy83gomd2manPackage = typeof githubcomcpuguy83gomd2manPackage

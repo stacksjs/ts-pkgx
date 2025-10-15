@@ -261,16 +261,48 @@ function parseSimpleYaml(yaml: string): PantryData {
     }
 
     if (inBuildDeps) {
-      // Match lines like "    curl.se: '*'"
-      const depMatch = line.match(/^\s{4,}([a-z0-9.-/]+):\s*['"]?([^'"#\n]+)['"]?/)
-      if (depMatch) {
-        const pkg = depMatch[1].trim()
-        const version = depMatch[2].trim()
-        buildDeps[pkg] = version
+      // Check for OS-specific dependency sections (e.g., "    linux:")
+      const osMatch = line.match(/^\s{4}(darwin|linux):\s*$/)
+      if (osMatch) {
+        const os = osMatch[1]
+        // Read the nested dependencies under this OS
+        i++
+        while (i < lines.length) {
+          const osLine = lines[i]
+          // Match dependencies like "      gnu.org/gcc: ^14"
+          const osDepMatch = osLine.match(/^\s{6,}([a-z0-9.-/]+):\s*['"]?([^'"#\n]+)['"]?/)
+          if (osDepMatch) {
+            const pkg = osDepMatch[1].trim()
+            const version = osDepMatch[2].trim()
+            buildDeps[`${os}:${pkg}`] = version
+            i++
+          }
+          else if (osLine.match(/^\s{0,5}\S/)) {
+            // Exit nested section when we hit a line with less indentation
+            i--
+            break
+          }
+          else {
+            i++
+          }
+        }
+        continue
       }
 
-      // Exit if we hit a line with less than 4 spaces
-      if (line.match(/^build|^[a-z]/) && !line.match(/^\s{4}/)) {
+      // Match regular (non-OS-specific) dependencies like "    curl.se: '*'"
+      // Must have EXACTLY 4 spaces (not more, to avoid matching nested script items)
+      const depMatch = line.match(/^    ([a-z0-9.-/]+):\s*['"]?([^'"#\n]+)['"]?/)
+      if (depMatch && !line.match(/^     /)) { // Ensure not more than 4 spaces
+        const pkg = depMatch[1].trim()
+        const version = depMatch[2].trim()
+        // Skip if this looks like a script key (if, run, working-directory, etc.)
+        if (!['if', 'run', 'working-directory', 'env', 'script'].includes(pkg)) {
+          buildDeps[pkg] = version
+        }
+      }
+
+      // Exit if we hit another section (script, env, etc.) or top-level key
+      if (line.match(/^\s{2}(script|env|working-directory):\s*$/) || line.match(/^[a-z]/)) {
         break
       }
     }

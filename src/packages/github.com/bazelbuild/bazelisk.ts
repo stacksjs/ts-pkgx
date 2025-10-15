@@ -6,19 +6,14 @@
  * @version `1.27.0` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install bazel`
- * @name `bazel`
+ * @install `launchpad install github.com/bazelbuild/bazelisk`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.bazel
- * // Or access via domain
- * const samePkg = pantry.githubcombazelbuildbazelisk
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcombazelbuildbazelisk
  * console.log(pkg.name)        // "bazel"
  * console.log(pkg.description) // "A user-friendly launcher for Bazel."
  * console.log(pkg.programs)    // ["bazel", "bazelisk"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/bazelbuild/bazelisk.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bazelPackage = {
+export const githubcombazelbuildbazeliskPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const bazelPackage = {
   description: 'A user-friendly launcher for Bazel.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/bazelbuild/bazelisk/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/bazelbuild/bazelisk' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install bazel' as const,
+  installCommand: 'launchpad install github.com/bazelbuild/bazelisk' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/bazelbuild/bazelisk -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/bazelbuild/bazelisk' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,13 +79,7 @@ export const bazelPackage = {
     '1.20.0',
     '1.19.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/bazelbuild/bazelisk -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install bazel' as const,
 }
 
-export type BazelPackage = typeof bazelPackage
+export type GithubcombazelbuildbazeliskPackage = typeof githubcombazelbuildbazeliskPackage

@@ -6,18 +6,13 @@
  * @version `6.9.10` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install onig-config`
- * @name `onig-config`
+ * @install `launchpad install github.com/kkos/oniguruma`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.onigconfig
- * // Or access via domain
- * const samePkg = pantry.githubcomkkosoniguruma
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomkkosoniguruma
  * console.log(pkg.name)        // "onig-config"
  * console.log(pkg.description) // "Regular expressions library"
  * console.log(pkg.programs)    // ["onig-config"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/kkos/oniguruma.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const onigconfigPackage = {
+export const githubcomkkosonigurumaPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const onigconfigPackage = {
   description: 'Regular expressions library' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kkos/oniguruma/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/kkos/oniguruma' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install onig-config' as const,
+  installCommand: 'launchpad install github.com/kkos/oniguruma' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/kkos/oniguruma -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/kkos/oniguruma' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,13 +63,7 @@ export const onigconfigPackage = {
     '6.9.9',
     '6.9.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) onig-config -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install onig-config' as const,
 }
 
-export type OnigconfigPackage = typeof onigconfigPackage
+export type GithubcomkkosonigurumaPackage = typeof githubcomkkosonigurumaPackage

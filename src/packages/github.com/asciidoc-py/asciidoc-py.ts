@@ -6,19 +6,15 @@
  * @version `10.2.1` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install asciidoc`
- * @name `asciidoc`
+ * @install `launchpad install github.com/asciidoc-py/asciidoc-py`
+ * @homepage https://asciidoc-py.github.io/
  * @dependencies `docbook.org`, `python.org~3.11`, `gnu.org/source-highlight`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.asciidoc
- * // Or access via domain
- * const samePkg = pantry.githubcomasciidocpyasciidocpy
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomasciidocpyasciidocpy
  * console.log(pkg.name)        // "asciidoc"
  * console.log(pkg.description) // "Formatter/translator for text files to numerous..."
  * console.log(pkg.programs)    // ["asciidoc"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/asciidoc-py/asciidoc-py.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const asciidocPackage = {
+export const githubcomasciidocpyasciidocpyPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const asciidocPackage = {
    */
   description: 'Formatter/translator for text files to numerous formats' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/asciidoc-py/asciidoc-py/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://asciidoc-py.github.io/' as const,
+  githubUrl: 'https://github.com/asciidoc-py/asciidoc-py' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install asciidoc' as const,
+  installCommand: 'launchpad install github.com/asciidoc-py/asciidoc-py' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/asciidoc-py/asciidoc-py -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/asciidoc-py/asciidoc-py' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,13 +72,7 @@ export const asciidocPackage = {
     '10.2.1',
     '10.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) asciidoc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install asciidoc' as const,
 }
 
-export type AsciidocPackage = typeof asciidocPackage
+export type GithubcomasciidocpyasciidocpyPackage = typeof githubcomasciidocpyasciidocpyPackage

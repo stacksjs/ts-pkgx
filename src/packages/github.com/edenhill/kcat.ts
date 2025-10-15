@@ -6,19 +6,14 @@
  * @version `1.7.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install kcat`
- * @name `kcat`
+ * @install `launchpad install github.com/edenhill/kcat`
  * @dependencies `apache.org/avro`, `github.com/confluentinc/librdkafka`, `github.com/confluentinc/libserdes`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.kcat
- * // Or access via domain
- * const samePkg = pantry.githubcomedenhillkcat
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomedenhillkcat
  * console.log(pkg.name)        // "kcat"
  * console.log(pkg.description) // "Generic command line non-JVM Apache Kafka produ..."
  * console.log(pkg.programs)    // ["kcat"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/edenhill/kcat.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kcatPackage = {
+export const githubcomedenhillkcatPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const kcatPackage = {
   description: 'Generic command line non-JVM Apache Kafka producer and consumer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/edenhill/kcat/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/edenhill/kcat' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install kcat' as const,
+  installCommand: 'launchpad install github.com/edenhill/kcat' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/edenhill/kcat -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/edenhill/kcat' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,13 +71,7 @@ export const kcatPackage = {
   versions: [
     '1.7.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kcat -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install kcat' as const,
 }
 
-export type KcatPackage = typeof kcatPackage
+export type GithubcomedenhillkcatPackage = typeof githubcomedenhillkcatPackage

@@ -1,18 +1,20 @@
 /**
- * **github.com/KhronosGroup/Vulkan-Headers** - Vulkan header files and API registry
+ * **Vulkan-Headers** - Vulkan header files and API registry
  *
  * @domain `github.com/KhronosGroup/Vulkan-Headers`
  * @version `1.4.329` (77 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/KhronosGroup/Vulkan-Headers`
+ * @homepage https://www.vulkan.org/
+ * @dependencies `cmake.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomkhronosgroupvulkanheaders
- * console.log(pkg.name)        // "github.com/KhronosGroup/Vulkan-Headers"
+ * console.log(pkg.name)        // "Vulkan-Headers"
  * console.log(pkg.description) // "Vulkan header files and API registry"
  * console.log(pkg.versions[0]) // "1.4.329" (latest)
  * ```
@@ -24,7 +26,7 @@ export const githubcomkhronosgroupvulkanheadersPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/KhronosGroup/Vulkan-Headers' as const,
+  name: 'Vulkan-Headers' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,16 +36,24 @@ export const githubcomkhronosgroupvulkanheadersPackage = {
    */
   description: 'Vulkan header files and API registry' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/KhronosGroup/Vulkan-Headers/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.vulkan.org/' as const,
+  githubUrl: 'https://github.com/KhronosGroup/Vulkan-Headers' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/KhronosGroup/Vulkan-Headers' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/KhronosGroup/Vulkan-Headers -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/KhronosGroup/Vulkan-Headers' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -128,8 +138,6 @@ export const githubcomkhronosgroupvulkanheadersPackage = {
     '1.3.252',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/KhronosGroup/Vulkan-Headers -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/KhronosGroup/Vulkan-Headers' as const,
 }
 
 export type GithubcomkhronosgroupvulkanheadersPackage = typeof githubcomkhronosgroupvulkanheadersPackage

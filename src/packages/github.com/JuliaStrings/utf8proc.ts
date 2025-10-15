@@ -1,18 +1,19 @@
 /**
- * **github.com/JuliaStrings/utf8proc** - a clean C library for processing UTF-8 Unicode data
+ * **utf8proc** - a clean C library for processing UTF-8 Unicode data
  *
  * @domain `github.com/JuliaStrings/utf8proc`
  * @version `2.11.0` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/JuliaStrings/utf8proc`
+ * @homepage http://juliastrings.github.io/utf8proc/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomjuliastringsutf8proc
- * console.log(pkg.name)        // "github.com/JuliaStrings/utf8proc"
+ * console.log(pkg.name)        // "utf8proc"
  * console.log(pkg.description) // "a clean C library for processing UTF-8 Unicode ..."
  * console.log(pkg.versions[0]) // "2.11.0" (latest)
  * ```
@@ -24,7 +25,7 @@ export const githubcomjuliastringsutf8procPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/JuliaStrings/utf8proc' as const,
+  name: 'utf8proc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,13 +35,15 @@ export const githubcomjuliastringsutf8procPackage = {
    */
   description: 'a clean C library for processing UTF-8 Unicode data' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/JuliaStrings/utf8proc/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://juliastrings.github.io/utf8proc/' as const,
+  githubUrl: 'https://github.com/JuliaStrings/utf8proc' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/JuliaStrings/utf8proc' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/JuliaStrings/utf8proc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/JuliaStrings/utf8proc' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -55,8 +58,6 @@ export const githubcomjuliastringsutf8procPackage = {
     '2.8.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/JuliaStrings/utf8proc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/JuliaStrings/utf8proc' as const,
 }
 
 export type Githubcomjuliastringsutf8procPackage = typeof githubcomjuliastringsutf8procPackage

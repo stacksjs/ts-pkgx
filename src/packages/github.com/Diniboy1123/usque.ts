@@ -1,23 +1,19 @@
 /**
- * **usque** - Open-source reimplementation of the Cloudflare WARP client's MASQUE protocol.
+ * **usque** - Open-source reimplementation of the Cloudflare WARP client's MASQUE protocol. 
  *
  * @domain `github.com/Diniboy1123/usque`
  * @programs `usque`
  * @version `1.4.2` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install usque`
- * @name `usque`
+ * @install `launchpad install github.com/Diniboy1123/usque`
+ * @dependencies `go.dev@~1.24.2`, `goreleaser.com`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.usque
- * // Or access via domain
- * const samePkg = pantry.githubcomdiniboy1123usque
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomdiniboy1123usque
  * console.log(pkg.name)        // "usque"
  * console.log(pkg.description) // "Open-source reimplementation of the Cloudflare ..."
  * console.log(pkg.programs)    // ["usque"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Diniboy1123/usque.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const usquePackage = {
+export const githubcomdiniboy1123usquePackage = {
   /**
    * The display name of this package.
    */
@@ -39,7 +35,7 @@ export const usquePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Open-source reimplementation of the Cloudflare WARP client\'s MASQUE protocol.' as const,
+  description: 'Open-source reimplementation of the Cloudflare WARP client\'s MASQUE protocol. ' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Diniboy1123/usque/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/Diniboy1123/usque' as const,
@@ -47,7 +43,9 @@ export const usquePackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install usque' as const,
+  installCommand: 'launchpad install github.com/Diniboy1123/usque' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/Diniboy1123/usque -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/Diniboy1123/usque' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,14 @@ export const usquePackage = {
     'usque',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.24.2',
+    'goreleaser.com',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -72,13 +77,7 @@ export const usquePackage = {
     '1.1.0',
     '1.0.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) usque -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install usque' as const,
 }
 
-export type UsquePackage = typeof usquePackage
+export type Githubcomdiniboy1123usquePackage = typeof githubcomdiniboy1123usquePackage

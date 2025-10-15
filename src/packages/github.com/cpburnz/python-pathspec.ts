@@ -1,5 +1,5 @@
 /**
- * **github.com/cpburnz/python-pathspec** - Utility library for gitignore style pattern matching of file paths.
+ * **python-pathspec** - Utility library for gitignore style pattern matching of file paths.
  *
  * @domain `github.com/cpburnz/python-pathspec`
  * @version `0.12.1` (1 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomcpburnzpythonpathspec
- * console.log(pkg.name)        // "github.com/cpburnz/python-pathspec"
+ * console.log(pkg.name)        // "python-pathspec"
  * console.log(pkg.description) // "Utility library for gitignore style pattern mat..."
  * console.log(pkg.versions[0]) // "0.12.1" (latest)
  * ```
@@ -25,7 +25,7 @@ export const githubcomcpburnzpythonpathspecPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/cpburnz/python-pathspec' as const,
+  name: 'python-pathspec' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,6 +42,8 @@ export const githubcomcpburnzpythonpathspecPackage = {
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/cpburnz/python-pathspec' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/cpburnz/python-pathspec -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/cpburnz/python-pathspec' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -59,8 +61,6 @@ export const githubcomcpburnzpythonpathspecPackage = {
     '0.12.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/cpburnz/python-pathspec -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/cpburnz/python-pathspec' as const,
 }
 
 export type GithubcomcpburnzpythonpathspecPackage = typeof githubcomcpburnzpythonpathspecPackage

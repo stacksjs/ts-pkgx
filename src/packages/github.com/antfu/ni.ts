@@ -1,5 +1,5 @@
 /**
- * **github.com/antfu/ni** - 💡 Use the right package manager
+ * **ni** - 💡 Use the right package manager
  *
  * @domain `github.com/antfu/ni`
  * @programs `na`, `nci`, `ni`, `nlx`, `nr`, ... (+2 more)
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomantfuni
- * console.log(pkg.name)        // "github.com/antfu/ni"
+ * console.log(pkg.name)        // "ni"
  * console.log(pkg.description) // "💡 Use the right package manager"
  * console.log(pkg.programs)    // ["na", "nci", ...]
  * console.log(pkg.versions[0]) // "26.1.0" (latest)
@@ -27,7 +27,7 @@ export const githubcomantfuniPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/antfu/ni' as const,
+  name: 'ni' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -38,12 +38,14 @@ export const githubcomantfuniPackage = {
   description: '💡 Use the right package manager' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/antfu/ni/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/antfu/ni' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/antfu/ni' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/antfu/ni -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/antfu/ni' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -100,8 +102,6 @@ export const githubcomantfuniPackage = {
     '0.21.4',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/antfu/ni -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/antfu/ni' as const,
 }
 
 export type GithubcomantfuniPackage = typeof githubcomantfuniPackage

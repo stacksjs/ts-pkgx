@@ -1,25 +1,21 @@
 /**
- * **alpaca.cpp** - Locally run an Instruction-Tuned Chat-Style LLM
+ * **alpaca.cpp** - Locally run an Instruction-Tuned Chat-Style LLM 
  *
  * @domain `github.com/antimatter15/alpaca.cpp`
  * @programs `alpaca.cpp`
  * @version `2023.3.21` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install alpaca.cpp`
- * @name `alpaca.cpp`
+ * @install `launchpad install github.com/antimatter15/alpaca.cpp`
+ * @dependencies `gnu.org/wget`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.alpacacpp
- * // Or access via domain
- * const samePkg = pantry.githubcomantimatter15alpacacpp
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomantimatter15alpacacpp
  * console.log(pkg.name)        // "alpaca.cpp"
- * console.log(pkg.description) // "Locally run an Instruction-Tuned Chat-Style LLM"
+ * console.log(pkg.description) // "Locally run an Instruction-Tuned Chat-Style LLM "
  * console.log(pkg.programs)    // ["alpaca.cpp"]
  * console.log(pkg.versions[0]) // "2023.3.21" (latest)
  * ```
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/antimatter15/alpaca-cpp.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const alpacacppPackage = {
+export const githubcomantimatter15alpacacppPackage = {
   /**
    * The display name of this package.
    */
@@ -39,15 +35,17 @@ export const alpacacppPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Locally run an Instruction-Tuned Chat-Style LLM' as const,
+  description: 'Locally run an Instruction-Tuned Chat-Style LLM ' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/antimatter15/alpaca.cpp/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/antimatter15/alpaca.cpp' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install alpaca.cpp' as const,
+  installCommand: 'launchpad install github.com/antimatter15/alpaca.cpp' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/antimatter15/alpaca.cpp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/antimatter15/alpaca.cpp' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const alpacacppPackage = {
     'alpaca.cpp',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/wget',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +68,7 @@ export const alpacacppPackage = {
   versions: [
     '2023.3.21',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) alpaca.cpp -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install alpaca.cpp' as const,
 }
 
-export type AlpacacppPackage = typeof alpacacppPackage
+export type Githubcomantimatter15alpacacppPackage = typeof githubcomantimatter15alpacacppPackage
