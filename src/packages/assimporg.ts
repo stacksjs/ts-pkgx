@@ -1,5 +1,5 @@
 /**
- * **assimp** - The official Open-Asset-Importer-Library Repository. Loads 40+ 3D-file-formats into one unified and clean data structure. 
+ * **assimp** - The official Open-Asset-Importer-Library Repository. Loads 40+ 3D-file-formats into one unified and clean data structure.
  *
  * @domain `assimp.org`
  * @programs `assimp`

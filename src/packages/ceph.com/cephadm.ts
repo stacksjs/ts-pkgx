@@ -1,5 +1,5 @@
 /**
- * **cephadm** - Ceph is a distributed object, block, and file storage platform 
+ * **cephadm** - Ceph is a distributed object, block, and file storage platform
  *
  * @domain `ceph.com/cephadm`
  * @programs `cephadm`

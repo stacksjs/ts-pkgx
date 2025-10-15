@@ -1,5 +1,5 @@
 /**
- * **expected** - C++11/14/17 std::expected with functional-style extensions 
+ * **expected** - C++11/14/17 std::expected with functional-style extensions
  *
  * @domain `github.com/TartanLlama/expected`
  * @version `1.3.1` (4 versions available)

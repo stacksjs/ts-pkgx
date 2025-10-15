@@ -1,5 +1,5 @@
 /**
- * **goose** - A database migration tool. Supports SQL migrations and Go functions. 
+ * **goose** - A database migration tool. Supports SQL migrations and Go functions.
  *
  * @domain `pressly.github.io/goose`
  * @programs `goose`

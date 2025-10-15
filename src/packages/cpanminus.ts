@@ -1,5 +1,5 @@
 /**
- * **cpanm** - cpanminus - get, unpack, build and install modules from CPAN 
+ * **cpanm** - cpanminus - get, unpack, build and install modules from CPAN
  *
  * @domain `cpanmin.us`
  * @programs `cpanm`

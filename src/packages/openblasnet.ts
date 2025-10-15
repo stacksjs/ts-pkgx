@@ -1,5 +1,5 @@
 /**
- * **openblas** - OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version. 
+ * **openblas** - OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version.
  *
  * @domain `openblas.net`
  * @version `0.3.30` (8 versions available)

@@ -1,5 +1,5 @@
 /**
- * **dozzle** - Realtime log viewer for docker containers. 
+ * **dozzle** - Realtime log viewer for docker containers.
  *
  * @domain `dozzle.dev`
  * @programs `dozzle`

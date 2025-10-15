@@ -1,5 +1,5 @@
 /**
- * **m4** - GNU M4. Mirror of git://git.savannah.gnu.org/m4.git 
+ * **m4** - GNU M4. Mirror of git://git.savannah.gnu.org/m4.git
  *
  * @domain `gnu.org/m4`
  * @programs `m4`

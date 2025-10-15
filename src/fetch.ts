@@ -11,35 +11,9 @@ import { scrapePkgxPackage } from './pkgx-scraper'
 
 // Legacy browser references - keeping for backwards compatibility but not used
 type Browser = any
-let sharedBrowser: Browser | null = null
+const _sharedBrowser: Browser | null = null
 const browserPool: { browser: Browser, inUse: boolean, createdAt: number }[] = []
 const MAX_BROWSER_POOL_SIZE = 10
-
-/**
- * GitHub repository mapping for packages that don't have complete repository paths
- */
-
-/**
- * Converts package name from filename format to URL format for nested packages
- * Handles special cases like GitHub repositories with multiple path segments
- */
-function convertPackageNameToUrl(packageName: string): string {
-  // If the package name already contains a slash, it's already in URL format
-  if (packageName.includes('/')) {
-    return packageName
-  }
-
-  // Handle regular nested packages: "domain-name" -> "domain/name"
-  // But only for hyphenated names that look like they need conversion
-  return packageName.replace(/^([^-]+)-(.+)$/, (match, domain, name) => {
-    // Check if this looks like a nested package (domain contains a dot)
-    if (domain.includes('.')) {
-      return `${domain}/${name}`
-    }
-    // Otherwise, keep the original name
-    return packageName
-  })
-}
 
 /**
  * Helper function to get domain as TypeScript variable name
@@ -739,16 +713,7 @@ function _getSystemResourceStatus() {
   }
 }
 
-// Define a variable to track if we've already logged a navigation message
-let navigationLogged = false
-
-// Create a function to log navigation only once
-function logNavigation(url: string) {
-  if (!navigationLogged) {
-    console.log(`Navigating to ${url}...`)
-    navigationLogged = true
-  }
-}
+// Navigation logging disabled - kept for backwards compatibility
 
 /**
  * Ensures all browser resources are properly closed

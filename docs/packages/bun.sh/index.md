@@ -72,12 +72,6 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +bun.sh@1.3.0 -- $SHELL -i
 ```
 
-## Dependencies
-
-This package depends on:
-
-- `curl.se`
-
 ## Usage Examples
 
 ```typescript

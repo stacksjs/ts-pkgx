@@ -1,5 +1,5 @@
 /**
- * **wthrr** - 🌞 🦀 🌙 Weather companion for the terminal. Rust app. 
+ * **wthrr** - 🌞 🦀 🌙 Weather companion for the terminal. Rust app.
  *
  * @domain `crates.io/wthrr`
  * @programs `wthrr`

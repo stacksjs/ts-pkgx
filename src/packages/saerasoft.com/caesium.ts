@@ -1,5 +1,5 @@
 /**
- * **caesiumclt** - Caesium Command Line Tools - Lossy/lossless image compression tool 
+ * **caesiumclt** - Caesium Command Line Tools - Lossy/lossless image compression tool
  *
  * @domain `saerasoft.com/caesium`
  * @programs `caesiumclt`

@@ -1,5 +1,5 @@
 /**
- * **gpt4all** - Locally run an Assistant-Tuned Chat-Style LLM 
+ * **gpt4all** - Locally run an Assistant-Tuned Chat-Style LLM
  *
  * @domain `github.com/nomic-ai/gpt4all`
  * @programs `gpt4all`

@@ -81,7 +81,7 @@ async function fetchPkgxJson(packageName: string, timeout: number): Promise<any 
 
     return await response.json()
   }
-  catch (error) {
+  catch {
     // Network error or timeout, return null to use other data sources
     return null
   }
@@ -141,6 +141,7 @@ async function fetchPantryData(packageName: string, timeout: number): Promise<Pa
   try {
     const fs = await import('node:fs')
     const path = await import('node:path')
+    const process = await import('node:process')
 
     const localPath = path.join(process.cwd(), 'src/pantry', packageName, 'package.yml')
 
@@ -149,7 +150,7 @@ async function fetchPantryData(packageName: string, timeout: number): Promise<Pa
       return parseSimpleYaml(yaml)
     }
   }
-  catch (error) {
+  catch {
     // Local pantry not available, will try GitHub
   }
 
@@ -224,7 +225,7 @@ function parseSimpleYaml(yaml: string): PantryData {
 
     if (inDeps) {
       // Match lines like "  lame.sourceforge.io: '>=3.98.3'"
-      const depMatch = line.match(/^\s{2}([a-z0-9.-/]+):\s*['"]?([^'"#\n]+)['"]?/)
+      const depMatch = line.match(/^\s{2}([a-z0-9./]+):\s*['"]?([^'"#\n]+)['"]?/)
       if (depMatch) {
         const pkg = depMatch[1].trim()
         const version = depMatch[2].trim()
@@ -270,7 +271,7 @@ function parseSimpleYaml(yaml: string): PantryData {
         while (i < lines.length) {
           const osLine = lines[i]
           // Match dependencies like "      gnu.org/gcc: ^14"
-          const osDepMatch = osLine.match(/^\s{6,}([a-z0-9.-/]+):\s*['"]?([^'"#\n]+)['"]?/)
+          const osDepMatch = osLine.match(/^\s{6,}([a-z0-9./]+):\s*['"]?([^'"#\n]+)['"]?/)
           if (osDepMatch) {
             const pkg = osDepMatch[1].trim()
             const version = osDepMatch[2].trim()
@@ -291,8 +292,8 @@ function parseSimpleYaml(yaml: string): PantryData {
 
       // Match regular (non-OS-specific) dependencies like "    curl.se: '*'"
       // Must have EXACTLY 4 spaces (not more, to avoid matching nested script items)
-      const depMatch = line.match(/^    ([a-z0-9.-/]+):\s*['"]?([^'"#\n]+)['"]?/)
-      if (depMatch && !line.match(/^     /)) { // Ensure not more than 4 spaces
+      const depMatch = line.match(/^ {4}([a-z0-9./]+):\s*['"]?([^'"#\n]+)['"]?/)
+      if (depMatch && !line.match(/^ {5}/)) { // Ensure not more than 4 spaces
         const pkg = depMatch[1].trim()
         const version = depMatch[2].trim()
         // Skip if this looks like a script key (if, run, working-directory, etc.)
@@ -402,10 +403,8 @@ export async function scrapePkgxPackages(
  * List all packages by scraping the index
  */
 export async function scrapePkgxIndex(
-  options: PkgxScraperOptions = {},
+  _options: PkgxScraperOptions = {},
 ): Promise<string[]> {
-  const { timeout = 15000 } = options
-
   // Use the discovered index endpoint
   const indexUrl = 'https://pkgx.dev/pkgs/index.json'
 

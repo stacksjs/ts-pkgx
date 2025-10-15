@@ -1,5 +1,5 @@
 /**
- * **git-cliff** - A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️ 
+ * **git-cliff** - A highly customizable Changelog Generator that follows Conventional Commit specifications ⛰️
  *
  * @domain `git-cliff.org`
  * @programs `git-cliff`

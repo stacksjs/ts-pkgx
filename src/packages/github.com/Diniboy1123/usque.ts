@@ -1,5 +1,5 @@
 /**
- * **usque** - Open-source reimplementation of the Cloudflare WARP client's MASQUE protocol. 
+ * **usque** - Open-source reimplementation of the Cloudflare WARP client's MASQUE protocol.
  *
  * @domain `github.com/Diniboy1123/usque`
  * @programs `usque`

@@ -1,5 +1,5 @@
 /**
- * **get-blessed** - Terminal tool to get you the best crates for your rust projects, curated by blessed.rs 
+ * **get-blessed** - Terminal tool to get you the best crates for your rust projects, curated by blessed.rs
  *
  * @domain `crates.io/get-blessed`
  * @programs `get-blessed`

@@ -1,5 +1,5 @@
 /**
- * **digger** - Digger is an open source IaC orchestration tool. Digger allows you to run IaC in your existing CI pipeline ⚡️  
+ * **digger** - Digger is an open source IaC orchestration tool. Digger allows you to run IaC in your existing CI pipeline ⚡️
  *
  * @domain `digger.dev`
  * @programs `digger`

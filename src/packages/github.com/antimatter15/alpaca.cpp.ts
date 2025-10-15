@@ -1,5 +1,5 @@
 /**
- * **alpaca.cpp** - Locally run an Instruction-Tuned Chat-Style LLM 
+ * **alpaca.cpp** - Locally run an Instruction-Tuned Chat-Style LLM
  *
  * @domain `github.com/antimatter15/alpaca.cpp`
  * @programs `alpaca.cpp`

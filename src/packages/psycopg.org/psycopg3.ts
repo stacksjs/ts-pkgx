@@ -1,5 +1,5 @@
 /**
- * **psycopg3** - New generation PostgreSQL database adapter for the Python programming language 
+ * **psycopg3** - New generation PostgreSQL database adapter for the Python programming language
  *
  * @domain `psycopg.org/psycopg3`
  * @version `3.2.10` (9 versions available)
