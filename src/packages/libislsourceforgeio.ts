@@ -1,5 +1,5 @@
 /**
- * **libisl.sourceforge.io** - pkgx package
+ * **libisl.sourceforge** - pkgx package
  *
  * @domain `libisl.sourceforge.io`
  * @version `0.27.0` (2 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.libislsourceforgeio
- * console.log(pkg.name)        // "libisl.sourceforge.io"
+ * console.log(pkg.name)        // "libisl.sourceforge"
  * console.log(pkg.versions[0]) // "0.27.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const libislsourceforgeioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libisl.sourceforge.io' as const,
+  name: 'libisl.sourceforge' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const libislsourceforgeioPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libisl.sourceforge.io/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install libisl.sourceforge.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libisl.sourceforge.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libisl.sourceforge.io' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -59,8 +61,6 @@ export const libislsourceforgeioPackage = {
     '0.26.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libisl.sourceforge.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libisl.sourceforge.io' as const,
 }
 
 export type LibislsourceforgeioPackage = typeof libislsourceforgeioPackage

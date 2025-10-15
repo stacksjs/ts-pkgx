@@ -1,5 +1,5 @@
 /**
- * **systemd.io** - The systemd System and Service Manager
+ * **systemd** - The systemd System and Service Manager 
  *
  * @domain `systemd.io`
  * @programs `busctl`, `coredumpctl`, `hostnamectl`, `journalctl`, `kernel-install`, ... (+50 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install systemd.io`
+ * @homepage https://systemd.io
  * @dependencies `libexpat.github.io`, `google.com/fullycapable`, `lz4.org`, ... (+10 more)
  *
  * @example
@@ -14,8 +15,8 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.systemdio
- * console.log(pkg.name)        // "systemd.io"
- * console.log(pkg.description) // "The systemd System and Service Manager"
+ * console.log(pkg.name)        // "systemd"
+ * console.log(pkg.description) // "The systemd System and Service Manager "
  * console.log(pkg.programs)    // ["busctl", "coredumpctl", ...]
  * console.log(pkg.versions[0]) // "257.10.0" (latest)
  * ```
@@ -27,7 +28,7 @@ export const systemdioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'systemd.io' as const,
+  name: 'systemd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,15 +36,17 @@ export const systemdioPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'The systemd System and Service Manager' as const,
+  description: 'The systemd System and Service Manager ' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/systemd.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://systemd.io' as const,
+  githubUrl: 'https://github.com/systemd/systemd' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install systemd.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +systemd.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install systemd.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -163,8 +166,6 @@ export const systemdioPackage = {
     '254.0.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +systemd.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install systemd.io' as const,
 }
 
 export type SystemdioPackage = typeof systemdioPackage

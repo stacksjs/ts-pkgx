@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Versent/saml2aws.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomversentsaml2awsPackage = {
+export const saml2awsPackage = {
   /**
    * The display name of this package.
    */
@@ -77,4 +77,4 @@ export const githubcomversentsaml2awsPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomversentsaml2awsPackage = typeof githubcomversentsaml2awsPackage
+export type Saml2awsPackage = typeof saml2awsPackage

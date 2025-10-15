@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/helmfile/vals.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomhelmfilevalsPackage = {
+export const valsPackage = {
   /**
    * The display name of this package.
    */
@@ -107,4 +107,4 @@ export const githubcomhelmfilevalsPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomhelmfilevalsPackage = typeof githubcomhelmfilevalsPackage
+export type ValsPackage = typeof valsPackage

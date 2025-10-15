@@ -6,19 +6,15 @@
  * @version `2023.11.14` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sshx`
- * @name `sshx`
+ * @install `launchpad install sshx.io`
+ * @homepage https://sshx.io
  * @dependencies `protobuf.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sshx
- * // Or access via domain
- * const samePkg = pantry.sshxio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sshxio
  * console.log(pkg.name)        // "sshx"
  * console.log(pkg.description) // "Fast, collaborative live terminal sharing over ..."
  * console.log(pkg.programs)    // ["sshx"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sshx-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sshxPackage = {
+export const sshxioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const sshxPackage = {
    */
   description: 'Fast, collaborative live terminal sharing over the web' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sshx.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://sshx.io' as const,
+  githubUrl: 'https://github.com/ekzhang/sshx' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sshx' as const,
+  installCommand: 'launchpad install sshx.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sshx.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sshx.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +69,7 @@ export const sshxPackage = {
   versions: [
     '2023.11.14',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sshx -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sshx' as const,
 }
 
-export type SshxPackage = typeof sshxPackage
+export type SshxioPackage = typeof sshxioPackage

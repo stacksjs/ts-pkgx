@@ -1,5 +1,5 @@
 /**
- * **postgresql.org** - Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
+ * **postgresql** - Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
  *
  * @domain `postgresql.org`
  * @programs `clusterdb`, `createdb`, `dropdb`, `dropuser`, `ecpg`, ... (+23 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install postgresql.org`
+ * @homepage https://www.postgresql.org/
  * @dependencies `openssl.org^1.0.1`, `gnu.org/readline`, `zlib.net`, ... (+4 more)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.postgresqlorg
- * console.log(pkg.name)        // "postgresql.org"
+ * console.log(pkg.name)        // "postgresql"
  * console.log(pkg.description) // "Mirror of the official PostgreSQL GIT repositor..."
  * console.log(pkg.programs)    // ["clusterdb", "createdb", ...]
  * console.log(pkg.versions[0]) // "18.0.0" (latest)
@@ -27,7 +28,7 @@ export const postgresqlorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'postgresql.org' as const,
+  name: 'postgresql' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const postgresqlorgPackage = {
    */
   description: 'Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don\'t work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/postgresql.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.postgresql.org/' as const,
+  githubUrl: 'https://github.com/postgres/postgres' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install postgresql.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +postgresql.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install postgresql.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -112,8 +115,6 @@ export const postgresqlorgPackage = {
     '11.19.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +postgresql.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install postgresql.org' as const,
 }
 
 export type PostgresqlorgPackage = typeof postgresqlorgPackage

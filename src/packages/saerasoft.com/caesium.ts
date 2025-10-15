@@ -1,23 +1,19 @@
 /**
- * **caesiumclt** - Caesium Command Line Tools - Lossy/lossless image compression tool
+ * **caesiumclt** - Caesium Command Line Tools - Lossy/lossless image compression tool 
  *
  * @domain `saerasoft.com/caesium`
  * @programs `caesiumclt`
  * @version `1.0.1` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install caesiumclt`
- * @name `caesiumclt`
+ * @install `launchpad install saerasoft.com/caesium`
+ * @homepage http://saerasoft.com/caesium
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.caesiumclt
- * // Or access via domain
- * const samePkg = pantry.saerasoftcomcaesium
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.saerasoftcomcaesium
  * console.log(pkg.name)        // "caesiumclt"
  * console.log(pkg.description) // "Caesium Command Line Tools - Lossy/lossless ima..."
  * console.log(pkg.programs)    // ["caesiumclt"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/saerasoft-com/caesium.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const caesiumcltPackage = {
+export const saerasoftcomcaesiumPackage = {
   /**
    * The display name of this package.
    */
@@ -39,15 +35,17 @@ export const caesiumcltPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Caesium Command Line Tools - Lossy/lossless image compression tool' as const,
+  description: 'Caesium Command Line Tools - Lossy/lossless image compression tool ' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/saerasoft.com/caesium/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://saerasoft.com/caesium' as const,
+  githubUrl: 'https://github.com/Lymphatus/caesium-clt' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install caesiumclt' as const,
+  installCommand: 'launchpad install saerasoft.com/caesium' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +saerasoft.com/caesium -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install saerasoft.com/caesium' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,13 +68,7 @@ export const caesiumcltPackage = {
     '0.19.2',
     '0.19.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) caesiumclt -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install caesiumclt' as const,
 }
 
-export type CaesiumcltPackage = typeof caesiumcltPackage
+export type SaerasoftcomcaesiumPackage = typeof saerasoftcomcaesiumPackage

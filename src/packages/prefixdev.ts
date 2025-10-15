@@ -6,19 +6,15 @@
  * @version `0.56.0` (95 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pixi`
- * @name `pixi`
+ * @install `launchpad install prefix.dev`
+ * @homepage https://pixi.sh
  * @dependencies `openssl.org^1.1`, `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pixi
- * // Or access via domain
- * const samePkg = pantry.prefixdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.prefixdev
  * console.log(pkg.name)        // "pixi"
  * console.log(pkg.description) // "Package management made easy"
  * console.log(pkg.programs)    // ["pixi"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/prefix-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pixiPackage = {
+export const prefixdevPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const pixiPackage = {
    */
   description: 'Package management made easy' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/prefix.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://pixi.sh' as const,
+  githubUrl: 'https://github.com/prefix-dev/pixi' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pixi' as const,
+  installCommand: 'launchpad install prefix.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +prefix.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install prefix.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -166,13 +164,7 @@ export const pixiPackage = {
     '0.2.0',
     '0.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pixi -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pixi' as const,
 }
 
-export type PixiPackage = typeof pixiPackage
+export type PrefixdevPackage = typeof prefixdevPackage

@@ -6,19 +6,14 @@
  * @version `0.5.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install age-plugin-yubikey`
- * @name `age-plugin-yubikey`
+ * @install `launchpad install github.com/str4d/age-plugin-yubikey`
  * @dependencies `linux:pcsclite.apdu.fr^2` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.agepluginyubikey
- * // Or access via domain
- * const samePkg = pantry.githubcomstr4dagepluginyubikey
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomstr4dagepluginyubikey
  * console.log(pkg.name)        // "age-plugin-yubikey"
  * console.log(pkg.description) // "Plugin for encrypting files with age and PIV to..."
  * console.log(pkg.programs)    // ["age-plugin-yubikey"]
@@ -43,12 +38,14 @@ export const agepluginyubikeyPackage = {
   description: 'Plugin for encrypting files with age and PIV tokens such as YubiKeys' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/str4d/age-plugin-yubikey/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/str4d/age-plugin-yubikey' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install age-plugin-yubikey' as const,
+  installCommand: 'launchpad install github.com/str4d/age-plugin-yubikey' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/str4d/age-plugin-yubikey -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/str4d/age-plugin-yubikey' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +70,7 @@ export const agepluginyubikeyPackage = {
     '0.5.0',
     '0.4.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) age-plugin-yubikey -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install age-plugin-yubikey' as const,
 }
 
 export type AgepluginyubikeyPackage = typeof agepluginyubikeyPackage

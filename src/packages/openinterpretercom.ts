@@ -1,25 +1,20 @@
 /**
- * **interpreter** - A natural language interface for computers
+ * **open-interpreter** - A natural language interface for computers
  *
  * @domain `openinterpreter.com`
  * @programs `interpreter`
  * @version `0.4.0` (22 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install interpreter`
- * @name `open-interpreter`
- * @aliases `interpreter`
+ * @install `launchpad install openinterpreter.com`
+ * @homepage http://openinterpreter.com/
  * @dependencies `python.org>=3.10<3.12`, `github.com/mattrobenolt/jinja2-cli`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.interpreter
- * // Or access via domain
- * const samePkg = pantry.openinterpretercom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.openinterpretercom
  * console.log(pkg.name)        // "open-interpreter"
  * console.log(pkg.description) // "A natural language interface for computers"
  * console.log(pkg.programs)    // ["interpreter"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/openinterpreter-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const interpreterPackage = {
+export const openinterpretercomPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const interpreterPackage = {
    */
   description: 'A natural language interface for computers' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openinterpreter.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://openinterpreter.com/' as const,
+  githubUrl: 'https://github.com/KillianLucas/open-interpreter' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install interpreter' as const,
+  installCommand: 'launchpad install openinterpreter.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openinterpreter.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openinterpreter.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -94,15 +91,7 @@ export const interpreterPackage = {
     '0.1.0',
     '0.0.297',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'interpreter',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) interpreter -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install interpreter' as const,
+  aliases: [] as const,
 }
 
-export type InterpreterPackage = typeof interpreterPackage
+export type OpeninterpretercomPackage = typeof openinterpretercomPackage

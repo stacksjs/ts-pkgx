@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/VikParuchuri/surya.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomvikparuchurisuryaPackage = {
+export const suryaPackage = {
   /**
    * The display name of this package.
    */
@@ -154,4 +154,4 @@ export const githubcomvikparuchurisuryaPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomvikparuchurisuryaPackage = typeof githubcomvikparuchurisuryaPackage
+export type SuryaPackage = typeof suryaPackage

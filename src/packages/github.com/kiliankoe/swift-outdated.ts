@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/kiliankoe/swift-outdated.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkiliankoeswiftoutdatedPackage = {
+export const swiftoutdatedPackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomkiliankoeswiftoutdatedPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkiliankoeswiftoutdatedPackage = typeof githubcomkiliankoeswiftoutdatedPackage
+export type SwiftoutdatedPackage = typeof swiftoutdatedPackage

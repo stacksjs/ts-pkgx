@@ -1,5 +1,5 @@
 /**
- * **wavpack.com** - WavPack encode/decode library, command-line programs, and several plugins
+ * **wavpack** - WavPack encode/decode library, command-line programs, and several plugins
  *
  * @domain `wavpack.com`
  * @programs `wavpack`, `wvunpack`, `wvtag`, `wvgain`
@@ -7,13 +7,15 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install wavpack.com`
+ * @homepage https://www.wavpack.com/
+ * @dependencies `gnu.org/patch`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.wavpackcom
- * console.log(pkg.name)        // "wavpack.com"
+ * console.log(pkg.name)        // "wavpack"
  * console.log(pkg.description) // "WavPack encode/decode library, command-line pro..."
  * console.log(pkg.programs)    // ["wavpack", "wvunpack", ...]
  * console.log(pkg.versions[0]) // "5.8.1" (latest)
@@ -26,7 +28,7 @@ export const wavpackcomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'wavpack.com' as const,
+  name: 'wavpack' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,13 +38,15 @@ export const wavpackcomPackage = {
    */
   description: 'WavPack encode/decode library, command-line programs, and several plugins' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wavpack.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.wavpack.com/' as const,
+  githubUrl: 'https://github.com/dbry/WavPack' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install wavpack.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wavpack.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wavpack.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -54,7 +58,13 @@ export const wavpackcomPackage = {
     'wvgain',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/patch',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -65,8 +75,6 @@ export const wavpackcomPackage = {
     '5.7.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wavpack.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install wavpack.com' as const,
 }
 
 export type WavpackcomPackage = typeof wavpackcomPackage

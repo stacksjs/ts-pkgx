@@ -6,18 +6,15 @@
  * @version `2.26.0` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ginkgo`
- * @name `ginkgo`
+ * @install `launchpad install onsi.github.io/ginkgo`
+ * @homepage http://onsi.github.io/ginkgo/
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ginkgo
- * // Or access via domain
- * const samePkg = pantry.onsigithubioginkgo
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.onsigithubioginkgo
  * console.log(pkg.name)        // "ginkgo"
  * console.log(pkg.description) // "A Modern Testing Framework for Go"
  * console.log(pkg.programs)    // ["ginkgo"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/onsi-github-io/ginkgo.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ginkgoPackage = {
+export const onsigithubioginkgoPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const ginkgoPackage = {
    */
   description: 'A Modern Testing Framework for Go' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/onsi.github.io/ginkgo/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://onsi.github.io/ginkgo/' as const,
+  githubUrl: 'https://github.com/onsi/ginkgo' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ginkgo' as const,
+  installCommand: 'launchpad install onsi.github.io/ginkgo' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +onsi.github.io/ginkgo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install onsi.github.io/ginkgo' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const ginkgoPackage = {
     'ginkgo',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -84,13 +89,7 @@ export const ginkgoPackage = {
     '2.19.0',
     '2.18.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ginkgo -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ginkgo' as const,
 }
 
-export type GinkgoPackage = typeof ginkgoPackage
+export type OnsigithubioginkgoPackage = typeof onsigithubioginkgoPackage

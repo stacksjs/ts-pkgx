@@ -8,6 +8,7 @@
  *
  * @install `launchpad install npmjs.com`
  * @aliases `npm`
+ * @homepage https://docs.npmjs.com/cli/
  * @dependencies `nodejs.org`
  *
  * @example
@@ -19,7 +20,7 @@
  * // Or access via domain
  * const samePkg = pantry.npmjscom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "npmjs.com"
+ * console.log(pkg.name)        // "npmjs"
  * console.log(pkg.description) // "the package manager for JavaScript"
  * console.log(pkg.programs)    // ["npm", "npx"]
  * console.log(pkg.versions[0]) // "11.6.2" (latest)
@@ -32,7 +33,7 @@ export const npmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'npmjs.com' as const,
+  name: 'npmjs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,13 +43,15 @@ export const npmPackage = {
    */
   description: 'the package manager for JavaScript' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/npmjs.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docs.npmjs.com/cli/' as const,
+  githubUrl: 'https://github.com/npm/cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install npmjs.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +npmjs.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install npmjs.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -146,8 +149,6 @@ export const npmPackage = {
   aliases: [
     'npm',
   ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +npmjs.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install npmjs.com' as const,
 }
 
 export type NpmPackage = typeof npmPackage

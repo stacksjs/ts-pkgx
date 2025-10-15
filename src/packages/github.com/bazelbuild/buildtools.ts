@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/bazelbuild/buildtools.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcombazelbuildbuildtoolsPackage = {
+export const buildtoolsPackage = {
   /**
    * The display name of this package.
    */
@@ -81,4 +81,4 @@ export const githubcombazelbuildbuildtoolsPackage = {
   aliases: [] as const,
 }
 
-export type GithubcombazelbuildbuildtoolsPackage = typeof githubcombazelbuildbuildtoolsPackage
+export type BuildtoolsPackage = typeof buildtoolsPackage

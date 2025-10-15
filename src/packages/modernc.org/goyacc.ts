@@ -1,23 +1,20 @@
 /**
- * **goyacc** - Parser Generator for Go
+ * **modernc.org/goyacc** - Parser Generator for Go
  *
  * @domain `modernc.org/goyacc`
  * @programs `goyacc`
  * @version `1.0.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install goyacc`
- * @aliases `goyacc`
+ * @install `launchpad install modernc.org/goyacc`
+ * @homepage https://pkg.go.dev/modernc.org/goyacc
+ * @dependencies `go.dev@~1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.goyacc
- * // Or access via domain
- * const samePkg = pantry.moderncorggoyacc
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.moderncorggoyacc
  * console.log(pkg.name)        // "modernc.org/goyacc"
  * console.log(pkg.description) // "Parser Generator for Go"
  * console.log(pkg.programs)    // ["goyacc"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/modernc-org/goyacc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const goyaccPackage = {
+export const moderncorggoyaccPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const goyaccPackage = {
    */
   description: 'Parser Generator for Go' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/modernc.org/goyacc/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://pkg.go.dev/modernc.org/goyacc' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install goyacc' as const,
+  installCommand: 'launchpad install modernc.org/goyacc' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +modernc.org/goyacc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install modernc.org/goyacc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const goyaccPackage = {
     'goyacc',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,15 +69,7 @@ export const goyaccPackage = {
   versions: [
     '1.0.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'goyacc',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) goyacc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install goyacc' as const,
+  aliases: [] as const,
 }
 
-export type GoyaccPackage = typeof goyaccPackage
+export type ModerncorggoyaccPackage = typeof moderncorggoyaccPackage

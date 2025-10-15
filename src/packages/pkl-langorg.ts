@@ -1,5 +1,5 @@
 /**
- * **pkl-lang.org** - A configuration as code language with rich validation and tooling.
+ * **pkl-lang** - A configuration as code language with rich validation and tooling.
  *
  * @domain `pkl-lang.org`
  * @programs `jpkl`, `pkl`
@@ -7,14 +7,15 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pkl-lang.org`
- * @companions `openjdk.org`
+ * @homepage https://pkl-lang.org
+ * @dependencies `openjdk.org@^21`, `linux:zlib.net@1`, `linux:llvm.org` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.pkllangorg
- * console.log(pkg.name)        // "pkl-lang.org"
+ * console.log(pkg.name)        // "pkl-lang"
  * console.log(pkg.description) // "A configuration as code language with rich vali..."
  * console.log(pkg.programs)    // ["jpkl", "pkl"]
  * console.log(pkg.versions[0]) // "0.29.1" (latest)
@@ -27,7 +28,7 @@ export const pkllangorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pkl-lang.org' as const,
+  name: 'pkl-lang' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const pkllangorgPackage = {
    */
   description: 'A configuration as code language with rich validation and tooling.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pkl-lang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://pkl-lang.org' as const,
+  githubUrl: 'https://github.com/apple/pkl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install pkl-lang.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pkl-lang.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pkl-lang.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -52,14 +55,17 @@ export const pkllangorgPackage = {
     'jpkl',
     'pkl',
   ] as const,
+  companions: [] as const,
   /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
-  companions: [
-    'openjdk.org',
+  dependencies: [
+    'openjdk.org@^21',
+    'linux:zlib.net@1',
+    'linux:llvm.org',
   ] as const,
-  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -81,8 +87,6 @@ export const pkllangorgPackage = {
     '0.25.2',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pkl-lang.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pkl-lang.org' as const,
 }
 
 export type PkllangorgPackage = typeof pkllangorgPackage

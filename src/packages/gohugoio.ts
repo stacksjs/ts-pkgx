@@ -6,18 +6,15 @@
  * @version `0.151.0` (132 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install hugo`
- * @name `hugo`
+ * @install `launchpad install gohugo.io`
+ * @homepage https://gohugo.io/
+ * @dependencies `go.dev@~1.22.6`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.hugo
- * // Or access via domain
- * const samePkg = pantry.gohugoio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gohugoio
  * console.log(pkg.name)        // "hugo"
  * console.log(pkg.description) // "The world’s fastest framework for building webs..."
  * console.log(pkg.programs)    // ["hugo"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gohugo-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const hugoPackage = {
+export const gohugoioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const hugoPackage = {
    */
   description: 'The world’s fastest framework for building websites.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gohugo.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://gohugo.io/' as const,
+  githubUrl: 'https://github.com/gohugoio/hugo' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install hugo' as const,
+  installCommand: 'launchpad install gohugo.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gohugo.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gohugo.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const hugoPackage = {
     'hugo',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.22.6',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -195,13 +200,7 @@ export const hugoPackage = {
     '0.105.0',
     '0.104.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hugo -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install hugo' as const,
 }
 
-export type HugoPackage = typeof hugoPackage
+export type GohugoioPackage = typeof gohugoioPackage

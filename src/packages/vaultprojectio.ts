@@ -6,18 +6,15 @@
  * @version `1.20.3` (60 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install vault`
- * @name `vault`
+ * @install `launchpad install vaultproject.io`
+ * @homepage https://www.vaultproject.io/
+ * @dependencies `go.dev@=1.24.6`, `nodejs.org@^18`, `python.org@~3.10`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.vault
- * // Or access via domain
- * const samePkg = pantry.vaultprojectio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.vaultprojectio
  * console.log(pkg.name)        // "vault"
  * console.log(pkg.description) // "A tool for secrets management, encryption as a ..."
  * console.log(pkg.programs)    // ["vault"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/vaultproject-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const vaultPackage = {
+export const vaultprojectioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const vaultPackage = {
    */
   description: 'A tool for secrets management, encryption as a service, and privileged access management' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/vaultproject.io/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://www.vaultproject.io/' as const,
   githubUrl: 'https://github.com/hashicorp/vault' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install vault' as const,
+  installCommand: 'launchpad install vaultproject.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +vaultproject.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vaultproject.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,17 @@ export const vaultPackage = {
     'vault',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@=1.24.6',
+    'nodejs.org@^18',
+    'python.org@~3.10',
+    'npmjs.com',
+    'classic.yarnpkg.com',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -123,13 +132,7 @@ export const vaultPackage = {
     '1.12.9',
     '1.12.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vault -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install vault' as const,
 }
 
-export type VaultPackage = typeof vaultPackage
+export type VaultprojectioPackage = typeof vaultprojectioPackage

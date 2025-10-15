@@ -6,19 +6,14 @@
  * @version `3.2.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install periphery`
- * @name `periphery`
+ * @install `launchpad install github.com/peripheryapp/periphery`
  * @dependencies `curl.se`, `gnome.org/libxml2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.periphery
- * // Or access via domain
- * const samePkg = pantry.githubcomperipheryappperiphery
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomperipheryappperiphery
  * console.log(pkg.name)        // "periphery"
  * console.log(pkg.description) // "A tool to identify unused code in Swift projects."
  * console.log(pkg.programs)    // ["periphery"]
@@ -43,12 +38,14 @@ export const peripheryPackage = {
   description: 'A tool to identify unused code in Swift projects.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/peripheryapp/periphery/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/peripheryapp/periphery' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install periphery' as const,
+  installCommand: 'launchpad install github.com/peripheryapp/periphery' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/peripheryapp/periphery -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/peripheryapp/periphery' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,13 +75,7 @@ export const peripheryPackage = {
     '3.0.0',
     '2.21.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) periphery -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install periphery' as const,
 }
 
 export type PeripheryPackage = typeof peripheryPackage

@@ -1,18 +1,20 @@
 /**
- * **libcxx.llvm.org** - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
+ * **libcxx.llvm** - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
  *
  * @domain `libcxx.llvm.org`
  * @version `21.1.3` (46 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install libcxx.llvm.org`
+ * @homepage http://llvm.org
+ * @dependencies `cmake.org@>=3<3.29`, `python.org@>=3<3.12`, `llvm.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.libcxxllvmorg
- * console.log(pkg.name)        // "libcxx.llvm.org"
+ * console.log(pkg.name)        // "libcxx.llvm"
  * console.log(pkg.description) // "The LLVM Project is a collection of modular and..."
  * console.log(pkg.versions[0]) // "21.1.3" (latest)
  * ```
@@ -24,7 +26,7 @@ export const libcxxllvmorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libcxx.llvm.org' as const,
+  name: 'libcxx.llvm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,16 +36,26 @@ export const libcxxllvmorgPackage = {
    */
   description: 'The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libcxx.llvm.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://llvm.org' as const,
+  githubUrl: 'https://github.com/llvm/llvm-project' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install libcxx.llvm.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libcxx.llvm.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libcxx.llvm.org' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org@>=3<3.29',
+    'python.org@>=3<3.12',
+    'llvm.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -97,8 +109,6 @@ export const libcxxllvmorgPackage = {
     '12.0.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libcxx.llvm.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libcxx.llvm.org' as const,
 }
 
 export type LibcxxllvmorgPackage = typeof libcxxllvmorgPackage

@@ -1,11 +1,12 @@
 /**
- * **pypa.io/setuptools** - Official project repository for the Setuptools build system
+ * **setuptools** - Official project repository for the Setuptools build system
  *
  * @domain `pypa.io/setuptools`
  * @version `80.9.0` (64 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pypa.io/setuptools`
+ * @homepage https://pypi.org/project/setuptools/
  * @dependencies `python.org~3.12`
  *
  * @example
@@ -13,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.pypaiosetuptools
- * console.log(pkg.name)        // "pypa.io/setuptools"
+ * console.log(pkg.name)        // "setuptools"
  * console.log(pkg.description) // "Official project repository for the Setuptools ..."
  * console.log(pkg.versions[0]) // "80.9.0" (latest)
  * ```
@@ -25,7 +26,7 @@ export const pypaiosetuptoolsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pypa.io/setuptools' as const,
+  name: 'setuptools' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,13 +36,15 @@ export const pypaiosetuptoolsPackage = {
    */
   description: 'Official project repository for the Setuptools build system' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pypa.io/setuptools/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://pypi.org/project/setuptools/' as const,
+  githubUrl: 'https://github.com/pypa/setuptools' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install pypa.io/setuptools' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pypa.io/setuptools -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pypa.io/setuptools' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -122,8 +125,6 @@ export const pypaiosetuptoolsPackage = {
     '69.1.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pypa.io/setuptools -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pypa.io/setuptools' as const,
 }
 
 export type PypaiosetuptoolsPackage = typeof pypaiosetuptoolsPackage

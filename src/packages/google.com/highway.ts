@@ -1,18 +1,19 @@
 /**
- * **google.com/highway** - Performance-portable, length-agnostic SIMD with runtime dispatch
+ * **highway** - Performance-portable, length-agnostic SIMD with runtime dispatch
  *
  * @domain `google.com/highway`
  * @version `1.3.0` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install google.com/highway`
+ * @dependencies `cmake.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.googlecomhighway
- * console.log(pkg.name)        // "google.com/highway"
+ * console.log(pkg.name)        // "highway"
  * console.log(pkg.description) // "Performance-portable, length-agnostic SIMD with..."
  * console.log(pkg.versions[0]) // "1.3.0" (latest)
  * ```
@@ -24,7 +25,7 @@ export const googlecomhighwayPackage = {
   /**
    * The display name of this package.
    */
-  name: 'google.com/highway' as const,
+  name: 'highway' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,15 +36,23 @@ export const googlecomhighwayPackage = {
   description: 'Performance-portable, length-agnostic SIMD with runtime dispatch' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/google.com/highway/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/google/highway' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install google.com/highway' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +google.com/highway -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install google.com/highway' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -58,8 +67,6 @@ export const googlecomhighwayPackage = {
     '1.0.4',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +google.com/highway -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install google.com/highway' as const,
 }
 
 export type GooglecomhighwayPackage = typeof googlecomhighwayPackage

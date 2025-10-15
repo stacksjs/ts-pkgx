@@ -6,19 +6,14 @@
  * @version `0.8.1` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rav1e`
- * @name `rav1e`
+ * @install `launchpad install github.com/xiph/rav1e`
  * @dependencies `nasm.us^2.14.02`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rav1e
- * // Or access via domain
- * const samePkg = pantry.githubcomxiphrav1e
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomxiphrav1e
  * console.log(pkg.name)        // "rav1e"
  * console.log(pkg.description) // "Fastest and safest AV1 video encoder"
  * console.log(pkg.programs)    // ["rav1e"]
@@ -43,12 +38,14 @@ export const rav1ePackage = {
   description: 'Fastest and safest AV1 video encoder' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/xiph/rav1e/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/xiph/rav1e' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rav1e' as const,
+  installCommand: 'launchpad install github.com/xiph/rav1e' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/xiph/rav1e -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/xiph/rav1e' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,13 +75,7 @@ export const rav1ePackage = {
     '0.6.4',
     '0.6.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rav1e -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rav1e' as const,
 }
 
 export type Rav1ePackage = typeof rav1ePackage

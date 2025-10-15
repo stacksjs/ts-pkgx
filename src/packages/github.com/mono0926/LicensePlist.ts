@@ -6,18 +6,15 @@
  * @version `3.27.1` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install license-plist`
- * @name `license-plist`
+ * @install `launchpad install github.com/mono0926/LicensePlist`
+ * @homepage https://www.slideshare.net/mono0926/licenseplist-a-license-list-generator-of-all-your-dependencies-for-ios-applications
+ * @dependencies `swift.org@6`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.licenseplist
- * // Or access via domain
- * const samePkg = pantry.githubcommono0926licenseplist
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcommono0926licenseplist
  * console.log(pkg.name)        // "license-plist"
  * console.log(pkg.description) // "A license list generator of all your dependenci..."
  * console.log(pkg.programs)    // ["license-plist"]
@@ -41,13 +38,15 @@ export const licenseplistPackage = {
    */
   description: 'A license list generator of all your dependencies for iOS applications' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mono0926/LicensePlist/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.slideshare.net/mono0926/licenseplist-a-license-list-generator-of-all-your-dependencies-for-ios-applications' as const,
+  githubUrl: 'https://github.com/mono0926/LicensePList' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install license-plist' as const,
+  installCommand: 'launchpad install github.com/mono0926/LicensePlist' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/mono0926/LicensePlist -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/mono0926/LicensePlist' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const licenseplistPackage = {
     'license-plist',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'swift.org@6',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,13 +72,7 @@ export const licenseplistPackage = {
     '3.26.0',
     '3.25.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) license-plist -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install license-plist' as const,
 }
 
 export type LicenseplistPackage = typeof licenseplistPackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/aristocratos/btop.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomaristocratosbtopPackage = {
+export const btopPackage = {
   /**
    * The display name of this package.
    */
@@ -80,4 +80,4 @@ export const githubcomaristocratosbtopPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomaristocratosbtopPackage = typeof githubcomaristocratosbtopPackage
+export type BtopPackage = typeof btopPackage

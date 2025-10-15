@@ -1,5 +1,5 @@
 /**
- * **gnupg.org/npth** - pkgx package
+ * **npth** - pkgx package
  *
  * @domain `gnupg.org/npth`
  * @version `1.8.0` (3 versions available)
@@ -12,7 +12,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnupgorgnpth
- * console.log(pkg.name)        // "gnupg.org/npth"
+ * console.log(pkg.name)        // "npth"
  * console.log(pkg.versions[0]) // "1.8.0" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const gnupgorgnpthPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnupg.org/npth' as const,
+  name: 'npth' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,12 +34,14 @@ export const gnupgorgnpthPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/npth/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnupg.org/npth' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnupg.org/npth -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnupg.org/npth' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -53,8 +55,6 @@ export const gnupgorgnpthPackage = {
     '1.6.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnupg.org/npth -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnupg.org/npth' as const,
 }
 
 export type GnupgorgnpthPackage = typeof gnupgorgnpthPackage

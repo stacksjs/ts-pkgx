@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/canonical/charmcraft.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcanonicalcharmcraftPackage = {
+export const charmcraftPackage = {
   /**
    * The display name of this package.
    */
@@ -84,4 +84,4 @@ export const githubcomcanonicalcharmcraftPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcanonicalcharmcraftPackage = typeof githubcomcanonicalcharmcraftPackage
+export type CharmcraftPackage = typeof charmcraftPackage

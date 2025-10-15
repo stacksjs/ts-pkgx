@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/glauth/glauth.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomglauthglauthPackage = {
+export const glauthPackage = {
   /**
    * The display name of this package.
    */
@@ -75,4 +75,4 @@ export const githubcomglauthglauthPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomglauthglauthPackage = typeof githubcomglauthglauthPackage
+export type GlauthPackage = typeof glauthPackage

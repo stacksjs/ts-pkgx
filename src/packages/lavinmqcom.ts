@@ -6,19 +6,15 @@
  * @version `2.4.4` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install lavinmq`
- * @name `lavinmq`
+ * @install `launchpad install lavinmq.com`
+ * @homepage https://lavinmq.com
  * @dependencies `openssl.org^1.1`, `pcre.org/v2@10`, `libevent.org@2`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.lavinmq
- * // Or access via domain
- * const samePkg = pantry.lavinmqcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.lavinmqcom
  * console.log(pkg.name)        // "lavinmq"
  * console.log(pkg.description) // "Lightweight and fast AMQP (0-9-1) server"
  * console.log(pkg.programs)    // ["lavinmq", "lavinmqctl", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/lavinmq-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const lavinmqPackage = {
+export const lavinmqcomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const lavinmqPackage = {
    */
   description: 'Lightweight and fast AMQP (0-9-1) server' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lavinmq.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://lavinmq.com' as const,
+  githubUrl: 'https://github.com/cloudamqp/lavinmq' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install lavinmq' as const,
+  installCommand: 'launchpad install lavinmq.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lavinmq.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lavinmq.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -87,13 +85,7 @@ export const lavinmqPackage = {
     '2.0.0',
     '1.3.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lavinmq.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install lavinmq' as const,
 }
 
-export type LavinmqPackage = typeof lavinmqPackage
+export type LavinmqcomPackage = typeof lavinmqcomPackage

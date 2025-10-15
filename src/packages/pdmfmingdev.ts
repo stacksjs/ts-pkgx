@@ -6,19 +6,15 @@
  * @version `2.26.0` (75 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pdm`
- * @name `pdm`
+ * @install `launchpad install pdm.fming.dev`
+ * @homepage https://pdm.fming.dev
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pdm
- * // Or access via domain
- * const samePkg = pantry.pdmfmingdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pdmfmingdev
  * console.log(pkg.name)        // "pdm"
  * console.log(pkg.description) // "A modern Python package and dependency manager ..."
  * console.log(pkg.programs)    // ["pdm"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pdm-fming-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pdmPackage = {
+export const pdmfmingdevPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const pdmPackage = {
    */
   description: 'A modern Python package and dependency manager supporting the latest PEP standards' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pdm.fming.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://pdm.fming.dev' as const,
+  githubUrl: 'https://github.com/pdm-project/pdm' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pdm' as const,
+  installCommand: 'launchpad install pdm.fming.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pdm.fming.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pdm.fming.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -145,13 +143,7 @@ export const pdmPackage = {
     '2.5.6',
     '2.5.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pdm -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pdm' as const,
 }
 
-export type PdmPackage = typeof pdmPackage
+export type PdmfmingdevPackage = typeof pdmfmingdevPackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/hadolint/hadolint.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomhadolinthadolintPackage = {
+export const hadolintPackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomhadolinthadolintPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomhadolinthadolintPackage = typeof githubcomhadolinthadolintPackage
+export type HadolintPackage = typeof hadolintPackage

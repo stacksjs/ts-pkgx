@@ -20,7 +20,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/adah1972/libunibreak.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomadah1972libunibreakPackage = {
+export const libunibreakPackage = {
   /**
    * The display name of this package.
    */
@@ -58,4 +58,4 @@ export const githubcomadah1972libunibreakPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomadah1972libunibreakPackage = typeof githubcomadah1972libunibreakPackage
+export type LibunibreakPackage = typeof libunibreakPackage

@@ -6,18 +6,15 @@
  * @version `0.30.2` (90 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pocketbase`
- * @name `pocketbase`
+ * @install `launchpad install pocketbase.io`
+ * @homepage https://pocketbase.io/
+ * @dependencies `go.dev@>=1.16`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pocketbase
- * // Or access via domain
- * const samePkg = pantry.pocketbaseio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pocketbaseio
  * console.log(pkg.name)        // "pocketbase"
  * console.log(pkg.description) // "Open source backend for your next project in 1 ..."
  * console.log(pkg.programs)    // ["pocketbase"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pocketbase-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pocketbasePackage = {
+export const pocketbaseioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const pocketbasePackage = {
    */
   description: 'Open source backend for your next project in 1 file' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pocketbase.io/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://pocketbase.io/' as const,
   githubUrl: 'https://github.com/pocketbase/pocketbase' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pocketbase' as const,
+  installCommand: 'launchpad install pocketbase.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pocketbase.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pocketbase.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const pocketbasePackage = {
     'pocketbase',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@>=1.16',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -153,13 +158,7 @@ export const pocketbasePackage = {
     '0.21.0',
     '0.20.7',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pocketbase -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pocketbase' as const,
 }
 
-export type PocketbasePackage = typeof pocketbasePackage
+export type PocketbaseioPackage = typeof pocketbaseioPackage

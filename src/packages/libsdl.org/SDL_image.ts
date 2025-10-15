@@ -1,5 +1,5 @@
 /**
- * **libsdl.org/SDL_image** - Image decoding for many popular formats for Simple Directmedia Layer.
+ * **SDL_image** - Image decoding for many popular formats for Simple Directmedia Layer.
  *
  * @domain `libsdl.org/SDL_image`
  * @version `3.2.4` (13 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.libsdlorgsdl_image
- * console.log(pkg.name)        // "libsdl.org/SDL_image"
+ * console.log(pkg.name)        // "SDL_image"
  * console.log(pkg.description) // "Image decoding for many popular formats for Sim..."
  * console.log(pkg.versions[0]) // "3.2.4" (latest)
  * ```
@@ -25,7 +25,7 @@ export const libsdlorgsdl_imagePackage = {
   /**
    * The display name of this package.
    */
-  name: 'libsdl.org/SDL_image' as const,
+  name: 'SDL_image' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,12 +36,14 @@ export const libsdlorgsdl_imagePackage = {
   description: 'Image decoding for many popular formats for Simple Directmedia Layer.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libsdl.org/SDL_image/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/libsdl-org/SDL_image' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install libsdl.org/SDL_image' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libsdl.org/SDL_image -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libsdl.org/SDL_image' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -76,8 +78,6 @@ export const libsdlorgsdl_imagePackage = {
     '2.6.3',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libsdl.org/SDL_image -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libsdl.org/SDL_image' as const,
 }
 
 export type Libsdlorgsdl_imagePackage = typeof libsdlorgsdl_imagePackage

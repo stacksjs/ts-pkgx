@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/gabime/spdlog.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgabimespdlogPackage = {
+export const spdlogPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomgabimespdlogPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgabimespdlogPackage = typeof githubcomgabimespdlogPackage
+export type SpdlogPackage = typeof spdlogPackage

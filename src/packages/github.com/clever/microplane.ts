@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/clever/microplane.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomclevermicroplanePackage = {
+export const microplanePackage = {
   /**
    * The display name of this package.
    */
@@ -74,4 +74,4 @@ export const githubcomclevermicroplanePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomclevermicroplanePackage = typeof githubcomclevermicroplanePackage
+export type MicroplanePackage = typeof microplanePackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/awslabs/llrt.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomawslabsllrtPackage = {
+export const llrtPackage = {
   /**
    * The display name of this package.
    */
@@ -91,4 +91,4 @@ export const githubcomawslabsllrtPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomawslabsllrtPackage = typeof githubcomawslabsllrtPackage
+export type LlrtPackage = typeof llrtPackage

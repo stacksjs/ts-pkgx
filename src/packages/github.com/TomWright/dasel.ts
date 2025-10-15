@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/TomWright/dasel.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomtomwrightdaselPackage = {
+export const daselPackage = {
   /**
    * The display name of this package.
    */
@@ -77,4 +77,4 @@ export const githubcomtomwrightdaselPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomtomwrightdaselPackage = typeof githubcomtomwrightdaselPackage
+export type DaselPackage = typeof daselPackage

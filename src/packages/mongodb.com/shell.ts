@@ -6,19 +6,15 @@
  * @version `2.5.8` (39 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mongosh`
- * @name `mongosh`
+ * @install `launchpad install mongodb.com/shell`
+ * @homepage https://www.mongodb.com/try/download/shell
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mongosh
- * // Or access via domain
- * const samePkg = pantry.mongodbcomshell
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.mongodbcomshell
  * console.log(pkg.name)        // "mongosh"
  * console.log(pkg.description) // "MongoDB Shell to connect, configure, query, and..."
  * console.log(pkg.programs)    // ["mongosh"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mongodb-com/shell.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mongoshPackage = {
+export const mongodbcomshellPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const mongoshPackage = {
    */
   description: 'MongoDB Shell to connect, configure, query, and work with your MongoDB database' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mongodb.com/shell/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.mongodb.com/try/download/shell' as const,
+  githubUrl: 'https://github.com/mongodb-js/mongosh' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mongosh' as const,
+  installCommand: 'launchpad install mongodb.com/shell' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mongodb.com/shell -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mongodb.com/shell' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -109,13 +107,7 @@ export const mongoshPackage = {
     '2.0.2',
     '2.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mongosh -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mongosh' as const,
 }
 
-export type MongoshPackage = typeof mongoshPackage
+export type MongodbcomshellPackage = typeof mongodbcomshellPackage

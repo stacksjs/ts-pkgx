@@ -6,19 +6,15 @@
  * @version `0.8.2` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install quickwit`
- * @name `quickwit`
+ * @install `launchpad install quickwit.io`
+ * @homepage https://quickwit.io
  * @dependencies `protobuf.dev^25`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.quickwit
- * // Or access via domain
- * const samePkg = pantry.quickwitio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.quickwitio
  * console.log(pkg.name)        // "quickwit"
  * console.log(pkg.description) // "Cloud-native search engine for observability. A..."
  * console.log(pkg.programs)    // ["quickwit"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/quickwit-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const quickwitPackage = {
+export const quickwitioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const quickwitPackage = {
    */
   description: 'Cloud-native search engine for observability. An open-source alternative to Datadog, Elasticsearch, Loki, and Tempo.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/quickwit.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://quickwit.io' as const,
+  githubUrl: 'https://github.com/quickwit-oss/quickwit' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install quickwit' as const,
+  installCommand: 'launchpad install quickwit.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +quickwit.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install quickwit.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,13 +75,7 @@ export const quickwitPackage = {
     '0.6.5',
     '0.6.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) quickwit -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install quickwit' as const,
 }
 
-export type QuickwitPackage = typeof quickwitPackage
+export type QuickwitioPackage = typeof quickwitioPackage

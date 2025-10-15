@@ -1,27 +1,22 @@
 /**
- * **pipenv** - Python Development Workflow for Humans.
+ * **pipenv** -  Python Development Workflow for Humans.
  *
  * @domain `pipenv.pypa.io`
  * @programs `pipenv`
  * @version `3000.0.0` (49 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pipenv`
- * @name `pipenv`
+ * @install `launchpad install pipenv.pypa.io`
+ * @homepage https://pipenv.pypa.io
  * @dependencies `pkgx.sh^1`
- * @companions `pip.pypa.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pipenv
- * // Or access via domain
- * const samePkg = pantry.pipenvpypaio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pipenvpypaio
  * console.log(pkg.name)        // "pipenv"
- * console.log(pkg.description) // "Python Development Workflow for Humans."
+ * console.log(pkg.description) // " Python Development Workflow for Humans."
  * console.log(pkg.programs)    // ["pipenv"]
  * console.log(pkg.versions[0]) // "3000.0.0" (latest)
  * ```
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pipenv-pypa-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pipenvPackage = {
+export const pipenvpypaioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,15 +36,17 @@ export const pipenvPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Python Development Workflow for Humans.' as const,
+  description: ' Python Development Workflow for Humans.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pipenv.pypa.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://pipenv.pypa.io' as const,
+  githubUrl: 'https://github.com/pypa/pipenv' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pipenv' as const,
+  installCommand: 'launchpad install pipenv.pypa.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pipenv.pypa.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pipenv.pypa.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,13 +54,7 @@ export const pipenvPackage = {
   programs: [
     'pipenv',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'pip.pypa.io',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -126,13 +117,7 @@ export const pipenvPackage = {
     '2023.2.18',
     '2023.2.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pipenv -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pipenv' as const,
 }
 
-export type PipenvPackage = typeof pipenvPackage
+export type PipenvpypaioPackage = typeof pipenvpypaioPackage

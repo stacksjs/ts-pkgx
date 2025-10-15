@@ -6,18 +6,14 @@
  * @version `3.3.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gperf`
- * @name `gperf`
+ * @install `launchpad install gnu.org/gperf`
+ * @homepage https://www.gnu.org/software/gperf/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gperf
- * // Or access via domain
- * const samePkg = pantry.gnuorggperf
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnuorggperf
  * console.log(pkg.name)        // "gperf"
  * console.log(pkg.description) // "Perfect hash function generator"
  * console.log(pkg.programs)    // ["gperf"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/gperf.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gperfPackage = {
+export const gnuorggperfPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const gperfPackage = {
    */
   description: 'Perfect hash function generator' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gperf/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.gnu.org/software/gperf/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gperf' as const,
+  installCommand: 'launchpad install gnu.org/gperf' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gperf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/gperf' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,13 +65,7 @@ export const gperfPackage = {
     '3.2.0',
     '3.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gperf -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gperf' as const,
 }
 
-export type GperfPackage = typeof gperfPackage
+export type GnuorggperfPackage = typeof gnuorggperfPackage

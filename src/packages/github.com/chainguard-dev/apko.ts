@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/chainguard-dev/apko.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomchainguarddevapkoPackage = {
+export const apkoPackage = {
   /**
    * The display name of this package.
    */
@@ -151,4 +151,4 @@ export const githubcomchainguarddevapkoPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomchainguarddevapkoPackage = typeof githubcomchainguarddevapkoPackage
+export type ApkoPackage = typeof apkoPackage

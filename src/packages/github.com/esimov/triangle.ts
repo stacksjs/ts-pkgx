@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/esimov/triangle.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomesimovtrianglePackage = {
+export const trianglePackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomesimovtrianglePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomesimovtrianglePackage = typeof githubcomesimovtrianglePackage
+export type TrianglePackage = typeof trianglePackage

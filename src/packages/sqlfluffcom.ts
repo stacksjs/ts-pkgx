@@ -6,19 +6,15 @@
  * @version `3.4.2` (25 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sqlfluff`
- * @name `sqlfluff`
+ * @install `launchpad install sqlfluff.com`
+ * @homepage https://docs.sqlfluff.com/
  * @dependencies `python.org>=3.7<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sqlfluff
- * // Or access via domain
- * const samePkg = pantry.sqlfluffcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sqlfluffcom
  * console.log(pkg.name)        // "sqlfluff"
  * console.log(pkg.description) // "A modular SQL linter and auto-formatter with su..."
  * console.log(pkg.programs)    // ["sqlfluff"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sqlfluff-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sqlfluffPackage = {
+export const sqlfluffcomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const sqlfluffPackage = {
    */
   description: 'A modular SQL linter and auto-formatter with support for multiple dialects and templated code.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sqlfluff.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docs.sqlfluff.com/' as const,
+  githubUrl: 'https://github.com/sqlfluff/sqlfluff' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sqlfluff' as const,
+  installCommand: 'launchpad install sqlfluff.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sqlfluff.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sqlfluff.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -95,13 +93,7 @@ export const sqlfluffPackage = {
     '2.3.3',
     '2.3.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sqlfluff -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sqlfluff' as const,
 }
 
-export type SqlfluffPackage = typeof sqlfluffPackage
+export type SqlfluffcomPackage = typeof sqlfluffcomPackage

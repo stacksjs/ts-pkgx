@@ -1,5 +1,5 @@
 /**
- * **littlecms.com** - A free, open source, CMM engine. It provides fast transforms between ICC profiles.
+ * **littlecms** - A free, open source, CMM engine. It provides fast transforms between ICC profiles.
  *
  * @domain `littlecms.com`
  * @programs `jpgicc`, `linkicc`, `psicc`, `tificc`, `transicc`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install littlecms.com`
+ * @homepage https://www.littlecms.com/
  * @dependencies `simplesystems.org/libtiff^4`, `libjpeg-turbo.org^2`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.littlecmscom
- * console.log(pkg.name)        // "littlecms.com"
+ * console.log(pkg.name)        // "littlecms"
  * console.log(pkg.description) // "A free, open source, CMM engine. It provides fa..."
  * console.log(pkg.programs)    // ["jpgicc", "linkicc", ...]
  * console.log(pkg.versions[0]) // "2.17.0" (latest)
@@ -27,7 +28,7 @@ export const littlecmscomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'littlecms.com' as const,
+  name: 'littlecms' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const littlecmscomPackage = {
    */
   description: 'A free, open source, CMM engine. It provides fast transforms between ICC profiles.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/littlecms.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.littlecms.com/' as const,
+  githubUrl: 'https://github.com/mm2/Little-CMS' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install littlecms.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +littlecms.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install littlecms.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,8 +78,6 @@ export const littlecmscomPackage = {
     '2.12.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +littlecms.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install littlecms.com' as const,
 }
 
 export type LittlecmscomPackage = typeof littlecmscomPackage

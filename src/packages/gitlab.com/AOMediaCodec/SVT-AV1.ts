@@ -6,18 +6,15 @@
  * @version `3.1.2` (16 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install SvtAv1EncApp`
- * @name `SvtAv1EncApp`
+ * @install `launchpad install gitlab.com/AOMediaCodec/SVT-AV1`
+ * @homepage https://gitlab.com/AOMediaCodec/SVT-AV1
+ * @dependencies `cmake.org`, `yasm.tortall.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.SvtAv1EncApp
- * // Or access via domain
- * const samePkg = pantry.gitlabcomaomediacodecsvtav1
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gitlabcomaomediacodecsvtav1
  * console.log(pkg.name)        // "SvtAv1EncApp"
  * console.log(pkg.description) // "AV1 encoder"
  * console.log(pkg.programs)    // ["SvtAv1EncApp"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gitlab-com/AOMediaCodec/SVT-AV1.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const svtAv1EncAppPackage = {
+export const gitlabcomaomediacodecsvtav1Package = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const svtAv1EncAppPackage = {
    */
   description: 'AV1 encoder' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gitlab.com/AOMediaCodec/SVT-AV1/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://gitlab.com/AOMediaCodec/SVT-AV1' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install SvtAv1EncApp' as const,
+  installCommand: 'launchpad install gitlab.com/AOMediaCodec/SVT-AV1' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gitlab.com/AOMediaCodec/SVT-AV1 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gitlab.com/AOMediaCodec/SVT-AV1' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const svtAv1EncAppPackage = {
     'SvtAv1EncApp',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+    'yasm.tortall.net',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -79,13 +85,7 @@ export const svtAv1EncAppPackage = {
     '1.7.0',
     '1.6.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) SvtAv1EncApp -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install SvtAv1EncApp' as const,
 }
 
-export type SvtAv1EncAppPackage = typeof svtAv1EncAppPackage
+export type Gitlabcomaomediacodecsvtav1Package = typeof gitlabcomaomediacodecsvtav1Package

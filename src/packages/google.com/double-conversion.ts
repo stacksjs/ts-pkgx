@@ -1,18 +1,19 @@
 /**
- * **google.com/double-conversion** - Efficient binary-decimal and decimal-binary conversion routines for IEEE doubles.
+ * **double-conversion** - Efficient binary-decimal and decimal-binary conversion routines for IEEE doubles.
  *
  * @domain `google.com/double-conversion`
  * @version `3.3.1` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install google.com/double-conversion`
+ * @dependencies `cmake.org@^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.googlecomdoubleconversion
- * console.log(pkg.name)        // "google.com/double-conversion"
+ * console.log(pkg.name)        // "double-conversion"
  * console.log(pkg.description) // "Efficient binary-decimal and decimal-binary con..."
  * console.log(pkg.versions[0]) // "3.3.1" (latest)
  * ```
@@ -24,7 +25,7 @@ export const googlecomdoubleconversionPackage = {
   /**
    * The display name of this package.
    */
-  name: 'google.com/double-conversion' as const,
+  name: 'double-conversion' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,15 +36,23 @@ export const googlecomdoubleconversionPackage = {
   description: 'Efficient binary-decimal and decimal-binary conversion routines for IEEE doubles.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/google.com/double-conversion/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/google/double-conversion' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install google.com/double-conversion' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +google.com/double-conversion -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install google.com/double-conversion' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org@^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -54,8 +63,6 @@ export const googlecomdoubleconversionPackage = {
     '3.2.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +google.com/double-conversion -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install google.com/double-conversion' as const,
 }
 
 export type GooglecomdoubleconversionPackage = typeof googlecomdoubleconversionPackage

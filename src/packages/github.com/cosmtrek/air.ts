@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/cosmtrek/air.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcosmtrekairPackage = {
+export const airPackage = {
   /**
    * The display name of this package.
    */
@@ -87,4 +87,4 @@ export const githubcomcosmtrekairPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcosmtrekairPackage = typeof githubcomcosmtrekairPackage
+export type AirPackage = typeof airPackage

@@ -6,18 +6,14 @@
  * @version `1.1.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install himalaya`
- * @name `himalaya`
+ * @install `launchpad install pimalaya.org/himalaya`
+ * @homepage https://pimalaya.org
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.himalaya
- * // Or access via domain
- * const samePkg = pantry.pimalayaorghimalaya
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pimalayaorghimalaya
  * console.log(pkg.name)        // "himalaya"
  * console.log(pkg.description) // "CLI email client written in Rust"
  * console.log(pkg.programs)    // ["himalaya"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pimalaya-org/himalaya.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const himalayaPackage = {
+export const pimalayaorghimalayaPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const himalayaPackage = {
    */
   description: 'CLI email client written in Rust' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pimalaya.org/himalaya/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://pimalaya.org' as const,
+  githubUrl: 'https://github.com/pimalaya/himalaya' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install himalaya' as const,
+  installCommand: 'launchpad install pimalaya.org/himalaya' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pimalaya.org/himalaya -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pimalaya.org/himalaya' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,13 +65,7 @@ export const himalayaPackage = {
     '0.9.0',
     '0.8.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) himalaya -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install himalaya' as const,
 }
 
-export type HimalayaPackage = typeof himalayaPackage
+export type PimalayaorghimalayaPackage = typeof pimalayaorghimalayaPackage

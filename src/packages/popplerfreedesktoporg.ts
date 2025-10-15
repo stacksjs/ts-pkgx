@@ -1,5 +1,5 @@
 /**
- * **poppler.freedesktop.org** - pkgx package
+ * **poppler.freedesktop** - pkgx package
  *
  * @domain `poppler.freedesktop.org`
  * @programs `pdfattach`, `pdfdetach`, `pdffonts`, `pdfimages`, `pdfinfo`, ... (+7 more)
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.popplerfreedesktoporg
- * console.log(pkg.name)        // "poppler.freedesktop.org"
+ * console.log(pkg.name)        // "poppler.freedesktop"
  * console.log(pkg.programs)    // ["pdfattach", "pdfdetach", ...]
  * console.log(pkg.versions[0]) // "25.10.0" (latest)
  * ```
@@ -26,7 +26,7 @@ export const popplerfreedesktoporgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'poppler.freedesktop.org' as const,
+  name: 'poppler.freedesktop' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,12 +37,14 @@ export const popplerfreedesktoporgPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/poppler.freedesktop.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install poppler.freedesktop.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +poppler.freedesktop.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install poppler.freedesktop.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -117,8 +119,6 @@ export const popplerfreedesktoporgPackage = {
     '22.12.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +poppler.freedesktop.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install poppler.freedesktop.org' as const,
 }
 
 export type PopplerfreedesktoporgPackage = typeof popplerfreedesktoporgPackage

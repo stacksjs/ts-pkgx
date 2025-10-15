@@ -6,19 +6,14 @@
  * @version `0.10.16` (28 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install cargo-c`
- * @name `cargo-c`
+ * @install `launchpad install github.com/lu-zero/cargo-c`
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`, `libssh2.org`, `openssl.org^1.1`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cargoc
- * // Or access via domain
- * const samePkg = pantry.githubcomluzerocargoc
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomluzerocargoc
  * console.log(pkg.name)        // "cargo-c"
  * console.log(pkg.description) // "Helper program to build and install c-like libr..."
  * console.log(pkg.programs)    // ["cargo-capi", "cargo-cbuild", ...]
@@ -43,12 +38,14 @@ export const cargocPackage = {
   description: 'Helper program to build and install c-like libraries' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/lu-zero/cargo-c/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/lu-zero/cargo-c' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cargo-c' as const,
+  installCommand: 'launchpad install github.com/lu-zero/cargo-c' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/lu-zero/cargo-c -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/lu-zero/cargo-c' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -104,13 +101,7 @@ export const cargocPackage = {
     '0.9.21',
     '0.9.20',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/lu-zero/cargo-c -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cargo-c' as const,
 }
 
 export type CargocPackage = typeof cargocPackage

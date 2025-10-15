@@ -6,18 +6,15 @@
  * @version `0.13.5` (34 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install prql`
- * @name `prql`
+ * @install `launchpad install prql-lang.org`
+ * @homepage https://prql-lang.org
+ * @dependencies `linux:llvm.org@18` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.prql
- * // Or access via domain
- * const samePkg = pantry.prqllangorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.prqllangorg
  * console.log(pkg.name)        // "prql"
  * console.log(pkg.description) // "PRQL is a modern language for transforming data..."
  * console.log(pkg.programs)    // ["prql-compiler", "prqlc"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/prql-lang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const prqlPackage = {
+export const prqllangorgPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const prqlPackage = {
    */
   description: 'PRQL is a modern language for transforming data — a simple, powerful, pipelined SQL replacement' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/prql-lang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://prql-lang.org' as const,
+  githubUrl: 'https://github.com/PRQL/prql' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install prql' as const,
+  installCommand: 'launchpad install prql-lang.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +prql-lang.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install prql-lang.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +56,14 @@ export const prqlPackage = {
     'prqlc',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   */
+  dependencies: [
+    'linux:llvm.org@18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -98,13 +104,7 @@ export const prqlPackage = {
     '0.4.0',
     '0.3.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +prql-lang.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install prql' as const,
 }
 
-export type PrqlPackage = typeof prqlPackage
+export type PrqllangorgPackage = typeof prqllangorgPackage

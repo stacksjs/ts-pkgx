@@ -6,18 +6,14 @@
  * @version `3.0.2` (20 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install cosign`
- * @name `cosign`
+ * @install `launchpad install sigstore.dev/cosign`
+ * @dependencies `go.dev@~1.24.3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cosign
- * // Or access via domain
- * const samePkg = pantry.sigstoredevcosign
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sigstoredevcosign
  * console.log(pkg.name)        // "cosign"
  * console.log(pkg.description) // "Code signing and transparency for containers an..."
  * console.log(pkg.programs)    // ["cosign"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sigstore-dev/cosign.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cosignPackage = {
+export const sigstoredevcosignPackage = {
   /**
    * The display name of this package.
    */
@@ -47,7 +43,9 @@ export const cosignPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cosign' as const,
+  installCommand: 'launchpad install sigstore.dev/cosign' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sigstore.dev/cosign -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sigstore.dev/cosign' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const cosignPackage = {
     'cosign',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.24.3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -83,13 +87,7 @@ export const cosignPackage = {
     '1.13.6',
     '1.13.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cosign -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cosign' as const,
 }
 
-export type CosignPackage = typeof cosignPackage
+export type SigstoredevcosignPackage = typeof sigstoredevcosignPackage

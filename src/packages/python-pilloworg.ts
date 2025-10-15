@@ -1,11 +1,12 @@
 /**
- * **python-pillow.org** - Python Imaging Library (Fork)
+ * **python-pillow** - Python Imaging Library (Fork)
  *
  * @domain `python-pillow.org`
  * @version `11.3.0` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install python-pillow.org`
+ * @homepage https://python-pillow.github.io
  * @dependencies `libjpeg-turbo.org^2`, `pngquant.org/lib^4`, `simplesystems.org/libtiff^4`, ... (+7 more)
  *
  * @example
@@ -13,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.pythonpilloworg
- * console.log(pkg.name)        // "python-pillow.org"
+ * console.log(pkg.name)        // "python-pillow"
  * console.log(pkg.description) // "Python Imaging Library (Fork)"
  * console.log(pkg.versions[0]) // "11.3.0" (latest)
  * ```
@@ -25,7 +26,7 @@ export const pythonpilloworgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'python-pillow.org' as const,
+  name: 'python-pillow' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,13 +36,15 @@ export const pythonpilloworgPackage = {
    */
   description: 'Python Imaging Library (Fork)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/python-pillow.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://python-pillow.github.io' as const,
+  githubUrl: 'https://github.com/python-pillow/Pillow' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install python-pillow.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +python-pillow.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install python-pillow.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -74,8 +77,6 @@ export const pythonpilloworgPackage = {
     '10.2.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +python-pillow.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install python-pillow.org' as const,
 }
 
 export type PythonpilloworgPackage = typeof pythonpilloworgPackage

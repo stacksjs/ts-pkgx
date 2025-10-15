@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/MaestroError/heif-converter-image.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcommaestroerrorheifconverterimagePackage = {
+export const heifconverterimagePackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcommaestroerrorheifconverterimagePackage = {
   aliases: [] as const,
 }
 
-export type GithubcommaestroerrorheifconverterimagePackage = typeof githubcommaestroerrorheifconverterimagePackage
+export type HeifconverterimagePackage = typeof heifconverterimagePackage

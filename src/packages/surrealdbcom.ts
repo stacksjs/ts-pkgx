@@ -6,19 +6,15 @@
  * @version `2023.9.1` (57 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install surreal`
- * @name `surreal`
+ * @install `launchpad install surrealdb.com`
+ * @homepage https://surrealdb.com
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.surreal
- * // Or access via domain
- * const samePkg = pantry.surrealdbcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.surrealdbcom
  * console.log(pkg.name)        // "surreal"
  * console.log(pkg.description) // "A scalable, distributed, collaborative, documen..."
  * console.log(pkg.programs)    // ["surreal"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/surrealdb-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const surrealPackage = {
+export const surrealdbcomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const surrealPackage = {
    */
   description: 'A scalable, distributed, collaborative, document-graph database, for the realtime web' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/surrealdb.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://surrealdb.com' as const,
+  githubUrl: 'https://github.com/surrealdb/surrealdb' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install surreal' as const,
+  installCommand: 'launchpad install surrealdb.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +surrealdb.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install surrealdb.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -127,13 +125,7 @@ export const surrealPackage = {
     '1.0.0',
     '0.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) surreal -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install surreal' as const,
 }
 
-export type SurrealPackage = typeof surrealPackage
+export type SurrealdbcomPackage = typeof surrealdbcomPackage

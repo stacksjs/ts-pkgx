@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Esri/lerc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomesrilercPackage = {
+export const lercPackage = {
   /**
    * The display name of this package.
    */
@@ -64,4 +64,4 @@ export const githubcomesrilercPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomesrilercPackage = typeof githubcomesrilercPackage
+export type LercPackage = typeof lercPackage

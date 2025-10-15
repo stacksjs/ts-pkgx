@@ -5,19 +5,15 @@
  * @version `0.7.9` (42 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install Vanna`
- * @name `Vanna`
+ * @install `launchpad install vanna.ai`
+ * @homepage https://vanna.ai/docs/
  * @dependencies `python.org~3.12`, `linux:openmp.llvm.org^17 # needed by chromadb` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.Vanna
- * // Or access via domain
- * const samePkg = pantry.vannaai
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.vannaai
  * console.log(pkg.name)        // "Vanna"
  * console.log(pkg.description) // "🤖 Chat with your SQL database 📊. Accurate Tex..."
  * console.log(pkg.versions[0]) // "0.7.9" (latest)
@@ -26,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/vanna-ai.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const vannaPackage = {
+export const vannaaiPackage = {
   /**
    * The display name of this package.
    */
@@ -40,13 +36,15 @@ export const vannaPackage = {
    */
   description: '🤖 Chat with your SQL database 📊. Accurate Text-to-SQL Generation via LLMs using RAG 🔄.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/vanna.ai/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://vanna.ai/docs/' as const,
   githubUrl: 'https://github.com/vanna-ai/vanna' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install Vanna' as const,
+  installCommand: 'launchpad install vanna.ai' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +vanna.ai -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vanna.ai' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -106,13 +104,7 @@ export const vannaPackage = {
     '0.0.33',
     '0.0.32',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +vanna.ai -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install Vanna' as const,
 }
 
-export type VannaPackage = typeof vannaPackage
+export type VannaaiPackage = typeof vannaaiPackage

@@ -6,18 +6,15 @@
  * @version `27.2.0` (339 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install oh-my-posh`
- * @name `oh-my-posh`
+ * @install `launchpad install ohmyposh.dev`
+ * @homepage https://ohmyposh.dev
+ * @dependencies `go.dev@>=1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ohmyposh
- * // Or access via domain
- * const samePkg = pantry.ohmyposhdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ohmyposhdev
  * console.log(pkg.name)        // "oh-my-posh"
  * console.log(pkg.description) // "The most customisable and low-latency cross pla..."
  * console.log(pkg.programs)    // ["oh-my-posh"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ohmyposh-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ohmyposhPackage = {
+export const ohmyposhdevPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const ohmyposhPackage = {
    */
   description: 'The most customisable and low-latency cross platform/shell prompt renderer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ohmyposh.dev/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://ohmyposh.dev' as const,
   githubUrl: 'https://github.com/JanDeDobbeleer/oh-my-posh' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install oh-my-posh' as const,
+  installCommand: 'launchpad install ohmyposh.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ohmyposh.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ohmyposh.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const ohmyposhPackage = {
     'oh-my-posh',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@>=1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -402,13 +407,7 @@ export const ohmyposhPackage = {
     '19.8.1',
     '19.8.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) oh-my-posh -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install oh-my-posh' as const,
 }
 
-export type OhmyposhPackage = typeof ohmyposhPackage
+export type OhmyposhdevPackage = typeof ohmyposhdevPackage

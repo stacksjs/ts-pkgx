@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Diniboy1123/usque.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomdiniboy1123usquePackage = {
+export const usquePackage = {
   /**
    * The display name of this package.
    */
@@ -80,4 +80,4 @@ export const githubcomdiniboy1123usquePackage = {
   aliases: [] as const,
 }
 
-export type Githubcomdiniboy1123usquePackage = typeof githubcomdiniboy1123usquePackage
+export type UsquePackage = typeof usquePackage

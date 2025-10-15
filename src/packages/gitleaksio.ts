@@ -6,18 +6,15 @@
  * @version `8.28.0` (30 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gitleaks`
- * @name `gitleaks`
+ * @install `launchpad install gitleaks.io`
+ * @homepage https://gitleaks.io
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gitleaks
- * // Or access via domain
- * const samePkg = pantry.gitleaksio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gitleaksio
  * console.log(pkg.name)        // "gitleaks"
  * console.log(pkg.description) // "Find secrets with Gitleaks 🔑"
  * console.log(pkg.programs)    // ["gitleaks"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gitleaks-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitleaksPackage = {
+export const gitleaksioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const gitleaksPackage = {
    */
   description: 'Find secrets with Gitleaks 🔑' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gitleaks.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://gitleaks.io' as const,
+  githubUrl: 'https://github.com/gitleaks/gitleaks' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gitleaks' as const,
+  installCommand: 'launchpad install gitleaks.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gitleaks.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gitleaks.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const gitleaksPackage = {
     'gitleaks',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -93,13 +98,7 @@ export const gitleaksPackage = {
     '8.18.2',
     '8.18.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gitleaks -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gitleaks' as const,
 }
 
-export type GitleaksPackage = typeof gitleaksPackage
+export type GitleaksioPackage = typeof gitleaksioPackage

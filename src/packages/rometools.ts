@@ -6,18 +6,14 @@
  * @version `0.4.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rome`
- * @name `rome`
+ * @install `launchpad install rome.tools`
+ * @homepage https://docs.rome.tools/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rome
- * // Or access via domain
- * const samePkg = pantry.rometools
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.rometools
  * console.log(pkg.name)        // "rome"
  * console.log(pkg.description) // "Unified developer tools for JavaScript, TypeScr..."
  * console.log(pkg.programs)    // ["rome"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rome-tools.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const romePackage = {
+export const rometoolsPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const romePackage = {
    */
   description: 'Unified developer tools for JavaScript, TypeScript, and the web' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rome.tools/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docs.rome.tools/' as const,
+  githubUrl: 'https://github.com/rome/tools' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rome' as const,
+  installCommand: 'launchpad install rome.tools' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rome.tools -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rome.tools' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +62,7 @@ export const romePackage = {
   versions: [
     '0.4.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rome -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rome' as const,
 }
 
-export type RomePackage = typeof romePackage
+export type RometoolsPackage = typeof rometoolsPackage

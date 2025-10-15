@@ -1,18 +1,20 @@
 /**
- * **openexr.com/imath** - Imath is a C++ and python library of 2D and 3D vector, matrix, and math operations for computer graphics
+ * **imath** - Imath is a C++ and python library of 2D and 3D vector, matrix, and math operations for computer graphics
  *
  * @domain `openexr.com/imath`
  * @version `3.2.2` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openexr.com/imath`
+ * @homepage https://imath.readthedocs.io
+ * @dependencies `cmake.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.openexrcomimath
- * console.log(pkg.name)        // "openexr.com/imath"
+ * console.log(pkg.name)        // "imath"
  * console.log(pkg.description) // "Imath is a C++ and python library of 2D and 3D ..."
  * console.log(pkg.versions[0]) // "3.2.2" (latest)
  * ```
@@ -24,7 +26,7 @@ export const openexrcomimathPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openexr.com/imath' as const,
+  name: 'imath' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,16 +36,24 @@ export const openexrcomimathPackage = {
    */
   description: 'Imath is a C++ and python library of 2D and 3D vector, matrix, and math operations for computer graphics' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openexr.com/imath/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://imath.readthedocs.io' as const,
+  githubUrl: 'https://github.com/AcademySoftwareFoundation/Imath' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install openexr.com/imath' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openexr.com/imath -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openexr.com/imath' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -60,8 +70,6 @@ export const openexrcomimathPackage = {
     '3.1.7',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openexr.com/imath -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install openexr.com/imath' as const,
 }
 
 export type OpenexrcomimathPackage = typeof openexrcomimathPackage

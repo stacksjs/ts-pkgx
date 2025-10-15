@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/bazelbuild/bazelisk.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcombazelbuildbazeliskPackage = {
+export const bazeliskPackage = {
   /**
    * The display name of this package.
    */
@@ -82,4 +82,4 @@ export const githubcombazelbuildbazeliskPackage = {
   aliases: [] as const,
 }
 
-export type GithubcombazelbuildbazeliskPackage = typeof githubcombazelbuildbazeliskPackage
+export type BazeliskPackage = typeof bazeliskPackage

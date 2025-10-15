@@ -6,18 +6,14 @@
  * @version `10.30.1` (14 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install azcopy`
- * @name `azcopy`
+ * @install `launchpad install microsoft.com/azure-storage-azcopy`
+ * @dependencies `go.dev@>=1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.azcopy
- * // Or access via domain
- * const samePkg = pantry.microsoftcomazurestorageazcopy
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.microsoftcomazurestorageazcopy
  * console.log(pkg.name)        // "azcopy"
  * console.log(pkg.description) // "The new Azure Storage data transfer utility - A..."
  * console.log(pkg.programs)    // ["azcopy"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/microsoft-com/azure-storage-azcopy.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const azcopyPackage = {
+export const microsoftcomazurestorageazcopyPackage = {
   /**
    * The display name of this package.
    */
@@ -47,7 +43,9 @@ export const azcopyPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install azcopy' as const,
+  installCommand: 'launchpad install microsoft.com/azure-storage-azcopy' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +microsoft.com/azure-storage-azcopy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install microsoft.com/azure-storage-azcopy' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const azcopyPackage = {
     'azcopy',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@>=1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -77,13 +81,7 @@ export const azcopyPackage = {
     '10.23.0',
     '10.22.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) azcopy -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install azcopy' as const,
 }
 
-export type AzcopyPackage = typeof azcopyPackage
+export type MicrosoftcomazurestorageazcopyPackage = typeof microsoftcomazurestorageazcopyPackage

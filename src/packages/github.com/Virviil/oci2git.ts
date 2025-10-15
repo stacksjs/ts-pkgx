@@ -19,7 +19,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Virviil/oci2git.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomvirviiloci2gitPackage = {
+export const oci2gitPackage = {
   /**
    * The display name of this package.
    */
@@ -57,4 +57,4 @@ export const githubcomvirviiloci2gitPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomvirviiloci2gitPackage = typeof githubcomvirviiloci2gitPackage
+export type Oci2gitPackage = typeof oci2gitPackage

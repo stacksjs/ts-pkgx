@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/burntsushi/xsv.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomburntsushixsvPackage = {
+export const xsvPackage = {
   /**
    * The display name of this package.
    */
@@ -64,4 +64,4 @@ export const githubcomburntsushixsvPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomburntsushixsvPackage = typeof githubcomburntsushixsvPackage
+export type XsvPackage = typeof xsvPackage

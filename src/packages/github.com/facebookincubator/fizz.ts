@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/facebookincubator/fizz.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomfacebookincubatorfizzPackage = {
+export const fizzPackage = {
   /**
    * The display name of this package.
    */
@@ -205,4 +205,4 @@ export const githubcomfacebookincubatorfizzPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomfacebookincubatorfizzPackage = typeof githubcomfacebookincubatorfizzPackage
+export type FizzPackage = typeof fizzPackage

@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/dateutil/dateutil.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomdateutildateutilPackage = {
+export const dateutilPackage = {
   /**
    * The display name of this package.
    */
@@ -65,4 +65,4 @@ export const githubcomdateutildateutilPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomdateutildateutilPackage = typeof githubcomdateutildateutilPackage
+export type DateutilPackage = typeof dateutilPackage

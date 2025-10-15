@@ -1,11 +1,12 @@
 /**
- * **sympy.org** - A computer algebra system written in pure Python
+ * **sympy** - A computer algebra system written in pure Python
  *
  * @domain `sympy.org`
  * @version `1.14.0` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sympy.org`
+ * @homepage https://sympy.org/
  * @dependencies `python.org>=3.11`
  *
  * @example
@@ -13,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.sympyorg
- * console.log(pkg.name)        // "sympy.org"
+ * console.log(pkg.name)        // "sympy"
  * console.log(pkg.description) // "A computer algebra system written in pure Python"
  * console.log(pkg.versions[0]) // "1.14.0" (latest)
  * ```
@@ -25,7 +26,7 @@ export const sympyorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sympy.org' as const,
+  name: 'sympy' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,13 +36,15 @@ export const sympyorgPackage = {
    */
   description: 'A computer algebra system written in pure Python' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sympy.org/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://sympy.org/' as const,
   githubUrl: 'https://github.com/sympy/sympy' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install sympy.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sympy.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sympy.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -65,8 +68,6 @@ export const sympyorgPackage = {
     '1.12.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sympy.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sympy.org' as const,
 }
 
 export type SympyorgPackage = typeof sympyorgPackage

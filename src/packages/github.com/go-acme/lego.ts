@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/go-acme/lego.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgoacmelegoPackage = {
+export const legoPackage = {
   /**
    * The display name of this package.
    */
@@ -95,4 +95,4 @@ export const githubcomgoacmelegoPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgoacmelegoPackage = typeof githubcomgoacmelegoPackage
+export type LegoPackage = typeof legoPackage

@@ -5,18 +5,13 @@
  * @version `1.3.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install hiredis`
- * @name `hiredis`
+ * @install `launchpad install github.com/redis/hiredis`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.hiredis
- * // Or access via domain
- * const samePkg = pantry.githubcomredishiredis
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomredishiredis
  * console.log(pkg.name)        // "hiredis"
  * console.log(pkg.description) // "Minimalistic C client for Redis >= 1.2"
  * console.log(pkg.versions[0]) // "1.3.0" (latest)
@@ -40,12 +35,14 @@ export const hiredisPackage = {
   description: 'Minimalistic C client for Redis >= 1.2' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/redis/hiredis/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/redis/hiredis' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install hiredis' as const,
+  installCommand: 'launchpad install github.com/redis/hiredis' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/redis/hiredis -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/redis/hiredis' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -58,13 +55,7 @@ export const hiredisPackage = {
     '1.2.0',
     '1.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/redis/hiredis -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install hiredis' as const,
 }
 
 export type HiredisPackage = typeof hiredisPackage

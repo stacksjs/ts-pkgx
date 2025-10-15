@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/cloudbase/garm-provider-openstack.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcloudbasegarmprovideropenstackPackage = {
+export const garmprovideropenstackPackage = {
   /**
    * The display name of this package.
    */
@@ -73,4 +73,4 @@ export const githubcomcloudbasegarmprovideropenstackPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcloudbasegarmprovideropenstackPackage = typeof githubcomcloudbasegarmprovideropenstackPackage
+export type GarmprovideropenstackPackage = typeof garmprovideropenstackPackage

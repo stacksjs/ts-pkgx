@@ -20,7 +20,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/rupa/z.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomrupazPackage = {
+export const zPackage = {
   /**
    * The display name of this package.
    */
@@ -35,12 +35,14 @@ export const githubcomrupazPackage = {
   description: 'z - jump around' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/rupa/z/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/rupa/z' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/rupa/z' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/rupa/z -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/rupa/z' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -52,8 +54,6 @@ export const githubcomrupazPackage = {
     '1.12.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/rupa/z -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/rupa/z' as const,
 }
 
-export type GithubcomrupazPackage = typeof githubcomrupazPackage
+export type ZPackage = typeof zPackage

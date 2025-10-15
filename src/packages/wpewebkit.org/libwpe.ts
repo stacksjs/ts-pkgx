@@ -1,5 +1,5 @@
 /**
- * **wpewebkit.org/libwpe** - General-purpose library specifically developed for the WPE-flavored port of WebKit.
+ * **libwpe** - General-purpose library specifically developed for the WPE-flavored port of WebKit.
  *
  * @domain `wpewebkit.org/libwpe`
  * @version `1.16.3` (6 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.wpewebkitorglibwpe
- * console.log(pkg.name)        // "wpewebkit.org/libwpe"
+ * console.log(pkg.name)        // "libwpe"
  * console.log(pkg.description) // "General-purpose library specifically developed ..."
  * console.log(pkg.versions[0]) // "1.16.3" (latest)
  * ```
@@ -25,7 +25,7 @@ export const wpewebkitorglibwpePackage = {
   /**
    * The display name of this package.
    */
-  name: 'wpewebkit.org/libwpe' as const,
+  name: 'libwpe' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,12 +36,14 @@ export const wpewebkitorglibwpePackage = {
   description: 'General-purpose library specifically developed for the WPE-flavored port of WebKit.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wpewebkit.org/libwpe/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/WebPlatformForEmbedded/libwpe' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install wpewebkit.org/libwpe' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wpewebkit.org/libwpe -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wpewebkit.org/libwpe' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -65,8 +67,6 @@ export const wpewebkitorglibwpePackage = {
     '1.15.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wpewebkit.org/libwpe -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install wpewebkit.org/libwpe' as const,
 }
 
 export type WpewebkitorglibwpePackage = typeof wpewebkitorglibwpePackage

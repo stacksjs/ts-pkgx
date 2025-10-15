@@ -6,19 +6,15 @@
  * @version `1.5.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install flac`
- * @name `flac`
+ * @install `launchpad install xiph.org/flac`
+ * @homepage https://xiph.org/flac/
  * @dependencies `xiph.org/ogg^1.3.5`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.flac
- * // Or access via domain
- * const samePkg = pantry.xiphorgflac
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.xiphorgflac
  * console.log(pkg.name)        // "flac"
  * console.log(pkg.description) // "Free Lossless Audio Codec"
  * console.log(pkg.programs)    // ["flac"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/xiph-org/flac.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const flacPackage = {
+export const xiphorgflacPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const flacPackage = {
    */
   description: 'Free Lossless Audio Codec' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/xiph.org/flac/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://xiph.org/flac/' as const,
+  githubUrl: 'https://github.com/xiph/flac' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install flac' as const,
+  installCommand: 'launchpad install xiph.org/flac' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +xiph.org/flac -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xiph.org/flac' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +71,7 @@ export const flacPackage = {
     '1.4.3',
     '1.4.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) flac -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install flac' as const,
 }
 
-export type FlacPackage = typeof flacPackage
+export type XiphorgflacPackage = typeof xiphorgflacPackage

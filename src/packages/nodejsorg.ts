@@ -6,10 +6,10 @@
  * @version `24.10.0` (155 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install node`
+ * @install `launchpad install nodejs.org`
  * @name `node`
+ * @homepage https://nodejs.org/
  * @dependencies `unicode.org^71`, `openssl.org@1.1`, `zlib.net@1`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
- * @companions `npmjs.com`
  *
  * @example
  * ```typescript
@@ -43,13 +43,15 @@ export const nodePackage = {
    */
   description: 'Platform built on V8 to build network applications' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nodejs.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://nodejs.org/' as const,
+  githubUrl: 'https://github.com/nodejs/node' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install node' as const,
+  installCommand: 'launchpad install nodejs.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nodejs.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nodejs.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,13 +59,7 @@ export const nodePackage = {
   programs: [
     'node',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'npmjs.com',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -241,8 +237,6 @@ export const nodePackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) node -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install node' as const,
 }
 
 export type NodePackage = typeof nodePackage

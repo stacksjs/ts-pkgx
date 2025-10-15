@@ -6,19 +6,15 @@
  * @version `2024.2.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install wezterm`
- * @name `wezterm`
+ * @install `launchpad install wezfurlong.org/wezterm`
+ * @homepage https://wezfurlong.org/wezterm/
  * @dependencies `zlib.net^1.3`, `linux:freetype.org`, `linux:freedesktop.org/fontconfig`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.wezterm
- * // Or access via domain
- * const samePkg = pantry.wezfurlongorgwezterm
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.wezfurlongorgwezterm
  * console.log(pkg.name)        // "wezterm"
  * console.log(pkg.description) // "A GPU-accelerated cross-platform terminal emula..."
  * console.log(pkg.programs)    // ["wezterm"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/wezfurlong-org/wezterm.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const weztermPackage = {
+export const wezfurlongorgweztermPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const weztermPackage = {
    */
   description: 'A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wezfurlong.org/wezterm/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://wezfurlong.org/wezterm/' as const,
+  githubUrl: 'https://github.com/wez/wezterm' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install wezterm' as const,
+  installCommand: 'launchpad install wezfurlong.org/wezterm' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wezfurlong.org/wezterm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wezfurlong.org/wezterm' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,13 +73,7 @@ export const weztermPackage = {
   versions: [
     '2024.2.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wezterm -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install wezterm' as const,
 }
 
-export type WeztermPackage = typeof weztermPackage
+export type WezfurlongorgweztermPackage = typeof wezfurlongorgweztermPackage

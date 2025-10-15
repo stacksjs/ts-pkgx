@@ -6,19 +6,15 @@
  * @version `0.34.0` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install corepack`
- * @name `corepack`
+ * @install `launchpad install nodejs.org/corepack`
+ * @homepage https://nodejs.org/
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.corepack
- * // Or access via domain
- * const samePkg = pantry.nodejsorgcorepack
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.nodejsorgcorepack
  * console.log(pkg.name)        // "corepack"
  * console.log(pkg.description) // "Platform built on V8 to build network applications"
  * console.log(pkg.programs)    // ["corepack"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/nodejs-org/corepack.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const corepackPackage = {
+export const nodejsorgcorepackPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const corepackPackage = {
    */
   description: 'Platform built on V8 to build network applications' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nodejs.org/corepack/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://nodejs.org/' as const,
+  githubUrl: 'https://github.com/nodejs/node' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install corepack' as const,
+  installCommand: 'launchpad install nodejs.org/corepack' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nodejs.org/corepack -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nodejs.org/corepack' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -83,13 +81,7 @@ export const corepackPackage = {
     '0.27.0',
     '0.26.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) corepack -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install corepack' as const,
 }
 
-export type CorepackPackage = typeof corepackPackage
+export type NodejsorgcorepackPackage = typeof nodejsorgcorepackPackage

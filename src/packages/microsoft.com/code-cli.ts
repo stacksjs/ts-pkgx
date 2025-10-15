@@ -1,25 +1,20 @@
 /**
- * **code** - Command-line interface built-in Visual Studio Code
+ * **vscode cli** - Command-line interface built-in Visual Studio Code
  *
  * @domain `microsoft.com/code-cli`
  * @programs `code`
  * @version `1.105.0` (27 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install code`
- * @name `vscode cli`
- * @aliases `code`
+ * @install `launchpad install microsoft.com/code-cli`
+ * @homepage https://code.visualstudio.com
  * @dependencies `openssl.org@1.1`, `zlib.net@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.code
- * // Or access via domain
- * const samePkg = pantry.microsoftcomcodecli
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.microsoftcomcodecli
  * console.log(pkg.name)        // "vscode cli"
  * console.log(pkg.description) // "Command-line interface built-in Visual Studio Code"
  * console.log(pkg.programs)    // ["code"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/microsoft-com/code-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const codePackage = {
+export const microsoftcomcodecliPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const codePackage = {
    */
   description: 'Command-line interface built-in Visual Studio Code' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/code-cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://code.visualstudio.com' as const,
+  githubUrl: 'https://github.com/microsoft/vscode' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install code' as const,
+  installCommand: 'launchpad install microsoft.com/code-cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +microsoft.com/code-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install microsoft.com/code-cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -99,15 +96,7 @@ export const codePackage = {
     '1.98.0',
     '1.97.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'code',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) code -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install code' as const,
+  aliases: [] as const,
 }
 
-export type CodePackage = typeof codePackage
+export type MicrosoftcomcodecliPackage = typeof microsoftcomcodecliPackage

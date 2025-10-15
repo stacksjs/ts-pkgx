@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/golang-migrate/migrate.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgolangmigratemigratePackage = {
+export const migratePackage = {
   /**
    * The display name of this package.
    */
@@ -78,4 +78,4 @@ export const githubcomgolangmigratemigratePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgolangmigratemigratePackage = typeof githubcomgolangmigratemigratePackage
+export type MigratePackage = typeof migratePackage

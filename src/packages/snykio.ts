@@ -6,19 +6,15 @@
  * @version `1.1300.0` (50 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install snyk`
- * @name `snyk`
+ * @install `launchpad install snyk.io`
+ * @homepage https://snyk.io
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.snyk
- * // Or access via domain
- * const samePkg = pantry.snykio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.snykio
  * console.log(pkg.name)        // "snyk"
  * console.log(pkg.description) // "Scans and monitors projects for security vulner..."
  * console.log(pkg.programs)    // ["snyk"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/snyk-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const snykPackage = {
+export const snykioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const snykPackage = {
    */
   description: 'Scans and monitors projects for security vulnerabilities' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/snyk.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://snyk.io' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install snyk' as const,
+  installCommand: 'launchpad install snyk.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +snyk.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install snyk.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -120,13 +118,7 @@ export const snykPackage = {
     '1.1281.0',
     '1.1280.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) snyk -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install snyk' as const,
 }
 
-export type SnykPackage = typeof snykPackage
+export type SnykioPackage = typeof snykioPackage

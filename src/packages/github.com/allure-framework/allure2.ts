@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/allure-framework/allure2.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomallureframeworkallure2Package = {
+export const allure2Package = {
   /**
    * The display name of this package.
    */
@@ -84,4 +84,4 @@ export const githubcomallureframeworkallure2Package = {
   aliases: [] as const,
 }
 
-export type Githubcomallureframeworkallure2Package = typeof githubcomallureframeworkallure2Package
+export type Allure2Package = typeof allure2Package

@@ -6,19 +6,15 @@
  * @version `12.1.2` (28 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mitmproxy`
- * @name `mitmproxy`
+ * @install `launchpad install mitmproxy.org`
+ * @homepage https://mitmproxy.org
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mitmproxy
- * // Or access via domain
- * const samePkg = pantry.mitmproxyorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.mitmproxyorg
  * console.log(pkg.name)        // "mitmproxy"
  * console.log(pkg.description) // "An interactive TLS-capable intercepting HTTP pr..."
  * console.log(pkg.programs)    // ["mitmproxy"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mitmproxy-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mitmproxyPackage = {
+export const mitmproxyorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const mitmproxyPackage = {
    */
   description: 'An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mitmproxy.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://mitmproxy.org' as const,
+  githubUrl: 'https://github.com/mitmproxy/mitmproxy' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mitmproxy' as const,
+  installCommand: 'launchpad install mitmproxy.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mitmproxy.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mitmproxy.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -98,13 +96,7 @@ export const mitmproxyPackage = {
     '10.1.1',
     '10.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mitmproxy -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mitmproxy' as const,
 }
 
-export type MitmproxyPackage = typeof mitmproxyPackage
+export type MitmproxyorgPackage = typeof mitmproxyorgPackage

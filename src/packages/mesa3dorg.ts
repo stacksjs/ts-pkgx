@@ -1,5 +1,5 @@
 /**
- * **mesa3d.org** - pkgx package
+ * **mesa3d** - pkgx package
  *
  * @domain `mesa3d.org`
  * @version `25.2.4` (65 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.mesa3dorg
- * console.log(pkg.name)        // "mesa3d.org"
+ * console.log(pkg.name)        // "mesa3d"
  * console.log(pkg.versions[0]) // "25.2.4" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const mesa3dorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mesa3d.org' as const,
+  name: 'mesa3d' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const mesa3dorgPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mesa3d.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install mesa3d.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mesa3d.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mesa3d.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -146,8 +148,6 @@ export const mesa3dorgPackage = {
     '23.1.7',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mesa3d.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mesa3d.org' as const,
 }
 
 export type Mesa3dorgPackage = typeof mesa3dorgPackage

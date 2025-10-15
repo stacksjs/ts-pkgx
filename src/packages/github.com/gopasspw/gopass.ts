@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/gopasspw/gopass.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgopasspwgopassPackage = {
+export const gopassPackage = {
   /**
    * The display name of this package.
    */
@@ -85,4 +85,4 @@ export const githubcomgopasspwgopassPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgopasspwgopassPackage = typeof githubcomgopasspwgopassPackage
+export type GopassPackage = typeof gopassPackage

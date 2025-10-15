@@ -1,11 +1,12 @@
 /**
- * **github.com/tox-dev/filelock** - A platform-independent file lock for Python.
+ * **filelock** - A platform-independent file lock for Python.
  *
  * @domain `github.com/tox-dev/filelock`
  * @version `3.20.0` (17 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/tox-dev/filelock`
+ * @homepage https://py-filelock.readthedocs.io
  * @dependencies `python.org>=3.11`
  *
  * @example
@@ -13,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomtoxdevfilelock
- * console.log(pkg.name)        // "github.com/tox-dev/filelock"
+ * console.log(pkg.name)        // "filelock"
  * console.log(pkg.description) // "A platform-independent file lock for Python."
  * console.log(pkg.versions[0]) // "3.20.0" (latest)
  * ```
@@ -21,11 +22,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/tox-dev/filelock.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomtoxdevfilelockPackage = {
+export const filelockPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/tox-dev/filelock' as const,
+  name: 'filelock' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,13 +36,15 @@ export const githubcomtoxdevfilelockPackage = {
    */
   description: 'A platform-independent file lock for Python.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/tox-dev/filelock/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://py-filelock.readthedocs.io' as const,
   githubUrl: 'https://github.com/tox-dev/filelock' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/tox-dev/filelock' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/tox-dev/filelock -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/tox-dev/filelock' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -75,8 +78,6 @@ export const githubcomtoxdevfilelockPackage = {
     '3.13.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/tox-dev/filelock -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/tox-dev/filelock' as const,
 }
 
-export type GithubcomtoxdevfilelockPackage = typeof githubcomtoxdevfilelockPackage
+export type FilelockPackage = typeof filelockPackage

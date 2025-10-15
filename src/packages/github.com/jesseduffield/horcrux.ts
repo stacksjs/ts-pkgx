@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jesseduffield/horcrux.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjesseduffieldhorcruxPackage = {
+export const horcruxPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomjesseduffieldhorcruxPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjesseduffieldhorcruxPackage = typeof githubcomjesseduffieldhorcruxPackage
+export type HorcruxPackage = typeof horcruxPackage

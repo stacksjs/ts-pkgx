@@ -6,18 +6,15 @@
  * @version `1.31.0` (55 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install stripe`
- * @name `stripe`
+ * @install `launchpad install stripe.com`
+ * @homepage https://stripe.com/docs/stripe-cli
+ * @dependencies `go.dev@^1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.stripe
- * // Or access via domain
- * const samePkg = pantry.stripecom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.stripecom
  * console.log(pkg.name)        // "stripe"
  * console.log(pkg.description) // "A command-line tool for Stripe"
  * console.log(pkg.programs)    // ["stripe"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/stripe-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const stripePackage = {
+export const stripecomPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const stripePackage = {
    */
   description: 'A command-line tool for Stripe' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/stripe.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://stripe.com/docs/stripe-cli' as const,
+  githubUrl: 'https://github.com/stripe/stripe-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install stripe' as const,
+  installCommand: 'launchpad install stripe.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +stripe.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install stripe.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const stripePackage = {
     'stripe',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -118,13 +123,7 @@ export const stripePackage = {
     '1.14.0',
     '1.13.12',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) stripe -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install stripe' as const,
 }
 
-export type StripePackage = typeof stripePackage
+export type StripecomPackage = typeof stripecomPackage

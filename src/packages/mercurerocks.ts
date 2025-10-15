@@ -6,18 +6,15 @@
  * @version `0.20.2` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mercure`
- * @name `mercure`
+ * @install `launchpad install mercure.rocks`
+ * @homepage https://mercure.rocks
+ * @dependencies `go.dev@^1.19`, `goreleaser.com@>=2.4.2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mercure
- * // Or access via domain
- * const samePkg = pantry.mercurerocks
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.mercurerocks
  * console.log(pkg.name)        // "mercure"
  * console.log(pkg.description) // "🪽 An open, easy, fast, reliable and battery-ef..."
  * console.log(pkg.programs)    // ["mercure"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mercure-rocks.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mercurePackage = {
+export const mercurerocksPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const mercurePackage = {
    */
   description: '🪽 An open, easy, fast, reliable and battery-efficient solution for real-time communications' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mercure.rocks/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://mercure.rocks' as const,
   githubUrl: 'https://github.com/dunglas/mercure' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mercure' as const,
+  installCommand: 'launchpad install mercure.rocks' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mercure.rocks -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mercure.rocks' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const mercurePackage = {
     'mercure',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.19',
+    'goreleaser.com@>=2.4.2',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -78,13 +84,7 @@ export const mercurePackage = {
     '0.17.0',
     '0.16.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mercure -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mercure' as const,
 }
 
-export type MercurePackage = typeof mercurePackage
+export type MercurerocksPackage = typeof mercurerocksPackage

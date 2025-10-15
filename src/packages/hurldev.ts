@@ -6,19 +6,15 @@
  * @version `7.0.0` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install hurl`
- * @name `hurl`
+ * @install `launchpad install hurl.dev`
+ * @homepage https://hurl.dev
  * @dependencies `gnome.org/libxml2~2.13 # 2.14 changed the API`, `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.hurl
- * // Or access via domain
- * const samePkg = pantry.hurldev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.hurldev
  * console.log(pkg.name)        // "hurl"
  * console.log(pkg.description) // "Run and Test HTTP Requests with plain text and ..."
  * console.log(pkg.programs)    // ["hurl", "hurlfmt"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/hurl-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const hurlPackage = {
+export const hurldevPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const hurlPackage = {
    */
   description: 'Run and Test HTTP Requests with plain text and curl' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/hurl.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://hurl.dev' as const,
+  githubUrl: 'https://github.com/Orange-OpenSource/hurl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install hurl' as const,
+  installCommand: 'launchpad install hurl.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +hurl.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hurl.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,13 +80,7 @@ export const hurlPackage = {
     '4.1.0',
     '4.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +hurl.dev -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install hurl' as const,
 }
 
-export type HurlPackage = typeof hurlPackage
+export type HurldevPackage = typeof hurldevPackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/krzysztofzablocki/Sourcery.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkrzysztofzablockisourceryPackage = {
+export const sourceryPackage = {
   /**
    * The display name of this package.
    */
@@ -84,4 +84,4 @@ export const githubcomkrzysztofzablockisourceryPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkrzysztofzablockisourceryPackage = typeof githubcomkrzysztofzablockisourceryPackage
+export type SourceryPackage = typeof sourceryPackage

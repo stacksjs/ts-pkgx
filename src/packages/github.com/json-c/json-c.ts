@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/json-c/json-c.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjsoncjsoncPackage = {
+export const jsoncPackage = {
   /**
    * The display name of this package.
    */
@@ -66,4 +66,4 @@ export const githubcomjsoncjsoncPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjsoncjsoncPackage = typeof githubcomjsoncjsoncPackage
+export type JsoncPackage = typeof jsoncPackage

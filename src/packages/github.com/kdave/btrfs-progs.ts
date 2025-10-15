@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/kdave/btrfs-progs.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkdavebtrfsprogsPackage = {
+export const btrfsprogsPackage = {
   /**
    * The display name of this package.
    */
@@ -102,4 +102,4 @@ export const githubcomkdavebtrfsprogsPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkdavebtrfsprogsPackage = typeof githubcomkdavebtrfsprogsPackage
+export type BtrfsprogsPackage = typeof btrfsprogsPackage

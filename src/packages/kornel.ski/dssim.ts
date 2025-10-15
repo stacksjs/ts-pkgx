@@ -6,18 +6,14 @@
  * @version `3.4.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install dssim`
- * @name `dssim`
+ * @install `launchpad install kornel.ski/dssim`
+ * @homepage https://kornel.ski/dssim
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dssim
- * // Or access via domain
- * const samePkg = pantry.kornelskidssim
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.kornelskidssim
  * console.log(pkg.name)        // "dssim"
  * console.log(pkg.description) // "Image similarity comparison simulating human pe..."
  * console.log(pkg.programs)    // ["dssim"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kornel-ski/dssim.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dssimPackage = {
+export const kornelskidssimPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const dssimPackage = {
    */
   description: 'Image similarity comparison simulating human perception (multiscale SSIM in Rust)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kornel.ski/dssim/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://kornel.ski/dssim' as const,
+  githubUrl: 'https://github.com/kornelski/dssim' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install dssim' as const,
+  installCommand: 'launchpad install kornel.ski/dssim' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kornel.ski/dssim -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kornel.ski/dssim' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,13 +63,7 @@ export const dssimPackage = {
     '3.4.0',
     '3.2.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dssim -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install dssim' as const,
 }
 
-export type DssimPackage = typeof dssimPackage
+export type KornelskidssimPackage = typeof kornelskidssimPackage

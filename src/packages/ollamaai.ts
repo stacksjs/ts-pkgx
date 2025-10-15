@@ -6,19 +6,15 @@
  * @version `0.12.5` (121 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ollama`
- * @name `ollama`
+ * @install `launchpad install ollama.ai`
+ * @homepage https://ollama.com/
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ollama
- * // Or access via domain
- * const samePkg = pantry.ollamaai
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ollamaai
  * console.log(pkg.name)        // "ollama"
  * console.log(pkg.description) // "Get up and running with Llama 3.3, DeepSeek-R1,..."
  * console.log(pkg.programs)    // ["ollama"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ollama-ai.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ollamaPackage = {
+export const ollamaaiPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const ollamaPackage = {
    */
   description: 'Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ollama.ai/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://ollama.com/' as const,
   githubUrl: 'https://github.com/ollama/ollama' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ollama' as const,
+  installCommand: 'launchpad install ollama.ai' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ollama.ai -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ollama.ai' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -191,13 +189,7 @@ export const ollamaPackage = {
     '0.0.18',
     '0.0.17',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ollama -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ollama' as const,
 }
 
-export type OllamaPackage = typeof ollamaPackage
+export type OllamaaiPackage = typeof ollamaaiPackage

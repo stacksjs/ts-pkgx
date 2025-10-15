@@ -1,25 +1,20 @@
 /**
- * **text-generation-webui** - A Gradio web UI for Large Language Models with support for multiple inference backends.
+ * **text generation web UI** - A Gradio web UI for Large Language Models with support for multiple inference backends.
  *
  * @domain `github.com/oobabooga/text-generation-webui`
  * @programs `text-generation-webui`
  * @version `3.14.0` (46 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install text-generation-webui`
- * @name `text-generation-webui`
+ * @install `launchpad install github.com/oobabooga/text-generation-webui`
  * @dependencies `python.org~3.10`, `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.textgenerationwebui
- * // Or access via domain
- * const samePkg = pantry.githubcomoobaboogatextgenerationwebui
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "text-generation-webui"
+ * const pkg = pantry.githubcomoobaboogatextgenerationwebui
+ * console.log(pkg.name)        // "text generation web UI"
  * console.log(pkg.description) // "A Gradio web UI for Large Language Models with ..."
  * console.log(pkg.programs)    // ["text-generation-webui"]
  * console.log(pkg.versions[0]) // "3.14.0" (latest)
@@ -32,7 +27,7 @@ export const textgenerationwebuiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'text-generation-webui' as const,
+  name: 'text generation web UI' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,12 +38,14 @@ export const textgenerationwebuiPackage = {
   description: 'A Gradio web UI for Large Language Models with support for multiple inference backends.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/oobabooga/text-generation-webui/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/oobabooga/text-generation-webui' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install text-generation-webui' as const,
+  installCommand: 'launchpad install github.com/oobabooga/text-generation-webui' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/oobabooga/text-generation-webui -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/oobabooga/text-generation-webui' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -117,13 +114,7 @@ export const textgenerationwebuiPackage = {
     '1.6.0',
     '1.5.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) text-generation-webui -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install text-generation-webui' as const,
 }
 
 export type TextgenerationwebuiPackage = typeof textgenerationwebuiPackage

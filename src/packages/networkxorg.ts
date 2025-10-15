@@ -1,11 +1,12 @@
 /**
- * **networkx.org** - Network Analysis in Python
+ * **networkx** - Network Analysis in Python
  *
  * @domain `networkx.org`
  * @version `3.5.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install networkx.org`
+ * @homepage https://networkx.org
  * @dependencies `python.org>=3.11`
  *
  * @example
@@ -13,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.networkxorg
- * console.log(pkg.name)        // "networkx.org"
+ * console.log(pkg.name)        // "networkx"
  * console.log(pkg.description) // "Network Analysis in Python"
  * console.log(pkg.versions[0]) // "3.5.0" (latest)
  * ```
@@ -25,7 +26,7 @@ export const networkxorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'networkx.org' as const,
+  name: 'networkx' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,13 +36,15 @@ export const networkxorgPackage = {
    */
   description: 'Network Analysis in Python' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/networkx.org/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://networkx.org' as const,
   githubUrl: 'https://github.com/networkx/networkx' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install networkx.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +networkx.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install networkx.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -64,8 +67,6 @@ export const networkxorgPackage = {
     '3.2.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +networkx.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install networkx.org' as const,
 }
 
 export type NetworkxorgPackage = typeof networkxorgPackage

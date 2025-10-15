@@ -6,19 +6,15 @@
  * @version `6.3.3` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install xpra`
- * @name `xpra`
+ * @install `launchpad install xpra.org`
+ * @homepage https://xpra.org/
  * @dependencies `pkgx.sh^1`, `python.org~3.11`, `tukaani.org/xz`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.xpra
- * // Or access via domain
- * const samePkg = pantry.xpraorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.xpraorg
  * console.log(pkg.name)        // "xpra"
  * console.log(pkg.description) // "Persistent remote applications for X11; screen ..."
  * console.log(pkg.programs)    // ["xpra"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/xpra-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xpraPackage = {
+export const xpraorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const xpraPackage = {
    */
   description: 'Persistent remote applications for X11; screen sharing for X11, MacOS and MSWindows.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/xpra.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://xpra.org/' as const,
+  githubUrl: 'https://github.com/Xpra-org/xpra' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install xpra' as const,
+  installCommand: 'launchpad install xpra.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +xpra.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xpra.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -89,13 +87,7 @@ export const xpraPackage = {
     '6.1.3',
     '6.1.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xpra -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install xpra' as const,
 }
 
-export type XpraPackage = typeof xpraPackage
+export type XpraorgPackage = typeof xpraorgPackage

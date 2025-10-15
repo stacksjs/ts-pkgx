@@ -6,20 +6,15 @@
  * @version `5.4.8` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install lua`
- * @name `lua`
+ * @install `launchpad install lua.org`
+ * @homepage https://www.lua.org/
  * @dependencies `gnu.org/readline`
- * @companions `luarocks.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.lua
- * // Or access via domain
- * const samePkg = pantry.luaorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.luaorg
  * console.log(pkg.name)        // "lua"
  * console.log(pkg.description) // "Powerful, lightweight programming language"
  * console.log(pkg.programs)    // ["lua", "luac"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/lua-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const luaPackage = {
+export const luaorgPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const luaPackage = {
    */
   description: 'Powerful, lightweight programming language' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lua.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.lua.org/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install lua' as const,
+  installCommand: 'launchpad install lua.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lua.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lua.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -58,13 +55,7 @@ export const luaPackage = {
     'lua',
     'luac',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'luarocks.org',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -82,13 +73,7 @@ export const luaPackage = {
     '5.4.6',
     '5.4.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lua.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install lua' as const,
 }
 
-export type LuaPackage = typeof luaPackage
+export type LuaorgPackage = typeof luaorgPackage

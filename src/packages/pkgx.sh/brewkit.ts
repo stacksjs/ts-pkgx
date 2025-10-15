@@ -1,25 +1,19 @@
 /**
- * **bk** - build infra & `$ bk build`
+ * **brewkit** - build infra & `$ bk build`
  *
  * @domain `pkgx.sh/brewkit`
  * @programs `bk`
  * @version `1.16.0` (61 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install bk`
- * @name `brewkit`
- * @aliases `bk`
+ * @install `launchpad install pkgx.sh/brewkit`
  * @dependencies `deno.land~1.39  # 1.40 shouts unskippable deprecation warnings`, `gnu.org/bash^5`, `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.bk
- * // Or access via domain
- * const samePkg = pantry.pkgxshbrewkit
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pkgxshbrewkit
  * console.log(pkg.name)        // "brewkit"
  * console.log(pkg.description) // "build infra & `$ bk build`"
  * console.log(pkg.programs)    // ["bk"]
@@ -29,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pkgx-sh/brewkit.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bkPackage = {
+export const pkgxshbrewkitPackage = {
   /**
    * The display name of this package.
    */
@@ -44,12 +38,14 @@ export const bkPackage = {
   description: 'build infra & `$ bk build`' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/brewkit/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/pkgxdev/brewkit' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install bk' as const,
+  installCommand: 'launchpad install pkgx.sh/brewkit' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pkgx.sh/brewkit -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pkgx.sh/brewkit' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -134,15 +130,7 @@ export const bkPackage = {
     '0.46.2',
     '0.46.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'bk',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bk -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install bk' as const,
+  aliases: [] as const,
 }
 
-export type BkPackage = typeof bkPackage
+export type PkgxshbrewkitPackage = typeof pkgxshbrewkitPackage

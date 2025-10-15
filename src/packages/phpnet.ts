@@ -7,19 +7,20 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install php.net`
- * @aliases `php`
+ * @name `php`
+ * @homepage https://www.php.net/
  * @dependencies `gnu.org/bison^3`, `re2c.org^3`, `apache.org/apr^1`, ... (+27 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.php
  * // Or access via domain
  * const samePkg = pantry.phpnet
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "php.net"
+ * console.log(pkg.name)        // "php"
  * console.log(pkg.description) // "General-purpose scripting language"
  * console.log(pkg.programs)    // ["pear", "pecl", ...]
  * console.log(pkg.versions[0]) // "8.4.13" (latest)
@@ -32,7 +33,7 @@ export const phpPackage = {
   /**
    * The display name of this package.
    */
-  name: 'php.net' as const,
+  name: 'php' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,13 +43,15 @@ export const phpPackage = {
    */
   description: 'General-purpose scripting language' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/php.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.php.net/' as const,
+  githubUrl: 'https://github.com/php/php-src' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install php.net' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +php.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install php.net' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -194,11 +197,7 @@ export const phpPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'php',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +php.net -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install php.net' as const,
+  aliases: [] as const,
 }
 
 export type PhpPackage = typeof phpPackage

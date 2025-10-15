@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/99designs/aws-vault.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcom99designsawsvaultPackage = {
+export const awsvaultPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcom99designsawsvaultPackage = {
   aliases: [] as const,
 }
 
-export type Githubcom99designsawsvaultPackage = typeof githubcom99designsawsvaultPackage
+export type AwsvaultPackage = typeof awsvaultPackage

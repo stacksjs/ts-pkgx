@@ -6,19 +6,15 @@
  * @version `5.5.1` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install tesseract`
- * @name `tesseract`
+ * @install `launchpad install tesseract-ocr.github.io`
+ * @homepage https://github.com/tesseract-ocr/
  * @dependencies `cairographics.org@1`, `unicode.org@71`, `leptonica.org`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.tesseract
- * // Or access via domain
- * const samePkg = pantry.tesseractocrgithubio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.tesseractocrgithubio
  * console.log(pkg.name)        // "tesseract"
  * console.log(pkg.description) // "Tesseract Open Source OCR Engine (main repository)"
  * console.log(pkg.programs)    // ["tesseract"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tesseract-ocr-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tesseractPackage = {
+export const tesseractocrgithubioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const tesseractPackage = {
    */
   description: 'Tesseract Open Source OCR Engine (main repository)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tesseract-ocr.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://github.com/tesseract-ocr/' as const,
+  githubUrl: 'https://github.com/tesseract-ocr/tesseract' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tesseract' as const,
+  installCommand: 'launchpad install tesseract-ocr.github.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tesseract-ocr.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tesseract-ocr.github.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -83,13 +81,7 @@ export const tesseractPackage = {
     '5.3.1',
     '5.3.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tesseract -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tesseract' as const,
 }
 
-export type TesseractPackage = typeof tesseractPackage
+export type TesseractocrgithubioPackage = typeof tesseractocrgithubioPackage

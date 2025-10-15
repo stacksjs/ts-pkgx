@@ -6,19 +6,15 @@
  * @version `3.6.0` (38 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install OpenSSL`
- * @name `OpenSSL`
+ * @install `launchpad install openssl.org`
+ * @homepage https://quictls.github.io/openssl
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.OpenSSL
- * // Or access via domain
- * const samePkg = pantry.opensslorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.opensslorg
  * console.log(pkg.name)        // "OpenSSL"
  * console.log(pkg.description) // "TLS/SSL and crypto library with QUIC APIs"
  * console.log(pkg.programs)    // ["openssl", "c_rehash"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/openssl-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const openSSLPackage = {
+export const opensslorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const openSSLPackage = {
    */
   description: 'TLS/SSL and crypto library with QUIC APIs' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openssl.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://quictls.github.io/openssl' as const,
+  githubUrl: 'https://github.com/quictls/openssl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install OpenSSL' as const,
+  installCommand: 'launchpad install openssl.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openssl.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openssl.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -109,13 +107,7 @@ export const openSSLPackage = {
     '1.1.1t',
     '1.1.1s',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openssl.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install OpenSSL' as const,
 }
 
-export type OpenSSLPackage = typeof openSSLPackage
+export type OpensslorgPackage = typeof opensslorgPackage

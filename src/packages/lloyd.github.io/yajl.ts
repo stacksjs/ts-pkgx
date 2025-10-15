@@ -6,18 +6,15 @@
  * @version `2.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install json`
- * @name `json`
+ * @install `launchpad install lloyd.github.io/yajl`
+ * @homepage https://lloyd.github.io/yajl/
+ * @dependencies `cmake.org`, `linux:gnu.org/gcc`, `linux:gnu.org/make` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.json
- * // Or access via domain
- * const samePkg = pantry.lloydgithubioyajl
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.lloydgithubioyajl
  * console.log(pkg.name)        // "json"
  * console.log(pkg.description) // "A fast streaming JSON parsing library in C."
  * console.log(pkg.programs)    // ["json_reformat", "json_verify"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/lloyd-github-io/yajl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jsonPackage = {
+export const lloydgithubioyajlPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const jsonPackage = {
    */
   description: 'A fast streaming JSON parsing library in C.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lloyd.github.io/yajl/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://lloyd.github.io/yajl/' as const,
+  githubUrl: 'https://github.com/lloyd/yajl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install json' as const,
+  installCommand: 'launchpad install lloyd.github.io/yajl' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lloyd.github.io/yajl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lloyd.github.io/yajl' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +56,16 @@ export const jsonPackage = {
     'json_verify',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   */
+  dependencies: [
+    'cmake.org',
+    'linux:gnu.org/gcc',
+    'linux:gnu.org/make',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -65,13 +73,7 @@ export const jsonPackage = {
   versions: [
     '2.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lloyd.github.io/yajl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install json' as const,
 }
 
-export type JsonPackage = typeof jsonPackage
+export type LloydgithubioyajlPackage = typeof lloydgithubioyajlPackage

@@ -6,19 +6,15 @@
  * @version `3.4.1` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install htop`
- * @name `htop`
+ * @install `launchpad install htop.dev`
+ * @homepage https://htop.dev/
  * @dependencies `invisible-island.net/ncurses@6`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.htop
- * // Or access via domain
- * const samePkg = pantry.htopdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.htopdev
  * console.log(pkg.name)        // "htop"
  * console.log(pkg.description) // "Improved top (interactive process viewer)"
  * console.log(pkg.programs)    // ["htop"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/htop-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const htopPackage = {
+export const htopdevPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const htopPackage = {
    */
   description: 'Improved top (interactive process viewer)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/htop.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://htop.dev/' as const,
+  githubUrl: 'https://github.com/htop-dev/htop' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install htop' as const,
+  installCommand: 'launchpad install htop.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +htop.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install htop.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,13 +73,7 @@ export const htopPackage = {
     '3.2.2',
     '3.2.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) htop -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install htop' as const,
 }
 
-export type HtopPackage = typeof htopPackage
+export type HtopdevPackage = typeof htopdevPackage

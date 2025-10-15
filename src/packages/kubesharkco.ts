@@ -6,18 +6,15 @@
  * @version `72.3.83` (60 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install kubeshark`
- * @name `kubeshark`
+ * @install `launchpad install kubeshark.co`
+ * @homepage https://www.kubeshark.co/
+ * @dependencies `go.dev@^1.19`, `gnu.org/make`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.kubeshark
- * // Or access via domain
- * const samePkg = pantry.kubesharkco
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.kubesharkco
  * console.log(pkg.name)        // "kubeshark"
  * console.log(pkg.description) // "The API traffic analyzer for Kubernetes providi..."
  * console.log(pkg.programs)    // ["kubeshark"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kubeshark-co.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kubesharkPackage = {
+export const kubesharkcoPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const kubesharkPackage = {
    */
   description: 'The API traffic analyzer for Kubernetes providing real-time K8s protocol-level visibility, capturing and monitoring all traffic and payloads going in, out and across containers, pods, nodes and clusters. Inspired by Wireshark, purposely built for Kubernetes' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kubeshark.co/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://www.kubeshark.co/' as const,
   githubUrl: 'https://github.com/kubeshark/kubeshark' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install kubeshark' as const,
+  installCommand: 'launchpad install kubeshark.co' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kubeshark.co -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kubeshark.co' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const kubesharkPackage = {
     'kubeshark',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.19',
+    'gnu.org/make',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -123,13 +129,7 @@ export const kubesharkPackage = {
     '51.0.14',
     '51.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kubeshark -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install kubeshark' as const,
 }
 
-export type KubesharkPackage = typeof kubesharkPackage
+export type KubesharkcoPackage = typeof kubesharkcoPackage

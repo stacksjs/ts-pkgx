@@ -6,18 +6,15 @@
  * @version `0.93.2` (43 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install iroh`
- * @name `iroh`
+ * @install `launchpad install iroh.computer`
+ * @homepage https://iroh.computer
+ * @dependencies `linux:gnu.org/gcc@14` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.iroh
- * // Or access via domain
- * const samePkg = pantry.irohcomputer
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.irohcomputer
  * console.log(pkg.name)        // "iroh"
  * console.log(pkg.description) // "peer-2-peer that just works"
  * console.log(pkg.programs)    // ["iroh"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/iroh-computer.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const irohPackage = {
+export const irohcomputerPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const irohPackage = {
    */
   description: 'peer-2-peer that just works' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/iroh.computer/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://iroh.computer' as const,
+  githubUrl: 'https://github.com/n0-computer/iroh' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install iroh' as const,
+  installCommand: 'launchpad install iroh.computer' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +iroh.computer -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install iroh.computer' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const irohPackage = {
     'iroh',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   */
+  dependencies: [
+    'linux:gnu.org/gcc@14',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -106,13 +112,7 @@ export const irohPackage = {
     '0.6.0',
     '0.4.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) iroh -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install iroh' as const,
 }
 
-export type IrohPackage = typeof irohPackage
+export type IrohcomputerPackage = typeof irohcomputerPackage

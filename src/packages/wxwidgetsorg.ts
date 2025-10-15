@@ -1,5 +1,5 @@
 /**
- * **wxwidgets.org** - Cross-Platform C++ GUI Library
+ * **wxwidgets** - Cross-Platform C++ GUI Library
  *
  * @domain `wxwidgets.org`
  * @programs `wx-config`, `wxrc`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install wxwidgets.org`
+ * @homepage https://www.wxwidgets.org
  * @dependencies `libjpeg-turbo.org`, `libpng.org`, `simplesystems.org/libtiff`, ... (+6 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.wxwidgetsorg
- * console.log(pkg.name)        // "wxwidgets.org"
+ * console.log(pkg.name)        // "wxwidgets"
  * console.log(pkg.description) // "Cross-Platform C++ GUI Library"
  * console.log(pkg.programs)    // ["wx-config", "wxrc"]
  * console.log(pkg.versions[0]) // "3.3.1" (latest)
@@ -27,7 +28,7 @@ export const wxwidgetsorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'wxwidgets.org' as const,
+  name: 'wxwidgets' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const wxwidgetsorgPackage = {
    */
   description: 'Cross-Platform C++ GUI Library' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wxwidgets.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.wxwidgets.org' as const,
+  githubUrl: 'https://github.com/wxWidgets/wxWidgets' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install wxwidgets.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wxwidgets.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wxwidgets.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -85,8 +88,6 @@ export const wxwidgetsorgPackage = {
     '3.2.3',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wxwidgets.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install wxwidgets.org' as const,
 }
 
 export type WxwidgetsorgPackage = typeof wxwidgetsorgPackage

@@ -6,19 +6,15 @@
  * @version `5.9.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install zsh`
- * @name `zsh`
+ * @install `launchpad install zsh.sourceforge.io`
+ * @homepage https://www.zsh.org/
  * @dependencies `invisible-island.net/ncurses`, `pcre.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.zsh
- * // Or access via domain
- * const samePkg = pantry.zshsourceforgeio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.zshsourceforgeio
  * console.log(pkg.name)        // "zsh"
  * console.log(pkg.description) // "UNIX shell (command interpreter)"
  * console.log(pkg.programs)    // ["zsh"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/zsh-sourceforge-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zshPackage = {
+export const zshsourceforgeioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const zshPackage = {
    */
   description: 'UNIX shell (command interpreter)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/zsh.sourceforge.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.zsh.org/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install zsh' as const,
+  installCommand: 'launchpad install zsh.sourceforge.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +zsh.sourceforge.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zsh.sourceforge.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +70,7 @@ export const zshPackage = {
   versions: [
     '5.9.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zsh -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install zsh' as const,
 }
 
-export type ZshPackage = typeof zshPackage
+export type ZshsourceforgeioPackage = typeof zshsourceforgeioPackage

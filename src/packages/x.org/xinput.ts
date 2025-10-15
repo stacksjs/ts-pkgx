@@ -6,19 +6,15 @@
  * @version `1.6.4` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install xinput`
- * @name `xinput`
+ * @install `launchpad install x.org/xinput`
+ * @homepage https://gitlab.freedesktop.org/xorg/app/xinput
  * @dependencies `x.org/x11`, `x.org/exts`, `x.org/xi`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.xinput
- * // Or access via domain
- * const samePkg = pantry.xorgxinput
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.xorgxinput
  * console.log(pkg.name)        // "xinput"
  * console.log(pkg.description) // "Utility to configure and test X input devices"
  * console.log(pkg.programs)    // ["xinput"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/x-org/xinput.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xinputPackage = {
+export const xorgxinputPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const xinputPackage = {
    */
   description: 'Utility to configure and test X input devices' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xinput/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://gitlab.freedesktop.org/xorg/app/xinput' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install xinput' as const,
+  installCommand: 'launchpad install x.org/xinput' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xinput -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/xinput' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,13 +73,7 @@ export const xinputPackage = {
   versions: [
     '1.6.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xinput -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install xinput' as const,
 }
 
-export type XinputPackage = typeof xinputPackage
+export type XorgxinputPackage = typeof xorgxinputPackage

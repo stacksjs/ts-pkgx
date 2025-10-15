@@ -6,19 +6,15 @@
  * @version `2.4.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install s3cmd`
- * @name `s3cmd`
+ * @install `launchpad install s3tools.org/s3cmd`
+ * @homepage https://s3tools.org/s3cmd
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.s3cmd
- * // Or access via domain
- * const samePkg = pantry.s3toolsorgs3cmd
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.s3toolsorgs3cmd
  * console.log(pkg.name)        // "s3cmd"
  * console.log(pkg.description) // "Official s3cmd repo -- Command line tool for ma..."
  * console.log(pkg.programs)    // ["s3cmd"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/s3tools-org/s3cmd.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const s3cmdPackage = {
+export const s3toolsorgs3cmdPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const s3cmdPackage = {
    */
   description: 'Official s3cmd repo -- Command line tool for managing S3 compatible storage services (including Amazon S3 and CloudFront).' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/s3tools.org/s3cmd/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://s3tools.org/s3cmd' as const,
+  githubUrl: 'https://github.com/s3tools/s3cmd' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install s3cmd' as const,
+  installCommand: 'launchpad install s3tools.org/s3cmd' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +s3tools.org/s3cmd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install s3tools.org/s3cmd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +69,7 @@ export const s3cmdPackage = {
   versions: [
     '2.4.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) s3cmd -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install s3cmd' as const,
 }
 
-export type S3cmdPackage = typeof s3cmdPackage
+export type S3toolsorgs3cmdPackage = typeof s3toolsorgs3cmdPackage

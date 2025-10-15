@@ -6,18 +6,14 @@
  * @version `6.2.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install strace`
- * @name `strace`
+ * @install `launchpad install strace.io`
+ * @homepage https://strace.io/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.strace
- * // Or access via domain
- * const samePkg = pantry.straceio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.straceio
  * console.log(pkg.name)        // "strace"
  * console.log(pkg.description) // "strace is a diagnostic, debugging and instructi..."
  * console.log(pkg.programs)    // ["strace"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/strace-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const stracePackage = {
+export const straceioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const stracePackage = {
    */
   description: 'strace is a diagnostic, debugging and instructional userspace utility for Linux' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/strace.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://strace.io/' as const,
+  githubUrl: 'https://github.com/strace/strace' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install strace' as const,
+  installCommand: 'launchpad install strace.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +strace.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install strace.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +62,7 @@ export const stracePackage = {
   versions: [
     '6.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) strace -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install strace' as const,
 }
 
-export type StracePackage = typeof stracePackage
+export type StraceioPackage = typeof straceioPackage

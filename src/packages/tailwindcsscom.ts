@@ -6,18 +6,15 @@
  * @version `4.1.14` (49 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install tailwindcss`
- * @name `tailwindcss`
+ * @install `launchpad install tailwindcss.com`
+ * @homepage https://tailwindcss.com
+ * @dependencies `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.tailwindcss
- * // Or access via domain
- * const samePkg = pantry.tailwindcsscom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.tailwindcsscom
  * console.log(pkg.name)        // "tailwindcss"
  * console.log(pkg.description) // "A utility-first CSS framework for rapid UI deve..."
  * console.log(pkg.programs)    // ["tailwindcss"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tailwindcss-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tailwindcssPackage = {
+export const tailwindcsscomPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const tailwindcssPackage = {
    */
   description: 'A utility-first CSS framework for rapid UI development.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tailwindcss.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://tailwindcss.com' as const,
+  githubUrl: 'https://github.com/tailwindlabs/tailwindcss' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tailwindcss' as const,
+  installCommand: 'launchpad install tailwindcss.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tailwindcss.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tailwindcss.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const tailwindcssPackage = {
     'tailwindcss',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'curl.se',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -112,13 +117,7 @@ export const tailwindcssPackage = {
     '3.4.4',
     '3.4.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tailwindcss -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tailwindcss' as const,
 }
 
-export type TailwindcssPackage = typeof tailwindcssPackage
+export type TailwindcsscomPackage = typeof tailwindcsscomPackage

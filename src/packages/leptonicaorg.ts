@@ -1,5 +1,5 @@
 /**
- * **leptonica.org** - Leptonica is an open source library containing software that is broadly useful for image processing and image analysis applications. The official github repository for Leptonica is: danbloomberg/leptonica.  See leptonica.org for more documentation.
+ * **leptonica** - Leptonica is an open source library containing software that is broadly useful for image processing and image analysis applications. The official github repository for Leptonica is: danbloomberg/leptonica.  See leptonica.org for more documentation.
  *
  * @domain `leptonica.org`
  * @programs `convertfilestopdf`, `convertfilestops`, `convertformat`, `convertsegfilestopdf`, `convertsegfilestops`, ... (+5 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install leptonica.org`
+ * @homepage http://www.leptonica.org/
  * @dependencies `giflib.sourceforge.io@5`, `libjpeg-turbo.org@2`, `libpng.org@1`, ... (+3 more)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.leptonicaorg
- * console.log(pkg.name)        // "leptonica.org"
+ * console.log(pkg.name)        // "leptonica"
  * console.log(pkg.description) // "Leptonica is an open source library containing ..."
  * console.log(pkg.programs)    // ["convertfilestopdf", "convertfilestops", ...]
  * console.log(pkg.versions[0]) // "1.86.0" (latest)
@@ -27,7 +28,7 @@ export const leptonicaorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'leptonica.org' as const,
+  name: 'leptonica' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const leptonicaorgPackage = {
    */
   description: 'Leptonica is an open source library containing software that is broadly useful for image processing and image analysis applications. The official github repository for Leptonica is: danbloomberg/leptonica.  See leptonica.org for more documentation.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/leptonica.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://www.leptonica.org/' as const,
+  githubUrl: 'https://github.com/DanBloomberg/leptonica' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install leptonica.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +leptonica.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install leptonica.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -85,8 +88,6 @@ export const leptonicaorgPackage = {
     '1.83.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +leptonica.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install leptonica.org' as const,
 }
 
 export type LeptonicaorgPackage = typeof leptonicaorgPackage

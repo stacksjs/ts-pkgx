@@ -1,11 +1,12 @@
 /**
- * **libsdl.org** - Simple Directmedia Layer
+ * **libsdl** - Simple Directmedia Layer
  *
  * @domain `libsdl.org`
  * @version `3.2.24` (39 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install libsdl.org`
+ * @homepage https://libsdl.org
  * @dependencies `linux:x.org/x11`, `linux:x.org/xcursor`, `linux:x.org/xi`, ... (+5 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -13,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.libsdlorg
- * console.log(pkg.name)        // "libsdl.org"
+ * console.log(pkg.name)        // "libsdl"
  * console.log(pkg.description) // "Simple Directmedia Layer"
  * console.log(pkg.versions[0]) // "3.2.24" (latest)
  * ```
@@ -25,7 +26,7 @@ export const libsdlorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libsdl.org' as const,
+  name: 'libsdl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,13 +36,15 @@ export const libsdlorgPackage = {
    */
   description: 'Simple Directmedia Layer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libsdl.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://libsdl.org' as const,
+  githubUrl: 'https://github.com/libsdl-org/SDL' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install libsdl.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libsdl.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libsdl.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -105,8 +108,6 @@ export const libsdlorgPackage = {
     '2.26.5',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libsdl.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libsdl.org' as const,
 }
 
 export type LibsdlorgPackage = typeof libsdlorgPackage

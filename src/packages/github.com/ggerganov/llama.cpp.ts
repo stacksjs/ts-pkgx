@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/ggerganov/llama-cpp.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomggerganovllamacppPackage = {
+export const llamacppPackage = {
   /**
    * The display name of this package.
    */
@@ -3535,4 +3535,4 @@ export const githubcomggerganovllamacppPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomggerganovllamacppPackage = typeof githubcomggerganovllamacppPackage
+export type LlamacppPackage = typeof llamacppPackage

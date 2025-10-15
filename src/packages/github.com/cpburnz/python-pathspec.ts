@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/cpburnz/python-pathspec.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcpburnzpythonpathspecPackage = {
+export const pythonpathspecPackage = {
   /**
    * The display name of this package.
    */
@@ -63,4 +63,4 @@ export const githubcomcpburnzpythonpathspecPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcpburnzpythonpathspecPackage = typeof githubcomcpburnzpythonpathspecPackage
+export type PythonpathspecPackage = typeof pythonpathspecPackage

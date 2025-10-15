@@ -1,5 +1,5 @@
 /**
- * **smartmontools.org** - SMART hard drive monitoring
+ * **smartmontools** - SMART hard drive monitoring
  *
  * @domain `smartmontools.org`
  * @programs `smartctl`, `smartd`
@@ -7,13 +7,14 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install smartmontools.org`
+ * @homepage https://www.smartmontools.org/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.smartmontoolsorg
- * console.log(pkg.name)        // "smartmontools.org"
+ * console.log(pkg.name)        // "smartmontools"
  * console.log(pkg.description) // "SMART hard drive monitoring"
  * console.log(pkg.programs)    // ["smartctl", "smartd"]
  * console.log(pkg.versions[0]) // "7.5.0" (latest)
@@ -26,7 +27,7 @@ export const smartmontoolsorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'smartmontools.org' as const,
+  name: 'smartmontools' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,13 +37,15 @@ export const smartmontoolsorgPackage = {
    */
   description: 'SMART hard drive monitoring' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/smartmontools.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.smartmontools.org/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install smartmontools.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +smartmontools.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install smartmontools.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -63,8 +66,6 @@ export const smartmontoolsorgPackage = {
     '7.3.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +smartmontools.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install smartmontools.org' as const,
 }
 
 export type SmartmontoolsorgPackage = typeof smartmontoolsorgPackage

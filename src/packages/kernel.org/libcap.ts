@@ -6,18 +6,13 @@
  * @version `1.2.76` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install libcap`
- * @name `libcap`
+ * @install `launchpad install kernel.org/libcap`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.libcap
- * // Or access via domain
- * const samePkg = pantry.kernelorglibcap
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.kernelorglibcap
  * console.log(pkg.name)        // "libcap"
  * console.log(pkg.programs)    // ["capsh", "getcap", ...]
  * console.log(pkg.versions[0]) // "1.2.76" (latest)
@@ -26,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kernel-org/libcap.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libcapPackage = {
+export const kernelorglibcapPackage = {
   /**
    * The display name of this package.
    */
@@ -41,12 +36,14 @@ export const libcapPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kernel.org/libcap/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install libcap' as const,
+  installCommand: 'launchpad install kernel.org/libcap' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kernel.org/libcap -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kernel.org/libcap' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,13 +66,7 @@ export const libcapPackage = {
     '1.2.74',
     '1.2.73',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kernel.org/libcap -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libcap' as const,
 }
 
-export type LibcapPackage = typeof libcapPackage
+export type KernelorglibcapPackage = typeof kernelorglibcapPackage

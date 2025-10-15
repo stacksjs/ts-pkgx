@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/kubecolor/kubecolor.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkubecolorkubecolorPackage = {
+export const kubecolorPackage = {
   /**
    * The display name of this package.
    */
@@ -80,4 +80,4 @@ export const githubcomkubecolorkubecolorPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkubecolorkubecolorPackage = typeof githubcomkubecolorkubecolorPackage
+export type KubecolorPackage = typeof kubecolorPackage

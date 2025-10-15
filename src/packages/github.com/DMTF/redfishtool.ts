@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/DMTF/redfishtool.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomdmtfredfishtoolPackage = {
+export const redfishtoolPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomdmtfredfishtoolPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomdmtfredfishtoolPackage = typeof githubcomdmtfredfishtoolPackage
+export type RedfishtoolPackage = typeof redfishtoolPackage

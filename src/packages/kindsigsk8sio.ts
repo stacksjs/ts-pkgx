@@ -6,18 +6,15 @@
  * @version `0.30.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install kind`
- * @name `kind`
+ * @install `launchpad install kind.sigs.k8s.io`
+ * @homepage https://kind.sigs.k8s.io/
+ * @dependencies `go.dev@^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.kind
- * // Or access via domain
- * const samePkg = pantry.kindsigsk8sio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.kindsigsk8sio
  * console.log(pkg.name)        // "kind"
  * console.log(pkg.description) // "Kubernetes IN Docker - local clusters for testi..."
  * console.log(pkg.programs)    // ["kind"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kind-sigs-k8s-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kindPackage = {
+export const kindsigsk8sioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const kindPackage = {
    */
   description: 'Kubernetes IN Docker - local clusters for testing Kubernetes' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kind.sigs.k8s.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://kind.sigs.k8s.io/' as const,
+  githubUrl: 'https://github.com/kubernetes-sigs/kind' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install kind' as const,
+  installCommand: 'launchpad install kind.sigs.k8s.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kind.sigs.k8s.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kind.sigs.k8s.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const kindPackage = {
     'kind',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -75,13 +80,7 @@ export const kindPackage = {
     '0.20.0',
     '0.19.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kind -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install kind' as const,
 }
 
-export type KindPackage = typeof kindPackage
+export type Kindsigsk8sioPackage = typeof kindsigsk8sioPackage

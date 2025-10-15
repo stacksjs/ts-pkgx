@@ -6,18 +6,13 @@
  * @version `7.8.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rswift`
- * @name `rswift`
+ * @install `launchpad install github.com/mac-cain13/R.swift`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rswift
- * // Or access via domain
- * const samePkg = pantry.githubcommaccain13rswift
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcommaccain13rswift
  * console.log(pkg.name)        // "rswift"
  * console.log(pkg.description) // "Strong typed, autocompleted resources like imag..."
  * console.log(pkg.programs)    // ["rswift"]
@@ -42,12 +37,14 @@ export const rswiftPackage = {
   description: 'Strong typed, autocompleted resources like images, fonts and segues in Swift projects' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mac-cain13/R.swift/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/mac-cain13/R.swift' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rswift' as const,
+  installCommand: 'launchpad install github.com/mac-cain13/R.swift' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/mac-cain13/R.swift -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/mac-cain13/R.swift' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,13 +67,7 @@ export const rswiftPackage = {
     '7.4.0',
     '7.3.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rswift -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rswift' as const,
 }
 
 export type RswiftPackage = typeof rswiftPackage

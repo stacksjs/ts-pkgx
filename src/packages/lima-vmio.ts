@@ -1,5 +1,5 @@
 /**
- * **lima-vm.io** - Linux virtual machines, with a focus on running containers
+ * **lima-vm** - Linux virtual machines, with a focus on running containers
  *
  * @domain `lima-vm.io`
  * @programs `apptainer.lima`, `docker.lima`, `kubectl.lima`, `lima`, `limactl`, ... (+2 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install lima-vm.io`
+ * @homepage https://lima-vm.io/
  * @dependencies `qemu.org`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.limavmio
- * console.log(pkg.name)        // "lima-vm.io"
+ * console.log(pkg.name)        // "lima-vm"
  * console.log(pkg.description) // "Linux virtual machines, with a focus on running..."
  * console.log(pkg.programs)    // ["apptainer.lima", "docker.lima", ...]
  * console.log(pkg.versions[0]) // "1.2.1" (latest)
@@ -27,7 +28,7 @@ export const limavmioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'lima-vm.io' as const,
+  name: 'lima-vm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const limavmioPackage = {
    */
   description: 'Linux virtual machines, with a focus on running containers' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lima-vm.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://lima-vm.io/' as const,
+  githubUrl: 'https://github.com/lima-vm/lima' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install lima-vm.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lima-vm.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lima-vm.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -99,8 +102,6 @@ export const limavmioPackage = {
     '0.16.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lima-vm.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install lima-vm.io' as const,
 }
 
 export type LimavmioPackage = typeof limavmioPackage

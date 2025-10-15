@@ -6,18 +6,14 @@
  * @version `0.19.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install marionette`
- * @name `marionette`
+ * @install `launchpad install github.com/skx/marionette`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.marionette
- * // Or access via domain
- * const samePkg = pantry.githubcomskxmarionette
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomskxmarionette
  * console.log(pkg.name)        // "marionette"
  * console.log(pkg.description) // "Something like puppet, for the localhost only."
  * console.log(pkg.programs)    // ["marionette"]
@@ -42,12 +38,14 @@ export const marionettePackage = {
   description: 'Something like puppet, for the localhost only.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/skx/marionette/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/skx/marionette' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install marionette' as const,
+  installCommand: 'launchpad install github.com/skx/marionette' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/skx/marionette -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/skx/marionette' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const marionettePackage = {
     'marionette',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -65,13 +69,7 @@ export const marionettePackage = {
     '0.19.0',
     '0.18.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) marionette -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install marionette' as const,
 }
 
 export type MarionettePackage = typeof marionettePackage

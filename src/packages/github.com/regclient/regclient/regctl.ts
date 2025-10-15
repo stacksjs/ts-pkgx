@@ -6,19 +6,14 @@
  * @version `0.9.2` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install regctl`
- * @name `regctl`
+ * @install `launchpad install github.com/regclient/regclient/regctl`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.regctl
- * // Or access via domain
- * const samePkg = pantry.githubcomregclientregclientregctl
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomregclientregclientregctl
  * console.log(pkg.name)        // "regctl"
  * console.log(pkg.description) // "Docker and OCI Registry Client in Go and toolin..."
  * console.log(pkg.programs)    // ["regctl"]
@@ -48,7 +43,9 @@ export const regctlPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install regctl' as const,
+  installCommand: 'launchpad install github.com/regclient/regclient/regctl' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/regclient/regclient/regctl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/regclient/regclient/regctl' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -88,13 +85,7 @@ export const regctlPackage = {
     '0.5.3',
     '0.5.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) regctl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install regctl' as const,
 }
 
 export type RegctlPackage = typeof regctlPackage

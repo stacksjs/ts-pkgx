@@ -6,18 +6,15 @@
  * @version `2.0.3` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install aac-enc`
- * @name `aac-enc`
+ * @install `launchpad install sourceforge.net/opencore-amr`
+ * @homepage https://sourceforge.net/projects/opencore-amr/
+ * @dependencies `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.aacenc
- * // Or access via domain
- * const samePkg = pantry.sourceforgenetopencoreamr
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sourceforgenetopencoreamr
  * console.log(pkg.name)        // "aac-enc"
  * console.log(pkg.description) // "Standalone library of the Fraunhofer FDK AAC co..."
  * console.log(pkg.programs)    // ["aac-enc"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sourceforge-net/opencore-amr.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const aacencPackage = {
+export const sourceforgenetopencoreamrPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const aacencPackage = {
    */
   description: 'Standalone library of the Fraunhofer FDK AAC code from Android' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/opencore-amr/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://sourceforge.net/projects/opencore-amr/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install aac-enc' as const,
+  installCommand: 'launchpad install sourceforge.net/opencore-amr' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceforge.net/opencore-amr -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sourceforge.net/opencore-amr' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const aacencPackage = {
     'aac-enc',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   */
+  dependencies: [
+    'linux:gnu.org/gcc',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -65,13 +71,7 @@ export const aacencPackage = {
     '2.0.3',
     '2.0.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aac-enc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install aac-enc' as const,
 }
 
-export type AacencPackage = typeof aacencPackage
+export type SourceforgenetopencoreamrPackage = typeof sourceforgenetopencoreamrPackage

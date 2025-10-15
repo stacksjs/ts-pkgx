@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/caarlos0/org-stats.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcaarlos0orgstatsPackage = {
+export const orgstatsPackage = {
   /**
    * The display name of this package.
    */
@@ -74,4 +74,4 @@ export const githubcomcaarlos0orgstatsPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomcaarlos0orgstatsPackage = typeof githubcomcaarlos0orgstatsPackage
+export type OrgstatsPackage = typeof orgstatsPackage

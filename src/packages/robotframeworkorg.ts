@@ -6,19 +6,15 @@
  * @version `7.3.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install robot`
- * @name `robot`
+ * @install `launchpad install robotframework.org`
+ * @homepage https://robotframework.org/
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.robot
- * // Or access via domain
- * const samePkg = pantry.robotframeworkorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.robotframeworkorg
  * console.log(pkg.name)        // "robot"
  * console.log(pkg.description) // "Generic automation framework for acceptance tes..."
  * console.log(pkg.programs)    // ["robot"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/robotframework-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const robotPackage = {
+export const robotframeworkorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const robotPackage = {
    */
   description: 'Generic automation framework for acceptance testing and RPA' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/robotframework.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://robotframework.org/' as const,
+  githubUrl: 'https://github.com/robotframework/robotframework' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install robot' as const,
+  installCommand: 'launchpad install robotframework.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +robotframework.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install robotframework.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,13 +72,7 @@ export const robotPackage = {
     '7.3.0',
     '7.2.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) robot -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install robot' as const,
 }
 
-export type RobotPackage = typeof robotPackage
+export type RobotframeworkorgPackage = typeof robotframeworkorgPackage

@@ -1,5 +1,5 @@
 /**
- * **libgd.github.io** - Graphics library to dynamically manipulate images
+ * **libgd.github** - Graphics library to dynamically manipulate images
  *
  * @domain `libgd.github.io`
  * @programs `bdftogd`, `gd2copypal`, `gd2togif`, `gdcmpgif`, `giftogd2`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install libgd.github.io`
+ * @homepage https://libgd.github.io/
  * @dependencies `freedesktop.org/fontconfig`, `freetype.org`, `libjpeg-turbo.org`, ... (+5 more)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.libgdgithubio
- * console.log(pkg.name)        // "libgd.github.io"
+ * console.log(pkg.name)        // "libgd.github"
  * console.log(pkg.description) // "Graphics library to dynamically manipulate images"
  * console.log(pkg.programs)    // ["bdftogd", "gd2copypal", ...]
  * console.log(pkg.versions[0]) // "2.3.3" (latest)
@@ -27,7 +28,7 @@ export const libgdgithubioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libgd.github.io' as const,
+  name: 'libgd.github' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const libgdgithubioPackage = {
    */
   description: 'Graphics library to dynamically manipulate images' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libgd.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://libgd.github.io/' as const,
+  githubUrl: 'https://github.com/libgd/libgd' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install libgd.github.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libgd.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libgd.github.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,8 +81,6 @@ export const libgdgithubioPackage = {
     '2.3.3',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libgd.github.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libgd.github.io' as const,
 }
 
 export type LibgdgithubioPackage = typeof libgdgithubioPackage

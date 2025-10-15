@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/dloebl/cgif.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomdloeblcgifPackage = {
+export const cgifPackage = {
   /**
    * The display name of this package.
    */
@@ -67,4 +67,4 @@ export const githubcomdloeblcgifPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomdloeblcgifPackage = typeof githubcomdloeblcgifPackage
+export type CgifPackage = typeof cgifPackage

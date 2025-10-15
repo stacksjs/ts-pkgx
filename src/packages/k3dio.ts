@@ -6,18 +6,15 @@
  * @version `5.8.3` (17 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install k3d`
- * @name `k3d`
+ * @install `launchpad install k3d.io`
+ * @homepage https://k3d.io
+ * @dependencies `go.dev@^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.k3d
- * // Or access via domain
- * const samePkg = pantry.k3dio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.k3dio
  * console.log(pkg.name)        // "k3d"
  * console.log(pkg.description) // "Little helper to run CNCF's k3s in Docker"
  * console.log(pkg.programs)    // ["k3d"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/k3d-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const k3dPackage = {
+export const k3dioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const k3dPackage = {
    */
   description: 'Little helper to run CNCF\'s k3s in Docker' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/k3d.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://k3d.io' as const,
+  githubUrl: 'https://github.com/k3d-io/k3d' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install k3d' as const,
+  installCommand: 'launchpad install k3d.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +k3d.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install k3d.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const k3dPackage = {
     'k3d',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -80,13 +85,7 @@ export const k3dPackage = {
     '5.5.0',
     '5.4.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) k3d -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install k3d' as const,
 }
 
-export type K3dPackage = typeof k3dPackage
+export type K3dioPackage = typeof k3dioPackage

@@ -6,18 +6,15 @@
  * @version `1.12.0` (22 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install julia`
- * @name `julia`
+ * @install `launchpad install julialang.org`
+ * @homepage https://julialang.org/
+ * @dependencies `curl.se`, `gnu.org/tar`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.julia
- * // Or access via domain
- * const samePkg = pantry.julialangorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.julialangorg
  * console.log(pkg.name)        // "julia"
  * console.log(pkg.description) // "The Julia Programming Language"
  * console.log(pkg.programs)    // ["julia"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/julialang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const juliaPackage = {
+export const julialangorgPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const juliaPackage = {
    */
   description: 'The Julia Programming Language' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/julialang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://julialang.org/' as const,
+  githubUrl: 'https://github.com/JuliaLang/julia' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install julia' as const,
+  installCommand: 'launchpad install julialang.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +julialang.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install julialang.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const juliaPackage = {
     'julia',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'curl.se',
+    'gnu.org/tar',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -85,13 +91,7 @@ export const juliaPackage = {
     '1.9.4',
     '1.9.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) julia -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install julia' as const,
 }
 
-export type JuliaPackage = typeof juliaPackage
+export type JulialangorgPackage = typeof julialangorgPackage

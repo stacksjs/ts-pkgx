@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/igor-petruk/scriptisto.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomigorpetrukscriptistoPackage = {
+export const scriptistoPackage = {
   /**
    * The display name of this package.
    */
@@ -65,4 +65,4 @@ export const githubcomigorpetrukscriptistoPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomigorpetrukscriptistoPackage = typeof githubcomigorpetrukscriptistoPackage
+export type ScriptistoPackage = typeof scriptistoPackage

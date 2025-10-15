@@ -6,19 +6,15 @@
  * @version `5.15.1` (56 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install symfony`
- * @name `symfony`
+ * @install `launchpad install symfony.com`
+ * @homepage https://symfony.com/download
  * @dependencies `php.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.symfony
- * // Or access via domain
- * const samePkg = pantry.symfonycom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.symfonycom
  * console.log(pkg.name)        // "symfony"
  * console.log(pkg.description) // "The Symfony CLI tool"
  * console.log(pkg.programs)    // ["symfony"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/symfony-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const symfonyPackage = {
+export const symfonycomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const symfonyPackage = {
    */
   description: 'The Symfony CLI tool' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/symfony.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://symfony.com/download' as const,
+  githubUrl: 'https://github.com/symfony-cli/symfony-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install symfony' as const,
+  installCommand: 'launchpad install symfony.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +symfony.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install symfony.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -126,13 +124,7 @@ export const symfonyPackage = {
     '5.5.8',
     '5.5.7',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) symfony -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install symfony' as const,
 }
 
-export type SymfonyPackage = typeof symfonyPackage
+export type SymfonycomPackage = typeof symfonycomPackage

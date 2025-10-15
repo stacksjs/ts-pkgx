@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/adamritter/fastgron.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomadamritterfastgronPackage = {
+export const fastgronPackage = {
   /**
    * The display name of this package.
    */
@@ -73,4 +73,4 @@ export const githubcomadamritterfastgronPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomadamritterfastgronPackage = typeof githubcomadamritterfastgronPackage
+export type FastgronPackage = typeof fastgronPackage

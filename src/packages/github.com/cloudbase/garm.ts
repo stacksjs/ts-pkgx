@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/cloudbase/garm.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcloudbasegarmPackage = {
+export const garmPackage = {
   /**
    * The display name of this package.
    */
@@ -74,4 +74,4 @@ export const githubcomcloudbasegarmPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcloudbasegarmPackage = typeof githubcomcloudbasegarmPackage
+export type GarmPackage = typeof garmPackage

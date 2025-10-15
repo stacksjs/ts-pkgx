@@ -6,20 +6,15 @@
  * @version `0.91.0` (29 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install cargo`
- * @name `cargo`
+ * @install `launchpad install rust-lang.org/cargo`
+ * @homepage https://doc.rust-lang.org/cargo
  * @dependencies `zlib.net^1`, `libgit2.org~1.7 # links to libgit2.so.1.7`, `curl.se/ca-certs`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
- * @companions `git-scm.org`, `rust-lang.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cargo
- * // Or access via domain
- * const samePkg = pantry.rustlangorgcargo
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.rustlangorgcargo
  * console.log(pkg.name)        // "cargo"
  * console.log(pkg.description) // "The Rust package manager"
  * console.log(pkg.programs)    // ["cargo"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rust-lang-org/cargo.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cargoPackage = {
+export const rustlangorgcargoPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const cargoPackage = {
    */
   description: 'The Rust package manager' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.org/cargo/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://doc.rust-lang.org/cargo' as const,
+  githubUrl: 'https://github.com/rust-lang/cargo' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cargo' as const,
+  installCommand: 'launchpad install rust-lang.org/cargo' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rust-lang.org/cargo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rust-lang.org/cargo' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,14 +54,7 @@ export const cargoPackage = {
   programs: [
     'cargo',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'git-scm.org',
-    'rust-lang.org',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -112,13 +102,7 @@ export const cargoPackage = {
     '0.66.0',
     '0.65.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cargo -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cargo' as const,
 }
 
-export type CargoPackage = typeof cargoPackage
+export type RustlangorgcargoPackage = typeof rustlangorgcargoPackage

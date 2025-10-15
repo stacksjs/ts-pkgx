@@ -6,19 +6,14 @@
  * @version `2.6.15` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install openvpn`
- * @name `openvpn`
+ * @install `launchpad install openvpn.net`
  * @dependencies `lz4.org^1.9`, `oberhumer.com/lzo^2.10`, `openssl.org^1.1`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.openvpn
- * // Or access via domain
- * const samePkg = pantry.openvpnnet
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.openvpnnet
  * console.log(pkg.name)        // "openvpn"
  * console.log(pkg.programs)    // ["openvpn"]
  * console.log(pkg.versions[0]) // "2.6.15" (latest)
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/openvpn-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const openvpnPackage = {
+export const openvpnnetPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const openvpnPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openvpn.net/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install openvpn' as const,
+  installCommand: 'launchpad install openvpn.net' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openvpn.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openvpn.net' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -87,13 +84,7 @@ export const openvpnPackage = {
     '2.6.4',
     '2.5.10',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) openvpn -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install openvpn' as const,
 }
 
-export type OpenvpnPackage = typeof openvpnPackage
+export type OpenvpnnetPackage = typeof openvpnnetPackage

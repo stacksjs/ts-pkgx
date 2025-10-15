@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/daixiang0/gci.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomdaixiang0gciPackage = {
+export const gciPackage = {
   /**
    * The display name of this package.
    */
@@ -84,4 +84,4 @@ export const githubcomdaixiang0gciPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomdaixiang0gciPackage = typeof githubcomdaixiang0gciPackage
+export type GciPackage = typeof gciPackage

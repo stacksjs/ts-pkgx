@@ -1,5 +1,5 @@
 /**
- * **kerberos.org** - mirror of MIT krb5 repository
+ * **kerberos** - mirror of MIT krb5 repository
  *
  * @domain `kerberos.org`
  * @programs `compile_et`, `gss-client`, `k5srvutil`, `kadmin`, `kdestroy`, ... (+22 more)
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.kerberosorg
- * console.log(pkg.name)        // "kerberos.org"
+ * console.log(pkg.name)        // "kerberos"
  * console.log(pkg.description) // "mirror of MIT krb5 repository"
  * console.log(pkg.programs)    // ["compile_et", "gss-client", ...]
  * console.log(pkg.versions[0]) // "1.22.1" (latest)
@@ -27,7 +27,7 @@ export const kerberosorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'kerberos.org' as const,
+  name: 'kerberos' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -38,12 +38,14 @@ export const kerberosorgPackage = {
   description: 'mirror of MIT krb5 repository' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kerberos.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/krb5/krb5' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install kerberos.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kerberos.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kerberos.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -100,8 +102,6 @@ export const kerberosorgPackage = {
     '1.20.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kerberos.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install kerberos.org' as const,
 }
 
 export type KerberosorgPackage = typeof kerberosorgPackage

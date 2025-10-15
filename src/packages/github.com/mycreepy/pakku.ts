@@ -6,18 +6,14 @@
  * @version `0.5.1` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pakku`
- * @name `pakku`
+ * @install `launchpad install github.com/mycreepy/pakku`
+ * @dependencies `go.dev@^1.23`, `goreleaser.com`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pakku
- * // Or access via domain
- * const samePkg = pantry.githubcommycreepypakku
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcommycreepypakku
  * console.log(pkg.name)        // "pakku"
  * console.log(pkg.description) // "pakku is a declarative approach to your system ..."
  * console.log(pkg.programs)    // ["pakku"]
@@ -47,7 +43,9 @@ export const pakkuPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pakku' as const,
+  installCommand: 'launchpad install github.com/mycreepy/pakku' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/mycreepy/pakku -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/mycreepy/pakku' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,14 @@ export const pakkuPackage = {
     'pakku',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.23',
+    'goreleaser.com',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -72,13 +77,7 @@ export const pakkuPackage = {
     '0.2.0',
     '0.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pakku -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pakku' as const,
 }
 
 export type PakkuPackage = typeof pakkuPackage

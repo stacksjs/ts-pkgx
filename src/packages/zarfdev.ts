@@ -6,18 +6,14 @@
  * @version `0.63.0` (55 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install zarf`
- * @name `zarf`
+ * @install `launchpad install zarf.dev`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.zarf
- * // Or access via domain
- * const samePkg = pantry.zarfdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.zarfdev
  * console.log(pkg.name)        // "zarf"
  * console.log(pkg.description) // "DevSecOps for Air Gap & Limited-Connection Syst..."
  * console.log(pkg.programs)    // ["zarf"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/zarf-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zarfPackage = {
+export const zarfdevPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const zarfPackage = {
   description: 'DevSecOps for Air Gap & Limited-Connection Systems. https://zarf.dev/' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/zarf.dev/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/defenseunicorns/zarf' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install zarf' as const,
+  installCommand: 'launchpad install zarf.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +zarf.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zarf.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const zarfPackage = {
     'zarf',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -118,13 +122,7 @@ export const zarfPackage = {
     '0.32.2',
     '0.32.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zarf -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install zarf' as const,
 }
 
-export type ZarfPackage = typeof zarfPackage
+export type ZarfdevPackage = typeof zarfdevPackage

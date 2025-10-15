@@ -6,18 +6,14 @@
  * @version `5.7.0` (38 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install koyeb`
- * @name `koyeb`
+ * @install `launchpad install koyeb.com`
+ * @dependencies `go.dev@^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.koyeb
- * // Or access via domain
- * const samePkg = pantry.koyebcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.koyebcom
  * console.log(pkg.name)        // "koyeb"
  * console.log(pkg.description) // "Koyeb cli"
  * console.log(pkg.programs)    // ["koyeb"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/koyeb-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const koyebPackage = {
+export const koyebcomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const koyebPackage = {
   description: 'Koyeb cli' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/koyeb.com/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/koyeb/koyeb-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install koyeb' as const,
+  installCommand: 'launchpad install koyeb.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +koyeb.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install koyeb.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const koyebPackage = {
     'koyeb',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -101,13 +105,7 @@ export const koyebPackage = {
     '3.0.2',
     '3.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) koyeb -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install koyeb' as const,
 }
 
-export type KoyebPackage = typeof koyebPackage
+export type KoyebcomPackage = typeof koyebcomPackage

@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/XcodesOrg/xcodes.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomxcodesorgxcodesPackage = {
+export const xcodesPackage = {
   /**
    * The display name of this package.
    */
@@ -68,4 +68,4 @@ export const githubcomxcodesorgxcodesPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomxcodesorgxcodesPackage = typeof githubcomxcodesorgxcodesPackage
+export type XcodesPackage = typeof xcodesPackage

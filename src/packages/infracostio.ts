@@ -6,18 +6,15 @@
  * @version `0.10.42` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install infracost`
- * @name `infracost`
+ * @install `launchpad install infracost.io`
+ * @homepage https://www.infracost.io/docs/
+ * @dependencies `go.dev@^1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.infracost
- * // Or access via domain
- * const samePkg = pantry.infracostio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.infracostio
  * console.log(pkg.name)        // "infracost"
  * console.log(pkg.description) // "Cloud cost estimates for Terraform in pull requ..."
  * console.log(pkg.programs)    // ["infracost"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/infracost-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const infracostPackage = {
+export const infracostioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const infracostPackage = {
    */
   description: 'Cloud cost estimates for Terraform in pull requests💰📉 Shift FinOps Left!' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/infracost.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.infracost.io/docs/' as const,
+  githubUrl: 'https://github.com/infracost/infracost' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install infracost' as const,
+  installCommand: 'launchpad install infracost.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +infracost.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install infracost.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const infracostPackage = {
     'infracost',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -74,13 +79,7 @@ export const infracostPackage = {
     '0.10.33',
     '0.10.32',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) infracost -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install infracost' as const,
 }
 
-export type InfracostPackage = typeof infracostPackage
+export type InfracostioPackage = typeof infracostioPackage

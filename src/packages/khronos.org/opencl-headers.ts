@@ -1,18 +1,19 @@
 /**
- * **khronos.org/opencl-headers** - Khronos OpenCL-Headers
+ * **opencl-headers** - Khronos OpenCL-Headers
  *
  * @domain `khronos.org/opencl-headers`
  * @version `2025.7.22` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install khronos.org/opencl-headers`
+ * @dependencies `gnu.org/make`, `cmake.org`, `python.org@~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.khronosorgopenclheaders
- * console.log(pkg.name)        // "khronos.org/opencl-headers"
+ * console.log(pkg.name)        // "opencl-headers"
  * console.log(pkg.description) // "Khronos OpenCL-Headers"
  * console.log(pkg.versions[0]) // "2025.7.22" (latest)
  * ```
@@ -24,7 +25,7 @@ export const khronosorgopenclheadersPackage = {
   /**
    * The display name of this package.
    */
-  name: 'khronos.org/opencl-headers' as const,
+  name: 'opencl-headers' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,15 +36,25 @@ export const khronosorgopenclheadersPackage = {
   description: 'Khronos OpenCL-Headers' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/khronos.org/opencl-headers/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/KhronosGroup/OpenCL-Headers' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install khronos.org/opencl-headers' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +khronos.org/opencl-headers -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install khronos.org/opencl-headers' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/make',
+    'cmake.org',
+    'python.org@~3.11',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -56,8 +67,6 @@ export const khronosorgopenclheadersPackage = {
     '2023.4.17',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +khronos.org/opencl-headers -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install khronos.org/opencl-headers' as const,
 }
 
 export type KhronosorgopenclheadersPackage = typeof khronosorgopenclheadersPackage

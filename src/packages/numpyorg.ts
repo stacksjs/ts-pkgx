@@ -6,20 +6,15 @@
  * @version `2.3.3` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install f2py`
- * @name `f2py`
+ * @install `launchpad install numpy.org`
+ * @homepage https://www.numpy.org/
  * @dependencies `openblas.net^0.3`, `python.org^3.11`
- * @companions `gnu.org/gcc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.f2py
- * // Or access via domain
- * const samePkg = pantry.numpyorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.numpyorg
  * console.log(pkg.name)        // "f2py"
  * console.log(pkg.description) // "The fundamental package for scientific computin..."
  * console.log(pkg.programs)    // ["f2py"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/numpy-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const f2pyPackage = {
+export const numpyorgPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const f2pyPackage = {
    */
   description: 'The fundamental package for scientific computing with Python.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/numpy.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.numpy.org/' as const,
+  githubUrl: 'https://github.com/numpy/numpy' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install f2py' as const,
+  installCommand: 'launchpad install numpy.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +numpy.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install numpy.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,13 +54,7 @@ export const f2pyPackage = {
   programs: [
     'f2py',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'gnu.org/gcc',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -99,13 +90,7 @@ export const f2pyPackage = {
     '1.26.3',
     '1.26.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) f2py -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install f2py' as const,
 }
 
-export type F2pyPackage = typeof f2pyPackage
+export type NumpyorgPackage = typeof numpyorgPackage

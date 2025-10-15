@@ -1,5 +1,5 @@
 /**
- * **gnutls.org** - pkgx package
+ * **gnutls** - pkgx package
  *
  * @domain `gnutls.org`
  * @programs `certtool`, `danetool`, `gnutls-cli`, `gnutls-cli-debug`, `gnutls-serv`, ... (+3 more)
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnutlsorg
- * console.log(pkg.name)        // "gnutls.org"
+ * console.log(pkg.name)        // "gnutls"
  * console.log(pkg.programs)    // ["certtool", "danetool", ...]
  * console.log(pkg.versions[0]) // "3.8.10" (latest)
  * ```
@@ -26,7 +26,7 @@ export const gnutlsorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnutls.org' as const,
+  name: 'gnutls' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,12 +37,14 @@ export const gnutlsorgPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnutls.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnutls.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnutls.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnutls.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -91,8 +93,6 @@ export const gnutlsorgPackage = {
     '3.6.16',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnutls.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnutls.org' as const,
 }
 
 export type GnutlsorgPackage = typeof gnutlsorgPackage

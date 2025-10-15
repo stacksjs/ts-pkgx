@@ -6,19 +6,15 @@
  * @version `1.4.2` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install daff`
- * @name `daff`
+ * @install `launchpad install paulfitz.github.io/daff`
+ * @homepage https://paulfitz.github.io/daff
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.daff
- * // Or access via domain
- * const samePkg = pantry.paulfitzgithubiodaff
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.paulfitzgithubiodaff
  * console.log(pkg.name)        // "daff"
  * console.log(pkg.description) // "align and compare tables"
  * console.log(pkg.programs)    // ["daff"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/paulfitz-github-io/daff.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const daffPackage = {
+export const paulfitzgithubiodaffPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const daffPackage = {
    */
   description: 'align and compare tables' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/paulfitz.github.io/daff/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://paulfitz.github.io/daff' as const,
+  githubUrl: 'https://github.com/paulfitz/daff' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install daff' as const,
+  installCommand: 'launchpad install paulfitz.github.io/daff' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +paulfitz.github.io/daff -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install paulfitz.github.io/daff' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +70,7 @@ export const daffPackage = {
     '1.4.2',
     '1.3.46',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) daff -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install daff' as const,
 }
 
-export type DaffPackage = typeof daffPackage
+export type PaulfitzgithubiodaffPackage = typeof paulfitzgithubiodaffPackage

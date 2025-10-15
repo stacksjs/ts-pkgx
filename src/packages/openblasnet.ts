@@ -1,18 +1,20 @@
 /**
- * **openblas.net** - OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version.
+ * **openblas** - OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version. 
  *
  * @domain `openblas.net`
  * @version `0.3.30` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openblas.net`
+ * @homepage http://www.openblas.net
+ * @dependencies `cmake.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.openblasnet
- * console.log(pkg.name)        // "openblas.net"
+ * console.log(pkg.name)        // "openblas"
  * console.log(pkg.description) // "OpenBLAS is an optimized BLAS library based on ..."
  * console.log(pkg.versions[0]) // "0.3.30" (latest)
  * ```
@@ -24,7 +26,7 @@ export const openblasnetPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openblas.net' as const,
+  name: 'openblas' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -32,18 +34,26 @@ export const openblasnetPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version.' as const,
+  description: 'OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version. ' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openblas.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://www.openblas.net' as const,
+  githubUrl: 'https://github.com/xianyi/OpenBLAS' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install openblas.net' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openblas.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openblas.net' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -59,8 +69,6 @@ export const openblasnetPackage = {
     '0.3.23',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openblas.net -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install openblas.net' as const,
 }
 
 export type OpenblasnetPackage = typeof openblasnetPackage

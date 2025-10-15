@@ -6,19 +6,15 @@
  * @version `2.3.0` (292 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install openai`
- * @name `openai`
+ * @install `launchpad install openai.com/openai-python`
+ * @homepage https://pypi.org/project/openai/
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.openai
- * // Or access via domain
- * const samePkg = pantry.openaicomopenaipython
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.openaicomopenaipython
  * console.log(pkg.name)        // "openai"
  * console.log(pkg.description) // "The official Python library for the OpenAI API"
  * console.log(pkg.programs)    // ["openai"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/openai-com/openai-python.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const openaiPackage = {
+export const openaicomopenaipythonPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const openaiPackage = {
    */
   description: 'The official Python library for the OpenAI API' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openai.com/openai-python/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://pypi.org/project/openai/' as const,
+  githubUrl: 'https://github.com/openai/openai-python' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install openai' as const,
+  installCommand: 'launchpad install openai.com/openai-python' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openai.com/openai-python -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openai.com/openai-python' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -362,13 +360,7 @@ export const openaiPackage = {
     '0.27.3',
     '0.27.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) openai -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install openai' as const,
 }
 
-export type OpenaiPackage = typeof openaiPackage
+export type OpenaicomopenaipythonPackage = typeof openaicomopenaipythonPackage

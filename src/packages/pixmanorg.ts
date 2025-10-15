@@ -1,5 +1,5 @@
 /**
- * **pixman.org** - pkgx package
+ * **pixman** - pkgx package
  *
  * @domain `pixman.org`
  * @version `0.40.0` (1 versions available)
@@ -12,7 +12,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.pixmanorg
- * console.log(pkg.name)        // "pixman.org"
+ * console.log(pkg.name)        // "pixman"
  * console.log(pkg.versions[0]) // "0.40.0" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const pixmanorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pixman.org' as const,
+  name: 'pixman' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,12 +34,14 @@ export const pixmanorgPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pixman.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/freedesktop/pixman' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install pixman.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pixman.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pixman.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -51,8 +53,6 @@ export const pixmanorgPackage = {
     '0.40.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pixman.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pixman.org' as const,
 }
 
 export type PixmanorgPackage = typeof pixmanorgPackage

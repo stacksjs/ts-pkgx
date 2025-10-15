@@ -1,5 +1,5 @@
 /**
- * **langchain.com** - 🦜🔗 Build context-aware reasoning applications
+ * **langchain** - 🦜🔗 Build context-aware reasoning applications
  *
  * @domain `langchain.com`
  * @programs `f2py`, `jsondiff`, `jsonpatch`, `jsonpointer`, `langchain-server`, ... (+2 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install langchain.com`
+ * @homepage https://python.langchain.com
  * @dependencies `python.org^3.12`, `docker.com/compose^2.23`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.langchaincom
- * console.log(pkg.name)        // "langchain.com"
+ * console.log(pkg.name)        // "langchain"
  * console.log(pkg.description) // "🦜🔗 Build context-aware reasoning applications"
  * console.log(pkg.programs)    // ["f2py", "jsondiff", ...]
  * console.log(pkg.versions[0]) // "0.1.16" (latest)
@@ -27,7 +28,7 @@ export const langchaincomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'langchain.com' as const,
+  name: 'langchain' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const langchaincomPackage = {
    */
   description: '🦜🔗 Build context-aware reasoning applications' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/langchain.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://python.langchain.com' as const,
+  githubUrl: 'https://github.com/langchain-ai/langchain' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install langchain.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +langchain.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install langchain.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -102,8 +105,6 @@ export const langchaincomPackage = {
     '0.0.343',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +langchain.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install langchain.com' as const,
 }
 
 export type LangchaincomPackage = typeof langchaincomPackage

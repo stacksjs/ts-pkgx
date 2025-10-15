@@ -6,19 +6,15 @@
  * @version `1.41.1` (16 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install operator-sdk`
- * @name `operator-sdk`
+ * @install `launchpad install operatorframework.io/operator-sdk`
+ * @homepage https://sdk.operatorframework.io/
  * @dependencies `go.dev^1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.operatorsdk
- * // Or access via domain
- * const samePkg = pantry.operatorframeworkiooperatorsdk
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.operatorframeworkiooperatorsdk
  * console.log(pkg.name)        // "operator-sdk"
  * console.log(pkg.description) // "SDK for building Kubernetes applications. Provi..."
  * console.log(pkg.programs)    // ["operator-sdk"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/operatorframework-io/operator-sdk.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const operatorsdkPackage = {
+export const operatorframeworkiooperatorsdkPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const operatorsdkPackage = {
    */
   description: 'SDK for building Kubernetes applications. Provides high level APIs, useful abstractions, and project scaffolding.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/operatorframework.io/operator-sdk/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://sdk.operatorframework.io/' as const,
   githubUrl: 'https://github.com/operator-framework/operator-sdk' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install operator-sdk' as const,
+  installCommand: 'launchpad install operatorframework.io/operator-sdk' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +operatorframework.io/operator-sdk -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install operatorframework.io/operator-sdk' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -86,13 +84,7 @@ export const operatorsdkPackage = {
     '1.33.0',
     '1.32.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) operator-sdk -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install operator-sdk' as const,
 }
 
-export type OperatorsdkPackage = typeof operatorsdkPackage
+export type OperatorframeworkiooperatorsdkPackage = typeof operatorframeworkiooperatorsdkPackage

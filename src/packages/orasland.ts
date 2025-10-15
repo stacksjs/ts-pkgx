@@ -6,18 +6,15 @@
  * @version `1.3.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install oras`
- * @name `oras`
+ * @install `launchpad install oras.land`
+ * @homepage https://oras.land
+ * @dependencies `go.dev@^1.19`, `goreleaser.com`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.oras
- * // Or access via domain
- * const samePkg = pantry.orasland
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.orasland
  * console.log(pkg.name)        // "oras"
  * console.log(pkg.description) // "OCI registry client - managing content like art..."
  * console.log(pkg.programs)    // ["oras"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/oras-land.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const orasPackage = {
+export const oraslandPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const orasPackage = {
    */
   description: 'OCI registry client - managing content like artifacts, images, packages' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/oras.land/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://oras.land' as const,
   githubUrl: 'https://github.com/oras-project/oras' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install oras' as const,
+  installCommand: 'launchpad install oras.land' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +oras.land -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install oras.land' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const orasPackage = {
     'oras',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.19',
+    'goreleaser.com',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -68,13 +74,7 @@ export const orasPackage = {
     '1.2.1',
     '1.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) oras -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install oras' as const,
 }
 
-export type OrasPackage = typeof orasPackage
+export type OraslandPackage = typeof oraslandPackage

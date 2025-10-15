@@ -1,5 +1,5 @@
 /**
- * **plocate.sesse.net** - pkgx package
+ * **plocate.sesse** - pkgx package
  *
  * @domain `plocate.sesse.net`
  * @programs `plocate`, `plocate-build`, `updatedb`
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.plocatesessenet
- * console.log(pkg.name)        // "plocate.sesse.net"
+ * console.log(pkg.name)        // "plocate.sesse"
  * console.log(pkg.programs)    // ["plocate", "plocate-build", ...]
  * console.log(pkg.versions[0]) // "1.1.23" (latest)
  * ```
@@ -26,7 +26,7 @@ export const plocatesessenetPackage = {
   /**
    * The display name of this package.
    */
-  name: 'plocate.sesse.net' as const,
+  name: 'plocate.sesse' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,12 +37,14 @@ export const plocatesessenetPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/plocate.sesse.net/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install plocate.sesse.net' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +plocate.sesse.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install plocate.sesse.net' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,8 +72,6 @@ export const plocatesessenetPackage = {
     '1.1.22',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +plocate.sesse.net -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install plocate.sesse.net' as const,
 }
 
 export type PlocatesessenetPackage = typeof plocatesessenetPackage

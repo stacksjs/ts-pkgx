@@ -6,19 +6,15 @@
  * @version `0.1.3` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install cvt`
- * @name `cvt`
+ * @install `launchpad install x.org/libcvt`
+ * @homepage https://www.x.org
  * @dependencies `x.org/x11^1`, `x.org/exts`, `x.org/protocol`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cvt
- * // Or access via domain
- * const samePkg = pantry.xorglibcvt
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.xorglibcvt
  * console.log(pkg.name)        // "cvt"
  * console.log(pkg.description) // "VESA CVT standard timing modelines generator"
  * console.log(pkg.programs)    // ["cvt"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/x-org/libcvt.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cvtPackage = {
+export const xorglibcvtPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const cvtPackage = {
    */
   description: 'VESA CVT standard timing modelines generator' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/libcvt/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.x.org' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cvt' as const,
+  installCommand: 'launchpad install x.org/libcvt' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/libcvt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/libcvt' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,13 +72,7 @@ export const cvtPackage = {
     '0.1.3',
     '0.1.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cvt -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cvt' as const,
 }
 
-export type CvtPackage = typeof cvtPackage
+export type XorglibcvtPackage = typeof xorglibcvtPackage

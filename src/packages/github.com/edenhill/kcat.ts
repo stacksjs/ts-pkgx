@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/edenhill/kcat.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomedenhillkcatPackage = {
+export const kcatPackage = {
   /**
    * The display name of this package.
    */
@@ -74,4 +74,4 @@ export const githubcomedenhillkcatPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomedenhillkcatPackage = typeof githubcomedenhillkcatPackage
+export type KcatPackage = typeof kcatPackage

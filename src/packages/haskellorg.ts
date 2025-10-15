@@ -1,5 +1,5 @@
 /**
- * **haskell.org** - Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).
+ * **haskell** - Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).
  *
  * @domain `haskell.org`
  * @programs `ghc`, `ghc-{{version.marketing}}`, `ghc-{{version}}`, `ghc-pkg`, `ghc-pkg-{{version.marketing}}`, ... (+23 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install haskell.org`
+ * @homepage http://www.haskell.org/ghc/
  * @dependencies `gnu.org/gmp@6`, `invisible-island.net/ncurses@6`, `sourceware.org/libffi@3`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.haskellorg
- * console.log(pkg.name)        // "haskell.org"
+ * console.log(pkg.name)        // "haskell"
  * console.log(pkg.description) // "Mirror of the Glasgow Haskell Compiler. Please ..."
  * console.log(pkg.programs)    // ["ghc", "ghc-{{version.marketing}}", ...]
  * console.log(pkg.versions[0]) // "9.12.2" (latest)
@@ -27,7 +28,7 @@ export const haskellorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'haskell.org' as const,
+  name: 'haskell' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const haskellorgPackage = {
    */
   description: 'Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC\'s Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/haskell.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://www.haskell.org/ghc/' as const,
+  githubUrl: 'https://github.com/ghc/ghc' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install haskell.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +haskell.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install haskell.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -118,8 +121,6 @@ export const haskellorgPackage = {
     '8.10.7',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +haskell.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install haskell.org' as const,
 }
 
 export type HaskellorgPackage = typeof haskellorgPackage

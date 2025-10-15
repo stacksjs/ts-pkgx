@@ -1,24 +1,19 @@
 /**
- * **duck** - Simple, extendable and embeddable scripting language.
+ * **duckscript** - Simple, extendable and embeddable scripting language.
  *
  * @domain `sagiegurari.github.io/duckscript`
  * @programs `duck`
  * @version `0.11.1` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install duck`
- * @name `duckscript`
- * @aliases `duck`
+ * @install `launchpad install sagiegurari.github.io/duckscript`
+ * @homepage https://sagiegurari.github.io/duckscript
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.duck
- * // Or access via domain
- * const samePkg = pantry.sagiegurarigithubioduckscript
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sagiegurarigithubioduckscript
  * console.log(pkg.name)        // "duckscript"
  * console.log(pkg.description) // "Simple, extendable and embeddable scripting lan..."
  * console.log(pkg.programs)    // ["duck"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sagiegurari-github-io/duckscript.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const duckPackage = {
+export const sagiegurarigithubioduckscriptPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +37,15 @@ export const duckPackage = {
    */
   description: 'Simple, extendable and embeddable scripting language.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sagiegurari.github.io/duckscript/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://sagiegurari.github.io/duckscript' as const,
+  githubUrl: 'https://github.com/sagiegurari/duckscript' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install duck' as const,
+  installCommand: 'launchpad install sagiegurari.github.io/duckscript' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sagiegurari.github.io/duckscript -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sagiegurari.github.io/duckscript' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,15 +66,7 @@ export const duckPackage = {
     '0.9.4',
     '0.9.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'duck',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) duck -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install duck' as const,
+  aliases: [] as const,
 }
 
-export type DuckPackage = typeof duckPackage
+export type SagiegurarigithubioduckscriptPackage = typeof sagiegurarigithubioduckscriptPackage

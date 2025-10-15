@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/OpenSC/pkcs11-helper.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomopenscpkcs11helperPackage = {
+export const pkcs11helperPackage = {
   /**
    * The display name of this package.
    */
@@ -64,4 +64,4 @@ export const githubcomopenscpkcs11helperPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomopenscpkcs11helperPackage = typeof githubcomopenscpkcs11helperPackage
+export type Pkcs11helperPackage = typeof pkcs11helperPackage

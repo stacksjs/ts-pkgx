@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/0age/create2crunch.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcom0agecreate2crunchPackage = {
+export const create2crunchPackage = {
   /**
    * The display name of this package.
    */
@@ -64,4 +64,4 @@ export const githubcom0agecreate2crunchPackage = {
   aliases: [] as const,
 }
 
-export type Githubcom0agecreate2crunchPackage = typeof githubcom0agecreate2crunchPackage
+export type Create2crunchPackage = typeof create2crunchPackage

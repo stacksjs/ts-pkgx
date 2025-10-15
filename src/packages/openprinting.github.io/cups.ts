@@ -1,5 +1,5 @@
 /**
- * **openprinting.github.io/cups** - Common UNIX Printing System
+ * **cups** - Common UNIX Printing System
  *
  * @domain `openprinting.github.io/cups`
  * @programs `cups-config`, `ippeveprinter`, `ipptool`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openprinting.github.io/cups`
+ * @homepage https://openprinting.github.io/cups
  * @dependencies `kerberos.org`, `zlib.net`, `linux:openssl.org^1.1` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.openprintinggithubiocups
- * console.log(pkg.name)        // "openprinting.github.io/cups"
+ * console.log(pkg.name)        // "cups"
  * console.log(pkg.description) // "Common UNIX Printing System"
  * console.log(pkg.programs)    // ["cups-config", "ippeveprinter", ...]
  * console.log(pkg.versions[0]) // "2.4.14" (latest)
@@ -27,7 +28,7 @@ export const openprintinggithubiocupsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openprinting.github.io/cups' as const,
+  name: 'cups' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const openprintinggithubiocupsPackage = {
    */
   description: 'Common UNIX Printing System' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openprinting.github.io/cups/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://openprinting.github.io/cups' as const,
+  githubUrl: 'https://github.com/OpenPrinting/cups' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install openprinting.github.io/cups' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openprinting.github.io/cups -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openprinting.github.io/cups' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -80,8 +83,6 @@ export const openprintinggithubiocupsPackage = {
     '2.4.6',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openprinting.github.io/cups -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install openprinting.github.io/cups' as const,
 }
 
 export type OpenprintinggithubiocupsPackage = typeof openprintinggithubiocupsPackage

@@ -1,5 +1,5 @@
 /**
- * **x.org/xft** - pkgx package
+ * **xft** - pkgx package
  *
  * @domain `x.org/xft`
  * @version `2.3.9` (2 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgxft
- * console.log(pkg.name)        // "x.org/xft"
+ * console.log(pkg.name)        // "xft"
  * console.log(pkg.versions[0]) // "2.3.9" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgxftPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xft' as const,
+  name: 'xft' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const xorgxftPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xft/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install x.org/xft' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xft -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/xft' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -62,8 +64,6 @@ export const xorgxftPackage = {
     '2.3.8',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xft -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install x.org/xft' as const,
 }
 
 export type XorgxftPackage = typeof xorgxftPackage

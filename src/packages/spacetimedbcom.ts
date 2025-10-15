@@ -6,19 +6,15 @@
  * @version `2023.12.8` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install spacetime`
- * @name `spacetime`
+ * @install `launchpad install spacetimedb.com`
+ * @homepage https://spacetimedb.com
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.spacetime
- * // Or access via domain
- * const samePkg = pantry.spacetimedbcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.spacetimedbcom
  * console.log(pkg.name)        // "spacetime"
  * console.log(pkg.description) // "Multiplayer at the speed of light"
  * console.log(pkg.programs)    // ["spacetime"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/spacetimedb-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const spacetimePackage = {
+export const spacetimedbcomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const spacetimePackage = {
    */
   description: 'Multiplayer at the speed of light' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/spacetimedb.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://spacetimedb.com' as const,
+  githubUrl: 'https://github.com/clockworklabs/SpacetimeDB' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install spacetime' as const,
+  installCommand: 'launchpad install spacetimedb.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +spacetimedb.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install spacetimedb.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +70,7 @@ export const spacetimePackage = {
     '2023.12.8',
     '2023.8.12',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) spacetime -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install spacetime' as const,
 }
 
-export type SpacetimePackage = typeof spacetimePackage
+export type SpacetimedbcomPackage = typeof spacetimedbcomPackage

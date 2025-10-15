@@ -1,11 +1,12 @@
 /**
- * **glfw.org** - A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input
+ * **glfw** - A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input
  *
  * @domain `glfw.org`
  * @version `3.4.0` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install glfw.org`
+ * @homepage https://www.glfw.org
  * @dependencies `linux:freeglut.sourceforge.io^3.4`, `linux:x.org/xcursor^1.2`, `linux:xkbcommon.org^1.0`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -13,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.glfworg
- * console.log(pkg.name)        // "glfw.org"
+ * console.log(pkg.name)        // "glfw"
  * console.log(pkg.description) // "A multi-platform library for OpenGL, OpenGL ES,..."
  * console.log(pkg.versions[0]) // "3.4.0" (latest)
  * ```
@@ -25,7 +26,7 @@ export const glfworgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'glfw.org' as const,
+  name: 'glfw' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,13 +36,15 @@ export const glfworgPackage = {
    */
   description: 'A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/glfw.org/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://www.glfw.org' as const,
   githubUrl: 'https://github.com/glfw/glfw' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install glfw.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +glfw.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install glfw.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -65,8 +68,6 @@ export const glfworgPackage = {
     '3.3.9',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +glfw.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install glfw.org' as const,
 }
 
 export type GlfworgPackage = typeof glfworgPackage

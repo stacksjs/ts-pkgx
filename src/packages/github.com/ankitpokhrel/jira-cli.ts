@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/ankitpokhrel/jira-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomankitpokhreljiracliPackage = {
+export const jiracliPackage = {
   /**
    * The display name of this package.
    */
@@ -74,4 +74,4 @@ export const githubcomankitpokhreljiracliPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomankitpokhreljiracliPackage = typeof githubcomankitpokhreljiracliPackage
+export type JiracliPackage = typeof jiracliPackage

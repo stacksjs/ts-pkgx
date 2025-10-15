@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/charliermarsh/ruff.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcharliermarshruffPackage = {
+export const ruffPackage = {
   /**
    * The display name of this package.
    */
@@ -230,4 +230,4 @@ export const githubcomcharliermarshruffPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcharliermarshruffPackage = typeof githubcomcharliermarshruffPackage
+export type RuffPackage = typeof ruffPackage

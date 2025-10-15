@@ -20,7 +20,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Zouuup/landrun.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomzouuuplandrunPackage = {
+export const landrunPackage = {
   /**
    * The display name of this package.
    */
@@ -62,4 +62,4 @@ export const githubcomzouuuplandrunPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomzouuuplandrunPackage = typeof githubcomzouuuplandrunPackage
+export type LandrunPackage = typeof landrunPackage

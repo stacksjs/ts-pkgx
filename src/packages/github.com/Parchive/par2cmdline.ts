@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Parchive/par2cmdline.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomparchivepar2cmdlinePackage = {
+export const par2cmdlinePackage = {
   /**
    * The display name of this package.
    */
@@ -69,4 +69,4 @@ export const githubcomparchivepar2cmdlinePackage = {
   aliases: [] as const,
 }
 
-export type Githubcomparchivepar2cmdlinePackage = typeof githubcomparchivepar2cmdlinePackage
+export type Par2cmdlinePackage = typeof par2cmdlinePackage

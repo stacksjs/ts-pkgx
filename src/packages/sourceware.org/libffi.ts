@@ -1,18 +1,19 @@
 /**
- * **sourceware.org/libffi** - A portable foreign-function interface library.
+ * **libffi** - A portable foreign-function interface library.
  *
  * @domain `sourceware.org/libffi`
  * @version `3.5.2` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sourceware.org/libffi`
+ * @homepage http://sourceware.org/libffi
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.sourcewareorglibffi
- * console.log(pkg.name)        // "sourceware.org/libffi"
+ * console.log(pkg.name)        // "libffi"
  * console.log(pkg.description) // "A portable foreign-function interface library."
  * console.log(pkg.versions[0]) // "3.5.2" (latest)
  * ```
@@ -24,7 +25,7 @@ export const sourcewareorglibffiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'sourceware.org/libffi' as const,
+  name: 'libffi' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,13 +35,15 @@ export const sourcewareorglibffiPackage = {
    */
   description: 'A portable foreign-function interface library.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sourceware.org/libffi/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://sourceware.org/libffi' as const,
+  githubUrl: 'https://github.com/libffi/libffi' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install sourceware.org/libffi' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceware.org/libffi -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sourceware.org/libffi' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -60,8 +63,6 @@ export const sourcewareorglibffiPackage = {
     '3.4.3',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceware.org/libffi -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sourceware.org/libffi' as const,
 }
 
 export type SourcewareorglibffiPackage = typeof sourcewareorglibffiPackage

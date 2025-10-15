@@ -6,18 +6,15 @@
  * @version `0.50.15` (61 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install k9s`
- * @name `k9s`
+ * @install `launchpad install k9scli.io`
+ * @homepage https://k9scli.io/
+ * @dependencies `go.dev@^1.18`, `gnu.org/make`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.k9s
- * // Or access via domain
- * const samePkg = pantry.k9scliio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.k9scliio
  * console.log(pkg.name)        // "k9s"
  * console.log(pkg.description) // "🐶 Kubernetes CLI To Manage Your Clusters In St..."
  * console.log(pkg.programs)    // ["k9s"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/k9scli-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const k9sPackage = {
+export const k9scliioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const k9sPackage = {
    */
   description: '🐶 Kubernetes CLI To Manage Your Clusters In Style!' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/k9scli.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://k9scli.io/' as const,
+  githubUrl: 'https://github.com/derailed/k9s' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install k9s' as const,
+  installCommand: 'launchpad install k9scli.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +k9scli.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install k9scli.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const k9sPackage = {
     'k9s',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+    'gnu.org/make',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -124,13 +130,7 @@ export const k9sPackage = {
     '0.27.4',
     '0.27.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) k9s -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install k9s' as const,
 }
 
-export type K9sPackage = typeof k9sPackage
+export type K9scliioPackage = typeof k9scliioPackage

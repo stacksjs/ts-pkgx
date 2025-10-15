@@ -6,19 +6,14 @@
  * @version `0.92.1` (67 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install snaplet`
- * @name `snaplet`
+ * @install `launchpad install snaplet.dev/cli`
  * @dependencies `nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.snaplet
- * // Or access via domain
- * const samePkg = pantry.snapletdevcli
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.snapletdevcli
  * console.log(pkg.name)        // "snaplet"
  * console.log(pkg.programs)    // ["snaplet"]
  * console.log(pkg.versions[0]) // "0.92.1" (latest)
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/snaplet-dev/cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const snapletPackage = {
+export const snapletdevcliPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const snapletPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/snaplet.dev/cli/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install snaplet' as const,
+  installCommand: 'launchpad install snaplet.dev/cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +snaplet.dev/cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install snaplet.dev/cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -136,13 +133,7 @@ export const snapletPackage = {
     '0.73.1',
     '0.73.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) snaplet -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install snaplet' as const,
 }
 
-export type SnapletPackage = typeof snapletPackage
+export type SnapletdevcliPackage = typeof snapletdevcliPackage

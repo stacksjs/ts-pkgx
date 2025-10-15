@@ -6,19 +6,14 @@
  * @version `1.3.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install terrarium`
- * @name `terrarium`
+ * @install `launchpad install github.com/terrarium-tf`
  * @dependencies `terraform.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.terrarium
- * // Or access via domain
- * const samePkg = pantry.githubcomterrariumtf
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomterrariumtf
  * console.log(pkg.name)        // "terrarium"
  * console.log(pkg.description) // "terraform wrapper which transparent loads env f..."
  * console.log(pkg.programs)    // ["terrarium"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/terrarium-tf.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const terrariumPackage = {
+export const terrariumtfPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const terrariumPackage = {
   description: 'terraform wrapper which transparent loads env files for stacks' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/terrarium-tf/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/terrarium-tf/cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install terrarium' as const,
+  installCommand: 'launchpad install github.com/terrarium-tf' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/terrarium-tf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/terrarium-tf' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +68,7 @@ export const terrariumPackage = {
   versions: [
     '1.3.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) terrarium -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install terrarium' as const,
 }
 
-export type TerrariumPackage = typeof terrariumPackage
+export type TerrariumtfPackage = typeof terrariumtfPackage

@@ -6,18 +6,15 @@
  * @version `3.19.0` (39 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install helm`
- * @name `helm`
+ * @install `launchpad install helm.sh`
+ * @homepage https://helm.sh/
+ * @dependencies `go.dev@^1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.helm
- * // Or access via domain
- * const samePkg = pantry.helmsh
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.helmsh
  * console.log(pkg.name)        // "helm"
  * console.log(pkg.description) // "The Kubernetes Package Manager"
  * console.log(pkg.programs)    // ["helm"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/helm-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const helmPackage = {
+export const helmshPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const helmPackage = {
    */
   description: 'The Kubernetes Package Manager' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/helm.sh/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://helm.sh/' as const,
+  githubUrl: 'https://github.com/helm/helm' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install helm' as const,
+  installCommand: 'launchpad install helm.sh' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +helm.sh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install helm.sh' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const helmPackage = {
     'helm',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -102,13 +107,7 @@ export const helmPackage = {
     '3.11.2',
     '3.11.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) helm -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install helm' as const,
 }
 
-export type HelmPackage = typeof helmPackage
+export type HelmshPackage = typeof helmshPackage

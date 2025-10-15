@@ -1,25 +1,19 @@
 /**
- * **pcscd** - pkgx package
+ * **pcsc-lite** - pkgx package
  *
  * @domain `pcsclite.apdu.fr`
  * @programs `pcscd`
  * @version `2.3.3` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pcscd`
- * @name `pcsc-lite`
- * @aliases `pcscd`
+ * @install `launchpad install pcsclite.apdu.fr`
  * @dependencies `libusb.info^1`, `linux:systemd.io^254 # libudev` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.pcscd
- * // Or access via domain
- * const samePkg = pantry.pcscliteapdufr
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pcscliteapdufr
  * console.log(pkg.name)        // "pcsc-lite"
  * console.log(pkg.programs)    // ["pcscd"]
  * console.log(pkg.versions[0]) // "2.3.3" (latest)
@@ -28,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pcsclite-apdu-fr.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pcscdPackage = {
+export const pcscliteapdufrPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +37,14 @@ export const pcscdPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pcsclite.apdu.fr/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pcscd' as const,
+  installCommand: 'launchpad install pcsclite.apdu.fr' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pcsclite.apdu.fr -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pcsclite.apdu.fr' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -85,15 +81,7 @@ export const pcscdPackage = {
     '2.0.1',
     '2.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'pcscd',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pcscd -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pcscd' as const,
+  aliases: [] as const,
 }
 
-export type PcscdPackage = typeof pcscdPackage
+export type PcscliteapdufrPackage = typeof pcscliteapdufrPackage

@@ -1,5 +1,5 @@
 /**
- * **gnu.org/gawk** - pkgx package
+ * **gawk** - pkgx package
  *
  * @domain `gnu.org/gawk`
  * @programs `awk`, `gawk`, `gawk-{{version}}`, `gawkbug`
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorggawk
- * console.log(pkg.name)        // "gnu.org/gawk"
+ * console.log(pkg.name)        // "gawk"
  * console.log(pkg.programs)    // ["awk", "gawk", ...]
  * console.log(pkg.versions[0]) // "5.3.2" (latest)
  * ```
@@ -25,7 +25,7 @@ export const gnuorggawkPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/gawk' as const,
+  name: 'gawk' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,12 +36,14 @@ export const gnuorggawkPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gawk/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnu.org/gawk' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gawk -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/gawk' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,8 +68,6 @@ export const gnuorggawkPackage = {
     '5.2.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gawk -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/gawk' as const,
 }
 
 export type GnuorggawkPackage = typeof gnuorggawkPackage

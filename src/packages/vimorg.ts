@@ -7,19 +7,21 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install vim.org`
- * @aliases `vim`, `vi`
+ * @name `vim`
+ * @aliases `vi`
+ * @homepage https://www.vim.org
  * @dependencies `python.org~3.11`, `lua.org>=5.4`, `invisible-island.net/ncurses>=6.3`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.vim
  * // Or access via domain
  * const samePkg = pantry.vimorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "vim.org"
+ * console.log(pkg.name)        // "vim"
  * console.log(pkg.description) // "The official Vim repository"
  * console.log(pkg.programs)    // ["vim", "vi"]
  * console.log(pkg.versions[0]) // "9.1.1857" (latest)
@@ -32,7 +34,7 @@ export const vimPackage = {
   /**
    * The display name of this package.
    */
-  name: 'vim.org' as const,
+  name: 'vim' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,13 +44,15 @@ export const vimPackage = {
    */
   description: 'The official Vim repository' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/vim.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.vim.org' as const,
+  githubUrl: 'https://github.com/vim/vim' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install vim.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +vim.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vim.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -2491,11 +2495,8 @@ export const vimPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [
-    'vim',
     'vi',
   ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +vim.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install vim.org' as const,
 }
 
 export type VimPackage = typeof vimPackage

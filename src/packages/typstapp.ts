@@ -6,19 +6,15 @@
  * @version `0.13.1` (14 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install typst`
- * @name `typst`
+ * @install `launchpad install typst.app`
+ * @homepage https://typst.app/
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.typst
- * // Or access via domain
- * const samePkg = pantry.typstapp
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.typstapp
  * console.log(pkg.name)        // "typst"
  * console.log(pkg.description) // "A new markup-based typesetting system that is p..."
  * console.log(pkg.programs)    // ["typst"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/typst-app.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const typstPackage = {
+export const typstappPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const typstPackage = {
    */
   description: 'A new markup-based typesetting system that is powerful and easy to learn.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/typst.app/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://typst.app/' as const,
+  githubUrl: 'https://github.com/typst/typst' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install typst' as const,
+  installCommand: 'launchpad install typst.app' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +typst.app -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install typst.app' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,13 +82,7 @@ export const typstPackage = {
     '0.2.0',
     '0.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) typst -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install typst' as const,
 }
 
-export type TypstPackage = typeof typstPackage
+export type TypstappPackage = typeof typstappPackage

@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/confluentinc/librdkafka.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomconfluentinclibrdkafkaPackage = {
+export const librdkafkaPackage = {
   /**
    * The display name of this package.
    */
@@ -81,4 +81,4 @@ export const githubcomconfluentinclibrdkafkaPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomconfluentinclibrdkafkaPackage = typeof githubcomconfluentinclibrdkafkaPackage
+export type LibrdkafkaPackage = typeof librdkafkaPackage

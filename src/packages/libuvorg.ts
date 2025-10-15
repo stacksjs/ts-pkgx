@@ -1,18 +1,20 @@
 /**
- * **libuv.org** - Cross-platform asynchronous I/O
+ * **libuv** - Cross-platform asynchronous I/O
  *
  * @domain `libuv.org`
  * @version `1.51.0` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install libuv.org`
+ * @homepage https://libuv.org/
+ * @dependencies `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.libuvorg
- * console.log(pkg.name)        // "libuv.org"
+ * console.log(pkg.name)        // "libuv"
  * console.log(pkg.description) // "Cross-platform asynchronous I/O"
  * console.log(pkg.versions[0]) // "1.51.0" (latest)
  * ```
@@ -24,7 +26,7 @@ export const libuvorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libuv.org' as const,
+  name: 'libuv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,16 +36,24 @@ export const libuvorgPackage = {
    */
   description: 'Cross-platform asynchronous I/O' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libuv.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://libuv.org/' as const,
+  githubUrl: 'https://github.com/libuv/libuv' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install libuv.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libuv.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libuv.org' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'curl.se',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -61,8 +71,6 @@ export const libuvorgPackage = {
     '1.44.2',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libuv.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libuv.org' as const,
 }
 
 export type LibuvorgPackage = typeof libuvorgPackage

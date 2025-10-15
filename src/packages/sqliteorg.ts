@@ -6,19 +6,15 @@
  * @version `3.50.4` (29 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sqlite3`
- * @name `sqlite3`
+ * @install `launchpad install sqlite.org`
+ * @homepage https://sqlite.org/index.html
  * @dependencies `zlib.net@1`, `gnu.org/readline@8`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sqlite3
- * // Or access via domain
- * const samePkg = pantry.sqliteorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sqliteorg
  * console.log(pkg.name)        // "sqlite3"
  * console.log(pkg.description) // "Official Git mirror of the SQLite source tree"
  * console.log(pkg.programs)    // ["sqlite3"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sqlite-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sqlite3Package = {
+export const sqliteorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const sqlite3Package = {
    */
   description: 'Official Git mirror of the SQLite source tree' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sqlite.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://sqlite.org/index.html' as const,
+  githubUrl: 'https://github.com/sqlite/sqlite' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sqlite3' as const,
+  installCommand: 'launchpad install sqlite.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sqlite.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sqlite.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -100,13 +98,7 @@ export const sqlite3Package = {
     '3.40.0',
     '3.39.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sqlite3 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sqlite3' as const,
 }
 
-export type Sqlite3Package = typeof sqlite3Package
+export type SqliteorgPackage = typeof sqliteorgPackage

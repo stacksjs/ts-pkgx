@@ -6,19 +6,15 @@
  * @version `0.44.0` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rye`
- * @name `rye`
+ * @install `launchpad install rye.astral.sh`
+ * @homepage https://rye-up.com/
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rye
- * // Or access via domain
- * const samePkg = pantry.ryeastralsh
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ryeastralsh
  * console.log(pkg.name)        // "rye"
  * console.log(pkg.description) // "Experimental Package Management Solution for Py..."
  * console.log(pkg.programs)    // ["rye"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rye-astral-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ryePackage = {
+export const ryeastralshPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const ryePackage = {
    */
   description: 'Experimental Package Management Solution for Python' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rye.astral.sh/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://rye-up.com/' as const,
+  githubUrl: 'https://github.com/astral-sh/rye' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rye' as const,
+  installCommand: 'launchpad install rye.astral.sh' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rye.astral.sh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rye.astral.sh' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,13 +77,7 @@ export const ryePackage = {
     '0.37.0',
     '0.36.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rye -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rye' as const,
 }
 
-export type RyePackage = typeof ryePackage
+export type RyeastralshPackage = typeof ryeastralshPackage

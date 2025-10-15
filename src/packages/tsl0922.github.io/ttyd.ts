@@ -6,19 +6,15 @@
  * @version `1.7.7` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ttyd`
- * @name `ttyd`
+ * @install `launchpad install tsl0922.github.io/ttyd`
+ * @homepage https://tsl0922.github.io/ttyd/
  * @dependencies `libuv.org@1`, `github.com/json-c/json-c^0.16`, `libwebsockets.org~4.3 # ABI version changes in 4.4`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ttyd
- * // Or access via domain
- * const samePkg = pantry.tsl0922githubiottyd
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.tsl0922githubiottyd
  * console.log(pkg.name)        // "ttyd"
  * console.log(pkg.description) // "Command-line tool for sharing terminal over the..."
  * console.log(pkg.programs)    // ["ttyd"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tsl0922-github-io/ttyd.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ttydPackage = {
+export const tsl0922githubiottydPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const ttydPackage = {
    */
   description: 'Command-line tool for sharing terminal over the web' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tsl0922.github.io/ttyd/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://tsl0922.github.io/ttyd/' as const,
+  githubUrl: 'https://github.com/tsl0922/ttyd' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ttyd' as const,
+  installCommand: 'launchpad install tsl0922.github.io/ttyd' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tsl0922.github.io/ttyd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tsl0922.github.io/ttyd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,13 +76,7 @@ export const ttydPackage = {
     '1.7.4',
     '1.7.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ttyd -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ttyd' as const,
 }
 
-export type TtydPackage = typeof ttydPackage
+export type Tsl0922githubiottydPackage = typeof tsl0922githubiottydPackage

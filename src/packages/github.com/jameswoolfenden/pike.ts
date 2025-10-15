@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jameswoolfenden/pike.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjameswoolfendenpikePackage = {
+export const pikePackage = {
   /**
    * The display name of this package.
    */
@@ -134,4 +134,4 @@ export const githubcomjameswoolfendenpikePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjameswoolfendenpikePackage = typeof githubcomjameswoolfendenpikePackage
+export type PikePackage = typeof pikePackage

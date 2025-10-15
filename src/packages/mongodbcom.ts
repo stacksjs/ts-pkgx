@@ -1,5 +1,5 @@
 /**
- * **mongodb.com** - The MongoDB Database
+ * **mongodb** - The MongoDB Database
  *
  * @domain `mongodb.com`
  * @programs `install_compass`, `mongod`, `mongos`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mongodb.com`
+ * @homepage https://www.mongodb.com/
  * @dependencies `curl.se@8`, `openssl.org@1.1`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.mongodbcom
- * console.log(pkg.name)        // "mongodb.com"
+ * console.log(pkg.name)        // "mongodb"
  * console.log(pkg.description) // "The MongoDB Database"
  * console.log(pkg.programs)    // ["install_compass", "mongod", ...]
  * console.log(pkg.versions[0]) // "8.2.1" (latest)
@@ -27,7 +28,7 @@ export const mongodbcomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mongodb.com' as const,
+  name: 'mongodb' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const mongodbcomPackage = {
    */
   description: 'The MongoDB Database' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mongodb.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.mongodb.com/' as const,
+  githubUrl: 'https://github.com/mongodb/mongo' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install mongodb.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mongodb.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mongodb.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -113,8 +116,6 @@ export const mongodbcomPackage = {
     '6.0.17',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mongodb.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mongodb.com' as const,
 }
 
 export type MongodbcomPackage = typeof mongodbcomPackage

@@ -6,18 +6,13 @@
  * @version `2.91.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install dnsmasq`
- * @name `dnsmasq`
+ * @install `launchpad install thekelleys.org.uk/dnsmasq`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dnsmasq
- * // Or access via domain
- * const samePkg = pantry.thekelleysorgukdnsmasq
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.thekelleysorgukdnsmasq
  * console.log(pkg.name)        // "dnsmasq"
  * console.log(pkg.programs)    // ["dnsmasq"]
  * console.log(pkg.versions[0]) // "2.91.0" (latest)
@@ -26,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/thekelleys-org-uk/dnsmasq.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dnsmasqPackage = {
+export const thekelleysorgukdnsmasqPackage = {
   /**
    * The display name of this package.
    */
@@ -41,12 +36,14 @@ export const dnsmasqPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/thekelleys.org.uk/dnsmasq/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install dnsmasq' as const,
+  installCommand: 'launchpad install thekelleys.org.uk/dnsmasq' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +thekelleys.org.uk/dnsmasq -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install thekelleys.org.uk/dnsmasq' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,13 +62,7 @@ export const dnsmasqPackage = {
     '2.90.0',
     '2.89.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dnsmasq -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install dnsmasq' as const,
 }
 
-export type DnsmasqPackage = typeof dnsmasqPackage
+export type ThekelleysorgukdnsmasqPackage = typeof thekelleysorgukdnsmasqPackage

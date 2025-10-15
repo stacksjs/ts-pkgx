@@ -6,19 +6,15 @@
  * @version `3.202.0` (164 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pulumi`
- * @name `pulumi`
+ * @install `launchpad install pulumi.io`
+ * @homepage https://pulumi.io/
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pulumi
- * // Or access via domain
- * const samePkg = pantry.pulumiio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pulumiio
  * console.log(pkg.name)        // "pulumi"
  * console.log(pkg.description) // "Pulumi - Infrastructure as Code in any programm..."
  * console.log(pkg.programs)    // ["pulumi", "pulumi-analyzer-policy", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pulumi-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pulumiPackage = {
+export const pulumiioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const pulumiPackage = {
    */
   description: 'Pulumi - Infrastructure as Code in any programming language 🚀' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pulumi.io/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://pulumi.io/' as const,
   githubUrl: 'https://github.com/pulumi/pulumi' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pulumi' as const,
+  installCommand: 'launchpad install pulumi.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pulumi.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pulumi.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -246,13 +244,7 @@ export const pulumiPackage = {
     '3.67.0',
     '3.66.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pulumi.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pulumi' as const,
 }
 
-export type PulumiPackage = typeof pulumiPackage
+export type PulumiioPackage = typeof pulumiioPackage

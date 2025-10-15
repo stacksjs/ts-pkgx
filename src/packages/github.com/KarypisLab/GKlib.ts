@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/KarypisLab/GKlib.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkarypislabgklibPackage = {
+export const gklibPackage = {
   /**
    * The display name of this package.
    */
@@ -77,4 +77,4 @@ export const githubcomkarypislabgklibPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkarypislabgklibPackage = typeof githubcomkarypislabgklibPackage
+export type GklibPackage = typeof gklibPackage

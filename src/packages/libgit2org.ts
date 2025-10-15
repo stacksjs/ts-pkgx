@@ -6,19 +6,15 @@
  * @version `1.9.1` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install git2`
- * @name `git2`
+ * @install `launchpad install libgit2.org`
+ * @homepage https://libgit2.github.com/
  * @dependencies `libssh2.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.git2
- * // Or access via domain
- * const samePkg = pantry.libgit2org
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.libgit2org
  * console.log(pkg.name)        // "git2"
  * console.log(pkg.description) // "A cross-platform, linkable library implementati..."
  * console.log(pkg.programs)    // ["git2"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libgit2-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const git2Package = {
+export const libgit2orgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const git2Package = {
    */
   description: 'A cross-platform, linkable library implementation of Git that you can use in your application.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libgit2.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://libgit2.github.com/' as const,
+  githubUrl: 'https://github.com/libgit2/libgit2' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install git2' as const,
+  installCommand: 'launchpad install libgit2.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libgit2.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libgit2.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,13 +80,7 @@ export const git2Package = {
     '1.6.5',
     '1.6.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git2 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install git2' as const,
 }
 
-export type Git2Package = typeof git2Package
+export type Libgit2orgPackage = typeof libgit2orgPackage

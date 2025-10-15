@@ -1,5 +1,5 @@
 /**
- * **github.com/luvit/luv** - Bare libuv bindings for lua
+ * **luv** - Bare libuv bindings for lua
  *
  * @domain `github.com/luvit/luv`
  * @version `1.45.0` (1 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomluvitluv
- * console.log(pkg.name)        // "github.com/luvit/luv"
+ * console.log(pkg.name)        // "luv"
  * console.log(pkg.description) // "Bare libuv bindings for lua"
  * console.log(pkg.versions[0]) // "1.45.0" (latest)
  * ```
@@ -21,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/luvit/luv.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomluvitluvPackage = {
+export const luvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/luvit/luv' as const,
+  name: 'luv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,12 +36,14 @@ export const githubcomluvitluvPackage = {
   description: 'Bare libuv bindings for lua' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/luvit/luv/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/luvit/luv' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/luvit/luv' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/luvit/luv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/luvit/luv' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -59,8 +61,6 @@ export const githubcomluvitluvPackage = {
     '1.45.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/luvit/luv -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/luvit/luv' as const,
 }
 
-export type GithubcomluvitluvPackage = typeof githubcomluvitluvPackage
+export type LuvPackage = typeof luvPackage

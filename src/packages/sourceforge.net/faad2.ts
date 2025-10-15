@@ -6,18 +6,15 @@
  * @version `2.11.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install faad`
- * @name `faad`
+ * @install `launchpad install sourceforge.net/faad2`
+ * @homepage https://sourceforge.net/projects/faac/
+ * @dependencies `cmake.org`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.faad
- * // Or access via domain
- * const samePkg = pantry.sourceforgenetfaad2
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sourceforgenetfaad2
  * console.log(pkg.name)        // "faad"
  * console.log(pkg.description) // "Freeware Advanced Audio (AAC) Decoder faad2 mirror"
  * console.log(pkg.programs)    // ["faad"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sourceforge-net/faad2.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const faadPackage = {
+export const sourceforgenetfaad2Package = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const faadPackage = {
    */
   description: 'Freeware Advanced Audio (AAC) Decoder faad2 mirror' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/faad2/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://sourceforge.net/projects/faac/' as const,
+  githubUrl: 'https://github.com/knik0/faad2' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install faad' as const,
+  installCommand: 'launchpad install sourceforge.net/faad2' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceforge.net/faad2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sourceforge.net/faad2' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,18 @@ export const faadPackage = {
     'faad',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   */
+  dependencies: [
+    'cmake.org',
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/libtool',
+    'linux:gnu.org/gcc',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,13 +77,7 @@ export const faadPackage = {
     '2.11.0',
     '2.10.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) faad -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install faad' as const,
 }
 
-export type FaadPackage = typeof faadPackage
+export type Sourceforgenetfaad2Package = typeof sourceforgenetfaad2Package

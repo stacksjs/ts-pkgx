@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/caddyserver/xcaddy.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcaddyserverxcaddyPackage = {
+export const xcaddyPackage = {
   /**
    * The display name of this package.
    */
@@ -76,4 +76,4 @@ export const githubcomcaddyserverxcaddyPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcaddyserverxcaddyPackage = typeof githubcomcaddyserverxcaddyPackage
+export type XcaddyPackage = typeof xcaddyPackage

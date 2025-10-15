@@ -1,5 +1,5 @@
 /**
- * **openssh.com** - pkgx package
+ * **openssh** - pkgx package
  *
  * @domain `openssh.com`
  * @programs `scp`, `sftp`, `slogin`, `ssh`, `ssh-add`, ... (+4 more)
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.opensshcom
- * console.log(pkg.name)        // "openssh.com"
+ * console.log(pkg.name)        // "openssh"
  * console.log(pkg.programs)    // ["scp", "sftp", ...]
  * console.log(pkg.versions[0]) // "10.2.0" (latest)
  * ```
@@ -26,7 +26,7 @@ export const opensshcomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openssh.com' as const,
+  name: 'openssh' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,12 +37,14 @@ export const opensshcomPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openssh.com/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install openssh.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openssh.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openssh.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -89,8 +91,6 @@ export const opensshcomPackage = {
     '9.5.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openssh.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install openssh.com' as const,
 }
 
 export type OpensshcomPackage = typeof opensshcomPackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Limeth/ethaddrgen.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomlimethethaddrgenPackage = {
+export const ethaddrgenPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomlimethethaddrgenPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomlimethethaddrgenPackage = typeof githubcomlimethethaddrgenPackage
+export type EthaddrgenPackage = typeof ethaddrgenPackage

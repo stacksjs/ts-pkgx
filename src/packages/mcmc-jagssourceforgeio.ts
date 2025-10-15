@@ -6,19 +6,15 @@
  * @version `4.3.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install jags`
- * @name `jags`
+ * @install `launchpad install mcmc-jags.sourceforge.io`
+ * @homepage https://mcmc-jags.sourceforge.io
  * @dependencies `gnu.org/gcc`, `linux:netlib.org/lapack^3` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.jags
- * // Or access via domain
- * const samePkg = pantry.mcmcjagssourceforgeio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.mcmcjagssourceforgeio
  * console.log(pkg.name)        // "jags"
  * console.log(pkg.description) // "Just Another Gibbs Sampler for Bayesian MCMC si..."
  * console.log(pkg.programs)    // ["jags"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mcmc-jags-sourceforge-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jagsPackage = {
+export const mcmcjagssourceforgeioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const jagsPackage = {
    */
   description: 'Just Another Gibbs Sampler for Bayesian MCMC simulation' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mcmc-jags.sourceforge.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://mcmc-jags.sourceforge.io' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install jags' as const,
+  installCommand: 'launchpad install mcmc-jags.sourceforge.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mcmc-jags.sourceforge.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mcmc-jags.sourceforge.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +71,7 @@ export const jagsPackage = {
   versions: [
     '4.3.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jags -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jags' as const,
 }
 
-export type JagsPackage = typeof jagsPackage
+export type McmcjagssourceforgeioPackage = typeof mcmcjagssourceforgeioPackage

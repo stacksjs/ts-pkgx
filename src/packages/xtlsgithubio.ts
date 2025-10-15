@@ -1,24 +1,20 @@
 /**
- * **xray** - Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
+ * **xray-core** - Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.
  *
  * @domain `xtls.github.io`
  * @programs `xray`
  * @version `25.9.11` (38 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install xray`
- * @name `xray-core`
- * @aliases `xray`
+ * @install `launchpad install xtls.github.io`
+ * @homepage https://xtls.github.io/
+ * @dependencies `go.dev@^1.21.4`, `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.xray
- * // Or access via domain
- * const samePkg = pantry.xtlsgithubio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.xtlsgithubio
  * console.log(pkg.name)        // "xray-core"
  * console.log(pkg.description) // "Xray, Penetrates Everything. Also the best v2ra..."
  * console.log(pkg.programs)    // ["xray"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/xtls-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xrayPackage = {
+export const xtlsgithubioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const xrayPackage = {
    */
   description: 'Xray, Penetrates Everything. Also the best v2ray-core, with XTLS support. Fully compatible configuration.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/xtls.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://xtls.github.io/' as const,
+  githubUrl: 'https://github.com/XTLS/Xray-core' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install xray' as const,
+  installCommand: 'launchpad install xtls.github.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +xtls.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xtls.github.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +55,14 @@ export const xrayPackage = {
     'xray',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21.4',
+    'curl.se',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -102,15 +107,7 @@ export const xrayPackage = {
     '1.8.7',
     '1.8.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'xray',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xray -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install xray' as const,
+  aliases: [] as const,
 }
 
-export type XrayPackage = typeof xrayPackage
+export type XtlsgithubioPackage = typeof xtlsgithubioPackage

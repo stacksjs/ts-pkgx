@@ -1,5 +1,5 @@
 /**
- * **gnu.org/libmicrohttpd** - pkgx package
+ * **libmicrohttpd** - pkgx package
  *
  * @domain `gnu.org/libmicrohttpd`
  * @version `1.0.2` (2 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorglibmicrohttpd
- * console.log(pkg.name)        // "gnu.org/libmicrohttpd"
+ * console.log(pkg.name)        // "libmicrohttpd"
  * console.log(pkg.versions[0]) // "1.0.2" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const gnuorglibmicrohttpdPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/libmicrohttpd' as const,
+  name: 'libmicrohttpd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const gnuorglibmicrohttpdPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libmicrohttpd/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnu.org/libmicrohttpd' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/libmicrohttpd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/libmicrohttpd' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -59,8 +61,6 @@ export const gnuorglibmicrohttpdPackage = {
     '1.0.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/libmicrohttpd -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/libmicrohttpd' as const,
 }
 
 export type GnuorglibmicrohttpdPackage = typeof gnuorglibmicrohttpdPackage

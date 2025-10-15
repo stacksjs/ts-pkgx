@@ -6,18 +6,15 @@
  * @version `18.4.0` (88 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gitlab-runner`
- * @name `gitlab-runner`
+ * @install `launchpad install gitlab.com/gitlab-org/gitlab-runner`
+ * @homepage https://gitlab.com/gitlab-org/gitlab-runner
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gitlabrunner
- * // Or access via domain
- * const samePkg = pantry.gitlabcomgitlaborggitlabrunner
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gitlabcomgitlaborggitlabrunner
  * console.log(pkg.name)        // "gitlab-runner"
  * console.log(pkg.description) // "Official GitLab CI runner"
  * console.log(pkg.programs)    // ["gitlab-runner"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gitlab-com/gitlab-org/gitlab-runner.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitlabrunnerPackage = {
+export const gitlabcomgitlaborggitlabrunnerPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const gitlabrunnerPackage = {
    */
   description: 'Official GitLab CI runner' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gitlab.com/gitlab-org/gitlab-runner/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://gitlab.com/gitlab-org/gitlab-runner' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gitlab-runner' as const,
+  installCommand: 'launchpad install gitlab.com/gitlab-org/gitlab-runner' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gitlab.com/gitlab-org/gitlab-runner -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gitlab.com/gitlab-org/gitlab-runner' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const gitlabrunnerPackage = {
     'gitlab-runner',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -151,13 +156,7 @@ export const gitlabrunnerPackage = {
     '16.2.2',
     '16.2.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gitlab-runner -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gitlab-runner' as const,
 }
 
-export type GitlabrunnerPackage = typeof gitlabrunnerPackage
+export type GitlabcomgitlaborggitlabrunnerPackage = typeof gitlabcomgitlaborggitlabrunnerPackage

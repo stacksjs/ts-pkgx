@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/ChrisJohnsen/tmux-MacOSX-pasteboard.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomchrisjohnsentmuxmacosxpasteboardPackage = {
+export const tmuxmacosxpasteboardPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomchrisjohnsentmuxmacosxpasteboardPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomchrisjohnsentmuxmacosxpasteboardPackage = typeof githubcomchrisjohnsentmuxmacosxpasteboardPackage
+export type TmuxmacosxpasteboardPackage = typeof tmuxmacosxpasteboardPackage

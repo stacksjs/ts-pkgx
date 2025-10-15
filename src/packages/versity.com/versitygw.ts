@@ -6,18 +6,15 @@
  * @version `1.0.18` (14 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install versitygw`
- * @name `versitygw`
+ * @install `launchpad install versity.com/versitygw`
+ * @homepage https://www.versity.com/products/versitygw/
+ * @dependencies `go.dev@1.21.0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.versitygw
- * // Or access via domain
- * const samePkg = pantry.versitycomversitygw
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.versitycomversitygw
  * console.log(pkg.name)        // "versitygw"
  * console.log(pkg.description) // "versity s3 gateway"
  * console.log(pkg.programs)    // ["versitygw"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/versity-com/versitygw.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const versitygwPackage = {
+export const versitycomversitygwPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const versitygwPackage = {
    */
   description: 'versity s3 gateway' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/versity.com/versitygw/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.versity.com/products/versitygw/' as const,
+  githubUrl: 'https://github.com/versity/versitygw' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install versitygw' as const,
+  installCommand: 'launchpad install versity.com/versitygw' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +versity.com/versitygw -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install versity.com/versitygw' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const versitygwPackage = {
     'versitygw',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@1.21.0',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -77,13 +82,7 @@ export const versitygwPackage = {
     '1.0.6',
     '1.0.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) versitygw -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install versitygw' as const,
 }
 
-export type VersitygwPackage = typeof versitygwPackage
+export type VersitycomversitygwPackage = typeof versitycomversitygwPackage

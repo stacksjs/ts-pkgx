@@ -6,19 +6,15 @@
  * @version `2025.10.8` (372 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mise`
- * @name `mise`
+ * @install `launchpad install mise.jdx.dev`
+ * @homepage https://mise.jdx.dev
  * @dependencies `openssl.org^1.1 # newer mise after 1.35.2 versions require openssl`, `libgit2.org^1 # newer mise after 2024.5.12 versions require libgit2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mise
- * // Or access via domain
- * const samePkg = pantry.misejdxdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.misejdxdev
  * console.log(pkg.name)        // "mise"
  * console.log(pkg.description) // "dev tools, env vars, task runner"
  * console.log(pkg.programs)    // ["rtx", "mise"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mise-jdx-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const misePackage = {
+export const misejdxdevPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const misePackage = {
    */
   description: 'dev tools, env vars, task runner' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mise.jdx.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://mise.jdx.dev' as const,
+  githubUrl: 'https://github.com/jdx/mise' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mise' as const,
+  installCommand: 'launchpad install mise.jdx.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mise.jdx.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mise.jdx.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -444,13 +442,7 @@ export const misePackage = {
     '2024.1.2',
     '2024.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mise.jdx.dev -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mise' as const,
 }
 
-export type MisePackage = typeof misePackage
+export type MisejdxdevPackage = typeof misejdxdevPackage

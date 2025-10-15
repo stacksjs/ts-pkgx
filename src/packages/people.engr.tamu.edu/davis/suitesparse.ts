@@ -6,19 +6,15 @@
  * @version `7.11.0` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install suite-sparse`
- * @name `suite-sparse`
+ * @install `launchpad install people.engr.tamu.edu/davis/suitesparse`
+ * @homepage https://people.engr.tamu.edu/davis/suitesparse.html
  * @dependencies `glaros.dtc.umn.edu/metis`, `gnu.org/m4`, `netlib.org/lapack`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.suitesparse
- * // Or access via domain
- * const samePkg = pantry.peopleengrtamuedudavissuitesparse
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.peopleengrtamuedudavissuitesparse
  * console.log(pkg.name)        // "suite-sparse"
  * console.log(pkg.description) // "The official SuiteSparse library: a suite of sp..."
  * console.log(pkg.programs)    // ["mongoose", "suitesparse_mongoose"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/people-engr-tamu-edu/davis/suitesparse.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const suitesparsePackage = {
+export const peopleengrtamuedudavissuitesparsePackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const suitesparsePackage = {
    */
   description: 'The official SuiteSparse library: a suite of sparse matrix algorithms authored or co-authored by Tim Davis, Texas A&M University.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/people.engr.tamu.edu/davis/suitesparse/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://people.engr.tamu.edu/davis/suitesparse.html' as const,
+  githubUrl: 'https://github.com/DrTimothyAldenDavis/SuiteSparse' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install suite-sparse' as const,
+  installCommand: 'launchpad install people.engr.tamu.edu/davis/suitesparse' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +people.engr.tamu.edu/davis/suitesparse -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install people.engr.tamu.edu/davis/suitesparse' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -98,13 +96,7 @@ export const suitesparsePackage = {
     '7.2.1',
     '7.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +people.engr.tamu.edu/davis/suitesparse -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install suite-sparse' as const,
 }
 
-export type SuitesparsePackage = typeof suitesparsePackage
+export type PeopleengrtamuedudavissuitesparsePackage = typeof peopleengrtamuedudavissuitesparsePackage

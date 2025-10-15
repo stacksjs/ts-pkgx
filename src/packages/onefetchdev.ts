@@ -6,19 +6,15 @@
  * @version `2.25.0` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install onefetch`
- * @name `onefetch`
+ * @install `launchpad install onefetch.dev`
+ * @homepage https://onefetch.dev/
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.onefetch
- * // Or access via domain
- * const samePkg = pantry.onefetchdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.onefetchdev
  * console.log(pkg.name)        // "onefetch"
  * console.log(pkg.description) // "Command-line Git information tool"
  * console.log(pkg.programs)    // ["onefetch"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/onefetch-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const onefetchPackage = {
+export const onefetchdevPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const onefetchPackage = {
    */
   description: 'Command-line Git information tool' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/onefetch.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://onefetch.dev/' as const,
+  githubUrl: 'https://github.com/o2sh/onefetch' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install onefetch' as const,
+  installCommand: 'launchpad install onefetch.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +onefetch.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install onefetch.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,13 +77,7 @@ export const onefetchPackage = {
     '2.19.0',
     '2.18.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) onefetch -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install onefetch' as const,
 }
 
-export type OnefetchPackage = typeof onefetchPackage
+export type OnefetchdevPackage = typeof onefetchdevPackage

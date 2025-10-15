@@ -6,18 +6,15 @@
  * @version `2.1.0` (16 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install aws-sso`
- * @name `aws-sso`
+ * @install `launchpad install github.com/synfinatic/aws-sso-cli`
+ * @homepage https://synfinatic.github.io/aws-sso-cli/
+ * @dependencies `go.dev@^1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.awssso
- * // Or access via domain
- * const samePkg = pantry.githubcomsynfinaticawsssocli
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomsynfinaticawsssocli
  * console.log(pkg.name)        // "aws-sso"
  * console.log(pkg.description) // "A powerful tool for using AWS Identity Center f..."
  * console.log(pkg.programs)    // ["aws-sso"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/synfinatic/aws-sso-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const awsssoPackage = {
+export const awsssocliPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const awsssoPackage = {
    */
   description: 'A powerful tool for using AWS Identity Center for the CLI and web console.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/synfinatic/aws-sso-cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://synfinatic.github.io/aws-sso-cli/' as const,
+  githubUrl: 'https://github.com/synfinatic/aws-sso-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install aws-sso' as const,
+  installCommand: 'launchpad install github.com/synfinatic/aws-sso-cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/synfinatic/aws-sso-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/synfinatic/aws-sso-cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const awsssoPackage = {
     'aws-sso',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -79,13 +84,7 @@ export const awsssoPackage = {
     '1.13.1',
     '1.13.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aws-sso -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install aws-sso' as const,
 }
 
-export type AwsssoPackage = typeof awsssoPackage
+export type AwsssocliPackage = typeof awsssocliPackage

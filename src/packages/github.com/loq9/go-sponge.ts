@@ -6,18 +6,14 @@
  * @version `1.0.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install go-sponge`
- * @name `go-sponge`
+ * @install `launchpad install github.com/loq9/go-sponge`
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gosponge
- * // Or access via domain
- * const samePkg = pantry.githubcomloq9gosponge
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomloq9gosponge
  * console.log(pkg.name)        // "go-sponge"
  * console.log(pkg.description) // "Golang alternative of sponge tool"
  * console.log(pkg.programs)    // ["go-sponge"]
@@ -42,12 +38,14 @@ export const gospongePackage = {
   description: 'Golang alternative of sponge tool' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/loq9/go-sponge/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/LOQ9/go-sponge' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install go-sponge' as const,
+  installCommand: 'launchpad install github.com/loq9/go-sponge' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/loq9/go-sponge -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/loq9/go-sponge' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const gospongePackage = {
     'go-sponge',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +68,7 @@ export const gospongePackage = {
   versions: [
     '1.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) go-sponge -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install go-sponge' as const,
 }
 
 export type GospongePackage = typeof gospongePackage

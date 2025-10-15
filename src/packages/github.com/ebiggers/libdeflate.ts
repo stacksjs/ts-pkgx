@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/ebiggers/libdeflate.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomebiggerslibdeflatePackage = {
+export const libdeflatePackage = {
   /**
    * The display name of this package.
    */
@@ -77,4 +77,4 @@ export const githubcomebiggerslibdeflatePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomebiggerslibdeflatePackage = typeof githubcomebiggerslibdeflatePackage
+export type LibdeflatePackage = typeof libdeflatePackage

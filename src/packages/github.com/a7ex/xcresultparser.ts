@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/a7ex/xcresultparser.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcoma7exxcresultparserPackage = {
+export const xcresultparserPackage = {
   /**
    * The display name of this package.
    */
@@ -90,4 +90,4 @@ export const githubcoma7exxcresultparserPackage = {
   aliases: [] as const,
 }
 
-export type Githubcoma7exxcresultparserPackage = typeof githubcoma7exxcresultparserPackage
+export type XcresultparserPackage = typeof xcresultparserPackage

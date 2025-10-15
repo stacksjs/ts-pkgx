@@ -1,5 +1,5 @@
 /**
- * **x.org/xtst** - pkgx package
+ * **xtst** - pkgx package
  *
  * @domain `x.org/xtst`
  * @version `1.2.5` (2 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgxtst
- * console.log(pkg.name)        // "x.org/xtst"
+ * console.log(pkg.name)        // "xtst"
  * console.log(pkg.versions[0]) // "1.2.5" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgxtstPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xtst' as const,
+  name: 'xtst' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const xorgxtstPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xtst/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install x.org/xtst' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xtst -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/xtst' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,8 +62,6 @@ export const xorgxtstPackage = {
     '1.2.4',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xtst -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install x.org/xtst' as const,
 }
 
 export type XorgxtstPackage = typeof xorgxtstPackage

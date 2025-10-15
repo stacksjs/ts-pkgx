@@ -6,8 +6,8 @@
  * @version `2.4.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install stow`
- * @name `stow`
+ * @install `launchpad install gnu.org/stow`
+ * @homepage https://www.gnu.org/software/stow/
  * @dependencies `perl.org^5.6.1`
  * @companions `PERL5LIB^${{prefix}}/lib/perl5`
  *
@@ -15,11 +15,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.stow
- * // Or access via domain
- * const samePkg = pantry.gnuorgstow
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnuorgstow
  * console.log(pkg.name)        // "stow"
  * console.log(pkg.description) // "Organize software neatly under a single directo..."
  * console.log(pkg.programs)    // ["stow"]
@@ -29,7 +25,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/stow.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const stowPackage = {
+export const gnuorgstowPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +39,15 @@ export const stowPackage = {
    */
   description: 'Organize software neatly under a single directory tree (e.g. /usr/local)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/stow/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.gnu.org/software/stow/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install stow' as const,
+  installCommand: 'launchpad install gnu.org/stow' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/stow -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/stow' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -80,13 +78,7 @@ export const stowPackage = {
     '2.4.0',
     '2.3.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) stow -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install stow' as const,
 }
 
-export type StowPackage = typeof stowPackage
+export type GnuorgstowPackage = typeof gnuorgstowPackage

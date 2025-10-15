@@ -6,18 +6,15 @@
  * @version `2.27.0` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install kluctl`
- * @name `kluctl`
+ * @install `launchpad install kluctl.io`
+ * @homepage https://kluctl.io
+ * @dependencies `go.dev@^1.21`, `nodejs.org@^18`, `npmjs.com`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.kluctl
- * // Or access via domain
- * const samePkg = pantry.kluctlio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.kluctlio
  * console.log(pkg.name)        // "kluctl"
  * console.log(pkg.description) // "The missing glue to put together large Kubernet..."
  * console.log(pkg.programs)    // ["kluctl"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kluctl-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kluctlPackage = {
+export const kluctlioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const kluctlPackage = {
    */
   description: 'The missing glue to put together large Kubernetes deployments, composed of multiple smaller parts (Helm/Kustomize/...)  in a manageable and unified way.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kluctl.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://kluctl.io' as const,
+  githubUrl: 'https://github.com/kluctl/kluctl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install kluctl' as const,
+  installCommand: 'launchpad install kluctl.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kluctl.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kluctl.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,16 @@ export const kluctlPackage = {
     'kluctl',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+    'nodejs.org@^18',
+    'npmjs.com',
+    'gnu.org/make',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -78,13 +86,7 @@ export const kluctlPackage = {
     '2.22.0',
     '2.21.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kluctl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install kluctl' as const,
 }
 
-export type KluctlPackage = typeof kluctlPackage
+export type KluctlioPackage = typeof kluctlioPackage

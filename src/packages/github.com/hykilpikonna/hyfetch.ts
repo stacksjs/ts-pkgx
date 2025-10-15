@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/hykilpikonna/hyfetch.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomhykilpikonnahyfetchPackage = {
+export const hyfetchPackage = {
   /**
    * The display name of this package.
    */
@@ -73,4 +73,4 @@ export const githubcomhykilpikonnahyfetchPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomhykilpikonnahyfetchPackage = typeof githubcomhykilpikonnahyfetchPackage
+export type HyfetchPackage = typeof hyfetchPackage

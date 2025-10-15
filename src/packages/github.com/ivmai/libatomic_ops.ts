@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/ivmai/libatomic_ops.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomivmailibatomic_opsPackage = {
+export const libatomic_opsPackage = {
   /**
    * The display name of this package.
    */
@@ -61,4 +61,4 @@ export const githubcomivmailibatomic_opsPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomivmailibatomic_opsPackage = typeof githubcomivmailibatomic_opsPackage
+export type Libatomic_opsPackage = typeof libatomic_opsPackage

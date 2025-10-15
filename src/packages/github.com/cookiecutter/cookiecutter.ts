@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/cookiecutter/cookiecutter.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcookiecuttercookiecutterPackage = {
+export const cookiecutterPackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomcookiecuttercookiecutterPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcookiecuttercookiecutterPackage = typeof githubcomcookiecuttercookiecutterPackage
+export type CookiecutterPackage = typeof cookiecutterPackage

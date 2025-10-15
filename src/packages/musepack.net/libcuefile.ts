@@ -1,18 +1,19 @@
 /**
- * **musepack.net/libcuefile** - pkgx package
+ * **libcuefile** - pkgx package
  *
  * @domain `musepack.net/libcuefile`
  * @version `475.0.0` (1 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install musepack.net/libcuefile`
+ * @dependencies `cmake.org`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.musepacknetlibcuefile
- * console.log(pkg.name)        // "musepack.net/libcuefile"
+ * console.log(pkg.name)        // "libcuefile"
  * console.log(pkg.versions[0]) // "475.0.0" (latest)
  * ```
  *
@@ -23,7 +24,7 @@ export const musepacknetlibcuefilePackage = {
   /**
    * The display name of this package.
    */
-  name: 'musepack.net/libcuefile' as const,
+  name: 'libcuefile' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,15 +35,25 @@ export const musepacknetlibcuefilePackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/musepack.net/libcuefile/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install musepack.net/libcuefile' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +musepack.net/libcuefile -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install musepack.net/libcuefile' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   */
+  dependencies: [
+    'cmake.org',
+    'linux:gnu.org/gcc',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -51,8 +62,6 @@ export const musepacknetlibcuefilePackage = {
     '475.0.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +musepack.net/libcuefile -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install musepack.net/libcuefile' as const,
 }
 
 export type MusepacknetlibcuefilePackage = typeof musepacknetlibcuefilePackage

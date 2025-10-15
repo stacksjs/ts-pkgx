@@ -6,19 +6,15 @@
  * @version `7.9.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install optipng`
- * @name `optipng`
+ * @install `launchpad install sf.net/optipng`
+ * @homepage https://optipng.sourceforge.net/
  * @dependencies `libpng.org^1`, `zlib.net^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.optipng
- * // Or access via domain
- * const samePkg = pantry.sfnetoptipng
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sfnetoptipng
  * console.log(pkg.name)        // "optipng"
  * console.log(pkg.description) // "PNG file optimizer"
  * console.log(pkg.programs)    // ["optipng"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sf-net/optipng.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const optipngPackage = {
+export const sfnetoptipngPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const optipngPackage = {
    */
   description: 'PNG file optimizer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sf.net/optipng/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://optipng.sourceforge.net/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install optipng' as const,
+  installCommand: 'launchpad install sf.net/optipng' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sf.net/optipng -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sf.net/optipng' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,13 +72,7 @@ export const optipngPackage = {
     '0.7.8',
     '0.7.7',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) optipng -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install optipng' as const,
 }
 
-export type OptipngPackage = typeof optipngPackage
+export type SfnetoptipngPackage = typeof sfnetoptipngPackage

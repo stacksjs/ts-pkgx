@@ -6,18 +6,13 @@
  * @version `0.3.9` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install chruby-exec`
- * @name `chruby-exec`
+ * @install `launchpad install github.com/postmodern/chruby`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.chrubyexec
- * // Or access via domain
- * const samePkg = pantry.githubcompostmodernchruby
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcompostmodernchruby
  * console.log(pkg.name)        // "chruby-exec"
  * console.log(pkg.description) // "Changes the current Ruby"
  * console.log(pkg.programs)    // ["chruby-exec"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/postmodern/chruby.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const chrubyexecPackage = {
+export const chrubyPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const chrubyexecPackage = {
   description: 'Changes the current Ruby' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/postmodern/chruby/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/postmodern/chruby' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install chruby-exec' as const,
+  installCommand: 'launchpad install github.com/postmodern/chruby' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/postmodern/chruby -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/postmodern/chruby' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +61,7 @@ export const chrubyexecPackage = {
   versions: [
     '0.3.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) chruby-exec -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install chruby-exec' as const,
 }
 
-export type ChrubyexecPackage = typeof chrubyexecPackage
+export type ChrubyPackage = typeof chrubyPackage

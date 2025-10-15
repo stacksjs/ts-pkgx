@@ -7,19 +7,20 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install go.dev`
- * @aliases `go`
+ * @name `go`
+ * @homepage https://go.dev
  * @dependencies `openssl.org^1  # for ca-certificates`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.go
  * // Or access via domain
  * const samePkg = pantry.godev
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "go.dev"
+ * console.log(pkg.name)        // "go"
  * console.log(pkg.description) // "The Go programming language"
  * console.log(pkg.programs)    // ["go", "gofmt"]
  * console.log(pkg.versions[0]) // "1.25.3" (latest)
@@ -32,7 +33,7 @@ export const goPackage = {
   /**
    * The display name of this package.
    */
-  name: 'go.dev' as const,
+  name: 'go' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,13 +43,15 @@ export const goPackage = {
    */
   description: 'The Go programming language' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/go.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://go.dev' as const,
+  githubUrl: 'https://github.com/golang/go' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install go.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +go.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install go.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -154,11 +157,7 @@ export const goPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'go',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +go.dev -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install go.dev' as const,
+  aliases: [] as const,
 }
 
 export type GoPackage = typeof goPackage

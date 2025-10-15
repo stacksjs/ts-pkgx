@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/benjaminp/six.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcombenjaminpsixPackage = {
+export const sixPackage = {
   /**
    * The display name of this package.
    */
@@ -65,4 +65,4 @@ export const githubcombenjaminpsixPackage = {
   aliases: [] as const,
 }
 
-export type GithubcombenjaminpsixPackage = typeof githubcombenjaminpsixPackage
+export type SixPackage = typeof sixPackage

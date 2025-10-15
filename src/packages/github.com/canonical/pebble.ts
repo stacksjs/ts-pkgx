@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/canonical/pebble.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcanonicalpebblePackage = {
+export const pebblePackage = {
   /**
    * The display name of this package.
    */
@@ -107,4 +107,4 @@ export const githubcomcanonicalpebblePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcanonicalpebblePackage = typeof githubcomcanonicalpebblePackage
+export type PebblePackage = typeof pebblePackage

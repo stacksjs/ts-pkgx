@@ -6,19 +6,15 @@
  * @version `4.9.2` (29 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install localstack`
- * @name `localstack`
+ * @install `launchpad install localstack.cloud/cli`
+ * @homepage https://localstack.cloud/
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.localstack
- * // Or access via domain
- * const samePkg = pantry.localstackcloudcli
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.localstackcloudcli
  * console.log(pkg.name)        // "localstack"
  * console.log(pkg.description) // "The LocalStack CLI packaged using pyinstaller"
  * console.log(pkg.programs)    // ["localstack"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/localstack-cloud/cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const localstackPackage = {
+export const localstackcloudcliPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const localstackPackage = {
    */
   description: 'The LocalStack CLI packaged using pyinstaller' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/localstack.cloud/cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://localstack.cloud/' as const,
+  githubUrl: 'https://github.com/localstack/localstack-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install localstack' as const,
+  installCommand: 'launchpad install localstack.cloud/cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +localstack.cloud/cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install localstack.cloud/cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -99,13 +97,7 @@ export const localstackPackage = {
     '3.0.0',
     '2.3.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) localstack -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install localstack' as const,
 }
 
-export type LocalstackPackage = typeof localstackPackage
+export type LocalstackcloudcliPackage = typeof localstackcloudcliPackage

@@ -1,5 +1,5 @@
 /**
- * **mupdf.com** - Lightweight PDF and XPS viewer
+ * **mupdf** - Lightweight PDF and XPS viewer
  *
  * @domain `mupdf.com`
  * @programs `mupdf-gl`, `muraster`, `mutool`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mupdf.com`
+ * @homepage https://mupdf.com/
  * @dependencies `zlib.net^1`, `openssl.org^1.1`, `info-zip.org/unzip^6`, ... (+17 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.mupdfcom
- * console.log(pkg.name)        // "mupdf.com"
+ * console.log(pkg.name)        // "mupdf"
  * console.log(pkg.description) // "Lightweight PDF and XPS viewer"
  * console.log(pkg.programs)    // ["mupdf-gl", "muraster", ...]
  * console.log(pkg.versions[0]) // "1.26.10" (latest)
@@ -27,7 +28,7 @@ export const mupdfcomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mupdf.com' as const,
+  name: 'mupdf' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const mupdfcomPackage = {
    */
   description: 'Lightweight PDF and XPS viewer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mupdf.com/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://mupdf.com/' as const,
   githubUrl: 'https://github.com/ArtifexSoftware/mupdf' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install mupdf.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mupdf.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mupdf.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -124,8 +127,6 @@ export const mupdfcomPackage = {
     '1.23.6',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mupdf.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mupdf.com' as const,
 }
 
 export type MupdfcomPackage = typeof mupdfcomPackage

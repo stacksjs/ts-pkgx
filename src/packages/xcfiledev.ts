@@ -6,18 +6,15 @@
  * @version `0.8.6` (28 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install xc`
- * @name `xc`
+ * @install `launchpad install xcfile.dev`
+ * @homepage https://xcfile.dev/
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.xc
- * // Or access via domain
- * const samePkg = pantry.xcfiledev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.xcfiledev
  * console.log(pkg.name)        // "xc"
  * console.log(pkg.description) // "Markdown defined task runner."
  * console.log(pkg.programs)    // ["xc"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/xcfile-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xcPackage = {
+export const xcfiledevPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const xcPackage = {
    */
   description: 'Markdown defined task runner.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/xcfile.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://xcfile.dev/' as const,
+  githubUrl: 'https://github.com/joerdav/xc' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install xc' as const,
+  installCommand: 'launchpad install xcfile.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +xcfile.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xcfile.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const xcPackage = {
     'xc',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -91,13 +96,7 @@ export const xcPackage = {
     '0.0.111',
     '0.0.110',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install xc' as const,
 }
 
-export type XcPackage = typeof xcPackage
+export type XcfiledevPackage = typeof xcfiledevPackage

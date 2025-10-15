@@ -1,5 +1,5 @@
 /**
- * **mercurial-scm.org** - Scalable distributed version control system
+ * **mercurial-scm** - Scalable distributed version control system
  *
  * @domain `mercurial-scm.org`
  * @programs `hg`, `chg`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mercurial-scm.org`
+ * @homepage https://mercurial-scm.org/
  * @dependencies `python.org~3.13 # as of 7.1`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.mercurialscmorg
- * console.log(pkg.name)        // "mercurial-scm.org"
+ * console.log(pkg.name)        // "mercurial-scm"
  * console.log(pkg.description) // "Scalable distributed version control system"
  * console.log(pkg.programs)    // ["hg", "chg"]
  * console.log(pkg.versions[0]) // "7.1.1" (latest)
@@ -27,7 +28,7 @@ export const mercurialscmorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mercurial-scm.org' as const,
+  name: 'mercurial-scm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const mercurialscmorgPackage = {
    */
   description: 'Scalable distributed version control system' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mercurial-scm.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://mercurial-scm.org/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install mercurial-scm.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mercurial-scm.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mercurial-scm.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -94,8 +97,6 @@ export const mercurialscmorgPackage = {
     '6.5.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mercurial-scm.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mercurial-scm.org' as const,
 }
 
 export type MercurialscmorgPackage = typeof mercurialscmorgPackage

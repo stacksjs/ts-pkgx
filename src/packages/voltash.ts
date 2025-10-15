@@ -6,19 +6,15 @@
  * @version `2.0.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install volta`
- * @name `volta`
+ * @install `launchpad install volta.sh`
+ * @homepage https://volta.sh
  * @dependencies `linux:curl.se/ca-certs` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.volta
- * // Or access via domain
- * const samePkg = pantry.voltash
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.voltash
  * console.log(pkg.name)        // "volta"
  * console.log(pkg.description) // "JavaScript toolchain manager for reproducible e..."
  * console.log(pkg.programs)    // ["volta"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/volta-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const voltaPackage = {
+export const voltashPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const voltaPackage = {
    */
   description: 'JavaScript toolchain manager for reproducible environments' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/volta.sh/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://volta.sh' as const,
+  githubUrl: 'https://github.com/volta-cli/volta' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install volta' as const,
+  installCommand: 'launchpad install volta.sh' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +volta.sh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install volta.sh' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,13 +73,7 @@ export const voltaPackage = {
     '2.0.0',
     '1.1.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) volta -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install volta' as const,
 }
 
-export type VoltaPackage = typeof voltaPackage
+export type VoltashPackage = typeof voltashPackage

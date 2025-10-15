@@ -6,18 +6,15 @@
  * @version `1.3.0` (30 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install k6`
- * @name `k6`
+ * @install `launchpad install k6.io`
+ * @homepage https://k6.io
+ * @dependencies `go.dev@^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.k6
- * // Or access via domain
- * const samePkg = pantry.k6io
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.k6io
  * console.log(pkg.name)        // "k6"
  * console.log(pkg.description) // "A modern load testing tool, using Go and JavaSc..."
  * console.log(pkg.programs)    // ["k6"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/k6-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const k6Package = {
+export const k6ioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const k6Package = {
    */
   description: 'A modern load testing tool, using Go and JavaScript - https://k6.io' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/k6.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://k6.io' as const,
+  githubUrl: 'https://github.com/grafana/k6' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install k6' as const,
+  installCommand: 'launchpad install k6.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +k6.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install k6.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const k6Package = {
     'k6',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -93,13 +98,7 @@ export const k6Package = {
     '0.43.0',
     '0.42.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) k6 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install k6' as const,
 }
 
-export type K6Package = typeof k6Package
+export type K6ioPackage = typeof k6ioPackage

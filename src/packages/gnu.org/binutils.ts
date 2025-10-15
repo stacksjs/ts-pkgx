@@ -1,5 +1,5 @@
 /**
- * **gnu.org/binutils** - GNU binary tools for native development
+ * **binutils** - GNU binary tools for native development
  *
  * @domain `gnu.org/binutils`
  * @programs `addr2line`, `ar`, `c++filt`, `elfedit`, `nm`, ... (+7 more)
@@ -7,13 +7,15 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/binutils`
+ * @homepage https://www.gnu.org/software/binutils/binutils.html
+ * @dependencies `gnu.org/bison`, `gnu.org/texinfo`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgbinutils
- * console.log(pkg.name)        // "gnu.org/binutils"
+ * console.log(pkg.name)        // "binutils"
  * console.log(pkg.description) // "GNU binary tools for native development"
  * console.log(pkg.programs)    // ["addr2line", "ar", ...]
  * console.log(pkg.versions[0]) // "2.45.0" (latest)
@@ -26,7 +28,7 @@ export const gnuorgbinutilsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/binutils' as const,
+  name: 'binutils' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,13 +38,15 @@ export const gnuorgbinutilsPackage = {
    */
   description: 'GNU binary tools for native development' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/binutils/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.gnu.org/software/binutils/binutils.html' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnu.org/binutils' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/binutils -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/binutils' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -62,7 +66,16 @@ export const gnuorgbinutilsPackage = {
     'strip',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   */
+  dependencies: [
+    'gnu.org/bison',
+    'gnu.org/texinfo',
+    'linux:gnu.org/gcc',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -78,8 +91,6 @@ export const gnuorgbinutilsPackage = {
     '2.39.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/binutils -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/binutils' as const,
 }
 
 export type GnuorgbinutilsPackage = typeof gnuorgbinutilsPackage

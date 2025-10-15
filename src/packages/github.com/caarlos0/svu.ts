@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/caarlos0/svu.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcaarlos0svuPackage = {
+export const svuPackage = {
   /**
    * The display name of this package.
    */
@@ -84,4 +84,4 @@ export const githubcomcaarlos0svuPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomcaarlos0svuPackage = typeof githubcomcaarlos0svuPackage
+export type SvuPackage = typeof svuPackage

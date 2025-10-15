@@ -6,18 +6,14 @@
  * @version `2025.4.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install spirv`
- * @name `spirv`
+ * @install `launchpad install khronos.org/SPIRV-Tools`
+ * @dependencies `cmake.org`, `python.org@~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.spirv
- * // Or access via domain
- * const samePkg = pantry.khronosorgspirvtools
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.khronosorgspirvtools
  * console.log(pkg.name)        // "spirv"
  * console.log(pkg.description) // "API and commands for processing SPIR-V modules"
  * console.log(pkg.programs)    // ["spirv-as", "spirv-cfg", ...]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/khronos-org/SPIRV-Tools.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const spirvPackage = {
+export const khronosorgspirvtoolsPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const spirvPackage = {
   description: 'API and commands for processing SPIR-V modules' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/khronos.org/SPIRV-Tools/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/KhronosGroup/SPIRV-Tools' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install spirv' as const,
+  installCommand: 'launchpad install khronos.org/SPIRV-Tools' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +khronos.org/SPIRV-Tools -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install khronos.org/SPIRV-Tools' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,7 +63,14 @@ export const spirvPackage = {
     'spirv-val',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+    'python.org@~3.11',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -77,13 +82,7 @@ export const spirvPackage = {
     '2024.2.0',
     '2024.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +khronos.org/SPIRV-Tools -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install spirv' as const,
 }
 
-export type SpirvPackage = typeof spirvPackage
+export type KhronosorgspirvtoolsPackage = typeof khronosorgspirvtoolsPackage

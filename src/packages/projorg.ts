@@ -6,19 +6,15 @@
  * @version `9.7.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install proj`
- * @name `proj`
+ * @install `launchpad install proj.org`
+ * @homepage https://proj.org/
  * @dependencies `simplesystems.org/libtiff`, `sqlite.org`, `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.proj
- * // Or access via domain
- * const samePkg = pantry.projorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.projorg
  * console.log(pkg.name)        // "proj"
  * console.log(pkg.description) // "PROJ - Cartographic Projections and Coordinate ..."
  * console.log(pkg.programs)    // ["proj"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/proj-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const projPackage = {
+export const projorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const projPackage = {
    */
   description: 'PROJ - Cartographic Projections and Coordinate Transformations Library' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/proj.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://proj.org/' as const,
+  githubUrl: 'https://github.com/OSGeo/proj' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install proj' as const,
+  installCommand: 'launchpad install proj.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +proj.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install proj.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,13 +82,7 @@ export const projPackage = {
     '9.2.1',
     '9.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) proj -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install proj' as const,
 }
 
-export type ProjPackage = typeof projPackage
+export type ProjorgPackage = typeof projorgPackage

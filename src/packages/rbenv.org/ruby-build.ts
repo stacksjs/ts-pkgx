@@ -6,20 +6,15 @@
  * @version `20251008.0.0` (53 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ruby-build`
- * @name `ruby-build`
+ * @install `launchpad install rbenv.org/ruby-build`
+ * @homepage https://rbenv.org/man/ruby-build.1
  * @dependencies `openssl.org>=1.1`, `curl.se`, `gnu.org/autoconf^2.72`, ... (+3 more)
- * @companions `linux`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rubybuild
- * // Or access via domain
- * const samePkg = pantry.rbenvorgrubybuild
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.rbenvorgrubybuild
  * console.log(pkg.name)        // "ruby-build"
  * console.log(pkg.description) // "A tool to download, compile, and install Ruby o..."
  * console.log(pkg.programs)    // ["ruby-build"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rbenv-org/ruby-build.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rubybuildPackage = {
+export const rbenvorgrubybuildPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const rubybuildPackage = {
    */
   description: 'A tool to download, compile, and install Ruby on Unix-like systems.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rbenv.org/ruby-build/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://rbenv.org/man/ruby-build.1' as const,
   githubUrl: 'https://github.com/rbenv/ruby-build' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ruby-build' as const,
+  installCommand: 'launchpad install rbenv.org/ruby-build' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rbenv.org/ruby-build -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rbenv.org/ruby-build' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,13 +54,7 @@ export const rubybuildPackage = {
   programs: [
     'ruby-build',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'linux',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -135,13 +126,7 @@ export const rubybuildPackage = {
     '20240318.0.0',
     '20240221.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ruby-build -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ruby-build' as const,
 }
 
-export type RubybuildPackage = typeof rubybuildPackage
+export type RbenvorgrubybuildPackage = typeof rbenvorgrubybuildPackage

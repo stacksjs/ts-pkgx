@@ -6,19 +6,15 @@
  * @version `72.0.0` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install vspipe`
- * @name `vspipe`
+ * @install `launchpad install vapoursynth.com`
+ * @homepage https://www.vapoursynth.com
  * @dependencies `python.org~3.11`, `github.com/sekrit-twc/zimg`, `linux:gnu.org/gcc/libstdcxx` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.vspipe
- * // Or access via domain
- * const samePkg = pantry.vapoursynthcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.vapoursynthcom
  * console.log(pkg.name)        // "vspipe"
  * console.log(pkg.description) // "A video processing framework with simplicity in..."
  * console.log(pkg.programs)    // ["vspipe"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/vapoursynth-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const vspipePackage = {
+export const vapoursynthcomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const vspipePackage = {
    */
   description: 'A video processing framework with simplicity in mind' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/vapoursynth.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.vapoursynth.com' as const,
+  githubUrl: 'https://github.com/vapoursynth/vapoursynth' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install vspipe' as const,
+  installCommand: 'launchpad install vapoursynth.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +vapoursynth.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vapoursynth.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,13 +80,7 @@ export const vspipePackage = {
     '65.0.0',
     '64.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vspipe -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install vspipe' as const,
 }
 
-export type VspipePackage = typeof vspipePackage
+export type VapoursynthcomPackage = typeof vapoursynthcomPackage

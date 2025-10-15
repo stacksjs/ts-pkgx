@@ -6,19 +6,15 @@
  * @version `0.9.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install jless`
- * @name `jless`
+ * @install `launchpad install jless.io`
+ * @homepage https://jless.io/
  * @dependencies `linux:x.org/xcb@1` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.jless
- * // Or access via domain
- * const samePkg = pantry.jlessio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.jlessio
  * console.log(pkg.name)        // "jless"
  * console.log(pkg.description) // "jless is a command-line JSON viewer designed fo..."
  * console.log(pkg.programs)    // ["jless"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/jless-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jlessPackage = {
+export const jlessioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const jlessPackage = {
    */
   description: 'jless is a command-line JSON viewer designed for reading, exploring, and searching through JSON data.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jless.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://jless.io/' as const,
+  githubUrl: 'https://github.com/PaulJuliusMartinez/jless' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install jless' as const,
+  installCommand: 'launchpad install jless.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jless.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jless.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +70,7 @@ export const jlessPackage = {
   versions: [
     '0.9.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jless -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jless' as const,
 }
 
-export type JlessPackage = typeof jlessPackage
+export type JlessioPackage = typeof jlessioPackage

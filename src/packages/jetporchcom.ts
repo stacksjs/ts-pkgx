@@ -6,18 +6,14 @@
  * @version `0.0.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install jetp`
- * @name `jetp`
+ * @install `launchpad install jetporch.com`
+ * @dependencies `openssl.org`, `zlib.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.jetp
- * // Or access via domain
- * const samePkg = pantry.jetporchcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.jetporchcom
  * console.log(pkg.name)        // "jetp"
  * console.log(pkg.description) // "Read-only mirror: see https://www.jetporch.com/..."
  * console.log(pkg.programs)    // ["jetp"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/jetporch-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jetpPackage = {
+export const jetporchcomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const jetpPackage = {
   description: 'Read-only mirror: see https://www.jetporch.com/community/sourcehut' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jetporch.com/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/jetporch/jetporch' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install jetp' as const,
+  installCommand: 'launchpad install jetporch.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jetporch.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jetporch.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,14 @@ export const jetpPackage = {
     'jetp',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'openssl.org',
+    'zlib.net',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +69,7 @@ export const jetpPackage = {
   versions: [
     '0.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jetp -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jetp' as const,
 }
 
-export type JetpPackage = typeof jetpPackage
+export type JetporchcomPackage = typeof jetporchcomPackage

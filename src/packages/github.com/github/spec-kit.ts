@@ -20,7 +20,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/github/spec-kit.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgithubspeckitPackage = {
+export const speckitPackage = {
   /**
    * The display name of this package.
    */
@@ -87,4 +87,4 @@ export const githubcomgithubspeckitPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgithubspeckitPackage = typeof githubcomgithubspeckitPackage
+export type SpeckitPackage = typeof speckitPackage

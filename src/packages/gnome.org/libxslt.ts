@@ -6,19 +6,15 @@
  * @version `1.1.43` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install xslt`
- * @name `xslt`
+ * @install `launchpad install gnome.org/libxslt`
+ * @homepage http://xmlsoft.org/XSLT/
  * @dependencies `gnome.org/libxml2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.xslt
- * // Or access via domain
- * const samePkg = pantry.gnomeorglibxslt
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnomeorglibxslt
  * console.log(pkg.name)        // "xslt"
  * console.log(pkg.description) // "Read-only mirror of https://gitlab.gnome.org/GN..."
  * console.log(pkg.programs)    // ["xslt-config", "xsltproc"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/libxslt.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xsltPackage = {
+export const gnomeorglibxsltPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const xsltPackage = {
    */
   description: 'Read-only mirror of https://gitlab.gnome.org/GNOME/libxslt' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/libxslt/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://xmlsoft.org/XSLT/' as const,
+  githubUrl: 'https://github.com/GNOME/libxslt' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install xslt' as const,
+  installCommand: 'launchpad install gnome.org/libxslt' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/libxslt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnome.org/libxslt' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,13 +76,7 @@ export const xsltPackage = {
     '1.1.38',
     '1.1.37',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/libxslt -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install xslt' as const,
 }
 
-export type XsltPackage = typeof xsltPackage
+export type GnomeorglibxsltPackage = typeof gnomeorglibxsltPackage

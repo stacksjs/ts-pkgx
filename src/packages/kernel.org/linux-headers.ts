@@ -1,18 +1,19 @@
 /**
- * **kernel.org/linux-headers** - pkgx package
+ * **linux-headers** - pkgx package
  *
  * @domain `kernel.org/linux-headers`
  * @version `5.19.17` (205 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kernel.org/linux-headers`
+ * @dependencies `gnu.org/sed`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.kernelorglinuxheaders
- * console.log(pkg.name)        // "kernel.org/linux-headers"
+ * console.log(pkg.name)        // "linux-headers"
  * console.log(pkg.versions[0]) // "5.19.17" (latest)
  * ```
  *
@@ -23,7 +24,7 @@ export const kernelorglinuxheadersPackage = {
   /**
    * The display name of this package.
    */
-  name: 'kernel.org/linux-headers' as const,
+  name: 'linux-headers' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,15 +35,23 @@ export const kernelorglinuxheadersPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kernel.org/linux-headers/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install kernel.org/linux-headers' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kernel.org/linux-headers -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kernel.org/linux-headers' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/sed',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -255,8 +264,6 @@ export const kernelorglinuxheadersPackage = {
     '5.4.243',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kernel.org/linux-headers -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install kernel.org/linux-headers' as const,
 }
 
 export type KernelorglinuxheadersPackage = typeof kernelorglinuxheadersPackage

@@ -6,18 +6,15 @@
  * @version `1.13.3` (79 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install terraform`
- * @name `terraform`
+ * @install `launchpad install terraform.io`
+ * @homepage https://www.terraform.io
+ * @dependencies `go.dev@~1.24.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.terraform
- * // Or access via domain
- * const samePkg = pantry.terraformio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.terraformio
  * console.log(pkg.name)        // "terraform"
  * console.log(pkg.description) // "Terraform enables you to safely and predictably..."
  * console.log(pkg.programs)    // ["terraform"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/terraform-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const terraformPackage = {
+export const terraformioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const terraformPackage = {
    */
   description: 'Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a source-available tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/terraform.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.terraform.io' as const,
+  githubUrl: 'https://github.com/hashicorp/terraform' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install terraform' as const,
+  installCommand: 'launchpad install terraform.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +terraform.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install terraform.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const terraformPackage = {
     'terraform',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.24.1',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -142,13 +147,7 @@ export const terraformPackage = {
     '0.12.0',
     '0.11.12',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) terraform -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install terraform' as const,
 }
 
-export type TerraformPackage = typeof terraformPackage
+export type TerraformioPackage = typeof terraformioPackage

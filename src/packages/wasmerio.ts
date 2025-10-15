@@ -6,18 +6,15 @@
  * @version `6.1.0` (24 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install wasmer`
- * @name `wasmer`
+ * @install `launchpad install wasmer.io`
+ * @homepage https://wasmer.io
+ * @dependencies `nodejs.org@^18`, `gnu.org/make@^4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.wasmer
- * // Or access via domain
- * const samePkg = pantry.wasmerio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.wasmerio
  * console.log(pkg.name)        // "wasmer"
  * console.log(pkg.description) // "🚀 Fast, secure, lightweight containers based o..."
  * console.log(pkg.programs)    // ["wasmer"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/wasmer-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const wasmerPackage = {
+export const wasmerioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const wasmerPackage = {
    */
   description: '🚀 Fast, secure, lightweight containers based on WebAssembly' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wasmer.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://wasmer.io' as const,
+  githubUrl: 'https://github.com/wasmerio/wasmer' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install wasmer' as const,
+  installCommand: 'launchpad install wasmer.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wasmer.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wasmer.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const wasmerPackage = {
     'wasmer',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'nodejs.org@^18',
+    'gnu.org/make@^4',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -87,13 +93,7 @@ export const wasmerPackage = {
     '4.2.3',
     '4.2.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wasmer -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install wasmer' as const,
 }
 
-export type WasmerPackage = typeof wasmerPackage
+export type WasmerioPackage = typeof wasmerioPackage

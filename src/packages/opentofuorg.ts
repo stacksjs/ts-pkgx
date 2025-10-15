@@ -3,32 +3,28 @@
  *
  * @domain `opentofu.org`
  * @programs `tofu`
- * @version `1.9.4` (33 versions available)
+ * @version `1.10.6` (33 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install tofu`
- * @name `tofu`
+ * @install `launchpad install opentofu.org`
+ * @homepage https://opentofu.org
  * @dependencies `linux:gnu.org/gcc/libstdcxx` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.tofu
- * // Or access via domain
- * const samePkg = pantry.opentofuorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.opentofuorg
  * console.log(pkg.name)        // "tofu"
  * console.log(pkg.description) // "OpenTofu lets you declaratively manage your clo..."
  * console.log(pkg.programs)    // ["tofu"]
- * console.log(pkg.versions[0]) // "1.9.4" (latest)
+ * console.log(pkg.versions[0]) // "1.10.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/opentofu-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tofuPackage = {
+export const opentofuorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const tofuPackage = {
    */
   description: 'OpenTofu lets you declaratively manage your cloud infrastructure.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/opentofu.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://opentofu.org' as const,
+  githubUrl: 'https://github.com/opentofu/opentofu' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tofu' as const,
+  installCommand: 'launchpad install opentofu.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +opentofu.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install opentofu.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,6 +68,13 @@ export const tofuPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.10.6',
+    '1.10.5',
+    '1.10.4',
+    '1.10.3',
+    '1.10.2',
+    '1.10.1',
+    '1.10.0',
     '1.9.4',
     '1.9.3',
     '1.9.2',
@@ -96,21 +101,8 @@ export const tofuPackage = {
     '1.7.4',
     '1.7.3',
     '1.6.0.3',
-    '1.10.6',
-    '1.10.5',
-    '1.10.4',
-    '1.10.3',
-    '1.10.2',
-    '1.10.1',
-    '1.10.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tofu -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tofu' as const,
 }
 
-export type TofuPackage = typeof tofuPackage
+export type OpentofuorgPackage = typeof opentofuorgPackage

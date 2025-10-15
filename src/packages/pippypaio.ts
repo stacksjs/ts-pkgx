@@ -6,19 +6,15 @@
  * @version `25.2.0` (28 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pip`
- * @name `pip`
+ * @install `launchpad install pip.pypa.io`
+ * @homepage https://pip.pypa.io/
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pip
- * // Or access via domain
- * const samePkg = pantry.pippypaio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pippypaio
  * console.log(pkg.name)        // "pip"
  * console.log(pkg.description) // "The Python package installer"
  * console.log(pkg.programs)    // ["pip", "pip3.8", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pip-pypa-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pipPackage = {
+export const pippypaioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const pipPackage = {
    */
   description: 'The Python package installer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pip.pypa.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://pip.pypa.io/' as const,
+  githubUrl: 'https://github.com/pypa/pip' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pip' as const,
+  installCommand: 'launchpad install pip.pypa.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pip.pypa.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pip.pypa.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -102,13 +100,7 @@ export const pipPackage = {
     '19.3.1',
     '18.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pip.pypa.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pip' as const,
 }
 
-export type PipPackage = typeof pipPackage
+export type PippypaioPackage = typeof pippypaioPackage

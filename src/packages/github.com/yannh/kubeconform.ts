@@ -6,18 +6,14 @@
  * @version `0.7.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install kubeconform`
- * @name `kubeconform`
+ * @install `launchpad install github.com/yannh/kubeconform`
+ * @dependencies `go.dev@>=1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.kubeconform
- * // Or access via domain
- * const samePkg = pantry.githubcomyannhkubeconform
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomyannhkubeconform
  * console.log(pkg.name)        // "kubeconform"
  * console.log(pkg.description) // "A FAST Kubernetes manifests validator, with sup..."
  * console.log(pkg.programs)    // ["kubeconform"]
@@ -47,7 +43,9 @@ export const kubeconformPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install kubeconform' as const,
+  installCommand: 'launchpad install github.com/yannh/kubeconform' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/yannh/kubeconform -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/yannh/kubeconform' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const kubeconformPackage = {
     'kubeconform',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@>=1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -68,13 +72,7 @@ export const kubeconformPackage = {
     '0.6.5',
     '0.6.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kubeconform -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install kubeconform' as const,
 }
 
 export type KubeconformPackage = typeof kubeconformPackage

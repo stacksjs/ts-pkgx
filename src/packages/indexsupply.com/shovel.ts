@@ -6,19 +6,15 @@
  * @version `1.6.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install shovel`
- * @name `shovel`
- * @companions `postgresql.org`
+ * @install `launchpad install indexsupply.com/shovel`
+ * @homepage https://indexsupply.com/shovel
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.shovel
- * // Or access via domain
- * const samePkg = pantry.indexsupplycomshovel
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.indexsupplycomshovel
  * console.log(pkg.name)        // "shovel"
  * console.log(pkg.description) // "An Ethereum to Postgres indexer"
  * console.log(pkg.programs)    // ["shovel"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/indexsupply-com/shovel.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const shovelPackage = {
+export const indexsupplycomshovelPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const shovelPackage = {
    */
   description: 'An Ethereum to Postgres indexer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/indexsupply.com/shovel/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://indexsupply.com/shovel' as const,
+  githubUrl: 'https://github.com/indexsupply/code' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install shovel' as const,
+  installCommand: 'launchpad install indexsupply.com/shovel' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +indexsupply.com/shovel -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install indexsupply.com/shovel' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,14 +54,14 @@ export const shovelPackage = {
   programs: [
     'shovel',
   ] as const,
+  companions: [] as const,
   /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
+   * Required dependencies for this package.
+   * These will be automatically installed.
    */
-  companions: [
-    'postgresql.org',
+  dependencies: [
+    'go.dev@^1.21',
   ] as const,
-  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -77,13 +75,7 @@ export const shovelPackage = {
     '1.1.0',
     '1.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) shovel -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install shovel' as const,
 }
 
-export type ShovelPackage = typeof shovelPackage
+export type IndexsupplycomshovelPackage = typeof indexsupplycomshovelPackage

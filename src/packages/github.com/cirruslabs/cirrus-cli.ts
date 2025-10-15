@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/cirruslabs/cirrus-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcirruslabscirruscliPackage = {
+export const cirruscliPackage = {
   /**
    * The display name of this package.
    */
@@ -161,4 +161,4 @@ export const githubcomcirruslabscirruscliPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcirruslabscirruscliPackage = typeof githubcomcirruslabscirruscliPackage
+export type CirruscliPackage = typeof cirruscliPackage

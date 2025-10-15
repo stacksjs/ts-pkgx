@@ -1,5 +1,5 @@
 /**
- * **htslib.org** - C library for high-throughput sequencing data formats
+ * **htslib** - C library for high-throughput sequencing data formats
  *
  * @domain `htslib.org`
  * @programs `bgzip`, `htsfile`, `tabix`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install htslib.org`
+ * @homepage https://www.htslib.org/
  * @dependencies `sourceware.org/bzip2`, `tukaani.org/xz`, `zlib.net^1`, ... (+1 more)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.htsliborg
- * console.log(pkg.name)        // "htslib.org"
+ * console.log(pkg.name)        // "htslib"
  * console.log(pkg.description) // "C library for high-throughput sequencing data f..."
  * console.log(pkg.programs)    // ["bgzip", "htsfile", ...]
  * console.log(pkg.versions[0]) // "1.22.1" (latest)
@@ -27,7 +28,7 @@ export const htsliborgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'htslib.org' as const,
+  name: 'htslib' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const htsliborgPackage = {
    */
   description: 'C library for high-throughput sequencing data formats' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/htslib.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.htslib.org/' as const,
+  githubUrl: 'https://github.com/samtools/htslib' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install htslib.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +htslib.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install htslib.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,8 +81,6 @@ export const htsliborgPackage = {
     '1.18.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +htslib.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install htslib.org' as const,
 }
 
 export type HtsliborgPackage = typeof htsliborgPackage

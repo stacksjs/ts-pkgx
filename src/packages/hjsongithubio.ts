@@ -6,18 +6,14 @@
  * @version `1.1.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install hjson`
- * @name `hjson`
+ * @install `launchpad install hjson.github.io`
+ * @homepage https://hjson.github.io/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.hjson
- * // Or access via domain
- * const samePkg = pantry.hjsongithubio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.hjsongithubio
  * console.log(pkg.name)        // "hjson"
  * console.log(pkg.description) // "Hjson for Rust"
  * console.log(pkg.programs)    // ["hjson"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/hjson-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const hjsonPackage = {
+export const hjsongithubioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const hjsonPackage = {
    */
   description: 'Hjson for Rust' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/hjson.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://hjson.github.io/' as const,
+  githubUrl: 'https://github.com/hjson/hjson-rust' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install hjson' as const,
+  installCommand: 'launchpad install hjson.github.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +hjson.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hjson.github.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,13 +63,7 @@ export const hjsonPackage = {
     '1.1.0',
     '1.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hjson -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install hjson' as const,
 }
 
-export type HjsonPackage = typeof hjsonPackage
+export type HjsongithubioPackage = typeof hjsongithubioPackage

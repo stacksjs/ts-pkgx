@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/justwatchcom/sql_exporter.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjustwatchcomsql_exporterPackage = {
+export const sql_exporterPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomjustwatchcomsql_exporterPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomjustwatchcomsql_exporterPackage = typeof githubcomjustwatchcomsql_exporterPackage
+export type Sql_exporterPackage = typeof sql_exporterPackage

@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/libkml/libkml.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomlibkmllibkmlPackage = {
+export const libkmlPackage = {
   /**
    * The display name of this package.
    */
@@ -67,4 +67,4 @@ export const githubcomlibkmllibkmlPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomlibkmllibkmlPackage = typeof githubcomlibkmllibkmlPackage
+export type LibkmlPackage = typeof libkmlPackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/kylef/swiftenv.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkylefswiftenvPackage = {
+export const swiftenvPackage = {
   /**
    * The display name of this package.
    */
@@ -65,4 +65,4 @@ export const githubcomkylefswiftenvPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkylefswiftenvPackage = typeof githubcomkylefswiftenvPackage
+export type SwiftenvPackage = typeof swiftenvPackage

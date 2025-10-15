@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/awslabs/dynein.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomawslabsdyneinPackage = {
+export const dyneinPackage = {
   /**
    * The display name of this package.
    */
@@ -73,4 +73,4 @@ export const githubcomawslabsdyneinPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomawslabsdyneinPackage = typeof githubcomawslabsdyneinPackage
+export type DyneinPackage = typeof dyneinPackage

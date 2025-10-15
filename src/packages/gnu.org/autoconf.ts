@@ -1,5 +1,5 @@
 /**
- * **gnu.org/autoconf** - Automatic configure script builder
+ * **autoconf** - Automatic configure script builder
  *
  * @domain `gnu.org/autoconf`
  * @programs `autoconf`, `autoheader`, `autom4te`, `autoreconf`, `autoscan`, ... (+2 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/autoconf`
+ * @homepage https://www.gnu.org/software/autoconf/
  * @dependencies `gnu.org/m4@1`, `perl.org`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgautoconf
- * console.log(pkg.name)        // "gnu.org/autoconf"
+ * console.log(pkg.name)        // "autoconf"
  * console.log(pkg.description) // "Automatic configure script builder"
  * console.log(pkg.programs)    // ["autoconf", "autoheader", ...]
  * console.log(pkg.versions[0]) // "2.72.0" (latest)
@@ -27,7 +28,7 @@ export const gnuorgautoconfPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/autoconf' as const,
+  name: 'autoconf' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const gnuorgautoconfPackage = {
    */
   description: 'Automatic configure script builder' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/autoconf/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.gnu.org/software/autoconf/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnu.org/autoconf' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/autoconf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/autoconf' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,8 +78,6 @@ export const gnuorgautoconfPackage = {
     '2.71.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/autoconf -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/autoconf' as const,
 }
 
 export type GnuorgautoconfPackage = typeof gnuorgautoconfPackage

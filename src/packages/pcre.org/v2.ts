@@ -6,19 +6,15 @@
  * @version `10.46.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pcre2`
- * @name `pcre2`
+ * @install `launchpad install pcre.org/v2`
+ * @homepage https://www.pcre.org/
  * @dependencies `sourceware.org/bzip2@1`, `zlib.net@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pcre2
- * // Or access via domain
- * const samePkg = pantry.pcreorgv2
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pcreorgv2
  * console.log(pkg.name)        // "pcre2"
  * console.log(pkg.description) // "Perl compatible regular expressions library wit..."
  * console.log(pkg.programs)    // ["pcre2-config", "pcre2grep", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pcre-org/v2.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pcre2Package = {
+export const pcreorgv2Package = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const pcre2Package = {
    */
   description: 'Perl compatible regular expressions library with a new API' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pcre.org/v2/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.pcre.org/' as const,
+  githubUrl: 'https://github.com/PCRE2Project/pcre2' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pcre2' as const,
+  installCommand: 'launchpad install pcre.org/v2' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pcre.org/v2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pcre.org/v2' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,13 +75,7 @@ export const pcre2Package = {
     '10.43.0',
     '10.42.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pcre.org/v2 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pcre2' as const,
 }
 
-export type Pcre2Package = typeof pcre2Package
+export type Pcreorgv2Package = typeof pcreorgv2Package

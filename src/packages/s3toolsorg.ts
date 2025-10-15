@@ -6,8 +6,9 @@
  * @version `2.4.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install s3cmd`
+ * @install `launchpad install s3tools.org`
  * @name `s3cmd`
+ * @homepage https://s3tools.org/s3cmd
  * @dependencies `python.org>=3<3.12`
  *
  * @example
@@ -42,13 +43,15 @@ export const s3cmdPackage = {
    */
   description: 'Official s3cmd repo -- Command line tool for managing S3 compatible storage services (including Amazon S3 and CloudFront).' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/s3tools.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://s3tools.org/s3cmd' as const,
+  githubUrl: 'https://github.com/s3tools/s3cmd' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install s3cmd' as const,
+  installCommand: 'launchpad install s3tools.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +s3tools.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install s3tools.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,8 +80,6 @@ export const s3cmdPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) s3cmd -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install s3cmd' as const,
 }
 
 export type S3cmdPackage = typeof s3cmdPackage

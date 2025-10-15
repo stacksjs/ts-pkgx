@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jaraco/keyring.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjaracokeyringPackage = {
+export const keyringPackage = {
   /**
    * The display name of this package.
    */
@@ -85,4 +85,4 @@ export const githubcomjaracokeyringPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjaracokeyringPackage = typeof githubcomjaracokeyringPackage
+export type KeyringPackage = typeof keyringPackage

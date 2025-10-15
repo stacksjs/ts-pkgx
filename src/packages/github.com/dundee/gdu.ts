@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/dundee/gdu.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomdundeegduPackage = {
+export const gduPackage = {
   /**
    * The display name of this package.
    */
@@ -75,4 +75,4 @@ export const githubcomdundeegduPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomdundeegduPackage = typeof githubcomdundeegduPackage
+export type GduPackage = typeof gduPackage

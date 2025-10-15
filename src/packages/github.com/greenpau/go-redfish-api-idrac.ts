@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/greenpau/go-redfish-api-idrac.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgreenpaugoredfishapiidracPackage = {
+export const goredfishapiidracPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomgreenpaugoredfishapiidracPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgreenpaugoredfishapiidracPackage = typeof githubcomgreenpaugoredfishapiidracPackage
+export type GoredfishapiidracPackage = typeof goredfishapiidracPackage

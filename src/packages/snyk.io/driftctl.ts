@@ -6,18 +6,14 @@
  * @version `0.40.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install driftctl`
- * @name `driftctl`
+ * @install `launchpad install snyk.io/driftctl`
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.driftctl
- * // Or access via domain
- * const samePkg = pantry.snykiodriftctl
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.snykiodriftctl
  * console.log(pkg.name)        // "driftctl"
  * console.log(pkg.description) // "Detect, track and alert on infrastructure drift"
  * console.log(pkg.programs)    // ["driftctl"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/snyk-io/driftctl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const driftctlPackage = {
+export const snykiodriftctlPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const driftctlPackage = {
   description: 'Detect, track and alert on infrastructure drift' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/snyk.io/driftctl/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/snyk/driftctl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install driftctl' as const,
+  installCommand: 'launchpad install snyk.io/driftctl' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +snyk.io/driftctl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install snyk.io/driftctl' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const driftctlPackage = {
     'driftctl',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -65,13 +69,7 @@ export const driftctlPackage = {
     '0.40.0',
     '0.39.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) driftctl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install driftctl' as const,
 }
 
-export type DriftctlPackage = typeof driftctlPackage
+export type SnykiodriftctlPackage = typeof snykiodriftctlPackage

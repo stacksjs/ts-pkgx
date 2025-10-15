@@ -6,18 +6,13 @@
  * @version `2023.12.27` (33 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install geni`
- * @name `geni`
+ * @install `launchpad install priver.dev/geni`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.geni
- * // Or access via domain
- * const samePkg = pantry.priverdevgeni
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.priverdevgeni
  * console.log(pkg.name)        // "geni"
  * console.log(pkg.description) // "Standalone database migration tool which works ..."
  * console.log(pkg.programs)    // ["geni"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/priver-dev/geni.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const geniPackage = {
+export const priverdevgeniPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const geniPackage = {
   description: 'Standalone database migration tool which works for Postgres, MariaDB, MySQL, Sqlite and LibSQL(Turso).' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/priver.dev/geni/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/emilpriver/geni' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install geni' as const,
+  installCommand: 'launchpad install priver.dev/geni' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +priver.dev/geni -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install priver.dev/geni' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -96,13 +93,7 @@ export const geniPackage = {
     '0.0.3',
     '0.0.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) geni -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install geni' as const,
 }
 
-export type GeniPackage = typeof geniPackage
+export type PriverdevgeniPackage = typeof priverdevgeniPackage

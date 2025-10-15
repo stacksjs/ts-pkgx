@@ -6,19 +6,15 @@
  * @version `14.19.1` (117 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install firebase`
- * @name `firebase`
+ * @install `launchpad install google.com/firebase-tools`
+ * @homepage https://firebase.google.com/docs/cli/
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.firebase
- * // Or access via domain
- * const samePkg = pantry.googlecomfirebasetools
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.googlecomfirebasetools
  * console.log(pkg.name)        // "firebase"
  * console.log(pkg.description) // "The Firebase Command Line Tools"
  * console.log(pkg.programs)    // ["firebase"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/google-com/firebase-tools.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const firebasePackage = {
+export const googlecomfirebasetoolsPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const firebasePackage = {
    */
   description: 'The Firebase Command Line Tools' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/google.com/firebase-tools/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://firebase.google.com/docs/cli/' as const,
+  githubUrl: 'https://github.com/firebase/firebase-tools' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install firebase' as const,
+  installCommand: 'launchpad install google.com/firebase-tools' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +google.com/firebase-tools -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install google.com/firebase-tools' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -187,13 +185,7 @@ export const firebasePackage = {
     '12.7.0',
     '12.6.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) firebase -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install firebase' as const,
 }
 
-export type FirebasePackage = typeof firebasePackage
+export type GooglecomfirebasetoolsPackage = typeof googlecomfirebasetoolsPackage

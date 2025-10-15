@@ -6,19 +6,15 @@
  * @version `1.20.2` (23 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install heif`
- * @name `heif`
+ * @install `launchpad install github.com/strukturag/libheif`
+ * @homepage https://www.libde265.org/
  * @dependencies `aomedia.googlesource.com/aom`, `libjpeg-turbo.org`, `github.com/strukturag/libde265`, ... (+4 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.heif
- * // Or access via domain
- * const samePkg = pantry.githubcomstrukturaglibheif
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomstrukturaglibheif
  * console.log(pkg.name)        // "heif"
  * console.log(pkg.description) // "libheif is an HEIF and AVIF file format decoder..."
  * console.log(pkg.programs)    // ["heif-enc", "heif-info", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/strukturag/libheif.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const heifPackage = {
+export const libheifPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const heifPackage = {
    */
   description: 'libheif is an HEIF and AVIF file format decoder and encoder.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/strukturag/libheif/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.libde265.org/' as const,
+  githubUrl: 'https://github.com/strukturag/libheif' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install heif' as const,
+  installCommand: 'launchpad install github.com/strukturag/libheif' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/strukturag/libheif -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/strukturag/libheif' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -102,13 +100,7 @@ export const heifPackage = {
     '1.17.0',
     '1.16.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/strukturag/libheif -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install heif' as const,
 }
 
-export type HeifPackage = typeof heifPackage
+export type LibheifPackage = typeof libheifPackage

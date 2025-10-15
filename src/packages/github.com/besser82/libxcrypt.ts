@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/besser82/libxcrypt.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcombesser82libxcryptPackage = {
+export const libxcryptPackage = {
   /**
    * The display name of this package.
    */
@@ -68,4 +68,4 @@ export const githubcombesser82libxcryptPackage = {
   aliases: [] as const,
 }
 
-export type Githubcombesser82libxcryptPackage = typeof githubcombesser82libxcryptPackage
+export type LibxcryptPackage = typeof libxcryptPackage

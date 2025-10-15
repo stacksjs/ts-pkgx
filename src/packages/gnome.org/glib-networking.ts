@@ -1,5 +1,5 @@
 /**
- * **gnome.org/glib-networking** - pkgx package
+ * **glib-networking** - pkgx package
  *
  * @domain `gnome.org/glib-networking`
  * @version `2.80.1` (4 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnomeorgglibnetworking
- * console.log(pkg.name)        // "gnome.org/glib-networking"
+ * console.log(pkg.name)        // "glib-networking"
  * console.log(pkg.versions[0]) // "2.80.1" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const gnomeorgglibnetworkingPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnome.org/glib-networking' as const,
+  name: 'glib-networking' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const gnomeorgglibnetworkingPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/glib-networking/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnome.org/glib-networking' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/glib-networking -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnome.org/glib-networking' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -63,8 +65,6 @@ export const gnomeorgglibnetworkingPackage = {
     '2.78.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/glib-networking -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnome.org/glib-networking' as const,
 }
 
 export type GnomeorgglibnetworkingPackage = typeof gnomeorgglibnetworkingPackage

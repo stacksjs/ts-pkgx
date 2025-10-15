@@ -1,5 +1,5 @@
 /**
- * **x.org/xpm** - pkgx package
+ * **xpm** - pkgx package
  *
  * @domain `x.org/xpm`
  * @version `3.5.17` (2 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgxpm
- * console.log(pkg.name)        // "x.org/xpm"
+ * console.log(pkg.name)        // "xpm"
  * console.log(pkg.versions[0]) // "3.5.17" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgxpmPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xpm' as const,
+  name: 'xpm' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const xorgxpmPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xpm/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install x.org/xpm' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xpm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/xpm' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -60,8 +62,6 @@ export const xorgxpmPackage = {
     '3.5.15',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xpm -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install x.org/xpm' as const,
 }
 
 export type XorgxpmPackage = typeof xorgxpmPackage

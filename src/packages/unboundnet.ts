@@ -6,19 +6,15 @@
  * @version `1.24.0` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install unbound`
- * @name `unbound`
+ * @install `launchpad install unbound.net`
+ * @homepage https://nlnetlabs.nl/unbound
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.unbound
- * // Or access via domain
- * const samePkg = pantry.unboundnet
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.unboundnet
  * console.log(pkg.name)        // "unbound"
  * console.log(pkg.description) // "Unbound is a validating, recursive, and caching..."
  * console.log(pkg.programs)    // ["unbound", "unbound-anchor", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/unbound-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const unboundPackage = {
+export const unboundnetPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const unboundPackage = {
    */
   description: 'Unbound is a validating, recursive, and caching DNS resolver.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/unbound.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://nlnetlabs.nl/unbound' as const,
+  githubUrl: 'https://github.com/NLnetLabs/unbound' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install unbound' as const,
+  installCommand: 'launchpad install unbound.net' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +unbound.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install unbound.net' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -88,13 +86,7 @@ export const unboundPackage = {
     '1.18.0',
     '1.17.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +unbound.net -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install unbound' as const,
 }
 
-export type UnboundPackage = typeof unboundPackage
+export type UnboundnetPackage = typeof unboundnetPackage

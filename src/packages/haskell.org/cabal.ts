@@ -6,19 +6,15 @@
  * @version `3.8.1` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install cabal`
- * @name `cabal`
+ * @install `launchpad install haskell.org/cabal`
+ * @homepage https://www.haskell.org/cabal/
  * @dependencies `haskell.org@9`, `gnu.org/gmp@6`, `zlib.net@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cabal
- * // Or access via domain
- * const samePkg = pantry.haskellorgcabal
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.haskellorgcabal
  * console.log(pkg.name)        // "cabal"
  * console.log(pkg.description) // "Official upstream development repository for Ca..."
  * console.log(pkg.programs)    // ["cabal"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/haskell-org/cabal.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cabalPackage = {
+export const haskellorgcabalPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const cabalPackage = {
    */
   description: 'Official upstream development repository for Cabal and cabal-install' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/haskell.org/cabal/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.haskell.org/cabal/' as const,
+  githubUrl: 'https://github.com/haskell/cabal' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cabal' as const,
+  installCommand: 'launchpad install haskell.org/cabal' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +haskell.org/cabal -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install haskell.org/cabal' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,13 +77,7 @@ export const cabalPackage = {
     '3.10.3.0',
     '3.10.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cabal -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cabal' as const,
 }
 
-export type CabalPackage = typeof cabalPackage
+export type HaskellorgcabalPackage = typeof haskellorgcabalPackage

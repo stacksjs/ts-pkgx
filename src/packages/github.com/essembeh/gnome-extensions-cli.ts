@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/essembeh/gnome-extensions-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomessembehgnomeextensionscliPackage = {
+export const gnomeextensionscliPackage = {
   /**
    * The display name of this package.
    */
@@ -77,4 +77,4 @@ export const githubcomessembehgnomeextensionscliPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomessembehgnomeextensionscliPackage = typeof githubcomessembehgnomeextensionscliPackage
+export type GnomeextensionscliPackage = typeof gnomeextensionscliPackage

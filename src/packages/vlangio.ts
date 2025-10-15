@@ -6,7 +6,7 @@
  * @version `0.4.12` (16 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install v`
+ * @install `launchpad install vlang.io`
  *
  * @example
  * ```typescript
@@ -37,12 +37,14 @@ export const vlangioPackage = {
   description: 'Simple, fast, safe, compiled language for developing maintainable software. Compiles itself in <1s with zero library dependencies. Supports automatic C => V translation. https://vlang.io' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/vlang.io/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/vlang/v' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install v' as const,
+  installCommand: 'launchpad install vlang.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +vlang.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vlang.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,8 +77,6 @@ export const vlangioPackage = {
     '0.3.3',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) v -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install v' as const,
 }
 
 export type VlangioPackage = typeof vlangioPackage

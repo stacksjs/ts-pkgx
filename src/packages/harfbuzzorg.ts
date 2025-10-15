@@ -1,5 +1,5 @@
 /**
- * **harfbuzz.org** - HarfBuzz text shaping engine
+ * **harfbuzz** - HarfBuzz text shaping engine
  *
  * @domain `harfbuzz.org`
  * @programs `hb-ot-shape-closure`, `hb-shape`, `hb-subset`, `hb-view`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install harfbuzz.org`
+ * @homepage http://harfbuzz.github.io/
  * @dependencies `cairographics.org@1`, `freetype.org@2`, `gnome.org/glib@2`, ... (+2 more)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.harfbuzzorg
- * console.log(pkg.name)        // "harfbuzz.org"
+ * console.log(pkg.name)        // "harfbuzz"
  * console.log(pkg.description) // "HarfBuzz text shaping engine"
  * console.log(pkg.programs)    // ["hb-ot-shape-closure", "hb-shape", ...]
  * console.log(pkg.versions[0]) // "999.999.999" (latest)
@@ -27,7 +28,7 @@ export const harfbuzzorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'harfbuzz.org' as const,
+  name: 'harfbuzz' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const harfbuzzorgPackage = {
    */
   description: 'HarfBuzz text shaping engine' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/harfbuzz.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://harfbuzz.github.io/' as const,
+  githubUrl: 'https://github.com/harfbuzz/harfbuzz' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install harfbuzz.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +harfbuzz.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install harfbuzz.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -115,8 +118,6 @@ export const harfbuzzorgPackage = {
     '5.3.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +harfbuzz.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install harfbuzz.org' as const,
 }
 
 export type HarfbuzzorgPackage = typeof harfbuzzorgPackage

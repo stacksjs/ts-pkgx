@@ -6,11 +6,11 @@
  * @version `3.14.0` (159 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install python`
+ * @install `launchpad install python.org`
  * @name `python`
  * @aliases `py`
+ * @homepage https://www.python.org
  * @dependencies `zlib.net@1`, `sourceware.org/bzip2@1`, `openssl.org^1.1`, ... (+9 more) (includes OS-specific dependencies with `os:package` format)
- * @companions `pip.pypa.io`
  *
  * @example
  * ```typescript
@@ -44,13 +44,15 @@ export const pythonPackage = {
    */
   description: 'The Python programming language' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/python.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.python.org' as const,
+  githubUrl: 'https://github.com/python/cpython' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install python' as const,
+  installCommand: 'launchpad install python.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +python.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install python.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -60,13 +62,7 @@ export const pythonPackage = {
     'python{{ version.major }}',
     'python{{ version.marketing }}',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'pip.pypa.io',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -258,8 +254,6 @@ export const pythonPackage = {
   aliases: [
     'py',
   ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +python.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install python' as const,
 }
 
 export type PythonPackage = typeof pythonPackage

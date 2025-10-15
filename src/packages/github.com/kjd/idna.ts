@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/kjd/idna.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkjdidnaPackage = {
+export const idnaPackage = {
   /**
    * The display name of this package.
    */
@@ -68,4 +68,4 @@ export const githubcomkjdidnaPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkjdidnaPackage = typeof githubcomkjdidnaPackage
+export type IdnaPackage = typeof idnaPackage

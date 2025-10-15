@@ -19,7 +19,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/denisidoro/navi.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomdenisidoronaviPackage = {
+export const naviPackage = {
   /**
    * The display name of this package.
    */
@@ -55,4 +55,4 @@ export const githubcomdenisidoronaviPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomdenisidoronaviPackage = typeof githubcomdenisidoronaviPackage
+export type NaviPackage = typeof naviPackage

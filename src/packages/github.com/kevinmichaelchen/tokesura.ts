@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/kevinmichaelchen/tokesura.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkevinmichaelchentokesuraPackage = {
+export const tokesuraPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomkevinmichaelchentokesuraPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkevinmichaelchentokesuraPackage = typeof githubcomkevinmichaelchentokesuraPackage
+export type TokesuraPackage = typeof tokesuraPackage

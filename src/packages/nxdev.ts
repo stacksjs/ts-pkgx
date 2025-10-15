@@ -1,24 +1,19 @@
 /**
- * **nx** - pkgx package
+ * **nx.dev** - pkgx package
  *
  * @domain `nx.dev`
  * @programs `nx`
  * @version `21.6.4` (181 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install nx`
- * @aliases `nx`
+ * @install `launchpad install nx.dev`
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.nx
- * // Or access via domain
- * const samePkg = pantry.nxdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.nxdev
  * console.log(pkg.name)        // "nx.dev"
  * console.log(pkg.programs)    // ["nx"]
  * console.log(pkg.versions[0]) // "21.6.4" (latest)
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/nx-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nxPackage = {
+export const nxdevPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const nxPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nx.dev/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install nx' as const,
+  installCommand: 'launchpad install nx.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nx.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nx.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -250,15 +247,7 @@ export const nxPackage = {
     '17.0.5',
     '17.0.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'nx',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nx -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install nx' as const,
+  aliases: [] as const,
 }
 
-export type NxPackage = typeof nxPackage
+export type NxdevPackage = typeof nxdevPackage

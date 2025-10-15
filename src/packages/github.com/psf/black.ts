@@ -6,19 +6,15 @@
  * @version `25.9.0` (20 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install black`
- * @name `black`
+ * @install `launchpad install github.com/psf/black`
+ * @homepage https://black.readthedocs.io/en/stable/
  * @dependencies `pkgx.sh>=1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.black
- * // Or access via domain
- * const samePkg = pantry.githubcompsfblack
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcompsfblack
  * console.log(pkg.name)        // "black"
  * console.log(pkg.description) // "The uncompromising Python code formatter"
  * console.log(pkg.programs)    // ["black", "blackd"]
@@ -42,13 +38,15 @@ export const blackPackage = {
    */
   description: 'The uncompromising Python code formatter' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/psf/black/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://black.readthedocs.io/en/stable/' as const,
+  githubUrl: 'https://github.com/psf/black' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install black' as const,
+  installCommand: 'launchpad install github.com/psf/black' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/psf/black -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/psf/black' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -91,13 +89,7 @@ export const blackPackage = {
     '23.7.0',
     '23.3.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/psf/black -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install black' as const,
 }
 
 export type BlackPackage = typeof blackPackage

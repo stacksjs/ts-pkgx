@@ -1,5 +1,5 @@
 /**
- * **github.com/util-linux/util-linux** - pkgx package
+ * **util-linux** - pkgx package
  *
  * @domain `github.com/util-linux/util-linux`
  * @programs `cal`, `colcrt`, `colrm`, `column`, `flock`, ... (+16 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/util-linux/util-linux`
+ * @homepage http://en.wikipedia.org/wiki/Util-linux
  * @dependencies `gnu.org/gettext^0`, `sqlite.org^3`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomutillinuxutillinux
- * console.log(pkg.name)        // "github.com/util-linux/util-linux"
+ * console.log(pkg.name)        // "util-linux"
  * console.log(pkg.programs)    // ["cal", "colcrt", ...]
  * console.log(pkg.versions[0]) // "2.41.2" (latest)
  * ```
@@ -22,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/util-linux/util-linux.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomutillinuxutillinuxPackage = {
+export const utillinuxPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/util-linux/util-linux' as const,
+  name: 'util-linux' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,13 +37,15 @@ export const githubcomutillinuxutillinuxPackage = {
    */
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/util-linux/util-linux/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://en.wikipedia.org/wiki/Util-linux' as const,
+  githubUrl: 'https://github.com/util-linux/util-linux' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/util-linux/util-linux' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/util-linux/util-linux -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/util-linux/util-linux' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -100,8 +103,6 @@ export const githubcomutillinuxutillinuxPackage = {
     '2.38.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/util-linux/util-linux -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/util-linux/util-linux' as const,
 }
 
-export type GithubcomutillinuxutillinuxPackage = typeof githubcomutillinuxutillinuxPackage
+export type UtillinuxPackage = typeof utillinuxPackage

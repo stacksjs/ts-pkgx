@@ -6,19 +6,14 @@
  * @version `4.7.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install SquashFS-Tools`
- * @name `SquashFS-Tools`
+ * @install `launchpad install github.com/plougher/squashfs-tools`
  * @dependencies `lz4.org@1`, `oberhumer.com/lzo@2`, `tukaani.org/xz@5`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.SquashFSTools
- * // Or access via domain
- * const samePkg = pantry.githubcomploughersquashfstools
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomploughersquashfstools
  * console.log(pkg.name)        // "SquashFS-Tools"
  * console.log(pkg.description) // "tools to create and extract Squashfs filesystems"
  * console.log(pkg.programs)    // ["mksquashfs", "unsquashfs", ...]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/plougher/squashfs-tools.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const squashFSToolsPackage = {
+export const squashfstoolsPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const squashFSToolsPackage = {
   description: 'tools to create and extract Squashfs filesystems' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/plougher/squashfs-tools/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/plougher/squashfs-tools' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install SquashFS-Tools' as const,
+  installCommand: 'launchpad install github.com/plougher/squashfs-tools' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/plougher/squashfs-tools -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/plougher/squashfs-tools' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -81,13 +78,7 @@ export const squashFSToolsPackage = {
     '4.7.0',
     '4.6.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/plougher/squashfs-tools -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install SquashFS-Tools' as const,
 }
 
-export type SquashFSToolsPackage = typeof squashFSToolsPackage
+export type SquashfstoolsPackage = typeof squashfstoolsPackage

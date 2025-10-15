@@ -6,18 +6,15 @@
  * @version `0.10.8` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install xeol`
- * @name `xeol`
+ * @install `launchpad install github.com/xeol-io/xeol`
+ * @homepage https://www.xeol.io/
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.xeol
- * // Or access via domain
- * const samePkg = pantry.githubcomxeolioxeol
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomxeolioxeol
  * console.log(pkg.name)        // "xeol"
  * console.log(pkg.description) // "A scanner for end-of-life (EOL) software and de..."
  * console.log(pkg.programs)    // ["xeol"]
@@ -41,13 +38,15 @@ export const xeolPackage = {
    */
   description: 'A scanner for end-of-life (EOL) software and dependencies in container images, filesystems, and SBOMs' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/xeol-io/xeol/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.xeol.io/' as const,
+  githubUrl: 'https://github.com/xeol-io/xeol' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install xeol' as const,
+  installCommand: 'launchpad install github.com/xeol-io/xeol' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/xeol-io/xeol -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/xeol-io/xeol' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const xeolPackage = {
     'xeol',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -84,13 +89,7 @@ export const xeolPackage = {
     '0.9.5',
     '0.9.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xeol -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install xeol' as const,
 }
 
 export type XeolPackage = typeof xeolPackage

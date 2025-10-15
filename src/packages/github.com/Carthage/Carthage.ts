@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Carthage/Carthage.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcarthagecarthagePackage = {
+export const carthagePackage = {
   /**
    * The display name of this package.
    */
@@ -66,4 +66,4 @@ export const githubcomcarthagecarthagePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcarthagecarthagePackage = typeof githubcomcarthagecarthagePackage
+export type CarthagePackage = typeof carthagePackage

@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/giampaolo/psutil.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgiampaolopsutilPackage = {
+export const psutilPackage = {
   /**
    * The display name of this package.
    */
@@ -68,4 +68,4 @@ export const githubcomgiampaolopsutilPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgiampaolopsutilPackage = typeof githubcomgiampaolopsutilPackage
+export type PsutilPackage = typeof psutilPackage

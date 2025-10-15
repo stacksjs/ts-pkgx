@@ -6,19 +6,14 @@
  * @version `1.18.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install iconv`
- * @name `iconv`
+ * @install `launchpad install gnu.org/libiconv`
  * @dependencies `linux:gnu.org/gcc/libstdcxx@14` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.iconv
- * // Or access via domain
- * const samePkg = pantry.gnuorglibiconv
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnuorglibiconv
  * console.log(pkg.name)        // "iconv"
  * console.log(pkg.programs)    // ["iconv"]
  * console.log(pkg.versions[0]) // "1.18.0" (latest)
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/libiconv.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const iconvPackage = {
+export const gnuorglibiconvPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const iconvPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libiconv/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install iconv' as const,
+  installCommand: 'launchpad install gnu.org/libiconv' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/libiconv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/libiconv' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +69,7 @@ export const iconvPackage = {
     '1.18.0',
     '1.17.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) iconv -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install iconv' as const,
 }
 
-export type IconvPackage = typeof iconvPackage
+export type GnuorglibiconvPackage = typeof gnuorglibiconvPackage

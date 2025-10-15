@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/hughsie/libxmlb.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomhughsielibxmlbPackage = {
+export const libxmlbPackage = {
   /**
    * The display name of this package.
    */
@@ -78,4 +78,4 @@ export const githubcomhughsielibxmlbPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomhughsielibxmlbPackage = typeof githubcomhughsielibxmlbPackage
+export type LibxmlbPackage = typeof libxmlbPackage

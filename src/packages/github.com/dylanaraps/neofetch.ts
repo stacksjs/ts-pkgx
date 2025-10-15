@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/dylanaraps/neofetch.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomdylanarapsneofetchPackage = {
+export const neofetchPackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomdylanarapsneofetchPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomdylanarapsneofetchPackage = typeof githubcomdylanarapsneofetchPackage
+export type NeofetchPackage = typeof neofetchPackage

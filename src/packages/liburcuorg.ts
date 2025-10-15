@@ -5,18 +5,14 @@
  * @version `0.15.3` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install liburcu`
- * @name `liburcu`
+ * @install `launchpad install liburcu.org`
+ * @homepage http://liburcu.org
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.liburcu
- * // Or access via domain
- * const samePkg = pantry.liburcuorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.liburcuorg
  * console.log(pkg.name)        // "liburcu"
  * console.log(pkg.description) // "liburcu is a LGPLv2.1 userspace RCU (read-copy-..."
  * console.log(pkg.versions[0]) // "0.15.3" (latest)
@@ -25,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/liburcu-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const liburcuPackage = {
+export const liburcuorgPackage = {
   /**
    * The display name of this package.
    */
@@ -39,13 +35,15 @@ export const liburcuPackage = {
    */
   description: 'liburcu is a LGPLv2.1 userspace RCU (read-copy-update) library. This data synchronization library provides read-side access which scales linearly with the number of cores.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/liburcu.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://liburcu.org' as const,
+  githubUrl: 'https://github.com/urcu/userspace-rcu' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install liburcu' as const,
+  installCommand: 'launchpad install liburcu.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +liburcu.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install liburcu.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -59,13 +57,7 @@ export const liburcuPackage = {
     '0.15.1',
     '0.15.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +liburcu.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install liburcu' as const,
 }
 
-export type LiburcuPackage = typeof liburcuPackage
+export type LiburcuorgPackage = typeof liburcuorgPackage

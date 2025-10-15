@@ -6,18 +6,14 @@
  * @version `2.10.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install net-tools`
- * @name `net-tools`
+ * @install `launchpad install sourceforge.net/net-tools`
+ * @homepage https://sourceforge.net/projects/net-tools/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.nettools
- * // Or access via domain
- * const samePkg = pantry.sourceforgenetnettools
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sourceforgenetnettools
  * console.log(pkg.name)        // "net-tools"
  * console.log(pkg.description) // "Linux networking base tools"
  * console.log(pkg.programs)    // ["hostname", "ifconfig", ...]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sourceforge-net/net-tools.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nettoolsPackage = {
+export const sourceforgenetnettoolsPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const nettoolsPackage = {
    */
   description: 'Linux networking base tools' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/net-tools/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://sourceforge.net/projects/net-tools/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install net-tools' as const,
+  installCommand: 'launchpad install sourceforge.net/net-tools' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceforge.net/net-tools -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sourceforge.net/net-tools' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,13 +65,7 @@ export const nettoolsPackage = {
   versions: [
     '2.10.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceforge.net/net-tools -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install net-tools' as const,
 }
 
-export type NettoolsPackage = typeof nettoolsPackage
+export type SourceforgenetnettoolsPackage = typeof sourceforgenetnettoolsPackage

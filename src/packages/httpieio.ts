@@ -1,5 +1,5 @@
 /**
- * **httpie.io** - 🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more.
+ * **httpie** - 🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more.
  *
  * @domain `httpie.io`
  * @programs `http`, `httpie`, `https`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install httpie.io`
+ * @homepage https://httpie.io/
  * @dependencies `python.org>=3<3.12`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.httpieio
- * console.log(pkg.name)        // "httpie.io"
+ * console.log(pkg.name)        // "httpie"
  * console.log(pkg.description) // "🥧 HTTPie CLI  — modern, user-friendly command-..."
  * console.log(pkg.programs)    // ["http", "httpie", ...]
  * console.log(pkg.versions[0]) // "3.2.4" (latest)
@@ -27,7 +28,7 @@ export const httpieioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'httpie.io' as const,
+  name: 'httpie' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const httpieioPackage = {
    */
   description: '🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/httpie.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://httpie.io/' as const,
+  githubUrl: 'https://github.com/httpie/cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install httpie.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +httpie.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install httpie.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,8 +75,6 @@ export const httpieioPackage = {
     '3.2.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +httpie.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install httpie.io' as const,
 }
 
 export type HttpieioPackage = typeof httpieioPackage

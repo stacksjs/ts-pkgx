@@ -6,18 +6,15 @@
  * @version `0.36.0` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install atlantis`
- * @name `atlantis`
+ * @install `launchpad install runatlantis.io`
+ * @homepage https://www.runatlantis.io/
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.atlantis
- * // Or access via domain
- * const samePkg = pantry.runatlantisio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.runatlantisio
  * console.log(pkg.name)        // "atlantis"
  * console.log(pkg.description) // "Terraform Pull Request Automation tool"
  * console.log(pkg.programs)    // ["atlantis"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/runatlantis-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const atlantisPackage = {
+export const runatlantisioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const atlantisPackage = {
    */
   description: 'Terraform Pull Request Automation tool' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/runatlantis.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.runatlantis.io/' as const,
+  githubUrl: 'https://github.com/runatlantis/atlantis' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install atlantis' as const,
+  installCommand: 'launchpad install runatlantis.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +runatlantis.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install runatlantis.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const atlantisPackage = {
     'atlantis',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -84,13 +89,7 @@ export const atlantisPackage = {
     '0.26.0',
     '0.25.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) atlantis -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install atlantis' as const,
 }
 
-export type AtlantisPackage = typeof atlantisPackage
+export type RunatlantisioPackage = typeof runatlantisioPackage

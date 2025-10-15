@@ -6,19 +6,15 @@
  * @version `0.9.6` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install opencanaryd`
- * @name `opencanaryd`
+ * @install `launchpad install github.com/thinkst/opencanary`
+ * @homepage http://opencanary.org
  * @dependencies `python.org>=3.10<3.12`, `tcpdump.org`, `openssl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.opencanaryd
- * // Or access via domain
- * const samePkg = pantry.githubcomthinkstopencanary
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomthinkstopencanary
  * console.log(pkg.name)        // "opencanaryd"
  * console.log(pkg.description) // "Modular and decentralised honeypot"
  * console.log(pkg.programs)    // ["opencanaryd"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/thinkst/opencanary.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const opencanarydPackage = {
+export const opencanaryPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const opencanarydPackage = {
    */
   description: 'Modular and decentralised honeypot' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/thinkst/opencanary/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://opencanary.org' as const,
+  githubUrl: 'https://github.com/thinkst/opencanary' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install opencanaryd' as const,
+  installCommand: 'launchpad install github.com/thinkst/opencanary' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/thinkst/opencanary -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/thinkst/opencanary' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,13 +75,7 @@ export const opencanarydPackage = {
     '0.9.3',
     '0.9.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) opencanaryd -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install opencanaryd' as const,
 }
 
-export type OpencanarydPackage = typeof opencanarydPackage
+export type OpencanaryPackage = typeof opencanaryPackage

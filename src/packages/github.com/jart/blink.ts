@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jart/blink.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjartblinkPackage = {
+export const blinkPackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomjartblinkPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjartblinkPackage = typeof githubcomjartblinkPackage
+export type BlinkPackage = typeof blinkPackage

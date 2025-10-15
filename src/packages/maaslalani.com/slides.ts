@@ -6,18 +6,15 @@
  * @version `0.9.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install slides`
- * @name `slides`
+ * @install `launchpad install maaslalani.com/slides`
+ * @homepage http://maaslalani.com/slides/
+ * @dependencies `go.dev@^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.slides
- * // Or access via domain
- * const samePkg = pantry.maaslalanicomslides
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.maaslalanicomslides
  * console.log(pkg.name)        // "slides"
  * console.log(pkg.description) // "Terminal based presentation tool"
  * console.log(pkg.programs)    // ["slides"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/maaslalani-com/slides.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const slidesPackage = {
+export const maaslalanicomslidesPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const slidesPackage = {
    */
   description: 'Terminal based presentation tool' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/maaslalani.com/slides/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://maaslalani.com/slides/' as const,
+  githubUrl: 'https://github.com/maaslalani/slides' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install slides' as const,
+  installCommand: 'launchpad install maaslalani.com/slides' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +maaslalani.com/slides -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install maaslalani.com/slides' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const slidesPackage = {
     'slides',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +69,7 @@ export const slidesPackage = {
   versions: [
     '0.9.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) slides -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install slides' as const,
 }
 
-export type SlidesPackage = typeof slidesPackage
+export type MaaslalanicomslidesPackage = typeof maaslalanicomslidesPackage

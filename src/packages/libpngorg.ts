@@ -1,5 +1,5 @@
 /**
- * **libpng.org** - LIBPNG: Portable Network Graphics support, official libpng repository
+ * **libpng** - LIBPNG: Portable Network Graphics support, official libpng repository
  *
  * @domain `libpng.org`
  * @programs `libpng-config`, `libpng16-config`, `png-fix-itxt`, `pngfix`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install libpng.org`
+ * @homepage http://www.libpng.org/pub/png/libpng.html
  * @dependencies `zlib.net@1`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.libpngorg
- * console.log(pkg.name)        // "libpng.org"
+ * console.log(pkg.name)        // "libpng"
  * console.log(pkg.description) // "LIBPNG: Portable Network Graphics support, offi..."
  * console.log(pkg.programs)    // ["libpng-config", "libpng16-config", ...]
  * console.log(pkg.versions[0]) // "1.6.50" (latest)
@@ -27,7 +28,7 @@ export const libpngorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libpng.org' as const,
+  name: 'libpng' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const libpngorgPackage = {
    */
   description: 'LIBPNG: Portable Network Graphics support, official libpng repository' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libpng.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://www.libpng.org/pub/png/libpng.html' as const,
+  githubUrl: 'https://github.com/glennrp/libpng' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install libpng.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libpng.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libpng.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,8 +85,6 @@ export const libpngorgPackage = {
     '1.6.35',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libpng.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libpng.org' as const,
 }
 
 export type LibpngorgPackage = typeof libpngorgPackage

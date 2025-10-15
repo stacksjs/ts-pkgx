@@ -6,18 +6,14 @@
  * @version `0.6.1` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ord`
- * @name `ord`
+ * @install `launchpad install ordinals.com`
+ * @homepage https://ordinals.com/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ord
- * // Or access via domain
- * const samePkg = pantry.ordinalscom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ordinalscom
  * console.log(pkg.name)        // "ord"
  * console.log(pkg.description) // "Index, block explorer, and command-line wallet"
  * console.log(pkg.programs)    // ["ord"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ordinals-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ordPackage = {
+export const ordinalscomPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const ordPackage = {
    */
   description: 'Index, block explorer, and command-line wallet' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ordinals.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://ordinals.com/' as const,
+  githubUrl: 'https://github.com/ordinals/ord' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ord' as const,
+  installCommand: 'launchpad install ordinals.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ordinals.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ordinals.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,13 +65,7 @@ export const ordPackage = {
     '0.5.1',
     '0.5.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ord -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ord' as const,
 }
 
-export type OrdPackage = typeof ordPackage
+export type OrdinalscomPackage = typeof ordinalscomPackage

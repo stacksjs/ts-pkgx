@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/anholt/libepoxy.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomanholtlibepoxyPackage = {
+export const libepoxyPackage = {
   /**
    * The display name of this package.
    */
@@ -65,4 +65,4 @@ export const githubcomanholtlibepoxyPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomanholtlibepoxyPackage = typeof githubcomanholtlibepoxyPackage
+export type LibepoxyPackage = typeof libepoxyPackage

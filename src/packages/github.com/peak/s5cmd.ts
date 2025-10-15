@@ -6,18 +6,14 @@
  * @version `2.3.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install s5cmd`
- * @name `s5cmd`
+ * @install `launchpad install github.com/peak/s5cmd`
+ * @dependencies `go.dev@~1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.s5cmd
- * // Or access via domain
- * const samePkg = pantry.githubcompeaks5cmd
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcompeaks5cmd
  * console.log(pkg.name)        // "s5cmd"
  * console.log(pkg.description) // "Parallel S3 and local filesystem execution tool."
  * console.log(pkg.programs)    // ["s5cmd"]
@@ -47,7 +43,9 @@ export const s5cmdPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install s5cmd' as const,
+  installCommand: 'launchpad install github.com/peak/s5cmd' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/peak/s5cmd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/peak/s5cmd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const s5cmdPackage = {
     's5cmd',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +68,7 @@ export const s5cmdPackage = {
   versions: [
     '2.3.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) s5cmd -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install s5cmd' as const,
 }
 
 export type S5cmdPackage = typeof s5cmdPackage

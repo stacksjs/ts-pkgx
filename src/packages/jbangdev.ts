@@ -6,19 +6,15 @@
  * @version `0.132.1` (35 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install jbang`
- * @name `jbang`
+ * @install `launchpad install jbang.dev`
+ * @homepage https://jbang.dev/
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.jbang
- * // Or access via domain
- * const samePkg = pantry.jbangdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.jbangdev
  * console.log(pkg.name)        // "jbang"
  * console.log(pkg.description) // "Unleash the power of Java - JBang Lets Students..."
  * console.log(pkg.programs)    // ["jbang"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/jbang-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jbangPackage = {
+export const jbangdevPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const jbangPackage = {
    */
   description: 'Unleash the power of Java - JBang Lets Students, Educators and Professional Developers create, edit and run self-contained source-only Java programs with unprecedented ease.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jbang.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://jbang.dev/' as const,
+  githubUrl: 'https://github.com/jbangdev/jbang' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install jbang' as const,
+  installCommand: 'launchpad install jbang.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jbang.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jbang.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -105,13 +103,7 @@ export const jbangPackage = {
     '0.111.0',
     '0.110.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jbang -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jbang' as const,
 }
 
-export type JbangPackage = typeof jbangPackage
+export type JbangdevPackage = typeof jbangdevPackage

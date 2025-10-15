@@ -1,11 +1,12 @@
 /**
- * **github.com/quodlibet/mutagen** - Python module for handling audio metadata
+ * **mutagen** - Python module for handling audio metadata
  *
  * @domain `github.com/quodlibet/mutagen`
  * @version `1.47.0` (1 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/quodlibet/mutagen`
+ * @homepage https://mutagen.readthedocs.io
  * @dependencies `python.org>=3.11`
  *
  * @example
@@ -13,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomquodlibetmutagen
- * console.log(pkg.name)        // "github.com/quodlibet/mutagen"
+ * console.log(pkg.name)        // "mutagen"
  * console.log(pkg.description) // "Python module for handling audio metadata"
  * console.log(pkg.versions[0]) // "1.47.0" (latest)
  * ```
@@ -21,11 +22,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/quodlibet/mutagen.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomquodlibetmutagenPackage = {
+export const mutagenPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/quodlibet/mutagen' as const,
+  name: 'mutagen' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,13 +36,15 @@ export const githubcomquodlibetmutagenPackage = {
    */
   description: 'Python module for handling audio metadata' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/quodlibet/mutagen/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://mutagen.readthedocs.io' as const,
   githubUrl: 'https://github.com/quodlibet/mutagen' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/quodlibet/mutagen' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/quodlibet/mutagen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/quodlibet/mutagen' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -59,8 +62,6 @@ export const githubcomquodlibetmutagenPackage = {
     '1.47.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/quodlibet/mutagen -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/quodlibet/mutagen' as const,
 }
 
-export type GithubcomquodlibetmutagenPackage = typeof githubcomquodlibetmutagenPackage
+export type MutagenPackage = typeof mutagenPackage

@@ -1,5 +1,5 @@
 /**
- * **github.com/zsh-users/zsh-autosuggestions** - Fish-like autosuggestions for zsh
+ * **zsh-autosuggestions** - Fish-like autosuggestions for zsh
  *
  * @domain `github.com/zsh-users/zsh-autosuggestions`
  * @version `0.7.1` (2 versions available)
@@ -12,7 +12,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomzshuserszshautosuggestions
- * console.log(pkg.name)        // "github.com/zsh-users/zsh-autosuggestions"
+ * console.log(pkg.name)        // "zsh-autosuggestions"
  * console.log(pkg.description) // "Fish-like autosuggestions for zsh"
  * console.log(pkg.versions[0]) // "0.7.1" (latest)
  * ```
@@ -20,11 +20,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/zsh-users/zsh-autosuggestions.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomzshuserszshautosuggestionsPackage = {
+export const zshautosuggestionsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/zsh-users/zsh-autosuggestions' as const,
+  name: 'zsh-autosuggestions' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const githubcomzshuserszshautosuggestionsPackage = {
   description: 'Fish-like autosuggestions for zsh' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zsh-users/zsh-autosuggestions/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/zsh-users/zsh-autosuggestions' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/zsh-users/zsh-autosuggestions' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/zsh-users/zsh-autosuggestions -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/zsh-users/zsh-autosuggestions' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -53,8 +55,6 @@ export const githubcomzshuserszshautosuggestionsPackage = {
     '0.7.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/zsh-users/zsh-autosuggestions -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/zsh-users/zsh-autosuggestions' as const,
 }
 
-export type GithubcomzshuserszshautosuggestionsPackage = typeof githubcomzshuserszshautosuggestionsPackage
+export type ZshautosuggestionsPackage = typeof zshautosuggestionsPackage

@@ -1,5 +1,5 @@
 /**
- * **github.com/zsh-users/zsh-completions** - Additional completion definitions for Zsh.
+ * **zsh-completions** - Additional completion definitions for Zsh.
  *
  * @domain `github.com/zsh-users/zsh-completions`
  * @version `0.35.0` (1 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomzshuserszshcompletions
- * console.log(pkg.name)        // "github.com/zsh-users/zsh-completions"
+ * console.log(pkg.name)        // "zsh-completions"
  * console.log(pkg.description) // "Additional completion definitions for Zsh."
  * console.log(pkg.versions[0]) // "0.35.0" (latest)
  * ```
@@ -21,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/zsh-users/zsh-completions.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomzshuserszshcompletionsPackage = {
+export const zshcompletionsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/zsh-users/zsh-completions' as const,
+  name: 'zsh-completions' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,12 +36,14 @@ export const githubcomzshuserszshcompletionsPackage = {
   description: 'Additional completion definitions for Zsh.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zsh-users/zsh-completions/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/zsh-users/zsh-completions' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/zsh-users/zsh-completions' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/zsh-users/zsh-completions -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/zsh-users/zsh-completions' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -59,8 +61,6 @@ export const githubcomzshuserszshcompletionsPackage = {
     '0.35.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/zsh-users/zsh-completions -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/zsh-users/zsh-completions' as const,
 }
 
-export type GithubcomzshuserszshcompletionsPackage = typeof githubcomzshuserszshcompletionsPackage
+export type ZshcompletionsPackage = typeof zshcompletionsPackage

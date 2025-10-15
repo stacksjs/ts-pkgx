@@ -1,25 +1,20 @@
 /**
- * **matdump** - C library for reading and writing MATLAB MAT files
+ * **libmatio** - C library for reading and writing MATLAB MAT files
  *
  * @domain `matio.sourceforge.io`
  * @programs `matdump`
  * @version `1.5.28` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install matdump`
- * @name `libmatio`
- * @aliases `matdump`
+ * @install `launchpad install matio.sourceforge.io`
+ * @homepage https://matio.sourceforge.net/
  * @dependencies `hdfgroup.org/HDF5`, `zlib.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.matdump
- * // Or access via domain
- * const samePkg = pantry.matiosourceforgeio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.matiosourceforgeio
  * console.log(pkg.name)        // "libmatio"
  * console.log(pkg.description) // "C library for reading and writing MATLAB MAT files"
  * console.log(pkg.programs)    // ["matdump"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/matio-sourceforge-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const matdumpPackage = {
+export const matiosourceforgeioPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const matdumpPackage = {
    */
   description: 'C library for reading and writing MATLAB MAT files' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/matio.sourceforge.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://matio.sourceforge.net/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install matdump' as const,
+  installCommand: 'launchpad install matio.sourceforge.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +matio.sourceforge.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install matio.sourceforge.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,15 +75,7 @@ export const matdumpPackage = {
     '1.5.24',
     '1.5.23',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'matdump',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) matdump -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install matdump' as const,
+  aliases: [] as const,
 }
 
-export type MatdumpPackage = typeof matdumpPackage
+export type MatiosourceforgeioPackage = typeof matiosourceforgeioPackage

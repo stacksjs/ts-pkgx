@@ -1,5 +1,5 @@
 /**
- * **khronos.org/glslang** - Khronos-reference front end for GLSL/ESSL, partial front end for HLSL, and a SPIR-V generator.
+ * **glslang** - Khronos-reference front end for GLSL/ESSL, partial front end for HLSL, and a SPIR-V generator.
  *
  * @domain `khronos.org/glslang`
  * @programs `glslang`, `glslangValidator`, `spirv-remap`
@@ -7,13 +7,15 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install khronos.org/glslang`
+ * @homepage https://www.khronos.org/opengles/sdk/tools/Reference-Compiler/
+ * @dependencies `cmake.org`, `python.org@~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.khronosorgglslang
- * console.log(pkg.name)        // "khronos.org/glslang"
+ * console.log(pkg.name)        // "glslang"
  * console.log(pkg.description) // "Khronos-reference front end for GLSL/ESSL, part..."
  * console.log(pkg.programs)    // ["glslang", "glslangValidator", ...]
  * console.log(pkg.versions[0]) // "16.0.0" (latest)
@@ -26,7 +28,7 @@ export const khronosorgglslangPackage = {
   /**
    * The display name of this package.
    */
-  name: 'khronos.org/glslang' as const,
+  name: 'glslang' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,13 +38,15 @@ export const khronosorgglslangPackage = {
    */
   description: 'Khronos-reference front end for GLSL/ESSL, partial front end for HLSL, and a SPIR-V generator.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/khronos.org/glslang/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.khronos.org/opengles/sdk/tools/Reference-Compiler/' as const,
+  githubUrl: 'https://github.com/KhronosGroup/glslang' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install khronos.org/glslang' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +khronos.org/glslang -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install khronos.org/glslang' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -53,7 +57,14 @@ export const khronosorgglslangPackage = {
     'spirv-remap',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+    'python.org@~3.11',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -75,8 +86,6 @@ export const khronosorgglslangPackage = {
     '12.3.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +khronos.org/glslang -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install khronos.org/glslang' as const,
 }
 
 export type KhronosorgglslangPackage = typeof khronosorgglslangPackage

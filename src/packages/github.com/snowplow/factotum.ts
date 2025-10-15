@@ -6,19 +6,15 @@
  * @version `0.6.1` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install factotum`
- * @name `factotum`
+ * @install `launchpad install github.com/snowplow/factotum`
+ * @homepage http://snowplowanalytics.com/blog/2016/04/09/introducing-factotum-data-pipeline-runner/
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.factotum
- * // Or access via domain
- * const samePkg = pantry.githubcomsnowplowfactotum
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomsnowplowfactotum
  * console.log(pkg.name)        // "factotum"
  * console.log(pkg.description) // "A system to programmatically run data pipelines"
  * console.log(pkg.programs)    // ["factotum"]
@@ -42,13 +38,15 @@ export const factotumPackage = {
    */
   description: 'A system to programmatically run data pipelines' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/snowplow/factotum/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://snowplowanalytics.com/blog/2016/04/09/introducing-factotum-data-pipeline-runner/' as const,
+  githubUrl: 'https://github.com/snowplow/factotum' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install factotum' as const,
+  installCommand: 'launchpad install github.com/snowplow/factotum' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/snowplow/factotum -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/snowplow/factotum' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +70,7 @@ export const factotumPackage = {
     '0.6.1',
     '0.6.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) factotum -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install factotum' as const,
 }
 
 export type FactotumPackage = typeof factotumPackage

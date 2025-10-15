@@ -6,19 +6,15 @@
  * @version `1.601.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rename`
- * @name `rename`
+ * @install `launchpad install plasmasturm.org/rename`
+ * @homepage http://plasmasturm.org/code/rename/
  * @dependencies `perl.org>=5`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rename
- * // Or access via domain
- * const samePkg = pantry.plasmasturmorgrename
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.plasmasturmorgrename
  * console.log(pkg.name)        // "rename"
  * console.log(pkg.description) // "Rename multiple files"
  * console.log(pkg.programs)    // ["rename"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/plasmasturm-org/rename.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const renamePackage = {
+export const plasmasturmorgrenamePackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const renamePackage = {
    */
   description: 'Rename multiple files' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/plasmasturm.org/rename/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://plasmasturm.org/code/rename/' as const,
+  githubUrl: 'https://github.com/ap/rename' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rename' as const,
+  installCommand: 'launchpad install plasmasturm.org/rename' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +plasmasturm.org/rename -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install plasmasturm.org/rename' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +69,7 @@ export const renamePackage = {
   versions: [
     '1.601.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rename -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rename' as const,
 }
 
-export type RenamePackage = typeof renamePackage
+export type PlasmasturmorgrenamePackage = typeof plasmasturmorgrenamePackage

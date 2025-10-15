@@ -6,18 +6,15 @@
  * @version `4.9.0` (22 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install kubebuilder`
- * @name `kubebuilder`
+ * @install `launchpad install kubebuilder.io`
+ * @homepage http://book.kubebuilder.io
+ * @dependencies `go.dev@~1.23`, `gnu.org/coreutils`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.kubebuilder
- * // Or access via domain
- * const samePkg = pantry.kubebuilderio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.kubebuilderio
  * console.log(pkg.name)        // "kubebuilder"
  * console.log(pkg.description) // "Kubebuilder - SDK for building Kubernetes APIs ..."
  * console.log(pkg.programs)    // ["kubebuilder"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kubebuilder-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kubebuilderPackage = {
+export const kubebuilderioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const kubebuilderPackage = {
    */
   description: 'Kubebuilder - SDK for building Kubernetes APIs using CRDs' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kubebuilder.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://book.kubebuilder.io' as const,
+  githubUrl: 'https://github.com/kubernetes-sigs/kubebuilder' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install kubebuilder' as const,
+  installCommand: 'launchpad install kubebuilder.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kubebuilder.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kubebuilder.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const kubebuilderPackage = {
     'kubebuilder',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.23',
+    'gnu.org/coreutils',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -85,13 +91,7 @@ export const kubebuilderPackage = {
     '3.13.0',
     '3.12.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kubebuilder -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install kubebuilder' as const,
 }
 
-export type KubebuilderPackage = typeof kubebuilderPackage
+export type KubebuilderioPackage = typeof kubebuilderioPackage

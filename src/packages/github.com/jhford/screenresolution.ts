@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jhford/screenresolution.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjhfordscreenresolutionPackage = {
+export const screenresolutionPackage = {
   /**
    * The display name of this package.
    */
@@ -64,4 +64,4 @@ export const githubcomjhfordscreenresolutionPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjhfordscreenresolutionPackage = typeof githubcomjhfordscreenresolutionPackage
+export type ScreenresolutionPackage = typeof screenresolutionPackage

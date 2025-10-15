@@ -1,5 +1,5 @@
 /**
- * **nlnetlabs.nl/ldns** - LDNS is a DNS library that facilitates DNS tool programming
+ * **ldns** - LDNS is a DNS library that facilitates DNS tool programming
  *
  * @domain `nlnetlabs.nl/ldns`
  * @programs `drill`, `ldns-config`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nlnetlabs.nl/ldns`
+ * @homepage https://nlnetlabs.nl/projects/ldns/
  * @dependencies `openssl.org^1`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.nlnetlabsnlldns
- * console.log(pkg.name)        // "nlnetlabs.nl/ldns"
+ * console.log(pkg.name)        // "ldns"
  * console.log(pkg.description) // "LDNS is a DNS library that facilitates DNS tool..."
  * console.log(pkg.programs)    // ["drill", "ldns-config"]
  * console.log(pkg.versions[0]) // "1.8.4" (latest)
@@ -27,7 +28,7 @@ export const nlnetlabsnlldnsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'nlnetlabs.nl/ldns' as const,
+  name: 'ldns' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const nlnetlabsnlldnsPackage = {
    */
   description: 'LDNS is a DNS library that facilitates DNS tool programming' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nlnetlabs.nl/ldns/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://nlnetlabs.nl/projects/ldns/' as const,
+  githubUrl: 'https://github.com/NLnetLabs/ldns' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install nlnetlabs.nl/ldns' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nlnetlabs.nl/ldns -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nlnetlabs.nl/ldns' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,8 +72,6 @@ export const nlnetlabsnlldnsPackage = {
     '1.8.3',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nlnetlabs.nl/ldns -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install nlnetlabs.nl/ldns' as const,
 }
 
 export type NlnetlabsnlldnsPackage = typeof nlnetlabsnlldnsPackage

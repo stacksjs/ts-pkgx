@@ -6,19 +6,15 @@
  * @version `0.3.22` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pandoc-crossref`
- * @name `pandoc-crossref`
+ * @install `launchpad install pandoc.org/crossref`
+ * @homepage https://lierdakil.github.io/pandoc-crossref/
  * @dependencies `pandoc.org^3.8`, `zlib.net@1`, `gnu.org/gmp@6`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pandoccrossref
- * // Or access via domain
- * const samePkg = pantry.pandocorgcrossref
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pandocorgcrossref
  * console.log(pkg.name)        // "pandoc-crossref"
  * console.log(pkg.description) // "Pandoc filter for numbering and cross-referencing"
  * console.log(pkg.programs)    // ["pandoc-crossref"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pandoc-org/crossref.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pandoccrossrefPackage = {
+export const pandocorgcrossrefPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const pandoccrossrefPackage = {
    */
   description: 'Pandoc filter for numbering and cross-referencing' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pandoc.org/crossref/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://lierdakil.github.io/pandoc-crossref/' as const,
+  githubUrl: 'https://github.com/lierdakil/pandoc-crossref' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pandoc-crossref' as const,
+  installCommand: 'launchpad install pandoc.org/crossref' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pandoc.org/crossref -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pandoc.org/crossref' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,13 +80,7 @@ export const pandoccrossrefPackage = {
     '0.3.16.0',
     '0.3.15.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pandoc-crossref -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pandoc-crossref' as const,
 }
 
-export type PandoccrossrefPackage = typeof pandoccrossrefPackage
+export type PandocorgcrossrefPackage = typeof pandocorgcrossrefPackage

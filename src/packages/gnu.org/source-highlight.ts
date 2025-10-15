@@ -1,5 +1,5 @@
 /**
- * **gnu.org/source-highlight** - Source-code syntax highlighter
+ * **source-highlight** - Source-code syntax highlighter
  *
  * @domain `gnu.org/source-highlight`
  * @programs `check-regexp`, `source-highlight`, `source-highlight-settings`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/source-highlight`
+ * @homepage https://www.gnu.org/software/src-highlite/
  * @dependencies `boost.org`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgsourcehighlight
- * console.log(pkg.name)        // "gnu.org/source-highlight"
+ * console.log(pkg.name)        // "source-highlight"
  * console.log(pkg.description) // "Source-code syntax highlighter"
  * console.log(pkg.programs)    // ["check-regexp", "source-highlight", ...]
  * console.log(pkg.versions[0]) // "3.1.9" (latest)
@@ -27,7 +28,7 @@ export const gnuorgsourcehighlightPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/source-highlight' as const,
+  name: 'source-highlight' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const gnuorgsourcehighlightPackage = {
    */
   description: 'Source-code syntax highlighter' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/source-highlight/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.gnu.org/software/src-highlite/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnu.org/source-highlight' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/source-highlight -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/source-highlight' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,8 +72,6 @@ export const gnuorgsourcehighlightPackage = {
     '3.1.9',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/source-highlight -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/source-highlight' as const,
 }
 
 export type GnuorgsourcehighlightPackage = typeof gnuorgsourcehighlightPackage

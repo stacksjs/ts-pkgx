@@ -6,18 +6,14 @@
  * @version `2.2.6` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install paper`
- * @name `paper`
+ * @install `launchpad install github.com/rrthomas/libpaper`
+ * @dependencies `gnu.org/make`, `gnu.org/help2man`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.paper
- * // Or access via domain
- * const samePkg = pantry.githubcomrrthomaslibpaper
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomrrthomaslibpaper
  * console.log(pkg.name)        // "paper"
  * console.log(pkg.description) // "Library and command-line tools for configuring ..."
  * console.log(pkg.programs)    // ["paper"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/rrthomas/libpaper.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const paperPackage = {
+export const libpaperPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const paperPackage = {
   description: 'Library and command-line tools for configuring and getting information on paper sizes' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/rrthomas/libpaper/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/rrthomas/libpaper' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install paper' as const,
+  installCommand: 'launchpad install github.com/rrthomas/libpaper' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/rrthomas/libpaper -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/rrthomas/libpaper' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,14 @@ export const paperPackage = {
     'paper',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/make',
+    'gnu.org/help2man',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -70,13 +75,7 @@ export const paperPackage = {
     '2.1.2',
     '2.1.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) paper -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install paper' as const,
 }
 
-export type PaperPackage = typeof paperPackage
+export type LibpaperPackage = typeof libpaperPackage

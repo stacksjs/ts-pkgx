@@ -6,19 +6,15 @@
  * @version `4.3.0` (23 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pre-commit`
- * @name `pre-commit`
+ * @install `launchpad install pre-commit.com`
+ * @homepage https://pre-commit.com/
  * @dependencies `python.org>=3.8<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.precommit
- * // Or access via domain
- * const samePkg = pantry.precommitcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.precommitcom
  * console.log(pkg.name)        // "pre-commit"
  * console.log(pkg.description) // "A framework for managing and maintaining multi-..."
  * console.log(pkg.programs)    // ["pre-commit"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pre-commit-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const precommitPackage = {
+export const precommitcomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const precommitPackage = {
    */
   description: 'A framework for managing and maintaining multi-language pre-commit hooks.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pre-commit.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://pre-commit.com/' as const,
+  githubUrl: 'https://github.com/pre-commit/pre-commit' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pre-commit' as const,
+  installCommand: 'launchpad install pre-commit.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pre-commit.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pre-commit.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -93,13 +91,7 @@ export const precommitPackage = {
     '3.1.0',
     '3.0.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pre-commit -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pre-commit' as const,
 }
 
-export type PrecommitPackage = typeof precommitPackage
+export type PrecommitcomPackage = typeof precommitcomPackage

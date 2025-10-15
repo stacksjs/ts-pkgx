@@ -1,25 +1,21 @@
 /**
- * **exr2aces** - The OpenEXR project provides the specification and reference implementation of the EXR file format, the professional-grade image storage format of the motion picture industry.
+ * **exr** - The OpenEXR project provides the specification and reference implementation of the EXR file format, the professional-grade image storage format of the motion picture industry.
  *
  * @domain `openexr.com`
  * @programs `exr2aces`, `exrenvmap`, `exrheader`, `exrmakepreview`, `exrmaketiled`, ... (+3 more)
  * @version `3.4.1` (23 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install exr2aces`
- * @name `exr2aces`
+ * @install `launchpad install openexr.com`
+ * @homepage https://www.openexr.com/
  * @dependencies `zlib.net^1`, `openexr.com/imath`, `linux:gnu.org/gcc/libstdcxx^14 # needed since 3.4.0` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.exr2aces
- * // Or access via domain
- * const samePkg = pantry.openexrcom
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "exr2aces"
+ * const pkg = pantry.openexrcom
+ * console.log(pkg.name)        // "exr"
  * console.log(pkg.description) // "The OpenEXR project provides the specification ..."
  * console.log(pkg.programs)    // ["exr2aces", "exrenvmap", ...]
  * console.log(pkg.versions[0]) // "3.4.1" (latest)
@@ -28,11 +24,11 @@
  * @see https://ts-pkgx.netlify.app/packages/openexr-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const exr2acesPackage = {
+export const openexrcomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'exr2aces' as const,
+  name: 'exr' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,13 +38,15 @@ export const exr2acesPackage = {
    */
   description: 'The OpenEXR project provides the specification and reference implementation of the EXR file format, the professional-grade image storage format of the motion picture industry.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openexr.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.openexr.com/' as const,
+  githubUrl: 'https://github.com/AcademySoftwareFoundation/openexr' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install exr2aces' as const,
+  installCommand: 'launchpad install openexr.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openexr.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openexr.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -103,13 +101,7 @@ export const exr2acesPackage = {
     '3.1.6',
     '2.5.10',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openexr.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install exr2aces' as const,
 }
 
-export type Exr2acesPackage = typeof exr2acesPackage
+export type OpenexrcomPackage = typeof openexrcomPackage

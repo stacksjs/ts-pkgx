@@ -6,19 +6,14 @@
  * @version `1.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install envchain`
- * @name `envchain`
+ * @install `launchpad install github.com/sorah/envchain`
  * @dependencies `linux:gnu.org/readline`, `linux:gnome.org/libsecret` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.envchain
- * // Or access via domain
- * const samePkg = pantry.githubcomsorahenvchain
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomsorahenvchain
  * console.log(pkg.name)        // "envchain"
  * console.log(pkg.description) // "Environment variables meet macOS Keychain and g..."
  * console.log(pkg.programs)    // ["envchain"]
@@ -43,12 +38,14 @@ export const envchainPackage = {
   description: 'Environment variables meet macOS Keychain and gnome-keyring <3' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/sorah/envchain/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/sorah/envchain' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install envchain' as const,
+  installCommand: 'launchpad install github.com/sorah/envchain' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/sorah/envchain -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/sorah/envchain' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +70,7 @@ export const envchainPackage = {
   versions: [
     '1.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) envchain -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install envchain' as const,
 }
 
 export type EnvchainPackage = typeof envchainPackage

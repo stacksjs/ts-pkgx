@@ -6,18 +6,15 @@
  * @version `0.2.82` (40 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install act`
- * @name `act`
+ * @install `launchpad install github.com/nektos/act`
+ * @homepage https://nektosact.com
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.act
- * // Or access via domain
- * const samePkg = pantry.githubcomnektosact
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomnektosact
  * console.log(pkg.name)        // "act"
  * console.log(pkg.description) // "Run your GitHub Actions locally 🚀"
  * console.log(pkg.programs)    // ["act"]
@@ -41,13 +38,15 @@ export const actPackage = {
    */
   description: 'Run your GitHub Actions locally 🚀' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/nektos/act/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://nektosact.com' as const,
+  githubUrl: 'https://github.com/nektos/act' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install act' as const,
+  installCommand: 'launchpad install github.com/nektos/act' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/nektos/act -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/nektos/act' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const actPackage = {
     'act',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -103,13 +108,7 @@ export const actPackage = {
     '0.2.44',
     '0.2.43',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) act -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install act' as const,
 }
 
 export type ActPackage = typeof actPackage

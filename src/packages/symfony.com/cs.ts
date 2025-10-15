@@ -6,19 +6,15 @@
  * @version `3.88.2` (69 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install php-cs-fixer`
- * @name `php-cs-fixer`
+ * @install `launchpad install symfony.com/cs`
+ * @homepage https://cs.symfony.com/
  * @dependencies `php.net>=7.4<8.4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.phpcsfixer
- * // Or access via domain
- * const samePkg = pantry.symfonycomcs
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.symfonycomcs
  * console.log(pkg.name)        // "php-cs-fixer"
  * console.log(pkg.description) // "A tool to automatically fix PHP Coding Standard..."
  * console.log(pkg.programs)    // ["php-cs-fixer"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/symfony-com/cs.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const phpcsfixerPackage = {
+export const symfonycomcsPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const phpcsfixerPackage = {
    */
   description: 'A tool to automatically fix PHP Coding Standards issues' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/symfony.com/cs/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://cs.symfony.com/' as const,
+  githubUrl: 'https://github.com/PHP-CS-Fixer/PHP-CS-Fixer' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install php-cs-fixer' as const,
+  installCommand: 'launchpad install symfony.com/cs' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +symfony.com/cs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install symfony.com/cs' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -139,13 +137,7 @@ export const phpcsfixerPackage = {
     '3.52.0',
     '3.51.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) php-cs-fixer -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install php-cs-fixer' as const,
 }
 
-export type PhpcsfixerPackage = typeof phpcsfixerPackage
+export type SymfonycomcsPackage = typeof symfonycomcsPackage

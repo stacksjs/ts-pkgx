@@ -6,19 +6,15 @@
  * @version `8.2.2` (47 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install redis`
- * @name `redis`
+ * @install `launchpad install redis.io`
+ * @homepage http://redis.io
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.redis
- * // Or access via domain
- * const samePkg = pantry.redisio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.redisio
  * console.log(pkg.name)        // "redis"
  * console.log(pkg.description) // "Redis is an in-memory database that persists on..."
  * console.log(pkg.programs)    // ["redis-server", "redis-cli", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/redis-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const redisPackage = {
+export const redisioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const redisPackage = {
    */
   description: 'Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/redis.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://redis.io' as const,
+  githubUrl: 'https://github.com/redis/redis' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install redis' as const,
+  installCommand: 'launchpad install redis.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +redis.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install redis.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -119,13 +117,7 @@ export const redisPackage = {
     '6.0.19',
     '6.0.18',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +redis.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install redis' as const,
 }
 
-export type RedisPackage = typeof redisPackage
+export type RedisioPackage = typeof redisioPackage

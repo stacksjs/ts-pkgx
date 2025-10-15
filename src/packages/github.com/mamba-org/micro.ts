@@ -6,19 +6,15 @@
  * @version `2.3.2` (27 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install micromamba`
- * @name `micromamba`
+ * @install `launchpad install github.com/mamba-org/micro`
+ * @homepage https://mamba.readthedocs.io
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.micromamba
- * // Or access via domain
- * const samePkg = pantry.githubcommambaorgmicro
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcommambaorgmicro
  * console.log(pkg.name)        // "micromamba"
  * console.log(pkg.description) // "The Fast Cross-Platform Package Manager"
  * console.log(pkg.programs)    // ["micromamba"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/mamba-org/micro.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const micromambaPackage = {
+export const microPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const micromambaPackage = {
    */
   description: 'The Fast Cross-Platform Package Manager' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mamba-org/micro/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://mamba.readthedocs.io' as const,
+  githubUrl: 'https://github.com/mamba-org/mamba' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install micromamba' as const,
+  installCommand: 'launchpad install github.com/mamba-org/micro' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/mamba-org/micro -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/mamba-org/micro' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -97,13 +95,7 @@ export const micromambaPackage = {
     '1.5.0',
     '1.4.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) micromamba -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install micromamba' as const,
 }
 
-export type MicromambaPackage = typeof micromambaPackage
+export type MicroPackage = typeof microPackage

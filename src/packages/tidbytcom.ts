@@ -6,19 +6,15 @@
  * @version `0.34.0` (20 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pixlet`
- * @name `pixlet`
+ * @install `launchpad install tidbyt.com`
+ * @homepage https://tidbyt.com
  * @dependencies `google.com/webp^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pixlet
- * // Or access via domain
- * const samePkg = pantry.tidbytcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.tidbytcom
  * console.log(pkg.name)        // "pixlet"
  * console.log(pkg.description) // "Build apps for pixel-based displays ✨"
  * console.log(pkg.programs)    // ["pixlet"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tidbyt-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pixletPackage = {
+export const tidbytcomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const pixletPackage = {
    */
   description: 'Build apps for pixel-based displays ✨' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tidbyt.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://tidbyt.com' as const,
+  githubUrl: 'https://github.com/tidbyt/pixlet' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pixlet' as const,
+  installCommand: 'launchpad install tidbyt.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tidbyt.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tidbyt.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -90,13 +88,7 @@ export const pixletPackage = {
     '0.30.0',
     '0.29.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pixlet -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pixlet' as const,
 }
 
-export type PixletPackage = typeof pixletPackage
+export type TidbytcomPackage = typeof tidbytcomPackage

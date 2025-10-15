@@ -6,18 +6,15 @@
  * @version `4.3.3` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gomplate`
- * @name `gomplate`
+ * @install `launchpad install gomplate.ca`
+ * @homepage https://gomplate.ca/
+ * @dependencies `go.dev@~1.22.3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gomplate
- * // Or access via domain
- * const samePkg = pantry.gomplateca
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gomplateca
  * console.log(pkg.name)        // "gomplate"
  * console.log(pkg.description) // "A flexible commandline tool for template render..."
  * console.log(pkg.programs)    // ["gomplate"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gomplate-ca.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gomplatePackage = {
+export const gomplatecaPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const gomplatePackage = {
    */
   description: 'A flexible commandline tool for template rendering. Supports lots of local and remote datasources.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gomplate.ca/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://gomplate.ca/' as const,
+  githubUrl: 'https://github.com/hairyhenderson/gomplate' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gomplate' as const,
+  installCommand: 'launchpad install gomplate.ca' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gomplate.ca -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gomplate.ca' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const gomplatePackage = {
     'gomplate',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.22.3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -75,13 +80,7 @@ export const gomplatePackage = {
     '3.11.6',
     '3.11.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gomplate -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gomplate' as const,
 }
 
-export type GomplatePackage = typeof gomplatePackage
+export type GomplatecaPackage = typeof gomplatecaPackage

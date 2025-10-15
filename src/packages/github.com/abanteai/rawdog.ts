@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/abanteai/rawdog.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomabanteairawdogPackage = {
+export const rawdogPackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomabanteairawdogPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomabanteairawdogPackage = typeof githubcomabanteairawdogPackage
+export type RawdogPackage = typeof rawdogPackage

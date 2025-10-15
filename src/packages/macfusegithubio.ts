@@ -1,18 +1,19 @@
 /**
- * **macfuse.github.io** - macFUSE umbrella repository
+ * **macfuse.github** - macFUSE umbrella repository
  *
  * @domain `macfuse.github.io`
  * @version `5.0.7` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install macfuse.github.io`
+ * @dependencies `mesonbuild.com`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.macfusegithubio
- * console.log(pkg.name)        // "macfuse.github.io"
+ * console.log(pkg.name)        // "macfuse.github"
  * console.log(pkg.description) // "macFUSE umbrella repository"
  * console.log(pkg.versions[0]) // "5.0.7" (latest)
  * ```
@@ -24,7 +25,7 @@ export const macfusegithubioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'macfuse.github.io' as const,
+  name: 'macfuse.github' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,9 +42,17 @@ export const macfusegithubioPackage = {
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install macfuse.github.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +macfuse.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install macfuse.github.io' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'mesonbuild.com',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -54,8 +63,6 @@ export const macfusegithubioPackage = {
     '4.10.2',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +macfuse.github.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install macfuse.github.io' as const,
 }
 
 export type MacfusegithubioPackage = typeof macfusegithubioPackage

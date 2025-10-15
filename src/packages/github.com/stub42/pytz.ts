@@ -1,5 +1,5 @@
 /**
- * **github.com/stub42/pytz** - pytz Python historical timezone library and database
+ * **pytz** - pytz Python historical timezone library and database
  *
  * @domain `github.com/stub42/pytz`
  * @version `2025.2.0` (4 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomstub42pytz
- * console.log(pkg.name)        // "github.com/stub42/pytz"
+ * console.log(pkg.name)        // "pytz"
  * console.log(pkg.description) // "pytz Python historical timezone library and dat..."
  * console.log(pkg.versions[0]) // "2025.2.0" (latest)
  * ```
@@ -21,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/stub42/pytz.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomstub42pytzPackage = {
+export const pytzPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/stub42/pytz' as const,
+  name: 'pytz' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,12 +36,14 @@ export const githubcomstub42pytzPackage = {
   description: 'pytz Python historical timezone library and database' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/stub42/pytz/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/stub42/pytz' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/stub42/pytz' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/stub42/pytz -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/stub42/pytz' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -62,8 +64,6 @@ export const githubcomstub42pytzPackage = {
     '2024.1.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/stub42/pytz -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/stub42/pytz' as const,
 }
 
-export type Githubcomstub42pytzPackage = typeof githubcomstub42pytzPackage
+export type PytzPackage = typeof pytzPackage

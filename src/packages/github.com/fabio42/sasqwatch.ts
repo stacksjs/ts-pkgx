@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/fabio42/sasqwatch.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomfabio42sasqwatchPackage = {
+export const sasqwatchPackage = {
   /**
    * The display name of this package.
    */
@@ -77,4 +77,4 @@ export const githubcomfabio42sasqwatchPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomfabio42sasqwatchPackage = typeof githubcomfabio42sasqwatchPackage
+export type SasqwatchPackage = typeof sasqwatchPackage

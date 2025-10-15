@@ -6,18 +6,14 @@
  * @version `1.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gomarkdoc`
- * @name `gomarkdoc`
+ * @install `launchpad install github.com/princjef/gomarkdoc`
+ * @dependencies `go.dev@^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gomarkdoc
- * // Or access via domain
- * const samePkg = pantry.githubcomprincjefgomarkdoc
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomprincjefgomarkdoc
  * console.log(pkg.name)        // "gomarkdoc"
  * console.log(pkg.description) // "Generate markdown documentation for Go (golang)..."
  * console.log(pkg.programs)    // ["gomarkdoc"]
@@ -42,12 +38,14 @@ export const gomarkdocPackage = {
   description: 'Generate markdown documentation for Go (golang) code' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/princjef/gomarkdoc/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/princjef/gomarkdoc' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gomarkdoc' as const,
+  installCommand: 'launchpad install github.com/princjef/gomarkdoc' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/princjef/gomarkdoc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/princjef/gomarkdoc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const gomarkdocPackage = {
     'gomarkdoc',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +68,7 @@ export const gomarkdocPackage = {
   versions: [
     '1.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gomarkdoc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gomarkdoc' as const,
 }
 
 export type GomarkdocPackage = typeof gomarkdocPackage

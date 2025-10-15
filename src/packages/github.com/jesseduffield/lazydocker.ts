@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jesseduffield/lazydocker.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjesseduffieldlazydockerPackage = {
+export const lazydockerPackage = {
   /**
    * The display name of this package.
    */
@@ -78,4 +78,4 @@ export const githubcomjesseduffieldlazydockerPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjesseduffieldlazydockerPackage = typeof githubcomjesseduffieldlazydockerPackage
+export type LazydockerPackage = typeof lazydockerPackage

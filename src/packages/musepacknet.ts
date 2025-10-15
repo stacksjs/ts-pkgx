@@ -1,5 +1,5 @@
 /**
- * **musepack.net** - Audio compression format and tools
+ * **musepack** - Audio compression format and tools
  *
  * @domain `musepack.net`
  * @programs `mpc2sv8`, `mpcchap`, `mpccut`, `mpcdec`, `mpcenc`, ... (+2 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install musepack.net`
+ * @homepage https://www.musepack.net/
  * @dependencies `musepack.net/libreplaygain`, `musepack.net/libcuefile`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.musepacknet
- * console.log(pkg.name)        // "musepack.net"
+ * console.log(pkg.name)        // "musepack"
  * console.log(pkg.description) // "Audio compression format and tools"
  * console.log(pkg.programs)    // ["mpc2sv8", "mpcchap", ...]
  * console.log(pkg.versions[0]) // "475.0.0" (latest)
@@ -27,7 +28,7 @@ export const musepacknetPackage = {
   /**
    * The display name of this package.
    */
-  name: 'musepack.net' as const,
+  name: 'musepack' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const musepacknetPackage = {
    */
   description: 'Audio compression format and tools' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/musepack.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.musepack.net/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install musepack.net' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +musepack.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install musepack.net' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,8 +77,6 @@ export const musepacknetPackage = {
     '475.0.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +musepack.net -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install musepack.net' as const,
 }
 
 export type MusepacknetPackage = typeof musepacknetPackage

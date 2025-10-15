@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/darthsim/overmind.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomdarthsimovermindPackage = {
+export const overmindPackage = {
   /**
    * The display name of this package.
    */
@@ -73,4 +73,4 @@ export const githubcomdarthsimovermindPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomdarthsimovermindPackage = typeof githubcomdarthsimovermindPackage
+export type OvermindPackage = typeof overmindPackage

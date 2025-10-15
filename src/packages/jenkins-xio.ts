@@ -1,24 +1,20 @@
 /**
- * **jx** - Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton
+ * **Jenkins X** - Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton
  *
  * @domain `jenkins-x.io`
  * @programs `jx`
  * @version `3.16.25` (74 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install jx`
- * @name `Jenkins X`
- * @aliases `jx`
+ * @install `launchpad install jenkins-x.io`
+ * @homepage https://jenkins-x.io/
+ * @dependencies `go.dev@~1.23`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.jx
- * // Or access via domain
- * const samePkg = pantry.jenkinsxio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.jenkinsxio
  * console.log(pkg.name)        // "Jenkins X"
  * console.log(pkg.description) // "Jenkins X provides automated CI+CD for Kubernet..."
  * console.log(pkg.programs)    // ["jx"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/jenkins-x-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jxPackage = {
+export const jenkinsxioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const jxPackage = {
    */
   description: 'Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Cloud Native pipelines from Tekton' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jenkins-x.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://jenkins-x.io/' as const,
+  githubUrl: 'https://github.com/jenkins-x/jx' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install jx' as const,
+  installCommand: 'launchpad install jenkins-x.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jenkins-x.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jenkins-x.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +55,13 @@ export const jxPackage = {
     'jx',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.23',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -138,15 +142,7 @@ export const jxPackage = {
     '3.10.155',
     '3.10.154',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'jx',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jx -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jx' as const,
+  aliases: [] as const,
 }
 
-export type JxPackage = typeof jxPackage
+export type JenkinsxioPackage = typeof jenkinsxioPackage

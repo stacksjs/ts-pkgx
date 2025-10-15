@@ -1,5 +1,5 @@
 /**
- * **x.org/libxfont2** - pkgx package
+ * **libxfont2** - pkgx package
  *
  * @domain `x.org/libxfont2`
  * @version `2.0.7` (1 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorglibxfont2
- * console.log(pkg.name)        // "x.org/libxfont2"
+ * console.log(pkg.name)        // "libxfont2"
  * console.log(pkg.versions[0]) // "2.0.7" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorglibxfont2Package = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/libxfont2' as const,
+  name: 'libxfont2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const xorglibxfont2Package = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/libxfont2/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install x.org/libxfont2' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/libxfont2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/libxfont2' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -64,8 +66,6 @@ export const xorglibxfont2Package = {
     '2.0.7',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/libxfont2 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install x.org/libxfont2' as const,
 }
 
 export type Xorglibxfont2Package = typeof xorglibxfont2Package

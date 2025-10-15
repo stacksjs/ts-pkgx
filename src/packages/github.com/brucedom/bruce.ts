@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/brucedom/bruce.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcombrucedombrucePackage = {
+export const brucePackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcombrucedombrucePackage = {
   aliases: [] as const,
 }
 
-export type GithubcombrucedombrucePackage = typeof githubcombrucedombrucePackage
+export type BrucePackage = typeof brucePackage

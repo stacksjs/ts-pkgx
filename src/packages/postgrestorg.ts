@@ -6,19 +6,15 @@
  * @version `13.0.7` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install postgrest`
- * @name `postgrest`
+ * @install `launchpad install postgrest.org`
+ * @homepage https://postgrest.org
  * @dependencies `postgresql.org/libpq@17`, `zlib.net~1.3`, `gnu.org/gcc/libstdcxx@14`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.postgrest
- * // Or access via domain
- * const samePkg = pantry.postgrestorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.postgrestorg
  * console.log(pkg.name)        // "postgrest"
  * console.log(pkg.description) // "Serves a fully RESTful API from any existing Po..."
  * console.log(pkg.programs)    // ["postgrest"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/postgrest-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const postgrestPackage = {
+export const postgrestorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const postgrestPackage = {
    */
   description: 'Serves a fully RESTful API from any existing PostgreSQL database' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/postgrest.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://postgrest.org' as const,
+  githubUrl: 'https://github.com/PostgREST/postgrest' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install postgrest' as const,
+  installCommand: 'launchpad install postgrest.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +postgrest.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install postgrest.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -91,13 +89,7 @@ export const postgrestPackage = {
     '12.2.4',
     '12.2.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) postgrest -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install postgrest' as const,
 }
 
-export type PostgrestPackage = typeof postgrestPackage
+export type PostgrestorgPackage = typeof postgrestorgPackage

@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/astanin/python-tabulate.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomastaninpythontabulatePackage = {
+export const pythontabulatePackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomastaninpythontabulatePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomastaninpythontabulatePackage = typeof githubcomastaninpythontabulatePackage
+export type PythontabulatePackage = typeof pythontabulatePackage

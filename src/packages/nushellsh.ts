@@ -6,19 +6,15 @@
  * @version `0.107.0` (51 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install nu`
- * @name `nu`
+ * @install `launchpad install nushell.sh`
+ * @homepage https://www.nushell.sh
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.nu
- * // Or access via domain
- * const samePkg = pantry.nushellsh
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.nushellsh
  * console.log(pkg.name)        // "nu"
  * console.log(pkg.description) // "Modern shell for the GitHub era"
  * console.log(pkg.programs)    // ["nu"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/nushell-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nuPackage = {
+export const nushellshPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const nuPackage = {
    */
   description: 'Modern shell for the GitHub era' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nushell.sh/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.nushell.sh' as const,
+  githubUrl: 'https://github.com/nushell/nushell' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install nu' as const,
+  installCommand: 'launchpad install nushell.sh' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nushell.sh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nushell.sh' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -121,13 +119,7 @@ export const nuPackage = {
     '0.73.0',
     '0.72.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nu -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install nu' as const,
 }
 
-export type NuPackage = typeof nuPackage
+export type NushellshPackage = typeof nushellshPackage

@@ -6,19 +6,15 @@
  * @version `10.13.2` (38 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install heroku`
- * @name `heroku`
+ * @install `launchpad install heroku.com`
+ * @homepage https://www.npmjs.com/package/heroku/
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.heroku
- * // Or access via domain
- * const samePkg = pantry.herokucom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.herokucom
  * console.log(pkg.name)        // "heroku"
  * console.log(pkg.description) // "CLI for Heroku"
  * console.log(pkg.programs)    // ["heroku"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/heroku-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const herokuPackage = {
+export const herokucomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const herokuPackage = {
    */
   description: 'CLI for Heroku' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/heroku.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.npmjs.com/package/heroku/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install heroku' as const,
+  installCommand: 'launchpad install heroku.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +heroku.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install heroku.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -108,13 +106,7 @@ export const herokuPackage = {
     '8.11.0',
     '8.10.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) heroku -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install heroku' as const,
 }
 
-export type HerokuPackage = typeof herokuPackage
+export type HerokucomPackage = typeof herokucomPackage

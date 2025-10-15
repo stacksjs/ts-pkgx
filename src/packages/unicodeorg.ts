@@ -1,5 +1,5 @@
 /**
- * **unicode.org** - The home of the ICU project source code.
+ * **unicode** - The home of the ICU project source code.
  *
  * @domain `unicode.org`
  * @programs `derb`, `genbrk`, `gencfu`, `gencnval`, `gendict`, ... (+7 more)
@@ -7,13 +7,15 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install unicode.org`
+ * @homepage https://icu.unicode.org/
+ * @dependencies `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.unicodeorg
- * console.log(pkg.name)        // "unicode.org"
+ * console.log(pkg.name)        // "unicode"
  * console.log(pkg.description) // "The home of the ICU project source code."
  * console.log(pkg.programs)    // ["derb", "genbrk", ...]
  * console.log(pkg.versions[0]) // "77.1.0" (latest)
@@ -26,7 +28,7 @@ export const unicodeorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'unicode.org' as const,
+  name: 'unicode' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,13 +38,15 @@ export const unicodeorgPackage = {
    */
   description: 'The home of the ICU project source code.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/unicode.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://icu.unicode.org/' as const,
+  githubUrl: 'https://github.com/unicode-org/icu' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install unicode.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +unicode.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install unicode.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -62,7 +66,13 @@ export const unicodeorgPackage = {
     'uconv',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'curl.se',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -77,8 +87,6 @@ export const unicodeorgPackage = {
     '71.1.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +unicode.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install unicode.org' as const,
 }
 
 export type UnicodeorgPackage = typeof unicodeorgPackage

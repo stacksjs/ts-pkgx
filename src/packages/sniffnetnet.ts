@@ -6,19 +6,15 @@
  * @version `1.4.1` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sniffnet`
- * @name `sniffnet`
+ * @install `launchpad install sniffnet.net`
+ * @homepage https://sniffnet.net
  * @dependencies `openssl.org@1`, `tcpdump.org@1`, `linux:alsa-project.org/alsa-lib@1`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sniffnet
- * // Or access via domain
- * const samePkg = pantry.sniffnetnet
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sniffnetnet
  * console.log(pkg.name)        // "sniffnet"
  * console.log(pkg.description) // "Cross-platform application to monitor your netw..."
  * console.log(pkg.programs)    // ["sniffnet"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sniffnet-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sniffnetPackage = {
+export const sniffnetnetPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const sniffnetPackage = {
    */
   description: 'Cross-platform application to monitor your network traffic' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sniffnet.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://sniffnet.net' as const,
+  githubUrl: 'https://github.com/GyulyVGC/sniffnet' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sniffnet' as const,
+  installCommand: 'launchpad install sniffnet.net' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sniffnet.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sniffnet.net' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,13 +76,7 @@ export const sniffnetPackage = {
     '1.3.2',
     '1.3.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sniffnet -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sniffnet' as const,
 }
 
-export type SniffnetPackage = typeof sniffnetPackage
+export type SniffnetnetPackage = typeof sniffnetnetPackage

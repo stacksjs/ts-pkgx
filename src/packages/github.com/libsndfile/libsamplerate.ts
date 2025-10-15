@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/libsndfile/libsamplerate.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomlibsndfilelibsampleratePackage = {
+export const libsampleratePackage = {
   /**
    * The display name of this package.
    */
@@ -64,4 +64,4 @@ export const githubcomlibsndfilelibsampleratePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomlibsndfilelibsampleratePackage = typeof githubcomlibsndfilelibsampleratePackage
+export type LibsampleratePackage = typeof libsampleratePackage

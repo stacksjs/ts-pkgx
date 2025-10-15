@@ -6,19 +6,15 @@
  * @version `3.9.11` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mvn`
- * @name `mvn`
+ * @install `launchpad install maven.apache.org`
+ * @homepage https://maven.apache.org/
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mvn
- * // Or access via domain
- * const samePkg = pantry.mavenapacheorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.mavenapacheorg
  * console.log(pkg.name)        // "mvn"
  * console.log(pkg.description) // "Java-based project management"
  * console.log(pkg.programs)    // ["mvn", "mvnDebug", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/maven-apache-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mvnPackage = {
+export const mavenapacheorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const mvnPackage = {
    */
   description: 'Java-based project management' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/maven.apache.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://maven.apache.org/' as const,
+  githubUrl: 'https://github.com/apache/maven' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mvn' as const,
+  installCommand: 'launchpad install maven.apache.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +maven.apache.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install maven.apache.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,13 +82,7 @@ export const mvnPackage = {
     '3.8.7',
     '3.6.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +maven.apache.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mvn' as const,
 }
 
-export type MvnPackage = typeof mvnPackage
+export type MavenapacheorgPackage = typeof mavenapacheorgPackage

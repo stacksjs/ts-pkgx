@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/benkehoe/aws-whoami-golang.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcombenkehoeawswhoamigolangPackage = {
+export const awswhoamigolangPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcombenkehoeawswhoamigolangPackage = {
   aliases: [] as const,
 }
 
-export type GithubcombenkehoeawswhoamigolangPackage = typeof githubcombenkehoeawswhoamigolangPackage
+export type AwswhoamigolangPackage = typeof awswhoamigolangPackage

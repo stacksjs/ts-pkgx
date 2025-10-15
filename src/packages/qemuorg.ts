@@ -6,19 +6,15 @@
  * @version `10.1.1` (59 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install qemu`
- * @name `qemu`
+ * @install `launchpad install qemu.org`
+ * @homepage https://www.qemu.org/
  * @dependencies `gnome.org/glib@2`, `capstone-engine.org^4`, `pixman.org^0`, ... (+7 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.qemu
- * // Or access via domain
- * const samePkg = pantry.qemuorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.qemuorg
  * console.log(pkg.name)        // "qemu"
  * console.log(pkg.description) // "Generic machine emulator and virtualizer"
  * console.log(pkg.programs)    // ["qemu-img", "qemu-edid", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/qemu-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const qemuPackage = {
+export const qemuorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const qemuPackage = {
    */
   description: 'Generic machine emulator and virtualizer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/qemu.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.qemu.org/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install qemu' as const,
+  installCommand: 'launchpad install qemu.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +qemu.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install qemu.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -171,13 +169,7 @@ export const qemuPackage = {
     '7.2.4',
     '7.2.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +qemu.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install qemu' as const,
 }
 
-export type QemuPackage = typeof qemuPackage
+export type QemuorgPackage = typeof qemuorgPackage

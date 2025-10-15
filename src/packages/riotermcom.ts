@@ -6,18 +6,14 @@
  * @version `0.2.31` (16 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rio`
- * @name `rio`
+ * @install `launchpad install rioterm.com`
+ * @homepage https://rioterm.com
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rio
- * // Or access via domain
- * const samePkg = pantry.riotermcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.riotermcom
  * console.log(pkg.name)        // "rio"
  * console.log(pkg.description) // "A hardware-accelerated GPU terminal emulator fo..."
  * console.log(pkg.programs)    // ["rio"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rioterm-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rioPackage = {
+export const riotermcomPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const rioPackage = {
    */
   description: 'A hardware-accelerated GPU terminal emulator focusing to run in desktops and browsers.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rioterm.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://rioterm.com' as const,
+  githubUrl: 'https://github.com/raphamorim/rio' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rio' as const,
+  installCommand: 'launchpad install rioterm.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rioterm.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rioterm.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,13 +77,7 @@ export const rioPackage = {
     '0.2.17',
     '0.2.16',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rio -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rio' as const,
 }
 
-export type RioPackage = typeof rioPackage
+export type RiotermcomPackage = typeof riotermcomPackage

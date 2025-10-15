@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Genymobile/scrcpy.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgenymobilescrcpyPackage = {
+export const scrcpyPackage = {
   /**
    * The display name of this package.
    */
@@ -94,4 +94,4 @@ export const githubcomgenymobilescrcpyPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgenymobilescrcpyPackage = typeof githubcomgenymobilescrcpyPackage
+export type ScrcpyPackage = typeof scrcpyPackage

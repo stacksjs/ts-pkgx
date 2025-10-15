@@ -6,19 +6,15 @@
  * @version `1.9.1` (33 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install meson`
- * @name `meson`
+ * @install `launchpad install mesonbuild.com`
+ * @homepage https://mesonbuild.com/
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.meson
- * // Or access via domain
- * const samePkg = pantry.mesonbuildcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.mesonbuildcom
  * console.log(pkg.name)        // "meson"
  * console.log(pkg.description) // "Fast and user friendly build system"
  * console.log(pkg.programs)    // ["meson"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mesonbuild-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mesonPackage = {
+export const mesonbuildcomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const mesonPackage = {
    */
   description: 'Fast and user friendly build system' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mesonbuild.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://mesonbuild.com/' as const,
+  githubUrl: 'https://github.com/mesonbuild/meson' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install meson' as const,
+  installCommand: 'launchpad install mesonbuild.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mesonbuild.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mesonbuild.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -103,13 +101,7 @@ export const mesonPackage = {
     '0.64.0',
     '0.63.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) meson -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install meson' as const,
 }
 
-export type MesonPackage = typeof mesonPackage
+export type MesonbuildcomPackage = typeof mesonbuildcomPackage

@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/DaveGamble/cJSON.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomdavegamblecjsonPackage = {
+export const cjsonPackage = {
   /**
    * The display name of this package.
    */
@@ -67,4 +67,4 @@ export const githubcomdavegamblecjsonPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomdavegamblecjsonPackage = typeof githubcomdavegamblecjsonPackage
+export type CjsonPackage = typeof cjsonPackage

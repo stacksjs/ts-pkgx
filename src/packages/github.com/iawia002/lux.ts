@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/iawia002/lux.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomiawia002luxPackage = {
+export const luxPackage = {
   /**
    * The display name of this package.
    */
@@ -77,4 +77,4 @@ export const githubcomiawia002luxPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomiawia002luxPackage = typeof githubcomiawia002luxPackage
+export type LuxPackage = typeof luxPackage

@@ -6,18 +6,15 @@
  * @version `0.181.0` (20 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install wunderctl`
- * @name `wunderctl`
+ * @install `launchpad install wundergraph.com`
+ * @homepage https://wundergraph.com
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.wunderctl
- * // Or access via domain
- * const samePkg = pantry.wundergraphcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.wundergraphcom
  * console.log(pkg.name)        // "wunderctl"
  * console.log(pkg.description) // "WunderGraph is a Backend for Frontend Framework..."
  * console.log(pkg.programs)    // ["wunderctl"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/wundergraph-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const wunderctlPackage = {
+export const wundergraphcomPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const wunderctlPackage = {
    */
   description: 'WunderGraph is a Backend for Frontend Framework to optimize frontend, fullstack and backend developer workflows through API Composition.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wundergraph.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://wundergraph.com' as const,
+  githubUrl: 'https://github.com/wundergraph/wundergraph' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install wunderctl' as const,
+  installCommand: 'launchpad install wundergraph.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wundergraph.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wundergraph.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const wunderctlPackage = {
     'wunderctl',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -83,13 +88,7 @@ export const wunderctlPackage = {
     '0.169.3',
     '0.169.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wunderctl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install wunderctl' as const,
 }
 
-export type WunderctlPackage = typeof wunderctlPackage
+export type WundergraphcomPackage = typeof wundergraphcomPackage

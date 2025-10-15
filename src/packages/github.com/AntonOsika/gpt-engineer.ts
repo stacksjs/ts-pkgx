@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/AntonOsika/gpt-engineer.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomantonosikagptengineerPackage = {
+export const gptengineerPackage = {
   /**
    * The display name of this package.
    */
@@ -86,4 +86,4 @@ export const githubcomantonosikagptengineerPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomantonosikagptengineerPackage = typeof githubcomantonosikagptengineerPackage
+export type GptengineerPackage = typeof gptengineerPackage

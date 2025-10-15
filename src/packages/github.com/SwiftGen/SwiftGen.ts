@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/SwiftGen/SwiftGen.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomswiftgenswiftgenPackage = {
+export const swiftgenPackage = {
   /**
    * The display name of this package.
    */
@@ -65,4 +65,4 @@ export const githubcomswiftgenswiftgenPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomswiftgenswiftgenPackage = typeof githubcomswiftgenswiftgenPackage
+export type SwiftgenPackage = typeof swiftgenPackage

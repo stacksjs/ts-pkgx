@@ -1,18 +1,20 @@
 /**
- * **jemalloc.net** - pkgx package
+ * **jemalloc** - pkgx package
  *
  * @domain `jemalloc.net`
  * @version `5.3.0` (1 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jemalloc.net`
+ * @homepage http://jemalloc.net/
+ * @dependencies `gnu.org/autoconf`, `docbook.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.jemallocnet
- * console.log(pkg.name)        // "jemalloc.net"
+ * console.log(pkg.name)        // "jemalloc"
  * console.log(pkg.versions[0]) // "5.3.0" (latest)
  * ```
  *
@@ -23,7 +25,7 @@ export const jemallocnetPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jemalloc.net' as const,
+  name: 'jemalloc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -33,16 +35,25 @@ export const jemallocnetPackage = {
    */
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jemalloc.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://jemalloc.net/' as const,
+  githubUrl: 'https://github.com/jemalloc/jemalloc' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install jemalloc.net' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jemalloc.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jemalloc.net' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/autoconf',
+    'docbook.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -51,8 +62,6 @@ export const jemallocnetPackage = {
     '5.3.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jemalloc.net -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jemalloc.net' as const,
 }
 
 export type JemallocnetPackage = typeof jemallocnetPackage

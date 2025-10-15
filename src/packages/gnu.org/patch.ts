@@ -6,18 +6,13 @@
  * @version `2.8.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install patch`
- * @name `patch`
+ * @install `launchpad install gnu.org/patch`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.patch
- * // Or access via domain
- * const samePkg = pantry.gnuorgpatch
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnuorgpatch
  * console.log(pkg.name)        // "patch"
  * console.log(pkg.programs)    // ["patch"]
  * console.log(pkg.versions[0]) // "2.8.0" (latest)
@@ -26,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/patch.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const patchPackage = {
+export const gnuorgpatchPackage = {
   /**
    * The display name of this package.
    */
@@ -41,12 +36,14 @@ export const patchPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/patch/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install patch' as const,
+  installCommand: 'launchpad install gnu.org/patch' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/patch -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/patch' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +61,7 @@ export const patchPackage = {
     '2.8.0',
     '2.7.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) patch -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install patch' as const,
 }
 
-export type PatchPackage = typeof patchPackage
+export type GnuorgpatchPackage = typeof gnuorgpatchPackage

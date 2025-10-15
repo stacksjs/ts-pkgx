@@ -6,19 +6,15 @@
  * @version `2.61.1` (35 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rsvg-convert`
- * @name `rsvg-convert`
+ * @install `launchpad install gnome.org/librsvg`
+ * @homepage https://wiki.gnome.org/Projects/LibRsvg
  * @dependencies `cairographics.org^1.18`, `gnome.org/pango@1`, `gnome.org/gdk-pixbuf@2`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rsvgconvert
- * // Or access via domain
- * const samePkg = pantry.gnomeorglibrsvg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnomeorglibrsvg
  * console.log(pkg.name)        // "rsvg-convert"
  * console.log(pkg.description) // "Read-only mirror of https://gitlab.gnome.org/GN..."
  * console.log(pkg.programs)    // ["rsvg-convert"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/librsvg.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rsvgconvertPackage = {
+export const gnomeorglibrsvgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const rsvgconvertPackage = {
    */
   description: 'Read-only mirror of https://gitlab.gnome.org/GNOME/librsvg' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/librsvg/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://wiki.gnome.org/Projects/LibRsvg' as const,
+  githubUrl: 'https://github.com/GNOME/librsvg' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rsvg-convert' as const,
+  installCommand: 'launchpad install gnome.org/librsvg' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/librsvg -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnome.org/librsvg' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -109,13 +107,7 @@ export const rsvgconvertPackage = {
     '2.50.9',
     '2.50.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rsvg-convert -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rsvg-convert' as const,
 }
 
-export type RsvgconvertPackage = typeof rsvgconvertPackage
+export type GnomeorglibrsvgPackage = typeof gnomeorglibrsvgPackage

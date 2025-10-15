@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/ios-control/ios-deploy.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomioscontroliosdeployPackage = {
+export const iosdeployPackage = {
   /**
    * The display name of this package.
    */
@@ -64,4 +64,4 @@ export const githubcomioscontroliosdeployPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomioscontroliosdeployPackage = typeof githubcomioscontroliosdeployPackage
+export type IosdeployPackage = typeof iosdeployPackage

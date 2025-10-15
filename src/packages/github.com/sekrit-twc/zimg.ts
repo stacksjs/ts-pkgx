@@ -1,18 +1,19 @@
 /**
- * **github.com/sekrit-twc/zimg** - Scaling, colorspace conversion, and dithering library
+ * **zimg** - Scaling, colorspace conversion, and dithering library
  *
  * @domain `github.com/sekrit-twc/zimg`
  * @version `3.0.6` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/sekrit-twc/zimg`
+ * @dependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/libtool`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomsekrittwczimg
- * console.log(pkg.name)        // "github.com/sekrit-twc/zimg"
+ * console.log(pkg.name)        // "zimg"
  * console.log(pkg.description) // "Scaling, colorspace conversion, and dithering l..."
  * console.log(pkg.versions[0]) // "3.0.6" (latest)
  * ```
@@ -20,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/sekrit-twc/zimg.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomsekrittwczimgPackage = {
+export const zimgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/sekrit-twc/zimg' as const,
+  name: 'zimg' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,15 +36,25 @@ export const githubcomsekrittwczimgPackage = {
   description: 'Scaling, colorspace conversion, and dithering library' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/sekrit-twc/zimg/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/sekrit-twc/zimg' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/sekrit-twc/zimg' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/sekrit-twc/zimg -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/sekrit-twc/zimg' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/libtool',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -54,8 +65,6 @@ export const githubcomsekrittwczimgPackage = {
     '3.0.4',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/sekrit-twc/zimg -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/sekrit-twc/zimg' as const,
 }
 
-export type GithubcomsekrittwczimgPackage = typeof githubcomsekrittwczimgPackage
+export type ZimgPackage = typeof zimgPackage

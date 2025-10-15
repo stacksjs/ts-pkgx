@@ -6,20 +6,15 @@
  * @version `0.72.1` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install bindgen`
- * @name `bindgen`
+ * @install `launchpad install rust-lang.org/rust-bindgen`
+ * @homepage https://rust-lang.github.io/rust-bindgen/
  * @dependencies `linux:llvm.org` (includes OS-specific dependencies with `os:package` format)
- * @companions `rust-lang.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.bindgen
- * // Or access via domain
- * const samePkg = pantry.rustlangorgrustbindgen
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.rustlangorgrustbindgen
  * console.log(pkg.name)        // "bindgen"
  * console.log(pkg.description) // "Automatically generates Rust FFI bindings to C ..."
  * console.log(pkg.programs)    // ["bindgen"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rust-lang-org/rust-bindgen.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bindgenPackage = {
+export const rustlangorgrustbindgenPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const bindgenPackage = {
    */
   description: 'Automatically generates Rust FFI bindings to C (and some C++) libraries.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.org/rust-bindgen/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://rust-lang.github.io/rust-bindgen/' as const,
+  githubUrl: 'https://github.com/rust-lang/rust-bindgen' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install bindgen' as const,
+  installCommand: 'launchpad install rust-lang.org/rust-bindgen' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rust-lang.org/rust-bindgen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rust-lang.org/rust-bindgen' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,13 +54,7 @@ export const bindgenPackage = {
   programs: [
     'bindgen',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'rust-lang.org',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -83,13 +74,7 @@ export const bindgenPackage = {
     '0.71.0',
     '0.70.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bindgen -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install bindgen' as const,
 }
 
-export type BindgenPackage = typeof bindgenPackage
+export type RustlangorgrustbindgenPackage = typeof rustlangorgrustbindgenPackage

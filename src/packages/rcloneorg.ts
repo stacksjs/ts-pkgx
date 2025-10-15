@@ -6,18 +6,15 @@
  * @version `1.71.1` (22 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rclone`
- * @name `rclone`
+ * @install `launchpad install rclone.org`
+ * @homepage https://rclone.org/
+ * @dependencies `go.dev`, `darwin:curl.se`, `darwin:gnu.org/patch` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rclone
- * // Or access via domain
- * const samePkg = pantry.rcloneorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.rcloneorg
  * console.log(pkg.name)        // "rclone"
  * console.log(pkg.description) // ""rsync for cloud storage" - Google Drive, S3, D..."
  * console.log(pkg.programs)    // ["rclone"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rclone-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rclonePackage = {
+export const rcloneorgPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const rclonePackage = {
    */
   description: '"rsync for cloud storage" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rclone.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://rclone.org/' as const,
+  githubUrl: 'https://github.com/rclone/rclone' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rclone' as const,
+  installCommand: 'launchpad install rclone.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rclone.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rclone.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,16 @@ export const rclonePackage = {
     'rclone',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   */
+  dependencies: [
+    'go.dev',
+    'darwin:curl.se',
+    'darwin:gnu.org/patch',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -85,13 +93,7 @@ export const rclonePackage = {
     '1.64.0',
     '1.63.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rclone -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rclone' as const,
 }
 
-export type RclonePackage = typeof rclonePackage
+export type RcloneorgPackage = typeof rcloneorgPackage

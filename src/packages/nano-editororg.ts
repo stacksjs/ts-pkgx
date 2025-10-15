@@ -6,19 +6,15 @@
  * @version `8.0.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install nano`
- * @name `nano`
+ * @install `launchpad install nano-editor.org`
+ * @homepage https://www.nano-editor.org/
  * @dependencies `gnu.org/gettext`, `invisible-island.net/ncurses>=6.0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.nano
- * // Or access via domain
- * const samePkg = pantry.nanoeditororg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.nanoeditororg
  * console.log(pkg.name)        // "nano"
  * console.log(pkg.description) // "Free (GNU) replacement for the Pico text editor"
  * console.log(pkg.programs)    // ["nano"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/nano-editor-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nanoPackage = {
+export const nanoeditororgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const nanoPackage = {
    */
   description: 'Free (GNU) replacement for the Pico text editor' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nano-editor.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.nano-editor.org/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install nano' as const,
+  installCommand: 'launchpad install nano-editor.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nano-editor.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nano-editor.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +71,7 @@ export const nanoPackage = {
     '8.0.0',
     '7.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nano -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install nano' as const,
 }
 
-export type NanoPackage = typeof nanoPackage
+export type NanoeditororgPackage = typeof nanoeditororgPackage

@@ -6,18 +6,15 @@
  * @version `1.17.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install velero`
- * @name `velero`
+ * @install `launchpad install velero.io`
+ * @homepage https://velero.io/
+ * @dependencies `go.dev@~1.23.8`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.velero
- * // Or access via domain
- * const samePkg = pantry.veleroio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.veleroio
  * console.log(pkg.name)        // "velero"
  * console.log(pkg.description) // "Backup and migrate Kubernetes applications and ..."
  * console.log(pkg.programs)    // ["velero"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/velero-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const veleroPackage = {
+export const veleroioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const veleroPackage = {
    */
   description: 'Backup and migrate Kubernetes applications and their persistent volumes' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/velero.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://velero.io/' as const,
+  githubUrl: 'https://github.com/vmware-tanzu/velero' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install velero' as const,
+  installCommand: 'launchpad install velero.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +velero.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install velero.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const veleroPackage = {
     'velero',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.23.8',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -66,13 +71,7 @@ export const veleroPackage = {
     '1.16.2',
     '1.16.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) velero -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install velero' as const,
 }
 
-export type VeleroPackage = typeof veleroPackage
+export type VeleroioPackage = typeof veleroioPackage

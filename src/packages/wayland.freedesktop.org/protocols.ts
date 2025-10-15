@@ -5,18 +5,14 @@
  * @version `1.45.0` (14 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install wayland-protocols`
- * @name `wayland-protocols`
+ * @install `launchpad install wayland.freedesktop.org/protocols`
+ * @dependencies `mesonbuild.com`, `python.org@~3.11`, `wayland.freedesktop.org`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.waylandprotocols
- * // Or access via domain
- * const samePkg = pantry.waylandfreedesktoporgprotocols
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.waylandfreedesktoporgprotocols
  * console.log(pkg.name)        // "wayland-protocols"
  * console.log(pkg.versions[0]) // "1.45.0" (latest)
  * ```
@@ -24,7 +20,7 @@
  * @see https://ts-pkgx.netlify.app/packages/wayland-freedesktop-org/protocols.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const waylandprotocolsPackage = {
+export const waylandfreedesktoporgprotocolsPackage = {
   /**
    * The display name of this package.
    */
@@ -39,15 +35,26 @@ export const waylandprotocolsPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wayland.freedesktop.org/protocols/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install wayland-protocols' as const,
+  installCommand: 'launchpad install wayland.freedesktop.org/protocols' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wayland.freedesktop.org/protocols -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wayland.freedesktop.org/protocols' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'mesonbuild.com',
+    'python.org@~3.11',
+    'wayland.freedesktop.org',
+    'curl.se',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -68,13 +75,7 @@ export const waylandprotocolsPackage = {
     '1.33.0',
     '1.32.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wayland.freedesktop.org/protocols -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install wayland-protocols' as const,
 }
 
-export type WaylandprotocolsPackage = typeof waylandprotocolsPackage
+export type WaylandfreedesktoporgprotocolsPackage = typeof waylandfreedesktoporgprotocolsPackage

@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/evilmartians/lefthook.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomevilmartianslefthookPackage = {
+export const lefthookPackage = {
   /**
    * The display name of this package.
    */
@@ -200,4 +200,4 @@ export const githubcomevilmartianslefthookPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomevilmartianslefthookPackage = typeof githubcomevilmartianslefthookPackage
+export type LefthookPackage = typeof lefthookPackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/AUTOMATIC1111/stable-diffusion-webui.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomautomatic1111stablediffusionwebuiPackage = {
+export const stablediffusionwebuiPackage = {
   /**
    * The display name of this package.
    */
@@ -92,4 +92,4 @@ export const githubcomautomatic1111stablediffusionwebuiPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomautomatic1111stablediffusionwebuiPackage = typeof githubcomautomatic1111stablediffusionwebuiPackage
+export type StablediffusionwebuiPackage = typeof stablediffusionwebuiPackage

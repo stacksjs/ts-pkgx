@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/asciidoc-py/asciidoc-py.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomasciidocpyasciidocpyPackage = {
+export const asciidocpyPackage = {
   /**
    * The display name of this package.
    */
@@ -75,4 +75,4 @@ export const githubcomasciidocpyasciidocpyPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomasciidocpyasciidocpyPackage = typeof githubcomasciidocpyasciidocpyPackage
+export type AsciidocpyPackage = typeof asciidocpyPackage

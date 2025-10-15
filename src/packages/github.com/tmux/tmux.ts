@@ -6,19 +6,15 @@
  * @version `3.5a` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install tmux`
- * @name `tmux`
+ * @install `launchpad install github.com/tmux/tmux`
+ * @homepage https://tmux.github.io/
  * @dependencies `libevent.org^2.0`, `invisible-island.net/ncurses`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.tmux
- * // Or access via domain
- * const samePkg = pantry.githubcomtmuxtmux
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomtmuxtmux
  * console.log(pkg.name)        // "tmux"
  * console.log(pkg.description) // "Terminal multiplexer"
  * console.log(pkg.programs)    // ["tmux"]
@@ -42,13 +38,15 @@ export const tmuxPackage = {
    */
   description: 'Terminal multiplexer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/tmux/tmux/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://tmux.github.io/' as const,
+  githubUrl: 'https://github.com/tmux/tmux' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tmux' as const,
+  installCommand: 'launchpad install github.com/tmux/tmux' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/tmux/tmux -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/tmux/tmux' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,13 +74,7 @@ export const tmuxPackage = {
     '3.3a',
     '3.3.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tmux -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tmux' as const,
 }
 
 export type TmuxPackage = typeof tmuxPackage

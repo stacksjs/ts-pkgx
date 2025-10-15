@@ -1,18 +1,20 @@
 /**
- * **opus-codec.org** - Modern audio compression for the internet.
+ * **opus-codec** - Modern audio compression for the internet.
  *
  * @domain `opus-codec.org`
  * @version `1.5.2` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install opus-codec.org`
+ * @homepage https://opus-codec.org/
+ * @dependencies `gnu.org/autoconf@2`, `gnu.org/automake@1.16`, `gnu.org/libtool@2.4`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.opuscodecorg
- * console.log(pkg.name)        // "opus-codec.org"
+ * console.log(pkg.name)        // "opus-codec"
  * console.log(pkg.description) // "Modern audio compression for the internet."
  * console.log(pkg.versions[0]) // "1.5.2" (latest)
  * ```
@@ -24,7 +26,7 @@ export const opuscodecorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'opus-codec.org' as const,
+  name: 'opus-codec' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,16 +36,27 @@ export const opuscodecorgPackage = {
    */
   description: 'Modern audio compression for the internet.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/opus-codec.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://opus-codec.org/' as const,
+  githubUrl: 'https://github.com/xiph/opus' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install opus-codec.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +opus-codec.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install opus-codec.org' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/autoconf@2',
+    'gnu.org/automake@1.16',
+    'gnu.org/libtool@2.4',
+    'gnu.org/wget',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -56,8 +69,6 @@ export const opuscodecorgPackage = {
     '1.3.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +opus-codec.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install opus-codec.org' as const,
 }
 
 export type OpuscodecorgPackage = typeof opuscodecorgPackage

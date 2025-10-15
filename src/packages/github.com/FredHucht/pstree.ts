@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/FredHucht/pstree.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomfredhuchtpstreePackage = {
+export const pstreePackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomfredhuchtpstreePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomfredhuchtpstreePackage = typeof githubcomfredhuchtpstreePackage
+export type PstreePackage = typeof pstreePackage

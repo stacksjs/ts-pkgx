@@ -6,19 +6,15 @@
  * @version `8.2.3` (42 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sphinx`
- * @name `sphinx`
+ * @install `launchpad install sphinx-doc.org`
+ * @homepage https://www.sphinx-doc.org/
  * @dependencies `python.org>=3.8<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sphinx
- * // Or access via domain
- * const samePkg = pantry.sphinxdocorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sphinxdocorg
  * console.log(pkg.name)        // "sphinx"
  * console.log(pkg.description) // "Tool to create intelligent and beautiful docume..."
  * console.log(pkg.programs)    // ["sphinx-apidoc", "sphinx-autogen", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sphinx-doc-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sphinxPackage = {
+export const sphinxdocorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const sphinxPackage = {
    */
   description: 'Tool to create intelligent and beautiful documentation' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sphinx-doc.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.sphinx-doc.org/' as const,
+  githubUrl: 'https://github.com/sphinx-doc/sphinx' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sphinx' as const,
+  installCommand: 'launchpad install sphinx-doc.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sphinx-doc.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sphinx-doc.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -115,13 +113,7 @@ export const sphinxPackage = {
     '6.2.0',
     '6.1.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sphinx-doc.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sphinx' as const,
 }
 
-export type SphinxPackage = typeof sphinxPackage
+export type SphinxdocorgPackage = typeof sphinxdocorgPackage

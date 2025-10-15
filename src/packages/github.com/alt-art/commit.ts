@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/alt-art/commit.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomaltartcommitPackage = {
+export const commitPackage = {
   /**
    * The display name of this package.
    */
@@ -65,4 +65,4 @@ export const githubcomaltartcommitPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomaltartcommitPackage = typeof githubcomaltartcommitPackage
+export type CommitPackage = typeof commitPackage

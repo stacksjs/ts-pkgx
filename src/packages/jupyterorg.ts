@@ -1,5 +1,5 @@
 /**
- * **jupyter.org** - JupyterLab computational environment.
+ * **jupyter** - JupyterLab computational environment.
  *
  * @domain `jupyter.org`
  * @programs `jlpm`, `jupyter`, `jupyter-bundlerextension`, `jupyter-dejavu`, `jupyter-events`, ... (+19 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jupyter.org`
+ * @homepage https://jupyterlab.readthedocs.io/
  * @dependencies `python.org>=3.7<3.12`, `gnu.org/which@2`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.jupyterorg
- * console.log(pkg.name)        // "jupyter.org"
+ * console.log(pkg.name)        // "jupyter"
  * console.log(pkg.description) // "JupyterLab computational environment."
  * console.log(pkg.programs)    // ["jlpm", "jupyter", ...]
  * console.log(pkg.versions[0]) // "4.4.9" (latest)
@@ -27,7 +28,7 @@ export const jupyterorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jupyter.org' as const,
+  name: 'jupyter' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const jupyterorgPackage = {
    */
   description: 'JupyterLab computational environment.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jupyter.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://jupyterlab.readthedocs.io/' as const,
+  githubUrl: 'https://github.com/jupyterlab/jupyterlab' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install jupyter.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jupyter.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jupyter.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -146,8 +149,6 @@ export const jupyterorgPackage = {
     '3.6.3',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jupyter.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jupyter.org' as const,
 }
 
 export type JupyterorgPackage = typeof jupyterorgPackage

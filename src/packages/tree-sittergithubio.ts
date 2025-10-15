@@ -6,18 +6,14 @@
  * @version `0.25.10` (32 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install tree-sitter`
- * @name `tree-sitter`
+ * @install `launchpad install tree-sitter.github.io`
+ * @homepage https://tree-sitter.github.io/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.treesitter
- * // Or access via domain
- * const samePkg = pantry.treesittergithubio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.treesittergithubio
  * console.log(pkg.name)        // "tree-sitter"
  * console.log(pkg.description) // "Parser generator tool and incremental parsing l..."
  * console.log(pkg.programs)    // ["tree-sitter"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tree-sitter-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const treesitterPackage = {
+export const treesittergithubioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const treesitterPackage = {
    */
   description: 'Parser generator tool and incremental parsing library' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tree-sitter.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://tree-sitter.github.io/' as const,
+  githubUrl: 'https://github.com/tree-sitter/tree-sitter' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tree-sitter' as const,
+  installCommand: 'launchpad install tree-sitter.github.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tree-sitter.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tree-sitter.github.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -95,13 +93,7 @@ export const treesitterPackage = {
     '0.20.9',
     '0.20.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tree-sitter -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tree-sitter' as const,
 }
 
-export type TreesitterPackage = typeof treesitterPackage
+export type TreesittergithubioPackage = typeof treesittergithubioPackage

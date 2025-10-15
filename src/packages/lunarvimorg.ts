@@ -1,5 +1,5 @@
 /**
- * **lunarvim.org** - 🌙 LunarVim is an IDE layer for Neovim. Completely free and community driven.
+ * **lunarvim** - 🌙 LunarVim is an IDE layer for Neovim. Completely free and community driven.
  *
  * @domain `lunarvim.org`
  * @programs `lvim`, `nvim`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install lunarvim.org`
+ * @homepage https://www.lunarvim.org
  * @dependencies `gnu.org/bash`, `crates.io/fd-find`, `pip.pypa.io`, ... (+4 more)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.lunarvimorg
- * console.log(pkg.name)        // "lunarvim.org"
+ * console.log(pkg.name)        // "lunarvim"
  * console.log(pkg.description) // "🌙 LunarVim is an IDE layer for Neovim. Complet..."
  * console.log(pkg.programs)    // ["lvim", "nvim"]
  * console.log(pkg.versions[0]) // "1.4.0" (latest)
@@ -27,7 +28,7 @@ export const lunarvimorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'lunarvim.org' as const,
+  name: 'lunarvim' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const lunarvimorgPackage = {
    */
   description: '🌙 LunarVim is an IDE layer for Neovim. Completely free and community driven.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lunarvim.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.lunarvim.org' as const,
+  githubUrl: 'https://github.com/LunarVim/LunarVim' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install lunarvim.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lunarvim.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lunarvim.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,8 +78,6 @@ export const lunarvimorgPackage = {
     '1.3.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lunarvim.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install lunarvim.org' as const,
 }
 
 export type LunarvimorgPackage = typeof lunarvimorgPackage

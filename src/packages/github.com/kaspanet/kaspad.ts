@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/kaspanet/kaspad.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkaspanetkaspadPackage = {
+export const kaspadPackage = {
   /**
    * The display name of this package.
    */
@@ -82,4 +82,4 @@ export const githubcomkaspanetkaspadPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkaspanetkaspadPackage = typeof githubcomkaspanetkaspadPackage
+export type KaspadPackage = typeof kaspadPackage

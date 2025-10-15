@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/igorshubovych/markdownlint-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomigorshubovychmarkdownlintcliPackage = {
+export const markdownlintcliPackage = {
   /**
    * The display name of this package.
    */
@@ -74,4 +74,4 @@ export const githubcomigorshubovychmarkdownlintcliPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomigorshubovychmarkdownlintcliPackage = typeof githubcomigorshubovychmarkdownlintcliPackage
+export type MarkdownlintcliPackage = typeof markdownlintcliPackage

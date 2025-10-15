@@ -1,18 +1,19 @@
 /**
- * **gnu.org/libunistring** - pkgx package
+ * **libunistring** - pkgx package
  *
  * @domain `gnu.org/libunistring`
  * @version `1.4.1` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/libunistring`
+ * @dependencies `gnu.org/gmp`, `gnu.org/m4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorglibunistring
- * console.log(pkg.name)        // "gnu.org/libunistring"
+ * console.log(pkg.name)        // "libunistring"
  * console.log(pkg.versions[0]) // "1.4.1" (latest)
  * ```
  *
@@ -23,7 +24,7 @@ export const gnuorglibunistringPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/libunistring' as const,
+  name: 'libunistring' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,15 +35,24 @@ export const gnuorglibunistringPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libunistring/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnu.org/libunistring' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/libunistring -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/libunistring' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gmp',
+    'gnu.org/m4',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -55,8 +65,6 @@ export const gnuorglibunistringPackage = {
     '1.1.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/libunistring -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/libunistring' as const,
 }
 
 export type GnuorglibunistringPackage = typeof gnuorglibunistringPackage

@@ -6,19 +6,15 @@
  * @version `2.10.2` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install wails`
- * @name `wails`
+ * @install `launchpad install wails.io`
+ * @homepage https://wails.io
  * @dependencies `go.dev^1.18`, `npmjs.com`, `linux:gnu.org/gcc`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.wails
- * // Or access via domain
- * const samePkg = pantry.wailsio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.wailsio
  * console.log(pkg.name)        // "wails"
  * console.log(pkg.description) // "Create beautiful applications using Go"
  * console.log(pkg.programs)    // ["wails"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/wails-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const wailsPackage = {
+export const wailsioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const wailsPackage = {
    */
   description: 'Create beautiful applications using Go' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wails.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://wails.io' as const,
+  githubUrl: 'https://github.com/wailsapp/wails' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install wails' as const,
+  installCommand: 'launchpad install wails.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wails.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wails.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -85,13 +83,7 @@ export const wailsPackage = {
     '2.8.1',
     '2.8.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wails -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install wails' as const,
 }
 
-export type WailsPackage = typeof wailsPackage
+export type WailsioPackage = typeof wailsioPackage

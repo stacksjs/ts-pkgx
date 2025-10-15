@@ -6,19 +6,15 @@
  * @version `0.11.4` (17 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install nvim`
- * @name `nvim`
+ * @install `launchpad install neovim.io`
+ * @homepage https://neovim.io/
  * @dependencies `gnu.org/gettext^0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.nvim
- * // Or access via domain
- * const samePkg = pantry.neovimio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.neovimio
  * console.log(pkg.name)        // "nvim"
  * console.log(pkg.description) // "Ambitious Vim-fork focused on extensibility and..."
  * console.log(pkg.programs)    // ["nvim"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/neovim-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nvimPackage = {
+export const neovimioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const nvimPackage = {
    */
   description: 'Ambitious Vim-fork focused on extensibility and agility' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/neovim.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://neovim.io/' as const,
+  githubUrl: 'https://github.com/neovim/neovim' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install nvim' as const,
+  installCommand: 'launchpad install neovim.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +neovim.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install neovim.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -87,13 +85,7 @@ export const nvimPackage = {
     '0.8.2',
     '0.8.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nvim -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install nvim' as const,
 }
 
-export type NvimPackage = typeof nvimPackage
+export type NeovimioPackage = typeof neovimioPackage

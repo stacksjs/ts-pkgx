@@ -1,5 +1,5 @@
 /**
- * **libimobiledevice.org/libimobiledevice-glue** - A library with common code used by libraries and tools around the libimobiledevice project
+ * **libimobiledevice-glue** - A library with common code used by libraries and tools around the libimobiledevice project
  *
  * @domain `libimobiledevice.org/libimobiledevice-glue`
  * @version `1.3.2` (4 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.libimobiledeviceorglibimobiledeviceglue
- * console.log(pkg.name)        // "libimobiledevice.org/libimobiledevice-glue"
+ * console.log(pkg.name)        // "libimobiledevice-glue"
  * console.log(pkg.description) // "A library with common code used by libraries an..."
  * console.log(pkg.versions[0]) // "1.3.2" (latest)
  * ```
@@ -25,7 +25,7 @@ export const libimobiledeviceorglibimobiledevicegluePackage = {
   /**
    * The display name of this package.
    */
-  name: 'libimobiledevice.org/libimobiledevice-glue' as const,
+  name: 'libimobiledevice-glue' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,12 +36,14 @@ export const libimobiledeviceorglibimobiledevicegluePackage = {
   description: 'A library with common code used by libraries and tools around the libimobiledevice project' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libimobiledevice.org/libimobiledevice-glue/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/libimobiledevice/libimobiledevice-glue' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install libimobiledevice.org/libimobiledevice-glue' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libimobiledevice.org/libimobiledevice-glue -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libimobiledevice.org/libimobiledevice-glue' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -62,8 +64,6 @@ export const libimobiledeviceorglibimobiledevicegluePackage = {
     '1.2.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libimobiledevice.org/libimobiledevice-glue -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libimobiledevice.org/libimobiledevice-glue' as const,
 }
 
 export type LibimobiledeviceorglibimobiledevicegluePackage = typeof libimobiledeviceorglibimobiledevicegluePackage

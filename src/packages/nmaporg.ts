@@ -1,5 +1,5 @@
 /**
- * **nmap.org** - Port scanning utility for large networks
+ * **nmap** - Port scanning utility for large networks
  *
  * @domain `nmap.org`
  * @programs `nmap`, `ncat`, `nping`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nmap.org`
+ * @homepage https://nmap.org/
  * @dependencies `openssl.org^1.1`, `pcre.org/v2^10`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.nmaporg
- * console.log(pkg.name)        // "nmap.org"
+ * console.log(pkg.name)        // "nmap"
  * console.log(pkg.description) // "Port scanning utility for large networks"
  * console.log(pkg.programs)    // ["nmap", "ncat", ...]
  * console.log(pkg.versions[0]) // "7.98.0" (latest)
@@ -27,7 +28,7 @@ export const nmaporgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'nmap.org' as const,
+  name: 'nmap' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const nmaporgPackage = {
    */
   description: 'Port scanning utility for large networks' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nmap.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://nmap.org/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install nmap.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nmap.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nmap.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,8 +78,6 @@ export const nmaporgPackage = {
     '7.93.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nmap.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install nmap.org' as const,
 }
 
 export type NmaporgPackage = typeof nmaporgPackage

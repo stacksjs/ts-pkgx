@@ -1,5 +1,5 @@
 /**
- * **sf.net/potrace** - Convert bitmaps to vector graphics
+ * **potrace** - Convert bitmaps to vector graphics
  *
  * @domain `sourceforge.net/potrace`
  * @programs `potrace`, `mkbitmap`
@@ -7,19 +7,15 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install sourceforge.net/potrace`
- * @name `sf.net/potrace`
+ * @homepage https://potrace.sourceforge.net/
  * @dependencies `zlib.net^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sfnetpotrace
- * // Or access via domain
- * const samePkg = pantry.sourceforgenetpotrace
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "sf.net/potrace"
+ * const pkg = pantry.sourceforgenetpotrace
+ * console.log(pkg.name)        // "potrace"
  * console.log(pkg.description) // "Convert bitmaps to vector graphics"
  * console.log(pkg.programs)    // ["potrace", "mkbitmap"]
  * console.log(pkg.versions[0]) // "1.16.0" (latest)
@@ -28,11 +24,11 @@
  * @see https://ts-pkgx.netlify.app/packages/sourceforge-net/potrace.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sfnetpotracePackage = {
+export const sourceforgenetpotracePackage = {
   /**
    * The display name of this package.
    */
-  name: 'sf.net/potrace' as const,
+  name: 'potrace' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,13 +38,15 @@ export const sfnetpotracePackage = {
    */
   description: 'Convert bitmaps to vector graphics' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/potrace/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://potrace.sourceforge.net/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install sourceforge.net/potrace' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceforge.net/potrace -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sourceforge.net/potrace' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +70,7 @@ export const sfnetpotracePackage = {
   versions: [
     '1.16.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceforge.net/potrace -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sourceforge.net/potrace' as const,
 }
 
-export type SfnetpotracePackage = typeof sfnetpotracePackage
+export type SourceforgenetpotracePackage = typeof sourceforgenetpotracePackage

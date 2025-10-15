@@ -1,25 +1,21 @@
 /**
- * **pnpm** - Fast, disk space efficient package manager
+ * **pnp** - Fast, disk space efficient package manager
  *
  * @domain `pnpm.io`
  * @programs `pnpm`, `pnpx`
  * @version `10.18.3` (181 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pnpm`
- * @name `pnpm`
+ * @install `launchpad install pnpm.io`
+ * @homepage https://pnpm.io/
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pnpm
- * // Or access via domain
- * const samePkg = pantry.pnpmio
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "pnpm"
+ * const pkg = pantry.pnpmio
+ * console.log(pkg.name)        // "pnp"
  * console.log(pkg.description) // "Fast, disk space efficient package manager"
  * console.log(pkg.programs)    // ["pnpm", "pnpx"]
  * console.log(pkg.versions[0]) // "10.18.3" (latest)
@@ -28,11 +24,11 @@
  * @see https://ts-pkgx.netlify.app/packages/pnpm-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pnpmPackage = {
+export const pnpmioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'pnpm' as const,
+  name: 'pnp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,13 +38,15 @@ export const pnpmPackage = {
    */
   description: 'Fast, disk space efficient package manager' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pnpm.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://pnpm.io/' as const,
+  githubUrl: 'https://github.com/pnpm/pnpm' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pnpm' as const,
+  installCommand: 'launchpad install pnpm.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pnpm.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pnpm.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -252,13 +250,7 @@ export const pnpmPackage = {
     '7.19.0',
     '7.18.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pnpm.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pnpm' as const,
 }
 
-export type PnpmPackage = typeof pnpmPackage
+export type PnpmioPackage = typeof pnpmioPackage

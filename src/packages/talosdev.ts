@@ -6,18 +6,15 @@
  * @version `1.11.2` (34 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install talosctl`
- * @name `talosctl`
+ * @install `launchpad install talos.dev`
+ * @homepage https://www.talos.dev/
+ * @dependencies `go.dev@^1.21`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.talosctl
- * // Or access via domain
- * const samePkg = pantry.talosdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.talosdev
  * console.log(pkg.name)        // "talosctl"
  * console.log(pkg.description) // "CLI for out-of-band management of Kubernetes no..."
  * console.log(pkg.programs)    // ["talosctl"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/talos-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const talosctlPackage = {
+export const talosdevPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const talosctlPackage = {
    */
   description: 'CLI for out-of-band management of Kubernetes nodes created by Talos' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/talos.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.talos.dev/' as const,
+  githubUrl: 'https://github.com/siderolabs/talos' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install talosctl' as const,
+  installCommand: 'launchpad install talos.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +talos.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install talos.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,15 @@ export const talosctlPackage = {
     'talosctl',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   */
+  dependencies: [
+    'go.dev@^1.21',
+    'linux:gnu.org/gcc',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -97,13 +104,7 @@ export const talosctlPackage = {
     '1.6.7',
     '1.6.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) talosctl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install talosctl' as const,
 }
 
-export type TalosctlPackage = typeof talosctlPackage
+export type TalosdevPackage = typeof talosdevPackage

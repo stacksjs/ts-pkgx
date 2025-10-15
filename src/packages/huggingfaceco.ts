@@ -1,25 +1,21 @@
 /**
- * **huggingface-cli** - The official Python client for the Huggingface Hub.
+ * **huggingface/cli** - The official Python client for the Huggingface Hub.
  *
  * @domain `huggingface.co`
  * @programs `huggingface-cli`
  * @version `0.35.3` (72 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install huggingface-cli`
- * @name `huggingface-cli`
+ * @install `launchpad install huggingface.co`
+ * @homepage https://huggingface.co/docs/huggingface_hub/index
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.huggingfacecli
- * // Or access via domain
- * const samePkg = pantry.huggingfaceco
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "huggingface-cli"
+ * const pkg = pantry.huggingfaceco
+ * console.log(pkg.name)        // "huggingface/cli"
  * console.log(pkg.description) // "The official Python client for the Huggingface ..."
  * console.log(pkg.programs)    // ["huggingface-cli"]
  * console.log(pkg.versions[0]) // "0.35.3" (latest)
@@ -28,11 +24,11 @@
  * @see https://ts-pkgx.netlify.app/packages/huggingface-co.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const huggingfacecliPackage = {
+export const huggingfacecoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'huggingface-cli' as const,
+  name: 'huggingface/cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,13 +38,15 @@ export const huggingfacecliPackage = {
    */
   description: 'The official Python client for the Huggingface Hub.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/huggingface.co/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://huggingface.co/docs/huggingface_hub/index' as const,
+  githubUrl: 'https://github.com/huggingface/huggingface_hub' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install huggingface-cli' as const,
+  installCommand: 'launchpad install huggingface.co' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +huggingface.co -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install huggingface.co' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -142,13 +140,7 @@ export const huggingfacecliPackage = {
     '0.20.0',
     '0.19.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) huggingface-cli -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install huggingface-cli' as const,
 }
 
-export type HuggingfacecliPackage = typeof huggingfacecliPackage
+export type HuggingfacecoPackage = typeof huggingfacecoPackage

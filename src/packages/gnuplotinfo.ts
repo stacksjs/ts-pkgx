@@ -6,19 +6,15 @@
  * @version `6.0.3` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gnuplot`
- * @name `gnuplot`
+ * @install `launchpad install gnuplot.info`
+ * @homepage http://www.gnuplot.info/
  * @dependencies `libgd.github.io`, `lua.org`, `gnome.org/pango`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gnuplot
- * // Or access via domain
- * const samePkg = pantry.gnuplotinfo
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnuplotinfo
  * console.log(pkg.name)        // "gnuplot"
  * console.log(pkg.description) // "Command-driven, interactive function plotting"
  * console.log(pkg.programs)    // ["gnuplot"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnuplot-info.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gnuplotPackage = {
+export const gnuplotinfoPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const gnuplotPackage = {
    */
   description: 'Command-driven, interactive function plotting' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnuplot.info/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://www.gnuplot.info/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gnuplot' as const,
+  installCommand: 'launchpad install gnuplot.info' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnuplot.info -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnuplot.info' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,13 +82,7 @@ export const gnuplotPackage = {
     '5.4.7',
     '5.4.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gnuplot -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnuplot' as const,
 }
 
-export type GnuplotPackage = typeof gnuplotPackage
+export type GnuplotinfoPackage = typeof gnuplotinfoPackage

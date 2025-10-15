@@ -6,19 +6,14 @@
  * @version `0.8.10` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install docker-lock`
- * @name `docker-lock`
+ * @install `launchpad install github.com/safe-waters/docker-lock`
  * @dependencies `docker.com/cli`, `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dockerlock
- * // Or access via domain
- * const samePkg = pantry.githubcomsafewatersdockerlock
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomsafewatersdockerlock
  * console.log(pkg.name)        // "docker-lock"
  * console.log(pkg.programs)    // ["docker-lock"]
  * console.log(pkg.versions[0]) // "0.8.10" (latest)
@@ -42,12 +37,14 @@ export const dockerlockPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/safe-waters/docker-lock/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/safe-waters/docker-lock' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install docker-lock' as const,
+  installCommand: 'launchpad install github.com/safe-waters/docker-lock' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/safe-waters/docker-lock -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/safe-waters/docker-lock' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +68,7 @@ export const dockerlockPackage = {
   versions: [
     '0.8.10',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) docker-lock -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install docker-lock' as const,
 }
 
 export type DockerlockPackage = typeof dockerlockPackage

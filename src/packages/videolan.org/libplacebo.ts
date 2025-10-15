@@ -1,5 +1,5 @@
 /**
- * **videolan.org/libplacebo** - pkgx package
+ * **libplacebo** - pkgx package
  *
  * @domain `videolan.org/libplacebo`
  * @version `7.351.0` (4 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.videolanorglibplacebo
- * console.log(pkg.name)        // "videolan.org/libplacebo"
+ * console.log(pkg.name)        // "libplacebo"
  * console.log(pkg.versions[0]) // "7.351.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const videolanorglibplaceboPackage = {
   /**
    * The display name of this package.
    */
-  name: 'videolan.org/libplacebo' as const,
+  name: 'libplacebo' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const videolanorglibplaceboPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/videolan.org/libplacebo/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install videolan.org/libplacebo' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +videolan.org/libplacebo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install videolan.org/libplacebo' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -62,8 +64,6 @@ export const videolanorglibplaceboPackage = {
     '6.338.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +videolan.org/libplacebo -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install videolan.org/libplacebo' as const,
 }
 
 export type VideolanorglibplaceboPackage = typeof videolanorglibplaceboPackage

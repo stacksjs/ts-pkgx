@@ -6,19 +6,15 @@
  * @version `7.5.3` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install dos2unix`
- * @name `dos2unix`
+ * @install `launchpad install waterlan.home.xs4all.nl/dos2unix`
+ * @homepage https://waterlan.home.xs4all.nl/dos2unix.html
  * @dependencies `gnu.org/gettext`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dos2unix
- * // Or access via domain
- * const samePkg = pantry.waterlanhomexs4allnldos2unix
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.waterlanhomexs4allnldos2unix
  * console.log(pkg.name)        // "dos2unix"
  * console.log(pkg.description) // "Convert text between DOS, UNIX, and Mac formats"
  * console.log(pkg.programs)    // ["dos2unix", "mac2unix", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/waterlan-home-xs4all-nl/dos2unix.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dos2unixPackage = {
+export const waterlanhomexs4allnldos2unixPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const dos2unixPackage = {
    */
   description: 'Convert text between DOS, UNIX, and Mac formats' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/waterlan.home.xs4all.nl/dos2unix/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://waterlan.home.xs4all.nl/dos2unix.html' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install dos2unix' as const,
+  installCommand: 'launchpad install waterlan.home.xs4all.nl/dos2unix' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +waterlan.home.xs4all.nl/dos2unix -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install waterlan.home.xs4all.nl/dos2unix' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,13 +73,7 @@ export const dos2unixPackage = {
     '7.5.3',
     '7.5.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +waterlan.home.xs4all.nl/dos2unix -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install dos2unix' as const,
 }
 
-export type Dos2unixPackage = typeof dos2unixPackage
+export type Waterlanhomexs4allnldos2unixPackage = typeof waterlanhomexs4allnldos2unixPackage

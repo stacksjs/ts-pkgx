@@ -6,18 +6,14 @@
  * @version `0.8.0` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install soldeer`
- * @name `soldeer`
+ * @install `launchpad install soldeer.xyz`
+ * @homepage https://soldeer.xyz
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.soldeer
- * // Or access via domain
- * const samePkg = pantry.soldeerxyz
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.soldeerxyz
  * console.log(pkg.name)        // "soldeer"
  * console.log(pkg.description) // "Solidity Package Manager written in rust and in..."
  * console.log(pkg.programs)    // ["soldeer"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/soldeer-xyz.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const soldeerPackage = {
+export const soldeerxyzPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const soldeerPackage = {
    */
   description: 'Solidity Package Manager written in rust and integrated into Foundry (forge soldeer ...)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/soldeer.xyz/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://soldeer.xyz' as const,
+  githubUrl: 'https://github.com/mario-eth/soldeer' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install soldeer' as const,
+  installCommand: 'launchpad install soldeer.xyz' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +soldeer.xyz -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install soldeer.xyz' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +69,7 @@ export const soldeerPackage = {
     '0.5.3',
     '0.5.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) soldeer -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install soldeer' as const,
 }
 
-export type SoldeerPackage = typeof soldeerPackage
+export type SoldeerxyzPackage = typeof soldeerxyzPackage

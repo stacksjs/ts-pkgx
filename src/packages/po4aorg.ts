@@ -1,5 +1,5 @@
 /**
- * **po4a.org** - Maintain the translations of your documentation with ease  (PO for anything)
+ * **po4a** - Maintain the translations of your documentation with ease  (PO for anything)
  *
  * @domain `po4a.org`
  * @programs `msguntypot`, `po4a`, `po4a-display-man`, `po4a-display-pod`, `po4a-gettextize`, ... (+3 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install po4a.org`
+ * @homepage http://po4a.org/
  * @dependencies `gnu.org/gettext^0.22`, `perl.org^5.22`, `gnome.org/libxslt^1.1`
  * @companions `PERL5LIB^${{prefix}}/libexec/lib/perl5:$PERL5LIB`
  *
@@ -15,7 +16,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.po4aorg
- * console.log(pkg.name)        // "po4a.org"
+ * console.log(pkg.name)        // "po4a"
  * console.log(pkg.description) // "Maintain the translations of your documentation..."
  * console.log(pkg.programs)    // ["msguntypot", "po4a", ...]
  * console.log(pkg.versions[0]) // "0.74.0" (latest)
@@ -28,7 +29,7 @@ export const po4aorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'po4a.org' as const,
+  name: 'po4a' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -38,13 +39,15 @@ export const po4aorgPackage = {
    */
   description: 'Maintain the translations of your documentation with ease  (PO for anything)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/po4a.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://po4a.org/' as const,
+  githubUrl: 'https://github.com/mquinson/po4a' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install po4a.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +po4a.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install po4a.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -88,8 +91,6 @@ export const po4aorgPackage = {
     '0.69.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +po4a.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install po4a.org' as const,
 }
 
 export type Po4aorgPackage = typeof po4aorgPackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/cesnet/libyang.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcesnetlibyangPackage = {
+export const libyangPackage = {
   /**
    * The display name of this package.
    */
@@ -77,4 +77,4 @@ export const githubcomcesnetlibyangPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcesnetlibyangPackage = typeof githubcomcesnetlibyangPackage
+export type LibyangPackage = typeof libyangPackage

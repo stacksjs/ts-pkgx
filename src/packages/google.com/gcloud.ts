@@ -1,5 +1,5 @@
 /**
- * **google.com/gcloud** - pkgx package
+ * **gcloud** - pkgx package
  *
  * @domain `google.com/gcloud`
  * @programs `gcloud`, `gsutil`, `bq`
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.googlecomgcloud
- * console.log(pkg.name)        // "google.com/gcloud"
+ * console.log(pkg.name)        // "gcloud"
  * console.log(pkg.programs)    // ["gcloud", "gsutil", ...]
  * console.log(pkg.versions[0]) // "543.0.0" (latest)
  * ```
@@ -26,7 +26,7 @@ export const googlecomgcloudPackage = {
   /**
    * The display name of this package.
    */
-  name: 'google.com/gcloud' as const,
+  name: 'gcloud' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,12 +37,14 @@ export const googlecomgcloudPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/google.com/gcloud/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install google.com/gcloud' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +google.com/gcloud -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install google.com/gcloud' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -160,8 +162,6 @@ export const googlecomgcloudPackage = {
     '457.0.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +google.com/gcloud -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install google.com/gcloud' as const,
 }
 
 export type GooglecomgcloudPackage = typeof googlecomgcloudPackage

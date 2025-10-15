@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/dduan/tre.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomdduantrePackage = {
+export const trePackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomdduantrePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomdduantrePackage = typeof githubcomdduantrePackage
+export type TrePackage = typeof trePackage

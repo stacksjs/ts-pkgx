@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/DaanDeMeyer/reproc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomdaandemeyerreprocPackage = {
+export const reprocPackage = {
   /**
    * The display name of this package.
    */
@@ -64,4 +64,4 @@ export const githubcomdaandemeyerreprocPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomdaandemeyerreprocPackage = typeof githubcomdaandemeyerreprocPackage
+export type ReprocPackage = typeof reprocPackage

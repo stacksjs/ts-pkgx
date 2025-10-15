@@ -6,18 +6,15 @@
  * @version `7.12.0` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install oauth2-proxy`
- * @name `oauth2-proxy`
+ * @install `launchpad install oauth2-proxy.github.io`
+ * @homepage https://oauth2-proxy.github.io/oauth2-proxy/
+ * @dependencies `go.dev@1.22.4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.oauth2proxy
- * // Or access via domain
- * const samePkg = pantry.oauth2proxygithubio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.oauth2proxygithubio
  * console.log(pkg.name)        // "oauth2-proxy"
  * console.log(pkg.description) // "A reverse proxy that provides authentication wi..."
  * console.log(pkg.programs)    // ["oauth2-proxy"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/oauth2-proxy-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const oauth2proxyPackage = {
+export const oauth2proxygithubioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const oauth2proxyPackage = {
    */
   description: 'A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/oauth2-proxy.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://oauth2-proxy.github.io/oauth2-proxy/' as const,
+  githubUrl: 'https://github.com/oauth2-proxy/oauth2-proxy' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install oauth2-proxy' as const,
+  installCommand: 'launchpad install oauth2-proxy.github.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +oauth2-proxy.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install oauth2-proxy.github.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const oauth2proxyPackage = {
     'oauth2-proxy',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@1.22.4',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -73,13 +78,7 @@ export const oauth2proxyPackage = {
     '7.7.0',
     '7.6.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) oauth2-proxy -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install oauth2-proxy' as const,
 }
 
-export type Oauth2proxyPackage = typeof oauth2proxyPackage
+export type Oauth2proxygithubioPackage = typeof oauth2proxygithubioPackage

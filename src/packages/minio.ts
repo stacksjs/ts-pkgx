@@ -6,18 +6,15 @@
  * @version `2023.10.25.6.33.25` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install minio`
- * @name `minio`
+ * @install `launchpad install min.io`
+ * @homepage https://min.io
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
  * const pkg = pantry.minio
- * // Or access via domain
- * const samePkg = pantry.minio
- * console.log(pkg === samePkg) // true
  * console.log(pkg.name)        // "minio"
  * console.log(pkg.description) // "MinIO is a high-performance, S3 compatible obje..."
  * console.log(pkg.programs)    // ["minio"]
@@ -41,13 +38,15 @@ export const minioPackage = {
    */
   description: 'MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/min.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://min.io' as const,
+  githubUrl: 'https://github.com/minio/minio' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install minio' as const,
+  installCommand: 'launchpad install min.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +min.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install min.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const minioPackage = {
     'minio',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +69,7 @@ export const minioPackage = {
   versions: [
     '2023.10.25.6.33.25',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) minio -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install minio' as const,
 }
 
 export type MinioPackage = typeof minioPackage

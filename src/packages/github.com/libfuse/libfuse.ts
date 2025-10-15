@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/libfuse/libfuse.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomlibfuselibfusePackage = {
+export const libfusePackage = {
   /**
    * The display name of this package.
    */
@@ -76,4 +76,4 @@ export const githubcomlibfuselibfusePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomlibfuselibfusePackage = typeof githubcomlibfuselibfusePackage
+export type LibfusePackage = typeof libfusePackage

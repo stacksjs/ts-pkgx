@@ -6,19 +6,15 @@
  * @version `1.18.26` (83 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install solana`
- * @name `solana`
+ * @install `launchpad install solana.com`
+ * @homepage https://solana.com
  * @dependencies `protobuf.dev^21`, `zlib.net^1.2`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.solana
- * // Or access via domain
- * const samePkg = pantry.solanacom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.solanacom
  * console.log(pkg.name)        // "solana"
  * console.log(pkg.description) // "Web-Scale Blockchain for fast, secure, scalable..."
  * console.log(pkg.programs)    // ["solana", "solana-keygen", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/solana-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const solanaPackage = {
+export const solanacomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const solanaPackage = {
    */
   description: 'Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/solana.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://solana.com' as const,
+  githubUrl: 'https://github.com/solana-labs/solana' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install solana' as const,
+  installCommand: 'launchpad install solana.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +solana.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install solana.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -164,13 +162,7 @@ export const solanaPackage = {
     '1.14.19',
     '1.14.18',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +solana.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install solana' as const,
 }
 
-export type SolanaPackage = typeof solanaPackage
+export type SolanacomPackage = typeof solanacomPackage

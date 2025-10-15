@@ -6,19 +6,14 @@
  * @version `1.2.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rexi`
- * @name `rexi`
+ * @install `launchpad install github.com/royreznik/rexi`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rexi
- * // Or access via domain
- * const samePkg = pantry.githubcomroyreznikrexi
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomroyreznikrexi
  * console.log(pkg.name)        // "rexi"
  * console.log(pkg.description) // "Terminal UI for Regex Testing"
  * console.log(pkg.programs)    // ["rexi"]
@@ -43,12 +38,14 @@ export const rexiPackage = {
   description: 'Terminal UI for Regex Testing' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/royreznik/rexi/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/royreznik/rexi' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rexi' as const,
+  installCommand: 'launchpad install github.com/royreznik/rexi' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/royreznik/rexi -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/royreznik/rexi' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,13 +71,7 @@ export const rexiPackage = {
     '1.1.3',
     '1.1.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rexi -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rexi' as const,
 }
 
 export type RexiPackage = typeof rexiPackage

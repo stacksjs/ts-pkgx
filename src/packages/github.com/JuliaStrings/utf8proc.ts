@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/JuliaStrings/utf8proc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjuliastringsutf8procPackage = {
+export const utf8procPackage = {
   /**
    * The display name of this package.
    */
@@ -60,4 +60,4 @@ export const githubcomjuliastringsutf8procPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomjuliastringsutf8procPackage = typeof githubcomjuliastringsutf8procPackage
+export type Utf8procPackage = typeof utf8procPackage

@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/PJK/libcbor.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcompjklibcborPackage = {
+export const libcborPackage = {
   /**
    * The display name of this package.
    */
@@ -66,4 +66,4 @@ export const githubcompjklibcborPackage = {
   aliases: [] as const,
 }
 
-export type GithubcompjklibcborPackage = typeof githubcompjklibcborPackage
+export type LibcborPackage = typeof libcborPackage

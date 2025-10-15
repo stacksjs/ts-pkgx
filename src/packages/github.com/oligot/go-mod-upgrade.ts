@@ -6,18 +6,14 @@
  * @version `0.12.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install go-mod-upgrade`
- * @name `go-mod-upgrade`
+ * @install `launchpad install github.com/oligot/go-mod-upgrade`
+ * @dependencies `go.dev@~1.25.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gomodupgrade
- * // Or access via domain
- * const samePkg = pantry.githubcomoligotgomodupgrade
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomoligotgomodupgrade
  * console.log(pkg.name)        // "go-mod-upgrade"
  * console.log(pkg.description) // "Update outdated Go dependencies interactively"
  * console.log(pkg.programs)    // ["go-mod-upgrade"]
@@ -42,12 +38,14 @@ export const gomodupgradePackage = {
   description: 'Update outdated Go dependencies interactively' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/oligot/go-mod-upgrade/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/oligot/go-mod-upgrade' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install go-mod-upgrade' as const,
+  installCommand: 'launchpad install github.com/oligot/go-mod-upgrade' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/oligot/go-mod-upgrade -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/oligot/go-mod-upgrade' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const gomodupgradePackage = {
     'go-mod-upgrade',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.25.1',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,13 +71,7 @@ export const gomodupgradePackage = {
     '0.10.0',
     '0.9.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) go-mod-upgrade -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install go-mod-upgrade' as const,
 }
 
 export type GomodupgradePackage = typeof gomodupgradePackage

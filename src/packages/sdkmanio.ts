@@ -6,18 +6,15 @@
  * @version `5.20.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sdkman-init.sh`
- * @name `sdkman-init.sh`
+ * @install `launchpad install sdkman.io`
+ * @homepage https://sdkman.io
+ * @dependencies `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sdkmaninitsh
- * // Or access via domain
- * const samePkg = pantry.sdkmanio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sdkmanio
  * console.log(pkg.name)        // "sdkman-init.sh"
  * console.log(pkg.description) // "The SDKMAN! Command Line Interface"
  * console.log(pkg.programs)    // ["sdkman-init.sh"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sdkman-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sdkmaninitshPackage = {
+export const sdkmanioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const sdkmaninitshPackage = {
    */
   description: 'The SDKMAN! Command Line Interface' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sdkman.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://sdkman.io' as const,
+  githubUrl: 'https://github.com/sdkman/sdkman-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sdkman-init.sh' as const,
+  installCommand: 'launchpad install sdkman.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sdkman.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sdkman.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const sdkmaninitshPackage = {
     'sdkman-init.sh',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'curl.se',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -66,13 +71,7 @@ export const sdkmaninitshPackage = {
     '5.19.0',
     '5.18.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sdkman-init.sh -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sdkman-init.sh' as const,
 }
 
-export type SdkmaninitshPackage = typeof sdkmaninitshPackage
+export type SdkmanioPackage = typeof sdkmanioPackage

@@ -1,5 +1,5 @@
 /**
- * **gnome.org/gi-docgen** - pkgx package
+ * **gi-docgen** - pkgx package
  *
  * @domain `gnome.org/gi-docgen`
  * @version `2025.5.0` (4 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnomeorggidocgen
- * console.log(pkg.name)        // "gnome.org/gi-docgen"
+ * console.log(pkg.name)        // "gi-docgen"
  * console.log(pkg.versions[0]) // "2025.5.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const gnomeorggidocgenPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnome.org/gi-docgen' as const,
+  name: 'gi-docgen' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const gnomeorggidocgenPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/gi-docgen/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnome.org/gi-docgen' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/gi-docgen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnome.org/gi-docgen' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,8 +63,6 @@ export const gnomeorggidocgenPackage = {
     '2024.1.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/gi-docgen -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnome.org/gi-docgen' as const,
 }
 
 export type GnomeorggidocgenPackage = typeof gnomeorggidocgenPackage

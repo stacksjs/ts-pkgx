@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/gollum/gollum.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgollumgollumPackage = {
+export const gollumPackage = {
   /**
    * The display name of this package.
    */
@@ -76,4 +76,4 @@ export const githubcomgollumgollumPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgollumgollumPackage = typeof githubcomgollumgollumPackage
+export type GollumPackage = typeof gollumPackage

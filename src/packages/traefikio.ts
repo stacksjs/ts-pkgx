@@ -6,18 +6,15 @@
  * @version `3.5.3` (70 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install traefik`
- * @name `traefik`
+ * @install `launchpad install traefik.io`
+ * @homepage https://traefik.io/
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.traefik
- * // Or access via domain
- * const samePkg = pantry.traefikio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.traefikio
  * console.log(pkg.name)        // "traefik"
  * console.log(pkg.description) // "The Cloud Native Application Proxy"
  * console.log(pkg.programs)    // ["traefik"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/traefik-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const traefikPackage = {
+export const traefikioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const traefikPackage = {
    */
   description: 'The Cloud Native Application Proxy' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/traefik.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://traefik.io/' as const,
+  githubUrl: 'https://github.com/traefik/traefik' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install traefik' as const,
+  installCommand: 'launchpad install traefik.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +traefik.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install traefik.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const traefikPackage = {
     'traefik',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -133,13 +138,7 @@ export const traefikPackage = {
     '2.10.6',
     '2.10.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) traefik -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install traefik' as const,
 }
 
-export type TraefikPackage = typeof traefikPackage
+export type TraefikioPackage = typeof traefikioPackage

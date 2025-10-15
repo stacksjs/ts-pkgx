@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/AOMediaCodec/libavif.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomaomediacodeclibavifPackage = {
+export const libavifPackage = {
   /**
    * The display name of this package.
    */
@@ -84,4 +84,4 @@ export const githubcomaomediacodeclibavifPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomaomediacodeclibavifPackage = typeof githubcomaomediacodeclibavifPackage
+export type LibavifPackage = typeof libavifPackage

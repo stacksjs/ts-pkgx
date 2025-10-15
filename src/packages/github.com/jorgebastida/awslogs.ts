@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jorgebastida/awslogs.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjorgebastidaawslogsPackage = {
+export const awslogsPackage = {
   /**
    * The display name of this package.
    */
@@ -74,4 +74,4 @@ export const githubcomjorgebastidaawslogsPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjorgebastidaawslogsPackage = typeof githubcomjorgebastidaawslogsPackage
+export type AwslogsPackage = typeof awslogsPackage

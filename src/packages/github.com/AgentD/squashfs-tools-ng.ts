@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/AgentD/squashfs-tools-ng.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomagentdsquashfstoolsngPackage = {
+export const squashfstoolsngPackage = {
   /**
    * The display name of this package.
    */
@@ -81,4 +81,4 @@ export const githubcomagentdsquashfstoolsngPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomagentdsquashfstoolsngPackage = typeof githubcomagentdsquashfstoolsngPackage
+export type SquashfstoolsngPackage = typeof squashfstoolsngPackage

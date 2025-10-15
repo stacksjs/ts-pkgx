@@ -1,18 +1,19 @@
 /**
- * **nghttp2.org** - nghttp2 - HTTP/2 C Library and tools
+ * **nghttp2** - nghttp2 - HTTP/2 C Library and tools
  *
  * @domain `nghttp2.org`
  * @version `1.67.1` (20 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nghttp2.org`
+ * @homepage https://nghttp2.org
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.nghttp2org
- * console.log(pkg.name)        // "nghttp2.org"
+ * console.log(pkg.name)        // "nghttp2"
  * console.log(pkg.description) // "nghttp2 - HTTP/2 C Library and tools"
  * console.log(pkg.versions[0]) // "1.67.1" (latest)
  * ```
@@ -24,7 +25,7 @@ export const nghttp2orgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'nghttp2.org' as const,
+  name: 'nghttp2' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,13 +35,15 @@ export const nghttp2orgPackage = {
    */
   description: 'nghttp2 - HTTP/2 C Library and tools' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nghttp2.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://nghttp2.org' as const,
+  githubUrl: 'https://github.com/nghttp2/nghttp2' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install nghttp2.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nghttp2.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nghttp2.org' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -71,8 +74,6 @@ export const nghttp2orgPackage = {
     '1.51.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nghttp2.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install nghttp2.org' as const,
 }
 
 export type Nghttp2orgPackage = typeof nghttp2orgPackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/ChargePoint/xcparse.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomchargepointxcparsePackage = {
+export const xcparsePackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomchargepointxcparsePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomchargepointxcparsePackage = typeof githubcomchargepointxcparsePackage
+export type XcparsePackage = typeof xcparsePackage

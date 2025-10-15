@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/awslabs/eks-node-viewer.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomawslabseksnodeviewerPackage = {
+export const eksnodeviewerPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomawslabseksnodeviewerPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomawslabseksnodeviewerPackage = typeof githubcomawslabseksnodeviewerPackage
+export type EksnodeviewerPackage = typeof eksnodeviewerPackage

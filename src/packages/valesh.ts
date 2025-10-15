@@ -6,18 +6,15 @@
  * @version `3.12.0` (45 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install vale`
- * @name `vale`
+ * @install `launchpad install vale.sh`
+ * @homepage https://vale.sh/
+ * @dependencies `go.dev@~1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.vale
- * // Or access via domain
- * const samePkg = pantry.valesh
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.valesh
  * console.log(pkg.name)        // "vale"
  * console.log(pkg.description) // ":pencil: A markup-aware linter for prose built ..."
  * console.log(pkg.programs)    // ["vale"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/vale-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const valePackage = {
+export const valeshPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const valePackage = {
    */
   description: ':pencil: A markup-aware linter for prose built with speed and extensibility in mind.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/vale.sh/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://vale.sh/' as const,
+  githubUrl: 'https://github.com/errata-ai/vale' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install vale' as const,
+  installCommand: 'launchpad install vale.sh' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +vale.sh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vale.sh' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const valePackage = {
     'vale',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -108,13 +113,7 @@ export const valePackage = {
     '2.29.0',
     '2.28.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vale -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install vale' as const,
 }
 
-export type ValePackage = typeof valePackage
+export type ValeshPackage = typeof valeshPackage

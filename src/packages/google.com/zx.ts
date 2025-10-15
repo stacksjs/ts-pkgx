@@ -6,19 +6,15 @@
  * @version `8.8.4` (42 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install zx`
- * @name `zx`
+ * @install `launchpad install google.com/zx`
+ * @homepage https://google.github.io/zx/
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.zx
- * // Or access via domain
- * const samePkg = pantry.googlecomzx
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.googlecomzx
  * console.log(pkg.name)        // "zx"
  * console.log(pkg.description) // "A tool for writing better scripts"
  * console.log(pkg.programs)    // ["zx"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/google-com/zx.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zxPackage = {
+export const googlecomzxPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const zxPackage = {
    */
   description: 'A tool for writing better scripts' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/google.com/zx/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://google.github.io/zx/' as const,
+  githubUrl: 'https://github.com/google/zx' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install zx' as const,
+  installCommand: 'launchpad install google.com/zx' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +google.com/zx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install google.com/zx' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -112,13 +110,7 @@ export const zxPackage = {
     '7.2.3',
     '6.2.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zx -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install zx' as const,
 }
 
-export type ZxPackage = typeof zxPackage
+export type GooglecomzxPackage = typeof googlecomzxPackage

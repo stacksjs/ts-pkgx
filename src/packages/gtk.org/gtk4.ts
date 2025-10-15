@@ -6,19 +6,15 @@
  * @version `4.21.0` (52 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gtk4`
- * @name `gtk4`
+ * @install `launchpad install gtk.org/gtk4`
+ * @homepage https://gtk.org/
  * @dependencies `gnome.org/gdk-pixbuf^2.42`, `gnome.org/glib^2.78`, `gnome.org/librsvg^2.60 # since 4.19.2`, ... (+16 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gtk4
- * // Or access via domain
- * const samePkg = pantry.gtkorggtk4
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gtkorggtk4
  * console.log(pkg.name)        // "gtk4"
  * console.log(pkg.description) // "Toolkit for creating graphical user interfaces"
  * console.log(pkg.programs)    // ["gtk4-builder-tool", "gtk4-demo", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gtk-org/gtk4.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gtk4Package = {
+export const gtkorggtk4Package = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const gtk4Package = {
    */
   description: 'Toolkit for creating graphical user interfaces' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gtk.org/gtk4/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://gtk.org/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gtk4' as const,
+  installCommand: 'launchpad install gtk.org/gtk4' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gtk.org/gtk4 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gtk.org/gtk4' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -151,13 +149,7 @@ export const gtk4Package = {
     '4.13.4',
     '4.13.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gtk.org/gtk4 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gtk4' as const,
 }
 
-export type Gtk4Package = typeof gtk4Package
+export type Gtkorggtk4Package = typeof gtkorggtk4Package

@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Everduin94/better-commits.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomeverduin94bettercommitsPackage = {
+export const bettercommitsPackage = {
   /**
    * The display name of this package.
    */
@@ -88,4 +88,4 @@ export const githubcomeverduin94bettercommitsPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomeverduin94bettercommitsPackage = typeof githubcomeverduin94bettercommitsPackage
+export type BettercommitsPackage = typeof bettercommitsPackage

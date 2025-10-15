@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jjjake/internetarchive.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjjjakeinternetarchivePackage = {
+export const internetarchivePackage = {
   /**
    * The display name of this package.
    */
@@ -87,4 +87,4 @@ export const githubcomjjjakeinternetarchivePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjjjakeinternetarchivePackage = typeof githubcomjjjakeinternetarchivePackage
+export type InternetarchivePackage = typeof internetarchivePackage

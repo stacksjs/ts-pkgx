@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/anchore/grype.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomanchoregrypePackage = {
+export const grypePackage = {
   /**
    * The display name of this package.
    */
@@ -135,4 +135,4 @@ export const githubcomanchoregrypePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomanchoregrypePackage = typeof githubcomanchoregrypePackage
+export type GrypePackage = typeof grypePackage

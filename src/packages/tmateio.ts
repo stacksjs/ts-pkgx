@@ -6,19 +6,15 @@
  * @version `2.4.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install tmate`
- * @name `tmate`
+ * @install `launchpad install tmate.io`
+ * @homepage https://tmate.io/
  * @dependencies `libevent.org^2.0`, `invisible-island.net/ncurses@6`, `msgpack.org@6`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.tmate
- * // Or access via domain
- * const samePkg = pantry.tmateio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.tmateio
  * console.log(pkg.name)        // "tmate"
  * console.log(pkg.description) // "Instant Terminal Sharing"
  * console.log(pkg.programs)    // ["tmate"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tmate-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tmatePackage = {
+export const tmateioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const tmatePackage = {
    */
   description: 'Instant Terminal Sharing' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tmate.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://tmate.io/' as const,
+  githubUrl: 'https://github.com/tmate-io/tmate' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tmate' as const,
+  installCommand: 'launchpad install tmate.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tmate.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tmate.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,13 +72,7 @@ export const tmatePackage = {
   versions: [
     '2.4.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tmate -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tmate' as const,
 }
 
-export type TmatePackage = typeof tmatePackage
+export type TmateioPackage = typeof tmateioPackage

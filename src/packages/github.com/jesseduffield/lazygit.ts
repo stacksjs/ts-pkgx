@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jesseduffield/lazygit.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjesseduffieldlazygitPackage = {
+export const lazygitPackage = {
   /**
    * The display name of this package.
    */
@@ -104,4 +104,4 @@ export const githubcomjesseduffieldlazygitPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjesseduffieldlazygitPackage = typeof githubcomjesseduffieldlazygitPackage
+export type LazygitPackage = typeof lazygitPackage

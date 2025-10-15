@@ -6,19 +6,14 @@
  * @version `0.0.1.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install markitdown`
- * @name `markitdown`
+ * @install `launchpad install microsoft.com/markitdown`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.markitdown
- * // Or access via domain
- * const samePkg = pantry.microsoftcommarkitdown
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.microsoftcommarkitdown
  * console.log(pkg.name)        // "markitdown"
  * console.log(pkg.description) // "Python tool for converting files and office doc..."
  * console.log(pkg.programs)    // ["markitdown"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/microsoft-com/markitdown.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const markitdownPackage = {
+export const microsoftcommarkitdownPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const markitdownPackage = {
   description: 'Python tool for converting files and office documents to Markdown.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/markitdown/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/microsoft/markitdown' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install markitdown' as const,
+  installCommand: 'launchpad install microsoft.com/markitdown' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +microsoft.com/markitdown -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install microsoft.com/markitdown' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +68,7 @@ export const markitdownPackage = {
   versions: [
     '0.0.1.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) markitdown -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install markitdown' as const,
 }
 
-export type MarkitdownPackage = typeof markitdownPackage
+export type MicrosoftcommarkitdownPackage = typeof microsoftcommarkitdownPackage

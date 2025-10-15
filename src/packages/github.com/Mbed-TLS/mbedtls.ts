@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Mbed-TLS/mbedtls.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcommbedtlsmbedtlsPackage = {
+export const mbedtlsPackage = {
   /**
    * The display name of this package.
    */
@@ -82,4 +82,4 @@ export const githubcommbedtlsmbedtlsPackage = {
   aliases: [] as const,
 }
 
-export type GithubcommbedtlsmbedtlsPackage = typeof githubcommbedtlsmbedtlsPackage
+export type MbedtlsPackage = typeof mbedtlsPackage

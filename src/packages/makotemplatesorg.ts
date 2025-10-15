@@ -6,19 +6,15 @@
  * @version `1.3.10` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mako-render`
- * @name `mako-render`
+ * @install `launchpad install makotemplates.org`
+ * @homepage https://www.makotemplates.org
  * @dependencies `python.org~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.makorender
- * // Or access via domain
- * const samePkg = pantry.makotemplatesorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.makotemplatesorg
  * console.log(pkg.name)        // "mako-render"
  * console.log(pkg.description) // "Mako Templates for Python"
  * console.log(pkg.programs)    // ["mako-render"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/makotemplates-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const makorenderPackage = {
+export const makotemplatesorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const makorenderPackage = {
    */
   description: 'Mako Templates for Python' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/makotemplates.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.makotemplates.org' as const,
+  githubUrl: 'https://github.com/sqlalchemy/mako' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mako-render' as const,
+  installCommand: 'launchpad install makotemplates.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +makotemplates.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install makotemplates.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,13 +80,7 @@ export const makorenderPackage = {
     '1.3.0',
     '1.2.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mako-render -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mako-render' as const,
 }
 
-export type MakorenderPackage = typeof makorenderPackage
+export type MakotemplatesorgPackage = typeof makotemplatesorgPackage

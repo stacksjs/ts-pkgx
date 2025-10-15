@@ -6,18 +6,15 @@
  * @version `1.12.10` (64 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sing-box`
- * @name `sing-box`
+ * @install `launchpad install sing-box.app`
+ * @homepage https://sing-box.sagernet.org
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.singbox
- * // Or access via domain
- * const samePkg = pantry.singboxapp
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.singboxapp
  * console.log(pkg.name)        // "sing-box"
  * console.log(pkg.description) // "The universal proxy platform"
  * console.log(pkg.programs)    // ["sing-box"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sing-box-app.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const singboxPackage = {
+export const singboxappPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const singboxPackage = {
    */
   description: 'The universal proxy platform' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sing-box.app/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://sing-box.sagernet.org' as const,
+  githubUrl: 'https://github.com/SagerNet/sing-box' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sing-box' as const,
+  installCommand: 'launchpad install sing-box.app' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sing-box.app -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sing-box.app' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const singboxPackage = {
     'sing-box',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -127,13 +132,7 @@ export const singboxPackage = {
     '1.7.3',
     '1.7.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sing-box -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sing-box' as const,
 }
 
-export type SingboxPackage = typeof singboxPackage
+export type SingboxappPackage = typeof singboxappPackage

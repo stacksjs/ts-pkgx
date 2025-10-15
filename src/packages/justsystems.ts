@@ -6,18 +6,14 @@
  * @version `1.43.0` (47 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install just`
- * @name `just`
+ * @install `launchpad install just.systems`
+ * @homepage https://just.systems
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.just
- * // Or access via domain
- * const samePkg = pantry.justsystems
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.justsystems
  * console.log(pkg.name)        // "just"
  * console.log(pkg.description) // "Handy way to save and run project-specific comm..."
  * console.log(pkg.programs)    // ["just"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/just-systems.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const justPackage = {
+export const justsystemsPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const justPackage = {
    */
   description: 'Handy way to save and run project-specific commands' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/just.systems/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://just.systems' as const,
+  githubUrl: 'https://github.com/casey/just' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install just' as const,
+  installCommand: 'launchpad install just.systems' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +just.systems -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install just.systems' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -110,13 +108,7 @@ export const justPackage = {
     '1.8.0',
     '1.6.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) just -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install just' as const,
 }
 
-export type JustPackage = typeof justPackage
+export type JustsystemsPackage = typeof justsystemsPackage

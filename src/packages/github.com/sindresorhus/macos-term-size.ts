@@ -6,18 +6,13 @@
  * @version `1.0.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install term-size`
- * @name `term-size`
+ * @install `launchpad install github.com/sindresorhus/macos-term-size`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.termsize
- * // Or access via domain
- * const samePkg = pantry.githubcomsindresorhusmacostermsize
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomsindresorhusmacostermsize
  * console.log(pkg.name)        // "term-size"
  * console.log(pkg.description) // "Get the terminal window size on macOS"
  * console.log(pkg.programs)    // ["term-size"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/sindresorhus/macos-term-size.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const termsizePackage = {
+export const macostermsizePackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const termsizePackage = {
   description: 'Get the terminal window size on macOS' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/sindresorhus/macos-term-size/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/sindresorhus/macos-term-size' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install term-size' as const,
+  installCommand: 'launchpad install github.com/sindresorhus/macos-term-size' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/sindresorhus/macos-term-size -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/sindresorhus/macos-term-size' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +61,7 @@ export const termsizePackage = {
   versions: [
     '1.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) term-size -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install term-size' as const,
 }
 
-export type TermsizePackage = typeof termsizePackage
+export type MacostermsizePackage = typeof macostermsizePackage

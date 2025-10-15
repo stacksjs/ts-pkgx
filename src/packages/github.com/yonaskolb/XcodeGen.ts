@@ -6,18 +6,13 @@
  * @version `2.44.1` (14 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install xcodegen`
- * @name `xcodegen`
+ * @install `launchpad install github.com/yonaskolb/XcodeGen`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.xcodegen
- * // Or access via domain
- * const samePkg = pantry.githubcomyonaskolbxcodegen
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomyonaskolbxcodegen
  * console.log(pkg.name)        // "xcodegen"
  * console.log(pkg.description) // "Generate your Xcode project from a spec file an..."
  * console.log(pkg.programs)    // ["xcodegen"]
@@ -42,12 +37,14 @@ export const xcodegenPackage = {
   description: 'Generate your Xcode project from a spec file and your folder structure' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/yonaskolb/XcodeGen/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/yonaskolb/XcodeGen' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install xcodegen' as const,
+  installCommand: 'launchpad install github.com/yonaskolb/XcodeGen' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/yonaskolb/XcodeGen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/yonaskolb/XcodeGen' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,13 +74,7 @@ export const xcodegenPackage = {
     '2.36.0',
     '2.35.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xcodegen -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install xcodegen' as const,
 }
 
 export type XcodegenPackage = typeof xcodegenPackage

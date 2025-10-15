@@ -6,18 +6,14 @@
  * @version `0.9.2` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install tfupdate`
- * @name `tfupdate`
+ * @install `launchpad install github.com/minamijoyo/tfupdate`
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.tfupdate
- * // Or access via domain
- * const samePkg = pantry.githubcomminamijoyotfupdate
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomminamijoyotfupdate
  * console.log(pkg.name)        // "tfupdate"
  * console.log(pkg.description) // "Update version constraints in your Terraform co..."
  * console.log(pkg.programs)    // ["tfupdate"]
@@ -42,12 +38,14 @@ export const tfupdatePackage = {
   description: 'Update version constraints in your Terraform configurations' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/minamijoyo/tfupdate/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/minamijoyo/tfupdate' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tfupdate' as const,
+  installCommand: 'launchpad install github.com/minamijoyo/tfupdate' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/minamijoyo/tfupdate -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/minamijoyo/tfupdate' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const tfupdatePackage = {
     'tfupdate',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -72,13 +76,7 @@ export const tfupdatePackage = {
     '0.8.0',
     '0.7.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tfupdate -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tfupdate' as const,
 }
 
 export type TfupdatePackage = typeof tfupdatePackage

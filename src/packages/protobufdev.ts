@@ -1,24 +1,20 @@
 /**
- * **protoc** - Protocol Buffers - Google's data interchange format
+ * **Protocol Buffers** - Protocol Buffers - Google's data interchange format
  *
  * @domain `protobuf.dev`
  * @programs `protoc`
  * @version `32.1.0` (45 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install protoc`
- * @aliases `protoc`
+ * @install `launchpad install protobuf.dev`
+ * @homepage https://protobuf.dev/
  * @dependencies `zlib.net^1`, `abseil.io`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.protoc
- * // Or access via domain
- * const samePkg = pantry.protobufdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.protobufdev
  * console.log(pkg.name)        // "Protocol Buffers"
  * console.log(pkg.description) // "Protocol Buffers - Google's data interchange fo..."
  * console.log(pkg.programs)    // ["protoc"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/protobuf-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const protocPackage = {
+export const protobufdevPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const protocPackage = {
    */
   description: 'Protocol Buffers - Google\'s data interchange format' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/protobuf.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://protobuf.dev/' as const,
+  githubUrl: 'https://github.com/protocolbuffers/protobuf' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install protoc' as const,
+  installCommand: 'launchpad install protobuf.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +protobuf.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install protobuf.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -116,15 +114,7 @@ export const protocPackage = {
     '22.5.0',
     '21.12.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'protoc',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) protoc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install protoc' as const,
+  aliases: [] as const,
 }
 
-export type ProtocPackage = typeof protocPackage
+export type ProtobufdevPackage = typeof protobufdevPackage

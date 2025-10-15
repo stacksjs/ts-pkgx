@@ -6,19 +6,15 @@
  * @version `2.3.8` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install idn2`
- * @name `idn2`
+ * @install `launchpad install gnu.org/libidn2`
+ * @homepage https://www.gnu.org/software/libidn/#libidn2
  * @dependencies `gnu.org/gettext`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.idn2
- * // Or access via domain
- * const samePkg = pantry.gnuorglibidn2
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnuorglibidn2
  * console.log(pkg.name)        // "idn2"
  * console.log(pkg.description) // "International domain name library (IDNA2008, Pu..."
  * console.log(pkg.programs)    // ["idn2"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/libidn2.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const idn2Package = {
+export const gnuorglibidn2Package = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const idn2Package = {
    */
   description: 'International domain name library (IDNA2008, Punycode and TR46)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libidn2/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.gnu.org/software/libidn/#libidn2' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install idn2' as const,
+  installCommand: 'launchpad install gnu.org/libidn2' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/libidn2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/libidn2' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,13 +73,7 @@ export const idn2Package = {
     '2.3.5',
     '2.3.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) idn2 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install idn2' as const,
 }
 
-export type Idn2Package = typeof idn2Package
+export type Gnuorglibidn2Package = typeof gnuorglibidn2Package

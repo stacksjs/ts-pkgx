@@ -6,19 +6,15 @@
  * @version `3.0.74` (28 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install swagger-codegen`
- * @name `swagger-codegen`
+ * @install `launchpad install swagger.io/swagger-codegen`
+ * @homepage https://swagger.io/tools/swagger-codegen/
  * @dependencies `openjdk.org^11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.swaggercodegen
- * // Or access via domain
- * const samePkg = pantry.swaggerioswaggercodegen
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.swaggerioswaggercodegen
  * console.log(pkg.name)        // "swagger-codegen"
  * console.log(pkg.description) // "swagger-codegen contains a template-driven engi..."
  * console.log(pkg.programs)    // ["swagger-codegen"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/swagger-io/swagger-codegen.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const swaggercodegenPackage = {
+export const swaggerioswaggercodegenPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const swaggercodegenPackage = {
    */
   description: 'swagger-codegen contains a template-driven engine to generate documentation, API clients and server stubs in different languages by parsing your OpenAPI / Swagger definition.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/swagger.io/swagger-codegen/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://swagger.io/tools/swagger-codegen/' as const,
+  githubUrl: 'https://github.com/swagger-api/swagger-codegen' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install swagger-codegen' as const,
+  installCommand: 'launchpad install swagger.io/swagger-codegen' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +swagger.io/swagger-codegen -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install swagger.io/swagger-codegen' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -98,13 +96,7 @@ export const swaggercodegenPackage = {
     '2.4.42',
     '2.4.41',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) swagger-codegen -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install swagger-codegen' as const,
 }
 
-export type SwaggercodegenPackage = typeof swaggercodegenPackage
+export type SwaggerioswaggercodegenPackage = typeof swaggerioswaggercodegenPackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/antimatter15/alpaca-cpp.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomantimatter15alpacacppPackage = {
+export const alpacacppPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomantimatter15alpacacppPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomantimatter15alpacacppPackage = typeof githubcomantimatter15alpacacppPackage
+export type AlpacacppPackage = typeof alpacacppPackage

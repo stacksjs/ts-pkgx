@@ -6,19 +6,14 @@
  * @version `9.21.12` (22 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install bind9`
- * @name `bind9`
+ * @install `launchpad install isc.org/bind9`
  * @dependencies `gnome.org/libxml2@2.13`, `nghttp2.org@1.57`, `libuv.org@1.49`, ... (+10 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.bind9
- * // Or access via domain
- * const samePkg = pantry.iscorgbind9
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.iscorgbind9
  * console.log(pkg.name)        // "bind9"
  * console.log(pkg.programs)    // ["arpaname", "delv", ...]
  * console.log(pkg.versions[0]) // "9.21.12" (latest)
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/isc-org/bind9.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bind9Package = {
+export const iscorgbind9Package = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const bind9Package = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/isc.org/bind9/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install bind9' as const,
+  installCommand: 'launchpad install isc.org/bind9' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +isc.org/bind9 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install isc.org/bind9' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -132,13 +129,7 @@ export const bind9Package = {
     '9.18.36',
     '9.18.35',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +isc.org/bind9 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install bind9' as const,
 }
 
-export type Bind9Package = typeof bind9Package
+export type Iscorgbind9Package = typeof iscorgbind9Package

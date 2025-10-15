@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jasper-software/jasper.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjaspersoftwarejasperPackage = {
+export const jasperPackage = {
   /**
    * The display name of this package.
    */
@@ -85,4 +85,4 @@ export const githubcomjaspersoftwarejasperPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjaspersoftwarejasperPackage = typeof githubcomjaspersoftwarejasperPackage
+export type JasperPackage = typeof jasperPackage

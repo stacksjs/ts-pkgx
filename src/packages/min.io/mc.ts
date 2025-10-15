@@ -6,18 +6,15 @@
  * @version `2023.10.24.21.42.22` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mc`
- * @name `mc`
+ * @install `launchpad install min.io/mc`
+ * @homepage https://min.io/download
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mc
- * // Or access via domain
- * const samePkg = pantry.miniomc
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.miniomc
  * console.log(pkg.name)        // "mc"
  * console.log(pkg.description) // "Unix like utilities for object store"
  * console.log(pkg.programs)    // ["mc"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/min-io/mc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mcPackage = {
+export const miniomcPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const mcPackage = {
    */
   description: 'Unix like utilities for object store' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/min.io/mc/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://min.io/download' as const,
+  githubUrl: 'https://github.com/minio/mc' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mc' as const,
+  installCommand: 'launchpad install min.io/mc' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +min.io/mc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install min.io/mc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const mcPackage = {
     'mc',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +69,7 @@ export const mcPackage = {
   versions: [
     '2023.10.24.21.42.22',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mc' as const,
 }
 
-export type McPackage = typeof mcPackage
+export type MiniomcPackage = typeof miniomcPackage

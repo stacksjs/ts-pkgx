@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/adnanh/webhook.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomadnanhwebhookPackage = {
+export const webhookPackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomadnanhwebhookPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomadnanhwebhookPackage = typeof githubcomadnanhwebhookPackage
+export type WebhookPackage = typeof webhookPackage

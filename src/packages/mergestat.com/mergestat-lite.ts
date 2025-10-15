@@ -6,18 +6,15 @@
  * @version `0.6.2` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mergestat`
- * @name `mergestat`
+ * @install `launchpad install mergestat.com/mergestat-lite`
+ * @homepage https://mergestat.com/
+ * @dependencies `go.dev@^1.19`, `cmake.org`, `libgit2.org@~1.7`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mergestat
- * // Or access via domain
- * const samePkg = pantry.mergestatcommergestatlite
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.mergestatcommergestatlite
  * console.log(pkg.name)        // "mergestat"
  * console.log(pkg.description) // "Query git repositories with SQL. Generate repor..."
  * console.log(pkg.programs)    // ["mergestat"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mergestat-com/mergestat-lite.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mergestatPackage = {
+export const mergestatcommergestatlitePackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const mergestatPackage = {
    */
   description: 'Query git repositories with SQL. Generate reports, perform status checks, analyze codebases. 🔍 📊' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mergestat.com/mergestat-lite/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://mergestat.com/' as const,
   githubUrl: 'https://github.com/mergestat/mergestat-lite' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mergestat' as const,
+  installCommand: 'launchpad install mergestat.com/mergestat-lite' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mergestat.com/mergestat-lite -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mergestat.com/mergestat-lite' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,17 @@ export const mergestatPackage = {
     'mergestat',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.19',
+    'cmake.org',
+    'libgit2.org@~1.7',
+    'openssl.org',
+    'python.org@^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -65,13 +74,7 @@ export const mergestatPackage = {
     '0.6.2',
     '0.6.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mergestat -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mergestat' as const,
 }
 
-export type MergestatPackage = typeof mergestatPackage
+export type MergestatcommergestatlitePackage = typeof mergestatcommergestatlitePackage

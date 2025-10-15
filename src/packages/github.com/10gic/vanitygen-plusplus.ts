@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/10gic/vanitygen-plusplus.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcom10gicvanitygenplusplusPackage = {
+export const vanitygenplusplusPackage = {
   /**
    * The display name of this package.
    */
@@ -76,4 +76,4 @@ export const githubcom10gicvanitygenplusplusPackage = {
   aliases: [] as const,
 }
 
-export type Githubcom10gicvanitygenplusplusPackage = typeof githubcom10gicvanitygenplusplusPackage
+export type VanitygenplusplusPackage = typeof vanitygenplusplusPackage

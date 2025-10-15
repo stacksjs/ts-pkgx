@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/ZZROTDesign/docker-clean.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomzzrotdesigndockercleanPackage = {
+export const dockercleanPackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomzzrotdesigndockercleanPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomzzrotdesigndockercleanPackage = typeof githubcomzzrotdesigndockercleanPackage
+export type DockercleanPackage = typeof dockercleanPackage

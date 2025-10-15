@@ -1,5 +1,5 @@
 /**
- * **github.com/pyparsing/pyparsing** - Python library for creating PEG parsers
+ * **pyparsing** - Python library for creating PEG parsers
  *
  * @domain `github.com/pyparsing/pyparsing`
  * @version `3.2.5` (10 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcompyparsingpyparsing
- * console.log(pkg.name)        // "github.com/pyparsing/pyparsing"
+ * console.log(pkg.name)        // "pyparsing"
  * console.log(pkg.description) // "Python library for creating PEG parsers"
  * console.log(pkg.versions[0]) // "3.2.5" (latest)
  * ```
@@ -21,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/pyparsing/pyparsing.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcompyparsingpyparsingPackage = {
+export const pyparsingPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/pyparsing/pyparsing' as const,
+  name: 'pyparsing' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,6 +42,8 @@ export const githubcompyparsingpyparsingPackage = {
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/pyparsing/pyparsing' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/pyparsing/pyparsing -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/pyparsing/pyparsing' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -68,8 +70,6 @@ export const githubcompyparsingpyparsingPackage = {
     '3.1.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/pyparsing/pyparsing -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/pyparsing/pyparsing' as const,
 }
 
-export type GithubcompyparsingpyparsingPackage = typeof githubcompyparsingpyparsingPackage
+export type PyparsingPackage = typeof pyparsingPackage

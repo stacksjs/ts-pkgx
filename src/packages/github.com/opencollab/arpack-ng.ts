@@ -1,5 +1,5 @@
 /**
- * **github.com/opencollab/arpack-ng** - Collection of Fortran77 subroutines designed to solve large scale eigenvalue problems.
+ * **arpack-ng** - Collection of Fortran77 subroutines designed to solve large scale eigenvalue problems.
  *
  * @domain `github.com/opencollab/arpack-ng`
  * @version `3.9.1` (1 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomopencollabarpackng
- * console.log(pkg.name)        // "github.com/opencollab/arpack-ng"
+ * console.log(pkg.name)        // "arpack-ng"
  * console.log(pkg.description) // "Collection of Fortran77 subroutines designed to..."
  * console.log(pkg.versions[0]) // "3.9.1" (latest)
  * ```
@@ -21,11 +21,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/opencollab/arpack-ng.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomopencollabarpackngPackage = {
+export const arpackngPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/opencollab/arpack-ng' as const,
+  name: 'arpack-ng' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,12 +36,14 @@ export const githubcomopencollabarpackngPackage = {
   description: 'Collection of Fortran77 subroutines designed to solve large scale eigenvalue problems.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/opencollab/arpack-ng/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/opencollab/arpack-ng' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/opencollab/arpack-ng' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/opencollab/arpack-ng -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/opencollab/arpack-ng' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -62,8 +64,6 @@ export const githubcomopencollabarpackngPackage = {
     '3.9.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/opencollab/arpack-ng -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/opencollab/arpack-ng' as const,
 }
 
-export type GithubcomopencollabarpackngPackage = typeof githubcomopencollabarpackngPackage
+export type ArpackngPackage = typeof arpackngPackage

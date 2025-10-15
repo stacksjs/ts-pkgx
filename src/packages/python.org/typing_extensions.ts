@@ -1,18 +1,19 @@
 /**
- * **python.org/typing_extensions** - Backported and experimental type hints for Python
+ * **typing_extensions** - Backported and experimental type hints for Python
  *
  * @domain `python.org/typing_extensions`
  * @version `4.15.0` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install python.org/typing_extensions`
+ * @dependencies `flit.pypa.io`, `python.org@~3.11`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.pythonorgtyping_extensions
- * console.log(pkg.name)        // "python.org/typing_extensions"
+ * console.log(pkg.name)        // "typing_extensions"
  * console.log(pkg.description) // "Backported and experimental type hints for Python"
  * console.log(pkg.versions[0]) // "4.15.0" (latest)
  * ```
@@ -24,7 +25,7 @@ export const pythonorgtyping_extensionsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'python.org/typing_extensions' as const,
+  name: 'typing_extensions' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,15 +36,24 @@ export const pythonorgtyping_extensionsPackage = {
   description: 'Backported and experimental type hints for Python' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/python.org/typing_extensions/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/python/typing_extensions' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install python.org/typing_extensions' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +python.org/typing_extensions -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install python.org/typing_extensions' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'flit.pypa.io',
+    'python.org@~3.11',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,8 +74,6 @@ export const pythonorgtyping_extensionsPackage = {
     '4.8.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +python.org/typing_extensions -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install python.org/typing_extensions' as const,
 }
 
 export type Pythonorgtyping_extensionsPackage = typeof pythonorgtyping_extensionsPackage

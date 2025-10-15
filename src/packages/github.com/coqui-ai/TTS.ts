@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/coqui-ai/TTS.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcoquiaittsPackage = {
+export const ttsPackage = {
   /**
    * The display name of this package.
    */
@@ -107,4 +107,4 @@ export const githubcomcoquiaittsPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcoquiaittsPackage = typeof githubcomcoquiaittsPackage
+export type TtsPackage = typeof ttsPackage

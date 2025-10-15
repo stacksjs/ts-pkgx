@@ -6,18 +6,15 @@
  * @version `1.34.1` (120 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install kubectl`
- * @name `kubectl`
+ * @install `launchpad install kubernetes.io/kubectl`
+ * @homepage https://kubernetes.io/docs/reference/kubectl/
+ * @dependencies `go.dev@~1.24.4`, `gnu.org/coreutils@^9.1.0`, `gnu.org/bash@^5.1`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.kubectl
- * // Or access via domain
- * const samePkg = pantry.kubernetesiokubectl
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.kubernetesiokubectl
  * console.log(pkg.name)        // "kubectl"
  * console.log(pkg.description) // "Production-Grade Container Scheduling and Manag..."
  * console.log(pkg.programs)    // ["kubectl"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/kubernetes-io/kubectl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const kubectlPackage = {
+export const kubernetesiokubectlPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const kubectlPackage = {
    */
   description: 'Production-Grade Container Scheduling and Management' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/kubernetes.io/kubectl/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://kubernetes.io/docs/reference/kubectl/' as const,
+  githubUrl: 'https://github.com/kubernetes/kubernetes' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install kubectl' as const,
+  installCommand: 'launchpad install kubernetes.io/kubectl' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +kubernetes.io/kubectl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install kubernetes.io/kubectl' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,17 @@ export const kubectlPackage = {
     'kubectl',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.24.4',
+    'gnu.org/coreutils@^9.1.0',
+    'gnu.org/bash@^5.1',
+    'rsync.samba.org',
+    'curl.se',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -183,13 +192,7 @@ export const kubectlPackage = {
     '1.24.14',
     '1.24.12',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kubectl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install kubectl' as const,
 }
 
-export type KubectlPackage = typeof kubectlPackage
+export type KubernetesiokubectlPackage = typeof kubernetesiokubectlPackage

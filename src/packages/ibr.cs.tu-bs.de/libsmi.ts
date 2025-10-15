@@ -1,24 +1,21 @@
 /**
- * **smidiff** - Library to Access SMI MIB Information
+ * **smi** - Library to Access SMI MIB Information
  *
  * @domain `ibr.cs.tu-bs.de/libsmi`
  * @programs `smidiff`, `smidump`, `smilint`, `smiquery`, `smixlate`
  * @version `0.4.8` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install smidiff`
- * @name `smidiff`
+ * @install `launchpad install ibr.cs.tu-bs.de/libsmi`
+ * @homepage https://www.ibr.cs.tu-bs.de/projects/libsmi/
+ * @dependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/libtool`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.smidiff
- * // Or access via domain
- * const samePkg = pantry.ibrcstubsdelibsmi
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "smidiff"
+ * const pkg = pantry.ibrcstubsdelibsmi
+ * console.log(pkg.name)        // "smi"
  * console.log(pkg.description) // "Library to Access SMI MIB Information"
  * console.log(pkg.programs)    // ["smidiff", "smidump", ...]
  * console.log(pkg.versions[0]) // "0.4.8" (latest)
@@ -27,11 +24,11 @@
  * @see https://ts-pkgx.netlify.app/packages/ibr-cs-tu-bs-de/libsmi.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const smidiffPackage = {
+export const ibrcstubsdelibsmiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'smidiff' as const,
+  name: 'smi' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,13 +38,15 @@ export const smidiffPackage = {
    */
   description: 'Library to Access SMI MIB Information' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ibr.cs.tu-bs.de/libsmi/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.ibr.cs.tu-bs.de/projects/libsmi/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install smidiff' as const,
+  installCommand: 'launchpad install ibr.cs.tu-bs.de/libsmi' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ibr.cs.tu-bs.de/libsmi -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ibr.cs.tu-bs.de/libsmi' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -60,7 +59,15 @@ export const smidiffPackage = {
     'smixlate',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/libtool',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -68,13 +75,7 @@ export const smidiffPackage = {
   versions: [
     '0.4.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ibr.cs.tu-bs.de/libsmi -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install smidiff' as const,
 }
 
-export type SmidiffPackage = typeof smidiffPackage
+export type IbrcstubsdelibsmiPackage = typeof ibrcstubsdelibsmiPackage

@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jbeder/yaml-cpp.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjbederyamlcppPackage = {
+export const yamlcppPackage = {
   /**
    * The display name of this package.
    */
@@ -64,4 +64,4 @@ export const githubcomjbederyamlcppPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjbederyamlcppPackage = typeof githubcomjbederyamlcppPackage
+export type YamlcppPackage = typeof yamlcppPackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/containers/skopeo.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcontainersskopeoPackage = {
+export const skopeoPackage = {
   /**
    * The display name of this package.
    */
@@ -86,4 +86,4 @@ export const githubcomcontainersskopeoPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcontainersskopeoPackage = typeof githubcomcontainersskopeoPackage
+export type SkopeoPackage = typeof skopeoPackage

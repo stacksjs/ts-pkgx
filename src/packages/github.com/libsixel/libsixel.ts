@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/libsixel/libsixel.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomlibsixellibsixelPackage = {
+export const libsixelPackage = {
   /**
    * The display name of this package.
    */
@@ -75,4 +75,4 @@ export const githubcomlibsixellibsixelPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomlibsixellibsixelPackage = typeof githubcomlibsixellibsixelPackage
+export type LibsixelPackage = typeof libsixelPackage

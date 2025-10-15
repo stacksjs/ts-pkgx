@@ -6,19 +6,14 @@
  * @version `1.0.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gox`
- * @name `gox`
+ * @install `launchpad install github.com/mitchellh/gox`
  * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gox
- * // Or access via domain
- * const samePkg = pantry.githubcommitchellhgox
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcommitchellhgox
  * console.log(pkg.name)        // "gox"
  * console.log(pkg.description) // "A dead simple, no frills Go cross compile tool"
  * console.log(pkg.programs)    // ["gox"]
@@ -43,12 +38,14 @@ export const goxPackage = {
   description: 'A dead simple, no frills Go cross compile tool' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mitchellh/gox/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/mitchellh/gox' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gox' as const,
+  installCommand: 'launchpad install github.com/mitchellh/gox' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/mitchellh/gox -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/mitchellh/gox' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +68,7 @@ export const goxPackage = {
   versions: [
     '1.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gox -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gox' as const,
 }
 
 export type GoxPackage = typeof goxPackage

@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/keith/zap.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkeithzapPackage = {
+export const zapPackage = {
   /**
    * The display name of this package.
    */
@@ -65,4 +65,4 @@ export const githubcomkeithzapPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkeithzapPackage = typeof githubcomkeithzapPackage
+export type ZapPackage = typeof zapPackage

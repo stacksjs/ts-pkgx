@@ -1,5 +1,5 @@
 /**
- * **jpeg.org/jpegxl** - JPEG XL image format reference implementation
+ * **jpegxl** - JPEG XL image format reference implementation
  *
  * @domain `jpeg.org/jpegxl`
  * @programs `cjxl`, `djxl`, `jxlinfo`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jpeg.org/jpegxl`
+ * @homepage https://jpeg.org/jpegxl/index.html
  * @dependencies `github.com/google/brotli^1`, `littlecms.com^2.13`, `google.com/highway^1`, ... (+4 more)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.jpegorgjpegxl
- * console.log(pkg.name)        // "jpeg.org/jpegxl"
+ * console.log(pkg.name)        // "jpegxl"
  * console.log(pkg.description) // "JPEG XL image format reference implementation"
  * console.log(pkg.programs)    // ["cjxl", "djxl", ...]
  * console.log(pkg.versions[0]) // "0.11.1" (latest)
@@ -27,7 +28,7 @@ export const jpegorgjpegxlPackage = {
   /**
    * The display name of this package.
    */
-  name: 'jpeg.org/jpegxl' as const,
+  name: 'jpegxl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const jpegorgjpegxlPackage = {
    */
   description: 'JPEG XL image format reference implementation' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jpeg.org/jpegxl/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://jpeg.org/jpegxl/index.html' as const,
   githubUrl: 'https://github.com/libjxl/libjxl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install jpeg.org/jpegxl' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jpeg.org/jpegxl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jpeg.org/jpegxl' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -92,8 +95,6 @@ export const jpegorgjpegxlPackage = {
     '0.7.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jpeg.org/jpegxl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jpeg.org/jpegxl' as const,
 }
 
 export type JpegorgjpegxlPackage = typeof jpegorgjpegxlPackage

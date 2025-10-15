@@ -1,5 +1,5 @@
 /**
- * **wpewebkit.org/wpebackend-fdo** - pkgx package
+ * **wpebackend-fdo** - pkgx package
  *
  * @domain `wpewebkit.org/wpebackend-fdo`
  * @version `1.16.0` (4 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.wpewebkitorgwpebackendfdo
- * console.log(pkg.name)        // "wpewebkit.org/wpebackend-fdo"
+ * console.log(pkg.name)        // "wpebackend-fdo"
  * console.log(pkg.versions[0]) // "1.16.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const wpewebkitorgwpebackendfdoPackage = {
   /**
    * The display name of this package.
    */
-  name: 'wpewebkit.org/wpebackend-fdo' as const,
+  name: 'wpebackend-fdo' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const wpewebkitorgwpebackendfdoPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wpewebkit.org/wpebackend-fdo/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/Igalia/WPEBackend-fdo' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install wpewebkit.org/wpebackend-fdo' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wpewebkit.org/wpebackend-fdo -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wpewebkit.org/wpebackend-fdo' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -65,8 +67,6 @@ export const wpewebkitorgwpebackendfdoPackage = {
     '1.14.2',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wpewebkit.org/wpebackend-fdo -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install wpewebkit.org/wpebackend-fdo' as const,
 }
 
 export type WpewebkitorgwpebackendfdoPackage = typeof wpewebkitorgwpebackendfdoPackage

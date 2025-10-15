@@ -6,19 +6,15 @@
  * @version `0.11.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gpg-tui`
- * @name `gpg-tui`
+ * @install `launchpad install orhun.dev/gpg-tui`
+ * @homepage https://blog.orhun.dev/introducing-gpg-tui/
  * @dependencies `gnupg.org`, `gnupg.org/gpgme^1.12`, `gnupg.org/libgpg-error`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gpgtui
- * // Or access via domain
- * const samePkg = pantry.orhundevgpgtui
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.orhundevgpgtui
  * console.log(pkg.name)        // "gpg-tui"
  * console.log(pkg.description) // "Manage your GnuPG keys with ease! 🔐"
  * console.log(pkg.programs)    // ["gpg-tui"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/orhun-dev/gpg-tui.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gpgtuiPackage = {
+export const orhundevgpgtuiPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const gpgtuiPackage = {
    */
   description: 'Manage your GnuPG keys with ease! 🔐' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/orhun.dev/gpg-tui/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://blog.orhun.dev/introducing-gpg-tui/' as const,
+  githubUrl: 'https://github.com/orhun/gpg-tui' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gpg-tui' as const,
+  installCommand: 'launchpad install orhun.dev/gpg-tui' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +orhun.dev/gpg-tui -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install orhun.dev/gpg-tui' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,13 +74,7 @@ export const gpgtuiPackage = {
     '0.11.0',
     '0.10.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gpg-tui -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gpg-tui' as const,
 }
 
-export type GpgtuiPackage = typeof gpgtuiPackage
+export type OrhundevgpgtuiPackage = typeof orhundevgpgtuiPackage

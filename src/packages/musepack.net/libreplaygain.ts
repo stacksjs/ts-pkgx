@@ -1,18 +1,19 @@
 /**
- * **musepack.net/libreplaygain** - pkgx package
+ * **libreplaygain** - pkgx package
  *
  * @domain `musepack.net/libreplaygain`
  * @version `475.0.0` (1 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install musepack.net/libreplaygain`
+ * @dependencies `cmake.org`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.musepacknetlibreplaygain
- * console.log(pkg.name)        // "musepack.net/libreplaygain"
+ * console.log(pkg.name)        // "libreplaygain"
  * console.log(pkg.versions[0]) // "475.0.0" (latest)
  * ```
  *
@@ -23,7 +24,7 @@ export const musepacknetlibreplaygainPackage = {
   /**
    * The display name of this package.
    */
-  name: 'musepack.net/libreplaygain' as const,
+  name: 'libreplaygain' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,15 +35,25 @@ export const musepacknetlibreplaygainPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/musepack.net/libreplaygain/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install musepack.net/libreplaygain' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +musepack.net/libreplaygain -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install musepack.net/libreplaygain' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   */
+  dependencies: [
+    'cmake.org',
+    'linux:gnu.org/gcc',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -51,8 +62,6 @@ export const musepacknetlibreplaygainPackage = {
     '475.0.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +musepack.net/libreplaygain -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install musepack.net/libreplaygain' as const,
 }
 
 export type MusepacknetlibreplaygainPackage = typeof musepacknetlibreplaygainPackage

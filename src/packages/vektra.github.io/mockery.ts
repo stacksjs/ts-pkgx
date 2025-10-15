@@ -6,18 +6,15 @@
  * @version `3.5.5` (89 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mockery`
- * @name `mockery`
+ * @install `launchpad install vektra.github.io/mockery`
+ * @homepage https://vektra.github.io/mockery/
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mockery
- * // Or access via domain
- * const samePkg = pantry.vektragithubiomockery
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.vektragithubiomockery
  * console.log(pkg.name)        // "mockery"
  * console.log(pkg.description) // "Mock code autogenerator for Golang"
  * console.log(pkg.programs)    // ["mockery"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/vektra-github-io/mockery.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mockeryPackage = {
+export const vektragithubiomockeryPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const mockeryPackage = {
    */
   description: 'Mock code autogenerator for Golang' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/vektra.github.io/mockery/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://vektra.github.io/mockery/' as const,
+  githubUrl: 'https://github.com/vektra/mockery' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mockery' as const,
+  installCommand: 'launchpad install vektra.github.io/mockery' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +vektra.github.io/mockery -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vektra.github.io/mockery' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const mockeryPackage = {
     'mockery',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -152,13 +157,7 @@ export const mockeryPackage = {
     '2.32.0',
     '2.23.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mockery -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mockery' as const,
 }
 
-export type MockeryPackage = typeof mockeryPackage
+export type VektragithubiomockeryPackage = typeof vektragithubiomockeryPackage

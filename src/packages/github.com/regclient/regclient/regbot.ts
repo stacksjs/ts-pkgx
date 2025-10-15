@@ -6,19 +6,14 @@
  * @version `0.9.2` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install regbot`
- * @name `regbot`
+ * @install `launchpad install github.com/regclient/regclient/regbot`
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.regbot
- * // Or access via domain
- * const samePkg = pantry.githubcomregclientregclientregbot
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomregclientregclientregbot
  * console.log(pkg.name)        // "regbot"
  * console.log(pkg.description) // "Docker and OCI Registry Client in Go and toolin..."
  * console.log(pkg.programs)    // ["regbot"]
@@ -48,7 +43,9 @@ export const regbotPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install regbot' as const,
+  installCommand: 'launchpad install github.com/regclient/regclient/regbot' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/regclient/regclient/regbot -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/regclient/regclient/regbot' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -88,13 +85,7 @@ export const regbotPackage = {
     '0.5.3',
     '0.5.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) regbot -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install regbot' as const,
 }
 
 export type RegbotPackage = typeof regbotPackage

@@ -6,18 +6,14 @@
  * @version `0.21.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install jsonnet`
- * @name `jsonnet`
+ * @install `launchpad install jsonnet.org`
+ * @homepage http://jsonnet.org
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.jsonnet
- * // Or access via domain
- * const samePkg = pantry.jsonnetorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.jsonnetorg
  * console.log(pkg.name)        // "jsonnet"
  * console.log(pkg.description) // "Jsonnet - The data templating language"
  * console.log(pkg.programs)    // ["jsonnet", "jsonnetfmt"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/jsonnet-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jsonnetPackage = {
+export const jsonnetorgPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const jsonnetPackage = {
    */
   description: 'Jsonnet - The data templating language' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jsonnet.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://jsonnet.org' as const,
+  githubUrl: 'https://github.com/google/jsonnet' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install jsonnet' as const,
+  installCommand: 'launchpad install jsonnet.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jsonnet.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jsonnet.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,13 +64,7 @@ export const jsonnetPackage = {
     '0.21.0',
     '0.20.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jsonnet.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jsonnet' as const,
 }
 
-export type JsonnetPackage = typeof jsonnetPackage
+export type JsonnetorgPackage = typeof jsonnetorgPackage

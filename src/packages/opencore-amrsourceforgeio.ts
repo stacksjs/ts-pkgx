@@ -1,5 +1,5 @@
 /**
- * **opencore-amr.sourceforge.io** - pkgx package
+ * **opencore-amr.sourceforge** - pkgx package
  *
  * @domain `opencore-amr.sourceforge.io`
  * @version `0.1.6` (1 versions available)
@@ -12,7 +12,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.opencoreamrsourceforgeio
- * console.log(pkg.name)        // "opencore-amr.sourceforge.io"
+ * console.log(pkg.name)        // "opencore-amr.sourceforge"
  * console.log(pkg.versions[0]) // "0.1.6" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const opencoreamrsourceforgeioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'opencore-amr.sourceforge.io' as const,
+  name: 'opencore-amr.sourceforge' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,12 +34,14 @@ export const opencoreamrsourceforgeioPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/opencore-amr.sourceforge.io/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install opencore-amr.sourceforge.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +opencore-amr.sourceforge.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install opencore-amr.sourceforge.io' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -51,8 +53,6 @@ export const opencoreamrsourceforgeioPackage = {
     '0.1.6',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +opencore-amr.sourceforge.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install opencore-amr.sourceforge.io' as const,
 }
 
 export type OpencoreamrsourceforgeioPackage = typeof opencoreamrsourceforgeioPackage

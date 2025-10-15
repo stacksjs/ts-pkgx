@@ -1,5 +1,5 @@
 /**
- * **mysql.com** - MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.
+ * **mysql** - MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.
  *
  * @domain `mysql.com`
  * @programs `mysql_client_test`, `my_print_defaults`, `myisam_ftdump`, `myisamchk`, `myisamlog`, ... (+26 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mysql.com`
+ * @homepage http://www.mysql.com/
  * @dependencies `unicode.org^71`, `libevent.org^2`, `lz4.org^1`, ... (+8 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.mysqlcom
- * console.log(pkg.name)        // "mysql.com"
+ * console.log(pkg.name)        // "mysql"
  * console.log(pkg.description) // "MySQL Server, the world's most popular open sou..."
  * console.log(pkg.programs)    // ["mysql_client_test", "my_print_defaults", ...]
  * console.log(pkg.versions[0]) // "9.4.0" (latest)
@@ -27,7 +28,7 @@ export const mysqlcomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mysql.com' as const,
+  name: 'mysql' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const mysqlcomPackage = {
    */
   description: 'MySQL Server, the world\'s most popular open source database, and MySQL Cluster, a real-time, open source transactional database.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mysql.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://www.mysql.com/' as const,
+  githubUrl: 'https://github.com/mysql/mysql-server' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install mysql.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mysql.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mysql.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -134,8 +137,6 @@ export const mysqlcomPackage = {
     '8.0.32',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mysql.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mysql.com' as const,
 }
 
 export type MysqlcomPackage = typeof mysqlcomPackage

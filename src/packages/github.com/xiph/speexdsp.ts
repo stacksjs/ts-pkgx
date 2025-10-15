@@ -1,18 +1,20 @@
 /**
- * **github.com/xiph/speexdsp** - Speex audio processing library - THIS IS A MIRROR, DEVELOPMENT HAPPENS AT https://gitlab.xiph.org/xiph/speexdsp
+ * **speexdsp** - Speex audio processing library - THIS IS A MIRROR, DEVELOPMENT HAPPENS AT https://gitlab.xiph.org/xiph/speexdsp
  *
  * @domain `github.com/xiph/speexdsp`
  * @version `1.2.1` (1 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/xiph/speexdsp`
+ * @homepage https://speex.org
+ * @dependencies `gnu.org/autoconf`, `gnu.org/automake`, `gnu.org/libtool`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomxiphspeexdsp
- * console.log(pkg.name)        // "github.com/xiph/speexdsp"
+ * console.log(pkg.name)        // "speexdsp"
  * console.log(pkg.description) // "Speex audio processing library - THIS IS A MIRR..."
  * console.log(pkg.versions[0]) // "1.2.1" (latest)
  * ```
@@ -20,11 +22,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/xiph/speexdsp.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomxiphspeexdspPackage = {
+export const speexdspPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/xiph/speexdsp' as const,
+  name: 'speexdsp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,16 +36,29 @@ export const githubcomxiphspeexdspPackage = {
    */
   description: 'Speex audio processing library - THIS IS A MIRROR, DEVELOPMENT HAPPENS AT https://gitlab.xiph.org/xiph/speexdsp' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/xiph/speexdsp/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://speex.org' as const,
+  githubUrl: 'https://github.com/xiph/speexdsp' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/xiph/speexdsp' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/xiph/speexdsp -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/xiph/speexdsp' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   */
+  dependencies: [
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/libtool',
+    'linux:gnu.org/gcc',
+    'linux:gnu.org/make',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -52,8 +67,6 @@ export const githubcomxiphspeexdspPackage = {
     '1.2.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/xiph/speexdsp -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/xiph/speexdsp' as const,
 }
 
-export type GithubcomxiphspeexdspPackage = typeof githubcomxiphspeexdspPackage
+export type SpeexdspPackage = typeof speexdspPackage

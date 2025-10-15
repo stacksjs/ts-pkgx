@@ -6,19 +6,15 @@
  * @version `7.5.3` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pwsh`
- * @name `pwsh`
+ * @install `launchpad install microsoft.com/PowerShell`
+ * @homepage https://microsoft.com/PowerShell
  * @dependencies `openssl.org^1.1`, `linux:unicode.org^71` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pwsh
- * // Or access via domain
- * const samePkg = pantry.microsoftcompowershell
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.microsoftcompowershell
  * console.log(pkg.name)        // "pwsh"
  * console.log(pkg.description) // "PowerShell for every system!"
  * console.log(pkg.programs)    // ["pwsh"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/microsoft-com/PowerShell.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pwshPackage = {
+export const microsoftcompowershellPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const pwshPackage = {
    */
   description: 'PowerShell for every system!' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/PowerShell/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://microsoft.com/PowerShell' as const,
+  githubUrl: 'https://github.com/PowerShell/PowerShell' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pwsh' as const,
+  installCommand: 'launchpad install microsoft.com/PowerShell' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +microsoft.com/PowerShell -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install microsoft.com/PowerShell' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,13 +80,7 @@ export const pwshPackage = {
     '7.4.5',
     '7.2.24',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pwsh -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pwsh' as const,
 }
 
-export type PwshPackage = typeof pwshPackage
+export type MicrosoftcompowershellPackage = typeof microsoftcompowershellPackage

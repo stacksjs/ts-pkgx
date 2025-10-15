@@ -6,18 +6,15 @@
  * @version `10.4.0` (38 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install croc`
- * @name `croc`
+ * @install `launchpad install schollz.com/croc`
+ * @homepage https://schollz.com/software/croc6
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.croc
- * // Or access via domain
- * const samePkg = pantry.schollzcomcroc
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.schollzcomcroc
  * console.log(pkg.name)        // "croc"
  * console.log(pkg.description) // "Easily and securely send things from one comput..."
  * console.log(pkg.programs)    // ["croc"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/schollz-com/croc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const crocPackage = {
+export const schollzcomcrocPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const crocPackage = {
    */
   description: 'Easily and securely send things from one computer to another :crocodile: :package:' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/schollz.com/croc/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://schollz.com/software/croc6' as const,
+  githubUrl: 'https://github.com/schollz/croc' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install croc' as const,
+  installCommand: 'launchpad install schollz.com/croc' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +schollz.com/croc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install schollz.com/croc' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const crocPackage = {
     'croc',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -101,13 +106,7 @@ export const crocPackage = {
     '9.6.6',
     '9.6.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) croc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install croc' as const,
 }
 
-export type CrocPackage = typeof crocPackage
+export type SchollzcomcrocPackage = typeof schollzcomcrocPackage

@@ -6,19 +6,14 @@
  * @version `5.4.13` (99 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install node-build`
- * @name `node-build`
+ * @install `launchpad install github.com/nodenv/node-build`
  * @dependencies `openssl.org>=3.0.0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.nodebuild
- * // Or access via domain
- * const samePkg = pantry.githubcomnodenvnodebuild
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomnodenvnodebuild
  * console.log(pkg.name)        // "node-build"
  * console.log(pkg.description) // "Install NodeJS versions"
  * console.log(pkg.programs)    // ["node-build"]
@@ -43,12 +38,14 @@ export const nodebuildPackage = {
   description: 'Install NodeJS versions' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/nodenv/node-build/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/nodenv/node-build' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install node-build' as const,
+  installCommand: 'launchpad install github.com/nodenv/node-build' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/nodenv/node-build -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/nodenv/node-build' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -169,13 +166,7 @@ export const nodebuildPackage = {
     '4.9.114',
     '4.9.113',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) node-build -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install node-build' as const,
 }
 
 export type NodebuildPackage = typeof nodebuildPackage

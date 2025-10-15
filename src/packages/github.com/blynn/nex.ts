@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/blynn/nex.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomblynnnexPackage = {
+export const nexPackage = {
   /**
    * The display name of this package.
    */
@@ -73,4 +73,4 @@ export const githubcomblynnnexPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomblynnnexPackage = typeof githubcomblynnnexPackage
+export type NexPackage = typeof nexPackage

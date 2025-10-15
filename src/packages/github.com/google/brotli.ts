@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/google/brotli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgooglebrotliPackage = {
+export const brotliPackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomgooglebrotliPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgooglebrotliPackage = typeof githubcomgooglebrotliPackage
+export type BrotliPackage = typeof brotliPackage

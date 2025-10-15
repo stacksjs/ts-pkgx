@@ -6,19 +6,15 @@
  * @version `3.8.2` (34 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pandoc`
- * @name `pandoc`
+ * @install `launchpad install pandoc.org`
+ * @homepage https://pandoc.org/
  * @dependencies `gnu.org/gmp@6`, `zlib.net@1`, `sourceware.org/libffi@3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pandoc
- * // Or access via domain
- * const samePkg = pantry.pandocorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pandocorg
  * console.log(pkg.name)        // "pandoc"
  * console.log(pkg.description) // "Swiss-army knife of markup format conversion"
  * console.log(pkg.programs)    // ["pandoc"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pandoc-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pandocPackage = {
+export const pandocorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const pandocPackage = {
    */
   description: 'Swiss-army knife of markup format conversion' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pandoc.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://pandoc.org/' as const,
+  githubUrl: 'https://github.com/jgm/pandoc' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pandoc' as const,
+  installCommand: 'launchpad install pandoc.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pandoc.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pandoc.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -88,6 +86,13 @@ export const pandocPackage = {
     '3.2.1',
     '3.2.0',
     '3.1.13',
+    '3.1.12.3',
+    '3.1.12.2',
+    '3.1.12.1',
+    '3.1.12',
+    '3.1.11.1',
+    '3.1.11',
+    '3.1.10',
     '3.1.9',
     '3.1.8',
     '3.1.7',
@@ -97,22 +102,9 @@ export const pandocPackage = {
     '3.1.4',
     '3.1.3',
     '3.1.2',
-    '3.1.12.3',
-    '3.1.12.2',
-    '3.1.12.1',
-    '3.1.12',
-    '3.1.11.1',
-    '3.1.11',
-    '3.1.10',
     '2.19.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pandoc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pandoc' as const,
 }
 
-export type PandocPackage = typeof pandocPackage
+export type PandocorgPackage = typeof pandocorgPackage

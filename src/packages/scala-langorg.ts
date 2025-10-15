@@ -1,5 +1,5 @@
 /**
- * **scala-lang.org** - The Scala 3 compiler, also known as Dotty.
+ * **scala-lang** - The Scala 3 compiler, also known as Dotty.
  *
  * @domain `scala-lang.org`
  * @programs `scalac`, `scala`, `scala-cli`, `sbtn`, `amm`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install scala-lang.org`
+ * @homepage https://dotty.epfl.ch
  * @dependencies `openjdk.org`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.scalalangorg
- * console.log(pkg.name)        // "scala-lang.org"
+ * console.log(pkg.name)        // "scala-lang"
  * console.log(pkg.description) // "The Scala 3 compiler, also known as Dotty."
  * console.log(pkg.programs)    // ["scalac", "scala", ...]
  * console.log(pkg.versions[0]) // "3.7.3" (latest)
@@ -27,7 +28,7 @@ export const scalalangorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'scala-lang.org' as const,
+  name: 'scala-lang' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const scalalangorgPackage = {
    */
   description: 'The Scala 3 compiler, also known as Dotty.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/scala-lang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://dotty.epfl.ch' as const,
+  githubUrl: 'https://github.com/scala/scala3' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install scala-lang.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +scala-lang.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install scala-lang.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,8 +85,6 @@ export const scalalangorgPackage = {
     '3.3.5',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +scala-lang.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install scala-lang.org' as const,
 }
 
 export type ScalalangorgPackage = typeof scalalangorgPackage

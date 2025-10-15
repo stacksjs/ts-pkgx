@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/gofireflyio/aiac.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgofireflyioaiacPackage = {
+export const aiacPackage = {
   /**
    * The display name of this package.
    */
@@ -88,4 +88,4 @@ export const githubcomgofireflyioaiacPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgofireflyioaiacPackage = typeof githubcomgofireflyioaiacPackage
+export type AiacPackage = typeof aiacPackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/OSGeo/libgeotiff.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomosgeolibgeotiffPackage = {
+export const libgeotiffPackage = {
   /**
    * The display name of this package.
    */
@@ -78,4 +78,4 @@ export const githubcomosgeolibgeotiffPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomosgeolibgeotiffPackage = typeof githubcomosgeolibgeotiffPackage
+export type LibgeotiffPackage = typeof libgeotiffPackage

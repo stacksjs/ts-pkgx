@@ -6,18 +6,14 @@
  * @version `0.9.33` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install liblmdb`
- * @name `liblmdb`
+ * @install `launchpad install openldap.org/liblmdb`
+ * @homepage https://www.symas.com/symas-embedded-database-lmdb
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.liblmdb
- * // Or access via domain
- * const samePkg = pantry.openldaporgliblmdb
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.openldaporgliblmdb
  * console.log(pkg.name)        // "liblmdb"
  * console.log(pkg.description) // "Lightning memory-mapped database: key-value dat..."
  * console.log(pkg.programs)    // ["mdb_copy", "mdb_dump", ...]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/openldap-org/liblmdb.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const liblmdbPackage = {
+export const openldaporgliblmdbPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const liblmdbPackage = {
    */
   description: 'Lightning memory-mapped database: key-value data store' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openldap.org/liblmdb/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.symas.com/symas-embedded-database-lmdb' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install liblmdb' as const,
+  installCommand: 'launchpad install openldap.org/liblmdb' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openldap.org/liblmdb -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openldap.org/liblmdb' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,13 +65,7 @@ export const liblmdbPackage = {
   versions: [
     '0.9.33',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openldap.org/liblmdb -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install liblmdb' as const,
 }
 
-export type LiblmdbPackage = typeof liblmdbPackage
+export type OpenldaporgliblmdbPackage = typeof openldaporgliblmdbPackage

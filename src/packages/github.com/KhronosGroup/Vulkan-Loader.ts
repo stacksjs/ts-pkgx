@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/KhronosGroup/Vulkan-Loader.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkhronosgroupvulkanloaderPackage = {
+export const vulkanloaderPackage = {
   /**
    * The display name of this package.
    */
@@ -134,4 +134,4 @@ export const githubcomkhronosgroupvulkanloaderPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkhronosgroupvulkanloaderPackage = typeof githubcomkhronosgroupvulkanloaderPackage
+export type VulkanloaderPackage = typeof vulkanloaderPackage

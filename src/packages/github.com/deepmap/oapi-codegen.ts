@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/deepmap/oapi-codegen.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomdeepmapoapicodegenPackage = {
+export const oapicodegenPackage = {
   /**
    * The display name of this package.
    */
@@ -73,4 +73,4 @@ export const githubcomdeepmapoapicodegenPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomdeepmapoapicodegenPackage = typeof githubcomdeepmapoapicodegenPackage
+export type OapicodegenPackage = typeof oapicodegenPackage

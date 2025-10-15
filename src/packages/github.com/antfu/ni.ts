@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/antfu/ni.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomantfuniPackage = {
+export const niPackage = {
   /**
    * The display name of this package.
    */
@@ -104,4 +104,4 @@ export const githubcomantfuniPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomantfuniPackage = typeof githubcomantfuniPackage
+export type NiPackage = typeof niPackage

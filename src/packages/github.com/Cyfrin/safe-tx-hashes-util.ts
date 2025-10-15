@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Cyfrin/safe-tx-hashes-util.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcyfrinsafetxhashesutilPackage = {
+export const safetxhashesutilPackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomcyfrinsafetxhashesutilPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcyfrinsafetxhashesutilPackage = typeof githubcomcyfrinsafetxhashesutilPackage
+export type SafetxhashesutilPackage = typeof safetxhashesutilPackage

@@ -6,19 +6,15 @@
  * @version `0.7.3` (19 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install terratag`
- * @name `terratag`
+ * @install `launchpad install terratag.io`
+ * @homepage https://terratag.io
  * @dependencies `terraform.io>=0.12`, `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.terratag
- * // Or access via domain
- * const samePkg = pantry.terratagio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.terratagio
  * console.log(pkg.name)        // "terratag"
  * console.log(pkg.description) // "Terratag is a CLI tool that enables users of Te..."
  * console.log(pkg.programs)    // ["terratag"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/terratag-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const terratagPackage = {
+export const terratagioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const terratagPackage = {
    */
   description: 'Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags across their entire set of AWS, Azure, and GCP resources' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/terratag.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://terratag.io' as const,
+  githubUrl: 'https://github.com/env0/terratag' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install terratag' as const,
+  installCommand: 'launchpad install terratag.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +terratag.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install terratag.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -90,13 +88,7 @@ export const terratagPackage = {
     '0.3.0',
     '0.2.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) terratag -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install terratag' as const,
 }
 
-export type TerratagPackage = typeof terratagPackage
+export type TerratagioPackage = typeof terratagioPackage

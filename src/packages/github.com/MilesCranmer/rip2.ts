@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/MilesCranmer/rip2.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcommilescranmerrip2Package = {
+export const rip2Package = {
   /**
    * The display name of this package.
    */
@@ -69,4 +69,4 @@ export const githubcommilescranmerrip2Package = {
   aliases: [] as const,
 }
 
-export type Githubcommilescranmerrip2Package = typeof githubcommilescranmerrip2Package
+export type Rip2Package = typeof rip2Package

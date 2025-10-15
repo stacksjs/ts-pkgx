@@ -6,19 +6,15 @@
  * @version `1.11.7` (26 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sbt`
- * @name `sbt`
+ * @install `launchpad install scala-sbt.org`
+ * @homepage https://www.scala-sbt.org/
  * @dependencies `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sbt
- * // Or access via domain
- * const samePkg = pantry.scalasbtorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.scalasbtorg
  * console.log(pkg.name)        // "sbt"
  * console.log(pkg.description) // "sbt, the interactive build tool"
  * console.log(pkg.programs)    // ["sbt"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/scala-sbt-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sbtPackage = {
+export const scalasbtorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const sbtPackage = {
    */
   description: 'sbt, the interactive build tool' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/scala-sbt.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.scala-sbt.org/' as const,
+  githubUrl: 'https://github.com/sbt/sbt' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sbt' as const,
+  installCommand: 'launchpad install scala-sbt.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +scala-sbt.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install scala-sbt.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -96,13 +94,7 @@ export const sbtPackage = {
     '1.9.4',
     '1.9.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sbt -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sbt' as const,
 }
 
-export type SbtPackage = typeof sbtPackage
+export type ScalasbtorgPackage = typeof scalasbtorgPackage

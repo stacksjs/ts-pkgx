@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/MinseokOh/toml-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomminseokohtomlcliPackage = {
+export const tomlcliPackage = {
   /**
    * The display name of this package.
    */
@@ -73,4 +73,4 @@ export const githubcomminseokohtomlcliPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomminseokohtomlcliPackage = typeof githubcomminseokohtomlcliPackage
+export type TomlcliPackage = typeof tomlcliPackage

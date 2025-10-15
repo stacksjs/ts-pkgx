@@ -6,19 +6,15 @@
  * @version `2.1.1` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install taglib-config`
- * @name `taglib-config`
+ * @install `launchpad install taglib.org`
+ * @homepage https://taglib.org/
  * @dependencies `zlib.net^1`, `github.com/nemtrif/utfcpp^4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.taglibconfig
- * // Or access via domain
- * const samePkg = pantry.tagliborg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.tagliborg
  * console.log(pkg.name)        // "taglib-config"
  * console.log(pkg.description) // "TagLib Audio Meta-Data Library"
  * console.log(pkg.programs)    // ["taglib-config"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/taglib-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const taglibconfigPackage = {
+export const tagliborgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const taglibconfigPackage = {
    */
   description: 'TagLib Audio Meta-Data Library' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/taglib.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://taglib.org/' as const,
+  githubUrl: 'https://github.com/taglib/taglib' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install taglib-config' as const,
+  installCommand: 'launchpad install taglib.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +taglib.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install taglib.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,13 +75,7 @@ export const taglibconfigPackage = {
     '2.0.0',
     '1.13.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) taglib-config -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install taglib-config' as const,
 }
 
-export type TaglibconfigPackage = typeof taglibconfigPackage
+export type TagliborgPackage = typeof tagliborgPackage

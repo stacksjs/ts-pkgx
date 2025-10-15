@@ -6,19 +6,15 @@
  * @version `1.57.0` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pango`
- * @name `pango`
+ * @install `launchpad install gnome.org/pango`
+ * @homepage https://www.gtk.org/docs/architecture/pango
  * @dependencies `cairographics.org^1.18`, `freetype.org@2`, `gnome.org/glib@2`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pango
- * // Or access via domain
- * const samePkg = pantry.gnomeorgpango
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnomeorgpango
  * console.log(pkg.name)        // "pango"
  * console.log(pkg.description) // "Framework for layout and rendering of i18n text"
  * console.log(pkg.programs)    // ["pango-list", "pango-segmentation", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/pango.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pangoPackage = {
+export const gnomeorgpangoPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const pangoPackage = {
    */
   description: 'Framework for layout and rendering of i18n text' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/pango/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.gtk.org/docs/architecture/pango' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pango' as const,
+  installCommand: 'launchpad install gnome.org/pango' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/pango -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnome.org/pango' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -93,13 +91,7 @@ export const pangoPackage = {
     '1.50.14',
     '1.50.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/pango -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pango' as const,
 }
 
-export type PangoPackage = typeof pangoPackage
+export type GnomeorgpangoPackage = typeof gnomeorgpangoPackage

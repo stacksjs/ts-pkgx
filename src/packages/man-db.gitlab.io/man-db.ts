@@ -6,19 +6,14 @@
  * @version `2.13.1` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install man-db`
- * @name `man-db`
+ * @install `launchpad install man-db.gitlab.io/man-db`
  * @dependencies `libpipeline.gitlab.io/libpipeline`, `gnu.org/groff`, `linux:gnu.org/gdbm` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mandb
- * // Or access via domain
- * const samePkg = pantry.mandbgitlabiomandb
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.mandbgitlabiomandb
  * console.log(pkg.name)        // "man-db"
  * console.log(pkg.programs)    // ["apropos", "catman", ...]
  * console.log(pkg.versions[0]) // "2.13.1" (latest)
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/man-db-gitlab-io/man-db.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mandbPackage = {
+export const mandbgitlabiomandbPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const mandbPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/man-db.gitlab.io/man-db/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install man-db' as const,
+  installCommand: 'launchpad install man-db.gitlab.io/man-db' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +man-db.gitlab.io/man-db -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install man-db.gitlab.io/man-db' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,13 +81,7 @@ export const mandbPackage = {
     '2.12.0',
     '2.11.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +man-db.gitlab.io/man-db -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install man-db' as const,
 }
 
-export type MandbPackage = typeof mandbPackage
+export type MandbgitlabiomandbPackage = typeof mandbgitlabiomandbPackage

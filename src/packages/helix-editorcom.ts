@@ -1,37 +1,29 @@
 /**
- * **hx** - A post-modern modal text editor.
+ * **helix-editor** - pkgx package
  *
  * @domain `helix-editor.com`
- * @programs `hx`
  * @version `25.7.1` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install hx`
- * @name `hx`
+ * @install `launchpad install helix-editor.com`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.hx
- * // Or access via domain
- * const samePkg = pantry.helixeditorcom
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "hx"
- * console.log(pkg.description) // "A post-modern modal text editor."
- * console.log(pkg.programs)    // ["hx"]
+ * const pkg = pantry.helixeditorcom
+ * console.log(pkg.name)        // "helix-editor"
  * console.log(pkg.versions[0]) // "25.7.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/helix-editor-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const hxPackage = {
+export const helixeditorcomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'hx' as const,
+  name: 'helix-editor' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -39,22 +31,18 @@ export const hxPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A post-modern modal text editor.' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/helix-editor.com/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install hx' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'hx',
-  ] as const,
+  installCommand: 'launchpad install helix-editor.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +helix-editor.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install helix-editor.com' as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   /**
@@ -73,13 +61,7 @@ export const hxPackage = {
     '23.3.0',
     '22.12.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hx -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install hx' as const,
 }
 
-export type HxPackage = typeof hxPackage
+export type HelixeditorcomPackage = typeof helixeditorcomPackage

@@ -1,5 +1,5 @@
 /**
- * **gnu.org/diffutils** - File comparison utilities
+ * **diffutils** - File comparison utilities
  *
  * @domain `gnu.org/diffutils`
  * @programs `cmp`, `diff`, `diff3`, `sdiff`
@@ -7,13 +7,14 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/diffutils`
+ * @homepage https://www.gnu.org/software/diffutils/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgdiffutils
- * console.log(pkg.name)        // "gnu.org/diffutils"
+ * console.log(pkg.name)        // "diffutils"
  * console.log(pkg.description) // "File comparison utilities"
  * console.log(pkg.programs)    // ["cmp", "diff", ...]
  * console.log(pkg.versions[0]) // "3.12.0" (latest)
@@ -26,7 +27,7 @@ export const gnuorgdiffutilsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/diffutils' as const,
+  name: 'diffutils' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,13 +37,15 @@ export const gnuorgdiffutilsPackage = {
    */
   description: 'File comparison utilities' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/diffutils/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.gnu.org/software/diffutils/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnu.org/diffutils' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/diffutils -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/diffutils' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,8 +68,6 @@ export const gnuorgdiffutilsPackage = {
     '3.2.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/diffutils -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/diffutils' as const,
 }
 
 export type GnuorgdiffutilsPackage = typeof gnuorgdiffutilsPackage

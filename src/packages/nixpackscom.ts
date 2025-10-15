@@ -6,18 +6,14 @@
  * @version `1.40.0` (34 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install nixpacks`
- * @name `nixpacks`
+ * @install `launchpad install nixpacks.com`
+ * @homepage https://nixpacks.com/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.nixpacks
- * // Or access via domain
- * const samePkg = pantry.nixpackscom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.nixpackscom
  * console.log(pkg.name)        // "nixpacks"
  * console.log(pkg.description) // "App source + Nix packages + Docker = Image"
  * console.log(pkg.programs)    // ["nixpacks"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/nixpacks-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nixpacksPackage = {
+export const nixpackscomPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const nixpacksPackage = {
    */
   description: 'App source + Nix packages + Docker = Image' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nixpacks.com/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://nixpacks.com/' as const,
   githubUrl: 'https://github.com/railwayapp/nixpacks' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install nixpacks' as const,
+  installCommand: 'launchpad install nixpacks.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nixpacks.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nixpacks.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -97,13 +95,7 @@ export const nixpacksPackage = {
     '1.21.1',
     '1.21.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nixpacks -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install nixpacks' as const,
 }
 
-export type NixpacksPackage = typeof nixpacksPackage
+export type NixpackscomPackage = typeof nixpackscomPackage

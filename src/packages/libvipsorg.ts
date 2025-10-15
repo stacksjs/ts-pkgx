@@ -6,19 +6,15 @@
  * @version `8.17.2` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install vips`
- * @name `vips`
+ * @install `launchpad install libvips.org`
+ * @homepage https://libvips.github.io/libvips/
  * @dependencies `mozilla.org/mozjpeg`, `cairographics.org`, `heasarc.gsfc.nasa.gov/cfitsio`, ... (+24 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.vips
- * // Or access via domain
- * const samePkg = pantry.libvipsorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.libvipsorg
  * console.log(pkg.name)        // "vips"
  * console.log(pkg.description) // "A fast image processing library with low memory..."
  * console.log(pkg.programs)    // ["vips", "vipsedit", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libvips-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const vipsPackage = {
+export const libvipsorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const vipsPackage = {
    */
   description: 'A fast image processing library with low memory needs.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libvips.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://libvips.github.io/libvips/' as const,
+  githubUrl: 'https://github.com/libvips/libvips' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install vips' as const,
+  installCommand: 'launchpad install libvips.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libvips.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libvips.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -111,13 +109,7 @@ export const vipsPackage = {
     '8.15.0',
     '8.14.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libvips.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install vips' as const,
 }
 
-export type VipsPackage = typeof vipsPackage
+export type LibvipsorgPackage = typeof libvipsorgPackage

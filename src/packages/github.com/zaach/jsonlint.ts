@@ -6,19 +6,15 @@
  * @version `1.6.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install jsonlint`
- * @name `jsonlint`
+ * @install `launchpad install github.com/zaach/jsonlint`
+ * @homepage http://zaach.github.com/jsonlint/
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.jsonlint
- * // Or access via domain
- * const samePkg = pantry.githubcomzaachjsonlint
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomzaachjsonlint
  * console.log(pkg.name)        // "jsonlint"
  * console.log(pkg.description) // "A JSON parser and validator with a CLI."
  * console.log(pkg.programs)    // ["jsonlint"]
@@ -42,13 +38,15 @@ export const jsonlintPackage = {
    */
   description: 'A JSON parser and validator with a CLI.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zaach/jsonlint/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://zaach.github.com/jsonlint/' as const,
+  githubUrl: 'https://github.com/zaach/jsonlint' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install jsonlint' as const,
+  installCommand: 'launchpad install github.com/zaach/jsonlint' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/zaach/jsonlint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/zaach/jsonlint' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +69,7 @@ export const jsonlintPackage = {
   versions: [
     '1.6.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jsonlint -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jsonlint' as const,
 }
 
 export type JsonlintPackage = typeof jsonlintPackage

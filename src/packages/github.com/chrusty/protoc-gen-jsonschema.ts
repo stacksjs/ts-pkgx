@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/chrusty/protoc-gen-jsonschema.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomchrustyprotocgenjsonschemaPackage = {
+export const protocgenjsonschemaPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomchrustyprotocgenjsonschemaPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomchrustyprotocgenjsonschemaPackage = typeof githubcomchrustyprotocgenjsonschemaPackage
+export type ProtocgenjsonschemaPackage = typeof protocgenjsonschemaPackage

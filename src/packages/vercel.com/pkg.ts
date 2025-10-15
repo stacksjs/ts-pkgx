@@ -6,19 +6,15 @@
  * @version `5.8.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pkg`
- * @name `pkg`
+ * @install `launchpad install vercel.com/pkg`
+ * @homepage https://npmjs.com/pkg
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pkg
- * // Or access via domain
- * const samePkg = pantry.vercelcompkg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.vercelcompkg
  * console.log(pkg.name)        // "pkg"
  * console.log(pkg.description) // "Package your Node.js project into an executable"
  * console.log(pkg.programs)    // ["pkg"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/vercel-com/pkg.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pkgPackage = {
+export const vercelcompkgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const pkgPackage = {
    */
   description: 'Package your Node.js project into an executable' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/vercel.com/pkg/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://npmjs.com/pkg' as const,
+  githubUrl: 'https://github.com/vercel/pkg' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pkg' as const,
+  installCommand: 'launchpad install vercel.com/pkg' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +vercel.com/pkg -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vercel.com/pkg' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +69,7 @@ export const pkgPackage = {
   versions: [
     '5.8.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pkg -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pkg' as const,
 }
 
-export type PkgPackage = typeof pkgPackage
+export type VercelcompkgPackage = typeof vercelcompkgPackage

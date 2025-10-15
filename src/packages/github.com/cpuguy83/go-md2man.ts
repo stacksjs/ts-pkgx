@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/cpuguy83/go-md2man.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcpuguy83gomd2manPackage = {
+export const gomd2manPackage = {
   /**
    * The display name of this package.
    */
@@ -76,4 +76,4 @@ export const githubcomcpuguy83gomd2manPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomcpuguy83gomd2manPackage = typeof githubcomcpuguy83gomd2manPackage
+export type Gomd2manPackage = typeof gomd2manPackage

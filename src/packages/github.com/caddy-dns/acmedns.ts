@@ -20,7 +20,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/caddy-dns/acmedns.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcaddydnsacmednsPackage = {
+export const acmednsPackage = {
   /**
    * The display name of this package.
    */
@@ -64,4 +64,4 @@ export const githubcomcaddydnsacmednsPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcaddydnsacmednsPackage = typeof githubcomcaddydnsacmednsPackage
+export type AcmednsPackage = typeof acmednsPackage

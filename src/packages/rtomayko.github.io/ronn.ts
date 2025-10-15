@@ -6,19 +6,15 @@
  * @version `0.7.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ronn`
- * @name `ronn`
+ * @install `launchpad install rtomayko.github.io/ronn`
+ * @homepage http://rtomayko.github.com/ronn/
  * @dependencies `ruby-lang.org^3.1`, `rubygems.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ronn
- * // Or access via domain
- * const samePkg = pantry.rtomaykogithubioronn
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.rtomaykogithubioronn
  * console.log(pkg.name)        // "ronn"
  * console.log(pkg.description) // "the opposite of roff"
  * console.log(pkg.programs)    // ["ronn"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rtomayko-github-io/ronn.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ronnPackage = {
+export const rtomaykogithubioronnPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const ronnPackage = {
    */
   description: 'the opposite of roff' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rtomayko.github.io/ronn/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://rtomayko.github.com/ronn/' as const,
+  githubUrl: 'https://github.com/rtomayko/ronn' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ronn' as const,
+  installCommand: 'launchpad install rtomayko.github.io/ronn' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rtomayko.github.io/ronn -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rtomayko.github.io/ronn' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +70,7 @@ export const ronnPackage = {
   versions: [
     '0.7.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ronn -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ronn' as const,
 }
 
-export type RonnPackage = typeof ronnPackage
+export type RtomaykogithubioronnPackage = typeof rtomaykogithubioronnPackage

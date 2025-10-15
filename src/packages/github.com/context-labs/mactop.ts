@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/context-labs/mactop.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcontextlabsmactopPackage = {
+export const mactopPackage = {
   /**
    * The display name of this package.
    */
@@ -77,4 +77,4 @@ export const githubcomcontextlabsmactopPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcontextlabsmactopPackage = typeof githubcomcontextlabsmactopPackage
+export type MactopPackage = typeof mactopPackage

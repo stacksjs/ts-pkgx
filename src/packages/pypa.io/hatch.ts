@@ -6,19 +6,15 @@
  * @version `1.27.0` (17 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install hatch`
- * @name `hatch`
+ * @install `launchpad install pypa.io/hatch`
+ * @homepage https://hatch.pypa.io/latest/
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.hatch
- * // Or access via domain
- * const samePkg = pantry.pypaiohatch
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pypaiohatch
  * console.log(pkg.name)        // "hatch"
  * console.log(pkg.description) // "Modern, extensible Python project management"
  * console.log(pkg.programs)    // ["hatch", "hatchling"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pypa-io/hatch.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const hatchPackage = {
+export const pypaiohatchPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const hatchPackage = {
    */
   description: 'Modern, extensible Python project management' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pypa.io/hatch/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://hatch.pypa.io/latest/' as const,
+  githubUrl: 'https://github.com/pypa/hatch' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install hatch' as const,
+  installCommand: 'launchpad install pypa.io/hatch' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pypa.io/hatch -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pypa.io/hatch' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -88,13 +86,7 @@ export const hatchPackage = {
     '1.22.0',
     '1.21.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pypa.io/hatch -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install hatch' as const,
 }
 
-export type HatchPackage = typeof hatchPackage
+export type PypaiohatchPackage = typeof pypaiohatchPackage

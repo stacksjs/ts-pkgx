@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/julienXX/terminal-notifier.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjulienxxterminalnotifierPackage = {
+export const terminalnotifierPackage = {
   /**
    * The display name of this package.
    */
@@ -64,4 +64,4 @@ export const githubcomjulienxxterminalnotifierPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjulienxxterminalnotifierPackage = typeof githubcomjulienxxterminalnotifierPackage
+export type TerminalnotifierPackage = typeof terminalnotifierPackage

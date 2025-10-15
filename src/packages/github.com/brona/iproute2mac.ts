@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/brona/iproute2mac.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcombronaiproute2macPackage = {
+export const iproute2macPackage = {
   /**
    * The display name of this package.
    */
@@ -79,4 +79,4 @@ export const githubcombronaiproute2macPackage = {
   aliases: [] as const,
 }
 
-export type Githubcombronaiproute2macPackage = typeof githubcombronaiproute2macPackage
+export type Iproute2macPackage = typeof iproute2macPackage

@@ -6,18 +6,14 @@
  * @version `1.16.0` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install numbat`
- * @name `numbat`
+ * @install `launchpad install numbat.dev`
+ * @homepage https://numbat.dev
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.numbat
- * // Or access via domain
- * const samePkg = pantry.numbatdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.numbatdev
  * console.log(pkg.name)        // "numbat"
  * console.log(pkg.description) // "A statically typed programming language for sci..."
  * console.log(pkg.programs)    // ["numbat"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/numbat-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const numbatPackage = {
+export const numbatdevPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const numbatPackage = {
    */
   description: 'A statically typed programming language for scientific computations with first class support for physical dimensions and units' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/numbat.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://numbat.dev' as const,
+  githubUrl: 'https://github.com/sharkdp/numbat' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install numbat' as const,
+  installCommand: 'launchpad install numbat.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +numbat.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install numbat.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +71,7 @@ export const numbatPackage = {
     '1.9.0',
     '1.8.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) numbat -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install numbat' as const,
 }
 
-export type NumbatPackage = typeof numbatPackage
+export type NumbatdevPackage = typeof numbatdevPackage

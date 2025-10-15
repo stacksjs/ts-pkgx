@@ -1,5 +1,5 @@
 /**
- * **x.org/xaw** - pkgx package
+ * **xaw** - pkgx package
  *
  * @domain `x.org/xaw`
  * @version `1.0.16` (2 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgxaw
- * console.log(pkg.name)        // "x.org/xaw"
+ * console.log(pkg.name)        // "xaw"
  * console.log(pkg.versions[0]) // "1.0.16" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgxawPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xaw' as const,
+  name: 'xaw' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const xorgxawPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xaw/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install x.org/xaw' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xaw -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/xaw' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -63,8 +65,6 @@ export const xorgxawPackage = {
     '1.0.15',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xaw -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install x.org/xaw' as const,
 }
 
 export type XorgxawPackage = typeof xorgxawPackage

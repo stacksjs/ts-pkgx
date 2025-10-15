@@ -6,18 +6,14 @@
  * @version `1.33.3` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mpg123`
- * @name `mpg123`
+ * @install `launchpad install mpg123.de`
+ * @homepage https://www.mpg123.de/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mpg123
- * // Or access via domain
- * const samePkg = pantry.mpg123de
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.mpg123de
  * console.log(pkg.name)        // "mpg123"
  * console.log(pkg.description) // "MP3 player for Linux and UNIX"
  * console.log(pkg.programs)    // ["mpg123"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mpg123-de.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mpg123Package = {
+export const mpg123dePackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const mpg123Package = {
    */
   description: 'MP3 player for Linux and UNIX' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mpg123.de/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.mpg123.de/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mpg123' as const,
+  installCommand: 'launchpad install mpg123.de' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mpg123.de -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mpg123.de' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -81,13 +79,7 @@ export const mpg123Package = {
     '1.31.4',
     '1.31.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mpg123 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mpg123' as const,
 }
 
-export type Mpg123Package = typeof mpg123Package
+export type Mpg123dePackage = typeof mpg123dePackage

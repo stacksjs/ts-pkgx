@@ -6,19 +6,14 @@
  * @version `20250625.0.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install whisper`
- * @name `whisper`
+ * @install `launchpad install openai.com/whisper`
  * @dependencies `python.org~3.11`, `ffmpeg.org^6.1`, `huggingface.co^0.19`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.whisper
- * // Or access via domain
- * const samePkg = pantry.openaicomwhisper
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.openaicomwhisper
  * console.log(pkg.name)        // "whisper"
  * console.log(pkg.description) // "Robust Speech Recognition via Large-Scale Weak ..."
  * console.log(pkg.programs)    // ["whisper"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/openai-com/whisper.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const whisperPackage = {
+export const openaicomwhisperPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const whisperPackage = {
   description: 'Robust Speech Recognition via Large-Scale Weak Supervision' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openai.com/whisper/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/openai/whisper' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install whisper' as const,
+  installCommand: 'launchpad install openai.com/whisper' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openai.com/whisper -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openai.com/whisper' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,13 +74,7 @@ export const whisperPackage = {
     '20240927.0.0',
     '20231117.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) whisper -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install whisper' as const,
 }
 
-export type WhisperPackage = typeof whisperPackage
+export type OpenaicomwhisperPackage = typeof openaicomwhisperPackage

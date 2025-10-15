@@ -6,18 +6,13 @@
  * @version `2.13.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install blueutil`
- * @name `blueutil`
+ * @install `launchpad install github.com/toy/blueutil`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.blueutil
- * // Or access via domain
- * const samePkg = pantry.githubcomtoyblueutil
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomtoyblueutil
  * console.log(pkg.name)        // "blueutil"
  * console.log(pkg.description) // "CLI for bluetooth on OSX: power, discoverable s..."
  * console.log(pkg.programs)    // ["blueutil"]
@@ -47,7 +42,9 @@ export const blueutilPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install blueutil' as const,
+  installCommand: 'launchpad install github.com/toy/blueutil' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/toy/blueutil -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/toy/blueutil' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -68,13 +65,7 @@ export const blueutilPackage = {
     '2.10.0',
     '2.9.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) blueutil -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install blueutil' as const,
 }
 
 export type BlueutilPackage = typeof blueutilPackage

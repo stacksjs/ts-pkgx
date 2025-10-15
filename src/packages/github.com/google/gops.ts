@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/google/gops.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgooglegopsPackage = {
+export const gopsPackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomgooglegopsPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgooglegopsPackage = typeof githubcomgooglegopsPackage
+export type GopsPackage = typeof gopsPackage

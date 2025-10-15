@@ -6,20 +6,15 @@
  * @version `0.98.0` (63 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install projen`
- * @name `projen`
+ * @install `launchpad install projen.io`
+ * @homepage https://projen.io
  * @dependencies `nodejs.org^22 || ^20 || ^18`
- * @companions `git-scm.org`, `classic.yarnpkg.com`, `maven.apache.org`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.projen
- * // Or access via domain
- * const samePkg = pantry.projenio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.projenio
  * console.log(pkg.name)        // "projen"
  * console.log(pkg.description) // "Rapidly build modern applications with advanced..."
  * console.log(pkg.programs)    // ["projen"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/projen-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const projenPackage = {
+export const projenioPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const projenPackage = {
    */
   description: 'Rapidly build modern applications with advanced configuration management' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/projen.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://projen.io' as const,
+  githubUrl: 'https://github.com/projen/projen' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install projen' as const,
+  installCommand: 'launchpad install projen.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +projen.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install projen.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,17 +54,7 @@ export const projenPackage = {
   programs: [
     'projen',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'git-scm.org',
-    'classic.yarnpkg.com',
-    'maven.apache.org',
-    'python.org',
-    'go.dev',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -144,13 +131,7 @@ export const projenPackage = {
     '0.91.7',
     '0.91.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) projen -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install projen' as const,
 }
 
-export type ProjenPackage = typeof projenPackage
+export type ProjenioPackage = typeof projenioPackage

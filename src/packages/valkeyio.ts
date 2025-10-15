@@ -6,19 +6,15 @@
  * @version `8.1.4` (19 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install valkey`
- * @name `valkey`
+ * @install `launchpad install valkey.io`
+ * @homepage https://valkey.io
  * @dependencies `openssl.org^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.valkey
- * // Or access via domain
- * const samePkg = pantry.valkeyio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.valkeyio
  * console.log(pkg.name)        // "valkey"
  * console.log(pkg.description) // "A flexible distributed key-value datastore that..."
  * console.log(pkg.programs)    // ["valkey-server", "valkey-cli", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/valkey-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const valkeyPackage = {
+export const valkeyioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const valkeyPackage = {
    */
   description: 'A flexible distributed key-value datastore that is optimized for caching and other realtime workloads.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/valkey.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://valkey.io' as const,
+  githubUrl: 'https://github.com/valkey-io/valkey' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install valkey' as const,
+  installCommand: 'launchpad install valkey.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +valkey.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install valkey.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -91,13 +89,7 @@ export const valkeyPackage = {
     '7.2.6',
     '7.2.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +valkey.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install valkey' as const,
 }
 
-export type ValkeyPackage = typeof valkeyPackage
+export type ValkeyioPackage = typeof valkeyioPackage

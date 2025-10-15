@@ -1,5 +1,5 @@
 /**
- * **gts.sourceforge.net** - GNU triangulated surface library
+ * **gts.sourceforge** - GNU triangulated surface library
  *
  * @domain `gts.sourceforge.net`
  * @programs `delaunay`, `gts2dxf`, `gts2oogl`, `gts2stl`, `gtscheck`, ... (+4 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gts.sourceforge.net`
+ * @homepage https://gts.sourceforge.net/
  * @dependencies `gnome.org/glib>=2.4.0`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gtssourceforgenet
- * console.log(pkg.name)        // "gts.sourceforge.net"
+ * console.log(pkg.name)        // "gts.sourceforge"
  * console.log(pkg.description) // "GNU triangulated surface library"
  * console.log(pkg.programs)    // ["delaunay", "gts2dxf", ...]
  * console.log(pkg.versions[0]) // "0.7.6" (latest)
@@ -27,7 +28,7 @@ export const gtssourceforgenetPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gts.sourceforge.net' as const,
+  name: 'gts.sourceforge' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const gtssourceforgenetPackage = {
    */
   description: 'GNU triangulated surface library' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gts.sourceforge.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://gts.sourceforge.net/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gts.sourceforge.net' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gts.sourceforge.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gts.sourceforge.net' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,8 +78,6 @@ export const gtssourceforgenetPackage = {
     '0.7.6',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gts.sourceforge.net -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gts.sourceforge.net' as const,
 }
 
 export type GtssourceforgenetPackage = typeof gtssourceforgenetPackage

@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/linux-test-project/lcov.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomlinuxtestprojectlcovPackage = {
+export const lcovPackage = {
   /**
    * The display name of this package.
    */
@@ -87,4 +87,4 @@ export const githubcomlinuxtestprojectlcovPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomlinuxtestprojectlcovPackage = typeof githubcomlinuxtestprojectlcovPackage
+export type LcovPackage = typeof lcovPackage

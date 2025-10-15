@@ -6,19 +6,14 @@
  * @version `1.1.406` (53 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pyright`
- * @name `pyright`
+ * @install `launchpad install microsoft.com/pyright`
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pyright
- * // Or access via domain
- * const samePkg = pantry.microsoftcompyright
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.microsoftcompyright
  * console.log(pkg.name)        // "pyright"
  * console.log(pkg.description) // "Static Type Checker for Python"
  * console.log(pkg.programs)    // ["pyright"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/microsoft-com/pyright.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pyrightPackage = {
+export const microsoftcompyrightPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const pyrightPackage = {
   description: 'Static Type Checker for Python' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/pyright/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/microsoft/pyright' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pyright' as const,
+  installCommand: 'launchpad install microsoft.com/pyright' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +microsoft.com/pyright -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install microsoft.com/pyright' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -123,13 +120,7 @@ export const pyrightPackage = {
     '1.1.355',
     '1.1.354',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pyright -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pyright' as const,
 }
 
-export type PyrightPackage = typeof pyrightPackage
+export type MicrosoftcompyrightPackage = typeof microsoftcompyrightPackage

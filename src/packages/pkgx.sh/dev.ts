@@ -6,19 +6,14 @@
  * @version `1.8.1` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install dev`
- * @name `dev`
+ * @install `launchpad install pkgx.sh/dev`
  * @dependencies `pkgx.sh^1,^2.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dev
- * // Or access via domain
- * const samePkg = pantry.pkgxshdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pkgxshdev
  * console.log(pkg.name)        // "dev"
  * console.log(pkg.description) // "isolated `dev` environments"
  * console.log(pkg.programs)    // ["dev"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pkgx-sh/dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const devPackage = {
+export const pkgxshdevPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const devPackage = {
   description: 'isolated `dev` environments' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/dev/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/pkgxdev/dev' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install dev' as const,
+  installCommand: 'launchpad install pkgx.sh/dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pkgx.sh/dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pkgx.sh/dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,13 +79,7 @@ export const devPackage = {
     '1.0.1',
     '1.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dev -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install dev' as const,
 }
 
-export type DevPackage = typeof devPackage
+export type PkgxshdevPackage = typeof pkgxshdevPackage

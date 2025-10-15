@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/alexellis/k3sup.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomalexellisk3supPackage = {
+export const k3supPackage = {
   /**
    * The display name of this package.
    */
@@ -81,4 +81,4 @@ export const githubcomalexellisk3supPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomalexellisk3supPackage = typeof githubcomalexellisk3supPackage
+export type K3supPackage = typeof k3supPackage

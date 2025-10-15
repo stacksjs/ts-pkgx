@@ -6,18 +6,14 @@
  * @version `0.5.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install md2html`
- * @name `md2html`
+ * @install `launchpad install github.com/mity/md4c`
+ * @dependencies `cmake.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.md2html
- * // Or access via domain
- * const samePkg = pantry.githubcommitymd4c
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcommitymd4c
  * console.log(pkg.name)        // "md2html"
  * console.log(pkg.description) // "C Markdown parser. Fast. SAX-like interface. Co..."
  * console.log(pkg.programs)    // ["md2html"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/mity/md4c.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const md2htmlPackage = {
+export const md4cPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const md2htmlPackage = {
   description: 'C Markdown parser. Fast. SAX-like interface. Compliant to CommonMark specification.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mity/md4c/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/mity/md4c' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install md2html' as const,
+  installCommand: 'launchpad install github.com/mity/md4c' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/mity/md4c -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/mity/md4c' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const md2htmlPackage = {
     'md2html',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,13 +71,7 @@ export const md2htmlPackage = {
     '0.5.0',
     '0.4.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) md2html -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install md2html' as const,
 }
 
-export type Md2htmlPackage = typeof md2htmlPackage
+export type Md4cPackage = typeof md4cPackage

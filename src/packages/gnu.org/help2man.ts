@@ -6,8 +6,8 @@
  * @version `1.49.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install help2man`
- * @name `help2man`
+ * @install `launchpad install gnu.org/help2man`
+ * @homepage https://www.gnu.org/software/help2man/
  * @dependencies `gnu.org/gettext`, `perl.org^5.38 # perl modules require matching minors`
  * @companions `PERL5LIB^{{prefix}}/lib/perl5:{{prefix}}/libexec/lib/perl5:$PERL5LIB`
  *
@@ -15,11 +15,7 @@
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.help2man
- * // Or access via domain
- * const samePkg = pantry.gnuorghelp2man
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnuorghelp2man
  * console.log(pkg.name)        // "help2man"
  * console.log(pkg.description) // "Automatically generate simple man pages"
  * console.log(pkg.programs)    // ["help2man"]
@@ -29,7 +25,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/help2man.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const help2manPackage = {
+export const gnuorghelp2manPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +39,15 @@ export const help2manPackage = {
    */
   description: 'Automatically generate simple man pages' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/help2man/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.gnu.org/software/help2man/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install help2man' as const,
+  installCommand: 'launchpad install gnu.org/help2man' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/help2man -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/help2man' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,13 +77,7 @@ export const help2manPackage = {
   versions: [
     '1.49.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) help2man -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install help2man' as const,
 }
 
-export type Help2manPackage = typeof help2manPackage
+export type Gnuorghelp2manPackage = typeof gnuorghelp2manPackage

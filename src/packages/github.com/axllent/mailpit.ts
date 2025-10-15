@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/axllent/mailpit.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomaxllentmailpitPackage = {
+export const mailpitPackage = {
   /**
    * The display name of this package.
    */
@@ -152,4 +152,4 @@ export const githubcomaxllentmailpitPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomaxllentmailpitPackage = typeof githubcomaxllentmailpitPackage
+export type MailpitPackage = typeof mailpitPackage

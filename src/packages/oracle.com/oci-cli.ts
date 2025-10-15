@@ -6,19 +6,15 @@
  * @version `3.68.0` (83 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install oci`
- * @name `oci`
+ * @install `launchpad install oracle.com/oci-cli`
+ * @homepage https://docs.cloud.oracle.com/iaas/Content/API/Concepts/cliconcepts.htm
  * @dependencies `certifi.io/python-certifi^2024`, `pyyaml.org/libyaml^0.2`, `cryptography.io^42`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.oci
- * // Or access via domain
- * const samePkg = pantry.oraclecomocicli
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.oraclecomocicli
  * console.log(pkg.name)        // "oci"
  * console.log(pkg.description) // "Command Line Interface for Oracle Cloud Infrast..."
  * console.log(pkg.programs)    // ["oci"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/oracle-com/oci-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ociPackage = {
+export const oraclecomocicliPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const ociPackage = {
    */
   description: 'Command Line Interface for Oracle Cloud Infrastructure' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/oracle.com/oci-cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docs.cloud.oracle.com/iaas/Content/API/Concepts/cliconcepts.htm' as const,
+  githubUrl: 'https://github.com/oracle/oci-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install oci' as const,
+  installCommand: 'launchpad install oracle.com/oci-cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +oracle.com/oci-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install oracle.com/oci-cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -156,13 +154,7 @@ export const ociPackage = {
     '3.37.13',
     '3.37.12',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) oci -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install oci' as const,
 }
 
-export type OciPackage = typeof ociPackage
+export type OraclecomocicliPackage = typeof oraclecomocicliPackage

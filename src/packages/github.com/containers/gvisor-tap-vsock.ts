@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/containers/gvisor-tap-vsock.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcontainersgvisortapvsockPackage = {
+export const gvisortapvsockPackage = {
   /**
    * The display name of this package.
    */
@@ -87,4 +87,4 @@ export const githubcomcontainersgvisortapvsockPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcontainersgvisortapvsockPackage = typeof githubcomcontainersgvisortapvsockPackage
+export type GvisortapvsockPackage = typeof gvisortapvsockPackage

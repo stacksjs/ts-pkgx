@@ -6,18 +6,15 @@
  * @version `1.27.2` (50 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install istioctl`
- * @name `istioctl`
+ * @install `launchpad install istio.io`
+ * @homepage https://istio.io/
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.istioctl
- * // Or access via domain
- * const samePkg = pantry.istioio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.istioio
  * console.log(pkg.name)        // "istioctl"
  * console.log(pkg.description) // "Connect, secure, control, and observe services."
  * console.log(pkg.programs)    // ["istioctl"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/istio-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const istioctlPackage = {
+export const istioioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const istioctlPackage = {
    */
   description: 'Connect, secure, control, and observe services.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/istio.io/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://istio.io/' as const,
   githubUrl: 'https://github.com/istio/istio' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install istioctl' as const,
+  installCommand: 'launchpad install istio.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +istio.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install istio.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const istioctlPackage = {
     'istioctl',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -113,13 +118,7 @@ export const istioctlPackage = {
     '1.19.10',
     '1.19.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) istioctl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install istioctl' as const,
 }
 
-export type IstioctlPackage = typeof istioctlPackage
+export type IstioioPackage = typeof istioioPackage

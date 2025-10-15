@@ -6,18 +6,13 @@
  * @version `2.5.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install swift-sh`
- * @name `swift-sh`
+ * @install `launchpad install github.com/mxcl/swift-sh`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.swiftsh
- * // Or access via domain
- * const samePkg = pantry.githubcommxclswiftsh
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcommxclswiftsh
  * console.log(pkg.name)        // "swift-sh"
  * console.log(pkg.description) // "Easily script with third-party Swift dependencies."
  * console.log(pkg.programs)    // ["swift-sh"]
@@ -42,12 +37,14 @@ export const swiftshPackage = {
   description: 'Easily script with third-party Swift dependencies.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mxcl/swift-sh/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/mxcl/swift-sh' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install swift-sh' as const,
+  installCommand: 'launchpad install github.com/mxcl/swift-sh' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/mxcl/swift-sh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/mxcl/swift-sh' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,13 +62,7 @@ export const swiftshPackage = {
     '2.5.0',
     '2.4.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) swift-sh -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install swift-sh' as const,
 }
 
 export type SwiftshPackage = typeof swiftshPackage

@@ -6,19 +6,15 @@
  * @version `0.55.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gource`
- * @name `gource`
+ * @install `launchpad install gource.io`
+ * @homepage https://gource.io
  * @dependencies `boost.org^1.82`, `freetype.org^2`, `libpng.org^1.6`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gource
- * // Or access via domain
- * const samePkg = pantry.gourceio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gourceio
  * console.log(pkg.name)        // "gource"
  * console.log(pkg.description) // "software version control visualization"
  * console.log(pkg.programs)    // ["gource"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gource-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gourcePackage = {
+export const gourceioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const gourcePackage = {
    */
   description: 'software version control visualization' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gource.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://gource.io' as const,
+  githubUrl: 'https://github.com/acaudwell/Gource' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gource' as const,
+  installCommand: 'launchpad install gource.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gource.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gource.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,13 +76,7 @@ export const gourcePackage = {
     '0.55.0',
     '0.54.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gource -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gource' as const,
 }
 
-export type GourcePackage = typeof gourcePackage
+export type GourceioPackage = typeof gourceioPackage

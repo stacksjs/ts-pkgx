@@ -6,18 +6,15 @@
  * @version `1.37.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install talisman`
- * @name `talisman`
+ * @install `launchpad install thoughtworks.github.io/talisman`
+ * @homepage https://thoughtworks.github.io/talisman/
+ * @dependencies `go.dev@~1.24.2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.talisman
- * // Or access via domain
- * const samePkg = pantry.thoughtworksgithubiotalisman
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.thoughtworksgithubiotalisman
  * console.log(pkg.name)        // "talisman"
  * console.log(pkg.description) // "Using a pre-commit hook, Talisman validates the..."
  * console.log(pkg.programs)    // ["talisman"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/thoughtworks-github-io/talisman.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const talismanPackage = {
+export const thoughtworksgithubiotalismanPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const talismanPackage = {
    */
   description: 'Using a pre-commit hook, Talisman validates the outgoing changeset for things that look suspicious — such as tokens, passwords, and private keys.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/thoughtworks.github.io/talisman/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://thoughtworks.github.io/talisman/' as const,
+  githubUrl: 'https://github.com/thoughtworks/talisman' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install talisman' as const,
+  installCommand: 'launchpad install thoughtworks.github.io/talisman' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +thoughtworks.github.io/talisman -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install thoughtworks.github.io/talisman' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const talismanPackage = {
     'talisman',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.24.2',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -75,13 +80,7 @@ export const talismanPackage = {
     '1.32.1',
     '1.32.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) talisman -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install talisman' as const,
 }
 
-export type TalismanPackage = typeof talismanPackage
+export type ThoughtworksgithubiotalismanPackage = typeof thoughtworksgithubiotalismanPackage

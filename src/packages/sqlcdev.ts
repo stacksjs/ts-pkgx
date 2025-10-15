@@ -6,18 +6,15 @@
  * @version `1.30.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sqlc`
- * @name `sqlc`
+ * @install `launchpad install sqlc.dev`
+ * @homepage https://sqlc.dev/
+ * @dependencies `go.dev@^1.22`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sqlc
- * // Or access via domain
- * const samePkg = pantry.sqlcdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sqlcdev
  * console.log(pkg.name)        // "sqlc"
  * console.log(pkg.description) // "Generate type-safe code from SQL"
  * console.log(pkg.programs)    // ["sqlc"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sqlc-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sqlcPackage = {
+export const sqlcdevPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const sqlcPackage = {
    */
   description: 'Generate type-safe code from SQL' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sqlc.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://sqlc.dev/' as const,
+  githubUrl: 'https://github.com/sqlc-dev/sqlc' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sqlc' as const,
+  installCommand: 'launchpad install sqlc.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sqlc.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sqlc.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const sqlcPackage = {
     'sqlc',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.22',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,13 +72,7 @@ export const sqlcPackage = {
     '1.28.0',
     '1.27.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sqlc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sqlc' as const,
 }
 
-export type SqlcPackage = typeof sqlcPackage
+export type SqlcdevPackage = typeof sqlcdevPackage

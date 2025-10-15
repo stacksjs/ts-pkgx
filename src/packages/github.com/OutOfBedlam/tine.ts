@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/OutOfBedlam/tine.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomoutofbedlamtinePackage = {
+export const tinePackage = {
   /**
    * The display name of this package.
    */
@@ -77,4 +77,4 @@ export const githubcomoutofbedlamtinePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomoutofbedlamtinePackage = typeof githubcomoutofbedlamtinePackage
+export type TinePackage = typeof tinePackage

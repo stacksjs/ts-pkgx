@@ -6,18 +6,15 @@
  * @version `0.9.1` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gofumpt`
- * @name `gofumpt`
+ * @install `launchpad install mvdan.cc/gofumpt`
+ * @homepage https://pkg.go.dev/mvdan.cc/gofumpt
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gofumpt
- * // Or access via domain
- * const samePkg = pantry.mvdanccgofumpt
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.mvdanccgofumpt
  * console.log(pkg.name)        // "gofumpt"
  * console.log(pkg.description) // "A stricter gofmt"
  * console.log(pkg.programs)    // ["gofumpt"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mvdan-cc/gofumpt.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gofumptPackage = {
+export const mvdanccgofumptPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const gofumptPackage = {
    */
   description: 'A stricter gofmt' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mvdan.cc/gofumpt/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://pkg.go.dev/mvdan.cc/gofumpt' as const,
+  githubUrl: 'https://github.com/mvdan/gofumpt' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gofumpt' as const,
+  installCommand: 'launchpad install mvdan.cc/gofumpt' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mvdan.cc/gofumpt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mvdan.cc/gofumpt' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const gofumptPackage = {
     'gofumpt',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,13 +72,7 @@ export const gofumptPackage = {
     '0.8.0',
     '0.7.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gofumpt -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gofumpt' as const,
 }
 
-export type GofumptPackage = typeof gofumptPackage
+export type MvdanccgofumptPackage = typeof mvdanccgofumptPackage

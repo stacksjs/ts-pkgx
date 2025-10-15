@@ -6,18 +6,15 @@
  * @version `2.28.6` (62 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install tart`
- * @name `tart`
+ * @install `launchpad install tart.run`
+ * @homepage https://tart.run
+ * @dependencies `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.tart
- * // Or access via domain
- * const samePkg = pantry.tartrun
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.tartrun
  * console.log(pkg.name)        // "tart"
  * console.log(pkg.description) // "macOS and Linux VMs on Apple Silicon to use in ..."
  * console.log(pkg.programs)    // ["tart"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tart-run.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tartPackage = {
+export const tartrunPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const tartPackage = {
    */
   description: 'macOS and Linux VMs on Apple Silicon to use in CI and other automations' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tart.run/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://tart.run' as const,
+  githubUrl: 'https://github.com/cirruslabs/tart' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tart' as const,
+  installCommand: 'launchpad install tart.run' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tart.run -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tart.run' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const tartPackage = {
     'tart',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'curl.se',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -125,13 +130,7 @@ export const tartPackage = {
     '2.2.0',
     '0.38.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tart -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tart' as const,
 }
 
-export type TartPackage = typeof tartPackage
+export type TartrunPackage = typeof tartrunPackage

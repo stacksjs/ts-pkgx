@@ -6,18 +6,14 @@
  * @version `7.1.10` (23 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install unrar`
- * @name `unrar`
+ * @install `launchpad install rarlab.com`
+ * @dependencies `gnu.org/coreutils@^9`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.unrar
- * // Or access via domain
- * const samePkg = pantry.rarlabcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.rarlabcom
  * console.log(pkg.name)        // "unrar"
  * console.log(pkg.programs)    // ["unrar"]
  * console.log(pkg.versions[0]) // "7.1.10" (latest)
@@ -26,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rarlab-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const unrarPackage = {
+export const rarlabcomPackage = {
   /**
    * The display name of this package.
    */
@@ -41,12 +37,14 @@ export const unrarPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rarlab.com/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install unrar' as const,
+  installCommand: 'launchpad install rarlab.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rarlab.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rarlab.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -55,7 +53,13 @@ export const unrarPackage = {
     'unrar',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/coreutils@^9',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -85,13 +89,7 @@ export const unrarPackage = {
     '6.2.9',
     '6.2.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) unrar -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install unrar' as const,
 }
 
-export type UnrarPackage = typeof unrarPackage
+export type RarlabcomPackage = typeof rarlabcomPackage

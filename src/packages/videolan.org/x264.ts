@@ -6,18 +6,15 @@
  * @version `0.164.3095` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install x264`
- * @name `x264`
+ * @install `launchpad install videolan.org/x264`
+ * @homepage https://www.videolan.org/developers/x264.html
+ * @dependencies `gnu.org/gcc`, `nasm.us`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.x264
- * // Or access via domain
- * const samePkg = pantry.videolanorgx264
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.videolanorgx264
  * console.log(pkg.name)        // "x264"
  * console.log(pkg.description) // "H.264/AVC encoder"
  * console.log(pkg.programs)    // ["x264"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/videolan-org/x264.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const x264Package = {
+export const videolanorgx264Package = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const x264Package = {
    */
   description: 'H.264/AVC encoder' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/videolan.org/x264/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.videolan.org/developers/x264.html' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install x264' as const,
+  installCommand: 'launchpad install videolan.org/x264' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +videolan.org/x264 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install videolan.org/x264' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const x264Package = {
     'x264',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gcc',
+    'nasm.us',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +70,7 @@ export const x264Package = {
   versions: [
     '0.164.3095',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) x264 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install x264' as const,
 }
 
-export type X264Package = typeof x264Package
+export type Videolanorgx264Package = typeof videolanorgx264Package

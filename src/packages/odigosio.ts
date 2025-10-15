@@ -6,18 +6,15 @@
  * @version `1.7.0` (215 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install odigos`
- * @name `odigos`
+ * @install `launchpad install odigos.io`
+ * @homepage https://odigos.io
+ * @dependencies `go.dev@^1.22`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.odigos
- * // Or access via domain
- * const samePkg = pantry.odigosio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.odigosio
  * console.log(pkg.name)        // "odigos"
  * console.log(pkg.description) // "Distributed tracing without code changes. 🚀 In..."
  * console.log(pkg.programs)    // ["odigos"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/odigos-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const odigosPackage = {
+export const odigosioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const odigosPackage = {
    */
   description: 'Distributed tracing without code changes. 🚀 Instantly monitor any application using OpenTelemetry and eBPF' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/odigos.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://odigos.io' as const,
+  githubUrl: 'https://github.com/keyval-dev/odigos' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install odigos' as const,
+  installCommand: 'launchpad install odigos.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +odigos.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install odigos.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const odigosPackage = {
     'odigos',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.22',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -278,13 +283,7 @@ export const odigosPackage = {
     '1.0.2',
     '1.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) odigos -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install odigos' as const,
 }
 
-export type OdigosPackage = typeof odigosPackage
+export type OdigosioPackage = typeof odigosioPackage

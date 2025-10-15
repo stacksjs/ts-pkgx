@@ -1,18 +1,19 @@
 /**
- * **gnu.org/mpc** - pkgx package
+ * **mpc** - pkgx package
  *
  * @domain `gnu.org/mpc`
  * @version `1.3.1` (1 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/mpc`
+ * @dependencies `gnu.org/gmp@>=4.2`, `gnu.org/mpfr@^4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgmpc
- * console.log(pkg.name)        // "gnu.org/mpc"
+ * console.log(pkg.name)        // "mpc"
  * console.log(pkg.versions[0]) // "1.3.1" (latest)
  * ```
  *
@@ -23,7 +24,7 @@ export const gnuorgmpcPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/mpc' as const,
+  name: 'mpc' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,15 +35,24 @@ export const gnuorgmpcPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/mpc/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnu.org/mpc' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/mpc -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/mpc' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gmp@>=4.2',
+    'gnu.org/mpfr@^4',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -51,8 +61,6 @@ export const gnuorgmpcPackage = {
     '1.3.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/mpc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/mpc' as const,
 }
 
 export type GnuorgmpcPackage = typeof gnuorgmpcPackage

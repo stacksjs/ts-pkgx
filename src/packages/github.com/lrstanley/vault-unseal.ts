@@ -6,18 +6,14 @@
  * @version `0.7.2` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install vault-unseal`
- * @name `vault-unseal`
+ * @install `launchpad install github.com/lrstanley/vault-unseal`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.vaultunseal
- * // Or access via domain
- * const samePkg = pantry.githubcomlrstanleyvaultunseal
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomlrstanleyvaultunseal
  * console.log(pkg.name)        // "vault-unseal"
  * console.log(pkg.description) // "auto-unseal utility for Hashicorp Vault"
  * console.log(pkg.programs)    // ["vault-unseal"]
@@ -42,12 +38,14 @@ export const vaultunsealPackage = {
   description: 'auto-unseal utility for Hashicorp Vault' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/lrstanley/vault-unseal/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/lrstanley/vault-unseal' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install vault-unseal' as const,
+  installCommand: 'launchpad install github.com/lrstanley/vault-unseal' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/lrstanley/vault-unseal -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/lrstanley/vault-unseal' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const vaultunsealPackage = {
     'vault-unseal',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,13 +71,7 @@ export const vaultunsealPackage = {
     '0.7.0',
     '0.6.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vault-unseal -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install vault-unseal' as const,
 }
 
 export type VaultunsealPackage = typeof vaultunsealPackage

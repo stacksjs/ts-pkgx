@@ -1,5 +1,5 @@
 /**
- * **mypy-lang.org** - Experimental optional static type checker for Python
+ * **mypy-lang** - Experimental optional static type checker for Python
  *
  * @domain `mypy-lang.org`
  * @programs `mypy`, `mypyc`, `dmypy`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mypy-lang.org`
+ * @homepage https://www.mypy-lang.org/
  * @dependencies `pkgx.sh^1`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.mypylangorg
- * console.log(pkg.name)        // "mypy-lang.org"
+ * console.log(pkg.name)        // "mypy-lang"
  * console.log(pkg.description) // "Experimental optional static type checker for P..."
  * console.log(pkg.programs)    // ["mypy", "mypyc", ...]
  * console.log(pkg.versions[0]) // "1.18.2" (latest)
@@ -27,7 +28,7 @@ export const mypylangorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'mypy-lang.org' as const,
+  name: 'mypy-lang' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const mypylangorgPackage = {
    */
   description: 'Experimental optional static type checker for Python' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mypy-lang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.mypy-lang.org/' as const,
+  githubUrl: 'https://github.com/python/mypy' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install mypy-lang.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mypy-lang.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mypy-lang.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -97,8 +100,6 @@ export const mypylangorgPackage = {
     '1.2.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mypy-lang.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mypy-lang.org' as const,
 }
 
 export type MypylangorgPackage = typeof mypylangorgPackage

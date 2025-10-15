@@ -1,5 +1,5 @@
 /**
- * **ntp.org** - pkgx package
+ * **ntp** - pkgx package
  *
  * @domain `ntp.org`
  * @programs `ntpq`, `sntp`, `ntp-keygen`, `ntp-wait`, `ntpd`, ... (+5 more)
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.ntporg
- * console.log(pkg.name)        // "ntp.org"
+ * console.log(pkg.name)        // "ntp"
  * console.log(pkg.programs)    // ["ntpq", "sntp", ...]
  * console.log(pkg.versions[0]) // "4.2.8.17" (latest)
  * ```
@@ -26,7 +26,7 @@ export const ntporgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ntp.org' as const,
+  name: 'ntp' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,12 +37,14 @@ export const ntporgPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ntp.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install ntp.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ntp.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ntp.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,8 +77,6 @@ export const ntporgPackage = {
     '4.2.8.17',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ntp.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ntp.org' as const,
 }
 
 export type NtporgPackage = typeof ntporgPackage

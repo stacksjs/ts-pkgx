@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/achannarasappa/ticker.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomachannarasappatickerPackage = {
+export const tickerPackage = {
   /**
    * The display name of this package.
    */
@@ -83,4 +83,4 @@ export const githubcomachannarasappatickerPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomachannarasappatickerPackage = typeof githubcomachannarasappatickerPackage
+export type TickerPackage = typeof tickerPackage

@@ -1,5 +1,5 @@
 /**
- * **github.com/rrthomas/psutils** - Utilities for manipulating PostScript documents
+ * **psutils** - Utilities for manipulating PostScript documents
  *
  * @domain `github.com/rrthomas/psutils`
  * @programs `psbook`, `psjoin`, `psnup`, `psresize`, `psselect`, ... (+1 more)
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomrrthomaspsutils
- * console.log(pkg.name)        // "github.com/rrthomas/psutils"
+ * console.log(pkg.name)        // "psutils"
  * console.log(pkg.description) // "Utilities for manipulating PostScript documents"
  * console.log(pkg.programs)    // ["psbook", "psjoin", ...]
  * console.log(pkg.versions[0]) // "3.3.14" (latest)
@@ -23,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/rrthomas/psutils.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomrrthomaspsutilsPackage = {
+export const psutilsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/rrthomas/psutils' as const,
+  name: 'psutils' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -38,12 +38,14 @@ export const githubcomrrthomaspsutilsPackage = {
   description: 'Utilities for manipulating PostScript documents' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/rrthomas/psutils/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/rrthomas/psutils' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/rrthomas/psutils' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/rrthomas/psutils -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/rrthomas/psutils' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -92,8 +94,6 @@ export const githubcomrrthomaspsutilsPackage = {
     '3.0.9',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/rrthomas/psutils -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/rrthomas/psutils' as const,
 }
 
-export type GithubcomrrthomaspsutilsPackage = typeof githubcomrrthomaspsutilsPackage
+export type PsutilsPackage = typeof psutilsPackage

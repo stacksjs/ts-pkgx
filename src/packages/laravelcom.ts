@@ -6,19 +6,15 @@
  * @version `5.21.0` (22 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install laravel`
- * @name `laravel`
+ * @install `launchpad install laravel.com`
+ * @homepage https://laravel.com/docs
  * @dependencies `php.net^8.2`, `getcomposer.org^2.7`, `linux:info-zip.org/unzip^6` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.laravel
- * // Or access via domain
- * const samePkg = pantry.laravelcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.laravelcom
  * console.log(pkg.name)        // "laravel"
  * console.log(pkg.description) // "The Laravel application installer."
  * console.log(pkg.programs)    // ["laravel"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/laravel-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const laravelPackage = {
+export const laravelcomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const laravelPackage = {
    */
   description: 'The Laravel application installer.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/laravel.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://laravel.com/docs' as const,
+  githubUrl: 'https://github.com/laravel/installer' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install laravel' as const,
+  installCommand: 'launchpad install laravel.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +laravel.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install laravel.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -95,13 +93,7 @@ export const laravelPackage = {
     '5.8.5',
     '5.8.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) laravel -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install laravel' as const,
 }
 
-export type LaravelPackage = typeof laravelPackage
+export type LaravelcomPackage = typeof laravelcomPackage

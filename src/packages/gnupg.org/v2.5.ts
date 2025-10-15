@@ -1,5 +1,5 @@
 /**
- * **gnupg.org/v2.5** - pkgx package
+ * **v2.5** - pkgx package
  *
  * @domain `gnupg.org/v2.5`
  * @version `2.5.12` (13 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnupgorgv25
- * console.log(pkg.name)        // "gnupg.org/v2.5"
+ * console.log(pkg.name)        // "v2.5"
  * console.log(pkg.versions[0]) // "2.5.12" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const gnupgorgv25Package = {
   /**
    * The display name of this package.
    */
-  name: 'gnupg.org/v2.5' as const,
+  name: 'v2.5' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const gnupgorgv25Package = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/v2.5/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnupg.org/v2.5' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnupg.org/v2.5 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnupg.org/v2.5' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -81,8 +83,6 @@ export const gnupgorgv25Package = {
     '2.5.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnupg.org/v2.5 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnupg.org/v2.5' as const,
 }
 
 export type Gnupgorgv25Package = typeof gnupgorgv25Package

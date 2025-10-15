@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/adegtyarev/streebog.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomadegtyarevstreebogPackage = {
+export const streebogPackage = {
   /**
    * The display name of this package.
    */
@@ -73,4 +73,4 @@ export const githubcomadegtyarevstreebogPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomadegtyarevstreebogPackage = typeof githubcomadegtyarevstreebogPackage
+export type StreebogPackage = typeof streebogPackage

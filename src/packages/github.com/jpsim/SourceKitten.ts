@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jpsim/SourceKitten.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjpsimsourcekittenPackage = {
+export const sourcekittenPackage = {
   /**
    * The display name of this package.
    */
@@ -69,4 +69,4 @@ export const githubcomjpsimsourcekittenPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjpsimsourcekittenPackage = typeof githubcomjpsimsourcekittenPackage
+export type SourcekittenPackage = typeof sourcekittenPackage

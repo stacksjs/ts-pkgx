@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/kishaningithub/tf-import-gen.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkishaningithubtfimportgenPackage = {
+export const tfimportgenPackage = {
   /**
    * The display name of this package.
    */
@@ -93,4 +93,4 @@ export const githubcomkishaningithubtfimportgenPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkishaningithubtfimportgenPackage = typeof githubcomkishaningithubtfimportgenPackage
+export type TfimportgenPackage = typeof tfimportgenPackage

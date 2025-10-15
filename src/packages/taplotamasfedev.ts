@@ -6,18 +6,14 @@
  * @version `0.10.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install taplo`
- * @name `taplo`
+ * @install `launchpad install taplo.tamasfe.dev`
+ * @homepage https://taplo.tamasfe.dev
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.taplo
- * // Or access via domain
- * const samePkg = pantry.taplotamasfedev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.taplotamasfedev
  * console.log(pkg.name)        // "taplo"
  * console.log(pkg.description) // "A TOML toolkit written in Rust"
  * console.log(pkg.programs)    // ["taplo"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/taplo-tamasfe-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const taploPackage = {
+export const taplotamasfedevPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const taploPackage = {
    */
   description: 'A TOML toolkit written in Rust' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/taplo.tamasfe.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://taplo.tamasfe.dev' as const,
+  githubUrl: 'https://github.com/tamasfe/taplo' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install taplo' as const,
+  installCommand: 'launchpad install taplo.tamasfe.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +taplo.tamasfe.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install taplo.tamasfe.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -68,13 +66,7 @@ export const taploPackage = {
     '0.8.1',
     '0.7.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) taplo -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install taplo' as const,
 }
 
-export type TaploPackage = typeof taploPackage
+export type TaplotamasfedevPackage = typeof taplotamasfedevPackage

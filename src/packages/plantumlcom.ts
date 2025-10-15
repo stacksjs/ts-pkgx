@@ -6,19 +6,15 @@
  * @version `1.2025.8` (22 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install plantuml`
- * @name `plantuml`
+ * @install `launchpad install plantuml.com`
+ * @homepage https://plantuml.com/
  * @dependencies `graphviz.org`, `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.plantuml
- * // Or access via domain
- * const samePkg = pantry.plantumlcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.plantumlcom
  * console.log(pkg.name)        // "plantuml"
  * console.log(pkg.description) // "Generate diagrams from textual description"
  * console.log(pkg.programs)    // ["plantuml"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/plantuml-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const plantumlPackage = {
+export const plantumlcomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const plantumlPackage = {
    */
   description: 'Generate diagrams from textual description' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/plantuml.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://plantuml.com/' as const,
+  githubUrl: 'https://github.com/plantuml/plantuml' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install plantuml' as const,
+  installCommand: 'launchpad install plantuml.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +plantuml.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install plantuml.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -93,13 +91,7 @@ export const plantumlPackage = {
     '1.2023.11',
     '1.2023.10',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) plantuml -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install plantuml' as const,
 }
 
-export type PlantumlPackage = typeof plantumlPackage
+export type PlantumlcomPackage = typeof plantumlcomPackage

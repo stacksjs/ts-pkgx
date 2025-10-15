@@ -6,19 +6,15 @@
  * @version `12.2.0` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install qpdf`
- * @name `qpdf`
+ * @install `launchpad install qpdf.sourceforge.io`
+ * @homepage https://qpdf.sourceforge.io/
  * @dependencies `zlib.net^1`, `libjpeg-turbo.org^2`, `openssl.org^1.1`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.qpdf
- * // Or access via domain
- * const samePkg = pantry.qpdfsourceforgeio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.qpdfsourceforgeio
  * console.log(pkg.name)        // "qpdf"
  * console.log(pkg.description) // "qpdf: A content-preserving PDF document transfo..."
  * console.log(pkg.programs)    // ["qpdf"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/qpdf-sourceforge-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const qpdfPackage = {
+export const qpdfsourceforgeioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const qpdfPackage = {
    */
   description: 'qpdf: A content-preserving PDF document transformer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/qpdf.sourceforge.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://qpdf.sourceforge.io/' as const,
+  githubUrl: 'https://github.com/qpdf/qpdf' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install qpdf' as const,
+  installCommand: 'launchpad install qpdf.sourceforge.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +qpdf.sourceforge.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install qpdf.sourceforge.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -83,13 +81,7 @@ export const qpdfPackage = {
     '11.7.0',
     '11.6.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) qpdf -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install qpdf' as const,
 }
 
-export type QpdfPackage = typeof qpdfPackage
+export type QpdfsourceforgeioPackage = typeof qpdfsourceforgeioPackage

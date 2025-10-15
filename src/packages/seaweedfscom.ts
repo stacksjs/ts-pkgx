@@ -1,24 +1,20 @@
 /**
- * **weed** - SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for billions of files! Blob store has O(1) disk seek, cloud tiering. Filer supports Cloud Drive, cross-DC active-active replication, Kubernetes, POSIX FUSE mount, S3 API, S3 Gateway, Hadoop, WebDAV, encryption, Erasure Coding.
+ * **SeaweedFS** - SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for billions of files! Blob store has O(1) disk seek, cloud tiering. Filer supports Cloud Drive, cross-DC active-active replication, Kubernetes, POSIX FUSE mount, S3 API, S3 Gateway, Hadoop, WebDAV, encryption, Erasure Coding.
  *
  * @domain `seaweedfs.com`
  * @programs `weed`
  * @version `3.97.0` (19 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install weed`
- * @name `SeaweedFS`
- * @aliases `weed`
+ * @install `launchpad install seaweedfs.com`
+ * @homepage https://seaweedfs.com
+ * @dependencies `go.dev@=1.22.0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.weed
- * // Or access via domain
- * const samePkg = pantry.seaweedfscom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.seaweedfscom
  * console.log(pkg.name)        // "SeaweedFS"
  * console.log(pkg.description) // "SeaweedFS is a fast distributed storage system ..."
  * console.log(pkg.programs)    // ["weed"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/seaweedfs-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const weedPackage = {
+export const seaweedfscomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const weedPackage = {
    */
   description: 'SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for billions of files! Blob store has O(1) disk seek, cloud tiering. Filer supports Cloud Drive, cross-DC active-active replication, Kubernetes, POSIX FUSE mount, S3 API, S3 Gateway, Hadoop, WebDAV, encryption, Erasure Coding.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/seaweedfs.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://seaweedfs.com' as const,
+  githubUrl: 'https://github.com/seaweedfs/seaweedfs' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install weed' as const,
+  installCommand: 'launchpad install seaweedfs.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +seaweedfs.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install seaweedfs.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +55,13 @@ export const weedPackage = {
     'weed',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@=1.22.0',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -83,15 +87,7 @@ export const weedPackage = {
     '3.80.0',
     '3.79.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'weed',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) weed -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install weed' as const,
+  aliases: [] as const,
 }
 
-export type WeedPackage = typeof weedPackage
+export type SeaweedfscomPackage = typeof seaweedfscomPackage

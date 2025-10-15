@@ -6,19 +6,15 @@
  * @version `12.1.1` (32 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install MariaDB`
- * @name `MariaDB`
+ * @install `launchpad install mariadb.com/server`
+ * @homepage https://mariadb.org/
  * @dependencies `sourceware.org/bzip2^1`, `github.com/besser82/libxcrypt^4`, `gnome.org/libxml2`, ... (+5 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.MariaDB
- * // Or access via domain
- * const samePkg = pantry.mariadbcomserver
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.mariadbcomserver
  * console.log(pkg.name)        // "MariaDB"
  * console.log(pkg.description) // "MariaDB server is a community developed fork of..."
  * console.log(pkg.programs)    // ["aria_chk", "aria_dump_log", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mariadb-com/server.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mariaDBPackage = {
+export const mariadbcomserverPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const mariaDBPackage = {
    */
   description: 'MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mariadb.com/server/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://mariadb.org/' as const,
   githubUrl: 'https://github.com/MariaDB/server' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install MariaDB' as const,
+  installCommand: 'launchpad install mariadb.com/server' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mariadb.com/server -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mariadb.com/server' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -192,13 +190,7 @@ export const mariaDBPackage = {
     '10.5.29',
     '10.5.28',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mariadb.com/server -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install MariaDB' as const,
 }
 
-export type MariaDBPackage = typeof mariaDBPackage
+export type MariadbcomserverPackage = typeof mariadbcomserverPackage

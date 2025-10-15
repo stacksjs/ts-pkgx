@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/kaspanet/rusty-kaspa.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkaspanetrustykaspaPackage = {
+export const rustykaspaPackage = {
   /**
    * The display name of this package.
    */
@@ -88,4 +88,4 @@ export const githubcomkaspanetrustykaspaPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkaspanetrustykaspaPackage = typeof githubcomkaspanetrustykaspaPackage
+export type RustykaspaPackage = typeof rustykaspaPackage

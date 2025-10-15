@@ -25,7 +25,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/cowsay-org/cowsay.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcowsayorgcowsayPackage = {
+export const cowsayPackage = {
   /**
    * The display name of this package.
    */
@@ -84,4 +84,4 @@ export const githubcomcowsayorgcowsayPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcowsayorgcowsayPackage = typeof githubcomcowsayorgcowsayPackage
+export type CowsayPackage = typeof cowsayPackage

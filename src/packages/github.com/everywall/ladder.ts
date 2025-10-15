@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/everywall/ladder.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomeverywallladderPackage = {
+export const ladderPackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomeverywallladderPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomeverywallladderPackage = typeof githubcomeverywallladderPackage
+export type LadderPackage = typeof ladderPackage

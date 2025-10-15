@@ -6,19 +6,14 @@
  * @version `1.5.3` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install jadx`
- * @name `jadx`
+ * @install `launchpad install github.com/skylot/jadx`
  * @dependencies `openjdk.org^21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.jadx
- * // Or access via domain
- * const samePkg = pantry.githubcomskylotjadx
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomskylotjadx
  * console.log(pkg.name)        // "jadx"
  * console.log(pkg.description) // "Dex to Java decompiler"
  * console.log(pkg.programs)    // ["jadx", "jadx-gui"]
@@ -48,7 +43,9 @@ export const jadxPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install jadx' as const,
+  installCommand: 'launchpad install github.com/skylot/jadx' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/skylot/jadx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/skylot/jadx' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,13 +73,7 @@ export const jadxPackage = {
     '1.5.0',
     '1.4.7',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/skylot/jadx -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jadx' as const,
 }
 
 export type JadxPackage = typeof jadxPackage

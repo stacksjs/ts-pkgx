@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/awslabs/amazon-ecr-credential-helper.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomawslabsamazonecrcredentialhelperPackage = {
+export const amazonecrcredentialhelperPackage = {
   /**
    * The display name of this package.
    */
@@ -78,4 +78,4 @@ export const githubcomawslabsamazonecrcredentialhelperPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomawslabsamazonecrcredentialhelperPackage = typeof githubcomawslabsamazonecrcredentialhelperPackage
+export type AmazonecrcredentialhelperPackage = typeof amazonecrcredentialhelperPackage

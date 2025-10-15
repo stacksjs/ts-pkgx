@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/abtreece/confd.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomabtreececonfdPackage = {
+export const confdPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomabtreececonfdPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomabtreececonfdPackage = typeof githubcomabtreececonfdPackage
+export type ConfdPackage = typeof confdPackage

@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/kkos/oniguruma.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkkosonigurumaPackage = {
+export const onigurumaPackage = {
   /**
    * The display name of this package.
    */
@@ -66,4 +66,4 @@ export const githubcomkkosonigurumaPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkkosonigurumaPackage = typeof githubcomkkosonigurumaPackage
+export type OnigurumaPackage = typeof onigurumaPackage

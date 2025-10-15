@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/confluentinc/libserdes.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomconfluentinclibserdesPackage = {
+export const libserdesPackage = {
   /**
    * The display name of this package.
    */
@@ -65,4 +65,4 @@ export const githubcomconfluentinclibserdesPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomconfluentinclibserdesPackage = typeof githubcomconfluentinclibserdesPackage
+export type LibserdesPackage = typeof libserdesPackage

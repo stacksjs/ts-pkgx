@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/kevinburke/go-bindata.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkevinburkegobindataPackage = {
+export const gobindataPackage = {
   /**
    * The display name of this package.
    */
@@ -75,4 +75,4 @@ export const githubcomkevinburkegobindataPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkevinburkegobindataPackage = typeof githubcomkevinburkegobindataPackage
+export type GobindataPackage = typeof gobindataPackage

@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/helmfile/helmfile.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomhelmfilehelmfilePackage = {
+export const helmfilePackage = {
   /**
    * The display name of this package.
    */
@@ -101,4 +101,4 @@ export const githubcomhelmfilehelmfilePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomhelmfilehelmfilePackage = typeof githubcomhelmfilehelmfilePackage
+export type HelmfilePackage = typeof helmfilePackage

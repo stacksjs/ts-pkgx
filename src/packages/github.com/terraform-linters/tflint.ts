@@ -6,18 +6,14 @@
  * @version `0.59.1` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install tflint`
- * @name `tflint`
+ * @install `launchpad install github.com/terraform-linters/tflint`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.tflint
- * // Or access via domain
- * const samePkg = pantry.githubcomterraformlinterstflint
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomterraformlinterstflint
  * console.log(pkg.name)        // "tflint"
  * console.log(pkg.description) // "A Pluggable Terraform Linter"
  * console.log(pkg.programs)    // ["tflint"]
@@ -42,12 +38,14 @@ export const tflintPackage = {
   description: 'A Pluggable Terraform Linter' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/terraform-linters/tflint/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/terraform-linters/tflint' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tflint' as const,
+  installCommand: 'launchpad install github.com/terraform-linters/tflint' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/terraform-linters/tflint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/terraform-linters/tflint' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const tflintPackage = {
     'tflint',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -84,13 +88,7 @@ export const tflintPackage = {
     '0.47.0',
     '0.46.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tflint -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tflint' as const,
 }
 
 export type TflintPackage = typeof tflintPackage

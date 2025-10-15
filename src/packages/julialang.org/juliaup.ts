@@ -6,18 +6,13 @@
  * @version `1.18.4` (61 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install juliaup`
- * @name `juliaup`
+ * @install `launchpad install julialang.org/juliaup`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.juliaup
- * // Or access via domain
- * const samePkg = pantry.julialangorgjuliaup
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.julialangorgjuliaup
  * console.log(pkg.name)        // "juliaup"
  * console.log(pkg.description) // "Julia installer and version multiplexer"
  * console.log(pkg.programs)    // ["juliaup"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/julialang-org/juliaup.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const juliaupPackage = {
+export const julialangorgjuliaupPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const juliaupPackage = {
   description: 'Julia installer and version multiplexer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/julialang.org/juliaup/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/JuliaLang/juliaup' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install juliaup' as const,
+  installCommand: 'launchpad install julialang.org/juliaup' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +julialang.org/juliaup -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install julialang.org/juliaup' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -124,13 +121,7 @@ export const juliaupPackage = {
     '1.11.23',
     '1.11.22',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) juliaup -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install juliaup' as const,
 }
 
-export type JuliaupPackage = typeof juliaupPackage
+export type JulialangorgjuliaupPackage = typeof julialangorgjuliaupPackage

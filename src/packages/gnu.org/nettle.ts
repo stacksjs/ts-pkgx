@@ -1,5 +1,5 @@
 /**
- * **gnu.org/nettle** - A mirror of the nettle repository
+ * **nettle** - A mirror of the nettle repository
  *
  * @domain `gnu.org/nettle`
  * @programs `nettle-hash`, `nettle-lfib-stream`, `nettle-pbkdf2`, `pkcs1-conv`, `sexp-conv`
@@ -7,13 +7,15 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/nettle`
+ * @homepage https://www.lysator.liu.se/~nisse/nettle/
+ * @dependencies `gnu.org/gmp`, `gnu.org/m4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgnettle
- * console.log(pkg.name)        // "gnu.org/nettle"
+ * console.log(pkg.name)        // "nettle"
  * console.log(pkg.description) // "A mirror of the nettle repository"
  * console.log(pkg.programs)    // ["nettle-hash", "nettle-lfib-stream", ...]
  * console.log(pkg.versions[0]) // "3.8.1" (latest)
@@ -26,7 +28,7 @@ export const gnuorgnettlePackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/nettle' as const,
+  name: 'nettle' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,13 +38,15 @@ export const gnuorgnettlePackage = {
    */
   description: 'A mirror of the nettle repository' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/nettle/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.lysator.liu.se/~nisse/nettle/' as const,
+  githubUrl: 'https://github.com/gnutls/nettle' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnu.org/nettle' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/nettle -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/nettle' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -55,7 +59,14 @@ export const gnuorgnettlePackage = {
     'sexp-conv',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gmp',
+    'gnu.org/m4',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,8 +75,6 @@ export const gnuorgnettlePackage = {
     '3.8.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/nettle -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/nettle' as const,
 }
 
 export type GnuorgnettlePackage = typeof gnuorgnettlePackage

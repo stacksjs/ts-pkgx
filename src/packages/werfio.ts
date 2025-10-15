@@ -6,18 +6,15 @@
  * @version `2.49.1` (176 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install werf`
- * @name `werf`
+ * @install `launchpad install werf.io`
+ * @homepage https://werf.io/
+ * @dependencies `go.dev@^1.23`, `linux:gnu.org/gcc`, `linux:gnu.org/binutils` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.werf
- * // Or access via domain
- * const samePkg = pantry.werfio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.werfio
  * console.log(pkg.name)        // "werf"
  * console.log(pkg.description) // "A solution for implementing efficient and consi..."
  * console.log(pkg.programs)    // ["werf"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/werf-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const werfPackage = {
+export const werfioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const werfPackage = {
    */
   description: 'A solution for implementing efficient and consistent software delivery to Kubernetes facilitating best practices.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/werf.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://werf.io/' as const,
+  githubUrl: 'https://github.com/werf/werf' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install werf' as const,
+  installCommand: 'launchpad install werf.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +werf.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install werf.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,16 @@ export const werfPackage = {
     'werf',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
+   */
+  dependencies: [
+    'go.dev@^1.23',
+    'linux:gnu.org/gcc',
+    'linux:gnu.org/binutils',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -239,13 +247,7 @@ export const werfPackage = {
     '1.1.36',
     '1.1.35',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) werf -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install werf' as const,
 }
 
-export type WerfPackage = typeof werfPackage
+export type WerfioPackage = typeof werfioPackage

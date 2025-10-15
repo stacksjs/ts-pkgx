@@ -1,5 +1,5 @@
 /**
- * **rabbitmq.com** - Open source RabbitMQ: core server and tier 1 (built-in) plugins
+ * **rabbitmq** - Open source RabbitMQ: core server and tier 1 (built-in) plugins
  *
  * @domain `rabbitmq.com`
  * @programs `rabbitmqctl`, `rabbitmq-defaults`, `rabbitmq-diagnostics`, `rabbitmq-env`, `rabbitmq-plugins`, ... (+5 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rabbitmq.com`
+ * @homepage https://www.rabbitmq.com/
  * @dependencies `erlang.org`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.rabbitmqcom
- * console.log(pkg.name)        // "rabbitmq.com"
+ * console.log(pkg.name)        // "rabbitmq"
  * console.log(pkg.description) // "Open source RabbitMQ: core server and tier 1 (b..."
  * console.log(pkg.programs)    // ["rabbitmqctl", "rabbitmq-defaults", ...]
  * console.log(pkg.versions[0]) // "4.1.4" (latest)
@@ -27,7 +28,7 @@ export const rabbitmqcomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rabbitmq.com' as const,
+  name: 'rabbitmq' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const rabbitmqcomPackage = {
    */
   description: 'Open source RabbitMQ: core server and tier 1 (built-in) plugins' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rabbitmq.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.rabbitmq.com/' as const,
+  githubUrl: 'https://github.com/rabbitmq/rabbitmq-server' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install rabbitmq.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rabbitmq.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rabbitmq.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -111,8 +114,6 @@ export const rabbitmqcomPackage = {
     '3.11.24',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rabbitmq.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rabbitmq.com' as const,
 }
 
 export type RabbitmqcomPackage = typeof rabbitmqcomPackage

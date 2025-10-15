@@ -5,19 +5,14 @@
  * @version `2.3.35` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install device-mapper`
- * @name `device-mapper`
+ * @install `launchpad install sourceware.org/dm`
  * @dependencies `pagure.io/libaio^0.3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.devicemapper
- * // Or access via domain
- * const samePkg = pantry.sourcewareorgdm
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sourcewareorgdm
  * console.log(pkg.name)        // "device-mapper"
  * console.log(pkg.versions[0]) // "2.3.35" (latest)
  * ```
@@ -25,7 +20,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sourceware-org/dm.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const devicemapperPackage = {
+export const sourcewareorgdmPackage = {
   /**
    * The display name of this package.
    */
@@ -40,12 +35,14 @@ export const devicemapperPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sourceware.org/dm/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install device-mapper' as const,
+  installCommand: 'launchpad install sourceware.org/dm' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceware.org/dm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sourceware.org/dm' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -74,13 +71,7 @@ export const devicemapperPackage = {
     '2.3.24',
     '2.3.22',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sourceware.org/dm -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install device-mapper' as const,
 }
 
-export type DevicemapperPackage = typeof devicemapperPackage
+export type SourcewareorgdmPackage = typeof sourcewareorgdmPackage

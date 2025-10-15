@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jaseg/lolcat.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjaseglolcatPackage = {
+export const lolcatPackage = {
   /**
    * The display name of this package.
    */
@@ -65,4 +65,4 @@ export const githubcomjaseglolcatPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjaseglolcatPackage = typeof githubcomjaseglolcatPackage
+export type LolcatPackage = typeof lolcatPackage

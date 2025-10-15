@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/ColinIanKing/stress-ng.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcoliniankingstressngPackage = {
+export const stressngPackage = {
   /**
    * The display name of this package.
    */
@@ -77,4 +77,4 @@ export const githubcomcoliniankingstressngPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcoliniankingstressngPackage = typeof githubcomcoliniankingstressngPackage
+export type StressngPackage = typeof stressngPackage

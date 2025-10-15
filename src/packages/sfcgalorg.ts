@@ -6,19 +6,15 @@
  * @version `2.2.0` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sfcgal-config`
- * @name `sfcgal-config`
+ * @install `launchpad install sfcgal.org`
+ * @homepage https://sfcgal.gitlab.io/SFCGAL/
  * @dependencies `boost.org`, `cgal.org`, `gnu.org/gmp`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sfcgalconfig
- * // Or access via domain
- * const samePkg = pantry.sfcgalorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sfcgalorg
  * console.log(pkg.name)        // "sfcgal-config"
  * console.log(pkg.description) // "C++ wrapper library around CGAL"
  * console.log(pkg.programs)    // ["sfcgal-config"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sfcgal-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sfcgalconfigPackage = {
+export const sfcgalorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const sfcgalconfigPackage = {
    */
   description: 'C++ wrapper library around CGAL' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sfcgal.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://sfcgal.gitlab.io/SFCGAL/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sfcgal-config' as const,
+  installCommand: 'launchpad install sfcgal.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sfcgal.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sfcgal.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -80,13 +78,7 @@ export const sfcgalconfigPackage = {
     '1.5.0',
     '1.4.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sfcgal-config -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sfcgal-config' as const,
 }
 
-export type SfcgalconfigPackage = typeof sfcgalconfigPackage
+export type SfcgalorgPackage = typeof sfcgalorgPackage

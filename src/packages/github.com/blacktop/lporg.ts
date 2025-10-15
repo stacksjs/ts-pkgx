@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/blacktop/lporg.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomblacktoplporgPackage = {
+export const lporgPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomblacktoplporgPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomblacktoplporgPackage = typeof githubcomblacktoplporgPackage
+export type LporgPackage = typeof lporgPackage

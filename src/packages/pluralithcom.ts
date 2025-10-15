@@ -6,19 +6,15 @@
  * @version `0.2.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pluralith`
- * @name `pluralith`
+ * @install `launchpad install pluralith.com`
+ * @homepage https://www.pluralith.com
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pluralith
- * // Or access via domain
- * const samePkg = pantry.pluralithcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pluralithcom
  * console.log(pkg.name)        // "pluralith"
  * console.log(pkg.description) // "A tool for Terraform state visualisation and au..."
  * console.log(pkg.programs)    // ["pluralith"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pluralith-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pluralithPackage = {
+export const pluralithcomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const pluralithPackage = {
    */
   description: 'A tool for Terraform state visualisation and automated generation of infrastructure documentation' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pluralith.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.pluralith.com' as const,
+  githubUrl: 'https://github.com/Pluralith/pluralith-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pluralith' as const,
+  installCommand: 'launchpad install pluralith.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pluralith.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pluralith.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +69,7 @@ export const pluralithPackage = {
   versions: [
     '0.2.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pluralith -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pluralith' as const,
 }
 
-export type PluralithPackage = typeof pluralithPackage
+export type PluralithcomPackage = typeof pluralithcomPackage

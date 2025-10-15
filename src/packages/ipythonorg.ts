@@ -6,19 +6,15 @@
  * @version `9.6.0` (47 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ipython`
- * @name `ipython`
+ * @install `launchpad install ipython.org`
+ * @homepage https://ipython.org/
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ipython
- * // Or access via domain
- * const samePkg = pantry.ipythonorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ipythonorg
  * console.log(pkg.name)        // "ipython"
  * console.log(pkg.description) // "Official repository for IPython itself. Other r..."
  * console.log(pkg.programs)    // ["ipython", "ipython3"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ipython-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ipythonPackage = {
+export const ipythonorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const ipythonPackage = {
    */
   description: 'Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ipython.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://ipython.org/' as const,
+  githubUrl: 'https://github.com/ipython/ipython' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ipython' as const,
+  installCommand: 'launchpad install ipython.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ipython.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ipython.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -118,13 +116,7 @@ export const ipythonPackage = {
     '8.12.1',
     '8.12.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ipython.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ipython' as const,
 }
 
-export type IpythonPackage = typeof ipythonPackage
+export type IpythonorgPackage = typeof ipythonorgPackage

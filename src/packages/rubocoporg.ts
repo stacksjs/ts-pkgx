@@ -6,19 +6,15 @@
  * @version `1.81.1` (37 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rubocop`
- * @name `rubocop`
+ * @install `launchpad install rubocop.org`
+ * @homepage https://docs.rubocop.org
  * @dependencies `ruby-lang.org>=3.1<3.3.7`, `rubygems.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rubocop
- * // Or access via domain
- * const samePkg = pantry.rubocoporg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.rubocoporg
  * console.log(pkg.name)        // "rubocop"
  * console.log(pkg.description) // "A Ruby static code analyzer and formatter, base..."
  * console.log(pkg.programs)    // ["rubocop"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rubocop-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rubocopPackage = {
+export const rubocoporgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const rubocopPackage = {
    */
   description: 'A Ruby static code analyzer and formatter, based on the community Ruby style guide.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rubocop.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docs.rubocop.org' as const,
+  githubUrl: 'https://github.com/rubocop/rubocop' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rubocop' as const,
+  installCommand: 'launchpad install rubocop.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rubocop.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rubocop.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -108,13 +106,7 @@ export const rubocopPackage = {
     '1.69.0',
     '1.68.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rubocop -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rubocop' as const,
 }
 
-export type RubocopPackage = typeof rubocopPackage
+export type RubocoporgPackage = typeof rubocoporgPackage

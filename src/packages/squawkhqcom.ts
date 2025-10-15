@@ -6,18 +6,15 @@
  * @version `2.28.1` (54 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install squawk`
- * @name `squawk`
+ * @install `launchpad install squawkhq.com`
+ * @homepage https://squawkhq.com
+ * @dependencies `openssl.org`, `perl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.squawk
- * // Or access via domain
- * const samePkg = pantry.squawkhqcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.squawkhqcom
  * console.log(pkg.name)        // "squawk"
  * console.log(pkg.description) // "🐘 linter for PostgreSQL, focused on migrations"
  * console.log(pkg.programs)    // ["squawk"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/squawkhq-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const squawkPackage = {
+export const squawkhqcomPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const squawkPackage = {
    */
   description: '🐘 linter for PostgreSQL, focused on migrations' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/squawkhq.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://squawkhq.com' as const,
+  githubUrl: 'https://github.com/sbdchd/squawk' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install squawk' as const,
+  installCommand: 'launchpad install squawkhq.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +squawkhq.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install squawkhq.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const squawkPackage = {
     'squawk',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'openssl.org',
+    'perl.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -117,13 +123,7 @@ export const squawkPackage = {
     '0.24.1',
     '0.24.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) squawk -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install squawk' as const,
 }
 
-export type SquawkPackage = typeof squawkPackage
+export type SquawkhqcomPackage = typeof squawkhqcomPackage

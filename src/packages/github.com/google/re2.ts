@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/google/re2.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgooglere2Package = {
+export const re2Package = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomgooglere2Package = {
   aliases: [] as const,
 }
 
-export type Githubcomgooglere2Package = typeof githubcomgooglere2Package
+export type Re2Package = typeof re2Package

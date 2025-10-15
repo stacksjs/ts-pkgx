@@ -6,19 +6,15 @@
  * @version `4.9.3` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install lftp`
- * @name `lftp`
+ * @install `launchpad install lftp.yar.ru`
+ * @homepage https://lftp.yar.ru/
  * @dependencies `gnu.org/libidn2`, `gnu.org/gettext`, `gnu.org/readline`, ... (+5 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.lftp
- * // Or access via domain
- * const samePkg = pantry.lftpyarru
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.lftpyarru
  * console.log(pkg.name)        // "lftp"
  * console.log(pkg.description) // "sophisticated command line file transfer progra..."
  * console.log(pkg.programs)    // ["lftp", "lftpget"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/lftp-yar-ru.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const lftpPackage = {
+export const lftpyarruPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const lftpPackage = {
    */
   description: 'sophisticated command line file transfer program (ftp, http, sftp, fish, torrent)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lftp.yar.ru/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://lftp.yar.ru/' as const,
+  githubUrl: 'https://github.com/lavv17/lftp' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install lftp' as const,
+  installCommand: 'launchpad install lftp.yar.ru' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lftp.yar.ru -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lftp.yar.ru' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,13 +80,7 @@ export const lftpPackage = {
     '4.9.2',
     '4.9.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lftp.yar.ru -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install lftp' as const,
 }
 
-export type LftpPackage = typeof lftpPackage
+export type LftpyarruPackage = typeof lftpyarruPackage

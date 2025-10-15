@@ -6,19 +6,14 @@
  * @version `3.3.5` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pake`
- * @name `pake`
+ * @install `launchpad install npmjs.com/pake-cli`
  * @dependencies `nodejs.org>=16`, `npmjs.com`, `rust-lang.org>=1.63`, ... (+11 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pake
- * // Or access via domain
- * const samePkg = pantry.npmjscompakecli
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.npmjscompakecli
  * console.log(pkg.name)        // "pake"
  * console.log(pkg.description) // "🤱🏻 Turn any webpage into a desktop app with R..."
  * console.log(pkg.programs)    // ["pake"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/npmjs-com/pake-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pakePackage = {
+export const npmjscompakecliPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const pakePackage = {
   description: '🤱🏻 Turn any webpage into a desktop app with Rust.  🤱🏻 利用 Rust 轻松构建轻量级多端桌面应用' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/npmjs.com/pake-cli/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/tw93/Pake' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pake' as const,
+  installCommand: 'launchpad install npmjs.com/pake-cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +npmjs.com/pake-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install npmjs.com/pake-cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -94,13 +91,7 @@ export const pakePackage = {
     '2.3.6',
     '2.3.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pake -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pake' as const,
 }
 
-export type PakePackage = typeof pakePackage
+export type NpmjscompakecliPackage = typeof npmjscompakecliPackage

@@ -1,5 +1,5 @@
 /**
- * **postgresql.org/libpq** - pkgx package
+ * **libpq** - pkgx package
  *
  * @domain `postgresql.org/libpq`
  * @version `18.0.0` (5 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.postgresqlorglibpq
- * console.log(pkg.name)        // "postgresql.org/libpq"
+ * console.log(pkg.name)        // "libpq"
  * console.log(pkg.versions[0]) // "18.0.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const postgresqlorglibpqPackage = {
   /**
    * The display name of this package.
    */
-  name: 'postgresql.org/libpq' as const,
+  name: 'libpq' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const postgresqlorglibpqPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/postgresql.org/libpq/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install postgresql.org/libpq' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +postgresql.org/libpq -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install postgresql.org/libpq' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -67,8 +69,6 @@ export const postgresqlorglibpqPackage = {
     '15.2.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +postgresql.org/libpq -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install postgresql.org/libpq' as const,
 }
 
 export type PostgresqlorglibpqPackage = typeof postgresqlorglibpqPackage

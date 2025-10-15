@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/gotestyourself/gotestsum.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgotestyourselfgotestsumPackage = {
+export const gotestsumPackage = {
   /**
    * The display name of this package.
    */
@@ -76,4 +76,4 @@ export const githubcomgotestyourselfgotestsumPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgotestyourselfgotestsumPackage = typeof githubcomgotestyourselfgotestsumPackage
+export type GotestsumPackage = typeof gotestsumPackage

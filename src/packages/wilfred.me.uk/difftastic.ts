@@ -6,18 +6,14 @@
  * @version `0.65.0` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install difft`
- * @name `difft`
+ * @install `launchpad install wilfred.me.uk/difftastic`
+ * @homepage https://difftastic.wilfred.me.uk/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.difft
- * // Or access via domain
- * const samePkg = pantry.wilfredmeukdifftastic
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.wilfredmeukdifftastic
  * console.log(pkg.name)        // "difft"
  * console.log(pkg.description) // "a structural diff that understands syntax 🟥🟩"
  * console.log(pkg.programs)    // ["difft"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/wilfred-me-uk/difftastic.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const difftPackage = {
+export const wilfredmeukdifftasticPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const difftPackage = {
    */
   description: 'a structural diff that understands syntax 🟥🟩' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/wilfred.me.uk/difftastic/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://difftastic.wilfred.me.uk/' as const,
+  githubUrl: 'https://github.com/Wilfred/difftastic' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install difft' as const,
+  installCommand: 'launchpad install wilfred.me.uk/difftastic' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +wilfred.me.uk/difftastic -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install wilfred.me.uk/difftastic' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +71,7 @@ export const difftPackage = {
     '0.57.0',
     '0.56.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) difft -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install difft' as const,
 }
 
-export type DifftPackage = typeof difftPackage
+export type WilfredmeukdifftasticPackage = typeof wilfredmeukdifftasticPackage

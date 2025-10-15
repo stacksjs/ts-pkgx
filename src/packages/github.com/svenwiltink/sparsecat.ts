@@ -6,18 +6,14 @@
  * @version `1.0.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sparsecat`
- * @name `sparsecat`
+ * @install `launchpad install github.com/svenwiltink/sparsecat`
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sparsecat
- * // Or access via domain
- * const samePkg = pantry.githubcomsvenwiltinksparsecat
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomsvenwiltinksparsecat
  * console.log(pkg.name)        // "sparsecat"
  * console.log(pkg.description) // "CLI tool that reduces bandwidth usage when tran..."
  * console.log(pkg.programs)    // ["sparsecat"]
@@ -42,12 +38,14 @@ export const sparsecatPackage = {
   description: 'CLI tool that reduces bandwidth usage when transmitting sparse files.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/svenwiltink/sparsecat/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/svenwiltink/sparsecat' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sparsecat' as const,
+  installCommand: 'launchpad install github.com/svenwiltink/sparsecat' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/svenwiltink/sparsecat -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/svenwiltink/sparsecat' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const sparsecatPackage = {
     'sparsecat',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +68,7 @@ export const sparsecatPackage = {
   versions: [
     '1.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sparsecat -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sparsecat' as const,
 }
 
 export type SparsecatPackage = typeof sparsecatPackage

@@ -6,18 +6,14 @@
  * @version `4.10.0` (61 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install railway`
- * @name `railway`
+ * @install `launchpad install railway.app`
+ * @homepage https://railway.app/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.railway
- * // Or access via domain
- * const samePkg = pantry.railwayapp
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.railwayapp
  * console.log(pkg.name)        // "railway"
  * console.log(pkg.description) // "Develop and deploy code with zero configuration"
  * console.log(pkg.programs)    // ["railway"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/railway-app.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const railwayPackage = {
+export const railwayappPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const railwayPackage = {
    */
   description: 'Develop and deploy code with zero configuration' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/railway.app/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://railway.app/' as const,
   githubUrl: 'https://github.com/railwayapp/cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install railway' as const,
+  installCommand: 'launchpad install railway.app' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +railway.app -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install railway.app' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -124,13 +122,7 @@ export const railwayPackage = {
     '3.6.0',
     '3.5.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) railway -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install railway' as const,
 }
 
-export type RailwayPackage = typeof railwayPackage
+export type RailwayappPackage = typeof railwayappPackage

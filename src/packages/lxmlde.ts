@@ -6,6 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install lxml.de`
+ * @homepage https://lxml.de/
  * @dependencies `python.org^3.10`, `gnome.org/libxml2~2.12`, `gnome.org/libxslt^1`
  *
  * @example
@@ -35,13 +36,15 @@ export const lxmldePackage = {
    */
   description: 'The lxml XML toolkit for Python' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lxml.de/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://lxml.de/' as const,
+  githubUrl: 'https://github.com/lxml/lxml' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install lxml.de' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lxml.de -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install lxml.de' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -77,8 +80,6 @@ export const lxmldePackage = {
     '4.9.3',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +lxml.de -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install lxml.de' as const,
 }
 
 export type LxmldePackage = typeof lxmldePackage

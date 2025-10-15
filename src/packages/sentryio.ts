@@ -6,19 +6,15 @@
  * @version `2.56.1` (60 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sentry-cli`
- * @name `sentry-cli`
+ * @install `launchpad install sentry.io`
+ * @homepage https://docs.sentry.io/cli/
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sentrycli
- * // Or access via domain
- * const samePkg = pantry.sentryio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.sentryio
  * console.log(pkg.name)        // "sentry-cli"
  * console.log(pkg.description) // "Command-line utility to interact with Sentry"
  * console.log(pkg.programs)    // ["sentry-cli"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/sentry-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sentrycliPackage = {
+export const sentryioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const sentrycliPackage = {
    */
   description: 'Command-line utility to interact with Sentry' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/sentry.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docs.sentry.io/cli/' as const,
+  githubUrl: 'https://github.com/getsentry/sentry-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sentry-cli' as const,
+  installCommand: 'launchpad install sentry.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +sentry.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install sentry.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -130,13 +128,7 @@ export const sentrycliPackage = {
     '2.30.0',
     '2.29.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sentry-cli -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sentry-cli' as const,
 }
 
-export type SentrycliPackage = typeof sentrycliPackage
+export type SentryioPackage = typeof sentryioPackage

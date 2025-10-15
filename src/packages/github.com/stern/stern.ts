@@ -6,18 +6,14 @@
  * @version `1.33.0` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install stern`
- * @name `stern`
+ * @install `launchpad install github.com/stern/stern`
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.stern
- * // Or access via domain
- * const samePkg = pantry.githubcomsternstern
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomsternstern
  * console.log(pkg.name)        // "stern"
  * console.log(pkg.description) // "⎈ Multi pod and container log tailing for Kuber..."
  * console.log(pkg.programs)    // ["stern"]
@@ -42,12 +38,14 @@ export const sternPackage = {
   description: '⎈ Multi pod and container log tailing for Kubernetes -- Friendly fork of https://github.com/wercker/stern' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/stern/stern/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/stern/stern' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install stern' as const,
+  installCommand: 'launchpad install github.com/stern/stern' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/stern/stern -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/stern/stern' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const sternPackage = {
     'stern',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -71,13 +75,7 @@ export const sternPackage = {
     '1.27.0',
     '1.26.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) stern -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install stern' as const,
 }
 
 export type SternPackage = typeof sternPackage

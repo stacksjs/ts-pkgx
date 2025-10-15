@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/krzkaczor/ny.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkrzkaczornyPackage = {
+export const nyPackage = {
   /**
    * The display name of this package.
    */
@@ -68,4 +68,4 @@ export const githubcomkrzkaczornyPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkrzkaczornyPackage = typeof githubcomkrzkaczornyPackage
+export type NyPackage = typeof nyPackage

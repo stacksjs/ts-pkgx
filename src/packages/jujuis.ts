@@ -6,18 +6,15 @@
  * @version `3.6.10` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install juju`
- * @name `juju`
+ * @install `launchpad install juju.is`
+ * @homepage https://juju.is/
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.juju
- * // Or access via domain
- * const samePkg = pantry.jujuis
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.jujuis
  * console.log(pkg.name)        // "juju"
  * console.log(pkg.description) // "Orchestration engine that enables the deploymen..."
  * console.log(pkg.programs)    // ["juju"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/juju-is.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jujuPackage = {
+export const jujuisPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const jujuPackage = {
    */
   description: 'Orchestration engine that enables the deployment, integration and lifecycle management of applications at any scale, on any infrastructure (Kubernetes or otherwise).' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/juju.is/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://juju.is/' as const,
+  githubUrl: 'https://github.com/juju/juju' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install juju' as const,
+  installCommand: 'launchpad install juju.is' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +juju.is -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install juju.is' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const jujuPackage = {
     'juju',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -84,13 +89,7 @@ export const jujuPackage = {
     '2.9.52',
     '2.9.51',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) juju -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install juju' as const,
 }
 
-export type JujuPackage = typeof jujuPackage
+export type JujuisPackage = typeof jujuisPackage

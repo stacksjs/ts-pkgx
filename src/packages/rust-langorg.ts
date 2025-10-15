@@ -6,20 +6,15 @@
  * @version `1.90.0` (37 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rust`
- * @name `rust`
+ * @install `launchpad install rust-lang.org`
+ * @homepage https://www.rust-lang.org/
  * @dependencies `zlib.net@1`
- * @companions `rust-lang.org/cargo`, `linux`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rust
- * // Or access via domain
- * const samePkg = pantry.rustlangorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.rustlangorg
  * console.log(pkg.name)        // "rust"
  * console.log(pkg.description) // "Empowering everyone to build reliable and effic..."
  * console.log(pkg.programs)    // ["cargo-clippy", "cargo-fmt", ...]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rust-lang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rustPackage = {
+export const rustlangorgPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const rustPackage = {
    */
   description: 'Empowering everyone to build reliable and efficient software.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.rust-lang.org/' as const,
+  githubUrl: 'https://github.com/rust-lang/rust' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rust' as const,
+  installCommand: 'launchpad install rust-lang.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rust-lang.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rust-lang.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,14 +63,7 @@ export const rustPackage = {
     'rustdoc',
     'rustfmt',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'rust-lang.org/cargo',
-    'linux',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -124,13 +114,7 @@ export const rustPackage = {
     '1.65.0',
     '1.64.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rust-lang.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rust' as const,
 }
 
-export type RustPackage = typeof rustPackage
+export type RustlangorgPackage = typeof rustlangorgPackage

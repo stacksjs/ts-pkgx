@@ -6,18 +6,14 @@
  * @version `0.8.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install kube-capacity`
- * @name `kube-capacity`
+ * @install `launchpad install github.com/robscott/kube-capacity`
+ * @dependencies `go.dev@~1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.kubecapacity
- * // Or access via domain
- * const samePkg = pantry.githubcomrobscottkubecapacity
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomrobscottkubecapacity
  * console.log(pkg.name)        // "kube-capacity"
  * console.log(pkg.description) // "A simple CLI that provides an overview of the r..."
  * console.log(pkg.programs)    // ["kube-capacity"]
@@ -42,12 +38,14 @@ export const kubecapacityPackage = {
   description: 'A simple CLI that provides an overview of the resource requests, limits, and utilization in a Kubernetes cluster' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/robscott/kube-capacity/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/robscott/kube-capacity' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install kube-capacity' as const,
+  installCommand: 'launchpad install github.com/robscott/kube-capacity' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/robscott/kube-capacity -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/robscott/kube-capacity' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const kubecapacityPackage = {
     'kube-capacity',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +68,7 @@ export const kubecapacityPackage = {
   versions: [
     '0.8.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) kube-capacity -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install kube-capacity' as const,
 }
 
 export type KubecapacityPackage = typeof kubecapacityPackage

@@ -6,8 +6,9 @@
  * @version `3.0.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install zip`
+ * @install `launchpad install info-zip.org/zip`
  * @name `zip`
+ * @homepage https://infozip.sourceforge.net/Zip.html
  * @dependencies `sourceware.org/bzip2`
  *
  * @example
@@ -42,13 +43,15 @@ export const zipPackage = {
    */
   description: 'Compression and file packaging/archive utility' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/info-zip.org/zip/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://infozip.sourceforge.net/Zip.html' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install zip' as const,
+  installCommand: 'launchpad install info-zip.org/zip' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +info-zip.org/zip -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install info-zip.org/zip' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,8 +82,6 @@ export const zipPackage = {
    * You can use any of these names to access the package.
    */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +info-zip.org/zip -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install zip' as const,
 }
 
 export type ZipPackage = typeof zipPackage

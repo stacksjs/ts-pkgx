@@ -1,5 +1,5 @@
 /**
- * **gnu.org/readline** - pkgx package
+ * **readline** - pkgx package
  *
  * @domain `gnu.org/readline`
  * @version `8.3.0` (4 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorgreadline
- * console.log(pkg.name)        // "gnu.org/readline"
+ * console.log(pkg.name)        // "readline"
  * console.log(pkg.versions[0]) // "8.3.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const gnuorgreadlinePackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/readline' as const,
+  name: 'readline' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const gnuorgreadlinePackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/readline/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnu.org/readline' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/readline -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/readline' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,8 +63,6 @@ export const gnuorgreadlinePackage = {
     '8.1.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/readline -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/readline' as const,
 }
 
 export type GnuorgreadlinePackage = typeof gnuorgreadlinePackage

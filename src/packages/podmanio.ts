@@ -6,20 +6,15 @@
  * @version `5.6.2` (43 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install podman`
- * @name `podman`
+ * @install `launchpad install podman.io`
+ * @homepage https://podman.io/
  * @dependencies `qemu.org`, `github.com/containers/gvisor-tap-vsock`, `darwin:github.com/crc-org/vfkit` (includes OS-specific dependencies with `os:package` format)
- * @companions `openssh.com`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.podman
- * // Or access via domain
- * const samePkg = pantry.podmanio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.podmanio
  * console.log(pkg.name)        // "podman"
  * console.log(pkg.description) // "Podman: A tool for managing OCI containers and ..."
  * console.log(pkg.programs)    // ["podman", "podman-remote", ...]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/podman-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const podmanPackage = {
+export const podmanioPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const podmanPackage = {
    */
   description: 'Podman: A tool for managing OCI containers and pods.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/podman.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://podman.io/' as const,
+  githubUrl: 'https://github.com/containers/podman' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install podman' as const,
+  installCommand: 'launchpad install podman.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +podman.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install podman.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -59,13 +56,7 @@ export const podmanPackage = {
     'podman-remote',
     'podman-mac-helper',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'openssh.com',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -125,13 +116,7 @@ export const podmanPackage = {
     '4.5.1',
     '4.5.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +podman.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install podman' as const,
 }
 
-export type PodmanPackage = typeof podmanPackage
+export type PodmanioPackage = typeof podmanioPackage

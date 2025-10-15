@@ -1,5 +1,5 @@
 /**
- * **xvid.com** - pkgx package
+ * **xvid** - pkgx package
  *
  * @domain `xvid.com`
  * @version `1.3.7` (1 versions available)
@@ -12,7 +12,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xvidcom
- * console.log(pkg.name)        // "xvid.com"
+ * console.log(pkg.name)        // "xvid"
  * console.log(pkg.versions[0]) // "1.3.7" (latest)
  * ```
  *
@@ -23,7 +23,7 @@ export const xvidcomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'xvid.com' as const,
+  name: 'xvid' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,12 +34,14 @@ export const xvidcomPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/xvid.com/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install xvid.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +xvid.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install xvid.com' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -51,8 +53,6 @@ export const xvidcomPackage = {
     '1.3.7',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +xvid.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install xvid.com' as const,
 }
 
 export type XvidcomPackage = typeof xvidcomPackage

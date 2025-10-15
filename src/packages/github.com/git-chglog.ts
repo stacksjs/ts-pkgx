@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/git-chglog.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgitchglogPackage = {
+export const gitchglogPackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomgitchglogPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgitchglogPackage = typeof githubcomgitchglogPackage
+export type GitchglogPackage = typeof gitchglogPackage

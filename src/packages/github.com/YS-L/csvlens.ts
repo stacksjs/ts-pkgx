@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/YS-L/csvlens.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomyslcsvlensPackage = {
+export const csvlensPackage = {
   /**
    * The display name of this package.
    */
@@ -75,4 +75,4 @@ export const githubcomyslcsvlensPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomyslcsvlensPackage = typeof githubcomyslcsvlensPackage
+export type CsvlensPackage = typeof csvlensPackage

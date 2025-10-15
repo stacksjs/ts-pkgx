@@ -6,19 +6,15 @@
  * @version `0.0.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install keep`
- * @name `keep`
+ * @install `launchpad install keephq.dev`
+ * @homepage https://keephq.dev
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.keep
- * // Or access via domain
- * const samePkg = pantry.keephqdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.keephqdev
  * console.log(pkg.name)        // "keep"
  * console.log(pkg.description) // "The open-source AIOps and alert management plat..."
  * console.log(pkg.programs)    // ["keep"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/keephq-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const keepPackage = {
+export const keephqdevPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const keepPackage = {
    */
   description: 'The open-source AIOps and alert management platform' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/keephq.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://keephq.dev' as const,
+  githubUrl: 'https://github.com/keephq/keep' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install keep' as const,
+  installCommand: 'launchpad install keephq.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +keephq.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install keephq.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +69,7 @@ export const keepPackage = {
   versions: [
     '0.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) keep -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install keep' as const,
 }
 
-export type KeepPackage = typeof keepPackage
+export type KeephqdevPackage = typeof keephqdevPackage

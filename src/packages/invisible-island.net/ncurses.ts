@@ -1,5 +1,5 @@
 /**
- * **invisible-island.net/ncurses** - Text-based UI library
+ * **ncurses** - Text-based UI library
  *
  * @domain `invisible-island.net/ncurses`
  * @programs `captoinfo`, `clear`, `infocmp`, `infotocap`, `ncursesw6-config`, ... (+6 more)
@@ -7,13 +7,15 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install invisible-island.net/ncurses`
+ * @homepage https://invisible-island.net/ncurses/announce.html
+ * @dependencies `github.com/tmux/tmux@^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.invisibleislandnetncurses
- * console.log(pkg.name)        // "invisible-island.net/ncurses"
+ * console.log(pkg.name)        // "ncurses"
  * console.log(pkg.description) // "Text-based UI library"
  * console.log(pkg.programs)    // ["captoinfo", "clear", ...]
  * console.log(pkg.versions[0]) // "6.5.0" (latest)
@@ -26,7 +28,7 @@ export const invisibleislandnetncursesPackage = {
   /**
    * The display name of this package.
    */
-  name: 'invisible-island.net/ncurses' as const,
+  name: 'ncurses' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,13 +38,15 @@ export const invisibleislandnetncursesPackage = {
    */
   description: 'Text-based UI library' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/invisible-island.net/ncurses/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://invisible-island.net/ncurses/announce.html' as const,
+  githubUrl: 'https://github.com/mirror/ncurses' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install invisible-island.net/ncurses' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +invisible-island.net/ncurses -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install invisible-island.net/ncurses' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -61,7 +65,13 @@ export const invisibleislandnetncursesPackage = {
     'tset',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'github.com/tmux/tmux@^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -72,8 +82,6 @@ export const invisibleislandnetncursesPackage = {
     '6.3.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +invisible-island.net/ncurses -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install invisible-island.net/ncurses' as const,
 }
 
 export type InvisibleislandnetncursesPackage = typeof invisibleislandnetncursesPackage

@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/crc-org/vfkit.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcrcorgvfkitPackage = {
+export const vfkitPackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomcrcorgvfkitPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomcrcorgvfkitPackage = typeof githubcomcrcorgvfkitPackage
+export type VfkitPackage = typeof vfkitPackage

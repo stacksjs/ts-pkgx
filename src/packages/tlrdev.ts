@@ -6,19 +6,14 @@
  * @version `2.0.7` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install teller`
- * @name `teller`
+ * @install `launchpad install tlr.dev`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.teller
- * // Or access via domain
- * const samePkg = pantry.tlrdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.tlrdev
  * console.log(pkg.name)        // "teller"
  * console.log(pkg.description) // "Cloud native secrets management for developers ..."
  * console.log(pkg.programs)    // ["teller"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tlr-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tellerPackage = {
+export const tlrdevPackage = {
   /**
    * The display name of this package.
    */
@@ -48,7 +43,9 @@ export const tellerPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install teller' as const,
+  installCommand: 'launchpad install tlr.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tlr.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tlr.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,13 +72,7 @@ export const tellerPackage = {
     '2.0.4',
     '1.5.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) teller -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install teller' as const,
 }
 
-export type TellerPackage = typeof tellerPackage
+export type TlrdevPackage = typeof tlrdevPackage

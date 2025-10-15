@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/licensee/licensed.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomlicenseelicensedPackage = {
+export const licensedPackage = {
   /**
    * The display name of this package.
    */
@@ -76,4 +76,4 @@ export const githubcomlicenseelicensedPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomlicenseelicensedPackage = typeof githubcomlicenseelicensedPackage
+export type LicensedPackage = typeof licensedPackage

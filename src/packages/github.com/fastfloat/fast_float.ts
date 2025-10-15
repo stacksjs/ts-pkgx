@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/fastfloat/fast_float.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomfastfloatfast_floatPackage = {
+export const fast_floatPackage = {
   /**
    * The display name of this package.
    */
@@ -70,4 +70,4 @@ export const githubcomfastfloatfast_floatPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomfastfloatfast_floatPackage = typeof githubcomfastfloatfast_floatPackage
+export type Fast_floatPackage = typeof fast_floatPackage

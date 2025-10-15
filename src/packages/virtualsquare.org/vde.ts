@@ -1,18 +1,19 @@
 /**
- * **virtualsquare.org/vde** - pkgx package
+ * **vde** - pkgx package
  *
  * @domain `virtualsquare.org/vde`
  * @version `2.3.3` (1 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install virtualsquare.org/vde`
+ * @dependencies `gnu.org/autoconf@^2`, `gnu.org/automake@^1`, `gnu.org/libtool@^2.4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.virtualsquareorgvde
- * console.log(pkg.name)        // "virtualsquare.org/vde"
+ * console.log(pkg.name)        // "vde"
  * console.log(pkg.versions[0]) // "2.3.3" (latest)
  * ```
  *
@@ -23,7 +24,7 @@ export const virtualsquareorgvdePackage = {
   /**
    * The display name of this package.
    */
-  name: 'virtualsquare.org/vde' as const,
+  name: 'vde' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,15 +35,25 @@ export const virtualsquareorgvdePackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/virtualsquare.org/vde/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/virtualsquare/vde-2' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install virtualsquare.org/vde' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +virtualsquare.org/vde -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install virtualsquare.org/vde' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/autoconf@^2',
+    'gnu.org/automake@^1',
+    'gnu.org/libtool@^2.4',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -51,8 +62,6 @@ export const virtualsquareorgvdePackage = {
     '2.3.3',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +virtualsquare.org/vde -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install virtualsquare.org/vde' as const,
 }
 
 export type VirtualsquareorgvdePackage = typeof virtualsquareorgvdePackage

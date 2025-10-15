@@ -6,18 +6,13 @@
  * @version `0.18.0` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install patchelf`
- * @name `patchelf`
+ * @install `launchpad install nixos.org/patchelf`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.patchelf
- * // Or access via domain
- * const samePkg = pantry.nixosorgpatchelf
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.nixosorgpatchelf
  * console.log(pkg.name)        // "patchelf"
  * console.log(pkg.description) // "A small utility to modify the dynamic linker an..."
  * console.log(pkg.programs)    // ["patchelf"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/nixos-org/patchelf.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const patchelfPackage = {
+export const nixosorgpatchelfPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const patchelfPackage = {
   description: 'A small utility to modify the dynamic linker and RPATH of ELF executables' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nixos.org/patchelf/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/NixOS/patchelf' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install patchelf' as const,
+  installCommand: 'launchpad install nixos.org/patchelf' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nixos.org/patchelf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nixos.org/patchelf' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +69,7 @@ export const patchelfPackage = {
     '0.15.1',
     '0.15.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) patchelf -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install patchelf' as const,
 }
 
-export type PatchelfPackage = typeof patchelfPackage
+export type NixosorgpatchelfPackage = typeof nixosorgpatchelfPackage

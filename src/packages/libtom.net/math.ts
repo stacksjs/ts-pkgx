@@ -5,18 +5,15 @@
  * @version `1.3.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install LibTomMath`
- * @name `LibTomMath`
+ * @install `launchpad install libtom.net/math`
+ * @homepage https://www.libtom.net
+ * @dependencies `gnu.org/libtool@^2.4.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.LibTomMath
- * // Or access via domain
- * const samePkg = pantry.libtomnetmath
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.libtomnetmath
  * console.log(pkg.name)        // "LibTomMath"
  * console.log(pkg.description) // "LibTomMath is a free open source portable numbe..."
  * console.log(pkg.versions[0]) // "1.3.0" (latest)
@@ -25,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libtom-net/math.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libTomMathPackage = {
+export const libtomnetmathPackage = {
   /**
    * The display name of this package.
    */
@@ -39,16 +36,24 @@ export const libTomMathPackage = {
    */
   description: 'LibTomMath is a free open source portable number theoretic multiple-precision integer library written entirely in C.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libtom.net/math/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.libtom.net' as const,
+  githubUrl: 'https://github.com/libtom/libtommath' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install LibTomMath' as const,
+  installCommand: 'launchpad install libtom.net/math' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libtom.net/math -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libtom.net/math' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/libtool@^2.4.7',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -57,13 +62,7 @@ export const libTomMathPackage = {
     '1.3.0',
     '1.2.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libtom.net/math -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install LibTomMath' as const,
 }
 
-export type LibTomMathPackage = typeof libTomMathPackage
+export type LibtomnetmathPackage = typeof libtomnetmathPackage

@@ -6,19 +6,15 @@
  * @version `0.35.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install neon-config`
- * @name `neon-config`
+ * @install `launchpad install notroj.github.io/neon`
+ * @homepage https://notroj.github.io/neon/
  * @dependencies `openssl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.neonconfig
- * // Or access via domain
- * const samePkg = pantry.notrojgithubioneon
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.notrojgithubioneon
  * console.log(pkg.name)        // "neon-config"
  * console.log(pkg.description) // "neon - an HTTP/1.1 and WebDAV client library wi..."
  * console.log(pkg.programs)    // ["neon-config"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/notroj-github-io/neon.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const neonconfigPackage = {
+export const notrojgithubioneonPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const neonconfigPackage = {
    */
   description: 'neon - an HTTP/1.1 and WebDAV client library with a C API' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/notroj.github.io/neon/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://notroj.github.io/neon/' as const,
+  githubUrl: 'https://github.com/notroj/neon' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install neon-config' as const,
+  installCommand: 'launchpad install notroj.github.io/neon' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +notroj.github.io/neon -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install notroj.github.io/neon' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,13 +74,7 @@ export const neonconfigPackage = {
     '0.33.0',
     '0.32.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) neon-config -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install neon-config' as const,
 }
 
-export type NeonconfigPackage = typeof neonconfigPackage
+export type NotrojgithubioneonPackage = typeof notrojgithubioneonPackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/k0sproject/k0sctl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomk0sprojectk0sctlPackage = {
+export const k0sctlPackage = {
   /**
    * The display name of this package.
    */
@@ -91,4 +91,4 @@ export const githubcomk0sprojectk0sctlPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomk0sprojectk0sctlPackage = typeof githubcomk0sprojectk0sctlPackage
+export type K0sctlPackage = typeof k0sctlPackage

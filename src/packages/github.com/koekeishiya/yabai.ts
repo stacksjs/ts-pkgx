@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/koekeishiya/yabai.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkoekeishiyayabaiPackage = {
+export const yabaiPackage = {
   /**
    * The display name of this package.
    */
@@ -94,4 +94,4 @@ export const githubcomkoekeishiyayabaiPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkoekeishiyayabaiPackage = typeof githubcomkoekeishiyayabaiPackage
+export type YabaiPackage = typeof yabaiPackage

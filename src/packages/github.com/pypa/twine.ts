@@ -6,19 +6,15 @@
  * @version `6.2.0` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install twine`
- * @name `twine`
+ * @install `launchpad install github.com/pypa/twine`
+ * @homepage https://twine.readthedocs.io/
  * @dependencies `python.org>=3.7<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.twine
- * // Or access via domain
- * const samePkg = pantry.githubcompypatwine
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcompypatwine
  * console.log(pkg.name)        // "twine"
  * console.log(pkg.description) // "Utilities for interacting with PyPI"
  * console.log(pkg.programs)    // ["twine"]
@@ -42,13 +38,15 @@ export const twinePackage = {
    */
   description: 'Utilities for interacting with PyPI' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/pypa/twine/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://twine.readthedocs.io/' as const,
+  githubUrl: 'https://github.com/pypa/twine' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install twine' as const,
+  installCommand: 'launchpad install github.com/pypa/twine' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/pypa/twine -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/pypa/twine' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,13 +76,7 @@ export const twinePackage = {
     '5.0.0',
     '4.0.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) twine -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install twine' as const,
 }
 
 export type TwinePackage = typeof twinePackage

@@ -6,18 +6,15 @@
  * @version `0.17.81` (45 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gqlgen`
- * @name `gqlgen`
+ * @install `launchpad install gqlgen.com`
+ * @homepage https://gqlgen.com
+ * @dependencies `go.dev@^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gqlgen
- * // Or access via domain
- * const samePkg = pantry.gqlgencom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gqlgencom
  * console.log(pkg.name)        // "gqlgen"
  * console.log(pkg.description) // "go generate based graphql server library"
  * console.log(pkg.programs)    // ["gqlgen"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gqlgen-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gqlgenPackage = {
+export const gqlgencomPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const gqlgenPackage = {
    */
   description: 'go generate based graphql server library' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gqlgen.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://gqlgen.com' as const,
+  githubUrl: 'https://github.com/99designs/gqlgen' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gqlgen' as const,
+  installCommand: 'launchpad install gqlgen.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gqlgen.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gqlgen.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const gqlgenPackage = {
     'gqlgen',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -108,13 +113,7 @@ export const gqlgenPackage = {
     '0.17.38',
     '0.17.37',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gqlgen -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gqlgen' as const,
 }
 
-export type GqlgenPackage = typeof gqlgenPackage
+export type GqlgencomPackage = typeof gqlgencomPackage

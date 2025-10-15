@@ -1,25 +1,20 @@
 /**
- * **mkdocs** - Documentation that simply works
+ * **squidfunk/mkdocs-material** - Documentation that simply works
  *
  * @domain `github.com/squidfunk/mkdocs-material`
  * @programs `mkdocs`
  * @version `9.6.21` (69 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mkdocs`
- * @name `squidfunk/mkdocs-material`
- * @aliases `mkdocs`
+ * @install `launchpad install github.com/squidfunk/mkdocs-material`
+ * @homepage https://squidfunk.github.io/mkdocs-material/
  * @dependencies `pkgx.sh^1`, `sass-lang.com/libsass^3.6`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.mkdocs
- * // Or access via domain
- * const samePkg = pantry.githubcomsquidfunkmkdocsmaterial
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomsquidfunkmkdocsmaterial
  * console.log(pkg.name)        // "squidfunk/mkdocs-material"
  * console.log(pkg.description) // "Documentation that simply works"
  * console.log(pkg.programs)    // ["mkdocs"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/squidfunk/mkdocs-material.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mkdocsPackage = {
+export const mkdocsmaterialPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const mkdocsPackage = {
    */
   description: 'Documentation that simply works' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/squidfunk/mkdocs-material/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://squidfunk.github.io/mkdocs-material/' as const,
+  githubUrl: 'https://github.com/squidfunk/mkdocs-material' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mkdocs' as const,
+  installCommand: 'launchpad install github.com/squidfunk/mkdocs-material' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/squidfunk/mkdocs-material -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/squidfunk/mkdocs-material' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -141,15 +138,7 @@ export const mkdocsPackage = {
     '9.5.5',
     '9.5.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'mkdocs',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mkdocs -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mkdocs' as const,
+  aliases: [] as const,
 }
 
-export type MkdocsPackage = typeof mkdocsPackage
+export type MkdocsmaterialPackage = typeof mkdocsmaterialPackage

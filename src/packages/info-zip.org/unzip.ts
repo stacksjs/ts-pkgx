@@ -7,18 +7,19 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install info-zip.org/unzip`
- * @aliases `unzip`
+ * @name `unzip`
+ * @homepage https://infozip.sourceforge.net/UnZip.html
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
+ * // Access the package
  * const pkg = pantry.unzip
  * // Or access via domain
  * const samePkg = pantry.infoziporgunzip
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "info-zip.org/unzip"
+ * console.log(pkg.name)        // "unzip"
  * console.log(pkg.description) // "Extraction utility for .zip compressed archives"
  * console.log(pkg.programs)    // ["funzip", "unzip", ...]
  * console.log(pkg.versions[0]) // "6.0.0" (latest)
@@ -31,7 +32,7 @@ export const unzipPackage = {
   /**
    * The display name of this package.
    */
-  name: 'info-zip.org/unzip' as const,
+  name: 'unzip' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -41,13 +42,15 @@ export const unzipPackage = {
    */
   description: 'Extraction utility for .zip compressed archives' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/info-zip.org/unzip/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://infozip.sourceforge.net/UnZip.html' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install info-zip.org/unzip' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +info-zip.org/unzip -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install info-zip.org/unzip' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,11 +75,7 @@ export const unzipPackage = {
    * Alternative names for this package.
    * You can use any of these names to access the package.
    */
-  aliases: [
-    'unzip',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +info-zip.org/unzip -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install info-zip.org/unzip' as const,
+  aliases: [] as const,
 }
 
 export type UnzipPackage = typeof unzipPackage

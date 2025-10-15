@@ -6,19 +6,15 @@
  * @version `1.25.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install wget`
- * @name `wget`
+ * @install `launchpad install gnu.org/wget`
+ * @homepage https://www.gnu.org/software/wget/
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.wget
- * // Or access via domain
- * const samePkg = pantry.gnuorgwget
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnuorgwget
  * console.log(pkg.name)        // "wget"
  * console.log(pkg.description) // "Internet file retriever"
  * console.log(pkg.programs)    // ["wget"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/wget.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const wgetPackage = {
+export const gnuorgwgetPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const wgetPackage = {
    */
   description: 'Internet file retriever' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/wget/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.gnu.org/software/wget/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install wget' as const,
+  installCommand: 'launchpad install gnu.org/wget' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/wget -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/wget' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,13 +72,7 @@ export const wgetPackage = {
     '1.21.4',
     '1.21.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wget -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install wget' as const,
 }
 
-export type WgetPackage = typeof wgetPackage
+export type GnuorgwgetPackage = typeof gnuorgwgetPackage

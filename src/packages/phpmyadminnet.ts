@@ -5,19 +5,14 @@
  * @version `5.2.3` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install phpMyAdmin`
- * @name `phpMyAdmin`
+ * @install `launchpad install phpmyadmin.net`
  * @dependencies `php.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.phpMyAdmin
- * // Or access via domain
- * const samePkg = pantry.phpmyadminnet
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.phpmyadminnet
  * console.log(pkg.name)        // "phpMyAdmin"
  * console.log(pkg.versions[0]) // "5.2.3" (latest)
  * ```
@@ -25,7 +20,7 @@
  * @see https://ts-pkgx.netlify.app/packages/phpmyadmin-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const phpMyAdminPackage = {
+export const phpmyadminnetPackage = {
   /**
    * The display name of this package.
    */
@@ -40,12 +35,14 @@ export const phpMyAdminPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/phpmyadmin.net/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install phpMyAdmin' as const,
+  installCommand: 'launchpad install phpmyadmin.net' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +phpmyadmin.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install phpmyadmin.net' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -64,13 +61,7 @@ export const phpMyAdminPackage = {
     '5.2.2',
     '5.2.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +phpmyadmin.net -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install phpMyAdmin' as const,
 }
 
-export type PhpMyAdminPackage = typeof phpMyAdminPackage
+export type PhpmyadminnetPackage = typeof phpmyadminnetPackage

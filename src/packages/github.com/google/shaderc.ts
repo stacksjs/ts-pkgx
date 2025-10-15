@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/google/shaderc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgoogleshadercPackage = {
+export const shadercPackage = {
   /**
    * The display name of this package.
    */
@@ -81,4 +81,4 @@ export const githubcomgoogleshadercPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgoogleshadercPackage = typeof githubcomgoogleshadercPackage
+export type ShadercPackage = typeof shadercPackage

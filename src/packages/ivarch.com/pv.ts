@@ -6,18 +6,14 @@
  * @version `1.9.42` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pv`
- * @name `pv`
+ * @install `launchpad install ivarch.com/pv`
+ * @homepage https://www.ivarch.com/programs/pv.shtml
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pv
- * // Or access via domain
- * const samePkg = pantry.ivarchcompv
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ivarchcompv
  * console.log(pkg.name)        // "pv"
  * console.log(pkg.description) // "Monitor data's progress through a pipe"
  * console.log(pkg.programs)    // ["pv"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ivarch-com/pv.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pvPackage = {
+export const ivarchcompvPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const pvPackage = {
    */
   description: 'Monitor data\'s progress through a pipe' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ivarch.com/pv/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.ivarch.com/programs/pv.shtml' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pv' as const,
+  installCommand: 'launchpad install ivarch.com/pv' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ivarch.com/pv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ivarch.com/pv' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,13 +76,7 @@ export const pvPackage = {
     '1.8.9',
     '1.8.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pv -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pv' as const,
 }
 
-export type PvPackage = typeof pvPackage
+export type IvarchcompvPackage = typeof ivarchcompvPackage

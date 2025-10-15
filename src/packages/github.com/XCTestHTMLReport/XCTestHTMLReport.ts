@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/XCTestHTMLReport/XCTestHTMLReport.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomxctesthtmlreportxctesthtmlreportPackage = {
+export const xctesthtmlreportPackage = {
   /**
    * The display name of this package.
    */
@@ -73,4 +73,4 @@ export const githubcomxctesthtmlreportxctesthtmlreportPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomxctesthtmlreportxctesthtmlreportPackage = typeof githubcomxctesthtmlreportxctesthtmlreportPackage
+export type XctesthtmlreportPackage = typeof xctesthtmlreportPackage

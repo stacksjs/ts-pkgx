@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/bats-core/bats-core.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcombatscorebatscorePackage = {
+export const batscorePackage = {
   /**
    * The display name of this package.
    */
@@ -75,4 +75,4 @@ export const githubcombatscorebatscorePackage = {
   aliases: [] as const,
 }
 
-export type GithubcombatscorebatscorePackage = typeof githubcombatscorebatscorePackage
+export type BatscorePackage = typeof batscorePackage

@@ -6,19 +6,15 @@
  * @version `7.16.0` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install openapi-generator`
- * @name `openapi-generator`
+ * @install `launchpad install openapi-generator.tech`
+ * @homepage https://openapi-generator.tech/
  * @dependencies `openjdk.org^21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.openapigenerator
- * // Or access via domain
- * const samePkg = pantry.openapigeneratortech
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.openapigeneratortech
  * console.log(pkg.name)        // "openapi-generator"
  * console.log(pkg.description) // "OpenAPI Generator allows generation of API clie..."
  * console.log(pkg.programs)    // ["openapi-generator"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/openapi-generator-tech.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const openapigeneratorPackage = {
+export const openapigeneratortechPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const openapigeneratorPackage = {
    */
   description: 'OpenAPI Generator allows generation of API client libraries (SDK generation), server stubs, documentation and configuration automatically given an OpenAPI Spec (v2, v3)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openapi-generator.tech/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://openapi-generator.tech/' as const,
   githubUrl: 'https://github.com/OpenAPITools/openapi-generator' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install openapi-generator' as const,
+  installCommand: 'launchpad install openapi-generator.tech' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openapi-generator.tech -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openapi-generator.tech' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -85,13 +83,7 @@ export const openapigeneratorPackage = {
     '7.3.0',
     '7.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) openapi-generator -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install openapi-generator' as const,
 }
 
-export type OpenapigeneratorPackage = typeof openapigeneratorPackage
+export type OpenapigeneratortechPackage = typeof openapigeneratortechPackage

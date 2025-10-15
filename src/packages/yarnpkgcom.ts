@@ -6,19 +6,15 @@
  * @version `4.10.3` (46 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install yarn`
- * @name `yarn`
+ * @install `launchpad install yarnpkg.com`
+ * @homepage https://yarnpkg.com/
  * @dependencies `nodejs.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.yarn
- * // Or access via domain
- * const samePkg = pantry.yarnpkgcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.yarnpkgcom
  * console.log(pkg.name)        // "yarn"
  * console.log(pkg.description) // "📦🐈 Active development trunk for Yarn ⚒"
  * console.log(pkg.programs)    // ["yarn", "yarnpkg"]
@@ -42,13 +38,15 @@ export const yarnPackage = {
    */
   description: '📦🐈 Active development trunk for Yarn ⚒' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/yarnpkg.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://yarnpkg.com/' as const,
+  githubUrl: 'https://github.com/yarnpkg/berry' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install yarn' as const,
+  installCommand: 'launchpad install yarnpkg.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install yarnpkg.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -117,13 +115,7 @@ export const yarnPackage = {
     '3.5.0',
     '3.4.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +yarnpkg.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install yarn' as const,
 }
 
 export type YarnPackage = typeof yarnPackage

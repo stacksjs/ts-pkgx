@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/ArionThinker/tea-package-builder.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomarionthinkerteapackagebuilderPackage = {
+export const teapackagebuilderPackage = {
   /**
    * The display name of this package.
    */
@@ -79,4 +79,4 @@ export const githubcomarionthinkerteapackagebuilderPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomarionthinkerteapackagebuilderPackage = typeof githubcomarionthinkerteapackagebuilderPackage
+export type TeapackagebuilderPackage = typeof teapackagebuilderPackage

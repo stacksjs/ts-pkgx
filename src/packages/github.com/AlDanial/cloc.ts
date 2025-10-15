@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/AlDanial/cloc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomaldanialclocPackage = {
+export const clocPackage = {
   /**
    * The display name of this package.
    */
@@ -83,4 +83,4 @@ export const githubcomaldanialclocPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomaldanialclocPackage = typeof githubcomaldanialclocPackage
+export type ClocPackage = typeof clocPackage

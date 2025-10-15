@@ -1,5 +1,5 @@
 /**
- * **gnu.org/gettext** - GNU internationalization (i18n) and localization (l10n) library
+ * **gettext** - GNU internationalization (i18n) and localization (l10n) library
  *
  * @domain `gnu.org/gettext`
  * @programs `autopoint`, `envsubst`, `gettext`, `gettext.sh`, `gettextize`, ... (+17 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/gettext`
+ * @homepage https://www.gnu.org/software/gettext/
  * @dependencies `gnome.org/libxml2~2.13 # 2.14 changes the API`, `tukaani.org/xz^5 # autopoint needs this to unpack archives`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnuorggettext
- * console.log(pkg.name)        // "gnu.org/gettext"
+ * console.log(pkg.name)        // "gettext"
  * console.log(pkg.description) // "GNU internationalization (i18n) and localizatio..."
  * console.log(pkg.programs)    // ["autopoint", "envsubst", ...]
  * console.log(pkg.versions[0]) // "0.22.5" (latest)
@@ -27,7 +28,7 @@ export const gnuorggettextPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnu.org/gettext' as const,
+  name: 'gettext' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const gnuorggettextPackage = {
    */
   description: 'GNU internationalization (i18n) and localization (l10n) library' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gettext/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.gnu.org/software/gettext/' as const,
+  githubUrl: 'https://github.com/autotools-mirror/gettext' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnu.org/gettext' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gettext -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/gettext' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -95,8 +98,6 @@ export const gnuorggettextPackage = {
     '0.21.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/gettext -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnu.org/gettext' as const,
 }
 
 export type GnuorggettextPackage = typeof gnuorggettextPackage

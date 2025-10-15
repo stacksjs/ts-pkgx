@@ -6,19 +6,15 @@
  * @version `6.2.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install swift`
- * @name `swift`
+ * @install `launchpad install swift.org`
+ * @homepage https://swift.org
  * @dependencies `linux:gnu.org/gcc`, `linux:gnu.org/binutils`, `linux:gnupg.org^2`, ... (+4 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.swift
- * // Or access via domain
- * const samePkg = pantry.swiftorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.swiftorg
  * console.log(pkg.name)        // "swift"
  * console.log(pkg.description) // "The Swift Programming Language"
  * console.log(pkg.programs)    // ["docc", "dsymutil", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/swift-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const swiftPackage = {
+export const swiftorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const swiftPackage = {
    */
   description: 'The Swift Programming Language' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/swift.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://swift.org' as const,
+  githubUrl: 'https://github.com/apple/swift' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install swift' as const,
+  installCommand: 'launchpad install swift.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +swift.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install swift.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -114,13 +112,7 @@ export const swiftPackage = {
     '5.10.0',
     '5.9.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +swift.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install swift' as const,
 }
 
-export type SwiftPackage = typeof swiftPackage
+export type SwiftorgPackage = typeof swiftorgPackage

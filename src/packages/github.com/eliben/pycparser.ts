@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/eliben/pycparser.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomelibenpycparserPackage = {
+export const pycparserPackage = {
   /**
    * The display name of this package.
    */
@@ -65,4 +65,4 @@ export const githubcomelibenpycparserPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomelibenpycparserPackage = typeof githubcomelibenpycparserPackage
+export type PycparserPackage = typeof pycparserPackage

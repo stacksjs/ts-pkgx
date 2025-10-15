@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Z3Prover/z3.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomz3proverz3Package = {
+export const z3Package = {
   /**
    * The display name of this package.
    */
@@ -87,4 +87,4 @@ export const githubcomz3proverz3Package = {
   aliases: [] as const,
 }
 
-export type Githubcomz3proverz3Package = typeof githubcomz3proverz3Package
+export type Z3Package = typeof z3Package

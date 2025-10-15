@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/TartanLlama/expected.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomtartanllamaexpectedPackage = {
+export const expectedPackage = {
   /**
    * The display name of this package.
    */
@@ -67,4 +67,4 @@ export const githubcomtartanllamaexpectedPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomtartanllamaexpectedPackage = typeof githubcomtartanllamaexpectedPackage
+export type ExpectedPackage = typeof expectedPackage

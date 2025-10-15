@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/libsndfile/libsndfile.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomlibsndfilelibsndfilePackage = {
+export const libsndfilePackage = {
   /**
    * The display name of this package.
    */
@@ -81,4 +81,4 @@ export const githubcomlibsndfilelibsndfilePackage = {
   aliases: [] as const,
 }
 
-export type GithubcomlibsndfilelibsndfilePackage = typeof githubcomlibsndfilelibsndfilePackage
+export type LibsndfilePackage = typeof libsndfilePackage

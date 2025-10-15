@@ -6,19 +6,15 @@
  * @version `1.29.2` (21 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install nginx`
- * @name `nginx`
+ * @install `launchpad install nginx.org`
+ * @homepage https://nginx.org/
  * @dependencies `pcre.org^8.45 # switch to pcre.org/pcre2 once it`, `zlib.net^1.2.13`, `openssl.org^1.1.1k`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.nginx
- * // Or access via domain
- * const samePkg = pantry.nginxorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.nginxorg
  * console.log(pkg.name)        // "nginx"
  * console.log(pkg.description) // "HTTP(S) server and reverse proxy, and IMAP/POP3..."
  * console.log(pkg.programs)    // ["nginx"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/nginx-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const nginxPackage = {
+export const nginxorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const nginxPackage = {
    */
   description: 'HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nginx.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://nginx.org/' as const,
+  githubUrl: 'https://github.com/nginx/nginx' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install nginx' as const,
+  installCommand: 'launchpad install nginx.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nginx.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install nginx.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -93,13 +91,7 @@ export const nginxPackage = {
     '1.24.0',
     '1.23.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) nginx -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install nginx' as const,
 }
 
-export type NginxPackage = typeof nginxPackage
+export type NginxorgPackage = typeof nginxorgPackage

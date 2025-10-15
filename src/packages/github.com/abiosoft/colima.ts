@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/abiosoft/colima.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomabiosoftcolimaPackage = {
+export const colimaPackage = {
   /**
    * The display name of this package.
    */
@@ -97,4 +97,4 @@ export const githubcomabiosoftcolimaPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomabiosoftcolimaPackage = typeof githubcomabiosoftcolimaPackage
+export type ColimaPackage = typeof colimaPackage

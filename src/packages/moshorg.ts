@@ -6,19 +6,15 @@
  * @version `1.4.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mosh`
- * @name `mosh`
+ * @install `launchpad install mosh.org`
+ * @homepage https://mosh.org
  * @dependencies `protobuf.dev@26.1.0`, `invisible-island.net/ncurses@6`, `zlib.net@1.3`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mosh
- * // Or access via domain
- * const samePkg = pantry.moshorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.moshorg
  * console.log(pkg.name)        // "mosh"
  * console.log(pkg.description) // "Remote terminal application"
  * console.log(pkg.programs)    // ["mosh-client", "mosh-server"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/mosh-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const moshPackage = {
+export const moshorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const moshPackage = {
    */
   description: 'Remote terminal application' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/mosh.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://mosh.org' as const,
+  githubUrl: 'https://github.com/mobile-shell/mosh' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mosh' as const,
+  installCommand: 'launchpad install mosh.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mosh.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install mosh.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,13 +74,7 @@ export const moshPackage = {
   versions: [
     '1.4.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +mosh.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mosh' as const,
 }
 
-export type MoshPackage = typeof moshPackage
+export type MoshorgPackage = typeof moshorgPackage

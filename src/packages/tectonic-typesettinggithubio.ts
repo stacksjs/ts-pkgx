@@ -6,19 +6,15 @@
  * @version `0.15.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install tectonic`
- * @name `tectonic`
+ * @install `launchpad install tectonic-typesetting.github.io`
+ * @homepage https://tectonic-typesetting.github.io/
  * @dependencies `freetype.org`, `graphite.sil.org`, `harfbuzz.org`, ... (+3 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.tectonic
- * // Or access via domain
- * const samePkg = pantry.tectonictypesettinggithubio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.tectonictypesettinggithubio
  * console.log(pkg.name)        // "tectonic"
  * console.log(pkg.description) // "A modernized, complete, self-contained TeX/LaTe..."
  * console.log(pkg.programs)    // ["tectonic"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tectonic-typesetting-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tectonicPackage = {
+export const tectonictypesettinggithubioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const tectonicPackage = {
    */
   description: 'A modernized, complete, self-contained TeX/LaTeX engine, powered by XeTeX and TeXLive.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tectonic-typesetting.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://tectonic-typesetting.github.io/' as const,
+  githubUrl: 'https://github.com/tectonic-typesetting/tectonic' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tectonic' as const,
+  installCommand: 'launchpad install tectonic-typesetting.github.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tectonic-typesetting.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tectonic-typesetting.github.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -81,13 +79,7 @@ export const tectonicPackage = {
     '0.13.0',
     '0.12.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tectonic -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tectonic' as const,
 }
 
-export type TectonicPackage = typeof tectonicPackage
+export type TectonictypesettinggithubioPackage = typeof tectonictypesettinggithubioPackage

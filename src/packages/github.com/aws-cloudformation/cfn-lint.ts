@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/aws-cloudformation/cfn-lint.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomawscloudformationcfnlintPackage = {
+export const cfnlintPackage = {
   /**
    * The display name of this package.
    */
@@ -232,4 +232,4 @@ export const githubcomawscloudformationcfnlintPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomawscloudformationcfnlintPackage = typeof githubcomawscloudformationcfnlintPackage
+export type CfnlintPackage = typeof cfnlintPackage

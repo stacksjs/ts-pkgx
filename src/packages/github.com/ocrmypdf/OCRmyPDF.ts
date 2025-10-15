@@ -6,19 +6,15 @@
  * @version `16.11.0` (39 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ocrmypdf`
- * @name `ocrmypdf`
+ * @install `launchpad install github.com/ocrmypdf/OCRmyPDF`
+ * @homepage https://ocrmypdf.readthedocs.io/en/latest/
  * @dependencies `pkgx.sh^1`, `qpdf.sourceforge.io^12 # as of 16.10.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ocrmypdf
- * // Or access via domain
- * const samePkg = pantry.githubcomocrmypdfocrmypdf
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomocrmypdfocrmypdf
  * console.log(pkg.name)        // "ocrmypdf"
  * console.log(pkg.description) // "OCRmyPDF adds an OCR text layer to scanned PDF ..."
  * console.log(pkg.programs)    // ["ocrmypdf"]
@@ -42,13 +38,15 @@ export const ocrmypdfPackage = {
    */
   description: 'OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ocrmypdf/OCRmyPDF/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://ocrmypdf.readthedocs.io/en/latest/' as const,
+  githubUrl: 'https://github.com/ocrmypdf/OCRmyPDF' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ocrmypdf' as const,
+  installCommand: 'launchpad install github.com/ocrmypdf/OCRmyPDF' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/ocrmypdf/OCRmyPDF -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/ocrmypdf/OCRmyPDF' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -110,13 +108,7 @@ export const ocrmypdfPackage = {
     '15.0.0',
     '14.4.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ocrmypdf -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ocrmypdf' as const,
 }
 
 export type OcrmypdfPackage = typeof ocrmypdfPackage

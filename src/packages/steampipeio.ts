@@ -6,18 +6,15 @@
  * @version `2.2.0` (38 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install steampipe`
- * @name `steampipe`
+ * @install `launchpad install steampipe.io`
+ * @homepage https://steampipe.io/
+ * @dependencies `go.dev@^1.24`, `goreleaser.com`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.steampipe
- * // Or access via domain
- * const samePkg = pantry.steampipeio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.steampipeio
  * console.log(pkg.name)        // "steampipe"
  * console.log(pkg.description) // "Zero-ETL, infinite possibilities. Live query AP..."
  * console.log(pkg.programs)    // ["steampipe"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/steampipe-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const steampipePackage = {
+export const steampipeioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const steampipePackage = {
    */
   description: 'Zero-ETL, infinite possibilities. Live query APIs, code & more with SQL. No DB required.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/steampipe.io/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://steampipe.io/' as const,
   githubUrl: 'https://github.com/turbot/steampipe' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install steampipe' as const,
+  installCommand: 'launchpad install steampipe.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +steampipe.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install steampipe.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const steampipePackage = {
     'steampipe',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.24',
+    'goreleaser.com',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -101,13 +107,7 @@ export const steampipePackage = {
     '0.20.11',
     '0.20.10',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) steampipe -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install steampipe' as const,
 }
 
-export type SteampipePackage = typeof steampipePackage
+export type SteampipeioPackage = typeof steampipeioPackage

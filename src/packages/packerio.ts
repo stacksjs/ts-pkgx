@@ -6,18 +6,15 @@
  * @version `1.14.2` (16 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install packer`
- * @name `packer`
+ * @install `launchpad install packer.io`
+ * @homepage https://packer.io
+ * @dependencies `go.dev@^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.packer
- * // Or access via domain
- * const samePkg = pantry.packerio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.packerio
  * console.log(pkg.name)        // "packer"
  * console.log(pkg.description) // "Packer is a tool for creating identical machine..."
  * console.log(pkg.programs)    // ["packer"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/packer-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const packerPackage = {
+export const packerioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const packerPackage = {
    */
   description: 'Packer is a tool for creating identical machine images for multiple platforms from a single source configuration.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/packer.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://packer.io' as const,
+  githubUrl: 'https://github.com/hashicorp/packer' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install packer' as const,
+  installCommand: 'launchpad install packer.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +packer.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install packer.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const packerPackage = {
     'packer',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -79,13 +84,7 @@ export const packerPackage = {
     '1.9.3',
     '1.9.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) packer -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install packer' as const,
 }
 
-export type PackerPackage = typeof packerPackage
+export type PackerioPackage = typeof packerioPackage

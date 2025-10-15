@@ -6,18 +6,15 @@
  * @version `2.5.0` (59 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install golangci-lint`
- * @name `golangci-lint`
+ * @install `launchpad install golangci-lint.run`
+ * @homepage https://golangci-lint.run/
+ * @dependencies `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.golangcilint
- * // Or access via domain
- * const samePkg = pantry.golangcilintrun
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.golangcilintrun
  * console.log(pkg.name)        // "golangci-lint"
  * console.log(pkg.description) // "Fast linters runner for Go"
  * console.log(pkg.programs)    // ["golangci-lint"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/golangci-lint-run.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const golangcilintPackage = {
+export const golangcilintrunPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const golangcilintPackage = {
    */
   description: 'Fast linters runner for Go' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/golangci-lint.run/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://golangci-lint.run/' as const,
+  githubUrl: 'https://github.com/golangci/golangci-lint' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install golangci-lint' as const,
+  installCommand: 'launchpad install golangci-lint.run' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +golangci-lint.run -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install golangci-lint.run' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const golangcilintPackage = {
     'golangci-lint',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'curl.se',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -122,13 +127,7 @@ export const golangcilintPackage = {
     '1.52.0',
     '1.51.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) golangci-lint -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install golangci-lint' as const,
 }
 
-export type GolangcilintPackage = typeof golangcilintPackage
+export type GolangcilintrunPackage = typeof golangcilintrunPackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/fiatjaf/nak.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomfiatjafnakPackage = {
+export const nakPackage = {
   /**
    * The display name of this package.
    */
@@ -96,4 +96,4 @@ export const githubcomfiatjafnakPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomfiatjafnakPackage = typeof githubcomfiatjafnakPackage
+export type NakPackage = typeof nakPackage

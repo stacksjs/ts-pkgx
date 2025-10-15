@@ -6,18 +6,14 @@
  * @version `1.54.0` (26 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install hcloud`
- * @name `hcloud`
+ * @install `launchpad install hetzner.com/hcloud`
+ * @dependencies `go.dev@^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.hcloud
- * // Or access via domain
- * const samePkg = pantry.hetznercomhcloud
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.hetznercomhcloud
  * console.log(pkg.name)        // "hcloud"
  * console.log(pkg.description) // "A command-line interface for Hetzner Cloud"
  * console.log(pkg.programs)    // ["hcloud"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/hetzner-com/hcloud.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const hcloudPackage = {
+export const hetznercomhcloudPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const hcloudPackage = {
   description: 'A command-line interface for Hetzner Cloud' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/hetzner.com/hcloud/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/hetznercloud/cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install hcloud' as const,
+  installCommand: 'launchpad install hetzner.com/hcloud' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +hetzner.com/hcloud -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install hetzner.com/hcloud' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const hcloudPackage = {
     'hcloud',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -89,13 +93,7 @@ export const hcloudPackage = {
     '1.37.0',
     '1.36.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) hcloud -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install hcloud' as const,
 }
 
-export type HcloudPackage = typeof hcloudPackage
+export type HetznercomhcloudPackage = typeof hetznercomhcloudPackage

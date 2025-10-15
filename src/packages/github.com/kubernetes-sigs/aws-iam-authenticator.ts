@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/kubernetes-sigs/aws-iam-authenticator.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkubernetessigsawsiamauthenticatorPackage = {
+export const awsiamauthenticatorPackage = {
   /**
    * The display name of this package.
    */
@@ -96,4 +96,4 @@ export const githubcomkubernetessigsawsiamauthenticatorPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkubernetessigsawsiamauthenticatorPackage = typeof githubcomkubernetessigsawsiamauthenticatorPackage
+export type AwsiamauthenticatorPackage = typeof awsiamauthenticatorPackage

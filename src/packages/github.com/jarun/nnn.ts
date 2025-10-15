@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/jarun/nnn.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjarunnnnPackage = {
+export const nnnPackage = {
   /**
    * The display name of this package.
    */
@@ -73,4 +73,4 @@ export const githubcomjarunnnnPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjarunnnnPackage = typeof githubcomjarunnnnPackage
+export type NnnPackage = typeof nnnPackage

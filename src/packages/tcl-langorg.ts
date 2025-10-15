@@ -1,5 +1,5 @@
 /**
- * **tcl-lang.org** - Tool Command Language
+ * **tcl-lang** - Tool Command Language
  *
  * @domain `tcl-lang.org`
  * @programs `tclsh`, `wish`, `critcl`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tcl-lang.org`
+ * @homepage https://www.tcl-lang.org
  * @dependencies `openssl.org^1.1`, `zlib.net^1.3`, `freetype.org^2`, ... (+3 more)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.tcllangorg
- * console.log(pkg.name)        // "tcl-lang.org"
+ * console.log(pkg.name)        // "tcl-lang"
  * console.log(pkg.description) // "Tool Command Language"
  * console.log(pkg.programs)    // ["tclsh", "wish", ...]
  * console.log(pkg.versions[0]) // "9.0.2" (latest)
@@ -27,7 +28,7 @@ export const tcllangorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'tcl-lang.org' as const,
+  name: 'tcl-lang' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const tcllangorgPackage = {
    */
   description: 'Tool Command Language' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tcl-lang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.tcl-lang.org' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install tcl-lang.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tcl-lang.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tcl-lang.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -81,8 +84,6 @@ export const tcllangorgPackage = {
     '8.6.13',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tcl-lang.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tcl-lang.org' as const,
 }
 
 export type TcllangorgPackage = typeof tcllangorgPackage

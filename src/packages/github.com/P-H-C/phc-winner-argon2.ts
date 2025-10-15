@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/P-H-C/phc-winner-argon2.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomphcphcwinnerargon2Package = {
+export const phcwinnerargon2Package = {
   /**
    * The display name of this package.
    */
@@ -64,4 +64,4 @@ export const githubcomphcphcwinnerargon2Package = {
   aliases: [] as const,
 }
 
-export type Githubcomphcphcwinnerargon2Package = typeof githubcomphcphcwinnerargon2Package
+export type Phcwinnerargon2Package = typeof phcwinnerargon2Package

@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/aws/aws-sdk-cpp.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomawsawssdkcppPackage = {
+export const awssdkcppPackage = {
   /**
    * The display name of this package.
    */
@@ -649,4 +649,4 @@ export const githubcomawsawssdkcppPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomawsawssdkcppPackage = typeof githubcomawsawssdkcppPackage
+export type AwssdkcppPackage = typeof awssdkcppPackage

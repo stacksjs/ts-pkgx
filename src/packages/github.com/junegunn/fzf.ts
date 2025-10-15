@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/junegunn/fzf.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomjunegunnfzfPackage = {
+export const fzfPackage = {
   /**
    * The display name of this package.
    */
@@ -122,4 +122,4 @@ export const githubcomjunegunnfzfPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomjunegunnfzfPackage = typeof githubcomjunegunnfzfPackage
+export type FzfPackage = typeof fzfPackage

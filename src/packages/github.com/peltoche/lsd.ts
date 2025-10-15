@@ -6,19 +6,14 @@
  * @version `1.2.0` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install lsd`
- * @name `lsd`
+ * @install `launchpad install github.com/peltoche/lsd`
  * @dependencies `libgit2.org~1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.lsd
- * // Or access via domain
- * const samePkg = pantry.githubcompeltochelsd
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcompeltochelsd
  * console.log(pkg.name)        // "lsd"
  * console.log(pkg.description) // "Clone of ls with colorful output, file type ico..."
  * console.log(pkg.programs)    // ["lsd"]
@@ -43,12 +38,14 @@ export const lsdPackage = {
   description: 'Clone of ls with colorful output, file type icons, and more' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/peltoche/lsd/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/lsd-rs/lsd' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install lsd' as const,
+  installCommand: 'launchpad install github.com/peltoche/lsd' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/peltoche/lsd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/peltoche/lsd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,13 +75,7 @@ export const lsdPackage = {
     '1.0.0',
     '0.23.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) lsd -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install lsd' as const,
 }
 
 export type LsdPackage = typeof lsdPackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/gosom/google-maps-scraper.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgosomgooglemapsscraperPackage = {
+export const googlemapsscraperPackage = {
   /**
    * The display name of this package.
    */
@@ -113,4 +113,4 @@ export const githubcomgosomgooglemapsscraperPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgosomgooglemapsscraperPackage = typeof githubcomgosomgooglemapsscraperPackage
+export type GooglemapsscraperPackage = typeof googlemapsscraperPackage

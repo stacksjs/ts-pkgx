@@ -3,32 +3,28 @@
  *
  * @domain `yt-dlp.org`
  * @programs `yt-dlp`
- * @version `2025.9.26` (57 versions available)
+ * @version `2025.10.14` (58 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install yt-dlp`
- * @name `yt-dlp`
+ * @install `launchpad install yt-dlp.org`
+ * @homepage https://discord.gg/H5MNcFW63r
  * @dependencies `python.org>=3<3.12`, `ffmpeg.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ytdlp
- * // Or access via domain
- * const samePkg = pantry.ytdlporg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ytdlporg
  * console.log(pkg.name)        // "yt-dlp"
  * console.log(pkg.description) // "A feature-rich command-line audio/video downloader"
  * console.log(pkg.programs)    // ["yt-dlp"]
- * console.log(pkg.versions[0]) // "2025.9.26" (latest)
+ * console.log(pkg.versions[0]) // "2025.10.14" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/yt-dlp-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ytdlpPackage = {
+export const ytdlporgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const ytdlpPackage = {
    */
   description: 'A feature-rich command-line audio/video downloader' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/yt-dlp.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://discord.gg/H5MNcFW63r' as const,
+  githubUrl: 'https://github.com/yt-dlp/yt-dlp' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install yt-dlp' as const,
+  installCommand: 'launchpad install yt-dlp.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +yt-dlp.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install yt-dlp.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,6 +68,7 @@ export const ytdlpPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2025.10.14',
     '2025.9.26',
     '2025.9.23',
     '2025.9.5',
@@ -128,13 +127,7 @@ export const ytdlpPackage = {
     '2023.2.17',
     '2023.1.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) yt-dlp -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install yt-dlp' as const,
 }
 
-export type YtdlpPackage = typeof ytdlpPackage
+export type YtdlporgPackage = typeof ytdlporgPackage

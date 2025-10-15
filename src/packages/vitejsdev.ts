@@ -6,19 +6,15 @@
  * @version `7.1.10` (122 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install vite`
- * @name `vite`
+ * @install `launchpad install vitejs.dev`
+ * @homepage https://vitejs.dev/
  * @dependencies `nodejs.org^16 || ^18 || ^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.vite
- * // Or access via domain
- * const samePkg = pantry.vitejsdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.vitejsdev
  * console.log(pkg.name)        // "vite"
  * console.log(pkg.description) // "Next generation frontend tooling. It's fast!"
  * console.log(pkg.programs)    // ["vite"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/vitejs-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const vitePackage = {
+export const vitejsdevPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const vitePackage = {
    */
   description: 'Next generation frontend tooling. It\'s fast!' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/vitejs.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://vitejs.dev/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install vite' as const,
+  installCommand: 'launchpad install vitejs.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +vitejs.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install vitejs.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -192,13 +190,7 @@ export const vitePackage = {
     '3.2.10',
     '2.9.18',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vite -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install vite' as const,
 }
 
-export type VitePackage = typeof vitePackage
+export type VitejsdevPackage = typeof vitejsdevPackage

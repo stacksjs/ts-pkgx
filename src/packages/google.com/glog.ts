@@ -1,11 +1,12 @@
 /**
- * **google.com/glog** - C++ implementation of the Google logging module
+ * **glog** - C++ implementation of the Google logging module
  *
  * @domain `google.com/glog`
  * @version `0.7.1` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install google.com/glog`
+ * @homepage http://google.github.io/glog/
  * @dependencies `gflags.github.io`
  *
  * @example
@@ -13,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.googlecomglog
- * console.log(pkg.name)        // "google.com/glog"
+ * console.log(pkg.name)        // "glog"
  * console.log(pkg.description) // "C++ implementation of the Google logging module"
  * console.log(pkg.versions[0]) // "0.7.1" (latest)
  * ```
@@ -25,7 +26,7 @@ export const googlecomglogPackage = {
   /**
    * The display name of this package.
    */
-  name: 'google.com/glog' as const,
+  name: 'glog' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,13 +36,15 @@ export const googlecomglogPackage = {
    */
   description: 'C++ implementation of the Google logging module' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/google.com/glog/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://google.github.io/glog/' as const,
+  githubUrl: 'https://github.com/google/glog' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install google.com/glog' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +google.com/glog -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install google.com/glog' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,8 +64,6 @@ export const googlecomglogPackage = {
     '0.6.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +google.com/glog -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install google.com/glog' as const,
 }
 
 export type GooglecomglogPackage = typeof googlecomglogPackage

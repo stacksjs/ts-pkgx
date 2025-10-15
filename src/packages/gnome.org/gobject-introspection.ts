@@ -6,19 +6,15 @@
  * @version `1.86.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install g-ir`
- * @name `g-ir`
+ * @install `launchpad install gnome.org/gobject-introspection`
+ * @homepage https://gi.readthedocs.io/en/latest/
  * @dependencies `gnome.org/glib@2`, `sourceware.org/libffi@3`, `gnu.org/bison^3 #NOTE macOS provides v2`, ... (+2 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gir
- * // Or access via domain
- * const samePkg = pantry.gnomeorggobjectintrospection
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnomeorggobjectintrospection
  * console.log(pkg.name)        // "g-ir"
  * console.log(pkg.description) // "Generate introspection data for GObject libraries"
  * console.log(pkg.programs)    // ["g-ir-annotation-tool", "g-ir-compiler", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnome-org/gobject-introspection.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const girPackage = {
+export const gnomeorggobjectintrospectionPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const girPackage = {
    */
   description: 'Generate introspection data for GObject libraries' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/gobject-introspection/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://gi.readthedocs.io/en/latest/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install g-ir' as const,
+  installCommand: 'launchpad install gnome.org/gobject-introspection' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/gobject-introspection -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnome.org/gobject-introspection' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,13 +82,7 @@ export const girPackage = {
     '1.82.0',
     '1.72.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/gobject-introspection -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install g-ir' as const,
 }
 
-export type GirPackage = typeof girPackage
+export type GnomeorggobjectintrospectionPackage = typeof gnomeorggobjectintrospectionPackage

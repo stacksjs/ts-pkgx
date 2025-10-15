@@ -1,26 +1,21 @@
 /**
- * **local-ai** - :robot: The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. Drop-in replacement for OpenAI,  running on consumer-grade hardware. No GPU required. Runs gguf, transformers, diffusers and many more models architectures. Features: Generate Text, Audio, Video, Images, Voice Cloning, Distributed, P2P inference
+ * **LocalAI** - :robot: The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. Drop-in replacement for OpenAI,  running on consumer-grade hardware. No GPU required. Runs gguf, transformers, diffusers and many more models architectures. Features: Generate Text, Audio, Video, Images, Voice Cloning, Distributed, P2P inference
  *
  * @domain `localai.io`
  * @programs `local-ai`
  * @version `3.6.0` (51 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install local-ai`
- * @name `local-ai`
+ * @install `launchpad install localai.io`
+ * @homepage https://localai.io
  * @dependencies `darwin:openmp.llvm.org@18` (includes OS-specific dependencies with `os:package` format)
- * @companions `linux`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.localai
- * // Or access via domain
- * const samePkg = pantry.localaiio
- * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "local-ai"
+ * const pkg = pantry.localaiio
+ * console.log(pkg.name)        // "LocalAI"
  * console.log(pkg.description) // ":robot: The free, Open Source alternative to Op..."
  * console.log(pkg.programs)    // ["local-ai"]
  * console.log(pkg.versions[0]) // "3.6.0" (latest)
@@ -29,11 +24,11 @@
  * @see https://ts-pkgx.netlify.app/packages/localai-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const localaiPackage = {
+export const localaiioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'local-ai' as const,
+  name: 'LocalAI' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,13 +38,15 @@ export const localaiPackage = {
    */
   description: ':robot: The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. Drop-in replacement for OpenAI,  running on consumer-grade hardware. No GPU required. Runs gguf, transformers, diffusers and many more models architectures. Features: Generate Text, Audio, Video, Images, Voice Cloning, Distributed, P2P inference' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/localai.io/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://localai.io' as const,
   githubUrl: 'https://github.com/mudler/LocalAI' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install local-ai' as const,
+  installCommand: 'launchpad install localai.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +localai.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install localai.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,13 +54,7 @@ export const localaiPackage = {
   programs: [
     'local-ai',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'linux',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -129,13 +120,7 @@ export const localaiPackage = {
     '2.7.0',
     '2.6.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) local-ai -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install local-ai' as const,
 }
 
-export type LocalaiPackage = typeof localaiPackage
+export type LocalaiioPackage = typeof localaiioPackage

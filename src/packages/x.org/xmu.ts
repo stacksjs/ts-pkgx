@@ -1,5 +1,5 @@
 /**
- * **x.org/xmu** - pkgx package
+ * **xmu** - pkgx package
  *
  * @domain `x.org/xmu`
  * @version `1.2.1` (3 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgxmu
- * console.log(pkg.name)        // "x.org/xmu"
+ * console.log(pkg.name)        // "xmu"
  * console.log(pkg.versions[0]) // "1.2.1" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgxmuPackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xmu' as const,
+  name: 'xmu' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const xorgxmuPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xmu/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install x.org/xmu' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xmu -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/xmu' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,8 +63,6 @@ export const xorgxmuPackage = {
     '1.1.4',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xmu -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install x.org/xmu' as const,
 }
 
 export type XorgxmuPackage = typeof xorgxmuPackage

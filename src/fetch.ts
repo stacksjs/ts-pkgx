@@ -54,13 +54,12 @@ function getDomainAsTypescriptName(domain: string): string {
     // Clean parent domain part (remove dots)
     const cleanParent = parentDomain.replace(/\./g, '')
 
-    // For GitHub projects, include the full subpath in the variable name
+    // For GitHub projects, use just the last part (the repo name) for cleaner export names
     if (parentDomain.includes('github.com')) {
-      // For GitHub repos, we need to keep all parts of the path
-      // and transform them into a valid variable name
-      // Replace all special characters including slashes and join everything into a single string
-      const fullPath = subPath.replace(/[/.-]/g, '')
-      return `${cleanParent}${fullPath}`.toLowerCase()
+      // For GitHub repos like github.com/lrstanley/vault-unseal, use just "vault-unseal" -> "vaultunseal"
+      const pathParts = subPath.split('/')
+      const repoName = pathParts[pathParts.length - 1] // Get the last part
+      return repoName.replace(/[.-]/g, '').toLowerCase()
     }
 
     // For variable names, we need to remove ALL special characters including slashes in the subpath

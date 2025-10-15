@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Ousret/charset_normalizer.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomousretcharset_normalizerPackage = {
+export const charset_normalizerPackage = {
   /**
    * The display name of this package.
    */
@@ -77,4 +77,4 @@ export const githubcomousretcharset_normalizerPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomousretcharset_normalizerPackage = typeof githubcomousretcharset_normalizerPackage
+export type Charset_normalizerPackage = typeof charset_normalizerPackage

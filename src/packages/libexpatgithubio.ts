@@ -6,18 +6,14 @@
  * @version `2.7.3` (11 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install xmlwf`
- * @name `xmlwf`
+ * @install `launchpad install libexpat.github.io`
+ * @homepage https://libexpat.github.io/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.xmlwf
- * // Or access via domain
- * const samePkg = pantry.libexpatgithubio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.libexpatgithubio
  * console.log(pkg.name)        // "xmlwf"
  * console.log(pkg.description) // ":herb: Fast streaming XML parser written in C99..."
  * console.log(pkg.programs)    // ["xmlwf"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/libexpat-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xmlwfPackage = {
+export const libexpatgithubioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const xmlwfPackage = {
    */
   description: ':herb: Fast streaming XML parser written in C99 with >90% test coverage; moved from SourceForge to GitHub' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libexpat.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://libexpat.github.io/' as const,
+  githubUrl: 'https://github.com/libexpat/libexpat' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install xmlwf' as const,
+  installCommand: 'launchpad install libexpat.github.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libexpat.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libexpat.github.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,13 +72,7 @@ export const xmlwfPackage = {
     '2.5.0',
     '2.4.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xmlwf -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install xmlwf' as const,
 }
 
-export type XmlwfPackage = typeof xmlwfPackage
+export type LibexpatgithubioPackage = typeof libexpatgithubioPackage

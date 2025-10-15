@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/github/git-sizer.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgithubgitsizerPackage = {
+export const gitsizerPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomgithubgitsizerPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgithubgitsizerPackage = typeof githubcomgithubgitsizerPackage
+export type GitsizerPackage = typeof gitsizerPackage

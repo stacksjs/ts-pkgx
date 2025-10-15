@@ -6,18 +6,15 @@
  * @version `0.41.0` (16 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pinniped`
- * @name `pinniped`
+ * @install `launchpad install pinniped.dev`
+ * @homepage https://pinniped.dev
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pinniped
- * // Or access via domain
- * const samePkg = pantry.pinnipeddev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.pinnipeddev
  * console.log(pkg.name)        // "pinniped"
  * console.log(pkg.description) // "Pinniped is the easy, secure way to log in to y..."
  * console.log(pkg.programs)    // ["pinniped"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/pinniped-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pinnipedPackage = {
+export const pinnipeddevPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const pinnipedPackage = {
    */
   description: 'Pinniped is the easy, secure way to log in to your Kubernetes clusters.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/pinniped.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://pinniped.dev' as const,
+  githubUrl: 'https://github.com/vmware-tanzu/pinniped' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pinniped' as const,
+  installCommand: 'launchpad install pinniped.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +pinniped.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install pinniped.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const pinnipedPackage = {
     'pinniped',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -79,13 +84,7 @@ export const pinnipedPackage = {
     '0.27.0',
     '0.26.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pinniped -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pinniped' as const,
 }
 
-export type PinnipedPackage = typeof pinnipedPackage
+export type PinnipeddevPackage = typeof pinnipeddevPackage

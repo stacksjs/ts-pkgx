@@ -6,19 +6,15 @@
  * @version `38.3.0` (36 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rucio-client`
- * @name `rucio-client`
+ * @install `launchpad install rucio.cern.ch/rucio-client`
+ * @homepage http://rucio.cern.ch
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rucioclient
- * // Or access via domain
- * const samePkg = pantry.ruciocernchrucioclient
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ruciocernchrucioclient
  * console.log(pkg.name)        // "rucio-client"
  * console.log(pkg.description) // "Rucio - Scientific Data Management"
  * console.log(pkg.programs)    // ["rucio", "rucio-admin"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/rucio-cern-ch/rucio-client.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rucioclientPackage = {
+export const ruciocernchrucioclientPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const rucioclientPackage = {
    */
   description: 'Rucio - Scientific Data Management' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rucio.cern.ch/rucio-client/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://rucio.cern.ch' as const,
+  githubUrl: 'https://github.com/rucio/rucio' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rucio-client' as const,
+  installCommand: 'launchpad install rucio.cern.ch/rucio-client' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rucio.cern.ch/rucio-client -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rucio.cern.ch/rucio-client' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -107,13 +105,7 @@ export const rucioclientPackage = {
     '34.5.0',
     '34.4.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rucio.cern.ch/rucio-client -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rucio-client' as const,
 }
 
-export type RucioclientPackage = typeof rucioclientPackage
+export type RuciocernchrucioclientPackage = typeof ruciocernchrucioclientPackage

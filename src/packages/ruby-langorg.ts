@@ -8,8 +8,8 @@
  *
  * @install `launchpad install ruby-lang.org`
  * @aliases `ruby`
+ * @homepage https://www.ruby-lang.org/
  * @dependencies `openssl.org^1.1`, `pyyaml.org^0.2`, `zlib.net^1`
- * @companions `rubygems.org`
  *
  * @example
  * ```typescript
@@ -20,7 +20,7 @@
  * // Or access via domain
  * const samePkg = pantry.rubylangorg
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "ruby-lang.org"
+ * console.log(pkg.name)        // "ruby-lang"
  * console.log(pkg.description) // "Powerful, clean, object-oriented scripting lang..."
  * console.log(pkg.programs)    // ["erb", "irb", ...]
  * console.log(pkg.versions[0]) // "3.4.7" (latest)
@@ -33,7 +33,7 @@ export const rubyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ruby-lang.org' as const,
+  name: 'ruby-lang' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,13 +43,15 @@ export const rubyPackage = {
    */
   description: 'Powerful, clean, object-oriented scripting language' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ruby-lang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.ruby-lang.org/' as const,
+  githubUrl: 'https://github.com/ruby/ruby' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install ruby-lang.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ruby-lang.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ruby-lang.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -62,13 +64,7 @@ export const rubyPackage = {
     'ri',
     'ruby',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'rubygems.org',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -138,8 +134,6 @@ export const rubyPackage = {
   aliases: [
     'ruby',
   ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ruby-lang.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ruby-lang.org' as const,
 }
 
 export type RubyPackage = typeof rubyPackage

@@ -6,18 +6,15 @@
  * @version `1.1.8` (48 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install zrok`
- * @name `zrok`
+ * @install `launchpad install zrok.io`
+ * @homepage https://zrok.io
+ * @dependencies `go.dev@~1.23.0`, `nodejs.org@^21`, `npmjs.com@^10`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.zrok
- * // Or access via domain
- * const samePkg = pantry.zrokio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.zrokio
  * console.log(pkg.name)        // "zrok"
  * console.log(pkg.description) // "Geo-scale, next-generation peer-to-peer sharing..."
  * console.log(pkg.programs)    // ["zrok", "copyto", ...]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/zrok-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zrokPackage = {
+export const zrokioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const zrokPackage = {
    */
   description: 'Geo-scale, next-generation peer-to-peer sharing platform built on top of OpenZiti.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/zrok.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://zrok.io' as const,
+  githubUrl: 'https://github.com/openziti/zrok' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install zrok' as const,
+  installCommand: 'launchpad install zrok.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +zrok.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install zrok.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -58,7 +57,15 @@ export const zrokPackage = {
     'pastefrom',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.23.0',
+    'nodejs.org@^21',
+    'npmjs.com@^10',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -113,13 +120,7 @@ export const zrokPackage = {
     '0.4.17',
     '0.4.16',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +zrok.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install zrok' as const,
 }
 
-export type ZrokPackage = typeof zrokPackage
+export type ZrokioPackage = typeof zrokioPackage

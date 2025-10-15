@@ -6,19 +6,15 @@
  * @version `20.35.3` (48 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install virtualenv`
- * @name `virtualenv`
+ * @install `launchpad install virtualenv.pypa.io`
+ * @homepage https://virtualenv.pypa.io/
  * @dependencies `pkgx.sh^1`, `libexpat.github.io^2`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.virtualenv
- * // Or access via domain
- * const samePkg = pantry.virtualenvpypaio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.virtualenvpypaio
  * console.log(pkg.name)        // "virtualenv"
  * console.log(pkg.description) // "Tool for creating isolated virtual python envir..."
  * console.log(pkg.programs)    // ["virtualenv"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/virtualenv-pypa-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const virtualenvPackage = {
+export const virtualenvpypaioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const virtualenvPackage = {
    */
   description: 'Tool for creating isolated virtual python environments' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/virtualenv.pypa.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://virtualenv.pypa.io/' as const,
+  githubUrl: 'https://github.com/pypa/virtualenv' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install virtualenv' as const,
+  installCommand: 'launchpad install virtualenv.pypa.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +virtualenv.pypa.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install virtualenv.pypa.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -120,13 +118,7 @@ export const virtualenvPackage = {
     '20.19.0',
     '20.18.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) virtualenv -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install virtualenv' as const,
 }
 
-export type VirtualenvPackage = typeof virtualenvPackage
+export type VirtualenvpypaioPackage = typeof virtualenvpypaioPackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/boyter/scc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomboytersccPackage = {
+export const sccPackage = {
   /**
    * The display name of this package.
    */
@@ -80,4 +80,4 @@ export const githubcomboytersccPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomboytersccPackage = typeof githubcomboytersccPackage
+export type SccPackage = typeof sccPackage

@@ -1,5 +1,5 @@
 /**
- * **openresty.org** - High Performance Web Platform Based on Nginx and LuaJIT
+ * **openresty** - High Performance Web Platform Based on Nginx and LuaJIT
  *
  * @domain `openresty.org`
  * @programs `nginx-xml2pod`, `opm`, `resty`, `restydoc`, `restydoc-index`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openresty.org`
+ * @homepage https://openresty.org
  * @dependencies `pcre.org@8`, `openssl.org^1.1`, `zlib.net^1.2`, ... (+1 more)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.openrestyorg
- * console.log(pkg.name)        // "openresty.org"
+ * console.log(pkg.name)        // "openresty"
  * console.log(pkg.description) // "High Performance Web Platform Based on Nginx an..."
  * console.log(pkg.programs)    // ["nginx-xml2pod", "opm", ...]
  * console.log(pkg.versions[0]) // "1.27.1.2" (latest)
@@ -27,7 +28,7 @@ export const openrestyorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'openresty.org' as const,
+  name: 'openresty' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const openrestyorgPackage = {
    */
   description: 'High Performance Web Platform Based on Nginx and LuaJIT' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/openresty.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://openresty.org' as const,
+  githubUrl: 'https://github.com/openresty/openresty' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install openresty.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openresty.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install openresty.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,8 +79,6 @@ export const openrestyorgPackage = {
     '1.25.3.2',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +openresty.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install openresty.org' as const,
 }
 
 export type OpenrestyorgPackage = typeof openrestyorgPackage

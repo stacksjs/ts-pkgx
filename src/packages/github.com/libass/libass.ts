@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/libass/libass.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomlibasslibassPackage = {
+export const libassPackage = {
   /**
    * The display name of this package.
    */
@@ -71,4 +71,4 @@ export const githubcomlibasslibassPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomlibasslibassPackage = typeof githubcomlibasslibassPackage
+export type LibassPackage = typeof libassPackage

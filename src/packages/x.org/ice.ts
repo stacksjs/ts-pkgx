@@ -1,5 +1,5 @@
 /**
- * **x.org/ice** - pkgx package
+ * **ice** - pkgx package
  *
  * @domain `x.org/ice`
  * @version `1.1.2` (2 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgice
- * console.log(pkg.name)        // "x.org/ice"
+ * console.log(pkg.name)        // "ice"
  * console.log(pkg.versions[0]) // "1.1.2" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgicePackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/ice' as const,
+  name: 'ice' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const xorgicePackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/ice/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install x.org/ice' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/ice -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/ice' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -59,8 +61,6 @@ export const xorgicePackage = {
     '1.1.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/ice -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install x.org/ice' as const,
 }
 
 export type XorgicePackage = typeof xorgicePackage

@@ -22,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/koekeishiya/skhd.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomkoekeishiyaskhdPackage = {
+export const skhdPackage = {
   /**
    * The display name of this package.
    */
@@ -64,4 +64,4 @@ export const githubcomkoekeishiyaskhdPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomkoekeishiyaskhdPackage = typeof githubcomkoekeishiyaskhdPackage
+export type SkhdPackage = typeof skhdPackage

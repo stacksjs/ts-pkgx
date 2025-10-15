@@ -1,5 +1,5 @@
 /**
- * **x.org/xkbfile** - pkgx package
+ * **xkbfile** - pkgx package
  *
  * @domain `x.org/xkbfile`
  * @version `1.1.3` (2 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.xorgxkbfile
- * console.log(pkg.name)        // "x.org/xkbfile"
+ * console.log(pkg.name)        // "xkbfile"
  * console.log(pkg.versions[0]) // "1.1.3" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const xorgxkbfilePackage = {
   /**
    * The display name of this package.
    */
-  name: 'x.org/xkbfile' as const,
+  name: 'xkbfile' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const xorgxkbfilePackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xkbfile/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install x.org/xkbfile' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xkbfile -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install x.org/xkbfile' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -59,8 +61,6 @@ export const xorgxkbfilePackage = {
     '1.1.2',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +x.org/xkbfile -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install x.org/xkbfile' as const,
 }
 
 export type XorgxkbfilePackage = typeof xorgxkbfilePackage

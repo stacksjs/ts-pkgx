@@ -1,5 +1,5 @@
 /**
- * **libssh.org** - pkgx package
+ * **libssh** - pkgx package
  *
  * @domain `libssh.org`
  * @version `0.11.3` (9 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.libsshorg
- * console.log(pkg.name)        // "libssh.org"
+ * console.log(pkg.name)        // "libssh"
  * console.log(pkg.versions[0]) // "0.11.3" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const libsshorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'libssh.org' as const,
+  name: 'libssh' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const libsshorgPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/libssh.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install libssh.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libssh.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install libssh.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -67,8 +69,6 @@ export const libsshorgPackage = {
     '0.9.7',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +libssh.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libssh.org' as const,
 }
 
 export type LibsshorgPackage = typeof libsshorgPackage

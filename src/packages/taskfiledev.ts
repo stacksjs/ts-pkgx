@@ -6,18 +6,15 @@
  * @version `3.45.4` (34 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install task`
- * @name `task`
+ * @install `launchpad install taskfile.dev`
+ * @homepage https://taskfile.dev
+ * @dependencies `go.dev@~1.23`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.task
- * // Or access via domain
- * const samePkg = pantry.taskfiledev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.taskfiledev
  * console.log(pkg.name)        // "task"
  * console.log(pkg.description) // "A task runner / simpler Make alternative writte..."
  * console.log(pkg.programs)    // ["task"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/taskfile-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const taskPackage = {
+export const taskfiledevPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const taskPackage = {
    */
   description: 'A task runner / simpler Make alternative written in Go' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/taskfile.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://taskfile.dev' as const,
+  githubUrl: 'https://github.com/go-task/task' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install task' as const,
+  installCommand: 'launchpad install taskfile.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +taskfile.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install taskfile.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const taskPackage = {
     'task',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.23',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -97,13 +102,7 @@ export const taskPackage = {
     '3.27.1',
     '3.27.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) task -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install task' as const,
 }
 
-export type TaskPackage = typeof taskPackage
+export type TaskfiledevPackage = typeof taskfiledevPackage

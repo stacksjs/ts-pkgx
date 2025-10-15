@@ -6,19 +6,15 @@
  * @version `3.0.10` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install guil`
- * @name `guil`
+ * @install `launchpad install gnu.org/guile`
+ * @homepage https://www.gnu.org/software/guile/
  * @dependencies `hboehm.info/gc^8`, `gnu.org/gmp^6`, `gnu.org/libtool^2`, ... (+6 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.guil
- * // Or access via domain
- * const samePkg = pantry.gnuorgguile
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnuorgguile
  * console.log(pkg.name)        // "guil"
  * console.log(pkg.description) // "GNU Ubiquitous Intelligent Language for Extensions"
  * console.log(pkg.programs)    // ["guild", "guile", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnu-org/guile.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const guilPackage = {
+export const gnuorgguilePackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const guilPackage = {
    */
   description: 'GNU Ubiquitous Intelligent Language for Extensions' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/guile/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.gnu.org/software/guile/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install guil' as const,
+  installCommand: 'launchpad install gnu.org/guile' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/guile -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnu.org/guile' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,13 +82,7 @@ export const guilPackage = {
     '3.0.10',
     '3.0.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/guile -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install guil' as const,
 }
 
-export type GuilPackage = typeof guilPackage
+export type GnuorgguilePackage = typeof gnuorgguilePackage

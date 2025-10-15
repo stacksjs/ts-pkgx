@@ -6,19 +6,14 @@
  * @version `5.21.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install tb`
- * @name `tb`
+ * @install `launchpad install tinybird.co`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.tb
- * // Or access via domain
- * const samePkg = pantry.tinybirdco
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.tinybirdco
  * console.log(pkg.name)        // "tb"
  * console.log(pkg.programs)    // ["tb"]
  * console.log(pkg.versions[0]) // "5.21.1" (latest)
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/tinybird-co.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tbPackage = {
+export const tinybirdcoPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const tbPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/tinybird.co/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tb' as const,
+  installCommand: 'launchpad install tinybird.co' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +tinybird.co -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install tinybird.co' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +69,7 @@ export const tbPackage = {
     '5.21.0',
     '5.20.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tb -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tb' as const,
 }
 
-export type TbPackage = typeof tbPackage
+export type TinybirdcoPackage = typeof tinybirdcoPackage

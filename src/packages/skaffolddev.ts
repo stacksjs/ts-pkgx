@@ -6,18 +6,15 @@
  * @version `2.16.1` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install skaffold`
- * @name `skaffold`
+ * @install `launchpad install skaffold.dev`
+ * @homepage https://skaffold.dev/
+ * @dependencies `curl.se`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.skaffold
- * // Or access via domain
- * const samePkg = pantry.skaffolddev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.skaffolddev
  * console.log(pkg.name)        // "skaffold"
  * console.log(pkg.description) // "Easy and Repeatable Kubernetes Development"
  * console.log(pkg.programs)    // ["skaffold"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/skaffold-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const skaffoldPackage = {
+export const skaffolddevPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const skaffoldPackage = {
    */
   description: 'Easy and Repeatable Kubernetes Development' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/skaffold.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://skaffold.dev/' as const,
+  githubUrl: 'https://github.com/GoogleContainerTools/skaffold' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install skaffold' as const,
+  installCommand: 'launchpad install skaffold.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +skaffold.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install skaffold.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const skaffoldPackage = {
     'skaffold',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'curl.se',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -78,13 +83,7 @@ export const skaffoldPackage = {
     '2.9.0',
     '2.8.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) skaffold -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install skaffold' as const,
 }
 
-export type SkaffoldPackage = typeof skaffoldPackage
+export type SkaffolddevPackage = typeof skaffolddevPackage

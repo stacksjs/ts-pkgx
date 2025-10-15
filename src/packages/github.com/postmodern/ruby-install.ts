@@ -6,19 +6,14 @@
  * @version `0.10.1` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ruby-install`
- * @name `ruby-install`
+ * @install `launchpad install github.com/postmodern/ruby-install`
  * @dependencies `tukaani.org/xz`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rubyinstall
- * // Or access via domain
- * const samePkg = pantry.githubcompostmodernrubyinstall
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcompostmodernrubyinstall
  * console.log(pkg.name)        // "ruby-install"
  * console.log(pkg.description) // "Install Ruby, JRuby, Rubinius, TruffleRuby, or ..."
  * console.log(pkg.programs)    // ["ruby-install"]
@@ -43,12 +38,14 @@ export const rubyinstallPackage = {
   description: 'Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/postmodern/ruby-install/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/postmodern/ruby-install' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ruby-install' as const,
+  installCommand: 'launchpad install github.com/postmodern/ruby-install' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/postmodern/ruby-install -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/postmodern/ruby-install' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,13 +73,7 @@ export const rubyinstallPackage = {
     '0.9.2',
     '0.9.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ruby-install -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ruby-install' as const,
 }
 
 export type RubyinstallPackage = typeof rubyinstallPackage

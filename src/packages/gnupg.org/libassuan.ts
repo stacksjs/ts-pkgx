@@ -6,18 +6,14 @@
  * @version `3.0.2` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install libassuan-config`
- * @name `libassuan-config`
+ * @install `launchpad install gnupg.org/libassuan`
+ * @homepage https://www.gnupg.org/related_software/libassuan/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.libassuanconfig
- * // Or access via domain
- * const samePkg = pantry.gnupgorglibassuan
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.gnupgorglibassuan
  * console.log(pkg.name)        // "libassuan-config"
  * console.log(pkg.description) // "Assuan IPC Library"
  * console.log(pkg.programs)    // ["libassuan-config"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/gnupg-org/libassuan.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libassuanconfigPackage = {
+export const gnupgorglibassuanPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const libassuanconfigPackage = {
    */
   description: 'Assuan IPC Library' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/libassuan/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.gnupg.org/related_software/libassuan/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install libassuan-config' as const,
+  installCommand: 'launchpad install gnupg.org/libassuan' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnupg.org/libassuan -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnupg.org/libassuan' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,13 +67,7 @@ export const libassuanconfigPackage = {
     '2.5.6',
     '2.5.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) libassuan-config -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libassuan-config' as const,
 }
 
-export type LibassuanconfigPackage = typeof libassuanconfigPackage
+export type GnupgorglibassuanPackage = typeof gnupgorglibassuanPackage

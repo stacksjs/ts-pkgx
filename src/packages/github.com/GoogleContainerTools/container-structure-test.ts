@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/GoogleContainerTools/container-structure-test.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgooglecontainertoolscontainerstructuretestPackage = {
+export const containerstructuretestPackage = {
   /**
    * The display name of this package.
    */
@@ -77,4 +77,4 @@ export const githubcomgooglecontainertoolscontainerstructuretestPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgooglecontainertoolscontainerstructuretestPackage = typeof githubcomgooglecontainertoolscontainerstructuretestPackage
+export type ContainerstructuretestPackage = typeof containerstructuretestPackage

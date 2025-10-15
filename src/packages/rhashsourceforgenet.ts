@@ -1,5 +1,5 @@
 /**
- * **rhash.sourceforge.net** - Utility for computing and verifying hash sums of files
+ * **rhash.sourceforge** - Utility for computing and verifying hash sums of files
  *
  * @domain `rhash.sourceforge.net`
  * @programs `whirlpool-hash`, `tiger-hash`, `tth-hash`, `rhash`, `sfv-hash`, ... (+7 more)
@@ -7,13 +7,14 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rhash.sourceforge.net`
+ * @homepage https://sourceforge.net/projects/rhash/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.rhashsourceforgenet
- * console.log(pkg.name)        // "rhash.sourceforge.net"
+ * console.log(pkg.name)        // "rhash.sourceforge"
  * console.log(pkg.description) // "Utility for computing and verifying hash sums o..."
  * console.log(pkg.programs)    // ["whirlpool-hash", "tiger-hash", ...]
  * console.log(pkg.versions[0]) // "1.4.6" (latest)
@@ -26,7 +27,7 @@ export const rhashsourceforgenetPackage = {
   /**
    * The display name of this package.
    */
-  name: 'rhash.sourceforge.net' as const,
+  name: 'rhash.sourceforge' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,13 +37,15 @@ export const rhashsourceforgenetPackage = {
    */
   description: 'Utility for computing and verifying hash sums of files' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/rhash.sourceforge.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://sourceforge.net/projects/rhash/' as const,
+  githubUrl: 'https://github.com/rhash/RHash' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install rhash.sourceforge.net' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rhash.sourceforge.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install rhash.sourceforge.net' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,8 +77,6 @@ export const rhashsourceforgenetPackage = {
     '1.4.3',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +rhash.sourceforge.net -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rhash.sourceforge.net' as const,
 }
 
 export type RhashsourceforgenetPackage = typeof rhashsourceforgenetPackage

@@ -1,5 +1,5 @@
 /**
- * **gnupg.org/libgpg-error** - Common error values for all GnuPG components
+ * **libgpg-error** - Common error values for all GnuPG components
  *
  * @domain `gnupg.org/libgpg-error`
  * @programs `gpg-error`, `gpg-error-config`, `gpgrt-config`, `yat2m`
@@ -7,13 +7,14 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnupg.org/libgpg-error`
+ * @homepage https://www.gnupg.org/related_software/libgpg-error/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnupgorglibgpgerror
- * console.log(pkg.name)        // "gnupg.org/libgpg-error"
+ * console.log(pkg.name)        // "libgpg-error"
  * console.log(pkg.description) // "Common error values for all GnuPG components"
  * console.log(pkg.programs)    // ["gpg-error", "gpg-error-config", ...]
  * console.log(pkg.versions[0]) // "1.56.0" (latest)
@@ -26,7 +27,7 @@ export const gnupgorglibgpgerrorPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnupg.org/libgpg-error' as const,
+  name: 'libgpg-error' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,13 +37,15 @@ export const gnupgorglibgpgerrorPackage = {
    */
   description: 'Common error values for all GnuPG components' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/libgpg-error/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.gnupg.org/related_software/libgpg-error/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnupg.org/libgpg-error' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnupg.org/libgpg-error -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnupg.org/libgpg-error' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,8 +76,6 @@ export const gnupgorglibgpgerrorPackage = {
     '1.45.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnupg.org/libgpg-error -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnupg.org/libgpg-error' as const,
 }
 
 export type GnupgorglibgpgerrorPackage = typeof gnupgorglibgpgerrorPackage

@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/Cyan4973/xxHash.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomcyan4973xxhashPackage = {
+export const xxhashPackage = {
   /**
    * The display name of this package.
    */
@@ -70,4 +70,4 @@ export const githubcomcyan4973xxhashPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomcyan4973xxhashPackage = typeof githubcomcyan4973xxhashPackage
+export type XxhashPackage = typeof xxhashPackage

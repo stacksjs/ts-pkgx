@@ -1,5 +1,5 @@
 /**
- * **github.com/romanz/trezor-agent** - Hardware-based SSH/GPG/age agent
+ * **trezor-agent** - Hardware-based SSH/GPG/age agent
  *
  * @domain `github.com/romanz/trezor-agent`
  * @programs `jade-agent`, `jade-gpg`, `jade-gpg-agent`, `keepkey-agent`, `keepkeyctl`, ... (+12 more)
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.githubcomromanztrezoragent
- * console.log(pkg.name)        // "github.com/romanz/trezor-agent"
+ * console.log(pkg.name)        // "trezor-agent"
  * console.log(pkg.description) // "Hardware-based SSH/GPG/age agent"
  * console.log(pkg.programs)    // ["jade-agent", "jade-gpg", ...]
  * console.log(pkg.versions[0]) // "0.15.0" (latest)
@@ -23,11 +23,11 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/romanz/trezor-agent.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomromanztrezoragentPackage = {
+export const trezoragentPackage = {
   /**
    * The display name of this package.
    */
-  name: 'github.com/romanz/trezor-agent' as const,
+  name: 'trezor-agent' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -38,12 +38,14 @@ export const githubcomromanztrezoragentPackage = {
   description: 'Hardware-based SSH/GPG/age agent' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/romanz/trezor-agent/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/romanz/trezor-agent' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install github.com/romanz/trezor-agent' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/romanz/trezor-agent -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/romanz/trezor-agent' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -87,8 +89,6 @@ export const githubcomromanztrezoragentPackage = {
     '0.14.8',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/romanz/trezor-agent -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install github.com/romanz/trezor-agent' as const,
 }
 
-export type GithubcomromanztrezoragentPackage = typeof githubcomromanztrezoragentPackage
+export type TrezoragentPackage = typeof trezoragentPackage

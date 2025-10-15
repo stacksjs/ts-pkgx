@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/adrienverge/yamllint.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomadrienvergeyamllintPackage = {
+export const yamllintPackage = {
   /**
    * The display name of this package.
    */
@@ -81,4 +81,4 @@ export const githubcomadrienvergeyamllintPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomadrienvergeyamllintPackage = typeof githubcomadrienvergeyamllintPackage
+export type YamllintPackage = typeof yamllintPackage

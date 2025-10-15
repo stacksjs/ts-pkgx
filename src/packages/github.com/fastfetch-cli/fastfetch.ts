@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/fastfetch-cli/fastfetch.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomfastfetchclifastfetchPackage = {
+export const fastfetchPackage = {
   /**
    * The display name of this package.
    */
@@ -116,4 +116,4 @@ export const githubcomfastfetchclifastfetchPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomfastfetchclifastfetchPackage = typeof githubcomfastfetchclifastfetchPackage
+export type FastfetchPackage = typeof fastfetchPackage

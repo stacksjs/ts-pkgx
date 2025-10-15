@@ -6,19 +6,15 @@
  * @version `0.112.2` (45 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mz`
- * @name `mz`
+ * @install `launchpad install materialize.com`
+ * @homepage https://materialize.com
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mz
- * // Or access via domain
- * const samePkg = pantry.materializecom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.materializecom
  * console.log(pkg.name)        // "mz"
  * console.log(pkg.description) // "Real-time Data Integration and Transformation: ..."
  * console.log(pkg.programs)    // ["mz"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/materialize-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mzPackage = {
+export const materializecomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const mzPackage = {
    */
   description: 'Real-time Data Integration and Transformation: use SQL to transform, deliver, and act on fast-changing data.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/materialize.com/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://materialize.com' as const,
   githubUrl: 'https://github.com/MaterializeInc/materialize' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mz' as const,
+  installCommand: 'launchpad install materialize.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +materialize.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install materialize.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -115,13 +113,7 @@ export const mzPackage = {
     '0.68.1',
     '0.67.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mz -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mz' as const,
 }
 
-export type MzPackage = typeof mzPackage
+export type MaterializecomPackage = typeof materializecomPackage

@@ -6,18 +6,14 @@
  * @version `0.1.7` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install diffoci`
- * @name `diffoci`
+ * @install `launchpad install github.com/reproducible-containers/diffoci`
+ * @dependencies `go.dev@1.21.0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.diffoci
- * // Or access via domain
- * const samePkg = pantry.githubcomreproduciblecontainersdiffoci
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcomreproduciblecontainersdiffoci
  * console.log(pkg.name)        // "diffoci"
  * console.log(pkg.description) // "diff for Docker and OCI container images"
  * console.log(pkg.programs)    // ["diffoci"]
@@ -42,12 +38,14 @@ export const diffociPackage = {
   description: 'diff for Docker and OCI container images' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/reproducible-containers/diffoci/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/reproducible-containers/diffoci' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install diffoci' as const,
+  installCommand: 'launchpad install github.com/reproducible-containers/diffoci' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/reproducible-containers/diffoci -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/reproducible-containers/diffoci' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const diffociPackage = {
     'diffoci',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@1.21.0',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,13 +71,7 @@ export const diffociPackage = {
     '0.1.5',
     '0.1.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) diffoci -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install diffoci' as const,
 }
 
 export type DiffociPackage = typeof diffociPackage

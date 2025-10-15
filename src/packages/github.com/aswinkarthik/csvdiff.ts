@@ -24,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/aswinkarthik/csvdiff.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomaswinkarthikcsvdiffPackage = {
+export const csvdiffPackage = {
   /**
    * The display name of this package.
    */
@@ -72,4 +72,4 @@ export const githubcomaswinkarthikcsvdiffPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomaswinkarthikcsvdiffPackage = typeof githubcomaswinkarthikcsvdiffPackage
+export type CsvdiffPackage = typeof csvdiffPackage

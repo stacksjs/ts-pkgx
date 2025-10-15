@@ -1,5 +1,5 @@
 /**
- * **gnome.org/glib** - Core application library for C
+ * **glib** - Core application library for C
  *
  * @domain `gnome.org/glib`
  * @programs `gdbus`, `gdbus-codegen`, `gio`, `gio-querymodules`, `glib-compile-resources`, ... (+9 more)
@@ -7,15 +7,15 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnome.org/glib`
+ * @homepage https://docs.gtk.org/glib/
  * @dependencies `gnu.org/gettext^0.21`, `sourceware.org/libffi@3`, `pcre.org@8`, ... (+2 more)
- * @companions `gnome.org/gsettings-desktop-schemas`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gnomeorgglib
- * console.log(pkg.name)        // "gnome.org/glib"
+ * console.log(pkg.name)        // "glib"
  * console.log(pkg.description) // "Core application library for C"
  * console.log(pkg.programs)    // ["gdbus", "gdbus-codegen", ...]
  * console.log(pkg.versions[0]) // "2.86.0" (latest)
@@ -28,7 +28,7 @@ export const gnomeorgglibPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gnome.org/glib' as const,
+  name: 'glib' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -38,13 +38,15 @@ export const gnomeorgglibPackage = {
    */
   description: 'Core application library for C' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/glib/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docs.gtk.org/glib/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gnome.org/glib' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/glib -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gnome.org/glib' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,13 +67,7 @@ export const gnomeorgglibPackage = {
     'gtester',
     'gtester-report',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'gnome.org/gsettings-desktop-schemas',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -140,8 +136,6 @@ export const gnomeorgglibPackage = {
     '2.72.4',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnome.org/glib -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gnome.org/glib' as const,
 }
 
 export type GnomeorgglibPackage = typeof gnomeorgglibPackage

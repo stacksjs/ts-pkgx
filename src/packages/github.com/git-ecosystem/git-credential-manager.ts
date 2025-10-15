@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/git-ecosystem/git-credential-manager.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomgitecosystemgitcredentialmanagerPackage = {
+export const gitcredentialmanagerPackage = {
   /**
    * The display name of this package.
    */
@@ -74,4 +74,4 @@ export const githubcomgitecosystemgitcredentialmanagerPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomgitecosystemgitcredentialmanagerPackage = typeof githubcomgitecosystemgitcredentialmanagerPackage
+export type GitcredentialmanagerPackage = typeof gitcredentialmanagerPackage

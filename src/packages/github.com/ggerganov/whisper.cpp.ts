@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/ggerganov/whisper-cpp.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomggerganovwhispercppPackage = {
+export const whispercppPackage = {
   /**
    * The display name of this package.
    */
@@ -94,4 +94,4 @@ export const githubcomggerganovwhispercppPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomggerganovwhispercppPackage = typeof githubcomggerganovwhispercppPackage
+export type WhispercppPackage = typeof whispercppPackage

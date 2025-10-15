@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install jenkins.io`
+ * @homepage https://www.jenkins.io/
  * @dependencies `openjdk.org<20`
  *
  * @example
@@ -37,13 +38,15 @@ export const jenkinsioPackage = {
    */
   description: 'Extendable open source continuous integration server' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/jenkins.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.jenkins.io/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install jenkins.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jenkins.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install jenkins.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -90,8 +93,6 @@ export const jenkinsioPackage = {
     '2.426.2',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +jenkins.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jenkins.io' as const,
 }
 
 export type JenkinsioPackage = typeof jenkinsioPackage

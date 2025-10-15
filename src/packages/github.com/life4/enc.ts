@@ -23,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/life4/enc.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomlife4encPackage = {
+export const encPackage = {
   /**
    * The display name of this package.
    */
@@ -73,4 +73,4 @@ export const githubcomlife4encPackage = {
   aliases: [] as const,
 }
 
-export type Githubcomlife4encPackage = typeof githubcomlife4encPackage
+export type EncPackage = typeof encPackage

@@ -21,7 +21,7 @@
  * @see https://ts-pkgx.netlify.app/packages/github-com/danfis/libccd.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const githubcomdanfislibccdPackage = {
+export const libccdPackage = {
   /**
    * The display name of this package.
    */
@@ -63,4 +63,4 @@ export const githubcomdanfislibccdPackage = {
   aliases: [] as const,
 }
 
-export type GithubcomdanfislibccdPackage = typeof githubcomdanfislibccdPackage
+export type LibccdPackage = typeof libccdPackage

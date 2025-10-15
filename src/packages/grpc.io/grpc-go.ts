@@ -6,20 +6,15 @@
  * @version `1.76.0` (38 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install protoc-gen-go-grpc`
- * @name `protoc-gen-go-grpc`
+ * @install `launchpad install grpc.io/grpc-go`
+ * @homepage https://grpc.io
  * @dependencies `google.com/protobuf-go^1`
- * @companions `protobuf.dev`, `abseil.io`, `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.protocgengogrpc
- * // Or access via domain
- * const samePkg = pantry.grpciogrpcgo
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.grpciogrpcgo
  * console.log(pkg.name)        // "protoc-gen-go-grpc"
  * console.log(pkg.description) // "The Go language implementation of gRPC. HTTP/2 ..."
  * console.log(pkg.programs)    // ["protoc-gen-go-grpc"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/grpc-io/grpc-go.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const protocgengogrpcPackage = {
+export const grpciogrpcgoPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const protocgengogrpcPackage = {
    */
   description: 'The Go language implementation of gRPC. HTTP/2 based RPC' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/grpc.io/grpc-go/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://grpc.io' as const,
+  githubUrl: 'https://github.com/grpc/grpc-go' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install protoc-gen-go-grpc' as const,
+  installCommand: 'launchpad install grpc.io/grpc-go' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +grpc.io/grpc-go -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install grpc.io/grpc-go' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,15 +54,7 @@ export const protocgengogrpcPackage = {
   programs: [
     'protoc-gen-go-grpc',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'protobuf.dev',
-    'abseil.io',
-    'go.dev',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -117,13 +106,7 @@ export const protocgengogrpcPackage = {
     '1.63.3',
     '1.63.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) protoc-gen-go-grpc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install protoc-gen-go-grpc' as const,
 }
 
-export type ProtocgengogrpcPackage = typeof protocgengogrpcPackage
+export type GrpciogrpcgoPackage = typeof grpciogrpcgoPackage

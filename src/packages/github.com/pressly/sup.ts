@@ -6,18 +6,15 @@
  * @version `0.5.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sup`
- * @name `sup`
+ * @install `launchpad install github.com/pressly/sup`
+ * @homepage https://pressly.github.io/sup
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sup
- * // Or access via domain
- * const samePkg = pantry.githubcompresslysup
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.githubcompresslysup
  * console.log(pkg.name)        // "sup"
  * console.log(pkg.description) // "Super simple deployment tool - think of it like..."
  * console.log(pkg.programs)    // ["sup"]
@@ -41,13 +38,15 @@ export const supPackage = {
    */
   description: 'Super simple deployment tool - think of it like \'make\' for a network of servers' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/pressly/sup/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://pressly.github.io/sup' as const,
+  githubUrl: 'https://github.com/pressly/sup' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sup' as const,
+  installCommand: 'launchpad install github.com/pressly/sup' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/pressly/sup -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install github.com/pressly/sup' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const supPackage = {
     'sup',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +69,7 @@ export const supPackage = {
   versions: [
     '0.5.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sup -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sup' as const,
 }
 
 export type SupPackage = typeof supPackage
