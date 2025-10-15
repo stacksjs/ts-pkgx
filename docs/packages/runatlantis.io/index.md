@@ -6,14 +6,14 @@
 
 - **Domain**: `runatlantis.io`
 - **Name**: `atlantis`
-- **Homepage**: Not specified
+- **Homepage**: https://www.runatlantis.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/runatlantis.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install atlantis
+launchpad install runatlantis.io
 ```
 
 ## Programs
@@ -41,8 +41,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) atlantis -- $SHELL -i
+sh <(curl https://pkgx.sh) +runatlantis.io@0.36.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 
@@ -60,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/runatlantis.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.runatlantis.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

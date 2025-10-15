@@ -1,19 +1,19 @@
-# go.dev
+# go
 
 > The Go programming language
 
 ## Package Information
 
 - **Domain**: `go.dev`
-- **Name**: `go.dev`
-- **Homepage**: Not specified
+- **Name**: `go`
+- **Homepage**: https://go.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/go.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install go
+launchpad install go.dev
 ```
 
 ## Programs
@@ -22,12 +22,6 @@ This package provides the following executable programs:
 
 - `go`
 - `gofmt`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `go`
 
 ## Available Versions
 
@@ -84,7 +78,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/go.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://go.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

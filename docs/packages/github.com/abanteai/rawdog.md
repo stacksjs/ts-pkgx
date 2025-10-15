@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/abanteai/rawdog`
 - **Name**: `rawdog`
-- **Homepage**: Not specified
+- **Homepage**: https://mentat.ai
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/abanteai/rawdog/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rawdog
+launchpad install github.com/abanteai/rawdog
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rawdog -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/abanteai/rawdog@0.1.6 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/abanteai/rawdog/package.yml)
-- [Homepage](#)
+- [Homepage](https://mentat.ai)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

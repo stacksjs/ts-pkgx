@@ -1,12 +1,12 @@
-# macvim.org
+# macvim
 
 > Vim - the text editor - for macOS
 
 ## Package Information
 
 - **Domain**: `macvim.org`
-- **Name**: `macvim.org`
-- **Homepage**: Not specified
+- **Name**: `macvim`
+- **Homepage**: https://macvim.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/macvim.org/package.yml)
 
 ## Installation
@@ -69,7 +69,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['macvim.org']
+const pkg = pantry.macvim
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -79,7 +79,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/macvim.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://macvim.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

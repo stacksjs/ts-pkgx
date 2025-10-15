@@ -8,7 +8,7 @@
  *
  * @install `launchpad install dart.dev`
  * @homepage https://dart.dev
- * @dependencies `curl.se`, `python.org@>=3<3.12`, `tukaani.org/xz`, ... (+1 more)
+ * @dependencies `curl.se`, `python.org@>=3<3.12`, `tukaani.org/xz`
  *
  * @example
  * ```typescript
@@ -64,7 +64,6 @@ export const dartdevPackage = {
     'curl.se',
     'python.org@>=3<3.12',
     'tukaani.org/xz',
-    'if@darwin',
   ] as const,
   /**
    * Available versions from newest to oldest.

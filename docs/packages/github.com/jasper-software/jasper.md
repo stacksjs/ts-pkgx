@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/jasper-software/jasper`
 - **Name**: `jasper`
-- **Homepage**: Not specified
+- **Homepage**: https://ece.engr.uvic.ca/~frodo/jasper/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jasper-software/jasper/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install jasper
+launchpad install github.com/jasper-software/jasper
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) jasper -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/jasper-software/jasper@4.2.8 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jasper-software/jasper/package.yml)
-- [Homepage](#)
+- [Homepage](https://ece.engr.uvic.ca/~frodo/jasper/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

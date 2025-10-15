@@ -6,14 +6,14 @@
 
 - **Domain**: `oracle.com/oci-cli`
 - **Name**: `oci`
-- **Homepage**: Not specified
+- **Homepage**: https://docs.cloud.oracle.com/iaas/Content/API/Concepts/cliconcepts.htm
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/oracle.com/oci-cli/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install oci
+launchpad install oracle.com/oci-cli
 ```
 
 ## Programs
@@ -53,7 +53,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) oci -- $SHELL -i
+sh <(curl https://pkgx.sh) +oracle.com/oci-cli@3.68.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -81,7 +81,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/oracle.com/oci-cli/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.cloud.oracle.com/iaas/Content/API/Concepts/cliconcepts.htm)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

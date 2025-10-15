@@ -1,12 +1,12 @@
-# github.com/psf/requests
+# requests
 
 > A simple, yet elegant, HTTP library.
 
 ## Package Information
 
 - **Domain**: `github.com/psf/requests`
-- **Name**: `github.com/psf/requests`
-- **Homepage**: Not specified
+- **Name**: `requests`
+- **Homepage**: https://requests.readthedocs.io/en/latest/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/psf/requests/package.yml)
 
 ## Installation
@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/psf/requests']
+const pkg = pantry.requests
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/psf/requests/package.yml)
-- [Homepage](#)
+- [Homepage](https://requests.readthedocs.io/en/latest/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

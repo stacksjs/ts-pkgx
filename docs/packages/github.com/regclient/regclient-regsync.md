@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install regsync
+launchpad install github.com/regclient/regclient/regsync
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) regsync -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/regclient/regclient/regsync@0.9.2 -- $SHELL -i
 ```
 
 ## Dependencies

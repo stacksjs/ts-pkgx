@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install nnn
+launchpad install github.com/jarun/nnn
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) nnn -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/jarun/nnn@5.1.0 -- $SHELL -i
 ```
 
 ## Dependencies

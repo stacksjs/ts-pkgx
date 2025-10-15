@@ -1,11 +1,11 @@
-# khronos.org/opencl-headers
+# opencl-headers
 
 > Khronos OpenCL-Headers
 
 ## Package Information
 
 - **Domain**: `khronos.org/opencl-headers`
-- **Name**: `khronos.org/opencl-headers`
+- **Name**: `opencl-headers`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/khronos.org/opencl-headers/package.yml)
 
@@ -40,13 +40,21 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +khronos.org/opencl-headers@2025.7.22 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/make`
+- `cmake.org`
+- `python.org@~3.11`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['khronos.org/opencl-headers']
+const pkg = pantry['opencl-headers']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

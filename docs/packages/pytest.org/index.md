@@ -6,14 +6,14 @@
 
 - **Domain**: `pytest.org`
 - **Name**: `pytest`
-- **Homepage**: Not specified
+- **Homepage**: https://docs.pytest.org/en/latest/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pytest.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pytest
+launchpad install pytest.org
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pytest -- $SHELL -i
+sh <(curl https://pkgx.sh) +pytest.org@8.4.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pytest.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.pytest.org/en/latest/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

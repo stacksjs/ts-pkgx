@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/asciidoc-py/asciidoc-py`
 - **Name**: `asciidoc`
-- **Homepage**: Not specified
+- **Homepage**: https://asciidoc-py.github.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/asciidoc-py/asciidoc-py/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install asciidoc
+launchpad install github.com/asciidoc-py/asciidoc-py
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) asciidoc -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/asciidoc-py/asciidoc-py@10.2.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/asciidoc-py/asciidoc-py/package.yml)
-- [Homepage](#)
+- [Homepage](https://asciidoc-py.github.io/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

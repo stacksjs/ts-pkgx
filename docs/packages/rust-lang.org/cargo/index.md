@@ -6,14 +6,14 @@
 
 - **Domain**: `rust-lang.org/cargo`
 - **Name**: `cargo`
-- **Homepage**: Not specified
+- **Homepage**: https://doc.rust-lang.org/cargo
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.org/cargo/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cargo
+launchpad install rust-lang.org/cargo
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cargo -- $SHELL -i
+sh <(curl https://pkgx.sh) +rust-lang.org/cargo@0.91.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -54,13 +54,6 @@ This package depends on:
 - `curl.se/ca-certs`
 - `linux:llvm.org`
 - `linux:curl.se`
-
-## Related Packages
-
-These packages work well with cargo:
-
-- [`git-scm.org`](../../git-scm.org/index.md) - Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.
-- [`rust-lang.org`](../index.md) - Empowering everyone to build reliable and efficient software.
 
 ## Usage Examples
 
@@ -78,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.org/cargo/package.yml)
-- [Homepage](#)
+- [Homepage](https://doc.rust-lang.org/cargo)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

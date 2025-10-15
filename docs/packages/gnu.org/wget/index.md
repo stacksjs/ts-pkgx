@@ -6,14 +6,14 @@
 
 - **Domain**: `gnu.org/wget`
 - **Name**: `wget`
-- **Homepage**: Not specified
+- **Homepage**: https://www.gnu.org/software/wget/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/wget/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install wget
+launchpad install gnu.org/wget
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) wget -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnu.org/wget@1.25.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/wget/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org/software/wget/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

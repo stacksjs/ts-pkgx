@@ -1,12 +1,12 @@
-# wxwidgets.org
+# wxwidgets
 
 > Cross-Platform C++ GUI Library
 
 ## Package Information
 
 - **Domain**: `wxwidgets.org`
-- **Name**: `wxwidgets.org`
-- **Homepage**: Not specified
+- **Name**: `wxwidgets`
+- **Homepage**: https://www.wxwidgets.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wxwidgets.org/package.yml)
 
 ## Installation
@@ -62,7 +62,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['wxwidgets.org']
+const pkg = pantry.wxwidgets
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -72,7 +72,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/wxwidgets.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.wxwidgets.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install cedar-agent
+launchpad install permit.io/cedar-agent
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cedar-agent -- $SHELL -i
+sh <(curl https://pkgx.sh) +permit.io/cedar-agent@0.2.1 -- $SHELL -i
 ```
 
 ## Usage Examples

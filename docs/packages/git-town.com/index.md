@@ -6,14 +6,14 @@
 
 - **Domain**: `git-town.com`
 - **Name**: `git-town`
-- **Homepage**: Not specified
+- **Homepage**: https://www.git-town.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/git-town.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install git-town
+launchpad install git-town.com
 ```
 
 ## Programs
@@ -49,8 +49,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) git-town -- $SHELL -i
+sh <(curl https://pkgx.sh) +git-town.com@22.1.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.23.10`
 
 ## Usage Examples
 
@@ -68,7 +74,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/git-town.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.git-town.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

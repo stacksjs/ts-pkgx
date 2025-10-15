@@ -1,12 +1,12 @@
-# github.com/KhronosGroup/Vulkan-Loader
+# Vulkan-Loader
 
 > Vulkan Loader
 
 ## Package Information
 
 - **Domain**: `github.com/KhronosGroup/Vulkan-Loader`
-- **Name**: `github.com/KhronosGroup/Vulkan-Loader`
-- **Homepage**: Not specified
+- **Name**: `Vulkan-Loader`
+- **Homepage**: https://vulkan.lunarg.com/doc/sdk/latest/linux/LoaderInterfaceArchitecture.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/KhronosGroup/Vulkan-Loader/package.yml)
 
 ## Installation
@@ -68,7 +68,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/KhronosGroup/Vulkan-Loader']
+const pkg = pantry['Vulkan-Loader']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -78,7 +78,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/KhronosGroup/Vulkan-Loader/package.yml)
-- [Homepage](#)
+- [Homepage](https://vulkan.lunarg.com/doc/sdk/latest/linux/LoaderInterfaceArchitecture.html)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

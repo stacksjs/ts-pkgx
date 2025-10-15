@@ -1,11 +1,11 @@
-# github.com/kjd/idna
+# idna
 
 > Internationalized Domain Names for Python (IDNA 2008 and UTS #46)
 
 ## Package Information
 
 - **Domain**: `github.com/kjd/idna`
-- **Name**: `github.com/kjd/idna`
+- **Name**: `idna`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kjd/idna/package.yml)
 
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/kjd/idna']
+const pkg = pantry.idna
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

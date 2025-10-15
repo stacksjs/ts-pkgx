@@ -1,12 +1,12 @@
-# markupsafe.palletsprojects.com
+# markupsafe.palletsprojects
 
 > Safely add untrusted strings to HTML/XML markup.
 
 ## Package Information
 
 - **Domain**: `markupsafe.palletsprojects.com`
-- **Name**: `markupsafe.palletsprojects.com`
-- **Homepage**: Not specified
+- **Name**: `markupsafe.palletsprojects`
+- **Homepage**: https://markupsafe.palletsprojects.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/markupsafe.palletsprojects.com/package.yml)
 
 ## Installation
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['markupsafe.palletsprojects.com']
+const pkg = pantry['markupsafe.palletsprojects']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/markupsafe.palletsprojects.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://markupsafe.palletsprojects.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

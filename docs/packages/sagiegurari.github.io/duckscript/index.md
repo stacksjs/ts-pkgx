@@ -6,25 +6,19 @@
 
 - **Domain**: `sagiegurari.github.io/duckscript`
 - **Name**: `duckscript`
-- **Homepage**: Not specified
+- **Homepage**: https://sagiegurari.github.io/duckscript
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sagiegurari.github.io/duckscript/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install duck
+launchpad install sagiegurari.github.io/duckscript
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `duck`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `duck`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) duck -- $SHELL -i
+sh <(curl https://pkgx.sh) +sagiegurari.github.io/duckscript@0.11.1 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -52,7 +46,7 @@ sh <(curl https://pkgx.sh) duck -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.duck
+const pkg = pantry.duckscript
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -62,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sagiegurari.github.io/duckscript/package.yml)
-- [Homepage](#)
+- [Homepage](https://sagiegurari.github.io/duckscript)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

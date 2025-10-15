@@ -6,14 +6,14 @@
 
 - **Domain**: `pdm.fming.dev`
 - **Name**: `pdm`
-- **Homepage**: Not specified
+- **Homepage**: https://pdm.fming.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pdm.fming.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pdm
+launchpad install pdm.fming.dev
 ```
 
 ## Programs
@@ -51,7 +51,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pdm -- $SHELL -i
+sh <(curl https://pkgx.sh) +pdm.fming.dev@2.26.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -76,7 +76,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pdm.fming.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://pdm.fming.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install ddh
+launchpad install crates.io/ddh
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ddh -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/ddh@0.13.0 -- $SHELL -i
 ```
 
 ## Usage Examples

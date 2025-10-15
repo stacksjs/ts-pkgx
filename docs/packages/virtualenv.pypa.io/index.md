@@ -6,14 +6,14 @@
 
 - **Domain**: `virtualenv.pypa.io`
 - **Name**: `virtualenv`
-- **Homepage**: Not specified
+- **Homepage**: https://virtualenv.pypa.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/virtualenv.pypa.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install virtualenv
+launchpad install virtualenv.pypa.io
 ```
 
 ## Programs
@@ -46,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) virtualenv -- $SHELL -i
+sh <(curl https://pkgx.sh) +virtualenv.pypa.io@20.35.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/virtualenv.pypa.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://virtualenv.pypa.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

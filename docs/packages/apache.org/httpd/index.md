@@ -1,12 +1,12 @@
-# apache.org/httpd
+# httpd
 
 > Apache HTTP server
 
 ## Package Information
 
 - **Domain**: `apache.org/httpd`
-- **Name**: `apache.org/httpd`
-- **Homepage**: Not specified
+- **Name**: `httpd`
+- **Homepage**: https://httpd.apache.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/httpd/package.yml)
 
 ## Installation
@@ -73,7 +73,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['apache.org/httpd']
+const pkg = pantry.httpd
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -83,7 +83,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/httpd/package.yml)
-- [Homepage](#)
+- [Homepage](https://httpd.apache.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

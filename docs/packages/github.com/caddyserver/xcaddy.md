@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install xcaddy
+launchpad install github.com/caddyserver/xcaddy
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) xcaddy -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/caddyserver/xcaddy@0.4.5 -- $SHELL -i
 ```
 
 ## Dependencies

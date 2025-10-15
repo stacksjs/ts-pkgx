@@ -1,12 +1,12 @@
-# gnome.org/glib
+# glib
 
 > Core application library for C
 
 ## Package Information
 
 - **Domain**: `gnome.org/glib`
-- **Name**: `gnome.org/glib`
-- **Homepage**: Not specified
+- **Name**: `glib`
+- **Homepage**: https://docs.gtk.org/glib/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/glib/package.yml)
 
 ## Installation
@@ -72,19 +72,13 @@ This package depends on:
 - `pcre.org/v2@10`
 - `python.org^3 # several of the bins are scripts`
 
-## Related Packages
-
-These packages work well with gnome.org/glib:
-
-- [`gnome.org/gsettings-desktop-schemas`](../gsettings-desktop-schemas/index.md)
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnome.org/glib']
+const pkg = pantry.glib
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -94,7 +88,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/glib/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.gtk.org/glib/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

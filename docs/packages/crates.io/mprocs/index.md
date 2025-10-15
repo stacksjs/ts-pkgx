@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install mprocs
+launchpad install crates.io/mprocs
 ```
 
 ## Programs
@@ -37,8 +37,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mprocs -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/mprocs@0.7.3 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `linux:gnu.org/gcc`
+- `linux:gnu.org/binutils`
+- `linux:gnu.org/make`
 
 ## Usage Examples
 

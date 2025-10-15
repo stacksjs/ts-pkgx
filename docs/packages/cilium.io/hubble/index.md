@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install hubble
+launchpad install cilium.io/hubble
 ```
 
 ## Programs
@@ -40,8 +40,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) hubble -- $SHELL -i
+sh <(curl https://pkgx.sh) +cilium.io/hubble@1.18.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.22`
 
 ## Usage Examples
 

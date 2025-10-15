@@ -6,14 +6,14 @@
 
 - **Domain**: `schollz.com/croc`
 - **Name**: `croc`
-- **Homepage**: Not specified
+- **Homepage**: https://schollz.com/software/croc6
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/schollz.com/croc/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install croc
+launchpad install schollz.com/croc
 ```
 
 ## Programs
@@ -44,8 +44,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) croc -- $SHELL -i
+sh <(curl https://pkgx.sh) +schollz.com/croc@10.4.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 
@@ -63,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/schollz.com/croc/package.yml)
-- [Homepage](#)
+- [Homepage](https://schollz.com/software/croc6)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

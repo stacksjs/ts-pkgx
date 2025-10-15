@@ -6,14 +6,14 @@
 
 - **Domain**: `pcre.org`
 - **Name**: `pcre`
-- **Homepage**: Not specified
+- **Homepage**: https://www.pcre.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pcre.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pcre
+launchpad install pcre.org
 ```
 
 ## Programs
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pcre.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.pcre.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

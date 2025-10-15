@@ -6,14 +6,14 @@
 
 - **Domain**: `buf.build`
 - **Name**: `buf`
-- **Homepage**: Not specified
+- **Homepage**: https://buf.build
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/buf.build/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install buf
+launchpad install buf.build
 ```
 
 ## Programs
@@ -46,8 +46,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) buf -- $SHELL -i
+sh <(curl https://pkgx.sh) +buf.build@1.58.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.20`
 
 ## Usage Examples
 
@@ -65,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/buf.build/package.yml)
-- [Homepage](#)
+- [Homepage](https://buf.build)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `developers.yubico.com/libfido2`
 - **Name**: `fido2`
-- **Homepage**: Not specified
+- **Homepage**: https://developers.yubico.com/libfido2/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/developers.yubico.com/libfido2/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install fido2
+launchpad install developers.yubico.com/libfido2
 ```
 
 ## Programs
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/developers.yubico.com/libfido2/package.yml)
-- [Homepage](#)
+- [Homepage](https://developers.yubico.com/libfido2/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

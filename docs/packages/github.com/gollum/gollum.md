@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/gollum/gollum`
 - **Name**: `gollum`
-- **Homepage**: Not specified
+- **Homepage**: https://gollum.readthedocs.io/en/latest/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/gollum/gollum/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gollum
+launchpad install github.com/gollum/gollum
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gollum -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/gollum/gollum@6.1.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/gollum/gollum/package.yml)
-- [Homepage](#)
+- [Homepage](https://gollum.readthedocs.io/en/latest/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

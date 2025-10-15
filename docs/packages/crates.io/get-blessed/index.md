@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/get-blessed`
 - **Name**: `get-blessed`
-- **Homepage**: Not specified
+- **Homepage**: https://crates.io/crates/get-blessed
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/get-blessed/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install get-blessed
+launchpad install crates.io/get-blessed
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) get-blessed -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/get-blessed@0.2.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/get-blessed/package.yml)
-- [Homepage](#)
+- [Homepage](https://crates.io/crates/get-blessed)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

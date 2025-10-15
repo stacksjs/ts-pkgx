@@ -1,12 +1,12 @@
-# mupdf.com
+# mupdf
 
 > Lightweight PDF and XPS viewer
 
 ## Package Information
 
 - **Domain**: `mupdf.com`
-- **Name**: `mupdf.com`
-- **Homepage**: Not specified
+- **Name**: `mupdf`
+- **Homepage**: https://mupdf.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mupdf.com/package.yml)
 
 ## Installation
@@ -80,7 +80,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mupdf.com']
+const pkg = pantry.mupdf
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -90,7 +90,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mupdf.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://mupdf.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

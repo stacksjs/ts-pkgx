@@ -6,14 +6,14 @@
 
 - **Domain**: `lua.org`
 - **Name**: `lua`
-- **Homepage**: Not specified
+- **Homepage**: https://www.lua.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lua.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install lua
+launchpad install lua.org
 ```
 
 ## Programs
@@ -47,12 +47,6 @@ This package depends on:
 
 - `gnu.org/readline`
 
-## Related Packages
-
-These packages work well with lua:
-
-- [`luarocks.org`](../luarocks.org/index.md) - LuaRocks is the package manager for the Lua programming language.
-
 ## Usage Examples
 
 ```typescript
@@ -69,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/lua.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.lua.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

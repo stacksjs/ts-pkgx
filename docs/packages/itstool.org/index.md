@@ -6,14 +6,14 @@
 
 - **Domain**: `itstool.org`
 - **Name**: `itstool`
-- **Homepage**: Not specified
+- **Homepage**: https://itstool.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/itstool.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install itstool
+launchpad install itstool.org
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) itstool -- $SHELL -i
+sh <(curl https://pkgx.sh) +itstool.org@2.0.7 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/itstool.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://itstool.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

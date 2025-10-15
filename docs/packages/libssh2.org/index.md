@@ -1,12 +1,12 @@
-# libssh2.org
+# libssh2
 
 > the SSH library
 
 ## Package Information
 
 - **Domain**: `libssh2.org`
-- **Name**: `libssh2.org`
-- **Homepage**: Not specified
+- **Name**: `libssh2`
+- **Homepage**: https://libssh2.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libssh2.org/package.yml)
 
 ## Installation
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libssh2.org']
+const pkg = pantry.libssh2
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libssh2.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://libssh2.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

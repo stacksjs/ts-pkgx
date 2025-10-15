@@ -1,12 +1,12 @@
-# hboehm.info/gc
+# gc
 
 > The Boehm-Demers-Weiser conservative C/C++ Garbage Collector (bdwgc, also known as bdw-gc, boehm-gc, libgc)
 
 ## Package Information
 
 - **Domain**: `hboehm.info/gc`
-- **Name**: `hboehm.info/gc`
-- **Homepage**: Not specified
+- **Name**: `gc`
+- **Homepage**: https://www.hboehm.info/gc/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hboehm.info/gc/package.yml)
 
 ## Installation
@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +hboehm.info/gc@8.2.8 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['hboehm.info/gc']
+const pkg = pantry.gc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/hboehm.info/gc/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.hboehm.info/gc/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `ceph.com/cephadm`
 - **Name**: `cephadm`
-- **Homepage**: Not specified
+- **Homepage**: https://ceph.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ceph.com/cephadm/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cephadm
+launchpad install ceph.com/cephadm
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cephadm -- $SHELL -i
+sh <(curl https://pkgx.sh) +ceph.com/cephadm@20.3.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ceph.com/cephadm/package.yml)
-- [Homepage](#)
+- [Homepage](https://ceph.io)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

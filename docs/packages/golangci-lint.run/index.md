@@ -6,14 +6,14 @@
 
 - **Domain**: `golangci-lint.run`
 - **Name**: `golangci-lint`
-- **Homepage**: Not specified
+- **Homepage**: https://golangci-lint.run/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/golangci-lint.run/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install golangci-lint
+launchpad install golangci-lint.run
 ```
 
 ## Programs
@@ -48,8 +48,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) golangci-lint -- $SHELL -i
+sh <(curl https://pkgx.sh) +golangci-lint.run@2.5.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
 
 ## Usage Examples
 
@@ -67,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/golangci-lint.run/package.yml)
-- [Homepage](#)
+- [Homepage](https://golangci-lint.run/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

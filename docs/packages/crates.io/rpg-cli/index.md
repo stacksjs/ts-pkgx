@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/rpg-cli`
 - **Name**: `rpg-cli`
-- **Homepage**: Not specified
+- **Homepage**: https://olano.dev/blog/deconstructing-the-role-playing-videogame/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rpg-cli/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rpg-cli
+launchpad install crates.io/rpg-cli
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rpg-cli -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/rpg-cli@1.2.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rpg-cli/package.yml)
-- [Homepage](#)
+- [Homepage](https://olano.dev/blog/deconstructing-the-role-playing-videogame/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

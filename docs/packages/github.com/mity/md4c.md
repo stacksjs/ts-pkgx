@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install md2html
+launchpad install github.com/mity/md4c
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) md2html -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/mity/md4c@0.5.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
 
 ## Usage Examples
 

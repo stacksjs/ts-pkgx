@@ -6,14 +6,14 @@
 
 - **Domain**: `xiph.org/flac`
 - **Name**: `flac`
-- **Homepage**: Not specified
+- **Homepage**: https://xiph.org/flac/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xiph.org/flac/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install flac
+launchpad install xiph.org/flac
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) flac -- $SHELL -i
+sh <(curl https://pkgx.sh) +xiph.org/flac@1.5.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/xiph.org/flac/package.yml)
-- [Homepage](#)
+- [Homepage](https://xiph.org/flac/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

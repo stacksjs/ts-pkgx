@@ -1,12 +1,12 @@
-# openprinting.github.io/cups
+# cups
 
 > Common UNIX Printing System
 
 ## Package Information
 
 - **Domain**: `openprinting.github.io/cups`
-- **Name**: `openprinting.github.io/cups`
-- **Homepage**: Not specified
+- **Name**: `cups`
+- **Homepage**: https://openprinting.github.io/cups
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openprinting.github.io/cups/package.yml)
 
 ## Installation
@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['openprinting.github.io/cups']
+const pkg = pantry.cups
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openprinting.github.io/cups/package.yml)
-- [Homepage](#)
+- [Homepage](https://openprinting.github.io/cups)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

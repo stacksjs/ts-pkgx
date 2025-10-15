@@ -1,11 +1,11 @@
-# liblqr.wikidot.com
+# liblqr.wikidot
 
 > Liquid Rescale library
 
 ## Package Information
 
 - **Domain**: `liblqr.wikidot.com`
-- **Name**: `liblqr.wikidot.com`
+- **Name**: `liblqr.wikidot`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/liblqr.wikidot.com/package.yml)
 
@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['liblqr.wikidot.com']
+const pkg = pantry['liblqr.wikidot']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

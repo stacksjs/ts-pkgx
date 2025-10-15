@@ -6,14 +6,14 @@
 
 - **Domain**: `pulumi.io`
 - **Name**: `pulumi`
-- **Homepage**: Not specified
+- **Homepage**: https://pulumi.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pulumi.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pulumi
+launchpad install pulumi.io
 ```
 
 ## Programs
@@ -106,7 +106,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pulumi.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://pulumi.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

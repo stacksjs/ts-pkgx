@@ -8,7 +8,7 @@
  *
  * @install `launchpad install cilium.io/cilium`
  * @homepage https://cilium.io
- * @dependencies `go.dev@^1.22`, `if@>=0.16.17`
+ * @dependencies `go.dev@^1.22`
  *
  * @example
  * ```typescript
@@ -61,7 +61,6 @@ export const ciliumiociliumPackage = {
    */
   dependencies: [
     'go.dev@^1.22',
-    'if@>=0.16.17',
   ] as const,
   /**
    * Available versions from newest to oldest.

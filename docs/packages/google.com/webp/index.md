@@ -1,12 +1,12 @@
-# google.com/webp
+# webp
 
 > Mirror only. Please do not send pull requests. See https://chromium.googlesource.com/webm/libwebp/+/HEAD/CONTRIBUTING.md.
 
 ## Package Information
 
 - **Domain**: `google.com/webp`
-- **Name**: `google.com/webp`
-- **Homepage**: Not specified
+- **Name**: `webp`
+- **Homepage**: https://developers.google.com/speed/webp/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/webp/package.yml)
 
 ## Installation
@@ -62,7 +62,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['google.com/webp']
+const pkg = pantry.webp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -72,7 +72,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/webp/package.yml)
-- [Homepage](#)
+- [Homepage](https://developers.google.com/speed/webp/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

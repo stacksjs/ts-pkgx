@@ -1,12 +1,12 @@
-# freeglut.sourceforge.io
+# freeglut.sourceforge
 
 > Free implementation of the OpenGL Utility Toolkit (GLUT)
 
 ## Package Information
 
 - **Domain**: `freeglut.sourceforge.io`
-- **Name**: `freeglut.sourceforge.io`
-- **Homepage**: Not specified
+- **Name**: `freeglut.sourceforge`
+- **Homepage**: http://freeglut.sourceforge.net
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freeglut.sourceforge.io/package.yml)
 
 ## Installation
@@ -58,7 +58,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['freeglut.sourceforge.io']
+const pkg = pantry['freeglut.sourceforge']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/freeglut.sourceforge.io/package.yml)
-- [Homepage](#)
+- [Homepage](http://freeglut.sourceforge.net)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -1,12 +1,12 @@
-# elixir-lang.org
+# elixir-lang
 
 > Elixir is a dynamic, functional language for building scalable and maintainable applications
 
 ## Package Information
 
 - **Domain**: `elixir-lang.org`
-- **Name**: `elixir-lang.org`
-- **Homepage**: Not specified
+- **Name**: `elixir-lang`
+- **Homepage**: https://elixir-lang.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/elixir-lang.org/package.yml)
 
 ## Installation
@@ -59,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['elixir-lang.org']
+const pkg = pantry['elixir-lang']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/elixir-lang.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://elixir-lang.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

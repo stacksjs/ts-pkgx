@@ -6,14 +6,14 @@
 
 - **Domain**: `onsi.github.io/ginkgo`
 - **Name**: `ginkgo`
-- **Homepage**: Not specified
+- **Homepage**: http://onsi.github.io/ginkgo/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/onsi.github.io/ginkgo/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ginkgo
+launchpad install onsi.github.io/ginkgo
 ```
 
 ## Programs
@@ -41,8 +41,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ginkgo -- $SHELL -i
+sh <(curl https://pkgx.sh) +onsi.github.io/ginkgo@2.26.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.20`
 
 ## Usage Examples
 
@@ -60,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/onsi.github.io/ginkgo/package.yml)
-- [Homepage](#)
+- [Homepage](http://onsi.github.io/ginkgo/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

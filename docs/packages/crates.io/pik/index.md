@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/pik`
 - **Name**: `pik`
-- **Homepage**: Not specified
+- **Homepage**: https://crates.io/crates/pik
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/pik/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pik
+launchpad install crates.io/pik
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pik -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/pik@0.26.1 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -58,7 +58,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/pik/package.yml)
-- [Homepage](#)
+- [Homepage](https://crates.io/crates/pik)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

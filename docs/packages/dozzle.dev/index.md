@@ -6,14 +6,14 @@
 
 - **Domain**: `dozzle.dev`
 - **Name**: `dozzle`
-- **Homepage**: Not specified
+- **Homepage**: https://dozzle.dev/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dozzle.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install dozzle
+launchpad install dozzle.dev
 ```
 
 ## Programs
@@ -52,8 +52,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dozzle -- $SHELL -i
+sh <(curl https://pkgx.sh) +dozzle.dev@8.14.4 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
+- `pnpm.io`
+- `openssl.org`
 
 ## Usage Examples
 
@@ -71,7 +79,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/dozzle.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://dozzle.dev/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

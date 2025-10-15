@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install spirv-cross
+launchpad install khronos.org/SPIRV-Cross
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) spirv-cross -- $SHELL -i
+sh <(curl https://pkgx.sh) +khronos.org/SPIRV-Cross@2021.1.15 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
 
 ## Usage Examples
 

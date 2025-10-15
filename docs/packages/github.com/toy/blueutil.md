@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install blueutil
+launchpad install github.com/toy/blueutil
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) blueutil -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/toy/blueutil@2.13.0 -- $SHELL -i
 ```
 
 ## Usage Examples

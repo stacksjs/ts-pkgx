@@ -6,14 +6,14 @@
 
 - **Domain**: `fx.wtf`
 - **Name**: `fx`
-- **Homepage**: Not specified
+- **Homepage**: https://fx.wtf
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fx.wtf/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install fx
+launchpad install fx.wtf
 ```
 
 ## Programs
@@ -42,8 +42,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) fx -- $SHELL -i
+sh <(curl https://pkgx.sh) +fx.wtf@39.1.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
 
 ## Usage Examples
 
@@ -61,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/fx.wtf/package.yml)
-- [Homepage](#)
+- [Homepage](https://fx.wtf)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

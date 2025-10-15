@@ -6,14 +6,14 @@
 
 - **Domain**: `coder.com/code-server`
 - **Name**: `code-server`
-- **Homepage**: Not specified
+- **Homepage**: https://coder.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/coder.com/code-server/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install code-server
+launchpad install coder.com/code-server
 ```
 
 ## Programs
@@ -46,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) code-server -- $SHELL -i
+sh <(curl https://pkgx.sh) +coder.com/code-server@4.104.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -75,7 +75,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/coder.com/code-server/package.yml)
-- [Homepage](#)
+- [Homepage](https://coder.com)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

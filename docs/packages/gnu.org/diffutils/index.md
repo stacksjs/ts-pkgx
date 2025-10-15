@@ -1,12 +1,12 @@
-# gnu.org/diffutils
+# diffutils
 
 > File comparison utilities
 
 ## Package Information
 
 - **Domain**: `gnu.org/diffutils`
-- **Name**: `gnu.org/diffutils`
-- **Homepage**: Not specified
+- **Name**: `diffutils`
+- **Homepage**: https://www.gnu.org/software/diffutils/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/diffutils/package.yml)
 
 ## Installation
@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) +gnu.org/diffutils@3.12.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/diffutils']
+const pkg = pantry.diffutils
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -59,7 +59,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/diffutils/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org/software/diffutils/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

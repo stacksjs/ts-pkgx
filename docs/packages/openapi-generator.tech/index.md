@@ -6,14 +6,14 @@
 
 - **Domain**: `openapi-generator.tech`
 - **Name**: `openapi-generator`
-- **Homepage**: Not specified
+- **Homepage**: https://openapi-generator.tech/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openapi-generator.tech/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install openapi-generator
+launchpad install openapi-generator.tech
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) openapi-generator -- $SHELL -i
+sh <(curl https://pkgx.sh) +openapi-generator.tech@7.16.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openapi-generator.tech/package.yml)
-- [Homepage](#)
+- [Homepage](https://openapi-generator.tech/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

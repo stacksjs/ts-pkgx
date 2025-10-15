@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install typos
+launchpad install crates.io/typos
 ```
 
 ## Programs
@@ -60,7 +60,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) typos -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/typos@1.38.1 -- $SHELL -i
 ```
 
 ## Usage Examples

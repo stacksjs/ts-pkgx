@@ -6,14 +6,14 @@
 
 - **Domain**: `darwinsys.com/file`
 - **Name**: `file`
-- **Homepage**: Not specified
+- **Homepage**: https://darwinsys.com/file/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/darwinsys.com/file/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install file
+launchpad install darwinsys.com/file
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) file -- $SHELL -i
+sh <(curl https://pkgx.sh) +darwinsys.com/file@5.46.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/darwinsys.com/file/package.yml)
-- [Homepage](#)
+- [Homepage](https://darwinsys.com/file/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

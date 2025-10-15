@@ -1,11 +1,11 @@
-# kafka.apache.org
+# kafka.apache
 
 > Mirror of Apache Kafka
 
 ## Package Information
 
 - **Domain**: `kafka.apache.org`
-- **Name**: `kafka.apache.org`
+- **Name**: `kafka.apache`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kafka.apache.org/package.yml)
 
@@ -93,7 +93,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['kafka.apache.org']
+const pkg = pantry['kafka.apache']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,12 +1,12 @@
-# openpmix.github.io
+# openpmix.github
 
 > Process Management Interface for HPC environments
 
 ## Package Information
 
 - **Domain**: `openpmix.github.io`
-- **Name**: `openpmix.github.io`
-- **Homepage**: Not specified
+- **Name**: `openpmix.github`
+- **Homepage**: https://openpmix.github.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openpmix.github.io/package.yml)
 
 ## Installation
@@ -63,7 +63,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['openpmix.github.io']
+const pkg = pantry['openpmix.github']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openpmix.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://openpmix.github.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

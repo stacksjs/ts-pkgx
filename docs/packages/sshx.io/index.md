@@ -6,14 +6,14 @@
 
 - **Domain**: `sshx.io`
 - **Name**: `sshx`
-- **Homepage**: Not specified
+- **Homepage**: https://sshx.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sshx.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sshx
+launchpad install sshx.io
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sshx -- $SHELL -i
+sh <(curl https://pkgx.sh) +sshx.io@2023.11.14 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sshx.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://sshx.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

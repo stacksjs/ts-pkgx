@@ -1,6 +1,6 @@
 # fastgron
 
-> High-performance JSON to GRON (greppable, flattened JSON) converter
+>  High-performance JSON to GRON (greppable, flattened JSON) converter
 
 ## Package Information
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install fastgron
+launchpad install github.com/adamritter/fastgron
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) fastgron -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/adamritter/fastgron@0.7.7 -- $SHELL -i
 ```
 
 ## Dependencies

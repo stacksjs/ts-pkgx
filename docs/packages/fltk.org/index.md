@@ -1,12 +1,12 @@
-# fltk.org
+# fltk
 
 > FLTK - Fast Light Tool Kit - https://github.com/fltk/fltk - cross platform GUI development
 
 ## Package Information
 
 - **Domain**: `fltk.org`
-- **Name**: `fltk.org`
-- **Homepage**: Not specified
+- **Name**: `fltk`
+- **Homepage**: https://www.fltk.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fltk.org/package.yml)
 
 ## Installation
@@ -58,7 +58,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['fltk.org']
+const pkg = pantry.fltk
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/fltk.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.fltk.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

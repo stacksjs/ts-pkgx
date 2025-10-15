@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install duf
+launchpad install github.com/muesli/duf
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) duf -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/muesli/duf@0.9.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.23`
 
 ## Usage Examples
 

@@ -6,14 +6,14 @@
 
 - **Domain**: `fishshell.com`
 - **Name**: `fish`
-- **Homepage**: Not specified
+- **Homepage**: https://fishshell.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fishshell.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install fish
+launchpad install fishshell.com
 ```
 
 ## Programs
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/fishshell.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://fishshell.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

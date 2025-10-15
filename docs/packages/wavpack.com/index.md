@@ -1,12 +1,12 @@
-# wavpack.com
+# wavpack
 
 > WavPack encode/decode library, command-line programs, and several plugins
 
 ## Package Information
 
 - **Domain**: `wavpack.com`
-- **Name**: `wavpack.com`
-- **Homepage**: Not specified
+- **Name**: `wavpack`
+- **Homepage**: https://www.wavpack.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wavpack.com/package.yml)
 
 ## Installation
@@ -43,13 +43,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +wavpack.com@5.8.1 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/patch`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['wavpack.com']
+const pkg = pantry.wavpack
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -59,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/wavpack.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.wavpack.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

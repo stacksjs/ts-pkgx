@@ -6,14 +6,14 @@
 
 - **Domain**: `apache.org/avro`
 - **Name**: `avro`
-- **Homepage**: Not specified
+- **Homepage**: https://avro.apache.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/avro/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install avro
+launchpad install apache.org/avro
 ```
 
 ## Programs
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/avro/package.yml)
-- [Homepage](#)
+- [Homepage](https://avro.apache.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

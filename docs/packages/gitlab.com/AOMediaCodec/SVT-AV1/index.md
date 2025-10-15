@@ -6,14 +6,14 @@
 
 - **Domain**: `gitlab.com/AOMediaCodec/SVT-AV1`
 - **Name**: `SvtAv1EncApp`
-- **Homepage**: Not specified
+- **Homepage**: https://gitlab.com/AOMediaCodec/SVT-AV1
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gitlab.com/AOMediaCodec/SVT-AV1/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install SvtAv1EncApp
+launchpad install gitlab.com/AOMediaCodec/SVT-AV1
 ```
 
 ## Programs
@@ -40,8 +40,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) SvtAv1EncApp -- $SHELL -i
+sh <(curl https://pkgx.sh) +gitlab.com/AOMediaCodec/SVT-AV1@3.1.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `yasm.tortall.net`
 
 ## Usage Examples
 
@@ -59,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gitlab.com/AOMediaCodec/SVT-AV1/package.yml)
-- [Homepage](#)
+- [Homepage](https://gitlab.com/AOMediaCodec/SVT-AV1)
 - [Back to Package Catalog](../../../../package-catalog.md)
 
 ---

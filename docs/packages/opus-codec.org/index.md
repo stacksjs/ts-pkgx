@@ -1,12 +1,12 @@
-# opus-codec.org
+# opus-codec
 
 > Modern audio compression for the internet.
 
 ## Package Information
 
 - **Domain**: `opus-codec.org`
-- **Name**: `opus-codec.org`
-- **Homepage**: Not specified
+- **Name**: `opus-codec`
+- **Homepage**: https://opus-codec.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/opus-codec.org/package.yml)
 
 ## Installation
@@ -40,13 +40,22 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +opus-codec.org@1.5.2 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/autoconf@2`
+- `gnu.org/automake@1.16`
+- `gnu.org/libtool@2.4`
+- `gnu.org/wget`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['opus-codec.org']
+const pkg = pantry['opus-codec']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/opus-codec.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://opus-codec.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

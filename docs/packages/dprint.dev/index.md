@@ -6,14 +6,14 @@
 
 - **Domain**: `dprint.dev`
 - **Name**: `dprint`
-- **Homepage**: Not specified
+- **Homepage**: https://dprint.dev/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dprint.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install dprint
+launchpad install dprint.dev
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dprint -- $SHELL -i
+sh <(curl https://pkgx.sh) +dprint.dev@0.50.2 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -61,7 +61,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/dprint.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://dprint.dev/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

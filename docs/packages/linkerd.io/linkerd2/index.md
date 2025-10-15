@@ -6,14 +6,14 @@
 
 - **Domain**: `linkerd.io/linkerd2`
 - **Name**: `linkerd`
-- **Homepage**: Not specified
+- **Homepage**: https://linkerd.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/linkerd.io/linkerd2/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install linkerd
+launchpad install linkerd.io/linkerd2
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) linkerd -- $SHELL -i
+sh <(curl https://pkgx.sh) +linkerd.io/linkerd2@2.14.10 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/linkerd.io/linkerd2/package.yml)
-- [Homepage](#)
+- [Homepage](https://linkerd.io)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

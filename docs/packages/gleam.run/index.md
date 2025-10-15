@@ -6,14 +6,14 @@
 
 - **Domain**: `gleam.run`
 - **Name**: `gleam`
-- **Homepage**: Not specified
+- **Homepage**: https://gleam.run
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gleam.run/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gleam
+launchpad install gleam.run
 ```
 
 ## Programs
@@ -45,7 +45,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gleam -- $SHELL -i
+sh <(curl https://pkgx.sh) +gleam.run@1.12.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gleam.run/package.yml)
-- [Homepage](#)
+- [Homepage](https://gleam.run)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

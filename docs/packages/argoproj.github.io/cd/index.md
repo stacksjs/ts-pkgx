@@ -6,25 +6,19 @@
 
 - **Domain**: `argoproj.github.io/cd`
 - **Name**: `argo-cd`
-- **Homepage**: Not specified
+- **Homepage**: https://argoproj.github.io/cd/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/argoproj.github.io/cd/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install argocd
+launchpad install argoproj.github.io/cd
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `argocd`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `argocd`
 
@@ -73,8 +67,16 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) argocd -- $SHELL -i
+sh <(curl https://pkgx.sh) +argoproj.github.io/cd@3.1.8 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
+- `nodejs.org@<23`
+- `yarnpkg.com`
 
 ## Usage Examples
 
@@ -82,7 +84,7 @@ sh <(curl https://pkgx.sh) argocd -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.argocd
+const pkg = pantry['argo-cd']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -92,7 +94,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/argoproj.github.io/cd/package.yml)
-- [Homepage](#)
+- [Homepage](https://argoproj.github.io/cd/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

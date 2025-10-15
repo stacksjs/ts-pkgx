@@ -6,14 +6,14 @@
 
 - **Domain**: `openssl.org`
 - **Name**: `OpenSSL`
-- **Homepage**: Not specified
+- **Homepage**: https://quictls.github.io/openssl
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openssl.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install OpenSSL
+launchpad install openssl.org
 ```
 
 ## Programs
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openssl.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://quictls.github.io/openssl)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

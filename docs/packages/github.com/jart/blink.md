@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install blink
+launchpad install github.com/jart/blink
 ```
 
 ## Programs
@@ -40,6 +40,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +github.com/jart/blink@0.0.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/make`
 
 ## Usage Examples
 

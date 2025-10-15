@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/realm/SwiftLint`
 - **Name**: `swiftlint`
-- **Homepage**: Not specified
+- **Homepage**: https://realm.github.io/SwiftLint
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/realm/SwiftLint/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install swiftlint
+launchpad install github.com/realm/SwiftLint
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) swiftlint -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/realm/SwiftLint@0.62.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/realm/SwiftLint/package.yml)
-- [Homepage](#)
+- [Homepage](https://realm.github.io/SwiftLint)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

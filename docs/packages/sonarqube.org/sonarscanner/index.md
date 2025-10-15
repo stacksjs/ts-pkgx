@@ -6,14 +6,14 @@
 
 - **Domain**: `sonarqube.org/sonarscanner`
 - **Name**: `sonar-scanner`
-- **Homepage**: Not specified
+- **Homepage**: http://redirect.sonarsource.com/doc/install-configure-scanner.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sonarqube.org/sonarscanner/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sonar-scanner
+launchpad install sonarqube.org/sonarscanner
 ```
 
 ## Programs
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sonarqube.org/sonarscanner/package.yml)
-- [Homepage](#)
+- [Homepage](http://redirect.sonarsource.com/doc/install-configure-scanner.html)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

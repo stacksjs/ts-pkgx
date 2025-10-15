@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install fast_float
+launchpad install github.com/fastfloat/fast_float
 ```
 
 ## Programs
@@ -40,6 +40,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +github.com/fastfloat/fast_float@8.1.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
 
 ## Usage Examples
 

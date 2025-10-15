@@ -1,11 +1,11 @@
-# freedesktop.org/polkit
+# polkit
 
 > polkit (formerly PolicyKit) is a toolkit for defining and handling authorizations. It is used for allowing unprivileged processes to speak to privileged processes.
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/polkit`
-- **Name**: `freedesktop.org/polkit`
+- **Name**: `polkit`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/polkit/package.yml)
 
@@ -59,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['freedesktop.org/polkit']
+const pkg = pantry.polkit
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

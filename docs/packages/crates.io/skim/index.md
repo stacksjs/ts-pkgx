@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install sk
+launchpad install crates.io/skim
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sk -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/skim@0.20.5 -- $SHELL -i
 ```
 
 ## Usage Examples

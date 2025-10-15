@@ -1,11 +1,11 @@
-# github.com/besser82/libxcrypt
+# libxcrypt
 
 > Extended crypt library for descrypt, md5crypt, bcrypt, and others
 
 ## Package Information
 
 - **Domain**: `github.com/besser82/libxcrypt`
-- **Name**: `github.com/besser82/libxcrypt`
+- **Name**: `libxcrypt`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/besser82/libxcrypt/package.yml)
 
@@ -41,13 +41,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/besser82/libxcrypt@4.4.38 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `perl.org`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/besser82/libxcrypt']
+const pkg = pantry.libxcrypt
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

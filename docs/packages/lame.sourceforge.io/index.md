@@ -6,14 +6,14 @@
 
 - **Domain**: `lame.sourceforge.io`
 - **Name**: `lame`
-- **Homepage**: Not specified
+- **Homepage**: https://lame.sourceforge.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lame.sourceforge.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install lame
+launchpad install lame.sourceforge.io
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) lame -- $SHELL -i
+sh <(curl https://pkgx.sh) +lame.sourceforge.io@3.100.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/lame.sourceforge.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://lame.sourceforge.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

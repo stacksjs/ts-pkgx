@@ -6,25 +6,19 @@
 
 - **Domain**: `pantsbuild.org/scie-pants`
 - **Name**: `scie-pants`
-- **Homepage**: Not specified
+- **Homepage**: https://www.pantsbuild.org/docs/installation
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pantsbuild.org/scie-pants/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pants
+launchpad install pantsbuild.org/scie-pants
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `pants`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pants`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pants -- $SHELL -i
+sh <(curl https://pkgx.sh) +pantsbuild.org/scie-pants@0.12.5 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -58,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.pants
+const pkg = pantry['scie-pants']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -68,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pantsbuild.org/scie-pants/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.pantsbuild.org/docs/installation)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

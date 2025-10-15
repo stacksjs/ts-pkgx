@@ -1,12 +1,12 @@
-# networkx.org
+# networkx
 
 > Network Analysis in Python
 
 ## Package Information
 
 - **Domain**: `networkx.org`
-- **Name**: `networkx.org`
-- **Homepage**: Not specified
+- **Name**: `networkx`
+- **Homepage**: https://networkx.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/networkx.org/package.yml)
 
 ## Installation
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['networkx.org']
+const pkg = pantry.networkx
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/networkx.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://networkx.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

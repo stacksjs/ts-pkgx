@@ -1,19 +1,19 @@
-# sip-install
+# sip
 
 > Tool to create Python bindings for C and C++ libraries
 
 ## Package Information
 
 - **Domain**: `riverbankcomputing.com/sip`
-- **Name**: `sip-install`
-- **Homepage**: Not specified
+- **Name**: `sip`
+- **Homepage**: https://python-sip.readthedocs.io/en/latest/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/riverbankcomputing.com/sip/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sip-install
+launchpad install riverbankcomputing.com/sip
 ```
 
 ## Programs
@@ -59,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['sip-install']
+const pkg = pantry.sip
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/riverbankcomputing.com/sip/package.yml)
-- [Homepage](#)
+- [Homepage](https://python-sip.readthedocs.io/en/latest/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

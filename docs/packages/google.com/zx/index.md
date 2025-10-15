@@ -6,14 +6,14 @@
 
 - **Domain**: `google.com/zx`
 - **Name**: `zx`
-- **Homepage**: Not specified
+- **Homepage**: https://google.github.io/zx/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/zx/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install zx
+launchpad install google.com/zx
 ```
 
 ## Programs
@@ -45,7 +45,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) zx -- $SHELL -i
+sh <(curl https://pkgx.sh) +google.com/zx@8.8.4 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/zx/package.yml)
-- [Homepage](#)
+- [Homepage](https://google.github.io/zx/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

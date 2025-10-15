@@ -6,14 +6,14 @@
 
 - **Domain**: `lloyd.github.io/yajl`
 - **Name**: `json`
-- **Homepage**: Not specified
+- **Homepage**: https://lloyd.github.io/yajl/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lloyd.github.io/yajl/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install json
+launchpad install lloyd.github.io/yajl
 ```
 
 ## Programs
@@ -41,6 +41,14 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +lloyd.github.io/yajl@2.1.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `linux:gnu.org/gcc`
+- `linux:gnu.org/make`
+
 ## Usage Examples
 
 ```typescript
@@ -57,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/lloyd.github.io/yajl/package.yml)
-- [Homepage](#)
+- [Homepage](https://lloyd.github.io/yajl/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

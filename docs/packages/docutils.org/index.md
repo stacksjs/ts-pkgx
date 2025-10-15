@@ -1,12 +1,12 @@
-# docutils.org
+# docutils
 
 > Text processing system for reStructuredText
 
 ## Package Information
 
 - **Domain**: `docutils.org`
-- **Name**: `docutils.org`
-- **Homepage**: Not specified
+- **Name**: `docutils`
+- **Homepage**: https://docutils.sourceforge.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/docutils.org/package.yml)
 
 ## Installation
@@ -63,7 +63,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['docutils.org']
+const pkg = pantry.docutils
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/docutils.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://docutils.sourceforge.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

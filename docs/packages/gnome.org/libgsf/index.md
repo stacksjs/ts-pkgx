@@ -6,14 +6,14 @@
 
 - **Domain**: `gnome.org/libgsf`
 - **Name**: `gsf`
-- **Homepage**: Not specified
+- **Homepage**: https://gitlab.gnome.org/GNOME/libgsf
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/libgsf/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gsf
+launchpad install gnome.org/libgsf
 ```
 
 ## Programs
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/libgsf/package.yml)
-- [Homepage](#)
+- [Homepage](https://gitlab.gnome.org/GNOME/libgsf)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

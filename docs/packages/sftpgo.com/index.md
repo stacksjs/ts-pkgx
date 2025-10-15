@@ -6,14 +6,14 @@
 
 - **Domain**: `sftpgo.com`
 - **Name**: `sftpgo`
-- **Homepage**: Not specified
+- **Homepage**: https://sftpgo.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sftpgo.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sftpgo
+launchpad install sftpgo.com
 ```
 
 ## Programs
@@ -38,8 +38,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sftpgo -- $SHELL -i
+sh <(curl https://pkgx.sh) +sftpgo.com@2.6.6 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@=1.22.2`
+- `gnu.org/coreutils`
 
 ## Usage Examples
 
@@ -57,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sftpgo.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://sftpgo.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

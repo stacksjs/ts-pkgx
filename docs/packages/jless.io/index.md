@@ -6,14 +6,14 @@
 
 - **Domain**: `jless.io`
 - **Name**: `jless`
-- **Homepage**: Not specified
+- **Homepage**: https://jless.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jless.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install jless
+launchpad install jless.io
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) jless -- $SHELL -i
+sh <(curl https://pkgx.sh) +jless.io@0.9.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jless.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://jless.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

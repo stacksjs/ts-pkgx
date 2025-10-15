@@ -1,12 +1,12 @@
-# libuv.org
+# libuv
 
 > Cross-platform asynchronous I/O
 
 ## Package Information
 
 - **Domain**: `libuv.org`
-- **Name**: `libuv.org`
-- **Homepage**: Not specified
+- **Name**: `libuv`
+- **Homepage**: https://libuv.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libuv.org/package.yml)
 
 ## Installation
@@ -41,13 +41,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +libuv.org@1.51.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libuv.org']
+const pkg = pantry.libuv
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libuv.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://libuv.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

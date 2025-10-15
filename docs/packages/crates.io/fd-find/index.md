@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install fd
+launchpad install crates.io/fd-find
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) fd -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/fd-find@10.3.0 -- $SHELL -i
 ```
 
 ## Usage Examples

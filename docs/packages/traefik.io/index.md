@@ -6,14 +6,14 @@
 
 - **Domain**: `traefik.io`
 - **Name**: `traefik`
-- **Homepage**: Not specified
+- **Homepage**: https://traefik.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/traefik.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install traefik
+launchpad install traefik.io
 ```
 
 ## Programs
@@ -50,8 +50,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) traefik -- $SHELL -i
+sh <(curl https://pkgx.sh) +traefik.io@3.5.3 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 
@@ -69,7 +75,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/traefik.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://traefik.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

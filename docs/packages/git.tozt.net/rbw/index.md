@@ -6,14 +6,14 @@
 
 - **Domain**: `git.tozt.net/rbw`
 - **Name**: `rbw`
-- **Homepage**: Not specified
+- **Homepage**: https://git.tozt.net/rbw
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/git.tozt.net/rbw/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rbw
+launchpad install git.tozt.net/rbw
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rbw -- $SHELL -i
+sh <(curl https://pkgx.sh) +git.tozt.net/rbw@1.14.1 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -58,7 +58,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/git.tozt.net/rbw/package.yml)
-- [Homepage](#)
+- [Homepage](https://git.tozt.net/rbw)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

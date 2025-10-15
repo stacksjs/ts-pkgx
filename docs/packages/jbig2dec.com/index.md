@@ -6,14 +6,14 @@
 
 - **Domain**: `jbig2dec.com`
 - **Name**: `jbig2dec`
-- **Homepage**: Not specified
+- **Homepage**: https://jbig2dec.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jbig2dec.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install jbig2dec
+launchpad install jbig2dec.com
 ```
 
 ## Programs
@@ -37,8 +37,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) jbig2dec -- $SHELL -i
+sh <(curl https://pkgx.sh) +jbig2dec.com@0.19.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/automake`
+- `gnu.org/libtool`
 
 ## Usage Examples
 
@@ -56,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jbig2dec.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://jbig2dec.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

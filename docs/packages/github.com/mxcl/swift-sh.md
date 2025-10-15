@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install swift-sh
+launchpad install github.com/mxcl/swift-sh
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) swift-sh -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/mxcl/swift-sh@2.5.0 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install diffoci
+launchpad install github.com/reproducible-containers/diffoci
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) diffoci -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/reproducible-containers/diffoci@0.1.7 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@1.21.0`
 
 ## Usage Examples
 

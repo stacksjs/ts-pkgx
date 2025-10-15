@@ -6,14 +6,14 @@
 
 - **Domain**: `taglib.org`
 - **Name**: `taglib-config`
-- **Homepage**: Not specified
+- **Homepage**: https://taglib.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/taglib.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install taglib-config
+launchpad install taglib.org
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) taglib-config -- $SHELL -i
+sh <(curl https://pkgx.sh) +taglib.org@2.1.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/taglib.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://taglib.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

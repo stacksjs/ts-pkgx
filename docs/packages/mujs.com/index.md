@@ -6,14 +6,14 @@
 
 - **Domain**: `mujs.com`
 - **Name**: `mujs`
-- **Homepage**: Not specified
+- **Homepage**: https://www.mujs.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mujs.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mujs
+launchpad install mujs.com
 ```
 
 ## Programs
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mujs.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.mujs.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

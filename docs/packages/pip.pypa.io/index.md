@@ -6,14 +6,14 @@
 
 - **Domain**: `pip.pypa.io`
 - **Name**: `pip`
-- **Homepage**: Not specified
+- **Homepage**: https://pip.pypa.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pip.pypa.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pip
+launchpad install pip.pypa.io
 ```
 
 ## Programs
@@ -71,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pip.pypa.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://pip.pypa.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

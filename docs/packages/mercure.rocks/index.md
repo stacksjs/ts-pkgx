@@ -6,14 +6,14 @@
 
 - **Domain**: `mercure.rocks`
 - **Name**: `mercure`
-- **Homepage**: Not specified
+- **Homepage**: https://mercure.rocks
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mercure.rocks/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mercure
+launchpad install mercure.rocks
 ```
 
 ## Programs
@@ -39,8 +39,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mercure -- $SHELL -i
+sh <(curl https://pkgx.sh) +mercure.rocks@0.20.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
+- `goreleaser.com@>=2.4.2`
 
 ## Usage Examples
 
@@ -58,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mercure.rocks/package.yml)
-- [Homepage](#)
+- [Homepage](https://mercure.rocks)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

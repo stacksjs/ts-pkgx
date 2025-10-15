@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/axllent/mailpit`
 - **Name**: `mailpit`
-- **Homepage**: Not specified
+- **Homepage**: https://mailpit.axllent.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/axllent/mailpit/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mailpit
+launchpad install github.com/axllent/mailpit
 ```
 
 ## Programs
@@ -52,7 +52,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mailpit -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/axllent/mailpit@1.27.10 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -77,7 +77,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/axllent/mailpit/package.yml)
-- [Homepage](#)
+- [Homepage](https://mailpit.axllent.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install cemetery-escape
+launchpad install github.com/tom-on-the-internet/cemetery-escape
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cemetery-escape -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/tom-on-the-internet/cemetery-escape@0.0.7 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 

@@ -6,14 +6,14 @@
 
 - **Domain**: `gqlgen.com`
 - **Name**: `gqlgen`
-- **Homepage**: Not specified
+- **Homepage**: https://gqlgen.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gqlgen.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gqlgen
+launchpad install gqlgen.com
 ```
 
 ## Programs
@@ -45,8 +45,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gqlgen -- $SHELL -i
+sh <(curl https://pkgx.sh) +gqlgen.com@0.17.81 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
 
 ## Usage Examples
 
@@ -64,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gqlgen.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://gqlgen.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

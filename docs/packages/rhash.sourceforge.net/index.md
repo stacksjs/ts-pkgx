@@ -1,12 +1,12 @@
-# rhash.sourceforge.net
+# rhash.sourceforge
 
 > Utility for computing and verifying hash sums of files
 
 ## Package Information
 
 - **Domain**: `rhash.sourceforge.net`
-- **Name**: `rhash.sourceforge.net`
-- **Homepage**: Not specified
+- **Name**: `rhash.sourceforge`
+- **Homepage**: https://sourceforge.net/projects/rhash/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rhash.sourceforge.net/package.yml)
 
 ## Installation
@@ -57,7 +57,7 @@ sh <(curl https://pkgx.sh) +rhash.sourceforge.net@1.4.6 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rhash.sourceforge.net']
+const pkg = pantry['rhash.sourceforge']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rhash.sourceforge.net/package.yml)
-- [Homepage](#)
+- [Homepage](https://sourceforge.net/projects/rhash/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

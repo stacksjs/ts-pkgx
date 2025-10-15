@@ -1,12 +1,12 @@
-# flutter.dev
+# flutter
 
 > Flutter makes it easy and fast to build beautiful apps for mobile and beyond
 
 ## Package Information
 
 - **Domain**: `flutter.dev`
-- **Name**: `flutter.dev`
-- **Homepage**: Not specified
+- **Name**: `flutter`
+- **Homepage**: https://flutter.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/flutter.dev/package.yml)
 
 ## Installation
@@ -69,7 +69,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['flutter.dev']
+const pkg = pantry.flutter
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -79,7 +79,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/flutter.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://flutter.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

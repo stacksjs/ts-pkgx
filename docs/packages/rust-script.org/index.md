@@ -6,14 +6,14 @@
 
 - **Domain**: `rust-script.org`
 - **Name**: `rust-script`
-- **Homepage**: Not specified
+- **Homepage**: https://rust-script.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rust-script.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rust-script
+launchpad install rust-script.org
 ```
 
 ## Programs
@@ -37,15 +37,8 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rust-script -- $SHELL -i
+sh <(curl https://pkgx.sh) +rust-script.org@0.36.0 -- $SHELL -i
 ```
-
-## Related Packages
-
-These packages work well with rust-script:
-
-- [`rust-lang.org`](../rust-lang.org/index.md) - Empowering everyone to build reliable and efficient software.
-- [`rust-lang.org/cargo`](../rust-lang.org/cargo/index.md) - The Rust package manager
 
 ## Usage Examples
 
@@ -63,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rust-script.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://rust-script.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

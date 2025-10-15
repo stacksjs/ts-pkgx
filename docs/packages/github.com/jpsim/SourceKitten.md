@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install sourcekitten
+launchpad install github.com/jpsim/SourceKitten
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sourcekitten -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/jpsim/SourceKitten@0.37.2 -- $SHELL -i
 ```
 
 ## Usage Examples

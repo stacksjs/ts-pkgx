@@ -1,12 +1,12 @@
-# libimobiledevice.org/libusbmuxd
+# libusbmuxd
 
 > A client library to multiplex connections from and to iOS devices
 
 ## Package Information
 
 - **Domain**: `libimobiledevice.org/libusbmuxd`
-- **Name**: `libimobiledevice.org/libusbmuxd`
-- **Homepage**: Not specified
+- **Name**: `libusbmuxd`
+- **Homepage**: https://www.libimobiledevice.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libimobiledevice.org/libusbmuxd/package.yml)
 
 ## Installation
@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libimobiledevice.org/libusbmuxd']
+const pkg = pantry.libusbmuxd
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libimobiledevice.org/libusbmuxd/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.libimobiledevice.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

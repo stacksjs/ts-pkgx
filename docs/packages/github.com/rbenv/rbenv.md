@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/rbenv/rbenv`
 - **Name**: `rbenv`
-- **Homepage**: Not specified
+- **Homepage**: https://rbenv.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/rbenv/rbenv/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rbenv
+launchpad install github.com/rbenv/rbenv
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rbenv -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/rbenv/rbenv@1.3.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/rbenv/rbenv/package.yml)
-- [Homepage](#)
+- [Homepage](https://rbenv.org)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

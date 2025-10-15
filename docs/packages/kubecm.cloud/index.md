@@ -6,14 +6,14 @@
 
 - **Domain**: `kubecm.cloud`
 - **Name**: `kubecm`
-- **Homepage**: Not specified
+- **Homepage**: https://kubecm.cloud
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kubecm.cloud/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install kubecm
+launchpad install kubecm.cloud
 ```
 
 ## Programs
@@ -39,8 +39,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) kubecm -- $SHELL -i
+sh <(curl https://pkgx.sh) +kubecm.cloud@0.33.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.22`
 
 ## Usage Examples
 
@@ -58,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/kubecm.cloud/package.yml)
-- [Homepage](#)
+- [Homepage](https://kubecm.cloud)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

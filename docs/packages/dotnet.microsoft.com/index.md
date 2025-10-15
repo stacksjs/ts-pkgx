@@ -6,14 +6,14 @@
 
 - **Domain**: `dotnet.microsoft.com`
 - **Name**: `dotnet`
-- **Homepage**: Not specified
+- **Homepage**: https://dotnet.microsoft.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dotnet.microsoft.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install dotnet
+launchpad install dotnet.microsoft.com
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dotnet -- $SHELL -i
+sh <(curl https://pkgx.sh) +dotnet.microsoft.com@9.0.306 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/dotnet.microsoft.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://dotnet.microsoft.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

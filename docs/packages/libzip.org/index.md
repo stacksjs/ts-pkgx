@@ -1,19 +1,19 @@
-# zipcmp
+# zip
 
 > A C library for reading, creating, and modifying zip archives.
 
 ## Package Information
 
 - **Domain**: `libzip.org`
-- **Name**: `zipcmp`
-- **Homepage**: Not specified
+- **Name**: `zip`
+- **Homepage**: https://libzip.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libzip.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install zipcmp
+launchpad install libzip.org
 ```
 
 ## Programs
@@ -59,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.zipcmp
+const pkg = pantry.zip
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libzip.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://libzip.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

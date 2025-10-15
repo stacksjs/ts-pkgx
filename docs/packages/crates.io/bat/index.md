@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install bat
+launchpad install crates.io/bat
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) bat -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/bat@0.25.0 -- $SHELL -i
 ```
 
 ## Dependencies

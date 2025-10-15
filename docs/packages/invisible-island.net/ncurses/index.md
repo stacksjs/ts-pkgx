@@ -1,12 +1,12 @@
-# invisible-island.net/ncurses
+# ncurses
 
 > Text-based UI library
 
 ## Package Information
 
 - **Domain**: `invisible-island.net/ncurses`
-- **Name**: `invisible-island.net/ncurses`
-- **Homepage**: Not specified
+- **Name**: `ncurses`
+- **Homepage**: https://invisible-island.net/ncurses/announce.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/invisible-island.net/ncurses/package.yml)
 
 ## Installation
@@ -50,13 +50,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +invisible-island.net/ncurses@6.5.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `github.com/tmux/tmux@^3`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['invisible-island.net/ncurses']
+const pkg = pantry.ncurses
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -66,7 +72,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/invisible-island.net/ncurses/package.yml)
-- [Homepage](#)
+- [Homepage](https://invisible-island.net/ncurses/announce.html)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

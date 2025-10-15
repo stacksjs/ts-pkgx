@@ -1,12 +1,12 @@
-# google.com/googletest
+# googletest
 
 > GoogleTest - Google Testing and Mocking Framework
 
 ## Package Information
 
 - **Domain**: `google.com/googletest`
-- **Name**: `google.com/googletest`
-- **Homepage**: Not specified
+- **Name**: `googletest`
+- **Homepage**: https://google.github.io/googletest/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/googletest/package.yml)
 
 ## Installation
@@ -41,13 +41,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +google.com/googletest@1.17.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@^3`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['google.com/googletest']
+const pkg = pantry.googletest
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/googletest/package.yml)
-- [Homepage](#)
+- [Homepage](https://google.github.io/googletest/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

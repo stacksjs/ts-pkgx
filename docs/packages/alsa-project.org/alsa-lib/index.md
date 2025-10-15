@@ -6,14 +6,14 @@
 
 - **Domain**: `alsa-project.org/alsa-lib`
 - **Name**: `aserver`
-- **Homepage**: Not specified
+- **Homepage**: https://www.alsa-project.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/alsa-project.org/alsa-lib/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install aserver
+launchpad install alsa-project.org/alsa-lib
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) aserver -- $SHELL -i
+sh <(curl https://pkgx.sh) +alsa-project.org/alsa-lib@1.2.14 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/alsa-project.org/alsa-lib/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.alsa-project.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

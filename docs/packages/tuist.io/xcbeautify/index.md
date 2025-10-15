@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install xcbeautify
+launchpad install tuist.io/xcbeautify
 ```
 
 ## Programs
@@ -47,7 +47,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) xcbeautify -- $SHELL -i
+sh <(curl https://pkgx.sh) +tuist.io/xcbeautify@2.30.1 -- $SHELL -i
 ```
 
 ## Usage Examples

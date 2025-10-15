@@ -6,14 +6,14 @@
 
 - **Domain**: `projen.io`
 - **Name**: `projen`
-- **Homepage**: Not specified
+- **Homepage**: https://projen.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/projen.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install projen
+launchpad install projen.io
 ```
 
 ## Programs
@@ -49,7 +49,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) projen -- $SHELL -i
+sh <(curl https://pkgx.sh) +projen.io@0.98.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -57,16 +57,6 @@ sh <(curl https://pkgx.sh) projen -- $SHELL -i
 This package depends on:
 
 - `nodejs.org^22 || ^20 || ^18`
-
-## Related Packages
-
-These packages work well with projen:
-
-- [`git-scm.org`](../git-scm.org/index.md) - Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.
-- [`classic.yarnpkg.com`](../classic.yarnpkg.com/index.md) - The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
-- [`maven.apache.org`](../maven.apache.org/index.md) - Java-based project management
-- [`python.org`](../python.org/index.md) - The Python programming language
-- [`go.dev`](../go.dev/index.md) - The Go programming language
 
 ## Usage Examples
 
@@ -84,7 +74,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/projen.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://projen.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

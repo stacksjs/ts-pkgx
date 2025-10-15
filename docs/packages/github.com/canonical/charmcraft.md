@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/canonical/charmcraft`
 - **Name**: `charmcraft`
-- **Homepage**: Not specified
+- **Homepage**: https://charmhub.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/canonical/charmcraft/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install charmcraft
+launchpad install github.com/canonical/charmcraft
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) charmcraft -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/canonical/charmcraft@4.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/canonical/charmcraft/package.yml)
-- [Homepage](#)
+- [Homepage](https://charmhub.io)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

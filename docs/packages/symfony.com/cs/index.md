@@ -6,14 +6,14 @@
 
 - **Domain**: `symfony.com/cs`
 - **Name**: `php-cs-fixer`
-- **Homepage**: Not specified
+- **Homepage**: https://cs.symfony.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/symfony.com/cs/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install php-cs-fixer
+launchpad install symfony.com/cs
 ```
 
 ## Programs
@@ -50,7 +50,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) php-cs-fixer -- $SHELL -i
+sh <(curl https://pkgx.sh) +symfony.com/cs@3.88.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -75,7 +75,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/symfony.com/cs/package.yml)
-- [Homepage](#)
+- [Homepage](https://cs.symfony.com/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

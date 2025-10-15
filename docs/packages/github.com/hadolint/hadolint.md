@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install hadolint
+launchpad install github.com/hadolint/hadolint
 ```
 
 ## Programs
@@ -37,8 +37,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) hadolint -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/hadolint/hadolint@2.12.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `haskell.org@~9.2`
+- `haskell.org/cabal@^3`
 
 ## Usage Examples
 

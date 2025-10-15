@@ -6,14 +6,14 @@
 
 - **Domain**: `invisible-island.net/lynx`
 - **Name**: `lynx`
-- **Homepage**: Not specified
+- **Homepage**: https://invisible-island.net/lynx/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/invisible-island.net/lynx/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install lynx
+launchpad install invisible-island.net/lynx
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) lynx -- $SHELL -i
+sh <(curl https://pkgx.sh) +invisible-island.net/lynx@2.9.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/invisible-island.net/lynx/package.yml)
-- [Homepage](#)
+- [Homepage](https://invisible-island.net/lynx/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

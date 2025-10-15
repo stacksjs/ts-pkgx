@@ -1,12 +1,12 @@
-# practical-scheme.net/gauche
+# gauche
 
 > R7RS Scheme implementation, developed to be a handy script interpreter
 
 ## Package Information
 
 - **Domain**: `practical-scheme.net/gauche`
-- **Name**: `practical-scheme.net/gauche`
-- **Homepage**: Not specified
+- **Name**: `gauche`
+- **Homepage**: https://practical-scheme.net/gauche/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/practical-scheme.net/gauche/package.yml)
 
 ## Installation
@@ -59,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['practical-scheme.net/gauche']
+const pkg = pantry.gauche
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/practical-scheme.net/gauche/package.yml)
-- [Homepage](#)
+- [Homepage](https://practical-scheme.net/gauche/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

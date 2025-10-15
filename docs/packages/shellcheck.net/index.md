@@ -6,14 +6,14 @@
 
 - **Domain**: `shellcheck.net`
 - **Name**: `shellcheck`
-- **Homepage**: Not specified
+- **Homepage**: https://www.shellcheck.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/shellcheck.net/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install shellcheck
+launchpad install shellcheck.net
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) shellcheck -- $SHELL -i
+sh <(curl https://pkgx.sh) +shellcheck.net@0.11.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/shellcheck.net/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.shellcheck.net/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

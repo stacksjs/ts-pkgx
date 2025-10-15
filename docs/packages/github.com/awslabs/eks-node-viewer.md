@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install eks-node-viewer
+launchpad install github.com/awslabs/eks-node-viewer
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) eks-node-viewer -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/awslabs/eks-node-viewer@0.7.4 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.24.2`
 
 ## Usage Examples
 

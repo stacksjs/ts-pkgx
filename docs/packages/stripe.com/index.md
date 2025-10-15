@@ -6,14 +6,14 @@
 
 - **Domain**: `stripe.com`
 - **Name**: `stripe`
-- **Homepage**: Not specified
+- **Homepage**: https://stripe.com/docs/stripe-cli
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/stripe.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install stripe
+launchpad install stripe.com
 ```
 
 ## Programs
@@ -47,8 +47,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) stripe -- $SHELL -i
+sh <(curl https://pkgx.sh) +stripe.com@1.31.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
 
 ## Usage Examples
 
@@ -66,7 +72,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/stripe.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://stripe.com/docs/stripe-cli)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `openldap.org/liblmdb`
 - **Name**: `liblmdb`
-- **Homepage**: Not specified
+- **Homepage**: https://www.symas.com/symas-embedded-database-lmdb
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openldap.org/liblmdb/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install liblmdb
+launchpad install openldap.org/liblmdb
 ```
 
 ## Programs
@@ -59,7 +59,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openldap.org/liblmdb/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.symas.com/symas-embedded-database-lmdb)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

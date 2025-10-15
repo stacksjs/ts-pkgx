@@ -6,14 +6,14 @@
 
 - **Domain**: `filippo.io/yubikey-agent`
 - **Name**: `yubikey-agent`
-- **Homepage**: Not specified
+- **Homepage**: https://filippo.io/yubikey-agent
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/filippo.io/yubikey-agent/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install yubikey-agent
+launchpad install filippo.io/yubikey-agent
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) yubikey-agent -- $SHELL -i
+sh <(curl https://pkgx.sh) +filippo.io/yubikey-agent@0.1.6 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/filippo.io/yubikey-agent/package.yml)
-- [Homepage](#)
+- [Homepage](https://filippo.io/yubikey-agent)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

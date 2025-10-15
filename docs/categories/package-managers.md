@@ -1,6 +1,6 @@
 # Package Managers
 
-*17 packages in this category*
+*16 packages in this category*
 
 Packages related to package managers.
 
@@ -16,7 +16,7 @@ Incredibly fast JavaScript runtime, bundler, test runner, and package manager â€
 
 ---
 
-### [classic.yarnpkg.com](../packages/classic.yarnpkg.com/index.md) (yarn)
+### [classic.yarnpkg.com](../packages/classic.yarnpkg.com/index.md) (classic.yarnpkg, yarn)
 
 The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry
 
@@ -32,7 +32,7 @@ Dependency manager for Cocoa projects
 
 **Programs**: pod
 
-**Install**: `launchpad install pod`
+**Install**: `launchpad install cocoapods.org`
 
 ---
 
@@ -42,7 +42,7 @@ Dependency Manager for PHP
 
 **Programs**: composer, composer.phar
 
-**Install**: `launchpad install composer`
+**Install**: `launchpad install getcomposer.org`
 
 ---
 
@@ -52,7 +52,7 @@ LuaRocks is the package manager for the Lua programming language.
 
 **Programs**: luarocks, luarocks-admin
 
-**Install**: `launchpad install luarocks`
+**Install**: `launchpad install luarocks.org`
 
 ---
 
@@ -62,7 +62,7 @@ dev tools, env vars, task runner
 
 **Programs**: rtx, mise
 
-**Install**: `launchpad install mise`
+**Install**: `launchpad install mise.jdx.dev`
 
 ---
 
@@ -72,7 +72,7 @@ App source + Nix packages + Docker = Image
 
 **Programs**: nixpacks
 
-**Install**: `launchpad install nixpacks`
+**Install**: `launchpad install nixpacks.com`
 
 ---
 
@@ -82,11 +82,11 @@ Platform built on V8 to build network applications
 
 **Programs**: corepack
 
-**Install**: `launchpad install corepack`
+**Install**: `launchpad install nodejs.org/corepack`
 
 ---
 
-### [npmjs.com](../packages/npmjs.com/index.md) (npm)
+### [npmjs.com](../packages/npmjs.com/index.md) (npmjs, npm)
 
 the package manager for JavaScript
 
@@ -102,7 +102,7 @@ A modern Python package and dependency manager supporting the latest PEP standar
 
 **Programs**: pdm
 
-**Install**: `launchpad install pdm`
+**Install**: `launchpad install pdm.fming.dev`
 
 ---
 
@@ -112,17 +112,17 @@ The Python package installer
 
 **Programs**: pip, pip3.8, pip3.9, pip3.10, pip3.11
 
-**Install**: `launchpad install pip`
+**Install**: `launchpad install pip.pypa.io`
 
 ---
 
 ### [pipenv.pypa.io](../packages/pipenv.pypa.io/index.md) (pipenv)
 
-Python Development Workflow for Humans.
+ Python Development Workflow for Humans.
 
 **Programs**: pipenv
 
-**Install**: `launchpad install pipenv`
+**Install**: `launchpad install pipenv.pypa.io`
 
 ---
 
@@ -132,17 +132,7 @@ Standalone binary that can run anything
 
 **Programs**: pkgx
 
-**Install**: `launchpad install pkgx`
-
----
-
-### [pnpm.io](../packages/pnpm.io/index.md) (pnpm)
-
-Fast, disk space efficient package manager
-
-**Programs**: pnpm, pnpx
-
-**Install**: `launchpad install pnpm`
+**Install**: `launchpad install pkgx.sh`
 
 ---
 
@@ -152,7 +142,7 @@ Python packaging and dependency management made easy
 
 **Programs**: poetry
 
-**Install**: `launchpad install poetry`
+**Install**: `launchpad install python-poetry.org`
 
 ---
 
@@ -162,7 +152,7 @@ The Rust package manager
 
 **Programs**: cargo
 
-**Install**: `launchpad install cargo`
+**Install**: `launchpad install rust-lang.org/cargo`
 
 ---
 
@@ -172,7 +162,7 @@ Experimental Package Management Solution for Python
 
 **Programs**: rye
 
-**Install**: `launchpad install rye`
+**Install**: `launchpad install rye.astral.sh`
 
 ---
 

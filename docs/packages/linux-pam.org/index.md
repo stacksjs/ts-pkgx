@@ -1,11 +1,11 @@
-# linux-pam.org
+# linux-pam
 
 > Linux PAM (Pluggable Authentication Modules for Linux) project
 
 ## Package Information
 
 - **Domain**: `linux-pam.org`
-- **Name**: `linux-pam.org`
+- **Name**: `linux-pam`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/linux-pam.org/package.yml)
 
@@ -58,7 +58,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['linux-pam.org']
+const pkg = pantry['linux-pam']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,11 +1,11 @@
-# github.com/numactl/numactl
+# numactl
 
 > NUMA support for Linux
 
 ## Package Information
 
 - **Domain**: `github.com/numactl/numactl`
-- **Name**: `github.com/numactl/numactl`
+- **Name**: `numactl`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/numactl/numactl/package.yml)
 
@@ -40,13 +40,22 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/numactl/numactl@2.0.16 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/autoconf@2`
+- `gnu.org/automake@1`
+- `gnu.org/libtool@2`
+- `gnu.org/m4@1`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/numactl/numactl']
+const pkg = pantry.numactl
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

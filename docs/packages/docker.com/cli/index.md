@@ -6,25 +6,19 @@
 
 - **Domain**: `docker.com/cli`
 - **Name**: `docker/cli`
-- **Homepage**: Not specified
+- **Homepage**: https://www.docker.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/docker.com/cli/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install docker
+launchpad install docker.com/cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `docker`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `docker`
 
@@ -54,8 +48,14 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) docker -- $SHELL -i
+sh <(curl https://pkgx.sh) +docker.com/cli@28.5.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 
@@ -63,7 +63,7 @@ sh <(curl https://pkgx.sh) docker -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.docker
+const pkg = pantry['docker/cli']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/docker.com/cli/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.docker.com/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

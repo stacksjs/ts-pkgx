@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install omekasy
+launchpad install crates.io/omekasy
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) omekasy -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/omekasy@1.3.3 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -1,12 +1,12 @@
-# github.com/ivmai/libatomic_ops
+# libatomic_ops
 
 > The atomic_ops project (Atomic memory update operations portable implementation)
 
 ## Package Information
 
 - **Domain**: `github.com/ivmai/libatomic_ops`
-- **Name**: `github.com/ivmai/libatomic_ops`
-- **Homepage**: Not specified
+- **Name**: `libatomic_ops`
+- **Homepage**: https://github.com/ivmai/libatomic_ops/wiki/Download
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ivmai/libatomic_ops/package.yml)
 
 ## Installation
@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/ivmai/libatomic_ops@7.8.4 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/ivmai/libatomic_ops']
+const pkg = pantry.libatomic_ops
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ivmai/libatomic_ops/package.yml)
-- [Homepage](#)
+- [Homepage](https://github.com/ivmai/libatomic_ops/wiki/Download)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

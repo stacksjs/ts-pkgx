@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install git-sizer
+launchpad install github.com/github/git-sizer
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) git-sizer -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/github/git-sizer@1.5.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.17`
 
 ## Usage Examples
 

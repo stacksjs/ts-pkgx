@@ -1,12 +1,12 @@
-# sourceware.org/bzip2
+# bzip2
 
 > Clone of https://gitlab.com/federicomenaquintero/bzip2
 
 ## Package Information
 
 - **Domain**: `sourceware.org/bzip2`
-- **Name**: `sourceware.org/bzip2`
-- **Homepage**: Not specified
+- **Name**: `bzip2`
+- **Homepage**: https://sourceware.org/bzip2/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceware.org/bzip2/package.yml)
 
 ## Installation
@@ -56,7 +56,7 @@ sh <(curl https://pkgx.sh) +sourceware.org/bzip2@1.0.8 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['sourceware.org/bzip2']
+const pkg = pantry.bzip2
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sourceware.org/bzip2/package.yml)
-- [Homepage](#)
+- [Homepage](https://sourceware.org/bzip2/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

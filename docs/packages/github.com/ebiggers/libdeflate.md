@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install libdeflate
+launchpad install github.com/ebiggers/libdeflate
 ```
 
 ## Programs
@@ -41,6 +41,12 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +github.com/ebiggers/libdeflate@1.24.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@^3`
 
 ## Usage Examples
 

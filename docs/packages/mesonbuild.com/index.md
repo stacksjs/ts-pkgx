@@ -6,14 +6,14 @@
 
 - **Domain**: `mesonbuild.com`
 - **Name**: `meson`
-- **Homepage**: Not specified
+- **Homepage**: https://mesonbuild.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mesonbuild.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install meson
+launchpad install mesonbuild.com
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) meson -- $SHELL -i
+sh <(curl https://pkgx.sh) +mesonbuild.com@1.9.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mesonbuild.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://mesonbuild.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

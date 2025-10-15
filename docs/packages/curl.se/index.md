@@ -6,7 +6,7 @@
 
 - **Domain**: `curl.se`
 - **Name**: `cURL`
-- **Homepage**: Not specified
+- **Homepage**: https://curl.se
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/curl.se/package.yml)
 
 ## Installation
@@ -76,7 +76,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/curl.se/package.yml)
-- [Homepage](#)
+- [Homepage](https://curl.se)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

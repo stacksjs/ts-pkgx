@@ -1,11 +1,11 @@
-# google.com/highway
+# highway
 
 > Performance-portable, length-agnostic SIMD with runtime dispatch
 
 ## Package Information
 
 - **Domain**: `google.com/highway`
-- **Name**: `google.com/highway`
+- **Name**: `highway`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/highway/package.yml)
 
@@ -41,13 +41,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +google.com/highway@1.3.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['google.com/highway']
+const pkg = pantry.highway
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

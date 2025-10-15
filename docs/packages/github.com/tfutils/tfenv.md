@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install tfenv
+launchpad install github.com/tfutils/tfenv
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tfenv -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/tfutils/tfenv@3.0.0 -- $SHELL -i
 ```
 
 ## Dependencies

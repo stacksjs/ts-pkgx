@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install xcresultparser
+launchpad install github.com/a7ex/xcresultparser
 ```
 
 ## Programs
@@ -40,8 +40,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) xcresultparser -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/a7ex/xcresultparser@1.9.3 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `crates.io/semverator`
 
 ## Usage Examples
 

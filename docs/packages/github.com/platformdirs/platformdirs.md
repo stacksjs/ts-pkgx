@@ -1,12 +1,12 @@
-# github.com/platformdirs/platformdirs
+# platformdirs
 
 > A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".
 
 ## Package Information
 
 - **Domain**: `github.com/platformdirs/platformdirs`
-- **Name**: `github.com/platformdirs/platformdirs`
-- **Homepage**: Not specified
+- **Name**: `platformdirs`
+- **Homepage**: https://platformdirs.readthedocs.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/platformdirs/platformdirs/package.yml)
 
 ## Installation
@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/platformdirs/platformdirs']
+const pkg = pantry.platformdirs
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/platformdirs/platformdirs/package.yml)
-- [Homepage](#)
+- [Homepage](https://platformdirs.readthedocs.io)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

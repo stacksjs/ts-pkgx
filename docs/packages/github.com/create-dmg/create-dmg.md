@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install create-dmg
+launchpad install github.com/create-dmg/create-dmg
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) create-dmg -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/create-dmg/create-dmg@1.2.2 -- $SHELL -i
 ```
 
 ## Usage Examples

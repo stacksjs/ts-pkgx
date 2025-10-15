@@ -1,12 +1,12 @@
-# apptainer.org
+# apptainer
 
 > Application container and unprivileged sandbox platform for Linux
 
 ## Package Information
 
 - **Domain**: `apptainer.org`
-- **Name**: `apptainer.org`
-- **Homepage**: Not specified
+- **Name**: `apptainer`
+- **Homepage**: https://apptainer.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apptainer.org/package.yml)
 
 ## Installation
@@ -50,19 +50,13 @@ This package depends on:
 - `github.com/seccomp/libseccomp@2`
 - `curl.se/ca-certs`
 
-## Related Packages
-
-These packages work well with apptainer.org:
-
-- [`github.com/plougher/squashfs-tools`](../github.com/plougher/squashfs-tools.md) - tools to create and extract Squashfs filesystems
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['apptainer.org']
+const pkg = pantry.apptainer
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -72,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/apptainer.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://apptainer.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

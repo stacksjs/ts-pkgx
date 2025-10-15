@@ -6,14 +6,14 @@
 
 - **Domain**: `rbenv.org/ruby-build`
 - **Name**: `ruby-build`
-- **Homepage**: Not specified
+- **Homepage**: https://rbenv.org/man/ruby-build.1
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rbenv.org/ruby-build/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ruby-build
+launchpad install rbenv.org/ruby-build
 ```
 
 ## Programs
@@ -47,7 +47,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ruby-build -- $SHELL -i
+sh <(curl https://pkgx.sh) +rbenv.org/ruby-build@20251008.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -77,7 +77,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rbenv.org/ruby-build/package.yml)
-- [Homepage](#)
+- [Homepage](https://rbenv.org/man/ruby-build.1)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

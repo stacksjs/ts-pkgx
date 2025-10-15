@@ -1,11 +1,11 @@
-# crates.io/md-tui
+# md-tui
 
 > Markdown renderer in the terminal
 
 ## Package Information
 
 - **Domain**: `crates.io/md-tui`
-- **Name**: `crates.io/md-tui`
+- **Name**: `md-tui`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/md-tui/package.yml)
 
@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) +crates.io/md-tui@0.9.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['crates.io/md-tui']
+const pkg = pantry['md-tui']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

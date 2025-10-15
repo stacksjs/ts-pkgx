@@ -6,14 +6,14 @@
 
 - **Domain**: `terraform-docs.io`
 - **Name**: `terraform-docs`
-- **Homepage**: Not specified
+- **Homepage**: https://terraform-docs.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/terraform-docs.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install terraform-docs
+launchpad install terraform-docs.io
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) terraform-docs -- $SHELL -i
+sh <(curl https://pkgx.sh) +terraform-docs.io@0.20.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.16`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/terraform-docs.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://terraform-docs.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

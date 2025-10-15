@@ -6,14 +6,14 @@
 
 - **Domain**: `nginx.org`
 - **Name**: `nginx`
-- **Homepage**: Not specified
+- **Homepage**: https://nginx.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nginx.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install nginx
+launchpad install nginx.org
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) nginx -- $SHELL -i
+sh <(curl https://pkgx.sh) +nginx.org@1.29.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/nginx.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://nginx.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -1,12 +1,12 @@
-# openexr.com/imath
+# imath
 
 > Imath is a C++ and python library of 2D and 3D vector, matrix, and math operations for computer graphics
 
 ## Package Information
 
 - **Domain**: `openexr.com/imath`
-- **Name**: `openexr.com/imath`
-- **Homepage**: Not specified
+- **Name**: `imath`
+- **Homepage**: https://imath.readthedocs.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openexr.com/imath/package.yml)
 
 ## Installation
@@ -41,13 +41,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +openexr.com/imath@3.2.2 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['openexr.com/imath']
+const pkg = pantry.imath
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openexr.com/imath/package.yml)
-- [Homepage](#)
+- [Homepage](https://imath.readthedocs.io)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

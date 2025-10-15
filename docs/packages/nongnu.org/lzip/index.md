@@ -6,14 +6,14 @@
 
 - **Domain**: `nongnu.org/lzip`
 - **Name**: `lzip`
-- **Homepage**: Not specified
+- **Homepage**: https://www.nongnu.org/lzip/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nongnu.org/lzip/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install lzip
+launchpad install nongnu.org/lzip
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) lzip -- $SHELL -i
+sh <(curl https://pkgx.sh) +nongnu.org/lzip@1.23.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/nongnu.org/lzip/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.nongnu.org/lzip/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install kustomize
+launchpad install kubernetes.io/kustomize
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) kustomize -- $SHELL -i
+sh <(curl https://pkgx.sh) +kubernetes.io/kustomize@5.7.1 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install skopeo
+launchpad install github.com/containers/skopeo
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) skopeo -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/containers/skopeo@1.20.0 -- $SHELL -i
 ```
 
 ## Dependencies

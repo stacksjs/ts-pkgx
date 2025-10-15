@@ -6,14 +6,14 @@
 
 - **Domain**: `nodejs.org/corepack`
 - **Name**: `corepack`
-- **Homepage**: Not specified
+- **Homepage**: https://nodejs.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nodejs.org/corepack/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install corepack
+launchpad install nodejs.org/corepack
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) corepack -- $SHELL -i
+sh <(curl https://pkgx.sh) +nodejs.org/corepack@0.34.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/nodejs.org/corepack/package.yml)
-- [Homepage](#)
+- [Homepage](https://nodejs.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

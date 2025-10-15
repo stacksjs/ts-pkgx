@@ -6,14 +6,14 @@
 
 - **Domain**: `dest-unreach.org/socat`
 - **Name**: `socat`
-- **Homepage**: Not specified
+- **Homepage**: http://www.dest-unreach.org/socat/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dest-unreach.org/socat/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install socat
+launchpad install dest-unreach.org/socat
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) socat -- $SHELL -i
+sh <(curl https://pkgx.sh) +dest-unreach.org/socat@1.8.0.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/dest-unreach.org/socat/package.yml)
-- [Homepage](#)
+- [Homepage](http://www.dest-unreach.org/socat/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

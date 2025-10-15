@@ -6,14 +6,14 @@
 
 - **Domain**: `creativeprojects.github.io/resticprofile`
 - **Name**: `resticprofile`
-- **Homepage**: Not specified
+- **Homepage**: https://creativeprojects.github.io/resticprofile/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/creativeprojects.github.io/resticprofile/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install resticprofile
+launchpad install creativeprojects.github.io/resticprofile
 ```
 
 ## Programs
@@ -38,14 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) resticprofile -- $SHELL -i
+sh <(curl https://pkgx.sh) +creativeprojects.github.io/resticprofile@0.32.0 -- $SHELL -i
 ```
 
-## Related Packages
+## Dependencies
 
-These packages work well with resticprofile:
+This package depends on:
 
-- [`restic.net/restic`](../../restic.net/restic/index.md) - Fast, efficient and secure backup program
+- `go.dev@~1.22`
 
 ## Usage Examples
 
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/creativeprojects.github.io/resticprofile/package.yml)
-- [Homepage](#)
+- [Homepage](https://creativeprojects.github.io/resticprofile/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

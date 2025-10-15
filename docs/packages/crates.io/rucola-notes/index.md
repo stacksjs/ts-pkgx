@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install rucola
+launchpad install crates.io/rucola-notes
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rucola -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/rucola-notes@0.6.0 -- $SHELL -i
 ```
 
 ## Dependencies

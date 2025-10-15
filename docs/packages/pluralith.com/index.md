@@ -6,14 +6,14 @@
 
 - **Domain**: `pluralith.com`
 - **Name**: `pluralith`
-- **Homepage**: Not specified
+- **Homepage**: https://www.pluralith.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pluralith.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pluralith
+launchpad install pluralith.com
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pluralith -- $SHELL -i
+sh <(curl https://pkgx.sh) +pluralith.com@0.2.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pluralith.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.pluralith.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

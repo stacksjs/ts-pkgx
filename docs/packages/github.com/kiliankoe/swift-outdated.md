@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install swift-outdated
+launchpad install github.com/kiliankoe/swift-outdated
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) swift-outdated -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/kiliankoe/swift-outdated@0.10.1 -- $SHELL -i
 ```
 
 ## Usage Examples

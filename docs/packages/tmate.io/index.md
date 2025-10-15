@@ -6,14 +6,14 @@
 
 - **Domain**: `tmate.io`
 - **Name**: `tmate`
-- **Homepage**: Not specified
+- **Homepage**: https://tmate.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tmate.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install tmate
+launchpad install tmate.io
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tmate -- $SHELL -i
+sh <(curl https://pkgx.sh) +tmate.io@2.4.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tmate.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://tmate.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

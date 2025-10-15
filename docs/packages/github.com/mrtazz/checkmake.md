@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install checkmake
+launchpad install github.com/mrtazz/checkmake
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) checkmake -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/mrtazz/checkmake@0.2.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 

@@ -6,14 +6,14 @@
 
 - **Domain**: `bore.pub`
 - **Name**: `bore`
-- **Homepage**: Not specified
+- **Homepage**: http://bore.pub
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bore.pub/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install bore
+launchpad install bore.pub
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) bore -- $SHELL -i
+sh <(curl https://pkgx.sh) +bore.pub@0.6.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/bore.pub/package.yml)
-- [Homepage](#)
+- [Homepage](http://bore.pub)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

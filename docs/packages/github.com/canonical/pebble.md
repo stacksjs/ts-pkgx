@@ -6,25 +6,19 @@
 
 - **Domain**: `github.com/canonical/pebble`
 - **Name**: `canonical/pebble`
-- **Homepage**: Not specified
+- **Homepage**: https://canonical-pebble.readthedocs-hosted.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/canonical/pebble/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pebble
+launchpad install github.com/canonical/pebble
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `pebble`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `pebble`
 
@@ -49,8 +43,16 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pebble -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/canonical/pebble@1.25.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
+- `gnu.org/sed`
+- `cmake.org@^3`
 
 ## Usage Examples
 
@@ -58,7 +60,7 @@ sh <(curl https://pkgx.sh) pebble -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.pebble
+const pkg = pantry['canonical/pebble']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -68,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/canonical/pebble/package.yml)
-- [Homepage](#)
+- [Homepage](https://canonical-pebble.readthedocs-hosted.com/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

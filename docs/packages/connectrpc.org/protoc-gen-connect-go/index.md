@@ -6,14 +6,14 @@
 
 - **Domain**: `connectrpc.org/protoc-gen-connect-go`
 - **Name**: `protoc-gen-connect-go`
-- **Homepage**: Not specified
+- **Homepage**: https://connectrpc.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/connectrpc.org/protoc-gen-connect-go/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install protoc-gen-connect-go
+launchpad install connectrpc.org/protoc-gen-connect-go
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) protoc-gen-connect-go -- $SHELL -i
+sh <(curl https://pkgx.sh) +connectrpc.org/protoc-gen-connect-go@1.19.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.20`
 
 ## Usage Examples
 
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/connectrpc.org/protoc-gen-connect-go/package.yml)
-- [Homepage](#)
+- [Homepage](https://connectrpc.com)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

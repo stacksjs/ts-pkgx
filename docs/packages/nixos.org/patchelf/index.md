@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install patchelf
+launchpad install nixos.org/patchelf
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) patchelf -- $SHELL -i
+sh <(curl https://pkgx.sh) +nixos.org/patchelf@0.18.0 -- $SHELL -i
 ```
 
 ## Usage Examples

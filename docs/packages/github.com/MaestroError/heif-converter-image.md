@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install heif-converter
+launchpad install github.com/MaestroError/heif-converter-image
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) heif-converter -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/MaestroError/heif-converter-image@2023.6.23 -- $SHELL -i
 ```
 
 ## Dependencies

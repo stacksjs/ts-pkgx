@@ -1,11 +1,11 @@
-# netlib.org/lapack
+# lapack
 
 > LAPACK development repository
 
 ## Package Information
 
 - **Domain**: `netlib.org/lapack`
-- **Name**: `netlib.org/lapack`
+- **Name**: `lapack`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/netlib.org/lapack/package.yml)
 
@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['netlib.org/lapack']
+const pkg = pantry.lapack
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

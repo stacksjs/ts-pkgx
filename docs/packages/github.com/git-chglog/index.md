@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/git-chglog`
 - **Name**: `git-chglog`
-- **Homepage**: Not specified
+- **Homepage**: https://godoc.org/github.com/git-chglog/git-chglog
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/git-chglog/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install git-chglog
+launchpad install github.com/git-chglog
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) git-chglog -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/git-chglog@0.15.4 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/git-chglog/package.yml)
-- [Homepage](#)
+- [Homepage](https://godoc.org/github.com/git-chglog/git-chglog)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

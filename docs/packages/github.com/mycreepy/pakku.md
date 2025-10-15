@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pakku
+launchpad install github.com/mycreepy/pakku
 ```
 
 ## Programs
@@ -38,8 +38,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pakku -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/mycreepy/pakku@0.5.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.23`
+- `goreleaser.com`
 
 ## Usage Examples
 

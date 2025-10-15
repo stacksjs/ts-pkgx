@@ -1,12 +1,12 @@
-# chiark.greenend.org.uk/putty
+# putty
 
 > Implementation of Telnet and SSH
 
 ## Package Information
 
 - **Domain**: `chiark.greenend.org.uk/putty`
-- **Name**: `chiark.greenend.org.uk/putty`
-- **Homepage**: Not specified
+- **Name**: `putty`
+- **Homepage**: https://www.chiark.greenend.org.uk/~sgtatham/putty/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/chiark.greenend.org.uk/putty/package.yml)
 
 ## Installation
@@ -46,13 +46,21 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +chiark.greenend.org.uk/putty@0.83.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `chiark.greenend.org.uk/halibut`
+- `perl.org`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['chiark.greenend.org.uk/putty']
+const pkg = pantry.putty
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -62,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/chiark.greenend.org.uk/putty/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

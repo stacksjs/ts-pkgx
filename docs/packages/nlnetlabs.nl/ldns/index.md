@@ -1,12 +1,12 @@
-# nlnetlabs.nl/ldns
+# ldns
 
 > LDNS is a DNS library that facilitates DNS tool programming
 
 ## Package Information
 
 - **Domain**: `nlnetlabs.nl/ldns`
-- **Name**: `nlnetlabs.nl/ldns`
-- **Homepage**: Not specified
+- **Name**: `ldns`
+- **Homepage**: https://nlnetlabs.nl/projects/ldns/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nlnetlabs.nl/ldns/package.yml)
 
 ## Installation
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['nlnetlabs.nl/ldns']
+const pkg = pantry.ldns
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/nlnetlabs.nl/ldns/package.yml)
-- [Homepage](#)
+- [Homepage](https://nlnetlabs.nl/projects/ldns/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

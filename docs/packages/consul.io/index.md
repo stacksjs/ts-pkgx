@@ -6,14 +6,14 @@
 
 - **Domain**: `consul.io`
 - **Name**: `consul`
-- **Homepage**: Not specified
+- **Homepage**: https://www.consul.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/consul.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install consul
+launchpad install consul.io
 ```
 
 ## Programs
@@ -39,8 +39,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) consul -- $SHELL -i
+sh <(curl https://pkgx.sh) +consul.io@1.21.5 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.20`
 
 ## Usage Examples
 
@@ -58,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/consul.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.consul.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

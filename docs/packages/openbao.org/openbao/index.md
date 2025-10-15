@@ -6,14 +6,14 @@
 
 - **Domain**: `openbao.org/openbao`
 - **Name**: `openbao`
-- **Homepage**: Not specified
+- **Homepage**: https://openbao.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openbao.org/openbao/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install openbao
+launchpad install openbao.org/openbao
 ```
 
 ## Programs
@@ -43,6 +43,13 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +openbao.org/openbao@2.4.1 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
+- `gnu.org/coreutils`
+
 ## Usage Examples
 
 ```typescript
@@ -59,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openbao.org/openbao/package.yml)
-- [Homepage](#)
+- [Homepage](https://openbao.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install google-maps-scraper
+launchpad install github.com/gosom/google-maps-scraper
 ```
 
 ## Programs
@@ -45,7 +45,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) google-maps-scraper -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/gosom/google-maps-scraper@1.8.5 -- $SHELL -i
 ```
 
 ## Dependencies

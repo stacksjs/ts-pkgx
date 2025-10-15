@@ -1,12 +1,12 @@
-# htslib.org
+# htslib
 
 > C library for high-throughput sequencing data formats
 
 ## Package Information
 
 - **Domain**: `htslib.org`
-- **Name**: `htslib.org`
-- **Homepage**: Not specified
+- **Name**: `htslib`
+- **Homepage**: https://www.htslib.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/htslib.org/package.yml)
 
 ## Installation
@@ -58,7 +58,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['htslib.org']
+const pkg = pantry.htslib
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/htslib.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.htslib.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install git
+launchpad install git-scm.org
 ```
 
 ## Programs

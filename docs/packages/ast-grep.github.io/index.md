@@ -1,12 +1,12 @@
-# ast-grep.github.io
+# ast-grep.github
 
 > ⚡A CLI tool for code structural search, lint and rewriting. Written in Rust
 
 ## Package Information
 
 - **Domain**: `ast-grep.github.io`
-- **Name**: `ast-grep.github.io`
-- **Homepage**: Not specified
+- **Name**: `ast-grep.github`
+- **Homepage**: https://ast-grep.github.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ast-grep.github.io/package.yml)
 
 ## Installation
@@ -65,7 +65,7 @@ sh <(curl https://pkgx.sh) +ast-grep.github.io@0.39.6 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ast-grep.github.io']
+const pkg = pantry['ast-grep.github']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -75,7 +75,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ast-grep.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://ast-grep.github.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -1,12 +1,12 @@
-# freedesktop.org/cppunit
+# cppunit
 
 > Unit testing framework for C++
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/cppunit`
-- **Name**: `freedesktop.org/cppunit`
-- **Homepage**: Not specified
+- **Name**: `cppunit`
+- **Homepage**: https://wiki.freedesktop.org/www/Software/cppunit/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/cppunit/package.yml)
 
 ## Installation
@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +freedesktop.org/cppunit@1.13.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['freedesktop.org/cppunit']
+const pkg = pantry.cppunit
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/cppunit/package.yml)
-- [Homepage](#)
+- [Homepage](https://wiki.freedesktop.org/www/Software/cppunit/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

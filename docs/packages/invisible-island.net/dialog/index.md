@@ -6,14 +6,14 @@
 
 - **Domain**: `invisible-island.net/dialog`
 - **Name**: `dialog`
-- **Homepage**: Not specified
+- **Homepage**: https://invisible-island.net/dialog/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/invisible-island.net/dialog/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install dialog
+launchpad install invisible-island.net/dialog
 ```
 
 ## Programs
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/invisible-island.net/dialog/package.yml)
-- [Homepage](#)
+- [Homepage](https://invisible-island.net/dialog/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

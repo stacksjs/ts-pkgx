@@ -6,14 +6,14 @@
 
 - **Domain**: `k3d.io`
 - **Name**: `k3d`
-- **Homepage**: Not specified
+- **Homepage**: https://k3d.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/k3d.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install k3d
+launchpad install k3d.io
 ```
 
 ## Programs
@@ -40,8 +40,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) k3d -- $SHELL -i
+sh <(curl https://pkgx.sh) +k3d.io@5.8.3 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
 
 ## Usage Examples
 
@@ -59,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/k3d.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://k3d.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

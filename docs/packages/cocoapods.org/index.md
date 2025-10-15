@@ -6,14 +6,14 @@
 
 - **Domain**: `cocoapods.org`
 - **Name**: `pod`
-- **Homepage**: Not specified
+- **Homepage**: https://cocoapods.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cocoapods.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pod
+launchpad install cocoapods.org
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pod -- $SHELL -i
+sh <(curl https://pkgx.sh) +cocoapods.org@1.16.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cocoapods.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://cocoapods.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

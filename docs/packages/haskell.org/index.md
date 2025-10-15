@@ -1,12 +1,12 @@
-# haskell.org
+# haskell
 
 > Mirror of the Glasgow Haskell Compiler. Please submit issues and patches to GHC's Gitlab instance (https://gitlab.haskell.org/ghc/ghc). First time contributors are encouraged to get started with the newcomers info (https://gitlab.haskell.org/ghc/ghc/wikis/contributing).
 
 ## Package Information
 
 - **Domain**: `haskell.org`
-- **Name**: `haskell.org`
-- **Homepage**: Not specified
+- **Name**: `haskell`
+- **Homepage**: http://www.haskell.org/ghc/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/haskell.org/package.yml)
 
 ## Installation
@@ -86,7 +86,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['haskell.org']
+const pkg = pantry.haskell
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -96,7 +96,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/haskell.org/package.yml)
-- [Homepage](#)
+- [Homepage](http://www.haskell.org/ghc/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

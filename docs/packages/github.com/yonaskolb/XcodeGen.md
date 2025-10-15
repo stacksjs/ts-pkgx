@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install xcodegen
+launchpad install github.com/yonaskolb/XcodeGen
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) xcodegen -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/yonaskolb/XcodeGen@2.44.1 -- $SHELL -i
 ```
 
 ## Usage Examples

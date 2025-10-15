@@ -6,14 +6,14 @@
 
 - **Domain**: `dotenv-linter.github.io`
 - **Name**: `dotenv-linter`
-- **Homepage**: Not specified
+- **Homepage**: https://dotenv-linter.github.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dotenv-linter.github.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install dotenv-linter
+launchpad install dotenv-linter.github.io
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dotenv-linter -- $SHELL -i
+sh <(curl https://pkgx.sh) +dotenv-linter.github.io@3.3.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/dotenv-linter.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://dotenv-linter.github.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install gimme-aws-creds
+launchpad install nike.com/gimme-aws-creds
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gimme-aws-creds -- $SHELL -i
+sh <(curl https://pkgx.sh) +nike.com/gimme-aws-creds@2.8.2 -- $SHELL -i
 ```
 
 ## Dependencies

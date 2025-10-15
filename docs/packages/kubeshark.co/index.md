@@ -6,14 +6,14 @@
 
 - **Domain**: `kubeshark.co`
 - **Name**: `kubeshark`
-- **Homepage**: Not specified
+- **Homepage**: https://www.kubeshark.co/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kubeshark.co/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install kubeshark
+launchpad install kubeshark.co
 ```
 
 ## Programs
@@ -48,8 +48,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) kubeshark -- $SHELL -i
+sh <(curl https://pkgx.sh) +kubeshark.co@72.3.83 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
+- `gnu.org/make`
 
 ## Usage Examples
 
@@ -67,7 +74,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/kubeshark.co/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.kubeshark.co/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

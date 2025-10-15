@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/adegtyarev/streebog`
 - **Name**: `gost3411-2012`
-- **Homepage**: Not specified
+- **Homepage**: https://www.streebog.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/adegtyarev/streebog/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gost3411-2012
+launchpad install github.com/adegtyarev/streebog
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gost3411-2012 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/adegtyarev/streebog@0.13.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `linux:gnu.org/patch`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/adegtyarev/streebog/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.streebog.net/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `htop.dev`
 - **Name**: `htop`
-- **Homepage**: Not specified
+- **Homepage**: https://htop.dev/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/htop.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install htop
+launchpad install htop.dev
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) htop -- $SHELL -i
+sh <(curl https://pkgx.sh) +htop.dev@3.4.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/htop.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://htop.dev/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

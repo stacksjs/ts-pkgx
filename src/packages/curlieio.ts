@@ -8,7 +8,7 @@
  *
  * @install `launchpad install curlie.io`
  * @homepage https://rs.github.io/curlie
- * @dependencies `go.dev@~1.24`, `goreleaser.com`, `darwin/aarch64@{ PLATFORM: darwin_arm64_v8.0, GOARCH: arm64, GOOS: darwin }`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
+ * @dependencies `go.dev@~1.24`, `goreleaser.com`
  *
  * @example
  * ```typescript
@@ -58,13 +58,10 @@ export const curlieioPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
-   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'go.dev@~1.24',
     'goreleaser.com',
-    'darwin/aarch64@{ PLATFORM: darwin_arm64_v8.0, GOARCH: arm64, GOOS: darwin }',
-    'linux/aarch64@{ PLATFORM: linux_arm64_v8.0, GOARCH: arm64, GOOS: linux }',
   ] as const,
   /**
    * Available versions from newest to oldest.

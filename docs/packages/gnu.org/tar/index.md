@@ -6,14 +6,14 @@
 
 - **Domain**: `gnu.org/tar`
 - **Name**: `tar`
-- **Homepage**: Not specified
+- **Homepage**: https://www.libarchive.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/tar/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install tar
+launchpad install gnu.org/tar
 ```
 
 ## Programs
@@ -37,8 +37,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tar -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnu.org/tar@1.35.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/patch`
+- `gnu.org/autoconf`
+- `gnu.org/automake`
 
 ## Usage Examples
 
@@ -56,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/tar/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.libarchive.org)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

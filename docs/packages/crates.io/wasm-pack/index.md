@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/wasm-pack`
 - **Name**: `wasm-pack`
-- **Homepage**: Not specified
+- **Homepage**: https://rustwasm.github.io/wasm-pack/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/wasm-pack/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install wasm-pack
+launchpad install crates.io/wasm-pack
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) wasm-pack -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/wasm-pack@0.13.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/wasm-pack/package.yml)
-- [Homepage](#)
+- [Homepage](https://rustwasm.github.io/wasm-pack/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

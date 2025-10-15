@@ -6,14 +6,14 @@
 
 - **Domain**: `apache.org/thrift`
 - **Name**: `thrift`
-- **Homepage**: Not specified
+- **Homepage**: https://thrift.apache.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/thrift/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install thrift
+launchpad install apache.org/thrift
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) thrift -- $SHELL -i
+sh <(curl https://pkgx.sh) +apache.org/thrift@0.22.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/thrift/package.yml)
-- [Homepage](#)
+- [Homepage](https://thrift.apache.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

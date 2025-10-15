@@ -6,14 +6,14 @@
 
 - **Domain**: `strace.io`
 - **Name**: `strace`
-- **Homepage**: Not specified
+- **Homepage**: https://strace.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/strace.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install strace
+launchpad install strace.io
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) strace -- $SHELL -i
+sh <(curl https://pkgx.sh) +strace.io@6.2.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/strace.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://strace.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

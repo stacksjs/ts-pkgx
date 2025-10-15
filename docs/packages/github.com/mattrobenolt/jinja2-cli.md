@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install jinja2
+launchpad install github.com/mattrobenolt/jinja2-cli
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) jinja2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/mattrobenolt/jinja2-cli@0.8.2 -- $SHELL -i
 ```
 
 ## Dependencies

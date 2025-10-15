@@ -6,14 +6,14 @@
 
 - **Domain**: `sqlc.dev`
 - **Name**: `sqlc`
-- **Homepage**: Not specified
+- **Homepage**: https://sqlc.dev/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sqlc.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sqlc
+launchpad install sqlc.dev
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sqlc -- $SHELL -i
+sh <(curl https://pkgx.sh) +sqlc.dev@1.30.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.22`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sqlc.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://sqlc.dev/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `pwmt.org/zathura`
 - **Name**: `zathura`
-- **Homepage**: Not specified
+- **Homepage**: https://pwmt.org/projects/zathura
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pwmt.org/zathura/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install zathura
+launchpad install pwmt.org/zathura
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) zathura -- $SHELL -i
+sh <(curl https://pkgx.sh) +pwmt.org/zathura@0.5.13 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pwmt.org/zathura/package.yml)
-- [Homepage](#)
+- [Homepage](https://pwmt.org/projects/zathura)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

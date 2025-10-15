@@ -6,14 +6,14 @@
 
 - **Domain**: `rebar3.org`
 - **Name**: `rebar3`
-- **Homepage**: Not specified
+- **Homepage**: https://rebar3.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rebar3.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rebar3
+launchpad install rebar3.org
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rebar3 -- $SHELL -i
+sh <(curl https://pkgx.sh) +rebar3.org@3.25.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rebar3.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://rebar3.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

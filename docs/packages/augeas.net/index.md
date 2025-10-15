@@ -1,12 +1,12 @@
-# augeas.net
+# augeas
 
 > A configuration editing tool and API
 
 ## Package Information
 
 - **Domain**: `augeas.net`
-- **Name**: `augeas.net`
-- **Homepage**: Not specified
+- **Name**: `augeas`
+- **Homepage**: https://augeas.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/augeas.net/package.yml)
 
 ## Installation
@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['augeas.net']
+const pkg = pantry.augeas
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/augeas.net/package.yml)
-- [Homepage](#)
+- [Homepage](https://augeas.net/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

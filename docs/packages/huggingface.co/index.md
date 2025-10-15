@@ -1,19 +1,19 @@
-# huggingface-cli
+# huggingface/cli
 
 > The official Python client for the Huggingface Hub.
 
 ## Package Information
 
 - **Domain**: `huggingface.co`
-- **Name**: `huggingface-cli`
-- **Homepage**: Not specified
+- **Name**: `huggingface/cli`
+- **Homepage**: https://huggingface.co/docs/huggingface_hub/index
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/huggingface.co/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install huggingface-cli
+launchpad install huggingface.co
 ```
 
 ## Programs
@@ -51,7 +51,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) huggingface-cli -- $SHELL -i
+sh <(curl https://pkgx.sh) +huggingface.co@0.35.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -66,7 +66,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['huggingface-cli']
+const pkg = pantry['huggingface/cli']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -76,7 +76,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/huggingface.co/package.yml)
-- [Homepage](#)
+- [Homepage](https://huggingface.co/docs/huggingface_hub/index)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

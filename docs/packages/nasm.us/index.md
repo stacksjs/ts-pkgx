@@ -6,7 +6,7 @@
 
 - **Domain**: `nasm.us`
 - **Name**: `nasm.us`
-- **Homepage**: Not specified
+- **Homepage**: https://www.nasm.us/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nasm.us/package.yml)
 
 ## Installation
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/nasm.us/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.nasm.us/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

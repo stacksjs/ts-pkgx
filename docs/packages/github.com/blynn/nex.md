@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/blynn/nex`
 - **Name**: `nex`
-- **Homepage**: Not specified
+- **Homepage**: https://repo.or.cz/nvi.git
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/blynn/nex/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install nex
+launchpad install github.com/blynn/nex
 ```
 
 ## Programs
@@ -37,8 +37,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) nex -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/blynn/nex@2021.3.30 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `rsync.samba.org`
+- `go.dev@^1.20`
 
 ## Usage Examples
 
@@ -56,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/blynn/nex/package.yml)
-- [Homepage](#)
+- [Homepage](https://repo.or.cz/nvi.git)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

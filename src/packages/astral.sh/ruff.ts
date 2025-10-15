@@ -8,7 +8,6 @@
  *
  * @install `launchpad install astral.sh/ruff`
  * @homepage https://docs.astral.sh/ruff/
- * @dependencies `if@>=0.1.14`
  *
  * @example
  * ```typescript
@@ -55,13 +54,7 @@ export const astralshruffPackage = {
     'ruff',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'if@>=0.1.14',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

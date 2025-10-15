@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install periphery
+launchpad install github.com/peripheryapp/periphery
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) periphery -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/peripheryapp/periphery@3.2.0 -- $SHELL -i
 ```
 
 ## Dependencies

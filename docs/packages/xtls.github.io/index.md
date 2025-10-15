@@ -6,25 +6,19 @@
 
 - **Domain**: `xtls.github.io`
 - **Name**: `xray-core`
-- **Homepage**: Not specified
+- **Homepage**: https://xtls.github.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xtls.github.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install xray
+launchpad install xtls.github.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `xray`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `xray`
 
@@ -50,8 +44,15 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) xray -- $SHELL -i
+sh <(curl https://pkgx.sh) +xtls.github.io@25.9.11 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21.4`
+- `curl.se`
 
 ## Usage Examples
 
@@ -59,7 +60,7 @@ sh <(curl https://pkgx.sh) xray -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.xray
+const pkg = pantry['xray-core']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -69,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/xtls.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://xtls.github.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

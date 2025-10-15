@@ -1,19 +1,19 @@
-# aomenc
+# aom
 
 > Codec library for encoding and decoding AV1 video streams
 
 ## Package Information
 
 - **Domain**: `aomedia.googlesource.com/aom`
-- **Name**: `aomenc`
-- **Homepage**: Not specified
+- **Name**: `aom`
+- **Homepage**: https://aomedia.googlesource.com/aom
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aomedia.googlesource.com/aom/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install aomenc
+launchpad install aomedia.googlesource.com/aom
 ```
 
 ## Programs
@@ -44,13 +44,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +aomedia.googlesource.com/aom@3.13.1 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@^3`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.aomenc
+const pkg = pantry.aom
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -60,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/aomedia.googlesource.com/aom/package.yml)
-- [Homepage](#)
+- [Homepage](https://aomedia.googlesource.com/aom)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

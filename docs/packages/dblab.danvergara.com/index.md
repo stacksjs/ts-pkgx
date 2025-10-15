@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install dblab
+launchpad install dblab.danvergara.com
 ```
 
 ## Programs
@@ -40,8 +40,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dblab -- $SHELL -i
+sh <(curl https://pkgx.sh) +dblab.danvergara.com@0.33.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 

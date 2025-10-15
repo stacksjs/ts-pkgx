@@ -6,14 +6,14 @@
 
 - **Domain**: `appium.io`
 - **Name**: `appium`
-- **Homepage**: Not specified
+- **Homepage**: https://appium.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/appium.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install appium
+launchpad install appium.io
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) appium -- $SHELL -i
+sh <(curl https://pkgx.sh) +appium.io@3.0.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -71,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/appium.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://appium.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

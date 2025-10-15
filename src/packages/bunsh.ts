@@ -10,7 +10,7 @@
  * @name `bun`
  * @aliases `bun.com`
  * @homepage https://bun.sh
- * @dependencies `curl.se`, `darwin/aarch64@{ PLATFORM: darwin-aarch64 }`, `linux/aarch64@{ PLATFORM: linux-aarch64 }` (includes OS-specific dependencies with `os:package` format)
+ * @dependencies `curl.se`
  *
  * @example
  * ```typescript
@@ -65,12 +65,9 @@ export const bunPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
-   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'curl.se',
-    'darwin/aarch64@{ PLATFORM: darwin-aarch64 }',
-    'linux/aarch64@{ PLATFORM: linux-aarch64 }',
   ] as const,
   /**
    * Available versions from newest to oldest.

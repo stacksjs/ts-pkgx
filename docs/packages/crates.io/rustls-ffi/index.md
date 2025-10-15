@@ -1,11 +1,11 @@
-# crates.io/rustls-ffi
+# rustls-ffi
 
 > Use Rustls from any language
 
 ## Package Information
 
 - **Domain**: `crates.io/rustls-ffi`
-- **Name**: `crates.io/rustls-ffi`
+- **Name**: `rustls-ffi`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rustls-ffi/package.yml)
 
@@ -41,13 +41,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +crates.io/rustls-ffi@0.15.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `mozilla.org/cbindgen`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['crates.io/rustls-ffi']
+const pkg = pantry['rustls-ffi']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

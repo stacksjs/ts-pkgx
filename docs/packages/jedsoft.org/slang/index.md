@@ -6,25 +6,19 @@
 
 - **Domain**: `jedsoft.org/slang`
 - **Name**: `s-lang`
-- **Homepage**: Not specified
+- **Homepage**: https://www.jedsoft.org/slang/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jedsoft.org/slang/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install slsh
+launchpad install jedsoft.org/slang
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `slsh`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `slsh`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) slsh -- $SHELL -i
+sh <(curl https://pkgx.sh) +jedsoft.org/slang@2.3.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -59,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.slsh
+const pkg = pantry['s-lang']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -69,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jedsoft.org/slang/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.jedsoft.org/slang/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

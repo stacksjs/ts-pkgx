@@ -6,14 +6,14 @@
 
 - **Domain**: `indexsupply.com/shovel`
 - **Name**: `shovel`
-- **Homepage**: Not specified
+- **Homepage**: https://indexsupply.com/shovel
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/indexsupply.com/shovel/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install shovel
+launchpad install indexsupply.com/shovel
 ```
 
 ## Programs
@@ -38,14 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) shovel -- $SHELL -i
+sh <(curl https://pkgx.sh) +indexsupply.com/shovel@1.6.0 -- $SHELL -i
 ```
 
-## Related Packages
+## Dependencies
 
-These packages work well with shovel:
+This package depends on:
 
-- [`postgresql.org`](../../postgresql.org/index.md) - Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
+- `go.dev@^1.21`
 
 ## Usage Examples
 
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/indexsupply.com/shovel/package.yml)
-- [Homepage](#)
+- [Homepage](https://indexsupply.com/shovel)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

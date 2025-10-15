@@ -6,14 +6,14 @@
 
 - **Domain**: `caddyserver.com`
 - **Name**: `caddy`
-- **Homepage**: Not specified
+- **Homepage**: https://caddyserver.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/caddyserver.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install caddy
+launchpad install caddyserver.com
 ```
 
 ## Programs
@@ -39,8 +39,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) caddy -- $SHELL -i
+sh <(curl https://pkgx.sh) +caddyserver.com@2.10.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
+- `curl.se`
 
 ## Usage Examples
 
@@ -58,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/caddyserver.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://caddyserver.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

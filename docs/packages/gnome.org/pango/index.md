@@ -6,14 +6,14 @@
 
 - **Domain**: `gnome.org/pango`
 - **Name**: `pango`
-- **Homepage**: Not specified
+- **Homepage**: https://www.gtk.org/docs/architecture/pango
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/pango/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pango
+launchpad install gnome.org/pango
 ```
 
 ## Programs
@@ -72,7 +72,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/pango/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gtk.org/docs/architecture/pango)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

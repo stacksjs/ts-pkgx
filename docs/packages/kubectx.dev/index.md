@@ -6,14 +6,14 @@
 
 - **Domain**: `kubectx.dev`
 - **Name**: `kube`
-- **Homepage**: Not specified
+- **Homepage**: https://kubectx.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kubectx.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install kube
+launchpad install kubectx.dev
 ```
 
 ## Programs
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/kubectx.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://kubectx.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `aws.amazon.com/sam`
 - **Name**: `sam`
-- **Homepage**: Not specified
+- **Homepage**: https://aws.amazon.com/serverless/sam/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aws.amazon.com/sam/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sam
+launchpad install aws.amazon.com/sam
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sam -- $SHELL -i
+sh <(curl https://pkgx.sh) +aws.amazon.com/sam@1.145.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/aws.amazon.com/sam/package.yml)
-- [Homepage](#)
+- [Homepage](https://aws.amazon.com/serverless/sam/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

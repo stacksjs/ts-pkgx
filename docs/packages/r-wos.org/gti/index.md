@@ -6,14 +6,14 @@
 
 - **Domain**: `r-wos.org/gti`
 - **Name**: `gti`
-- **Homepage**: Not specified
+- **Homepage**: https://r-wos.org/hacks/gti
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/r-wos.org/gti/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gti
+launchpad install r-wos.org/gti
 ```
 
 ## Programs
@@ -45,7 +45,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gti -- $SHELL -i
+sh <(curl https://pkgx.sh) +r-wos.org/gti@1.9.1 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/r-wos.org/gti/package.yml)
-- [Homepage](#)
+- [Homepage](https://r-wos.org/hacks/gti)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

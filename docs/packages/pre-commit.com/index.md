@@ -6,14 +6,14 @@
 
 - **Domain**: `pre-commit.com`
 - **Name**: `pre-commit`
-- **Homepage**: Not specified
+- **Homepage**: https://pre-commit.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pre-commit.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pre-commit
+launchpad install pre-commit.com
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pre-commit -- $SHELL -i
+sh <(curl https://pkgx.sh) +pre-commit.com@4.3.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pre-commit.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://pre-commit.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `gource.io`
 - **Name**: `gource`
-- **Homepage**: Not specified
+- **Homepage**: https://gource.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gource.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gource
+launchpad install gource.io
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gource -- $SHELL -i
+sh <(curl https://pkgx.sh) +gource.io@0.55.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gource.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://gource.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

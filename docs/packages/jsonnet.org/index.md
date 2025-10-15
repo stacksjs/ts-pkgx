@@ -6,14 +6,14 @@
 
 - **Domain**: `jsonnet.org`
 - **Name**: `jsonnet`
-- **Homepage**: Not specified
+- **Homepage**: http://jsonnet.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jsonnet.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install jsonnet
+launchpad install jsonnet.org
 ```
 
 ## Programs
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jsonnet.org/package.yml)
-- [Homepage](#)
+- [Homepage](http://jsonnet.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

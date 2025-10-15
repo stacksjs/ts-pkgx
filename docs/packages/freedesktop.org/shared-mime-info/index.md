@@ -6,14 +6,14 @@
 
 - **Domain**: `freedesktop.org/shared-mime-info`
 - **Name**: `update-mime-database`
-- **Homepage**: Not specified
+- **Homepage**: https://wiki.freedesktop.org/www/Software/shared-mime-info
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/shared-mime-info/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install update-mime-database
+launchpad install freedesktop.org/shared-mime-info
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) update-mime-database -- $SHELL -i
+sh <(curl https://pkgx.sh) +freedesktop.org/shared-mime-info@2.4.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/shared-mime-info/package.yml)
-- [Homepage](#)
+- [Homepage](https://wiki.freedesktop.org/www/Software/shared-mime-info)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

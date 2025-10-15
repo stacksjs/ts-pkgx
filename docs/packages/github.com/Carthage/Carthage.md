@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install carthage
+launchpad install github.com/Carthage/Carthage
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) carthage -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/Carthage/Carthage@0.40.0 -- $SHELL -i
 ```
 
 ## Usage Examples

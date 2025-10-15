@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install v
+launchpad install vlang.io
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) v -- $SHELL -i
+sh <(curl https://pkgx.sh) +vlang.io@0.4.12 -- $SHELL -i
 ```
 
 ## Usage Examples

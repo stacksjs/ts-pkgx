@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install aws-whoami
+launchpad install github.com/benkehoe/aws-whoami-golang
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) aws-whoami -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/benkehoe/aws-whoami-golang@2.6.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
 
 ## Usage Examples
 

@@ -1,12 +1,12 @@
-# systemd.io
+# systemd
 
 > The systemd System and Service Manager
 
 ## Package Information
 
 - **Domain**: `systemd.io`
-- **Name**: `systemd.io`
-- **Homepage**: Not specified
+- **Name**: `systemd`
+- **Homepage**: https://systemd.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/systemd.io/package.yml)
 
 ## Installation
@@ -124,7 +124,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['systemd.io']
+const pkg = pantry.systemd
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -134,7 +134,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/systemd.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://systemd.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

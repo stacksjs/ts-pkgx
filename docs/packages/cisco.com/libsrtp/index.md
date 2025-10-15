@@ -1,11 +1,11 @@
-# cisco.com/libsrtp
+# libsrtp
 
 > Library for SRTP (Secure Realtime Transport Protocol)
 
 ## Package Information
 
 - **Domain**: `cisco.com/libsrtp`
-- **Name**: `cisco.com/libsrtp`
+- **Name**: `libsrtp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cisco.com/libsrtp/package.yml)
 
@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cisco.com/libsrtp']
+const pkg = pantry.libsrtp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

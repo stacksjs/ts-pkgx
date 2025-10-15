@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pylsp
+launchpad install github.com/python-lsp/python-lsp-server
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pylsp -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/python-lsp/python-lsp-server@1.13.1 -- $SHELL -i
 ```
 
 ## Dependencies

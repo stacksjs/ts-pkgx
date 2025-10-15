@@ -1,12 +1,12 @@
-# public.hronopik.de/vid.stab
+# vid.stab
 
 > Video stabilization library
 
 ## Package Information
 
 - **Domain**: `public.hronopik.de/vid.stab`
-- **Name**: `public.hronopik.de/vid.stab`
-- **Homepage**: Not specified
+- **Name**: `vid.stab`
+- **Homepage**: http://public.hronopik.de/vid.stab/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/public.hronopik.de/vid.stab/package.yml)
 
 ## Installation
@@ -40,13 +40,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +public.hronopik.de/vid.stab@1.1.1 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['public.hronopik.de/vid.stab']
+const pkg = pantry['vid.stab']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/public.hronopik.de/vid.stab/package.yml)
-- [Homepage](#)
+- [Homepage](http://public.hronopik.de/vid.stab/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

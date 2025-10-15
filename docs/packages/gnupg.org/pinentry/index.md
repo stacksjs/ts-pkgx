@@ -6,14 +6,14 @@
 
 - **Domain**: `gnupg.org/pinentry`
 - **Name**: `pinentry`
-- **Homepage**: Not specified
+- **Homepage**: https://www.gnupg.org/related_software/pinentry/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/pinentry/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pinentry
+launchpad install gnupg.org/pinentry
 ```
 
 ## Programs
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/pinentry/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnupg.org/related_software/pinentry/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

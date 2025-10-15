@@ -6,14 +6,14 @@
 
 - **Domain**: `rust-lang.org`
 - **Name**: `rust`
-- **Homepage**: Not specified
+- **Homepage**: https://www.rust-lang.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rust
+launchpad install rust-lang.org
 ```
 
 ## Programs
@@ -62,12 +62,6 @@ This package depends on:
 
 - `zlib.net@1`
 
-## Related Packages
-
-These packages work well with rust:
-
-- [`rust-lang.org/cargo`](cargo/index.md) - The Rust package manager
-
 ## Usage Examples
 
 ```typescript
@@ -84,7 +78,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.rust-lang.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

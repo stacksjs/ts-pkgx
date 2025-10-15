@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/zellij`
 - **Name**: `zellij`
-- **Homepage**: Not specified
+- **Homepage**: https://zellij.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/zellij/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install zellij
+launchpad install crates.io/zellij
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) zellij -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/zellij@0.43.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/zellij/package.yml)
-- [Homepage](#)
+- [Homepage](https://zellij.dev)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

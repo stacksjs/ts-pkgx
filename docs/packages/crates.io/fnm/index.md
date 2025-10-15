@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/fnm`
 - **Name**: `fnm`
-- **Homepage**: Not specified
+- **Homepage**: https://fnm.vercel.app
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/fnm/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install fnm
+launchpad install crates.io/fnm
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) fnm -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/fnm@1.38.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/fnm/package.yml)
-- [Homepage](#)
+- [Homepage](https://fnm.vercel.app)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

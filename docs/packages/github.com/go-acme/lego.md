@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/go-acme/lego`
 - **Name**: `lego`
-- **Homepage**: Not specified
+- **Homepage**: https://go-acme.github.io/lego/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/go-acme/lego/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install lego
+launchpad install github.com/go-acme/lego
 ```
 
 ## Programs
@@ -41,8 +41,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) lego -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/go-acme/lego@4.26.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.20`
 
 ## Usage Examples
 
@@ -60,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/go-acme/lego/package.yml)
-- [Homepage](#)
+- [Homepage](https://go-acme.github.io/lego/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

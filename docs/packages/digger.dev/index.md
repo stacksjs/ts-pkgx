@@ -6,14 +6,14 @@
 
 - **Domain**: `digger.dev`
 - **Name**: `digger`
-- **Homepage**: Not specified
+- **Homepage**: https://digger.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/digger.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install digger
+launchpad install digger.dev
 ```
 
 ## Programs
@@ -79,8 +79,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) digger -- $SHELL -i
+sh <(curl https://pkgx.sh) +digger.dev@0.6.128 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 
@@ -98,7 +104,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/digger.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://digger.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

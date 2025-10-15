@@ -1,12 +1,12 @@
-# catb.org/wumpus
+# wumpus
 
 > Exact clone of the ancient BASIC Hunt the Wumpus game
 
 ## Package Information
 
 - **Domain**: `catb.org/wumpus`
-- **Name**: `catb.org/wumpus`
-- **Homepage**: Not specified
+- **Name**: `wumpus`
+- **Homepage**: http://www.catb.org/~esr/wumpus/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/catb.org/wumpus/package.yml)
 
 ## Installation
@@ -48,7 +48,7 @@ sh <(curl https://pkgx.sh) +catb.org/wumpus@1.10.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['catb.org/wumpus']
+const pkg = pantry.wumpus
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -58,7 +58,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/catb.org/wumpus/package.yml)
-- [Homepage](#)
+- [Homepage](http://www.catb.org/~esr/wumpus/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

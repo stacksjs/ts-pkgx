@@ -6,14 +6,14 @@
 
 - **Domain**: `etcd.io`
 - **Name**: `etcd`
-- **Homepage**: Not specified
+- **Homepage**: https://etcd.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/etcd.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install etcd
+launchpad install etcd.io
 ```
 
 ## Programs
@@ -44,6 +44,12 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +etcd.io@3.6.5 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.22`
+
 ## Usage Examples
 
 ```typescript
@@ -60,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/etcd.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://etcd.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

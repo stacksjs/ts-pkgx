@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install bpb
+launchpad install crates.io/bpb
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) bpb -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/bpb@1.1.0 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -1,12 +1,12 @@
-# libarchive.org
+# libarchive
 
 > Multi-format archive and compression library
 
 ## Package Information
 
 - **Domain**: `libarchive.org`
-- **Name**: `libarchive.org`
-- **Homepage**: Not specified
+- **Name**: `libarchive`
+- **Homepage**: https://www.libarchive.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libarchive.org/package.yml)
 
 ## Installation
@@ -62,7 +62,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libarchive.org']
+const pkg = pantry.libarchive
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -72,7 +72,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libarchive.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.libarchive.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

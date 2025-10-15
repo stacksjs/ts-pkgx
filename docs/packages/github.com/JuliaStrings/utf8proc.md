@@ -1,12 +1,12 @@
-# github.com/JuliaStrings/utf8proc
+# utf8proc
 
 > a clean C library for processing UTF-8 Unicode data
 
 ## Package Information
 
 - **Domain**: `github.com/JuliaStrings/utf8proc`
-- **Name**: `github.com/JuliaStrings/utf8proc`
-- **Homepage**: Not specified
+- **Name**: `utf8proc`
+- **Homepage**: http://juliastrings.github.io/utf8proc/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/JuliaStrings/utf8proc/package.yml)
 
 ## Installation
@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/JuliaStrings/utf8proc@2.11.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/JuliaStrings/utf8proc']
+const pkg = pantry.utf8proc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/JuliaStrings/utf8proc/package.yml)
-- [Homepage](#)
+- [Homepage](http://juliastrings.github.io/utf8proc/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install tfupdate
+launchpad install github.com/minamijoyo/tfupdate
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tfupdate -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/minamijoyo/tfupdate@0.9.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 

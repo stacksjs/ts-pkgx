@@ -1,12 +1,12 @@
-# github.com/xiph/speexdsp
+# speexdsp
 
 > Speex audio processing library - THIS IS A MIRROR, DEVELOPMENT HAPPENS AT https://gitlab.xiph.org/xiph/speexdsp
 
 ## Package Information
 
 - **Domain**: `github.com/xiph/speexdsp`
-- **Name**: `github.com/xiph/speexdsp`
-- **Homepage**: Not specified
+- **Name**: `speexdsp`
+- **Homepage**: https://speex.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/xiph/speexdsp/package.yml)
 
 ## Installation
@@ -40,13 +40,23 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/xiph/speexdsp@1.2.1 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/autoconf`
+- `gnu.org/automake`
+- `gnu.org/libtool`
+- `linux:gnu.org/gcc`
+- `linux:gnu.org/make`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/xiph/speexdsp']
+const pkg = pantry.speexdsp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/xiph/speexdsp/package.yml)
-- [Homepage](#)
+- [Homepage](https://speex.org)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

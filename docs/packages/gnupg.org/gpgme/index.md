@@ -6,14 +6,14 @@
 
 - **Domain**: `gnupg.org/gpgme`
 - **Name**: `gpgme`
-- **Homepage**: Not specified
+- **Homepage**: https://www.gnupg.org/related_software/gpgme/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/gpgme/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gpgme
+launchpad install gnupg.org/gpgme
 ```
 
 ## Programs
@@ -44,6 +44,13 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +gnupg.org/gpgme@2.0.1 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnupg.org`
+- `gnupg.org/libassuan@^2.0.2`
+
 ## Usage Examples
 
 ```typescript
@@ -60,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/gpgme/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnupg.org/related_software/gpgme/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

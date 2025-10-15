@@ -6,14 +6,14 @@
 
 - **Domain**: `duktape.org`
 - **Name**: `duk`
-- **Homepage**: Not specified
+- **Homepage**: https://duktape.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/duktape.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install duk
+launchpad install duktape.org
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) duk -- $SHELL -i
+sh <(curl https://pkgx.sh) +duktape.org@2.7.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/duktape.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://duktape.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

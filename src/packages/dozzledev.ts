@@ -8,7 +8,7 @@
  *
  * @install `launchpad install dozzle.dev`
  * @homepage https://dozzle.dev/
- * @dependencies `go.dev@^1.21`, `pnpm.io`, `openssl.org`, ... (+1 more)
+ * @dependencies `go.dev@^1.21`, `pnpm.io`, `openssl.org`
  *
  * @example
  * ```typescript
@@ -63,7 +63,6 @@ export const dozzledevPackage = {
     'go.dev@^1.21',
     'pnpm.io',
     'openssl.org',
-    'if@darwin/aarch64',
   ] as const,
   /**
    * Available versions from newest to oldest.

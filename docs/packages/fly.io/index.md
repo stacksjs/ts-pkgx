@@ -6,14 +6,14 @@
 
 - **Domain**: `fly.io`
 - **Name**: `fly`
-- **Homepage**: Not specified
+- **Homepage**: https://fly.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fly.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install fly
+launchpad install fly.io
 ```
 
 ## Programs
@@ -130,6 +130,12 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +fly.io@0.3.195 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
+
 ## Usage Examples
 
 ```typescript
@@ -146,7 +152,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/fly.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://fly.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

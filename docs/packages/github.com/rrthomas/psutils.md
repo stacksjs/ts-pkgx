@@ -1,11 +1,11 @@
-# github.com/rrthomas/psutils
+# psutils
 
 > Utilities for manipulating PostScript documents
 
 ## Package Information
 
 - **Domain**: `github.com/rrthomas/psutils`
-- **Name**: `github.com/rrthomas/psutils`
+- **Name**: `psutils`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/rrthomas/psutils/package.yml)
 
@@ -61,7 +61,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/rrthomas/psutils']
+const pkg = pantry.psutils
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

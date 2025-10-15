@@ -6,14 +6,14 @@
 
 - **Domain**: `gnu.org/gperf`
 - **Name**: `gperf`
-- **Homepage**: Not specified
+- **Homepage**: https://www.gnu.org/software/gperf/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gperf/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gperf
+launchpad install gnu.org/gperf
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gperf -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnu.org/gperf@3.3.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gperf/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org/software/gperf/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

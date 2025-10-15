@@ -1,11 +1,11 @@
-# github.com/jbeder/yaml-cpp
+# yaml-cpp
 
 > A YAML parser and emitter in C++
 
 ## Package Information
 
 - **Domain**: `github.com/jbeder/yaml-cpp`
-- **Name**: `github.com/jbeder/yaml-cpp`
+- **Name**: `yaml-cpp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jbeder/yaml-cpp/package.yml)
 
@@ -40,13 +40,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/jbeder/yaml-cpp@0.8.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@^3`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/jbeder/yaml-cpp']
+const pkg = pantry['yaml-cpp']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

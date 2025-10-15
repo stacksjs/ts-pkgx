@@ -6,14 +6,14 @@
 
 - **Domain**: `litecli.com`
 - **Name**: `litecli`
-- **Homepage**: Not specified
+- **Homepage**: https://litecli.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/litecli.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install litecli
+launchpad install litecli.com
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) litecli -- $SHELL -i
+sh <(curl https://pkgx.sh) +litecli.com@1.17.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/litecli.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://litecli.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

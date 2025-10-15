@@ -1,6 +1,6 @@
 # Programming Languages
 
-*14 packages in this category*
+*15 packages in this category*
 
 Popular programming languages and their runtimes available through pkgx.
 
@@ -12,7 +12,7 @@ Fast and statically typed, compiled language with Ruby-like syntax
 
 **Programs**: crystal
 
-**Install**: `launchpad install crystal`
+**Install**: `launchpad install crystal-lang.org`
 
 ---
 
@@ -22,7 +22,7 @@ The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries,
 
 **Programs**: dart, dartaotruntime
 
-**Install**: `launchpad install dart`
+**Install**: `launchpad install dart.dev`
 
 ---
 
@@ -32,7 +32,7 @@ The Go programming language
 
 **Programs**: go, gofmt
 
-**Install**: `launchpad install go`
+**Install**: `launchpad install go.dev`
 
 ---
 
@@ -42,7 +42,7 @@ The Julia Programming Language
 
 **Programs**: julia
 
-**Install**: `launchpad install julia`
+**Install**: `launchpad install julialang.org`
 
 ---
 
@@ -52,7 +52,7 @@ Powerful, lightweight programming language
 
 **Programs**: lua, luac
 
-**Install**: `launchpad install lua`
+**Install**: `launchpad install lua.org`
 
 ---
 
@@ -62,7 +62,7 @@ Mirror of the LuaJIT git repository
 
 **Programs**: luajit, luajit-2.1.
 
-**Install**: `launchpad install luajit`
+**Install**: `launchpad install luajit.org`
 
 ---
 
@@ -72,7 +72,17 @@ Platform built on V8 to build network applications
 
 **Programs**: node
 
-**Install**: `launchpad install node`
+**Install**: `launchpad install nodejs.org`
+
+---
+
+### [perl.org](../packages/perl.org/index.md) (perl)
+
+Highly capable, feature-rich programming language
+
+**Programs**: corelist, cpan, enc2xs, encguess, h2ph, h2xs, instmodsh, json_pp, libnetcfg, perl, perlbug, perldoc, perlivp, perlthanks, piconv, pl2pm, pod2html, pod2man, pod2text, pod2usage, podchecker, prove, ptar, ptardiff, ptargrep, shasum, splain, streamzip, xsubpp, zipdetails
+
+**Install**: `launchpad install perl.org`
 
 ---
 
@@ -82,7 +92,7 @@ General-purpose scripting language
 
 **Programs**: pear, pecl, phar, php, php-cgi, php-config, phpdbg, phpize
 
-**Install**: `launchpad install php`
+**Install**: `launchpad install php.net`
 
 ---
 
@@ -96,7 +106,7 @@ The Python programming language
 
 ---
 
-### [ruby-lang.org](../packages/ruby-lang.org/index.md) (ruby)
+### [ruby-lang.org](../packages/ruby-lang.org/index.md) (ruby-lang, ruby)
 
 Powerful, clean, object-oriented scripting language
 
@@ -112,7 +122,7 @@ Empowering everyone to build reliable and efficient software.
 
 **Programs**: cargo-clippy, cargo-fmt, clippy-driver, rust-analyzer, rust-gdb, rust-gdbgui, rust-lldb, rustc, rustdoc, rustfmt
 
-**Install**: `launchpad install rust`
+**Install**: `launchpad install rust-lang.org`
 
 ---
 
@@ -122,7 +132,7 @@ The Swift Programming Language
 
 **Programs**: docc, dsymutil, sourcekit-lsp, swift-api-checker.py, swift-build-sdk-interfaces, swift-build-tool, swift-demangle, swift-driver, swift-format, swift-frontend, swift-help, swift-package, swift-plugin-server, swift-stdlib-tool, swift, swift-api-digester, swift-api-extract, swift-autolink-extract, swift-build, swift-experimental-sdk, swift-package-collection, swift-package-registry, swift-run, swift-symbolgraph-extract, swift-test, swiftc
 
-**Install**: `launchpad install swift`
+**Install**: `launchpad install swift.org`
 
 ---
 
@@ -132,7 +142,7 @@ Go compiler for small places. Microcontrollers, WebAssembly (WASM/WASI), and com
 
 **Programs**: tinygo
 
-**Install**: `launchpad install tinygo`
+**Install**: `launchpad install tinygo.org`
 
 ---
 
@@ -142,7 +152,7 @@ General-purpose programming language and toolchain for maintaining robust, optim
 
 **Programs**: zig
 
-**Install**: `launchpad install zig`
+**Install**: `launchpad install ziglang.org`
 
 ---
 

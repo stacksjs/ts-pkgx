@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/thinkst/opencanary`
 - **Name**: `opencanaryd`
-- **Homepage**: Not specified
+- **Homepage**: http://opencanary.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/thinkst/opencanary/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install opencanaryd
+launchpad install github.com/thinkst/opencanary
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) opencanaryd -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/thinkst/opencanary@0.9.6 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/thinkst/opencanary/package.yml)
-- [Homepage](#)
+- [Homepage](http://opencanary.org)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

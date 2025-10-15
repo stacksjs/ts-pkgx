@@ -6,14 +6,14 @@
 
 - **Domain**: `soldeer.xyz`
 - **Name**: `soldeer`
-- **Homepage**: Not specified
+- **Homepage**: https://soldeer.xyz
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/soldeer.xyz/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install soldeer
+launchpad install soldeer.xyz
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) soldeer -- $SHELL -i
+sh <(curl https://pkgx.sh) +soldeer.xyz@0.8.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/soldeer.xyz/package.yml)
-- [Homepage](#)
+- [Homepage](https://soldeer.xyz)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

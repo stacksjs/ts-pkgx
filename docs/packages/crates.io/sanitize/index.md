@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install sanitize
+launchpad install crates.io/sanitize
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sanitize -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/sanitize@0.1.0 -- $SHELL -i
 ```
 
 ## Usage Examples

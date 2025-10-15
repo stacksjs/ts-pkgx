@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/helmfile/helmfile`
 - **Name**: `helmfile`
-- **Homepage**: Not specified
+- **Homepage**: https://helmfile.readthedocs.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/helmfile/helmfile/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install helmfile
+launchpad install github.com/helmfile/helmfile
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) helmfile -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/helmfile/helmfile@1.1.7 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/helmfile/helmfile/package.yml)
-- [Homepage](#)
+- [Homepage](https://helmfile.readthedocs.io)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

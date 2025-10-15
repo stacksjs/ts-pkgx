@@ -6,14 +6,14 @@
 
 - **Domain**: `wilfred.me.uk/difftastic`
 - **Name**: `difft`
-- **Homepage**: Not specified
+- **Homepage**: https://difftastic.wilfred.me.uk/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wilfred.me.uk/difftastic/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install difft
+launchpad install wilfred.me.uk/difftastic
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) difft -- $SHELL -i
+sh <(curl https://pkgx.sh) +wilfred.me.uk/difftastic@0.65.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/wilfred.me.uk/difftastic/package.yml)
-- [Homepage](#)
+- [Homepage](https://difftastic.wilfred.me.uk/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

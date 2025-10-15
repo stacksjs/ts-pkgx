@@ -1,12 +1,12 @@
-# littlecms.com
+# littlecms
 
 > A free, open source, CMM engine. It provides fast transforms between ICC profiles.
 
 ## Package Information
 
 - **Domain**: `littlecms.com`
-- **Name**: `littlecms.com`
-- **Homepage**: Not specified
+- **Name**: `littlecms`
+- **Homepage**: https://www.littlecms.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/littlecms.com/package.yml)
 
 ## Installation
@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['littlecms.com']
+const pkg = pantry.littlecms
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/littlecms.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.littlecms.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

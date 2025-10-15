@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install hyfetch
+launchpad install github.com/hykilpikonna/hyfetch
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) hyfetch -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/hykilpikonna/hyfetch@2.0.2 -- $SHELL -i
 ```
 
 ## Dependencies

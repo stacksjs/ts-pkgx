@@ -6,14 +6,14 @@
 
 - **Domain**: `sentry.io`
 - **Name**: `sentry-cli`
-- **Homepage**: Not specified
+- **Homepage**: https://docs.sentry.io/cli/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sentry.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sentry-cli
+launchpad install sentry.io
 ```
 
 ## Programs
@@ -48,7 +48,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sentry-cli -- $SHELL -i
+sh <(curl https://pkgx.sh) +sentry.io@2.56.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sentry.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.sentry.io/cli/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -1,12 +1,12 @@
-# pkl-lang.org
+# pkl-lang
 
 > A configuration as code language with rich validation and tooling.
 
 ## Package Information
 
 - **Domain**: `pkl-lang.org`
-- **Name**: `pkl-lang.org`
-- **Homepage**: Not specified
+- **Name**: `pkl-lang`
+- **Homepage**: https://pkl-lang.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pkl-lang.org/package.yml)
 
 ## Installation
@@ -43,11 +43,13 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +pkl-lang.org@0.29.1 -- $SHELL -i
 ```
 
-## Related Packages
+## Dependencies
 
-These packages work well with pkl-lang.org:
+This package depends on:
 
-- [`openjdk.org`](../openjdk.org/index.md) - Development kit for the Java programming language
+- `openjdk.org@^21`
+- `linux:zlib.net@1`
+- `linux:llvm.org`
 
 ## Usage Examples
 
@@ -55,7 +57,7 @@ These packages work well with pkl-lang.org:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pkl-lang.org']
+const pkg = pantry['pkl-lang']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -65,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pkl-lang.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://pkl-lang.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

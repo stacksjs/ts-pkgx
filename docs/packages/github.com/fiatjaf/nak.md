@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install nak
+launchpad install github.com/fiatjaf/nak
 ```
 
 ## Programs
@@ -42,8 +42,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) nak -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/fiatjaf/nak@0.16.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.24.1`
 
 ## Usage Examples
 

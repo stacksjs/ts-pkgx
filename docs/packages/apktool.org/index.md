@@ -6,14 +6,14 @@
 
 - **Domain**: `apktool.org`
 - **Name**: `apktool`
-- **Homepage**: Not specified
+- **Homepage**: https://apktool.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apktool.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install apktool
+launchpad install apktool.org
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) apktool -- $SHELL -i
+sh <(curl https://pkgx.sh) +apktool.org@2.12.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/apktool.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://apktool.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

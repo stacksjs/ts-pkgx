@@ -6,14 +6,14 @@
 
 - **Domain**: `vale.sh`
 - **Name**: `vale`
-- **Homepage**: Not specified
+- **Homepage**: https://vale.sh/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vale.sh/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install vale
+launchpad install vale.sh
 ```
 
 ## Programs
@@ -45,8 +45,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) vale -- $SHELL -i
+sh <(curl https://pkgx.sh) +vale.sh@3.12.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.21`
 
 ## Usage Examples
 
@@ -64,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/vale.sh/package.yml)
-- [Homepage](#)
+- [Homepage](https://vale.sh/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

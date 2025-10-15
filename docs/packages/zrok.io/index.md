@@ -6,14 +6,14 @@
 
 - **Domain**: `zrok.io`
 - **Name**: `zrok`
-- **Homepage**: Not specified
+- **Homepage**: https://zrok.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/zrok.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install zrok
+launchpad install zrok.io
 ```
 
 ## Programs
@@ -51,6 +51,14 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +zrok.io@1.1.8 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.23.0`
+- `nodejs.org@^21`
+- `npmjs.com@^10`
+
 ## Usage Examples
 
 ```typescript
@@ -67,7 +75,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/zrok.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://zrok.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

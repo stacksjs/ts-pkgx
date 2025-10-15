@@ -6,14 +6,14 @@
 
 - **Domain**: `clog-tool.github.io`
 - **Name**: `clog`
-- **Homepage**: Not specified
+- **Homepage**: https://gothenburgbitfactory.org/clog/docs/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/clog-tool.github.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install clog
+launchpad install clog-tool.github.io
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) clog -- $SHELL -i
+sh <(curl https://pkgx.sh) +clog-tool.github.io@0.9.3 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/clog-tool.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://gothenburgbitfactory.org/clog/docs/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `code.videolan.org/videolan/dav1d`
 - **Name**: `dav1d`
-- **Homepage**: Not specified
+- **Homepage**: https://code.videolan.org/videolan/dav1d
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/code.videolan.org/videolan/dav1d/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install dav1d
+launchpad install code.videolan.org/videolan/dav1d
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dav1d -- $SHELL -i
+sh <(curl https://pkgx.sh) +code.videolan.org/videolan/dav1d@1.2.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `mesonbuild.com@>=0.49`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/code.videolan.org/videolan/dav1d/package.yml)
-- [Homepage](#)
+- [Homepage](https://code.videolan.org/videolan/dav1d)
 - [Back to Package Catalog](../../../../package-catalog.md)
 
 ---

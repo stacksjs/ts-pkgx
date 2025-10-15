@@ -1,12 +1,12 @@
-# aspell.net
+# aspell
 
 > Spell checker with better logic than ispell
 
 ## Package Information
 
 - **Domain**: `aspell.net`
-- **Name**: `aspell.net`
-- **Homepage**: Not specified
+- **Name**: `aspell`
+- **Homepage**: http://aspell.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aspell.net/package.yml)
 
 ## Installation
@@ -48,13 +48,22 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +aspell.net@0.60.8.1 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
+- `gnu.org/patch`
+- `gnu.org/sed`
+- `sourceware.org/bzip2`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['aspell.net']
+const pkg = pantry.aspell
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -64,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/aspell.net/package.yml)
-- [Homepage](#)
+- [Homepage](http://aspell.net/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

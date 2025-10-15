@@ -6,14 +6,14 @@
 
 - **Domain**: `doctave.com`
 - **Name**: `doctave`
-- **Homepage**: Not specified
+- **Homepage**: https://cli.doctave.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/doctave.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install doctave
+launchpad install doctave.com
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) doctave -- $SHELL -i
+sh <(curl https://pkgx.sh) +doctave.com@0.4.2 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/doctave.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://cli.doctave.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

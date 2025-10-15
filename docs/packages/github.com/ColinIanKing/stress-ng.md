@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/ColinIanKing/stress-ng`
 - **Name**: `stress-ng`
-- **Homepage**: Not specified
+- **Homepage**: https://wiki.ubuntu.com/Kernel/Reference/stress-ng
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ColinIanKing/stress-ng/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install stress-ng
+launchpad install github.com/ColinIanKing/stress-ng
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) stress-ng -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/ColinIanKing/stress-ng@0.19.5 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/ColinIanKing/stress-ng/package.yml)
-- [Homepage](#)
+- [Homepage](https://wiki.ubuntu.com/Kernel/Reference/stress-ng)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

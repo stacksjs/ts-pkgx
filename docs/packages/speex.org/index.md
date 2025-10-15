@@ -6,14 +6,14 @@
 
 - **Domain**: `speex.org`
 - **Name**: `speexdec`
-- **Homepage**: Not specified
+- **Homepage**: https://speex.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/speex.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install speexdec
+launchpad install speex.org
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) speexdec -- $SHELL -i
+sh <(curl https://pkgx.sh) +speex.org@1.2.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/speex.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://speex.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

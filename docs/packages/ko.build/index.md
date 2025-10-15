@@ -6,14 +6,14 @@
 
 - **Domain**: `ko.build`
 - **Name**: `ko`
-- **Homepage**: Not specified
+- **Homepage**: https://ko.build
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ko.build/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ko
+launchpad install ko.build
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ko -- $SHELL -i
+sh <(curl https://pkgx.sh) +ko.build@0.18.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.22`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ko.build/package.yml)
-- [Homepage](#)
+- [Homepage](https://ko.build)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

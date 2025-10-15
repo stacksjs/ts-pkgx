@@ -6,14 +6,14 @@
 
 - **Domain**: `vcluster.com`
 - **Name**: `vcluster`
-- **Homepage**: Not specified
+- **Homepage**: https://www.vcluster.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vcluster.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install vcluster
+launchpad install vcluster.com
 ```
 
 ## Programs
@@ -46,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) vcluster -- $SHELL -i
+sh <(curl https://pkgx.sh) +vcluster.com@0.29.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -72,7 +72,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/vcluster.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.vcluster.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

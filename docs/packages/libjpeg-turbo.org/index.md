@@ -1,12 +1,12 @@
-# libjpeg-turbo.org
+# libjpeg-turbo
 
 > Main libjpeg-turbo repository
 
 ## Package Information
 
 - **Domain**: `libjpeg-turbo.org`
-- **Name**: `libjpeg-turbo.org`
-- **Homepage**: Not specified
+- **Name**: `libjpeg-turbo`
+- **Homepage**: https://libjpeg-turbo.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libjpeg-turbo.org/package.yml)
 
 ## Installation
@@ -46,13 +46,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +libjpeg-turbo.org@3.1.2 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@^3`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libjpeg-turbo.org']
+const pkg = pantry['libjpeg-turbo']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -62,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libjpeg-turbo.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://libjpeg-turbo.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

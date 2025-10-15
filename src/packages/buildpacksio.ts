@@ -8,7 +8,7 @@
  *
  * @install `launchpad install buildpacks.io`
  * @homepage https://buildpacks.io
- * @dependencies `go.dev@~1.24`, `if@>=0.38`
+ * @dependencies `go.dev@~1.24`
  *
  * @example
  * ```typescript
@@ -61,7 +61,6 @@ export const buildpacksioPackage = {
    */
   dependencies: [
     'go.dev@~1.24',
-    'if@>=0.38',
   ] as const,
   /**
    * Available versions from newest to oldest.

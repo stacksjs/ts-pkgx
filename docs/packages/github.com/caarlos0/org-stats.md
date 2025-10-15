@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install org-stats
+launchpad install github.com/caarlos0/org-stats
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) org-stats -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/caarlos0/org-stats@1.12.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
 
 ## Usage Examples
 

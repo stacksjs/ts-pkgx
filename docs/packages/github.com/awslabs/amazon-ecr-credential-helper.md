@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install docker-credential-ecr-login
+launchpad install github.com/awslabs/amazon-ecr-credential-helper
 ```
 
 ## Programs
@@ -38,8 +38,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) docker-credential-ecr-login -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/awslabs/amazon-ecr-credential-helper@0.10.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/bash`
+- `gnu.org/make`
+- `go.dev@^1.21`
 
 ## Usage Examples
 

@@ -6,14 +6,14 @@
 
 - **Domain**: `curlie.io`
 - **Name**: `curlie`
-- **Homepage**: Not specified
+- **Homepage**: https://rs.github.io/curlie
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/curlie.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install curlie
+launchpad install curlie.io
 ```
 
 ## Programs
@@ -37,8 +37,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) curlie -- $SHELL -i
+sh <(curl https://pkgx.sh) +curlie.io@1.8.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.24`
+- `goreleaser.com`
 
 ## Usage Examples
 
@@ -56,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/curlie.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://rs.github.io/curlie)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

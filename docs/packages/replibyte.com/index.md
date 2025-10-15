@@ -6,14 +6,14 @@
 
 - **Domain**: `replibyte.com`
 - **Name**: `replibyte`
-- **Homepage**: Not specified
+- **Homepage**: https://www.replibyte.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/replibyte.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install replibyte
+launchpad install replibyte.com
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) replibyte -- $SHELL -i
+sh <(curl https://pkgx.sh) +replibyte.com@0.10.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/replibyte.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.replibyte.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

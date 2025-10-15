@@ -1,11 +1,11 @@
-# github.com/containers/gvisor-tap-vsock
+# gvisor-tap-vsock
 
 > A new network stack based on gVisor
 
 ## Package Information
 
 - **Domain**: `github.com/containers/gvisor-tap-vsock`
-- **Name**: `github.com/containers/gvisor-tap-vsock`
+- **Name**: `gvisor-tap-vsock`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/containers/gvisor-tap-vsock/package.yml)
 
@@ -44,13 +44,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/containers/gvisor-tap-vsock@0.8.7 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/containers/gvisor-tap-vsock']
+const pkg = pantry['gvisor-tap-vsock']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

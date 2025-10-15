@@ -6,14 +6,14 @@
 
 - **Domain**: `sqlite.org`
 - **Name**: `sqlite3`
-- **Homepage**: Not specified
+- **Homepage**: https://sqlite.org/index.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sqlite.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sqlite3
+launchpad install sqlite.org
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sqlite3 -- $SHELL -i
+sh <(curl https://pkgx.sh) +sqlite.org@3.50.4 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sqlite.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://sqlite.org/index.html)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

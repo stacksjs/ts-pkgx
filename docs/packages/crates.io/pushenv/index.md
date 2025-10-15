@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/pushenv`
 - **Name**: `pushenv`
-- **Homepage**: Not specified
+- **Homepage**: https://crates.io/crates/pushenv
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/pushenv/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pushenv
+launchpad install crates.io/pushenv
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pushenv -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/pushenv@1.1.2 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/pushenv/package.yml)
-- [Homepage](#)
+- [Homepage](https://crates.io/crates/pushenv)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

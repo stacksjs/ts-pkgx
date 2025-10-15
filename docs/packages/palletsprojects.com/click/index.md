@@ -6,14 +6,14 @@
 
 - **Domain**: `palletsprojects.com/click`
 - **Name**: `python-click`
-- **Homepage**: Not specified
+- **Homepage**: https://click.palletsprojects.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/palletsprojects.com/click/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install python-click
+launchpad install palletsprojects.com/click
 ```
 
 ## Programs
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/palletsprojects.com/click/package.yml)
-- [Homepage](#)
+- [Homepage](https://click.palletsprojects.com)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install huniq
+launchpad install crates.io/huniq
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) huniq -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/huniq@2022.12.10 -- $SHELL -i
 ```
 
 ## Usage Examples

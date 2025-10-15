@@ -6,14 +6,14 @@
 
 - **Domain**: `budimanjojo.github.io/talhelper`
 - **Name**: `talhelper`
-- **Homepage**: Not specified
+- **Homepage**: https://budimanjojo.github.io/talhelper/latest/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/budimanjojo.github.io/talhelper/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install talhelper
+launchpad install budimanjojo.github.io/talhelper
 ```
 
 ## Programs
@@ -48,8 +48,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) talhelper -- $SHELL -i
+sh <(curl https://pkgx.sh) +budimanjojo.github.io/talhelper@3.0.37 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 
@@ -67,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/budimanjojo.github.io/talhelper/package.yml)
-- [Homepage](#)
+- [Homepage](https://budimanjojo.github.io/talhelper/latest/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

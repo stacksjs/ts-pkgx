@@ -6,14 +6,14 @@
 
 - **Domain**: `goreleaser.com`
 - **Name**: `goreleaser`
-- **Homepage**: Not specified
+- **Homepage**: https://goreleaser.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/goreleaser.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install goreleaser
+launchpad install goreleaser.com
 ```
 
 ## Programs
@@ -46,8 +46,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) goreleaser -- $SHELL -i
+sh <(curl https://pkgx.sh) +goreleaser.com@2.12.5 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 
@@ -65,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/goreleaser.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://goreleaser.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `mkcert.dev`
 - **Name**: `mkcert`
-- **Homepage**: Not specified
+- **Homepage**: https://mkcert.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mkcert.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mkcert
+launchpad install mkcert.dev
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mkcert -- $SHELL -i
+sh <(curl https://pkgx.sh) +mkcert.dev@1.4.4 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mkcert.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://mkcert.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

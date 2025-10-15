@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install xcparse
+launchpad install github.com/ChargePoint/xcparse
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) xcparse -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/ChargePoint/xcparse@2.3.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
 
 ## Usage Examples
 

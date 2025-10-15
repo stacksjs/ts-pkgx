@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install nvm-exec
+launchpad install github.com/nvm-sh/nvm
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) nvm-exec -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/nvm-sh/nvm@0.40.3 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -6,14 +6,14 @@
 
 - **Domain**: `dhall-lang.org`
 - **Name**: `dhall`
-- **Homepage**: Not specified
+- **Homepage**: https://dhall-lang.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dhall-lang.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install dhall
+launchpad install dhall-lang.org
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dhall -- $SHELL -i
+sh <(curl https://pkgx.sh) +dhall-lang.org@1.42.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/dhall-lang.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://dhall-lang.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `deno.land`
 - **Name**: `deno`
-- **Homepage**: Not specified
+- **Homepage**: https://deno.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/deno.land/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install deno
+launchpad install deno.land
 ```
 
 ## Programs
@@ -66,14 +66,20 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) deno -- $SHELL -i
+sh <(curl https://pkgx.sh) +deno.land@2.5.4 -- $SHELL -i
 ```
 
-## Related Packages
+## Dependencies
 
-These packages work well with deno:
+This package depends on:
 
-- [`info-zip.org/unzip`](../info-zip.org/unzip/index.md) - Extraction utility for .zip compressed archives
+- `llvm.org`
+- `curl.se`
+- `cmake.org@^3`
+- `protobuf.dev`
+- `github.com/mikefarah/yq@^4`
+- `crates.io/semverator@^0`
+- `sourceware.org/libffi@>=3.2.1`
 
 ## Usage Examples
 
@@ -91,7 +97,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/deno.land/package.yml)
-- [Homepage](#)
+- [Homepage](https://deno.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

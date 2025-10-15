@@ -1,12 +1,12 @@
-# astral.sh/uv
+# uv
 
 > An extremely fast Python package and project manager, written in Rust.
 
 ## Package Information
 
 - **Domain**: `astral.sh/uv`
-- **Name**: `astral.sh/uv`
-- **Homepage**: Not specified
+- **Name**: `uv`
+- **Homepage**: https://docs.astral.sh/uv
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/astral.sh/uv/package.yml)
 
 ## Installation
@@ -90,19 +90,13 @@ This package depends on:
 
 - `libgit2.org~1.7 # links to libgit2.so.1.7`
 
-## Related Packages
-
-These packages work well with astral.sh/uv:
-
-- [`python.org`](../../python.org/index.md) - The Python programming language
-
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['astral.sh/uv']
+const pkg = pantry.uv
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -112,7 +106,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/astral.sh/uv/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.astral.sh/uv)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

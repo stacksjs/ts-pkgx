@@ -1,19 +1,19 @@
-# php.net
+# php
 
 > General-purpose scripting language
 
 ## Package Information
 
 - **Domain**: `php.net`
-- **Name**: `php.net`
-- **Homepage**: Not specified
+- **Name**: `php`
+- **Homepage**: https://www.php.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/php.net/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install php
+launchpad install php.net
 ```
 
 ## Programs
@@ -28,12 +28,6 @@ This package provides the following executable programs:
 - `php-config`
 - `phpdbg`
 - `phpize`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `php`
 
 ## Available Versions
 
@@ -120,7 +114,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/php.net/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.php.net/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

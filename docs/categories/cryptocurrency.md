@@ -12,11 +12,11 @@ Decentralized, peer to peer payment network
 
 **Programs**: bitcoin-cli, bitcoin-tx, bitcoin-util, bitcoin-wallet, bitcoind
 
-**Install**: `launchpad install bitcoin`
+**Install**: `launchpad install bitcoin.org`
 
 ---
 
-### [elementsproject.org](../packages/elementsproject.org/index.md)
+### [elementsproject.org](../packages/elementsproject.org/index.md) (elementsproject)
 
 Open Source implementation of advanced blockchain features extending the Bitcoin protocol
 
@@ -36,7 +36,7 @@ Foundry is a blazing fast, portable and modular toolkit for Ethereum application
 
 ---
 
-### [ghostscript.com](../packages/ghostscript.com/index.md)
+### [ghostscript.com](../packages/ghostscript.com/index.md) (ghostscript)
 
 This is purely for downloads, please check the website for full information
 
@@ -52,7 +52,7 @@ Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketpl
 
 **Programs**: solana, solana-keygen, solana-bench-streamer, solana-faucet, solana-keygen, solana-log-analyzer, solana-net-shaper, solana-stake-accounts, solana-tokens, solana-watchtower
 
-**Install**: `launchpad install solana`
+**Install**: `launchpad install solana.com`
 
 ---
 

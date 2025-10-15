@@ -6,14 +6,14 @@
 
 - **Domain**: `rclone.org`
 - **Name**: `rclone`
-- **Homepage**: Not specified
+- **Homepage**: https://rclone.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rclone.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rclone
+launchpad install rclone.org
 ```
 
 ## Programs
@@ -41,8 +41,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rclone -- $SHELL -i
+sh <(curl https://pkgx.sh) +rclone.org@1.71.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
+- `darwin:curl.se`
+- `darwin:gnu.org/patch`
 
 ## Usage Examples
 
@@ -60,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rclone.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://rclone.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

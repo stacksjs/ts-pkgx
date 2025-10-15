@@ -6,14 +6,14 @@
 
 - **Domain**: `cgal.org`
 - **Name**: `cgal`
-- **Homepage**: Not specified
+- **Homepage**: https://github.com/CGAL/cgal#readme
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cgal.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cgal
+launchpad install cgal.org
 ```
 
 ## Programs
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cgal.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://github.com/CGAL/cgal#readme)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

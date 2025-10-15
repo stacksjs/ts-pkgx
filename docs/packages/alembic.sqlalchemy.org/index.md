@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install alembic
+launchpad install alembic.sqlalchemy.org
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) alembic -- $SHELL -i
+sh <(curl https://pkgx.sh) +alembic.sqlalchemy.org@1.17.0 -- $SHELL -i
 ```
 
 ## Dependencies

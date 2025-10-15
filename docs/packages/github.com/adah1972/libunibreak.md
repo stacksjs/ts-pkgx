@@ -1,11 +1,11 @@
-# github.com/adah1972/libunibreak
+# libunibreak
 
 > The libunibreak library
 
 ## Package Information
 
 - **Domain**: `github.com/adah1972/libunibreak`
-- **Name**: `github.com/adah1972/libunibreak`
+- **Name**: `libunibreak`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/adah1972/libunibreak/package.yml)
 
@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/adah1972/libunibreak@6.1.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/adah1972/libunibreak']
+const pkg = pantry.libunibreak
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,19 +1,19 @@
-# info-zip.org/unzip
+# unzip
 
 > Extraction utility for .zip compressed archives
 
 ## Package Information
 
 - **Domain**: `info-zip.org/unzip`
-- **Name**: `info-zip.org/unzip`
-- **Homepage**: Not specified
+- **Name**: `unzip`
+- **Homepage**: https://infozip.sourceforge.net/UnZip.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/info-zip.org/unzip/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install unzip
+launchpad install info-zip.org/unzip
 ```
 
 ## Programs
@@ -25,12 +25,6 @@ This package provides the following executable programs:
 - `unzipsfx`
 - `zipgrep`
 - `zipinfo`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `unzip`
 
 ## Available Versions
 
@@ -66,7 +60,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/info-zip.org/unzip/package.yml)
-- [Homepage](#)
+- [Homepage](https://infozip.sourceforge.net/UnZip.html)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

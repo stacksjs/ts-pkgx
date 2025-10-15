@@ -1,12 +1,12 @@
-# github.com/json-c/json-c
+# json-c
 
 > https://github.com/json-c/json-c is the official code repository for json-c. See the wiki for release tarballs for download. API docs at http://json-c.github.io/json-c/
 
 ## Package Information
 
 - **Domain**: `github.com/json-c/json-c`
-- **Name**: `github.com/json-c/json-c`
-- **Homepage**: Not specified
+- **Name**: `json-c`
+- **Homepage**: https://github.com/json-c/json-c/wiki
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/json-c/json-c/package.yml)
 
 ## Installation
@@ -40,13 +40,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/json-c/json-c@0.18.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@3`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/json-c/json-c']
+const pkg = pantry['json-c']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/json-c/json-c/package.yml)
-- [Homepage](#)
+- [Homepage](https://github.com/json-c/json-c/wiki)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

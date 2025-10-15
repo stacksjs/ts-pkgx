@@ -6,14 +6,14 @@
 
 - **Domain**: `cloudflare.com/cloudflared`
 - **Name**: `cloudflared`
-- **Homepage**: Not specified
+- **Homepage**: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cloudflare.com/cloudflared/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cloudflared
+launchpad install cloudflare.com/cloudflared
 ```
 
 ## Programs
@@ -43,8 +43,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cloudflared -- $SHELL -i
+sh <(curl https://pkgx.sh) +cloudflare.com/cloudflared@2025.10.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.24`
 
 ## Usage Examples
 
@@ -62,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cloudflare.com/cloudflared/package.yml)
-- [Homepage](#)
+- [Homepage](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

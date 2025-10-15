@@ -6,14 +6,14 @@
 
 - **Domain**: `steampipe.io`
 - **Name**: `steampipe`
-- **Homepage**: Not specified
+- **Homepage**: https://steampipe.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/steampipe.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install steampipe
+launchpad install steampipe.io
 ```
 
 ## Programs
@@ -44,8 +44,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) steampipe -- $SHELL -i
+sh <(curl https://pkgx.sh) +steampipe.io@2.2.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.24`
+- `goreleaser.com`
 
 ## Usage Examples
 
@@ -63,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/steampipe.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://steampipe.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

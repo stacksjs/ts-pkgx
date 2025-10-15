@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install commit
+launchpad install github.com/alt-art/commit
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) commit -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/alt-art/commit@0.7.0 -- $SHELL -i
 ```
 
 ## Usage Examples

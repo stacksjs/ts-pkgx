@@ -6,14 +6,14 @@
 
 - **Domain**: `rigaux.org/hexedit`
 - **Name**: `hexedit`
-- **Homepage**: Not specified
+- **Homepage**: https://rigaux.org/hexedit.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rigaux.org/hexedit/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install hexedit
+launchpad install rigaux.org/hexedit
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) hexedit -- $SHELL -i
+sh <(curl https://pkgx.sh) +rigaux.org/hexedit@1.6.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rigaux.org/hexedit/package.yml)
-- [Homepage](#)
+- [Homepage](https://rigaux.org/hexedit.html)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

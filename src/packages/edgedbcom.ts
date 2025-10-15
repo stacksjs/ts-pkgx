@@ -8,7 +8,7 @@
  *
  * @install `launchpad install edgedb.com`
  * @homepage https://www.edgedb.com/docs/cli/index
- * @dependencies `perl.org@^5`, `if@>=4`
+ * @dependencies `perl.org@^5`
  *
  * @example
  * ```typescript
@@ -61,7 +61,6 @@ export const edgedbcomPackage = {
    */
   dependencies: [
     'perl.org@^5',
-    'if@>=4',
   ] as const,
   /**
    * Available versions from newest to oldest.

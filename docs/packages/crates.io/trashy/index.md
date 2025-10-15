@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install trash
+launchpad install crates.io/trashy
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) trash -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/trashy@2.0.0 -- $SHELL -i
 ```
 
 ## Usage Examples

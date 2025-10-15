@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install brotli
+launchpad install github.com/google/brotli
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) brotli -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/google/brotli@1.1.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
 
 ## Usage Examples
 

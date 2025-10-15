@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/cookiecutter/cookiecutter`
 - **Name**: `cookiecutter`
-- **Homepage**: Not specified
+- **Homepage**: https://pypi.org/project/cookiecutter/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/cookiecutter/cookiecutter/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cookiecutter
+launchpad install github.com/cookiecutter/cookiecutter
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cookiecutter -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/cookiecutter/cookiecutter@2.6.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/cookiecutter/cookiecutter/package.yml)
-- [Homepage](#)
+- [Homepage](https://pypi.org/project/cookiecutter/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

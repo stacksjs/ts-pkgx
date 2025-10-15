@@ -6,14 +6,14 @@
 
 - **Domain**: `graphicsmagick.org`
 - **Name**: `gm`
-- **Homepage**: Not specified
+- **Homepage**: http://www.graphicsmagick.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/graphicsmagick.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gm
+launchpad install graphicsmagick.org
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gm -- $SHELL -i
+sh <(curl https://pkgx.sh) +graphicsmagick.org@1.3.45 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/graphicsmagick.org/package.yml)
-- [Homepage](#)
+- [Homepage](http://www.graphicsmagick.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

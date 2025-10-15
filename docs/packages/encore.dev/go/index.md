@@ -6,14 +6,14 @@
 
 - **Domain**: `encore.dev/go`
 - **Name**: `encore-go`
-- **Homepage**: Not specified
+- **Homepage**: https://encore.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/encore.dev/go/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install encore-go
+launchpad install encore.dev/go
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) encore-go -- $SHELL -i
+sh <(curl https://pkgx.sh) +encore.dev/go@1.23.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/encore.dev/go/package.yml)
-- [Homepage](#)
+- [Homepage](https://encore.dev)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

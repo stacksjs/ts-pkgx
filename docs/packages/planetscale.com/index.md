@@ -6,14 +6,14 @@
 
 - **Domain**: `planetscale.com`
 - **Name**: `pscale`
-- **Homepage**: Not specified
+- **Homepage**: https://www.planetscale.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/planetscale.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pscale
+launchpad install planetscale.com
 ```
 
 ## Programs
@@ -53,8 +53,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pscale -- $SHELL -i
+sh <(curl https://pkgx.sh) +planetscale.com@0.258.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.22.4`
 
 ## Usage Examples
 
@@ -72,7 +78,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/planetscale.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.planetscale.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `cli.github.com`
 - **Name**: `gh`
-- **Homepage**: Not specified
+- **Homepage**: https://cli.github.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cli.github.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gh
+launchpad install cli.github.com
 ```
 
 ## Programs
@@ -54,8 +54,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gh -- $SHELL -i
+sh <(curl https://pkgx.sh) +cli.github.com@2.81.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
 
 ## Usage Examples
 
@@ -73,7 +79,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cli.github.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://cli.github.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

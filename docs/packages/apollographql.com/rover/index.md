@@ -6,14 +6,14 @@
 
 - **Domain**: `apollographql.com/rover`
 - **Name**: `rover`
-- **Homepage**: Not specified
+- **Homepage**: https://www.apollographql.com/docs/rover/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apollographql.com/rover/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rover
+launchpad install apollographql.com/rover
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rover -- $SHELL -i
+sh <(curl https://pkgx.sh) +apollographql.com/rover@0.36.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/apollographql.com/rover/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.apollographql.com/docs/rover/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

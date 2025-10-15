@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install argon2
+launchpad install github.com/P-H-C/phc-winner-argon2
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) argon2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/P-H-C/phc-winner-argon2@20190702.0.0 -- $SHELL -i
 ```
 
 ## Usage Examples

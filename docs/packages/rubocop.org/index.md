@@ -6,14 +6,14 @@
 
 - **Domain**: `rubocop.org`
 - **Name**: `rubocop`
-- **Homepage**: Not specified
+- **Homepage**: https://docs.rubocop.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rubocop.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rubocop
+launchpad install rubocop.org
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rubocop -- $SHELL -i
+sh <(curl https://pkgx.sh) +rubocop.org@1.81.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rubocop.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.rubocop.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

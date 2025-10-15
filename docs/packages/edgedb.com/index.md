@@ -6,14 +6,14 @@
 
 - **Domain**: `edgedb.com`
 - **Name**: `edgedb`
-- **Homepage**: Not specified
+- **Homepage**: https://www.edgedb.com/docs/cli/index
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/edgedb.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install edgedb
+launchpad install edgedb.com
 ```
 
 ## Programs
@@ -45,8 +45,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) edgedb -- $SHELL -i
+sh <(curl https://pkgx.sh) +edgedb.com@7.9.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `perl.org@^5`
 
 ## Usage Examples
 
@@ -64,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/edgedb.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.edgedb.com/docs/cli/index)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

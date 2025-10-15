@@ -1,11 +1,11 @@
-# github.com/open-source-parsers/jsoncpp
+# jsoncpp
 
 > A C++ library for interacting with JSON.
 
 ## Package Information
 
 - **Domain**: `github.com/open-source-parsers/jsoncpp`
-- **Name**: `github.com/open-source-parsers/jsoncpp`
+- **Name**: `jsoncpp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/open-source-parsers/jsoncpp/package.yml)
 
@@ -40,13 +40,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/open-source-parsers/jsoncpp@1.9.6 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `mesonbuild.com`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/open-source-parsers/jsoncpp']
+const pkg = pantry.jsoncpp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -6,25 +6,19 @@
 
 - **Domain**: `microsoft.com/code-cli`
 - **Name**: `vscode cli`
-- **Homepage**: Not specified
+- **Homepage**: https://code.visualstudio.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/code-cli/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install code
+launchpad install microsoft.com/code-cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `code`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `code`
 
@@ -48,7 +42,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) code -- $SHELL -i
+sh <(curl https://pkgx.sh) +microsoft.com/code-cli@1.105.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +58,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.code
+const pkg = pantry['vscode cli']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -74,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/code-cli/package.yml)
-- [Homepage](#)
+- [Homepage](https://code.visualstudio.com)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

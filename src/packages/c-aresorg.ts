@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install c-ares.org`
- * @dependencies `cmake.org@^3`, `curl.se`, `if@>=1.29.0<1.34.3`
+ * @dependencies `cmake.org@^3`, `curl.se`
  *
  * @example
  * ```typescript
@@ -52,7 +52,6 @@ export const caresorgPackage = {
   dependencies: [
     'cmake.org@^3',
     'curl.se',
-    'if@>=1.29.0<1.34.3',
   ] as const,
   /**
    * Available versions from newest to oldest.

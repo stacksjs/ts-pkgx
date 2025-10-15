@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install dive
+launchpad install github.com/wagoodman/dive
 ```
 
 ## Programs
@@ -37,8 +37,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dive -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/wagoodman/dive@0.13.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
+- `goreleaser.com`
 
 ## Usage Examples
 

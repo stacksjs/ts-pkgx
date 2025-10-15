@@ -1,12 +1,12 @@
-# jupyter.org
+# jupyter
 
 > JupyterLab computational environment.
 
 ## Package Information
 
 - **Domain**: `jupyter.org`
-- **Name**: `jupyter.org`
-- **Homepage**: Not specified
+- **Name**: `jupyter`
+- **Homepage**: https://jupyterlab.readthedocs.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jupyter.org/package.yml)
 
 ## Installation
@@ -87,7 +87,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['jupyter.org']
+const pkg = pantry.jupyter
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -97,7 +97,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jupyter.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://jupyterlab.readthedocs.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

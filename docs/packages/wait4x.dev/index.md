@@ -6,14 +6,14 @@
 
 - **Domain**: `wait4x.dev`
 - **Name**: `wait4x`
-- **Homepage**: Not specified
+- **Homepage**: https://wait4x.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wait4x.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install wait4x
+launchpad install wait4x.dev
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) wait4x -- $SHELL -i
+sh <(curl https://pkgx.sh) +wait4x.dev@3.5.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.22`
 
 ## Usage Examples
 
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/wait4x.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://wait4x.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

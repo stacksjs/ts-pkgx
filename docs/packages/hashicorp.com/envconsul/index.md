@@ -6,14 +6,14 @@
 
 - **Domain**: `hashicorp.com/envconsul`
 - **Name**: `envconsul`
-- **Homepage**: Not specified
+- **Homepage**: https://www.hashicorp.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hashicorp.com/envconsul/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install envconsul
+launchpad install hashicorp.com/envconsul
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) envconsul -- $SHELL -i
+sh <(curl https://pkgx.sh) +hashicorp.com/envconsul@0.13.4 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.20`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/hashicorp.com/envconsul/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.hashicorp.com/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

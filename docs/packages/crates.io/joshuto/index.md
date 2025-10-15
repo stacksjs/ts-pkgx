@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/joshuto`
 - **Name**: `joshuto`
-- **Homepage**: Not specified
+- **Homepage**: https://crates.io/crates/joshuto
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/joshuto/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install joshuto
+launchpad install crates.io/joshuto
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) joshuto -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/joshuto@0.9.9 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -45,13 +45,6 @@ sh <(curl https://pkgx.sh) joshuto -- $SHELL -i
 This package depends on:
 
 - `libgit2.org@1`
-
-## Related Packages
-
-These packages work well with joshuto:
-
-- [`github.com/junegunn/fzf`](../../github.com/junegunn/fzf.md) - :cherry_blossom: A command-line fuzzy finder
-- [`crates.io/zoxide`](../zoxide/index.md) - Shell extension to navigate your filesystem faster
 
 ## Usage Examples
 
@@ -69,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/joshuto/package.yml)
-- [Homepage](#)
+- [Homepage](https://crates.io/crates/joshuto)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

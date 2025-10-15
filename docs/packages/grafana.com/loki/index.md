@@ -6,14 +6,14 @@
 
 - **Domain**: `grafana.com/loki`
 - **Name**: `loki`
-- **Homepage**: Not specified
+- **Homepage**: https://grafana.com/loki
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/grafana.com/loki/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install loki
+launchpad install grafana.com/loki
 ```
 
 ## Programs
@@ -42,8 +42,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) loki -- $SHELL -i
+sh <(curl https://pkgx.sh) +grafana.com/loki@3.5.7 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@=1.21.8`
 
 ## Usage Examples
 
@@ -61,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/grafana.com/loki/package.yml)
-- [Homepage](#)
+- [Homepage](https://grafana.com/loki)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

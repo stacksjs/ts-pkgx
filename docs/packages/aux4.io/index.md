@@ -6,14 +6,14 @@
 
 - **Domain**: `aux4.io`
 - **Name**: `aux4`
-- **Homepage**: Not specified
+- **Homepage**: https://aux4.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aux4.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install aux4
+launchpad install aux4.io
 ```
 
 ## Programs
@@ -39,8 +39,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) aux4 -- $SHELL -i
+sh <(curl https://pkgx.sh) +aux4.io@5.1.6 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.21.5`
 
 ## Usage Examples
 
@@ -58,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/aux4.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://aux4.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

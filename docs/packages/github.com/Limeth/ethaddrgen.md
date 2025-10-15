@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install ethaddrgen
+launchpad install github.com/Limeth/ethaddrgen
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ethaddrgen -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/Limeth/ethaddrgen@1.0.7 -- $SHELL -i
 ```
 
 ## Dependencies

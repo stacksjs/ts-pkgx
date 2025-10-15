@@ -6,7 +6,7 @@
 
 - **Domain**: `mandoc.bsd.lv`
 - **Name**: `mandoc.bsd.lv`
-- **Homepage**: Not specified
+- **Homepage**: https://mandoc.bsd.lv/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mandoc.bsd.lv/package.yml)
 
 ## Installation
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mandoc.bsd.lv/package.yml)
-- [Homepage](#)
+- [Homepage](https://mandoc.bsd.lv/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `turso.tech`
 - **Name**: `turso`
-- **Homepage**: Not specified
+- **Homepage**: https://turso.tech
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/turso.tech/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install turso
+launchpad install turso.tech
 ```
 
 ## Programs
@@ -55,8 +55,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) turso -- $SHELL -i
+sh <(curl https://pkgx.sh) +turso.tech@1.0.14 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.20`
 
 ## Usage Examples
 
@@ -74,7 +80,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/turso.tech/package.yml)
-- [Homepage](#)
+- [Homepage](https://turso.tech)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

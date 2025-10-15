@@ -6,14 +6,14 @@
 
 - **Domain**: `gnuplot.info`
 - **Name**: `gnuplot`
-- **Homepage**: Not specified
+- **Homepage**: http://www.gnuplot.info/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnuplot.info/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gnuplot
+launchpad install gnuplot.info
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gnuplot -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnuplot.info@6.0.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnuplot.info/package.yml)
-- [Homepage](#)
+- [Homepage](http://www.gnuplot.info/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

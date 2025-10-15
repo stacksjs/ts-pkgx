@@ -6,14 +6,14 @@
 
 - **Domain**: `tidbyt.com`
 - **Name**: `pixlet`
-- **Homepage**: Not specified
+- **Homepage**: https://tidbyt.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tidbyt.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pixlet
+launchpad install tidbyt.com
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pixlet -- $SHELL -i
+sh <(curl https://pkgx.sh) +tidbyt.com@0.34.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tidbyt.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://tidbyt.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

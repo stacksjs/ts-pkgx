@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install azcopy
+launchpad install microsoft.com/azure-storage-azcopy
 ```
 
 ## Programs
@@ -39,8 +39,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) azcopy -- $SHELL -i
+sh <(curl https://pkgx.sh) +microsoft.com/azure-storage-azcopy@10.30.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@>=1.19`
 
 ## Usage Examples
 

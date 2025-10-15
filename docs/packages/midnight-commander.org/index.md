@@ -6,7 +6,7 @@
 
 - **Domain**: `midnight-commander.org`
 - **Name**: `Midnight Commander`
-- **Homepage**: Not specified
+- **Homepage**: https://www.midnight-commander.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/midnight-commander.org/package.yml)
 
 ## Installation
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/midnight-commander.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.midnight-commander.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

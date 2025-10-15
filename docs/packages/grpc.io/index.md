@@ -6,14 +6,14 @@
 
 - **Domain**: `grpc.io`
 - **Name**: `grpc`
-- **Homepage**: Not specified
+- **Homepage**: https://grpc.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/grpc.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install grpc
+launchpad install grpc.io
 ```
 
 ## Programs
@@ -85,7 +85,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/grpc.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://grpc.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

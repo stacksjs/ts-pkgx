@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install llrt
+launchpad install github.com/awslabs/llrt
 ```
 
 ## Programs
@@ -39,8 +39,19 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) llrt -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/awslabs/llrt@0.7.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `facebook.com/zstd`
+- `ziglang.org@~0.11`
+- `nodejs.org`
+- `yarnpkg.com`
+- `cmake.org`
+- `linux:llvm.org@^17`
 
 ## Usage Examples
 

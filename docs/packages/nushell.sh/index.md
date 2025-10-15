@@ -6,14 +6,14 @@
 
 - **Domain**: `nushell.sh`
 - **Name**: `nu`
-- **Homepage**: Not specified
+- **Homepage**: https://www.nushell.sh
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nushell.sh/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install nu
+launchpad install nushell.sh
 ```
 
 ## Programs
@@ -47,7 +47,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) nu -- $SHELL -i
+sh <(curl https://pkgx.sh) +nushell.sh@0.107.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -72,7 +72,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/nushell.sh/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.nushell.sh)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

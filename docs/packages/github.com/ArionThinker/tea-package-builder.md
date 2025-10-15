@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install tea-package-builder
+launchpad install github.com/ArionThinker/tea-package-builder
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tea-package-builder -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/ArionThinker/tea-package-builder@0.1.6 -- $SHELL -i
 ```
 
 ## Dependencies

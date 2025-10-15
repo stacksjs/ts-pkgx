@@ -1,12 +1,12 @@
-# tcl-lang.org/expect
+# expect
 
 > Program that can automate interactive applications
 
 ## Package Information
 
 - **Domain**: `tcl-lang.org/expect`
-- **Name**: `tcl-lang.org/expect`
-- **Homepage**: Not specified
+- **Name**: `expect`
+- **Homepage**: https://core.tcl-lang.org/expect/index
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tcl-lang.org/expect/package.yml)
 
 ## Installation
@@ -73,7 +73,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['tcl-lang.org/expect']
+const pkg = pantry.expect
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -83,7 +83,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tcl-lang.org/expect/package.yml)
-- [Homepage](#)
+- [Homepage](https://core.tcl-lang.org/expect/index)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install yamllint
+launchpad install github.com/adrienverge/yamllint
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) yamllint -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/adrienverge/yamllint@1.37.1 -- $SHELL -i
 ```
 
 ## Dependencies

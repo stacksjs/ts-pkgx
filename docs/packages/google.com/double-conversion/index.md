@@ -1,11 +1,11 @@
-# google.com/double-conversion
+# double-conversion
 
 > Efficient binary-decimal and decimal-binary conversion routines for IEEE doubles.
 
 ## Package Information
 
 - **Domain**: `google.com/double-conversion`
-- **Name**: `google.com/double-conversion`
+- **Name**: `double-conversion`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/double-conversion/package.yml)
 
@@ -40,13 +40,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +google.com/double-conversion@3.3.1 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@^3`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['google.com/double-conversion']
+const pkg = pantry['double-conversion']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

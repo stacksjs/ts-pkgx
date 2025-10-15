@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/siiptuo/pio`
 - **Name**: `pio`
-- **Homepage**: Not specified
+- **Homepage**: https://platformio.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/siiptuo/pio/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pio
+launchpad install github.com/siiptuo/pio
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pio -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/siiptuo/pio@0.4.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/siiptuo/pio/package.yml)
-- [Homepage](#)
+- [Homepage](https://platformio.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `gnome.org/gdk-pixbuf`
 - **Name**: `gdk-pixbuf`
-- **Homepage**: Not specified
+- **Homepage**: https://gtk.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/gdk-pixbuf/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gdk-pixbuf
+launchpad install gnome.org/gdk-pixbuf
 ```
 
 ## Programs
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/gdk-pixbuf/package.yml)
-- [Homepage](#)
+- [Homepage](https://gtk.org)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

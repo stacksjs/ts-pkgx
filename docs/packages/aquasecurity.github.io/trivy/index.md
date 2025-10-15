@@ -6,14 +6,14 @@
 
 - **Domain**: `aquasecurity.github.io/trivy`
 - **Name**: `trivy`
-- **Homepage**: Not specified
+- **Homepage**: https://aquasecurity.github.io/trivy/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aquasecurity.github.io/trivy/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install trivy
+launchpad install aquasecurity.github.io/trivy
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) trivy -- $SHELL -i
+sh <(curl https://pkgx.sh) +aquasecurity.github.io/trivy@0.66.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/aquasecurity.github.io/trivy/package.yml)
-- [Homepage](#)
+- [Homepage](https://aquasecurity.github.io/trivy/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

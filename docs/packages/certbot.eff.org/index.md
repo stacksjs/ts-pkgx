@@ -6,14 +6,14 @@
 
 - **Domain**: `certbot.eff.org`
 - **Name**: `certbot`
-- **Homepage**: Not specified
+- **Homepage**: https://certbot.eff.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/certbot.eff.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install certbot
+launchpad install certbot.eff.org
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) certbot -- $SHELL -i
+sh <(curl https://pkgx.sh) +certbot.eff.org@5.1.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/certbot.eff.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://certbot.eff.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

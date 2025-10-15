@@ -6,14 +6,14 @@
 
 - **Domain**: `ctags.io`
 - **Name**: `ctags`
-- **Homepage**: Not specified
+- **Homepage**: https://ctags.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ctags.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ctags
+launchpad install ctags.io
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ctags -- $SHELL -i
+sh <(curl https://pkgx.sh) +ctags.io@6.2.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ctags.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://ctags.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

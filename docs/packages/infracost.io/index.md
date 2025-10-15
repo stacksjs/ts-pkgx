@@ -6,14 +6,14 @@
 
 - **Domain**: `infracost.io`
 - **Name**: `infracost`
-- **Homepage**: Not specified
+- **Homepage**: https://www.infracost.io/docs/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/infracost.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install infracost
+launchpad install infracost.io
 ```
 
 ## Programs
@@ -39,8 +39,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) infracost -- $SHELL -i
+sh <(curl https://pkgx.sh) +infracost.io@0.10.42 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
 
 ## Usage Examples
 
@@ -58,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/infracost.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.infracost.io/docs/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

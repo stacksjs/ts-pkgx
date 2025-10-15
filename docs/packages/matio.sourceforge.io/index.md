@@ -6,25 +6,19 @@
 
 - **Domain**: `matio.sourceforge.io`
 - **Name**: `libmatio`
-- **Homepage**: Not specified
+- **Homepage**: https://matio.sourceforge.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/matio.sourceforge.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install matdump
+launchpad install matio.sourceforge.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `matdump`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `matdump`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) matdump -- $SHELL -i
+sh <(curl https://pkgx.sh) +matio.sourceforge.io@1.5.28 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -60,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.matdump
+const pkg = pantry.libmatio
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -70,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/matio.sourceforge.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://matio.sourceforge.net/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

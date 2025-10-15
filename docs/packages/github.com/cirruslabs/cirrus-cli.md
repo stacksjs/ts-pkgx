@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install cirrus
+launchpad install github.com/cirruslabs/cirrus-cli
 ```
 
 ## Programs
@@ -55,8 +55,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cirrus -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/cirruslabs/cirrus-cli@0.155.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.22`
 
 ## Usage Examples
 

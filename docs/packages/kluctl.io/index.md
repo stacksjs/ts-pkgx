@@ -6,14 +6,14 @@
 
 - **Domain**: `kluctl.io`
 - **Name**: `kluctl`
-- **Homepage**: Not specified
+- **Homepage**: https://kluctl.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kluctl.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install kluctl
+launchpad install kluctl.io
 ```
 
 ## Programs
@@ -39,8 +39,17 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) kluctl -- $SHELL -i
+sh <(curl https://pkgx.sh) +kluctl.io@2.27.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
+- `nodejs.org@^18`
+- `npmjs.com`
+- `gnu.org/make`
 
 ## Usage Examples
 
@@ -58,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/kluctl.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://kluctl.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `chompbuild.com`
 - **Name**: `chomp`
-- **Homepage**: Not specified
+- **Homepage**: https://chompbuild.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/chompbuild.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install chomp
+launchpad install chompbuild.com
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) chomp -- $SHELL -i
+sh <(curl https://pkgx.sh) +chompbuild.com@0.2.23 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/chompbuild.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://chompbuild.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

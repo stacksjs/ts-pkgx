@@ -6,14 +6,14 @@
 
 - **Domain**: `kubernetes.io/minikube`
 - **Name**: `minikube`
-- **Homepage**: Not specified
+- **Homepage**: https://minikube.sigs.k8s.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kubernetes.io/minikube/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install minikube
+launchpad install kubernetes.io/minikube
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) minikube -- $SHELL -i
+sh <(curl https://pkgx.sh) +kubernetes.io/minikube@1.37.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/kubernetes.io/minikube/package.yml)
-- [Homepage](#)
+- [Homepage](https://minikube.sigs.k8s.io/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

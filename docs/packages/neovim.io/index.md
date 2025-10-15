@@ -6,14 +6,14 @@
 
 - **Domain**: `neovim.io`
 - **Name**: `nvim`
-- **Homepage**: Not specified
+- **Homepage**: https://neovim.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/neovim.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install nvim
+launchpad install neovim.io
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) nvim -- $SHELL -i
+sh <(curl https://pkgx.sh) +neovim.io@0.11.4 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/neovim.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://neovim.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

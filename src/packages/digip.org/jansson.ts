@@ -7,7 +7,7 @@
  *
  * @install `launchpad install digip.org/jansson`
  * @homepage http://www.digip.org/jansson/
- * @dependencies `gnu.org/gcc`
+ * @dependencies `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -50,9 +50,10 @@ export const digiporgjanssonPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'gnu.org/gcc',
+    'linux:gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

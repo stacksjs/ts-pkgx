@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install ox
+launchpad install crates.io/ox
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ox -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/ox@0.7.7 -- $SHELL -i
 ```
 
 ## Usage Examples

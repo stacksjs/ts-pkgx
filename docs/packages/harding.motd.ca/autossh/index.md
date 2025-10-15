@@ -6,14 +6,14 @@
 
 - **Domain**: `harding.motd.ca/autossh`
 - **Name**: `autossh`
-- **Homepage**: Not specified
+- **Homepage**: https://www.harding.motd.ca/autossh/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/harding.motd.ca/autossh/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install autossh
+launchpad install harding.motd.ca/autossh
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) autossh -- $SHELL -i
+sh <(curl https://pkgx.sh) +harding.motd.ca/autossh@1.4f -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/harding.motd.ca/autossh/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.harding.motd.ca/autossh/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

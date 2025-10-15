@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/oneapi-src/oneTBB`
 - **Name**: `tbb`
-- **Homepage**: Not specified
+- **Homepage**: https://uxlfoundation.github.io/oneTBB/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/oneapi-src/oneTBB/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install tbb
+launchpad install github.com/oneapi-src/oneTBB
 ```
 
 ## Programs
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/oneapi-src/oneTBB/package.yml)
-- [Homepage](#)
+- [Homepage](https://uxlfoundation.github.io/oneTBB/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `istio.io`
 - **Name**: `istioctl`
-- **Homepage**: Not specified
+- **Homepage**: https://istio.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/istio.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install istioctl
+launchpad install istio.io
 ```
 
 ## Programs
@@ -46,8 +46,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) istioctl -- $SHELL -i
+sh <(curl https://pkgx.sh) +istio.io@1.27.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 
@@ -65,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/istio.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://istio.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

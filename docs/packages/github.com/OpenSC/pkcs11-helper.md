@@ -1,11 +1,11 @@
-# github.com/OpenSC/pkcs11-helper
+# pkcs11-helper
 
 > Library that simplifies the interaction with PKCS#11 providers for end-user applications using a simple API and optional OpenSSL engine
 
 ## Package Information
 
 - **Domain**: `github.com/OpenSC/pkcs11-helper`
-- **Name**: `github.com/OpenSC/pkcs11-helper`
+- **Name**: `pkcs11-helper`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/OpenSC/pkcs11-helper/package.yml)
 
@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/OpenSC/pkcs11-helper']
+const pkg = pantry['pkcs11-helper']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -6,14 +6,14 @@
 
 - **Domain**: `earthly.dev/earthly`
 - **Name**: `earthly`
-- **Homepage**: Not specified
+- **Homepage**: https://earthly.dev/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/earthly.dev/earthly/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install earthly
+launchpad install earthly.dev/earthly
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) earthly -- $SHELL -i
+sh <(curl https://pkgx.sh) +earthly.dev/earthly@0.8.16 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/earthly.dev/earthly/package.yml)
-- [Homepage](#)
+- [Homepage](https://earthly.dev/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

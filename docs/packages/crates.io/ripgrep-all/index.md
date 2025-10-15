@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install rga
+launchpad install crates.io/ripgrep-all
 ```
 
 ## Programs
@@ -42,13 +42,6 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +crates.io/ripgrep-all@0.10.9 -- $SHELL -i
 ```
-
-## Related Packages
-
-These packages work well with rga:
-
-- [`crates.io/ripgrep`](../ripgrep/index.md) - ripgrep recursively searches directories for a regex pattern while respecting your gitignore
-- [`github.com/junegunn/fzf`](../../github.com/junegunn/fzf.md) - :cherry_blossom: A command-line fuzzy finder
 
 ## Usage Examples
 

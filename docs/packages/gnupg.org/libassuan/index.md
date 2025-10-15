@@ -6,14 +6,14 @@
 
 - **Domain**: `gnupg.org/libassuan`
 - **Name**: `libassuan-config`
-- **Homepage**: Not specified
+- **Homepage**: https://www.gnupg.org/related_software/libassuan/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/libassuan/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install libassuan-config
+launchpad install gnupg.org/libassuan
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) libassuan-config -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnupg.org/libassuan@3.0.2 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/libassuan/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnupg.org/related_software/libassuan/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

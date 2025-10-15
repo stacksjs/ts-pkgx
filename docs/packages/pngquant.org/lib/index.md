@@ -6,14 +6,14 @@
 
 - **Domain**: `pngquant.org/lib`
 - **Name**: `libimagequant`
-- **Homepage**: Not specified
+- **Homepage**: https://pngquant.org/lib
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pngquant.org/lib/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install libimagequant
+launchpad install pngquant.org/lib
 ```
 
 ## Programs
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pngquant.org/lib/package.yml)
-- [Homepage](#)
+- [Homepage](https://pngquant.org/lib)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

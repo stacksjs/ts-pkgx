@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install hiredis
+launchpad install github.com/redis/hiredis
 ```
 
 ## Programs

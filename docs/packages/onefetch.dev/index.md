@@ -6,14 +6,14 @@
 
 - **Domain**: `onefetch.dev`
 - **Name**: `onefetch`
-- **Homepage**: Not specified
+- **Homepage**: https://onefetch.dev/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/onefetch.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install onefetch
+launchpad install onefetch.dev
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) onefetch -- $SHELL -i
+sh <(curl https://pkgx.sh) +onefetch.dev@2.25.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/onefetch.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://onefetch.dev/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

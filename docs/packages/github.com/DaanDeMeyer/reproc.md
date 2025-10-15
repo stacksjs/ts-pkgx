@@ -1,11 +1,11 @@
-# github.com/DaanDeMeyer/reproc
+# reproc
 
 > A cross-platform (C99/C++11) process library
 
 ## Package Information
 
 - **Domain**: `github.com/DaanDeMeyer/reproc`
-- **Name**: `github.com/DaanDeMeyer/reproc`
+- **Name**: `reproc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/DaanDeMeyer/reproc/package.yml)
 
@@ -40,13 +40,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/DaanDeMeyer/reproc@14.2.5 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@^3`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/DaanDeMeyer/reproc']
+const pkg = pantry.reproc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

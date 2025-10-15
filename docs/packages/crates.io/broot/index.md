@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/broot`
 - **Name**: `broot`
-- **Homepage**: Not specified
+- **Homepage**: https://dystroy.org/broot/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/broot/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install broot
+launchpad install crates.io/broot
 ```
 
 ## Programs
@@ -50,7 +50,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) broot -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/broot@1.51.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -75,7 +75,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/broot/package.yml)
-- [Homepage](#)
+- [Homepage](https://dystroy.org/broot/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install awslogs
+launchpad install github.com/jorgebastida/awslogs
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) awslogs -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/jorgebastida/awslogs@0.15.0 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -6,14 +6,14 @@
 
 - **Domain**: `libvips.org`
 - **Name**: `vips`
-- **Homepage**: Not specified
+- **Homepage**: https://libvips.github.io/libvips/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libvips.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install vips
+launchpad install libvips.org
 ```
 
 ## Programs
@@ -94,7 +94,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libvips.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://libvips.github.io/libvips/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `mun-lang.org`
 - **Name**: `mun`
-- **Homepage**: Not specified
+- **Homepage**: https://mun-lang.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mun-lang.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mun
+launchpad install mun-lang.org
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mun -- $SHELL -i
+sh <(curl https://pkgx.sh) +mun-lang.org@0.5.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -47,12 +47,6 @@ This package depends on:
 - `invisible-island.net/ncurses@6`
 - `sourceware.org/libffi@3`
 - `gnome.org/libxml2@2`
-
-## Related Packages
-
-These packages work well with mun:
-
-- [`llvm.org`](../llvm.org/index.md) - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
 
 ## Usage Examples
 
@@ -70,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mun-lang.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://mun-lang.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

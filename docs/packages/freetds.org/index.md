@@ -1,12 +1,12 @@
-# freetds.org
+# freetds
 
 > Libraries to talk to Microsoft SQL Server and Sybase databases
 
 ## Package Information
 
 - **Domain**: `freetds.org`
-- **Name**: `freetds.org`
-- **Homepage**: Not specified
+- **Name**: `freetds`
+- **Homepage**: https://www.freetds.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freetds.org/package.yml)
 
 ## Installation
@@ -69,7 +69,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['freetds.org']
+const pkg = pantry.freetds
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -79,7 +79,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/freetds.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.freetds.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

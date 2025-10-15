@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install avif
+launchpad install github.com/AOMediaCodec/libavif
 ```
 
 ## Programs

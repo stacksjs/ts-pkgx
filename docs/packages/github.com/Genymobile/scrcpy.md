@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install scrcpy
+launchpad install github.com/Genymobile/scrcpy
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) scrcpy -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/Genymobile/scrcpy@3.3.3 -- $SHELL -i
 ```
 
 ## Dependencies

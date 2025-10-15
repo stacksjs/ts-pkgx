@@ -6,7 +6,7 @@
 
 - **Domain**: `lxml.de`
 - **Name**: `lxml.de`
-- **Homepage**: Not specified
+- **Homepage**: https://lxml.de/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lxml.de/package.yml)
 
 ## Installation
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/lxml.de/package.yml)
-- [Homepage](#)
+- [Homepage](https://lxml.de/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

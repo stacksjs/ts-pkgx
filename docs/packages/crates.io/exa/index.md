@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/exa`
 - **Name**: `exa`
-- **Homepage**: Not specified
+- **Homepage**: https://the.exa.website/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/exa/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install exa
+launchpad install crates.io/exa
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) exa -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/exa@0.10.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/exa/package.yml)
-- [Homepage](#)
+- [Homepage](https://the.exa.website/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

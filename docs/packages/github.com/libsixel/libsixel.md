@@ -1,12 +1,12 @@
-# github.com/libsixel/libsixel
+# libsixel
 
 > Mirror of "sixel" original version (kmiya's sixel). The origin of libsixel.
 
 ## Package Information
 
 - **Domain**: `github.com/libsixel/libsixel`
-- **Name**: `github.com/libsixel/libsixel`
-- **Homepage**: Not specified
+- **Name**: `libsixel`
+- **Homepage**: http://nanno.dip.jp/softlib/man/rlogin/#REGWIND
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libsixel/libsixel/package.yml)
 
 ## Installation
@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/libsixel/libsixel']
+const pkg = pantry.libsixel
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libsixel/libsixel/package.yml)
-- [Homepage](#)
+- [Homepage](http://nanno.dip.jp/softlib/man/rlogin/#REGWIND)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

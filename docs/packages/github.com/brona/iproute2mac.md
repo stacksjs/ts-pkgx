@@ -1,11 +1,11 @@
-# github.com/brona/iproute2mac
+# iproute2mac
 
 > CLI wrapper for basic network utilites on Mac OS X inspired with iproute2 on Linux systems - ip command.
 
 ## Package Information
 
 - **Domain**: `github.com/brona/iproute2mac`
-- **Name**: `github.com/brona/iproute2mac`
+- **Name**: `iproute2mac`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/brona/iproute2mac/package.yml)
 
@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/brona/iproute2mac']
+const pkg = pantry.iproute2mac
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

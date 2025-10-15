@@ -6,14 +6,14 @@
 
 - **Domain**: `ziglang.org`
 - **Name**: `zig`
-- **Homepage**: Not specified
+- **Homepage**: https://ziglang.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ziglang.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install zig
+launchpad install ziglang.org
 ```
 
 ## Programs
@@ -38,8 +38,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) zig -- $SHELL -i
+sh <(curl https://pkgx.sh) +ziglang.org@0.15.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
+- `gnu.org/tar`
+- `tukaani.org/xz`
 
 ## Usage Examples
 
@@ -57,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ziglang.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://ziglang.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

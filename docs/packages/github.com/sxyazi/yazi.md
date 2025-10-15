@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/sxyazi/yazi`
 - **Name**: `yazi`
-- **Homepage**: Not specified
+- **Homepage**: https://yazi-rs.github.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/sxyazi/yazi/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install yazi
+launchpad install github.com/sxyazi/yazi
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) yazi -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/sxyazi/yazi@25.5.31 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -71,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/sxyazi/yazi/package.yml)
-- [Homepage](#)
+- [Homepage](https://yazi-rs.github.io)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

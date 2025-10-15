@@ -6,14 +6,14 @@
 
 - **Domain**: `swift.org`
 - **Name**: `swift`
-- **Homepage**: Not specified
+- **Homepage**: https://swift.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/swift.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install swift
+launchpad install swift.org
 ```
 
 ## Programs
@@ -95,7 +95,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/swift.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://swift.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

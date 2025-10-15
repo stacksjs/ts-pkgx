@@ -6,14 +6,14 @@
 
 - **Domain**: `rucio.cern.ch/rucio-client`
 - **Name**: `rucio-client`
-- **Homepage**: Not specified
+- **Homepage**: http://rucio.cern.ch
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rucio.cern.ch/rucio-client/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rucio-client
+launchpad install rucio.cern.ch/rucio-client
 ```
 
 ## Programs
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rucio.cern.ch/rucio-client/package.yml)
-- [Homepage](#)
+- [Homepage](http://rucio.cern.ch)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

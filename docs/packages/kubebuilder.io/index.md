@@ -6,14 +6,14 @@
 
 - **Domain**: `kubebuilder.io`
 - **Name**: `kubebuilder`
-- **Homepage**: Not specified
+- **Homepage**: http://book.kubebuilder.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kubebuilder.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install kubebuilder
+launchpad install kubebuilder.io
 ```
 
 ## Programs
@@ -41,8 +41,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) kubebuilder -- $SHELL -i
+sh <(curl https://pkgx.sh) +kubebuilder.io@4.9.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.23`
+- `gnu.org/coreutils`
 
 ## Usage Examples
 
@@ -60,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/kubebuilder.io/package.yml)
-- [Homepage](#)
+- [Homepage](http://book.kubebuilder.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

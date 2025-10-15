@@ -6,14 +6,14 @@
 
 - **Domain**: `dhruvkb.dev/pls`
 - **Name**: `pls`
-- **Homepage**: Not specified
+- **Homepage**: https://pls.cli.rs/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dhruvkb.dev/pls/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pls
+launchpad install dhruvkb.dev/pls
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pls -- $SHELL -i
+sh <(curl https://pkgx.sh) +dhruvkb.dev/pls@2023.12.22 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/dhruvkb.dev/pls/package.yml)
-- [Homepage](#)
+- [Homepage](https://pls.cli.rs/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `getclipboard.app`
 - **Name**: `cb`
-- **Homepage**: Not specified
+- **Homepage**: https://getclipboard.app
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getclipboard.app/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cb
+launchpad install getclipboard.app
 ```
 
 ## Programs
@@ -27,17 +27,17 @@ This package provides the following executable programs:
 <details>
 <summary>Show all 3 versions</summary>
 
-- `0.9.1`, `0.9.0.1`, `0.10.0`
+- `0.10.0`, `0.9.1`, `0.9.0.1`
 
 </details>
 
-**Latest Version**: `0.9.1`
+**Latest Version**: `0.10.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cb -- $SHELL -i
+sh <(curl https://pkgx.sh) +getclipboard.app@0.10.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/getclipboard.app/package.yml)
-- [Homepage](#)
+- [Homepage](https://getclipboard.app)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

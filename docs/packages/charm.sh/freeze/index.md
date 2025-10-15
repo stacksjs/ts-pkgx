@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install freeze
+launchpad install charm.sh/freeze
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) freeze -- $SHELL -i
+sh <(curl https://pkgx.sh) +charm.sh/freeze@0.2.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
 
 ## Usage Examples
 

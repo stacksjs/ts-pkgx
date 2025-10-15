@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install colima
+launchpad install github.com/abiosoft/colima
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) colima -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/abiosoft/colima@0.9.1 -- $SHELL -i
 ```
 
 ## Dependencies

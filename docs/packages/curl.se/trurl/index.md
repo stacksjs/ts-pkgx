@@ -6,14 +6,14 @@
 
 - **Domain**: `curl.se/trurl`
 - **Name**: `trurl`
-- **Homepage**: Not specified
+- **Homepage**: https://curl.se/trurl/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/curl.se/trurl/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install trurl
+launchpad install curl.se/trurl
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) trurl -- $SHELL -i
+sh <(curl https://pkgx.sh) +curl.se/trurl@0.16.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/curl.se/trurl/package.yml)
-- [Homepage](#)
+- [Homepage](https://curl.se/trurl/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

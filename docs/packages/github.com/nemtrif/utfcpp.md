@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install utf8cpp
+launchpad install github.com/nemtrif/utfcpp
 ```
 
 ## Programs
@@ -41,6 +41,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +github.com/nemtrif/utfcpp@4.0.8 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@3`
+- `darwin:gnu.org/gcc@13`
 
 ## Usage Examples
 

@@ -1,12 +1,12 @@
-# cfssl.org
+# cfssl
 
 > CFSSL: Cloudflare's PKI and TLS toolkit
 
 ## Package Information
 
 - **Domain**: `cfssl.org`
-- **Name**: `cfssl.org`
-- **Homepage**: Not specified
+- **Name**: `cfssl`
+- **Homepage**: https://cfssl.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cfssl.org/package.yml)
 
 ## Installation
@@ -47,13 +47,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +cfssl.org@1.6.5 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.20`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cfssl.org']
+const pkg = pantry.cfssl
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -63,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cfssl.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://cfssl.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

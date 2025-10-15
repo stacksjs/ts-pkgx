@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install stargazers
+launchpad install github.com/spencerkimball/stargazers
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) stargazers -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/spencerkimball/stargazers@0.0.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.16.15`
 
 ## Usage Examples
 

@@ -6,14 +6,14 @@
 
 - **Domain**: `asciidoctor.org`
 - **Name**: `asciidoctor`
-- **Homepage**: Not specified
+- **Homepage**: https://asciidoctor.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/asciidoctor.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install asciidoctor
+launchpad install asciidoctor.org
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) asciidoctor -- $SHELL -i
+sh <(curl https://pkgx.sh) +asciidoctor.org@2.0.24 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/asciidoctor.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://asciidoctor.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

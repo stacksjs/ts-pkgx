@@ -1,12 +1,12 @@
-# llvm.org/clang-format
+# clang-format
 
 > The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
 
 ## Package Information
 
 - **Domain**: `llvm.org/clang-format`
-- **Name**: `llvm.org/clang-format`
-- **Homepage**: Not specified
+- **Name**: `clang-format`
+- **Homepage**: http://llvm.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/llvm.org/clang-format/package.yml)
 
 ## Installation
@@ -63,7 +63,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['llvm.org/clang-format']
+const pkg = pantry['clang-format']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/llvm.org/clang-format/package.yml)
-- [Homepage](#)
+- [Homepage](http://llvm.org)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

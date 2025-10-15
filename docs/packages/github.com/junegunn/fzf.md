@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/junegunn/fzf`
 - **Name**: `fzf`
-- **Homepage**: Not specified
+- **Homepage**: https://junegunn.github.io/fzf/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/junegunn/fzf/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install fzf
+launchpad install github.com/junegunn/fzf
 ```
 
 ## Programs
@@ -47,8 +47,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) fzf -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/junegunn/fzf@0.66.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
 
 ## Usage Examples
 
@@ -66,7 +72,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/junegunn/fzf/package.yml)
-- [Homepage](#)
+- [Homepage](https://junegunn.github.io/fzf/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

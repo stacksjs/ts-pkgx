@@ -6,14 +6,14 @@
 
 - **Domain**: `ghostgum.com.au/epstool`
 - **Name**: `epstool`
-- **Homepage**: Not specified
+- **Homepage**: http://www.ghostgum.com.au/software/epstool.htm
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ghostgum.com.au/epstool/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install epstool
+launchpad install ghostgum.com.au/epstool
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) epstool -- $SHELL -i
+sh <(curl https://pkgx.sh) +ghostgum.com.au/epstool@3.9.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ghostgum.com.au/epstool/package.yml)
-- [Homepage](#)
+- [Homepage](http://www.ghostgum.com.au/software/epstool.htm)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `mozilla.org/nspr`
 - **Name**: `nspr-config`
-- **Homepage**: Not specified
+- **Homepage**: https://hg.mozilla.org/projects/nspr
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mozilla.org/nspr/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install nspr-config
+launchpad install mozilla.org/nspr
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) nspr-config -- $SHELL -i
+sh <(curl https://pkgx.sh) +mozilla.org/nspr@4.34.1 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mozilla.org/nspr/package.yml)
-- [Homepage](#)
+- [Homepage](https://hg.mozilla.org/projects/nspr)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

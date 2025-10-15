@@ -1,12 +1,12 @@
 # Networking
 
-*9 packages in this category*
+*10 packages in this category*
 
 Network tools, protocols, and communication software.
 
 ## Packages
 
-### [apache.org/httpd](../packages/apache.org/httpd/index.md)
+### [apache.org/httpd](../packages/apache.org/httpd/index.md) (httpd)
 
 Apache HTTP server
 
@@ -22,7 +22,7 @@ Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
 
 **Programs**: caddy
 
-**Install**: `launchpad install caddy`
+**Install**: `launchpad install caddyserver.com`
 
 ---
 
@@ -32,7 +32,7 @@ Cloudflare Tunnel client (formerly Argo Tunnel)
 
 **Programs**: cloudflared
 
-**Install**: `launchpad install cloudflared`
+**Install**: `launchpad install cloudflare.com/cloudflared`
 
 ---
 
@@ -52,7 +52,17 @@ Internet file retriever
 
 **Programs**: wget
 
-**Install**: `launchpad install wget`
+**Install**: `launchpad install gnu.org/wget`
+
+---
+
+### [httpie.io](../packages/httpie.io/index.md) (httpie)
+
+🥧 HTTPie CLI — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more.
+
+**Programs**: http, httpie, https
+
+**Install**: `launchpad install httpie.io`
 
 ---
 
@@ -62,7 +72,7 @@ Remote terminal application
 
 **Programs**: mosh-client, mosh-server
 
-**Install**: `launchpad install mosh`
+**Install**: `launchpad install mosh.org`
 
 ---
 
@@ -72,7 +82,7 @@ HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 
 **Programs**: nginx
 
-**Install**: `launchpad install nginx`
+**Install**: `launchpad install nginx.org`
 
 ---
 
@@ -82,7 +92,7 @@ An open source utility that provides fast incremental file transfer. It also has
 
 **Programs**: rsync, rsync-ssl
 
-**Install**: `launchpad install rsync`
+**Install**: `launchpad install rsync.samba.org`
 
 ---
 
@@ -92,7 +102,7 @@ The Cloud Native Application Proxy
 
 **Programs**: traefik
 
-**Install**: `launchpad install traefik`
+**Install**: `launchpad install traefik.io`
 
 ---
 

@@ -6,14 +6,14 @@
 
 - **Domain**: `google.com/protobuf-go`
 - **Name**: `protoc-gen-go`
-- **Homepage**: Not specified
+- **Homepage**: https://developers.google.com/protocol-buffers
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/protobuf-go/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install protoc-gen-go
+launchpad install google.com/protobuf-go
 ```
 
 ## Programs
@@ -40,15 +40,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) protoc-gen-go -- $SHELL -i
+sh <(curl https://pkgx.sh) +google.com/protobuf-go@1.36.10 -- $SHELL -i
 ```
 
-## Related Packages
+## Dependencies
 
-These packages work well with protoc-gen-go:
+This package depends on:
 
-- [`protobuf.dev`](../../protobuf.dev/index.md) - Protocol Buffers - Google's data interchange format
-- [`abseil.io`](../../abseil.io/index.md) - Abseil Common Libraries (C++)
+- `go.dev@^1.17`
 
 ## Usage Examples
 
@@ -66,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/protobuf-go/package.yml)
-- [Homepage](#)
+- [Homepage](https://developers.google.com/protocol-buffers)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

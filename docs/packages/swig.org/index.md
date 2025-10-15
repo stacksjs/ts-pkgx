@@ -1,12 +1,12 @@
-# swig.org
+# swig
 
 > SWIG is a software development tool that connects programs written in C and C++ with a variety of high-level programming languages.
 
 ## Package Information
 
 - **Domain**: `swig.org`
-- **Name**: `swig.org`
-- **Homepage**: Not specified
+- **Name**: `swig`
+- **Homepage**: https://www.swig.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/swig.org/package.yml)
 
 ## Installation
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['swig.org']
+const pkg = pantry.swig
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/swig.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.swig.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

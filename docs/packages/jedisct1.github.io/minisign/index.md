@@ -6,14 +6,14 @@
 
 - **Domain**: `jedisct1.github.io/minisign`
 - **Name**: `minisign`
-- **Homepage**: Not specified
+- **Homepage**: https://jedisct1.github.io/minisign/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jedisct1.github.io/minisign/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install minisign
+launchpad install jedisct1.github.io/minisign
 ```
 
 ## Programs
@@ -37,8 +37,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) minisign -- $SHELL -i
+sh <(curl https://pkgx.sh) +jedisct1.github.io/minisign@0.12.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `libsodium.org`
 
 ## Usage Examples
 
@@ -56,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jedisct1.github.io/minisign/package.yml)
-- [Homepage](#)
+- [Homepage](https://jedisct1.github.io/minisign/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

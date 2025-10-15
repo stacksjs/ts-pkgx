@@ -6,14 +6,14 @@
 
 - **Domain**: `sf.net/optipng`
 - **Name**: `optipng`
-- **Homepage**: Not specified
+- **Homepage**: https://optipng.sourceforge.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sf.net/optipng/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install optipng
+launchpad install sf.net/optipng
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) optipng -- $SHELL -i
+sh <(curl https://pkgx.sh) +sf.net/optipng@7.9.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sf.net/optipng/package.yml)
-- [Homepage](#)
+- [Homepage](https://optipng.sourceforge.net/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

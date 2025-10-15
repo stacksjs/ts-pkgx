@@ -6,14 +6,14 @@
 
 - **Domain**: `paulfitz.github.io/daff`
 - **Name**: `daff`
-- **Homepage**: Not specified
+- **Homepage**: https://paulfitz.github.io/daff
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/paulfitz.github.io/daff/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install daff
+launchpad install paulfitz.github.io/daff
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) daff -- $SHELL -i
+sh <(curl https://pkgx.sh) +paulfitz.github.io/daff@1.4.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/paulfitz.github.io/daff/package.yml)
-- [Homepage](#)
+- [Homepage](https://paulfitz.github.io/daff)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

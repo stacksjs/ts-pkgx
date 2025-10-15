@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install ny
+launchpad install github.com/krzkaczor/ny
 ```
 
 ## Programs
@@ -37,14 +37,8 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ny -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/krzkaczor/ny@0.2.2 -- $SHELL -i
 ```
-
-## Related Packages
-
-These packages work well with ny:
-
-- [`npmjs.com`](../../npmjs.com/index.md) - the package manager for JavaScript
 
 ## Usage Examples
 

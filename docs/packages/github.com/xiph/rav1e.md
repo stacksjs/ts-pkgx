@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install rav1e
+launchpad install github.com/xiph/rav1e
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rav1e -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/xiph/rav1e@0.8.1 -- $SHELL -i
 ```
 
 ## Dependencies

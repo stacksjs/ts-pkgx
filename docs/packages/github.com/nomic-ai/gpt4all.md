@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install gpt4all
+launchpad install github.com/nomic-ai/gpt4all
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gpt4all -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/nomic-ai/gpt4all@2023.3.29 -- $SHELL -i
 ```
 
 ## Usage Examples

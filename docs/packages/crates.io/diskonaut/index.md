@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install diskonaut
+launchpad install crates.io/diskonaut
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) diskonaut -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/diskonaut@0.11.0 -- $SHELL -i
 ```
 
 ## Usage Examples

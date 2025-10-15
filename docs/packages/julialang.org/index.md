@@ -6,14 +6,14 @@
 
 - **Domain**: `julialang.org`
 - **Name**: `julia`
-- **Homepage**: Not specified
+- **Homepage**: https://julialang.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/julialang.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install julia
+launchpad install julialang.org
 ```
 
 ## Programs
@@ -41,8 +41,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) julia -- $SHELL -i
+sh <(curl https://pkgx.sh) +julialang.org@1.12.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
+- `gnu.org/tar`
 
 ## Usage Examples
 
@@ -60,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/julialang.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://julialang.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

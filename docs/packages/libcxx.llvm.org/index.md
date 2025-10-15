@@ -1,12 +1,12 @@
-# libcxx.llvm.org
+# libcxx.llvm
 
 > The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
 
 ## Package Information
 
 - **Domain**: `libcxx.llvm.org`
-- **Name**: `libcxx.llvm.org`
-- **Homepage**: Not specified
+- **Name**: `libcxx.llvm`
+- **Homepage**: http://llvm.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libcxx.llvm.org/package.yml)
 
 ## Installation
@@ -49,13 +49,21 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +libcxx.llvm.org@21.1.3 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@>=3<3.29`
+- `python.org@>=3<3.12`
+- `llvm.org`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libcxx.llvm.org']
+const pkg = pantry['libcxx.llvm']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -65,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libcxx.llvm.org/package.yml)
-- [Homepage](#)
+- [Homepage](http://llvm.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

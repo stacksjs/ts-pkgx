@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install toast
+launchpad install crates.io/toast
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) toast -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/toast@0.47.7 -- $SHELL -i
 ```
 
 ## Usage Examples

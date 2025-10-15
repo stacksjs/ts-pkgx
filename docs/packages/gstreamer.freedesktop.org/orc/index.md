@@ -1,19 +1,19 @@
-# orcc
+# orc
 
 > Oil Runtime Compiler (ORC)
 
 ## Package Information
 
 - **Domain**: `gstreamer.freedesktop.org/orc`
-- **Name**: `orcc`
-- **Homepage**: Not specified
+- **Name**: `orc`
+- **Homepage**: https://gstreamer.freedesktop.org/projects/orc.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gstreamer.freedesktop.org/orc/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install orcc
+launchpad install gstreamer.freedesktop.org/orc
 ```
 
 ## Programs
@@ -42,13 +42,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +gstreamer.freedesktop.org/orc@0.4.41 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `mesonbuild.com`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.orcc
+const pkg = pantry.orc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -58,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gstreamer.freedesktop.org/orc/package.yml)
-- [Homepage](#)
+- [Homepage](https://gstreamer.freedesktop.org/projects/orc.html)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

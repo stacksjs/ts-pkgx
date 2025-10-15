@@ -6,14 +6,14 @@
 
 - **Domain**: `projectdiscovery.io/nuclei`
 - **Name**: `nuclei`
-- **Homepage**: Not specified
+- **Homepage**: https://nuclei.projectdiscovery.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/projectdiscovery.io/nuclei/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install nuclei
+launchpad install projectdiscovery.io/nuclei
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) nuclei -- $SHELL -i
+sh <(curl https://pkgx.sh) +projectdiscovery.io/nuclei@3.4.10 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.22.2`
 
 ## Usage Examples
 
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/projectdiscovery.io/nuclei/package.yml)
-- [Homepage](#)
+- [Homepage](https://nuclei.projectdiscovery.io/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

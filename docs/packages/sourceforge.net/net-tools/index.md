@@ -6,14 +6,14 @@
 
 - **Domain**: `sourceforge.net/net-tools`
 - **Name**: `net-tools`
-- **Homepage**: Not specified
+- **Homepage**: https://sourceforge.net/projects/net-tools/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/net-tools/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install net-tools
+launchpad install sourceforge.net/net-tools
 ```
 
 ## Programs
@@ -59,7 +59,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/net-tools/package.yml)
-- [Homepage](#)
+- [Homepage](https://sourceforge.net/projects/net-tools/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

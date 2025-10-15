@@ -1,12 +1,12 @@
-# freedesktop.org/intltool
+# intltool
 
 > String tool
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/intltool`
-- **Name**: `freedesktop.org/intltool`
-- **Homepage**: Not specified
+- **Name**: `intltool`
+- **Homepage**: https://wiki.freedesktop.org/www/Software/intltool
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/intltool/package.yml)
 
 ## Installation
@@ -61,7 +61,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['freedesktop.org/intltool']
+const pkg = pantry.intltool
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -71,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/intltool/package.yml)
-- [Homepage](#)
+- [Homepage](https://wiki.freedesktop.org/www/Software/intltool)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

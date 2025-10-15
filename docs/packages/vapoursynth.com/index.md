@@ -6,14 +6,14 @@
 
 - **Domain**: `vapoursynth.com`
 - **Name**: `vspipe`
-- **Homepage**: Not specified
+- **Homepage**: https://www.vapoursynth.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vapoursynth.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install vspipe
+launchpad install vapoursynth.com
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) vspipe -- $SHELL -i
+sh <(curl https://pkgx.sh) +vapoursynth.com@72.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/vapoursynth.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.vapoursynth.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

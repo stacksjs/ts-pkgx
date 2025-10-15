@@ -1,12 +1,12 @@
-# github.com/coqui-ai/TTS
+# TTS
 
 > 🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and production
 
 ## Package Information
 
 - **Domain**: `github.com/coqui-ai/TTS`
-- **Name**: `github.com/coqui-ai/TTS`
-- **Homepage**: Not specified
+- **Name**: `TTS`
+- **Homepage**: http://coqui.ai
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/coqui-ai/TTS/package.yml)
 
 ## Installation
@@ -61,7 +61,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/coqui-ai/TTS']
+const pkg = pantry.TTS
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -71,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/coqui-ai/TTS/package.yml)
-- [Homepage](#)
+- [Homepage](http://coqui.ai)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

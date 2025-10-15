@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install scriptisto
+launchpad install github.com/igor-petruk/scriptisto
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `scriptisto`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `scriptisto`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) scriptisto -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/igor-petruk/scriptisto@2.2.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -52,7 +46,7 @@ sh <(curl https://pkgx.sh) scriptisto -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.scriptisto
+const pkg = pantry.Scriptisto
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

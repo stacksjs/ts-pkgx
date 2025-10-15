@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/wthrr`
 - **Name**: `wthrr`
-- **Homepage**: Not specified
+- **Homepage**: https://crates.io/crates/wthrr
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/wthrr/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install wthrr
+launchpad install crates.io/wthrr
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) wthrr -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/wthrr@1.2.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/wthrr/package.yml)
-- [Homepage](#)
+- [Homepage](https://crates.io/crates/wthrr)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

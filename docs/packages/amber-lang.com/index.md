@@ -6,14 +6,14 @@
 
 - **Domain**: `amber-lang.com`
 - **Name**: `amber`
-- **Homepage**: Not specified
+- **Homepage**: https://amberframework.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/amber-lang.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install amber
+launchpad install amber-lang.com
 ```
 
 ## Programs
@@ -38,18 +38,8 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) amber -- $SHELL -i
+sh <(curl https://pkgx.sh) +amber-lang.com@0.4.0 -- $SHELL -i
 ```
-
-## Related Packages
-
-These packages work well with amber:
-
-- [`gnu.org/bc`](../gnu.org/bc/index.md)
-- [`gnu.org/sed`](../gnu.org/sed/index.md)
-- [`gnu.org/coreutils`](../gnu.org/coreutils/index.md)
-- [`gnu.org/gawk`](../gnu.org/gawk/index.md)
-- [`gnu.org/bash`](../gnu.org/bash/index.md) - Bourne-Again SHell, a UNIX command interpreter
 
 ## Usage Examples
 
@@ -67,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/amber-lang.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://amberframework.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

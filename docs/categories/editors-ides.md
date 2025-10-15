@@ -12,7 +12,7 @@ A cross-platform, OpenGL terminal emulator.
 
 **Programs**: alacritty
 
-**Install**: `launchpad install alacritty`
+**Install**: `launchpad install alacritty.org`
 
 ---
 
@@ -22,7 +22,7 @@ GNU Emacs text editor
 
 **Programs**: emacs
 
-**Install**: `launchpad install emacs`
+**Install**: `launchpad install gnu.org/emacs`
 
 ---
 
@@ -32,17 +32,17 @@ A modern and intuitive terminal-based text editor
 
 **Programs**: micro
 
-**Install**: `launchpad install micro`
+**Install**: `launchpad install micro-editor.github.io`
 
 ---
 
-### [microsoft.com/code-cli](../packages/microsoft.com/code-cli/index.md) (vscode cli, code)
+### [microsoft.com/code-cli](../packages/microsoft.com/code-cli/index.md) (vscode cli)
 
 Command-line interface built-in Visual Studio Code
 
 **Programs**: code
 
-**Install**: `launchpad install code`
+**Install**: `launchpad install microsoft.com/code-cli`
 
 ---
 
@@ -52,7 +52,7 @@ Free (GNU) replacement for the Pico text editor
 
 **Programs**: nano
 
-**Install**: `launchpad install nano`
+**Install**: `launchpad install nano-editor.org`
 
 ---
 
@@ -62,7 +62,7 @@ Ambitious Vim-fork focused on extensibility and agility
 
 **Programs**: nvim
 
-**Install**: `launchpad install nvim`
+**Install**: `launchpad install neovim.io`
 
 ---
 
@@ -82,7 +82,7 @@ A GPU-accelerated cross-platform terminal emulator and multiplexer written by @w
 
 **Programs**: wezterm
 
-**Install**: `launchpad install wezterm`
+**Install**: `launchpad install wezfurlong.org/wezterm`
 
 ---
 

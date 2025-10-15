@@ -6,14 +6,14 @@
 
 - **Domain**: `breakfastquay.com/rubberband`
 - **Name**: `rubberband`
-- **Homepage**: Not specified
+- **Homepage**: https://breakfastquay.com/rubberband/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/breakfastquay.com/rubberband/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rubberband
+launchpad install breakfastquay.com/rubberband
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rubberband -- $SHELL -i
+sh <(curl https://pkgx.sh) +breakfastquay.com/rubberband@4.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/breakfastquay.com/rubberband/package.yml)
-- [Homepage](#)
+- [Homepage](https://breakfastquay.com/rubberband/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

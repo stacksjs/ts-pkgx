@@ -6,14 +6,14 @@
 
 - **Domain**: `fluxcd.io/flux2`
 - **Name**: `flux`
-- **Homepage**: Not specified
+- **Homepage**: https://fluxcd.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fluxcd.io/flux2/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install flux
+launchpad install fluxcd.io/flux2
 ```
 
 ## Programs
@@ -40,8 +40,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) flux -- $SHELL -i
+sh <(curl https://pkgx.sh) +fluxcd.io/flux2@2.7.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.20`
+- `kubernetes.io/kustomize@^5`
+- `gnu.org/make`
 
 ## Usage Examples
 
@@ -59,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/fluxcd.io/flux2/package.yml)
-- [Homepage](#)
+- [Homepage](https://fluxcd.io)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

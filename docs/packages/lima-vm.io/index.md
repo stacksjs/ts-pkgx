@@ -1,12 +1,12 @@
-# lima-vm.io
+# lima-vm
 
 > Linux virtual machines, with a focus on running containers
 
 ## Package Information
 
 - **Domain**: `lima-vm.io`
-- **Name**: `lima-vm.io`
-- **Homepage**: Not specified
+- **Name**: `lima-vm`
+- **Homepage**: https://lima-vm.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lima-vm.io/package.yml)
 
 ## Installation
@@ -63,7 +63,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['lima-vm.io']
+const pkg = pantry['lima-vm']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/lima-vm.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://lima-vm.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

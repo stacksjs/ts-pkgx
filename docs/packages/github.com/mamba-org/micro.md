@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/mamba-org/micro`
 - **Name**: `micromamba`
-- **Homepage**: Not specified
+- **Homepage**: https://mamba.readthedocs.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mamba-org/micro/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install micromamba
+launchpad install github.com/mamba-org/micro
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) micromamba -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/mamba-org/micro@2.3.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mamba-org/micro/package.yml)
-- [Homepage](#)
+- [Homepage](https://mamba.readthedocs.io)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

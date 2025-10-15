@@ -6,14 +6,14 @@
 
 - **Domain**: `robotframework.org`
 - **Name**: `robot`
-- **Homepage**: Not specified
+- **Homepage**: https://robotframework.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/robotframework.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install robot
+launchpad install robotframework.org
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) robot -- $SHELL -i
+sh <(curl https://pkgx.sh) +robotframework.org@7.3.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/robotframework.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://robotframework.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

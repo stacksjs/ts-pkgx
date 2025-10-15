@@ -1,11 +1,11 @@
-# github.com/neovim/unibilium
+# unibilium
 
 > https://github.com/neovim/neovim/blob/master/MAINTAIN.md#third-party-dependencies
 
 ## Package Information
 
 - **Domain**: `github.com/neovim/unibilium`
-- **Name**: `github.com/neovim/unibilium`
+- **Name**: `unibilium`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/neovim/unibilium/package.yml)
 
@@ -40,13 +40,20 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/neovim/unibilium@2.1.2 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@^3`
+- `gnu.org/libtool`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/neovim/unibilium']
+const pkg = pantry.unibilium
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,12 +1,12 @@
-# perl.org
+# perl
 
 > Highly capable, feature-rich programming language
 
 ## Package Information
 
 - **Domain**: `perl.org`
-- **Name**: `perl.org`
-- **Homepage**: Not specified
+- **Name**: `perl`
+- **Homepage**: https://www.perl.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/perl.org/package.yml)
 
 ## Installation
@@ -72,13 +72,20 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +perl.org@5.42.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `linux:llvm.org@<17`
+- `linux:gnu.org/make`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['perl.org']
+const pkg = pantry.perl
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -88,7 +95,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/perl.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.perl.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

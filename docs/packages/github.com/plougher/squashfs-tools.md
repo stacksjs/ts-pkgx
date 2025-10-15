@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install SquashFS-Tools
+launchpad install github.com/plougher/squashfs-tools
 ```
 
 ## Programs

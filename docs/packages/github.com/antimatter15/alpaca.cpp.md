@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install alpaca.cpp
+launchpad install github.com/antimatter15/alpaca.cpp
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) alpaca.cpp -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/antimatter15/alpaca.cpp@2023.3.21 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/wget`
 
 ## Usage Examples
 

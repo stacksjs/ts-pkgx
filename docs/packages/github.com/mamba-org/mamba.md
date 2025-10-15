@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/mamba-org/mamba`
 - **Name**: `mamba`
-- **Homepage**: Not specified
+- **Homepage**: https://mamba.readthedocs.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mamba-org/mamba/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mamba
+launchpad install github.com/mamba-org/mamba
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mamba -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/mamba-org/mamba@22.11.1.4 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `aria2.github.io@1.36`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mamba-org/mamba/package.yml)
-- [Homepage](#)
+- [Homepage](https://mamba.readthedocs.io)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

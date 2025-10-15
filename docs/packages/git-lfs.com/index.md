@@ -6,14 +6,14 @@
 
 - **Domain**: `git-lfs.com`
 - **Name**: `git-lfs`
-- **Homepage**: Not specified
+- **Homepage**: https://git-lfs.github.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/git-lfs.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install git-lfs
+launchpad install git-lfs.com
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) git-lfs -- $SHELL -i
+sh <(curl https://pkgx.sh) +git-lfs.com@3.7.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/git-lfs.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://git-lfs.github.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

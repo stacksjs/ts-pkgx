@@ -1,12 +1,12 @@
-# boost.org
+# boost
 
 > Super-project for modularized Boost
 
 ## Package Information
 
 - **Domain**: `boost.org`
-- **Name**: `boost.org`
-- **Homepage**: Not specified
+- **Name**: `boost`
+- **Homepage**: https://github.com/boostorg/wiki/wiki/Getting-Started%3A-Overview
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/boost.org/package.yml)
 
 ## Installation
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['boost.org']
+const pkg = pantry.boost
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/boost.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://github.com/boostorg/wiki/wiki/Getting-Started%3A-Overview)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

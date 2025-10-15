@@ -6,14 +6,14 @@
 
 - **Domain**: `maaslalani.com/slides`
 - **Name**: `slides`
-- **Homepage**: Not specified
+- **Homepage**: http://maaslalani.com/slides/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/maaslalani.com/slides/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install slides
+launchpad install maaslalani.com/slides
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) slides -- $SHELL -i
+sh <(curl https://pkgx.sh) +maaslalani.com/slides@0.9.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/maaslalani.com/slides/package.yml)
-- [Homepage](#)
+- [Homepage](http://maaslalani.com/slides/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

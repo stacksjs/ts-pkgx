@@ -1,19 +1,19 @@
 # pipenv
 
-> Python Development Workflow for Humans.
+>  Python Development Workflow for Humans.
 
 ## Package Information
 
 - **Domain**: `pipenv.pypa.io`
 - **Name**: `pipenv`
-- **Homepage**: Not specified
+- **Homepage**: https://pipenv.pypa.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pipenv.pypa.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pipenv
+launchpad install pipenv.pypa.io
 ```
 
 ## Programs
@@ -46,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pipenv -- $SHELL -i
+sh <(curl https://pkgx.sh) +pipenv.pypa.io@3000.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -54,12 +54,6 @@ sh <(curl https://pkgx.sh) pipenv -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
-
-## Related Packages
-
-These packages work well with pipenv:
-
-- [`pip.pypa.io`](../pip.pypa.io/index.md) - The Python package installer
 
 ## Usage Examples
 
@@ -77,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pipenv.pypa.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://pipenv.pypa.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

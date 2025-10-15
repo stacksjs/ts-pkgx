@@ -6,14 +6,14 @@
 
 - **Domain**: `jbang.dev`
 - **Name**: `jbang`
-- **Homepage**: Not specified
+- **Homepage**: https://jbang.dev/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jbang.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install jbang
+launchpad install jbang.dev
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) jbang -- $SHELL -i
+sh <(curl https://pkgx.sh) +jbang.dev@0.132.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jbang.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://jbang.dev/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

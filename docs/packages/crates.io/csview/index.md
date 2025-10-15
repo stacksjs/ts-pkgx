@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install csview
+launchpad install crates.io/csview
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) csview -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/csview@1.3.4 -- $SHELL -i
 ```
 
 ## Usage Examples

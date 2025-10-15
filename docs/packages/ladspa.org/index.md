@@ -1,12 +1,12 @@
-# ladspa.org
+# ladspa
 
 > Linux Audio Developer's Simple Plugin
 
 ## Package Information
 
 - **Domain**: `ladspa.org`
-- **Name**: `ladspa.org`
-- **Homepage**: Not specified
+- **Name**: `ladspa`
+- **Homepage**: https://www.ladspa.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ladspa.org/package.yml)
 
 ## Installation
@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ladspa.org']
+const pkg = pantry.ladspa
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ladspa.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.ladspa.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

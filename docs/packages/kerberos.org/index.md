@@ -1,11 +1,11 @@
-# kerberos.org
+# kerberos
 
 > mirror of MIT krb5 repository
 
 ## Package Information
 
 - **Domain**: `kerberos.org`
-- **Name**: `kerberos.org`
+- **Name**: `kerberos`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kerberos.org/package.yml)
 
@@ -79,7 +79,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['kerberos.org']
+const pkg = pantry.kerberos
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

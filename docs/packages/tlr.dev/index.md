@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install teller
+launchpad install tlr.dev
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) teller -- $SHELL -i
+sh <(curl https://pkgx.sh) +tlr.dev@2.0.7 -- $SHELL -i
 ```
 
 ## Dependencies

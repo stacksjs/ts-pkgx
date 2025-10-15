@@ -6,14 +6,14 @@
 
 - **Domain**: `microcks.io`
 - **Name**: `microcks-cli`
-- **Homepage**: Not specified
+- **Homepage**: https://microcks.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microcks.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install microcks-cli
+launchpad install microcks.io
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) microcks-cli -- $SHELL -i
+sh <(curl https://pkgx.sh) +microcks.io@1.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/microcks.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://microcks.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `mergiraf.org`
 - **Name**: `mergiraf`
-- **Homepage**: Not specified
+- **Homepage**: https://mergiraf.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mergiraf.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mergiraf
+launchpad install mergiraf.org
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mergiraf -- $SHELL -i
+sh <(curl https://pkgx.sh) +mergiraf.org@0.15.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mergiraf.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://mergiraf.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

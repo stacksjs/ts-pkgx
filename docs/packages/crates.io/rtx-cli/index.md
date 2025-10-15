@@ -1,12 +1,12 @@
-# crates.io/rtx-cli
+# rtx-cli
 
 > dev tools, env vars, task runner
 
 ## Package Information
 
 - **Domain**: `crates.io/rtx-cli`
-- **Name**: `crates.io/rtx-cli`
-- **Homepage**: Not specified
+- **Name**: `rtx-cli`
+- **Homepage**: https://mise.jdx.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rtx-cli/package.yml)
 
 ## Installation
@@ -145,7 +145,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['crates.io/rtx-cli']
+const pkg = pantry['rtx-cli']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -155,7 +155,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rtx-cli/package.yml)
-- [Homepage](#)
+- [Homepage](https://mise.jdx.dev)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

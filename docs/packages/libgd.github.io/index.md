@@ -1,12 +1,12 @@
-# libgd.github.io
+# libgd.github
 
 > Graphics library to dynamically manipulate images
 
 ## Package Information
 
 - **Domain**: `libgd.github.io`
-- **Name**: `libgd.github.io`
-- **Homepage**: Not specified
+- **Name**: `libgd.github`
+- **Homepage**: https://libgd.github.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libgd.github.io/package.yml)
 
 ## Installation
@@ -63,7 +63,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libgd.github.io']
+const pkg = pantry['libgd.github']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libgd.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://libgd.github.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

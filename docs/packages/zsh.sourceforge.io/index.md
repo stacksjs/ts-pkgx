@@ -6,14 +6,14 @@
 
 - **Domain**: `zsh.sourceforge.io`
 - **Name**: `zsh`
-- **Homepage**: Not specified
+- **Homepage**: https://www.zsh.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/zsh.sourceforge.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install zsh
+launchpad install zsh.sourceforge.io
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) zsh -- $SHELL -i
+sh <(curl https://pkgx.sh) +zsh.sourceforge.io@5.9.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/zsh.sourceforge.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.zsh.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -1,12 +1,12 @@
-# libraw.org
+# libraw
 
 > Library for reading RAW files from digital photo cameras
 
 ## Package Information
 
 - **Domain**: `libraw.org`
-- **Name**: `libraw.org`
-- **Homepage**: Not specified
+- **Name**: `libraw`
+- **Homepage**: https://www.libraw.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libraw.org/package.yml)
 
 ## Installation
@@ -66,7 +66,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libraw.org']
+const pkg = pantry.libraw
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -76,7 +76,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libraw.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.libraw.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `fury.co`
 - **Name**: `fury`
-- **Homepage**: Not specified
+- **Homepage**: https://fury.co/guide/cli
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fury.co/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install fury
+launchpad install fury.co
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) fury -- $SHELL -i
+sh <(curl https://pkgx.sh) +fury.co@0.23.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/fury.co/package.yml)
-- [Homepage](#)
+- [Homepage](https://fury.co/guide/cli)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

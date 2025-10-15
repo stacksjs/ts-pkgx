@@ -6,14 +6,14 @@
 
 - **Domain**: `ansible.com`
 - **Name**: `ansible`
-- **Homepage**: Not specified
+- **Homepage**: https://www.ansible.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ansible.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ansible
+launchpad install ansible.com
 ```
 
 ## Programs
@@ -87,7 +87,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ansible.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.ansible.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

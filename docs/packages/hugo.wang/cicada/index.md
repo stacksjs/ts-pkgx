@@ -6,14 +6,14 @@
 
 - **Domain**: `hugo.wang/cicada`
 - **Name**: `cicada`
-- **Homepage**: Not specified
+- **Homepage**: https://hugo.wang/cicada/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hugo.wang/cicada/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cicada
+launchpad install hugo.wang/cicada
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cicada -- $SHELL -i
+sh <(curl https://pkgx.sh) +hugo.wang/cicada@1.1.3 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -58,7 +58,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/hugo.wang/cicada/package.yml)
-- [Homepage](#)
+- [Homepage](https://hugo.wang/cicada/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

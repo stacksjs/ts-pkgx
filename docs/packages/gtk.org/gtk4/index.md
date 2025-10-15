@@ -6,14 +6,14 @@
 
 - **Domain**: `gtk.org/gtk4`
 - **Name**: `gtk4`
-- **Homepage**: Not specified
+- **Homepage**: https://gtk.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gtk.org/gtk4/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gtk4
+launchpad install gtk.org/gtk4
 ```
 
 ## Programs
@@ -100,7 +100,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gtk.org/gtk4/package.yml)
-- [Homepage](#)
+- [Homepage](https://gtk.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

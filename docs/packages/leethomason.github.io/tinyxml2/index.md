@@ -1,11 +1,11 @@
-# leethomason.github.io/tinyxml2
+# tinyxml2
 
 > TinyXML2 is a simple, small, efficient, C++ XML parser that can be easily integrated into other programs.
 
 ## Package Information
 
 - **Domain**: `leethomason.github.io/tinyxml2`
-- **Name**: `leethomason.github.io/tinyxml2`
+- **Name**: `tinyxml2`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/leethomason.github.io/tinyxml2/package.yml)
 
@@ -40,13 +40,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +leethomason.github.io/tinyxml2@11.0.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['leethomason.github.io/tinyxml2']
+const pkg = pantry.tinyxml2
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

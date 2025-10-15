@@ -1,12 +1,12 @@
-# soliditylang.org
+# soliditylang
 
 > Solidity, the Smart Contract Programming Language
 
 ## Package Information
 
 - **Domain**: `soliditylang.org`
-- **Name**: `soliditylang.org`
-- **Homepage**: Not specified
+- **Name**: `soliditylang`
+- **Homepage**: https://soliditylang.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/soliditylang.org/package.yml)
 
 ## Installation
@@ -56,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['soliditylang.org']
+const pkg = pantry.soliditylang
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/soliditylang.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://soliditylang.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

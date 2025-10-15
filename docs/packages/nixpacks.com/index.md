@@ -6,14 +6,14 @@
 
 - **Domain**: `nixpacks.com`
 - **Name**: `nixpacks`
-- **Homepage**: Not specified
+- **Homepage**: https://nixpacks.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nixpacks.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install nixpacks
+launchpad install nixpacks.com
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) nixpacks -- $SHELL -i
+sh <(curl https://pkgx.sh) +nixpacks.com@1.40.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/nixpacks.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://nixpacks.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/mono0926/LicensePlist`
 - **Name**: `license-plist`
-- **Homepage**: Not specified
+- **Homepage**: https://www.slideshare.net/mono0926/licenseplist-a-license-list-generator-of-all-your-dependencies-for-ios-applications
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mono0926/LicensePlist/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install license-plist
+launchpad install github.com/mono0926/LicensePlist
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) license-plist -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/mono0926/LicensePlist@3.27.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `swift.org@6`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mono0926/LicensePlist/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.slideshare.net/mono0926/licenseplist-a-license-list-generator-of-all-your-dependencies-for-ios-applications)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

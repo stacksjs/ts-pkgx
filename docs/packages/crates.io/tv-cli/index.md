@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install tv
+launchpad install crates.io/tv-cli
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tv -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/tv-cli@0.7.0 -- $SHELL -i
 ```
 
 ## Usage Examples

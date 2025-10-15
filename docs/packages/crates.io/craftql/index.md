@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install craftql
+launchpad install crates.io/craftql
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) craftql -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/craftql@0.2.20 -- $SHELL -i
 ```
 
 ## Usage Examples

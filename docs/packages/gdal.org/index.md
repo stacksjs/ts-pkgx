@@ -1,12 +1,12 @@
-# gdal.org
+# gdal
 
 > GDAL is an open source MIT licensed translator library for raster and vector geospatial data formats.
 
 ## Package Information
 
 - **Domain**: `gdal.org`
-- **Name**: `gdal.org`
-- **Homepage**: Not specified
+- **Name**: `gdal`
+- **Homepage**: https://www.gdal.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gdal.org/package.yml)
 
 ## Installation
@@ -127,7 +127,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gdal.org']
+const pkg = pantry.gdal
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -137,7 +137,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gdal.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gdal.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

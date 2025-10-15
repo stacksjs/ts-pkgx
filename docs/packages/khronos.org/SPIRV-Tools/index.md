@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install spirv
+launchpad install khronos.org/SPIRV-Tools
 ```
 
 ## Programs
@@ -48,6 +48,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +khronos.org/SPIRV-Tools@2025.4.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `python.org@~3.11`
 
 ## Usage Examples
 

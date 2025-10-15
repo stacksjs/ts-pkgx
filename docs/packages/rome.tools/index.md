@@ -6,14 +6,14 @@
 
 - **Domain**: `rome.tools`
 - **Name**: `rome`
-- **Homepage**: Not specified
+- **Homepage**: https://docs.rome.tools/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rome.tools/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rome
+launchpad install rome.tools
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rome -- $SHELL -i
+sh <(curl https://pkgx.sh) +rome.tools@0.4.2 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rome.tools/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.rome.tools/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

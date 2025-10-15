@@ -6,14 +6,14 @@
 
 - **Domain**: `pygments.org`
 - **Name**: `pygmentize`
-- **Homepage**: Not specified
+- **Homepage**: https://pygments.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pygments.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pygmentize
+launchpad install pygments.org
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pygmentize -- $SHELL -i
+sh <(curl https://pkgx.sh) +pygments.org@2.19.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pygments.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://pygments.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

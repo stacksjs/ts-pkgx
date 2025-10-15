@@ -1,11 +1,11 @@
-# apache.org/apr
+# apr
 
 > Mirror of Apache Portable Runtime
 
 ## Package Information
 
 - **Domain**: `apache.org/apr`
-- **Name**: `apache.org/apr`
+- **Name**: `apr`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/apr/package.yml)
 
@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +apache.org/apr@1.7.6 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['apache.org/apr']
+const pkg = pantry.apr
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

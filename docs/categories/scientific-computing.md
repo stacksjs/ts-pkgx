@@ -6,7 +6,7 @@ Packages related to scientific computing.
 
 ## Packages
 
-### [jupyter.org](../packages/jupyter.org/index.md)
+### [jupyter.org](../packages/jupyter.org/index.md) (jupyter)
 
 JupyterLab computational environment.
 
@@ -22,7 +22,7 @@ The fundamental package for scientific computing with Python.
 
 **Programs**: f2py
 
-**Install**: `launchpad install f2py`
+**Install**: `launchpad install numpy.org`
 
 ---
 

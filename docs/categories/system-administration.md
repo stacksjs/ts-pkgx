@@ -12,7 +12,7 @@ Improved top (interactive process viewer)
 
 **Programs**: htop
 
-**Install**: `launchpad install htop`
+**Install**: `launchpad install htop.dev`
 
 ---
 
@@ -22,7 +22,7 @@ An open source utility that provides fast incremental file transfer. It also has
 
 **Programs**: rsync, rsync-ssl
 
-**Install**: `launchpad install rsync`
+**Install**: `launchpad install rsync.samba.org`
 
 ---
 
@@ -32,11 +32,11 @@ strace is a diagnostic, debugging and instructional userspace utility for Linux
 
 **Programs**: strace
 
-**Install**: `launchpad install strace`
+**Install**: `launchpad install strace.io`
 
 ---
 
-### [systemd.io](../packages/systemd.io/index.md)
+### [systemd.io](../packages/systemd.io/index.md) (systemd)
 
 The systemd System and Service Manager
 
@@ -52,7 +52,7 @@ the LIBpcap interface to various kernel packet capture mechanism
 
 **Programs**: pcap-config
 
-**Install**: `launchpad install pcap-config`
+**Install**: `launchpad install tcpdump.org`
 
 ---
 

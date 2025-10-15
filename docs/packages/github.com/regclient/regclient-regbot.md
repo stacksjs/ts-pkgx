@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install regbot
+launchpad install github.com/regclient/regclient/regbot
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) regbot -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/regclient/regclient/regbot@0.9.2 -- $SHELL -i
 ```
 
 ## Dependencies

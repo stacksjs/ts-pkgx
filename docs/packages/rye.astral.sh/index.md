@@ -6,14 +6,14 @@
 
 - **Domain**: `rye.astral.sh`
 - **Name**: `rye`
-- **Homepage**: Not specified
+- **Homepage**: https://rye-up.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rye.astral.sh/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rye
+launchpad install rye.astral.sh
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rye -- $SHELL -i
+sh <(curl https://pkgx.sh) +rye.astral.sh@0.44.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rye.astral.sh/package.yml)
-- [Homepage](#)
+- [Homepage](https://rye-up.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

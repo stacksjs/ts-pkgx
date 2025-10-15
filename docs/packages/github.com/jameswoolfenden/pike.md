@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/jameswoolfenden/pike`
 - **Name**: `pike`
-- **Homepage**: Not specified
+- **Homepage**: https://pike.lysator.liu.se/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jameswoolfenden/pike/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pike
+launchpad install github.com/jameswoolfenden/pike
 ```
 
 ## Programs
@@ -49,8 +49,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pike -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/jameswoolfenden/pike@0.3.79 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.22`
 
 ## Usage Examples
 
@@ -68,7 +74,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jameswoolfenden/pike/package.yml)
-- [Homepage](#)
+- [Homepage](https://pike.lysator.liu.se/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

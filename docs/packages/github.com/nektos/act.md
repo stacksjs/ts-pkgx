@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/nektos/act`
 - **Name**: `act`
-- **Homepage**: Not specified
+- **Homepage**: https://nektosact.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/nektos/act/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install act
+launchpad install github.com/nektos/act
 ```
 
 ## Programs
@@ -44,8 +44,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) act -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/nektos/act@0.2.82 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 
@@ -63,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/nektos/act/package.yml)
-- [Homepage](#)
+- [Homepage](https://nektosact.com)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

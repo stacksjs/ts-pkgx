@@ -6,14 +6,14 @@
 
 - **Domain**: `iroh.computer`
 - **Name**: `iroh`
-- **Homepage**: Not specified
+- **Homepage**: https://iroh.computer
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/iroh.computer/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install iroh
+launchpad install iroh.computer
 ```
 
 ## Programs
@@ -45,8 +45,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) iroh -- $SHELL -i
+sh <(curl https://pkgx.sh) +iroh.computer@0.93.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `linux:gnu.org/gcc@14`
 
 ## Usage Examples
 
@@ -64,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/iroh.computer/package.yml)
-- [Homepage](#)
+- [Homepage](https://iroh.computer)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

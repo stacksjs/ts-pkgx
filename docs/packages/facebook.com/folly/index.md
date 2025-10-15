@@ -1,11 +1,11 @@
-# facebook.com/folly
+# folly
 
 > An open-source C++ library developed and used at Facebook.
 
 ## Package Information
 
 - **Domain**: `facebook.com/folly`
-- **Name**: `facebook.com/folly`
+- **Name**: `folly`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/folly/package.yml)
 
@@ -95,7 +95,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['facebook.com/folly']
+const pkg = pantry.folly
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

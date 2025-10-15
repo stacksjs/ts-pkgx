@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install rexi
+launchpad install github.com/royreznik/rexi
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rexi -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/royreznik/rexi@1.2.0 -- $SHELL -i
 ```
 
 ## Dependencies

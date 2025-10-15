@@ -6,14 +6,14 @@
 
 - **Domain**: `templ.guide`
 - **Name**: `templ`
-- **Homepage**: Not specified
+- **Homepage**: https://templ.guide
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/templ.guide/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install templ
+launchpad install templ.guide
 ```
 
 ## Programs
@@ -43,8 +43,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) templ -- $SHELL -i
+sh <(curl https://pkgx.sh) +templ.guide@0.3.943 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.20`
 
 ## Usage Examples
 
@@ -62,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/templ.guide/package.yml)
-- [Homepage](#)
+- [Homepage](https://templ.guide)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

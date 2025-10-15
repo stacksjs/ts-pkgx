@@ -6,14 +6,14 @@
 
 - **Domain**: `s3tools.org/s3cmd`
 - **Name**: `s3cmd`
-- **Homepage**: Not specified
+- **Homepage**: https://s3tools.org/s3cmd
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/s3tools.org/s3cmd/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install s3cmd
+launchpad install s3tools.org/s3cmd
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) s3cmd -- $SHELL -i
+sh <(curl https://pkgx.sh) +s3tools.org/s3cmd@2.4.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/s3tools.org/s3cmd/package.yml)
-- [Homepage](#)
+- [Homepage](https://s3tools.org/s3cmd)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

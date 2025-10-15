@@ -1,11 +1,11 @@
-# github.com/PJK/libcbor
+# libcbor
 
 > CBOR protocol implementation for C
 
 ## Package Information
 
 - **Domain**: `github.com/PJK/libcbor`
-- **Name**: `github.com/PJK/libcbor`
+- **Name**: `libcbor`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/PJK/libcbor/package.yml)
 
@@ -40,13 +40,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/PJK/libcbor@0.13.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@3`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/PJK/libcbor']
+const pkg = pantry.libcbor
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

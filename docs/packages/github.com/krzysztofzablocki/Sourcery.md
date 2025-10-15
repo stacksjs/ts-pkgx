@@ -6,25 +6,19 @@
 
 - **Domain**: `github.com/krzysztofzablocki/Sourcery`
 - **Name**: `Sourcery`
-- **Homepage**: Not specified
+- **Homepage**: http://merowing.info
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/krzysztofzablocki/Sourcery/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sourcery
+launchpad install github.com/krzysztofzablocki/Sourcery
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `sourcery`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `sourcery`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sourcery -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/krzysztofzablocki/Sourcery@2.3.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -55,7 +49,7 @@ sh <(curl https://pkgx.sh) sourcery -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.sourcery
+const pkg = pantry.Sourcery
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -65,7 +59,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/krzysztofzablocki/Sourcery/package.yml)
-- [Homepage](#)
+- [Homepage](http://merowing.info)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

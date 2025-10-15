@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install gitweb
+launchpad install crates.io/gitweb
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gitweb -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/gitweb@0.3.5 -- $SHELL -i
 ```
 
 ## Dependencies

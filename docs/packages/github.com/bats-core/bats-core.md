@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/bats-core/bats-core`
 - **Name**: `bats`
-- **Homepage**: Not specified
+- **Homepage**: https://bats-core.readthedocs.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/bats-core/bats-core/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install bats
+launchpad install github.com/bats-core/bats-core
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) bats -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/bats-core/bats-core@1.12.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/bats-core/bats-core/package.yml)
-- [Homepage](#)
+- [Homepage](https://bats-core.readthedocs.io/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

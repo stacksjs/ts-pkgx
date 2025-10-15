@@ -6,14 +6,14 @@
 
 - **Domain**: `yarnpkg.com`
 - **Name**: `yarn`
-- **Homepage**: Not specified
+- **Homepage**: https://yarnpkg.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/yarnpkg.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install yarn
+launchpad install yarnpkg.com
 ```
 
 ## Programs
@@ -72,7 +72,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/yarnpkg.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://yarnpkg.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

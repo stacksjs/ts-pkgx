@@ -1,11 +1,11 @@
-# github.com/dloebl/cgif
+# cgif
 
 > GIF encoder written in C
 
 ## Package Information
 
 - **Domain**: `github.com/dloebl/cgif`
-- **Name**: `github.com/dloebl/cgif`
+- **Name**: `cgif`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/dloebl/cgif/package.yml)
 
@@ -40,13 +40,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/dloebl/cgif@0.5.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `mesonbuild.com`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/dloebl/cgif']
+const pkg = pantry.cgif
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

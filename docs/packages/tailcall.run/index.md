@@ -6,14 +6,14 @@
 
 - **Domain**: `tailcall.run`
 - **Name**: `tailcall`
-- **Homepage**: Not specified
+- **Homepage**: https://tailcall.run
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tailcall.run/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install tailcall
+launchpad install tailcall.run
 ```
 
 ## Programs
@@ -161,8 +161,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tailcall -- $SHELL -i
+sh <(curl https://pkgx.sh) +tailcall.run@1.6.11 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `protobuf.dev`
 
 ## Usage Examples
 
@@ -180,7 +186,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tailcall.run/package.yml)
-- [Homepage](#)
+- [Homepage](https://tailcall.run)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

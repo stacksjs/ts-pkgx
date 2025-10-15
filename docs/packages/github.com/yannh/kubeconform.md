@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install kubeconform
+launchpad install github.com/yannh/kubeconform
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) kubeconform -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/yannh/kubeconform@0.7.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@>=1.21`
 
 ## Usage Examples
 

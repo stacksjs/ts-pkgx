@@ -6,14 +6,14 @@
 
 - **Domain**: `rtmpdump.mplayerhq.hu`
 - **Name**: `rtmpdump`
-- **Homepage**: Not specified
+- **Homepage**: https://rtmpdump.mplayerhq.hu/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rtmpdump.mplayerhq.hu/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rtmpdump
+launchpad install rtmpdump.mplayerhq.hu
 ```
 
 ## Programs
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rtmpdump.mplayerhq.hu/package.yml)
-- [Homepage](#)
+- [Homepage](https://rtmpdump.mplayerhq.hu/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

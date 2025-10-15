@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pstree
+launchpad install github.com/FredHucht/pstree
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pstree -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/FredHucht/pstree@2.40.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/gcc`
 
 ## Usage Examples
 

@@ -1,12 +1,12 @@
-# erlang.org
+# erlang
 
 > Programming language for highly scalable real-time systems
 
 ## Package Information
 
 - **Domain**: `erlang.org`
-- **Name**: `erlang.org`
-- **Homepage**: Not specified
+- **Name**: `erlang`
+- **Homepage**: https://www.erlang.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/erlang.org/package.yml)
 
 ## Installation
@@ -77,7 +77,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['erlang.org']
+const pkg = pantry.erlang
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -87,7 +87,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/erlang.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.erlang.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

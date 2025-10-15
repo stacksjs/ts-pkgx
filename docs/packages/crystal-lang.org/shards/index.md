@@ -6,14 +6,14 @@
 
 - **Domain**: `crystal-lang.org/shards`
 - **Name**: `shards`
-- **Homepage**: Not specified
+- **Homepage**: https://crystal-lang.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crystal-lang.org/shards/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install shards
+launchpad install crystal-lang.org/shards
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) shards -- $SHELL -i
+sh <(curl https://pkgx.sh) +crystal-lang.org/shards@0.19.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crystal-lang.org/shards/package.yml)
-- [Homepage](#)
+- [Homepage](https://crystal-lang.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

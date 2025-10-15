@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install hyperfine
+launchpad install crates.io/hyperfine
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) hyperfine -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/hyperfine@1.19.0 -- $SHELL -i
 ```
 
 ## Usage Examples

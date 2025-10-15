@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install ladder
+launchpad install github.com/everywall/ladder
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ladder -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/everywall/ladder@0.0.21 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21.1`
 
 ## Usage Examples
 

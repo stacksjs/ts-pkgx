@@ -1,12 +1,12 @@
-# mypy-lang.org
+# mypy-lang
 
 > Experimental optional static type checker for Python
 
 ## Package Information
 
 - **Domain**: `mypy-lang.org`
-- **Name**: `mypy-lang.org`
-- **Homepage**: Not specified
+- **Name**: `mypy-lang`
+- **Homepage**: https://www.mypy-lang.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mypy-lang.org/package.yml)
 
 ## Installation
@@ -59,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mypy-lang.org']
+const pkg = pantry['mypy-lang']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mypy-lang.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.mypy-lang.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

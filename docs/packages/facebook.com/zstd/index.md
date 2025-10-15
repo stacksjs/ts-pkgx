@@ -1,12 +1,12 @@
-# facebook.com/zstd
+# zstd
 
 > Zstandard - Fast real-time compression algorithm
 
 ## Package Information
 
 - **Domain**: `facebook.com/zstd`
-- **Name**: `facebook.com/zstd`
-- **Homepage**: Not specified
+- **Name**: `zstd`
+- **Homepage**: https://facebook.github.io/zstd/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/zstd/package.yml)
 
 ## Installation
@@ -60,7 +60,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['facebook.com/zstd']
+const pkg = pantry.zstd
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/zstd/package.yml)
-- [Homepage](#)
+- [Homepage](https://facebook.github.io/zstd/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `svenstaro.github.io/genact`
 - **Name**: `genact`
-- **Homepage**: Not specified
+- **Homepage**: https://svenstaro.github.io/genact/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/svenstaro.github.io/genact/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install genact
+launchpad install svenstaro.github.io/genact
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) genact -- $SHELL -i
+sh <(curl https://pkgx.sh) +svenstaro.github.io/genact@1.4.2 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/svenstaro.github.io/genact/package.yml)
-- [Homepage](#)
+- [Homepage](https://svenstaro.github.io/genact/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `aria2.github.io`
 - **Name**: `aria2c`
-- **Homepage**: Not specified
+- **Homepage**: https://aria2.github.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aria2.github.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install aria2c
+launchpad install aria2.github.io
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) aria2c -- $SHELL -i
+sh <(curl https://pkgx.sh) +aria2.github.io@1.37.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/aria2.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://aria2.github.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

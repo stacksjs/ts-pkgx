@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install jwt
+launchpad install crates.io/jwt-cli
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) jwt -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/jwt-cli@6.2.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@^3`
 
 ## Usage Examples
 

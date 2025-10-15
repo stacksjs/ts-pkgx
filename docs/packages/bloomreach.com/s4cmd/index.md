@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install s4cmd
+launchpad install bloomreach.com/s4cmd
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) s4cmd -- $SHELL -i
+sh <(curl https://pkgx.sh) +bloomreach.com/s4cmd@2.1.0 -- $SHELL -i
 ```
 
 ## Dependencies

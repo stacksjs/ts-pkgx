@@ -6,14 +6,14 @@
 
 - **Domain**: `gnu.org/gdbm`
 - **Name**: `gdbm`
-- **Homepage**: Not specified
+- **Homepage**: https://www.gnu.org.ua/software/gdbm/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gdbm/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gdbm
+launchpad install gnu.org/gdbm
 ```
 
 ## Programs
@@ -58,7 +58,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gdbm/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org.ua/software/gdbm/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `trippy.cli.rs`
 - **Name**: `trip`
-- **Homepage**: Not specified
+- **Homepage**: https://trippy.cli.rs/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/trippy.cli.rs/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install trip
+launchpad install trippy.cli.rs
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) trip -- $SHELL -i
+sh <(curl https://pkgx.sh) +trippy.cli.rs@0.13.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/trippy.cli.rs/package.yml)
-- [Homepage](#)
+- [Homepage](https://trippy.cli.rs/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

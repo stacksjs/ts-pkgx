@@ -1,19 +1,19 @@
-# xml2-config
+# xml
 
 > Read-only mirror of https://gitlab.gnome.org/GNOME/libxml2
 
 ## Package Information
 
 - **Domain**: `gnome.org/libxml2`
-- **Name**: `xml2-config`
-- **Homepage**: Not specified
+- **Name**: `xml`
+- **Homepage**: http://xmlsoft.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/libxml2/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install xml2-config
+launchpad install gnome.org/libxml2
 ```
 
 ## Programs
@@ -61,7 +61,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['xml2-config']
+const pkg = pantry.xml
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -71,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/libxml2/package.yml)
-- [Homepage](#)
+- [Homepage](http://xmlsoft.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -1,12 +1,12 @@
-# intel.com/libva
+# libva
 
 > Libva is an implementation for VA-API (Video Acceleration API)
 
 ## Package Information
 
 - **Domain**: `intel.com/libva`
-- **Name**: `intel.com/libva`
-- **Homepage**: Not specified
+- **Name**: `libva`
+- **Homepage**: http://intel.github.io/libva/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/intel.com/libva/package.yml)
 
 ## Installation
@@ -56,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['intel.com/libva']
+const pkg = pantry.libva
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/intel.com/libva/package.yml)
-- [Homepage](#)
+- [Homepage](http://intel.github.io/libva/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

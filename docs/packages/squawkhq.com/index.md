@@ -6,14 +6,14 @@
 
 - **Domain**: `squawkhq.com`
 - **Name**: `squawk`
-- **Homepage**: Not specified
+- **Homepage**: https://squawkhq.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/squawkhq.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install squawk
+launchpad install squawkhq.com
 ```
 
 ## Programs
@@ -47,8 +47,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) squawk -- $SHELL -i
+sh <(curl https://pkgx.sh) +squawkhq.com@2.28.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org`
+- `perl.org`
 
 ## Usage Examples
 
@@ -66,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/squawkhq.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://squawkhq.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `gnu.org/bash`
 - **Name**: `bash`
-- **Homepage**: Not specified
+- **Homepage**: https://www.gnu.org/software/bash/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/bash/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install bash
+launchpad install gnu.org/bash
 ```
 
 ## Programs
@@ -58,7 +58,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/bash/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org/software/bash/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

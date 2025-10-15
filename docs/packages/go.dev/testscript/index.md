@@ -6,14 +6,14 @@
 
 - **Domain**: `go.dev/testscript`
 - **Name**: `testscript`
-- **Homepage**: Not specified
+- **Homepage**: https://github.com/rogpeppe/go-internal/tree/master/cmd/testscript
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/go.dev/testscript/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install testscript
+launchpad install go.dev/testscript
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) testscript -- $SHELL -i
+sh <(curl https://pkgx.sh) +go.dev/testscript@1.14.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.21`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/go.dev/testscript/package.yml)
-- [Homepage](#)
+- [Homepage](https://github.com/rogpeppe/go-internal/tree/master/cmd/testscript)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

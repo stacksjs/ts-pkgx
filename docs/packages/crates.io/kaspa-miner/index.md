@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install kaspa-miner
+launchpad install crates.io/kaspa-miner
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) kaspa-miner -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/kaspa-miner@0.2.5 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `protobuf.dev@25`
 
 ## Usage Examples
 

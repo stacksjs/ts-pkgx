@@ -1,11 +1,11 @@
-# msgpack.org
+# msgpack
 
 > MessagePack implementation for C and C++ / msgpack.org[C/C++]
 
 ## Package Information
 
 - **Domain**: `msgpack.org`
-- **Name**: `msgpack.org`
+- **Name**: `msgpack`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/msgpack.org/package.yml)
 
@@ -40,13 +40,20 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +msgpack.org@6.0.2 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `google.com/googletest`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['msgpack.org']
+const pkg = pantry.msgpack
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

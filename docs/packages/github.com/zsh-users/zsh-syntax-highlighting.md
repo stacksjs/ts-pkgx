@@ -1,12 +1,12 @@
-# github.com/zsh-users/zsh-syntax-highlighting
+# zsh-syntax-highlighting
 
 > Fish shell like syntax highlighting for Zsh.
 
 ## Package Information
 
 - **Domain**: `github.com/zsh-users/zsh-syntax-highlighting`
-- **Name**: `github.com/zsh-users/zsh-syntax-highlighting`
-- **Homepage**: Not specified
+- **Name**: `zsh-syntax-highlighting`
+- **Homepage**: github.com/zsh-users/zsh-syntax-highlighting
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zsh-users/zsh-syntax-highlighting/package.yml)
 
 ## Installation
@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/zsh-users/zsh-syntax-highlighting@0.8.0 -
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/zsh-users/zsh-syntax-highlighting']
+const pkg = pantry['zsh-syntax-highlighting']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zsh-users/zsh-syntax-highlighting/package.yml)
-- [Homepage](#)
+- [Homepage](github.com/zsh-users/zsh-syntax-highlighting)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

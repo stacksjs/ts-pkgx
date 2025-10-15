@@ -1,19 +1,19 @@
-# pnpm
+# pnp
 
 > Fast, disk space efficient package manager
 
 ## Package Information
 
 - **Domain**: `pnpm.io`
-- **Name**: `pnpm`
-- **Homepage**: Not specified
+- **Name**: `pnp`
+- **Homepage**: https://pnpm.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pnpm.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pnpm
+launchpad install pnpm.io
 ```
 
 ## Programs
@@ -89,7 +89,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.pnpm
+const pkg = pantry.pnp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -99,7 +99,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pnpm.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://pnpm.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `exiftool.org`
 - **Name**: `exiftool`
-- **Homepage**: Not specified
+- **Homepage**: https://exiftool.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/exiftool.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install exiftool
+launchpad install exiftool.org
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) exiftool -- $SHELL -i
+sh <(curl https://pkgx.sh) +exiftool.org@13.36.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/exiftool.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://exiftool.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

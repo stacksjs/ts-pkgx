@@ -1,18 +1,22 @@
 /**
- * **helix-editor** - pkgx package
+ * **hx** - A post-modern modal text editor.
  *
  * @domain `helix-editor.com`
+ * @programs `hx`
  * @version `25.7.1` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install helix-editor.com`
+ * @homepage https://helix-editor.com
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.helixeditorcom
- * console.log(pkg.name)        // "helix-editor"
+ * console.log(pkg.name)        // "hx"
+ * console.log(pkg.description) // "A post-modern modal text editor."
+ * console.log(pkg.programs)    // ["hx"]
  * console.log(pkg.versions[0]) // "25.7.1" (latest)
  * ```
  *
@@ -23,7 +27,7 @@ export const helixeditorcomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'helix-editor' as const,
+  name: 'hx' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -31,10 +35,10 @@ export const helixeditorcomPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A post-modern modal text editor.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/helix-editor.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  homepageUrl: 'https://helix-editor.com' as const,
+  githubUrl: 'https://github.com/helix-editor/helix' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -42,7 +46,13 @@ export const helixeditorcomPackage = {
   installCommand: 'launchpad install helix-editor.com' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +helix-editor.com -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install helix-editor.com' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'hx',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
   /**

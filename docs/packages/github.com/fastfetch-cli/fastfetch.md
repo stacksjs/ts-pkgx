@@ -1,11 +1,11 @@
-# github.com/fastfetch-cli/fastfetch
+# fastfetch
 
 > A maintained, feature-rich and performance oriented, neofetch like system information tool.
 
 ## Package Information
 
 - **Domain**: `github.com/fastfetch-cli/fastfetch`
-- **Name**: `github.com/fastfetch-cli/fastfetch`
+- **Name**: `fastfetch`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/fastfetch-cli/fastfetch/package.yml)
 
@@ -47,13 +47,31 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/fastfetch-cli/fastfetch@2.53.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@^3`
+- `gnome.org/glib@^2`
+- `imagemagick.org@^7`
+- `python.org@~3.12`
+- `sqlite.org@^3`
+- `zlib.net@^1`
+- `linux:freedesktop.org/dbus@^1`
+- `linux:elfutils.org@^0`
+- `linux:x.org/x11@^1`
+- `linux:x.org/xcb@^1`
+- `linux:x.org/xrandr@^1`
+- `linux:mesa3d.org@^24`
+- `linux:wayland.freedesktop.org@^1`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/fastfetch-cli/fastfetch']
+const pkg = pantry.fastfetch
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

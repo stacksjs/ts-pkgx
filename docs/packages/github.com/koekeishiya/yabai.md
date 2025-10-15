@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install yabai
+launchpad install github.com/koekeishiya/yabai
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) yabai -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/koekeishiya/yabai@7.1.16 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install speedtest
+launchpad install github.com/sivel/speedtest-cli
 ```
 
 ## Programs

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install dy
+launchpad install github.com/awslabs/dynein
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dy -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/awslabs/dynein@0.3.0 -- $SHELL -i
 ```
 
 ## Dependencies

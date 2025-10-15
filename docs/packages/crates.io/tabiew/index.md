@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install tw
+launchpad install crates.io/tabiew
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tw -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/tabiew@0.11.1 -- $SHELL -i
 ```
 
 ## Dependencies

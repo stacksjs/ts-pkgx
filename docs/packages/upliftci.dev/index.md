@@ -6,14 +6,14 @@
 
 - **Domain**: `upliftci.dev`
 - **Name**: `uplift`
-- **Homepage**: Not specified
+- **Homepage**: https://upliftci.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/upliftci.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install uplift
+launchpad install upliftci.dev
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) uplift -- $SHELL -i
+sh <(curl https://pkgx.sh) +upliftci.dev@2.26.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
 
 ## Usage Examples
 
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/upliftci.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://upliftci.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

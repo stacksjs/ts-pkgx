@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/OutOfBedlam/tine`
 - **Name**: `tine`
-- **Homepage**: Not specified
+- **Homepage**: https://tine.thingsme.xyz
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/OutOfBedlam/tine/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install tine
+launchpad install github.com/OutOfBedlam/tine
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tine -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/OutOfBedlam/tine@0.0.7 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.22`
 
 ## Usage Examples
 
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/OutOfBedlam/tine/package.yml)
-- [Homepage](#)
+- [Homepage](https://tine.thingsme.xyz)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

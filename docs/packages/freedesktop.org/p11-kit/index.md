@@ -1,12 +1,12 @@
-# freedesktop.org/p11-kit
+# p11-kit
 
 > Provides a way to load and enumerate PKCS#11 modules.
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/p11-kit`
-- **Name**: `freedesktop.org/p11-kit`
-- **Homepage**: Not specified
+- **Name**: `p11-kit`
+- **Homepage**: https://p11-glue.freedesktop.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/p11-kit/package.yml)
 
 ## Installation
@@ -58,7 +58,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['freedesktop.org/p11-kit']
+const pkg = pantry['p11-kit']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/p11-kit/package.yml)
-- [Homepage](#)
+- [Homepage](https://p11-glue.freedesktop.org)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

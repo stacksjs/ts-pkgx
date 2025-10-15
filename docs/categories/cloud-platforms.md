@@ -12,7 +12,7 @@ CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
 
 **Programs**: sam
 
-**Install**: `launchpad install sam`
+**Install**: `launchpad install aws.amazon.com/sam`
 
 ---
 
@@ -22,7 +22,7 @@ Command line tools for fly.io services
 
 **Programs**: fly, flyctl
 
-**Install**: `launchpad install fly`
+**Install**: `launchpad install fly.io`
 
 ---
 
@@ -32,7 +32,7 @@ CLI for Heroku
 
 **Programs**: heroku
 
-**Install**: `launchpad install heroku`
+**Install**: `launchpad install heroku.com`
 
 ---
 
@@ -42,7 +42,7 @@ The LocalStack CLI packaged using pyinstaller
 
 **Programs**: localstack
 
-**Install**: `launchpad install localstack`
+**Install**: `launchpad install localstack.cloud/cli`
 
 ---
 
@@ -52,7 +52,7 @@ The CLI for PlanetScale Database
 
 **Programs**: pscale
 
-**Install**: `launchpad install pscale`
+**Install**: `launchpad install planetscale.com`
 
 ---
 
@@ -62,7 +62,7 @@ Develop and deploy code with zero configuration
 
 **Programs**: railway
 
-**Install**: `launchpad install railway`
+**Install**: `launchpad install railway.app`
 
 ---
 
@@ -72,7 +72,7 @@ Command-line interface for Render
 
 **Programs**: render
 
-**Install**: `launchpad install render`
+**Install**: `launchpad install render.com`
 
 ---
 
@@ -82,7 +82,7 @@ Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge func
 
 **Programs**: supabase
 
-**Install**: `launchpad install supabase`
+**Install**: `launchpad install supabase.com/cli`
 
 ---
 

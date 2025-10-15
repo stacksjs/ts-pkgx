@@ -6,14 +6,14 @@
 
 - **Domain**: `f1bonacc1.github.io/process-compose`
 - **Name**: `process-compose`
-- **Homepage**: Not specified
+- **Homepage**: https://f1bonacc1.github.io/process-compose/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/f1bonacc1.github.io/process-compose/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install process-compose
+launchpad install f1bonacc1.github.io/process-compose
 ```
 
 ## Programs
@@ -40,8 +40,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) process-compose -- $SHELL -i
+sh <(curl https://pkgx.sh) +f1bonacc1.github.io/process-compose@1.75.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@=1.23.8`
 
 ## Usage Examples
 
@@ -59,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/f1bonacc1.github.io/process-compose/package.yml)
-- [Homepage](#)
+- [Homepage](https://f1bonacc1.github.io/process-compose/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

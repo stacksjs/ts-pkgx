@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install gen-ir
+launchpad install veracode.com/gen-ir
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gen-ir -- $SHELL -i
+sh <(curl https://pkgx.sh) +veracode.com/gen-ir@0.5.4 -- $SHELL -i
 ```
 
 ## Usage Examples

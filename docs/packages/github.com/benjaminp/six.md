@@ -1,12 +1,12 @@
-# github.com/benjaminp/six
+# six
 
 > Python 2 and 3 compatibility library
 
 ## Package Information
 
 - **Domain**: `github.com/benjaminp/six`
-- **Name**: `github.com/benjaminp/six`
-- **Homepage**: Not specified
+- **Name**: `six`
+- **Homepage**: https://six.readthedocs.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/benjaminp/six/package.yml)
 
 ## Installation
@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/benjaminp/six']
+const pkg = pantry.six
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/benjaminp/six/package.yml)
-- [Homepage](#)
+- [Homepage](https://six.readthedocs.io/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `gnu.org/stow`
 - **Name**: `stow`
-- **Homepage**: Not specified
+- **Homepage**: https://www.gnu.org/software/stow/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/stow/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install stow
+launchpad install gnu.org/stow
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) stow -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnu.org/stow@2.4.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/stow/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org/software/stow/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

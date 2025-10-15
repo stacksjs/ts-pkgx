@@ -6,14 +6,14 @@
 
 - **Domain**: `velero.io`
 - **Name**: `velero`
-- **Homepage**: Not specified
+- **Homepage**: https://velero.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/velero.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install velero
+launchpad install velero.io
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) velero -- $SHELL -i
+sh <(curl https://pkgx.sh) +velero.io@1.17.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.23.8`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/velero.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://velero.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

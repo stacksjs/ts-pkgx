@@ -1,12 +1,12 @@
-# github.com/kdave/btrfs-progs
+# btrfs-progs
 
 > Userspace utilities to manage btrfs filesystems
 
 ## Package Information
 
 - **Domain**: `github.com/kdave/btrfs-progs`
-- **Name**: `github.com/kdave/btrfs-progs`
-- **Homepage**: Not specified
+- **Name**: `btrfs-progs`
+- **Homepage**: https://btrfs.readthedocs.io/en/latest/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kdave/btrfs-progs/package.yml)
 
 ## Installation
@@ -70,7 +70,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/kdave/btrfs-progs']
+const pkg = pantry['btrfs-progs']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -80,7 +80,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kdave/btrfs-progs/package.yml)
-- [Homepage](#)
+- [Homepage](https://btrfs.readthedocs.io/en/latest/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/git-absorb`
 - **Name**: `git-absorb`
-- **Homepage**: Not specified
+- **Homepage**: https://crates.io/crates/git-absorb
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/git-absorb/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install git-absorb
+launchpad install crates.io/git-absorb
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) git-absorb -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/git-absorb@0.8.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/git-absorb/package.yml)
-- [Homepage](#)
+- [Homepage](https://crates.io/crates/git-absorb)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -1,11 +1,11 @@
-# github.com/danfis/libccd
+# libccd
 
 > Library for collision detection between two convex shapes
 
 ## Package Information
 
 - **Domain**: `github.com/danfis/libccd`
-- **Name**: `github.com/danfis/libccd`
+- **Name**: `libccd`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/danfis/libccd/package.yml)
 
@@ -40,13 +40,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/danfis/libccd@2.1.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/danfis/libccd']
+const pkg = pantry.libccd
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

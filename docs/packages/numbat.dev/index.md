@@ -6,14 +6,14 @@
 
 - **Domain**: `numbat.dev`
 - **Name**: `numbat`
-- **Homepage**: Not specified
+- **Homepage**: https://numbat.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/numbat.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install numbat
+launchpad install numbat.dev
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) numbat -- $SHELL -i
+sh <(curl https://pkgx.sh) +numbat.dev@1.16.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/numbat.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://numbat.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

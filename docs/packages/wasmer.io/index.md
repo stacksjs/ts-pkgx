@@ -6,14 +6,14 @@
 
 - **Domain**: `wasmer.io`
 - **Name**: `wasmer`
-- **Homepage**: Not specified
+- **Homepage**: https://wasmer.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wasmer.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install wasmer
+launchpad install wasmer.io
 ```
 
 ## Programs
@@ -41,8 +41,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) wasmer -- $SHELL -i
+sh <(curl https://pkgx.sh) +wasmer.io@6.1.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `nodejs.org@^18`
+- `gnu.org/make@^4`
 
 ## Usage Examples
 
@@ -60,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/wasmer.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://wasmer.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

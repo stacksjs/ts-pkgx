@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install driftctl
+launchpad install snyk.io/driftctl
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) driftctl -- $SHELL -i
+sh <(curl https://pkgx.sh) +snyk.io/driftctl@0.40.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 

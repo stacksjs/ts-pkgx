@@ -6,14 +6,14 @@
 
 - **Domain**: `kornel.ski/dssim`
 - **Name**: `dssim`
-- **Homepage**: Not specified
+- **Homepage**: https://kornel.ski/dssim
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kornel.ski/dssim/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install dssim
+launchpad install kornel.ski/dssim
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dssim -- $SHELL -i
+sh <(curl https://pkgx.sh) +kornel.ski/dssim@3.4.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/kornel.ski/dssim/package.yml)
-- [Homepage](#)
+- [Homepage](https://kornel.ski/dssim)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

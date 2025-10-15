@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install bazel
+launchpad install github.com/bazelbuild/bazelisk
 ```
 
 ## Programs

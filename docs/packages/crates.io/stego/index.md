@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install stego
+launchpad install crates.io/stego
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) stego -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/stego@2019.10.22 -- $SHELL -i
 ```
 
 ## Usage Examples

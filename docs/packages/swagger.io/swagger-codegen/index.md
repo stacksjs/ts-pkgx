@@ -6,14 +6,14 @@
 
 - **Domain**: `swagger.io/swagger-codegen`
 - **Name**: `swagger-codegen`
-- **Homepage**: Not specified
+- **Homepage**: https://swagger.io/tools/swagger-codegen/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/swagger.io/swagger-codegen/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install swagger-codegen
+launchpad install swagger.io/swagger-codegen
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) swagger-codegen -- $SHELL -i
+sh <(curl https://pkgx.sh) +swagger.io/swagger-codegen@3.0.74 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/swagger.io/swagger-codegen/package.yml)
-- [Homepage](#)
+- [Homepage](https://swagger.io/tools/swagger-codegen/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

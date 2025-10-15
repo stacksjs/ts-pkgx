@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pop
+launchpad install charm.sh/pop
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pop -- $SHELL -i
+sh <(curl https://pkgx.sh) +charm.sh/pop@0.2.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
 
 ## Usage Examples
 

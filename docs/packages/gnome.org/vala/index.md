@@ -1,12 +1,12 @@
-# gnome.org/vala
+# vala
 
 > Compiler for the GObject type system
 
 ## Package Information
 
 - **Domain**: `gnome.org/vala`
-- **Name**: `gnome.org/vala`
-- **Homepage**: Not specified
+- **Name**: `vala`
+- **Homepage**: https://wiki.gnome.org/Projects/Vala
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/vala/package.yml)
 
 ## Installation
@@ -60,7 +60,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnome.org/vala']
+const pkg = pantry.vala
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/vala/package.yml)
-- [Homepage](#)
+- [Homepage](https://wiki.gnome.org/Projects/Vala)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

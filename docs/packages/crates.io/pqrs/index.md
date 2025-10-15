@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pqrs
+launchpad install crates.io/pqrs
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pqrs -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/pqrs@0.3.2 -- $SHELL -i
 ```
 
 ## Usage Examples

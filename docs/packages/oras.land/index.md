@@ -6,14 +6,14 @@
 
 - **Domain**: `oras.land`
 - **Name**: `oras`
-- **Homepage**: Not specified
+- **Homepage**: https://oras.land
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/oras.land/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install oras
+launchpad install oras.land
 ```
 
 ## Programs
@@ -37,8 +37,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) oras -- $SHELL -i
+sh <(curl https://pkgx.sh) +oras.land@1.3.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
+- `goreleaser.com`
 
 ## Usage Examples
 
@@ -56,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/oras.land/package.yml)
-- [Homepage](#)
+- [Homepage](https://oras.land)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

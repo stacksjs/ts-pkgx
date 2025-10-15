@@ -6,14 +6,14 @@
 
 - **Domain**: `hurl.dev`
 - **Name**: `hurl`
-- **Homepage**: Not specified
+- **Homepage**: https://hurl.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hurl.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install hurl
+launchpad install hurl.dev
 ```
 
 ## Programs
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/hurl.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://hurl.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

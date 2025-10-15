@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install kaspa
+launchpad install github.com/kaspanet/rusty-kaspa
 ```
 
 ## Programs

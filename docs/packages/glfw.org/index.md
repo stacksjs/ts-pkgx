@@ -1,12 +1,12 @@
-# glfw.org
+# glfw
 
 > A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and input
 
 ## Package Information
 
 - **Domain**: `glfw.org`
-- **Name**: `glfw.org`
-- **Homepage**: Not specified
+- **Name**: `glfw`
+- **Homepage**: https://www.glfw.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/glfw.org/package.yml)
 
 ## Installation
@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['glfw.org']
+const pkg = pantry.glfw
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/glfw.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.glfw.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

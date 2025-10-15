@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install sccache
+launchpad install crates.io/sccache
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sccache -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/sccache@0.11.0 -- $SHELL -i
 ```
 
 ## Dependencies

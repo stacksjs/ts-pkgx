@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install term-size
+launchpad install github.com/sindresorhus/macos-term-size
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) term-size -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/sindresorhus/macos-term-size@1.0.0 -- $SHELL -i
 ```
 
 ## Usage Examples

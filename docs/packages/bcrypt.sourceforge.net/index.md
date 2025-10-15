@@ -6,14 +6,14 @@
 
 - **Domain**: `bcrypt.sourceforge.net`
 - **Name**: `bcrypt`
-- **Homepage**: Not specified
+- **Homepage**: https://bcrypt.sourceforge.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bcrypt.sourceforge.net/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install bcrypt
+launchpad install bcrypt.sourceforge.net
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) bcrypt -- $SHELL -i
+sh <(curl https://pkgx.sh) +bcrypt.sourceforge.net@1.1.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/bcrypt.sourceforge.net/package.yml)
-- [Homepage](#)
+- [Homepage](https://bcrypt.sourceforge.net/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

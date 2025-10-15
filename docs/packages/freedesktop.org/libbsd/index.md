@@ -1,12 +1,12 @@
-# freedesktop.org/libbsd
+# libbsd
 
 > BSD compatibility library (mirror)
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/libbsd`
-- **Name**: `freedesktop.org/libbsd`
-- **Homepage**: Not specified
+- **Name**: `libbsd`
+- **Homepage**: https://libbsd.freedesktop.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/libbsd/package.yml)
 
 ## Installation
@@ -40,13 +40,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +freedesktop.org/libbsd@0.11.7 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `hadrons.org/libmd`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['freedesktop.org/libbsd']
+const pkg = pantry.libbsd
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/libbsd/package.yml)
-- [Homepage](#)
+- [Homepage](https://libbsd.freedesktop.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

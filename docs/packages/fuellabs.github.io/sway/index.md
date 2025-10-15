@@ -6,14 +6,14 @@
 
 - **Domain**: `fuellabs.github.io/sway`
 - **Name**: `forc`
-- **Homepage**: Not specified
+- **Homepage**: https://docs.fuel.network/docs/sway/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fuellabs.github.io/sway/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install forc
+launchpad install fuellabs.github.io/sway
 ```
 
 ## Programs
@@ -53,7 +53,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) forc -- $SHELL -i
+sh <(curl https://pkgx.sh) +fuellabs.github.io/sway@0.70.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -79,7 +79,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/fuellabs.github.io/sway/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.fuel.network/docs/sway/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

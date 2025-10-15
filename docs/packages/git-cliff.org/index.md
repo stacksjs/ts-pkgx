@@ -6,14 +6,14 @@
 
 - **Domain**: `git-cliff.org`
 - **Name**: `git-cliff`
-- **Homepage**: Not specified
+- **Homepage**: https://git-cliff.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/git-cliff.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install git-cliff
+launchpad install git-cliff.org
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) git-cliff -- $SHELL -i
+sh <(curl https://pkgx.sh) +git-cliff.org@2.10.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/git-cliff.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://git-cliff.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

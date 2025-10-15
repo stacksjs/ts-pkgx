@@ -6,14 +6,14 @@
 
 - **Domain**: `maven.apache.org`
 - **Name**: `mvn`
-- **Homepage**: Not specified
+- **Homepage**: https://maven.apache.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/maven.apache.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mvn
+launchpad install maven.apache.org
 ```
 
 ## Programs
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/maven.apache.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://maven.apache.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

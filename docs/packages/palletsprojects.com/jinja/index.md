@@ -6,14 +6,14 @@
 
 - **Domain**: `palletsprojects.com/jinja`
 - **Name**: `python-jinja`
-- **Homepage**: Not specified
+- **Homepage**: https://jinja.palletsprojects.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/palletsprojects.com/jinja/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install python-jinja
+launchpad install palletsprojects.com/jinja
 ```
 
 ## Programs
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/palletsprojects.com/jinja/package.yml)
-- [Homepage](#)
+- [Homepage](https://jinja.palletsprojects.com)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

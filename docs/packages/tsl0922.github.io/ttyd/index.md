@@ -6,14 +6,14 @@
 
 - **Domain**: `tsl0922.github.io/ttyd`
 - **Name**: `ttyd`
-- **Homepage**: Not specified
+- **Homepage**: https://tsl0922.github.io/ttyd/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tsl0922.github.io/ttyd/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ttyd
+launchpad install tsl0922.github.io/ttyd
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ttyd -- $SHELL -i
+sh <(curl https://pkgx.sh) +tsl0922.github.io/ttyd@1.7.7 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tsl0922.github.io/ttyd/package.yml)
-- [Homepage](#)
+- [Homepage](https://tsl0922.github.io/ttyd/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install node-build
+launchpad install github.com/nodenv/node-build
 ```
 
 ## Programs
@@ -56,7 +56,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) node-build -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/nodenv/node-build@5.4.13 -- $SHELL -i
 ```
 
 ## Dependencies

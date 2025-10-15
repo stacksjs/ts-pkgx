@@ -1,19 +1,19 @@
-# srt-ffplay
+# srt
 
 > Secure, Reliable, Transport
 
 ## Package Information
 
 - **Domain**: `srtalliance.org`
-- **Name**: `srt-ffplay`
-- **Homepage**: Not specified
+- **Name**: `srt`
+- **Homepage**: https://www.srtalliance.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/srtalliance.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install srt-ffplay
+launchpad install srtalliance.org
 ```
 
 ## Programs
@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['srt-ffplay']
+const pkg = pantry.srt
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/srtalliance.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.srtalliance.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `hjson.github.io`
 - **Name**: `hjson`
-- **Homepage**: Not specified
+- **Homepage**: https://hjson.github.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hjson.github.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install hjson
+launchpad install hjson.github.io
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) hjson -- $SHELL -i
+sh <(curl https://pkgx.sh) +hjson.github.io@1.1.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/hjson.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://hjson.github.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

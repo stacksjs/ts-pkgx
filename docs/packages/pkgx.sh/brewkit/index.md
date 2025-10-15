@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install bk
+launchpad install pkgx.sh/brewkit
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `bk`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `bk`
 
@@ -55,7 +49,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) bk -- $SHELL -i
+sh <(curl https://pkgx.sh) +pkgx.sh/brewkit@1.16.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -72,7 +66,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.bk
+const pkg = pantry.brewkit
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

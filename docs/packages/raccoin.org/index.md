@@ -6,14 +6,14 @@
 
 - **Domain**: `raccoin.org`
 - **Name**: `raccoin`
-- **Homepage**: Not specified
+- **Homepage**: https://raccoin.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/raccoin.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install raccoin
+launchpad install raccoin.org
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) raccoin -- $SHELL -i
+sh <(curl https://pkgx.sh) +raccoin.org@0.2.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/raccoin.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://raccoin.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install checkexec
+launchpad install crates.io/checkexec
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) checkexec -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/checkexec@0.2.0 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -1,12 +1,12 @@
-# ghostscript.com
+# ghostscript
 
 > This is purely for downloads, please check the website for full information
 
 ## Package Information
 
 - **Domain**: `ghostscript.com`
-- **Name**: `ghostscript.com`
-- **Homepage**: Not specified
+- **Name**: `ghostscript`
+- **Homepage**: https://www.ghostscript.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ghostscript.com/package.yml)
 
 ## Installation
@@ -95,7 +95,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ghostscript.com']
+const pkg = pantry.ghostscript
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -105,7 +105,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ghostscript.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.ghostscript.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

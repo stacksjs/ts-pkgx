@@ -1,12 +1,12 @@
-# gnu.org/binutils
+# binutils
 
 > GNU binary tools for native development
 
 ## Package Information
 
 - **Domain**: `gnu.org/binutils`
-- **Name**: `gnu.org/binutils`
-- **Homepage**: Not specified
+- **Name**: `binutils`
+- **Homepage**: https://www.gnu.org/software/binutils/binutils.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/binutils/package.yml)
 
 ## Installation
@@ -52,13 +52,21 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +gnu.org/binutils@2.45.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/bison`
+- `gnu.org/texinfo`
+- `linux:gnu.org/gcc`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/binutils']
+const pkg = pantry.binutils
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -68,7 +76,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/binutils/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org/software/binutils/binutils.html)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

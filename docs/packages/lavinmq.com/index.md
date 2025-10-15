@@ -6,14 +6,14 @@
 
 - **Domain**: `lavinmq.com`
 - **Name**: `lavinmq`
-- **Homepage**: Not specified
+- **Homepage**: https://lavinmq.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lavinmq.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install lavinmq
+launchpad install lavinmq.com
 ```
 
 ## Programs
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/lavinmq.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://lavinmq.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -1,12 +1,12 @@
-# openresty.org
+# openresty
 
 > High Performance Web Platform Based on Nginx and LuaJIT
 
 ## Package Information
 
 - **Domain**: `openresty.org`
-- **Name**: `openresty.org`
-- **Homepage**: Not specified
+- **Name**: `openresty`
+- **Homepage**: https://openresty.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openresty.org/package.yml)
 
 ## Installation
@@ -59,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['openresty.org']
+const pkg = pantry.openresty
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openresty.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://openresty.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

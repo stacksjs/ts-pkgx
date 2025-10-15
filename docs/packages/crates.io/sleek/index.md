@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install sleek
+launchpad install crates.io/sleek
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sleek -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/sleek@0.5.0 -- $SHELL -i
 ```
 
 ## Usage Examples

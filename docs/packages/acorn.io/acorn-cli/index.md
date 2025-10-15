@@ -6,14 +6,14 @@
 
 - **Domain**: `acorn.io/acorn-cli`
 - **Name**: `acorn`
-- **Homepage**: Not specified
+- **Homepage**: https://docs.acorn.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/acorn.io/acorn-cli/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install acorn
+launchpad install acorn.io/acorn-cli
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) acorn -- $SHELL -i
+sh <(curl https://pkgx.sh) +acorn.io/acorn-cli@0.10.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/acorn.io/acorn-cli/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.acorn.io/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

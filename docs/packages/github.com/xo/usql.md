@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install usql
+launchpad install github.com/xo/usql
 ```
 
 ## Programs
@@ -42,8 +42,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) usql -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/xo/usql@0.19.26 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
+- `crates.io/sd`
 
 ## Usage Examples
 

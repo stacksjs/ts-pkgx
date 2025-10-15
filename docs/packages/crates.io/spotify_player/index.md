@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install spotify_player
+launchpad install crates.io/spotify_player
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) spotify_player -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/spotify_player@0.21.1 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -6,14 +6,14 @@
 
 - **Domain**: `docker.com/compose`
 - **Name**: `docker-compose`
-- **Homepage**: Not specified
+- **Homepage**: https://docs.docker.com/compose/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/docker.com/compose/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install docker-compose
+launchpad install docker.com/compose
 ```
 
 ## Programs
@@ -49,8 +49,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) docker-compose -- $SHELL -i
+sh <(curl https://pkgx.sh) +docker.com/compose@2.40.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 
@@ -68,7 +74,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/docker.com/compose/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.docker.com/compose/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

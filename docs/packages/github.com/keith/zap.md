@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install zap
+launchpad install github.com/keith/zap
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) zap -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/keith/zap@1.2.0 -- $SHELL -i
 ```
 
 ## Usage Examples

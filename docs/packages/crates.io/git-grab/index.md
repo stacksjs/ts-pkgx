@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install git-grab
+launchpad install crates.io/git-grab
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) git-grab -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/git-grab@3.0.0 -- $SHELL -i
 ```
 
 ## Usage Examples

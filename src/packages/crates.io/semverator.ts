@@ -7,7 +7,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/semverator`
- * @dependencies `if@>=0.6.0`
  *
  * @example
  * ```typescript
@@ -53,13 +52,7 @@ export const cratesiosemveratorPackage = {
     'semverator',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'if@>=0.6.0',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

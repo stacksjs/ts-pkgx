@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install ksops
+launchpad install viaduct.ai/ksops
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ksops -- $SHELL -i
+sh <(curl https://pkgx.sh) +viaduct.ai/ksops@4.4.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.22`
 
 ## Usage Examples
 

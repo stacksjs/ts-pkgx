@@ -6,14 +6,14 @@
 
 - **Domain**: `facebook.com/watchman`
 - **Name**: `watchman`
-- **Homepage**: Not specified
+- **Homepage**: https://facebook.github.io/watchman/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/watchman/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install watchman
+launchpad install facebook.com/watchman
 ```
 
 ## Programs
@@ -91,7 +91,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/watchman/package.yml)
-- [Homepage](#)
+- [Homepage](https://facebook.github.io/watchman/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

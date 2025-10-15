@@ -1,12 +1,12 @@
-# gts.sourceforge.net
+# gts.sourceforge
 
 > GNU triangulated surface library
 
 ## Package Information
 
 - **Domain**: `gts.sourceforge.net`
-- **Name**: `gts.sourceforge.net`
-- **Homepage**: Not specified
+- **Name**: `gts.sourceforge`
+- **Homepage**: https://gts.sourceforge.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gts.sourceforge.net/package.yml)
 
 ## Installation
@@ -60,7 +60,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gts.sourceforge.net']
+const pkg = pantry['gts.sourceforge']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gts.sourceforge.net/package.yml)
-- [Homepage](#)
+- [Homepage](https://gts.sourceforge.net/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `gradle.org`
 - **Name**: `gradle`
-- **Homepage**: Not specified
+- **Homepage**: https://www.gradle.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gradle.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gradle
+launchpad install gradle.org
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gradle -- $SHELL -i
+sh <(curl https://pkgx.sh) +gradle.org@9.1.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gradle.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gradle.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

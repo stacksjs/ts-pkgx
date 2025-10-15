@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/mitsuhiko/when`
 - **Name**: `when`
-- **Homepage**: Not specified
+- **Homepage**: https://www.lightandmatter.com/when/when.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mitsuhiko/when/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install when
+launchpad install github.com/mitsuhiko/when
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) when -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/mitsuhiko/when@0.4.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mitsuhiko/when/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.lightandmatter.com/when/when.html)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

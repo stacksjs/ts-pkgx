@@ -6,14 +6,14 @@
 
 - **Domain**: `operatorframework.io/operator-sdk`
 - **Name**: `operator-sdk`
-- **Homepage**: Not specified
+- **Homepage**: https://sdk.operatorframework.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/operatorframework.io/operator-sdk/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install operator-sdk
+launchpad install operatorframework.io/operator-sdk
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) operator-sdk -- $SHELL -i
+sh <(curl https://pkgx.sh) +operatorframework.io/operator-sdk@1.41.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/operatorframework.io/operator-sdk/package.yml)
-- [Homepage](#)
+- [Homepage](https://sdk.operatorframework.io/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

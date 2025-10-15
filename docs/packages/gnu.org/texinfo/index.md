@@ -1,12 +1,12 @@
-# gnu.org/texinfo
+# texinfo
 
 > Official documentation format of the GNU project
 
 ## Package Information
 
 - **Domain**: `gnu.org/texinfo`
-- **Name**: `gnu.org/texinfo`
-- **Homepage**: Not specified
+- **Name**: `texinfo`
+- **Homepage**: https://www.gnu.org/software/texinfo/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/texinfo/package.yml)
 
 ## Installation
@@ -60,7 +60,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/texinfo']
+const pkg = pantry.texinfo
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/texinfo/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org/software/texinfo/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

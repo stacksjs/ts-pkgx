@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/git-gone`
 - **Name**: `git-gone`
-- **Homepage**: Not specified
+- **Homepage**: https://crates.io/crates/git-gone
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/git-gone/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install git-gone
+launchpad install crates.io/git-gone
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) git-gone -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/git-gone@1.2.5 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/git-gone/package.yml)
-- [Homepage](#)
+- [Homepage](https://crates.io/crates/git-gone)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

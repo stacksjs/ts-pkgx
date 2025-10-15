@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install gox
+launchpad install github.com/mitchellh/gox
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gox -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/mitchellh/gox@1.0.1 -- $SHELL -i
 ```
 
 ## Dependencies

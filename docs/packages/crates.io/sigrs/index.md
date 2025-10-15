@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install sig
+launchpad install crates.io/sigrs
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sig -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/sigrs@0.2.1 -- $SHELL -i
 ```
 
 ## Usage Examples

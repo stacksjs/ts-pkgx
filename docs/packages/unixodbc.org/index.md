@@ -1,12 +1,12 @@
-# unixodbc.org
+# unixodbc
 
 > The unixODBC Project goals are to develop and promote unixODBC to be the definitive standard for ODBC on non MS Windows platforms.
 
 ## Package Information
 
 - **Domain**: `unixodbc.org`
-- **Name**: `unixodbc.org`
-- **Homepage**: Not specified
+- **Name**: `unixodbc`
+- **Homepage**: https://www.unixodbc.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/unixodbc.org/package.yml)
 
 ## Installation
@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['unixodbc.org']
+const pkg = pantry.unixodbc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/unixodbc.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.unixodbc.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

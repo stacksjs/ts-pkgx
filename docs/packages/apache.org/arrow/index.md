@@ -1,12 +1,12 @@
-# apache.org/arrow
+# arrow
 
 > Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics
 
 ## Package Information
 
 - **Domain**: `apache.org/arrow`
-- **Name**: `apache.org/arrow`
-- **Homepage**: Not specified
+- **Name**: `arrow`
+- **Homepage**: https://arrow.apache.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/arrow/package.yml)
 
 ## Installation
@@ -71,7 +71,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['apache.org/arrow']
+const pkg = pantry.arrow
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -81,7 +81,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/arrow/package.yml)
-- [Homepage](#)
+- [Homepage](https://arrow.apache.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

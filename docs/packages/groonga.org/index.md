@@ -6,14 +6,14 @@
 
 - **Domain**: `groonga.org`
 - **Name**: `groonga`
-- **Homepage**: Not specified
+- **Homepage**: https://groonga.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/groonga.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install groonga
+launchpad install groonga.org
 ```
 
 ## Programs
@@ -75,7 +75,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/groonga.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://groonga.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

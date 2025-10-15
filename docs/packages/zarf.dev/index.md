@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install zarf
+launchpad install zarf.dev
 ```
 
 ## Programs
@@ -47,8 +47,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) zarf -- $SHELL -i
+sh <(curl https://pkgx.sh) +zarf.dev@0.63.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 

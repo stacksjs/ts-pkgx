@@ -6,14 +6,14 @@
 
 - **Domain**: `simplesystems.org/libtiff`
 - **Name**: `tiff`
-- **Homepage**: Not specified
+- **Homepage**: https://libtiff.gitlab.io/libtiff/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/simplesystems.org/libtiff/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install tiff
+launchpad install simplesystems.org/libtiff
 ```
 
 ## Programs
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/simplesystems.org/libtiff/package.yml)
-- [Homepage](#)
+- [Homepage](https://libtiff.gitlab.io/libtiff/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

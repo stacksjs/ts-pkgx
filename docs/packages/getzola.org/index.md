@@ -6,14 +6,14 @@
 
 - **Domain**: `getzola.org`
 - **Name**: `zola`
-- **Homepage**: Not specified
+- **Homepage**: https://www.getzola.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getzola.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install zola
+launchpad install getzola.org
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) zola -- $SHELL -i
+sh <(curl https://pkgx.sh) +getzola.org@0.21.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/getzola.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.getzola.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

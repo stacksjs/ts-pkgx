@@ -6,14 +6,14 @@
 
 - **Domain**: `fukuchi.org/qrencode`
 - **Name**: `qrencode`
-- **Homepage**: Not specified
+- **Homepage**: https://fukuchi.org/works/qrencode/index.html.en
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fukuchi.org/qrencode/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install qrencode
+launchpad install fukuchi.org/qrencode
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) qrencode -- $SHELL -i
+sh <(curl https://pkgx.sh) +fukuchi.org/qrencode@4.1.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/fukuchi.org/qrencode/package.yml)
-- [Homepage](#)
+- [Homepage](https://fukuchi.org/works/qrencode/index.html.en)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

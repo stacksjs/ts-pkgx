@@ -8,7 +8,6 @@
  *
  * @install `launchpad install crates.io/cavif`
  * @homepage https://lib.rs/cavif
- * @dependencies `nasm.us`
  *
  * @example
  * ```typescript
@@ -55,13 +54,7 @@ export const cratesiocavifPackage = {
     'cavif',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'nasm.us',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

@@ -1,12 +1,12 @@
-# mysql.com
+# mysql
 
 > MySQL Server, the world's most popular open source database, and MySQL Cluster, a real-time, open source transactional database.
 
 ## Package Information
 
 - **Domain**: `mysql.com`
-- **Name**: `mysql.com`
-- **Homepage**: Not specified
+- **Name**: `mysql`
+- **Homepage**: http://www.mysql.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mysql.com/package.yml)
 
 ## Installation
@@ -97,7 +97,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mysql.com']
+const pkg = pantry.mysql
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -107,7 +107,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mysql.com/package.yml)
-- [Homepage](#)
+- [Homepage](http://www.mysql.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

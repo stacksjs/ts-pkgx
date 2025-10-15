@@ -1,12 +1,12 @@
-# github.com/quodlibet/mutagen
+# mutagen
 
 > Python module for handling audio metadata
 
 ## Package Information
 
 - **Domain**: `github.com/quodlibet/mutagen`
-- **Name**: `github.com/quodlibet/mutagen`
-- **Homepage**: Not specified
+- **Name**: `mutagen`
+- **Homepage**: https://mutagen.readthedocs.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/quodlibet/mutagen/package.yml)
 
 ## Installation
@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/quodlibet/mutagen']
+const pkg = pantry.mutagen
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/quodlibet/mutagen/package.yml)
-- [Homepage](#)
+- [Homepage](https://mutagen.readthedocs.io)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install rg
+launchpad install crates.io/ripgrep
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rg -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/ripgrep@14.1.1 -- $SHELL -i
 ```
 
 ## Usage Examples

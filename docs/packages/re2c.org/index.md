@@ -6,14 +6,14 @@
 
 - **Domain**: `re2c.org`
 - **Name**: `re2c`
-- **Homepage**: Not specified
+- **Homepage**: https://re2c.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/re2c.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install re2c
+launchpad install re2c.org
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) re2c -- $SHELL -i
+sh <(curl https://pkgx.sh) +re2c.org@4.3.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `python.org@^3.10`
 
 ## Usage Examples
 
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/re2c.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://re2c.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

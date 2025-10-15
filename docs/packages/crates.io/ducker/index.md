@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/ducker`
 - **Name**: `ducker`
-- **Homepage**: Not specified
+- **Homepage**: https://crates.io/crates/ducker
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/ducker/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ducker
+launchpad install crates.io/ducker
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ducker -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/ducker@0.5.2 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/ducker/package.yml)
-- [Homepage](#)
+- [Homepage](https://crates.io/crates/ducker)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

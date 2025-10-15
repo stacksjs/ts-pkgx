@@ -6,14 +6,14 @@
 
 - **Domain**: `borgbackup.org`
 - **Name**: `borg`
-- **Homepage**: Not specified
+- **Homepage**: https://www.borgbackup.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/borgbackup.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install borg
+launchpad install borgbackup.org
 ```
 
 ## Programs
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/borgbackup.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.borgbackup.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

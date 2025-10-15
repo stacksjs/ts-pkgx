@@ -6,14 +6,14 @@
 
 - **Domain**: `ordinals.com`
 - **Name**: `ord`
-- **Homepage**: Not specified
+- **Homepage**: https://ordinals.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ordinals.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ord
+launchpad install ordinals.com
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ord -- $SHELL -i
+sh <(curl https://pkgx.sh) +ordinals.com@0.6.1 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ordinals.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://ordinals.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

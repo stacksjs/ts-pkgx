@@ -1,11 +1,11 @@
-# python.org/typing_extensions
+# typing_extensions
 
 > Backported and experimental type hints for Python
 
 ## Package Information
 
 - **Domain**: `python.org/typing_extensions`
-- **Name**: `python.org/typing_extensions`
+- **Name**: `typing_extensions`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/python.org/typing_extensions/package.yml)
 
@@ -42,13 +42,20 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +python.org/typing_extensions@4.15.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `flit.pypa.io`
+- `python.org@~3.11`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['python.org/typing_extensions']
+const pkg = pantry.typing_extensions
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

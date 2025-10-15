@@ -6,14 +6,14 @@
 
 - **Domain**: `savannah.nongnu.org/attr`
 - **Name**: `attr`
-- **Homepage**: Not specified
+- **Homepage**: https://savannah.nongnu.org/projects/attr
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/savannah.nongnu.org/attr/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install attr
+launchpad install savannah.nongnu.org/attr
 ```
 
 ## Programs
@@ -42,6 +42,12 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +savannah.nongnu.org/attr@2.5.2 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/gettext`
+
 ## Usage Examples
 
 ```typescript
@@ -58,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/savannah.nongnu.org/attr/package.yml)
-- [Homepage](#)
+- [Homepage](https://savannah.nongnu.org/projects/attr)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

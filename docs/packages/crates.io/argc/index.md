@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install argc
+launchpad install crates.io/argc
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) argc -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/argc@1.23.0 -- $SHELL -i
 ```
 
 ## Usage Examples

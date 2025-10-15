@@ -6,7 +6,7 @@
 
 - **Domain**: `libusb.info`
 - **Name**: `libusb.info`
-- **Homepage**: Not specified
+- **Homepage**: https://libusb.info
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libusb.info/package.yml)
 
 ## Installation
@@ -40,6 +40,14 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +libusb.info@1.0.29 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/autoconf`
+- `gnu.org/libtool`
+- `linux:systemd.io`
+
 ## Usage Examples
 
 ```typescript
@@ -56,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libusb.info/package.yml)
-- [Homepage](#)
+- [Homepage](https://libusb.info)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

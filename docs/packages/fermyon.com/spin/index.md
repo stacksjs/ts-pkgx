@@ -6,14 +6,14 @@
 
 - **Domain**: `fermyon.com/spin`
 - **Name**: `spin`
-- **Homepage**: Not specified
+- **Homepage**: https://spinroot.com/spin/whatispin.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fermyon.com/spin/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install spin
+launchpad install fermyon.com/spin
 ```
 
 ## Programs
@@ -38,16 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) spin -- $SHELL -i
+sh <(curl https://pkgx.sh) +fermyon.com/spin@3.4.1 -- $SHELL -i
 ```
 
-## Related Packages
+## Dependencies
 
-These packages work well with spin:
+This package depends on:
 
-- [`rust-lang.org`](../../rust-lang.org/index.md) - Empowering everyone to build reliable and efficient software.
-- [`rust-lang.org/cargo`](../../rust-lang.org/cargo/index.md) - The Rust package manager
-- [`git-scm.org`](../../git-scm.org/index.md) - Git Source Code Mirror - This is a publish-only repository but pull requests can be turned into patches to the mailing list via GitGitGadget (https://gitgitgadget.github.io/). Please follow Documentation/SubmittingPatches procedure for any of your improvements.
+- `linux:llvm.org`
 
 ## Usage Examples
 
@@ -65,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/fermyon.com/spin/package.yml)
-- [Homepage](#)
+- [Homepage](https://spinroot.com/spin/whatispin.html)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

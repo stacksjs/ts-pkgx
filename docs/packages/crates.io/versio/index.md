@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install versio
+launchpad install crates.io/versio
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) versio -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/versio@0.8.5 -- $SHELL -i
 ```
 
 ## Dependencies

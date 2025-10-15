@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/srgn`
 - **Name**: `srgn`
-- **Homepage**: Not specified
+- **Homepage**: https://crates.io/crates/srgn/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/srgn/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install srgn
+launchpad install crates.io/srgn
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) srgn -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/srgn@0.10.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/srgn/package.yml)
-- [Homepage](#)
+- [Homepage](https://crates.io/crates/srgn/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

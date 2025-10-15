@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pake
+launchpad install npmjs.com/pake-cli
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pake -- $SHELL -i
+sh <(curl https://pkgx.sh) +npmjs.com/pake-cli@3.3.5 -- $SHELL -i
 ```
 
 ## Dependencies

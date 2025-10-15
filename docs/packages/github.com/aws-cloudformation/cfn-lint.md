@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install cfn-lint
+launchpad install github.com/aws-cloudformation/cfn-lint
 ```
 
 ## Programs
@@ -68,7 +68,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cfn-lint -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/aws-cloudformation/cfn-lint@1.40.2 -- $SHELL -i
 ```
 
 ## Dependencies

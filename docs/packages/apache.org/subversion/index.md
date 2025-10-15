@@ -6,14 +6,14 @@
 
 - **Domain**: `apache.org/subversion`
 - **Name**: `svn`
-- **Homepage**: Not specified
+- **Homepage**: https://subversion.apache.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/subversion/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install svn
+launchpad install apache.org/subversion
 ```
 
 ## Programs
@@ -82,7 +82,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/subversion/package.yml)
-- [Homepage](#)
+- [Homepage](https://subversion.apache.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

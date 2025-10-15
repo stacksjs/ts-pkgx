@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install xsv
+launchpad install github.com/burntsushi/xsv
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) xsv -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/burntsushi/xsv@0.13.0 -- $SHELL -i
 ```
 
 ## Usage Examples

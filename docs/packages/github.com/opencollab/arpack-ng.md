@@ -1,11 +1,11 @@
-# github.com/opencollab/arpack-ng
+# arpack-ng
 
 > Collection of Fortran77 subroutines designed to solve large scale eigenvalue problems.
 
 ## Package Information
 
 - **Domain**: `github.com/opencollab/arpack-ng`
-- **Name**: `github.com/opencollab/arpack-ng`
+- **Name**: `arpack-ng`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/opencollab/arpack-ng/package.yml)
 
@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/opencollab/arpack-ng']
+const pkg = pantry['arpack-ng']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -6,14 +6,14 @@
 
 - **Domain**: `cairographics.org`
 - **Name**: `cairo-trace`
-- **Homepage**: Not specified
+- **Homepage**: https://cairographics.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cairographics.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cairo-trace
+launchpad install cairographics.org
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cairo-trace -- $SHELL -i
+sh <(curl https://pkgx.sh) +cairographics.org@1.18.4 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -72,7 +72,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cairographics.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://cairographics.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

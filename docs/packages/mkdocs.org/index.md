@@ -6,14 +6,14 @@
 
 - **Domain**: `mkdocs.org`
 - **Name**: `mkdocs`
-- **Homepage**: Not specified
+- **Homepage**: https://www.mkdocs.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mkdocs.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mkdocs
+launchpad install mkdocs.org
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mkdocs -- $SHELL -i
+sh <(curl https://pkgx.sh) +mkdocs.org@1.6.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mkdocs.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.mkdocs.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

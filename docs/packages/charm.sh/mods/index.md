@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install mods
+launchpad install charm.sh/mods
 ```
 
 ## Programs
@@ -40,8 +40,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mods -- $SHELL -i
+sh <(curl https://pkgx.sh) +charm.sh/mods@1.8.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.24.0`
 
 ## Usage Examples
 

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install docuum
+launchpad install crates.io/docuum
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) docuum -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/docuum@0.25.0 -- $SHELL -i
 ```
 
 ## Usage Examples

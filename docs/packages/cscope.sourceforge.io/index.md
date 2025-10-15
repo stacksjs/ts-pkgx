@@ -1,12 +1,12 @@
-# cscope.sourceforge.io
+# cscope.sourceforge
 
 > Tool for browsing source code
 
 ## Package Information
 
 - **Domain**: `cscope.sourceforge.io`
-- **Name**: `cscope.sourceforge.io`
-- **Homepage**: Not specified
+- **Name**: `cscope.sourceforge`
+- **Homepage**: https://cscope.sourceforge.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cscope.sourceforge.io/package.yml)
 
 ## Installation
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cscope.sourceforge.io']
+const pkg = pantry['cscope.sourceforge']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cscope.sourceforge.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://cscope.sourceforge.net/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

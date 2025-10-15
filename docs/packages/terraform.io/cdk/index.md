@@ -6,25 +6,19 @@
 
 - **Domain**: `terraform.io/cdk`
 - **Name**: `terraform-cdk`
-- **Homepage**: Not specified
+- **Homepage**: https://www.terraform.io/cdktf
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/terraform.io/cdk/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cdktf
+launchpad install terraform.io/cdk
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `cdktf`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `cdktf`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cdktf -- $SHELL -i
+sh <(curl https://pkgx.sh) +terraform.io/cdk@0.21.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -61,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.cdktf
+const pkg = pantry['terraform-cdk']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -71,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/terraform.io/cdk/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.terraform.io/cdktf)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

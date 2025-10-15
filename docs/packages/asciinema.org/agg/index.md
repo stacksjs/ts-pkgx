@@ -6,14 +6,14 @@
 
 - **Domain**: `asciinema.org/agg`
 - **Name**: `agg`
-- **Homepage**: Not specified
+- **Homepage**: https://docs.asciinema.org/manual/agg/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/asciinema.org/agg/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install agg
+launchpad install asciinema.org/agg
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) agg -- $SHELL -i
+sh <(curl https://pkgx.sh) +asciinema.org/agg@1.6.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/asciinema.org/agg/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.asciinema.org/manual/agg/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

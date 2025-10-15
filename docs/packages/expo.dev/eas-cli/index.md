@@ -6,14 +6,14 @@
 
 - **Domain**: `expo.dev/eas-cli`
 - **Name**: `eas`
-- **Homepage**: Not specified
+- **Homepage**: https://docs.expo.dev/eas/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/expo.dev/eas-cli/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install eas
+launchpad install expo.dev/eas-cli
 ```
 
 ## Programs
@@ -69,7 +69,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) eas -- $SHELL -i
+sh <(curl https://pkgx.sh) +expo.dev/eas-cli@16.23.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -94,7 +94,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/expo.dev/eas-cli/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.expo.dev/eas/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

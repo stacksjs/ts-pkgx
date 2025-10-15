@@ -1,11 +1,11 @@
-# wpewebkit.org/libwpe
+# libwpe
 
 > General-purpose library specifically developed for the WPE-flavored port of WebKit.
 
 ## Package Information
 
 - **Domain**: `wpewebkit.org/libwpe`
-- **Name**: `wpewebkit.org/libwpe`
+- **Name**: `libwpe`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wpewebkit.org/libwpe/package.yml)
 
@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['wpewebkit.org/libwpe']
+const pkg = pantry.libwpe
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

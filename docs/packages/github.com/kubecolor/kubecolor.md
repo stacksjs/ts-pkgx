@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/kubecolor/kubecolor`
 - **Name**: `kubecolor`
-- **Homepage**: Not specified
+- **Homepage**: https://kubecolor.github.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kubecolor/kubecolor/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install kubecolor
+launchpad install github.com/kubecolor/kubecolor
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) kubecolor -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/kubecolor/kubecolor@0.5.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kubecolor/kubecolor/package.yml)
-- [Homepage](#)
+- [Homepage](https://kubecolor.github.io/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

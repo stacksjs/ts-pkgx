@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install tokesura
+launchpad install github.com/kevinmichaelchen/tokesura
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tokesura -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/kevinmichaelchen/tokesura@0.0.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 

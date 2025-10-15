@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/rage`
 - **Name**: `rage`
-- **Homepage**: Not specified
+- **Homepage**: https://str4d.xyz/rage
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rage/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rage
+launchpad install crates.io/rage
 ```
 
 ## Programs
@@ -58,7 +58,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rage/package.yml)
-- [Homepage](#)
+- [Homepage](https://str4d.xyz/rage)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

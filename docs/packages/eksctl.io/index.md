@@ -6,14 +6,14 @@
 
 - **Domain**: `eksctl.io`
 - **Name**: `eksctl`
-- **Homepage**: Not specified
+- **Homepage**: https://eksctl.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/eksctl.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install eksctl
+launchpad install eksctl.io
 ```
 
 ## Programs
@@ -49,7 +49,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) eksctl -- $SHELL -i
+sh <(curl https://pkgx.sh) +eksctl.io@0.215.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -74,7 +74,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/eksctl.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://eksctl.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

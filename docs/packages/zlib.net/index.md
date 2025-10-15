@@ -1,12 +1,12 @@
-# zlib.net
+# zlib
 
 > A massively spiffy yet delicately unobtrusive compression library.
 
 ## Package Information
 
 - **Domain**: `zlib.net`
-- **Name**: `zlib.net`
-- **Homepage**: Not specified
+- **Name**: `zlib`
+- **Homepage**: http://zlib.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/zlib.net/package.yml)
 
 ## Installation
@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +zlib.net@1.3.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['zlib.net']
+const pkg = pantry.zlib
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/zlib.net/package.yml)
-- [Homepage](#)
+- [Homepage](http://zlib.net/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

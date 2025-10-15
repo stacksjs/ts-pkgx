@@ -6,14 +6,14 @@
 
 - **Domain**: `rust-lang.github.io/mdBook`
 - **Name**: `mdbook`
-- **Homepage**: Not specified
+- **Homepage**: https://rust-lang.github.io/mdBook/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.github.io/mdBook/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mdbook
+launchpad install rust-lang.github.io/mdBook
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mdbook -- $SHELL -i
+sh <(curl https://pkgx.sh) +rust-lang.github.io/mdBook@0.4.52 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -59,7 +59,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.github.io/mdBook/package.yml)
-- [Homepage](#)
+- [Homepage](https://rust-lang.github.io/mdBook/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

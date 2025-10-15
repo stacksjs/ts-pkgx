@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install xchtmlreport
+launchpad install github.com/XCTestHTMLReport/XCTestHTMLReport
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) xchtmlreport -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/XCTestHTMLReport/XCTestHTMLReport@2.5.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
 
 ## Usage Examples
 

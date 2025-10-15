@@ -6,14 +6,14 @@
 
 - **Domain**: `people.redhat.com/sgrubb/libcap-ng`
 - **Name**: `libcap-ng`
-- **Homepage**: Not specified
+- **Homepage**: https://people.redhat.com/sgrubb/libcap-ng/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/people.redhat.com/sgrubb/libcap-ng/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install libcap-ng
+launchpad install people.redhat.com/sgrubb/libcap-ng
 ```
 
 ## Programs
@@ -59,7 +59,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/people.redhat.com/sgrubb/libcap-ng/package.yml)
-- [Homepage](#)
+- [Homepage](https://people.redhat.com/sgrubb/libcap-ng/)
 - [Back to Package Catalog](../../../../package-catalog.md)
 
 ---

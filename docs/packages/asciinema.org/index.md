@@ -6,14 +6,14 @@
 
 - **Domain**: `asciinema.org`
 - **Name**: `asciinema`
-- **Homepage**: Not specified
+- **Homepage**: https://asciinema.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/asciinema.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install asciinema
+launchpad install asciinema.org
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) asciinema -- $SHELL -i
+sh <(curl https://pkgx.sh) +asciinema.org@3.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/asciinema.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://asciinema.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

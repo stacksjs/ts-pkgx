@@ -6,14 +6,14 @@
 
 - **Domain**: `gnu.org/libidn2`
 - **Name**: `idn2`
-- **Homepage**: Not specified
+- **Homepage**: https://www.gnu.org/software/libidn/#libidn2
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libidn2/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install idn2
+launchpad install gnu.org/libidn2
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) idn2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnu.org/libidn2@2.3.8 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libidn2/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org/software/libidn/#libidn2)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

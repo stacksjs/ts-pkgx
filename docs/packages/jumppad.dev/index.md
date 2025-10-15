@@ -6,14 +6,14 @@
 
 - **Domain**: `jumppad.dev`
 - **Name**: `jumppad`
-- **Homepage**: Not specified
+- **Homepage**: https://jumppad.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jumppad.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install jumppad
+launchpad install jumppad.dev
 ```
 
 ## Programs
@@ -41,8 +41,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) jumppad -- $SHELL -i
+sh <(curl https://pkgx.sh) +jumppad.dev@0.21.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@=1.21.5`
+- `linux:gnu.org/gcc`
 
 ## Usage Examples
 
@@ -60,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jumppad.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://jumppad.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

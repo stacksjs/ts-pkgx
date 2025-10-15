@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pyright
+launchpad install microsoft.com/pyright
 ```
 
 ## Programs
@@ -47,7 +47,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pyright -- $SHELL -i
+sh <(curl https://pkgx.sh) +microsoft.com/pyright@1.1.406 -- $SHELL -i
 ```
 
 ## Dependencies

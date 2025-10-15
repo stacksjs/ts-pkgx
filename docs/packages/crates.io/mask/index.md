@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install mask
+launchpad install crates.io/mask
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mask -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/mask@0.11.3 -- $SHELL -i
 ```
 
 ## Usage Examples

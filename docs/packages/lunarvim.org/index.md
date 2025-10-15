@@ -1,12 +1,12 @@
-# lunarvim.org
+# lunarvim
 
 > 🌙 LunarVim is an IDE layer for Neovim. Completely free and community driven.
 
 ## Package Information
 
 - **Domain**: `lunarvim.org`
-- **Name**: `lunarvim.org`
-- **Homepage**: Not specified
+- **Name**: `lunarvim`
+- **Homepage**: https://www.lunarvim.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lunarvim.org/package.yml)
 
 ## Installation
@@ -59,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['lunarvim.org']
+const pkg = pantry.lunarvim
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/lunarvim.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.lunarvim.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `just.systems`
 - **Name**: `just`
-- **Homepage**: Not specified
+- **Homepage**: https://just.systems
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/just.systems/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install just
+launchpad install just.systems
 ```
 
 ## Programs
@@ -46,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) just -- $SHELL -i
+sh <(curl https://pkgx.sh) +just.systems@1.43.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/just.systems/package.yml)
-- [Homepage](#)
+- [Homepage](https://just.systems)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

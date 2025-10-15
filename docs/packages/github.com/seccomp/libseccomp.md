@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install scmp_sys_resolver
+launchpad install github.com/seccomp/libseccomp
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `scmp_sys_resolver`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `scmp_sys_resolver`
 
@@ -43,8 +37,15 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) scmp_sys_resolver -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/seccomp/libseccomp@2.6.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/libtool`
+- `gnu.org/gperf`
 
 ## Usage Examples
 
@@ -52,7 +53,7 @@ sh <(curl https://pkgx.sh) scmp_sys_resolver -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.scmp_sys_resolver
+const pkg = pantry.libseccomp
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

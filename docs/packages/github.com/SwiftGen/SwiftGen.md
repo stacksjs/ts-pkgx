@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install swiftgen
+launchpad install github.com/SwiftGen/SwiftGen
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) swiftgen -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/SwiftGen/SwiftGen@6.6.3 -- $SHELL -i
 ```
 
 ## Usage Examples

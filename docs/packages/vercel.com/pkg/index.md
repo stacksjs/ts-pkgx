@@ -6,14 +6,14 @@
 
 - **Domain**: `vercel.com/pkg`
 - **Name**: `pkg`
-- **Homepage**: Not specified
+- **Homepage**: https://npmjs.com/pkg
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vercel.com/pkg/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pkg
+launchpad install vercel.com/pkg
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pkg -- $SHELL -i
+sh <(curl https://pkgx.sh) +vercel.com/pkg@5.8.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/vercel.com/pkg/package.yml)
-- [Homepage](#)
+- [Homepage](https://npmjs.com/pkg)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install mop
+launchpad install github.com/mop-tracker/mop
 ```
 
 ## Programs
@@ -37,8 +37,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mop -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/mop-tracker/mop@2023.3.30 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
+- `gnu.org/patch`
 
 ## Usage Examples
 

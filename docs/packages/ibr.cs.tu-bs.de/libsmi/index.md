@@ -1,19 +1,19 @@
-# smidiff
+# smi
 
 > Library to Access SMI MIB Information
 
 ## Package Information
 
 - **Domain**: `ibr.cs.tu-bs.de/libsmi`
-- **Name**: `smidiff`
-- **Homepage**: Not specified
+- **Name**: `smi`
+- **Homepage**: https://www.ibr.cs.tu-bs.de/projects/libsmi/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ibr.cs.tu-bs.de/libsmi/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install smidiff
+launchpad install ibr.cs.tu-bs.de/libsmi
 ```
 
 ## Programs
@@ -44,13 +44,21 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +ibr.cs.tu-bs.de/libsmi@0.4.8 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/autoconf`
+- `gnu.org/automake`
+- `gnu.org/libtool`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.smidiff
+const pkg = pantry.smi
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -60,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ibr.cs.tu-bs.de/libsmi/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.ibr.cs.tu-bs.de/projects/libsmi/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

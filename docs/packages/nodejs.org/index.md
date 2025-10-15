@@ -6,14 +6,14 @@
 
 - **Domain**: `nodejs.org`
 - **Name**: `node`
-- **Homepage**: Not specified
+- **Homepage**: https://nodejs.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nodejs.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install node
+launchpad install nodejs.org
 ```
 
 ## Programs
@@ -67,7 +67,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) node -- $SHELL -i
+sh <(curl https://pkgx.sh) +nodejs.org@24.10.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -78,12 +78,6 @@ This package depends on:
 - `openssl.org@1.1`
 - `zlib.net@1`
 - `linux:gnu.org/gcc/libstdcxx`
-
-## Related Packages
-
-These packages work well with node:
-
-- [`npmjs.com`](../npmjs.com/index.md) - the package manager for JavaScript
 
 ## Usage Examples
 
@@ -101,7 +95,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/nodejs.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://nodejs.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install csvlens
+launchpad install github.com/YS-L/csvlens
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) csvlens -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/YS-L/csvlens@0.13.0 -- $SHELL -i
 ```
 
 ## Usage Examples

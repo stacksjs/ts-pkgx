@@ -1,11 +1,11 @@
-# github.com/aws/aws-sdk-cpp
+# aws-sdk-cpp
 
 > AWS SDK for C++
 
 ## Package Information
 
 - **Domain**: `github.com/aws/aws-sdk-cpp`
-- **Name**: `github.com/aws/aws-sdk-cpp`
+- **Name**: `aws-sdk-cpp`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/aws/aws-sdk-cpp/package.yml)
 
@@ -170,7 +170,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/aws/aws-sdk-cpp']
+const pkg = pantry['aws-sdk-cpp']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

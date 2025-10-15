@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install bake
+launchpad install crates.io/bake-rs
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) bake -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/bake-rs@1.2.0 -- $SHELL -i
 ```
 
 ## Usage Examples

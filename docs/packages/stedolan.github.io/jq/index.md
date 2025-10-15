@@ -6,14 +6,14 @@
 
 - **Domain**: `stedolan.github.io/jq`
 - **Name**: `jq`
-- **Homepage**: Not specified
+- **Homepage**: https://jqlang.github.io/jq/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/stedolan.github.io/jq/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install jq
+launchpad install stedolan.github.io/jq
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) jq -- $SHELL -i
+sh <(curl https://pkgx.sh) +stedolan.github.io/jq@1.8.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/stedolan.github.io/jq/package.yml)
-- [Homepage](#)
+- [Homepage](https://jqlang.github.io/jq/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

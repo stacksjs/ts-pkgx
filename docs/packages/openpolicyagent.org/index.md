@@ -6,14 +6,14 @@
 
 - **Domain**: `openpolicyagent.org`
 - **Name**: `opa`
-- **Homepage**: Not specified
+- **Homepage**: https://www.openpolicyagent.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openpolicyagent.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install opa
+launchpad install openpolicyagent.org
 ```
 
 ## Programs
@@ -43,8 +43,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) opa -- $SHELL -i
+sh <(curl https://pkgx.sh) +openpolicyagent.org@1.9.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 
@@ -62,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openpolicyagent.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.openpolicyagent.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install digger.dev`
  * @homepage https://digger.dev
- * @dependencies `go.dev@^1.21`, `if@<0.3.2`
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
@@ -61,7 +61,6 @@ export const diggerdevPackage = {
    */
   dependencies: [
     'go.dev@^1.21',
-    'if@<0.3.2',
   ] as const,
   /**
    * Available versions from newest to oldest.

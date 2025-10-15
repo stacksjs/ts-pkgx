@@ -1,10 +1,20 @@
 # Build Tools & Automation
 
-*15 packages in this category*
+*16 packages in this category*
 
 Packages related to build tools & automation.
 
 ## Packages
+
+### [cmake.org](../packages/cmake.org/index.md) (cmake)
+
+Mirror of CMake upstream repository
+
+**Programs**: cmake, ccmake, cpack, ctest
+
+**Install**: `launchpad install cmake.org`
+
+---
 
 ### [earthly.dev/earthly](../packages/earthly.dev/earthly/index.md) (earthly)
 
@@ -12,7 +22,7 @@ Super simple build framework with fast, repeatable builds and an instantly famil
 
 **Programs**: earthly
 
-**Install**: `launchpad install earthly`
+**Install**: `launchpad install earthly.dev/earthly`
 
 ---
 
@@ -22,7 +32,7 @@ package compiler and linker metadata toolkit
 
 **Programs**: pkg-config
 
-**Install**: `launchpad install pkg-config`
+**Install**: `launchpad install freedesktop.org/pkg-config`
 
 ---
 
@@ -32,7 +42,7 @@ A user-friendly launcher for Bazel.
 
 **Programs**: bazel, bazelisk
 
-**Install**: `launchpad install bazel`
+**Install**: `launchpad install github.com/bazelbuild/bazelisk`
 
 ---
 
@@ -42,21 +52,21 @@ Format bazel BUILD files with a standard convention
 
 **Programs**: buildifier
 
-**Install**: `launchpad install buildifier`
+**Install**: `launchpad install github.com/bazelbuild/buildtools`
 
 ---
 
-### [github.com/moby/buildkit](../packages/github.com/moby/buildkit.md) (buildkit, buildctl)
+### [github.com/moby/buildkit](../packages/github.com/moby/buildkit.md) (buildkit)
 
 concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit
 
 **Programs**: buildctl
 
-**Install**: `launchpad install buildctl`
+**Install**: `launchpad install github.com/moby/buildkit`
 
 ---
 
-### [gnu.org/autoconf](../packages/gnu.org/autoconf/index.md)
+### [gnu.org/autoconf](../packages/gnu.org/autoconf/index.md) (autoconf)
 
 Automatic configure script builder
 
@@ -66,7 +76,7 @@ Automatic configure script builder
 
 ---
 
-### [gnu.org/automake](../packages/gnu.org/automake/index.md)
+### [gnu.org/automake](../packages/gnu.org/automake/index.md) (automake)
 
 Tool for generating GNU Standards-compliant Makefiles
 
@@ -82,7 +92,7 @@ Open-source build automation tool based on the Groovy and Kotlin DSL
 
 **Programs**: gradle
 
-**Install**: `launchpad install gradle`
+**Install**: `launchpad install gradle.org`
 
 ---
 
@@ -92,7 +102,7 @@ Handy way to save and run project-specific commands
 
 **Programs**: just
 
-**Install**: `launchpad install just`
+**Install**: `launchpad install just.systems`
 
 ---
 
@@ -102,7 +112,7 @@ Java-based project management
 
 **Programs**: mvn, mvnDebug, mvnyjp
 
-**Install**: `launchpad install mvn`
+**Install**: `launchpad install maven.apache.org`
 
 ---
 
@@ -112,7 +122,7 @@ Fast and user friendly build system
 
 **Programs**: meson
 
-**Install**: `launchpad install meson`
+**Install**: `launchpad install mesonbuild.com`
 
 ---
 
@@ -122,17 +132,17 @@ Small build system for use with gyp or CMake
 
 **Programs**: ninja
 
-**Install**: `launchpad install ninja`
+**Install**: `launchpad install ninja-build.org`
 
 ---
 
-### [pantsbuild.org/scie-pants](../packages/pantsbuild.org/scie-pants/index.md) (scie-pants, pants)
+### [pantsbuild.org/scie-pants](../packages/pantsbuild.org/scie-pants/index.md) (scie-pants)
 
 Protects your Pants from the elements.
 
 **Programs**: pants
 
-**Install**: `launchpad install pants`
+**Install**: `launchpad install pantsbuild.org/scie-pants`
 
 ---
 
@@ -142,7 +152,7 @@ Substitute for classic 'make' tool with autoconf/automake functionality
 
 **Programs**: scons
 
-**Install**: `launchpad install scons`
+**Install**: `launchpad install scons.org`
 
 ---
 
@@ -152,7 +162,7 @@ A task runner / simpler Make alternative written in Go
 
 **Programs**: task
 
-**Install**: `launchpad install task`
+**Install**: `launchpad install taskfile.dev`
 
 ---
 

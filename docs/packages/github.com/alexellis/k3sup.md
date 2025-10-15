@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/alexellis/k3sup`
 - **Name**: `k3sup`
-- **Homepage**: Not specified
+- **Homepage**: https://k3sup.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/alexellis/k3sup/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install k3sup
+launchpad install github.com/alexellis/k3sup
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) k3sup -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/alexellis/k3sup@0.13.11 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.20`
 
 ## Usage Examples
 
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/alexellis/k3sup/package.yml)
-- [Homepage](#)
+- [Homepage](https://k3sup.dev)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

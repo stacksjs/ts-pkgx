@@ -1,12 +1,12 @@
-# cmake.org
+# cmake
 
 > Mirror of CMake upstream repository
 
 ## Package Information
 
 - **Domain**: `cmake.org`
-- **Name**: `cmake.org`
-- **Homepage**: Not specified
+- **Name**: `cmake`
+- **Homepage**: https://www.cmake.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cmake.org/package.yml)
 
 ## Installation
@@ -70,7 +70,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cmake.org']
+const pkg = pantry.cmake
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -80,7 +80,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cmake.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.cmake.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

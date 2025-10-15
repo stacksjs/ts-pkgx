@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install fizz
+launchpad install github.com/facebookincubator/fizz
 ```
 
 ## Programs
@@ -60,7 +60,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) fizz -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/facebookincubator/fizz@2025.9.8.0 -- $SHELL -i
 ```
 
 ## Dependencies

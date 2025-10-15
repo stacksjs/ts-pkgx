@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/allure-framework/allure2`
 - **Name**: `allure`
-- **Homepage**: Not specified
+- **Homepage**: https://allurereport.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/allure-framework/allure2/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install allure
+launchpad install github.com/allure-framework/allure2
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) allure -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/allure-framework/allure2@2.35.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/allure-framework/allure2/package.yml)
-- [Homepage](#)
+- [Homepage](https://allurereport.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

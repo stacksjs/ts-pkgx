@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install s5cmd
+launchpad install github.com/peak/s5cmd
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) s5cmd -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/peak/s5cmd@2.3.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.20`
 
 ## Usage Examples
 

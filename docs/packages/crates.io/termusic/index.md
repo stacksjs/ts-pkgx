@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install termusic
+launchpad install crates.io/termusic
 ```
 
 ## Programs
@@ -47,12 +47,6 @@ This package depends on:
 
 - `linux:alsa-project.org/alsa-lib`
 - `linux:freedesktop.org/dbus`
-
-## Related Packages
-
-These packages work well with termusic:
-
-- [`yt-dlp.org`](../../yt-dlp.org/index.md) - A feature-rich command-line audio/video downloader
 
 ## Usage Examples
 

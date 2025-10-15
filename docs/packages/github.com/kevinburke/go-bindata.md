@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install go-bindata
+launchpad install github.com/kevinburke/go-bindata
 ```
 
 ## Programs
@@ -37,8 +37,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) go-bindata -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/kevinburke/go-bindata@4.0.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
+- `gnu.org/patch`
+- `crates.io/semverator@^0`
 
 ## Usage Examples
 

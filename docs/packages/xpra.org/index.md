@@ -6,14 +6,14 @@
 
 - **Domain**: `xpra.org`
 - **Name**: `xpra`
-- **Homepage**: Not specified
+- **Homepage**: https://xpra.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xpra.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install xpra
+launchpad install xpra.org
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) xpra -- $SHELL -i
+sh <(curl https://pkgx.sh) +xpra.org@6.3.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -71,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/xpra.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://xpra.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

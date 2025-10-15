@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/pypa/twine`
 - **Name**: `twine`
-- **Homepage**: Not specified
+- **Homepage**: https://twine.readthedocs.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/pypa/twine/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install twine
+launchpad install github.com/pypa/twine
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) twine -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/pypa/twine@6.2.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/pypa/twine/package.yml)
-- [Homepage](#)
+- [Homepage](https://twine.readthedocs.io/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `symfony.com`
 - **Name**: `symfony`
-- **Homepage**: Not specified
+- **Homepage**: https://symfony.com/download
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/symfony.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install symfony
+launchpad install symfony.com
 ```
 
 ## Programs
@@ -48,7 +48,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) symfony -- $SHELL -i
+sh <(curl https://pkgx.sh) +symfony.com@5.15.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/symfony.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://symfony.com/download)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

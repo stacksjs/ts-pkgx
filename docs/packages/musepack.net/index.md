@@ -1,12 +1,12 @@
-# musepack.net
+# musepack
 
 > Audio compression format and tools
 
 ## Package Information
 
 - **Domain**: `musepack.net`
-- **Name**: `musepack.net`
-- **Homepage**: Not specified
+- **Name**: `musepack`
+- **Homepage**: https://www.musepack.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/musepack.net/package.yml)
 
 ## Installation
@@ -59,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['musepack.net']
+const pkg = pantry.musepack
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/musepack.net/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.musepack.net/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

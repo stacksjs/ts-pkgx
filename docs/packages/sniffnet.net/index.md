@@ -6,14 +6,14 @@
 
 - **Domain**: `sniffnet.net`
 - **Name**: `sniffnet`
-- **Homepage**: Not specified
+- **Homepage**: https://sniffnet.net
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sniffnet.net/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sniffnet
+launchpad install sniffnet.net
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sniffnet -- $SHELL -i
+sh <(curl https://pkgx.sh) +sniffnet.net@1.4.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sniffnet.net/package.yml)
-- [Homepage](#)
+- [Homepage](https://sniffnet.net)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

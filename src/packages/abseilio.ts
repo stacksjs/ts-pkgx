@@ -7,7 +7,7 @@
  *
  * @install `launchpad install abseil.io`
  * @homepage https://abseil.io
- * @dependencies `cmake.org@^3`, `gnu.org/gcc@^14`, `if@darwin`
+ * @dependencies `cmake.org@^3`, `linux:gnu.org/gcc@^14` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -50,11 +50,11 @@ export const abseilioPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'cmake.org@^3',
-    'gnu.org/gcc@^14',
-    'if@darwin',
+    'linux:gnu.org/gcc@^14',
   ] as const,
   /**
    * Available versions from newest to oldest.

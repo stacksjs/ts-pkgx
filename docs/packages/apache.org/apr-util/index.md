@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install apu-&lbrace;&lbrace;
+launchpad install apache.org/apr-util
 ```
 
 ## Programs
@@ -21,12 +21,6 @@ launchpad install apu-&lbrace;&lbrace;
 This package provides the following executable programs:
 
 - `apu-1-config`
-
-## Aliases
-
-This package can also be accessed using these aliases:
-
-- `apu-&lbrace;&lbrace;`
 
 ## Available Versions
 
@@ -43,8 +37,17 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) apu-&lbrace;&lbrace; -- $SHELL -i
+sh <(curl https://pkgx.sh) +apache.org/apr-util@1.6.3 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `apache.org/apr`
+- `openssl.org`
+- `libexpat.github.io`
+- `sqlite.org`
 
 ## Usage Examples
 
@@ -52,7 +55,7 @@ sh <(curl https://pkgx.sh) apu-&lbrace;&lbrace; -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['apu-{{']
+const pkg = pantry['apu-{{ version.major }}-config']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

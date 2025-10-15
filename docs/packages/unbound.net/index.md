@@ -6,14 +6,14 @@
 
 - **Domain**: `unbound.net`
 - **Name**: `unbound`
-- **Homepage**: Not specified
+- **Homepage**: https://nlnetlabs.nl/unbound
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/unbound.net/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install unbound
+launchpad install unbound.net
 ```
 
 ## Programs
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/unbound.net/package.yml)
-- [Homepage](#)
+- [Homepage](https://nlnetlabs.nl/unbound)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

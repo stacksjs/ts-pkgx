@@ -6,14 +6,14 @@
 
 - **Domain**: `d2lang.com`
 - **Name**: `d2`
-- **Homepage**: Not specified
+- **Homepage**: https://d2lang.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/d2lang.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install d2
+launchpad install d2lang.com
 ```
 
 ## Programs
@@ -39,8 +39,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) d2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +d2lang.com@0.7.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.20`
 
 ## Usage Examples
 
@@ -58,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/d2lang.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://d2lang.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

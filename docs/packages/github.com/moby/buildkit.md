@@ -6,25 +6,19 @@
 
 - **Domain**: `github.com/moby/buildkit`
 - **Name**: `buildkit`
-- **Homepage**: Not specified
+- **Homepage**: https://github.com/moby/moby/issues/34227
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/moby/buildkit/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install buildctl
+launchpad install github.com/moby/buildkit
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `buildctl`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `buildctl`
 
@@ -49,8 +43,14 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) buildctl -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/moby/buildkit@0.25.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 
@@ -58,7 +58,7 @@ sh <(curl https://pkgx.sh) buildctl -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.buildctl
+const pkg = pantry.buildkit
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/moby/buildkit/package.yml)
-- [Homepage](#)
+- [Homepage](https://github.com/moby/moby/issues/34227)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

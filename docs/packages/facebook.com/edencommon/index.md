@@ -1,11 +1,11 @@
-# facebook.com/edencommon
+# edencommon
 
 > Shared library for Watchman and Eden projects.
 
 ## Package Information
 
 - **Domain**: `facebook.com/edencommon`
-- **Name**: `facebook.com/edencommon`
+- **Name**: `edencommon`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/edencommon/package.yml)
 
@@ -81,7 +81,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['facebook.com/edencommon']
+const pkg = pantry.edencommon
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

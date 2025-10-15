@@ -6,14 +6,14 @@
 
 - **Domain**: `pwgen.sourceforge.io`
 - **Name**: `pwgen`
-- **Homepage**: Not specified
+- **Homepage**: https://pwgen.sourceforge.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pwgen.sourceforge.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pwgen
+launchpad install pwgen.sourceforge.io
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pwgen -- $SHELL -i
+sh <(curl https://pkgx.sh) +pwgen.sourceforge.io@2.8.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pwgen.sourceforge.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://pwgen.sourceforge.net/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

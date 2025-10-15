@@ -6,14 +6,14 @@
 
 - **Domain**: `min.io/mc`
 - **Name**: `mc`
-- **Homepage**: Not specified
+- **Homepage**: https://min.io/download
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/min.io/mc/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mc
+launchpad install min.io/mc
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mc -- $SHELL -i
+sh <(curl https://pkgx.sh) +min.io/mc@2023.10.24.21.42.22 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/min.io/mc/package.yml)
-- [Homepage](#)
+- [Homepage](https://min.io/download)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

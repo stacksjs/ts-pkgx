@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/chainguard-dev/apko`
 - **Name**: `apko`
-- **Homepage**: Not specified
+- **Homepage**: https://apko.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/chainguard-dev/apko/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install apko
+launchpad install github.com/chainguard-dev/apko
 ```
 
 ## Programs
@@ -52,8 +52,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) apko -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/chainguard-dev/apko@0.30.16 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
+- `cmake.org@^3`
 
 ## Usage Examples
 
@@ -71,7 +78,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/chainguard-dev/apko/package.yml)
-- [Homepage](#)
+- [Homepage](https://apko.dev)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

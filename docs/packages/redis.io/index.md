@@ -6,14 +6,14 @@
 
 - **Domain**: `redis.io`
 - **Name**: `redis`
-- **Homepage**: Not specified
+- **Homepage**: http://redis.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/redis.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install redis
+launchpad install redis.io
 ```
 
 ## Programs
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/redis.io/package.yml)
-- [Homepage](#)
+- [Homepage](http://redis.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

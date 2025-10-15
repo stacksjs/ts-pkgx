@@ -1,12 +1,12 @@
-# htslib.org/samtools
+# samtools
 
 > Tools (written in C using htslib) for manipulating next-generation sequencing data
 
 ## Package Information
 
 - **Domain**: `htslib.org/samtools`
-- **Name**: `htslib.org/samtools`
-- **Homepage**: Not specified
+- **Name**: `samtools`
+- **Homepage**: https://www.htslib.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/htslib.org/samtools/package.yml)
 
 ## Installation
@@ -76,7 +76,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['htslib.org/samtools']
+const pkg = pantry.samtools
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -86,7 +86,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/htslib.org/samtools/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.htslib.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

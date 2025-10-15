@@ -1,12 +1,12 @@
-# abseil.io
+# abseil
 
 > Abseil Common Libraries (C++)
 
 ## Package Information
 
 - **Domain**: `abseil.io`
-- **Name**: `abseil.io`
-- **Homepage**: Not specified
+- **Name**: `abseil`
+- **Homepage**: https://abseil.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/abseil.io/package.yml)
 
 ## Installation
@@ -43,13 +43,20 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +abseil.io@20250814.1.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@^3`
+- `linux:gnu.org/gcc@^14`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['abseil.io']
+const pkg = pantry.abseil
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -59,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/abseil.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://abseil.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

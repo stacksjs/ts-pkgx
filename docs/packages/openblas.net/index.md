@@ -1,12 +1,12 @@
-# openblas.net
+# openblas
 
 > OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version.
 
 ## Package Information
 
 - **Domain**: `openblas.net`
-- **Name**: `openblas.net`
-- **Homepage**: Not specified
+- **Name**: `openblas`
+- **Homepage**: http://www.openblas.net
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openblas.net/package.yml)
 
 ## Installation
@@ -41,13 +41,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +openblas.net@0.3.30 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['openblas.net']
+const pkg = pantry.openblas
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openblas.net/package.yml)
-- [Homepage](#)
+- [Homepage](http://www.openblas.net)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

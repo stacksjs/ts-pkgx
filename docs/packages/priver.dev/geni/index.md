@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install geni
+launchpad install priver.dev/geni
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) geni -- $SHELL -i
+sh <(curl https://pkgx.sh) +priver.dev/geni@2023.12.27 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/Mbed-TLS/mbedtls`
 - **Name**: `generic_sum`
-- **Homepage**: Not specified
+- **Homepage**: https://tls.mbed.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Mbed-TLS/mbedtls/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install generic_sum
+launchpad install github.com/Mbed-TLS/mbedtls
 ```
 
 ## Programs
@@ -38,8 +38,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) generic_sum -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/Mbed-TLS/mbedtls@3.6.3.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `python.org@~3.11`
 
 ## Usage Examples
 
@@ -57,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Mbed-TLS/mbedtls/package.yml)
-- [Homepage](#)
+- [Homepage](https://tls.mbed.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

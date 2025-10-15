@@ -6,14 +6,14 @@
 
 - **Domain**: `pyinvoke.org`
 - **Name**: `invoke`
-- **Homepage**: Not specified
+- **Homepage**: https://www.pyinvoke.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pyinvoke.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install invoke
+launchpad install pyinvoke.org
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) invoke -- $SHELL -i
+sh <(curl https://pkgx.sh) +pyinvoke.org@2.2.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pyinvoke.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.pyinvoke.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

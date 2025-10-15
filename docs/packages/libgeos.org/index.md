@@ -6,14 +6,14 @@
 
 - **Domain**: `libgeos.org`
 - **Name**: `geos-config`
-- **Homepage**: Not specified
+- **Homepage**: https://libgeos.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libgeos.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install geos-config
+launchpad install libgeos.org
 ```
 
 ## Programs
@@ -40,8 +40,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) geos-config -- $SHELL -i
+sh <(curl https://pkgx.sh) +libgeos.org@3.14.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
 
 ## Usage Examples
 
@@ -59,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libgeos.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://libgeos.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

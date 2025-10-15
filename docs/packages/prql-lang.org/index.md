@@ -6,14 +6,14 @@
 
 - **Domain**: `prql-lang.org`
 - **Name**: `prql`
-- **Homepage**: Not specified
+- **Homepage**: https://prql-lang.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/prql-lang.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install prql
+launchpad install prql-lang.org
 ```
 
 ## Programs
@@ -47,6 +47,12 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +prql-lang.org@0.13.5 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `linux:llvm.org@18`
+
 ## Usage Examples
 
 ```typescript
@@ -63,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/prql-lang.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://prql-lang.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

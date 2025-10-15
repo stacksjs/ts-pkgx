@@ -6,14 +6,14 @@
 
 - **Domain**: `cointop.sh`
 - **Name**: `cointop`
-- **Homepage**: Not specified
+- **Homepage**: https://cointop.sh
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cointop.sh/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cointop
+launchpad install cointop.sh
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cointop -- $SHELL -i
+sh <(curl https://pkgx.sh) +cointop.sh@1.6.10 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cointop.sh/package.yml)
-- [Homepage](#)
+- [Homepage](https://cointop.sh)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

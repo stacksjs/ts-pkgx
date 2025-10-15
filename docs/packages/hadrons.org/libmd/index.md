@@ -1,12 +1,12 @@
-# hadrons.org/libmd
+# libmd
 
 > BSD Mesage Digest library (mirror)
 
 ## Package Information
 
 - **Domain**: `hadrons.org/libmd`
-- **Name**: `hadrons.org/libmd`
-- **Homepage**: Not specified
+- **Name**: `libmd`
+- **Homepage**: https://www.hadrons.org/software/libmd/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hadrons.org/libmd/package.yml)
 
 ## Installation
@@ -40,13 +40,20 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +hadrons.org/libmd@1.1.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/patch`
+- `crates.io/semverator`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['hadrons.org/libmd']
+const pkg = pantry.libmd
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/hadrons.org/libmd/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.hadrons.org/software/libmd/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

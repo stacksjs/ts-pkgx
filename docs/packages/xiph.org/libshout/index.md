@@ -6,14 +6,14 @@
 
 - **Domain**: `xiph.org/libshout`
 - **Name**: `shout`
-- **Homepage**: Not specified
+- **Homepage**: https://icecast.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xiph.org/libshout/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install shout
+launchpad install xiph.org/libshout
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) shout -- $SHELL -i
+sh <(curl https://pkgx.sh) +xiph.org/libshout@2.4.6 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/xiph.org/libshout/package.yml)
-- [Homepage](#)
+- [Homepage](https://icecast.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

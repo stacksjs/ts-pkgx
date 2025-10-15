@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install juliaup
+launchpad install julialang.org/juliaup
 ```
 
 ## Programs
@@ -49,7 +49,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) juliaup -- $SHELL -i
+sh <(curl https://pkgx.sh) +julialang.org/juliaup@1.18.4 -- $SHELL -i
 ```
 
 ## Usage Examples

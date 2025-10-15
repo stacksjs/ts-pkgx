@@ -6,14 +6,14 @@
 
 - **Domain**: `gnu.org/guile`
 - **Name**: `guil`
-- **Homepage**: Not specified
+- **Homepage**: https://www.gnu.org/software/guile/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/guile/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install guil
+launchpad install gnu.org/guile
 ```
 
 ## Programs
@@ -74,7 +74,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/guile/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org/software/guile/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,25 +6,19 @@
 
 - **Domain**: `geoff.greer.fm/ag`
 - **Name**: `The Silver Searcher`
-- **Homepage**: Not specified
+- **Homepage**: http://geoff.greer.fm/ag/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/geoff.greer.fm/ag/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ag
+launchpad install geoff.greer.fm/ag
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `ag`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `ag`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ag -- $SHELL -i
+sh <(curl https://pkgx.sh) +geoff.greer.fm/ag@2.2.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -59,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.ag
+const pkg = pantry['The Silver Searcher']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -69,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/geoff.greer.fm/ag/package.yml)
-- [Homepage](#)
+- [Homepage](http://geoff.greer.fm/ag/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

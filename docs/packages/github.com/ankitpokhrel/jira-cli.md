@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install jira
+launchpad install github.com/ankitpokhrel/jira-cli
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) jira -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/ankitpokhrel/jira-cli@1.7.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 

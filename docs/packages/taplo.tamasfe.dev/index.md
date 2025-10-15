@@ -6,14 +6,14 @@
 
 - **Domain**: `taplo.tamasfe.dev`
 - **Name**: `taplo`
-- **Homepage**: Not specified
+- **Homepage**: https://taplo.tamasfe.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/taplo.tamasfe.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install taplo
+launchpad install taplo.tamasfe.dev
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) taplo -- $SHELL -i
+sh <(curl https://pkgx.sh) +taplo.tamasfe.dev@0.10.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/taplo.tamasfe.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://taplo.tamasfe.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `makotemplates.org`
 - **Name**: `mako-render`
-- **Homepage**: Not specified
+- **Homepage**: https://www.makotemplates.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/makotemplates.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mako-render
+launchpad install makotemplates.org
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mako-render -- $SHELL -i
+sh <(curl https://pkgx.sh) +makotemplates.org@1.3.10 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/makotemplates.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.makotemplates.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

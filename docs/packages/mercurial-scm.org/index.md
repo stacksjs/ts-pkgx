@@ -1,12 +1,12 @@
-# mercurial-scm.org
+# mercurial-scm
 
 > Scalable distributed version control system
 
 ## Package Information
 
 - **Domain**: `mercurial-scm.org`
-- **Name**: `mercurial-scm.org`
-- **Homepage**: Not specified
+- **Name**: `mercurial-scm`
+- **Homepage**: https://mercurial-scm.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mercurial-scm.org/package.yml)
 
 ## Installation
@@ -58,7 +58,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mercurial-scm.org']
+const pkg = pantry['mercurial-scm']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mercurial-scm.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://mercurial-scm.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

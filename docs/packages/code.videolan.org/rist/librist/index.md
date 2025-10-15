@@ -6,14 +6,14 @@
 
 - **Domain**: `code.videolan.org/rist/librist`
 - **Name**: `rist`
-- **Homepage**: Not specified
+- **Homepage**: https://code.videolan.org/rist/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/code.videolan.org/rist/librist/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rist
+launchpad install code.videolan.org/rist/librist
 ```
 
 ## Programs
@@ -43,6 +43,13 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +code.videolan.org/rist/librist@0.2.11 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `mesonbuild.com@>=0.47<1`
+- `linux:sourceware.org/libffi@3`
+
 ## Usage Examples
 
 ```typescript
@@ -59,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/code.videolan.org/rist/librist/package.yml)
-- [Homepage](#)
+- [Homepage](https://code.videolan.org/rist/)
 - [Back to Package Catalog](../../../../package-catalog.md)
 
 ---

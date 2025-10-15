@@ -1,12 +1,12 @@
-# wimlib.net
+# wimlib
 
 > Library to create, extract, and modify Windows Imaging files
 
 ## Package Information
 
 - **Domain**: `wimlib.net`
-- **Name**: `wimlib.net`
-- **Homepage**: Not specified
+- **Name**: `wimlib`
+- **Homepage**: https://wimlib.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wimlib.net/package.yml)
 
 ## Installation
@@ -70,7 +70,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['wimlib.net']
+const pkg = pantry.wimlib
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -80,7 +80,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/wimlib.net/package.yml)
-- [Homepage](#)
+- [Homepage](https://wimlib.net/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -1,12 +1,12 @@
-# tcl-lang.org
+# tcl-lang
 
 > Tool Command Language
 
 ## Package Information
 
 - **Domain**: `tcl-lang.org`
-- **Name**: `tcl-lang.org`
-- **Homepage**: Not specified
+- **Name**: `tcl-lang`
+- **Homepage**: https://www.tcl-lang.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tcl-lang.org/package.yml)
 
 ## Installation
@@ -60,7 +60,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['tcl-lang.org']
+const pkg = pantry['tcl-lang']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tcl-lang.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.tcl-lang.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

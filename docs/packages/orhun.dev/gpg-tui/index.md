@@ -6,14 +6,14 @@
 
 - **Domain**: `orhun.dev/gpg-tui`
 - **Name**: `gpg-tui`
-- **Homepage**: Not specified
+- **Homepage**: https://blog.orhun.dev/introducing-gpg-tui/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/orhun.dev/gpg-tui/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gpg-tui
+launchpad install orhun.dev/gpg-tui
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gpg-tui -- $SHELL -i
+sh <(curl https://pkgx.sh) +orhun.dev/gpg-tui@0.11.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/orhun.dev/gpg-tui/package.yml)
-- [Homepage](#)
+- [Homepage](https://blog.orhun.dev/introducing-gpg-tui/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

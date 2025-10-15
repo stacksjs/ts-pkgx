@@ -6,14 +6,14 @@
 
 - **Domain**: `proj.org`
 - **Name**: `proj`
-- **Homepage**: Not specified
+- **Homepage**: https://proj.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/proj.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install proj
+launchpad install proj.org
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) proj -- $SHELL -i
+sh <(curl https://pkgx.sh) +proj.org@9.7.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/proj.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://proj.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

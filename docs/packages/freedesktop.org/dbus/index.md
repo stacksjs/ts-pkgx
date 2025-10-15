@@ -6,14 +6,14 @@
 
 - **Domain**: `freedesktop.org/dbus`
 - **Name**: `dbus`
-- **Homepage**: Not specified
+- **Homepage**: https://wiki.freedesktop.org/www/Software/dbus
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/dbus/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install dbus
+launchpad install freedesktop.org/dbus
 ```
 
 ## Programs
@@ -49,6 +49,15 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +freedesktop.org/dbus@1.16.2 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `pagure.io/xmlto`
+- `libexpat.github.io`
+- `mesonbuild.com`
+- `darwin:gnu.org/patch`
+
 ## Usage Examples
 
 ```typescript
@@ -65,7 +74,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/dbus/package.yml)
-- [Homepage](#)
+- [Homepage](https://wiki.freedesktop.org/www/Software/dbus)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `lucagrulla.com/cw`
 - **Name**: `cw`
-- **Homepage**: Not specified
+- **Homepage**: https://www.lucagrulla.com/cw
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lucagrulla.com/cw/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cw
+launchpad install lucagrulla.com/cw
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cw -- $SHELL -i
+sh <(curl https://pkgx.sh) +lucagrulla.com/cw@4.1.3 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/lucagrulla.com/cw/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.lucagrulla.com/cw)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

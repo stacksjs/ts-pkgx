@@ -6,14 +6,14 @@
 
 - **Domain**: `materialize.com`
 - **Name**: `mz`
-- **Homepage**: Not specified
+- **Homepage**: https://materialize.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/materialize.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mz
+launchpad install materialize.com
 ```
 
 ## Programs
@@ -45,7 +45,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mz -- $SHELL -i
+sh <(curl https://pkgx.sh) +materialize.com@0.112.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/materialize.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://materialize.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

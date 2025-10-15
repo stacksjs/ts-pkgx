@@ -6,25 +6,19 @@
 
 - **Domain**: `aws.amazon.com/cli`
 - **Name**: `aws/cli`
-- **Homepage**: Not specified
+- **Homepage**: https://aws.amazon.com/cli/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aws.amazon.com/cli/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install aws
+launchpad install aws.amazon.com/cli
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `aws`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `aws`
 
@@ -258,7 +252,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) aws -- $SHELL -i
+sh <(curl https://pkgx.sh) +aws.amazon.com/cli@2.31.15 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -274,7 +268,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.aws
+const pkg = pantry['aws/cli']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -284,7 +278,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/aws.amazon.com/cli/package.yml)
-- [Homepage](#)
+- [Homepage](https://aws.amazon.com/cli/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

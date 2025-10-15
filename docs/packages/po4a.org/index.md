@@ -1,12 +1,12 @@
-# po4a.org
+# po4a
 
 > Maintain the translations of your documentation with ease (PO for anything)
 
 ## Package Information
 
 - **Domain**: `po4a.org`
-- **Name**: `po4a.org`
-- **Homepage**: Not specified
+- **Name**: `po4a`
+- **Homepage**: http://po4a.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/po4a.org/package.yml)
 
 ## Installation
@@ -62,7 +62,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['po4a.org']
+const pkg = pantry.po4a
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -72,7 +72,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/po4a.org/package.yml)
-- [Homepage](#)
+- [Homepage](http://po4a.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pgen
+launchpad install crates.io/pgen
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pgen -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/pgen@1.3.0 -- $SHELL -i
 ```
 
 ## Usage Examples

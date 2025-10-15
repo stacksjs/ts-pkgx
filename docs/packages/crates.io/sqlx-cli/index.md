@@ -1,11 +1,11 @@
-# crates.io/sqlx-cli
+# sqlx-cli
 
 > 🧰 The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries without a DSL. Supports PostgreSQL, MySQL, and SQLite.
 
 ## Package Information
 
 - **Domain**: `crates.io/sqlx-cli`
-- **Name**: `crates.io/sqlx-cli`
+- **Name**: `sqlx-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/sqlx-cli/package.yml)
 
@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['crates.io/sqlx-cli']
+const pkg = pantry['sqlx-cli']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

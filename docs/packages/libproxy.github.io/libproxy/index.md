@@ -6,25 +6,19 @@
 
 - **Domain**: `libproxy.github.io/libproxy`
 - **Name**: `libproxy`
-- **Homepage**: Not specified
+- **Homepage**: https://libproxy.github.io/libproxy/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libproxy.github.io/libproxy/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install proxy
+launchpad install libproxy.github.io/libproxy
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `proxy`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `proxy`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) proxy -- $SHELL -i
+sh <(curl https://pkgx.sh) +libproxy.github.io/libproxy@0.5.11 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.proxy
+const pkg = pantry.libproxy
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -73,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libproxy.github.io/libproxy/package.yml)
-- [Homepage](#)
+- [Homepage](https://libproxy.github.io/libproxy/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

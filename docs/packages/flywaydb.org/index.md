@@ -6,14 +6,14 @@
 
 - **Domain**: `flywaydb.org`
 - **Name**: `flyway`
-- **Homepage**: Not specified
+- **Homepage**: https://flywaydb.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/flywaydb.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install flyway
+launchpad install flywaydb.org
 ```
 
 ## Programs
@@ -46,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) flyway -- $SHELL -i
+sh <(curl https://pkgx.sh) +flywaydb.org@11.14.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -71,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/flywaydb.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://flywaydb.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

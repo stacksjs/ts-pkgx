@@ -6,25 +6,19 @@
 
 - **Domain**: `deepwisdom.ai`
 - **Name**: `MetaGPT`
-- **Homepage**: Not specified
+- **Homepage**: https://deepwisdom.ai/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/deepwisdom.ai/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install metagpt
+launchpad install deepwisdom.ai
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `metagpt`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `metagpt`
 
@@ -46,7 +40,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) metagpt -- $SHELL -i
+sh <(curl https://pkgx.sh) +deepwisdom.ai@0.8.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.metagpt
+const pkg = pantry.MetaGPT
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -72,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/deepwisdom.ai/package.yml)
-- [Homepage](#)
+- [Homepage](https://deepwisdom.ai/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

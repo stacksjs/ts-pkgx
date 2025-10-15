@@ -6,14 +6,14 @@
 
 - **Domain**: `plantuml.com`
 - **Name**: `plantuml`
-- **Homepage**: Not specified
+- **Homepage**: https://plantuml.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/plantuml.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install plantuml
+launchpad install plantuml.com
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) plantuml -- $SHELL -i
+sh <(curl https://pkgx.sh) +plantuml.com@1.2025.8 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/plantuml.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://plantuml.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

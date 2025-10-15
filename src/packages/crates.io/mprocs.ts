@@ -7,7 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/mprocs`
- * @dependencies `gnu.org/gcc`, `gnu.org/binutils`, `gnu.org/make`
+ * @dependencies `linux:gnu.org/gcc`, `linux:gnu.org/binutils`, `linux:gnu.org/make` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -57,11 +57,12 @@ export const cratesiomprocsPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
-    'gnu.org/gcc',
-    'gnu.org/binutils',
-    'gnu.org/make',
+    'linux:gnu.org/gcc',
+    'linux:gnu.org/binutils',
+    'linux:gnu.org/make',
   ] as const,
   /**
    * Available versions from newest to oldest.

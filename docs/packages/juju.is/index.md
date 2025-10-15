@@ -6,14 +6,14 @@
 
 - **Domain**: `juju.is`
 - **Name**: `juju`
-- **Homepage**: Not specified
+- **Homepage**: https://juju.is/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/juju.is/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install juju
+launchpad install juju.is
 ```
 
 ## Programs
@@ -41,8 +41,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) juju -- $SHELL -i
+sh <(curl https://pkgx.sh) +juju.is@3.6.10 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 
@@ -60,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/juju.is/package.yml)
-- [Homepage](#)
+- [Homepage](https://juju.is/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

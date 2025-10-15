@@ -6,14 +6,14 @@
 
 - **Domain**: `saerasoft.com/caesium`
 - **Name**: `caesiumclt`
-- **Homepage**: Not specified
+- **Homepage**: http://saerasoft.com/caesium
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/saerasoft.com/caesium/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install caesiumclt
+launchpad install saerasoft.com/caesium
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) caesiumclt -- $SHELL -i
+sh <(curl https://pkgx.sh) +saerasoft.com/caesium@1.0.1 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/saerasoft.com/caesium/package.yml)
-- [Homepage](#)
+- [Homepage](http://saerasoft.com/caesium)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -1,12 +1,12 @@
-# harfbuzz.org
+# harfbuzz
 
 > HarfBuzz text shaping engine
 
 ## Package Information
 
 - **Domain**: `harfbuzz.org`
-- **Name**: `harfbuzz.org`
-- **Homepage**: Not specified
+- **Name**: `harfbuzz`
+- **Homepage**: http://harfbuzz.github.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/harfbuzz.org/package.yml)
 
 ## Installation
@@ -67,7 +67,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['harfbuzz.org']
+const pkg = pantry.harfbuzz
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -77,7 +77,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/harfbuzz.org/package.yml)
-- [Homepage](#)
+- [Homepage](http://harfbuzz.github.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

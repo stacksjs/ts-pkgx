@@ -6,14 +6,14 @@
 
 - **Domain**: `yui.github.io/yuicompressor`
 - **Name**: `yuicompressor`
-- **Homepage**: Not specified
+- **Homepage**: https://yui.github.io/yuicompressor/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/yui.github.io/yuicompressor/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install yuicompressor
+launchpad install yui.github.io/yuicompressor
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) yuicompressor -- $SHELL -i
+sh <(curl https://pkgx.sh) +yui.github.io/yuicompressor@2.4.8 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/yui.github.io/yuicompressor/package.yml)
-- [Homepage](#)
+- [Homepage](https://yui.github.io/yuicompressor/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

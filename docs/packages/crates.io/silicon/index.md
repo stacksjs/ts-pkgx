@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install silicon
+launchpad install crates.io/silicon
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) silicon -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/silicon@0.5.3 -- $SHELL -i
 ```
 
 ## Dependencies

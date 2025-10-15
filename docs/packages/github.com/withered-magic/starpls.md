@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install starpls
+launchpad install github.com/withered-magic/starpls
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) starpls -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/withered-magic/starpls@0.1.22 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `github.com/bazelbuild/bazelisk`
 
 ## Usage Examples
 

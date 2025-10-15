@@ -6,14 +6,14 @@
 
 - **Domain**: `logdy.dev`
 - **Name**: `logdy`
-- **Homepage**: Not specified
+- **Homepage**: https://logdy.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/logdy.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install logdy
+launchpad install logdy.dev
 ```
 
 ## Programs
@@ -39,8 +39,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) logdy -- $SHELL -i
+sh <(curl https://pkgx.sh) +logdy.dev@0.17.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21.4`
 
 ## Usage Examples
 
@@ -58,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/logdy.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://logdy.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

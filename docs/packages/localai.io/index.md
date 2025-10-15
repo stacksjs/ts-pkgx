@@ -1,19 +1,19 @@
-# local-ai
+# LocalAI
 
 > :robot: The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. Drop-in replacement for OpenAI, running on consumer-grade hardware. No GPU required. Runs gguf, transformers, diffusers and many more models architectures. Features: Generate Text, Audio, Video, Images, Voice Cloning, Distributed, P2P inference
 
 ## Package Information
 
 - **Domain**: `localai.io`
-- **Name**: `local-ai`
-- **Homepage**: Not specified
+- **Name**: `LocalAI`
+- **Homepage**: https://localai.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/localai.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install local-ai
+launchpad install localai.io
 ```
 
 ## Programs
@@ -47,7 +47,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) local-ai -- $SHELL -i
+sh <(curl https://pkgx.sh) +localai.io@3.6.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['local-ai']
+const pkg = pantry.LocalAI
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -72,7 +72,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/localai.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://localai.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

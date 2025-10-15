@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install swiftformat
+launchpad install github.com/nicklockwood/SwiftFormat
 ```
 
 ## Programs
@@ -47,7 +47,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) swiftformat -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/nicklockwood/SwiftFormat@0.58.3 -- $SHELL -i
 ```
 
 ## Usage Examples

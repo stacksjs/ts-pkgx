@@ -1,12 +1,12 @@
-# kotlinlang.org
+# kotlinlang
 
 > Statically typed programming language for the JVM
 
 ## Package Information
 
 - **Domain**: `kotlinlang.org`
-- **Name**: `kotlinlang.org`
-- **Homepage**: Not specified
+- **Name**: `kotlinlang`
+- **Homepage**: https://kotlinlang.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kotlinlang.org/package.yml)
 
 ## Installation
@@ -59,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['kotlinlang.org']
+const pkg = pantry.kotlinlang
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/kotlinlang.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://kotlinlang.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

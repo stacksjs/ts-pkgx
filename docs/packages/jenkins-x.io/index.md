@@ -6,25 +6,19 @@
 
 - **Domain**: `jenkins-x.io`
 - **Name**: `Jenkins X`
-- **Homepage**: Not specified
+- **Homepage**: https://jenkins-x.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jenkins-x.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install jx
+launchpad install jenkins-x.io
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `jx`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `jx`
 
@@ -57,8 +51,14 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) jx -- $SHELL -i
+sh <(curl https://pkgx.sh) +jenkins-x.io@3.16.25 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.23`
 
 ## Usage Examples
 
@@ -66,7 +66,7 @@ sh <(curl https://pkgx.sh) jx -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.jx
+const pkg = pantry['Jenkins X']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -76,7 +76,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jenkins-x.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://jenkins-x.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

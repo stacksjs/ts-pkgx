@@ -6,14 +6,14 @@
 
 - **Domain**: `tree-sitter.github.io`
 - **Name**: `tree-sitter`
-- **Homepage**: Not specified
+- **Homepage**: https://tree-sitter.github.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tree-sitter.github.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install tree-sitter
+launchpad install tree-sitter.github.io
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tree-sitter -- $SHELL -i
+sh <(curl https://pkgx.sh) +tree-sitter.github.io@0.25.10 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tree-sitter.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://tree-sitter.github.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

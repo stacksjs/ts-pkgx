@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/zoxide`
 - **Name**: `zoxide`
-- **Homepage**: Not specified
+- **Homepage**: https://crates.io/crates/zoxide
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/zoxide/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install zoxide
+launchpad install crates.io/zoxide
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) zoxide -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/zoxide@0.9.8 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/zoxide/package.yml)
-- [Homepage](#)
+- [Homepage](https://crates.io/crates/zoxide)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

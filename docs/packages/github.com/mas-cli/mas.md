@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install mas
+launchpad install github.com/mas-cli/mas
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mas -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/mas-cli/mas@2.3.0 -- $SHELL -i
 ```
 
 ## Usage Examples

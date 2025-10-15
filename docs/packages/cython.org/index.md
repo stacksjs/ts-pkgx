@@ -6,14 +6,14 @@
 
 - **Domain**: `cython.org`
 - **Name**: `cython`
-- **Homepage**: Not specified
+- **Homepage**: https://cython.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cython.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cython
+launchpad install cython.org
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cython -- $SHELL -i
+sh <(curl https://pkgx.sh) +cython.org@3.1.4 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cython.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://cython.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `imageflow.io/imageflow_tool`
 - **Name**: `imageflow_tool`
-- **Homepage**: Not specified
+- **Homepage**: https://docs.imageflow.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/imageflow.io/imageflow_tool/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install imageflow_tool
+launchpad install imageflow.io/imageflow_tool
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) imageflow_tool -- $SHELL -i
+sh <(curl https://pkgx.sh) +imageflow.io/imageflow_tool@2023.9.25 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -45,13 +45,6 @@ sh <(curl https://pkgx.sh) imageflow_tool -- $SHELL -i
 This package depends on:
 
 - `openssl.org@1.1`
-
-## Related Packages
-
-These packages work well with imageflow_tool:
-
-- [`info-zip.org/zip`](../../info-zip.org/zip/index.md) - Compression and file packaging/archive utility
-- [`kornel.ski/dssim`](../../kornel.ski/dssim/index.md) - Image similarity comparison simulating human perception (multiscale SSIM in Rust)
 
 ## Usage Examples
 
@@ -69,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/imageflow.io/imageflow_tool/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.imageflow.io/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

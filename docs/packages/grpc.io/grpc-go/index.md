@@ -6,14 +6,14 @@
 
 - **Domain**: `grpc.io/grpc-go`
 - **Name**: `protoc-gen-go-grpc`
-- **Homepage**: Not specified
+- **Homepage**: https://grpc.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/grpc.io/grpc-go/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install protoc-gen-go-grpc
+launchpad install grpc.io/grpc-go
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) protoc-gen-go-grpc -- $SHELL -i
+sh <(curl https://pkgx.sh) +grpc.io/grpc-go@1.76.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -52,14 +52,6 @@ sh <(curl https://pkgx.sh) protoc-gen-go-grpc -- $SHELL -i
 This package depends on:
 
 - `google.com/protobuf-go^1`
-
-## Related Packages
-
-These packages work well with protoc-gen-go-grpc:
-
-- [`protobuf.dev`](../../protobuf.dev/index.md) - Protocol Buffers - Google's data interchange format
-- [`abseil.io`](../../abseil.io/index.md) - Abseil Common Libraries (C++)
-- [`go.dev`](../../go.dev/index.md) - The Go programming language
 
 ## Usage Examples
 
@@ -77,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/grpc.io/grpc-go/package.yml)
-- [Homepage](#)
+- [Homepage](https://grpc.io)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

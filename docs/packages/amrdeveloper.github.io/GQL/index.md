@@ -6,14 +6,14 @@
 
 - **Domain**: `amrdeveloper.github.io/GQL`
 - **Name**: `gitql`
-- **Homepage**: Not specified
+- **Homepage**: https://amrdeveloper.github.io/GQL/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/amrdeveloper.github.io/GQL/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gitql
+launchpad install amrdeveloper.github.io/GQL
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gitql -- $SHELL -i
+sh <(curl https://pkgx.sh) +amrdeveloper.github.io/GQL@0.41.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/amrdeveloper.github.io/GQL/package.yml)
-- [Homepage](#)
+- [Homepage](https://amrdeveloper.github.io/GQL/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

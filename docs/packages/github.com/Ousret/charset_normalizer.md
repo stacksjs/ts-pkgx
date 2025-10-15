@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/Ousret/charset_normalizer`
 - **Name**: `normalizer`
-- **Homepage**: Not specified
+- **Homepage**: https://charset-normalizer.readthedocs.io/en/latest/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Ousret/charset_normalizer/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install normalizer
+launchpad install github.com/Ousret/charset_normalizer
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) normalizer -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/Ousret/charset_normalizer@3.4.4 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Ousret/charset_normalizer/package.yml)
-- [Homepage](#)
+- [Homepage](https://charset-normalizer.readthedocs.io/en/latest/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

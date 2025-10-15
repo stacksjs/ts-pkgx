@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install grpcurl
+launchpad install fullstory.com/grpcurl
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) grpcurl -- $SHELL -i
+sh <(curl https://pkgx.sh) +fullstory.com/grpcurl@1.9.3 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
 
 ## Usage Examples
 

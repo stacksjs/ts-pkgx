@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install onig-config
+launchpad install github.com/kkos/oniguruma
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) onig-config -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/kkos/oniguruma@6.9.10 -- $SHELL -i
 ```
 
 ## Usage Examples

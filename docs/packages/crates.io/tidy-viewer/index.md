@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install tidy-viewer
+launchpad install crates.io/tidy-viewer
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tidy-viewer -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/tidy-viewer@1.8.93 -- $SHELL -i
 ```
 
 ## Usage Examples

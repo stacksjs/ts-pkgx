@@ -6,14 +6,14 @@
 
 - **Domain**: `mongodb.com/shell`
 - **Name**: `mongosh`
-- **Homepage**: Not specified
+- **Homepage**: https://www.mongodb.com/try/download/shell
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mongodb.com/shell/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mongosh
+launchpad install mongodb.com/shell
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mongosh -- $SHELL -i
+sh <(curl https://pkgx.sh) +mongodb.com/shell@2.5.8 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mongodb.com/shell/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.mongodb.com/try/download/shell)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

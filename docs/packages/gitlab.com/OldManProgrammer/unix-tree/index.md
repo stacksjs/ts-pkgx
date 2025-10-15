@@ -6,14 +6,14 @@
 
 - **Domain**: `gitlab.com/OldManProgrammer/unix-tree`
 - **Name**: `tree`
-- **Homepage**: Not specified
+- **Homepage**: https://oldmanprogrammer.net/source.php?dir=projects/tree
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gitlab.com/OldManProgrammer/unix-tree/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install tree
+launchpad install gitlab.com/OldManProgrammer/unix-tree
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tree -- $SHELL -i
+sh <(curl https://pkgx.sh) +gitlab.com/OldManProgrammer/unix-tree@2.2.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `linux:gnu.org/gcc`
 
 ## Usage Examples
 
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gitlab.com/OldManProgrammer/unix-tree/package.yml)
-- [Homepage](#)
+- [Homepage](https://oldmanprogrammer.net/source.php?dir=projects/tree)
 - [Back to Package Catalog](../../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `werf.io`
 - **Name**: `werf`
-- **Homepage**: Not specified
+- **Homepage**: https://werf.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/werf.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install werf
+launchpad install werf.io
 ```
 
 ## Programs
@@ -72,8 +72,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) werf -- $SHELL -i
+sh <(curl https://pkgx.sh) +werf.io@2.49.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.23`
+- `linux:gnu.org/gcc`
+- `linux:gnu.org/binutils`
 
 ## Usage Examples
 
@@ -91,7 +99,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/werf.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://werf.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

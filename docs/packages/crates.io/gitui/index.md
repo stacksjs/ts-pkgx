@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install gitui
+launchpad install crates.io/gitui
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gitui -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/gitui@0.27.0 -- $SHELL -i
 ```
 
 ## Dependencies

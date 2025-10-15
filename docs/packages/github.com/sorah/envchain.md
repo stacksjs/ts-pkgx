@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install envchain
+launchpad install github.com/sorah/envchain
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) envchain -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/sorah/envchain@1.1.0 -- $SHELL -i
 ```
 
 ## Dependencies

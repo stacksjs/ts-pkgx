@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install gitopolis
+launchpad install crates.io/gitopolis
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gitopolis -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/gitopolis@1.7.0 -- $SHELL -i
 ```
 
 ## Dependencies

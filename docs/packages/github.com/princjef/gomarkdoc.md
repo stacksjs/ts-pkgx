@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install gomarkdoc
+launchpad install github.com/princjef/gomarkdoc
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gomarkdoc -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/princjef/gomarkdoc@1.1.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
 
 ## Usage Examples
 

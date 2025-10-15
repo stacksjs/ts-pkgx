@@ -1,11 +1,11 @@
-# github.com/KarypisLab/GKlib
+# GKlib
 
 > A library of various helper routines and frameworks used by many of the lab's software
 
 ## Package Information
 
 - **Domain**: `github.com/KarypisLab/GKlib`
-- **Name**: `github.com/KarypisLab/GKlib`
+- **Name**: `GKlib`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/KarypisLab/GKlib/package.yml)
 
@@ -45,13 +45,20 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/KarypisLab/GKlib@5.1.1 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/make`
+- `cmake.org`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/KarypisLab/GKlib']
+const pkg = pantry.GKlib
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

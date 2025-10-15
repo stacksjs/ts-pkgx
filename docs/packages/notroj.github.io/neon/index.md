@@ -6,14 +6,14 @@
 
 - **Domain**: `notroj.github.io/neon`
 - **Name**: `neon-config`
-- **Homepage**: Not specified
+- **Homepage**: https://notroj.github.io/neon/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/notroj.github.io/neon/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install neon-config
+launchpad install notroj.github.io/neon
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) neon-config -- $SHELL -i
+sh <(curl https://pkgx.sh) +notroj.github.io/neon@0.35.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/notroj.github.io/neon/package.yml)
-- [Homepage](#)
+- [Homepage](https://notroj.github.io/neon/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

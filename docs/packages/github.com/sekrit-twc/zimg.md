@@ -1,11 +1,11 @@
-# github.com/sekrit-twc/zimg
+# zimg
 
 > Scaling, colorspace conversion, and dithering library
 
 ## Package Information
 
 - **Domain**: `github.com/sekrit-twc/zimg`
-- **Name**: `github.com/sekrit-twc/zimg`
+- **Name**: `zimg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/sekrit-twc/zimg/package.yml)
 
@@ -40,13 +40,21 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/sekrit-twc/zimg@3.0.6 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/autoconf`
+- `gnu.org/automake`
+- `gnu.org/libtool`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/sekrit-twc/zimg']
+const pkg = pantry.zimg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

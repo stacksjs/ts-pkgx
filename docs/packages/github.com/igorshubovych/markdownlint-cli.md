@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install markdownlint
+launchpad install github.com/igorshubovych/markdownlint-cli
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) markdownlint -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/igorshubovych/markdownlint-cli@0.45.0 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -6,14 +6,14 @@
 
 - **Domain**: `circleci.com`
 - **Name**: `circleci`
-- **Homepage**: Not specified
+- **Homepage**: https://circleci.com/docs/2.0/local-cli/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/circleci.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install circleci
+launchpad install circleci.com
 ```
 
 ## Programs
@@ -49,8 +49,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) circleci -- $SHELL -i
+sh <(curl https://pkgx.sh) +circleci.com@0.1.33494 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 
@@ -68,7 +74,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/circleci.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://circleci.com/docs/2.0/local-cli/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

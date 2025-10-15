@@ -6,14 +6,14 @@
 
 - **Domain**: `denilson.sa.nom.br/prettyping`
 - **Name**: `prettyping`
-- **Homepage**: Not specified
+- **Homepage**: https://denilsonsa.github.io/prettyping/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/denilson.sa.nom.br/prettyping/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install prettyping
+launchpad install denilson.sa.nom.br/prettyping
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) prettyping -- $SHELL -i
+sh <(curl https://pkgx.sh) +denilson.sa.nom.br/prettyping@1.1.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/denilson.sa.nom.br/prettyping/package.yml)
-- [Homepage](#)
+- [Homepage](https://denilsonsa.github.io/prettyping/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -1,12 +1,12 @@
-# gnu.org/automake
+# automake
 
 > Tool for generating GNU Standards-compliant Makefiles
 
 ## Package Information
 
 - **Domain**: `gnu.org/automake`
-- **Name**: `gnu.org/automake`
-- **Homepage**: Not specified
+- **Name**: `automake`
+- **Homepage**: https://www.gnu.org/software/automake/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/automake/package.yml)
 
 ## Installation
@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/automake']
+const pkg = pantry.automake
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/automake/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org/software/automake/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

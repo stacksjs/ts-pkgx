@@ -6,14 +6,14 @@
 
 - **Domain**: `tilt.dev`
 - **Name**: `tilt`
-- **Homepage**: Not specified
+- **Homepage**: https://tilt.dev/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tilt.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install tilt
+launchpad install tilt.dev
 ```
 
 ## Programs
@@ -42,8 +42,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tilt -- $SHELL -i
+sh <(curl https://pkgx.sh) +tilt.dev@0.35.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.21`
+- `nodejs.org@^20`
+- `classic.yarnpkg.com`
 
 ## Usage Examples
 
@@ -61,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tilt.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://tilt.dev/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

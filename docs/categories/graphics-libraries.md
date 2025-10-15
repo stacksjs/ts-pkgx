@@ -1,6 +1,6 @@
 # Graphics Libraries
 
-*3 packages in this category*
+*4 packages in this category*
 
 Packages related to graphics libraries.
 
@@ -12,11 +12,21 @@ Vector graphics library with cross-device output support
 
 **Programs**: cairo-trace
 
-**Install**: `launchpad install cairo-trace`
+**Install**: `launchpad install cairographics.org`
 
 ---
 
-### [libsdl.org](../packages/libsdl.org/index.md)
+### [glm.g-truc.net](../packages/glm.g-truc.net/index.md) (glm.g-truc)
+
+OpenGL Mathematics (GLM)
+
+**Programs**: None specified
+
+**Install**: `launchpad install glm.g-truc.net`
+
+---
+
+### [libsdl.org](../packages/libsdl.org/index.md) (libsdl)
 
 Simple Directmedia Layer
 
@@ -26,7 +36,7 @@ Simple Directmedia Layer
 
 ---
 
-### [libsdl.org/SDL_image](../packages/libsdl.org/SDL_image/index.md)
+### [libsdl.org/SDL_image](../packages/libsdl.org/SDL_image/index.md) (SDL_image)
 
 Image decoding for many popular formats for Simple Directmedia Layer.
 

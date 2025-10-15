@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install mscp
+launchpad install github.com/upa/mscp
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mscp -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/upa/mscp@0.2.3 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -6,14 +6,14 @@
 
 - **Domain**: `kubernetes.io/kubectl`
 - **Name**: `kubectl`
-- **Homepage**: Not specified
+- **Homepage**: https://kubernetes.io/docs/reference/kubectl/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/kubernetes.io/kubectl/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install kubectl
+launchpad install kubernetes.io/kubectl
 ```
 
 ## Programs
@@ -60,8 +60,18 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) kubectl -- $SHELL -i
+sh <(curl https://pkgx.sh) +kubernetes.io/kubectl@1.34.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.24.4`
+- `gnu.org/coreutils@^9.1.0`
+- `gnu.org/bash@^5.1`
+- `rsync.samba.org`
+- `curl.se`
 
 ## Usage Examples
 
@@ -79,7 +89,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/kubernetes.io/kubectl/package.yml)
-- [Homepage](#)
+- [Homepage](https://kubernetes.io/docs/reference/kubectl/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

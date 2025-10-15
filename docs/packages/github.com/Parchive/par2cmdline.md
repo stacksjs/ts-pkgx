@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/Parchive/par2cmdline`
 - **Name**: `par2`
-- **Homepage**: Not specified
+- **Homepage**: http://parchive.sourceforge.net
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Parchive/par2cmdline/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install par2
+launchpad install github.com/Parchive/par2cmdline
 ```
 
 ## Programs
@@ -59,7 +59,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/Parchive/par2cmdline/package.yml)
-- [Homepage](#)
+- [Homepage](http://parchive.sourceforge.net)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

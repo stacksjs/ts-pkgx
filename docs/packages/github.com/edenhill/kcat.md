@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install kcat
+launchpad install github.com/edenhill/kcat
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) kcat -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/edenhill/kcat@1.7.0 -- $SHELL -i
 ```
 
 ## Dependencies

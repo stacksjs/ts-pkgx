@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install click
+launchpad install crates.io/click
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) click -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/click@0.6.3 -- $SHELL -i
 ```
 
 ## Dependencies

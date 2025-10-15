@@ -6,14 +6,14 @@
 
 - **Domain**: `freedesktop.org/poppler-qt5`
 - **Name**: `poppler-qt5`
-- **Homepage**: Not specified
+- **Homepage**: https://poppler.freedesktop.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/poppler-qt5/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install poppler-qt5
+launchpad install freedesktop.org/poppler-qt5
 ```
 
 ## Programs
@@ -97,7 +97,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/poppler-qt5/package.yml)
-- [Homepage](#)
+- [Homepage](https://poppler.freedesktop.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

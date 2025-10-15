@@ -12,7 +12,7 @@ GitHub’s official command line tool
 
 **Programs**: gh
 
-**Install**: `launchpad install gh`
+**Install**: `launchpad install cli.github.com`
 
 ---
 

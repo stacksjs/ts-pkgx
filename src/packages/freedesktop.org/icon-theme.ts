@@ -6,7 +6,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install freedesktop.org/icon-theme`
- * @dependencies `mesonbuild.com`, `if@>=0.18`
+ * @dependencies `mesonbuild.com`
  *
  * @example
  * ```typescript
@@ -51,7 +51,6 @@ export const freedesktoporgiconthemePackage = {
    */
   dependencies: [
     'mesonbuild.com',
-    'if@>=0.18',
   ] as const,
   /**
    * Available versions from newest to oldest.

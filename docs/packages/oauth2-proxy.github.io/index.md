@@ -6,14 +6,14 @@
 
 - **Domain**: `oauth2-proxy.github.io`
 - **Name**: `oauth2-proxy`
-- **Homepage**: Not specified
+- **Homepage**: https://oauth2-proxy.github.io/oauth2-proxy/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/oauth2-proxy.github.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install oauth2-proxy
+launchpad install oauth2-proxy.github.io
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) oauth2-proxy -- $SHELL -i
+sh <(curl https://pkgx.sh) +oauth2-proxy.github.io@7.12.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@1.22.4`
 
 ## Usage Examples
 
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/oauth2-proxy.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://oauth2-proxy.github.io/oauth2-proxy/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

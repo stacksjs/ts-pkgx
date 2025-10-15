@@ -6,14 +6,14 @@
 
 - **Domain**: `chiark.greenend.org.uk/halibut`
 - **Name**: `halibut`
-- **Homepage**: Not specified
+- **Homepage**: https://www.chiark.greenend.org.uk/~sgtatham/halibut/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/chiark.greenend.org.uk/halibut/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install halibut
+launchpad install chiark.greenend.org.uk/halibut
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) halibut -- $SHELL -i
+sh <(curl https://pkgx.sh) +chiark.greenend.org.uk/halibut@1.3.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/chiark.greenend.org.uk/halibut/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.chiark.greenend.org.uk/~sgtatham/halibut/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

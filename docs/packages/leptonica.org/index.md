@@ -1,12 +1,12 @@
-# leptonica.org
+# leptonica
 
 > Leptonica is an open source library containing software that is broadly useful for image processing and image analysis applications. The official github repository for Leptonica is: danbloomberg/leptonica. See leptonica.org for more documentation.
 
 ## Package Information
 
 - **Domain**: `leptonica.org`
-- **Name**: `leptonica.org`
-- **Homepage**: Not specified
+- **Name**: `leptonica`
+- **Homepage**: http://www.leptonica.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/leptonica.org/package.yml)
 
 ## Installation
@@ -66,7 +66,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['leptonica.org']
+const pkg = pantry.leptonica
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -76,7 +76,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/leptonica.org/package.yml)
-- [Homepage](#)
+- [Homepage](http://www.leptonica.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -1,11 +1,11 @@
-# github.com/zsh-users/zsh-autosuggestions
+# zsh-autosuggestions
 
 > Fish-like autosuggestions for zsh
 
 ## Package Information
 
 - **Domain**: `github.com/zsh-users/zsh-autosuggestions`
-- **Name**: `github.com/zsh-users/zsh-autosuggestions`
+- **Name**: `zsh-autosuggestions`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zsh-users/zsh-autosuggestions/package.yml)
 
@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +github.com/zsh-users/zsh-autosuggestions@0.7.1 -- $S
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/zsh-users/zsh-autosuggestions']
+const pkg = pantry['zsh-autosuggestions']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

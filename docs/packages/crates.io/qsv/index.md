@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/qsv`
 - **Name**: `qsv`
-- **Homepage**: Not specified
+- **Homepage**: https://qsv.dathere.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/qsv/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install qsv
+launchpad install crates.io/qsv
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) qsv -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/qsv@8.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/qsv/package.yml)
-- [Homepage](#)
+- [Homepage](https://qsv.dathere.com)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

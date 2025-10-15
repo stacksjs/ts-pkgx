@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/spider_cli`
 - **Name**: `spider`
-- **Homepage**: Not specified
+- **Homepage**: https://spider.cloud
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/spider_cli/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install spider
+launchpad install crates.io/spider_cli
 ```
 
 ## Programs
@@ -100,7 +100,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) spider -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/spider_cli@2.37.159 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -119,7 +119,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/spider_cli/package.yml)
-- [Homepage](#)
+- [Homepage](https://spider.cloud)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

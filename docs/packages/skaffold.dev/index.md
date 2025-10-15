@@ -6,14 +6,14 @@
 
 - **Domain**: `skaffold.dev`
 - **Name**: `skaffold`
-- **Homepage**: Not specified
+- **Homepage**: https://skaffold.dev/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/skaffold.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install skaffold
+launchpad install skaffold.dev
 ```
 
 ## Programs
@@ -39,8 +39,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) skaffold -- $SHELL -i
+sh <(curl https://pkgx.sh) +skaffold.dev@2.16.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
 
 ## Usage Examples
 
@@ -58,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/skaffold.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://skaffold.dev/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

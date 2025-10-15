@@ -6,14 +6,14 @@
 
 - **Domain**: `pypa.io/hatch`
 - **Name**: `hatch`
-- **Homepage**: Not specified
+- **Homepage**: https://hatch.pypa.io/latest/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pypa.io/hatch/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install hatch
+launchpad install pypa.io/hatch
 ```
 
 ## Programs
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pypa.io/hatch/package.yml)
-- [Homepage](#)
+- [Homepage](https://hatch.pypa.io/latest/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

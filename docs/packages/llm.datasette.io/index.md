@@ -6,14 +6,14 @@
 
 - **Domain**: `llm.datasette.io`
 - **Name**: `llm`
-- **Homepage**: Not specified
+- **Homepage**: https://llm.datasette.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/llm.datasette.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install llm
+launchpad install llm.datasette.io
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) llm -- $SHELL -i
+sh <(curl https://pkgx.sh) +llm.datasette.io@0.27.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/llm.datasette.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://llm.datasette.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

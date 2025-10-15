@@ -1,12 +1,12 @@
-# sourceware.org/libffi
+# libffi
 
 > A portable foreign-function interface library.
 
 ## Package Information
 
 - **Domain**: `sourceware.org/libffi`
-- **Name**: `sourceware.org/libffi`
-- **Homepage**: Not specified
+- **Name**: `libffi`
+- **Homepage**: http://sourceware.org/libffi
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceware.org/libffi/package.yml)
 
 ## Installation
@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +sourceware.org/libffi@3.5.2 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['sourceware.org/libffi']
+const pkg = pantry.libffi
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sourceware.org/libffi/package.yml)
-- [Homepage](#)
+- [Homepage](http://sourceware.org/libffi)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

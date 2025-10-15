@@ -1,11 +1,11 @@
-# github.com/dateutil/dateutil
+# dateutil
 
 > Useful extensions to the standard Python datetime features
 
 ## Package Information
 
 - **Domain**: `github.com/dateutil/dateutil`
-- **Name**: `github.com/dateutil/dateutil`
+- **Name**: `dateutil`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/dateutil/dateutil/package.yml)
 
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/dateutil/dateutil']
+const pkg = pantry.dateutil
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

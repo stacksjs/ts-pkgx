@@ -6,14 +6,14 @@
 
 - **Domain**: `getsynth.com`
 - **Name**: `synth`
-- **Homepage**: Not specified
+- **Homepage**: https://www.getsynth.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getsynth.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install synth
+launchpad install getsynth.com
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) synth -- $SHELL -i
+sh <(curl https://pkgx.sh) +getsynth.com@0.6.9 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/getsynth.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.getsynth.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

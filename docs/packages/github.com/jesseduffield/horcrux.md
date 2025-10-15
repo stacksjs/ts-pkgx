@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install horcrux
+launchpad install github.com/jesseduffield/horcrux
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) horcrux -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/jesseduffield/horcrux@0.3.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.14`
 
 ## Usage Examples
 

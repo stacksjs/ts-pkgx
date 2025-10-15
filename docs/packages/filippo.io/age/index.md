@@ -6,14 +6,14 @@
 
 - **Domain**: `filippo.io/age`
 - **Name**: `age`
-- **Homepage**: Not specified
+- **Homepage**: https://age-encryption.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/filippo.io/age/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install age
+launchpad install filippo.io/age
 ```
 
 ## Programs
@@ -41,6 +41,12 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +filippo.io/age@1.2.1 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
+
 ## Usage Examples
 
 ```typescript
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/filippo.io/age/package.yml)
-- [Homepage](#)
+- [Homepage](https://age-encryption.org)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install chruby-exec
+launchpad install github.com/postmodern/chruby
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) chruby-exec -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/postmodern/chruby@0.3.9 -- $SHELL -i
 ```
 
 ## Usage Examples

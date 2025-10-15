@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pkgm
+launchpad install pkgx.sh/pkgm
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pkgm -- $SHELL -i
+sh <(curl https://pkgx.sh) +pkgx.sh/pkgm@0.11.1 -- $SHELL -i
 ```
 
 ## Dependencies

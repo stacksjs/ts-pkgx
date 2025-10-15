@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install ifacemaker
+launchpad install github.com/vburenin/ifacemaker
 ```
 
 ## Programs
@@ -37,14 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ifacemaker -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/vburenin/ifacemaker@1.3.0 -- $SHELL -i
 ```
 
-## Related Packages
+## Dependencies
 
-These packages work well with ifacemaker:
+This package depends on:
 
-- [`go.dev`](../../go.dev/index.md) - The Go programming language
+- `go.dev`
 
 ## Usage Examples
 

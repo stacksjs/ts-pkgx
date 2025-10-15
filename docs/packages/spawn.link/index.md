@@ -6,7 +6,7 @@
 
 - **Domain**: `spawn.link`
 - **Name**: `spawn.link`
-- **Homepage**: Not specified
+- **Homepage**: https://trapexit.github.io/mergerfs/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/spawn.link/package.yml)
 
 ## Installation
@@ -43,6 +43,12 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +spawn.link@2.40.2 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `python.org@>=3<3.12`
+
 ## Usage Examples
 
 ```typescript
@@ -59,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/spawn.link/package.yml)
-- [Homepage](#)
+- [Homepage](https://trapexit.github.io/mergerfs/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

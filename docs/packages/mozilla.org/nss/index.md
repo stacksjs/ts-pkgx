@@ -1,12 +1,12 @@
-# mozilla.org/nss
+# nss
 
 > Libraries for security-enabled client and server applications
 
 ## Package Information
 
 - **Domain**: `mozilla.org/nss`
-- **Name**: `mozilla.org/nss`
-- **Homepage**: Not specified
+- **Name**: `nss`
+- **Homepage**: https://firefox-source-docs.mozilla.org/security/nss/index.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mozilla.org/nss/package.yml)
 
 ## Installation
@@ -114,7 +114,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mozilla.org/nss']
+const pkg = pantry.nss
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -124,7 +124,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mozilla.org/nss/package.yml)
-- [Homepage](#)
+- [Homepage](https://firefox-source-docs.mozilla.org/security/nss/index.html)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

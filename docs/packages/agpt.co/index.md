@@ -1,19 +1,19 @@
-# auto-gpt
+# Auto-GPT
 
 > AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.
 
 ## Package Information
 
 - **Domain**: `agpt.co`
-- **Name**: `auto-gpt`
-- **Homepage**: Not specified
+- **Name**: `Auto-GPT`
+- **Homepage**: https://agpt.co
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/agpt.co/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install auto-gpt
+launchpad install agpt.co
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) auto-gpt -- $SHELL -i
+sh <(curl https://pkgx.sh) +agpt.co@0.4.7 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['auto-gpt']
+const pkg = pantry['Auto-GPT']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/agpt.co/package.yml)
-- [Homepage](#)
+- [Homepage](https://agpt.co)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

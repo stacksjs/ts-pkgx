@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install vivid
+launchpad install crates.io/vivid
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) vivid -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/vivid@0.10.1 -- $SHELL -i
 ```
 
 ## Dependencies

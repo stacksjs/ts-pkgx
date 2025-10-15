@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/git-delta`
 - **Name**: `delta`
-- **Homepage**: Not specified
+- **Homepage**: https://dandavison.github.io/delta/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/git-delta/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install delta
+launchpad install crates.io/git-delta
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) delta -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/git-delta@0.18.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/git-delta/package.yml)
-- [Homepage](#)
+- [Homepage](https://dandavison.github.io/delta/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

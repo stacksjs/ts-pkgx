@@ -6,14 +6,14 @@
 
 - **Domain**: `lz4.org`
 - **Name**: `lz4`
-- **Homepage**: Not specified
+- **Homepage**: https://lz4.github.io/lz4/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lz4.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install lz4
+launchpad install lz4.org
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) lz4 -- $SHELL -i
+sh <(curl https://pkgx.sh) +lz4.org@1.10.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/lz4.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://lz4.github.io/lz4/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

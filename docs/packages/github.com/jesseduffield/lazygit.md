@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install lazygit
+launchpad install github.com/jesseduffield/lazygit
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) lazygit -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/jesseduffield/lazygit@0.55.1 -- $SHELL -i
 ```
 
 ## Dependencies

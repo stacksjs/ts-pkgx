@@ -6,14 +6,14 @@
 
 - **Domain**: `doxygen.nl`
 - **Name**: `doxygen`
-- **Homepage**: Not specified
+- **Homepage**: https://www.doxygen.nl/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/doxygen.nl/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install doxygen
+launchpad install doxygen.nl
 ```
 
 ## Programs
@@ -38,8 +38,17 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) doxygen -- $SHELL -i
+sh <(curl https://pkgx.sh) +doxygen.nl@1.14.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/bison@^3`
+- `cmake.org@^3`
+- `github.com/westes/flex@2`
+- `python.org@>=3<3.12`
 
 ## Usage Examples
 
@@ -57,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/doxygen.nl/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.doxygen.nl/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

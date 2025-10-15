@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install glslc
+launchpad install github.com/google/shaderc
 ```
 
 ## Programs
@@ -38,8 +38,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) glslc -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/google/shaderc@2025.4.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `python.org@~3.12`
 
 ## Usage Examples
 

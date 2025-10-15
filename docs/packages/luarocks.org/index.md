@@ -6,14 +6,14 @@
 
 - **Domain**: `luarocks.org`
 - **Name**: `luarocks`
-- **Homepage**: Not specified
+- **Homepage**: https://luarocks.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/luarocks.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install luarocks
+launchpad install luarocks.org
 ```
 
 ## Programs
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/luarocks.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://luarocks.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

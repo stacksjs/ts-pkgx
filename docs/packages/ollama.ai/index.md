@@ -6,14 +6,14 @@
 
 - **Domain**: `ollama.ai`
 - **Name**: `ollama`
-- **Homepage**: Not specified
+- **Homepage**: https://ollama.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ollama.ai/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ollama
+launchpad install ollama.ai
 ```
 
 ## Programs
@@ -61,7 +61,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ollama -- $SHELL -i
+sh <(curl https://pkgx.sh) +ollama.ai@0.12.5 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -86,7 +86,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ollama.ai/package.yml)
-- [Homepage](#)
+- [Homepage](https://ollama.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

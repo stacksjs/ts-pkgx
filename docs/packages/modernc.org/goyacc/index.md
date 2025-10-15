@@ -6,25 +6,19 @@
 
 - **Domain**: `modernc.org/goyacc`
 - **Name**: `modernc.org/goyacc`
-- **Homepage**: Not specified
+- **Homepage**: https://pkg.go.dev/modernc.org/goyacc
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/modernc.org/goyacc/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install goyacc
+launchpad install modernc.org/goyacc
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `goyacc`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `goyacc`
 
@@ -43,8 +37,14 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) goyacc -- $SHELL -i
+sh <(curl https://pkgx.sh) +modernc.org/goyacc@1.0.3 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.19`
 
 ## Usage Examples
 
@@ -52,7 +52,7 @@ sh <(curl https://pkgx.sh) goyacc -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.goyacc
+const pkg = pantry['modernc.org/goyacc']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/modernc.org/goyacc/package.yml)
-- [Homepage](#)
+- [Homepage](https://pkg.go.dev/modernc.org/goyacc)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `gnu.org/libtasn1`
 - **Name**: `asn1`
-- **Homepage**: Not specified
+- **Homepage**: https://www.gnu.org/software/libtasn1/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libtasn1/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install asn1
+launchpad install gnu.org/libtasn1
 ```
 
 ## Programs
@@ -58,7 +58,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/libtasn1/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org/software/libtasn1/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install rswift
+launchpad install github.com/mac-cain13/R.swift
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rswift -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/mac-cain13/R.swift@7.8.0 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -1,11 +1,11 @@
-# libimobiledevice.org/libimobiledevice-glue
+# libimobiledevice-glue
 
 > A library with common code used by libraries and tools around the libimobiledevice project
 
 ## Package Information
 
 - **Domain**: `libimobiledevice.org/libimobiledevice-glue`
-- **Name**: `libimobiledevice.org/libimobiledevice-glue`
+- **Name**: `libimobiledevice-glue`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libimobiledevice.org/libimobiledevice-glue/package.yml)
 
@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libimobiledevice.org/libimobiledevice-glue']
+const pkg = pantry['libimobiledevice-glue']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

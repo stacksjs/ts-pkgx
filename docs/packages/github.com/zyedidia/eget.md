@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install eget
+launchpad install github.com/zyedidia/eget
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `eget`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `eget`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) eget -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/zyedidia/eget@1.3.4 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -58,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.eget
+const pkg = pantry.Eget
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

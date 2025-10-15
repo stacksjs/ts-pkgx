@@ -6,14 +6,14 @@
 
 - **Domain**: `dystroy.org/bacon`
 - **Name**: `bacon`
-- **Homepage**: Not specified
+- **Homepage**: https://dystroy.org/bacon/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dystroy.org/bacon/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install bacon
+launchpad install dystroy.org/bacon
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) bacon -- $SHELL -i
+sh <(curl https://pkgx.sh) +dystroy.org/bacon@3.19.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/dystroy.org/bacon/package.yml)
-- [Homepage](#)
+- [Homepage](https://dystroy.org/bacon/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

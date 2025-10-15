@@ -6,7 +6,7 @@
 
 - **Domain**: `getfoundry.sh`
 - **Name**: `getfoundry.sh`
-- **Homepage**: Not specified
+- **Homepage**: https://getfoundry.sh
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getfoundry.sh/package.yml)
 
 ## Installation
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/getfoundry.sh/package.yml)
-- [Homepage](#)
+- [Homepage](https://getfoundry.sh)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

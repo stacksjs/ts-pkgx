@@ -1,11 +1,11 @@
-# github.com/zsh-users/zsh-completions
+# zsh-completions
 
 > Additional completion definitions for Zsh.
 
 ## Package Information
 
 - **Domain**: `github.com/zsh-users/zsh-completions`
-- **Name**: `github.com/zsh-users/zsh-completions`
+- **Name**: `zsh-completions`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zsh-users/zsh-completions/package.yml)
 
@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/zsh-users/zsh-completions']
+const pkg = pantry['zsh-completions']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

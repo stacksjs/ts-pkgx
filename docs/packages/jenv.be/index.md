@@ -6,14 +6,14 @@
 
 - **Domain**: `jenv.be`
 - **Name**: `jenv`
-- **Homepage**: Not specified
+- **Homepage**: http://www.jenv.be
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jenv.be/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install jenv
+launchpad install jenv.be
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) jenv -- $SHELL -i
+sh <(curl https://pkgx.sh) +jenv.be@0.5.9 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jenv.be/package.yml)
-- [Homepage](#)
+- [Homepage](http://www.jenv.be)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

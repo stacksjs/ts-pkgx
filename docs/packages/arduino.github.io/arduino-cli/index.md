@@ -6,14 +6,14 @@
 
 - **Domain**: `arduino.github.io/arduino-cli`
 - **Name**: `arduino-cli`
-- **Homepage**: Not specified
+- **Homepage**: https://arduino.github.io/arduino-cli/latest/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/arduino.github.io/arduino-cli/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install arduino-cli
+launchpad install arduino.github.io/arduino-cli
 ```
 
 ## Programs
@@ -41,8 +41,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) arduino-cli -- $SHELL -i
+sh <(curl https://pkgx.sh) +arduino.github.io/arduino-cli@1.3.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
 
 ## Usage Examples
 
@@ -60,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/arduino.github.io/arduino-cli/package.yml)
-- [Homepage](#)
+- [Homepage](https://arduino.github.io/arduino-cli/latest/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install xh
+launchpad install crates.io/xh
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) xh -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/xh@0.25.0 -- $SHELL -i
 ```
 
 ## Usage Examples

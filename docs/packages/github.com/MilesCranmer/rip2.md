@@ -1,6 +1,6 @@
 # rip2
 
-> A safe and ergonomic alternative to rm
+>  A safe and ergonomic alternative to rm
 
 ## Package Information
 
@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install rip
+launchpad install github.com/MilesCranmer/rip2
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `rip`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `rip`
 
@@ -44,7 +38,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rip -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/MilesCranmer/rip2@0.9.5 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -53,7 +47,7 @@ sh <(curl https://pkgx.sh) rip -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.rip
+const pkg = pantry.rip2
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

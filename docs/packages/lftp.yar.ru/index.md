@@ -6,14 +6,14 @@
 
 - **Domain**: `lftp.yar.ru`
 - **Name**: `lftp`
-- **Homepage**: Not specified
+- **Homepage**: https://lftp.yar.ru/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lftp.yar.ru/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install lftp
+launchpad install lftp.yar.ru
 ```
 
 ## Programs
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/lftp.yar.ru/package.yml)
-- [Homepage](#)
+- [Homepage](https://lftp.yar.ru/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

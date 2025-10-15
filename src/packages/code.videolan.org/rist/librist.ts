@@ -8,7 +8,7 @@
  *
  * @install `launchpad install code.videolan.org/rist/librist`
  * @homepage https://code.videolan.org/rist/
- * @dependencies `mesonbuild.com@>=0.47<1`, `sourceware.org/libffi@3`, `if@darwin`
+ * @dependencies `mesonbuild.com@>=0.47<1`, `linux:sourceware.org/libffi@3` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -61,11 +61,11 @@ export const codevideolanorgristlibristPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'mesonbuild.com@>=0.47<1',
-    'sourceware.org/libffi@3',
-    'if@darwin',
+    'linux:sourceware.org/libffi@3',
   ] as const,
   /**
    * Available versions from newest to oldest.

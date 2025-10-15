@@ -6,14 +6,14 @@
 
 - **Domain**: `cocogitto.io`
 - **Name**: `cog`
-- **Homepage**: Not specified
+- **Homepage**: https://docs.cocogitto.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cocogitto.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cog
+launchpad install cocogitto.io
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cog -- $SHELL -i
+sh <(curl https://pkgx.sh) +cocogitto.io@6.3.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cocogitto.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.cocogitto.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

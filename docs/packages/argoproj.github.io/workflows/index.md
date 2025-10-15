@@ -6,25 +6,19 @@
 
 - **Domain**: `argoproj.github.io/workflows`
 - **Name**: `argo-workflows`
-- **Homepage**: Not specified
+- **Homepage**: https://argoproj.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/argoproj.github.io/workflows/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install argo
+launchpad install argoproj.github.io/workflows
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `argo`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `argo`
 
@@ -51,8 +45,14 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) argo -- $SHELL -i
+sh <(curl https://pkgx.sh) +argoproj.github.io/workflows@3.7.3 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 
@@ -60,7 +60,7 @@ sh <(curl https://pkgx.sh) argo -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.argo
+const pkg = pantry['argo-workflows']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/argoproj.github.io/workflows/package.yml)
-- [Homepage](#)
+- [Homepage](https://argoproj.io)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

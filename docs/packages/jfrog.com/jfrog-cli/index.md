@@ -1,12 +1,12 @@
-# jfrog.com/jfrog-cli
+# jfrog-cli
 
 > JFrog CLI is a client that provides a simple interface that automates access to the JFrog products.
 
 ## Package Information
 
 - **Domain**: `jfrog.com/jfrog-cli`
-- **Name**: `jfrog.com/jfrog-cli`
-- **Homepage**: Not specified
+- **Name**: `jfrog-cli`
+- **Homepage**: https://www.jfrog.com/confluence/display/CLI/JFrog+CLI
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jfrog.com/jfrog-cli/package.yml)
 
 ## Installation
@@ -61,13 +61,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +jfrog.com/jfrog-cli@2.80.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.20`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['jfrog.com/jfrog-cli']
+const pkg = pantry['jfrog-cli']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -77,7 +83,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jfrog.com/jfrog-cli/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.jfrog.com/confluence/display/CLI/JFrog+CLI)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

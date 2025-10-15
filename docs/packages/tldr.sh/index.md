@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install tldr
+launchpad install tldr.sh
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tldr -- $SHELL -i
+sh <(curl https://pkgx.sh) +tldr.sh@1.6.1 -- $SHELL -i
 ```
 
 ## Dependencies

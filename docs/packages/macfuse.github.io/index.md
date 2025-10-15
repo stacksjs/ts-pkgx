@@ -1,11 +1,11 @@
-# macfuse.github.io
+# macfuse.github
 
 > macFUSE umbrella repository
 
 ## Package Information
 
 - **Domain**: `macfuse.github.io`
-- **Name**: `macfuse.github.io`
+- **Name**: `macfuse.github`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/macfuse.github.io/package.yml)
 
@@ -40,13 +40,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +macfuse.github.io@5.0.7 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `mesonbuild.com`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['macfuse.github.io']
+const pkg = pantry['macfuse.github']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

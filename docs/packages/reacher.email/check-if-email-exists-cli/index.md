@@ -6,14 +6,14 @@
 
 - **Domain**: `reacher.email/check-if-email-exists-cli`
 - **Name**: `check_if_email_exists`
-- **Homepage**: Not specified
+- **Homepage**: https://reacher.email
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/reacher.email/check-if-email-exists-cli/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install check_if_email_exists
+launchpad install reacher.email/check-if-email-exists-cli
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) check_if_email_exists -- $SHELL -i
+sh <(curl https://pkgx.sh) +reacher.email/check-if-email-exists-cli@0.11.6 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/reacher.email/check-if-email-exists-cli/package.yml)
-- [Homepage](#)
+- [Homepage](https://reacher.email)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -1,12 +1,12 @@
-# gnupg.org/libgpg-error
+# libgpg-error
 
 > Common error values for all GnuPG components
 
 ## Package Information
 
 - **Domain**: `gnupg.org/libgpg-error`
-- **Name**: `gnupg.org/libgpg-error`
-- **Homepage**: Not specified
+- **Name**: `libgpg-error`
+- **Homepage**: https://www.gnupg.org/related_software/libgpg-error/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/libgpg-error/package.yml)
 
 ## Installation
@@ -51,7 +51,7 @@ sh <(curl https://pkgx.sh) +gnupg.org/libgpg-error@1.56.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnupg.org/libgpg-error']
+const pkg = pantry['libgpg-error']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -61,7 +61,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/libgpg-error/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnupg.org/related_software/libgpg-error/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

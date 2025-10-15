@@ -1,12 +1,12 @@
-# gnu.org/bison
+# bison
 
 > Parser generator
 
 ## Package Information
 
 - **Domain**: `gnu.org/bison`
-- **Name**: `gnu.org/bison`
-- **Homepage**: Not specified
+- **Name**: `bison`
+- **Homepage**: https://www.gnu.org/software/bison/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/bison/package.yml)
 
 ## Installation
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/bison']
+const pkg = pantry.bison
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/bison/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org/software/bison/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

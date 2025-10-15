@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install adr
+launchpad install github.com/npryce/adr-tools
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) adr -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/npryce/adr-tools@3.0.0 -- $SHELL -i
 ```
 
 ## Dependencies

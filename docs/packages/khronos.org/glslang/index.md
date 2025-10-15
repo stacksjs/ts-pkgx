@@ -1,12 +1,12 @@
-# khronos.org/glslang
+# glslang
 
 > Khronos-reference front end for GLSL/ESSL, partial front end for HLSL, and a SPIR-V generator.
 
 ## Package Information
 
 - **Domain**: `khronos.org/glslang`
-- **Name**: `khronos.org/glslang`
-- **Homepage**: Not specified
+- **Name**: `glslang`
+- **Homepage**: https://www.khronos.org/opengles/sdk/tools/Reference-Compiler/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/khronos.org/glslang/package.yml)
 
 ## Installation
@@ -44,13 +44,20 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +khronos.org/glslang@16.0.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `python.org@~3.11`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['khronos.org/glslang']
+const pkg = pantry.glslang
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -60,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/khronos.org/glslang/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.khronos.org/opengles/sdk/tools/Reference-Compiler/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

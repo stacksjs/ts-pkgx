@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install license
+launchpad install github.com/nishanths/license
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) license -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/nishanths/license@5.0.4 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.16`
 
 ## Usage Examples
 

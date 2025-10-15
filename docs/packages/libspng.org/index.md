@@ -1,12 +1,12 @@
-# libspng.org
+# libspng
 
 > Simple, modern libpng alternative
 
 ## Package Information
 
 - **Domain**: `libspng.org`
-- **Name**: `libspng.org`
-- **Homepage**: Not specified
+- **Name**: `libspng`
+- **Homepage**: https://libspng.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libspng.org/package.yml)
 
 ## Installation
@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libspng.org']
+const pkg = pantry.libspng
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libspng.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://libspng.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

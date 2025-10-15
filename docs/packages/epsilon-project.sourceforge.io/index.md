@@ -6,14 +6,14 @@
 
 - **Domain**: `epsilon-project.sourceforge.io`
 - **Name**: `epsilon`
-- **Homepage**: Not specified
+- **Homepage**: https://sourceforge.net/projects/epsilon-project/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/epsilon-project.sourceforge.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install epsilon
+launchpad install epsilon-project.sourceforge.io
 ```
 
 ## Programs
@@ -37,14 +37,17 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) epsilon -- $SHELL -i
+sh <(curl https://pkgx.sh) +epsilon-project.sourceforge.io@0.9.2 -- $SHELL -i
 ```
 
 ## Dependencies
 
 This package depends on:
 
-- `rpm.org/popt`
+- `gnu.org/make`
+- `gnu.org/autoconf`
+- `gnu.org/automake`
+- `gnu.org/libtool`
 
 ## Usage Examples
 
@@ -62,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/epsilon-project.sourceforge.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://sourceforge.net/projects/epsilon-project/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

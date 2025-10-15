@@ -1,12 +1,12 @@
-# scala-lang.org
+# scala-lang
 
 > The Scala 3 compiler, also known as Dotty.
 
 ## Package Information
 
 - **Domain**: `scala-lang.org`
-- **Name**: `scala-lang.org`
-- **Homepage**: Not specified
+- **Name**: `scala-lang`
+- **Homepage**: https://dotty.epfl.ch
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/scala-lang.org/package.yml)
 
 ## Installation
@@ -58,7 +58,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['scala-lang.org']
+const pkg = pantry['scala-lang']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/scala-lang.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://dotty.epfl.ch)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

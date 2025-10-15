@@ -1,12 +1,12 @@
-# jpeg.org/jpegxl
+# jpegxl
 
 > JPEG XL image format reference implementation
 
 ## Package Information
 
 - **Domain**: `jpeg.org/jpegxl`
-- **Name**: `jpeg.org/jpegxl`
-- **Homepage**: Not specified
+- **Name**: `jpegxl`
+- **Homepage**: https://jpeg.org/jpegxl/index.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jpeg.org/jpegxl/package.yml)
 
 ## Installation
@@ -63,7 +63,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['jpeg.org/jpegxl']
+const pkg = pantry.jpegxl
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jpeg.org/jpegxl/package.yml)
-- [Homepage](#)
+- [Homepage](https://jpeg.org/jpegxl/index.html)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

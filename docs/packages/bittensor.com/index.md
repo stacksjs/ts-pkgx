@@ -6,14 +6,14 @@
 
 - **Domain**: `bittensor.com`
 - **Name**: `Bittensor`
-- **Homepage**: Not specified
+- **Homepage**: https://www.bittensor.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bittensor.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install Bittensor
+launchpad install bittensor.com
 ```
 
 ## Programs
@@ -77,7 +77,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/bittensor.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.bittensor.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

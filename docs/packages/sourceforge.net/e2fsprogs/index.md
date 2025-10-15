@@ -1,12 +1,12 @@
-# sf.net/e2fsprogs
+# e2fsprogs
 
 > Utilities for the ext2, ext3, and ext4 file systems
 
 ## Package Information
 
 - **Domain**: `sourceforge.net/e2fsprogs`
-- **Name**: `sf.net/e2fsprogs`
-- **Homepage**: Not specified
+- **Name**: `e2fsprogs`
+- **Homepage**: https://e2fsprogs.sourceforge.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/e2fsprogs/package.yml)
 
 ## Installation
@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['sf.net/e2fsprogs']
+const pkg = pantry.e2fsprogs
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/e2fsprogs/package.yml)
-- [Homepage](#)
+- [Homepage](https://e2fsprogs.sourceforge.net/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

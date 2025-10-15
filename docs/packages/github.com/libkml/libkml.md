@@ -1,11 +1,11 @@
-# github.com/libkml/libkml
+# libkml
 
 > Reference implementation of OGC KML 2.2
 
 ## Package Information
 
 - **Domain**: `github.com/libkml/libkml`
-- **Name**: `github.com/libkml/libkml`
+- **Name**: `libkml`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libkml/libkml/package.yml)
 
@@ -56,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/libkml/libkml']
+const pkg = pantry.libkml
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

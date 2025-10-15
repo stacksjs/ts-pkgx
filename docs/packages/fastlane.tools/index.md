@@ -6,14 +6,14 @@
 
 - **Domain**: `fastlane.tools`
 - **Name**: `fastlane`
-- **Homepage**: Not specified
+- **Homepage**: https://fastlane.tools
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fastlane.tools/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install fastlane
+launchpad install fastlane.tools
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) fastlane -- $SHELL -i
+sh <(curl https://pkgx.sh) +fastlane.tools@2.228.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -50,12 +50,6 @@ This package depends on:
 
 - `ruby-lang.org~3.2`
 - `rubygems.org`
-
-## Related Packages
-
-These packages work well with fastlane:
-
-- [`cocoapods.org/xcodeproj`](../cocoapods.org/xcodeproj/index.md) - Create and modify Xcode projects from Ruby.
 
 ## Usage Examples
 
@@ -73,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/fastlane.tools/package.yml)
-- [Homepage](#)
+- [Homepage](https://fastlane.tools)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

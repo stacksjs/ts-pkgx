@@ -6,14 +6,14 @@
 
 - **Domain**: `microsoft.com/azure-cli`
 - **Name**: `az`
-- **Homepage**: Not specified
+- **Homepage**: https://docs.microsoft.com/cli/azure/overview
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/azure-cli/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install az
+launchpad install microsoft.com/azure-cli
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) az -- $SHELL -i
+sh <(curl https://pkgx.sh) +microsoft.com/azure-cli@2.78.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -71,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/azure-cli/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.microsoft.com/cli/azure/overview)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

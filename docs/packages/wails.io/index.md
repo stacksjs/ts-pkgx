@@ -6,14 +6,14 @@
 
 - **Domain**: `wails.io`
 - **Name**: `wails`
-- **Homepage**: Not specified
+- **Homepage**: https://wails.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wails.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install wails
+launchpad install wails.io
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) wails -- $SHELL -i
+sh <(curl https://pkgx.sh) +wails.io@2.10.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/wails.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://wails.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

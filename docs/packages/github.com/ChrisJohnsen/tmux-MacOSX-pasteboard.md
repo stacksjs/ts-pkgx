@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install reattach-to-user-namespace
+launchpad install github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) reattach-to-user-namespace -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/ChrisJohnsen/tmux-MacOSX-pasteboard@2.9.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/make`
 
 ## Usage Examples
 

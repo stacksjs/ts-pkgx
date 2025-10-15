@@ -8,7 +8,7 @@
  *
  * @install `launchpad install daytona.io`
  * @homepage https://daytona.io
- * @dependencies `go.dev@=1.23.5`, `if@>=0.100`
+ * @dependencies `go.dev@=1.23.5`
  *
  * @example
  * ```typescript
@@ -61,7 +61,6 @@ export const daytonaioPackage = {
    */
   dependencies: [
     'go.dev@=1.23.5',
-    'if@>=0.100',
   ] as const,
   /**
    * Available versions from newest to oldest.

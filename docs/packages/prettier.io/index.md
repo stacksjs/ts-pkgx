@@ -6,14 +6,14 @@
 
 - **Domain**: `prettier.io`
 - **Name**: `prettier`
-- **Homepage**: Not specified
+- **Homepage**: https://prettier.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/prettier.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install prettier
+launchpad install prettier.io
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) prettier -- $SHELL -i
+sh <(curl https://pkgx.sh) +prettier.io@3.6.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/prettier.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://prettier.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

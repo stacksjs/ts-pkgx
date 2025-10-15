@@ -6,14 +6,14 @@
 
 - **Domain**: `astral.sh/ruff`
 - **Name**: `ruff`
-- **Homepage**: Not specified
+- **Homepage**: https://docs.astral.sh/ruff/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/astral.sh/ruff/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ruff
+launchpad install astral.sh/ruff
 ```
 
 ## Programs
@@ -57,7 +57,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ruff -- $SHELL -i
+sh <(curl https://pkgx.sh) +astral.sh/ruff@0.14.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -76,7 +76,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/astral.sh/ruff/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.astral.sh/ruff/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

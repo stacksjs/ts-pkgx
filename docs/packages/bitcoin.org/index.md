@@ -6,14 +6,14 @@
 
 - **Domain**: `bitcoin.org`
 - **Name**: `bitcoin`
-- **Homepage**: Not specified
+- **Homepage**: https://bitcoincore.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bitcoin.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install bitcoin
+launchpad install bitcoin.org
 ```
 
 ## Programs
@@ -74,7 +74,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/bitcoin.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://bitcoincore.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

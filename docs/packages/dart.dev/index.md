@@ -6,14 +6,14 @@
 
 - **Domain**: `dart.dev`
 - **Name**: `dart`
-- **Homepage**: Not specified
+- **Homepage**: https://dart.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dart.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install dart
+launchpad install dart.dev
 ```
 
 ## Programs
@@ -49,6 +49,14 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +dart.dev@3.9.4 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
+- `python.org@>=3<3.12`
+- `tukaani.org/xz`
+
 ## Usage Examples
 
 ```typescript
@@ -65,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/dart.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://dart.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

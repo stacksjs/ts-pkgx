@@ -1,12 +1,12 @@
-# pugixml.org
+# pugixml
 
 > Light-weight, simple and fast XML parser for C++ with XPath support
 
 ## Package Information
 
 - **Domain**: `pugixml.org`
-- **Name**: `pugixml.org`
-- **Homepage**: Not specified
+- **Name**: `pugixml`
+- **Homepage**: http://pugixml.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pugixml.org/package.yml)
 
 ## Installation
@@ -40,13 +40,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +pugixml.org@1.15.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pugixml.org']
+const pkg = pantry.pugixml
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pugixml.org/package.yml)
-- [Homepage](#)
+- [Homepage](http://pugixml.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

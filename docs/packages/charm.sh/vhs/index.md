@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install vhs
+launchpad install charm.sh/vhs
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) vhs -- $SHELL -i
+sh <(curl https://pkgx.sh) +charm.sh/vhs@0.10.0 -- $SHELL -i
 ```
 
 ## Dependencies

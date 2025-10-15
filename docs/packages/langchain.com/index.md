@@ -1,12 +1,12 @@
-# langchain.com
+# langchain
 
 > 🦜🔗 Build context-aware reasoning applications
 
 ## Package Information
 
 - **Domain**: `langchain.com`
-- **Name**: `langchain.com`
-- **Homepage**: Not specified
+- **Name**: `langchain`
+- **Homepage**: https://python.langchain.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/langchain.com/package.yml)
 
 ## Installation
@@ -64,7 +64,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['langchain.com']
+const pkg = pantry.langchain
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -74,7 +74,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/langchain.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://python.langchain.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

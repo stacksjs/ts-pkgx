@@ -6,14 +6,14 @@
 
 - **Domain**: `google.com/firebase-tools`
 - **Name**: `firebase`
-- **Homepage**: Not specified
+- **Homepage**: https://firebase.google.com/docs/cli/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/firebase-tools/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install firebase
+launchpad install google.com/firebase-tools
 ```
 
 ## Programs
@@ -60,7 +60,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) firebase -- $SHELL -i
+sh <(curl https://pkgx.sh) +google.com/firebase-tools@14.19.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -85,7 +85,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/google.com/firebase-tools/package.yml)
-- [Homepage](#)
+- [Homepage](https://firebase.google.com/docs/cli/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

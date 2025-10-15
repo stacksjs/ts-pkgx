@@ -6,14 +6,14 @@
 
 - **Domain**: `pypa.github.io/pipx`
 - **Name**: `pipx`
-- **Homepage**: Not specified
+- **Homepage**: https://pipx.pypa.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pypa.github.io/pipx/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pipx
+launchpad install pypa.github.io/pipx
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pipx -- $SHELL -i
+sh <(curl https://pkgx.sh) +pypa.github.io/pipx@1.8.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pypa.github.io/pipx/package.yml)
-- [Homepage](#)
+- [Homepage](https://pipx.pypa.io)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

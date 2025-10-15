@@ -1,12 +1,12 @@
-# gnu.org/parallel
+# parallel
 
 > Shell command parallelization utility
 
 ## Package Information
 
 - **Domain**: `gnu.org/parallel`
-- **Name**: `gnu.org/parallel`
-- **Homepage**: Not specified
+- **Name**: `parallel`
+- **Homepage**: https://savannah.gnu.org/projects/parallel/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/parallel/package.yml)
 
 ## Installation
@@ -63,7 +63,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/parallel']
+const pkg = pantry.parallel
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/parallel/package.yml)
-- [Homepage](#)
+- [Homepage](https://savannah.gnu.org/projects/parallel/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

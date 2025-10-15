@@ -6,14 +6,14 @@
 
 - **Domain**: `haskell.org/cabal`
 - **Name**: `cabal`
-- **Homepage**: Not specified
+- **Homepage**: https://www.haskell.org/cabal/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/haskell.org/cabal/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cabal
+launchpad install haskell.org/cabal
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cabal -- $SHELL -i
+sh <(curl https://pkgx.sh) +haskell.org/cabal@3.8.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/haskell.org/cabal/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.haskell.org/cabal/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

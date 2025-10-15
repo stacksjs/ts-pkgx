@@ -6,14 +6,14 @@
 
 - **Domain**: `printfn.github.io/fend`
 - **Name**: `fend`
-- **Homepage**: Not specified
+- **Homepage**: https://printfn.github.io/fend
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/printfn.github.io/fend/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install fend
+launchpad install printfn.github.io/fend
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) fend -- $SHELL -i
+sh <(curl https://pkgx.sh) +printfn.github.io/fend@1.5.7 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/printfn.github.io/fend/package.yml)
-- [Homepage](#)
+- [Homepage](https://printfn.github.io/fend)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -1,11 +1,11 @@
-# stable-diffusion-webui
+# Stable Diffusion web UI
 
 > Stable Diffusion web UI
 
 ## Package Information
 
 - **Domain**: `github.com/AUTOMATIC1111/stable-diffusion-webui`
-- **Name**: `stable-diffusion-webui`
+- **Name**: `Stable Diffusion web UI`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/AUTOMATIC1111/stable-diffusion-webui/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install stable-diffusion-webui
+launchpad install github.com/AUTOMATIC1111/stable-diffusion-webui
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) stable-diffusion-webui -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/AUTOMATIC1111/stable-diffusion-webui@1.10.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['stable-diffusion-webui']
+const pkg = pantry['Stable Diffusion web UI']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/strukturag/libheif`
 - **Name**: `heif`
-- **Homepage**: Not specified
+- **Homepage**: https://www.libde265.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/strukturag/libheif/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install heif
+launchpad install github.com/strukturag/libheif
 ```
 
 ## Programs
@@ -74,7 +74,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/strukturag/libheif/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.libde265.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

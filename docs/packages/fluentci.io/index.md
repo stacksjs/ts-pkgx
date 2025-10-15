@@ -6,14 +6,14 @@
 
 - **Domain**: `fluentci.io`
 - **Name**: `fluentci`
-- **Homepage**: Not specified
+- **Homepage**: https://fluentci.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fluentci.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install fluentci
+launchpad install fluentci.io
 ```
 
 ## Programs
@@ -50,7 +50,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) fluentci -- $SHELL -i
+sh <(curl https://pkgx.sh) +fluentci.io@0.16.8 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -77,7 +77,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/fluentci.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://fluentci.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

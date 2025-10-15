@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install whisper
+launchpad install openai.com/whisper
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) whisper -- $SHELL -i
+sh <(curl https://pkgx.sh) +openai.com/whisper@20250625.0.0 -- $SHELL -i
 ```
 
 ## Dependencies

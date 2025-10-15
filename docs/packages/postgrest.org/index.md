@@ -6,14 +6,14 @@
 
 - **Domain**: `postgrest.org`
 - **Name**: `postgrest`
-- **Homepage**: Not specified
+- **Homepage**: https://postgrest.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/postgrest.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install postgrest
+launchpad install postgrest.org
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) postgrest -- $SHELL -i
+sh <(curl https://pkgx.sh) +postgrest.org@13.0.7 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/postgrest.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://postgrest.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

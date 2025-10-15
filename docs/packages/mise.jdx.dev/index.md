@@ -6,14 +6,14 @@
 
 - **Domain**: `mise.jdx.dev`
 - **Name**: `mise`
-- **Homepage**: Not specified
+- **Homepage**: https://mise.jdx.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mise.jdx.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mise
+launchpad install mise.jdx.dev
 ```
 
 ## Programs
@@ -138,7 +138,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mise.jdx.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://mise.jdx.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

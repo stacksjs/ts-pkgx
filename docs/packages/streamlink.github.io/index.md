@@ -6,14 +6,14 @@
 
 - **Domain**: `streamlink.github.io`
 - **Name**: `streamlink`
-- **Homepage**: Not specified
+- **Homepage**: https://streamlink.github.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/streamlink.github.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install streamlink
+launchpad install streamlink.github.io
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) streamlink -- $SHELL -i
+sh <(curl https://pkgx.sh) +streamlink.github.io@7.6.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -49,12 +49,6 @@ sh <(curl https://pkgx.sh) streamlink -- $SHELL -i
 This package depends on:
 
 - `pkgx.sh^1`
-
-## Related Packages
-
-These packages work well with streamlink:
-
-- [`ffmpeg.org`](../ffmpeg.org/index.md) - Play, record, convert, and stream audio and video
 
 ## Usage Examples
 
@@ -72,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/streamlink.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://streamlink.github.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

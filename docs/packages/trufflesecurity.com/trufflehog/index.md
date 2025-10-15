@@ -6,14 +6,14 @@
 
 - **Domain**: `trufflesecurity.com/trufflehog`
 - **Name**: `trufflehog`
-- **Homepage**: Not specified
+- **Homepage**: https://trufflesecurity.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/trufflesecurity.com/trufflehog/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install trufflehog
+launchpad install trufflesecurity.com/trufflehog
 ```
 
 ## Programs
@@ -67,8 +67,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) trufflehog -- $SHELL -i
+sh <(curl https://pkgx.sh) +trufflesecurity.com/trufflehog@3.90.8 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 
@@ -86,7 +92,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/trufflesecurity.com/trufflehog/package.yml)
-- [Homepage](#)
+- [Homepage](https://trufflesecurity.com/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

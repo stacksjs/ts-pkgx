@@ -6,14 +6,14 @@
 
 - **Domain**: `aquasecurity.github.io/tfsec`
 - **Name**: `tfsec`
-- **Homepage**: Not specified
+- **Homepage**: https://aquasecurity.github.io/tfsec/latest/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aquasecurity.github.io/tfsec/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install tfsec
+launchpad install aquasecurity.github.io/tfsec
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tfsec -- $SHELL -i
+sh <(curl https://pkgx.sh) +aquasecurity.github.io/tfsec@1.28.14 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@>=1.19`
 
 ## Usage Examples
 
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/aquasecurity.github.io/tfsec/package.yml)
-- [Homepage](#)
+- [Homepage](https://aquasecurity.github.io/tfsec/latest/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install spacer
+launchpad install github.com/samwho/spacer
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) spacer -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/samwho/spacer@0.5.0 -- $SHELL -i
 ```
 
 ## Usage Examples

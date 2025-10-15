@@ -1,12 +1,12 @@
-# psycopg.org/psycopg2
+# psycopg2
 
 > PostgreSQL database adapter for the Python programming language
 
 ## Package Information
 
 - **Domain**: `psycopg.org/psycopg2`
-- **Name**: `psycopg.org/psycopg2`
-- **Homepage**: Not specified
+- **Name**: `psycopg2`
+- **Homepage**: https://www.psycopg.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/psycopg.org/psycopg2/package.yml)
 
 ## Installation
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['psycopg.org/psycopg2']
+const pkg = pantry.psycopg2
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/psycopg.org/psycopg2/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.psycopg.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

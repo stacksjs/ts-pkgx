@@ -6,7 +6,7 @@
 
 - **Domain**: `aws.amazon.com/cdk`
 - **Name**: `aws/cdk`
-- **Homepage**: Not specified
+- **Homepage**: https://aws.amazon.com/cdk
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/aws.amazon.com/cdk/package.yml)
 
 ## Installation
@@ -78,7 +78,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cdk -- $SHELL -i
+sh <(curl https://pkgx.sh) +aws.amazon.com/cdk@3.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -103,7 +103,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/aws.amazon.com/cdk/package.yml)
-- [Homepage](#)
+- [Homepage](https://aws.amazon.com/cdk)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

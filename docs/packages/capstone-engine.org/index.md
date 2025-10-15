@@ -6,14 +6,14 @@
 
 - **Domain**: `capstone-engine.org`
 - **Name**: `cstool`
-- **Homepage**: Not specified
+- **Homepage**: https://www.capstone-engine.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/capstone-engine.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cstool
+launchpad install capstone-engine.org
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cstool -- $SHELL -i
+sh <(curl https://pkgx.sh) +capstone-engine.org@5.0.6 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/capstone-engine.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.capstone-engine.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

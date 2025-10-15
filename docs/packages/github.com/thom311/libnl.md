@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install libnl
+launchpad install github.com/thom311/libnl
 ```
 
 ## Programs
@@ -39,6 +39,13 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +github.com/thom311/libnl@3.11.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/bison`
+- `github.com/westes/flex`
 
 ## Usage Examples
 

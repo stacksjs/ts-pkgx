@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/eb`
 - **Name**: `eb`
-- **Homepage**: Not specified
+- **Homepage**: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/eb/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install eb
+launchpad install crates.io/eb
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) eb -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/eb@0.5.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/eb/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

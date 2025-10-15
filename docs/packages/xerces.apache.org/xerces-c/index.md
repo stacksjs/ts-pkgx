@@ -1,12 +1,12 @@
-# xerces.apache.org/xerces-c
+# xerces-c
 
 > Validating XML parser
 
 ## Package Information
 
 - **Domain**: `xerces.apache.org/xerces-c`
-- **Name**: `xerces.apache.org/xerces-c`
-- **Homepage**: Not specified
+- **Name**: `xerces-c`
+- **Homepage**: https://xerces.apache.org/xerces-c/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xerces.apache.org/xerces-c/package.yml)
 
 ## Installation
@@ -66,7 +66,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['xerces.apache.org/xerces-c']
+const pkg = pantry['xerces-c']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -76,7 +76,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/xerces.apache.org/xerces-c/package.yml)
-- [Homepage](#)
+- [Homepage](https://xerces.apache.org/xerces-c/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

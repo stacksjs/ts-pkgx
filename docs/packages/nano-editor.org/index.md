@@ -6,14 +6,14 @@
 
 - **Domain**: `nano-editor.org`
 - **Name**: `nano`
-- **Homepage**: Not specified
+- **Homepage**: https://www.nano-editor.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nano-editor.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install nano
+launchpad install nano-editor.org
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) nano -- $SHELL -i
+sh <(curl https://pkgx.sh) +nano-editor.org@8.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/nano-editor.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.nano-editor.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

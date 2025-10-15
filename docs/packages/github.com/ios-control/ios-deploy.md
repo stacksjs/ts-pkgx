@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install ios-deploy
+launchpad install github.com/ios-control/ios-deploy
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ios-deploy -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/ios-control/ios-deploy@1.12.2 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -6,14 +6,14 @@
 
 - **Domain**: `rtomayko.github.io/ronn`
 - **Name**: `ronn`
-- **Homepage**: Not specified
+- **Homepage**: http://rtomayko.github.com/ronn/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rtomayko.github.io/ronn/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ronn
+launchpad install rtomayko.github.io/ronn
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ronn -- $SHELL -i
+sh <(curl https://pkgx.sh) +rtomayko.github.io/ronn@0.7.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rtomayko.github.io/ronn/package.yml)
-- [Homepage](#)
+- [Homepage](http://rtomayko.github.com/ronn/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

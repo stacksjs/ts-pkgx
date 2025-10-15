@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install tokei
+launchpad install crates.io/tokei
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tokei -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/tokei@12.1.2 -- $SHELL -i
 ```
 
 ## Usage Examples

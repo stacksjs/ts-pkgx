@@ -6,14 +6,14 @@
 
 - **Domain**: `gnome.org/librsvg`
 - **Name**: `rsvg-convert`
-- **Homepage**: Not specified
+- **Homepage**: https://wiki.gnome.org/Projects/LibRsvg
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/librsvg/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rsvg-convert
+launchpad install gnome.org/librsvg
 ```
 
 ## Programs
@@ -43,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rsvg-convert -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnome.org/librsvg@2.61.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -72,7 +72,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/librsvg/package.yml)
-- [Homepage](#)
+- [Homepage](https://wiki.gnome.org/Projects/LibRsvg)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

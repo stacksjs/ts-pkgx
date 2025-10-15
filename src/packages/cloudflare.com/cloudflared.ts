@@ -8,7 +8,7 @@
  *
  * @install `launchpad install cloudflare.com/cloudflared`
  * @homepage https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide
- * @dependencies `go.dev@~1.24`, `if@linux`
+ * @dependencies `go.dev@~1.24`
  *
  * @example
  * ```typescript
@@ -61,7 +61,6 @@ export const cloudflarecomcloudflaredPackage = {
    */
   dependencies: [
     'go.dev@~1.24',
-    'if@linux',
   ] as const,
   /**
    * Available versions from newest to oldest.

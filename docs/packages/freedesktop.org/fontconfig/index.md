@@ -1,12 +1,12 @@
-# freedesktop.org/fontconfig
+# fontconfig
 
 > XML-based font configuration API for X Windows
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/fontconfig`
-- **Name**: `freedesktop.org/fontconfig`
-- **Homepage**: Not specified
+- **Name**: `fontconfig`
+- **Homepage**: https://wiki.freedesktop.org/www/Software/fontconfig/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/fontconfig/package.yml)
 
 ## Installation
@@ -65,7 +65,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['freedesktop.org/fontconfig']
+const pkg = pantry.fontconfig
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -75,7 +75,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/fontconfig/package.yml)
-- [Homepage](#)
+- [Homepage](https://wiki.freedesktop.org/www/Software/fontconfig/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,7 +6,7 @@ Packages related to gaming & game development.
 
 ## Packages
 
-### [libsdl.org](../packages/libsdl.org/index.md)
+### [libsdl.org](../packages/libsdl.org/index.md) (libsdl)
 
 Simple Directmedia Layer
 

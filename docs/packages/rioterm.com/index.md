@@ -6,14 +6,14 @@
 
 - **Domain**: `rioterm.com`
 - **Name**: `rio`
-- **Homepage**: Not specified
+- **Homepage**: https://rioterm.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rioterm.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rio
+launchpad install rioterm.com
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rio -- $SHELL -i
+sh <(curl https://pkgx.sh) +rioterm.com@0.2.31 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -59,7 +59,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rioterm.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://rioterm.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

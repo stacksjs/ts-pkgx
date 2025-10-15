@@ -1,11 +1,11 @@
-# github.com/OSGeo/libgeotiff
+# libgeotiff
 
 > Official repository of the libgeotiff project
 
 ## Package Information
 
 - **Domain**: `github.com/OSGeo/libgeotiff`
-- **Name**: `github.com/OSGeo/libgeotiff`
+- **Name**: `libgeotiff`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/OSGeo/libgeotiff/package.yml)
 
@@ -56,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/OSGeo/libgeotiff']
+const pkg = pantry.libgeotiff
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

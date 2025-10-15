@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install screenresolution
+launchpad install github.com/jhford/screenresolution
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) screenresolution -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/jhford/screenresolution@1.6.0 -- $SHELL -i
 ```
 
 ## Usage Examples

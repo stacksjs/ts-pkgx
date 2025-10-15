@@ -1,11 +1,11 @@
-# mozilla.org/mozjpeg
+# mozjpeg
 
 > Improved JPEG encoder.
 
 ## Package Information
 
 - **Domain**: `mozilla.org/mozjpeg`
-- **Name**: `mozilla.org/mozjpeg`
+- **Name**: `mozjpeg`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mozilla.org/mozjpeg/package.yml)
 
@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mozilla.org/mozjpeg']
+const pkg = pantry.mozjpeg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

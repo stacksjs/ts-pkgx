@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install dym
+launchpad install crates.io/didyoumean
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dym -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/didyoumean@1.1.4 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install licensed
+launchpad install github.com/licensee/licensed
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) licensed -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/licensee/licensed@5.0.4 -- $SHELL -i
 ```
 
 ## Dependencies

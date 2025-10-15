@@ -1,11 +1,11 @@
-# github.com/cpburnz/python-pathspec
+# python-pathspec
 
 > Utility library for gitignore style pattern matching of file paths.
 
 ## Package Information
 
 - **Domain**: `github.com/cpburnz/python-pathspec`
-- **Name**: `github.com/cpburnz/python-pathspec`
+- **Name**: `python-pathspec`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/cpburnz/python-pathspec/package.yml)
 
@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/cpburnz/python-pathspec']
+const pkg = pantry['python-pathspec']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

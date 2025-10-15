@@ -8,7 +8,7 @@
  *
  * @install `launchpad install elv.sh`
  * @homepage https://elv.sh/
- * @dependencies `go.dev@^1.19`, `gnu.org/gcc`
+ * @dependencies `go.dev@^1.19`
  *
  * @example
  * ```typescript
@@ -61,7 +61,6 @@ export const elvshPackage = {
    */
   dependencies: [
     'go.dev@^1.19',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

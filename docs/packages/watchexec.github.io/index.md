@@ -6,14 +6,14 @@
 
 - **Domain**: `watchexec.github.io`
 - **Name**: `watchexec`
-- **Homepage**: Not specified
+- **Homepage**: https://watchexec.github.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/watchexec.github.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install watchexec
+launchpad install watchexec.github.io
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) watchexec -- $SHELL -i
+sh <(curl https://pkgx.sh) +watchexec.github.io@2.3.2 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/watchexec.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://watchexec.github.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

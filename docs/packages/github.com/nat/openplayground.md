@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install openplayground
+launchpad install github.com/nat/openplayground
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) openplayground -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/nat/openplayground@2023.6.5 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -6,14 +6,14 @@
 
 - **Domain**: `thoughtworks.github.io/talisman`
 - **Name**: `talisman`
-- **Homepage**: Not specified
+- **Homepage**: https://thoughtworks.github.io/talisman/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/thoughtworks.github.io/talisman/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install talisman
+launchpad install thoughtworks.github.io/talisman
 ```
 
 ## Programs
@@ -39,8 +39,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) talisman -- $SHELL -i
+sh <(curl https://pkgx.sh) +thoughtworks.github.io/talisman@1.37.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.24.2`
 
 ## Usage Examples
 
@@ -58,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/thoughtworks.github.io/talisman/package.yml)
-- [Homepage](#)
+- [Homepage](https://thoughtworks.github.io/talisman/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

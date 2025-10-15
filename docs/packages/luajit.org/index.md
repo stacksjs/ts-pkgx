@@ -6,14 +6,14 @@
 
 - **Domain**: `luajit.org`
 - **Name**: `luajit`
-- **Homepage**: Not specified
+- **Homepage**: http://luajit.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/luajit.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install luajit
+launchpad install luajit.org
 ```
 
 ## Programs
@@ -41,6 +41,12 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +luajit.org@2.1.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `linux:gnu.org/gcc`
+
 ## Usage Examples
 
 ```typescript
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/luajit.org/package.yml)
-- [Homepage](#)
+- [Homepage](http://luajit.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

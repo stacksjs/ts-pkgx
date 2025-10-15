@@ -6,14 +6,14 @@
 
 - **Domain**: `yasm.tortall.net`
 - **Name**: `yasm`
-- **Homepage**: Not specified
+- **Homepage**: https://yasm.tortall.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/yasm.tortall.net/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install yasm
+launchpad install yasm.tortall.net
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) yasm -- $SHELL -i
+sh <(curl https://pkgx.sh) +yasm.tortall.net@1.3.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/yasm.tortall.net/package.yml)
-- [Homepage](#)
+- [Homepage](https://yasm.tortall.net/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

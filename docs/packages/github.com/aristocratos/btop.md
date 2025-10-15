@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install btop
+launchpad install github.com/aristocratos/btop
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) btop -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/aristocratos/btop@1.4.5 -- $SHELL -i
 ```
 
 ## Dependencies

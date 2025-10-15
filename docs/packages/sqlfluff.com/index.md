@@ -6,14 +6,14 @@
 
 - **Domain**: `sqlfluff.com`
 - **Name**: `sqlfluff`
-- **Homepage**: Not specified
+- **Homepage**: https://docs.sqlfluff.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sqlfluff.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sqlfluff
+launchpad install sqlfluff.com
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sqlfluff -- $SHELL -i
+sh <(curl https://pkgx.sh) +sqlfluff.com@3.4.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sqlfluff.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.sqlfluff.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `terragrunt.gruntwork.io`
 - **Name**: `terragrunt`
-- **Homepage**: Not specified
+- **Homepage**: https://terragrunt.gruntwork.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/terragrunt.gruntwork.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install terragrunt
+launchpad install terragrunt.gruntwork.io
 ```
 
 ## Programs
@@ -114,7 +114,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) terragrunt -- $SHELL -i
+sh <(curl https://pkgx.sh) +terragrunt.gruntwork.io@0.90.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -139,7 +139,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/terragrunt.gruntwork.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://terragrunt.gruntwork.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

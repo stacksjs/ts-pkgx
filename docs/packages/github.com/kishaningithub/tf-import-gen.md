@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install tf-import-gen
+launchpad install github.com/kishaningithub/tf-import-gen
 ```
 
 ## Programs
@@ -41,8 +41,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tf-import-gen -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/kishaningithub/tf-import-gen@0.19.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 

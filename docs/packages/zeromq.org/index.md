@@ -1,12 +1,12 @@
-# zeromq.org
+# zeromq
 
 > ZeroMQ core engine in C++, implements ZMTP/3.1
 
 ## Package Information
 
 - **Domain**: `zeromq.org`
-- **Name**: `zeromq.org`
-- **Homepage**: Not specified
+- **Name**: `zeromq`
+- **Homepage**: https://www.zeromq.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/zeromq.org/package.yml)
 
 ## Installation
@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +zeromq.org@4.3.5 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['zeromq.org']
+const pkg = pantry.zeromq
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/zeromq.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.zeromq.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

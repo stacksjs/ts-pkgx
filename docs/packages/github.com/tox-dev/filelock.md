@@ -1,12 +1,12 @@
-# github.com/tox-dev/filelock
+# filelock
 
 > A platform-independent file lock for Python.
 
 ## Package Information
 
 - **Domain**: `github.com/tox-dev/filelock`
-- **Name**: `github.com/tox-dev/filelock`
-- **Homepage**: Not specified
+- **Name**: `filelock`
+- **Homepage**: https://py-filelock.readthedocs.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/tox-dev/filelock/package.yml)
 
 ## Installation
@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/tox-dev/filelock']
+const pkg = pantry.filelock
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/tox-dev/filelock/package.yml)
-- [Homepage](#)
+- [Homepage](https://py-filelock.readthedocs.io)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

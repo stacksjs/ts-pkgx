@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install imessage-exporter
+launchpad install crates.io/imessage-exporter
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) imessage-exporter -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/imessage-exporter@3.1.0 -- $SHELL -i
 ```
 
 ## Usage Examples

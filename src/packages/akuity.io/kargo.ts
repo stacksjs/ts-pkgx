@@ -8,7 +8,7 @@
  *
  * @install `launchpad install akuity.io/kargo`
  * @homepage https://kargo.akuity.io/
- * @dependencies `go.dev@^1.19`, `gnu.org/gcc`
+ * @dependencies `go.dev@^1.19`
  *
  * @example
  * ```typescript
@@ -61,7 +61,6 @@ export const akuityiokargoPackage = {
    */
   dependencies: [
     'go.dev@^1.19',
-    'gnu.org/gcc',
   ] as const,
   /**
    * Available versions from newest to oldest.

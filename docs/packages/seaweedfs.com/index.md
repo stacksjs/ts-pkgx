@@ -6,25 +6,19 @@
 
 - **Domain**: `seaweedfs.com`
 - **Name**: `SeaweedFS`
-- **Homepage**: Not specified
+- **Homepage**: https://seaweedfs.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/seaweedfs.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install weed
+launchpad install seaweedfs.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `weed`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `weed`
 
@@ -46,8 +40,14 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) weed -- $SHELL -i
+sh <(curl https://pkgx.sh) +seaweedfs.com@3.97.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@=1.22.0`
 
 ## Usage Examples
 
@@ -55,7 +55,7 @@ sh <(curl https://pkgx.sh) weed -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.weed
+const pkg = pantry.SeaweedFS
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/seaweedfs.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://seaweedfs.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

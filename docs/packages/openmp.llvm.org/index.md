@@ -6,14 +6,14 @@
 
 - **Domain**: `openmp.llvm.org`
 - **Name**: `libomp`
-- **Homepage**: Not specified
+- **Homepage**: http://llvm.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openmp.llvm.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install libomp
+launchpad install openmp.llvm.org
 ```
 
 ## Programs
@@ -47,6 +47,16 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +openmp.llvm.org@21.1.3 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `llvm.org`
+- `gnu.org/wget`
+- `linux:python.org@~3.11`
+- `linux:perl.org`
+
 ## Usage Examples
 
 ```typescript
@@ -63,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openmp.llvm.org/package.yml)
-- [Homepage](#)
+- [Homepage](http://llvm.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

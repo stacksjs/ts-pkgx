@@ -6,14 +6,14 @@
 
 - **Domain**: `k9scli.io`
 - **Name**: `k9s`
-- **Homepage**: Not specified
+- **Homepage**: https://k9scli.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/k9scli.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install k9s
+launchpad install k9scli.io
 ```
 
 ## Programs
@@ -49,8 +49,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) k9s -- $SHELL -i
+sh <(curl https://pkgx.sh) +k9scli.io@0.50.15 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
+- `gnu.org/make`
 
 ## Usage Examples
 
@@ -68,7 +75,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/k9scli.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://k9scli.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

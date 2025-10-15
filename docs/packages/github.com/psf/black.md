@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/psf/black`
 - **Name**: `black`
-- **Homepage**: Not specified
+- **Homepage**: https://black.readthedocs.io/en/stable/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/psf/black/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install black
+launchpad install github.com/psf/black
 ```
 
 ## Programs
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/psf/black/package.yml)
-- [Homepage](#)
+- [Homepage](https://black.readthedocs.io/en/stable/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

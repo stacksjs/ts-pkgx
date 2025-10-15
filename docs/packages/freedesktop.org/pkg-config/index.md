@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install pkg-config
+launchpad install freedesktop.org/pkg-config
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pkg-config -- $SHELL -i
+sh <(curl https://pkgx.sh) +freedesktop.org/pkg-config@0.29.2 -- $SHELL -i
 ```
 
 ## Usage Examples

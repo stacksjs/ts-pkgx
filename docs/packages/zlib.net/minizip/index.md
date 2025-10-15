@@ -1,12 +1,12 @@
-# zlib.net/minizip
+# minizip
 
 > A massively spiffy yet delicately unobtrusive compression library.
 
 ## Package Information
 
 - **Domain**: `zlib.net/minizip`
-- **Name**: `zlib.net/minizip`
-- **Homepage**: Not specified
+- **Name**: `minizip`
+- **Homepage**: http://zlib.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/zlib.net/minizip/package.yml)
 
 ## Installation
@@ -40,13 +40,21 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +zlib.net/minizip@1.3.1 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/autoconf@^2`
+- `gnu.org/automake@^1`
+- `gnu.org/libtool@^2`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['zlib.net/minizip']
+const pkg = pantry.minizip
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/zlib.net/minizip/package.yml)
-- [Homepage](#)
+- [Homepage](http://zlib.net/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

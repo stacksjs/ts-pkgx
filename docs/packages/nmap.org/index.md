@@ -1,12 +1,12 @@
-# nmap.org
+# nmap
 
 > Port scanning utility for large networks
 
 ## Package Information
 
 - **Domain**: `nmap.org`
-- **Name**: `nmap.org`
-- **Homepage**: Not specified
+- **Name**: `nmap`
+- **Homepage**: https://nmap.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nmap.org/package.yml)
 
 ## Installation
@@ -56,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['nmap.org']
+const pkg = pantry.nmap
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/nmap.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://nmap.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

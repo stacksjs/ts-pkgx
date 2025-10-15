@@ -1,12 +1,12 @@
-# freedesktop.org/desktop-file-utils
+# desktop-file-utils
 
 > Command-line utilities for working with desktop entries
 
 ## Package Information
 
 - **Domain**: `freedesktop.org/desktop-file-utils`
-- **Name**: `freedesktop.org/desktop-file-utils`
-- **Homepage**: Not specified
+- **Name**: `desktop-file-utils`
+- **Homepage**: https://wiki.freedesktop.org/www/Software/desktop-file-utils/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/desktop-file-utils/package.yml)
 
 ## Installation
@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['freedesktop.org/desktop-file-utils']
+const pkg = pantry['desktop-file-utils']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/desktop-file-utils/package.yml)
-- [Homepage](#)
+- [Homepage](https://wiki.freedesktop.org/www/Software/desktop-file-utils/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

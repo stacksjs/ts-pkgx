@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/zaach/jsonlint`
 - **Name**: `jsonlint`
-- **Homepage**: Not specified
+- **Homepage**: http://zaach.github.com/jsonlint/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zaach/jsonlint/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install jsonlint
+launchpad install github.com/zaach/jsonlint
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) jsonlint -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/zaach/jsonlint@1.6.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zaach/jsonlint/package.yml)
-- [Homepage](#)
+- [Homepage](http://zaach.github.com/jsonlint/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

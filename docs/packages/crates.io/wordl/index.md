@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install wordl
+launchpad install crates.io/wordl
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) wordl -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/wordl@0.3.0 -- $SHELL -i
 ```
 
 ## Usage Examples

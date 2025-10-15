@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install fusermount3
+launchpad install github.com/libfuse/libfuse
 ```
 
 ## Programs
@@ -37,8 +37,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) fusermount3 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/libfuse/libfuse@3.17.4 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `mesonbuild.com`
+- `linux:gnu.org/gcc`
 
 ## Usage Examples
 

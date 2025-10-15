@@ -6,25 +6,19 @@
 
 - **Domain**: `github.com/VikParuchuri/surya`
 - **Name**: `Surya`
-- **Homepage**: Not specified
+- **Homepage**: https://www.datalab.to
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/VikParuchuri/surya/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install surya_detect
+launchpad install github.com/VikParuchuri/surya
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `surya_detect`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `surya_detect`
 
@@ -58,7 +52,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) surya_detect -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/VikParuchuri/surya@0.17.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -76,7 +70,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.surya_detect
+const pkg = pantry.Surya
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -86,7 +80,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/VikParuchuri/surya/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.datalab.to)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

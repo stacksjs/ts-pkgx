@@ -6,25 +6,19 @@
 
 - **Domain**: `developers.yubico.com/yubikey-manager`
 - **Name**: `yubikey-manager`
-- **Homepage**: Not specified
+- **Homepage**: https://developers.yubico.com/yubikey-manager/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/developers.yubico.com/yubikey-manager/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ykman
+launchpad install developers.yubico.com/yubikey-manager
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `ykman`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `ykman`
 
@@ -45,7 +39,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ykman -- $SHELL -i
+sh <(curl https://pkgx.sh) +developers.yubico.com/yubikey-manager@5.8.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -61,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.ykman
+const pkg = pantry['yubikey-manager']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -71,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/developers.yubico.com/yubikey-manager/package.yml)
-- [Homepage](#)
+- [Homepage](https://developers.yubico.com/yubikey-manager/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

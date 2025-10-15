@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/cargo-tarpaulin`
 - **Name**: `cargo-tarpaulin`
-- **Homepage**: Not specified
+- **Homepage**: https://crates.io/crates/cargo-tarpaulin
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/cargo-tarpaulin/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cargo-tarpaulin
+launchpad install crates.io/cargo-tarpaulin
 ```
 
 ## Programs
@@ -39,14 +39,8 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cargo-tarpaulin -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/cargo-tarpaulin@0.33.0 -- $SHELL -i
 ```
-
-## Related Packages
-
-These packages work well with cargo-tarpaulin:
-
-- [`rust-lang.org/cargo`](../../rust-lang.org/cargo/index.md) - The Rust package manager
 
 ## Usage Examples
 
@@ -64,7 +58,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/cargo-tarpaulin/package.yml)
-- [Homepage](#)
+- [Homepage](https://crates.io/crates/cargo-tarpaulin)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

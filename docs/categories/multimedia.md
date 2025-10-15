@@ -1,6 +1,6 @@
 # Multimedia
 
-*7 packages in this category*
+*9 packages in this category*
 
 Audio, video, and image processing tools.
 
@@ -12,7 +12,27 @@ Perl lib for reading and writing EXIF metadata
 
 **Programs**: exiftool
 
-**Install**: `launchpad install exiftool`
+**Install**: `launchpad install exiftool.org`
+
+---
+
+### [ffmpeg.org](../packages/ffmpeg.org/index.md) (ffmpeg)
+
+Play, record, convert, and stream audio and video
+
+**Programs**: ffmpeg, ffplay, ffprobe
+
+**Install**: `launchpad install ffmpeg.org`
+
+---
+
+### [imagemagick.org](../packages/imagemagick.org/index.md) (imagemagick)
+
+ImageMagick is a powerful, open-source software suite for creating, editing, converting, and manipulating images in over 200 formats. Ideal for web developers, graphic designers, and researchers, it offers versatile tools for image processing, including batch processing, format conversion, and complex image transformations.
+
+**Programs**: animate, compare, composite, conjure, convert, display, identify, import, magick, magick-script, Magick++-config, MagickCore-config, MagickWand-config, mogrify, montage, stream
+
+**Install**: `launchpad install imagemagick.org`
 
 ---
 
@@ -22,7 +42,7 @@ Create, manipulate, and optimize GIF images and animations
 
 **Programs**: gifsicle
 
-**Install**: `launchpad install gifsicle`
+**Install**: `launchpad install lcdf.org/gifsicle`
 
 ---
 
@@ -32,7 +52,7 @@ A fast image processing library with low memory needs.
 
 **Programs**: vips, vipsedit, vipsheader, vipsprofile, vipsthumbnail
 
-**Install**: `launchpad install vips`
+**Install**: `launchpad install libvips.org`
 
 ---
 
@@ -42,7 +62,7 @@ Media player based on MPlayer and mplayer2
 
 **Programs**: mpv
 
-**Install**: `launchpad install mpv`
+**Install**: `launchpad install mpv.io`
 
 ---
 
@@ -52,7 +72,7 @@ PNG file optimizer
 
 **Programs**: optipng
 
-**Install**: `launchpad install optipng`
+**Install**: `launchpad install sf.net/optipng`
 
 ---
 
@@ -62,7 +82,7 @@ Streamlink is a CLI utility which pipes video streams from various services into
 
 **Programs**: streamlink
 
-**Install**: `launchpad install streamlink`
+**Install**: `launchpad install streamlink.github.io`
 
 ---
 
@@ -72,7 +92,7 @@ A feature-rich command-line audio/video downloader
 
 **Programs**: yt-dlp
 
-**Install**: `launchpad install yt-dlp`
+**Install**: `launchpad install yt-dlp.org`
 
 ---
 

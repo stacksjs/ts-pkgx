@@ -1,12 +1,12 @@
-# python-pillow.org
+# python-pillow
 
 > Python Imaging Library (Fork)
 
 ## Package Information
 
 - **Domain**: `python-pillow.org`
-- **Name**: `python-pillow.org`
-- **Homepage**: Not specified
+- **Name**: `python-pillow`
+- **Homepage**: https://python-pillow.github.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/python-pillow.org/package.yml)
 
 ## Installation
@@ -62,7 +62,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['python-pillow.org']
+const pkg = pantry['python-pillow']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -72,7 +72,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/python-pillow.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://python-pillow.github.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

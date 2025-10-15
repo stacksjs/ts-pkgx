@@ -1,11 +1,11 @@
-# github.com/kaspanet/kaspad
+# kaspad
 
 > Kaspad was the reference full node Kaspa implementation written in Go (golang), now rewritten in Rust: https://github.com/kaspanet/rusty-kaspa
 
 ## Package Information
 
 - **Domain**: `github.com/kaspanet/kaspad`
-- **Name**: `github.com/kaspanet/kaspad`
+- **Name**: `kaspad`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kaspanet/kaspad/package.yml)
 
@@ -45,13 +45,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/kaspanet/kaspad@0.12.22 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/kaspanet/kaspad']
+const pkg = pantry.kaspad
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

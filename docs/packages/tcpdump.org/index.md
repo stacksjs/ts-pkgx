@@ -6,14 +6,14 @@
 
 - **Domain**: `tcpdump.org`
 - **Name**: `pcap-config`
-- **Homepage**: Not specified
+- **Homepage**: https://www.tcpdump.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tcpdump.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pcap-config
+launchpad install tcpdump.org
 ```
 
 ## Programs
@@ -37,8 +37,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pcap-config -- $SHELL -i
+sh <(curl https://pkgx.sh) +tcpdump.org@1.10.5 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/make`
+- `gnu.org/bison`
+- `github.com/westes/flex`
 
 ## Usage Examples
 
@@ -56,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tcpdump.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.tcpdump.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

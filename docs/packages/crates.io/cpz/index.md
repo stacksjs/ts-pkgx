@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install cpz
+launchpad install crates.io/cpz
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cpz -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/cpz@3.1.1 -- $SHELL -i
 ```
 
 ## Usage Examples

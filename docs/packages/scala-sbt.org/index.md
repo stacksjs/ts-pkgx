@@ -6,14 +6,14 @@
 
 - **Domain**: `scala-sbt.org`
 - **Name**: `sbt`
-- **Homepage**: Not specified
+- **Homepage**: https://www.scala-sbt.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/scala-sbt.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sbt
+launchpad install scala-sbt.org
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sbt -- $SHELL -i
+sh <(curl https://pkgx.sh) +scala-sbt.org@1.11.7 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/scala-sbt.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.scala-sbt.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

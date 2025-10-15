@@ -6,14 +6,14 @@
 
 - **Domain**: `x.org/xauth`
 - **Name**: `xauth`
-- **Homepage**: Not specified
+- **Homepage**: https://www.x.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xauth/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install xauth
+launchpad install x.org/xauth
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) xauth -- $SHELL -i
+sh <(curl https://pkgx.sh) +x.org/xauth@1.1.4 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/x.org/xauth/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.x.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

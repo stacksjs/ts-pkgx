@@ -1,12 +1,12 @@
-# rpm.org/popt
+# popt
 
 > C library for parsing command line parameters
 
 ## Package Information
 
 - **Domain**: `rpm.org/popt`
-- **Name**: `rpm.org/popt`
-- **Homepage**: Not specified
+- **Name**: `popt`
+- **Homepage**: http://ftp.rpm.org/popt/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rpm.org/popt/package.yml)
 
 ## Installation
@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +rpm.org/popt@1.19.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rpm.org/popt']
+const pkg = pantry.popt
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rpm.org/popt/package.yml)
-- [Homepage](#)
+- [Homepage](http://ftp.rpm.org/popt/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

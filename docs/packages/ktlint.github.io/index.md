@@ -6,14 +6,14 @@
 
 - **Domain**: `ktlint.github.io`
 - **Name**: `ktlint`
-- **Homepage**: Not specified
+- **Homepage**: https://ktlint.github.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ktlint.github.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ktlint
+launchpad install ktlint.github.io
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ktlint -- $SHELL -i
+sh <(curl https://pkgx.sh) +ktlint.github.io@1.7.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ktlint.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://ktlint.github.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

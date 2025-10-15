@@ -1,12 +1,12 @@
-# browser-use.com
+# browser-use
 
 > Make websites accessible for AI agents
 
 ## Package Information
 
 - **Domain**: `browser-use.com`
-- **Name**: `browser-use.com`
-- **Homepage**: Not specified
+- **Name**: `browser-use`
+- **Homepage**: https://browser-use.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/browser-use.com/package.yml)
 
 ## Installation
@@ -63,7 +63,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['browser-use.com']
+const pkg = pantry['browser-use']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/browser-use.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://browser-use.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

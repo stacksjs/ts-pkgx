@@ -1,12 +1,12 @@
-# gnu.org/groff
+# groff
 
 > GNU troff text-formatting system
 
 ## Package Information
 
 - **Domain**: `gnu.org/groff`
-- **Name**: `gnu.org/groff`
-- **Homepage**: Not specified
+- **Name**: `groff`
+- **Homepage**: https://www.gnu.org/software/groff/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/groff/package.yml)
 
 ## Installation
@@ -95,7 +95,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/groff']
+const pkg = pantry.groff
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -105,7 +105,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/groff/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org/software/groff/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

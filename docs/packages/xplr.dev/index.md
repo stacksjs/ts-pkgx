@@ -6,14 +6,14 @@
 
 - **Domain**: `xplr.dev`
 - **Name**: `xplr`
-- **Homepage**: Not specified
+- **Homepage**: https://xplr.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xplr.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install xplr
+launchpad install xplr.dev
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) xplr -- $SHELL -i
+sh <(curl https://pkgx.sh) +xplr.dev@1.0.1 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/xplr.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://xplr.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

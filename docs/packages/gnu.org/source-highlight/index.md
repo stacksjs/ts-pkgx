@@ -1,12 +1,12 @@
-# gnu.org/source-highlight
+# source-highlight
 
 > Source-code syntax highlighter
 
 ## Package Information
 
 - **Domain**: `gnu.org/source-highlight`
-- **Name**: `gnu.org/source-highlight`
-- **Homepage**: Not specified
+- **Name**: `source-highlight`
+- **Homepage**: https://www.gnu.org/software/src-highlite/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/source-highlight/package.yml)
 
 ## Installation
@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/source-highlight']
+const pkg = pantry['source-highlight']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/source-highlight/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org/software/src-highlite/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -1,11 +1,11 @@
-# facebook.com/mvfst
+# mvfst
 
 > An implementation of the QUIC transport protocol.
 
 ## Package Information
 
 - **Domain**: `facebook.com/mvfst`
-- **Name**: `facebook.com/mvfst`
+- **Name**: `mvfst`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/mvfst/package.yml)
 
@@ -79,7 +79,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['facebook.com/mvfst']
+const pkg = pantry.mvfst
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

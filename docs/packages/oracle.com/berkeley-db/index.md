@@ -1,12 +1,12 @@
-# oracle.com/berkeley-db
+# berkeley-db
 
 > High performance key/value database
 
 ## Package Information
 
 - **Domain**: `oracle.com/berkeley-db`
-- **Name**: `oracle.com/berkeley-db`
-- **Homepage**: Not specified
+- **Name**: `berkeley-db`
+- **Homepage**: https://www.oracle.com/database/technologies/related/berkeleydb.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/oracle.com/berkeley-db/package.yml)
 
 ## Installation
@@ -66,7 +66,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['oracle.com/berkeley-db']
+const pkg = pantry['berkeley-db']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -76,7 +76,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/oracle.com/berkeley-db/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.oracle.com/database/technologies/related/berkeleydb.html)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

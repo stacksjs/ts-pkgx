@@ -6,14 +6,14 @@
 
 - **Domain**: `sfcgal.org`
 - **Name**: `sfcgal-config`
-- **Homepage**: Not specified
+- **Homepage**: https://sfcgal.gitlab.io/SFCGAL/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sfcgal.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sfcgal-config
+launchpad install sfcgal.org
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sfcgal-config -- $SHELL -i
+sh <(curl https://pkgx.sh) +sfcgal.org@2.2.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sfcgal.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://sfcgal.gitlab.io/SFCGAL/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

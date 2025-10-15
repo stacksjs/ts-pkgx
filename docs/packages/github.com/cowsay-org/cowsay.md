@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/cowsay-org/cowsay`
 - **Name**: `cowsay`
-- **Homepage**: Not specified
+- **Homepage**: https://cowsay.diamonds
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/cowsay-org/cowsay/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cowsay
+launchpad install github.com/cowsay-org/cowsay
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cowsay -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/cowsay-org/cowsay@3.8.4 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/cowsay-org/cowsay/package.yml)
-- [Homepage](#)
+- [Homepage](https://cowsay.diamonds)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

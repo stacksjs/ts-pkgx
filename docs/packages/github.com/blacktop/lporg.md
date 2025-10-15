@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install lporg
+launchpad install github.com/blacktop/lporg
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) lporg -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/blacktop/lporg@20.4.32 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.21`
 
 ## Usage Examples
 

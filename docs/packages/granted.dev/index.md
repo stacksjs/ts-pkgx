@@ -6,14 +6,14 @@
 
 - **Domain**: `granted.dev`
 - **Name**: `granted`
-- **Homepage**: Not specified
+- **Homepage**: https://granted.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/granted.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install granted
+launchpad install granted.dev
 ```
 
 ## Programs
@@ -44,8 +44,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) granted -- $SHELL -i
+sh <(curl https://pkgx.sh) +granted.dev@0.38.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
 
 ## Usage Examples
 
@@ -63,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/granted.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://granted.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

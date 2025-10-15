@@ -1,11 +1,11 @@
-# github.com/essembeh/gnome-extensions-cli
+# gnome-extensions-cli
 
 > Command line tool to manage your Gnome Shell extensions
 
 ## Package Information
 
 - **Domain**: `github.com/essembeh/gnome-extensions-cli`
-- **Name**: `github.com/essembeh/gnome-extensions-cli`
+- **Name**: `gnome-extensions-cli`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/essembeh/gnome-extensions-cli/package.yml)
 
@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/essembeh/gnome-extensions-cli']
+const pkg = pantry['gnome-extensions-cli']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

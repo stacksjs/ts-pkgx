@@ -6,14 +6,14 @@
 
 - **Domain**: `chezmoi.io`
 - **Name**: `chezmoi`
-- **Homepage**: Not specified
+- **Homepage**: https://chezmoi.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/chezmoi.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install chezmoi
+launchpad install chezmoi.io
 ```
 
 ## Programs
@@ -53,8 +53,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) chezmoi -- $SHELL -i
+sh <(curl https://pkgx.sh) +chezmoi.io@2.66.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
+- `linux:gnu.org/gcc`
+- `linux:gnu.org/binutils`
 
 ## Usage Examples
 
@@ -72,7 +80,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/chezmoi.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://chezmoi.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

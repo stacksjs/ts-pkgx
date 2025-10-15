@@ -1,12 +1,12 @@
-# leonerd.org.uk/libvterm
+# libvterm
 
 > C99 library which implements a VT220 or xterm terminal emulator
 
 ## Package Information
 
 - **Domain**: `leonerd.org.uk/libvterm`
-- **Name**: `leonerd.org.uk/libvterm`
-- **Homepage**: Not specified
+- **Name**: `libvterm`
+- **Homepage**: https://www.leonerd.org.uk/code/libvterm/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/leonerd.org.uk/libvterm/package.yml)
 
 ## Installation
@@ -42,13 +42,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +leonerd.org.uk/libvterm@0.3.3 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/libtool`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['leonerd.org.uk/libvterm']
+const pkg = pantry.libvterm
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -58,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/leonerd.org.uk/libvterm/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.leonerd.org.uk/code/libvterm/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

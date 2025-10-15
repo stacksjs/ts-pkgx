@@ -6,14 +6,14 @@
 
 - **Domain**: `hunspell.github.io`
 - **Name**: `hunspell`
-- **Homepage**: Not specified
+- **Homepage**: https://hunspell.github.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hunspell.github.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install hunspell
+launchpad install hunspell.github.io
 ```
 
 ## Programs
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/hunspell.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://hunspell.github.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

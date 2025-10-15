@@ -6,14 +6,14 @@
 
 - **Domain**: `riverbankcomputing.com/pyqt-builder`
 - **Name**: `pyqt-bundle`
-- **Homepage**: Not specified
+- **Homepage**: https://pyqt-builder.readthedocs.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/riverbankcomputing.com/pyqt-builder/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pyqt-bundle
+launchpad install riverbankcomputing.com/pyqt-builder
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pyqt-bundle -- $SHELL -i
+sh <(curl https://pkgx.sh) +riverbankcomputing.com/pyqt-builder@1.15.4 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/riverbankcomputing.com/pyqt-builder/package.yml)
-- [Homepage](#)
+- [Homepage](https://pyqt-builder.readthedocs.io/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

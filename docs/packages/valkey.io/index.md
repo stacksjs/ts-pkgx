@@ -6,14 +6,14 @@
 
 - **Domain**: `valkey.io`
 - **Name**: `valkey`
-- **Homepage**: Not specified
+- **Homepage**: https://valkey.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/valkey.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install valkey
+launchpad install valkey.io
 ```
 
 ## Programs
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/valkey.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://valkey.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

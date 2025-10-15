@@ -6,14 +6,14 @@
 
 - **Domain**: `numpy.org`
 - **Name**: `f2py`
-- **Homepage**: Not specified
+- **Homepage**: https://www.numpy.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/numpy.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install f2py
+launchpad install numpy.org
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) f2py -- $SHELL -i
+sh <(curl https://pkgx.sh) +numpy.org@2.3.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -50,12 +50,6 @@ This package depends on:
 
 - `openblas.net^0.3`
 - `python.org^3.11`
-
-## Related Packages
-
-These packages work well with f2py:
-
-- [`gnu.org/gcc`](../gnu.org/gcc/index.md)
 
 ## Usage Examples
 
@@ -73,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/numpy.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.numpy.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

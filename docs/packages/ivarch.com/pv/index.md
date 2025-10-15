@@ -6,14 +6,14 @@
 
 - **Domain**: `ivarch.com/pv`
 - **Name**: `pv`
-- **Homepage**: Not specified
+- **Homepage**: https://www.ivarch.com/programs/pv.shtml
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ivarch.com/pv/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pv
+launchpad install ivarch.com/pv
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pv -- $SHELL -i
+sh <(curl https://pkgx.sh) +ivarch.com/pv@1.9.42 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -58,7 +58,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ivarch.com/pv/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.ivarch.com/programs/pv.shtml)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

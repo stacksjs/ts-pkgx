@@ -1,11 +1,11 @@
-# github.com/anholt/libepoxy
+# libepoxy
 
 > Epoxy is a library for handling OpenGL function pointer management for you
 
 ## Package Information
 
 - **Domain**: `github.com/anholt/libepoxy`
-- **Name**: `github.com/anholt/libepoxy`
+- **Name**: `libepoxy`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/anholt/libepoxy/package.yml)
 
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/anholt/libepoxy']
+const pkg = pantry.libepoxy
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

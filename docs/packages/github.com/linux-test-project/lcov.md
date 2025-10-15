@@ -1,11 +1,11 @@
-# github.com/linux-test-project/lcov
+# lcov
 
 > Graphical front-end for GCC's coverage testing tool (gcov)
 
 ## Package Information
 
 - **Domain**: `github.com/linux-test-project/lcov`
-- **Name**: `github.com/linux-test-project/lcov`
+- **Name**: `lcov`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/linux-test-project/lcov/package.yml)
 
@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/linux-test-project/lcov']
+const pkg = pantry.lcov
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

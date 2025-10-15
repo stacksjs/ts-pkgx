@@ -1,11 +1,11 @@
-# github.com/skystrife/cpptoml
+# cpptoml
 
 > cpptoml is a header-only library for parsing TOML
 
 ## Package Information
 
 - **Domain**: `github.com/skystrife/cpptoml`
-- **Name**: `github.com/skystrife/cpptoml`
+- **Name**: `cpptoml`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/skystrife/cpptoml/package.yml)
 
@@ -40,13 +40,20 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/skystrife/cpptoml@0.1.1 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `linux:gnu.org/gcc@13`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/skystrife/cpptoml']
+const pkg = pantry.cpptoml
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

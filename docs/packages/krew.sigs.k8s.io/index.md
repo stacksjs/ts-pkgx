@@ -6,14 +6,14 @@
 
 - **Domain**: `krew.sigs.k8s.io`
 - **Name**: `kubectl-krew`
-- **Homepage**: Not specified
+- **Homepage**: https://sigs.k8s.io/krew/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/krew.sigs.k8s.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install kubectl-krew
+launchpad install krew.sigs.k8s.io
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) kubectl-krew -- $SHELL -i
+sh <(curl https://pkgx.sh) +krew.sigs.k8s.io@0.4.5 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/krew.sigs.k8s.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://sigs.k8s.io/krew/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

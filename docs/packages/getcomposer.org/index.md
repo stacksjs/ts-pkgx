@@ -6,14 +6,14 @@
 
 - **Domain**: `getcomposer.org`
 - **Name**: `composer`
-- **Homepage**: Not specified
+- **Homepage**: https://getcomposer.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/getcomposer.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install composer
+launchpad install getcomposer.org
 ```
 
 ## Programs
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/getcomposer.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://getcomposer.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

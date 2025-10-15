@@ -1,12 +1,12 @@
-# ffmpeg.org
+# ffmpeg
 
 > Play, record, convert, and stream audio and video
 
 ## Package Information
 
 - **Domain**: `ffmpeg.org`
-- **Name**: `ffmpeg.org`
-- **Homepage**: Not specified
+- **Name**: `ffmpeg`
+- **Homepage**: https://ffmpeg.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ffmpeg.org/package.yml)
 
 ## Installation
@@ -67,7 +67,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['ffmpeg.org']
+const pkg = pantry.ffmpeg
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -77,7 +77,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ffmpeg.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://ffmpeg.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

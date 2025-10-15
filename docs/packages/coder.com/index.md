@@ -6,14 +6,14 @@
 
 - **Domain**: `coder.com`
 - **Name**: `coder`
-- **Homepage**: Not specified
+- **Homepage**: https://coder.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/coder.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install coder
+launchpad install coder.com
 ```
 
 ## Programs
@@ -53,8 +53,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) coder -- $SHELL -i
+sh <(curl https://pkgx.sh) +coder.com@2.27.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.21`
 
 ## Usage Examples
 
@@ -72,7 +78,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/coder.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://coder.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

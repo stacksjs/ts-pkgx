@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install genqlient
+launchpad install khanacademy.org/genqlient
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) genqlient -- $SHELL -i
+sh <(curl https://pkgx.sh) +khanacademy.org/genqlient@0.8.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
 
 ## Usage Examples
 

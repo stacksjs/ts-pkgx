@@ -6,14 +6,14 @@
 
 - **Domain**: `bitwarden.com`
 - **Name**: `bw`
-- **Homepage**: Not specified
+- **Homepage**: https://bitwarden.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bitwarden.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install bw
+launchpad install bitwarden.com
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) bw -- $SHELL -i
+sh <(curl https://pkgx.sh) +bitwarden.com@2025.9.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/bitwarden.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://bitwarden.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

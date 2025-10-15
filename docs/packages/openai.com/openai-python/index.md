@@ -6,14 +6,14 @@
 
 - **Domain**: `openai.com/openai-python`
 - **Name**: `openai`
-- **Homepage**: Not specified
+- **Homepage**: https://pypi.org/project/openai/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openai.com/openai-python/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install openai
+launchpad install openai.com/openai-python
 ```
 
 ## Programs
@@ -95,7 +95,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) openai -- $SHELL -i
+sh <(curl https://pkgx.sh) +openai.com/openai-python@2.3.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -120,7 +120,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openai.com/openai-python/package.yml)
-- [Homepage](#)
+- [Homepage](https://pypi.org/project/openai/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

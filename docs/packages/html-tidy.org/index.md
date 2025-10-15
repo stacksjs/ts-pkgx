@@ -6,14 +6,14 @@
 
 - **Domain**: `html-tidy.org`
 - **Name**: `tidy`
-- **Homepage**: Not specified
+- **Homepage**: https://www.html-tidy.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/html-tidy.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install tidy
+launchpad install html-tidy.org
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tidy -- $SHELL -i
+sh <(curl https://pkgx.sh) +html-tidy.org@5.8.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/html-tidy.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.html-tidy.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

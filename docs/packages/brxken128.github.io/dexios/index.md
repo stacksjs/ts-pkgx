@@ -6,14 +6,14 @@
 
 - **Domain**: `brxken128.github.io/dexios`
 - **Name**: `dexios`
-- **Homepage**: Not specified
+- **Homepage**: https://brxken128.github.io/dexios/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/brxken128.github.io/dexios/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install dexios
+launchpad install brxken128.github.io/dexios
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dexios -- $SHELL -i
+sh <(curl https://pkgx.sh) +brxken128.github.io/dexios@8.8.1 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/brxken128.github.io/dexios/package.yml)
-- [Homepage](#)
+- [Homepage](https://brxken128.github.io/dexios/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

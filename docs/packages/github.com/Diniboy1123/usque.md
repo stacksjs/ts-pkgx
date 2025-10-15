@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install usque
+launchpad install github.com/Diniboy1123/usque
 ```
 
 ## Programs
@@ -38,8 +38,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) usque -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/Diniboy1123/usque@1.4.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.24.2`
+- `goreleaser.com`
 
 ## Usage Examples
 

@@ -1,11 +1,11 @@
-# libsdl.org/SDL_image
+# SDL_image
 
 > Image decoding for many popular formats for Simple Directmedia Layer.
 
 ## Package Information
 
 - **Domain**: `libsdl.org/SDL_image`
-- **Name**: `libsdl.org/SDL_image`
+- **Name**: `SDL_image`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libsdl.org/SDL_image/package.yml)
 
@@ -59,7 +59,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libsdl.org/SDL_image']
+const pkg = pantry.SDL_image
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

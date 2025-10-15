@@ -6,14 +6,14 @@
 
 - **Domain**: `talos.dev`
 - **Name**: `talosctl`
-- **Homepage**: Not specified
+- **Homepage**: https://www.talos.dev/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/talos.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install talosctl
+launchpad install talos.dev
 ```
 
 ## Programs
@@ -43,8 +43,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) talosctl -- $SHELL -i
+sh <(curl https://pkgx.sh) +talos.dev@1.11.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
+- `linux:gnu.org/gcc`
 
 ## Usage Examples
 
@@ -62,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/talos.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.talos.dev/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

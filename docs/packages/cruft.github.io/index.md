@@ -6,14 +6,14 @@
 
 - **Domain**: `cruft.github.io`
 - **Name**: `cruft`
-- **Homepage**: Not specified
+- **Homepage**: https://cruft.github.io/cruft/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cruft.github.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cruft
+launchpad install cruft.github.io
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cruft -- $SHELL -i
+sh <(curl https://pkgx.sh) +cruft.github.io@2.16.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cruft.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://cruft.github.io/cruft/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

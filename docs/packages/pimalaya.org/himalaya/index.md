@@ -6,14 +6,14 @@
 
 - **Domain**: `pimalaya.org/himalaya`
 - **Name**: `himalaya`
-- **Homepage**: Not specified
+- **Homepage**: https://pimalaya.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pimalaya.org/himalaya/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install himalaya
+launchpad install pimalaya.org/himalaya
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) himalaya -- $SHELL -i
+sh <(curl https://pkgx.sh) +pimalaya.org/himalaya@1.1.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pimalaya.org/himalaya/package.yml)
-- [Homepage](#)
+- [Homepage](https://pimalaya.org)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `libimobiledevice.org/libplist`
 - **Name**: `plistutil`
-- **Homepage**: Not specified
+- **Homepage**: https://www.libimobiledevice.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libimobiledevice.org/libplist/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install plistutil
+launchpad install libimobiledevice.org/libplist
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) plistutil -- $SHELL -i
+sh <(curl https://pkgx.sh) +libimobiledevice.org/libplist@2.7.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libimobiledevice.org/libplist/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.libimobiledevice.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

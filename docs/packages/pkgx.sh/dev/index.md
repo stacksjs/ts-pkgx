@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install dev
+launchpad install pkgx.sh/dev
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dev -- $SHELL -i
+sh <(curl https://pkgx.sh) +pkgx.sh/dev@1.8.1 -- $SHELL -i
 ```
 
 ## Dependencies

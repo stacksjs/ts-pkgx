@@ -1,12 +1,12 @@
-# smartmontools.org
+# smartmontools
 
 > SMART hard drive monitoring
 
 ## Package Information
 
 - **Domain**: `smartmontools.org`
-- **Name**: `smartmontools.org`
-- **Homepage**: Not specified
+- **Name**: `smartmontools`
+- **Homepage**: https://www.smartmontools.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/smartmontools.org/package.yml)
 
 ## Installation
@@ -47,7 +47,7 @@ sh <(curl https://pkgx.sh) +smartmontools.org@7.5.0 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['smartmontools.org']
+const pkg = pantry.smartmontools
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/smartmontools.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.smartmontools.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

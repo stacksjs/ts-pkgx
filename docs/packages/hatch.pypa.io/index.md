@@ -6,14 +6,14 @@
 
 - **Domain**: `hatch.pypa.io`
 - **Name**: `hatch`
-- **Homepage**: Not specified
+- **Homepage**: https://hatch.pypa.io/latest/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/hatch.pypa.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install hatch
+launchpad install hatch.pypa.io
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) hatch -- $SHELL -i
+sh <(curl https://pkgx.sh) +hatch.pypa.io@1.14.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/hatch.pypa.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://hatch.pypa.io/latest/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

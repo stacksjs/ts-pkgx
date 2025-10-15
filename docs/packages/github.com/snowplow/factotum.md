@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/snowplow/factotum`
 - **Name**: `factotum`
-- **Homepage**: Not specified
+- **Homepage**: http://snowplowanalytics.com/blog/2016/04/09/introducing-factotum-data-pipeline-runner/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/snowplow/factotum/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install factotum
+launchpad install github.com/snowplow/factotum
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) factotum -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/snowplow/factotum@0.6.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/snowplow/factotum/package.yml)
-- [Homepage](#)
+- [Homepage](http://snowplowanalytics.com/blog/2016/04/09/introducing-factotum-data-pipeline-runner/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

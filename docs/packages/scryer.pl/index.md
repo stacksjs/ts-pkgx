@@ -1,19 +1,19 @@
-# scryer-prolog
+# Scryer Prolog
 
 > Modern ISO Prolog implementation written mostly in Rust
 
 ## Package Information
 
 - **Domain**: `scryer.pl`
-- **Name**: `scryer-prolog`
-- **Homepage**: Not specified
+- **Name**: `Scryer Prolog`
+- **Homepage**: https://www.scryer.pl
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/scryer.pl/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install scryer-prolog
+launchpad install scryer.pl
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) scryer-prolog -- $SHELL -i
+sh <(curl https://pkgx.sh) +scryer.pl@0.10.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['scryer-prolog']
+const pkg = pantry['Scryer Prolog']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/scryer.pl/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.scryer.pl)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

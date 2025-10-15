@@ -1,12 +1,12 @@
-# mongodb.com
+# mongodb
 
 > The MongoDB Database
 
 ## Package Information
 
 - **Domain**: `mongodb.com`
-- **Name**: `mongodb.com`
-- **Homepage**: Not specified
+- **Name**: `mongodb`
+- **Homepage**: https://www.mongodb.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mongodb.com/package.yml)
 
 ## Installation
@@ -63,7 +63,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['mongodb.com']
+const pkg = pantry.mongodb
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mongodb.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.mongodb.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

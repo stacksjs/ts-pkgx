@@ -6,14 +6,14 @@
 
 - **Domain**: `supabase.com/cli`
 - **Name**: `supabase`
-- **Homepage**: Not specified
+- **Homepage**: https://supabase.com/docs/reference/cli/about
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/supabase.com/cli/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install supabase
+launchpad install supabase.com/cli
 ```
 
 ## Programs
@@ -75,8 +75,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) supabase -- $SHELL -i
+sh <(curl https://pkgx.sh) +supabase.com/cli@2.51.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
 
 ## Usage Examples
 
@@ -94,7 +100,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/supabase.com/cli/package.yml)
-- [Homepage](#)
+- [Homepage](https://supabase.com/docs/reference/cli/about)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

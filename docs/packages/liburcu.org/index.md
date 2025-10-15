@@ -6,14 +6,14 @@
 
 - **Domain**: `liburcu.org`
 - **Name**: `liburcu`
-- **Homepage**: Not specified
+- **Homepage**: http://liburcu.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/liburcu.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install liburcu
+launchpad install liburcu.org
 ```
 
 ## Programs
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/liburcu.org/package.yml)
-- [Homepage](#)
+- [Homepage](http://liburcu.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

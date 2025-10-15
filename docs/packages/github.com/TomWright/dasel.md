@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/TomWright/dasel`
 - **Name**: `dasel`
-- **Homepage**: Not specified
+- **Homepage**: https://daseldocs.tomwright.me
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/TomWright/dasel/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install dasel
+launchpad install github.com/TomWright/dasel
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dasel -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/TomWright/dasel@2.8.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1`
 
 ## Usage Examples
 
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/TomWright/dasel/package.yml)
-- [Homepage](#)
+- [Homepage](https://daseldocs.tomwright.me)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

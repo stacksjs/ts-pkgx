@@ -1,12 +1,12 @@
-# radicle.org
+# radicle
 
 > Radicle CLI
 
 ## Package Information
 
 - **Domain**: `radicle.org`
-- **Name**: `radicle.org`
-- **Homepage**: Not specified
+- **Name**: `radicle`
+- **Homepage**: https://app.radicle.network/alt-clients.radicle.eth/radicle-cli
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/radicle.org/package.yml)
 
 ## Installation
@@ -77,7 +77,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['radicle.org']
+const pkg = pantry.radicle
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -87,7 +87,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/radicle.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://app.radicle.network/alt-clients.radicle.eth/radicle-cli)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

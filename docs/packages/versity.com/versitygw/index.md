@@ -6,14 +6,14 @@
 
 - **Domain**: `versity.com/versitygw`
 - **Name**: `versitygw`
-- **Homepage**: Not specified
+- **Homepage**: https://www.versity.com/products/versitygw/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/versity.com/versitygw/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install versitygw
+launchpad install versity.com/versitygw
 ```
 
 ## Programs
@@ -39,8 +39,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) versitygw -- $SHELL -i
+sh <(curl https://pkgx.sh) +versity.com/versitygw@1.0.18 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@1.21.0`
 
 ## Usage Examples
 
@@ -58,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/versity.com/versitygw/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.versity.com/products/versitygw/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

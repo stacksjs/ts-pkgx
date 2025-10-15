@@ -6,14 +6,14 @@
 
 - **Domain**: `pandoc.org`
 - **Name**: `pandoc`
-- **Homepage**: Not specified
+- **Homepage**: https://pandoc.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pandoc.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pandoc
+launchpad install pandoc.org
 ```
 
 ## Programs
@@ -30,10 +30,10 @@ This package provides the following executable programs:
 - `3.8.2`, `3.8.1`, `3.8.0`, `3.7.0.2`, `3.7.0.1`
 - `3.7.0`, `3.6.4`, `3.6.3`, `3.6.2`, `3.6.1`
 - `3.6.0`, `3.5.0`, `3.4.0`, `3.3.0`, `3.2.1`
-- `3.2.0`, `3.1.13`, `3.1.9`, `3.1.8`, `3.1.7`
-- `3.1.6.2`, `3.1.6`, `3.1.5`, `3.1.4`, `3.1.3`
-- `3.1.2`, `3.1.12.3`, `3.1.12.2`, `3.1.12.1`, `3.1.12`
-- `3.1.11.1`, `3.1.11`, `3.1.10`, `2.19.2`
+- `3.2.0`, `3.1.13`, `3.1.12.3`, `3.1.12.2`, `3.1.12.1`
+- `3.1.12`, `3.1.11.1`, `3.1.11`, `3.1.10`, `3.1.9`
+- `3.1.8`, `3.1.7`, `3.1.6.2`, `3.1.6`, `3.1.5`
+- `3.1.4`, `3.1.3`, `3.1.2`, `2.19.2`
 
 </details>
 
@@ -43,7 +43,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pandoc -- $SHELL -i
+sh <(curl https://pkgx.sh) +pandoc.org@3.8.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pandoc.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://pandoc.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

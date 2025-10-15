@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install aichat
+launchpad install crates.io/aichat
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) aichat -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/aichat@0.30.0 -- $SHELL -i
 ```
 
 ## Usage Examples

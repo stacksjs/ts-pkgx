@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/evilmartians/lefthook`
 - **Name**: `lefthook`
-- **Homepage**: Not specified
+- **Homepage**: http://lefthook.dev/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/evilmartians/lefthook/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install lefthook
+launchpad install github.com/evilmartians/lefthook
 ```
 
 ## Programs
@@ -62,8 +62,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) lefthook -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/evilmartians/lefthook@1.13.6 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
 
 ## Usage Examples
 
@@ -81,7 +87,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/evilmartians/lefthook/package.yml)
-- [Homepage](#)
+- [Homepage](http://lefthook.dev/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

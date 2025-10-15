@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install paper
+launchpad install github.com/rrthomas/libpaper
 ```
 
 ## Programs
@@ -38,8 +38,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) paper -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/rrthomas/libpaper@2.2.6 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/make`
+- `gnu.org/help2man`
 
 ## Usage Examples
 

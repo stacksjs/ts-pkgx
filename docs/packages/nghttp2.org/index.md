@@ -1,12 +1,12 @@
-# nghttp2.org
+# nghttp2
 
 > nghttp2 - HTTP/2 C Library and tools
 
 ## Package Information
 
 - **Domain**: `nghttp2.org`
-- **Name**: `nghttp2.org`
-- **Homepage**: Not specified
+- **Name**: `nghttp2`
+- **Homepage**: https://nghttp2.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/nghttp2.org/package.yml)
 
 ## Installation
@@ -49,7 +49,7 @@ sh <(curl https://pkgx.sh) +nghttp2.org@1.67.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['nghttp2.org']
+const pkg = pantry.nghttp2
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -59,7 +59,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/nghttp2.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://nghttp2.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

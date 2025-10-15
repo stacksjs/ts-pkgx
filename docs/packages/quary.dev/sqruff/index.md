@@ -1,12 +1,12 @@
-# quary.dev/sqruff
+# sqruff
 
 > Fast SQL formatter/linter
 
 ## Package Information
 
 - **Domain**: `quary.dev/sqruff`
-- **Name**: `quary.dev/sqruff`
-- **Homepage**: Not specified
+- **Name**: `sqruff`
+- **Homepage**: https://playground.quary.dev/?secondary=Format
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/quary.dev/sqruff/package.yml)
 
 ## Installation
@@ -71,7 +71,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['quary.dev/sqruff']
+const pkg = pantry.sqruff
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -81,7 +81,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/quary.dev/sqruff/package.yml)
-- [Homepage](#)
+- [Homepage](https://playground.quary.dev/?secondary=Format)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

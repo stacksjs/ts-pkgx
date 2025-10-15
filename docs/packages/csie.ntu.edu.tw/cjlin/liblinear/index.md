@@ -6,14 +6,14 @@
 
 - **Domain**: `csie.ntu.edu.tw/cjlin/liblinear`
 - **Name**: `liblinear`
-- **Homepage**: Not specified
+- **Homepage**: https://www.csie.ntu.edu.tw/~cjlin/liblinear/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/csie.ntu.edu.tw/cjlin/liblinear/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install liblinear
+launchpad install csie.ntu.edu.tw/cjlin/liblinear
 ```
 
 ## Programs
@@ -41,6 +41,14 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +csie.ntu.edu.tw/cjlin/liblinear@2.49.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/make`
+- `curl.se`
+- `gnu.org/patch`
+
 ## Usage Examples
 
 ```typescript
@@ -57,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/csie.ntu.edu.tw/cjlin/liblinear/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.csie.ntu.edu.tw/~cjlin/liblinear/)
 - [Back to Package Catalog](../../../../package-catalog.md)
 
 ---

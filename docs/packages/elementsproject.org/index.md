@@ -1,11 +1,11 @@
-# elementsproject.org
+# elementsproject
 
 > Open Source implementation of advanced blockchain features extending the Bitcoin protocol
 
 ## Package Information
 
 - **Domain**: `elementsproject.org`
-- **Name**: `elementsproject.org`
+- **Name**: `elementsproject`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/elementsproject.org/package.yml)
 
@@ -61,7 +61,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['elementsproject.org']
+const pkg = pantry.elementsproject
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

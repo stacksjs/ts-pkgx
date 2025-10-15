@@ -1,12 +1,12 @@
-# ruby-lang.org
+# ruby-lang
 
 > Powerful, clean, object-oriented scripting language
 
 ## Package Information
 
 - **Domain**: `ruby-lang.org`
-- **Name**: `ruby-lang.org`
-- **Homepage**: Not specified
+- **Name**: `ruby-lang`
+- **Homepage**: https://www.ruby-lang.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ruby-lang.org/package.yml)
 
 ## Installation
@@ -68,12 +68,6 @@ This package depends on:
 - `pyyaml.org^0.2`
 - `zlib.net^1`
 
-## Related Packages
-
-These packages work well with ruby-lang.org:
-
-- [`rubygems.org`](../rubygems.org/index.md) - Powerful, clean, object-oriented scripting language
-
 ## Usage Examples
 
 ```typescript
@@ -90,7 +84,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ruby-lang.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.ruby-lang.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

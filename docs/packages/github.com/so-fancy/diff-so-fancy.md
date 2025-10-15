@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install diff-so-fancy
+launchpad install github.com/so-fancy/diff-so-fancy
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) diff-so-fancy -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/so-fancy/diff-so-fancy@1.4.4 -- $SHELL -i
 ```
 
 ## Usage Examples

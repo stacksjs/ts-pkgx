@@ -6,14 +6,14 @@
 
 - **Domain**: `openldap.org`
 - **Name**: `ldap`
-- **Homepage**: Not specified
+- **Homepage**: https://www.openldap.org/software/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openldap.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ldap
+launchpad install openldap.org
 ```
 
 ## Programs
@@ -74,7 +74,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openldap.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.openldap.org/software/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

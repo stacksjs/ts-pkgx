@@ -6,14 +6,14 @@
 
 - **Domain**: `beyondgrep.com`
 - **Name**: `ack`
-- **Homepage**: Not specified
+- **Homepage**: https://beyondgrep.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/beyondgrep.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ack
+launchpad install beyondgrep.com
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ack -- $SHELL -i
+sh <(curl https://pkgx.sh) +beyondgrep.com@3.9.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/beyondgrep.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://beyondgrep.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

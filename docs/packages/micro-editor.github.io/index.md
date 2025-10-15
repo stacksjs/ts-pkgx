@@ -6,14 +6,14 @@
 
 - **Domain**: `micro-editor.github.io`
 - **Name**: `micro`
-- **Homepage**: Not specified
+- **Homepage**: https://micro-editor.github.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/micro-editor.github.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install micro
+launchpad install micro-editor.github.io
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) micro -- $SHELL -i
+sh <(curl https://pkgx.sh) +micro-editor.github.io@2.0.14 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.16`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/micro-editor.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://micro-editor.github.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

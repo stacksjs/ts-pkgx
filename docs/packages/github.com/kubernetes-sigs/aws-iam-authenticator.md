@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install aws-iam-authenticator
+launchpad install github.com/kubernetes-sigs/aws-iam-authenticator
 ```
 
 ## Programs
@@ -42,8 +42,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) aws-iam-authenticator -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/kubernetes-sigs/aws-iam-authenticator@0.7.8 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 

@@ -6,7 +6,7 @@
 
 - **Domain**: `python.org`
 - **Name**: `python`
-- **Homepage**: Not specified
+- **Homepage**: https://www.python.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/python.org/package.yml)
 
 ## Installation
@@ -96,12 +96,6 @@ This package depends on:
 - `linux:tcl-lang.org`
 - `darwin:tcl-lang.org=8.6.16 # 9.0.2 introduced a build issue on darwin`
 
-## Related Packages
-
-These packages work well with python:
-
-- [`pip.pypa.io`](../pip.pypa.io/index.md) - The Python package installer
-
 ## Usage Examples
 
 ```typescript
@@ -118,7 +112,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/python.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.python.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

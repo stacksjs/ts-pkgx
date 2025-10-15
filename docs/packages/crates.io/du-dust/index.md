@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install dust
+launchpad install crates.io/du-dust
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dust -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/du-dust@1.2.3 -- $SHELL -i
 ```
 
 ## Usage Examples

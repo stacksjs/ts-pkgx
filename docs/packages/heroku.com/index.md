@@ -6,14 +6,14 @@
 
 - **Domain**: `heroku.com`
 - **Name**: `heroku`
-- **Homepage**: Not specified
+- **Homepage**: https://www.npmjs.com/package/heroku/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/heroku.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install heroku
+launchpad install heroku.com
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) heroku -- $SHELL -i
+sh <(curl https://pkgx.sh) +heroku.com@10.13.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/heroku.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.npmjs.com/package/heroku/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

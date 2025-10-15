@@ -6,14 +6,14 @@
 
 - **Domain**: `plasmasturm.org/rename`
 - **Name**: `rename`
-- **Homepage**: Not specified
+- **Homepage**: http://plasmasturm.org/code/rename/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/plasmasturm.org/rename/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rename
+launchpad install plasmasturm.org/rename
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rename -- $SHELL -i
+sh <(curl https://pkgx.sh) +plasmasturm.org/rename@1.601.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/plasmasturm.org/rename/package.yml)
-- [Homepage](#)
+- [Homepage](http://plasmasturm.org/code/rename/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

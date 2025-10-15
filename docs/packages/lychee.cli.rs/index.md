@@ -6,14 +6,14 @@
 
 - **Domain**: `lychee.cli.rs`
 - **Name**: `lychee`
-- **Homepage**: Not specified
+- **Homepage**: https://lychee.cli.rs/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/lychee.cli.rs/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install lychee
+launchpad install lychee.cli.rs
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) lychee -- $SHELL -i
+sh <(curl https://pkgx.sh) +lychee.cli.rs@0.15.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/lychee.cli.rs/package.yml)
-- [Homepage](#)
+- [Homepage](https://lychee.cli.rs/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

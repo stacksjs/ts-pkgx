@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install git-tidy
+launchpad install crates.io/git-tidy
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) git-tidy -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/git-tidy@2.0.1 -- $SHELL -i
 ```
 
 ## Usage Examples

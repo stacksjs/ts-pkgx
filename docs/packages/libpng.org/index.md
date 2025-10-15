@@ -1,12 +1,12 @@
-# libpng.org
+# libpng
 
 > LIBPNG: Portable Network Graphics support, official libpng repository
 
 ## Package Information
 
 - **Domain**: `libpng.org`
-- **Name**: `libpng.org`
-- **Homepage**: Not specified
+- **Name**: `libpng`
+- **Homepage**: http://www.libpng.org/pub/png/libpng.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libpng.org/package.yml)
 
 ## Installation
@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libpng.org']
+const pkg = pantry.libpng
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libpng.org/package.yml)
-- [Homepage](#)
+- [Homepage](http://www.libpng.org/pub/png/libpng.html)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

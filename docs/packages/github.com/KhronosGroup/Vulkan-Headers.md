@@ -1,12 +1,12 @@
-# github.com/KhronosGroup/Vulkan-Headers
+# Vulkan-Headers
 
 > Vulkan header files and API registry
 
 ## Package Information
 
 - **Domain**: `github.com/KhronosGroup/Vulkan-Headers`
-- **Name**: `github.com/KhronosGroup/Vulkan-Headers`
-- **Homepage**: Not specified
+- **Name**: `Vulkan-Headers`
+- **Homepage**: https://www.vulkan.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/KhronosGroup/Vulkan-Headers/package.yml)
 
 ## Installation
@@ -55,13 +55,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/KhronosGroup/Vulkan-Headers@1.4.329 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/KhronosGroup/Vulkan-Headers']
+const pkg = pantry['Vulkan-Headers']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -71,7 +77,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/KhronosGroup/Vulkan-Headers/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.vulkan.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

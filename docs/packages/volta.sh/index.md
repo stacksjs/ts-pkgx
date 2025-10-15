@@ -6,14 +6,14 @@
 
 - **Domain**: `volta.sh`
 - **Name**: `volta`
-- **Homepage**: Not specified
+- **Homepage**: https://volta.sh
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/volta.sh/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install volta
+launchpad install volta.sh
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) volta -- $SHELL -i
+sh <(curl https://pkgx.sh) +volta.sh@2.0.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/volta.sh/package.yml)
-- [Homepage](#)
+- [Homepage](https://volta.sh)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

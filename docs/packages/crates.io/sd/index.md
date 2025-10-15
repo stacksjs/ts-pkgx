@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install sd
+launchpad install crates.io/sd
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sd -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/sd@1.0.0 -- $SHELL -i
 ```
 
 ## Usage Examples

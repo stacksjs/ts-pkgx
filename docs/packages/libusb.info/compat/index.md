@@ -1,19 +1,19 @@
-# libusb-config
+# libusb-compat
 
 > Library for USB device access
 
 ## Package Information
 
 - **Domain**: `libusb.info/compat`
-- **Name**: `libusb-config`
-- **Homepage**: Not specified
+- **Name**: `libusb-compat`
+- **Homepage**: https://libusb.info/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libusb.info/compat/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install libusb-config
+launchpad install libusb.info/compat
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) libusb-config -- $SHELL -i
+sh <(curl https://pkgx.sh) +libusb.info/compat@0.1.8 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libusb-config']
+const pkg = pantry['libusb-compat']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libusb.info/compat/package.yml)
-- [Homepage](#)
+- [Homepage](https://libusb.info/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

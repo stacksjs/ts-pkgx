@@ -1,12 +1,12 @@
-# rubygems.org
+# rubygems
 
 > Powerful, clean, object-oriented scripting language
 
 ## Package Information
 
 - **Domain**: `rubygems.org`
-- **Name**: `rubygems.org`
-- **Homepage**: Not specified
+- **Name**: `rubygems`
+- **Homepage**: https://www.ruby-lang.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rubygems.org/package.yml)
 
 ## Installation
@@ -65,7 +65,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['rubygems.org']
+const pkg = pantry.rubygems
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -75,7 +75,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rubygems.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.ruby-lang.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

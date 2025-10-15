@@ -6,14 +6,14 @@
 
 - **Domain**: `rust-lang.org/rustup`
 - **Name**: `rustup`
-- **Homepage**: Not specified
+- **Homepage**: https://rust-lang.github.io/rustup/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.org/rustup/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rustup
+launchpad install rust-lang.org/rustup
 ```
 
 ## Programs
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.org/rustup/package.yml)
-- [Homepage](#)
+- [Homepage](https://rust-lang.github.io/rustup/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -1,11 +1,11 @@
-# github.com/antfu/ni
+# ni
 
 > 💡 Use the right package manager
 
 ## Package Information
 
 - **Domain**: `github.com/antfu/ni`
-- **Name**: `github.com/antfu/ni`
+- **Name**: `ni`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/antfu/ni/package.yml)
 
@@ -64,7 +64,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/antfu/ni']
+const pkg = pantry.ni
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

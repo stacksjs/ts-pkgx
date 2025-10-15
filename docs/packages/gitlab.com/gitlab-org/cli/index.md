@@ -6,14 +6,14 @@
 
 - **Domain**: `gitlab.com/gitlab-org/cli`
 - **Name**: `glab`
-- **Homepage**: Not specified
+- **Homepage**: https://gitlab.com/gitlab-org/cli
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gitlab.com/gitlab-org/cli/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install glab
+launchpad install gitlab.com/gitlab-org/cli
 ```
 
 ## Programs
@@ -49,8 +49,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) glab -- $SHELL -i
+sh <(curl https://pkgx.sh) +gitlab.com/gitlab-org/cli@1.74.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
 
 ## Usage Examples
 
@@ -68,7 +74,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gitlab.com/gitlab-org/cli/package.yml)
-- [Homepage](#)
+- [Homepage](https://gitlab.com/gitlab-org/cli)
 - [Back to Package Catalog](../../../../package-catalog.md)
 
 ---

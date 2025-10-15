@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install rmz
+launchpad install crates.io/rmz
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rmz -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/rmz@3.1.1 -- $SHELL -i
 ```
 
 ## Usage Examples

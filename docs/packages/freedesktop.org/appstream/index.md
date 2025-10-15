@@ -6,14 +6,14 @@
 
 - **Domain**: `freedesktop.org/appstream`
 - **Name**: `appstreamcli`
-- **Homepage**: Not specified
+- **Homepage**: https://www.freedesktop.org/wiki/Distributions/AppStream/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/appstream/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install appstreamcli
+launchpad install freedesktop.org/appstream
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) appstreamcli -- $SHELL -i
+sh <(curl https://pkgx.sh) +freedesktop.org/appstream@1.1.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -70,7 +70,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/appstream/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.freedesktop.org/wiki/Distributions/AppStream/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

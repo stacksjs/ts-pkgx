@@ -1,11 +1,11 @@
-# libexif.github.io
+# libexif.github
 
 > A library for parsing, editing, and saving EXIF data
 
 ## Package Information
 
 - **Domain**: `libexif.github.io`
-- **Name**: `libexif.github.io`
+- **Name**: `libexif.github`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libexif.github.io/package.yml)
 
@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libexif.github.io']
+const pkg = pantry['libexif.github']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -1,11 +1,11 @@
-# attrs.org
+# attrs
 
 > Python Classes Without Boilerplate
 
 ## Package Information
 
 - **Domain**: `attrs.org`
-- **Name**: `attrs.org`
+- **Name**: `attrs`
 - **Homepage**: https://www.attrs.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/attrs.org/package.yml)
 
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['attrs.org']
+const pkg = pantry.attrs
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

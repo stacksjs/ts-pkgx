@@ -6,14 +6,14 @@
 
 - **Domain**: `xcfile.dev`
 - **Name**: `xc`
-- **Homepage**: Not specified
+- **Homepage**: https://xcfile.dev/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xcfile.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install xc
+launchpad install xcfile.dev
 ```
 
 ## Programs
@@ -42,8 +42,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) xc -- $SHELL -i
+sh <(curl https://pkgx.sh) +xcfile.dev@0.8.6 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 
@@ -61,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/xcfile.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://xcfile.dev/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `packer.io`
 - **Name**: `packer`
-- **Homepage**: Not specified
+- **Homepage**: https://packer.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/packer.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install packer
+launchpad install packer.io
 ```
 
 ## Programs
@@ -40,8 +40,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) packer -- $SHELL -i
+sh <(curl https://pkgx.sh) +packer.io@1.14.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
 
 ## Usage Examples
 
@@ -59,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/packer.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://packer.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

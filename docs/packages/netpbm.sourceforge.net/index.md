@@ -1,12 +1,12 @@
-# netpbm.sourceforge.net
+# netpbm.sourceforge
 
 > Image manipulation
 
 ## Package Information
 
 - **Domain**: `netpbm.sourceforge.net`
-- **Name**: `netpbm.sourceforge.net`
-- **Homepage**: Not specified
+- **Name**: `netpbm.sourceforge`
+- **Homepage**: https://netpbm.sourceforge.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/netpbm.sourceforge.net/package.yml)
 
 ## Installation
@@ -373,7 +373,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['netpbm.sourceforge.net']
+const pkg = pantry['netpbm.sourceforge']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -383,7 +383,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/netpbm.sourceforge.net/package.yml)
-- [Homepage](#)
+- [Homepage](https://netpbm.sourceforge.net/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

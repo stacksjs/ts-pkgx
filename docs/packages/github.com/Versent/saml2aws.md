@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install saml2aws
+launchpad install github.com/Versent/saml2aws
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) saml2aws -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/Versent/saml2aws@2.36.19 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 

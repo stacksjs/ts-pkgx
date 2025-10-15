@@ -6,14 +6,14 @@
 
 - **Domain**: `waterlan.home.xs4all.nl/dos2unix`
 - **Name**: `dos2unix`
-- **Homepage**: Not specified
+- **Homepage**: https://waterlan.home.xs4all.nl/dos2unix.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/waterlan.home.xs4all.nl/dos2unix/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install dos2unix
+launchpad install waterlan.home.xs4all.nl/dos2unix
 ```
 
 ## Programs
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/waterlan.home.xs4all.nl/dos2unix/package.yml)
-- [Homepage](#)
+- [Homepage](https://waterlan.home.xs4all.nl/dos2unix.html)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

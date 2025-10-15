@@ -6,14 +6,14 @@
 
 - **Domain**: `sourceforge.net/opencore-amr`
 - **Name**: `aac-enc`
-- **Homepage**: Not specified
+- **Homepage**: https://sourceforge.net/projects/opencore-amr/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/opencore-amr/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install aac-enc
+launchpad install sourceforge.net/opencore-amr
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) aac-enc -- $SHELL -i
+sh <(curl https://pkgx.sh) +sourceforge.net/opencore-amr@2.0.3 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `linux:gnu.org/gcc`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/opencore-amr/package.yml)
-- [Homepage](#)
+- [Homepage](https://sourceforge.net/projects/opencore-amr/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

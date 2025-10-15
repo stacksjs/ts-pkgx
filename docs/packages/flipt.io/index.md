@@ -6,14 +6,14 @@
 
 - **Domain**: `flipt.io`
 - **Name**: `flipt`
-- **Homepage**: Not specified
+- **Homepage**: https://flipt.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/flipt.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install flipt
+launchpad install flipt.io
 ```
 
 ## Programs
@@ -47,8 +47,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) flipt -- $SHELL -i
+sh <(curl https://pkgx.sh) +flipt.io@2.2.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@1.22.0`
 
 ## Usage Examples
 
@@ -66,7 +72,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/flipt.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://flipt.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install ty
+launchpad install astral.sh/ty
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ty -- $SHELL -i
+sh <(curl https://pkgx.sh) +astral.sh/ty@0.0.1.8 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install buildx
+launchpad install docker.com/buildx
 ```
 
 ## Programs
@@ -43,8 +43,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) buildx -- $SHELL -i
+sh <(curl https://pkgx.sh) +docker.com/buildx@0.29.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 

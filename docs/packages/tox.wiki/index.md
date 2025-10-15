@@ -6,14 +6,14 @@
 
 - **Domain**: `tox.wiki`
 - **Name**: `tox`
-- **Homepage**: Not specified
+- **Homepage**: https://tox.wiki/en/latest/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tox.wiki/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install tox
+launchpad install tox.wiki
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tox -- $SHELL -i
+sh <(curl https://pkgx.sh) +tox.wiki@4.31.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tox.wiki/package.yml)
-- [Homepage](#)
+- [Homepage](https://tox.wiki/en/latest/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

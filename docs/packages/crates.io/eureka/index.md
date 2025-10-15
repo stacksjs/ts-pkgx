@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install eureka
+launchpad install crates.io/eureka
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) eureka -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/eureka@2.0.0 -- $SHELL -i
 ```
 
 ## Dependencies

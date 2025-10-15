@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install glauth
+launchpad install github.com/glauth/glauth
 ```
 
 ## Programs
@@ -40,6 +40,15 @@ This package provides the following executable programs:
 # Install specific version
 sh <(curl https://pkgx.sh) +github.com/glauth/glauth@2.4.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.23`
+- `gnu.org/gcc`
+- `gnu.org/coreutils`
+- `stedolan.github.io/jq@^1.7`
 
 ## Usage Examples
 

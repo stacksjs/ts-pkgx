@@ -1,12 +1,12 @@
-# libsdl.org
+# libsdl
 
 > Simple Directmedia Layer
 
 ## Package Information
 
 - **Domain**: `libsdl.org`
-- **Name**: `libsdl.org`
-- **Homepage**: Not specified
+- **Name**: `libsdl`
+- **Homepage**: https://libsdl.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libsdl.org/package.yml)
 
 ## Installation
@@ -66,7 +66,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libsdl.org']
+const pkg = pantry.libsdl
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -76,7 +76,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libsdl.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://libsdl.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

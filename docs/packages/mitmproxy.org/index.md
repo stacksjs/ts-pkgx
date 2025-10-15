@@ -6,14 +6,14 @@
 
 - **Domain**: `mitmproxy.org`
 - **Name**: `mitmproxy`
-- **Homepage**: Not specified
+- **Homepage**: https://mitmproxy.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mitmproxy.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mitmproxy
+launchpad install mitmproxy.org
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mitmproxy -- $SHELL -i
+sh <(curl https://pkgx.sh) +mitmproxy.org@12.1.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mitmproxy.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://mitmproxy.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

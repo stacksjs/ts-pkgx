@@ -1,11 +1,11 @@
-# github.com/romanz/trezor-agent
+# trezor-agent
 
 > Hardware-based SSH/GPG/age agent
 
 ## Package Information
 
 - **Domain**: `github.com/romanz/trezor-agent`
-- **Name**: `github.com/romanz/trezor-agent`
+- **Name**: `trezor-agent`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/romanz/trezor-agent/package.yml)
 
@@ -70,7 +70,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/romanz/trezor-agent']
+const pkg = pantry['trezor-agent']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

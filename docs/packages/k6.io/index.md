@@ -6,14 +6,14 @@
 
 - **Domain**: `k6.io`
 - **Name**: `k6`
-- **Homepage**: Not specified
+- **Homepage**: https://k6.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/k6.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install k6
+launchpad install k6.io
 ```
 
 ## Programs
@@ -42,8 +42,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) k6 -- $SHELL -i
+sh <(curl https://pkgx.sh) +k6.io@1.3.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
 
 ## Usage Examples
 
@@ -61,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/k6.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://k6.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

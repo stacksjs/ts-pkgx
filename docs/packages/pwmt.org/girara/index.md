@@ -1,12 +1,12 @@
-# pwmt.org/girara
+# girara
 
 > User interface library
 
 ## Package Information
 
 - **Domain**: `pwmt.org/girara`
-- **Name**: `pwmt.org/girara`
-- **Homepage**: Not specified
+- **Name**: `girara`
+- **Homepage**: https://pwmt.org/projects/girara
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pwmt.org/girara/package.yml)
 
 ## Installation
@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pwmt.org/girara']
+const pkg = pantry.girara
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pwmt.org/girara/package.yml)
-- [Homepage](#)
+- [Homepage](https://pwmt.org/projects/girara)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

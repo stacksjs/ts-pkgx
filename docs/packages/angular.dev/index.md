@@ -6,14 +6,14 @@
 
 - **Domain**: `angular.dev`
 - **Name**: `ng`
-- **Homepage**: Not specified
+- **Homepage**: https://angular.dev/cli/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/angular.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ng
+launchpad install angular.dev
 ```
 
 ## Programs
@@ -63,7 +63,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ng -- $SHELL -i
+sh <(curl https://pkgx.sh) +angular.dev@20.3.5 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -88,7 +88,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/angular.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://angular.dev/cli/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

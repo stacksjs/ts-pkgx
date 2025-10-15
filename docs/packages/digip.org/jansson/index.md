@@ -1,12 +1,12 @@
-# digip.org/jansson
+# jansson
 
 > C library for encoding, decoding and manipulating JSON data
 
 ## Package Information
 
 - **Domain**: `digip.org/jansson`
-- **Name**: `digip.org/jansson`
-- **Homepage**: Not specified
+- **Name**: `jansson`
+- **Homepage**: http://www.digip.org/jansson/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/digip.org/jansson/package.yml)
 
 ## Installation
@@ -40,13 +40,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +digip.org/jansson@2.14.1 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `linux:gnu.org/gcc`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['digip.org/jansson']
+const pkg = pantry.jansson
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/digip.org/jansson/package.yml)
-- [Homepage](#)
+- [Homepage](http://www.digip.org/jansson/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install container-structure-test
+launchpad install github.com/GoogleContainerTools/container-structure-test
 ```
 
 ## Programs
@@ -38,8 +38,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) container-structure-test -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/GoogleContainerTools/container-structure-test@1.21.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.22`
+- `goreleaser.com`
 
 ## Usage Examples
 

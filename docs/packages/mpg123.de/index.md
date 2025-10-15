@@ -6,14 +6,14 @@
 
 - **Domain**: `mpg123.de`
 - **Name**: `mpg123`
-- **Homepage**: Not specified
+- **Homepage**: https://www.mpg123.de/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mpg123.de/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mpg123
+launchpad install mpg123.de
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mpg123 -- $SHELL -i
+sh <(curl https://pkgx.sh) +mpg123.de@1.33.3 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -59,7 +59,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mpg123.de/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.mpg123.de/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install k0sctl
+launchpad install github.com/k0sproject/k0sctl
 ```
 
 ## Programs
@@ -41,8 +41,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) k0sctl -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/k0sproject/k0sctl@0.26.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 

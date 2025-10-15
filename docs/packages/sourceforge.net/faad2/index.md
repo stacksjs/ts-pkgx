@@ -6,14 +6,14 @@
 
 - **Domain**: `sourceforge.net/faad2`
 - **Name**: `faad`
-- **Homepage**: Not specified
+- **Homepage**: https://sourceforge.net/projects/faac/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/faad2/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install faad
+launchpad install sourceforge.net/faad2
 ```
 
 ## Programs
@@ -37,8 +37,18 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) faad -- $SHELL -i
+sh <(curl https://pkgx.sh) +sourceforge.net/faad2@2.11.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
+- `gnu.org/autoconf`
+- `gnu.org/automake`
+- `gnu.org/libtool`
+- `linux:gnu.org/gcc`
 
 ## Usage Examples
 
@@ -56,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/faad2/package.yml)
-- [Homepage](#)
+- [Homepage](https://sourceforge.net/projects/faac/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

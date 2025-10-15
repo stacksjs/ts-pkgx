@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install comrak
+launchpad install crates.io/comrak
 ```
 
 ## Programs
@@ -41,7 +41,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) comrak -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/comrak@0.44.0 -- $SHELL -i
 ```
 
 ## Usage Examples

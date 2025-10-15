@@ -1,12 +1,12 @@
-# pypa.io/packaging
+# packaging
 
 > Core utilities for Python packages
 
 ## Package Information
 
 - **Domain**: `pypa.io/packaging`
-- **Name**: `pypa.io/packaging`
-- **Homepage**: Not specified
+- **Name**: `packaging`
+- **Homepage**: https://packaging.pypa.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pypa.io/packaging/package.yml)
 
 ## Installation
@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pypa.io/packaging']
+const pkg = pantry.packaging
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pypa.io/packaging/package.yml)
-- [Homepage](#)
+- [Homepage](https://packaging.pypa.io/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

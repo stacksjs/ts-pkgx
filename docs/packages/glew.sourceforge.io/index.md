@@ -1,12 +1,12 @@
-# glew.sourceforge.io
+# glew.sourceforge
 
 > The OpenGL Extension Wrangler Library
 
 ## Package Information
 
 - **Domain**: `glew.sourceforge.io`
-- **Name**: `glew.sourceforge.io`
-- **Homepage**: Not specified
+- **Name**: `glew.sourceforge`
+- **Homepage**: https://glew.sourceforge.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/glew.sourceforge.io/package.yml)
 
 ## Installation
@@ -41,13 +41,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +glew.sourceforge.io@2.2.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@^3`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['glew.sourceforge.io']
+const pkg = pantry['glew.sourceforge']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/glew.sourceforge.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://glew.sourceforge.net/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

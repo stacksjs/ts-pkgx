@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install hac
+launchpad install crates.io/hac-client
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) hac -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/hac-client@0.2.1 -- $SHELL -i
 ```
 
 ## Usage Examples

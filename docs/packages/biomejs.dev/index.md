@@ -6,14 +6,14 @@
 
 - **Domain**: `biomejs.dev`
 - **Name**: `biome`
-- **Homepage**: Not specified
+- **Homepage**: https://biomejs.dev/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/biomejs.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install biome
+launchpad install biomejs.dev
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) biome -- $SHELL -i
+sh <(curl https://pkgx.sh) +biomejs.dev@1.9.4 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -61,7 +61,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/biomejs.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://biomejs.dev/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

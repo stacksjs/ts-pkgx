@@ -6,14 +6,14 @@
 
 - **Domain**: `ctop.sh`
 - **Name**: `ctop`
-- **Homepage**: Not specified
+- **Homepage**: https://bcicen.github.io/ctop/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ctop.sh/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ctop
+launchpad install ctop.sh
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ctop -- $SHELL -i
+sh <(curl https://pkgx.sh) +ctop.sh@0.7.7 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.18`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ctop.sh/package.yml)
-- [Homepage](#)
+- [Homepage](https://bcicen.github.io/ctop/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

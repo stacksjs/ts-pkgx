@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install counterfeiter
+launchpad install github.com/maxbrunsfeld/counterfeiter
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) counterfeiter -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/maxbrunsfeld/counterfeiter@6.12.0 -- $SHELL -i
 ```
 
 ## Dependencies

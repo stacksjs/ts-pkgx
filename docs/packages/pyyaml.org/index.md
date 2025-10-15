@@ -1,12 +1,12 @@
-# pyyaml.org
+# pyyaml
 
 > Canonical source repository for LibYAML
 
 ## Package Information
 
 - **Domain**: `pyyaml.org`
-- **Name**: `pyyaml.org`
-- **Homepage**: Not specified
+- **Name**: `pyyaml`
+- **Homepage**: http://pyyaml.org/wiki/LibYAML
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pyyaml.org/package.yml)
 
 ## Installation
@@ -46,7 +46,7 @@ sh <(curl https://pkgx.sh) +pyyaml.org@0.2.5 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['pyyaml.org']
+const pkg = pantry.pyyaml
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pyyaml.org/package.yml)
-- [Homepage](#)
+- [Homepage](http://pyyaml.org/wiki/LibYAML)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

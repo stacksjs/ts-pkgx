@@ -1,12 +1,12 @@
-# modal.com
+# modal
 
 > Python client library for Modal
 
 ## Package Information
 
 - **Domain**: `modal.com`
-- **Name**: `modal.com`
-- **Homepage**: Not specified
+- **Name**: `modal`
+- **Homepage**: https://modal.com/docs
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/modal.com/package.yml)
 
 ## Installation
@@ -211,7 +211,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['modal.com']
+const pkg = pantry.modal
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -221,7 +221,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/modal.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://modal.com/docs)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

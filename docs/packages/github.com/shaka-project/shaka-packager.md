@@ -1,12 +1,12 @@
-# github.com/shaka-project/shaka-packager
+# shaka-packager
 
 > A media packaging and development framework for VOD and Live DASH and HLS applications, supporting Common Encryption for Widevine and other DRM Systems.
 
 ## Package Information
 
 - **Domain**: `github.com/shaka-project/shaka-packager`
-- **Name**: `github.com/shaka-project/shaka-packager`
-- **Homepage**: Not specified
+- **Name**: `shaka-packager`
+- **Homepage**: https://shaka-project.github.io/shaka-packager/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/shaka-project/shaka-packager/package.yml)
 
 ## Installation
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/shaka-project/shaka-packager']
+const pkg = pantry['shaka-packager']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/shaka-project/shaka-packager/package.yml)
-- [Homepage](#)
+- [Homepage](https://shaka-project.github.io/shaka-packager/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

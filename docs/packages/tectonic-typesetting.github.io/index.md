@@ -6,14 +6,14 @@
 
 - **Domain**: `tectonic-typesetting.github.io`
 - **Name**: `tectonic`
-- **Homepage**: Not specified
+- **Homepage**: https://tectonic-typesetting.github.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tectonic-typesetting.github.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install tectonic
+launchpad install tectonic-typesetting.github.io
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tectonic -- $SHELL -i
+sh <(curl https://pkgx.sh) +tectonic-typesetting.github.io@0.15.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tectonic-typesetting.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://tectonic-typesetting.github.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

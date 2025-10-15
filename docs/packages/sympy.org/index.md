@@ -1,12 +1,12 @@
-# sympy.org
+# sympy
 
 > A computer algebra system written in pure Python
 
 ## Package Information
 
 - **Domain**: `sympy.org`
-- **Name**: `sympy.org`
-- **Homepage**: Not specified
+- **Name**: `sympy`
+- **Homepage**: https://sympy.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sympy.org/package.yml)
 
 ## Installation
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['sympy.org']
+const pkg = pantry.sympy
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sympy.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://sympy.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

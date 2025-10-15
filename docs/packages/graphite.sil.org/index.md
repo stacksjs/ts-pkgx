@@ -6,14 +6,14 @@
 
 - **Domain**: `graphite.sil.org`
 - **Name**: `gr2fonttest`
-- **Homepage**: Not specified
+- **Homepage**: https://graphite.sil.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/graphite.sil.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gr2fonttest
+launchpad install graphite.sil.org
 ```
 
 ## Programs
@@ -37,8 +37,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gr2fonttest -- $SHELL -i
+sh <(curl https://pkgx.sh) +graphite.sil.org@1.3.14 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@^3`
+- `freetype.org`
 
 ## Usage Examples
 
@@ -56,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/graphite.sil.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://graphite.sil.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

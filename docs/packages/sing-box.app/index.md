@@ -6,14 +6,14 @@
 
 - **Domain**: `sing-box.app`
 - **Name**: `sing-box`
-- **Homepage**: Not specified
+- **Homepage**: https://sing-box.sagernet.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sing-box.app/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sing-box
+launchpad install sing-box.app
 ```
 
 ## Programs
@@ -49,8 +49,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sing-box -- $SHELL -i
+sh <(curl https://pkgx.sh) +sing-box.app@1.12.10 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.20`
 
 ## Usage Examples
 
@@ -68,7 +74,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sing-box.app/package.yml)
-- [Homepage](#)
+- [Homepage](https://sing-box.sagernet.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

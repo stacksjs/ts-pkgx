@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install vals
+launchpad install github.com/helmfile/vals
 ```
 
 ## Programs
@@ -44,8 +44,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) vals -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/helmfile/vals@0.42.3 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 

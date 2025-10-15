@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install cbindgen
+launchpad install mozilla.org/cbindgen
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cbindgen -- $SHELL -i
+sh <(curl https://pkgx.sh) +mozilla.org/cbindgen@0.29.0 -- $SHELL -i
 ```
 
 ## Dependencies

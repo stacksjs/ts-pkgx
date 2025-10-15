@@ -6,25 +6,19 @@
 
 - **Domain**: `github.com/squidfunk/mkdocs-material`
 - **Name**: `squidfunk/mkdocs-material`
-- **Homepage**: Not specified
+- **Homepage**: https://squidfunk.github.io/mkdocs-material/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/squidfunk/mkdocs-material/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mkdocs
+launchpad install github.com/squidfunk/mkdocs-material
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `mkdocs`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `mkdocs`
 
@@ -56,7 +50,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mkdocs -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/squidfunk/mkdocs-material@9.6.21 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -72,7 +66,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.mkdocs
+const pkg = pantry['squidfunk/mkdocs-material']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -82,7 +76,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/squidfunk/mkdocs-material/package.yml)
-- [Homepage](#)
+- [Homepage](https://squidfunk.github.io/mkdocs-material/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

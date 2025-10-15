@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install jetp
+launchpad install jetporch.com
 ```
 
 ## Programs
@@ -37,8 +37,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) jetp -- $SHELL -i
+sh <(curl https://pkgx.sh) +jetporch.com@0.0.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `openssl.org`
+- `zlib.net`
 
 ## Usage Examples
 

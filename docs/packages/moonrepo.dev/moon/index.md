@@ -6,14 +6,14 @@
 
 - **Domain**: `moonrepo.dev/moon`
 - **Name**: `moon`
-- **Homepage**: Not specified
+- **Homepage**: https://moonrepo.dev/moon
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/moonrepo.dev/moon/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install moon
+launchpad install moonrepo.dev/moon
 ```
 
 ## Programs
@@ -52,7 +52,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) moon -- $SHELL -i
+sh <(curl https://pkgx.sh) +moonrepo.dev/moon@1.41.4 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -71,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/moonrepo.dev/moon/package.yml)
-- [Homepage](#)
+- [Homepage](https://moonrepo.dev/moon)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

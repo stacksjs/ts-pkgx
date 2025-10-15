@@ -1,11 +1,11 @@
-# text-generation-webui
+# text generation web UI
 
 > A Gradio web UI for Large Language Models with support for multiple inference backends.
 
 ## Package Information
 
 - **Domain**: `github.com/oobabooga/text-generation-webui`
-- **Name**: `text-generation-webui`
+- **Name**: `text generation web UI`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/oobabooga/text-generation-webui/package.yml)
 
@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install text-generation-webui
+launchpad install github.com/oobabooga/text-generation-webui
 ```
 
 ## Programs
@@ -46,7 +46,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) text-generation-webui -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/oobabooga/text-generation-webui@3.14.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['text-generation-webui']
+const pkg = pantry['text generation web UI']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install xb-tool
+launchpad install github.com/hughsie/libxmlb
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) xb-tool -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/hughsie/libxmlb@0.3.24 -- $SHELL -i
 ```
 
 ## Dependencies

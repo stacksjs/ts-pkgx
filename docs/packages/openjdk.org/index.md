@@ -1,12 +1,12 @@
-# openjdk.org
+# openjdk
 
 > Development kit for the Java programming language
 
 ## Package Information
 
 - **Domain**: `openjdk.org`
-- **Name**: `openjdk.org`
-- **Homepage**: Not specified
+- **Name**: `openjdk`
+- **Homepage**: https://openjdk.java.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openjdk.org/package.yml)
 
 ## Installation
@@ -98,7 +98,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['openjdk.org']
+const pkg = pantry.openjdk
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -108,7 +108,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openjdk.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://openjdk.java.net/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

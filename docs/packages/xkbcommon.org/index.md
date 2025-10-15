@@ -6,14 +6,14 @@
 
 - **Domain**: `xkbcommon.org`
 - **Name**: `xkbcli`
-- **Homepage**: Not specified
+- **Homepage**: https://xkbcommon.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/xkbcommon.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install xkbcli
+launchpad install xkbcommon.org
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) xkbcli -- $SHELL -i
+sh <(curl https://pkgx.sh) +xkbcommon.org@1.12.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/xkbcommon.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://xkbcommon.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install mockgen
+launchpad install go.uber.org/mock/mockgen
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mockgen -- $SHELL -i
+sh <(curl https://pkgx.sh) +go.uber.org/mock/mockgen@0.6.0 -- $SHELL -i
 ```
 
 ## Dependencies

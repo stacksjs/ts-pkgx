@@ -6,14 +6,14 @@
 
 - **Domain**: `tinygo.org`
 - **Name**: `tinygo`
-- **Homepage**: Not specified
+- **Homepage**: https://tinygo.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tinygo.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install tinygo
+launchpad install tinygo.org
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tinygo -- $SHELL -i
+sh <(curl https://pkgx.sh) +tinygo.org@0.39.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -46,12 +46,6 @@ sh <(curl https://pkgx.sh) tinygo -- $SHELL -i
 This package depends on:
 
 - `go.dev`
-
-## Related Packages
-
-These packages work well with tinygo:
-
-- [`llvm.org`](../llvm.org/index.md) - The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.
 
 ## Usage Examples
 
@@ -69,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tinygo.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://tinygo.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

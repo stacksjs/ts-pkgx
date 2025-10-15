@@ -6,14 +6,14 @@
 
 - **Domain**: `info-zip.org/zip`
 - **Name**: `zip`
-- **Homepage**: Not specified
+- **Homepage**: https://infozip.sourceforge.net/Zip.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/info-zip.org/zip/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install zip
+launchpad install info-zip.org/zip
 ```
 
 ## Programs
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/info-zip.org/zip/package.yml)
-- [Homepage](#)
+- [Homepage](https://infozip.sourceforge.net/Zip.html)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

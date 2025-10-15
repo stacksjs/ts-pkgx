@@ -6,14 +6,14 @@
 
 - **Domain**: `sourceforge.net/xmlstar`
 - **Name**: `XMLStarlet`
-- **Homepage**: Not specified
+- **Homepage**: https://xmlstar.sourceforge.net/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/xmlstar/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install XMLStarlet
+launchpad install sourceforge.net/xmlstar
 ```
 
 ## Programs
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sourceforge.net/xmlstar/package.yml)
-- [Homepage](#)
+- [Homepage](https://xmlstar.sourceforge.net/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

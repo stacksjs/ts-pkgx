@@ -6,14 +6,14 @@
 
 - **Domain**: `wezfurlong.org/wezterm`
 - **Name**: `wezterm`
-- **Homepage**: Not specified
+- **Homepage**: https://wezfurlong.org/wezterm/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wezfurlong.org/wezterm/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install wezterm
+launchpad install wezfurlong.org/wezterm
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) wezterm -- $SHELL -i
+sh <(curl https://pkgx.sh) +wezfurlong.org/wezterm@2024.2.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/wezfurlong.org/wezterm/package.yml)
-- [Homepage](#)
+- [Homepage](https://wezfurlong.org/wezterm/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

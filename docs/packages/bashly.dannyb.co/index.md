@@ -6,14 +6,14 @@
 
 - **Domain**: `bashly.dannyb.co`
 - **Name**: `bashly`
-- **Homepage**: Not specified
+- **Homepage**: https://bashly.dev
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bashly.dannyb.co/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install bashly
+launchpad install bashly.dannyb.co
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) bashly -- $SHELL -i
+sh <(curl https://pkgx.sh) +bashly.dannyb.co@1.3.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -49,12 +49,6 @@ This package depends on:
 
 - `ruby-lang.org^3.1`
 - `rubygems.org`
-
-## Related Packages
-
-These packages work well with bashly:
-
-- [`gnu.org/bash`](../gnu.org/bash/index.md) - Bourne-Again SHell, a UNIX command interpreter
 
 ## Usage Examples
 
@@ -72,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/bashly.dannyb.co/package.yml)
-- [Homepage](#)
+- [Homepage](https://bashly.dev)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `libgit2.org`
 - **Name**: `git2`
-- **Homepage**: Not specified
+- **Homepage**: https://libgit2.github.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libgit2.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install git2
+launchpad install libgit2.org
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) git2 -- $SHELL -i
+sh <(curl https://pkgx.sh) +libgit2.org@1.9.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libgit2.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://libgit2.github.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

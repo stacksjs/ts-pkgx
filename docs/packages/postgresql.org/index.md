@@ -1,12 +1,12 @@
-# postgresql.org
+# postgresql
 
 > Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
 
 ## Package Information
 
 - **Domain**: `postgresql.org`
-- **Name**: `postgresql.org`
-- **Homepage**: Not specified
+- **Name**: `postgresql`
+- **Homepage**: https://www.postgresql.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/postgresql.org/package.yml)
 
 ## Installation
@@ -87,7 +87,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['postgresql.org']
+const pkg = pantry.postgresql
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -97,7 +97,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/postgresql.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.postgresql.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

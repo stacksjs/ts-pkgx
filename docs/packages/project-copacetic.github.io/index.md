@@ -6,14 +6,14 @@
 
 - **Domain**: `project-copacetic.github.io`
 - **Name**: `copa`
-- **Homepage**: Not specified
+- **Homepage**: https://project-copacetic.github.io/copacetic/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/project-copacetic.github.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install copa
+launchpad install project-copacetic.github.io
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) copa -- $SHELL -i
+sh <(curl https://pkgx.sh) +project-copacetic.github.io@0.11.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/project-copacetic.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://project-copacetic.github.io/copacetic/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

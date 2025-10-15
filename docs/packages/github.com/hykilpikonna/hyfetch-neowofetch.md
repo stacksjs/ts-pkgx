@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install neowofetch
+launchpad install github.com/hykilpikonna/hyfetch/neowofetch
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) neowofetch -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/hykilpikonna/hyfetch/neowofetch@2.0.2 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -6,25 +6,19 @@
 
 - **Domain**: `openinterpreter.com`
 - **Name**: `open-interpreter`
-- **Homepage**: Not specified
+- **Homepage**: http://openinterpreter.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openinterpreter.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install interpreter
+launchpad install openinterpreter.com
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `interpreter`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `interpreter`
 
@@ -47,7 +41,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) interpreter -- $SHELL -i
+sh <(curl https://pkgx.sh) +openinterpreter.com@0.4.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.interpreter
+const pkg = pantry['open-interpreter']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -73,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openinterpreter.com/package.yml)
-- [Homepage](#)
+- [Homepage](http://openinterpreter.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

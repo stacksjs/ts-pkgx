@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install ia
+launchpad install github.com/jjjake/internetarchive
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ia -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/jjjake/internetarchive@5.6.1 -- $SHELL -i
 ```
 
 ## Dependencies

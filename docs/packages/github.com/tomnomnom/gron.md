@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install gron
+launchpad install github.com/tomnomnom/gron
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gron -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/tomnomnom/gron@0.7.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 

@@ -1,19 +1,19 @@
-# xmlif
+# xml
 
 > Convert XML to another format (based on XSL or other tools)
 
 ## Package Information
 
 - **Domain**: `pagure.io/xmlto`
-- **Name**: `xmlif`
-- **Homepage**: Not specified
+- **Name**: `xml`
+- **Homepage**: https://pagure.io/xmlto/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pagure.io/xmlto/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install xmlif
+launchpad install pagure.io/xmlto
 ```
 
 ## Programs
@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.xmlif
+const pkg = pantry.xml
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pagure.io/xmlto/package.yml)
-- [Homepage](#)
+- [Homepage](https://pagure.io/xmlto/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

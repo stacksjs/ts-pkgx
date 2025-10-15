@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/rust-kanban`
 - **Name**: `rust-kanban`
-- **Homepage**: Not specified
+- **Homepage**: https://crates.io/crates/rust-kanban
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rust-kanban/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install rust-kanban
+launchpad install crates.io/rust-kanban
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rust-kanban -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/rust-kanban@0.10.5 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rust-kanban/package.yml)
-- [Homepage](#)
+- [Homepage](https://crates.io/crates/rust-kanban)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

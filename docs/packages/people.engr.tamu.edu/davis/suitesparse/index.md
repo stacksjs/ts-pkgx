@@ -6,14 +6,14 @@
 
 - **Domain**: `people.engr.tamu.edu/davis/suitesparse`
 - **Name**: `suite-sparse`
-- **Homepage**: Not specified
+- **Homepage**: https://people.engr.tamu.edu/davis/suitesparse.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/people.engr.tamu.edu/davis/suitesparse/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install suite-sparse
+launchpad install people.engr.tamu.edu/davis/suitesparse
 ```
 
 ## Programs
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/people.engr.tamu.edu/davis/suitesparse/package.yml)
-- [Homepage](#)
+- [Homepage](https://people.engr.tamu.edu/davis/suitesparse.html)
 - [Back to Package Catalog](../../../../package-catalog.md)
 
 ---

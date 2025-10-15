@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install skate
+launchpad install charm.sh/skate
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) skate -- $SHELL -i
+sh <(curl https://pkgx.sh) +charm.sh/skate@1.0.1 -- $SHELL -i
 ```
 
 ## Dependencies

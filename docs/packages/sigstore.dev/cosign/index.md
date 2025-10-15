@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install cosign
+launchpad install sigstore.dev/cosign
 ```
 
 ## Programs
@@ -40,8 +40,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cosign -- $SHELL -i
+sh <(curl https://pkgx.sh) +sigstore.dev/cosign@3.0.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@~1.24.3`
 
 ## Usage Examples
 

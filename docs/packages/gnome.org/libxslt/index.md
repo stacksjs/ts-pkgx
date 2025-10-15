@@ -6,14 +6,14 @@
 
 - **Domain**: `gnome.org/libxslt`
 - **Name**: `xslt`
-- **Homepage**: Not specified
+- **Homepage**: http://xmlsoft.org/XSLT/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/libxslt/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install xslt
+launchpad install gnome.org/libxslt
 ```
 
 ## Programs
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/libxslt/package.yml)
-- [Homepage](#)
+- [Homepage](http://xmlsoft.org/XSLT/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

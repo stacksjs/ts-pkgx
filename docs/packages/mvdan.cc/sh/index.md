@@ -6,14 +6,14 @@
 
 - **Domain**: `mvdan.cc/sh`
 - **Name**: `shfmt`
-- **Homepage**: Not specified
+- **Homepage**: https://pkg.go.dev/mvdan.cc/sh/v3
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mvdan.cc/sh/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install shfmt
+launchpad install mvdan.cc/sh
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) shfmt -- $SHELL -i
+sh <(curl https://pkgx.sh) +mvdan.cc/sh@3.12.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mvdan.cc/sh/package.yml)
-- [Homepage](#)
+- [Homepage](https://pkg.go.dev/mvdan.cc/sh/v3)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

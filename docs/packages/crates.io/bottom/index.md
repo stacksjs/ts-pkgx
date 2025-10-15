@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/bottom`
 - **Name**: `btm`
-- **Homepage**: Not specified
+- **Homepage**: https://clementtsang.github.io/bottom/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/bottom/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install btm
+launchpad install crates.io/bottom
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) btm -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/bottom@0.11.2 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -58,7 +58,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/bottom/package.yml)
-- [Homepage](#)
+- [Homepage](https://clementtsang.github.io/bottom/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

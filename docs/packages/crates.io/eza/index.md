@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/eza`
 - **Name**: `eza`
-- **Homepage**: Not specified
+- **Homepage**: https://eza.rocks
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/eza/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install eza
+launchpad install crates.io/eza
 ```
 
 ## Programs
@@ -54,7 +54,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) eza -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/eza@0.23.4 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -79,7 +79,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/eza/package.yml)
-- [Homepage](#)
+- [Homepage](https://eza.rocks)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

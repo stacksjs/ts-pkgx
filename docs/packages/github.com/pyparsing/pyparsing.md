@@ -1,11 +1,11 @@
-# github.com/pyparsing/pyparsing
+# pyparsing
 
 > Python library for creating PEG parsers
 
 ## Package Information
 
 - **Domain**: `github.com/pyparsing/pyparsing`
-- **Name**: `github.com/pyparsing/pyparsing`
+- **Name**: `pyparsing`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/pyparsing/pyparsing/package.yml)
 
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/pyparsing/pyparsing']
+const pkg = pantry.pyparsing
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

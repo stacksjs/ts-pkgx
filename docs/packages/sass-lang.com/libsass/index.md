@@ -1,12 +1,12 @@
-# sass-lang.com/libsass
+# libsass
 
 > A C/C++ implementation of a Sass compiler
 
 ## Package Information
 
 - **Domain**: `sass-lang.com/libsass`
-- **Name**: `sass-lang.com/libsass`
-- **Homepage**: Not specified
+- **Name**: `libsass`
+- **Homepage**: https://sass-lang.com/libsass
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/sass-lang.com/libsass/package.yml)
 
 ## Installation
@@ -40,13 +40,21 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +sass-lang.com/libsass@3.6.6 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/autoconf`
+- `gnu.org/automake`
+- `gnu.org/libtool`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['sass-lang.com/libsass']
+const pkg = pantry.libsass
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -56,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/sass-lang.com/libsass/package.yml)
-- [Homepage](#)
+- [Homepage](https://sass-lang.com/libsass)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

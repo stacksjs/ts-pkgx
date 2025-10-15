@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/tmux/tmux`
 - **Name**: `tmux`
-- **Homepage**: Not specified
+- **Homepage**: https://tmux.github.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/tmux/tmux/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install tmux
+launchpad install github.com/tmux/tmux
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tmux -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/tmux/tmux@3.5a -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/tmux/tmux/package.yml)
-- [Homepage](#)
+- [Homepage](https://tmux.github.io/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

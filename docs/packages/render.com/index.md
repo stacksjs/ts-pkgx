@@ -6,14 +6,14 @@
 
 - **Domain**: `render.com`
 - **Name**: `render`
-- **Homepage**: Not specified
+- **Homepage**: https://render.com/docs/cli
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/render.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install render
+launchpad install render.com
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) render -- $SHELL -i
+sh <(curl https://pkgx.sh) +render.com@0.1.11 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `deno.land@^1.30`
 
 ## Usage Examples
 
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/render.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://render.com/docs/cli)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

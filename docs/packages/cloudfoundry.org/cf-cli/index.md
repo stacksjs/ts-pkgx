@@ -6,14 +6,14 @@
 
 - **Domain**: `cloudfoundry.org/cf-cli`
 - **Name**: `cf`
-- **Homepage**: Not specified
+- **Homepage**: https://ee.lbl.gov/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cloudfoundry.org/cf-cli/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cf
+launchpad install cloudfoundry.org/cf-cli
 ```
 
 ## Programs
@@ -43,8 +43,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cf -- $SHELL -i
+sh <(curl https://pkgx.sh) +cloudfoundry.org/cf-cli@8.16.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@^3`
+- `go.dev@=1.23.1`
 
 ## Usage Examples
 
@@ -62,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cloudfoundry.org/cf-cli/package.yml)
-- [Homepage](#)
+- [Homepage](https://ee.lbl.gov/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

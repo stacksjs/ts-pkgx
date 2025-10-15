@@ -6,14 +6,14 @@
 
 - **Domain**: `qemu.org`
 - **Name**: `qemu`
-- **Homepage**: Not specified
+- **Homepage**: https://www.qemu.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/qemu.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install qemu
+launchpad install qemu.org
 ```
 
 ## Programs
@@ -115,7 +115,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/qemu.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.qemu.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

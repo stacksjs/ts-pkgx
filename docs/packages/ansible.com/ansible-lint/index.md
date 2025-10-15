@@ -6,14 +6,14 @@
 
 - **Domain**: `ansible.com/ansible-lint`
 - **Name**: `ansible-lint`
-- **Homepage**: Not specified
+- **Homepage**: https://ansible-lint.readthedocs.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ansible.com/ansible-lint/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ansible-lint
+launchpad install ansible.com/ansible-lint
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ansible-lint -- $SHELL -i
+sh <(curl https://pkgx.sh) +ansible.com/ansible-lint@25.9.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ansible.com/ansible-lint/package.yml)
-- [Homepage](#)
+- [Homepage](https://ansible-lint.readthedocs.io/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

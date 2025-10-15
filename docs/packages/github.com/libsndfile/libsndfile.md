@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/libsndfile/libsndfile`
 - **Name**: `sndfile`
-- **Homepage**: Not specified
+- **Homepage**: https://libsndfile.github.io/libsndfile/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libsndfile/libsndfile/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sndfile
+launchpad install github.com/libsndfile/libsndfile
 ```
 
 ## Programs
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libsndfile/libsndfile/package.yml)
-- [Homepage](#)
+- [Homepage](https://libsndfile.github.io/libsndfile/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

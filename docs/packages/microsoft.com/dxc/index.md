@@ -1,11 +1,11 @@
-# microsoft.com/dxc
+# dxc
 
 > This repo hosts the source for the DirectX Shader Compiler which is based on LLVM/Clang.
 
 ## Package Information
 
 - **Domain**: `microsoft.com/dxc`
-- **Name**: `microsoft.com/dxc`
+- **Name**: `dxc`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/dxc/package.yml)
 
@@ -57,7 +57,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['microsoft.com/dxc']
+const pkg = pantry.dxc
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

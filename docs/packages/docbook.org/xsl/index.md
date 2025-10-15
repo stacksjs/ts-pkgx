@@ -13,18 +13,12 @@
 
 ```bash
 # Install with launchpad
-launchpad install dbtoepub
+launchpad install docbook.org/xsl
 ```
 
 ## Programs
 
 This package provides the following executable programs:
-
-- `dbtoepub`
-
-## Aliases
-
-This package can also be accessed using these aliases:
 
 - `dbtoepub`
 
@@ -43,7 +37,7 @@ This package can also be accessed using these aliases:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dbtoepub -- $SHELL -i
+sh <(curl https://pkgx.sh) +docbook.org/xsl@1.79.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -59,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.dbtoepub
+const pkg = pantry['docbook-xsl']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

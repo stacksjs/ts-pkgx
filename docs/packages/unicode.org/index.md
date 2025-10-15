@@ -1,12 +1,12 @@
-# unicode.org
+# unicode
 
 > The home of the ICU project source code.
 
 ## Package Information
 
 - **Domain**: `unicode.org`
-- **Name**: `unicode.org`
-- **Homepage**: Not specified
+- **Name**: `unicode`
+- **Homepage**: https://icu.unicode.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/unicode.org/package.yml)
 
 ## Installation
@@ -52,13 +52,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +unicode.org@77.1.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['unicode.org']
+const pkg = pantry.unicode
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -68,7 +74,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/unicode.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://icu.unicode.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install xcodes
+launchpad install github.com/XcodesOrg/xcodes
 ```
 
 ## Programs
@@ -37,14 +37,8 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) xcodes -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/XcodesOrg/xcodes@1.6.2 -- $SHELL -i
 ```
-
-## Related Packages
-
-These packages work well with xcodes:
-
-- [`aria2.github.io`](../../aria2.github.io/index.md) - aria2 is a lightweight multi-protocol & multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.
 
 ## Usage Examples
 

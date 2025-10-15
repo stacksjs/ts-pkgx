@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install jnv
+launchpad install crates.io/jnv
 ```
 
 ## Programs
@@ -38,8 +38,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) jnv -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/jnv@0.6.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/autoconf@2`
+- `gnu.org/automake@1`
+- `gnu.org/libtool@2`
 
 ## Usage Examples
 

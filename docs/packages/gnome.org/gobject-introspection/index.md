@@ -6,14 +6,14 @@
 
 - **Domain**: `gnome.org/gobject-introspection`
 - **Name**: `g-ir`
-- **Homepage**: Not specified
+- **Homepage**: https://gi.readthedocs.io/en/latest/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/gobject-introspection/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install g-ir
+launchpad install gnome.org/gobject-introspection
 ```
 
 ## Programs
@@ -71,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnome.org/gobject-introspection/package.yml)
-- [Homepage](#)
+- [Homepage](https://gi.readthedocs.io/en/latest/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

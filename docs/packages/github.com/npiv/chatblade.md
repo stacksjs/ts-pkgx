@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install chatblade
+launchpad install github.com/npiv/chatblade
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) chatblade -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/npiv/chatblade@0.7.0 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -6,14 +6,14 @@
 
 - **Domain**: `maturin.rs`
 - **Name**: `maturin`
-- **Homepage**: Not specified
+- **Homepage**: https://maturin.rs
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/maturin.rs/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install maturin
+launchpad install maturin.rs
 ```
 
 ## Programs
@@ -42,7 +42,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) maturin -- $SHELL -i
+sh <(curl https://pkgx.sh) +maturin.rs@1.9.6 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -61,7 +61,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/maturin.rs/package.yml)
-- [Homepage](#)
+- [Homepage](https://maturin.rs)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

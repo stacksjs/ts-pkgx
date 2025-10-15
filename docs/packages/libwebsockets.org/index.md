@@ -1,12 +1,12 @@
-# libwebsockets.org
+# libwebsockets
 
 > canonical libwebsockets.org networking library
 
 ## Package Information
 
 - **Domain**: `libwebsockets.org`
-- **Name**: `libwebsockets.org`
-- **Homepage**: Not specified
+- **Name**: `libwebsockets`
+- **Homepage**: https://libwebsockets.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/libwebsockets.org/package.yml)
 
 ## Installation
@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['libwebsockets.org']
+const pkg = pantry.libwebsockets
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/libwebsockets.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://libwebsockets.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `git-quick-stats.sh`
 - **Name**: `git-quick-stats`
-- **Homepage**: Not specified
+- **Homepage**: https://git-quick-stats.sh/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/git-quick-stats.sh/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install git-quick-stats
+launchpad install git-quick-stats.sh
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) git-quick-stats -- $SHELL -i
+sh <(curl https://pkgx.sh) +git-quick-stats.sh@2.8.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -49,13 +49,6 @@ This package depends on:
 - `git-scm.org`
 - `gnu.org/bash`
 - `linux:github.com/util-linux/util-linux`
-
-## Related Packages
-
-These packages work well with git-quick-stats:
-
-- [`gnu.org/coreutils`](../gnu.org/coreutils/index.md)
-- [`invisible-island.net/ncurses`](../invisible-island.net/ncurses/index.md) - Text-based UI library
 
 ## Usage Examples
 
@@ -73,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/git-quick-stats.sh/package.yml)
-- [Homepage](#)
+- [Homepage](https://git-quick-stats.sh/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

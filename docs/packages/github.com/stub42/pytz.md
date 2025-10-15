@@ -1,11 +1,11 @@
-# github.com/stub42/pytz
+# pytz
 
 > pytz Python historical timezone library and database
 
 ## Package Information
 
 - **Domain**: `github.com/stub42/pytz`
-- **Name**: `github.com/stub42/pytz`
+- **Name**: `pytz`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/stub42/pytz/package.yml)
 
@@ -52,7 +52,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/stub42/pytz']
+const pkg = pantry.pytz
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

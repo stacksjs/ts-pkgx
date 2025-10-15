@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install enc
+launchpad install github.com/life4/enc
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) enc -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/life4/enc@1.1.4 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.18`
 
 ## Usage Examples
 

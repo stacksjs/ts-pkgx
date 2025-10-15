@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install tiny
+launchpad install crates.io/tiny
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tiny -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/tiny@0.13.0 -- $SHELL -i
 ```
 
 ## Dependencies

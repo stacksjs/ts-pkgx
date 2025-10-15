@@ -8,7 +8,7 @@
  *
  * @install `launchpad install docker.com/machine`
  * @homepage https://docs.gitlab.com/runner/executors/docker_machine.html
- * @dependencies `gnu.org/automake`, `go.dev`, `curl.se`, ... (+1 more)
+ * @dependencies `gnu.org/automake`, `go.dev`, `linux:curl.se` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -58,12 +58,12 @@ export const dockercommachinePackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'gnu.org/automake',
     'go.dev',
-    'curl.se',
-    'if@linux',
+    'linux:curl.se',
   ] as const,
   /**
    * Available versions from newest to oldest.

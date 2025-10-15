@@ -6,14 +6,14 @@
 
 - **Domain**: `mergestat.com/mergestat-lite`
 - **Name**: `mergestat`
-- **Homepage**: Not specified
+- **Homepage**: https://mergestat.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mergestat.com/mergestat-lite/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mergestat
+launchpad install mergestat.com/mergestat-lite
 ```
 
 ## Programs
@@ -37,8 +37,18 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mergestat -- $SHELL -i
+sh <(curl https://pkgx.sh) +mergestat.com/mergestat-lite@0.6.2 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
+- `cmake.org`
+- `libgit2.org@~1.7`
+- `openssl.org`
+- `python.org@^3`
 
 ## Usage Examples
 
@@ -56,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mergestat.com/mergestat-lite/package.yml)
-- [Homepage](#)
+- [Homepage](https://mergestat.com/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

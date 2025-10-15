@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install PortAudio
+launchpad install portaudio.com
 ```
 
 ## Programs

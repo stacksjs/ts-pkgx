@@ -1,12 +1,12 @@
-# wireshark.org
+# wireshark
 
 > Network analyzer and capture tool - without graphical user interface
 
 ## Package Information
 
 - **Domain**: `wireshark.org`
-- **Name**: `wireshark.org`
-- **Homepage**: Not specified
+- **Name**: `wireshark`
+- **Homepage**: https://www.wireshark.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/wireshark.org/package.yml)
 
 ## Installation
@@ -83,7 +83,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['wireshark.org']
+const pkg = pantry.wireshark
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -93,7 +93,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/wireshark.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.wireshark.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

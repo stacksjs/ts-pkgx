@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install diskus
+launchpad install crates.io/diskus
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) diskus -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/diskus@0.8.0 -- $SHELL -i
 ```
 
 ## Usage Examples

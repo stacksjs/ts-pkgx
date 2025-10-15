@@ -6,14 +6,14 @@
 
 - **Domain**: `authzed.com/spicedb`
 - **Name**: `spicedb`
-- **Homepage**: Not specified
+- **Homepage**: https://authzed.com/docs
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/authzed.com/spicedb/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install spicedb
+launchpad install authzed.com/spicedb
 ```
 
 ## Programs
@@ -43,8 +43,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) spicedb -- $SHELL -i
+sh <(curl https://pkgx.sh) +authzed.com/spicedb@1.46.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.22`
 
 ## Usage Examples
 
@@ -62,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/authzed.com/spicedb/package.yml)
-- [Homepage](#)
+- [Homepage](https://authzed.com/docs)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

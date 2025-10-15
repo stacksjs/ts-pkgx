@@ -6,14 +6,14 @@
 
 - **Domain**: `pandoc.org/crossref`
 - **Name**: `pandoc-crossref`
-- **Homepage**: Not specified
+- **Homepage**: https://lierdakil.github.io/pandoc-crossref/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pandoc.org/crossref/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pandoc-crossref
+launchpad install pandoc.org/crossref
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pandoc-crossref -- $SHELL -i
+sh <(curl https://pkgx.sh) +pandoc.org/crossref@0.3.22 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pandoc.org/crossref/package.yml)
-- [Homepage](#)
+- [Homepage](https://lierdakil.github.io/pandoc-crossref/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install reshape
+launchpad install fabianlindfors.se/reshape
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) reshape -- $SHELL -i
+sh <(curl https://pkgx.sh) +fabianlindfors.se/reshape@0.7.0 -- $SHELL -i
 ```
 
 ## Usage Examples

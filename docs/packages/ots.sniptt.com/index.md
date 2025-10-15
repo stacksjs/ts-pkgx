@@ -6,14 +6,14 @@
 
 - **Domain**: `ots.sniptt.com`
 - **Name**: `ots`
-- **Homepage**: Not specified
+- **Homepage**: https://ots.sniptt.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ots.sniptt.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ots
+launchpad install ots.sniptt.com
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ots -- $SHELL -i
+sh <(curl https://pkgx.sh) +ots.sniptt.com@0.3.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.19`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ots.sniptt.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://ots.sniptt.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

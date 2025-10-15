@@ -6,14 +6,14 @@
 
 - **Domain**: `ninja-build.org`
 - **Name**: `ninja`
-- **Homepage**: Not specified
+- **Homepage**: https://ninja-build.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/ninja-build.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ninja
+launchpad install ninja-build.org
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ninja -- $SHELL -i
+sh <(curl https://pkgx.sh) +ninja-build.org@1.13.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@3`
 
 ## Usage Examples
 
@@ -57,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/ninja-build.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://ninja-build.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

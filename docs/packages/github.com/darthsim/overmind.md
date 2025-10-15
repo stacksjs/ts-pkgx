@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install overmind
+launchpad install github.com/darthsim/overmind
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) overmind -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/darthsim/overmind@2.5.1 -- $SHELL -i
 ```
 
 ## Dependencies

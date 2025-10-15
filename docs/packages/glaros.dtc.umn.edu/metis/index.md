@@ -6,14 +6,14 @@
 
 - **Domain**: `glaros.dtc.umn.edu/metis`
 - **Name**: `metis`
-- **Homepage**: Not specified
+- **Homepage**: http://glaros.dtc.umn.edu/gkhome/views/metis
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/glaros.dtc.umn.edu/metis/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install metis
+launchpad install glaros.dtc.umn.edu/metis
 ```
 
 ## Programs
@@ -45,6 +45,13 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +glaros.dtc.umn.edu/metis@5.2.1.2 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/make`
+- `cmake.org`
+
 ## Usage Examples
 
 ```typescript
@@ -61,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/glaros.dtc.umn.edu/metis/package.yml)
-- [Homepage](#)
+- [Homepage](http://glaros.dtc.umn.edu/gkhome/views/metis)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

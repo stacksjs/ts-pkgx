@@ -6,14 +6,14 @@
 
 - **Domain**: `youtube-dl.org`
 - **Name**: `youtube-dl`
-- **Homepage**: Not specified
+- **Homepage**: https://ytdl-org.github.io/youtube-dl/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/youtube-dl.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install youtube-dl
+launchpad install youtube-dl.org
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) youtube-dl -- $SHELL -i
+sh <(curl https://pkgx.sh) +youtube-dl.org@2023.8.4 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/youtube-dl.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://ytdl-org.github.io/youtube-dl/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

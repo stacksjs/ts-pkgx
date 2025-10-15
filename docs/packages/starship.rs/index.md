@@ -6,14 +6,14 @@
 
 - **Domain**: `starship.rs`
 - **Name**: `starship`
-- **Homepage**: Not specified
+- **Homepage**: https://starship.rs
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/starship.rs/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install starship
+launchpad install starship.rs
 ```
 
 ## Programs
@@ -41,8 +41,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) starship -- $SHELL -i
+sh <(curl https://pkgx.sh) +starship.rs@1.23.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org@>=3.5`
 
 ## Usage Examples
 
@@ -60,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/starship.rs/package.yml)
-- [Homepage](#)
+- [Homepage](https://starship.rs)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

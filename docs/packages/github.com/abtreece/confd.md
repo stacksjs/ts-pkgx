@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install confd
+launchpad install github.com/abtreece/confd
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) confd -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/abtreece/confd@0.30.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install ghq
+launchpad install github.com/x-motemen/ghq
 ```
 
 ## Programs
@@ -38,8 +38,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ghq -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/x-motemen/ghq@1.8.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
 
 ## Usage Examples
 

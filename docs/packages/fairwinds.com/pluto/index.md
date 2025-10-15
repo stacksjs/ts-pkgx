@@ -6,14 +6,14 @@
 
 - **Domain**: `fairwinds.com/pluto`
 - **Name**: `pluto`
-- **Homepage**: Not specified
+- **Homepage**: https://fairwinds.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fairwinds.com/pluto/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pluto
+launchpad install fairwinds.com/pluto
 ```
 
 ## Programs
@@ -41,8 +41,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pluto -- $SHELL -i
+sh <(curl https://pkgx.sh) +fairwinds.com/pluto@5.22.5 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.21`
+- `gnu.org/make`
 
 ## Usage Examples
 
@@ -60,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/fairwinds.com/pluto/package.yml)
-- [Homepage](#)
+- [Homepage](https://fairwinds.com)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/kylef/swiftenv`
 - **Name**: `swiftenv`
-- **Homepage**: Not specified
+- **Homepage**: https://swiftenv.fuller.li/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kylef/swiftenv/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install swiftenv
+launchpad install github.com/kylef/swiftenv
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) swiftenv -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/kylef/swiftenv@1.4.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/kylef/swiftenv/package.yml)
-- [Homepage](#)
+- [Homepage](https://swiftenv.fuller.li/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

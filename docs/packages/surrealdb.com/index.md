@@ -6,14 +6,14 @@
 
 - **Domain**: `surrealdb.com`
 - **Name**: `surreal`
-- **Homepage**: Not specified
+- **Homepage**: https://surrealdb.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/surrealdb.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install surreal
+launchpad install surrealdb.com
 ```
 
 ## Programs
@@ -48,7 +48,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) surreal -- $SHELL -i
+sh <(curl https://pkgx.sh) +surrealdb.com@2023.9.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -73,7 +73,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/surrealdb.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://surrealdb.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `assimp.org`
 - **Name**: `assimp`
-- **Homepage**: Not specified
+- **Homepage**: https://www.assimp.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/assimp.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install assimp
+launchpad install assimp.org
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) assimp -- $SHELL -i
+sh <(curl https://pkgx.sh) +assimp.org@6.0.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/assimp.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.assimp.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

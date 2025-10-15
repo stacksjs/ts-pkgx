@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install fblog
+launchpad install crates.io/fblog
 ```
 
 ## Programs
@@ -39,7 +39,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) fblog -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/fblog@4.16.0 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/lm-sensors/lm-sensors`
 - **Name**: `sensors`
-- **Homepage**: Not specified
+- **Homepage**: https://hwmon.wiki.kernel.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/lm-sensors/lm-sensors/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sensors
+launchpad install github.com/lm-sensors/lm-sensors
 ```
 
 ## Programs
@@ -37,8 +37,16 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sensors -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/lm-sensors/lm-sensors@3.6.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/bison`
+- `github.com/westes/flex`
+- `gnu.org/make`
 
 ## Usage Examples
 
@@ -56,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/lm-sensors/lm-sensors/package.yml)
-- [Homepage](#)
+- [Homepage](https://hwmon.wiki.kernel.org/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

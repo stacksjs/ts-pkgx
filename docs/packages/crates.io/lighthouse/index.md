@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/lighthouse`
 - **Name**: `lighthouse`
-- **Homepage**: Not specified
+- **Homepage**: https://lighthouse.sigmaprime.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/lighthouse/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install lighthouse
+launchpad install crates.io/lighthouse
 ```
 
 ## Programs
@@ -40,7 +40,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) lighthouse -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/lighthouse@7.1.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/lighthouse/package.yml)
-- [Homepage](#)
+- [Homepage](https://lighthouse.sigmaprime.io/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -1,11 +1,11 @@
-# github.com/giampaolo/psutil
+# psutil
 
 > Cross-platform lib for process and system monitoring in Python
 
 ## Package Information
 
 - **Domain**: `github.com/giampaolo/psutil`
-- **Name**: `github.com/giampaolo/psutil`
+- **Name**: `psutil`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/giampaolo/psutil/package.yml)
 
@@ -53,7 +53,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/giampaolo/psutil']
+const pkg = pantry.psutil
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

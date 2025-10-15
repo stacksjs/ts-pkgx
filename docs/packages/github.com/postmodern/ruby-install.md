@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install ruby-install
+launchpad install github.com/postmodern/ruby-install
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ruby-install -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/postmodern/ruby-install@0.10.1 -- $SHELL -i
 ```
 
 ## Dependencies

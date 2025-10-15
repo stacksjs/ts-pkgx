@@ -6,14 +6,14 @@
 
 - **Domain**: `mcmc-jags.sourceforge.io`
 - **Name**: `jags`
-- **Homepage**: Not specified
+- **Homepage**: https://mcmc-jags.sourceforge.io
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/mcmc-jags.sourceforge.io/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install jags
+launchpad install mcmc-jags.sourceforge.io
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) jags -- $SHELL -i
+sh <(curl https://pkgx.sh) +mcmc-jags.sourceforge.io@4.3.2 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -63,7 +63,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/mcmc-jags.sourceforge.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://mcmc-jags.sourceforge.io)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -7,7 +7,6 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/skim`
- * @dependencies `if@>=0.11.10`
  *
  * @example
  * ```typescript
@@ -54,13 +53,7 @@ export const cratesioskimPackage = {
     'sk',
   ] as const,
   companions: [] as const,
-  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
-   */
-  dependencies: [
-    'if@>=0.11.10',
-  ] as const,
+  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions

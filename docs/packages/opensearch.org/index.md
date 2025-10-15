@@ -6,14 +6,14 @@
 
 - **Domain**: `opensearch.org`
 - **Name**: `opensearch`
-- **Homepage**: Not specified
+- **Homepage**: https://opensearch.org/docs/latest/opensearch/index/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/opensearch.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install opensearch
+launchpad install opensearch.org
 ```
 
 ## Programs
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/opensearch.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://opensearch.org/docs/latest/opensearch/index/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

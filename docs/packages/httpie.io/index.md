@@ -1,12 +1,12 @@
-# httpie.io
+# httpie
 
 > 🥧 HTTPie CLI — modern, user-friendly command-line HTTP client for the API era. JSON support, colors, sessions, downloads, plugins & more.
 
 ## Package Information
 
 - **Domain**: `httpie.io`
-- **Name**: `httpie.io`
-- **Homepage**: Not specified
+- **Name**: `httpie`
+- **Homepage**: https://httpie.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/httpie.io/package.yml)
 
 ## Installation
@@ -54,7 +54,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['httpie.io']
+const pkg = pantry.httpie
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/httpie.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://httpie.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

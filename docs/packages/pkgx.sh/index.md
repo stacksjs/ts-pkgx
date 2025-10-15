@@ -6,14 +6,14 @@
 
 - **Domain**: `pkgx.sh`
 - **Name**: `pkgx`
-- **Homepage**: Not specified
+- **Homepage**: https://pkgx.sh
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pkgx
+launchpad install pkgx.sh
 ```
 
 ## Programs
@@ -43,8 +43,15 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pkgx -- $SHELL -i
+sh <(curl https://pkgx.sh) +pkgx.sh@2.7.0 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `deno.land@~2`
+- `perl.org@5`
 
 ## Usage Examples
 
@@ -62,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/pkgx.sh/package.yml)
-- [Homepage](#)
+- [Homepage](https://pkgx.sh)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

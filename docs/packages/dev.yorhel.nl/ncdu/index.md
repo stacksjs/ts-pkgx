@@ -6,14 +6,14 @@
 
 - **Domain**: `dev.yorhel.nl/ncdu`
 - **Name**: `ncdu`
-- **Homepage**: Not specified
+- **Homepage**: https://dev.yorhel.nl/ncdu
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dev.yorhel.nl/ncdu/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install ncdu
+launchpad install dev.yorhel.nl/ncdu
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) ncdu -- $SHELL -i
+sh <(curl https://pkgx.sh) +dev.yorhel.nl/ncdu@1.22.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/dev.yorhel.nl/ncdu/package.yml)
-- [Homepage](#)
+- [Homepage](https://dev.yorhel.nl/ncdu)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install kaggle
+launchpad install kaggle.com
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) kaggle -- $SHELL -i
+sh <(curl https://pkgx.sh) +kaggle.com@1.7.4.5 -- $SHELL -i
 ```
 
 ## Dependencies

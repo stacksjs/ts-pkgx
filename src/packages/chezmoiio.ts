@@ -8,7 +8,7 @@
  *
  * @install `launchpad install chezmoi.io`
  * @homepage https://chezmoi.io/
- * @dependencies `go.dev@^1.18`, `gnu.org/gcc`, `gnu.org/binutils`
+ * @dependencies `go.dev@^1.18`, `linux:gnu.org/gcc`, `linux:gnu.org/binutils` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
@@ -58,11 +58,12 @@ export const chezmoiioPackage = {
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).
    */
   dependencies: [
     'go.dev@^1.18',
-    'gnu.org/gcc',
-    'gnu.org/binutils',
+    'linux:gnu.org/gcc',
+    'linux:gnu.org/binutils',
   ] as const,
   /**
    * Available versions from newest to oldest.

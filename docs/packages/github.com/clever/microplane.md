@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/clever/microplane`
 - **Name**: `mp`
-- **Homepage**: Not specified
+- **Homepage**: https://medium.com/always-a-student/mo-repos-mo-problems-how-we-make-changes-across-many-git-repositories-293ad7d418f0
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/clever/microplane/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install mp
+launchpad install github.com/clever/microplane
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) mp -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/clever/microplane@0.0.36 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/clever/microplane/package.yml)
-- [Homepage](#)
+- [Homepage](https://medium.com/always-a-student/mo-repos-mo-problems-how-we-make-changes-across-many-git-repositories-293ad7d418f0)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

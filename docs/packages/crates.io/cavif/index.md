@@ -6,14 +6,14 @@
 
 - **Domain**: `crates.io/cavif`
 - **Name**: `cavif`
-- **Homepage**: Not specified
+- **Homepage**: https://lib.rs/cavif
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/cavif/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install cavif
+launchpad install crates.io/cavif
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) cavif -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/cavif@1.5.6 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/cavif/package.yml)
-- [Homepage](#)
+- [Homepage](https://lib.rs/cavif)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

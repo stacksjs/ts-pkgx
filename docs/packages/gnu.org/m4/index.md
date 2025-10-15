@@ -6,14 +6,14 @@
 
 - **Domain**: `gnu.org/m4`
 - **Name**: `m4`
-- **Homepage**: Not specified
+- **Homepage**: https://www.gnu.org/software/m4/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/m4/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install m4
+launchpad install gnu.org/m4
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) m4 -- $SHELL -i
+sh <(curl https://pkgx.sh) +gnu.org/m4@1.4.20 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -56,7 +56,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/m4/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org/software/m4/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

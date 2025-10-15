@@ -1,12 +1,12 @@
-# fna-xna.github.io
+# fna-xna.github
 
 > FAudio - Accuracy-focused XAudio reimplementation for open platforms
 
 ## Package Information
 
 - **Domain**: `fna-xna.github.io`
-- **Name**: `fna-xna.github.io`
-- **Homepage**: Not specified
+- **Name**: `fna-xna.github`
+- **Homepage**: https://fna-xna.github.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/fna-xna.github.io/package.yml)
 
 ## Installation
@@ -56,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['fna-xna.github.io']
+const pkg = pantry['fna-xna.github']
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -66,7 +66,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/fna-xna.github.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://fna-xna.github.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

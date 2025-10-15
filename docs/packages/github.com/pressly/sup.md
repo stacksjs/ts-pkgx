@@ -6,14 +6,14 @@
 
 - **Domain**: `github.com/pressly/sup`
 - **Name**: `sup`
-- **Homepage**: Not specified
+- **Homepage**: https://pressly.github.io/sup
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/pressly/sup/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install sup
+launchpad install github.com/pressly/sup
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) sup -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/pressly/sup@0.5.3 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/pressly/sup/package.yml)
-- [Homepage](#)
+- [Homepage](https://pressly.github.io/sup)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install code.videolan.org/videolan/dav1d`
  * @homepage https://code.videolan.org/videolan/dav1d
- * @dependencies `nasm.us@2.14`, `mesonbuild.com@>=0.49`
+ * @dependencies `mesonbuild.com@>=0.49`
  *
  * @example
  * ```typescript
@@ -60,7 +60,6 @@ export const codevideolanorgvideolandav1dPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'nasm.us@2.14',
     'mesonbuild.com@>=0.49',
   ] as const,
   /**

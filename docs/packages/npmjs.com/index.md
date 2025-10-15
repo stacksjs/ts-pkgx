@@ -1,12 +1,12 @@
-# npmjs.com
+# npmjs
 
 > the package manager for JavaScript
 
 ## Package Information
 
 - **Domain**: `npmjs.com`
-- **Name**: `npmjs.com`
-- **Homepage**: Not specified
+- **Name**: `npmjs`
+- **Homepage**: https://docs.npmjs.com/cli/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/npmjs.com/package.yml)
 
 ## Installation
@@ -82,7 +82,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/npmjs.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.npmjs.com/cli/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -1,12 +1,12 @@
-# tukaani.org/xz
+# xz
 
 > General-purpose data compression with high compression ratio
 
 ## Package Information
 
 - **Domain**: `tukaani.org/xz`
-- **Name**: `tukaani.org/xz`
-- **Homepage**: Not specified
+- **Name**: `xz`
+- **Homepage**: https://tukaani.org/xz/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tukaani.org/xz/package.yml)
 
 ## Installation
@@ -71,7 +71,7 @@ sh <(curl https://pkgx.sh) +tukaani.org/xz@5.8.1 -- $SHELL -i
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['tukaani.org/xz']
+const pkg = pantry.xz
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -81,7 +81,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tukaani.org/xz/package.yml)
-- [Homepage](#)
+- [Homepage](https://tukaani.org/xz/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

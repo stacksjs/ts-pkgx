@@ -1,11 +1,11 @@
-# github.com/libass/libass
+# libass
 
 > libass is a portable subtitle renderer for the ASS/SSA (Advanced Substation Alpha/Substation Alpha) subtitle format.
 
 ## Package Information
 
 - **Domain**: `github.com/libass/libass`
-- **Name**: `github.com/libass/libass`
+- **Name**: `libass`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/libass/libass/package.yml)
 
@@ -56,7 +56,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/libass/libass']
+const pkg = pantry.libass
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

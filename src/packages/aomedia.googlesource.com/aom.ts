@@ -8,7 +8,7 @@
  *
  * @install `launchpad install aomedia.googlesource.com/aom`
  * @homepage https://aomedia.googlesource.com/aom
- * @dependencies `nasm.us@2`, `cmake.org@^3`
+ * @dependencies `cmake.org@^3`
  *
  * @example
  * ```typescript
@@ -61,7 +61,6 @@ export const aomediagooglesourcecomaomPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'nasm.us@2',
     'cmake.org@^3',
   ] as const,
   /**

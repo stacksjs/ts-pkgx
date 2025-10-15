@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install thrift1
+launchpad install facebook.com/fbthrift
 ```
 
 ## Programs
@@ -55,7 +55,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) thrift1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +facebook.com/fbthrift@2025.9.8.0 -- $SHELL -i
 ```
 
 ## Dependencies

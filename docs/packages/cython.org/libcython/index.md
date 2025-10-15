@@ -1,12 +1,12 @@
-# cython.org/libcython
+# libcython
 
 > The most widely used Python to C compiler
 
 ## Package Information
 
 - **Domain**: `cython.org/libcython`
-- **Name**: `cython.org/libcython`
-- **Homepage**: Not specified
+- **Name**: `libcython`
+- **Homepage**: https://cython.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cython.org/libcython/package.yml)
 
 ## Installation
@@ -55,7 +55,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cython.org/libcython']
+const pkg = pantry.libcython
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -65,7 +65,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cython.org/libcython/package.yml)
-- [Homepage](#)
+- [Homepage](https://cython.org)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

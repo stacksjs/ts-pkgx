@@ -6,14 +6,14 @@
 
 - **Domain**: `scons.org`
 - **Name**: `scons`
-- **Homepage**: Not specified
+- **Homepage**: https://www.scons.org/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/scons.org/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install scons
+launchpad install scons.org
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) scons -- $SHELL -i
+sh <(curl https://pkgx.sh) +scons.org@4.10.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/scons.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.scons.org/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

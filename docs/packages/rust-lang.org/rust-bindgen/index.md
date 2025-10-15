@@ -6,14 +6,14 @@
 
 - **Domain**: `rust-lang.org/rust-bindgen`
 - **Name**: `bindgen`
-- **Homepage**: Not specified
+- **Homepage**: https://rust-lang.github.io/rust-bindgen/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.org/rust-bindgen/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install bindgen
+launchpad install rust-lang.org/rust-bindgen
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) bindgen -- $SHELL -i
+sh <(curl https://pkgx.sh) +rust-lang.org/rust-bindgen@0.72.1 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -45,12 +45,6 @@ sh <(curl https://pkgx.sh) bindgen -- $SHELL -i
 This package depends on:
 
 - `linux:llvm.org`
-
-## Related Packages
-
-These packages work well with bindgen:
-
-- [`rust-lang.org`](../index.md) - Empowering everyone to build reliable and efficient software.
 
 ## Usage Examples
 
@@ -68,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rust-lang.org/rust-bindgen/package.yml)
-- [Homepage](#)
+- [Homepage](https://rust-lang.github.io/rust-bindgen/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

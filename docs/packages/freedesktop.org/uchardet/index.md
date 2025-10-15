@@ -6,14 +6,14 @@
 
 - **Domain**: `freedesktop.org/uchardet`
 - **Name**: `uchardet`
-- **Homepage**: Not specified
+- **Homepage**: https://www.freedesktop.org/wiki/Software/uchardet/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/uchardet/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install uchardet
+launchpad install freedesktop.org/uchardet
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) uchardet -- $SHELL -i
+sh <(curl https://pkgx.sh) +freedesktop.org/uchardet@0.0.8 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `cmake.org`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/uchardet/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.freedesktop.org/wiki/Software/uchardet/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

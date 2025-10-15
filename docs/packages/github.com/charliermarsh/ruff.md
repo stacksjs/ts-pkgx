@@ -1,12 +1,12 @@
-# github.com/charliermarsh/ruff
+# ruff
 
 > An extremely fast Python linter and code formatter, written in Rust.
 
 ## Package Information
 
 - **Domain**: `github.com/charliermarsh/ruff`
-- **Name**: `github.com/charliermarsh/ruff`
-- **Homepage**: Not specified
+- **Name**: `ruff`
+- **Homepage**: https://docs.astral.sh/ruff
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/charliermarsh/ruff/package.yml)
 
 ## Installation
@@ -73,13 +73,19 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +github.com/charliermarsh/ruff@0.14.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `crates.io/semverator`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['github.com/charliermarsh/ruff']
+const pkg = pantry.ruff
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -89,7 +95,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/github.com/charliermarsh/ruff/package.yml)
-- [Homepage](#)
+- [Homepage](https://docs.astral.sh/ruff)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -1,12 +1,12 @@
-# gnu.org/gettext
+# gettext
 
 > GNU internationalization (i18n) and localization (l10n) library
 
 ## Package Information
 
 - **Domain**: `gnu.org/gettext`
-- **Name**: `gnu.org/gettext`
-- **Homepage**: Not specified
+- **Name**: `gettext`
+- **Homepage**: https://www.gnu.org/software/gettext/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gettext/package.yml)
 
 ## Installation
@@ -75,7 +75,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/gettext']
+const pkg = pantry.gettext
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -85,7 +85,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/gettext/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.gnu.org/software/gettext/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

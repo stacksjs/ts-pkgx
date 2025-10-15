@@ -1,12 +1,12 @@
-# gnu.org/nettle
+# nettle
 
 > A mirror of the nettle repository
 
 ## Package Information
 
 - **Domain**: `gnu.org/nettle`
-- **Name**: `gnu.org/nettle`
-- **Homepage**: Not specified
+- **Name**: `nettle`
+- **Homepage**: https://www.lysator.liu.se/~nisse/nettle/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/nettle/package.yml)
 
 ## Installation
@@ -44,13 +44,20 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +gnu.org/nettle@3.8.1 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/gmp`
+- `gnu.org/m4`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnu.org/nettle']
+const pkg = pantry.nettle
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -60,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/nettle/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.lysator.liu.se/~nisse/nettle/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

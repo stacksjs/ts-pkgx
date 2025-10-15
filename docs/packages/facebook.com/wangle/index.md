@@ -1,11 +1,11 @@
-# facebook.com/wangle
+# wangle
 
 > Wangle is a framework providing a set of common client/server abstractions for building services in a consistent, modular, and composable way.
 
 ## Package Information
 
 - **Domain**: `facebook.com/wangle`
-- **Name**: `facebook.com/wangle`
+- **Name**: `wangle`
 - **Homepage**: Not specified
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/wangle/package.yml)
 
@@ -88,7 +88,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['facebook.com/wangle']
+const pkg = pantry.wangle
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)

@@ -6,14 +6,14 @@
 
 - **Domain**: `helix-editor.com`
 - **Name**: `hx`
-- **Homepage**: Not specified
+- **Homepage**: https://helix-editor.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/helix-editor.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install hx
+launchpad install helix-editor.com
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) hx -- $SHELL -i
+sh <(curl https://pkgx.sh) +helix-editor.com@25.7.1 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -57,7 +57,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/helix-editor.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://helix-editor.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `microsoft.com/PowerShell`
 - **Name**: `pwsh`
-- **Homepage**: Not specified
+- **Homepage**: https://microsoft.com/PowerShell
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/PowerShell/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install pwsh
+launchpad install microsoft.com/PowerShell
 ```
 
 ## Programs
@@ -38,7 +38,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) pwsh -- $SHELL -i
+sh <(curl https://pkgx.sh) +microsoft.com/PowerShell@7.5.3 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -64,7 +64,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/microsoft.com/PowerShell/package.yml)
-- [Homepage](#)
+- [Homepage](https://microsoft.com/PowerShell)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

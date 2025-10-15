@@ -6,14 +6,14 @@
 
 - **Domain**: `vitejs.dev`
 - **Name**: `vite`
-- **Homepage**: Not specified
+- **Homepage**: https://vitejs.dev/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vitejs.dev/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install vite
+launchpad install vitejs.dev
 ```
 
 ## Programs
@@ -61,7 +61,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) vite -- $SHELL -i
+sh <(curl https://pkgx.sh) +vitejs.dev@7.1.10 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -86,7 +86,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/vitejs.dev/package.yml)
-- [Homepage](#)
+- [Homepage](https://vitejs.dev/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

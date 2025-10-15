@@ -6,14 +6,14 @@
 
 - **Domain**: `idleberg.github.io/krampus`
 - **Name**: `krampus`
-- **Homepage**: Not specified
+- **Homepage**: https://pkg.go.dev/github.com/idleberg/krampus
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/idleberg.github.io/krampus/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install krampus
+launchpad install idleberg.github.io/krampus
 ```
 
 ## Programs
@@ -37,8 +37,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) krampus -- $SHELL -i
+sh <(curl https://pkgx.sh) +idleberg.github.io/krampus@0.2.1 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `go.dev@^1.20`
 
 ## Usage Examples
 
@@ -56,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/idleberg.github.io/krampus/package.yml)
-- [Homepage](#)
+- [Homepage](https://pkg.go.dev/github.com/idleberg/krampus)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -1,12 +1,12 @@
-# vim.org
+# vim
 
 > The official Vim repository
 
 ## Package Information
 
 - **Domain**: `vim.org`
-- **Name**: `vim.org`
-- **Homepage**: Not specified
+- **Name**: `vim`
+- **Homepage**: https://www.vim.org
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/vim.org/package.yml)
 
 ## Installation
@@ -27,7 +27,6 @@ This package provides the following executable programs:
 
 This package can also be accessed using these aliases:
 
-- `vim`
 - `vi`
 
 ## Available Versions
@@ -546,7 +545,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.vim
+const pkg = pantry.vi
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -556,7 +555,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/vim.org/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.vim.org)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

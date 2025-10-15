@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install redfishtool
+launchpad install github.com/DMTF/redfishtool
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) redfishtool -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/DMTF/redfishtool@1.1.8 -- $SHELL -i
 ```
 
 ## Dependencies

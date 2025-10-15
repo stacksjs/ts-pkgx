@@ -6,14 +6,14 @@
 
 - **Domain**: `bytebase.com`
 - **Name**: `bytebase`
-- **Homepage**: Not specified
+- **Homepage**: https://www.bytebase.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bytebase.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install bytebase
+launchpad install bytebase.com
 ```
 
 ## Programs
@@ -44,7 +44,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) bytebase -- $SHELL -i
+sh <(curl https://pkgx.sh) +bytebase.com@3.11.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -52,12 +52,6 @@ sh <(curl https://pkgx.sh) bytebase -- $SHELL -i
 This package depends on:
 
 - `nodejs.org~24.1 # 24.4 has oom errors`
-
-## Related Packages
-
-These packages work well with bytebase:
-
-- [`postgresql.org`](../postgresql.org/index.md) - Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
 
 ## Usage Examples
 
@@ -75,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/bytebase.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.bytebase.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

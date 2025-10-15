@@ -6,7 +6,7 @@
 
 - **Domain**: `bun.sh`
 - **Name**: `bun`
-- **Homepage**: Not specified
+- **Homepage**: https://bun.sh
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/bun.sh/package.yml)
 
 ## Installation
@@ -72,6 +72,12 @@ This package can also be accessed using these aliases:
 sh <(curl https://pkgx.sh) +bun.sh@1.3.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
+
 ## Usage Examples
 
 ```typescript
@@ -88,7 +94,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/bun.sh/package.yml)
-- [Homepage](#)
+- [Homepage](https://bun.sh)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

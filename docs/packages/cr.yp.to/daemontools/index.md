@@ -1,12 +1,12 @@
-# cr.yp.to/daemontools
+# daemontools
 
 > Collection of tools for managing UNIX services
 
 ## Package Information
 
 - **Domain**: `cr.yp.to/daemontools`
-- **Name**: `cr.yp.to/daemontools`
-- **Homepage**: Not specified
+- **Name**: `daemontools`
+- **Homepage**: https://cr.yp.to/daemontools.html
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/cr.yp.to/daemontools/package.yml)
 
 ## Installation
@@ -56,13 +56,21 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +cr.yp.to/daemontools@0.76.0 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `gnu.org/gcc`
+- `linux:curl.se`
+- `linux:gnu.org/patch`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['cr.yp.to/daemontools']
+const pkg = pantry.daemontools
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -72,7 +80,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/cr.yp.to/daemontools/package.yml)
-- [Homepage](#)
+- [Homepage](https://cr.yp.to/daemontools.html)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install names
+launchpad install crates.io/names
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) names -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/names@0.14.0 -- $SHELL -i
 ```
 
 ## Usage Examples

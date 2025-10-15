@@ -6,14 +6,14 @@
 
 - **Domain**: `gphoto.org/libgphoto2`
 - **Name**: `gphoto2`
-- **Homepage**: Not specified
+- **Homepage**: http://www.gphoto.org/proj/libgphoto2/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gphoto.org/libgphoto2/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gphoto2
+launchpad install gphoto.org/libgphoto2
 ```
 
 ## Programs
@@ -69,7 +69,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gphoto.org/libgphoto2/package.yml)
-- [Homepage](#)
+- [Homepage](http://www.gphoto.org/proj/libgphoto2/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

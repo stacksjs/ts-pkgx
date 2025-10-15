@@ -6,7 +6,7 @@
 
 - **Domain**: `jenkins.io`
 - **Name**: `jenkins-lts`
-- **Homepage**: Not specified
+- **Homepage**: https://www.jenkins.io/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/jenkins.io/package.yml)
 
 ## Installation
@@ -67,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/jenkins.io/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.jenkins.io/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

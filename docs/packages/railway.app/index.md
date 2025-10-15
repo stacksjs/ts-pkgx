@@ -6,14 +6,14 @@
 
 - **Domain**: `railway.app`
 - **Name**: `railway`
-- **Homepage**: Not specified
+- **Homepage**: https://railway.app/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/railway.app/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install railway
+launchpad install railway.app
 ```
 
 ## Programs
@@ -49,7 +49,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) railway -- $SHELL -i
+sh <(curl https://pkgx.sh) +railway.app@4.10.0 -- $SHELL -i
 ```
 
 ## Usage Examples
@@ -68,7 +68,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/railway.app/package.yml)
-- [Homepage](#)
+- [Homepage](https://railway.app/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

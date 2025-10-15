@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install neofetch
+launchpad install github.com/dylanaraps/neofetch
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) neofetch -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/dylanaraps/neofetch@7.1.0 -- $SHELL -i
 ```
 
 ## Dependencies

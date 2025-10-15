@@ -6,14 +6,14 @@
 
 - **Domain**: `tailwindcss.com`
 - **Name**: `tailwindcss`
-- **Homepage**: Not specified
+- **Homepage**: https://tailwindcss.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/tailwindcss.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install tailwindcss
+launchpad install tailwindcss.com
 ```
 
 ## Programs
@@ -46,8 +46,14 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) tailwindcss -- $SHELL -i
+sh <(curl https://pkgx.sh) +tailwindcss.com@4.1.14 -- $SHELL -i
 ```
+
+## Dependencies
+
+This package depends on:
+
+- `curl.se`
 
 ## Usage Examples
 
@@ -65,7 +71,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/tailwindcss.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://tailwindcss.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

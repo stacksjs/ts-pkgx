@@ -1,12 +1,12 @@
-# gnupg.org/libgcrypt
+# libgcrypt
 
 > Cryptographic library based on the code from GnuPG
 
 ## Package Information
 
 - **Domain**: `gnupg.org/libgcrypt`
-- **Name**: `gnupg.org/libgcrypt`
-- **Homepage**: Not specified
+- **Name**: `libgcrypt`
+- **Homepage**: https://gnupg.org/related_software/libgcrypt/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/libgcrypt/package.yml)
 
 ## Installation
@@ -43,13 +43,21 @@ This package provides the following executable programs:
 sh <(curl https://pkgx.sh) +gnupg.org/libgcrypt@1.11.2 -- $SHELL -i
 ```
 
+## Dependencies
+
+This package depends on:
+
+- `darwinsys.com/file`
+- `darwin:llvm.org`
+- `linux:gnu.org/gcc`
+
 ## Usage Examples
 
 ```typescript
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry['gnupg.org/libgcrypt']
+const pkg = pantry.libgcrypt
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -59,7 +67,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/gnupg.org/libgcrypt/package.yml)
-- [Homepage](#)
+- [Homepage](https://gnupg.org/related_software/libgcrypt/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---

@@ -6,14 +6,14 @@
 
 - **Domain**: `solana.com`
 - **Name**: `solana`
-- **Homepage**: Not specified
+- **Homepage**: https://solana.com
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/solana.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install solana
+launchpad install solana.com
 ```
 
 ## Programs
@@ -89,7 +89,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/solana.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://solana.com)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

@@ -1,19 +1,19 @@
-# exr2aces
+# exr
 
 > The OpenEXR project provides the specification and reference implementation of the EXR file format, the professional-grade image storage format of the motion picture industry.
 
 ## Package Information
 
 - **Domain**: `openexr.com`
-- **Name**: `exr2aces`
-- **Homepage**: Not specified
+- **Name**: `exr`
+- **Homepage**: https://www.openexr.com/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/openexr.com/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install exr2aces
+launchpad install openexr.com
 ```
 
 ## Programs
@@ -65,7 +65,7 @@ This package depends on:
 import { pantry } from 'ts-pkgx'
 
 // Access this package
-const pkg = pantry.exr2aces
+const pkg = pantry.exr
 
 console.log(`Package: ${pkg.name}`)
 console.log(`Description: ${pkg.description}`)
@@ -75,7 +75,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/openexr.com/package.yml)
-- [Homepage](#)
+- [Homepage](https://www.openexr.com/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

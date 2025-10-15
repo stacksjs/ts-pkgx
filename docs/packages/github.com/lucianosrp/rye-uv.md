@@ -13,7 +13,7 @@
 
 ```bash
 # Install with launchpad
-launchpad install rye-uv
+launchpad install github.com/lucianosrp/rye-uv
 ```
 
 ## Programs
@@ -37,14 +37,8 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) rye-uv -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/lucianosrp/rye-uv@0.1.3 -- $SHELL -i
 ```
-
-## Related Packages
-
-These packages work well with rye-uv:
-
-- [`astral.sh/uv`](../../astral.sh/uv/index.md) - An extremely fast Python package and project manager, written in Rust.
 
 ## Usage Examples
 

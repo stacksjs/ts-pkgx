@@ -6,14 +6,14 @@
 
 - **Domain**: `dns.lookup.dog`
 - **Name**: `dog`
-- **Homepage**: Not specified
+- **Homepage**: https://dns.lookup.dog/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/dns.lookup.dog/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install dog
+launchpad install dns.lookup.dog
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) dog -- $SHELL -i
+sh <(curl https://pkgx.sh) +dns.lookup.dog@0.1.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/dns.lookup.dog/package.yml)
-- [Homepage](#)
+- [Homepage](https://dns.lookup.dog/)
 - [Back to Package Catalog](../../package-catalog.md)
 
 ---

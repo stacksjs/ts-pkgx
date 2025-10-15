@@ -6,14 +6,14 @@
 
 - **Domain**: `rubygems.org/gist`
 - **Name**: `gist`
-- **Homepage**: Not specified
+- **Homepage**: http://defunkt.io/gist/
 - **Source**: [View on GitHub](https://github.com/pkgxdev/pantry/tree/main/projects/rubygems.org/gist/package.yml)
 
 ## Installation
 
 ```bash
 # Install with launchpad
-launchpad install gist
+launchpad install rubygems.org/gist
 ```
 
 ## Programs
@@ -37,7 +37,7 @@ This package provides the following executable programs:
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) gist -- $SHELL -i
+sh <(curl https://pkgx.sh) +rubygems.org/gist@6.0.0 -- $SHELL -i
 ```
 
 ## Dependencies
@@ -62,7 +62,7 @@ console.log(`Programs: ${pkg.programs.join(', ')}`)
 ## Links
 
 - [Package Source](https://github.com/pkgxdev/pantry/tree/main/projects/rubygems.org/gist/package.yml)
-- [Homepage](#)
+- [Homepage](http://defunkt.io/gist/)
 - [Back to Package Catalog](../../../package-catalog.md)
 
 ---
