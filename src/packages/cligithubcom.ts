@@ -3,7 +3,7 @@
  *
  * @domain `cli.github.com`
  * @programs `gh`
- * @version `2.81.0` (88 versions available)
+ * @version `2.82.0` (89 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cli.github.com`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "gh"
  * console.log(pkg.description) // "GitHub’s official command line tool"
  * console.log(pkg.programs)    // ["gh"]
- * console.log(pkg.versions[0]) // "2.81.0" (latest)
+ * console.log(pkg.versions[0]) // "2.82.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cli-github-com.md
@@ -68,6 +68,7 @@ export const cligithubcomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.82.0',
     '2.81.0',
     '2.80.0',
     '2.79.0',

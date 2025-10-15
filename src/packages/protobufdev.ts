@@ -3,7 +3,7 @@
  *
  * @domain `protobuf.dev`
  * @programs `protoc`
- * @version `32.1.0` (45 versions available)
+ * @version `33.0.0` (46 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install protobuf.dev`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "Protocol Buffers"
  * console.log(pkg.description) // "Protocol Buffers - Google's data interchange fo..."
  * console.log(pkg.programs)    // ["protoc"]
- * console.log(pkg.versions[0]) // "32.1.0" (latest)
+ * console.log(pkg.versions[0]) // "33.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/protobuf-dev.md
@@ -77,6 +77,7 @@ export const protobufdevPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '33.0.0',
     '32.1.0',
     '32.0.0',
     '31.1.0',
