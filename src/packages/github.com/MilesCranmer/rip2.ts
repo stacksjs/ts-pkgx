@@ -1,5 +1,5 @@
 /**
- * **rip2** -  A safe and ergonomic alternative to rm
+ * **rip2** - A safe and ergonomic alternative to rm
  *
  * @domain `github.com/MilesCranmer/rip2`
  * @programs `rip`

@@ -1,5 +1,5 @@
 /**
- * **fastgron** -  High-performance JSON to GRON (greppable, flattened JSON) converter
+ * **fastgron** - High-performance JSON to GRON (greppable, flattened JSON) converter
  *
  * @domain `github.com/adamritter/fastgron`
  * @programs `fastgron`

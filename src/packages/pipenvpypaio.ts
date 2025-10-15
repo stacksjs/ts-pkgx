@@ -1,5 +1,5 @@
 /**
- * **pipenv** -  Python Development Workflow for Humans.
+ * **pipenv** - Python Development Workflow for Humans.
  *
  * @domain `pipenv.pypa.io`
  * @programs `pipenv`

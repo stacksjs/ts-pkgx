@@ -1,5 +1,5 @@
 /**
- * **skhd** -  Simple hotkey daemon for macOS
+ * **skhd** - Simple hotkey daemon for macOS
  *
  * @domain `github.com/koekeishiya/skhd`
  * @programs `skhd`
