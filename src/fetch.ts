@@ -1,14 +1,19 @@
 /* eslint-disable no-console */
-import type { Browser } from 'playwright'
 import type { FetchProjectsOptions, GitHubContent, PackageFetchOptions, PkgxPackage, ProjectFolder } from './types'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
-// Playwright will be dynamically imported when needed
 import { getAliasOverrides, shouldReplaceAliases } from './alias-overrides'
 import { DEFAULT_CACHE_DIR, DEFAULT_CACHE_EXPIRATION_MINUTES, DEFAULT_TIMEOUT_MS } from './consts'
 import { aliases } from './packages/aliases'
+import { scrapePkgxPackage } from './pkgx-scraper'
 // Lazy import of utils functions to avoid module loading issues
+
+// Legacy browser references - keeping for backwards compatibility but not used
+type Browser = any
+let sharedBrowser: Browser | null = null
+const browserPool: { browser: Browser, inUse: boolean, createdAt: number }[] = []
+const MAX_BROWSER_POOL_SIZE = 10
 
 /**
  * GitHub repository mapping for packages that don't have complete repository paths
@@ -691,14 +696,6 @@ export function saveToCacheAndOutput(
   return { cachePath: cacheFilePath, outputPath: outputFilePath }
 }
 
-// Global browser instance to be shared across fetches (only used when not in concurrent mode)
-let sharedBrowser: Browser | null = null
-
-// Browser pool for concurrent operations (legacy - kept for compatibility)
-const browserPool: { browser: Browser, inUse: boolean, createdAt: number }[] = []
-// Maximum number of browsers to keep in the pool (legacy - kept for compatibility)
-const MAX_BROWSER_POOL_SIZE = 10 // Default limit, can be adjusted based on concurrency setting
-
 // Function to check system resources and adjust behavior
 function _getSystemResourceStatus() {
   const memUsage = process.memoryUsage()
@@ -784,7 +781,7 @@ export async function fetchPkgxProjects(options: FetchProjectsOptions = {}): Pro
 }
 
 /**
- * Fetches package information from pkgx.dev using Playwright
+ * Fetches package information from pkgx.dev using ts-web-scraper
  * @param packageName The name of the package to fetch
  * @param options Optional configuration
  * @returns Promise resolving to package information with original name and full domain name
@@ -795,10 +792,6 @@ export async function fetchPantryPackage(
 ): Promise<{ packageInfo: PkgxPackage, originalName: string, fullDomainName: string }> {
   const originalName = packageName
   let fullDomainName = packageName
-  let browser = null
-  let page = null
-  // Track if we created a browser or are using a provided one
-  let createdBrowser = false
 
   // Special handling for known patterns
   // For paths like 'agwa.name/git-crypt', treat 'git-crypt' as the name
@@ -816,653 +809,100 @@ export async function fetchPantryPackage(
   }
 
   try {
-    // Set a maximum time for browser operations
-    const browserTimeout = options.timeout || DEFAULT_TIMEOUT_MS
-    const debugMode = options.debug || false
+    // Use ts-web-scraper via scrapePkgxPackage
+    const timeout = options.timeout || DEFAULT_TIMEOUT_MS
 
-    // Try to use the provided browser from the pool if available
-    if (options.browser) {
-      browser = options.browser
-    }
-    // Otherwise try to use shared browser instance if available
-    else if (sharedBrowser) {
-      browser = sharedBrowser
-    }
-    else {
-      // Launch a new browser with retries
-      let retryCount = 0
-      const maxLaunchRetries = 3
-      createdBrowser = true
+    // Scrape the package data
+    const scrapedData = await scrapePkgxPackage(packageName, {
+      timeout,
+      useClientSideScraper: true,
+    })
 
-      while (retryCount < maxLaunchRetries) {
+    // Convert scraped data to PkgxPackage format
+    const packageInfo: PkgxPackage = {
+      name: scrapedData.displayName || scrapedData.name || packageName.split('/').pop() || packageName,
+      domain: scrapedData.domain || packageName,
+      description: scrapedData.description || scrapedData.brief || '',
+      packageYmlUrl: `https://github.com/pkgxdev/pantry/tree/main/projects/${packageName}/package.yml`,
+      homepageUrl: scrapedData.homepage || '',
+      githubUrl: scrapedData.github || '',
+      installCommand: `launchpad install ${packageName}`,
+      pkgxInstallCommand: `sh <(curl https://pkgx.sh) +${packageName} -- $SHELL -i`,
+      launchpadInstallCommand: `launchpad install ${packageName}`,
+      programs: scrapedData.provides || [],
+      companions: scrapedData.companions || [],
+      dependencies: scrapedData.dependencies || [],
+      versions: scrapedData.versions || [],
+      aliases: [],
+    }
+
+    // Try to get versions from GitHub API if not available
+    if (!packageInfo.versions || packageInfo.versions.length === 0) {
+      const domain = packageInfo.domain || packageName
+      const skipGitHubAPI = [
+        'apache.org',
+        'breakfastquay.com',
+        'catb.org',
+        'bloomreach.com',
+        'cairographics.org',
+        'certifi.io',
+        'charm.sh',
+        'aws.amazon.com',
+        'google.com',
+        'microsoft.com',
+        'mozilla.org',
+        'freedesktop.org',
+        'gnome.org',
+        'kde.org',
+        'sourceforge.net',
+        'sf.net',
+      ].some(skipDomain => domain.startsWith(skipDomain))
+
+      if (!skipGitHubAPI) {
         try {
-          const { chromium } = await import('playwright')
-          browser = await chromium.launch({
-            headless: true,
-            timeout: 8000, // 8 second timeout for browser launch
-          })
-          sharedBrowser = browser
-          break
+          const githubPath = packageInfo.domain || packageName
+          const versions = await fetchVersionsFromGitHub(githubPath)
+          packageInfo.versions = versions
         }
         catch (error) {
-          retryCount++
-          console.error(`Browser launch attempt ${retryCount} failed:`, error)
-          if (retryCount >= maxLaunchRetries) {
-            throw new Error(`Failed to launch browser after ${maxLaunchRetries} attempts`)
-          }
-          // Wait before retrying
-          await new Promise(resolve => setTimeout(resolve, 1000))
+          console.warn(`Failed to fetch versions for ${packageName} from GitHub API:`, error)
+          packageInfo.versions = []
         }
       }
     }
 
-    // At this point browser should never be null due to our retry logic
-    if (!browser) {
-      console.error('Unexpected error: browser is null after successful launch')
-      return createMinimalPackageInfo(packageName, originalName, fullDomainName)
-    }
-
-    const context = await browser.newContext()
-    page = await context.newPage()
-
-    const timeout = browserTimeout
-
-    try {
-      // Reset navigation logged state at the beginning of each fetch
-      navigationLogged = false
-
-      // Convert package name from filename format to URL format for nested packages
-      const urlPackageName = convertPackageNameToUrl(packageName)
-      const pkgUrl = `https://pkgx.dev/pkgs/${urlPackageName}/`
-      logNavigation(pkgUrl)
-
-      // Navigate to the package page
-      await page.goto(pkgUrl, {
-        timeout,
-        waitUntil: 'networkidle',
-      })
-
-      // Wait a bit for client-side rendering to finish
-      await page.waitForTimeout(2000)
-
-      // Take a screenshot if debug mode is enabled
-      if (debugMode) {
-        const debugDir = path.join(process.cwd(), 'debug')
-        if (!fs.existsSync(debugDir)) {
-          fs.mkdirSync(debugDir, { recursive: true })
-        }
-        const screenshotPath = path.join(debugDir, `${packageName.replace(/\//g, '-')}_debug.png`)
-        await page.screenshot({ path: screenshotPath })
-        console.error(`Saved debug screenshot to ${screenshotPath}`)
-      }
-
-      console.log('Extracting package information...')
-
-      // Extract package information and possible alias
-      const result = await page.evaluate(() => {
-        // Helper functions
-        const getTextContent = (selector: string): string => {
-          const element = document.querySelector(selector)
-          return element ? (element.textContent?.trim() || '') : ''
-        }
-
-        // Get primary data from the page - using the MUI classes
-        const nameElement = document.querySelector('h2.MuiTypography-h2')
-
-        // Get the display name from h2 (which might be generic)
-        const displayName = nameElement ? nameElement.childNodes[0].textContent?.trim() || '' : ''
-
-        // Extract domain from span inside the h2
-        const domainElement = document.querySelector('h2.MuiTypography-h2 span')
-        const domain = domainElement
-          ? domainElement.textContent?.trim().replace(/[()]/g, '') || ''
-          : window.location.pathname.split('/pkgs/')[1]?.replace(/\/$/, '') || ''
-
-        // Determine the actual package name (will be refined later)
-        let name = displayName
-
-        // Get description
-        const description = getTextContent('h5.MuiTypography-h5:not(:has(+ ul))')
-
-        // Get links
-        const packageYmlUrl = (document.querySelector('a[href*="package.yml"]') as HTMLAnchorElement)?.href || ''
-        const homepageUrl = (document.querySelector('a[href*="Homepage"]') as HTMLAnchorElement)?.href
-          || (document.querySelector('a[href*="homepage"]') as HTMLAnchorElement)?.href || ''
-        const githubUrl = (document.querySelector('a[href*="GitHub"]') as HTMLAnchorElement)?.href
-          || (document.querySelector('a[href*="github"]') as HTMLAnchorElement)?.href || ''
-
-        // Get install command
-        const installCommand = getTextContent('div[data-terminal="true"]')
-
-        // Find elements with specific headings and get the list items below them
-        function getItemsBelowHeading(heading: string): string[] {
-          const headings = Array.from(document.querySelectorAll('h5.MuiTypography-h5'))
-
-          for (const h of headings) {
-            if (h.textContent?.includes(heading)) {
-              // Find the next UL after this heading
-              let nextEl = h.nextElementSibling
-              while (nextEl && nextEl.tagName !== 'UL') {
-                nextEl = nextEl.nextElementSibling
-              }
-
-              if (nextEl && nextEl.tagName === 'UL') {
-                // Get all list items
-                const items = Array.from(nextEl.querySelectorAll('li'))
-                return items.map(li => li.textContent?.trim() || '').filter(Boolean)
-              }
-            }
-          }
-
-          return []
-        }
-
-        // Get lists using the heading-based approach
-        const programs = getItemsBelowHeading('Programs')
-        const companions = getItemsBelowHeading('Companions')
-        const dependencies = getItemsBelowHeading('Dependencies')
-        const versions = getItemsBelowHeading('Versions')
-
-        // Refine the package name based on programs and install command
-        // For packages where the display name is generic or doesn't match the actual package,
-        // try to extract the real name from the install command or programs list
-        if (programs.length > 0 && displayName && displayName.length <= 3) {
-          // For very short names like "go", prefer the program name
-          name = programs[0]
-        }
-
-        // If the install command suggests a different name, use that
-        if (installCommand) {
-          const installMatch = installCommand.match(/sh\s*<\(curl[^)]+\)\s+(\+)?(\S+)/)
-          if (installMatch && installMatch[2]) {
-            const installName = installMatch[2].trim()
-            // If the install name is different from display name and looks more specific, use it
-            if (installName !== displayName && installName.includes('-') && programs.includes(installName)) {
-              name = installName
-            }
-          }
-        }
-
-        // Check for possible alias (e.g., "bun" for "bun.sh") - after name refinement
-        const possibleAlias = name.toLowerCase()
-
-        // Extract aliases from the install command
-        const aliases: string[] = []
-
-        // Helper function to check if a string is a valid alias
-        function isValidAlias(alias: string): boolean {
-          if (!alias || alias.length < 2)
-            return false
-
-          // Filter out shell command patterns
-          if (alias.includes('--') || alias.includes('$SHELL') || alias.includes('+') || alias.includes('(') || alias.includes(')')) {
-            return false
-          }
-
-          // Filter out generic words that shouldn't be standalone aliases
-          const genericWords = ['cli', 'app', 'tool', 'server', 'client', 'api', 'lib', 'core']
-          if (genericWords.includes(alias.toLowerCase())) {
-            return false
-          }
-
-          // Filter out version strings
-          if (/^\d+(?:\.\d+)*/.test(alias)) {
-            return false
-          }
-
-          return true
-        }
-
-        // Look for aliases in the install command - pkgx.dev shows install commands like "sh <(curl https://pkgx.sh) aws"
-        // The part after the curl command is usually the primary alias
-        if (installCommand) {
-          const installMatch = installCommand.match(/sh\s*<\(curl[^)]+\)\s+(\S+)/)
-          if (installMatch && installMatch[1]) {
-            const primaryAlias = installMatch[1].trim()
-            // Only add as alias if it's valid and different from domain
-            if (isValidAlias(primaryAlias) && primaryAlias !== domain) {
-              aliases.push(primaryAlias)
-            }
-          }
-        }
-
-        // For AWS CLI specifically, add known aliases
-        if (domain === 'aws.amazon.com/cli' || name === 'aws/cli') {
-          if (!aliases.includes('aws'))
-            aliases.push('aws')
-          if (!aliases.includes('aws/cli'))
-            aliases.push('aws/cli')
-          // Note: 'cli' alone is NOT an alias for AWS CLI - the install command uses 'aws'
-        }
-
-        // For AWS CDK specifically, add known aliases
-        if (domain === 'aws.amazon.com/cdk' || name === 'aws/cdk') {
-          if (!aliases.includes('cdk'))
-            aliases.push('cdk')
-          if (!aliases.includes('aws/cdk'))
-            aliases.push('aws/cdk')
-        }
-
-        // For other packages, only add path components as aliases if they make sense
-        // Don't automatically add the last part of a path as an alias unless it's confirmed
-        if (domain && domain.includes('/')) {
-          const parts = domain.split('/')
-          const lastPart = parts[parts.length - 1]
-
-          // Only add the last part as an alias if it's valid and appears in the install command
-          if (lastPart && lastPart !== name && installCommand && isValidAlias(lastPart)) {
-            const installMatch = installCommand.match(/sh\s*<\(curl[^)]+\)\s+(\S+)/)
-            if (installMatch && installMatch[1]) {
-              const installAlias = installMatch[1].trim()
-              // Only add if the install command specifically uses this part
-              if (installAlias === lastPart && !aliases.includes(lastPart)) {
-                aliases.push(lastPart)
-              }
-            }
-          }
-        }
-
-        // If the name is different from domain and looks like an alias, add it
-        // But make sure it's a valid alias
-        if (name && name !== domain && name.length < domain.length && isValidAlias(name) && !aliases.includes(name)) {
-          aliases.push(name)
-        }
-
-        // Return two separate objects to avoid type issues
-        return {
-          possibleAlias,
-          packageInfo: {
-            name,
-            domain,
-            description,
-            packageYmlUrl,
-            homepageUrl,
-            githubUrl,
-            installCommand,
-            programs,
-            companions,
-            dependencies,
-            versions,
-            aliases,
-          },
-        }
-      })
-
-      // Extract the package info and possible alias
-      const { packageInfo, possibleAlias } = result
-
-      // Special handling for nested paths
-      if (originalName.includes('/')) {
-        const [parentDomain, subPath] = originalName.split('/')
-
-        // If we have a nested path, ensure proper domain and name are set
-        // Only override the name if it's actually empty, not if it was refined to something meaningful
-        if (!packageInfo.name || packageInfo.name === '') {
-          // Use the subPath as the name if name is empty
-          packageInfo.name = subPath
-        }
-
-        if (!packageInfo.domain || packageInfo.domain === '') {
-          // Use the parent domain if domain is empty
-          packageInfo.domain = parentDomain
-        }
-
-        // Update fullDomainName to include the parent
-        fullDomainName = packageInfo.domain.includes('/')
-          ? packageInfo.domain
-          : `${packageInfo.domain}/${subPath}`
-      }
-
-      // Check for reverse aliases (eg "bun" for "bun.sh")
-      if (possibleAlias && packageInfo.domain
-        && possibleAlias !== packageInfo.domain
-        && !packageInfo.domain.startsWith(possibleAlias)) {
-        if (!options.outputJson) {
-          console.log(`Detected reverse alias: '${possibleAlias}' for '${packageInfo.domain}'`)
-        }
-        // Update our full domain name if we found a reverse alias through the website
-        fullDomainName = packageInfo.domain
-
-        // Add the newly identified alias to our aliases map
-        if (possibleAlias && possibleAlias !== originalName && packageInfo.domain) {
-          if (!options.outputJson) {
-            console.log(`Adding new alias: '${possibleAlias}' -> '${packageInfo.domain}'`)
-          }
-          aliases[possibleAlias] = packageInfo.domain
-        }
-
-        // Also add the original name as an alias if it's different from both possibleAlias and domain
-        if (originalName !== possibleAlias && originalName !== packageInfo.domain) {
-          if (!options.outputJson) {
-            console.log(`Adding original name as alias: '${originalName}' -> '${packageInfo.domain}'`)
-          }
-          aliases[originalName] = packageInfo.domain
-        }
-      }
-
-      // Alternative content extraction if the first method fails
-      if (!packageInfo.name || packageInfo.name === '') {
-        console.warn('First extraction method failed, trying alternative approach...')
-
-        // Take a screenshot for debugging
-        if (debugMode) {
-          const debugDir = path.join(process.cwd(), 'debug')
-          if (!fs.existsSync(debugDir)) {
-            fs.mkdirSync(debugDir, { recursive: true })
-          }
-          const screenshotPath = path.join(debugDir, `${packageName.replace(/\//g, '-')}_alternative_debug.png`)
-          await page.screenshot({ path: screenshotPath })
-          console.error(`Saved alternative debug screenshot to ${screenshotPath}`)
-        }
-
-        // Try a simpler extraction approach
-        const content = await page.content()
-
-        // For nested paths, use the last part as the name and preserve the full domain
-        if (originalName.includes('/')) {
-          const parts = originalName.split('/')
-          packageInfo.name = parts[parts.length - 1]
-          packageInfo.domain = originalName // Keep the full path as domain
-          fullDomainName = originalName
-        }
-        else {
-          packageInfo.name = originalName
-          packageInfo.domain = fullDomainName
-        }
-
-        // Try multiple approaches to extract description
-        packageInfo.description = await page.evaluate(() => {
-          // Try various selectors for description
-          const selectors = [
-            'h5.MuiTypography-root',
-            '[data-testid="description"]',
-            '.description',
-            'p.description',
-            'meta[name="description"]',
-          ]
-
-          for (const selector of selectors) {
-            const element = document.querySelector(selector)
-            if (element) {
-              const text = selector.includes('meta')
-                ? (element as HTMLMetaElement).content
-                : element.textContent?.trim()
-              if (text && text.length > 0) {
-                return text
-              }
-            }
-          }
-
-          // Fallback: try to extract from page title or first paragraph
-          const title = document.title
-          if (title && !title.toLowerCase().includes('pkgx')) {
-            return title
-          }
-
-          return ''
-        })
-
-        // Extract from HTML content for versions
-        if (!packageInfo.versions || packageInfo.versions.length === 0) {
-          const versionMatch = content.match(/<li>([\d.]+)<\/li>/g)
-          if (versionMatch) {
-            packageInfo.versions = versionMatch
-              .map((m: string) => m.replace(/<\/?li>/g, ''))
-              .filter(Boolean)
-          }
-          else {
-            packageInfo.versions = []
-          }
-        }
-
-        // Try to extract package links
-        const ymlUrl = await page.evaluate(() => {
-          const links = Array.from(document.querySelectorAll('a[href*="package.yml"]'))
-          return links.length > 0 ? (links[0] as HTMLAnchorElement).href : ''
-        })
-        packageInfo.packageYmlUrl = ymlUrl
-
-        const homeUrl = await page.evaluate(() => {
-          const links = Array.from(document.querySelectorAll('a[href*="Homepage"]'))
-          return links.length > 0 ? (links[0] as HTMLAnchorElement).href : ''
-        })
-        packageInfo.homepageUrl = homeUrl
-
-        const gitUrl = await page.evaluate(() => {
-          const links = Array.from(document.querySelectorAll('a[href*="GitHub"]'))
-          return links.length > 0 ? (links[0] as HTMLAnchorElement).href : ''
-        })
-        packageInfo.githubUrl = gitUrl
-      }
-
-      // Try to get versions from GitHub API if still empty, but only for certain domains
-      if (!packageInfo.versions || packageInfo.versions.length === 0) {
-        const domain = packageInfo.domain || packageName
-        // Only try GitHub API for packages that are likely to be in the pkgx pantry
-        // Skip known external domains that don't use the pantry structure
-        const skipGitHubAPI = [
-          'apache.org',
-          'breakfastquay.com',
-          'catb.org',
-          'bloomreach.com',
-          'cairographics.org',
-          'certifi.io',
-          'charm.sh',
-          'aws.amazon.com',
-          'google.com',
-          'microsoft.com',
-          'mozilla.org',
-          'freedesktop.org',
-          'gnome.org',
-          'kde.org',
-          'sourceforge.net',
-          'sf.net',
-        ].some(skipDomain => domain.startsWith(skipDomain))
-
-        if (!skipGitHubAPI) {
-          console.warn('Attempting to fetch versions from GitHub API...')
+    // Sort versions using semver if they exist
+    if (packageInfo.versions && packageInfo.versions.length > 0) {
+      try {
+        packageInfo.versions.sort((a: string, b: string) => {
           try {
-            // Get the correct GitHub path - use domain if available
-            const githubPath = packageInfo.domain || packageName
-            const versions = await fetchVersionsFromGitHub(githubPath)
-            packageInfo.versions = versions
+            return -1 * Bun.semver.order(a, b)
           }
-          catch (error) {
-            console.warn(`Failed to fetch versions for ${packageName} from GitHub API:`, error)
-            packageInfo.versions = []
+          catch {
+            return b.localeCompare(a)
           }
-        }
-        else {
-          console.log(`Skipping GitHub API lookup for external domain: ${domain}`)
-        }
+        })
       }
-
-      // Sort versions using semver if they exist
-      if (packageInfo.versions && packageInfo.versions.length > 0) {
-        try {
-          // Sort versions in descending order (newest first)
-          packageInfo.versions.sort((a: string, b: string) => {
-            try {
-              // Use Bun.semver.order with negative multiplier for descending sort (newest first)
-              return -1 * Bun.semver.order(a, b)
-            }
-            catch {
-              // Fallback to string comparison if semver fails
-              return b.localeCompare(a)
-            }
-          })
-        }
-        catch (error) {
-          console.warn(`Warning: Failed to sort versions for ${packageName} using semver:`, error)
-        }
-      }
-
-      // Ensure we have values for required fields
-      packageInfo.name = packageInfo.name || originalName
-      packageInfo.domain = packageInfo.domain || fullDomainName
-      packageInfo.programs = packageInfo.programs || []
-      packageInfo.companions = packageInfo.companions || []
-      packageInfo.dependencies = packageInfo.dependencies || []
-      packageInfo.versions = packageInfo.versions || []
-
-      // Generate both install commands
-      const generateInstallCommands = (pkgName: string, domain: string) => {
-        // Use the actual install command from the page if available
-        let pkgxCommand = `sh <(curl https://pkgx.sh) +${domain} -- $SHELL -i`
-        let launchpadName = pkgName
-
-        // Extract the actual package name from the install command on the page
-        if (packageInfo.installCommand) {
-          // Handle both formats: "sh <(curl https://pkgx.sh) +domain" and "sh <(curl https://pkgx.sh) alias"
-          const installMatch = packageInfo.installCommand.match(/sh\s*<\(curl[^)]+\)\s+(\+)?(\S+)/)
-          if (installMatch && installMatch[2]) {
-            const hasPlus = installMatch[1] === '+'
-            const extractedName = installMatch[2].trim()
-
-            if (hasPlus) {
-              // If the install command uses +domain format, prefer a simple alias for launchpad
-              pkgxCommand = `sh <(curl https://pkgx.sh) +${extractedName} -- $SHELL -i`
-              // Try to find a simple alias, otherwise use the domain
-              if (packageInfo.aliases && packageInfo.aliases.length > 0) {
-                const simpleAlias = packageInfo.aliases.find((alias: string) =>
-                  !alias.includes('.') && !alias.includes('/') && !alias.includes(' ')
-                  && alias.length > 0 && alias.length < 20,
-                )
-                launchpadName = simpleAlias || extractedName
-              }
-              else {
-                launchpadName = extractedName
-              }
-            }
-            else {
-              // If the install command already uses a simple alias, use it for both
-              pkgxCommand = `sh <(curl https://pkgx.sh) ${extractedName} -- $SHELL -i`
-              launchpadName = extractedName
-            }
-          }
-        }
-
-        // If we have aliases and no package name was extracted, use the first simple alias
-        if (launchpadName === pkgName && packageInfo.aliases && packageInfo.aliases.length > 0) {
-          const simpleAlias = packageInfo.aliases.find((alias: string) =>
-            !alias.includes('.') && !alias.includes('/') && !alias.includes(' ')
-            && alias.length > 0 && alias.length < 20,
-          )
-          if (simpleAlias) {
-            launchpadName = simpleAlias
-          }
-        }
-
-        const launchpadCommand = `launchpad install ${launchpadName}`
-
-        return { pkgxCommand, launchpadCommand }
-      }
-
-      const { pkgxCommand, launchpadCommand } = generateInstallCommands(originalName, fullDomainName)
-
-      // Set the new install command fields
-      packageInfo.pkgxInstallCommand = pkgxCommand
-      packageInfo.launchpadInstallCommand = launchpadCommand
-
-      // Set installCommand to launchpad (our default)
-      packageInfo.installCommand = launchpadCommand
-
-      // Handle legacy install commands if they exist and transform them
-      if (packageInfo.installCommand && packageInfo.installCommand !== launchpadCommand) {
-        const legacyCommand = packageInfo.installCommand
-
-        if (legacyCommand.startsWith('pkgx ')) {
-          const packageNameFromCommand = legacyCommand.replace('pkgx ', '')
-          packageInfo.launchpadInstallCommand = `launchpad install ${packageNameFromCommand}`
-          packageInfo.installCommand = packageInfo.launchpadInstallCommand
-        }
-        else if (legacyCommand.includes('sh <(curl https://pkgx.sh)')) {
-          // Handle the older sh <(curl) format: "sh <(curl https://pkgx.sh) packagename"
-          const match = legacyCommand.match(/sh\s*<\(curl[^)]+\)\s+(\S.*)$/)
-          if (match && match[1]) {
-            const packageNameFromCommand = match[1].trim()
-            // Extract just the package name without + and shell args
-            const cleanPackageName = packageNameFromCommand.replace(/^\+/, '').replace(/\s+--.*$/, '')
-            packageInfo.launchpadInstallCommand = `launchpad install ${cleanPackageName}`
-            packageInfo.installCommand = packageInfo.launchpadInstallCommand
-            packageInfo.pkgxInstallCommand = legacyCommand
-          }
-        }
-        else if (legacyCommand.startsWith('launchpad install')) {
-          // Already a launchpad command, keep it
-          packageInfo.launchpadInstallCommand = legacyCommand
-          packageInfo.installCommand = legacyCommand
-        }
-      }
-
-      // Validate data quality to prevent writing incomplete packages
-      const hasAnyContent = packageInfo.versions.length > 0 || packageInfo.programs.length > 0 || packageInfo.dependencies.length > 0
-
-      // Check if this looks like a package that should have dependencies
-      // Most real packages have either programs, versions, or dependencies
-
-      // Additional validation: if description is generic, it might be a failed fetch
-      const hasGenericDescription = packageInfo.description.includes('Package information for')
-        || packageInfo.description.trim() === ''
-        || packageInfo.description === `${packageName} package`
-
-      // Be more lenient - don't warn about missing data unless it's clearly an error
-      if (packageInfo.description && packageInfo.description.toLowerCase().includes('go home')) {
-        console.warn(`⚠️  Package ${packageName} has error page description. This might be a fetch error.`)
-      }
-      else if (hasGenericDescription && !hasAnyContent) {
-        console.warn(`⚠️  Package ${packageName} might have incomplete data, but proceeding anyway.`)
-      }
-
-      return { packageInfo, originalName, fullDomainName }
-    }
-    finally {
-      // Close the page but keep the browser for reuse
-      if (page) {
-        try {
-          await page.close()
-        }
-        catch (pageError) {
-          console.error(`Error closing page for ${packageName}:`, pageError)
-        }
+      catch (error) {
+        console.warn(`Warning: Failed to sort versions for ${packageName} using semver:`, error)
       }
     }
+
+    // Ensure we have values for required fields
+    packageInfo.name = packageInfo.name || originalName
+    packageInfo.domain = packageInfo.domain || fullDomainName
+    packageInfo.programs = packageInfo.programs || []
+    packageInfo.companions = packageInfo.companions || []
+    packageInfo.dependencies = packageInfo.dependencies || []
+    packageInfo.versions = packageInfo.versions || []
+
+    return { packageInfo, originalName, fullDomainName }
   }
   catch (error) {
     console.error(`Error in fetchPantryPackage for ${packageName}:`, error)
 
-    // Make sure to close the browser if the outer try block fails
-    if (browser) {
-      try {
-        await browser.close()
-      }
-      catch (err) {
-        console.error(`Error closing browser for ${packageName}:`, err)
-      }
-    }
-
-    throw error
-  }
-  finally {
-    // Only close the browser if we created it and it's not the shared browser
-    if (page) {
-      try {
-        await page.close()
-      }
-      catch {
-        // Ignore errors when closing page
-      }
-    }
-
-    // We don't close the browser here if we didn't create it or if it's the shared browser
-    if (createdBrowser && browser && browser !== sharedBrowser) {
-      try {
-        await browser.close()
-      }
-      catch {
-        // Ignore errors when closing browser
-      }
-    }
+    // Return minimal package info on error
+    return createMinimalPackageInfo(packageName, originalName, fullDomainName)
   }
 }
 
@@ -1799,27 +1239,7 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       console.log(`Limited to ${allPackageNames.length} packages`)
     }
 
-    // Create a single browser instance for all operations
-    console.log('Launching browser...')
-    const { chromium } = await import('playwright')
-    const browser = await chromium.launch({
-      headless: true,
-      args: [
-        '--no-sandbox',
-        '--disable-setuid-sandbox',
-        '--disable-dev-shm-usage',
-        '--disable-accelerated-2d-canvas',
-        '--disable-gpu',
-        '--window-size=1920,1080',
-        '--disable-extensions',
-        '--disable-plugins',
-        '--disable-images', // Disable image loading for faster page loads
-        '--disable-javascript', // Disable JS for faster, more reliable scraping
-      ],
-    })
-
-    console.log('Browser launched successfully')
-
+    // No browser needed - fetchPantryPackage now uses ts-web-scraper
     const successfulPackages: string[] = []
     const failedPackages: string[] = []
     let processed = 0
@@ -1870,11 +1290,10 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
             }
           }
 
-          // Use the new pantry-based fetch approach
+          // Use the new pantry-based fetch approach - no browser needed (uses ts-web-scraper)
           const result = await fetchPantryPackageWithMetadata(packageName, {
             ...options,
             pantryDir,
-            browser, // Pass the shared browser
             timeout,
             cache: useCache,
             cacheDir,
@@ -1940,12 +1359,7 @@ export async function fetchAndSaveAllPackages(options: PackageFetchOptions = {})
       }
     }
 
-    // Clean up browser
-    if (!options.outputJson) {
-      console.log('Closing browser...')
-    }
-    await browser.close()
-
+    // No browser cleanup needed - ts-web-scraper doesn't use browsers
     const totalTime = Math.round((Date.now() - startTime) / 1000)
     if (!options.outputJson) {
       console.log(`\nCompleted in ${totalTime}s. Successfully processed: ${successfulPackages.length}, Failed: ${failedPackages.length}`)
@@ -2188,113 +1602,9 @@ export async function fetchAndSavePackage(
       }
       catch (error: any) {
         if (error.toString().includes('404') || error.toString().includes('Not Found')) {
-          console.error(`Package ${packageName} returned 404 Not Found. Trying alternative approaches...`)
-
-          // For nested packages, try a different URL structure
-          if (packageName.includes('/')) {
-          // Try fetching with a direct URL approach for nested packages
-            let altBrowser = null
-            try {
-              const { chromium } = await import('playwright')
-              altBrowser = await chromium.launch({
-                headless: true,
-                timeout: actualTimeout, // Use the same timeout
-              })
-              const context = await altBrowser.newContext()
-              const page = await context.newPage()
-
-              try {
-                // Use the exact URL we know works
-                // Convert package name from filename format to URL format for nested packages
-                const urlPackageName = convertPackageNameToUrl(packageName)
-                const directUrl = `https://pkgx.dev/pkgs/${urlPackageName}/`
-                console.error(`Trying direct URL: ${directUrl}`)
-
-                await page.goto(directUrl, {
-                  timeout: actualTimeout, // Use the same timeout
-                  waitUntil: 'networkidle',
-                })
-
-                // Wait for client-side rendering
-                await page.waitForTimeout(2000)
-
-                // Create a minimal package info object based on what we know
-                const packageInfo: PkgxPackage = {
-                  name: packageName.includes('/') ? packageName.split('/').pop() || packageName : packageName,
-                  domain,
-                  description: await page.evaluate(() => {
-                    const descEl = document.querySelector('h5.MuiTypography-h5')
-                    return descEl ? descEl.textContent?.trim() || '' : ''
-                  }) || `${packageName} package`,
-                  packageYmlUrl: `https://github.com/pkgxdev/pantry/tree/main/projects/${packageName}/package.yml`,
-                  homepageUrl: '',
-                  githubUrl: '',
-                  installCommand: `launchpad install ${packageName}`,
-                  pkgxInstallCommand: `sh <(curl https://pkgx.sh) +${packageName} -- $SHELL -i`,
-                  launchpadInstallCommand: `launchpad install ${packageName}`,
-                  programs: [],
-                  companions: [],
-                  dependencies: [],
-                  versions: [],
-                }
-
-                // Add the aliases (only if not generic)
-                const safeFilename = packageName.replace(/\//g, '-')
-                const genericWords = ['cli', 'app', 'tool', 'server', 'client', 'api', 'lib', 'core']
-                const knownAliases = genericWords.includes(subPath.toLowerCase()) ? [] : [subPath]
-
-                const enhancedPackageInfo = {
-                  ...packageInfo,
-                  fullPath: packageName,
-                  aliases: knownAliases.length > 0 ? knownAliases : [],
-                }
-
-                // Save the package data
-                let filePath: string
-                if (saveAsJson) {
-                  filePath = path.join(outputDir, `${safeFilename}.json`)
-                  fs.writeFileSync(filePath, JSON.stringify(enhancedPackageInfo, null, 2))
-                }
-                else {
-                  filePath = savePackageAsTypeScript(outputDir, packageName, enhancedPackageInfo)
-                }
-
-                console.log(`Successfully saved nested package to ${filePath} using alternative method`)
-                return {
-                  success: true,
-                  fullDomainName: packageName,
-                  aliases: knownAliases,
-                  filePath,
-                }
-              }
-              finally {
-                if (altBrowser) {
-                  try {
-                    await altBrowser.close()
-                  }
-                  catch (err) {
-                    console.error(`Error closing alternative browser for ${packageName}:`, err)
-                  }
-                }
-              }
-            }
-            catch (directError) {
-              // Make sure to close the browser if an error occurs
-              if (altBrowser) {
-                try {
-                  await altBrowser.close()
-                }
-                catch (err) {
-                  console.error(`Error closing alternative browser for ${packageName}:`, err)
-                }
-              }
-              console.error(`Alternative method for nested package also failed:`, directError)
-              // Fall through to the retry logic
-            }
-          }
-
+          console.error(`Package ${packageName} returned 404 Not Found.`)
           // Don't retry on 404 errors, skip to avoid overwriting existing files
-          console.error(`Package ${packageName} returned 404 Not Found. Skipping to avoid overwriting existing files.`)
+          console.error(`Skipping ${packageName} to avoid overwriting existing files.`)
           return { success: false, fullDomainName: packageName }
         }
         throw error // Re-throw for other errors to allow retries

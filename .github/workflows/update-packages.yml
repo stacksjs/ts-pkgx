@@ -43,9 +43,6 @@ jobs:
       - name: Install dependencies
         run: bun install
 
-      - name: Install Playwright browsers
-        run: bunx playwright install chromium --with-deps
-
       - name: Show initial git status
         run: |
           echo "=== Initial Git Status ==="
@@ -73,27 +70,32 @@ jobs:
 
           # Now determine what was actually updated by checking git status
           echo "Checking git status to determine updated packages..."
-          CHANGED_FILES=$(git status --porcelain src/packages/ | grep "^ M " | awk '{print $2}' | sed 's|src/packages/||' | sed 's|\.ts$||' | head -20)
+          CHANGED_FILES=$(git status --porcelain src/packages/ | grep "^ M " | awk '{print $2}' | head -20)
 
           if [ -n "$CHANGED_FILES" ]; then
             echo "Found changed package files:"
             echo "$CHANGED_FILES"
 
-            # Convert to JSON array
+            # Extract clean package names from the actual source files
             UPDATED_PACKAGES_JSON="["
             FIRST=true
             TOTAL_UPDATED=0
-            while IFS= read -r file; do
-              if [ -n "$file" ]; then
-                if [ "$FIRST" = true ]; then
-                  FIRST=false
-                else
-                  UPDATED_PACKAGES_JSON="$UPDATED_PACKAGES_JSON,"
+            while IFS= read -r filepath; do
+              if [ -n "$filepath" ] && [ -f "$filepath" ]; then
+                # Extract the "name: 'xyz'" from the TypeScript file
+                CLEAN_NAME=$(grep -m 1 "name: '" "$filepath" | sed "s/.*name: '//" | sed "s/' as const.*//" | tr -d '\n\r')
+
+                if [ -n "$CLEAN_NAME" ]; then
+                  if [ "$FIRST" = true ]; then
+                    FIRST=false
+                  else
+                    UPDATED_PACKAGES_JSON="$UPDATED_PACKAGES_JSON,"
+                  fi
+                  # Escape package name for JSON
+                  ESC_PKG=$(echo "$CLEAN_NAME" | sed 's/"/\\"/g')
+                  UPDATED_PACKAGES_JSON="$UPDATED_PACKAGES_JSON\"$ESC_PKG\""
+                  TOTAL_UPDATED=$((TOTAL_UPDATED + 1))
                 fi
-                # Escape package name for JSON
-                ESC_PKG=$(echo "$file" | sed 's/"/\\"/g')
-                UPDATED_PACKAGES_JSON="$UPDATED_PACKAGES_JSON\"$ESC_PKG\""
-                TOTAL_UPDATED=$((TOTAL_UPDATED + 1))
               fi
             done <<< "$CHANGED_FILES"
             UPDATED_PACKAGES_JSON="$UPDATED_PACKAGES_JSON]"
@@ -279,13 +281,13 @@ jobs:
           TOTAL_UPDATED=$(jq -r '.totalUpdated // 0' "$FETCH_JSON_FILE" 2>/dev/null || echo "0")
           TOTAL_PROCESSED=$(jq -r '.totalProcessed // 0' "$FETCH_JSON_FILE" 2>/dev/null || echo "0")
 
-          # Extract first few package names for commit message
-          # Use a more robust approach that handles large arrays without broken pipes
+          # Extract package names for commit message
+          # These are already clean names extracted from the source files (e.g., "dotnet", "bitcoin", "python")
           UPDATED_PACKAGES=$(jq -r '
             if .updatedPackages then .updatedPackages[]
             elif .updatedPackagesMixed then .updatedPackagesMixed[]
             else empty
-            end' "$FETCH_JSON_FILE" 2>/dev/null | head -15 | sed 's/[^a-zA-Z0-9.-]/_/g' | tr '\n' ' ' | tr -d '\0' | xargs 2>/dev/null || echo "")
+            end' "$FETCH_JSON_FILE" 2>/dev/null | head -15 | tr '\n' ' ' | tr -d '\0' | xargs 2>/dev/null || echo "")
 
           # Debug output with safe string operations
           echo "Total packages processed: $TOTAL_PROCESSED"

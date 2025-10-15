@@ -133,8 +133,8 @@ version: 1.0.0
 
     test('should resolve caret constraint to latest compatible', async () => {
       const result = await resolveVersionConstraint('bun.sh', '^1.2.16')
-      // Should resolve to 1.2.19 or latest 1.x version
-      expect(result).toMatch(/^1\.2\.\d+$/)
+      // Should resolve to latest 1.x version (caret allows minor updates)
+      expect(result).toMatch(/^1\.\d+\.\d+$/)
       expect(compareVersions(result, '1.2.16')).toBeGreaterThanOrEqual(0)
     })
 
