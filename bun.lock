@@ -4,7 +4,7 @@
     "": {
       "name": "ts-pkgx",
       "dependencies": {
-        "ts-web-scraper": "^0.1.0",
+        "ts-web-scraper": "^0.1.1",
       },
       "devDependencies": {
         "@stacksjs/docs": "^0.70.23",
@@ -1770,7 +1770,7 @@
 
     "ts-pkgx": ["ts-pkgx@0.4.88", "", { "optionalDependencies": { "chromium-bidi": "^7.2.0", "electron": "^37.4.0", "js-yaml": "^4.1.0", "playwright": "^1.55.0" }, "bin": { "ts-pkgx": "dist/bin/cli.js" } }, "sha512-VL9G/3QQbintDF/3uE5aabwSBvnv2xKdcKAsYyluUGKSnWD4zhgjIYvQxpnWvr6XuDvClc3wJPhA+RSfgbAAmg=="],
 
-    "ts-web-scraper": ["ts-web-scraper@0.1.0", "", { "bin": { "scraper": "dist/bin/cli.js" } }, "sha512-e2X4A13+WpcGGYS3dnIzTmedvu6uK3Wu7o3XY/zfmEVmXAAmPhQOGBjDEJLdsb6ot7OIZKU2qI/l5/F78N9ZCw=="],
+    "ts-web-scraper": ["ts-web-scraper@0.1.1", "", { "bin": { "scraper": "dist/bin/cli.js" } }, "sha512-js+gSRe95yDD9U3+GmjvIKBYLAN9WoZKV84x7HcSI7dqdWEIoZSeSGR/Jbr8f5hCeV9FD70KdTPIS2LQwviQXQ=="],
 
     "tslib": ["tslib@2.8.1", "", {}, "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w=="],
 

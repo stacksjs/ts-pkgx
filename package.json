@@ -83,7 +83,7 @@
     "pkgx:docs": "bun bin/cli.ts generate-docs"
   },
   "dependencies": {
-    "ts-web-scraper": "^0.1.0"
+    "ts-web-scraper": "^0.1.1"
   },
   "devDependencies": {
     "@stacksjs/docs": "^0.70.23",
