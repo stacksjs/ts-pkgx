@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-10-15T17:10:02.047Z
+- **Last Updated**: 2025-10-15T18:12:39.270Z
 
 ## Table of Contents
 
@@ -142,7 +142,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[podman.io](./packages/podman.io/index.md)** () | Podman: A tool for managing OCI containers and pods. | podman, podman-remote, podman-mac-helper | 5.6.2 (+42) | `pkgx podman` |
 | **[runatlantis.io](./packages/runatlantis.io/index.md)** () | Terraform Pull Request Automation tool | atlantis | 0.36.0 (+20) | `pkgx atlantis` |
 | **[terraform.io](./packages/terraform.io/index.md)** () | Terraform enables you to safely and predictably create, change, and improve infrastructure. It is... | terraform | 1.13.4 (+79) | `pkgx terraform` |
-| **[terragrunt.gruntwork.io](./packages/terragrunt.gruntwork.io/index.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.90.2 (+388) | `pkgx terragrunt` |
+| **[terragrunt.gruntwork.io](./packages/terragrunt.gruntwork.io/index.md)** () | Terragrunt is a flexible orchestration tool that allows Infrastructure as Code written in OpenTof... | terragrunt | 0.91.0 (+389) | `pkgx terragrunt` |
 | **[terratag.io](./packages/terratag.io/index.md)** () | Terratag is a CLI tool that enables users of Terraform to automatically create and maintain tags ... | terratag | 0.7.3 (+18) | `pkgx terratag` |
 | **[vaultproject.io](./packages/vaultproject.io/index.md)** () | A tool for secrets management, encryption as a service, and privileged access management | vault | 1.20.3 (+59) | `pkgx vault` |
 
@@ -373,7 +373,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.195 (+448) | `pkgx fly` |
 | **[heroku.com](./packages/heroku.com/index.md)** () | CLI for Heroku | heroku | 10.13.2 (+37) | `pkgx heroku` |
 | **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.9.2 (+28) | `pkgx localstack` |
-| **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.258.0 (+80) | `pkgx pscale` |
+| **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.259.0 (+81) | `pkgx pscale` |
 | **[railway.app](./packages/railway.app/index.md)** () | Develop and deploy code with zero configuration | railway | 4.10.0 (+60) | `pkgx railway` |
 | **[render.com](./packages/render.com/index.md)** () | Command-line interface for Render | render | 0.1.11 (+5) | `pkgx render` |
 | **[supabase.com/cli](./packages/supabase.com/cli/index.md)** () | Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres b... | supabase | 2.51.0 (+192) | `pkgx supabase` |
