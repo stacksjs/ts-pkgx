@@ -60,23 +60,31 @@ export async function scrapePkgxPackage(
 
 /**
  * Fetch basic package info from pkgx.dev JSON API
+ * Returns null if not available (some packages don't have JSON API data)
  */
-async function fetchPkgxJson(packageName: string, timeout: number): Promise<any> {
+async function fetchPkgxJson(packageName: string, timeout: number): Promise<any | null> {
   const url = `https://pkgx.dev/pkgs/${packageName}.json`
 
-  const response = await fetch(url, {
-    headers: {
-      'Accept': 'application/json',
-      'User-Agent': 'ts-pkgx',
-    },
-    signal: AbortSignal.timeout(timeout),
-  })
+  try {
+    const response = await fetch(url, {
+      headers: {
+        'Accept': 'application/json',
+        'User-Agent': 'ts-pkgx',
+      },
+      signal: AbortSignal.timeout(timeout),
+    })
 
-  if (!response.ok) {
-    throw new Error(`HTTP ${response.status}: ${response.statusText}`)
+    if (!response.ok) {
+      // JSON API not available for this package (404), fall back to other sources
+      return null
+    }
+
+    return await response.json()
   }
-
-  return response.json()
+  catch (error) {
+    // Network error or timeout, return null to use other data sources
+    return null
+  }
 }
 
 /**
@@ -279,7 +287,7 @@ function parseSimpleYaml(yaml: string): PantryData {
  * Normalize package data from various sources
  */
 function normalizePackageData(
-  pkgxData: any,
+  pkgxData: any | null,
   pantryData: PantryData | null,
   versions: string[],
   packageName: string,
@@ -309,22 +317,25 @@ function normalizePackageData(
     }
   }
 
+  // Extract name from package path if not in pkgxData (e.g., "getmonero.org" -> "getmonero")
+  const fallbackName = packageName.split('/').pop()?.replace(/\.(org|com|io|net|dev)$/, '') || packageName
+
   return {
-    name: pkgxData.displayName || pkgxData.name || packageName.split('/').pop() || packageName,
-    domain: pkgxData.project || packageName,
-    brief: pkgxData.brief || pkgxData.description,
-    description: pkgxData.description || pkgxData.brief,
-    displayName: pkgxData.displayName,
-    homepage: pkgxData.homepage,
-    github: pkgxData.github,
-    brew_url: pkgxData.brew_url,
-    license: pkgxData.license,
-    provides: pkgxData.provides || [],
+    name: pkgxData?.displayName || pkgxData?.name || fallbackName,
+    domain: pkgxData?.project || packageName,
+    brief: pkgxData?.brief || pkgxData?.description || '',
+    description: pkgxData?.description || pkgxData?.brief || '',
+    displayName: pkgxData?.displayName,
+    homepage: pkgxData?.homepage,
+    github: pkgxData?.github,
+    brew_url: pkgxData?.brew_url,
+    license: pkgxData?.license,
+    provides: pkgxData?.provides || [],
     companions: pantryData?.companions || [],
     dependencies,
     versions,
     build: pantryData?.build,
-    interprets: pkgxData.interprets,
+    interprets: pkgxData?.interprets,
   }
 }
 
