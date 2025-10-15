@@ -10,7 +10,7 @@
  * @name `bun`
  * @aliases `bun.com`
  * @homepage https://bun.sh
- * @dependencies `curl.se`
+ * @buildDependencies `curl.se` - required only when building from source
  *
  * @example
  * ```typescript
@@ -62,11 +62,12 @@ export const bunPackage = {
     'bunx',
   ] as const,
   companions: [] as const,
+  dependencies: [] as const,
   /**
-   * Required dependencies for this package.
-   * These will be automatically installed.
+   * Build dependencies for this package.
+   * These are only required when building the package from source.
    */
-  dependencies: [
+  buildDependencies: [
     'curl.se',
   ] as const,
   /**

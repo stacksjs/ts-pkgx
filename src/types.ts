@@ -51,7 +51,14 @@ export interface PkgxPackage {
   launchpadInstallCommand: string
   programs: string[]
   companions: string[]
+  /**
+   * Runtime dependencies (from top-level dependencies in package.yml)
+   */
   dependencies: string[]
+  /**
+   * Build-time dependencies (from build.dependencies in package.yml)
+   */
+  buildDependencies?: string[]
   versions: string[]
   /**
    * List of alternative names or aliases for this package

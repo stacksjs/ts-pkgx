@@ -18,8 +18,15 @@ export interface PkgxPackageData {
   brew_url?: string
   license?: string
   provides?: string[]
-  companions?: Record<string, string>
-  dependencies?: Record<string, string | Record<string, string>>
+  companions?: Record<string, string> | string[]
+  // Runtime dependencies (from top-level dependencies in package.yml)
+  dependencies?: Record<string, string | Record<string, string>> | string[]
+  // Build-time dependencies (from build.dependencies in package.yml)
+  buildDependencies?: string[]
+  // All dependencies combined (runtime + build) for backwards compatibility
+  allDependencies?: string[]
+  // Test dependencies (from test.dependencies in package.yml, if exists)
+  testDependencies?: string[]
   build?: {
     dependencies?: Record<string, string | Record<string, string>>
     script?: string | string[]
@@ -28,6 +35,7 @@ export interface PkgxPackageData {
     extensions: string | string[]
     args?: string | string[]
   }
+  versions?: string[]
   [key: string]: any
 }
 

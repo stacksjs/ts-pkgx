@@ -325,29 +325,28 @@ function normalizePackageData(
   packageName: string,
 ): PkgxPackageData {
   // Extract dependencies from pantry
-  // Runtime dependencies are in the top-level dependencies section
-  // Build dependencies are in build.dependencies
-  const dependencies: string[] = []
+  // Separate runtime dependencies (top-level) from build dependencies (build.dependencies)
+  const runtimeDependencies: string[] = []
+  const buildDependencies: string[] = []
 
-  // Add runtime dependencies (top-level)
+  // Add runtime dependencies (top-level dependencies section)
   if (pantryData?.dependencies) {
     for (const [pkg, version] of Object.entries(pantryData.dependencies)) {
       const versionStr = version.toString().trim()
-      dependencies.push(versionStr === '*' ? pkg : `${pkg}@${versionStr}`)
+      runtimeDependencies.push(versionStr === '*' ? pkg : `${pkg}@${versionStr}`)
     }
   }
 
-  // Add build dependencies (build.dependencies)
+  // Add build dependencies (build.dependencies section)
   if (pantryData?.build?.dependencies) {
     for (const [pkg, version] of Object.entries(pantryData.build.dependencies)) {
       const versionStr = version.toString().trim()
-      // Skip if already added from runtime deps
-      const depStr = versionStr === '*' ? pkg : `${pkg}@${versionStr}`
-      if (!dependencies.includes(pkg) && !dependencies.some(d => d.startsWith(pkg + '@'))) {
-        dependencies.push(depStr)
-      }
+      buildDependencies.push(versionStr === '*' ? pkg : `${pkg}@${versionStr}`)
     }
   }
+
+  // Combine all dependencies for backwards compatibility (but keep them separated in the package data)
+  const allDependencies = [...runtimeDependencies, ...buildDependencies]
 
   // Extract name from package path if not in pkgxData (e.g., "getmonero.org" -> "getmonero")
   const fallbackName = packageName.split('/').pop()?.replace(/\.(org|com|io|net|dev)$/, '') || packageName
@@ -364,7 +363,11 @@ function normalizePackageData(
     license: pkgxData?.license,
     provides: pkgxData?.provides || [],
     companions: pantryData?.companions || [],
-    dependencies,
+    // Keep separate dependency types
+    dependencies: runtimeDependencies, // Only runtime dependencies in the main dependencies field
+    buildDependencies, // Build-time dependencies
+    // Also provide combined list for backwards compatibility
+    allDependencies,
     versions,
     build: pantryData?.build,
     interprets: pkgxData?.interprets,
@@ -422,19 +425,7 @@ export async function scrapePkgxIndex(
     // Fall through
   }
 
-  // Fallback: scrape the main page
-  const scraped = await scrapeClientSide('https://pkgx.dev/pkgs/', {
-    timeout,
-    analyzeJavaScript: true,
-    reconstructAPI: true,
-  })
-
-  // Look for index data in API responses
-  for (const [endpoint, data] of scraped.apiResponses) {
-    if (endpoint.includes('index.json') && Array.isArray(data)) {
-      return data.map(item => item.project || item)
-    }
-  }
-
-  throw new Error('Failed to scrape package index')
+  // Fallback: If the JSON API fails, we should error out rather than try to scrape
+  // (scraping is no longer needed since the JSON API is reliable)
+  throw new Error('Failed to fetch package index from pkgx.dev/pkgs/index.json')
 }

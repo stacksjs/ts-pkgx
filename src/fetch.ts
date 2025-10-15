@@ -103,8 +103,21 @@ function getPropertyJSDoc(key: string, value: any): string | null {
         const osNote = hasOsDeps ? '\n   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:freetype.org`).' : ''
 
         return `  /**
-   * Required dependencies for this package.
-   * These will be automatically installed.${osNote}
+   * Runtime dependencies for this package.
+   * These are required when running the package.${osNote}
+   */`
+      }
+      break
+
+    case 'buildDependencies':
+      if (Array.isArray(value) && value.length > 0) {
+        // Check if any dependencies are OS-specific
+        const hasOsDeps = value.some(dep => typeof dep === 'string' && dep.includes(':'))
+        const osNote = hasOsDeps ? '\n   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).' : ''
+
+        return `  /**
+   * Build dependencies for this package.
+   * These are only required when building the package from source.${osNote}
    */`
       }
       break
@@ -319,7 +332,7 @@ function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, pack
     lines.push(` * @homepage ${packageInfo.homepageUrl}`)
   }
 
-  // Dependencies
+  // Runtime Dependencies
   if (packageInfo.dependencies && packageInfo.dependencies.length > 0) {
     const depsList = packageInfo.dependencies.slice(0, 3).join('`, `')
     const moreDeps = packageInfo.dependencies.length > 3 ? `, ... (+${packageInfo.dependencies.length - 3} more)` : ''
@@ -329,6 +342,18 @@ function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, pack
     const osNote = hasOsDeps ? ' (includes OS-specific dependencies with `os:package` format)' : ''
 
     lines.push(` * @dependencies \`${depsList}\`${moreDeps}${osNote}`)
+  }
+
+  // Build Dependencies
+  if (packageInfo.buildDependencies && packageInfo.buildDependencies.length > 0) {
+    const depsList = packageInfo.buildDependencies.slice(0, 3).join('`, `')
+    const moreDeps = packageInfo.buildDependencies.length > 3 ? `, ... (+${packageInfo.buildDependencies.length - 3} more)` : ''
+
+    // Check if any dependencies are OS-specific
+    const hasOsDeps = packageInfo.buildDependencies.some(dep => dep.includes(':'))
+    const osNote = hasOsDeps ? ' (includes OS-specific dependencies with `os:package` format)' : ''
+
+    lines.push(` * @buildDependencies \`${depsList}\`${moreDeps}${osNote} - required only when building from source`)
   }
 
   // Companions
@@ -829,8 +854,9 @@ export async function fetchPantryPackage(
       pkgxInstallCommand: `sh <(curl https://pkgx.sh) +${packageName} -- $SHELL -i`,
       launchpadInstallCommand: `launchpad install ${packageName}`,
       programs: scrapedData.provides || [],
-      companions: scrapedData.companions || [],
-      dependencies: scrapedData.dependencies || [],
+      companions: Array.isArray(scrapedData.companions) ? scrapedData.companions : [],
+      dependencies: Array.isArray(scrapedData.dependencies) ? scrapedData.dependencies : [],
+      buildDependencies: scrapedData.buildDependencies || [],
       versions: scrapedData.versions || [],
       aliases: [],
     }
@@ -1924,8 +1950,10 @@ export async function readPantryPackageInfo(packageName: string, pantryDir = 'sr
     // Parse YAML content - for now we'll extract what we can with simple regex
     // In a full implementation, you'd want to use a proper YAML parser
 
-    // Extract dependencies with version constraints (both top-level and build dependencies)
-    const dependencies: string[] = []
+    // Extract dependencies with version constraints
+    // Separate runtime dependencies (top-level) from build dependencies (build.dependencies)
+    const runtimeDependencies: string[] = []
+    const buildDependencies: string[] = []
     const depsLines = yamlContent.split('\n')
     let inDepsSection = false
     let inBuildDepsSection = false
@@ -1986,10 +2014,22 @@ export async function readPantryPackageInfo(packageName: string, pantryDir = 'sr
               const hasVersionOperator = /^[~^>=<@]/.test(version)
               const isSpecificVersion = /^\d+(?:\.\d+)*$/.test(version)
               const operator = hasVersionOperator ? '' : (isSpecificVersion ? '@' : '^')
-              dependencies.push(`${osPrefix}${pkg}${operator}${version}`)
+              const depString = `${osPrefix}${pkg}${operator}${version}`
+              if (inBuildDepsSection) {
+                buildDependencies.push(depString)
+              }
+              else {
+                runtimeDependencies.push(depString)
+              }
             }
             else {
-              dependencies.push(`${osPrefix}${pkg}`)
+              const depString = `${osPrefix}${pkg}`
+              if (inBuildDepsSection) {
+                buildDependencies.push(depString)
+              }
+              else {
+                runtimeDependencies.push(depString)
+              }
             }
           }
           // If we hit a line with less than 4 spaces, we're out of this OS section
@@ -2015,10 +2055,22 @@ export async function readPantryPackageInfo(packageName: string, pantryDir = 'sr
               const hasVersionOperator = /^[~^>=<@]/.test(version)
               const isSpecificVersion = /^\d+(?:\.\d+)*$/.test(version)
               const operator = hasVersionOperator ? '' : (isSpecificVersion ? '@' : '^')
-              dependencies.push(`${pkg}${operator}${version}`)
+              const depString = `${pkg}${operator}${version}`
+              if (inBuildDepsSection) {
+                buildDependencies.push(depString)
+              }
+              else {
+                runtimeDependencies.push(depString)
+              }
             }
             else {
-              dependencies.push(pkg)
+              const depString = pkg
+              if (inBuildDepsSection) {
+                buildDependencies.push(depString)
+              }
+              else {
+                runtimeDependencies.push(depString)
+              }
             }
           }
         }
@@ -2101,7 +2153,8 @@ export async function readPantryPackageInfo(packageName: string, pantryDir = 'sr
     const packageInfo: Partial<PkgxPackage> = {
       name: packageName.split('/').pop() || packageName,
       domain: packageName,
-      dependencies,
+      dependencies: runtimeDependencies,
+      buildDependencies,
       companions,
       homepageUrl,
       githubUrl,
@@ -2165,6 +2218,9 @@ export async function fetchPantryPackageWithMetadata(
         dependencies: pantryInfo.dependencies && pantryInfo.dependencies.length > 0
           ? pantryInfo.dependencies
           : webData.packageInfo.dependencies,
+        buildDependencies: pantryInfo.buildDependencies && pantryInfo.buildDependencies.length > 0
+          ? pantryInfo.buildDependencies
+          : webData.packageInfo.buildDependencies,
         companions: pantryInfo.companions && pantryInfo.companions.length > 0
           ? pantryInfo.companions
           : webData.packageInfo.companions,
