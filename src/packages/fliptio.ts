@@ -6,18 +6,15 @@
  * @version `2.2.0` (53 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install flipt`
- * @name `flipt`
+ * @install `launchpad install flipt.io`
+ * @homepage https://flipt.io
+ * @dependencies `go.dev@1.22.0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.flipt
- * // Or access via domain
- * const samePkg = pantry.fliptio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.fliptio
  * console.log(pkg.name)        // "flipt"
  * console.log(pkg.description) // "Enterprise-ready, GitOps enabled, CloudNative f..."
  * console.log(pkg.programs)    // ["flipt"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/flipt-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fliptPackage = {
+export const fliptioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const fliptPackage = {
    */
   description: 'Enterprise-ready, GitOps enabled, CloudNative feature management solution' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/flipt.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://flipt.io' as const,
+  githubUrl: 'https://github.com/flipt-io/flipt' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install flipt' as const,
+  installCommand: 'launchpad install flipt.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +flipt.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install flipt.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const fliptPackage = {
     'flipt',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@1.22.0',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -116,13 +121,7 @@ export const fliptPackage = {
     '1.44.1',
     '1.44.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) flipt -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install flipt' as const,
 }
 
-export type FliptPackage = typeof fliptPackage
+export type FliptioPackage = typeof fliptioPackage

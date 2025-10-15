@@ -6,18 +6,15 @@
  * @version `1.14.0` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install doxygen`
- * @name `doxygen`
+ * @install `launchpad install doxygen.nl`
+ * @homepage https://www.doxygen.nl/
+ * @dependencies `gnu.org/bison@^3`, `cmake.org@^3`, `github.com/westes/flex@2`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.doxygen
- * // Or access via domain
- * const samePkg = pantry.doxygennl
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.doxygennl
  * console.log(pkg.name)        // "doxygen"
  * console.log(pkg.description) // "Generate documentation for several programming ..."
  * console.log(pkg.programs)    // ["doxygen"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/doxygen-nl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const doxygenPackage = {
+export const doxygennlPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const doxygenPackage = {
    */
   description: 'Generate documentation for several programming languages' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/doxygen.nl/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.doxygen.nl/' as const,
+  githubUrl: 'https://github.com/doxygen/doxygen' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install doxygen' as const,
+  installCommand: 'launchpad install doxygen.nl' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +doxygen.nl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install doxygen.nl' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,16 @@ export const doxygenPackage = {
     'doxygen',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/bison@^3',
+    'cmake.org@^3',
+    'github.com/westes/flex@2',
+    'python.org@>=3<3.12',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -73,13 +81,7 @@ export const doxygenPackage = {
     '1.9.7',
     '1.9.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) doxygen -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install doxygen' as const,
 }
 
-export type DoxygenPackage = typeof doxygenPackage
+export type DoxygennlPackage = typeof doxygennlPackage

@@ -1,11 +1,12 @@
 /**
- * **fna-xna.github.io** - FAudio - Accuracy-focused XAudio reimplementation for open platforms
+ * **fna-xna.github** - FAudio - Accuracy-focused XAudio reimplementation for open platforms
  *
  * @domain `fna-xna.github.io`
  * @version `25.10.0` (22 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fna-xna.github.io`
+ * @homepage https://fna-xna.github.io/
  * @dependencies `libsdl.org^2.28`
  *
  * @example
@@ -13,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.fnaxnagithubio
- * console.log(pkg.name)        // "fna-xna.github.io"
+ * console.log(pkg.name)        // "fna-xna.github"
  * console.log(pkg.description) // "FAudio - Accuracy-focused XAudio reimplementati..."
  * console.log(pkg.versions[0]) // "25.10.0" (latest)
  * ```
@@ -25,7 +26,7 @@ export const fnaxnagithubioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'fna-xna.github.io' as const,
+  name: 'fna-xna.github' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,13 +36,15 @@ export const fnaxnagithubioPackage = {
    */
   description: 'FAudio - Accuracy-focused XAudio reimplementation for open platforms' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fna-xna.github.io/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://fna-xna.github.io/' as const,
   githubUrl: 'https://github.com/FNA-XNA/FAudio' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install fna-xna.github.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fna-xna.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fna-xna.github.io' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -80,8 +83,6 @@ export const fnaxnagithubioPackage = {
     '24.1.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fna-xna.github.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install fna-xna.github.io' as const,
 }
 
 export type FnaxnagithubioPackage = typeof fnaxnagithubioPackage

@@ -6,18 +6,13 @@
  * @version `0.44.0` (23 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install comrak`
- * @name `comrak`
+ * @install `launchpad install crates.io/comrak`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.comrak
- * // Or access via domain
- * const samePkg = pantry.cratesiocomrak
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiocomrak
  * console.log(pkg.name)        // "comrak"
  * console.log(pkg.description) // "CommonMark + GFM compatible Markdown parser and..."
  * console.log(pkg.programs)    // ["comrak"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/comrak.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const comrakPackage = {
+export const cratesiocomrakPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const comrakPackage = {
   description: 'CommonMark + GFM compatible Markdown parser and renderer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/comrak/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/kivikakk/comrak' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install comrak' as const,
+  installCommand: 'launchpad install crates.io/comrak' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/comrak -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/comrak' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -86,13 +83,7 @@ export const comrakPackage = {
     '0.25.0',
     '0.24.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) comrak -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install comrak' as const,
 }
 
-export type ComrakPackage = typeof comrakPackage
+export type CratesiocomrakPackage = typeof cratesiocomrakPackage

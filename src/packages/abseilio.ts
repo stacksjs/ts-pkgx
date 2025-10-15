@@ -1,18 +1,20 @@
 /**
- * **abseil.io** - Abseil Common Libraries (C++)
+ * **abseil** - Abseil Common Libraries (C++)
  *
  * @domain `abseil.io`
  * @version `20250814.1.0` (20 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install abseil.io`
+ * @homepage https://abseil.io
+ * @dependencies `cmake.org@^3`, `gnu.org/gcc@^14`, `if@darwin`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.abseilio
- * console.log(pkg.name)        // "abseil.io"
+ * console.log(pkg.name)        // "abseil"
  * console.log(pkg.description) // "Abseil Common Libraries (C++)"
  * console.log(pkg.versions[0]) // "20250814.1.0" (latest)
  * ```
@@ -24,7 +26,7 @@ export const abseilioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'abseil.io' as const,
+  name: 'abseil' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,16 +36,26 @@ export const abseilioPackage = {
    */
   description: 'Abseil Common Libraries (C++)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/abseil.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://abseil.io' as const,
+  githubUrl: 'https://github.com/abseil/abseil-cpp' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install abseil.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +abseil.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install abseil.io' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org@^3',
+    'gnu.org/gcc@^14',
+    'if@darwin',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -71,8 +83,6 @@ export const abseilioPackage = {
     '20220623.2.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +abseil.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install abseil.io' as const,
 }
 
 export type AbseilioPackage = typeof abseilioPackage

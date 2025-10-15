@@ -1,5 +1,5 @@
 /**
- * **certifi.io/python-certifi** - (Python Distribution) A carefully curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts.
+ * **python-certifi** - (Python Distribution) A carefully curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts.
  *
  * @domain `certifi.io/python-certifi`
  * @version `2025.10.5` (12 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.certifiiopythoncertifi
- * console.log(pkg.name)        // "certifi.io/python-certifi"
+ * console.log(pkg.name)        // "python-certifi"
  * console.log(pkg.description) // "(Python Distribution) A carefully curated colle..."
  * console.log(pkg.versions[0]) // "2025.10.5" (latest)
  * ```
@@ -25,7 +25,7 @@ export const certifiiopythoncertifiPackage = {
   /**
    * The display name of this package.
    */
-  name: 'certifi.io/python-certifi' as const,
+  name: 'python-certifi' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,12 +36,14 @@ export const certifiiopythoncertifiPackage = {
   description: '(Python Distribution) A carefully curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/certifi.io/python-certifi/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/certifi/python-certifi' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install certifi.io/python-certifi' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +certifi.io/python-certifi -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install certifi.io/python-certifi' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -70,8 +72,6 @@ export const certifiiopythoncertifiPackage = {
     '2024.2.2',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +certifi.io/python-certifi -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install certifi.io/python-certifi' as const,
 }
 
 export type CertifiiopythoncertifiPackage = typeof certifiiopythoncertifiPackage

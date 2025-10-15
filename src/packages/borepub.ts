@@ -6,18 +6,14 @@
  * @version `0.6.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install bore`
- * @name `bore`
+ * @install `launchpad install bore.pub`
+ * @homepage http://bore.pub
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.bore
- * // Or access via domain
- * const samePkg = pantry.borepub
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.borepub
  * console.log(pkg.name)        // "bore"
  * console.log(pkg.description) // "Modern, simple TCP tunnel in Rust that exposes ..."
  * console.log(pkg.programs)    // ["bore"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/bore-pub.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const borePackage = {
+export const borepubPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const borePackage = {
    */
   description: 'Modern, simple TCP tunnel in Rust that exposes local ports to a remote server' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/bore.pub/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://bore.pub' as const,
+  githubUrl: 'https://github.com/ekzhang/bore' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install bore' as const,
+  installCommand: 'launchpad install bore.pub' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +bore.pub -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bore.pub' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -68,13 +66,7 @@ export const borePackage = {
     '0.5.1',
     '0.5.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bore -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install bore' as const,
 }
 
-export type BorePackage = typeof borePackage
+export type BorepubPackage = typeof borepubPackage

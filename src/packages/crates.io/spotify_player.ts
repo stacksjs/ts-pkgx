@@ -6,19 +6,14 @@
  * @version `0.21.1` (17 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install spotify_player`
- * @name `spotify_player`
+ * @install `launchpad install crates.io/spotify_player`
  * @dependencies `openssl.org^1.1`, `github.com/libsixel/libsixel^1`, `linux:alsa-project.org/alsa-lib^1`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.spotifyplayer
- * // Or access via domain
- * const samePkg = pantry.cratesiospotify_player
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiospotify_player
  * console.log(pkg.name)        // "spotify_player"
  * console.log(pkg.description) // "A Spotify player in the terminal with full feat..."
  * console.log(pkg.programs)    // ["spotify_player"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/spotify_player.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const spotifyplayerPackage = {
+export const cratesiospotify_playerPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const spotifyplayerPackage = {
   description: 'A Spotify player in the terminal with full feature parity' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/spotify_player/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/aome510/spotify-player' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install spotify_player' as const,
+  installCommand: 'launchpad install crates.io/spotify_player' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/spotify_player -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/spotify_player' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -91,13 +88,7 @@ export const spotifyplayerPackage = {
     '0.17.0',
     '0.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) spotify_player -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install spotify_player' as const,
 }
 
-export type SpotifyplayerPackage = typeof spotifyplayerPackage
+export type Cratesiospotify_playerPackage = typeof cratesiospotify_playerPackage

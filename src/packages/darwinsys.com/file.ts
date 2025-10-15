@@ -6,19 +6,15 @@
  * @version `5.46.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install file`
- * @name `file`
+ * @install `launchpad install darwinsys.com/file`
+ * @homepage https://darwinsys.com/file/
  * @dependencies `zlib.net^1 #FIXME this is actually an optional dep`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.file
- * // Or access via domain
- * const samePkg = pantry.darwinsyscomfile
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.darwinsyscomfile
  * console.log(pkg.name)        // "file"
  * console.log(pkg.description) // "Read-only mirror of file CVS repository, update..."
  * console.log(pkg.programs)    // ["file"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/darwinsys-com/file.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const filePackage = {
+export const darwinsyscomfilePackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const filePackage = {
    */
   description: 'Read-only mirror of file CVS repository, updated every half hour. NOTE: do not make pull requests here, nor comment any commits, submit them usual way to bug tracker or to the mailing list. Maintainer(s) are not tracking  this git mirror.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/darwinsys.com/file/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://darwinsys.com/file/' as const,
+  githubUrl: 'https://github.com/file/file' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install file' as const,
+  installCommand: 'launchpad install darwinsys.com/file' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +darwinsys.com/file -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install darwinsys.com/file' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +71,7 @@ export const filePackage = {
     '5.45.0',
     '5.43.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) file -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install file' as const,
 }
 
-export type FilePackage = typeof filePackage
+export type DarwinsyscomfilePackage = typeof darwinsyscomfilePackage

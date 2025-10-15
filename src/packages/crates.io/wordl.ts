@@ -6,18 +6,13 @@
  * @version `0.3.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install wordl`
- * @name `wordl`
+ * @install `launchpad install crates.io/wordl`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.wordl
- * // Or access via domain
- * const samePkg = pantry.cratesiowordl
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiowordl
  * console.log(pkg.name)        // "wordl"
  * console.log(pkg.description) // "Terminal wordle. Web like GUI with Keyboard hin..."
  * console.log(pkg.programs)    // ["wordl"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/wordl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const wordlPackage = {
+export const cratesiowordlPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const wordlPackage = {
   description: 'Terminal wordle. Web like GUI with Keyboard hints, guess reveal animations etc.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/wordl/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/palerdot/wordl-rs' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install wordl' as const,
+  installCommand: 'launchpad install crates.io/wordl' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/wordl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/wordl' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,13 +64,7 @@ export const wordlPackage = {
     '0.1.6',
     '0.1.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) wordl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install wordl' as const,
 }
 
-export type WordlPackage = typeof wordlPackage
+export type CratesiowordlPackage = typeof cratesiowordlPackage

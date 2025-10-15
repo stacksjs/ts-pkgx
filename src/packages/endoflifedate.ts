@@ -6,19 +6,15 @@
  * @version `0.22.0` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install eol`
- * @name `eol`
+ * @install `launchpad install endoflife.date`
+ * @homepage https://endoflife.date
  * @dependencies `python.org^3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.eol
- * // Or access via domain
- * const samePkg = pantry.endoflifedate
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.endoflifedate
  * console.log(pkg.name)        // "eol"
  * console.log(pkg.description) // "CLI to show end-of-life dates for a number of p..."
  * console.log(pkg.programs)    // ["eol"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/endoflife-date.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const eolPackage = {
+export const endoflifedatePackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const eolPackage = {
    */
   description: 'CLI to show end-of-life dates for a number of products.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/endoflife.date/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://endoflife.date' as const,
+  githubUrl: 'https://github.com/hugovk/norwegianblue' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install eol' as const,
+  installCommand: 'launchpad install endoflife.date' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +endoflife.date -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install endoflife.date' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,13 +77,7 @@ export const eolPackage = {
     '0.15.0',
     '0.14.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) eol -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install eol' as const,
 }
 
-export type EolPackage = typeof eolPackage
+export type EndoflifedatePackage = typeof endoflifedatePackage

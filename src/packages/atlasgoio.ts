@@ -6,18 +6,15 @@
  * @version `0.37.0` (24 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install atlas`
- * @name `atlas`
+ * @install `launchpad install atlasgo.io`
+ * @homepage https://atlasgo.io
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.atlas
- * // Or access via domain
- * const samePkg = pantry.atlasgoio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.atlasgoio
  * console.log(pkg.name)        // "atlas"
  * console.log(pkg.description) // "Manage your database schema as code"
  * console.log(pkg.programs)    // ["atlas"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/atlasgo-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const atlasPackage = {
+export const atlasgoioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const atlasPackage = {
    */
   description: 'Manage your database schema as code' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/atlasgo.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://atlasgo.io' as const,
+  githubUrl: 'https://github.com/ariga/atlas' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install atlas' as const,
+  installCommand: 'launchpad install atlasgo.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +atlasgo.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install atlasgo.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const atlasPackage = {
     'atlas',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -87,13 +92,7 @@ export const atlasPackage = {
     '0.15.0',
     '0.14.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) atlas -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install atlas' as const,
 }
 
-export type AtlasPackage = typeof atlasPackage
+export type AtlasgoioPackage = typeof atlasgoioPackage

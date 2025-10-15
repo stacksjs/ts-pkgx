@@ -6,19 +6,15 @@
  * @version `0.9.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install epsilon`
- * @name `epsilon`
- * @dependencies `rpm.org/popt`
+ * @install `launchpad install epsilon-project.sourceforge.io`
+ * @homepage https://sourceforge.net/projects/epsilon-project/
+ * @dependencies `gnu.org/make`, `gnu.org/autoconf`, `gnu.org/automake`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.epsilon
- * // Or access via domain
- * const samePkg = pantry.epsilonprojectsourceforgeio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.epsilonprojectsourceforgeio
  * console.log(pkg.name)        // "epsilon"
  * console.log(pkg.description) // "Powerful wavelet image compressor"
  * console.log(pkg.programs)    // ["epsilon"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/epsilon-project-sourceforge-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const epsilonPackage = {
+export const epsilonprojectsourceforgeioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const epsilonPackage = {
    */
   description: 'Powerful wavelet image compressor' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/epsilon-project.sourceforge.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://sourceforge.net/projects/epsilon-project/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install epsilon' as const,
+  installCommand: 'launchpad install epsilon-project.sourceforge.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +epsilon-project.sourceforge.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install epsilon-project.sourceforge.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -62,7 +60,10 @@ export const epsilonPackage = {
    * These will be automatically installed.
    */
   dependencies: [
-    'rpm.org/popt',
+    'gnu.org/make',
+    'gnu.org/autoconf',
+    'gnu.org/automake',
+    'gnu.org/libtool',
   ] as const,
   /**
    * Available versions from newest to oldest.
@@ -71,13 +72,7 @@ export const epsilonPackage = {
   versions: [
     '0.9.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) epsilon -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install epsilon' as const,
 }
 
-export type EpsilonPackage = typeof epsilonPackage
+export type EpsilonprojectsourceforgeioPackage = typeof epsilonprojectsourceforgeioPackage

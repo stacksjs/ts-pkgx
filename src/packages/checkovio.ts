@@ -6,19 +6,15 @@
  * @version `3.2.482` (509 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install checkov`
- * @name `checkov`
+ * @install `launchpad install checkov.io`
+ * @homepage https://www.checkov.io/
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.checkov
- * // Or access via domain
- * const samePkg = pantry.checkovio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.checkovio
  * console.log(pkg.name)        // "checkov"
  * console.log(pkg.description) // "Prevent cloud misconfigurations and find vulner..."
  * console.log(pkg.programs)    // ["checkov"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/checkov-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const checkovPackage = {
+export const checkovioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const checkovPackage = {
    */
   description: 'Prevent cloud misconfigurations and find vulnerabilities during build-time in infrastructure as code, container images and open source packages with Checkov by Bridgecrew.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/checkov.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.checkov.io/' as const,
+  githubUrl: 'https://github.com/bridgecrewio/checkov' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install checkov' as const,
+  installCommand: 'launchpad install checkov.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +checkov.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install checkov.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -579,13 +577,7 @@ export const checkovPackage = {
     '3.1.31',
     '3.1.30',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) checkov -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install checkov' as const,
 }
 
-export type CheckovPackage = typeof checkovPackage
+export type CheckovioPackage = typeof checkovioPackage

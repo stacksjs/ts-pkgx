@@ -6,19 +6,15 @@
  * @version `0.22.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install thrift`
- * @name `thrift`
+ * @install `launchpad install apache.org/thrift`
+ * @homepage https://thrift.apache.org/
  * @dependencies `openssl.org@1.1`, `zlib.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.thrift
- * // Or access via domain
- * const samePkg = pantry.apacheorgthrift
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.apacheorgthrift
  * console.log(pkg.name)        // "thrift"
  * console.log(pkg.description) // "Framework for scalable cross-language services ..."
  * console.log(pkg.programs)    // ["thrift"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/apache-org/thrift.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const thriftPackage = {
+export const apacheorgthriftPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const thriftPackage = {
    */
   description: 'Framework for scalable cross-language services development' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/thrift/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://thrift.apache.org/' as const,
+  githubUrl: 'https://github.com/apache/thrift' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install thrift' as const,
+  installCommand: 'launchpad install apache.org/thrift' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/thrift -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install apache.org/thrift' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,13 +74,7 @@ export const thriftPackage = {
     '0.19.0',
     '0.18.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) thrift -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install thrift' as const,
 }
 
-export type ThriftPackage = typeof thriftPackage
+export type ApacheorgthriftPackage = typeof apacheorgthriftPackage

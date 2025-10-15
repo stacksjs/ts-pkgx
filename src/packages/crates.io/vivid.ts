@@ -6,19 +6,14 @@
  * @version `0.10.1` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install vivid`
- * @name `vivid`
+ * @install `launchpad install crates.io/vivid`
  * @dependencies `zlib.net^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.vivid
- * // Or access via domain
- * const samePkg = pantry.cratesiovivid
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiovivid
  * console.log(pkg.name)        // "vivid"
  * console.log(pkg.description) // "Generator for LS_COLORS with support for multip..."
  * console.log(pkg.programs)    // ["vivid"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/vivid.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const vividPackage = {
+export const cratesiovividPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const vividPackage = {
   description: 'Generator for LS_COLORS with support for multiple color themes' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/vivid/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/sharkdp/vivid' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install vivid' as const,
+  installCommand: 'launchpad install crates.io/vivid' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/vivid -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/vivid' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +70,7 @@ export const vividPackage = {
     '0.10.0',
     '0.9.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) vivid -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install vivid' as const,
 }
 
-export type VividPackage = typeof vividPackage
+export type CratesiovividPackage = typeof cratesiovividPackage

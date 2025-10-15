@@ -6,18 +6,13 @@
  * @version `1.3.4` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install csview`
- * @name `csview`
+ * @install `launchpad install crates.io/csview`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.csview
- * // Or access via domain
- * const samePkg = pantry.cratesiocsview
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiocsview
  * console.log(pkg.name)        // "csview"
  * console.log(pkg.description) // "📠 Pretty and fast csv viewer for cli with cjk/..."
  * console.log(pkg.programs)    // ["csview"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/csview.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const csviewPackage = {
+export const cratesiocsviewPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const csviewPackage = {
   description: '📠 Pretty and fast csv viewer for cli with cjk/emoji support.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/csview/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/wfxr/csview' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install csview' as const,
+  installCommand: 'launchpad install crates.io/csview' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/csview -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/csview' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -70,13 +67,7 @@ export const csviewPackage = {
     '1.2.4',
     '1.2.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) csview -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install csview' as const,
 }
 
-export type CsviewPackage = typeof csviewPackage
+export type CratesiocsviewPackage = typeof cratesiocsviewPackage

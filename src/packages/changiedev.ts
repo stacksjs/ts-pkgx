@@ -6,18 +6,15 @@
  * @version `1.22.1` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install changie`
- * @name `changie`
+ * @install `launchpad install changie.dev`
+ * @homepage https://changie.dev/
+ * @dependencies `go.dev@>=1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.changie
- * // Or access via domain
- * const samePkg = pantry.changiedev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.changiedev
  * console.log(pkg.name)        // "changie"
  * console.log(pkg.description) // "Automated changelog tool for preparing releases..."
  * console.log(pkg.programs)    // ["changie"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/changie-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const changiePackage = {
+export const changiedevPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const changiePackage = {
    */
   description: 'Automated changelog tool for preparing releases with lots of customization options' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/changie.dev/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://changie.dev/' as const,
   githubUrl: 'https://github.com/miniscruff/changie' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install changie' as const,
+  installCommand: 'launchpad install changie.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +changie.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install changie.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const changiePackage = {
     'changie',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@>=1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -72,13 +77,7 @@ export const changiePackage = {
     '1.19.0',
     '1.18.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) changie -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install changie' as const,
 }
 
-export type ChangiePackage = typeof changiePackage
+export type ChangiedevPackage = typeof changiedevPackage

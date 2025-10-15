@@ -6,19 +6,15 @@
  * @version `0.41.0` (35 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gitql`
- * @name `gitql`
+ * @install `launchpad install amrdeveloper.github.io/GQL`
+ * @homepage https://amrdeveloper.github.io/GQL/
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gitql
- * // Or access via domain
- * const samePkg = pantry.amrdevelopergithubiogql
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.amrdevelopergithubiogql
  * console.log(pkg.name)        // "gitql"
  * console.log(pkg.description) // "GitQL is a extensible SQL-like query language a..."
  * console.log(pkg.programs)    // ["gitql"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/amrdeveloper-github-io/GQL.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitqlPackage = {
+export const amrdevelopergithubiogqlPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const gitqlPackage = {
    */
   description: 'GitQL is a extensible SQL-like query language and SDK to perform queries on various data sources such .git files with supports of most of SQL features such as grouping, ordering and aggregation and window functions and allow customization like user-defined types and functions' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/amrdeveloper.github.io/GQL/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://amrdeveloper.github.io/GQL/' as const,
+  githubUrl: 'https://github.com/AmrDeveloper/GQL' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gitql' as const,
+  installCommand: 'launchpad install amrdeveloper.github.io/GQL' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +amrdeveloper.github.io/GQL -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install amrdeveloper.github.io/GQL' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -105,13 +103,7 @@ export const gitqlPackage = {
     '0.10.0',
     '0.9.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gitql -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gitql' as const,
 }
 
-export type GitqlPackage = typeof gitqlPackage
+export type AmrdevelopergithubiogqlPackage = typeof amrdevelopergithubiogqlPackage

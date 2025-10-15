@@ -1,5 +1,5 @@
 /**
- * **elfutils.org** - pkgx package
+ * **elfutils** - pkgx package
  *
  * @domain `elfutils.org`
  * @programs `eu-addr2line`, `eu-ar`, `eu-elfclassify`, `eu-elfcmp`, `eu-elfcompress`, ... (+11 more)
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.elfutilsorg
- * console.log(pkg.name)        // "elfutils.org"
+ * console.log(pkg.name)        // "elfutils"
  * console.log(pkg.programs)    // ["eu-addr2line", "eu-ar", ...]
  * console.log(pkg.versions[0]) // "0.193.0" (latest)
  * ```
@@ -26,7 +26,7 @@ export const elfutilsorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'elfutils.org' as const,
+  name: 'elfutils' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,12 +37,14 @@ export const elfutilsorgPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/elfutils.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install elfutils.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +elfutils.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install elfutils.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -90,8 +92,6 @@ export const elfutilsorgPackage = {
     '0.189.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +elfutils.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install elfutils.org' as const,
 }
 
 export type ElfutilsorgPackage = typeof elfutilsorgPackage

@@ -6,19 +6,15 @@
  * @version `0.8.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install git-crypt`
- * @name `git-crypt`
+ * @install `launchpad install agwa.name/git-crypt`
+ * @homepage https://www.agwa.name/projects/git-crypt/
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gitcrypt
- * // Or access via domain
- * const samePkg = pantry.agwanamegitcrypt
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.agwanamegitcrypt
  * console.log(pkg.name)        // "git-crypt"
  * console.log(pkg.description) // "Enable transparent encryption/decryption of fil..."
  * console.log(pkg.programs)    // ["git-crypt"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/agwa-name/git-crypt.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitcryptPackage = {
+export const agwanamegitcryptPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const gitcryptPackage = {
    */
   description: 'Enable transparent encryption/decryption of files in a git repo' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/agwa.name/git-crypt/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.agwa.name/projects/git-crypt/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install git-crypt' as const,
+  installCommand: 'launchpad install agwa.name/git-crypt' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +agwa.name/git-crypt -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install agwa.name/git-crypt' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +70,7 @@ export const gitcryptPackage = {
     '0.8.0',
     '0.7.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-crypt -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install git-crypt' as const,
 }
 
-export type GitcryptPackage = typeof gitcryptPackage
+export type AgwanamegitcryptPackage = typeof agwanamegitcryptPackage

@@ -6,19 +6,15 @@
  * @version `20.3.5` (131 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ng`
- * @name `ng`
+ * @install `launchpad install angular.dev`
+ * @homepage https://angular.dev/cli/
  * @dependencies `nodejs.org^20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ng
- * // Or access via domain
- * const samePkg = pantry.angulardev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.angulardev
  * console.log(pkg.name)        // "ng"
  * console.log(pkg.description) // "CLI tool for Angular"
  * console.log(pkg.programs)    // ["ng"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/angular-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ngPackage = {
+export const angulardevPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const ngPackage = {
    */
   description: 'CLI tool for Angular' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/angular.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://angular.dev/cli/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ng' as const,
+  installCommand: 'launchpad install angular.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +angular.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install angular.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -201,13 +199,7 @@ export const ngPackage = {
     '16.2.14',
     '15.2.11',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ng -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ng' as const,
 }
 
-export type NgPackage = typeof ngPackage
+export type AngulardevPackage = typeof angulardevPackage

@@ -6,18 +6,15 @@
  * @version `1.2.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install dav1d`
- * @name `dav1d`
+ * @install `launchpad install code.videolan.org/videolan/dav1d`
+ * @homepage https://code.videolan.org/videolan/dav1d
+ * @dependencies `nasm.us@2.14`, `mesonbuild.com@>=0.49`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dav1d
- * // Or access via domain
- * const samePkg = pantry.codevideolanorgvideolandav1d
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.codevideolanorgvideolandav1d
  * console.log(pkg.name)        // "dav1d"
  * console.log(pkg.description) // "AV1 decoder targeted to be small and fast"
  * console.log(pkg.programs)    // ["dav1d"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/code-videolan-org/videolan/dav1d.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dav1dPackage = {
+export const codevideolanorgvideolandav1dPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const dav1dPackage = {
    */
   description: 'AV1 decoder targeted to be small and fast' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/code.videolan.org/videolan/dav1d/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://code.videolan.org/videolan/dav1d' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install dav1d' as const,
+  installCommand: 'launchpad install code.videolan.org/videolan/dav1d' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +code.videolan.org/videolan/dav1d -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install code.videolan.org/videolan/dav1d' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const dav1dPackage = {
     'dav1d',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'nasm.us@2.14',
+    'mesonbuild.com@>=0.49',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -65,13 +71,7 @@ export const dav1dPackage = {
     '1.2.0',
     '1.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dav1d -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install dav1d' as const,
 }
 
-export type Dav1dPackage = typeof dav1dPackage
+export type Codevideolanorgvideolandav1dPackage = typeof codevideolanorgvideolandav1dPackage

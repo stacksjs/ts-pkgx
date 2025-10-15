@@ -1,5 +1,5 @@
 /**
- * **crates.io/sqlx-cli** - 🧰 The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries without a DSL. Supports PostgreSQL, MySQL, and SQLite.
+ * **sqlx-cli** - 🧰 The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries without a DSL. Supports PostgreSQL, MySQL, and SQLite.
  *
  * @domain `crates.io/sqlx-cli`
  * @programs `cargo-sqlx`, `sqlx`
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.cratesiosqlxcli
- * console.log(pkg.name)        // "crates.io/sqlx-cli"
+ * console.log(pkg.name)        // "sqlx-cli"
  * console.log(pkg.description) // "🧰 The Rust SQL Toolkit. An async, pure Rust SQ..."
  * console.log(pkg.programs)    // ["cargo-sqlx", "sqlx"]
  * console.log(pkg.versions[0]) // "0.8.6" (latest)
@@ -27,7 +27,7 @@ export const cratesiosqlxcliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'crates.io/sqlx-cli' as const,
+  name: 'sqlx-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -38,12 +38,14 @@ export const cratesiosqlxcliPackage = {
   description: '🧰 The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries without a DSL. Supports PostgreSQL, MySQL, and SQLite.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/sqlx-cli/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/launchbadge/sqlx' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install crates.io/sqlx-cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/sqlx-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/sqlx-cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,8 +76,6 @@ export const cratesiosqlxcliPackage = {
     '0.7.4',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/sqlx-cli -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/sqlx-cli' as const,
 }
 
 export type CratesiosqlxcliPackage = typeof cratesiosqlxcliPackage

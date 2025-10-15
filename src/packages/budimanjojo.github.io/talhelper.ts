@@ -6,18 +6,15 @@
  * @version `3.0.37` (57 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install talhelper`
- * @name `talhelper`
+ * @install `launchpad install budimanjojo.github.io/talhelper`
+ * @homepage https://budimanjojo.github.io/talhelper/latest/
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.talhelper
- * // Or access via domain
- * const samePkg = pantry.budimanjojogithubiotalhelper
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.budimanjojogithubiotalhelper
  * console.log(pkg.name)        // "talhelper"
  * console.log(pkg.description) // "A tool to help creating Talos kubernetes cluster"
  * console.log(pkg.programs)    // ["talhelper"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/budimanjojo-github-io/talhelper.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const talhelperPackage = {
+export const budimanjojogithubiotalhelperPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const talhelperPackage = {
    */
   description: 'A tool to help creating Talos kubernetes cluster' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/budimanjojo.github.io/talhelper/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://budimanjojo.github.io/talhelper/latest/' as const,
+  githubUrl: 'https://github.com/budimanjojo/talhelper' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install talhelper' as const,
+  installCommand: 'launchpad install budimanjojo.github.io/talhelper' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +budimanjojo.github.io/talhelper -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install budimanjojo.github.io/talhelper' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const talhelperPackage = {
     'talhelper',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -120,13 +125,7 @@ export const talhelperPackage = {
     '2.3.5',
     '2.3.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) talhelper -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install talhelper' as const,
 }
 
-export type TalhelperPackage = typeof talhelperPackage
+export type BudimanjojogithubiotalhelperPackage = typeof budimanjojogithubiotalhelperPackage

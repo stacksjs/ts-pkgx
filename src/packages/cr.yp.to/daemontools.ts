@@ -1,5 +1,5 @@
 /**
- * **cr.yp.to/daemontools** - Collection of tools for managing UNIX services
+ * **daemontools** - Collection of tools for managing UNIX services
  *
  * @domain `cr.yp.to/daemontools`
  * @programs `envdir`, `envuidgid`, `fghack`, `multilog`, `pgrphack`, ... (+12 more)
@@ -7,13 +7,15 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cr.yp.to/daemontools`
+ * @homepage https://cr.yp.to/daemontools.html
+ * @dependencies `gnu.org/gcc`, `curl.se`, `gnu.org/patch`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.cryptodaemontools
- * console.log(pkg.name)        // "cr.yp.to/daemontools"
+ * console.log(pkg.name)        // "daemontools"
  * console.log(pkg.description) // "Collection of tools for managing UNIX services"
  * console.log(pkg.programs)    // ["envdir", "envuidgid", ...]
  * console.log(pkg.versions[0]) // "0.76.0" (latest)
@@ -26,7 +28,7 @@ export const cryptodaemontoolsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cr.yp.to/daemontools' as const,
+  name: 'daemontools' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,13 +38,15 @@ export const cryptodaemontoolsPackage = {
    */
   description: 'Collection of tools for managing UNIX services' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cr.yp.to/daemontools/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://cr.yp.to/daemontools.html' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install cr.yp.to/daemontools' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cr.yp.to/daemontools -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cr.yp.to/daemontools' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,7 +71,16 @@ export const cryptodaemontoolsPackage = {
     'tai64nlocal',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gcc',
+    'curl.se',
+    'gnu.org/patch',
+    'if@linux',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -76,8 +89,6 @@ export const cryptodaemontoolsPackage = {
     '0.76.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cr.yp.to/daemontools -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cr.yp.to/daemontools' as const,
 }
 
 export type CryptodaemontoolsPackage = typeof cryptodaemontoolsPackage

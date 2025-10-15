@@ -1,5 +1,5 @@
 /**
- * **cscope.sourceforge.io** - Tool for browsing source code
+ * **cscope.sourceforge** - Tool for browsing source code
  *
  * @domain `cscope.sourceforge.io`
  * @programs `cscope`, `ocs`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cscope.sourceforge.io`
+ * @homepage https://cscope.sourceforge.net/
  * @dependencies `invisible-island.net/ncurses`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.cscopesourceforgeio
- * console.log(pkg.name)        // "cscope.sourceforge.io"
+ * console.log(pkg.name)        // "cscope.sourceforge"
  * console.log(pkg.description) // "Tool for browsing source code"
  * console.log(pkg.programs)    // ["cscope", "ocs"]
  * console.log(pkg.versions[0]) // "15.9.0" (latest)
@@ -27,7 +28,7 @@ export const cscopesourceforgeioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cscope.sourceforge.io' as const,
+  name: 'cscope.sourceforge' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const cscopesourceforgeioPackage = {
    */
   description: 'Tool for browsing source code' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cscope.sourceforge.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://cscope.sourceforge.net/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install cscope.sourceforge.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cscope.sourceforge.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cscope.sourceforge.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -68,8 +71,6 @@ export const cscopesourceforgeioPackage = {
     '15.9.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cscope.sourceforge.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cscope.sourceforge.io' as const,
 }
 
 export type CscopesourceforgeioPackage = typeof cscopesourceforgeioPackage

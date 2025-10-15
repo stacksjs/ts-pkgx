@@ -6,18 +6,13 @@
  * @version `4.16.0` (14 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install fblog`
- * @name `fblog`
+ * @install `launchpad install crates.io/fblog`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.fblog
- * // Or access via domain
- * const samePkg = pantry.cratesiofblog
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiofblog
  * console.log(pkg.name)        // "fblog"
  * console.log(pkg.description) // "Small command-line JSON Log viewer"
  * console.log(pkg.programs)    // ["fblog"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/fblog.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fblogPackage = {
+export const cratesiofblogPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const fblogPackage = {
   description: 'Small command-line JSON Log viewer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/fblog/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/brocode/fblog' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install fblog' as const,
+  installCommand: 'launchpad install crates.io/fblog' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/fblog -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/fblog' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,13 +74,7 @@ export const fblogPackage = {
     '4.5.0',
     '4.4.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fblog -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install fblog' as const,
 }
 
-export type FblogPackage = typeof fblogPackage
+export type CratesiofblogPackage = typeof cratesiofblogPackage

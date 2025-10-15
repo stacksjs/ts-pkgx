@@ -6,18 +6,15 @@
  * @version `0.3.195` (449 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install fly`
- * @name `fly`
+ * @install `launchpad install fly.io`
+ * @homepage https://fly.io
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.fly
- * // Or access via domain
- * const samePkg = pantry.flyio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.flyio
  * console.log(pkg.name)        // "fly"
  * console.log(pkg.description) // "Command line tools for fly.io services"
  * console.log(pkg.programs)    // ["fly", "flyctl"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fly-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const flyPackage = {
+export const flyioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const flyPackage = {
    */
   description: 'Command line tools for fly.io services' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fly.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://fly.io' as const,
+  githubUrl: 'https://github.com/superfly/flyctl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install fly' as const,
+  installCommand: 'launchpad install fly.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fly.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fly.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +56,13 @@ export const flyPackage = {
     'flyctl',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -513,13 +518,7 @@ export const flyPackage = {
     '0.0.550',
     '0.0.548',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fly.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install fly' as const,
 }
 
-export type FlyPackage = typeof flyPackage
+export type FlyioPackage = typeof flyioPackage

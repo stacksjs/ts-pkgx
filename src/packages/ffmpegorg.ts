@@ -1,5 +1,5 @@
 /**
- * **ffmpeg.org** - Play, record, convert, and stream audio and video
+ * **ffmpeg** - Play, record, convert, and stream audio and video
  *
  * @domain `ffmpeg.org`
  * @programs `ffmpeg`, `ffplay`, `ffprobe`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ffmpeg.org`
+ * @homepage https://ffmpeg.org/
  * @dependencies `lame.sourceforge.io>=3.98.3`, `libsdl.org^2`, `freetype.org^2`, ... (+6 more)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.ffmpegorg
- * console.log(pkg.name)        // "ffmpeg.org"
+ * console.log(pkg.name)        // "ffmpeg"
  * console.log(pkg.description) // "Play, record, convert, and stream audio and video"
  * console.log(pkg.programs)    // ["ffmpeg", "ffplay", ...]
  * console.log(pkg.versions[0]) // "8.0.0" (latest)
@@ -27,7 +28,7 @@ export const ffmpegorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ffmpeg.org' as const,
+  name: 'ffmpeg' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const ffmpegorgPackage = {
    */
   description: 'Play, record, convert, and stream audio and video' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ffmpeg.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://ffmpeg.org/' as const,
+  githubUrl: 'https://github.com/FFmpeg/FFmpeg' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install ffmpeg.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ffmpeg.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ffmpeg.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -105,8 +108,6 @@ export const ffmpegorgPackage = {
     '3.4.13',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ffmpeg.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ffmpeg.org' as const,
 }
 
 export type FfmpegorgPackage = typeof ffmpegorgPackage

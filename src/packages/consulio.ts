@@ -6,18 +6,15 @@
  * @version `1.21.5` (15 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install consul`
- * @name `consul`
+ * @install `launchpad install consul.io`
+ * @homepage https://www.consul.io
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.consul
- * // Or access via domain
- * const samePkg = pantry.consulio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.consulio
  * console.log(pkg.name)        // "consul"
  * console.log(pkg.description) // "Consul is a distributed, highly available, and ..."
  * console.log(pkg.programs)    // ["consul"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/consul-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const consulPackage = {
+export const consulioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const consulPackage = {
    */
   description: 'Consul is a distributed, highly available, and data center aware solution to connect and configure applications across dynamic, distributed infrastructure.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/consul.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.consul.io' as const,
+  githubUrl: 'https://github.com/hashicorp/consul' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install consul' as const,
+  installCommand: 'launchpad install consul.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +consul.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install consul.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const consulPackage = {
     'consul',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -78,13 +83,7 @@ export const consulPackage = {
     '1.19.2',
     '1.19.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) consul -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install consul' as const,
 }
 
-export type ConsulPackage = typeof consulPackage
+export type ConsulioPackage = typeof consulioPackage

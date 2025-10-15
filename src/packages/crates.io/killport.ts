@@ -6,18 +6,13 @@
  * @version `1.1.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install killport`
- * @name `killport`
+ * @install `launchpad install crates.io/killport`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.killport
- * // Or access via domain
- * const samePkg = pantry.cratesiokillport
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiokillport
  * console.log(pkg.name)        // "killport"
  * console.log(pkg.description) // "A command-line tool to easily kill processes ru..."
  * console.log(pkg.programs)    // ["killport"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/killport.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const killportPackage = {
+export const cratesiokillportPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const killportPackage = {
   description: 'A command-line tool to easily kill processes running on a specified port.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/killport/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/jkfran/killport' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install killport' as const,
+  installCommand: 'launchpad install crates.io/killport' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/killport -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/killport' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -67,13 +64,7 @@ export const killportPackage = {
     '0.9.2',
     '0.9.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) killport -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install killport' as const,
 }
 
-export type KillportPackage = typeof killportPackage
+export type CratesiokillportPackage = typeof cratesiokillportPackage

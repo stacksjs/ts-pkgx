@@ -5,19 +5,15 @@
  * @version `9.12.0` (73 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install Bittensor`
- * @name `Bittensor`
+ * @install `launchpad install bittensor.com`
+ * @homepage https://www.bittensor.com/
  * @dependencies `pkgx.sh^1`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.Bittensor
- * // Or access via domain
- * const samePkg = pantry.bittensorcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.bittensorcom
  * console.log(pkg.name)        // "Bittensor"
  * console.log(pkg.description) // "Internet-scale Neural Networks"
  * console.log(pkg.versions[0]) // "9.12.0" (latest)
@@ -26,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/bittensor-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bittensorPackage = {
+export const bittensorcomPackage = {
   /**
    * The display name of this package.
    */
@@ -40,13 +36,15 @@ export const bittensorPackage = {
    */
   description: 'Internet-scale Neural Networks' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/bittensor.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.bittensor.com/' as const,
+  githubUrl: 'https://github.com/opentensor/bittensor' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install Bittensor' as const,
+  installCommand: 'launchpad install bittensor.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bittensor.com' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -136,13 +134,7 @@ export const bittensorPackage = {
     '6.7.0',
     '6.5.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +bittensor.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install Bittensor' as const,
 }
 
-export type BittensorPackage = typeof bittensorPackage
+export type BittensorcomPackage = typeof bittensorcomPackage

@@ -6,19 +6,15 @@
  * @version `0.32.0` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install resticprofile`
- * @name `resticprofile`
- * @companions `restic.net/restic`
+ * @install `launchpad install creativeprojects.github.io/resticprofile`
+ * @homepage https://creativeprojects.github.io/resticprofile/
+ * @dependencies `go.dev@~1.22`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.resticprofile
- * // Or access via domain
- * const samePkg = pantry.creativeprojectsgithubioresticprofile
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.creativeprojectsgithubioresticprofile
  * console.log(pkg.name)        // "resticprofile"
  * console.log(pkg.description) // "Configuration profiles manager and scheduler fo..."
  * console.log(pkg.programs)    // ["resticprofile"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/creativeprojects-github-io/resticprofile.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const resticprofilePackage = {
+export const creativeprojectsgithubioresticprofilePackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const resticprofilePackage = {
    */
   description: 'Configuration profiles manager and scheduler for restic backup' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/creativeprojects.github.io/resticprofile/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://creativeprojects.github.io/resticprofile/' as const,
+  githubUrl: 'https://github.com/creativeprojects/resticprofile' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install resticprofile' as const,
+  installCommand: 'launchpad install creativeprojects.github.io/resticprofile' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +creativeprojects.github.io/resticprofile -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install creativeprojects.github.io/resticprofile' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,14 +54,14 @@ export const resticprofilePackage = {
   programs: [
     'resticprofile',
   ] as const,
+  companions: [] as const,
   /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
+   * Required dependencies for this package.
+   * These will be automatically installed.
    */
-  companions: [
-    'restic.net/restic',
+  dependencies: [
+    'go.dev@~1.22',
   ] as const,
-  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -79,13 +77,7 @@ export const resticprofilePackage = {
     '0.28.0',
     '0.27.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) resticprofile -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install resticprofile' as const,
 }
 
-export type ResticprofilePackage = typeof resticprofilePackage
+export type CreativeprojectsgithubioresticprofilePackage = typeof creativeprojectsgithubioresticprofilePackage

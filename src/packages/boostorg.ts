@@ -1,11 +1,12 @@
 /**
- * **boost.org** - Super-project for modularized Boost
+ * **boost** - Super-project for modularized Boost
  *
  * @domain `boost.org`
  * @version `1.89.0` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install boost.org`
+ * @homepage https://github.com/boostorg/wiki/wiki/Getting-Started%3A-Overview
  * @dependencies `facebook.com/zstd^1`
  *
  * @example
@@ -13,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.boostorg
- * console.log(pkg.name)        // "boost.org"
+ * console.log(pkg.name)        // "boost"
  * console.log(pkg.description) // "Super-project for modularized Boost"
  * console.log(pkg.versions[0]) // "1.89.0" (latest)
  * ```
@@ -25,7 +26,7 @@ export const boostorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'boost.org' as const,
+  name: 'boost' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,13 +36,15 @@ export const boostorgPackage = {
    */
   description: 'Super-project for modularized Boost' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/boost.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://github.com/boostorg/wiki/wiki/Getting-Started%3A-Overview' as const,
+  githubUrl: 'https://github.com/boostorg/boost' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install boost.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +boost.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install boost.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -67,8 +70,6 @@ export const boostorgPackage = {
     '1.81.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +boost.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install boost.org' as const,
 }
 
 export type BoostorgPackage = typeof boostorgPackage

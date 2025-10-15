@@ -6,18 +6,15 @@
  * @version `2.37.159` (316 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install spider`
- * @name `spider`
+ * @install `launchpad install crates.io/spider_cli`
+ * @homepage https://spider.cloud
+ * @dependencies `if@linux`, `prop@|`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.spider
- * // Or access via domain
- * const samePkg = pantry.cratesiospider_cli
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiospider_cli
  * console.log(pkg.name)        // "spider"
  * console.log(pkg.description) // "A web crawler and scraper for Rust"
  * console.log(pkg.programs)    // ["spider"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/spider_cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const spiderPackage = {
+export const cratesiospider_cliPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const spiderPackage = {
    */
   description: 'A web crawler and scraper for Rust' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/spider_cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://spider.cloud' as const,
+  githubUrl: 'https://github.com/spider-rs/spider' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install spider' as const,
+  installCommand: 'launchpad install crates.io/spider_cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/spider_cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/spider_cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const spiderPackage = {
     'spider',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'if@linux',
+    'prop@|',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -379,13 +385,7 @@ export const spiderPackage = {
     '1.98.6',
     '1.98.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) spider -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install spider' as const,
 }
 
-export type SpiderPackage = typeof spiderPackage
+export type Cratesiospider_cliPackage = typeof cratesiospider_cliPackage

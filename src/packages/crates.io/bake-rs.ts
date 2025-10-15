@@ -6,18 +6,13 @@
  * @version `1.2.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install bake`
- * @name `bake`
+ * @install `launchpad install crates.io/bake-rs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.bake
- * // Or access via domain
- * const samePkg = pantry.cratesiobakers
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiobakers
  * console.log(pkg.name)        // "bake"
  * console.log(pkg.description) // "Simple and easy to use "script runner" written ..."
  * console.log(pkg.programs)    // ["bake"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/bake-rs.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bakePackage = {
+export const cratesiobakersPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const bakePackage = {
   description: 'Simple and easy to use "script runner" written in Rust.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/bake-rs/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/ali77gh/bake-rs' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install bake' as const,
+  installCommand: 'launchpad install crates.io/bake-rs' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/bake-rs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/bake-rs' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +61,7 @@ export const bakePackage = {
   versions: [
     '1.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bake -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install bake' as const,
 }
 
-export type BakePackage = typeof bakePackage
+export type CratesiobakersPackage = typeof cratesiobakersPackage

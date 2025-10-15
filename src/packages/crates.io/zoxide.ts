@@ -6,18 +6,14 @@
  * @version `0.9.8` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install zoxide`
- * @name `zoxide`
+ * @install `launchpad install crates.io/zoxide`
+ * @homepage https://crates.io/crates/zoxide
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.zoxide
- * // Or access via domain
- * const samePkg = pantry.cratesiozoxide
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiozoxide
  * console.log(pkg.name)        // "zoxide"
  * console.log(pkg.description) // "Shell extension to navigate your filesystem faster"
  * console.log(pkg.programs)    // ["zoxide"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/zoxide.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zoxidePackage = {
+export const cratesiozoxidePackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const zoxidePackage = {
    */
   description: 'Shell extension to navigate your filesystem faster' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/zoxide/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://crates.io/crates/zoxide' as const,
+  githubUrl: 'https://github.com/ajeetdsouza/zoxide' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install zoxide' as const,
+  installCommand: 'launchpad install crates.io/zoxide' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/zoxide -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/zoxide' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +70,7 @@ export const zoxidePackage = {
     '0.9.1',
     '0.9.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zoxide -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install zoxide' as const,
 }
 
-export type ZoxidePackage = typeof zoxidePackage
+export type CratesiozoxidePackage = typeof cratesiozoxidePackage

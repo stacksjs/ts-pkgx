@@ -1,11 +1,12 @@
 /**
- * **crates.io/rtx-cli** - dev tools, env vars, task runner
+ * **rtx-cli** - dev tools, env vars, task runner
  *
  * @domain `crates.io/rtx-cli`
  * @version `2025.10.8` (465 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/rtx-cli`
+ * @homepage https://mise.jdx.dev
  * @dependencies `openssl.org^1.1 # newer RTX after 1.35.2 versions require openssl`, `libgit2.org^1 # newer mise after 2024.5.12 versions require libgit2`
  *
  * @example
@@ -13,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.cratesiortxcli
- * console.log(pkg.name)        // "crates.io/rtx-cli"
+ * console.log(pkg.name)        // "rtx-cli"
  * console.log(pkg.description) // "dev tools, env vars, task runner"
  * console.log(pkg.versions[0]) // "2025.10.8" (latest)
  * ```
@@ -25,7 +26,7 @@ export const cratesiortxcliPackage = {
   /**
    * The display name of this package.
    */
-  name: 'crates.io/rtx-cli' as const,
+  name: 'rtx-cli' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,13 +36,15 @@ export const cratesiortxcliPackage = {
    */
   description: 'dev tools, env vars, task runner' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rtx-cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://mise.jdx.dev' as const,
+  githubUrl: 'https://github.com/jdx/mise' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install crates.io/rtx-cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/rtx-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/rtx-cli' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -524,8 +527,6 @@ export const cratesiortxcliPackage = {
     '1.28.5',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/rtx-cli -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install crates.io/rtx-cli' as const,
 }
 
 export type CratesiortxcliPackage = typeof cratesiortxcliPackage

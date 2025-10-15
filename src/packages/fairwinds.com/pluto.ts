@@ -6,18 +6,15 @@
  * @version `5.22.5` (25 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pluto`
- * @name `pluto`
+ * @install `launchpad install fairwinds.com/pluto`
+ * @homepage https://fairwinds.com
+ * @dependencies `go.dev@^1.21`, `gnu.org/make`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pluto
- * // Or access via domain
- * const samePkg = pantry.fairwindscompluto
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.fairwindscompluto
  * console.log(pkg.name)        // "pluto"
  * console.log(pkg.description) // "A cli tool to help discover deprecated apiVersi..."
  * console.log(pkg.programs)    // ["pluto"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fairwinds-com/pluto.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const plutoPackage = {
+export const fairwindscomplutoPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const plutoPackage = {
    */
   description: 'A cli tool to help discover deprecated apiVersions in Kubernetes' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fairwinds.com/pluto/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://fairwinds.com' as const,
   githubUrl: 'https://github.com/FairwindsOps/pluto' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pluto' as const,
+  installCommand: 'launchpad install fairwinds.com/pluto' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fairwinds.com/pluto -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fairwinds.com/pluto' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const plutoPackage = {
     'pluto',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+    'gnu.org/make',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -88,13 +94,7 @@ export const plutoPackage = {
     '5.18.6',
     '5.18.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pluto -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pluto' as const,
 }
 
-export type PlutoPackage = typeof plutoPackage
+export type FairwindscomplutoPackage = typeof fairwindscomplutoPackage

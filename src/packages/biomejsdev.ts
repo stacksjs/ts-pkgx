@@ -6,18 +6,14 @@
  * @version `1.9.4` (28 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install biome`
- * @name `biome`
+ * @install `launchpad install biomejs.dev`
+ * @homepage https://biomejs.dev/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.biome
- * // Or access via domain
- * const samePkg = pantry.biomejsdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.biomejsdev
  * console.log(pkg.name)        // "biome"
  * console.log(pkg.description) // "A toolchain for web projects, aimed to provide ..."
  * console.log(pkg.programs)    // ["biome"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/biomejs-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const biomePackage = {
+export const biomejsdevPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const biomePackage = {
    */
   description: 'A toolchain for web projects, aimed to provide functionalities to maintain them. Biome offers formatter and linter, usable via CLI and LSP.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/biomejs.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://biomejs.dev/' as const,
+  githubUrl: 'https://github.com/biomejs/biome' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install biome' as const,
+  installCommand: 'launchpad install biomejs.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +biomejs.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install biomejs.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -91,13 +89,7 @@ export const biomePackage = {
     '1.3.0',
     '1.2.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) biome -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install biome' as const,
 }
 
-export type BiomePackage = typeof biomePackage
+export type BiomejsdevPackage = typeof biomejsdevPackage

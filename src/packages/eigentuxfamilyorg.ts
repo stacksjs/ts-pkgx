@@ -1,5 +1,5 @@
 /**
- * **eigen.tuxfamily.org** - pkgx package
+ * **eigen.tuxfamily** - pkgx package
  *
  * @domain `eigen.tuxfamily.org`
  * @version `5.0.0` (3 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.eigentuxfamilyorg
- * console.log(pkg.name)        // "eigen.tuxfamily.org"
+ * console.log(pkg.name)        // "eigen.tuxfamily"
  * console.log(pkg.versions[0]) // "5.0.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const eigentuxfamilyorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'eigen.tuxfamily.org' as const,
+  name: 'eigen.tuxfamily' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const eigentuxfamilyorgPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/eigen.tuxfamily.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install eigen.tuxfamily.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +eigen.tuxfamily.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install eigen.tuxfamily.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -61,8 +63,6 @@ export const eigentuxfamilyorgPackage = {
     '3.4.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +eigen.tuxfamily.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install eigen.tuxfamily.org' as const,
 }
 
 export type EigentuxfamilyorgPackage = typeof eigentuxfamilyorgPackage

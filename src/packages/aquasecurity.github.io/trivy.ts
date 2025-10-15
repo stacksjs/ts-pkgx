@@ -6,19 +6,15 @@
  * @version `0.66.0` (40 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install trivy`
- * @name `trivy`
+ * @install `launchpad install aquasecurity.github.io/trivy`
+ * @homepage https://aquasecurity.github.io/trivy/
  * @dependencies `curl.se/ca-certs`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.trivy
- * // Or access via domain
- * const samePkg = pantry.aquasecuritygithubiotrivy
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.aquasecuritygithubiotrivy
  * console.log(pkg.name)        // "trivy"
  * console.log(pkg.description) // "Find vulnerabilities, misconfigurations, secret..."
  * console.log(pkg.programs)    // ["trivy"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/aquasecurity-github-io/trivy.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const trivyPackage = {
+export const aquasecuritygithubiotrivyPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const trivyPackage = {
    */
   description: 'Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/aquasecurity.github.io/trivy/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://aquasecurity.github.io/trivy/' as const,
   githubUrl: 'https://github.com/aquasecurity/trivy' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install trivy' as const,
+  installCommand: 'launchpad install aquasecurity.github.io/trivy' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +aquasecurity.github.io/trivy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install aquasecurity.github.io/trivy' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -110,13 +108,7 @@ export const trivyPackage = {
     '0.49.0',
     '0.48.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) trivy -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install trivy' as const,
 }
 
-export type TrivyPackage = typeof trivyPackage
+export type AquasecuritygithubiotrivyPackage = typeof aquasecuritygithubiotrivyPackage

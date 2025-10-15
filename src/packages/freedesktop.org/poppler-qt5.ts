@@ -6,19 +6,15 @@
  * @version `25.10.0` (26 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install poppler-qt5`
- * @name `poppler-qt5`
+ * @install `launchpad install freedesktop.org/poppler-qt5`
+ * @homepage https://poppler.freedesktop.org/
  * @dependencies `gnupg.org/libassuan^2`, `cairographics.org^1`, `freedesktop.org/fontconfig^2`, ... (+16 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.popplerqt5
- * // Or access via domain
- * const samePkg = pantry.freedesktoporgpopplerqt5
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.freedesktoporgpopplerqt5
  * console.log(pkg.name)        // "poppler-qt5"
  * console.log(pkg.description) // "PDF rendering library (based on the xpdf-3.0 co..."
  * console.log(pkg.programs)    // ["pdfattach", "pdfdetach", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/freedesktop-org/poppler-qt5.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const popplerqt5Package = {
+export const freedesktoporgpopplerqt5Package = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const popplerqt5Package = {
    */
   description: 'PDF rendering library (based on the xpdf-3.0 code base)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/poppler-qt5/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://poppler.freedesktop.org/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install poppler-qt5' as const,
+  installCommand: 'launchpad install freedesktop.org/poppler-qt5' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/poppler-qt5 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/poppler-qt5' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -127,13 +125,7 @@ export const popplerqt5Package = {
     '23.12.0',
     '23.11.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/poppler-qt5 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install poppler-qt5' as const,
 }
 
-export type Popplerqt5Package = typeof popplerqt5Package
+export type Freedesktoporgpopplerqt5Package = typeof freedesktoporgpopplerqt5Package

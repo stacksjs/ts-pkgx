@@ -6,18 +6,15 @@
  * @version `0.6.2` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install convco`
- * @name `convco`
+ * @install `launchpad install convco.github.io`
+ * @homepage https://convco.github.io
+ * @dependencies `cmake.org@^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.convco
- * // Or access via domain
- * const samePkg = pantry.convcogithubio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.convcogithubio
  * console.log(pkg.name)        // "convco"
  * console.log(pkg.description) // "Conventional commits, changelog, versioning, va..."
  * console.log(pkg.programs)    // ["convco"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/convco-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const convcoPackage = {
+export const convcogithubioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const convcoPackage = {
    */
   description: 'Conventional commits, changelog, versioning, validation' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/convco.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://convco.github.io' as const,
+  githubUrl: 'https://github.com/convco/convco' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install convco' as const,
+  installCommand: 'launchpad install convco.github.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +convco.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install convco.github.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const convcoPackage = {
     'convco',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org@^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -72,13 +77,7 @@ export const convcoPackage = {
     '0.4.2',
     '0.4.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) convco -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install convco' as const,
 }
 
-export type ConvcoPackage = typeof convcoPackage
+export type ConvcogithubioPackage = typeof convcogithubioPackage

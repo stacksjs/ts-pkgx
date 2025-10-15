@@ -6,19 +6,15 @@
  * @version `2.49.92` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install clisp`
- * @name `clisp`
+ * @install `launchpad install clisp.org`
+ * @homepage https://clisp.sourceforge.io/
  * @dependencies `gnu.org/libsigsegv^2.14`, `gnu.org/readline^8.2`, `github.com/besser82/libxcrypt^4.4`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.clisp
- * // Or access via domain
- * const samePkg = pantry.clisporg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.clisporg
  * console.log(pkg.name)        // "clisp"
  * console.log(pkg.description) // "GNU CLISP, a Common Lisp implementation"
  * console.log(pkg.programs)    // ["clisp"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/clisp-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const clispPackage = {
+export const clisporgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const clispPackage = {
    */
   description: 'GNU CLISP, a Common Lisp implementation' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/clisp.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://clisp.sourceforge.io/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install clisp' as const,
+  installCommand: 'launchpad install clisp.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +clisp.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install clisp.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +71,7 @@ export const clispPackage = {
   versions: [
     '2.49.92',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) clisp -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install clisp' as const,
 }
 
-export type ClispPackage = typeof clispPackage
+export type ClisporgPackage = typeof clisporgPackage

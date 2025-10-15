@@ -6,19 +6,15 @@
  * @version `3.1.4` (22 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install cython`
- * @name `cython`
+ * @install `launchpad install cython.org`
+ * @homepage https://cython.org/
  * @dependencies `python.org<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cython
- * // Or access via domain
- * const samePkg = pantry.cythonorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cythonorg
  * console.log(pkg.name)        // "cython"
  * console.log(pkg.description) // "Compiler for writing C extensions for the Pytho..."
  * console.log(pkg.programs)    // ["cython"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/cython-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cythonPackage = {
+export const cythonorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const cythonPackage = {
    */
   description: 'Compiler for writing C extensions for the Python language' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cython.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://cython.org/' as const,
+  githubUrl: 'https://github.com/cython/cython' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cython' as const,
+  installCommand: 'launchpad install cython.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cython.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cython.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -92,13 +90,7 @@ export const cythonPackage = {
     '0.29.36',
     '0.29.35',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cython -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cython' as const,
 }
 
-export type CythonPackage = typeof cythonPackage
+export type CythonorgPackage = typeof cythonorgPackage

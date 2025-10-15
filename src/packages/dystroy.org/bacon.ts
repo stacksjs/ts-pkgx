@@ -6,19 +6,15 @@
  * @version `3.19.0` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install bacon`
- * @name `bacon`
+ * @install `launchpad install dystroy.org/bacon`
+ * @homepage https://dystroy.org/bacon/
  * @dependencies `linux:alsa-project.org/alsa-lib` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.bacon
- * // Or access via domain
- * const samePkg = pantry.dystroyorgbacon
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.dystroyorgbacon
  * console.log(pkg.name)        // "bacon"
  * console.log(pkg.description) // "Background rust code check"
  * console.log(pkg.programs)    // ["bacon"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dystroy-org/bacon.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const baconPackage = {
+export const dystroyorgbaconPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const baconPackage = {
    */
   description: 'Background rust code check' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dystroy.org/bacon/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://dystroy.org/bacon/' as const,
+  githubUrl: 'https://github.com/Canop/bacon' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install bacon' as const,
+  installCommand: 'launchpad install dystroy.org/bacon' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +dystroy.org/bacon -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dystroy.org/bacon' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,13 +82,7 @@ export const baconPackage = {
     '3.9.0',
     '3.8.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bacon -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install bacon' as const,
 }
 
-export type BaconPackage = typeof baconPackage
+export type DystroyorgbaconPackage = typeof dystroyorgbaconPackage

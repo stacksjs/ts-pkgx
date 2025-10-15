@@ -6,19 +6,15 @@
  * @version `2.32.0` (28 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install dua`
- * @name `dua`
+ * @install `launchpad install crates.io/dua`
+ * @homepage https://lib.rs/crates/dua-cli
  * @dependencies `zlib.net^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dua
- * // Or access via domain
- * const samePkg = pantry.cratesiodua
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiodua
  * console.log(pkg.name)        // "dua"
  * console.log(pkg.description) // "View disk space usage and delete unwanted data,..."
  * console.log(pkg.programs)    // ["dua"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/dua.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const duaPackage = {
+export const cratesioduaPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const duaPackage = {
    */
   description: 'View disk space usage and delete unwanted data, fast.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/dua/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://lib.rs/crates/dua-cli' as const,
+  githubUrl: 'https://github.com/Byron/dua-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install dua' as const,
+  installCommand: 'launchpad install crates.io/dua' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/dua -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/dua' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -98,13 +96,7 @@ export const duaPackage = {
     '2.19.1',
     '2.19.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dua -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install dua' as const,
 }
 
-export type DuaPackage = typeof duaPackage
+export type CratesioduaPackage = typeof cratesioduaPackage

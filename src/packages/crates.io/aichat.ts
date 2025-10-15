@@ -6,18 +6,13 @@
  * @version `0.30.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install aichat`
- * @name `aichat`
+ * @install `launchpad install crates.io/aichat`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.aichat
- * // Or access via domain
- * const samePkg = pantry.cratesioaichat
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesioaichat
  * console.log(pkg.name)        // "aichat"
  * console.log(pkg.description) // "All-in-one LLM CLI tool featuring Shell Assista..."
  * console.log(pkg.programs)    // ["aichat"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/aichat.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const aichatPackage = {
+export const cratesioaichatPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const aichatPackage = {
   description: 'All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/aichat/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/sigoden/aichat' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install aichat' as const,
+  installCommand: 'launchpad install crates.io/aichat' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/aichat -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/aichat' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -66,13 +63,7 @@ export const aichatPackage = {
     '0.29.0',
     '0.28.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aichat -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install aichat' as const,
 }
 
-export type AichatPackage = typeof aichatPackage
+export type CratesioaichatPackage = typeof cratesioaichatPackage

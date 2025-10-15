@@ -6,19 +6,14 @@
  * @version `0.11.1` (25 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install tw`
- * @name `tw`
+ * @install `launchpad install crates.io/tabiew`
  * @dependencies `linux:openssl.org` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.tw
- * // Or access via domain
- * const samePkg = pantry.cratesiotabiew
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiotabiew
  * console.log(pkg.name)        // "tw"
  * console.log(pkg.description) // "A lightweight TUI application to view and query..."
  * console.log(pkg.programs)    // ["tw"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/tabiew.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const twPackage = {
+export const cratesiotabiewPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const twPackage = {
   description: 'A lightweight TUI application to view and query tabular data files, such as CSV, TSV, and parquet.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/tabiew/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/shshemi/tabiew' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tw' as const,
+  installCommand: 'launchpad install crates.io/tabiew' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/tabiew -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/tabiew' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -96,13 +93,7 @@ export const twPackage = {
     '0.3.5',
     '0.3.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tw -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tw' as const,
 }
 
-export type TwPackage = typeof twPackage
+export type CratesiotabiewPackage = typeof cratesiotabiewPackage

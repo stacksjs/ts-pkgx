@@ -6,18 +6,14 @@
  * @version `2.1.1` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install glow`
- * @name `glow`
+ * @install `launchpad install charm.sh/glow`
+ * @dependencies `go.dev@^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.glow
- * // Or access via domain
- * const samePkg = pantry.charmshglow
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.charmshglow
  * console.log(pkg.name)        // "glow"
  * console.log(pkg.description) // "Render markdown on the CLI, with pizzazz! 💅🏻"
  * console.log(pkg.programs)    // ["glow"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/charm-sh/glow.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const glowPackage = {
+export const charmshglowPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const glowPackage = {
   description: 'Render markdown on the CLI, with pizzazz! 💅🏻' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/charm.sh/glow/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/charmbracelet/glow' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install glow' as const,
+  installCommand: 'launchpad install charm.sh/glow' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +charm.sh/glow -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install charm.sh/glow' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const glowPackage = {
     'glow',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,13 +73,7 @@ export const glowPackage = {
     '1.5.0',
     '1.4.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) glow -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install glow' as const,
 }
 
-export type GlowPackage = typeof glowPackage
+export type CharmshglowPackage = typeof charmshglowPackage

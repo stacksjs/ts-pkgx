@@ -6,18 +6,15 @@
  * @version `3.6.5` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install etcd`
- * @name `etcd`
+ * @install `launchpad install etcd.io`
+ * @homepage https://etcd.io
+ * @dependencies `go.dev@^1.22`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.etcd
- * // Or access via domain
- * const samePkg = pantry.etcdio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.etcdio
  * console.log(pkg.name)        // "etcd"
  * console.log(pkg.description) // "Distributed reliable key-value store for the mo..."
  * console.log(pkg.programs)    // ["etcd", "etcdctl"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/etcd-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const etcdPackage = {
+export const etcdioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const etcdPackage = {
    */
   description: 'Distributed reliable key-value store for the most critical data of a distributed system' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/etcd.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://etcd.io' as const,
+  githubUrl: 'https://github.com/etcd-io/etcd' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install etcd' as const,
+  installCommand: 'launchpad install etcd.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +etcd.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install etcd.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +56,13 @@ export const etcdPackage = {
     'etcdctl',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.22',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -82,13 +87,7 @@ export const etcdPackage = {
     '3.4.37',
     '3.4.36',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +etcd.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install etcd' as const,
 }
 
-export type EtcdPackage = typeof etcdPackage
+export type EtcdioPackage = typeof etcdioPackage

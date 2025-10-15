@@ -1,24 +1,20 @@
 /**
- * **watchman** - Watches files and records, or triggers actions, when they change.
+ * **watchman** - Watches files and records, or triggers actions, when they change. 
  *
  * @domain `facebook.com/watchman`
  * @programs `watchman`, `watchman-diag`, `watchman-make`, `watchman-wait`, `watchman-replicate-subscription`, ... (+1 more)
  * @version `2025.4.7.0` (64 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install watchman`
- * @name `watchman`
+ * @install `launchpad install facebook.com/watchman`
+ * @homepage https://facebook.github.io/watchman/
  * @dependencies `facebook.com/edencommon`, `facebook.com/fb303`, `facebook.com/folly`, ... (+10 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.watchman
- * // Or access via domain
- * const samePkg = pantry.facebookcomwatchman
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.facebookcomwatchman
  * console.log(pkg.name)        // "watchman"
  * console.log(pkg.description) // "Watches files and records, or triggers actions,..."
  * console.log(pkg.programs)    // ["watchman", "watchman-diag", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/facebook-com/watchman.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const watchmanPackage = {
+export const facebookcomwatchmanPackage = {
   /**
    * The display name of this package.
    */
@@ -40,15 +36,17 @@ export const watchmanPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Watches files and records, or triggers actions, when they change.' as const,
+  description: 'Watches files and records, or triggers actions, when they change. ' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/watchman/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://facebook.github.io/watchman/' as const,
+  githubUrl: 'https://github.com/facebook/watchman' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install watchman' as const,
+  installCommand: 'launchpad install facebook.com/watchman' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +facebook.com/watchman -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install facebook.com/watchman' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -152,13 +150,7 @@ export const watchmanPackage = {
     '2024.1.22.0',
     '2024.1.15.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +facebook.com/watchman -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install watchman' as const,
 }
 
-export type WatchmanPackage = typeof watchmanPackage
+export type FacebookcomwatchmanPackage = typeof facebookcomwatchmanPackage

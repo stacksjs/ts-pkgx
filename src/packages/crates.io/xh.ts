@@ -6,18 +6,13 @@
  * @version `0.25.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install xh`
- * @name `xh`
+ * @install `launchpad install crates.io/xh`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.xh
- * // Or access via domain
- * const samePkg = pantry.cratesioxh
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesioxh
  * console.log(pkg.name)        // "xh"
  * console.log(pkg.description) // "Friendly and fast tool for sending HTTP requests"
  * console.log(pkg.programs)    // ["xh"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/xh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xhPackage = {
+export const cratesioxhPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const xhPackage = {
   description: 'Friendly and fast tool for sending HTTP requests' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/xh/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/ducaale/xh' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install xh' as const,
+  installCommand: 'launchpad install crates.io/xh' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/xh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/xh' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,13 +66,7 @@ export const xhPackage = {
     '0.23.0',
     '0.22.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) xh -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install xh' as const,
 }
 
-export type XhPackage = typeof xhPackage
+export type CratesioxhPackage = typeof cratesioxhPackage

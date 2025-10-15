@@ -6,18 +6,15 @@
  * @version `8.16.0` (31 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install cf`
- * @name `cf`
+ * @install `launchpad install cloudfoundry.org/cf-cli`
+ * @homepage https://ee.lbl.gov/
+ * @dependencies `cmake.org@^3`, `go.dev@=1.23.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cf
- * // Or access via domain
- * const samePkg = pantry.cloudfoundryorgcfcli
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cloudfoundryorgcfcli
  * console.log(pkg.name)        // "cf"
  * console.log(pkg.description) // "Filter to replace numeric timestamps with a for..."
  * console.log(pkg.programs)    // ["cf"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/cloudfoundry-org/cf-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cfPackage = {
+export const cloudfoundryorgcfcliPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const cfPackage = {
    */
   description: 'Filter to replace numeric timestamps with a formatted date time' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cloudfoundry.org/cf-cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://ee.lbl.gov/' as const,
+  githubUrl: 'https://github.com/cloudfoundry/cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cf' as const,
+  installCommand: 'launchpad install cloudfoundry.org/cf-cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cloudfoundry.org/cf-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cloudfoundry.org/cf-cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const cfPackage = {
     'cf',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org@^3',
+    'go.dev@=1.23.1',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -94,13 +100,7 @@ export const cfPackage = {
     '7.7.6',
     '7.7.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cf -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cf' as const,
 }
 
-export type CfPackage = typeof cfPackage
+export type CloudfoundryorgcfcliPackage = typeof cloudfoundryorgcfcliPackage

@@ -6,18 +6,14 @@
  * @version `0.20.5` (31 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sk`
- * @name `sk`
+ * @install `launchpad install crates.io/skim`
+ * @dependencies `if@>=0.11.10`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sk
- * // Or access via domain
- * const samePkg = pantry.cratesioskim
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesioskim
  * console.log(pkg.name)        // "sk"
  * console.log(pkg.description) // "Fuzzy Finder in rust!"
  * console.log(pkg.programs)    // ["sk"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/skim.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const skPackage = {
+export const cratesioskimPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const skPackage = {
   description: 'Fuzzy Finder in rust!' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/skim/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/lotabout/skim' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sk' as const,
+  installCommand: 'launchpad install crates.io/skim' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/skim -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/skim' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const skPackage = {
     'sk',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'if@>=0.11.10',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -94,13 +98,7 @@ export const skPackage = {
     '0.11.10',
     '0.10.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sk -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sk' as const,
 }
 
-export type SkPackage = typeof skPackage
+export type CratesioskimPackage = typeof cratesioskimPackage

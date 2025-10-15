@@ -1,5 +1,5 @@
 /**
- * **apache.org/apr** - Mirror of Apache Portable Runtime
+ * **apr** - Mirror of Apache Portable Runtime
  *
  * @domain `apache.org/apr`
  * @version `1.7.6` (5 versions available)
@@ -12,7 +12,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.apacheorgapr
- * console.log(pkg.name)        // "apache.org/apr"
+ * console.log(pkg.name)        // "apr"
  * console.log(pkg.description) // "Mirror of Apache Portable Runtime"
  * console.log(pkg.versions[0]) // "1.7.6" (latest)
  * ```
@@ -24,7 +24,7 @@ export const apacheorgaprPackage = {
   /**
    * The display name of this package.
    */
-  name: 'apache.org/apr' as const,
+  name: 'apr' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const apacheorgaprPackage = {
   description: 'Mirror of Apache Portable Runtime' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/apr/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/apache/apr' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install apache.org/apr' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/apr -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install apache.org/apr' as const,
   programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
@@ -56,8 +58,6 @@ export const apacheorgaprPackage = {
     '1.7.2',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/apr -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install apache.org/apr' as const,
 }
 
 export type ApacheorgaprPackage = typeof apacheorgaprPackage

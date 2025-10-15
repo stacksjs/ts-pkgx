@@ -6,19 +6,15 @@
  * @version `4.0.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rubberband`
- * @name `rubberband`
+ * @install `launchpad install breakfastquay.com/rubberband`
+ * @homepage https://breakfastquay.com/rubberband/
  * @dependencies `github.com/libsndfile/libsamplerate^0.2`, `github.com/libsndfile/libsndfile^1.2`, `linux:fftw.org^3.3`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rubberband
- * // Or access via domain
- * const samePkg = pantry.breakfastquaycomrubberband
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.breakfastquaycomrubberband
  * console.log(pkg.name)        // "rubberband"
  * console.log(pkg.description) // "Audio time stretcher tool and library"
  * console.log(pkg.programs)    // ["rubberband"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/breakfastquay-com/rubberband.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rubberbandPackage = {
+export const breakfastquaycomrubberbandPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const rubberbandPackage = {
    */
   description: 'Audio time stretcher tool and library' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/breakfastquay.com/rubberband/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://breakfastquay.com/rubberband/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rubberband' as const,
+  installCommand: 'launchpad install breakfastquay.com/rubberband' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +breakfastquay.com/rubberband -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install breakfastquay.com/rubberband' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -77,13 +75,7 @@ export const rubberbandPackage = {
     '4.0.0',
     '3.3.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rubberband -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rubberband' as const,
 }
 
-export type RubberbandPackage = typeof rubberbandPackage
+export type BreakfastquaycomrubberbandPackage = typeof breakfastquaycomrubberbandPackage

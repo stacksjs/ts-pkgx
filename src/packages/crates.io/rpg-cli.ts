@@ -6,18 +6,14 @@
  * @version `1.2.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rpg-cli`
- * @name `rpg-cli`
+ * @install `launchpad install crates.io/rpg-cli`
+ * @homepage https://olano.dev/blog/deconstructing-the-role-playing-videogame/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rpgcli
- * // Or access via domain
- * const samePkg = pantry.cratesiorpgcli
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiorpgcli
  * console.log(pkg.name)        // "rpg-cli"
  * console.log(pkg.description) // "Your filesystem as a dungeon!"
  * console.log(pkg.programs)    // ["rpg-cli"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/rpg-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const rpgcliPackage = {
+export const cratesiorpgcliPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const rpgcliPackage = {
    */
   description: 'Your filesystem as a dungeon!' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/rpg-cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://olano.dev/blog/deconstructing-the-role-playing-videogame/' as const,
+  githubUrl: 'https://github.com/facundoolano/rpg-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rpg-cli' as const,
+  installCommand: 'launchpad install crates.io/rpg-cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/rpg-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/rpg-cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,13 +63,7 @@ export const rpgcliPackage = {
     '1.2.0',
     '1.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rpg-cli -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rpg-cli' as const,
 }
 
-export type RpgcliPackage = typeof rpgcliPackage
+export type CratesiorpgcliPackage = typeof cratesiorpgcliPackage

@@ -6,19 +6,15 @@
  * @version `2.19.3` (79 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ansible`
- * @name `ansible`
+ * @install `launchpad install ansible.com`
+ * @homepage https://www.ansible.com/
  * @dependencies `pkgx.sh@1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ansible
- * // Or access via domain
- * const samePkg = pantry.ansiblecom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ansiblecom
  * console.log(pkg.name)        // "ansible"
  * console.log(pkg.description) // "Ansible is a radically simple IT automation pla..."
  * console.log(pkg.programs)    // ["ansible", "ansible-config", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ansible-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ansiblePackage = {
+export const ansiblecomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const ansiblePackage = {
    */
   description: 'Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ansible.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.ansible.com/' as const,
+  githubUrl: 'https://github.com/ansible/ansible' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ansible' as const,
+  installCommand: 'launchpad install ansible.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ansible.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ansible.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -159,13 +157,7 @@ export const ansiblePackage = {
     '2.13.10',
     '2.13.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ansible.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ansible' as const,
 }
 
-export type AnsiblePackage = typeof ansiblePackage
+export type AnsiblecomPackage = typeof ansiblecomPackage

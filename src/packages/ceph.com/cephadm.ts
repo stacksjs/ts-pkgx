@@ -1,24 +1,20 @@
 /**
- * **cephadm** - Ceph is a distributed object, block, and file storage platform
+ * **cephadm** - Ceph is a distributed object, block, and file storage platform 
  *
  * @domain `ceph.com/cephadm`
  * @programs `cephadm`
  * @version `20.3.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install cephadm`
- * @name `cephadm`
+ * @install `launchpad install ceph.com/cephadm`
+ * @homepage https://ceph.io
  * @dependencies `openssl.org^1.1`, `python.org^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cephadm
- * // Or access via domain
- * const samePkg = pantry.cephcomcephadm
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cephcomcephadm
  * console.log(pkg.name)        // "cephadm"
  * console.log(pkg.description) // "Ceph is a distributed object, block, and file s..."
  * console.log(pkg.programs)    // ["cephadm"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ceph-com/cephadm.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cephadmPackage = {
+export const cephcomcephadmPackage = {
   /**
    * The display name of this package.
    */
@@ -40,15 +36,17 @@ export const cephadmPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Ceph is a distributed object, block, and file storage platform' as const,
+  description: 'Ceph is a distributed object, block, and file storage platform ' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ceph.com/cephadm/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://ceph.io' as const,
   githubUrl: 'https://github.com/ceph/ceph' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cephadm' as const,
+  installCommand: 'launchpad install ceph.com/cephadm' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ceph.com/cephadm -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ceph.com/cephadm' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -83,13 +81,7 @@ export const cephadmPackage = {
     '18.2.6',
     '18.2.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cephadm -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cephadm' as const,
 }
 
-export type CephadmPackage = typeof cephadmPackage
+export type CephcomcephadmPackage = typeof cephcomcephadmPackage

@@ -1,11 +1,12 @@
 /**
- * **cryptography.io** - cryptography is a package designed to expose cryptographic primitives and recipes to Python developers.
+ * **cryptography** - cryptography is a package designed to expose cryptographic primitives and recipes to Python developers.
  *
  * @domain `cryptography.io`
  * @version `46.0.2` (27 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cryptography.io`
+ * @homepage https://cryptography.io
  * @dependencies `python.org>=3.11`, `github.com/python-cffi/cffi^1.16`, `openssl.org>=1.1`
  *
  * @example
@@ -13,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.cryptographyio
- * console.log(pkg.name)        // "cryptography.io"
+ * console.log(pkg.name)        // "cryptography"
  * console.log(pkg.description) // "cryptography is a package designed to expose cr..."
  * console.log(pkg.versions[0]) // "46.0.2" (latest)
  * ```
@@ -25,7 +26,7 @@ export const cryptographyioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cryptography.io' as const,
+  name: 'cryptography' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,13 +36,15 @@ export const cryptographyioPackage = {
    */
   description: 'cryptography is a package designed to expose cryptographic primitives and recipes to Python developers.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cryptography.io/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://cryptography.io' as const,
   githubUrl: 'https://github.com/pyca/cryptography' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install cryptography.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cryptography.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cryptography.io' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -87,8 +90,6 @@ export const cryptographyioPackage = {
     '42.0.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cryptography.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cryptography.io' as const,
 }
 
 export type CryptographyioPackage = typeof cryptographyioPackage

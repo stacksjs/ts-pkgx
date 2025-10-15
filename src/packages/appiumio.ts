@@ -6,19 +6,15 @@
  * @version `3.0.2` (39 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install appium`
- * @name `appium`
+ * @install `launchpad install appium.io`
+ * @homepage https://appium.io/
  * @dependencies `npmjs.com`, `nodejs.org^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20`, `openjdk.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.appium
- * // Or access via domain
- * const samePkg = pantry.appiumio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.appiumio
  * console.log(pkg.name)        // "appium"
  * console.log(pkg.description) // "Cross-platform automation framework for all kin..."
  * console.log(pkg.programs)    // ["appium"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/appium-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const appiumPackage = {
+export const appiumioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const appiumPackage = {
    */
   description: 'Cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver protocol' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/appium.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://appium.io/' as const,
+  githubUrl: 'https://github.com/appium/appium' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install appium' as const,
+  installCommand: 'launchpad install appium.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +appium.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install appium.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -111,13 +109,7 @@ export const appiumPackage = {
     '2.3.0',
     '2.2.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) appium -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install appium' as const,
 }
 
-export type AppiumPackage = typeof appiumPackage
+export type AppiumioPackage = typeof appiumioPackage

@@ -6,19 +6,15 @@
  * @version `2.4.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install update-mime-database`
- * @name `update-mime-database`
+ * @install `launchpad install freedesktop.org/shared-mime-info`
+ * @homepage https://wiki.freedesktop.org/www/Software/shared-mime-info
  * @dependencies `gnome.org/glib@2`, `gnu.org/gettext^0.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.updatemimedatabase
- * // Or access via domain
- * const samePkg = pantry.freedesktoporgsharedmimeinfo
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.freedesktoporgsharedmimeinfo
  * console.log(pkg.name)        // "update-mime-database"
  * console.log(pkg.description) // "Database of common MIME types"
  * console.log(pkg.programs)    // ["update-mime-database"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/freedesktop-org/shared-mime-info.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const updatemimedatabasePackage = {
+export const freedesktoporgsharedmimeinfoPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const updatemimedatabasePackage = {
    */
   description: 'Database of common MIME types' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/shared-mime-info/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://wiki.freedesktop.org/www/Software/shared-mime-info' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install update-mime-database' as const,
+  installCommand: 'launchpad install freedesktop.org/shared-mime-info' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/shared-mime-info -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/shared-mime-info' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,13 +72,7 @@ export const updatemimedatabasePackage = {
     '2.3.0',
     '2.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) update-mime-database -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install update-mime-database' as const,
 }
 
-export type UpdatemimedatabasePackage = typeof updatemimedatabasePackage
+export type FreedesktoporgsharedmimeinfoPackage = typeof freedesktoporgsharedmimeinfoPackage

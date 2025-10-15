@@ -6,19 +6,15 @@
  * @version `1.8.0.3` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install socat`
- * @name `socat`
+ * @install `launchpad install dest-unreach.org/socat`
+ * @homepage http://www.dest-unreach.org/socat/
  * @dependencies `openssl.org^1.1`, `gnu.org/readline^8.2`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.socat
- * // Or access via domain
- * const samePkg = pantry.destunreachorgsocat
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.destunreachorgsocat
  * console.log(pkg.name)        // "socat"
  * console.log(pkg.description) // "SOcket CAT: netcat on steroids"
  * console.log(pkg.programs)    // ["socat"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dest-unreach-org/socat.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const socatPackage = {
+export const destunreachorgsocatPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const socatPackage = {
    */
   description: 'SOcket CAT: netcat on steroids' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dest-unreach.org/socat/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://www.dest-unreach.org/socat/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install socat' as const,
+  installCommand: 'launchpad install dest-unreach.org/socat' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +dest-unreach.org/socat -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dest-unreach.org/socat' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,13 +73,7 @@ export const socatPackage = {
     '1.8.0.1',
     '1.8.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) socat -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install socat' as const,
 }
 
-export type SocatPackage = typeof socatPackage
+export type DestunreachorgsocatPackage = typeof destunreachorgsocatPackage

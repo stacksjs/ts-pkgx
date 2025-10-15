@@ -1,5 +1,5 @@
 /**
- * **augeas.net** - A configuration editing tool and API
+ * **augeas** - A configuration editing tool and API
  *
  * @domain `augeas.net`
  * @programs `augmatch`, `augparse`, `augprint`, `augtool`, `fadot`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install augeas.net`
+ * @homepage https://augeas.net/
  * @dependencies `gnu.org/readline`, `gnome.org/libxml2`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.augeasnet
- * console.log(pkg.name)        // "augeas.net"
+ * console.log(pkg.name)        // "augeas"
  * console.log(pkg.description) // "A configuration editing tool and API"
  * console.log(pkg.programs)    // ["augmatch", "augparse", ...]
  * console.log(pkg.versions[0]) // "1.14.1" (latest)
@@ -27,7 +28,7 @@ export const augeasnetPackage = {
   /**
    * The display name of this package.
    */
-  name: 'augeas.net' as const,
+  name: 'augeas' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const augeasnetPackage = {
    */
   description: 'A configuration editing tool and API' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/augeas.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://augeas.net/' as const,
+  githubUrl: 'https://github.com/hercules-team/augeas' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install augeas.net' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +augeas.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install augeas.net' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,8 +76,6 @@ export const augeasnetPackage = {
     '1.14.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +augeas.net -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install augeas.net' as const,
 }
 
 export type AugeasnetPackage = typeof augeasnetPackage

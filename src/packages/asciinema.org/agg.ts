@@ -6,19 +6,15 @@
  * @version `1.6.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install agg`
- * @name `agg`
+ * @install `launchpad install asciinema.org/agg`
+ * @homepage https://docs.asciinema.org/manual/agg/
  * @dependencies `rust-lang.org^1.56`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.agg
- * // Or access via domain
- * const samePkg = pantry.asciinemaorgagg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.asciinemaorgagg
  * console.log(pkg.name)        // "agg"
  * console.log(pkg.description) // "Asciicast to GIF converter"
  * console.log(pkg.programs)    // ["agg"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/asciinema-org/agg.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const aggPackage = {
+export const asciinemaorgaggPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const aggPackage = {
    */
   description: 'Asciicast to GIF converter' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/asciinema.org/agg/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docs.asciinema.org/manual/agg/' as const,
+  githubUrl: 'https://github.com/asciinema/agg' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install agg' as const,
+  installCommand: 'launchpad install asciinema.org/agg' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +asciinema.org/agg -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install asciinema.org/agg' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +71,7 @@ export const aggPackage = {
     '1.5.0',
     '1.4.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) agg -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install agg' as const,
 }
 
-export type AggPackage = typeof aggPackage
+export type AsciinemaorgaggPackage = typeof asciinemaorgaggPackage

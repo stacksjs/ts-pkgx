@@ -6,18 +6,14 @@
  * @version `0.5.2` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ducker`
- * @name `ducker`
+ * @install `launchpad install crates.io/ducker`
+ * @homepage https://crates.io/crates/ducker
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ducker
- * // Or access via domain
- * const samePkg = pantry.cratesioducker
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesioducker
  * console.log(pkg.name)        // "ducker"
  * console.log(pkg.description) // "A slightly quackers Docker TUI based on k9s 🦆"
  * console.log(pkg.programs)    // ["ducker"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/ducker.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const duckerPackage = {
+export const cratesioduckerPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const duckerPackage = {
    */
   description: 'A slightly quackers Docker TUI based on k9s 🦆' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/ducker/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://crates.io/crates/ducker' as const,
+  githubUrl: 'https://github.com/robertpsoane/ducker' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ducker' as const,
+  installCommand: 'launchpad install crates.io/ducker' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/ducker -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/ducker' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +69,7 @@ export const duckerPackage = {
     '0.3.1',
     '0.3.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ducker -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ducker' as const,
 }
 
-export type DuckerPackage = typeof duckerPackage
+export type CratesioduckerPackage = typeof cratesioduckerPackage

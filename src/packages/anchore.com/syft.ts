@@ -6,18 +6,14 @@
  * @version `1.33.0` (48 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install syft`
- * @name `syft`
+ * @install `launchpad install anchore.com/syft`
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.syft
- * // Or access via domain
- * const samePkg = pantry.anchorecomsyft
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.anchorecomsyft
  * console.log(pkg.name)        // "syft"
  * console.log(pkg.description) // "CLI tool and library for generating a Software ..."
  * console.log(pkg.programs)    // ["syft"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/anchore-com/syft.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const syftPackage = {
+export const anchorecomsyftPackage = {
   /**
    * The display name of this package.
    */
@@ -47,7 +43,9 @@ export const syftPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install syft' as const,
+  installCommand: 'launchpad install anchore.com/syft' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +anchore.com/syft -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install anchore.com/syft' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const syftPackage = {
     'syft',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -111,13 +115,7 @@ export const syftPackage = {
     '0.105.1',
     '0.105.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) syft -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install syft' as const,
 }
 
-export type SyftPackage = typeof syftPackage
+export type AnchorecomsyftPackage = typeof anchorecomsyftPackage

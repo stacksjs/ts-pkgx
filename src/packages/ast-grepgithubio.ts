@@ -1,5 +1,5 @@
 /**
- * **ast-grep.github.io** - ⚡A CLI tool for code structural search, lint and rewriting. Written in Rust
+ * **ast-grep.github** - ⚡A CLI tool for code structural search, lint and rewriting. Written in Rust
  *
  * @domain `ast-grep.github.io`
  * @programs `sg`, `ast-grep`
@@ -7,13 +7,14 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ast-grep.github.io`
+ * @homepage https://ast-grep.github.io/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.astgrepgithubio
- * console.log(pkg.name)        // "ast-grep.github.io"
+ * console.log(pkg.name)        // "ast-grep.github"
  * console.log(pkg.description) // "⚡A CLI tool for code structural search, lint an..."
  * console.log(pkg.programs)    // ["sg", "ast-grep"]
  * console.log(pkg.versions[0]) // "0.39.6" (latest)
@@ -26,7 +27,7 @@ export const astgrepgithubioPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ast-grep.github.io' as const,
+  name: 'ast-grep.github' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,13 +37,15 @@ export const astgrepgithubioPackage = {
    */
   description: '⚡A CLI tool for code structural search, lint and rewriting. Written in Rust' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ast-grep.github.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://ast-grep.github.io/' as const,
+  githubUrl: 'https://github.com/ast-grep/ast-grep' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install ast-grep.github.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ast-grep.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ast-grep.github.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -151,8 +154,6 @@ export const astgrepgithubioPackage = {
     '0.14.3',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ast-grep.github.io -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ast-grep.github.io' as const,
 }
 
 export type AstgrepgithubioPackage = typeof astgrepgithubioPackage

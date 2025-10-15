@@ -1,5 +1,5 @@
 /**
- * **elixir-lang.org/otp-27** - pkgx package
+ * **otp-27** - pkgx package
  *
  * @domain `elixir-lang.org/otp-27`
  * @version `1.18.4` (1 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.elixirlangorgotp27
- * console.log(pkg.name)        // "elixir-lang.org/otp-27"
+ * console.log(pkg.name)        // "otp-27"
  * console.log(pkg.versions[0]) // "1.18.4" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const elixirlangorgotp27Package = {
   /**
    * The display name of this package.
    */
-  name: 'elixir-lang.org/otp-27' as const,
+  name: 'otp-27' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const elixirlangorgotp27Package = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/elixir-lang.org/otp-27/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install elixir-lang.org/otp-27' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +elixir-lang.org/otp-27 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install elixir-lang.org/otp-27' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -58,8 +60,6 @@ export const elixirlangorgotp27Package = {
     '1.18.4',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +elixir-lang.org/otp-27 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install elixir-lang.org/otp-27' as const,
 }
 
 export type Elixirlangorgotp27Package = typeof elixirlangorgotp27Package

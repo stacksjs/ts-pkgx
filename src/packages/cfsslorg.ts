@@ -1,5 +1,5 @@
 /**
- * **cfssl.org** - CFSSL: Cloudflare's PKI and TLS toolkit
+ * **cfssl** - CFSSL: Cloudflare's PKI and TLS toolkit
  *
  * @domain `cfssl.org`
  * @programs `cfssl`, `cfssl-bundle`, `cfssl-certinfo`, `cfssl-newkey`, `cfssl-scan`, ... (+3 more)
@@ -7,13 +7,15 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cfssl.org`
+ * @homepage https://cfssl.org/
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.cfsslorg
- * console.log(pkg.name)        // "cfssl.org"
+ * console.log(pkg.name)        // "cfssl"
  * console.log(pkg.description) // "CFSSL: Cloudflare's PKI and TLS toolkit"
  * console.log(pkg.programs)    // ["cfssl", "cfssl-bundle", ...]
  * console.log(pkg.versions[0]) // "1.6.5" (latest)
@@ -26,7 +28,7 @@ export const cfsslorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cfssl.org' as const,
+  name: 'cfssl' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,13 +38,15 @@ export const cfsslorgPackage = {
    */
   description: 'CFSSL: Cloudflare\'s PKI and TLS toolkit' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cfssl.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://cfssl.org/' as const,
+  githubUrl: 'https://github.com/cloudflare/cfssl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install cfssl.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cfssl.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cfssl.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -58,7 +62,13 @@ export const cfsslorgPackage = {
     'multirootca',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,8 +77,6 @@ export const cfsslorgPackage = {
     '1.6.5',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cfssl.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cfssl.org' as const,
 }
 
 export type CfsslorgPackage = typeof cfsslorgPackage

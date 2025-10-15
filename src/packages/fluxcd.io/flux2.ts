@@ -6,18 +6,15 @@
  * @version `2.7.2` (17 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install flux`
- * @name `flux`
+ * @install `launchpad install fluxcd.io/flux2`
+ * @homepage https://fluxcd.io
+ * @dependencies `go.dev@^1.20`, `kubernetes.io/kustomize@^5`, `gnu.org/make`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.flux
- * // Or access via domain
- * const samePkg = pantry.fluxcdioflux2
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.fluxcdioflux2
  * console.log(pkg.name)        // "flux"
  * console.log(pkg.description) // "Open and extensible continuous delivery solutio..."
  * console.log(pkg.programs)    // ["flux"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fluxcd-io/flux2.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fluxPackage = {
+export const fluxcdioflux2Package = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const fluxPackage = {
    */
   description: 'Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fluxcd.io/flux2/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://fluxcd.io' as const,
   githubUrl: 'https://github.com/fluxcd/flux2' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install flux' as const,
+  installCommand: 'launchpad install fluxcd.io/flux2' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fluxcd.io/flux2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fluxcd.io/flux2' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,15 @@ export const fluxPackage = {
     'flux',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+    'kubernetes.io/kustomize@^5',
+    'gnu.org/make',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -80,13 +87,7 @@ export const fluxPackage = {
     '2.2.0',
     '2.1.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) flux -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install flux' as const,
 }
 
-export type FluxPackage = typeof fluxPackage
+export type Fluxcdioflux2Package = typeof fluxcdioflux2Package

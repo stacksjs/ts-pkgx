@@ -1,5 +1,5 @@
 /**
- * **freedesktop.org/mesa-glu** - pkgx package
+ * **mesa-glu** - pkgx package
  *
  * @domain `freedesktop.org/mesa-glu`
  * @version `9.0.3` (1 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.freedesktoporgmesaglu
- * console.log(pkg.name)        // "freedesktop.org/mesa-glu"
+ * console.log(pkg.name)        // "mesa-glu"
  * console.log(pkg.versions[0]) // "9.0.3" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const freedesktoporgmesagluPackage = {
   /**
    * The display name of this package.
    */
-  name: 'freedesktop.org/mesa-glu' as const,
+  name: 'mesa-glu' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const freedesktoporgmesagluPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/mesa-glu/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install freedesktop.org/mesa-glu' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/mesa-glu -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/mesa-glu' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -58,8 +60,6 @@ export const freedesktoporgmesagluPackage = {
     '9.0.3',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/mesa-glu -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install freedesktop.org/mesa-glu' as const,
 }
 
 export type FreedesktoporgmesagluPackage = typeof freedesktoporgmesagluPackage

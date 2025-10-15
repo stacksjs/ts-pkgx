@@ -6,18 +6,15 @@
  * @version `1.5.3` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install carapace`
- * @name `carapace`
+ * @install `launchpad install carapace.sh`
+ * @homepage https://carapace.sh
+ * @dependencies `go.dev@~1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.carapace
- * // Or access via domain
- * const samePkg = pantry.carapacesh
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.carapacesh
  * console.log(pkg.name)        // "carapace"
  * console.log(pkg.description) // "Multi-shell multi-command argument completer"
  * console.log(pkg.programs)    // ["carapace"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/carapace-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const carapacePackage = {
+export const carapaceshPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const carapacePackage = {
    */
   description: 'Multi-shell multi-command argument completer' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/carapace.sh/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://carapace.sh' as const,
+  githubUrl: 'https://github.com/carapace-sh/carapace-bin' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install carapace' as const,
+  installCommand: 'launchpad install carapace.sh' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +carapace.sh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install carapace.sh' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const carapacePackage = {
     'carapace',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -81,13 +86,7 @@ export const carapacePackage = {
     '1.0.5',
     '1.0.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) carapace -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install carapace' as const,
 }
 
-export type CarapacePackage = typeof carapacePackage
+export type CarapaceshPackage = typeof carapaceshPackage

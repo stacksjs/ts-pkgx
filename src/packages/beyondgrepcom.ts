@@ -6,19 +6,15 @@
  * @version `3.9.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ack`
- * @name `ack`
+ * @install `launchpad install beyondgrep.com`
+ * @homepage https://beyondgrep.com/
  * @dependencies `perl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ack
- * // Or access via domain
- * const samePkg = pantry.beyondgrepcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.beyondgrepcom
  * console.log(pkg.name)        // "ack"
  * console.log(pkg.description) // "ack is a grep-like search tool optimized for so..."
  * console.log(pkg.programs)    // ["ack"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/beyondgrep-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ackPackage = {
+export const beyondgrepcomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const ackPackage = {
    */
   description: 'ack is a grep-like search tool optimized for source code.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/beyondgrep.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://beyondgrep.com/' as const,
+  githubUrl: 'https://github.com/beyondgrep/ack3' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ack' as const,
+  installCommand: 'launchpad install beyondgrep.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +beyondgrep.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install beyondgrep.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,13 +74,7 @@ export const ackPackage = {
     '3.7.0',
     '3.6.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ack -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ack' as const,
 }
 
-export type AckPackage = typeof ackPackage
+export type BeyondgrepcomPackage = typeof beyondgrepcomPackage

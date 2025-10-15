@@ -6,18 +6,15 @@
  * @version `2.27.0` (83 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install coder`
- * @name `coder`
+ * @install `launchpad install coder.com`
+ * @homepage https://coder.com
+ * @dependencies `go.dev@~1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.coder
- * // Or access via domain
- * const samePkg = pantry.codercom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.codercom
  * console.log(pkg.name)        // "coder"
  * console.log(pkg.description) // "Tool for provisioning self-hosted development e..."
  * console.log(pkg.programs)    // ["coder"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/coder-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const coderPackage = {
+export const codercomPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const coderPackage = {
    */
   description: 'Tool for provisioning self-hosted development environments with Terraform' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/coder.com/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://coder.com' as const,
   githubUrl: 'https://github.com/coder/coder' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install coder' as const,
+  installCommand: 'launchpad install coder.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +coder.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install coder.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const coderPackage = {
     'coder',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -146,13 +151,7 @@ export const coderPackage = {
     '2.7.2',
     '2.6.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) coder -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install coder' as const,
 }
 
-export type CoderPackage = typeof coderPackage
+export type CodercomPackage = typeof codercomPackage

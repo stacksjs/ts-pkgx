@@ -6,18 +6,13 @@
  * @version `1.0.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sd`
- * @name `sd`
+ * @install `launchpad install crates.io/sd`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sd
- * // Or access via domain
- * const samePkg = pantry.cratesiosd
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiosd
  * console.log(pkg.name)        // "sd"
  * console.log(pkg.description) // "Intuitive find & replace CLI (sed alternative)"
  * console.log(pkg.programs)    // ["sd"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/sd.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sdPackage = {
+export const cratesiosdPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const sdPackage = {
   description: 'Intuitive find & replace CLI (sed alternative)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/sd/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/chmln/sd' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sd' as const,
+  installCommand: 'launchpad install crates.io/sd' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/sd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/sd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,13 +62,7 @@ export const sdPackage = {
     '1.0.0',
     '0.7.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sd -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sd' as const,
 }
 
-export type SdPackage = typeof sdPackage
+export type CratesiosdPackage = typeof cratesiosdPackage

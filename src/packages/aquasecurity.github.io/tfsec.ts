@@ -6,18 +6,15 @@
  * @version `1.28.14` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install tfsec`
- * @name `tfsec`
+ * @install `launchpad install aquasecurity.github.io/tfsec`
+ * @homepage https://aquasecurity.github.io/tfsec/latest/
+ * @dependencies `go.dev@>=1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.tfsec
- * // Or access via domain
- * const samePkg = pantry.aquasecuritygithubiotfsec
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.aquasecuritygithubiotfsec
  * console.log(pkg.name)        // "tfsec"
  * console.log(pkg.description) // "Static analysis security scanner for your terra..."
  * console.log(pkg.programs)    // ["tfsec"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/aquasecurity-github-io/tfsec.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const tfsecPackage = {
+export const aquasecuritygithubiotfsecPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const tfsecPackage = {
    */
   description: 'Static analysis security scanner for your terraform code' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/aquasecurity.github.io/tfsec/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://aquasecurity.github.io/tfsec/latest/' as const,
   githubUrl: 'https://github.com/aquasecurity/tfsec' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install tfsec' as const,
+  installCommand: 'launchpad install aquasecurity.github.io/tfsec' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +aquasecurity.github.io/tfsec -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install aquasecurity.github.io/tfsec' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const tfsecPackage = {
     'tfsec',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@>=1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -72,13 +77,7 @@ export const tfsecPackage = {
     '1.28.6',
     '1.28.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) tfsec -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install tfsec' as const,
 }
 
-export type TfsecPackage = typeof tfsecPackage
+export type AquasecuritygithubiotfsecPackage = typeof aquasecuritygithubiotfsecPackage

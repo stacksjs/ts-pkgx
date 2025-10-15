@@ -6,19 +6,14 @@
  * @version `0.3.5` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gitweb`
- * @name `gitweb`
+ * @install `launchpad install crates.io/gitweb`
  * @dependencies `openssl.org^1.1`, `zlib.net^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gitweb
- * // Or access via domain
- * const samePkg = pantry.cratesiogitweb
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiogitweb
  * console.log(pkg.name)        // "gitweb"
  * console.log(pkg.description) // "🌲 Open the current remote repository in your b..."
  * console.log(pkg.programs)    // ["gitweb"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/gitweb.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitwebPackage = {
+export const cratesiogitwebPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const gitwebPackage = {
   description: '🌲 Open the current remote repository in your browser' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/gitweb/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/yoannfleurydev/gitweb' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gitweb' as const,
+  installCommand: 'launchpad install crates.io/gitweb' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/gitweb -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/gitweb' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +69,7 @@ export const gitwebPackage = {
   versions: [
     '0.3.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gitweb -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gitweb' as const,
 }
 
-export type GitwebPackage = typeof gitwebPackage
+export type CratesiogitwebPackage = typeof cratesiogitwebPackage

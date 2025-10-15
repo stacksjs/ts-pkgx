@@ -6,18 +6,13 @@
  * @version `1.38.1` (120 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install typos`
- * @name `typos`
+ * @install `launchpad install crates.io/typos`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.typos
- * // Or access via domain
- * const samePkg = pantry.cratesiotypos
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiotypos
  * console.log(pkg.name)        // "typos"
  * console.log(pkg.description) // "Source code spell checker"
  * console.log(pkg.programs)    // ["typos"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/typos.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const typosPackage = {
+export const cratesiotyposPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const typosPackage = {
   description: 'Source code spell checker' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/typos/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/crate-ci/typos' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install typos' as const,
+  installCommand: 'launchpad install crates.io/typos' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/typos -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/typos' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -183,13 +180,7 @@ export const typosPackage = {
     '1.16.7',
     '1.16.6',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) typos -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install typos' as const,
 }
 
-export type TyposPackage = typeof typosPackage
+export type CratesiotyposPackage = typeof cratesiotyposPackage

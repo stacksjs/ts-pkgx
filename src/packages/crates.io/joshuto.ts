@@ -6,20 +6,15 @@
  * @version `0.9.9` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install joshuto`
- * @name `joshuto`
+ * @install `launchpad install crates.io/joshuto`
+ * @homepage https://crates.io/crates/joshuto
  * @dependencies `libgit2.org@1`
- * @companions `github.com/junegunn/fzf`, `crates.io/zoxide`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.joshuto
- * // Or access via domain
- * const samePkg = pantry.cratesiojoshuto
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiojoshuto
  * console.log(pkg.name)        // "joshuto"
  * console.log(pkg.description) // "ranger-like terminal file manager written in Rust"
  * console.log(pkg.programs)    // ["joshuto"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/joshuto.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const joshutoPackage = {
+export const cratesiojoshutoPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const joshutoPackage = {
    */
   description: 'ranger-like terminal file manager written in Rust' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/joshuto/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://crates.io/crates/joshuto' as const,
+  githubUrl: 'https://github.com/kamiyaa/joshuto' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install joshuto' as const,
+  installCommand: 'launchpad install crates.io/joshuto' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/joshuto -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/joshuto' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,14 +54,7 @@ export const joshutoPackage = {
   programs: [
     'joshuto',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'github.com/junegunn/fzf',
-    'crates.io/zoxide',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -80,13 +70,7 @@ export const joshutoPackage = {
     '0.9.9',
     '0.9.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) joshuto -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install joshuto' as const,
 }
 
-export type JoshutoPackage = typeof joshutoPackage
+export type CratesiojoshutoPackage = typeof cratesiojoshutoPackage

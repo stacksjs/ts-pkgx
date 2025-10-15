@@ -1,5 +1,5 @@
 /**
- * **apache.org/serf** - pkgx package
+ * **serf** - pkgx package
  *
  * @domain `apache.org/serf`
  * @version `1.3.10` (1 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.apacheorgserf
- * console.log(pkg.name)        // "apache.org/serf"
+ * console.log(pkg.name)        // "serf"
  * console.log(pkg.versions[0]) // "1.3.10" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const apacheorgserfPackage = {
   /**
    * The display name of this package.
    */
-  name: 'apache.org/serf' as const,
+  name: 'serf' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const apacheorgserfPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/serf/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install apache.org/serf' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/serf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install apache.org/serf' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -63,8 +65,6 @@ export const apacheorgserfPackage = {
     '1.3.10',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/serf -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install apache.org/serf' as const,
 }
 
 export type ApacheorgserfPackage = typeof apacheorgserfPackage

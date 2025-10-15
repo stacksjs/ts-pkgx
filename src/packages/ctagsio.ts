@@ -6,19 +6,15 @@
  * @version `6.2.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ctags`
- * @name `ctags`
+ * @install `launchpad install ctags.io`
+ * @homepage https://ctags.io
  * @dependencies `digip.org/jansson^2`, `pyyaml.org/libyaml^0.2`, `pcre.org/v2^10`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ctags
- * // Or access via domain
- * const samePkg = pantry.ctagsio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ctagsio
  * console.log(pkg.name)        // "ctags"
  * console.log(pkg.description) // "A maintained ctags implementation"
  * console.log(pkg.programs)    // ["ctags"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ctags-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ctagsPackage = {
+export const ctagsioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const ctagsPackage = {
    */
   description: 'A maintained ctags implementation' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ctags.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://ctags.io' as const,
+  githubUrl: 'https://github.com/universal-ctags/ctags' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ctags' as const,
+  installCommand: 'launchpad install ctags.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ctags.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ctags.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,13 +73,7 @@ export const ctagsPackage = {
     '6.2.0',
     '6.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ctags -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ctags' as const,
 }
 
-export type CtagsPackage = typeof ctagsPackage
+export type CtagsioPackage = typeof ctagsioPackage

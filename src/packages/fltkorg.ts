@@ -1,5 +1,5 @@
 /**
- * **fltk.org** - FLTK - Fast Light Tool Kit - https://github.com/fltk/fltk - cross platform GUI development
+ * **fltk** - FLTK - Fast Light Tool Kit - https://github.com/fltk/fltk - cross platform GUI development
  *
  * @domain `fltk.org`
  * @programs `fluid`, `fltk-config`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fltk.org`
+ * @homepage https://www.fltk.org/
  * @dependencies `libjpeg-turbo.org^2`, `libpng.org^1`, `linux:x.org/xft^2`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.fltkorg
- * console.log(pkg.name)        // "fltk.org"
+ * console.log(pkg.name)        // "fltk"
  * console.log(pkg.description) // "FLTK - Fast Light Tool Kit - https://github.com..."
  * console.log(pkg.programs)    // ["fluid", "fltk-config"]
  * console.log(pkg.versions[0]) // "1.4.4" (latest)
@@ -27,7 +28,7 @@ export const fltkorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'fltk.org' as const,
+  name: 'fltk' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const fltkorgPackage = {
    */
   description: 'FLTK - Fast Light Tool Kit - https://github.com/fltk/fltk - cross platform GUI development' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fltk.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.fltk.org/' as const,
+  githubUrl: 'https://github.com/fltk/fltk' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install fltk.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fltk.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fltk.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,8 +82,6 @@ export const fltkorgPackage = {
     '1.3.9',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fltk.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install fltk.org' as const,
 }
 
 export type FltkorgPackage = typeof fltkorgPackage

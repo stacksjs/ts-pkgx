@@ -6,19 +6,15 @@
  * @version `25.9.2` (30 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ansible-lint`
- * @name `ansible-lint`
+ * @install `launchpad install ansible.com/ansible-lint`
+ * @homepage https://ansible-lint.readthedocs.io/
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ansiblelint
- * // Or access via domain
- * const samePkg = pantry.ansiblecomansiblelint
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ansiblecomansiblelint
  * console.log(pkg.name)        // "ansible-lint"
  * console.log(pkg.description) // "ansible-lint checks playbooks for practices and..."
  * console.log(pkg.programs)    // ["ansible-lint"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ansible-com/ansible-lint.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ansiblelintPackage = {
+export const ansiblecomansiblelintPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const ansiblelintPackage = {
    */
   description: 'ansible-lint checks playbooks for practices and behavior that could potentially be improved and can fix some of the most common ones for you' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ansible.com/ansible-lint/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://ansible-lint.readthedocs.io/' as const,
+  githubUrl: 'https://github.com/ansible/ansible-lint' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ansible-lint' as const,
+  installCommand: 'launchpad install ansible.com/ansible-lint' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ansible.com/ansible-lint -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ansible.com/ansible-lint' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -100,13 +98,7 @@ export const ansiblelintPackage = {
     '24.2.3',
     '24.2.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ansible-lint -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ansible-lint' as const,
 }
 
-export type AnsiblelintPackage = typeof ansiblelintPackage
+export type AnsiblecomansiblelintPackage = typeof ansiblecomansiblelintPackage

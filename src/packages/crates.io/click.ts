@@ -6,19 +6,14 @@
  * @version `0.6.3` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install click`
- * @name `click`
+ * @install `launchpad install crates.io/click`
  * @dependencies `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.click
- * // Or access via domain
- * const samePkg = pantry.cratesioclick
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesioclick
  * console.log(pkg.name)        // "click"
  * console.log(pkg.description) // "The "Command Line Interactive Controller for Ku..."
  * console.log(pkg.programs)    // ["click"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/click.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const clickPackage = {
+export const cratesioclickPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const clickPackage = {
   description: 'The "Command Line Interactive Controller for Kubernetes"' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/click/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/databricks/click' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install click' as const,
+  installCommand: 'launchpad install crates.io/click' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/click -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/click' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +69,7 @@ export const clickPackage = {
     '0.6.3',
     '0.6.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) click -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install click' as const,
 }
 
-export type ClickPackage = typeof clickPackage
+export type CratesioclickPackage = typeof cratesioclickPackage

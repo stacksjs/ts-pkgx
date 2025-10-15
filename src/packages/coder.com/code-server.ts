@@ -6,19 +6,15 @@
  * @version `4.104.3` (50 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install code-server`
- * @name `code-server`
+ * @install `launchpad install coder.com/code-server`
+ * @homepage https://coder.com
  * @dependencies `nodejs.org^22 # since 4.101.0`, `linux:gnome.org/libsecret^0.21`, `linux:x.org/x11^1.8`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.codeserver
- * // Or access via domain
- * const samePkg = pantry.codercomcodeserver
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.codercomcodeserver
  * console.log(pkg.name)        // "code-server"
  * console.log(pkg.description) // "Access VS Code through the browser"
  * console.log(pkg.programs)    // ["code-server"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/coder-com/code-server.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const codeserverPackage = {
+export const codercomcodeserverPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const codeserverPackage = {
    */
   description: 'Access VS Code through the browser' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/coder.com/code-server/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://coder.com' as const,
+  githubUrl: 'https://github.com/coder/code-server' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install code-server' as const,
+  installCommand: 'launchpad install coder.com/code-server' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +coder.com/code-server -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install coder.com/code-server' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -125,13 +123,7 @@ export const codeserverPackage = {
     '4.21.0',
     '4.20.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) code-server -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install code-server' as const,
 }
 
-export type CodeserverPackage = typeof codeserverPackage
+export type CodercomcodeserverPackage = typeof codercomcodeserverPackage

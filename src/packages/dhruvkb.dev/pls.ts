@@ -6,19 +6,15 @@
  * @version `2023.12.22` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pls`
- * @name `pls`
+ * @install `launchpad install dhruvkb.dev/pls`
+ * @homepage https://pls.cli.rs/
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pls
- * // Or access via domain
- * const samePkg = pantry.dhruvkbdevpls
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.dhruvkbdevpls
  * console.log(pkg.name)        // "pls"
  * console.log(pkg.description) // "pls is a prettier and powerful ls(1) for the pros."
  * console.log(pkg.programs)    // ["pls"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dhruvkb-dev/pls.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const plsPackage = {
+export const dhruvkbdevplsPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const plsPackage = {
    */
   description: 'pls is a prettier and powerful ls(1) for the pros.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dhruvkb.dev/pls/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://pls.cli.rs/' as const,
+  githubUrl: 'https://github.com/pls-rs/pls' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pls' as const,
+  installCommand: 'launchpad install dhruvkb.dev/pls' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +dhruvkb.dev/pls -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dhruvkb.dev/pls' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +69,7 @@ export const plsPackage = {
   versions: [
     '2023.12.22',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pls -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pls' as const,
 }
 
-export type PlsPackage = typeof plsPackage
+export type DhruvkbdevplsPackage = typeof dhruvkbdevplsPackage

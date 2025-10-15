@@ -1,18 +1,20 @@
 /**
- * **fmt.dev** - A modern formatting library
+ * **fmt** - A modern formatting library
  *
  * @domain `fmt.dev`
  * @version `12.0.0` (16 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fmt.dev`
+ * @homepage https://fmt.dev
+ * @dependencies `cmake.org@^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.fmtdev
- * console.log(pkg.name)        // "fmt.dev"
+ * console.log(pkg.name)        // "fmt"
  * console.log(pkg.description) // "A modern formatting library"
  * console.log(pkg.versions[0]) // "12.0.0" (latest)
  * ```
@@ -24,7 +26,7 @@ export const fmtdevPackage = {
   /**
    * The display name of this package.
    */
-  name: 'fmt.dev' as const,
+  name: 'fmt' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,16 +36,24 @@ export const fmtdevPackage = {
    */
   description: 'A modern formatting library' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fmt.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://fmt.dev' as const,
+  githubUrl: 'https://github.com/fmtlib/fmt' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install fmt.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fmt.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fmt.dev' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org@^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,8 +77,6 @@ export const fmtdevPackage = {
     '9.1.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fmt.dev -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install fmt.dev' as const,
 }
 
 export type FmtdevPackage = typeof fmtdevPackage

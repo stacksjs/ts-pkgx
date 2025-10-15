@@ -6,18 +6,15 @@
  * @version `2.66.0` (84 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install chezmoi`
- * @name `chezmoi`
+ * @install `launchpad install chezmoi.io`
+ * @homepage https://chezmoi.io/
+ * @dependencies `go.dev@^1.18`, `gnu.org/gcc`, `gnu.org/binutils`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.chezmoi
- * // Or access via domain
- * const samePkg = pantry.chezmoiio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.chezmoiio
  * console.log(pkg.name)        // "chezmoi"
  * console.log(pkg.description) // "Manage your dotfiles across multiple diverse ma..."
  * console.log(pkg.programs)    // ["chezmoi"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/chezmoi-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const chezmoiPackage = {
+export const chezmoiioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const chezmoiPackage = {
    */
   description: 'Manage your dotfiles across multiple diverse machines, securely.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/chezmoi.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://chezmoi.io/' as const,
+  githubUrl: 'https://github.com/twpayne/chezmoi' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install chezmoi' as const,
+  installCommand: 'launchpad install chezmoi.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +chezmoi.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install chezmoi.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,15 @@ export const chezmoiPackage = {
     'chezmoi',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+    'gnu.org/gcc',
+    'gnu.org/binutils',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -147,13 +154,7 @@ export const chezmoiPackage = {
     '2.29.4',
     '2.29.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) chezmoi -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install chezmoi' as const,
 }
 
-export type ChezmoiPackage = typeof chezmoiPackage
+export type ChezmoiioPackage = typeof chezmoiioPackage

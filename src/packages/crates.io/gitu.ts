@@ -6,19 +6,14 @@
  * @version `0.38.0` (47 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gitu`
- * @name `gitu`
+ * @install `launchpad install crates.io/gitu`
  * @dependencies `zlib.net~1.3`, `libgit2.org~1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gitu
- * // Or access via domain
- * const samePkg = pantry.cratesiogitu
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiogitu
  * console.log(pkg.name)        // "gitu"
  * console.log(pkg.description) // "A TUI Git client inspired by Magit"
  * console.log(pkg.programs)    // ["gitu"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/gitu.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gituPackage = {
+export const cratesiogituPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const gituPackage = {
   description: 'A TUI Git client inspired by Magit' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/gitu/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/altsem/gitu' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gitu' as const,
+  installCommand: 'launchpad install crates.io/gitu' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/gitu -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/gitu' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -118,13 +115,7 @@ export const gituPackage = {
     '0.9.0',
     '0.8.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gitu -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gitu' as const,
 }
 
-export type GituPackage = typeof gituPackage
+export type CratesiogituPackage = typeof cratesiogituPackage

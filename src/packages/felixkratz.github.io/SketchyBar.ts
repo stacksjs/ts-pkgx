@@ -6,19 +6,15 @@
  * @version `2.22.1` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install sketchybar`
- * @name `sketchybar`
+ * @install `launchpad install felixkratz.github.io/SketchyBar`
+ * @homepage https://felixkratz.github.io/SketchyBar/
  * @dependencies `github.com/koekeishiya/yabai`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.sketchybar
- * // Or access via domain
- * const samePkg = pantry.felixkratzgithubiosketchybar
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.felixkratzgithubiosketchybar
  * console.log(pkg.name)        // "sketchybar"
  * console.log(pkg.description) // "A highly customizable macOS status bar replacement"
  * console.log(pkg.programs)    // ["sketchybar"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/felixkratz-github-io/SketchyBar.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const sketchybarPackage = {
+export const felixkratzgithubiosketchybarPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const sketchybarPackage = {
    */
   description: 'A highly customizable macOS status bar replacement' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/felixkratz.github.io/SketchyBar/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://felixkratz.github.io/SketchyBar/' as const,
+  githubUrl: 'https://github.com/FelixKratz/SketchyBar' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install sketchybar' as const,
+  installCommand: 'launchpad install felixkratz.github.io/SketchyBar' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +felixkratz.github.io/SketchyBar -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install felixkratz.github.io/SketchyBar' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,13 +73,7 @@ export const sketchybarPackage = {
     '2.20.1',
     '2.20.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) sketchybar -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install sketchybar' as const,
 }
 
-export type SketchybarPackage = typeof sketchybarPackage
+export type FelixkratzgithubiosketchybarPackage = typeof felixkratzgithubiosketchybarPackage

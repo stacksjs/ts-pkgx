@@ -6,18 +6,15 @@
  * @version `0.7.1` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install d2`
- * @name `d2`
+ * @install `launchpad install d2lang.com`
+ * @homepage https://d2lang.com/
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.d2
- * // Or access via domain
- * const samePkg = pantry.d2langcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.d2langcom
  * console.log(pkg.name)        // "d2"
  * console.log(pkg.description) // "D2 is a modern diagram scripting language that ..."
  * console.log(pkg.programs)    // ["d2"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/d2lang-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const d2Package = {
+export const d2langcomPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const d2Package = {
    */
   description: 'D2 is a modern diagram scripting language that turns text to diagrams.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/d2lang.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://d2lang.com/' as const,
+  githubUrl: 'https://github.com/terrastruct/d2' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install d2' as const,
+  installCommand: 'launchpad install d2lang.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +d2lang.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install d2lang.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const d2Package = {
     'd2',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -75,13 +80,7 @@ export const d2Package = {
     '0.6.1',
     '0.6.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) d2 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install d2' as const,
 }
 
-export type D2Package = typeof d2Package
+export type D2langcomPackage = typeof d2langcomPackage

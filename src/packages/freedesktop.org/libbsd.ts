@@ -1,18 +1,20 @@
 /**
- * **freedesktop.org/libbsd** - BSD compatibility library (mirror)
+ * **libbsd** - BSD compatibility library (mirror)
  *
  * @domain `freedesktop.org/libbsd`
  * @version `0.11.7` (1 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install freedesktop.org/libbsd`
+ * @homepage https://libbsd.freedesktop.org/
+ * @dependencies `hadrons.org/libmd`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.freedesktoporglibbsd
- * console.log(pkg.name)        // "freedesktop.org/libbsd"
+ * console.log(pkg.name)        // "libbsd"
  * console.log(pkg.description) // "BSD compatibility library (mirror)"
  * console.log(pkg.versions[0]) // "0.11.7" (latest)
  * ```
@@ -24,7 +26,7 @@ export const freedesktoporglibbsdPackage = {
   /**
    * The display name of this package.
    */
-  name: 'freedesktop.org/libbsd' as const,
+  name: 'libbsd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,16 +36,24 @@ export const freedesktoporglibbsdPackage = {
    */
   description: 'BSD compatibility library (mirror)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/libbsd/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://libbsd.freedesktop.org/' as const,
+  githubUrl: 'https://github.com/guillemj/libbsd' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install freedesktop.org/libbsd' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/libbsd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/libbsd' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'hadrons.org/libmd',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -52,8 +62,6 @@ export const freedesktoporglibbsdPackage = {
     '0.11.7',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/libbsd -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install freedesktop.org/libbsd' as const,
 }
 
 export type FreedesktoporglibbsdPackage = typeof freedesktoporglibbsdPackage

@@ -1,11 +1,12 @@
 /**
- * **browser-use.com** - Make websites accessible for AI agents
+ * **browser-use** - Make websites accessible for AI agents
  *
  * @domain `browser-use.com`
  * @version `0.8.1` (57 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install browser-use.com`
+ * @homepage https://browser-use.com/
  * @dependencies `python.org~3.12 # no torch<2.3.0 for 3.13`
  *
  * @example
@@ -13,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.browserusecom
- * console.log(pkg.name)        // "browser-use.com"
+ * console.log(pkg.name)        // "browser-use"
  * console.log(pkg.description) // "Make websites accessible for AI agents"
  * console.log(pkg.versions[0]) // "0.8.1" (latest)
  * ```
@@ -25,7 +26,7 @@ export const browserusecomPackage = {
   /**
    * The display name of this package.
    */
-  name: 'browser-use.com' as const,
+  name: 'browser-use' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,13 +36,15 @@ export const browserusecomPackage = {
    */
   description: 'Make websites accessible for AI agents' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/browser-use.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://browser-use.com/' as const,
+  githubUrl: 'https://github.com/browser-use/browser-use' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install browser-use.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +browser-use.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install browser-use.com' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -115,8 +118,6 @@ export const browserusecomPackage = {
     '0.1.37',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +browser-use.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install browser-use.com' as const,
 }
 
 export type BrowserusecomPackage = typeof browserusecomPackage

@@ -6,18 +6,15 @@
  * @version `2.37.1` (8 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install direnv`
- * @name `direnv`
+ * @install `launchpad install direnv.net`
+ * @homepage https://direnv.net/
+ * @dependencies `go.dev@^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.direnv
- * // Or access via domain
- * const samePkg = pantry.direnvnet
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.direnvnet
  * console.log(pkg.name)        // "direnv"
  * console.log(pkg.description) // "Load/unload environment variables based on $PWD"
  * console.log(pkg.programs)    // ["direnv"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/direnv-net.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const direnvPackage = {
+export const direnvnetPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const direnvPackage = {
    */
   description: 'Load/unload environment variables based on $PWD' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/direnv.net/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://direnv.net/' as const,
+  githubUrl: 'https://github.com/direnv/direnv' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install direnv' as const,
+  installCommand: 'launchpad install direnv.net' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +direnv.net -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install direnv.net' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const direnvPackage = {
     'direnv',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -71,13 +76,7 @@ export const direnvPackage = {
     '2.32.3',
     '2.32.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) direnv -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install direnv' as const,
 }
 
-export type DirenvPackage = typeof direnvPackage
+export type DirenvnetPackage = typeof direnvnetPackage

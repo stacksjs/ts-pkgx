@@ -1,25 +1,20 @@
 /**
- * **aws** - Universal Command Line Interface for Amazon Web Services
+ * **aws/cli** - Universal Command Line Interface for Amazon Web Services
  *
  * @domain `aws.amazon.com/cli`
  * @programs `aws`
  * @version `2.31.15` (1080 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install aws`
- * @name `aws/cli`
- * @aliases `aws`
+ * @install `launchpad install aws.amazon.com/cli`
+ * @homepage https://aws.amazon.com/cli/
  * @dependencies `sourceware.org/libffi^3`, `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.aws
- * // Or access via domain
- * const samePkg = pantry.awsamazoncomcli
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.awsamazoncomcli
  * console.log(pkg.name)        // "aws/cli"
  * console.log(pkg.description) // "Universal Command Line Interface for Amazon Web..."
  * console.log(pkg.programs)    // ["aws"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/aws-amazon-com/cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const awsPackage = {
+export const awsamazoncomcliPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const awsPackage = {
    */
   description: 'Universal Command Line Interface for Amazon Web Services' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/aws.amazon.com/cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://aws.amazon.com/cli/' as const,
+  githubUrl: 'https://github.com/aws/aws-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install aws' as const,
+  installCommand: 'launchpad install aws.amazon.com/cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +aws.amazon.com/cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install aws.amazon.com/cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -1152,15 +1149,7 @@ export const awsPackage = {
     '1.27.103',
     '1.27.102',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'aws',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aws -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install aws' as const,
+  aliases: [] as const,
 }
 
-export type AwsPackage = typeof awsPackage
+export type AwsamazoncomcliPackage = typeof awsamazoncomcliPackage

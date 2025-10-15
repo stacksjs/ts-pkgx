@@ -1,5 +1,5 @@
 /**
- * **elixir-lang.org** - Elixir is a dynamic, functional language for building scalable and maintainable applications
+ * **elixir-lang** - Elixir is a dynamic, functional language for building scalable and maintainable applications
  *
  * @domain `elixir-lang.org`
  * @programs `elixir`, `elixirc`, `iex`, `mix`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install elixir-lang.org`
+ * @homepage https://elixir-lang.org/
  * @dependencies `erlang.org`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.elixirlangorg
- * console.log(pkg.name)        // "elixir-lang.org"
+ * console.log(pkg.name)        // "elixir-lang"
  * console.log(pkg.description) // "Elixir is a dynamic, functional language for bu..."
  * console.log(pkg.programs)    // ["elixir", "elixirc", ...]
  * console.log(pkg.versions[0]) // "1.18.4" (latest)
@@ -27,7 +28,7 @@ export const elixirlangorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'elixir-lang.org' as const,
+  name: 'elixir-lang' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const elixirlangorgPackage = {
    */
   description: 'Elixir is a dynamic, functional language for building scalable and maintainable applications' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/elixir-lang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://elixir-lang.org/' as const,
+  githubUrl: 'https://github.com/elixir-lang/elixir' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install elixir-lang.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +elixir-lang.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install elixir-lang.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -93,8 +96,6 @@ export const elixirlangorgPackage = {
     '1.14.4',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +elixir-lang.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install elixir-lang.org' as const,
 }
 
 export type ElixirlangorgPackage = typeof elixirlangorgPackage

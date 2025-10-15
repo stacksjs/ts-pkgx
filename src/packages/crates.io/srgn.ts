@@ -6,18 +6,14 @@
  * @version `0.10.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install srgn`
- * @name `srgn`
+ * @install `launchpad install crates.io/srgn`
+ * @homepage https://crates.io/crates/srgn/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.srgn
- * // Or access via domain
- * const samePkg = pantry.cratesiosrgn
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiosrgn
  * console.log(pkg.name)        // "srgn"
  * console.log(pkg.description) // "A grep-like tool which understands source code ..."
  * console.log(pkg.programs)    // ["srgn"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/srgn.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const srgnPackage = {
+export const cratesiosrgnPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const srgnPackage = {
    */
   description: 'A grep-like tool which understands source code syntax and allows for manipulation in addition to search' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/srgn/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://crates.io/crates/srgn/' as const,
+  githubUrl: 'https://github.com/alexpovel/srgn' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install srgn' as const,
+  installCommand: 'launchpad install crates.io/srgn' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/srgn -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/srgn' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +62,7 @@ export const srgnPackage = {
   versions: [
     '0.10.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) srgn -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install srgn' as const,
 }
 
-export type SrgnPackage = typeof srgnPackage
+export type CratesiosrgnPackage = typeof cratesiosrgnPackage

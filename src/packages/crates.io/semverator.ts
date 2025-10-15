@@ -6,18 +6,14 @@
  * @version `0.10.1` (19 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install semverator`
- * @name `semverator`
+ * @install `launchpad install crates.io/semverator`
+ * @dependencies `if@>=0.6.0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.semverator
- * // Or access via domain
- * const samePkg = pantry.cratesiosemverator
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiosemverator
  * console.log(pkg.name)        // "semverator"
  * console.log(pkg.programs)    // ["semverator"]
  * console.log(pkg.versions[0]) // "0.10.1" (latest)
@@ -26,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/semverator.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const semveratorPackage = {
+export const cratesiosemveratorPackage = {
   /**
    * The display name of this package.
    */
@@ -41,12 +37,14 @@ export const semveratorPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/semverator/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/jhheider/semverator' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install semverator' as const,
+  installCommand: 'launchpad install crates.io/semverator' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/semverator -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/semverator' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -55,7 +53,13 @@ export const semveratorPackage = {
     'semverator',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'if@>=0.6.0',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -81,13 +85,7 @@ export const semveratorPackage = {
     '0.2.0',
     '0.1.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) semverator -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install semverator' as const,
 }
 
-export type SemveratorPackage = typeof semveratorPackage
+export type CratesiosemveratorPackage = typeof cratesiosemveratorPackage

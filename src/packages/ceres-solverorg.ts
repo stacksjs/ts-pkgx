@@ -1,5 +1,5 @@
 /**
- * **ceres-solver.org** - pkgx package
+ * **ceres-solver** - pkgx package
  *
  * @domain `ceres-solver.org`
  * @version `2.2.0` (2 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.ceressolverorg
- * console.log(pkg.name)        // "ceres-solver.org"
+ * console.log(pkg.name)        // "ceres-solver"
  * console.log(pkg.versions[0]) // "2.2.0" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const ceressolverorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'ceres-solver.org' as const,
+  name: 'ceres-solver' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const ceressolverorgPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ceres-solver.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install ceres-solver.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ceres-solver.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ceres-solver.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -65,8 +67,6 @@ export const ceressolverorgPackage = {
     '2.1.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ceres-solver.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ceres-solver.org' as const,
 }
 
 export type CeressolverorgPackage = typeof ceressolverorgPackage

@@ -6,18 +6,15 @@
  * @version `1.4.1` (23 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install duckdb`
- * @name `duckdb`
+ * @install `launchpad install duckdb.org`
+ * @homepage https://www.duckdb.org
+ * @dependencies `cmake.org@^3`, `python.org@^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.duckdb
- * // Or access via domain
- * const samePkg = pantry.duckdborg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.duckdborg
  * console.log(pkg.name)        // "duckdb"
  * console.log(pkg.description) // "DuckDB is an analytical in-process SQL database..."
  * console.log(pkg.programs)    // ["duckdb"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/duckdb-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const duckdbPackage = {
+export const duckdborgPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const duckdbPackage = {
    */
   description: 'DuckDB is an analytical in-process SQL database management system' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/duckdb.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.duckdb.org' as const,
+  githubUrl: 'https://github.com/duckdb/duckdb' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install duckdb' as const,
+  installCommand: 'launchpad install duckdb.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +duckdb.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install duckdb.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const duckdbPackage = {
     'duckdb',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org@^3',
+    'python.org@^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -86,13 +92,7 @@ export const duckdbPackage = {
     '0.8.0',
     '0.7.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) duckdb -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install duckdb' as const,
 }
 
-export type DuckdbPackage = typeof duckdbPackage
+export type DuckdborgPackage = typeof duckdborgPackage

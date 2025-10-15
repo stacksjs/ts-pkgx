@@ -1,5 +1,5 @@
 /**
- * **apache.org/httpd** - Apache HTTP server
+ * **httpd** - Apache HTTP server
  *
  * @domain `apache.org/httpd`
  * @programs `ab`, `apachectl`, `checkgid`, `fcgistarter`, `htcacheclean`, ... (+8 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install apache.org/httpd`
+ * @homepage https://httpd.apache.org/
  * @dependencies `apache.org/apr>=1.3.0`, `apache.org/apr-util>=1.3.0`, `github.com/google/brotli`, ... (+6 more)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.apacheorghttpd
- * console.log(pkg.name)        // "apache.org/httpd"
+ * console.log(pkg.name)        // "httpd"
  * console.log(pkg.description) // "Apache HTTP server"
  * console.log(pkg.programs)    // ["ab", "apachectl", ...]
  * console.log(pkg.versions[0]) // "2.4.65" (latest)
@@ -27,7 +28,7 @@ export const apacheorghttpdPackage = {
   /**
    * The display name of this package.
    */
-  name: 'apache.org/httpd' as const,
+  name: 'httpd' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const apacheorghttpdPackage = {
    */
   description: 'Apache HTTP server' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/httpd/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://httpd.apache.org/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install apache.org/httpd' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/httpd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install apache.org/httpd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -95,8 +98,6 @@ export const apacheorghttpdPackage = {
     '2.4.57',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/httpd -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install apache.org/httpd' as const,
 }
 
 export type ApacheorghttpdPackage = typeof apacheorghttpdPackage

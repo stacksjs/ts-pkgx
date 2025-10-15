@@ -6,19 +6,15 @@
  * @version `4.1.2` (17 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install fish`
- * @name `fish`
+ * @install `launchpad install fishshell.com`
+ * @homepage https://fishshell.com
  * @dependencies `gnu.org/gettext`, `invisible-island.net/ncurses>=6.0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.fish
- * // Or access via domain
- * const samePkg = pantry.fishshellcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.fishshellcom
  * console.log(pkg.name)        // "fish"
  * console.log(pkg.description) // "User-friendly command-line shell for UNIX-like ..."
  * console.log(pkg.programs)    // ["fish", "fish_indent", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fishshell-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fishPackage = {
+export const fishshellcomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const fishPackage = {
    */
   description: 'User-friendly command-line shell for UNIX-like operating systems' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fishshell.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://fishshell.com' as const,
+  githubUrl: 'https://github.com/fish-shell/fish-shell' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install fish' as const,
+  installCommand: 'launchpad install fishshell.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fishshell.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fishshell.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -90,13 +88,7 @@ export const fishPackage = {
     '3.6.0',
     '3.5.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fishshell.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install fish' as const,
 }
 
-export type FishPackage = typeof fishPackage
+export type FishshellcomPackage = typeof fishshellcomPackage

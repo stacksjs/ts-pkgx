@@ -6,19 +6,15 @@
  * @version `4.12.1` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ccache`
- * @name `ccache`
+ * @install `launchpad install ccache.dev`
+ * @homepage https://ccache.dev/
  * @dependencies `github.com/redis/hiredis`, `facebook.com/zstd`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ccache
- * // Or access via domain
- * const samePkg = pantry.ccachedev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ccachedev
  * console.log(pkg.name)        // "ccache"
  * console.log(pkg.description) // "Object-file caching compiler wrapper"
  * console.log(pkg.programs)    // ["ccache"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ccache-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ccachePackage = {
+export const ccachedevPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const ccachePackage = {
    */
   description: 'Object-file caching compiler wrapper' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ccache.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://ccache.dev/' as const,
+  githubUrl: 'https://github.com/ccache/ccache' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ccache' as const,
+  installCommand: 'launchpad install ccache.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ccache.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ccache.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -83,13 +81,7 @@ export const ccachePackage = {
     '4.9.0',
     '4.8.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ccache -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ccache' as const,
 }
 
-export type CcachePackage = typeof ccachePackage
+export type CcachedevPackage = typeof ccachedevPackage

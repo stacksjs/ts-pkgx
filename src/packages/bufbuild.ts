@@ -6,18 +6,15 @@
  * @version `1.58.0` (48 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install buf`
- * @name `buf`
+ * @install `launchpad install buf.build`
+ * @homepage https://buf.build
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.buf
- * // Or access via domain
- * const samePkg = pantry.bufbuild
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.bufbuild
  * console.log(pkg.name)        // "buf"
  * console.log(pkg.description) // "The best way of working with Protocol Buffers."
  * console.log(pkg.programs)    // ["buf"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/buf-build.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bufPackage = {
+export const bufbuildPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const bufPackage = {
    */
   description: 'The best way of working with Protocol Buffers.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/buf.build/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://buf.build' as const,
+  githubUrl: 'https://github.com/bufbuild/buf' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install buf' as const,
+  installCommand: 'launchpad install buf.build' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +buf.build -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install buf.build' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const bufPackage = {
     'buf',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -111,13 +116,7 @@ export const bufPackage = {
     '1.27.0',
     '1.26.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) buf -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install buf' as const,
 }
 
-export type BufPackage = typeof bufPackage
+export type BufbuildPackage = typeof bufbuildPackage

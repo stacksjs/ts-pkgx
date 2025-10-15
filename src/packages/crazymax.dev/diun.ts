@@ -6,18 +6,15 @@
  * @version `4.30.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install diun`
- * @name `diun`
+ * @install `launchpad install crazymax.dev/diun`
+ * @homepage https://crazymax.dev/diun/
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.diun
- * // Or access via domain
- * const samePkg = pantry.crazymaxdevdiun
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.crazymaxdevdiun
  * console.log(pkg.name)        // "diun"
  * console.log(pkg.description) // "Receive notifications when an image is updated ..."
  * console.log(pkg.programs)    // ["diun"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crazymax-dev/diun.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const diunPackage = {
+export const crazymaxdevdiunPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const diunPackage = {
    */
   description: 'Receive notifications when an image is updated on a Docker registry' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crazymax.dev/diun/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://crazymax.dev/diun/' as const,
+  githubUrl: 'https://github.com/crazy-max/diun' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install diun' as const,
+  installCommand: 'launchpad install crazymax.dev/diun' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crazymax.dev/diun -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crazymax.dev/diun' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const diunPackage = {
     'diun',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -66,13 +71,7 @@ export const diunPackage = {
     '4.29.0',
     '4.28.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) diun -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install diun' as const,
 }
 
-export type DiunPackage = typeof diunPackage
+export type CrazymaxdevdiunPackage = typeof crazymaxdevdiunPackage

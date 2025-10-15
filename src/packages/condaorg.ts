@@ -6,19 +6,14 @@
  * @version `25.7.0` (17 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install conda`
- * @name `conda`
+ * @install `launchpad install conda.org`
  * @dependencies `pkgx.sh^1`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.conda
- * // Or access via domain
- * const samePkg = pantry.condaorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.condaorg
  * console.log(pkg.name)        // "conda"
  * console.log(pkg.programs)    // ["conda"]
  * console.log(pkg.versions[0]) // "25.7.0" (latest)
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/conda-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const condaPackage = {
+export const condaorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const condaPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/conda.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install conda' as const,
+  installCommand: 'launchpad install conda.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +conda.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install conda.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -87,13 +84,7 @@ export const condaPackage = {
     '23.7.3',
     '23.7.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) conda -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install conda' as const,
 }
 
-export type CondaPackage = typeof condaPackage
+export type CondaorgPackage = typeof condaorgPackage

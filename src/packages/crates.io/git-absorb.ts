@@ -6,19 +6,15 @@
  * @version `0.8.0` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install git-absorb`
- * @name `git-absorb`
+ * @install `launchpad install crates.io/git-absorb`
+ * @homepage https://crates.io/crates/git-absorb
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gitabsorb
- * // Or access via domain
- * const samePkg = pantry.cratesiogitabsorb
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiogitabsorb
  * console.log(pkg.name)        // "git-absorb"
  * console.log(pkg.description) // "git commit --fixup, but automatic"
  * console.log(pkg.programs)    // ["git-absorb"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/git-absorb.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gitabsorbPackage = {
+export const cratesiogitabsorbPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const gitabsorbPackage = {
    */
   description: 'git commit --fixup, but automatic' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/git-absorb/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://crates.io/crates/git-absorb' as const,
+  githubUrl: 'https://github.com/tummychow/git-absorb' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install git-absorb' as const,
+  installCommand: 'launchpad install crates.io/git-absorb' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/git-absorb -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/git-absorb' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,13 +77,7 @@ export const gitabsorbPackage = {
     '0.6.11',
     '0.6.10',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-absorb -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install git-absorb' as const,
 }
 
-export type GitabsorbPackage = typeof gitabsorbPackage
+export type CratesiogitabsorbPackage = typeof cratesiogitabsorbPackage

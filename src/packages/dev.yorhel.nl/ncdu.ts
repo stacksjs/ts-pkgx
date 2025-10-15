@@ -6,19 +6,15 @@
  * @version `1.22.0` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ncdu`
- * @name `ncdu`
+ * @install `launchpad install dev.yorhel.nl/ncdu`
+ * @homepage https://dev.yorhel.nl/ncdu
  * @dependencies `invisible-island.net/ncurses`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ncdu
- * // Or access via domain
- * const samePkg = pantry.devyorhelnlncdu
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.devyorhelnlncdu
  * console.log(pkg.name)        // "ncdu"
  * console.log(pkg.description) // "NCurses Disk Usage"
  * console.log(pkg.programs)    // ["ncdu"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dev-yorhel-nl/ncdu.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ncduPackage = {
+export const devyorhelnlncduPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const ncduPackage = {
    */
   description: 'NCurses Disk Usage' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dev.yorhel.nl/ncdu/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://dev.yorhel.nl/ncdu' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ncdu' as const,
+  installCommand: 'launchpad install dev.yorhel.nl/ncdu' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +dev.yorhel.nl/ncdu -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dev.yorhel.nl/ncdu' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -75,13 +73,7 @@ export const ncduPackage = {
     '1.19.0',
     '1.18.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ncdu -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ncdu' as const,
 }
 
-export type NcduPackage = typeof ncduPackage
+export type DevyorhelnlncduPackage = typeof devyorhelnlncduPackage

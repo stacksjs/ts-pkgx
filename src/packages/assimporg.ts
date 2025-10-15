@@ -1,24 +1,20 @@
 /**
- * **assimp** - The official Open-Asset-Importer-Library Repository. Loads 40+ 3D-file-formats into one unified and clean data structure.
+ * **assimp** - The official Open-Asset-Importer-Library Repository. Loads 40+ 3D-file-formats into one unified and clean data structure. 
  *
  * @domain `assimp.org`
  * @programs `assimp`
  * @version `6.0.2` (9 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install assimp`
- * @name `assimp`
+ * @install `launchpad install assimp.org`
+ * @homepage https://www.assimp.org/
  * @dependencies `zlib.net`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.assimp
- * // Or access via domain
- * const samePkg = pantry.assimporg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.assimporg
  * console.log(pkg.name)        // "assimp"
  * console.log(pkg.description) // "The official Open-Asset-Importer-Library Reposi..."
  * console.log(pkg.programs)    // ["assimp"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/assimp-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const assimpPackage = {
+export const assimporgPackage = {
   /**
    * The display name of this package.
    */
@@ -40,15 +36,17 @@ export const assimpPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'The official Open-Asset-Importer-Library Repository. Loads 40+ 3D-file-formats into one unified and clean data structure.' as const,
+  description: 'The official Open-Asset-Importer-Library Repository. Loads 40+ 3D-file-formats into one unified and clean data structure. ' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/assimp.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.assimp.org/' as const,
+  githubUrl: 'https://github.com/assimp/assimp' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install assimp' as const,
+  installCommand: 'launchpad install assimp.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +assimp.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install assimp.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -79,13 +77,7 @@ export const assimpPackage = {
     '5.3.0',
     '5.2.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) assimp -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install assimp' as const,
 }
 
-export type AssimpPackage = typeof assimpPackage
+export type AssimporgPackage = typeof assimporgPackage

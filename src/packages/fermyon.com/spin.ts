@@ -6,19 +6,15 @@
  * @version `3.4.1` (10 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install spin`
- * @name `spin`
- * @companions `rust-lang.org`, `rust-lang.org/cargo`, `git-scm.org`
+ * @install `launchpad install fermyon.com/spin`
+ * @homepage https://spinroot.com/spin/whatispin.html
+ * @dependencies `llvm.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.spin
- * // Or access via domain
- * const samePkg = pantry.fermyoncomspin
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.fermyoncomspin
  * console.log(pkg.name)        // "spin"
  * console.log(pkg.description) // "Spin is the open source developer tool for buil..."
  * console.log(pkg.programs)    // ["spin"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fermyon-com/spin.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const spinPackage = {
+export const fermyoncomspinPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const spinPackage = {
    */
   description: 'Spin is the open source developer tool for building and running serverless applications powered by WebAssembly.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fermyon.com/spin/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://spinroot.com/spin/whatispin.html' as const,
+  githubUrl: 'https://github.com/fermyon/spin' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install spin' as const,
+  installCommand: 'launchpad install fermyon.com/spin' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fermyon.com/spin -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fermyon.com/spin' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,16 +54,14 @@ export const spinPackage = {
   programs: [
     'spin',
   ] as const,
+  companions: [] as const,
   /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
+   * Required dependencies for this package.
+   * These will be automatically installed.
    */
-  companions: [
-    'rust-lang.org',
-    'rust-lang.org/cargo',
-    'git-scm.org',
+  dependencies: [
+    'llvm.org',
   ] as const,
-  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -82,13 +78,7 @@ export const spinPackage = {
     '3.0.0',
     '2.7.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) spin -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install spin' as const,
 }
 
-export type SpinPackage = typeof spinPackage
+export type FermyoncomspinPackage = typeof fermyoncomspinPackage

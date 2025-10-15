@@ -6,19 +6,15 @@
  * @version `0.23.4` (86 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install eza`
- * @name `eza`
+ * @install `launchpad install crates.io/eza`
+ * @homepage https://eza.rocks
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.eza
- * // Or access via domain
- * const samePkg = pantry.cratesioeza
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesioeza
  * console.log(pkg.name)        // "eza"
  * console.log(pkg.description) // "Modern, maintained replacement for ls"
  * console.log(pkg.programs)    // ["eza"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/eza.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ezaPackage = {
+export const cratesioezaPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const ezaPackage = {
    */
   description: 'Modern, maintained replacement for ls' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/eza/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://eza.rocks' as const,
+  githubUrl: 'https://github.com/eza-community/eza' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install eza' as const,
+  installCommand: 'launchpad install crates.io/eza' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/eza -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/eza' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -156,13 +154,7 @@ export const ezaPackage = {
     '0.13.0',
     '0.12.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) eza -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install eza' as const,
 }
 
-export type EzaPackage = typeof ezaPackage
+export type CratesioezaPackage = typeof cratesioezaPackage

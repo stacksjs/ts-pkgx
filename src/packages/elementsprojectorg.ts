@@ -1,5 +1,5 @@
 /**
- * **elementsproject.org** - Open Source implementation of advanced blockchain features extending the Bitcoin protocol
+ * **elementsproject** - Open Source implementation of advanced blockchain features extending the Bitcoin protocol
  *
  * @domain `elementsproject.org`
  * @programs `bench_bitcoin`, `elements-cli`, `elements-tx`, `elements-util`, `elements-wallet`, ... (+2 more)
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.elementsprojectorg
- * console.log(pkg.name)        // "elementsproject.org"
+ * console.log(pkg.name)        // "elementsproject"
  * console.log(pkg.description) // "Open Source implementation of advanced blockcha..."
  * console.log(pkg.programs)    // ["bench_bitcoin", "elements-cli", ...]
  * console.log(pkg.versions[0]) // "23.3.0" (latest)
@@ -27,7 +27,7 @@ export const elementsprojectorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'elementsproject.org' as const,
+  name: 'elementsproject' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -38,12 +38,14 @@ export const elementsprojectorgPackage = {
   description: 'Open Source implementation of advanced blockchain features extending the Bitcoin protocol' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/elementsproject.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/ElementsProject/elements' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install elementsproject.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +elementsproject.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install elementsproject.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -83,8 +85,6 @@ export const elementsprojectorgPackage = {
     '22.1.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +elementsproject.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install elementsproject.org' as const,
 }
 
 export type ElementsprojectorgPackage = typeof elementsprojectorgPackage

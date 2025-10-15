@@ -1,11 +1,12 @@
 /**
- * **cython.org/libcython** - The most widely used Python to C compiler
+ * **libcython** - The most widely used Python to C compiler
  *
  * @domain `cython.org/libcython`
  * @version `3.1.4` (18 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cython.org/libcython`
+ * @homepage https://cython.org
  * @dependencies `python.org~3.11`
  *
  * @example
@@ -13,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.cythonorglibcython
- * console.log(pkg.name)        // "cython.org/libcython"
+ * console.log(pkg.name)        // "libcython"
  * console.log(pkg.description) // "The most widely used Python to C compiler"
  * console.log(pkg.versions[0]) // "3.1.4" (latest)
  * ```
@@ -25,7 +26,7 @@ export const cythonorglibcythonPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cython.org/libcython' as const,
+  name: 'libcython' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,13 +36,15 @@ export const cythonorglibcythonPackage = {
    */
   description: 'The most widely used Python to C compiler' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cython.org/libcython/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://cython.org' as const,
+  githubUrl: 'https://github.com/cython/cython' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install cython.org/libcython' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cython.org/libcython -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cython.org/libcython' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -76,8 +79,6 @@ export const cythonorglibcythonPackage = {
     '0.29.37',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cython.org/libcython -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cython.org/libcython' as const,
 }
 
 export type CythonorglibcythonPackage = typeof cythonorglibcythonPackage

@@ -6,18 +6,13 @@
  * @version `3.1.0` (18 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install imessage-exporter`
- * @name `imessage-exporter`
+ * @install `launchpad install crates.io/imessage-exporter`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.imessageexporter
- * // Or access via domain
- * const samePkg = pantry.cratesioimessageexporter
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesioimessageexporter
  * console.log(pkg.name)        // "imessage-exporter"
  * console.log(pkg.description) // "Command-line tool to export and inspect local i..."
  * console.log(pkg.programs)    // ["imessage-exporter"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/imessage-exporter.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const imessageexporterPackage = {
+export const cratesioimessageexporterPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const imessageexporterPackage = {
   description: 'Command-line tool to export and inspect local iMessage database' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/imessage-exporter/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/ReagentX/imessage-exporter' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install imessage-exporter' as const,
+  installCommand: 'launchpad install crates.io/imessage-exporter' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/imessage-exporter -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/imessage-exporter' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -81,13 +78,7 @@ export const imessageexporterPackage = {
     '2.1.0',
     '2.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) imessage-exporter -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install imessage-exporter' as const,
 }
 
-export type ImessageexporterPackage = typeof imessageexporterPackage
+export type CratesioimessageexporterPackage = typeof cratesioimessageexporterPackage

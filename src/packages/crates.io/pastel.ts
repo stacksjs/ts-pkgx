@@ -6,18 +6,13 @@
  * @version `0.10.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install pastel`
- * @name `pastel`
+ * @install `launchpad install crates.io/pastel`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.pastel
- * // Or access via domain
- * const samePkg = pantry.cratesiopastel
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiopastel
  * console.log(pkg.name)        // "pastel"
  * console.log(pkg.description) // "A command-line tool to generate, analyze, conve..."
  * console.log(pkg.programs)    // ["pastel"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/pastel.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const pastelPackage = {
+export const cratesiopastelPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const pastelPackage = {
   description: 'A command-line tool to generate, analyze, convert and manipulate colors' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/pastel/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/sharkdp/pastel' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install pastel' as const,
+  installCommand: 'launchpad install crates.io/pastel' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/pastel -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/pastel' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +61,7 @@ export const pastelPackage = {
   versions: [
     '0.10.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) pastel -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install pastel' as const,
 }
 
-export type PastelPackage = typeof pastelPackage
+export type CratesiopastelPackage = typeof cratesiopastelPackage

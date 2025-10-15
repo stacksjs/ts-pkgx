@@ -1,5 +1,5 @@
 /**
- * **cmake.org** - Mirror of CMake upstream repository
+ * **cmake** - Mirror of CMake upstream repository
  *
  * @domain `cmake.org`
  * @programs `cmake`, `ccmake`, `cpack`, `ctest`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cmake.org`
+ * @homepage https://www.cmake.org/
  * @dependencies `curl.se>=5<8.13`, `zlib.net@1`, `sourceware.org/bzip2@1`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.cmakeorg
- * console.log(pkg.name)        // "cmake.org"
+ * console.log(pkg.name)        // "cmake"
  * console.log(pkg.description) // "Mirror of CMake upstream repository"
  * console.log(pkg.programs)    // ["cmake", "ccmake", ...]
  * console.log(pkg.versions[0]) // "4.1.2" (latest)
@@ -27,7 +28,7 @@ export const cmakeorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'cmake.org' as const,
+  name: 'cmake' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const cmakeorgPackage = {
    */
   description: 'Mirror of CMake upstream repository' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cmake.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.cmake.org/' as const,
+  githubUrl: 'https://github.com/Kitware/CMake' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install cmake.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cmake.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cmake.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -138,8 +141,6 @@ export const cmakeorgPackage = {
     '3.24.2',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cmake.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cmake.org' as const,
 }
 
 export type CmakeorgPackage = typeof cmakeorgPackage

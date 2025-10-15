@@ -1,5 +1,5 @@
 /**
- * **astral.sh/uv** - An extremely fast Python package and project manager, written in Rust.
+ * **uv** - An extremely fast Python package and project manager, written in Rust.
  *
  * @domain `astral.sh/uv`
  * @programs `uv`, `uvx`
@@ -7,15 +7,15 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install astral.sh/uv`
+ * @homepage https://docs.astral.sh/uv
  * @dependencies `libgit2.org~1.7 # links to libgit2.so.1.7`
- * @companions `python.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.astralshuv
- * console.log(pkg.name)        // "astral.sh/uv"
+ * console.log(pkg.name)        // "uv"
  * console.log(pkg.description) // "An extremely fast Python package and project ma..."
  * console.log(pkg.programs)    // ["uv", "uvx"]
  * console.log(pkg.versions[0]) // "0.9.2" (latest)
@@ -28,7 +28,7 @@ export const astralshuvPackage = {
   /**
    * The display name of this package.
    */
-  name: 'astral.sh/uv' as const,
+  name: 'uv' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -38,13 +38,15 @@ export const astralshuvPackage = {
    */
   description: 'An extremely fast Python package and project manager, written in Rust.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/astral.sh/uv/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docs.astral.sh/uv' as const,
+  githubUrl: 'https://github.com/astral-sh/uv' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install astral.sh/uv' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +astral.sh/uv -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install astral.sh/uv' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -53,13 +55,7 @@ export const astralshuvPackage = {
     'uv',
     'uvx',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'python.org',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -292,8 +288,6 @@ export const astralshuvPackage = {
     '0.1.4',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +astral.sh/uv -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install astral.sh/uv' as const,
 }
 
 export type AstralshuvPackage = typeof astralshuvPackage

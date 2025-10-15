@@ -1,5 +1,5 @@
 /**
- * **attrs.org** - Python Classes Without Boilerplate
+ * **attrs** - Python Classes Without Boilerplate
  *
  * @domain `attrs.org`
  * @version `25.4.0` (8 versions available)
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.attrsorg
- * console.log(pkg.name)        // "attrs.org"
+ * console.log(pkg.name)        // "attrs"
  * console.log(pkg.description) // "Python Classes Without Boilerplate"
  * console.log(pkg.versions[0]) // "25.4.0" (latest)
  * ```
@@ -26,7 +26,7 @@ export const attrsorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'attrs.org' as const,
+  name: 'attrs' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -43,6 +43,8 @@ export const attrsorgPackage = {
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install attrs.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +attrs.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install attrs.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -67,8 +69,6 @@ export const attrsorgPackage = {
     '23.2.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +attrs.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install attrs.org' as const,
 }
 
 export type AttrsorgPackage = typeof attrsorgPackage

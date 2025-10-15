@@ -6,19 +6,15 @@
  * @version `29.2.0` (19 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install bitcoin`
- * @name `bitcoin`
+ * @install `launchpad install bitcoin.org`
+ * @homepage https://bitcoincore.org/
  * @dependencies `oracle.com/berkeley-db^18`, `boost.org^1`, `libevent.org^2`, ... (+3 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.bitcoin
- * // Or access via domain
- * const samePkg = pantry.bitcoinorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.bitcoinorg
  * console.log(pkg.name)        // "bitcoin"
  * console.log(pkg.description) // "Decentralized, peer to peer payment network"
  * console.log(pkg.programs)    // ["bitcoin-cli", "bitcoin-tx", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/bitcoin-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bitcoinPackage = {
+export const bitcoinorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const bitcoinPackage = {
    */
   description: 'Decentralized, peer to peer payment network' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/bitcoin.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://bitcoincore.org/' as const,
+  githubUrl: 'https://github.com/bitcoin/bitcoin' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install bitcoin' as const,
+  installCommand: 'launchpad install bitcoin.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +bitcoin.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bitcoin.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -99,13 +97,7 @@ export const bitcoinPackage = {
     '24.0.1',
     '23.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +bitcoin.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install bitcoin' as const,
 }
 
-export type BitcoinPackage = typeof bitcoinPackage
+export type BitcoinorgPackage = typeof bitcoinorgPackage

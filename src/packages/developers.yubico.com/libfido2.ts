@@ -6,19 +6,15 @@
  * @version `1.16.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install fido2`
- * @name `fido2`
+ * @install `launchpad install developers.yubico.com/libfido2`
+ * @homepage https://developers.yubico.com/libfido2/
  * @dependencies `github.com/PJK/libcbor@0`, `openssl.org@1`, `zlib.net@1`, ... (+1 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.fido2
- * // Or access via domain
- * const samePkg = pantry.developersyubicocomlibfido2
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.developersyubicocomlibfido2
  * console.log(pkg.name)        // "fido2"
  * console.log(pkg.description) // "Provides library functionality for FIDO2, inclu..."
  * console.log(pkg.programs)    // ["fido2-assert", "fido2-cred", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/developers-yubico-com/libfido2.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fido2Package = {
+export const developersyubicocomlibfido2Package = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const fido2Package = {
    */
   description: 'Provides library functionality for FIDO2, including communication with a device over USB or NFC.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/developers.yubico.com/libfido2/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://developers.yubico.com/libfido2/' as const,
+  githubUrl: 'https://github.com/Yubico/libfido2' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install fido2' as const,
+  installCommand: 'launchpad install developers.yubico.com/libfido2' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +developers.yubico.com/libfido2 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install developers.yubico.com/libfido2' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -80,13 +78,7 @@ export const fido2Package = {
     '1.14.0',
     '1.13.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +developers.yubico.com/libfido2 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install fido2' as const,
 }
 
-export type Fido2Package = typeof fido2Package
+export type Developersyubicocomlibfido2Package = typeof developersyubicocomlibfido2Package

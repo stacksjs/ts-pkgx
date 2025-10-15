@@ -6,18 +6,13 @@
  * @version `0.13.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ddh`
- * @name `ddh`
+ * @install `launchpad install crates.io/ddh`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ddh
- * // Or access via domain
- * const samePkg = pantry.cratesioddh
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesioddh
  * console.log(pkg.name)        // "ddh"
  * console.log(pkg.description) // "A fast duplicate file finder"
  * console.log(pkg.programs)    // ["ddh"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/ddh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ddhPackage = {
+export const cratesioddhPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const ddhPackage = {
   description: 'A fast duplicate file finder' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/ddh/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/darakian/ddh' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ddh' as const,
+  installCommand: 'launchpad install crates.io/ddh' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/ddh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/ddh' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +61,7 @@ export const ddhPackage = {
   versions: [
     '0.13.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ddh -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ddh' as const,
 }
 
-export type DdhPackage = typeof ddhPackage
+export type CratesioddhPackage = typeof cratesioddhPackage

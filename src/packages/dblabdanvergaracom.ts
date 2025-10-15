@@ -6,18 +6,14 @@
  * @version `0.33.0` (16 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install dblab`
- * @name `dblab`
+ * @install `launchpad install dblab.danvergara.com`
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dblab
- * // Or access via domain
- * const samePkg = pantry.dblabdanvergaracom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.dblabdanvergaracom
  * console.log(pkg.name)        // "dblab"
  * console.log(pkg.description) // "The database client every command line junkie d..."
  * console.log(pkg.programs)    // ["dblab"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dblab-danvergara-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dblabPackage = {
+export const dblabdanvergaracomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const dblabPackage = {
   description: 'The database client every command line junkie deserves.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dblab.danvergara.com/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/danvergara/dblab' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install dblab' as const,
+  installCommand: 'launchpad install dblab.danvergara.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +dblab.danvergara.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dblab.danvergara.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const dblabPackage = {
     'dblab',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -79,13 +83,7 @@ export const dblabPackage = {
     '0.22.0',
     '0.21.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dblab -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install dblab' as const,
 }
 
-export type DblabPackage = typeof dblabPackage
+export type DblabdanvergaracomPackage = typeof dblabdanvergaracomPackage

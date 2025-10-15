@@ -6,19 +6,14 @@
  * @version `114.0.5735.90` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install chromedriver`
- * @name `chromedriver`
+ * @install `launchpad install chromedriver.chromium.org`
  * @dependencies `linux:gnome.org/glib^2`, `linux:mozilla.org/nss`, `linux:x.org/xcb` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.chromedriver
- * // Or access via domain
- * const samePkg = pantry.chromedriverchromiumorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.chromedriverchromiumorg
  * console.log(pkg.name)        // "chromedriver"
  * console.log(pkg.programs)    // ["chromedriver"]
  * console.log(pkg.versions[0]) // "114.0.5735.90" (latest)
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/chromedriver-chromium-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const chromedriverPackage = {
+export const chromedriverchromiumorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const chromedriverPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/chromedriver.chromium.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install chromedriver' as const,
+  installCommand: 'launchpad install chromedriver.chromium.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +chromedriver.chromium.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install chromedriver.chromium.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +70,7 @@ export const chromedriverPackage = {
   versions: [
     '114.0.5735.90',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) chromedriver -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install chromedriver' as const,
 }
 
-export type ChromedriverPackage = typeof chromedriverPackage
+export type ChromedriverchromiumorgPackage = typeof chromedriverchromiumorgPackage

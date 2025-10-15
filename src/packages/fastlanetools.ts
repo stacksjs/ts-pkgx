@@ -6,20 +6,15 @@
  * @version `2.228.0` (23 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install fastlane`
- * @name `fastlane`
+ * @install `launchpad install fastlane.tools`
+ * @homepage https://fastlane.tools
  * @dependencies `ruby-lang.org~3.2`, `rubygems.org`
- * @companions `cocoapods.org/xcodeproj`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.fastlane
- * // Or access via domain
- * const samePkg = pantry.fastlanetools
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.fastlanetools
  * console.log(pkg.name)        // "fastlane"
  * console.log(pkg.description) // "🚀 The easiest way to automate building and rel..."
  * console.log(pkg.programs)    // ["fastlane"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fastlane-tools.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fastlanePackage = {
+export const fastlanetoolsPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const fastlanePackage = {
    */
   description: '🚀 The easiest way to automate building and releasing your iOS and Android apps' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fastlane.tools/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://fastlane.tools' as const,
+  githubUrl: 'https://github.com/fastlane/fastlane' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install fastlane' as const,
+  installCommand: 'launchpad install fastlane.tools' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fastlane.tools -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fastlane.tools' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,13 +54,7 @@ export const fastlanePackage = {
   programs: [
     'fastlane',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'cocoapods.org/xcodeproj',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -101,13 +92,7 @@ export const fastlanePackage = {
     '2.212.2',
     '2.212.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fastlane -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install fastlane' as const,
 }
 
-export type FastlanePackage = typeof fastlanePackage
+export type FastlanetoolsPackage = typeof fastlanetoolsPackage

@@ -5,19 +5,14 @@
  * @version `2.4.127` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install libdrm`
- * @name `libdrm`
+ * @install `launchpad install dri.freedesktop.org`
  * @dependencies `x.org/pciaccess`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.libdrm
- * // Or access via domain
- * const samePkg = pantry.drifreedesktoporg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.drifreedesktoporg
  * console.log(pkg.name)        // "libdrm"
  * console.log(pkg.versions[0]) // "2.4.127" (latest)
  * ```
@@ -25,7 +20,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dri-freedesktop-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const libdrmPackage = {
+export const drifreedesktoporgPackage = {
   /**
    * The display name of this package.
    */
@@ -40,12 +35,14 @@ export const libdrmPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dri.freedesktop.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install libdrm' as const,
+  installCommand: 'launchpad install dri.freedesktop.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +dri.freedesktop.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dri.freedesktop.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -74,13 +71,7 @@ export const libdrmPackage = {
     '2.4.116',
     '2.4.100',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +dri.freedesktop.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install libdrm' as const,
 }
 
-export type LibdrmPackage = typeof libdrmPackage
+export type DrifreedesktoporgPackage = typeof drifreedesktoporgPackage

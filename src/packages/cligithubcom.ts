@@ -6,18 +6,15 @@
  * @version `2.81.0` (88 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gh`
- * @name `gh`
+ * @install `launchpad install cli.github.com`
+ * @homepage https://cli.github.com/
+ * @dependencies `go.dev@^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gh
- * // Or access via domain
- * const samePkg = pantry.cligithubcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cligithubcom
  * console.log(pkg.name)        // "gh"
  * console.log(pkg.description) // "GitHub’s official command line tool"
  * console.log(pkg.programs)    // ["gh"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/cli-github-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ghPackage = {
+export const cligithubcomPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const ghPackage = {
    */
   description: 'GitHub’s official command line tool' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cli.github.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://cli.github.com/' as const,
+  githubUrl: 'https://github.com/cli/cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gh' as const,
+  installCommand: 'launchpad install cli.github.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cli.github.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cli.github.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const ghPackage = {
     'gh',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -151,13 +156,7 @@ export const ghPackage = {
     '2.21.2',
     '2.20.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gh -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gh' as const,
 }
 
-export type GhPackage = typeof ghPackage
+export type CligithubcomPackage = typeof cligithubcomPackage

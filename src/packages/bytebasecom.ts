@@ -6,20 +6,15 @@
  * @version `3.11.0` (40 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install bytebase`
- * @name `bytebase`
+ * @install `launchpad install bytebase.com`
+ * @homepage https://www.bytebase.com
  * @dependencies `nodejs.org~24.1 # 24.4 has oom errors`
- * @companions `postgresql.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.bytebase
- * // Or access via domain
- * const samePkg = pantry.bytebasecom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.bytebasecom
  * console.log(pkg.name)        // "bytebase"
  * console.log(pkg.description) // "World's most advanced database DevSecOps soluti..."
  * console.log(pkg.programs)    // ["bytebase"]
@@ -29,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/bytebase-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bytebasePackage = {
+export const bytebasecomPackage = {
   /**
    * The display name of this package.
    */
@@ -43,13 +38,15 @@ export const bytebasePackage = {
    */
   description: 'World\'s most advanced database DevSecOps solution for Developer, Security, DBA and Platform Engineering teams. The GitHub/GitLab for database DevSecOps.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/bytebase.com/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://www.bytebase.com' as const,
   githubUrl: 'https://github.com/bytebase/bytebase' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install bytebase' as const,
+  installCommand: 'launchpad install bytebase.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +bytebase.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bytebase.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,13 +54,7 @@ export const bytebasePackage = {
   programs: [
     'bytebase',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'postgresql.org',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -117,13 +108,7 @@ export const bytebasePackage = {
     '2.15.0',
     '2.14.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bytebase -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install bytebase' as const,
 }
 
-export type BytebasePackage = typeof bytebasePackage
+export type BytebasecomPackage = typeof bytebasecomPackage

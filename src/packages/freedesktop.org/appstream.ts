@@ -6,19 +6,15 @@
  * @version `1.1.1` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install appstreamcli`
- * @name `appstreamcli`
+ * @install `launchpad install freedesktop.org/appstream`
+ * @homepage https://www.freedesktop.org/wiki/Distributions/AppStream/
  * @dependencies `gnome.org/glib@2`, `github.com/hughsie/libxmlb@0`, `pyyaml.org/libyaml@0`, ... (+5 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.appstreamcli
- * // Or access via domain
- * const samePkg = pantry.freedesktoporgappstream
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.freedesktoporgappstream
  * console.log(pkg.name)        // "appstreamcli"
  * console.log(pkg.description) // "Tools and libraries to work with AppStream meta..."
  * console.log(pkg.programs)    // ["appstreamcli"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/freedesktop-org/appstream.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const appstreamcliPackage = {
+export const freedesktoporgappstreamPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const appstreamcliPackage = {
    */
   description: 'Tools and libraries to work with AppStream metadata' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/appstream/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.freedesktop.org/wiki/Distributions/AppStream/' as const,
+  githubUrl: 'https://github.com/ximion/appstream' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install appstreamcli' as const,
+  installCommand: 'launchpad install freedesktop.org/appstream' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/appstream -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/appstream' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -84,13 +82,7 @@ export const appstreamcliPackage = {
     '1.0.4',
     '1.0.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) appstreamcli -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install appstreamcli' as const,
 }
 
-export type AppstreamcliPackage = typeof appstreamcliPackage
+export type FreedesktoporgappstreamPackage = typeof freedesktoporgappstreamPackage

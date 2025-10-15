@@ -6,18 +6,14 @@
  * @version `1.8.1` (17 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mods`
- * @name `mods`
+ * @install `launchpad install charm.sh/mods`
+ * @dependencies `go.dev@~1.24.0`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mods
- * // Or access via domain
- * const samePkg = pantry.charmshmods
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.charmshmods
  * console.log(pkg.name)        // "mods"
  * console.log(pkg.description) // "AI on the command line"
  * console.log(pkg.programs)    // ["mods"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/charm-sh/mods.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const modsPackage = {
+export const charmshmodsPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const modsPackage = {
   description: 'AI on the command line' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/charm.sh/mods/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/charmbracelet/mods' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mods' as const,
+  installCommand: 'launchpad install charm.sh/mods' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +charm.sh/mods -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install charm.sh/mods' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const modsPackage = {
     'mods',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.24.0',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -80,13 +84,7 @@ export const modsPackage = {
     '0.1.1',
     '0.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mods -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mods' as const,
 }
 
-export type ModsPackage = typeof modsPackage
+export type CharmshmodsPackage = typeof charmshmodsPackage

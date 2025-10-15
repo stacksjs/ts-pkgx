@@ -6,19 +6,15 @@
  * @version `0.16.8` (70 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install fluentci`
- * @name `fluentci`
+ * @install `launchpad install fluentci.io`
+ * @homepage https://fluentci.io
  * @dependencies `dagger.io^0.10`, `deno.land^1.42`, `charm.sh/glow^1.5.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.fluentci
- * // Or access via domain
- * const samePkg = pantry.fluentciio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.fluentciio
  * console.log(pkg.name)        // "fluentci"
  * console.log(pkg.description) // "Set up and run your CI locally or in any CI Pro..."
  * console.log(pkg.programs)    // ["fluentci"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fluentci-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fluentciPackage = {
+export const fluentciioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const fluentciPackage = {
    */
   description: 'Set up and run your CI locally or in any CI Provider in a consistent way https://backdropbuild.com/builds/v4/fluentci' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fluentci.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://fluentci.io' as const,
+  githubUrl: 'https://github.com/fluentci-io/fluentci' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install fluentci' as const,
+  installCommand: 'launchpad install fluentci.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fluentci.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fluentci.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -142,13 +140,7 @@ export const fluentciPackage = {
     '0.6.8',
     '0.6.7',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fluentci -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install fluentci' as const,
 }
 
-export type FluentciPackage = typeof fluentciPackage
+export type FluentciioPackage = typeof fluentciioPackage

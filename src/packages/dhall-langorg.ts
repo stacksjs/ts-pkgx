@@ -6,19 +6,15 @@
  * @version `1.42.3` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install dhall`
- * @name `dhall`
+ * @install `launchpad install dhall-lang.org`
+ * @homepage https://dhall-lang.org/
  * @dependencies `invisible-island.net/ncurses^6.4`, `zlib.net^1.3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dhall
- * // Or access via domain
- * const samePkg = pantry.dhalllangorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.dhalllangorg
  * console.log(pkg.name)        // "dhall"
  * console.log(pkg.description) // "Interpreter for the Dhall language"
  * console.log(pkg.programs)    // ["dhall"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dhall-lang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dhallPackage = {
+export const dhalllangorgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const dhallPackage = {
    */
   description: 'Interpreter for the Dhall language' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dhall-lang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://dhall-lang.org/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install dhall' as const,
+  installCommand: 'launchpad install dhall-lang.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +dhall-lang.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dhall-lang.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,13 +72,7 @@ export const dhallPackage = {
     '1.42.2',
     '1.42.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dhall -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install dhall' as const,
 }
 
-export type DhallPackage = typeof dhallPackage
+export type DhalllangorgPackage = typeof dhalllangorgPackage

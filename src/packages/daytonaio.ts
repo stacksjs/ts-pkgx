@@ -6,18 +6,15 @@
  * @version `0.110.2` (93 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install daytona`
- * @name `daytona`
+ * @install `launchpad install daytona.io`
+ * @homepage https://daytona.io
+ * @dependencies `go.dev@=1.23.5`, `if@>=0.100`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.daytona
- * // Or access via domain
- * const samePkg = pantry.daytonaio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.daytonaio
  * console.log(pkg.name)        // "daytona"
  * console.log(pkg.description) // "The Open Source Dev Environment Manager."
  * console.log(pkg.programs)    // ["daytona"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/daytona-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const daytonaPackage = {
+export const daytonaioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const daytonaPackage = {
    */
   description: 'The Open Source Dev Environment Manager.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/daytona.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://daytona.io' as const,
+  githubUrl: 'https://github.com/daytonaio/daytona' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install daytona' as const,
+  installCommand: 'launchpad install daytona.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +daytona.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install daytona.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const daytonaPackage = {
     'daytona',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@=1.23.5',
+    'if@>=0.100',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -156,13 +162,7 @@ export const daytonaPackage = {
     '0.3.0',
     '0.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) daytona -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install daytona' as const,
 }
 
-export type DaytonaPackage = typeof daytonaPackage
+export type DaytonaioPackage = typeof daytonaioPackage

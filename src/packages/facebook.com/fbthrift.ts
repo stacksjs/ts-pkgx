@@ -6,19 +6,14 @@
  * @version `2025.9.8.0` (94 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install thrift1`
- * @name `thrift1`
+ * @install `launchpad install facebook.com/fbthrift`
  * @dependencies `github.com/facebookincubator/fizz`, `facebook.com/folly`, `facebook.com/wangle`, ... (+10 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.thrift1
- * // Or access via domain
- * const samePkg = pantry.facebookcomfbthrift
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.facebookcomfbthrift
  * console.log(pkg.name)        // "thrift1"
  * console.log(pkg.description) // "Facebook's branch of Apache Thrift, including a..."
  * console.log(pkg.programs)    // ["thrift1"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/facebook-com/fbthrift.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const thrift1Package = {
+export const facebookcomfbthriftPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const thrift1Package = {
   description: 'Facebook\'s branch of Apache Thrift, including a new C++ server.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/fbthrift/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/facebook/fbthrift' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install thrift1' as const,
+  installCommand: 'launchpad install facebook.com/fbthrift' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +facebook.com/fbthrift -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install facebook.com/fbthrift' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -177,13 +174,7 @@ export const thrift1Package = {
     '2023.12.18.0',
     '2023.12.11.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) thrift1 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install thrift1' as const,
 }
 
-export type Thrift1Package = typeof thrift1Package
+export type FacebookcomfbthriftPackage = typeof facebookcomfbthriftPackage

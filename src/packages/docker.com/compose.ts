@@ -6,18 +6,15 @@
  * @version `2.40.0` (63 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install docker-compose`
- * @name `docker-compose`
+ * @install `launchpad install docker.com/compose`
+ * @homepage https://docs.docker.com/compose/
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dockercompose
- * // Or access via domain
- * const samePkg = pantry.dockercomcompose
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.dockercomcompose
  * console.log(pkg.name)        // "docker-compose"
  * console.log(pkg.description) // "Define and run multi-container applications wit..."
  * console.log(pkg.programs)    // ["docker-compose"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/docker-com/compose.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dockercomposePackage = {
+export const dockercomcomposePackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const dockercomposePackage = {
    */
   description: 'Define and run multi-container applications with Docker' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/docker.com/compose/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docs.docker.com/compose/' as const,
+  githubUrl: 'https://github.com/docker/compose' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install docker-compose' as const,
+  installCommand: 'launchpad install docker.com/compose' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +docker.com/compose -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docker.com/compose' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const dockercomposePackage = {
     'docker-compose',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -126,13 +131,7 @@ export const dockercomposePackage = {
     '2.20.3',
     '2.20.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) docker-compose -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install docker-compose' as const,
 }
 
-export type DockercomposePackage = typeof dockercomposePackage
+export type DockercomcomposePackage = typeof dockercomcomposePackage

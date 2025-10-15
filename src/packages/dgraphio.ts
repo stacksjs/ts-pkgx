@@ -6,18 +6,15 @@
  * @version `25.0.0` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install dgraph`
- * @name `dgraph`
+ * @install `launchpad install dgraph.io`
+ * @homepage https://dgraph.io/docs
+ * @dependencies `go.dev@~1.22.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dgraph
- * // Or access via domain
- * const samePkg = pantry.dgraphio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.dgraphio
  * console.log(pkg.name)        // "dgraph"
  * console.log(pkg.description) // "high-performance graph database for real-time u..."
  * console.log(pkg.programs)    // ["dgraph"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dgraph-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dgraphPackage = {
+export const dgraphioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const dgraphPackage = {
    */
   description: 'high-performance graph database for real-time use cases' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dgraph.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://dgraph.io/docs' as const,
+  githubUrl: 'https://github.com/dgraph-io/dgraph' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install dgraph' as const,
+  installCommand: 'launchpad install dgraph.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +dgraph.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dgraph.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const dgraphPackage = {
     'dgraph',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.22.12',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -76,13 +81,7 @@ export const dgraphPackage = {
     '23.1.1',
     '23.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dgraph -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install dgraph' as const,
 }
 
-export type DgraphPackage = typeof dgraphPackage
+export type DgraphioPackage = typeof dgraphioPackage

@@ -6,18 +6,15 @@
  * @version `0.16.2` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install docker-machine`
- * @name `docker-machine`
+ * @install `launchpad install docker.com/machine`
+ * @homepage https://docs.gitlab.com/runner/executors/docker_machine.html
+ * @dependencies `gnu.org/automake`, `go.dev`, `curl.se`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dockermachine
- * // Or access via domain
- * const samePkg = pantry.dockercommachine
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.dockercommachine
  * console.log(pkg.name)        // "docker-machine"
  * console.log(pkg.description) // "Create Docker hosts locally and on cloud providers"
  * console.log(pkg.programs)    // ["docker-machine"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/docker-com/machine.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dockermachinePackage = {
+export const dockercommachinePackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const dockermachinePackage = {
    */
   description: 'Create Docker hosts locally and on cloud providers' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/docker.com/machine/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docs.gitlab.com/runner/executors/docker_machine.html' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install docker-machine' as const,
+  installCommand: 'launchpad install docker.com/machine' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +docker.com/machine -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docker.com/machine' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,16 @@ export const dockermachinePackage = {
     'docker-machine',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/automake',
+    'go.dev',
+    'curl.se',
+    'if@linux',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +72,7 @@ export const dockermachinePackage = {
   versions: [
     '0.16.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) docker-machine -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install docker-machine' as const,
 }
 
-export type DockermachinePackage = typeof dockermachinePackage
+export type DockercommachinePackage = typeof dockercommachinePackage

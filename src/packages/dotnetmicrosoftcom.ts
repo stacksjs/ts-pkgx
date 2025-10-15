@@ -6,19 +6,15 @@
  * @version `9.0.306` (38 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install dotnet`
- * @name `dotnet`
+ * @install `launchpad install dotnet.microsoft.com`
+ * @homepage https://dotnet.microsoft.com/
  * @dependencies `linux:unicode.org^71`, `linux:openssl.org` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dotnet
- * // Or access via domain
- * const samePkg = pantry.dotnetmicrosoftcom
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.dotnetmicrosoftcom
  * console.log(pkg.name)        // "dotnet"
  * console.log(pkg.description) // "Home of .NET's Virtual Monolithic Repository wh..."
  * console.log(pkg.programs)    // ["dotnet"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dotnet-microsoft-com.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dotnetPackage = {
+export const dotnetmicrosoftcomPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const dotnetPackage = {
    */
   description: 'Home of .NET\'s Virtual Monolithic Repository which includes all the code needed to build the .NET SDK from source' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dotnet.microsoft.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://dotnet.microsoft.com/' as const,
+  githubUrl: 'https://github.com/dotnet/dotnet' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install dotnet' as const,
+  installCommand: 'launchpad install dotnet.microsoft.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +dotnet.microsoft.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dotnet.microsoft.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -110,13 +108,7 @@ export const dotnetPackage = {
     '6.0.131',
     '6.0.130',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dotnet -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install dotnet' as const,
 }
 
-export type DotnetPackage = typeof dotnetPackage
+export type DotnetmicrosoftcomPackage = typeof dotnetmicrosoftcomPackage

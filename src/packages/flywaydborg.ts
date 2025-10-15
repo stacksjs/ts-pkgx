@@ -6,19 +6,15 @@
  * @version `11.14.0` (48 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install flyway`
- * @name `flyway`
+ * @install `launchpad install flywaydb.org`
+ * @homepage https://flywaydb.org/
  * @dependencies `openjdk.org^21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.flyway
- * // Or access via domain
- * const samePkg = pantry.flywaydborg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.flywaydborg
  * console.log(pkg.name)        // "flyway"
  * console.log(pkg.description) // "Database version control to control migrations"
  * console.log(pkg.programs)    // ["flyway"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/flywaydb-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const flywayPackage = {
+export const flywaydborgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const flywayPackage = {
    */
   description: 'Database version control to control migrations' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/flywaydb.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://flywaydb.org/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install flyway' as const,
+  installCommand: 'launchpad install flywaydb.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +flywaydb.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install flywaydb.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -118,13 +116,7 @@ export const flywayPackage = {
     '10.11.0',
     '10.10.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) flyway -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install flyway' as const,
 }
 
-export type FlywayPackage = typeof flywayPackage
+export type FlywaydborgPackage = typeof flywaydborgPackage

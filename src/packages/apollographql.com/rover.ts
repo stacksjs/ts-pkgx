@@ -6,19 +6,15 @@
  * @version `0.36.2` (33 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rover`
- * @name `rover`
+ * @install `launchpad install apollographql.com/rover`
+ * @homepage https://www.apollographql.com/docs/rover/
  * @dependencies `openssl.org^1.1`, `zlib.net^1`, `libgit2.org~1.7 # links to libgit2.so.1.7`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rover
- * // Or access via domain
- * const samePkg = pantry.apollographqlcomrover
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.apollographqlcomrover
  * console.log(pkg.name)        // "rover"
  * console.log(pkg.description) // "CLI for managing and maintaining data graphs wi..."
  * console.log(pkg.programs)    // ["rover"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/apollographql-com/rover.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const roverPackage = {
+export const apollographqlcomroverPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const roverPackage = {
    */
   description: 'CLI for managing and maintaining data graphs with Apollo Studio' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/apollographql.com/rover/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.apollographql.com/docs/rover/' as const,
+  githubUrl: 'https://github.com/apollographql/rover' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rover' as const,
+  installCommand: 'launchpad install apollographql.com/rover' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apollographql.com/rover -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install apollographql.com/rover' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -105,13 +103,7 @@ export const roverPackage = {
     '0.19.0',
     '0.18.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) rover -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rover' as const,
 }
 
-export type RoverPackage = typeof roverPackage
+export type ApollographqlcomroverPackage = typeof apollographqlcomroverPackage

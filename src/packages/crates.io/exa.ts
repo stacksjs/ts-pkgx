@@ -6,19 +6,15 @@
  * @version `0.10.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install exa`
- * @name `exa`
+ * @install `launchpad install crates.io/exa`
+ * @homepage https://the.exa.website/
  * @dependencies `darwin:zlib.net^1` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.exa
- * // Or access via domain
- * const samePkg = pantry.cratesioexa
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesioexa
  * console.log(pkg.name)        // "exa"
  * console.log(pkg.description) // "A modern replacement for ‘ls’."
  * console.log(pkg.programs)    // ["exa"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/exa.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const exaPackage = {
+export const cratesioexaPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const exaPackage = {
    */
   description: 'A modern replacement for ‘ls’.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/exa/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://the.exa.website/' as const,
+  githubUrl: 'https://github.com/ogham/exa' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install exa' as const,
+  installCommand: 'launchpad install crates.io/exa' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/exa -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/exa' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,13 +70,7 @@ export const exaPackage = {
   versions: [
     '0.10.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) exa -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install exa' as const,
 }
 
-export type ExaPackage = typeof exaPackage
+export type CratesioexaPackage = typeof cratesioexaPackage

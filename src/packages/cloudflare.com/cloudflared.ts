@@ -6,18 +6,15 @@
  * @version `2025.10.0` (34 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install cloudflared`
- * @name `cloudflared`
+ * @install `launchpad install cloudflare.com/cloudflared`
+ * @homepage https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide
+ * @dependencies `go.dev@~1.24`, `if@linux`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cloudflared
- * // Or access via domain
- * const samePkg = pantry.cloudflarecomcloudflared
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cloudflarecomcloudflared
  * console.log(pkg.name)        // "cloudflared"
  * console.log(pkg.description) // "Cloudflare Tunnel client (formerly Argo Tunnel)"
  * console.log(pkg.programs)    // ["cloudflared"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/cloudflare-com/cloudflared.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cloudflaredPackage = {
+export const cloudflarecomcloudflaredPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const cloudflaredPackage = {
    */
   description: 'Cloudflare Tunnel client (formerly Argo Tunnel)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cloudflare.com/cloudflared/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide' as const,
+  githubUrl: 'https://github.com/cloudflare/cloudflared' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cloudflared' as const,
+  installCommand: 'launchpad install cloudflare.com/cloudflared' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cloudflare.com/cloudflared -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cloudflare.com/cloudflared' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const cloudflaredPackage = {
     'cloudflared',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.24',
+    'if@linux',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -97,13 +103,7 @@ export const cloudflaredPackage = {
     '2024.3.0',
     '2024.2.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cloudflared -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cloudflared' as const,
 }
 
-export type CloudflaredPackage = typeof cloudflaredPackage
+export type CloudflarecomcloudflaredPackage = typeof cloudflarecomcloudflaredPackage

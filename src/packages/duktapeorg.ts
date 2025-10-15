@@ -6,18 +6,14 @@
  * @version `2.7.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install duk`
- * @name `duk`
+ * @install `launchpad install duktape.org`
+ * @homepage https://duktape.org
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.duk
- * // Or access via domain
- * const samePkg = pantry.duktapeorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.duktapeorg
  * console.log(pkg.name)        // "duk"
  * console.log(pkg.description) // "Duktape - embeddable Javascript engine with a f..."
  * console.log(pkg.programs)    // ["duk"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/duktape-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dukPackage = {
+export const duktapeorgPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const dukPackage = {
    */
   description: 'Duktape - embeddable Javascript engine with a focus on portability and compact footprint' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/duktape.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://duktape.org' as const,
+  githubUrl: 'https://github.com/svaarala/duktape' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install duk' as const,
+  installCommand: 'launchpad install duktape.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +duktape.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install duktape.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +62,7 @@ export const dukPackage = {
   versions: [
     '2.7.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) duk -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install duk' as const,
 }
 
-export type DukPackage = typeof dukPackage
+export type DuktapeorgPackage = typeof duktapeorgPackage

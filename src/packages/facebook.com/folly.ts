@@ -1,5 +1,5 @@
 /**
- * **facebook.com/folly** - An open-source C++ library developed and used at Facebook.
+ * **folly** - An open-source C++ library developed and used at Facebook.
  *
  * @domain `facebook.com/folly`
  * @version `2025.9.8.0` (125 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.facebookcomfolly
- * console.log(pkg.name)        // "facebook.com/folly"
+ * console.log(pkg.name)        // "folly"
  * console.log(pkg.description) // "An open-source C++ library developed and used a..."
  * console.log(pkg.versions[0]) // "2025.9.8.0" (latest)
  * ```
@@ -25,7 +25,7 @@ export const facebookcomfollyPackage = {
   /**
    * The display name of this package.
    */
-  name: 'facebook.com/folly' as const,
+  name: 'folly' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,12 +36,14 @@ export const facebookcomfollyPackage = {
   description: 'An open-source C++ library developed and used at Facebook.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/facebook.com/folly/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/facebook/folly' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install facebook.com/folly' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +facebook.com/folly -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install facebook.com/folly' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -203,8 +205,6 @@ export const facebookcomfollyPackage = {
     '2023.10.16.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +facebook.com/folly -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install facebook.com/folly' as const,
 }
 
 export type FacebookcomfollyPackage = typeof facebookcomfollyPackage

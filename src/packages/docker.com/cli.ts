@@ -1,24 +1,20 @@
 /**
- * **docker** - Pack, ship and run any application as a lightweight container
+ * **docker/cli** - Pack, ship and run any application as a lightweight container
  *
  * @domain `docker.com/cli`
  * @programs `docker`
  * @version `28.5.1` (60 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install docker`
- * @name `docker/cli`
- * @aliases `docker`
+ * @install `launchpad install docker.com/cli`
+ * @homepage https://www.docker.com/
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.docker
- * // Or access via domain
- * const samePkg = pantry.dockercomcli
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.dockercomcli
  * console.log(pkg.name)        // "docker/cli"
  * console.log(pkg.description) // "Pack, ship and run any application as a lightwe..."
  * console.log(pkg.programs)    // ["docker"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/docker-com/cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dockerPackage = {
+export const dockercomcliPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const dockerPackage = {
    */
   description: 'Pack, ship and run any application as a lightweight container' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/docker.com/cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.docker.com/' as const,
+  githubUrl: 'https://github.com/docker/cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install docker' as const,
+  installCommand: 'launchpad install docker.com/cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +docker.com/cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docker.com/cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +55,13 @@ export const dockerPackage = {
     'docker',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -124,15 +128,7 @@ export const dockerPackage = {
     '20.10.27',
     '20.10.26',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'docker',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) docker -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install docker' as const,
+  aliases: [] as const,
 }
 
-export type DockerPackage = typeof dockerPackage
+export type DockercomcliPackage = typeof dockercomcliPackage

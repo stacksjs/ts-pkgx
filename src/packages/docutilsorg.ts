@@ -1,5 +1,5 @@
 /**
- * **docutils.org** - Text processing system for reStructuredText
+ * **docutils** - Text processing system for reStructuredText
  *
  * @domain `docutils.org`
  * @programs `docutils`, `rst2html`, `rst2html4`, `rst2html5`, `rst2latex`, ... (+6 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install docutils.org`
+ * @homepage https://docutils.sourceforge.io
  * @dependencies `pkgx.sh^1`
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.docutilsorg
- * console.log(pkg.name)        // "docutils.org"
+ * console.log(pkg.name)        // "docutils"
  * console.log(pkg.description) // "Text processing system for reStructuredText"
  * console.log(pkg.programs)    // ["docutils", "rst2html", ...]
  * console.log(pkg.versions[0]) // "0.22.2" (latest)
@@ -27,7 +28,7 @@ export const docutilsorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'docutils.org' as const,
+  name: 'docutils' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const docutilsorgPackage = {
    */
   description: 'Text processing system for reStructuredText' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/docutils.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docutils.sourceforge.io' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install docutils.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +docutils.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docutils.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -85,8 +88,6 @@ export const docutilsorgPackage = {
     '0.19.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +docutils.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install docutils.org' as const,
 }
 
 export type DocutilsorgPackage = typeof docutilsorgPackage

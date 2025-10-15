@@ -6,18 +6,15 @@
  * @version `2.59.3` (51 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install doctl`
- * @name `doctl`
+ * @install `launchpad install digitalocean.com/doctl`
+ * @homepage https://docs.digitalocean.com/reference/doctl/
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.doctl
- * // Or access via domain
- * const samePkg = pantry.digitaloceancomdoctl
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.digitaloceancomdoctl
  * console.log(pkg.name)        // "doctl"
  * console.log(pkg.description) // "The official command line interface for the Dig..."
  * console.log(pkg.programs)    // ["doctl"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/digitalocean-com/doctl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const doctlPackage = {
+export const digitaloceancomdoctlPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const doctlPackage = {
    */
   description: 'The official command line interface for the DigitalOcean API.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/digitalocean.com/doctl/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docs.digitalocean.com/reference/doctl/' as const,
+  githubUrl: 'https://github.com/digitalocean/doctl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install doctl' as const,
+  installCommand: 'launchpad install digitalocean.com/doctl' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +digitalocean.com/doctl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install digitalocean.com/doctl' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const doctlPackage = {
     'doctl',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -114,13 +119,7 @@ export const doctlPackage = {
     '1.105.0',
     '1.104.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) doctl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install doctl' as const,
 }
 
-export type DoctlPackage = typeof doctlPackage
+export type DigitaloceancomdoctlPackage = typeof digitaloceancomdoctlPackage

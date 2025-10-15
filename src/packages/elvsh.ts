@@ -6,18 +6,15 @@
  * @version `0.21.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install elvish`
- * @name `elvish`
+ * @install `launchpad install elv.sh`
+ * @homepage https://elv.sh/
+ * @dependencies `go.dev@^1.19`, `gnu.org/gcc`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.elvish
- * // Or access via domain
- * const samePkg = pantry.elvsh
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.elvsh
  * console.log(pkg.name)        // "elvish"
  * console.log(pkg.description) // "Powerful scripting language & versatile interac..."
  * console.log(pkg.programs)    // ["elvish"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/elv-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const elvishPackage = {
+export const elvshPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const elvishPackage = {
    */
   description: 'Powerful scripting language & versatile interactive shell' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/elv.sh/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://elv.sh/' as const,
+  githubUrl: 'https://github.com/elves/elvish' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install elvish' as const,
+  installCommand: 'launchpad install elv.sh' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +elv.sh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install elv.sh' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const elvishPackage = {
     'elvish',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.19',
+    'gnu.org/gcc',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,13 +73,7 @@ export const elvishPackage = {
     '0.20.0',
     '0.19.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) elvish -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install elvish' as const,
 }
 
-export type ElvishPackage = typeof elvishPackage
+export type ElvshPackage = typeof elvshPackage

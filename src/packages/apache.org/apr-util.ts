@@ -1,23 +1,19 @@
 /**
- * **apu-{{** - Mirror of Apache Portable Runtime util
+ * **apu-{{ version.major }}-config** - Mirror of Apache Portable Runtime util
  *
  * @domain `apache.org/apr-util`
  * @programs `apu-{{ version.major }}-config`
  * @version `1.6.3` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install apu-{{`
- * @aliases `apu-{{`
+ * @install `launchpad install apache.org/apr-util`
+ * @dependencies `apache.org/apr`, `openssl.org`, `libexpat.github.io`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.apu
- * // Or access via domain
- * const samePkg = pantry.apacheorgaprutil
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.apacheorgaprutil
  * console.log(pkg.name)        // "apu-{{ version.major }}-config"
  * console.log(pkg.description) // "Mirror of Apache Portable Runtime util"
  * console.log(pkg.programs)    // ["apu-{{ version.major }}-config"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/apache-org/apr-util.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const apuPackage = {
+export const apacheorgaprutilPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const apuPackage = {
   description: 'Mirror of Apache Portable Runtime util' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/apr-util/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/apache/apr-util' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install apu-{{' as const,
+  installCommand: 'launchpad install apache.org/apr-util' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/apr-util -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install apache.org/apr-util' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,16 @@ export const apuPackage = {
     'apu-{{ version.major }}-config',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'apache.org/apr',
+    'openssl.org',
+    'libexpat.github.io',
+    'sqlite.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,15 +71,7 @@ export const apuPackage = {
   versions: [
     '1.6.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'apu-{{',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) apu-{{ -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install apu-{{' as const,
+  aliases: [] as const,
 }
 
-export type ApuPackage = typeof apuPackage
+export type ApacheorgaprutilPackage = typeof apacheorgaprutilPackage

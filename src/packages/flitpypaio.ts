@@ -6,19 +6,15 @@
  * @version `3.12.0` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install flit`
- * @name `flit`
+ * @install `launchpad install flit.pypa.io`
+ * @homepage https://flit.pypa.io/
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.flit
- * // Or access via domain
- * const samePkg = pantry.flitpypaio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.flitpypaio
  * console.log(pkg.name)        // "flit"
  * console.log(pkg.description) // "Simplified packaging of Python modules"
  * console.log(pkg.programs)    // ["flit"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/flit-pypa-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const flitPackage = {
+export const flitpypaioPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const flitPackage = {
    */
   description: 'Simplified packaging of Python modules' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/flit.pypa.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://flit.pypa.io/' as const,
+  githubUrl: 'https://github.com/pypa/flit' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install flit' as const,
+  installCommand: 'launchpad install flit.pypa.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +flit.pypa.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install flit.pypa.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,13 +74,7 @@ export const flitPackage = {
     '3.9.0',
     '3.8.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) flit -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install flit' as const,
 }
 
-export type FlitPackage = typeof flitPackage
+export type FlitpypaioPackage = typeof flitpypaioPackage

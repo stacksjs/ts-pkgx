@@ -6,18 +6,15 @@
  * @version `1.13.1` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install coredns`
- * @name `coredns`
+ * @install `launchpad install coredns.io`
+ * @homepage https://coredns.io/
+ * @dependencies `go.dev@^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.coredns
- * // Or access via domain
- * const samePkg = pantry.corednsio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.corednsio
  * console.log(pkg.name)        // "coredns"
  * console.log(pkg.description) // "CoreDNS is a DNS server that chains plugins"
  * console.log(pkg.programs)    // ["coredns"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/coredns-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const corednsPackage = {
+export const corednsioPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const corednsPackage = {
    */
   description: 'CoreDNS is a DNS server that chains plugins' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/coredns.io/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://coredns.io/' as const,
+  githubUrl: 'https://github.com/coredns/coredns' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install coredns' as const,
+  installCommand: 'launchpad install coredns.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +coredns.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install coredns.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const corednsPackage = {
     'coredns',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -75,13 +80,7 @@ export const corednsPackage = {
     '1.11.1',
     '1.10.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) coredns -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install coredns' as const,
 }
 
-export type CorednsPackage = typeof corednsPackage
+export type CorednsioPackage = typeof corednsioPackage

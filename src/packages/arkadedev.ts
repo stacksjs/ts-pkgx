@@ -1,24 +1,20 @@
 /**
- * **arkade** - Open Source Marketplace For Developer Tools
+ * **Arkade** - Open Source Marketplace For Developer Tools
  *
  * @domain `arkade.dev`
  * @programs `arkade`
  * @version `0.11.50` (46 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install arkade`
- * @name `Arkade`
- * @aliases `arkade`
+ * @install `launchpad install arkade.dev`
+ * @homepage https://blog.alexellis.io/kubernetes-marketplace-two-year-update/
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.arkade
- * // Or access via domain
- * const samePkg = pantry.arkadedev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.arkadedev
  * console.log(pkg.name)        // "Arkade"
  * console.log(pkg.description) // "Open Source Marketplace For Developer Tools"
  * console.log(pkg.programs)    // ["arkade"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/arkade-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const arkadePackage = {
+export const arkadedevPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const arkadePackage = {
    */
   description: 'Open Source Marketplace For Developer Tools' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/arkade.dev/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://blog.alexellis.io/kubernetes-marketplace-two-year-update/' as const,
   githubUrl: 'https://github.com/alexellis/arkade' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install arkade' as const,
+  installCommand: 'launchpad install arkade.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +arkade.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install arkade.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +55,13 @@ export const arkadePackage = {
     'arkade',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -110,15 +114,7 @@ export const arkadePackage = {
     '0.10.23',
     '0.10.22',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'arkade',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) arkade -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install arkade' as const,
+  aliases: [] as const,
 }
 
-export type ArkadePackage = typeof arkadePackage
+export type ArkadedevPackage = typeof arkadedevPackage

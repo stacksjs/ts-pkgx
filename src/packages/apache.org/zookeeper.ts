@@ -1,5 +1,5 @@
 /**
- * **apache.org/zookeeper** - pkgx package
+ * **zookeeper** - pkgx package
  *
  * @domain `apache.org/zookeeper`
  * @programs `zkCleanup`, `zkCli`, `zkEnv`, `zkServer-initialize`, `zkServer`, ... (+4 more)
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.apacheorgzookeeper
- * console.log(pkg.name)        // "apache.org/zookeeper"
+ * console.log(pkg.name)        // "zookeeper"
  * console.log(pkg.programs)    // ["zkCleanup", "zkCli", ...]
  * console.log(pkg.versions[0]) // "3.9.4" (latest)
  * ```
@@ -26,7 +26,7 @@ export const apacheorgzookeeperPackage = {
   /**
    * The display name of this package.
    */
-  name: 'apache.org/zookeeper' as const,
+  name: 'zookeeper' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,12 +37,14 @@ export const apacheorgzookeeperPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/zookeeper/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install apache.org/zookeeper' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/zookeeper -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install apache.org/zookeeper' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,8 +80,6 @@ export const apacheorgzookeeperPackage = {
     '3.9.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/zookeeper -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install apache.org/zookeeper' as const,
 }
 
 export type ApacheorgzookeeperPackage = typeof apacheorgzookeeperPackage

@@ -6,18 +6,14 @@
  * @version `0.7.3` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install mprocs`
- * @name `mprocs`
+ * @install `launchpad install crates.io/mprocs`
+ * @dependencies `gnu.org/gcc`, `gnu.org/binutils`, `gnu.org/make`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.mprocs
- * // Or access via domain
- * const samePkg = pantry.cratesiomprocs
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiomprocs
  * console.log(pkg.name)        // "mprocs"
  * console.log(pkg.description) // "Run multiple commands in parallel"
  * console.log(pkg.programs)    // ["mprocs"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/mprocs.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const mprocsPackage = {
+export const cratesiomprocsPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const mprocsPackage = {
   description: 'Run multiple commands in parallel' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/mprocs/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/pvolok/mprocs' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install mprocs' as const,
+  installCommand: 'launchpad install crates.io/mprocs' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/mprocs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/mprocs' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,15 @@ export const mprocsPackage = {
     'mprocs',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'gnu.org/gcc',
+    'gnu.org/binutils',
+    'gnu.org/make',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -68,13 +74,7 @@ export const mprocsPackage = {
     '0.7.0',
     '0.6.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) mprocs -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install mprocs' as const,
 }
 
-export type MprocsPackage = typeof mprocsPackage
+export type CratesiomprocsPackage = typeof cratesiomprocsPackage

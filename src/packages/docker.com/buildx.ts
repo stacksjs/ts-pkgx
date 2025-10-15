@@ -6,18 +6,14 @@
  * @version `0.29.1` (32 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install buildx`
- * @name `buildx`
+ * @install `launchpad install docker.com/buildx`
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.buildx
- * // Or access via domain
- * const samePkg = pantry.dockercombuildx
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.dockercombuildx
  * console.log(pkg.name)        // "buildx"
  * console.log(pkg.description) // "Docker CLI plugin for extended build capabiliti..."
  * console.log(pkg.programs)    // ["buildx"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/docker-com/buildx.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const buildxPackage = {
+export const dockercombuildxPackage = {
   /**
    * The display name of this package.
    */
@@ -47,7 +43,9 @@ export const buildxPackage = {
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install buildx' as const,
+  installCommand: 'launchpad install docker.com/buildx' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +docker.com/buildx -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install docker.com/buildx' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const buildxPackage = {
     'buildx',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -95,13 +99,7 @@ export const buildxPackage = {
     '0.13.1',
     '0.13.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) buildx -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install buildx' as const,
 }
 
-export type BuildxPackage = typeof buildxPackage
+export type DockercombuildxPackage = typeof dockercombuildxPackage

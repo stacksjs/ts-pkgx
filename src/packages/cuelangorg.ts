@@ -6,18 +6,15 @@
  * @version `0.14.2` (24 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install cue`
- * @name `cue`
+ * @install `launchpad install cuelang.org`
+ * @homepage https://cuelang.org/
+ * @dependencies `go.dev@^1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cue
- * // Or access via domain
- * const samePkg = pantry.cuelangorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cuelangorg
  * console.log(pkg.name)        // "cue"
  * console.log(pkg.description) // "The home of the CUE language! Validate and defi..."
  * console.log(pkg.programs)    // ["cue"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/cuelang-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cuePackage = {
+export const cuelangorgPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const cuePackage = {
    */
   description: 'The home of the CUE language! Validate and define text-based and dynamic configuration' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cuelang.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://cuelang.org/' as const,
+  githubUrl: 'https://github.com/cue-lang/cue' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cue' as const,
+  installCommand: 'launchpad install cuelang.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cuelang.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cuelang.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const cuePackage = {
     'cue',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -87,13 +92,7 @@ export const cuePackage = {
     '0.5.0',
     '0.4.3',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cue -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cue' as const,
 }
 
-export type CuePackage = typeof cuePackage
+export type CuelangorgPackage = typeof cuelangorgPackage

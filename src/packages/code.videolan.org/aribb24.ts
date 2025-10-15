@@ -1,5 +1,5 @@
 /**
- * **code.videolan.org/aribb24** - pkgx package
+ * **aribb24** - pkgx package
  *
  * @domain `code.videolan.org/aribb24`
  * @version `1.0.4` (1 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.codevideolanorgaribb24
- * console.log(pkg.name)        // "code.videolan.org/aribb24"
+ * console.log(pkg.name)        // "aribb24"
  * console.log(pkg.versions[0]) // "1.0.4" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const codevideolanorgaribb24Package = {
   /**
    * The display name of this package.
    */
-  name: 'code.videolan.org/aribb24' as const,
+  name: 'aribb24' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const codevideolanorgaribb24Package = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/code.videolan.org/aribb24/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install code.videolan.org/aribb24' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +code.videolan.org/aribb24 -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install code.videolan.org/aribb24' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -58,8 +60,6 @@ export const codevideolanorgaribb24Package = {
     '1.0.4',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +code.videolan.org/aribb24 -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install code.videolan.org/aribb24' as const,
 }
 
 export type Codevideolanorgaribb24Package = typeof codevideolanorgaribb24Package

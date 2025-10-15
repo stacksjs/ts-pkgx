@@ -6,19 +6,14 @@
  * @version `1.17.0` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install alembic`
- * @name `alembic`
+ * @install `launchpad install alembic.sqlalchemy.org`
  * @dependencies `pkgx.sh^1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.alembic
- * // Or access via domain
- * const samePkg = pantry.alembicsqlalchemyorg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.alembicsqlalchemyorg
  * console.log(pkg.name)        // "alembic"
  * console.log(pkg.description) // "A database migrations tool for SQLAlchemy."
  * console.log(pkg.programs)    // ["alembic"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/alembic-sqlalchemy-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const alembicPackage = {
+export const alembicsqlalchemyorgPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const alembicPackage = {
   description: 'A database migrations tool for SQLAlchemy.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/alembic.sqlalchemy.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/sqlalchemy/alembic' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install alembic' as const,
+  installCommand: 'launchpad install alembic.sqlalchemy.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +alembic.sqlalchemy.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install alembic.sqlalchemy.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -83,13 +80,7 @@ export const alembicPackage = {
     '1.13.3',
     '1.13.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) alembic -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install alembic' as const,
 }
 
-export type AlembicPackage = typeof alembicPackage
+export type AlembicsqlalchemyorgPackage = typeof alembicsqlalchemyorgPackage

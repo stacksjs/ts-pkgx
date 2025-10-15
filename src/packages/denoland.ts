@@ -6,19 +6,15 @@
  * @version `2.5.4` (147 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install deno`
- * @name `deno`
- * @companions `info-zip.org/unzip`
+ * @install `launchpad install deno.land`
+ * @homepage https://deno.com/
+ * @dependencies `llvm.org`, `curl.se`, `cmake.org@^3`, ... (+4 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.deno
- * // Or access via domain
- * const samePkg = pantry.denoland
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.denoland
  * console.log(pkg.name)        // "deno"
  * console.log(pkg.description) // "A modern runtime for JavaScript and TypeScript."
  * console.log(pkg.programs)    // ["deno"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/deno-land.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const denoPackage = {
+export const denolandPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const denoPackage = {
    */
   description: 'A modern runtime for JavaScript and TypeScript.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/deno.land/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://deno.com/' as const,
+  githubUrl: 'https://github.com/denoland/deno' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install deno' as const,
+  installCommand: 'launchpad install deno.land' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +deno.land -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install deno.land' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,14 +54,20 @@ export const denoPackage = {
   programs: [
     'deno',
   ] as const,
+  companions: [] as const,
   /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
+   * Required dependencies for this package.
+   * These will be automatically installed.
    */
-  companions: [
-    'info-zip.org/unzip',
+  dependencies: [
+    'llvm.org',
+    'curl.se',
+    'cmake.org@^3',
+    'protobuf.dev',
+    'github.com/mikefarah/yq@^4',
+    'crates.io/semverator@^0',
+    'sourceware.org/libffi@>=3.2.1',
   ] as const,
-  dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -217,13 +221,7 @@ export const denoPackage = {
     '1.28.0',
     '1.26.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) deno -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install deno' as const,
 }
 
-export type DenoPackage = typeof denoPackage
+export type DenolandPackage = typeof denolandPackage

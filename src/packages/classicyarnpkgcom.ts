@@ -8,6 +8,7 @@
  *
  * @install `launchpad install classic.yarnpkg.com`
  * @aliases `yarn`
+ * @homepage https://yarnpkg.com/
  * @dependencies `nodejs.org>=5`
  *
  * @example
@@ -19,7 +20,7 @@
  * // Or access via domain
  * const samePkg = pantry.classicyarnpkgcom
  * console.log(pkg === samePkg) // true
- * console.log(pkg.name)        // "classic.yarnpkg.com"
+ * console.log(pkg.name)        // "classic.yarnpkg"
  * console.log(pkg.description) // "The 1.x line is frozen - features and bugfixes ..."
  * console.log(pkg.programs)    // ["yarn", "yarnpkg"]
  * console.log(pkg.versions[0]) // "1.22.22" (latest)
@@ -32,7 +33,7 @@ export const classicYarnPackage = {
   /**
    * The display name of this package.
    */
-  name: 'classic.yarnpkg.com' as const,
+  name: 'classic.yarnpkg' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -42,13 +43,15 @@ export const classicYarnPackage = {
    */
   description: 'The 1.x line is frozen - features and bugfixes now happen on https://github.com/yarnpkg/berry' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/classic.yarnpkg.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://yarnpkg.com/' as const,
+  githubUrl: 'https://github.com/yarnpkg/yarn' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install classic.yarnpkg.com' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +classic.yarnpkg.com -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install classic.yarnpkg.com' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -82,8 +85,6 @@ export const classicYarnPackage = {
   aliases: [
     'yarn',
   ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +classic.yarnpkg.com -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install classic.yarnpkg.com' as const,
 }
 
 export type ClassicYarnPackage = typeof classicYarnPackage

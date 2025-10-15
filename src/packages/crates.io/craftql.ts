@@ -6,18 +6,13 @@
  * @version `0.2.20` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install craftql`
- * @name `craftql`
+ * @install `launchpad install crates.io/craftql`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.craftql
- * // Or access via domain
- * const samePkg = pantry.cratesiocraftql
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiocraftql
  * console.log(pkg.name)        // "craftql"
  * console.log(pkg.description) // "A CLI tool to visualize GraphQL schemas and to ..."
  * console.log(pkg.programs)    // ["craftql"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/craftql.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const craftqlPackage = {
+export const cratesiocraftqlPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const craftqlPackage = {
   description: 'A CLI tool to visualize GraphQL schemas and to output a graph data structure as a graphviz .dot format' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/craftql/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/yamafaktory/craftql' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install craftql' as const,
+  installCommand: 'launchpad install crates.io/craftql' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/craftql -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/craftql' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +61,7 @@ export const craftqlPackage = {
   versions: [
     '0.2.20',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) craftql -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install craftql' as const,
 }
 
-export type CraftqlPackage = typeof craftqlPackage
+export type CratesiocraftqlPackage = typeof cratesiocraftqlPackage

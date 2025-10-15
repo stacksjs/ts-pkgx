@@ -6,18 +6,15 @@
  * @version `0.14.0` (102 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ruff`
- * @name `ruff`
+ * @install `launchpad install astral.sh/ruff`
+ * @homepage https://docs.astral.sh/ruff/
+ * @dependencies `if@>=0.1.14`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ruff
- * // Or access via domain
- * const samePkg = pantry.astralshruff
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.astralshruff
  * console.log(pkg.name)        // "ruff"
  * console.log(pkg.description) // "An extremely fast Python linter and code format..."
  * console.log(pkg.programs)    // ["ruff"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/astral-sh/ruff.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ruffPackage = {
+export const astralshruffPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const ruffPackage = {
    */
   description: 'An extremely fast Python linter and code formatter, written in Rust.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/astral.sh/ruff/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docs.astral.sh/ruff/' as const,
+  githubUrl: 'https://github.com/astral-sh/ruff' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ruff' as const,
+  installCommand: 'launchpad install astral.sh/ruff' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +astral.sh/ruff -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install astral.sh/ruff' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const ruffPackage = {
     'ruff',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'if@>=0.1.14',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -165,13 +170,7 @@ export const ruffPackage = {
     '0.1.10',
     '0.1.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ruff -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ruff' as const,
 }
 
-export type RuffPackage = typeof ruffPackage
+export type AstralshruffPackage = typeof astralshruffPackage

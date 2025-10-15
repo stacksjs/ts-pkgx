@@ -1,5 +1,5 @@
 /**
- * **android.com/cmdline-tools** - pkgx package
+ * **cmdline-tools** - pkgx package
  *
  * @domain `android.com/cmdline-tools`
  * @programs `apkanalyzer`, `avdmanager`, `lint`, `profgen`, `resourceshrinker`, ... (+3 more)
@@ -14,7 +14,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.androidcomcmdlinetools
- * console.log(pkg.name)        // "android.com/cmdline-tools"
+ * console.log(pkg.name)        // "cmdline-tools"
  * console.log(pkg.programs)    // ["apkanalyzer", "avdmanager", ...]
  * console.log(pkg.versions[0]) // "13114758.0.0" (latest)
  * ```
@@ -26,7 +26,7 @@ export const androidcomcmdlinetoolsPackage = {
   /**
    * The display name of this package.
    */
-  name: 'android.com/cmdline-tools' as const,
+  name: 'cmdline-tools' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,12 +37,14 @@ export const androidcomcmdlinetoolsPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/android.com/cmdline-tools/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install android.com/cmdline-tools' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +android.com/cmdline-tools -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install android.com/cmdline-tools' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,8 +76,6 @@ export const androidcomcmdlinetoolsPackage = {
     '11076708.0.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +android.com/cmdline-tools -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install android.com/cmdline-tools' as const,
 }
 
 export type AndroidcomcmdlinetoolsPackage = typeof androidcomcmdlinetoolsPackage

@@ -6,19 +6,14 @@
  * @version `0.27.0` (14 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install gitui`
- * @name `gitui`
+ * @install `launchpad install crates.io/gitui`
  * @dependencies `perl.org`, `openssl.org^1.1`, `zlib.net^1`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gitui
- * // Or access via domain
- * const samePkg = pantry.cratesiogitui
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiogitui
  * console.log(pkg.name)        // "gitui"
  * console.log(pkg.description) // "Blazing 💥 fast terminal-ui for git written in ..."
  * console.log(pkg.programs)    // ["gitui"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/gitui.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gituiPackage = {
+export const cratesiogituiPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const gituiPackage = {
   description: 'Blazing 💥 fast terminal-ui for git written in rust 🦀' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/gitui/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/extrawurst/gitui' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install gitui' as const,
+  installCommand: 'launchpad install crates.io/gitui' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/gitui -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/gitui' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -87,13 +84,7 @@ export const gituiPackage = {
     '0.23.0',
     '0.22.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) gitui -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gitui' as const,
 }
 
-export type GituiPackage = typeof gituiPackage
+export type CratesiogituiPackage = typeof cratesiogituiPackage

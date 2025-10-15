@@ -6,18 +6,15 @@
  * @version `0.8.16` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install earthly`
- * @name `earthly`
+ * @install `launchpad install earthly.dev/earthly`
+ * @homepage https://earthly.dev/
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.earthly
- * // Or access via domain
- * const samePkg = pantry.earthlydevearthly
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.earthlydevearthly
  * console.log(pkg.name)        // "earthly"
  * console.log(pkg.description) // "Super simple build framework with fast, repeata..."
  * console.log(pkg.programs)    // ["earthly"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/earthly-dev/earthly.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const earthlyPackage = {
+export const earthlydevearthlyPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const earthlyPackage = {
    */
   description: 'Super simple build framework with fast, repeatable builds and an instantly familiar syntax – like Dockerfile and Makefile had a baby.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/earthly.dev/earthly/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://earthly.dev/' as const,
+  githubUrl: 'https://github.com/earthly/earthly' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install earthly' as const,
+  installCommand: 'launchpad install earthly.dev/earthly' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +earthly.dev/earthly -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install earthly.dev/earthly' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const earthlyPackage = {
     'earthly',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -65,13 +70,7 @@ export const earthlyPackage = {
     '0.8.16',
     '0.8.15',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) earthly -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install earthly' as const,
 }
 
-export type EarthlyPackage = typeof earthlyPackage
+export type EarthlydevearthlyPackage = typeof earthlydevearthlyPackage

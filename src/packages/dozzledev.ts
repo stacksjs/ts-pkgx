@@ -1,25 +1,22 @@
 /**
- * **dozzle** - Realtime log viewer for docker containers.
+ * **dozzle** - Realtime log viewer for docker containers. 
  *
  * @domain `dozzle.dev`
  * @programs `dozzle`
  * @version `8.14.4` (78 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install dozzle`
- * @name `dozzle`
+ * @install `launchpad install dozzle.dev`
+ * @homepage https://dozzle.dev/
+ * @dependencies `go.dev@^1.21`, `pnpm.io`, `openssl.org`, ... (+1 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dozzle
- * // Or access via domain
- * const samePkg = pantry.dozzledev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.dozzledev
  * console.log(pkg.name)        // "dozzle"
- * console.log(pkg.description) // "Realtime log viewer for docker containers."
+ * console.log(pkg.description) // "Realtime log viewer for docker containers. "
  * console.log(pkg.programs)    // ["dozzle"]
  * console.log(pkg.versions[0]) // "8.14.4" (latest)
  * ```
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dozzle-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dozzlePackage = {
+export const dozzledevPackage = {
   /**
    * The display name of this package.
    */
@@ -39,15 +36,17 @@ export const dozzlePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Realtime log viewer for docker containers.' as const,
+  description: 'Realtime log viewer for docker containers. ' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dozzle.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://dozzle.dev/' as const,
+  githubUrl: 'https://github.com/amir20/dozzle' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install dozzle' as const,
+  installCommand: 'launchpad install dozzle.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +dozzle.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dozzle.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,16 @@ export const dozzlePackage = {
     'dozzle',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+    'pnpm.io',
+    'openssl.org',
+    'if@darwin/aarch64',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -141,13 +149,7 @@ export const dozzlePackage = {
     '8.5.3',
     '8.5.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dozzle -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install dozzle' as const,
 }
 
-export type DozzlePackage = typeof dozzlePackage
+export type DozzledevPackage = typeof dozzledevPackage

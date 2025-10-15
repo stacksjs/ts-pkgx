@@ -6,18 +6,13 @@
  * @version `2019.10.22` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install stego`
- * @name `stego`
+ * @install `launchpad install crates.io/stego`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.stego
- * // Or access via domain
- * const samePkg = pantry.cratesiostego
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiostego
  * console.log(pkg.name)        // "stego"
  * console.log(pkg.description) // "🦕 stego is a steganographic swiss army knife."
  * console.log(pkg.programs)    // ["stego"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/stego.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const stegoPackage = {
+export const cratesiostegoPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const stegoPackage = {
   description: '🦕 stego is a steganographic swiss army knife.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/stego/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/ajmwagar/stego' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install stego' as const,
+  installCommand: 'launchpad install crates.io/stego' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/stego -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/stego' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +61,7 @@ export const stegoPackage = {
   versions: [
     '2019.10.22',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) stego -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install stego' as const,
 }
 
-export type StegoPackage = typeof stegoPackage
+export type CratesiostegoPackage = typeof cratesiostegoPackage

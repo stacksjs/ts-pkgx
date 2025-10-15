@@ -6,18 +6,15 @@
  * @version `0.0.8` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install uchardet`
- * @name `uchardet`
+ * @install `launchpad install freedesktop.org/uchardet`
+ * @homepage https://www.freedesktop.org/wiki/Software/uchardet/
+ * @dependencies `cmake.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.uchardet
- * // Or access via domain
- * const samePkg = pantry.freedesktoporguchardet
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.freedesktoporguchardet
  * console.log(pkg.name)        // "uchardet"
  * console.log(pkg.description) // "Encoding detector library"
  * console.log(pkg.programs)    // ["uchardet"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/freedesktop-org/uchardet.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const uchardetPackage = {
+export const freedesktoporguchardetPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const uchardetPackage = {
    */
   description: 'Encoding detector library' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/uchardet/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.freedesktop.org/wiki/Software/uchardet/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install uchardet' as const,
+  installCommand: 'launchpad install freedesktop.org/uchardet' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/uchardet -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/uchardet' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const uchardetPackage = {
     'uchardet',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +69,7 @@ export const uchardetPackage = {
   versions: [
     '0.0.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) uchardet -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install uchardet' as const,
 }
 
-export type UchardetPackage = typeof uchardetPackage
+export type FreedesktoporguchardetPackage = typeof freedesktoporguchardetPackage

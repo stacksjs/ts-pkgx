@@ -4774,6 +4774,7 @@ export interface Pantry {
   flux: typeof fluxPackage
   x265: typeof x265Package
   x264: typeof x264Package
+  getmonero: typeof getmoneroorgPackage
   'kubectl-cnpg': typeof kubectlcnpgPackage
   pinentry: typeof pinentryPackage
   gpgme: typeof gpgmePackage
@@ -8601,6 +8602,7 @@ export const pantry: Pantry = {
   flux: fluxPackage,
   x265: x265Package,
   x264: x264Package,
+  getmonero: getmoneroorgPackage,
   'kubectl-cnpg': kubectlcnpgPackage,
   pinentry: pinentryPackage,
   gpgme: gpgmePackage,

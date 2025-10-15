@@ -6,19 +6,15 @@
  * @version `16.23.0` (164 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install eas`
- * @name `eas`
+ * @install `launchpad install expo.dev/eas-cli`
+ * @homepage https://docs.expo.dev/eas/
  * @dependencies `nodejs.org^18.18 || >=20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.eas
- * // Or access via domain
- * const samePkg = pantry.expodeveascli
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.expodeveascli
  * console.log(pkg.name)        // "eas"
  * console.log(pkg.description) // "Fastest way to build, submit, and update iOS an..."
  * console.log(pkg.programs)    // ["eas"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/expo-dev/eas-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const easPackage = {
+export const expodeveascliPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const easPackage = {
    */
   description: 'Fastest way to build, submit, and update iOS and Android apps' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/expo.dev/eas-cli/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docs.expo.dev/eas/' as const,
+  githubUrl: 'https://github.com/expo/eas-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install eas' as const,
+  installCommand: 'launchpad install expo.dev/eas-cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +expo.dev/eas-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install expo.dev/eas-cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -234,13 +232,7 @@ export const easPackage = {
     '5.9.2',
     '5.9.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) eas -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install eas' as const,
 }
 
-export type EasPackage = typeof easPackage
+export type ExpodeveascliPackage = typeof expodeveascliPackage

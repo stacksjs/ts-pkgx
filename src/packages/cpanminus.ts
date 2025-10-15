@@ -1,24 +1,20 @@
 /**
- * **cpanm** - cpanminus - get, unpack, build and install modules from CPAN
+ * **cpanm** - cpanminus - get, unpack, build and install modules from CPAN 
  *
  * @domain `cpanmin.us`
  * @programs `cpanm`
  * @version `1.7048.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install cpanm`
- * @name `cpanm`
+ * @install `launchpad install cpanmin.us`
+ * @homepage http://cpanmin.us
  * @dependencies `perl.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cpanm
- * // Or access via domain
- * const samePkg = pantry.cpanminus
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cpanminus
  * console.log(pkg.name)        // "cpanm"
  * console.log(pkg.description) // "cpanminus - get, unpack, build and install modu..."
  * console.log(pkg.programs)    // ["cpanm"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/cpanmin-us.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cpanmPackage = {
+export const cpanminusPackage = {
   /**
    * The display name of this package.
    */
@@ -40,15 +36,17 @@ export const cpanmPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'cpanminus - get, unpack, build and install modules from CPAN' as const,
+  description: 'cpanminus - get, unpack, build and install modules from CPAN ' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/cpanmin.us/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://cpanmin.us' as const,
+  githubUrl: 'https://github.com/miyagawa/cpanminus' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cpanm' as const,
+  installCommand: 'launchpad install cpanmin.us' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +cpanmin.us -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install cpanmin.us' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +71,7 @@ export const cpanmPackage = {
     '1.7047.0',
     '1.7046.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cpanm -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cpanm' as const,
 }
 
-export type CpanmPackage = typeof cpanmPackage
+export type CpanminusPackage = typeof cpanminusPackage

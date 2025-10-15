@@ -6,19 +6,15 @@
  * @version `2.0.24` (7 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install asciidoctor`
- * @name `asciidoctor`
+ * @install `launchpad install asciidoctor.org`
+ * @homepage https://asciidoctor.org/
  * @dependencies `ruby-lang.org^3.1`, `rubygems.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.asciidoctor
- * // Or access via domain
- * const samePkg = pantry.asciidoctororg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.asciidoctororg
  * console.log(pkg.name)        // "asciidoctor"
  * console.log(pkg.description) // ":gem: A fast, open source text processor and pu..."
  * console.log(pkg.programs)    // ["asciidoctor"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/asciidoctor-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const asciidoctorPackage = {
+export const asciidoctororgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const asciidoctorPackage = {
    */
   description: ':gem: A fast, open source text processor and publishing toolchain, written in Ruby, for converting AsciiDoc content to HTML 5, DocBook 5, and other formats.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/asciidoctor.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://asciidoctor.org/' as const,
+  githubUrl: 'https://github.com/asciidoctor/asciidoctor' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install asciidoctor' as const,
+  installCommand: 'launchpad install asciidoctor.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +asciidoctor.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install asciidoctor.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -78,13 +76,7 @@ export const asciidoctorPackage = {
     '2.0.19',
     '2.0.18',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) asciidoctor -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install asciidoctor' as const,
 }
 
-export type AsciidoctorPackage = typeof asciidoctorPackage
+export type AsciidoctororgPackage = typeof asciidoctororgPackage

@@ -1,26 +1,20 @@
 /**
- * **eliza** - Autonomous agents for everyone
+ * **elizaOS** - Autonomous agents for everyone
  *
  * @domain `elizaOS.github.io`
  * @programs `eliza`
  * @version `1.6.1` (69 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install eliza`
- * @name `elizaOS`
- * @aliases `eliza`
+ * @install `launchpad install elizaOS.github.io`
+ * @homepage https://elizaOS.github.io/eliza/
  * @dependencies `python.org>=2.7`, `nodejs.org~23.3`, `pnpm.io`, ... (+1 more)
- * @companions `git-scm.org`, `ffmpeg.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.eliza
- * // Or access via domain
- * const samePkg = pantry.elizaosgithubio
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.elizaosgithubio
  * console.log(pkg.name)        // "elizaOS"
  * console.log(pkg.description) // "Autonomous agents for everyone"
  * console.log(pkg.programs)    // ["eliza"]
@@ -30,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/elizaOS-github-io.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const elizaPackage = {
+export const elizaosgithubioPackage = {
   /**
    * The display name of this package.
    */
@@ -44,13 +38,15 @@ export const elizaPackage = {
    */
   description: 'Autonomous agents for everyone' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/elizaOS.github.io/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://elizaOS.github.io/eliza/' as const,
   githubUrl: 'https://github.com/elizaOS/eliza' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install eliza' as const,
+  installCommand: 'launchpad install elizaOS.github.io' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +elizaOS.github.io -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install elizaOS.github.io' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -58,14 +54,7 @@ export const elizaPackage = {
   programs: [
     'eliza',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'git-scm.org',
-    'ffmpeg.org',
-  ] as const,
+  companions: [] as const,
   /**
    * Required dependencies for this package.
    * These will be automatically installed.
@@ -151,15 +140,7 @@ export const elizaPackage = {
     '0.1.8.1',
     '0.1.7',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'eliza',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) eliza -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install eliza' as const,
+  aliases: [] as const,
 }
 
-export type ElizaPackage = typeof elizaPackage
+export type ElizaosgithubioPackage = typeof elizaosgithubioPackage

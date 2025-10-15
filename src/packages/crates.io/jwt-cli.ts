@@ -6,18 +6,14 @@
  * @version `6.2.0` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install jwt`
- * @name `jwt`
+ * @install `launchpad install crates.io/jwt-cli`
+ * @dependencies `cmake.org@^3`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.jwt
- * // Or access via domain
- * const samePkg = pantry.cratesiojwtcli
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiojwtcli
  * console.log(pkg.name)        // "jwt"
  * console.log(pkg.description) // "A super fast CLI tool to decode and encode JWTs..."
  * console.log(pkg.programs)    // ["jwt"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/jwt-cli.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const jwtPackage = {
+export const cratesiojwtcliPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const jwtPackage = {
   description: 'A super fast CLI tool to decode and encode JWTs built in Rust' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/jwt-cli/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/mike-engel/jwt-cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install jwt' as const,
+  installCommand: 'launchpad install crates.io/jwt-cli' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/jwt-cli -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/jwt-cli' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const jwtPackage = {
     'jwt',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org@^3',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -67,13 +71,7 @@ export const jwtPackage = {
     '6.1.0',
     '6.0.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) jwt -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install jwt' as const,
 }
 
-export type JwtPackage = typeof jwtPackage
+export type CratesiojwtcliPackage = typeof cratesiojwtcliPackage

@@ -6,19 +6,15 @@
  * @version `1.4.1` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install borg`
- * @name `borg`
+ * @install `launchpad install borgbackup.org`
+ * @homepage https://www.borgbackup.org/
  * @dependencies `pkgx.sh^1`, `github.com/Cyan4973/xxHash^0.8`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.borg
- * // Or access via domain
- * const samePkg = pantry.borgbackuporg
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.borgbackuporg
  * console.log(pkg.name)        // "borg"
  * console.log(pkg.description) // "Deduplicating archiver with compression and aut..."
  * console.log(pkg.programs)    // ["borg", "borgfs"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/borgbackup-org.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const borgPackage = {
+export const borgbackuporgPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const borgPackage = {
    */
   description: 'Deduplicating archiver with compression and authenticated encryption.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/borgbackup.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.borgbackup.org/' as const,
+  githubUrl: 'https://github.com/borgbackup/borg' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install borg' as const,
+  installCommand: 'launchpad install borgbackup.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +borgbackup.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install borgbackup.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -74,13 +72,7 @@ export const borgPackage = {
     '1.4.1',
     '1.2.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +borgbackup.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install borg' as const,
 }
 
-export type BorgPackage = typeof borgPackage
+export type BorgbackuporgPackage = typeof borgbackuporgPackage

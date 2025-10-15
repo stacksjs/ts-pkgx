@@ -6,19 +6,14 @@
  * @version `0.33.0` (12 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install cargo-tarpaulin`
- * @name `cargo-tarpaulin`
- * @companions `rust-lang.org/cargo`
+ * @install `launchpad install crates.io/cargo-tarpaulin`
+ * @homepage https://crates.io/crates/cargo-tarpaulin
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.cargotarpaulin
- * // Or access via domain
- * const samePkg = pantry.cratesiocargotarpaulin
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiocargotarpaulin
  * console.log(pkg.name)        // "cargo-tarpaulin"
  * console.log(pkg.description) // "A code coverage tool for Rust projects"
  * console.log(pkg.programs)    // ["cargo-tarpaulin"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/cargo-tarpaulin.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const cargotarpaulinPackage = {
+export const cratesiocargotarpaulinPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +37,15 @@ export const cargotarpaulinPackage = {
    */
   description: 'A code coverage tool for Rust projects' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/cargo-tarpaulin/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://crates.io/crates/cargo-tarpaulin' as const,
+  githubUrl: 'https://github.com/xd009642/tarpaulin' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install cargo-tarpaulin' as const,
+  installCommand: 'launchpad install crates.io/cargo-tarpaulin' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/cargo-tarpaulin -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/cargo-tarpaulin' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,13 +53,7 @@ export const cargotarpaulinPackage = {
   programs: [
     'cargo-tarpaulin',
   ] as const,
-  /**
-   * Related packages that work well with this package.
-   * Consider installing these for enhanced functionality.
-   */
-  companions: [
-    'rust-lang.org/cargo',
-  ] as const,
+  companions: [] as const,
   dependencies: [] as const,
   /**
    * Available versions from newest to oldest.
@@ -82,13 +73,7 @@ export const cargotarpaulinPackage = {
     '0.31.5',
     '0.31.4',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) cargo-tarpaulin -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install cargo-tarpaulin' as const,
 }
 
-export type CargotarpaulinPackage = typeof cargotarpaulinPackage
+export type CratesiocargotarpaulinPackage = typeof cratesiocargotarpaulinPackage

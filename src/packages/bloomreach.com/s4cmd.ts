@@ -6,19 +6,14 @@
  * @version `2.1.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install s4cmd`
- * @name `s4cmd`
+ * @install `launchpad install bloomreach.com/s4cmd`
  * @dependencies `python.org>=3<3.12`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.s4cmd
- * // Or access via domain
- * const samePkg = pantry.bloomreachcoms4cmd
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.bloomreachcoms4cmd
  * console.log(pkg.name)        // "s4cmd"
  * console.log(pkg.description) // "Super S3 command line tool"
  * console.log(pkg.programs)    // ["s4cmd"]
@@ -28,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/bloomreach-com/s4cmd.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const s4cmdPackage = {
+export const bloomreachcoms4cmdPackage = {
   /**
    * The display name of this package.
    */
@@ -43,12 +38,14 @@ export const s4cmdPackage = {
   description: 'Super S3 command line tool' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/bloomreach.com/s4cmd/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/bloomreach/s4cmd' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install s4cmd' as const,
+  installCommand: 'launchpad install bloomreach.com/s4cmd' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +bloomreach.com/s4cmd -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install bloomreach.com/s4cmd' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +68,7 @@ export const s4cmdPackage = {
   versions: [
     '2.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) s4cmd -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install s4cmd' as const,
 }
 
-export type S4cmdPackage = typeof s4cmdPackage
+export type Bloomreachcoms4cmdPackage = typeof bloomreachcoms4cmdPackage

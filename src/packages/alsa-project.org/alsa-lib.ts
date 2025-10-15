@@ -6,18 +6,14 @@
  * @version `1.2.14` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install aserver`
- * @name `aserver`
+ * @install `launchpad install alsa-project.org/alsa-lib`
+ * @homepage https://www.alsa-project.org/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.aserver
- * // Or access via domain
- * const samePkg = pantry.alsaprojectorgalsalib
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.alsaprojectorgalsalib
  * console.log(pkg.name)        // "aserver"
  * console.log(pkg.description) // "Provides audio and MIDI functionality to the Li..."
  * console.log(pkg.programs)    // ["aserver"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/alsa-project-org/alsa-lib.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const aserverPackage = {
+export const alsaprojectorgalsalibPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const aserverPackage = {
    */
   description: 'Provides audio and MIDI functionality to the Linux operating system' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/alsa-project.org/alsa-lib/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.alsa-project.org/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install aserver' as const,
+  installCommand: 'launchpad install alsa-project.org/alsa-lib' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +alsa-project.org/alsa-lib -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install alsa-project.org/alsa-lib' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -69,13 +67,7 @@ export const aserverPackage = {
     '1.2.10',
     '1.2.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) aserver -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install aserver' as const,
 }
 
-export type AserverPackage = typeof aserverPackage
+export type AlsaprojectorgalsalibPackage = typeof alsaprojectorgalsalibPackage

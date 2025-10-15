@@ -6,19 +6,15 @@
  * @version `0.43.1` (20 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install zellij`
- * @name `zellij`
+ * @install `launchpad install crates.io/zellij`
+ * @homepage https://zellij.dev
  * @dependencies `zlib.net^1`, `curl.se@8`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.zellij
- * // Or access via domain
- * const samePkg = pantry.cratesiozellij
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiozellij
  * console.log(pkg.name)        // "zellij"
  * console.log(pkg.description) // "Pluggable terminal workspace, with terminal mul..."
  * console.log(pkg.programs)    // ["zellij"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/zellij.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const zellijPackage = {
+export const cratesiozellijPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const zellijPackage = {
    */
   description: 'Pluggable terminal workspace, with terminal multiplexer as the base feature' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/zellij/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://zellij.dev' as const,
+  githubUrl: 'https://github.com/zellij-org/zellij' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install zellij' as const,
+  installCommand: 'launchpad install crates.io/zellij' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/zellij -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/zellij' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -91,13 +89,7 @@ export const zellijPackage = {
     '0.37.0',
     '0.36.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) zellij -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install zellij' as const,
 }
 
-export type ZellijPackage = typeof zellijPackage
+export type CratesiozellijPackage = typeof cratesiozellijPackage

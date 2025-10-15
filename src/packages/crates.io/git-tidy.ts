@@ -6,18 +6,13 @@
  * @version `2.0.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install git-tidy`
- * @name `git-tidy`
+ * @install `launchpad install crates.io/git-tidy`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.gittidy
- * // Or access via domain
- * const samePkg = pantry.cratesiogittidy
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiogittidy
  * console.log(pkg.name)        // "git-tidy"
  * console.log(pkg.description) // "Tidy up stale git branches."
  * console.log(pkg.programs)    // ["git-tidy"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/git-tidy.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const gittidyPackage = {
+export const cratesiogittidyPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const gittidyPackage = {
   description: 'Tidy up stale git branches.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/git-tidy/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/drewwyatt/git-tidy' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install git-tidy' as const,
+  installCommand: 'launchpad install crates.io/git-tidy' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/git-tidy -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/git-tidy' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -64,13 +61,7 @@ export const gittidyPackage = {
   versions: [
     '2.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) git-tidy -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install git-tidy' as const,
 }
 
-export type GittidyPackage = typeof gittidyPackage
+export type CratesiogittidyPackage = typeof cratesiogittidyPackage

@@ -1,24 +1,20 @@
 /**
- * **argo** - Get stuff done with container-native workflows for Kubernetes
+ * **argo-workflows** - Get stuff done with container-native workflows for Kubernetes
  *
  * @domain `argoproj.github.io/workflows`
  * @programs `argo`
  * @version `3.7.3` (41 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install argo`
- * @name `argo-workflows`
- * @aliases `argo`
+ * @install `launchpad install argoproj.github.io/workflows`
+ * @homepage https://argoproj.io
+ * @dependencies `go.dev`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.argo
- * // Or access via domain
- * const samePkg = pantry.argoprojgithubioworkflows
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.argoprojgithubioworkflows
  * console.log(pkg.name)        // "argo-workflows"
  * console.log(pkg.description) // "Get stuff done with container-native workflows ..."
  * console.log(pkg.programs)    // ["argo"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/argoproj-github-io/workflows.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const argoPackage = {
+export const argoprojgithubioworkflowsPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const argoPackage = {
    */
   description: 'Get stuff done with container-native workflows for Kubernetes' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/argoproj.github.io/workflows/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://argoproj.io' as const,
+  githubUrl: 'https://github.com/argoproj/argo-workflows' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install argo' as const,
+  installCommand: 'launchpad install argoproj.github.io/workflows' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +argoproj.github.io/workflows -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install argoproj.github.io/workflows' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -57,7 +55,13 @@ export const argoPackage = {
     'argo',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -105,15 +109,7 @@ export const argoPackage = {
     '3.4.12',
     '3.4.11',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'argo',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) argo -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install argo' as const,
+  aliases: [] as const,
 }
 
-export type ArgoPackage = typeof argoPackage
+export type ArgoprojgithubioworkflowsPackage = typeof argoprojgithubioworkflowsPackage

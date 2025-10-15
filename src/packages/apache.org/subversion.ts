@@ -6,19 +6,15 @@
  * @version `1.14.5` (4 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install svn`
- * @name `svn`
+ * @install `launchpad install apache.org/subversion`
+ * @homepage https://subversion.apache.org/
  * @dependencies `gnu.org/gettext^0.21`, `lz4.org^1`, `openssl.org^1.1`, ... (+8 more)
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.svn
- * // Or access via domain
- * const samePkg = pantry.apacheorgsubversion
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.apacheorgsubversion
  * console.log(pkg.name)        // "svn"
  * console.log(pkg.description) // "Version control system designed to be a better CVS"
  * console.log(pkg.programs)    // ["svn", "svnadmin", ...]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/apache-org/subversion.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const svnPackage = {
+export const apacheorgsubversionPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const svnPackage = {
    */
   description: 'Version control system designed to be a better CVS' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/subversion/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://subversion.apache.org/' as const,
+  githubUrl: 'https://github.com/apache/subversion' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install svn' as const,
+  installCommand: 'launchpad install apache.org/subversion' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/subversion -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install apache.org/subversion' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -94,13 +92,7 @@ export const svnPackage = {
     '1.14.3',
     '1.14.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/subversion -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install svn' as const,
 }
 
-export type SvnPackage = typeof svnPackage
+export type ApacheorgsubversionPackage = typeof apacheorgsubversionPackage

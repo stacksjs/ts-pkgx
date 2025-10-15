@@ -6,18 +6,15 @@
  * @version `0.2.11` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install rist`
- * @name `rist`
+ * @install `launchpad install code.videolan.org/rist/librist`
+ * @homepage https://code.videolan.org/rist/
+ * @dependencies `mesonbuild.com@>=0.47<1`, `sourceware.org/libffi@3`, `if@darwin`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.rist
- * // Or access via domain
- * const samePkg = pantry.codevideolanorgristlibrist
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.codevideolanorgristlibrist
  * console.log(pkg.name)        // "rist"
  * console.log(pkg.description) // "Reliable Internet Stream Transport (RIST)"
  * console.log(pkg.programs)    // ["rist2rist", "ristreceiver", ...]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/code-videolan-org/rist/librist.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ristPackage = {
+export const codevideolanorgristlibristPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const ristPackage = {
    */
   description: 'Reliable Internet Stream Transport (RIST)' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/code.videolan.org/rist/librist/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://code.videolan.org/rist/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install rist' as const,
+  installCommand: 'launchpad install code.videolan.org/rist/librist' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +code.videolan.org/rist/librist -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install code.videolan.org/rist/librist' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -59,7 +58,15 @@ export const ristPackage = {
     'ristsrppasswd',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'mesonbuild.com@>=0.47<1',
+    'sourceware.org/libffi@3',
+    'if@darwin',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,13 +76,7 @@ export const ristPackage = {
     '0.2.8',
     '0.2.7',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +code.videolan.org/rist/librist -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install rist' as const,
 }
 
-export type RistPackage = typeof ristPackage
+export type CodevideolanorgristlibristPackage = typeof codevideolanorgristlibristPackage

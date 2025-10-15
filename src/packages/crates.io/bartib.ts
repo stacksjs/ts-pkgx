@@ -6,18 +6,13 @@
  * @version `1.1.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install bartib`
- * @name `bartib`
+ * @install `launchpad install crates.io/bartib`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.bartib
- * // Or access via domain
- * const samePkg = pantry.cratesiobartib
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesiobartib
  * console.log(pkg.name)        // "bartib"
  * console.log(pkg.description) // "A simple timetracker for the command line. It s..."
  * console.log(pkg.programs)    // ["bartib"]
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/bartib.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const bartibPackage = {
+export const cratesiobartibPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const bartibPackage = {
   description: 'A simple timetracker for the command line. It saves a log of all tracked activities as a plaintext file and allows you to create flexible reports.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/bartib/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/nikolassv/bartib' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install bartib' as const,
+  installCommand: 'launchpad install crates.io/bartib' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/bartib -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/bartib' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -65,13 +62,7 @@ export const bartibPackage = {
     '1.1.0',
     '1.0.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) bartib -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install bartib' as const,
 }
 
-export type BartibPackage = typeof bartibPackage
+export type CratesiobartibPackage = typeof cratesiobartibPackage

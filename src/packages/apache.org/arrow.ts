@@ -1,5 +1,5 @@
 /**
- * **apache.org/arrow** - Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics
+ * **arrow** - Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics
  *
  * @domain `apache.org/arrow`
  * @programs `parquet-dump-schema`, `parquet-reader`, `parquet-scan`
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install apache.org/arrow`
+ * @homepage https://arrow.apache.org/
  * @dependencies `github.com/aws/aws-sdk-cpp`, `github.com/google/brotli`, `sourceware.org/bzip2`, ... (+13 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.apacheorgarrow
- * console.log(pkg.name)        // "apache.org/arrow"
+ * console.log(pkg.name)        // "arrow"
  * console.log(pkg.description) // "Apache Arrow is the universal columnar format a..."
  * console.log(pkg.programs)    // ["parquet-dump-schema", "parquet-reader", ...]
  * console.log(pkg.versions[0]) // "21.0.0" (latest)
@@ -27,7 +28,7 @@ export const apacheorgarrowPackage = {
   /**
    * The display name of this package.
    */
-  name: 'apache.org/arrow' as const,
+  name: 'arrow' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const apacheorgarrowPackage = {
    */
   description: 'Apache Arrow is the universal columnar format and multi-language toolbox for fast data interchange and in-memory analytics' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/apache.org/arrow/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://arrow.apache.org/' as const,
+  githubUrl: 'https://github.com/apache/arrow' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install apache.org/arrow' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/arrow -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install apache.org/arrow' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -99,8 +102,6 @@ export const apacheorgarrowPackage = {
     '13.0.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +apache.org/arrow -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install apache.org/arrow' as const,
 }
 
 export type ApacheorgarrowPackage = typeof apacheorgarrowPackage

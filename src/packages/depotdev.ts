@@ -6,18 +6,15 @@
  * @version `2.100.8` (68 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install depot`
- * @name `depot`
+ * @install `launchpad install depot.dev`
+ * @homepage https://depot.dev
+ * @dependencies `go.dev@~1.21`, `gnu.org/coreutils`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.depot
- * // Or access via domain
- * const samePkg = pantry.depotdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.depotdev
  * console.log(pkg.name)        // "depot"
  * console.log(pkg.description) // "🖥️ Depot CLI, build your Docker images in the ..."
  * console.log(pkg.programs)    // ["depot"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/depot-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const depotPackage = {
+export const depotdevPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const depotPackage = {
    */
   description: '🖥️ Depot CLI, build your Docker images in the cloud' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/depot.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://depot.dev' as const,
+  githubUrl: 'https://github.com/depot/cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install depot' as const,
+  installCommand: 'launchpad install depot.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +depot.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install depot.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,14 @@ export const depotPackage = {
     'depot',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.21',
+    'gnu.org/coreutils',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -131,13 +137,7 @@ export const depotPackage = {
     '2.70.0',
     '2.68.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) depot -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install depot' as const,
 }
 
-export type DepotPackage = typeof depotPackage
+export type DepotdevPackage = typeof depotdevPackage

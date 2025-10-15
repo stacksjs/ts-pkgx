@@ -1,5 +1,5 @@
 /**
- * **freedesktop.org/fontconfig** - XML-based font configuration API for X Windows
+ * **fontconfig** - XML-based font configuration API for X Windows
  *
  * @domain `freedesktop.org/fontconfig`
  * @programs `fc-cache`, `fc-cat`, `fc-conflist`, `fc-list`, `fc-match`, ... (+4 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install freedesktop.org/fontconfig`
+ * @homepage https://wiki.freedesktop.org/www/Software/fontconfig/
  * @dependencies `sourceware.org/bzip2@1`, `freetype.org@2`, `zlib.net@1`, ... (+2 more)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.freedesktoporgfontconfig
- * console.log(pkg.name)        // "freedesktop.org/fontconfig"
+ * console.log(pkg.name)        // "fontconfig"
  * console.log(pkg.description) // "XML-based font configuration API for X Windows"
  * console.log(pkg.programs)    // ["fc-cache", "fc-cat", ...]
  * console.log(pkg.versions[0]) // "2.17.1" (latest)
@@ -27,7 +28,7 @@ export const freedesktoporgfontconfigPackage = {
   /**
    * The display name of this package.
    */
-  name: 'freedesktop.org/fontconfig' as const,
+  name: 'fontconfig' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const freedesktoporgfontconfigPackage = {
    */
   description: 'XML-based font configuration API for X Windows' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/fontconfig/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://wiki.freedesktop.org/www/Software/fontconfig/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install freedesktop.org/fontconfig' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/fontconfig -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/fontconfig' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -85,8 +88,6 @@ export const freedesktoporgfontconfigPackage = {
     '2.14.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/fontconfig -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install freedesktop.org/fontconfig' as const,
 }
 
 export type FreedesktoporgfontconfigPackage = typeof freedesktoporgfontconfigPackage

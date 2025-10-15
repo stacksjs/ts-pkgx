@@ -6,18 +6,15 @@
  * @version `1.19.1` (6 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install protoc-gen-connect-go`
- * @name `protoc-gen-connect-go`
+ * @install `launchpad install connectrpc.org/protoc-gen-connect-go`
+ * @homepage https://connectrpc.com
+ * @dependencies `go.dev@^1.20`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.protocgenconnectgo
- * // Or access via domain
- * const samePkg = pantry.connectrpcorgprotocgenconnectgo
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.connectrpcorgprotocgenconnectgo
  * console.log(pkg.name)        // "protoc-gen-connect-go"
  * console.log(pkg.description) // "The Go implementation of Connect: Protobuf RPC ..."
  * console.log(pkg.programs)    // ["protoc-gen-connect-go"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/connectrpc-org/protoc-gen-connect-go.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const protocgenconnectgoPackage = {
+export const connectrpcorgprotocgenconnectgoPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const protocgenconnectgoPackage = {
    */
   description: 'The Go implementation of Connect: Protobuf RPC that works.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/connectrpc.org/protoc-gen-connect-go/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://connectrpc.com' as const,
+  githubUrl: 'https://github.com/connectrpc/connect-go' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install protoc-gen-connect-go' as const,
+  installCommand: 'launchpad install connectrpc.org/protoc-gen-connect-go' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +connectrpc.org/protoc-gen-connect-go -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install connectrpc.org/protoc-gen-connect-go' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const protocgenconnectgoPackage = {
     'protoc-gen-connect-go',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.20',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -69,13 +74,7 @@ export const protocgenconnectgoPackage = {
     '1.17.0',
     '1.16.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) protoc-gen-connect-go -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install protoc-gen-connect-go' as const,
 }
 
-export type ProtocgenconnectgoPackage = typeof protocgenconnectgoPackage
+export type ConnectrpcorgprotocgenconnectgoPackage = typeof connectrpcorgprotocgenconnectgoPackage

@@ -6,18 +6,15 @@
  * @version `0.7.7` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ctop`
- * @name `ctop`
+ * @install `launchpad install ctop.sh`
+ * @homepage https://bcicen.github.io/ctop/
+ * @dependencies `go.dev@~1.18`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.ctop
- * // Or access via domain
- * const samePkg = pantry.ctopsh
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.ctopsh
  * console.log(pkg.name)        // "ctop"
  * console.log(pkg.description) // "Top-like interface for container metrics"
  * console.log(pkg.programs)    // ["ctop"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/ctop-sh.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const ctopPackage = {
+export const ctopshPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const ctopPackage = {
    */
   description: 'Top-like interface for container metrics' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ctop.sh/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://bcicen.github.io/ctop/' as const,
+  githubUrl: 'https://github.com/bcicen/ctop' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ctop' as const,
+  installCommand: 'launchpad install ctop.sh' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ctop.sh -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install ctop.sh' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const ctopPackage = {
     'ctop',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@~1.18',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -64,13 +69,7 @@ export const ctopPackage = {
   versions: [
     '0.7.7',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ctop -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ctop' as const,
 }
 
-export type CtopPackage = typeof ctopPackage
+export type CtopshPackage = typeof ctopshPackage

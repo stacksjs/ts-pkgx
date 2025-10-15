@@ -6,18 +6,14 @@
  * @version `0.50.2` (29 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install dprint`
- * @name `dprint`
+ * @install `launchpad install dprint.dev`
+ * @homepage https://dprint.dev/
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.dprint
- * // Or access via domain
- * const samePkg = pantry.dprintdev
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.dprintdev
  * console.log(pkg.name)        // "dprint"
  * console.log(pkg.description) // "Pluggable and configurable code formatting plat..."
  * console.log(pkg.programs)    // ["dprint"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/dprint-dev.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const dprintPackage = {
+export const dprintdevPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const dprintPackage = {
    */
   description: 'Pluggable and configurable code formatting platform written in Rust.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/dprint.dev/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://dprint.dev/' as const,
+  githubUrl: 'https://github.com/dprint/dprint' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install dprint' as const,
+  installCommand: 'launchpad install dprint.dev' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +dprint.dev -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install dprint.dev' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -92,13 +90,7 @@ export const dprintPackage = {
     '0.41.0',
     '0.40.2',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) dprint -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install dprint' as const,
 }
 
-export type DprintPackage = typeof dprintPackage
+export type DprintdevPackage = typeof dprintdevPackage

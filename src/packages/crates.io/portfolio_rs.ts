@@ -6,18 +6,14 @@
  * @version `0.6.1` (13 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install portfolio_rs`
- * @name `portfolio_rs`
+ * @install `launchpad install crates.io/portfolio_rs`
+ * @homepage https://crates.io/crates/portfolio_rs
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.portfoliors
- * // Or access via domain
- * const samePkg = pantry.cratesioportfolio_rs
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.cratesioportfolio_rs
  * console.log(pkg.name)        // "portfolio_rs"
  * console.log(pkg.description) // "A command line tool for managing financial inve..."
  * console.log(pkg.programs)    // ["portfolio_rs"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/crates-io/portfolio_rs.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const portfoliorsPackage = {
+export const cratesioportfolio_rsPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +37,15 @@ export const portfoliorsPackage = {
    */
   description: 'A command line tool for managing financial investment portfolios.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/portfolio_rs/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://crates.io/crates/portfolio_rs' as const,
+  githubUrl: 'https://github.com/MarkusZoppelt/portfolio_rs' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install portfolio_rs' as const,
+  installCommand: 'launchpad install crates.io/portfolio_rs' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/portfolio_rs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install crates.io/portfolio_rs' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -76,13 +74,7 @@ export const portfoliorsPackage = {
     '0.1.9',
     '0.1.8',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) portfolio_rs -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install portfolio_rs' as const,
 }
 
-export type PortfoliorsPackage = typeof portfoliorsPackage
+export type Cratesioportfolio_rsPackage = typeof cratesioportfolio_rsPackage
