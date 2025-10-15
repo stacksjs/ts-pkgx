@@ -246,7 +246,7 @@ function generatePackageJSDoc(packageInfo: PkgxPackage, domainName: string, pack
 
   // Package title and description
   if (packageInfo.description) {
-    lines.push(` * **${packageDisplayName}** - ${packageInfo.description}`)
+    lines.push(` * **${packageDisplayName}** - ${packageInfo.description.trim()}`)
   }
   else {
     lines.push(` * **${packageDisplayName}** - pkgx package`)
