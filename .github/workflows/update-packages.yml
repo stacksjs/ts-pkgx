@@ -309,9 +309,18 @@ jobs:
             SHOULD_COMMIT="true"
           else
             # For larger numbers, calculate how many we can fit in ~72 chars total
-            # "chore: update " = 14 chars, " and X other deps" = ~15 chars, so ~43 chars for package names
+            # Reserve space for suffix first, then calculate how much space we have for package names
+            # Maximum message length considering we need to reserve space for " and X other deps"
+            MAX_MSG_LENGTH=72
             COMMIT_PREFIX="chore: update "
-            MAX_PACKAGE_CHARS=43
+            PREFIX_LENGTH=${#COMMIT_PREFIX}
+
+            # Reserve space for the longest possible suffix (e.g., " and 999 other deps")
+            # " and XXX other deps" = max 19 chars
+            SUFFIX_RESERVE=19
+
+            # Calculate available space for package names
+            MAX_PACKAGE_CHARS=$((MAX_MSG_LENGTH - PREFIX_LENGTH - SUFFIX_RESERVE))
 
             # Build package list up to the character limit
             PACKAGE_LIST=""
@@ -365,8 +374,9 @@ jobs:
             SHOULD_COMMIT="true"
           fi
 
-          # Sanitize commit message and ensure it's not too long (GitHub limit is 72 chars for subject)
-          COMMIT_MSG=$(echo "$COMMIT_MSG" | tr -d '\n\r\0' | sed 's/[[:cntrl:]]//g' | cut -c1-72)
+          # Sanitize commit message - only remove control characters, don't truncate
+          # (We already ensured proper length during message construction)
+          COMMIT_MSG=$(echo "$COMMIT_MSG" | tr -d '\n\r\0' | sed 's/[[:cntrl:]]//g')
 
           # Set outputs
           echo "commit_message=$COMMIT_MSG" >> $GITHUB_OUTPUT
