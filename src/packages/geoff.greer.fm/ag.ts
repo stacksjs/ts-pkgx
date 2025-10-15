@@ -1,24 +1,20 @@
 /**
- * **ag** - A code-searching tool similar to ack, but faster.
+ * **The Silver Searcher** - A code-searching tool similar to ack, but faster.
  *
  * @domain `geoff.greer.fm/ag`
  * @programs `ag`
  * @version `2.2.0` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install ag`
- * @aliases `ag`
+ * @install `launchpad install geoff.greer.fm/ag`
+ * @homepage http://geoff.greer.fm/ag/
  * @dependencies `pcre.org^8`, `tukaani.org/xz^5.4.5`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access via alias (recommended)
- * const pkg = pantry.ag
- * // Or access via domain
- * const samePkg = pantry.geoffgreerfmag
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.geoffgreerfmag
  * console.log(pkg.name)        // "The Silver Searcher"
  * console.log(pkg.description) // "A code-searching tool similar to ack, but faster."
  * console.log(pkg.programs)    // ["ag"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/geoff-greer-fm/ag.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const agPackage = {
+export const geoffgreerfmagPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const agPackage = {
    */
   description: 'A code-searching tool similar to ack, but faster.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/geoff.greer.fm/ag/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'http://geoff.greer.fm/ag/' as const,
+  githubUrl: 'https://github.com/ggreer/the_silver_searcher' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install ag' as const,
+  installCommand: 'launchpad install geoff.greer.fm/ag' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +geoff.greer.fm/ag -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install geoff.greer.fm/ag' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -72,15 +70,7 @@ export const agPackage = {
   versions: [
     '2.2.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
-  aliases: [
-    'ag',
-  ] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) ag -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install ag' as const,
+  aliases: [] as const,
 }
 
-export type AgPackage = typeof agPackage
+export type GeoffgreerfmagPackage = typeof geoffgreerfmagPackage

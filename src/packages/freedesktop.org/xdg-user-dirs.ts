@@ -6,19 +6,14 @@
  * @version `0.19.0` (2 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install xdg-user-dir`
- * @name `xdg-user-dir`
+ * @install `launchpad install freedesktop.org/xdg-user-dirs`
  * @dependencies `gnu.org/gettext^0.21`, `gnu.org/libiconv^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.xdguserdir
- * // Or access via domain
- * const samePkg = pantry.freedesktoporgxdguserdirs
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.freedesktoporgxdguserdirs
  * console.log(pkg.name)        // "xdg-user-dir"
  * console.log(pkg.programs)    // ["xdg-user-dir", "xdg-user-dirs-update"]
  * console.log(pkg.versions[0]) // "0.19.0" (latest)
@@ -27,7 +22,7 @@
  * @see https://ts-pkgx.netlify.app/packages/freedesktop-org/xdg-user-dirs.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const xdguserdirPackage = {
+export const freedesktoporgxdguserdirsPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +37,14 @@ export const xdguserdirPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/xdg-user-dirs/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install xdg-user-dir' as const,
+  installCommand: 'launchpad install freedesktop.org/xdg-user-dirs' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/xdg-user-dirs -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/xdg-user-dirs' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -73,13 +70,7 @@ export const xdguserdirPackage = {
     '0.19.0',
     '0.18.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/xdg-user-dirs -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install xdg-user-dir' as const,
 }
 
-export type XdguserdirPackage = typeof xdguserdirPackage
+export type FreedesktoporgxdguserdirsPackage = typeof freedesktoporgxdguserdirsPackage

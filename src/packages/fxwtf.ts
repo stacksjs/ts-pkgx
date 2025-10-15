@@ -6,18 +6,15 @@
  * @version `39.1.0` (27 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install fx`
- * @name `fx`
+ * @install `launchpad install fx.wtf`
+ * @homepage https://fx.wtf
+ * @dependencies `go.dev@^1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.fx
- * // Or access via domain
- * const samePkg = pantry.fxwtf
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.fxwtf
  * console.log(pkg.name)        // "fx"
  * console.log(pkg.description) // "Terminal JSON viewer & processor"
  * console.log(pkg.programs)    // ["fx"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fx-wtf.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const fxPackage = {
+export const fxwtfPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const fxPackage = {
    */
   description: 'Terminal JSON viewer & processor' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fx.wtf/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://fx.wtf' as const,
+  githubUrl: 'https://github.com/antonmedv/fx' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install fx' as const,
+  installCommand: 'launchpad install fx.wtf' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fx.wtf -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fx.wtf' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const fxPackage = {
     'fx',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -90,13 +95,7 @@ export const fxPackage = {
     '30.0.0',
     '24.1.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fx -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install fx' as const,
 }
 
-export type FxPackage = typeof fxPackage
+export type FxwtfPackage = typeof fxwtfPackage

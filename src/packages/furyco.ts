@@ -6,18 +6,15 @@
  * @version `0.23.0` (3 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install fury`
- * @name `fury`
+ * @install `launchpad install fury.co`
+ * @homepage https://fury.co/guide/cli
+ * @dependencies `go.dev@^1.21`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.fury
- * // Or access via domain
- * const samePkg = pantry.furyco
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.furyco
  * console.log(pkg.name)        // "fury"
  * console.log(pkg.description) // "Gemfury CLI"
  * console.log(pkg.programs)    // ["fury"]
@@ -27,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fury-co.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const furyPackage = {
+export const furycoPackage = {
   /**
    * The display name of this package.
    */
@@ -41,13 +38,15 @@ export const furyPackage = {
    */
   description: 'Gemfury CLI' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fury.co/package.yml' as const,
-  homepageUrl: '' as const,
+  homepageUrl: 'https://fury.co/guide/cli' as const,
   githubUrl: 'https://github.com/gemfury/cli' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install fury' as const,
+  installCommand: 'launchpad install fury.co' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fury.co -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fury.co' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +55,13 @@ export const furyPackage = {
     'fury',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.21',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -66,13 +71,7 @@ export const furyPackage = {
     '0.22.0',
     '0.21.0',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) fury -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install fury' as const,
 }
 
-export type FuryPackage = typeof furyPackage
+export type FurycoPackage = typeof furycoPackage

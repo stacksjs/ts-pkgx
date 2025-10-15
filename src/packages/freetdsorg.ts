@@ -1,5 +1,5 @@
 /**
- * **freetds.org** - Libraries to talk to Microsoft SQL Server and Sybase databases
+ * **freetds** - Libraries to talk to Microsoft SQL Server and Sybase databases
  *
  * @domain `freetds.org`
  * @programs `bsqldb`, `bsqlodbc`, `datacopy`, `defncopy`, `fisql`, ... (+4 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install freetds.org`
+ * @homepage https://www.freetds.org/
  * @dependencies `openssl.org^1.1`, `unixodbc.org`, `kerberos.org`, ... (+1 more)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.freetdsorg
- * console.log(pkg.name)        // "freetds.org"
+ * console.log(pkg.name)        // "freetds"
  * console.log(pkg.description) // "Libraries to talk to Microsoft SQL Server and S..."
  * console.log(pkg.programs)    // ["bsqldb", "bsqlodbc", ...]
  * console.log(pkg.versions[0]) // "1.5.6" (latest)
@@ -27,7 +28,7 @@ export const freetdsorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'freetds.org' as const,
+  name: 'freetds' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const freetdsorgPackage = {
    */
   description: 'Libraries to talk to Microsoft SQL Server and Sybase databases' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/freetds.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.freetds.org/' as const,
+  githubUrl: 'https://github.com/FreeTDS/freetds' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install freetds.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freetds.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freetds.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -112,8 +115,6 @@ export const freetdsorgPackage = {
     '1.3.18',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freetds.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install freetds.org' as const,
 }
 
 export type FreetdsorgPackage = typeof freetdsorgPackage

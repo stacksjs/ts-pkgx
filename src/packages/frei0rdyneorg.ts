@@ -1,18 +1,19 @@
 /**
- * **frei0r.dyne.org** - pkgx package
+ * **frei0r.dyne** - pkgx package
  *
  * @domain `frei0r.dyne.org`
  * @version `1.8.0` (1 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install frei0r.dyne.org`
+ * @dependencies `cmake.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.frei0rdyneorg
- * console.log(pkg.name)        // "frei0r.dyne.org"
+ * console.log(pkg.name)        // "frei0r.dyne"
  * console.log(pkg.versions[0]) // "1.8.0" (latest)
  * ```
  *
@@ -23,7 +24,7 @@ export const frei0rdyneorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'frei0r.dyne.org' as const,
+  name: 'frei0r.dyne' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -34,15 +35,23 @@ export const frei0rdyneorgPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/frei0r.dyne.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install frei0r.dyne.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +frei0r.dyne.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install frei0r.dyne.org' as const,
   programs: [] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'cmake.org',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -51,8 +60,6 @@ export const frei0rdyneorgPackage = {
     '1.8.0',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +frei0r.dyne.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install frei0r.dyne.org' as const,
 }
 
 export type Frei0rdyneorgPackage = typeof frei0rdyneorgPackage

@@ -6,18 +6,14 @@
  * @version `1.9.3` (5 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install grpcurl`
- * @name `grpcurl`
+ * @install `launchpad install fullstory.com/grpcurl`
+ * @dependencies `go.dev@^1.19`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.grpcurl
- * // Or access via domain
- * const samePkg = pantry.fullstorycomgrpcurl
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.fullstorycomgrpcurl
  * console.log(pkg.name)        // "grpcurl"
  * console.log(pkg.description) // "Like cURL, but for gRPC: Command-line tool for ..."
  * console.log(pkg.programs)    // ["grpcurl"]
@@ -27,7 +23,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fullstory-com/grpcurl.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const grpcurlPackage = {
+export const fullstorycomgrpcurlPackage = {
   /**
    * The display name of this package.
    */
@@ -42,12 +38,14 @@ export const grpcurlPackage = {
   description: 'Like cURL, but for gRPC: Command-line tool for interacting with gRPC servers' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fullstory.com/grpcurl/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: 'https://github.com/fullstorydev/grpcurl' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install grpcurl' as const,
+  installCommand: 'launchpad install fullstory.com/grpcurl' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fullstory.com/grpcurl -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fullstory.com/grpcurl' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -56,7 +54,13 @@ export const grpcurlPackage = {
     'grpcurl',
   ] as const,
   companions: [] as const,
-  dependencies: [] as const,
+  /**
+   * Required dependencies for this package.
+   * These will be automatically installed.
+   */
+  dependencies: [
+    'go.dev@^1.19',
+  ] as const,
   /**
    * Available versions from newest to oldest.
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
@@ -68,13 +72,7 @@ export const grpcurlPackage = {
     '1.9.0',
     '1.8.9',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) grpcurl -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install grpcurl' as const,
 }
 
-export type GrpcurlPackage = typeof grpcurlPackage
+export type FullstorycomgrpcurlPackage = typeof fullstorycomgrpcurlPackage

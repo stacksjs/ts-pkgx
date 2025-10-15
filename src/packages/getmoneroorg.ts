@@ -1,5 +1,5 @@
 /**
- * **getmonero.org** - pkgx package
+ * **getmonero** - pkgx package
  *
  * @domain `getmonero.org`
  * @version `0.18.4.3` (3 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.getmoneroorg
- * console.log(pkg.name)        // "getmonero.org"
+ * console.log(pkg.name)        // "getmonero"
  * console.log(pkg.versions[0]) // "0.18.4.3" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const getmoneroorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'getmonero.org' as const,
+  name: 'getmonero' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const getmoneroorgPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/getmonero.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install getmonero.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +getmonero.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install getmonero.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -65,8 +67,6 @@ export const getmoneroorgPackage = {
     '0.18.4.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +getmonero.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install getmonero.org' as const,
 }
 
 export type GetmoneroorgPackage = typeof getmoneroorgPackage

@@ -6,19 +6,15 @@
  * @version `0.70.0` (82 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install forc`
- * @name `forc`
+ * @install `launchpad install fuellabs.github.io/sway`
+ * @homepage https://docs.fuel.network/docs/sway/
  * @dependencies `zlib.net^1`, `openssl.org^1.1`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.forc
- * // Or access via domain
- * const samePkg = pantry.fuellabsgithubiosway
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.fuellabsgithubiosway
  * console.log(pkg.name)        // "forc"
  * console.log(pkg.description) // "🌴 Empowering everyone to build reliable and ef..."
  * console.log(pkg.programs)    // ["forc"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fuellabs-github-io/sway.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const forcPackage = {
+export const fuellabsgithubioswayPackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const forcPackage = {
    */
   description: '🌴 Empowering everyone to build reliable and efficient smart contracts.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fuellabs.github.io/sway/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://docs.fuel.network/docs/sway/' as const,
+  githubUrl: 'https://github.com/FuelLabs/sway' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install forc' as const,
+  installCommand: 'launchpad install fuellabs.github.io/sway' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fuellabs.github.io/sway -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fuellabs.github.io/sway' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -153,13 +151,7 @@ export const forcPackage = {
     '0.37.2',
     '0.35.5',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) forc -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install forc' as const,
 }
 
-export type ForcPackage = typeof forcPackage
+export type FuellabsgithubioswayPackage = typeof fuellabsgithubioswayPackage

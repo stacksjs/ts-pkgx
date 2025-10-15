@@ -1,5 +1,5 @@
 /**
- * **freetype.org** - pkgx package
+ * **freetype** - pkgx package
  *
  * @domain `freetype.org`
  * @version `2.14.1` (6 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.freetypeorg
- * console.log(pkg.name)        // "freetype.org"
+ * console.log(pkg.name)        // "freetype"
  * console.log(pkg.versions[0]) // "2.14.1" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const freetypeorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'freetype.org' as const,
+  name: 'freetype' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const freetypeorgPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/freetype.org/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install freetype.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freetype.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freetype.org' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -65,8 +67,6 @@ export const freetypeorgPackage = {
     '2.12.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freetype.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install freetype.org' as const,
 }
 
 export type FreetypeorgPackage = typeof freetypeorgPackage

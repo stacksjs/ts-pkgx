@@ -1,5 +1,5 @@
 /**
- * **gdal.org** - GDAL is an open source MIT licensed translator library for raster and vector geospatial data formats.
+ * **gdal** - GDAL is an open source MIT licensed translator library for raster and vector geospatial data formats.
  *
  * @domain `gdal.org`
  * @programs `gdaladdo`, `gdalbuildvrt`, `gdal-config`, `gdal_contour`, `gdal_create`, ... (+23 more)
@@ -7,6 +7,7 @@
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gdal.org`
+ * @homepage https://www.gdal.org/
  * @dependencies `apache.org/arrow@19`, `heasarc.gsfc.nasa.gov/cfitsio`, `epsilon-project.sourceforge.io`, ... (+42 more) (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -14,7 +15,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.gdalorg
- * console.log(pkg.name)        // "gdal.org"
+ * console.log(pkg.name)        // "gdal"
  * console.log(pkg.description) // "GDAL is an open source MIT licensed translator ..."
  * console.log(pkg.programs)    // ["gdaladdo", "gdalbuildvrt", ...]
  * console.log(pkg.versions[0]) // "3.11.4" (latest)
@@ -27,7 +28,7 @@ export const gdalorgPackage = {
   /**
    * The display name of this package.
    */
-  name: 'gdal.org' as const,
+  name: 'gdal' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -37,13 +38,15 @@ export const gdalorgPackage = {
    */
   description: 'GDAL is an open source MIT licensed translator library for raster and vector geospatial data formats.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gdal.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://www.gdal.org/' as const,
+  githubUrl: 'https://github.com/OSGeo/gdal' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install gdal.org' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gdal.org -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install gdal.org' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -159,8 +162,6 @@ export const gdalorgPackage = {
     '3.7.2',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gdal.org -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install gdal.org' as const,
 }
 
 export type GdalorgPackage = typeof gdalorgPackage

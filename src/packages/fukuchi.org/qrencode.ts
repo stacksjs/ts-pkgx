@@ -6,19 +6,15 @@
  * @version `4.1.1` (1 versions available)
  * @versions From newest version to oldest.
  *
- * @install `launchpad install qrencode`
- * @name `qrencode`
+ * @install `launchpad install fukuchi.org/qrencode`
+ * @homepage https://fukuchi.org/works/qrencode/index.html.en
  * @dependencies `libpng.org`
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
- * // Access the package
- * const pkg = pantry.qrencode
- * // Or access via domain
- * const samePkg = pantry.fukuchiorgqrencode
- * console.log(pkg === samePkg) // true
+ * const pkg = pantry.fukuchiorgqrencode
  * console.log(pkg.name)        // "qrencode"
  * console.log(pkg.description) // "A fast and compact QR Code encoding library"
  * console.log(pkg.programs)    // ["qrencode"]
@@ -28,7 +24,7 @@
  * @see https://ts-pkgx.netlify.app/packages/fukuchi-org/qrencode.md
  * @see https://ts-pkgx.netlify.app/usage
  */
-export const qrencodePackage = {
+export const fukuchiorgqrencodePackage = {
   /**
    * The display name of this package.
    */
@@ -42,13 +38,15 @@ export const qrencodePackage = {
    */
   description: 'A fast and compact QR Code encoding library' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/fukuchi.org/qrencode/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  homepageUrl: 'https://fukuchi.org/works/qrencode/index.html.en' as const,
+  githubUrl: 'https://github.com/fukuchi/libqrencode' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
-  installCommand: 'launchpad install qrencode' as const,
+  installCommand: 'launchpad install fukuchi.org/qrencode' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +fukuchi.org/qrencode -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install fukuchi.org/qrencode' as const,
   /**
    * Executable programs provided by this package.
    * These can be run after installation.
@@ -71,13 +69,7 @@ export const qrencodePackage = {
   versions: [
     '4.1.1',
   ] as const,
-  /**
-   * Alternative names for this package.
-   * You can use any of these names to access the package.
-   */
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) qrencode -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install qrencode' as const,
 }
 
-export type QrencodePackage = typeof qrencodePackage
+export type FukuchiorgqrencodePackage = typeof fukuchiorgqrencodePackage

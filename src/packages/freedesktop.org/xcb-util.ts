@@ -1,5 +1,5 @@
 /**
- * **freedesktop.org/xcb-util** - pkgx package
+ * **xcb-util** - pkgx package
  *
  * @domain `freedesktop.org/xcb-util`
  * @version `0.4.1` (1 versions available)
@@ -13,7 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.freedesktoporgxcbutil
- * console.log(pkg.name)        // "freedesktop.org/xcb-util"
+ * console.log(pkg.name)        // "xcb-util"
  * console.log(pkg.versions[0]) // "0.4.1" (latest)
  * ```
  *
@@ -24,7 +24,7 @@ export const freedesktoporgxcbutilPackage = {
   /**
    * The display name of this package.
    */
-  name: 'freedesktop.org/xcb-util' as const,
+  name: 'xcb-util' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,12 +35,14 @@ export const freedesktoporgxcbutilPackage = {
   description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/freedesktop.org/xcb-util/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/pkgxdev/pantry/' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
    */
   installCommand: 'launchpad install freedesktop.org/xcb-util' as const,
+  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/xcb-util -- $SHELL -i' as const,
+  launchpadInstallCommand: 'launchpad install freedesktop.org/xcb-util' as const,
   programs: [] as const,
   companions: [] as const,
   /**
@@ -58,8 +60,6 @@ export const freedesktoporgxcbutilPackage = {
     '0.4.1',
   ] as const,
   aliases: [] as const,
-  pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +freedesktop.org/xcb-util -- $SHELL -i' as const,
-  launchpadInstallCommand: 'launchpad install freedesktop.org/xcb-util' as const,
 }
 
 export type FreedesktoporgxcbutilPackage = typeof freedesktoporgxcbutilPackage
