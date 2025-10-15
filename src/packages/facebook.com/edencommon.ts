@@ -1,5 +1,5 @@
 /**
- * **edencommon** - Shared library for Watchman and Eden projects. 
+ * **edencommon** - Shared library for Watchman and Eden projects.
  *
  * @domain `facebook.com/edencommon`
  * @version `2025.9.8.0` (110 versions available)

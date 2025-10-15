@@ -1,5 +1,5 @@
 /**
- * **watchman** - Watches files and records, or triggers actions, when they change. 
+ * **watchman** - Watches files and records, or triggers actions, when they change.
  *
  * @domain `facebook.com/watchman`
  * @programs `watchman`, `watchman-diag`, `watchman-make`, `watchman-wait`, `watchman-replicate-subscription`, ... (+1 more)

@@ -1,5 +1,5 @@
 /**
- * **systemd** - The systemd System and Service Manager 
+ * **systemd** - The systemd System and Service Manager
  *
  * @domain `systemd.io`
  * @programs `busctl`, `coredumpctl`, `hostnamectl`, `journalctl`, `kernel-install`, ... (+50 more)

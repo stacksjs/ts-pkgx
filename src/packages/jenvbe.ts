@@ -1,5 +1,5 @@
 /**
- * **jenv** - Manage your Java environment 
+ * **jenv** - Manage your Java environment
  *
  * @domain `jenv.be`
  * @programs `jenv`

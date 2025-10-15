@@ -1,5 +1,5 @@
 /**
- * **libusb.info** - A cross-platform library to access USB devices 
+ * **libusb.info** - A cross-platform library to access USB devices
  *
  * @domain `libusb.info`
  * @version `1.0.29` (4 versions available)

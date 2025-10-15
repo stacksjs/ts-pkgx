@@ -1,5 +1,5 @@
 /**
- * **go-passbolt-cli** - A CLI tool to interact  with Passbolt, a Open source Password Manager for Teams 
+ * **go-passbolt-cli** - A CLI tool to interact  with Passbolt, a Open source Password Manager for Teams
  *
  * @domain `github.com/passbolt/go-passbolt-cli`
  * @programs `passbolt`

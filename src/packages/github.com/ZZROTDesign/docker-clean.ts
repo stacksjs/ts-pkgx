@@ -1,5 +1,5 @@
 /**
- * **docker-clean** - A script that cleans docker containers, images, volumes, and networks. 
+ * **docker-clean** - A script that cleans docker containers, images, volumes, and networks.
  *
  * @domain `github.com/ZZROTDesign/docker-clean`
  * @programs `docker-clean`

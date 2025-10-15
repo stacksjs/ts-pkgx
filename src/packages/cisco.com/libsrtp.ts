@@ -1,5 +1,5 @@
 /**
- * **libsrtp** - Library for SRTP (Secure Realtime Transport Protocol) 
+ * **libsrtp** - Library for SRTP (Secure Realtime Transport Protocol)
  *
  * @domain `cisco.com/libsrtp`
  * @version `2.7.0` (3 versions available)

@@ -1,5 +1,5 @@
 /**
- * **tiny** - A terminal IRC client 
+ * **tiny** - A terminal IRC client
  *
  * @domain `crates.io/tiny`
  * @programs `tiny`
