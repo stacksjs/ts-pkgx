@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-10-15T23:11:22.876Z
+- **Last Updated**: 2025-10-16T00:24:45.378Z
 
 ## Table of Contents
 
@@ -77,7 +77,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[jupyter.org](./packages/jupyter.org/index.md)** () | JupyterLab computational environment. | jlpm, jupyter, jupyter-bundlerextension, ... (+21) | 4.4.9 (+55) | `pkgx jupyter` |
 | **[kaggle.com](./packages/kaggle.com/index.md)** () | Official Kaggle API | kaggle | 1.7.4.5 (+4) | `pkgx kaggle` |
 | **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.27.1 (+31) | `pkgx llm` |
-| **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.3 (+20) | `pkgx f2py` |
+| **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.4 (+21) | `pkgx f2py` |
 | **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.12.5 (+120) | `pkgx ollama` |
 | **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 2.3.0 (+291) | `pkgx openai` |
 | **[openinterpreter.com](./packages/openinterpreter.com/index.md)** () | A natural language interface for computers | interpreter | 0.4.0 (+21) | `pkgx open-interpreter` |
@@ -369,7 +369,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[aws.amazon.com/sam](./packages/aws.amazon.com/sam/index.md)** () | CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM | sam | 1.145.0 (+35) | `pkgx sam` |
+| **[aws.amazon.com/sam](./packages/aws.amazon.com/sam/index.md)** () | CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM | sam | 1.145.1 (+36) | `pkgx sam` |
 | **[fly.io](./packages/fly.io/index.md)** () | Command line tools for fly.io services | fly, flyctl | 0.3.195 (+448) | `pkgx fly` |
 | **[heroku.com](./packages/heroku.com/index.md)** () | CLI for Heroku | heroku | 10.13.2 (+37) | `pkgx heroku` |
 | **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.9.2 (+28) | `pkgx localstack` |
@@ -450,7 +450,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
 | **[jupyter.org](./packages/jupyter.org/index.md)** () | JupyterLab computational environment. | jlpm, jupyter, jupyter-bundlerextension, ... (+21) | 4.4.9 (+55) | `pkgx jupyter` |
-| **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.3 (+20) | `pkgx f2py` |
+| **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.4 (+21) | `pkgx f2py` |
 
 ## Embedded & IoT
 
