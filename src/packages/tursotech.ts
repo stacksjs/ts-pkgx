@@ -3,7 +3,7 @@
  *
  * @domain `turso.tech`
  * @programs `turso`
- * @version `1.0.14` (93 versions available)
+ * @version `1.0.15` (94 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install turso.tech`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "turso"
  * console.log(pkg.description) // "Command line interface to Turso."
  * console.log(pkg.programs)    // ["turso"]
- * console.log(pkg.versions[0]) // "1.0.14" (latest)
+ * console.log(pkg.versions[0]) // "1.0.15" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/turso-tech.md
@@ -68,6 +68,7 @@ export const tursotechPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.0.15',
     '1.0.14',
     '1.0.13',
     '1.0.12',
