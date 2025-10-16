@@ -3,7 +3,7 @@
  *
  * @domain `github.com/kishaningithub/tf-import-gen`
  * @programs `tf-import-gen`
- * @version `0.19.0` (23 versions available)
+ * @version `0.19.1` (24 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/kishaningithub/tf-import-gen`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "tf-import-gen"
  * console.log(pkg.description) // "Tool to generate terraform import statements to..."
  * console.log(pkg.programs)    // ["tf-import-gen"]
- * console.log(pkg.versions[0]) // "0.19.0" (latest)
+ * console.log(pkg.versions[0]) // "0.19.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/kishaningithub/tf-import-gen.md
@@ -67,6 +67,7 @@ export const tfimportgenPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.19.1',
     '0.19.0',
     '0.18.0',
     '0.17.0',
