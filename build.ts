@@ -1,9 +1,8 @@
 import process from 'node:process'
 import { dts } from 'bun-plugin-dtsx'
 
-// Build the main library first
-console.log('Building main library...')
-const libraryResult = await Bun.build({
+console.log('Building...')
+const result = await Bun.build({
   entrypoints: ['src/index.ts', 'bin/cli.ts'],
   outdir: './dist',
   target: 'node',
@@ -12,9 +11,9 @@ const libraryResult = await Bun.build({
   plugins: [dts()],
 })
 
-if (!libraryResult.success) {
-  console.error('Library build failed:', libraryResult.logs)
+if (!result.success) {
+  console.error('Build failed:', result.logs)
   process.exit(1)
 }
 
-console.log('Library build completed successfully!')
+console.log('Build completed successfully!')
