@@ -3,7 +3,7 @@
  *
  * @domain `github.com/jameswoolfenden/pike`
  * @programs `pike`
- * @version `0.3.81` (65 versions available)
+ * @version `0.3.82` (66 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/jameswoolfenden/pike`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "pike"
  * console.log(pkg.description) // "Pike is a tool for determining the permissions ..."
  * console.log(pkg.programs)    // ["pike"]
- * console.log(pkg.versions[0]) // "0.3.81" (latest)
+ * console.log(pkg.versions[0]) // "0.3.82" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/jameswoolfenden/pike.md
@@ -68,6 +68,7 @@ export const pikePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.3.82',
     '0.3.81',
     '0.3.80',
     '0.3.79',
