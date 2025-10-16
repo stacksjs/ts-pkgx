@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-10-16T01:38:01.876Z
+- **Last Updated**: 2025-10-16T04:10:45.452Z
 
 ## Table of Contents
 
@@ -263,7 +263,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[crates.io/eza](./packages/crates.io/eza/index.md)** () | Modern, maintained replacement for ls | eza | 0.23.4 (+85) | `pkgx eza` |
 | **[crates.io/git-delta](./packages/crates.io/git-delta/index.md)** () | A syntax-highlighting pager for git, diff, grep, and blame output | delta | 0.18.2 (+10) | `pkgx delta` |
 | **[crates.io/hyperfine](./packages/crates.io/hyperfine/index.md)** () | A command-line benchmarking tool | hyperfine | 1.19.0 (+6) | `pkgx hyperfine` |
-| **[crates.io/ripgrep](./packages/crates.io/ripgrep/index.md)** () | ripgrep recursively searches directories for a regex pattern while respecting your gitignore | rg | 14.1.1 (+6) | `pkgx rg` |
+| **[crates.io/ripgrep](./packages/crates.io/ripgrep/index.md)** () | ripgrep recursively searches directories for a regex pattern while respecting your gitignore | rg | 15.0.0 (+7) | `pkgx rg` |
 | **[crates.io/ripgrep-all](./packages/crates.io/ripgrep-all/index.md)** () | rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc. | rga, rga-fzf, rga-fzf-open, ... (+1) | 0.10.9 (+3) | `pkgx rga` |
 | **[crates.io/sd](./packages/crates.io/sd/index.md)** () | Intuitive find & replace CLI (sed alternative) | sd | 1.0.0 (+1) | `pkgx sd` |
 | **[crates.io/tokei](./packages/crates.io/tokei/index.md)** () | Program that allows you to count code, quickly | tokei | 12.1.2 (+0) | `pkgx tokei` |
