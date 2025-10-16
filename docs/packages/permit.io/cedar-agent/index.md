@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `0.2.1`, `0.2.0`, `0.1.4`, `0.1.3`
+- `0.2.2`, `0.2.1`, `0.2.0`, `0.1.4`, `0.1.3`
 
 </details>
 
-**Latest Version**: `0.2.1`
+**Latest Version**: `0.2.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +permit.io/cedar-agent@0.2.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +permit.io/cedar-agent@0.2.2 -- $SHELL -i
 ```
 
 ## Usage Examples

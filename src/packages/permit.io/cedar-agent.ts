@@ -3,7 +3,7 @@
  *
  * @domain `permit.io/cedar-agent`
  * @programs `cedar-agent`
- * @version `0.2.1` (4 versions available)
+ * @version `0.2.2` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install permit.io/cedar-agent`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "cedar-agent"
  * console.log(pkg.description) // "Cedar-agent is the easiest way to deploy and ru..."
  * console.log(pkg.programs)    // ["cedar-agent"]
- * console.log(pkg.versions[0]) // "0.2.1" (latest)
+ * console.log(pkg.versions[0]) // "0.2.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/permit-io/cedar-agent.md
@@ -60,6 +60,7 @@ export const permitiocedaragentPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.2.2',
     '0.2.1',
     '0.2.0',
     '0.1.4',
