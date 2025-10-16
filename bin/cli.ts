@@ -3,7 +3,7 @@ import type { PackageFetchOptions } from '../src/types'
 import fs from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
-import { CAC } from 'cac'
+import { CLI } from '@stacksjs/clapp'
 import { version } from '../package.json'
 import { findDependencyFiles, resolveDependencyFile } from '../src/dependency-resolver'
 import {
@@ -271,7 +271,7 @@ interface FetchOptions {
   outputJson?: boolean
 }
 
-const cli = new CAC('ts-pkgx')
+const cli = new CLI('ts-pkgx')
 
 // Force exit after a maximum timeout to prevent hung processes
 // This is a safety mechanism in case Playwright doesn't close properly

@@ -9,7 +9,7 @@
       "devDependencies": {
         "@stacksjs/docs": "^0.70.23",
         "@stacksjs/eslint-config": "^4.14.0-beta.3",
-        "better-dx": "^0.1.4",
+        "better-dx": "^0.1.5",
       },
     },
   },
@@ -774,7 +774,7 @@
 
     "baseline-browser-mapping": ["baseline-browser-mapping@2.8.16", "", { "bin": { "baseline-browser-mapping": "dist/cli.js" } }, "sha512-OMu3BGQ4E7P1ErFsIPpbJh0qvDudM/UuJeHgkAvfWe+0HFJCXh+t/l8L6fVLR55RI/UbKrVLnAXZSVwd9ysWYw=="],
 
-    "better-dx": ["better-dx@0.1.4", "", { "peerDependencies": { "@stacksjs/bumpx": "^0.2.1", "@stacksjs/bunpress": "^0.0.5", "@stacksjs/gitlint": "^0.1.5", "@stacksjs/logsmith": "^0.1.18", "@types/bun": "^1.3.0", "buddy-bot": "^0.9.8", "bun-git-hooks": "^0.3.1", "bun-plugin-dtsx": "0.9.5", "bunfig": "^0.15.0", "pickier": "^0.1.7", "typescript": "^5.9.3" }, "bin": { "better-dx": "dist/bin/cli.js", "dx": "dist/bin/cli.js" } }, "sha512-morVFuXMLi0M7UhcNldAv+IFcAeIOIzKS7TPQI6drL7hpFVa1+R+0PvDgciQ7GSi1zLgsF+Gj8zoeiVGTcLuMw=="],
+    "better-dx": ["better-dx@0.1.5", "", { "peerDependencies": { "@stacksjs/bumpx": "^0.2.2", "@stacksjs/bunpress": "^0.0.5", "@stacksjs/gitlint": "^0.1.5", "@stacksjs/logsmith": "^0.2.0", "@types/bun": "^1.3.0", "buddy-bot": "^0.9.9", "bun-git-hooks": "^0.3.1", "bun-plugin-dtsx": "0.9.5", "bunfig": "^0.15.0", "pickier": "^0.1.7", "typescript": "^5.9.3" }, "bin": { "better-dx": "dist/bin/cli.js", "dx": "dist/bin/cli.js" } }, "sha512-QXPWtyavEeQdeFfnXeCtnwryTK4dqEXajXPJ01oYGrjVSPoN/FSDVbBBYB+1CJC2IbRUoeEPUC3tDnNFGaV2ig=="],
 
     "binary-extensions": ["binary-extensions@2.3.0", "", {}, "sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw=="],
 
