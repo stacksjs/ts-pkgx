@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-10-16T23:11:27.830Z
+- **Last Updated**: 2025-10-17T01:37:44.087Z
 
 ## Table of Contents
 
@@ -78,7 +78,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[kaggle.com](./packages/kaggle.com/index.md)** () | Official Kaggle API | kaggle | 1.7.4.5 (+4) | `pkgx kaggle` |
 | **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.27.1 (+31) | `pkgx llm` |
 | **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.4 (+21) | `pkgx f2py` |
-| **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.12.5 (+120) | `pkgx ollama` |
+| **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.12.6 (+121) | `pkgx ollama` |
 | **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 2.4.0 (+292) | `pkgx openai` |
 | **[openinterpreter.com](./packages/openinterpreter.com/index.md)** () | A natural language interface for computers | interpreter | 0.4.0 (+21) | `pkgx open-interpreter` |
 
@@ -423,7 +423,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[asciidoctor.org](./packages/asciidoctor.org/index.md)** () | :gem: A fast, open source text processor and publishing toolchain, written in Ruby, for convertin... | asciidoctor | 2.0.24 (+6) | `pkgx asciidoctor` |
+| **[asciidoctor.org](./packages/asciidoctor.org/index.md)** () | :gem: A fast, open source text processor and publishing toolchain, written in Ruby, for convertin... | asciidoctor | 2.0.25 (+7) | `pkgx asciidoctor` |
 | **[maaslalani.com/slides](./packages/maaslalani.com/slides/index.md)** () | Terminal based presentation tool | slides | 0.9.0 (+0) | `pkgx slides` |
 | **[mkdocs.org](./packages/mkdocs.org/index.md)** () | Project documentation with Markdown. | mkdocs | 1.6.1 (+2) | `pkgx mkdocs` |
 | **[pandoc.org](./packages/pandoc.org/index.md)** () | Swiss-army knife of markup format conversion | pandoc | 3.8.2 (+33) | `pkgx pandoc` |

@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `2.0.24`, `2.0.23`, `2.0.22`, `2.0.21`, `2.0.20`
-- `2.0.19`, `2.0.18`
+- `2.0.25`, `2.0.24`, `2.0.23`, `2.0.22`, `2.0.21`
+- `2.0.20`, `2.0.19`, `2.0.18`
 
 </details>
 
-**Latest Version**: `2.0.24`
+**Latest Version**: `2.0.25`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +asciidoctor.org@2.0.24 -- $SHELL -i
+sh <(curl https://pkgx.sh) +asciidoctor.org@2.0.25 -- $SHELL -i
 ```
 
 ## Dependencies
