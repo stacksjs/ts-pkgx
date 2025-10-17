@@ -2,7 +2,7 @@
  * **gc** - The Boehm-Demers-Weiser conservative C/C++ Garbage Collector (bdwgc, also known as bdw-gc, boehm-gc, libgc)
  *
  * @domain `hboehm.info/gc`
- * @version `8.2.8` (7 versions available)
+ * @version `8.2.8` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install hboehm.info/gc`
@@ -58,6 +58,7 @@ export const hboehminfogcPackage = {
     '8.2.4',
     '8.0.14',
     '8.0.12',
+    '7.6.24',
     '7.6.22',
     '7.6.20',
   ] as const,

@@ -25,10 +25,10 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
 - `8.2.8`, `8.2.6`, `8.2.4`, `8.0.14`, `8.0.12`
-- `7.6.22`, `7.6.20`
+- `7.6.24`, `7.6.22`, `7.6.20`
 
 </details>
 
