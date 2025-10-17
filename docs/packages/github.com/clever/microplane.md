@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 3 versions</summary>
+<summary>Show all 4 versions</summary>
 
-- `0.0.36`, `0.0.35`, `0.0.34`
+- `0.0.37`, `0.0.36`, `0.0.35`, `0.0.34`
 
 </details>
 
-**Latest Version**: `0.0.36`
+**Latest Version**: `0.0.37`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/clever/microplane@0.0.36 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/clever/microplane@0.0.37 -- $SHELL -i
 ```
 
 ## Dependencies

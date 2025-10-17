@@ -3,7 +3,7 @@
  *
  * @domain `github.com/clever/microplane`
  * @programs `mp`
- * @version `0.0.36` (3 versions available)
+ * @version `0.0.37` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/clever/microplane`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "mp"
  * console.log(pkg.description) // "A CLI tool to make git changes across many repo..."
  * console.log(pkg.programs)    // ["mp"]
- * console.log(pkg.versions[0]) // "0.0.36" (latest)
+ * console.log(pkg.versions[0]) // "0.0.37" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/clever/microplane.md
@@ -75,6 +75,7 @@ export const microplanePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.0.37',
     '0.0.36',
     '0.0.35',
     '0.0.34',
