@@ -2,7 +2,7 @@
  * **codex** - pkgx package
  *
  * @domain `openai.com/codex`
- * @version `0.46.0` (10 versions available)
+ * @version `0.47.0` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install openai.com/codex`
@@ -14,7 +14,7 @@
  *
  * const pkg = pantry.openaicomcodex
  * console.log(pkg.name)        // "codex"
- * console.log(pkg.versions[0]) // "0.46.0" (latest)
+ * console.log(pkg.versions[0]) // "0.47.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/openai-com/codex.md
@@ -58,6 +58,7 @@ export const openaicomcodexPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.47.0',
     '0.46.0',
     '0.45.0',
     '0.44.0',
