@@ -3,7 +3,7 @@
  *
  * @domain `symfony.com/cs`
  * @programs `php-cs-fixer`
- * @version `3.88.2` (69 versions available)
+ * @version `3.89.0` (70 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install symfony.com/cs`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "php-cs-fixer"
  * console.log(pkg.description) // "A tool to automatically fix PHP Coding Standard..."
  * console.log(pkg.programs)    // ["php-cs-fixer"]
- * console.log(pkg.versions[0]) // "3.88.2" (latest)
+ * console.log(pkg.versions[0]) // "3.89.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/symfony-com/cs.md
@@ -68,6 +68,7 @@ export const symfonycomcsPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.89.0',
     '3.88.2',
     '3.88.1',
     '3.88.0',
