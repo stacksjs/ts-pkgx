@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `8.2.8`, `8.2.6`, `8.2.4`, `8.0.16`, `8.0.14`
-- `8.0.12`, `7.6.24`, `7.6.22`, `7.6.20`
+- `8.2.10`, `8.2.8`, `8.2.6`, `8.2.4`, `8.0.16`
+- `8.0.14`, `8.0.12`, `7.6.24`, `7.6.22`, `7.6.20`
 
 </details>
 
-**Latest Version**: `8.2.8`
+**Latest Version**: `8.2.10`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +hboehm.info/gc@8.2.8 -- $SHELL -i
+sh <(curl https://pkgx.sh) +hboehm.info/gc@8.2.10 -- $SHELL -i
 ```
 
 ## Usage Examples

@@ -2,7 +2,7 @@
  * **gc** - The Boehm-Demers-Weiser conservative C/C++ Garbage Collector (bdwgc, also known as bdw-gc, boehm-gc, libgc)
  *
  * @domain `hboehm.info/gc`
- * @version `8.2.8` (9 versions available)
+ * @version `8.2.10` (10 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install hboehm.info/gc`
@@ -15,7 +15,7 @@
  * const pkg = pantry.hboehminfogc
  * console.log(pkg.name)        // "gc"
  * console.log(pkg.description) // "The Boehm-Demers-Weiser conservative C/C++ Garb..."
- * console.log(pkg.versions[0]) // "8.2.8" (latest)
+ * console.log(pkg.versions[0]) // "8.2.10" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/hboehm-info/gc.md
@@ -53,6 +53,7 @@ export const hboehminfogcPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '8.2.10',
     '8.2.8',
     '8.2.6',
     '8.2.4',
