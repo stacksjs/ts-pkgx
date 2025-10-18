@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `1.0.1`, `1.0.0`, `0.21.0`, `0.20.0`, `0.19.3`
-- `0.19.2`, `0.19.0`
+- `1.0.2`, `1.0.1`, `1.0.0`, `0.21.0`, `0.20.0`
+- `0.19.3`, `0.19.2`, `0.19.0`
 
 </details>
 
-**Latest Version**: `1.0.1`
+**Latest Version**: `1.0.2`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +saerasoft.com/caesium@1.0.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +saerasoft.com/caesium@1.0.2 -- $SHELL -i
 ```
 
 ## Usage Examples
