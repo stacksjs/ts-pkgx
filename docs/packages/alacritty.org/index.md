@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `0.15.1`, `0.15.0`, `0.14.0`, `0.13.2`
+- `0.16.0`, `0.15.1`, `0.15.0`, `0.14.0`, `0.13.2`
 
 </details>
 
-**Latest Version**: `0.15.1`
+**Latest Version**: `0.16.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +alacritty.org@0.15.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +alacritty.org@0.16.0 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -3,7 +3,7 @@
  *
  * @domain `alacritty.org`
  * @programs `alacritty`
- * @version `0.15.1` (4 versions available)
+ * @version `0.16.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install alacritty.org`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "alacritty"
  * console.log(pkg.description) // "A cross-platform, OpenGL terminal emulator."
  * console.log(pkg.programs)    // ["alacritty"]
- * console.log(pkg.versions[0]) // "0.15.1" (latest)
+ * console.log(pkg.versions[0]) // "0.16.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/alacritty-org.md
@@ -70,6 +70,7 @@ export const alacrittyorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.16.0',
     '0.15.1',
     '0.15.0',
     '0.14.0',
