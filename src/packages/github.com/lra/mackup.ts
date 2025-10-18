@@ -3,7 +3,7 @@
  *
  * @domain `github.com/lra/mackup`
  * @programs `mackup`
- * @version `0.8.43` (8 versions available)
+ * @version `0.9.0` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/lra/mackup`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "mackup"
  * console.log(pkg.description) // "Keep your application settings in sync (OS X/Li..."
  * console.log(pkg.programs)    // ["mackup"]
- * console.log(pkg.versions[0]) // "0.8.43" (latest)
+ * console.log(pkg.versions[0]) // "0.9.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/lra/mackup.md
@@ -67,6 +67,7 @@ export const mackupPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.9.0',
     '0.8.43',
     '0.8.42',
     '0.8.41',
