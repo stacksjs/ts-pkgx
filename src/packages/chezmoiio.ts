@@ -3,7 +3,7 @@
  *
  * @domain `chezmoi.io`
  * @programs `chezmoi`
- * @version `2.66.0` (84 versions available)
+ * @version `2.66.1` (85 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install chezmoi.io`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "chezmoi"
  * console.log(pkg.description) // "Manage your dotfiles across multiple diverse ma..."
  * console.log(pkg.programs)    // ["chezmoi"]
- * console.log(pkg.versions[0]) // "2.66.0" (latest)
+ * console.log(pkg.versions[0]) // "2.66.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/chezmoi-io.md
@@ -71,6 +71,7 @@ export const chezmoiioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.66.1',
     '2.66.0',
     '2.65.2',
     '2.65.1',
