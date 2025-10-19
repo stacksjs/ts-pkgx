@@ -3,7 +3,7 @@
  *
  * @domain `fuellabs.github.io/sway`
  * @programs `forc`
- * @version `0.70.0` (82 versions available)
+ * @version `0.70.1` (83 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install fuellabs.github.io/sway`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "forc"
  * console.log(pkg.description) // "🌴 Empowering everyone to build reliable and ef..."
  * console.log(pkg.programs)    // ["forc"]
- * console.log(pkg.versions[0]) // "0.70.0" (latest)
+ * console.log(pkg.versions[0]) // "0.70.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/fuellabs-github-io/sway.md
@@ -77,6 +77,7 @@ export const fuellabsgithubioswayPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.70.1',
     '0.70.0',
     '0.69.6',
     '0.69.5',
