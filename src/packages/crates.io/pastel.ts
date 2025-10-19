@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/pastel`
  * @programs `pastel`
- * @version `0.10.0` (1 versions available)
+ * @version `0.11.0` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/pastel`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "pastel"
  * console.log(pkg.description) // "A command-line tool to generate, analyze, conve..."
  * console.log(pkg.programs)    // ["pastel"]
- * console.log(pkg.versions[0]) // "0.10.0" (latest)
+ * console.log(pkg.versions[0]) // "0.11.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/pastel.md
@@ -60,6 +60,7 @@ export const cratesiopastelPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.11.0',
     '0.10.0',
   ] as const,
   aliases: [] as const,
