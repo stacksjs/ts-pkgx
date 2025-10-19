@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/bat`
  * @programs `bat`
- * @version `0.25.0` (4 versions available)
+ * @version `0.26.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/bat`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "bat"
  * console.log(pkg.description) // "Clone of cat(1) with syntax highlighting and Gi..."
  * console.log(pkg.programs)    // ["bat"]
- * console.log(pkg.versions[0]) // "0.25.0" (latest)
+ * console.log(pkg.versions[0]) // "0.26.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/bat.md
@@ -68,6 +68,7 @@ export const cratesiobatPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.26.0',
     '0.25.0',
     '0.24.0',
     '0.23.0',

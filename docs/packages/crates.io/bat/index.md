@@ -25,19 +25,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `0.25.0`, `0.24.0`, `0.23.0`, `0.22.1`
+- `0.26.0`, `0.25.0`, `0.24.0`, `0.23.0`, `0.22.1`
 
 </details>
 
-**Latest Version**: `0.25.0`
+**Latest Version**: `0.26.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +crates.io/bat@0.25.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +crates.io/bat@0.26.0 -- $SHELL -i
 ```
 
 ## Dependencies
