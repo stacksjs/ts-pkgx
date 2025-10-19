@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `0.9.0`, `0.8.43`, `0.8.42`, `0.8.41`, `0.8.40`
-- `0.8.39`, `0.8.38`, `0.8.37`, `0.8.36`
+- `0.9.1`, `0.9.0`, `0.8.43`, `0.8.42`, `0.8.41`
+- `0.8.40`, `0.8.39`, `0.8.38`, `0.8.37`, `0.8.36`
 
 </details>
 
-**Latest Version**: `0.9.0`
+**Latest Version**: `0.9.1`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/lra/mackup@0.9.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/lra/mackup@0.9.1 -- $SHELL -i
 ```
 
 ## Dependencies

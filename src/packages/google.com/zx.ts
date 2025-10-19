@@ -3,7 +3,7 @@
  *
  * @domain `google.com/zx`
  * @programs `zx`
- * @version `8.8.4` (42 versions available)
+ * @version `8.8.5` (43 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install google.com/zx`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "zx"
  * console.log(pkg.description) // "A tool for writing better scripts"
  * console.log(pkg.programs)    // ["zx"]
- * console.log(pkg.versions[0]) // "8.8.4" (latest)
+ * console.log(pkg.versions[0]) // "8.8.5" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/google-com/zx.md
@@ -76,6 +76,7 @@ export const googlecomzxPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '8.8.5',
     '8.8.4',
     '8.8.3',
     '8.8.2',

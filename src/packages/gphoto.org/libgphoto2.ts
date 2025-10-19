@@ -3,7 +3,7 @@
  *
  * @domain `gphoto.org/libgphoto2`
  * @programs `gphoto2-config`, `gphoto2-port-config`
- * @version `2.5.32` (2 versions available)
+ * @version `2.5.33` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gphoto.org/libgphoto2`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "gphoto2"
  * console.log(pkg.description) // "The libgphoto2 camera access and control library."
  * console.log(pkg.programs)    // ["gphoto2-config", "gphoto2-port-config"]
- * console.log(pkg.versions[0]) // "2.5.32" (latest)
+ * console.log(pkg.versions[0]) // "2.5.33" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/gphoto-org/libgphoto2.md
@@ -84,6 +84,7 @@ export const gphotoorglibgphoto2Package = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.5.33',
     '2.5.32',
     '2.5.31',
   ] as const,
