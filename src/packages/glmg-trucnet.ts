@@ -2,7 +2,7 @@
  * **glm.g-truc** - OpenGL Mathematics (GLM)
  *
  * @domain `glm.g-truc.net`
- * @version `1.0.1` (3 versions available)
+ * @version `1.0.2` (4 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install glm.g-truc.net`
@@ -16,7 +16,7 @@
  * const pkg = pantry.glmgtrucnet
  * console.log(pkg.name)        // "glm.g-truc"
  * console.log(pkg.description) // "OpenGL Mathematics (GLM)"
- * console.log(pkg.versions[0]) // "1.0.1" (latest)
+ * console.log(pkg.versions[0]) // "1.0.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/glm-g-truc-net.md
@@ -60,6 +60,7 @@ export const glmgtrucnetPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.0.2',
     '1.0.1',
     '1.0.0',
     '0.9.9.8',

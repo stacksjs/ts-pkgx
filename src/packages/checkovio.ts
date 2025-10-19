@@ -3,7 +3,7 @@
  *
  * @domain `checkov.io`
  * @programs `checkov`
- * @version `3.2.484` (510 versions available)
+ * @version `3.2.484` (511 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install checkov.io`
@@ -77,6 +77,7 @@ export const checkovioPackage = {
    */
   versions: [
     '3.2.484',
+    '3.2.483',
     '3.2.482',
     '3.2.477',
     '3.2.476',

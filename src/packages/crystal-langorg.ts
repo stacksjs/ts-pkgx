@@ -3,7 +3,7 @@
  *
  * @domain `crystal-lang.org`
  * @programs `crystal`
- * @version `1.18.1` (22 versions available)
+ * @version `1.18.1` (23 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crystal-lang.org`
@@ -85,6 +85,7 @@ export const crystallangorgPackage = {
    */
   versions: [
     '1.18.1',
+    '1.18.0',
     '1.17.1',
     '1.17.0',
     '1.16.3',
