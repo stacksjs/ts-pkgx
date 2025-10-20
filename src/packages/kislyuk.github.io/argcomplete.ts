@@ -3,7 +3,7 @@
  *
  * @domain `kislyuk.github.io/argcomplete`
  * @programs `activate-global-python-argcomplete`, `register-python-argcomplete`, `python-argcomplete-check-easy-install-script`
- * @version `3.6.2` (10 versions available)
+ * @version `3.6.3` (11 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kislyuk.github.io/argcomplete`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "argcomplete"
  * console.log(pkg.description) // "Python and tab completion, better together."
  * console.log(pkg.programs)    // ["activate-global-python-argcomplete", "register-python-argcomplete", ...]
- * console.log(pkg.versions[0]) // "3.6.2" (latest)
+ * console.log(pkg.versions[0]) // "3.6.3" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kislyuk-github-io/argcomplete.md
@@ -77,6 +77,7 @@ export const kislyukgithubioargcompletePackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.6.3',
     '3.6.2',
     '3.6.1',
     '3.6.0',
