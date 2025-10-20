@@ -3,7 +3,7 @@
  *
  * @domain `npmjs.com/pake-cli`
  * @programs `pake`
- * @version `3.4.0` (11 versions available)
+ * @version `3.4.2` (12 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install npmjs.com/pake-cli`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "pake"
  * console.log(pkg.description) // "🤱🏻 Turn any webpage into a desktop app with R..."
  * console.log(pkg.programs)    // ["pake"]
- * console.log(pkg.versions[0]) // "3.4.0" (latest)
+ * console.log(pkg.versions[0]) // "3.4.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/npmjs-com/pake-cli.md
@@ -81,6 +81,7 @@ export const npmjscompakecliPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.4.2',
     '3.4.0',
     '3.3.5',
     '3.2.16',
