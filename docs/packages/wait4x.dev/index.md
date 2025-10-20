@@ -25,20 +25,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 10 versions</summary>
+<summary>Show all 11 versions</summary>
 
-- `3.5.1`, `3.5.0`, `3.4.0`, `3.3.1`, `3.3.0`
-- `3.2.0`, `3.1.0`, `3.0.0`, `2.14.3`, `2.14.2`
+- `3.6.0`, `3.5.1`, `3.5.0`, `3.4.0`, `3.3.1`
+- `3.3.0`, `3.2.0`, `3.1.0`, `3.0.0`, `2.14.3`
+- `2.14.2`
 
 </details>
 
-**Latest Version**: `3.5.1`
+**Latest Version**: `3.6.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +wait4x.dev@3.5.1 -- $SHELL -i
+sh <(curl https://pkgx.sh) +wait4x.dev@3.6.0 -- $SHELL -i
 ```
 
 ## Usage Examples
