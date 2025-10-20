@@ -3,7 +3,7 @@
  *
  * @domain `istio.io`
  * @programs `istioctl`
- * @version `1.27.2` (51 versions available)
+ * @version `1.27.2` (50 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install istio.io`
@@ -84,7 +84,6 @@ export const istioioPackage = {
     '1.25.1',
     '1.25.0',
     '1.24.6',
-    '1.24.5',
     '1.24.4',
     '1.24.3',
     '1.24.2',
