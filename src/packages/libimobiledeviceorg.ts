@@ -3,7 +3,7 @@
  *
  * @domain `libimobiledevice.org`
  * @programs `idevicedate`
- * @version `1.3.0` (1 versions available)
+ * @version `1.4.0` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install libimobiledevice.org`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "idevicedate"
  * console.log(pkg.description) // "A cross-platform protocol library to communicat..."
  * console.log(pkg.programs)    // ["idevicedate"]
- * console.log(pkg.versions[0]) // "1.3.0" (latest)
+ * console.log(pkg.versions[0]) // "1.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/libimobiledevice-org.md
@@ -71,6 +71,7 @@ export const libimobiledeviceorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.4.0',
     '1.3.0',
   ] as const,
   aliases: [] as const,

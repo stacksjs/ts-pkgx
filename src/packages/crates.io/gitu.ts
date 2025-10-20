@@ -1,7 +1,8 @@
 /**
- * **gitu** - pkgx package
+ * **gitu** - A TUI Git client inspired by Magit
  *
  * @domain `crates.io/gitu`
+ * @programs `gitu`
  * @version `0.38.0` (47 versions available)
  * @versions From newest version to oldest.
  *
@@ -14,6 +15,8 @@
  *
  * const pkg = pantry.cratesiogitu
  * console.log(pkg.name)        // "gitu"
+ * console.log(pkg.description) // "A TUI Git client inspired by Magit"
+ * console.log(pkg.programs)    // ["gitu"]
  * console.log(pkg.versions[0]) // "0.38.0" (latest)
  * ```
  *
@@ -32,10 +35,10 @@ export const cratesiogituPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'A TUI Git client inspired by Magit' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/crates.io/gitu/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: '' as const,
+  githubUrl: 'https://github.com/altsem/gitu' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -43,7 +46,13 @@ export const cratesiogituPackage = {
   installCommand: 'launchpad install crates.io/gitu' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +crates.io/gitu -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install crates.io/gitu' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'gitu',
+  ] as const,
   companions: [] as const,
   /**
    * Runtime dependencies for this package.

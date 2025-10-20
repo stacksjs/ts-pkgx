@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1380+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1399+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1380
+- **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-10-20T16:34:49.202Z
+- **Last Updated**: 2025-10-20T17:57:54.045Z
 
 ## Table of Contents
 
@@ -25,7 +25,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [CLI Tools & Utilities](#cli-tools-utilities) (36 packages)
 - [Networking](#networking) (10 packages)
 - [Security & Cryptography](#security-cryptography) (12 packages)
-- [Multimedia](#multimedia) (8 packages)
+- [Multimedia](#multimedia) (9 packages)
 - [Graphics Libraries](#graphics-libraries) (4 packages)
 - [Gaming & Game Development](#gaming-game-development) (1 packages)
 - [Cloud Platforms](#cloud-platforms) (8 packages)
@@ -159,7 +159,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[github.com/stern/stern](./packages/github.com/stern/stern.md)** () | ⎈ Multi pod and container log tailing for Kubernetes -- Friendly fork of https://github.com/werck... | stern | 1.33.0 (+7) | `pkgx stern` |
 | **[github.com/yannh/kubeconform](./packages/github.com/yannh/kubeconform.md)** () | A FAST Kubernetes manifests validator, with support for Custom Resources! | kubeconform | 0.7.0 (+4) | `pkgx kubeconform` |
 | **[helm.sh](./packages/helm.sh/index.md)** () | The Kubernetes Package Manager | helm | 3.19.0 (+38) | `pkgx helm` |
-| **[istio.io](./packages/istio.io/index.md)** () | Connect, secure, control, and observe services. | istioctl | 1.27.2 (+49) | `pkgx istioctl` |
+| **[istio.io](./packages/istio.io/index.md)** () | Connect, secure, control, and observe services. | istioctl | 1.27.2 (+50) | `pkgx istioctl` |
 | **[k9scli.io](./packages/k9scli.io/index.md)** () | 🐶 Kubernetes CLI To Manage Your Clusters In Style! | k9s | 0.50.16 (+61) | `pkgx k9s` |
 | **[krew.sigs.k8s.io](./packages/krew.sigs.k8s.io/index.md)** () | 📦 Find and install kubectl plugins | kubectl-krew | 0.4.5 (+1) | `pkgx kubectl-krew` |
 | **[kubebuilder.io](./packages/kubebuilder.io/index.md)** () | Kubebuilder - SDK for building Kubernetes APIs using CRDs | kubebuilder | 4.9.0 (+21) | `pkgx kubebuilder` |
@@ -330,7 +330,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Multimedia
 
-*8 packages in this category*
+*9 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -342,6 +342,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mpv.io](./packages/mpv.io/index.md)** () | Media player based on MPlayer and mplayer2 | mpv | 0.40.0 (+2) | `pkgx mpv` |
 | **[sf.net/optipng](./packages/sf.net/optipng/index.md)** () | PNG file optimizer | optipng | 7.9.1 (+2) | `pkgx optipng` |
 | **[streamlink.github.io](./packages/streamlink.github.io/index.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 7.6.0 (+21) | `pkgx streamlink` |
+| **[yt-dlp.org](./packages/yt-dlp.org/index.md)** () | A feature-rich command-line audio/video downloader | yt-dlp | 2025.10.14 (+57) | `pkgx yt-dlp` |
 
 ## Graphics Libraries
 

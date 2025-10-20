@@ -1,11 +1,13 @@
 /**
- * **re2c** - pkgx package
+ * **re2c** - Lexer generator for C, C++, D, Go, Haskell, Java, JS, OCaml, Python, Rust, V and Zig.
  *
  * @domain `re2c.org`
+ * @programs `re2c`
  * @version `4.3.0` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install re2c.org`
+ * @homepage https://re2c.org
  * @buildDependencies `python.org@^3.10` - required only when building from source
  *
  * @example
@@ -14,6 +16,8 @@
  *
  * const pkg = pantry.re2corg
  * console.log(pkg.name)        // "re2c"
+ * console.log(pkg.description) // "Lexer generator for C, C++, D, Go, Haskell, Jav..."
+ * console.log(pkg.programs)    // ["re2c"]
  * console.log(pkg.versions[0]) // "4.3.0" (latest)
  * ```
  *
@@ -32,10 +36,10 @@ export const re2corgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'Lexer generator for C, C++, D, Go, Haskell, Java, JS, OCaml, Python, Rust, V and Zig.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/re2c.org/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  homepageUrl: 'https://re2c.org' as const,
+  githubUrl: 'https://github.com/skvadrik/re2c' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -43,7 +47,13 @@ export const re2corgPackage = {
   installCommand: 'launchpad install re2c.org' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +re2c.org -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install re2c.org' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    're2c',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
   /**

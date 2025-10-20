@@ -2,6 +2,7 @@
  * **dnsmasq** - pkgx package
  *
  * @domain `thekelleys.org.uk/dnsmasq`
+ * @programs `dnsmasq`
  * @version `2.91.0` (3 versions available)
  * @versions From newest version to oldest.
  *
@@ -13,6 +14,7 @@
  *
  * const pkg = pantry.thekelleysorgukdnsmasq
  * console.log(pkg.name)        // "dnsmasq"
+ * console.log(pkg.programs)    // ["dnsmasq"]
  * console.log(pkg.versions[0]) // "2.91.0" (latest)
  * ```
  *
@@ -42,7 +44,13 @@ export const thekelleysorgukdnsmasqPackage = {
   installCommand: 'launchpad install thekelleys.org.uk/dnsmasq' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +thekelleys.org.uk/dnsmasq -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install thekelleys.org.uk/dnsmasq' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'dnsmasq',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
   buildDependencies: [] as const,

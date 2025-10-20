@@ -1,7 +1,8 @@
 /**
- * **llrt** - pkgx package
+ * **llrt** - LLRT (Low Latency Runtime) is an experimental, lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications.
  *
  * @domain `github.com/awslabs/llrt`
+ * @programs `llrt`
  * @version `0.7.0` (15 versions available)
  * @versions From newest version to oldest.
  *
@@ -14,6 +15,8 @@
  *
  * const pkg = pantry.githubcomawslabsllrt
  * console.log(pkg.name)        // "llrt"
+ * console.log(pkg.description) // "LLRT (Low Latency Runtime) is an experimental, ..."
+ * console.log(pkg.programs)    // ["llrt"]
  * console.log(pkg.versions[0]) // "0.7.0" (latest)
  * ```
  *
@@ -32,7 +35,7 @@ export const llrtPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'LLRT (Low Latency Runtime) is an experimental, lightweight JavaScript runtime designed to address the growing demand for fast and efficient Serverless applications.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/awslabs/llrt/package.yml' as const,
   homepageUrl: '' as const,
   githubUrl: 'https://github.com/awslabs/llrt' as const,
@@ -43,7 +46,13 @@ export const llrtPackage = {
   installCommand: 'launchpad install github.com/awslabs/llrt' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/awslabs/llrt -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install github.com/awslabs/llrt' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'llrt',
+  ] as const,
   companions: [] as const,
   dependencies: [] as const,
   /**

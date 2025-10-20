@@ -1,11 +1,13 @@
 /**
- * **jasper** - pkgx package
+ * **jasper** - Official Repository for the JasPer Image Coding Toolkit
  *
  * @domain `github.com/jasper-software/jasper`
+ * @programs `jasper`
  * @version `4.2.8` (14 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/jasper-software/jasper`
+ * @homepage https://ece.engr.uvic.ca/~frodo/jasper/
  * @dependencies `libjpeg-turbo.org^2`
  * @buildDependencies `cmake.org@^3` - required only when building from source
  *
@@ -15,6 +17,8 @@
  *
  * const pkg = pantry.githubcomjaspersoftwarejasper
  * console.log(pkg.name)        // "jasper"
+ * console.log(pkg.description) // "Official Repository for the JasPer Image Coding..."
+ * console.log(pkg.programs)    // ["jasper"]
  * console.log(pkg.versions[0]) // "4.2.8" (latest)
  * ```
  *
@@ -33,10 +37,10 @@ export const jasperPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'Official Repository for the JasPer Image Coding Toolkit' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/jasper-software/jasper/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  homepageUrl: 'https://ece.engr.uvic.ca/~frodo/jasper/' as const,
+  githubUrl: 'https://github.com/jasper-software/jasper' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -44,7 +48,13 @@ export const jasperPackage = {
   installCommand: 'launchpad install github.com/jasper-software/jasper' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/jasper-software/jasper -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install github.com/jasper-software/jasper' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'jasper',
+  ] as const,
   companions: [] as const,
   /**
    * Runtime dependencies for this package.
