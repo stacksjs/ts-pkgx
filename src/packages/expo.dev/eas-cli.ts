@@ -3,7 +3,7 @@
  *
  * @domain `expo.dev/eas-cli`
  * @programs `eas`
- * @version `16.24.1` (166 versions available)
+ * @version `16.24.1` (167 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install expo.dev/eas-cli`
@@ -80,6 +80,7 @@ export const expodeveascliPackage = {
   versions: [
     '16.24.1',
     '16.24.0',
+    '16.23.1',
     '16.23.0',
     '16.22.0',
     '16.21.0',

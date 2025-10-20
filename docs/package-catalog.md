@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-10-19T23:09:45.385Z
+- **Last Updated**: 2025-10-20T00:25:44.382Z
 
 ## Table of Contents
 
@@ -49,7 +49,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[crystal-lang.org](./packages/crystal-lang.org/index.md)** () | Fast and statically typed, compiled language with Ruby-like syntax | crystal | 1.18.1 (+22) | `pkgx crystal` |
 | **[dart.dev](./packages/dart.dev/index.md)** () | The Dart SDK, including the VM, JS and Wasm compilers, analysis, core libraries, and more. | dart, dartaotruntime | 3.9.4 (+42) | `pkgx dart` |
 | **[go.dev](./packages/go.dev/index.md)** () | The Go programming language | go, gofmt | 1.25.3 (+78) | `pkgx go` |
-| **[julialang.org](./packages/julialang.org/index.md)** () | The Julia Programming Language | julia | 1.12.0 (+21) | `pkgx julia` |
+| **[julialang.org](./packages/julialang.org/index.md)** () | The Julia Programming Language | julia | 1.12.1 (+22) | `pkgx julia` |
 | **[lua.org](./packages/lua.org/index.md)** () | Powerful, lightweight programming language | lua, luac | 5.4.8 (+3) | `pkgx lua` |
 | **[luajit.org](./packages/luajit.org/index.md)** () | Mirror of the LuaJIT git repository | luajit, luajit-&lbrace;&lbrace;version.marketing&rbrace;&rbrace;. | 2.1.0 (+0) | `pkgx luajit` |
 | **[nodejs.org](./packages/nodejs.org/index.md)** () | Platform built on V8 to build network applications | node | 24.10.0 (+154) | `pkgx node` |

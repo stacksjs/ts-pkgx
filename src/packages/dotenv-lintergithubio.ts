@@ -3,7 +3,7 @@
  *
  * @domain `dotenv-linter.github.io`
  * @programs `dotenv-linter`
- * @version `3.3.0` (1 versions available)
+ * @version `4.0.0` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dotenv-linter.github.io`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "dotenv-linter"
  * console.log(pkg.description) // "⚡️Lightning-fast linter for .env files. Written..."
  * console.log(pkg.programs)    // ["dotenv-linter"]
- * console.log(pkg.versions[0]) // "3.3.0" (latest)
+ * console.log(pkg.versions[0]) // "4.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/dotenv-linter-github-io.md
@@ -61,6 +61,7 @@ export const dotenvlintergithubioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.0.0',
     '3.3.0',
   ] as const,
   aliases: [] as const,
