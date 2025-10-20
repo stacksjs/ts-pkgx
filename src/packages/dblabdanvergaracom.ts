@@ -3,7 +3,7 @@
  *
  * @domain `dblab.danvergara.com`
  * @programs `dblab`
- * @version `0.34.0` (17 versions available)
+ * @version `0.34.1` (18 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dblab.danvergara.com`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "dblab"
  * console.log(pkg.description) // "The database client every command line junkie d..."
  * console.log(pkg.programs)    // ["dblab"]
- * console.log(pkg.versions[0]) // "0.34.0" (latest)
+ * console.log(pkg.versions[0]) // "0.34.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/dblab-danvergara-com.md
@@ -67,6 +67,7 @@ export const dblabdanvergaracomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.34.1',
     '0.34.0',
     '0.33.0',
     '0.32.0',

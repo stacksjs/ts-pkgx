@@ -3,7 +3,7 @@
  *
  * @domain `elixir-lang.org`
  * @programs `elixir`, `elixirc`, `iex`, `mix`
- * @version `1.19.0` (25 versions available)
+ * @version `1.19.1` (26 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install elixir-lang.org`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "elixir-lang"
  * console.log(pkg.description) // "Elixir is a dynamic, functional language for bu..."
  * console.log(pkg.programs)    // ["elixir", "elixirc", ...]
- * console.log(pkg.versions[0]) // "1.19.0" (latest)
+ * console.log(pkg.versions[0]) // "1.19.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/elixir-lang-org.md
@@ -71,6 +71,7 @@ export const elixirlangorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.19.1',
     '1.19.0',
     '1.18.4',
     '1.18.3',
