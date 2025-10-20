@@ -5161,7 +5161,7 @@ export interface Pantry {
   minizip: typeof zlibnetminizipPackage
   sshx: typeof sshxioPackage
   vamp: typeof vamppluginsorgPackage
-  zip: typeof zipPackage
+  libzip: typeof libziporgPackage
   daytona: typeof daytonaioPackage
   hugo: typeof gohugoioPackage
   yadm: typeof yadmioPackage
@@ -5442,7 +5442,7 @@ export interface Pantry {
   surreal: typeof surrealdbcomPackage
   aom: typeof aomediagooglesourcecomaomPackage
   libdrm: typeof drifreedesktoporgPackage
-  keep: typeof keephqdevPackage
+  keephq: typeof keephqdevPackage
   tldr: typeof tldrshPackage
   libcap: typeof kernelorglibcapPackage
   'linux-headers': typeof kernelorglinuxheadersPackage
@@ -5641,9 +5641,9 @@ export interface Pantry {
   'opencore-amr.sourceforge': typeof opencoreamrsourceforgeioPackage
   cpanm: typeof cpanminusPackage
   'openpmix.github': typeof openpmixgithubioPackage
-  ipfs: typeof ipfstechPackage
   'plocate.sesse': typeof plocatesessenetPackage
   unzip: typeof unzipPackage
+  zip: typeof zipPackage
   shellcheck: typeof shellchecknetPackage
   qrencode: typeof fukuchiorgqrencodePackage
   velero: typeof veleroioPackage
@@ -9391,7 +9391,7 @@ export const pantry: Pantry = {
   minizip: zlibnetminizipPackage,
   sshx: sshxioPackage,
   vamp: vamppluginsorgPackage,
-  zip: zipPackage,
+  libzip: libziporgPackage,
   daytona: daytonaioPackage,
   hugo: gohugoioPackage,
   yadm: yadmioPackage,
@@ -9672,7 +9672,7 @@ export const pantry: Pantry = {
   surreal: surrealdbcomPackage,
   aom: aomediagooglesourcecomaomPackage,
   libdrm: drifreedesktoporgPackage,
-  keep: keephqdevPackage,
+  keephq: keephqdevPackage,
   tldr: tldrshPackage,
   libcap: kernelorglibcapPackage,
   'linux-headers': kernelorglinuxheadersPackage,
@@ -9871,9 +9871,9 @@ export const pantry: Pantry = {
   'opencore-amr.sourceforge': opencoreamrsourceforgeioPackage,
   cpanm: cpanminusPackage,
   'openpmix.github': openpmixgithubioPackage,
-  ipfs: ipfstechPackage,
   'plocate.sesse': plocatesessenetPackage,
   unzip: unzipPackage,
+  zip: zipPackage,
   shellcheck: shellchecknetPackage,
   qrencode: fukuchiorgqrencodePackage,
   velero: veleroioPackage,

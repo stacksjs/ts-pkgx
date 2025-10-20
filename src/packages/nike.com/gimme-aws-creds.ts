@@ -1,8 +1,7 @@
 /**
- * **gimme-aws-creds** - A CLI that utilizes Okta IdP via SAML to acquire temporary AWS credentials
+ * **gimme-aws-creds** - pkgx package
  *
  * @domain `nike.com/gimme-aws-creds`
- * @programs `gimme-aws-creds`
  * @version `2.8.2` (4 versions available)
  * @versions From newest version to oldest.
  *
@@ -16,8 +15,6 @@
  *
  * const pkg = pantry.nikecomgimmeawscreds
  * console.log(pkg.name)        // "gimme-aws-creds"
- * console.log(pkg.description) // "A CLI that utilizes Okta IdP via SAML to acquir..."
- * console.log(pkg.programs)    // ["gimme-aws-creds"]
  * console.log(pkg.versions[0]) // "2.8.2" (latest)
  * ```
  *
@@ -36,10 +33,10 @@ export const nikecomgimmeawscredsPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'A CLI that utilizes Okta IdP via SAML to acquire temporary AWS credentials' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/nike.com/gimme-aws-creds/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/Nike-Inc/gimme-aws-creds' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -47,13 +44,7 @@ export const nikecomgimmeawscredsPackage = {
   installCommand: 'launchpad install nike.com/gimme-aws-creds' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +nike.com/gimme-aws-creds -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install nike.com/gimme-aws-creds' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'gimme-aws-creds',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Runtime dependencies for this package.

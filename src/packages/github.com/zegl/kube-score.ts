@@ -1,13 +1,11 @@
 /**
- * **kube-score** - Kubernetes object analysis with recommendations for improved reliability and security. kube-score actively prevents downtime and bugs in your Kubernetes YAML and Charts. Static code analysis for Kubernetes.
+ * **kube-score** - pkgx package
  *
  * @domain `github.com/zegl/kube-score`
- * @programs `kube-score`
  * @version `1.20.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/zegl/kube-score`
- * @homepage https://kube-score.com
  * @buildDependencies `go.dev@^1.18` - required only when building from source
  *
  * @example
@@ -16,8 +14,6 @@
  *
  * const pkg = pantry.githubcomzeglkubescore
  * console.log(pkg.name)        // "kube-score"
- * console.log(pkg.description) // "Kubernetes object analysis with recommendations..."
- * console.log(pkg.programs)    // ["kube-score"]
  * console.log(pkg.versions[0]) // "1.20.0" (latest)
  * ```
  *
@@ -36,10 +32,10 @@ export const kubescorePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Kubernetes object analysis with recommendations for improved reliability and security. kube-score actively prevents downtime and bugs in your Kubernetes YAML and Charts. Static code analysis for Kubernetes.' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/zegl/kube-score/package.yml' as const,
-  homepageUrl: 'https://kube-score.com' as const,
-  githubUrl: 'https://github.com/zegl/kube-score' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -47,13 +43,7 @@ export const kubescorePackage = {
   installCommand: 'launchpad install github.com/zegl/kube-score' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/zegl/kube-score -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install github.com/zegl/kube-score' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'kube-score',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   /**

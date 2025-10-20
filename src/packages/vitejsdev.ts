@@ -3,7 +3,7 @@
  *
  * @domain `vitejs.dev`
  * @programs `vite`
- * @version `7.1.11` (126 versions available)
+ * @version `7.1.11` (127 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install vitejs.dev`
@@ -98,6 +98,7 @@ export const vitejsdevPackage = {
     '7.0.2',
     '7.0.1',
     '7.0.0',
+    '6.4.1',
     '6.4.0',
     '6.3.7',
     '6.3.6',

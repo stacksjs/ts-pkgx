@@ -1,13 +1,11 @@
 /**
- * **talisman** - Using a pre-commit hook, Talisman validates the outgoing changeset for things that look suspicious — such as tokens, passwords, and private keys.
+ * **talisman** - pkgx package
  *
  * @domain `thoughtworks.github.io/talisman`
- * @programs `talisman`
  * @version `1.37.0` (12 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install thoughtworks.github.io/talisman`
- * @homepage https://thoughtworks.github.io/talisman/
  * @buildDependencies `go.dev@~1.24.2` - required only when building from source
  *
  * @example
@@ -16,8 +14,6 @@
  *
  * const pkg = pantry.thoughtworksgithubiotalisman
  * console.log(pkg.name)        // "talisman"
- * console.log(pkg.description) // "Using a pre-commit hook, Talisman validates the..."
- * console.log(pkg.programs)    // ["talisman"]
  * console.log(pkg.versions[0]) // "1.37.0" (latest)
  * ```
  *
@@ -36,10 +32,10 @@ export const thoughtworksgithubiotalismanPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Using a pre-commit hook, Talisman validates the outgoing changeset for things that look suspicious — such as tokens, passwords, and private keys.' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/thoughtworks.github.io/talisman/package.yml' as const,
-  homepageUrl: 'https://thoughtworks.github.io/talisman/' as const,
-  githubUrl: 'https://github.com/thoughtworks/talisman' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -47,13 +43,7 @@ export const thoughtworksgithubiotalismanPackage = {
   installCommand: 'launchpad install thoughtworks.github.io/talisman' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +thoughtworks.github.io/talisman -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install thoughtworks.github.io/talisman' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'talisman',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   /**

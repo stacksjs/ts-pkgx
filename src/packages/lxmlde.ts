@@ -1,12 +1,11 @@
 /**
- * **lxml.de** - The lxml XML toolkit for Python
+ * **lxml.de** - pkgx package
  *
  * @domain `lxml.de`
  * @version `6.0.2` (17 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install lxml.de`
- * @homepage https://lxml.de/
  * @dependencies `python.org^3.10`, `gnome.org/libxml2~2.12`, `gnome.org/libxslt^1`
  *
  * @example
@@ -15,7 +14,6 @@
  *
  * const pkg = pantry.lxmlde
  * console.log(pkg.name)        // "lxml.de"
- * console.log(pkg.description) // "The lxml XML toolkit for Python"
  * console.log(pkg.versions[0]) // "6.0.2" (latest)
  * ```
  *
@@ -34,10 +32,10 @@ export const lxmldePackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'The lxml XML toolkit for Python' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/lxml.de/package.yml' as const,
-  homepageUrl: 'https://lxml.de/' as const,
-  githubUrl: 'https://github.com/lxml/lxml' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name

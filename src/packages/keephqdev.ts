@@ -1,13 +1,11 @@
 /**
- * **keep** - The open-source AIOps and alert management platform
+ * **keephq** - pkgx package
  *
  * @domain `keephq.dev`
- * @programs `keep`
  * @version `0.0.0` (1 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install keephq.dev`
- * @homepage https://keephq.dev
  * @dependencies `python.org>=3<3.12`
  *
  * @example
@@ -15,9 +13,7 @@
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.keephqdev
- * console.log(pkg.name)        // "keep"
- * console.log(pkg.description) // "The open-source AIOps and alert management plat..."
- * console.log(pkg.programs)    // ["keep"]
+ * console.log(pkg.name)        // "keephq"
  * console.log(pkg.versions[0]) // "0.0.0" (latest)
  * ```
  *
@@ -28,7 +24,7 @@ export const keephqdevPackage = {
   /**
    * The display name of this package.
    */
-  name: 'keep' as const,
+  name: 'keephq' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -36,10 +32,10 @@ export const keephqdevPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'The open-source AIOps and alert management platform' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/keephq.dev/package.yml' as const,
-  homepageUrl: 'https://keephq.dev' as const,
-  githubUrl: 'https://github.com/keephq/keep' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -47,13 +43,7 @@ export const keephqdevPackage = {
   installCommand: 'launchpad install keephq.dev' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +keephq.dev -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install keephq.dev' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'keep',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Runtime dependencies for this package.

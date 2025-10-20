@@ -1,6 +1,6 @@
 # Multimedia
 
-*9 packages in this category*
+*8 packages in this category*
 
 Audio, video, and image processing tools.
 
@@ -83,16 +83,6 @@ Streamlink is a CLI utility which pipes video streams from various services into
 **Programs**: streamlink
 
 **Install**: `launchpad install streamlink.github.io`
-
----
-
-### [yt-dlp.org](../packages/yt-dlp.org/index.md) (yt-dlp)
-
-A feature-rich command-line audio/video downloader
-
-**Programs**: yt-dlp
-
-**Install**: `launchpad install yt-dlp.org`
 
 ---
 
