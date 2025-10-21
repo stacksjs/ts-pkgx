@@ -83,6 +83,7 @@ import { caresorgPackage } from './c-aresorg'
 import { caddyservercomPackage } from './caddyservercom'
 import { cairographicsorgpycairoPackage } from './cairographics.org/pycairo'
 import { cairographicsorgPackage } from './cairographicsorg'
+import { capnprotoorgPackage } from './capnprotoorg'
 import { capstoneengineorgPackage } from './capstone-engineorg'
 import { carapaceshPackage } from './carapacesh'
 import { caskreadthedocsioPackage } from './caskreadthedocsio'
@@ -1050,6 +1051,7 @@ import { libgeosorgPackage } from './libgeosorg'
 import { libgit2orgPackage } from './libgit2org'
 import { libimobiledeviceorglibimobiledevicegluePackage } from './libimobiledevice.org/libimobiledevice-glue'
 import { libimobiledeviceorglibplistPackage } from './libimobiledevice.org/libplist'
+import { libimobiledeviceorglibtatsuPackage } from './libimobiledevice.org/libtatsu'
 import { libimobiledeviceorglibusbmuxdPackage } from './libimobiledevice.org/libusbmuxd'
 import { libimobiledeviceorgPackage } from './libimobiledeviceorg'
 import { libislsourceforgeioPackage } from './libislsourceforgeio'
@@ -1732,6 +1734,7 @@ export interface Pantry {
 
   cairographicsorgpycairo: typeof cairographicsorgpycairoPackage
   cairographicsorg: typeof cairographicsorgPackage
+  capnprotoorg: typeof capnprotoorgPackage
   capstone_engineorg: typeof capstoneengineorgPackage
   capstoneengineorg: typeof capstoneengineorgPackage
   carapacesh: typeof carapaceshPackage
@@ -3476,6 +3479,8 @@ export interface Pantry {
   libplist: typeof libimobiledeviceorglibplistPackage
   libimobiledeviceorglibplist: typeof libimobiledeviceorglibplistPackage
 
+  libimobiledeviceorglibtatsu: typeof libimobiledeviceorglibtatsuPackage
+
   libimobiledeviceorglibusbmuxd: typeof libimobiledeviceorglibusbmuxdPackage
   libimobiledeviceorg: typeof libimobiledeviceorgPackage
   libislsourceforgeio: typeof libislsourceforgeioPackage
@@ -4345,6 +4350,7 @@ export interface Pantry {
   hwloc: typeof openmpiorghwlocPackage
   'pyqt-bundle': typeof riverbankcomputingcompyqtbuilderPackage
   sip: typeof riverbankcomputingcomsipPackage
+  libtatsu: typeof libimobiledeviceorglibtatsuPackage
   plistutil: typeof libimobiledeviceorglibplistPackage
   'libimobiledevice-glue': typeof libimobiledeviceorglibimobiledevicegluePackage
   libusbmuxd: typeof libimobiledeviceorglibusbmuxdPackage
@@ -4660,6 +4666,7 @@ export interface Pantry {
   'jenkins-lts': typeof jenkinsioPackage
   daemontools: typeof cryptodaemontoolsPackage
   reshape: typeof fabianlindforssereshapePackage
+  capnproto: typeof capnprotoorgPackage
   atlas: typeof atlasgoioPackage
   mosh: typeof moshorgPackage
   fastlane: typeof fastlanetoolsPackage
@@ -5962,6 +5969,7 @@ export const pantry: Pantry = {
 
   cairographicsorgpycairo: cairographicsorgpycairoPackage,
   cairographicsorg: cairographicsorgPackage,
+  capnprotoorg: capnprotoorgPackage,
   capstone_engineorg: capstoneengineorgPackage,
   capstoneengineorg: capstoneengineorgPackage,
   carapacesh: carapaceshPackage,
@@ -7706,6 +7714,8 @@ export const pantry: Pantry = {
   libplist: libimobiledeviceorglibplistPackage,
   libimobiledeviceorglibplist: libimobiledeviceorglibplistPackage,
 
+  libimobiledeviceorglibtatsu: libimobiledeviceorglibtatsuPackage,
+
   libimobiledeviceorglibusbmuxd: libimobiledeviceorglibusbmuxdPackage,
   libimobiledeviceorg: libimobiledeviceorgPackage,
   libislsourceforgeio: libislsourceforgeioPackage,
@@ -8575,6 +8585,7 @@ export const pantry: Pantry = {
   hwloc: openmpiorghwlocPackage,
   'pyqt-bundle': riverbankcomputingcompyqtbuilderPackage,
   sip: riverbankcomputingcomsipPackage,
+  libtatsu: libimobiledeviceorglibtatsuPackage,
   plistutil: libimobiledeviceorglibplistPackage,
   'libimobiledevice-glue': libimobiledeviceorglibimobiledevicegluePackage,
   libusbmuxd: libimobiledeviceorglibusbmuxdPackage,
@@ -8890,6 +8901,7 @@ export const pantry: Pantry = {
   'jenkins-lts': jenkinsioPackage,
   daemontools: cryptodaemontoolsPackage,
   reshape: fabianlindforssereshapePackage,
+  capnproto: capnprotoorgPackage,
   atlas: atlasgoioPackage,
   mosh: moshorgPackage,
   fastlane: fastlanetoolsPackage,

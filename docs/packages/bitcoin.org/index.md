@@ -56,6 +56,7 @@ This package depends on:
 - `libevent.org^2`
 - `zeromq.org^4`
 - `sqlite.org^3`
+- `capnproto.org^1 # since 30.0`
 - `linux:gnu.org/gcc/libstdcxx`
 
 ## Usage Examples

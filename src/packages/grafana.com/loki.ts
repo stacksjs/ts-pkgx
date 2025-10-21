@@ -8,7 +8,7 @@
  *
  * @install `launchpad install grafana.com/loki`
  * @homepage https://grafana.com/loki
- * @buildDependencies `go.dev@=1.21.8` - required only when building from source
+ * @buildDependencies `go.dev@=1.24.8`, `curl.se`, `gnu.org/patch` - required only when building from source
  *
  * @example
  * ```typescript
@@ -61,7 +61,9 @@ export const grafanacomlokiPackage = {
    * These are only required when building the package from source.
    */
   buildDependencies: [
-    'go.dev@=1.21.8',
+    'go.dev@=1.24.8',
+    'curl.se',
+    'gnu.org/patch',
   ] as const,
   /**
    * Available versions from newest to oldest.

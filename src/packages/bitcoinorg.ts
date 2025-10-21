@@ -8,7 +8,7 @@
  *
  * @install `launchpad install bitcoin.org`
  * @homepage https://bitcoincore.org/
- * @dependencies `oracle.com/berkeley-db^18`, `boost.org^1`, `libevent.org^2`, ... (+3 more) (includes OS-specific dependencies with `os:package` format)
+ * @dependencies `oracle.com/berkeley-db^18`, `boost.org^1`, `libevent.org^2`, ... (+4 more) (includes OS-specific dependencies with `os:package` format)
  * @buildDependencies `gnu.org/autoconf@^2`, `gnu.org/automake@^1`, `gnu.org/libtool@^2`, ... (+3 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
@@ -71,6 +71,7 @@ export const bitcoinorgPackage = {
     'libevent.org^2',
     'zeromq.org^4',
     'sqlite.org^3',
+    'capnproto.org^1 # since 30.0',
     'linux:gnu.org/gcc/libstdcxx',
   ] as const,
   /**

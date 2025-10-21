@@ -8,7 +8,7 @@
  *
  * @install `launchpad install libimobiledevice.org`
  * @homepage https://www.libimobiledevice.org/
- * @dependencies `libimobiledevice.org/libplist^2.4`, `gnu.org/libtasn1^4.19`, `libimobiledevice.org/libusbmuxd^2`, ... (+1 more)
+ * @dependencies `libimobiledevice.org/libplist^2.4`, `libimobiledevice.org/libtatsu^1`, `libimobiledevice.org/libimobiledevice-glue^1.3`, ... (+3 more)
  *
  * @example
  * ```typescript
@@ -61,6 +61,8 @@ export const libimobiledeviceorgPackage = {
    */
   dependencies: [
     'libimobiledevice.org/libplist^2.4',
+    'libimobiledevice.org/libtatsu^1',
+    'libimobiledevice.org/libimobiledevice-glue^1.3',
     'gnu.org/libtasn1^4.19',
     'libimobiledevice.org/libusbmuxd^2',
     'openssl.org^1.1',
