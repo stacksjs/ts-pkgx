@@ -3,7 +3,7 @@
  *
  * @domain `php.net`
  * @programs `pear`, `pecl`, `phar`, `php`, `php-cgi`, ... (+3 more)
- * @version `8.4.13` (83 versions available)
+ * @version `8.4.14` (85 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install php.net`
@@ -24,7 +24,7 @@
  * console.log(pkg.name)        // "php"
  * console.log(pkg.description) // "General-purpose scripting language"
  * console.log(pkg.programs)    // ["pear", "pecl", ...]
- * console.log(pkg.versions[0]) // "8.4.13" (latest)
+ * console.log(pkg.versions[0]) // "8.4.14" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/php-net.md
@@ -120,6 +120,7 @@ export const phpPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '8.4.14',
     '8.4.13',
     '8.4.12',
     '8.4.11',
@@ -134,6 +135,7 @@ export const phpPackage = {
     '8.4.2',
     '8.4.1',
     '8.4.0',
+    '8.3.27',
     '8.3.26',
     '8.3.25',
     '8.3.24',

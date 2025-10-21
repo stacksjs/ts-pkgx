@@ -27,19 +27,19 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 4 versions</summary>
+<summary>Show all 5 versions</summary>
 
-- `10.46.0`, `10.44.0`, `10.43.0`, `10.42.0`
+- `10.47.0`, `10.46.0`, `10.44.0`, `10.43.0`, `10.42.0`
 
 </details>
 
-**Latest Version**: `10.46.0`
+**Latest Version**: `10.47.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +pcre.org/v2@10.46.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +pcre.org/v2@10.47.0 -- $SHELL -i
 ```
 
 ## Dependencies

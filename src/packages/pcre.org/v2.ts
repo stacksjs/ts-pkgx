@@ -3,7 +3,7 @@
  *
  * @domain `pcre.org/v2`
  * @programs `pcre2-config`, `pcre2grep`, `pcre2test`
- * @version `10.46.0` (4 versions available)
+ * @version `10.47.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pcre.org/v2`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "pcre2"
  * console.log(pkg.description) // "Perl compatible regular expressions library wit..."
  * console.log(pkg.programs)    // ["pcre2-config", "pcre2grep", ...]
- * console.log(pkg.versions[0]) // "10.46.0" (latest)
+ * console.log(pkg.versions[0]) // "10.47.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pcre-org/v2.md
@@ -71,6 +71,7 @@ export const pcreorgv2Package = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '10.47.0',
     '10.46.0',
     '10.44.0',
     '10.43.0',
