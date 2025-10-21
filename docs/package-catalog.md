@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-10-21T20:11:54.633Z
+- **Last Updated**: 2025-10-21T21:09:47.582Z
 
 ## Table of Contents
 
@@ -374,7 +374,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[heroku.com](./packages/heroku.com/index.md)** () | CLI for Heroku | heroku | 10.13.2 (+37) | `pkgx heroku` |
 | **[localstack.cloud/cli](./packages/localstack.cloud/cli/index.md)** () | The LocalStack CLI packaged using pyinstaller | localstack | 4.9.2 (+28) | `pkgx localstack` |
 | **[planetscale.com](./packages/planetscale.com/index.md)** () | The CLI for PlanetScale Database | pscale | 0.259.0 (+81) | `pkgx pscale` |
-| **[railway.app](./packages/railway.app/index.md)** () | Develop and deploy code with zero configuration | railway | 4.10.0 (+60) | `pkgx railway` |
+| **[railway.app](./packages/railway.app/index.md)** () | Develop and deploy code with zero configuration | railway | 4.11.0 (+61) | `pkgx railway` |
 | **[render.com](./packages/render.com/index.md)** () | Command-line interface for Render | render | 0.1.11 (+5) | `pkgx render` |
 | **[supabase.com/cli](./packages/supabase.com/cli/index.md)** () | Supabase CLI. Manage postgres migrations, run Supabase locally, deploy edge functions. Postgres b... | supabase | 2.53.6 (+193) | `pkgx supabase` |
 
