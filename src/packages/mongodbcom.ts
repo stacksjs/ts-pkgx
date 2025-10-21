@@ -3,7 +3,7 @@
  *
  * @domain `mongodb.com`
  * @programs `install_compass`, `mongod`, `mongos`
- * @version `8.2.1` (44 versions available)
+ * @version `8.2.1` (46 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install mongodb.com`
@@ -77,6 +77,7 @@ export const mongodbcomPackage = {
     '8.1.2',
     '8.1.1',
     '8.1.0',
+    '8.0.15',
     '8.0.14',
     '8.0.13',
     '8.0.12',
@@ -94,6 +95,7 @@ export const mongodbcomPackage = {
     '8.0.0',
     '7.3.4',
     '7.3.3',
+    '7.0.25',
     '7.0.24',
     '7.0.23',
     '7.0.22',
