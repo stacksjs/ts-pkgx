@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-10-20T02:37:35.785Z
+ * Generated on 2025-10-21T02:34:42.025Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1602 total)
+ * List of all known packages (1604 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -129,6 +129,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'caddyserver.com',
   'cairographics.org',
   'cairographics.org/pycairo',
+  'capnproto.org',
   'capstone-engine.org',
   'carapace.sh',
   'cask.readthedocs.io',
@@ -1097,6 +1098,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'libimobiledevice.org',
   'libimobiledevice.org/libimobiledevice-glue',
   'libimobiledevice.org/libplist',
+  'libimobiledevice.org/libtatsu',
   'libimobiledevice.org/libusbmuxd',
   'libisl.sourceforge.io',
   'libjpeg-turbo.org',
