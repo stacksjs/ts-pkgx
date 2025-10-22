@@ -25,20 +25,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 10 versions</summary>
+<summary>Show all 11 versions</summary>
 
-- `1.14.0`, `1.13.2`, `1.13.1`, `1.13.0`, `1.12.0`
-- `1.11.0`, `1.10.0`, `1.9.8`, `1.9.7`, `1.9.6`
+- `1.15.0`, `1.14.0`, `1.13.2`, `1.13.1`, `1.13.0`
+- `1.12.0`, `1.11.0`, `1.10.0`, `1.9.8`, `1.9.7`
+- `1.9.6`
 
 </details>
 
-**Latest Version**: `1.14.0`
+**Latest Version**: `1.15.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +doxygen.nl@1.14.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +doxygen.nl@1.15.0 -- $SHELL -i
 ```
 
 ## Usage Examples

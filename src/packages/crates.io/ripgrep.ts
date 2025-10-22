@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/ripgrep`
  * @programs `rg`
- * @version `15.0.0` (8 versions available)
+ * @version `15.1.0` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/ripgrep`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "rg"
  * console.log(pkg.description) // "ripgrep recursively searches directories for a ..."
  * console.log(pkg.programs)    // ["rg"]
- * console.log(pkg.versions[0]) // "15.0.0" (latest)
+ * console.log(pkg.versions[0]) // "15.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/ripgrep.md
@@ -60,6 +60,7 @@ export const cratesioripgrepPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '15.1.0',
     '15.0.0',
     '14.1.1',
     '14.1.0',
