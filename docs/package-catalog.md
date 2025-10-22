@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-10-22T14:11:35.046Z
+- **Last Updated**: 2025-10-22T15:11:02.387Z
 
 ## Table of Contents
 
@@ -74,7 +74,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[github.com/AntonOsika/gpt-engineer](./packages/github.com/AntonOsika/gpt-engineer.md)** () | Platform to experiment with the AI Software Engineer. Terminal based. NOTE: Very different from h... | gpte, gpt-engineer | 0.3.1 (+14) | `pkgx GPT Engineer` |
 | **[github.com/nat/openplayground](./packages/github.com/nat/openplayground.md)** () | An LLM playground you can run on your laptop | openplayground | 2023.6.5 (+0) | `pkgx openplayground` |
 | **[github.com/npiv/chatblade](./packages/github.com/npiv/chatblade.md)** () | A CLI Swiss Army Knife for ChatGPT | chatblade | 0.7.0 (+14) | `pkgx chatblade` |
-| **[jupyter.org](./packages/jupyter.org/index.md)** () | JupyterLab computational environment. | jlpm, jupyter, jupyter-bundlerextension, ... (+21) | 4.4.9 (+55) | `pkgx jupyter` |
+| **[jupyter.org](./packages/jupyter.org/index.md)** () | JupyterLab computational environment. | jlpm, jupyter, jupyter-bundlerextension, ... (+21) | 4.4.10 (+56) | `pkgx jupyter` |
 | **[kaggle.com](./packages/kaggle.com/index.md)** () | Official Kaggle API | kaggle | 1.7.4.5 (+4) | `pkgx kaggle` |
 | **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.27.1 (+31) | `pkgx llm` |
 | **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.4 (+21) | `pkgx f2py` |
@@ -449,7 +449,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[jupyter.org](./packages/jupyter.org/index.md)** () | JupyterLab computational environment. | jlpm, jupyter, jupyter-bundlerextension, ... (+21) | 4.4.9 (+55) | `pkgx jupyter` |
+| **[jupyter.org](./packages/jupyter.org/index.md)** () | JupyterLab computational environment. | jlpm, jupyter, jupyter-bundlerextension, ... (+21) | 4.4.10 (+56) | `pkgx jupyter` |
 | **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.4 (+21) | `pkgx f2py` |
 
 ## Embedded & IoT
