@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/qsv`
  * @programs `qsv`
- * @version `8.1.0` (12 versions available)
+ * @version `8.1.1` (13 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/qsv`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "qsv"
  * console.log(pkg.description) // "Ultra-fast CSV data-wrangling toolkit"
  * console.log(pkg.programs)    // ["qsv"]
- * console.log(pkg.versions[0]) // "8.1.0" (latest)
+ * console.log(pkg.versions[0]) // "8.1.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/qsv.md
@@ -77,6 +77,7 @@ export const cratesioqsvPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '8.1.1',
     '8.1.0',
     '8.0.0',
     '7.1.0',
