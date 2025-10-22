@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-10-22T18:12:54.607Z
+- **Last Updated**: 2025-10-22T19:09:29.413Z
 
 ## Table of Contents
 
@@ -152,7 +152,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[cilium.io/cilium](./packages/cilium.io/cilium/index.md)** () | CLI to install, manage & troubleshoot Kubernetes clusters running Cilium | cilium | 0.18.7 (+27) | `pkgx cilium` |
+| **[cilium.io/cilium](./packages/cilium.io/cilium/index.md)** () | CLI to install, manage & troubleshoot Kubernetes clusters running Cilium | cilium | 0.18.8 (+28) | `pkgx cilium` |
 | **[cilium.io/hubble](./packages/cilium.io/hubble/index.md)** () | Hubble - Network, Service & Security Observability for Kubernetes using eBPF | hubble | 1.18.0 (+16) | `pkgx hubble` |
 | **[cloudnative-pg.io](./packages/cloudnative-pg.io/index.md)** () | CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases with... | kubectl-cnpg | 1.27.0 (+8) | `pkgx kubectl-cnpg` |
 | **[github.com/helmfile/helmfile](./packages/github.com/helmfile/helmfile.md)** () | Declaratively deploy your Kubernetes manifests, Kustomize configs, and Charts as Helm releases. G... | helmfile | 1.1.7 (+29) | `pkgx helmfile` |
