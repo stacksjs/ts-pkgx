@@ -1097,6 +1097,44 @@ cli
     }
   })
 
+// Generate Zig package definitions
+cli
+  .command('generate-zig', 'Generate Zig package definitions from TypeScript packages')
+  .option('--packages-dir <dir>', 'Directory containing TypeScript package files', { default: 'src/packages' })
+  .option('--output <file>', 'Output Zig file path', { default: 'packages.zig' })
+  .option('--aliases', 'Also generate aliases file')
+  .option('--aliases-output <file>', 'Output file for Zig aliases', { default: 'aliases.zig' })
+  .action(async (options) => {
+    try {
+      const { generateZigDefinitions, generateZigAliases } = await import('../src/generate-zig')
+
+      const {
+        packagesDir = 'src/packages',
+        output = 'packages.zig',
+        aliases = false,
+        aliasesOutput = 'aliases.zig',
+      } = options
+
+      console.log('🚀 Generating Zig package definitions...')
+
+      // Generate main package definitions
+      await generateZigDefinitions(packagesDir, output)
+
+      // Generate aliases if requested
+      if (aliases) {
+        console.log('\n🚀 Generating Zig package aliases...')
+        await generateZigAliases(packagesDir, aliasesOutput)
+      }
+
+      console.log('\n✅ Zig code generation complete!')
+      process.exit(0)
+    }
+    catch (error) {
+      console.error('Error generating Zig definitions:', error)
+      process.exit(1)
+    }
+  })
+
 // Display help if no command specified
 cli.help()
 cli.version(version)
