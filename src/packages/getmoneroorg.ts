@@ -7,7 +7,7 @@
  *
  * @install `launchpad install getmonero.org`
  * @dependencies `boost.org^1.66`, `openssl.org^1.1`, `libsodium.org`, ... (+3 more)
- * @buildDependencies `cmake.org@^3` - required only when building from source
+ * @buildDependencies `cmake.org@^3`, `linux:llvm.org@20` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -61,9 +61,11 @@ export const getmoneroorgPackage = {
   /**
    * Build dependencies for this package.
    * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
    */
   buildDependencies: [
     'cmake.org@^3',
+    'linux:llvm.org@20',
   ] as const,
   /**
    * Available versions from newest to oldest.
