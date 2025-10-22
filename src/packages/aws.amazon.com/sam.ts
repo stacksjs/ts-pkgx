@@ -3,7 +3,7 @@
  *
  * @domain `aws.amazon.com/sam`
  * @programs `sam`
- * @version `1.145.1` (37 versions available)
+ * @version `1.145.2` (38 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aws.amazon.com/sam`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "sam"
  * console.log(pkg.description) // "CLI tool to build, test, debug, and deploy Serv..."
  * console.log(pkg.programs)    // ["sam"]
- * console.log(pkg.versions[0]) // "1.145.1" (latest)
+ * console.log(pkg.versions[0]) // "1.145.2" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/aws-amazon-com/sam.md
@@ -75,6 +75,7 @@ export const awsamazoncomsamPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.145.2',
     '1.145.1',
     '1.145.0',
     '1.144.0',
