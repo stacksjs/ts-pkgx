@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/comrak`
  * @programs `comrak`
- * @version `0.44.0` (23 versions available)
+ * @version `0.45.0` (24 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/comrak`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "comrak"
  * console.log(pkg.description) // "CommonMark + GFM compatible Markdown parser and..."
  * console.log(pkg.programs)    // ["comrak"]
- * console.log(pkg.versions[0]) // "0.44.0" (latest)
+ * console.log(pkg.versions[0]) // "0.45.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/comrak.md
@@ -60,6 +60,7 @@ export const cratesiocomrakPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.45.0',
     '0.44.0',
     '0.43.0',
     '0.42.0',

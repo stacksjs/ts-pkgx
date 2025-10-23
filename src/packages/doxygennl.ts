@@ -8,7 +8,7 @@
  *
  * @install `launchpad install doxygen.nl`
  * @homepage https://www.doxygen.nl/
- * @buildDependencies `gnu.org/bison@^3`, `cmake.org@^3`, `github.com/westes/flex@2`, ... (+1 more) - required only when building from source
+ * @buildDependencies `gnu.org/bison@^3`, `cmake.org@^3`, `github.com/westes/flex@2`, ... (+2 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -59,12 +59,14 @@ export const doxygennlPackage = {
   /**
    * Build dependencies for this package.
    * These are only required when building the package from source.
+   * OS-specific dependencies are prefixed with `os:` (e.g., `linux:gnu.org/gcc`).
    */
   buildDependencies: [
     'gnu.org/bison@^3',
     'cmake.org@^3',
     'github.com/westes/flex@2',
     'python.org@>=3<3.12',
+    'linux:llvm.org@20',
   ] as const,
   /**
    * Available versions from newest to oldest.
