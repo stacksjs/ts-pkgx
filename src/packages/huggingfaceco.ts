@@ -3,7 +3,7 @@
  *
  * @domain `huggingface.co`
  * @programs `huggingface-cli`
- * @version `0.35.3` (72 versions available)
+ * @version `0.36.0` (73 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install huggingface.co`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "huggingface/cli"
  * console.log(pkg.description) // "The official Python client for the Huggingface ..."
  * console.log(pkg.programs)    // ["huggingface-cli"]
- * console.log(pkg.versions[0]) // "0.35.3" (latest)
+ * console.log(pkg.versions[0]) // "0.36.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/huggingface-co.md
@@ -75,6 +75,7 @@ export const huggingfacecoPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.36.0',
     '0.35.3',
     '0.35.2',
     '0.35.1',

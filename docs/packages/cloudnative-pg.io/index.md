@@ -25,10 +25,10 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 9 versions</summary>
+<summary>Show all 10 versions</summary>
 
-- `1.27.0`, `1.26.1`, `1.26.0`, `1.25.3`, `1.25.2`
-- `1.25.1`, `1.25.0`, `1.24.4`, `1.24.3`
+- `1.27.0`, `1.26.1`, `1.26.0`, `1.25.4`, `1.25.3`
+- `1.25.2`, `1.25.1`, `1.25.0`, `1.24.4`, `1.24.3`
 
 </details>
 

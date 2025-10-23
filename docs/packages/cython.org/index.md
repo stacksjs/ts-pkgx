@@ -25,23 +25,23 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 23 versions</summary>
+<summary>Show all 24 versions</summary>
 
-- `3.1.5`, `3.1.4`, `3.1.3`, `3.1.2`, `3.1.1`
-- `3.1.0`, `3.0.12`, `3.0.11`, `3.0.10`, `3.0.9`
-- `3.0.8`, `3.0.7`, `3.0.6`, `3.0.5`, `3.0.4`
-- `3.0.3`, `3.0.2`, `3.0.1`, `3.0.0`, `0.29.37.1`
-- `0.29.37`, `0.29.36`, `0.29.35`
+- `3.1.6`, `3.1.5`, `3.1.4`, `3.1.3`, `3.1.2`
+- `3.1.1`, `3.1.0`, `3.0.12`, `3.0.11`, `3.0.10`
+- `3.0.9`, `3.0.8`, `3.0.7`, `3.0.6`, `3.0.5`
+- `3.0.4`, `3.0.3`, `3.0.2`, `3.0.1`, `3.0.0`
+- `0.29.37.1`, `0.29.37`, `0.29.36`, `0.29.35`
 
 </details>
 
-**Latest Version**: `3.1.5`
+**Latest Version**: `3.1.6`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +cython.org@3.1.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) +cython.org@3.1.6 -- $SHELL -i
 ```
 
 ## Dependencies

@@ -2,7 +2,7 @@
  * **libcython** - The most widely used Python to C compiler
  *
  * @domain `cython.org/libcython`
- * @version `3.1.5` (19 versions available)
+ * @version `3.1.6` (20 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install cython.org/libcython`
@@ -17,7 +17,7 @@
  * const pkg = pantry.cythonorglibcython
  * console.log(pkg.name)        // "libcython"
  * console.log(pkg.description) // "The most widely used Python to C compiler"
- * console.log(pkg.versions[0]) // "3.1.5" (latest)
+ * console.log(pkg.versions[0]) // "3.1.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/cython-org/libcython.md
@@ -67,6 +67,7 @@ export const cythonorglibcythonPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.1.6',
     '3.1.5',
     '3.1.4',
     '3.1.3',
