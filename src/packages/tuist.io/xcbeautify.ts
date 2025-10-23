@@ -3,7 +3,7 @@
  *
  * @domain `tuist.io/xcbeautify`
  * @programs `xcbeautify`
- * @version `2.30.1` (52 versions available)
+ * @version `3.0.0` (53 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install tuist.io/xcbeautify`
@@ -16,7 +16,7 @@
  * console.log(pkg.name)        // "xcbeautify"
  * console.log(pkg.description) // "A little beautifier tool for xcodebuild"
  * console.log(pkg.programs)    // ["xcbeautify"]
- * console.log(pkg.versions[0]) // "2.30.1" (latest)
+ * console.log(pkg.versions[0]) // "3.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/tuist-io/xcbeautify.md
@@ -60,6 +60,7 @@ export const tuistioxcbeautifyPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.0.0',
     '2.30.1',
     '2.30.0',
     '2.29.0',
