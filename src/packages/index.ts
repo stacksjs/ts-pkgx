@@ -57,6 +57,7 @@ import { authzedcomspicedbPackage } from './authzed.com/spicedb'
 import { aux4ioPackage } from './aux4io'
 import { cdkPackage } from './aws.amazon.com/cdk'
 import { awsamazoncomcliPackage } from './aws.amazon.com/cli'
+import { awsamazoncomqPackage } from './aws.amazon.com/q'
 import { awsamazoncomsamPackage } from './aws.amazon.com/sam'
 import { bashlydannybcoPackage } from './bashlydannybco'
 import { bcryptsourceforgenetPackage } from './bcryptsourceforgenet'
@@ -1446,6 +1447,7 @@ import { syncthingnetPackage } from './syncthingnet'
 import { systemdioPackage } from './systemdio'
 import { tagliborgPackage } from './tagliborg'
 import { tailcallrunPackage } from './tailcallrun'
+import { tailscalecomPackage } from './tailscalecom'
 import { tailwindcsscomPackage } from './tailwindcsscom'
 import { taku910githubiomecabipadicPackage } from './taku910.github.io/mecab-ipadic'
 import { taku910githubiomecabPackage } from './taku910.github.io/mecab'
@@ -1698,6 +1700,8 @@ export interface Pantry {
   awsamazoncomcdk: typeof cdkPackage
   cli: typeof awsamazoncomcliPackage
   awsamazoncomcli: typeof awsamazoncomcliPackage
+  q: typeof awsamazoncomqPackage
+  awsamazoncomq: typeof awsamazoncomqPackage
 
   awsamazoncom: typeof awsamazoncomsamPackage
   bashlydannybco: typeof bashlydannybcoPackage
@@ -4055,6 +4059,7 @@ export interface Pantry {
   systemdio: typeof systemdioPackage
   tagliborg: typeof tagliborgPackage
   tailcallrun: typeof tailcallrunPackage
+  tailscalecom: typeof tailscalecomPackage
   tailwindcsscom: typeof tailwindcsscomPackage
   mecab_ipadic: typeof taku910githubiomecabipadicPackage
   taku910githubiomecabipadic: typeof taku910githubiomecabipadicPackage
@@ -4906,6 +4911,7 @@ export interface Pantry {
   soliditylang: typeof soliditylangorgPackage
   dnsmasq: typeof thekelleysorgukdnsmasqPackage
   tinyxml2: typeof leethomasongithubiotinyxml2Package
+  tailscale: typeof tailscalecomPackage
   'sdkman-init.sh': typeof sdkmanioPackage
   attrs: typeof attrsorgPackage
   zarf: typeof zarfdevPackage
@@ -5933,6 +5939,8 @@ export const pantry: Pantry = {
   awsamazoncomcdk: cdkPackage,
   cli: awsamazoncomcliPackage,
   awsamazoncomcli: awsamazoncomcliPackage,
+  q: awsamazoncomqPackage,
+  awsamazoncomq: awsamazoncomqPackage,
 
   awsamazoncom: awsamazoncomsamPackage,
   bashlydannybco: bashlydannybcoPackage,
@@ -8290,6 +8298,7 @@ export const pantry: Pantry = {
   systemdio: systemdioPackage,
   tagliborg: tagliborgPackage,
   tailcallrun: tailcallrunPackage,
+  tailscalecom: tailscalecomPackage,
   tailwindcsscom: tailwindcsscomPackage,
   mecab_ipadic: taku910githubiomecabipadicPackage,
   taku910githubiomecabipadic: taku910githubiomecabipadicPackage,
@@ -9141,6 +9150,7 @@ export const pantry: Pantry = {
   soliditylang: soliditylangorgPackage,
   dnsmasq: thekelleysorgukdnsmasqPackage,
   tinyxml2: leethomasongithubiotinyxml2Package,
+  tailscale: tailscalecomPackage,
   'sdkman-init.sh': sdkmanioPackage,
   attrs: attrsorgPackage,
   zarf: zarfdevPackage,

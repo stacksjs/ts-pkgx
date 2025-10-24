@@ -9,7 +9,7 @@
  * @install `launchpad install openshift.com`
  * @homepage https://www.openshift.com/
  * @dependencies `kerberos.org^1.21`
- * @buildDependencies `go.dev@^1.21`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format) - required only when building from source
+ * @buildDependencies `go.dev@^1.21`, `linux:gnu.org/gcc`, `linux:gnu.org/binutils@~2.44` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -71,6 +71,7 @@ export const openshiftcomPackage = {
   buildDependencies: [
     'go.dev@^1.21',
     'linux:gnu.org/gcc',
+    'linux:gnu.org/binutils@~2.44',
   ] as const,
   /**
    * Available versions from newest to oldest.

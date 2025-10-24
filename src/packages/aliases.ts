@@ -1290,6 +1290,7 @@ export const aliases: Record<string, string> = {
   'tabulate': 'github.com/astanin/python-tabulate',
   'taglib-config': 'taglib.org',
   'tailcall': 'tailcall.run',
+  'tailscale': 'tailscale.com',
   'tailwindcss': 'tailwindcss.com',
   'talhelper': 'budimanjojo.github.io/talhelper',
   'talisman': 'thoughtworks.github.io/talisman',

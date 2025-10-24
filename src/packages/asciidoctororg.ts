@@ -3,7 +3,7 @@
  *
  * @domain `asciidoctor.org`
  * @programs `asciidoctor`
- * @version `2.0.25` (8 versions available)
+ * @version `2.0.26` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install asciidoctor.org`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "asciidoctor"
  * console.log(pkg.description) // ":gem: A fast, open source text processor and pu..."
  * console.log(pkg.programs)    // ["asciidoctor"]
- * console.log(pkg.versions[0]) // "2.0.25" (latest)
+ * console.log(pkg.versions[0]) // "2.0.26" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/asciidoctor-org.md
@@ -76,6 +76,7 @@ export const asciidoctororgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.0.26',
     '2.0.25',
     '2.0.24',
     '2.0.23',

@@ -2,7 +2,7 @@
  * **Vulkan-Headers** - Vulkan header files and API registry
  *
  * @domain `github.com/KhronosGroup/Vulkan-Headers`
- * @version `1.4.329` (77 versions available)
+ * @version `1.4.329` (78 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/KhronosGroup/Vulkan-Headers`
@@ -86,6 +86,7 @@ export const vulkanheadersPackage = {
     '1.4.305',
     '1.4.304',
     '1.4.303',
+    '1.4.230',
     '1.3.302',
     '1.3.301',
     '1.3.300',

@@ -8,7 +8,7 @@
  *
  * @install `launchpad install gnu.org/binutils`
  * @homepage https://www.gnu.org/software/binutils/binutils.html
- * @buildDependencies `gnu.org/bison`, `gnu.org/texinfo`, `linux:gnu.org/gcc` (includes OS-specific dependencies with `os:package` format) - required only when building from source
+ * @buildDependencies `gnu.org/bison`, `gnu.org/texinfo`, `facebook.com/zstd`, ... (+2 more) (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -75,7 +75,9 @@ export const gnuorgbinutilsPackage = {
   buildDependencies: [
     'gnu.org/bison',
     'gnu.org/texinfo',
+    'facebook.com/zstd',
     'linux:gnu.org/gcc',
+    'linux:perl.org@~5.40',
   ] as const,
   /**
    * Available versions from newest to oldest.
