@@ -3,7 +3,7 @@
  *
  * @domain `goreleaser.com`
  * @programs `goreleaser`
- * @version `2.12.6` (51 versions available)
+ * @version `2.12.7` (52 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install goreleaser.com`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "goreleaser"
  * console.log(pkg.description) // "Deliver Go binaries as fast and easily as possible"
  * console.log(pkg.programs)    // ["goreleaser"]
- * console.log(pkg.versions[0]) // "2.12.6" (latest)
+ * console.log(pkg.versions[0]) // "2.12.7" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/goreleaser-com.md
@@ -68,6 +68,7 @@ export const goreleasercomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.12.7',
     '2.12.6',
     '2.12.5',
     '2.12.4',
