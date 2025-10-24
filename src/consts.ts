@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-10-23T02:34:06.706Z
+ * Generated on 2025-10-24T02:32:36.860Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1604 total)
+ * List of all known packages (1606 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -103,6 +103,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'aux4.io',
   'aws.amazon.com/cdk',
   'aws.amazon.com/cli',
+  'aws.amazon.com/q',
   'aws.amazon.com/sam',
   'bashly.dannyb.co',
   'bcrypt.sourceforge.net',
@@ -1492,6 +1493,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'systemd.io',
   'taglib.org',
   'tailcall.run',
+  'tailscale.com',
   'tailwindcss.com',
   'taku910.github.io/mecab',
   'taku910.github.io/mecab-ipadic',
