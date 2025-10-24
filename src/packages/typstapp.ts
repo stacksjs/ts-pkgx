@@ -3,7 +3,7 @@
  *
  * @domain `typst.app`
  * @programs `typst`
- * @version `0.13.1` (14 versions available)
+ * @version `0.14.0` (15 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install typst.app`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "typst"
  * console.log(pkg.description) // "A new markup-based typesetting system that is p..."
  * console.log(pkg.programs)    // ["typst"]
- * console.log(pkg.versions[0]) // "0.13.1" (latest)
+ * console.log(pkg.versions[0]) // "0.14.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/typst-app.md
@@ -68,6 +68,7 @@ export const typstappPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.14.0',
     '0.13.1',
     '0.13.0',
     '0.12.0',
