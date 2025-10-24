@@ -3,7 +3,7 @@
  *
  * @domain `authzed.com/spicedb`
  * @programs `spicedb`
- * @version `1.46.0` (31 versions available)
+ * @version `1.46.1` (32 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install authzed.com/spicedb`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "spicedb"
  * console.log(pkg.description) // "Open Source, Google Zanzibar-inspired database ..."
  * console.log(pkg.programs)    // ["spicedb"]
- * console.log(pkg.versions[0]) // "1.46.0" (latest)
+ * console.log(pkg.versions[0]) // "1.46.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/authzed-com/spicedb.md
@@ -68,6 +68,7 @@ export const authzedcomspicedbPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.46.1',
     '1.46.0',
     '1.45.4',
     '1.45.3',
