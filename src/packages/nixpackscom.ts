@@ -3,7 +3,7 @@
  *
  * @domain `nixpacks.com`
  * @programs `nixpacks`
- * @version `1.40.0` (34 versions available)
+ * @version `1.41.0` (35 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install nixpacks.com`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "nixpacks"
  * console.log(pkg.description) // "App source + Nix packages + Docker = Image"
  * console.log(pkg.programs)    // ["nixpacks"]
- * console.log(pkg.versions[0]) // "1.40.0" (latest)
+ * console.log(pkg.versions[0]) // "1.41.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/nixpacks-com.md
@@ -61,6 +61,7 @@ export const nixpackscomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.41.0',
     '1.40.0',
     '1.39.0',
     '1.38.0',
