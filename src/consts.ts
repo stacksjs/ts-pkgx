@@ -1,7 +1,7 @@
 /**
  * Constants used throughout the ts-pkgx package
  * This file is auto-generated from pantry. Do not edit manually.
- * Generated on 2025-10-24T02:32:36.860Z
+ * Generated on 2025-10-25T02:33:11.997Z
  */
 
 /**
@@ -44,7 +44,7 @@ export const PACKAGE_ALIASES: Record<string, string> = {
 } as const
 
 /**
- * List of all known packages (1606 total)
+ * List of all known packages (1609 total)
  */
 export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'abseil.io',
@@ -156,6 +156,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'chezmoi.io',
   'chiark.greenend.org.uk/halibut',
   'chiark.greenend.org.uk/putty',
+  'chiark.greenend.org.uk/puzzles',
   'chompbuild.com',
   'chromedriver.chromium.org',
   'cilium.io/cilium',
@@ -198,6 +199,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'crates.io/bottom',
   'crates.io/bpb',
   'crates.io/broot',
+  'crates.io/cargo-binstall',
   'crates.io/cargo-tarpaulin',
   'crates.io/cavif',
   'crates.io/checkexec',
@@ -1310,6 +1312,7 @@ export const ALL_KNOWN_PACKAGES: readonly string[] = [
   'pixman.org',
   'pkgx.sh',
   'pkgx.sh/brewkit',
+  'pkgx.sh/cargox',
   'pkgx.sh/dev',
   'pkgx.sh/mash',
   'pkgx.sh/pkgm',
