@@ -2,7 +2,7 @@
  * **q** - pkgx package
  *
  * @domain `aws.amazon.com/q`
- * @version `1.18.1` (1 versions available)
+ * @version `1.19.0` (2 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install aws.amazon.com/q`
@@ -13,7 +13,7 @@
  *
  * const pkg = pantry.awsamazoncomq
  * console.log(pkg.name)        // "q"
- * console.log(pkg.versions[0]) // "1.18.1" (latest)
+ * console.log(pkg.versions[0]) // "1.19.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/aws-amazon-com/q.md
@@ -51,6 +51,7 @@ export const awsamazoncomqPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.19.0',
     '1.18.1',
   ] as const,
   aliases: [] as const,
