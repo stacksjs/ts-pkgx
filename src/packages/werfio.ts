@@ -8,7 +8,7 @@
  *
  * @install `launchpad install werf.io`
  * @homepage https://werf.io/
- * @buildDependencies `go.dev@^1.23`, `linux:gnu.org/gcc`, `linux:gnu.org/binutils` (includes OS-specific dependencies with `os:package` format) - required only when building from source
+ * @buildDependencies `go.dev@^1.23`, `linux:gnu.org/gcc`, `linux:gnu.org/binutils@~2.44` (includes OS-specific dependencies with `os:package` format) - required only when building from source
  *
  * @example
  * ```typescript
@@ -64,7 +64,7 @@ export const werfioPackage = {
   buildDependencies: [
     'go.dev@^1.23',
     'linux:gnu.org/gcc',
-    'linux:gnu.org/binutils',
+    'linux:gnu.org/binutils@~2.44',
   ] as const,
   /**
    * Available versions from newest to oldest.

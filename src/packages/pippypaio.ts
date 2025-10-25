@@ -3,7 +3,7 @@
  *
  * @domain `pip.pypa.io`
  * @programs `pip`, `pip3.8`, `pip3.9`, `pip3.10`, `pip3.11`
- * @version `25.2.0` (28 versions available)
+ * @version `25.3.0` (29 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install pip.pypa.io`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "pip"
  * console.log(pkg.description) // "The Python package installer"
  * console.log(pkg.programs)    // ["pip", "pip3.8", ...]
- * console.log(pkg.versions[0]) // "25.2.0" (latest)
+ * console.log(pkg.versions[0]) // "25.3.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/pip-pypa-io.md
@@ -80,6 +80,7 @@ export const pippypaioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '25.3.0',
     '25.2.0',
     '25.1.1',
     '25.1.0',

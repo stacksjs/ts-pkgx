@@ -110,6 +110,7 @@ import { checkovioPackage } from './checkovio'
 import { chezmoiioPackage } from './chezmoiio'
 import { chiarkgreenendorgukhalibutPackage } from './chiark.greenend.org.uk/halibut'
 import { chiarkgreenendorgukputtyPackage } from './chiark.greenend.org.uk/putty'
+import { chiarkgreenendorgukpuzzlesPackage } from './chiark.greenend.org.uk/puzzles'
 import { chompbuildcomPackage } from './chompbuildcom'
 import { chromedriverchromiumorgPackage } from './chromedriverchromiumorg'
 import { ciliumiociliumPackage } from './cilium.io/cilium'
@@ -152,6 +153,7 @@ import { cratesiobatPackage } from './crates.io/bat'
 import { cratesiobottomPackage } from './crates.io/bottom'
 import { cratesiobpbPackage } from './crates.io/bpb'
 import { cratesiobrootPackage } from './crates.io/broot'
+import { cratesiocargobinstallPackage } from './crates.io/cargo-binstall'
 import { cratesiocargotarpaulinPackage } from './crates.io/cargo-tarpaulin'
 import { cratesiocavifPackage } from './crates.io/cavif'
 import { cratesiocheckexecPackage } from './crates.io/checkexec'
@@ -1263,6 +1265,7 @@ import { pipenvpypaioPackage } from './pipenvpypaio'
 import { pippypaioPackage } from './pippypaio'
 import { pixmanorgPackage } from './pixmanorg'
 import { pkgxshbrewkitPackage } from './pkgx.sh/brewkit'
+import { pkgxshcargoxPackage } from './pkgx.sh/cargox'
 import { pkgxshdevPackage } from './pkgx.sh/dev'
 import { pkgxshmashPackage } from './pkgx.sh/mash'
 import { pkgxshpkgmPackage } from './pkgx.sh/pkgm'
@@ -1780,6 +1783,8 @@ export interface Pantry {
   chiarkgreenendorgukhalibut: typeof chiarkgreenendorgukhalibutPackage
 
   chiarkgreenendorgukputty: typeof chiarkgreenendorgukputtyPackage
+
+  chiarkgreenendorgukpuzzles: typeof chiarkgreenendorgukpuzzlesPackage
   chompbuildcom: typeof chompbuildcomPackage
   chromedriverchromiumorg: typeof chromedriverchromiumorgPackage
 
@@ -1845,6 +1850,8 @@ export interface Pantry {
   cratesiobpb: typeof cratesiobpbPackage
 
   cratesiobroot: typeof cratesiobrootPackage
+  cargo_binstall: typeof cratesiocargobinstallPackage
+  cratesiocargobinstall: typeof cratesiocargobinstallPackage
   cargo_tarpaulin: typeof cratesiocargotarpaulinPackage
   cratesiocargotarpaulin: typeof cratesiocargotarpaulinPackage
 
@@ -3787,6 +3794,8 @@ export interface Pantry {
   pixmanorg: typeof pixmanorgPackage
 
   pkgxshbrewkit: typeof pkgxshbrewkitPackage
+
+  pkgxshcargox: typeof pkgxshcargoxPackage
   dev: typeof pkgxshdevPackage
   pkgxshdev: typeof pkgxshdevPackage
 
@@ -4767,6 +4776,7 @@ export interface Pantry {
   csview: typeof cratesiocsviewPackage
   'git-tidy': typeof cratesiogittidyPackage
   'sqlx-cli': typeof cratesiosqlxcliPackage
+  'cargo-binstall': typeof cratesiocargobinstallPackage
   rga: typeof cratesioripgrepallPackage
   fnm: typeof cratesiofnmPackage
   toast: typeof cratesiotoastPackage
@@ -5118,6 +5128,7 @@ export interface Pantry {
   'sonar-scanner': typeof sonarqubeorgsonarscannerPackage
   pkgm: typeof pkgxshpkgmPackage
   mash: typeof pkgxshmashPackage
+  cargox: typeof pkgxshcargoxPackage
   brewkit: typeof pkgxshbrewkitPackage
   check_if_email_exists: typeof reacheremailcheckifemailexistscliPackage
   yadm: typeof yadmioPackage
@@ -5404,6 +5415,7 @@ export interface Pantry {
   buf: typeof bufbuildPackage
   pluggy: typeof pytestorgpluggyPackage
   halibut: typeof chiarkgreenendorgukhalibutPackage
+  puzzles: typeof chiarkgreenendorgukpuzzlesPackage
   putty: typeof chiarkgreenendorgukputtyPackage
   wasmer: typeof wasmerioPackage
   syncthing: typeof syncthingnetPackage
@@ -6019,6 +6031,8 @@ export const pantry: Pantry = {
   chiarkgreenendorgukhalibut: chiarkgreenendorgukhalibutPackage,
 
   chiarkgreenendorgukputty: chiarkgreenendorgukputtyPackage,
+
+  chiarkgreenendorgukpuzzles: chiarkgreenendorgukpuzzlesPackage,
   chompbuildcom: chompbuildcomPackage,
   chromedriverchromiumorg: chromedriverchromiumorgPackage,
 
@@ -6084,6 +6098,8 @@ export const pantry: Pantry = {
   cratesiobpb: cratesiobpbPackage,
 
   cratesiobroot: cratesiobrootPackage,
+  cargo_binstall: cratesiocargobinstallPackage,
+  cratesiocargobinstall: cratesiocargobinstallPackage,
   cargo_tarpaulin: cratesiocargotarpaulinPackage,
   cratesiocargotarpaulin: cratesiocargotarpaulinPackage,
 
@@ -8026,6 +8042,8 @@ export const pantry: Pantry = {
   pixmanorg: pixmanorgPackage,
 
   pkgxshbrewkit: pkgxshbrewkitPackage,
+
+  pkgxshcargox: pkgxshcargoxPackage,
   dev: pkgxshdevPackage,
   pkgxshdev: pkgxshdevPackage,
 
@@ -9006,6 +9024,7 @@ export const pantry: Pantry = {
   csview: cratesiocsviewPackage,
   'git-tidy': cratesiogittidyPackage,
   'sqlx-cli': cratesiosqlxcliPackage,
+  'cargo-binstall': cratesiocargobinstallPackage,
   rga: cratesioripgrepallPackage,
   fnm: cratesiofnmPackage,
   toast: cratesiotoastPackage,
@@ -9357,6 +9376,7 @@ export const pantry: Pantry = {
   'sonar-scanner': sonarqubeorgsonarscannerPackage,
   pkgm: pkgxshpkgmPackage,
   mash: pkgxshmashPackage,
+  cargox: pkgxshcargoxPackage,
   brewkit: pkgxshbrewkitPackage,
   check_if_email_exists: reacheremailcheckifemailexistscliPackage,
   yadm: yadmioPackage,
@@ -9643,6 +9663,7 @@ export const pantry: Pantry = {
   buf: bufbuildPackage,
   pluggy: pytestorgpluggyPackage,
   halibut: chiarkgreenendorgukhalibutPackage,
+  puzzles: chiarkgreenendorgukpuzzlesPackage,
   putty: chiarkgreenendorgukputtyPackage,
   wasmer: wasmerioPackage,
   syncthing: syncthingnetPackage,

@@ -3,7 +3,7 @@
  *
  * @domain `elfutils.org`
  * @programs `eu-addr2line`, `eu-ar`, `eu-elfclassify`, `eu-elfcmp`, `eu-elfcompress`, ... (+11 more)
- * @version `0.193.0` (5 versions available)
+ * @version `0.194.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install elfutils.org`
@@ -17,7 +17,7 @@
  * const pkg = pantry.elfutilsorg
  * console.log(pkg.name)        // "elfutils"
  * console.log(pkg.programs)    // ["eu-addr2line", "eu-ar", ...]
- * console.log(pkg.versions[0]) // "0.193.0" (latest)
+ * console.log(pkg.versions[0]) // "0.194.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/elfutils-org.md
@@ -93,6 +93,7 @@ export const elfutilsorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.194.0',
     '0.193.0',
     '0.192.0',
     '0.191.0',
