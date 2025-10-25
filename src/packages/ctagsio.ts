@@ -3,7 +3,7 @@
  *
  * @domain `ctags.io`
  * @programs `ctags`
- * @version `6.2.0` (2 versions available)
+ * @version `6.2.1` (3 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ctags.io`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "ctags"
  * console.log(pkg.description) // "A maintained ctags implementation"
  * console.log(pkg.programs)    // ["ctags"]
- * console.log(pkg.versions[0]) // "6.2.0" (latest)
+ * console.log(pkg.versions[0]) // "6.2.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/ctags-io.md
@@ -81,6 +81,7 @@ export const ctagsioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '6.2.1',
     '6.2.0',
     '6.1.0',
   ] as const,
