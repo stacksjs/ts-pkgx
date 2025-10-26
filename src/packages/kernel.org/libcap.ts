@@ -3,7 +3,7 @@
  *
  * @domain `kernel.org/libcap`
  * @programs `capsh`, `getcap`, `getpcaps`, `setcap`
- * @version `1.2.76` (4 versions available)
+ * @version `1.2.77` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kernel.org/libcap`
@@ -15,7 +15,7 @@
  * const pkg = pantry.kernelorglibcap
  * console.log(pkg.name)        // "libcap"
  * console.log(pkg.programs)    // ["capsh", "getcap", ...]
- * console.log(pkg.versions[0]) // "1.2.76" (latest)
+ * console.log(pkg.versions[0]) // "1.2.77" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/kernel-org/libcap.md
@@ -62,6 +62,7 @@ export const kernelorglibcapPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.2.77',
     '1.2.76',
     '1.2.75',
     '1.2.74',
