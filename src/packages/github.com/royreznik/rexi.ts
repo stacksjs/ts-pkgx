@@ -3,7 +3,7 @@
  *
  * @domain `github.com/royreznik/rexi`
  * @programs `rexi`
- * @version `1.2.0` (4 versions available)
+ * @version `1.2.1` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/royreznik/rexi`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "rexi"
  * console.log(pkg.description) // "Terminal UI for Regex Testing"
  * console.log(pkg.programs)    // ["rexi"]
- * console.log(pkg.versions[0]) // "1.2.0" (latest)
+ * console.log(pkg.versions[0]) // "1.2.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/royreznik/rexi.md
@@ -74,6 +74,7 @@ export const rexiPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.2.1',
     '1.2.0',
     '1.1.4',
     '1.1.3',
