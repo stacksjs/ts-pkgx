@@ -25,20 +25,21 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 10 versions</summary>
+<summary>Show all 11 versions</summary>
 
-- `3.2.11`, `3.2.10`, `3.2.9`, `3.2.8`, `3.2.7`
-- `3.2.6`, `3.2.5`, `3.2.4`, `3.2.3`, `3.2.2`
+- `3.2.12`, `3.2.11`, `3.2.10`, `3.2.9`, `3.2.8`
+- `3.2.7`, `3.2.6`, `3.2.5`, `3.2.4`, `3.2.3`
+- `3.2.2`
 
 </details>
 
-**Latest Version**: `3.2.11`
+**Latest Version**: `3.2.12`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +psycopg.org/psycopg3@3.2.11 -- $SHELL -i
+sh <(curl https://pkgx.sh) +psycopg.org/psycopg3@3.2.12 -- $SHELL -i
 ```
 
 ## Dependencies
