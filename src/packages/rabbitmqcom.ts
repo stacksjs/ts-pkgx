@@ -3,7 +3,7 @@
  *
  * @domain `rabbitmq.com`
  * @programs `rabbitmqctl`, `rabbitmq-defaults`, `rabbitmq-diagnostics`, `rabbitmq-env`, `rabbitmq-plugins`, ... (+5 more)
- * @version `4.1.4` (36 versions available)
+ * @version `4.2.0` (37 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rabbitmq.com`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "rabbitmq"
  * console.log(pkg.description) // "Open source RabbitMQ: core server and tier 1 (b..."
  * console.log(pkg.programs)    // ["rabbitmqctl", "rabbitmq-defaults", ...]
- * console.log(pkg.versions[0]) // "4.1.4" (latest)
+ * console.log(pkg.versions[0]) // "4.2.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rabbitmq-com.md
@@ -77,6 +77,7 @@ export const rabbitmqcomPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '4.2.0',
     '4.1.4',
     '4.1.3',
     '4.1.2',
