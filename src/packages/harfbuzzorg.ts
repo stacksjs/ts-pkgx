@@ -1,13 +1,11 @@
 /**
- * **harfbuzz** - HarfBuzz text shaping engine
+ * **harfbuzz** - pkgx package
  *
  * @domain `harfbuzz.org`
- * @programs `hb-ot-shape-closure`, `hb-shape`, `hb-subset`, `hb-view`
  * @version `999.999.999` (42 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install harfbuzz.org`
- * @homepage http://harfbuzz.github.io/
  * @dependencies `cairographics.org@1`, `freetype.org@2`, `gnome.org/glib@2`, ... (+2 more)
  * @buildDependencies `mesonbuild.com@>=0.63`, `python.org@>=3<3.12` - required only when building from source
  *
@@ -17,8 +15,6 @@
  *
  * const pkg = pantry.harfbuzzorg
  * console.log(pkg.name)        // "harfbuzz"
- * console.log(pkg.description) // "HarfBuzz text shaping engine"
- * console.log(pkg.programs)    // ["hb-ot-shape-closure", "hb-shape", ...]
  * console.log(pkg.versions[0]) // "999.999.999" (latest)
  * ```
  *
@@ -37,10 +33,10 @@ export const harfbuzzorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'HarfBuzz text shaping engine' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/harfbuzz.org/package.yml' as const,
-  homepageUrl: 'http://harfbuzz.github.io/' as const,
-  githubUrl: 'https://github.com/harfbuzz/harfbuzz' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -48,16 +44,7 @@ export const harfbuzzorgPackage = {
   installCommand: 'launchpad install harfbuzz.org' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +harfbuzz.org -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install harfbuzz.org' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'hb-ot-shape-closure',
-    'hb-shape',
-    'hb-subset',
-    'hb-view',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Runtime dependencies for this package.
