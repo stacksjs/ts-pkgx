@@ -1,8 +1,7 @@
 /**
- * **mas** - :package: Mac App Store command line interface
+ * **mas** - pkgx package
  *
  * @domain `github.com/mas-cli/mas`
- * @programs `mas`
  * @version `2.3.0` (9 versions available)
  * @versions From newest version to oldest.
  *
@@ -14,8 +13,6 @@
  *
  * const pkg = pantry.githubcommasclimas
  * console.log(pkg.name)        // "mas"
- * console.log(pkg.description) // ":package: Mac App Store command line interface"
- * console.log(pkg.programs)    // ["mas"]
  * console.log(pkg.versions[0]) // "2.3.0" (latest)
  * ```
  *
@@ -34,10 +31,10 @@ export const masPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: ':package: Mac App Store command line interface' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/github.com/mas-cli/mas/package.yml' as const,
   homepageUrl: '' as const,
-  githubUrl: 'https://github.com/mas-cli/mas' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -45,13 +42,7 @@ export const masPackage = {
   installCommand: 'launchpad install github.com/mas-cli/mas' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +github.com/mas-cli/mas -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install github.com/mas-cli/mas' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'mas',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   buildDependencies: [] as const,
