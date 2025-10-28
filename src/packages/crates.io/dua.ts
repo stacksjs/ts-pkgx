@@ -3,7 +3,7 @@
  *
  * @domain `crates.io/dua`
  * @programs `dua`
- * @version `2.32.0` (28 versions available)
+ * @version `2.32.1` (29 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install crates.io/dua`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "dua"
  * console.log(pkg.description) // "View disk space usage and delete unwanted data,..."
  * console.log(pkg.programs)    // ["dua"]
- * console.log(pkg.versions[0]) // "2.32.0" (latest)
+ * console.log(pkg.versions[0]) // "2.32.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/crates-io/dua.md
@@ -68,6 +68,7 @@ export const cratesioduaPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2.32.1',
     '2.32.0',
     '2.31.0',
     '2.30.1',
