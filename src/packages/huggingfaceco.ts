@@ -3,7 +3,7 @@
  *
  * @domain `huggingface.co`
  * @programs `huggingface-cli`
- * @version `1.0.1` (74 versions available)
+ * @version `1.0.1` (75 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install huggingface.co`
@@ -76,6 +76,7 @@ export const huggingfacecoPackage = {
    */
   versions: [
     '1.0.1',
+    '1.0.0',
     '0.36.0',
     '0.35.3',
     '0.35.2',
