@@ -3,7 +3,7 @@
  *
  * @domain `gnupg.org/libgcrypt`
  * @programs `dumpsexp`, `hmac256`, `libgcrypt-config`, `mpicalc`
- * @version `1.11.2` (5 versions available)
+ * @version `1.11.2` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnupg.org/libgcrypt`
@@ -79,6 +79,7 @@ export const gnupgorglibgcryptPackage = {
     '1.11.0',
     '1.10.3',
     '1.10.1',
+    '1.8.12',
   ] as const,
   aliases: [] as const,
 }
