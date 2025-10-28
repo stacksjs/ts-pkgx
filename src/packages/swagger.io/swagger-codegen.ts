@@ -3,7 +3,7 @@
  *
  * @domain `swagger.io/swagger-codegen`
  * @programs `swagger-codegen`
- * @version `3.0.75` (29 versions available)
+ * @version `3.0.75` (30 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install swagger.io/swagger-codegen`
@@ -97,6 +97,7 @@ export const swaggerioswaggercodegenPackage = {
     '3.0.56',
     '3.0.55',
     '3.0.54',
+    '2.4.49',
     '2.4.48',
     '2.4.47',
     '2.4.45',
