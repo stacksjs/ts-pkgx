@@ -3,7 +3,7 @@
  *
  * @domain `rabbitmq.com`
  * @programs `rabbitmqctl`, `rabbitmq-defaults`, `rabbitmq-diagnostics`, `rabbitmq-env`, `rabbitmq-plugins`, ... (+5 more)
- * @version `4.2.0` (37 versions available)
+ * @version `4.2.0` (38 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rabbitmq.com`
@@ -78,6 +78,7 @@ export const rabbitmqcomPackage = {
    */
   versions: [
     '4.2.0',
+    '4.1.5',
     '4.1.4',
     '4.1.3',
     '4.1.2',
