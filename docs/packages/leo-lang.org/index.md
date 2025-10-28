@@ -25,22 +25,23 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 20 versions</summary>
+<summary>Show all 21 versions</summary>
 
-- `3.2.0`, `3.1.0`, `3.0.0`, `2.7.3`, `2.7.2`
-- `2.7.1`, `2.7.0`, `2.6.1`, `2.6.0`, `2.5.0`
-- `2.4.1`, `2.4.0`, `2.3.1`, `2.3.0`, `2.2.0`
-- `2.1.0`, `2.0.0`, `1.12.0`, `1.11.0`, `1.10.0`
+- `3.3.0`, `3.2.0`, `3.1.0`, `3.0.0`, `2.7.3`
+- `2.7.2`, `2.7.1`, `2.7.0`, `2.6.1`, `2.6.0`
+- `2.5.0`, `2.4.1`, `2.4.0`, `2.3.1`, `2.3.0`
+- `2.2.0`, `2.1.0`, `2.0.0`, `1.12.0`, `1.11.0`
+- `1.10.0`
 
 </details>
 
-**Latest Version**: `3.2.0`
+**Latest Version**: `3.3.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +leo-lang.org@3.2.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +leo-lang.org@3.3.0 -- $SHELL -i
 ```
 
 ## Dependencies
