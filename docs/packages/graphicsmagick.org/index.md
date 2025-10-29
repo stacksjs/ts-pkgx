@@ -25,19 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 5 versions</summary>
+<summary>Show all 6 versions</summary>
 
-- `1.3.45`, `1.3.44`, `1.3.43`, `1.3.42`, `1.3.40`
+- `1.3.46`, `1.3.45`, `1.3.44`, `1.3.43`, `1.3.42`
+- `1.3.40`
 
 </details>
 
-**Latest Version**: `1.3.45`
+**Latest Version**: `1.3.46`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +graphicsmagick.org@1.3.45 -- $SHELL -i
+sh <(curl https://pkgx.sh) +graphicsmagick.org@1.3.46 -- $SHELL -i
 ```
 
 ## Dependencies

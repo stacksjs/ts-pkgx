@@ -3,7 +3,7 @@
  *
  * @domain `graphicsmagick.org`
  * @programs `gm`
- * @version `1.3.45` (5 versions available)
+ * @version `1.3.46` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install graphicsmagick.org`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "gm"
  * console.log(pkg.description) // "Image processing tools collection"
  * console.log(pkg.programs)    // ["gm"]
- * console.log(pkg.versions[0]) // "1.3.45" (latest)
+ * console.log(pkg.versions[0]) // "1.3.46" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/graphicsmagick-org.md
@@ -79,6 +79,7 @@ export const graphicsmagickorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.3.46',
     '1.3.45',
     '1.3.44',
     '1.3.43',
