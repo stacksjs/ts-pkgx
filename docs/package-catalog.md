@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1399+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1398+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1399
+- **Total Packages**: 1398
 - **Categories**: 27
-- **Last Updated**: 2025-10-29T22:10:50.854Z
+- **Last Updated**: 2025-10-29T23:11:36.275Z
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [DevOps](#devops) (25 packages)
 - [Container & Kubernetes Tools](#container-kubernetes-tools) (24 packages)
 - [Monitoring & Observability](#monitoring-observability) (4 packages)
-- [Build Tools & Automation](#build-tools-automation) (16 packages)
+- [Build Tools & Automation](#build-tools-automation) (15 packages)
 - [Package Managers](#package-managers) (16 packages)
 - [Editors & IDEs](#editors-ides) (8 packages)
 - [CLI Tools & Utilities](#cli-tools-utilities) (36 packages)
@@ -78,7 +78,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[kaggle.com](./packages/kaggle.com/index.md)** () | Official Kaggle API | kaggle | 1.7.4.5 (+4) | `pkgx kaggle` |
 | **[llm.datasette.io](./packages/llm.datasette.io/index.md)** () | Access large language models from the command-line | llm | 0.27.1 (+31) | `pkgx llm` |
 | **[numpy.org](./packages/numpy.org/index.md)** () | The fundamental package for scientific computing with Python. | f2py | 2.3.4 (+21) | `pkgx f2py` |
-| **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.12.6 (+121) | `pkgx ollama` |
+| **[ollama.ai](./packages/ollama.ai/index.md)** () | Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 2, and other large language models. | ollama | 0.12.7 (+122) | `pkgx ollama` |
 | **[openai.com/openai-python](./packages/openai.com/openai-python/index.md)** () | The official Python library for the OpenAI API | openai | 2.6.1 (+295) | `pkgx openai` |
 | **[openinterpreter.com](./packages/openinterpreter.com/index.md)** () | A natural language interface for computers | interpreter | 0.4.0 (+21) | `pkgx open-interpreter` |
 
@@ -190,7 +190,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Build Tools & Automation
 
-*16 packages in this category*
+*15 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -208,7 +208,6 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mesonbuild.com](./packages/mesonbuild.com/index.md)** () | Fast and user friendly build system | meson | 1.9.1 (+32) | `pkgx meson` |
 | **[ninja-build.org](./packages/ninja-build.org/index.md)** () | Small build system for use with gyp or CMake | ninja | 1.13.1 (+5) | `pkgx ninja` |
 | **[pantsbuild.org/scie-pants](./packages/pantsbuild.org/scie-pants/index.md)** () | Protects your Pants from the elements. | pants | 0.12.5 (+4) | `pkgx scie-pants` |
-| **[scons.org](./packages/scons.org/index.md)** () | Substitute for classic &#39;make&#39; tool with autoconf/automake functionality | scons | 4.10.0 (+7) | `pkgx scons` |
 | **[taskfile.dev](./packages/taskfile.dev/index.md)** () | A task runner / simpler Make alternative written in Go | task | 3.45.4 (+33) | `pkgx task` |
 
 ## Package Managers

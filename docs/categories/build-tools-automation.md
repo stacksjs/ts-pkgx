@@ -1,6 +1,6 @@
 # Build Tools & Automation
 
-*16 packages in this category*
+*15 packages in this category*
 
 Packages related to build tools & automation.
 
@@ -143,16 +143,6 @@ Protects your Pants from the elements.
 **Programs**: pants
 
 **Install**: `launchpad install pantsbuild.org/scie-pants`
-
----
-
-### [scons.org](../packages/scons.org/index.md) (scons)
-
-Substitute for classic 'make' tool with autoconf/automake functionality
-
-**Programs**: scons
-
-**Install**: `launchpad install scons.org`
 
 ---
 

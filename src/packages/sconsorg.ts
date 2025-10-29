@@ -1,13 +1,11 @@
 /**
- * **scons** - Substitute for classic 'make' tool with autoconf/automake functionality
+ * **scons** - pkgx package
  *
  * @domain `scons.org`
- * @programs `scons`
  * @version `4.10.0` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install scons.org`
- * @homepage https://www.scons.org/
  * @dependencies `python.org~3.11`, `linux:gnu.org/gcc>=10` (includes OS-specific dependencies with `os:package` format)
  *
  * @example
@@ -16,8 +14,6 @@
  *
  * const pkg = pantry.sconsorg
  * console.log(pkg.name)        // "scons"
- * console.log(pkg.description) // "Substitute for classic 'make' tool with autocon..."
- * console.log(pkg.programs)    // ["scons"]
  * console.log(pkg.versions[0]) // "4.10.0" (latest)
  * ```
  *
@@ -36,10 +32,10 @@ export const sconsorgPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Substitute for classic \'make\' tool with autoconf/automake functionality' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/scons.org/package.yml' as const,
-  homepageUrl: 'https://www.scons.org/' as const,
-  githubUrl: 'https://github.com/SCons/scons' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -47,13 +43,7 @@ export const sconsorgPackage = {
   installCommand: 'launchpad install scons.org' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +scons.org -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install scons.org' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'scons',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Runtime dependencies for this package.

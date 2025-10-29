@@ -3,7 +3,7 @@
  *
  * @domain `leo-lang.org`
  * @programs `leo`
- * @version `3.3.0` (21 versions available)
+ * @version `3.3.1` (22 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install leo-lang.org`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "leo"
  * console.log(pkg.description) // "🦁 The Leo Programming Language. A Programming ..."
  * console.log(pkg.programs)    // ["leo"]
- * console.log(pkg.versions[0]) // "3.3.0" (latest)
+ * console.log(pkg.versions[0]) // "3.3.1" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/leo-lang-org.md
@@ -76,6 +76,7 @@ export const leolangorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.3.1',
     '3.3.0',
     '3.2.0',
     '3.1.0',
