@@ -3,7 +3,7 @@
  *
  * @domain `macvim.org`
  * @programs `gview`, `gvim`, `gvimdiff`, `gvimtutor`, `mview`, ... (+7 more)
- * @version `181.0.0` (5 versions available)
+ * @version `182.0.0` (6 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install macvim.org`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "macvim"
  * console.log(pkg.description) // "Vim - the text editor - for macOS"
  * console.log(pkg.programs)    // ["gview", "gvim", ...]
- * console.log(pkg.versions[0]) // "181.0.0" (latest)
+ * console.log(pkg.versions[0]) // "182.0.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/macvim-org.md
@@ -92,6 +92,7 @@ export const macvimorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '182.0.0',
     '181.0.0',
     '180.0.0',
     '179.0.0',
