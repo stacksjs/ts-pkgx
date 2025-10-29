@@ -3,6 +3,8 @@
  *
  * @domain `github.com/kylef/swiftenv`
  * @programs `swiftenv`
+ * @version `1.4.0` (1 versions available)
+ * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/kylef/swiftenv`
  * @homepage https://swiftenv.fuller.li/
@@ -15,6 +17,7 @@
  * console.log(pkg.name)        // "swiftenv"
  * console.log(pkg.description) // "Swift Version Manager"
  * console.log(pkg.programs)    // ["swiftenv"]
+ * console.log(pkg.versions[0]) // "1.4.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/kylef/swiftenv.md
@@ -53,7 +56,13 @@ export const swiftenvPackage = {
   companions: [] as const,
   dependencies: [] as const,
   buildDependencies: [] as const,
-  versions: [] as const,
+  /**
+   * Available versions from newest to oldest.
+   * @see https://ts-pkgx.netlify.app/usage for installation instructions
+   */
+  versions: [
+    '1.4.0',
+  ] as const,
   aliases: [] as const,
 }
 

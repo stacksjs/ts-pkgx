@@ -2,7 +2,7 @@
  * **linux-headers** - pkgx package
  *
  * @domain `kernel.org/linux-headers`
- * @version `5.19.17` (206 versions available)
+ * @version `5.19.17` (208 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install kernel.org/linux-headers`
@@ -144,6 +144,7 @@ export const kernelorglinuxheadersPackage = {
     '5.15.111',
     '5.15.110',
     '5.15.108',
+    '5.10.246',
     '5.10.245',
     '5.10.244',
     '5.10.243',
@@ -208,6 +209,7 @@ export const kernelorglinuxheadersPackage = {
     '5.10.182',
     '5.10.181',
     '5.10.180',
+    '5.4.301',
     '5.4.300',
     '5.4.299',
     '5.4.298',

@@ -2,7 +2,7 @@
  * **tbb** - oneAPI Threading Building Blocks (oneTBB)
  *
  * @domain `github.com/oneapi-src/oneTBB`
- * @version `2022.2.0` (7 versions available)
+ * @version `2022.3.0` (8 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/oneapi-src/oneTBB`
@@ -17,7 +17,7 @@
  * const pkg = pantry.githubcomoneapisrconetbb
  * console.log(pkg.name)        // "tbb"
  * console.log(pkg.description) // "oneAPI Threading Building Blocks (oneTBB)"
- * console.log(pkg.versions[0]) // "2022.2.0" (latest)
+ * console.log(pkg.versions[0]) // "2022.3.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/oneapi-src/oneTBB.md
@@ -68,6 +68,7 @@ export const onetbbPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '2022.3.0',
     '2022.2.0',
     '2022.1.0',
     '2022.0.0',

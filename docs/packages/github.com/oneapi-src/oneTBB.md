@@ -25,20 +25,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `2022.2.0`, `2022.1.0`, `2022.0.0`, `2021.13.0`, `2021.12.0`
-- `2021.11.0`, `2021.10.0`
+- `2022.3.0`, `2022.2.0`, `2022.1.0`, `2022.0.0`, `2021.13.0`
+- `2021.12.0`, `2021.11.0`, `2021.10.0`
 
 </details>
 
-**Latest Version**: `2022.2.0`
+**Latest Version**: `2022.3.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/oneapi-src/oneTBB@2022.2.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/oneapi-src/oneTBB@2022.3.0 -- $SHELL -i
 ```
 
 ## Dependencies
