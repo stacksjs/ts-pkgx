@@ -1,13 +1,11 @@
 /**
- * **bison** - Parser generator
+ * **bison** - pkgx package
  *
  * @domain `gnu.org/bison`
- * @programs `bison`, `yacc`
  * @version `3.8.2` (1 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install gnu.org/bison`
- * @homepage https://www.gnu.org/software/bison/
  * @dependencies `gnu.org/m4@1`
  *
  * @example
@@ -16,8 +14,6 @@
  *
  * const pkg = pantry.gnuorgbison
  * console.log(pkg.name)        // "bison"
- * console.log(pkg.description) // "Parser generator"
- * console.log(pkg.programs)    // ["bison", "yacc"]
  * console.log(pkg.versions[0]) // "3.8.2" (latest)
  * ```
  *
@@ -36,10 +32,10 @@ export const gnuorgbisonPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Parser generator' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/gnu.org/bison/package.yml' as const,
-  homepageUrl: 'https://www.gnu.org/software/bison/' as const,
-  githubUrl: 'https://github.com/akimd/bison' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -47,14 +43,7 @@ export const gnuorgbisonPackage = {
   installCommand: 'launchpad install gnu.org/bison' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +gnu.org/bison -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install gnu.org/bison' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'bison',
-    'yacc',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Runtime dependencies for this package.
