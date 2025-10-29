@@ -3,7 +3,7 @@
  *
  * @domain `saerasoft.com/caesium`
  * @programs `caesiumclt`
- * @version `1.0.2` (8 versions available)
+ * @version `1.1.0` (9 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install saerasoft.com/caesium`
@@ -17,7 +17,7 @@
  * console.log(pkg.name)        // "caesiumclt"
  * console.log(pkg.description) // "Caesium Command Line Tools - Lossy/lossless ima..."
  * console.log(pkg.programs)    // ["caesiumclt"]
- * console.log(pkg.versions[0]) // "1.0.2" (latest)
+ * console.log(pkg.versions[0]) // "1.1.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/saerasoft-com/caesium.md
@@ -61,6 +61,7 @@ export const saerasoftcomcaesiumPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.1.0',
     '1.0.2',
     '1.0.1',
     '1.0.0',
