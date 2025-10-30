@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1398+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1399+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1398
+- **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-10-29T23:11:36.275Z
+- **Last Updated**: 2025-10-30T00:26:29.139Z
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [DevOps](#devops) (25 packages)
 - [Container & Kubernetes Tools](#container-kubernetes-tools) (24 packages)
 - [Monitoring & Observability](#monitoring-observability) (4 packages)
-- [Build Tools & Automation](#build-tools-automation) (15 packages)
+- [Build Tools & Automation](#build-tools-automation) (16 packages)
 - [Package Managers](#package-managers) (16 packages)
 - [Editors & IDEs](#editors-ides) (8 packages)
 - [CLI Tools & Utilities](#cli-tools-utilities) (36 packages)
@@ -190,7 +190,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## Build Tools & Automation
 
-*15 packages in this category*
+*16 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
@@ -208,6 +208,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[mesonbuild.com](./packages/mesonbuild.com/index.md)** () | Fast and user friendly build system | meson | 1.9.1 (+32) | `pkgx meson` |
 | **[ninja-build.org](./packages/ninja-build.org/index.md)** () | Small build system for use with gyp or CMake | ninja | 1.13.1 (+5) | `pkgx ninja` |
 | **[pantsbuild.org/scie-pants](./packages/pantsbuild.org/scie-pants/index.md)** () | Protects your Pants from the elements. | pants | 0.12.5 (+4) | `pkgx scie-pants` |
+| **[scons.org](./packages/scons.org/index.md)** () | Substitute for classic &#39;make&#39; tool with autoconf/automake functionality | scons | 4.10.0 (+7) | `pkgx scons` |
 | **[taskfile.dev](./packages/taskfile.dev/index.md)** () | A task runner / simpler Make alternative written in Go | task | 3.45.4 (+33) | `pkgx task` |
 
 ## Package Managers
@@ -221,7 +222,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cocoapods.org](./packages/cocoapods.org/index.md)** () | Dependency manager for Cocoa projects | pod | 1.16.2 (+12) | `pkgx pod` |
 | **[getcomposer.org](./packages/getcomposer.org/index.md)** () | Dependency Manager for PHP | composer, composer.phar | 2.8.12 (+32) | `pkgx composer` |
 | **[luarocks.org](./packages/luarocks.org/index.md)** () | LuaRocks is the package manager for the Lua programming language. | luarocks, luarocks-admin | 3.12.2 (+6) | `pkgx luarocks` |
-| **[mise.jdx.dev](./packages/mise.jdx.dev/index.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.10.19 (+382) | `pkgx mise` |
+| **[mise.jdx.dev](./packages/mise.jdx.dev/index.md)** () | dev tools, env vars, task runner | rtx, mise | 2025.10.20 (+383) | `pkgx mise` |
 | **[nixpacks.com](./packages/nixpacks.com/index.md)** () | App source + Nix packages + Docker = Image | nixpacks | 1.41.0 (+34) | `pkgx nixpacks` |
 | **[nodejs.org/corepack](./packages/nodejs.org/corepack/index.md)** () | Platform built on V8 to build network applications | corepack | 0.34.1 (+13) | `pkgx corepack` |
 | **[npmjs.com](./packages/npmjs.com/index.md)** (npm) | the package manager for JavaScript | npm, npx | 11.6.2 (+67) | `pkgx npm` |
