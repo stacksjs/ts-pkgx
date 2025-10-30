@@ -26,20 +26,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 6 versions</summary>
+<summary>Show all 7 versions</summary>
 
-- `3.13.5`, `3.12.2`, `3.7.8`, `3.4.2`, `3.1.0`
-- `2.1.148`
+- `3.13.6`, `3.13.5`, `3.12.2`, `3.7.8`, `3.4.2`
+- `3.1.0`, `2.1.148`
 
 </details>
 
-**Latest Version**: `3.13.5`
+**Latest Version**: `3.13.6`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +github.com/cesnet/libyang@3.13.5 -- $SHELL -i
+sh <(curl https://pkgx.sh) +github.com/cesnet/libyang@3.13.6 -- $SHELL -i
 ```
 
 ## Dependencies

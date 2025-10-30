@@ -3,7 +3,7 @@
  *
  * @domain `github.com/cesnet/libyang`
  * @programs `yanglint`, `yangre`
- * @version `3.13.5` (6 versions available)
+ * @version `3.13.6` (7 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install github.com/cesnet/libyang`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "libyang"
  * console.log(pkg.description) // "YANG data modeling language library"
  * console.log(pkg.programs)    // ["yanglint", "yangre"]
- * console.log(pkg.versions[0]) // "3.13.5" (latest)
+ * console.log(pkg.versions[0]) // "3.13.6" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/github-com/cesnet/libyang.md
@@ -77,6 +77,7 @@ export const libyangPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '3.13.6',
     '3.13.5',
     '3.12.2',
     '3.7.8',
