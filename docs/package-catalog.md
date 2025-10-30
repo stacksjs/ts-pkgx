@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-10-30T12:14:08.515Z
+- **Last Updated**: 2025-10-30T13:18:59.769Z
 
 ## Table of Contents
 
@@ -93,7 +93,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[edgedb.com](./packages/edgedb.com/index.md)** () | The EdgeDB CLI | edgedb | 7.9.0 (+40) | `pkgx edgedb` |
 | **[etcd.io](./packages/etcd.io/index.md)** () | Distributed reliable key-value store for the most critical data of a distributed system | etcd, etcdctl | 3.6.5 (+19) | `pkgx etcd` |
 | **[litecli.com](./packages/litecli.com/index.md)** () | CLI for SQLite Databases with auto-completion and syntax highlighting | litecli | 1.17.0 (+16) | `pkgx litecli` |
-| **[mongodb.com/shell](./packages/mongodb.com/shell/index.md)** () | MongoDB Shell to connect, configure, query, and work with your MongoDB database | mongosh | 2.5.8 (+38) | `pkgx mongosh` |
+| **[mongodb.com/shell](./packages/mongodb.com/shell/index.md)** () | MongoDB Shell to connect, configure, query, and work with your MongoDB database | mongosh | 2.5.9 (+39) | `pkgx mongosh` |
 | **[mysql.com](./packages/mysql.com/index.md)** () | MySQL Server, the world&#39;s most popular open source database, and MySQL Cluster, a real-time, ... | mysql_client_test, my_print_defaults, myisam_ftdump, ... (+28) | 9.5.0 (+29) | `pkgx mysql` |
 | **[opensearch.org](./packages/opensearch.org/index.md)** () | 🔎 Open source distributed and RESTful search engine. | opensearch, opensearch-keystore, opensearch-plugin, ... (+1) | 3.0.0 (+12) | `pkgx opensearch` |
 | **[postgrest.org](./packages/postgrest.org/index.md)** () | Serves a fully RESTful API from any existing PostgreSQL database | postgrest | 13.0.7 (+17) | `pkgx postgrest` |
@@ -155,7 +155,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[cilium.io/cilium](./packages/cilium.io/cilium/index.md)** () | CLI to install, manage & troubleshoot Kubernetes clusters running Cilium | cilium | 0.18.8 (+28) | `pkgx cilium` |
 | **[cilium.io/hubble](./packages/cilium.io/hubble/index.md)** () | Hubble - Network, Service & Security Observability for Kubernetes using eBPF | hubble | 1.18.3 (+17) | `pkgx hubble` |
 | **[cloudnative-pg.io](./packages/cloudnative-pg.io/index.md)** () | CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases with... | kubectl-cnpg | 1.27.1 (+11) | `pkgx kubectl-cnpg` |
-| **[github.com/helmfile/helmfile](./packages/github.com/helmfile/helmfile.md)** () | Declaratively deploy your Kubernetes manifests, Kustomize configs, and Charts as Helm releases. G... | helmfile | 1.1.8 (+30) | `pkgx helmfile` |
+| **[github.com/helmfile/helmfile](./packages/github.com/helmfile/helmfile.md)** () | Declaratively deploy your Kubernetes manifests, Kustomize configs, and Charts as Helm releases. G... | helmfile | 1.1.9 (+31) | `pkgx helmfile` |
 | **[github.com/stern/stern](./packages/github.com/stern/stern.md)** () | ⎈ Multi pod and container log tailing for Kubernetes -- Friendly fork of https://github.com/werck... | stern | 1.33.0 (+7) | `pkgx stern` |
 | **[github.com/yannh/kubeconform](./packages/github.com/yannh/kubeconform.md)** () | A FAST Kubernetes manifests validator, with support for Custom Resources! | kubeconform | 0.7.0 (+4) | `pkgx kubeconform` |
 | **[helm.sh](./packages/helm.sh/index.md)** () | The Kubernetes Package Manager | helm | 3.19.0 (+38) | `pkgx helm` |
