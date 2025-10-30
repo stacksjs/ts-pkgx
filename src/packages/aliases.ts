@@ -107,6 +107,7 @@ export const aliases: Record<string, string> = {
   'blowfish': 'github.com/matoszz/blowfish',
   'blueutil': 'github.com/toy/blueutil',
   'boost': 'boost.org',
+  'bore': 'bore.pub',
   'borg': 'borgbackup.org',
   'bpb': 'crates.io/bpb',
   'brewkit': 'pkgx.sh/brewkit',

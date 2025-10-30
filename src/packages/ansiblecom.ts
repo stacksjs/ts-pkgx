@@ -1,11 +1,13 @@
 /**
- * **ansible** - pkgx package
+ * **ansible** - Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.
  *
  * @domain `ansible.com`
+ * @programs `ansible`, `ansible-config`, `ansible-connection`, `ansible-console`, `ansible-doc`, ... (+6 more)
  * @version `2.19.3` (79 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install ansible.com`
+ * @homepage https://www.ansible.com/
  * @dependencies `pkgx.sh@1`
  * @buildDependencies `python.org@>=3.7<3.12` - required only when building from source
  *
@@ -15,6 +17,8 @@
  *
  * const pkg = pantry.ansiblecom
  * console.log(pkg.name)        // "ansible"
+ * console.log(pkg.description) // "Ansible is a radically simple IT automation pla..."
+ * console.log(pkg.programs)    // ["ansible", "ansible-config", ...]
  * console.log(pkg.versions[0]) // "2.19.3" (latest)
  * ```
  *
@@ -33,10 +37,10 @@ export const ansiblecomPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: '' as const,
+  description: 'Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com.' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/ansible.com/package.yml' as const,
-  homepageUrl: '' as const,
-  githubUrl: '' as const,
+  homepageUrl: 'https://www.ansible.com/' as const,
+  githubUrl: 'https://github.com/ansible/ansible' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -44,7 +48,23 @@ export const ansiblecomPackage = {
   installCommand: 'launchpad install ansible.com' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +ansible.com -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install ansible.com' as const,
-  programs: [] as const,
+  /**
+   * Executable programs provided by this package.
+   * These can be run after installation.
+   */
+  programs: [
+    'ansible',
+    'ansible-config',
+    'ansible-connection',
+    'ansible-console',
+    'ansible-doc',
+    'ansible-galaxy',
+    'ansible-inventory',
+    'ansible-playbook',
+    'ansible-pull',
+    'ansible-test',
+    'ansible-vault',
+  ] as const,
   companions: [] as const,
   /**
    * Runtime dependencies for this package.

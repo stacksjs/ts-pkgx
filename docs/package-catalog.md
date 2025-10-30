@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1396+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1399+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1396
+- **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-10-30T05:12:55.146Z
+- **Last Updated**: 2025-10-30T06:13:16.511Z
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 - [Artificial Intelligence](#artificial-intelligence) (13 packages)
 - [Databases](#databases) (14 packages)
 - [Web Development](#web-development) (4 packages)
-- [DevOps](#devops) (24 packages)
+- [DevOps](#devops) (25 packages)
 - [Container & Kubernetes Tools](#container-kubernetes-tools) (24 packages)
 - [Monitoring & Observability](#monitoring-observability) (4 packages)
 - [Build Tools & Automation](#build-tools-automation) (16 packages)
@@ -116,10 +116,11 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 ## DevOps
 
-*24 packages in this category*
+*25 packages in this category*
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
+| **[ansible.com](./packages/ansible.com/index.md)** () | Ansible is a radically simple IT automation platform that makes your applications and systems eas... | ansible, ansible-config, ansible-connection, ... (+8) | 2.19.3 (+78) | `pkgx ansible` |
 | **[ansible.com/ansible-lint](./packages/ansible.com/ansible-lint/index.md)** () | ansible-lint checks playbooks for practices and behavior that could potentially be improved and c... | ansible-lint | 25.9.2 (+29) | `pkgx ansible-lint` |
 | **[consul.io](./packages/consul.io/index.md)** () | Consul is a distributed, highly available, and data center aware solution to connect and configur... | consul | 1.22.0 (+15) | `pkgx consul` |
 | **[docker.com/compose](./packages/docker.com/compose/index.md)** () | Define and run multi-container applications with Docker | docker-compose | 2.40.2 (+64) | `pkgx docker-compose` |
