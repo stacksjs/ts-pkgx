@@ -8,7 +8,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 - **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-10-30T17:10:11.027Z
+- **Last Updated**: 2025-10-30T18:12:02.511Z
 
 ## Table of Contents
 
@@ -352,7 +352,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 |---------|-------------|----------|----------|----------|
 | **[cairographics.org](./packages/cairographics.org/index.md)** () | Vector graphics library with cross-device output support | cairo-trace | 1.18.4 (+3) | `pkgx cairo-trace` |
 | **[glm.g-truc.net](./packages/glm.g-truc.net/index.md)** () | OpenGL Mathematics (GLM) | - | 1.0.2 (+3) | `pkgx glm.g-truc` |
-| **[libsdl.org](./packages/libsdl.org/index.md)** () | Simple Directmedia Layer | - | 3.2.24 (+38) | `pkgx libsdl` |
+| **[libsdl.org](./packages/libsdl.org/index.md)** () | Simple Directmedia Layer | - | 3.2.26 (+39) | `pkgx libsdl` |
 | **[libsdl.org/SDL_image](./packages/libsdl.org/SDL_image/index.md)** () | Image decoding for many popular formats for Simple Directmedia Layer. | - | 3.2.4 (+12) | `pkgx SDL_image` |
 
 ## Gaming & Game Development
@@ -361,7 +361,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[libsdl.org](./packages/libsdl.org/index.md)** () | Simple Directmedia Layer | - | 3.2.24 (+38) | `pkgx libsdl` |
+| **[libsdl.org](./packages/libsdl.org/index.md)** () | Simple Directmedia Layer | - | 3.2.26 (+39) | `pkgx libsdl` |
 
 ## Cloud Platforms
 
