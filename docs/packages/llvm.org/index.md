@@ -67,6 +67,7 @@ sh <(curl https://pkgx.sh) +llvm.org@21.1.4 -- $SHELL -i
 This package depends on:
 
 - `zlib.net@1`
+- `facebook.com/zstd`
 
 ## Usage Examples
 

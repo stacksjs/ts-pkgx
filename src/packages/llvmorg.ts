@@ -8,7 +8,7 @@
  *
  * @install `launchpad install llvm.org`
  * @homepage http://llvm.org
- * @dependencies `zlib.net@1`
+ * @dependencies `zlib.net@1`, `facebook.com/zstd`
  * @buildDependencies `cmake.org@>=3<3.29`, `python.org@>=3<3.12`, `crates.io/semverator` - required only when building from source
  *
  * @example
@@ -75,6 +75,7 @@ export const llvmorgPackage = {
    */
   dependencies: [
     'zlib.net@1',
+    'facebook.com/zstd',
   ] as const,
   /**
    * Build dependencies for this package.
