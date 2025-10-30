@@ -3,7 +3,7 @@
  *
  * @domain `dagger.io`
  * @programs `dagger`
- * @version `0.19.3` (104 versions available)
+ * @version `0.19.4` (105 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install dagger.io`
@@ -18,7 +18,7 @@
  * console.log(pkg.name)        // "dagger"
  * console.log(pkg.description) // "An engine to run your pipelines in containers"
  * console.log(pkg.programs)    // ["dagger"]
- * console.log(pkg.versions[0]) // "0.19.3" (latest)
+ * console.log(pkg.versions[0]) // "0.19.4" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/dagger-io.md
@@ -68,6 +68,7 @@ export const daggerioPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '0.19.4',
     '0.19.3',
     '0.19.2',
     '0.19.1',
