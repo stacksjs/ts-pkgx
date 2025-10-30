@@ -9,7 +9,7 @@ export const aliases: Record<string, string> = {
   'ack': 'beyondgrep.com',
   'acl': 'savannah.nongnu.org/acl',
   'acmedns': 'github.com/caddy-dns/acmedns',
-  'acorn': 'acorn.io/acorn-cli',
+  'acorn-cli': 'acorn.io/acorn-cli',
   'act': 'github.com/nektos/act',
   'adr': 'github.com/npryce/adr-tools',
   'adwaita-icon-theme': 'gnome.org/adwaita-icon-theme',
