@@ -3,7 +3,7 @@
  *
  * @domain `rust-lang.org`
  * @programs `cargo-clippy`, `cargo-fmt`, `clippy-driver`, `rust-analyzer`, `rust-gdb`, ... (+5 more)
- * @version `1.90.0` (37 versions available)
+ * @version `1.91.0` (38 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install rust-lang.org`
@@ -19,7 +19,7 @@
  * console.log(pkg.name)        // "rust"
  * console.log(pkg.description) // "Empowering everyone to build reliable and effic..."
  * console.log(pkg.programs)    // ["cargo-clippy", "cargo-fmt", ...]
- * console.log(pkg.versions[0]) // "1.90.0" (latest)
+ * console.log(pkg.versions[0]) // "1.91.0" (latest)
  * ```
  *
  * @see https://ts-pkgx.netlify.app/packages/rust-lang-org.md
@@ -89,6 +89,7 @@ export const rustlangorgPackage = {
    * @see https://ts-pkgx.netlify.app/usage for installation instructions
    */
   versions: [
+    '1.91.0',
     '1.90.0',
     '1.89.0',
     '1.88.0',
