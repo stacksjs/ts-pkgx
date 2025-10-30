@@ -4621,7 +4621,7 @@ export interface Pantry {
   vi: typeof vimPackage
   ronn: typeof rtomaykogithubioronnPackage
   'golangci-lint': typeof golangcilintrunPackage
-  'acorn-cli': typeof acornioacorncliPackage
+  acorn: typeof acornioacorncliPackage
   elementsproject: typeof elementsprojectorgPackage
   boost: typeof boostorgPackage
   duk: typeof duktapeorgPackage
@@ -8869,7 +8869,7 @@ export const pantry: Pantry = {
   vi: vimPackage,
   ronn: rtomaykogithubioronnPackage,
   'golangci-lint': golangcilintrunPackage,
-  'acorn-cli': acornioacorncliPackage,
+  acorn: acornioacorncliPackage,
   elementsproject: elementsprojectorgPackage,
   boost: boostorgPackage,
   duk: duktapeorgPackage,

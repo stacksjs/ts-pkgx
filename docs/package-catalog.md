@@ -1,14 +1,14 @@
 # Package Catalog
 
-This comprehensive catalog lists all 1398+ packages available in ts-pkgx, organized by category.
+This comprehensive catalog lists all 1399+ packages available in ts-pkgx, organized by category.
 
 Each package can be accessed using `getPackage(name)` or directly via `pantry.domain`.
 
 ## Quick Stats
 
-- **Total Packages**: 1398
+- **Total Packages**: 1399
 - **Categories**: 27
-- **Last Updated**: 2025-10-30T14:10:54.734Z
+- **Last Updated**: 2025-10-30T15:11:03.116Z
 
 ## Table of Contents
 
@@ -338,7 +338,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 | **[ffmpeg.org](./packages/ffmpeg.org/index.md)** () | Play, record, convert, and stream audio and video | ffmpeg, ffplay, ffprobe | 8.0.0 (+28) | `pkgx ffmpeg` |
 | **[imagemagick.org](./packages/imagemagick.org/index.md)** () | ImageMagick is a powerful, open-source software suite for creating, editing, converting, and mani... | animate, compare, composite, ... (+13) | 7.1.1.27 (+2) | `pkgx imagemagick` |
 | **[lcdf.org/gifsicle](./packages/lcdf.org/gifsicle/index.md)** () | Create, manipulate, and optimize GIF images and animations | gifsicle | 1.96.0 (+3) | `pkgx gifsicle` |
-| **[libvips.org](./packages/libvips.org/index.md)** () | A fast image processing library with low memory needs. | vips, vipsedit, vipsheader, ... (+2) | 8.17.2 (+10) | `pkgx vips` |
+| **[libvips.org](./packages/libvips.org/index.md)** () | A fast image processing library with low memory needs. | vips, vipsedit, vipsheader, ... (+2) | 8.17.3 (+11) | `pkgx vips` |
 | **[mpv.io](./packages/mpv.io/index.md)** () | Media player based on MPlayer and mplayer2 | mpv | 0.40.0 (+2) | `pkgx mpv` |
 | **[sf.net/optipng](./packages/sf.net/optipng/index.md)** () | PNG file optimizer | optipng | 7.9.1 (+2) | `pkgx optipng` |
 | **[streamlink.github.io](./packages/streamlink.github.io/index.md)** () | Streamlink is a CLI utility which pipes video streams from various services into a video player | streamlink | 7.6.0 (+21) | `pkgx streamlink` |
@@ -403,7 +403,7 @@ Each package can be accessed using `getPackage(name)` or directly via `pantry.do
 
 | Package | Description | Programs | Versions | Install |
 |---------|-------------|----------|----------|----------|
-| **[bitcoin.org](./packages/bitcoin.org/index.md)** () | Decentralized, peer to peer payment network | bitcoin-cli, bitcoin-tx, bitcoin-util, ... (+2) | 30.0.0 (+19) | `pkgx bitcoin` |
+| **[bitcoin.org](./packages/bitcoin.org/index.md)** () | Decentralized, peer to peer payment network | bitcoin-cli, bitcoin-tx, bitcoin-util, ... (+2) | 30.0.0 (+20) | `pkgx bitcoin` |
 | **[elementsproject.org](./packages/elementsproject.org/index.md)** () | Open Source implementation of advanced blockchain features extending the Bitcoin protocol | bench_bitcoin, elements-cli, elements-tx, ... (+4) | 23.3.0 (+8) | `pkgx elementsproject` |
 | **[getfoundry.sh](./packages/getfoundry.sh/index.md)** () | Foundry is a blazing fast, portable and modular toolkit for Ethereum application development writ... | forge, anvil, cast, ... (+1) | 2024.4.12 (+19) | `pkgx getfoundry.sh` |
 | **[ghostscript.com](./packages/ghostscript.com/index.md)** () | This is purely for downloads, please check the website for full information | dvipdf, eps2eps, gpcl6, ... (+30) | 10.6.0 (+7) | `pkgx ghostscript` |
