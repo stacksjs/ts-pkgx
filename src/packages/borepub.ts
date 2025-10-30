@@ -1,22 +1,18 @@
 /**
- * **bore** - Modern, simple TCP tunnel in Rust that exposes local ports to a remote server
+ * **bore.pub** - pkgx package
  *
  * @domain `bore.pub`
- * @programs `bore`
  * @version `0.6.0` (5 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install bore.pub`
- * @homepage http://bore.pub
  *
  * @example
  * ```typescript
  * import { pantry } from 'ts-pkgx'
  *
  * const pkg = pantry.borepub
- * console.log(pkg.name)        // "bore"
- * console.log(pkg.description) // "Modern, simple TCP tunnel in Rust that exposes ..."
- * console.log(pkg.programs)    // ["bore"]
+ * console.log(pkg.name)        // "bore.pub"
  * console.log(pkg.versions[0]) // "0.6.0" (latest)
  * ```
  *
@@ -27,7 +23,7 @@ export const borepubPackage = {
   /**
    * The display name of this package.
    */
-  name: 'bore' as const,
+  name: 'bore.pub' as const,
   /**
    * The canonical domain name for this package.
    */
@@ -35,10 +31,10 @@ export const borepubPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Modern, simple TCP tunnel in Rust that exposes local ports to a remote server' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/bore.pub/package.yml' as const,
-  homepageUrl: 'http://bore.pub' as const,
-  githubUrl: 'https://github.com/ekzhang/bore' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -46,13 +42,7 @@ export const borepubPackage = {
   installCommand: 'launchpad install bore.pub' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +bore.pub -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install bore.pub' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'bore',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   dependencies: [] as const,
   buildDependencies: [] as const,

@@ -5340,7 +5340,6 @@ export interface Pantry {
   volta: typeof voltashPackage
   'groovy-lang': typeof groovylangorgPackage
   coder: typeof codercomPackage
-  bore: typeof borepubPackage
   'nim-lang': typeof nimlangorgPackage
   corepack: typeof nodejsorgcorepackPackage
   gtk3: typeof gtkorggtk3Package
@@ -9588,7 +9587,6 @@ export const pantry: Pantry = {
   volta: voltashPackage,
   'groovy-lang': groovylangorgPackage,
   coder: codercomPackage,
-  bore: borepubPackage,
   'nim-lang': nimlangorgPackage,
   corepack: nodejsorgcorepackPackage,
   gtk3: gtkorggtk3Package,

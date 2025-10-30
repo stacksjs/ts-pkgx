@@ -1,13 +1,11 @@
 /**
- * **code-server** - Access VS Code through the browser
+ * **code-server** - pkgx package
  *
  * @domain `coder.com/code-server`
- * @programs `code-server`
  * @version `4.105.1` (52 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install coder.com/code-server`
- * @homepage https://coder.com
  * @dependencies `nodejs.org^22 # since 4.101.0`, `linux:gnome.org/libsecret^0.21`, `linux:x.org/x11^1.8`, ... (+2 more) (includes OS-specific dependencies with `os:package` format)
  * @buildDependencies `npmjs.com`, `python.org@>=3.11` - required only when building from source
  *
@@ -17,8 +15,6 @@
  *
  * const pkg = pantry.codercomcodeserver
  * console.log(pkg.name)        // "code-server"
- * console.log(pkg.description) // "Access VS Code through the browser"
- * console.log(pkg.programs)    // ["code-server"]
  * console.log(pkg.versions[0]) // "4.105.1" (latest)
  * ```
  *
@@ -37,10 +33,10 @@ export const codercomcodeserverPackage = {
   /**
    * Brief description of what this package does.
    */
-  description: 'Access VS Code through the browser' as const,
+  description: '' as const,
   packageYmlUrl: 'https://github.com/pkgxdev/pantry/tree/main/projects/coder.com/code-server/package.yml' as const,
-  homepageUrl: 'https://coder.com' as const,
-  githubUrl: 'https://github.com/coder/code-server' as const,
+  homepageUrl: '' as const,
+  githubUrl: '' as const,
   /**
    * Command to install this package using launchpad.
    * @example launchpad install package-name
@@ -48,13 +44,7 @@ export const codercomcodeserverPackage = {
   installCommand: 'launchpad install coder.com/code-server' as const,
   pkgxInstallCommand: 'sh <(curl https://pkgx.sh) +coder.com/code-server -- $SHELL -i' as const,
   launchpadInstallCommand: 'launchpad install coder.com/code-server' as const,
-  /**
-   * Executable programs provided by this package.
-   * These can be run after installation.
-   */
-  programs: [
-    'code-server',
-  ] as const,
+  programs: [] as const,
   companions: [] as const,
   /**
    * Runtime dependencies for this package.
