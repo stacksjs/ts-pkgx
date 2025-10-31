@@ -33,21 +33,22 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 15 versions</summary>
+<summary>Show all 16 versions</summary>
 
-- `2.2.4`, `2.2.2`, `2.2.0`, `2.0.16`, `2.0.14`
-- `2.0.12`, `2.0.8`, `2.0.6`, `2.0.4`, `2.0.2`
-- `2.0.0`, `1.6.20`, `1.6.18`, `1.6.16`, `1.6.14`
+- `2.2.6`, `2.2.4`, `2.2.2`, `2.2.0`, `2.0.16`
+- `2.0.14`, `2.0.12`, `2.0.8`, `2.0.6`, `2.0.4`
+- `2.0.2`, `2.0.0`, `1.6.20`, `1.6.18`, `1.6.16`
+- `1.6.14`
 
 </details>
 
-**Latest Version**: `2.2.4`
+**Latest Version**: `2.2.6`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +nim-lang.org@2.2.4 -- $SHELL -i
+sh <(curl https://pkgx.sh) +nim-lang.org@2.2.6 -- $SHELL -i
 ```
 
 ## Dependencies
