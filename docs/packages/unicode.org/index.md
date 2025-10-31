@@ -36,20 +36,20 @@ This package provides the following executable programs:
 ## Available Versions
 
 <details>
-<summary>Show all 7 versions</summary>
+<summary>Show all 8 versions</summary>
 
-- `77.1.0`, `76.1.0`, `75.1.0`, `74.2.0`, `74.1.0`
-- `73.2.0`, `71.1.0`
+- `78.1.0`, `77.1.0`, `76.1.0`, `75.1.0`, `74.2.0`
+- `74.1.0`, `73.2.0`, `71.1.0`
 
 </details>
 
-**Latest Version**: `77.1.0`
+**Latest Version**: `78.1.0`
 
 ### Install Specific Version
 
 ```bash
 # Install specific version
-sh <(curl https://pkgx.sh) +unicode.org@77.1.0 -- $SHELL -i
+sh <(curl https://pkgx.sh) +unicode.org@78.1.0 -- $SHELL -i
 ```
 
 ## Usage Examples
