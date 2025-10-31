@@ -3,7 +3,7 @@
  *
  * @domain `werf.io`
  * @programs `werf`
- * @version `2.51.1` (182 versions available)
+ * @version `2.51.1` (183 versions available)
  * @versions From newest version to oldest.
  *
  * @install `launchpad install werf.io`
@@ -212,6 +212,7 @@ export const werfioPackage = {
     '2.0.2',
     '2.0.1',
     '2.0.0',
+    '1.2.336',
     '1.2.335',
     '1.2.334',
     '1.2.333',
